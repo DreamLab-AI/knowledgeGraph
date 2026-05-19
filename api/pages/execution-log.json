@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:041bd3922504cbe42fdb7118db5477c0805bfb4facb1cb43f2cf889dd9da8a2a",
+  "title": "Execution Log",
+  "slug": "execution-log",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:execution-log",
+  "domain": "infrastructure",
+  "definition": "Execution Log is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,186 @@
+{
+  "id": "urn:visionflow:page:cfe52fea45f0cb8960dcf293cd58d4788607bbb5894b78282df6aec342c37ffb",
+  "title": "Environmental Impact Metric",
+  "slug": "environmental-impact-metric",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-impact-metric",
+  "domain": "spatial-computing",
+  "definition": "A quantitative measurement framework for assessing the environmental sustainability of metaverse and digital systems, encompassing energy consumption, carbon emissions, resource efficiency, and ecological footprint across computational infrastructure and user interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:e-waste-measurement",
+        "label": "E-Waste Measurement"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-consumption-metric",
+        "label": "Energy Consumption Metric"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-efficiency-score",
+        "label": "Resource Efficiency Score"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-report",
+        "label": "Sustainability Report"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-footprint-indicator",
+        "label": "Carbon Footprint Indicator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-collection-system",
+        "label": "Data Collection System"
+      },
+      {
+        "id": "urn:visionflow:linked:lifecycle-assessment-tool",
+        "label": "Lifecycle Assessment Tool"
+      },
+      {
+        "id": "urn:visionflow:linked:monitoring-infrastructure",
+        "label": "Monitoring Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-calculator",
+        "label": "Carbon Calculator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:environmental-optimization",
+        "label": "Environmental Optimization"
+      },
+      {
+        "id": "urn:visionflow:linked:green-it-compliance",
+        "label": "Green IT Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-neutrality-planning",
+        "label": "Carbon Neutrality Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-collection-system",
+      "label": "Data Collection System"
+    },
+    {
+      "slug": "e-waste-measurement",
+      "label": "E-Waste Measurement"
+    },
+    {
+      "slug": "emissions-database",
+      "label": "Emissions Database"
+    },
+    {
+      "slug": "energy-consumption-metric",
+      "label": "Energy Consumption Metric"
+    },
+    {
+      "slug": "energy-metering",
+      "label": "Energy Metering"
+    },
+    {
+      "slug": "environmental-optimization",
+      "label": "Environmental Optimization"
+    },
+    {
+      "slug": "esg-reporting-system",
+      "label": "ESG Reporting System"
+    },
+    {
+      "slug": "eu-ecodesign-directive",
+      "label": "EU Ecodesign Directive"
+    },
+    {
+      "slug": "ghg-protocol",
+      "label": "GHG Protocol"
+    },
+    {
+      "slug": "green-computing-initiative",
+      "label": "Green Computing Initiative"
+    },
+    {
+      "slug": "green-it-compliance",
+      "label": "Green IT Compliance"
+    },
+    {
+      "slug": "iso-14040",
+      "label": "ISO 14040"
+    },
+    {
+      "slug": "lifecycle-assessment-tool",
+      "label": "Lifecycle Assessment Tool"
+    },
+    {
+      "slug": "monitoring-infrastructure",
+      "label": "Monitoring Infrastructure"
+    },
+    {
+      "slug": "resource-efficiency-score",
+      "label": "Resource Efficiency Score"
+    },
+    {
+      "slug": "resource-tracking",
+      "label": "Resource Tracking"
+    },
+    {
+      "slug": "sustainability-framework",
+      "label": "Sustainability Framework"
+    },
+    {
+      "slug": "sustainability-report",
+      "label": "Sustainability Report"
+    },
+    {
+      "slug": "sustainability-reporting",
+      "label": "Sustainability Reporting"
+    },
+    {
+      "slug": "benchmark-standard",
+      "label": "Benchmark Standard"
+    },
+    {
+      "slug": "carbon-calculator",
+      "label": "Carbon Calculator"
+    },
+    {
+      "slug": "carbon-footprint-indicator",
+      "label": "Carbon Footprint Indicator"
+    },
+    {
+      "slug": "carbon-neutrality-planning",
+      "label": "Carbon Neutrality Planning"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

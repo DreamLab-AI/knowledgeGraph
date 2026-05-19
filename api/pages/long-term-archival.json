@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:9c5248d2b6dfedea4549de94170e00133ebdc8f633f3ec8a0783c4322d25ab44",
+  "title": "Long Term Archival",
+  "slug": "long-term-archival",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:long-term-archival",
+  "domain": "spatial-computing",
+  "definition": "Strategies and technologies for preserving digital assets, metaverse content, and cultural heritage data over extended periods (10+ years), using durable storage media, format migration protocols, and AI-enhanced preservation systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-preservation",
+      "label": "Digital Preservation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:future-asset-access",
+        "label": "Future Asset Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "future-asset-access",
+      "label": "Future Asset Access"
+    },
+    {
+      "slug": "digital-preservation",
+      "label": "Digital Preservation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    }
+  ]
+}

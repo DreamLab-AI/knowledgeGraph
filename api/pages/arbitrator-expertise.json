@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:ef2902f7cbc0b491a1e01606c6e29c5aca6d682c845d19b3b02e00121152ec14",
+  "title": "Arbitrator Expertise",
+  "slug": "arbitrator-expertise",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:arbitrator-expertise",
+  "domain": "spatial-computing",
+  "definition": "Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for informed dispute resolution.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:professional-qualification",
+      "label": "Professional Qualification"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-knowledge",
+        "label": "Blockchain Knowledge"
+      },
+      {
+        "id": "urn:visionflow:linked:industry-experience",
+        "label": "Industry Experience"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-training",
+        "label": "Legal Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:fair-outcomes",
+        "label": "Fair Outcomes"
+      },
+      {
+        "id": "urn:visionflow:linked:informed-decision-making",
+        "label": "Informed Decision Making"
+      },
+      {
+        "id": "urn:visionflow:linked:technical-evidence-evaluation",
+        "label": "Technical Evidence Evaluation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-knowledge",
+      "label": "Blockchain Knowledge"
+    },
+    {
+      "slug": "fair-outcomes",
+      "label": "Fair Outcomes"
+    },
+    {
+      "slug": "industry-experience",
+      "label": "Industry Experience"
+    },
+    {
+      "slug": "informed-decision-making",
+      "label": "Informed Decision Making"
+    },
+    {
+      "slug": "legal-training",
+      "label": "Legal Training"
+    },
+    {
+      "slug": "professional-qualification",
+      "label": "Professional Qualification"
+    },
+    {
+      "slug": "technical-evidence-evaluation",
+      "label": "Technical Evidence Evaluation"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    }
+  ]
+}

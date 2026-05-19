@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:d1eeeb7371fac1de76f2202d41238bcb5e08c2719a309a1ec1fb851d5985d426",
+  "title": "Platform Middleware",
+  "slug": "platform-middleware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:platform-middleware",
+  "domain": "spatial-computing",
+  "definition": "A software layer that connects operating systems, applications, and services by providing common capabilities such as API management, message routing, authentication, and data integration to enable seamless communication between diverse systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:software-infrastructure",
+      "label": "Software Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:system-interoperability",
+        "label": "System Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "software-infrastructure",
+      "label": "Software Infrastructure"
+    },
+    {
+      "slug": "system-interoperability",
+      "label": "System Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    }
+  ]
+}

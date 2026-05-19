@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601",
+  "title": "Lock and Mint Mechanism",
+  "slug": "lock-and-mint-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lock-and-mint-mechanism",
+  "domain": "blockchain",
+  "definition": "Cross-chain asset transfer protocol where tokens are locked in a smart contract on the source chain and equivalent wrapped tokens are minted on the destination chain, maintaining a 1:1 backing ratio. Enables asset portability across heterogeneous blockchain ecosystems while preserving value equivalence.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:de-fi-protocol",
+      "label": "De Fi Protocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "wrapped-token",
+      "label": "Wrapped Token"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": []
+}

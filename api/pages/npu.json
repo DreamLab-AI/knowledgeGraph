@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:dd12376f9d8bf886f1ddd82c1b6bf2f0216b28ca87b3bc67704dd90bde76cf55",
+  "title": "NPU",
+  "slug": "npu",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:npu",
+  "domain": "artificial-intelligence",
+  "definition": "Neural Processing Unit, specialized hardware accelerators designed specifically for artificial neural network computations, optimized for AI inference and training.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

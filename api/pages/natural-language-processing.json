@@ -1,0 +1,324 @@
+{
+  "id": "urn:visionflow:page:ebddba0ada7eb57fd1f6224ea27a2ecbc1ef825f9316e77641bd92b19a97d285",
+  "title": "Natural Language Processing",
+  "slug": "natural-language-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:natural-language-processing",
+  "domain": "artificial-intelligence",
+  "definition": "Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language. Core tasks include text classification, named entity recognition, machine translation, sentiment analysis, question answering, and language generation. Modern NLP leverages transformer architectures (BERT, GPT, T5), pre-training on massive corpora, and fine-tuning for downstream tasks. Advanced systems perform multimodal understanding (text-image), multilingual processing, and exhibit emergent capabilities like reasoning and code generation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "automated-summarization",
+      "label": "Automated Summarization"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "context-aware-response",
+      "label": "Context Aware Response"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "grammar-system",
+      "label": "Grammar System"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "model-parameters",
+      "label": "Model Parameters"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "narrative-design-ontology",
+      "label": "Narrative Design Ontology"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "real-time-language-translation",
+      "label": "Real-Time Language Translation"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

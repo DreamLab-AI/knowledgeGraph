@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0",
+  "title": "Digital Payments",
+  "slug": "digital-payments",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-payments",
+  "domain": "spatial-computing",
+  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:financial-transactions",
+      "label": "Financial Transactions"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:payment-processor",
+        "label": "Payment Processor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-transfer",
+        "label": "Cross-Border Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-purchases",
+        "label": "Virtual Purchases"
+      },
+      {
+        "id": "urn:visionflow:owl:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-border-transfer",
+      "label": "Cross-Border Transfer"
+    },
+    {
+      "slug": "payment-processor",
+      "label": "Payment Processor"
+    },
+    {
+      "slug": "virtual-purchases",
+      "label": "Virtual Purchases"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "financial-transactions",
+      "label": "Financial Transactions"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    }
+  ]
+}

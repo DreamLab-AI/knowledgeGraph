@@ -1,0 +1,592 @@
+{
+  "id": "urn:visionflow:page:7aa6fe2d07bf1efe761b98d13f644734a6c213e27590767c9b7bb21af6f52dd0",
+  "title": "Lightning Network",
+  "slug": "lightning-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lightning-network",
+  "domain": "blockchain",
+  "definition": "The [[Lightning Network]] is a [[Layer 2 Scaling]] protocol for [[Bitcoin]] enabling instant, high-throughput off-chain payments through a mesh of bidirectional [[Payment Channel Network]] channels anchored on the [[Bitcoin Technical Overview]] base layer. Conceptualised by Joseph Poon and Thaddeus Dryja in drafts circulated from 2015 and formalised in their 2016 white paper \"The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments,\" the protocol allows two counterparties to lock funds into a 2-of-2 multisignature on-chain output, exchange an unlimited series of signed off-chain commitment transactions updating their respective balances, and broadcast only a final settlement transaction when the channel closes. Multi-hop routing via [[Hash Time-Locked Contracts]] (HTLCs) chains these bilateral channels into a globe-spanning payment graph capable of processing millions of transactions per second at sub-cent fees, routing trustlessly through intermediary nodes without requiring pre-trust between sender and recipient. The Basis of Lightning Technology ([[BOLT Specifications]]) (BOLT 0\u201312) defines every layer of the interoperability stack across three major implementations: L",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "id": "urn:visionflow:linked:payment-channel-network",
+      "label": "Payment Channel Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-scalability",
+      "label": "Blockchain Scalability"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bolt-specifications",
+        "label": "BOLT Specifications"
+      },
+      {
+        "id": "urn:visionflow:linked:bolt12-offers",
+        "label": "BOLT12 Offers"
+      },
+      {
+        "id": "urn:visionflow:linked:channel-factory",
+        "label": "Channel Factory"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-time-locked-contracts",
+        "label": "Hash Time-Locked Contracts"
+      },
+      {
+        "id": "urn:visionflow:linked:lightning-service-providers",
+        "label": "Lightning Service Providers"
+      },
+      {
+        "id": "urn:visionflow:linked:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:visionflow:linked:routing-algorithm",
+        "label": "Routing Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:watchtower",
+        "label": "Watchtower"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:visionflow:linked:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:instant-transactions",
+        "label": "Instant Transactions"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-payments",
+        "label": "Machine Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:streaming-payments",
+        "label": "Streaming Payments"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stable-coins",
+        "label": "Stable Coins"
+      },
+      {
+        "id": "urn:visionflow:owl:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bolt-specifications",
+        "label": "BOLT Specifications"
+      },
+      {
+        "id": "urn:visionflow:linked:bolt12-offers",
+        "label": "BOLT12 Offers"
+      },
+      {
+        "id": "urn:visionflow:linked:channel-factory",
+        "label": "Channel Factory"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-time-locked-contracts",
+        "label": "Hash Time-Locked Contracts"
+      },
+      {
+        "id": "urn:visionflow:linked:lnurl-protocol",
+        "label": "LNURL Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-path-payments",
+        "label": "Multi-Path Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:visionflow:linked:splicing",
+        "label": "Splicing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
+      "slug": "bolt-specifications",
+      "label": "BOLT Specifications"
+    },
+    {
+      "slug": "bolt12-offers",
+      "label": "BOLT12 Offers"
+    },
+    {
+      "slug": "channel-factory",
+      "label": "Channel Factory"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "FinancialInfrastructureDomain"
+    },
+    {
+      "slug": "hash-time-locked-contracts",
+      "label": "Hash Time-Locked Contracts"
+    },
+    {
+      "slug": "instant-transactions",
+      "label": "Instant Transactions"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
+      "slug": "lightning-service-providers",
+      "label": "Lightning Service Providers"
+    },
+    {
+      "slug": "lnurl-protocol",
+      "label": "LNURL Protocol"
+    },
+    {
+      "slug": "machine-payments",
+      "label": "Machine Payments"
+    },
+    {
+      "slug": "mu-sig2",
+      "label": "MuSig2"
+    },
+    {
+      "slug": "multi-path-payments",
+      "label": "Multi-Path Payments"
+    },
+    {
+      "slug": "multisignature",
+      "label": "Multisignature"
+    },
+    {
+      "slug": "onion-routing",
+      "label": "Onion Routing"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "payment-channel-network",
+      "label": "Payment Channel Network"
+    },
+    {
+      "slug": "routing-algorithm",
+      "label": "Routing Algorithm"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "sphinx-protocol",
+      "label": "Sphinx Protocol"
+    },
+    {
+      "slug": "spiral",
+      "label": "Spiral"
+    },
+    {
+      "slug": "splicing",
+      "label": "Splicing"
+    },
+    {
+      "slug": "streaming-payments",
+      "label": "Streaming Payments"
+    },
+    {
+      "slug": "timelock",
+      "label": "Timelock"
+    },
+    {
+      "slug": "traditional-payment-systems",
+      "label": "Traditional Payment Systems"
+    },
+    {
+      "slug": "watchtower",
+      "label": "Watchtower"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "financial-infrastructure",
+      "label": "Financial Infrastructure"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -1,24 +1,388 @@
-iri:: http://narrativegoldmine.com/spatial-computing#AuthoringTool
-uri:: urn:visionclaw:concept:spatial-computing:authoring-tool
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:authoring-tool
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Authoring Tool
-content-hash:: sha256-12-48f2506cb0a5
-legacy-term-id:: 20101
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#AuthoringTool
+legacy_uri:: urn:visionclaw:concept:spatial-computing:authoring-tool
 public:: true
+
+# Authoring Tool
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:24d326ab34c4983b60ae8d87c2adb24c1e389c1cbbdeacd03fc2da8d029ea67a",
+  "@type": "Page",
+  "vc:slug": "authoring-tool",
+  "title": "Authoring Tool",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:asset-pipeline",
+      "vc:label": "Asset Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:editor-interface",
+      "vc:label": "Editor Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-experience-development",
+      "vc:label": "Interactive Experience Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:msf-taxonomy",
+      "vc:label": "MSF Taxonomy"
+    },
+    {
+      "@id": "urn:visionflow:linked:preview-system",
+      "vc:label": "Preview System"
+    },
+    {
+      "@id": "urn:visionflow:linked:scene-design",
+      "vc:label": "Scene Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:siggraph-pipeline-wg",
+      "vc:label": "SIGGRAPH Pipeline WG"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-modeling",
+      "vc:label": "3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-design-tool",
+      "vc:label": "Generative Design Tool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graphics-api",
+      "vc:label": "Graphics API"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "vc:label": "InteractionDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-48f2506cb0a5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#AuthoringTool"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20101"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Authoring Tool"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:authoring-tool"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:authoring-tool"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:24d326ab34c4983b60ae8d87c2adb24c1e389c1cbbdeacd03fc2da8d029ea67a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:authoring-tool",
+  "@type": "OntologyClass",
+  "label": "Authoring Tool",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-content-creation",
+      "vc:label": "Digital Content Creation"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:24d326ab34c4983b60ae8d87c2adb24c1e389c1cbbdeacd03fc2da8d029ea67a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:24d326ab34c4983b60ae8d87c2adb24c1e389c1cbbdeacd03fc2da8d029ea67a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Software application for creating or editing immersive content, including 3D models, environments, interactions, and multimedia assets for metaverse experiences.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:asset-pipeline",
+      "vc:label": "Asset Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:editor-interface",
+      "vc:label": "Editor Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:preview-system",
+      "vc:label": "Preview System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-design-tool",
+      "vc:label": "Generative Design Tool"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graphics-api",
+      "vc:label": "Graphics API"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-experience-development",
+      "vc:label": "Interactive Experience Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:scene-design",
+      "vc:label": "Scene Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-modeling",
+      "vc:label": "3D Modeling"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:authoring-tool:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:24d326ab34c4983b60ae8d87c2adb24c1e389c1cbbdeacd03fc2da8d029ea67a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Asset Pipeline]]",
+      "resolved": "urn:visionflow:linked:asset-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Creation]]",
+      "resolved": "urn:visionflow:linked:content-creation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Editor Interface]]",
+      "resolved": "urn:visionflow:linked:editor-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interactive Experience Development]]",
+      "resolved": "urn:visionflow:linked:interactive-experience-development",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MSF Taxonomy]]",
+      "resolved": "urn:visionflow:linked:msf-taxonomy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Preview System]]",
+      "resolved": "urn:visionflow:linked:preview-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scene Design]]",
+      "resolved": "urn:visionflow:linked:scene-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SIGGRAPH Pipeline WG]]",
+      "resolved": "urn:visionflow:linked:siggraph-pipeline-wg",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Modeling]]",
+      "resolved": "urn:visionflow:owl:class:3-d-modeling",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Compute Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:compute-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Design Tool]]",
+      "resolved": "urn:visionflow:owl:class:generative-design-tool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Graphics API]]",
+      "resolved": "urn:visionflow:owl:class:graphics-api",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InteractionDomain]]",
+      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:24d326ab34c4983b60ae8d87c2adb24c1e389c1cbbdeacd03fc2da8d029ea67a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Software application for creating or editing immersive content, including 3D models, environments, interactions, and multimedia assets for metaverse experiences.

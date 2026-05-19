@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:f5e7b4ed331af615c28bb2b9f40369d9c17c06d0bd4812b06e992a662601143d",
+  "title": "Clinical Trials",
+  "slug": "clinical-trials",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:clinical-trials",
+  "domain": "blockchain",
+  "definition": "Blockchain-based clinical trial management systems employing immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, enable patient recruitment improvements, and provide FDA 21 CFR Part 11 compliant tamper-proof record keeping whilst reducing monitoring costs from \u20ac722 to \u20ac10 per participant visit.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.91,
+  "maturity": "draft",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aml-anti-money-laundering",
+      "label": "AML (Anti-Money Laundering)"
+    },
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0442-pharmaceutical-traceability",
+      "label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "slug": "bc-0456-self-sovereign-identity",
+      "label": "BC-0456-self-sovereign-identity"
+    },
+    {
+      "slug": "bc-0458-verifiable-credentials",
+      "label": "BC-0458-verifiable-credentials"
+    },
+    {
+      "slug": "bc-0476-aml-kyc-compliance",
+      "label": "BC-0476-aml-kyc-compliance"
+    },
+    {
+      "slug": "bc-0486-regulatory-reporting",
+      "label": "BC-0486-regulatory-reporting"
+    },
+    {
+      "slug": "bc-0491-healthcare-records",
+      "label": "BC-0491-healthcare-records"
+    },
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "kyc-know-your-customer",
+      "label": "KYC (Know Your Customer)"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    }
+  ],
+  "backlinks": []
+}

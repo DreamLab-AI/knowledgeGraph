@@ -1,24 +1,300 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Security
-uri:: urn:visionclaw:concept:spatial-computing:security
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:security
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Security
-content-hash:: sha256-12-9ad2fe5466fe
-legacy-term-id:: AI-0071
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Security
+legacy_uri:: urn:visionclaw:concept:spatial-computing:security
 public:: true
+
+# Security
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330",
+  "@type": "Page",
+  "vc:slug": "security",
+  "title": "Security",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:apostolaki2016hijacking-apostolaki2017hijacking-johnson2014game-stinner2022proof",
+      "vc:label": "apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof"
+    },
+    {
+      "@id": "urn:visionflow:linked:dymydiuk2020rubicon",
+      "vc:label": "dymydiuk2020rubicon"
+    },
+    {
+      "@id": "urn:visionflow:linked:eurodollar",
+      "vc:label": "Eurodollar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cbdcs",
+      "vc:label": "CBDCs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cyber-security-and-cryptography",
+      "vc:label": "Cyber Security and Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-identity",
+      "vc:label": "Distributed Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gaussian-splatting",
+      "vc:label": "Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-and-edge",
+      "vc:label": "Hardware and Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "machine learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9ad2fe5466fe"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Security"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0071"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Security"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:security"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:security"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:security",
+  "@type": "OntologyClass",
+  "label": "Security",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:security:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof]]",
+      "resolved": "urn:visionflow:linked:apostolaki2016hijacking-apostolaki2017hijacking-johnson2014game-stinner2022proof",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dymydiuk2020rubicon]]",
+      "resolved": "urn:visionflow:linked:dymydiuk2020rubicon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eurodollar]]",
+      "resolved": "urn:visionflow:linked:eurodollar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic Claude]]",
+      "resolved": "urn:visionflow:owl:class:anthropic-claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CBDCs]]",
+      "resolved": "urn:visionflow:owl:class:cbdcs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cyber Security and Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cyber-security-and-cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Identity]]",
+      "resolved": "urn:visionflow:owl:class:distributed-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gaussian Splatting]]",
+      "resolved": "urn:visionflow:owl:class:gaussian-splatting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hardware and Edge]]",
+      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.
@@ -104,7 +380,7 @@ public:: true
   - [Paper page
 		- LLM in a flash: Efficient Large Language Model Inference with Limited Memory (huggingface.co)](https://huggingface.co/papers/2312.11514) [[Hardware and Edge]]
   - [Apple wants AI to run directly on its hardware instead of in the cloud | Ars Technica](https://arstechnica.com/apple/2023/12/apple-wants-ai-to-run-directly-on-its-hardware-instead-of-in-the-cloud/) [[Hardware and Edge]]
-  - HUGS: Human [[Gaussian splatting and Similar]]
+  - HUGS: Human [[Gaussian Splatting]]
   - [Apple Machine Learning Research](https://machinelearning.apple.com/research/hugs)
   - Apple presents [Paper page
   - Speculative Streaming: Fast LLM Inference without Auxiliary Models (huggingface.co)](https://huggingface.co/papers/2402.11131):
@@ -187,7 +463,7 @@ public:: true
   - ### Cultural and Financial Security
 		- **Symbolic Value:** Gold has been revered throughout history, symbolizing wealth, purity, and status across cultures.
 		- **Financial Instrument:** Often viewed as a hedge against inflation and currency devaluation, gold is a staple in diversified investment portfolios.
-  - ## [[Cyber security and Cryptography]] and Fraud Prevention
+  - ## [[Cyber Security and Cryptography]] and Fraud Prevention
 		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
 		  background-color:: red
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
@@ -274,7 +550,7 @@ public:: true
   - [Paper page
 		- LLM in a flash: Efficient Large Language Model Inference with Limited Memory (huggingface.co)](https://huggingface.co/papers/2312.11514) [[Hardware and Edge]]
   - [Apple wants AI to run directly on its hardware instead of in the cloud | Ars Technica](https://arstechnica.com/apple/2023/12/apple-wants-ai-to-run-directly-on-its-hardware-instead-of-in-the-cloud/) [[Hardware and Edge]]
-  - HUGS: Human [[Gaussian splatting and Similar]]
+  - HUGS: Human [[Gaussian Splatting]]
   - [Apple Machine Learning Research](https://machinelearning.apple.com/research/hugs)
   - Apple presents [Paper page
   - Speculative Streaming: Fast LLM Inference without Auxiliary Models (huggingface.co)](https://huggingface.co/papers/2402.11131):
@@ -357,7 +633,7 @@ public:: true
   - ### Cultural and Financial Security
 		- **Symbolic Value:** Gold has been revered throughout history, symbolizing wealth, purity, and status across cultures.
 		- **Financial Instrument:** Often viewed as a hedge against inflation and currency devaluation, gold is a staple in diversified investment portfolios.
-  - ## [[Cyber security and Cryptography]] and Fraud Prevention
+  - ## [[Cyber Security and Cryptography]] and Fraud Prevention
 		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
 		- ### Tether
@@ -465,7 +741,7 @@ public:: true
 		- ### Impact on Institutions
 	 - **Democratization of AI:** Explores the potential for the democratization of powerful AI capabilities to be as destabilizing as historical technologies like the printing press, reshaping institutions and societal structures.
 	 - **Techno-Feudalist Timeline:** Discusses the potential for a *techno-feudalist" timeline, where the provision of various public goods, including security against AI misuse, shifts into private hands.
-  - ## [[Cyber security and Cryptography]] and Fraud Prevention
+  - ## [[Cyber Security and Cryptography]] and Fraud Prevention
 		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
 		- ### Tether
@@ -498,7 +774,7 @@ public:: true
 		- ### Impact on Institutions
 	 - **Democratization of AI:** Explores the potential for the democratization of powerful AI capabilities to be as destabilizing as historical technologies like the printing press, reshaping institutions and societal structures.
 	 - **Techno-Feudalist Timeline:** Discusses the potential for a *techno-feudalist" timeline, where the provision of various public goods, including security against AI misuse, shifts into private hands.
-  - ## [[Cyber security and Cryptography]] and Fraud Prevention
+  - ## [[Cyber Security and Cryptography]] and Fraud Prevention
 		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
 		- ### Tether
@@ -519,7 +795,7 @@ public:: true
 		- Mac support
 		- Really simple to join
 		- Runs in the browser
-  - ## [[Cyber security and Cryptography]] and Fraud Prevention
+  - ## [[Cyber Security and Cryptography]] and Fraud Prevention
 		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
   - ### Security evaluation

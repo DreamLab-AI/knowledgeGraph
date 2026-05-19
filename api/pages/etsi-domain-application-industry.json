@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:e8233b79e371b6f64bfcb86578a1ddb58d73e8498bdd1f9da60c57a7bce2735d",
+  "title": "ETSI Domain Application + Industry",
+  "slug": "etsi-domain-application-industry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-application-industry",
+  "domain": "spatial-computing",
+  "definition": "Cross-domain marker for metaverse application components focused on industrial applications including manufacturing simulations, industrial digital twins, predictive maintenance, remote operations, and industrial training systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:industrial-application-classification",
+        "label": "Industrial Application Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:manufacturing-platform-categorization",
+        "label": "Manufacturing Platform Categorization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "industrial-application-classification",
+      "label": "Industrial Application Classification"
+    },
+    {
+      "slug": "manufacturing-platform-categorization",
+      "label": "Manufacturing Platform Categorization"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": []
+}

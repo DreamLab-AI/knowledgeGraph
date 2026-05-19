@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:553a07ab9c0632973a8ce710abac7688e9ca8ad458865f29b2c2ce0a4e78d3e8",
+  "title": "Tokenomics",
+  "slug": "tokenomics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tokenomics",
+  "domain": "spatial-computing",
+  "definition": "Tokenomics is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "reward-distribution",
+      "label": "Reward Distribution"
+    },
+    {
+      "slug": "sink-mechanism",
+      "label": "Sink Mechanism"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

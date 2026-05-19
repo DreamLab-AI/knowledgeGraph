@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:00c7f2efbff45a5c8a5e5a3a2e73cc162c90dd1aa63c7738f8e1fbda7cb1c4ac",
+  "title": "Arbitration Process",
+  "slug": "arbitration-process",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:arbitration-process",
+  "domain": "spatial-computing",
+  "definition": "Arbitration Process in the blockchain and metaverse context refers to structured dispute resolution procedures using smart contracts and decentralized technologies, encompassing both on-chain mechanisms with automatic award enforcement and off-chain proceedings with traditional arbitral frameworks adapted for digital asset disputes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:alternative-dispute-resolution",
+      "label": "Alternative Dispute Resolution"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:arbitration-clauses",
+        "label": "Arbitration Clauses"
+      },
+      {
+        "id": "urn:visionflow:linked:evidence-procedures",
+        "label": "Evidence Procedures"
+      },
+      {
+        "id": "urn:visionflow:linked:neutral-selection",
+        "label": "Neutral Selection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:confidential-proceedings",
+        "label": "Confidential Proceedings"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-dispute-resolution",
+        "label": "Cross-Border Dispute Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-enforcement",
+        "label": "Smart Contract Enforcement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "alternative-dispute-resolution",
+      "label": "Alternative Dispute Resolution"
+    },
+    {
+      "slug": "arbitration-clauses",
+      "label": "Arbitration Clauses"
+    },
+    {
+      "slug": "confidential-proceedings",
+      "label": "Confidential Proceedings"
+    },
+    {
+      "slug": "cross-border-dispute-resolution",
+      "label": "Cross-Border Dispute Resolution"
+    },
+    {
+      "slug": "evidence-procedures",
+      "label": "Evidence Procedures"
+    },
+    {
+      "slug": "neutral-selection",
+      "label": "Neutral Selection"
+    },
+    {
+      "slug": "smart-contract-enforcement",
+      "label": "Smart Contract Enforcement"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    }
+  ]
+}

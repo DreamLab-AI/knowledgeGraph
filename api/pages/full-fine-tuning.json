@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:21010ed711c5dcd7eb65cced9f1685c1dd58178312fb35da3f14ffd9ea593987",
+  "title": "Full Fine Tuning",
+  "slug": "full-fine-tuning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:full-fine-tuning",
+  "domain": "artificial-intelligence",
+  "definition": "A fine-tuning approach that updates all parameters of a pre-trained model during adaptation to a downstream task. Full fine-tuning provides maximum flexibility and performance potential but requires substantial computational resources and memory.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:fine-tuning",
+      "label": "Fine-Tuning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ]
+}

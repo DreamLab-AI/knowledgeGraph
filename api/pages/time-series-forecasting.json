@@ -1,0 +1,456 @@
+{
+  "id": "urn:visionflow:page:6ba119bfba7f11dacab52df90b3c941eb8b069e8c2bd3493f7a03cd63bbc6659",
+  "title": "Time Series Forecasting",
+  "slug": "time-series-forecasting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:time-series-forecasting",
+  "domain": "artificial-intelligence",
+  "definition": "Time Series Forecasting (TSF) is the domain of statistical and machine learning methods that predict future values of ordered sequential observations indexed by time, encompassing classical statistical approaches (ARIMA \u2014 AutoRegressive Integrated Moving Average \u2014 modelling the series as a linear combination of its own past values and past forecast errors with parameters (p,d,q) fitted by maximum likelihood or least squares; SARIMA extending ARIMA with seasonal (P,D,Q)_s components for recurring periodic patterns; ETS \u2014 Error-Trend-Seasonality \u2014 state space exponential smoothing with 30 possible model combinations selected via AIC/BIC; Prophet (Taylor and Letham 2018, Meta) decomposing into piecewise-linear or logistic growth trend, Fourier-series seasonality and sparse holiday regressors), deep learning architectures (DeepAR (Salinas et al. 2020, Amazon) \u2014 autoregressive LSTM outputting parametric probabilistic distributions trained globally across thousands of related series; N-BEATS (Oreshkin et al. 2020, Element AI) \u2014 purely residual MLP stack with forward/backward basis expansion achieving M4-competition accuracy without recurrence or attention; N-HiTS (Challu et al. 2023) \u2014 h",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:probabilistic-forecasting",
+      "label": "Probabilistic Forecasting"
+    },
+    {
+      "id": "urn:visionflow:linked:sequential-data-processing",
+      "label": "Sequential Data Processing"
+    },
+    {
+      "id": "urn:visionflow:linked:statistical-modelling",
+      "label": "Statistical Modelling"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:predictive-analytics",
+      "label": "Predictive Analytics"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:covariates",
+        "label": "Covariates"
+      },
+      {
+        "id": "urn:visionflow:linked:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:visionflow:linked:forecast-horizon",
+        "label": "Forecast Horizon"
+      },
+      {
+        "id": "urn:visionflow:linked:interval-forecast",
+        "label": "Interval Forecast"
+      },
+      {
+        "id": "urn:visionflow:linked:lookback-window",
+        "label": "Lookback Window"
+      },
+      {
+        "id": "urn:visionflow:linked:point-forecast",
+        "label": "Point Forecast"
+      },
+      {
+        "id": "urn:visionflow:linked:probabilistic-forecast",
+        "label": "Probabilistic Forecast"
+      },
+      {
+        "id": "urn:visionflow:linked:reconciliation-step",
+        "label": "Reconciliation Step"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cross-validation-strategy",
+        "label": "Cross-Validation Strategy"
+      },
+      {
+        "id": "urn:visionflow:linked:forecast-evaluation-protocol",
+        "label": "Forecast Evaluation Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:historical-time-series-data",
+        "label": "Historical Time Series Data"
+      },
+      {
+        "id": "urn:visionflow:linked:stationarity-analysis",
+        "label": "Stationarity Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-reporting",
+        "label": "Automated Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:visionflow:linked:demand-planning",
+        "label": "Demand Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-quantification",
+        "label": "Risk Quantification"
+      },
+      {
+        "id": "urn:visionflow:linked:scenario-analysis",
+        "label": "Scenario Analysis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:arima",
+        "label": "ARIMA"
+      },
+      {
+        "id": "urn:visionflow:linked:exponential-smoothing",
+        "label": "Exponential Smoothing"
+      },
+      {
+        "id": "urn:visionflow:linked:hierarchical-reconciliation",
+        "label": "Hierarchical Reconciliation"
+      },
+      {
+        "id": "urn:visionflow:linked:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:visionflow:linked:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:visionflow:linked:quantile-regression",
+        "label": "Quantile Regression"
+      },
+      {
+        "id": "urn:visionflow:linked:state-space-models",
+        "label": "State Space Models"
+      },
+      {
+        "id": "urn:visionflow:linked:transformer-attention",
+        "label": "Transformer Attention"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "arima",
+      "label": "ARIMA"
+    },
+    {
+      "slug": "autocorrelation-analysis",
+      "label": "Autocorrelation Analysis"
+    },
+    {
+      "slug": "automated-reporting",
+      "label": "Automated Reporting"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "capacity-planning",
+      "label": "Capacity Planning"
+    },
+    {
+      "slug": "causal-inference",
+      "label": "Causal Inference"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "climate-modelling",
+      "label": "Climate Modelling"
+    },
+    {
+      "slug": "covariates",
+      "label": "Covariates"
+    },
+    {
+      "slug": "cross-validation-strategy",
+      "label": "Cross-Validation Strategy"
+    },
+    {
+      "slug": "crps-evaluation-standard",
+      "label": "CRPS Evaluation Standard"
+    },
+    {
+      "slug": "decision-support",
+      "label": "Decision Support"
+    },
+    {
+      "slug": "demand-planning",
+      "label": "Demand Planning"
+    },
+    {
+      "slug": "econometrics",
+      "label": "Econometrics"
+    },
+    {
+      "slug": "energy-forecasting",
+      "label": "Energy Forecasting"
+    },
+    {
+      "slug": "epidemiological-modelling",
+      "label": "Epidemiological Modelling"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "exponential-smoothing",
+      "label": "Exponential Smoothing"
+    },
+    {
+      "slug": "financial-risk",
+      "label": "Financial Risk"
+    },
+    {
+      "slug": "forecast-evaluation-protocol",
+      "label": "Forecast Evaluation Protocol"
+    },
+    {
+      "slug": "forecast-horizon",
+      "label": "Forecast Horizon"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "FoundationModelLayer"
+    },
+    {
+      "slug": "fourier-transform",
+      "label": "Fourier Transform"
+    },
+    {
+      "slug": "hierarchical-reconciliation",
+      "label": "Hierarchical Reconciliation"
+    },
+    {
+      "slug": "historical-time-series-data",
+      "label": "Historical Time Series Data"
+    },
+    {
+      "slug": "interval-forecast",
+      "label": "Interval Forecast"
+    },
+    {
+      "slug": "lookback-window",
+      "label": "Lookback Window"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
+      "slug": "m-competition-protocol",
+      "label": "M-Competition Protocol"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "monash-time-series-archive",
+      "label": "Monash Time Series Archive"
+    },
+    {
+      "slug": "nixtla-benchmark-suite",
+      "label": "Nixtla Benchmark Suite"
+    },
+    {
+      "slug": "normalising-flows",
+      "label": "Normalising Flows"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "operations-research-domain",
+      "label": "OperationsResearchDomain"
+    },
+    {
+      "slug": "optimisation-theory",
+      "label": "Optimisation Theory"
+    },
+    {
+      "slug": "point-forecast",
+      "label": "Point Forecast"
+    },
+    {
+      "slug": "probabilistic-forecast",
+      "label": "Probabilistic Forecast"
+    },
+    {
+      "slug": "probabilistic-forecasting",
+      "label": "Probabilistic Forecasting"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "quantile-regression",
+      "label": "Quantile Regression"
+    },
+    {
+      "slug": "reconciliation-step",
+      "label": "Reconciliation Step"
+    },
+    {
+      "slug": "regression-analysis",
+      "label": "Regression Analysis"
+    },
+    {
+      "slug": "risk-quantification",
+      "label": "Risk Quantification"
+    },
+    {
+      "slug": "scenario-analysis",
+      "label": "Scenario Analysis"
+    },
+    {
+      "slug": "sequential-data-processing",
+      "label": "Sequential Data Processing"
+    },
+    {
+      "slug": "smart-grid-operations",
+      "label": "Smart Grid Operations"
+    },
+    {
+      "slug": "spatial-data-analysis",
+      "label": "Spatial Data Analysis"
+    },
+    {
+      "slug": "state-space-models",
+      "label": "State Space Models"
+    },
+    {
+      "slug": "stationarity-analysis",
+      "label": "Stationarity Analysis"
+    },
+    {
+      "slug": "stationarity-testing",
+      "label": "Stationarity Testing"
+    },
+    {
+      "slug": "statistical-inference",
+      "label": "Statistical Inference"
+    },
+    {
+      "slug": "statistical-modelling",
+      "label": "Statistical Modelling"
+    },
+    {
+      "slug": "statistics-and-probability-domain",
+      "label": "StatisticsAndProbabilityDomain"
+    },
+    {
+      "slug": "traffic-prediction",
+      "label": "Traffic Prediction"
+    },
+    {
+      "slug": "transformer-attention",
+      "label": "Transformer Attention"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "predictive-analytics",
+      "label": "Predictive Analytics"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

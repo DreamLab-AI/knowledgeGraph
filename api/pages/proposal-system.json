@@ -1,0 +1,170 @@
+{
+  "id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9",
+  "title": "Proposal System",
+  "slug": "proposal-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proposal-system",
+  "domain": "blockchain",
+  "definition": "Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain execution]] via [[SmartContract|smart contracts]]. Proposal systems implement thresholds\u2014[[GovernanceToken]] requirements for initiation, quorum thresholds for binding, timelocks before execution\u2014creating barriers preventing spam whilst enabling broad participation. Systems balance bottom-up permissionless initiation with governance efficiency, facing challenges around proposal spam, voter fatigue (5-15% typical participation), and professionalization concentrating power amongst technical elites.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub-needs-content",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:snapshot",
+        "label": "Snapshot"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:on-chain-voting",
+        "label": "OnChainVoting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "aave-improvement-proposals",
+      "label": "Aave Improvement Proposals"
+    },
+    {
+      "slug": "bc-0142-smart-contract",
+      "label": "BC-0142-smart-contract"
+    },
+    {
+      "slug": "bc-0142-smart-contract",
+      "label": "BC-0142-smart-contract"
+    },
+    {
+      "slug": "bc-0461-decentralized-autonomous-organization",
+      "label": "BC-0461-decentralized-autonomous-organization"
+    },
+    {
+      "slug": "bc-0461-decentralized-autonomous-organization",
+      "label": "BC-0461-decentralized-autonomous-organization"
+    },
+    {
+      "slug": "bc-0462-on-chain-voting",
+      "label": "BC-0462-on-chain-voting"
+    },
+    {
+      "slug": "bc-0462-on-chain-voting",
+      "label": "BC-0462-on-chain-voting"
+    },
+    {
+      "slug": "bc-0463-governance-token",
+      "label": "BC-0463-governance-token"
+    },
+    {
+      "slug": "bc-0463-governance-token",
+      "label": "BC-0463-governance-token"
+    },
+    {
+      "slug": "bc-0464-treasury-management",
+      "label": "BC-0464-treasury-management"
+    },
+    {
+      "slug": "compound",
+      "label": "Compound"
+    },
+    {
+      "slug": "compound-governor-bravo",
+      "label": "Compound Governor Bravo"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "maker-dao-executive-votes",
+      "label": "MakerDAO Executive Votes"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
+    },
+    {
+      "slug": "tally-governance",
+      "label": "Tally Governance"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "uniswap-governance-process",
+      "label": "Uniswap Governance Process"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "governance-token",
+      "label": "GovernanceToken"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "OnChainVoting"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "OnChainVoting"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    }
+  ]
+}

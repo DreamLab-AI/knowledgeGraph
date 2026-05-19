@@ -1,24 +1,315 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Claude
-uri:: urn:visionclaw:concept:spatial-computing:claude
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:claude
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Claude
-content-hash:: sha256-12-d0360e43819a
-legacy-term-id:: AI-0230
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Claude
+legacy_uri:: urn:visionclaw:concept:spatial-computing:claude
 public:: true
+
+# Claude
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:02059b00a451119cdd304ae6f9d740ef66428d8945f580dc047de61d33a3ddbc",
+  "@type": "Page",
+  "vc:slug": "claude",
+  "title": "Claude",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
+      "vc:label": "Comparison of GPT4 and Gemini Ultra"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diagrams-as-code",
+      "vc:label": "Diagrams as Code"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graphing",
+      "vc:label": "Knowledge Graphing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:logseq",
+      "vc:label": "Logseq"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d0360e43819a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Claude"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0230"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Claude"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:claude"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:claude"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:02059b00a451119cdd304ae6f9d740ef66428d8945f580dc047de61d33a3ddbc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:claude",
+  "@type": "OntologyClass",
+  "label": "Claude",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:02059b00a451119cdd304ae6f9d740ef66428d8945f580dc047de61d33a3ddbc"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:02059b00a451119cdd304ae6f9d740ef66428d8945f580dc047de61d33a3ddbc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A family of large language models developed by Anthropic, trained using Constitutional AI and RLHF to be helpful, harmless, and honest, with strong performance on reasoning, coding, and extended context tasks.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:claude:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:02059b00a451119cdd304ae6f9d740ef66428d8945f580dc047de61d33a3ddbc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Chain of Thought]]",
+      "resolved": "urn:visionflow:linked:chain-of-thought",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic Claude]]",
+      "resolved": "urn:visionflow:owl:class:anthropic-claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Comparison of GPT4 and Gemini Ultra]]",
+      "resolved": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diagrams as Code]]",
+      "resolved": "urn:visionflow:owl:class:diagrams-as-code",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graphing]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Logseq]]",
+      "resolved": "urn:visionflow:owl:class:logseq",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Prompt Engineering]]",
+      "resolved": "urn:visionflow:owl:class:prompt-engineering",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:02059b00a451119cdd304ae6f9d740ef66428d8945f580dc047de61d33a3ddbc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A family of large language models developed by Anthropic, trained using Constitutional AI and RLHF to be helpful, harmless, and honest, with strong performance on reasoning, coding, and extended context tasks.
@@ -31,7 +322,7 @@ public:: true
 - ### Content
   - A family of large language models developed by Anthropic, trained using Constitutional AI and RLHF to be helpful, harmless, and honest, with strong performance on reasoning, coding, and extended context tasks.
   - **Majors**
-  - There are several very strong [[Large language models]] Gemini, Claude, and ChatGPT, Llama, and Grok
+  - There are several very strong [[Large Language Models]] Gemini, Claude, and ChatGPT, Llama, and Grok
   - [[Comparison of GPT4 and Gemini Ultra]]
   - [[OpenAI]]
   - OpenAI has been at the forefront of AI development, with significant advancements in 2024 and 2025.
@@ -122,7 +413,7 @@ public:: true
 				- **Agent Specialisation**: 12+ agent types with domain expertise (e.g., architect for design, tester for validation).
 				- **Real-Time Telemetry**: Live updates on agent status, task progress, and performance metrics.
   - **Majors**
-  - There are several very strong [[Large language models]] Gemini, Claude, and ChatGPT, Llama, and Grok
+  - There are several very strong [[Large Language Models]] Gemini, Claude, and ChatGPT, Llama, and Grok
   - [[Comparison of GPT4 and Gemini Ultra]]
   - [[OpenAI]]
   - OpenAI has been at the forefront of AI development, with significant advancements in 2024 and 2025.
@@ -248,7 +539,7 @@ public:: true
   - [[Google]] [[Gemini]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
   - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
   - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
-		- I build [[Chain of Thought]] scaffolds in [[Large language models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
+		- I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
 			- Current large language models benefit greatly from being asked to create diagrams as code, in a guided manner.
 			- These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
   - ### Claude 3 Opus

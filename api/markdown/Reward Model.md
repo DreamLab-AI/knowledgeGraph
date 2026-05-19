@@ -1,24 +1,228 @@
-iri:: http://narrativegoldmine.com/spatial-computing#RewardModel
-uri:: urn:visionclaw:concept:spatial-computing:reward-model
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:reward-model
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Reward Model
-content-hash:: sha256-12-2e9dedb9fe03
-legacy-term-id:: AI-0263
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#RewardModel
+legacy_uri:: urn:visionclaw:concept:spatial-computing:reward-model
 public:: true
+
+# Reward Model
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9013284a3ebe9ee1868e806b64bb110229ae85a02d7a26cace0e66cd614b2da2",
+  "@type": "Page",
+  "vc:slug": "reward-model",
+  "title": "Reward Model",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:direct-preference-optimization",
+      "vc:label": "Direct Preference Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2e9dedb9fe03"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#RewardModel"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0263"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Reward Model"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:reward-model"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:reward-model"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9013284a3ebe9ee1868e806b64bb110229ae85a02d7a26cace0e66cd614b2da2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:reward-model",
+  "@type": "OntologyClass",
+  "label": "Reward Model",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9013284a3ebe9ee1868e806b64bb110229ae85a02d7a26cace0e66cd614b2da2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9013284a3ebe9ee1868e806b64bb110229ae85a02d7a26cace0e66cd614b2da2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:reward-model:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9013284a3ebe9ee1868e806b64bb110229ae85a02d7a26cace0e66cd614b2da2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Direct Preference Optimization]]",
+      "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9013284a3ebe9ee1868e806b64bb110229ae85a02d7a26cace0e66cd614b2da2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.
@@ -34,13 +238,13 @@ public:: true
 - ### Content
   - A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.
 
-		- #### 4️⃣ Direct Preference Optimisation [[DPO]]
+		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimization]]
 			- **Description:** *DPO dramatically simplifies the whole thing.
 			- **Explain:** Removes the reward function, and so the human in the loop.
 			- **Paper:** [Direct Preference Optimization: Your Language Model is Secretly a Reward Model (arxiv.org)](https://arxiv.org/abs/2305.18290?)
 		- **In operation:  [[Proprietary Large Language Models]]:**
 
-		- #### 4️⃣ Direct Preference Optimisation [[DPO]]
+		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimization]]
 			- **Description:** *DPO dramatically simplifies the whole thing.
 			- **Explain:** Removes the reward function, and so the human in the loop.
 			- **Paper:** [Direct Preference Optimization: Your Language Model is Secretly a Reward Model (arxiv.org)](https://arxiv.org/abs/2305.18290?)

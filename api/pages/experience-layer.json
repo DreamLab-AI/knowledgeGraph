@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6",
+  "title": "Experience Layer",
+  "slug": "experience-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:experience-layer",
+  "domain": "spatial-computing",
+  "definition": "User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:interaction-manager",
+        "label": "Interaction Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:presence-system",
+        "label": "Presence System"
+      },
+      {
+        "id": "urn:visionflow:linked:ux-framework",
+        "label": "UX Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-interface",
+        "label": "Immersive Interface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:input-system",
+        "label": "Input System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:visionflow:owl:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "display-technology",
+      "label": "Display Technology"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "input-system",
+      "label": "Input System"
+    },
+    {
+      "slug": "interaction-manager",
+      "label": "Interaction Manager"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "natural-interaction",
+      "label": "Natural Interaction"
+    },
+    {
+      "slug": "presence-system",
+      "label": "Presence System"
+    },
+    {
+      "slug": "user-engagement",
+      "label": "User Engagement"
+    },
+    {
+      "slug": "ux-framework",
+      "label": "UX Framework"
+    },
+    {
+      "slug": "audio-system",
+      "label": "Audio System"
+    },
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    },
+    {
+      "slug": "immersive-interface",
+      "label": "Immersive Interface"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "user-interface-architecture",
+      "label": "User Interface Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    }
+  ]
+}

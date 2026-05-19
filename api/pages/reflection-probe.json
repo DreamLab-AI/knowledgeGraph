@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:0b4bdc619f112151c400ce944d01923cab52205c9c72d36a3f6a0862c337e9ac",
+  "title": "Reflection Probe",
+  "slug": "reflection-probe",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reflection-probe",
+  "domain": "spatial-computing",
+  "definition": "ReflectionProbe is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:render-pipeline",
+      "label": "Render Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

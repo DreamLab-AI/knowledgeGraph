@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:2d1d735d42c0fdffd1758cd68cda910eeac88e12915e77992a372c3544c89291",
+  "title": "Drug Discovery AI",
+  "slug": "drug-discovery-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:drug-discovery-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation. These systems integrate cheminformatics, molecular modelling, and machine learning to reduce drug development timelines and costs whilst improving success rates.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "molecular-design",
+      "label": "Molecular Design"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "precision-medicine",
+      "label": "Precision Medicine"
+    }
+  ]
+}

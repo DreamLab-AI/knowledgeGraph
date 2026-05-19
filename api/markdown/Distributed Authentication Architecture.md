@@ -1,21 +1,219 @@
-iri:: http://narrativegoldmine.com/infrastructure#DistributedAuthenticationArchitecture
-uri:: urn:visionclaw:concept:infrastructure:distributed-authentication-architecture
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:distributed-authentication-architecture
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Distributed Authentication Architecture
-content-hash:: sha256-12-aa48e04ef8bb
-legacy-term-id:: MV-9883
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DistributedAuthenticationArchitecture
+legacy_uri:: urn:visionclaw:concept:infrastructure:distributed-authentication-architecture
 public:: true
+
+# Distributed Authentication Architecture
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de",
+  "@type": "Page",
+  "vc:slug": "distributed-authentication-architecture",
+  "title": "Distributed Authentication Architecture",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
+      "vc:label": "Cross-Platform Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-aa48e04ef8bb"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DistributedAuthenticationArchitecture"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9883"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Distributed Authentication Architecture"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:distributed-authentication-architecture"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:distributed-authentication-architecture"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:distributed-authentication-architecture",
+  "@type": "OntologyClass",
+  "label": "Distributed Authentication Architecture",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
+      "vc:label": "Cross-Platform Interoperability"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:distributed-authentication-architecture:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cross-Platform Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:cross-platform-interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Management]]",
+      "resolved": "urn:visionflow:owl:class:identity-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.

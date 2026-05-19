@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/metaverse#AIAlignment
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-alignment
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-alignment
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Alignment
-content-hash:: sha256-12-61af96c6c433
-legacy-term-id:: AI-0268
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIAlignment
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-alignment
 public:: true
+
+# AI Alignment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aff27ecc33b0db8c7d073efb896d812ee856ad7168a936cb0b370d7e8e52b32b",
+  "@type": "Page",
+  "vc:slug": "ai-alignment",
+  "title": "AI Alignment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "natural language processing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-61af96c6c433"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIAlignment"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0268"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Alignment"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-alignment"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-alignment"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aff27ecc33b0db8c7d073efb896d812ee856ad7168a936cb0b370d7e8e52b32b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-alignment",
+  "@type": "OntologyClass",
+  "label": "AI Alignment",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aff27ecc33b0db8c7d073efb896d812ee856ad7168a936cb0b370d7e8e52b32b"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aff27ecc33b0db8c7d073efb896d812ee856ad7168a936cb0b370d7e8e52b32b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-alignment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aff27ecc33b0db8c7d073efb896d812ee856ad7168a936cb0b370d7e8e52b32b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[natural language processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aff27ecc33b0db8c7d073efb896d812ee856ad7168a936cb0b370d7e8e52b32b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.

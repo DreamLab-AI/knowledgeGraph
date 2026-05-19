@@ -1,0 +1,712 @@
+{
+  "id": "urn:visionflow:page:227022606c2037d1d0d8767577aa50160d04a7034b2c62ec3042c4957d7fca25",
+  "title": "Bitcoin Technical Overview",
+  "slug": "bitcoin-technical-overview",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-technical-overview",
+  "domain": "blockchain",
+  "definition": "**Bitcoin Technical Overview** is the canonical ontological concept encapsulating the complete technical architecture of the Bitcoin protocol \u2014 the first decentralised, permissionless, proof-of-work secured, UTXO-based peer-to-peer electronic cash system described by Satoshi Nakamoto in the 2008 whitepaper \"Bitcoin: A Peer-to-Peer Electronic Cash System\". Bitcoin's technical stack spans seven interrelated layers: (1) a cryptographic foundation built on [[Elliptic Curve Digital Signatures]] over the secp256k1 curve and double-[[SHA-256]] hashing, providing unforgeable ownership proofs and tamper-evident data structures; (2) a [[UTXO Model]] (Unspent Transaction Output) ledger where value is represented as discrete, signed outputs rather than account balances, granting strong [[privacy]] properties and enabling parallelisable validation; (3) a [[Merkle Tree]] transaction accumulator embedded in each block header, enabling O(log n) [[Simplified Payment Verification]] (SPV) proofs without requiring full chain download; (4) [[Proof of Work]] consensus via double-SHA-256 mining producing block hashes below a dynamically adjusted target, with [[Difficulty Adjustment]] every 2,016 blocks m",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "label": "Peer To Peer Network"
+    }
+  ],
+  "qualityScore": 0.54,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bip-process",
+        "label": "BIP Process"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:visionflow:linked:block-structure",
+        "label": "Block Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:segwit",
+        "label": "Segwit"
+      },
+      {
+        "id": "urn:visionflow:linked:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:visionflow:owl:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "label": "Peer to Peer Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:layer-2-protocols",
+        "label": "Layer 2 Protocols"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:visionflow:linked:trustless-payments",
+        "label": "Trustless Payments"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:halving-schedule",
+        "label": "Halving Schedule"
+      },
+      {
+        "id": "urn:visionflow:owl:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "antonopoulos-2023-mastering-bitcoin",
+      "label": "Antonopoulos 2023 Mastering Bitcoin"
+    },
+    {
+      "slug": "bip-141-segregated-witness",
+      "label": "BIP-141 Segregated Witness"
+    },
+    {
+      "slug": "bip-32-hierarchical-deterministic-wallets",
+      "label": "BIP-32 Hierarchical Deterministic Wallets"
+    },
+    {
+      "slug": "bip-327-mu-sig2",
+      "label": "BIP-327 MuSig2"
+    },
+    {
+      "slug": "bip-340",
+      "label": "BIP-340"
+    },
+    {
+      "slug": "bip-340-schnorr-signatures",
+      "label": "BIP-340 Schnorr Signatures"
+    },
+    {
+      "slug": "bip-341",
+      "label": "BIP-341"
+    },
+    {
+      "slug": "bip-341-taproot",
+      "label": "BIP-341 Taproot"
+    },
+    {
+      "slug": "bip-342",
+      "label": "BIP-342"
+    },
+    {
+      "slug": "bip-342-tapscript",
+      "label": "BIP-342 Tapscript"
+    },
+    {
+      "slug": "bip-347-op-cat",
+      "label": "BIP-347 OP CAT"
+    },
+    {
+      "slug": "bip-360",
+      "label": "BIP-360"
+    },
+    {
+      "slug": "bip-360-p2-tsh-quantum-resistance",
+      "label": "BIP-360 P2TSH Quantum Resistance"
+    },
+    {
+      "slug": "bip-39-mnemonic-code",
+      "label": "BIP-39 Mnemonic Code"
+    },
+    {
+      "slug": "bip-process",
+      "label": "BIP Process"
+    },
+    {
+      "slug": "bitcoin-core",
+      "label": "Bitcoin Core"
+    },
+    {
+      "slug": "bitcoin-optech",
+      "label": "Bitcoin Optech"
+    },
+    {
+      "slug": "bitcoin-script",
+      "label": "Bitcoin Script"
+    },
+    {
+      "slug": "block-structure",
+      "label": "Block Structure"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "blockchain analytics"
+    },
+    {
+      "slug": "bloom-filters",
+      "label": "Bloom Filters"
+    },
+    {
+      "slug": "bolt-specification",
+      "label": "BOLT Specification"
+    },
+    {
+      "slug": "bolt-specification-2024",
+      "label": "BOLT Specification 2024"
+    },
+    {
+      "slug": "certicom-sec2-parameters",
+      "label": "Certicom SEC2 Parameters"
+    },
+    {
+      "slug": "chalkias-2024-bitcoin-quantum-computing",
+      "label": "Chalkias 2024 Bitcoin Quantum Computing"
+    },
+    {
+      "slug": "coldcard",
+      "label": "Coldcard"
+    },
+    {
+      "slug": "compact-block-relay",
+      "label": "Compact Block Relay"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decker-russell-osuntokun-2018-eltoo",
+      "label": "Decker Russell Osuntokun 2018 Eltoo"
+    },
+    {
+      "slug": "diffie-hellman-1976-new-directions",
+      "label": "Diffie Hellman 1976 New Directions"
+    },
+    {
+      "slug": "digital-gold",
+      "label": "Digital Gold"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "dryja-2019-utreexo",
+      "label": "Dryja 2019 Utreexo"
+    },
+    {
+      "slug": "elliptic-curve-digital-signatures",
+      "label": "Elliptic Curve Digital Signatures"
+    },
+    {
+      "slug": "eyal-sirer-2014-selfish-mining",
+      "label": "Eyal Sirer 2014 Selfish Mining"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "garay-kiayias-leonardos-2015-bitcoin-backbone",
+      "label": "Garay Kiayias Leonardos 2015 Bitcoin Backbone"
+    },
+    {
+      "slug": "halving-schedule",
+      "label": "Halving Schedule"
+    },
+    {
+      "slug": "harris-zohar-2020-flood-loot",
+      "label": "Harris Zohar 2020 Flood Loot"
+    },
+    {
+      "slug": "hierarchical-deterministic",
+      "label": "Hierarchical Deterministic"
+    },
+    {
+      "slug": "layer-2-protocols",
+      "label": "Layer 2 Protocols"
+    },
+    {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
+      "slug": "merkle-1979-certified-digital-signature",
+      "label": "Merkle 1979 Certified Digital Signature"
+    },
+    {
+      "slug": "miniscript",
+      "label": "Miniscript"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "monetary-systems-domain",
+      "label": "MonetarySystemsDomain"
+    },
+    {
+      "slug": "mu-sig2",
+      "label": "MuSig2"
+    },
+    {
+      "slug": "multisignature",
+      "label": "Multisignature"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "network-theory",
+      "label": "Network Theory"
+    },
+    {
+      "slug": "nick-ruffing-seurin-2021-mu-sig2",
+      "label": "Nick Ruffing Seurin 2021 MuSig2"
+    },
+    {
+      "slug": "nist-fips-180-4-sha-256",
+      "label": "NIST FIPS 180-4 SHA-256"
+    },
+    {
+      "slug": "op-cat",
+      "label": "OP_CAT"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "pass-seeman-shelat-2017-asynchronous-networks",
+      "label": "Pass Seeman Shelat 2017 Asynchronous Networks"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
+      "slug": "poon-dryja-2016-lightning-network",
+      "label": "Poon Dryja 2016 Lightning Network"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "slug": "rgb-protocol",
+      "label": "RGB Protocol"
+    },
+    {
+      "slug": "ripemd-160",
+      "label": "RIPEMD-160"
+    },
+    {
+      "slug": "rodarmor-2023-ordinals",
+      "label": "Rodarmor 2023 Ordinals"
+    },
+    {
+      "slug": "rodarmor-2024-runes",
+      "label": "Rodarmor 2024 Runes"
+    },
+    {
+      "slug": "runes",
+      "label": "Runes"
+    },
+    {
+      "slug": "scaling-solutions",
+      "label": "scaling solutions"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr signatures"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "scripting-layer",
+      "label": "ScriptingLayer"
+    },
+    {
+      "slug": "sec2-secp256k1-standard",
+      "label": "SEC2 secp256k1 Standard"
+    },
+    {
+      "slug": "secp256k1",
+      "label": "secp256k1"
+    },
+    {
+      "slug": "seed-signer",
+      "label": "SeedSigner"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
+    },
+    {
+      "slug": "segwit",
+      "label": "Segwit"
+    },
+    {
+      "slug": "simplified-payment-verification",
+      "label": "Simplified Payment Verification"
+    },
+    {
+      "slug": "sparrow-wallet",
+      "label": "Sparrow Wallet"
+    },
+    {
+      "slug": "spending-conditions",
+      "label": "spending conditions"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "time-locked-contracts",
+      "label": "Time-locked Contracts"
+    },
+    {
+      "slug": "transaction-fees",
+      "label": "transaction fees"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
+    },
+    {
+      "slug": "trustless-payments",
+      "label": "Trustless Payments"
+    },
+    {
+      "slug": "account-model",
+      "label": "Account Model"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "Difficulty Adjustment"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer to Peer Network"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "privacy",
+      "label": "privacy"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-depth",
+      "label": "Model Depth"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

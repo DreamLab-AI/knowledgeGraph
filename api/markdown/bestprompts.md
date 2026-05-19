@@ -1,20 +1,165 @@
-iri:: http://narrativegoldmine.com/infrastructure#Bestprompts
-uri:: urn:visionclaw:concept:infrastructure:bestprompts
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:bestprompts
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: bestprompts
-content-hash:: sha256-12-f7dcb14ce5a8
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#Bestprompts
+legacy_uri:: urn:visionclaw:concept:infrastructure:bestprompts
 public:: true
+
+# bestprompts
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6",
+  "@type": "Page",
+  "vc:slug": "bestprompts",
+  "title": "bestprompts",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f7dcb14ce5a8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#Bestprompts"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "bestprompts"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:bestprompts"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:bestprompts"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:bestprompts",
+  "@type": "OntologyClass",
+  "label": "bestprompts",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "bestprompts is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:bestprompts:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6"
+  },
+  "vc:resolutions": [],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - bestprompts is a concept within the ngm domain.

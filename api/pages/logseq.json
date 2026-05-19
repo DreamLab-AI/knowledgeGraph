@@ -1,0 +1,556 @@
+{
+  "id": "urn:visionflow:page:477baa615fbb7d1c53dbe4e8249c5f36eed118fa91c3f0aa375e6ad86cd7076d",
+  "title": "Logseq",
+  "slug": "logseq",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:logseq",
+  "domain": "software",
+  "definition": "Logseq is a privacy-first, open-source, local-first personal knowledge management (PKM) platform built on a block-based outliner architecture, implemented primarily in ClojureScript with a DataScript in-memory Datalog query engine, providing bidirectional linking, hierarchical namespaces, property-based metadata, advanced Datalog queries, graph visualisation, spaced repetition flashcards, PDF annotation, whiteboards, and a rich plugin API across desktop (Electron), web, and mobile (Capacitor) deployment surfaces. Originally released publicly in 2020 by Tienson Qin as an open-source, local-first alternative to Roam Research, Logseq stores knowledge as human-readable plain-text Markdown or Org-mode files on the user's local device (file-graph mode), giving users full data sovereignty through direct file-system ownership and compatibility with any text editor or version control system. A major architectural transition has been underway since 2023 toward a Database (DB) version that persists block-level data in SQLite via WebAssembly (WASM), enabling fine-grained block timestamps, real-time collaboration (RTC) synchronisation via CRDTs, structured property types with schema validation,",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:local-first-software",
+      "label": "Local-First Software"
+    },
+    {
+      "id": "urn:visionflow:linked:note-taking-application",
+      "label": "Note-Taking Application"
+    },
+    {
+      "id": "urn:visionflow:linked:outliner",
+      "label": "Outliner"
+    },
+    {
+      "id": "urn:visionflow:linked:personal-knowledge-management",
+      "label": "Personal Knowledge Management"
+    },
+    {
+      "id": "urn:visionflow:linked:semantic-web-tools",
+      "label": "Semantic Web Tools"
+    },
+    {
+      "id": "urn:visionflow:owl:class:knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:block-embed",
+        "label": "Block Embed"
+      },
+      {
+        "id": "urn:visionflow:linked:block-reference",
+        "label": "Block Reference"
+      },
+      {
+        "id": "urn:visionflow:linked:datalog-query",
+        "label": "Datalog Query"
+      },
+      {
+        "id": "urn:visionflow:linked:flashcard",
+        "label": "Flashcard"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-view",
+        "label": "Graph View"
+      },
+      {
+        "id": "urn:visionflow:linked:journal",
+        "label": "Journal"
+      },
+      {
+        "id": "urn:visionflow:linked:namespace",
+        "label": "Namespace"
+      },
+      {
+        "id": "urn:visionflow:linked:page",
+        "label": "Page"
+      },
+      {
+        "id": "urn:visionflow:linked:pdf-annotation",
+        "label": "PDF Annotation"
+      },
+      {
+        "id": "urn:visionflow:linked:plugin-api",
+        "label": "Plugin API"
+      },
+      {
+        "id": "urn:visionflow:linked:whiteboard",
+        "label": "Whiteboard"
+      },
+      {
+        "id": "urn:visionflow:owl:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:visionflow:owl:class:property",
+        "label": "Property"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:clojure-script",
+        "label": "ClojureScript"
+      },
+      {
+        "id": "urn:visionflow:linked:data-script",
+        "label": "DataScript"
+      },
+      {
+        "id": "urn:visionflow:linked:datalog",
+        "label": "Datalog"
+      },
+      {
+        "id": "urn:visionflow:linked:electron",
+        "label": "Electron"
+      },
+      {
+        "id": "urn:visionflow:linked:markdown",
+        "label": "Markdown"
+      },
+      {
+        "id": "urn:visionflow:linked:react",
+        "label": "React"
+      },
+      {
+        "id": "urn:visionflow:linked:rum",
+        "label": "Rum"
+      },
+      {
+        "id": "urn:visionflow:linked:shadow-cljs",
+        "label": "Shadow-cljs"
+      },
+      {
+        "id": "urn:visionflow:linked:sqlite",
+        "label": "SQLite"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bidirectional-linking",
+        "label": "Bidirectional Linking"
+      },
+      {
+        "id": "urn:visionflow:linked:block-transclusion",
+        "label": "Block Transclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:ontology-authoring",
+        "label": "Ontology Authoring"
+      },
+      {
+        "id": "urn:visionflow:linked:pdf-annotation",
+        "label": "PDF Annotation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-collaboration",
+        "label": "Real Time Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:second-brain",
+        "label": "Second Brain"
+      },
+      {
+        "id": "urn:visionflow:linked:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "id": "urn:visionflow:linked:task-management",
+        "label": "Task Management"
+      },
+      {
+        "id": "urn:visionflow:linked:zettelkasten",
+        "label": "Zettelkasten"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:block-reference",
+        "label": "Block Reference"
+      },
+      {
+        "id": "urn:visionflow:linked:datalog",
+        "label": "Datalog"
+      },
+      {
+        "id": "urn:visionflow:linked:local-first-software",
+        "label": "Local-First Software"
+      },
+      {
+        "id": "urn:visionflow:linked:markdown",
+        "label": "Markdown"
+      },
+      {
+        "id": "urn:visionflow:linked:org-mode",
+        "label": "Org-mode"
+      },
+      {
+        "id": "urn:visionflow:linked:property-graph",
+        "label": "Property Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-collaboration",
+        "label": "Real Time Collaboration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "academic-research",
+      "label": "Academic Research"
+    },
+    {
+      "slug": "athens-research",
+      "label": "Athens Research"
+    },
+    {
+      "slug": "bidirectional-linking",
+      "label": "Bidirectional Linking"
+    },
+    {
+      "slug": "block-embed",
+      "label": "Block Embed"
+    },
+    {
+      "slug": "block-reference",
+      "label": "Block Reference"
+    },
+    {
+      "slug": "block-transclusion",
+      "label": "Block Transclusion"
+    },
+    {
+      "slug": "capacitor",
+      "label": "Capacitor"
+    },
+    {
+      "slug": "clojure-script",
+      "label": "ClojureScript"
+    },
+    {
+      "slug": "clojure-script-specification",
+      "label": "ClojureScript Specification"
+    },
+    {
+      "slug": "common-mark",
+      "label": "CommonMark"
+    },
+    {
+      "slug": "confluence",
+      "label": "Confluence"
+    },
+    {
+      "slug": "data-script",
+      "label": "DataScript"
+    },
+    {
+      "slug": "datalog",
+      "label": "Datalog"
+    },
+    {
+      "slug": "datalog-query",
+      "label": "Datalog Query"
+    },
+    {
+      "slug": "datalog-specification",
+      "label": "Datalog Specification"
+    },
+    {
+      "slug": "electron",
+      "label": "Electron"
+    },
+    {
+      "slug": "flashcard",
+      "label": "Flashcard"
+    },
+    {
+      "slug": "getting-things-done",
+      "label": "Getting Things Done"
+    },
+    {
+      "slug": "graph-view",
+      "label": "Graph View"
+    },
+    {
+      "slug": "gulp",
+      "label": "Gulp"
+    },
+    {
+      "slug": "heptabase",
+      "label": "Heptabase"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "IntegrationLayer"
+    },
+    {
+      "slug": "journal",
+      "label": "Journal"
+    },
+    {
+      "slug": "knowledge-management-domain",
+      "label": "KnowledgeManagementDomain"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "literature-review",
+      "label": "Literature Review"
+    },
+    {
+      "slug": "local-first-software",
+      "label": "Local-First Software"
+    },
+    {
+      "slug": "markdown",
+      "label": "Markdown"
+    },
+    {
+      "slug": "markdown-specification",
+      "label": "Markdown Specification"
+    },
+    {
+      "slug": "namespace",
+      "label": "Namespace"
+    },
+    {
+      "slug": "networked-thought",
+      "label": "Networked Thought"
+    },
+    {
+      "slug": "note-taking-application",
+      "label": "Note-Taking Application"
+    },
+    {
+      "slug": "notion",
+      "label": "Notion"
+    },
+    {
+      "slug": "obsidian",
+      "label": "Obsidian"
+    },
+    {
+      "slug": "ontology-authoring",
+      "label": "Ontology Authoring"
+    },
+    {
+      "slug": "ontology-engineering",
+      "label": "Ontology Engineering"
+    },
+    {
+      "slug": "org-mode",
+      "label": "Org-mode"
+    },
+    {
+      "slug": "org-mode-specification",
+      "label": "Org-mode Specification"
+    },
+    {
+      "slug": "outliner",
+      "label": "Outliner"
+    },
+    {
+      "slug": "owl",
+      "label": "OWL"
+    },
+    {
+      "slug": "page",
+      "label": "Page"
+    },
+    {
+      "slug": "page-name",
+      "label": "Page Name"
+    },
+    {
+      "slug": "page-references",
+      "label": "Page References"
+    },
+    {
+      "slug": "page-y",
+      "label": "Page Y"
+    },
+    {
+      "slug": "pdf-annotation",
+      "label": "PDF Annotation"
+    },
+    {
+      "slug": "personal-knowledge-management",
+      "label": "Personal Knowledge Management"
+    },
+    {
+      "slug": "plugin-api",
+      "label": "Plugin API"
+    },
+    {
+      "slug": "property-graph",
+      "label": "Property Graph"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "react",
+      "label": "React"
+    },
+    {
+      "slug": "real-time-collaboration",
+      "label": "Real Time Collaboration"
+    },
+    {
+      "slug": "reflect",
+      "label": "Reflect"
+    },
+    {
+      "slug": "research-knowledge-base",
+      "label": "Research Knowledge Base"
+    },
+    {
+      "slug": "roam-research",
+      "label": "Roam Research"
+    },
+    {
+      "slug": "rum",
+      "label": "Rum"
+    },
+    {
+      "slug": "second-brain",
+      "label": "Second Brain"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "SemanticWebDomain"
+    },
+    {
+      "slug": "semantic-web-tools",
+      "label": "Semantic Web Tools"
+    },
+    {
+      "slug": "shadow-cljs",
+      "label": "Shadow-cljs"
+    },
+    {
+      "slug": "software-domain",
+      "label": "SoftwareDomain"
+    },
+    {
+      "slug": "spaced-repetition",
+      "label": "Spaced Repetition"
+    },
+    {
+      "slug": "spaced-repetition-learning",
+      "label": "Spaced Repetition Learning"
+    },
+    {
+      "slug": "sqlite",
+      "label": "SQLite"
+    },
+    {
+      "slug": "tana",
+      "label": "Tana"
+    },
+    {
+      "slug": "task-management",
+      "label": "Task Management"
+    },
+    {
+      "slug": "wasm",
+      "label": "WASM"
+    },
+    {
+      "slug": "whiteboard",
+      "label": "Whiteboard"
+    },
+    {
+      "slug": "wikilink",
+      "label": "wikilink"
+    },
+    {
+      "slug": "zettelkasten",
+      "label": "Zettelkasten"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "knowledge-graph-construction",
+      "label": "Knowledge Graph Construction"
+    },
+    {
+      "slug": "property",
+      "label": "Property"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    }
+  ]
+}

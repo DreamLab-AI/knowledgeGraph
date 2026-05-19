@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:d2c7f73339a232985942a2b42964cc34c23600e4c66787a6c6bd2d7f32943535",
+  "title": "Presence Detection",
+  "slug": "presence-detection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:presence-detection",
+  "domain": "spatial-computing",
+  "definition": "PresenceDetection is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "awareness",
+      "label": "Awareness"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    }
+  ]
+}

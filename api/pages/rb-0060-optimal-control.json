@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:5d1aa3b70e533af00a207c56ed0a70067568f0c774a79bc44ad494b3e42a1870",
+  "title": "rb 0060 optimal control",
+  "slug": "rb-0060-optimal-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0060-optimal-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

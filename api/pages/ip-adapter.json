@@ -1,0 +1,540 @@
+{
+  "id": "urn:visionflow:page:70abaaaba1e446b4493299050ba8f3a30a532cc154c93c6634e437864e3289a6",
+  "title": "IP-Adapter",
+  "slug": "ip-adapter",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ip-adapter",
+  "domain": "artificial-intelligence",
+  "definition": "IP-Adapter (Image Prompt Adapter) is a lightweight (~22M parameter) cross-attention conditioning module for pretrained text-to-image diffusion models introduced by Hu Ye, Jun Zhang, Sibo Liu, Xiao Han, and Wei Yang at Tencent AI Lab in August 2023 (arXiv:2308.06721 \"IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models\") that enables image-conditioned generation by introducing a **decoupled cross-attention mechanism**\u2014a parallel cross-attention pathway operating on CLIP image-encoder features (ViT-H/14 or ViT-L/14 patches plus the global CLS token) running alongside the frozen text cross-attention of the host diffusion U-Net (Stable Diffusion 1.5, SDXL, or later Flux/SD3 ports), with image and text attention outputs summed before being passed through the residual stream, allowing the same model to accept a reference image as a prompt without retraining the base model and without competing with the text prompt for the same attention capacity, in contrast with prior approaches that either fine-tuned the base model (Textual Inversion, DreamBooth, LoRA) requiring per-subject training, prepended image tokens to the text embedding (Versatile Diffusion) sacri",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cross-attention-module",
+      "label": "Cross-Attention Module"
+    },
+    {
+      "id": "urn:visionflow:linked:diffusion-model-adapter",
+      "label": "Diffusion Model Adapter"
+    },
+    {
+      "id": "urn:visionflow:linked:image-conditioning-mechanism",
+      "label": "Image Conditioning Mechanism"
+    },
+    {
+      "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:clip-image-encoder",
+        "label": "CLIP Image Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:decoupled-cross-attention-layer",
+        "label": "Decoupled Cross-Attention Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:image-projection-layer",
+        "label": "Image Projection Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:resampler-module",
+        "label": "Resampler Module"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mask",
+        "label": "Attention Mask"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:image-feature-encoder",
+        "label": "Image Feature Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:pretrained-diffusion-u-net",
+        "label": "Pretrained Diffusion U-Net"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:character-consistency",
+        "label": "Character Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:composition-matching",
+        "label": "Composition Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-image-blending",
+        "label": "Multi-Image Blending"
+      },
+      {
+        "id": "urn:visionflow:linked:product-placement-synthesis",
+        "label": "Product Placement Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-driven-generation",
+        "label": "Reference-Driven Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-try-on",
+        "label": "Virtual Try-On"
+      },
+      {
+        "id": "urn:visionflow:owl:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:cross-attention-conditioning",
+        "label": "Cross-Attention Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:decoupled-attention",
+        "label": "Decoupled Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:image-prompt-injection",
+        "label": "Image Prompt Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:resampler-pooling",
+        "label": "Resampler Pooling"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adapter-tuning",
+      "label": "Adapter Tuning"
+    },
+    {
+      "slug": "alayrac-et-al-2022-flamingo",
+      "label": "Alayrac et al. 2022 Flamingo"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "ar-xiv-2308-06721",
+      "label": "arXiv 2308.06721"
+    },
+    {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
+      "slug": "byte-dance-2024-pu-lid-flux",
+      "label": "ByteDance 2024 PuLID-Flux"
+    },
+    {
+      "slug": "c2-pa-consortium-2024-content-provenance-2-0",
+      "label": "C2PA Consortium 2024 Content Provenance 2.0"
+    },
+    {
+      "slug": "character-consistency",
+      "label": "Character Consistency"
+    },
+    {
+      "slug": "cherti-et-al-2023-open-clip",
+      "label": "Cherti et al. 2023 OpenCLIP"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-image-encoder",
+      "label": "CLIP Image Encoder"
+    },
+    {
+      "slug": "clip-vi-t-h-14",
+      "label": "CLIP ViT-H/14"
+    },
+    {
+      "slug": "comfy-ui-ipadapter-plus",
+      "label": "ComfyUI_IPAdapter_plus"
+    },
+    {
+      "slug": "composition-matching",
+      "label": "Composition Matching"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "contrastive-language-image-pretraining",
+      "label": "Contrastive Language-Image Pretraining"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "cross-attention-conditioning",
+      "label": "Cross-Attention Conditioning"
+    },
+    {
+      "slug": "cross-attention-module",
+      "label": "Cross-Attention Module"
+    },
+    {
+      "slug": "decoupled-attention",
+      "label": "Decoupled Attention"
+    },
+    {
+      "slug": "decoupled-cross-attention-layer",
+      "label": "Decoupled Cross-Attention Layer"
+    },
+    {
+      "slug": "deng-et-al-2019-arc-face-insight-face",
+      "label": "Deng et al. 2019 ArcFace InsightFace"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-model-adapter",
+      "label": "Diffusion Model Adapter"
+    },
+    {
+      "slug": "diffusion-model-domain",
+      "label": "DiffusionModelDomain"
+    },
+    {
+      "slug": "dream-booth",
+      "label": "DreamBooth"
+    },
+    {
+      "slug": "eu-2024-ai-act-article-50",
+      "label": "EU 2024 AI Act Article 50"
+    },
+    {
+      "slug": "forge",
+      "label": "Forge"
+    },
+    {
+      "slug": "gal-et-al-2023-textual-inversion",
+      "label": "Gal et al. 2023 Textual Inversion"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "guo-et-al-2024-pu-lid",
+      "label": "Guo et al. 2024 PuLID"
+    },
+    {
+      "slug": "ho-and-salimans-2022-classifier-free-guidance",
+      "label": "Ho & Salimans 2022 Classifier-Free Guidance"
+    },
+    {
+      "slug": "ho-et-al-2020-ddpm",
+      "label": "Ho et al. 2020 DDPM"
+    },
+    {
+      "slug": "houlsby-et-al-2019-adapter-tuning",
+      "label": "Houlsby et al. 2019 Adapter Tuning"
+    },
+    {
+      "slug": "hu-et-al-2021-lo-ra",
+      "label": "Hu et al. 2021 LoRA"
+    },
+    {
+      "slug": "hugging-face-diffusers",
+      "label": "Hugging Face Diffusers"
+    },
+    {
+      "slug": "identity-preservation",
+      "label": "Identity Preservation"
+    },
+    {
+      "slug": "image-conditioning-mechanism",
+      "label": "Image Conditioning Mechanism"
+    },
+    {
+      "slug": "image-feature-encoder",
+      "label": "Image Feature Encoder"
+    },
+    {
+      "slug": "image-projection-layer",
+      "label": "Image Projection Layer"
+    },
+    {
+      "slug": "image-prompt-injection",
+      "label": "Image Prompt Injection"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
+    },
+    {
+      "slug": "insight-face-arc-face",
+      "label": "InsightFace ArcFace"
+    },
+    {
+      "slug": "instant-id",
+      "label": "InstantID"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
+      "slug": "jaegle-et-al-2022-perceiver-io",
+      "label": "Jaegle et al. 2022 Perceiver IO"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "li-et-al-2023-blip-2-q-former",
+      "label": "Li et al. 2023 BLIP-2 Q-Former"
+    },
+    {
+      "slug": "li-et-al-2023-photo-maker",
+      "label": "Li et al. 2023 PhotoMaker"
+    },
+    {
+      "slug": "mao-et-al-2024-story-adapter",
+      "label": "Mao et al. 2024 Story-Adapter"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "mou-et-al-2023-t2-i-adapter",
+      "label": "Mou et al. 2023 T2I-Adapter"
+    },
+    {
+      "slug": "multi-image-blending",
+      "label": "Multi-Image Blending"
+    },
+    {
+      "slug": "perceiver-resampler",
+      "label": "Perceiver Resampler"
+    },
+    {
+      "slug": "photo-maker",
+      "label": "PhotoMaker"
+    },
+    {
+      "slug": "po-et-al-2024-state-of-the-art-on-diffusion-models",
+      "label": "Po et al. 2024 State of the Art on Diffusion Models"
+    },
+    {
+      "slug": "pretrained-diffusion-u-net",
+      "label": "Pretrained Diffusion U-Net"
+    },
+    {
+      "slug": "product-placement-synthesis",
+      "label": "Product Placement Synthesis"
+    },
+    {
+      "slug": "pu-lid",
+      "label": "PuLID"
+    },
+    {
+      "slug": "q-former",
+      "label": "Q-Former"
+    },
+    {
+      "slug": "radford-et-al-2021-clip",
+      "label": "Radford et al. 2021 CLIP"
+    },
+    {
+      "slug": "reference-driven-generation",
+      "label": "Reference-Driven Generation"
+    },
+    {
+      "slug": "reference-only-control-net",
+      "label": "Reference-Only ControlNet"
+    },
+    {
+      "slug": "resampler-module",
+      "label": "Resampler Module"
+    },
+    {
+      "slug": "resampler-pooling",
+      "label": "Resampler Pooling"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-stable-diffusion",
+      "label": "Rombach et al. 2022 Latent Diffusion Stable Diffusion"
+    },
+    {
+      "slug": "ruiz-et-al-2023-dream-booth",
+      "label": "Ruiz et al. 2023 DreamBooth"
+    },
+    {
+      "slug": "song-et-al-2021-ddim",
+      "label": "Song et al. 2021 DDIM"
+    },
+    {
+      "slug": "spinelli-2023-2026-comfy-ui-ipadapter-plus-cubiq",
+      "label": "Spinelli 2023-2026 ComfyUI_IPAdapter_plus cubiq"
+    },
+    {
+      "slug": "stable-diffusion-web-ui-control-net-extension",
+      "label": "Stable Diffusion WebUI ControlNet Extension"
+    },
+    {
+      "slug": "stable-diffusion-xl",
+      "label": "Stable Diffusion XL"
+    },
+    {
+      "slug": "subject-driven-generation",
+      "label": "Subject-Driven Generation"
+    },
+    {
+      "slug": "t2-i-adapter",
+      "label": "T2I-Adapter"
+    },
+    {
+      "slug": "textual-inversion",
+      "label": "Textual Inversion"
+    },
+    {
+      "slug": "virtual-try-on",
+      "label": "Virtual Try-On"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "wang-et-al-2024-instant-id",
+      "label": "Wang et al. 2024 InstantID"
+    },
+    {
+      "slug": "xlabs-ai-2024-flux-ip-adapter",
+      "label": "XLabs-AI 2024 Flux IP-Adapter"
+    },
+    {
+      "slug": "xu-et-al-2023-versatile-diffusion",
+      "label": "Xu et al. 2023 Versatile Diffusion"
+    },
+    {
+      "slug": "ye-et-al-2023-ip-adapter-ar-xiv-2308-06721",
+      "label": "Ye et al. 2023 IP-Adapter arXiv 2308.06721"
+    },
+    {
+      "slug": "zhang-et-al-2023-control-net",
+      "label": "Zhang et al. 2023 ControlNet"
+    },
+    {
+      "slug": "zhang-et-al-2024-diffusion-models-survey",
+      "label": "Zhang et al. 2024 Diffusion Models Survey"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mask",
+      "label": "Attention Mask"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "flux-1",
+      "label": "FLUX.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

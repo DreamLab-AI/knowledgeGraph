@@ -1,21 +1,276 @@
-iri:: http://narrativegoldmine.com/blockchain#SymmetricEncryption
-uri:: urn:visionclaw:concept:blockchain:symmetric-encryption
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:symmetric-encryption
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Symmetric Encryption
-content-hash:: sha256-12-8fa5bfef0c71
-legacy-term-id:: BC-8018
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#SymmetricEncryption
+legacy_uri:: urn:visionclaw:concept:blockchain:symmetric-encryption
 public:: true
+
+# Symmetric Encryption
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67",
+  "@type": "Page",
+  "vc:slug": "symmetric-encryption",
+  "title": "Symmetric Encryption",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:confidential-transactions",
+      "vc:label": "Confidential Transactions"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-encryption",
+      "vc:label": "Hybrid Encryption"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asymmetric-encryption",
+      "vc:label": "Asymmetric Encryption"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:key-derivation-function",
+      "vc:label": "Key Derivation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:random-number-generation",
+      "vc:label": "Random Number Generation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8fa5bfef0c71"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#SymmetricEncryption"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8018"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Symmetric Encryption"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:symmetric-encryption"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:symmetric-encryption"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:symmetric-encryption",
+  "@type": "OntologyClass",
+  "label": "Symmetric Encryption",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "vc:label": "Cryptographic Primitive"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Symmetric encryption provides confidentiality for data at rest and in transit with high computational efficiency, making it suitable for bulk data encryption in blockchain and general security applications.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:key-derivation-function",
+      "vc:label": "Key Derivation Function"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:confidential-transactions",
+      "vc:label": "Confidential Transactions"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:random-number-generation",
+      "vc:label": "Random Number Generation"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:owl:class:asymmetric-encryption",
+      "vc:label": "Asymmetric Encryption"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:symmetric-encryption:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Confidential Transactions]]",
+      "resolved": "urn:visionflow:linked:confidential-transactions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hybrid Encryption]]",
+      "resolved": "urn:visionflow:linked:hybrid-encryption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asymmetric Encryption]]",
+      "resolved": "urn:visionflow:owl:class:asymmetric-encryption",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hash Function]]",
+      "resolved": "urn:visionflow:owl:class:hash-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Key Derivation Function]]",
+      "resolved": "urn:visionflow:owl:class:key-derivation-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Random Number Generation]]",
+      "resolved": "urn:visionflow:owl:class:random-number-generation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Symmetric encryption provides confidentiality for data at rest and in transit with high computational efficiency, making it suitable for bulk data encryption in blockchain and general security applications.

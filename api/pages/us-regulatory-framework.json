@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300",
+  "title": "US Regulatory Framework",
+  "slug": "us-regulatory-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:us-regulatory-framework",
+  "domain": "blockchain",
+  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[OCC|Office of the Comptroller of Currency]] addresses banking relationships, and the [[CFTC|Commodity Futures Trading Commission]] regulates cryptocurrency derivatives. This jurisdictional overlap creates compliance complexity, with inconsistent agency positions leading to regulatory uncertainty regarding token classification and exchange registration requirements, prompting Congressional proposals for comprehensive legislation establishing tailored digital asset frameworks. State-level [[MoneyTransmitterLicenses|money transmitter licenses]], banking charters, and inconsistent interpretations of existing laws further fragment the regulatory landscape, with major protocols and exchanges navigating dozens of jurisdiction-specific compliance requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub-needs-content",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aml",
+      "label": "AML"
+    },
+    {
+      "slug": "amlkyccompliance",
+      "label": "AMLKYCCompliance"
+    },
+    {
+      "slug": "bank-secrecy-act",
+      "label": "Bank Secrecy Act"
+    },
+    {
+      "slug": "bc-0456-virtual-asset-service-providers",
+      "label": "BC-0456-virtual-asset-service-providers"
+    },
+    {
+      "slug": "bc-0457-aml-kyc-compliance",
+      "label": "BC-0457-aml-kyc-compliance"
+    },
+    {
+      "slug": "bc-0481-fatf-recommendations",
+      "label": "BC-0481-fatf-recommendations"
+    },
+    {
+      "slug": "bc-0482-eu-mica-regulation",
+      "label": "BC-0482-eu-mica-regulation"
+    },
+    {
+      "slug": "bit-license",
+      "label": "BitLicense"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
+      "slug": "cryptocurrency-exchange",
+      "label": "Cryptocurrency Exchange"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "etf",
+      "label": "ETF"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fin-cen",
+      "label": "FinCEN"
+    },
+    {
+      "slug": "fin-cen",
+      "label": "FinCEN"
+    },
+    {
+      "slug": "howey-test",
+      "label": "Howey Test"
+    },
+    {
+      "slug": "initial-coin-offerings",
+      "label": "Initial Coin Offerings"
+    },
+    {
+      "slug": "irs",
+      "label": "IRS"
+    },
+    {
+      "slug": "market-manipulation",
+      "label": "Market Manipulation"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "money-transmitter",
+      "label": "Money Transmitter"
+    },
+    {
+      "slug": "money-transmitter-licenses",
+      "label": "MoneyTransmitterLicenses"
+    },
+    {
+      "slug": "occ",
+      "label": "OCC"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ],
+  "backlinks": []
+}

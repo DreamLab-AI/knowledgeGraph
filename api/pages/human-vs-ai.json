@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:b78e664389d864d99bb49089302e3747ebbbe308b6be43b2cc005a88e5330399",
+  "title": "Human vs AI",
+  "slug": "human-vs-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-vs-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Human vs AI is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    }
+  ]
+}

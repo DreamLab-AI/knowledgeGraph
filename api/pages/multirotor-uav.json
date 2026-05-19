@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:7827c6af2fcc320fd0d219254e899b64b284c8b45976995b7ba88c3c1ee6837d",
+  "title": "Multirotor UAV",
+  "slug": "multirotor-uav",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:multirotor-uav",
+  "domain": "robotics",
+  "definition": "Multirotor UAV achieves lift through multiple propellers driven by motors.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:aerial-robot",
+      "label": "Aerial Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "octocopter",
+      "label": "Octocopter"
+    },
+    {
+      "slug": "quadcopter",
+      "label": "Quadcopter"
+    }
+  ]
+}

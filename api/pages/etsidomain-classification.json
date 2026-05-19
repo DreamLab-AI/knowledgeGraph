@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:69fcf50e6ae4ec5e1921fc0fc6d6c44e7c749773fdeb56cca730e7bbfc35c2e5",
+  "title": "ETSIDomainClassification",
+  "slug": "etsidomain-classification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsidomain-classification",
+  "domain": "artificial-intelligence",
+  "definition": "A taxonomy and classification scheme from the [[European Telecommunications Standards Institute]] categorising technology domains, standards, and governance areas to enable systematic organisation and cross-domain coordination. This classification enables discovery, standards alignment, and regulatory mapping across disparate technical and governance contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "european-telecommunications-standards-institute",
+      "label": "European Telecommunications Standards Institute"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    }
+  ]
+}

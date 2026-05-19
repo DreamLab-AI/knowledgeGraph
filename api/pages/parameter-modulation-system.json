@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:3c83cb93313a850532965b59dc0bd0fed5a1aff2e0753e42477d26b80a3c0119",
+  "title": "Parameter Modulation System",
+  "slug": "parameter-modulation-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:parameter-modulation-system",
+  "domain": "spatial-computing",
+  "definition": "A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:audio-system",
+      "label": "Audio System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-sound-design",
+        "label": "Dynamic Sound Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dynamic-sound-design",
+      "label": "Dynamic Sound Design"
+    },
+    {
+      "slug": "audio-system",
+      "label": "Audio System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "procedural-audio-generator",
+      "label": "Procedural Audio Generator"
+    }
+  ]
+}

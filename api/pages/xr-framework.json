@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:e79acbcf5fe4d0927ef3f8fb15d448db295f58f80902cb6cddabf2324ea2f5c9",
+  "title": "XR Framework",
+  "slug": "xr-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-framework",
+  "domain": "spatial-computing",
+  "definition": "X R Framework is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "reality-virtuality-continuum",
+      "label": "Reality Virtuality Continuum"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c",
+  "title": "Economic Mechanism",
+  "slug": "economic-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:economic-mechanism",
+  "domain": "blockchain",
+  "definition": "An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems. Drawing from mechanism design theory in economics, blockchain economic mechanisms create game-theoretic environments where rational self-interested actors produce collectively beneficial outcomes without central coordination. These mechanisms encompass token economics (tokenomics) including supply schedules, distribution models, and utility functions; transaction fee markets that allocate limited block space to highest-value transactions; mining or staking rewards that incentivize honest participation in consensus; slashing penalties that discourage malicious behavior; and automated market makers that enable decentralized exchange. Effective economic mechanisms must balance multiple objectives: incentive compatibility (honest behavior should be profitable), budget balance (rewards don't exceed available resources), individual rationality (participants benefit from participation), and resistance to collusion or Sybil attacks. The design space includes considerations of inflation vs. deflati",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fee-burning",
+      "label": "Fee Burning"
+    },
+    {
+      "slug": "gas-mechanism",
+      "label": "Gas Mechanism"
+    },
+    {
+      "slug": "liquidity-mining",
+      "label": "Liquidity Mining"
+    },
+    {
+      "slug": "mechanism-design-theory",
+      "label": "Mechanism Design Theory"
+    },
+    {
+      "slug": "slashing",
+      "label": "Slashing"
+    },
+    {
+      "slug": "staking-reward",
+      "label": "Staking Reward"
+    },
+    {
+      "slug": "tokenomics-research",
+      "label": "Tokenomics Research"
+    },
+    {
+      "slug": "transaction-fee-economics",
+      "label": "Transaction Fee Economics"
+    },
+    {
+      "slug": "block-reward",
+      "label": "Block Reward"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "base-fee",
+      "label": "Base Fee"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "burning-mechanism",
+      "label": "Burning Mechanism"
+    },
+    {
+      "slug": "circulating-supply",
+      "label": "Circulating Supply"
+    },
+    {
+      "slug": "coin",
+      "label": "Coin"
+    },
+    {
+      "slug": "deflationary-token",
+      "label": "Deflationary Token"
+    },
+    {
+      "slug": "economic-security",
+      "label": "Economic Security"
+    },
+    {
+      "slug": "emission-schedule",
+      "label": "Emission Schedule"
+    },
+    {
+      "slug": "fee-market",
+      "label": "Fee Market"
+    },
+    {
+      "slug": "gas-limit",
+      "label": "Gas Limit"
+    },
+    {
+      "slug": "gas-price",
+      "label": "Gas Price"
+    },
+    {
+      "slug": "gas",
+      "label": "Gas"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "incentive-alignment",
+      "label": "Incentive Alignment"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "inflationary-token",
+      "label": "Inflationary Token"
+    },
+    {
+      "slug": "market-capitalization",
+      "label": "Market Capitalization"
+    },
+    {
+      "slug": "minting",
+      "label": "Minting"
+    },
+    {
+      "slug": "monetary-policy-implementation",
+      "label": "Monetary Policy Implementation"
+    },
+    {
+      "slug": "native-token",
+      "label": "Native Token"
+    },
+    {
+      "slug": "priority-fee",
+      "label": "Priority Fee"
+    },
+    {
+      "slug": "supply-cap",
+      "label": "Supply Cap"
+    },
+    {
+      "slug": "total-supply",
+      "label": "Total Supply"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
+    }
+  ]
+}

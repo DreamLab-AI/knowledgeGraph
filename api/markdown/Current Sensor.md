@@ -1,21 +1,368 @@
-iri:: http://narrativegoldmine.com/robotics#CurrentSensor
-uri:: urn:visionclaw:concept:robotics:current-sensor
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:current-sensor
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Current Sensor
-content-hash:: sha256-12-d16208a3607a
-legacy-term-id:: RB-0083
-status:: draft
-maturity:: draft
-quality-score:: 0.52
-authority-score:: 0.09
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#CurrentSensor
+legacy_uri:: urn:visionclaw:concept:robotics:current-sensor
 public:: true
+
+# Current Sensor
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee",
+  "@type": "Page",
+  "vc:slug": "current-sensor",
+  "title": "Current Sensor",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:analogue-to-digital-conversion",
+      "vc:label": "Analogue-to-Digital Conversion"
+    },
+    {
+      "@id": "urn:visionflow:linked:efficiency-monitoring",
+      "vc:label": "Efficiency Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:en-60-068",
+      "vc:label": "EN 60 068"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-monitoring",
+      "vc:label": "Energy Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-ts-132-423",
+      "vc:label": "ETSI TS 132 423"
+    },
+    {
+      "@id": "urn:visionflow:linked:fault-detection",
+      "vc:label": "Fault Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-8373-2021",
+      "vc:label": "ISO 8373:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:motor-control-system",
+      "vc:label": "Motor Control System"
+    },
+    {
+      "@id": "urn:visionflow:linked:motor-torque-estimation",
+      "vc:label": "Motor Torque Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:overload-protection",
+      "vc:label": "Overload Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-management",
+      "vc:label": "Power Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-conditioning",
+      "vc:label": "Signal Conditioning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor",
+      "vc:label": "Sensor"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.09"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d16208a3607a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#CurrentSensor"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0083"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Current Sensor"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.52"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:current-sensor"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:current-sensor"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:current-sensor",
+  "@type": "OntologyClass",
+  "label": "Current Sensor",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor",
+      "vc:label": "Sensor"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Current Sensor** - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling [[Motor Torque Estimation]], [[Fault Detection]], and [[Energy Monitoring]] in autonomous robots.",
+  "vc:qualityScore": {
+    "@value": "0.52",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.09",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:motor-control-system",
+      "vc:label": "Motor Control System"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-management",
+      "vc:label": "Power Management"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:analogue-to-digital-conversion",
+      "vc:label": "Analogue-to-Digital Conversion"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-conditioning",
+      "vc:label": "Signal Conditioning"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:efficiency-monitoring",
+      "vc:label": "Efficiency Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:overload-protection",
+      "vc:label": "Overload Protection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:current-sensor:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Analogue-to-Digital Conversion]]",
+      "resolved": "urn:visionflow:linked:analogue-to-digital-conversion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Efficiency Monitoring]]",
+      "resolved": "urn:visionflow:linked:efficiency-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EN 60 068]]",
+      "resolved": "urn:visionflow:linked:en-60-068",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Energy Monitoring]]",
+      "resolved": "urn:visionflow:linked:energy-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI TS 132 423]]",
+      "resolved": "urn:visionflow:linked:etsi-ts-132-423",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fault Detection]]",
+      "resolved": "urn:visionflow:linked:fault-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 8373:2021]]",
+      "resolved": "urn:visionflow:linked:iso-8373-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motor Control System]]",
+      "resolved": "urn:visionflow:linked:motor-control-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motor Torque Estimation]]",
+      "resolved": "urn:visionflow:linked:motor-torque-estimation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Overload Protection]]",
+      "resolved": "urn:visionflow:linked:overload-protection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Power Management]]",
+      "resolved": "urn:visionflow:linked:power-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Signal Conditioning]]",
+      "resolved": "urn:visionflow:linked:signal-conditioning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Maintenance]]",
+      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor]]",
+      "resolved": "urn:visionflow:owl:class:sensor",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Current Sensor** - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling [[Motor Torque Estimation]], [[Fault Detection]], and [[Energy Monitoring]] in autonomous robots.

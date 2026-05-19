@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:53c80e719520ac49967f815052fb42608c38a165f46f983e8f39193dfcc5648f",
+  "title": "Legged Robot",
+  "slug": "legged-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:legged-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "quadruped-robot",
+      "label": "Quadruped Robot"
+    }
+  ]
+}

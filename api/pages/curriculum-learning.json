@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:f518ea2cecf607b2ecd4dfa74817c61f48f0c59ce24f3ef9ff953665407d7425",
+  "title": "Curriculum Learning",
+  "slug": "curriculum-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:curriculum-learning",
+  "domain": "spatial-computing",
+  "definition": "A training strategy that presents examples to the model in a meaningful order, typically from easy to difficult, mimicking how humans learn. Curriculum learning can improve convergence speed, final performance, and generalization by structuring the learning progression.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-cvf-international-conference-on-computer-vision",
+      "label": "IEEE/CVF International Conference on Computer Vision"
+    },
+    {
+      "slug": "ieee-transactions-on-pattern-analysis-and-machine-intelligence",
+      "label": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

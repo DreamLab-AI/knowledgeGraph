@@ -1,21 +1,222 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ModelProperty
-uri:: urn:visionclaw:concept:artificial-intelligence:model-property
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:model-property
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Model Property
-content-hash:: sha256-12-d38eb844dc1a
-legacy-term-id:: AI-7011
-status:: active
-maturity:: stable
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ModelProperty
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:model-property
 public:: true
+
+# Model Property
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807",
+  "@type": "Page",
+  "vc:slug": "model-property",
+  "title": "Model Property",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:benchmark",
+      "vc:label": "Benchmark"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-comparison",
+      "vc:label": "Model Comparison"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-concept",
+      "vc:label": "AI Concept"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-model",
+      "vc:label": "Machine Learning Model"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d38eb844dc1a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ModelProperty"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-7011"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "stable"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Model Property"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-property"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-property"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:model-property",
+  "@type": "OntologyClass",
+  "label": "Model Property",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-concept",
+      "vc:label": "AI Concept"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "stable",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:model-comparison",
+      "vc:label": "Model Comparison"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:model-property:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Benchmark]]",
+      "resolved": "urn:visionflow:linked:benchmark",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Comparison]]",
+      "resolved": "urn:visionflow:linked:model-comparison",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Concept]]",
+      "resolved": "urn:visionflow:owl:class:ai-concept",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Model]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning-model",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).

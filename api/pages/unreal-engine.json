@@ -1,0 +1,472 @@
+{
+  "id": "urn:visionflow:page:ee5a356b7b61a5899e41cc599b2527758d0754ec2e3086061e70bbdce9191121",
+  "title": "Unreal Engine",
+  "slug": "unreal-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:unreal-engine",
+  "domain": "creative-tools",
+  "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform \u2014 simultaneously a [[Game Engine]], a virtual production environment, a simulation framework, and a scalable cloud-streaming service \u2014 whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized micropolygon geometry (enabling film-quality assets with billions of polygons rendered in real time through a hierarchical cluster-based DAG with software rasterisation that outperforms hardware rasterisation for sub-pixel triangles), Lumen fully dynamic global illumination and reflections (ray-marched scene distance-fields and surface-cache radiosity achieving hardware ray-tracing quality on non-RTX hardware, with HWRT path available on NVIDIA RTX / AMD RDNA 2+), Chaos physics and destruction (XPBD unified solver for rigid body, cloth, soft body, fluid, vehicle, and hair simulation), World Partition streaming open-world system (automated cell-based streaming replacing manual level-streaming volumes, supporting 1 km\u00b2 to continental-scale environments with One File Per Actor OFPA for multi-user collaboration), and MetaHuman Creator (browser-based 4D-scan-grounded parametric digital-human author",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:creative-tools",
+      "label": "creative-tools"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-capture-technology",
+        "label": "Motion Capture Technology"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph-format",
+        "label": "Scene Graph Format"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-rendering-service",
+        "label": "Cloud Rendering Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-gaming",
+        "label": "Immersive Gaming"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-terrain",
+        "label": "Procedural Terrain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production-vp",
+        "label": "Virtual Production (VP)"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-stage",
+        "label": "Virtual Stage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:3-danimation",
+        "label": "3DAnimation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-dcontent-pipeline",
+        "label": "3DContentPipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-asset",
+      "label": "3D Asset"
+    },
+    {
+      "slug": "creative-tools-domain",
+      "label": "Creative Tools Domain"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "humans-avatars-character-md",
+      "label": "Humans, Avatars , Character.md"
+    },
+    {
+      "slug": "physics-layer",
+      "label": "PhysicsLayer"
+    },
+    {
+      "slug": "rendering-layer",
+      "label": "RenderingLayer"
+    },
+    {
+      "slug": "simulation-domain",
+      "label": "Simulation Domain"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    },
+    {
+      "slug": "virtual-production-md",
+      "label": "Virtual Production.md"
+    },
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "3-danimation",
+      "label": "3DAnimation"
+    },
+    {
+      "slug": "3-dasset-standard",
+      "label": "3DAssetStandard"
+    },
+    {
+      "slug": "3-dcontent-pipeline",
+      "label": "3DContentPipeline"
+    },
+    {
+      "slug": "ai-avatars",
+      "label": "AI Avatars"
+    },
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "animation-retargeting",
+      "label": "Animation Retargeting"
+    },
+    {
+      "slug": "animation-software",
+      "label": "Animation Software"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ar-scene-graph",
+      "label": "Ar Scene Graph"
+    },
+    {
+      "slug": "character-model",
+      "label": "Character Model"
+    },
+    {
+      "slug": "character-rigging",
+      "label": "Character Rigging"
+    },
+    {
+      "slug": "cloud-rendering-service",
+      "label": "Cloud Rendering Service"
+    },
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    },
+    {
+      "slug": "dynamic-character-animation",
+      "label": "Dynamic Character Animation"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "fluid-simulation",
+      "label": "Fluid Simulation"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "geospatial-engine",
+      "label": "Geospatial Engine"
+    },
+    {
+      "slug": "immersive-entertainment",
+      "label": "Immersive Entertainment"
+    },
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    },
+    {
+      "slug": "immersive-experience-pipeline",
+      "label": "Immersive Experience Pipeline"
+    },
+    {
+      "slug": "immersive-gaming",
+      "label": "Immersive Gaming"
+    },
+    {
+      "slug": "immersive-learning",
+      "label": "Immersive Learning"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "motion-capture-technology",
+      "label": "Motion Capture Technology"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "non-player-character",
+      "label": "Non Player Character"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "occlusion-culling",
+      "label": "Occlusion Culling"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "Procedural Generation"
+    },
+    {
+      "slug": "procedural-terrain",
+      "label": "Procedural Terrain"
+    },
+    {
+      "slug": "real-time-character-animation",
+      "label": "Real Time Character Animation"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "scene-graph-format",
+      "label": "Scene Graph Format"
+    },
+    {
+      "slug": "simulation-engine",
+      "label": "Simulation Engine"
+    },
+    {
+      "slug": "simulation-software",
+      "label": "Simulation Software"
+    },
+    {
+      "slug": "virtual-production-pipeline",
+      "label": "Virtual Production Pipeline"
+    },
+    {
+      "slug": "virtual-production-volume",
+      "label": "Virtual Production Volume"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "virtual-production-workflow",
+      "label": "Virtual Production Workflow"
+    },
+    {
+      "slug": "virtual-stage",
+      "label": "Virtual Stage"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

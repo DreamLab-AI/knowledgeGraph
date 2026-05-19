@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ContentModerationStandards
-uri:: urn:visionclaw:concept:spatial-computing:content-moderation-standards
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:content-moderation-standards
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Content Moderation Standards
-content-hash:: sha256-12-56e52134a8e4
-legacy-term-id:: MV-9829
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ContentModerationStandards
+legacy_uri:: urn:visionclaw:concept:spatial-computing:content-moderation-standards
 public:: true
+
+# Content Moderation Standards
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4",
+  "@type": "Page",
+  "vc:slug": "content-moderation-standards",
+  "title": "Content Moderation Standards",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-detection-systems",
+      "vc:label": "AI Detection Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-trust",
+      "vc:label": "Community Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:harassment-prevention",
+      "vc:label": "Harassment Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-moderators",
+      "vc:label": "Human Moderators"
+    },
+    {
+      "@id": "urn:visionflow:linked:moderation-tools",
+      "vc:label": "Moderation Tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:platform-governance",
+      "vc:label": "Platform Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:user-safety",
+      "vc:label": "User Safety"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-56e52134a8e4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ContentModerationStandards"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9829"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Content Moderation Standards"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:content-moderation-standards"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:content-moderation-standards"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:content-moderation-standards",
+  "@type": "OntologyClass",
+  "label": "Content Moderation Standards",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:platform-governance",
+      "vc:label": "Platform Governance"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:ai-detection-systems",
+      "vc:label": "AI Detection Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-moderators",
+      "vc:label": "Human Moderators"
+    },
+    {
+      "@id": "urn:visionflow:linked:moderation-tools",
+      "vc:label": "Moderation Tools"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:community-trust",
+      "vc:label": "Community Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:harassment-prevention",
+      "vc:label": "Harassment Prevention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:user-safety",
+      "vc:label": "User Safety"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:content-moderation-standards:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Detection Systems]]",
+      "resolved": "urn:visionflow:linked:ai-detection-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Community Trust]]",
+      "resolved": "urn:visionflow:linked:community-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Harassment Prevention]]",
+      "resolved": "urn:visionflow:linked:harassment-prevention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human Moderators]]",
+      "resolved": "urn:visionflow:linked:human-moderators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Moderation Tools]]",
+      "resolved": "urn:visionflow:linked:moderation-tools",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Platform Governance]]",
+      "resolved": "urn:visionflow:owl:class:platform-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[User Safety]]",
+      "resolved": "urn:visionflow:owl:class:user-safety",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.

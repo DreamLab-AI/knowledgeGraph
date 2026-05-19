@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:671b17c97b1858242b383b45416e1efb47beb39dfe2cce1e4487f2a0ac2c369f",
+  "title": "Manipulator",
+  "slug": "manipulator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:manipulator",
+  "domain": "robotics",
+  "definition": "A manipulator is a robot consisting of a series of segments, typically moving in a serial or parallel kinematic chain, with an end-effector for performing tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.99,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "robot-rb-0001",
+      "label": "Robot (RB-0001)"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ]
+}

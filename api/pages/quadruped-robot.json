@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:746bfe70e1a0c0d722952b4ee92deec99dee46d5099586ab2bf0bb969678712e",
+  "title": "Quadruped Robot",
+  "slug": "quadruped-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quadruped-robot",
+  "domain": "robotics",
+  "definition": "Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:legged-robot",
+      "label": "Legged Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "legged-robot",
+      "label": "Legged Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    }
+  ]
+}

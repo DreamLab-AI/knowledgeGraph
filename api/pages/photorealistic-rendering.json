@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:d2a945d41386c066548ea0756ba09a4401556d537c409cc2198379d269b347b3",
+  "title": "Photorealistic Rendering",
+  "slug": "photorealistic-rendering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:photorealistic-rendering",
+  "domain": "spatial-computing",
+  "definition": "PhotorealisticRendering is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:8b0632a9b65545bf090c40353cc4f287d6f808cab04f96fb550004b1c5b933ad",
+  "title": "Privacy Impact Assessment (PIA)",
+  "slug": "privacy-impact-assessment-pia",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-impact-assessment-pia",
+  "domain": "spatial-computing",
+  "definition": "Systematic evaluation process that identifies and assesses privacy risks arising from the processing of personal data in metaverse systems, ensuring compliance with data protection regulations and ethical standards.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:compliance-verification-system",
+        "label": "Compliance Verification System"
+      },
+      {
+        "id": "urn:visionflow:linked:impact-analysis-framework",
+        "label": "Impact Analysis Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:mitigation-strategy-generator",
+        "label": "Mitigation Strategy Generator"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-identification-module",
+        "label": "Risk Identification Module"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-consultation-engine",
+        "label": "Stakeholder Consultation Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-flow-mapping",
+        "label": "Data Flow Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-compliance-database",
+        "label": "Regulatory Compliance Database"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:user-trust",
+        "label": "User Trust"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparent-data-processing",
+        "label": "Transparent Data Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance-verification-system",
+      "label": "Compliance Verification System"
+    },
+    {
+      "slug": "data-flow-mapping",
+      "label": "Data Flow Mapping"
+    },
+    {
+      "slug": "data-protection-management-system",
+      "label": "Data Protection Management System"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "impact-analysis-framework",
+      "label": "Impact Analysis Framework"
+    },
+    {
+      "slug": "iso-29134",
+      "label": "ISO 29134"
+    },
+    {
+      "slug": "mitigation-strategy-generator",
+      "label": "Mitigation Strategy Generator"
+    },
+    {
+      "slug": "organizational-privacy-policy",
+      "label": "Organizational Privacy Policy"
+    },
+    {
+      "slug": "personal-data-inventory",
+      "label": "Personal Data Inventory"
+    },
+    {
+      "slug": "privacy-governance-framework",
+      "label": "Privacy Governance Framework"
+    },
+    {
+      "slug": "privacy-requirements",
+      "label": "Privacy Requirements"
+    },
+    {
+      "slug": "regulatory-compliance-database",
+      "label": "Regulatory Compliance Database"
+    },
+    {
+      "slug": "risk-assessment-methodology",
+      "label": "Risk Assessment Methodology"
+    },
+    {
+      "slug": "risk-identification-module",
+      "label": "Risk Identification Module"
+    },
+    {
+      "slug": "stakeholder-consultation-engine",
+      "label": "Stakeholder Consultation Engine"
+    },
+    {
+      "slug": "user-trust",
+      "label": "User Trust"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy By Design"
+    },
+    {
+      "slug": "risk-mitigation",
+      "label": "Risk Mitigation"
+    },
+    {
+      "slug": "transparent-data-processing",
+      "label": "Transparent Data Processing"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

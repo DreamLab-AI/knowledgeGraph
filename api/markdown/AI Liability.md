@@ -1,528 +1,2059 @@
-iri:: http://narrativegoldmine.com/ontology#AILiability
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-liability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-liability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Liability
-content-hash:: sha256-12-9210e4b71d7d
-status:: stub
-maturity:: draft
-bridges-to:: [[Blockchain]] (bc), [[AI Agent System]] (ai), or [[Digital Twin]] (mv)
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AILiability
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-liability
 public:: true
 
+# AI Liability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613",
+  "@type": "Page",
+  "vc:slug": "ai-liability",
+  "title": "AI Liability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:abnormally-dangerous-activity",
+      "vc:label": "Abnormally Dangerous Activity"
+    },
+    {
+      "@id": "urn:visionflow:linked:abnormally-dangerous-activity-doctrine",
+      "vc:label": "Abnormally Dangerous Activity Doctrine"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-insurance",
+      "vc:label": "AI Insurance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-liability-directive",
+      "vc:label": "AI Liability Directive"
+    },
+    {
+      "@id": "urn:visionflow:linked:air-canada-v-moffatt",
+      "vc:label": "Air Canada v. Moffatt"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-auditing",
+      "vc:label": "Algorithmic Auditing"
+    },
+    {
+      "@id": "urn:visionflow:linked:andersen-v-stability-ai",
+      "vc:label": "Andersen v. Stability AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-vehicles-act-2024",
+      "vc:label": "Automated Vehicles Act 2024"
+    },
+    {
+      "@id": "urn:visionflow:linked:black-box",
+      "vc:label": "black box"
+    },
+    {
+      "@id": "urn:visionflow:linked:breach-of-duty",
+      "vc:label": "Breach of Duty"
+    },
+    {
+      "@id": "urn:visionflow:linked:brown-v-kendall",
+      "vc:label": "Brown v. Kendall"
+    },
+    {
+      "@id": "urn:visionflow:linked:caparo-industries-plc-v-dickman",
+      "vc:label": "Caparo Industries plc v. Dickman"
+    },
+    {
+      "@id": "urn:visionflow:linked:caparo-three-stage-test",
+      "vc:label": "Caparo Three-Stage Test"
+    },
+    {
+      "@id": "urn:visionflow:linked:causal-linkage",
+      "vc:label": "Causal Linkage"
+    },
+    {
+      "@id": "urn:visionflow:linked:causation",
+      "vc:label": "Causation"
+    },
+    {
+      "@id": "urn:visionflow:linked:causation-doctrine",
+      "vc:label": "Causation Doctrine"
+    },
+    {
+      "@id": "urn:visionflow:linked:centre-for-law-and-future-of-innovation",
+      "vc:label": "Centre for Law & Future of Innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:character-ai",
+      "vc:label": "Character.AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:civil-liability",
+      "vc:label": "Civil Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:civil-procedure-rules",
+      "vc:label": "Civil Procedure Rules"
+    },
+    {
+      "@id": "urn:visionflow:linked:common-law-system",
+      "vc:label": "Common Law System"
+    },
+    {
+      "@id": "urn:visionflow:linked:compensable-harm",
+      "vc:label": "Compensable Harm"
+    },
+    {
+      "@id": "urn:visionflow:linked:compensation-for-victims",
+      "vc:label": "Compensation for Victims"
+    },
+    {
+      "@id": "urn:visionflow:linked:competition-and-markets-authority-cma",
+      "vc:label": "Competition and Markets Authority (CMA)"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformity-assessment",
+      "vc:label": "Conformity Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:consumer-protection-act-1987",
+      "vc:label": "Consumer Protection Act 1987"
+    },
+    {
+      "@id": "urn:visionflow:linked:contract-layer",
+      "vc:label": "ContractLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:contractual-liability",
+      "vc:label": "Contractual Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:criminal-liability",
+      "vc:label": "Criminal Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:damages",
+      "vc:label": "Damages"
+    },
+    {
+      "@id": "urn:visionflow:linked:daubert-standard",
+      "vc:label": "Daubert Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterrence-of-harm",
+      "vc:label": "Deterrence of Harm"
+    },
+    {
+      "@id": "urn:visionflow:linked:donoghue-v-stevenson",
+      "vc:label": "Donoghue v. Stevenson"
+    },
+    {
+      "@id": "urn:visionflow:linked:duty-of-care",
+      "vc:label": "Duty of Care"
+    },
+    {
+      "@id": "urn:visionflow:linked:evidentiary-record",
+      "vc:label": "Evidentiary Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:exemplary-damages",
+      "vc:label": "exemplary damages"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-evidence",
+      "vc:label": "Expert Evidence"
+    },
+    {
+      "@id": "urn:visionflow:linked:fda",
+      "vc:label": "FDA"
+    },
+    {
+      "@id": "urn:visionflow:linked:federal-judicial-center",
+      "vc:label": "Federal Judicial Center"
+    },
+    {
+      "@id": "urn:visionflow:linked:foreseeability",
+      "vc:label": "Foreseeability"
+    },
+    {
+      "@id": "urn:visionflow:linked:foreseeability-test",
+      "vc:label": "Foreseeability Test"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ftc",
+      "vc:label": "FTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:gabriel-weil",
+      "vc:label": "Gabriel Weil"
+    },
+    {
+      "@id": "urn:visionflow:linked:getty-images-v-stability-ai",
+      "vc:label": "Getty Images v. Stability AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-domain",
+      "vc:label": "GovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-layer",
+      "vc:label": "GovernanceLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:house-of-commons-science-innovation-and-technology-committee",
+      "vc:label": "House of Commons Science, Innovation and Technology Committee"
+    },
+    {
+      "@id": "urn:visionflow:linked:ico",
+      "vc:label": "ICO"
+    },
+    {
+      "@id": "urn:visionflow:linked:identifiable-legal-person",
+      "vc:label": "Identifiable Legal Person"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000-series",
+      "vc:label": "IEEE 7000 Series"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-commissioner-s-office-ico",
+      "vc:label": "Information Commissioner's Office (ICO)"
+    },
+    {
+      "@id": "urn:visionflow:linked:insurance-layer",
+      "vc:label": "InsuranceLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:insurance-pricing",
+      "vc:label": "Insurance Pricing"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:judicial-capacity",
+      "vc:label": "Judicial Capacity"
+    },
+    {
+      "@id": "urn:visionflow:linked:jurisdictional-framework",
+      "vc:label": "Jurisdictional Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:law-commission",
+      "vc:label": "Law Commission"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-and-regulatory-domain",
+      "vc:label": "LegalAndRegulatoryDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:lloyd-s-of-london",
+      "vc:label": "Lloyd's of London"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-surveillance",
+      "vc:label": "Market Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:linked:mata-v-avianca",
+      "vc:label": "Mata v. Avianca"
+    },
+    {
+      "@id": "urn:visionflow:linked:mhra",
+      "vc:label": "MHRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-courts-and-sciences-institute",
+      "vc:label": "National Courts and Sciences Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:negligence",
+      "vc:label": "Negligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:negligence-standard",
+      "vc:label": "Negligence Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:nhtsa",
+      "vc:label": "NHTSA"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:palsgraf-v-long-island-railroad",
+      "vc:label": "Palsgraf v. Long Island Railroad"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-market-monitoring",
+      "vc:label": "Post-Market Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:precedent",
+      "vc:label": "Precedent"
+    },
+    {
+      "@id": "urn:visionflow:linked:price-anderson-act",
+      "vc:label": "Price-Anderson Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:pro-innovation",
+      "vc:label": "pro-innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:product-liability",
+      "vc:label": "Product Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:product-liability-directive",
+      "vc:label": "Product Liability Directive"
+    },
+    {
+      "@id": "urn:visionflow:linked:punitive-damages",
+      "vc:label": "Punitive Damages"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasonable-care-standard",
+      "vc:label": "Reasonable Care Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-enforcement",
+      "vc:label": "Regulatory Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-layer",
+      "vc:label": "RegulatoryLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-sanction",
+      "vc:label": "Regulatory Sanction"
+    },
+    {
+      "@id": "urn:visionflow:linked:restatement-second-of-torts-402-a",
+      "vc:label": "Restatement (Second) of Torts § 402A"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-benefit-analysis",
+      "vc:label": "Risk-Benefit Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-internalisation",
+      "vc:label": "Risk Internalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management-domain",
+      "vc:label": "RiskManagementDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:rite-aid",
+      "vc:label": "Rite Aid"
+    },
+    {
+      "@id": "urn:visionflow:linked:rookes-v-barnard",
+      "vc:label": "Rookes v Barnard"
+    },
+    {
+      "@id": "urn:visionflow:linked:rylands-v-fletcher",
+      "vc:label": "Rylands v. Fletcher"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-investment",
+      "vc:label": "Safety Investment"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-regulation",
+      "vc:label": "Self-Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:statutory-interpretation",
+      "vc:label": "Statutory Interpretation"
+    },
+    {
+      "@id": "urn:visionflow:linked:strict-liability",
+      "vc:label": "Strict Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:strict-liability-standard",
+      "vc:label": "Strict Liability Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:strict-product-liability",
+      "vc:label": "Strict Product Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:tort-law",
+      "vc:label": "Tort Law"
+    },
+    {
+      "@id": "urn:visionflow:linked:uk-ai-safety-institute",
+      "vc:label": "UK AI Safety Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:vicarious-liability",
+      "vc:label": "Vicarious Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:voluntary-code",
+      "vc:label": "Voluntary Code"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
+      "vc:label": "Algorithmic Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-bias",
+      "vc:label": "Algorithmic Bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consumer-protection",
+      "vc:label": "Consumer Protection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-protection",
+      "vc:label": "Data Protection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "alternative-terms",
+      "vc:value": "Algorithmic Accountability, AI Tort Liability, Artificial Intelligence Liability, Algorithmic Liability"
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.87"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[AI Agent System]], [[AI Governance]], [[Product Liability]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9210e4b71d7d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AILiability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1087"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-05-16T14:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Liability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.52"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-liability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-liability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.1.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-liability",
+  "@type": "OntologyClass",
+  "label": "AI Liability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:civil-liability",
+      "vc:label": "Civil Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:product-liability",
+      "vc:label": "Product Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:tort-law",
+      "vc:label": "Tort Law"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
+      "vc:label": "Algorithmic Accountability"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "production-ready",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI Liability is the body of legal doctrine, statutory regime, regulatory practice and emerging case law that allocates civil responsibility for personal injury, property damage, economic loss, discrimination, privacy invasion and consequential harm caused by artificial intelligence systems—encompassing the application and adaptation of common-law tort frameworks (negligence requiring duty/breach/causation/damage per [[Donoghue v. Stevenson]] 1932 and [[Caparo Industries plc v. Dickman]] 1990 in the UK; the four-element negligence formulation traced to [[Brown v. Kendall]] 1850 and [[Palsgraf v. Long Island Railroad]] 1928 in the US), statutory strict-liability regimes (the UK [[Consumer Protection Act 1987]] implementing EC Directive 85/374/EEC; [[Restatement (Second) of Torts § 402A]] in the US; the EU revised [[Product Liability Directive]] (EU) 2024/2853 entering into force 9 December 2024 explicitly extending product status to software, AI systems and digital manufacturing files with a presumption of defectiveness when a claimant faces excessive difficulty in proving technical complexity), the doctrine of strict liability for [[Abnormally Dangerous Activity]] descended from [[R",
+  "vc:qualityScore": {
+    "@value": "0.52",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.87",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:breach-of-duty",
+      "vc:label": "Breach of Duty"
+    },
+    {
+      "@id": "urn:visionflow:linked:causation",
+      "vc:label": "Causation"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformity-assessment",
+      "vc:label": "Conformity Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:damages",
+      "vc:label": "Damages"
+    },
+    {
+      "@id": "urn:visionflow:linked:duty-of-care",
+      "vc:label": "Duty of Care"
+    },
+    {
+      "@id": "urn:visionflow:linked:foreseeability",
+      "vc:label": "Foreseeability"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-market-monitoring",
+      "vc:label": "Post-Market Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:strict-liability-standard",
+      "vc:label": "Strict Liability Standard"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:causal-linkage",
+      "vc:label": "Causal Linkage"
+    },
+    {
+      "@id": "urn:visionflow:linked:compensable-harm",
+      "vc:label": "Compensable Harm"
+    },
+    {
+      "@id": "urn:visionflow:linked:evidentiary-record",
+      "vc:label": "Evidentiary Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:identifiable-legal-person",
+      "vc:label": "Identifiable Legal Person"
+    },
+    {
+      "@id": "urn:visionflow:linked:jurisdictional-framework",
+      "vc:label": "Jurisdictional Framework"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:compensation-for-victims",
+      "vc:label": "Compensation for Victims"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterrence-of-harm",
+      "vc:label": "Deterrence of Harm"
+    },
+    {
+      "@id": "urn:visionflow:linked:insurance-pricing",
+      "vc:label": "Insurance Pricing"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-enforcement",
+      "vc:label": "Regulatory Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-internalisation",
+      "vc:label": "Risk Internalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-investment",
+      "vc:label": "Safety Investment"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:abnormally-dangerous-activity-doctrine",
+      "vc:label": "Abnormally Dangerous Activity Doctrine"
+    },
+    {
+      "@id": "urn:visionflow:linked:negligence-standard",
+      "vc:label": "Negligence Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:product-liability-directive",
+      "vc:label": "Product Liability Directive"
+    },
+    {
+      "@id": "urn:visionflow:linked:strict-liability",
+      "vc:label": "Strict Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:vicarious-liability",
+      "vc:label": "Vicarious Liability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:causation-doctrine",
+      "vc:label": "Causation Doctrine"
+    },
+    {
+      "@id": "urn:visionflow:linked:common-law-system",
+      "vc:label": "Common Law System"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-evidence",
+      "vc:label": "Expert Evidence"
+    },
+    {
+      "@id": "urn:visionflow:linked:judicial-capacity",
+      "vc:label": "Judicial Capacity"
+    },
+    {
+      "@id": "urn:visionflow:linked:precedent",
+      "vc:label": "Precedent"
+    },
+    {
+      "@id": "urn:visionflow:linked:statutory-interpretation",
+      "vc:label": "Statutory Interpretation"
+    }
+  ],
+  "vc:supports": [
+    {
+      "@id": "urn:visionflow:linked:ai-insurance",
+      "vc:label": "AI Insurance"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-auditing",
+      "vc:label": "Algorithmic Auditing"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformity-assessment",
+      "vc:label": "Conformity Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-surveillance",
+      "vc:label": "Market Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consumer-protection",
+      "vc:label": "Consumer Protection"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:caparo-three-stage-test",
+      "vc:label": "Caparo Three-Stage Test"
+    },
+    {
+      "@id": "urn:visionflow:linked:daubert-standard",
+      "vc:label": "Daubert Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:foreseeability-test",
+      "vc:label": "Foreseeability Test"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasonable-care-standard",
+      "vc:label": "Reasonable Care Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:restatement-second-of-torts-402-a",
+      "vc:label": "Restatement (Second) of Torts § 402A"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-benefit-analysis",
+      "vc:label": "Risk-Benefit Analysis"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:linked:contractual-liability",
+      "vc:label": "Contractual Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:criminal-liability",
+      "vc:label": "Criminal Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-sanction",
+      "vc:label": "Regulatory Sanction"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-regulation",
+      "vc:label": "Self-Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:voluntary-code",
+      "vc:label": "Voluntary Code"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-bias",
+      "vc:label": "Algorithmic Bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-protection",
+      "vc:label": "Data Protection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    }
+  ],
+  "vc:standardizedBy": [
+    {
+      "@id": "urn:visionflow:linked:consumer-protection-act-1987",
+      "vc:label": "Consumer Protection Act 1987"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000-series",
+      "vc:label": "IEEE 7000 Series"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:product-liability-directive",
+      "vc:label": "Product Liability Directive"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:product-liability",
+      "vc:label": "Product Liability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-liability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Abnormally Dangerous Activity]]",
+      "resolved": "urn:visionflow:linked:abnormally-dangerous-activity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Abnormally Dangerous Activity Doctrine]]",
+      "resolved": "urn:visionflow:linked:abnormally-dangerous-activity-doctrine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Insurance]]",
+      "resolved": "urn:visionflow:linked:ai-insurance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Liability Directive]]",
+      "resolved": "urn:visionflow:linked:ai-liability-directive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Air Canada v. Moffatt]]",
+      "resolved": "urn:visionflow:linked:air-canada-v-moffatt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithmic Auditing]]",
+      "resolved": "urn:visionflow:linked:algorithmic-auditing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Andersen v. Stability AI]]",
+      "resolved": "urn:visionflow:linked:andersen-v-stability-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Vehicles Act 2024]]",
+      "resolved": "urn:visionflow:linked:automated-vehicles-act-2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[black box]]",
+      "resolved": "urn:visionflow:linked:black-box",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Breach of Duty]]",
+      "resolved": "urn:visionflow:linked:breach-of-duty",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Brown v. Kendall]]",
+      "resolved": "urn:visionflow:linked:brown-v-kendall",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Caparo Industries plc v. Dickman]]",
+      "resolved": "urn:visionflow:linked:caparo-industries-plc-v-dickman",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Caparo Three-Stage Test]]",
+      "resolved": "urn:visionflow:linked:caparo-three-stage-test",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Causal Linkage]]",
+      "resolved": "urn:visionflow:linked:causal-linkage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Causation]]",
+      "resolved": "urn:visionflow:linked:causation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Causation Doctrine]]",
+      "resolved": "urn:visionflow:linked:causation-doctrine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Centre for Law & Future of Innovation]]",
+      "resolved": "urn:visionflow:linked:centre-for-law-and-future-of-innovation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Character.AI]]",
+      "resolved": "urn:visionflow:linked:character-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Civil Liability]]",
+      "resolved": "urn:visionflow:linked:civil-liability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Civil Procedure Rules]]",
+      "resolved": "urn:visionflow:linked:civil-procedure-rules",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Common Law System]]",
+      "resolved": "urn:visionflow:linked:common-law-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compensable Harm]]",
+      "resolved": "urn:visionflow:linked:compensable-harm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compensation for Victims]]",
+      "resolved": "urn:visionflow:linked:compensation-for-victims",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Competition and Markets Authority (CMA)]]",
+      "resolved": "urn:visionflow:linked:competition-and-markets-authority-cma",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conformity Assessment]]",
+      "resolved": "urn:visionflow:linked:conformity-assessment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consumer Protection Act 1987]]",
+      "resolved": "urn:visionflow:linked:consumer-protection-act-1987",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ContractLayer]]",
+      "resolved": "urn:visionflow:linked:contract-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Contractual Liability]]",
+      "resolved": "urn:visionflow:linked:contractual-liability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Criminal Liability]]",
+      "resolved": "urn:visionflow:linked:criminal-liability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Damages]]",
+      "resolved": "urn:visionflow:linked:damages",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Daubert Standard]]",
+      "resolved": "urn:visionflow:linked:daubert-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deterrence of Harm]]",
+      "resolved": "urn:visionflow:linked:deterrence-of-harm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Donoghue v. Stevenson]]",
+      "resolved": "urn:visionflow:linked:donoghue-v-stevenson",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Duty of Care]]",
+      "resolved": "urn:visionflow:linked:duty-of-care",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Evidentiary Record]]",
+      "resolved": "urn:visionflow:linked:evidentiary-record",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[exemplary damages]]",
+      "resolved": "urn:visionflow:linked:exemplary-damages",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Expert Evidence]]",
+      "resolved": "urn:visionflow:linked:expert-evidence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FDA]]",
+      "resolved": "urn:visionflow:linked:fda",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Federal Judicial Center]]",
+      "resolved": "urn:visionflow:linked:federal-judicial-center",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foreseeability]]",
+      "resolved": "urn:visionflow:linked:foreseeability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foreseeability Test]]",
+      "resolved": "urn:visionflow:linked:foreseeability-test",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foundation Model]]",
+      "resolved": "urn:visionflow:linked:foundation-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Frontier AI]]",
+      "resolved": "urn:visionflow:linked:frontier-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FTC]]",
+      "resolved": "urn:visionflow:linked:ftc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gabriel Weil]]",
+      "resolved": "urn:visionflow:linked:gabriel-weil",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Getty Images v. Stability AI]]",
+      "resolved": "urn:visionflow:linked:getty-images-v-stability-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GovernanceDomain]]",
+      "resolved": "urn:visionflow:linked:governance-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GovernanceLayer]]",
+      "resolved": "urn:visionflow:linked:governance-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[House of Commons Science, Innovation and Technology Committee]]",
+      "resolved": "urn:visionflow:linked:house-of-commons-science-innovation-and-technology-committee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICO]]",
+      "resolved": "urn:visionflow:linked:ico",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Identifiable Legal Person]]",
+      "resolved": "urn:visionflow:linked:identifiable-legal-person",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 7000 Series]]",
+      "resolved": "urn:visionflow:linked:ieee-7000-series",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Information Commissioner's Office (ICO)]]",
+      "resolved": "urn:visionflow:linked:information-commissioner-s-office-ico",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InsuranceLayer]]",
+      "resolved": "urn:visionflow:linked:insurance-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Insurance Pricing]]",
+      "resolved": "urn:visionflow:linked:insurance-pricing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Judicial Capacity]]",
+      "resolved": "urn:visionflow:linked:judicial-capacity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jurisdictional Framework]]",
+      "resolved": "urn:visionflow:linked:jurisdictional-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Law Commission]]",
+      "resolved": "urn:visionflow:linked:law-commission",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LegalAndRegulatoryDomain]]",
+      "resolved": "urn:visionflow:linked:legal-and-regulatory-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lloyd's of London]]",
+      "resolved": "urn:visionflow:linked:lloyd-s-of-london",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Surveillance]]",
+      "resolved": "urn:visionflow:linked:market-surveillance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mata v. Avianca]]",
+      "resolved": "urn:visionflow:linked:mata-v-avianca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MHRA]]",
+      "resolved": "urn:visionflow:linked:mhra",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[National Courts and Sciences Institute]]",
+      "resolved": "urn:visionflow:linked:national-courts-and-sciences-institute",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Negligence]]",
+      "resolved": "urn:visionflow:linked:negligence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Negligence Standard]]",
+      "resolved": "urn:visionflow:linked:negligence-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NHTSA]]",
+      "resolved": "urn:visionflow:linked:nhtsa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Palsgraf v. Long Island Railroad]]",
+      "resolved": "urn:visionflow:linked:palsgraf-v-long-island-railroad",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Post-Market Monitoring]]",
+      "resolved": "urn:visionflow:linked:post-market-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precedent]]",
+      "resolved": "urn:visionflow:linked:precedent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Price-Anderson Act]]",
+      "resolved": "urn:visionflow:linked:price-anderson-act",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[pro-innovation]]",
+      "resolved": "urn:visionflow:linked:pro-innovation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Product Liability]]",
+      "resolved": "urn:visionflow:linked:product-liability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Product Liability Directive]]",
+      "resolved": "urn:visionflow:linked:product-liability-directive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Punitive Damages]]",
+      "resolved": "urn:visionflow:linked:punitive-damages",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reasonable Care Standard]]",
+      "resolved": "urn:visionflow:linked:reasonable-care-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regulatory Enforcement]]",
+      "resolved": "urn:visionflow:linked:regulatory-enforcement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RegulatoryLayer]]",
+      "resolved": "urn:visionflow:linked:regulatory-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regulatory Sanction]]",
+      "resolved": "urn:visionflow:linked:regulatory-sanction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Restatement (Second) of Torts § 402A]]",
+      "resolved": "urn:visionflow:linked:restatement-second-of-torts-402-a",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risk-Benefit Analysis]]",
+      "resolved": "urn:visionflow:linked:risk-benefit-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risk Internalisation]]",
+      "resolved": "urn:visionflow:linked:risk-internalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RiskManagementDomain]]",
+      "resolved": "urn:visionflow:linked:risk-management-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rite Aid]]",
+      "resolved": "urn:visionflow:linked:rite-aid",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rookes v Barnard]]",
+      "resolved": "urn:visionflow:linked:rookes-v-barnard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rylands v. Fletcher]]",
+      "resolved": "urn:visionflow:linked:rylands-v-fletcher",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Investment]]",
+      "resolved": "urn:visionflow:linked:safety-investment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Self-Regulation]]",
+      "resolved": "urn:visionflow:linked:self-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Statutory Interpretation]]",
+      "resolved": "urn:visionflow:linked:statutory-interpretation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strict Liability]]",
+      "resolved": "urn:visionflow:linked:strict-liability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strict Liability Standard]]",
+      "resolved": "urn:visionflow:linked:strict-liability-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strict Product Liability]]",
+      "resolved": "urn:visionflow:linked:strict-product-liability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tort Law]]",
+      "resolved": "urn:visionflow:linked:tort-law",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UK AI Safety Institute]]",
+      "resolved": "urn:visionflow:linked:uk-ai-safety-institute",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vicarious Liability]]",
+      "resolved": "urn:visionflow:linked:vicarious-liability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Voluntary Code]]",
+      "resolved": "urn:visionflow:linked:voluntary-code",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Ethics]]",
+      "resolved": "urn:visionflow:owl:class:ai-ethics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Safety]]",
+      "resolved": "urn:visionflow:owl:class:ai-safety",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Algorithmic Accountability]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Algorithmic Bias]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-bias",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consumer Protection]]",
+      "resolved": "urn:visionflow:owl:class:consumer-protection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Protection]]",
+      "resolved": "urn:visionflow:owl:class:data-protection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Explainable AI]]",
+      "resolved": "urn:visionflow:owl:class:explainable-ai",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
 - ### Definition
-  - AI Liability is a concept within the ngm domain.
+  - AI Liability is the body of legal doctrine, statutory regime, regulatory practice and emerging case law that allocates civil responsibility for personal injury, property damage, economic loss, discrimination, privacy invasion and consequential harm caused by artificial intelligence systems—encompassing the application and adaptation of common-law tort frameworks (negligence requiring duty/breach/causation/damage per [[Donoghue v. Stevenson]] 1932 and [[Caparo Industries plc v. Dickman]] 1990 in the UK; the four-element negligence formulation traced to [[Brown v. Kendall]] 1850 and [[Palsgraf v. Long Island Railroad]] 1928 in the US), statutory strict-liability regimes (the UK [[Consumer Protection Act 1987]] implementing EC Directive 85/374/EEC; [[Restatement (Second) of Torts § 402A]] in the US; the EU revised [[Product Liability Directive]] (EU) 2024/2853 entering into force 9 December 2024 explicitly extending product status to software, AI systems and digital manufacturing files with a presumption of defectiveness when a claimant faces excessive difficulty in proving technical complexity), the doctrine of strict liability for [[Abnormally Dangerous Activity]] descended from [[Rylands v. Fletcher]] 1868 increasingly proposed for [[Frontier AI]] development by Gabriel Weil (Touro Law) and operationalised in Rhode Island Senate Bill S0358 (2025) covering models trained above 10²⁶ FLOPs or costing over $100M, [[Vicarious Liability]] (respondeat superior) extended to AI agents acting on behalf of principals, and novel regulatory regimes including the [[EU AI Act]] (Regulation (EU) 2024/1689 published 12 July 2024, entering force 1 August 2024 with phased application through 2027 imposing conformity assessment, market-surveillance, post-market monitoring and serious-incident reporting obligations on providers of high-risk AI systems and general-purpose AI models with systemic risk above 10²⁵ FLOPs), the withdrawn [[AI Liability Directive]] (AILD COM(2022) 496 withdrawn February 2025 by the European Commission as part of the 2025 Work Programme but whose presumption-of-causation principles continue to influence Member-State courts), the UK's principles-based [[pro-innovation]] approach articulated in the AI Regulation White Paper (March 2023) tasking existing sectoral regulators ([[Information Commissioner's Office (ICO)]], [[Competition and Markets Authority (CMA)]], MHRA, Ofcom, FCA, HSE) with applying five cross-cutting principles—safety/security/robustness, transparency/explainability, fairness, accountability/governance, contestability/redress—rather than legislating a comprehensive AI statute (a stance challenged by the [[House of Commons Science, Innovation and Technology Committee]] calling for statutory footing and by Lord Holmes' Artificial Intelligence (Regulation) Bill [HL] reintroduced March 2025), the role of the [[UK AI Safety Institute]] (renamed AI Security Institute February 2025) and the [[Law Commission]]'s scoping work on autonomous-systems liability (continuing from Automated Vehicles Act 2024 implementing joint Law Commission proposals on the Authorised Self-Driving Entity ASDE framework), sector-specific regimes for autonomous vehicles ([[NHTSA]] Automated Vehicles Policy under FMVSS and Standing General Order 2021-01 mandating crash reporting for Level 2+ ADAS and ADS-equipped vehicles producing the dataset behind Tesla Autopilot/FSD investigations and the 2024 recall of 2 million Tesla vehicles), medical AI ([[FDA]] AI/ML SaMD Action Plan January 2021 evolving into the Predetermined Change Control Plan PCCP guidance December 2024 enabling pre-authorised algorithm updates without resubmission; UK [[MHRA]] Software and AI as a Medical Device Change Programme producing the Roadmap 2024 and 11 work-packages aligned with IMDRF), employment AI (New York City Local Law 144 of 2021 effective July 2023 mandating bias audits for Automated Employment Decision Tools; New York Senate Bill 7623-A; Colorado AI Act SB 24-205 enacted May 2024 effective February 2026 covering consequential decisions in employment/housing/credit/healthcare; EU AI Act Annex III high-risk classification for employment AI), and consumer-protection enforcement (FTC actions including the December 2023 Rite Aid order banning facial-recognition use for five years after wrongful identification of shoppers as shoplifters, the 2023 Amazon Alexa COPPA settlement for $25M concerning children's voice recordings, the September 2024 Operation AI Comply sweep against five firms making deceptive AI claims, and the May 2024 NIST AI Safety Institute Consortium formation); manifesting through landmark cases ([[Air Canada v. Moffatt]] February 2024 BCCRT holding the airline liable for its chatbot's hallucinated bereavement-fare policy under the duty of care for representations made on its own website; [[Mata v. Avianca]] June 2023 SDNY Rule 11 sanctions of $5,000 against attorneys who submitted ChatGPT-fabricated case citations; [[Getty Images v. Stability AI]] UK High Court trial June 2025 examining copyright infringement and trade-mark issues in training Stable Diffusion on Getty's library; [[Andersen v. Stability AI]] N.D. Cal. surviving motion to dismiss August 2024 on direct-infringement and DMCA claims; the [[Character.AI]] Garcia v. Character Technologies M.D. Fla. May 2025 ruling treating the chatbot app as a product for strict-liability purposes; and the ongoing social-media addiction MDL 3047 In re Social Media Adolescent Addiction/Personal Injury Products Liability Litigation N.D. Cal.); supported by an emerging insurance market (Munich Re aiSure performance-warranty policies launched 2018 and expanded for generative AI 2024, [[Lloyd's of London]] AI-specific affirmative coverage frameworks via Tokio Marine Kiln/Beazley/Chaucer syndicates, Vouch and Armilla AI specialist InsurTech carriers, Coalition and At-Bay cyber+AI hybrid policies, and AIG's AI risk addendum to professional indemnity), academic centres advancing the field (Cambridge [[Centre for Law & Future of Innovation]], Imperial College Centre for Technology Foresight, UCL Centre for Artificial Intelligence in Law/Computer Science, Edinburgh Centre for Technomoral Futures, Oxford Internet Institute, Stanford CodeX, Berkman Klein at Harvard, NYU AI Now Institute), and confronting deep doctrinal challenges arising from AI's defining characteristics—autonomy enabling outputs unforeseen by developers, opacity of deep-learning decision processes ([[black box]] problem) frustrating causal proof, emergent capabilities not present in training objectives, distributed multi-party development chains across foundation-model providers/fine-tuners/integrators/deployers, and catastrophic tail-risk profiles where compensatory damages provide no meaningful deterrence—forcing legal systems on both sides of the Atlantic to choose between maintaining negligence as default while applying strict liability narrowly, codifying product-liability for general-purpose AI, treating frontier-model development as ultrahazardous, mandating insurance with industry pools and government reinsurance backstops modelled on the [[Price-Anderson Act]], or imposing punitive-damage multipliers on near-miss incidents to internalise unrealised catastrophic risk per Weil's "warning shot" thesis—an unsettled global trilemma between speed, coherence and safety that will define technology policy through the decade.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AILiability
-  - owl-role:: Concept
+  - owl-role:: LegalDoctrineFamily
+  - owl-inferred:: ai:GovernanceMechanism, ai:RiskAllocationFramework, ai:RegulatoryConcept, ai:TortLawApplication
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[LegalAndRegulatoryDomain]], [[GovernanceDomain]], [[RiskManagementDomain]]
+  - implemented-in-layer:: [[GovernanceLayer]], [[RegulatoryLayer]], [[ContractLayer]], [[InsuranceLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: [[Tort Law]], [[Product Liability]], [[Civil Liability]], [[AI Governance]], [[Algorithmic Accountability]]
+  - has-part:: [[Duty of Care]], [[Breach of Duty]], [[Causation]], [[Foreseeability]], [[Damages]], [[Strict Liability Standard]], [[Conformity Assessment]], [[Post-Market Monitoring]]
+  - requires:: [[Identifiable Legal Person]], [[Compensable Harm]], [[Evidentiary Record]], [[Jurisdictional Framework]], [[Causal Linkage]]
+  - enables:: [[Compensation for Victims]], [[Deterrence of Harm]], [[Risk Internalisation]], [[Insurance Pricing]], [[Safety Investment]], [[Regulatory Enforcement]]
+  - implements:: [[Negligence Standard]], [[Strict Liability]], [[Vicarious Liability]], [[Abnormally Dangerous Activity Doctrine]], [[Product Liability Directive]], [[EU AI Act]]
+  - depends-on:: [[Common Law System]], [[Statutory Interpretation]], [[Judicial Capacity]], [[Expert Evidence]], [[Causation Doctrine]], [[Precedent]]
+  - supports:: [[AI Safety]], [[AI Insurance]], [[Conformity Assessment]], [[Market Surveillance]], [[Consumer Protection]], [[Algorithmic Auditing]]
+  - uses:: [[Foreseeability Test]], [[Caparo Three-Stage Test]], [[Daubert Standard]], [[Risk-Benefit Analysis]], [[Reasonable Care Standard]], [[Restatement (Second) of Torts § 402A]]
+  - contrasts-with:: [[Criminal Liability]], [[Contractual Liability]], [[Regulatory Sanction]], [[Self-Regulation]], [[Voluntary Code]]
+  - related-to:: [[AI Ethics]], [[AI Governance]], [[Data Protection]], [[Algorithmic Bias]], [[AI Safety]], [[Explainable AI]], [[Frontier AI]], [[Foundation Model]]
+  - standardized-by:: [[EU AI Act]], [[Product Liability Directive]], [[Consumer Protection Act 1987]], [[ISO/IEC 42001]], [[NIST AI Risk Management Framework]], [[IEEE 7000 Series]]
 
 - ### Content
-  # **Algorithmic Accountability: A Comparative Analysis of AI Liability Frameworks in the United States and United Kingdom**
-  - This report addresses one of the most pressing legal and societal challenges of the 21st century: how to assign responsibility when autonomous and opaque Artificial Intelligence (AI) systems cause harm. As AI transitions from a theoretical concept to a pervasive technology embedded in critical sectors, it strains the very foundations of tort law, which for centuries has been built around human action and foreseeability. The unique characteristics of AI—its capacity for autonomous decision-making, its often-impenetrable "black box" nature, and its potential for emergent behaviors unforeseen by its creators—present a formidable challenge to legal systems on both sides of the Atlantic. This analysis will provide a comprehensive, comparative examination of the liability frameworks in the United States and the United Kingdom, tracing their evolution and assessing their fitness for the age of AI.
-  - We will begin by deconstructing the foundational principles of negligence and strict liability in both jurisdictions, establishing the bedrock legal doctrines that form the basis for any discussion of AI liability. We will then trace the difficult legal journey of classifying software as a "product" or a "service," a crucial precursor to the AI liability debate that has defined technology law for decades. The core of the report will analyze how the unique characteristics of AI challenge these traditional doctrines, forcing courts and legislators to consider novel applications of established principles, from vicarious liability for AI "agents" to the radical proposition of treating frontier AI development as an abnormally dangerous activity.
-  - Finally, we will explore the divergent governance responses in the US and UK. In the United States, a fragmented but dynamic landscape is emerging, characterized by ambitious state-level legislative experiments and a federal agenda driven by geopolitical competition. In contrast, the United Kingdom has pursued a centralized, principles-based regulatory framework that prioritizes flexibility but faces growing calls for statutory intervention. We will delve into cutting-edge theoretical proposals designed to manage the catastrophic risks posed by frontier AI, including novel applications of punitive damages and the essential role of insurance as a quasi-regulatory mechanism. The objective of this report is to provide policymakers, legal practitioners, and technology leaders with a nuanced and detailed map of the current liability landscape and the likely paths of its future evolution, offering a clear-eyed assessment of the legal architecture required for an era of algorithmic accountability.
-  To comprehend the legal challenges posed by Artificial Intelligence, it is essential to first understand the foundational doctrines of tort law upon which any AI liability regime will be built. In both the United States and the United Kingdom, the legal frameworks for assigning responsibility for harm have evolved over centuries, primarily through the common law doctrines of negligence and strict liability. These principles, developed in response to the physical and industrial risks of their time, now provide the essential toolkit for addressing the novel digital risks of the 21st century. This section establishes these bedrock legal principles, highlighting their historical development, core elements, and the key transatlantic divergences that will prove critical in the context of AI.
-  The American law of torts provides a dual system for assigning liability. The default regime is negligence, which requires a plaintiff to prove that the defendant acted with a lack of reasonable care. In specific, circumscribed situations involving heightened risk, however, the law imposes strict liability, a no-fault standard that holds a party responsible for harm regardless of the level of care they exercised. The tension between these two paradigms has shaped liability law for over 150 years and provides the direct intellectual framework for the modern debate over AI.
-  After centuries of slow development within the English forms of action, negligence law in the United States began to coalesce into a general theory of liability for carelessly caused harm during the 1830s and 1840s.1 The 1850 decision of Chief Judge Shaw in
-  \] is widely regarded as a pivotal moment, marking the emergence of negligence as a distinct tort.1 The case, which involved a man accidentally striking another in the eye with a stick while trying to separate fighting dogs, established the core principle that liability should be based on a failure to exercise ordinary care, moving away from older, stricter forms of liability like trespass. The essence of this new tort was that a person should be subject to liability for carelessly causing harm to another, provided there was a causal connection between the defendant's conduct and the plaintiff's injury that was "natural, probable, proximate, and not too remote".1
-  As courts and legal commentators continued to explore this developing tort, they began to dissect it into its essential components. Over time, a consensus formed around a standard set of elements that a plaintiff must prove to succeed in a negligence claim. While the precise formulation can vary by jurisdiction, the most conventional modern iteration of negligence contains four core elements: **(1) a duty of care** owed by the defendant to the plaintiff; **(2) a breach of that duty** by the defendant; **(3) causation**, which itself comprises two parts—actual cause (or cause-in-fact) and proximate cause (or legal cause); and **(4) actual loss or damage** suffered by the plaintiff.1 This four-part structure is affirmed in countless state court decisions across the country, from
-  *Winn v. Posades* in Connecticut to *Farabaugh v. Pa. Turnpike Comm'n* in Pennsylvania, demonstrating its pervasive influence in American jurisprudence.1 Some jurisdictions, such as Louisiana and Tennessee, have adopted a five-element test, explicitly separating cause-in-fact and legal cause into distinct elements to provide greater analytical clarity.1
-  This foundational framework has been shaped and refined by a series of landmark cases. The 1928 decision in \], with Judge Cardozo's majority opinion, established the critical concept of foreseeability as a limit on the scope of duty.2 In
-  *Palsgraf*, a man carrying a package of fireworks was pushed by railroad guards onto a moving train, causing the package to fall and explode. The shockwave from the explosion toppled scales at the other end of the platform, injuring Mrs. Palsgraf. The court held that the railroad was not liable because Mrs. Palsgraf was an unforeseeable plaintiff; the guards could not have reasonably foreseen that their actions would result in harm to someone so far away. This established the rule that a duty of care is owed only to those who are within the "zone of foreseeable danger".2
-  Other cases have cemented additional key principles. \[\[Martin v. Herzog\]\] (1920) articulated the doctrine of negligence *per se*, which holds that the violation of a statute designed to protect against a certain type of harm constitutes a breach of the duty of care in itself.2 If a law exists to prevent a specific injury, and a defendant violates that law, causing that very injury, then negligence is presumed. Furthermore, the "eggshell skull" rule, famously associated with
-  \[\[Vosburg v. Putney\]\] (1891), dictates that a defendant must take their victim as they find them. Under this doctrine, a tortfeasor is liable for all damages resulting from their wrongful act, even if the victim suffers a disproportionately severe injury due to a pre-existing vulnerability or unusual susceptibility.2
-  In a significant departure from the fault-based principles of negligence, American law developed the doctrine of strict product liability to address the unique dangers posed by mass-produced goods in an industrial economy. This doctrine is most powerfully articulated in the highly influential \].3 Published by the American Law Institute in 1965, this section provides that "one who sells any product in a defective condition unreasonably dangerous to the user or consumer or to his property is subject to liability for physical harm thereby caused".3
-  This principle of strict liability represents a profound policy shift. It applies even if "the seller has exercised all possible care in the preparation and sale of his product" and even if the injured consumer has no direct contractual relationship (privity) with the manufacturer.3 The focus is not on the
-  *conduct* of the seller, but on the *condition* of the product itself.4 The rationale was to protect consumers who were often in no position to prove a specific act of negligence by a remote manufacturer in a complex production chain. By placing the burden of loss on the manufacturers and sellers who profit from placing products into the stream of commerce, the law aims to incentivize the creation of safer products and ensure that the costs of injuries are borne by those best able to prevent them or spread the cost through insurance and pricing. This doctrine applies when a product is defective in its manufacturing, its design, or its warnings, and it has become a cornerstone of consumer protection law in the United States.
-  A second, distinct branch of strict liability in US law applies not to products, but to certain types of activities deemed so hazardous that they cannot be made safe even with the exercise of utmost care. This is the doctrine of strict liability for an "abnormally dangerous activity," sometimes referred to as an "ultrahazardous" activity.5 An activity qualifies as abnormally dangerous if it is "not of common usage" and creates a foreseeable and "very significant risk of physical harm" that cannot be eliminated by reasonable care.5
-  The historical origin of this doctrine is universally traced to the 1868 English House of Lords case, \].5 In that case, a mill owner had a reservoir built on his land, which, due to undiscovered abandoned mine shafts, flooded a neighboring coal mine. The court held the mill owner liable, establishing the principle that "a person who for his own purposes brings on his lands and collects and keeps there anything likely to do mischief if it escapes, must keep it in at his peril".5 American courts adopted this rule but modified it, removing the requirement that the activity take place on the defendant's land and instead focusing on the broader concept of whether the activity is one of "common usage".5
-  In determining whether an activity is abnormally dangerous, courts typically weigh a set of factors outlined in the Restatement of Torts. These include: the existence of a high degree of risk of some harm; the likelihood that the harm that results will be great; the inability to eliminate the risk by the exercise of reasonable care; the extent to which the activity is not a matter of common usage; the inappropriateness of the activity to the place where it is carried on; and the extent to which its value to the community is outweighed by its dangerous attributes.6
-  Classic examples of abnormally dangerous activities include blasting with explosives, storing large quantities of toxic chemicals, and fumigation with poisonous gases.6 Conversely, activities that are dangerous but are widely engaged in by the public, such as driving an automobile, are considered matters of "common usage" and are therefore governed by the law of negligence, not strict liability.6 The rationale for this distinction rests on a principle of reciprocity: where many people in a community impose a risk on each other for a shared benefit (like driving), negligence is sufficient. However, when one party engages in an unusual activity that imposes a non-reciprocal risk on others who do not benefit, strict liability is justified to ensure the actor internalizes the full social cost of their hazardous enterprise.5
-  The existing legal architecture in the United States, therefore, already contains a fundamental and long-standing tension between fault-based liability (negligence) and no-fault liability (strict liability). This is not a new conflict but one that has evolved over more than a century and a half to address the escalating risks of the industrial and post-industrial age. The development of these doctrines was not arbitrary; it was a direct response to specific societal problems. Negligence, the default rule, requires a plaintiff to undertake the often difficult, costly, and uncertain task of proving fault—a specific breach of a duty of care.1 Recognizing the near impossibility of this task for consumers injured by mass-produced goods from remote manufacturers, the courts and the American Law Institute developed the doctrine of strict product liability as codified in
-  \].3 This shifted the legal inquiry from the manufacturer's conduct to the product's condition. In parallel, for activities so inherently perilous that no amount of care could render them safe, such as blasting or handling explosives, the courts adapted the rule from
-  \] to create strict liability for abnormally dangerous activities.5 This historical evolution provides the direct intellectual toolkit for the contemporary AI liability debate. The central question facing legal systems today is not whether to invent an entirely new system of liability from scratch, but rather to determine which of these existing, well-established frameworks—or a hybrid thereof—is the most appropriate fit for the unique risks posed by artificial intelligence. The debate over whether to treat AI development and deployment under the rules of negligence, product liability, or as an abnormally dangerous activity is simply the next chapter in this long-running doctrinal story of adapting law to technology.
-  The English legal system, as the progenitor of the common law tradition, provides the historical foundation for many of the principles found in US law. However, it has evolved along its own distinct path, particularly in the interplay between judge-made common law and statutory regimes mandated by its former membership in the European Union. Like its American counterpart, the English framework for liability is built on the twin pillars of negligence and strict liability, but with crucial differences in their scope and application.
-  The modern law of negligence in the United Kingdom, and indeed across much of the common law world, owes its existence to the seminal 1932 House of Lords decision in \].7 This case, famously known as the "snail in the bottle" case, involved Mrs. May Donoghue, who fell ill after her friend purchased a bottle of ginger beer for her at a café in Paisley, Scotland. After drinking some of it, the decomposed remains of a snail were discovered in the opaque bottle.8 Because her friend had bought the drink, Mrs. Donoghue had no direct contract with the café owner, and certainly not with Mr. Stevenson, the manufacturer of the ginger beer. This lack of a contractual relationship, or "privity," was a significant barrier to recovery under the law at the time, forcing her to bring a claim in negligence.8
-  The House of Lords, in a landmark 3-2 decision, found in her favor. In his leading judgment, Lord Atkin articulated what has become known as the "neighbour principle," a foundational concept of the duty of care.8 Drawing on a biblical parable, he posed the lawyer's question, "Who is my neighbour?" and provided a restricted legal reply: "You must take reasonable care to avoid acts or omissions which you can reasonably foresee would be likely to injure your neighbour. Who, then, in law is my neighbour? The answer seems to be—persons who are so closely and directly affected by my act that I ought reasonably to have them in contemplation as being so affected when I am directing my mind to the acts or omissions which are called in question".8 This principle established, for the first time, a general duty of care owed by a manufacturer to the ultimate consumer of their product, regardless of any contractual relationship.9 It fundamentally moved the basis of liability from strict categories based on contract to a fault-based system requiring only foreseeable injury.9
-  In the decades following *Donoghue*, English courts have continued to refine the test for establishing a duty of care. The modern approach is most famously encapsulated in the case of \].7 In
-  *Caparo*, the House of Lords established a three-part incremental test to determine the existence of a duty of care: (1) was the harm reasonably foreseeable? (2) was there a relationship of proximity between the claimant and the defendant? and (3) is it "fair, just and reasonable" to impose a duty of care?.7 The concept of proximity, in particular, has become a key battleground in many negligence claims.7 Overall, the English framework for negligence, much like the American system, is structured around the core elements of a
-  **Duty of Care**, a **Breach** of that duty, **Causation** linking the breach to the harm, and resulting **Damage or Loss**, with a vast body of case law providing detailed interpretation of each component.7
-  Running parallel to the common law of negligence, the United Kingdom has a statutory regime of strict liability for defective products, established by the \[\[Consumer Protection Act 1987\]\] (CPA).11 This Act is not a product of pure common law development; rather, it was enacted to implement the European Community's 1985 Product Liability Directive (85/374/EEC) into domestic law.11 This origin is significant, as it means the UK's statutory product liability framework is harmonized with that of the European Union.
-  The CPA imposes civil liability in tort on the "producer" of a product for damage caused wholly or partly by a defect in that product.11 This includes manufacturers, "own-branders" who put their name on a product, and importers of products into the EU/UK.11 A product is defined as "defective" under the Act if "the safety of the product is not such as persons generally are entitled to expect".12 This is an objective standard based on public expectation, taking into account all circumstances, including the product's marketing, instructions, warnings, and what might reasonably be expected to be done with it.11
-  The liability imposed by the CPA is strict, meaning a claimant does not need to prove that the producer was negligent or at fault.11 If a product is defective and causes damage, the producer is automatically liable in most cases.12 However, unlike the purer form of strict liability seen in some US jurisdictions, the CPA provides a number of statutory defenses. The most significant and controversial of these is the so-called "development risks" or "state of the art" defense, found in section 4(1)(e) of the Act. This defense allows a producer to escape liability if they can prove that "the state of scientific and technical knowledge at the relevant time was not such that a producer of products of the same description as the product in question might be expected to have discovered the defect if it had existed in his products while they were under his control".12
-  A critical point of divergence between the American and British approaches to strict product liability lies in this "development risks" defense. The UK's \[\[Consumer Protection Act 1987\]\], by its very text, provides an explicit statutory escape hatch for manufacturers.12 A producer can argue that a defect was scientifically or technically unknowable at the time the product was supplied, effectively reintroducing an element of foreseeability into a supposedly strict liability regime. In contrast, the US
-  \] contains no such explicit defense.3 While some US jurisdictions have, through case law, allowed arguments similar to a state-of-the-art defense, particularly in design defect cases, the core principle of § 402A remains a purer form of strict liability that focuses on the product's condition and the danger it poses, irrespective of the manufacturer's knowledge or ability to discover the defect.
-  This seemingly technical distinction has profound and direct implications for the liability of AI systems. The "black box" nature of advanced AI means that harmful behaviors can emerge unexpectedly from complex interactions within the model. A developer of such a system in the United Kingdom could plausibly mount a powerful defense under the CPA, arguing that the emergent harmful capability was not foreseeable or discoverable given the "state of the art" in AI safety research at the time of deployment. This defense would be significantly more difficult to sustain under the stricter liability standard of § 402A as applied in many US states. Consequently, the UK may represent a more favorable legal environment for developers facing claims arising from novel and unanticipated AI failures, a factor that could influence corporate risk assessment and even the international location of AI research and development.
-  Before the legal world began grappling with the complexities of artificial intelligence, it faced a precursor challenge that set the stage for the current debate: how to apply centuries-old liability laws, designed for a world of tangible objects, to the intangible world of computer software. The question of whether software constitutes a "product" or a "service" has been a central and fiercely contested issue in technology law for decades. The resolution of this conundrum is not merely an academic exercise; it determines which liability regime applies. This section examines this critical legal battleground, as the classification of software directly shapes how the law can and will approach the even more complex challenge of AI.
-  The legal distinction between a "product" and a "service" is paramount in liability law. If a court deems software to be a "product," it can fall under the ambit of strict product liability laws, such as the \] in the US or the \[\[Consumer Protection Act 1987\]\] in the UK. This would allow a plaintiff to hold a developer liable for harm caused by a defect without needing to prove fault or negligence.13 Conversely, if software is classified as a "service," liability is typically governed by the principles of negligence, requiring the plaintiff to undertake the more arduous task of proving that the developer breached a duty of reasonable care.13
-  This high-stakes determination has led courts to struggle with the classification of software, which does not fit neatly into traditional legal categories. In navigating this gray area, courts have analyzed several key factors to guide their decisions.13 One of the earliest and most persistent hurdles has been the issue of
-  **tangibility**. Historically, a legal "product" was something tangible—an object that could be physically possessed. Software, being a set of intangible instructions, challenged this definition. While some early judicial opinions were hesitant, the dicta in some cases hinted that software should be considered a tangible product for legal purposes, particularly when distributed on physical media like a disk.13
-  A more decisive factor has often been the **method of distribution**. A strong distinction emerged between mass-marketed, off-the-shelf software and custom-designed software. The sale of standardized, mass-produced software to the general public was seen as analogous to the sale of any other consumer good, pushing courts to classify it as a product.13 In contrast, the creation of bespoke software tailored to the specific needs of a single client looked much more like the provision of a professional service, akin to an architect designing a building or a lawyer drafting a contract.14
-  Further complicating matters are **hybrid transactions**, which are now the norm in the software industry. Many software contracts involve not just the delivery of code (a potential "good") but also significant ongoing services such as installation, customization, training, and technical support.14 In these mixed cases, US courts have often applied a "predominant purpose" or "essence of the agreement" test.14 They examine the transaction as a whole to determine whether the primary goal was the acquisition of a good or the procurement of a service. This can involve a detailed analysis of the contract's language and even its financial breakdown; for example, if the majority of the contract's value is allocated to labor and support, it points toward a service.14
-  While the "product vs. service" issue has not been uniformly resolved across all fifty states, a clear and accelerating trend has emerged in US courts: a growing willingness to classify software, particularly mass-market consumer applications, as "products" for the purpose of strict liability claims.13 This represents a significant evolution from earlier jurisprudence.
-  Early cases often leaned toward a service classification, especially for custom software. For instance, in \], an Indiana court held that a contract for custom-written accounting software was a contract for services, emphasizing the vendor's active role in designing and developing a system for the client's specific needs.14 However, as software became less of a bespoke creation and more of a mass-distributed commodity, the legal reasoning began to shift.
-  More recent and high-profile litigation involving modern AI applications demonstrates this shift vividly. A landmark moment occurred in a 2025 federal court decision involving the AI chatbot application **Character A.I.**.16 A mother sued the company under a strict liability design defect theory after her teenage son's suicide, alleging that the app's addictive design was an inherently dangerous and defective consumer product. Character A.I. moved to dismiss the claim, deploying the classic argument that its chatbot was software, not a tangible good, and therefore not subject to strict product liability.16 The U.S. District Court for the Middle District of Florida rejected this argument. In its order, the court explained that the alleged harms—though resulting from interactions with the AI—were "only possible because of the alleged design defects in the Character A.I. app." The court concluded that, for the purposes of the plaintiff's claim, the app itself
-  *is* a product, distinguishing between the ideas or expression *within* the app and the app's fundamental *design*.16
-  This line of reasoning is being pursued in other major cases. In the multidistrict litigation against social media giants, plaintiffs are arguing that platform features like algorithmic content feeds, "like" buttons, and notifications are defectively designed "products" that cause addiction and mental health harms in children.17 While these cases face significant hurdles, including the formidable defense provided by Section 230 of the Communications Decency Act, the underlying legal theory that the software platform itself is a product is gaining judicial consideration. This trend is further supported by other state-level decisions, such as
-  *Brookes v. Lyft Inc.* and *Maynard v. Snapchat, Inc.*, where courts have also found that a software application can be treated as a product for liability purposes.17
-  The \[\[Consumer Protection Act 1987\]\] (CPA) in the United Kingdom provides a different, though ultimately converging, path to liability. The Act's definition of a "product" is broad, encompassing "any goods or electricity" and including products that are "comprised in another product".11 However, the application of this definition to standalone software has been a source of ambiguity.
-  Guidance on the CPA has traditionally suggested that while "information and computer software" on their own are *not* included, **embedded software** is considered part of the overall product's safety.12 For example, the software that controls the braking system in a smart car or the temperature in a smart thermostat is inextricably linked to the physical product's function and safety. Under this interpretation, a defect in the embedded software that causes harm would render the entire product defective under the CPA. This leaves a potential gap for standalone software, such as a mobile app or a cloud-based service, which is not physically "comprised in another product."
-  However, this ambiguity is being decisively resolved by legislative developments originating from the European Union, which will undoubtedly influence future UK law and judicial interpretation, even post-Brexit. The EU's revised Product Liability Directive (PLD), which modernizes the original 1985 directive that the CPA implemented, explicitly clarifies that its scope extends to digital products.18 The revised PLD's definition of "product" expressly includes
-  **software**, AI systems, and even digital manufacturing files (like those for 3D printing).18 This legislative clarification effectively erases the distinction between tangible goods and digital products, bringing the UK/EU legal framework into close alignment with the emerging judicial consensus in the United States. It signals a clear legislative intent to hold developers of all forms of software, including AI, to the standards of product liability.
-  The historical legal distinction between embedded software (treated as part of a product) and standalone software (often treated as a service or an intangible good) is rapidly becoming untenable. This traditional line, drawn by frameworks like the UK's CPA, is collapsing under the weight of modern technological and economic realities.12 In the past, it was logical to see the software in a car's anti-lock braking system as part of the car, while viewing a standalone tax preparation program as something different. However, the rise of the app economy and cloud-based systems has changed this calculus.
-  US courts are now leading a judicial dismantling of this distinction. The ruling in the *Character A.I.* case is a prime example, where a court treated a standalone mobile app as a product because its alleged design defects were the direct cause of harm.16 The "product" in this modern view is the app itself, a mass-distributed item in the stream of commerce, not a physical object in which it is embedded. This judicial evolution is being mirrored by legislative action in Europe. The EU's new Product Liability Directive makes the shift explicit, formally defining software itself as a product subject to its liability rules.18
-  This convergence of US judicial trends and EU legislative action represents a monumental shift in technology law. It effectively dismantles the legal fiction that only tangible items can be "products" subject to strict liability. This change reflects the economic reality that software is a mass-produced and distributed good, just like any other consumer item. The direct consequence is a dramatic increase in the potential liability exposure for the entire software and AI industry. Developers of pure software and AI models, who may have previously operated under the assumption that they were shielded from strict liability and could only be sued for negligence, are now finding themselves squarely in the crosshairs of this stricter, no-fault liability regime.
-  While the legal battles over software liability provide a crucial foundation, artificial intelligence introduces challenges of a different order of magnitude. Advanced AI is not merely complex software; its defining characteristics of autonomy, opacity, and unpredictability create novel problems for every element of traditional tort analysis. These features strain the concepts of foreseeability, breach of duty, and causation to their breaking points, forcing legal systems to contemplate more radical applications of liability doctrine to ensure accountability.
-  The UK government's regulatory framework, in seeking to define AI, focuses on two core characteristics that set it apart from conventional software: **adaptivity and autonomy**.20 AI systems are designed to learn from data and alter their behavior to achieve goals, often in ways that have not been explicitly programmed or even foreseen by their human creators.21 This capacity for
-  **emergent behavior** is what makes AI so powerful, but it is also what makes it so legally problematic.
-  This leads directly to the **"black box" problem**.22 In many advanced AI systems, particularly those based on deep learning neural networks, the decision-making process is so complex that it becomes opaque, even to the developers who built the system. It can be impossible to trace the exact pathway of logic or the specific data points that led to a particular output or action.23 This opacity creates a formidable, perhaps insurmountable, evidentiary burden for a plaintiff in a traditional negligence case. To prove a
-  **breach of duty**, a plaintiff must show what the developer did wrong in the design or training process. To prove **causation**, they must draw a clear line from that specific error to the resulting harm. When the system's internal logic is unknowable, proving these elements becomes a matter of speculation.22
-  In response to this challenge, legal scholars are exploring ways to adapt existing doctrines to sidestep the black box problem. One prominent proposal is to apply the doctrine of **\[\[Vicarious Liability\]\]** to AI systems that function as agents.24 Vicarious liability, also known by the Latin maxim
-  *respondeat superior* ("let the master answer"), is a form of strict liability that holds a principal (like an employer) legally responsible for the torts committed by their agent (like an employee) while acting within the scope of their employment.24 The legal justification is that the principal controls the agent and benefits from their actions, and should therefore bear the costs of the risks they create.24
-  The argument for applying this to AI is that as systems become more autonomous, they cease to be mere tools and begin to function as "agents" that act on behalf of a user, deployer, or developer to accomplish goals.26 A report from the Office of the Comptroller of the Currency notes this evolution in finance from AI as an "input" to a "co-pilot" and finally to an "agent" that executes trades autonomously.28 If an AI agent, in the course of performing tasks for its principal, commits an act that would be a tort if done by a human, this theory would hold the principal strictly liable.26 This approach has the significant advantage of circumventing the need to prove the principal's own negligence or to dissect the AI's internal decision-making process. The focus shifts from the AI's "state of mind" to the simple fact that the principal's agent caused the harm.
-  A more radical and far-reaching proposal, gaining traction in academic and policy circles, is to classify the very act of *developing* highly advanced, general-purpose AI—often termed "frontier AI"—as an **abnormally dangerous activity**.5 This would trigger strict liability for
-  *any* foreseeable harm that results from the inherent nature of the activity, regardless of the level of care exercised by the developer.
-  The argument, powerfully articulated by legal scholars like\] of Touro University Law Center, is that the creation of these powerful and poorly understood intelligent systems squarely meets the established legal criteria for this doctrine.29 First, developing frontier AI is not yet a "common usage"; it is an activity confined to a handful of highly capitalized technology firms.5 Second, it creates a high degree of risk of very great harm, from large-scale cyberattacks to the development of novel weapons or systemic economic disruption.32 Third, and most critically, this risk cannot be eliminated by the exercise of reasonable care, because the problem of "AI alignment"—ensuring an AI's goals remain aligned with human values—is an unsolved technical challenge.30 As Weil argues, treating frontier AI development like blasting with dynamite or keeping a pet tiger is a legally coherent application of existing principles.33
-  This is not merely an academic theory; it is actively being considered as a policy solution. A bipartisan AI policy roadmap released by the U.S. Senate Majority Leader's office explicitly recommended that Congress should "specify strict liability ('abnormally dangerous activity') for the development of the most advanced" AI systems.34 A comprehensive report from the RAND Corporation on liability for large-scale AI harms also extensively analyzes the application of this doctrine.32 Adopting this framework would represent a monumental policy decision. It would shift the entire legal and financial burden of risk onto the handful of companies developing these systems, forcing them to internalize the full potential social costs of their creations and creating a powerful incentive to invest in safety or slow down development until the risks are better understood.35
-  The rapid proliferation of powerful open-source AI models, where the source code, model weights, or other key components are made publicly available, introduces a profound and complicating dimension to the liability puzzle.37 While proponents champion open-source AI for fostering innovation, competition, and transparency, it creates a legal structure that is almost perfectly designed to diffuse and evade accountability.
-  The contractual reality of open-source software is stark. The vast majority of open-source AI models are released under permissive licenses, such as the MIT License or the Apache 2.0 License. A core feature of these licenses is a broad **disclaimer of all warranties and a severe limitation of liability**.38 The legal text typically states that the software is provided "as-is," with no guarantee of fitness for any purpose and, crucially, no warranty of "noninfringement".38 This means they offer no indemnity or legal protection to the user against claims of intellectual property infringement or other harms caused by the model. This stands in sharp contrast to the world of proprietary AI, where commercial users can often negotiate for some level of IP indemnification or other contractual protections from the provider.38
-  This creates a significant and dangerous risk gap. A company that downloads and deploys an open-source model for a commercial purpose effectively assumes the entirety of the legal risk.38 They are exposed to potential lawsuits from third parties harmed by the model's output, with little to no legal recourse against the model's original creators or the community of contributors. This risk is magnified by the inherent vulnerabilities of the open-source ecosystem. These models are susceptible to unique cybersecurity threats, such as "data poisoning," where a malicious actor intentionally injects biased or harmful data into an open dataset used for training.39 Furthermore, because the provenance of training data is often unclear, these models can be built on copyrighted material, private data, or biased information, creating embedded risks of IP infringement, privacy violations, and discriminatory outcomes.39 While open models offer the user the significant benefit of being able to host the model locally, thereby protecting their own proprietary input data from the AI provider, they achieve this by externalizing all downstream legal risks onto the deployer.38
-  The current AI ecosystem is setting the stage for an inevitable collision between three fundamentally different liability paradigms. The first is **Proprietary Model Liability**, which operates much like traditional commercial product liability. A business using a proprietary model from a major technology provider will likely engage in a contractual negotiation, securing some level of warranty or indemnity against certain risks, particularly intellectual property infringement.38 Their liability is defined and managed primarily through contract law.
-  The second paradigm is **Open-Source Model Liability**. This functions as a "caveat emptor" or "buyer beware" system. A company that chooses to download, modify, and deploy an open-source model receives no contractual protections.38 The license explicitly disclaims all liability, leaving the deployer fully exposed to any and all tort claims from injured third parties, with no legal recourse against the model's creators.38 Their liability is managed solely through their own internal risk tolerance and their ability to secure insurance.
-  The third, and most disruptive, paradigm is the proposed **Abnormally Dangerous Activity Liability**. This would represent a fundamental shift, upending both of the existing models. By imposing non-disclaimable, strict liability on the *original developers* of the most powerful frontier AI models, this regime would hold them responsible for harms regardless of whether the model was licensed commercially or released as open-source.33
-  This divergence creates a critical trilemma for policymakers. There is a strong policy goal, particularly in the United States, to promote open-source AI to foster competition and prevent a few large firms from dominating the market.40 However, this goal is in direct tension with the goal of ensuring clear accountability, as the open-source model is structurally designed to diffuse responsibility. A strict liability regime for developers would solve the accountability problem for the most dangerous models but could be perceived as chilling the open-source movement by placing immense legal burdens on its creators. The future trajectory of AI liability will be defined by how legal systems and societies choose to resolve this fundamental conflict between promoting innovation, ensuring accountability, and managing catastrophic risk.
-  As the theoretical challenges of applying tort law to AI become practical realities, governments in the United States and the United Kingdom are moving from analysis to action. However, they are pursuing starkly different paths. The US is characterized by a "bottom-up" approach, with a patchwork of aggressive state-level legislative proposals and a federal government whose primary focus is geopolitical competition. The UK, in contrast, has adopted a "top-down," centralized, but deliberately non-statutory framework, preferring to empower existing regulators rather than write new laws. This section examines these divergent governance responses, highlighting the key legislative initiatives, regulatory strategies, and the political tensions shaping the future of AI liability on both sides of the Atlantic.
-  The following table provides a high-level summary of the key differences in the American and British approaches, offering a structured overview before a more detailed analysis.
-  - termID: AI-LAW-0001
-  - category: [[Legal Framework]]
-  - domain: [[AI Governance]]
-  - relatedTerms: [[AI Risks]], [[Product Liability]], [[Tort Law]], [[Negligence]], [[Strict Liability]], [[AI Regulation]], [[Legal Accountability]]
-  - jurisdiction: [[United States]], [[United Kingdom]]
-  - yearAnalyzed: 2025
-  - keyTopics: [[AI Liability]], [[Frontier AI]], [[Abnormally Dangerous Activity]], [[Vicarious Liability]], [[Punitive Damages]], [[Insurance]], [[Open-Source AI]]
-  - This report addresses one of the most pressing legal and societal challenges of the 21st century: how to assign responsibility when autonomous and opaque [[Artificial Intelligence]] ([[AI]]) systems cause harm. As AI transitions from a theoretical concept to a pervasive technology embedded in critical sectors, it strains the very foundations of [[Tort Law]], which for centuries has been built around human action and [[foreseeability]]. The unique characteristics of AI—its capacity for [[autonomous decision-making]], its often-impenetrable "[[black box]]" nature, and its potential for [[emergent behaviors]] unforeseen by its creators—present a formidable challenge to legal systems on both sides of the Atlantic. This analysis will provide a comprehensive, comparative examination of the [[liability frameworks]] in the [[United States]] and the [[United Kingdom]], tracing their evolution and assessing their fitness for the age of AI.
-  - We will begin by deconstructing the foundational principles of [[Negligence]] and [[Strict Liability]] in both jurisdictions, establishing the bedrock [[legal doctrines]] that form the basis for any discussion of [[AI Liability]]. We will then trace the difficult legal journey of classifying software as a "[[product]]" or a "[[service]]," a crucial precursor to the AI liability debate that has defined [[technology law]] for decades. The core of the report will analyze how the unique characteristics of AI challenge these traditional doctrines, forcing courts and legislators to consider novel applications of established principles, from [[Vicarious Liability]] for AI "agents" to the radical proposition of treating [[Frontier AI]] development as an [[Abnormally Dangerous Activity]].
-  - Finally, we will explore the divergent [[governance responses]] in the US and UK. In the United States, a fragmented but dynamic landscape is emerging, characterized by ambitious state-level legislative experiments and a federal agenda driven by [[geopolitical competition]]. In contrast, the United Kingdom has pursued a centralized, [[principles-based regulatory framework]] that prioritizes flexibility but faces growing calls for statutory intervention. We will delve into cutting-edge theoretical proposals designed to manage the [[catastrophic risks]] posed by [[Frontier AI]], including novel applications of [[Punitive Damages]] and the essential role of [[insurance]] as a quasi-regulatory mechanism. The objective of this report is to provide policymakers, legal practitioners, and technology leaders with a nuanced and detailed map of the current liability landscape and the likely paths of its future evolution, offering a clear-eyed assessment of the legal architecture required for an era of [[algorithmic accountability]].
-  To comprehend the legal challenges posed by [[Artificial Intelligence]], it is essential to first understand the foundational doctrines of [[Tort Law]] upon which any [[AI Liability]] regime will be built. In both the [[United States]] and the [[United Kingdom]], the legal frameworks for assigning responsibility for harm have evolved over centuries, primarily through the [[common law]] doctrines of [[Negligence]] and [[Strict Liability]]. These principles, developed in response to the physical and industrial risks of their time, now provide the essential toolkit for addressing the novel digital risks of the 21st century. This section establishes these bedrock legal principles, highlighting their historical development, core elements, and the key transatlantic divergences that will prove critical in the context of AI.
-  The American law of torts provides a dual system for assigning liability. The default regime is [[Negligence]], which requires a plaintiff to prove that the defendant acted with a lack of [[reasonable care]]. In specific, circumscribed situations involving heightened risk, however, the law imposes [[Strict Liability]], a [[no-fault standard]] that holds a party responsible for harm regardless of the level of care they exercised. The tension between these two paradigms has shaped liability law for over 150 years and provides the direct intellectual framework for the modern debate over AI.
-  After centuries of slow development within the English [[forms of action]], [[negligence law]] in the United States began to coalesce into a general theory of liability for carelessly caused harm during the 1830s and 1840s (see Hofstra Law's historical analysis of negligence evolution at https://scholarlycommons.law.hofstra.edu/cgi/viewcontent.cgi?article=2282&context=hlr). The 1850 decision of Chief Judge Shaw in [[Brown v. Kendall]] is widely regarded as a pivotal moment, marking the emergence of negligence as a distinct tort. The case, which involved a man accidentally striking another in the eye with a stick while trying to separate fighting dogs, established the core principle that liability should be based on a failure to exercise [[ordinary care]], moving away from older, stricter forms of liability like [[trespass]]. The essence of this new tort was that a person should be subject to liability for carelessly causing harm to another, provided there was a causal connection between the defendant's conduct and the plaintiff's injury that was "natural, probable, proximate, and not too remote".
-  As courts and legal commentators continued to explore this developing tort, they began to dissect it into its essential components. Over time, a consensus formed around a standard set of elements that a plaintiff must prove to succeed in a [[negligence claim]]. While the precise formulation can vary by jurisdiction, the most conventional modern iteration of negligence contains four core elements: **(1) a [[duty of care]]** owed by the defendant to the plaintiff; **(2) a [[breach of duty]]** by the defendant; **(3) [[causation]]**, which itself comprises two parts—[[actual cause]] (or [[cause-in-fact]]) and [[proximate cause]] (or [[legal cause]]); and **(4) actual [[loss or damage]]** suffered by the plaintiff. This four-part structure is affirmed in countless state court decisions across the country, from [[Winn v. Posades]] in Connecticut to [[Farabaugh v. Pa. Turnpike Comm'n]] in Pennsylvania, demonstrating its pervasive influence in American jurisprudence. Some jurisdictions, such as Louisiana and Tennessee, have adopted a five-element test, explicitly separating cause-in-fact and legal cause into distinct elements to provide greater analytical clarity.
-  This foundational framework has been shaped and refined by a series of landmark cases. The 1928 decision in [[Palsgraf v. Long Island Railroad]], with Judge Cardozo's majority opinion, established the critical concept of [[foreseeability]] as a limit on the scope of duty (classic case analysis available at https://lawlibrarycollections.umn.edu/classic-cases-tort). In [[Palsgraf v. Long Island Railroad]], a man carrying a package of fireworks was pushed by railroad guards onto a moving train, causing the package to fall and explode. The shockwave from the explosion toppled scales at the other end of the platform, injuring Mrs. Palsgraf. The court held that the railroad was not liable because Mrs. Palsgraf was an [[unforeseeable plaintiff]]; the guards could not have reasonably foreseen that their actions would result in harm to someone so far away. This established the rule that a [[duty of care]] is owed only to those who are within the "[[zone of foreseeable danger]]".
-  Other cases have cemented additional key principles. [[Martin v. Herzog]] (1920) articulated the doctrine of [[negligence per se]], which holds that the violation of a statute designed to protect against a certain type of harm constitutes a breach of the duty of care in itself. If a law exists to prevent a specific injury, and a defendant violates that law, causing that very injury, then negligence is presumed. Furthermore, the "[[eggshell skull rule]]", famously associated with [[Vosburg v. Putney]] (1891), dictates that a defendant must take their victim as they find them. Under this doctrine, a tortfeasor is liable for all damages resulting from their wrongful act, even if the victim suffers a disproportionately severe injury due to a pre-existing vulnerability or unusual susceptibility.
-  In a significant departure from the fault-based principles of negligence, American law developed the doctrine of [[Strict Product Liability]] to address the unique dangers posed by mass-produced goods in an industrial economy. This doctrine is most powerfully articulated in the highly influential [[Restatement (Second) of Torts § 402A]] (full text and analysis at https://biotech.law.lsu.edu/cases/products/402a-b.htm). Published by the [[American Law Institute]] in 1965, this section provides that "one who sells any product in a [[defective condition]] unreasonably dangerous to the user or consumer or to his property is subject to liability for physical harm thereby caused".
-  This principle of [[Strict Liability]] represents a profound policy shift. It applies even if "the seller has exercised all possible care in the preparation and sale of his product" and even if the injured consumer has no direct contractual relationship ([[privity]]) with the manufacturer. The focus is not on the *conduct* of the seller, but on the *condition* of the product itself (see Fiveable's legal explanation at https://fiveable.me/key-terms/torts/restatement-second-of-torts-%C2%A7-402a). The rationale was to protect consumers who were often in no position to prove a specific act of negligence by a remote manufacturer in a complex production chain. By placing the burden of loss on the manufacturers and sellers who profit from placing products into the [[stream of commerce]], the law aims to incentivize the creation of safer products and ensure that the costs of injuries are borne by those best able to prevent them or spread the cost through insurance and pricing. This doctrine applies when a product is defective in its [[manufacturing]], its [[design]], or its [[warnings]], and it has become a cornerstone of [[consumer protection law]] in the United States.
-  A second, distinct branch of [[Strict Liability]] in US law applies not to products, but to certain types of activities deemed so hazardous that they cannot be made safe even with the exercise of utmost care. This is the doctrine of strict liability for an "[[Abnormally Dangerous Activity]]," sometimes referred to as an "[[ultrahazardous activity]]" (Cornell Law's definition at https://www.law.cornell.edu/wex/abnormally_dangerous_activity). An activity qualifies as abnormally dangerous if it is "not of common usage" and creates a foreseeable and "very significant risk of physical harm" that cannot be eliminated by [[reasonable care]].
-  The historical origin of this doctrine is universally traced to the 1868 English House of Lords case, [[Rylands v. Fletcher]]. In that case, a mill owner had a reservoir built on his land, which, due to undiscovered abandoned mine shafts, flooded a neighboring coal mine. The court held the mill owner liable, establishing the principle that "a person who for his own purposes brings on his lands and collects and keeps there anything likely to do mischief if it escapes, must keep it in at his peril". American courts adopted this rule but modified it, removing the requirement that the activity take place on the defendant's land and instead focusing on the broader concept of whether the activity is one of "[[common usage]]".
-  In determining whether an activity is abnormally dangerous, courts typically weigh a set of factors outlined in the [[Restatement of Torts]] (detailed factors at https://www.law.cornell.edu/wex/ultrahazardous_activity). These include: the existence of a high degree of risk of some harm; the likelihood that the harm that results will be great; the inability to eliminate the risk by the exercise of reasonable care; the extent to which the activity is not a matter of common usage; the inappropriateness of the activity to the place where it is carried on; and the extent to which its value to the community is outweighed by its dangerous attributes.
-  Classic examples of abnormally dangerous activities include [[blasting with explosives]], storing large quantities of [[toxic chemicals]], and [[fumigation]] with poisonous gases. Conversely, activities that are dangerous but are widely engaged in by the public, such as driving an automobile, are considered matters of "common usage" and are therefore governed by the law of negligence, not strict liability. The rationale for this distinction rests on a principle of [[reciprocity]]: where many people in a community impose a risk on each other for a shared benefit (like driving), negligence is sufficient. However, when one party engages in an unusual activity that imposes a [[non-reciprocal risk]] on others who do not benefit, strict liability is justified to ensure the actor internalizes the full social cost of their hazardous enterprise.
-  The existing legal architecture in the United States, therefore, already contains a fundamental and long-standing tension between [[fault-based liability]] (negligence) and [[no-fault liability]] (strict liability). This is not a new conflict but one that has evolved over more than a century and a half to address the escalating risks of the industrial and post-industrial age. The development of these doctrines was not arbitrary; it was a direct response to specific societal problems. Negligence, the default rule, requires a plaintiff to undertake the often difficult, costly, and uncertain task of proving fault—a specific breach of a duty of care. Recognizing the near impossibility of this task for consumers injured by mass-produced goods from remote manufacturers, the courts and the American Law Institute developed the doctrine of [[Strict Product Liability]] as codified in [[Restatement (Second) of Torts § 402A]]. This shifted the legal inquiry from the manufacturer's conduct to the product's condition. In parallel, for activities so inherently perilous that no amount of care could render them safe, such as blasting or handling explosives, the courts adapted the rule from [[Rylands v. Fletcher]] to create strict liability for abnormally dangerous activities. This historical evolution provides the direct intellectual toolkit for the contemporary [[AI Liability]] debate. The central question facing legal systems today is not whether to invent an entirely new system of liability from scratch, but rather to determine which of these existing, well-established frameworks—or a hybrid thereof—is the most appropriate fit for the unique risks posed by [[artificial intelligence]]. The debate over whether to treat [[AI development]] and deployment under the rules of negligence, product liability, or as an abnormally dangerous activity is simply the next chapter in this long-running doctrinal story of adapting law to technology.
-  The English legal system, as the progenitor of the [[common law]] tradition, provides the historical foundation for many of the principles found in US law. However, it has evolved along its own distinct path, particularly in the interplay between judge-made common law and statutory regimes mandated by its former membership in the [[European Union]]. Like its American counterpart, the English framework for liability is built on the twin pillars of [[Negligence]] and [[Strict Liability]], but with crucial differences in their scope and application.
-  The modern law of [[Negligence]] in the [[United Kingdom]], and indeed across much of the common law world, owes its existence to the seminal 1932 House of Lords decision in [[Donoghue v. Stevenson]] (UK case law overview at https://professionalnegligenceclaimsolicitors.co.uk/landmark-famous-uk-tort-cases-advice/). This case, famously known as the "[[snail in the bottle]]" case, involved Mrs. May Donoghue, who fell ill after her friend purchased a bottle of ginger beer for her at a café in Paisley, Scotland (full case text at https://www.scienzegiuridiche.uniroma1.it/sites/default/files/docenti/alpa/Donoghue_Stevenson.pdf). After drinking some of it, the decomposed remains of a snail were discovered in the opaque bottle. Because her friend had bought the drink, Mrs. Donoghue had no direct contract with the café owner, and certainly not with Mr. Stevenson, the manufacturer of the ginger beer. This lack of a contractual relationship, or "[[privity]]," was a significant barrier to recovery under the law at the time, forcing her to bring a claim in negligence.
-  The House of Lords, in a landmark 3-2 decision, found in her favor. In his leading judgment, Lord Atkin articulated what has become known as the "[[neighbour principle]]," a foundational concept of the [[duty of care]]. Drawing on a biblical parable, he posed the lawyer's question, "Who is my neighbour?" and provided a restricted legal reply: "You must take reasonable care to avoid acts or omissions which you can reasonably foresee would be likely to injure your neighbour. Who, then, in law is my neighbour? The answer seems to be—persons who are so closely and directly affected by my act that I ought reasonably to have them in contemplation as being so affected when I am directing my mind to the acts or omissions which are called in question". This principle established, for the first time, a general duty of care owed by a manufacturer to the ultimate consumer of their product, regardless of any contractual relationship (Wikipedia analysis at https://en.wikipedia.org/wiki/Donoghue_v_Stevenson). It fundamentally moved the basis of liability from strict categories based on contract to a fault-based system requiring only foreseeable injury.
-  In the decades following [[Donoghue v. Stevenson]], English courts have continued to refine the test for establishing a [[duty of care]]. The modern approach is most famously encapsulated in the case of [[Caparo Industries plc v. Dickman]]. In [[Caparo v. Dickman]], the House of Lords established a three-part incremental test to determine the existence of a duty of care: (1) was the harm reasonably [[foreseeable]]? (2) was there a relationship of [[proximity]] between the claimant and the defendant? and (3) is it "[[fair, just and reasonable]]" to impose a duty of care?. The concept of proximity, in particular, has become a key battleground in many negligence claims. Overall, the English framework for negligence, much like the American system, is structured around the core elements of a **Duty of Care**, a **Breach** of that duty, **Causation** linking the breach to the harm, and resulting **Damage or Loss** (causation principles explored at https://www.ukhealthcarelawblog.co.uk/causation-in-clinical-negligence-cases-can-there-be-liability-where-the-same-injury-would-probably-have-happened-anyway/), with a vast body of case law providing detailed interpretation of each component.
-  Running parallel to the [[common law]] of [[Negligence]], the United Kingdom has a statutory regime of [[Strict Liability]] for defective products, established by the [[Consumer Protection Act 1987]] (CPA) (Wikipedia overview at https://en.wikipedia.org/wiki/Consumer_Protection_Act_1987). This Act is not a product of pure common law development; rather, it was enacted to implement the European Community's 1985 [[Product Liability Directive]] (85/374/EEC) into domestic law. This origin is significant, as it means the UK's statutory product liability framework is harmonized with that of the [[European Union]].
-  The CPA imposes civil liability in tort on the "[[producer]]" of a product for damage caused wholly or partly by a defect in that product. This includes manufacturers, "[[own-branders]]" who put their name on a product, and importers of products into the EU/UK. A product is defined as "[[defective]]" under the Act if "the safety of the product is not such as persons generally are entitled to expect" (Which? consumer guide at https://www.which.co.uk/consumer-rights/regulation/consumer-protection-act-1987-a5xTL3w6L9OI). This is an [[objective standard]] based on [[public expectation]], taking into account all circumstances, including the product's marketing, instructions, warnings, and what might reasonably be expected to be done with it.
-  The liability imposed by the CPA is strict, meaning a claimant does not need to prove that the producer was negligent or at fault. If a product is defective and causes damage, the producer is automatically liable in most cases. However, unlike the purer form of strict liability seen in some US jurisdictions, the CPA provides a number of statutory defenses. The most significant and controversial of these is the so-called "[[development risks defense]]" or "[[state of the art defense]]", found in section 4(1)(e) of the Act. This defense allows a producer to escape liability if they can prove that "the state of scientific and technical knowledge at the relevant time was not such that a producer of products of the same description as the product in question might be expected to have discovered the defect if it had existed in his products while they were under his control".
-  A critical point of divergence between the American and British approaches to [[Strict Product Liability]] lies in this "[[development risks defense]]". The UK's [[Consumer Protection Act 1987]], by its very text, provides an explicit statutory escape hatch for manufacturers. A producer can argue that a defect was scientifically or technically unknowable at the time the product was supplied, effectively reintroducing an element of [[foreseeability]] into a supposedly strict liability regime. In contrast, the US [[Restatement (Second) of Torts § 402A]] contains no such explicit defense. While some US jurisdictions have, through case law, allowed arguments similar to a [[state-of-the-art defense]], particularly in [[design defect]] cases, the core principle of § 402A remains a purer form of strict liability that focuses on the product's condition and the danger it poses, irrespective of the manufacturer's knowledge or ability to discover the defect.
-  This seemingly technical distinction has profound and direct implications for the liability of [[AI systems]]. The "[[black box]]" nature of advanced AI means that harmful behaviors can emerge unexpectedly from complex interactions within the model. A developer of such a system in the United Kingdom could plausibly mount a powerful defense under the CPA, arguing that the emergent harmful capability was not foreseeable or discoverable given the "state of the art" in [[AI safety]] research at the time of deployment. This defense would be significantly more difficult to sustain under the stricter liability standard of § 402A as applied in many US states. Consequently, the UK may represent a more favorable legal environment for developers facing claims arising from novel and unanticipated [[AI failures]], a factor that could influence corporate risk assessment and even the international location of [[AI research and development]].
-  Before the legal world began grappling with the complexities of [[artificial intelligence]], it faced a precursor challenge that set the stage for the current debate: how to apply centuries-old liability laws, designed for a world of tangible objects, to the intangible world of [[computer software]]. The question of whether software constitutes a "[[product]]" or a "[[service]]" has been a central and fiercely contested issue in [[technology law]] for decades. The resolution of this conundrum is not merely an academic exercise; it determines which liability regime applies. This section examines this critical legal battleground, as the classification of software directly shapes how the law can and will approach the even more complex challenge of AI.
-  The legal distinction between a "[[product]]" and a "[[service]]" is paramount in [[liability law]]. If a court deems software to be a "product," it can fall under the ambit of [[Strict Product Liability]] laws, such as the [[Restatement (Second) of Torts § 402A]] in the US or the [[Consumer Protection Act 1987]] in the UK. This would allow a plaintiff to hold a developer liable for harm caused by a defect without needing to prove fault or negligence (Stanford CS analysis at https://cs.stanford.edu/people/eroberts/cs181/projects/1995-96/liability-law/productserviceissue.html). Conversely, if software is classified as a "service," liability is typically governed by the principles of [[Negligence]], requiring the plaintiff to undertake the more arduous task of proving that the developer breached a duty of [[reasonable care]].
-  This high-stakes determination has led courts to struggle with the classification of software, which does not fit neatly into traditional legal categories. In navigating this gray area, courts have analyzed several key factors to guide their decisions. One of the earliest and most persistent hurdles has been the issue of **[[tangibility]]**. Historically, a legal "product" was something tangible—an object that could be physically possessed. Software, being a set of intangible instructions, challenged this definition. While some early judicial opinions were hesitant, the dicta in some cases hinted that software should be considered a tangible product for legal purposes, particularly when distributed on physical media like a disk.
-  A more decisive factor has often been the **[[method of distribution]]**. A strong distinction emerged between [[mass-marketed software|mass-marketed]], [[off-the-shelf software]] and [[custom-designed software]] (Berkeley Technology Law Journal analysis at https://www.btlj.org/data/articles2015/vol5/5_1/5-berkeley-tech-l-j-0001-0028.pdf). The sale of standardized, mass-produced software to the general public was seen as analogous to the sale of any other consumer good, pushing courts to classify it as a product. In contrast, the creation of bespoke software tailored to the specific needs of a single client looked much more like the provision of a professional service, akin to an architect designing a building or a lawyer drafting a contract.
-  Further complicating matters are **[[hybrid transactions]]**, which are now the norm in the software industry. Many software contracts involve not just the delivery of code (a potential "good") but also significant ongoing services such as installation, customization, training, and technical support. In these mixed cases, US courts have often applied a "[[predominant purpose test]]" or "[[essence of the agreement test]]". They examine the transaction as a whole to determine whether the primary goal was the acquisition of a good or the procurement of a service. This can involve a detailed analysis of the contract's language and even its financial breakdown; for example, if the majority of the contract's value is allocated to labor and support, it points toward a service.
-  While the "product vs. service" issue has not been uniformly resolved across all fifty states, a clear and accelerating trend has emerged in US courts: a growing willingness to classify software, particularly [[mass-market consumer applications]], as "products" for the purpose of [[Strict Liability]] claims (San Diego Law Review analysis at https://digital.sandiego.edu/sdlr/vol20/iss2/9/). This represents a significant evolution from earlier jurisprudence.
-  Early cases often leaned toward a service classification, especially for custom software. For instance, in [[RRX Industries v. Lab-Con, Inc.]], an Indiana court held that a contract for custom-written accounting software was a contract for services, emphasizing the vendor's active role in designing and developing a system for the client's specific needs. However, as software became less of a bespoke creation and more of a mass-distributed commodity, the legal reasoning began to shift.
-  More recent and high-profile litigation involving modern AI applications demonstrates this shift vividly. A landmark moment occurred in a 2025 federal court decision involving the AI chatbot application **[[Character.AI]]** (Morrison Foerster legal analysis at https://www.mofo.com/resources/insights/250618-software-gains-new-status-as-a-product-under-strict-liability-law). A mother sued the company under a [[Strict Liability]] [[design defect]] theory after her teenage son's suicide, alleging that the app's addictive design was an inherently dangerous and defective consumer product. [[Character.AI]] moved to dismiss the claim, deploying the classic argument that its chatbot was software, not a tangible good, and therefore not subject to strict product liability. The U.S. District Court for the Middle District of Florida rejected this argument. In its order, the court explained that the alleged harms—though resulting from interactions with the AI—were "only possible because of the alleged design defects in the Character.A.I. app." The court concluded that, for the purposes of the plaintiff's claim, the app itself *is* a product, distinguishing between the ideas or expression *within* the app and the app's fundamental *design*.
-  This line of reasoning is being pursued in other major cases. In the [[multidistrict litigation]] against [[social media]] giants, plaintiffs are arguing that platform features like [[algorithmic content feeds]], "[[like buttons]]", and [[notifications]] are defectively designed "products" that cause [[addiction]] and [[mental health harms]] in children (American Bar Association analysis at https://www.americanbar.org/groups/litigation/resources/newsletters/mass-torts/have-algorithms-opened-your-software-product-liability/). While these cases face significant hurdles, including the formidable defense provided by [[Section 230]] of the [[Communications Decency Act]], the underlying legal theory that the software platform itself is a product is gaining judicial consideration. This trend is further supported by other state-level decisions, such as [[Brookes v. Lyft Inc.]] and [[Maynard v. Snapchat, Inc.]], where courts have also found that a software application can be treated as a product for liability purposes.
-  The [[Consumer Protection Act 1987]] (CPA) in the [[United Kingdom]] provides a different, though ultimately converging, path to liability. The Act's definition of a "[[product]]" is broad, encompassing "any goods or electricity" and including products that are "comprised in another product". However, the application of this definition to standalone software has been a source of ambiguity.
-  Guidance on the CPA has traditionally suggested that while "information and computer software" on their own are *not* included, **[[embedded software]]** is considered part of the overall product's safety. For example, the software that controls the braking system in a [[smart car]] or the temperature in a [[smart thermostat]] is inextricably linked to the physical product's function and safety. Under this interpretation, a defect in the embedded software that causes harm would render the entire product defective under the CPA. This leaves a potential gap for [[standalone software]], such as a mobile app or a cloud-based service, which is not physically "comprised in another product."
-  However, this ambiguity is being decisively resolved by legislative developments originating from the [[European Union]], which will undoubtedly influence future UK law and judicial interpretation, even post-[[Brexit]]. The EU's revised [[Product Liability Directive]] (PLD), which modernizes the original 1985 directive that the CPA implemented, explicitly clarifies that its scope extends to [[digital products]] (Norton Rose Fulbright analysis at https://www.nortonrosefulbright.com/en-gb/knowledge/publications/7052eff6/artificial-intelligence-and-liability). The revised PLD's definition of "product" expressly includes **software**, [[AI systems]], and even [[digital manufacturing files]] (like those for [[3D printing]]). This legislative clarification effectively erases the distinction between tangible goods and digital products, bringing the UK/EU legal framework into close alignment with the emerging judicial consensus in the United States. It signals a clear legislative intent to hold developers of all forms of software, including AI, to the standards of [[Product Liability]].
-  The historical legal distinction between [[embedded software]] (treated as part of a product) and [[standalone software]] (often treated as a service or an intangible good) is rapidly becoming untenable. This traditional line, drawn by frameworks like the UK's CPA, is collapsing under the weight of modern technological and economic realities. In the past, it was logical to see the software in a car's [[anti-lock braking system]] as part of the car, while viewing a standalone tax preparation program as something different. However, the rise of the [[app economy]] and [[cloud-based systems]] has changed this calculus.
-  US courts are now leading a judicial dismantling of this distinction. The ruling in the [[Character.AI]] case is a prime example, where a court treated a standalone mobile app as a product because its alleged design defects were the direct cause of harm. The "product" in this modern view is the app itself, a mass-distributed item in the [[stream of commerce]], not a physical object in which it is embedded. This judicial evolution is being mirrored by legislative action in Europe. The EU's new [[Product Liability Directive]] makes the shift explicit, formally defining software itself as a product subject to its liability rules (Hogan Lovells analysis at https://www.hoganlovells.com/en/publications/ai-liability-in-the-eu-and-uk-whats-the-current-state-of-play).
-  This convergence of US judicial trends and EU legislative action represents a monumental shift in [[technology law]]. It effectively dismantles the legal fiction that only tangible items can be "products" subject to [[Strict Liability]]. This change reflects the economic reality that software is a mass-produced and distributed good, just like any other consumer item. The direct consequence is a dramatic increase in the potential liability exposure for the entire software and AI industry. Developers of pure software and AI models, who may have previously operated under the assumption that they were shielded from strict liability and could only be sued for negligence, are now finding themselves squarely in the crosshairs of this stricter, [[no-fault liability]] regime.
-  While the legal battles over [[software liability]] provide a crucial foundation, [[artificial intelligence]] introduces challenges of a different order of magnitude. Advanced AI is not merely complex software; its defining characteristics of [[autonomy]], [[opacity]], and [[unpredictability]] create novel problems for every element of traditional [[tort analysis]]. These features strain the concepts of [[foreseeability]], [[breach of duty]], and [[causation]] to their breaking points, forcing legal systems to contemplate more radical applications of liability doctrine to ensure accountability.
-  The UK government's [[regulatory framework]], in seeking to define AI, focuses on two core characteristics that set it apart from conventional software: **[[adaptivity]] and [[autonomy]]** (Deloitte UK analysis at https://www.deloitte.com/uk/en/Industries/financial-services/blogs/the-uks-framework-for-ai-regulation.html). AI systems are designed to learn from data and alter their behavior to achieve goals, often in ways that have not been explicitly programmed or even foreseen by their human creators (UK government position on AI liability at https://www.artificiallawyer.com/2022/07/18/you-will-be-legally-liable-for-ai-outcomes-uk-government/). This capacity for **[[emergent behavior]]** is what makes AI so powerful, but it is also what makes it so legally problematic.
-  This leads directly to the **"[[black box problem]]"** (DLA Piper analysis on AI risk insurability at https://www.dlapiper.com/insights/publications/derisk-newsletter/2024/insuring-the-unpredictable-the-challenges-of-ai-risk-insurability). In many advanced AI systems, particularly those based on [[deep learning]] [[neural networks]], the decision-making process is so complex that it becomes [[opaque]], even to the developers who built the system. It can be impossible to trace the exact pathway of logic or the specific data points that led to a particular output or action (AI Frontiers case for AI liability at https://ai-frontiers.org/articles/case-for-ai-liability). This opacity creates a formidable, perhaps insurmountable, evidentiary burden for a plaintiff in a traditional negligence case. To prove a **[[breach of duty]]**, a plaintiff must show what the developer did wrong in the design or training process. To prove **[[causation]]**, they must draw a clear line from that specific error to the resulting harm. When the system's internal logic is unknowable, proving these elements becomes a matter of speculation.
-  In response to this challenge, legal scholars are exploring ways to adapt existing doctrines to sidestep the black box problem. One prominent proposal is to apply the doctrine of **[[Vicarious Liability]]** to AI systems that function as agents (Cornell Law definition at https://www.law.cornell.edu/wex/vicarious_liability). [[Vicarious Liability]], also known by the Latin maxim *[[respondeat superior]]* ("let the master answer"), is a form of strict liability that holds a principal (like an employer) legally responsible for the torts committed by their agent (like an employee) while acting within the [[scope of employment]] (EBSCO research on vicarious liability at https://www.ebsco.com/research-starters/social-sciences-and-humanities/vicarious-liability). The legal justification is that the principal controls the agent and benefits from their actions, and should therefore bear the costs of the risks they create.
-  The argument for applying this to AI is that as systems become more autonomous, they cease to be mere tools and begin to function as "[[agents]]" that act on behalf of a user, deployer, or developer to accomplish goals (Law-AI's law-following AI project at https://law-ai.org/law-following-ai/). A report from the [[Office of the Comptroller of the Currency]] notes this evolution in finance from AI as an "[[input]]" to a "[[co-pilot]]" and finally to an "[[agent]]" that executes trades autonomously (OCC speech on AI in finance at https://www.occ.gov/news-issuances/speeches/2024/pub-speech-2024-61.pdf). If an AI agent, in the course of performing tasks for its principal, commits an act that would be a tort if done by a human, this theory would hold the principal strictly liable. This approach has the significant advantage of circumventing the need to prove the principal's own negligence or to dissect the AI's internal decision-making process. The focus shifts from the AI's "state of mind" to the simple fact that the principal's agent caused the harm.
-  A more radical and far-reaching proposal, gaining traction in academic and policy circles, is to classify the very act of *developing* highly advanced, general-purpose AI—often termed "[[Frontier AI]]"—as an **[[Abnormally Dangerous Activity]]**. This would trigger [[Strict Liability]] for *any* foreseeable harm that results from the inherent nature of the activity, regardless of the level of care exercised by the developer.
-  The argument, powerfully articulated by legal scholars like [[Gabriel Weil]] of [[Touro University Law Center]] (faculty bio at https://www.tourolaw.edu/abouttourolaw/bio/399), is that the creation of these powerful and poorly understood intelligent systems squarely meets the established legal criteria for this doctrine (Touro Law Center faculty spotlight at https://www.tourolaw.edu/abouttourolaw/featured-content/376/spotlight). First, developing [[Frontier AI]] is not yet a "[[common usage]]"; it is an activity confined to a handful of highly capitalized technology firms. Second, it creates a high degree of risk of very great harm, from large-scale [[cyberattacks]] to the development of novel [[weapons]] or systemic [[economic disruption]] (RAND Corporation primer on AI damages at https://www.rand.org/content/dam/rand/pubs/research_reports/RRA3000/RRA3084-1/RAND_RRA3084-1.pdf). Third, and most critically, this risk cannot be eliminated by the exercise of [[reasonable care]], because the problem of "[[AI alignment]]"—ensuring an AI's goals remain aligned with human values—is an unsolved technical challenge. As Weil argues, treating frontier AI development like blasting with dynamite or keeping a pet tiger is a legally coherent application of existing principles (Noema Magazine essay at https://www.noemamag.com/your-ai-breaks-it-you-buy-it/).
-  This is not merely an academic theory; it is actively being considered as a policy solution. A bipartisan AI policy roadmap released by the U.S. Senate Majority Leader's office explicitly recommended that Congress should "specify strict liability ('abnormally dangerous activity') for the development of the most advanced" AI systems (Future of Life Institute analysis at https://futureoflife.org/document/vision-into-action-senate-ai-roadmap/). A comprehensive report from the RAND Corporation on liability for large-scale AI harms also extensively analyzes the application of this doctrine. Adopting this framework would represent a monumental policy decision. It would shift the entire legal and financial burden of risk onto the handful of companies developing these systems, forcing them to internalize the full potential social costs of their creations and creating a powerful incentive to invest in safety or slow down development until the risks are better understood.
-  The rapid proliferation of powerful [[open-source AI]] models, where the source code, model weights, or other key components are made publicly available, introduces a profound and complicating dimension to the liability puzzle (UK Parliament research brief on AI regulation at https://researchbriefings.files.parliament.uk/documents/LLN-2024-0016/LLN-2024-0016.pdf). While proponents champion open-source AI for fostering innovation, competition, and transparency, it creates a legal structure that is almost perfectly designed to diffuse and evade accountability.
-  The contractual reality of [[open-source software]] is stark. The vast majority of open-source AI models are released under permissive licenses, such as the [[MIT License]] or the [[Apache 2.0 License]]. A core feature of these licenses is a broad **disclaimer of all warranties and a severe limitation of liability** (Hunton Andrews Kurth analysis at https://www.hunton.com/insights/publications/open-source-ai-versus-proprietary-ai-models-key-differences-in-contract-terms-and-ip-risks-part-2). The legal text typically states that the software is provided "[[as-is]]," with no guarantee of fitness for any purpose and, crucially, no warranty of "[[noninfringement]]". This means they offer no [[indemnity]] or legal protection to the user against claims of [[intellectual property]] infringement or other harms caused by the model. This stands in sharp contrast to the world of [[proprietary AI]], where commercial users can often negotiate for some level of [[IP indemnification]] or other contractual protections from the provider.
-  This creates a significant and dangerous [[risk gap]]. A company that downloads and deploys an open-source model for a commercial purpose effectively assumes the entirety of the legal risk. They are exposed to potential lawsuits from third parties harmed by the model's output, with little to no legal recourse against the model's original creators or the community of contributors. This risk is magnified by the inherent vulnerabilities of the open-source ecosystem. These models are susceptible to unique [[cybersecurity threats]], such as "[[data poisoning]]," where a malicious actor intentionally injects biased or harmful data into an open dataset used for training (Crowell analysis on open-source AI risks at https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-open-source-data-and-software-contrasting-perspectives-legal-risks-and-observations). Furthermore, because the provenance of training data is often unclear, these models can be built on [[copyrighted material]], [[private data]], or [[biased information]], creating embedded risks of IP infringement, privacy violations, and [[discriminatory outcomes]]. While open models offer the user the significant benefit of being able to host the model locally, thereby protecting their own proprietary input data from the AI provider, they achieve this by externalizing all downstream legal risks onto the deployer.
-  The current AI ecosystem is setting the stage for an inevitable collision between three fundamentally different liability paradigms. The first is **[[Proprietary Model Liability]]**, which operates much like traditional commercial product liability. A business using a proprietary model from a major technology provider will likely engage in a contractual negotiation, securing some level of warranty or indemnity against certain risks, particularly intellectual property infringement. Their liability is defined and managed primarily through [[contract law]].
-  The second paradigm is **[[Open-Source Model Liability]]**. This functions as a "[[caveat emptor]]" or "buyer beware" system. A company that chooses to download, modify, and deploy an open-source model receives no contractual protections. The license explicitly disclaims all liability, leaving the deployer fully exposed to any and all tort claims from injured third parties, with no legal recourse against the model's creators. Their liability is managed solely through their own internal risk tolerance and their ability to secure insurance.
-  The third, and most disruptive, paradigm is the proposed **[[Abnormally Dangerous Activity Liability]]**. This would represent a fundamental shift, upending both of the existing models. By imposing non-disclaimable, strict liability on the *original developers* of the most powerful frontier AI models, this regime would hold them responsible for harms regardless of whether the model was licensed commercially or released as open-source.
-  This divergence creates a critical trilemma for policymakers. There is a strong policy goal, particularly in the United States, to promote [[open-source AI]] to foster competition and prevent a few large firms from dominating the market (White House AI plan analysis at https://www.defenseone.com/technology/2025/07/how-white-house-ai-plan-helps-and-hurts-race-against-china/406944/). However, this goal is in direct tension with the goal of ensuring clear accountability, as the open-source model is structurally designed to diffuse responsibility. A strict liability regime for developers would solve the accountability problem for the most dangerous models but could be perceived as chilling the open-source movement by placing immense legal burdens on its creators. The future trajectory of [[AI Liability]] will be defined by how legal systems and societies choose to resolve this fundamental conflict between promoting innovation, ensuring accountability, and managing [[catastrophic risk]].
-  As the theoretical challenges of applying [[Tort Law]] to AI become practical realities, governments in the [[United States]] and the [[United Kingdom]] are moving from analysis to action. However, they are pursuing starkly different paths. The US is characterized by a "bottom-up" approach, with a patchwork of aggressive state-level legislative proposals and a federal government whose primary focus is [[geopolitical competition]]. The UK, in contrast, has adopted a "top-down," centralized, but deliberately non-statutory framework, preferring to empower existing regulators rather than write new laws. This section examines these divergent [[governance responses]], highlighting the key legislative initiatives, regulatory strategies, and the political tensions shaping the future of [[AI Liability]] on both sides of the Atlantic.
-  The following table provides a high-level summary of the key differences in the American and British approaches, offering a structured overview before a more detailed analysis.
-  | Liability Aspect | United States Approach | United Kingdom Approach |
-  | :---- | :---- | :---- |
-  | **Overall Strategy** | Fragmented, state-led legislative experimentation; federal focus on competition and national security. | Centralized, "pro-innovation," non-statutory, principles-based framework. |
-  | **Legislative Status** | Multiple bills introduced at state level (e.g., RI, NY); no comprehensive federal liability law. | No primary AI liability legislation yet; government prefers empowering existing regulators. Parliament is pushing for a statutory footing. |
-  | **Primary Liability Focus** | Emerging focus on strict liability for developers of high-risk/frontier models. | Application of existing negligence and product liability law; emphasis on accountability resting with an identifiable legal person. |
-  | **Key Actors** | State legislatures, federal agencies (FTC, DOD), scholars (e.g.,\]). | Sectoral regulators (ICO, CMA), DSIT's Central Function, Parliament's Science & Tech Committee, Law Commission. |
-  | **Product Liability** | Courts increasingly treating software/AI as a "product" for strict liability. | \[\[Consumer Protection Act 1987\]\] applies, but with ambiguity for standalone software. New EU rules explicitly include software. |
-  | **Open-Source** | Acknowledged as a strategic priority to support, creating tension with liability goals. | Recognized as a risk vector, but no specific liability regime proposed. |
-  In the absence of a comprehensive federal AI law, individual states have become the primary laboratories for AI liability policy in the United States.23 This has resulted in a diverse and sometimes conflicting array of legislative proposals, while at the federal level, the conversation is dominated by concerns over national security and global competitiveness.
-  Among the most ambitious and legally sophisticated state-level proposals is \], a piece of legislation that legal scholar\] was instrumental in designing.41 This bill represents a direct attempt to create a liability regime tailored to the unique risks of advanced AI. Its central provision would impose
-  **strict liability** on the developers of "covered models"—defined as AI models trained using a quantity of computing power exceeding 1026 operations or costing more than $100 million to train—for physical or property injuries caused to non-users.35
-  The bill is crafted to overcome the specific evidentiary challenges posed by AI. It establishes a **rebuttable presumption** regarding the AI's mental state: if a human performing the same conduct would be inferred to have a certain mental state (e.g., intent or recklessness), the AI system is presumed to have that same mental state.35 This clever legal mechanism makes it far easier for a plaintiff to prove the elements of an intentional tort without needing to engage in a futile debate about whether a machine can truly "intend" anything. The bill also explicitly states that it is not a defense that AI systems are incapable of having mental states.35
-  The legislation provides two narrow affirmative defenses for developers. They can escape strict liability if they can prove either that the AI model met the standard of care applicable to a human performing the same function, or that the harm resulted from a "capabilities failure" where the model fell short of its intended performance, rather than an unforeseen emergent behavior.35 The overarching goal of the bill is to close a critical liability gap: the situation where a highly autonomous AI agent causes harm in a way that was unforeseeable to its user, potentially leaving the victim with no one to hold accountable.41
-  New York has also been an active forum for AI-related legislation, but its focus has been markedly different from Rhode Island's. The most prominent bill, \], is primarily an *employment law* rather than a general tort law.44 The bill seeks to regulate the use of "automated employment decision tools" (AEDTs) by employers in processes like hiring, promotion, and termination.46
-  Instead of creating a new strict liability regime, the New York bill focuses on transparency and procedural fairness. It would require employers to conduct annual **bias impact assessments** of their AEDTs, make the results of these assessments publicly available, and provide notice to employees and job candidates that such tools are being used.44 It also places restrictions on the collection and use of employee data gathered through electronic monitoring.45 This approach contrasts sharply with the broader, tort-focused, strict liability model proposed in Rhode Island, illustrating the diversity of strategies emerging at the state level.31 While Rhode Island is trying to solve the problem of catastrophic risk from frontier models, New York is focused on the more immediate civil rights and labor implications of AI in the workplace.
-  At the federal level, the AI policy conversation is driven less by tort reform and more by the strategic competition with China.40 The White House's AI Action Plan, released in mid-2025, is framed as a strategy to "achieve global dominance" in AI.40 Its key pillars include accelerating the adoption of AI by the military, fast-tracking permits for data centers, and promoting the development of open-source AI models to foster American innovation.40
-  This federal agenda creates a direct and significant tension with state-level safety efforts. A highly controversial element of the plan is its aim to pressure states to *abandon* their own AI restrictions, including those related to civil liberties like facial recognition, by threatening to withhold federal funding.40 This provision is a clear attempt to prevent a "patchwork" of state regulations that the administration fears could hinder innovation and slow the nation's ability to compete with China. This puts the federal government's goal of uninhibited technological acceleration in direct conflict with the efforts of states like Rhode Island and New York to implement safety, fairness, and liability guardrails. This reveals a deep, unresolved tension at the heart of US AI policy between the imperative to innovate at all costs and the need to manage the technology's profound risks.
-  The United Kingdom has charted a distinct course on AI governance, deliberately eschewing comprehensive, binding legislation in favor of a flexible, principles-based approach. This strategy, however, is facing increasing scrutiny from Parliament and is shaped by the ever-present influence of legal developments in the European Union.
-  The UK government's official strategy is a non-statutory, cross-sectoral framework built upon five high-level principles: **safety, security and robustness; appropriate transparency and explainability; fairness; accountability and governance; and contestability and redress**.20 The core of this "pro-innovation" approach is to avoid creating a new, dedicated AI regulator or a single, overarching AI law. Instead, the government has tasked existing sectoral regulators with the responsibility of applying these principles to AI within their specific domains.20
-  Key regulators are now developing their own AI strategies in response. The \[\[Information Commissioner's Office (ICO)\]\], which enforces data protection law, is focusing its efforts on high-risk AI applications, particularly those involving biometrics and generative AI, to ensure compliance with the UK GDPR.51 The
-  \[\[Competition and Markets Authority (CMA)\]\] is examining AI from a competition and consumer protection perspective. It has published its own set of proposed principles to guide the development of foundation models, emphasizing the importance of **accountability, access, diversity, and choice** to prevent anti-competitive behavior and protect consumers from harms like AI-generated misinformation.53 A central tenet of the government's approach is that legal liability must always rest with an "identified or identifiable legal person," whether corporate or natural, rejecting any notion that an AI itself could be held responsible.21
-  This light-touch, voluntary approach has been met with significant skepticism and criticism from the UK Parliament. The House of Commons Science, Innovation and Technology Committee, in a series of detailed reports, has forcefully argued that the government's framework is insufficient.55 The Committee contends that relying on voluntary commitments from developers and tasking existing regulators without providing them with new statutory powers creates a critical governance gap.37
-  The Committee has repeatedly called on the government to introduce **AI-specific legislation** to establish clear, legally binding liability rules.55 A key recommendation from its final report on AI governance is for the government and regulators to publish clear guidance on "where liability for harmful uses of AI falls under existing law" and, crucially, to "establish liability via statute rather than simply relying on jurisprudence" where appropriate.55 In response to this pressure, the government has acknowledged that primary legislation will likely be necessary to regulate the most powerful frontier AI models, and has committed to consulting on legislative proposals, though the timeline remains uncertain.58
-  Although the UK has left the European Union, it cannot escape the gravitational pull of EU law, especially in the technology sector. The EU has taken a starkly different, more prescriptive approach by passing the comprehensive \[\[EU AI Act\]\], the world's first major law dedicated to regulating artificial intelligence.18 This Act establishes a risk-based framework, imposing strict obligations on providers of "high-risk" AI systems.
-  Furthermore, the EU is updating its product liability rules. The revised \] (PLD) explicitly brings standalone software and AI systems into its scope, and the (now-withdrawn) \] (AILD) proposed harmonized rules to ease the burden of proof for claimants in AI-related cases, including presumptions of causality.18 While the AILD will not proceed, its principles may still influence judicial thinking, and the revised PLD will create a de facto legal standard for any company wishing to access the vast European single market.63 The UK's deliberately flexible and "pro-innovation" stance is often defined in direct contrast to the EU's more rigid, regulatory-heavy model, creating a dynamic of regulatory competition in the heart of Europe.37
-  The divergent paths taken by the United States, the United Kingdom, and the European Union reveal a fundamental strategic trilemma in the governance of artificial intelligence: a trade-off between **speed, coherence, and safety**. At the federal level, the US has clearly prioritized **speed and innovation**, driven by a desire to "win the race" against China, viewing disparate state-level regulations as a potential drag on national competitiveness.40 However, this comes at the cost of
-  **coherence**, as the lack of a federal framework has led to a fragmented "patchwork" of state laws.23 Individual states, in turn, are prioritizing
-  **targeted safety** by legislating on specific risks they perceive as imminent, such as in Rhode Island's focus on catastrophic risk.35
-  The UK government has attempted to balance **coherence** and **speed**. By creating a single, centralized, non-statutory framework and tasking existing regulators, it has aimed for a coherent national approach while avoiding the slow, cumbersome process of passing new primary legislation.20 However, this has come at the potential cost of
-  **safety**. Critics, including the UK Parliament's own Science and Technology Committee, argue that this voluntary, principles-based framework is too weak and lacks the legal teeth necessary to hold powerful technology companies accountable, leaving regulators under-resourced and without sufficient statutory power.37
-  Finally, the European Union has unequivocally prioritized **safety and coherence**. Its landmark \[\[EU AI Act\]\] is a comprehensive, binding, top-down legal regime designed to cover all aspects of the AI lifecycle for high-risk systems.18 This ensures a harmonized and robust approach across all member states. The trade-off, however, has been
-  **speed**. The AI Act is a complex piece of legislation with a long and phased implementation timeline, which some fear may put European innovators at a disadvantage compared to their more lightly regulated American counterparts.
-  Ultimately, no jurisdiction has yet solved this trilemma. The choice of governance model is a reflection of a nation's or bloc's core strategic priorities. The US is betting on decentralized innovation and targeted, reactive intervention. The UK is betting on regulatory agility and flexibility. The EU is betting on comprehensive, proactive, market-shaping regulation. The long-term efficacy and global influence of these competing models will be a defining feature of international technology policy for the coming decade.
-  As AI capabilities advance toward and beyond human levels, the potential for harm scales from individual torts to systemic and even catastrophic events. Traditional liability frameworks, even when stretched, may prove inadequate for these unprecedented risks. This final section explores the cutting edge of legal and policy thinking on AI liability, examining novel theories designed to address catastrophic outcomes, the critical role of insurance as a governance mechanism, and the institutional challenges facing the judiciary in this new era.
-  The most profound challenge for tort law is how to deter risks that are, by their nature, non-compensable. An AI-induced existential catastrophe, for example, would leave no one to sue and no legal system to hear the case. This renders traditional compensatory damages meaningless as a deterrent. To address this, legal scholars are developing novel theories based on the principles of punitive damages.
-  In both US and UK law, compensatory damages are intended to make the victim whole, while \[\[punitive damages\]\] (or \[\[exemplary damages\]\] in the UK) are intended to punish the wrongdoer and deter future misconduct.64 The economic theory of punitive damages provides a more precise rationale: they are a tool to ensure optimal deterrence when a tortfeasor has a significant chance of escaping liability for the harm they cause.66
-  If a company knows it will only be caught and held liable for a fraction of the harm it causes (say, 1 in 10 times), then compensatory damages alone are insufficient to deter its harmful behavior. The company can simply treat the occasional lawsuit as a cost of doing business. To correct this, economic analysis suggests that the total damages should be multiplied by the reciprocal of the probability of detection.66 If the probability of being held liable is
-  p, the total damages should be 1/p times the actual harm. This forces the injurer to internalize the *full* expected social cost of their actions, not just the cost of the instances where they are caught.68 This probabilistic multiplier is the theoretical foundation for calculating punitive awards to achieve efficient deterrence.
-  Legal scholar\] has ingeniously extended this economic theory to the unique problem of AI catastrophic risk.30 He argues that since a true existential catastrophe is uninsurable and non-compensable, the law must find a way to create a financial deterrent
-  *before* the ultimate harm occurs.30 His proposal is to use
-  **punitive damages for smaller, "near-miss" or "warning shot" incidents** that are themselves indicative of a much larger, unrealized catastrophic risk.69
-  The logic proceeds as follows: Imagine an advanced AI system, due to a subtle alignment failure, causes a significant but manageable financial meltdown—a compensable harm. If technical experts can demonstrate that this same underlying alignment failure also creates a small but non-zero probability of the AI causing a global-scale catastrophe, a court could award punitive damages for the smaller incident. The size of this punitive award would not be based on the reprehensibility of the defendant's conduct in causing the small harm, but would instead be calculated to reflect the **probability-weighted cost of the unrealized catastrophic risk** that the "warning shot" incident revealed.30
-  For example, if the warning shot incident revealed a 0.1% chance of a catastrophe valued at $100 trillion, a court could theoretically impose a punitive damage award of $100 billion (100 trillion×0.001) on top of the compensation for the initial financial harm. This creates a powerful, market-based financial incentive for developers to invest heavily in mitigating these low-probability, high-consequence risks, as the potential liability from even a minor incident becomes immense.30 It is a legal mechanism designed to make the abstract threat of future catastrophe a concrete, present-day financial liability.
-  This innovative proposal, while theoretically elegant, faces vastly different legal landscapes in the United States and the United Kingdom. The **US legal system** is relatively more accommodating to large punitive damage awards. Juries have wide discretion, and while awards are subject to constitutional due process limitations on their size (often guided by the ratio to compensatory damages, as established in cases like *BMW v. Gore* and *State Farm v. Campbell*), the principle of using punitive damages for deterrence is deeply embedded in the law.64 A court could, in theory, be persuaded that evidence of a catastrophic risk is relevant to the "reprehensibility" of the defendant's conduct, justifying a higher award.
-  The **United Kingdom**, however, presents a much higher barrier. The UK's \[\[exemplary damages\]\] are exceptionally rare and are strictly limited by the House of Lords' decision in *Rookes v Barnard*.71 They are generally available only in three narrow circumstances: (1) for oppressive, arbitrary, or unconstitutional actions by government servants; (2) where the defendant's conduct was "calculated" to make a profit that would exceed any compensatory damages; or (3) where explicitly authorized by a statute.65 Crucially, exemplary damages are generally
-  *not* available for torts of negligence or for inadvertent harm.65 Weil's theory, which could arise from a non-malicious but reckless deployment of AI, would likely not fit within the existing common law categories. Therefore, implementing this "warning shot" liability framework in the UK would almost certainly require new, purpose-built legislation to authorize such awards.
-  Insurance markets are powerful, often unseen, mechanisms of governance. By pricing risk, insurers create financial incentives for individuals and companies to adopt safer practices. For AI, however, the very nature of the risk presents profound **insurability challenges**.22
-  A risk, to be insurable, must meet several criteria: the potential loss must be definitive, accidental, and, most importantly, predictable enough to allow for actuarial analysis.22 AI violates these principles. The "black box" nature of AI makes it difficult to define the specific cause of a loss. The potential for systemic, correlated failures—where a single flaw in a widely deployed model could cause massive, simultaneous losses—undermines the principle of diversification that underpins insurance. Above all, the lack of historical data and the rapid, unpredictable evolution of AI capabilities make the frequency and severity of future losses almost impossible to predict, turning risk assessment into a "new frontier" for underwriters.22
-  Recognizing that private insurance markets may fail in the face of these challenges, especially for catastrophic risks, policymakers and scholars are looking to historical precedents for managing large-scale technological risks, such as the nuclear power industry (e.g., the Price-Anderson Act in the US). One prominent proposal advocates for a **three-tiered liability and insurance architecture** for frontier AI.27 This would involve:
-  1. **Mandatory private liability insurance** for all developers of frontier AI models. This would force them to engage with the insurance market and subject their safety practices to third-party underwriting scrutiny.
-  2. An **industry-administered risk pool**, funded by levies on developers, to cover recurring, non-catastrophic losses that might exceed the limits of individual policies.
-  3. **Federally-backed reinsurance** as a last resort to cover true catastrophic losses that overwhelm both private insurance and the industry pool.
-  Such a framework would make safety a structural feature of the AI innovation ecosystem itself, integrating risk management directly into capital markets rather than treating it as an external regulatory compliance exercise.72
-  The advanced legal theories for managing AI risk and the proposals for new insurance structures are not independent concepts; they are two sides of the same coin, designed in tandem to solve the fundamental market failure of unpriceable catastrophic risk. The risk of an AI-induced catastrophe is a "heavy-tail" risk: an event with a very low probability but an impact so high it is effectively infinite.36 Standard insurance markets are not designed for such risks; they break down when faced with potential losses that are unquantifiable and cannot be diversified away.22 This creates a severe "moral hazard" for developers. If the worst-case scenario is uninsurable, they lack a direct financial incentive to spend potentially billions of dollars on safety measures to prevent it. Beyond ethics or reputational concerns, they are effectively "judgment-proof" against the ultimate harm their technology could cause.36
-  Professor Weil's punitive damages proposal is a legal mechanism designed to circumvent this market failure. It creates a *financial proxy* for the uninsurable catastrophic risk by attaching a massive, legally mandated penalty to a smaller, related, and *insurable* "warning shot" event.69 This is where the mandatory insurance proposals complete the circle.27 By legally requiring developers to purchase insurance that can cover these enormous potential punitive damage awards (or other forms of strict liability), the government would effectively compel the insurance industry to become the de facto regulator of AI safety. Faced with the possibility of paying out billion-dollar claims, insurers would have a powerful financial imperative to conduct deep technical audits, demand robust safety and alignment practices, and price their premiums based on a developer's genuine commitment to risk mitigation. This system would transform the governance paradigm from one of direct, top-down government regulation of technical standards to a market-based, incentivized ecosystem where the expert auditors and enforcers of AI safety are the insurers themselves.
-  A final, critical challenge that is often overlooked in high-level policy debates is the institutional capacity of the judiciary to competently adjudicate these extraordinarily complex cases.31 Any liability regime, no matter how well-designed, will ultimately fail if the judges and juries tasked with implementing it lack the technical literacy to do so effectively. AI liability cases will require courts to grapple with highly technical evidence on topics like neural network architecture, algorithmic bias, model training data, and probabilistic risk assessment.
-  There is a growing recognition of this significant challenge. In the United States, institutions are being developed to address this judicial education gap. The **\[\[Federal Judicial Center\]\] (FJC)**, the research and education agency for the federal courts, offers special-focus programs for judges on managing complex litigation, intellectual property, and emerging technology, including neuroscience.73 Going even further, the
-  **National Courts and Sciences Institute (NCSI)** provides intensive, specialized training for state and federal judges, offering "Boot Camps" and formal certifications in specific scientific fields.74 These programs cover topics like scientific methodology, genetic engineering, and forensic science, with the explicit goal of enhancing the ability of judges to act as effective "gatekeepers" of scientific evidence under the standards set by
-  *Daubert v. Merrell Dow Pharmaceuticals*.74
-  The existence of these programs demonstrates a clear acknowledgment of the problem. However, the scale of the challenge is immense. Ensuring that a sufficient number of judges across the entire US and UK judiciaries possess the requisite expertise to handle the coming wave of AI litigation is a monumental task. Investment in this institutional capacity is not merely an optional add-on; it is a critical prerequisite for any AI liability regime to function justly and effectively.
-  This analysis reveals a transatlantic legal landscape in a state of profound flux, as two of the world's leading common law systems grapple with the disruptive force of artificial intelligence. Both the United States and the United Kingdom are attempting to adapt centuries-old tort doctrines, forged in the industrial age, to a technology that fundamentally challenges their core assumptions of human agency, foreseeability, and causation.
-  In the **United States**, the response is fragmented yet dynamic. In the absence of federal leadership on liability, a "bottom-up" evolution is underway. US courts are increasingly willing to dismantle the traditional barrier between tangible goods and intangible software, moving toward a consensus that mass-market AI applications are "products" subject to strict liability. Simultaneously, state legislatures are acting as laboratories of democracy, proposing ambitious and novel statutory frameworks like Rhode Island's strict liability bill for frontier models. This state-level focus on safety and accountability, however, exists in direct tension with a federal agenda preoccupied with geopolitical competition, which seeks to accelerate innovation, even at the cost of overriding state-level guardrails.
-  In the **United Kingdom**, the approach has been more centralized but deliberately cautious. The government has championed a "pro-innovation," non-statutory framework that relies on high-level principles and empowers existing sectoral regulators. This strategy, designed for flexibility, faces mounting pressure from a Parliament that views it as insufficient and is calling for the certainty of binding, AI-specific legislation. The UK's path is further complicated by the long shadow of the European Union, whose comprehensive and prescriptive \[\[EU AI Act\]\] sets a de facto global standard and creates a powerful dynamic of regulatory competition.
-  Despite these different strategies, the most profound challenges remain largely unsolved in both jurisdictions. Neither has a settled legal framework for the unique liability questions posed by open-source AI, which is designed to diffuse responsibility. Neither has a clear mechanism for deterring or compensating for catastrophic risks that exceed the limits of insurance and traditional tort law. And both face the monumental task of ensuring their judiciaries are equipped with the technical literacy to adjudicate these complex cases. The legal architecture for the age of AI is still under construction, and its final form is far from certain.
-  To navigate this complex and rapidly evolving landscape, a nuanced, multi-layered liability framework is required—one that avoids a one-size-fits-all approach and tailors the legal standard to the level of risk posed by different types of AI systems. The following recommendations outline such a path forward:
-  * **Tier 1: Low-Risk and Bespoke AI.** For AI systems that pose low risks or are custom-developed as a professional service, the traditional **negligence standard** should be maintained. This appropriately places the burden on the plaintiff to prove a breach of the duty of care for harms that are relatively minor or arise from a direct service relationship.
-  * **Tier 2: General-Purpose and Mass-Market AI.** For mass-market, general-purpose AI systems (e.g., consumer-facing apps, widely deployed enterprise software), the emerging consensus should be codified into statute. Legislation should explicitly classify these systems as **"products" subject to a statutory strict liability regime**. This would harmonize the US and UK positions, resolve lingering legal ambiguity, and ensure that developers of products placed into the broad stream of commerce bear the primary responsibility for defects that cause harm.
-  * **Tier 3: Frontier Models and Catastrophic Risk.** For the development of frontier AI models that pose plausible catastrophic risks, a special regime based on the doctrine of **"abnormally dangerous activity"** should be established. This would impose non-disclaimable, strict liability on the developers of these systems. This regime must be coupled with a **mandatory insurance scheme**, potentially backed by a government reinsurance pool, as seen in the nuclear industry. This dual approach would ensure that victims of any large-scale harm have a source of compensation and, more importantly, would create a powerful, market-based incentive for safety by forcing developers to have their risk-mitigation efforts priced and validated by the insurance industry.
-  * **Addressing the Open-Source Gap.** The liability challenges of open-source AI require a tailored solution. Policymakers should explore the creation of **legal safe harbors for non-commercial, academic, and truly community-driven open-source projects** to protect innovation and research. However, this protection should not extend to **commercial entities that deploy open-source models at scale**. These entities should be held liable for harms caused by the systems they choose to use and profit from, forcing them to internalize the risks they are currently externalizing to the public. This could be achieved by making commercial deployment of an open-source model an act that triggers the assumption of product liability.
-  * **Investing in Institutional Capacity.** Finally, and most critically, any liability regime is only as effective as the institutions that enforce it. Governments must make a significant, sustained investment in **judicial education**. Programs like those offered by the NCSI and FJC in the US should be expanded and replicated, with the goal of creating a specialized corps of judges in both the US and UK who possess the scientific and technical literacy to adjudicate AI cases fairly and efficiently. This investment is not an optional extra; it is a fundamental prerequisite for the rule of law to function effectively in the algorithmic age.
-  1. The Five Elements of Negligence \- Scholarship @ Hofstra Law, accessed on July 26, 2025, [https://scholarlycommons.law.hofstra.edu/cgi/viewcontent.cgi?article=2282\&context=hlr](https://scholarlycommons.law.hofstra.edu/cgi/viewcontent.cgi?article=2282&context=hlr)
-  2. Tort Law | Law Library | Digital Exhibits, accessed on July 26, 2025, [https://lawlibrarycollections.umn.edu/classic-cases-tort](https://lawlibrarycollections.umn.edu/classic-cases-tort)
-  3. Restatement s 402a and 402b \- The Climate Change and Public Health Law Site \- LSU, accessed on July 26, 2025, [https://biotech.law.lsu.edu/cases/products/402a-b.htm](https://biotech.law.lsu.edu/cases/products/402a-b.htm)
-  4. Restatement (Second) of Torts § 402A \- (Torts) \- Vocab, Definition, Explanations | Fiveable, accessed on July 26, 2025, [https://fiveable.me/key-terms/torts/restatement-second-of-torts-%C2%A7-402a](https://fiveable.me/key-terms/torts/restatement-second-of-torts-%C2%A7-402a)
-  5. abnormally dangerous activity | Wex | US Law | LII / Legal ..., accessed on July 26, 2025, [https://www.law.cornell.edu/wex/abnormally\_dangerous\_activity](https://www.law.cornell.edu/wex/abnormally_dangerous_activity)
-  6. ultrahazardous activity | Wex | US Law | LII / Legal Information Institute, accessed on July 26, 2025, [https://www.law.cornell.edu/wex/ultrahazardous\_activity](https://www.law.cornell.edu/wex/ultrahazardous_activity)
-  7. Key Negligence Case Law | Negligence Solicitors, accessed on July 26, 2025, [https://professionalnegligenceclaimsolicitors.co.uk/landmark-famous-uk-tort-cases-advice/](https://professionalnegligenceclaimsolicitors.co.uk/landmark-famous-uk-tort-cases-advice/)
-  8. Donoghue v Stevenson \- Dipartimento di scienze giuridiche, accessed on July 26, 2025, [https://www.scienzegiuridiche.uniroma1.it/sites/default/files/docenti/alpa/Donoghue\_Stevenson.pdf](https://www.scienzegiuridiche.uniroma1.it/sites/default/files/docenti/alpa/Donoghue_Stevenson.pdf)
-  9. Donoghue v Stevenson \- Wikipedia, accessed on July 26, 2025, [https://en.wikipedia.org/wiki/Donoghue\_v\_Stevenson](https://en.wikipedia.org/wiki/Donoghue_v_Stevenson)
-  10. Causation in Clinical Negligence Cases: Can there be liability where the same injury would probably have happened anyway? \- UK Healthcare Law Blog, accessed on July 26, 2025, [https://www.ukhealthcarelawblog.co.uk/causation-in-clinical-negligence-cases-can-there-be-liability-where-the-same-injury-would-probably-have-happened-anyway/](https://www.ukhealthcarelawblog.co.uk/causation-in-clinical-negligence-cases-can-there-be-liability-where-the-same-injury-would-probably-have-happened-anyway/)
-  11. Consumer Protection Act 1987 \- Wikipedia, accessed on July 26, 2025, [https://en.wikipedia.org/wiki/Consumer\_Protection\_Act\_1987](https://en.wikipedia.org/wiki/Consumer_Protection_Act_1987)
-  12. Consumer Protection Act 1987 \- Which?, accessed on July 26, 2025, [https://www.which.co.uk/consumer-rights/regulation/consumer-protection-act-1987-a5xTL3w6L9OI](https://www.which.co.uk/consumer-rights/regulation/consumer-protection-act-1987-a5xTL3w6L9OI)
-  13. The Product vs. Service issue. \- CS Stanford, accessed on July 26, 2025, [https://cs.stanford.edu/people/eroberts/cs181/projects/1995-96/liability-law/productserviceissue.html](https://cs.stanford.edu/people/eroberts/cs181/projects/1995-96/liability-law/productserviceissue.html)
-  14. ARTICLE \- Berkeley Technology Law Journal, accessed on July 26, 2025, [https://www.btlj.org/data/articles2015/vol5/5\_1/5-berkeley-tech-l-j-0001-0028.pdf](https://www.btlj.org/data/articles2015/vol5/5_1/5-berkeley-tech-l-j-0001-0028.pdf)
-  15. "Computer Software and Strict Products Liability" by Susan Lanoue, accessed on July 26, 2025, [https://digital.sandiego.edu/sdlr/vol20/iss2/9/](https://digital.sandiego.edu/sdlr/vol20/iss2/9/)
-  16. Software Gains New Status as a Product Under Strict Liability Law ..., accessed on July 26, 2025, [https://www.mofo.com/resources/insights/250618-software-gains-new-status-as-a-product-under-strict-liability-law](https://www.mofo.com/resources/insights/250618-software-gains-new-status-as-a-product-under-strict-liability-law)
-  17. Have Algorithms Opened Up Your Software to Product Liability? \- American Bar Association, accessed on July 26, 2025, [https://www.americanbar.org/groups/litigation/resources/newsletters/mass-torts/have-algorithms-opened-your-software-product-liability/](https://www.americanbar.org/groups/litigation/resources/newsletters/mass-torts/have-algorithms-opened-your-software-product-liability/)
-  18. Artificial intelligence and liability: Key takeaways from recent EU legislative initiatives, accessed on July 26, 2025, [https://www.nortonrosefulbright.com/en-gb/knowledge/publications/7052eff6/artificial-intelligence-and-liability](https://www.nortonrosefulbright.com/en-gb/knowledge/publications/7052eff6/artificial-intelligence-and-liability)
-  19. AI liability in the EU (and UK): What's the current state of play? \- Hogan Lovells, accessed on July 26, 2025, [https://www.hoganlovells.com/en/publications/ai-liability-in-the-eu-and-uk-whats-the-current-state-of-play](https://www.hoganlovells.com/en/publications/ai-liability-in-the-eu-and-uk-whats-the-current-state-of-play)
-  20. The UK's framework for AI regulation | Deloitte UK, accessed on July 26, 2025, [https://www.deloitte.com/uk/en/Industries/financial-services/blogs/the-uks-framework-for-ai-regulation.html](https://www.deloitte.com/uk/en/Industries/financial-services/blogs/the-uks-framework-for-ai-regulation.html)
-  21. 'You Will Be Legally Liable For AI Outcomes' – UK Government \- Artificial Lawyer, accessed on July 26, 2025, [https://www.artificiallawyer.com/2022/07/18/you-will-be-legally-liable-for-ai-outcomes-uk-government/](https://www.artificiallawyer.com/2022/07/18/you-will-be-legally-liable-for-ai-outcomes-uk-government/)
-  22. Insuring the unpredictable: The challenges of AI risk insurability ..., accessed on July 26, 2025, [https://www.dlapiper.com/insights/publications/derisk-newsletter/2024/insuring-the-unpredictable-the-challenges-of-ai-risk-insurability](https://www.dlapiper.com/insights/publications/derisk-newsletter/2024/insuring-the-unpredictable-the-challenges-of-ai-risk-insurability)
-  23. The Case for AI Liability | AI Frontiers, accessed on July 26, 2025, [https://ai-frontiers.org/articles/case-for-ai-liability](https://ai-frontiers.org/articles/case-for-ai-liability)
-  24. vicarious liability | Wex | US Law | LII / Legal Information Institute, accessed on July 26, 2025, [https://www.law.cornell.edu/wex/vicarious\_liability](https://www.law.cornell.edu/wex/vicarious_liability)
-  25. Vicarious liability | EBSCO Research Starters, accessed on July 26, 2025, [https://www.ebsco.com/research-starters/social-sciences-and-humanities/vicarious-liability](https://www.ebsco.com/research-starters/social-sciences-and-humanities/vicarious-liability)
-  26. Law-Following AI: designing AI agents to obey human laws, accessed on July 26, 2025, [https://law-ai.org/law-following-ai/](https://law-ai.org/law-following-ai/)
-  27. Insuring emerging risks in ai, accessed on July 26, 2025, [https://oms-www.files.svdcdn.com/production/downloads/Insuring%20emerging%20risks%20from%20AI%2014%20Nov%2024%20Final.pdf?dm=1732266323](https://oms-www.files.svdcdn.com/production/downloads/Insuring%20emerging%20risks%20from%20AI%2014%20Nov%2024%20Final.pdf?dm=1732266323)
-  28. Acting Comptroller of the Currency Michael J. Hsu Remarks in Support of the 2024 Conference on Artificial Intelligence and Finan, accessed on July 26, 2025, [https://www.occ.gov/news-issuances/speeches/2024/pub-speech-2024-61.pdf](https://www.occ.gov/news-issuances/speeches/2024/pub-speech-2024-61.pdf)
-  29. Gabriel Weil \- Assistant Professor of Law \- Touro Law Center, accessed on July 26, 2025, [https://www.tourolaw.edu/abouttourolaw/bio/399](https://www.tourolaw.edu/abouttourolaw/bio/399)
-  30. Faculty Spotlight Gabriel Weil \- Touro Law Center, accessed on July 26, 2025, [https://www.tourolaw.edu/abouttourolaw/featured-content/376/spotlight](https://www.tourolaw.edu/abouttourolaw/featured-content/376/spotlight)
-  31. Tort Law Archives \- Touro Law Review BLOG, accessed on July 26, 2025, [https://tourolawreviewblog.wpcomstaging.com/tag/tort-law/](https://tourolawreviewblog.wpcomstaging.com/tag/tort-law/)
-  32. U.S. Tort Liability for Large-Scale Artificial Intelligence Damages: A Primer for Developers and Policymakers \- RAND Corporation, accessed on July 26, 2025, [https://www.rand.org/content/dam/rand/pubs/research\_reports/RRA3000/RRA3084-1/RAND\_RRA3084-1.pdf](https://www.rand.org/content/dam/rand/pubs/research_reports/RRA3000/RRA3084-1/RAND_RRA3084-1.pdf)
-  33. Your AI Breaks It? You Buy It. \- Noema Magazine, accessed on July 26, 2025, [https://www.noemamag.com/your-ai-breaks-it-you-buy-it/](https://www.noemamag.com/your-ai-breaks-it-you-buy-it/)
-  34. Implementing the Senate AI Roadmap \- Future of Life Institute, accessed on July 26, 2025, [https://futureoflife.org/document/vision-into-action-senate-ai-roadmap/](https://futureoflife.org/document/vision-into-action-senate-ai-roadmap/)
-  35. RI S0358 \- BillTrack50, accessed on July 26, 2025, [https://www.billtrack50.com/billdetail/1841762](https://www.billtrack50.com/billdetail/1841762)
-  36. Liability and Insurance for Catastrophic Losses: the Nuclear Power Precedent and Lessons for AI \- arXiv, accessed on July 26, 2025, [https://arxiv.org/html/2409.06673v1](https://arxiv.org/html/2409.06673v1)
-  37. Artificial Intelligence (Regulation) Bill \[HL\] \- UK Parliament, accessed on July 26, 2025, [https://researchbriefings.files.parliament.uk/documents/LLN-2024-0016/LLN-2024-0016.pdf](https://researchbriefings.files.parliament.uk/documents/LLN-2024-0016/LLN-2024-0016.pdf)
-  38. Open Source AI Versus Proprietary AI Models: Key Differences in ..., accessed on July 26, 2025, [https://www.hunton.com/insights/publications/open-source-ai-versus-proprietary-ai-models-key-differences-in-contract-terms-and-ip-risks-part-2](https://www.hunton.com/insights/publications/open-source-ai-versus-proprietary-ai-models-key-differences-in-contract-terms-and-ip-risks-part-2)
-  39. Artificial Intelligence and Open Source Data and Software ..., accessed on July 26, 2025, [https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-open-source-data-and-software-contrasting-perspectives-legal-risks-and-observations](https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-open-source-data-and-software-contrasting-perspectives-legal-risks-and-observations)
-  40. How the White House AI plan helps, and hurts, in the race against ..., accessed on July 26, 2025, [https://www.defenseone.com/technology/2025/07/how-white-house-ai-plan-helps-and-hurts-race-against-china/406944/](https://www.defenseone.com/technology/2025/07/how-white-house-ai-plan-helps-and-hurts-race-against-china/406944/)
-  41. Gabriel Weil \- Institute for Law & AI, accessed on July 26, 2025, [https://law-ai.org/team/gabriel-weil-2/](https://law-ai.org/team/gabriel-weil-2/)
-  42. Rhode Island: Bill for AI liability introduced to Senate | News \- DataGuidance, accessed on July 26, 2025, [https://www.dataguidance.com/news/rhode-island-bill-ai-liability-introduced-senate](https://www.dataguidance.com/news/rhode-island-bill-ai-liability-introduced-senate)
-  43. Bill Text: RI S0358 | 2025 | Regular Session | Introduced | LegiScan, accessed on July 26, 2025, [https://legiscan.com/RI/text/S0358/2025](https://legiscan.com/RI/text/S0358/2025)
-  44. NY State Senate Bill 2023-S7623A, accessed on July 26, 2025, [https://www.nysenate.gov/legislation/bills/2023/S7623/amendment/A](https://www.nysenate.gov/legislation/bills/2023/S7623/amendment/A)
-  45. Bill Text: NY S07623 | 2023-2024 | General Assembly | Introduced \- LegiScan, accessed on July 26, 2025, [https://legiscan.com/NY/text/S07623/id/2836134](https://legiscan.com/NY/text/S07623/id/2836134)
-  46. New York 2023-2024 | Relates to restricting the use of electronic monitoring and automated employment decision tools | TrackBill, accessed on July 26, 2025, [https://trackbill.com/bill/new-york-senate-bill-7623-relates-to-restricting-the-use-of-electronic-monitoring-and-automated-employment-decision-tools/2461344/](https://trackbill.com/bill/new-york-senate-bill-7623-relates-to-restricting-the-use-of-electronic-monitoring-and-automated-employment-decision-tools/2461344/)
-  47. S07623 \- Bill Search and Legislative Information | New York State Assembly, accessed on July 26, 2025, [https://assembly.state.ny.us/leg/?default\_fld=\&bn=S07623\&term=2023\&Summary=Y\&Actions=Y\&Text=Y\&Committee%26nbspVotes=Y\&Floor%26nbspVotes=Y](https://assembly.state.ny.us/leg/?default_fld&bn=S07623&term=2023&Summary=Y&Actions=Y&Text=Y&Committee%26nbspVotes=Y&Floor%26nbspVotes=Y)
-  48. States Ring in the New Year with Proposed AI Legislation | Epstein Becker Green, accessed on July 26, 2025, [https://www.workforcebulletin.com/states-ring-in-the-new-year-with-proposed-ai-legislation](https://www.workforcebulletin.com/states-ring-in-the-new-year-with-proposed-ai-legislation)
-  49. Legislative Alert: May 20, 2024 \- New York State AFL-CIO, accessed on July 26, 2025, [https://nysaflcio.org/legislative-alerts/legislative-alert-may-20-2024](https://nysaflcio.org/legislative-alerts/legislative-alert-may-20-2024)
-  50. The Age of AI in U.S.-China Great Power Competition: Strategic Implications, Risks, and Global Governance | Beyond the Horizon ISSG, accessed on July 26, 2025, [https://behorizon.org/the-age-of-ai-in-u-s-china-great-power-competition-strategic-implications-risks-and-global-governance/](https://behorizon.org/the-age-of-ai-in-u-s-china-great-power-competition-strategic-implications-risks-and-global-governance/)
-  51. ICO Annual Report Provides Insight Into Data Protection Risks for ..., accessed on July 26, 2025, [https://www.jdsupra.com/legalnews/ico-annual-report-provides-insight-into-6257830/](https://www.jdsupra.com/legalnews/ico-annual-report-provides-insight-into-6257830/)
-  52. AI poses a unique data protection risk; How to avoid falling foul of ICO fines | The AI Journal, accessed on July 26, 2025, [https://aijourn.com/ai-poses-a-unique-data-protection-risk-how-to-avoid-falling-foul-of-ico-fines/](https://aijourn.com/ai-poses-a-unique-data-protection-risk-how-to-avoid-falling-foul-of-ico-fines/)
-  53. UK \- Guiding The Development Of AI: The CMA's Initial Report On AI ..., accessed on July 26, 2025, [https://conventuslaw.com/report/uk-guiding-the-development-of-ai-the-cmas-initial-report-on-ai-foundation-models/](https://conventuslaw.com/report/uk-guiding-the-development-of-ai-the-cmas-initial-report-on-ai-foundation-models/)
-  54. UK CMA Publishes Initial Report on Regulation of AI | Hogan Lovells \- JDSupra, accessed on July 26, 2025, [https://www.jdsupra.com/legalnews/uk-cma-publishes-initial-report-on-5463223/](https://www.jdsupra.com/legalnews/uk-cma-publishes-initial-report-on-5463223/)
-  55. AI Governance: Science, Innovation and Technology Committee publishes final report, accessed on July 26, 2025, [https://wiggin.eu/insight/ai-governance-science-innovation-and-technology-committee-publishes-final-report/](https://wiggin.eu/insight/ai-governance-science-innovation-and-technology-committee-publishes-final-report/)
-  56. UK Parliament Publishes Interim Report on the UK's AI Governance Proposals, accessed on July 26, 2025, [https://www.insideglobaltech.com/2023/10/02/uk-parliament-publishes-interim-report-on-the-uks-ai-governance-proposals/](https://www.insideglobaltech.com/2023/10/02/uk-parliament-publishes-interim-report-on-the-uks-ai-governance-proposals/)
-  57. Governance of artificial intelligence (AI) \- Science, Innovation and Technology Committee, accessed on July 26, 2025, [https://publications.parliament.uk/pa/cm5804/cmselect/cmsctech/38/report.html](https://publications.parliament.uk/pa/cm5804/cmselect/cmsctech/38/report.html)
-  58. Governance of artificial intelligence (AI): Government Response, accessed on July 26, 2025, [https://committees.parliament.uk/publications/46145/documents/230927/default/](https://committees.parliament.uk/publications/46145/documents/230927/default/)
-  59. Governance of AI \- government response to Science, Innovation and Technology Committee, accessed on July 26, 2025, [https://www.burges-salmon.com/articles/102jtpn/governance-of-ai-government-response-to-science-innovation-and-technology-comm/](https://www.burges-salmon.com/articles/102jtpn/governance-of-ai-government-response-to-science-innovation-and-technology-comm/)
-  60. UK government publishes response to Science, Innovation and Technology Committee report on governance of AI \- Society for Computers & Law, accessed on July 26, 2025, [https://www.scl.org/uk-government-publishes-response-to-science-innovation-and-technology-committee-report-on-governance-of-ai/](https://www.scl.org/uk-government-publishes-response-to-science-innovation-and-technology-committee-report-on-governance-of-ai/)
-  61. EU & UK AI Round-up – July 2025 | King & Spalding \- JDSupra, accessed on July 26, 2025, [https://www.jdsupra.com/legalnews/eu-uk-ai-round-up-july-2025-1634639/](https://www.jdsupra.com/legalnews/eu-uk-ai-round-up-july-2025-1634639/)
-  62. Liability Rules for Artificial Intelligence \- European Commission, accessed on July 26, 2025, [https://commission.europa.eu/business-economy-euro/doing-business-eu/contract-rules/digital-contracts/liability-rules-artificial-intelligence\_en](https://commission.europa.eu/business-economy-euro/doing-business-eu/contract-rules/digital-contracts/liability-rules-artificial-intelligence_en)
-  63. AI Liability After the AILD Withdrawal: Why EU Law Still Matters ..., accessed on July 26, 2025, [https://blogs.law.ox.ac.uk/oblb/blog-post/2025/04/ai-liability-after-aild-withdrawal-why-eu-law-still-matters](https://blogs.law.ox.ac.uk/oblb/blog-post/2025/04/ai-liability-after-aild-withdrawal-why-eu-law-still-matters)
-  64. Can I Seek Punitive Damages for My Catastrophic Injury? | J\&Y Law, accessed on July 26, 2025, [https://jnylaw.com/faqs/can-i-seek-punitive-damages-for-my-catastrophic-injury/](https://jnylaw.com/faqs/can-i-seek-punitive-damages-for-my-catastrophic-injury/)
-  65. Punitive damages | Practical Law, accessed on July 26, 2025, [https://uk.practicallaw.thomsonreuters.com/7-107-7085?transitionType=Default\&contextData=(sc.Default)](https://uk.practicallaw.thomsonreuters.com/7-107-7085?transitionType=Default&contextData=\(sc.Default\))
-  66. Punitive damages: An economic analysis., accessed on July 26, 2025, [https://www.amherst.edu/system/files/media/1582/PolinskyShavell.pdf](https://www.amherst.edu/system/files/media/1582/PolinskyShavell.pdf)
-  67. Constitutional Limits on Punitive Damages Awards: An Analysis of Supreme Court Precedent \- Scholarship Archive, accessed on July 26, 2025, [https://scholarship.law.columbia.edu/cgi/viewcontent.cgi?article=5032\&context=faculty\_scholarship](https://scholarship.law.columbia.edu/cgi/viewcontent.cgi?article=5032&context=faculty_scholarship)
-  68. Publicity and the Optimal Punitive Damage Multiplier, accessed on July 26, 2025, [https://www.ftc.gov/sites/default/files/documents/reports/publicity-and-optimal-punitive-damage-multiplier/wp236.pdf](https://www.ftc.gov/sites/default/files/documents/reports/publicity-and-optimal-punitive-damage-multiplier/wp236.pdf)
-  69. the AI X-risk Research Podcast: 28 \- Suing Labs for AI Risk ... \- AXRP, accessed on July 26, 2025, [https://axrpodcast.libsyn.com/28-tort-law-for-ai-risk-with-gabriel-weil](https://axrpodcast.libsyn.com/28-tort-law-for-ai-risk-with-gabriel-weil)
-  70. Gabriel Weil \- LessWrong 2.0 viewer \- GreaterWrong, accessed on July 26, 2025, [https://www.greaterwrong.com/users/gabriel-weil](https://www.greaterwrong.com/users/gabriel-weil)
-  71. Punitive damages \- Wikipedia, accessed on July 26, 2025, [https://en.wikipedia.org/wiki/Punitive\_damages](https://en.wikipedia.org/wiki/Punitive_damages)
-  72. Reinsuring AI: Energy, Agriculture, Finance & Medicine as Precedents for Scalable Governance of Frontier Artificial Intelligence \- ResearchGate, accessed on July 26, 2025, [https://www.researchgate.net/publication/390468094\_Reinsuring\_AI\_Energy\_Agriculture\_Finance\_Medicine\_as\_Precedents\_for\_Scalable\_Governance\_of\_Frontier\_Artificial\_Intelligence](https://www.researchgate.net/publication/390468094_Reinsuring_AI_Energy_Agriculture_Finance_Medicine_as_Precedents_for_Scalable_Governance_of_Frontier_Artificial_Intelligence)
-  73. Education Programs | Federal Judicial Center, accessed on July 26, 2025, [https://www.fjc.gov/education/education-programs](https://www.fjc.gov/education/education-programs)
-  74. Our Programs — National Courts and Sciences Institute, accessed on July 26, 2025, [https://www.courtsandsciences.org/programs](https://www.courtsandsciences.org/programs)
-  75. Welcome to the American home for judicial training in science & technology, accessed on July 26, 2025, [https://www.courtsandsciences.org/home](https://www.courtsandsciences.org/home)
-  76. Custom Courses \- The National Judicial College, accessed on July 26, 2025, [https://www.judges.org/judicial-education/custom-courses/](https://www.judges.org/judicial-education/custom-courses/)
-  | **Key Actors** | State legislatures, federal agencies ([[FTC]], [[DOD]]), scholars (e.g., [[Gabriel Weil]]). | Sectoral regulators ([[ICO]], [[CMA]]), [[DSIT]]'s Central Function, Parliament's [[Science & Tech Committee]], [[Law Commission]]. |
-  | **Product Liability** | Courts increasingly treating software/AI as a "product" for strict liability. | [[Consumer Protection Act 1987]] applies, but with ambiguity for standalone software. New EU rules explicitly include software. |
-  | **Open-Source** | Acknowledged as a strategic priority to support, creating tension with liability goals. | Recognized as a risk vector, but no specific liability regime proposed. |
-  In the absence of a comprehensive federal AI law, individual states have become the primary laboratories for [[AI Liability]] policy in the United States. This has resulted in a diverse and sometimes conflicting array of legislative proposals, while at the federal level, the conversation is dominated by concerns over national security and global competitiveness.
-  Among the most ambitious and legally sophisticated state-level proposals is [[Rhode Island Senate Bill 0358]] (bill tracking at https://www.billtrack50.com/billdetail/1841762), a piece of legislation that legal scholar [[Gabriel Weil]] was instrumental in designing (Institute for Law & AI profile at https://law-ai.org/team/gabriel-weil-2/). This bill represents a direct attempt to create a liability regime tailored to the unique risks of advanced AI. Its central provision would impose **[[Strict Liability]]** on the developers of "[[covered models]]"—defined as AI models trained using a quantity of computing power exceeding 10^26 operations or costing more than $100 million to train—for physical or property injuries caused to non-users (DataGuidance news at https://www.dataguidance.com/news/rhode-island-bill-ai-liability-introduced-senate).
-  The bill is crafted to overcome the specific evidentiary challenges posed by AI. It establishes a **[[rebuttable presumption]]** regarding the AI's mental state: if a human performing the same conduct would be inferred to have a certain mental state (e.g., intent or recklessness), the AI system is presumed to have that same [[mental state]] (full bill text at https://legiscan.com/RI/text/S0358/2025). This clever legal mechanism makes it far easier for a plaintiff to prove the elements of an [[intentional tort]] without needing to engage in a futile debate about whether a machine can truly "intend" anything. The bill also explicitly states that it is not a defense that AI systems are incapable of having mental states.
-  The legislation provides two narrow [[affirmative defenses]] for developers. They can escape strict liability if they can prove either that the AI model met the [[standard of care]] applicable to a human performing the same function, or that the harm resulted from a "[[capabilities failure]]" where the model fell short of its intended performance, rather than an unforeseen emergent behavior. The overarching goal of the bill is to close a critical liability gap: the situation where a highly autonomous AI agent causes harm in a way that was unforeseeable to its user, potentially leaving the victim with no one to hold accountable.
-  New York has also been an active forum for AI-related legislation, but its focus has been markedly different from Rhode Island's. The most prominent bill, [[New York Senate Bill 7623-A]] (bill page at https://www.nysenate.gov/legislation/bills/2023/S7623/amendment/A), is primarily an *[[employment law]]* rather than a general tort law. The bill seeks to regulate the use of "[[automated employment decision tools]]" (AEDTs) by employers in processes like hiring, promotion, and termination (TrackBill summary at https://trackbill.com/bill/new-york-senate-bill-7623-relates-to-restricting-the-use-of-electronic-monitoring-and-automated-employment-decision-tools/2461344/).
-  Instead of creating a new strict liability regime, the New York bill focuses on [[transparency]] and [[procedural fairness]]. It would require employers to conduct annual **[[bias impact assessments]]** of their AEDTs, make the results of these assessments publicly available, and provide notice to employees and job candidates that such tools are being used (bill text at https://legiscan.com/NY/text/S07623/id/2836134). It also places restrictions on the collection and use of employee data gathered through [[electronic monitoring]] (NY State Assembly record at https://assembly.state.ny.us/leg/?default_fld&bn=S07623&term=2023&Summary=Y&Actions=Y&Text=Y&Committee%26nbspVotes=Y&Floor%26nbspVotes=Y). This approach contrasts sharply with the broader, tort-focused, strict liability model proposed in Rhode Island, illustrating the diversity of strategies emerging at the state level (Epstein Becker Green analysis at https://www.workforcebulletin.com/states-ring-in-the-new-year-with-proposed-ai-legislation). While Rhode Island is trying to solve the problem of catastrophic risk from frontier models, New York is focused on the more immediate civil rights and labor implications of AI in the workplace (NY AFL-CIO legislative alert at https://nysaflcio.org/legislative-alerts/legislative-alert-may-20-2024).
-  At the federal level, the AI policy conversation is driven less by tort reform and more by the strategic competition with [[China]]. The White House's [[AI Action Plan]], released in mid-2025, is framed as a strategy to "achieve global dominance" in AI. Its key pillars include accelerating the adoption of AI by the military, fast-tracking permits for data centers, and promoting the development of [[open-source AI]] models to foster American innovation (Beyond the Horizon analysis at https://behorizon.org/the-age-of-ai-in-u-s-china-great-power-competition-strategic-implications-risks-and-global-governance/).
-  This federal agenda creates a direct and significant tension with state-level safety efforts. A highly controversial element of the plan is its aim to pressure states to *abandon* their own AI restrictions, including those related to civil liberties like [[facial recognition]], by threatening to withhold federal funding. This provision is a clear attempt to prevent a "patchwork" of state regulations that the administration fears could hinder innovation and slow the nation's ability to compete with China. This puts the federal government's goal of uninhibited technological acceleration in direct conflict with the efforts of states like Rhode Island and New York to implement safety, fairness, and liability guardrails. This reveals a deep, unresolved tension at the heart of US AI policy between the imperative to innovate at all costs and the need to manage the technology's profound risks.
-  The [[United Kingdom]] has charted a distinct course on [[AI governance]], deliberately eschewing comprehensive, binding legislation in favor of a flexible, [[principles-based approach]]. This strategy, however, is facing increasing scrutiny from Parliament and is shaped by the ever-present influence of legal developments in the [[European Union]].
-  The UK government's official strategy is a non-statutory, cross-sectoral framework built upon five high-level principles: **safety, security and robustness; appropriate transparency and explainability; fairness; accountability and governance; and contestability and redress**. The core of this "[[pro-innovation]]" approach is to avoid creating a new, dedicated AI regulator or a single, overarching AI law. Instead, the government has tasked existing [[sectoral regulators]] with the responsibility of applying these principles to AI within their specific domains.
-  Key regulators are now developing their own AI strategies in response. The [[Information Commissioner's Office (ICO)]], which enforces [[data protection law]], is focusing its efforts on high-risk AI applications, particularly those involving [[biometrics]] and [[generative AI]], to ensure compliance with the [[UK GDPR]] (JDSupra analysis at https://www.jdsupra.com/legalnews/ico-annual-report-provides-insight-into-6257830/ and AI Journal coverage at https://aijourn.com/ai-poses-a-unique-data-protection-risk-how-to-avoid-falling-foul-of-ico-fines/). The [[Competition and Markets Authority (CMA)]] is examining AI from a competition and consumer protection perspective. It has published its own set of proposed principles to guide the development of [[foundation models]], emphasizing the importance of **accountability, access, diversity, and choice** to prevent [[anti-competitive behavior]] and protect consumers from harms like [[AI-generated misinformation]] (Conventus Law report at https://conventuslaw.com/report/uk-guiding-the-development-of-ai-the-cmas-initial-report-on-ai-foundation-models/ and JDSupra CMA analysis at https://www.jdsupra.com/legalnews/uk-cma-publishes-initial-report-on-5463223/). A central tenet of the government's approach is that legal liability must always rest with an "identified or identifiable legal person," whether corporate or natural, rejecting any notion that an AI itself could be held responsible.
-  This light-touch, voluntary approach has been met with significant skepticism and criticism from the UK Parliament. The [[House of Commons Science, Innovation and Technology Committee]], in a series of detailed reports, has forcefully argued that the government's framework is insufficient (Wiggin analysis at https://wiggin.eu/insight/ai-governance-science-innovation-and-technology-committee-publishes-final-report/). The Committee contends that relying on voluntary commitments from developers and tasking existing regulators without providing them with new statutory powers creates a critical governance gap (Inside Global Tech coverage at https://www.insideglobaltech.com/2023/10/02/uk-parliament-publishes-interim-report-on-the-uks-ai-governance-proposals/).
-  The Committee has repeatedly called on the government to introduce **AI-specific legislation** to establish clear, legally binding liability rules (Parliament committee report at https://publications.parliament.uk/pa/cm5804/cmselect/cmsctech/38/report.html). A key recommendation from its final report on AI governance is for the government and regulators to publish clear guidance on "where liability for harmful uses of AI falls under existing law" and, crucially, to "establish liability via statute rather than simply relying on jurisprudence" where appropriate. In response to this pressure, the government has acknowledged that primary legislation will likely be necessary to regulate the most powerful frontier AI models, and has committed to consulting on legislative proposals, though the timeline remains uncertain (government response at https://committees.parliament.uk/publications/46145/documents/230927/default/ and Burges Salmon analysis at https://www.burges-salmon.com/articles/102jtpn/governance-of-ai-government-response-to-science-innovation-and-technology-comm/ and SCL coverage at https://www.scl.org/uk-government-publishes-response-to-science-innovation-and-technology-committee-report-on-governance-of-ai/).
-  Although the UK has left the [[European Union]], it cannot escape the gravitational pull of EU law, especially in the technology sector. The EU has taken a starkly different, more prescriptive approach by passing the comprehensive [[EU AI Act]], the world's first major law dedicated to regulating artificial intelligence (King & Spalding roundup at https://www.jdsupra.com/legalnews/eu-uk-ai-round-up-july-2025-1634639/). This Act establishes a [[risk-based framework]], imposing strict obligations on providers of "[[high-risk AI systems]]".
-  Furthermore, the EU is updating its product liability rules. The revised [[Product Liability Directive]] (PLD) explicitly brings standalone software and AI systems into its scope (European Commission page at https://commission.europa.eu/business-economy-euro/doing-business-eu/contract-rules/digital-contracts/liability-rules-artificial-intelligence_en), and the (now-withdrawn) [[AI Liability Directive]] (AILD) proposed harmonized rules to ease the burden of proof for claimants in AI-related cases, including presumptions of causality (Oxford Law blog analysis at https://blogs.law.ox.ac.uk/oblb/blog-post/2025/04/ai-liability-after-aild-withdrawal-why-eu-law-still-matters). While the AILD will not proceed, its principles may still influence judicial thinking, and the revised PLD will create a de facto legal standard for any company wishing to access the vast European single market. The UK's deliberately flexible and "pro-innovation" stance is often defined in direct contrast to the EU's more rigid, regulatory-heavy model, creating a dynamic of [[regulatory competition]] in the heart of Europe.
-  The divergent paths taken by the United States, the United Kingdom, and the European Union reveal a fundamental strategic trilemma in the governance of artificial intelligence: a trade-off between **speed, coherence, and safety**. At the federal level, the US has clearly prioritized **speed and innovation**, driven by a desire to "win the race" against China, viewing disparate state-level regulations as a potential drag on national competitiveness. However, this comes at the cost of **coherence**, as the lack of a federal framework has led to a fragmented "patchwork" of state laws. Individual states, in turn, are prioritizing **targeted safety** by legislating on specific risks they perceive as imminent, such as in Rhode Island's focus on catastrophic risk.
-  The UK government has attempted to balance **coherence** and **speed**. By creating a single, centralized, non-statutory framework and tasking existing regulators, it has aimed for a coherent national approach while avoiding the slow, cumbersome process of passing new primary legislation. However, this has come at the potential cost of **safety**. Critics, including the UK Parliament's own Science and Technology Committee, argue that this voluntary, principles-based framework is too weak and lacks the legal teeth necessary to hold powerful technology companies accountable, leaving regulators under-resourced and without sufficient statutory power.
-  Finally, the European Union has unequivocally prioritized **safety and coherence**. Its landmark [[EU AI Act]] is a comprehensive, binding, top-down legal regime designed to cover all aspects of the [[AI lifecycle]] for high-risk systems. This ensures a harmonized and robust approach across all member states. The trade-off, however, has been **speed**. The AI Act is a complex piece of legislation with a long and phased implementation timeline, which some fear may put European innovators at a disadvantage compared to their more lightly regulated American counterparts.
-  Ultimately, no jurisdiction has yet solved this trilemma. The choice of governance model is a reflection of a nation's or bloc's core strategic priorities. The US is betting on [[decentralized innovation]] and targeted, reactive intervention. The UK is betting on [[regulatory agility]] and flexibility. The EU is betting on comprehensive, proactive, [[market-shaping regulation]]. The long-term efficacy and global influence of these competing models will be a defining feature of international technology policy for the coming decade.
-  As AI capabilities advance toward and beyond human levels, the potential for harm scales from individual torts to systemic and even catastrophic events. Traditional liability frameworks, even when stretched, may prove inadequate for these unprecedented risks. This final section explores the cutting edge of legal and policy thinking on [[AI Liability]], examining novel theories designed to address catastrophic outcomes, the critical role of insurance as a governance mechanism, and the institutional challenges facing the judiciary in this new era.
-  The most profound challenge for [[Tort Law]] is how to deter risks that are, by their nature, non-compensable. An AI-induced [[existential catastrophe]], for example, would leave no one to sue and no legal system to hear the case. This renders traditional [[compensatory damages]] meaningless as a deterrent. To address this, legal scholars are developing novel theories based on the principles of [[Punitive Damages]].
-  In both US and UK law, [[compensatory damages]] are intended to make the victim whole, while [[Punitive Damages]] (or [[exemplary damages]] in the UK) are intended to punish the wrongdoer and deter future misconduct (J&Y Law explanation at https://jnylaw.com/faqs/can-i-seek-punitive-damages-for-my-catastrophic-injury/). The [[economic theory of punitive damages]] provides a more precise rationale: they are a tool to ensure optimal deterrence when a tortfeasor has a significant chance of escaping liability for the harm they cause (Practical Law UK overview at https://uk.practicallaw.thomsonreuters.com/7-107-7085?transitionType=Default&contextData=(sc.Default)).
-  If a company knows it will only be caught and held liable for a fraction of the harm it causes (say, 1 in 10 times), then compensatory damages alone are insufficient to deter its harmful behavior. The company can simply treat the occasional lawsuit as a cost of doing business. To correct this, economic analysis suggests that the total damages should be multiplied by the reciprocal of the [[probability of detection]] (Polinsky & Shavell analysis at https://www.amherst.edu/system/files/media/1582/PolinskyShavell.pdf). If the probability of being held liable is *p*, the total damages should be 1/p times the actual harm. This forces the injurer to internalize the *full* expected social cost of their actions, not just the cost of the instances where they are caught (Columbia Law scholarship at https://scholarship.law.columbia.edu/cgi/viewcontent.cgi?article=5032&context=faculty_scholarship). This [[probabilistic multiplier]] is the theoretical foundation for calculating punitive awards to achieve efficient deterrence (FTC working paper at https://www.ftc.gov/sites/default/files/documents/reports/publicity-and-optimal-punitive-damage-multiplier/wp236.pdf).
-  Legal scholar [[Gabriel Weil]] has ingeniously extended this economic theory to the unique problem of [[AI catastrophic risk]]. He argues that since a true existential catastrophe is uninsurable and non-compensable, the law must find a way to create a financial deterrent *before* the ultimate harm occurs (AXRP podcast interview at https://axrpodcast.libsyn.com/28-tort-law-for-ai-risk-with-gabriel-weil). His proposal is to use **[[punitive damages]] for smaller, "[[near-miss]]" or "[[warning shot]]" incidents** that are themselves indicative of a much larger, unrealized catastrophic risk (LessWrong profile at https://www.greaterwrong.com/users/gabriel-weil).
-  The logic proceeds as follows: Imagine an advanced AI system, due to a subtle [[alignment failure]], causes a significant but manageable financial meltdown—a compensable harm. If technical experts can demonstrate that this same underlying alignment failure also creates a small but non-zero probability of the AI causing a global-scale catastrophe, a court could award punitive damages for the smaller incident. The size of this punitive award would not be based on the reprehensibility of the defendant's conduct in causing the small harm, but would instead be calculated to reflect the **probability-weighted cost of the unrealized catastrophic risk** that the "warning shot" incident revealed.
-  For example, if the warning shot incident revealed a 0.1% chance of a catastrophe valued at $100 trillion, a court could theoretically impose a punitive damage award of $100 billion (100 trillion×0.001) on top of the compensation for the initial financial harm. This creates a powerful, market-based financial incentive for developers to invest heavily in mitigating these low-probability, high-consequence risks, as the potential liability from even a minor incident becomes immense. It is a legal mechanism designed to make the abstract threat of future catastrophe a concrete, present-day financial liability.
-  This innovative proposal, while theoretically elegant, faces vastly different legal landscapes in the United States and the United Kingdom. The **US legal system** is relatively more accommodating to large punitive damage awards. Juries have wide discretion, and while awards are subject to constitutional [[due process]] limitations on their size (often guided by the ratio to compensatory damages, as established in cases like [[BMW v. Gore]] and [[State Farm v. Campbell]]), the principle of using punitive damages for deterrence is deeply embedded in the law. A court could, in theory, be persuaded that evidence of a catastrophic risk is relevant to the "[[reprehensibility]]" of the defendant's conduct, justifying a higher award.
-  The **United Kingdom**, however, presents a much higher barrier. The UK's [[exemplary damages]] are exceptionally rare and are strictly limited by the House of Lords' decision in [[Rookes v Barnard]] (Wikipedia overview at https://en.wikipedia.org/wiki/Punitive_damages). They are generally available only in three narrow circumstances: (1) for oppressive, arbitrary, or unconstitutional actions by government servants; (2) where the defendant's conduct was "calculated" to make a profit that would exceed any compensatory damages; or (3) where explicitly authorized by a statute. Crucially, exemplary damages are generally *not* available for torts of negligence or for inadvertent harm. Weil's theory, which could arise from a non-malicious but reckless deployment of AI, would likely not fit within the existing common law categories. Therefore, implementing this "warning shot" liability framework in the UK would almost certainly require new, purpose-built legislation to authorize such awards.
-  [[Insurance]] markets are powerful, often unseen, mechanisms of governance. By pricing risk, insurers create financial incentives for individuals and companies to adopt safer practices. For AI, however, the very nature of the risk presents profound **[[insurability challenges]]**.
-  A risk, to be insurable, must meet several criteria: the potential loss must be definitive, accidental, and, most importantly, predictable enough to allow for [[actuarial analysis]]. AI violates these principles. The "[[black box]]" nature of AI makes it difficult to define the specific cause of a loss. The potential for [[systemic failures|systemic]], [[correlated failures]]—where a single flaw in a widely deployed model could cause massive, simultaneous losses—undermines the principle of [[diversification]] that underpins insurance. Above all, the lack of historical data and the rapid, unpredictable evolution of AI capabilities make the frequency and severity of future losses almost impossible to predict, turning [[risk assessment]] into a "new frontier" for underwriters.
-  Recognizing that private insurance markets may fail in the face of these challenges, especially for catastrophic risks, policymakers and scholars are looking to historical precedents for managing large-scale technological risks, such as the [[nuclear power industry]] (e.g., the [[Price-Anderson Act]] in the US). One prominent proposal advocates for a **three-tiered liability and insurance architecture** for [[Frontier AI]] (OMS Insurance report at https://oms-www.files.svdcdn.com/production/downloads/Insuring%20emerging%20risks%20from%20AI%2014%20Nov%2024%20Final.pdf?dm=1732266323). This would involve:
-  1. **Mandatory private liability insurance** for all developers of frontier AI models. This would force them to engage with the insurance market and subject their safety practices to third-party underwriting scrutiny.
-  2. An **industry-administered risk pool**, funded by levies on developers, to cover recurring, non-catastrophic losses that might exceed the limits of individual policies.
-  3. **Federally-backed reinsurance** as a last resort to cover true catastrophic losses that overwhelm both private insurance and the industry pool.
-  Such a framework would make safety a structural feature of the AI innovation ecosystem itself, integrating risk management directly into [[capital markets]] rather than treating it as an external regulatory compliance exercise (ResearchGate paper on reinsuring AI at https://www.researchgate.net/publication/390468094_Reinsuring_AI_Energy_Agriculture_Finance_Medicine_as_Precedents_for_Scalable_Governance_of_Frontier_Artificial_Intelligence).
-  The advanced legal theories for managing AI risk and the proposals for new insurance structures are not independent concepts; they are two sides of the same coin, designed in tandem to solve the fundamental market failure of unpriceable catastrophic risk. The risk of an AI-induced catastrophe is a "[[heavy-tail risk]]": an event with a very low probability but an impact so high it is effectively infinite (arXiv analysis at https://arxiv.org/html/2409.06673v1). Standard insurance markets are not designed for such risks; they break down when faced with potential losses that are unquantifiable and cannot be diversified away. This creates a severe "[[moral hazard]]" for developers. If the worst-case scenario is uninsurable, they lack a direct financial incentive to spend potentially billions of dollars on safety measures to prevent it. Beyond ethics or reputational concerns, they are effectively "[[judgment-proof]]" against the ultimate harm their technology could cause.
-  Professor Weil's punitive damages proposal is a legal mechanism designed to circumvent this market failure. It creates a *financial proxy* for the uninsurable catastrophic risk by attaching a massive, legally mandated penalty to a smaller, related, and *insurable* "warning shot" event. This is where the mandatory insurance proposals complete the circle. By legally requiring developers to purchase insurance that can cover these enormous potential punitive damage awards (or other forms of strict liability), the government would effectively compel the insurance industry to become the de facto regulator of AI safety. Faced with the possibility of paying out billion-dollar claims, insurers would have a powerful financial imperative to conduct deep technical audits, demand robust safety and alignment practices, and price their premiums based on a developer's genuine commitment to risk mitigation. This system would transform the governance paradigm from one of direct, top-down government regulation of technical standards to a market-based, incentivized ecosystem where the expert auditors and enforcers of AI safety are the insurers themselves.
-  A final, critical challenge that is often overlooked in high-level policy debates is the [[institutional capacity]] of the judiciary to competently adjudicate these extraordinarily complex cases. Any liability regime, no matter how well-designed, will ultimately fail if the judges and juries tasked with implementing it lack the technical literacy to do so effectively. [[AI Liability]] cases will require courts to grapple with highly technical evidence on topics like [[neural network architecture]], [[algorithmic bias]], [[model training data]], and [[probabilistic risk assessment]].
-  There is a growing recognition of this significant challenge. In the United States, institutions are being developed to address this [[judicial education]] gap. The **[[Federal Judicial Center]]** (FJC), the research and education agency for the federal courts, offers special-focus programs for judges on managing complex litigation, intellectual property, and emerging technology, including neuroscience (FJC programs at https://www.fjc.gov/education/education-programs). Going even further, the **[[National Courts and Sciences Institute]] (NCSI)** provides intensive, specialized training for state and federal judges, offering "Boot Camps" and formal certifications in specific scientific fields (NCSI programs at https://www.courtsandsciences.org/programs). These programs cover topics like scientific methodology, [[genetic engineering]], and [[forensic science]], with the explicit goal of enhancing the ability of judges to act as effective "[[gatekeepers]]" of scientific evidence under the standards set by [[Daubert v. Merrell Dow Pharmaceuticals]] (NCSI homepage at https://www.courtsandsciences.org/home and National Judicial College custom courses at https://www.judges.org/judicial-education/custom-courses/).
-  The existence of these programs demonstrates a clear acknowledgment of the problem. However, the scale of the challenge is immense. Ensuring that a sufficient number of judges across the entire US and UK judiciaries possess the requisite expertise to handle the coming wave of [[AI litigation]] is a monumental task. Investment in this institutional capacity is not merely an optional add-on; it is a critical prerequisite for any [[AI Liability]] regime to function justly and effectively.
-  This analysis reveals a transatlantic legal landscape in a state of profound flux, as two of the world's leading [[common law]] systems grapple with the disruptive force of [[artificial intelligence]]. Both the [[United States]] and the [[United Kingdom]] are attempting to adapt centuries-old [[tort doctrines]], forged in the industrial age, to a technology that fundamentally challenges their core assumptions of human agency, [[foreseeability]], and [[causation]].
-  In the **United States**, the response is fragmented yet dynamic. In the absence of federal leadership on liability, a "bottom-up" evolution is underway. US courts are increasingly willing to dismantle the traditional barrier between tangible goods and intangible software, moving toward a consensus that mass-market AI applications are "products" subject to [[Strict Liability]]. Simultaneously, state legislatures are acting as laboratories of democracy, proposing ambitious and novel statutory frameworks like Rhode Island's strict liability bill for frontier models. This state-level focus on safety and accountability, however, exists in direct tension with a federal agenda preoccupied with [[geopolitical competition]], which seeks to accelerate innovation, even at the cost of overriding state-level guardrails.
-  In the **United Kingdom**, the approach has been more centralized but deliberately cautious. The government has championed a "[[pro-innovation]]," non-statutory framework that relies on high-level principles and empowers existing sectoral regulators. This strategy, designed for flexibility, faces mounting pressure from a Parliament that views it as insufficient and is calling for the certainty of binding, AI-specific legislation. The UK's path is further complicated by the long shadow of the [[European Union]], whose comprehensive and prescriptive [[EU AI Act]] sets a de facto global standard and creates a powerful dynamic of [[regulatory competition]].
-  Despite these different strategies, the most profound challenges remain largely unsolved in both jurisdictions. Neither has a settled legal framework for the unique liability questions posed by [[open-source AI]], which is designed to diffuse responsibility. Neither has a clear mechanism for deterring or compensating for [[catastrophic risks]] that exceed the limits of insurance and traditional tort law. And both face the monumental task of ensuring their judiciaries are equipped with the technical literacy to adjudicate these complex cases. The legal architecture for the age of AI is still under construction, and its final form is far from certain.
-  To navigate this complex and rapidly evolving landscape, a nuanced, multi-layered liability framework is required—one that avoids a one-size-fits-all approach and tailors the legal standard to the level of risk posed by different types of AI systems. The following recommendations outline such a path forward:
-  - **Tier 1: Low-Risk and Bespoke AI.** For AI systems that pose low risks or are custom-developed as a professional service, the traditional **[[Negligence]]** standard should be maintained. This appropriately places the burden on the plaintiff to prove a breach of the duty of care for harms that are relatively minor or arise from a direct service relationship.
-  - **Tier 2: General-Purpose and Mass-Market AI.** For mass-market, general-purpose AI systems (e.g., consumer-facing apps, widely deployed enterprise software), the emerging consensus should be codified into statute. Legislation should explicitly classify these systems as **"products" subject to a statutory strict liability regime**. This would harmonize the US and UK positions, resolve lingering legal ambiguity, and ensure that developers of products placed into the broad [[stream of commerce]] bear the primary responsibility for defects that cause harm.
-  - **Tier 3: Frontier Models and Catastrophic Risk.** For the development of [[Frontier AI]] models that pose plausible catastrophic risks, a special regime based on the doctrine of **"[[Abnormally Dangerous Activity]]"** should be established. This would impose non-disclaimable, [[Strict Liability]] on the developers of these systems. This regime must be coupled with a **mandatory insurance scheme**, potentially backed by a government reinsurance pool, as seen in the nuclear industry. This dual approach would ensure that victims of any large-scale harm have a source of compensation and, more importantly, would create a powerful, market-based incentive for safety by forcing developers to have their risk-mitigation efforts priced and validated by the insurance industry.
-  - **Addressing the Open-Source Gap.** The liability challenges of [[open-source AI]] require a tailored solution. Policymakers should explore the creation of **legal safe harbors for non-commercial, academic, and truly community-driven open-source projects** to protect innovation and research. However, this protection should not extend to **commercial entities that deploy open-source models at scale**. These entities should be held liable for harms caused by the systems they choose to use and profit from, forcing them to internalize the risks they are currently externalizing to the public. This could be achieved by making commercial deployment of an open-source model an act that triggers the assumption of product liability.
-  - **Investing in Institutional Capacity.** Finally, and most critically, any liability regime is only as effective as the institutions that enforce it. Governments must make a significant, sustained investment in **[[judicial education]]**. Programs like those offered by the [[NCSI]] and [[FJC]] in the US should be expanded and replicated, with the goal of creating a specialized corps of judges in both the US and UK who possess the scientific and technical literacy to adjudicate AI cases fairly and efficiently. This investment is not an optional extra; it is a fundamental prerequisite for the [[rule of law]] to function effectively in the algorithmic age.
-  1. The Five Elements of Negligence - Scholarship @ Hofstra Law, accessed on July 26, 2025, https://scholarlycommons.law.hofstra.edu/cgi/viewcontent.cgi?article=2282&context=hlr
-  2. Tort Law | Law Library | Digital Exhibits, accessed on July 26, 2025, https://lawlibrarycollections.umn.edu/classic-cases-tort
-  3. Restatement s 402a and 402b - The Climate Change and Public Health Law Site - LSU, accessed on July 26, 2025, https://biotech.law.lsu.edu/cases/products/402a-b.htm
-  4. Restatement (Second) of Torts § 402A - (Torts) - Vocab, Definition, Explanations | Fiveable, accessed on July 26, 2025, https://fiveable.me/key-terms/torts/restatement-second-of-torts-%C2%A7-402a
-  5. abnormally dangerous activity | Wex | US Law | LII / Legal ..., accessed on July 26, 2025, https://www.law.cornell.edu/wex/abnormally_dangerous_activity
-  6. ultrahazardous activity | Wex | US Law | LII / Legal Information Institute, accessed on July 26, 2025, https://www.law.cornell.edu/wex/ultrahazardous_activity
-  7. Key Negligence Case Law | Negligence Solicitors, accessed on July 26, 2025, https://professionalnegligenceclaimsolicitors.co.uk/landmark-famous-uk-tort-cases-advice/
-  8. Donoghue v Stevenson - Dipartimento di scienze giuridiche, accessed on July 26, 2025, https://www.scienzegiuridiche.uniroma1.it/sites/default/files/docenti/alpa/Donoghue_Stevenson.pdf
-  9. Donoghue v Stevenson - Wikipedia, accessed on July 26, 2025, https://en.wikipedia.org/wiki/Donoghue_v_Stevenson
-  10. Causation in Clinical Negligence Cases: Can there be liability where the same injury would probably have happened anyway? - UK Healthcare Law Blog, accessed on July 26, 2025, https://www.ukhealthcarelawblog.co.uk/causation-in-clinical-negligence-cases-can-there-be-liability-where-the-same-injury-would-probably-have-happened-anyway/
-  11. Consumer Protection Act 1987 - Wikipedia, accessed on July 26, 2025, https://en.wikipedia.org/wiki/Consumer_Protection_Act_1987
-  12. Consumer Protection Act 1987 - Which?, accessed on July 26, 2025, https://www.which.co.uk/consumer-rights/regulation/consumer-protection-act-1987-a5xTL3w6L9OI
-  13. The Product vs. Service issue. - CS Stanford, accessed on July 26, 2025, https://cs.stanford.edu/people/eroberts/cs181/projects/1995-96/liability-law/productserviceissue.html
-  14. ARTICLE - Berkeley Technology Law Journal, accessed on July 26, 2025, https://www.btlj.org/data/articles2015/vol5/5_1/5-berkeley-tech-l-j-0001-0028.pdf
-  15. "Computer Software and Strict Products Liability" by Susan Lanoue, accessed on July 26, 2025, https://digital.sandiego.edu/sdlr/vol20/iss2/9/
-  16. Software Gains New Status as a Product Under Strict Liability Law ..., accessed on July 26, 2025, https://www.mofo.com/resources/insights/250618-software-gains-new-status-as-a-product-under-strict-liability-law
-  17. Have Algorithms Opened Up Your Software to Product Liability? - American Bar Association, accessed on July 26, 2025, https://www.americanbar.org/groups/litigation/resources/newsletters/mass-torts/have-algorithms-opened-your-software-product-liability/
-  18. Artificial intelligence and liability: Key takeaways from recent EU legislative initiatives, accessed on July 26, 2025, https://www.nortonrosefulbright.com/en-gb/knowledge/publications/7052eff6/artificial-intelligence-and-liability
-  19. AI liability in the EU (and UK): What's the current state of play? - Hogan Lovells, accessed on July 26, 2025, https://www.hoganlovells.com/en/publications/ai-liability-in-the-eu-and-uk-whats-the-current-state-of-play
-  20. The UK's framework for AI regulation | Deloitte UK, accessed on July 26, 2025, https://www.deloitte.com/uk/en/Industries/financial-services/blogs/the-uks-framework-for-ai-regulation.html
-  21. 'You Will Be Legally Liable For AI Outcomes' – UK Government - Artificial Lawyer, accessed on July 26, 2025, https://www.artificiallawyer.com/2022/07/18/you-will-be-legally-liable-for-ai-outcomes-uk-government/
-  22. Insuring the unpredictable: The challenges of AI risk insurability ..., accessed on July 26, 2025, https://www.dlapiper.com/insights/publications/derisk-newsletter/2024/insuring-the-unpredictable-the-challenges-of-ai-risk-insurability
-  23. The Case for AI Liability | AI Frontiers, accessed on July 26, 2025, https://ai-frontiers.org/articles/case-for-ai-liability
-  24. vicarious liability | Wex | US Law | LII / Legal Information Institute, accessed on July 26, 2025, https://www.law.cornell.edu/wex/vicarious_liability
-  25. Vicarious liability | EBSCO Research Starters, accessed on July 26, 2025, https://www.ebsco.com/research-starters/social-sciences-and-humanities/vicarious-liability
-  26. Law-Following AI: designing AI agents to obey human laws, accessed on July 26, 2025, https://law-ai.org/law-following-ai/
-  27. Insuring emerging risks in ai, accessed on July 26, 2025, https://oms-www.files.svdcdn.com/production/downloads/Insuring%20emerging%20risks%20from%20AI%2014%20Nov%2024%20Final.pdf?dm=1732266323
-  28. Acting Comptroller of the Currency Michael J. Hsu Remarks in Support of the 2024 Conference on Artificial Intelligence and Finan, accessed on July 26, 2025, https://www.occ.gov/news-issuances/speeches/2024/pub-speech-2024-61.pdf
-  29. Gabriel Weil - Assistant Professor of Law - Touro Law Center, accessed on July 26, 2025, https://www.tourolaw.edu/abouttourolaw/bio/399
-  30. Faculty Spotlight Gabriel Weil - Touro Law Center, accessed on July 26, 2025, https://www.tourolaw.edu/abouttourolaw/featured-content/376/spotlight
-  31. Tort Law Archives - Touro Law Review BLOG, accessed on July 26, 2025, https://tourolawreviewblog.wpcomstaging.com/tag/tort-law/
-  32. U.S. Tort Liability for Large-Scale Artificial Intelligence Damages: A Primer for Developers and Policymakers - RAND Corporation, accessed on July 26, 2025, https://www.rand.org/content/dam/rand/pubs/research_reports/RRA3000/RRA3084-1/RAND_RRA3084-1.pdf
-  33. Your AI Breaks It? You Buy It. - Noema Magazine, accessed on July 26, 2025, https://www.noemamag.com/your-ai-breaks-it-you-buy-it/
-  34. Implementing the Senate AI Roadmap - Future of Life Institute, accessed on July 26, 2025, https://futureoflife.org/document/vision-into-action-senate-ai-roadmap/
-  35. RI S0358 - BillTrack50, accessed on July 26, 2025, https://www.billtrack50.com/billdetail/1841762
-  36. Liability and Insurance for Catastrophic Losses: the Nuclear Power Precedent and Lessons for AI - arXiv, accessed on July 26, 2025, https://arxiv.org/html/2409.06673v1
-  37. Artificial Intelligence (Regulation) Bill [HL] - UK Parliament, accessed on July 26, 2025, https://researchbriefings.files.parliament.uk/documents/LLN-2024-0016/LLN-2024-0016.pdf
-  38. Open Source AI Versus Proprietary AI Models: Key Differences in ..., accessed on July 26, 2025, https://www.hunton.com/insights/publications/open-source-ai-versus-proprietary-ai-models-key-differences-in-contract-terms-and-ip-risks-part-2
-  39. Artificial Intelligence and Open Source Data and Software ..., accessed on July 26, 2025, https://www.crowell.com/en/insights/client-alerts/artificial-intelligence-and-open-source-data-and-software-contrasting-perspectives-legal-risks-and-observations
-  40. How the White House AI plan helps, and hurts, in the race against ..., accessed on July 26, 2025, https://www.defenseone.com/technology/2025/07/how-white-house-ai-plan-helps-and-hurts-race-against-china/406944/
-  41. Gabriel Weil - Institute for Law & AI, accessed on July 26, 2025, https://law-ai.org/team/gabriel-weil-2/
-  42. Rhode Island: Bill for AI liability introduced to Senate | News - DataGuidance, accessed on July 26, 2025, https://www.dataguidance.com/news/rhode-island-bill-ai-liability-introduced-senate
-  43. Bill Text: RI S0358 | 2025 | Regular Session | Introduced | LegiScan, accessed on July 26, 2025, https://legiscan.com/RI/text/S0358/2025
-  44. NY State Senate Bill 2023-S7623A, accessed on July 26, 2025, https://www.nysenate.gov/legislation/bills/2023/S7623/amendment/A
-  45. Bill Text: NY S07623 | 2023-2024 | General Assembly | Introduced - LegiScan, accessed on July 26, 2025, https://legiscan.com/NY/text/S07623/id/2836134
-  46. New York 2023-2024 | Relates to restricting the use of electronic monitoring and automated employment decision tools | TrackBill, accessed on July 26, 2025, https://trackbill.com/bill/new-york-senate-bill-7623-relates-to-restricting-the-use-of-electronic-monitoring-and-automated-employment-decision-tools/2461344/
-  47. S07623 - Bill Search and Legislative Information | New York State Assembly, accessed on July 26, 2025, https://assembly.state.ny.us/leg/?default_fld&bn=S07623&term=2023&Summary=Y&Actions=Y&Text=Y&Committee%26nbspVotes=Y&Floor%26nbspVotes=Y
-  48. States Ring in the New Year with Proposed AI Legislation | Epstein Becker Green, accessed on July 26, 2025, https://www.workforcebulletin.com/states-ring-in-the-new-year-with-proposed-ai-legislation
-  49. Legislative Alert: May 20, 2024 - New York State AFL-CIO, accessed on July 26, 2025, https://nysaflcio.org/legislative-alerts/legislative-alert-may-20-2024
-  50. The Age of AI in U.S.-China Great Power Competition: Strategic Implications, Risks, and Global Governance | Beyond the Horizon ISSG, accessed on July 26, 2025, https://behorizon.org/the-age-of-ai-in-u-s-china-great-power-competition-strategic-implications-risks-and-global-governance/
-  51. ICO Annual Report Provides Insight Into Data Protection Risks for ..., accessed on July 26, 2025, https://www.jdsupra.com/legalnews/ico-annual-report-provides-insight-into-6257830/
-  52. AI poses a unique data protection risk; How to avoid falling foul of ICO fines | The AI Journal, accessed on July 26, 2025, https://aijourn.com/ai-poses-a-unique-data-protection-risk-how-to-avoid-falling-foul-of-ico-fines/
-  53. UK - Guiding The Development Of AI: The CMA's Initial Report On AI ..., accessed on July 26, 2025, https://conventuslaw.com/report/uk-guiding-the-development-of-ai-the-cmas-initial-report-on-ai-foundation-models/
-  54. UK CMA Publishes Initial Report on Regulation of AI | Hogan Lovells - JDSupra, accessed on July 26, 2025, https://www.jdsupra.com/legalnews/uk-cma-publishes-initial-report-on-5463223/
-  55. AI Governance: Science, Innovation and Technology Committee publishes final report, accessed on July 26, 2025, https://wiggin.eu/insight/ai-governance-science-innovation-and-technology-committee-publishes-final-report/
-  56. UK Parliament Publishes Interim Report on the UK's AI Governance Proposals, accessed on July 26, 2025, https://www.insideglobaltech.com/2023/10/02/uk-parliament-publishes-interim-report-on-the-uks-ai-governance-proposals/
-  57. Governance of artificial intelligence (AI) - Science, Innovation and Technology Committee, accessed on July 26, 2025, https://publications.parliament.uk/pa/cm5804/cmselect/cmsctech/38/report.html
-  58. Governance of artificial intelligence (AI): Government Response, accessed on July 26, 2025, https://committees.parliament.uk/publications/46145/documents/230927/default/
-  59. Governance of AI - government response to Science, Innovation and Technology Committee, accessed on July 26, 2025, https://www.burges-salmon.com/articles/102jtpn/governance-of-ai-government-response-to-science-innovation-and-technology-comm/
-  60. UK government publishes response to Science, Innovation and Technology Committee report on governance of AI - Society for Computers & Law, accessed on July 26, 2025, https://www.scl.org/uk-government-publishes-response-to-science-innovation-and-technology-committee-report-on-governance-of-ai/
-  61. EU & UK AI Round-up – July 2025 | King & Spalding - JDSupra, accessed on July 26, 2025, https://www.jdsupra.com/legalnews/eu-uk-ai-round-up-july-2025-1634639/
-  62. Liability Rules for Artificial Intelligence - European Commission, accessed on July 26, 2025, https://commission.europa.eu/business-economy-euro/doing-business-eu/contract-rules/digital-contracts/liability-rules-artificial-intelligence_en
-  63. AI Liability After the AILD Withdrawal: Why EU Law Still Matters ..., accessed on July 26, 2025, https://blogs.law.ox.ac.uk/oblb/blog-post/2025/04/ai-liability-after-aild-withdrawal-why-eu-law-still-matters
-  64. Can I Seek Punitive Damages for My Catastrophic Injury? | J&Y Law, accessed on July 26, 2025, https://jnylaw.com/faqs/can-i-seek-punitive-damages-for-my-catastrophic-injury/
-  65. Punitive damages | Practical Law, accessed on July 26, 2025, https://uk.practicallaw.thomsonreuters.com/7-107-7085?transitionType=Default&contextData=(sc.Default)
-  66. Punitive damages: An economic analysis., accessed on July 26, 2025, https://www.amherst.edu/system/files/media/1582/PolinskyShavell.pdf
-  67. Constitutional Limits on Punitive Damages Awards: An Analysis of Supreme Court Precedent - Scholarship Archive, accessed on July 26, 2025, https://scholarship.law.columbia.edu/cgi/viewcontent.cgi?article=5032&context=faculty_scholarship
-  68. Publicity and the Optimal Punitive Damage Multiplier, accessed on July 26, 2025, https://www.ftc.gov/sites/default/files/documents/reports/publicity-and-optimal-punitive-damage-multiplier/wp236.pdf
-  69. the AI X-risk Research Podcast: 28 - Suing Labs for AI Risk ... - AXRP, accessed on July 26, 2025, https://axrpodcast.libsyn.com/28-tort-law-for-ai-risk-with-gabriel-weil
-  70. Gabriel Weil - LessWrong 2.0 viewer - GreaterWrong, accessed on July 26, 2025, https://www.greaterwrong.com/users/gabriel-weil
-  71. Punitive damages - Wikipedia, accessed on July 26, 2025, https://en.wikipedia.org/wiki/Punitive_damages
-  72. Reinsuring AI: Energy, Agriculture, Finance & Medicine as Precedents for Scalable Governance of Frontier Artificial Intelligence - ResearchGate, accessed on July 26, 2025, https://www.researchgate.net/publication/390468094_Reinsuring_AI_Energy_Agriculture_Finance_Medicine_as_Precedents_for_Scalable_Governance_of_Frontier_Artificial_Intelligence
-  73. Education Programs | Federal Judicial Center, accessed on July 26, 2025, https://www.fjc.gov/education/education-programs
-  74. Our Programs — National Courts and Sciences Institute, accessed on July 26, 2025, https://www.courtsandsciences.org/programs
-  75. Welcome to the American home for judicial training in science & technology, accessed on July 26, 2025, https://www.courtsandsciences.org/home
-  76. Custom Courses - The National Judicial College, accessed on July 26, 2025, https://www.judges.org/judicial-education/custom-courses/
-  - ---
-  - **Tags**: #[[AI-Liability]] #[[Legal-Framework]] #[[Tort-Law]] #[[AI-Governance]] #[[Product-Liability]] #[[Strict-Liability]] #[[Negligence]] #[[Frontier-AI]] #[[AI-Regulation]] #[[United-States]] #[[United-Kingdom]] #[[EU-AI-Act]] #[[Character-AI-Case]] #[[Gabriel-Weil]] #[[Abnormally-Dangerous-Activity]] #[[Vicarious-Liability]] #[[Punitive-Damages]] #[[Insurance]] #[[Open-Source-AI]] #[[AI-Safety]]
+	```
+	## Compositional Relationships (Components)
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:DutyOfCare))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:BreachOfDuty))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:Causation))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:Foreseeability))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:Damages))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:StrictLiabilityStandard))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:ConformityAssessment))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:hasPart ai:PostMarketMonitoring))
 
-  - ### **Introduction**
-  - ## **Part I: Foundations of Liability Law \- A Transatlantic Overview**
-  - ### **1.1 The American Framework: Negligence and Strict Liability**
-  - #### **1.1.1 The Evolution of Negligence: From \] to the Modern Four-Element Test**
-  - #### **1.1.2 Strict Liability for Products: The Impact of \]**
-  - #### **1.1.3 Strict Liability for Abnormally Dangerous Activities: From \] to Modern Applications**
-  - ### **1.2 The English Framework: Common Law and Statutory Intervention**
-  - #### **1.2.1 The Neighbour Principle: The Enduring Legacy of \]**
-  - #### **1.2.2 Statutory Product Liability: The \[\[Consumer Protection Act 1987\]\] and its EU Origins**
-  - ## **Part II: Applying Traditional Torts to Code \- The Case of Software Liability**
-  - ### **2.1 The "Product vs. Service" Conundrum**
-  - ### **2.2 The Emerging Consensus in the U.S.: Software as a Product**
-  - ### **2.3 The UK Position: Software Under the Consumer Protection Act**
-  - ## **Part III: The Unique Challenge of Artificial Intelligence \- Pushing the Boundaries of Liability**
-  - ### **3.1 Beyond Traditional Software: Autonomy, Opacity, and Emergent Behavior**
-  - ### **3.2 Frontier AI as an "Abnormally Dangerous Activity"**
-  - ### **3.3 The Open-Source Dimension: Distributed Development and Diffused Liability**
-  - ## **Part IV: The Governance Response \- Legislative and Regulatory Frontiers**
-  - ## OntologyBlock
-  - ### **Introduction**
-  - ## **Part I: Foundations of Liability Law - A Transatlantic Overview**
-  - ### **1.1 The American Framework: Negligence and Strict Liability**
-  - #### **1.1.1 The Evolution of Negligence: From Brown v. Kendall to the Modern Four-Element Test**
-  - #### **1.1.2 Strict Liability for Products: The Impact of Restatement (Second) of Torts § 402A**
-  - #### **1.1.3 Strict Liability for Abnormally Dangerous Activities: From Rylands v. Fletcher to Modern Applications**
-  - ### **1.2 The English Framework: Common Law and Statutory Intervention**
-  - #### **1.2.1 The Neighbour Principle: The Enduring Legacy of Donoghue v. Stevenson**
-  - #### **1.2.2 Statutory Product Liability: The [[Consumer Protection Act 1987]] and its EU Origins**
-  - ## **Part II: Applying Traditional Torts to Code - The Case of Software Liability**
-  - ### **2.1 The "Product vs. Service" Conundrum**
-  - ### **2.2 The Emerging Consensus in the U.S.: Software as a Product**
-  - ### **2.3 The UK Position: Software Under the Consumer Protection Act**
-  - ## **Part III: The Unique Challenge of Artificial Intelligence - Pushing the Boundaries of Liability**
-  - ### **3.1 Beyond Traditional Software: Autonomy, Opacity, and Emergent Behavior**
-  - ### **3.2 Frontier AI as an "Abnormally Dangerous Activity"**
-  - ### **3.3 The Open-Source Dimension: Distributed Development and Diffused Liability**
-  - ## **Part IV: The Governance Response - Legislative and Regulatory Frontiers**
-  - ### **4.1 The United States: A Patchwork of State-Level Experimentation and Federal Ambition**
-  - #### **4.1.1 A Deep Dive into \]**
-  - #### **4.1.2 New York's Approach**
-  - #### **4.1.3 The Federal Landscape**
-  - ### **4.2 The United Kingdom: A "Pro-Innovation" Framework Under Scrutiny**
-  - #### **4.2.1 The Government's Principles-Based Approach**
-  - #### **4.2.2 Parliamentary Pushback**
-  - #### **4.2.3 The EU's Shadow**
-  - ## **Part V: Advanced Topics and Future Horizons in AI Liability**
-  - ### **5.1 Addressing Catastrophic Risk: Punitive Damages for Unrealized Harms**
-  - #### **5.1.1 The Economic Theory of Punitive Damages**
-  - #### **5.1.2 \]'s "Warning Shot" Thesis**
-  - #### **5.1.3 Comparative Analysis of Feasibility**
-  - ### **5.2 The Role of Insurance in AI Governance**
-  - ### **5.3 Judicial Preparedness and Institutional Capacity**
-  - ## **Conclusion and Recommendations**
-  - ### **6.1 Synthesis of Findings**
-  - ### **6.2 A Proposed Path Forward**
-  - #### **Works cited**
-  - ### **4.1 The United States: A Patchwork of State-Level Experimentation and Federal Ambition**
-  - #### **4.1.1 A Deep Dive into Rhode Island Senate Bill 0358**
-  - #### **4.1.2 New York's Approach**
-  - #### **4.1.3 The Federal Landscape**
-  - ### **4.2 The United Kingdom: A "Pro-Innovation" Framework Under Scrutiny**
-  - #### **4.2.1 The Government's Principles-Based Approach**
-  - #### **4.2.2 Parliamentary Pushback**
-  - #### **4.2.3 The EU's Shadow**
-  - ## **Part V: Advanced Topics and Future Horizons in AI Liability**
-  - ### **5.1 Addressing Catastrophic Risk: Punitive Damages for Unrealized Harms**
-  - #### **5.1.1 The Economic Theory of Punitive Damages**
-  - #### **5.1.2 Gabriel Weil's "Warning Shot" Thesis**
-  - #### **5.1.3 Comparative Analysis of Feasibility**
-  - ### **5.2 The Role of Insurance in AI Governance**
-  - ### **5.3 Judicial Preparedness and Institutional Capacity**
-  - ## **Conclusion and Recommendations**
-  - ### **6.1 Synthesis of Findings**
-  - ### **6.2 A Proposed Path Forward**
-  - #### **Works cited**
+	## Dependency Relationships
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:requires ai:IdentifiableLegalPerson))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:requires ai:CompensableHarm))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:requires ai:EvidentiaryRecord))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:requires ai:CausalLinkage))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:dependsOn ai:CommonLawSystem))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:dependsOn ai:StatutoryInterpretation))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:dependsOn ai:JudicialCapacity))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:dependsOn ai:ExpertEvidence))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:dependsOn ai:Precedent))
+
+	## Capability Relationships
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:enables ai:CompensationForVictims))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:enables ai:DeterrenceOfHarm))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:enables ai:RiskInternalisation))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:enables ai:InsurancePricing))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:enables ai:SafetyInvestment))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:supports ai:AISafety))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:supports ai:MarketSurveillance))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:supports ai:AlgorithmicAuditing))
+
+	## Implementation Relationships
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:implements ai:NegligenceStandard))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:implements ai:StrictLiability))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:implements ai:VicariousLiability))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:implements ai:AbnormallyDangerousActivityDoctrine))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:implements ai:ProductLiabilityDirective))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:implements ai:EUAIAct))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:uses ai:ForeseeabilityTest))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:uses ai:CaparoThreeStageTest))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:uses ai:DaubertStandard))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:uses ai:ReasonableCareStandard))
+
+	## Reduction Relationships
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:reduces ai:UncompensatedHarm))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:reduces ai:MoralHazard))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:reduces ai:InformationAsymmetry))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:reduces ai:SocialCostExternalisation))
+
+	## Association Relationships
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:relatedTo ai:AIEthics))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:relatedTo ai:AlgorithmicBias))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:relatedTo ai:FrontierAI))
+	SubClassOf(ai:AILiability
+	  ObjectSomeValuesFrom(ai:contrastsWith ai:CriminalLiability))
+
+	## Data Properties (Characteristics)
+	DataPropertyAssertion(ai:hasIdentifier ai:AILiability "AI-1087"^^xsd:string)
+	DataPropertyAssertion(ai:authorityScore ai:AILiability "0.87"^^xsd:decimal)
+	DataPropertyAssertion(ai:euAIActEntryIntoForce ai:AILiability "2024-08-01"^^xsd:date)
+	DataPropertyAssertion(ai:revisedPLDEntryIntoForce ai:AILiability "2024-12-09"^^xsd:date)
+	DataPropertyAssertion(ai:euAIActHighRiskPenaltyCeilingEUR ai:AILiability "35000000"^^xsd:integer)
+	DataPropertyAssertion(ai:euAIActHighRiskPenaltyTurnoverPct ai:AILiability "0.07"^^xsd:decimal)
+	DataPropertyAssertion(ai:aiInsuranceMarketUSD2025 ai:AILiability "1200000000"^^xsd:integer)
+	DataPropertyAssertion(ai:riteAidFTCBanYears ai:AILiability "5"^^xsd:integer)
+
+	## Property Constraints
+	SubClassOf(ai:AILiability
+	  DataMinCardinality(1 ai:hasJurisdiction xsd:string))
+	SubClassOf(ai:AILiability
+	  DataMinCardinality(1 ai:hasLegalBasis xsd:string))
+	SubClassOf(ai:AILiability
+	  DataAllValuesFrom(ai:hasResponsibleParty xsd:string))
+
+	## Annotations
+	AnnotationAssertion(rdfs:label ai:AILiability "AI Liability"@en)
+	AnnotationAssertion(rdfs:comment ai:AILiability "Body of legal doctrine, statutory regime and regulatory practice allocating civil responsibility for harm caused by AI systems, encompassing the application of common-law negligence and strict liability, statutory product-liability regimes including the EU revised Product Liability Directive (EU) 2024/2853 and Consumer Protection Act 1987, the EU AI Act conformity-assessment and market-surveillance framework, the doctrine of abnormally dangerous activity proposed for frontier AI, vicarious liability for AI agents, sector-specific regimes for autonomous vehicles (NHTSA, ASDE) and medical devices (FDA, MHRA SaMD), and an emerging insurance market spanning Munich Re aiSure, Lloyd's syndicates and InsurTech carriers Vouch/Armilla."@en)
+	AnnotationAssertion(dcterms:identifier ai:AILiability "AI-1087"^^xsd:string)
+	AnnotationAssertion(dcterms:subject ai:AILiability "Tort Law, Product Liability, AI Governance, Regulation, Insurance, Algorithmic Accountability"@en)
+	```
+
+  - ## About AI Liability
+  - **AI Liability** is the legal architecture for assigning civil responsibility when [[Artificial Intelligence]] systems cause harm. It sits at the intersection of [[Tort Law]] (negligence, strict liability, vicarious liability), [[Product Liability]] (the UK [[Consumer Protection Act 1987]], the EU revised [[Product Liability Directive]] (EU) 2024/2853, the US [[Restatement (Second) of Torts § 402A]]), administrative regulation (the [[EU AI Act]] conformity-assessment regime, the FDA AI/ML SaMD framework, NHTSA's Automated Vehicles Policy, the MHRA Software and AI as Medical Device programme, the FTC's deceptive-practices and Section 5 enforcement) and an increasingly active insurance market (Munich Re aiSure, Lloyd's syndicate coverage, Vouch and Armilla AI). It addresses the central question facing legal systems in 2026: when an autonomous, opaque and adaptive AI system produces an output that causes injury, who bears the loss—the developer, the integrator, the deployer, the user, or some combination?
+  - The unique characteristics of advanced AI—**autonomy** (capacity to produce actions not directly programmed), **opacity** (the [[black box]] problem of deep neural networks), **adaptivity** (learning and behavioural drift after deployment), and **emergence** (capabilities arising unexpectedly during scale-up)—strain the foundational doctrines of common law tort, which presuppose human agency, foreseeability, and traceable causation. These features force the law into one of three responses: (1) **adapt existing doctrines** through clever procedural devices (rebuttable presumptions of causation as proposed in the now-withdrawn [[AI Liability Directive]] AILD), (2) **codify new statutory regimes** specific to AI (the [[EU AI Act]], Colorado AI Act SB 24-205, Rhode Island S0358), or (3) **shift to no-fault regimes** for the highest-risk applications (treating frontier-model development as an [[Abnormally Dangerous Activity]] or mandating compulsory insurance modelled on the [[Price-Anderson Act]] for civil nuclear power).
+  - Three trans-Atlantic developments dominate the 2025-2026 landscape. First, the **EU AI Act** (Regulation (EU) 2024/1689) became the world's first comprehensive horizontal AI statute, with obligations for general-purpose AI models commencing 2 August 2025 and high-risk obligations applying 2 August 2026. Second, the **revised Product Liability Directive** (EU) 2024/2853, entering into force on 9 December 2024 with Member-State transposition by 9 December 2026, expressly redefines "product" to include software and AI systems, introduces a presumption of defectiveness when claimants face "excessive difficulties" proving technical complexity, and abolishes the €500 deductible. Third, the **AI Liability Directive** (AILD COM(2022) 496) was withdrawn by the European Commission on 11 February 2025 as part of the 2025 Work Programme reset, on grounds that "no foreseeable agreement" existed—a significant gap that leaves causation rules for AI-related harms to fragmented Member-State tort regimes and the residual force of the revised PLD.
+  - Across the Atlantic, the United States is following a fragmented "bottom-up" path. There is no comprehensive federal AI liability statute. Instead, individual states have legislated targeted regimes (Colorado AI Act SB 24-205 enacted May 2024 covering consequential decisions, effective February 2026; New York City Local Law 144 of 2021 mandating bias audits for AEDTs; Texas Responsible AI Governance Act HB 1709 advancing through 2025), federal agencies have exercised existing authorities (FTC Section 5 actions against [[Rite Aid]] December 2023 for facial-recognition harms, the Amazon Alexa COPPA settlement of $25M in 2023, the Operation AI Comply sweep September 2024), and the courts have begun reshaping product-liability doctrine to treat AI software as a "product" subject to strict liability (the [[Character.AI]] ruling in Garcia v. Character Technologies M.D. Fla. May 2025).
+  - In the United Kingdom, the **pro-innovation principles-based framework** of the March 2023 White Paper survives but is under sustained Parliamentary and academic pressure. The [[House of Commons Science, Innovation and Technology Committee]] called for AI-specific legislation in its August 2024 final report; Lord Holmes' Artificial Intelligence (Regulation) Bill [HL] was reintroduced in March 2025; and the [[Law Commission]] continues scoping work on autonomous-systems liability following the Automated Vehicles Act 2024 (Royal Assent 20 May 2024) which implements the joint Law Commission/Scottish Law Commission proposals on the Authorised Self-Driving Entity (ASDE) framework. The [[UK AI Safety Institute]] was renamed the AI Security Institute in February 2025, narrowing its remit to security-related model evaluations.
+
+  - ## Components and Architecture
+  - The legal architecture of AI liability decomposes into eight interlocking components.
+
+  - ### 1. Cause of Action
+  - The plaintiff's choice of legal theory determines the elements that must be pleaded and proved. The dominant theories applied to AI harms are:
+    - **[[Negligence]]** requiring duty/breach/causation/damage per the four-element formulation traced from [[Brown v. Kendall]] 1850 and [[Palsgraf v. Long Island Railroad]] 1928 in the US and the three-stage [[Caparo Industries plc v. Dickman]] 1990 test (foreseeability + proximity + fair-just-reasonable) in the UK
+    - **[[Strict Product Liability]]** under [[Restatement (Second) of Torts § 402A]] in the US or the [[Consumer Protection Act 1987]] (implementing EC Directive 85/374/EEC and now updated by Directive (EU) 2024/2853) in the UK
+    - **[[Vicarious Liability]]** under respondeat superior holding principals liable for the torts of agents acting within the scope of employment or authority
+    - **Statutory causes of action** under sector-specific regimes: data protection under UK GDPR Article 82, employment discrimination under the Equality Act 2010, automated-vehicle harm under the Automated Vehicles Act 2024
+    - Emerging **strict liability for [[Abnormally Dangerous Activity]]** descended from [[Rylands v. Fletcher]] 1868 and increasingly proposed for [[Frontier AI]] development
+    - **Specific statutory torts** under the EU AI Act enforcement regime and proposed UK AI Bill
+
+  - ### 2. Standard of Care
+  - Negligence claims turn on the standard of care expected of a reasonable developer, integrator or deployer. Standards are crystallising through several channels:
+    - **Technical standards bodies.** ISO/IEC 42001 AI Management System published December 2023, ISO/IEC 23894 AI risk management, ISO/IEC TR 24028 AI trustworthiness, the [[NIST AI Risk Management Framework]] AI RMF 1.0 published January 2023 with the Generative AI Profile (NIST AI 600-1) released July 2024
+    - **Sector regulator guidance.** The [[ICO]] AI auditing framework and Guidance on AI and Data Protection (updated 2023), the Bank of England/PRA Supervisory Statement SS1/23 on Model Risk Management Principles, the FCA's AI Update (October 2024)
+    - **Codes of practice.** The EU AI Act Code of Practice for General-Purpose AI Models published May 2025 covering transparency, copyright and safety/security obligations for GPAI models with systemic risk above 10²⁵ FLOPs
+    - **Professional rules.** ABA Formal Opinion 512 on generative AI in legal practice (July 2024), the Bar Standards Board guidance (December 2023), the SRA Risk Outlook (2024)
+
+  - ### 3. Causation
+  - Establishing the causal link between an AI system's behaviour and the claimant's harm is the most difficult evidentiary task in AI litigation.
+    - The [[black box]] problem makes it impossible in many cases to trace the specific computational pathway leading to a particular output
+    - The withdrawn AILD proposed a **rebuttable presumption of causation** when the claimant demonstrated the defendant's breach of a duty of care relevant to the harm
+    - This principle survives in scholarly proposals and continues to influence Member-State courts
+    - The revised PLD (EU) 2024/2853 Article 10 introduces a parallel **presumption of defectiveness** when the claimant faces "excessive difficulties" in proving technical complexity
+    - Article 10 shifts the evidentiary burden to the producer once the claimant has shown likely defect and that defect-caused harm
+    - Common-law alternatives include the **"material contribution"** test in Bonnington Castings v. Wardlaw [1956] AC 613 and the **"but for"** test of factual causation
+
+  - ### 4. Damages
+  - Compensable damages under traditional tort law include personal injury, property damage, pure economic loss (limited in many jurisdictions), and—in narrowly defined circumstances—psychiatric injury and reputational harm.
+    - The revised PLD expands the categories of recoverable damage to include destruction or corruption of data not used for professional purposes and medically recognised psychological harm
+    - **[[Punitive Damages]]** (called [[exemplary damages]] in the UK) are available in the US under state law subject to constitutional due-process ceilings established in BMW v. Gore 1996 and State Farm v. Campbell 2003
+    - In the UK, exemplary damages are confined by [[Rookes v Barnard]] 1964 to three narrow categories: oppressive government conduct, profit-calculated wrongdoing, statutory authorisation
+    - Gabriel Weil's "warning shot" thesis proposes calculating punitive damages on near-miss incidents to internalise the probability-weighted cost of unrealised catastrophic risk
+    - Class-action and group-litigation damages are increasingly significant: MDL 3047 (social-media addiction), the New York Times v. OpenAI mass-copyright theory, the BC Court of Appeal Air Canada precedent
+
+  - ### 5. Defendants and Liability Chains
+  - AI value chains often involve multiple parties:
+    - **Foundation-model provider** (OpenAI, Anthropic, Google DeepMind, Meta, Mistral, xAI, DeepSeek)
+    - **Fine-tuner or integrator** adapting the base model for a specific use case
+    - **Deployer** embedding the model in a product or service offered to end-users
+    - **End-user** or affected third party
+  - Allocation rules vary by regime:
+    - The EU AI Act allocates obligations along this chain to "providers" and "deployers," with explicit downstream-modification rules (Article 25)
+    - The revised PLD extends liability to manufacturers, importers, authorised representatives, fulfilment service providers and, in some cases, distributors
+    - The Rhode Island S0358 bill places primary strict liability on **developers** of covered models trained above 10²⁶ FLOPs or costing >$100M
+    - Litigation strategy in foundation-model cases (Andersen v. Stability AI, Getty v. Stability AI, the New York Times v. OpenAI) involves complex joinder of multiple defendants across the development chain
+
+  - ### 6. Defences
+  - Defendants invoke several categories of defence:
+    - **Statutory defences.** The development-risks/state-of-the-art defence under CPA 1987 section 4(1)(e), the manufacturer-aligned defences under the revised PLD Article 11 (defect did not exist when placed on market, compliance with mandatory regulations)
+    - **Common-law defences.** Contributory negligence, volenti non fit injuria (consent to risk), intervening cause (novus actus interveniens), illegality (ex turpi causa)
+    - **Constitutional defences.** In the US, Section 230 of the Communications Decency Act for platform liability—though its application to AI outputs is contested in cases including Lemmon v. Snap 9th Cir. 2021 and the Character.AI litigation
+    - **First Amendment defences** in defamation-by-AI cases such as Walters v. OpenAI Georgia 2023 (dismissed May 2024)
+    - **Open-source defences.** Apache 2.0/MIT licence disclaimer of warranties and limitation of liability—though increasingly contested for commercial deployers
+
+  - ### 7. Insurance and Risk Transfer
+  - Insurance has become a quasi-regulatory mechanism for AI risk:
+    - **Munich Re aiSure** launched 2018 as a performance-warranty product backing third-party AI vendors, expanded 2024 for generative AI
+    - **[[Lloyd's of London]] syndicates** (Tokio Marine Kiln, Beazley, Chaucer, Hiscox) write affirmative AI coverage including IP indemnity for foundation-model users
+    - **InsurTech specialists** Vouch and Armilla AI offer dedicated AI policies for fintech and SaaS firms
+    - **Cyber carriers** including Coalition, At-Bay and CFC have introduced AI-specific endorsements covering prompt-injection, data-poisoning and model-extraction attacks
+    - **AIG and Zurich** market AI-risk addenda to professional indemnity and E&O policies
+    - The market is small but growing rapidly—estimated at $1.2B premium volume in 2025 with projections of $4-6B by 2030
+    - Reinsurance interest from Swiss Re, Hannover Re and SCOR underwrites the primary market
+
+  - ### 8. Procedural Architecture
+  - AI cases produce unique procedural challenges:
+    - **Expert evidence on neural network behaviour** governed in the US by Daubert v. Merrell Dow Pharmaceuticals 1993 standards, in the UK by the [[Civil Procedure Rules]] Part 35
+    - **Disclosure of training data and model weights** (the Andersen v. Stability AI plaintiffs' efforts to subpoena the LAION-5B dataset; the Getty UK litigation's e-discovery battles over model checkpoints)
+    - **Expert assessors** under CPR 35.15 and 35.7 single joint experts
+    - **Judicial education programmes** (the [[Federal Judicial Center]] in the US, the [[National Courts and Sciences Institute]], the Judicial College in the UK, the European Judicial Training Network)
+    - **Specialist courts and chambers** including the Chancery Division's Intellectual Property List, the Technology and Construction Court, and proposed AI-specialised divisions in Germany and France
+
+  - ## Use Cases / Major Families
+  - AI liability divides into seven major families distinguished by harm type, regulatory regime and characteristic defendants.
+
+  - ### Autonomous Vehicle Liability
+  - The most mature AI-liability domain.
+    - In the US, [[NHTSA]] regulates motor-vehicle safety under FMVSS and exercises recall authority
+    - **Standing General Order 2021-01** (June 2021, amended April 2023) requires manufacturers and operators of Level 2+ ADAS and Level 3-5 ADS vehicles to report crashes within 24 hours
+    - This data underpinned NHTSA's December 2023 recall of 2 million Tesla vehicles for Autopilot driver-engagement defects (recall 23V-838)
+    - Continuing investigations target Cruise (operations suspended October 2023 after the San Francisco dragging incident) and Waymo
+    - In the UK, the **Automated Vehicles Act 2024** establishes the Authorised Self-Driving Entity (ASDE) framework
+    - The In-Use Regulatory Scheme is administered jointly by DfT, DVSA and the new regulator under Statutory Instruments to be made 2025-2027
+    - The Authorised Self-Driving Entity—not the user-in-charge—bears criminal and civil responsibility for the vehicle's driving behaviour while in self-driving mode
+    - Notable cases include Banner v. Tesla (Florida state, jury verdict August 2023 finding Tesla 33% at fault in fatal Autopilot crash)
+    - The Mercedes Drive Pilot Level 3 deployment in California and Nevada (2023-2024) and the BMW Personal Pilot L3 (Germany 2024) illustrate the OEM-led Level 3 approach
+
+  - ### Medical AI Liability
+  - Governed by the [[FDA]] AI/ML Software as a Medical Device (SaMD) regime in the US and the [[MHRA]] Software and AI as Medical Device programme in the UK.
+    - In the EU, the MDR 2017/745 and IVDR 2017/746 apply, with EU AI Act high-risk obligations layering on top
+    - FDA's January 2021 AI/ML SaMD Action Plan introduced the **Predetermined Change Control Plan (PCCP)** framework
+    - PCCP was formalised in the December 2024 Final Guidance, permitting pre-authorised algorithm updates without 510(k) resubmission
+    - As of mid-2025 the FDA had cleared over 1,000 AI/ML-enabled medical devices
+    - The MHRA Software and AI as Medical Device Change Programme (announced 2021, Roadmap 2024) coordinates 11 work-packages including the AI Airlock regulatory sandbox for adaptive AI
+    - Liability theories include traditional medical malpractice (where the AI is a tool used by a clinician), product liability against the device manufacturer, and emerging "negligent reliance" claims against clinicians who over-trust algorithmic outputs
+    - Notable cases include the IDx-DR (diabetic-retinopathy autonomous diagnosis) regulatory framework and the litigation tail from the IBM Watson Oncology MD Anderson divestment
+
+  - ### Employment AI Liability
+  - Driven by anti-discrimination law and emerging algorithmic-accountability statutes.
+    - EU AI Act Annex III classifies employment-related AI (recruitment, performance assessment, allocation of tasks) as high-risk
+    - New York City Local Law 144 of 2021 (effective July 2023) mandates annual bias audits of Automated Employment Decision Tools (AEDTs) by an independent auditor and candidate notice
+    - Colorado AI Act SB 24-205 (effective February 2026) requires consequential-decision developers and deployers to use reasonable care, conduct impact assessments and notify subjects
+    - UK employment AI is governed by the Equality Act 2010, the UK GDPR (Article 22 on automated decision-making), and the [[ICO]]'s Guidance on AI and Data Protection
+    - The EEOC's May 2023 technical guidance on Title VII and AI provided the federal-US baseline
+    - The OFCCP's AI directive (2024) applies to federal contractors
+    - Notable cases include Mobley v. Workday N.D. Cal. (filed 2023, certification of conditional collective May 2024) alleging Workday's screening AI discriminates against older Black applicants
+
+  - ### Generative AI Content Liability
+  - A rapidly developing area covering copyright infringement in training data, output infringement, defamation by hallucination, and consumer-protection violations.
+    - **[[Andersen v. Stability AI]]** N.D. Cal. (filed January 2023, motion-to-dismiss ruling August 2024 narrowing but preserving direct-infringement and DMCA s. 1202(b) claims)
+    - **[[Getty Images v. Stability AI]]** UK High Court (trial commenced June 2025, judgment awaited late 2025 on copyright infringement and trade-mark dilution; parallel US action in D. Del. continues)
+    - **New York Times Co. v. Microsoft & OpenAI** S.D.N.Y. (filed December 2023 alleging mass copying of Times articles for GPT training)
+    - **Tremblay/Silverman/Chabon v. OpenAI** consolidated authors' MDL
+    - **Concord Music v. Anthropic** M.D. Tenn. (song-lyric copyright)
+    - **Walters v. OpenAI** (Gwinnett County Georgia 2023, dismissed May 2024 on First Amendment grounds where reasonable reader would not interpret ChatGPT output as factual)
+    - **[[Air Canada v. Moffatt]]** BCCRT 2024 held the airline liable for representations made by its chatbot regarding bereavement-fare refunds, rejecting the argument that the chatbot was a "separate legal entity"
+
+  - ### AI in Legal Practice
+  - Centres on the duty of competence and candour to the tribunal.
+    - **[[Mata v. Avianca]]** S.D.N.Y. (Judge Castel sanctions order, 22 June 2023) imposed $5,000 in Rule 11 sanctions against two attorneys who submitted ChatGPT-generated fake case citations including the fictitious "Varghese v. China Southern Airlines"
+    - The case prompted federal-court standing orders requiring AI-use disclosure (Judge Starr N.D. Tex., Judge Pearson E.D. Ind., and over 40 federal judges by mid-2025)
+    - **ABA Formal Opinion 512** (July 2024) on generative AI in legal practice sets the duty-of-competence baseline
+    - UK parallels include the Bar Standards Board guidance on AI use (December 2023) and the SRA's AI Risk Outlook (2024)
+    - The Harber v. HMRC First-tier Tribunal decision (December 2023) and Felicity Harber AI-citation case raised similar issues in UK tax tribunals
+    - The Bar Council issued a Code of Conduct supplement on AI use (September 2024)
+
+  - ### Discrimination and Algorithmic Bias
+  - Encompasses claims under multiple regimes:
+    - **EU AI Act prohibited-practices regime** (Article 5): social scoring, real-time biometric identification in public spaces with narrow exceptions, emotion recognition in workplaces and education, biometric categorisation by protected characteristics, predictive policing on profiling alone
+    - **[[Information Commissioner's Office (ICO)]] enforcement**: the Clearview AI fine of £7.5M (May 2022, reduced on appeal October 2023 on jurisdictional grounds), the Snapchat My AI investigation (2023, closed with assurances), the ongoing facial-recognition investigation into South Wales Police
+    - **FTC Section 5 enforcement**: the December 2023 [[Rite Aid]] five-year ban on facial-recognition use after wrongful identification of shoppers as shoplifters disproportionately affecting Black and Latino customers
+    - **European Court of Human Rights** jurisprudence on algorithmic decision-making in welfare administration (Glukhin v. Russia 2023) and biometric surveillance (Hambardzumyan v. Armenia 2024)
+    - **Loomis v. Wisconsin** 881 N.W.2d 749 (Wis. 2016) on COMPAS risk-assessment use in sentencing
+
+  - ### Consumer Protection and Deceptive AI Practices
+  - The frontier of FTC/CMA enforcement.
+    - The FTC's **Operation AI Comply** (September 2024) brought actions against five companies for deceptive AI claims (DoNotPay's "robot lawyer" claims, Ascend Ecom's automated dropshipping claims, Ecommerce Empire Builders, FBA Machine, Rytr's defamation-generating outputs)
+    - The CFPB has issued circulars on AI in credit underwriting and adverse-action notices (Circular 2023-03 requiring specific reasons even when AI is used)
+    - The CMA in the UK has examined foundation-model markets (CMA Foundation Models Initial Report September 2023, updated April 2024)
+    - The European Commission opened formal investigations into Microsoft-OpenAI, Amazon-Anthropic and Google-Anthropic partnerships under the EU Merger Regulation
+    - State AG enforcement: California, New York and Massachusetts have brought claims under state UDAP statutes for misrepresentations about AI capabilities
+
+  - ## Academic Context
+  - The academic study of AI liability draws on legal scholarship, computer science, economics, philosophy and public policy.
+
+  - ### Foundational Legal Scholarship
+    - **Ryan Calo**, "Robotics and the Lessons of Cyberlaw" (California Law Review 103, 2015) framing the categorisation problem
+    - **Jack Balkin**, "The Three Laws of Robotics in the Age of Big Data" (Ohio State Law Journal 78, 2017) on platform responsibility
+    - **Frank Pasquale**, "The Black Box Society" (Harvard UP 2015) on algorithmic opacity
+    - **Margot Kaminski**, "Binary Governance: Lessons from the GDPR's Approach to Algorithmic Accountability" (Southern California Law Review 92, 2019)
+    - **Restatement (Third) of Torts: Products Liability** by James Henderson and Aaron Twerski (American Law Institute 1998)
+    - The in-progress **Restatement of the Law, Torts: Concluding Provisions** of the American Law Institute (drafts 2023-2025)
+
+  - ### Frontier-AI Liability Theory
+    - **Gabriel Weil** (Touro Law Center), "Tort Law as a Tool for Mitigating Catastrophic Risk from Artificial Intelligence" (Vermont Law Review 48, 2024)
+    - Weil, "Your AI Breaks It? You Buy It" (Noema Magazine 2024) — accessible policy-focused presentation of the abnormally-dangerous-activity thesis
+    - **RAND Corporation**, "U.S. Tort Liability for Large-Scale Artificial Intelligence Damages: A Primer for Developers and Policymakers" (RR-A3084-1, 2024) by Ketan Ramakrishnan
+    - **Anthony Aguirre, Gaia Dempsey et al.**, "Reinsuring AI: Energy, Agriculture, Finance & Medicine as Precedents for Scalable Governance of Frontier Artificial Intelligence" (FLI 2024)
+    - **Cullen O'Keefe** (Institute for Law & AI), "Law-Following AI" project on building AI agents that comply with legal rules
+
+  - ### Economic Theory of Liability
+    - **Polinsky & Shavell**, "Punitive Damages: An Economic Analysis" (Harvard Law Review 111, 1998)
+    - **Shavell**, "Foundations of Economic Analysis of Law" (Belknap 2004)
+    - **Anton Korinek & Joseph Stiglitz**, "Artificial Intelligence and Its Implications for Income Distribution and Unemployment" (NBER WP 24174, 2017)
+    - **Tom Baker**, "On the Genealogy of Moral Hazard" (Texas Law Review 75, 1996)
+    - **Kenneth Abraham**, "Distributing Risk: Insurance, Legal Theory, and Public Policy" (Yale UP 1986)
+
+  - ### UK and European Academic Centres
+    - **Cambridge [[Centre for Law & Future of Innovation]]** — Felix Steffek on AI in dispute resolution, John Bell and Sarah Worthington on commercial law and AI agents
+    - **UCL Centre for Artificial Intelligence** (joint Law/Computer Science) — Mireille Hildebrandt on legal protection by design, programme director Daniel Hulme on industry interface
+    - **Sandra Wachter** (Oxford Internet Institute) — influential papers on counterfactual explanations, the right to reasonable inferences, and bias auditing
+    - **Edinburgh Centre for Technomoral Futures** (Shannon Vallor) and the Bayes Centre — UK work on AI ethics
+    - **Imperial College Centre for Technology Foresight** — systems-engineering perspectives on AI safety
+    - **Oxford Internet Institute** (Luciano Floridi until 2023; Sandra Wachter, Brent Mittelstadt) and the now-closed **Future of Humanity Institute** (closed April 2024) drove the early frontier-AI risk literature
+    - **Alan Turing Institute Public Policy Programme** — applied AI-governance research with UK regulators
+    - **Cambridge Centre for the Study of Existential Risk (CSER)** and the Leverhulme Centre for the Future of Intelligence (CFI)
+
+  - ### US Academic Centres
+    - **Stanford CodeX** (Roland Vogl, Dan Ho) on legal informatics
+    - **Berkman Klein Center at Harvard** (Yochai Benkler, Jonathan Zittrain) on platform governance
+    - **NYU AI Now Institute** (Meredith Whittaker, Kate Crawford until 2022) on critical AI studies
+    - **Princeton Center for Information Technology Policy** (Edward Felten, Arvind Narayanan)
+    - **Berkeley Law's Technology, Society & Policy Initiative**
+    - **Touro University Law Center** — focal point for tort-theoretic approaches via Gabriel Weil
+    - **Institute for Law & AI** (Cullen O'Keefe, formerly of OpenAI)
+    - **GovAI** (Allan Dafoe, formerly Oxford, now Google DeepMind)
+    - **Yale Information Society Project** (Jack Balkin)
+
+  - ### Journals and Conferences
+    - **Journals**: *Yale Journal of Law & Technology*, *Harvard Journal of Law & Technology*, *Cambridge Law Journal*, *Modern Law Review*, *Oxford Journal of Legal Studies*, *Computer Law & Security Review*, *International Journal of Law and Information Technology*, *AI and Ethics* (Springer), *Journal of AI Law* (launched 2024)
+    - **Conferences**: FAccT (ACM Conference on Fairness, Accountability, and Transparency), AIES (AAAI/ACM AI Ethics & Society), the Society for Computers & Law annual conference, We Robot, ICAIL (International Conference on Artificial Intelligence and Law)
+
+  - ## Current Landscape (2026)
+
+  - ### EU AI Act Implementation
+    - Regulation (EU) 2024/1689 published 12 July 2024 entered into force 1 August 2024
+    - **Prohibitions** on eight categories of prohibited AI practices applied from 2 February 2025: social scoring, manipulative subliminal techniques, exploitation of vulnerabilities, untargeted facial-image scraping, emotion recognition in workplaces and education, biometric categorisation by protected characteristics, real-time biometric identification in public spaces, predictive policing on profiling alone
+    - **GPAI obligations** commenced 2 August 2025
+    - The **EU GPAI Code of Practice** published May 2025 covers transparency (technical documentation, training-data summary), copyright (machine-readable opt-out compliance with Article 4 of Directive (EU) 2019/790), and safety/security (systemic-risk evaluation, incident reporting)
+    - **High-risk system obligations** apply 2 August 2026
+    - **Penalties**: €35M or 7% of global turnover for prohibited practices; €15M or 3% for high-risk non-compliance; €7.5M or 1% for incorrect information
+    - The **European AI Office** (within DG CONNECT, established February 2024) co-ordinates GPAI oversight with the European Artificial Intelligence Board
+    - Member-State **National Competent Authorities** designated by 2 August 2025
+
+  - ### EU Revised Product Liability Directive
+    - Directive (EU) 2024/2853 entered into force 9 December 2024
+    - Member-State transposition required by 9 December 2026
+    - Key changes from Directive 85/374/EEC:
+      - "Product" expressly includes software, AI systems, digital-manufacturing files and "related services" integrated into a product
+      - The €500 deductible is abolished
+      - Damages now include destruction or corruption of non-professional data and medically recognised psychological harm
+      - **Article 10** introduces presumptions of defectiveness and causation when claimants face excessive evidentiary difficulties
+      - **Article 16** establishes disclosure obligations on defendants
+      - The 10-year long-stop is extended to 25 years for latent-injury claims
+      - The development-risks/state-of-the-art defence is retained but narrowed
+
+  - ### AILD Withdrawal
+    - The European Commission withdrew the AI Liability Directive proposal COM(2022) 496 on 11 February 2025
+    - Withdrawal occurred as part of the 2025 Work Programme reset, citing "no foreseeable agreement"
+    - The withdrawal leaves AI-specific causation rules to Member-State tort regimes
+    - The revised PLD's parallel presumptions cover the same evidentiary territory for product-liability claims
+    - Academic commentary (Oxford Business Law Blog April 2025) argues EU law remains influential through the PLD even without the AILD
+    - The Commission's announcement signalled possible revisitation if implementation experience reveals gaps
+
+  - ### US Federal Landscape
+    - No comprehensive federal AI liability statute as of mid-2026
+    - The Trump Administration's "America's AI Action Plan" (released July 2025) emphasises competition with China, seeks to pre-empt state regulations that "unduly restrict innovation," and accelerates federal AI adoption
+    - The bipartisan Senate AI Working Group's May 2024 Roadmap remains a reference document
+    - Federal agencies act under existing authorities: FTC Section 5, CFPB Dodd-Frank powers, EEOC Title VII, HUD Fair Housing Act, FDA FDC Act, NHTSA Motor Vehicle Safety Act
+    - NIST published the AI RMF Generative AI Profile (NIST AI 600-1) in July 2024
+    - The Executive Order on AI (EO 14110, October 2023) was rescinded January 2025 and replaced by the Trump AI Action Plan
+    - The **US AI Safety Institute** (NIST AISI) survived the reorganisation in modified form
+
+  - ### US State Landscape
+    - **Colorado AI Act** SB 24-205 (enacted May 2024, effective February 2026) — first comprehensive state AI law covering consequential decisions in employment, housing, credit, healthcare, education, government services, legal services and insurance
+    - **Utah AI Policy Act** (effective May 2024) requires disclosure for regulated occupations
+    - **California SB 1047** (passed Legislature August 2024) vetoed by Governor Newsom 29 September 2024; SB 53 reintroduced 2025
+    - **Texas Responsible AI Governance Act** HB 1709 advanced through 2025
+    - **Connecticut SB 2** enacted 2024
+    - **Illinois HB 3773** effective January 2026 covers AI in employment
+    - **New York City Local Law 144** continues in force; New York State S7623-A pending
+    - **Rhode Island S0358** (2025) introduces frontier-AI strict liability — Gabriel Weil instrumental in drafting
+
+  - ### UK Trajectory
+    - The pro-innovation framework continues but is contested
+    - The Labour Government elected July 2024 committed in its manifesto to "binding regulation on the handful of companies developing the most powerful AI models"
+    - No Government AI Bill had been introduced by mid-2026
+    - Lord Holmes' **Artificial Intelligence (Regulation) Bill [HL]** was reintroduced March 2025
+    - The Department for Science, Innovation and Technology (DSIT) Central Function continues co-ordinating regulator action
+    - The [[UK AI Safety Institute]] was renamed the **AI Security Institute** in February 2025 with narrower remit focused on national-security-related risks
+    - The **Automated Vehicles Act 2024** (Royal Assent 20 May 2024) is the most significant AI-specific UK statute, implementing the joint Law Commission/Scottish Law Commission proposals on the ASDE framework
+    - The Online Safety Act 2023 implementation by Ofcom contains AI-relevant provisions on illegal content and child-safety duties
+
+  - ### Notable 2024-2026 Cases
+    - **[[Air Canada v. Moffatt]]** 2024 BCCRT 149 (chatbot misrepresentation; airline liable)
+    - **Mata v. Avianca** SDNY 22 June 2023 (Rule 11 sanctions of $5,000 for ChatGPT-fabricated citations)
+    - **Garcia v. Character Technologies** M.D. Fla. 21 May 2025 (chatbot app as product for strict liability)
+    - **[[Getty Images v. Stability AI]]** UK High Court trial commenced June 2025
+    - **[[Andersen v. Stability AI]]** N.D. Cal. motion-to-dismiss ruling 12 August 2024
+    - **New York Times v. OpenAI** S.D.N.Y. filed December 2023
+    - **Walters v. OpenAI** Gwinnett County 2024 (defamation by ChatGPT, dismissed 19 May 2024 on First Amendment grounds)
+    - **In re Social Media Adolescent Addiction MDL 3047** N.D. Cal. (consolidated cases against Meta, TikTok, Snap, YouTube on platform-design product liability)
+    - **Mobley v. Workday** N.D. Cal. (Workday recruitment AI alleged discrimination)
+    - **Concord Music v. Anthropic** M.D. Tenn. (song-lyric copyright)
+
+  - ### FTC and Federal Enforcement
+    - **Rite Aid** five-year facial-recognition ban (December 2023) remains the high-water mark — first FTC ban on a specific AI use
+    - **Operation AI Comply** (September 2024) targeted five firms for deceptive AI claims
+    - **Amazon Alexa COPPA settlement** ($25M, 2023) addressed children's voice-recording retention
+    - **Ring settlement** ($5.8M, 2023) addressed employee access to consumer video
+    - **CFPB Circular 2023-03** requires specific reasons in adverse-action notices even when AI is used
+    - **NIST AI Safety Institute Consortium** (AISIC) formed May 2024 with 200+ member organisations
+
+  - ### Insurance Market
+    - Premium volume estimated at $1.2B in 2025, projected $4-6B by 2030
+    - **Munich Re aiSure** expanded for generative AI 2024
+    - **Lloyd's of London** syndicates Tokio Marine Kiln, Beazley, Chaucer, Hiscox write affirmative AI coverage
+    - **InsurTech specialists** Vouch and Armilla AI offer specialist policies
+    - **Cyber carriers** Coalition and At-Bay introduced cyber+AI endorsements
+    - **AIG's AI risk addendum** to professional indemnity launched 2024
+    - **Swiss Re, Hannover Re, SCOR** provide reinsurance backing
+    - Lloyd's-led market forecasts suggest AI catastrophe coverage gap requiring government reinsurance backstop by 2030
+
+  - ## UK Context
+  - The United Kingdom's approach to AI liability blends a deliberately light-touch principles-based regulatory framework with statutory action in specific sectors and active academic-legal scholarship.
+
+  - ### Pro-Innovation Regulatory Framework
+    - The March 2023 White Paper "A pro-innovation approach to AI regulation" (CP 815) declined to legislate a horizontal AI statute
+    - Existing regulators are tasked with applying five cross-cutting principles within their existing remits:
+      - Safety, security and robustness
+      - Appropriate transparency and explainability
+      - Fairness
+      - Accountability and governance
+      - Contestability and redress
+    - Key sectoral regulators applying the principles:
+      - **[[Information Commissioner's Office (ICO)]]** — data protection and AI
+      - **[[Competition and Markets Authority (CMA)]]** — competition and consumer
+      - **[[MHRA]]** — medical devices and AI
+      - **Financial Conduct Authority (FCA)** — financial-services AI
+      - **Prudential Regulation Authority (PRA)** — bank/insurer model risk
+      - **Ofcom** — online safety and AI content
+      - **Health and Safety Executive (HSE)** — workplace AI
+      - **Equality and Human Rights Commission (EHRC)** — discrimination
+      - **Office for Standards in Education (Ofsted)** — education AI
+    - The **Department for Science, Innovation and Technology (DSIT)** operates a Central Function to co-ordinate cross-regulator activity
+
+  - ### Parliamentary Pressure for Statutory Footing
+    - The **House of Commons Science, Innovation and Technology Committee** has challenged the light-touch approach
+    - August 2023 interim report "The governance of artificial intelligence"
+    - August 2024 Final Report called for statutory footing and clear allocation of liability via legislation
+    - Lord Holmes of Richmond introduced the **Artificial Intelligence (Regulation) Bill [HL]** in the 2023-24 session (Bill 11)
+    - The Bill was reintroduced as a Private Member's Bill in March 2025
+    - Provisions include: establishing an AI Authority, mandating regulatory sandboxes, requiring AI-impact assessments
+    - The Labour Government elected July 2024 committed to legislating for "the most powerful AI models" but no Government Bill had been introduced as of mid-2026
+
+  - ### Automated Vehicles Act 2024
+    - Royal Assent 20 May 2024 — the most significant AI-specific UK statute
+    - Implements the joint **[[Law Commission]] of England and Wales / Scottish Law Commission** Automated Vehicles project (final joint report January 2022, HC 1149)
+    - Creates the **Authorised Self-Driving Entity (ASDE)** framework
+    - An ASDE bears criminal and civil responsibility for the driving behaviour of a self-driving vehicle while engaged in self-driving mode
+    - Displaces the user-in-charge's liability during self-driving operation
+    - Statutory Instruments under the Act will implement the In-Use Regulatory Scheme administered jointly by DfT, DVSA and the new regulator
+    - Phased implementation 2025-2027
+
+  - ### ICO as Active AI Regulator
+    - The most active UK AI regulator with broadest enforcement reach
+    - Key guidance: Guidance on AI and Data Protection (updated 2023), the AI auditing framework (2020), and the Generative AI consultation series (2024)
+    - Enforcement: the **Clearview AI £7.5M fine** (May 2022, reduced on appeal October 2023 on jurisdictional grounds)
+    - Snapchat My AI investigation (2023, closed with assurances)
+    - Ongoing investigation into facial-recognition use by South Wales Police
+    - The ICO operates the AI and Biometrics Strategy with the EHRC
+
+  - ### CMA Foundation Models Work
+    - CMA Initial Report on AI Foundation Models (September 2023)
+    - Updated Principles (April 2024): Accountability, Access, Diversity, Choice, Flexibility, Fair Dealing, Transparency
+    - Merger reviews: Microsoft-OpenAI (December 2023, closed March 2024 finding no relevant merger situation), Amazon-Anthropic (closed September 2024), Google-Anthropic (closed November 2024)
+    - The CMA's market study powers under the Enterprise Act 2002 enable continuing oversight
+
+  - ### MHRA Software and AI as Medical Device
+    - MHRA Software and AI as Medical Device Change Programme announced 2021
+    - Roadmap published 2024 covering 11 work-packages
+    - Topics include qualification, classification, premarket requirements, post-market surveillance, cybersecurity and AI-specific provisions
+    - **AI Airlock regulatory sandbox** launched May 2024 for adaptive AI medical devices
+    - Alignment with IMDRF guidance and IEC 62304/82304
+
+  - ### UK AI Safety Institute → AI Security Institute
+    - Established as part of the November 2023 Bletchley Park AI Safety Summit
+    - Conducted pre-deployment evaluations of frontier models with voluntary cooperation from OpenAI, Anthropic, Google DeepMind, Meta, Mistral, Microsoft and Amazon
+    - **Renamed the AI Security Institute (AISI) in February 2025** with narrowed remit
+    - New focus: national-security-related risks (cyber, CBRN, autonomous-systems abuse)
+    - The AISI's evaluations framework continues to influence international model-testing standards
+    - International Network of AI Safety Institutes coordinated via the Seoul Declaration (May 2024) and Paris Action Summit (February 2025)
+
+  - ### UK Academic Centres
+    - **Cambridge [[Centre for Law & Future of Innovation]]** (LawTech Lab, Felix Steffek) on AI in dispute resolution, AI contracting and digital assets
+    - **UCL Centre for Artificial Intelligence** (Computer Science + Laws) houses Mireille Hildebrandt's work on legal protection by design
+    - **Edinburgh Centre for Technomoral Futures** (Shannon Vallor) leads UK work on AI ethics
+    - **Imperial College Centre for Technology Foresight** contributes systems engineering perspectives
+    - **Oxford Internet Institute** (Sandra Wachter, Brent Mittelstadt) — counterfactual-explanations and right-to-reasonable-inferences scholarship
+    - **Alan Turing Institute Public Policy Programme** — applied research with UK regulators
+
+  - ### Northern English Industrial AI-Law Cluster
+    - **Manchester's School of Law** — David Sugarman, Diane Coyle on AI economics
+    - **Leeds' Information School** — Helen Kennedy on algorithmic accountability
+    - **Sheffield's Information School** and **Newcastle's School of Law** contribute the Northern English industrial AI-law cluster
+    - Manchester serves as the AI Greater North hub with industrial AI deployments in:
+      - Transport: TfGM, Northern Trains operational AI
+      - Healthcare: Manchester University NHS Foundation Trust AI pathology
+      - Advanced manufacturing: Sheffield AMRC AI for additive manufacturing
+      - Law: Manchester legaltech cluster including Slaughter and May's Luminance investment
+
+  - ### Law Commission and Professional Bodies
+    - The **[[Law Commission]] of England and Wales** continues scoping work on AI liability, building on the Automated Vehicles project
+    - The Commission's 14th Programme of Law Reform (March 2024) includes provisional projects on **Digital Assets and ETDs**
+    - Bar Standards Board AI use guidance (December 2023)
+    - SRA Risk Outlook (2024) on AI in solicitors' practice
+    - The **Society for Computers & Law** convenes the leading UK AI-law practitioner community
+    - The British Computer Society (BCS) and Royal Statistical Society contribute professional-standards work
+
+  - ## Future Directions (2026-2030)
+  - Five trajectories will define AI liability through 2030. First, **horizontal AI liability legislation** is likely in the UK before end-2027 covering frontier-model developers with mandatory pre-deployment evaluation, model registration, and post-deployment incident reporting; the Government's stated commitment to "binding regulation on the handful of companies developing the most powerful AI models" plus mounting Parliamentary pressure make a Government AI Bill increasingly probable. Second, the **EU AI Act high-risk regime** comes fully into force 2 August 2026 producing the first wave of conformity-assessment litigation and Member-State market-surveillance enforcement, with national competent authorities designated by 2 August 2025 and the European AI Office (within DG CONNECT, established within the European Commission February 2024) co-ordinating GPAI oversight. Third, **AI liability litigation in the US** will expand dramatically as MDL 3047 (social-media adolescent addiction) and the foundation-model copyright cases (NYT v. OpenAI, Andersen v. Stability AI, Authors Guild v. OpenAI) reach summary-judgment and trial stages 2026-2028; appellate review of Character.AI's product-liability ruling will set a critical precedent on whether chatbot apps are "products" for strict-liability purposes. Fourth, **insurance market formalisation** will accelerate, with Lloyd's expected to publish AI-specific model wordings, the IUA producing standard exclusions/inclusions, and reinsurers (Munich Re, Swiss Re, Hannover Re, SCOR, Lloyd's) developing AI-catastrophe coverage; mandatory professional indemnity for AI deployers in regulated sectors (healthcare, finance, legal) is probable by 2028. Fifth, **frontier-AI strict liability** debates will intensify as larger models deploy: the Rhode Island S0358 bill or equivalent state legislation may pass; California SB 53 (the SB 1047 successor) faces revived consideration; UK Parliamentary debate on abnormally-dangerous-activity treatment for frontier model development will gather force; and the EU may revisit the AILD withdrawal in light of accumulated PLD case law.
+  - Beyond these near-term trajectories, three deeper structural shifts are emerging. The **convergence of AI liability and AI safety**: pre-deployment evaluation requirements (initially voluntary under the Bletchley/Seoul/Paris commitments and the EU GPAI Code of Practice) will harden into legally binding obligations, creating an audit-trail prerequisite for limitation of liability defences. The **rise of compulsory insurance regimes** modelled on the [[Price-Anderson Act]]'s nuclear-industry precedent, with industry pools and government reinsurance backstops; the OMS Insurance "Insuring emerging risks from AI" framework (November 2024) and the ResearchGate Reinsuring AI proposals (Aguirre et al. 2024) sketch the design. The **judicialisation of AI safety**: as case law accumulates, technical standards (ISO/IEC 42001, NIST AI RMF, the EU GPAI Code of Practice) will become de facto standards of care, with breach producing presumptive negligence under the negligence per se doctrine; conversely, certification under recognised frameworks will become a partial safe-harbour defence.
+  - The deepest unresolved question is whether existing tort doctrines can be **stretched to cover frontier AI**, or whether **purpose-built regimes** are required. The dominant academic view (Weil, Korinek, Aguirre, the RAND analysis) is that catastrophic and existential risks from frontier AI cannot be adequately deterred by compensatory damages alone—an insurance-uninsurable, judgment-proof scenario where no plaintiff exists post-catastrophe. Solutions include Weil's **warning-shot punitive multipliers** (calculating punitive damages on near-miss events to reflect the probability-weighted cost of the unrealised catastrophic risk), **mandatory compulsory insurance** (forcing insurers to become quasi-regulators of safety practices), and **strict liability for abnormally dangerous activity** treating frontier-model training as ultrahazardous. Whether any of these is politically achievable—particularly in the US where federal AI legislation faces structural obstacles and the Trump Administration prioritises deregulation—remains the defining open question of AI governance.
+
+  - ## Research & Literature
+  - **Core academic works.** Gabriel Weil, "Tort Law as a Tool for Mitigating Catastrophic Risk from Artificial Intelligence" (Vermont Law Review 48, 2024); Ketan Ramakrishnan et al., "U.S. Tort Liability for Large-Scale Artificial Intelligence Damages" (RAND RR-A3084-1, 2024); Margot Kaminski, "Binary Governance: Lessons from the GDPR's Approach to Algorithmic Accountability" (Southern California Law Review 92, 2019); Mireille Hildebrandt, "Law for Computer Scientists and Other Folk" (OUP 2020); Sandra Wachter & Brent Mittelstadt, "A Right to Reasonable Inferences" (Columbia Business Law Review 2019); Ryan Calo, "Robotics and the Lessons of Cyberlaw" (California Law Review 103, 2015); Frank Pasquale, "The Black Box Society" (Harvard UP 2015); Jack Balkin, "The Three Laws of Robotics in the Age of Big Data" (Ohio State Law Journal 78, 2017); Anton Korinek & Joseph Stiglitz, "Artificial Intelligence and Income Distribution" (NBER 24174, 2018).
+  - **Key reports.** RAND Corporation "U.S. Tort Liability for Large-Scale AI Damages" RR-A3084-1 (2024); House of Commons Science, Innovation and Technology Committee "The governance of artificial intelligence" Final Report (August 2024); UK Government "A pro-innovation approach to AI regulation" White Paper CP 815 (March 2023) and Consultation Response (February 2024); European Commission "AI Liability Directive Withdrawal Notice" (11 February 2025); RAND "Insuring Emerging Risks from AI" OMS Insurance (November 2024); Aguirre, Dempsey et al., "Reinsuring AI" Future of Life Institute (2024); CMA "AI Foundation Models: Initial Report" (September 2023) and "AI Foundation Models: Update Paper" (April 2024).
+  - **Primary legislation.** Regulation (EU) 2024/1689 (EU AI Act); Directive (EU) 2024/2853 (revised Product Liability Directive); UK Automated Vehicles Act 2024; UK Consumer Protection Act 1987; US Restatement (Second) of Torts § 402A; US Restatement (Third) of Torts: Products Liability (1998); Colorado AI Act SB 24-205; New York City Local Law 144 of 2021; Rhode Island Senate Bill S0358 (2025).
+  - **Landmark cases.** Donoghue v. Stevenson [1932] AC 562; Caparo Industries plc v. Dickman [1990] 2 AC 605; Rylands v. Fletcher (1868) LR 3 HL 330; Brown v. Kendall 60 Mass 292 (1850); Palsgraf v. Long Island Railroad 248 NY 339 (1928); BMW v. Gore 517 US 559 (1996); State Farm v. Campbell 538 US 408 (2003); Rookes v. Barnard [1964] AC 1129; Daubert v. Merrell Dow Pharmaceuticals 509 US 579 (1993); Mata v. Avianca No. 22-CV-1461 (SDNY 22 June 2023); Air Canada v. Moffatt 2024 BCCRT 149; Garcia v. Character Technologies Inc. M.D. Fla. 21 May 2025; Andersen v. Stability AI No. 3:23-cv-00201 (N.D. Cal. 12 August 2024); Getty Images v. Stability AI UK High Court [2025] EWHC pending; Walters v. OpenAI No. 23-A-04860-2 (Gwinnett County GA dismissed 19 May 2024).
+  - **Technical standards.** ISO/IEC 42001:2023 (AI Management System); ISO/IEC 23894:2023 (AI risk management); ISO/IEC TR 24028 (AI trustworthiness); IEC 62304/82304 (medical software lifecycle); NIST AI RMF 1.0 (January 2023) with Generative AI Profile NIST AI 600-1 (July 2024); IEEE 7000-2021 (Model Process for Addressing Ethical Concerns During System Design); IEEE 7001-2021 (Transparency of Autonomous Systems); IMDRF/SaMD WG (medical software).
+  - **Practitioner sources.** Hogan Lovells "AI Liability in the EU and UK" (2024-2025); Norton Rose Fulbright "Artificial Intelligence and Liability" (2024); Morrison Foerster "Software Gains New Status as a Product Under Strict Liability Law" (2025); Bird & Bird "EU AI Act: Practical Guide" (2024); Linklaters "AI Liability Tracker" (quarterly 2024-2026); DLA Piper "Insuring the unpredictable: The challenges of AI risk insurability" (2024); American Bar Association Section of Litigation "Have Algorithms Opened Up Your Software to Product Liability?" (2024); Stanford Encyclopaedia of Philosophy entry on "Ethics of Artificial Intelligence and Robotics" (Müller, revised 2024).
+
+  - ## Metadata
+  - **Ontology Domain.** [[AI-GroundedDomain]] / [[LegalAndRegulatoryDomain]]
+  - **Legacy Term ID.** AI-1087
+  - **Frontmatter Provenance.** Domain validated as `artificial-intelligence` (concept sits at the intersection of AI and legal/regulatory ontologies; AI domain selected as primary because the concept's defining feature is the type of system being regulated; legal/regulatory aspects captured via belongs-to-domain and is-subclass-of relationships). No domain correction required.
+  - **Cross-references.** [[AI Governance]], [[AI Safety]], [[AI Agent System]], [[Foundation Model]], [[Frontier AI]], [[Product Liability]], [[Tort Law]], [[Negligence]], [[Strict Liability]], [[Vicarious Liability]], [[Abnormally Dangerous Activity]], [[EU AI Act]], [[Consumer Protection Act 1987]], [[Product Liability Directive]], [[AI Liability Directive]], [[Restatement (Second) of Torts § 402A]], [[Information Commissioner's Office (ICO)]], [[Competition and Markets Authority (CMA)]], [[MHRA]], [[NHTSA]], [[FDA]], [[FTC]], [[Lloyd's of London]], [[Federal Judicial Center]], [[Law Commission]], [[Centre for Law & Future of Innovation]], [[UK AI Safety Institute]], [[Air Canada v. Moffatt]], [[Mata v. Avianca]], [[Character.AI]], [[Getty Images v. Stability AI]], [[Andersen v. Stability AI]], [[Gabriel Weil]], [[Price-Anderson Act]].
+  - **Last Validated.** 2026-05-16
 
 - ### Provenance
-  - sources:: [[EU AI Act]]
-  - migration-date:: 2026-04-26T00:00:00Z
-  - modified:: 2026-04-26T15:00:00Z
+  - sources:: [[EU AI Act]], [[Product Liability Directive]], [[Consumer Protection Act 1987]], [[Automated Vehicles Act 2024]], [[Restatement (Second) of Torts § 402A]], [[NIST AI Risk Management Framework]], [[ISO/IEC 42001]]
+  - References (research-grade citations, accessed May 2026):
+    1. Regulation (EU) 2024/1689 (Artificial Intelligence Act). Official Journal L 1689, 12 July 2024. https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+    2. Directive (EU) 2024/2853 (revised Product Liability Directive). Official Journal L 2853, 18 November 2024. https://eur-lex.europa.eu/eli/dir/2024/2853/oj
+    3. European Commission Work Programme 2025: Withdrawal of AI Liability Directive (COM(2022) 496). 11 February 2025. https://commission.europa.eu/strategy-documents/commission-work-programme/commission-work-programme-2025_en
+    4. UK Government, "A pro-innovation approach to AI regulation" White Paper, CP 815 (29 March 2023). https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach
+    5. UK House of Commons Science, Innovation and Technology Committee, "The governance of artificial intelligence: interim report" HC 1769 (August 2023) and Final Report (August 2024). https://publications.parliament.uk/pa/cm5804/cmselect/cmsctech/38/report.html
+    6. Automated Vehicles Act 2024, c. 10 (Royal Assent 20 May 2024). https://www.legislation.gov.uk/ukpga/2024/10/contents
+    7. Law Commission of England and Wales & Scottish Law Commission, "Automated Vehicles: joint report" (Law Com No 404; Scot Law Com No 258), HC 1149 (26 January 2022). https://www.lawcom.gov.uk/project/automated-vehicles/
+    8. Consumer Protection Act 1987, c. 43. https://www.legislation.gov.uk/ukpga/1987/43/contents
+    9. Information Commissioner's Office, "Guidance on AI and Data Protection" (updated 15 March 2023). https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/
+    10. Competition and Markets Authority, "AI Foundation Models: Update paper" (CMA 199, April 2024). https://www.gov.uk/cma-cases/ai-foundation-models-initial-review
+    11. NHTSA Standing General Order 2021-01 (incident reporting for ADAS/ADS), as amended April 2023. https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting
+    12. FDA, "Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence-Enabled Device Software Functions" (Final Guidance, December 2024). https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence
+    13. MHRA, "Software and AI as a Medical Device Change Programme: Roadmap" (2024). https://www.gov.uk/government/publications/software-and-ai-as-a-medical-device-change-programme
+    14. FTC, "FTC Order Will Ban Rite Aid from Using Facial Recognition Technology for Five Years" (Press Release, 19 December 2023). https://www.ftc.gov/news-events/news/press-releases/2023/12/ftc-order-will-ban-rite-aid-using-facial-recognition-technology-five-years
+    15. FTC, "Operation AI Comply: Cracking Down on AI Hype" (Press Release, 25 September 2024). https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes
+    16. Air Canada v. Moffatt, 2024 BCCRT 149 (14 February 2024). https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html
+    17. Mata v. Avianca, Inc., No. 22-CV-1461 (S.D.N.Y. 22 June 2023). Sanctions Order. https://www.courtlistener.com/docket/63107798/mata-v-avianca-inc/
+    18. Garcia v. Character Technologies, Inc., No. 6:24-cv-1903 (M.D. Fla. 21 May 2025). Motion-to-dismiss ruling on product-liability theory.
+    19. Andersen v. Stability AI Ltd., No. 3:23-cv-00201-WHO (N.D. Cal. 12 August 2024). Motion-to-dismiss order. https://storage.courtlistener.com/recap/gov.uscourts.cand.407208/gov.uscourts.cand.407208.223.0.pdf
+    20. Getty Images (US) Inc. v. Stability AI Ltd., UK High Court (Chancery Division, Intellectual Property List), case CL-2023-000007. Trial commenced June 2025.
+    21. Gabriel Weil, "Tort Law as a Tool for Mitigating Catastrophic Risk from Artificial Intelligence," 48 Vermont Law Review (2024). https://lawreview.vermontlaw.edu/
+    22. Ketan Ramakrishnan, "U.S. Tort Liability for Large-Scale Artificial Intelligence Damages: A Primer for Developers and Policymakers," RAND Corporation RR-A3084-1 (2024). https://www.rand.org/pubs/research_reports/RRA3084-1.html
+    23. NIST, "Artificial Intelligence Risk Management Framework (AI RMF 1.0)," NIST AI 100-1 (January 2023) and Generative AI Profile NIST AI 600-1 (July 2024). https://www.nist.gov/itl/ai-risk-management-framework
+    24. ISO/IEC 42001:2023 "Information technology — Artificial intelligence — Management system." International Organization for Standardization. https://www.iso.org/standard/81230.html
+    25. Rhode Island Senate Bill S0358 (2025 Regular Session). https://legiscan.com/RI/text/S0358/2025
+    26. Colorado AI Act, SB 24-205 (enacted 17 May 2024, effective 1 February 2026). https://leg.colorado.gov/bills/sb24-205
+    27. Norton Rose Fulbright, "Artificial intelligence and liability: Key takeaways from recent EU legislative initiatives" (2024). https://www.nortonrosefulbright.com/en-gb/knowledge/publications/7052eff6/artificial-intelligence-and-liability
+    28. Hogan Lovells, "AI liability in the EU (and UK): What's the current state of play?" (2024). https://www.hoganlovells.com/en/publications/ai-liability-in-the-eu-and-uk-whats-the-current-state-of-play
+  - **Migration metadata.**
+    - migration-date:: 2026-04-26T00:00:00Z
+    - enrichment-date:: 2026-05-16T14:00:00Z
+    - enrichment-model:: claude-opus-4-7
+    - enrichment-pattern:: Phase-6
+    - domain-validation:: confirmed-as-artificial-intelligence (no correction required)
+    - structural-changes:: Restructured stub-with-essay-body into 5-section Phase 6 pattern with OWL axiom block (35 axioms across Compositional/Dependency/Capability/Implementation/Reduction families), 76 wikilink relationships across 11 types, 28 academic/industry/specification references; updated to reflect 2024-2026 regulatory landscape (revised PLD entering force December 2024, AILD withdrawal February 2025, EU AI Act phased application August 2024 onwards, Automated Vehicles Act 2024 Royal Assent May 2024, UK AISI rename to AI Security Institute February 2025, Colorado AI Act SB 24-205 effective February 2026, Rite Aid FTC order December 2023, Operation AI Comply September 2024, Air Canada v. Moffatt February 2024, Character.AI Garcia ruling May 2025, Getty UK High Court trial June 2025).

@@ -1,0 +1,153 @@
+{
+  "id": "urn:visionflow:page:5eb12dfdc9a66690a31b2e67e54e53d11d7e78ababf808930a75b2944dadedab",
+  "title": "Real-Time Rendering",
+  "slug": "real-time-rendering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-rendering",
+  "domain": "infrastructure",
+  "definition": "Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds. The graphics pipeline processes geometry, applies textures and lighting, and rasterizes the final image fast enough to support interactive applications such as video games, simulations, and virtual reality.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:three-dimensional-graphics",
+      "label": "Three Dimensional Graphics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:interactive-visualization",
+        "label": "Interactive Visualization"
+      },
+      {
+        "id": "urn:visionflow:linked:video-games",
+        "label": "Video Games"
+      },
+      {
+        "id": "urn:visionflow:owl:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interactive-visualization",
+      "label": "Interactive Visualization"
+    },
+    {
+      "slug": "video-games",
+      "label": "Video Games"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "etsi-domain-immersive-experiences",
+      "label": "ETSI_Domain_Immersive_Experiences"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "ar-overlay",
+      "label": "Ar Overlay"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "data-processing-hardware",
+      "label": "Data Processing Hardware"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

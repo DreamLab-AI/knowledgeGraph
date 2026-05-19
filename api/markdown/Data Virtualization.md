@@ -1,21 +1,286 @@
-iri:: http://narrativegoldmine.com/infrastructure#DataVirtualization
-uri:: urn:visionclaw:concept:infrastructure:data-virtualization
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:data-virtualization
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Data Virtualization
-content-hash:: sha256-12-5d584e4d09bd
-legacy-term-id:: MV-9841
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DataVirtualization
+legacy_uri:: urn:visionclaw:concept:infrastructure:data-virtualization
 public:: true
+
+# Data Virtualization
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5",
+  "@type": "Page",
+  "vc:slug": "data-virtualization",
+  "title": "Data Virtualization",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:data-connectors",
+      "vc:label": "Data Connectors"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-federation",
+      "vc:label": "Data Federation"
+    },
+    {
+      "@id": "urn:visionflow:linked:query-engine",
+      "vc:label": "Query Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-data-access",
+      "vc:label": "Real-Time Data Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:unified-data-view",
+      "vc:label": "Unified Data View"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-integration",
+      "vc:label": "Data Integration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-management",
+      "vc:label": "Metadata Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5d584e4d09bd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DataVirtualization"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9841"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Data Virtualization"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-virtualization"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-virtualization"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:data-virtualization",
+  "@type": "OntologyClass",
+  "label": "Data Virtualization",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:data-integration",
+      "vc:label": "Data Integration"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reducing data management complexity.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:data-connectors",
+      "vc:label": "Data Connectors"
+    },
+    {
+      "@id": "urn:visionflow:linked:query-engine",
+      "vc:label": "Query Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-management",
+      "vc:label": "Metadata Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:data-federation",
+      "vc:label": "Data Federation"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-data-access",
+      "vc:label": "Real-Time Data Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:unified-data-view",
+      "vc:label": "Unified Data View"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:data-virtualization:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Data Connectors]]",
+      "resolved": "urn:visionflow:linked:data-connectors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Federation]]",
+      "resolved": "urn:visionflow:linked:data-federation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Query Engine]]",
+      "resolved": "urn:visionflow:linked:query-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Data Access]]",
+      "resolved": "urn:visionflow:linked:real-time-data-access",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Unified Data View]]",
+      "resolved": "urn:visionflow:linked:unified-data-view",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Integration]]",
+      "resolved": "urn:visionflow:owl:class:data-integration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Management]]",
+      "resolved": "urn:visionflow:owl:class:metadata-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reducing data management complexity.

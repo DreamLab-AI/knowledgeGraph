@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2",
+  "title": "Bias",
+  "slug": "bias",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bias",
+  "domain": "artificial-intelligence",
+  "definition": "Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "confusion-matrices",
+      "label": "confusion matrices"
+    },
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "nist-national-institute-of-standards-and-technology",
+      "label": "NIST (National Institute of Standards and Technology)"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "boosting",
+      "label": "Boosting"
+    }
+  ]
+}

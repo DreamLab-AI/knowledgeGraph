@@ -1,24 +1,216 @@
-iri:: http://narrativegoldmine.com/spatial-computing#RealTimeCharacterAnimation
-uri:: urn:visionclaw:concept:spatial-computing:real-time-character-animation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:real-time-character-animation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Real Time Character Animation
-content-hash:: sha256-12-9c61ba7bcdec
-legacy-term-id:: MV-10016
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#RealTimeCharacterAnimation
+legacy_uri:: urn:visionclaw:concept:spatial-computing:real-time-character-animation
 public:: true
+
+# Real Time Character Animation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b",
+  "@type": "Page",
+  "vc:slug": "real-time-character-animation",
+  "title": "Real Time Character Animation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-animation",
+      "vc:label": "3D Animation"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-experiences",
+      "vc:label": "Interactive Experiences"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9c61ba7bcdec"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#RealTimeCharacterAnimation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10016"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Real Time Character Animation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:real-time-character-animation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:real-time-character-animation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:real-time-character-animation",
+  "@type": "OntologyClass",
+  "label": "Real Time Character Animation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:3-d-animation",
+      "vc:label": "3D Animation"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:interactive-experiences",
+      "vc:label": "Interactive Experiences"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:real-time-character-animation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Animation]]",
+      "resolved": "urn:visionflow:linked:3-d-animation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interactive Experiences]]",
+      "resolved": "urn:visionflow:linked:interactive-experiences",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.

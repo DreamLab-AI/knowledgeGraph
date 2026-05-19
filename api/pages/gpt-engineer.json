@@ -1,0 +1,408 @@
+{
+  "id": "urn:visionflow:page:8c3dde21a42e3b5d314a20ec147edcecd8f58bde189e0a49de8a7fbe69fdc3c7",
+  "title": "GPT Engineer",
+  "slug": "gpt-engineer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gpt-engineer",
+  "domain": "artificial-intelligence",
+  "definition": "GPT Engineer is an open-source agentic software-development framework initiated by Anton Osika in June 2023 that autonomously transforms a natural-language specification into a working multi-file codebase through a sequential loop of specification elicitation, file-level planning, code generation, sandbox execution, and iterative self-repair \u2014 embodying the scaffold-then-edit paradigm for autonomous codegen agents and catalysing an entire product category of prompt-to-codebase generators that by 2026 encompasses Lovable.dev, Bolt.new, Replit Agent, v0, and commercial autonomous software engineering services. The repository accumulated 50,000+ GitHub stars within weeks of its June 2023 publication, 20,000+ forks, and contributions from 300+ developers, making it the fastest-growing AI coding repository of that period; it briefly held the top position in GitHub trending across all languages. In early 2024 Osika co-founded Lovable AB (Lovable.dev), the commercial full-stack web-application generator extending GPT Engineer's agentic loop to produce complete React/Supabase codebases from a single prompt; Lovable raised a Series-A of approximately $15 million USD in mid-2024 and by Q1 20",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "id": "urn:visionflow:owl:class:agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "id": "urn:visionflow:owl:class:agents",
+      "label": "Agents"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cognitive-ai",
+      "label": "Cognitive AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:file-planning-agent",
+        "label": "File Planning Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:sandbox-execution",
+        "label": "Sandbox Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:self-repair-loop",
+        "label": "Self-Repair Loop"
+      },
+      {
+        "id": "urn:visionflow:linked:specification-elicitation",
+        "label": "Specification Elicitation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:open-ai-api",
+        "label": "OpenAI API"
+      },
+      {
+        "id": "urn:visionflow:linked:sandbox-environment",
+        "label": "Sandbox Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-assisted-software-engineering",
+        "label": "AI-Assisted Software Engineering"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-software-scaffolding",
+        "label": "Automated Software Scaffolding"
+      },
+      {
+        "id": "urn:visionflow:linked:full-stack-application-generation",
+        "label": "Full-Stack Application Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:non-engineer-development",
+        "label": "Non-Engineer Development"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:agentic-loop",
+        "label": "Agentic Loop"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-file-code-generation",
+        "label": "Multi-File Code Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act-framework",
+        "label": "ReAct Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:self-debugging-code-generation",
+        "label": "Self-Debugging Code Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "agentic-aidomain",
+      "label": "AgenticAIDomain"
+    },
+    {
+      "slug": "agentic-loop",
+      "label": "Agentic Loop"
+    },
+    {
+      "slug": "ai-assisted-software-engineering",
+      "label": "AI-Assisted Software Engineering"
+    },
+    {
+      "slug": "aider",
+      "label": "Aider"
+    },
+    {
+      "slug": "automated-software-scaffolding",
+      "label": "Automated Software Scaffolding"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "cline",
+      "label": "Cline"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "devin",
+      "label": "Devin"
+    },
+    {
+      "slug": "file-planning-agent",
+      "label": "File Planning Agent"
+    },
+    {
+      "slug": "full-stack-application-generation",
+      "label": "Full-Stack Application Generation"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "git-hub-copilot",
+      "label": "GitHub Copilot"
+    },
+    {
+      "slug": "hackathon-development",
+      "label": "Hackathon Development"
+    },
+    {
+      "slug": "human-eval",
+      "label": "HumanEval"
+    },
+    {
+      "slug": "mbpp-benchmark",
+      "label": "MBPP Benchmark"
+    },
+    {
+      "slug": "multi-file-code-generation",
+      "label": "Multi-File Code Generation"
+    },
+    {
+      "slug": "no-code-development",
+      "label": "No-Code Development"
+    },
+    {
+      "slug": "non-engineer-development",
+      "label": "Non-Engineer Development"
+    },
+    {
+      "slug": "open-ai-api",
+      "label": "OpenAI API"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "rapid-prototyping",
+      "label": "Rapid Prototyping"
+    },
+    {
+      "slug": "re-act-framework",
+      "label": "ReAct Framework"
+    },
+    {
+      "slug": "react",
+      "label": "React"
+    },
+    {
+      "slug": "replit-agent",
+      "label": "Replit Agent"
+    },
+    {
+      "slug": "sandbox-environment",
+      "label": "Sandbox Environment"
+    },
+    {
+      "slug": "sandbox-execution",
+      "label": "Sandbox Execution"
+    },
+    {
+      "slug": "self-debugging-code-generation",
+      "label": "Self-Debugging Code Generation"
+    },
+    {
+      "slug": "self-repair-loop",
+      "label": "Self-Repair Loop"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "SoftwareEngineeringDomain"
+    },
+    {
+      "slug": "specification-elicitation",
+      "label": "Specification Elicitation"
+    },
+    {
+      "slug": "startup-prototyping",
+      "label": "Startup Prototyping"
+    },
+    {
+      "slug": "supabase",
+      "label": "Supabase"
+    },
+    {
+      "slug": "swe-bench-benchmark",
+      "label": "SWE-bench Benchmark"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "tool-use-layer",
+      "label": "ToolUseLayer"
+    },
+    {
+      "slug": "type-script",
+      "label": "TypeScript"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "web-development",
+      "label": "Web Development"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761",
+  "title": "Democratic Participation",
+  "slug": "democratic-participation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:democratic-participation",
+  "domain": "spatial-computing",
+  "definition": "The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-governance",
+      "label": "Digital Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:voting-systems",
+        "label": "Voting Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:civic-engagement",
+        "label": "Civic Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:community-decision-making",
+        "label": "Community Decision Making"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-voting",
+        "label": "Virtual Voting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "civic-engagement",
+      "label": "Civic Engagement"
+    },
+    {
+      "slug": "community-decision-making",
+      "label": "Community Decision Making"
+    },
+    {
+      "slug": "virtual-voting",
+      "label": "Virtual Voting"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-governance",
+      "label": "Digital Governance"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "voting-systems",
+      "label": "Voting Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    }
+  ]
+}

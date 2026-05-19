@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:ee1c7075d440e2d89760849f4c848737a4ccdfb948f2905dd36b9e422ec6901a",
+  "title": "Model Robustness",
+  "slug": "model-robustness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-robustness",
+  "domain": "artificial-intelligence",
+  "definition": "The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": []
+}

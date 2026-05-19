@@ -1,0 +1,631 @@
+{
+  "id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804",
+  "title": "Digital Twin",
+  "slug": "digital-twin",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin",
+  "domain": "spatial-computing",
+  "definition": "DigitalTwin is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin-technology",
+      "label": "Digital Twin Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:control-interface",
+        "label": "Control Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:io-t-sensor-data",
+        "label": "IoT Sensor Data"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:simulation-engine",
+        "label": "Simulation Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-replica",
+        "label": "Virtual Replica"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-visualisation",
+        "label": "3D Visualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "id": "urn:visionflow:linked:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "id": "urn:visionflow:linked:process-optimisation",
+        "label": "Process Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-monitoring",
+        "label": "Remote Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-commissioning",
+        "label": "Virtual Commissioning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-visualisation",
+      "label": "3D Visualisation"
+    },
+    {
+      "slug": "collaborative-design",
+      "label": "Collaborative Design"
+    },
+    {
+      "slug": "control-interface",
+      "label": "Control Interface"
+    },
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "industrial-internet-consortium",
+      "label": "Industrial Internet Consortium"
+    },
+    {
+      "slug": "io-t-infrastructure",
+      "label": "IoT Infrastructure"
+    },
+    {
+      "slug": "io-t-sensor-data",
+      "label": "IoT Sensor Data"
+    },
+    {
+      "slug": "iso-23247",
+      "label": "ISO 23247"
+    },
+    {
+      "slug": "process-optimisation",
+      "label": "Process Optimisation"
+    },
+    {
+      "slug": "real-time-synchronisation",
+      "label": "Real-Time Synchronisation"
+    },
+    {
+      "slug": "remote-monitoring",
+      "label": "Remote Monitoring"
+    },
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "simulation-engine",
+      "label": "Simulation Engine"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-commissioning",
+      "label": "Virtual Commissioning"
+    },
+    {
+      "slug": "virtual-replica",
+      "label": "Virtual Replica"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "adversarial-testing",
+      "label": "Adversarial Testing"
+    },
+    {
+      "slug": "agentic-metaverse-for-global-creatives",
+      "label": "Agentic Metaverse for Global Creatives"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "banodoco",
+      "label": "Banodoco"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "digital-fabrication",
+      "label": "Digital Fabrication"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "digital-twin-collaboration",
+      "label": "Digital Twin Collaboration"
+    },
+    {
+      "slug": "digital-twin-construction",
+      "label": "Digital Twin Construction"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "diversity-non-discrimination-and-fairness",
+      "label": "Diversity, Non-Discrimination, and Fairness"
+    },
+    {
+      "slug": "documentation-generation",
+      "label": "Documentation Generation"
+    },
+    {
+      "slug": "etl-pipeline",
+      "label": "ETL Pipeline"
+    },
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "edge-ai-accelerators",
+      "label": "Edge AI Accelerators"
+    },
+    {
+      "slug": "edge-ai-for-smart-cities",
+      "label": "Edge AI for Smart Cities"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-cloud-collaboration",
+      "label": "Edge-Cloud Collaboration"
+    },
+    {
+      "slug": "embedded-ai-frameworks",
+      "label": "Embedded AI Frameworks"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "explanation",
+      "label": "Explanation"
+    },
+    {
+      "slug": "fpga",
+      "label": "FPGA"
+    },
+    {
+      "slug": "fairness-accuracy-tradeoffs",
+      "label": "Fairness Accuracy Tradeoffs"
+    },
+    {
+      "slug": "fairness-constraints",
+      "label": "Fairness Constraints"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "Io T Sensors"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "model-capacity",
+      "label": "Model Capacity"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "proof-of-authority",
+      "label": "Proof of Authority"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-city-model",
+      "label": "Virtual City Model"
+    },
+    {
+      "slug": "virtual-commissioning",
+      "label": "Virtual Commissioning"
+    },
+    {
+      "slug": "virtual-factory",
+      "label": "Virtual Factory"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

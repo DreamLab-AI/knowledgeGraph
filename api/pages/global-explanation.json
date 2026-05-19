@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a",
+  "title": "Global Explanation",
+  "slug": "global-explanation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:global-explanation",
+  "domain": "artificial-intelligence",
+  "definition": "Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:explainability",
+      "label": "Explainability"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "caballero2008financial-spiro2019hidden",
+      "label": "caballero2008financial; @spiro2019hidden"
+    },
+    {
+      "slug": "carney2019growing-piffaretti2009reshaping",
+      "label": "carney2019growing; @piffaretti2009reshaping"
+    },
+    {
+      "slug": "grewal2020struggling",
+      "label": "grewal2020struggling"
+    },
+    {
+      "slug": "individual-conditional-expectation",
+      "label": "Individual Conditional Expectation"
+    },
+    {
+      "slug": "partial-dependence-plot",
+      "label": "Partial Dependence Plot"
+    },
+    {
+      "slug": "permutation-importance",
+      "label": "Permutation Importance"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "srinivasan2022",
+      "label": "Srinivasan2022"
+    },
+    {
+      "slug": "stoeferle2018gold",
+      "label": "stoeferle2018gold"
+    },
+    {
+      "slug": "surrogate-models",
+      "label": "Surrogate Models"
+    },
+    {
+      "slug": "tomlinson2003third",
+      "label": "tomlinson2003third"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "model-transparency",
+      "label": "Model Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ]
+}

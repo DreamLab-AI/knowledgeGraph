@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:4f0f04a26e83f1d1f6fe700af20b476f0c1ca56ac3f1795f5ba09b0126b3eac7",
+  "title": "ai core concepts",
+  "slug": "ai-core-concepts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-core-concepts",
+  "domain": "artificial-intelligence",
+  "definition": "Core artificial intelligence concepts encompass foundational frameworks and methodologies enabling intelligent systems: [[MachineLearning|machine learning]] paradigms ([[SupervisedLearning|supervised]], [[UnsupervisedLearning|unsupervised]], [[ReinforcementLearning|reinforcement]]), neural architectures ([[NeuralNetwork|neural networks]], [[TransformerModel|transformers]], [[ConvolutionalNeuralNetwork|CNNs]]), and classical symbolic reasoning. Integration with metaverse applications includes [[LLM|large language models]] for [[NPCInteraction|NPC dialogue]], [[ComputerVision|computer vision]] for [[EnvironmentPerception|environment perception]], and [[GenerativeAI|generative AI]] for [[ContentGeneration|procedural content generation]], with ethics considerations addressing [[AIBias|bias mitigation]], [[Explainability|interpretability]], and [[TransparencyRequirements|transparency]] standards.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aibias",
+      "label": "AIBias"
+    },
+    {
+      "slug": "aigovernance",
+      "label": "AIGovernance"
+    },
+    {
+      "slug": "content-generation",
+      "label": "ContentGeneration"
+    },
+    {
+      "slug": "environment-perception",
+      "label": "EnvironmentPerception"
+    },
+    {
+      "slug": "llm",
+      "label": "LLM"
+    },
+    {
+      "slug": "npcinteraction",
+      "label": "NPCInteraction"
+    },
+    {
+      "slug": "transformer-model",
+      "label": "TransformerModel"
+    },
+    {
+      "slug": "transparency-requirements",
+      "label": "TransparencyRequirements"
+    },
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "ComputerVision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "ConvolutionalNeuralNetwork"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "DataPipeline"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "ExplainableAI"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "FederatedLearning"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "GenerativeAI"
+    },
+    {
+      "slug": "generative-model",
+      "label": "GenerativeModel"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "neural-network",
+      "label": "NeuralNetwork"
+    },
+    {
+      "slug": "neural-network",
+      "label": "NeuralNetwork"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "ReinforcementLearning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "ReinforcementLearning"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "SupervisedLearning"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "UnsupervisedLearning"
+    }
+  ],
+  "backlinks": []
+}

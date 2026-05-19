@@ -1,21 +1,288 @@
-iri:: http://narrativegoldmine.com/blockchain#FaultToleranceSystem
-uri:: urn:visionclaw:concept:blockchain:fault-tolerance-system
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:fault-tolerance-system
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Fault Tolerance System
-content-hash:: sha256-12-15509f1bb732
-legacy-term-id:: PC-0008
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#FaultToleranceSystem
+legacy_uri:: urn:visionclaw:concept:blockchain:fault-tolerance-system
 public:: true
+
+# Fault Tolerance System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f",
+  "@type": "Page",
+  "vc:slug": "fault-tolerance-system",
+  "title": "Fault Tolerance System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "vc:label": "Byzantine Fault Tolerant System"
+    },
+    {
+      "@id": "urn:visionflow:linked:checkpoint-system",
+      "vc:label": "Checkpoint System"
+    },
+    {
+      "@id": "urn:visionflow:linked:crash-fault-tolerant-system",
+      "vc:label": "Crash Fault Tolerant System"
+    },
+    {
+      "@id": "urn:visionflow:linked:dependable-computing-systems",
+      "vc:label": "Dependable Computing Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:fault-tolerant-systems",
+      "vc:label": "Fault-Tolerant Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "vc:label": "Byzantine Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:replication-system",
+      "vc:label": "Replication System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-machine-replication",
+      "vc:label": "State Machine Replication"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-15509f1bb732"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#FaultToleranceSystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0008"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Fault Tolerance System"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:fault-tolerance-system"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:fault-tolerance-system"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:fault-tolerance-system",
+  "@type": "OntologyClass",
+  "label": "Fault Tolerance System",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants. Fault tolerance is essential for blockchain systems that must maintain availability and consistency across geographically distributed nodes operating in adversarial environments without centralized recovery mechanisms. These systems employ redundancy (replicating data and computation across multiple nodes), error detection (identifying when failures occur), error recovery (restoring correct state after failures), and failure masking (hiding failures from users through automatic compensation). Fault tolerance systems are classified by failure models: crash faults (nodes stop operating but don't send incorrect information), omission faults (nodes fail to send or receive messages), timing faults (nodes operate correctly but too slowly), and Byzantine faults (nodes exhibit arbitrary malicious behavior including sending conflicting information). Blockchain fault tolerance systems must typically handle Byzantine failures since blockchain operates in adversarial environ",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:fault-tolerance-system:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Byzantine Fault Tolerant System]]",
+      "resolved": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Checkpoint System]]",
+      "resolved": "urn:visionflow:linked:checkpoint-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crash Fault Tolerant System]]",
+      "resolved": "urn:visionflow:linked:crash-fault-tolerant-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dependable Computing Systems]]",
+      "resolved": "urn:visionflow:linked:dependable-computing-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fault-Tolerant Systems]]",
+      "resolved": "urn:visionflow:linked:fault-tolerant-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Byzantine Fault Tolerance]]",
+      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Replication System]]",
+      "resolved": "urn:visionflow:owl:class:replication-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[State Machine Replication]]",
+      "resolved": "urn:visionflow:owl:class:state-machine-replication",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants. Fault tolerance is essential for blockchain systems that must maintain availability and consistency across geographically distributed nodes operating in adversarial environments without centralized recovery mechanisms. These systems employ redundancy (replicating data and computation across multiple nodes), error detection (identifying when failures occur), error recovery (restoring correct state after failures), and failure masking (hiding failures from users through automatic compensation). Fault tolerance systems are classified by failure models: crash faults (nodes stop operating but don't send incorrect information), omission faults (nodes fail to send or receive messages), timing faults (nodes operate correctly but too slowly), and Byzantine faults (nodes exhibit arbitrary malicious behavior including sending conflicting information). Blockchain fault tolerance systems must typically handle Byzantine failures since blockchain operates in adversarial environments where economic incentives may motivate misbehavior, requiring protocols that maintain correctness when up to one-third of nodes behave arbitrarily.

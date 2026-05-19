@@ -1,0 +1,600 @@
+{
+  "id": "urn:visionflow:page:a2ba57912d41f3643b9a483e86dfd43ee3998fa0cbabbea4286f228f8d764800",
+  "title": "Cyber Security and Cryptography",
+  "slug": "cyber-security-and-cryptography",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cyber-security-and-cryptography",
+  "domain": "infrastructure",
+  "definition": "Cyber Security and Cryptography is the integrated discipline governing the confidentiality, integrity, availability, and authenticity of digital information systems through mathematical cryptographic primitives, protocol engineering, and systemic security architecture. The field bifurcates into two tightly coupled branches: **applied cryptography** \u2014 providing provably secure mathematical constructions formalised via indistinguishability (IND-CPA, IND-CCA2), existential unforgeability (EUF-CMA), and authenticated key exchange (Bellare-Rogaway model); and **operational cybersecurity** \u2014 addressing the adversarial environment in which cryptographic systems are deployed. Symmetric cryptography furnishes the data-plane protection layer: AES-256-GCM (NIST FIPS 197, AEAD, 10-40 Gbps with AES-NI hardware acceleration; ARMv8 Crypto Extension achieving 2-8 Gbps on Cortex-A55/A78 SoC); ChaCha20-Poly1305 (RFC 8439, TLS 1.3 and WireGuard, preferred where AES hardware is absent); AES-256-XTS (IEEE Std 1619-2007, full-disk encryption at 4-7 GB/s inline on NVMe TCG Opal 2.0 drives); BLAKE3 (2020, 14 GB/s x86, tree-structured parallelism).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "id": "urn:visionflow:linked:network-security",
+      "label": "Network Security"
+    },
+    {
+      "id": "urn:visionflow:linked:systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "id": "urn:visionflow:owl:class:information-security",
+      "label": "Information Security"
+    },
+    {
+      "id": "urn:visionflow:owl:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:visionflow:linked:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:visionflow:linked:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:visionflow:linked:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:visionflow:linked:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:visionflow:linked:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "id": "urn:visionflow:linked:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-engineering",
+        "label": "Privacy Engineering"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:aes-gcm",
+        "label": "AES-GCM"
+      },
+      {
+        "id": "urn:visionflow:linked:cha-cha20-poly1305",
+        "label": "ChaCha20-Poly1305"
+      },
+      {
+        "id": "urn:visionflow:linked:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:visionflow:linked:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-protocol",
+        "label": "Signal Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:threshold-signatures",
+        "label": "Threshold Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "slug": "aes-gcm",
+      "label": "AES-GCM"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "bsi-germany",
+      "label": "BSI Germany"
+    },
+    {
+      "slug": "ca-browser-forum",
+      "label": "CA/Browser Forum"
+    },
+    {
+      "slug": "castle-and-moat-architecture",
+      "label": "Castle-and-Moat Architecture"
+    },
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "cha-cha20-poly1305",
+      "label": "ChaCha20-Poly1305"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "critical-national-infrastructure",
+      "label": "Critical National Infrastructure"
+    },
+    {
+      "slug": "cryptographic-primitives",
+      "label": "Cryptographic Primitives"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "data-confidentiality",
+      "label": "Data Confidentiality"
+    },
+    {
+      "slug": "data-integrity",
+      "label": "Data Integrity"
+    },
+    {
+      "slug": "defence-and-intelligence",
+      "label": "Defence and Intelligence"
+    },
+    {
+      "slug": "digital-forensics",
+      "label": "Digital Forensics"
+    },
+    {
+      "slug": "digital-sovereignty",
+      "label": "Digital Sovereignty"
+    },
+    {
+      "slug": "enisa",
+      "label": "ENISA"
+    },
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "fido-alliance",
+      "label": "FIDO Alliance"
+    },
+    {
+      "slug": "fido2",
+      "label": "FIDO2"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    },
+    {
+      "slug": "formal-methods",
+      "label": "Formal Methods"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    },
+    {
+      "slug": "healthcare-data-security",
+      "label": "Healthcare Data Security"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "identity-and-access-management",
+      "label": "Identity and Access Management"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "intrusion-detection-system",
+      "label": "Intrusion Detection System"
+    },
+    {
+      "slug": "iso-iec-27001",
+      "label": "ISO/IEC 27001"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
+      "slug": "ncsc",
+      "label": "NCSC"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "nsa",
+      "label": "NSA"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "oasis",
+      "label": "OASIS"
+    },
+    {
+      "slug": "obscurity-based-security",
+      "label": "Obscurity-Based Security"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "OperationalLayer"
+    },
+    {
+      "slug": "password-authentication",
+      "label": "Password Authentication"
+    },
+    {
+      "slug": "pci-ssc",
+      "label": "PCI SSC"
+    },
+    {
+      "slug": "perimeter-security",
+      "label": "Perimeter Security"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "privacy-engineering",
+      "label": "Privacy Engineering"
+    },
+    {
+      "slug": "privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "RiskManagementDomain"
+    },
+    {
+      "slug": "secure-communication",
+      "label": "Secure Communication"
+    },
+    {
+      "slug": "secure-enclave",
+      "label": "Secure Enclave"
+    },
+    {
+      "slug": "security-domain",
+      "label": "SecurityDomain"
+    },
+    {
+      "slug": "security-operations-centre",
+      "label": "Security Operations Centre"
+    },
+    {
+      "slug": "siem",
+      "label": "SIEM"
+    },
+    {
+      "slug": "signal-protocol",
+      "label": "Signal Protocol"
+    },
+    {
+      "slug": "soar",
+      "label": "SOAR"
+    },
+    {
+      "slug": "supply-chain-security",
+      "label": "Supply Chain Security"
+    },
+    {
+      "slug": "symmetric-only-cryptography",
+      "label": "Symmetric-Only Cryptography"
+    },
+    {
+      "slug": "systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
+    },
+    {
+      "slug": "threat-intelligence-platform",
+      "label": "Threat Intelligence Platform"
+    },
+    {
+      "slug": "threat-model",
+      "label": "Threat Model"
+    },
+    {
+      "slug": "threshold-signatures",
+      "label": "Threshold Signatures"
+    },
+    {
+      "slug": "tls-1-3",
+      "label": "TLS 1.3"
+    },
+    {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "vulnerability-management",
+      "label": "Vulnerability Management"
+    },
+    {
+      "slug": "vulnerability-scanner",
+      "label": "Vulnerability Scanner"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

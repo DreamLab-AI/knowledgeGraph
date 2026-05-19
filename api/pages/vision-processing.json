@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:cc1468dca384a7e568db3dc498c11bdff7a24fd68a2f4decf756e98750dbfdb1",
+  "title": "Vision Processing",
+  "slug": "vision-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vision-processing",
+  "domain": "artificial-intelligence",
+  "definition": "VisionProcessing is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

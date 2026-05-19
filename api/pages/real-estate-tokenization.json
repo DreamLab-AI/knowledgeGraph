@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157",
+  "title": "Real Estate Tokenization",
+  "slug": "real-estate-tokenization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-estate-tokenization",
+  "domain": "blockchain",
+  "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to \u00a350, and creating 24/7 tradeable markets projected to grow from \u00a32.6-3.5 billion (2024) to \u00a34 trillion (2035) whilst providing regulatory compliance through Regulation D, Regulation A+, and international frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.87,
+  "maturity": "draft",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0432-consortium-blockchain",
+      "label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "slug": "bc-0456-self-sovereign-identity",
+      "label": "BC-0456-self-sovereign-identity"
+    },
+    {
+      "slug": "bc-0458-verifiable-credentials",
+      "label": "BC-0458-verifiable-credentials"
+    },
+    {
+      "slug": "bc-0463-governance-token",
+      "label": "BC-0463-governance-token"
+    },
+    {
+      "slug": "bc-0478-securities-regulation",
+      "label": "BC-0478-securities-regulation"
+    },
+    {
+      "slug": "bc-0488-licensing-requirements",
+      "label": "BC-0488-licensing-requirements"
+    },
+    {
+      "slug": "bc-0494-property-registry",
+      "label": "BC-0494-property-registry"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

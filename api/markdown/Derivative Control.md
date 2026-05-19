@@ -1,21 +1,451 @@
-iri:: http://narrativegoldmine.com/robotics#DerivativeControl
-uri:: urn:visionclaw:concept:robotics:derivative-control
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:derivative-control
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Derivative Control
-content-hash:: sha256-12-2298ec74da28
-legacy-term-id:: RB-0148
-status:: complete
-maturity:: established
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-13T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#DerivativeControl
+legacy_uri:: urn:visionclaw:concept:robotics:derivative-control
 public:: true
+
+# Derivative Control
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572",
+  "@type": "Page",
+  "vc:slug": "derivative-control",
+  "title": "Derivative Control",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:control-actions",
+      "vc:label": "Control Actions"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-systems",
+      "vc:label": "Control Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:damping-action",
+      "vc:label": "Damping Action"
+    },
+    {
+      "@id": "urn:visionflow:linked:derivative-gain",
+      "vc:label": "Derivative Gain"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-rate-measurement",
+      "vc:label": "Error Rate Measurement"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-signal",
+      "vc:label": "Error Signal"
+    },
+    {
+      "@id": "urn:visionflow:linked:faster-convergence",
+      "vc:label": "Faster Convergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:gain-tuning",
+      "vc:label": "Gain Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:integral-control",
+      "vc:label": "Integral Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:kalman-filters",
+      "vc:label": "Kalman Filters"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-based-controllers",
+      "vc:label": "Learning-Based Controllers"
+    },
+    {
+      "@id": "urn:visionflow:linked:low-pass-filtering",
+      "vc:label": "Low-Pass Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-predictive-control",
+      "vc:label": "Model Predictive Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:oscillation-damping",
+      "vc:label": "Oscillation Damping"
+    },
+    {
+      "@id": "urn:visionflow:linked:pid-control",
+      "vc:label": "PID Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:pid-control-component",
+      "vc:label": "PID Control Component"
+    },
+    {
+      "@id": "urn:visionflow:linked:reduced-overshoot",
+      "vc:label": "Reduced Overshoot"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-joint",
+      "vc:label": "Robotic Joint"
+    },
+    {
+      "@id": "urn:visionflow:linked:stability-improvement",
+      "vc:label": "Stability Improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-derivative",
+      "vc:label": "Time Derivative"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feedback-control",
+      "vc:label": "Feedback Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proportional-control",
+      "vc:label": "Proportional Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2298ec74da28"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-13T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#DerivativeControl"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0148"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Derivative Control"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:derivative-control"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:derivative-control"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:derivative-control",
+  "@type": "OntologyClass",
+  "label": "Derivative Control",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:control-actions",
+      "vc:label": "Control Actions"
+    },
+    {
+      "@id": "urn:visionflow:linked:pid-control-component",
+      "vc:label": "PID Control Component"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feedback-control",
+      "vc:label": "Feedback Control"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Derivative control responds to the rate of change of system error, providing damping that opposes oscillations and improves transient response. When combined with [[Proportional Control]] and [[Integral Control]] in [[PID Control]], the derivative term enhances stability and enables faster, less overshoot-prone convergence to setpoints in robotic [[Control Systems]].",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:damping-action",
+      "vc:label": "Damping Action"
+    },
+    {
+      "@id": "urn:visionflow:linked:derivative-gain",
+      "vc:label": "Derivative Gain"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-rate-measurement",
+      "vc:label": "Error Rate Measurement"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:error-signal",
+      "vc:label": "Error Signal"
+    },
+    {
+      "@id": "urn:visionflow:linked:gain-tuning",
+      "vc:label": "Gain Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:low-pass-filtering",
+      "vc:label": "Low-Pass Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-derivative",
+      "vc:label": "Time Derivative"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:faster-convergence",
+      "vc:label": "Faster Convergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:oscillation-damping",
+      "vc:label": "Oscillation Damping"
+    },
+    {
+      "@id": "urn:visionflow:linked:reduced-overshoot",
+      "vc:label": "Reduced Overshoot"
+    },
+    {
+      "@id": "urn:visionflow:linked:stability-improvement",
+      "vc:label": "Stability Improvement"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:derivative-control:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Control Actions]]",
+      "resolved": "urn:visionflow:linked:control-actions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Control Systems]]",
+      "resolved": "urn:visionflow:linked:control-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Damping Action]]",
+      "resolved": "urn:visionflow:linked:damping-action",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Derivative Gain]]",
+      "resolved": "urn:visionflow:linked:derivative-gain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Error Rate Measurement]]",
+      "resolved": "urn:visionflow:linked:error-rate-measurement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Error Signal]]",
+      "resolved": "urn:visionflow:linked:error-signal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Faster Convergence]]",
+      "resolved": "urn:visionflow:linked:faster-convergence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gain Tuning]]",
+      "resolved": "urn:visionflow:linked:gain-tuning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Integral Control]]",
+      "resolved": "urn:visionflow:linked:integral-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kalman Filters]]",
+      "resolved": "urn:visionflow:linked:kalman-filters",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Learning-Based Controllers]]",
+      "resolved": "urn:visionflow:linked:learning-based-controllers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Low-Pass Filtering]]",
+      "resolved": "urn:visionflow:linked:low-pass-filtering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Predictive Control]]",
+      "resolved": "urn:visionflow:linked:model-predictive-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Oscillation Damping]]",
+      "resolved": "urn:visionflow:linked:oscillation-damping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PID Control]]",
+      "resolved": "urn:visionflow:linked:pid-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PID Control Component]]",
+      "resolved": "urn:visionflow:linked:pid-control-component",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reduced Overshoot]]",
+      "resolved": "urn:visionflow:linked:reduced-overshoot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotic Joint]]",
+      "resolved": "urn:visionflow:linked:robotic-joint",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stability Improvement]]",
+      "resolved": "urn:visionflow:linked:stability-improvement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Time Derivative]]",
+      "resolved": "urn:visionflow:linked:time-derivative",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feedback Control]]",
+      "resolved": "urn:visionflow:owl:class:feedback-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proportional Control]]",
+      "resolved": "urn:visionflow:owl:class:proportional-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Derivative control responds to the rate of change of system error, providing damping that opposes oscillations and improves transient response. When combined with [[Proportional Control]] and [[Integral Control]] in [[PID Control]], the derivative term enhances stability and enables faster, less overshoot-prone convergence to setpoints in robotic [[Control Systems]].

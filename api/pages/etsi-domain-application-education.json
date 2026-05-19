@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:c2559803479cd9ecf6cfd28d6a5a7c7d7a81572c9013cf1d90fefe88646875b1",
+  "title": "ETSI Domain Application + Education",
+  "slug": "etsi-domain-application-education",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-application-education",
+  "domain": "spatial-computing",
+  "definition": "Cross-domain marker for metaverse application components focused on education and training including virtual classrooms, immersive learning environments, educational simulations, and collaborative learning platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:education-application-classification",
+        "label": "Education Application Classification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:learning-platform-categorization",
+        "label": "Learning Platform Categorization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "education-application-classification",
+      "label": "Education Application Classification"
+    },
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "learning-platform-categorization",
+      "label": "Learning Platform Categorization"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": []
+}

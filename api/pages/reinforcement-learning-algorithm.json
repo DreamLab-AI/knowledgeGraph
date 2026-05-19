@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:a4a24c38649d3ba3e851f4b12d95e366f63d308e845155b7dcb220d87c505498",
+  "title": "Reinforcement Learning Algorithm",
+  "slug": "reinforcement-learning-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reinforcement-learning-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals. Core algorithms include value-based methods (Q-learning, DQN), policy gradient methods (REINFORCE, PPO, TRPO), actor-critic approaches (A3C, SAC), and model-based RL. Advanced techniques incorporate deep neural networks for function approximation, experience replay, target networks, and exploration strategies. Applications span robotics, game playing, autonomous systems, resource management, and personalized recommendations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actor-critic-methods",
+      "label": "Actor-Critic Methods"
+    },
+    {
+      "slug": "deep-q-network",
+      "label": "Deep Q-Network"
+    },
+    {
+      "slug": "policy-gradient",
+      "label": "Policy Gradient"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "backlinks": []
+}

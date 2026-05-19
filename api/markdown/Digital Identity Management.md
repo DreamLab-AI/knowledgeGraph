@@ -1,21 +1,325 @@
-iri:: http://narrativegoldmine.com/infrastructure#DigitalIdentityManagement
-uri:: urn:visionclaw:concept:infrastructure:digital-identity-management
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:digital-identity-management
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Digital Identity Management
-content-hash:: sha256-12-52bc8c0fdb2d
-legacy-term-id:: MV-9858
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DigitalIdentityManagement
+legacy_uri:: urn:visionclaw:concept:infrastructure:digital-identity-management
 public:: true
+
+# Digital Identity Management
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b",
+  "@type": "Page",
+  "vc:slug": "digital-identity-management",
+  "title": "Digital Identity Management",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:credential-storage",
+      "vc:label": "Credential Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-idas-2-0",
+      "vc:label": "eIDAS 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-providers",
+      "vc:label": "Identity Providers"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-27001",
+      "vc:label": "ISO 27001"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-standards-forum",
+      "vc:label": "Metaverse Standards Forum"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-control",
+      "vc:label": "Privacy Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-authentication",
+      "vc:label": "User Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did-core-1-0",
+      "vc:label": "W3C DID Core 1.0"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-identity",
+      "vc:label": "Cross-Platform Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-keys",
+      "vc:label": "Cryptographic Keys"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-systems",
+      "vc:label": "Identity Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credentials",
+      "vc:label": "Verifiable Credentials"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-52bc8c0fdb2d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DigitalIdentityManagement"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9858"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Identity Management"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:digital-identity-management"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:digital-identity-management"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-identity-management",
+  "@type": "OntologyClass",
+  "label": "Digital Identity Management",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:identity-systems",
+      "vc:label": "Identity Systems"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication. bridges-to:: [[DID Nostr Identity]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:credential-storage",
+      "vc:label": "Credential Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-providers",
+      "vc:label": "Identity Providers"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-keys",
+      "vc:label": "Cryptographic Keys"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:privacy-control",
+      "vc:label": "Privacy Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-authentication",
+      "vc:label": "User Authentication"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-identity",
+      "vc:label": "Cross-Platform Identity"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-identity-management:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Credential Storage]]",
+      "resolved": "urn:visionflow:linked:credential-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[eIDAS 2.0]]",
+      "resolved": "urn:visionflow:linked:e-idas-2-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Identity Providers]]",
+      "resolved": "urn:visionflow:linked:identity-providers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 27001]]",
+      "resolved": "urn:visionflow:linked:iso-27001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Standards Forum]]",
+      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy Control]]",
+      "resolved": "urn:visionflow:linked:privacy-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Authentication]]",
+      "resolved": "urn:visionflow:linked:user-authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C DID Core 1.0]]",
+      "resolved": "urn:visionflow:linked:w3-c-did-core-1-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Platform Identity]]",
+      "resolved": "urn:visionflow:owl:class:cross-platform-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptographic Keys]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-keys",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Systems]]",
+      "resolved": "urn:visionflow:owl:class:identity-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credentials]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credentials",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication.

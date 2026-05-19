@@ -1,0 +1,143 @@
+{
+  "id": "urn:visionflow:page:69d3ae05f1d4395dcb4c424b9f74acb97db4b62a15f5c8f76854c1bba942c934",
+  "title": "6G Network Slice",
+  "slug": "6-g-network-slice",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:6-g-network-slice",
+  "domain": "infrastructure",
+  "definition": "Virtual partition of 6G infrastructure guaranteeing specified quality-of-service levels for immersive workloads through isolated resource allocation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:qo-s-policy",
+        "label": "QoS Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-allocation-unit",
+        "label": "Resource Allocation Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:service-level-agreement",
+        "label": "Service Level Agreement"
+      },
+      {
+        "id": "urn:visionflow:linked:traffic-classifier",
+        "label": "Traffic Classifier"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:6-g-network-infrastructure",
+        "label": "6G Network Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:network-slicing-orchestrator",
+        "label": "Network Slicing Orchestrator"
+      },
+      {
+        "id": "urn:visionflow:linked:sdn-controller",
+        "label": "SDN Controller"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-resource-allocation",
+        "label": "Dynamic Resource Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-service",
+        "label": "Low Latency Service"
+      },
+      {
+        "id": "urn:visionflow:linked:workload-isolation",
+        "label": "Workload Isolation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:guaranteed-bandwidth",
+        "label": "Guaranteed Bandwidth"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-gpp-release-21",
+      "label": "3GPP Release 21"
+    },
+    {
+      "slug": "6-g-network-infrastructure",
+      "label": "6G Network Infrastructure"
+    },
+    {
+      "slug": "dynamic-resource-allocation",
+      "label": "Dynamic Resource Allocation"
+    },
+    {
+      "slug": "etsi-eni-008",
+      "label": "ETSI ENI 008"
+    },
+    {
+      "slug": "low-latency-service",
+      "label": "Low Latency Service"
+    },
+    {
+      "slug": "network-slicing-orchestrator",
+      "label": "Network Slicing Orchestrator"
+    },
+    {
+      "slug": "qo-s-policy",
+      "label": "QoS Policy"
+    },
+    {
+      "slug": "resource-allocation-unit",
+      "label": "Resource Allocation Unit"
+    },
+    {
+      "slug": "sdn-controller",
+      "label": "SDN Controller"
+    },
+    {
+      "slug": "service-level-agreement",
+      "label": "Service Level Agreement"
+    },
+    {
+      "slug": "traffic-classifier",
+      "label": "Traffic Classifier"
+    },
+    {
+      "slug": "workload-isolation",
+      "label": "Workload Isolation"
+    },
+    {
+      "slug": "guaranteed-bandwidth",
+      "label": "Guaranteed Bandwidth"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    }
+  ]
+}

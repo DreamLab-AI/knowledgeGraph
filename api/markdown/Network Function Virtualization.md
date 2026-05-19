@@ -1,24 +1,216 @@
-iri:: http://narrativegoldmine.com/spatial-computing#NetworkFunctionVirtualization
-uri:: urn:visionclaw:concept:spatial-computing:network-function-virtualization
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:network-function-virtualization
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Network Function Virtualization
-content-hash:: sha256-12-226fcf7f5d73
-legacy-term-id:: MV-9982
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#NetworkFunctionVirtualization
+legacy_uri:: urn:visionclaw:concept:spatial-computing:network-function-virtualization
 public:: true
+
+# Network Function Virtualization
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275",
+  "@type": "Page",
+  "vc:slug": "network-function-virtualization",
+  "title": "Network Function Virtualization",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:network-scalability",
+      "vc:label": "Network Scalability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-architecture",
+      "vc:label": "Network Architecture"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-226fcf7f5d73"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#NetworkFunctionVirtualization"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9982"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Network Function Virtualization"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:network-function-virtualization"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:network-function-virtualization"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:network-function-virtualization",
+  "@type": "OntologyClass",
+  "label": "Network Function Virtualization",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:network-architecture",
+      "vc:label": "Network Architecture"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:network-scalability",
+      "vc:label": "Network Scalability"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:network-function-virtualization:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Network Scalability]]",
+      "resolved": "urn:visionflow:linked:network-scalability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Architecture]]",
+      "resolved": "urn:visionflow:owl:class:network-architecture",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.

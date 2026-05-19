@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:3a61ea5efdfc21417027f58264d549497396c16436c4f23b2dd0de8978453216",
+  "title": "Participant Coordination",
+  "slug": "participant-coordination",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:participant-coordination",
+  "domain": "spatial-computing",
+  "definition": "The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:multi-user-systems",
+      "label": "Multi-User Systems"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:shared-virtual-experiences",
+        "label": "Shared Virtual Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "shared-virtual-experiences",
+      "label": "Shared Virtual Experiences"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "multi-user-systems",
+      "label": "Multi-User Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    }
+  ]
+}

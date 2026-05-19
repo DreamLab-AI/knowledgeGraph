@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:7ffbc0fcb89c9c0cba43e00681af1698fa80f0ac13155e47a3abdfc45c10e786",
+  "title": "Media Richness Theory",
+  "slug": "media-richness-theory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:media-richness-theory",
+  "domain": "distributed-collaboration",
+  "definition": "\"A theoretical framework positing that communication media vary in their capacity to convey rich information through multiple cues, immediate feedback, language variety, and personal focus, predicting that richer media enable more effective communication of complex, ambiguous information whilst leaner media suffice for routine, unambiguous messages.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:communication-effectiveness",
+        "label": "CommunicationEffectiveness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-effectiveness",
+      "label": "CommunicationEffectiveness"
+    },
+    {
+      "slug": "tele-003-social-presence-theory",
+      "label": "TELE-003-social-presence-theory"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "organisational-theory",
+      "label": "OrganisationalTheory"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

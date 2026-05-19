@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87",
+  "title": "Identity Provider (IdP)",
+  "slug": "identity-provider-id-p",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:identity-provider-id-p",
+  "domain": "infrastructure",
+  "definition": "An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:authentication-server",
+        "label": "Authentication Server"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-store",
+        "label": "Credential Store"
+      },
+      {
+        "id": "urn:visionflow:linked:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:token-issuer",
+        "label": "Token Issuer"
+      },
+      {
+        "id": "urn:visionflow:linked:user-directory",
+        "label": "User Directory"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication-protocol",
+        "label": "Authentication Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-key-store",
+        "label": "Cryptographic Key Store"
+      },
+      {
+        "id": "urn:visionflow:linked:user-database",
+        "label": "User Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:single-sign-on-sso",
+        "label": "Single Sign-On (SSO)"
+      },
+      {
+        "id": "urn:visionflow:linked:user-provisioning",
+        "label": "User Provisioning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
+      "slug": "authentication-server",
+      "label": "Authentication Server"
+    },
+    {
+      "slug": "credential-schema",
+      "label": "Credential Schema"
+    },
+    {
+      "slug": "credential-store",
+      "label": "Credential Store"
+    },
+    {
+      "slug": "cryptographic-key-store",
+      "label": "Cryptographic Key Store"
+    },
+    {
+      "slug": "directory-service",
+      "label": "Directory Service"
+    },
+    {
+      "slug": "federation-infrastructure",
+      "label": "Federation Infrastructure"
+    },
+    {
+      "slug": "ietf-oauth",
+      "label": "IETF OAuth"
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    },
+    {
+      "slug": "oasis-saml",
+      "label": "OASIS SAML"
+    },
+    {
+      "slug": "open-id-foundation",
+      "label": "OpenID Foundation"
+    },
+    {
+      "slug": "pki-infrastructure",
+      "label": "PKI Infrastructure"
+    },
+    {
+      "slug": "session-manager",
+      "label": "Session Manager"
+    },
+    {
+      "slug": "single-sign-on-sso",
+      "label": "Single Sign-On (SSO)"
+    },
+    {
+      "slug": "token-issuer",
+      "label": "Token Issuer"
+    },
+    {
+      "slug": "user-database",
+      "label": "User Database"
+    },
+    {
+      "slug": "user-directory",
+      "label": "User Directory"
+    },
+    {
+      "slug": "user-provisioning",
+      "label": "User Provisioning"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    }
+  ]
+}

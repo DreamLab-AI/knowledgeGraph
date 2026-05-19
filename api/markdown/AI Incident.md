@@ -1,21 +1,222 @@
-iri:: http://narrativegoldmine.com/metaverse#AIIncident
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-incident
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-incident
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Incident
-content-hash:: sha256-12-0d4cad238896
-legacy-term-id:: AI-0082
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIIncident
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-incident
 public:: true
+
+# AI Incident
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34",
+  "@type": "Page",
+  "vc:slug": "ai-incident",
+  "title": "AI Incident",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act-regulation-2024-1689-article-72",
+      "vc:label": "EU AI Act Regulation 2024/1689 Article 72"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-incident-monitor",
+      "vc:label": "OECD AI Incident Monitor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0d4cad238896"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIIncident"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0082"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Incident"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-incident"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-incident"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-incident",
+  "@type": "OntologyClass",
+  "label": "AI Incident",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-risk",
+      "vc:label": "AI Risk"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-incident:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[EU AI Act Regulation 2024/1689 Article 72]]",
+      "resolved": "urn:visionflow:linked:eu-ai-act-regulation-2024-1689-article-72",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD AI Incident Monitor]]",
+      "resolved": "urn:visionflow:linked:oecd-ai-incident-monitor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.

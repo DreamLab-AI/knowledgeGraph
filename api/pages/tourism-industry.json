@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:f27b4b1778244ae648206fcdc59f47464d73e4f21ae23f02875b728002291117",
+  "title": "Tourism Industry",
+  "slug": "tourism-industry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tourism-industry",
+  "domain": "spatial-computing",
+  "definition": "Tourism Industry is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-tourism",
+      "label": "Virtual Tourism"
+    }
+  ]
+}

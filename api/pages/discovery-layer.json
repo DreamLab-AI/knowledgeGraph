@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:e420e9c3373a6071aae20237b37fd492791cc089f9e4e39bc88add5e21facec8",
+  "title": "Discovery Layer",
+  "slug": "discovery-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:discovery-layer",
+  "domain": "spatial-computing",
+  "definition": "Functional layer responsible for search, navigation, and exposure of metaverse experiences and assets through indexing, search engines, and recommendation systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:content-indexer",
+        "label": "Content Indexer"
+      },
+      {
+        "id": "urn:visionflow:linked:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-registry",
+        "label": "Metadata Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-catalog",
+        "label": "Content Catalog"
+      },
+      {
+        "id": "urn:visionflow:linked:query-interface",
+        "label": "Query Interface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-browsing",
+        "label": "Asset Browsing"
+      },
+      {
+        "id": "urn:visionflow:linked:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:experience-navigation",
+        "label": "Experience Navigation"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-recommendations",
+        "label": "Personalized Recommendations"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-browsing",
+      "label": "Asset Browsing"
+    },
+    {
+      "slug": "content-catalog",
+      "label": "Content Catalog"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "content-indexer",
+      "label": "Content Indexer"
+    },
+    {
+      "slug": "experience-navigation",
+      "label": "Experience Navigation"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "personalized-recommendations",
+      "label": "Personalized Recommendations"
+    },
+    {
+      "slug": "query-interface",
+      "label": "Query Interface"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metadata-registry",
+      "label": "Metadata Registry"
+    },
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "slug": "search-engine",
+      "label": "Search Engine"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

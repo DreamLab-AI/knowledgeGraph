@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:5bd14843d9594fd5f8272fbb335d5c83b0e3357c8e6edd63c1e1eb4c8ee1f6c3",
+  "title": "Context Aware Computing",
+  "slug": "context-aware-computing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:context-aware-computing",
+  "domain": "spatial-computing",
+  "definition": "Context Aware Computing is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "user-context-awareness",
+      "label": "User Context Awareness"
+    }
+  ]
+}

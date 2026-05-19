@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:18e88cffc5255af8833f08c14100ed43b793913a4ca00bfa0c70cb998155d06f",
+  "title": "Agentic Alliance",
+  "slug": "agentic-alliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agentic-alliance",
+  "domain": "artificial-intelligence",
+  "definition": "Agentic Alliance is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    },
+    {
+      "slug": "projects",
+      "label": "Projects"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "project-bro-bots",
+      "label": "Project BroBots"
+    }
+  ]
+}

@@ -1,21 +1,282 @@
-iri:: http://narrativegoldmine.com/blockchain#AsymmetricEncryption
-uri:: urn:visionclaw:concept:blockchain:asymmetric-encryption
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:asymmetric-encryption
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Asymmetric Encryption
-content-hash:: sha256-12-173aec5ae04e
-legacy-term-id:: BC-8001
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#AsymmetricEncryption
+legacy_uri:: urn:visionclaw:concept:blockchain:asymmetric-encryption
 public:: true
+
+# Asymmetric Encryption
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995",
+  "@type": "Page",
+  "vc:slug": "asymmetric-encryption",
+  "title": "Asymmetric Encryption",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+      "vc:label": "Elliptic Curve Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:information-security",
+      "vc:label": "Information Security"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:key-derivation-function",
+      "vc:label": "Key Derivation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "vc:label": "Public Key Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:symmetric-encryption",
+      "vc:label": "Symmetric Encryption"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-173aec5ae04e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#AsymmetricEncryption"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Asymmetric Encryption"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:asymmetric-encryption"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:asymmetric-encryption"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:asymmetric-encryption",
+  "@type": "OntologyClass",
+  "label": "Asymmetric Encryption",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt. Asymmetric encryption provides the foundational cryptographic primitive for blockchain identity, digital signatures, and secure communication, enabling trustless verification without pre-shared secrets.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+      "vc:label": "Elliptic Curve Cryptography"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash Function"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:owl:class:symmetric-encryption",
+      "vc:label": "Symmetric Encryption"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:asymmetric-encryption:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Elliptic Curve Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hash Function]]",
+      "resolved": "urn:visionflow:owl:class:hash-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Information Security]]",
+      "resolved": "urn:visionflow:owl:class:information-security",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Key Derivation Function]]",
+      "resolved": "urn:visionflow:owl:class:key-derivation-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Public Key Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:public-key-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Symmetric Encryption]]",
+      "resolved": "urn:visionflow:owl:class:symmetric-encryption",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt. Asymmetric encryption provides the foundational cryptographic primitive for blockchain identity, digital signatures, and secure communication, enabling trustless verification without pre-shared secrets.

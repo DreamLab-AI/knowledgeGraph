@@ -1,0 +1,600 @@
+{
+  "id": "urn:visionflow:page:0df1985276aeaa14b99319ce6bc28d2ff91d51fedfff3b75e0edd6accfeceffc",
+  "title": "Exteroceptive Sensor",
+  "slug": "exteroceptive-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:exteroceptive-sensor",
+  "domain": "robotics",
+  "definition": "Exteroceptive sensors are robot perception transducers that measure information about the external environment surrounding the robot rather than its internal kinematic, dynamic, or energetic state, providing the raw signals from which obstacle maps, semantic scene representations, object poses, terrain affordances, and social context for [[Human-Robot Interaction]] are computed; the modality spans optical sensing (RGB cameras 1-50 MP at 30-240 Hz, stereo rigs 60-960 Hz disparity matching, RGB-D structured-light/time-of-flight depth cameras delivering 100K-2M points/frame such as Intel RealSense D455/D456/D457 with 87\u00b0 HFOV 6 m range $200-$400, ZED 2/2i/X by Stereolabs with neural depth $450-$1500, Microsoft Kinect Azure DK with 1024\u00d71024 ToF depth + 12 MP RGB $399, Apple LiDAR Pro consumer dToF on iPad/iPhone Pro, Luxonis OAK-D-Lite/Pro embedded Myriad-X edge-AI $99-$399), laser scanning ([[Lidar]] 3D rotating mechanical 16-256 beam Velodyne HDL-32/64/Puck/Alpha Prime, Ouster OS0 wide-field/OS1 mid-range/OS2 long-range 32-128 channel digital flash CMOS $7K-$24K, Hesai AT128/AT256/AT512 hybrid solid-state $1500-$8000 standard on XPeng/NIO/Li Auto Chinese EVs, Livox Mid-360/Avia/HAP ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:environmental-sensor",
+      "label": "Environmental Sensor"
+    },
+    {
+      "id": "urn:visionflow:linked:perception-transducer",
+      "label": "Perception Transducer"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-sensor",
+      "label": "Robot Sensor"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-interface",
+        "label": "Data Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-window",
+        "label": "Optical Window"
+      },
+      {
+        "id": "urn:visionflow:linked:sensing-element",
+        "label": "Sensing Element"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-housing",
+        "label": "Sensor Housing"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Converter"
+      },
+      {
+        "id": "urn:visionflow:owl:class:calibration-target",
+        "label": "Calibration Target"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:computational-processing",
+        "label": "Computational Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:coordinate-frame",
+        "label": "Coordinate Frame"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-driver",
+        "label": "Sensor Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:visionflow:linked:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-servoing",
+        "label": "Visual Servoing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:acoustic-sensing",
+        "label": "Acoustic Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:event-driven-sensing",
+        "label": "Event-Driven Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:radar-sensing",
+        "label": "Radar Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:range-sensing",
+        "label": "Range Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:thermal-sensing",
+        "label": "Thermal Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-sensing",
+        "label": "Vision Sensing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-perception",
+      "label": "3D Perception"
+    },
+    {
+      "slug": "acoustic-sensing",
+      "label": "Acoustic Sensing"
+    },
+    {
+      "slug": "agricultural-robotics",
+      "label": "Agricultural Robotics"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "bird-s-eye-view-perception",
+      "label": "Bird's-Eye-View Perception"
+    },
+    {
+      "slug": "brohan-et-al-2023-rt-2",
+      "label": "Brohan et al 2023 RT-2"
+    },
+    {
+      "slug": "caesar-et-al-2020-nu-scenes",
+      "label": "Caesar et al 2020 nuScenes"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "campos-et-al-2021-orb-slam3",
+      "label": "Campos et al 2021 ORB-SLAM3"
+    },
+    {
+      "slug": "computational-processing",
+      "label": "Computational Processing"
+    },
+    {
+      "slug": "coordinate-frame",
+      "label": "Coordinate Frame"
+    },
+    {
+      "slug": "data-interface",
+      "label": "Data Interface"
+    },
+    {
+      "slug": "davison-et-al-2007-mono-slam",
+      "label": "Davison et al 2007 MonoSLAM"
+    },
+    {
+      "slug": "deep-neural-network",
+      "label": "Deep Neural Network"
+    },
+    {
+      "slug": "driver-layer",
+      "label": "Driver Layer"
+    },
+    {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "environmental-properties",
+      "label": "Environmental Properties"
+    },
+    {
+      "slug": "environmental-sensor",
+      "label": "Environmental Sensor"
+    },
+    {
+      "slug": "event-camera",
+      "label": "Event Camera"
+    },
+    {
+      "slug": "event-driven-sensing",
+      "label": "Event-Driven Sensing"
+    },
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
+    },
+    {
+      "slug": "fishel-loeb-2012-bio-tac",
+      "label": "Fishel Loeb 2012 BioTac"
+    },
+    {
+      "slug": "gallego-et-al-2022-event-based-vision-survey",
+      "label": "Gallego et al 2022 Event-Based Vision Survey"
+    },
+    {
+      "slug": "geometric-calibration",
+      "label": "Geometric Calibration"
+    },
+    {
+      "slug": "grasp-planning",
+      "label": "Grasp Planning"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
+    },
+    {
+      "slug": "hartley-zisserman-2003-multiple-view-geometry",
+      "label": "Hartley Zisserman 2003 Multiple View Geometry"
+    },
+    {
+      "slug": "humanoid-robotics",
+      "label": "Humanoid Robotics"
+    },
+    {
+      "slug": "iec-61496",
+      "label": "IEC 61496"
+    },
+    {
+      "slug": "imu",
+      "label": "IMU"
+    },
+    {
+      "slug": "interoceptive-sensor",
+      "label": "Interoceptive Sensor"
+    },
+    {
+      "slug": "iso-10218",
+      "label": "ISO 10218"
+    },
+    {
+      "slug": "iso-10218-industrial-robot-safety",
+      "label": "ISO 10218 Industrial Robot Safety"
+    },
+    {
+      "slug": "iso-21448-sotif",
+      "label": "ISO 21448 SOTIF"
+    },
+    {
+      "slug": "iso-ts-15066",
+      "label": "ISO/TS 15066"
+    },
+    {
+      "slug": "iso-ts-15066-collaborative-robots",
+      "label": "ISO TS 15066 Collaborative Robots"
+    },
+    {
+      "slug": "kim-et-al-2024-open-vla",
+      "label": "Kim et al 2024 OpenVLA"
+    },
+    {
+      "slug": "kirillov-et-al-2023-segment-anything",
+      "label": "Kirillov et al 2023 Segment Anything"
+    },
+    {
+      "slug": "lang-et-al-2019-point-pillars",
+      "label": "Lang et al 2019 PointPillars"
+    },
+    {
+      "slug": "lepora-2021-tac-tip-soft-biomimetic-tactile",
+      "label": "Lepora 2021 TacTip Soft Biomimetic Tactile"
+    },
+    {
+      "slug": "li-et-al-2022-bevformer",
+      "label": "Li et al 2022 BEVFormer"
+    },
+    {
+      "slug": "liu-et-al-2022-bevfusion-mit",
+      "label": "Liu et al 2022 BEVFusion MIT"
+    },
+    {
+      "slug": "localisation",
+      "label": "Localisation"
+    },
+    {
+      "slug": "mapping",
+      "label": "Mapping"
+    },
+    {
+      "slug": "marr-1982-vision",
+      "label": "Marr 1982 Vision"
+    },
+    {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
+      "slug": "mobileye-super-vision-chauffeur-drive",
+      "label": "Mobileye SuperVision Chauffeur Drive"
+    },
+    {
+      "slug": "multi-modal-learning",
+      "label": "Multi-Modal Learning"
+    },
+    {
+      "slug": "mur-artal-tardos-2015-orb-slam",
+      "label": "Mur-Artal Tardos 2015 ORB-SLAM"
+    },
+    {
+      "slug": "newcombe-et-al-2011-kinect-fusion",
+      "label": "Newcombe et al 2011 KinectFusion"
+    },
+    {
+      "slug": "optical-window",
+      "label": "Optical Window"
+    },
+    {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
+      "slug": "perception-stack",
+      "label": "Perception Stack"
+    },
+    {
+      "slug": "perception-transducer",
+      "label": "Perception Transducer"
+    },
+    {
+      "slug": "philion-fidler-2020-lift-splat-shoot-nvidia",
+      "label": "Philion Fidler 2020 Lift Splat Shoot NVIDIA"
+    },
+    {
+      "slug": "photometric-calibration",
+      "label": "Photometric Calibration"
+    },
+    {
+      "slug": "point-cloud-processing",
+      "label": "Point Cloud Processing"
+    },
+    {
+      "slug": "radar-sensing",
+      "label": "Radar Sensing"
+    },
+    {
+      "slug": "range-sensing",
+      "label": "Range Sensing"
+    },
+    {
+      "slug": "ros-sensor-msgs",
+      "label": "ROS sensor_msgs"
+    },
+    {
+      "slug": "sae-j3016",
+      "label": "SAE J3016"
+    },
+    {
+      "slug": "sae-j3016-driving-automation-taxonomy",
+      "label": "SAE J3016 Driving Automation Taxonomy"
+    },
+    {
+      "slug": "sensing-element",
+      "label": "Sensing Element"
+    },
+    {
+      "slug": "sensor-driver",
+      "label": "Sensor Driver"
+    },
+    {
+      "slug": "sensor-housing",
+      "label": "Sensor Housing"
+    },
+    {
+      "slug": "sensor-noise-characteristics",
+      "label": "Sensor Noise Characteristics"
+    },
+    {
+      "slug": "sherrington-1906-integrative-action",
+      "label": "Sherrington 1906 Integrative Action"
+    },
+    {
+      "slug": "siegwart-nourbakhsh-scaramuzza-2011-introduction-to-autonomous-mobile-robots",
+      "label": "Siegwart Nourbakhsh Scaramuzza 2011 Introduction to Autonomous Mobile Robots"
+    },
+    {
+      "slug": "signal-conditioning",
+      "label": "Signal Conditioning"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "tactile-sensing",
+      "label": "Tactile Sensing"
+    },
+    {
+      "slug": "thermal-camera",
+      "label": "Thermal Camera"
+    },
+    {
+      "slug": "thermal-sensing",
+      "label": "Thermal Sensing"
+    },
+    {
+      "slug": "thrun-burgard-fox-2005-probabilistic-robotics",
+      "label": "Thrun Burgard Fox 2005 Probabilistic Robotics"
+    },
+    {
+      "slug": "time-of-flight-principle",
+      "label": "Time-of-Flight Principle"
+    },
+    {
+      "slug": "time-synchronisation",
+      "label": "Time Synchronisation"
+    },
+    {
+      "slug": "virtual-sensor",
+      "label": "Virtual Sensor"
+    },
+    {
+      "slug": "vision-sensing",
+      "label": "Vision Sensing"
+    },
+    {
+      "slug": "visual-servoing",
+      "label": "Visual Servoing"
+    },
+    {
+      "slug": "vora-et-al-2020-point-painting",
+      "label": "Vora et al 2020 PointPainting"
+    },
+    {
+      "slug": "wave-propagation",
+      "label": "Wave Propagation"
+    },
+    {
+      "slug": "waymo-driver-5th-generation-disclosures",
+      "label": "Waymo Driver 5th-Generation Disclosures"
+    },
+    {
+      "slug": "yin-et-al-2021-center-point",
+      "label": "Yin et al 2021 CenterPoint"
+    },
+    {
+      "slug": "yuan-dong-adelson-2017-gel-sight",
+      "label": "Yuan Dong Adelson 2017 GelSight"
+    },
+    {
+      "slug": "zhang-2000-flexible-camera-calibration",
+      "label": "Zhang 2000 Flexible Camera Calibration"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "analog-to-digital-converter",
+      "label": "Analog-to-Digital Converter"
+    },
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robot-sensor",
+      "label": "Robot Sensor"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "tactile-sensor",
+      "label": "Tactile Sensor"
+    }
+  ]
+}

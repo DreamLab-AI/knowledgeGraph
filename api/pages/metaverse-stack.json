@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:74d7a3405d9f586fce51ef2a57b46391b6ad351e6da1f2c40c4dfcae2762468c",
+  "title": "Metaverse Stack",
+  "slug": "metaverse-stack",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-stack",
+  "domain": "spatial-computing",
+  "definition": "The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that together enable the creation and operation of persistent virtual world environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technology-stack",
+      "label": "Technology Stack"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:virtual-world-operation",
+        "label": "Virtual World Operation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "virtual-world-operation",
+      "label": "Virtual World Operation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technology-stack",
+      "label": "Technology Stack"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    }
+  ]
+}

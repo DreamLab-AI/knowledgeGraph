@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:7e7b0ced78e76da6799a2ff787b26ea0937d2accfb98a41a0e133a87ed735e22",
+  "title": "Performance Optimization",
+  "slug": "performance-optimization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:performance-optimization",
+  "domain": "infrastructure",
+  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput. It encompasses profiling to identify bottlenecks, algorithmic improvements, caching strategies, parallel processing, and compiler optimizations to meet defined performance targets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:optimization-technique",
+      "label": "Optimization Technique"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:resource-efficiency",
+        "label": "Resource Efficiency"
+      },
+      {
+        "id": "urn:visionflow:linked:system-scalability",
+        "label": "System Scalability"
+      },
+      {
+        "id": "urn:visionflow:linked:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "resource-efficiency",
+      "label": "Resource Efficiency"
+    },
+    {
+      "slug": "system-scalability",
+      "label": "System Scalability"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cognitive-load-metric",
+      "label": "Cognitive Load Metric"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "performance-benchmarks",
+      "label": "Performance Benchmarks"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    }
+  ]
+}

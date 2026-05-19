@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:0f68ad851f6f7a16cfdc8abdbfc251232bb2c2062d336a80250d48f54c5e72c3",
+  "title": "Hidden State",
+  "slug": "hidden-state",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hidden-state",
+  "domain": "spatial-computing",
+  "definition": "The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

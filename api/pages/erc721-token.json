@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:2780a532b4dc920b658dbcd520d4ef1f3f5290b1a9603747dce6d8492e0d2da8",
+  "title": "ERC721 Token",
+  "slug": "erc721-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc721-token",
+  "domain": "blockchain",
+  "definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:non-fungible-token",
+      "label": "Non Fungible Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "non-fungible-token",
+      "label": "Non Fungible Token"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

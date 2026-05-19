@@ -1,0 +1,448 @@
+{
+  "id": "urn:visionflow:page:a9a52452e900c6f19020056f29c90eb3639a156aa8a78b6c42a6a946c997ea1f",
+  "title": "Model Based Control",
+  "slug": "model-based-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-based-control",
+  "domain": "robotics",
+  "definition": "Model Based Control (MBC) is a class of control-system design paradigms in which an explicit mathematical model of the plant's dynamics \u2014 encoding kinematics, inertia tensors, contact forces, aerodynamics, or learned neural representations \u2014 is embedded within the controller to predict, plan, and optimise trajectories under physical and operational constraints. Rather than treating the mapping from sensor readings to actuator commands as a black-box function to be approximated by trial-and-error reinforcement, model-based approaches exploit known or identified structure to compute feedforward compensation, solve constrained optimisation problems over finite prediction horizons, propagate uncertainty through the dynamic model, and achieve real-time closed-loop operation on complex multi-body or hybrid systems. The result is dramatically improved sample efficiency, interpretable control policies, guaranteed constraint satisfaction (when combined with suitable optimisation formulations), and principled mechanisms for incorporating prior physical knowledge \u2014 advantages that are particularly compelling for safety-critical deployments such as legged locomotion, surgical robotics, aerospa",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:predictive-control",
+      "label": "Predictive Control"
+    },
+    {
+      "id": "urn:visionflow:linked:trajectory-optimisation",
+      "label": "Trajectory Optimisation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "id": "urn:visionflow:owl:class:optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-control",
+      "label": "Robot Control"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:constraint-set",
+        "label": "Constraint Set"
+      },
+      {
+        "id": "urn:visionflow:linked:contact-model",
+        "label": "Contact Model"
+      },
+      {
+        "id": "urn:visionflow:linked:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:visionflow:linked:differential-dynamic-programming",
+        "label": "Differential Dynamic Programming"
+      },
+      {
+        "id": "urn:visionflow:linked:i-lqr",
+        "label": "iLQR"
+      },
+      {
+        "id": "urn:visionflow:linked:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:prediction-horizon",
+        "label": "Prediction Horizon"
+      },
+      {
+        "id": "urn:visionflow:linked:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:visionflow:linked:whole-body-control",
+        "label": "Whole Body Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:constraint-specification",
+        "label": "Constraint Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-model",
+        "label": "Dynamic Model"
+      },
+      {
+        "id": "urn:visionflow:linked:inertia-tensor",
+        "label": "Inertia Tensor"
+      },
+      {
+        "id": "urn:visionflow:linked:jacobian-computation",
+        "label": "Jacobian Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:optimisation-solver",
+        "label": "Optimisation Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:state-estimator",
+        "label": "State Estimator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-vehicle-control",
+        "label": "Autonomous Vehicle Control"
+      },
+      {
+        "id": "urn:visionflow:linked:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-motion-planning",
+        "label": "Real Time Motion Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:robust-locomotion",
+        "label": "Robust Locomotion"
+      },
+      {
+        "id": "urn:visionflow:linked:sample-efficient-learning",
+        "label": "Sample Efficient Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:differential-dynamic-programming",
+        "label": "Differential Dynamic Programming"
+      },
+      {
+        "id": "urn:visionflow:linked:interior-point-methods",
+        "label": "Interior Point Methods"
+      },
+      {
+        "id": "urn:visionflow:linked:koopman-operator-methods",
+        "label": "Koopman Operator Methods"
+      },
+      {
+        "id": "urn:visionflow:linked:quadratic-programming",
+        "label": "Quadratic Programming"
+      },
+      {
+        "id": "urn:visionflow:linked:receding-horizon-control",
+        "label": "Receding Horizon Control"
+      },
+      {
+        "id": "urn:visionflow:linked:sequential-quadratic-programming",
+        "label": "Sequential Quadratic Programming"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acados",
+      "label": "acados"
+    },
+    {
+      "slug": "aerial-robotics",
+      "label": "Aerial Robotics"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "autonomous-vehicle-control",
+      "label": "Autonomous Vehicle Control"
+    },
+    {
+      "slug": "behaviour-cloning",
+      "label": "Behaviour Cloning"
+    },
+    {
+      "slug": "cas-adi",
+      "label": "CasADi"
+    },
+    {
+      "slug": "compliant-manipulation",
+      "label": "Compliant Manipulation"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-set",
+      "label": "Constraint Set"
+    },
+    {
+      "slug": "constraint-specification",
+      "label": "Constraint Specification"
+    },
+    {
+      "slug": "contact-mechanics",
+      "label": "Contact Mechanics"
+    },
+    {
+      "slug": "contact-model",
+      "label": "Contact Model"
+    },
+    {
+      "slug": "control-layer",
+      "label": "ControlLayer"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "ControlSystemsDomain"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "cost-function",
+      "label": "Cost Function"
+    },
+    {
+      "slug": "differential-dynamic-programming",
+      "label": "Differential Dynamic Programming"
+    },
+    {
+      "slug": "drake-toolbox",
+      "label": "Drake Toolbox"
+    },
+    {
+      "slug": "dynamic-model",
+      "label": "Dynamic Model"
+    },
+    {
+      "slug": "gaussian-processes",
+      "label": "Gaussian Processes"
+    },
+    {
+      "slug": "hpipm",
+      "label": "HPIPM"
+    },
+    {
+      "slug": "i-lqr",
+      "label": "iLQR"
+    },
+    {
+      "slug": "ieee-control-systems-society",
+      "label": "IEEE Control Systems Society"
+    },
+    {
+      "slug": "ifac",
+      "label": "IFAC"
+    },
+    {
+      "slug": "industrial-manipulation",
+      "label": "Industrial Manipulation"
+    },
+    {
+      "slug": "inertia-tensor",
+      "label": "Inertia Tensor"
+    },
+    {
+      "slug": "interior-point-methods",
+      "label": "Interior Point Methods"
+    },
+    {
+      "slug": "iso-10218-robot-safety",
+      "label": "ISO 10218 Robot Safety"
+    },
+    {
+      "slug": "jacobian-computation",
+      "label": "Jacobian Computation"
+    },
+    {
+      "slug": "koopman-operator-methods",
+      "label": "Koopman Operator Methods"
+    },
+    {
+      "slug": "lagrangian-mechanics",
+      "label": "Lagrangian Mechanics"
+    },
+    {
+      "slug": "learned-dynamics-domain",
+      "label": "LearnedDynamicsDomain"
+    },
+    {
+      "slug": "legged-locomotion",
+      "label": "Legged Locomotion"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "model-free-reinforcement-learning",
+      "label": "Model Free Reinforcement Learning"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "mu-jo-co",
+      "label": "MuJoCo"
+    },
+    {
+      "slug": "neural-odes",
+      "label": "Neural ODEs"
+    },
+    {
+      "slug": "numerical-integration",
+      "label": "Numerical Integration"
+    },
+    {
+      "slug": "optimisation-domain",
+      "label": "OptimisationDomain"
+    },
+    {
+      "slug": "optimisation-solver",
+      "label": "Optimisation Solver"
+    },
+    {
+      "slug": "osqp-solver",
+      "label": "OSQP Solver"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "PerceptionLayer"
+    },
+    {
+      "slug": "pinocchio",
+      "label": "Pinocchio"
+    },
+    {
+      "slug": "planning-layer",
+      "label": "PlanningLayer"
+    },
+    {
+      "slug": "prediction-horizon",
+      "label": "Prediction Horizon"
+    },
+    {
+      "slug": "predictive-control",
+      "label": "Predictive Control"
+    },
+    {
+      "slug": "process-control",
+      "label": "Process Control"
+    },
+    {
+      "slug": "quadratic-programming",
+      "label": "Quadratic Programming"
+    },
+    {
+      "slug": "real-time-motion-planning",
+      "label": "Real Time Motion Planning"
+    },
+    {
+      "slug": "receding-horizon-control",
+      "label": "Receding Horizon Control"
+    },
+    {
+      "slug": "robust-locomotion",
+      "label": "Robust Locomotion"
+    },
+    {
+      "slug": "sample-efficient-learning",
+      "label": "Sample Efficient Learning"
+    },
+    {
+      "slug": "sequential-quadratic-programming",
+      "label": "Sequential Quadratic Programming"
+    },
+    {
+      "slug": "sim-to-real-transfer",
+      "label": "Sim to Real Transfer"
+    },
+    {
+      "slug": "state-estimator",
+      "label": "State Estimator"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "system-identification",
+      "label": "System Identification"
+    },
+    {
+      "slug": "trajectory-optimisation",
+      "label": "Trajectory Optimisation"
+    },
+    {
+      "slug": "whole-body-control",
+      "label": "Whole Body Control"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "reactive-control",
+      "label": "Reactive Control"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "friction",
+      "label": "Friction"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

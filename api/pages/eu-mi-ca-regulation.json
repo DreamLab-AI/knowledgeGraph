@@ -1,0 +1,656 @@
+{
+  "id": "urn:visionflow:page:a229b6ccc7dabbf3268b4eb3c233700d302733007892a18969ae47d9a96ffe90",
+  "title": "EU MiCA Regulation",
+  "slug": "eu-mi-ca-regulation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:eu-mi-ca-regulation",
+  "domain": "blockchain",
+  "definition": "The **EU Markets in Crypto-Assets Regulation** (MiCA, formally **Regulation (EU) 2023/1114** of the European Parliament and of the Council of 31 May 2023), also abbreviated **MiCAR**, is the world's first comprehensive, directly applicable, horizontally harmonised regulatory framework for crypto-assets and the service providers that issue, trade, custody, advise on, transfer and otherwise commercialise them, adopted by the European Parliament on 20 April 2023 and the Council of the European Union on 16 May 2023, published in the Official Journal of the European Union L 150 on 9 June 2023, entering into force on 29 June 2023 across all 27 EU Member States plus the three additional European Economic Area (EEA) jurisdictions (Iceland, Liechtenstein, Norway via the EEA Joint Committee adoption process), with phased application beginning on **30 June 2024** for Title III (E-Money Tokens) and Title IV (Asset-Referenced Tokens) issuer provisions and **30 December 2024** for Title II (other crypto-assets), Title V (Crypto-Asset Service Providers), Title VI (market abuse) and remaining provisions, replacing a fragmented patchwork of national crypto regimes (France's PSAN since 2019, Germany",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:crypto-asset-regulation",
+      "label": "Crypto-Asset Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:digital-finance-package",
+      "label": "Digital Finance Package"
+    },
+    {
+      "id": "urn:visionflow:linked:eu-regulation",
+      "label": "EU Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:financial-services-regulation",
+      "label": "Financial Services Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:harmonised-single-market-rulebook",
+      "label": "Harmonised Single Market Rulebook"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-referenced-token",
+        "label": "Asset-Referenced Token"
+      },
+      {
+        "id": "urn:visionflow:linked:crypto-asset-service-provider",
+        "label": "Crypto-Asset Service Provider"
+      },
+      {
+        "id": "urn:visionflow:linked:crypto-asset-white-paper",
+        "label": "Crypto-Asset White Paper"
+      },
+      {
+        "id": "urn:visionflow:linked:electronic-money-token",
+        "label": "Electronic Money Token"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-ca-title-ii-other-crypto-assets",
+        "label": "MiCA Title II Other Crypto-Assets"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-ca-title-iii-emt",
+        "label": "MiCA Title III EMT"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-ca-title-iv-art",
+        "label": "MiCA Title IV ART"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-ca-title-v-casp",
+        "label": "MiCA Title V CASP"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-ca-title-vi-market-abuse",
+        "label": "MiCA Title VI Market Abuse"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-ca-transitional-regime-article-143",
+        "label": "MiCA Transitional Regime Article 143"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:capital-requirements",
+        "label": "Capital Requirements"
+      },
+      {
+        "id": "urn:visionflow:linked:casp-authorisation",
+        "label": "CASP Authorisation"
+      },
+      {
+        "id": "urn:visionflow:linked:fit-and-proper-management",
+        "label": "Fit and Proper Management"
+      },
+      {
+        "id": "urn:visionflow:linked:ict-risk-management-dora",
+        "label": "ICT Risk Management DORA"
+      },
+      {
+        "id": "urn:visionflow:linked:reserve-asset-segregation",
+        "label": "Reserve Asset Segregation"
+      },
+      {
+        "id": "urn:visionflow:linked:white-paper-notification",
+        "label": "White Paper Notification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:national-competent-authority",
+        "label": "National Competent Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:consumer-protection-in-crypto",
+        "label": "Consumer Protection in Crypto"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-casp-services",
+        "label": "Cross-Border CASP Services"
+      },
+      {
+        "id": "urn:visionflow:linked:eu-crypto-passport",
+        "label": "EU Crypto Passport"
+      },
+      {
+        "id": "urn:visionflow:linked:institutional-crypto-adoption",
+        "label": "Institutional Crypto Adoption"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-certainty-for-crypto-issuers",
+        "label": "Legal Certainty for Crypto Issuers"
+      },
+      {
+        "id": "urn:visionflow:linked:stablecoin-regulatory-clarity",
+        "label": "Stablecoin Regulatory Clarity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:brussels-effect-crypto",
+        "label": "Brussels Effect Crypto"
+      },
+      {
+        "id": "urn:visionflow:linked:capital-markets-union",
+        "label": "Capital Markets Union"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-finance-package",
+        "label": "Digital Finance Package"
+      },
+      {
+        "id": "urn:visionflow:linked:fatf-vasp-recommendations",
+        "label": "FATF VASP Recommendations"
+      },
+      {
+        "id": "urn:visionflow:linked:g20-crypto-roadmap",
+        "label": "G20 Crypto Roadmap"
+      },
+      {
+        "id": "urn:visionflow:linked:single-market-for-financial-services",
+        "label": "Single Market for Financial Services"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adachi-cominetta-kaufmann-van-der-kraaij-2020-ecb-stablecoins",
+      "label": "Adachi Cominetta Kaufmann van der Kraaij 2020 ECB Stablecoins"
+    },
+    {
+      "slug": "allen-2022-de-fi-shadow-banking-2-0",
+      "label": "Allen 2022 DeFi Shadow Banking 2.0"
+    },
+    {
+      "slug": "aml-ctf-compliance",
+      "label": "AML CTF Compliance"
+    },
+    {
+      "slug": "asset-referenced-token",
+      "label": "Asset-Referenced Token"
+    },
+    {
+      "slug": "auer-frost-vidal-pastor-2022-bis-miners-as-intermediaries",
+      "label": "Auer Frost Vidal Pastor 2022 BIS Miners as Intermediaries"
+    },
+    {
+      "slug": "authorisation-procedure",
+      "label": "Authorisation Procedure"
+    },
+    {
+      "slug": "binance-eu-exit",
+      "label": "Binance EU Exit"
+    },
+    {
+      "slug": "bradford-2020-the-brussels-effect",
+      "label": "Bradford 2020 The Brussels Effect"
+    },
+    {
+      "slug": "briola-vidal-tomas-wang-aste-2023-terra-luna-stablecoin-failure",
+      "label": "Briola Vidal-Tomas Wang Aste 2023 Terra-Luna Stablecoin Failure"
+    },
+    {
+      "slug": "brunnermeier-james-landau-2019-digitalization-of-money",
+      "label": "Brunnermeier James Landau 2019 Digitalization of Money"
+    },
+    {
+      "slug": "brussels-effect-crypto",
+      "label": "Brussels Effect Crypto"
+    },
+    {
+      "slug": "bybit-mi-ca",
+      "label": "Bybit MiCA"
+    },
+    {
+      "slug": "capital-markets-union",
+      "label": "Capital Markets Union"
+    },
+    {
+      "slug": "capital-requirements",
+      "label": "Capital Requirements"
+    },
+    {
+      "slug": "casp-authorisation",
+      "label": "CASP Authorisation"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-regulatory-landscape-study",
+      "label": "CCAF 2024 Global Cryptoasset Regulatory Landscape Study"
+    },
+    {
+      "slug": "chainalysis-2025-european-crypto-market-post-mi-ca",
+      "label": "Chainalysis 2025 European Crypto Market Post-MiCA"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "circle-2024-usdc-eurc-mi-ca-compliance",
+      "label": "Circle 2024 USDC EURC MiCA Compliance"
+    },
+    {
+      "slug": "coinbase-eu-mi-ca-authorisation",
+      "label": "Coinbase EU MiCA Authorisation"
+    },
+    {
+      "slug": "consumer-protection-in-crypto",
+      "label": "Consumer Protection in Crypto"
+    },
+    {
+      "slug": "cross-border-casp-services",
+      "label": "Cross-Border CASP Services"
+    },
+    {
+      "slug": "crypto-asset-regulation",
+      "label": "Crypto-Asset Regulation"
+    },
+    {
+      "slug": "crypto-asset-service-provider",
+      "label": "Crypto-Asset Service Provider"
+    },
+    {
+      "slug": "crypto-asset-white-paper",
+      "label": "Crypto-Asset White Paper"
+    },
+    {
+      "slug": "crypto-com-mi-ca-malta",
+      "label": "Crypto.com MiCA Malta"
+    },
+    {
+      "slug": "crypto-market-integrity",
+      "label": "Crypto Market Integrity"
+    },
+    {
+      "slug": "digital-finance-package",
+      "label": "Digital Finance Package"
+    },
+    {
+      "slug": "dlt-pilot-regime",
+      "label": "DLT Pilot Regime"
+    },
+    {
+      "slug": "dora-regulation",
+      "label": "DORA Regulation"
+    },
+    {
+      "slug": "eba-2024-mi-ca-regulatory-technical-standards",
+      "label": "EBA 2024 MiCA Regulatory Technical Standards"
+    },
+    {
+      "slug": "eba-guidelines",
+      "label": "EBA Guidelines"
+    },
+    {
+      "slug": "eba-regulatory-technical-standards-mi-ca",
+      "label": "EBA Regulatory Technical Standards MiCA"
+    },
+    {
+      "slug": "electronic-money-token",
+      "label": "Electronic Money Token"
+    },
+    {
+      "slug": "elliptic-2025-mi-ca-compliance-landscape",
+      "label": "Elliptic 2025 MiCA Compliance Landscape"
+    },
+    {
+      "slug": "emd2",
+      "label": "EMD2"
+    },
+    {
+      "slug": "esma-2024-mi-ca-technical-standards",
+      "label": "ESMA 2024 MiCA Technical Standards"
+    },
+    {
+      "slug": "esma-2024-nft-guidelines",
+      "label": "ESMA 2024 NFT Guidelines"
+    },
+    {
+      "slug": "esma-guidelines",
+      "label": "ESMA Guidelines"
+    },
+    {
+      "slug": "esma-regulatory-technical-standards-mi-ca",
+      "label": "ESMA Regulatory Technical Standards MiCA"
+    },
+    {
+      "slug": "eu-crypto-passport",
+      "label": "EU Crypto Passport"
+    },
+    {
+      "slug": "eu-digital-finance-strategy",
+      "label": "EU Digital Finance Strategy"
+    },
+    {
+      "slug": "eu-regulation",
+      "label": "EU Regulation"
+    },
+    {
+      "slug": "european-banking-authority",
+      "label": "European Banking Authority"
+    },
+    {
+      "slug": "european-commission-2020-digital-finance-package-com-2020-591",
+      "label": "European Commission 2020 Digital Finance Package COM 2020 591"
+    },
+    {
+      "slug": "european-commission-2020-mi-ca-proposal-com-2020-593",
+      "label": "European Commission 2020 MiCA Proposal COM 2020 593"
+    },
+    {
+      "slug": "european-securities-and-markets-authority",
+      "label": "European Securities and Markets Authority"
+    },
+    {
+      "slug": "european-union-law-domain",
+      "label": "EuropeanUnionLawDomain"
+    },
+    {
+      "slug": "fatf-vasp-recommendations",
+      "label": "FATF VASP Recommendations"
+    },
+    {
+      "slug": "fatf-vasp-soft-law",
+      "label": "FATF VASP Soft Law"
+    },
+    {
+      "slug": "fca-2023-cryptoasset-promotions-regime-ps23-6",
+      "label": "FCA 2023 Cryptoasset Promotions Regime PS23-6"
+    },
+    {
+      "slug": "financial-action-task-force",
+      "label": "Financial Action Task Force"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "FinancialRegulationDomain"
+    },
+    {
+      "slug": "financial-services-regulation",
+      "label": "Financial Services Regulation"
+    },
+    {
+      "slug": "fit-and-proper-management",
+      "label": "Fit and Proper Management"
+    },
+    {
+      "slug": "g20-crypto-roadmap",
+      "label": "G20 Crypto Roadmap"
+    },
+    {
+      "slug": "gorton-zhang-2023-taming-wildcat-stablecoins",
+      "label": "Gorton Zhang 2023 Taming Wildcat Stablecoins"
+    },
+    {
+      "slug": "harmonised-single-market-rulebook",
+      "label": "Harmonised Single Market Rulebook"
+    },
+    {
+      "slug": "hm-treasury-2023-2024-future-cryptoassets-regulatory-regime",
+      "label": "HM Treasury 2023-2024 Future Cryptoassets Regulatory Regime"
+    },
+    {
+      "slug": "hong-kong-vatp-regime",
+      "label": "Hong Kong VATP Regime"
+    },
+    {
+      "slug": "ict-risk-management-dora",
+      "label": "ICT Risk Management DORA"
+    },
+    {
+      "slug": "imperial-college-2024-cross-border-mi-ca-implementation",
+      "label": "Imperial College 2024 Cross-Border MiCA Implementation"
+    },
+    {
+      "slug": "institutional-crypto-adoption",
+      "label": "Institutional Crypto Adoption"
+    },
+    {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "japan-fsa-crypto-exchange-regime",
+      "label": "Japan FSA Crypto Exchange Regime"
+    },
+    {
+      "slug": "kraken-eu-mi-ca-authorisation",
+      "label": "Kraken EU MiCA Authorisation"
+    },
+    {
+      "slug": "legal-certainty-for-crypto-issuers",
+      "label": "Legal Certainty for Crypto Issuers"
+    },
+    {
+      "slug": "legal-regulatory-layer",
+      "label": "LegalRegulatoryLayer"
+    },
+    {
+      "slug": "liao-caramichael-2022-stablecoins-banking",
+      "label": "Liao Caramichael 2022 Stablecoins Banking"
+    },
+    {
+      "slug": "liu-makarov-schoar-2023-anatomy-of-a-run-terra-luna",
+      "label": "Liu Makarov Schoar 2023 Anatomy of a Run Terra Luna"
+    },
+    {
+      "slug": "market-abuse-surveillance",
+      "label": "Market Abuse Surveillance"
+    },
+    {
+      "slug": "market-conduct-layer",
+      "label": "MarketConductLayer"
+    },
+    {
+      "slug": "mas-digital-payment-token-framework",
+      "label": "MAS Digital Payment Token Framework"
+    },
+    {
+      "slug": "maume-fromberger-zimmermann-2023-cryptocurrencies-and-de-fi",
+      "label": "Maume Fromberger Zimmermann 2023 Cryptocurrencies and DeFi"
+    },
+    {
+      "slug": "mi-ca-title-ii-other-crypto-assets",
+      "label": "MiCA Title II Other Crypto-Assets"
+    },
+    {
+      "slug": "mi-ca-title-iii-emt",
+      "label": "MiCA Title III EMT"
+    },
+    {
+      "slug": "mi-ca-title-iv-art",
+      "label": "MiCA Title IV ART"
+    },
+    {
+      "slug": "mi-ca-title-v-casp",
+      "label": "MiCA Title V CASP"
+    },
+    {
+      "slug": "mi-ca-title-vi-market-abuse",
+      "label": "MiCA Title VI Market Abuse"
+    },
+    {
+      "slug": "mi-ca-transitional-regime-article-143",
+      "label": "MiCA Transitional Regime Article 143"
+    },
+    {
+      "slug": "mi-fid-ii",
+      "label": "MiFID II"
+    },
+    {
+      "slug": "national-competent-authorities",
+      "label": "National Competent Authorities"
+    },
+    {
+      "slug": "official-journal-l-150-9-june-2023",
+      "label": "Official Journal L 150 9 June 2023"
+    },
+    {
+      "slug": "passporting-notification",
+      "label": "Passporting Notification"
+    },
+    {
+      "slug": "psd2",
+      "label": "PSD2"
+    },
+    {
+      "slug": "quaglia-spendzharova-2023-politics-of-eu-crypto-asset-regulation",
+      "label": "Quaglia Spendzharova 2023 Politics of EU Crypto-Asset Regulation"
+    },
+    {
+      "slug": "regulation-eu-2023-1113-transfer-of-funds-regulation",
+      "label": "Regulation EU 2023-1113 Transfer of Funds Regulation"
+    },
+    {
+      "slug": "regulation-eu-2023-1114",
+      "label": "Regulation EU 2023-1114"
+    },
+    {
+      "slug": "regulation-eu-2023-1114-mi-ca-official-journal-l-150",
+      "label": "Regulation EU 2023-1114 MiCA Official Journal L 150"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "reserve-asset-composition-rules",
+      "label": "Reserve Asset Composition Rules"
+    },
+    {
+      "slug": "reserve-asset-segregation",
+      "label": "Reserve Asset Segregation"
+    },
+    {
+      "slug": "significant-token-designation",
+      "label": "Significant Token Designation"
+    },
+    {
+      "slug": "single-market-for-financial-services",
+      "label": "Single Market for Financial Services"
+    },
+    {
+      "slug": "stablecoin-regulatory-clarity",
+      "label": "Stablecoin Regulatory Clarity"
+    },
+    {
+      "slug": "stablecoin-reserve-transparency",
+      "label": "Stablecoin Reserve Transparency"
+    },
+    {
+      "slug": "supervisory-layer",
+      "label": "SupervisoryLayer"
+    },
+    {
+      "slug": "swiss-finma-dlt-framework",
+      "label": "Swiss FINMA DLT Framework"
+    },
+    {
+      "slug": "tasca-liu-hayes-2018-ucl-cbt-bitcoin-economy",
+      "label": "Tasca Liu Hayes 2018 UCL CBT Bitcoin Economy"
+    },
+    {
+      "slug": "terra-luna-collapse",
+      "label": "Terra Luna Collapse"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "transfer-of-funds-regulation-2023-1113",
+      "label": "Transfer of Funds Regulation 2023-1113"
+    },
+    {
+      "slug": "uk-fsma-2023-crypto-framework",
+      "label": "UK FSMA 2023 Crypto Framework"
+    },
+    {
+      "slug": "us-executive-action-crypto-approach",
+      "label": "US Executive Action Crypto Approach"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "white-paper-notification",
+      "label": "White Paper Notification"
+    },
+    {
+      "slug": "white-paper-notification-procedure",
+      "label": "White Paper Notification Procedure"
+    },
+    {
+      "slug": "yuksel-ripley-2024-private-international-law-mi-ca",
+      "label": "Yuksel Ripley 2024 Private International Law MiCA"
+    },
+    {
+      "slug": "zetzsche-annunziata-arner-buckley-2021-mi-ca-digital-finance",
+      "label": "Zetzsche Annunziata Arner Buckley 2021 MiCA Digital Finance"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "national-competent-authority",
+      "label": "National Competent Authority"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

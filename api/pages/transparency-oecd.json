@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992",
+  "title": "Transparency (OECD)",
+  "slug": "transparency-oecd",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transparency-oecd",
+  "domain": "artificial-intelligence",
+  "definition": "AI actors should commit to transparency and responsible disclosure regarding AI systems, providing sufficient information to enable people to understand AI outcomes, challenge decisions and participate meaningfully in AI-influenced processes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:contestability",
+        "label": "contestability"
+      },
+      {
+        "id": "urn:visionflow:linked:informed-decision-making",
+        "label": "Informed decision-making"
+      },
+      {
+        "id": "urn:visionflow:linked:trust",
+        "label": "trust"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "contestability",
+      "label": "contestability"
+    },
+    {
+      "slug": "informed-decision-making",
+      "label": "Informed decision-making"
+    },
+    {
+      "slug": "trust",
+      "label": "trust"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:ebba25dda3a3daabc3cc35c0a26ebf688a205e61045a3dbfd73734e1d641c90c",
+  "title": "Sentiment Analysis",
+  "slug": "sentiment-analysis",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sentiment-analysis",
+  "domain": "artificial-intelligence",
+  "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "opinion-mining",
+      "label": "Opinion Mining"
+    },
+    {
+      "slug": "text-classification",
+      "label": "Text Classification"
+    },
+    {
+      "slug": "landscape",
+      "label": "Landscape"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "metaverse-psychology-profile",
+      "label": "Metaverse Psychology Profile"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

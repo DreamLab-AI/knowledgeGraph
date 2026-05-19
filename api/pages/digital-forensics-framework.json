@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762",
+  "title": "Digital Forensics Framework",
+  "slug": "digital-forensics-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-forensics-framework",
+  "domain": "spatial-computing",
+  "definition": "A structured methodology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:forensic-tools",
+        "label": "Forensic Tools"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:evidence-collection",
+        "label": "Evidence Collection"
+      },
+      {
+        "id": "urn:visionflow:linked:incident-investigation",
+        "label": "Incident Investigation"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-documentation",
+        "label": "Legal Documentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "chain-of-custody",
+      "label": "Chain of Custody"
+    },
+    {
+      "slug": "data-integrity",
+      "label": "Data Integrity"
+    },
+    {
+      "slug": "evidence-collection",
+      "label": "Evidence Collection"
+    },
+    {
+      "slug": "forensic-tools",
+      "label": "Forensic Tools"
+    },
+    {
+      "slug": "incident-investigation",
+      "label": "Incident Investigation"
+    },
+    {
+      "slug": "legal-documentation",
+      "label": "Legal Documentation"
+    },
+    {
+      "slug": "nist-framework",
+      "label": "NIST Framework"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    }
+  ]
+}

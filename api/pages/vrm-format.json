@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:440c59f2aa36392cfb35a867b95fa83e3d29b98219097cd1553564ad3a581909",
+  "title": "VRM Format",
+  "slug": "vrm-format",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vrm-format",
+  "domain": "spatial-computing",
+  "definition": "An open file format standard for 3D humanoid avatars built on glTF, designed for cross-platform interoperability in VR, AR, and metaverse applications, incorporating standardized rigging, facial expressions, gaze controls, and licensing metadata to enable seamless avatar use across different virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    }
+  ]
+}

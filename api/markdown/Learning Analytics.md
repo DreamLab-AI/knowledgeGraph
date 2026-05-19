@@ -1,24 +1,216 @@
-iri:: http://narrativegoldmine.com/spatial-computing#LearningAnalytics
-uri:: urn:visionclaw:concept:spatial-computing:learning-analytics
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:learning-analytics
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Learning Analytics
-content-hash:: sha256-12-83a9b5e2838c
-legacy-term-id:: MV-9941
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#LearningAnalytics
+legacy_uri:: urn:visionclaw:concept:spatial-computing:learning-analytics
 public:: true
+
+# Learning Analytics
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577",
+  "@type": "Page",
+  "vc:slug": "learning-analytics",
+  "title": "Learning Analytics",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning",
+      "vc:label": "Adaptive Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:educational-technology",
+      "vc:label": "Educational Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-83a9b5e2838c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#LearningAnalytics"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9941"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Learning Analytics"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:learning-analytics"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:learning-analytics"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:learning-analytics",
+  "@type": "OntologyClass",
+  "label": "Learning Analytics",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:educational-technology",
+      "vc:label": "Educational Technology"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning",
+      "vc:label": "Adaptive Learning"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:learning-analytics:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adaptive Learning]]",
+      "resolved": "urn:visionflow:linked:adaptive-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Educational Technology]]",
+      "resolved": "urn:visionflow:owl:class:educational-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.

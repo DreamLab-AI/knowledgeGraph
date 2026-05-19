@@ -1,21 +1,213 @@
-iri:: http://narrativegoldmine.com/metaverse#AdversarialRobustness
-uri:: urn:visionclaw:concept:artificial-intelligence:adversarial-robustness
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:adversarial-robustness
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Adversarial Robustness
-content-hash:: sha256-12-67ec8dc4eb5e
-legacy-term-id:: AI-0074
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:12:08Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AdversarialRobustness
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:adversarial-robustness
 public:: true
+
+# Adversarial Robustness
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a",
+  "@type": "Page",
+  "vc:slug": "adversarial-robustness",
+  "title": "Adversarial Robustness",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:fca",
+      "vc:label": "FCA"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-tr-24029-1-2021",
+      "vc:label": "ISO/IEC TR 24029-1:2021"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-67ec8dc4eb5e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AdversarialRobustness"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0074"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:12:08Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Adversarial Robustness"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:adversarial-robustness"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:adversarial-robustness"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:adversarial-robustness",
+  "@type": "OntologyClass",
+  "label": "Adversarial Robustness",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:adversarial-robustness:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[FCA]]",
+      "resolved": "urn:visionflow:linked:fca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC TR 24029-1:2021]]",
+      "resolved": "urn:visionflow:linked:iso-iec-tr-24029-1-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.

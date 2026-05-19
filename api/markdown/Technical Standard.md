@@ -1,22 +1,272 @@
-iri:: http://narrativegoldmine.com/infrastructure#TechnicalStandard
-uri:: urn:visionclaw:concept:infrastructure:technical-standard
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:technical-standard
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Technical Standard
-content-hash:: sha256-12-153908163d17
-legacy-term-id:: NGM-7019
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-bridges-to:: [[Blockchain]], [[AI Agent System]]
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#TechnicalStandard
+legacy_uri:: urn:visionclaw:concept:infrastructure:technical-standard
 public:: true
+
+# Technical Standard
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f",
+  "@type": "Page",
+  "vc:slug": "technical-standard",
+  "title": "Technical Standard",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:best-practices",
+      "vc:label": "Best Practices"
+    },
+    {
+      "@id": "urn:visionflow:linked:core-technology",
+      "vc:label": "Core Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:specification",
+      "vc:label": "Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-requirements",
+      "vc:label": "Technical Requirements"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quality-assurance",
+      "vc:label": "Quality Assurance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety",
+      "vc:label": "Safety"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Blockchain]], [[AI Agent System]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-153908163d17"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#TechnicalStandard"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7019"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Technical Standard"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:technical-standard"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:technical-standard"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:technical-standard",
+  "@type": "OntologyClass",
+  "label": "Technical Standard",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:specification",
+      "vc:label": "Specification"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global trade in technology systems.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quality-assurance",
+      "vc:label": "Quality Assurance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety",
+      "vc:label": "Safety"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:best-practices",
+      "vc:label": "Best Practices"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-requirements",
+      "vc:label": "Technical Requirements"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:technical-standard:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Best Practices]]",
+      "resolved": "urn:visionflow:linked:best-practices",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Core Technology]]",
+      "resolved": "urn:visionflow:linked:core-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Specification]]",
+      "resolved": "urn:visionflow:linked:specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Technical Requirements]]",
+      "resolved": "urn:visionflow:linked:technical-requirements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quality Assurance]]",
+      "resolved": "urn:visionflow:owl:class:quality-assurance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Safety]]",
+      "resolved": "urn:visionflow:owl:class:safety",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global trade in technology systems.

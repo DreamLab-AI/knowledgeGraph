@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:f5cdb92ae46ce9d19f0a2b2e73ab84c6a8251b008533546780f6c689462bf55f",
+  "title": "rb 0019 exoskeleton robot",
+  "slug": "rb-0019-exoskeleton-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0019-exoskeleton-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

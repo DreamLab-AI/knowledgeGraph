@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:eed358cbd85f52ef4dfd48361ae5134eda32d8c6b9770713dfa2727b459fdfea",
+  "title": "Motion Capture Technology",
+  "slug": "motion-capture-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:motion-capture-technology",
+  "domain": "spatial-computing",
+  "definition": "Motion Capture Technology is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "motion-markers",
+      "label": "Motion Markers"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

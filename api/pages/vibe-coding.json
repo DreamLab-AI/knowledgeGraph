@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:051e29e0aace62cd86f62547744198593132eed29e9e6a6656791561d75f5f11",
+  "title": "Vibe Coding",
+  "slug": "vibe-coding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vibe-coding",
+  "domain": "infrastructure",
+  "definition": "Vibe Coding is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:33185f47a0142a3f4f35af878b569b8b3d5c3e03ab23fd9b509880b14cb312a4",
+  "title": "Cut Mix",
+  "slug": "cut-mix",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cut-mix",
+  "domain": "spatial-computing",
+  "definition": "A data augmentation technique that creates training examples by cutting and pasting patches between images, with labels mixed proportionally to the patch areas. CutMix improves model robustness and localisation ability by forcing attention to less discriminative regions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

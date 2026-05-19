@@ -1,0 +1,408 @@
+{
+  "id": "urn:visionflow:page:14795c949e993407c4e2323e005a972a171480a2bb5a81fe02d766fea690f04d",
+  "title": "Microsoft Copilot",
+  "slug": "microsoft-copilot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:microsoft-copilot",
+  "domain": "artificial-intelligence",
+  "definition": "Microsoft Copilot is a family of generative AI products and platform services developed by Microsoft Corporation, unified under the \"Copilot\" brand umbrella from 2023 onwards following Microsoft's $13 billion cumulative investment in OpenAI (initial $1 billion in 2019, subsequent rounds 2021-2023), deployed across five principal product lines: (1) GitHub Copilot \u2014 a code-completion and agentic software development assistant launched in technical preview June 2021 and GA June 2022, originally powered by OpenAI Codex (a GPT-3 variant fine-tuned on 159 GB of public GitHub code), promoted to GPT-4o as default completion model from May 2024, and expanded by late 2024 into a multi-model marketplace supporting Anthropic Claude 3.5/4 Sonnet, Google Gemini 2.0 Flash/2.5 Pro, OpenAI o3, and GPT-4.1, with 4.7 million paid subscribers, ~77,000 enterprise customers by January 2026 and deployment at approximately 90% of Fortune 100 companies; (2) Microsoft 365 Copilot \u2014 an LLM assistant integrated throughout Word, Excel, PowerPoint, Outlook, Teams, and OneNote, generally available from November 2023 at $30/user/month annual commitment, bundled into M365 Personal/Family from January 2025, reachin",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "id": "urn:visionflow:owl:class:code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:azure-open-ai-service",
+        "label": "Azure OpenAI Service"
+      },
+      {
+        "id": "urn:visionflow:linked:copilot-pc",
+        "label": "Copilot+ PC"
+      },
+      {
+        "id": "urn:visionflow:linked:copilot-studio",
+        "label": "Copilot Studio"
+      },
+      {
+        "id": "urn:visionflow:linked:git-hub-copilot",
+        "label": "GitHub Copilot"
+      },
+      {
+        "id": "urn:visionflow:linked:m365-copilot",
+        "label": "M365 Copilot"
+      },
+      {
+        "id": "urn:visionflow:linked:security-copilot",
+        "label": "Security Copilot"
+      },
+      {
+        "id": "urn:visionflow:linked:windows-recall",
+        "label": "Windows Recall"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:azure-open-ai-service",
+        "label": "Azure OpenAI Service"
+      },
+      {
+        "id": "urn:visionflow:linked:git-hub",
+        "label": "GitHub"
+      },
+      {
+        "id": "urn:visionflow:linked:gpt-4o",
+        "label": "GPT-4o"
+      },
+      {
+        "id": "urn:visionflow:linked:microsoft-365",
+        "label": "Microsoft 365"
+      },
+      {
+        "id": "urn:visionflow:linked:npu-hardware",
+        "label": "NPU Hardware"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:productivity-automation",
+        "label": "Productivity Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "azure-open-ai-service",
+      "label": "Azure OpenAI Service"
+    },
+    {
+      "slug": "copilot-pc",
+      "label": "Copilot+ PC"
+    },
+    {
+      "slug": "copilot-studio",
+      "label": "Copilot Studio"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "git-hub-copilot",
+      "label": "GitHub Copilot"
+    },
+    {
+      "slug": "gpt-4o",
+      "label": "GPT-4o"
+    },
+    {
+      "slug": "hardware-certification-layer",
+      "label": "HardwareCertificationLayer"
+    },
+    {
+      "slug": "iso-42001",
+      "label": "ISO 42001"
+    },
+    {
+      "slug": "m365-copilot",
+      "label": "M365 Copilot"
+    },
+    {
+      "slug": "microsoft-365",
+      "label": "Microsoft 365"
+    },
+    {
+      "slug": "microsoft-responsible-ai-standard",
+      "label": "Microsoft Responsible AI Standard"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "npu-hardware",
+      "label": "NPU Hardware"
+    },
+    {
+      "slug": "product-and-service-domain",
+      "label": "ProductAndServiceDomain"
+    },
+    {
+      "slug": "productivity-automation",
+      "label": "Productivity Automation"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "security-copilot",
+      "label": "Security Copilot"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "SoftwareEngineeringDomain"
+    },
+    {
+      "slug": "threat-detection",
+      "label": "Threat Detection"
+    },
+    {
+      "slug": "windows-recall",
+      "label": "Windows Recall"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

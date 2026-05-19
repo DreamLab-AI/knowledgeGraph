@@ -1,0 +1,312 @@
+{
+  "id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e",
+  "title": "AIEthicsDomain",
+  "slug": "aiethics-domain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:aiethics-domain",
+  "domain": "artificial-intelligence",
+  "definition": "The AIEthicsDomain represents the comprehensive knowledge domain of ethical considerations, fairness principles, governance frameworks, and accountability mechanisms in artificial intelligence systems. This domain encompasses the theoretical foundations and practical methodologies for ensuring AI systems are developed, deployed, and operated in ways that are fair, transparent, accountable, and aligned with human values. It includes fairness metrics and definitions, bias detection and mitigation techniques, algorithmic accountability frameworks, transparency and explainability methods, AI governance structures, ethical decision-making frameworks, impact assessment methodologies, and responsible AI development practices. The domain spans from fundamental fairness concepts and mathematical formulations to organizational governance structures and regulatory compliance frameworks. It addresses critical challenges including algorithmic discrimination, disparate impact, group vs individual fairness tradeoffs, intersectional fairness considerations, fairness-accuracy tradeoffs, and the social implications of AI deployment across diverse contexts and populations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ethics-board",
+      "label": "AI Ethics Board"
+    },
+    {
+      "slug": "ai-governance-maturity-model",
+      "label": "AI Governance Maturity Model"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-trustworthiness-dimensions",
+      "label": "AI Trustworthiness Dimensions"
+    },
+    {
+      "slug": "accountable-party",
+      "label": "Accountable Party"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "algorithmic-transparency-reports",
+      "label": "Algorithmic Transparency Reports"
+    },
+    {
+      "slug": "bias-detection-methods",
+      "label": "Bias Detection Methods"
+    },
+    {
+      "slug": "bias-mitigation-techniques",
+      "label": "Bias Mitigation Techniques"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "disparate-impact",
+      "label": "Disparate Impact"
+    },
+    {
+      "slug": "diversity-non-discrimination-and-fairness",
+      "label": "Diversity, Non-Discrimination, and Fairness"
+    },
+    {
+      "slug": "edge-ai-accelerators",
+      "label": "Edge AI Accelerators"
+    },
+    {
+      "slug": "edge-ai-security",
+      "label": "Edge AI Security"
+    },
+    {
+      "slug": "edge-ai-system",
+      "label": "Edge AI System"
+    },
+    {
+      "slug": "edge-ai-for-smart-cities",
+      "label": "Edge AI for Smart Cities"
+    },
+    {
+      "slug": "edge-cloud-collaboration",
+      "label": "Edge-Cloud Collaboration"
+    },
+    {
+      "slug": "embedded-ai-frameworks",
+      "label": "Embedded AI Frameworks"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "ethical-review-process",
+      "label": "Ethical Review Process"
+    },
+    {
+      "slug": "fairness-accuracy-tradeoffs",
+      "label": "Fairness Accuracy Tradeoffs"
+    },
+    {
+      "slug": "fairness-auditing-tools",
+      "label": "Fairness Auditing Tools"
+    },
+    {
+      "slug": "fairness-constraints",
+      "label": "Fairness Constraints"
+    },
+    {
+      "slug": "fairness-metrics",
+      "label": "Fairness Metrics"
+    },
+    {
+      "slug": "federated-edge-learning",
+      "label": "Federated Edge Learning"
+    },
+    {
+      "slug": "gdpr-article-22-compliance",
+      "label": "GDPR Article 22 Compliance"
+    },
+    {
+      "slug": "group-vs-individual-fairness",
+      "label": "Group vs Individual Fairness"
+    },
+    {
+      "slug": "homomorphic-encryption-for-machine-learning",
+      "label": "Homomorphic Encryption for Machine Learning"
+    },
+    {
+      "slug": "human-agency-and-oversight",
+      "label": "Human Agency and Oversight"
+    },
+    {
+      "slug": "ieee-7000-series-standards",
+      "label": "IEEE 7000 Series Standards"
+    },
+    {
+      "slug": "intersectional-fairness",
+      "label": "Intersectional Fairness"
+    },
+    {
+      "slug": "io-t-ai-integration",
+      "label": "IoT AI Integration"
+    },
+    {
+      "slug": "knowledge-distillation-for-edge",
+      "label": "Knowledge Distillation for Edge"
+    },
+    {
+      "slug": "latency-aware-edge-ai",
+      "label": "Latency-Aware Edge AI"
+    },
+    {
+      "slug": "model-compression-for-edge",
+      "label": "Model Compression for Edge"
+    },
+    {
+      "slug": "model-pruning-for-edge-deployment",
+      "label": "Model Pruning for Edge Deployment"
+    },
+    {
+      "slug": "neural-network-quantisation",
+      "label": "Neural Network Quantisation"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "on-device-learning",
+      "label": "On-Device Learning"
+    },
+    {
+      "slug": "ontology-property-definitions",
+      "label": "Ontology Property Definitions"
+    },
+    {
+      "slug": "power-efficient-ai",
+      "label": "Power-Efficient AI"
+    },
+    {
+      "slug": "privacy-budget-management",
+      "label": "Privacy Budget Management"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy By Design"
+    },
+    {
+      "slug": "privacy-impact-assessment",
+      "label": "Privacy Impact Assessment"
+    },
+    {
+      "slug": "privacy-preserving-data-mining",
+      "label": "Privacy Preserving Data Mining"
+    },
+    {
+      "slug": "privacy-utility-tradeoffs",
+      "label": "Privacy Utility Tradeoffs"
+    },
+    {
+      "slug": "privacy-and-data-governance",
+      "label": "Privacy and Data Governance"
+    },
+    {
+      "slug": "pseudonymisation",
+      "label": "Pseudonymisation"
+    },
+    {
+      "slug": "real-time-inference-at-edge",
+      "label": "Real-Time Inference at Edge"
+    },
+    {
+      "slug": "redress-procedure",
+      "label": "Redress Procedure"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "responsible-ai-principles",
+      "label": "Responsible AI Principles"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    },
+    {
+      "slug": "societal-and-environmental-wellbeing",
+      "label": "Societal and Environmental Wellbeing"
+    },
+    {
+      "slug": "stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "technical-robustness-and-safety",
+      "label": "Technical Robustness and Safety"
+    },
+    {
+      "slug": "tiny-ml",
+      "label": "TinyML"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    },
+    {
+      "slug": "transparency-and-explainability",
+      "label": "Transparency and Explainability"
+    },
+    {
+      "slug": "trustworthy-ai-framework",
+      "label": "Trustworthy AI Framework"
+    },
+    {
+      "slug": "unesco-recommendation-on-the-ethics-of-ai",
+      "label": "UNESCO Recommendation on the Ethics of AI"
+    },
+    {
+      "slug": "k-anonymity-in-datasets",
+      "label": "k-Anonymity in Datasets"
+    }
+  ]
+}

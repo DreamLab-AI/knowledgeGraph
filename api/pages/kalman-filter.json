@@ -1,0 +1,181 @@
+{
+  "id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2",
+  "title": "Kalman Filter",
+  "slug": "kalman-filter",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:kalman-filter",
+  "domain": "robotics",
+  "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "id": "urn:visionflow:owl:class:state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.98,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gaussian-noise-assumption",
+        "label": "Gaussian Noise Assumption"
+      },
+      {
+        "id": "urn:visionflow:linked:linear-system-model",
+        "label": "Linear System Model"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
+    },
+    {
+      "slug": "gaussian-noise-assumption",
+      "label": "Gaussian Noise Assumption"
+    },
+    {
+      "slug": "linear-system-model",
+      "label": "Linear System Model"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "optimality",
+      "label": "Optimality"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
+    },
+    {
+      "slug": "rb-1008-odometry",
+      "label": "RB-1008-odometry"
+    },
+    {
+      "slug": "rb-1014-monte-carlo-localization",
+      "label": "RB-1014-monte-carlo-localization"
+    },
+    {
+      "slug": "recursive-estimator",
+      "label": "Recursive Estimator"
+    },
+    {
+      "slug": "recursiveness",
+      "label": "Recursiveness"
+    },
+    {
+      "slug": "system-state",
+      "label": "System State"
+    },
+    {
+      "slug": "tracking",
+      "label": "Tracking"
+    },
+    {
+      "slug": "unscented-kalman-filter",
+      "label": "Unscented Kalman Filter"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB-1013-localization"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

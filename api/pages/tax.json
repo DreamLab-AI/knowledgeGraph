@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:da96586440f90fbc16be6abd164b8e9627d8a8efca4babfc81d461fcdbe8dbd2",
+  "title": "Tax",
+  "slug": "tax",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tax",
+  "domain": "infrastructure",
+  "definition": "Tax is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accounts",
+      "label": "Accounts"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67",
+  "title": "Symmetric Encryption",
+  "slug": "symmetric-encryption",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:symmetric-encryption",
+  "domain": "blockchain",
+  "definition": "A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Symmetric encryption provides confidentiality for data at rest and in transit with high computational efficiency, making it suitable for bulk data encryption in blockchain and general security applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:confidential-transactions",
+        "label": "Confidential Transactions"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "confidential-transactions",
+      "label": "Confidential Transactions"
+    },
+    {
+      "slug": "hybrid-encryption",
+      "label": "Hybrid Encryption"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    }
+  ]
+}

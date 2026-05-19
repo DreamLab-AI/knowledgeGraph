@@ -1,0 +1,584 @@
+{
+  "id": "urn:visionflow:page:fc232b359b9d31d33df82ff16e559e3c7a834d3752a3419d342e498b2a5ad385",
+  "title": "California AI bill",
+  "slug": "california-ai-bill",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:california-ai-bill",
+  "domain": "artificial-intelligence",
+  "definition": "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale [[Frontier Models]] \u2014 most prominently Senate Bill 1047 (SB 1047, 2024, vetoed) and its successor Senate Bill 53 (SB 53, 2025, signed), together with associated transparency and data-governance instruments such as AB 2013 (2024, signed). The corpus sits at the intersection of [[AI Safety]], [[Liability]], [[Algorithmic Accountability]], and [[Technology Policy]], establishing California as the primary sub-national jurisdiction attempting to regulate frontier AI development in the United States and, by the California-effect spillover dynamic historically observed in vehicle emissions and consumer-privacy regulation, potentially shaping norms globally.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:frontier-model-governance",
+      "label": "Frontier Model Governance"
+    },
+    {
+      "id": "urn:visionflow:linked:legislative-instrument",
+      "label": "Legislative Instrument"
+    },
+    {
+      "id": "urn:visionflow:linked:state-law",
+      "label": "State Law"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-policy",
+      "label": "Technology Policy"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ab-1008",
+        "label": "AB 1008"
+      },
+      {
+        "id": "urn:visionflow:linked:ab-2013",
+        "label": "AB 2013"
+      },
+      {
+        "id": "urn:visionflow:linked:ab-489",
+        "label": "AB 489"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-statement",
+        "label": "Compliance Statement"
+      },
+      {
+        "id": "urn:visionflow:linked:critical-safety-incident-reporting",
+        "label": "Critical Safety Incident Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-ai-framework",
+        "label": "Frontier AI Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-model-division",
+        "label": "Frontier Model Division"
+      },
+      {
+        "id": "urn:visionflow:linked:kill-switch-mandate",
+        "label": "Kill Switch Mandate"
+      },
+      {
+        "id": "urn:visionflow:linked:sb-1047",
+        "label": "SB 1047"
+      },
+      {
+        "id": "urn:visionflow:linked:sb-53",
+        "label": "SB 53"
+      },
+      {
+        "id": "urn:visionflow:linked:sb-942",
+        "label": "SB 942"
+      },
+      {
+        "id": "urn:visionflow:linked:whistleblower-protection",
+        "label": "Whistleblower Protection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:attorney-general-enforcement",
+        "label": "Attorney General Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:compute-threshold",
+        "label": "Compute Threshold"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:visionflow:linked:liability-framework",
+        "label": "Liability Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:revenue-threshold",
+        "label": "Revenue Threshold"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-documentation",
+        "label": "Training Data Documentation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-safety-transparency",
+        "label": "AI Safety Transparency"
+      },
+      {
+        "id": "urn:visionflow:linked:consumer-privacy-in-ai",
+        "label": "Consumer Privacy in AI"
+      },
+      {
+        "id": "urn:visionflow:linked:healthcare-ai-accountability",
+        "label": "Healthcare AI Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-disclosure",
+        "label": "Training Data Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:whistleblower-protection",
+        "label": "Whistleblower Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:critical-harm-framework",
+        "label": "Critical Harm Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:dual-threshold-regulation",
+        "label": "Dual Threshold Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:pre-deployment-safety-checks",
+        "label": "Pre-Deployment Safety Checks"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-based-ai-governance",
+        "label": "Risk-Based AI Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:transparency-mandate",
+        "label": "Transparency Mandate"
+      },
+      {
+        "id": "urn:visionflow:linked:whistleblower-mechanism",
+        "label": "Whistleblower Mechanism"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ab-1008",
+      "label": "AB 1008"
+    },
+    {
+      "slug": "ab-2013",
+      "label": "AB 2013"
+    },
+    {
+      "slug": "ab-489",
+      "label": "AB 489"
+    },
+    {
+      "slug": "ai-alliance",
+      "label": "AI Alliance"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "ai-safety-transparency",
+      "label": "AI Safety Transparency"
+    },
+    {
+      "slug": "aigovernance-domain",
+      "label": "AIGovernanceDomain"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "attorney-general-enforcement",
+      "label": "Attorney General Enforcement"
+    },
+    {
+      "slug": "c2-pa-content-credentials",
+      "label": "C2PA Content Credentials"
+    },
+    {
+      "slug": "california-attorney-general",
+      "label": "California Attorney General"
+    },
+    {
+      "slug": "california-department-of-justice",
+      "label": "California Department of Justice"
+    },
+    {
+      "slug": "california-effect",
+      "label": "California Effect"
+    },
+    {
+      "slug": "california-legislature",
+      "label": "California Legislature"
+    },
+    {
+      "slug": "california-office-of-emergency-services",
+      "label": "California Office of Emergency Services"
+    },
+    {
+      "slug": "catastrophic-risk-assessment",
+      "label": "Catastrophic Risk Assessment"
+    },
+    {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
+      "slug": "center-for-ai-safety",
+      "label": "Center for AI Safety"
+    },
+    {
+      "slug": "compliance-statement",
+      "label": "Compliance Statement"
+    },
+    {
+      "slug": "compute-threshold",
+      "label": "Compute Threshold"
+    },
+    {
+      "slug": "consumer-privacy-in-ai",
+      "label": "Consumer Privacy in AI"
+    },
+    {
+      "slug": "critical-harm-framework",
+      "label": "Critical Harm Framework"
+    },
+    {
+      "slug": "critical-safety-incident-reporting",
+      "label": "Critical Safety Incident Reporting"
+    },
+    {
+      "slug": "dan-hendrycks",
+      "label": "Dan Hendrycks"
+    },
+    {
+      "slug": "dario-amodei",
+      "label": "Dario Amodei"
+    },
+    {
+      "slug": "dual-threshold-regulation",
+      "label": "Dual Threshold Regulation"
+    },
+    {
+      "slug": "elon-musk",
+      "label": "Elon Musk"
+    },
+    {
+      "slug": "federal-ai-policy",
+      "label": "Federal AI Policy"
+    },
+    {
+      "slug": "federal-preemption",
+      "label": "Federal Preemption"
+    },
+    {
+      "slug": "federal-preemption-debate",
+      "label": "Federal Preemption Debate"
+    },
+    {
+      "slug": "flop-threshold",
+      "label": "FLOP Threshold"
+    },
+    {
+      "slug": "frontier-ai-framework",
+      "label": "Frontier AI Framework"
+    },
+    {
+      "slug": "frontier-model-division",
+      "label": "Frontier Model Division"
+    },
+    {
+      "slug": "frontier-model-governance",
+      "label": "Frontier Model Governance"
+    },
+    {
+      "slug": "frontier-models",
+      "label": "Frontier Models"
+    },
+    {
+      "slug": "gavin-newsom",
+      "label": "Gavin Newsom"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "geoffrey-hinton",
+      "label": "Geoffrey Hinton"
+    },
+    {
+      "slug": "governor-of-california",
+      "label": "Governor of California"
+    },
+    {
+      "slug": "healthcare-ai-accountability",
+      "label": "Healthcare AI Accountability"
+    },
+    {
+      "slug": "incident-reporting",
+      "label": "Incident Reporting"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "InstitutionalLayer"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO IEC 42001"
+    },
+    {
+      "slug": "iso-iec-jtc-1-sc-42",
+      "label": "ISO IEC JTC 1 SC 42"
+    },
+    {
+      "slug": "kill-switch",
+      "label": "Kill Switch"
+    },
+    {
+      "slug": "kill-switch-mandate",
+      "label": "Kill Switch Mandate"
+    },
+    {
+      "slug": "legal-layer",
+      "label": "LegalLayer"
+    },
+    {
+      "slug": "legal-regulatory-domain",
+      "label": "LegalRegulatoryDomain"
+    },
+    {
+      "slug": "legislative-instrument",
+      "label": "Legislative Instrument"
+    },
+    {
+      "slug": "liability",
+      "label": "Liability"
+    },
+    {
+      "slug": "liability-framework",
+      "label": "Liability Framework"
+    },
+    {
+      "slug": "machine-unlearning",
+      "label": "Machine Unlearning"
+    },
+    {
+      "slug": "marc-andreessen",
+      "label": "Marc Andreessen"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "nist-sp-800-series",
+      "label": "NIST SP 800 Series"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "pre-deployment-safety-checks",
+      "label": "Pre-Deployment Safety Checks"
+    },
+    {
+      "slug": "regulatory-capture",
+      "label": "Regulatory Capture"
+    },
+    {
+      "slug": "revenue-threshold",
+      "label": "Revenue Threshold"
+    },
+    {
+      "slug": "risk-based-ai-governance",
+      "label": "Risk-Based AI Governance"
+    },
+    {
+      "slug": "risk-based-regulation",
+      "label": "Risk-Based Regulation"
+    },
+    {
+      "slug": "safety-evaluation",
+      "label": "Safety Evaluation"
+    },
+    {
+      "slug": "sb-1047",
+      "label": "SB 1047"
+    },
+    {
+      "slug": "sb-53",
+      "label": "SB 53"
+    },
+    {
+      "slug": "sb-942",
+      "label": "SB 942"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "scott-wiener",
+      "label": "Scott Wiener"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
+    },
+    {
+      "slug": "startup-ecosystem",
+      "label": "Startup Ecosystem"
+    },
+    {
+      "slug": "state-law",
+      "label": "State Law"
+    },
+    {
+      "slug": "technology-policy",
+      "label": "Technology Policy"
+    },
+    {
+      "slug": "technology-policy-domain",
+      "label": "TechnologyPolicyDomain"
+    },
+    {
+      "slug": "third-party-safety-audit",
+      "label": "Third-Party Safety Audit"
+    },
+    {
+      "slug": "training-data-disclosure",
+      "label": "Training Data Disclosure"
+    },
+    {
+      "slug": "training-data-documentation",
+      "label": "Training Data Documentation"
+    },
+    {
+      "slug": "training-data-transparency",
+      "label": "Training Data Transparency"
+    },
+    {
+      "slug": "transparency-mandate",
+      "label": "Transparency Mandate"
+    },
+    {
+      "slug": "voluntary-ai-commitments",
+      "label": "Voluntary AI Commitments"
+    },
+    {
+      "slug": "whistleblower-mechanism",
+      "label": "Whistleblower Mechanism"
+    },
+    {
+      "slug": "whistleblower-protection",
+      "label": "Whistleblower Protection"
+    },
+    {
+      "slug": "yann-le-cun",
+      "label": "Yann LeCun"
+    },
+    {
+      "slug": "yoshua-bengio",
+      "label": "Yoshua Bengio"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conspiracies",
+      "label": "Conspiracies"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "model-depth",
+      "label": "Model Depth"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

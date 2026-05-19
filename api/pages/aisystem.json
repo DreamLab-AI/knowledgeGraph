@@ -1,0 +1,156 @@
+{
+  "id": "urn:visionflow:page:fd611b6664d49e21f0f5ce7f20bbe35bb0cb8af649f2eda53c8be8dd68022d6c",
+  "title": "AISystem",
+  "slug": "aisystem",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:aisystem",
+  "domain": "artificial-intelligence",
+  "definition": "A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation. [[AI Systems]] integrate [[Neural Networks]], training frameworks, and monitoring components to operate within [[Organisational Contexts]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-systems",
+      "label": "AI Systems"
+    },
+    {
+      "slug": "aigovernance",
+      "label": "AIGovernance"
+    },
+    {
+      "slug": "deployed-on",
+      "label": "deployedOn"
+    },
+    {
+      "slug": "deployment-pattern",
+      "label": "DeploymentPattern"
+    },
+    {
+      "slug": "dt-controls",
+      "label": "dt:controls"
+    },
+    {
+      "slug": "dt-enhances",
+      "label": "dt:enhances"
+    },
+    {
+      "slug": "dt-implemented-on",
+      "label": "dt:implementedOn"
+    },
+    {
+      "slug": "dt-secured-by",
+      "label": "dt:securedBy"
+    },
+    {
+      "slug": "dt-uses",
+      "label": "dt:uses"
+    },
+    {
+      "slug": "has-model",
+      "label": "hasModel"
+    },
+    {
+      "slug": "ieee-7000",
+      "label": "IEEE 7000"
+    },
+    {
+      "slug": "monitors-performance",
+      "label": "monitorsPerformance"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "organisational-contexts",
+      "label": "Organisational Contexts"
+    },
+    {
+      "slug": "uses-dataset",
+      "label": "usesDataset"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "AutonomousRobot"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "BlockchainNetwork"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "DistributedLedger"
+    },
+    {
+      "slug": "machine-learning-model",
+      "label": "MachineLearningModel"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "neural-network",
+      "label": "NeuralNetwork"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "VirtualEnvironment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

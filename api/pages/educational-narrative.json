@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:023adf4150ba9f4d7171f92459466fd9c95e0fc9a6443b3eb331a9af1d62530a",
+  "title": "Educational Narrative",
+  "slug": "educational-narrative",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:educational-narrative",
+  "domain": "spatial-computing",
+  "definition": "Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:immersive-learning",
+      "label": "Immersive Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:personalised-learning",
+        "label": "Personalised Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "personalised-learning",
+      "label": "Personalised Learning"
+    },
+    {
+      "slug": "immersive-learning",
+      "label": "Immersive Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    }
+  ]
+}

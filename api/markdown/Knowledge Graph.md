@@ -1,24 +1,507 @@
-iri:: http://narrativegoldmine.com/spatial-computing#KnowledgeGraph
-uri:: urn:visionclaw:concept:spatial-computing:knowledge-graph
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:knowledge-graph
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Knowledge Graph
-content-hash:: sha256-12-e8118490b8b9
-legacy-term-id:: MV-20308
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#KnowledgeGraph
+legacy_uri:: urn:visionclaw:concept:spatial-computing:knowledge-graph
 public:: true
+
+# Knowledge Graph
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce",
+  "@type": "Page",
+  "vc:slug": "knowledge-graph",
+  "title": "Knowledge Graph",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-reasoning",
+      "vc:label": "AI Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:entity-node",
+      "vc:label": "Entity Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:entity-resolution",
+      "vc:label": "Entity Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-discovery",
+      "vc:label": "Knowledge Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology-schema",
+      "vc:label": "Ontology Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-framework",
+      "vc:label": "RDF Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning-service",
+      "vc:label": "Reasoning Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-system",
+      "vc:label": "Recommendation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:relationship-edge",
+      "vc:label": "Relationship Edge"
+    },
+    {
+      "@id": "urn:visionflow:linked:schema-definition",
+      "vc:label": "Schema Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:schema-org",
+      "vc:label": "Schema.org"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-property",
+      "vc:label": "Semantic Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web-infrastructure",
+      "vc:label": "Semantic Web Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:triple-store",
+      "vc:label": "Triple Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-owl",
+      "vc:label": "W3C OWL"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-rdf",
+      "vc:label": "W3C RDF"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graph-database",
+      "vc:label": "Graph Database"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "vc:label": "InfrastructureDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-management-system",
+      "vc:label": "Knowledge Management System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-search",
+      "vc:label": "Semantic Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sparql-query-engine",
+      "vc:label": "SPARQL Query Engine"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e8118490b8b9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#KnowledgeGraph"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-20308"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Knowledge Graph"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:knowledge-graph"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:knowledge-graph"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:knowledge-graph",
+  "@type": "OntologyClass",
+  "label": "Knowledge Graph",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:semantic-web-infrastructure",
+      "vc:label": "Semantic Web Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-management-system",
+      "vc:label": "Knowledge Management System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:entity-node",
+      "vc:label": "Entity Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology-schema",
+      "vc:label": "Ontology Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:relationship-edge",
+      "vc:label": "Relationship Edge"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-property",
+      "vc:label": "Semantic Property"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:schema-definition",
+      "vc:label": "Schema Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:triple-store",
+      "vc:label": "Triple Store"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graph-database",
+      "vc:label": "Graph Database"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-reasoning",
+      "vc:label": "AI Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-discovery",
+      "vc:label": "Knowledge Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-system",
+      "vc:label": "Recommendation System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-search",
+      "vc:label": "Semantic Search"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:entity-resolution",
+      "vc:label": "Entity Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-framework",
+      "vc:label": "RDF Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning-service",
+      "vc:label": "Reasoning Service"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sparql-query-engine",
+      "vc:label": "SPARQL Query Engine"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:knowledge-graph:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Reasoning]]",
+      "resolved": "urn:visionflow:linked:ai-reasoning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Entity Node]]",
+      "resolved": "urn:visionflow:linked:entity-node",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Entity Resolution]]",
+      "resolved": "urn:visionflow:linked:entity-resolution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inference Engine]]",
+      "resolved": "urn:visionflow:linked:inference-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Discovery]]",
+      "resolved": "urn:visionflow:linked:knowledge-discovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ontology]]",
+      "resolved": "urn:visionflow:linked:ontology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ontology Schema]]",
+      "resolved": "urn:visionflow:linked:ontology-schema",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RDF Framework]]",
+      "resolved": "urn:visionflow:linked:rdf-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reasoning Service]]",
+      "resolved": "urn:visionflow:linked:reasoning-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recommendation System]]",
+      "resolved": "urn:visionflow:linked:recommendation-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Relationship Edge]]",
+      "resolved": "urn:visionflow:linked:relationship-edge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schema Definition]]",
+      "resolved": "urn:visionflow:linked:schema-definition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schema.org]]",
+      "resolved": "urn:visionflow:linked:schema-org",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Semantic Property]]",
+      "resolved": "urn:visionflow:linked:semantic-property",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Semantic Web Infrastructure]]",
+      "resolved": "urn:visionflow:linked:semantic-web-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Triple Store]]",
+      "resolved": "urn:visionflow:linked:triple-store",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C OWL]]",
+      "resolved": "urn:visionflow:linked:w3-c-owl",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C RDF]]",
+      "resolved": "urn:visionflow:linked:w3-c-rdf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Graph Database]]",
+      "resolved": "urn:visionflow:owl:class:graph-database",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureDomain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Management System]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-management-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Question Answering]]",
+      "resolved": "urn:visionflow:owl:class:question-answering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Semantic Search]]",
+      "resolved": "urn:visionflow:owl:class:semantic-search",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SPARQL Query Engine]]",
+      "resolved": "urn:visionflow:owl:class:sparql-query-engine",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.

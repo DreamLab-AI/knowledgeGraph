@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:7b24b33784750021c3fab2d659a16b3a2b4e56f55821633fe68483b5c73f4513",
+  "title": "Ownership Freedom distributed",
+  "slug": "ownership-freedom-distributed",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ownership-freedom-distributed",
+  "domain": "spatial-computing",
+  "definition": "A socio-technical paradigm establishing user sovereignty through decentralized control mechanisms, cryptographic ownership proofs, and distributed governance models. Distributed ownership and freedom principles ensure individuals retain control over digital assets, personal data, and participation rights without reliance on centralized authorities or intermediaries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

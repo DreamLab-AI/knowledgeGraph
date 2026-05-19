@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a",
+  "title": "Probabilistic Finality",
+  "slug": "probabilistic-finality",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:probabilistic-finality",
+  "domain": "blockchain",
+  "definition": "Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "longest-chain-rule",
+      "label": "Longest Chain Rule"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "transaction-confirmation",
+      "label": "Transaction Confirmation"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    }
+  ]
+}

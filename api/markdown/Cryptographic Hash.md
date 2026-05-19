@@ -1,21 +1,294 @@
-iri:: http://narrativegoldmine.com/blockchain#CryptographicHash
-uri:: urn:visionclaw:concept:blockchain:cryptographic-hash
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:cryptographic-hash
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Cryptographic Hash
-content-hash:: sha256-12-dfb117244250
-legacy-term-id:: BC-9982
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#CryptographicHash
+legacy_uri:: urn:visionclaw:concept:blockchain:cryptographic-hash
 public:: true
+
+# Cryptographic Hash
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d0162ec31c2c9ab715e18fbdcbaf33e2cc0d3619521d68babbf31c8ca48cef50",
+  "@type": "Page",
+  "vc:slug": "cryptographic-hash",
+  "title": "Cryptographic Hash",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-security",
+      "vc:label": "Blockchain Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-validation",
+      "vc:label": "Blockchain Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-functions",
+      "vc:label": "Cryptographic Hash Functions"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-integrity",
+      "vc:label": "Data Integrity"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-functions",
+      "vc:label": "Hash Functions"
+    },
+    {
+      "@id": "urn:visionflow:linked:merkle-trees",
+      "vc:label": "Merkle Trees"
+    },
+    {
+      "@id": "urn:visionflow:linked:ncsc",
+      "vc:label": "NCSC"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-fips-pub-202",
+      "vc:label": "NIST FIPS PUB 202"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-1321",
+      "vc:label": "RFC 1321"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-detection",
+      "vc:label": "Tamper Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signatures",
+      "vc:label": "Digital Signatures"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dfb117244250"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#CryptographicHash"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-9982"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cryptographic Hash"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:cryptographic-hash"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:cryptographic-hash"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d0162ec31c2c9ab715e18fbdcbaf33e2cc0d3619521d68babbf31c8ca48cef50@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cryptographic-hash",
+  "@type": "OntologyClass",
+  "label": "Cryptographic Hash",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d0162ec31c2c9ab715e18fbdcbaf33e2cc0d3619521d68babbf31c8ca48cef50"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d0162ec31c2c9ab715e18fbdcbaf33e2cc0d3619521d68babbf31c8ca48cef50@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Deterministic mathematical function transforming arbitrary input data into fixed-length output ensuring data integrity verification and tamper detection through collision resistance properties. [[Hash Functions]] form the foundation of [[Digital Signatures]], [[Merkle Trees]], and [[Blockchain Security]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-hash:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d0162ec31c2c9ab715e18fbdcbaf33e2cc0d3619521d68babbf31c8ca48cef50"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Blockchain Security]]",
+      "resolved": "urn:visionflow:linked:blockchain-security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Validation]]",
+      "resolved": "urn:visionflow:linked:blockchain-validation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Hash Functions]]",
+      "resolved": "urn:visionflow:linked:cryptographic-hash-functions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Integrity]]",
+      "resolved": "urn:visionflow:linked:data-integrity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash Functions]]",
+      "resolved": "urn:visionflow:linked:hash-functions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Merkle Trees]]",
+      "resolved": "urn:visionflow:linked:merkle-trees",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NCSC]]",
+      "resolved": "urn:visionflow:linked:ncsc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST FIPS PUB 202]]",
+      "resolved": "urn:visionflow:linked:nist-fips-pub-202",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 1321]]",
+      "resolved": "urn:visionflow:linked:rfc-1321",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tamper Detection]]",
+      "resolved": "urn:visionflow:linked:tamper-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signatures]]",
+      "resolved": "urn:visionflow:owl:class:digital-signatures",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d0162ec31c2c9ab715e18fbdcbaf33e2cc0d3619521d68babbf31c8ca48cef50@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Deterministic mathematical function transforming arbitrary input data into fixed-length output ensuring data integrity verification and tamper detection through collision resistance properties. [[Hash Functions]] form the foundation of [[Digital Signatures]], [[Merkle Trees]], and [[Blockchain Security]].

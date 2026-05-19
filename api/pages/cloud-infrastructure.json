@@ -1,0 +1,137 @@
+{
+  "id": "urn:visionflow:page:b11f10016d267812827e40767d6deb23a332922f97483ffbe6cd63e4d674c646",
+  "title": "Cloud Infrastructure",
+  "slug": "cloud-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cloud-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet. It enables organizations to provision and scale IT resources dynamically without managing physical hardware, typically through service models such as IaaS, PaaS, and SaaS.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:elasticity",
+        "label": "Elasticity"
+      },
+      {
+        "id": "urn:visionflow:linked:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:visionflow:linked:self-service-provisioning",
+        "label": "Self-Service Provisioning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "elasticity",
+      "label": "Elasticity"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "self-service-provisioning",
+      "label": "Self-Service Provisioning"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "cloud-rendering-service",
+      "label": "Cloud Rendering Service"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "resilience-metric",
+      "label": "Resilience Metric"
+    }
+  ]
+}

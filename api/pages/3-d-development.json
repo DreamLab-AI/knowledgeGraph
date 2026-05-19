@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:4a2d62e1a3b98ba53b3658dddb713d407a638b0b9c2ac28c8727bd3abf4b521f",
+  "title": "3D Development",
+  "slug": "3-d-development",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-d-development",
+  "domain": "spatial-computing",
+  "definition": "3D Development encompasses the methodologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments. It integrates disciplines including [[3D Modeling]], [[3D Graphics Standard]], and [[3D Rendering Engine]] to produce immersive content for games, virtual worlds, and extended reality applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:3-d-graphics-standard",
+        "label": "3D Graphics Standard"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:metaverse-creation",
+        "label": "Metaverse Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-environment-design",
+        "label": "Virtual Environment Design"
+      },
+      {
+        "id": "urn:visionflow:linked:xr-applications",
+        "label": "XR Applications"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "metaverse-creation",
+      "label": "Metaverse Creation"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "virtual-environment-design",
+      "label": "Virtual Environment Design"
+    },
+    {
+      "slug": "xr-applications",
+      "label": "XR Applications"
+    },
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "virtual-environment-creation",
+      "label": "Virtual Environment Creation"
+    }
+  ]
+}

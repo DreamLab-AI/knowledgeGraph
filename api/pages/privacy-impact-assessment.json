@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:ab4619ea0c5ba1dda0c75dba40ea2b6046cc0ef8a1a39f5425eeb5e9e26250a2",
+  "title": "Privacy Impact Assessment",
+  "slug": "privacy-impact-assessment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-impact-assessment",
+  "domain": "artificial-intelligence",
+  "definition": "Privacy Impact Assessment is a structured evaluation process identifying, analyzing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information, ensuring compliance with data protection regulations and protecting individual privacy rights. This assessment methodology follows defined stages including systematic description documenting processing operations (data flows, purposes, retention periods, recipients), necessity and proportionality assessment evaluating whether processing is essential for stated purposes and uses minimal data required, privacy risk identification analyzing potential harms including unauthorized access, discrimination, surveillance, function creep, and re-identification risks, risk severity and likelihood evaluation producing risk matrices categorizing threats as low, medium, high, or very high based on potential impact and probability, mitigation strategy design specifying technical and organizational measures reducing risks to acceptable levels, and residual risk assessment determining whether remaining risks after mitigation require consultation with data protection authorities per GDPR Ar",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gdpr-article-35",
+      "label": "GDPR Article 35"
+    },
+    {
+      "slug": "ico-dpia-code",
+      "label": "ICO DPIA Code"
+    },
+    {
+      "slug": "iso-29134",
+      "label": "ISO 29134"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    },
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

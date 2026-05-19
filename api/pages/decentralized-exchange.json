@@ -1,0 +1,892 @@
+{
+  "id": "urn:visionflow:page:eba5df47bd83180382865541866780a342016d85fce8d0fbdd9de2b08cf45da3",
+  "title": "Decentralized Exchange",
+  "slug": "decentralized-exchange",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralized-exchange",
+  "domain": "blockchain",
+  "definition": "A **Decentralized Exchange** (DEX) is a peer-to-peer cryptoasset trading protocol implemented as a set of [[Smart Contract]] state machines on one or more public blockchains that enables non-custodial atomic swaps between digital assets without a centralised matching engine, custodial wallet, or operator-controlled order book, replacing the traditional exchange's trust assumptions with cryptoeconomic guarantees encoded in deterministic on-chain code, with three dominant architectural families covering (i) **automated market makers (AMMs)** pricing trades algorithmically against [[Liquidity Pool]] reserves using deterministic invariants \u2014 the constant-product `x*y=k` of [[Uniswap V2]] (Adams, Zinsmeister and Robinson 2020) extended by [[Uniswap V3]] concentrated liquidity (May 2021) and [[Uniswap V4]] hooks architecture (January 2025), [[Curve Finance]] StableSwap (Egorov 2019), [[Balancer Protocol]] weighted geometric-mean pools (Martinelli and McDonald 2019), [[Bancor Network]] continuous bonding curves with impermanent-loss protection (Hertzog and Benartzi 2017), and [[Maverick Protocol]] directional concentrated liquidity, (ii) **on-chain order books** matching limit orders thro",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-finance-primitive",
+      "label": "Decentralised Finance Primitive"
+    },
+    {
+      "id": "urn:visionflow:linked:financial-protocol",
+      "label": "Financial Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:trading-venue",
+      "label": "Trading Venue"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "id": "urn:visionflow:owl:class:marketplace",
+      "label": "Marketplace"
+    }
+  ],
+  "qualityScore": 0.54,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:concentrated-liquidity-position",
+        "label": "Concentrated Liquidity Position"
+      },
+      {
+        "id": "urn:visionflow:linked:fee-tier",
+        "label": "Fee Tier"
+      },
+      {
+        "id": "urn:visionflow:linked:liquidity-provider-token",
+        "label": "Liquidity Provider Token"
+      },
+      {
+        "id": "urn:visionflow:linked:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:visionflow:linked:pool-manager",
+        "label": "Pool Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:router-contract",
+        "label": "Router Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:block-production",
+        "label": "Block Production"
+      },
+      {
+        "id": "urn:visionflow:linked:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:self-custody-wallet",
+        "label": "Self-Custody Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:composable-finance",
+        "label": "Composable Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:long-tail-asset-listing",
+        "label": "Long-Tail Asset Listing"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:token-swapping",
+        "label": "Token Swapping"
+      },
+      {
+        "id": "urn:visionflow:linked:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:visionflow:owl:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:batch-auction-matching",
+        "label": "Batch Auction Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:coincidence-of-wants",
+        "label": "Coincidence of Wants"
+      },
+      {
+        "id": "urn:visionflow:linked:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "id": "urn:visionflow:linked:constant-product-invariant",
+        "label": "Constant Product Invariant"
+      },
+      {
+        "id": "urn:visionflow:linked:intent-based-execution",
+        "label": "Intent-Based Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:native-asset-cross-chain-swap",
+        "label": "Native Asset Cross-Chain Swap"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "0x-protocol",
+      "label": "0x Protocol"
+    },
+    {
+      "slug": "1inch",
+      "label": "1inch"
+    },
+    {
+      "slug": "1inch-fusion",
+      "label": "1inch Fusion"
+    },
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "adams-2018-uniswap-v1",
+      "label": "Adams 2018 Uniswap V1"
+    },
+    {
+      "slug": "adams-zinsmeister-robinson-2020-uniswap-v2-whitepaper",
+      "label": "Adams Zinsmeister Robinson 2020 Uniswap V2 Whitepaper"
+    },
+    {
+      "slug": "adams-zinsmeister-salem-keefer-robinson-2021-uniswap-v3-core",
+      "label": "Adams Zinsmeister Salem Keefer Robinson 2021 Uniswap V3 Core"
+    },
+    {
+      "slug": "aevo",
+      "label": "Aevo"
+    },
+    {
+      "slug": "aggregator",
+      "label": "Aggregator"
+    },
+    {
+      "slug": "angeris-chitra-2020-improved-price-oracles-cfmm",
+      "label": "Angeris Chitra 2020 Improved Price Oracles CFMM"
+    },
+    {
+      "slug": "angeris-kao-chiang-noyes-chitra-2019-analysis-of-uniswap-markets",
+      "label": "Angeris Kao Chiang Noyes Chitra 2019 Analysis of Uniswap Markets"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "balancer-protocol",
+      "label": "Balancer Protocol"
+    },
+    {
+      "slug": "bancor-network",
+      "label": "Bancor Network"
+    },
+    {
+      "slug": "base",
+      "label": "Base"
+    },
+    {
+      "slug": "batch-auction-matching",
+      "label": "Batch Auction Matching"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "bis-aramonte-doerr-huang-schrimpf-2022-de-fi-decentralisation-illusion",
+      "label": "BIS Aramonte Doerr Huang Schrimpf 2022 DeFi Decentralisation Illusion"
+    },
+    {
+      "slug": "block-producer",
+      "label": "Block Producer"
+    },
+    {
+      "slug": "block-production",
+      "label": "Block Production"
+    },
+    {
+      "slug": "blockchain-consensus",
+      "label": "Blockchain Consensus"
+    },
+    {
+      "slug": "bnb-chain",
+      "label": "BNB Chain"
+    },
+    {
+      "slug": "buterin-2017-on-chain-market-makers-reddit-post",
+      "label": "Buterin 2017 On-chain Market Makers Reddit Post"
+    },
+    {
+      "slug": "capponi-jia-yu-2023-evolution-blockchain-lit-to-dark",
+      "label": "Capponi Jia Yu 2023 Evolution Blockchain Lit to Dark"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "centralized-exchange",
+      "label": "Centralized Exchange"
+    },
+    {
+      "slug": "cftc-order-24-23-uniswap-labs-may-2024",
+      "label": "CFTC Order 24-23 Uniswap Labs May 2024"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "coincidence-of-wants",
+      "label": "Coincidence of Wants"
+    },
+    {
+      "slug": "composability",
+      "label": "Composability"
+    },
+    {
+      "slug": "composable-finance",
+      "label": "Composable Finance"
+    },
+    {
+      "slug": "compound",
+      "label": "Compound"
+    },
+    {
+      "slug": "concentrated-liquidity",
+      "label": "Concentrated Liquidity"
+    },
+    {
+      "slug": "concentrated-liquidity-position",
+      "label": "Concentrated Liquidity Position"
+    },
+    {
+      "slug": "constant-product-formula",
+      "label": "Constant Product Formula"
+    },
+    {
+      "slug": "constant-product-invariant",
+      "label": "Constant Product Invariant"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
+      "slug": "cow-swap",
+      "label": "CowSwap"
+    },
+    {
+      "slug": "cow-swap-co-w-protocol-documentation",
+      "label": "CowSwap CoW Protocol Documentation"
+    },
+    {
+      "slug": "crypto-aggregation",
+      "label": "Crypto Aggregation"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "curve-stable-swap-paper",
+      "label": "Curve StableSwap Paper"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    },
+    {
+      "slug": "d-yd-x-v4-cosmos-appchain-migration-whitepaper",
+      "label": "dYdX V4 Cosmos Appchain Migration Whitepaper"
+    },
+    {
+      "slug": "daian-et-al-2020-flash-boys-2-0",
+      "label": "Daian et al 2020 Flash Boys 2.0"
+    },
+    {
+      "slug": "dark-pool",
+      "label": "Dark Pool"
+    },
+    {
+      "slug": "de-fi-domain",
+      "label": "DeFiDomain"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decentralised-finance-primitive",
+      "label": "Decentralised Finance Primitive"
+    },
+    {
+      "slug": "drift-protocol",
+      "label": "Drift Protocol"
+    },
+    {
+      "slug": "dutch-auction",
+      "label": "Dutch Auction"
+    },
+    {
+      "slug": "egorov-2019-curve-stable-swap",
+      "label": "Egorov 2019 Curve StableSwap"
+    },
+    {
+      "slug": "eip-1153-transient-storage",
+      "label": "EIP-1153 Transient Storage"
+    },
+    {
+      "slug": "erc-20",
+      "label": "ERC-20"
+    },
+    {
+      "slug": "erc-2612-permit",
+      "label": "ERC-2612 Permit"
+    },
+    {
+      "slug": "eskandari-moosavi-clark-2019-so-k-transparent-dishonesty",
+      "label": "Eskandari Moosavi Clark 2019 SoK Transparent Dishonesty"
+    },
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "fca-dp24-4-regulating-cryptoassets-2024",
+      "label": "FCA DP24-4 Regulating Cryptoassets 2024"
+    },
+    {
+      "slug": "fee-tier",
+      "label": "Fee Tier"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "FinancialMarketsDomain"
+    },
+    {
+      "slug": "financial-protocol",
+      "label": "Financial Protocol"
+    },
+    {
+      "slug": "financial-protocol-domain",
+      "label": "FinancialProtocolDomain"
+    },
+    {
+      "slug": "flash-accounting",
+      "label": "Flash Accounting"
+    },
+    {
+      "slug": "flash-loan",
+      "label": "Flash Loan"
+    },
+    {
+      "slug": "gas-fee",
+      "label": "Gas Fee"
+    },
+    {
+      "slug": "geometric-mean-invariant",
+      "label": "Geometric Mean Invariant"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "gmx-v2-documentation",
+      "label": "GMX V2 Documentation"
+    },
+    {
+      "slug": "heimbach-schertenleib-wattenhofer-2022-uniswap-v3-lp-risks",
+      "label": "Heimbach Schertenleib Wattenhofer 2022 Uniswap V3 LP Risks"
+    },
+    {
+      "slug": "hertzog-benartzi-2017-bancor-protocol",
+      "label": "Hertzog Benartzi 2017 Bancor Protocol"
+    },
+    {
+      "slug": "hooks-pattern",
+      "label": "Hooks Pattern"
+    },
+    {
+      "slug": "hype-token",
+      "label": "HYPE Token"
+    },
+    {
+      "slug": "hyperliquid",
+      "label": "Hyperliquid"
+    },
+    {
+      "slug": "hyperliquid-hyper-bft-documentation",
+      "label": "Hyperliquid HyperBFT Documentation"
+    },
+    {
+      "slug": "impermanent-loss",
+      "label": "Impermanent Loss"
+    },
+    {
+      "slug": "intent-based-execution",
+      "label": "Intent-Based Execution"
+    },
+    {
+      "slug": "jupiter-aggregator",
+      "label": "Jupiter Aggregator"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "kyber-swap",
+      "label": "KyberSwap"
+    },
+    {
+      "slug": "layer-2-rollup",
+      "label": "Layer-2 Rollup"
+    },
+    {
+      "slug": "lighter-network",
+      "label": "Lighter Network"
+    },
+    {
+      "slug": "liquidity-mining",
+      "label": "Liquidity Mining"
+    },
+    {
+      "slug": "liquidity-provider",
+      "label": "Liquidity Provider"
+    },
+    {
+      "slug": "liquidity-provider-token",
+      "label": "Liquidity Provider Token"
+    },
+    {
+      "slug": "long-tail-asset-listing",
+      "label": "Long-Tail Asset Listing"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "market-maker-brokerage",
+      "label": "Market Maker Brokerage"
+    },
+    {
+      "slug": "martinelli-mc-donald-2019-balancer-whitepaper",
+      "label": "Martinelli McDonald 2019 Balancer Whitepaper"
+    },
+    {
+      "slug": "matcha",
+      "label": "Matcha"
+    },
+    {
+      "slug": "maverick-protocol",
+      "label": "Maverick Protocol"
+    },
+    {
+      "slug": "maximal-extractable-value",
+      "label": "Maximal Extractable Value"
+    },
+    {
+      "slug": "maya-protocol",
+      "label": "Maya Protocol"
+    },
+    {
+      "slug": "meteora",
+      "label": "Meteora"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "mi-ca-regulation-eu-2023-1114",
+      "label": "MiCA Regulation EU 2023-1114"
+    },
+    {
+      "slug": "milionis-moallemi-roughgarden-zhang-2022-lvr",
+      "label": "Milionis Moallemi Roughgarden Zhang 2022 LVR"
+    },
+    {
+      "slug": "native-asset-cross-chain-swap",
+      "label": "Native Asset Cross-Chain Swap"
+    },
+    {
+      "slug": "odos",
+      "label": "Odos"
+    },
+    {
+      "slug": "okx",
+      "label": "OKX"
+    },
+    {
+      "slug": "okx-dex",
+      "label": "OKX DEX"
+    },
+    {
+      "slug": "open-book",
+      "label": "OpenBook"
+    },
+    {
+      "slug": "open-ocean",
+      "label": "OpenOcean"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "orca",
+      "label": "Orca"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "over-the-counter-trading",
+      "label": "Over-the-Counter Trading"
+    },
+    {
+      "slug": "para-swap",
+      "label": "ParaSwap"
+    },
+    {
+      "slug": "pendle",
+      "label": "Pendle"
+    },
+    {
+      "slug": "permissionless-trading",
+      "label": "Permissionless Trading"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "pool-manager",
+      "label": "Pool Manager"
+    },
+    {
+      "slug": "qin-zhou-gervais-2022-quantifying-bev",
+      "label": "Qin Zhou Gervais 2022 Quantifying BEV"
+    },
+    {
+      "slug": "raydium",
+      "label": "Raydium"
+    },
+    {
+      "slug": "router-contract",
+      "label": "Router Contract"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "self-custody-wallet",
+      "label": "Self-Custody Wallet"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "SmartContractLayer"
+    },
+    {
+      "slug": "squid-router",
+      "label": "Squid Router"
+    },
+    {
+      "slug": "stable-swap-invariant",
+      "label": "StableSwap Invariant"
+    },
+    {
+      "slug": "symbiosis-finance",
+      "label": "Symbiosis Finance"
+    },
+    {
+      "slug": "tasca-liu-hayes-2018-bitcoin-economy-evolution",
+      "label": "Tasca Liu Hayes 2018 Bitcoin Economy Evolution"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
+    },
+    {
+      "slug": "threshold-signature-scheme",
+      "label": "Threshold Signature Scheme"
+    },
+    {
+      "slug": "tick-based-liquidity",
+      "label": "Tick-Based Liquidity"
+    },
+    {
+      "slug": "token-economy",
+      "label": "Token Economy"
+    },
+    {
+      "slug": "token-swapping",
+      "label": "Token Swapping"
+    },
+    {
+      "slug": "trading-venue",
+      "label": "Trading Venue"
+    },
+    {
+      "slug": "traditional-stock-exchange",
+      "label": "Traditional Stock Exchange"
+    },
+    {
+      "slug": "tron",
+      "label": "Tron"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "uniswap-labs-2025-v4-pool-manager-architecture",
+      "label": "Uniswap Labs 2025 V4 PoolManager Architecture"
+    },
+    {
+      "slug": "uniswap-v2",
+      "label": "Uniswap V2"
+    },
+    {
+      "slug": "uniswap-v2-whitepaper",
+      "label": "Uniswap V2 Whitepaper"
+    },
+    {
+      "slug": "uniswap-v3",
+      "label": "Uniswap V3"
+    },
+    {
+      "slug": "uniswap-v3-whitepaper",
+      "label": "Uniswap V3 Whitepaper"
+    },
+    {
+      "slug": "uniswap-v4",
+      "label": "Uniswap V4"
+    },
+    {
+      "slug": "uniswap-x",
+      "label": "UniswapX"
+    },
+    {
+      "slug": "uniswap-x-whitepaper-2023",
+      "label": "UniswapX Whitepaper 2023"
+    },
+    {
+      "slug": "vampire-attack",
+      "label": "Vampire Attack"
+    },
+    {
+      "slug": "vertex-protocol",
+      "label": "Vertex Protocol"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "zhou-xiong-bonneau-gervais-2023-so-k-de-fi-attacks",
+      "label": "Zhou Xiong Bonneau Gervais 2023 SoK DeFi Attacks"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "gas-fee-market",
+      "label": "Gas Fee Market"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "social-token-economy",
+      "label": "Social Token Economy"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "token-bonding-curve",
+      "label": "Token Bonding Curve"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

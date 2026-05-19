@@ -1,0 +1,816 @@
+{
+  "id": "urn:visionflow:page:c35f82f5fb8bd7fb9c6f24d0262f28cf20a3a0c13fdf1a2b250fc53e10f284b6",
+  "title": "Recurrent Neural Network",
+  "slug": "recurrent-neural-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:recurrent-neural-network",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activation-functions",
+      "label": "activation functions"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam optimizer"
+    },
+    {
+      "slug": "ai-knowledge-graph",
+      "label": "AI Knowledge Graph"
+    },
+    {
+      "slug": "ai-ml-knowledge-graph",
+      "label": "AI/ML Knowledge Graph"
+    },
+    {
+      "slug": "ai-summit-manchester",
+      "label": "AI Summit Manchester"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly detection"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "approximation-theory",
+      "label": "Approximation Theory"
+    },
+    {
+      "slug": "arm-cortex-m",
+      "label": "ARM Cortex-M"
+    },
+    {
+      "slug": "artificial-neural-networks",
+      "label": "artificial neural networks"
+    },
+    {
+      "slug": "astra-zeneca",
+      "label": "AstraZeneca"
+    },
+    {
+      "slug": "attention-augmented-rnns",
+      "label": "Attention-augmented RNNs"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "attention mechanisms"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "backpropagation-through-time",
+      "label": "Backpropagation Through Time"
+    },
+    {
+      "slug": "biases",
+      "label": "biases"
+    },
+    {
+      "slug": "bidirectional-rnn",
+      "label": "Bidirectional RNN"
+    },
+    {
+      "slug": "biomedical-applications",
+      "label": "Biomedical Applications"
+    },
+    {
+      "slug": "but-what-is-a-neural-network-3-blue1-brown",
+      "label": "But what is a neural network? (3Blue1Brown)"
+    },
+    {
+      "slug": "causal-rnn-analysis",
+      "label": "Causal RNN Analysis"
+    },
+    {
+      "slug": "cell-state",
+      "label": "Cell State"
+    },
+    {
+      "slug": "computational-theory",
+      "label": "Computational Theory"
+    },
+    {
+      "slug": "conformer",
+      "label": "Conformer"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "cost-function",
+      "label": "Cost function"
+    },
+    {
+      "slug": "david-rumelhart",
+      "label": "David Rumelhart"
+    },
+    {
+      "slug": "deep-learning-knowledge-graph",
+      "label": "Deep Learning Knowledge Graph"
+    },
+    {
+      "slug": "deep-rnn",
+      "label": "Deep RNN"
+    },
+    {
+      "slug": "department-of-computer-science",
+      "label": "Department of Computer Science"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug discovery"
+    },
+    {
+      "slug": "dwf-law-llp",
+      "label": "DWF Law LLP"
+    },
+    {
+      "slug": "edge-ai-rnns",
+      "label": "Edge AI RNNs"
+    },
+    {
+      "slug": "electronic-health-records",
+      "label": "Electronic health records"
+    },
+    {
+      "slug": "energy-demand-prediction",
+      "label": "Energy demand prediction"
+    },
+    {
+      "slug": "energy-forecasting",
+      "label": "energy forecasting"
+    },
+    {
+      "slug": "esp32",
+      "label": "ESP32"
+    },
+    {
+      "slug": "exploding-gradient-problem",
+      "label": "exploding gradient problem"
+    },
+    {
+      "slug": "exploding-gradient-problem",
+      "label": "Exploding gradient problem"
+    },
+    {
+      "slug": "exploding-gradient-problem",
+      "label": "Exploding Gradient Problem"
+    },
+    {
+      "slug": "feedforward-neural-networks",
+      "label": "feedforward neural networks"
+    },
+    {
+      "slug": "financial-forecasting",
+      "label": "Financial forecasting"
+    },
+    {
+      "slug": "financial-forecasting",
+      "label": "Financial Forecasting"
+    },
+    {
+      "slug": "fpga-based-rnns",
+      "label": "FPGA-based RNNs"
+    },
+    {
+      "slug": "gated-recurrent-unit",
+      "label": "Gated Recurrent Unit"
+    },
+    {
+      "slug": "gating-mechanism",
+      "label": "Gating Mechanism"
+    },
+    {
+      "slug": "genomics",
+      "label": "genomics"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "Gesture recognition"
+    },
+    {
+      "slug": "grant-sanderson",
+      "label": "Grant Sanderson"
+    },
+    {
+      "slug": "gru",
+      "label": "GRU"
+    },
+    {
+      "slug": "hybrid-architectures",
+      "label": "Hybrid Architectures"
+    },
+    {
+      "slug": "ibm-true-north",
+      "label": "IBM TrueNorth"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "intel-loihi",
+      "label": "Intel Loihi"
+    },
+    {
+      "slug": "intel-loihi-2",
+      "label": "Intel Loihi 2"
+    },
+    {
+      "slug": "iso-iec-22989-2022",
+      "label": "ISO/IEC 22989:2022"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "j-rgen-schmidhuber",
+      "label": "J\u00fcrgen Schmidhuber"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "john-hopfield",
+      "label": "John Hopfield"
+    },
+    {
+      "slug": "keras",
+      "label": "Keras"
+    },
+    {
+      "slug": "kyunghyun-cho",
+      "label": "Kyunghyun Cho"
+    },
+    {
+      "slug": "layer-normalization",
+      "label": "Layer normalization"
+    },
+    {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
+    },
+    {
+      "slug": "leeds-digital-festival",
+      "label": "Leeds Digital Festival"
+    },
+    {
+      "slug": "leeds-teaching-hospitals-nhs-trust",
+      "label": "Leeds Teaching Hospitals NHS Trust"
+    },
+    {
+      "slug": "linear-rnn",
+      "label": "Linear RNN"
+    },
+    {
+      "slug": "lloyds-banking-group",
+      "label": "Lloyds Banking Group"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "mamba",
+      "label": "Mamba"
+    },
+    {
+      "slug": "mamba-architecture",
+      "label": "Mamba Architecture"
+    },
+    {
+      "slug": "manchester-digital",
+      "label": "Manchester Digital"
+    },
+    {
+      "slug": "manchester-institute-of-biotechnology",
+      "label": "Manchester Institute of Biotechnology"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical imaging"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "medical imaging"
+    },
+    {
+      "slug": "mnist-dataset",
+      "label": "MNIST dataset"
+    },
+    {
+      "slug": "multimodal-rnns",
+      "label": "Multimodal RNNs"
+    },
+    {
+      "slug": "nat-west-group",
+      "label": "NatWest Group"
+    },
+    {
+      "slug": "national-innovation-centre-for-data",
+      "label": "National Innovation Centre for Data"
+    },
+    {
+      "slug": "natural-language",
+      "label": "natural language"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "natural language understanding"
+    },
+    {
+      "slug": "neural-network-layers",
+      "label": "Neural network layers"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "neural networks"
+    },
+    {
+      "slug": "neural-ode-rnn",
+      "label": "Neural ODE-RNN"
+    },
+    {
+      "slug": "neuromorphic-rnns",
+      "label": "Neuromorphic RNNs"
+    },
+    {
+      "slug": "neurons",
+      "label": "neurons"
+    },
+    {
+      "slug": "newcastle-helix",
+      "label": "Newcastle Helix"
+    },
+    {
+      "slug": "newcastle-university",
+      "label": "Newcastle University"
+    },
+    {
+      "slug": "nhs-digital",
+      "label": "NHS Digital"
+    },
+    {
+      "slug": "nissan",
+      "label": "Nissan"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "onnx",
+      "label": "ONNX"
+    },
+    {
+      "slug": "optimizer",
+      "label": "Optimizer"
+    },
+    {
+      "slug": "parallelized-rnn-training",
+      "label": "Parallelized RNN Training"
+    },
+    {
+      "slug": "perceiver-io",
+      "label": "Perceiver IO"
+    },
+    {
+      "slug": "philips-healthcare",
+      "label": "Philips Healthcare"
+    },
+    {
+      "slug": "protein-folding",
+      "label": "protein folding"
+    },
+    {
+      "slug": "protein-sequence-analysis",
+      "label": "Protein sequence analysis"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "rbs",
+      "label": "RBS"
+    },
+    {
+      "slug": "rolls-royce",
+      "label": "Rolls-Royce"
+    },
+    {
+      "slug": "rwkv",
+      "label": "RWKV"
+    },
+    {
+      "slug": "school-of-computing",
+      "label": "School of Computing"
+    },
+    {
+      "slug": "sepp-hochreiter",
+      "label": "Sepp Hochreiter"
+    },
+    {
+      "slug": "seq2seq-models",
+      "label": "seq2seq models"
+    },
+    {
+      "slug": "sequence-to-sequence-model",
+      "label": "Sequence-to-Sequence Model"
+    },
+    {
+      "slug": "sequential-data",
+      "label": "sequential data"
+    },
+    {
+      "slug": "sheffield-digital",
+      "label": "Sheffield Digital"
+    },
+    {
+      "slug": "sheffield-institute-for-translational-neuroscience",
+      "label": "Sheffield Institute for Translational Neuroscience"
+    },
+    {
+      "slug": "siemens",
+      "label": "Siemens"
+    },
+    {
+      "slug": "smart-grids",
+      "label": "smart grids"
+    },
+    {
+      "slug": "sophia-ananiadou",
+      "label": "Sophia Ananiadou"
+    },
+    {
+      "slug": "speaker-identification",
+      "label": "Speaker identification"
+    },
+    {
+      "slug": "speech-processing",
+      "label": "Speech Processing"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech synthesis"
+    },
+    {
+      "slug": "spi-nnaker",
+      "label": "SpiNNaker"
+    },
+    {
+      "slug": "spi-nnaker2",
+      "label": "SpiNNaker2"
+    },
+    {
+      "slug": "state-space-model",
+      "label": "State Space Model"
+    },
+    {
+      "slug": "steve-furber",
+      "label": "Steve Furber"
+    },
+    {
+      "slug": "structured-state-space",
+      "label": "Structured State Space"
+    },
+    {
+      "slug": "teacher-forcing",
+      "label": "Teacher forcing"
+    },
+    {
+      "slug": "teacher-forcing",
+      "label": "Teacher Forcing"
+    },
+    {
+      "slug": "temporal-convolutional-network",
+      "label": "Temporal Convolutional Network"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "tensor-flow-lite",
+      "label": "TensorFlow Lite"
+    },
+    {
+      "slug": "time-series",
+      "label": "time series"
+    },
+    {
+      "slug": "time-series-analysis",
+      "label": "Time Series Analysis"
+    },
+    {
+      "slug": "truncated-bptt",
+      "label": "Truncated BPTT"
+    },
+    {
+      "slug": "turing-institute",
+      "label": "Turing Institute"
+    },
+    {
+      "slug": "ukri",
+      "label": "UKRI"
+    },
+    {
+      "slug": "universal-transformers",
+      "label": "Universal Transformers"
+    },
+    {
+      "slug": "university-of-leeds",
+      "label": "University of Leeds"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "university-of-sheffield",
+      "label": "University of Sheffield"
+    },
+    {
+      "slug": "vanishing-gradient-problem",
+      "label": "vanishing gradient problem"
+    },
+    {
+      "slug": "vanishing-gradient-problem",
+      "label": "Vanishing gradient problem"
+    },
+    {
+      "slug": "vanishing-gradient-problem",
+      "label": "Vanishing Gradient Problem"
+    },
+    {
+      "slug": "video-analysis",
+      "label": "Video analysis"
+    },
+    {
+      "slug": "video-analysis",
+      "label": "Video Analysis"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
+    },
+    {
+      "slug": "weather-forecasting",
+      "label": "Weather forecasting"
+    },
+    {
+      "slug": "weightmans-llp",
+      "label": "Weightmans LLP"
+    },
+    {
+      "slug": "weights",
+      "label": "weights"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation function"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "backpropagation"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "feedforward-neural-network",
+      "label": "Feedforward neural network"
+    },
+    {
+      "slug": "feedforward-neural-network",
+      "label": "Feedforward Neural Network"
+    },
+    {
+      "slug": "gradient-clipping",
+      "label": "Gradient clipping"
+    },
+    {
+      "slug": "gradient-clipping",
+      "label": "Gradient Clipping"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "gradient descent"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "healthcare-analytics",
+      "label": "healthcare analytics"
+    },
+    {
+      "slug": "hidden-state",
+      "label": "hidden state"
+    },
+    {
+      "slug": "hidden-state",
+      "label": "Hidden State"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language modeling"
+    },
+    {
+      "slug": "long-short-term-memory",
+      "label": "Long Short Term Memory"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "machine translation"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine translation"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named entity recognition"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "natural language processing"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "neural-network",
+      "label": "neural network"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment analysis"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "speech recognition"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech recognition"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "transformer",
+      "label": "transformer"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "transformers",
+      "label": "transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

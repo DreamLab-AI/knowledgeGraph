@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d995ed508b3f8bd26d1af4f5eea4de7afafc6c80fcaa2e45063a091f5d1bfd0d",
+  "title": "Knowledge Distillation for Edge",
+  "slug": "knowledge-distillation-for-edge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-distillation-for-edge",
+  "domain": "artificial-intelligence",
+  "definition": "Knowledge Distillation for Edge transfers learned representations from large, accurate teacher neural networks to compact student models optimized for edge deployment, achieving 20-30x compression while retaining 97%+ of accuracy. Knowledge distillation addresses the mismatch between expensive training (requiring large models and substantial compute) and deployment constraints (limited memory, power, latency). A large teacher model trained on expansive datasets learns rich feature representations; the student model learns to mimic teacher predictions and intermediate representations through soft targets (probability distributions over classes) rather than hard labels. Temperature scaling softens teacher probabilities, revealing knowledge about class confusion and similarity that hard labels omit. Dark knowledge captures patterns learned through large-scale training that transfer to compact students. Typical teacher-student compression ratios reach 20x: a 500MB teacher network compresses to 25MB student while retaining accuracy. Layer-wise knowledge distillation transfers intermediate representations, not just final predictions, improving student generalization. Multi-task distillat",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

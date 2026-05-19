@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:4ddcbe4de6a8c9a89bbc7bade1fbead10341f8c434acdb29e1f794590c417665",
+  "title": "Spatial Mapping",
+  "slug": "spatial-mapping",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-mapping",
+  "domain": "spatial-computing",
+  "definition": "SpatialMapping is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-experiences",
+      "label": "Ar Experiences"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "digital-content-layer",
+      "label": "Digital Content Layer"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

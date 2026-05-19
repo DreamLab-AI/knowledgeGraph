@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:b280446456eca6be1ce52efdd88503608173fd401c6b5d43ccc0963addea690f",
+  "title": "Infrared Illuminator",
+  "slug": "infrared-illuminator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrared-illuminator",
+  "domain": "spatial-computing",
+  "definition": "Light-emitting devices that project infrared wavelengths to enable VR/AR tracking sensors to function in low-light or dark environments, enhancing hand tracking accuracy, controller detection, and spatial awareness for immersive experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tracking-hardware",
+      "label": "Tracking Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dark-environment-vr",
+        "label": "Dark Environment VR"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dark-environment-vr",
+      "label": "Dark Environment VR"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "tracking-hardware",
+      "label": "Tracking Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "infrared-led-illuminator",
+      "label": "Infrared Led Illuminator"
+    }
+  ]
+}

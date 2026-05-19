@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:5e4f9d1ddeeda0b0d79005ad3fafccb3ae08fbf14d3c0b7d51d43b97a0f381b9",
+  "title": "Workforce Development",
+  "slug": "workforce-development",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:workforce-development",
+  "domain": "spatial-computing",
+  "definition": "Workforce Development is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-training",
+      "label": "Virtual Training"
+    }
+  ]
+}

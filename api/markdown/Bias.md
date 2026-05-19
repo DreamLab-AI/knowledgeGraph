@@ -1,22 +1,307 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Bias
-uri:: urn:visionclaw:concept:artificial-intelligence:bias
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:bias
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Bias
-content-hash:: sha256-12-f4c15ffc5703
-legacy-term-id:: AI-0066
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Bias
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:bias
 public:: true
-bridges-to:: [[Blockchain]]
+
+# Bias
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2",
+  "@type": "Page",
+  "vc:slug": "bias",
+  "title": "Bias",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:confusion-matrices",
+      "vc:label": "confusion matrices"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "vc:label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
+      "vc:label": "NIST (National Institute of Standards and Technology)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-risks",
+      "vc:label": "AI Risks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "vc:label": "Bias in Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety-and-alignment",
+      "vc:label": "Safety and alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Blockchain]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f4c15ffc5703"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Bias"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0066"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Bias"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:bias"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:bias"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:bias",
+  "@type": "OntologyClass",
+  "label": "Bias",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:bias:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[confusion matrices]]",
+      "resolved": "urn:visionflow:linked:confusion-matrices",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR (General Data Protection Regulation)]]",
+      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST (National Institute of Standards and Technology)]]",
+      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Risks]]",
+      "resolved": "urn:visionflow:owl:class:ai-risks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bias in Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Safety and alignment]]",
+      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.
@@ -211,7 +496,7 @@ bridges-to:: [[Blockchain]]
   - ### Bias and Fairness
 		- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
 		- **The increasing integration of AI into our daily lives.**
-  - [[Large language models]]
+  - [[Large Language Models]]
 
   - ## Bias in images
   - Bias is really hard, and the current tools are blunt.
@@ -233,7 +518,7 @@ bridges-to:: [[Blockchain]]
   - ## See Also
   - [[AI Risks]]
   - [[Bias in Large Language Models]]
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[Machine Learning]]
   - [[Deep Learning]]
 
@@ -260,7 +545,7 @@ bridges-to:: [[Blockchain]]
   - ## See Also
   - [[AI Risks]]
   - [[Bias in Large Language Models]]
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[Machine Learning]]
   - [[Deep Learning]]
 

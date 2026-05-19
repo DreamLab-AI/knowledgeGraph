@@ -1,0 +1,149 @@
+{
+  "id": "urn:visionflow:page:2c86d4a62d8e8f4622a2028d65c1fd48c748633d8ba05ae68128347daf53fed4",
+  "title": "Confusion Matrix",
+  "slug": "confusion-matrix",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:confusion-matrix",
+  "domain": "spatial-computing",
+  "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:error-analysis",
+        "label": "Error analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:fairness-assessment",
+        "label": "fairness assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:model-debugging",
+        "label": "model debugging"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "error-analysis",
+      "label": "Error analysis"
+    },
+    {
+      "slug": "fairness-assessment",
+      "label": "fairness assessment"
+    },
+    {
+      "slug": "false-negative",
+      "label": "False Negative"
+    },
+    {
+      "slug": "false-positive",
+      "label": "False Positive"
+    },
+    {
+      "slug": "iso-iec-25024",
+      "label": "ISO/IEC 25024"
+    },
+    {
+      "slug": "iso-iec-25059",
+      "label": "ISO/IEC 25059"
+    },
+    {
+      "slug": "model-debugging",
+      "label": "model debugging"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "slug": "specificity",
+      "label": "Specificity"
+    },
+    {
+      "slug": "true-negative",
+      "label": "True Negative"
+    },
+    {
+      "slug": "true-positive",
+      "label": "True Positive"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ]
+}

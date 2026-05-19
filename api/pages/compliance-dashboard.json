@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea",
+  "title": "Compliance Dashboard",
+  "slug": "compliance-dashboard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compliance-dashboard",
+  "domain": "artificial-intelligence",
+  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compliance to regulators through transparent reporting.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:regulatory-technology",
+      "label": "Regulatory Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:analytics-engine",
+        "label": "Analytics Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-visualization",
+        "label": "Risk Visualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analytics-engine",
+      "label": "Analytics Engine"
+    },
+    {
+      "slug": "real-time-monitoring",
+      "label": "Real-Time Monitoring"
+    },
+    {
+      "slug": "risk-visualization",
+      "label": "Risk Visualization"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

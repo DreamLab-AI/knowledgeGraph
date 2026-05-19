@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:c455946ca6f02a13e56f172269b034b7e3c42a5e137e41916a4890e0398daa79",
+  "title": "Organisational Theory",
+  "slug": "organisational-theory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:organisational-theory",
+  "domain": "distributed-collaboration",
+  "definition": "Organisational Theory is a concept within the telecollaboration domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "media-richness-theory",
+      "label": "Media Richness Theory"
+    }
+  ]
+}

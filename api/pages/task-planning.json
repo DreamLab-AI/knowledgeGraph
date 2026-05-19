@@ -1,0 +1,448 @@
+{
+  "id": "urn:visionflow:page:920d0612005be6d57f8ee484e94eeec9b8fda480d1d5600e9aa2100b812af589",
+  "title": "Task Planning",
+  "slug": "task-planning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:task-planning",
+  "domain": "artificial-intelligence",
+  "definition": "Task Planning is the computational sub-field of artificial intelligence and robotics concerned with automatically synthesising finite sequences of discrete actions \u2014 called plans \u2014 that transform a given initial world state into a state satisfying a specified goal condition, subject to action preconditions, effects, resource constraints, and temporal or probabilistic uncertainty. A planner accepts a formal problem description (initial state I, goal condition G, action schema set A), searches over the space of reachable states or action sequences, and returns either a complete plan \u03c0 = \u27e8a\u2081, a\u2082, \u2026, a\u2099\u27e9 such that executing \u03c0 from I guarantees (or probabilistically approaches) G, or a proof of unsolvability. The field spans five decades of research from the foundational STRIPS formalism (Fikes & Nilsson, Stanford Research Institute 1971) through modern neural\u2013symbolic hybrid planners that couple large language models with classical planning engines (Liu LLM+P 2023, Wang Voyager 2023), foundation model end-to-end visuomotor planners (Black et al. \u03c00 Physical Intelligence Mar 2024), and Monte Carlo Tree Search-guided deliberative reasoning architectures (Silver AlphaGo/AlphaZero 2016\u2013201",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:sequential-decision-making",
+      "label": "Sequential Decision Making"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:visionflow:owl:class:automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:symbolic-ai",
+      "label": "Symbolic AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:action-schema",
+        "label": "Action Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-oriented-action-planning",
+        "label": "Goal-Oriented Action Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:heuristic-function",
+        "label": "Heuristic Function"
+      },
+      {
+        "id": "urn:visionflow:linked:htn-planning",
+        "label": "HTN Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:mcts",
+        "label": "MCTS"
+      },
+      {
+        "id": "urn:visionflow:linked:pddl",
+        "label": "PDDL"
+      },
+      {
+        "id": "urn:visionflow:linked:plan-library",
+        "label": "Plan Library"
+      },
+      {
+        "id": "urn:visionflow:linked:task-and-motion-planning",
+        "label": "Task and Motion Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:world-model",
+        "label": "World Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:action-model",
+        "label": "Action Model"
+      },
+      {
+        "id": "urn:visionflow:linked:feasibility-checker",
+        "label": "Feasibility Checker"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-specification",
+        "label": "Goal Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:world-state-representation",
+        "label": "World State Representation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligent-agent",
+        "label": "Intelligent Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-robot-coordination",
+        "label": "Multi-Robot Coordination"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-autonomy",
+        "label": "Robot Autonomy"
+      },
+      {
+        "id": "urn:visionflow:linked:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:behaviour-tree-execution",
+        "label": "Behaviour Tree Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-policy",
+        "label": "Diffusion Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:htn-decomposition",
+        "label": "HTN Decomposition"
+      },
+      {
+        "id": "urn:visionflow:linked:mcts-rollout",
+        "label": "MCTS Rollout"
+      },
+      {
+        "id": "urn:visionflow:linked:pddl",
+        "label": "PDDL"
+      },
+      {
+        "id": "urn:visionflow:owl:class:strips",
+        "label": "STRIPS"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action-model",
+      "label": "Action Model"
+    },
+    {
+      "slug": "action-schema",
+      "label": "Action Schema"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "automated-reasoning-domain",
+      "label": "AutomatedReasoningDomain"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "behaviour-based-robotics",
+      "label": "Behaviour-Based Robotics"
+    },
+    {
+      "slug": "behaviour-tree-execution",
+      "label": "Behaviour Tree Execution"
+    },
+    {
+      "slug": "behaviour-trees",
+      "label": "Behaviour Trees"
+    },
+    {
+      "slug": "chain-of-thought-reasoning",
+      "label": "Chain-of-Thought Reasoning"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "diffusion-policy",
+      "label": "Diffusion Policy"
+    },
+    {
+      "slug": "end-to-end-learning",
+      "label": "End-to-End Learning"
+    },
+    {
+      "slug": "feasibility-checker",
+      "label": "Feasibility Checker"
+    },
+    {
+      "slug": "formal-logic",
+      "label": "Formal Logic"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "goal-oriented-action-planning",
+      "label": "Goal-Oriented Action Planning"
+    },
+    {
+      "slug": "goal-specification",
+      "label": "Goal Specification"
+    },
+    {
+      "slug": "heuristic-function",
+      "label": "Heuristic Function"
+    },
+    {
+      "slug": "htn-decomposition",
+      "label": "HTN Decomposition"
+    },
+    {
+      "slug": "htn-planning",
+      "label": "HTN Planning"
+    },
+    {
+      "slug": "intelligent-agent",
+      "label": "Intelligent Agent"
+    },
+    {
+      "slug": "ipc-benchmark",
+      "label": "IPC Benchmark"
+    },
+    {
+      "slug": "manufacturing-automation",
+      "label": "Manufacturing Automation"
+    },
+    {
+      "slug": "mcts",
+      "label": "MCTS"
+    },
+    {
+      "slug": "mcts-rollout",
+      "label": "MCTS Rollout"
+    },
+    {
+      "slug": "model-free-reinforcement-learning",
+      "label": "Model-Free Reinforcement Learning"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "multi-robot-coordination",
+      "label": "Multi-Robot Coordination"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "open-x-embodiment-dataset",
+      "label": "Open-X-Embodiment Dataset"
+    },
+    {
+      "slug": "pddl",
+      "label": "PDDL"
+    },
+    {
+      "slug": "pddl-standard",
+      "label": "PDDL Standard"
+    },
+    {
+      "slug": "plan-library",
+      "label": "Plan Library"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "robot-autonomy",
+      "label": "Robot Autonomy"
+    },
+    {
+      "slug": "ros-2-navigation",
+      "label": "ROS 2 Navigation"
+    },
+    {
+      "slug": "sat-solving",
+      "label": "SAT Solving"
+    },
+    {
+      "slug": "search-theory",
+      "label": "Search Theory"
+    },
+    {
+      "slug": "sequential-decision-making",
+      "label": "Sequential Decision Making"
+    },
+    {
+      "slug": "service-robotics",
+      "label": "Service Robotics"
+    },
+    {
+      "slug": "space-robotics",
+      "label": "Space Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "systems-layer",
+      "label": "SystemsLayer"
+    },
+    {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
+    },
+    {
+      "slug": "video-game-ai",
+      "label": "Video Game AI"
+    },
+    {
+      "slug": "warehouse-automation",
+      "label": "Warehouse Automation"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    },
+    {
+      "slug": "world-state-representation",
+      "label": "World State Representation"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "graph-search",
+      "label": "Graph Search"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "reactive-control",
+      "label": "Reactive Control"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "strips",
+      "label": "STRIPS"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-operation",
+      "label": "Collaborative Operation"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

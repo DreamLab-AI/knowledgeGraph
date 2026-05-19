@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:583d7d99ea208ee0ae7253a5ca54d96eeaad3b1bdff05de965ca47fad2305908",
+  "title": "mBERT",
+  "slug": "m-bert",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:m-bert",
+  "domain": "artificial-intelligence",
+  "definition": "Multilingual BERT: a variant of BERT pre-trained on Wikipedia in 104 languages, enabling cross-lingual transfer and multilingual understanding without language-specific modifications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

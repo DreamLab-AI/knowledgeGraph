@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:46125fb0e8a4843763c734a7e45dc7f5da9828d69f159cfd069b788e4787b1cf",
+  "title": "Delivery Planning",
+  "slug": "delivery-planning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:delivery-planning",
+  "domain": "infrastructure",
+  "definition": "Delivery Planning is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    }
+  ]
+}

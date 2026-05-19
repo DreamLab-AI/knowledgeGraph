@@ -1,21 +1,195 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#TrainingHardware
-uri:: urn:visionclaw:concept:artificial-intelligence:training-hardware
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:training-hardware
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Training Hardware
-content-hash:: sha256-12-c5184a5c82c9
-legacy-term-id:: AI-1022
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#TrainingHardware
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:training-hardware
 public:: true
+
+# Training Hardware
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d527459d7d41bb6b40116193f804f4d7081be6061313b5f5f2fe8b239463e5de",
+  "@type": "Page",
+  "vc:slug": "training-hardware",
+  "title": "Training Hardware",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:high-performance-computing",
+      "vc:label": "High-Performance Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-training",
+      "vc:label": "Neural Network Training"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c5184a5c82c9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#TrainingHardware"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1022"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Training Hardware"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:training-hardware"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:training-hardware"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d527459d7d41bb6b40116193f804f4d7081be6061313b5f5f2fe8b239463e5de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:training-hardware",
+  "@type": "OntologyClass",
+  "label": "Training Hardware",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:high-performance-computing",
+      "vc:label": "High-Performance Computing"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d527459d7d41bb6b40116193f804f4d7081be6061313b5f5f2fe8b239463e5de"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d527459d7d41bb6b40116193f804f4d7081be6061313b5f5f2fe8b239463e5de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Training Hardware is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:neural-network-training",
+      "vc:label": "Neural Network Training"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:training-hardware:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d527459d7d41bb6b40116193f804f4d7081be6061313b5f5f2fe8b239463e5de"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[High-Performance Computing]]",
+      "resolved": "urn:visionflow:linked:high-performance-computing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Network Training]]",
+      "resolved": "urn:visionflow:linked:neural-network-training",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d527459d7d41bb6b40116193f804f4d7081be6061313b5f5f2fe8b239463e5de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Training Hardware is a concept within the ai domain.

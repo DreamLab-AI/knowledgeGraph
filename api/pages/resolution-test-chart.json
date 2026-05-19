@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:83b673a4940ea902d1fe1a9896da5b16a10480627a9421c31e131a54ec7ffd55",
+  "title": "Resolution Test Chart",
+  "slug": "resolution-test-chart",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:resolution-test-chart",
+  "domain": "spatial-computing",
+  "definition": "Standardized calibration patterns such as ISO 12233 charts used to measure and validate the optical resolution, colour accuracy, and image quality of displays in virtual reality and augmented reality headsets through computational analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:calibration-tools",
+      "label": "Calibration Tools"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:display-calibration",
+        "label": "Display Calibration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "display-calibration",
+      "label": "Display Calibration"
+    },
+    {
+      "slug": "calibration-tools",
+      "label": "Calibration Tools"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    }
+  ]
+}

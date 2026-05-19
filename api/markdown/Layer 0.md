@@ -1,21 +1,297 @@
-iri:: http://narrativegoldmine.com/blockchain#Layer0
-uri:: urn:visionclaw:concept:blockchain:layer-0
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:layer-0
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Layer 0
-content-hash:: sha256-12-9ca177c961a9
-legacy-term-id:: BC-8008
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Layer0
+legacy_uri:: urn:visionclaw:concept:blockchain:layer-0
 public:: true
+
+# Layer 0
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b515c868a07a1a8486ab61ca936f0466ba80c62bac761fd11b8893c491dd83a2",
+  "@type": "Page",
+  "vc:slug": "layer-0",
+  "title": "Layer 0",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:avalanche",
+      "vc:label": "Avalanche"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-architecture",
+      "vc:label": "Blockchain Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos",
+      "vc:label": "Cosmos"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-1",
+      "vc:label": "Layer 1"
+    },
+    {
+      "@id": "urn:visionflow:linked:monolithic-blockchain",
+      "vc:label": "Monolithic Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:polkadot",
+      "vc:label": "Polkadot"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability-solutions",
+      "vc:label": "Scalability Solutions"
+    },
+    {
+      "@id": "urn:visionflow:linked:shared-security",
+      "vc:label": "Shared Security"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9ca177c961a9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Layer0"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8008"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Layer 0"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:layer-0"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:layer-0"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b515c868a07a1a8486ab61ca936f0466ba80c62bac761fd11b8893c491dd83a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:layer-0",
+  "@type": "OntologyClass",
+  "label": "Layer 0",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b515c868a07a1a8486ab61ca936f0466ba80c62bac761fd11b8893c491dd83a2"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b515c868a07a1a8486ab61ca936f0466ba80c62bac761fd11b8893c491dd83a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Foundation blockchain infrastructure layer providing cross-chain communication protocols, shared security mechanisms, and modular consensus abstraction to enable interoperability between multiple Layer 1 blockchains. Layer 0 networks like Polkadot and Cosmos serve as the meta-layer coordinating heterogeneous blockchain ecosystems.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:linked:monolithic-blockchain",
+      "vc:label": "Monolithic Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:layer-0:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b515c868a07a1a8486ab61ca936f0466ba80c62bac761fd11b8893c491dd83a2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Avalanche]]",
+      "resolved": "urn:visionflow:linked:avalanche",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Architecture]]",
+      "resolved": "urn:visionflow:linked:blockchain-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos]]",
+      "resolved": "urn:visionflow:linked:cosmos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 1]]",
+      "resolved": "urn:visionflow:linked:layer-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monolithic Blockchain]]",
+      "resolved": "urn:visionflow:linked:monolithic-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polkadot]]",
+      "resolved": "urn:visionflow:linked:polkadot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scalability Solutions]]",
+      "resolved": "urn:visionflow:linked:scalability-solutions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Shared Security]]",
+      "resolved": "urn:visionflow:linked:shared-security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross-Chain Bridge]]",
+      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:interoperability",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b515c868a07a1a8486ab61ca936f0466ba80c62bac761fd11b8893c491dd83a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Foundation blockchain infrastructure layer providing cross-chain communication protocols, shared security mechanisms, and modular consensus abstraction to enable interoperability between multiple Layer 1 blockchains. Layer 0 networks like Polkadot and Cosmos serve as the meta-layer coordinating heterogeneous blockchain ecosystems.

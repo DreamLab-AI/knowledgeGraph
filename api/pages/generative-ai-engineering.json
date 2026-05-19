@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:c162b7e0cfc1be1ac63ced26bd98ed63448d250f1eb748f62913f9c191265f21",
+  "title": "Generative AI Engineering",
+  "slug": "generative-ai-engineering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:generative-ai-engineering",
+  "domain": "artificial-intelligence",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

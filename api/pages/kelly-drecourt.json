@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:e290e390563b21eabf249899973e3b1d556794ed8a6f299e3e3b1ef0dfe75e80",
+  "title": "Kelly Drecourt",
+  "slug": "kelly-drecourt",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:kelly-drecourt",
+  "domain": "infrastructure",
+  "definition": "Kelly Drecourt is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:f927d0a4447e377181ced1e14ff2e690378667a52b5a18a98dcfd518c44e66fe",
+  "title": "Event Driven Architecture",
+  "slug": "event-driven-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:event-driven-architecture",
+  "domain": "spatial-computing",
+  "definition": "A software architecture pattern for metaverse systems built from decoupled services that publish, consume, and route events representing state changes, enabling real-time responsiveness, independent scaling, and resilient distributed systems for immersive virtual experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:scalable-metaverse-infrastructure",
+        "label": "Scalable Metaverse Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "scalable-metaverse-infrastructure",
+      "label": "Scalable Metaverse Infrastructure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    },
+    {
+      "slug": "event",
+      "label": "Event"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    }
+  ]
+}

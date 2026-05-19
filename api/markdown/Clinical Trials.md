@@ -1,22 +1,297 @@
-iri:: http://narrativegoldmine.com/blockchain#ClinicalTrials
-uri:: urn:visionclaw:concept:blockchain:clinical-trials
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:clinical-trials
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Clinical Trials
-content-hash:: sha256-12-cef3a8c1b836
-legacy-term-id:: BC-0492
-status:: complete
-maturity:: draft
-bridges-to:: [[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)
-quality-score:: 0.50
-authority-score:: 0.91
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#ClinicalTrials
+legacy_uri:: urn:visionclaw:concept:blockchain:clinical-trials
 public:: true
+
+# Clinical Trials
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f5e7b4ed331af615c28bb2b9f40369d9c17c06d0bd4812b06e992a662601143d",
+  "@type": "Page",
+  "vc:slug": "clinical-trials",
+  "title": "Clinical Trials",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aml-anti-money-laundering",
+      "vc:label": "AML (Anti-Money Laundering)"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "vc:label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "vc:label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
+      "vc:label": "BC-0456-self-sovereign-identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0458-verifiable-credentials",
+      "vc:label": "BC-0458-verifiable-credentials"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
+      "vc:label": "BC-0476-aml-kyc-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0486-regulatory-reporting",
+      "vc:label": "BC-0486-regulatory-reporting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0491-healthcare-records",
+      "vc:label": "BC-0491-healthcare-records"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "vc:label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyc-know-your-customer",
+      "vc:label": "KYC (Know Your Customer)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.91"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cef3a8c1b836"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#ClinicalTrials"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0492"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Clinical Trials"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:clinical-trials"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:clinical-trials"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f5e7b4ed331af615c28bb2b9f40369d9c17c06d0bd4812b06e992a662601143d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:clinical-trials",
+  "@type": "OntologyClass",
+  "label": "Clinical Trials",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f5e7b4ed331af615c28bb2b9f40369d9c17c06d0bd4812b06e992a662601143d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f5e7b4ed331af615c28bb2b9f40369d9c17c06d0bd4812b06e992a662601143d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain-based clinical trial management systems employing immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, enable patient recruitment improvements, and provide FDA 21 CFR Part 11 compliant tamper-proof record keeping whilst reducing monitoring costs from €722 to €10 per participant visit.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.91",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:clinical-trials:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f5e7b4ed331af615c28bb2b9f40369d9c17c06d0bd4812b06e992a662601143d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AML (Anti-Money Laundering)]]",
+      "resolved": "urn:visionflow:linked:aml-anti-money-laundering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0426-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0442-pharmaceutical-traceability]]",
+      "resolved": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0456-self-sovereign-identity]]",
+      "resolved": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0458-verifiable-credentials]]",
+      "resolved": "urn:visionflow:linked:bc-0458-verifiable-credentials",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0476-aml-kyc-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0486-regulatory-reporting]]",
+      "resolved": "urn:visionflow:linked:bc-0486-regulatory-reporting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0491-healthcare-records]]",
+      "resolved": "urn:visionflow:linked:bc-0491-healthcare-records",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR (General Data Protection Regulation)]]",
+      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KYC (Know Your Customer)]]",
+      "resolved": "urn:visionflow:linked:kyc-know-your-customer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f5e7b4ed331af615c28bb2b9f40369d9c17c06d0bd4812b06e992a662601143d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain-based clinical trial management systems employing immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, enable patient recruitment improvements, and provide FDA 21 CFR Part 11 compliant tamper-proof record keeping whilst reducing monitoring costs from €722 to €10 per participant visit.

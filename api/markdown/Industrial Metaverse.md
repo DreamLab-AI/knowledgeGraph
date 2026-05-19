@@ -1,24 +1,516 @@
-iri:: http://narrativegoldmine.com/spatial-computing#IndustrialMetaverse
-uri:: urn:visionclaw:concept:spatial-computing:industrial-metaverse
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:industrial-metaverse
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Industrial Metaverse
-content-hash:: sha256-12-89a5cb41a6e2
-legacy-term-id:: 20312
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#IndustrialMetaverse
+legacy_uri:: urn:visionclaw:concept:spatial-computing:industrial-metaverse
 public:: true
+
+# Industrial Metaverse
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:294aafb875b4990bebf3605279b18f58e65c75b3984dfb34ace6432f4a71a3e2",
+  "@type": "Page",
+  "vc:slug": "industrial-metaverse",
+  "title": "Industrial Metaverse",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-cad-integration",
+      "vc:label": "3D CAD Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-design",
+      "vc:label": "Collaborative Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-ai",
+      "vc:label": "Industrial AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-protocol-gateway",
+      "vc:label": "Industrial Protocol Gateway"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-23247-digital-twin-framework",
+      "vc:label": "ISO 23247 Digital Twin Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:opc-ua",
+      "vc:label": "OPC UA"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-simulation-engine",
+      "vc:label": "Physics Simulation Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-data-synchronization",
+      "vc:label": "Real-Time Data Synchronization"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-control-interface",
+      "vc:label": "Remote Control Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-operations",
+      "vc:label": "Remote Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:siemens-xcelerator",
+      "vc:label": "Siemens Xcelerator"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-manufacturing",
+      "vc:label": "Smart Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-visualization",
+      "vc:label": "Supply Chain Visualization"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-simulation",
+      "vc:label": "Training Simulation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "vc:label": "InfrastructureDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensor-network",
+      "vc:label": "IoT Sensor Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "vc:label": "Metaverse Application Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
+      "vc:label": "NVIDIA Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-analytics",
+      "vc:label": "Predictive Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-commissioning",
+      "vc:label": "Virtual Commissioning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-factory",
+      "vc:label": "Virtual Factory"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-89a5cb41a6e2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#IndustrialMetaverse"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20312"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Industrial Metaverse"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:industrial-metaverse"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:industrial-metaverse"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:294aafb875b4990bebf3605279b18f58e65c75b3984dfb34ace6432f4a71a3e2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:industrial-metaverse",
+  "@type": "OntologyClass",
+  "label": "Industrial Metaverse",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "vc:label": "Metaverse Application Platform"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:294aafb875b4990bebf3605279b18f58e65c75b3984dfb34ace6432f4a71a3e2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:294aafb875b4990bebf3605279b18f58e65c75b3984dfb34ace6432f4a71a3e2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A virtual platform integrating digital twin technology, simulation environments, and collaborative workspaces for manufacturing operations, supply chain management, remote equipment control, and industrial training across geographically distributed facilities.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "vc:label": "Metaverse Application Platform"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:remote-control-interface",
+      "vc:label": "Remote Control Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-visualization",
+      "vc:label": "Supply Chain Visualization"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-simulation",
+      "vc:label": "Training Simulation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-analytics",
+      "vc:label": "Predictive Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-factory",
+      "vc:label": "Virtual Factory"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:3-d-cad-integration",
+      "vc:label": "3D CAD Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-protocol-gateway",
+      "vc:label": "Industrial Protocol Gateway"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-data-synchronization",
+      "vc:label": "Real-Time Data Synchronization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensor-network",
+      "vc:label": "IoT Sensor Network"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-design",
+      "vc:label": "Collaborative Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-operations",
+      "vc:label": "Remote Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-manufacturing",
+      "vc:label": "Smart Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-commissioning",
+      "vc:label": "Virtual Commissioning"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:industrial-ai",
+      "vc:label": "Industrial AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-simulation-engine",
+      "vc:label": "Physics Simulation Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:industrial-metaverse:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:294aafb875b4990bebf3605279b18f58e65c75b3984dfb34ace6432f4a71a3e2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D CAD Integration]]",
+      "resolved": "urn:visionflow:linked:3-d-cad-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collaborative Design]]",
+      "resolved": "urn:visionflow:linked:collaborative-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Industrial AI]]",
+      "resolved": "urn:visionflow:linked:industrial-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Industrial Protocol Gateway]]",
+      "resolved": "urn:visionflow:linked:industrial-protocol-gateway",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 23247 Digital Twin Framework]]",
+      "resolved": "urn:visionflow:linked:iso-23247-digital-twin-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OPC UA]]",
+      "resolved": "urn:visionflow:linked:opc-ua",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Physics Simulation Engine]]",
+      "resolved": "urn:visionflow:linked:physics-simulation-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Data Synchronization]]",
+      "resolved": "urn:visionflow:linked:real-time-data-synchronization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Remote Control Interface]]",
+      "resolved": "urn:visionflow:linked:remote-control-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Remote Operations]]",
+      "resolved": "urn:visionflow:linked:remote-operations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Siemens Xcelerator]]",
+      "resolved": "urn:visionflow:linked:siemens-xcelerator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Manufacturing]]",
+      "resolved": "urn:visionflow:linked:smart-manufacturing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Supply Chain Visualization]]",
+      "resolved": "urn:visionflow:linked:supply-chain-visualization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Training Simulation]]",
+      "resolved": "urn:visionflow:linked:training-simulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Edge Computing]]",
+      "resolved": "urn:visionflow:owl:class:edge-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureDomain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[IoT Sensor Network]]",
+      "resolved": "urn:visionflow:owl:class:io-t-sensor-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Application Platform]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-application-platform",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:network-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NVIDIA Omniverse]]",
+      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Analytics]]",
+      "resolved": "urn:visionflow:owl:class:predictive-analytics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Maintenance]]",
+      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Commissioning]]",
+      "resolved": "urn:visionflow:owl:class:virtual-commissioning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Factory]]",
+      "resolved": "urn:visionflow:owl:class:virtual-factory",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:294aafb875b4990bebf3605279b18f58e65c75b3984dfb34ace6432f4a71a3e2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A virtual platform integrating digital twin technology, simulation environments, and collaborative workspaces for manufacturing operations, supply chain management, remote equipment control, and industrial training across geographically distributed facilities.

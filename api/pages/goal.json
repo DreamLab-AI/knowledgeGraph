@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255",
+  "title": "Goal",
+  "slug": "goal",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:goal",
+  "domain": "artificial-intelligence",
+  "definition": "Goal is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:objective",
+      "label": "Objective"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action",
+      "label": "Action"
+    },
+    {
+      "slug": "agent-concept",
+      "label": "Agent Concept"
+    },
+    {
+      "slug": "plan",
+      "label": "Plan"
+    },
+    {
+      "slug": "state",
+      "label": "State"
+    },
+    {
+      "slug": "task",
+      "label": "Task"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "bdi-model",
+      "label": "BDI Model"
+    },
+    {
+      "slug": "objective",
+      "label": "Objective"
+    },
+    {
+      "slug": "value-alignment",
+      "label": "Value Alignment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "bdi-model",
+      "label": "BDI Model"
+    }
+  ]
+}

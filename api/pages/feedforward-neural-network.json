@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:596ee118aaa419a7f1d15d71366cd4f381609c2d69d2b2bb8e5b1f03aac9c432",
+  "title": "Feedforward Neural Network",
+  "slug": "feedforward-neural-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:feedforward-neural-network",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-architecture",
+      "label": "Network Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "id": "urn:visionflow:page:83c4eb333c98eea037188be5b455795a7855a6736e0543fedeae088d6a59028a",
+  "title": "Data Pipeline",
+  "slug": "data-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-pipeline",
+  "domain": "infrastructure",
+  "definition": "A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs. Data pipelines implement [[ETL Patterns]], [[Data Validation]], [[Error Handling]], and [[Monitoring]] to ensure [[Data Reliability]] and [[Availability]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "applies-transformation",
+      "label": "appliesTransformation"
+    },
+    {
+      "slug": "automated-pipeline",
+      "label": "AutomatedPipeline"
+    },
+    {
+      "slug": "availability",
+      "label": "Availability"
+    },
+    {
+      "slug": "data-delivery",
+      "label": "Data Delivery"
+    },
+    {
+      "slug": "data-ingestion",
+      "label": "Data Ingestion"
+    },
+    {
+      "slug": "data-preprocessing",
+      "label": "DataPreprocessing"
+    },
+    {
+      "slug": "data-quality",
+      "label": "DataQuality"
+    },
+    {
+      "slug": "data-reliability",
+      "label": "Data Reliability"
+    },
+    {
+      "slug": "data-transformation",
+      "label": "Data Transformation"
+    },
+    {
+      "slug": "data-transformation",
+      "label": "DataTransformation"
+    },
+    {
+      "slug": "data-validation",
+      "label": "Data Validation"
+    },
+    {
+      "slug": "distributed-storage",
+      "label": "DistributedStorage"
+    },
+    {
+      "slug": "dt-coordinated-by",
+      "label": "dt:coordinatedBy"
+    },
+    {
+      "slug": "dt-feeds",
+      "label": "dt:feeds"
+    },
+    {
+      "slug": "dt-stored-on",
+      "label": "dt:storedOn"
+    },
+    {
+      "slug": "dt-tracked-on",
+      "label": "dt:trackedOn"
+    },
+    {
+      "slug": "dt-validated-by",
+      "label": "dt:validatedBy"
+    },
+    {
+      "slug": "error-handling",
+      "label": "Error Handling"
+    },
+    {
+      "slug": "etl-patterns",
+      "label": "ETL Patterns"
+    },
+    {
+      "slug": "ingests-from",
+      "label": "ingestsFrom"
+    },
+    {
+      "slug": "monitoring",
+      "label": "Monitoring"
+    },
+    {
+      "slug": "oracle-service",
+      "label": "OracleService"
+    },
+    {
+      "slug": "outputs-to",
+      "label": "outputsTo"
+    },
+    {
+      "slug": "validates-against",
+      "label": "validatesAgainst"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "AuditTrail"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "FeatureEngineering"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-system-component",
+      "label": "AI System Component"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

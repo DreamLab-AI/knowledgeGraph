@@ -1,0 +1,235 @@
+{
+  "id": "urn:visionflow:page:9c192053ce9795614583344ced8111e1c2c66bafdc0df8b04ed9b917cc9d67ee",
+  "title": "Distributed Ledger Technology (DLT)",
+  "slug": "distributed-ledger-technology-dlt",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributed-ledger-technology-dlt",
+  "domain": "infrastructure",
+  "definition": "Distributed database infrastructure using cryptographic consensus mechanisms to maintain immutable, tamper-resistant records across decentralised peer-to-peer networks without centralised authority.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:block-structure",
+        "label": "Block Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-network",
+        "label": "Distributed Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transaction-pool",
+        "label": "Transaction Pool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:visionflow:linked:immutable-record",
+        "label": "Immutable Record"
+      },
+      {
+        "id": "urn:visionflow:linked:trustless-transaction",
+        "label": "Trustless Transaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-notary-service",
+        "label": "Virtual Notary Service"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "block-structure",
+      "label": "Block Structure"
+    },
+    {
+      "slug": "cryptographic-algorithm",
+      "label": "Cryptographic Algorithm"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "decentralized-application",
+      "label": "Decentralized Application"
+    },
+    {
+      "slug": "distributed-network",
+      "label": "Distributed Network"
+    },
+    {
+      "slug": "immutable-record",
+      "label": "Immutable Record"
+    },
+    {
+      "slug": "iso-22739",
+      "label": "ISO 22739"
+    },
+    {
+      "slug": "nist-blockchain-technology-overview",
+      "label": "NIST Blockchain Technology Overview"
+    },
+    {
+      "slug": "trustless-transaction",
+      "label": "Trustless Transaction"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "transaction-pool",
+      "label": "Transaction Pool"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

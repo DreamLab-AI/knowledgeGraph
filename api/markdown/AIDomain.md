@@ -1,21 +1,252 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AIDomain
-uri:: urn:visionclaw:concept:artificial-intelligence:aidomain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:aidomain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AIDomain
-content-hash:: sha256-12-27bbedc2161a
-legacy-term-id:: AI-7017
-status:: active
-maturity:: stable
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIDomain
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:aidomain
 public:: true
+
+# AIDomain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:19fa79bbf7aa484948d66db26ce8d9bd85012b488e3af9af10e601a86a184f2e",
+  "@type": "Page",
+  "vc:slug": "aidomain",
+  "title": "AIDomain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "Blockchain Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-technology",
+      "vc:label": "Metaverse Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-systems",
+      "vc:label": "Robotics Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technology-domain",
+      "vc:label": "Technology Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-27bbedc2161a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIDomain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-7017"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "stable"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AIDomain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aidomain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aidomain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:19fa79bbf7aa484948d66db26ce8d9bd85012b488e3af9af10e601a86a184f2e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:aidomain",
+  "@type": "OntologyClass",
+  "label": "AIDomain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technology-domain",
+      "vc:label": "Technology Domain"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "stable",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:19fa79bbf7aa484948d66db26ce8d9bd85012b488e3af9af10e601a86a184f2e"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:19fa79bbf7aa484948d66db26ce8d9bd85012b488e3af9af10e601a86a184f2e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including methods, systems, applications, and governance frameworks within the knowledge graph.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "Blockchain Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-technology",
+      "vc:label": "Metaverse Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-systems",
+      "vc:label": "Robotics Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:aidomain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:19fa79bbf7aa484948d66db26ce8d9bd85012b488e3af9af10e601a86a184f2e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Blockchain Technology]]",
+      "resolved": "urn:visionflow:linked:blockchain-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Technology]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics Systems]]",
+      "resolved": "urn:visionflow:owl:class:robotics-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technology Domain]]",
+      "resolved": "urn:visionflow:owl:class:technology-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:19fa79bbf7aa484948d66db26ce8d9bd85012b488e3af9af10e601a86a184f2e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including methods, systems, applications, and governance frameworks within the knowledge graph.

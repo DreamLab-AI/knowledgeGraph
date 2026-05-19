@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:af028d9159334bb7f0da12e41ff1afd976b2ee2e3ea28bae30346d37bb78fd4a",
+  "title": "Postquantum Cryptography",
+  "slug": "postquantum-cryptography",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:postquantum-cryptography",
+  "domain": "infrastructure",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

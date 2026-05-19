@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:26e933a48ff819ff4601e6b3f834c44156ae38955c613f9a4fe4a7ef3d97499a",
+  "title": "Virtual Economy Infrastructure",
+  "slug": "virtual-economy-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-economy-infrastructure",
+  "domain": "infrastructure",
+  "definition": "The collection of technologies, platforms, and systems essential for creating, managing, and sustaining economic activities within metaverse environments, including blockchain networks, payment systems, marketplaces, and decentralized finance protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    }
+  ]
+}

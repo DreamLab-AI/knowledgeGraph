@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#AutomatedMarketMaking
-uri:: urn:visionclaw:concept:spatial-computing:automated-market-making
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:automated-market-making
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Automated Market Making
-content-hash:: sha256-12-4f2f3fb28e81
-legacy-term-id:: MV-9787
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#AutomatedMarketMaking
+legacy_uri:: urn:visionclaw:concept:spatial-computing:automated-market-making
 public:: true
+
+# Automated Market Making
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db",
+  "@type": "Page",
+  "vc:slug": "automated-market-making",
+  "title": "Automated Market Making",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:de-fi-operations",
+      "vc:label": "DeFi Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-trading",
+      "vc:label": "Decentralized Trading"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity-mining",
+      "vc:label": "Liquidity Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:price-oracle-integration",
+      "vc:label": "Price Oracle Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-deployment",
+      "vc:label": "Smart Contract Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-accessibility",
+      "vc:label": "Token Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-provision",
+      "vc:label": "Liquidity Provision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4f2f3fb28e81"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#AutomatedMarketMaking"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9787"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Automated Market Making"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:automated-market-making"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:automated-market-making"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:automated-market-making",
+  "@type": "OntologyClass",
+  "label": "Automated Market Making",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:de-fi-operations",
+      "vc:label": "DeFi Operations"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:price-oracle-integration",
+      "vc:label": "Price Oracle Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-deployment",
+      "vc:label": "Smart Contract Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-provision",
+      "vc:label": "Liquidity Provision"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:decentralized-trading",
+      "vc:label": "Decentralized Trading"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity-mining",
+      "vc:label": "Liquidity Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-accessibility",
+      "vc:label": "Token Accessibility"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:automated-market-making:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[DeFi Operations]]",
+      "resolved": "urn:visionflow:linked:de-fi-operations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Trading]]",
+      "resolved": "urn:visionflow:linked:decentralized-trading",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquidity Mining]]",
+      "resolved": "urn:visionflow:linked:liquidity-mining",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Price Oracle Integration]]",
+      "resolved": "urn:visionflow:linked:price-oracle-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Contract Deployment]]",
+      "resolved": "urn:visionflow:linked:smart-contract-deployment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Token Accessibility]]",
+      "resolved": "urn:visionflow:linked:token-accessibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Liquidity Provision]]",
+      "resolved": "urn:visionflow:owl:class:liquidity-provision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.

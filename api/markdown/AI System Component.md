@@ -1,21 +1,222 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AISystemComponent
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-system-component
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-system-component
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI System Component
-content-hash:: sha256-12-f97e0302a5ea
-legacy-term-id:: AI-9007
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AISystemComponent
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-system-component
 public:: true
+
+# AI System Component
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1dc6cdbb2c6559f1445db487cfdcd00f3ae49ea4a3d0e2bf3e473330aaa0b646",
+  "@type": "Page",
+  "vc:slug": "ai-system-component",
+  "title": "AI System Component",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f97e0302a5ea"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AISystemComponent"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-9007"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI System Component"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-system-component"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-system-component"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1dc6cdbb2c6559f1445db487cfdcd00f3ae49ea4a3d0e2bf3e473330aaa0b646@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-system-component",
+  "@type": "OntologyClass",
+  "label": "AI System Component",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "['owl:Thing']"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:1dc6cdbb2c6559f1445db487cfdcd00f3ae49ea4a3d0e2bf3e473330aaa0b646"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1dc6cdbb2c6559f1445db487cfdcd00f3ae49ea4a3d0e2bf3e473330aaa0b646@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI System Component refers to the modular functional units that constitute a complete artificial intelligence system. These components include data ingestion pipelines, feature engineering modules, model training infrastructure, inference engines, monitoring systems, and user interfaces. Modern AI systems adopt microservices architectures where components communicate via APIs, enabling independent scaling, maintenance, and version control. Key components span data management (storage, versioning), compute infrastructure (training clusters, inference servers), and operational tooling (experiment tracking, model registry, continuous evaluation).",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-system-component:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1dc6cdbb2c6559f1445db487cfdcd00f3ae49ea4a3d0e2bf3e473330aaa0b646"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[MLOps]]",
+      "resolved": "urn:visionflow:linked:mlops",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Serving]]",
+      "resolved": "urn:visionflow:linked:model-serving",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Pipeline]]",
+      "resolved": "urn:visionflow:owl:class:data-pipeline",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microservices Architecture]]",
+      "resolved": "urn:visionflow:owl:class:microservices-architecture",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1dc6cdbb2c6559f1445db487cfdcd00f3ae49ea4a3d0e2bf3e473330aaa0b646@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI System Component refers to the modular functional units that constitute a complete artificial intelligence system. These components include data ingestion pipelines, feature engineering modules, model training infrastructure, inference engines, monitoring systems, and user interfaces. Modern AI systems adopt microservices architectures where components communicate via APIs, enabling independent scaling, maintenance, and version control. Key components span data management (storage, versioning), compute infrastructure (training clusters, inference servers), and operational tooling (experiment tracking, model registry, continuous evaluation).

@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:71fe2594f02a175665cc9f2ff38b2d7d09c28f333ff0b53c7114984c94555f6e",
+  "title": "Pixel Shader",
+  "slug": "pixel-shader",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pixel-shader",
+  "domain": "spatial-computing",
+  "definition": "Pixel Shader is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "normal-mapping",
+      "label": "Normal Mapping"
+    },
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "physically-based-rendering",
+      "label": "Physically-Based Rendering"
+    },
+    {
+      "slug": "texture-mapping",
+      "label": "Texture Mapping"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:dbba1a523482c5ed81672cd11187503b0acb5a29f7b2225a1b4e6dae4051da11",
+  "title": "Python to build RAG data page",
+  "slug": "python-to-build-rag-data-page",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:python-to-build-rag-data-page",
+  "domain": "artificial-intelligence",
+  "definition": "Python to build RAG data page is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "untitled",
+      "label": "..."
+    }
+  ],
+  "backlinks": []
+}

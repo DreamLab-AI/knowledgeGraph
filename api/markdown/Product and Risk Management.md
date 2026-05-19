@@ -1,20 +1,194 @@
-iri:: http://narrativegoldmine.com/infrastructure#ProductAndRiskManagement
-uri:: urn:visionclaw:concept:infrastructure:product-and-risk-management
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:product-and-risk-management
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Product and Risk Management
-content-hash:: sha256-12-0f53dde8eddc
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ProductAndRiskManagement
+legacy_uri:: urn:visionclaw:concept:infrastructure:product-and-risk-management
 public:: true
+
+# Product and Risk Management
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0",
+  "@type": "Page",
+  "vc:slug": "product-and-risk-management",
+  "title": "Product and Risk Management",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:product-design",
+      "vc:label": "Product Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety-and-alignment",
+      "vc:label": "Safety and alignment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0f53dde8eddc"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ProductAndRiskManagement"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Product and Risk Management"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:product-and-risk-management"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:product-and-risk-management"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:product-and-risk-management",
+  "@type": "OntologyClass",
+  "label": "Product and Risk Management",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Product and Risk Management is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:product-and-risk-management:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Product Design]]",
+      "resolved": "urn:visionflow:owl:class:product-design",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Safety and alignment]]",
+      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Product and Risk Management is a concept within the ngm domain.

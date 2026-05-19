@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:b0cc9968822c7a172d586ddda8588870f9cf0f0b6065d40f8f9443faf6d9b40a",
+  "title": "Social Network Graph",
+  "slug": "social-network-graph",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-network-graph",
+  "domain": "spatial-computing",
+  "definition": "Social Network Graph is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "character-relationship-graph",
+      "label": "Character Relationship Graph"
+    }
+  ]
+}

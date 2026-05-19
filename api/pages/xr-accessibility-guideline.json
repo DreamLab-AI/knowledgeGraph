@@ -1,0 +1,131 @@
+{
+  "id": "urn:visionflow:page:2c2e592fb3fc0602faf9e8f047f7772ae8fa46892b683b5d70ee156eb01f7fc3",
+  "title": "XR Accessibility Guideline",
+  "slug": "xr-accessibility-guideline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-accessibility-guideline",
+  "domain": "spatial-computing",
+  "definition": "Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:accessibility-standard",
+      "label": "Accessibility Standard"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:best-practice",
+        "label": "Best Practice"
+      },
+      {
+        "id": "urn:visionflow:linked:design-recommendation",
+        "label": "Design Recommendation"
+      },
+      {
+        "id": "urn:visionflow:linked:implementation-example",
+        "label": "Implementation Example"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:accessibility-testing",
+        "label": "Accessibility Testing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:universal-access",
+        "label": "Universal Access"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inclusive-xr-design",
+        "label": "Inclusive XR Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-testing",
+      "label": "Accessibility Testing"
+    },
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
+      "slug": "best-practice",
+      "label": "Best Practice"
+    },
+    {
+      "slug": "design-recommendation",
+      "label": "Design Recommendation"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "implementation-example",
+      "label": "Implementation Example"
+    },
+    {
+      "slug": "iso-9241-112",
+      "label": "ISO 9241-112"
+    },
+    {
+      "slug": "universal-access",
+      "label": "Universal Access"
+    },
+    {
+      "slug": "w3-c-xr-accessibility-ur",
+      "label": "W3C XR Accessibility UR"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "inclusive-xr-design",
+      "label": "Inclusive XR Design"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "user-research",
+      "label": "User Research"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1b50623c2cfcc10fadbfa8273b03de816bcbeda48339aa6c096c1adf3731150e",
+  "title": "rb 0021 robot kinematics",
+  "slug": "rb-0021-robot-kinematics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0021-robot-kinematics",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:kinematics",
+      "label": "Kinematics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

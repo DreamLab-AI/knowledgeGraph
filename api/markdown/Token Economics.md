@@ -1,21 +1,284 @@
-iri:: http://narrativegoldmine.com/blockchain#TokenEconomics
-uri:: urn:visionclaw:concept:blockchain:token-economics
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:token-economics
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Token Economics
-content-hash:: sha256-12-bd19c4076f51
-legacy-term-id:: BC-7009
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#TokenEconomics
+legacy_uri:: urn:visionclaw:concept:blockchain:token-economics
 public:: true
+
+# Token Economics
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00",
+  "@type": "Page",
+  "vc:slug": "token-economics",
+  "title": "Token Economics",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-governance",
+      "vc:label": "Decentralised Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-incentives",
+      "vc:label": "Network Incentives"
+    },
+    {
+      "@id": "urn:visionflow:linked:staking",
+      "vc:label": "Staking"
+    },
+    {
+      "@id": "urn:visionflow:linked:value-capture",
+      "vc:label": "Value Capture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-economics",
+      "vc:label": "Blockchain Economics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-token",
+      "vc:label": "Governance Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mev",
+      "vc:label": "MEV"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-bd19c4076f51"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#TokenEconomics"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-7009"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Token Economics"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:token-economics"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:token-economics"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:token-economics",
+  "@type": "OntologyClass",
+  "label": "Token Economics",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-economics",
+      "vc:label": "Blockchain Economics"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-governance",
+      "vc:label": "Decentralised Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-incentives",
+      "vc:label": "Network Incentives"
+    },
+    {
+      "@id": "urn:visionflow:linked:value-capture",
+      "vc:label": "Value Capture"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:token-economics:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Governance]]",
+      "resolved": "urn:visionflow:linked:decentralised-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Network Incentives]]",
+      "resolved": "urn:visionflow:linked:network-incentives",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Staking]]",
+      "resolved": "urn:visionflow:linked:staking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Value Capture]]",
+      "resolved": "urn:visionflow:linked:value-capture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Economics]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-economics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Governance Token]]",
+      "resolved": "urn:visionflow:owl:class:governance-token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MEV]]",
+      "resolved": "urn:visionflow:owl:class:mev",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.

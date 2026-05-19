@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1c608ea635168a14dbbf35725cf853db08ff3bd641e53c8f1821bbfe02671c19",
+  "title": "rb 0077 depth camera",
+  "slug": "rb-0077-depth-camera",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0077-depth-camera",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:camera",
+      "label": "Camera"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,119 @@
+{
+  "id": "urn:visionflow:page:27b445551bc08aa0a17e186546eaade2b392316f12da0f6131ea8e439dcc8bb0",
+  "title": "metaverse core concepts",
+  "slug": "metaverse-core-concepts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-core-concepts",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (Meta Horizon Worlds, Microsoft Mesh, NVIDIA Omniverse) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "AugmentedReality"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "DigitalAvatar"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "DigitalTwin"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "HapticFeedback"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "social-vr",
+      "label": "SocialVR"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "SpatialComputing"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "VirtualAsset"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "VirtualEconomy"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "VirtualWorld"
+    }
+  ],
+  "backlinks": []
+}

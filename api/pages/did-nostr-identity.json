@@ -1,0 +1,376 @@
+{
+  "id": "urn:visionflow:page:957135bea9c4cb2bcf1fe9809e9792ed2361fe3db21c4a9c0671d19d003b1038",
+  "title": "DID Nostr Identity",
+  "slug": "did-nostr-identity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:did-nostr-identity",
+  "domain": "blockchain",
+  "definition": "A [[W3C DID Core|W3C Decentralised Identifier]] (did:nostr:<pubkey>) binding a [[VisionClaw Agentic Container|VisionClaw agent]] to its [[BIP-340 Schnorr Keypair|BIP-340 x-only public key]], enabling cryptographic proof of identity, self-sovereign key management, and inter-agent trust without a central identity provider or certificate authority.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-identity",
+      "label": "Distributed Identity"
+    }
+  ],
+  "qualityScore": 0.88,
+  "authorityScore": 0.92,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "id": "urn:visionflow:linked:did-resolution",
+        "label": "DID Resolution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bip-340-cryptography",
+        "label": "BIP-340 Cryptography"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-did-method",
+        "label": "W3C DID Method"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:credential-issuance",
+        "label": "Credential Issuance"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-identity",
+        "label": "Cryptographic Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-trust",
+        "label": "Decentralised Trust"
+      },
+      {
+        "id": "urn:visionflow:linked:message-signing",
+        "label": "Message Signing"
+      },
+      {
+        "id": "urn:visionflow:linked:self-sovereign-key-management",
+        "label": "Self-Sovereign Key Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:visionflow:linked:nostr-nip-01",
+        "label": "Nostr NIP-01"
+      },
+      {
+        "id": "urn:visionflow:linked:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-013",
+      "label": "ADR-013"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "bip-340",
+      "label": "BIP-340"
+    },
+    {
+      "slug": "bip-340-cryptography",
+      "label": "BIP-340 Cryptography"
+    },
+    {
+      "slug": "bip-340-schnorr-keypair",
+      "label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "slug": "bip-340-schnorr-keypair",
+      "label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "slug": "blockchain-identity",
+      "label": "Blockchain Identity"
+    },
+    {
+      "slug": "credential-issuance",
+      "label": "Credential Issuance"
+    },
+    {
+      "slug": "cryptographic-identity",
+      "label": "Cryptographic Identity"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "decentralised-trust",
+      "label": "Decentralised Trust"
+    },
+    {
+      "slug": "did-resolution",
+      "label": "DID Resolution"
+    },
+    {
+      "slug": "ethereum-name-service",
+      "label": "Ethereum Name Service"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "IdentityDomain"
+    },
+    {
+      "slug": "message-signing",
+      "label": "Message Signing"
+    },
+    {
+      "slug": "nostr-nip-01",
+      "label": "Nostr NIP-01"
+    },
+    {
+      "slug": "rfc-8610",
+      "label": "RFC 8610"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "self-sovereign-key-management",
+      "label": "Self-Sovereign Key Management"
+    },
+    {
+      "slug": "smart-contract-verification",
+      "label": "Smart Contract Verification"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "w3-c-did-method",
+      "label": "W3C DID Method"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "public-key",
+      "label": "Public Key"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "address",
+      "label": "Address"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "attribute-sharing",
+      "label": "Attribute Sharing"
+    },
+    {
+      "slug": "authentication-standards",
+      "label": "Authentication Standards"
+    },
+    {
+      "slug": "avatar-behavior",
+      "label": "Avatar Behavior"
+    },
+    {
+      "slug": "avatar-creation",
+      "label": "Avatar Creation"
+    },
+    {
+      "slug": "avatar-customization",
+      "label": "Avatar Customization"
+    },
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "blake2",
+      "label": "BLAKE2"
+    },
+    {
+      "slug": "collective-memory-archive",
+      "label": "Collective Memory Archive"
+    },
+    {
+      "slug": "credential-format-standard",
+      "label": "Credential Format Standard"
+    },
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    },
+    {
+      "slug": "digital-actor-creation",
+      "label": "Digital Actor Creation"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    },
+    {
+      "slug": "digital-human-technology",
+      "label": "Digital Human Technology"
+    },
+    {
+      "slug": "digital-humans",
+      "label": "Digital Humans"
+    },
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "digital-identity-management",
+      "label": "Digital Identity Management"
+    },
+    {
+      "slug": "digital-identity-standards",
+      "label": "Digital Identity Standards"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-twin-of-the-customer",
+      "label": "Digital Twin of the Customer"
+    },
+    {
+      "slug": "distributed-authentication-architecture",
+      "label": "Distributed Authentication Architecture"
+    },
+    {
+      "slug": "etsi-domain-identity-and-trust",
+      "label": "ETSI Domain Identity and Trust"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

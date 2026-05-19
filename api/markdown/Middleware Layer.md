@@ -1,20 +1,165 @@
-iri:: http://narrativegoldmine.com/infrastructure#MiddlewareLayer
-uri:: urn:visionclaw:concept:infrastructure:middleware-layer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:middleware-layer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Middleware Layer
-content-hash:: sha256-12-9ddd2b7d6af7
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#MiddlewareLayer
+legacy_uri:: urn:visionclaw:concept:infrastructure:middleware-layer
 public:: true
+
+# Middleware Layer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d",
+  "@type": "Page",
+  "vc:slug": "middleware-layer",
+  "title": "Middleware Layer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9ddd2b7d6af7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#MiddlewareLayer"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Middleware Layer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:middleware-layer"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:middleware-layer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:middleware-layer",
+  "@type": "OntologyClass",
+  "label": "Middleware Layer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems. This layer encompasses components that sit \"in the middle\" of system architectures, providing services that enable interoperability, abstract complexity, coordinate across boundaries, or integrate heterogeneous systems. Middleware includes blockchain client APIs (JSON-RPC interfaces, GraphQL endpoints, REST APIs providing programmatic blockchain access), integration frameworks (Web3.js, ethers.js, blockchain SDKs), oracle systems (Chainlink, Band Protocol bridging on-chain and off-chain data), cross-chain bridges (enabling asset transfer between blockchains), indexing and query services (The Graph, blockchain explorers providing structured data access), wallet infrastructure (wallet connect protocols, key management services), abstraction layers (account abstraction, meta-transactions hiding blockchain complexity), and orchestration services (transaction batching, gas management, nonce management). Unlike lowe",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:middleware-layer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d"
+  },
+  "vc:resolutions": [],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems. This layer encompasses components that sit "in the middle" of system architectures, providing services that enable interoperability, abstract complexity, coordinate across boundaries, or integrate heterogeneous systems. Middleware includes blockchain client APIs (JSON-RPC interfaces, GraphQL endpoints, REST APIs providing programmatic blockchain access), integration frameworks (Web3.js, ethers.js, blockchain SDKs), oracle systems (Chainlink, Band Protocol bridging on-chain and off-chain data), cross-chain bridges (enabling asset transfer between blockchains), indexing and query services (The Graph, blockchain explorers providing structured data access), wallet infrastructure (wallet connect protocols, key management services), abstraction layers (account abstraction, meta-transactions hiding blockchain complexity), and orchestration services (transaction batching, gas management, nonce management). Unlike lower layers (Protocol, Security, Economic) which implement core system functionality, MiddlewareLayer provides higher-level services enabling applications to interact with underlying systems. Unlike ApplicationLayer which provides end-user functionality, MiddlewareLayer provides developer-facing services and integration infrastructure.

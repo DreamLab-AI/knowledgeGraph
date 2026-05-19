@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:ae1e4f2db3c2ad50ad5f27e3fcb9554c2404811375041a77a3bbd96935c2ca71",
+  "title": "Vertex Shader",
+  "slug": "vertex-shader",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vertex-shader",
+  "domain": "spatial-computing",
+  "definition": "Vertex Shader is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu-programming",
+      "label": "GPU Programming"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:8f6afada0f9b97507bb091de02cadc3d0cd47d564d611ed9be90cc339e9e3eb8",
+  "title": "Networking Infrastructure",
+  "slug": "networking-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:networking-infrastructure",
+  "domain": "infrastructure",
+  "definition": "NetworkingInfrastructure is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

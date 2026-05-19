@@ -1,21 +1,244 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#DifferentialPrivacy
-uri:: urn:visionclaw:concept:artificial-intelligence:differential-privacy
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:differential-privacy
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Differential Privacy
-content-hash:: sha256-12-09a8e379c76c
-legacy-term-id:: AI-0416
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#DifferentialPrivacy
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:differential-privacy
 public:: true
+
+# Differential Privacy
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a",
+  "@type": "Page",
+  "vc:slug": "differential-privacy",
+  "title": "Differential Privacy",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:apple-differential-privacy",
+      "vc:label": "Apple Differential Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dwork-et-al-2006",
+      "vc:label": "Dwork et al. (2006)"
+    },
+    {
+      "@id": "urn:visionflow:linked:u-s-census-2020",
+      "vc:label": "U.S. Census 2020"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-09a8e379c76c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#DifferentialPrivacy"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0416"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Differential Privacy"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:differential-privacy"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:differential-privacy"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:differential-privacy",
+  "@type": "OntologyClass",
+  "label": "Differential Privacy",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. This technique provides formal privacy protection through the epsilon (ε) parameter quantifying privacy loss, where smaller ε values indicate stronger privacy guarantees (typically ε ≤ 1.0 for high-privacy scenarios), with differential privacy satisfied when for all datasets D1 and D2 differing by one record and all possible outputs S, P(M(D1) ∈ S) ≤ exp(ε) × P(M(D2) ∈ S). Implementation mechanisms include the Laplace mechanism adding noise proportional to query sensitivity for numeric queries, the Gaussian mechanism suitable for more complex settings with delta (δ) parameter allowing negligible probability of privacy breach, the exponential mechanism for non-numeric outputs selecting results proportional to their utility, and composition theorems tracking cumulative privacy loss across multiple queries (sequential composition where total ε_total = Σε_i, advanced composition providing tighter bounds). The 2024-2025 ",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:differential-privacy:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Apple Differential Privacy]]",
+      "resolved": "urn:visionflow:linked:apple-differential-privacy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dwork et al. (2006)]]",
+      "resolved": "urn:visionflow:linked:dwork-et-al-2006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[U.S. Census 2020]]",
+      "resolved": "urn:visionflow:linked:u-s-census-2020",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. This technique provides formal privacy protection through the epsilon (ε) parameter quantifying privacy loss, where smaller ε values indicate stronger privacy guarantees (typically ε ≤ 1.0 for high-privacy scenarios), with differential privacy satisfied when for all datasets D1 and D2 differing by one record and all possible outputs S, P(M(D1) ∈ S) ≤ exp(ε) × P(M(D2) ∈ S). Implementation mechanisms include the Laplace mechanism adding noise proportional to query sensitivity for numeric queries, the Gaussian mechanism suitable for more complex settings with delta (δ) parameter allowing negligible probability of privacy breach, the exponential mechanism for non-numeric outputs selecting results proportional to their utility, and composition theorems tracking cumulative privacy loss across multiple queries (sequential composition where total ε_total = Σε_i, advanced composition providing tighter bounds). The 2024-2025 period witnessed differential privacy evolve from theoretical framework to practical requirement with the U.S. Census Bureau's 2020 Census deployment demonstrating feasibility at national scale, technology companies including Apple, Microsoft, and Meta deploying differential privacy for telemetry and usage analytics proving strong privacy need not preclude valuable aggregate insights, and academic consensus emerging around epsilon budgets with ε ≤ 1.0 for high-privacy scenarios. Applications span statistical databases enabling privacy-preserving aggregate statistics, machine learning protecting training data through differentially private stochastic gradient descent (DP-SGD), and federated learning scenarios adding noise to model updates before aggregation, though challenges include computational overhead of noise addition, utility degradation particularly for complex queries or small datasets, and privacy budget exhaustion requiring careful allocation across queries.

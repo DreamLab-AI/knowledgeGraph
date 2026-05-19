@@ -1,21 +1,258 @@
-iri:: http://narrativegoldmine.com/infrastructure#SystemInteroperability
-uri:: urn:visionclaw:concept:infrastructure:system-interoperability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:system-interoperability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: System Interoperability
-content-hash:: sha256-12-c73a81b025f5
-legacy-term-id:: NGM-7039
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#SystemInteroperability
+legacy_uri:: urn:visionclaw:concept:infrastructure:system-interoperability
 public:: true
+
+# System Interoperability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6",
+  "@type": "Page",
+  "vc:slug": "system-interoperability",
+  "title": "System Interoperability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:common-data-formats",
+      "vc:label": "Common Data Formats"
+    },
+    {
+      "@id": "urn:visionflow:linked:core-technology",
+      "vc:label": "Core Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-connectivity",
+      "vc:label": "Enterprise Connectivity"
+    },
+    {
+      "@id": "urn:visionflow:linked:standard-protocols",
+      "vc:label": "Standard Protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-capability",
+      "vc:label": "System Capability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-sharing",
+      "vc:label": "Data Sharing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:system-integration",
+      "vc:label": "System Integration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c73a81b025f5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#SystemInteroperability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7039"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "System Interoperability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:system-interoperability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:system-interoperability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:system-interoperability",
+  "@type": "OntologyClass",
+  "label": "System Interoperability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:system-capability",
+      "vc:label": "System Capability"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:enterprise-connectivity",
+      "vc:label": "Enterprise Connectivity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-sharing",
+      "vc:label": "Data Sharing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:system-integration",
+      "vc:label": "System Integration"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:common-data-formats",
+      "vc:label": "Common Data Formats"
+    },
+    {
+      "@id": "urn:visionflow:linked:standard-protocols",
+      "vc:label": "Standard Protocols"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:system-interoperability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Common Data Formats]]",
+      "resolved": "urn:visionflow:linked:common-data-formats",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Core Technology]]",
+      "resolved": "urn:visionflow:linked:core-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Enterprise Connectivity]]",
+      "resolved": "urn:visionflow:linked:enterprise-connectivity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Standard Protocols]]",
+      "resolved": "urn:visionflow:linked:standard-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[System Capability]]",
+      "resolved": "urn:visionflow:linked:system-capability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Sharing]]",
+      "resolved": "urn:visionflow:owl:class:data-sharing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[System Integration]]",
+      "resolved": "urn:visionflow:owl:class:system-integration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.

@@ -1,0 +1,648 @@
+{
+  "id": "urn:visionflow:page:1c34f1533cb1544bfc74d2ce0b63ed3ce32d94e883be5e98daf8cb77cb330e69",
+  "title": "AI companions",
+  "slug": "ai-companions",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-companions",
+  "domain": "artificial-intelligence",
+  "definition": "**AI companions** are a class of consumer-facing conversational artificial intelligence systems explicitly designed and marketed to form ongoing affective, social, and parasocial relationships with individual human users\u2014distinct from task-oriented assistants (Siri, Alexa, Google Assistant) that optimise instrumental utility, distinct from general-purpose chatbots (ChatGPT, Claude, Gemini) that prioritise information retrieval and task completion, and distinct from clinical therapy bots (Woebot Health, Wysa) that deliver structured psychotherapeutic protocols under medical-device or wellness-tool framings, AI companions instead optimise for emotional engagement, persistent memory of personal disclosure, role-play depth, perceived warmth, and the user's subjective sense of being heard, known, and accompanied, typically combining a large language model backbone (often a fine-tuned variant of LLaMA, Mistral, GPT-class, or a proprietary model) with custom RLHF for affective tone, retrieval-augmented long-term memory tracking biographical facts and relationship history across thousands of turns, persona/character scaffolding (user-defined or platform-curated avatars with fixed names, ba",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
+      "id": "urn:visionflow:linked:consumer-ai-product",
+      "label": "Consumer AI Product"
+    },
+    {
+      "id": "urn:visionflow:linked:large-language-model-application",
+      "label": "Large Language Model Application"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:affective-tone-module",
+        "label": "Affective Tone Module"
+      },
+      {
+        "id": "urn:visionflow:linked:avatar-renderer",
+        "label": "Avatar Renderer"
+      },
+      {
+        "id": "urn:visionflow:linked:content-moderation-pipeline",
+        "label": "Content Moderation Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:long-term-memory-store",
+        "label": "Long-Term Memory Store"
+      },
+      {
+        "id": "urn:visionflow:linked:persona-system",
+        "label": "Persona System"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-filter",
+        "label": "Safety Filter"
+      },
+      {
+        "id": "urn:visionflow:linked:subscription-paywall",
+        "label": "Subscription Paywall"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-synthesis-module",
+        "label": "Voice Synthesis Module"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-inference-capacity",
+        "label": "GPU Inference Capacity"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:user-authentication",
+        "label": "User Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:creative-collaboration",
+        "label": "Creative Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:elder-companionship",
+        "label": "Elder Companionship"
+      },
+      {
+        "id": "urn:visionflow:linked:emotional-support",
+        "label": "Emotional Support"
+      },
+      {
+        "id": "urn:visionflow:linked:language-practice",
+        "label": "Language Practice"
+      },
+      {
+        "id": "urn:visionflow:linked:loneliness-mitigation",
+        "label": "Loneliness Mitigation"
+      },
+      {
+        "id": "urn:visionflow:linked:parasocial-bonding",
+        "label": "Parasocial Bonding"
+      },
+      {
+        "id": "urn:visionflow:linked:relationship-simulation",
+        "label": "Relationship Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:role-play",
+        "label": "Role-Play"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:age-gating",
+        "label": "Age Gating"
+      },
+      {
+        "id": "urn:visionflow:linked:engagement-optimisation",
+        "label": "Engagement Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-retrieval",
+        "label": "Memory Retrieval"
+      },
+      {
+        "id": "urn:visionflow:linked:persona-conditioning",
+        "label": "Persona Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:sentiment-tracking",
+        "label": "Sentiment Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "affective-computing-domain",
+      "label": "AffectiveComputingDomain"
+    },
+    {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
+      "slug": "affective-tone-module",
+      "label": "Affective Tone Module"
+    },
+    {
+      "slug": "age-gating",
+      "label": "Age Gating"
+    },
+    {
+      "slug": "ai-assistant",
+      "label": "AI Assistant"
+    },
+    {
+      "slug": "appfigures-tech-crunch-2025-ai-companion-app-revenue",
+      "label": "Appfigures TechCrunch 2025 AI Companion App Revenue"
+    },
+    {
+      "slug": "artificial-intimacy",
+      "label": "Artificial Intimacy"
+    },
+    {
+      "slug": "avatar-renderer",
+      "label": "Avatar Renderer"
+    },
+    {
+      "slug": "bereavement-processing",
+      "label": "Bereavement Processing"
+    },
+    {
+      "slug": "brandtzaeg-skjuve-folstad-2022-my-ai-friend-hcr",
+      "label": "Brandtzaeg Skjuve Folstad 2022 My AI Friend HCR"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "cloud-inference-infrastructure",
+      "label": "Cloud Inference Infrastructure"
+    },
+    {
+      "slug": "consumer-ai-product",
+      "label": "Consumer AI Product"
+    },
+    {
+      "slug": "consumer-aidomain",
+      "label": "ConsumerAIDomain"
+    },
+    {
+      "slug": "content-moderation-pipeline",
+      "label": "Content Moderation Pipeline"
+    },
+    {
+      "slug": "conversational-aidomain",
+      "label": "ConversationalAIDomain"
+    },
+    {
+      "slug": "creative-collaboration",
+      "label": "Creative Collaboration"
+    },
+    {
+      "slug": "creative-writing",
+      "label": "Creative Writing"
+    },
+    {
+      "slug": "customer-service-bot",
+      "label": "Customer Service Bot"
+    },
+    {
+      "slug": "danaher-2019-automation-and-utopia",
+      "label": "Danaher 2019 Automation and Utopia"
+    },
+    {
+      "slug": "de-freitas-et-al-2024-hbs-ai-companions",
+      "label": "De Freitas et al 2024 HBS AI Companions"
+    },
+    {
+      "slug": "dementia-engagement",
+      "label": "Dementia Engagement"
+    },
+    {
+      "slug": "diffusion-image-generation",
+      "label": "Diffusion Image Generation"
+    },
+    {
+      "slug": "elder-companionship",
+      "label": "Elder Companionship"
+    },
+    {
+      "slug": "embedding-search",
+      "label": "Embedding Search"
+    },
+    {
+      "slug": "emotional-support",
+      "label": "Emotional Support"
+    },
+    {
+      "slug": "engagement-optimisation",
+      "label": "Engagement Optimisation"
+    },
+    {
+      "slug": "eu-regulation-2024-1689-ai-act-articles-5-and-50",
+      "label": "EU Regulation 2024-1689 AI Act Articles 5 and 50"
+    },
+    {
+      "slug": "fan-fiction",
+      "label": "Fan Fiction"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "ftc-ai-enforcement",
+      "label": "FTC AI Enforcement"
+    },
+    {
+      "slug": "garante-italy-provvedimento-10130115-luka-inc-2025",
+      "label": "Garante Italy Provvedimento 10130115 Luka Inc 2025"
+    },
+    {
+      "slug": "garcia-senate-judiciary-testimony-september-2025",
+      "label": "Garcia Senate Judiciary Testimony September 2025"
+    },
+    {
+      "slug": "garcia-v-character-technologies-2024-2026-6-24-cv-01903",
+      "label": "Garcia v Character Technologies 2024-2026 6:24-cv-01903"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "general-purpose-chatbot",
+      "label": "General-Purpose Chatbot"
+    },
+    {
+      "slug": "goodfellow-et-al-2014-referenced-from-generative-ai-substrate",
+      "label": "Goodfellow et al. 2014 \u2014 referenced from generative-AI substrate"
+    },
+    {
+      "slug": "gpu-inference-capacity",
+      "label": "GPU Inference Capacity"
+    },
+    {
+      "slug": "horton-wohl-1956-parasocial-interaction-psychiatry",
+      "label": "Horton Wohl 1956 Parasocial Interaction Psychiatry"
+    },
+    {
+      "slug": "human-ai-interaction",
+      "label": "Human-AI Interaction"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "laestadius-et-al-2024-replika-erp-new-media-society",
+      "label": "Laestadius et al 2024 Replika ERP New Media Society"
+    },
+    {
+      "slug": "language-practice",
+      "label": "Language Practice"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "large-language-model-application",
+      "label": "Large Language Model Application"
+    },
+    {
+      "slug": "live2-d-animation",
+      "label": "Live2D Animation"
+    },
+    {
+      "slug": "loneliness-epidemic",
+      "label": "Loneliness Epidemic"
+    },
+    {
+      "slug": "loneliness-mitigation",
+      "label": "Loneliness Mitigation"
+    },
+    {
+      "slug": "long-term-memory-store",
+      "label": "Long-Term Memory Store"
+    },
+    {
+      "slug": "maples-cerit-vishwanath-pea-2024-stanford-replika-npj",
+      "label": "Maples Cerit Vishwanath Pea 2024 Stanford Replika npj"
+    },
+    {
+      "slug": "memory-retrieval",
+      "label": "Memory Retrieval"
+    },
+    {
+      "slug": "mental-health-self-help",
+      "label": "Mental Health Self-Help"
+    },
+    {
+      "slug": "mobile-app-distribution",
+      "label": "Mobile App Distribution"
+    },
+    {
+      "slug": "model-deployment-layer",
+      "label": "ModelDeploymentLayer"
+    },
+    {
+      "slug": "neurodivergent-communication",
+      "label": "Neurodivergent Communication"
+    },
+    {
+      "slug": "nyholm-2023-this-is-technology-ethics",
+      "label": "Nyholm 2023 This Is Technology Ethics"
+    },
+    {
+      "slug": "ofcom-guidance",
+      "label": "Ofcom Guidance"
+    },
+    {
+      "slug": "ofcom-investigation-joi-com-2026",
+      "label": "Ofcom Investigation Joi.com 2026"
+    },
+    {
+      "slug": "ofcom-investigation-novi-ltd-2025",
+      "label": "Ofcom Investigation Novi Ltd 2025"
+    },
+    {
+      "slug": "parasocial-bonding",
+      "label": "Parasocial Bonding"
+    },
+    {
+      "slug": "parasocial-interaction",
+      "label": "Parasocial Interaction"
+    },
+    {
+      "slug": "pataranutaporn-liu-finn-maes-2023-priming-ai-belief-nature-mi",
+      "label": "Pataranutaporn Liu Finn Maes 2023 Priming AI Belief Nature MI"
+    },
+    {
+      "slug": "payment-processing",
+      "label": "Payment Processing"
+    },
+    {
+      "slug": "pentina-hancock-xie-2023-replika-parasocial-chb",
+      "label": "Pentina Hancock Xie 2023 Replika Parasocial CHB"
+    },
+    {
+      "slug": "persistent-storage",
+      "label": "Persistent Storage"
+    },
+    {
+      "slug": "persona-conditioning",
+      "label": "Persona Conditioning"
+    },
+    {
+      "slug": "persona-system",
+      "label": "Persona System"
+    },
+    {
+      "slug": "precedence-research-2025-ai-companion-market",
+      "label": "Precedence Research 2025 AI Companion Market"
+    },
+    {
+      "slug": "product-experience-layer",
+      "label": "ProductExperienceLayer"
+    },
+    {
+      "slug": "reeves-nass-1996-the-media-equation",
+      "label": "Reeves Nass 1996 The Media Equation"
+    },
+    {
+      "slug": "relationship-simulation",
+      "label": "Relationship Simulation"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "role-play",
+      "label": "Role-Play"
+    },
+    {
+      "slug": "russell-2019-human-compatible",
+      "label": "Russell 2019 Human Compatible"
+    },
+    {
+      "slug": "russell-2021-bbc-reith-lectures-living-with-ai",
+      "label": "Russell 2021 BBC Reith Lectures Living with AI"
+    },
+    {
+      "slug": "safety-classifiers",
+      "label": "Safety Classifiers"
+    },
+    {
+      "slug": "safety-filter",
+      "label": "Safety Filter"
+    },
+    {
+      "slug": "search-augmented-chatbot",
+      "label": "Search-Augmented Chatbot"
+    },
+    {
+      "slug": "sentiment-tracking",
+      "label": "Sentiment Tracking"
+    },
+    {
+      "slug": "shevlin-2024-artificial-companions-ethics-ai-and-ethics",
+      "label": "Shevlin 2024 Artificial Companions Ethics AI and Ethics"
+    },
+    {
+      "slug": "skjuve-brandtzaeg-folstad-2024-typology-motivations-ijhcs",
+      "label": "Skjuve Brandtzaeg Folstad 2024 Typology Motivations IJHCS"
+    },
+    {
+      "slug": "social-skills-training",
+      "label": "Social Skills Training"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "subscription-paywall",
+      "label": "Subscription Paywall"
+    },
+    {
+      "slug": "surfshark-research-2024-ai-companions-privacy",
+      "label": "Surfshark Research 2024 AI Companions Privacy"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "therapy-chatbot",
+      "label": "Therapy Chatbot"
+    },
+    {
+      "slug": "trust-and-safety-operations",
+      "label": "Trust and Safety Operations"
+    },
+    {
+      "slug": "turkle-2011-alone-together",
+      "label": "Turkle 2011 Alone Together"
+    },
+    {
+      "slug": "turkle-2024-artificial-intimacy-npr-nyt",
+      "label": "Turkle 2024 Artificial Intimacy NPR NYT"
+    },
+    {
+      "slug": "uk-online-safety-act",
+      "label": "UK Online Safety Act"
+    },
+    {
+      "slug": "uk-online-safety-act-2023-c-50",
+      "label": "UK Online Safety Act 2023 c.50"
+    },
+    {
+      "slug": "us-surgeon-general-murthy-2023-loneliness-advisory",
+      "label": "US Surgeon General Murthy 2023 Loneliness Advisory"
+    },
+    {
+      "slug": "user-authentication",
+      "label": "User Authentication"
+    },
+    {
+      "slug": "vallor-2024-the-ai-mirror",
+      "label": "Vallor 2024 The AI Mirror"
+    },
+    {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
+    },
+    {
+      "slug": "voice-synthesis-module",
+      "label": "Voice Synthesis Module"
+    },
+    {
+      "slug": "weizenbaum-1966-eliza-cacm",
+      "label": "Weizenbaum 1966 ELIZA CACM"
+    },
+    {
+      "slug": "weizenbaum-1976-computer-power-and-human-reason",
+      "label": "Weizenbaum 1976 Computer Power and Human Reason"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "direct-preference-optimisation",
+      "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

@@ -1,21 +1,416 @@
-iri:: http://narrativegoldmine.com/blockchain#BlockchainCompliance
-uri:: urn:visionclaw:concept:blockchain:blockchain-compliance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:blockchain-compliance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Blockchain Compliance
-content-hash:: sha256-12-ec78398ca512
-legacy-term-id:: BC-7001
-status:: active
-maturity:: production
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#BlockchainCompliance
+legacy_uri:: urn:visionclaw:concept:blockchain:blockchain-compliance
 public:: true
+
+# Blockchain Compliance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa",
+  "@type": "Page",
+  "vc:slug": "blockchain-compliance",
+  "title": "Blockchain Compliance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:6-amld-directive-2015-849",
+      "vc:label": "6AMLD (Directive 2015/849)"
+    },
+    {
+      "@id": "urn:visionflow:linked:aml-anti-money-laundering",
+      "vc:label": "AML (Anti-Money Laundering)"
+    },
+    {
+      "@id": "urn:visionflow:linked:amla-eu-aml-authority",
+      "vc:label": "AMLA (EU AML Authority)"
+    },
+    {
+      "@id": "urn:visionflow:linked:anti-money-laundering",
+      "vc:label": "Anti-Money Laundering"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-analytics",
+      "vc:label": "Blockchain Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ccpa-california-consumer-privacy-act",
+      "vc:label": "CCPA (California Consumer Privacy Act)"
+    },
+    {
+      "@id": "urn:visionflow:linked:cta-corporate-transparency-act",
+      "vc:label": "CTA (Corporate Transparency Act)"
+    },
+    {
+      "@id": "urn:visionflow:linked:ctf-counter-terrorist-financing",
+      "vc:label": "CTF (Counter-Terrorist Financing)"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identity",
+      "vc:label": "Decentralized Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:fin-cen-financial-crimes-enforcement-network",
+      "vc:label": "FinCEN (Financial Crimes Enforcement Network)"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-regulation",
+      "vc:label": "Financial Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "vc:label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "@id": "urn:visionflow:linked:genius-act-2025",
+      "vc:label": "GENIUS Act (2025)"
+    },
+    {
+      "@id": "urn:visionflow:linked:institutional-adoption",
+      "vc:label": "Institutional Adoption"
+    },
+    {
+      "@id": "urn:visionflow:linked:know-your-customer",
+      "vc:label": "Know Your Customer"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyc-know-your-customer",
+      "vc:label": "KYC (Know Your Customer)"
+    },
+    {
+      "@id": "urn:visionflow:linked:mi-ca-markets-in-crypto-assets",
+      "vc:label": "MiCA (Markets in Crypto-Assets)"
+    },
+    {
+      "@id": "urn:visionflow:linked:sec-securities-and-exchange-commission",
+      "vc:label": "SEC (Securities and Exchange Commission)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-technology",
+      "vc:label": "Regulatory Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ec78398ca512"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#BlockchainCompliance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-7001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Blockchain Compliance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-compliance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-compliance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:blockchain-compliance",
+  "@type": "OntologyClass",
+  "label": "Blockchain Compliance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "production",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency and security.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:institutional-adoption",
+      "vc:label": "Institutional Adoption"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-analytics",
+      "vc:label": "Blockchain Analytics"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:linked:anti-money-laundering",
+      "vc:label": "Anti-Money Laundering"
+    },
+    {
+      "@id": "urn:visionflow:linked:know-your-customer",
+      "vc:label": "Know Your Customer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-compliance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[6AMLD (Directive 2015/849)]]",
+      "resolved": "urn:visionflow:linked:6-amld-directive-2015-849",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AML (Anti-Money Laundering)]]",
+      "resolved": "urn:visionflow:linked:aml-anti-money-laundering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AMLA (EU AML Authority)]]",
+      "resolved": "urn:visionflow:linked:amla-eu-aml-authority",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anti-Money Laundering]]",
+      "resolved": "urn:visionflow:linked:anti-money-laundering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Analytics]]",
+      "resolved": "urn:visionflow:linked:blockchain-analytics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CCPA (California Consumer Privacy Act)]]",
+      "resolved": "urn:visionflow:linked:ccpa-california-consumer-privacy-act",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CTA (Corporate Transparency Act)]]",
+      "resolved": "urn:visionflow:linked:cta-corporate-transparency-act",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CTF (Counter-Terrorist Financing)]]",
+      "resolved": "urn:visionflow:linked:ctf-counter-terrorist-financing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Identity]]",
+      "resolved": "urn:visionflow:linked:decentralized-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FinCEN (Financial Crimes Enforcement Network)]]",
+      "resolved": "urn:visionflow:linked:fin-cen-financial-crimes-enforcement-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Regulation]]",
+      "resolved": "urn:visionflow:linked:financial-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR (General Data Protection Regulation)]]",
+      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GENIUS Act (2025)]]",
+      "resolved": "urn:visionflow:linked:genius-act-2025",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Institutional Adoption]]",
+      "resolved": "urn:visionflow:linked:institutional-adoption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Know Your Customer]]",
+      "resolved": "urn:visionflow:linked:know-your-customer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KYC (Know Your Customer)]]",
+      "resolved": "urn:visionflow:linked:kyc-know-your-customer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MiCA (Markets in Crypto-Assets)]]",
+      "resolved": "urn:visionflow:linked:mi-ca-markets-in-crypto-assets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SEC (Securities and Exchange Commission)]]",
+      "resolved": "urn:visionflow:linked:sec-securities-and-exchange-commission",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Verification]]",
+      "resolved": "urn:visionflow:owl:class:identity-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Compliance]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Technology]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency and security.

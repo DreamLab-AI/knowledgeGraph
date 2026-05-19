@@ -1,21 +1,225 @@
-iri:: http://narrativegoldmine.com/metaverse#MedicalImagingAI
-uri:: urn:visionclaw:concept:artificial-intelligence:medical-imaging-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:medical-imaging-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Medical Imaging AI
-content-hash:: sha256-12-cccd669f5312
-legacy-term-id:: AI-0338
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#MedicalImagingAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:medical-imaging-ai
 public:: true
+
+# Medical Imaging AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7",
+  "@type": "Page",
+  "vc:slug": "medical-imaging-ai",
+  "title": "Medical Imaging AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:medical-ai",
+      "vc:label": "Medical AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pathology-ai",
+      "vc:label": "Pathology AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:radiology-ai",
+      "vc:label": "Radiology AI"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cccd669f5312"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#MedicalImagingAI"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0338"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Medical Imaging AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:medical-imaging-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:medical-imaging-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:medical-imaging-ai",
+  "@type": "OntologyClass",
+  "label": "Medical Imaging AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:vision-processing",
+      "vc:label": "Vision Processing"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:medical-imaging-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Medical AI]]",
+      "resolved": "urn:visionflow:owl:class:medical-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Pathology AI]]",
+      "resolved": "urn:visionflow:owl:class:pathology-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Radiology AI]]",
+      "resolved": "urn:visionflow:owl:class:radiology-ai",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.

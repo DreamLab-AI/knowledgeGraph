@@ -1,0 +1,243 @@
+{
+  "id": "urn:visionflow:page:22af670678133bad8a67f6d7094000e749c7e33534ba3cf5f2e6e6b56fe38efe",
+  "title": "Electric Actuator",
+  "slug": "electric-actuator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:electric-actuator",
+  "domain": "robotics",
+  "definition": "Electric actuator converts electrical energy into controlled mechanical motion through electromagnetic forces, providing the primary means of actuation in modern robots. Electric actuators encompass [[Electric Motor]], [[Linear Servo]], and [[Shape Memory Alloy]] devices, offering precise control, efficient energy conversion, and clean operation compared to pneumatic or hydraulic alternatives.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:electromechanical-systems",
+      "label": "Electromechanical Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-actuator",
+      "label": "Robot Actuator"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:mechanical-interface",
+        "label": "Mechanical Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-winding",
+        "label": "Motor Winding"
+      },
+      {
+        "id": "urn:visionflow:linked:output-transmission",
+        "label": "Output Transmission"
+      },
+      {
+        "id": "urn:visionflow:linked:power-electronics",
+        "label": "Power Electronics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:control-signal",
+        "label": "Control Signal"
+      },
+      {
+        "id": "urn:visionflow:linked:electrical-power",
+        "label": "Electrical Power"
+      },
+      {
+        "id": "urn:visionflow:linked:load-support",
+        "label": "Load Support"
+      },
+      {
+        "id": "urn:visionflow:linked:thermal-dissipation",
+        "label": "Thermal Dissipation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-responsiveness",
+        "label": "Dynamic Responsiveness"
+      },
+      {
+        "id": "urn:visionflow:linked:force-exertion",
+        "label": "Force Exertion"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-generation",
+        "label": "Motion Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:precise-control",
+        "label": "Precise Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ac-induction-motors",
+      "label": "AC Induction Motors"
+    },
+    {
+      "slug": "brush-dc-motors",
+      "label": "Brush DC Motors"
+    },
+    {
+      "slug": "brushless-dc-motors",
+      "label": "Brushless DC Motors"
+    },
+    {
+      "slug": "control-signal",
+      "label": "Control Signal"
+    },
+    {
+      "slug": "dynamic-responsiveness",
+      "label": "Dynamic Responsiveness"
+    },
+    {
+      "slug": "electrical-power",
+      "label": "Electrical Power"
+    },
+    {
+      "slug": "electroactive-polymers",
+      "label": "Electroactive Polymers"
+    },
+    {
+      "slug": "electromechanical-systems",
+      "label": "Electromechanical Systems"
+    },
+    {
+      "slug": "energy-constrained-robots",
+      "label": "Energy-Constrained Robots"
+    },
+    {
+      "slug": "force-exertion",
+      "label": "Force Exertion"
+    },
+    {
+      "slug": "gearboxes",
+      "label": "Gearboxes"
+    },
+    {
+      "slug": "linear-actuators",
+      "label": "Linear Actuators"
+    },
+    {
+      "slug": "linear-servo",
+      "label": "Linear Servo"
+    },
+    {
+      "slug": "load-support",
+      "label": "Load Support"
+    },
+    {
+      "slug": "mechanical-coupling",
+      "label": "Mechanical Coupling"
+    },
+    {
+      "slug": "mechanical-interface",
+      "label": "Mechanical Interface"
+    },
+    {
+      "slug": "motion-generation",
+      "label": "Motion Generation"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "Motor Driver"
+    },
+    {
+      "slug": "motor-winding",
+      "label": "Motor Winding"
+    },
+    {
+      "slug": "output-transmission",
+      "label": "Output Transmission"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
+      "slug": "precise-control",
+      "label": "Precise Control"
+    },
+    {
+      "slug": "pwm",
+      "label": "PWM"
+    },
+    {
+      "slug": "servo-amplifiers",
+      "label": "Servo Amplifiers"
+    },
+    {
+      "slug": "shape-memory-alloy",
+      "label": "Shape Memory Alloy"
+    },
+    {
+      "slug": "spring-loaded-mechanisms",
+      "label": "Spring-Loaded Mechanisms"
+    },
+    {
+      "slug": "stepper-motors",
+      "label": "Stepper Motors"
+    },
+    {
+      "slug": "thermal-dissipation",
+      "label": "Thermal Dissipation"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "robot-actuator",
+      "label": "Robot Actuator"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "servo-control",
+      "label": "Servo Control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "electric-linear-actuator",
+      "label": "Electric Linear Actuator"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    }
+  ]
+}

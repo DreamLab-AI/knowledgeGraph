@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:8d61a0856d1af1435642dee62d50589d0886ebd6d8ac8b97af91f556c1fd3ecc",
+  "title": "Psychological Research",
+  "slug": "psychological-research",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:psychological-research",
+  "domain": "spatial-computing",
+  "definition": "Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:research-methods",
+      "label": "Research Methods"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:evidence-based-vr-treatment",
+        "label": "Evidence Based VR Treatment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "evidence-based-vr-treatment",
+      "label": "Evidence Based VR Treatment"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "research-methods",
+      "label": "Research Methods"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-psychology-profile",
+      "label": "Metaverse Psychology Profile"
+    }
+  ]
+}

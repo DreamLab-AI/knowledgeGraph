@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44",
+  "title": "ETSI Domain: Data Management + Cultural Heritage",
+  "slug": "etsi-domain-data-management-cultural-heritage",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-data-management-cultural-heritage",
+  "domain": "infrastructure",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing data preservation and management systems for cultural heritage digitisation, archival, and accessibility.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:heritage-database",
+        "label": "Heritage Database"
+      },
+      {
+        "id": "urn:visionflow:linked:preservation-system",
+        "label": "Preservation System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-archive",
+        "label": "Digital Archive"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cultural-heritage-digitization",
+        "label": "Cultural Heritage Digitization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:educational-outreach",
+        "label": "Educational Outreach"
+      },
+      {
+        "id": "urn:visionflow:linked:long-term-preservation",
+        "label": "Long-term Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:public-access",
+        "label": "Public Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cultural-heritage-digitization",
+      "label": "Cultural Heritage Digitization"
+    },
+    {
+      "slug": "educational-outreach",
+      "label": "Educational Outreach"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "heritage-database",
+      "label": "Heritage Database"
+    },
+    {
+      "slug": "long-term-preservation",
+      "label": "Long-term Preservation"
+    },
+    {
+      "slug": "metadata-schemas",
+      "label": "Metadata Schemas"
+    },
+    {
+      "slug": "preservation-system",
+      "label": "Preservation System"
+    },
+    {
+      "slug": "public-access",
+      "label": "Public Access"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "archival-standards",
+      "label": "Archival Standards"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

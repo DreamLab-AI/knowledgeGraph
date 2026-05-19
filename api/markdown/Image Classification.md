@@ -1,21 +1,288 @@
-iri:: http://narrativegoldmine.com/metaverse#ImageClassification
-uri:: urn:visionclaw:concept:artificial-intelligence:image-classification
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:image-classification
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Image Classification
-content-hash:: sha256-12-a6462e8711c9
-legacy-term-id:: AI-0357
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ImageClassification
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:image-classification
 public:: true
+
+# Image Classification
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:68212577c2bb67d4808183bb0e4ee0a6cf3ecb3fc0b3c43867435f56fc268912",
+  "@type": "Page",
+  "vc:slug": "image-classification",
+  "title": "Image Classification",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:automation",
+      "vc:label": "automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation",
+      "vc:label": "documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimization",
+      "vc:label": "optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:presentation",
+      "vc:label": "presentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:taleb2012antifragile",
+      "vc:label": "taleb2012antifragile"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "computer vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:landscape",
+      "vc:label": "Landscape"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "machine learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-video",
+      "vc:label": "Proprietary Video"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a6462e8711c9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ImageClassification"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0357"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Image Classification"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:image-classification"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:image-classification"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:68212577c2bb67d4808183bb0e4ee0a6cf3ecb3fc0b3c43867435f56fc268912@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:image-classification",
+  "@type": "OntologyClass",
+  "label": "Image Classification",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:68212577c2bb67d4808183bb0e4ee0a6cf3ecb3fc0b3c43867435f56fc268912"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:68212577c2bb67d4808183bb0e4ee0a6cf3ecb3fc0b3c43867435f56fc268912@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:image-classification:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:68212577c2bb67d4808183bb0e4ee0a6cf3ecb3fc0b3c43867435f56fc268912"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[automation]]",
+      "resolved": "urn:visionflow:linked:automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[documentation]]",
+      "resolved": "urn:visionflow:linked:documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[optimization]]",
+      "resolved": "urn:visionflow:linked:optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[presentation]]",
+      "resolved": "urn:visionflow:linked:presentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[taleb2012antifragile]]",
+      "resolved": "urn:visionflow:linked:taleb2012antifragile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transfer Learning]]",
+      "resolved": "urn:visionflow:linked:transfer-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[computer vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Landscape]]",
+      "resolved": "urn:visionflow:owl:class:landscape",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Video]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-video",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:68212577c2bb67d4808183bb0e4ee0a6cf3ecb3fc0b3c43867435f56fc268912@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.

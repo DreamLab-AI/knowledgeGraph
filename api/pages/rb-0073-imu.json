@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:6f3472ed2dcbdc41b33921c05073d2a1e0e4116b4276b441a95c8dcc236c64af",
+  "title": "rb 0073 imu",
+  "slug": "rb-0073-imu",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0073-imu",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

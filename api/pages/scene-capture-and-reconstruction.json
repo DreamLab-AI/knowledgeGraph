@@ -1,0 +1,555 @@
+{
+  "id": "urn:visionflow:page:18a3ca556feb01726f38c4206fe81da19e8ec9a15605c504eea443b525af1f74",
+  "title": "Scene Capture and Reconstruction",
+  "slug": "scene-capture-and-reconstruction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scene-capture-and-reconstruction",
+  "domain": "computer-vision",
+  "definition": "Scene Capture and Reconstruction is a fundamental computer-vision and spatial-computing discipline concerned with recovering complete geometric, radiometric, and semantic representations of physical environments from sensor observations \u2014 primarily calibrated multi-view photographs, RGB-D frames, LiDAR point clouds, or combinations thereof \u2014 spanning a spectrum of algorithmic families: classical photogrammetric Structure-from-Motion (SfM) pipelines (COLMAP Sch\u00f6nberger & Frahm 2016 applying exhaustive SIFT feature matching, incremental bundle adjustment, and dense Multi-View Stereo to produce textured mesh models deployed at survey, archaeological, and forensic scale); commercial photogrammetry platforms (RealityCapture \u2014 acquired by Epic Games in 2023 \u2014 achieving photorealistic mesh-and-texture output from thousands of images in under an hour on consumer GPU hardware with LiDAR fusion capability; Agisoft Metashape used across 15,000+ surveying, cultural-heritage, and AEC installations globally; Polycam iPhone/iPad LiDAR app with 5M+ downloads offering one-tap NeRF and Gaussian Splat export; Luma AI Genie offering browser-based NeRF capture and the world's first commercially availab",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "computer-vision"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:differentiable-renderer",
+        "label": "Differentiable Renderer"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-extraction",
+        "label": "Mesh Extraction"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
+        "id": "urn:visionflow:linked:signed-distance-function",
+        "label": "Signed Distance Function"
+      },
+      {
+        "id": "urn:visionflow:linked:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:volume-rendering",
+        "label": "Volume Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:visionflow:owl:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:visionflow:linked:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-view-images",
+        "label": "Multi-View Images"
+      },
+      {
+        "id": "urn:visionflow:owl:class:camera-parameters",
+        "label": "Camera Parameters"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:surgical-navigation",
+        "label": "Surgical Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-dasset",
+        "label": "3DAsset"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ar-technology",
+        "label": "AR Technology"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:visionflow:linked:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:gaussian-splatting-rasterisation",
+        "label": "Gaussian Splatting Rasterisation"
+      },
+      {
+        "id": "urn:visionflow:linked:marching-cubes",
+        "label": "Marching Cubes"
+      },
+      {
+        "id": "urn:visionflow:linked:signed-distance-function",
+        "label": "Signed Distance Function"
+      },
+      {
+        "id": "urn:visionflow:linked:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:volume-rendering-integral",
+        "label": "Volume Rendering Integral"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agisoft-metashape",
+      "label": "Agisoft Metashape"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "barron-et-al-2022-mip-ne-rf-360-cvpr",
+      "label": "Barron et al. 2022 Mip-NeRF-360 CVPR"
+    },
+    {
+      "slug": "barron-et-al-2023-zip-ne-rf-iccv",
+      "label": "Barron et al. 2023 Zip-NeRF ICCV"
+    },
+    {
+      "slug": "bundle-adjustment",
+      "label": "Bundle Adjustment"
+    },
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "chen-et-al-2022-tenso-rf-eccv",
+      "label": "Chen et al. 2022 TensoRF ECCV"
+    },
+    {
+      "slug": "colmap",
+      "label": "COLMAP"
+    },
+    {
+      "slug": "cultural-heritage-preservation",
+      "label": "Cultural Heritage Preservation"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "differentiable-renderer",
+      "label": "Differentiable Renderer"
+    },
+    {
+      "slug": "differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "slug": "eccv",
+      "label": "ECCV"
+    },
+    {
+      "slug": "feature-matching",
+      "label": "Feature Matching"
+    },
+    {
+      "slug": "fei-et-al-2024-3-dgs-survey-ieee-tvcg",
+      "label": "Fei et al. 2024 3DGS Survey IEEE TVCG"
+    },
+    {
+      "slug": "gao-et-al-2024-ne-rf-survey-ieee-tpami",
+      "label": "Gao et al. 2024 NeRF Survey IEEE TPAMI"
+    },
+    {
+      "slug": "gaussian-splatting-rasterisation",
+      "label": "Gaussian Splatting Rasterisation"
+    },
+    {
+      "slug": "generative-ai-3-d",
+      "label": "Generative AI 3D"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "iccv",
+      "label": "ICCV"
+    },
+    {
+      "slug": "iso-19157-geographic-information-data-quality",
+      "label": "ISO 19157 Geographic Information Data Quality"
+    },
+    {
+      "slug": "iso-19157-geospatial-data-quality",
+      "label": "ISO 19157 Geospatial Data Quality"
+    },
+    {
+      "slug": "keetha-et-al-2024-spla-tam-cvpr",
+      "label": "Keetha et al. 2024 SplaTAM CVPR"
+    },
+    {
+      "slug": "kerbl-2023-reality-capture-epic-games",
+      "label": "Kerbl 2023 RealityCapture Epic Games"
+    },
+    {
+      "slug": "kerbl-et-al-2023-3-d-gaussian-splatting-siggraph",
+      "label": "Kerbl et al. 2023 3D Gaussian Splatting SIGGRAPH"
+    },
+    {
+      "slug": "kerr-et-al-2023-lerf-iccv",
+      "label": "Kerr et al. 2023 LERF ICCV"
+    },
+    {
+      "slug": "leroy-et-al-2024-mast3-r-eccv",
+      "label": "Leroy et al. 2024 MASt3R ECCV"
+    },
+    {
+      "slug": "li-dar-only-mapping",
+      "label": "LiDAR-Only Mapping"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "lorensen-and-cline-1987-marching-cubes-siggraph",
+      "label": "Lorensen & Cline 1987 Marching Cubes SIGGRAPH"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
+      "slug": "luma-ai-2024-genie",
+      "label": "Luma AI 2024 Genie"
+    },
+    {
+      "slug": "m-ller-et-al-2022-instant-ngp-siggraph",
+      "label": "M\u00fcller et al. 2022 Instant-NGP SIGGRAPH"
+    },
+    {
+      "slug": "manual-3-d-modelling",
+      "label": "Manual 3D Modelling"
+    },
+    {
+      "slug": "marching-cubes",
+      "label": "Marching Cubes"
+    },
+    {
+      "slug": "mesh-extraction",
+      "label": "Mesh Extraction"
+    },
+    {
+      "slug": "mildenhall-et-al-2020-ne-rf-eccv",
+      "label": "Mildenhall et al. 2020 NeRF ECCV"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "multi-view-images",
+      "label": "Multi-View Images"
+    },
+    {
+      "slug": "multi-view-stereo",
+      "label": "Multi-View Stereo"
+    },
+    {
+      "slug": "ne-rfstudio",
+      "label": "NeRFstudio"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "neural-rendering-domain",
+      "label": "Neural Rendering Domain"
+    },
+    {
+      "slug": "newcombe-et-al-2011-kinect-fusion-ismar",
+      "label": "Newcombe et al. 2011 KinectFusion ISMAR"
+    },
+    {
+      "slug": "numerical-optimisation",
+      "label": "Numerical Optimisation"
+    },
+    {
+      "slug": "polycam",
+      "label": "Polycam"
+    },
+    {
+      "slug": "projective-geometry",
+      "label": "Projective Geometry"
+    },
+    {
+      "slug": "reality-capture",
+      "label": "RealityCapture"
+    },
+    {
+      "slug": "salas-moreno-et-al-2013-slam-cvpr",
+      "label": "Salas-Moreno et al. 2013 SLAM++ CVPR"
+    },
+    {
+      "slug": "sch-nberger-and-frahm-2016-colmap-cvpr",
+      "label": "Sch\u00f6nberger & Frahm 2016 COLMAP CVPR"
+    },
+    {
+      "slug": "sch-nberger-et-al-2016-colmap-mvs-eccv",
+      "label": "Sch\u00f6nberger et al. 2016 COLMAP MVS ECCV"
+    },
+    {
+      "slug": "siggraph",
+      "label": "SIGGRAPH"
+    },
+    {
+      "slug": "signed-distance-function",
+      "label": "Signed Distance Function"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure from Motion"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure-from-Motion"
+    },
+    {
+      "slug": "sucar-et-al-2021-i-map-iccv",
+      "label": "Sucar et al. 2021 iMAP ICCV"
+    },
+    {
+      "slug": "surgical-navigation",
+      "label": "Surgical Navigation"
+    },
+    {
+      "slug": "tancik-et-al-2023-ne-rfstudio-siggraph",
+      "label": "Tancik et al. 2023 NeRFstudio SIGGRAPH"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    },
+    {
+      "slug": "volume-rendering-integral",
+      "label": "Volume Rendering Integral"
+    },
+    {
+      "slug": "wang-et-al-2021-neu-s-neur-ips",
+      "label": "Wang et al. 2021 NeuS NeurIPS"
+    },
+    {
+      "slug": "wang-et-al-2024-dust3-r-cvpr",
+      "label": "Wang et al. 2024 DUSt3R CVPR"
+    },
+    {
+      "slug": "wu-et-al-2024-4-dgs-cvpr",
+      "label": "Wu et al. 2024 4DGS CVPR"
+    },
+    {
+      "slug": "xie-et-al-2024-phys-gaussian-cvpr",
+      "label": "Xie et al. 2024 PhysGaussian CVPR"
+    },
+    {
+      "slug": "yariv-et-al-2021-vol-sdf-neur-ips",
+      "label": "Yariv et al. 2021 VolSDF NeurIPS"
+    },
+    {
+      "slug": "yariv-et-al-2023-baked-sdf-siggraph",
+      "label": "Yariv et al. 2023 BakedSDF SIGGRAPH"
+    },
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "3-dasset",
+      "label": "3DAsset"
+    },
+    {
+      "slug": "3-dcontent-pipeline",
+      "label": "3DContentPipeline"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "computer-vision-system",
+      "label": "Computer Vision System"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "etsi-domain-immersive-reality-capture-crossover",
+      "label": "ETSI Domain Immersive + Reality Capture Crossover"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "human-tracking-and-slam-capture",
+      "label": "Human tracking and SLAM capture"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "Procedural Generation"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "backlinks": []
+}

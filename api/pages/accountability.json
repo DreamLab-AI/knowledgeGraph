@@ -1,0 +1,182 @@
+{
+  "id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4",
+  "title": "Accountability",
+  "slug": "accountability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accountability",
+  "domain": "artificial-intelligence",
+  "definition": "The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:explainability-ai-0063",
+        "label": "Explainability (AI-0063)"
+      },
+      {
+        "id": "urn:visionflow:linked:transparency-ai-0062",
+        "label": "Transparency (AI-0062)"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-management-ai-0078",
+        "label": "Risk Management (AI-0078)"
+      },
+      {
+        "id": "urn:visionflow:linked:trust",
+        "label": "Trust"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "explainability-ai-0063",
+      "label": "Explainability (AI-0063)"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "iso-iec-38500-2024",
+      "label": "ISO/IEC 38500:2024"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "risk-management-ai-0078",
+      "label": "Risk Management (AI-0078)"
+    },
+    {
+      "slug": "transparency-ai-0062",
+      "label": "Transparency (AI-0062)"
+    },
+    {
+      "slug": "trust",
+      "label": "Trust"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "stakeholder",
+      "label": "Stakeholder"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust and Governance Domain"
+    }
+  ]
+}

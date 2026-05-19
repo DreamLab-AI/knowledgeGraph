@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1fc01d8033cf8cb1e8bbef65d8a26f15a99d717736e7167f87b88fcfae2f7525",
+  "title": "Financialised Agentic Memetics",
+  "slug": "financialised-agentic-memetics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:financialised-agentic-memetics",
+  "domain": "artificial-intelligence",
+  "definition": "Financialised Agentic Memetics is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-nihilism",
+      "label": "Financial Nihilism"
+    }
+  ],
+  "backlinks": []
+}

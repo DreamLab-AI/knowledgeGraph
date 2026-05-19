@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:9cab062d8041eda2463b6fdeebc5f0abcdd195f726e3f7f6703b2890d98553a2",
+  "title": "List Of Agent Projects",
+  "slug": "list-of-agent-projects",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:list-of-agent-projects",
+  "domain": "artificial-intelligence",
+  "definition": "List Of Agent Projects is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

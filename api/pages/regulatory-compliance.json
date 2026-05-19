@@ -1,0 +1,284 @@
+{
+  "id": "urn:visionflow:page:8965f5c762974b4bba8d4b30e329a8923c5b3817f1006c340bde90274531ee3d",
+  "title": "Regulatory Compliance",
+  "slug": "regulatory-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:regulatory-compliance",
+  "domain": "artificial-intelligence",
+  "definition": "Regulatory Compliance in AI contexts refers to the adherence to legal requirements, statutory obligations, and regulatory standards governing the development, deployment, and operation of artificial intelligence systems within specific jurisdictions or sectors. As AI systems increasingly influence consequential decisions and autonomous operations, governments and regulatory bodies worldwide have established frameworks requiring organizations to demonstrate compliance with requirements addressing transparency, fairness, privacy, safety, and accountability. Regulatory compliance for AI encompasses horizontal regulations applying across sectors (such as GDPR for data protection, EU AI Act for high-risk AI systems), vertical sector-specific requirements (such as medical device regulations for healthcare AI, financial services regulations for algorithmic trading), and emerging AI-specific frameworks establishing risk-based obligations. Compliance requires organizations to implement governance structures, conduct impact assessments, maintain documentation and audit trails, provide transparency to users, establish human oversight mechanisms, and demonstrate ongoing monitoring for regulato",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-governance-principle",
+      "label": "AI Governance Principle"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance-principle",
+      "label": "AI Governance Principle"
+    },
+    {
+      "slug": "algorithmic-impact-assessment",
+      "label": "Algorithmic Impact Assessment"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "eu-ai-act-compliance",
+      "label": "EU AI Act Compliance"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "human-oversight-requirement",
+      "label": "Human Oversight Requirement"
+    },
+    {
+      "slug": "ieee-7000-model-process",
+      "label": "IEEE 7000 Model Process"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "sector-specific-compliance",
+      "label": "Sector-Specific Compliance"
+    },
+    {
+      "slug": "transparency-obligation",
+      "label": "Transparency Obligation"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    },
+    {
+      "slug": "digital-well-being-index",
+      "label": "Digital Well-Being Index"
+    },
+    {
+      "slug": "emc-standard",
+      "label": "EMC Standard"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "iso-standards",
+      "label": "Iso Standards"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to Be Forgotten"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "standardized-asset-classification",
+      "label": "Standardized Asset Classification"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust and Governance Domain"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

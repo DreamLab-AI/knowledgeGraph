@@ -1,0 +1,660 @@
+{
+  "id": "urn:visionflow:page:c6fbd0ee8bd4ed73f9184f79e3df2286898ace51451d92d335ca849765207616",
+  "title": "Deepfakes and fraudulent content",
+  "slug": "deepfakes-and-fraudulent-content",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+  "domain": "society",
+  "definition": "**Deepfakes and fraudulent content** denote synthetic audio, image, video and text artefacts produced by deep generative models (notably GAN-based face-swap pipelines DeepFaceLab/Faceswap/StyleGAN3, diffusion-based face-conditioning ReActor/Roop/InstantID/PhotoMaker/IP-Adapter-Face, lip-sync video generators Wav2Lip/MuseTalk/LatentSync/KEEP/HeyGen-EMO real-time avatars, voice cloning systems ElevenLabs/Resemble AI/PlayHT/OpenAI Voice Engine/Cartesia Sonic/Meta Voicebox, and full-body avatar platforms DeepMotion/Synthesia/HeyGen/D-ID/Hour One) deployed without consent or disclosure to impersonate real persons, fabricate non-consensual intimate imagery (NCII), execute social-engineering attacks against enterprises and consumers, manipulate elections, and produce fraudulent identity documents \u2014 emerging as a distinct socio-technical threat category in late 2017 when the r/deepfakes subreddit (banned February 2018) demonstrated that autoencoder face-swap pipelines previously confined to VFX studios could be replicated on consumer GPUs, accelerated through the 2018-2022 release of open-source pipelines DeepFaceLab (sf-editor1) and FaceSwap (deepfakes/faceswap) trained on celebrity datas",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:generative-ai-misuse",
+      "label": "Generative AI Misuse"
+    },
+    {
+      "id": "urn:visionflow:linked:identity-fraud",
+      "label": "Identity Fraud"
+    },
+    {
+      "id": "urn:visionflow:linked:information-integrity-threat",
+      "label": "Information Integrity Threat"
+    },
+    {
+      "id": "urn:visionflow:linked:online-harm",
+      "label": "Online Harm"
+    },
+    {
+      "id": "urn:visionflow:linked:synthetic-media",
+      "label": "Synthetic Media"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:lip-sync-generation",
+        "label": "Lip Sync Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:non-consensual-intimate-imagery",
+        "label": "Non-Consensual Intimate Imagery"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-avatar",
+        "label": "Real-Time Avatar"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-disinformation",
+        "label": "Synthetic Disinformation"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-identity-document",
+        "label": "Synthetic Identity Document"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-clone",
+        "label": "Voice Clone"
+      },
+      {
+        "id": "urn:visionflow:owl:class:face-swap",
+        "label": "Face Swap"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:distribution-platform",
+        "label": "Distribution Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:target-identity-reference",
+        "label": "Target Identity Reference"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:business-email-compromise",
+        "label": "Business Email Compromise"
+      },
+      {
+        "id": "urn:visionflow:linked:election-interference",
+        "label": "Election Interference"
+      },
+      {
+        "id": "urn:visionflow:linked:image-based-sexual-abuse",
+        "label": "Image-Based Sexual Abuse"
+      },
+      {
+        "id": "urn:visionflow:linked:kyc-bypass",
+        "label": "KYC Bypass"
+      },
+      {
+        "id": "urn:visionflow:linked:market-manipulation",
+        "label": "Market Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:reputation-attack",
+        "label": "Reputation Attack"
+      },
+      {
+        "id": "urn:visionflow:linked:romance-fraud",
+        "label": "Romance Fraud"
+      },
+      {
+        "id": "urn:visionflow:linked:social-engineering",
+        "label": "Social Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:audiovisual-forgery",
+        "label": "Audiovisual Forgery"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-impersonation",
+        "label": "Identity Impersonation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-puppetry",
+        "label": "Real-Time Puppetry"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-cloning-attack",
+        "label": "Voice Cloning Attack"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audiovisual-forgery",
+      "label": "Audiovisual Forgery"
+    },
+    {
+      "slug": "authentic-ugc",
+      "label": "Authentic UGC"
+    },
+    {
+      "slug": "business-email-compromise",
+      "label": "Business Email Compromise"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "c2-pa-2024-specification-2-0",
+      "label": "C2PA 2024 Specification 2.0"
+    },
+    {
+      "slug": "cai-coalition-for-content-provenance-and-authenticity",
+      "label": "CAI Coalition for Content Provenance and Authenticity"
+    },
+    {
+      "slug": "cgi-vfx",
+      "label": "CGI VFX"
+    },
+    {
+      "slug": "china-deep-synthesis-provisions",
+      "label": "China Deep Synthesis Provisions"
+    },
+    {
+      "slug": "consensual-avatar",
+      "label": "Consensual Avatar"
+    },
+    {
+      "slug": "content-authenticity",
+      "label": "Content Authenticity"
+    },
+    {
+      "slug": "content-authenticity-domain",
+      "label": "ContentAuthenticityDomain"
+    },
+    {
+      "slug": "content-layer",
+      "label": "ContentLayer"
+    },
+    {
+      "slug": "cyber-security-domain",
+      "label": "CyberSecurityDomain"
+    },
+    {
+      "slug": "d-id",
+      "label": "D-ID"
+    },
+    {
+      "slug": "dathathri-et-al-2024-synth-id-text-nature",
+      "label": "Dathathri et al. 2024 SynthID Text Nature"
+    },
+    {
+      "slug": "deep-face-lab",
+      "label": "DeepFaceLab"
+    },
+    {
+      "slug": "deloitte-deepfake-banking-fraud-forecast-2024",
+      "label": "Deloitte Deepfake Banking Fraud Forecast 2024"
+    },
+    {
+      "slug": "disclosed-synthetic-media",
+      "label": "Disclosed Synthetic Media"
+    },
+    {
+      "slug": "disinformation-campaign",
+      "label": "Disinformation Campaign"
+    },
+    {
+      "slug": "distribution-platform",
+      "label": "Distribution Platform"
+    },
+    {
+      "slug": "dolhansky-et-al-2020-dfdc-dataset",
+      "label": "Dolhansky et al. 2020 DFDC Dataset"
+    },
+    {
+      "slug": "duck-duck-goose",
+      "label": "DuckDuckGoose"
+    },
+    {
+      "slug": "election-integrity",
+      "label": "Election Integrity"
+    },
+    {
+      "slug": "election-interference",
+      "label": "Election Interference"
+    },
+    {
+      "slug": "eleven-labs",
+      "label": "ElevenLabs"
+    },
+    {
+      "slug": "entrust-onfido-2024-identity-fraud-report",
+      "label": "Entrust Onfido 2024 Identity Fraud Report"
+    },
+    {
+      "slug": "eu-ai-act-article-50",
+      "label": "EU AI Act Article 50"
+    },
+    {
+      "slug": "eu-ai-act-regulation-2024-1689-article-50",
+      "label": "EU AI Act Regulation 2024-1689 Article 50"
+    },
+    {
+      "slug": "europol-2022-facing-reality-deepfakes",
+      "label": "Europol 2022 Facing Reality Deepfakes"
+    },
+    {
+      "slug": "face-recognition",
+      "label": "Face Recognition"
+    },
+    {
+      "slug": "fbi-ic3-2024-internet-crime-report",
+      "label": "FBI IC3 2024 Internet Crime Report"
+    },
+    {
+      "slug": "fcc-24-17-a1-ai-robocalls-declaratory-ruling",
+      "label": "FCC-24-17A1 AI Robocalls Declaratory Ruling"
+    },
+    {
+      "slug": "fernandez-et-al-2023-stable-signature-meta",
+      "label": "Fernandez et al. 2023 Stable Signature Meta"
+    },
+    {
+      "slug": "frank-et-al-2020-frequency-analysis-deep-fake",
+      "label": "Frank et al. 2020 Frequency Analysis Deep Fake"
+    },
+    {
+      "slug": "fraud-ecosystem",
+      "label": "Fraud Ecosystem"
+    },
+    {
+      "slug": "generative-ai-misuse",
+      "label": "Generative AI Misuse"
+    },
+    {
+      "slug": "get-real-labs",
+      "label": "Get Real Labs"
+    },
+    {
+      "slug": "goodfellow-et-al-2014-generative-adversarial-nets",
+      "label": "Goodfellow et al. 2014 Generative Adversarial Nets"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "hey-gen",
+      "label": "HeyGen"
+    },
+    {
+      "slug": "hive-ai",
+      "label": "Hive AI"
+    },
+    {
+      "slug": "identity-fraud",
+      "label": "Identity Fraud"
+    },
+    {
+      "slug": "identity-impersonation",
+      "label": "Identity Impersonation"
+    },
+    {
+      "slug": "image-based-sexual-abuse",
+      "label": "Image-Based Sexual Abuse"
+    },
+    {
+      "slug": "influence-operation",
+      "label": "Influence Operation"
+    },
+    {
+      "slug": "information-integrity-domain",
+      "label": "InformationIntegrityDomain"
+    },
+    {
+      "slug": "information-integrity-threat",
+      "label": "Information Integrity Threat"
+    },
+    {
+      "slug": "instant-id",
+      "label": "InstantID"
+    },
+    {
+      "slug": "iso-22144",
+      "label": "ISO 22144"
+    },
+    {
+      "slug": "karras-et-al-2019-style-gan",
+      "label": "Karras et al. 2019 StyleGAN"
+    },
+    {
+      "slug": "korshunov-and-marcel-2018-idiap-deepfake-threat",
+      "label": "Korshunov & Marcel 2018 Idiap Deepfake Threat"
+    },
+    {
+      "slug": "kyc-bypass",
+      "label": "KYC Bypass"
+    },
+    {
+      "slug": "li-et-al-2018-in-ictu-oculi-eye-blinking",
+      "label": "Li et al. 2018 In Ictu Oculi Eye Blinking"
+    },
+    {
+      "slug": "li-et-al-2020-celeb-df",
+      "label": "Li et al. 2020 Celeb-DF"
+    },
+    {
+      "slug": "lip-sync-generation",
+      "label": "Lip Sync Generation"
+    },
+    {
+      "slug": "market-manipulation",
+      "label": "Market Manipulation"
+    },
+    {
+      "slug": "media-forensics",
+      "label": "Media Forensics"
+    },
+    {
+      "slug": "media-layer",
+      "label": "MediaLayer"
+    },
+    {
+      "slug": "microsoft-video-authenticator",
+      "label": "Microsoft Video Authenticator"
+    },
+    {
+      "slug": "non-consensual-intimate-imagery",
+      "label": "Non-Consensual Intimate Imagery"
+    },
+    {
+      "slug": "online-harm",
+      "label": "Online Harm"
+    },
+    {
+      "slug": "online-harms-domain",
+      "label": "OnlineHarmsDomain"
+    },
+    {
+      "slug": "pig-butchering-scam",
+      "label": "Pig-Butchering Scam"
+    },
+    {
+      "slug": "pindrop",
+      "label": "Pindrop"
+    },
+    {
+      "slug": "policy-and-governance-layer",
+      "label": "PolicyAndGovernanceLayer"
+    },
+    {
+      "slug": "prajwal-et-al-2020-wav2-lip",
+      "label": "Prajwal et al. 2020 Wav2Lip"
+    },
+    {
+      "slug": "re-actor",
+      "label": "ReActor"
+    },
+    {
+      "slug": "real-time-avatar",
+      "label": "Real-Time Avatar"
+    },
+    {
+      "slug": "real-time-puppetry",
+      "label": "Real-Time Puppetry"
+    },
+    {
+      "slug": "reality-defender",
+      "label": "Reality Defender"
+    },
+    {
+      "slug": "reputation-attack",
+      "label": "Reputation Attack"
+    },
+    {
+      "slug": "romance-fraud",
+      "label": "Romance Fraud"
+    },
+    {
+      "slug": "rossler-et-al-2019-face-forensics",
+      "label": "Rossler et al. 2019 FaceForensics++"
+    },
+    {
+      "slug": "sensity-ai",
+      "label": "Sensity AI"
+    },
+    {
+      "slug": "sextortion",
+      "label": "Sextortion"
+    },
+    {
+      "slug": "shallowfake",
+      "label": "Shallowfake"
+    },
+    {
+      "slug": "social-engineering",
+      "label": "Social Engineering"
+    },
+    {
+      "slug": "society-and-policy-domain",
+      "label": "SocietyAndPolicyDomain"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "sumsub-identity-fraud-report-2024",
+      "label": "Sumsub Identity Fraud Report 2024"
+    },
+    {
+      "slug": "sumsub-identity-fraud-report-2025",
+      "label": "Sumsub Identity Fraud Report 2025"
+    },
+    {
+      "slug": "suwajanakorn-et-al-2017-synthesizing-obama",
+      "label": "Suwajanakorn et al. 2017 Synthesizing Obama"
+    },
+    {
+      "slug": "synthesia",
+      "label": "Synthesia"
+    },
+    {
+      "slug": "synthetic-disinformation",
+      "label": "Synthetic Disinformation"
+    },
+    {
+      "slug": "synthetic-identity-document",
+      "label": "Synthetic Identity Document"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "take-it-down-act",
+      "label": "TAKE IT DOWN Act"
+    },
+    {
+      "slug": "take-it-down-act-2025",
+      "label": "TAKE IT DOWN Act 2025"
+    },
+    {
+      "slug": "target-identity-reference",
+      "label": "Target Identity Reference"
+    },
+    {
+      "slug": "tian-et-al-2024-emo-alibaba",
+      "label": "Tian et al. 2024 EMO Alibaba"
+    },
+    {
+      "slug": "truepic",
+      "label": "Truepic"
+    },
+    {
+      "slug": "uk-online-safety-act",
+      "label": "UK Online Safety Act"
+    },
+    {
+      "slug": "uk-online-safety-act-2023",
+      "label": "UK Online Safety Act 2023"
+    },
+    {
+      "slug": "verdoliva-2020-media-forensics-deep-fakes-overview",
+      "label": "Verdoliva 2020 Media Forensics DeepFakes Overview"
+    },
+    {
+      "slug": "voice-clone",
+      "label": "Voice Clone"
+    },
+    {
+      "slug": "voice-cloning-attack",
+      "label": "Voice Cloning Attack"
+    },
+    {
+      "slug": "wang-et-al-2024-instant-id",
+      "label": "Wang et al. 2024 InstantID"
+    },
+    {
+      "slug": "wav2-lip",
+      "label": "Wav2Lip"
+    },
+    {
+      "slug": "wen-et-al-2023-tree-ring-watermarks",
+      "label": "Wen et al. 2023 Tree-Ring Watermarks"
+    },
+    {
+      "slug": "yang-et-al-2019-exposing-deep-fakes-inconsistent-head-poses",
+      "label": "Yang et al. 2019 Exposing Deep Fakes Inconsistent Head Poses"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "face-swap",
+      "label": "FaceSwap"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:14d34975efa9f2b7459e5a2b3eed4ae3ca784d4ee2af472367610bdb73545fd5",
+  "title": "Quality Of Service",
+  "slug": "quality-of-service",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quality-of-service",
+  "domain": "infrastructure",
+  "definition": "QualityOfService is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

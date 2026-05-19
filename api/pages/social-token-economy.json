@@ -1,0 +1,155 @@
+{
+  "id": "urn:visionflow:page:b593a994701ace5efad1b480b72bed09c502e154d3f54462ae80638095ed4c87",
+  "title": "Social Token Economy",
+  "slug": "social-token-economy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-token-economy",
+  "domain": "spatial-computing",
+  "definition": "Economic model where communities issue tokens representing reputation, participation value, or creator-fan relationships, enabling decentralized governance and value distribution.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "label": "Virtual Economy Domain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:community-token",
+        "label": "Community Token"
+      },
+      {
+        "id": "urn:visionflow:linked:creator-token",
+        "label": "Creator Token"
+      },
+      {
+        "id": "urn:visionflow:linked:governance-rights",
+        "label": "Governance Rights"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "id": "urn:visionflow:linked:fan-engagement",
+        "label": "Fan Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:value-distribution",
+        "label": "Value Distribution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:community-governance",
+        "label": "Community Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "community-platform",
+      "label": "Community Platform"
+    },
+    {
+      "slug": "community-token",
+      "label": "Community Token"
+    },
+    {
+      "slug": "creator-monetization",
+      "label": "Creator Monetization"
+    },
+    {
+      "slug": "creator-token",
+      "label": "Creator Token"
+    },
+    {
+      "slug": "fan-engagement",
+      "label": "Fan Engagement"
+    },
+    {
+      "slug": "governance-rights",
+      "label": "Governance Rights"
+    },
+    {
+      "slug": "token-economy",
+      "label": "Token Economy"
+    },
+    {
+      "slug": "token-economy-framework-2024",
+      "label": "Token Economy Framework 2024"
+    },
+    {
+      "slug": "value-distribution",
+      "label": "Value Distribution"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "community-governance",
+      "label": "Community Governance"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:f6c83b5568ddfec1907d6fd0b2f3cb813f7378af9ca297362ed02a6bbecfd30a",
+  "title": "Teleoperated Robot",
+  "slug": "teleoperated-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:teleoperated-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

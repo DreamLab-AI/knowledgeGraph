@@ -1,0 +1,210 @@
+{
+  "id": "urn:visionflow:page:7a6686ca2e3476f8181e820a110b86a114abe7ec24de857d54d14babf0a828a7",
+  "title": "Cryptographic Protocol",
+  "slug": "cryptographic-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cryptographic-protocol",
+  "domain": "infrastructure",
+  "definition": "[[Cryptographic-Protocol]] encompasses mathematical frameworks and algorithmic procedures securing [[blockchain]] through cryptographic primitives. Enabling [[Consensus-Protocol|consensus]], privacy-preserving verification, and trustless multi-party computation across [[Convergence]] domains including [[Blockchain]], [[Collaboration]], and [[Digital-Infrastructure]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
+  "qualityScore": 0.55,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:encryption-scheme",
+        "label": "Encryption-Scheme"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital-Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash-Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:blockchain-security",
+        "label": "Blockchain-Security"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preservation",
+        "label": "Privacy-Preservation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "Consensus-Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-security",
+      "label": "Blockchain-Security"
+    },
+    {
+      "slug": "cmac",
+      "label": "CMAC"
+    },
+    {
+      "slug": "ed-dsa",
+      "label": "EdDSA"
+    },
+    {
+      "slug": "encryption-scheme",
+      "label": "Encryption-Scheme"
+    },
+    {
+      "slug": "hmac",
+      "label": "HMAC"
+    },
+    {
+      "slug": "nist-post-quantum-cryptography",
+      "label": "NIST Post-Quantum Cryptography"
+    },
+    {
+      "slug": "post-quantum-cryptography-standards",
+      "label": "Post-Quantum Cryptography Standards"
+    },
+    {
+      "slug": "privacy-preservation",
+      "label": "Privacy-Preservation"
+    },
+    {
+      "slug": "schnorr",
+      "label": "Schnorr"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus-Protocol"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus-Protocol"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control-Algorithm"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic-Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital-Asset"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital-Infrastructure"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital-Signature"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital-Twin"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash-Function"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum-Cryptography"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum-Computing"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

@@ -1,0 +1,880 @@
+{
+  "id": "urn:visionflow:page:9607e69fecde7c4f608c0c8edefb1759a2fa6cd13f877fa419f79c0a81d50850",
+  "title": "Blockchain As A Service",
+  "slug": "blockchain-as-a-service",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-as-a-service",
+  "domain": "blockchain",
+  "definition": "Blockchain as a Service (BaaS) is a managed cloud delivery model in which a third-party provider provisions, operates, and maintains the distributed ledger infrastructure, consensus-node orchestration, cryptographic identity services, smart contract deployment pipelines, and monitoring tooling required to run enterprise blockchain networks\u2014enabling organisations to consume permissioned or public blockchain capabilities through API calls and configuration interfaces without recruiting specialist distributed-systems engineers, purchasing dedicated hardware, or navigating the complex multi-stakeholder governance required to establish consortium blockchain infrastructure from first principles. The model extends the layered cloud service taxonomy\u2014[[Infrastructure as a Service]] abstracting physical compute and network, [[Platform as a Service]] abstracting runtime environment and middleware, [[Software as a Service]] abstracting full application stacks\u2014by adding a fourth abstraction layer: the correctness, liveness, and security of a replicated state machine governed by a Byzantine fault-tolerant or crash fault-tolerant consensus algorithm operating across geographically distributed nod",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cloud-service-model",
+      "label": "Cloud Service Model"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:enterprise-software-platform",
+      "label": "Enterprise Software Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:managed-service",
+      "label": "Managed Service"
+    },
+    {
+      "id": "urn:visionflow:linked:platform-as-a-service",
+      "label": "Platform as a Service"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:blockchain-api-gateway",
+        "label": "Blockchain API Gateway"
+      },
+      {
+        "id": "urn:visionflow:linked:certificate-authority-service",
+        "label": "Certificate Authority Service"
+      },
+      {
+        "id": "urn:visionflow:linked:consensus-service",
+        "label": "Consensus Service"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-management-integration",
+        "label": "Identity Management Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:ledger-storage",
+        "label": "Ledger Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:managed-node-hosting",
+        "label": "Managed Node Hosting"
+      },
+      {
+        "id": "urn:visionflow:linked:network-provisioning-templates",
+        "label": "Network Provisioning Templates"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-deployment-pipeline",
+        "label": "Smart Contract Deployment Pipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:visionflow:linked:tls-encryption",
+        "label": "TLS Encryption"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:visionflow:linked:cbdc-infrastructure",
+        "label": "CBDC Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:consortium-governance",
+        "label": "Consortium Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:permissioned-blockchain-network",
+        "label": "Permissioned Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:linked:fisco-bcos",
+        "label": "FISCO BCOS"
+      },
+      {
+        "id": "urn:visionflow:linked:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:visionflow:linked:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-bft",
+        "label": "SmartBFT"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:visionflow:owl:class:r3-corda",
+        "label": "R3 Corda"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "alibaba-cloud-baa-s",
+      "label": "Alibaba Cloud BaaS"
+    },
+    {
+      "slug": "amazon-managed-blockchain",
+      "label": "Amazon Managed Blockchain"
+    },
+    {
+      "slug": "androulaki-et-al-2018-hyperledger-fabric-euro-sys",
+      "label": "Androulaki et al. 2018 Hyperledger Fabric EuroSys"
+    },
+    {
+      "slug": "api-management",
+      "label": "API Management"
+    },
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "aws-iam",
+      "label": "AWS IAM"
+    },
+    {
+      "slug": "aws-lambda",
+      "label": "AWS Lambda"
+    },
+    {
+      "slug": "azure-active-directory",
+      "label": "Azure Active Directory"
+    },
+    {
+      "slug": "azure-blockchain-service",
+      "label": "Azure Blockchain Service"
+    },
+    {
+      "slug": "bank-of-england-2023-digital-pound-consultation-cp7-23",
+      "label": "Bank of England 2023 Digital Pound Consultation CP7/23"
+    },
+    {
+      "slug": "baseline-protocol",
+      "label": "Baseline Protocol"
+    },
+    {
+      "slug": "bessani-sousa-alchieri-2014-bft-smart-dsn",
+      "label": "Bessani Sousa Alchieri 2014 BFT-SMART DSN"
+    },
+    {
+      "slug": "blockchain-api-gateway",
+      "label": "Blockchain API Gateway"
+    },
+    {
+      "slug": "brown-et-al-2016-corda-introduction-r3",
+      "label": "Brown et al. 2016 Corda Introduction R3"
+    },
+    {
+      "slug": "buterin-2013-ethereum-white-paper",
+      "label": "Buterin 2013 Ethereum White Paper"
+    },
+    {
+      "slug": "casino-dasaklis-patsakis-2019-systematic-literature-review-blockchain-ti",
+      "label": "Casino Dasaklis Patsakis 2019 Systematic Literature Review Blockchain TI"
+    },
+    {
+      "slug": "castro-liskov-1999-pbft-osdi",
+      "label": "Castro Liskov 1999 PBFT OSDI"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "cbdc-infrastructure",
+      "label": "CBDC Infrastructure"
+    },
+    {
+      "slug": "central-bank-digital-currencies",
+      "label": "Central Bank Digital Currencies"
+    },
+    {
+      "slug": "certificate-authority-service",
+      "label": "Certificate Authority Service"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "cloud-computing-domain",
+      "label": "CloudComputingDomain"
+    },
+    {
+      "slug": "cloud-service-model",
+      "label": "Cloud Service Model"
+    },
+    {
+      "slug": "consen-sys-quorum-blockchain-service",
+      "label": "ConsenSys Quorum Blockchain Service"
+    },
+    {
+      "slug": "consensus-service",
+      "label": "Consensus Service"
+    },
+    {
+      "slug": "consortium-governance",
+      "label": "Consortium Governance"
+    },
+    {
+      "slug": "container-orchestration",
+      "label": "Container Orchestration"
+    },
+    {
+      "slug": "couch-db",
+      "label": "CouchDB"
+    },
+    {
+      "slug": "crash-fault-tolerance",
+      "label": "Crash Fault Tolerance"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "dev-ops",
+      "label": "DevOps"
+    },
+    {
+      "slug": "dib-et-al-2018-consortium-blockchains-ijat",
+      "label": "Dib et al. 2018 Consortium Blockchains IJAT"
+    },
+    {
+      "slug": "digital-assets",
+      "label": "Digital Assets"
+    },
+    {
+      "slug": "digital-identity-verification",
+      "label": "Digital Identity Verification"
+    },
+    {
+      "slug": "dinh-et-al-2018-untangling-blockchain-ieee-tkde",
+      "label": "Dinh et al. 2018 Untangling Blockchain IEEE TKDE"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "drug-supply-chain-security-act",
+      "label": "Drug Supply Chain Security Act"
+    },
+    {
+      "slug": "enterprise-ethereum-alliance",
+      "label": "Enterprise Ethereum Alliance"
+    },
+    {
+      "slug": "enterprise-infrastructure-domain",
+      "label": "EnterpriseInfrastructureDomain"
+    },
+    {
+      "slug": "enterprise-resource-planning",
+      "label": "Enterprise Resource Planning"
+    },
+    {
+      "slug": "enterprise-software-platform",
+      "label": "Enterprise Software Platform"
+    },
+    {
+      "slug": "european-blockchain-partnership-2019-ebsi-technical-architecture",
+      "label": "European Blockchain Partnership 2019 EBSI Technical Architecture"
+    },
+    {
+      "slug": "financial-services-compliance",
+      "label": "Financial Services Compliance"
+    },
+    {
+      "slug": "finck-2019-blockchains-gdpr-european-data-protection-law-review",
+      "label": "Finck 2019 Blockchains GDPR European Data Protection Law Review"
+    },
+    {
+      "slug": "fischer-lynch-paterson-1985-flp-impossibility-jacm",
+      "label": "Fischer Lynch Paterson 1985 FLP Impossibility JACM"
+    },
+    {
+      "slug": "fisco-bcos",
+      "label": "FISCO BCOS"
+    },
+    {
+      "slug": "fnality-international",
+      "label": "Fnality International"
+    },
+    {
+      "slug": "foundry",
+      "label": "Foundry"
+    },
+    {
+      "slug": "g-rpc",
+      "label": "gRPC"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "grand-view-research-2025-baa-s-market-report",
+      "label": "Grand View Research 2025 BaaS Market Report"
+    },
+    {
+      "slug": "gs1-epcis-2-0",
+      "label": "GS1 EPCIS 2.0"
+    },
+    {
+      "slug": "han-shiwakoti-chen-2024-r3-corda-case-study-tasm",
+      "label": "Han Shiwakoti Chen 2024 R3 Corda Case Study TASM"
+    },
+    {
+      "slug": "hardhat",
+      "label": "Hardhat"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    },
+    {
+      "slug": "hileman-rauchs-2017-global-blockchain-benchmarking-ccaf-cambridge",
+      "label": "Hileman Rauchs 2017 Global Blockchain Benchmarking CCAF Cambridge"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
+    },
+    {
+      "slug": "hipaa-compliance",
+      "label": "HIPAA Compliance"
+    },
+    {
+      "slug": "hyperledger-cacti",
+      "label": "Hyperledger Cacti"
+    },
+    {
+      "slug": "hyperledger-foundation",
+      "label": "Hyperledger Foundation"
+    },
+    {
+      "slug": "ibft2",
+      "label": "IBFT2"
+    },
+    {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
+      "slug": "identity-and-access-management",
+      "label": "Identity and Access Management"
+    },
+    {
+      "slug": "identity-management-integration",
+      "label": "Identity Management Integration"
+    },
+    {
+      "slug": "ietf-satp",
+      "label": "IETF SATP"
+    },
+    {
+      "slug": "infrastructure-as-a-service",
+      "label": "Infrastructure as a Service"
+    },
+    {
+      "slug": "iso-tc-307",
+      "label": "ISO TC 307"
+    },
+    {
+      "slug": "jpmorgan",
+      "label": "JPMorgan"
+    },
+    {
+      "slug": "jpmorgan-jpm-coin",
+      "label": "JPMorgan JPM Coin"
+    },
+    {
+      "slug": "json-rpc",
+      "label": "JSON-RPC"
+    },
+    {
+      "slug": "kaleido",
+      "label": "Kaleido"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "lamport-shostak-pease-1982-byzantine-generals-problem-acm-toplas",
+      "label": "Lamport Shostak Pease 1982 Byzantine Generals Problem ACM TOPLAS"
+    },
+    {
+      "slug": "ledger-storage",
+      "label": "Ledger Storage"
+    },
+    {
+      "slug": "level-db",
+      "label": "LevelDB"
+    },
+    {
+      "slug": "lf-decentralized-trust",
+      "label": "LF Decentralized Trust"
+    },
+    {
+      "slug": "lf-decentralized-trust-2024-hyperledger-fabric-3-0-release",
+      "label": "LF Decentralized Trust 2024 Hyperledger Fabric 3.0 Release"
+    },
+    {
+      "slug": "managed-node-hosting",
+      "label": "Managed Node Hosting"
+    },
+    {
+      "slug": "managed-service",
+      "label": "Managed Service"
+    },
+    {
+      "slug": "medi-ledger-network",
+      "label": "MediLedger Network"
+    },
+    {
+      "slug": "meiklejohn-et-al-2013-fistful-of-bitcoins-imc",
+      "label": "Meiklejohn et al. 2013 Fistful of Bitcoins IMC"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "multi-cloud-deployment",
+      "label": "Multi-Cloud Deployment"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin",
+      "label": "Nakamoto 2008 Bitcoin"
+    },
+    {
+      "slug": "network-provisioning-templates",
+      "label": "Network Provisioning Templates"
+    },
+    {
+      "slug": "nist-sp-800-235",
+      "label": "NIST SP 800-235"
+    },
+    {
+      "slug": "ongaro-ousterhout-2014-raft-usenix-atc",
+      "label": "Ongaro Ousterhout 2014 Raft USENIX ATC"
+    },
+    {
+      "slug": "open-pr-future-markets-insights-2025-baa-s-market-4-5-b-to-36-5-b",
+      "label": "OpenPR Future Markets Insights 2025 BaaS Market 4.5B to 36.5B"
+    },
+    {
+      "slug": "oracle-blockchain-platform",
+      "label": "Oracle Blockchain Platform"
+    },
+    {
+      "slug": "oracle-identity-cloud-service",
+      "label": "Oracle Identity Cloud Service"
+    },
+    {
+      "slug": "park-park-2017-blockchain-security-cloud-symmetry",
+      "label": "Park Park 2017 Blockchain Security Cloud Symmetry"
+    },
+    {
+      "slug": "permissioned-blockchain-network",
+      "label": "Permissioned Blockchain Network"
+    },
+    {
+      "slug": "permissionless-blockchain",
+      "label": "Permissionless Blockchain"
+    },
+    {
+      "slug": "platform-as-a-service",
+      "label": "Platform as a Service"
+    },
+    {
+      "slug": "politou-et-al-2019-blockchain-mutability-ieee-access",
+      "label": "Politou et al. 2019 Blockchain Mutability IEEE Access"
+    },
+    {
+      "slug": "postgre-sql",
+      "label": "PostgreSQL"
+    },
+    {
+      "slug": "private-data-collections",
+      "label": "Private Data Collections"
+    },
+    {
+      "slug": "public-cloud-blockchain",
+      "label": "Public Cloud Blockchain"
+    },
+    {
+      "slug": "qbft",
+      "label": "QBFT"
+    },
+    {
+      "slug": "quant-network",
+      "label": "Quant Network"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "raft-consensus",
+      "label": "Raft Consensus"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "sasson-et-al-2014-zerocash-ieee-s-and-p",
+      "label": "Sasson et al. 2014 Zerocash IEEE S&P"
+    },
+    {
+      "slug": "self-hosted-blockchain-infrastructure",
+      "label": "Self-Hosted Blockchain Infrastructure"
+    },
+    {
+      "slug": "smart-bft",
+      "label": "SmartBFT"
+    },
+    {
+      "slug": "smart-contract-deployment-pipeline",
+      "label": "Smart Contract Deployment Pipeline"
+    },
+    {
+      "slug": "smart-contract-execution",
+      "label": "Smart Contract Execution"
+    },
+    {
+      "slug": "software-as-a-service",
+      "label": "Software as a Service"
+    },
+    {
+      "slug": "sovereign-cloud",
+      "label": "Sovereign Cloud"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "tencent-tbaa-s",
+      "label": "Tencent TBaaS"
+    },
+    {
+      "slug": "tls-encryption",
+      "label": "TLS Encryption"
+    },
+    {
+      "slug": "trade-finance-automation",
+      "label": "Trade Finance Automation"
+    },
+    {
+      "slug": "trade-lens",
+      "label": "TradeLens"
+    },
+    {
+      "slug": "truffle",
+      "label": "Truffle"
+    },
+    {
+      "slug": "trusted-execution-environments",
+      "label": "Trusted Execution Environments"
+    },
+    {
+      "slug": "virtual-private-cloud",
+      "label": "Virtual Private Cloud"
+    },
+    {
+      "slug": "w3-c-decentralised-identifiers-dids",
+      "label": "W3C Decentralised Identifiers (DIDs)"
+    },
+    {
+      "slug": "w3-c-did-core-specification",
+      "label": "W3C DID Core Specification"
+    },
+    {
+      "slug": "w3-c-did-specification",
+      "label": "W3C DID Specification"
+    },
+    {
+      "slug": "walmart",
+      "label": "Walmart"
+    },
+    {
+      "slug": "weber-et-al-2016-untrusted-bpm-blockchain-bpm2016",
+      "label": "Weber et al. 2016 Untrusted BPM Blockchain BPM2016"
+    },
+    {
+      "slug": "wood-2014-ethereum-yellow-paper",
+      "label": "Wood 2014 Ethereum Yellow Paper"
+    },
+    {
+      "slug": "wust-gervais-2018-do-you-need-a-blockchain-cvcbt",
+      "label": "Wust Gervais 2018 Do You Need a Blockchain CVCBT"
+    },
+    {
+      "slug": "xu-et-al-2017-taxonomy-blockchain-icsa",
+      "label": "Xu et al. 2017 Taxonomy Blockchain ICSA"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-knowledge proofs"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "monitoring-dashboard",
+      "label": "Monitoring Dashboard"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "service-layer",
+      "label": "ServiceLayer"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "supply-chain-management",
+      "label": "Supply Chain Management"
+    },
+    {
+      "slug": "supply-chain-traceability",
+      "label": "Supply Chain Traceability"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

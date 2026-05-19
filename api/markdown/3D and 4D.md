@@ -1,25 +1,445 @@
-iri:: http://narrativegoldmine.com/spatial-computing#3DAnd4D
-uri:: urn:visionclaw:concept:spatial-computing:3d-and-4d
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:3d-and-4d
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: 3D and 4D
-content-hash:: sha256-12-083d7c8aaddc
-legacy-term-id::
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#3DAnd4D
+legacy_uri:: urn:visionclaw:concept:spatial-computing:3d-and-4d
 public:: true
-bridges-to:: [[Digital Twin]]
+
+# 3D and 4D
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b",
+  "@type": "Page",
+  "vc:slug": "3-d-and-4-d",
+  "title": "3D and 4D",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:automation",
+      "vc:label": "automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:community",
+      "vc:label": "community"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "decision making"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-thinking",
+      "vc:label": "design thinking"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation",
+      "vc:label": "documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:innovation",
+      "vc:label": "innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:modeling",
+      "vc:label": "modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "neural networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source",
+      "vc:label": "open source"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimization",
+      "vc:label": "optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:organisation",
+      "vc:label": "organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance",
+      "vc:label": "performance"
+    },
+    {
+      "@id": "urn:visionflow:linked:research",
+      "vc:label": "research"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability",
+      "vc:label": "scalability"
+    },
+    {
+      "@id": "urn:visionflow:linked:skills-development",
+      "vc:label": "skills development"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "user experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:visualization",
+      "vc:label": "visualization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias",
+      "vc:label": "bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaboration",
+      "vc:label": "collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "computer vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-management",
+      "vc:label": "data management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "deep learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "machine learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "natural language processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:software-engineering",
+      "vc:label": "software engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "training"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Digital Twin]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-083d7c8aaddc"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#3DAnd4D"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "3D and 4D"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-and-4d"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-and-4d"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:3-d-and-4-d",
+  "@type": "OntologyClass",
+  "label": "3D and 4D",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "3D and 4D is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-and-4-d:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[automation]]",
+      "resolved": "urn:visionflow:linked:automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[community]]",
+      "resolved": "urn:visionflow:linked:community",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[decision making]]",
+      "resolved": "urn:visionflow:linked:decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[design thinking]]",
+      "resolved": "urn:visionflow:linked:design-thinking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[documentation]]",
+      "resolved": "urn:visionflow:linked:documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[innovation]]",
+      "resolved": "urn:visionflow:linked:innovation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[modeling]]",
+      "resolved": "urn:visionflow:linked:modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[neural networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[open source]]",
+      "resolved": "urn:visionflow:linked:open-source",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[optimization]]",
+      "resolved": "urn:visionflow:linked:optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[organisation]]",
+      "resolved": "urn:visionflow:linked:organisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[performance]]",
+      "resolved": "urn:visionflow:linked:performance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[research]]",
+      "resolved": "urn:visionflow:linked:research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[scalability]]",
+      "resolved": "urn:visionflow:linked:scalability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[skills development]]",
+      "resolved": "urn:visionflow:linked:skills-development",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[user experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[visualization]]",
+      "resolved": "urn:visionflow:linked:visualization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[artificial intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[bias]]",
+      "resolved": "urn:visionflow:owl:class:bias",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[collaboration]]",
+      "resolved": "urn:visionflow:owl:class:collaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[computer vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[data management]]",
+      "resolved": "urn:visionflow:owl:class:data-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[deep learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[natural language processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[software engineering]]",
+      "resolved": "urn:visionflow:owl:class:software-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[training]]",
+      "resolved": "urn:visionflow:owl:class:training",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - 3D and 4D is a concept within the ngm domain.

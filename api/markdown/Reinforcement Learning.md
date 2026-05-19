@@ -1,21 +1,276 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ReinforcementLearning
-uri:: urn:visionclaw:concept:artificial-intelligence:reinforcement-learning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:reinforcement-learning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Reinforcement Learning
-content-hash:: sha256-12-f606ebe7861a
-legacy-term-id:: AI-3001
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ReinforcementLearning
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:reinforcement-learning
 public:: true
+
+# Reinforcement Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7",
+  "@type": "Page",
+  "vc:slug": "reinforcement-learning",
+  "title": "Reinforcement Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0452-policy",
+      "vc:label": "BC-0452-policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai",
+      "vc:label": "GameAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy",
+      "vc:label": "Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-system",
+      "vc:label": "RecommendationSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-control",
+      "vc:label": "RoboticControl"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-difference",
+      "vc:label": "TemporalDifference"
+    },
+    {
+      "@id": "urn:visionflow:linked:value-function",
+      "vc:label": "ValueFunction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "AutonomousRobot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f606ebe7861a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ReinforcementLearning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-3001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Reinforcement Learning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:reinforcement-learning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:reinforcement-learning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:reinforcement-learning",
+  "@type": "OntologyClass",
+  "label": "Reinforcement Learning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal [[BC-0452-policy|policies]] through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error. This approach is fundamental to [[AutonomousRobot|autonomous systems]] and [[ArtificialIntelligence|AI agents]] that must adapt to dynamic, uncertain environments without explicit human supervision. Applications span [[GameAI|game-playing agents]], [[RoboticControl|robotic control]], and [[RecommendationSystem|recommendation systems]] where learning from environmental feedback optimises long-term performance.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:reinforcement-learning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0452-policy|policies]]",
+      "resolved": "urn:visionflow:linked:bc-0452-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GameAI|game-playing agents]]",
+      "resolved": "urn:visionflow:linked:game-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Policy|policies]]",
+      "resolved": "urn:visionflow:linked:policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RecommendationSystem|recommendation systems]]",
+      "resolved": "urn:visionflow:linked:recommendation-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RoboticControl|robotic control]]",
+      "resolved": "urn:visionflow:linked:robotic-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TemporalDifference|temporal difference]]",
+      "resolved": "urn:visionflow:linked:temporal-difference",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ValueFunction|value functions]]",
+      "resolved": "urn:visionflow:linked:value-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligence|AI agents]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutonomousRobot|autonomous systems]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Reinforcement learning is a machine learning paradigm in which agents learn optimal [[BC-0452-policy|policies]] through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error. This approach is fundamental to [[AutonomousRobot|autonomous systems]] and [[ArtificialIntelligence|AI agents]] that must adapt to dynamic, uncertain environments without explicit human supervision. Applications span [[GameAI|game-playing agents]], [[RoboticControl|robotic control]], and [[RecommendationSystem|recommendation systems]] where learning from environmental feedback optimises long-term performance.

@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8",
+  "title": "AI Governance Framework",
+  "slug": "ai-governance-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-governance-framework",
+  "domain": "artificial-intelligence",
+  "definition": "Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:audit-mechanism",
+        "label": "Audit Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-policy",
+        "label": "Compliance Policy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-ethics-checklist",
+        "label": "AI Ethics Checklist"
+      },
+      {
+        "id": "urn:visionflow:owl:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ethical-framework",
+        "label": "Ethical Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-transparency",
+        "label": "AI Transparency"
+      },
+      {
+        "id": "urn:visionflow:linked:ethical-ai-operation",
+        "label": "Ethical AI Operation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "ai-risk-assessment",
+      "label": "AI Risk Assessment"
+    },
+    {
+      "slug": "ai-transparency",
+      "label": "AI Transparency"
+    },
+    {
+      "slug": "audit-mechanism",
+      "label": "Audit Mechanism"
+    },
+    {
+      "slug": "compliance-policy",
+      "label": "Compliance Policy"
+    },
+    {
+      "slug": "ethical-ai-operation",
+      "label": "Ethical AI Operation"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "policy-framework",
+      "label": "Policy Framework"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed",
+  "title": "Digital Actor Creation",
+  "slug": "digital-actor-creation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-actor-creation",
+  "domain": "artificial-intelligence",
+  "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications. bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-human-technology",
+      "label": "Digital Human Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-synthesis",
+        "label": "AI Synthesis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-performances",
+        "label": "Virtual Performances"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-synthesis",
+      "label": "AI Synthesis"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "virtual-performances",
+      "label": "Virtual Performances"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "digital-human-technology",
+      "label": "Digital Human Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    }
+  ]
+}

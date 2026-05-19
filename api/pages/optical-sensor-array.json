@@ -1,0 +1,436 @@
+{
+  "id": "urn:visionflow:page:fe19cde1430c88d22167325c6cee32e05cc8dd39c26dce0acf2570db06861967",
+  "title": "Optical Sensor Array",
+  "slug": "optical-sensor-array",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:optical-sensor-array",
+  "domain": "robotics",
+  "definition": "A multi-element optical sensing arrangement comprising spatially distributed photodetectors\u2014including CCD (Charge-Coupled Device) arrays, CMOS (Complementary Metal-Oxide-Semiconductor) image sensors, SPAD (Single-Photon Avalanche Diode) arrays, InGaAs infrared arrays, avalanche photodiode (APD) arrays, photodiode arrays, and time-of-flight (ToF) array architectures\u2014that collectively capture, detect, or spatially resolve light across a defined field of view for imaging, depth measurement, spectral analysis, or spatial sensing purposes, implemented as a two-dimensional (or one-dimensional) matrix of photodetector elements on a semiconductor substrate where each element converts incident photons to electrical charge via the photoelectric effect and reads that charge through an associated readout circuit chain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-vision-system",
+      "label": "Computer Vision System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "id": "urn:visionflow:owl:class:hardware",
+      "label": "Hardware"
+    },
+    {
+      "id": "urn:visionflow:owl:class:imaging-parameters",
+      "label": "Imaging Parameters"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:visionflow:owl:class:camera-parameters",
+        "label": "Camera Parameters"
+      },
+      {
+        "id": "urn:visionflow:owl:class:imaging-parameters",
+        "label": "Imaging Parameters"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-camera",
+        "label": "Infrared Camera"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-led-illuminator",
+        "label": "Infrared Led Illuminator"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-light-source",
+        "label": "Infrared Light Source"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-sensor",
+        "label": "Infrared Sensor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lens-and-camera-calibration",
+        "label": "Lens and Camera Calibration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:camera-parameters",
+        "label": "Camera Parameters"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-led-illuminator",
+        "label": "Infrared Led Illuminator"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-light-source",
+        "label": "Infrared Light Source"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lens-and-camera-calibration",
+        "label": "Lens and Camera Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:2-d-li-dar",
+        "label": "2D LiDAR"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-li-dar",
+        "label": "3D LiDAR"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
+        "label": "Human tracking and SLAM capture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      },
+      {
+        "id": "urn:visionflow:owl:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
+        "label": "Human tracking and SLAM capture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "2-d-li-dar",
+      "label": "2D LiDAR"
+    },
+    {
+      "slug": "3-d-li-dar",
+      "label": "3D LiDAR"
+    },
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "computer-vision-system",
+      "label": "Computer Vision System"
+    },
+    {
+      "slug": "computer-vision-task",
+      "label": "Computer Vision Task"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "depth-sensing",
+      "label": "Depth Sensing"
+    },
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-computing-architecture",
+      "label": "Edge Computing Architecture"
+    },
+    {
+      "slug": "embedded-ai-frameworks",
+      "label": "Embedded AI Frameworks"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "fpga",
+      "label": "FPGA"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "human-tracking-and-slam-capture",
+      "label": "Human tracking and SLAM capture"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "imaging-parameters",
+      "label": "Imaging Parameters"
+    },
+    {
+      "slug": "infrared-camera",
+      "label": "Infrared Camera"
+    },
+    {
+      "slug": "infrared-led-illuminator",
+      "label": "Infrared Led Illuminator"
+    },
+    {
+      "slug": "infrared-light-source",
+      "label": "Infrared Light Source"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "Infrared Sensor"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "Iot Sensor Network"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "Io T Sensors"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "real-time-inference-at-edge",
+      "label": "Real-Time Inference at Edge"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "self-driving-car",
+      "label": "Self Driving Car"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-computing-system",
+      "label": "Spatial Computing System"
+    },
+    {
+      "slug": "xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    }
+  ]
+}

@@ -1,0 +1,1367 @@
+{
+  "id": "urn:visionflow:page:fe5d36310904c83e4a90a885db9b3a2ae9e314eb501fca3b7312dcb4d71a5094",
+  "title": "Bitcoin",
+  "slug": "bitcoin",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin",
+  "domain": "blockchain",
+  "definition": "The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 million coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "qualityScore": 0.96,
+  "authorityScore": 1.0,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:utxo",
+        "label": "UTXO"
+      },
+      {
+        "id": "urn:visionflow:owl:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:script",
+        "label": "Script"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:peer-to-peer-transfer",
+        "label": "Peer-to-Peer Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "addresses",
+      "label": "Addresses"
+    },
+    {
+      "slug": "ai-api",
+      "label": "AI API"
+    },
+    {
+      "slug": "ai-service",
+      "label": "AI service"
+    },
+    {
+      "slug": "ai-services",
+      "label": "AI services"
+    },
+    {
+      "slug": "ai-services",
+      "label": "AI Services"
+    },
+    {
+      "slug": "all-time-high",
+      "label": "all-time high"
+    },
+    {
+      "slug": "anyprevout",
+      "label": "ANYPREVOUT"
+    },
+    {
+      "slug": "asset-class",
+      "label": "asset class"
+    },
+    {
+      "slug": "assets",
+      "label": "assets"
+    },
+    {
+      "slug": "assets-under-management",
+      "label": "assets under management"
+    },
+    {
+      "slug": "atomic-swaps",
+      "label": "atomic swaps"
+    },
+    {
+      "slug": "aum",
+      "label": "AUM"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "autonomous agents"
+    },
+    {
+      "slug": "banking-services",
+      "label": "Banking services"
+    },
+    {
+      "slug": "bip-0118",
+      "label": "BIP-0118"
+    },
+    {
+      "slug": "bip-bitcoin-improvement-proposals",
+      "label": "BIP (Bitcoin Improvement Proposals)"
+    },
+    {
+      "slug": "bitcoin-ai",
+      "label": "Bitcoin-AI"
+    },
+    {
+      "slug": "bitcoin-script",
+      "label": "Bitcoin Script"
+    },
+    {
+      "slug": "bitcoin-vaults",
+      "label": "Bitcoin Vaults"
+    },
+    {
+      "slug": "bitcoin-whitepaper-nakamoto-2008",
+      "label": "Bitcoin Whitepaper (Nakamoto 2008)"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "block-rewards",
+      "label": "block rewards"
+    },
+    {
+      "slug": "blockchain-innovation",
+      "label": "blockchain innovation"
+    },
+    {
+      "slug": "blocks",
+      "label": "blocks"
+    },
+    {
+      "slug": "borderless",
+      "label": "Borderless"
+    },
+    {
+      "slug": "byzantine-generals-problem",
+      "label": "Byzantine Generals Problem"
+    },
+    {
+      "slug": "cambridge-study",
+      "label": "Cambridge study"
+    },
+    {
+      "slug": "carbon-intensive",
+      "label": "carbon-intensive"
+    },
+    {
+      "slug": "cash-system",
+      "label": "cash system"
+    },
+    {
+      "slug": "censorship-resistant",
+      "label": "censorship-resistant"
+    },
+    {
+      "slug": "censorship-resistant-donations",
+      "label": "Censorship-Resistant Donations"
+    },
+    {
+      "slug": "central-authority",
+      "label": "central authority"
+    },
+    {
+      "slug": "channel-update",
+      "label": "channel update"
+    },
+    {
+      "slug": "clean-energy",
+      "label": "clean energy"
+    },
+    {
+      "slug": "client-side-validation",
+      "label": "client-side validation"
+    },
+    {
+      "slug": "coal",
+      "label": "coal"
+    },
+    {
+      "slug": "coins",
+      "label": "coins"
+    },
+    {
+      "slug": "composition",
+      "label": "composition"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "consensus mechanisms"
+    },
+    {
+      "slug": "content-monetization",
+      "label": "content monetization"
+    },
+    {
+      "slug": "corporate-treasury",
+      "label": "Corporate treasury"
+    },
+    {
+      "slug": "covenants",
+      "label": "covenants"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "cross-chain-interoperability",
+      "label": "cross-chain interoperability"
+    },
+    {
+      "slug": "cross-layer",
+      "label": "cross-layer"
+    },
+    {
+      "slug": "cryptographic-techniques",
+      "label": "cryptographic techniques"
+    },
+    {
+      "slug": "cryptographically-secured",
+      "label": "Cryptographically secured"
+    },
+    {
+      "slug": "decentralisation",
+      "label": "decentralisation"
+    },
+    {
+      "slug": "decentralised-currencies",
+      "label": "decentralised currencies"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised finance"
+    },
+    {
+      "slug": "decentralised-monetary-policy",
+      "label": "decentralised monetary policy"
+    },
+    {
+      "slug": "decentralized-consensus",
+      "label": "Decentralized Consensus"
+    },
+    {
+      "slug": "deflationary-design",
+      "label": "Deflationary Design"
+    },
+    {
+      "slug": "digital-asset-development",
+      "label": "digital asset development"
+    },
+    {
+      "slug": "digital-gold",
+      "label": "Digital Gold"
+    },
+    {
+      "slug": "digital-scarcity",
+      "label": "Digital Scarcity"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "distributed consensus"
+    },
+    {
+      "slug": "divisibility",
+      "label": "Divisibility"
+    },
+    {
+      "slug": "durability",
+      "label": "Durability"
+    },
+    {
+      "slug": "economic-incentives",
+      "label": "economic incentives"
+    },
+    {
+      "slug": "ecosystem",
+      "label": "ecosystem"
+    },
+    {
+      "slug": "efficient",
+      "label": "efficient"
+    },
+    {
+      "slug": "eltoo",
+      "label": "Eltoo"
+    },
+    {
+      "slug": "eltoo-protocol",
+      "label": "Eltoo Protocol"
+    },
+    {
+      "slug": "eltoo-protocol-whitepaper",
+      "label": "Eltoo Protocol Whitepaper"
+    },
+    {
+      "slug": "emerging-technologies",
+      "label": "emerging technologies"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "energy consumption"
+    },
+    {
+      "slug": "energy-efficiency",
+      "label": "energy efficiency"
+    },
+    {
+      "slug": "energy-grid-balancing",
+      "label": "Energy Grid Balancing"
+    },
+    {
+      "slug": "environmental-concerns",
+      "label": "Environmental concerns"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "financial-systems",
+      "label": "financial systems"
+    },
+    {
+      "slug": "fixed-supply",
+      "label": "fixed supply"
+    },
+    {
+      "slug": "fixed-supply",
+      "label": "Fixed Supply"
+    },
+    {
+      "slug": "formal-analysis",
+      "label": "Formal analysis"
+    },
+    {
+      "slug": "fossil-fuels",
+      "label": "fossil fuels"
+    },
+    {
+      "slug": "funds",
+      "label": "funds"
+    },
+    {
+      "slug": "geography",
+      "label": "geography"
+    },
+    {
+      "slug": "global-accessibility",
+      "label": "Global Accessibility"
+    },
+    {
+      "slug": "global-finance",
+      "label": "global finance"
+    },
+    {
+      "slug": "global-network",
+      "label": "Global network"
+    },
+    {
+      "slug": "hash-rate",
+      "label": "hash rate"
+    },
+    {
+      "slug": "http-402",
+      "label": "HTTP 402"
+    },
+    {
+      "slug": "hydropower",
+      "label": "hydropower"
+    },
+    {
+      "slug": "ibit",
+      "label": "IBIT"
+    },
+    {
+      "slug": "immutable",
+      "label": "immutable"
+    },
+    {
+      "slug": "immutable-ledger",
+      "label": "immutable ledger"
+    },
+    {
+      "slug": "inflation-hedge",
+      "label": "inflation hedge"
+    },
+    {
+      "slug": "institutional",
+      "label": "institutional"
+    },
+    {
+      "slug": "institutional-acceptance",
+      "label": "institutional acceptance"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "institutional adoption"
+    },
+    {
+      "slug": "institutional-holdings",
+      "label": "institutional holdings"
+    },
+    {
+      "slug": "institutions",
+      "label": "institutions"
+    },
+    {
+      "slug": "internet",
+      "label": "internet"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "interruptible-load",
+      "label": "interruptible load"
+    },
+    {
+      "slug": "investment-portfolios",
+      "label": "investment portfolios"
+    },
+    {
+      "slug": "investor-behaviour",
+      "label": "investor behaviour"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "jpmorgan-chase",
+      "label": "JPMorgan Chase"
+    },
+    {
+      "slug": "l402-protocol",
+      "label": "L402-Protocol"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer 2"
+    },
+    {
+      "slug": "layer-two-solutions",
+      "label": "layer-two solutions"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "lightning-network-whitepaper",
+      "label": "Lightning Network Whitepaper"
+    },
+    {
+      "slug": "limited-supply",
+      "label": "limited supply"
+    },
+    {
+      "slug": "machine-to-machine",
+      "label": "machine-to-machine"
+    },
+    {
+      "slug": "machine-to-machine-payments",
+      "label": "machine-to-machine payments"
+    },
+    {
+      "slug": "mainstream-finance",
+      "label": "mainstream finance"
+    },
+    {
+      "slug": "market-dynamics",
+      "label": "market dynamics"
+    },
+    {
+      "slug": "mathematics",
+      "label": "mathematics"
+    },
+    {
+      "slug": "michael-saylor",
+      "label": "Michael Saylor"
+    },
+    {
+      "slug": "mining-difficulty",
+      "label": "mining difficulty"
+    },
+    {
+      "slug": "miniscript",
+      "label": "Miniscript"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary policy"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "monetary policy"
+    },
+    {
+      "slug": "monetization",
+      "label": "Monetization"
+    },
+    {
+      "slug": "multi-signature-wallets",
+      "label": "multi-signature wallets"
+    },
+    {
+      "slug": "natural-gas",
+      "label": "Natural gas"
+    },
+    {
+      "slug": "network",
+      "label": "network"
+    },
+    {
+      "slug": "network-security",
+      "label": "network security"
+    },
+    {
+      "slug": "non-fungible-tokens",
+      "label": "non-fungible tokens"
+    },
+    {
+      "slug": "off-chain",
+      "label": "off-chain"
+    },
+    {
+      "slug": "off-chain",
+      "label": "Off-chain"
+    },
+    {
+      "slug": "on-chain-settlement",
+      "label": "on-chain settlement"
+    },
+    {
+      "slug": "outputs",
+      "label": "outputs"
+    },
+    {
+      "slug": "pay-per-use",
+      "label": "pay-per-use"
+    },
+    {
+      "slug": "pay-per-use-ai",
+      "label": "pay-per-use AI"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "paywalled-ai-apis",
+      "label": "paywalled AI APIs"
+    },
+    {
+      "slug": "peer-to-peer",
+      "label": "peer-to-peer"
+    },
+    {
+      "slug": "peer-to-peer-transfer",
+      "label": "Peer-to-Peer Transfer"
+    },
+    {
+      "slug": "penalty-transactions",
+      "label": "penalty transactions"
+    },
+    {
+      "slug": "permissionless",
+      "label": "Permissionless"
+    },
+    {
+      "slug": "portfolio-diversification",
+      "label": "Portfolio Diversification"
+    },
+    {
+      "slug": "price-dynamics",
+      "label": "price dynamics"
+    },
+    {
+      "slug": "private-keys",
+      "label": "private keys"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "slug": "programmable-transactions",
+      "label": "Programmable Transactions"
+    },
+    {
+      "slug": "protocol-consensus",
+      "label": "protocol consensus"
+    },
+    {
+      "slug": "protocol-design",
+      "label": "protocol design"
+    },
+    {
+      "slug": "protocols",
+      "label": "protocols"
+    },
+    {
+      "slug": "pseudonymous",
+      "label": "Pseudonymous"
+    },
+    {
+      "slug": "quantitative-tightening",
+      "label": "quantitative tightening"
+    },
+    {
+      "slug": "real-world-identities",
+      "label": "real-world identities"
+    },
+    {
+      "slug": "regulatory",
+      "label": "regulatory"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "regulatory clarity"
+    },
+    {
+      "slug": "regulatory-impact",
+      "label": "Regulatory impact"
+    },
+    {
+      "slug": "remittances",
+      "label": "remittances"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "renewable energy"
+    },
+    {
+      "slug": "rgb",
+      "label": "RGB"
+    },
+    {
+      "slug": "routing",
+      "label": "routing"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "satoshis",
+      "label": "satoshis"
+    },
+    {
+      "slug": "scalability",
+      "label": "scalability"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "scarce",
+      "label": "scarce"
+    },
+    {
+      "slug": "scripts",
+      "label": "scripts"
+    },
+    {
+      "slug": "security-guarantees",
+      "label": "security guarantees"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "signature-flexibility",
+      "label": "signature flexibility"
+    },
+    {
+      "slug": "soft-fork",
+      "label": "Soft-fork"
+    },
+    {
+      "slug": "spacechains",
+      "label": "spacechains"
+    },
+    {
+      "slug": "spending-conditions",
+      "label": "spending conditions"
+    },
+    {
+      "slug": "spot-bitcoin-etfs",
+      "label": "spot Bitcoin ETFs"
+    },
+    {
+      "slug": "statechains",
+      "label": "statechains"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "Store of Value"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "store of value"
+    },
+    {
+      "slug": "sustainable",
+      "label": "sustainable"
+    },
+    {
+      "slug": "sustainable-sources",
+      "label": "sustainable sources"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "technology",
+      "label": "technology"
+    },
+    {
+      "slug": "texas",
+      "label": "Texas"
+    },
+    {
+      "slug": "time-locked-transactions",
+      "label": "Time-locked transactions"
+    },
+    {
+      "slug": "traditional-banking",
+      "label": "traditional banking"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "traditional finance"
+    },
+    {
+      "slug": "transact",
+      "label": "transact"
+    },
+    {
+      "slug": "transaction-accounting",
+      "label": "transaction accounting"
+    },
+    {
+      "slug": "transaction-history",
+      "label": "transaction history"
+    },
+    {
+      "slug": "transactions",
+      "label": "transactions"
+    },
+    {
+      "slug": "trusted-central-authority",
+      "label": "trusted central authority"
+    },
+    {
+      "slug": "u-s-securities-and-exchange-commission",
+      "label": "U.S. Securities and Exchange Commission"
+    },
+    {
+      "slug": "unbanked-populations",
+      "label": "unbanked populations"
+    },
+    {
+      "slug": "uncorrelated-asset-class",
+      "label": "Uncorrelated asset class"
+    },
+    {
+      "slug": "united-states",
+      "label": "United States"
+    },
+    {
+      "slug": "unspent-transaction-output",
+      "label": "Unspent Transaction Output"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "van-eck",
+      "label": "VanEck"
+    },
+    {
+      "slug": "wind",
+      "label": "wind"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "artificial intelligence"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous agent"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "autonomous agent"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "cryptocurrency"
+    },
+    {
+      "slug": "decentralization",
+      "label": "decentralization"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "digital asset"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "distributed systems"
+    },
+    {
+      "slug": "economic-layer",
+      "label": "EconomicLayer"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "interoperability",
+      "label": "interoperability"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "longest-chain-rule",
+      "label": "longest chain rule"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "market-capitalization",
+      "label": "market capitalization"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "micropayment",
+      "label": "micropayment"
+    },
+    {
+      "slug": "micropayments",
+      "label": "micropayments"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "mining",
+      "label": "mining"
+    },
+    {
+      "slug": "monetary-sovereignty",
+      "label": "Monetary Sovereignty"
+    },
+    {
+      "slug": "node",
+      "label": "Node"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "regulatory compliance"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "script",
+      "label": "Script"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "security",
+      "label": "security"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "smart contract"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "smart contracts"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "supply-cap",
+      "label": "Supply Cap"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "TokenEconomicsDomain"
+    },
+    {
+      "slug": "tokenization",
+      "label": "tokenization"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "transaction",
+      "label": "transaction"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "wallet",
+      "label": "wallet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "agentic-alliance",
+      "label": "Agentic Alliance"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    },
+    {
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

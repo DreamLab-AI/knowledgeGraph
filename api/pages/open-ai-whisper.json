@@ -1,0 +1,480 @@
+{
+  "id": "urn:visionflow:page:7df57c75d4fa490dfdd09467df5fb57b20b7b2deca38ac383704f2b0b2253da6",
+  "title": "Open AI Whisper",
+  "slug": "open-ai-whisper",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:open-ai-whisper",
+  "domain": "artificial-intelligence",
+  "definition": "OpenAI Whisper is a large-scale, weakly-supervised, encoder-decoder Transformer architecture for automatic speech recognition (ASR) and speech translation, introduced by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever at OpenAI in September 2022 in the paper \"Robust Speech Recognition via Large-Scale Weak Supervision,\" trained on a heterogeneous corpus of 680,000 hours of audio paired with text transcripts scraped from the internet across 99 languages, the scale and diversity of which is the primary source of Whisper's zero-shot generalisation robustness rather than any novel algorithmic advance, avoiding the supervised pre-training/fine-tuning paradigm that characterised prior ASR systems such as wav2vec 2.0 (Baevski et al. 2020, WER 1.8% LibriSpeech clean after 960h fine-tuning), HuBERT (Hsu et al. 2021, WER 2.1% fine-tuned), and Conformer (Gulati et al. 2020) in favour of a single multitask, multilingual sequence-to-sequence formulation in which the model simultaneously handles transcription in source language, translation to English, spoken language identification across 99 languages, and voice-activity detection via special tokens pre",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "id": "urn:visionflow:linked:multilingual-model",
+      "label": "Multilingual Model"
+    },
+    {
+      "id": "urn:visionflow:linked:sequence-to-sequence-model",
+      "label": "Sequence to Sequence Model"
+    },
+    {
+      "id": "urn:visionflow:linked:weakly-supervised-learning",
+      "label": "Weakly Supervised Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:transformer",
+      "label": "Transformer"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:beam-search-decoder",
+        "label": "Beam Search Decoder"
+      },
+      {
+        "id": "urn:visionflow:linked:convolutional-feature-extractor",
+        "label": "Convolutional Feature Extractor"
+      },
+      {
+        "id": "urn:visionflow:linked:language-identifier",
+        "label": "Language Identifier"
+      },
+      {
+        "id": "urn:visionflow:linked:log-mel-spectrogram",
+        "label": "Log-Mel Spectrogram"
+      },
+      {
+        "id": "urn:visionflow:linked:special-token",
+        "label": "Special Token"
+      },
+      {
+        "id": "urn:visionflow:owl:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audio-input",
+        "label": "Audio Input"
+      },
+      {
+        "id": "urn:visionflow:linked:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      },
+      {
+        "id": "urn:visionflow:linked:byte-pair-encoding-tokeniser",
+        "label": "Byte Pair Encoding Tokeniser"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:log-mel-feature-extraction",
+        "label": "Log-Mel Feature Extraction"
+      },
+      {
+        "id": "urn:visionflow:linked:transformer-attention",
+        "label": "Transformer Attention"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:language-identification",
+        "label": "Language Identification"
+      },
+      {
+        "id": "urn:visionflow:linked:medical-transcription",
+        "label": "Medical Transcription"
+      },
+      {
+        "id": "urn:visionflow:linked:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:visionflow:linked:speech-transcription",
+        "label": "Speech Transcription"
+      },
+      {
+        "id": "urn:visionflow:linked:speech-translation",
+        "label": "Speech Translation"
+      },
+      {
+        "id": "urn:visionflow:linked:subtitle-generation",
+        "label": "Subtitle Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      },
+      {
+        "id": "urn:visionflow:linked:multitask-learning",
+        "label": "Multitask Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:sequence-to-sequence-learning",
+        "label": "Sequence to Sequence Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:temperature-fallback",
+        "label": "Temperature Fallback"
+      },
+      {
+        "id": "urn:visionflow:linked:weak-supervision",
+        "label": "Weak Supervision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-captioning",
+      "label": "Accessibility Captioning"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "apple-neural-engine",
+      "label": "Apple Neural Engine"
+    },
+    {
+      "slug": "assembly-ai-universal",
+      "label": "AssemblyAI Universal"
+    },
+    {
+      "slug": "audio-input",
+      "label": "Audio Input"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "automatic-subtitling",
+      "label": "Automatic Subtitling"
+    },
+    {
+      "slug": "autoregressive-decoding",
+      "label": "Autoregressive Decoding"
+    },
+    {
+      "slug": "aws-transcribe",
+      "label": "AWS Transcribe"
+    },
+    {
+      "slug": "beam-search-decoder",
+      "label": "Beam Search Decoder"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "broadcast-monitoring",
+      "label": "Broadcast Monitoring"
+    },
+    {
+      "slug": "byte-pair-encoding-tokeniser",
+      "label": "Byte Pair Encoding Tokeniser"
+    },
+    {
+      "slug": "common-voice-benchmark",
+      "label": "CommonVoice Benchmark"
+    },
+    {
+      "slug": "conformer",
+      "label": "Conformer"
+    },
+    {
+      "slug": "convolutional-feature-extractor",
+      "label": "Convolutional Feature Extractor"
+    },
+    {
+      "slug": "core-ml",
+      "label": "Core ML"
+    },
+    {
+      "slug": "court-transcription",
+      "label": "Court Transcription"
+    },
+    {
+      "slug": "ctranslate2",
+      "label": "CTranslate2"
+    },
+    {
+      "slug": "deepgram-nova",
+      "label": "Deepgram Nova"
+    },
+    {
+      "slug": "fleurs-benchmark",
+      "label": "FLEURS Benchmark"
+    },
+    {
+      "slug": "google-usm",
+      "label": "Google USM"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "hu-bert",
+      "label": "HuBERT"
+    },
+    {
+      "slug": "hugging-face-open-asr-leaderboard",
+      "label": "Hugging Face Open ASR Leaderboard"
+    },
+    {
+      "slug": "icassp",
+      "label": "ICASSP"
+    },
+    {
+      "slug": "interspeech",
+      "label": "INTERSPEECH"
+    },
+    {
+      "slug": "language-documentation",
+      "label": "Language Documentation"
+    },
+    {
+      "slug": "language-identification",
+      "label": "Language Identification"
+    },
+    {
+      "slug": "language-identifier",
+      "label": "Language Identifier"
+    },
+    {
+      "slug": "libri-speech-benchmark",
+      "label": "LibriSpeech Benchmark"
+    },
+    {
+      "slug": "log-mel-feature-extraction",
+      "label": "Log-Mel Feature Extraction"
+    },
+    {
+      "slug": "log-mel-spectrogram",
+      "label": "Log-Mel Spectrogram"
+    },
+    {
+      "slug": "medical-transcription",
+      "label": "Medical Transcription"
+    },
+    {
+      "slug": "metal-gpu",
+      "label": "Metal GPU"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "multilingual-model",
+      "label": "Multilingual Model"
+    },
+    {
+      "slug": "multimodal-models",
+      "label": "Multimodal Models"
+    },
+    {
+      "slug": "multitask-learning",
+      "label": "Multitask Learning"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "onnx-runtime",
+      "label": "ONNX Runtime"
+    },
+    {
+      "slug": "podcast-transcription",
+      "label": "Podcast Transcription"
+    },
+    {
+      "slug": "pyannote-audio",
+      "label": "Pyannote Audio"
+    },
+    {
+      "slug": "sequence-to-sequence-learning",
+      "label": "Sequence to Sequence Learning"
+    },
+    {
+      "slug": "sequence-to-sequence-model",
+      "label": "Sequence to Sequence Model"
+    },
+    {
+      "slug": "silero-vad",
+      "label": "Silero VAD"
+    },
+    {
+      "slug": "speaker-diarisation",
+      "label": "Speaker Diarisation"
+    },
+    {
+      "slug": "special-token",
+      "label": "Special Token"
+    },
+    {
+      "slug": "speech-technology",
+      "label": "Speech Technology"
+    },
+    {
+      "slug": "speech-technology-domain",
+      "label": "SpeechTechnologyDomain"
+    },
+    {
+      "slug": "speech-transcription",
+      "label": "Speech Transcription"
+    },
+    {
+      "slug": "speech-translation",
+      "label": "Speech Translation"
+    },
+    {
+      "slug": "subtitle-generation",
+      "label": "Subtitle Generation"
+    },
+    {
+      "slug": "temperature-fallback",
+      "label": "Temperature Fallback"
+    },
+    {
+      "slug": "transformer-attention",
+      "label": "Transformer Attention"
+    },
+    {
+      "slug": "voice-activity-detection",
+      "label": "Voice Activity Detection"
+    },
+    {
+      "slug": "wav2-vec2",
+      "label": "Wav2Vec2"
+    },
+    {
+      "slug": "weak-supervision",
+      "label": "Weak Supervision"
+    },
+    {
+      "slug": "weakly-supervised-learning",
+      "label": "Weakly Supervised Learning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "decoder",
+      "label": "Decoder"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "meeting-transcription",
+      "label": "Meeting Transcription"
+    },
+    {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "label": "Advice for developing GenAI"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

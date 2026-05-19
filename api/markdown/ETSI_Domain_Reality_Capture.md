@@ -1,24 +1,255 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ETSIDomainRealityCapture
-uri:: urn:visionclaw:concept:spatial-computing:etsidomainrealitycapture
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:etsidomainrealitycapture
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: ETSI_Domain_Reality_Capture
-content-hash:: sha256-12-88b418de9818
-legacy-term-id:: MV-2018
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ETSIDomainRealityCapture
+legacy_uri:: urn:visionclaw:concept:spatial-computing:etsidomainrealitycapture
 public:: true
+
+# ETSI_Domain_Reality_Capture
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-reality-capture",
+  "title": "ETSI_Domain_Reality_Capture",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "DigitalTwin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-capture-and-recognition",
+      "vc:label": "Human Capture & Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-capture-and-recognition",
+      "vc:label": "Human Capture & Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-capture-rig",
+      "vc:label": "Motion Capture Rig"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:photogrammetry",
+      "vc:label": "Photogrammetry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reality-capture-system",
+      "vc:label": "Reality Capture System"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-88b418de9818"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ETSIDomainRealityCapture"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2018"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:etsidomainrealitycapture"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:etsidomainrealitycapture"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-reality-capture",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Reality_Capture",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments. Reality capture integrates real-time mesh generation, semantic labelling of captured objects, and [[Human Capture & Recognition|human capture and recognition]] systems enabling accurate representation of physical spaces with precise geometric, textural, and dynamic properties. Technical capabilities span volumetric video coding standards (ISO V3C/V-PCC, V3C/MIV), immersive audio (MPEG-H 3D), and spatial data intelligence enabling seamless physical-to-virtual integration for virtual collaboration, digital preservation, and immersive training across academic and commercial applications.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-reality-capture:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalTwin|digital twins]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Capture & Recognition]]",
+      "resolved": "urn:visionflow:owl:class:human-capture-and-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Capture & Recognition|human capture and recognition]]",
+      "resolved": "urn:visionflow:owl:class:human-capture-and-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Capture Rig]]",
+      "resolved": "urn:visionflow:owl:class:motion-capture-rig",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Photogrammetry]]",
+      "resolved": "urn:visionflow:owl:class:photogrammetry",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reality Capture System]]",
+      "resolved": "urn:visionflow:owl:class:reality-capture-system",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments. Reality capture integrates real-time mesh generation, semantic labelling of captured objects, and [[Human Capture & Recognition|human capture and recognition]] systems enabling accurate representation of physical spaces with precise geometric, textural, and dynamic properties. Technical capabilities span volumetric video coding standards (ISO V3C/V-PCC, V3C/MIV), immersive audio (MPEG-H 3D), and spatial data intelligence enabling seamless physical-to-virtual integration for virtual collaboration, digital preservation, and immersive training across academic and commercial applications.

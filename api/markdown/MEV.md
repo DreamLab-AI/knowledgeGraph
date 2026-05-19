@@ -1,21 +1,249 @@
-iri:: http://narrativegoldmine.com/blockchain#MEV
-uri:: urn:visionclaw:concept:blockchain:mev
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:mev
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: MEV
-content-hash:: sha256-12-9ae3c8364beb
-legacy-term-id:: BC-8012
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#MEV
+legacy_uri:: urn:visionclaw:concept:blockchain:mev
 public:: true
+
+# MEV
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:87d57698427014f459621583878e5425860c8ef3f074bc8e90ad5f4ddd9c5953",
+  "@type": "Page",
+  "vc:slug": "mev",
+  "title": "MEV",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:consensus-security",
+      "vc:label": "Consensus Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi-ecosystem",
+      "vc:label": "DeFi Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:front-running",
+      "vc:label": "Front-Running"
+    },
+    {
+      "@id": "urn:visionflow:linked:proposer-builder-separation",
+      "vc:label": "Proposer-Builder Separation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-ordering",
+      "vc:label": "Transaction Ordering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mempool",
+      "vc:label": "Mempool"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9ae3c8364beb"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#MEV"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8012"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "MEV"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:mev"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:mev"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:87d57698427014f459621583878e5425860c8ef3f074bc8e90ad5f4ddd9c5953@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:mev",
+  "@type": "OntologyClass",
+  "label": "MEV",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:87d57698427014f459621583878e5425860c8ef3f074bc8e90ad5f4ddd9c5953"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:87d57698427014f459621583878e5425860c8ef3f074bc8e90ad5f4ddd9c5953@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:front-running",
+      "vc:label": "Front-Running"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:mev:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:87d57698427014f459621583878e5425860c8ef3f074bc8e90ad5f4ddd9c5953"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Consensus Security]]",
+      "resolved": "urn:visionflow:linked:consensus-security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi Ecosystem]]",
+      "resolved": "urn:visionflow:linked:de-fi-ecosystem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Front-Running]]",
+      "resolved": "urn:visionflow:linked:front-running",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Proposer-Builder Separation]]",
+      "resolved": "urn:visionflow:linked:proposer-builder-separation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transaction Ordering]]",
+      "resolved": "urn:visionflow:linked:transaction-ordering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mempool]]",
+      "resolved": "urn:visionflow:owl:class:mempool",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:87d57698427014f459621583878e5425860c8ef3f074bc8e90ad5f4ddd9c5953@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.

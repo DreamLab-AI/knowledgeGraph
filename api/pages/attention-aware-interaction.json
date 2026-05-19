@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc",
+  "title": "Attention Aware Interaction",
+  "slug": "attention-aware-interaction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:attention-aware-interaction",
+  "domain": "artificial-intelligence",
+  "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:attention-modeling",
+        "label": "Attention Modeling"
+      },
+      {
+        "id": "urn:visionflow:linked:eye-tracking-hardware",
+        "label": "Eye Tracking Hardware"
+      },
+      {
+        "id": "urn:visionflow:linked:gaze-detection-algorithms",
+        "label": "Gaze Detection Algorithms"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-interfaces",
+        "label": "Adaptive Interfaces"
+      },
+      {
+        "id": "urn:visionflow:linked:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:gaze-based-selection",
+        "label": "Gaze-Based Selection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-interfaces",
+      "label": "Adaptive Interfaces"
+    },
+    {
+      "slug": "attention-modeling",
+      "label": "Attention Modeling"
+    },
+    {
+      "slug": "eye-tracking-hardware",
+      "label": "Eye Tracking Hardware"
+    },
+    {
+      "slug": "foveated-rendering",
+      "label": "Foveated Rendering"
+    },
+    {
+      "slug": "gaze-based-selection",
+      "label": "Gaze-Based Selection"
+    },
+    {
+      "slug": "gaze-detection-algorithms",
+      "label": "Gaze Detection Algorithms"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cognitive-feedback-interface",
+      "label": "Cognitive Feedback Interface"
+    }
+  ]
+}

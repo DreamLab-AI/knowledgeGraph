@@ -1,0 +1,211 @@
+{
+  "id": "urn:visionflow:page:65755ee38490bf138d5687d8b0de86e4af454280e09ece51bb78da705fc067e3",
+  "title": "Zero-Trust Architecture (ZTA)",
+  "slug": "zero-trust-architecture-zta",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:zero-trust-architecture-zta",
+  "domain": "spatial-computing",
+  "definition": "Security model requiring continuous verification of all entities and transactions with least-privilege access enforcement, eliminating implicit trust within metaverse network boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:security-architecture",
+      "label": "Security Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:continuous-verification",
+        "label": "Continuous Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:least-privilege-access-control",
+        "label": "Least-Privilege Access Control"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-decision-point",
+        "label": "Policy Decision Point"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:device-authentication",
+        "label": "Device Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:logging-and-monitoring",
+        "label": "Logging and Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:network-segmentation",
+        "label": "Network Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:breach-containment",
+        "label": "Breach Containment"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-access-control",
+        "label": "Dynamic Access Control"
+      },
+      {
+        "id": "urn:visionflow:linked:insider-threat-mitigation",
+        "label": "Insider Threat Mitigation"
+      },
+      {
+        "id": "urn:visionflow:linked:microsegmentation",
+        "label": "Microsegmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
+      "slug": "authorization-framework",
+      "label": "Authorization Framework"
+    },
+    {
+      "slug": "breach-containment",
+      "label": "Breach Containment"
+    },
+    {
+      "slug": "continuous-verification",
+      "label": "Continuous Verification"
+    },
+    {
+      "slug": "cybersecurity-framework",
+      "label": "Cybersecurity Framework"
+    },
+    {
+      "slug": "device-authentication",
+      "label": "Device Authentication"
+    },
+    {
+      "slug": "dynamic-access-control",
+      "label": "Dynamic Access Control"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "enisa-2024",
+      "label": "ENISA 2024"
+    },
+    {
+      "slug": "insider-threat-mitigation",
+      "label": "Insider Threat Mitigation"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "least-privilege-access-control",
+      "label": "Least-Privilege Access Control"
+    },
+    {
+      "slug": "logging-and-monitoring",
+      "label": "Logging and Monitoring"
+    },
+    {
+      "slug": "microsegmentation",
+      "label": "Microsegmentation"
+    },
+    {
+      "slug": "network-segmentation",
+      "label": "Network Segmentation"
+    },
+    {
+      "slug": "nist-sp-800-207",
+      "label": "NIST SP 800-207"
+    },
+    {
+      "slug": "policy-decision-point",
+      "label": "Policy Decision Point"
+    },
+    {
+      "slug": "policy-enforcement-point",
+      "label": "Policy Enforcement Point"
+    },
+    {
+      "slug": "security-information-and-event-management-siem",
+      "label": "Security Information and Event Management (SIEM)"
+    },
+    {
+      "slug": "threat-detection",
+      "label": "Threat Detection"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

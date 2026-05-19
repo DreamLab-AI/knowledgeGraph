@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ced5ad266c8c42d17406e07300ddb9e28aefa37420769dcbd6e68a473bebf99e",
+  "title": "Security Framework",
+  "slug": "security-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:security-framework",
+  "domain": "infrastructure",
+  "definition": "SecurityFramework is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    }
+  ]
+}

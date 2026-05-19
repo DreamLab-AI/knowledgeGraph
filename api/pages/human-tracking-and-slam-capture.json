@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:a6165d3e89a0f5333c88ae7c44537c14570f61efaf22a24a7eef46ae079f6d93",
+  "title": "Human tracking and SLAM capture",
+  "slug": "human-tracking-and-slam-capture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
+  "domain": "robotics",
+  "definition": "Human tracking and SLAM capture is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:sensor-technology",
+      "label": "Sensor Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ]
+}

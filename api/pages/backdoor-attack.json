@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:f93b4cece1420c9af8de6dcda5a2248414934ae926059773541849f3ea9c37b2",
+  "title": "Backdoor Attack",
+  "slug": "backdoor-attack",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:backdoor-attack",
+  "domain": "artificial-intelligence",
+  "definition": "A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

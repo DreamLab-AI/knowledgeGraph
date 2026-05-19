@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:8a4d5b070cd1551c06a08fa94e8592c742cad0ee4feaa9ec580e1f902965fa3f",
+  "title": "De Fi Services",
+  "slug": "de-fi-services",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:de-fi-services",
+  "domain": "spatial-computing",
+  "definition": "De Fi Services is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    },
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    }
+  ]
+}

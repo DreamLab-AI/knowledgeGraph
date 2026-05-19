@@ -1,0 +1,1332 @@
+{
+  "id": "urn:visionflow:page:4faf9199f5a7fb2797979540a85a2aef8715f073ec326b4c1d934095bd1cc7e4",
+  "title": "Layer2",
+  "slug": "layer2",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:layer2",
+  "domain": "blockchain",
+  "definition": "Secondary protocols built on top of Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit state changes to the main chain, achieving higher throughput (10-10000x), lower fees (90-99.9% reduction), and improved user experience while inheriting base layer security guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "production-ready",
+  "status": "production",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "across-protocol",
+      "label": "Across-Protocol"
+    },
+    {
+      "slug": "agg-layer",
+      "label": "AggLayer"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI-inference"
+    },
+    {
+      "slug": "alchemy",
+      "label": "Alchemy"
+    },
+    {
+      "slug": "alex",
+      "label": "ALEX"
+    },
+    {
+      "slug": "alt-layer",
+      "label": "AltLayer"
+    },
+    {
+      "slug": "amp",
+      "label": "AMP"
+    },
+    {
+      "slug": "anoma",
+      "label": "Anoma"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "arbitrum-bridge",
+      "label": "Arbitrum-Bridge"
+    },
+    {
+      "slug": "arbitrum-nitro",
+      "label": "Arbitrum-Nitro"
+    },
+    {
+      "slug": "arbitrum-one",
+      "label": "Arbitrum-One"
+    },
+    {
+      "slug": "arbitrum-orbit",
+      "label": "Arbitrum-Orbit"
+    },
+    {
+      "slug": "argent",
+      "label": "Argent"
+    },
+    {
+      "slug": "ark",
+      "label": "Ark"
+    },
+    {
+      "slug": "arkadiko",
+      "label": "Arkadiko"
+    },
+    {
+      "slug": "astria",
+      "label": "Astria"
+    },
+    {
+      "slug": "atomic-swaps",
+      "label": "Atomic-Swaps"
+    },
+    {
+      "slug": "avail",
+      "label": "Avail"
+    },
+    {
+      "slug": "axelar",
+      "label": "Axelar"
+    },
+    {
+      "slug": "axie-infinity",
+      "label": "Axie-Infinity"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
+      "slug": "base",
+      "label": "Base"
+    },
+    {
+      "slug": "bit-vm",
+      "label": "BitVM"
+    },
+    {
+      "slug": "bitcoin-ordinals",
+      "label": "Bitcoin-Ordinals"
+    },
+    {
+      "slug": "bitcoin-triggers",
+      "label": "Bitcoin-Triggers"
+    },
+    {
+      "slug": "bitfinex",
+      "label": "Bitfinex"
+    },
+    {
+      "slug": "bitlight-wallet",
+      "label": "Bitlight-Wallet"
+    },
+    {
+      "slug": "blast",
+      "label": "Blast"
+    },
+    {
+      "slug": "blockchain-scaling",
+      "label": "BlockchainScaling"
+    },
+    {
+      "slug": "blockchain-trilemma",
+      "label": "Blockchain-Trilemma"
+    },
+    {
+      "slug": "boba-network",
+      "label": "Boba-Network"
+    },
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "braavos",
+      "label": "Braavos"
+    },
+    {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
+      "slug": "bridge-hacks",
+      "label": "bridge-hacks"
+    },
+    {
+      "slug": "bridge-security",
+      "label": "bridge-security"
+    },
+    {
+      "slug": "bungee",
+      "label": "Bungee"
+    },
+    {
+      "slug": "c",
+      "label": "C++"
+    },
+    {
+      "slug": "cairo",
+      "label": "Cairo"
+    },
+    {
+      "slug": "cairo-1-0",
+      "label": "Cairo-1.0"
+    },
+    {
+      "slug": "caldera",
+      "label": "Caldera"
+    },
+    {
+      "slug": "camelot",
+      "label": "Camelot"
+    },
+    {
+      "slug": "canonical-bridge",
+      "label": "canonical-bridge"
+    },
+    {
+      "slug": "cash-app",
+      "label": "Cash-App"
+    },
+    {
+      "slug": "celer-network",
+      "label": "Celer-Network"
+    },
+    {
+      "slug": "celestia",
+      "label": "Celestia"
+    },
+    {
+      "slug": "centralized-operators",
+      "label": "centralized-operators"
+    },
+    {
+      "slug": "chainlink-ccip",
+      "label": "Chainlink-CCIP"
+    },
+    {
+      "slug": "chainlink-fss",
+      "label": "Chainlink-FSS"
+    },
+    {
+      "slug": "channel-factories",
+      "label": "channel-factories"
+    },
+    {
+      "slug": "chaumian-e-cash",
+      "label": "Chaumian-e-cash"
+    },
+    {
+      "slug": "checktemplateverify",
+      "label": "CHECKTEMPLATEVERIFY"
+    },
+    {
+      "slug": "clarity",
+      "label": "Clarity"
+    },
+    {
+      "slug": "client-side-validation",
+      "label": "client-side-validation"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "compliance-oracles",
+      "label": "Compliance-Oracles"
+    },
+    {
+      "slug": "conduit",
+      "label": "Conduit"
+    },
+    {
+      "slug": "confidential-transactions",
+      "label": "Confidential-Transactions"
+    },
+    {
+      "slug": "connext",
+      "label": "Connext"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "consensus-mechanisms"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus-Mechanisms"
+    },
+    {
+      "slug": "consumer-applications",
+      "label": "consumer-applications"
+    },
+    {
+      "slug": "consumer-crypto",
+      "label": "consumer-crypto"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "covenant-opcodes",
+      "label": "Covenant-opcodes"
+    },
+    {
+      "slug": "cross-chain-amms",
+      "label": "cross-chain-AMMs"
+    },
+    {
+      "slug": "cross-chain-smart-contracts",
+      "label": "cross-chain-smart-contracts"
+    },
+    {
+      "slug": "cross-l2-messaging",
+      "label": "cross-L2-messaging"
+    },
+    {
+      "slug": "cryptocurrency-infrastructure",
+      "label": "CryptocurrencyInfrastructure"
+    },
+    {
+      "slug": "cryptoeconomic-security",
+      "label": "cryptoeconomic-security"
+    },
+    {
+      "slug": "cryptographic-primitives",
+      "label": "cryptographic-primitives"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    },
+    {
+      "slug": "danksharding",
+      "label": "Danksharding"
+    },
+    {
+      "slug": "daos",
+      "label": "DAOs"
+    },
+    {
+      "slug": "das",
+      "label": "DAS"
+    },
+    {
+      "slug": "data-availability",
+      "label": "Data-Availability"
+    },
+    {
+      "slug": "data-availability-problem",
+      "label": "data-availability-problem"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-fi-llama",
+      "label": "DeFiLlama"
+    },
+    {
+      "slug": "decentralized-prover-network",
+      "label": "decentralized-prover-network"
+    },
+    {
+      "slug": "decentralized-sequencers",
+      "label": "decentralized-sequencers"
+    },
+    {
+      "slug": "decentralized-systems",
+      "label": "DecentralizedSystems"
+    },
+    {
+      "slug": "deterministic-execution",
+      "label": "deterministic-execution"
+    },
+    {
+      "slug": "distributed-proving",
+      "label": "distributed-proving"
+    },
+    {
+      "slug": "dune-analytics",
+      "label": "Dune-Analytics"
+    },
+    {
+      "slug": "eigen-da",
+      "label": "EigenDA"
+    },
+    {
+      "slug": "eigen-layer",
+      "label": "EigenLayer"
+    },
+    {
+      "slug": "eip-4844",
+      "label": "EIP-4844"
+    },
+    {
+      "slug": "eltoo",
+      "label": "eltoo"
+    },
+    {
+      "slug": "encrypted-mempools",
+      "label": "encrypted-mempools"
+    },
+    {
+      "slug": "erc-20",
+      "label": "ERC-20"
+    },
+    {
+      "slug": "erc-4337",
+      "label": "ERC-4337"
+    },
+    {
+      "slug": "escape-hatches",
+      "label": "escape-hatches"
+    },
+    {
+      "slug": "espresso",
+      "label": "Espresso"
+    },
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "evm-equivalence",
+      "label": "EVM-equivalence"
+    },
+    {
+      "slug": "ezkl",
+      "label": "EZKL"
+    },
+    {
+      "slug": "fair-sequencing-service",
+      "label": "Fair-Sequencing-Service"
+    },
+    {
+      "slug": "farcaster",
+      "label": "Farcaster"
+    },
+    {
+      "slug": "fedimint",
+      "label": "Fedimint"
+    },
+    {
+      "slug": "flashbots-suave",
+      "label": "Flashbots-SUAVE"
+    },
+    {
+      "slug": "foundry",
+      "label": "Foundry"
+    },
+    {
+      "slug": "fpga-acceleration",
+      "label": "FPGA-acceleration"
+    },
+    {
+      "slug": "fraud-proof",
+      "label": "fraud-proof"
+    },
+    {
+      "slug": "fraud-proof-games",
+      "label": "fraud-proof-games"
+    },
+    {
+      "slug": "fraud-proofs",
+      "label": "fraud-proofs"
+    },
+    {
+      "slug": "fraxtal",
+      "label": "Fraxtal"
+    },
+    {
+      "slug": "friend-tech",
+      "label": "friend.tech"
+    },
+    {
+      "slug": "fuel",
+      "label": "Fuel"
+    },
+    {
+      "slug": "functionaries",
+      "label": "functionaries"
+    },
+    {
+      "slug": "functionary",
+      "label": "functionary"
+    },
+    {
+      "slug": "fungible-assets",
+      "label": "Fungible-Assets"
+    },
+    {
+      "slug": "gaming",
+      "label": "gaming"
+    },
+    {
+      "slug": "gaming",
+      "label": "Gaming"
+    },
+    {
+      "slug": "gamma",
+      "label": "Gamma"
+    },
+    {
+      "slug": "gas-fees",
+      "label": "gas-fees"
+    },
+    {
+      "slug": "gasless-transactions",
+      "label": "gasless-transactions"
+    },
+    {
+      "slug": "gelato",
+      "label": "Gelato"
+    },
+    {
+      "slug": "giza",
+      "label": "Giza"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "gnosis",
+      "label": "Gnosis"
+    },
+    {
+      "slug": "gnosis-chain",
+      "label": "Gnosis-Chain"
+    },
+    {
+      "slug": "gpu-proving",
+      "label": "GPU-proving"
+    },
+    {
+      "slug": "groth16",
+      "label": "Groth16"
+    },
+    {
+      "slug": "growthepie",
+      "label": "Growthepie"
+    },
+    {
+      "slug": "hardhat",
+      "label": "Hardhat"
+    },
+    {
+      "slug": "hop-protocol",
+      "label": "Hop-Protocol"
+    },
+    {
+      "slug": "hot-shot",
+      "label": "HotShot"
+    },
+    {
+      "slug": "hsms",
+      "label": "HSMs"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "hyperchains",
+      "label": "Hyperchains"
+    },
+    {
+      "slug": "immutable-x",
+      "label": "ImmutableX"
+    },
+    {
+      "slug": "intent-based-protocols",
+      "label": "intent-based-protocols"
+    },
+    {
+      "slug": "intent-solvers",
+      "label": "intent-solvers"
+    },
+    {
+      "slug": "interactive-fraud-proofs",
+      "label": "interactive-fraud-proofs"
+    },
+    {
+      "slug": "issued-assets",
+      "label": "Issued-Assets"
+    },
+    {
+      "slug": "jumper-exchange",
+      "label": "Jumper.exchange"
+    },
+    {
+      "slug": "kakarot",
+      "label": "Kakarot"
+    },
+    {
+      "slug": "keysend",
+      "label": "Keysend"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "kzg-commitments",
+      "label": "KZG-commitments"
+    },
+    {
+      "slug": "l2-beat",
+      "label": "L2Beat"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
+      "slug": "layer1",
+      "label": "Layer1"
+    },
+    {
+      "slug": "layer2-finance",
+      "label": "layer2.finance"
+    },
+    {
+      "slug": "layer3",
+      "label": "Layer3"
+    },
+    {
+      "slug": "light-client-bridges",
+      "label": "Light-Client-Bridges"
+    },
+    {
+      "slug": "linea",
+      "label": "Linea"
+    },
+    {
+      "slug": "liquid",
+      "label": "Liquid"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid-Network"
+    },
+    {
+      "slug": "liquidity-networks",
+      "label": "Liquidity-Networks"
+    },
+    {
+      "slug": "lnurl",
+      "label": "LNURL"
+    },
+    {
+      "slug": "lock-and-mint",
+      "label": "Lock-and-Mint"
+    },
+    {
+      "slug": "mantle",
+      "label": "Mantle"
+    },
+    {
+      "slug": "mass-exit",
+      "label": "mass-exit"
+    },
+    {
+      "slug": "matic-network",
+      "label": "Matic-Network"
+    },
+    {
+      "slug": "merge-mining",
+      "label": "merge-mining"
+    },
+    {
+      "slug": "merkle-proofs",
+      "label": "Merkle-proofs"
+    },
+    {
+      "slug": "merkle-roots",
+      "label": "Merkle-roots"
+    },
+    {
+      "slug": "meta-mask",
+      "label": "MetaMask"
+    },
+    {
+      "slug": "metis",
+      "label": "Metis"
+    },
+    {
+      "slug": "mode",
+      "label": "Mode"
+    },
+    {
+      "slug": "modular-architecture",
+      "label": "modular-architecture"
+    },
+    {
+      "slug": "modular-data-availability",
+      "label": "modular-data-availability"
+    },
+    {
+      "slug": "modulus-labs",
+      "label": "Modulus-Labs"
+    },
+    {
+      "slug": "multi-sig",
+      "label": "multi-sig"
+    },
+    {
+      "slug": "multi-signature",
+      "label": "multi-signature"
+    },
+    {
+      "slug": "nakamoto-release",
+      "label": "Nakamoto-Release"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nfts",
+      "label": "NFTs"
+    },
+    {
+      "slug": "nil-foundation",
+      "label": "=nil; Foundation"
+    },
+    {
+      "slug": "nitro",
+      "label": "Nitro"
+    },
+    {
+      "slug": "nomic",
+      "label": "Nomic"
+    },
+    {
+      "slug": "nxtp",
+      "label": "NXTP"
+    },
+    {
+      "slug": "omg-network",
+      "label": "OMG-Network"
+    },
+    {
+      "slug": "on-chain-ai",
+      "label": "on-chain-AI"
+    },
+    {
+      "slug": "onion-routing",
+      "label": "onion-routing"
+    },
+    {
+      "slug": "op-cat",
+      "label": "OP_CAT"
+    },
+    {
+      "slug": "op-stack",
+      "label": "OP-Stack"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "optimism-bridge",
+      "label": "Optimism-Bridge"
+    },
+    {
+      "slug": "optimism-mainnet",
+      "label": "Optimism-Mainnet"
+    },
+    {
+      "slug": "optimism-superchain",
+      "label": "Optimism-Superchain"
+    },
+    {
+      "slug": "optimistic-bridges",
+      "label": "Optimistic-Bridges"
+    },
+    {
+      "slug": "orbiter-finance",
+      "label": "Orbiter-Finance"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "pathfinding-algorithms",
+      "label": "pathfinding-algorithms"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "paymasters",
+      "label": "Paymasters"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "payment-channel"
+    },
+    {
+      "slug": "pedersen-commitments",
+      "label": "Pedersen-commitments"
+    },
+    {
+      "slug": "perpetual-protocol",
+      "label": "Perpetual-Protocol"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "slug": "plasma",
+      "label": "Plasma"
+    },
+    {
+      "slug": "plonk",
+      "label": "PLONK"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "polygon-2-0",
+      "label": "Polygon-2.0"
+    },
+    {
+      "slug": "polygon-agg-layer",
+      "label": "Polygon-AggLayer"
+    },
+    {
+      "slug": "polygon-hermez",
+      "label": "Polygon-Hermez"
+    },
+    {
+      "slug": "polygon-plasma",
+      "label": "Polygon-Plasma"
+    },
+    {
+      "slug": "polygon-po-s",
+      "label": "Polygon-PoS"
+    },
+    {
+      "slug": "polygon-proof-aggregation",
+      "label": "Polygon-proof-aggregation"
+    },
+    {
+      "slug": "polygon-zk-evm",
+      "label": "Polygon-zkEVM"
+    },
+    {
+      "slug": "powpeg",
+      "label": "Powpeg"
+    },
+    {
+      "slug": "prediction-markets",
+      "label": "prediction-markets"
+    },
+    {
+      "slug": "private-state",
+      "label": "private-state"
+    },
+    {
+      "slug": "proof-markets",
+      "label": "proof-markets"
+    },
+    {
+      "slug": "proof-of-play",
+      "label": "Proof-of-Play"
+    },
+    {
+      "slug": "proof-of-transfer",
+      "label": "Proof-of-Transfer"
+    },
+    {
+      "slug": "ptlcs",
+      "label": "PTLCs"
+    },
+    {
+      "slug": "public-goods-network",
+      "label": "Public-Goods-Network"
+    },
+    {
+      "slug": "public-state",
+      "label": "public-state"
+    },
+    {
+      "slug": "quick-node",
+      "label": "QuickNode"
+    },
+    {
+      "slug": "rabby",
+      "label": "Rabby"
+    },
+    {
+      "slug": "radiant-capital",
+      "label": "Radiant-Capital"
+    },
+    {
+      "slug": "radius",
+      "label": "Radius"
+    },
+    {
+      "slug": "raiden-network",
+      "label": "Raiden-Network"
+    },
+    {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow-Wallet"
+    },
+    {
+      "slug": "rari-chain",
+      "label": "Rari-Chain"
+    },
+    {
+      "slug": "retro-pgf",
+      "label": "RetroPGF"
+    },
+    {
+      "slug": "rgb-core",
+      "label": "RGB-Core"
+    },
+    {
+      "slug": "rgb-node",
+      "label": "RGB-Node"
+    },
+    {
+      "slug": "rgb-protocol",
+      "label": "RGB-Protocol"
+    },
+    {
+      "slug": "risc-zero",
+      "label": "RISC-Zero"
+    },
+    {
+      "slug": "rollkit",
+      "label": "Rollkit"
+    },
+    {
+      "slug": "rollup",
+      "label": "rollup"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "ronin",
+      "label": "Ronin"
+    },
+    {
+      "slug": "rootstock",
+      "label": "Rootstock"
+    },
+    {
+      "slug": "s-btc",
+      "label": "sBTC"
+    },
+    {
+      "slug": "scaffold-eth",
+      "label": "scaffold-eth"
+    },
+    {
+      "slug": "scaling-solutions",
+      "label": "scaling-solutions"
+    },
+    {
+      "slug": "scroll",
+      "label": "Scroll"
+    },
+    {
+      "slug": "sequencer",
+      "label": "sequencer"
+    },
+    {
+      "slug": "sequencer",
+      "label": "Sequencer"
+    },
+    {
+      "slug": "sequencer-censorship",
+      "label": "sequencer-censorship"
+    },
+    {
+      "slug": "session-keys",
+      "label": "session-keys"
+    },
+    {
+      "slug": "shared-liquidity-layers",
+      "label": "shared-liquidity-layers"
+    },
+    {
+      "slug": "shared-sequencers",
+      "label": "shared-sequencers"
+    },
+    {
+      "slug": "shopify",
+      "label": "Shopify"
+    },
+    {
+      "slug": "sighash-anyprevout",
+      "label": "SIGHASH_ANYPREVOUT"
+    },
+    {
+      "slug": "single-use-seals",
+      "label": "single-use-seals"
+    },
+    {
+      "slug": "smart-contract-bugs",
+      "label": "smart-contract-bugs"
+    },
+    {
+      "slug": "smart-contract-wallets",
+      "label": "smart-contract-wallets"
+    },
+    {
+      "slug": "social-recovery",
+      "label": "social-recovery"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "soneium",
+      "label": "Soneium"
+    },
+    {
+      "slug": "sony",
+      "label": "Sony"
+    },
+    {
+      "slug": "sorare",
+      "label": "Sorare"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "stacks",
+      "label": "Stacks"
+    },
+    {
+      "slug": "stargate",
+      "label": "Stargate"
+    },
+    {
+      "slug": "stark-ex",
+      "label": "StarkEx"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
+    },
+    {
+      "slug": "starknet-recursive-proofs",
+      "label": "Starknet-recursive-proofs"
+    },
+    {
+      "slug": "starknet-stack",
+      "label": "Starknet-Stack"
+    },
+    {
+      "slug": "streaming-payments",
+      "label": "streaming-payments"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
+    },
+    {
+      "slug": "strong-federation",
+      "label": "Strong-Federation"
+    },
+    {
+      "slug": "stylus",
+      "label": "Stylus"
+    },
+    {
+      "slug": "suave",
+      "label": "SUAVE"
+    },
+    {
+      "slug": "superchain",
+      "label": "Superchain"
+    },
+    {
+      "slug": "synapse",
+      "label": "Synapse"
+    },
+    {
+      "slug": "synthetix",
+      "label": "Synthetix"
+    },
+    {
+      "slug": "taiko",
+      "label": "Taiko"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "taproot-channels",
+      "label": "Taproot-Channels"
+    },
+    {
+      "slug": "tether",
+      "label": "tether"
+    },
+    {
+      "slug": "third-party-bridges",
+      "label": "third-party-bridges"
+    },
+    {
+      "slug": "thirdweb",
+      "label": "thirdweb"
+    },
+    {
+      "slug": "threshold-encryption",
+      "label": "threshold-encryption"
+    },
+    {
+      "slug": "threshold-network",
+      "label": "Threshold-Network"
+    },
+    {
+      "slug": "token-terminal",
+      "label": "Token-Terminal"
+    },
+    {
+      "slug": "trampoline-routing",
+      "label": "Trampoline-routing"
+    },
+    {
+      "slug": "turing-complete",
+      "label": "Turing-complete"
+    },
+    {
+      "slug": "tvl",
+      "label": "TVL"
+    },
+    {
+      "slug": "twitter-tips",
+      "label": "Twitter-Tips"
+    },
+    {
+      "slug": "two-way-peg",
+      "label": "two-way-peg"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "validator",
+      "label": "validator"
+    },
+    {
+      "slug": "validity-proofs",
+      "label": "validity-proofs"
+    },
+    {
+      "slug": "validium",
+      "label": "Validium"
+    },
+    {
+      "slug": "velodrome",
+      "label": "Velodrome"
+    },
+    {
+      "slug": "verifier",
+      "label": "Verifier"
+    },
+    {
+      "slug": "virtual-utxo",
+      "label": "Virtual-UTXO"
+    },
+    {
+      "slug": "visa",
+      "label": "Visa"
+    },
+    {
+      "slug": "volition",
+      "label": "Volition"
+    },
+    {
+      "slug": "wallet-of-satoshi",
+      "label": "Wallet-of-Satoshi"
+    },
+    {
+      "slug": "wasm",
+      "label": "WASM"
+    },
+    {
+      "slug": "wormhole",
+      "label": "Wormhole"
+    },
+    {
+      "slug": "x-dai",
+      "label": "xDai"
+    },
+    {
+      "slug": "xai",
+      "label": "Xai"
+    },
+    {
+      "slug": "zk-evm",
+      "label": "zkEVM"
+    },
+    {
+      "slug": "zk-kyc",
+      "label": "zk-KYC"
+    },
+    {
+      "slug": "zk-ml",
+      "label": "zkML"
+    },
+    {
+      "slug": "zk-porter",
+      "label": "zkPorter"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "zkSNARK"
+    },
+    {
+      "slug": "zk-stark",
+      "label": "zkSTARK"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "zk-sync-bridge",
+      "label": "zkSync-Bridge"
+    },
+    {
+      "slug": "zk-sync-era",
+      "label": "zkSync-Era"
+    },
+    {
+      "slug": "zk-sync-hyperchains",
+      "label": "zkSync-Hyperchains"
+    },
+    {
+      "slug": "zk-sync-proof-compression",
+      "label": "zkSync-proof-compression"
+    },
+    {
+      "slug": "zora",
+      "label": "Zora"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "account-abstraction"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "asset-tokenization"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "cross-chain-messaging",
+      "label": "cross-chain-messaging"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning-Network"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "micropayments",
+      "label": "micropayments"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "rust",
+      "label": "Rust"
+    },
+    {
+      "slug": "script",
+      "label": "Script"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "smart-contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "smart-contracts"
+    },
+    {
+      "slug": "state-channel",
+      "label": "StateChannel"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    }
+  ]
+}

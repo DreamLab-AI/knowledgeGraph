@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:96bb0de4e8cccc607abb77e96fe5f36cf1ff91b9c8a5e150aef66fb8a42271bb",
+  "title": "High Risk AI System",
+  "slug": "high-risk-ai-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:high-risk-ai-system",
+  "domain": "artificial-intelligence",
+  "definition": "An AI system classified as presenting significant risk to health, safety, fundamental rights, or other critical interests based on its intended purpose, deployment context, and potential for substantial adverse impact, subject to stringent regulatory requirements under the EU AI Act and similar frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:conformity-assessment-ai-0103",
+        "label": "Conformity Assessment (AI-0103)"
+      },
+      {
+        "id": "urn:visionflow:linked:human-oversight-ai-0041",
+        "label": "Human Oversight (AI-0041)"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "conformity-assessment-ai-0103",
+      "label": "Conformity Assessment (AI-0103)"
+    },
+    {
+      "slug": "human-oversight-ai-0041",
+      "label": "Human Oversight (AI-0041)"
+    },
+    {
+      "slug": "user-experience",
+      "label": "user experience"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "Introduction to me"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    }
+  ]
+}

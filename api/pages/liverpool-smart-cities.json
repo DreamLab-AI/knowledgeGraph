@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885",
+  "title": "Liverpool Smart Cities",
+  "slug": "liverpool-smart-cities",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:liverpool-smart-cities",
+  "domain": "infrastructure",
+  "definition": "Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "established",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "north-england-innovation-corridor",
+      "label": "North England Innovation Corridor"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ],
+  "backlinks": []
+}

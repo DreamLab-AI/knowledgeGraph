@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:57dabb066feb213796b662f97e48d47d303c8548cc435e34465bded6ca85213b",
+  "title": "Scene Optimization",
+  "slug": "scene-optimization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scene-optimization",
+  "domain": "spatial-computing",
+  "definition": "SceneOptimization is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:render-pipeline",
+      "label": "Render Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

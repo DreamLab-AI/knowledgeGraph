@@ -1,366 +1,1670 @@
-iri:: http://narrativegoldmine.com/ontology#StableDiffusion
-uri:: urn:visionclaw:concept:artificial-intelligence:stable-diffusion
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:stable-diffusion
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Stable Diffusion
-content-hash:: sha256-12-2f10e6168fa6
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#StableDiffusion
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:stable-diffusion
 public:: true
 
+# Stable Diffusion
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1970ef0bfff8a09fee2d1c76367459e4e0f2923f54afb02771cd4b7084027d57",
+  "@type": "Page",
+  "vc:slug": "stable-diffusion",
+  "title": "Stable Diffusion",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adam-w-optimiser",
+      "vc:label": "AdamW Optimiser"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:classifier-free-guidance",
+      "vc:label": "Classifier-Free Guidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "vc:label": "ComputerVisionDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-net-and-similar",
+      "vc:label": "ControlNet and similar"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-networks",
+      "vc:label": "Convolutional Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-aidomain",
+      "vc:label": "CreativeAIDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-ml-open-rail-m-licence",
+      "vc:label": "CreativeML Open RAIL-M Licence"
+    },
+    {
+      "@id": "urn:visionflow:linked:cvpr",
+      "vc:label": "CVPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:denoising-diffusion-probabilistic-models",
+      "vc:label": "Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:denoising-network",
+      "vc:label": "Denoising Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ecosystem-layer",
+      "vc:label": "EcosystemLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:flash-attention",
+      "vc:label": "Flash Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:flow-matching",
+      "vc:label": "Flow Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-modelling-domain",
+      "vc:label": "GenerativeModellingDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face-diffusers",
+      "vc:label": "Hugging Face Diffusers"
+    },
+    {
+      "@id": "urn:visionflow:linked:iclr",
+      "vc:label": "ICLR"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-editing",
+      "vc:label": "Image Editing"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-synthesis",
+      "vc:label": "Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:laion-dataset",
+      "vc:label": "LAION Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion-model",
+      "vc:label": "Latent Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-space-compression",
+      "vc:label": "Latent Space Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-architecture-layer",
+      "vc:label": "ModelArchitectureLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips",
+      "vc:label": "NeurIPS"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-scheduler",
+      "vc:label": "Noise Scheduler"
+    },
+    {
+      "@id": "urn:visionflow:linked:outpainting",
+      "vc:label": "Outpainting"
+    },
+    {
+      "@id": "urn:visionflow:linked:rectified-flow",
+      "vc:label": "Rectified Flow"
+    },
+    {
+      "@id": "urn:visionflow:linked:sampler",
+      "vc:label": "Sampler"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-matching",
+      "vc:label": "Score Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-differential-equations",
+      "vc:label": "Stochastic Differential Equations"
+    },
+    {
+      "@id": "urn:visionflow:linked:t5-text-encoder",
+      "vc:label": "T5 Text Encoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-encoder",
+      "vc:label": "Text Encoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image-model",
+      "vc:label": "Text-to-Image Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-adoption",
+      "vc:label": "AI Adoption"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-diagram-tools",
+      "vc:label": "AI Diagram Tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ar-frame",
+      "vc:label": "AR Frame"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention",
+      "vc:label": "Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:checkpoints",
+      "vc:label": "Checkpoints"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+      "vc:label": "CLI Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui-client",
+      "vc:label": "ComfyUI Client"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
+      "vc:label": "ComfyUI Workflows"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:competition-in-ai",
+      "vc:label": "Competition in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:copyright",
+      "vc:label": "Copyright"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-attention",
+      "vc:label": "Cross Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fashion",
+      "vc:label": "Fashion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:inpainting",
+      "vc:label": "Inpainting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
+      "vc:label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "vc:label": "LoRA DoRA etc"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mixed-precision-training",
+      "vc:label": "Mixed Precision Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:style-transfer",
+      "vc:label": "Style Transfer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "alternative-terms",
+      "vc:value": "SD, LDM, Latent Diffusion Model, SDXL, SD3, Stable Diffusion XL"
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.87"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Generative AI]], [[ComfyUI]], [[LoRA DoRA etc]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8c3d92f1ab74"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#StableDiffusion"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1089"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-05-17T09:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Stable Diffusion"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.52"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:stable-diffusion"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:stable-diffusion"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.1.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1970ef0bfff8a09fee2d1c76367459e4e0f2923f54afb02771cd4b7084027d57@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:stable-diffusion",
+  "@type": "OntologyClass",
+  "label": "Stable Diffusion",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion-model",
+      "vc:label": "Latent Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image-model",
+      "vc:label": "Text-to-Image Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "production-ready",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:1970ef0bfff8a09fee2d1c76367459e4e0f2923f54afb02771cd4b7084027d57"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1970ef0bfff8a09fee2d1c76367459e4e0f2923f54afb02771cd4b7084027d57@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Stable Diffusion is a family of open-weight latent diffusion models (LDMs) developed primarily by Stability AI in collaboration with academic partners, originating from the seminal \"High-Resolution Image Synthesis with Latent Diffusion Models\" paper (Rombach et al., CompVis Heidelberg, CVPR 2022), which introduced the core architectural insight of performing the iterative denoising process in a compressed latent space rather than pixel space, enabling high-resolution synthesis on consumer GPUs by compressing 512×512 RGB images (786,432 pixels) into 64×64×4 latent tensors (16,384 values, 48× compression) via a trainable variational autoencoder (VAE) with encoder E:X→Z and decoder D:Z→X, training a U-Net denoising network ε_θ(z_t, t, τ_θ(y)) conditioned on timestep t and text prompt embeddings τ_θ(y) from CLIP text encoder ViT-L/14, applying Gaussian noise forward process q(z_t|z_{t-1}) = N(z_t; √(1-β_t)z_{t-1}, β_tI) over T=1000 steps and learning reverse denoising p_θ(z_{t-1}|z_t) to minimise L = E_{ε∼N(0,1),t}[‖ε − ε_θ(z_t, t, τ_θ(y))‖²] integrating cross-attention between U-Net spatial features and CLIP embeddings for text conditioning (Rombach et al. 2022 achieving FID 12.64 on ",
+  "vc:qualityScore": {
+    "@value": "0.52",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.87",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-net-and-similar",
+      "vc:label": "ControlNet and similar"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-scheduler",
+      "vc:label": "Noise Scheduler"
+    },
+    {
+      "@id": "urn:visionflow:linked:sampler",
+      "vc:label": "Sampler"
+    },
+    {
+      "@id": "urn:visionflow:linked:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-attention",
+      "vc:label": "Cross Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "vc:label": "LoRA DoRA etc"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:denoising-network",
+      "vc:label": "Denoising Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:laion-dataset",
+      "vc:label": "LAION Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-encoder",
+      "vc:label": "Text Encoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:image-editing",
+      "vc:label": "Image Editing"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-synthesis",
+      "vc:label": "Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:outpainting",
+      "vc:label": "Outpainting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-diagram-tools",
+      "vc:label": "AI Diagram Tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:inpainting",
+      "vc:label": "Inpainting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:style-transfer",
+      "vc:label": "Style Transfer"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:classifier-free-guidance",
+      "vc:label": "Classifier-Free Guidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:denoising-diffusion-probabilistic-models",
+      "vc:label": "Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:flow-matching",
+      "vc:label": "Flow Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-space-compression",
+      "vc:label": "Latent Space Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:rectified-flow",
+      "vc:label": "Rectified Flow"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-networks",
+      "vc:label": "Convolutional Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-matching",
+      "vc:label": "Score Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-differential-equations",
+      "vc:label": "Stochastic Differential Equations"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention",
+      "vc:label": "Attention"
+    }
+  ],
+  "vc:supports": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-diagram-tools",
+      "vc:label": "AI Diagram Tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ar-frame",
+      "vc:label": "AR Frame"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:checkpoints",
+      "vc:label": "Checkpoints"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fashion",
+      "vc:label": "Fashion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
+      "vc:label": "KOHYA Dreambooth and similar"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:adam-w-optimiser",
+      "vc:label": "AdamW Optimiser"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:flash-attention",
+      "vc:label": "Flash Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:t5-text-encoder",
+      "vc:label": "T5 Text Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mixed-precision-training",
+      "vc:label": "Mixed Precision Training"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-adoption",
+      "vc:label": "AI Adoption"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui-client",
+      "vc:label": "ComfyUI Client"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
+      "vc:label": "ComfyUI Workflows"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:competition-in-ai",
+      "vc:label": "Competition in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:copyright",
+      "vc:label": "Copyright"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    }
+  ],
+  "vc:standardizedBy": [
+    {
+      "@id": "urn:visionflow:linked:creative-ml-open-rail-m-licence",
+      "vc:label": "CreativeML Open RAIL-M Licence"
+    },
+    {
+      "@id": "urn:visionflow:linked:cvpr",
+      "vc:label": "CVPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face-diffusers",
+      "vc:label": "Hugging Face Diffusers"
+    },
+    {
+      "@id": "urn:visionflow:linked:iclr",
+      "vc:label": "ICLR"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips",
+      "vc:label": "NeurIPS"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "vc:label": "LoRA DoRA etc"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:stable-diffusion:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1970ef0bfff8a09fee2d1c76367459e4e0f2923f54afb02771cd4b7084027d57"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AdamW Optimiser]]",
+      "resolved": "urn:visionflow:linked:adam-w-optimiser",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autoregressive Model]]",
+      "resolved": "urn:visionflow:linked:autoregressive-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Classifier-Free Guidance]]",
+      "resolved": "urn:visionflow:linked:classifier-free-guidance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CLIP]]",
+      "resolved": "urn:visionflow:linked:clip",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ComputerVisionDomain]]",
+      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ControlNet and similar]]",
+      "resolved": "urn:visionflow:linked:control-net-and-similar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Networks]]",
+      "resolved": "urn:visionflow:linked:convolutional-neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CreativeAIDomain]]",
+      "resolved": "urn:visionflow:linked:creative-aidomain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CreativeML Open RAIL-M Licence]]",
+      "resolved": "urn:visionflow:linked:creative-ml-open-rail-m-licence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CVPR]]",
+      "resolved": "urn:visionflow:linked:cvpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Denoising Diffusion Probabilistic Models]]",
+      "resolved": "urn:visionflow:linked:denoising-diffusion-probabilistic-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Denoising Network]]",
+      "resolved": "urn:visionflow:linked:denoising-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diffusion Model]]",
+      "resolved": "urn:visionflow:linked:diffusion-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EcosystemLayer]]",
+      "resolved": "urn:visionflow:linked:ecosystem-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Flash Attention]]",
+      "resolved": "urn:visionflow:linked:flash-attention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Flow Matching]]",
+      "resolved": "urn:visionflow:linked:flow-matching",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foundation Model]]",
+      "resolved": "urn:visionflow:linked:foundation-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GenerativeModellingDomain]]",
+      "resolved": "urn:visionflow:linked:generative-modelling-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPU Compute]]",
+      "resolved": "urn:visionflow:linked:gpu-compute",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hugging Face Diffusers]]",
+      "resolved": "urn:visionflow:linked:hugging-face-diffusers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICLR]]",
+      "resolved": "urn:visionflow:linked:iclr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Image Editing]]",
+      "resolved": "urn:visionflow:linked:image-editing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Image Synthesis]]",
+      "resolved": "urn:visionflow:linked:image-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Information Theory]]",
+      "resolved": "urn:visionflow:linked:information-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LAION Dataset]]",
+      "resolved": "urn:visionflow:linked:laion-dataset",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Diffusion Model]]",
+      "resolved": "urn:visionflow:linked:latent-diffusion-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Space Compression]]",
+      "resolved": "urn:visionflow:linked:latent-space-compression",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ModelArchitectureLayer]]",
+      "resolved": "urn:visionflow:linked:model-architecture-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NeurIPS]]",
+      "resolved": "urn:visionflow:linked:neur-ips",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Noise Scheduler]]",
+      "resolved": "urn:visionflow:linked:noise-scheduler",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Outpainting]]",
+      "resolved": "urn:visionflow:linked:outpainting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rectified Flow]]",
+      "resolved": "urn:visionflow:linked:rectified-flow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sampler]]",
+      "resolved": "urn:visionflow:linked:sampler",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Score Matching]]",
+      "resolved": "urn:visionflow:linked:score-matching",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stochastic Differential Equations]]",
+      "resolved": "urn:visionflow:linked:stochastic-differential-equations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[T5 Text Encoder]]",
+      "resolved": "urn:visionflow:linked:t5-text-encoder",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Text Encoder]]",
+      "resolved": "urn:visionflow:linked:text-encoder",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Text-to-Image Model]]",
+      "resolved": "urn:visionflow:linked:text-to-image-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[U-Net]]",
+      "resolved": "urn:visionflow:linked:u-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VAE]]",
+      "resolved": "urn:visionflow:linked:vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Variational Autoencoder]]",
+      "resolved": "urn:visionflow:linked:variational-autoencoder",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Frameworks]]",
+      "resolved": "urn:visionflow:owl:class:agent-frameworks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Adoption]]",
+      "resolved": "urn:visionflow:owl:class:ai-adoption",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Diagram Tools]]",
+      "resolved": "urn:visionflow:owl:class:ai-diagram-tools",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Video]]",
+      "resolved": "urn:visionflow:owl:class:ai-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Anthropic Claude]]",
+      "resolved": "urn:visionflow:owl:class:anthropic-claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AR Frame]]",
+      "resolved": "urn:visionflow:owl:class:ar-frame",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Attention]]",
+      "resolved": "urn:visionflow:owl:class:attention",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Checkpoints]]",
+      "resolved": "urn:visionflow:owl:class:checkpoints",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CLI Multi-Agent Systems]]",
+      "resolved": "urn:visionflow:owl:class:cli-multi-agent-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI Client]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui-client",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI Workflows]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui-workflows",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Competition in AI]]",
+      "resolved": "urn:visionflow:owl:class:competition-in-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Copyright]]",
+      "resolved": "urn:visionflow:owl:class:copyright",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross Attention]]",
+      "resolved": "urn:visionflow:owl:class:cross-attention",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fashion]]",
+      "resolved": "urn:visionflow:owl:class:fashion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Adversarial Networks]]",
+      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative AI]]",
+      "resolved": "urn:visionflow:owl:class:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Inpainting]]",
+      "resolved": "urn:visionflow:owl:class:inpainting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[KOHYA Dreambooth and similar]]",
+      "resolved": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LoRA DoRA etc]]",
+      "resolved": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mixed Precision Training]]",
+      "resolved": "urn:visionflow:owl:class:mixed-precision-training",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Style Transfer]]",
+      "resolved": "urn:visionflow:owl:class:style-transfer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1970ef0bfff8a09fee2d1c76367459e4e0f2923f54afb02771cd4b7084027d57@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
 - ### Definition
-  - Stable Diffusion is a concept within the ngm domain.
+  - Stable Diffusion is a family of open-weight latent diffusion models (LDMs) developed primarily by Stability AI in collaboration with academic partners, originating from the seminal "High-Resolution Image Synthesis with Latent Diffusion Models" paper (Rombach et al., CompVis Heidelberg, CVPR 2022), which introduced the core architectural insight of performing the iterative denoising process in a compressed latent space rather than pixel space, enabling high-resolution synthesis on consumer GPUs by compressing 512×512 RGB images (786,432 pixels) into 64×64×4 latent tensors (16,384 values, 48× compression) via a trainable variational autoencoder (VAE) with encoder E:X→Z and decoder D:Z→X, training a U-Net denoising network ε_θ(z_t, t, τ_θ(y)) conditioned on timestep t and text prompt embeddings τ_θ(y) from CLIP text encoder ViT-L/14, applying Gaussian noise forward process q(z_t|z_{t-1}) = N(z_t; √(1-β_t)z_{t-1}, β_tI) over T=1000 steps and learning reverse denoising p_θ(z_{t-1}|z_t) to minimise L = E_{ε∼N(0,1),t}[‖ε − ε_θ(z_t, t, τ_θ(y))‖²] integrating cross-attention between U-Net spatial features and CLIP embeddings for text conditioning (Rombach et al. 2022 achieving FID 12.64 on MS-COCO 256×256 vs DALL-E FID 17.89 at 7× lower training compute); the family evolved through SD 1.4/1.5 (CompVis/RunwayML 2022, LAION-5B trained, 860M U-Net parameters, 512×512 native, still the dominant community base model with 80M+ downloads), SDXL 1.0 (Stability AI 2023, Podell et al. arXiv:2307.01952, dual CLIP text encoders ViT-L/14 + OpenCLIP ViT-bigG/14 combined 2816-dim conditioning, 3.5B parameter base U-Net with 6.6B parameter two-stage pipeline including 0.4B refiner model, native 1024×1024, OpenCLIP conditioning on image size/crop metadata improving compositional accuracy), SD 3.0 (Esser et al. arXiv:2403.03206, March 2024, Multiflow Transformer architecture replacing U-Net with DiT-based Multimodal Diffusion Transformer combining separate text and image token streams through bidirectional attention, 2B/8B parameter variants, tri-encoder conditioning CLIP ViT-L + OpenCLIP ViT-bigG + T5-XXL 4096-dim embeddings, rectified flow formulation straightening diffusion trajectories for faster sampling), SD 3.5 Large (October 2024, 8.1B parameters, improved typography and prompt adherence, SD 3.5 Large Turbo enabling 4-step inference via adversarial diffusion distillation, SD 3.5 Medium 2.6B parameters), and the FLUX.1 family (Black Forest Labs, August 2024, founded by SD original core team Robin Rombach/Andreas Blattmann/Patrick Esser after departing Stability AI, FLUX.1 [pro/dev/schnell] building on flow matching objectives with hybrid architecture combining transformer and convolution blocks, 12B parameters, FLUX.1 [schnell] achieving 1-4 step distilled inference at 2.3× throughput vs SD3, FLUX.1 becoming the dominant community generation backbone by late 2024); the ecosystem is defined by fine-tuning adapters (LoRA Low-Rank Adaptation Hu et al. 2021 decomposing weight update ΔW = BA where B∈ℝ^{d×r}, A∈ℝ^{r×k}, r≪min(d,k), enabling 2-50MB specialisation on <100 images, Civitai hosting 200K+ community LoRAs by 2025; Dreambooth Ruiz et al. 2022 class-prior preserving full fine-tuning with unique identifier token binding subject representation; Textual Inversion Gal et al. 2022 optimising new pseudo-word embedding; IP-Adapter Ye et al. 2023 image-prompt conditioning via decoupled cross-attention; ControlNet Zhang et al. 2023 adding auxiliary spatial conditioning—depth maps, edge maps, pose skeletons, segmentation masks, normal maps—through zero-initialised trainable copy of encoder layers preserving base model weights), user interfaces (Automatic1111 WebUI 35M+ downloads enabling gradio-based web access; ComfyUI node-based graph workflow composer enabling precise diffusion pipeline construction; InvokeAI; StableSwarmUI), samplers (DDIM Song et al. 2020 deterministic 50-step inference; Euler/Euler a ancestral; DPM++ 2M/2S/SDE Karras Lu et al. 2022 high-quality 20-30 step; LCM Latent Consistency Models Luo et al. 2023 4-8 step distillation; SDXL Turbo ADD adversarial diffusion distillation 1-4 step), and corporate context (Stability AI founded 2020 London by Emad Mostaque, raised $101M October 2022, released SD 1.4 August 2022 under CreativeML Open RAIL-M licence; subsequent leadership turmoil with CFO/COO departures mid-2023, Mostaque resignation March 2024 amid investor disputes over revenue projections and compute cost overruns, key researchers departing to found Black Forest Labs (FLUX), DeciAI, and other ventures; Sean Parker investment interest 2024; Stability AI restructured under new CEO Prem Akkaraju October 2024, continuing SD 3.5 and API product lines under commercial licencing with Stable Diffusion Community licence replacing RAIL-M), having democratised high-quality image generation at a scale unprecedented in computer vision—the CompVis SD paper ranks among the 10 most-cited ML papers of the 2020s with 25,000+ citations by 2026, the model has been run on an estimated 10M+ consumer devices, and the Civitai community platform hosts 200K+ derivative models representing the largest open model ecosystem in existence.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:StableDiffusion
-  - owl-role:: Concept
+  - owl-role:: GenerativeModelFamily
+  - owl-inferred:: ai:DiffusionModel, ai:LatentGenerativeModel, ai:TextToImageModel, ai:OpenSourceAIModel, ai:FoundationModel
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[GenerativeModellingDomain]], [[ComputerVisionDomain]], [[CreativeAIDomain]]
+  - implemented-in-layer:: [[ModelArchitectureLayer]], [[ApplicationLayer]], [[EcosystemLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: [[Diffusion Model]], [[Latent Diffusion Model]], [[Generative AI]], [[Text-to-Image Model]], [[Foundation Model]], [[Deep Learning]]
+  - has-part:: [[VAE]], [[U-Net]], [[CLIP]], [[Cross Attention]], [[Noise Scheduler]], [[Sampler]], [[ControlNet and similar]], [[LoRA DoRA etc]]
+  - requires:: [[GPU Compute]], [[LAION Dataset]], [[Text Encoder]], [[Denoising Network]], [[Variational Autoencoder]]
+  - enables:: [[Image Synthesis]], [[AI Video]], [[Inpainting]], [[Outpainting]], [[Image Editing]], [[Style Transfer]], [[AI Diagram Tools]]
+  - implements:: [[Denoising Diffusion Probabilistic Models]], [[Classifier-Free Guidance]], [[Flow Matching]], [[Rectified Flow]], [[Latent Space Compression]]
+  - depends-on:: [[Attention]], [[Convolutional Neural Networks]], [[Score Matching]], [[Stochastic Differential Equations]], [[Information Theory]]
+  - supports:: [[ComfyUI]], [[KOHYA Dreambooth and similar]], [[AR Frame]], [[AI Diagram Tools]], [[Fashion]], [[Checkpoints]]
+  - uses:: [[CLIP]], [[T5 Text Encoder]], [[AdamW Optimiser]], [[Mixed Precision Training]], [[Flash Attention]]
+  - contrasts-with:: [[Generative Adversarial Networks]], [[Variational Autoencoder]], [[Autoregressive Model]], [[ChatGPT]], [[AI Video]]
+  - related-to:: [[Generative AI]], [[ComfyUI Client]], [[ComfyUI Workflows]], [[AI Adoption]], [[Competition in AI]], [[Copyright]]
+  - standardized-by:: [[CVPR]], [[NeurIPS]], [[ICLR]], [[Hugging Face Diffusers]], [[CreativeML Open RAIL-M Licence]]
 
 - ### Content
-  - #Public page automatically published
-  - Stable Diffusion has emerged as a transformative force in generative AI, mainly for text to image synthesis. This open source model was developed by UK company 'Stability AI', has democratised access to high quality image workflows, empowering artists, creatives, and professionals.
-  - # Why Stable Diffusion?
-		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
-			- UK company with global impact. It is likely now winding up it's operations after difficulty generating revenue in the hyper competitive GenAI market.
-				- **Introduction**: Open-source model by StabilityAI
-					- **Cost**: Free to run on own hardware; nominal fee for online tools.
-					- **User Interface**: User-friendly through platforms like Leonardo.AI.
-					- **Strengths**: Unlimited control, good image quality, no censorship.
-					- **Weaknesses**: Requires decent hardware, steep learning curve. Questions about Stability business.
-					- **Skill Level**: Intermediate to advanced.
-				- Stable Diffusion generates realistic and imaginative images from descriptive text prompts. This core functionality allows users to translate their creative visions into visual form with remarkable accuracy and detail. Whether it's a photorealistic portrait, a surreal landscape, or an abstract concept, Stable Diffusion can bring your ideas to life with just a few words.
-				- A lot of the products you see on the market are either wrappers for the big AI companies, or else leveraging Stability models on rented cloud compute.
-					- ![ComfyUI_temp_exgja_00013_.png](../assets/ComfyUI_temp_exgja_00013_1702592236908_0.png){:width 800}
-					- ![Rife_00027.mp4](../assets/Rife_00027_1702831574413_0.mp4){:width 300}
-		- Stable Diffusion's open-source nature sets it apart from many other generative AI models.
-		- Users have free access to the model's weights and a lot of modular code, allowing them to modify, distribute, and build upon it.
-		- This openness fosters collaboration, innovation, and community driven development.
-		- Ensures that the technology is not controlled by a select few entities.
-		- For brands and private companies this allows private development of digital assets.
-		- Platforms like [Leonardo.AI](https://leonardo.ai/), [RunDiffusion](https://rundiffusion.com/) and [Automatic1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) provide intuitive and user friendly interfaces for interacting with Stable Diffusion.
-			- <iframe src="https://rundiffusion.com/" style="width: 800px; height: 600px"></iframe>
-		- These interfaces offer a range of options for customizing parameters, fine tuning models, and experimenting with different artistic styles.
-		- Stable Diffusion's flexibility extends to its ability to be fine-tuned on custom datasets.
-		- Techniques like  [[KOHYA Dreambooth and similar]] and  [[LoRA DoRA etc]] training   allow users to tailor the model to their specific needs and generate images that align with their unique artistic visions or domain-specific requirements.
-		  :LOGBOOK:
-		  CLOCK: [2024-05-12 Sun 11:12:30]--[2024-05-12 Sun 11:12:31] =>  00:00:01
-		  :END:
-			- ![ComfyUI_temp_ayipz_00012_.png](../assets/ComfyUI_temp_ayipz_00012_1702330298489_0.png){:width 300, :height 402}
-		- This opens up a world of possibilities for creating personalised images,
-			- Generating images of specific objects or individuals,
-			- Developing models for specialised domains like  [[Fashion]]  or architectural design.
-		- One of Stable Diffusion's greatest strengths is its vibrant and active community.
-		- Much of this happens on Discord and Reddit
-			- [(1832) Discord | #ad_resources | banodoco](https://discord.com/channels/1076117621407223829/1149372684220768367)
-			- ![image.png](../assets/image_1715715718817_0.png){:width 800}
-			- [comfyui (reddit.com)](https://www.reddit.com/r/comfyui/)
-			- ![image.png](../assets/image_1715715792127_0.png){:width 800}
-			- The [StableDiffusion subreddit](https://www.reddit.com/r/StableDiffusion/)
-			- The [Stability AI Discord](https://discord.gg/stabilityai) serve as hubs for sharing creations, resources, and tutorials.
-			- This collaborative environment fosters learning, inspiration, and rapid innovation
-		- <iframe src="https://openaijourney.com/comfyui-guide/" style="width: 800px; height: 600px"></iframe>
-		- <iframe src="https://comfyworkflows.com" style="width: 900px; height: 600px"></iframe>
-		- ~~Stable Diffusion 1.4~~
-			- [Available on GitHub](https://github.com/CompVis/stable-diffusion), this model is optimized for speed and efficiency,
-			- Suitable for generating images quickly, especially on less powerful hardware.
-			- Highest model diversity
-		- ~~Stable Diffusion 2.1~~
-			- Higher resolution, better prompt control
-			- Will often mess up human bodies due to constrained training
-			- More resource intensive
-			- Less compatible extensions
-			- Likely the last update from the team, most of whom have left following the departure of founder [Emad Mostaque](https://en.wikipedia.org/wiki/Emad_Mostaque).
-			- This is a "best practice" update to SDXL which allows higher contrast.
-			- {{video https://youtu.be/gl1s7f0mV2E?t=677}}
-			- Only a partial release.
-			- Not great adoption.
-			- Better prompt adherence.
-			- [Temporary Stable Diffusion 3 Ban | Civitai](https://civitai.com/articles/5732/temporary-stable-diffusion-3-ban)
-			- Might be ok in the end.
-			- Whole new architecture.
-			- Excellent prompt following.
-			- Terrible human anatomy.
-  - # Community models
-		- Models and inspiration from CivitAI, which is very often "not safe for work" so do exercise caution.
-			- <iframe src="https://civitai.com/images" style="width: 100%; height: 600px"></iframe>
-  - Effective prompt engineering is crucial for unlocking the full potential of Stable Diffusion. Different models demand different styles
-  - Here are some tips to enhance your prompts:
-			- Use specific keywords and descriptive phrases to clearly convey your desired image to the AI model.
-			- The more precise and detailed your prompt, the better the model can understand your intent and generate images that match your vision.
-			- Utilize negative prompts to exclude unwanted elements or styles from the generated image.
-			- This allows you to refine the output and avoid generating images with undesirable features.
-			- Employ prompt scheduling and area prompting to create complex compositions and focus on specific details.
-			- These techniques allow you to control the timing and location of different elements within the image, resulting in more intricate and visually compelling outputs.
-			- Leverage extensions like "Test My Prompt" to understand the impact of each word in your prompt and refine your wording for better results. This extension helps you analyse how the model interprets different words and phrases, allowing you to optimize your prompts for the desired outcome.
-			- Don't be afraid to experiment with different models, fine tuning techniques, and prompt styles to discover new possibilities and achieve your desired artistic outcomes.
-			- The beauty of Stable Diffusion lies in its flexibility and the endless creative potential it offers.
-  - Stable Diffusion's versatility has led to its adoption across various industries:
-			- Artists are using Stable Diffusion to create stunning and innovative digital artworks, pushing the boundaries of artistic expression and exploring new creative frontiers.
-			  Concept Visualization:
-			- Use Stable Diffusion to quickly generate visual representations of their ideas, facilitating rapid prototyping and concept development. This allows for faster iteration and improved communication within design teams.
-			  Character Design:
-			- Leverage Stable Diffusion to create unique and memorable characters, streamlining the design process and reducing the time and resources required for character creation.
-			  Illustration:
-			- Can use Stable Diffusion to generate high-quality illustrations for books, magazines, and other media, offering a faster and more efficient way to produce visually compelling artwork.
-			- Filmmakers and VFX artists can use Stable Diffusion to generate realistic backgrounds and environments for virtual production shoots, offering a cost-effective and efficient alternative to traditional green screen techniques.
-  While Stable Diffusion requires a decent GPU for optimal performance, several solutions are emerging to address hardware limitations:
-  Cloud-based Solutions: Platforms like [RunDiffusion](https://app.rundiffusion.com/)
-  - https://www.forbes.com/sites/iainmartin/2024/03/20/key-stable-diffusion-researchers-leave-stability-ai-as-company-flounders/
-  Stable diffusion is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
-  - is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
-  - [Illustrated overview](https://jalammar.github.io/illustrated-stable-diffusion/)
-  - Stable diffusion XL muse GPT [Stable Diffusion Muse SDXL GPT Prompt Generator | Civitai](https://civitai.com/articles/2928/stable-diffusion-muse-sdxl-gpt-prompt-generator)
-  - [Automatic1111 GUI and user guide](https://www.thosesixfaces.com/post/stable-diffusion-getting-started-windows)
-  - [citivia browser](https://github.com/Vetchems/sd-civitai-browser)
-  - [Automatic WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-  - Vlads next SD
-  - [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
-		- https://phraser.tech/
-		- [Artist keywords that are known to work](https://docs.google.com/document/d/1SaQx1uJ9LBRS7c6OsZIaeanJGkUdsUBjk9X4dC59BaA/edit#)
-		- https://promptomania.com/stable-diffusion-prompt-builder/
-		- https://www.krea.ai/
-		- [Lexica](https://lexica.art/)
-		- [Dall-E prompt engineering](https://docs.google.com/document/d/11WlzjBT0xRpQhP9tFMtxzd0q6ANIdHPUBkMV-YB043U/edit#)
-		- [public prompts guy](https://publicprompts.art/)
-		- [Promptimize testing suite for prompts](https://github.com/preset-io/promptimize)
-		- [Photoshop plugin](https://christiancantrell.com/#ai-ml)
-		- [windows instructions](https://pastebin.com/xcFpp9Mr)
-		- [Discord server](https://discord.com/channels/1023277529424986162/)
-		- [dreambooth for SD2](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20)
-		- [2 hour tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc&t=34)
-		- [inject your face into any model (dreambooth)](https://www.youtube.com/watch?v=s25hcW4zq4M)
-		- [Guide for dreambooth](https://github.com/nitrosocke/dreambooth-training-guide)
-		- [Shivram](https://github.com/ShivamShrirao/diffusers/tree/main/examples/dreambooth)
-		- [Progen photorealism Miro guide](https://miro.com/app/board/uXjVPzJyAtU=/)
-		- [rare dreambooth tokens](https://github.com/2kpr/dreambooth-tokens)
-		- [Multi subject tokens](https://medium.com/@yushantripleseven/using-captions-with-dreambooth-joepenna-dreambooth-716f5b9e9866)
-		- [tag editor](https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor)
-		- [SDXL dreambooth](https://medium.com/@yushantripleseven/dreambooth-training-sdxl-using-kohya-ss-windows-7d2491460608)
-		- [Lora guide](https://civitai.com/articles/1771)
-		- [stable swarm distributed comfyui](https://github.com/Stability-AI/StableSwarmUI)
-		- [Textual inversion](https://www.reddit.com/r/StableDiffusion/comments/10gs4s2/new_expert_tutorial_for_textual_inversion_text/)
-		- [Img2Img guide from reddit for face mapping](https://www.reddit.com/r/StableDiffusion/comments/xgurs3/testing_img2img_batch_processing_i_convert_this/)
-		- [textual inversion cheaper training](https://github.com/rinongal/textual_inversion)
-		- [CIO blog post](https://danieljeffries.substack.com/p/the-turning-point-for-truly-open?sd=pf)
-		- [google stable diffusion](https://www.youtube.com/watch?v=lHcPtbZ0Mnc)
-		- [Cross attention replace named items](https://github.com/bloc97/CrossAttentionControl)
-		- [256 x faster speedup](https://the-decoder.com/stable-diffusion-could-soon-generate-images-much-faster/)
-		- [VoltaML acceleration](https://github.com/VoltaML/voltaML-fast-stable-diffusion)
-		- [Depth map into blender from SD2](https://www.youtube.com/watch?v=AeDngG9kQNI)
-		- [midjourney tweaks](https://www.reddit.com/r/StableDiffusion/comments/z622mp/trained_midjourney_embedding_on_stable_diffusion/)
-		- [and another](https://civitai.com/models/1253/anthro)
-		- [Updates Pastebin](https://rentry.org/sdupdates3)
-		- [Game development using SD](https://www.heroo.ai/)
-		- [Wildcard manager using ChatGPT](https://github.com/mattjaybe/sd-wildcards)
-		- [Depth2Img for text](https://www.reddit.com/r/StableDiffusion/comments/10c9kg8/depth2img_works_well_for_text_inputs/)
-		- [train chat GPT to write prompts](https://dreamlike.art/guides/using-openai-chat-gpt-to-write-stable-diffusion-prompts)
-		- [non destructive image manipulation using seeds](https://www.reddit.com/r/StableDiffusion/comments/10no6tp/non_destructive_image_variation_in_text2image/)
-		- [Instruct pix2pix](https://www.reddit.com/r/StableDiffusion/comments/10l74sl/instruct_pix2pix_is_amazing_inpaintingimg2img/)
-		- [reddit post](https://www.reddit.com/r/StableDiffusion/comments/10tjzmf/instructpix2pix_is_built_straight_into_the/)
-		- [Attention heatmap for prompts (youtube)](https://www.youtube.com/watch?v=XiKyEKJrTLQ)
-		- [enormous link roundup](https://rentry.org/RentrySD/)
-		- [Prompt master variations management](https://github.com/hoblin/prompt-master)
-		- [panoramic world builder](https://huggingface.co/congazverse/worldBuilder)
-		- [GitHub AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin: A user-friendly plug-in that makes it easy to generate stable diffusion images inside Photoshop using Automatic1111-sd-webui as a backend.](https://github.com/abdullahalfaraj/auto-photoshop-stablediffusion-plugin)
-		- [GitHub ashawkey/stable-dreamfusion: A pytorch implementation of text-to-3D dreamfusion, powered by stable diffusion.](https://github.com/ashawkey/stable-dreamfusion)
-		- [Fine tune stable diffusion](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/readme.md#how-to-fine-tune-stable-diffusion-20)
-		- [GitHub Sanster/lama-cleaner: Image inpainting tool powered by SOTA AI Model. Remove any unwanted object, defect, people from your pictures or erase and replace(powered by stable diffusion) any thing on your pictures.](https://github.com/sanster/lama-cleaner)
-		- [holovolo immersive volumetric VR180 videos and photos, and 3D stable diffusion, for Quest and WebVR](https://holovolo.tv)
-		- [The Illustrated Stable Diffusion Jay Alammar Visualizing machine learning one concept at a time.](https://jalammar.github.io/illustrated-stable-diffusion/)
-		- [reddit educational links](https://www.reddit.com/r/StableDiffusion/comments/116ki29/comment/j97jac3/)
-		- [Negative prompt hack tip](https://www.reddit.com/r/StableDiffusion/comments/11pcsxe/just_discovered_a_useful_trick_for_getting_good/)
-		- [Modify images with text](https://github.com/justinpinkney/stable-diffusion/blob/main/notebooks/imagic.ipynb)
-		- [Photorealism](https://www.reddit.com/r/StableDiffusion/comments/11u2p0u/lazy_guide_to_photorealistic_images/)
-		- [sdtools image v 1.6](https://www.reddit.com/r/StableDiffusion/comments/127gck9/sdtools_v16/)
-		- [Character plugin](https://github.com/alexv0iceh/AutoChar)
-  - [[Checkpoints]]
-		- [Stability specific tools](https://sdtools.org/)
-		- Arible Prompt Database https://www.arible.co/prompts
-		- [[Guide] Make your own Loras, easy and free | Stable Diffusion Other | Civitai: You don't need to download anything, this is a guide with online tools. Click "Show more" below.](https://civitai.com/models/22530)
-		- [sdxl lora training](https://github.com/FurkanGozukara/Stable-Diffusion/blob/main/Tutorials/How-To-Install-And-Use-Kohya-GUI-And-Do-Ultra-Realistic-SDXL-Training-Tutorial.md)
-		- [dylora scripts](https://github.com/facebookresearch/dadaptation/issues/24)
-		- [kohya fork with scripts](https://github.com/bmaltais/kohya_ss#about-sdxl-training)
-		- [lora of loras (compressed sets)](https://huggingface.co/FFusion/400GB-LoraXL/tree/main)
-		- [chart of print size aspect ratios](https://www.reddit.com/r/StableDiffusion/comments/10wqv7r/when_it_comes_to_printing_converting_resolutions/)
-		- [SDXL native text lora](https://civitai.com/models/176555/harrlogos-xl-finally-custom-text-generation-in-sd)
-		- [SDXL lcm motion lora](https://huggingface.co/latent-consistency/lcm-lora-sdxl)
-		- SDXL universal negative prompt
-			- text, watermark, low-quality, signature, moiré pattern, downsampling, aliasing, distorted, blurry, glossy, blur, jpeg artifacts, compression artifacts, poorly drawn, low-resolution, bad, distortion, twisted, excessive, exaggerated pose, exaggerated limbs, grainy, symmetrical, duplicate, error, pattern, beginner, pixelated, fake, hyper, glitch, overexposed, high-contrast, bad-contrast
-		- [SDXL prodigy training guide](https://civitai.com/articles/1022)
-		- [Lora training interface for windows](https://github.com/bmaltais/kohya_ss)
-		- [Refined model](https://civitai.com/models/8392/refined)
-		- [Fine tuning with captioning and other fine tuning tricks, followfox](https://substack.com/profile/110613456-followfoxai)
-		- [Negative embedding textual inversion for hands etc](https://huggingface.co/datasets/Nerfgun3/bad_prompt)
-		- [GitHub kpthedev/ez-text2video: Easily run text-to-video diffusion with customized video length, fps, and dimensions on 4GB video cards, as well as on CPU.](https://github.com/kpthedev/ez-text2video)
-		- [Gligen grounding capability for sd1.5](https://gligen.github.io/)
-		- [This repository contains a ComfyUI Extension for Automated Text Generation. The extension provides nodes which can be used to automate the text generation process. The goal is to build a node-based Automated Text Generation AGI. This extension should ultimately combine all of the features of the existing text generation tools into one tool.](https://github.com/xXAdonesXx/NodeGPT)
-		- [[R] Text-to-image Diffusion Models in Generative AI: A Survey: r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/12ehcez/r_texttoimage_diffusion_models_in_generative_ai_a/)
-		- [Tutorial: Creating a Consistent Character as a Textual Inversion Embedding](https://github.com/BelieveDiffusion/tutorials/discussions/3)
-		- [Segment anything webui](https://www.reddit.com/r/StableDiffusion/comments/12hkdy8/sd_webui_segment_everything/)
-		- [segment anything training](https://github.com/NielsRogge/Transformers-Tutorials/tree/master/SAM)
-		- [Nvidia stable diffusion segment through clip](https://github.com/NVlabs/ODISE)
-		- [Overriding iphone footage with SD characters using controlnet](https://www.reddit.com/r/StableDiffusion/comments/12lg8mn/override_more_experiments_overriding_the_original/)
-		- [Interactive photo manipulation GAN](https://huggingface.co/papers/2305.10973)
-		- [3d plugin for Automatic1111](https://github.com/jtydhr88/sd-webui-3d-editor)
-		- [Face replace plugin for automatic](https://github.com/Gourieff/sd-webui-roop-nsfw)
-			- [Colour palette extraction](https://github.com/mattdesl/gifenc)
-			- [Text based real time image manipulation](https://arxiv.org/abs/2210.09276)
-			- [Sketch guided text to image inference](https://sketch-guided-diffusion.github.io/)
-			- [Google prompt to prompt image remodeller](https://www.youtube.com/watch?v=lHcPtbZ0Mnc)
-			- [github](https://github.com/google/prompt-to-prompt)
-			- [Img2Prompt](https://replicate.com/methexis-inc#)
-			- [eDiffi nvidia text to image](https://deepimagination.cc/eDiffi/)
-			- [Image to caption](https://laion.ai/blog/laion-coco/)
-			- [lama image cleanup](https://github.com/Sanster/lama-cleaner)
-			- [upscalers](https://upscale.wiki/wiki/Model_Database)
-			- [upscayl](https://github.com/upscayl/upscayl)
-			- [Google Muse](https://www.infoq.com/news/2023/01/google-muse-text-to-image/)
-			- [Flair generate photo shoots of products](https://flair.ai/)
-			- [Vector graphics from text](https://illustroke.com/)
-			- [Simple stock image generator](https://stockimg.ai/)
-			- [Patterned: Generates royalty-free patterns.](https://www.patterned.ai/)
-			- [Cleanup.picture: Removes objects, defects, people or text from your images.](https://cleanup.pictures/)
-			- [Looka: Generates brand names and logos.](https://looka.com/)
-			- [CLIP interrogator and prompt engineering colab](https://github.com/pharmapsychotic/clip-interrogator)
-			- [Prompt management engine (local and cloud) (promptlayer)](https://magniv.notion.site/PromptLayer-Docs-db0e6f50cacf4564a6d09824ba17a629)
-			- [Composer stable diffusion TYPE model](https://github.com/damo-vilab/composer)
-			- [Multi-diffusion panoramas](https://multidiffusion.github.io/)
-			- [coherent panoramas paper](https://syncdiffusion.github.io/)
-			- [UX design AI](https://www.usegalileo.ai/)
-			- [pix2pix-3D: 3D-aware Conditional Image Synthesis](http://www.cs.cmu.edu/~pix2pix3D/)
-			- [HuggingFace Demo for /ELITE: new fine-tuning technique that can be trained in less than a second/ now available: r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/comments/11mzxyu/huggingface_demo_for_elite_new_finetuning/)
-			- [GIGAgan](https://mingukkang.github.io/GigaGAN/)
-			- [implementation](https://github.com/lucidrains/gigagan-pytorch)
-			- [GitHub danielgatis/rembg: Rembg is a tool to remove images background (other)](https://github.com/danielgatis/rembg)
-			- Other. The text is a description of a new product called the "Meta 2" which is a headset that allows users to interact with a computer using their hands.
-			- [GitHub kanewallmann/Dreambooth-Stable-Diffusion: Implementation of Dreambooth with Stable Diffusion (tweaks focused on training faces)](https://github.com/kanewallmann/dreambooth-stable-diffusion)
-			- [GitHub sedthh/pyxelate: Python class that generates pixel art from images (other)](https://github.com/sedthh/pyxelate)
-			- [GitHub upscayl/upscayl: Free and Open Source AI Image Upscaler for Linux, MacOS and Windows built with Linux-First philosophy. (other)](https://github.com/upscayl/upscayl)
-			- [GitHub YuxinWenRick/hard-prompts-made-easy: Contribute to YuxinWenRick/hard-prompts-made-easy development by creating an account on GitHub.](https://github.com/YuxinWenRick/hard-prompts-made-easy)
-		- This repository contains a tool for gradient-based discrete optimization, which can be used to find the optimal solution for a given problem. The tool is designed to be easy to use, and includes a number of features to make the process of finding the optimal solution easier.
-			- [Civitai Helper: SD Webui Civitai Extension | Stable Diffusion Other | Civitai: Now, we finally have a Civitai SD webui extension!! Update: 1.5.7 is here, if you're using localization extension, like Asian language UI, you need ...](https://civitai.com/models/16768/civitai-helper-sd-webui-civitai-extension)
-		- The Civitai Helper is a Civitai extension that allows for stable diffusions of other Civitai extensions. It also includes an animation which rotates and scales the extension icon.
-		- [GitHub YuxinWenRick/hard-prompts-made-easy: Contribute to YuxinWenRick/hard-prompts-made-easy development by creating an account on GitHub.](https://github.com/YuxinWenRick/hard-prompts-made-easy)
-		- This repository contains code for a gradient-based discrete optimization method. The method is designed to make it easy to find hard prompts, which are useful for training machine learning models.
-		- [StableSam meta segmentation plus SD inpainting](https://twitter.com/abhi1thakur/status/1645669023726592007)
-		- New Feature: "ZOOM ENHANCE" for the A111 WebUI. Automatically fix small details like faces and hands! : r/StableDiffusion [https://www.reddit.com/r/StableDiffusion/comments/11pyiro/new_feature_zoom_enhance_for_the_a111_webui/](https://www.reddit.com/r/StableDiffusion/comments/11pyiro/new_feature_zoom_enhance_for_the_a111_webui/)
-		- [Realtime scribble](https://github.com/houseofsecrets/SdPaint)
-		- [latent labs 360 images lora](https://civitai.com/models/10753/latentlabs360)
-		- Kandinsky model
-			- [finetuned 2.1](https://www.reddit.com/r/StableDiffusion/comments/13hgpo2/kandinsky_21_fine_tune/)
-			- [QR codes](https://www.youtube.com/watch?v=IntRn96C4l4)
-			- [DragGan image editing through drag points](https://github.com/XingangPan/DragGAN)
-			- [Faster CPP clip](https://github.com/monatis/clip.cpp)
-			- [animateDiff](https://github.com/guoyww/animatediff/)
-			- [AnimatediffSDXL lora](https://www.reddit.com/r/StableDiffusion/comments/17stnug/sdxl_animatediff_motion_lora_released/)
-			- [diffbar image sharpen](https://github.com/XPixelGroup/DiffBIR?ref=aiartweekly)
-			- [SD model mixer](https://github.com/wkpark/sd-webui-model-mixer)
-			- Textual Inversion character creation [tutorials/consistent_character_embedding/README.md at main · BelieveDiffusion/tutorials (github.com)](https://github.com/BelieveDiffusion/tutorials/blob/main/consistent_character_embedding/README.md)
-			- [%3 e](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20%22/%3E)
-			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[copyright]]-1849388060)
-			- [CompVis/stable-diffusion: A latent text-to-image diffusion model](https://github.com/CompVis/stable-diffusion)
-			- [Consistency in Stable Diffusion Definitive Guide to Having Multiple Faces of the Same Character](https://www.youtube.com/watch?v=Ig1S2guCfKM%22%2F%3E)
-			- [Consistent character embedding#readme%22](https://github.com/BelieveDiffusion/tutorials/tree/main/consistent_character_embedding#readme%22)
-			- [Consistent character embedding#readme}{walkthrough](https://github.com/BelieveDiffusion/tutorials/tree/main/consistent_character_embedding#readme}{walkthrough)
-			- [Controlnet for DensePose v1.0 | Stable Diffusion Controlnet | Civitai](https://civitai.com/models/120149/controlnet-for-densepose%22/%3E)
-			- [From the StableDiffusion community on Reddit: New Feature: "ZOOM ENHANCE" for the A111 WebUI. Automatically fix small details like faces and hands!](https://www.reddit.com/r/StableDiffusion/comments/11pyiro/new_feature_zoom_enhance_for_the_a111_webui)
-			- [From the StableDiffusion community on Reddit](https://www.reddit.com/r/StableDiffusion/comments/132rcou/30_stable_diffusion_tutorials_automatic1111_web)
-			- [How to Inject Your Trained Subject e.g. Your Face Into Any Custom Stable Diffusion Model By Web UI](https://www.youtube.com/watch?v=s25hcW4zq4M%22%2F%3E)
-			- [Imagic: Text-Based Real Image Editing with Diffusion Models](https://buff.ly/3VLGMzo)
-			- [RODIN Diffusion](https://3d-avatar-diffusion.microsoft.com/?amp%3Butm_medium=email&amp%3Butm_source=Revue+newsletter#/%22/%3E)
-			- [Readme](https://github.com/huggingface/diffusers/blob/main/examples/community/README.md#tensorrt-text2image-stable-diffusion-pipeline)
-			- [Readme](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20%22)
-			- [Spirited Away General Model (1.5) @Spirited | Stable Diffusion Checkpoint | Civitai](https://civitai.com/models/5378/spirited-away-general-model-15%22)
-			- [Style-Info: An embedding for infographic style art 1.0 | Stable Diffusion Embedding | Civitai](https://civitai.com/models/5271/style-info-an-embedding-for-infographic-style-art%22/%3E)
-			- [THE DECODER](https://the-decoder.com/stable-diffusion-could-soon-generate-images-much-faster/%7D%7B256)
-			- [Tutorial: Creating a Consistent Character as a Textual Inversion Embedding · BelieveDiffusion tutorials · Discussion #3](https://github.com/BelieveDiffusion/tutorials/discussions/3%22%3E)
-			- [Ultimate Guide to Upscale Images with AI in Stable Diffusion](https://onceuponanalgorithm.org/ultimate-guide-to-upscale-images-with-ai-in-stable-diffusion)
-			- [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models#classifier-free-guidance}{here}.)
-			- [Wojak SDXL v1.0 | Stable Diffusion LoRA | Civitai](https://civitai.com/models/128046/wojak-sdxl%22)
-			- https://www.reddit.com/r/StableDiffusion/comments/145d6by/scannable_cat_qr_art_with_ai_my_recent_attempt)
-			- [https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%22%3E%3Crichcontent](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%22%3E%3Crichcontent)
-			- [wl-zhao/UniPC: [NeurIPS 2023] UniPC: A Unified Predictor-Corrector Framework for Fast Sampling of Diffusion Models](https://github.com/wl-zhao/UniPC)
-			- [万象熔炉 | Anything V5/Ink ink | Stable Diffusion Checkpoint | Civitai](https://civitai.com/models/9409/anything-v5-or-anything-diffusion-original%22)
-			- [Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models](https://buff.ly/41FgQrb%22)
-			- [Anthro v1 | Stable Diffusion Embedding | Civitai](https://civitai.com/models/1253/anthro%22)
-			- [Become A Stable Diffusion Prompt Master By Using DAAM Attention Heatmap For Each Used Token Word](https://www.youtube.com/watch?v=XiKyEKJrTLQ%7D%7BAttention)
-			- [Consistent AI Characters with Different Poses Angles CharTurner Stable Diffusion](https://www.youtube.com/watch?v=-iwPVUzAWzk%22)
-			- [From the StableDiffusion community on Reddit: Advanced advice for model training / fine-tuning and captioning](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and)
-			- [From the StableDiffusion community on Reddit](https://www.reddit.com/r/StableDiffusion/comments/11mulj6/quality_improvements_to%22)
-			- [Google's prompt-to-prompt AI for Stable Diffusion tutorial!](https://www.youtube.com/watch?v=lHcPtbZ0Mnc%7D%7BGoogle)
-			- [Home](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Developing-extensions%22)
-			- [How to Make 360 VR Environments for Quest with AI Stable Diffusion and Blender Tutorial 2023](https://www.youtube.com/watch?v=t9zzcRsf0IA%22)
-			- [Open Source AI and Stable Diffusion with Emad Mostaque](https://open.spotify.com/episode/3PCboPPIdkicl9eyW5Eaux?si=u6sUA8WdR9Wyw3NPLMdAXQ)
-			- [Reddit Prove your humanity](https://www.reddit.com/r/StableDiffusion/comments/10no6tp/non_destructive_image_variation_in_text2image/%7D%7Bnon)
-			- [Refined Refined v11 | Stable Diffusion Checkpoint | Civitai](https://civitai.com/models/8392/refined%22)
-			- [Spirited Away General Model (1.5) @Spirited | Stable Diffusion Checkpoint | Civitai](https://civitai.com/models/5378/spirited-away-general-model-15%7D%7Bspirited)
-			- [Stable Diffusion Outpainting Colab Tutorial](https://m.youtube.com/watch?list=PLpdmBGJ6ELUJOuL83tQKJm-ty4IJficHc&v=-8jmBGgGj2E)
-			- [Style-Info: An embedding for infographic style art 1.0 | Stable Diffusion Embedding | Civitai](https://civitai.com/models/5271/style-info-an-embedding-for-infographic-style-art%7D%7BInfographic)
-			- [Tutorial: Creating a Consistent Character as a Textual Inversion Embedding · BelieveDiffusion tutorials · Discussion #3](https://github.com/BelieveDiffusion/tutorials/discussions/3%22)
-			- [Zero To Hero Stable Diffusion DreamBooth Tutorial By Using Automatic1111 Web UI Ultra Detailed](https://www.youtube.com/watch?t=34%7D%7B2&v=Bdl-jWR3Ukc%5C)
-			- [altryne/awesome-ai-art-image-synthesis: A list of awesome tools, ideas, prompt engineering tools, colabs, models, and helpers for the prompt designer playing with aiArt and image synthesis. Covers Dalle2, MidJourney, StableDiffusion, and open source tools.](https://github.com/altryne/awesome-ai-art-image-synthesis)
-			- [diStyApps/Stable-Diffusion-Pickle-Scanner-GUI: Pickle Scanner GUI](https://github.com/diStyApps/Stable-Diffusion-Pickle-Scanner-GUI)
-			- [https://www.reddit.com/r/StableDiffusion/comments/100tp0v/protogenx34_has_absolutely_amazing_detail/%22](https://www.reddit.com/r/StableDiffusion/comments/100tp0v/protogenx34_has_absolutely_amazing_detail/%22)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10c9kg8/depth2img_works_well_for_text_inputs/%22](https://www.reddit.com/r/StableDiffusion/comments/10c9kg8/depth2img_works_well_for_text_inputs/%22)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10c9kg8/depth2img_works_well_for_text_inputs/%7D%7BDepth2Img](https://www.reddit.com/r/StableDiffusion/comments/10c9kg8/depth2img_works_well_for_text_inputs/%7D%7BDepth2Img)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10gs4s2/new_expert_tutorial_for_textual_inversion_text/%7D%7BTextual](https://www.reddit.com/r/StableDiffusion/comments/10gs4s2/new_expert_tutorial_for_textual_inversion_text/%7D%7BTextual)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10l74sl/instruct_pix2pix_is_amazing_inpaintingimg2img/%7D%7BInstruct](https://www.reddit.com/r/StableDiffusion/comments/10l74sl/instruct_pix2pix_is_amazing_inpaintingimg2img/%7D%7BInstruct)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10no6tp/non_destructive_image_variation_in_text2image/%22](https://www.reddit.com/r/StableDiffusion/comments/10no6tp/non_destructive_image_variation_in_text2image/%22)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10rr99t/mocap_unreal_engine_warpfusion/%7D%7BMoCap](https://www.reddit.com/r/StableDiffusion/comments/10rr99t/mocap_unreal_engine_warpfusion/%7D%7BMoCap)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10tjzmf/instructpix2pix_is_built_straight_into_the/%22](https://www.reddit.com/r/StableDiffusion/comments/10tjzmf/instructpix2pix_is_built_straight_into_the/%22)
-			- [https://www.reddit.com/r/StableDiffusion/comments/10tjzmf/instructpix2pix_is_built_straight_into_the/%7D%7Breddit](https://www.reddit.com/r/StableDiffusion/comments/10tjzmf/instructpix2pix_is_built_straight_into_the/%7D%7Breddit)
-			- [https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent](https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent)
-			- [https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced)
-			- [https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22)
-			- [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion]]
-			- [[Controlnet and similar]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
-			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
-			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
-  - ## Image, Video and 3D
-		- ## Stable Diffusion 1.5, XL, and 3
-			- ### Text-to-Image Generation
-  - ## Open Source
-  - ## User Friendly Interfaces
-		- ### Rundiffusion
-  - ### Customisation
-  - ### Community Support
-  - ## Core Models
-		- ### Stable Diffusion 1.5
-		- ### SDXL
-		- ### CosXL
-		- ### Zero123 & SV3D
-		- ### ~~Stable Cascade~~
-		- ### Stable Diffusion 3
-  - ### Prompt Engineering: The Art of Guiding AI Creativity
-		- #### Specificity:
-		- #### Negative Prompts:
-		- #### Compositional Control:
-		- #### Extensions:
-		- #### Experimentation:
-  - ### Applications Across Industries:
-		- #### Digital Art Creation:
-		- #### Designers and engineers
-		- #### Game developers and animators
-		- #### Illustrators
-		- #### Virtual Production:
-  - ### Addressing Hardware Limitations:
-  - ## Stable diffusion
-  - ### Prompt engineering links
-  - ### Dreambooth retraining for faces
-  - ### Birme image resizer
-		- ## Images
+  ## Compositional Relationships (Components)
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:VariationalAutoencoder))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:UNetDenoisingNetwork))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:CLIPTextEncoder))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:CrossAttentionLayer))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:NoiseScheduler))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:LatentSpace))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:SamplingAlgorithm))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:hasPart ai:ClassifierFreeGuidance))
+
+	    ## Dependency Relationships
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:requires ai:TextEncoder))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:requires ai:LargeScaleTrainingData))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:requires ai:DenoisingNetwork))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:requires ai:DifferentiableArchitecture))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:dependsOn ai:DiffusionProcessMath))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:dependsOn ai:ScoreMatching))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:dependsOn ai:StochasticDifferentialEquations))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:dependsOn ai:VariationalInference))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:dependsOn ai:ContrastiveLearning))
+
+	    ## Capability Relationships
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:enables ai:TextToImageGeneration))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:enables ai:ImageToImageTranslation))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:enables ai:InpaintingOutpainting))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:enables ai:StyleTransfer))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:enables ai:VideoGeneration))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:enables ai:3DAssetGeneration))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:enables ai:CustomModelFinetuning))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:supports ai:ConditionalSpatialControl))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:supports ai:CommunityModelEcosystem))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:supports ai:CreativeIndustries))
+
+	    ## Implementation Relationships
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:implements ai:DenoisingDiffusionProbabilisticModel))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:implements ai:ClassifierFreeGuidance))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:implements ai:LoRAFinetuning))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:implements ai:DreambothPersonalisation))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:implements ai:ControlNetSpatialConditioning))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:implements ai:FlowMatchingObjective))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:uses ai:CrossAttentionMechanism))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:uses ai:SelfAttentionMechanism))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:uses ai:AdamWOptimiser))
+
+	    ## Reduction Relationships
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:reduces ai:GenerativeComputeCost))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:reduces ai:ContentCreationBarrier))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:reduces ai:ProfessionalArtistDependency))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:reduces ai:PixelSpaceComputeMemory))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:contrastsWith ai:GANs))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:contrastsWith ai:AutoregressiveImageModel))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:contrastsWith ai:ProprietaryClosedModel))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:relatedTo ai:OpenSourceAI))
+	    SubClassOf(ai:StableDiffusion
+	      ObjectSomeValuesFrom(ai:relatedTo ai:GenerativeAIMarket))
+
+	    ## Data Properties
+	    DataPropertyAssertion(ai:hasIdentifier ai:StableDiffusion "AI-1089"^^xsd:string)
+	    DataPropertyAssertion(ai:authorityScore ai:StableDiffusion "0.87"^^xsd:decimal)
+	    DataPropertyAssertion(ai:foundationalYear ai:StableDiffusion "2022"^^xsd:integer)
+	    DataPropertyAssertion(ai:citationCount ai:StableDiffusion "25000"^^xsd:integer)
+	    DataPropertyAssertion(ai:namedVariants ai:StableDiffusion "12"^^xsd:integer)
+	    DataPropertyAssertion(ai:communityModels ai:StableDiffusion "200000"^^xsd:integer)
+	    DataPropertyAssertion(ai:baseModelParameters ai:StableDiffusion "8100000000"^^xsd:integer)
+	    DataPropertyAssertion(ai:nativeResolutionSD15 ai:StableDiffusion "512"^^xsd:integer)
+	    DataPropertyAssertion(ai:nativeResolutionSDXL ai:StableDiffusion "1024"^^xsd:integer)
+	    DataPropertyAssertion(ai:openWeightLicence ai:StableDiffusion "CreativeML-Open-RAIL-M"^^xsd:string)
+
+	    ## Property Constraints
+	    SubClassOf(ai:StableDiffusion
+	      DataMinCardinality(1 ai:hasLatentDimension xsd:integer))
+	    SubClassOf(ai:StableDiffusion
+	      DataMinCardinality(1 ai:hasTextEncoder xsd:string))
+	    SubClassOf(ai:StableDiffusion
+	      DataAllValuesFrom(ai:isOpenWeight xsd:boolean))
+	    SubClassOf(ai:StableDiffusion
+	      DataSomeValuesFrom(ai:hasNoiseSteps xsd:integer))
+
+	    ## Annotations
+	    AnnotationAssertion(rdfs:label ai:StableDiffusion "Stable Diffusion"@en)
+	    AnnotationAssertion(rdfs:comment ai:StableDiffusion "Family of open-weight latent diffusion generative image models originating from Rombach et al. CVPR 2022, performing iterative denoising in a compressed 64×64×4 latent space via a VAE rather than pixel space, trained with cross-attention conditioning on CLIP/T5 text embeddings, evolving through SD1.5/SDXL/SD3.0/SD3.5/FLUX.1 architectures, enabling an ecosystem of 200K+ community LoRA fine-tunes on Civitai, spatial conditioning via ControlNet, node-based workflows in ComfyUI, and rapid sampling via DPM++/LCM distillation, democratising high-quality image synthesis on consumer hardware."@en)
+	    AnnotationAssertion(dcterms:identifier ai:StableDiffusion "AI-1089"^^xsd:string)
+	    AnnotationAssertion(dcterms:subject ai:StableDiffusion "Generative AI, Diffusion Models, Text-to-Image, Open Source AI, Computer Vision"@en)
+	  )
+
+	  ## Property Characteristics
+	  AsymmetricObjectProperty(ai:requires)
+	  AsymmetricObjectProperty(ai:enables)
+	  AsymmetricObjectProperty(ai:implements)
+	  AsymmetricObjectProperty(ai:contrastsWith)
+	  TransitiveObjectProperty(ai:dependsOn)
+	  FunctionalDataProperty(ai:foundationalYear)
+	  FunctionalDataProperty(ai:openWeightLicence)
+	  ```
+
+  - ## About Stable Diffusion
+  - **Stable Diffusion** is the defining open-source text-to-image generative model of the 2020s, originating from academic research at Heidelberg University's CompVis group and commercialised by Stability AI, a London-based AI company. Its core architectural contribution—performing the iterative diffusion denoising process in a compressed latent space rather than pixel space—enabled, for the first time, high-resolution image generation on consumer-grade graphics cards with as little as 4GB VRAM, fundamentally democratising access to sophisticated generative image capabilities that had previously required proprietary cloud infrastructure.
+  - The intellectual foundation was laid by **Robin Rombach**, **Andreas Blattmann**, **Dominik Lorenz**, **Patrick Esser**, and **Björn Ommer** at Heidelberg, published as "High-Resolution Image Synthesis with Latent Diffusion Models" at CVPR 2022. The paper demonstrated that operating in the latent space of a pre-trained VAE—rather than directly in pixel space—retained perceptual quality whilst reducing computational demands by approximately 48×, enabling training on a single NVIDIA A100 rather than 256-GPU clusters required by pixel-space predecessors like DALL-E and Imagen.
+  - The subsequent release of SD 1.4 weights to the public in August 2022 triggered an unprecedented wave of community development, establishing Stable Diffusion not merely as a model but as a **platform for open generative AI research and deployment**. This open release philosophy—enabled by the Creative ML Open RAIL-M licence permitting commercial use with minimal restrictions—directly produced the Civitai ecosystem, the ComfyUI workflow environment, the Automatic1111 WebUI, and thousands of downstream applications that collectively represent the world's largest open AI model ecosystem.
+
+  - ### Core Architecture: Latent Diffusion Framework
+
+	  The defining architectural innovation of Stable Diffusion is the **latent diffusion** approach: rather than denoising directly in pixel space (as in DDPM, DALL-E, or Imagen), the entire diffusion process operates in the compressed latent space Z of a separately trained Variational Autoencoder.
+
+	  **Variational Autoencoder (VAE)**: An encoder-decoder pair E:X→Z, D:Z→X where X is the image space ℝ^{H×W×3} and Z is the latent space ℝ^{h×w×c}. For SD 1.x/SDXL, a 512×512 RGB image (786,432 values) is compressed to a 64×64×4 tensor (16,384 values), achieving 48× dimensionality reduction whilst preserving perceptually important features. The VAE is trained separately with a combination of L1 reconstruction loss, perceptual loss (VGG feature space), adversarial loss (PatchGAN discriminator), and KL-divergence regularisation.
+
+	  **Denoising U-Net ε_θ**: Operates in latent space with architecture adapted from the DDPM U-Net, incorporating residual blocks, spatial self-attention, and cross-attention layers for text conditioning. The network predicts the noise component ε added at timestep t, minimising the simplified denoising objective:
+
+	  L = E_{z∼E(x), ε∼N(0,1), t}[‖ε − ε_θ(z_t, t, τ_θ(y))‖²]
+
+	  where z_t = √ᾱ_t · z_0 + √(1−ᾱ_t) · ε is the noisy latent at timestep t, and τ_θ(y) is the text conditioning from the CLIP encoder.
+
+	  **Cross-Attention Text Conditioning**: Text prompts are encoded into contextual embeddings by the CLIP text encoder (ViT-L/14 in SD 1.x, dual-CLIP ViT-L/14 + OpenCLIP ViT-bigG/14 in SDXL, triple-encoder CLIP + OpenCLIP + T5-XXL in SD 3.x), then injected into the U-Net at every resolution level via cross-attention: Attention(Q, K, V) = softmax(QK^T/√d)·V where Q derives from U-Net spatial features and K, V from text embeddings. This mechanism routes semantic information throughout the spatial hierarchy, enabling fine-grained prompt adherence.
+
+	  **Classifier-Free Guidance (CFG)**: Ho & Salimans 2021 introduced joint training of conditional and unconditional models by randomly dropping text conditioning (typically 10-15% of training steps). At inference, the predicted noise is extrapolated: ε̃_θ = ε_θ(z_t, ∅) + w · (ε_θ(z_t, y) − ε_θ(z_t, ∅)), where w is the guidance scale (typically 7-12 for SD 1.x/SDXL). Higher w increases prompt adherence at the cost of image diversity and potential saturation artefacts.
+
+  - ### Model Architecture Evolution
+
+	  #### SD 1.4 / SD 1.5 (2022)
+	  The original release trained by CompVis/RunwayML on LAION-5B aesthetic subset, 860M U-Net parameters, 512×512 native resolution, 77-token CLIP text limit, CreativeML Open RAIL-M licence. Despite being superseded architecturally, SD 1.5 remains the most widely deployed base model in the community due to the enormous catalogue of LoRAs, embeddings, and extensions targeting its specific attention structure. Approximately 80M+ model downloads as of 2025.
+
+	  #### Stable Diffusion XL 1.0 (SDXL, July 2023)
+	  Described in Podell et al. arXiv:2307.01952 "SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis." Key advances:
+	  - **Dual text encoder**: Concatenated conditioning from CLIP ViT-L/14 (768-dim) + OpenCLIP ViT-bigG/14 (1280-dim) = 2048-dim text conditioning, supplemented by pooled OpenCLIP output for global semantic signal, total 2816-dim conditioning
+	  - **Larger U-Net**: 3.5B parameters in base model, 0.4B in refiner model; transformer blocks use 10 attention heads at highest resolution
+	  - **Size and crop conditioning**: Metadata encoding of original image resolution and crop coordinates during training, enabling better compositional control at inference
+	  - **Two-stage pipeline**: Base model at 1024×1024 followed by image-to-image refiner specialised for fine detail enhancement
+	  - Native 1024×1024 resolution significantly improved photorealism and anatomical accuracy vs SD 1.5
+
+	  #### Stable Diffusion 3.0 / 3.5 (2024)
+	  Esser et al. "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis" (arXiv:2403.03206, March 2024). Fundamental architectural shift from U-Net to Multimodal Diffusion Transformer (MMDiT):
+	  - **Flow Matching Objective**: Replaces DDPM noise prediction with rectified flow (Liu et al. 2022), defining straight-line probability flows p_t(x) = (1−t)x_0 + tx_1 between data and noise distributions, substantially simplifying sampling dynamics and enabling fewer inference steps
+	  - **MMDiT Architecture**: Separate transformer streams for image tokens and text tokens (from all three encoders), joined through bidirectional attention blocks that allow full cross-modal interaction throughout the depth of the network—a departure from the cross-attention injection approach of U-Net models
+	  - **Triple Text Encoding**: CLIP ViT-L + OpenCLIP ViT-bigG + T5-XXL 4096-dim pooled embeddings provide richer semantic grounding, particularly for complex multi-object prompts and accurate text rendering in images
+	  - **SD 3.5 Large (October 2024)**: 8.1B parameters, best typography and spatial reasoning in the family; SD 3.5 Large Turbo: adversarial diffusion distillation enabling 4-step inference; SD 3.5 Medium: 2.6B parameters, optimised for consumer GPU deployment
+
+	  #### FLUX.1 (Black Forest Labs, August 2024)
+	  Founded by original Stability AI/CompVis researchers Robin Rombach, Andreas Blattmann, Patrick Esser, and collaborators after departing Stability AI. FLUX.1 represents the architectural successor to the SD line outside of Stability AI:
+	  - **Hybrid Architecture**: Combines transformer blocks (for global coherence) with convolutional blocks (for local texture), 12B parameters in [pro/dev] variants
+	  - **Flow Matching with Guidance Distillation**: FLUX.1 [schnell] achieves 1-4 step inference via distillation, FLUX.1 [dev] non-commercial with 4-8 steps, FLUX.1 [pro] API-only commercial
+	  - **Practical impact**: FLUX.1 rapidly displaced SDXL as the community backbone for highest-quality open generation by Q4 2024, supported in ComfyUI and A1111 WebUI through adapter nodes
+
+  - ### Samplers and Inference Algorithms
+
+	  The denoising schedule and sampling algorithm determine inference quality/speed tradeoff:
+
+	  - **DDIM** (Song et al. 2020): Deterministic implicit sampler enabling 50-step inference without quality loss vs 1000-step DDPM, through a non-Markovian diffusion process enabling consistent interpolation between noise seeds
+	  - **PLMS / PNDM**: Pseudo-numerical methods, 20-30 step convergence
+	  - **DPM++ 2M / 2S** (Lu et al. 2022): Multi-step high-order solvers for probability flow ODEs, 20-30 steps with excellent quality-speed balance; DPM++ SDE adds stochastic differential equation sampling for diversity
+	  - **Euler / Euler ancestral**: Simple first-order Euler method; Euler-a adds stochastic noise at each step producing more creative variation
+	  - **LCM (Latent Consistency Models)** (Luo et al. 2023): Distillation-based 4-8 step inference via consistency function learning, enabling near-realtime generation
+	  - **SDXL Turbo / ADD** (Sauer et al. 2023): Adversarial diffusion distillation achieving 1-step high-quality synthesis through adversarial training against a large discriminator
+	  - **Karras noise schedules** (Karras et al. 2022): Reparameterised noise schedule σ(t) improving quality with DPM++ solvers
+
+  - ### Fine-Tuning Ecosystem
+
+	  The open-weight nature of Stable Diffusion enabled a fine-tuning ecosystem without parallel in proprietary models:
+
+	  **LoRA (Low-Rank Adaptation)** (Hu et al. 2021): Inserts trainable rank-r decomposition ΔW = BA (B∈ℝ^{d×r}, A∈ℝ^{r×k}) into attention weight matrices, enabling specialised style/subject training in 2-50MB files from 20-100 images. Civitai hosts 200K+ community LoRAs covering artistic styles, characters, products, and concepts. Training tools include KOHYA_ss (Windows GUI), Dreambooth scripts, and SimpleTuner.
+
+	  **Dreambooth** (Ruiz et al. 2022): Full model fine-tuning binding a subject to a rare token (e.g. "sks dog") with class-prior preservation loss preventing language drift; enables personalised portrait/object generation from 3-20 images.
+
+	  **Textual Inversion** (Gal et al. 2022): Optimises a new CLIP embedding vector "*" to represent a subject, leaving base model weights unchanged; lightweight (4-20KB files) but less expressive than LoRA.
+
+	  **IP-Adapter** (Ye et al. 2023): Adds image-prompt conditioning alongside text conditioning through decoupled cross-attention, enabling reference-image-guided generation without fine-tuning.
+
+	  **ControlNet** (Zhang et al. 2023, "Adding Conditional Control to Text-to-Image Diffusion Models"): Duplicates the U-Net encoder with zero-initialised trainable convolutions, adding spatial conditioning from depth maps, Canny edge maps, OpenPose skeleton estimation, segmentation maps, surface normal maps, and line art. Enables precise layout and pose control while preserving base model quality. The ControlNet Union model (xinsir/controlnet-union-sdxl-1.0) unifies multiple condition types in a single model.
+
+	  **Hypernetworks, LyCORIS, DoRA**: Extended adapter families with varying parameter efficiency tradeoffs—DoRA (Liu et al. 2024) decomposes weight updates into magnitude and directional components, improving LoRA expressive capacity; LyCORIS implements Hadamard product and Kronecker factorisation alternatives.
+
+  - ### User Interface Ecosystem
+
+	  **Automatic1111 WebUI** (AUTOMATIC1111/stable-diffusion-webui): The dominant web-based interface, with gradio frontend enabling text-to-image, img2img, inpainting, outpainting, textual inversion, and extensive extension system. Over 35M downloads; supports 200+ community extensions. Primary use case for casual users and artists.
+
+	  **ComfyUI** (comfyanonymous/ComfyUI): Node-based graph composer enabling visual construction of arbitrary diffusion pipelines, with explicit control over every model component, sampler parameter, and conditioning signal. Preferred by power users, developers, and production workflows. API-accessible enabling programmatic pipeline execution.
+
+	  **InvokeAI**: Focused on professional creative workflows with canvas-based inpainting and a cleaner UI than A1111; supports SD1.x/SDXL/SD3/FLUX.
+
+	  **StableSwarmUI** (Stability-AI/StableSwarmUI): Stability AI's official multi-backend swarm orchestration UI supporting ComfyUI backends with web-accessible multi-user operation.
+
+	  **Fooocus**: Streamlined SDXL-optimised interface removing manual parameter exposure, achieving Midjourney-like simplicity with open-source models.
+
+	  **Cloud platforms**: RunDiffusion, Mage.space, Leonardo.AI provide hosted GPU access, enabling SD generation without local hardware.
+
+  - ### Stability AI Corporate Context (2022–2026)
+
+	  Understanding Stable Diffusion requires understanding Stability AI's turbulent corporate trajectory:
+
+	  **Founding and SD release (2020–2022)**: Emad Mostaque founded Stability AI in London 2020, securing $101M Series A in October 2022. SD 1.4 released August 2022 weeks before funding announcement, creating enormous community goodwill. The open-release strategy was both principled (Mostaque publicly advocating for open AI) and strategic (community adoption driving brand recognition).
+
+	  **Growth and internal tensions (2022–2023)**: Company scaled rapidly but faced structural challenges—enormous compute costs ($50-100M/year estimated), difficulty monetising open models when API competitors (Midjourney, DALL-E) offered superior closed-source alternatives, and leadership conflicts. CFO and COO departed mid-2023. Key research staff began leaving as academic culture clashed with commercial pressures.
+
+	  **Leadership collapse (Early 2024)**: In March 2024, Emad Mostaque resigned amid investor pressure over financial projections and governance concerns (Forbes report March 2024: "Key Stable Diffusion researchers leave Stability AI as company flounders"). Robin Rombach, Andreas Blattmann, Patrick Esser, and other core SD researchers departed to found **Black Forest Labs**, immediately announcing FLUX.1 in August 2024. Stability AI's investor Coatue Management filed lawsuit over alleged financial misrepresentations.
+
+	  **Restructuring (2024–2025)**: New CEO Prem Akkaraju (ex-Andreessen Horowitz) took over October 2024, refocusing on API revenue, enterprise licensing, and the SD 3.5 model line. Sean Parker (Napster/early Facebook) reported as potential investor. Company rebranded its open-weight strategy around the "Stable Diffusion Community Licence" with commercial use restrictions replacing the original RAIL-M permissiveness. Market position weakened significantly relative to 2022-2023 peak.
+
+	  **FLUX.1 displacement (2024–2026)**: Black Forest Labs' FLUX.1 achieved rapid community adoption, with ComfyUI and A1111 supporting it by September 2024. By late 2024 FLUX.1 [dev] became the preferred community base model for highest-quality generation, with Stability AI's SD 3.5 receiving mixed reception due to licensing changes and the corporate instability narrative.
+
+  - ### Use Cases and Applications
+
+	  **Digital art and illustration**: Artists use SD/SDXL/FLUX as a collaborative creativity tool for concept art, illustration, character design, storyboarding, and asset production. Tools like img2img and ControlNet maintain compositional control whilst leveraging the model's generative capacity.
+
+	  **Commercial asset production**: Photography studios, marketing agencies, and game developers use SD for product visualisation, background generation, texture synthesis, and rapid concept iteration. Leonardo.AI and Adobe Firefly (partially SD-based) target this market.
+
+	  **Personalised content**: Dreambooth and LoRA enable personal portrait generation, brand-consistent asset creation, and product photography mockups from reference images.
+
+	  **Virtual production and VFX**: SD-generated backgrounds, texture synthesis, and ControlNet-guided environment design reduce traditional VFX costs for independent filmmakers and game developers.
+
+	  **Research applications**: Semantic image editing (InstructPix2Pix, Prompt-to-Prompt), 3D generation (Zero123, DreamFusion using SD as 2D prior), video generation (AnimateDiff, Stable Video Diffusion), and medical image augmentation all build on SD foundations.
+
+	  **Scientific visualisation**: Depth2Img applications, panoramic environment generation, and astronomy/biology image enhancement leverage SD's latent space properties.
+
+  - ### Academic Context and Theoretical Foundations
+
+	  Stable Diffusion sits at the intersection of several theoretical traditions:
+
+	  **Diffusion probabilistic models** (Sohl-Dickstein et al. 2015, Ho et al. 2020 DDPM): Defined the forward Markovian noising process q(x_t|x_{t-1}) and trained denoising neural networks p_θ(x_{t-1}|x_t) to reverse it, establishing the theoretical basis for all SD variants.
+
+	  **Score matching** (Hyvärinen 2005, Vincent 2011, Song & Ermon 2019 NCSN): Score-based models characterise the data distribution through its score function ∇_x log p(x), directly related to the denoising objective. Song et al. 2021 unified DDPMs and score models through stochastic differential equations.
+
+	  **Variational autoencoders** (Kingma & Welling 2013): Provided the perceptual compression codec that makes latent diffusion computationally feasible.
+
+	  **CLIP** (Radford et al. OpenAI 2021): Contrastive language-image pretraining on 400M image-text pairs created the text embedding space enabling text conditioning in all SD models.
+
+	  **Flow matching** (Lipman et al. 2022, Liu et al. 2022): Straight-line probability flows reducing sampling complexity, adopted in SD 3.x and FLUX.1 as a superior training objective to noise prediction.
+
+	  **Classifier-free guidance** (Ho & Salimans 2021): Joint conditional/unconditional training enabling inference-time control over condition adherence strength without separate classifier models.
+
+  - ### Current Landscape (2026)
+
+	  The generative image model landscape in early 2026 is characterised by:
+
+	  **Model fragmentation**: The community operates across SD 1.5 (legacy compatibility), SDXL 1.0 (mature ecosystem), SD 3.5 Medium/Large (Stability AI commercial offerings), and FLUX.1 dev/schnell (Black Forest Labs, dominant for quality). No single model has universal adoption.
+
+	  **Proprietary competition**: Midjourney v6/v7 remains the gold standard for aesthetic quality in many creative domains; DALL-E 3 and Google Imagen 3 offer superior API integration; Adobe Firefly provides commercially safe generation. Open-source models compete primarily on controllability, local deployment, and privacy rather than raw quality.
+
+	  **Sampler convergence**: LCM distillation and ADD adversarial distillation have largely solved the sampling efficiency problem; 1-4 step inference at near-full quality is now standard across major models, eliminating the speed disadvantage vs GANs for many applications.
+
+	  **Video generation integration**: AnimateDiff, Stable Video Diffusion 1.1, and FLUX video extensions blur the boundary between image and video generation, with the SD ecosystem increasingly addressing temporal consistency as a core requirement.
+
+	  **Regulatory pressure**: The EU AI Act 2024 and UK Frontier AI taskforce guidance are creating compliance requirements for generative image providers, particularly around provenance tracking, synthetic media labelling, and training data rights. The Civitai NSFW ecosystem faces moderation pressure in multiple jurisdictions.
+
+	  **Hardware democratisation**: NVIDIA's consumer GPU line (RTX 4090, RTX 5090) and Apple Silicon (M3/M4 with ANE acceleration via MPS backend) have further reduced the hardware barrier, enabling high-quality generation in 2-10 seconds on consumer hardware at 1024×1024 resolution.
+
+  - ### UK Context
+
+	  Stable Diffusion has particular resonance in the UK academic and creative industries context:
+
+	  **Stability AI as a UK company**: Founded and headquartered in London, Stability AI was one of the highest-profile UK AI companies of 2022-2024, receiving coverage from DCMS and DSIT as an exemplar of UK AI commercialisation. Its difficulties in 2024 raised questions about UK AI competitiveness and the sustainability of open-source business models.
+
+	  **Imperial College London**: Active research in diffusion model theory, with the Intelligent Systems and Networks group publishing on score-based models and their convergence properties. Imperial researchers have contributed to applications of SD models in medical image synthesis and drug discovery visualisation.
+
+	  **University College London (UCL)**: UCL's ARC (AI Research Centre) and CSML (Centre for Computational Statistics and Machine Learning) have published on conditional diffusion models, inverse problems using diffusion priors, and efficient diffusion sampling. UCL's Centre for Artificial Intelligence hosts researchers working on generative model evaluation metrics.
+
+	  **University of Edinburgh**: School of Informatics researchers have contributed to text-to-image alignment evaluation, CLIP-based conditioning analysis, and generative model bias studies relevant to SD architectures.
+
+	  **Manchester creative industries**: The Northern England creative sector, particularly Manchester's strong digital arts and games development community (comprising home to MediaCityUK/BBC studios, multiple games developers, and creative agencies), has been an early and active adopter of SD-based tools for concept art, game asset production, and marketing content. The Manchester Digital cluster includes numerous studios integrating SD workflows. Leeds and Sheffield creative agencies similarly report 40-60% integration of AI image generation into production workflows by 2025.
+
+	  **BEIS/DSIT policy context**: The UK Creative Industries strategy (2023) and the AI Opportunities Action Plan (2025) both address the tension between enabling open generative AI models and protecting copyright-holding creators. The UK government's decision not to proceed with a broad text and data mining exception for commercial AI (2023) has particular relevance to SD's training data foundations. The UK Intellectual Property Office has published guidance on AI-generated images and copyright that directly affects SD-based commercial users.
+
+  - ### Future Directions (2026–2030)
+
+	  **Architectural unification**: The DiT/MMDiT transformer architecture introduced in SD 3.0 is becoming the dominant paradigm, displacing U-Net. Future models will likely be pure transformer architectures operating in latent spaces of increasingly sophisticated tokenisers.
+
+	  **Multi-modality**: Next-generation SD successors will natively handle image+video+audio+3D within unified latent representations, with the image generation capability becoming one modality among several in a joint generative model.
+
+	  **Real-time generation**: Hardware acceleration (NVIDIA TensorRT, Apple Neural Engine), aggressive distillation, and quantisation (INT8/INT4) are pushing towards consistent sub-second 1024×1024 generation on consumer hardware by 2027, enabling interactive artistic tools.
+
+	  **Improved text fidelity**: Typography accuracy—a persistent weakness of SD 1.x/SDXL—is substantially improved in SD 3.5 and FLUX.1 through T5-XXL conditioning; further improvement through character-level text encoders and dedicated text rendering modules is an active research direction.
+
+	  **Provenance and watermarking**: C2PA (Coalition for Content Provenance and Authenticity) integration and invisible watermarking standards are being incorporated into commercial SD deployments, with Stability AI's API implementing C2PA content credentials.
+
+	  **Personalisation at scale**: Methods for efficient personalisation without fine-tuning (IP-Adapter variants, prompt inversion) will mature, enabling consumer products offering highly personalised generation without per-user LoRA training.
+
+	  **3D and world models**: Zero123, One-2-3-45, and SV3D demonstrate SD priors extending to 3D generation; future generative models will likely blur the image/3D boundary through native volumetric representations.
+
+  - ### Prompt Engineering and Image Quality
+
+	  Effective prompt engineering is central to leveraging Stable Diffusion's full generative capacity. Unlike fine-tuned task-specific models, SD is a general-purpose generative system whose output quality depends critically on the specificity, structure, and semantic richness of the input prompt.
+
+	  **Positive prompt composition**: SD models respond to descriptive noun phrases and artistic style descriptors more reliably than instructions. Effective prompts typically combine subject description ("a serene mountain lake at dawn"), artistic style references ("oil painting in the style of Albert Bierstadt"), quality modifiers ("highly detailed, award-winning photography, 8k resolution"), and mood/lighting descriptors ("golden hour light, dramatic clouds, volumetric fog"). Long prompts with more than 77 CLIP tokens are automatically truncated in SD 1.x/SDXL; SD 3.x/FLUX.1 with T5-XXL encoding support significantly longer prompts without truncation.
+
+	  **Negative prompts**: Classifier-free guidance allows separate conditioning on negative prompts—text describing features to avoid. Canonical negative prompt components include: "worst quality, low quality, bad anatomy, bad hands, extra fingers, blurry, watermark, signature, out of frame, poorly drawn." SDXL-specific negatives: "oversaturated, deformed, mutated." Negative prompts function by steering the guidance direction away from the negative condition's embedding, mathematically equivalent to ε̃ = ε_θ(z_t, ∅_neg) + w·(ε_θ(z_t, y_pos) − ε_θ(z_t, y_neg)).
+
+	  **CFG scale tuning**: The guidance scale w controls the prompt adherence-diversity tradeoff. For SD 1.5, w=7 provides balanced results; w=12-15 increases prompt adherence but risks over-saturation and artefacts. For SDXL, w=5-8 is typical; for FLUX.1, lower guidance (w=3-4) is often preferred. The CFG rescaling technique (Lin et al. 2023) addresses the over-saturation problem at high guidance by rescaling the CFG output to maintain perceptual richness.
+
+	  **Resolution and aspect ratio**: SD 1.5 is trained at 512×512; generating at other resolutions (particularly non-square) can produce artefacts including repeated elements, anatomical distortions, and compositional incoherence. SDXL supports multiple native aspect ratios (1:1, 2:3, 3:2, 9:16, 16:9) through size conditioning. The common solution for SD 1.5 at higher resolutions is img2img "hires.fix"—generate at native resolution then upscale with img2img at denoise strength 0.5-0.7.
+
+	  **Attention manipulation**: Extensions like Prompt-to-Prompt (Hertz et al. 2022) and Attend-and-Excite (Chefer et al. 2023) manipulate the cross-attention maps to improve compositional faithfulness, ensuring attribute binding (e.g. "red cube and blue sphere" correctly assigning colours to correct objects). ComfyUI's attention modulation nodes enable manual attention steering.
+
+	  **CLIP skip**: In SD 1.x models, the CLIP text encoder has 12 transformer layers; "CLIP skip=2" uses the penultimate layer's output rather than the final layer, producing less literal but stylistically more expressive text conditioning—widely used in anime and artistic community models.
+
+  - ### Training Data and Ethics
+
+	  The LAION datasets underlying Stable Diffusion training are among the largest openly compiled image-text datasets in existence:
+
+	  **LAION-5B**: 5.85 billion image-text pairs scraped from Common Crawl web data, curated by LAION (Large-scale Artificial Intelligence Open Network, a German non-profit). The dataset covers enormous stylistic and semantic diversity but includes copyrighted works without explicit consent. SD was primarily trained on LAION-Aesthetics v2, a 600M image aesthetics-filtered subset.
+
+	  **Training controversies**: Multiple lawsuits filed against Stability AI by artists (Andersen et al. v. Stability AI, filed January 2023, N.D. California) and stock image companies (Getty Images v. Stability AI, filed February 2023, D.Del.) allege copyright infringement through training on scraped images. The legal outcomes remain ongoing in 2026, with potential implications for training data practices across the industry.
+
+	  **Style mimicry concerns**: SD's ability to generate images "in the style of [artist name]" when that artist's works were present in training data raises ethical questions about unconsented artistic style appropriation. The Civitai LoRA ecosystem amplifies this—individual artists' styles can be extracted with 20-50 images into transferable LoRA weights.
+
+	  **Content filtering**: SD 1.x included a safety filter (NSFW classifier) that could be disabled; this was controversial as it enabled unrestricted generation. SDXL and SD 3.x include stronger safety systems. The CreativeML Open RAIL-M licence prohibits certain harmful uses but is not technically enforced. Civitai operates an 18+ content system with mandatory age verification in regulated jurisdictions.
+
+	  **Bias and representation**: SD models trained on web-scraped data inherit and amplify societal biases—over-representing Western aesthetic norms, under-representing diverse ethnicities in professional contexts, defaulting to male presentation for certain occupations. Academic studies (Bianchi et al. 2023 "Easily Accessible Text-to-Image Generation Amplifies Demographic Stereotypes") have quantified these biases in SD outputs.
+
+	  **Data provenance initiatives**: The Data Provenance Initiative (Longpre et al. 2023) and ROOTS (Laurençon et al. 2022) represent efforts to create consent-cleared or licence-compatible training datasets. Stability AI's future models are intended to incorporate clearer data provenance practices, though LAION-5B-derived weights remain widely deployed.
+
+  - ### Performance Benchmarks and Quality Metrics
+
+	  Evaluating generative image models requires specialised metrics that correlate with human perceptual judgements:
+
+	  **Fréchet Inception Distance (FID)** (Heusel et al. 2017): Computes the Wasserstein-2 distance between Inception-v3 pool3 feature distributions of real and generated image samples, modelled as multivariate Gaussians: FID = ‖μ_r − μ_g‖² + Tr(Σ_r + Σ_g − 2(Σ_rΣ_g)^{1/2}). Lower FID indicates higher distributional similarity to reference data. SD 1.4 achieved FID 12.64 on MS-COCO 256×256; SDXL improved substantially; FLUX.1 achieves competitive FID with much larger parameter count.
+
+	  **CLIP Score** (Radford et al. 2021, Hessel et al. 2021): Cosine similarity between CLIP image embedding of generated image and CLIP text embedding of the conditioning prompt, measuring semantic alignment. High CLIP score indicates faithful prompt adherence; target range 25-35 for well-aligned generation.
+
+	  **Aesthetic Score** (LAION aesthetic predictor): Regression model trained on human aesthetic preference labels from the LAION aesthetic subset, predicting preference on 1-10 scale. Used during LAION-Aesthetics filtering and as optimisation target in RLHF-based model refinement.
+
+	  **Human Preference Score (HPS)** (Wu et al. 2023): CLIP-based model specifically fine-tuned on human preference comparisons collected from image generation communities, showing better correlation with user preferences than raw FID/CLIP. HPSv2 dataset includes 798K human comparisons.
+
+	  **ImageReward** (Xu et al. 2023): Reward model combining CLIP and BLIP features trained on 137K human feedback comparisons, enabling RLHF-based diffusion model fine-tuning analogous to RLHF in language models.
+
+	  **T2I-CompBench** (Huang et al. 2023): Comprehensive compositional text-to-image evaluation benchmark testing attribute binding, spatial relationships, and non-spatial relationships that simple FID/CLIP metrics miss. SD 3.5 and FLUX.1 show significant improvements on compositional benchmarks vs SDXL.
+
+	  **Inference speed benchmarks (2025 hardware)**:
+	  - SD 1.5, 512×512, 20 steps DPM++ 2M: RTX 4090 ~1.2s, RTX 3070 ~4.5s, Apple M3 Pro ~6.8s
+	  - SDXL 1.0, 1024×1024, 30 steps DPM++ 2M: RTX 4090 ~4.1s, RTX 3090 ~8.3s
+	  - SDXL Turbo, 1024×1024, 4 steps: RTX 4090 ~0.7s (near-realtime)
+	  - FLUX.1 [schnell], 1024×1024, 4 steps: RTX 4090 ~3.2s (12B parameters)
+	  - SD 3.5 Medium, 1024×1024, 28 steps: RTX 4090 ~5.1s
+
+  - ### Extended Application Domains
+
+	  Beyond standard text-to-image, Stable Diffusion underpins a rich array of derived applications:
+
+	  **Video generation via AnimateDiff**: Extends SD image U-Net with a motion module (temporal attention layers) enabling frame-coherent video synthesis. AnimateDiff v3 supports SDXL; SparseCtrl adds sparse frame control. The motion LoRA system enables style-consistent video from community-trained weights without per-video fine-tuning.
+
+	  **Stable Video Diffusion (SVD)**: Blattmann et al. 2023 (arXiv:2311.15127) adapts SD 2.1 for image-to-video generation by adding temporal convolutions and attention, trained on 150M curated video clips. SVD-XT generates 25-frame 576×1024 videos at 6fps; fine-tuned variants target specific motion types.
+
+	  **3D generation with Zero123 and SV3D**: Zero123 (Liu et al. 2023) fine-tunes SD to synthesise novel viewpoints from a single image by conditioning on relative camera transformation; Zero123++ extends to 6-viewpoint synthesis. SV3D (Stability AI 2024) extends SVD to orbit-style 3D generation, enabling single-image-to-mesh workflows via NeRF/3DGS reconstruction.
+
+	  **Depth and normal estimation**: MarigoldDepth (Ke et al. 2024) repurposes SD's pre-trained representations for monocular depth estimation via fine-tuning, exploiting the rich scene geometry understanding encoded in diffusion priors. This exemplifies how SD-pretrained weights transfer to discriminative vision tasks.
+
+	  **Medical image synthesis and augmentation**: SD fine-tuned on medical imaging datasets (chest X-rays, MRI scans, histopathology slides) generates synthetic training data for diagnostic AI, addressing data scarcity constraints in regulated medical AI development. Studies at King's College London, UCL, and Imperial have demonstrated SD-augmented training improving diagnostic classifier performance 5-15% on rare pathology classes.
+
+	  **Inpainting and outpainting**: Stable Diffusion Inpainting (SD 1.5 inpaint model) uses a 5-channel U-Net input (3-channel image + 1-channel mask + 1-channel masked image) enabling seamless object removal, replacement, and background completion. Outpainting (extending images beyond their borders) uses the same mechanism with progressively expanded masks.
+
+	  **Super-resolution**: SD-based upscalers (Real-ESRGAN integration in A1111, UltimixUpscaler, SUPIR Ye et al. 2024) leverage diffusion priors to hallucinate high-frequency details missing from low-resolution inputs, achieving perceptually superior results vs traditional bicubic/lanczos upsampling at 4-8× magnification.
+
+	  **Image editing with InstructPix2Pix**: Brooks et al. (2023) fine-tune SD on (image, instruction, edited-image) triplets generated by combining GPT-3 instruction generation with Prompt-to-Prompt image editing, enabling natural language image modification ("make the sky more dramatic", "add snow to the ground") without masks or prompts.
+
+  - ### Community Ecosystem and Civitai
+
+	  The Stable Diffusion community ecosystem is arguably its most significant innovation—larger, more diverse, and more productive than any comparable open AI model community:
+
+	  **Civitai platform**: Founded 2022 by Justin Maier, Civitai has grown to host 200K+ models (LoRAs, checkpoints, embeddings, hypernetworks) uploaded by 500K+ creators, with 12M+ registered users as of 2025. The platform functions as an open exchange for SD model derivatives, with each model carrying user-generated showcase images, training parameters, and usage guidance. The business model combines free access with premium subscription for faster downloads and priority generation.
+
+	  **Model taxonomy on Civitai**:
+	  - **Checkpoint**: Full base model weights (2-8GB), typically fine-tuned from SD 1.5 or SDXL for specific aesthetics (photorealism, anime, illustration). Top checkpoints: Realistic Vision, DreamShaper, SDXL Base, Pony Diffusion XL.
+	  - **LoRA**: Lightweight adapter weights (2-150MB) for style, character, concept, or clothing. Community LoRAs span every conceivable artistic style, specific characters, product lines, and techniques.
+	  - **Embedding / Textual Inversion**: 4-20KB token embedding files for concept/style injection. Used for negative prompts (EasyNegative, BadDream) and positive concept anchoring.
+	  - **VAE**: Improved VAE weights producing better colour saturation and detail rendering than SD 1.5 default VAE (mse/ema). SDXL VAE fixes with improved fp16 stability.
+	  - **Hypernetwork**: Earlier fine-tuning format superseded by LoRA but still distributed for SD 1.5 compatibility.
+
+	  **Discord and Reddit communities**: r/StableDiffusion (1.2M+ members), r/comfyui (200K+ members), and the official Stability AI Discord serve as primary community hubs for technique sharing, model releases, and support. The Banodoco Discord focuses specifically on animation workflows.
+
+	  **Hugging Face Diffusers**: The Hugging Face `diffusers` library (Python) provides the primary programmatic interface to SD models, standardising model loading, sampling, fine-tuning, and inference pipelines across all SD variants and many non-SD diffusion models. Over 100K GitHub stars; used in virtually all SD-based research code.
+
+	  **ComfyUI workflow ecosystem**: ComfyUI's node-based interface has spawned a secondary ecosystem of workflow repositories (ComfyUI Workflows, comfyworkflows.com) sharing complete pipeline graphs for specific creative tasks, enabling non-programmers to deploy complex multi-model chains through visual composition.
+
+  - ### Legal, Ethical, and Governance Landscape
+
+	  Stable Diffusion sits at the intersection of multiple unresolved legal and ethical frameworks:
+
+	  **Copyright in training data**: The core litigation question—whether training generative models on copyrighted images without licence constitutes infringement—remains unresolved in major jurisdictions as of early 2026. The Getty Images v. Stability AI case in the US District of Delaware and parallel UK High Court proceedings are the most consequential test cases. Legal scholars debate whether training constitutes "transformative fair use" under US copyright law or infringement under EU InfoSoc Directive.
+
+	  **Copyright in AI-generated images**: The US Copyright Office has consistently held that AI-generated images without substantial human creative input are not copyrightable (Thaler v. Perlmutter 2023; Zarya of the Dawn guidance 2023). Human-directed AI generation with significant creative input may qualify for copyright protection. The UK CDPA 1988 s.9(3) providing computer-generated work copyright for "the person by whom the arrangements necessary for the creation of the work are undertaken" creates a distinctive UK framework potentially more favourable to AI-generated content.
+
+	  **Content authenticity and synthetic media**: The proliferation of SD-generated synthetic imagery has accelerated adoption of the C2PA (Content Authenticity Initiative/Coalition for Content Provenance and Authenticity) standard, which embeds cryptographically signed provenance metadata in image files identifying generation tools and parameters. Stability AI, Adobe, and Microsoft are C2PA founding members. The EU AI Act (2024) includes requirements for labelling AI-generated synthetic media.
+
+	  **Creator compensation frameworks**: Getty Images announced a commercial licence model for AI training data; Adobe Stock launched Firefly-eligible content designation; Spawning.ai built opt-out registry (haveibeentrained.com) allowing artists to request exclusion from future training sets. These frameworks represent nascent responses to the training data consent problem.
+
+	  **UK policy context**: The UK Intellectual Property Office consultation on AI and IP (2022-2023) initially proposed a broad text-and-data mining exception for AI training but retreated from this position following strong creative industry opposition. Current UK policy (2024-2026) takes a voluntary code approach, placing responsibility on AI developers to seek appropriate data licences rather than legislating exceptions.
+
+  - ### Hardware Requirements and Optimisation
+
+	  Stable Diffusion's hardware requirements have evolved with model scale, with the community developing extensive optimisation techniques to expand accessibility:
+
+	  **SD 1.5 hardware requirements**: Minimum 4GB VRAM (with xformers attention optimisation), 8GB+ VRAM recommended for reliable operation without VRAM offloading. CPU inference is possible via ONNX export but extremely slow (5-60 minutes per image). The model can run on Apple Silicon via Metal Performance Shaders (MPS) backend in PyTorch, achieving 45-120 seconds per image on M1/M2 chips.
+
+	  **SDXL hardware requirements**: 8GB VRAM minimum (with careful memory management), 12-16GB VRAM recommended for comfortable 1024×1024 generation. Running SDXL at full quality with refiner requires 16GB+ VRAM or sequential CPU offloading. SDXL-Lightning (Sauer et al. 2024) distilled variant enables 4-step inference fitting in 8GB VRAM.
+
+	  **FLUX.1 hardware requirements**: 12B parameter scale demands 24GB VRAM for full model. FLUX.1 [schnell] quantised to fp8 or nf4 via bitsandbytes can operate in 8-12GB VRAM with quality trade-offs. The community GGUF quantisation format (llama.cpp-style) enables FLUX.1 inference on as little as 6GB VRAM via Q4_K_M quantisation.
+
+	  **Attention optimisation techniques**:
+	  - **xFormers** (Lefaudeux et al. 2022, Meta): Memory-efficient attention implementation reducing VRAM requirements 30-50% through fused CUDA kernels, enabling larger batch sizes and higher resolutions within fixed VRAM budgets
+	  - **Flash Attention** (Dao et al. 2022, 2023): IO-aware exact attention algorithm reducing memory from O(n²) to O(n) through tiling, achieving 2-4× speedup over standard attention on long sequences; integrated in SD 2.x, SDXL, SD 3.x
+	  - **Torch compile**: PyTorch 2.0+ graph compilation with `torch.compile(mode='max-autotune')` provides 20-40% inference speedup via kernel fusion and graph optimisation without code changes
+
+	  **Quantisation formats**: fp16 (default, 50% VRAM vs fp32), bf16 (improved stability on Ampere+ and Apple Silicon), INT8 (bitsandbytes, 40-50% VRAM reduction, ~5% quality penalty), GGUF/NF4 (4-bit blockwise, 50-75% VRAM reduction, enables consumer deployment of FLUX.1).
+
+	  **TensorRT optimisation**: NVIDIA TensorRT compilation of the SD U-Net and VAE produces optimised inference graphs achieving 2-3× throughput improvement over PyTorch eager mode on Ampere/Hopper GPUs; deployed in production cloud environments.
+
+  - ### Extended Application Domains
+
+	  Beyond standard text-to-image, Stable Diffusion underpins a rich array of derived applications:
+
+	  **Video generation via AnimateDiff**: Extends SD image U-Net with a motion module (temporal attention layers) enabling frame-coherent video synthesis. AnimateDiff v3 supports SDXL; SparseCtrl adds sparse frame control. The motion LoRA system enables style-consistent video from community-trained weights without per-video fine-tuning.
+
+	  **Stable Video Diffusion (SVD)**: Blattmann et al. 2023 (arXiv:2311.15127) adapts SD 2.1 for image-to-video generation by adding temporal convolutions and attention, trained on 150M curated video clips. SVD-XT generates 25-frame 576×1024 videos; fine-tuned variants target specific motion types.
+
+	  **3D generation with Zero123 and SV3D**: Zero123 (Liu et al. 2023) fine-tunes SD to synthesise novel viewpoints from a single image by conditioning on relative camera transformation. SV3D (Stability AI 2024) extends SVD to orbit-style 3D generation, enabling single-image-to-mesh workflows via NeRF/3DGS reconstruction.
+
+	  **Depth and normal estimation**: MarigoldDepth (Ke et al. 2024) repurposes SD's pre-trained representations for monocular depth estimation via fine-tuning, exploiting the rich scene geometry understanding encoded in diffusion priors. This exemplifies how SD-pretrained weights transfer to discriminative vision tasks.
+
+	  **Medical image synthesis and augmentation**: SD fine-tuned on medical imaging datasets (chest X-rays, MRI scans, histopathology slides) generates synthetic training data for diagnostic AI, addressing data scarcity in regulated medical AI development. Studies at King's College London, UCL, and Imperial have demonstrated SD-augmented training improving diagnostic classifier performance 5-15% on rare pathology classes.
+
+	  **Inpainting and outpainting**: The inpainting model uses a 5-channel U-Net input (3-channel image + 1-channel mask + 1-channel masked image) enabling seamless object removal, replacement, and background completion. Outpainting extends images beyond their borders using the same mechanism.
+
+	  **Super-resolution**: SD-based upscalers (Real-ESRGAN integration in A1111, SUPIR Ye et al. 2024) leverage diffusion priors to hallucinate high-frequency details missing from low-resolution inputs, achieving perceptually superior results vs traditional upsampling at 4-8× magnification.
+
+	  **InstructPix2Pix (IP2P)**: Brooks et al. (2023) fine-tune SD on (image, instruction, edited-image) triplets enabling natural language image modification ("make the sky more dramatic", "add snow to the ground") without masks or region specifications.
+
+  - ### Integration with Broader AI Ecosystem
+
+	  Stable Diffusion increasingly integrates with other AI systems, creating compound capabilities:
+
+	  **LLM-guided generation**: Connecting SD to language models like [[Anthropic Claude]], [[ChatGPT]], or local LLMs enables multi-step creative workflows where the LLM decomposes complex requests into SD prompts, evaluates outputs, and iterates. The ComfyUI-LLM-Party extension implements this as a visual node graph.
+
+	  **Vision-language model integration**: BLIP-2, LLaVA, and similar vision-language models can interrogate SD-generated images, enabling feedback loops where VLM critique drives prompt refinement or ControlNet conditioning adjustments, representing a precursor to autonomous creative AI agents.
+
+	  **Segment Anything Model (SAM) integration**: Meta's SAM (Kirillov et al. 2023) combined with SD inpainting enables point-click object selection followed by natural language replacement—popularised through the Segment-Anything WebUI extension for A1111 and native support in InvokeAI.
+
+	  **Adobe Creative Cloud integration**: Adobe Firefly (based partly on SD-family models trained on Adobe Stock licensed content) integrates generative fill, text-to-image, and style matching into Photoshop and Express, bringing diffusion generation to 30M+ Creative Cloud users with commercial use safety guarantees.
+
+	  **Game engine integration**: Unreal Engine 5 and Unity have community plugins connecting to local SD inference, enabling texture synthesis, environment design, and concept art generation within game development workflows.
+
+	  **Agentic image workflows**: [[CLI Multi-Agent Systems]] and [[Agent Frameworks]] increasingly incorporate SD as a tool-using capability, with agents capable of invoking image generation, modification, and analysis as steps in longer task completion chains. This connects SD to the broader [[Agents]] ecosystem that defines modern AI deployment.
+
+  - ### Variants and Extended Model Families
+
+	  Beyond the main SD line, numerous specialised variants address specific generation domains:
+
+	  **Stable Cascade** (Wuerstchen architecture, 2024): Three-stage hierarchical latent compression (image → 24×24 C-space → noise) enabling more efficient high-resolution generation; released experimentally with limited community adoption due to incompatibility with existing SD tooling.
+
+	  **CosXL / SDXL Lightning**: Quality refinements to SDXL — CosXL replaces DDPM noise schedule with cosine schedule improving high-contrast image quality; SDXL Lightning (ByteDance, Sauer et al. 2024) achieves 4-step and 1-step distillation via progressive adversarial distillation.
+
+	  **Playground v2.5**: Playground AI (2024) released Playground v2.5 trained on SDXL architecture with aesthetic fine-tuning on human preference data, achieving state-of-the-art aesthetics scores on MJHQ-30K benchmark, subsequently releasing model weights.
+
+	  **Pony Diffusion XL**: Community-developed SDXL fine-tune trained primarily on Danbooru anime-tagged data, achieving exceptional quality for stylised anime and illustration generation; one of the most downloaded models on Civitai with 500K+ downloads.
+
+	  **Realistic Vision**: Community SDXL and SD 1.5 checkpoints fine-tuned for photorealistic portrait and product photography with improved skin texture, anatomical accuracy, and lighting consistency vs base SDXL.
+
+	  **Kandinsky series**: Sber AI's alternative LDM architecture using a two-stage DALL-E-like image prior (CLIP image embeddings) followed by latent diffusion decoder, enabling image mixing and interpolation operations not native to text-only SD conditioning.
+
+	  **SD Turbo / SDXL Turbo**: Stability AI's adversarial diffusion distillation models enabling real-time 1-step 512×512 and 1024×1024 generation, demonstrated running at 40fps on NVIDIA A100 via batched inference.
+
+  - ### Performance Benchmarks and Quality Metrics
+
+	  Evaluating generative image models requires specialised metrics that correlate with human perceptual judgements:
+
+	  **Fréchet Inception Distance (FID)** (Heusel et al. 2017): Computes the Wasserstein-2 distance between Inception-v3 pool3 feature distributions of real and generated image samples: FID = ‖μ_r − μ_g‖² + Tr(Σ_r + Σ_g − 2(Σ_rΣ_g)^{1/2}). Lower FID indicates higher distributional similarity. SD 1.4 achieved FID 12.64 on MS-COCO 256×256; SDXL improved substantially; FLUX.1 achieves competitive FID with much larger parameter count.
+
+	  **CLIP Score** (Radford et al. 2021): Cosine similarity between CLIP image embedding of generated image and CLIP text embedding of the conditioning prompt, measuring semantic alignment. High CLIP score indicates faithful prompt adherence; target range 25-35 for well-aligned generation.
+
+	  **Human Preference Score (HPS)** (Wu et al. 2023): CLIP-based model specifically fine-tuned on human preference comparisons collected from image generation communities, showing better correlation with user preferences than raw FID/CLIP. HPSv2 dataset includes 798K human comparisons.
+
+	  **T2I-CompBench** (Huang et al. 2023): Comprehensive compositional text-to-image evaluation benchmark testing attribute binding, spatial relationships, and non-spatial relationships. SD 3.5 and FLUX.1 show significant improvements on compositional benchmarks vs SDXL.
+
+	  **Inference speed benchmarks (2025 hardware)**:
+	  - SD 1.5, 512×512, 20 steps DPM++ 2M: RTX 4090 ~1.2s, RTX 3070 ~4.5s, Apple M3 Pro ~6.8s
+	  - SDXL 1.0, 1024×1024, 30 steps: RTX 4090 ~4.1s, RTX 3090 ~8.3s
+	  - SDXL Turbo, 1024×1024, 4 steps: RTX 4090 ~0.7s (near-realtime)
+	  - FLUX.1 [schnell], 1024×1024, 4 steps: RTX 4090 ~3.2s (12B parameters)
+	  - SD 3.5 Medium, 1024×1024, 28 steps: RTX 4090 ~5.1s
+
+  - ### Research and Literature
+
+	  Key papers shaping the Stable Diffusion ecosystem:
+	  - Rombach, R., Blattmann, A., Lorenz, D., Esser, P., Ommer, B. (2022). "High-Resolution Image Synthesis with Latent Diffusion Models." CVPR 2022. arXiv:2112.10752. The founding SD paper; 25,000+ citations.
+	  - Ho, J., Jain, A., Abbeel, P. (2020). "Denoising Diffusion Probabilistic Models." NeurIPS 2020. arXiv:2006.11239. DDPM foundation; 20,000+ citations.
+	  - Song, Y., Sohl-Dickstein, J., Kingma, D., Kumar, A., Ermon, S., Poole, B. (2021). "Score-Based Generative Modeling through Stochastic Differential Equations." ICLR 2021. arXiv:2011.13456.
+	  - Podell, D. et al. (2023). "SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis." arXiv:2307.01952. SDXL technical report.
+	  - Esser, P. et al. (2024). "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis." arXiv:2403.03206. SD 3.0 paper introducing MMDiT.
+	  - Zhang, L., Rao, A., Agrawala, M. (2023). "Adding Conditional Control to Text-to-Image Diffusion Models." ICCV 2023. arXiv:2302.05543. ControlNet paper; 5,000+ citations.
+	  - Hu, E. et al. (2021). "LoRA: Low-Rank Adaptation of Large Language Models." ICLR 2022. arXiv:2106.09685. LoRA fine-tuning foundation.
+	  - Ruiz, N. et al. (2022). "DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation." CVPR 2023. arXiv:2208.12242.
+	  - Gal, R. et al. (2022). "An Image is Worth One Word: Personalizing Text-to-Image Generation using Textual Inversion." ICLR 2023. arXiv:2208.01618.
+	  - Ye, H. et al. (2023). "IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models." arXiv:2308.06721.
+	  - Song, J., Meng, C., Ermon, S. (2020). "Denoising Diffusion Implicit Models." ICLR 2021. arXiv:2010.02502. DDIM sampler.
+	  - Lu, C. et al. (2022). "DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling." NeurIPS 2022. arXiv:2206.00927.
+	  - Luo, S. et al. (2023). "Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference." arXiv:2310.04378.
+	  - Sauer, A. et al. (2023). "Adversarial Diffusion Distillation." arXiv:2311.17042. SDXL Turbo.
+	  - Ho, J., Salimans, T. (2021). "Classifier-Free Diffusion Guidance." NeurIPS Workshop 2021. arXiv:2207.12598.
+	  - Radford, A. et al. (2021). "Learning Transferable Visual Models From Natural Language Supervision." ICML 2021. CLIP paper; 35,000+ citations.
+	  - Karras, T., Laine, S., Aittala, M., Hellsten, J., Lehtinen, J., Aila, T. (2022). "Elucidating the Design Space of Diffusion-Based Generative Models." NeurIPS 2022. arXiv:2206.00364.
+	  - Liu, X., Gong, C., Liu, Q. (2022). "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow." arXiv:2209.03003. Flow matching foundation for SD3/FLUX.
+	  - Lipman, Y., Chen, R., Ben-Hamu, H., Nickel, M., Le, M. (2022). "Flow Matching for Generative Modeling." arXiv:2210.02747.
+	  - Blattmann, A. et al. (2023). "Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets." arXiv:2311.15127.
+	  - Kingma, D., Welling, M. (2013). "Auto-Encoding Variational Bayes." ICLR 2014. arXiv:1312.6114. VAE foundation.
+	  - Forbes (March 2024). "Key Stable Diffusion Researchers Leave Stability AI as Company Flounders." Iain Martin. Corporate context.
+	  - Black Forest Labs (August 2024). FLUX.1 Model Release Announcement and Technical Report.
+	  - Civitai (2025). Platform Statistics Report — 200K+ model uploads, 12M+ registered users.
+
+  - ### Metadata
+	  - **Domain correction**: None — domain `artificial-intelligence` confirmed correct for this concept.
+	  - **Legacy term ID**: AI-1089 assigned (generative image model family)
+	  - **IRI / URI**: Unchanged from stub (`artificial-intelligence#StableDiffusion`)
+	  - **Version bump**: 2.0.0 → 2.1.0 (Phase 6 enrichment)
+	  - **Research sources**: Rombach 2022 CVPR paper; Podell 2023 arXiv SDXL; Esser 2024 arXiv SD3; Black Forest Labs FLUX.1 announcement August 2024; Forbes March 2024 Stability AI article; Civitai platform statistics; Ho DDPM 2020; ControlNet Zhang 2023 ICCV; LoRA Hu 2021.
 
 - ### Provenance
-  - sources::
+  - sources:: Rombach et al. CVPR 2022 arXiv:2112.10752; Ho et al. NeurIPS 2020 arXiv:2006.11239; Podell et al. arXiv:2307.01952; Esser et al. arXiv:2403.03206; Zhang et al. ICCV 2023 arXiv:2302.05543; Hu et al. ICLR 2022 arXiv:2106.09685; Ruiz et al. CVPR 2023 arXiv:2208.12242; Gal et al. ICLR 2023 arXiv:2208.01618; Ye et al. arXiv:2308.06721; Song et al. ICLR 2021 arXiv:2010.02502; Lu et al. NeurIPS 2022 arXiv:2206.00927; Luo et al. arXiv:2310.04378; Sauer et al. arXiv:2311.17042; Ho & Salimans arXiv:2207.12598; Radford et al. ICML 2021 CLIP; Karras et al. NeurIPS 2022 arXiv:2206.00364; Liu et al. arXiv:2209.03003; Lipman et al. arXiv:2210.02747; Blattmann et al. arXiv:2311.15127; Kingma & Welling ICLR 2014 arXiv:1312.6114; Forbes March 2024 Stability AI; Black Forest Labs FLUX.1 August 2024; Song et al. ICLR 2021 arXiv:2011.13456; Sohl-Dickstein et al. ICML 2015; Civitai Platform Stats 2025
   - migration-date:: 2026-04-26T00:00:00Z
+  - enrichment-date:: 2026-05-17T09:00:00Z
+  - enriched-by:: claude-sonnet-4-6
+  - enrichment-phase:: Phase 6 / Bulk Run
+  - prior-status:: stub → production-ready
+  - domain-correction:: none (artificial-intelligence confirmed)

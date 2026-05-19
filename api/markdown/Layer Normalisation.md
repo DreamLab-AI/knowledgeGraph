@@ -1,21 +1,207 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#LayerNormalisation
-uri:: urn:visionclaw:concept:artificial-intelligence:layer-normalisation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:layer-normalisation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Layer Normalisation
-content-hash:: sha256-12-46792fe81aa3
-legacy-term-id:: AI-0203
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#LayerNormalisation
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:layer-normalisation
 public:: true
+
+# Layer Normalisation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a",
+  "@type": "Page",
+  "vc:slug": "layer-normalisation",
+  "title": "Layer Normalisation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "vc:label": "Lightning and Similar L2"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-ontology",
+      "vc:label": "Metaverse Ontology"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-46792fe81aa3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#LayerNormalisation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0203"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Layer Normalisation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:layer-normalisation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:layer-normalisation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:layer-normalisation",
+  "@type": "OntologyClass",
+  "label": "Layer Normalisation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:layer-normalisation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning and Similar L2]]",
+      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Ontology]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-ontology",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.

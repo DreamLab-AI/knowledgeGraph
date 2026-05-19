@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:2e8f631c87146d8b89eb1297c6d0adaf9436080a21b4c4f0a9ac1736efc92a3e",
+  "title": "Virtual Experience",
+  "slug": "virtual-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-experience",
+  "domain": "spatial-computing",
+  "definition": "Virtual Experience is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "personalized-virtual-experiences",
+      "label": "Personalized Virtual Experiences"
+    }
+  ]
+}

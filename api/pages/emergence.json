@@ -1,0 +1,664 @@
+{
+  "id": "urn:visionflow:page:75b2f8cc7b3d45645ebc729eda9c2807185d718ce082b36d830ae4574fc038b3",
+  "title": "Emergence",
+  "slug": "emergence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:emergence",
+  "domain": "infrastructure",
+  "definition": "**Emergence** is the cross-disciplinary phenomenon in which qualitatively novel structures, behaviours, capabilities or properties arise at a higher level of organisation in a system as a non-trivial collective consequence of the interactions among its lower-level constituents, where the macro-level features are neither directly designed into the components, nor straightforwardly predictable from the component rules in isolation, nor easily reducible to a mere aggregation or summation of micro-level facts\u2014a notion whose modern philosophical articulation was crystallised by George Henry Lewes coining the term \"emergent\" in *Problems of Life and Mind* (Vol. 2, 1875) to distinguish causally non-additive resultants from additive ones (building on John Stuart Mill's earlier separation of heteropathic from homopathic laws in *A System of Logic*, 1843), elaborated by C. Lloyd Morgan in the Gifford Lectures published as *Emergent Evolution* (1923), reignited in physics by Philip W. Anderson's manifesto *More is Different* (*Science* 177:393-396, August 1972) arguing that broken symmetry and renormalisation-group flow at each scale produce genuinely autonomous laws (superconductivity, magne",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:collective-behaviour",
+      "label": "Collective Behaviour"
+    },
+    {
+      "id": "urn:visionflow:linked:complex-systems-concept",
+      "label": "Complex Systems Concept"
+    },
+    {
+      "id": "urn:visionflow:linked:cross-scale-phenomenon",
+      "label": "Cross-Scale Phenomenon"
+    },
+    {
+      "id": "urn:visionflow:linked:non-reductive-property",
+      "label": "Non-Reductive Property"
+    },
+    {
+      "id": "urn:visionflow:linked:organisational-pattern",
+      "label": "Organisational Pattern"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cross-scale-mapping",
+        "label": "Cross-Scale Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:local-interaction-rules",
+        "label": "Local Interaction Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:lower-level-components",
+        "label": "Lower-Level Components"
+      },
+      {
+        "id": "urn:visionflow:linked:macro-level-pattern",
+        "label": "Macro-Level Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:order-parameter",
+        "label": "Order Parameter"
+      },
+      {
+        "id": "urn:visionflow:linked:symmetry-breaking",
+        "label": "Symmetry Breaking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:critical-threshold",
+        "label": "Critical Threshold"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-or-information-flow",
+        "label": "Energy or Information Flow"
+      },
+      {
+        "id": "urn:visionflow:linked:local-coupling",
+        "label": "Local Coupling"
+      },
+      {
+        "id": "urn:visionflow:linked:many-body-system",
+        "label": "Many-Body System"
+      },
+      {
+        "id": "urn:visionflow:linked:non-linear-interaction",
+        "label": "Non-Linear Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:sufficient-composition",
+        "label": "Sufficient Composition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "id": "urn:visionflow:linked:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:visionflow:linked:computational-universality",
+        "label": "Computational Universality"
+      },
+      {
+        "id": "urn:visionflow:linked:pattern-formation",
+        "label": "Pattern Formation"
+      },
+      {
+        "id": "urn:visionflow:linked:phase-transition",
+        "label": "Phase Transition"
+      },
+      {
+        "id": "urn:visionflow:linked:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:visionflow:linked:universality",
+        "label": "Universality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:mean-field-approximation",
+        "label": "Mean-Field Approximation"
+      },
+      {
+        "id": "urn:visionflow:linked:preferential-attachment",
+        "label": "Preferential Attachment"
+      },
+      {
+        "id": "urn:visionflow:linked:renormalisation-group-flow",
+        "label": "Renormalisation Group Flow"
+      },
+      {
+        "id": "urn:visionflow:linked:self-organised-criticality",
+        "label": "Self-Organised Criticality"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-free-energy-minimisation",
+        "label": "Variational Free-Energy Minimisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stigmergy",
+        "label": "Stigmergy"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "aggregative-property",
+      "label": "Aggregative Property"
+    },
+    {
+      "slug": "ai-capability-forecasting",
+      "label": "AI Capability Forecasting"
+    },
+    {
+      "slug": "albantakis-et-al-2023-iit-4-0",
+      "label": "Albantakis et al 2023 IIT 4.0"
+    },
+    {
+      "slug": "alexander-1920-space-time-and-deity",
+      "label": "Alexander 1920 Space Time and Deity"
+    },
+    {
+      "slug": "anderson-1972-more-is-different",
+      "label": "Anderson 1972 More is Different"
+    },
+    {
+      "slug": "axelrod-1984-evolution-of-cooperation",
+      "label": "Axelrod 1984 Evolution of Cooperation"
+    },
+    {
+      "slug": "bak-1996-how-nature-works",
+      "label": "Bak 1996 How Nature Works"
+    },
+    {
+      "slug": "bak-tang-wiesenfeld-1987-self-organized-criticality",
+      "label": "Bak Tang Wiesenfeld 1987 Self-Organized Criticality"
+    },
+    {
+      "slug": "barabasi-albert-1999-emergence-of-scaling",
+      "label": "Barabasi Albert 1999 Emergence of Scaling"
+    },
+    {
+      "slug": "behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "slug": "bettencourt-et-al-2007-urban-scaling",
+      "label": "Bettencourt et al 2007 Urban Scaling"
+    },
+    {
+      "slug": "broad-1925-the-mind-and-its-place-in-nature",
+      "label": "Broad 1925 The Mind and Its Place in Nature"
+    },
+    {
+      "slug": "brown-et-al-2020-gpt-3-in-context-learning",
+      "label": "Brown et al 2020 GPT-3 In-Context Learning"
+    },
+    {
+      "slug": "cellular-automata",
+      "label": "Cellular Automata"
+    },
+    {
+      "slug": "chalmers-2006-strong-and-weak-emergence",
+      "label": "Chalmers 2006 Strong and Weak Emergence"
+    },
+    {
+      "slug": "chaos-theory",
+      "label": "Chaos Theory"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "CognitiveScienceDomain"
+    },
+    {
+      "slug": "collective-behaviour",
+      "label": "Collective Behaviour"
+    },
+    {
+      "slug": "collective-intelligence",
+      "label": "Collective Intelligence"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
+      "slug": "complex-systems-concept",
+      "label": "Complex Systems Concept"
+    },
+    {
+      "slug": "complex-systems-domain",
+      "label": "ComplexSystemsDomain"
+    },
+    {
+      "slug": "complex-systems-society",
+      "label": "Complex Systems Society"
+    },
+    {
+      "slug": "complexity-science",
+      "label": "Complexity Science"
+    },
+    {
+      "slug": "computational-universality",
+      "label": "Computational Universality"
+    },
+    {
+      "slug": "consciousness-studies",
+      "label": "Consciousness Studies"
+    },
+    {
+      "slug": "cook-2004-universality-in-elementary-cellular-automata",
+      "label": "Cook 2004 Universality in Elementary Cellular Automata"
+    },
+    {
+      "slug": "critical-threshold",
+      "label": "Critical Threshold"
+    },
+    {
+      "slug": "cross-scale-mapping",
+      "label": "Cross-Scale Mapping"
+    },
+    {
+      "slug": "cross-scale-phenomenon",
+      "label": "Cross-Scale Phenomenon"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "dehaene-changeux-2011-global-workspace",
+      "label": "Dehaene Changeux 2011 Global Workspace"
+    },
+    {
+      "slug": "downward-causation",
+      "label": "Downward Causation"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "energy-or-information-flow",
+      "label": "Energy or Information Flow"
+    },
+    {
+      "slug": "epidemiology",
+      "label": "Epidemiology"
+    },
+    {
+      "slug": "fixed-rule-mechanisms",
+      "label": "Fixed-Rule Mechanisms"
+    },
+    {
+      "slug": "friston-2010-free-energy-principle",
+      "label": "Friston 2010 Free Energy Principle"
+    },
+    {
+      "slug": "gardner-1970-conway-game-of-life",
+      "label": "Gardner 1970 Conway Game of Life"
+    },
+    {
+      "slug": "granovetter-1973-strength-of-weak-ties",
+      "label": "Granovetter 1973 Strength of Weak Ties"
+    },
+    {
+      "slug": "hoffmann-et-al-2022-chinchilla",
+      "label": "Hoffmann et al 2022 Chinchilla"
+    },
+    {
+      "slug": "hofstadter-1979-godel-escher-bach",
+      "label": "Hofstadter 1979 Godel Escher Bach"
+    },
+    {
+      "slug": "holland-1998-emergence-chaos-to-order",
+      "label": "Holland 1998 Emergence Chaos to Order"
+    },
+    {
+      "slug": "imperial-centre-for-complexity-science",
+      "label": "Imperial Centre for Complexity Science"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "jacobs-1961-death-and-life-of-great-american-cities",
+      "label": "Jacobs 1961 Death and Life of Great American Cities"
+    },
+    {
+      "slug": "kauffman-1993-origins-of-order",
+      "label": "Kauffman 1993 Origins of Order"
+    },
+    {
+      "slug": "kim-1998-mind-in-a-physical-world",
+      "label": "Kim 1998 Mind in a Physical World"
+    },
+    {
+      "slug": "kwa-et-al-2025-metr-long-tasks",
+      "label": "Kwa et al 2025 METR Long Tasks"
+    },
+    {
+      "slug": "lewes-1875-problems-of-life-and-mind",
+      "label": "Lewes 1875 Problems of Life and Mind"
+    },
+    {
+      "slug": "linear-systems",
+      "label": "Linear Systems"
+    },
+    {
+      "slug": "local-coupling",
+      "label": "Local Coupling"
+    },
+    {
+      "slug": "local-interaction-rules",
+      "label": "Local Interaction Rules"
+    },
+    {
+      "slug": "lower-level-components",
+      "label": "Lower-Level Components"
+    },
+    {
+      "slug": "macro-level-pattern",
+      "label": "Macro-Level Pattern"
+    },
+    {
+      "slug": "many-body-system",
+      "label": "Many-Body System"
+    },
+    {
+      "slug": "mean-field-approximation",
+      "label": "Mean-Field Approximation"
+    },
+    {
+      "slug": "mill-1843-system-of-logic",
+      "label": "Mill 1843 System of Logic"
+    },
+    {
+      "slug": "mitchell-2009-complexity-guided-tour",
+      "label": "Mitchell 2009 Complexity Guided Tour"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "morgan-1923-emergent-evolution",
+      "label": "Morgan 1923 Emergent Evolution"
+    },
+    {
+      "slug": "multi-scale-simulation",
+      "label": "Multi-Scale Simulation"
+    },
+    {
+      "slug": "net-sci-conference-series",
+      "label": "NetSci Conference Series"
+    },
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    },
+    {
+      "slug": "network-theory",
+      "label": "Network Theory"
+    },
+    {
+      "slug": "newman-2018-networks-second-edition",
+      "label": "Newman 2018 Networks Second Edition"
+    },
+    {
+      "slug": "non-linear-dynamics",
+      "label": "Non-Linear Dynamics"
+    },
+    {
+      "slug": "non-linear-interaction",
+      "label": "Non-Linear Interaction"
+    },
+    {
+      "slug": "non-reductive-property",
+      "label": "Non-Reductive Property"
+    },
+    {
+      "slug": "order-parameter",
+      "label": "Order Parameter"
+    },
+    {
+      "slug": "order-parameters",
+      "label": "Order Parameters"
+    },
+    {
+      "slug": "organisational-pattern",
+      "label": "Organisational Pattern"
+    },
+    {
+      "slug": "pattern-formation",
+      "label": "Pattern Formation"
+    },
+    {
+      "slug": "phase-diagrams",
+      "label": "Phase Diagrams"
+    },
+    {
+      "slug": "phase-transition",
+      "label": "Phase Transition"
+    },
+    {
+      "slug": "philosophy-of-science-domain",
+      "label": "PhilosophyOfScienceDomain"
+    },
+    {
+      "slug": "power-et-al-2022-grokking",
+      "label": "Power et al 2022 Grokking"
+    },
+    {
+      "slug": "power-law-distributions",
+      "label": "Power-Law Distributions"
+    },
+    {
+      "slug": "preferential-attachment",
+      "label": "Preferential Attachment"
+    },
+    {
+      "slug": "prigogine-stengers-1984-order-out-of-chaos",
+      "label": "Prigogine Stengers 1984 Order Out of Chaos"
+    },
+    {
+      "slug": "reductionism",
+      "label": "Reductionism"
+    },
+    {
+      "slug": "renormalisation-group-flow",
+      "label": "Renormalisation Group Flow"
+    },
+    {
+      "slug": "royal-society-theo-murphy-meetings",
+      "label": "Royal Society Theo Murphy meetings"
+    },
+    {
+      "slug": "santa-fe-institute",
+      "label": "Santa Fe Institute"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "schaeffer-miranda-koyejo-2023-mirage",
+      "label": "Schaeffer Miranda Koyejo 2023 Mirage"
+    },
+    {
+      "slug": "schelling-1971-dynamic-models-of-segregation",
+      "label": "Schelling 1971 Dynamic Models of Segregation"
+    },
+    {
+      "slug": "self-organisation",
+      "label": "Self-Organisation"
+    },
+    {
+      "slug": "self-organised-criticality",
+      "label": "Self-Organised Criticality"
+    },
+    {
+      "slug": "sperry-1980-mind-brain-interaction",
+      "label": "Sperry 1980 Mind-brain interaction"
+    },
+    {
+      "slug": "statistical-mechanics",
+      "label": "Statistical Mechanics"
+    },
+    {
+      "slug": "statistical-physics-domain",
+      "label": "StatisticalPhysicsDomain"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "slug": "sufficient-composition",
+      "label": "Sufficient Composition"
+    },
+    {
+      "slug": "supervenience",
+      "label": "Supervenience"
+    },
+    {
+      "slug": "symmetry-breaking",
+      "label": "Symmetry Breaking"
+    },
+    {
+      "slug": "synergetics",
+      "label": "Synergetics"
+    },
+    {
+      "slug": "systems-analysis-layer",
+      "label": "SystemsAnalysisLayer"
+    },
+    {
+      "slug": "systems-theory",
+      "label": "Systems Theory"
+    },
+    {
+      "slug": "templeton-et-al-2024-scaling-monosemanticity",
+      "label": "Templeton et al 2024 Scaling Monosemanticity"
+    },
+    {
+      "slug": "tero-et-al-2010-physarum-tokyo-rail",
+      "label": "Tero et al 2010 Physarum Tokyo Rail"
+    },
+    {
+      "slug": "tononi-2004-iit-1-0",
+      "label": "Tononi 2004 IIT 1.0"
+    },
+    {
+      "slug": "top-down-design",
+      "label": "Top-Down Design"
+    },
+    {
+      "slug": "turing-1952-chemical-basis-of-morphogenesis",
+      "label": "Turing 1952 Chemical Basis of Morphogenesis"
+    },
+    {
+      "slug": "universality",
+      "label": "Universality"
+    },
+    {
+      "slug": "variational-free-energy-minimisation",
+      "label": "Variational Free-Energy Minimisation"
+    },
+    {
+      "slug": "von-neumann-1966-theory-of-self-reproducing-automata",
+      "label": "von Neumann 1966 Theory of Self-Reproducing Automata"
+    },
+    {
+      "slug": "watts-strogatz-1998-small-world-networks",
+      "label": "Watts Strogatz 1998 Small-World Networks"
+    },
+    {
+      "slug": "wei-et-al-2022-chain-of-thought",
+      "label": "Wei et al 2022 Chain of Thought"
+    },
+    {
+      "slug": "wei-et-al-2022-emergent-abilities-of-llms",
+      "label": "Wei et al 2022 Emergent Abilities of LLMs"
+    },
+    {
+      "slug": "west-2017-scale",
+      "label": "West 2017 Scale"
+    },
+    {
+      "slug": "wilson-1971-renormalization-group",
+      "label": "Wilson 1971 Renormalization Group"
+    },
+    {
+      "slug": "wilson-holldobler-1990-the-ants",
+      "label": "Wilson Holldobler 1990 The Ants"
+    },
+    {
+      "slug": "wolfram-1984-universality-and-complexity-in-cellular-automata",
+      "label": "Wolfram 1984 Universality and Complexity in Cellular Automata"
+    },
+    {
+      "slug": "wolfram-2002-a-new-kind-of-science",
+      "label": "Wolfram 2002 A New Kind of Science"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "stigmergy",
+      "label": "Stigmergy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

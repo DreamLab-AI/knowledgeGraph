@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:6cc3af3351e85d4e2f1f29c35790c5db96cb5ced8eb9f916fa79a86e34830509",
+  "title": "The Cognitive Revolution",
+  "slug": "the-cognitive-revolution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:the-cognitive-revolution",
+  "domain": "artificial-intelligence",
+  "definition": "The Cognitive Revolution is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

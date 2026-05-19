@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:e3ae1b9c99abe380cd7df1b4dac3708a6ec621a35512cc23e97e6f52acfc2995",
+  "title": "Procedural Content Generation",
+  "slug": "procedural-content-generation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:procedural-content-generation",
+  "domain": "spatial-computing",
+  "definition": "Algorithmic creation of 3D objects, textures, environments, or complete scenes using computational rules, mathematical functions, or AI models rather than manual authoring.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-model-inference-engine",
+        "label": "AI Model Inference Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-synthesizer",
+        "label": "Asset Synthesizer"
+      },
+      {
+        "id": "urn:visionflow:linked:rule-based-generator",
+        "label": "Rule-Based Generator"
+      },
+      {
+        "id": "urn:visionflow:owl:class:grammar-system",
+        "label": "Grammar System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:noise-function-library",
+        "label": "Noise Function Library"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-modeling-api",
+        "label": "3D Modeling API"
+      },
+      {
+        "id": "urn:visionflow:linked:texture-generation-system",
+        "label": "Texture Generation System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:algorithmic-framework",
+        "label": "Algorithmic Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-asset-creation",
+        "label": "Automated Asset Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-environments",
+        "label": "Dynamic Environments"
+      },
+      {
+        "id": "urn:visionflow:linked:infinite-world-generation",
+        "label": "Infinite World Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:unique-content-variation",
+        "label": "Unique Content Variation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-modeling-api",
+      "label": "3D Modeling API"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "asset-synthesizer",
+      "label": "Asset Synthesizer"
+    },
+    {
+      "slug": "automated-asset-creation",
+      "label": "Automated Asset Creation"
+    },
+    {
+      "slug": "content-creation-pipeline",
+      "label": "Content Creation Pipeline"
+    },
+    {
+      "slug": "dynamic-environments",
+      "label": "Dynamic Environments"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "fractal-algorithms",
+      "label": "Fractal Algorithms"
+    },
+    {
+      "slug": "infinite-world-generation",
+      "label": "Infinite World Generation"
+    },
+    {
+      "slug": "l-systems",
+      "label": "L-Systems"
+    },
+    {
+      "slug": "perlin-noise",
+      "label": "Perlin Noise"
+    },
+    {
+      "slug": "rule-based-generator",
+      "label": "Rule-Based Generator"
+    },
+    {
+      "slug": "texture-generation-system",
+      "label": "Texture Generation System"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "grammar-system",
+      "label": "Grammar System"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "noise-function-library",
+      "label": "Noise Function Library"
+    },
+    {
+      "slug": "unique-content-variation",
+      "label": "Unique Content Variation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    }
+  ]
+}

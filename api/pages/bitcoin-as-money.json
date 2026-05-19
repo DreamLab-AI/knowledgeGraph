@@ -1,0 +1,736 @@
+{
+  "id": "urn:visionflow:page:6477c1d4adc31580b816fcf02d46cc991cf1c4b28201c432a4bce772b743d5bf",
+  "title": "Bitcoin As Money",
+  "slug": "bitcoin-as-money",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-as-money",
+  "domain": "blockchain",
+  "definition": "**Bitcoin As Money** is the analytical framework within monetary economics and philosophy that interrogates whether [[Bitcoin]] \u2014 the fixed-supply, decentralised, proof-of-work-secured digital commodity created by [[Satoshi Nakamoto]] in 2008 \u2014 satisfies the classical three functions of money: **medium of exchange** (MOE), **store of value** (SOV), and **unit of account** (UOA). The concept draws simultaneously on [[Austrian Economics]] (Mises, Hayek, Rothbard on hard-money theory and the regression theorem), mainstream [[Monetary Theory]] (Keynes, Friedman on money supply and velocity), and empirical institutional observation, producing a rich and contested body of analysis that has grown substantially as Bitcoin's market capitalisation crossed $1 trillion in 2021, $2 trillion in 2024, and its price exceeded $100,000 per coin during 2024-2025.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:austrian-economics",
+      "label": "Austrian Economics"
+    },
+    {
+      "id": "urn:visionflow:linked:cryptocurrency-economics",
+      "label": "Cryptocurrency Economics"
+    },
+    {
+      "id": "urn:visionflow:linked:digital-asset-economics",
+      "label": "Digital Asset Economics"
+    },
+    {
+      "id": "urn:visionflow:linked:monetary-theory",
+      "label": "Monetary Theory"
+    },
+    {
+      "id": "urn:visionflow:linked:sound-money",
+      "label": "Sound Money"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:greshams-law-application",
+        "label": "Greshams Law Application"
+      },
+      {
+        "id": "urn:visionflow:linked:layered-bitcoin-architecture",
+        "label": "Layered Bitcoin Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:medium-of-exchange",
+        "label": "Medium of Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:store-of-value",
+        "label": "Store of Value"
+      },
+      {
+        "id": "urn:visionflow:linked:unit-of-account",
+        "label": "Unit of Account"
+      },
+      {
+        "id": "urn:visionflow:linked:velocity-of-money-analysis",
+        "label": "Velocity of Money Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:visionflow:linked:merchant-adoption",
+        "label": "Merchant Adoption"
+      },
+      {
+        "id": "urn:visionflow:linked:monetary-consensus",
+        "label": "Monetary Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:price-stability-analysis",
+        "label": "Price Stability Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-agent-payments",
+        "label": "AI Agent Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:borderless-payments",
+        "label": "Borderless Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:censorship-resistant-payments",
+        "label": "Censorship Resistant Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:circular-bitcoin-economy",
+        "label": "Circular Bitcoin Economy"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-commerce",
+        "label": "Machine Commerce"
+      },
+      {
+        "id": "urn:visionflow:linked:sovereign-reserve-asset",
+        "label": "Sovereign Reserve Asset"
+      },
+      {
+        "id": "urn:visionflow:owl:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:austrian-hard-money-theory",
+        "label": "Austrian Hard Money Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:commodity-money-model",
+        "label": "Commodity Money Model"
+      },
+      {
+        "id": "urn:visionflow:linked:fixed-supply-monetary-policy",
+        "label": "Fixed Supply Monetary Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-money-paradigm",
+        "label": "Programmable Money Paradigm"
+      },
+      {
+        "id": "urn:visionflow:linked:sound-money-principles",
+        "label": "Sound Money Principles"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "africa",
+      "label": "Africa"
+    },
+    {
+      "slug": "ai-agent-payments",
+      "label": "AI Agent Payments"
+    },
+    {
+      "slug": "ainvest-2025-lightning-network-1-17-billion-monthly-volume",
+      "label": "ainvest 2025 Lightning Network 1.17 Billion Monthly Volume"
+    },
+    {
+      "slug": "alden-2025-what-is-money",
+      "label": "Alden 2025 What is Money"
+    },
+    {
+      "slug": "ammous-2018-the-bitcoin-standard",
+      "label": "Ammous 2018 The Bitcoin Standard"
+    },
+    {
+      "slug": "andrew-m-bailey",
+      "label": "Andrew M. Bailey"
+    },
+    {
+      "slug": "ar-xiv-2025-bitcoin-structural-shortcomings-as-money",
+      "label": "arXiv 2025 Bitcoin Structural Shortcomings as Money"
+    },
+    {
+      "slug": "ark-invest",
+      "label": "ARK Invest"
+    },
+    {
+      "slug": "ark-protocol",
+      "label": "Ark Protocol"
+    },
+    {
+      "slug": "austrian-economics",
+      "label": "Austrian Economics"
+    },
+    {
+      "slug": "austrian-economics-domain",
+      "label": "AustrianEconomicsDomain"
+    },
+    {
+      "slug": "austrian-hard-money-theory",
+      "label": "Austrian Hard Money Theory"
+    },
+    {
+      "slug": "base-layer-bitcoin",
+      "label": "BaseLayerBitcoin"
+    },
+    {
+      "slug": "bip32-hd-wallets",
+      "label": "BIP32 HD Wallets"
+    },
+    {
+      "slug": "bitcoin-beach",
+      "label": "Bitcoin Beach"
+    },
+    {
+      "slug": "bitcoin-beach-fbce-2025-circular-economies-summit",
+      "label": "Bitcoin Beach FBCE 2025 Circular Economies Summit"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bitcoin-standard",
+      "label": "Bitcoin Standard"
+    },
+    {
+      "slug": "bitcoin-treasury-strategy",
+      "label": "Bitcoin Treasury Strategy"
+    },
+    {
+      "slug": "blinded-paths",
+      "label": "Blinded Paths"
+    },
+    {
+      "slug": "bohme-christin-edelman-moore-2015-bitcoin-economics",
+      "label": "Bohme Christin Edelman Moore 2015 Bitcoin Economics"
+    },
+    {
+      "slug": "borderless-payments",
+      "label": "Borderless Payments"
+    },
+    {
+      "slug": "ccaf",
+      "label": "CCAF"
+    },
+    {
+      "slug": "censorship-resistant-payments",
+      "label": "Censorship Resistant Payments"
+    },
+    {
+      "slug": "chainalysis-2025-geography-of-cryptocurrency",
+      "label": "Chainalysis 2025 Geography of Cryptocurrency"
+    },
+    {
+      "slug": "chivo-wallet",
+      "label": "Chivo Wallet"
+    },
+    {
+      "slug": "circular-bitcoin-economy",
+      "label": "Circular Bitcoin Economy"
+    },
+    {
+      "slug": "circular-economy-layer",
+      "label": "CircularEconomyLayer"
+    },
+    {
+      "slug": "coin-law-2026-lightning-network-usage-statistics",
+      "label": "CoinLaw 2026 Lightning Network Usage Statistics"
+    },
+    {
+      "slug": "commodity-money-model",
+      "label": "Commodity Money Model"
+    },
+    {
+      "slug": "cryptocurrency-economics",
+      "label": "Cryptocurrency Economics"
+    },
+    {
+      "slug": "d-central-2025-bitcoin-greshams-law",
+      "label": "D-Central 2025 Bitcoin Greshams Law"
+    },
+    {
+      "slug": "david-yermack",
+      "label": "David Yermack"
+    },
+    {
+      "slug": "digital-asset-economics",
+      "label": "Digital Asset Economics"
+    },
+    {
+      "slug": "digital-gold",
+      "label": "Digital Gold"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "el-zonte",
+      "label": "El Zonte"
+    },
+    {
+      "slug": "eric-yakes",
+      "label": "Eric Yakes"
+    },
+    {
+      "slug": "fasb-2023-asu-2023-08-crypto-asset-fair-value",
+      "label": "FASB 2023 ASU 2023-08 Crypto Asset Fair Value"
+    },
+    {
+      "slug": "fasb-asu-2023-08",
+      "label": "FASB ASU 2023-08"
+    },
+    {
+      "slug": "fca-2023-cryptoasset-promotions-regime-ps23-6",
+      "label": "FCA 2023 Cryptoasset Promotions Regime PS23-6"
+    },
+    {
+      "slug": "federation-of-bitcoin-circular-economies",
+      "label": "Federation of Bitcoin Circular Economies"
+    },
+    {
+      "slug": "fedimint",
+      "label": "Fedimint"
+    },
+    {
+      "slug": "fiat-money",
+      "label": "Fiat Money"
+    },
+    {
+      "slug": "fidelity-digital-assets",
+      "label": "Fidelity Digital Assets"
+    },
+    {
+      "slug": "fidelity-digital-assets-2025-bitcoin-first",
+      "label": "Fidelity Digital Assets 2025 Bitcoin First"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "financial-philosophy-domain",
+      "label": "FinancialPhilosophyDomain"
+    },
+    {
+      "slug": "financial-sovereignty",
+      "label": "Financial Sovereignty"
+    },
+    {
+      "slug": "fisher-1911-purchasing-power-of-money",
+      "label": "Fisher 1911 Purchasing Power of Money"
+    },
+    {
+      "slug": "fixed-supply-monetary-policy",
+      "label": "Fixed Supply Monetary Policy"
+    },
+    {
+      "slug": "giacomo-zucco",
+      "label": "Giacomo Zucco"
+    },
+    {
+      "slug": "gold-standard",
+      "label": "Gold Standard"
+    },
+    {
+      "slug": "greshams-law",
+      "label": "Greshams Law"
+    },
+    {
+      "slug": "greshams-law-application",
+      "label": "Greshams Law Application"
+    },
+    {
+      "slug": "hayek-1976-denationalisation-of-money",
+      "label": "Hayek 1976 Denationalisation of Money"
+    },
+    {
+      "slug": "hyperbitcoinization",
+      "label": "Hyperbitcoinization"
+    },
+    {
+      "slug": "imf",
+      "label": "IMF"
+    },
+    {
+      "slug": "imf-2025-crypto-assets-monitor-october",
+      "label": "IMF 2025 Crypto Assets Monitor October"
+    },
+    {
+      "slug": "imf-2025-el-salvador-article-iv-consultation",
+      "label": "IMF 2025 El Salvador Article IV Consultation"
+    },
+    {
+      "slug": "imf-crypto-asset-classification-framework",
+      "label": "IMF Crypto Asset Classification Framework"
+    },
+    {
+      "slug": "international-monetary-fund",
+      "label": "International Monetary Fund"
+    },
+    {
+      "slug": "jack-mallers",
+      "label": "Jack Mallers"
+    },
+    {
+      "slug": "jevons-1875-money-and-the-mechanism-of-exchange",
+      "label": "Jevons 1875 Money and the Mechanism of Exchange"
+    },
+    {
+      "slug": "kenya",
+      "label": "Kenya"
+    },
+    {
+      "slug": "keynesian-economics",
+      "label": "Keynesian Economics"
+    },
+    {
+      "slug": "l402",
+      "label": "L402"
+    },
+    {
+      "slug": "l402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "layered-bitcoin-architecture",
+      "label": "Layered Bitcoin Architecture"
+    },
+    {
+      "slug": "lightning-network-bolt-specifications",
+      "label": "Lightning Network BOLT Specifications"
+    },
+    {
+      "slug": "lightning-network-layer",
+      "label": "LightningNetworkLayer"
+    },
+    {
+      "slug": "liu-tsyvinski-2021-risks-and-returns-of-cryptocurrency",
+      "label": "Liu Tsyvinski 2021 Risks and Returns of Cryptocurrency"
+    },
+    {
+      "slug": "ludwig-von-mises",
+      "label": "Ludwig von Mises"
+    },
+    {
+      "slug": "lyn-alden",
+      "label": "Lyn Alden"
+    },
+    {
+      "slug": "machine-commerce",
+      "label": "Machine Commerce"
+    },
+    {
+      "slug": "medium-of-exchange",
+      "label": "Medium of Exchange"
+    },
+    {
+      "slug": "merchant-adoption",
+      "label": "Merchant Adoption"
+    },
+    {
+      "slug": "michael-saylor",
+      "label": "Michael Saylor"
+    },
+    {
+      "slug": "mises-1912-theory-of-money-and-credit",
+      "label": "Mises 1912 Theory of Money and Credit"
+    },
+    {
+      "slug": "mises-institute",
+      "label": "Mises Institute"
+    },
+    {
+      "slug": "mises-institute-2022-bitcoin-hodling-greshams-law",
+      "label": "Mises Institute 2022 Bitcoin Hodling Greshams Law"
+    },
+    {
+      "slug": "monetary-consensus",
+      "label": "Monetary Consensus"
+    },
+    {
+      "slug": "monetary-economics-domain",
+      "label": "MonetaryEconomicsDomain"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "monetary-theory",
+      "label": "Monetary Theory"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "nakamoto-2008-whitepaper",
+      "label": "Nakamoto 2008 Whitepaper"
+    },
+    {
+      "slug": "network-effect",
+      "label": "Network Effect"
+    },
+    {
+      "slug": "nigeria",
+      "label": "Nigeria"
+    },
+    {
+      "slug": "paul-krugman",
+      "label": "Paul Krugman"
+    },
+    {
+      "slug": "poon-dryja-2016-lightning-network-whitepaper",
+      "label": "Poon Dryja 2016 Lightning Network Whitepaper"
+    },
+    {
+      "slug": "price-stability",
+      "label": "Price Stability"
+    },
+    {
+      "slug": "price-stability-analysis",
+      "label": "Price Stability Analysis"
+    },
+    {
+      "slug": "programmable-money-paradigm",
+      "label": "Programmable Money Paradigm"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
+      "slug": "remittances",
+      "label": "Remittances"
+    },
+    {
+      "slug": "rgb-protocol",
+      "label": "RGB Protocol"
+    },
+    {
+      "slug": "rothbard-1963-what-has-government-done-to-our-money",
+      "label": "Rothbard 1963 What Has Government Done to Our Money"
+    },
+    {
+      "slug": "saifedean-ammous",
+      "label": "Saifedean Ammous"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "schilling-uhlig-2019-simple-bitcoin-economics",
+      "label": "Schilling Uhlig 2019 Simple Bitcoin Economics"
+    },
+    {
+      "slug": "science-direct-2025-two-legal-tenders-no-currency",
+      "label": "ScienceDirect 2025 Two Legal Tenders No Currency"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self Custody"
+    },
+    {
+      "slug": "separation-of-money-and-state",
+      "label": "Separation of Money and State"
+    },
+    {
+      "slug": "shopify",
+      "label": "Shopify"
+    },
+    {
+      "slug": "social-consensus",
+      "label": "Social Consensus"
+    },
+    {
+      "slug": "sound-money",
+      "label": "Sound Money"
+    },
+    {
+      "slug": "sound-money-principles",
+      "label": "Sound Money Principles"
+    },
+    {
+      "slug": "south-africa",
+      "label": "South Africa"
+    },
+    {
+      "slug": "sovereign-reserve-asset",
+      "label": "Sovereign Reserve Asset"
+    },
+    {
+      "slug": "stablesats",
+      "label": "Stablesats"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "Store of Value"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
+    },
+    {
+      "slug": "strike-payment-infrastructure",
+      "label": "Strike Payment Infrastructure"
+    },
+    {
+      "slug": "tasca-liu-hayes-2018-bitcoin-economy-evolution",
+      "label": "Tasca Liu Hayes 2018 Bitcoin Economy Evolution"
+    },
+    {
+      "slug": "the-bitcoin-standard",
+      "label": "The Bitcoin Standard"
+    },
+    {
+      "slug": "traditional-banking",
+      "label": "Traditional Banking"
+    },
+    {
+      "slug": "unit-of-account",
+      "label": "Unit of Account"
+    },
+    {
+      "slug": "velocity-of-money-analysis",
+      "label": "Velocity of Money Analysis"
+    },
+    {
+      "slug": "x402",
+      "label": "X402"
+    },
+    {
+      "slug": "yermack-2015-is-bitcoin-a-real-currency",
+      "label": "Yermack 2015 Is Bitcoin a Real Currency"
+    },
+    {
+      "slug": "zucco-2024-discovering-bitcoin",
+      "label": "Zucco 2024 Discovering Bitcoin"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "value-alignment",
+      "label": "Value Alignment"
+    }
+  ]
+}

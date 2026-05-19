@@ -1,0 +1,136 @@
+{
+  "id": "urn:visionflow:page:c80824b76ab26f9139925c6278823dcc63da7f344fcf9dc4e9aa170047813ed2",
+  "title": "Blockchain Energy Consumption",
+  "slug": "blockchain-energy-consumption",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-energy-consumption",
+  "domain": "blockchain",
+  "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, 0.65% global electricity) to energy-efficient Proof-of-Stake (Ethereum post-Merge: 99.95% reduction), with ongoing research into sustainable consensus algorithms, renewable energy mining, carbon credit tokenization, and environmental impact measurement frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:blockchain-performance",
+      "label": "BlockchainPerformance"
+    },
+    {
+      "id": "urn:visionflow:linked:environmental-impact",
+      "label": "EnvironmentalImpact"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.88,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:carbon-emissions",
+        "label": "CarbonEmissions"
+      },
+      {
+        "id": "urn:visionflow:linked:computational-power",
+        "label": "ComputationalPower"
+      },
+      {
+        "id": "urn:visionflow:linked:electricity-consumption",
+        "label": "ElectricityConsumption"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-rate",
+        "label": "HashRate"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "bitcoin-mining-council",
+      "label": "Bitcoin Mining Council"
+    },
+    {
+      "slug": "blockchain-performance",
+      "label": "BlockchainPerformance"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
+    },
+    {
+      "slug": "carbon-emissions",
+      "label": "CarbonEmissions"
+    },
+    {
+      "slug": "computational-power",
+      "label": "ComputationalPower"
+    },
+    {
+      "slug": "electricity-consumption",
+      "label": "ElectricityConsumption"
+    },
+    {
+      "slug": "energy-sector",
+      "label": "EnergySector"
+    },
+    {
+      "slug": "energy-source",
+      "label": "EnergySource"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "EnvironmentalDomain"
+    },
+    {
+      "slug": "environmental-impact",
+      "label": "EnvironmentalImpact"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "hash-rate",
+      "label": "HashRate"
+    },
+    {
+      "slug": "ieee-blockchain-standards",
+      "label": "IEEE Blockchain Standards"
+    },
+    {
+      "slug": "international-energy-agency-iea",
+      "label": "International Energy Agency (IEA)"
+    },
+    {
+      "slug": "mining-hardware",
+      "label": "MiningHardware"
+    },
+    {
+      "slug": "network-size",
+      "label": "NetworkSize"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "ConsensusMechanism"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "backlinks": []
+}

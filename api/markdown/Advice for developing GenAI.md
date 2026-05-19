@@ -1,20 +1,254 @@
-iri:: http://narrativegoldmine.com/ontology#AdviceForDevelopingGenAI
-uri:: urn:visionclaw:concept:artificial-intelligence:advice-for-developing-genai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:advice-for-developing-genai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Advice for developing GenAI
-content-hash:: sha256-12-44c0b2be6fd7
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#AdviceForDevelopingGenAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:advice-for-developing-genai
 public:: true
+
+# Advice for developing GenAI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e",
+  "@type": "Page",
+  "vc:slug": "advice-for-developing-gen-ai",
+  "title": "Advice for developing GenAI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:q-lo-ra",
+      "vc:label": "qLoRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:runway",
+      "vc:label": "Runway"
+    },
+    {
+      "@id": "urn:visionflow:linked:vercel",
+      "vc:label": "Vercel"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "vc:label": "LoRA DoRA etc"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:midjourney",
+      "vc:label": "Midjourney"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:music-and-audio",
+      "vc:label": "Music and Audio"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai-whisper",
+      "vc:label": "OpenAI Whisper"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-44c0b2be6fd7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#AdviceForDevelopingGenAI"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Advice for developing GenAI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:advice-for-developing-genai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:advice-for-developing-genai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:advice-for-developing-gen-ai",
+  "@type": "OntologyClass",
+  "label": "Advice for developing GenAI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Advice for developing GenAI is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:advice-for-developing-gen-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[qLoRA]]",
+      "resolved": "urn:visionflow:linked:q-lo-ra",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Runway]]",
+      "resolved": "urn:visionflow:linked:runway",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vercel]]",
+      "resolved": "urn:visionflow:linked:vercel",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Video]]",
+      "resolved": "urn:visionflow:owl:class:ai-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LoRA DoRA etc]]",
+      "resolved": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Midjourney]]",
+      "resolved": "urn:visionflow:owl:class:midjourney",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Music and Audio]]",
+      "resolved": "urn:visionflow:owl:class:music-and-audio",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI Whisper]]",
+      "resolved": "urn:visionflow:owl:class:open-ai-whisper",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Advice for developing GenAI is a concept within the ngm domain.
@@ -30,7 +264,7 @@ public:: true
   **DO:**
   - **Pick the best model available**: While GPT-4 is a leader for language tasks, for broader GenAI applications, consider the leading models in each category (e.g., vision, speech, etc.). Don't reinvent the wheel.
   - [[Midjourney]] v6 for images
-  - [Suno AI](https://www.suno.ai/) for [[Music and audio]].
+  - [Suno AI](https://www.suno.ai/) for [[Music and Audio]].
   - [[Runway]] for [[AI Video]] and [[AI Video]]
   - [[OpenAI Whisper]] for speech.
   - **Build a Custom GPT on Test Playground**: Beyond LLMs, experiment with customizable versions of leading models in other domains, like custom vision models on platforms like Azure, AWS, or Google Cloud.

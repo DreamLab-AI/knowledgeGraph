@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:819568b10862d9f5391d3cbeed3afc41c574469036aa04574820c39e694ff31b",
+  "title": "Virtual City Model",
+  "slug": "virtual-city-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-city-model",
+  "domain": "spatial-computing",
+  "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": []
+}

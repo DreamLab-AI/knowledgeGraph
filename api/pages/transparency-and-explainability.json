@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:a0b2362dcdb12e5837d3ba05ca52ba81fb4dad489a30880ccc4d8ba56d5e1cd7",
+  "title": "Transparency and Explainability",
+  "slug": "transparency-and-explainability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transparency-and-explainability",
+  "domain": "artificial-intelligence",
+  "definition": "Transparency and Explainability is a trustworthiness dimension ensuring AI systems provide sufficient information about their operation, decision logic, capabilities, and limitations to enable appropriate understanding, interpretation, use, and oversight by relevant stakeholders. This dimension encompasses three core components: traceability (documenting dataset provenance including sources, collection methods, and known biases, maintaining comprehensive process documentation covering development methodology and design choices, preserving audit trails enabling reconstruction of decisions and system evolution, and enabling reproducible research through complete documentation of experimental conditions), explainability (providing decision explanations appropriate to stakeholder type and context, implementing explanation methods including global explanations of overall system behavior, local explanations of specific predictions, and counterfactual explanations showing minimal changes required for different outcomes, and tailoring explanation complexity and format to audience including executive summaries for non-technical stakeholders, feature importance visualizations for domain expe",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-ai-act-article-13",
+      "label": "EU AI Act Article 13"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "model-cards",
+      "label": "Model Cards"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": []
+}

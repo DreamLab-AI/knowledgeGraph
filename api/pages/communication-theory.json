@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:373479befe6eec38bafb77faf3db4bb8174ba222258d4a394e08c20e7e220c41",
+  "title": "Communication Theory",
+  "slug": "communication-theory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:communication-theory",
+  "domain": "distributed-collaboration",
+  "definition": "Communication Theory provides the theoretical foundations for understanding how information, meaning, and social presence are transmitted and perceived in mediated communication contexts. Key frameworks include media richness theory, social presence theory, and theories of computer-mediated communication that inform the design of telecollaboration systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "social-presence-theory",
+      "label": "Social Presence Theory"
+    }
+  ]
+}

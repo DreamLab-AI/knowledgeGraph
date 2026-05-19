@@ -1,24 +1,494 @@
-iri:: http://narrativegoldmine.com/spatial-computing#UniversalManifest
-uri:: urn:visionclaw:concept:spatial-computing:universal-manifest
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:universal-manifest
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Universal Manifest
-content-hash:: sha256-12-37ef14e14ea9
-legacy-term-id:: 20114
-status:: draft
-maturity:: emerging
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#UniversalManifest
+legacy_uri:: urn:visionclaw:concept:spatial-computing:universal-manifest
 public:: true
+
+# Universal Manifest
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e",
+  "@type": "Page",
+  "vc:slug": "universal-manifest",
+  "title": "Universal Manifest",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:asset-interoperability",
+      "vc:label": "Asset Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:asset-management-system",
+      "vc:label": "Asset Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-signature",
+      "vc:label": "Cryptographic Signature"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identifier",
+      "vc:label": "Decentralized Identifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-ownership",
+      "vc:label": "Decentralized Ownership"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-credentials",
+      "vc:label": "Identity Credentials"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability-domain",
+      "vc:label": "Interoperability Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:msf-use-case-register",
+      "vc:label": "MSF Use Case Register"
+    },
+    {
+      "@id": "urn:visionflow:linked:permission-grants",
+      "vc:label": "Permission Grants"
+    },
+    {
+      "@id": "urn:visionflow:linked:permissioned-access",
+      "vc:label": "Permissioned Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:provenance-record",
+      "vc:label": "Provenance Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:relationship-graph",
+      "vc:label": "Relationship Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust-registry",
+      "vc:label": "Trust Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-credential",
+      "vc:label": "Verifiable Credential"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asset-registry",
+      "vc:label": "Asset Registry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-portability",
+      "vc:label": "Avatar Portability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-identity",
+      "vc:label": "Cross-Platform Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-format-standard",
+      "vc:label": "Data Format Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "Data Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-provider",
+      "vc:label": "Identity Provider"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability-framework",
+      "vc:label": "Interoperability Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-schema",
+      "vc:label": "Metadata Schema"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "Middleware Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "Trust And Governance Domain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-37ef14e14ea9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#UniversalManifest"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20114"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "emerging"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Universal Manifest"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:universal-manifest"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:universal-manifest"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:universal-manifest",
+  "@type": "OntologyClass",
+  "label": "Universal Manifest",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "emerging",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A standardized metadata document describing identifiers, permissions, relationships, and provenance of a user's digital assets and identities across platforms, enabling cross-platform portability and interoperability.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:asset-management-system",
+      "vc:label": "Asset Management System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability-framework",
+      "vc:label": "Interoperability Framework"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:identity-credentials",
+      "vc:label": "Identity Credentials"
+    },
+    {
+      "@id": "urn:visionflow:linked:permission-grants",
+      "vc:label": "Permission Grants"
+    },
+    {
+      "@id": "urn:visionflow:linked:provenance-record",
+      "vc:label": "Provenance Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:relationship-graph",
+      "vc:label": "Relationship Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asset-registry",
+      "vc:label": "Asset Registry"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-signature",
+      "vc:label": "Cryptographic Signature"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identifier",
+      "vc:label": "Decentralized Identifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-credential",
+      "vc:label": "Verifiable Credential"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-schema",
+      "vc:label": "Metadata Schema"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:asset-interoperability",
+      "vc:label": "Asset Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-ownership",
+      "vc:label": "Decentralized Ownership"
+    },
+    {
+      "@id": "urn:visionflow:linked:permissioned-access",
+      "vc:label": "Permissioned Access"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-portability",
+      "vc:label": "Avatar Portability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-identity",
+      "vc:label": "Cross-Platform Identity"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:trust-registry",
+      "vc:label": "Trust Registry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-format-standard",
+      "vc:label": "Data Format Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-provider",
+      "vc:label": "Identity Provider"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:universal-manifest:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Asset Interoperability]]",
+      "resolved": "urn:visionflow:linked:asset-interoperability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Management System]]",
+      "resolved": "urn:visionflow:linked:asset-management-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Signature]]",
+      "resolved": "urn:visionflow:linked:cryptographic-signature",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Identifier]]",
+      "resolved": "urn:visionflow:linked:decentralized-identifier",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Ownership]]",
+      "resolved": "urn:visionflow:linked:decentralized-ownership",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Identity Credentials]]",
+      "resolved": "urn:visionflow:linked:identity-credentials",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interoperability Domain]]",
+      "resolved": "urn:visionflow:linked:interoperability-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MSF Use Case Register]]",
+      "resolved": "urn:visionflow:linked:msf-use-case-register",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Permission Grants]]",
+      "resolved": "urn:visionflow:linked:permission-grants",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Permissioned Access]]",
+      "resolved": "urn:visionflow:linked:permissioned-access",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Provenance Record]]",
+      "resolved": "urn:visionflow:linked:provenance-record",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Relationship Graph]]",
+      "resolved": "urn:visionflow:linked:relationship-graph",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trust Registry]]",
+      "resolved": "urn:visionflow:linked:trust-registry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verifiable Credential]]",
+      "resolved": "urn:visionflow:linked:verifiable-credential",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Registry]]",
+      "resolved": "urn:visionflow:owl:class:asset-registry",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Avatar Portability]]",
+      "resolved": "urn:visionflow:owl:class:avatar-portability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross-Platform Identity]]",
+      "resolved": "urn:visionflow:owl:class:cross-platform-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Format Standard]]",
+      "resolved": "urn:visionflow:owl:class:data-format-standard",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Layer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Provider]]",
+      "resolved": "urn:visionflow:owl:class:identity-provider",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interoperability Framework]]",
+      "resolved": "urn:visionflow:owl:class:interoperability-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Schema]]",
+      "resolved": "urn:visionflow:owl:class:metadata-schema",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Middleware Layer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust And Governance Domain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A standardized metadata document describing identifiers, permissions, relationships, and provenance of a user's digital assets and identities across platforms, enabling cross-platform portability and interoperability.

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:3d89c92d6f8bec6142db8eea5391fb7151c9cd9093db90a66abc4c88da96c978",
+  "title": "devpod",
+  "slug": "devpod",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:devpod",
+  "domain": "infrastructure",
+  "definition": "devpod is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

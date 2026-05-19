@@ -1,20 +1,221 @@
-iri:: http://narrativegoldmine.com/infrastructure#Knowhere
-uri:: urn:visionclaw:concept:infrastructure:knowhere
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:knowhere
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Knowhere
-content-hash:: sha256-12-6b0d64e2c72a
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#Knowhere
+legacy_uri:: urn:visionclaw:concept:infrastructure:knowhere
 public:: true
+
+# Knowhere
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4",
+  "@type": "Page",
+  "vc:slug": "knowhere",
+  "title": "Knowhere",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:head-gaze",
+      "vc:label": "Head Gaze"
+    },
+    {
+      "@id": "urn:visionflow:linked:kno-where",
+      "vc:label": "KnoWhere"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:face-swap",
+      "vc:label": "Face Swap"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
+      "vc:label": "NVIDIA Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:people",
+      "vc:label": "PEOPLE"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:segmentation-and-identification",
+      "vc:label": "Segmentation and Identification"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6b0d64e2c72a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#Knowhere"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Knowhere"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:knowhere"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:knowhere"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:knowhere",
+  "@type": "OntologyClass",
+  "label": "Knowhere",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:tracking-technology",
+      "vc:label": "Tracking Technology"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Knowhere is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:knowhere:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Head Gaze]]",
+      "resolved": "urn:visionflow:linked:head-gaze",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KnoWhere]]",
+      "resolved": "urn:visionflow:linked:kno-where",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Face Swap]]",
+      "resolved": "urn:visionflow:owl:class:face-swap",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NVIDIA Omniverse]]",
+      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PEOPLE]]",
+      "resolved": "urn:visionflow:owl:class:people",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Segmentation and Identification]]",
+      "resolved": "urn:visionflow:owl:class:segmentation-and-identification",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Knowhere is a concept within the ngm domain.

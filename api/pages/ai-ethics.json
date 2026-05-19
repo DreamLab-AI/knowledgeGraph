@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:9227e0fd20cb7bf7b8d12f3d173cde36de7060878ae4bb775727afd6926bd1e8",
+  "title": "AI Ethics",
+  "slug": "ai-ethics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-ethics",
+  "domain": "artificial-intelligence",
+  "definition": "AI Ethics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems. This interdisciplinary field examines issues of fairness, accountability, transparency, privacy, bias mitigation, algorithmic justice, and the societal impact of AI technologies. AI ethics frameworks consider questions of autonomy, consent, human rights, environmental sustainability, and long-term existential risks associated with advanced AI. Practical implementations include ethical AI guidelines, impact assessments, and regulatory compliance mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-fairness",
+      "label": "AI Fairness"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "model-transparency",
+      "label": "Model Transparency"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

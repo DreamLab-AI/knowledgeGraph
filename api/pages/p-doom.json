@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:bc9d1c95e1098187ee44947b73b1c139bb294b2269bacbf7ee8e934fea51354d",
+  "title": "p(doom)",
+  "slug": "p-doom",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:p-doom",
+  "domain": "infrastructure",
+  "definition": "p(doom) is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "host-january-17th-presentation",
+      "label": "HOST January 17th Presentation"
+    }
+  ]
+}

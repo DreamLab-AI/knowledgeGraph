@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:1db8920716c2fed990810796788a92470391fcf43d0e1e1851ac171eebacbd93",
+  "title": "Data Registry",
+  "slug": "data-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-registry",
+  "domain": "infrastructure",
+  "definition": "Data Registry is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "verifiable-data-registry",
+      "label": "Verifiable Data Registry"
+    }
+  ]
+}

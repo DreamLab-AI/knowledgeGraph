@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:4f257fd736c81469655ce1b063e2a7869b0eac0d3be81dae0ca1f2cfab3bab23",
+  "title": "Standardized Asset Classification",
+  "slug": "standardized-asset-classification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standardized-asset-classification",
+  "domain": "artificial-intelligence",
+  "definition": "Systematic taxonomies and frameworks for categorizing digital assets including cryptocurrencies, NFTs, and metaverse tokens based on characteristics such as issuance method, value mechanism, rights conferred, fungibility, and redemption properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:asset-management",
+      "label": "Asset Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    }
+  ]
+}

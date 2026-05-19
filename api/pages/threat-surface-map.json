@@ -1,0 +1,231 @@
+{
+  "id": "urn:visionflow:page:2e303f3334726fe652a71347102923b6d75c35a816131ef83bd41883f34f0af8",
+  "title": "Threat Surface Map",
+  "slug": "threat-surface-map",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:threat-surface-map",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive security visualization and inventory framework that identifies, catalogs, and models all potential attack vectors, vulnerability exposure points, and threat entry paths across network, application, data, identity, and infrastructure layers of a system.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
+      "label": "Metaverse and Spatial Risks"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:attack-vector-inventory",
+        "label": "Attack Vector Inventory"
+      },
+      {
+        "id": "urn:visionflow:linked:exposure-point-catalog",
+        "label": "Exposure Point Catalog"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-assessment-matrix",
+        "label": "Risk Assessment Matrix"
+      },
+      {
+        "id": "urn:visionflow:linked:security-control-mapping",
+        "label": "Security Control Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:visionflow:linked:vulnerability-surface",
+        "label": "Vulnerability Surface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asset-inventory",
+        "label": "Asset Inventory"
+      },
+      {
+        "id": "urn:visionflow:linked:penetration-testing-tools",
+        "label": "Penetration Testing Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:security-monitoring",
+        "label": "Security Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:vulnerability-scanner",
+        "label": "Vulnerability Scanner"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:visionflow:linked:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:visionflow:linked:security-posture-management",
+        "label": "Security Posture Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-inventory",
+      "label": "Asset Inventory"
+    },
+    {
+      "slug": "attack-vector-inventory",
+      "label": "Attack Vector Inventory"
+    },
+    {
+      "slug": "configuration-management-database",
+      "label": "Configuration Management Database"
+    },
+    {
+      "slug": "exposure-point-catalog",
+      "label": "Exposure Point Catalog"
+    },
+    {
+      "slug": "identity-and-access-management",
+      "label": "Identity and Access Management"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "mitre-att-and-ck",
+      "label": "MITRE ATT&CK"
+    },
+    {
+      "slug": "nist-cybersecurity-framework",
+      "label": "NIST Cybersecurity Framework"
+    },
+    {
+      "slug": "owasp",
+      "label": "OWASP"
+    },
+    {
+      "slug": "penetration-testing",
+      "label": "Penetration Testing"
+    },
+    {
+      "slug": "penetration-testing-tools",
+      "label": "Penetration Testing Tools"
+    },
+    {
+      "slug": "risk-assessment-matrix",
+      "label": "Risk Assessment Matrix"
+    },
+    {
+      "slug": "risk-management-framework",
+      "label": "Risk Management Framework"
+    },
+    {
+      "slug": "security-audit",
+      "label": "Security Audit"
+    },
+    {
+      "slug": "security-control-mapping",
+      "label": "Security Control Mapping"
+    },
+    {
+      "slug": "security-information-and-event-management",
+      "label": "Security Information and Event Management"
+    },
+    {
+      "slug": "security-monitoring",
+      "label": "Security Monitoring"
+    },
+    {
+      "slug": "security-posture-management",
+      "label": "Security Posture Management"
+    },
+    {
+      "slug": "threat-intelligence-feed",
+      "label": "Threat Intelligence Feed"
+    },
+    {
+      "slug": "threat-intelligence-platform",
+      "label": "Threat Intelligence Platform"
+    },
+    {
+      "slug": "threat-model",
+      "label": "Threat Model"
+    },
+    {
+      "slug": "vulnerability-scanner",
+      "label": "Vulnerability Scanner"
+    },
+    {
+      "slug": "vulnerability-surface",
+      "label": "Vulnerability Surface"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

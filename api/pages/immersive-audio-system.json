@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:182606c6ce239a6e52c230214eb77c6976180071ad0800df0128b19986419f0d",
+  "title": "Immersive Audio System",
+  "slug": "immersive-audio-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-audio-system",
+  "domain": "spatial-computing",
+  "definition": "Audio technologies enabling three-dimensional soundscapes in virtual environments through spatial audio processing, binaural rendering, and head-related transfer functions (HRTF), creating realistic acoustic experiences that respond to user position and movement within VR, AR, and metaverse applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:audio-technology",
+      "label": "Audio Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:spatial-presence",
+        "label": "Spatial Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audio-technology",
+      "label": "Audio Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-presence",
+      "label": "Spatial Presence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    }
+  ]
+}

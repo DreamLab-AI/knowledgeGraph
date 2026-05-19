@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:3d4513c3d85d8b63109e434b613b712e2174e73208c4c1cb7093df09784fd714",
+  "title": "Crypto Token",
+  "slug": "crypto-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:crypto-token",
+  "domain": "blockchain",
+  "definition": "A blockchain-based programmable token representing assets, rights, or utility within a decentralized system, with transferability governed by smart contract logic.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:loyalty-token",
+        "label": "Loyalty Token"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:visionflow:owl:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:governance-voting",
+        "label": "Governance Voting"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-value",
+        "label": "Programmable Value"
+      },
+      {
+        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
+      "slug": "governance-voting",
+      "label": "Governance Voting"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "programmable-value",
+      "label": "Programmable Value"
+    },
+    {
+      "slug": "reed-smith",
+      "label": "Reed Smith"
+    },
+    {
+      "slug": "tokenization-system",
+      "label": "Tokenization System"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ]
+}

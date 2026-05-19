@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:d16e2f16c96e1750007bff39dabd13c47a781adce6432b7d19549e5ef7b6b361",
+  "title": "Self Presence",
+  "slug": "self-presence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:self-presence",
+  "domain": "distributed-collaboration",
+  "definition": "Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:presence",
+      "label": "Presence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-psychology",
+      "label": "Avatar Psychology"
+    },
+    {
+      "slug": "presence-research",
+      "label": "Presence Research"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "TelecollaborationDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "presence",
+      "label": "Presence"
+    }
+  ]
+}

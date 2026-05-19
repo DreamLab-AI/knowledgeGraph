@@ -1,21 +1,279 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#MachineTranslation
-uri:: urn:visionclaw:concept:artificial-intelligence:machine-translation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:machine-translation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Machine Translation
-content-hash:: sha256-12-f1880c8c2170
-legacy-term-id:: AI-0367
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#MachineTranslation
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:machine-translation
 public:: true
+
+# Machine Translation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cee607f39706c74c9af614cff81bbb3831a05c69c7ce2b6af5bfc7f685f8fc7a",
+  "@type": "Page",
+  "vc:slug": "machine-translation",
+  "title": "Machine Translation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-to-sequence-model",
+      "vc:label": "Sequence-to-Sequence Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diagrams-as-code",
+      "vc:label": "Diagrams as Code"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-ontology",
+      "vc:label": "Metaverse Ontology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f1880c8c2170"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#MachineTranslation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0367"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Machine Translation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:machine-translation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:machine-translation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cee607f39706c74c9af614cff81bbb3831a05c69c7ce2b6af5bfc7f685f8fc7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:machine-translation",
+  "@type": "OntologyClass",
+  "label": "Machine Translation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cee607f39706c74c9af614cff81bbb3831a05c69c7ce2b6af5bfc7f685f8fc7a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cee607f39706c74c9af614cff81bbb3831a05c69c7ce2b6af5bfc7f685f8fc7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures. Modern neural machine translation systems (Google Translate, DeepL, NLLB) achieve near-human translation quality through pre-training on massive multilingual corpora, attention mechanisms, and cross-lingual transfer learning.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:machine-translation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cee607f39706c74c9af614cff81bbb3831a05c69c7ce2b6af5bfc7f685f8fc7a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Chain of Thought]]",
+      "resolved": "urn:visionflow:linked:chain-of-thought",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sequence-to-Sequence Model]]",
+      "resolved": "urn:visionflow:linked:sequence-to-sequence-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic Claude]]",
+      "resolved": "urn:visionflow:owl:class:anthropic-claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diagrams as Code]]",
+      "resolved": "urn:visionflow:owl:class:diagrams-as-code",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Ontology]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-ontology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Prompt Engineering]]",
+      "resolved": "urn:visionflow:owl:class:prompt-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cee607f39706c74c9af614cff81bbb3831a05c69c7ce2b6af5bfc7f685f8fc7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures. Modern neural machine translation systems (Google Translate, DeepL, NLLB) achieve near-human translation quality through pre-training on massive multilingual corpora, attention mechanisms, and cross-lingual transfer learning.
@@ -241,7 +499,7 @@ public:: true
   - [[Google]] [[Gemini]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
   - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
   - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
-		- I build [[Chain of Thought]] scaffolds in [[Large language models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
+		- I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
 			- Current large language models benefit greatly from being asked to create diagrams as code, in a guided manner.
 			- These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
 			- Human comprehension is radically increased during the co-creations.
@@ -309,7 +567,7 @@ public:: true
   - [[Google]] [[Gemini]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
   - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
   - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
-		- I build [[Chain of Thought]] scaffolds in [[Large language models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
+		- I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
 			- Current large language models benefit greatly from being asked to create diagrams as code, in a guided manner.
 			- These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
 			- Human comprehension is radically increased during the co-creations.

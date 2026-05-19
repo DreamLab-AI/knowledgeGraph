@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/metaverse#HealthcareApplicationClassification
-uri:: urn:visionclaw:concept:artificial-intelligence:healthcare-application-classification
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:healthcare-application-classification
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Healthcare Application Classification
-content-hash:: sha256-12-376996ff2c21
-legacy-term-id:: MV-9916
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#HealthcareApplicationClassification
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:healthcare-application-classification
 public:: true
+
+# Healthcare Application Classification
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a",
+  "@type": "Page",
+  "vc:slug": "healthcare-application-classification",
+  "title": "Healthcare Application Classification",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:structured-healthcare-innovation",
+      "vc:label": "Structured Healthcare Innovation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:healthcare-technology",
+      "vc:label": "Healthcare Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-376996ff2c21"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#HealthcareApplicationClassification"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9916"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Healthcare Application Classification"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:healthcare-application-classification"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:healthcare-application-classification"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:healthcare-application-classification",
+  "@type": "OntologyClass",
+  "label": "Healthcare Application Classification",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:healthcare-technology",
+      "vc:label": "Healthcare Technology"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:structured-healthcare-innovation",
+      "vc:label": "Structured Healthcare Innovation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:healthcare-application-classification:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Structured Healthcare Innovation]]",
+      "resolved": "urn:visionflow:linked:structured-healthcare-innovation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Healthcare Technology]]",
+      "resolved": "urn:visionflow:owl:class:healthcare-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.

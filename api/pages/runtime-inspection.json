@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:2953c6267eb342df9011e8ce2f4623f2eba464b14a5cd7ff25785f35837d82f2",
+  "title": "Runtime Inspection",
+  "slug": "runtime-inspection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:runtime-inspection",
+  "domain": "artificial-intelligence",
+  "definition": "Runtime Inspection is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "Ai Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance",
+      "label": "Ai Governance"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

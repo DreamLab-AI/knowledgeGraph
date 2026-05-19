@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662",
+  "title": "Functional Safety",
+  "slug": "functional-safety",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:functional-safety",
+  "domain": "robotics",
+  "definition": "**Functional Safety** - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:safety-engineering",
+      "label": "Safety Engineering"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.64,
+  "authorityScore": 0.18,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:testing-and-validation",
+        "label": "Testing & Validation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:human-robot-safety",
+        "label": "Human-Robot Safety"
+      },
+      {
+        "id": "urn:visionflow:linked:liability-mitigation",
+        "label": "Liability Mitigation"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-operation-certification",
+        "label": "Safe Operation Certification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fault-tree-analysis",
+      "label": "Fault Tree Analysis"
+    },
+    {
+      "slug": "hazard-analysis",
+      "label": "Hazard Analysis"
+    },
+    {
+      "slug": "human-robot-safety",
+      "label": "Human-Robot Safety"
+    },
+    {
+      "slug": "liability-mitigation",
+      "label": "Liability Mitigation"
+    },
+    {
+      "slug": "safe-operation-certification",
+      "label": "Safe Operation Certification"
+    },
+    {
+      "slug": "safety-engineering",
+      "label": "Safety Engineering"
+    },
+    {
+      "slug": "testing-and-validation",
+      "label": "Testing & Validation"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "id": "urn:visionflow:page:6b5f28ee5917f5bda9922cb45ebf56636257fd879388fa39ba2237311367b453",
+  "title": "AI in Games",
+  "slug": "ai-in-games",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-in-games",
+  "domain": "artificial-intelligence",
+  "definition": "AI in Games is the interdisciplinary research and engineering field encompassing the design, implementation, and study of computational systems that perceive, decide, learn, and generate within interactive entertainment software, spanning classical symbolic techniques (finite-state machines FSM driving Pac-Man ghost personalities 1980 through Halo Combat Evolved 2001 squad behaviour, hierarchical behaviour trees popularised by Halo 2 Bungie 2004 and now standard across Unreal Engine 5/Unity NavMesh/CryEngine/Godot 4 with 50,000+ shipped titles, Goal-Oriented Action Planning GOAP introduced by Jeff Orkin for F.E.A.R. Monolith 2005 enabling emergent squad tactics via STRIPS-style backward chaining over action preconditions/effects, Hierarchical Task Network HTN planning shipped in Killzone 2 Guerrilla 2009 and Transformers 3 High Moon decomposing high-level intents into primitive task sequences, pathfinding via A* Hart-Nilsson-Raphael 1968 over navigation meshes Recast/Detour Mikko Mononen open-source library 2009 used by Unreal/Unity/CryEngine/id Tech/Cyberpunk 2077 CD Projekt, influence maps Dave Mark IGDA tactical analysis colouring spatial threat/opportunity fields, Monte Carlo T",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:applied-artificial-intelligence",
+      "label": "Applied Artificial Intelligence"
+    },
+    {
+      "id": "urn:visionflow:linked:entertainment-technology",
+      "label": "Entertainment Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:game-development",
+      "label": "Game Development"
+    },
+    {
+      "id": "urn:visionflow:linked:interactive-computing",
+      "label": "Interactive Computing"
+    },
+    {
+      "id": "urn:visionflow:linked:real-time-ai",
+      "label": "Real-Time AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "id": "urn:visionflow:linked:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:visionflow:linked:game-playing-agents",
+        "label": "Game-Playing Agents"
+      },
+      {
+        "id": "urn:visionflow:linked:goap",
+        "label": "GOAP"
+      },
+      {
+        "id": "urn:visionflow:linked:htn-planning",
+        "label": "HTN Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:influence-map",
+        "label": "Influence Map"
+      },
+      {
+        "id": "urn:visionflow:linked:navigation-mesh",
+        "label": "Navigation Mesh"
+      },
+      {
+        "id": "urn:visionflow:linked:npc-dialogue-system",
+        "label": "NPC Dialogue System"
+      },
+      {
+        "id": "urn:visionflow:linked:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-authoring-pipeline",
+        "label": "Content Authoring Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:game-state-representation",
+        "label": "Game State Representation"
+      },
+      {
+        "id": "urn:visionflow:linked:player-modelling",
+        "label": "Player Modelling"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-constraints",
+        "label": "Real-Time Constraints"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-reasoning",
+        "label": "Spatial Reasoning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-tutoring",
+        "label": "Adaptive Tutoring"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-playtesting",
+        "label": "Automated Playtesting"
+      },
+      {
+        "id": "urn:visionflow:linked:believable-npc-behaviour",
+        "label": "Believable NPC Behaviour"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-difficulty-adjustment",
+        "label": "Dynamic Difficulty Adjustment"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-narrative",
+        "label": "Dynamic Narrative"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      },
+      {
+        "id": "urn:visionflow:linked:personalised-game-experience",
+        "label": "Personalised Game Experience"
+      },
+      {
+        "id": "urn:visionflow:linked:procedural-replayability",
+        "label": "Procedural Replayability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:a-search",
+        "label": "A* Search"
+      },
+      {
+        "id": "urn:visionflow:linked:alpha-zero",
+        "label": "AlphaZero"
+      },
+      {
+        "id": "urn:visionflow:linked:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "id": "urn:visionflow:linked:dreamer-v3",
+        "label": "DreamerV3"
+      },
+      {
+        "id": "urn:visionflow:linked:impala",
+        "label": "IMPALA"
+      },
+      {
+        "id": "urn:visionflow:linked:mu-zero",
+        "label": "MuZero"
+      },
+      {
+        "id": "urn:visionflow:linked:perlin-noise",
+        "label": "Perlin Noise"
+      },
+      {
+        "id": "urn:visionflow:linked:proximal-policy-optimization",
+        "label": "Proximal Policy Optimization"
+      },
+      {
+        "id": "urn:visionflow:linked:recast-navmesh",
+        "label": "Recast Navmesh"
+      },
+      {
+        "id": "urn:visionflow:linked:simplex-noise",
+        "label": "Simplex Noise"
+      },
+      {
+        "id": "urn:visionflow:linked:utility-ai",
+        "label": "Utility AI"
+      },
+      {
+        "id": "urn:visionflow:linked:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      },
+      {
+        "id": "urn:visionflow:linked:wave-function-collapse",
+        "label": "Wave Function Collapse"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a-search",
+      "label": "A* Search"
+    },
+    {
+      "slug": "aaai-aiide",
+      "label": "AAAI AIIDE"
+    },
+    {
+      "slug": "adaptive-tutoring",
+      "label": "Adaptive Tutoring"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "alpha-zero",
+      "label": "AlphaZero"
+    },
+    {
+      "slug": "animation-controller",
+      "label": "Animation Controller"
+    },
+    {
+      "slug": "applied-artificial-intelligence",
+      "label": "Applied Artificial Intelligence"
+    },
+    {
+      "slug": "automated-playtesting",
+      "label": "Automated Playtesting"
+    },
+    {
+      "slug": "behaviour-tree",
+      "label": "Behaviour Tree"
+    },
+    {
+      "slug": "behaviour-trees",
+      "label": "Behaviour Trees"
+    },
+    {
+      "slug": "believable-npc-behaviour",
+      "label": "Believable NPC Behaviour"
+    },
+    {
+      "slug": "bevy",
+      "label": "Bevy"
+    },
+    {
+      "slug": "classical-ai-without-learning",
+      "label": "Classical AI without Learning"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "content-authoring-pipeline",
+      "label": "Content Authoring Pipeline"
+    },
+    {
+      "slug": "convai",
+      "label": "Convai"
+    },
+    {
+      "slug": "cry-engine",
+      "label": "CryEngine"
+    },
+    {
+      "slug": "domain-randomization",
+      "label": "Domain Randomization"
+    },
+    {
+      "slug": "dreamer-v3",
+      "label": "DreamerV3"
+    },
+    {
+      "slug": "dynamic-difficulty-adjustment",
+      "label": "Dynamic Difficulty Adjustment"
+    },
+    {
+      "slug": "dynamic-narrative",
+      "label": "Dynamic Narrative"
+    },
+    {
+      "slug": "emergent-gameplay",
+      "label": "Emergent Gameplay"
+    },
+    {
+      "slug": "engine-layer",
+      "label": "EngineLayer"
+    },
+    {
+      "slug": "entertainment-technology",
+      "label": "Entertainment Technology"
+    },
+    {
+      "slug": "esports",
+      "label": "Esports"
+    },
+    {
+      "slug": "fdg-conference",
+      "label": "FDG Conference"
+    },
+    {
+      "slug": "finite-state-machine",
+      "label": "Finite State Machine"
+    },
+    {
+      "slug": "game-analytics",
+      "label": "Game Analytics"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "game-maker",
+      "label": "GameMaker"
+    },
+    {
+      "slug": "game-playing-agents",
+      "label": "Game-Playing Agents"
+    },
+    {
+      "slug": "game-state-representation",
+      "label": "Game State Representation"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "game-user-research",
+      "label": "Game User Research"
+    },
+    {
+      "slug": "goap",
+      "label": "GOAP"
+    },
+    {
+      "slug": "godot",
+      "label": "Godot"
+    },
+    {
+      "slug": "hand-authored-dialogue",
+      "label": "Hand-Authored Dialogue"
+    },
+    {
+      "slug": "htn-planning",
+      "label": "HTN Planning"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "ieee-conference-on-games",
+      "label": "IEEE Conference on Games"
+    },
+    {
+      "slug": "igda-ai-special-interest-group",
+      "label": "IGDA AI Special Interest Group"
+    },
+    {
+      "slug": "impala",
+      "label": "IMPALA"
+    },
+    {
+      "slug": "influence-map",
+      "label": "Influence Map"
+    },
+    {
+      "slug": "interactive-computing",
+      "label": "Interactive Computing"
+    },
+    {
+      "slug": "interactive-entertainment-domain",
+      "label": "InteractiveEntertainmentDomain"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
+      "slug": "khronos-gl-tf",
+      "label": "Khronos glTF"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "mu-zero",
+      "label": "MuZero"
+    },
+    {
+      "slug": "navigation-mesh",
+      "label": "Navigation Mesh"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "npc-dialogue-system",
+      "label": "NPC Dialogue System"
+    },
+    {
+      "slug": "nvidia-ace",
+      "label": "NVIDIA ACE"
+    },
+    {
+      "slug": "open-usd",
+      "label": "OpenUSD"
+    },
+    {
+      "slug": "partially-observable-mdp",
+      "label": "Partially Observable MDP"
+    },
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
+    },
+    {
+      "slug": "perlin-noise",
+      "label": "Perlin Noise"
+    },
+    {
+      "slug": "personalised-game-experience",
+      "label": "Personalised Game Experience"
+    },
+    {
+      "slug": "planning-algorithms",
+      "label": "Planning Algorithms"
+    },
+    {
+      "slug": "player-modelling",
+      "label": "Player Modelling"
+    },
+    {
+      "slug": "probabilistic-reasoning",
+      "label": "Probabilistic Reasoning"
+    },
+    {
+      "slug": "procedural-replayability",
+      "label": "Procedural Replayability"
+    },
+    {
+      "slug": "proximal-policy-optimization",
+      "label": "Proximal Policy Optimization"
+    },
+    {
+      "slug": "real-time-ai",
+      "label": "Real-Time AI"
+    },
+    {
+      "slug": "real-time-constraints",
+      "label": "Real-Time Constraints"
+    },
+    {
+      "slug": "recast-navmesh",
+      "label": "Recast Navmesh"
+    },
+    {
+      "slug": "reward-shaping",
+      "label": "Reward Shaping"
+    },
+    {
+      "slug": "roblox",
+      "label": "Roblox"
+    },
+    {
+      "slug": "rule-based-expert-systems",
+      "label": "Rule-Based Expert Systems"
+    },
+    {
+      "slug": "runtime-layer",
+      "label": "RuntimeLayer"
+    },
+    {
+      "slug": "scripted-npcs",
+      "label": "Scripted NPCs"
+    },
+    {
+      "slug": "self-play",
+      "label": "Self-Play"
+    },
+    {
+      "slug": "simplex-noise",
+      "label": "Simplex Noise"
+    },
+    {
+      "slug": "spatial-reasoning",
+      "label": "Spatial Reasoning"
+    },
+    {
+      "slug": "speedrunning",
+      "label": "Speedrunning"
+    },
+    {
+      "slug": "static-quest-trees",
+      "label": "Static Quest Trees"
+    },
+    {
+      "slug": "twitch-plays",
+      "label": "Twitch Plays"
+    },
+    {
+      "slug": "unity-ml-agents",
+      "label": "Unity ML-Agents"
+    },
+    {
+      "slug": "utility-ai",
+      "label": "Utility AI"
+    },
+    {
+      "slug": "voronoi-diagram",
+      "label": "Voronoi Diagram"
+    },
+    {
+      "slug": "wave-function-collapse",
+      "label": "Wave Function Collapse"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "search-algorithms",
+      "label": "Search Algorithms"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:ff7b82b996e8a5301231668161ede8fe9997d5f32ce58c77bc8e98dc6769c221",
+  "title": "Expert Systems",
+  "slug": "expert-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:expert-systems",
+  "domain": "artificial-intelligence",
+  "definition": "Expert Systems is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decision-support",
+      "label": "Decision Support"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    }
+  ]
+}

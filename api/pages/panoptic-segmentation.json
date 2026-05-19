@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:2dbe9240fc48beb7bfede0c11eb15433b9172124c0ec42440ea94f9d644b1ea0",
+  "title": "Panoptic Segmentation",
+  "slug": "panoptic-segmentation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:panoptic-segmentation",
+  "domain": "spatial-computing",
+  "definition": "Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with \"thing\" classes (countable objects) and \"stuff\" classes (amorphous regions). Panoptic segmentation offers holistic scene parsing for applications requiring comprehensive visual understanding such as autonomous driving and robotics.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    }
+  ]
+}

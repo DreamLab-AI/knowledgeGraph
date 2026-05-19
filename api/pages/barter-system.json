@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:fab869ae6ba641adae4927e9c59a8f9ba7b4b8ea891b481a452572c9979c155c",
+  "title": "Barter System",
+  "slug": "barter-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:barter-system",
+  "domain": "artificial-intelligence",
+  "definition": "A decentralized exchange mechanism enabling peer-to-peer trading of goods, services, or digital assets without monetary intermediaries, enhanced in digital contexts through blockchain-based matching algorithms and smart contracts that solve the traditional \"double coincidence of wants\" problem.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:exchange-mechanism",
+      "label": "Exchange Mechanism"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:matching-algorithm",
+        "label": "Matching Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-mechanism",
+        "label": "Trust Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-exchange",
+        "label": "Asset Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:peer-to-peer-trading",
+        "label": "Peer-to-Peer Trading"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-exchange",
+      "label": "Asset Exchange"
+    },
+    {
+      "slug": "matching-algorithm",
+      "label": "Matching Algorithm"
+    },
+    {
+      "slug": "peer-to-peer-trading",
+      "label": "Peer-to-Peer Trading"
+    },
+    {
+      "slug": "trust-mechanism",
+      "label": "Trust Mechanism"
+    },
+    {
+      "slug": "exchange-mechanism",
+      "label": "Exchange Mechanism"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:39fc46921ad5394d7a5258bad8becfa25caf45c614cd7a14c28b189635e57ac2",
+  "title": "Activation Function",
+  "slug": "activation-function",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:activation-function",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:neural-network-component",
+      "label": "Neural Network Component"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-iec-22989-2022",
+      "label": "ISO/IEC 22989:2022"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

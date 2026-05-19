@@ -1,21 +1,273 @@
-iri:: http://narrativegoldmine.com/infrastructure#AuthenticationService
-uri:: urn:visionclaw:concept:infrastructure:authentication-service
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:authentication-service
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Authentication Service
-content-hash:: sha256-12-bd00f25db74b
-legacy-term-id:: NGM-7010
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#AuthenticationService
+legacy_uri:: urn:visionclaw:concept:infrastructure:authentication-service
 public:: true
+
+# Authentication Service
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:41bcf27bb47e46dbb940f3e2e4f7b52e7e2fcf5bf64f1908983041b5e64994a1",
+  "@type": "Page",
+  "vc:slug": "authentication-service",
+  "title": "Authentication Service",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:authorisation",
+      "vc:label": "Authorisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:core-technology",
+      "vc:label": "Core Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-validation",
+      "vc:label": "Credential Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-service",
+      "vc:label": "Security Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-sign-on",
+      "vc:label": "Single Sign-On"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:session-management",
+      "vc:label": "Session Management"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-bd00f25db74b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#AuthenticationService"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7010"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Authentication Service"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:authentication-service"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:authentication-service"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:41bcf27bb47e46dbb940f3e2e4f7b52e7e2fcf5bf64f1908983041b5e64994a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:authentication-service",
+  "@type": "OntologyClass",
+  "label": "Authentication Service",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:security-service",
+      "vc:label": "Security Service"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:41bcf27bb47e46dbb940f3e2e4f7b52e7e2fcf5bf64f1908983041b5e64994a1"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:41bcf27bb47e46dbb940f3e2e4f7b52e7e2fcf5bf64f1908983041b5e64994a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources. It validates credentials against stored identity information and issues tokens or assertions that enable authorised access across applications and services, forming the foundation of secure identity management in enterprise systems.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:authorisation",
+      "vc:label": "Authorisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-sign-on",
+      "vc:label": "Single Sign-On"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:session-management",
+      "vc:label": "Session Management"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:credential-validation",
+      "vc:label": "Credential Validation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:authentication-service:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:41bcf27bb47e46dbb940f3e2e4f7b52e7e2fcf5bf64f1908983041b5e64994a1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Authorisation]]",
+      "resolved": "urn:visionflow:linked:authorisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Core Technology]]",
+      "resolved": "urn:visionflow:linked:core-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Validation]]",
+      "resolved": "urn:visionflow:linked:credential-validation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Security Service]]",
+      "resolved": "urn:visionflow:linked:security-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Single Sign-On]]",
+      "resolved": "urn:visionflow:linked:single-sign-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Verification]]",
+      "resolved": "urn:visionflow:owl:class:identity-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Session Management]]",
+      "resolved": "urn:visionflow:owl:class:session-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:41bcf27bb47e46dbb940f3e2e4f7b52e7e2fcf5bf64f1908983041b5e64994a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources. It validates credentials against stored identity information and issues tokens or assertions that enable authorised access across applications and services, forming the foundation of secure identity management in enterprise systems.

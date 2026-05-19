@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:af3b215e40b16c25b0e3bc4a88bdf65d6160e267f4dcaed4db5506da3453e564",
+  "title": "Immersive Technology",
+  "slug": "immersive-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-technology",
+  "domain": "spatial-computing",
+  "definition": "The collective technologies comprising virtual reality (VR), augmented reality (AR), mixed reality (MR), and extended reality (XR) that create digital experiences blending physical and virtual environments, enabling user presence and interaction within computer-generated or enhanced spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-technology",
+      "label": "Digital Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-technology",
+      "label": "Digital Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

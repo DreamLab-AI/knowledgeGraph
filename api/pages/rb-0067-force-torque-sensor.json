@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:759e61aed0b4916f0e2f0149c9129feecfc0a5a16a5e38cce5f6a6b959215146",
+  "title": "rb 0067 force torque sensor",
+  "slug": "rb-0067-force-torque-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0067-force-torque-sensor",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:force-torque-sensor",
+      "label": "Force Torque Sensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

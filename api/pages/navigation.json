@@ -1,0 +1,612 @@
+{
+  "id": "urn:visionflow:page:59d6b2f4b1783e1b840de8a0ab9c631b038e2ac665a7bd9d7d62445974f8b27a",
+  "title": "Navigation",
+  "slug": "navigation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:navigation",
+  "domain": "robotics",
+  "definition": "[[Navigation]] is the autonomous discipline integrating localisation, mapping, path planning, motion control, and semantic interpretation to enable agents \u2014 ground robots, aerial vehicles, autonomous cars, and embodied AI systems \u2014 to move reliably from a start configuration to a goal state through structured or unstructured environments while avoiding obstacles, respecting kinodynamic constraints, and satisfying user-specified cost objectives. Navigation spans a hierarchy of planning granularities: global route planning over metric or topological maps, local trajectory optimisation within a receding prediction horizon, and reactive reflexive control for immediate obstacle avoidance, each layer exchanging state and command signals at rates from 1 Hz (global replan) to 1 kHz (torque control). The field is formalised as search and optimisation over configuration spaces C \u2286 \u211d\u207f (for n-DOF systems), where C\u2092b\u209b denotes obstacle configurations and C\u2093free = C \\ C\u2092b\u209b is the reachable free space, and the planner must return a continuous, kinematically feasible path \u03b3: [0,1] \u2192 C\u2093free connecting \u03b3(0) = q\u209b\u209c\u2090\u1d63\u209c to \u03b3(1) = qgo\u2090\u2097. Classical deterministic planners \u2014 Dijkstra (1959), A* (Hart et al. ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "id": "urn:visionflow:owl:class:motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "id": "urn:visionflow:linked:costmap",
+        "label": "Costmap"
+      },
+      {
+        "id": "urn:visionflow:linked:global-planner",
+        "label": "Global Planner"
+      },
+      {
+        "id": "urn:visionflow:linked:local-planner",
+        "label": "Local Planner"
+      },
+      {
+        "id": "urn:visionflow:linked:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:visionflow:linked:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:trajectory-optimisation",
+        "label": "Trajectory Optimisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:visionflow:owl:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:visionflow:linked:drone-navigation",
+        "label": "Drone Navigation"
+      },
+      {
+        "id": "urn:visionflow:linked:mobile-robotics",
+        "label": "Mobile Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:planetary-exploration",
+        "label": "Planetary Exploration"
+      },
+      {
+        "id": "urn:visionflow:linked:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "id": "urn:visionflow:linked:d-star-lite",
+        "label": "D Star Lite"
+      },
+      {
+        "id": "urn:visionflow:linked:dwa",
+        "label": "DWA"
+      },
+      {
+        "id": "urn:visionflow:linked:mpc",
+        "label": "MPC"
+      },
+      {
+        "id": "urn:visionflow:linked:mppi",
+        "label": "MPPI"
+      },
+      {
+        "id": "urn:visionflow:linked:prm",
+        "label": "PRM"
+      },
+      {
+        "id": "urn:visionflow:linked:rrt",
+        "label": "RRT"
+      },
+      {
+        "id": "urn:visionflow:linked:rrt-star",
+        "label": "RRT Star"
+      },
+      {
+        "id": "urn:visionflow:linked:teb-planner",
+        "label": "TEB Planner"
+      },
+      {
+        "id": "urn:visionflow:owl:class:a-star-algorithm",
+        "label": "A Star Algorithm"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "anderson-et-al-2018-vln-r2-r",
+      "label": "Anderson et al. 2018 VLN R2R"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "AutonomousSystemsDomain"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "behaviour-trees",
+      "label": "Behaviour Trees"
+    },
+    {
+      "slug": "brohan-et-al-2023-rt-2",
+      "label": "Brohan et al. 2023 RT-2"
+    },
+    {
+      "slug": "chen-et-al-2019-crowd-nav",
+      "label": "Chen et al. 2019 CrowdNav"
+    },
+    {
+      "slug": "chi-et-al-2023-diffusion-policy",
+      "label": "Chi et al. 2023 Diffusion Policy"
+    },
+    {
+      "slug": "control-and-planning-domain",
+      "label": "ControlAndPlanningDomain"
+    },
+    {
+      "slug": "costmap",
+      "label": "Costmap"
+    },
+    {
+      "slug": "cummins-newman-2008-fab-map",
+      "label": "Cummins Newman 2008 FAB-MAP"
+    },
+    {
+      "slug": "d-star-lite",
+      "label": "D Star Lite"
+    },
+    {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
+    },
+    {
+      "slug": "dwa",
+      "label": "DWA"
+    },
+    {
+      "slug": "fox-et-al-1997-dwa",
+      "label": "Fox et al. 1997 DWA"
+    },
+    {
+      "slug": "gammell-et-al-2014-informed-rrt-star",
+      "label": "Gammell et al. 2014 Informed RRT Star"
+    },
+    {
+      "slug": "gaussian-processes",
+      "label": "Gaussian Processes"
+    },
+    {
+      "slug": "global-planner",
+      "label": "Global Planner"
+    },
+    {
+      "slug": "hart-et-al-1968-a-star-algorithm",
+      "label": "Hart et al. 1968 A Star Algorithm"
+    },
+    {
+      "slug": "helbing-molnar-1995-social-force-model",
+      "label": "Helbing Molnar 1995 Social Force Model"
+    },
+    {
+      "slug": "hess-et-al-2016-cartographer",
+      "label": "Hess et al. 2016 Cartographer"
+    },
+    {
+      "slug": "iec-62443",
+      "label": "IEC 62443"
+    },
+    {
+      "slug": "ieee-1872-2015-robotics-ontology",
+      "label": "IEEE 1872 2015 Robotics Ontology"
+    },
+    {
+      "slug": "ieee-1872-ontology-for-robotics",
+      "label": "IEEE 1872 Ontology for Robotics"
+    },
+    {
+      "slug": "imu",
+      "label": "IMU"
+    },
+    {
+      "slug": "iso-13482",
+      "label": "ISO 13482"
+    },
+    {
+      "slug": "iso-13482-2014-personal-care-robots",
+      "label": "ISO 13482 2014 Personal Care Robots"
+    },
+    {
+      "slug": "karaman-frazzoli-2011-rrt-star",
+      "label": "Karaman Frazzoli 2011 RRT Star"
+    },
+    {
+      "slug": "kavraki-et-al-1996-prm",
+      "label": "Kavraki et al. 1996 PRM"
+    },
+    {
+      "slug": "koenig-likhachev-2002-d-star-lite",
+      "label": "Koenig Likhachev 2002 D Star Lite"
+    },
+    {
+      "slug": "la-valle-1998-rrt",
+      "label": "LaValle 1998 RRT"
+    },
+    {
+      "slug": "local-planner",
+      "label": "Local Planner"
+    },
+    {
+      "slug": "localisation",
+      "label": "Localisation"
+    },
+    {
+      "slug": "macenski-et-al-2022-ros2-science-robotics",
+      "label": "Macenski et al. 2022 ROS2 Science Robotics"
+    },
+    {
+      "slug": "mapping",
+      "label": "Mapping"
+    },
+    {
+      "slug": "mobile-robotics",
+      "label": "Mobile Robotics"
+    },
+    {
+      "slug": "mpc",
+      "label": "MPC"
+    },
+    {
+      "slug": "mppi",
+      "label": "MPPI"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi Agent Systems"
+    },
+    {
+      "slug": "mur-artal-et-al-2015-orb-slam",
+      "label": "Mur-Artal et al. 2015 ORB-SLAM"
+    },
+    {
+      "slug": "nav2-documentation-2024",
+      "label": "Nav2 Documentation 2024"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "nvidia-isaac-manipulator-2024",
+      "label": "NVIDIA Isaac Manipulator 2024"
+    },
+    {
+      "slug": "occupancy-grid",
+      "label": "Occupancy Grid"
+    },
+    {
+      "slug": "open-x-embodiment-2024",
+      "label": "Open X-Embodiment 2024"
+    },
+    {
+      "slug": "planetary-exploration",
+      "label": "Planetary Exploration"
+    },
+    {
+      "slug": "point-cloud-processing",
+      "label": "Point Cloud Processing"
+    },
+    {
+      "slug": "prm",
+      "label": "PRM"
+    },
+    {
+      "slug": "qi-et-al-2020-reverie",
+      "label": "Qi et al. 2020 REVERIE"
+    },
+    {
+      "slug": "r-smann-et-al-2013-teb",
+      "label": "R\u00f6smann et al. 2013 TEB"
+    },
+    {
+      "slug": "rgb-d-cameras",
+      "label": "RGB-D Cameras"
+    },
+    {
+      "slug": "ros-2-nav2",
+      "label": "ROS 2 Nav2"
+    },
+    {
+      "slug": "rrt",
+      "label": "RRT"
+    },
+    {
+      "slug": "rrt-star",
+      "label": "RRT Star"
+    },
+    {
+      "slug": "scripted-motion",
+      "label": "Scripted Motion"
+    },
+    {
+      "slug": "shah-et-al-2023-lm-nav",
+      "label": "Shah et al. 2023 LM-Nav"
+    },
+    {
+      "slug": "shan-et-al-2020-lio-sam",
+      "label": "Shan et al. 2020 LIO-SAM"
+    },
+    {
+      "slug": "simulation-environments",
+      "label": "Simulation Environments"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "teb-planner",
+      "label": "TEB Planner"
+    },
+    {
+      "slug": "trajectory-optimisation",
+      "label": "Trajectory Optimisation"
+    },
+    {
+      "slug": "van-den-berg-et-al-2008-rvo",
+      "label": "van den Berg et al. 2008 RVO"
+    },
+    {
+      "slug": "visual-language-navigation",
+      "label": "Visual Language Navigation"
+    },
+    {
+      "slug": "visual-odometry",
+      "label": "Visual Odometry"
+    },
+    {
+      "slug": "warehouse-automation",
+      "label": "Warehouse Automation"
+    },
+    {
+      "slug": "williams-et-al-2016-mppi",
+      "label": "Williams et al. 2016 MPPI"
+    },
+    {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gps",
+      "label": "GPS"
+    },
+    {
+      "slug": "graph-search",
+      "label": "Graph Search"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "lidar",
+      "label": "LIDAR"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open Loop Control"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    },
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

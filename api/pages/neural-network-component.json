@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:cc68f39833219b0c67a7b75ec78ebd6e2a939531c4aa90c5fe3a3497e033a180",
+  "title": "Neural Network Component",
+  "slug": "neural-network-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:neural-network-component",
+  "domain": "artificial-intelligence",
+  "definition": "A component or building block of neural networks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-preference",
+      "label": "Human Preference"
+    }
+  ]
+}

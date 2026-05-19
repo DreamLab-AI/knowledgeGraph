@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AsynchronousExecution
-uri:: urn:visionclaw:concept:artificial-intelligence:asynchronous-execution
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:asynchronous-execution
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Asynchronous Execution
-content-hash:: sha256-12-9093cba512af
-legacy-term-id:: AI-8011
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AsynchronousExecution
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:asynchronous-execution
 public:: true
+
+# Asynchronous Execution
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702",
+  "@type": "Page",
+  "vc:slug": "asynchronous-execution",
+  "title": "Asynchronous Execution",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:core-technology",
+      "vc:label": "Core Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:execution-model",
+      "vc:label": "Execution Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9093cba512af"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AsynchronousExecution"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-8011"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Asynchronous Execution"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:asynchronous-execution"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:asynchronous-execution"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:asynchronous-execution",
+  "@type": "OntologyClass",
+  "label": "Asynchronous Execution",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:execution-model",
+      "vc:label": "Execution Model"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Asynchronous Execution is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:asynchronous-execution:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Core Technology]]",
+      "resolved": "urn:visionflow:linked:core-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Execution Model]]",
+      "resolved": "urn:visionflow:linked:execution-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Edge Computing]]",
+      "resolved": "urn:visionflow:owl:class:edge-computing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Asynchronous Execution is a concept within the ai domain.

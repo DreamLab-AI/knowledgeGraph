@@ -1,0 +1,293 @@
+{
+  "id": "urn:visionflow:page:3bd5444a5f19399bfee6de92dc2e4cffb4e7e51293db9fb333326a634a76e1a0",
+  "title": "tc 0002 collaborative document editing",
+  "slug": "tc-0002-collaborative-document-editing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tc-0002-collaborative-document-editing",
+  "domain": "distributed-collaboration",
+  "definition": "**Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:knowledge-co-creation",
+      "label": "Knowledge Co-Creation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:remote-collaboration",
+      "label": "Remote Collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:comments",
+        "label": "Comments"
+      },
+      {
+        "id": "urn:visionflow:linked:version-history",
+        "label": "Version History"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:distributed-teamwork",
+        "label": "Distributed Teamwork"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-building",
+        "label": "Knowledge Building"
+      },
+      {
+        "id": "urn:visionflow:linked:peer-learning",
+        "label": "Peer Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asynchronous-communication",
+      "label": "Asynchronous Communication"
+    },
+    {
+      "slug": "asynchronous-synchronous-communication",
+      "label": "Asynchronous-Synchronous Communication"
+    },
+    {
+      "slug": "change-tracking",
+      "label": "Change Tracking"
+    },
+    {
+      "slug": "cloud-storage",
+      "label": "Cloud Storage"
+    },
+    {
+      "slug": "collaborative-inquiry",
+      "label": "Collaborative Inquiry"
+    },
+    {
+      "slug": "collaborative-research",
+      "label": "Collaborative Research"
+    },
+    {
+      "slug": "collaborative-thinking",
+      "label": "Collaborative Thinking"
+    },
+    {
+      "slug": "collaborative-writing",
+      "label": "Collaborative Writing"
+    },
+    {
+      "slug": "comments",
+      "label": "Comments"
+    },
+    {
+      "slug": "confluence",
+      "label": "Confluence"
+    },
+    {
+      "slug": "connectivism",
+      "label": "Connectivism"
+    },
+    {
+      "slug": "constructivism",
+      "label": "Constructivism"
+    },
+    {
+      "slug": "crdt-conflict-free-replicated-data-type",
+      "label": "CRDT (Conflict-free Replicated Data Type)"
+    },
+    {
+      "slug": "credential-verification",
+      "label": "Credential Verification"
+    },
+    {
+      "slug": "distributed-editing-networks",
+      "label": "Distributed Editing Networks"
+    },
+    {
+      "slug": "distributed-teamwork",
+      "label": "Distributed Teamwork"
+    },
+    {
+      "slug": "etherpad",
+      "label": "Etherpad"
+    },
+    {
+      "slug": "google-workspace",
+      "label": "Google Workspace"
+    },
+    {
+      "slug": "hack-md",
+      "label": "HackMD"
+    },
+    {
+      "slug": "high-contrast",
+      "label": "High Contrast"
+    },
+    {
+      "slug": "immutable-document-history",
+      "label": "Immutable Document History"
+    },
+    {
+      "slug": "keyboard-navigation",
+      "label": "Keyboard Navigation"
+    },
+    {
+      "slug": "knowledge-building",
+      "label": "Knowledge Building"
+    },
+    {
+      "slug": "knowledge-co-creation",
+      "label": "Knowledge Co-Creation"
+    },
+    {
+      "slug": "knowledge-creation",
+      "label": "Knowledge Creation"
+    },
+    {
+      "slug": "language-correction",
+      "label": "Language Correction"
+    },
+    {
+      "slug": "metacognition",
+      "label": "Metacognition"
+    },
+    {
+      "slug": "microsoft-office-365",
+      "label": "Microsoft Office 365"
+    },
+    {
+      "slug": "notion",
+      "label": "Notion"
+    },
+    {
+      "slug": "operational-transformation",
+      "label": "Operational Transformation"
+    },
+    {
+      "slug": "peer-feedback",
+      "label": "Peer Feedback"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
+    },
+    {
+      "slug": "peer-review",
+      "label": "Peer Review"
+    },
+    {
+      "slug": "plagiarism-detection",
+      "label": "Plagiarism Detection"
+    },
+    {
+      "slug": "quantum-safe-encryption",
+      "label": "Quantum-Safe Encryption"
+    },
+    {
+      "slug": "real-time-cursor",
+      "label": "Real-time Cursor"
+    },
+    {
+      "slug": "remote-collaboration-technology",
+      "label": "Remote Collaboration Technology"
+    },
+    {
+      "slug": "scaffolding",
+      "label": "Scaffolding"
+    },
+    {
+      "slug": "screen-reader-support",
+      "label": "Screen Reader Support"
+    },
+    {
+      "slug": "semantic-collaboration",
+      "label": "Semantic Collaboration"
+    },
+    {
+      "slug": "shared-documents",
+      "label": "Shared Documents"
+    },
+    {
+      "slug": "smart-writing-suggestions",
+      "label": "Smart Writing Suggestions"
+    },
+    {
+      "slug": "social-constructivism",
+      "label": "Social Constructivism"
+    },
+    {
+      "slug": "social-learning",
+      "label": "Social Learning"
+    },
+    {
+      "slug": "suggestions",
+      "label": "Suggestions"
+    },
+    {
+      "slug": "synchronous-communication",
+      "label": "Synchronous Communication"
+    },
+    {
+      "slug": "team-knowledge",
+      "label": "Team Knowledge"
+    },
+    {
+      "slug": "text-resizing",
+      "label": "Text Resizing"
+    },
+    {
+      "slug": "version-control-systems",
+      "label": "Version Control Systems"
+    },
+    {
+      "slug": "version-history",
+      "label": "Version History"
+    },
+    {
+      "slug": "web-socket",
+      "label": "WebSocket"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "TelecollaborationDomain"
+    }
+  ],
+  "backlinks": []
+}

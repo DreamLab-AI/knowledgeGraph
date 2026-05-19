@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:4e242e874bd60394c100613afdc905c8b507270b28a8c606d0134ac4ebca06cb",
+  "title": "Dagger",
+  "slug": "dagger",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dagger",
+  "domain": "infrastructure",
+  "definition": "Dagger is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2",
+  "title": "Trust Score Metric",
+  "slug": "trust-score-metric",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trust-score-metric",
+  "domain": "spatial-computing",
+  "definition": "A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to inform authorization decisions, transaction approvals, and access control policies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:calculation-timestamp",
+        "label": "Calculation Timestamp"
+      },
+      {
+        "id": "urn:visionflow:linked:confidence-interval",
+        "label": "Confidence Interval"
+      },
+      {
+        "id": "urn:visionflow:linked:score-value",
+        "label": "Score Value"
+      },
+      {
+        "id": "urn:visionflow:linked:scoring-methodology-reference",
+        "label": "Scoring Methodology Reference"
+      },
+      {
+        "id": "urn:visionflow:linked:validity-period",
+        "label": "Validity Period"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:behavioral-data",
+        "label": "Behavioral Data"
+      },
+      {
+        "id": "urn:visionflow:owl:class:calculation-parameters",
+        "label": "Calculation Parameters"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reputation-scoring-model",
+        "label": "Reputation Scoring Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:access-control-decisions",
+        "label": "Access Control Decisions"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-approval",
+        "label": "Transaction Approval"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control-decisions",
+      "label": "Access Control Decisions"
+    },
+    {
+      "slug": "behavioral-data",
+      "label": "Behavioral Data"
+    },
+    {
+      "slug": "calculation-timestamp",
+      "label": "Calculation Timestamp"
+    },
+    {
+      "slug": "confidence-interval",
+      "label": "Confidence Interval"
+    },
+    {
+      "slug": "data-quality-metrics",
+      "label": "Data Quality Metrics"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "score-value",
+      "label": "Score Value"
+    },
+    {
+      "slug": "scoring-methodology-reference",
+      "label": "Scoring Methodology Reference"
+    },
+    {
+      "slug": "statistical-models",
+      "label": "Statistical Models"
+    },
+    {
+      "slug": "transaction-approval",
+      "label": "Transaction Approval"
+    },
+    {
+      "slug": "validation-rules",
+      "label": "Validation Rules"
+    },
+    {
+      "slug": "validity-period",
+      "label": "Validity Period"
+    },
+    {
+      "slug": "calculation-parameters",
+      "label": "Calculation Parameters"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    }
+  ]
+}

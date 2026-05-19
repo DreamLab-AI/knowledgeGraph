@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:1f5426818faf47dc9f44e15f5f747acfc95e5f9aaa7e95a65bdf44643dc1fb41",
+  "title": "Spatial Coordinates",
+  "slug": "spatial-coordinates",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-coordinates",
+  "domain": "spatial-computing",
+  "definition": "A unified reference frame system for positioning objects in three-dimensional virtual or mixed reality environments, including geographically-anchored poses (GeoPose) tied to Earth coordinates and local coordinate systems for scene-relative object placement with support for coordinate transformation between systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:coordinate-system",
+      "label": "Coordinate System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:object-positioning",
+        "label": "Object Positioning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "object-positioning",
+      "label": "Object Positioning"
+    },
+    {
+      "slug": "coordinate-system",
+      "label": "Coordinate System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    }
+  ]
+}

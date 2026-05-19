@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:58a33f1bc9a75da1e66c62d917ec52f200af01ba3bd0a14db2e5589373c33e38",
+  "title": "Genesis Block",
+  "slug": "genesis-block",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:genesis-block",
+  "domain": "blockchain",
+  "definition": "First block in a blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-data-structure",
+      "label": "DistributedDataStructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "DistributedDataStructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ]
+}

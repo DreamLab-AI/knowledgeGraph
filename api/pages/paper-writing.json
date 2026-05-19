@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:13bb3b03cf9e4e55ef1e09b30c00368e29ee54fe197f18907c673ed0ca89de83",
+  "title": "Paper Writing",
+  "slug": "paper-writing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:paper-writing",
+  "domain": "infrastructure",
+  "definition": "Paper Writing is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    }
+  ]
+}

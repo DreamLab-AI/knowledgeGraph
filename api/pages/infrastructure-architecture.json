@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:5182ac97b479a67ab1986001277a2bc912765df0016fe8c8ebd97ec4f8c9587f",
+  "title": "Infrastructure Architecture",
+  "slug": "infrastructure-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrastructure-architecture",
+  "domain": "infrastructure",
+  "definition": "The foundational technical framework supporting metaverse platforms, comprising cloud computing, edge networks, distributed systems, and computing power networks that enable scalable, low-latency delivery of immersive virtual experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-architecture",
+      "label": "Technical Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "technical-architecture",
+      "label": "Technical Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+{
+  "id": "urn:visionflow:page:2a2bfff0db09447658b3c9134ac906c79839d083058567cb292b71fdf8749be6",
+  "title": "Data Layer",
+  "slug": "data-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-layer",
+  "domain": "infrastructure",
+  "definition": "**Data Layer** is the architectural tier within a layered, n-tier, hexagonal, or modular system responsible for the durable persistence, transactional integrity, indexed retrieval, replication, and abstraction of stateful data \u2014 encompassing both the enterprise-architecture sense (the **data access layer** of n-tier applications, sometimes called the **persistence layer**, **data tier** or **DAL**, comprising database engines, ORMs, repository patterns, query processors, transaction managers, replication services, caching layers and storage drivers, formalised by Edward Yourdon and Larry Constantine in 1970s structured design, refined through Eric Evans' 2003 *Domain-Driven Design*, Vaughn Vernon's 2013 *Implementing Domain-Driven Design*, Alistair Cockburn's 2005 *Hexagonal Architecture* with its ports-and-adapters formulation, Robert C. Martin's 2012 *Clean Architecture* with its outer-ring framing of databases as detail-level implementation concerns, and Martin Fowler's 2002 *Patterns of Enterprise Application Architecture* canonising the Repository, Data Mapper, Active Record, Unit of Work, Identity Map and Query Object patterns) and the modular-blockchain sense (the **data ava",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:architectural-layer",
+      "label": "Architectural Layer"
+    },
+    {
+      "id": "urn:visionflow:linked:software-layer",
+      "label": "Software Layer"
+    },
+    {
+      "id": "urn:visionflow:linked:system-tier",
+      "label": "System Tier"
+    }
+  ],
+  "qualityScore": 0.53,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cache-layer",
+        "label": "Cache Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:connection-pool",
+        "label": "Connection Pool"
+      },
+      {
+        "id": "urn:visionflow:linked:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:data-indexing",
+        "label": "Data Indexing"
+      },
+      {
+        "id": "urn:visionflow:linked:database-engine",
+        "label": "Database Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:visionflow:linked:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "id": "urn:visionflow:linked:object-relational-mapper",
+        "label": "Object-Relational Mapper"
+      },
+      {
+        "id": "urn:visionflow:linked:replication-service",
+        "label": "Replication Service"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-manager",
+        "label": "Transaction Manager"
+      },
+      {
+        "id": "urn:visionflow:owl:class:query-processor",
+        "label": "Query Processor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:backup-strategy",
+        "label": "Backup Strategy"
+      },
+      {
+        "id": "urn:visionflow:linked:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-medium",
+        "label": "Storage Medium"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:acid-compliance",
+        "label": "ACID Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:visionflow:linked:data-consistency",
+        "label": "Data Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:visionflow:linked:horizontal-scaling",
+        "label": "Horizontal Scaling"
+      },
+      {
+        "id": "urn:visionflow:linked:polyglot-persistence",
+        "label": "Polyglot Persistence"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:rollup-scaling",
+        "label": "Rollup Scaling"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-query",
+        "label": "Semantic Query"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:active-record",
+        "label": "Active Record"
+      },
+      {
+        "id": "urn:visionflow:linked:cqrs",
+        "label": "CQRS"
+      },
+      {
+        "id": "urn:visionflow:linked:data-mapper-pattern",
+        "label": "Data Mapper Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:visionflow:linked:hexagonal-architecture",
+        "label": "Hexagonal Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:ports-and-adapters",
+        "label": "Ports and Adapters"
+      },
+      {
+        "id": "urn:visionflow:linked:repository-pattern",
+        "label": "Repository Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:unit-of-work",
+        "label": "Unit of Work"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acid-compliance",
+      "label": "ACID Compliance"
+    },
+    {
+      "slug": "active-record",
+      "label": "Active Record"
+    },
+    {
+      "slug": "ansi-sql",
+      "label": "ANSI SQL"
+    },
+    {
+      "slug": "architectural-layer",
+      "label": "Architectural Layer"
+    },
+    {
+      "slug": "avail",
+      "label": "Avail"
+    },
+    {
+      "slug": "backup-strategy",
+      "label": "Backup Strategy"
+    },
+    {
+      "slug": "bloom-filter",
+      "label": "Bloom Filter"
+    },
+    {
+      "slug": "business-logic-layer",
+      "label": "Business Logic Layer"
+    },
+    {
+      "slug": "cache-layer",
+      "label": "Cache Layer"
+    },
+    {
+      "slug": "celestia",
+      "label": "Celestia"
+    },
+    {
+      "slug": "celestia-specifications",
+      "label": "Celestia Specifications"
+    },
+    {
+      "slug": "cidr-architecture",
+      "label": "CIDR Architecture"
+    },
+    {
+      "slug": "clean-architecture",
+      "label": "Clean Architecture"
+    },
+    {
+      "slug": "connection-pool",
+      "label": "Connection Pool"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
+    },
+    {
+      "slug": "cqrs",
+      "label": "CQRS"
+    },
+    {
+      "slug": "cypher",
+      "label": "Cypher"
+    },
+    {
+      "slug": "data-availability",
+      "label": "Data Availability"
+    },
+    {
+      "slug": "data-availability-sampling",
+      "label": "Data Availability Sampling"
+    },
+    {
+      "slug": "data-consistency",
+      "label": "Data Consistency"
+    },
+    {
+      "slug": "data-indexing",
+      "label": "Data Indexing"
+    },
+    {
+      "slug": "data-mapper-pattern",
+      "label": "Data Mapper Pattern"
+    },
+    {
+      "slug": "data-persistence",
+      "label": "Data Persistence"
+    },
+    {
+      "slug": "database",
+      "label": "Database"
+    },
+    {
+      "slug": "database-engine",
+      "label": "Database Engine"
+    },
+    {
+      "slug": "domain-driven-design",
+      "label": "Domain-Driven Design"
+    },
+    {
+      "slug": "domain-model",
+      "label": "Domain Model"
+    },
+    {
+      "slug": "eigen-da",
+      "label": "EigenDA"
+    },
+    {
+      "slug": "eip-4844",
+      "label": "EIP-4844"
+    },
+    {
+      "slug": "erasure-coding",
+      "label": "Erasure Coding"
+    },
+    {
+      "slug": "event-sourcing",
+      "label": "Event Sourcing"
+    },
+    {
+      "slug": "execution-layer",
+      "label": "Execution Layer"
+    },
+    {
+      "slug": "file-system",
+      "label": "File System"
+    },
+    {
+      "slug": "graph-ql",
+      "label": "GraphQL"
+    },
+    {
+      "slug": "hexagonal-architecture",
+      "label": "Hexagonal Architecture"
+    },
+    {
+      "slug": "horizontal-scaling",
+      "label": "Horizontal Scaling"
+    },
+    {
+      "slug": "iso-iec-9075",
+      "label": "ISO/IEC 9075"
+    },
+    {
+      "slug": "jdbc",
+      "label": "JDBC"
+    },
+    {
+      "slug": "jdbc-specification",
+      "label": "JDBC Specification"
+    },
+    {
+      "slug": "jpa-specification",
+      "label": "JPA Specification"
+    },
+    {
+      "slug": "kzg-commitment",
+      "label": "KZG Commitment"
+    },
+    {
+      "slug": "memory-hierarchy",
+      "label": "Memory Hierarchy"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "modular-blockchain",
+      "label": "Modular Blockchain"
+    },
+    {
+      "slug": "modular-blockchain-stack",
+      "label": "Modular Blockchain Stack"
+    },
+    {
+      "slug": "narrative-gold-mine",
+      "label": "Narrative Gold Mine"
+    },
+    {
+      "slug": "object-relational-mapper",
+      "label": "Object-Relational Mapper"
+    },
+    {
+      "slug": "odbc",
+      "label": "ODBC"
+    },
+    {
+      "slug": "odbc-specification",
+      "label": "ODBC Specification"
+    },
+    {
+      "slug": "orm-frameworks",
+      "label": "ORM Frameworks"
+    },
+    {
+      "slug": "persistence-tier",
+      "label": "Persistence Tier"
+    },
+    {
+      "slug": "polyglot-persistence",
+      "label": "Polyglot Persistence"
+    },
+    {
+      "slug": "polygon-agg-layer",
+      "label": "Polygon AggLayer"
+    },
+    {
+      "slug": "ports-and-adapters",
+      "label": "Ports and Adapters"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "Presentation Layer"
+    },
+    {
+      "slug": "reed-solomon-codes",
+      "label": "Reed-Solomon Codes"
+    },
+    {
+      "slug": "replication-service",
+      "label": "Replication Service"
+    },
+    {
+      "slug": "reporting-layer",
+      "label": "Reporting Layer"
+    },
+    {
+      "slug": "repository-pattern",
+      "label": "Repository Pattern"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "rollup-scaling",
+      "label": "Rollup Scaling"
+    },
+    {
+      "slug": "schema-definition",
+      "label": "Schema Definition"
+    },
+    {
+      "slug": "semantic-query",
+      "label": "Semantic Query"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
+    },
+    {
+      "slug": "software-architecture-domain",
+      "label": "SoftwareArchitectureDomain"
+    },
+    {
+      "slug": "software-layer",
+      "label": "Software Layer"
+    },
+    {
+      "slug": "sparql",
+      "label": "SPARQL"
+    },
+    {
+      "slug": "sql",
+      "label": "SQL"
+    },
+    {
+      "slug": "storage-medium",
+      "label": "Storage Medium"
+    },
+    {
+      "slug": "storage-tier",
+      "label": "Storage Tier"
+    },
+    {
+      "slug": "system-tier",
+      "label": "System Tier"
+    },
+    {
+      "slug": "transaction-manager",
+      "label": "Transaction Manager"
+    },
+    {
+      "slug": "unit-of-work",
+      "label": "Unit of Work"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "query-processor",
+      "label": "Query Processor"
+    },
+    {
+      "slug": "schema-registry",
+      "label": "Schema Registry"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "api-standard",
+      "label": "API Standard"
+    },
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "synthetic-data-generator",
+      "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    },
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

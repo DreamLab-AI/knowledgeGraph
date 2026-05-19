@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:1a9c4880b60fd695d135b73365ceada38deec6f66317cfe56036d90bfd21f444",
+  "title": "Marketplace",
+  "slug": "marketplace",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:marketplace",
+  "domain": "spatial-computing",
+  "definition": "Digital platform enabling discovery, exchange, and transaction of virtual goods, services, and assets within or across metaverse systems through listing, escrow, and reputation mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:escrow-system",
+        "label": "Escrow System"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "id": "urn:visionflow:linked:product-listing",
+        "label": "Product Listing"
+      },
+      {
+        "id": "urn:visionflow:linked:search-and-discovery",
+        "label": "Search & Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-engine",
+        "label": "Transaction Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:identity-system",
+        "label": "Identity System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:economic-activity",
+        "label": "Economic Activity"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-transaction",
+        "label": "Secure Transaction"
+      },
+      {
+        "id": "urn:visionflow:linked:value-exchange",
+        "label": "Value Exchange"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "id": "urn:visionflow:owl:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economic-activity",
+      "label": "Economic Activity"
+    },
+    {
+      "slug": "escrow-system",
+      "label": "Escrow System"
+    },
+    {
+      "slug": "identity-system",
+      "label": "Identity System"
+    },
+    {
+      "slug": "oma3-reed-smith",
+      "label": "OMA3 + Reed Smith"
+    },
+    {
+      "slug": "payment-gateway",
+      "label": "Payment Gateway"
+    },
+    {
+      "slug": "payment-protocol",
+      "label": "Payment Protocol"
+    },
+    {
+      "slug": "product-listing",
+      "label": "Product Listing"
+    },
+    {
+      "slug": "search-and-discovery",
+      "label": "Search & Discovery"
+    },
+    {
+      "slug": "secure-transaction",
+      "label": "Secure Transaction"
+    },
+    {
+      "slug": "transaction-engine",
+      "label": "Transaction Engine"
+    },
+    {
+      "slug": "value-exchange",
+      "label": "Value Exchange"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    }
+  ]
+}

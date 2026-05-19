@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:8fa616b1c7adc42a261350b172514a6241ccc5b6dedd9d31f11b71eb54bb7bb2",
+  "title": "Learning Resources",
+  "slug": "learning-resources",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:learning-resources",
+  "domain": "spatial-computing",
+  "definition": "Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-education",
+        "label": "Immersive Education"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-education",
+      "label": "Immersive Education"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "glossary-index",
+      "label": "Glossary Index"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:bb1ee9c361d51dea83ada5613f4087ef0791bbfa54251f2ac7d726024d622e70",
+  "title": "Remote Collaboration",
+  "slug": "remote-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:remote-collaboration",
+  "domain": "infrastructure",
+  "definition": "RemoteCollaboration is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

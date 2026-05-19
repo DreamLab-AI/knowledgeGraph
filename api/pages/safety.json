@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7",
+  "title": "Safety",
+  "slug": "safety",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:safety",
+  "domain": "spatial-computing",
+  "definition": "The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-assessment-ai-0079",
+        "label": "Risk Assessment (AI-0079)"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hazard-analysis",
+      "label": "Hazard Analysis"
+    },
+    {
+      "slug": "risk-assessment-ai-0079",
+      "label": "Risk Assessment (AI-0079)"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "webid",
+      "label": "webid"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ]
+}

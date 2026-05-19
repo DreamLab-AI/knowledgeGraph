@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:ba5b6cf41ff1710b6c6fe215cd5fcd7856d4a22fc1bb4029a107bd2b941d1ca8",
+  "title": "Occlusion Culling",
+  "slug": "occlusion-culling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:occlusion-culling",
+  "domain": "spatial-computing",
+  "definition": "OcclusionCulling is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

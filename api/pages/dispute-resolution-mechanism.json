@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:fbbc2798bbba52bc9cb01be6acd7263fb8107bda3a86f29f9f7ed7edf8dafb7c",
+  "title": "Dispute Resolution Mechanism",
+  "slug": "dispute-resolution-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dispute-resolution-mechanism",
+  "domain": "infrastructure",
+  "definition": "Agreed process and framework for resolving conflicts between metaverse participants through mediation, arbitration, or other structured resolution methods.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conflict-resolution-protocol",
+        "label": "Conflict Resolution Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:evidence-submission-system",
+        "label": "Evidence Submission System"
+      },
+      {
+        "id": "urn:visionflow:linked:mediation-process",
+        "label": "Mediation Process"
+      },
+      {
+        "id": "urn:visionflow:owl:class:arbitration-process",
+        "label": "Arbitration Process"
+      },
+      {
+        "id": "urn:visionflow:owl:class:e-contract-arbitration",
+        "label": "E-Contract Arbitration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:evidence-management",
+        "label": "Evidence Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-enforcement",
+        "label": "Automated Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:fair-adjudication",
+        "label": "Fair Adjudication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:participant-protection",
+        "label": "Participant Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-enforcement",
+      "label": "Automated Enforcement"
+    },
+    {
+      "slug": "conflict-resolution",
+      "label": "Conflict Resolution"
+    },
+    {
+      "slug": "conflict-resolution-protocol",
+      "label": "Conflict Resolution Protocol"
+    },
+    {
+      "slug": "dispute-classification-system",
+      "label": "Dispute Classification System"
+    },
+    {
+      "slug": "evidence-management",
+      "label": "Evidence Management"
+    },
+    {
+      "slug": "evidence-submission-system",
+      "label": "Evidence Submission System"
+    },
+    {
+      "slug": "fair-adjudication",
+      "label": "Fair Adjudication"
+    },
+    {
+      "slug": "mediation-process",
+      "label": "Mediation Process"
+    },
+    {
+      "slug": "uncitral-odr-rules",
+      "label": "UNCITRAL ODR Rules"
+    },
+    {
+      "slug": "arbitration-process",
+      "label": "Arbitration Process"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "participant-protection",
+      "label": "Participant Protection"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    }
+  ]
+}

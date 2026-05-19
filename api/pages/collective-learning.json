@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65",
+  "title": "Collective Learning",
+  "slug": "collective-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collective-learning",
+  "domain": "artificial-intelligence",
+  "definition": "A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work together to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR technologies that enable global participation without physical co-location.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-methodology",
+      "label": "Educational Methodology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:communication-tools",
+        "label": "Communication Tools"
+      },
+      {
+        "id": "urn:visionflow:owl:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:global-collaboration",
+        "label": "Global Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-co-construction",
+        "label": "Knowledge Co-Construction"
+      },
+      {
+        "id": "urn:visionflow:linked:peer-learning",
+        "label": "Peer Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-tools",
+      "label": "Communication Tools"
+    },
+    {
+      "slug": "global-collaboration",
+      "label": "Global Collaboration"
+    },
+    {
+      "slug": "knowledge-co-construction",
+      "label": "Knowledge Co-Construction"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
+    },
+    {
+      "slug": "educational-methodology",
+      "label": "Educational Methodology"
+    },
+    {
+      "slug": "learning-management-system",
+      "label": "Learning Management System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    }
+  ]
+}

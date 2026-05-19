@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:145eba3c8f9ce6aef3535a2af9eab43c709e07adaad039bde50b675f804c1a8d",
+  "title": "Scalable Architecture",
+  "slug": "scalable-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scalable-architecture",
+  "domain": "spatial-computing",
+  "definition": "System designs that maintain performance and availability as user demand grows, employing horizontal scaling, load balancing, distributed computing, and cloud-native patterns to support expanding metaverse populations and concurrent interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "high-availability",
+      "label": "High Availability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    }
+  ]
+}

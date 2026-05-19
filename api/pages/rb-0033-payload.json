@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:cb7ea40482a24fc149a9c7f648b9192c54a720a902ccfc886cfdbb2d4f051cb9",
+  "title": "rb 0033 payload",
+  "slug": "rb-0033-payload",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0033-payload",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

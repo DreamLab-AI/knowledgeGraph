@@ -1,0 +1,540 @@
+{
+  "id": "urn:visionflow:page:b43cd165a6da69bec32abb4284b3c870f6bb3ae51b77a8a11a50cd95e239759b",
+  "title": "Remote Pair Programming",
+  "slug": "remote-pair-programming",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:remote-pair-programming",
+  "domain": "distributed-collaboration",
+  "definition": "Remote Pair Programming is a synchronous collaborative software-development practice in which two developers\u2014one acting as **driver** (typing) and one as **navigator** (reviewing, guiding, strategising)\u2014share a single logical programming environment across geographically separated workstations, communicating over an audio-video channel and co-editing code through real-time synchronisation tools such as [[VS Code Live Share]], [[JetBrains Code With Me]], [[Tuple]], or [[tmux]]-based terminal sharing. Originating in Kent Beck's [[Extreme Programming]] methodology (1999), the practice formalises the driver/navigator dyad with regular role rotation (typically every 10-25 minutes using the Pomodoro cadence or test-red-green-refactor cycle) to distribute cognitive load, transfer tacit knowledge, and eliminate single points of failure in codebase understanding. The remote variant overcomes the geographical barrier that prevented distributed teams from exploiting the original co-located technique, at the cost of added latency sensitivity, screen-resolution constraints, and coordination overhead. Empirical research (Williams & Kessler 2000) demonstrated that collocated pairs produce code wi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "id": "urn:visionflow:linked:collaborative-development",
+      "label": "Collaborative Development"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-software-engineering",
+      "label": "Distributed Software Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:pair-programming",
+      "label": "Pair Programming"
+    },
+    {
+      "id": "urn:visionflow:owl:class:synchronous-collaboration",
+      "label": "Synchronous Collaboration"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audio-video-channel",
+        "label": "Audio/Video Channel"
+      },
+      {
+        "id": "urn:visionflow:linked:cursor-synchronisation",
+        "label": "Cursor Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:driver-role",
+        "label": "Driver Role"
+      },
+      {
+        "id": "urn:visionflow:linked:navigator-role",
+        "label": "Navigator Role"
+      },
+      {
+        "id": "urn:visionflow:linked:role-rotation-protocol",
+        "label": "Role Rotation Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:session-recording",
+        "label": "Session Recording"
+      },
+      {
+        "id": "urn:visionflow:linked:shared-code-editor",
+        "label": "Shared Code Editor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:real-time-collaborative-editor",
+        "label": "Real-time Collaborative Editor"
+      },
+      {
+        "id": "urn:visionflow:linked:shared-development-environment",
+        "label": "Shared Development Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:stable-network-connection",
+        "label": "Stable Network Connection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:code-quality-assurance",
+        "label": "Code Quality Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:collective-code-ownership",
+        "label": "Collective Code Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:continuous-learning",
+        "label": "Continuous Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-code-review",
+        "label": "Distributed Code Review"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:onboarding-acceleration",
+        "label": "Onboarding Acceleration"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-debugging",
+        "label": "Real-time Debugging"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:driver-navigator-pattern",
+        "label": "Driver/Navigator Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:extreme-programming",
+        "label": "Extreme Programming"
+      },
+      {
+        "id": "urn:visionflow:linked:mob-programming",
+        "label": "Mob Programming"
+      },
+      {
+        "id": "urn:visionflow:linked:test-driven-development",
+        "label": "Test-Driven Development"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agile-manifesto-2001",
+      "label": "Agile Manifesto (2001)"
+    },
+    {
+      "slug": "agile-manifesto-2001",
+      "label": "Agile Manifesto 2001"
+    },
+    {
+      "slug": "agile-methodology-domain",
+      "label": "AgileMethodologyDomain"
+    },
+    {
+      "slug": "agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "slug": "amazon-q-developer",
+      "label": "Amazon Q Developer"
+    },
+    {
+      "slug": "apple-vision-pro",
+      "label": "Apple Vision Pro"
+    },
+    {
+      "slug": "arisholm-et-al-2007-evaluating-pair-programming",
+      "label": "Arisholm et al. 2007 Evaluating Pair Programming"
+    },
+    {
+      "slug": "asynchronous-code-review",
+      "label": "Asynchronous Code Review"
+    },
+    {
+      "slug": "audio-video-channel",
+      "label": "Audio/Video Channel"
+    },
+    {
+      "slug": "barke-et-al-2023-grounded-copilot",
+      "label": "Barke et al. 2023 Grounded Copilot"
+    },
+    {
+      "slug": "beck-1999-extreme-programming-explained",
+      "label": "Beck 1999 Extreme Programming Explained"
+    },
+    {
+      "slug": "carnegie-mellon-university",
+      "label": "Carnegie Mellon University"
+    },
+    {
+      "slug": "cloud-development-environment",
+      "label": "Cloud Development Environment"
+    },
+    {
+      "slug": "code-quality-assurance",
+      "label": "Code Quality Assurance"
+    },
+    {
+      "slug": "code-review",
+      "label": "Code Review"
+    },
+    {
+      "slug": "code-walkthrough",
+      "label": "Code Walkthrough"
+    },
+    {
+      "slug": "collaborative-development",
+      "label": "Collaborative Development"
+    },
+    {
+      "slug": "collective-code-ownership",
+      "label": "Collective Code Ownership"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "continuous-learning",
+      "label": "Continuous Learning"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "cursor-synchronisation",
+      "label": "Cursor Synchronisation"
+    },
+    {
+      "slug": "dev-ops-practices",
+      "label": "DevOps Practices"
+    },
+    {
+      "slug": "distributed-code-review",
+      "label": "Distributed Code Review"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "DistributedCollaborationDomain"
+    },
+    {
+      "slug": "distributed-software-engineering",
+      "label": "Distributed Software Engineering"
+    },
+    {
+      "slug": "distributed-team-collaboration",
+      "label": "Distributed Team Collaboration"
+    },
+    {
+      "slug": "driver-navigator-pattern",
+      "label": "Driver/Navigator Pattern"
+    },
+    {
+      "slug": "driver-role",
+      "label": "Driver Role"
+    },
+    {
+      "slug": "extreme-programming",
+      "label": "Extreme Programming"
+    },
+    {
+      "slug": "extreme-programming-explained-beck-1999",
+      "label": "Extreme Programming Explained (Beck 1999)"
+    },
+    {
+      "slug": "floobits",
+      "label": "Floobits"
+    },
+    {
+      "slug": "gchq",
+      "label": "GCHQ"
+    },
+    {
+      "slug": "git-hub-codespaces",
+      "label": "GitHub Codespaces"
+    },
+    {
+      "slug": "git-hub-copilot",
+      "label": "GitHub Copilot"
+    },
+    {
+      "slug": "git-hub-copilot-productivity-report-2023",
+      "label": "GitHub Copilot Productivity Report 2023"
+    },
+    {
+      "slug": "handoff-pairing",
+      "label": "Handoff Pairing"
+    },
+    {
+      "slug": "hannay-et-al-2009-effectiveness-of-pair-programming-meta-analysis",
+      "label": "Hannay et al. 2009 Effectiveness of Pair Programming Meta-Analysis"
+    },
+    {
+      "slug": "heiberg-et-al-2007-distributed-pair-programming",
+      "label": "Heiberg et al. 2007 Distributed Pair Programming"
+    },
+    {
+      "slug": "herbsleb-and-moitra-2001-global-software-development",
+      "label": "Herbsleb & Moitra 2001 Global Software Development"
+    },
+    {
+      "slug": "jet-brains-code-with-me",
+      "label": "JetBrains Code With Me"
+    },
+    {
+      "slug": "jet-brains-code-with-me-documentation",
+      "label": "JetBrains Code With Me Documentation"
+    },
+    {
+      "slug": "jet-brains-developer-ecosystem-survey-2024",
+      "label": "JetBrains Developer Ecosystem Survey 2024"
+    },
+    {
+      "slug": "knowledge-transfer",
+      "label": "Knowledge Transfer"
+    },
+    {
+      "slug": "mc-dowell-et-al-2006-pair-programming-student-retention",
+      "label": "McDowell et al. 2006 Pair Programming Student Retention"
+    },
+    {
+      "slug": "mob-programming",
+      "label": "Mob Programming"
+    },
+    {
+      "slug": "mob-sh",
+      "label": "Mob.sh"
+    },
+    {
+      "slug": "mob-sh",
+      "label": "mob.sh"
+    },
+    {
+      "slug": "navigator-role",
+      "label": "Navigator Role"
+    },
+    {
+      "slug": "neovim",
+      "label": "Neovim"
+    },
+    {
+      "slug": "nosek-1998-case-for-collaborative-programming",
+      "label": "Nosek 1998 Case for Collaborative Programming"
+    },
+    {
+      "slug": "onboarding-acceleration",
+      "label": "Onboarding Acceleration"
+    },
+    {
+      "slug": "open-source-development",
+      "label": "Open Source Development"
+    },
+    {
+      "slug": "operational-transformation",
+      "label": "Operational Transformation"
+    },
+    {
+      "slug": "pair-programming",
+      "label": "Pair Programming"
+    },
+    {
+      "slug": "pair-rotation-scheduling",
+      "label": "Pair Rotation Scheduling"
+    },
+    {
+      "slug": "pop-com",
+      "label": "Pop.com"
+    },
+    {
+      "slug": "process-layer",
+      "label": "ProcessLayer"
+    },
+    {
+      "slug": "pull-request-review",
+      "label": "Pull Request Review"
+    },
+    {
+      "slug": "real-time-collaborative-editor",
+      "label": "Real-time Collaborative Editor"
+    },
+    {
+      "slug": "real-time-debugging",
+      "label": "Real-time Debugging"
+    },
+    {
+      "slug": "role-rotation-protocol",
+      "label": "Role Rotation Protocol"
+    },
+    {
+      "slug": "session-recording",
+      "label": "Session Recording"
+    },
+    {
+      "slug": "shared-code-editor",
+      "label": "Shared Code Editor"
+    },
+    {
+      "slug": "shared-development-environment",
+      "label": "Shared Development Environment"
+    },
+    {
+      "slug": "skelton-and-pais-2019-team-topologies",
+      "label": "Skelton & Pais 2019 Team Topologies"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "SoftwareEngineeringDomain"
+    },
+    {
+      "slug": "solo-programming",
+      "label": "Solo Programming"
+    },
+    {
+      "slug": "ssh-tunnelling",
+      "label": "SSH Tunnelling"
+    },
+    {
+      "slug": "stable-network-connection",
+      "label": "Stable Network Connection"
+    },
+    {
+      "slug": "stack-overflow-developer-survey-2024",
+      "label": "Stack Overflow Developer Survey 2024"
+    },
+    {
+      "slug": "supply-chain-security",
+      "label": "Supply Chain Security"
+    },
+    {
+      "slug": "team-coordination-layer",
+      "label": "TeamCoordinationLayer"
+    },
+    {
+      "slug": "team-topologies-skelton-and-pais-2019",
+      "label": "Team Topologies (Skelton & Pais 2019)"
+    },
+    {
+      "slug": "test-driven-development",
+      "label": "Test-Driven Development"
+    },
+    {
+      "slug": "tmate",
+      "label": "tmate"
+    },
+    {
+      "slug": "tmux",
+      "label": "tmux"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "ToolingLayer"
+    },
+    {
+      "slug": "tuple",
+      "label": "Tuple"
+    },
+    {
+      "slug": "tuple-engineering-blog",
+      "label": "Tuple Engineering Blog"
+    },
+    {
+      "slug": "vaithilingam-et-al-2022-expectation-vs-experience-llm-code-tools",
+      "label": "Vaithilingam et al. 2022 Expectation vs Experience LLM Code Tools"
+    },
+    {
+      "slug": "vs-code-live-share",
+      "label": "VS Code Live Share"
+    },
+    {
+      "slug": "vs-code-live-share-documentation",
+      "label": "VS Code Live Share Documentation"
+    },
+    {
+      "slug": "williams-and-kessler-2000-strengthening-the-case-for-pair-programming",
+      "label": "Williams & Kessler 2000 Strengthening the Case for Pair Programming"
+    },
+    {
+      "slug": "windsurf",
+      "label": "Windsurf"
+    },
+    {
+      "slug": "zed",
+      "label": "Zed"
+    },
+    {
+      "slug": "ziegler-et-al-2022-productivity-assessment-neural-code-completion",
+      "label": "Ziegler et al. 2022 Productivity Assessment Neural Code Completion"
+    },
+    {
+      "slug": "zuill-and-hulse-2014-mob-programming",
+      "label": "Zuill & Hulse 2014 Mob Programming"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "synchronous-collaboration",
+      "label": "Synchronous Collaboration"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

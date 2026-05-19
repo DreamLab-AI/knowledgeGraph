@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:6a5d06aa5f758b0964ecdff1a2bda3740f6be61f0b6f3141b5b84ce585b5cb12",
+  "title": "Environmental Certificate",
+  "slug": "environmental-certificate",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-certificate",
+  "domain": "spatial-computing",
+  "definition": "Environmental Certificate is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-offset-certificate",
+      "label": "Carbon Offset Certificate"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:eacb7b3a2789339d048aa861adfd3c557eaf43590f6188d9a6d9d55e101ebae2",
+  "title": "Decision Transparency",
+  "slug": "decision-transparency",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decision-transparency",
+  "domain": "artificial-intelligence",
+  "definition": "Transparency of AI decision-making processes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": []
+}

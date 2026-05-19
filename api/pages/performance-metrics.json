@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:972d6c0a2b227792ea58c7c4618b9182bdd22b0dc87b2566e0a5f82f9bd576f7",
+  "title": "Performance Metrics",
+  "slug": "performance-metrics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:performance-metrics",
+  "domain": "infrastructure",
+  "definition": "PerformanceMetrics is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    }
+  ]
+}

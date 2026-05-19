@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:51c6b58fe01e3812001281ef5b2824e77115772e69d04bb19d1e25c5620c5bd0",
+  "title": "ERC20 Token",
+  "slug": "erc20-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc20-token",
+  "domain": "blockchain",
+  "definition": "A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:fungible-token",
+      "label": "Fungible Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "fungible-token",
+      "label": "Fungible Token"
+    }
+  ],
+  "backlinks": []
+}

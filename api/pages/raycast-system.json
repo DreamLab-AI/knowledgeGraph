@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:61412eee7727e6d99b6b04699829c1d95a7c84ba010de8ceacf11059eb665d8b",
+  "title": "Raycast System",
+  "slug": "raycast-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:raycast-system",
+  "domain": "spatial-computing",
+  "definition": "RaycastSystem is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

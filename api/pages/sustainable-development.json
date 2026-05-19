@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:f60801a6cf1694e4c33e710286ae507dc969033a5f23927684bdb626fb994d8a",
+  "title": "Sustainable Development",
+  "slug": "sustainable-development",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sustainable-development",
+  "domain": "spatial-computing",
+  "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability to meet their own needs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:computational-sustainability",
+        "label": "computational sustainability"
+      },
+      {
+        "id": "urn:visionflow:linked:green-ai",
+        "label": "Green AI"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainable-ai-operations",
+        "label": "sustainable AI operations"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computational-sustainability",
+      "label": "computational sustainability"
+    },
+    {
+      "slug": "green-ai",
+      "label": "Green AI"
+    },
+    {
+      "slug": "sustainable-ai-operations",
+      "label": "sustainable AI operations"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

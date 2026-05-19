@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe",
+  "title": "Digital Ownership",
+  "slug": "digital-ownership",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-ownership",
+  "domain": "spatial-computing",
+  "definition": "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaverse economies. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:property-rights",
+      "label": "Property Rights"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-transfer",
+        "label": "Asset Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:creator-royalties",
+        "label": "Creator Royalties"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-transfer",
+      "label": "Asset Transfer"
+    },
+    {
+      "slug": "creator-royalties",
+      "label": "Creator Royalties"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "property-rights",
+      "label": "Property Rights"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "land-economics",
+      "label": "Land Economics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    }
+  ]
+}

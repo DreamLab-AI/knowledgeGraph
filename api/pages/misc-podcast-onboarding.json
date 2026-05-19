@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:23ee55115b6b3eb8130d8c71913fac59c2b49f3bf3d238d3e9d032bae1b21355",
+  "title": "misc podcast onboarding",
+  "slug": "misc-podcast-onboarding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:misc-podcast-onboarding",
+  "domain": "infrastructure",
+  "definition": "misc podcast onboarding is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

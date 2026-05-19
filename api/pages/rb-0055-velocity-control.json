@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:38ee401236383a484524f0bde6b34e10c70713fb38154da475e5cd9de2116535",
+  "title": "rb 0055 velocity control",
+  "slug": "rb-0055-velocity-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0055-velocity-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-control",
+      "label": "Motion Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

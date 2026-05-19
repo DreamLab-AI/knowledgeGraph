@@ -1,20 +1,290 @@
-iri:: http://narrativegoldmine.com/blockchain#AutonomyLevel
-uri:: urn:visionclaw:concept:blockchain:autonomy-level
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:autonomy-level
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Autonomy Level
-content-hash:: sha256-12-58ede5d16c06
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#AutonomyLevel
+legacy_uri:: urn:visionclaw:concept:blockchain:autonomy-level
 public:: true
+
+# Autonomy Level
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bd61407ad8657bd1118ac265be609bcc72c44ab782aa8da5840020b0c568f46a",
+  "@type": "Page",
+  "vc:slug": "autonomy-level",
+  "title": "Autonomy Level",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:agent-property",
+      "vc:label": "Agent Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:alignment",
+      "vc:label": "Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-21448",
+      "vc:label": "ISO 21448"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust",
+      "vc:label": "Trust"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent",
+      "vc:label": "Agent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bdi-model",
+      "vc:label": "BDI Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:goal",
+      "vc:label": "Goal"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-in-the-loop",
+      "vc:label": "Human in the Loop"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:objective",
+      "vc:label": "Objective"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety",
+      "vc:label": "Safety"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-58ede5d16c06"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#AutonomyLevel"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Autonomy Level"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:autonomy-level"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:autonomy-level"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bd61407ad8657bd1118ac265be609bcc72c44ab782aa8da5840020b0c568f46a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:autonomy-level",
+  "@type": "OntologyClass",
+  "label": "Autonomy Level",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:bd61407ad8657bd1118ac265be609bcc72c44ab782aa8da5840020b0c568f46a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bd61407ad8657bd1118ac265be609bcc72c44ab782aa8da5840020b0c568f46a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Autonomy Level is a concept within the bc domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:autonomy-level:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:bd61407ad8657bd1118ac265be609bcc72c44ab782aa8da5840020b0c568f46a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Agent Property]]",
+      "resolved": "urn:visionflow:linked:agent-property",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alignment]]",
+      "resolved": "urn:visionflow:linked:alignment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 21448]]",
+      "resolved": "urn:visionflow:linked:iso-21448",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trust]]",
+      "resolved": "urn:visionflow:linked:trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent]]",
+      "resolved": "urn:visionflow:owl:class:agent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BDI Model]]",
+      "resolved": "urn:visionflow:owl:class:bdi-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Goal]]",
+      "resolved": "urn:visionflow:owl:class:goal",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human in the Loop]]",
+      "resolved": "urn:visionflow:owl:class:human-in-the-loop",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Objective]]",
+      "resolved": "urn:visionflow:owl:class:objective",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Safety]]",
+      "resolved": "urn:visionflow:owl:class:safety",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bd61407ad8657bd1118ac265be609bcc72c44ab782aa8da5840020b0c568f46a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Autonomy Level is a concept within the bc domain.
@@ -389,7 +659,7 @@ public:: true
   - [[Agent]] (DT-1008) - Entity exhibiting autonomy
   - [[Goal]] (DT-1010) - What autonomous agents pursue
   - [[BDI Model]] (DT-1012) - Architecture for autonomous reasoning
-  - [[Human-in-the-Loop]] - Counterpoint to full autonomy
+  - [[Human in the Loop]] - Counterpoint to full autonomy
   - [[Trust]] - Required for accepting agent autonomy
   - [[Alignment]] - Ensuring autonomous agents serve human values
 
@@ -435,7 +705,7 @@ public:: true
 
   ---
 
-  **See Also**: [[Agent]], [[Goal]], [[Objective]], [[BDI Model]], [[Human-in-the-Loop]], [[Trust]], [[Safety]]
+  **See Also**: [[Agent]], [[Goal]], [[Objective]], [[BDI Model]], [[Human in the Loop]], [[Trust]], [[Safety]]
 
   ### Relationships
   - is-subclass-of:: [[Blockchain]]

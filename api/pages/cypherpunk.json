@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:7e5b152ccc48870ecf9d26552a06bc34a850179ff429618e08950e1ec70475e0",
+  "title": "cypherpunk",
+  "slug": "cypherpunk",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cypherpunk",
+  "domain": "blockchain",
+  "definition": "cypherpunk is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dr-o-hare-writing-for-log-seq",
+      "label": "Dr O'Hare Writing for LogSeq"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

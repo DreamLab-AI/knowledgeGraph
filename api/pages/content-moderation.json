@@ -1,0 +1,223 @@
+{
+  "id": "urn:visionflow:page:a9913f9ef85e5399ec3870d193f830e643b7a6daee3b5ba3bddb35b7e2d880bc",
+  "title": "Content Moderation",
+  "slug": "content-moderation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:content-moderation",
+  "domain": "artificial-intelligence",
+  "definition": "A systematic process or system for reviewing, filtering, and managing user-generated content to enforce community standards, legal requirements, and platform policies while balancing freedom of expression with safety and compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:appeal-process",
+        "label": "Appeal Process"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-filtering",
+        "label": "Automated Filtering"
+      },
+      {
+        "id": "urn:visionflow:linked:content-classification-system",
+        "label": "Content Classification System"
+      },
+      {
+        "id": "urn:visionflow:linked:human-review-workflow",
+        "label": "Human Review Workflow"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-enforcement-engine",
+        "label": "Policy Enforcement Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-analysis-tools",
+        "label": "Content Analysis Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:moderation-policy",
+        "label": "Moderation Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:reviewer-training-program",
+        "label": "Reviewer Training Program"
+      },
+      {
+        "id": "urn:visionflow:owl:class:community-standards",
+        "label": "Community Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:community-guidelines-enforcement",
+        "label": "Community Guidelines Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:harmful-content-prevention",
+        "label": "Harmful Content Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-user-experience",
+        "label": "Safe User Experience"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "appeal-process",
+      "label": "Appeal Process"
+    },
+    {
+      "slug": "automated-filtering",
+      "label": "Automated Filtering"
+    },
+    {
+      "slug": "community-guidelines-enforcement",
+      "label": "Community Guidelines Enforcement"
+    },
+    {
+      "slug": "content-analysis-tools",
+      "label": "Content Analysis Tools"
+    },
+    {
+      "slug": "content-classification-system",
+      "label": "Content Classification System"
+    },
+    {
+      "slug": "decision-framework",
+      "label": "Decision Framework"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "harmful-content-prevention",
+      "label": "Harmful Content Prevention"
+    },
+    {
+      "slug": "human-moderators",
+      "label": "Human Moderators"
+    },
+    {
+      "slug": "human-review-workflow",
+      "label": "Human Review Workflow"
+    },
+    {
+      "slug": "moderation-policy",
+      "label": "Moderation Policy"
+    },
+    {
+      "slug": "platform-governance-system",
+      "label": "Platform Governance System"
+    },
+    {
+      "slug": "policy-enforcement-engine",
+      "label": "Policy Enforcement Engine"
+    },
+    {
+      "slug": "reporting-system",
+      "label": "Reporting System"
+    },
+    {
+      "slug": "reviewer-training-program",
+      "label": "Reviewer Training Program"
+    },
+    {
+      "slug": "safe-user-experience",
+      "label": "Safe User Experience"
+    },
+    {
+      "slug": "trust-and-safety-infrastructure",
+      "label": "Trust and Safety Infrastructure"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "toxicity-detection",
+      "label": "Toxicity Detection"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

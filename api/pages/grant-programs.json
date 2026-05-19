@@ -1,0 +1,228 @@
+{
+  "id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c",
+  "title": "Grant Programs",
+  "slug": "grant-programs",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:grant-programs",
+  "domain": "blockchain",
+  "definition": "Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth billions to ecosystem development, public goods funding, protocol research, and community initiatives\u2014ranging from prospective grants (Uniswap $74M) to retroactive public goods funding ([[Optimism]] $30M) to innovative quadratic funding mechanisms ([[Gitcoin]] $50M+).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub-needs-content",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "1-hive",
+      "label": "1Hive"
+    },
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "allo-protocol",
+      "label": "Allo Protocol"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "balancer",
+      "label": "Balancer"
+    },
+    {
+      "slug": "bc-0410-decentralised-autonomous-organisations",
+      "label": "BC-0410-decentralised-autonomous-organisations"
+    },
+    {
+      "slug": "bc-0411-dao-governance-models",
+      "label": "BC-0411-dao-governance-models"
+    },
+    {
+      "slug": "bc-0462-treasury-management",
+      "label": "BC-0462-treasury-management"
+    },
+    {
+      "slug": "bc-0469-governance-tokens",
+      "label": "BC-0469-governance-tokens"
+    },
+    {
+      "slug": "bc-0471-tokenomics-governance",
+      "label": "BC-0471-tokenomics-governance"
+    },
+    {
+      "slug": "bc-0472-dao-tooling",
+      "label": "BC-0472-dao-tooling"
+    },
+    {
+      "slug": "bc-0473-delegate-democracy",
+      "label": "BC-0473-delegate-democracy"
+    },
+    {
+      "slug": "bc-0475-dao-analytics",
+      "label": "BC-0475-dao-analytics"
+    },
+    {
+      "slug": "camelot",
+      "label": "Camelot"
+    },
+    {
+      "slug": "compound",
+      "label": "Compound"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "ethereum-js",
+      "label": "EthereumJS"
+    },
+    {
+      "slug": "ethers-js",
+      "label": "Ethers.js"
+    },
+    {
+      "slug": "foundry",
+      "label": "Foundry"
+    },
+    {
+      "slug": "geth",
+      "label": "Geth"
+    },
+    {
+      "slug": "gitcoin",
+      "label": "Gitcoin"
+    },
+    {
+      "slug": "gitcoin-passport",
+      "label": "Gitcoin Passport"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "hypercerts",
+      "label": "Hypercerts"
+    },
+    {
+      "slug": "lighthouse",
+      "label": "Lighthouse"
+    },
+    {
+      "slug": "metagov",
+      "label": "Metagov"
+    },
+    {
+      "slug": "nethermind",
+      "label": "Nethermind"
+    },
+    {
+      "slug": "nimbus",
+      "label": "Nimbus"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "protocol-guild",
+      "label": "Protocol Guild"
+    },
+    {
+      "slug": "prysm",
+      "label": "Prysm"
+    },
+    {
+      "slug": "radiant-capital",
+      "label": "Radiant Capital"
+    },
+    {
+      "slug": "sablier",
+      "label": "Sablier"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "superfluid",
+      "label": "Superfluid"
+    },
+    {
+      "slug": "synthetix",
+      "label": "Synthetix"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "vertex-protocol",
+      "label": "Vertex Protocol"
+    },
+    {
+      "slug": "vyper",
+      "label": "Vyper"
+    },
+    {
+      "slug": "wallet-connect",
+      "label": "WalletConnect"
+    },
+    {
+      "slug": "web3-py",
+      "label": "Web3.py"
+    },
+    {
+      "slug": "yearn",
+      "label": "Yearn"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    }
+  ]
+}

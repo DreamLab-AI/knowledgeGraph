@@ -1,0 +1,178 @@
+{
+  "id": "urn:visionflow:page:4fcbb3499279a2fda35c49bf21daafcbd4f21e3fc05e272030005e1e91d8b1d2",
+  "title": "Synthetic Data Generator",
+  "slug": "synthetic-data-generator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:synthetic-data-generator",
+  "domain": "spatial-computing",
+  "definition": "AI-powered system that produces artificial datasets preserving statistical properties and structural characteristics of original data while protecting privacy and enabling testing scenarios.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-simulator",
+        "label": "Data Simulator"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-validator",
+        "label": "Privacy Validator"
+      },
+      {
+        "id": "urn:visionflow:linked:statistical-analyzer",
+        "label": "Statistical Analyzer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:privacy-metrics",
+        "label": "Privacy Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:statistical-models",
+        "label": "Statistical Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:testing-dataset-creation",
+        "label": "Testing Dataset Creation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-preserving-data-sharing",
+        "label": "Privacy-Preserving Data Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-pipeline",
+      "label": "AI Pipeline"
+    },
+    {
+      "slug": "ailayer",
+      "label": "AILayer"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "data-management-platform",
+      "label": "Data Management Platform"
+    },
+    {
+      "slug": "data-simulator",
+      "label": "Data Simulator"
+    },
+    {
+      "slug": "ieee-p2048-9",
+      "label": "IEEE P2048-9"
+    },
+    {
+      "slug": "iso-iec-5259",
+      "label": "ISO/IEC 5259"
+    },
+    {
+      "slug": "oecd-ai",
+      "label": "OECD AI"
+    },
+    {
+      "slug": "privacy-metrics",
+      "label": "Privacy Metrics"
+    },
+    {
+      "slug": "privacy-validator",
+      "label": "Privacy Validator"
+    },
+    {
+      "slug": "statistical-analyzer",
+      "label": "Statistical Analyzer"
+    },
+    {
+      "slug": "statistical-models",
+      "label": "Statistical Models"
+    },
+    {
+      "slug": "testing-dataset-creation",
+      "label": "Testing Dataset Creation"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "machine-learning-framework",
+      "label": "Machine Learning Framework"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "privacy-preserving-data-sharing",
+      "label": "Privacy-Preserving Data Sharing"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": []
+}

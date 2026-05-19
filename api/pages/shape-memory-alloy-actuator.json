@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:08e0ad201e95f918d025fc55091de1f197b7ae82237fbeec49dbc39ade422836",
+  "title": "Shape Memory Alloy Actuator",
+  "slug": "shape-memory-alloy-actuator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shape-memory-alloy-actuator",
+  "domain": "robotics",
+  "definition": "Soft robotics actuator using shape memory alloys that change shape when heated, enabling lightweight and compact actuation for compliant robots.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "materials-science",
+      "label": "Materials Science"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

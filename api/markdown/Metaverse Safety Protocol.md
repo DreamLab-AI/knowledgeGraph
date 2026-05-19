@@ -1,24 +1,419 @@
-iri:: http://narrativegoldmine.com/spatial-computing#MetaverseSafetyProtocol
-uri:: urn:visionclaw:concept:spatial-computing:metaverse-safety-protocol
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:metaverse-safety-protocol
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Metaverse Safety Protocol
-content-hash:: sha256-12-5397a7ccd2ec
-legacy-term-id:: MV-20188
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#MetaverseSafetyProtocol
+legacy_uri:: urn:visionclaw:concept:spatial-computing:metaverse-safety-protocol
 public:: true
+
+# Metaverse Safety Protocol
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797",
+  "@type": "Page",
+  "vc:slug": "metaverse-safety-protocol",
+  "title": "Metaverse Safety Protocol",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:etsi-eni-008",
+      "vc:label": "ETSI ENI 008"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-vr-safety",
+      "vc:label": "IEEE VR Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-response-protocol",
+      "vc:label": "Incident Response Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-45003",
+      "vc:label": "ISO 45003"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment-procedure",
+      "vc:label": "Risk Assessment Procedure"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-assessment",
+      "vc:label": "Safety Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-guideline",
+      "vc:label": "Safety Guideline"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-standard",
+      "vc:label": "Safety Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-monitoring",
+      "vc:label": "User Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-protection-measure",
+      "vc:label": "User Protection Measure"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-well-being",
+      "vc:label": "User Well-being"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "Compute Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-moderation",
+      "vc:label": "Content Moderation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "Data Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-framework",
+      "vc:label": "Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "Middleware Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-layer",
+      "vc:label": "Network Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-mitigation",
+      "vc:label": "Risk Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safe-immersive-experience",
+      "vc:label": "Safe Immersive Experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5397a7ccd2ec"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#MetaverseSafetyProtocol"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-20188"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Metaverse Safety Protocol"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-safety-protocol"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-safety-protocol"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:metaverse-safety-protocol",
+  "@type": "OntologyClass",
+  "label": "Metaverse Safety Protocol",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "vc:label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Procedures and safeguards ensuring physical and psychological safety of users during immersive metaverse experiences.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:safety-standard",
+      "vc:label": "Safety Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-framework",
+      "vc:label": "Governance Framework"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:incident-response-protocol",
+      "vc:label": "Incident Response Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment-procedure",
+      "vc:label": "Risk Assessment Procedure"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-guideline",
+      "vc:label": "Safety Guideline"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-protection-measure",
+      "vc:label": "User Protection Measure"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:safety-assessment",
+      "vc:label": "Safety Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-monitoring",
+      "vc:label": "User Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-moderation",
+      "vc:label": "Content Moderation"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:user-well-being",
+      "vc:label": "User Well-being"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-mitigation",
+      "vc:label": "Risk Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safe-immersive-experience",
+      "vc:label": "Safe Immersive Experience"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-safety-protocol:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ETSI ENI 008]]",
+      "resolved": "urn:visionflow:linked:etsi-eni-008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE VR Safety]]",
+      "resolved": "urn:visionflow:linked:ieee-vr-safety",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Incident Response Protocol]]",
+      "resolved": "urn:visionflow:linked:incident-response-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 45003]]",
+      "resolved": "urn:visionflow:linked:iso-45003",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risk Assessment Procedure]]",
+      "resolved": "urn:visionflow:linked:risk-assessment-procedure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Assessment]]",
+      "resolved": "urn:visionflow:linked:safety-assessment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Guideline]]",
+      "resolved": "urn:visionflow:linked:safety-guideline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Standard]]",
+      "resolved": "urn:visionflow:linked:safety-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Monitoring]]",
+      "resolved": "urn:visionflow:linked:user-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Protection Measure]]",
+      "resolved": "urn:visionflow:linked:user-protection-measure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Well-being]]",
+      "resolved": "urn:visionflow:linked:user-well-being",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compute Layer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Content Moderation]]",
+      "resolved": "urn:visionflow:owl:class:content-moderation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Layer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Governance Framework]]",
+      "resolved": "urn:visionflow:owl:class:governance-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Middleware Layer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Layer]]",
+      "resolved": "urn:visionflow:owl:class:network-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Mitigation]]",
+      "resolved": "urn:visionflow:owl:class:risk-mitigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Safe Immersive Experience]]",
+      "resolved": "urn:visionflow:owl:class:safe-immersive-experience",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Procedures and safeguards ensuring physical and psychological safety of users during immersive metaverse experiences.

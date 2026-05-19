@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:755c0cac59671cb871ebd772c92284c2558adf88c3f0612d35e8a89e36191508",
+  "title": "Hardware Resources",
+  "slug": "hardware-resources",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hardware-resources",
+  "domain": "spatial-computing",
+  "definition": "The physical computing infrastructure required for metaverse access and operation, encompassing VR/AR headsets, computing devices, display technologies, tracking sensors, and connectivity hardware that collectively enable immersive virtual experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:metaverse-access",
+        "label": "Metaverse Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-access",
+      "label": "Metaverse Access"
+    },
+    {
+      "slug": "computing-infrastructure",
+      "label": "Computing Infrastructure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    }
+  ]
+}

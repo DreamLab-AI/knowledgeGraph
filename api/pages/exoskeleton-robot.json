@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337",
+  "title": "Exoskeleton Robot",
+  "slug": "exoskeleton-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:exoskeleton-robot",
+  "domain": "robotics",
+  "definition": "**Exoskeleton Robot** - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:wearable-robotics",
+      "label": "Wearable Robotics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.57,
+  "authorityScore": 0.14,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:real-time-control",
+        "label": "Real-time Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accessibility-in-harsh-environments",
+        "label": "Accessibility in Harsh Environments"
+      },
+      {
+        "id": "urn:visionflow:linked:injury-prevention",
+        "label": "Injury Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:worker-productivity",
+        "label": "Worker Productivity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-in-harsh-environments",
+      "label": "Accessibility in Harsh Environments"
+    },
+    {
+      "slug": "human-augmentation-system",
+      "label": "Human Augmentation System"
+    },
+    {
+      "slug": "injury-prevention",
+      "label": "Injury Prevention"
+    },
+    {
+      "slug": "joint-support",
+      "label": "Joint Support"
+    },
+    {
+      "slug": "occupational-safety-equipment",
+      "label": "Occupational Safety Equipment"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real-time Control"
+    },
+    {
+      "slug": "wearable-robotics",
+      "label": "Wearable Robotics"
+    },
+    {
+      "slug": "worker-productivity",
+      "label": "Worker Productivity"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lower-limb-exoskeleton",
+      "label": "Lower Limb Exoskeleton"
+    }
+  ]
+}

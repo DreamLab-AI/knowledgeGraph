@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:3650529b0f27b1fb1c5998367196a1151101dfaa250ca384000014497c3c70e1",
+  "title": "Machine Learning Pipeline",
+  "slug": "machine-learning-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:machine-learning-pipeline",
+  "domain": "artificial-intelligence",
+  "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring. Modern pipelines adopt MLOps practices with automated orchestration (Airflow, Kubeflow), versioning (DVC, MLflow), experiment tracking, A/B testing, and model retraining triggers. Pipelines ensure reproducibility, scalability, and maintainability of ML systems in production environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "experiment-tracking",
+      "label": "Experiment Tracking"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    }
+  ]
+}

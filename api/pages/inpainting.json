@@ -1,0 +1,576 @@
+{
+  "id": "urn:visionflow:page:1e5afe6e9c647a30f51380037f6280e5a9310f7da8bdbb6a6724734a3dba02d7",
+  "title": "Inpainting",
+  "slug": "inpainting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inpainting",
+  "domain": "artificial-intelligence",
+  "definition": "Inpainting is the computational task of plausibly reconstructing missing, occluded, masked or unwanted regions of an image or video so the completed output appears coherent with the surrounding (known) context, originally formalised in the digital domain by Bertalmio, Sapiro, Caselles and Ballester (SIGGRAPH 2000) as a partial-differential-equation (PDE) problem that propagates isophote lines from the boundary of a hole inward via anisotropic diffusion of intensity (a Navier-Stokes-inspired transport process subsequently re-derived by Bertalmio, Bertozzi and Sapiro 2001 as a streamfunction-vorticity coupling between image gradient and Laplacian), evolving over the next two decades through exemplar-based and patch-synthesis methods (Criminisi, P\u00e9rez and Toyama CVPR 2003/PAMI 2004 introducing a priority-driven greedy patch-copy schedule that propagates structure before texture by ranking boundary patches by a confidence \u00d7 data term; Drori, Cohen-Or and Yeshurun 2003 fragment-based completion; PatchMatch by Barnes, Shechtman, Finkelstein and Goldman SIGGRAPH 2009 introducing a randomised approximate nearest-neighbour-field algorithm that achieved order-of-magnitude speed-ups and becam",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:conditional-image-synthesis",
+      "label": "Conditional Image Synthesis"
+    },
+    {
+      "id": "urn:visionflow:linked:image-editing",
+      "label": "Image Editing"
+    },
+    {
+      "id": "urn:visionflow:linked:image-restoration",
+      "label": "Image Restoration"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision-task",
+      "label": "Computer Vision Task"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conditioning-encoder",
+        "label": "Conditioning Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:context-region",
+        "label": "Context Region"
+      },
+      {
+        "id": "urn:visionflow:linked:generator-network",
+        "label": "Generator Network"
+      },
+      {
+        "id": "urn:visionflow:linked:mask",
+        "label": "Mask"
+      },
+      {
+        "id": "urn:visionflow:linked:sampling-procedure",
+        "label": "Sampling Procedure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:mask-specification",
+        "label": "Mask Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:pretrained-generative-prior",
+        "label": "Pretrained Generative Prior"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-distribution",
+        "label": "Training Data Distribution"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:disocclusion",
+        "label": "Disocclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:garment-removal",
+        "label": "Garment Removal"
+      },
+      {
+        "id": "urn:visionflow:linked:generative-fill",
+        "label": "Generative Fill"
+      },
+      {
+        "id": "urn:visionflow:linked:object-removal",
+        "label": "Object Removal"
+      },
+      {
+        "id": "urn:visionflow:linked:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:visionflow:linked:photo-restoration",
+        "label": "Photo Restoration"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-completion",
+        "label": "Scene Completion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:conditional-generation",
+        "label": "Conditional Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-reverse-process",
+        "label": "Diffusion Reverse Process"
+      },
+      {
+        "id": "urn:visionflow:linked:patch-synthesis",
+        "label": "Patch Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:pde-anisotropic-diffusion",
+        "label": "PDE Anisotropic Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "apple-intelligence",
+      "label": "Apple Intelligence"
+    },
+    {
+      "slug": "barnes-shechtman-finkelstein-goldman-2009-patch-match",
+      "label": "Barnes Shechtman Finkelstein Goldman 2009 PatchMatch"
+    },
+    {
+      "slug": "bertalmio-bertozzi-sapiro-2001-navier-stokes-inpainting",
+      "label": "Bertalmio Bertozzi Sapiro 2001 Navier-Stokes Inpainting"
+    },
+    {
+      "slug": "bertalmio-sapiro-caselles-ballester-2000-image-inpainting-siggraph",
+      "label": "Bertalmio Sapiro Caselles Ballester 2000 Image Inpainting SIGGRAPH"
+    },
+    {
+      "slug": "black-forest-labs-2024-flux-1-fill-tools",
+      "label": "Black Forest Labs 2024 Flux.1 Fill Tools"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "chan-shen-2001-mathematical-models-for-local-non-texture-inpaintings",
+      "label": "Chan Shen 2001 Mathematical Models for Local Non-Texture Inpaintings"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clone-stamp-tool",
+      "label": "Clone Stamp Tool"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "conditional-generation",
+      "label": "Conditional Generation"
+    },
+    {
+      "slug": "conditional-image-synthesis",
+      "label": "Conditional Image Synthesis"
+    },
+    {
+      "slug": "conditioning-encoder",
+      "label": "Conditioning Encoder"
+    },
+    {
+      "slug": "context-region",
+      "label": "Context Region"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "criminisi-perez-toyama-2004-exemplar-based-inpainting",
+      "label": "Criminisi Perez Toyama 2004 Exemplar-Based Inpainting"
+    },
+    {
+      "slug": "cultural-heritage-restoration",
+      "label": "Cultural Heritage Restoration"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "differentiable-architecture",
+      "label": "Differentiable Architecture"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-reverse-process",
+      "label": "Diffusion Reverse Process"
+    },
+    {
+      "slug": "digital-forensics",
+      "label": "Digital Forensics"
+    },
+    {
+      "slug": "disocclusion",
+      "label": "Disocclusion"
+    },
+    {
+      "slug": "eccv",
+      "label": "ECCV"
+    },
+    {
+      "slug": "fourier-convolution",
+      "label": "Fourier Convolution"
+    },
+    {
+      "slug": "garment-removal",
+      "label": "Garment Removal"
+    },
+    {
+      "slug": "gated-convolution",
+      "label": "Gated Convolution"
+    },
+    {
+      "slug": "generative-fill",
+      "label": "Generative Fill"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "generator-network",
+      "label": "Generator Network"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "iccv",
+      "label": "ICCV"
+    },
+    {
+      "slug": "iizuka-simo-serra-ishikawa-2017-globally-locally-consistent-image-completion",
+      "label": "Iizuka Simo-Serra Ishikawa 2017 Globally Locally Consistent Image Completion"
+    },
+    {
+      "slug": "image-denoising",
+      "label": "Image Denoising"
+    },
+    {
+      "slug": "image-editing",
+      "label": "Image Editing"
+    },
+    {
+      "slug": "image-processing-domain",
+      "label": "ImageProcessingDomain"
+    },
+    {
+      "slug": "image-restoration",
+      "label": "Image Restoration"
+    },
+    {
+      "slug": "iwf-2024-ai-csam-october-update",
+      "label": "IWF 2024 AI CSAM October Update"
+    },
+    {
+      "slug": "ju-et-al-2024-brush-net-eccv",
+      "label": "Ju et al 2024 BrushNet ECCV"
+    },
+    {
+      "slug": "li-et-al-2022-e2-fgvi-flow-guided-video-inpainting",
+      "label": "Li et al 2022 E2FGVI Flow-Guided Video Inpainting"
+    },
+    {
+      "slug": "li-et-al-2022-mat-mask-aware-transformer",
+      "label": "Li et al 2022 MAT Mask-Aware Transformer"
+    },
+    {
+      "slug": "liu-reda-shih-wang-tao-catanzaro-2018-partial-convolutions",
+      "label": "Liu Reda Shih Wang Tao Catanzaro 2018 Partial Convolutions"
+    },
+    {
+      "slug": "lugmayr-et-al-2022-re-paint-diffusion-inpainting",
+      "label": "Lugmayr et al 2022 RePaint Diffusion Inpainting"
+    },
+    {
+      "slug": "manukyan-et-al-2024-hd-painter-picsart",
+      "label": "Manukyan et al 2024 HD-Painter Picsart"
+    },
+    {
+      "slug": "mask",
+      "label": "Mask"
+    },
+    {
+      "slug": "mask-specification",
+      "label": "Mask Specification"
+    },
+    {
+      "slug": "medical-image-reconstruction",
+      "label": "Medical Image Reconstruction"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "nazeri-et-al-2019-edge-connect",
+      "label": "Nazeri et al 2019 EdgeConnect"
+    },
+    {
+      "slug": "ncmec-2024-cyber-tipline-report",
+      "label": "NCMEC 2024 CyberTipline Report"
+    },
+    {
+      "slug": "object-removal",
+      "label": "Object Removal"
+    },
+    {
+      "slug": "outpainting",
+      "label": "Outpainting"
+    },
+    {
+      "slug": "partial-convolution",
+      "label": "Partial Convolution"
+    },
+    {
+      "slug": "patch-synthesis",
+      "label": "Patch Synthesis"
+    },
+    {
+      "slug": "pathak-krahenbuhl-donahue-darrell-efros-2016-context-encoders",
+      "label": "Pathak Krahenbuhl Donahue Darrell Efros 2016 Context Encoders"
+    },
+    {
+      "slug": "pde-anisotropic-diffusion",
+      "label": "PDE Anisotropic Diffusion"
+    },
+    {
+      "slug": "photo-editing-software",
+      "label": "Photo Editing Software"
+    },
+    {
+      "slug": "photo-restoration",
+      "label": "Photo Restoration"
+    },
+    {
+      "slug": "pretrained-generative-prior",
+      "label": "Pretrained Generative Prior"
+    },
+    {
+      "slug": "quan-et-al-2024-image-inpainting-review",
+      "label": "Quan et al 2024 Image Inpainting Review"
+    },
+    {
+      "slug": "rombach-et-al-2022-stable-diffusion",
+      "label": "Rombach et al 2022 Stable Diffusion"
+    },
+    {
+      "slug": "sampling-procedure",
+      "label": "Sampling Procedure"
+    },
+    {
+      "slug": "scene-completion",
+      "label": "Scene Completion"
+    },
+    {
+      "slug": "siggraph",
+      "label": "SIGGRAPH"
+    },
+    {
+      "slug": "suvorov-et-al-2022-la-ma-fourier-inpainting",
+      "label": "Suvorov et al 2022 LaMa Fourier Inpainting"
+    },
+    {
+      "slug": "telea-2004-fast-marching-inpainting",
+      "label": "Telea 2004 Fast Marching Inpainting"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "training-data-distribution",
+      "label": "Training Data Distribution"
+    },
+    {
+      "slug": "uk-cps-2024-ai-csam-guidance",
+      "label": "UK CPS 2024 AI-CSAM Guidance"
+    },
+    {
+      "slug": "uk-online-safety-act",
+      "label": "UK Online Safety Act"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "video-post-production",
+      "label": "Video Post-Production"
+    },
+    {
+      "slug": "wan-et-al-2020-bringing-old-photos-back-to-life",
+      "label": "Wan et al 2020 Bringing Old Photos Back to Life"
+    },
+    {
+      "slug": "wang-bovik-sheikh-simoncelli-2004-ssim",
+      "label": "Wang Bovik Sheikh Simoncelli 2004 SSIM"
+    },
+    {
+      "slug": "wexler-shechtman-irani-2007-space-time-video-completion",
+      "label": "Wexler Shechtman Irani 2007 Space-Time Video Completion"
+    },
+    {
+      "slug": "yu-et-al-2018-deep-fillv1-contextual-attention",
+      "label": "Yu et al 2018 DeepFillv1 Contextual Attention"
+    },
+    {
+      "slug": "yu-et-al-2019-deep-fillv2-gated-convolutions",
+      "label": "Yu et al 2019 DeepFillv2 Gated Convolutions"
+    },
+    {
+      "slug": "zeng-fu-chao-2020-sttn-video-inpainting",
+      "label": "Zeng Fu Chao 2020 STTN Video Inpainting"
+    },
+    {
+      "slug": "zhang-isola-efros-shechtman-wang-2018-lpips",
+      "label": "Zhang Isola Efros Shechtman Wang 2018 LPIPS"
+    },
+    {
+      "slug": "zhang-rao-agrawala-2023-control-net",
+      "label": "Zhang Rao Agrawala 2023 ControlNet"
+    },
+    {
+      "slug": "zhou-li-chan-loy-2023-pro-painter",
+      "label": "Zhou Li Chan Loy 2023 ProPainter"
+    },
+    {
+      "slug": "zhuang-et-al-2024-power-paint-eccv",
+      "label": "Zhuang et al 2024 PowerPaint ECCV"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computer-vision-task",
+      "label": "Computer Vision Task"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "super-resolution",
+      "label": "Super Resolution"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

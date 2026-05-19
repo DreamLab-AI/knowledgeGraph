@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:1fef797ecc620c1dc485f12a786c808132cbd059c853773dcc2fc7f4d90f1d82",
+  "title": "AIOps",
+  "slug": "aiops",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:aiops",
+  "domain": "artificial-intelligence",
+  "definition": "AIOps is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": []
+}

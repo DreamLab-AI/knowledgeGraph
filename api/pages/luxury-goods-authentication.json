@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa",
+  "title": "Luxury Goods Authentication",
+  "slug": "luxury-goods-authentication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:luxury-goods-authentication",
+  "domain": "blockchain",
+  "definition": "Blockchain technology addressing the \u00a3400-450 billion global counterfeit luxury market (10% of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated. LVMH's Aura Blockchain Consortium (Prada Group, Cartier, Mercedes-Benz) has registered millions of luxury products, demonstrating that blockchain authentication increases purchase confidence (65-70% of consumers report higher willingness to purchase authenticated products) whilst enabling the rapidly growing \u00a330-35 billion secondary luxury market where 20-30% of goods may be counterfeit, with blockchain-verified products commanding 8-12% premiums over non-certified equivalents.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.9,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "arianee",
+      "label": "Arianee"
+    },
+    {
+      "slug": "bc-0013-smart-contracts",
+      "label": "BC-0013-smart-contracts"
+    },
+    {
+      "slug": "bc-0023-zero-knowledge-proofs",
+      "label": "BC-0023-zero-knowledge-proofs"
+    },
+    {
+      "slug": "bc-0029-permissioned-blockchain",
+      "label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0066-ethereum",
+      "label": "BC-0066-ethereum"
+    },
+    {
+      "slug": "bc-0197-non-fungible-tokens",
+      "label": "BC-0197-non-fungible-tokens"
+    },
+    {
+      "slug": "bc-0214-environmental-sustainability",
+      "label": "BC-0214-environmental-sustainability"
+    },
+    {
+      "slug": "bc-0432-consortium-blockchain",
+      "label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "slug": "bc-0434-blockchain-as-a-service",
+      "label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "slug": "bc-0441-provenance-tracking",
+      "label": "BC-0441-provenance-tracking"
+    },
+    {
+      "slug": "consen-sys",
+      "label": "ConsenSys"
+    },
+    {
+      "slug": "de-beers-tracr",
+      "label": "De Beers Tracr"
+    },
+    {
+      "slug": "entrupy",
+      "label": "Entrupy"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "otis",
+      "label": "Otis"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "rally",
+      "label": "Rally"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": []
+}

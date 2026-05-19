@@ -1,0 +1,138 @@
+{
+  "id": "urn:visionflow:page:f5d40044dcbc11c9869c0b7cde93510877db91c199503310882bbbfd44ce5592",
+  "title": "Odometry",
+  "slug": "odometry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:odometry",
+  "domain": "robotics",
+  "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.94,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:motion-sensors",
+        "label": "Motion Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rb-1013-localization",
+        "label": "RB-1013-localization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cumulative-error",
+      "label": "Cumulative Error"
+    },
+    {
+      "slug": "drift",
+      "label": "Drift"
+    },
+    {
+      "slug": "imu",
+      "label": "IMU"
+    },
+    {
+      "slug": "measurement-errors",
+      "label": "Measurement Errors"
+    },
+    {
+      "slug": "mobile-robotics",
+      "label": "Mobile Robotics"
+    },
+    {
+      "slug": "motion-sensors",
+      "label": "Motion Sensors"
+    },
+    {
+      "slug": "rb-1015-kalman-filter",
+      "label": "RB-1015-kalman-filter"
+    },
+    {
+      "slug": "relative-positioning",
+      "label": "Relative Positioning"
+    },
+    {
+      "slug": "robot-pose",
+      "label": "Robot Pose"
+    },
+    {
+      "slug": "visual-sensors",
+      "label": "Visual Sensors"
+    },
+    {
+      "slug": "wheel-slip",
+      "label": "Wheel Slip"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB-1013-localization"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

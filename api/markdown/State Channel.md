@@ -1,21 +1,327 @@
-iri:: http://narrativegoldmine.com/blockchain#StateChannel
-uri:: urn:visionclaw:concept:blockchain:state-channel
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:state-channel
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: State Channel
-content-hash:: sha256-12-3e1aa0fc1512
-legacy-term-id:: BC-8017
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#StateChannel
+legacy_uri:: urn:visionclaw:concept:blockchain:state-channel
 public:: true
+
+# State Channel
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5",
+  "@type": "Page",
+  "vc:slug": "state-channel",
+  "title": "State Channel",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:connext",
+      "vc:label": "Connext"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2",
+      "vc:label": "Layer 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:off-chain-scaling",
+      "vc:label": "Off-Chain Scaling"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimistic-rollup",
+      "vc:label": "Optimistic Rollup"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-channel",
+      "vc:label": "Payment Channel"
+    },
+    {
+      "@id": "urn:visionflow:linked:perun",
+      "vc:label": "Perun"
+    },
+    {
+      "@id": "urn:visionflow:linked:raiden-network",
+      "vc:label": "Raiden Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:rollup",
+      "vc:label": "Rollup"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:micropayments",
+      "vc:label": "Micropayments"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3e1aa0fc1512"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#StateChannel"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8017"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "State Channel"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:state-channel"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:state-channel"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:state-channel",
+  "@type": "OntologyClass",
+  "label": "State Channel",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:micropayments",
+      "vc:label": "Micropayments"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:off-chain-scaling",
+      "vc:label": "Off-Chain Scaling"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:linked:rollup",
+      "vc:label": "Rollup"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:state-channel:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Connext]]",
+      "resolved": "urn:visionflow:linked:connext",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2]]",
+      "resolved": "urn:visionflow:linked:layer-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Off-Chain Scaling]]",
+      "resolved": "urn:visionflow:linked:off-chain-scaling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimistic Rollup]]",
+      "resolved": "urn:visionflow:linked:optimistic-rollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Channel]]",
+      "resolved": "urn:visionflow:linked:payment-channel",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Perun]]",
+      "resolved": "urn:visionflow:linked:perun",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Raiden Network]]",
+      "resolved": "urn:visionflow:linked:raiden-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rollup]]",
+      "resolved": "urn:visionflow:linked:rollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Micropayments]]",
+      "resolved": "urn:visionflow:owl:class:micropayments",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.

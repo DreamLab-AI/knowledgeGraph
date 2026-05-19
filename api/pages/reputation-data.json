@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:62e427c925aa60cc735c199673e7d74016dc072fbc056fbdbaf27c9380c44624",
+  "title": "Reputation Data",
+  "slug": "reputation-data",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reputation-data",
+  "domain": "spatial-computing",
+  "definition": "A structured dataset containing historical records of user behavior, transaction outcomes, peer feedback, and trust metrics used to calculate reputation scores in peer-to-peer systems and virtual communities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:reputation-system",
+      "label": "Reputation System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:behavioral-pattern",
+        "label": "Behavioral Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:feedback-score",
+        "label": "Feedback Score"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-history",
+        "label": "Transaction History"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-indicator",
+        "label": "Trust Indicator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:timestamp-service",
+        "label": "Timestamp Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:community-moderation",
+        "label": "Community Moderation"
+      },
+      {
+        "id": "urn:visionflow:linked:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-scoring",
+        "label": "Trust Scoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "behavioral-pattern",
+      "label": "Behavioral Pattern"
+    },
+    {
+      "slug": "community-moderation",
+      "label": "Community Moderation"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "feedback-score",
+      "label": "Feedback Score"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "open-reputation-protocol",
+      "label": "OpenReputation Protocol"
+    },
+    {
+      "slug": "social-graph",
+      "label": "Social Graph"
+    },
+    {
+      "slug": "timestamp-service",
+      "label": "Timestamp Service"
+    },
+    {
+      "slug": "transaction-history",
+      "label": "Transaction History"
+    },
+    {
+      "slug": "trust-indicator",
+      "label": "Trust Indicator"
+    },
+    {
+      "slug": "trust-scoring",
+      "label": "Trust Scoring"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    }
+  ]
+}

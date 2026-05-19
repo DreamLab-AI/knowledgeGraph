@@ -1,20 +1,239 @@
-iri:: http://narrativegoldmine.com/ontology#OverviewOfMachineLearningTechniques
-uri:: urn:visionclaw:concept:artificial-intelligence:overview-of-machine-learning-techniques
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:overview-of-machine-learning-techniques
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Overview of Machine Learning Techniques
-content-hash:: sha256-12-7708788df1f0
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#OverviewOfMachineLearningTechniques
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:overview-of-machine-learning-techniques
 public:: true
+
+# Overview of Machine Learning Techniques
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5",
+  "@type": "Page",
+  "vc:slug": "overview-of-machine-learning-techniques",
+  "title": "Overview of Machine Learning Techniques",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:presentation",
+      "vc:label": "presentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:rlhf",
+      "vc:label": "RLHF"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:direct-preference-optimization",
+      "vc:label": "Direct Preference Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-space-and-other-approaches",
+      "vc:label": "State Space and Other Approaches"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformers",
+      "vc:label": "Transformers"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7708788df1f0"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#OverviewOfMachineLearningTechniques"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Overview of Machine Learning Techniques"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:overview-of-machine-learning-techniques"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:overview-of-machine-learning-techniques"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
+  "@type": "OntologyClass",
+  "label": "Overview of Machine Learning Techniques",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Overview of Machine Learning Techniques is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:overview-of-machine-learning-techniques:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[presentation]]",
+      "resolved": "urn:visionflow:linked:presentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RLHF]]",
+      "resolved": "urn:visionflow:linked:rlhf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diffusion Models]]",
+      "resolved": "urn:visionflow:owl:class:diffusion-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Direct Preference Optimization]]",
+      "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Adversarial Networks]]",
+      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[State Space and Other Approaches]]",
+      "resolved": "urn:visionflow:owl:class:state-space-and-other-approaches",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformers]]",
+      "resolved": "urn:visionflow:owl:class:transformers",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Overview of Machine Learning Techniques is a concept within the ngm domain.
@@ -108,8 +327,8 @@ public:: true
 		- #### 1️⃣ Neural Networks
 		- #### 2️⃣ Deep Learning
 		- #### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
-		- #### 4️⃣ Direct Preference Optimisation [[DPO]]
-		- #### 5️⃣ Generative Adversarial Networks [[GANs]]
+		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimization]]
+		- #### 5️⃣ Generative Adversarial Networks [[Generative Adversarial Networks]]
 		- #### 6️⃣ [[Diffusion Models]] (Generative Models)
 		- #### 7️⃣ 🟢 [[Transformers]]
 

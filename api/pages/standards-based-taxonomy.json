@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:504ddb8666352f074fabc0575ab35c7bbdffaf38388a791ae047931df4febd45",
+  "title": "Standards Based Taxonomy",
+  "slug": "standards-based-taxonomy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standards-based-taxonomy",
+  "domain": "spatial-computing",
+  "definition": "Standards Based Taxonomy is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    }
+  ]
+}

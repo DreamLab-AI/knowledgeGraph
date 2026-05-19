@@ -1,21 +1,483 @@
-iri:: http://narrativegoldmine.com/robotics#GazeControl
-uri:: urn:visionclaw:concept:robotics:gaze-control
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:gaze-control
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Gaze Control
-content-hash:: sha256-12-25847b5d8430
-legacy-term-id:: RB-9007
-status:: draft
-maturity:: emerging
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#GazeControl
+legacy_uri:: urn:visionclaw:concept:robotics:gaze-control
 public:: true
+
+# Gaze Control
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc",
+  "@type": "Page",
+  "vc:slug": "gaze-control",
+  "title": "Gaze Control",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:attention-control",
+      "vc:label": "Attention Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-redirection",
+      "vc:label": "Attention Redirection"
+    },
+    {
+      "@id": "urn:visionflow:linked:camera-actuators",
+      "vc:label": "Camera Actuators"
+    },
+    {
+      "@id": "urn:visionflow:linked:eye-movement-controller",
+      "vc:label": "Eye Movement Controller"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaze-target-estimator",
+      "vc:label": "Gaze Target Estimator"
+    },
+    {
+      "@id": "urn:visionflow:linked:head-movement-mechanism",
+      "vc:label": "Head Movement Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:hri",
+      "vc:label": "HRI"
+    },
+    {
+      "@id": "urn:visionflow:linked:joint-attention",
+      "vc:label": "Joint Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:kinematics-computation",
+      "vc:label": "Kinematics Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-interaction",
+      "vc:label": "Natural Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:pan-tilt-unit",
+      "vc:label": "Pan-Tilt Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:servo-motors",
+      "vc:label": "Servo Motors"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-signal-transmission",
+      "vc:label": "Social Signal Transmission"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-understanding",
+      "vc:label": "Social Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:target-detection",
+      "vc:label": "Target Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:target-tracking",
+      "vc:label": "Target Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-attention-model",
+      "vc:label": "Visual Attention Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-perception",
+      "vc:label": "Visual Perception"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-robot-interaction",
+      "vc:label": "Human-Robot Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-robotics",
+      "vc:label": "Social Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-25847b5d8430"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#GazeControl"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-9007"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "emerging"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Gaze Control"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:gaze-control"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:gaze-control"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:gaze-control",
+  "@type": "OntologyClass",
+  "label": "Gaze Control",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:attention-control",
+      "vc:label": "Attention Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "emerging",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]]. Gaze serves both functional roles—directing perception toward task-relevant features—and social functions—signalling attentiveness and promoting human comprehension of robot behaviour.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:eye-movement-controller",
+      "vc:label": "Eye Movement Controller"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaze-target-estimator",
+      "vc:label": "Gaze Target Estimator"
+    },
+    {
+      "@id": "urn:visionflow:linked:head-movement-mechanism",
+      "vc:label": "Head Movement Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-attention-model",
+      "vc:label": "Visual Attention Model"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:camera-actuators",
+      "vc:label": "Camera Actuators"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-understanding",
+      "vc:label": "Social Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:target-tracking",
+      "vc:label": "Target Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-perception",
+      "vc:label": "Visual Perception"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:attention-redirection",
+      "vc:label": "Attention Redirection"
+    },
+    {
+      "@id": "urn:visionflow:linked:joint-attention",
+      "vc:label": "Joint Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-interaction",
+      "vc:label": "Natural Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-signal-transmission",
+      "vc:label": "Social Signal Transmission"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:kinematics-computation",
+      "vc:label": "Kinematics Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:target-detection",
+      "vc:label": "Target Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:gaze-control:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Attention Control]]",
+      "resolved": "urn:visionflow:linked:attention-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Attention Redirection]]",
+      "resolved": "urn:visionflow:linked:attention-redirection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Camera Actuators]]",
+      "resolved": "urn:visionflow:linked:camera-actuators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eye Movement Controller]]",
+      "resolved": "urn:visionflow:linked:eye-movement-controller",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gaze Target Estimator]]",
+      "resolved": "urn:visionflow:linked:gaze-target-estimator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Head Movement Mechanism]]",
+      "resolved": "urn:visionflow:linked:head-movement-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HRI]]",
+      "resolved": "urn:visionflow:linked:hri",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Joint Attention]]",
+      "resolved": "urn:visionflow:linked:joint-attention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kinematics Computation]]",
+      "resolved": "urn:visionflow:linked:kinematics-computation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Natural Interaction]]",
+      "resolved": "urn:visionflow:linked:natural-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pan-Tilt Unit]]",
+      "resolved": "urn:visionflow:linked:pan-tilt-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Servo Motors]]",
+      "resolved": "urn:visionflow:linked:servo-motors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Social Signal Transmission]]",
+      "resolved": "urn:visionflow:linked:social-signal-transmission",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Social Understanding]]",
+      "resolved": "urn:visionflow:linked:social-understanding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Target Detection]]",
+      "resolved": "urn:visionflow:linked:target-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Target Tracking]]",
+      "resolved": "urn:visionflow:linked:target-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Visual Attention Model]]",
+      "resolved": "urn:visionflow:linked:visual-attention-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Visual Perception]]",
+      "resolved": "urn:visionflow:linked:visual-perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human-Robot Interaction]]",
+      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning]]",
+      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social Robotics]]",
+      "resolved": "urn:visionflow:owl:class:social-robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]]. Gaze serves both functional roles—directing perception toward task-relevant features—and social functions—signalling attentiveness and promoting human comprehension of robot behaviour.

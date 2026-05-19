@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:61cfdf94f5a1641c0945dd1f1dd06c6d661049907b191d7a7b1ffe6a8cf09b0a",
+  "title": "Data Lake",
+  "slug": "data-lake",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-lake",
+  "domain": "artificial-intelligence",
+  "definition": "Centralized repository that stores structured and unstructured data at scale in its native format, enabling big data analytics and machine learning workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:etsi-domain-data-management-ai",
+      "label": "ETSI Domain: Data Management + AI"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "big-data",
+      "label": "Big Data"
+    },
+    {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

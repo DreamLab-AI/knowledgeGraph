@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:c2de3b96c0c749eb3e358f0c0fc3d9e1a496df05618e81ae944f19d33e0d0210",
+  "title": "Ai Machine Learning",
+  "slug": "ai-machine-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-machine-learning",
+  "domain": "artificial-intelligence",
+  "definition": "AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-network-architectures",
+        "label": "Neural Network Architectures"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-npcs",
+        "label": "Adaptive NPCs"
+      },
+      {
+        "id": "urn:visionflow:linked:content-generation",
+        "label": "Content Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-experiences",
+        "label": "Personalized Experiences"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-virtual-environments",
+        "label": "Smart Virtual Environments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-npcs",
+      "label": "Adaptive NPCs"
+    },
+    {
+      "slug": "computational-infrastructure",
+      "label": "Computational Infrastructure"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "neural-network-architectures",
+      "label": "Neural Network Architectures"
+    },
+    {
+      "slug": "personalized-experiences",
+      "label": "Personalized Experiences"
+    },
+    {
+      "slug": "smart-virtual-environments",
+      "label": "Smart Virtual Environments"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": []
+}

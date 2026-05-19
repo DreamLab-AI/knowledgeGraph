@@ -1,21 +1,222 @@
-iri:: http://narrativegoldmine.com/infrastructure#CryptocurrencyStorage
-uri:: urn:visionclaw:concept:infrastructure:cryptocurrency-storage
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:cryptocurrency-storage
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Cryptocurrency Storage
-content-hash:: sha256-12-112f886a9330
-legacy-term-id:: BC-9004
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#CryptocurrencyStorage
+legacy_uri:: urn:visionclaw:concept:infrastructure:cryptocurrency-storage
 public:: true
+
+# Cryptocurrency Storage
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fc145c0d51ef90aa9d7e2fac91c941e2100fccd8c6de5f8c2132be59c3217721",
+  "@type": "Page",
+  "vc:slug": "cryptocurrency-storage",
+  "title": "Cryptocurrency Storage",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bip32",
+      "vc:label": "BIP32"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip39",
+      "vc:label": "BIP39"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip44",
+      "vc:label": "BIP44"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-post-quantum-cryptography",
+      "vc:label": "NIST Post-Quantum Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-112f886a9330"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#CryptocurrencyStorage"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-9004"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cryptocurrency Storage"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cryptocurrency-storage"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cryptocurrency-storage"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fc145c0d51ef90aa9d7e2fac91c941e2100fccd8c6de5f8c2132be59c3217721@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cryptocurrency-storage",
+  "@type": "OntologyClass",
+  "label": "Cryptocurrency Storage",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-wallet",
+      "vc:label": "Digital Wallet"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fc145c0d51ef90aa9d7e2fac91c941e2100fccd8c6de5f8c2132be59c3217721"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fc145c0d51ef90aa9d7e2fac91c941e2100fccd8c6de5f8c2132be59c3217721@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "CryptocurrencyStorage is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cryptocurrency-storage:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fc145c0d51ef90aa9d7e2fac91c941e2100fccd8c6de5f8c2132be59c3217721"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BIP32]]",
+      "resolved": "urn:visionflow:linked:bip32",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP39]]",
+      "resolved": "urn:visionflow:linked:bip39",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP44]]",
+      "resolved": "urn:visionflow:linked:bip44",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST Post-Quantum Cryptography]]",
+      "resolved": "urn:visionflow:linked:nist-post-quantum-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fc145c0d51ef90aa9d7e2fac91c941e2100fccd8c6de5f8c2132be59c3217721@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - CryptocurrencyStorage is a concept within the ngm domain.

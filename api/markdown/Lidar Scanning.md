@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/robotics#LidarScanning
-uri:: urn:visionclaw:concept:robotics:lidar-scanning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:lidar-scanning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Lidar Scanning
-content-hash:: sha256-12-28738ab5e0db
-legacy-term-id:: MV-9946
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#LidarScanning
+legacy_uri:: urn:visionclaw:concept:robotics:lidar-scanning
 public:: true
+
+# Lidar Scanning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc",
+  "@type": "Page",
+  "vc:slug": "lidar-scanning",
+  "title": "Lidar Scanning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin-creation",
+      "vc:label": "Digital Twin Creation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-mapping-technology",
+      "vc:label": "Spatial Mapping Technology"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-28738ab5e0db"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#LidarScanning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9946"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Lidar Scanning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:lidar-scanning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:lidar-scanning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:lidar-scanning",
+  "@type": "OntologyClass",
+  "label": "Lidar Scanning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-mapping-technology",
+      "vc:label": "Spatial Mapping Technology"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin-creation",
+      "vc:label": "Digital Twin Creation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:lidar-scanning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Digital Twin Creation]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin-creation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Mapping Technology]]",
+      "resolved": "urn:visionflow:owl:class:spatial-mapping-technology",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.

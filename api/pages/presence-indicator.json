@@ -1,0 +1,452 @@
+{
+  "id": "urn:visionflow:page:3dfb8ec24fa6f298b91d8184be500a9d668ac64453d05a8e2abf20422eabd994",
+  "title": "Presence Indicator",
+  "slug": "presence-indicator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:presence-indicator",
+  "domain": "distributed-collaboration",
+  "definition": "A presence indicator is a real-time signal encoding a user's availability, attention, and engagement state in a collaborative system, enabling other participants to determine the optimal channel and urgency of communication before initiating contact. Presence indicators span a finite state machine of canonical statuses \u2014 available (active, online, green), busy (in-a-call, in-a-meeting, red), away (idle, stepped-out, yellow), offline (signed-out, grey), and do-not-disturb (DND, focus-mode, red-with-minus) \u2014 each carrying protocol-defined semantics that downstream clients and integration webhooks can consume to route, queue, or suppress notifications accordingly. The concept descends directly from ambient awareness theory (Dourish & Bellotti 1992), which formalised the observation that peripheral awareness of colleagues' activity states reduces the cognitive cost of coordination in shared workspaces; digital presence indicators translate this physical-world peripheral perception into a machine-readable, network-distributed signal. Social presence theory (Short, Williams & Christie 1976) supplies the complementary psychological frame: the degree to which a medium conveys the sense of ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ambient-awareness",
+      "label": "Ambient Awareness"
+    },
+    {
+      "id": "urn:visionflow:linked:awareness-mechanisms",
+      "label": "Awareness Mechanisms"
+    },
+    {
+      "id": "urn:visionflow:linked:real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "id": "urn:visionflow:linked:synchronous-collaboration-infrastructure",
+      "label": "Synchronous Collaboration Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:user-state-management",
+      "label": "User State Management"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:activity-monitor",
+        "label": "Activity Monitor"
+      },
+      {
+        "id": "urn:visionflow:linked:availability-scheduler",
+        "label": "Availability Scheduler"
+      },
+      {
+        "id": "urn:visionflow:linked:calendar-integration",
+        "label": "Calendar Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:do-not-disturb",
+        "label": "Do Not Disturb"
+      },
+      {
+        "id": "urn:visionflow:linked:last-seen-timestamp",
+        "label": "Last Seen Timestamp"
+      },
+      {
+        "id": "urn:visionflow:linked:notification-suppression",
+        "label": "Notification Suppression"
+      },
+      {
+        "id": "urn:visionflow:linked:presence-api",
+        "label": "Presence API"
+      },
+      {
+        "id": "urn:visionflow:linked:status-state-machine",
+        "label": "Status State Machine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:client-activity-tracking",
+        "label": "Client Activity Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-state-synchronisation",
+        "label": "Distributed State Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-controls",
+        "label": "Privacy Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:push-notification",
+        "label": "Push Notification"
+      },
+      {
+        "id": "urn:visionflow:linked:websocket",
+        "label": "Websocket"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ambient-display",
+        "label": "Ambient Display"
+      },
+      {
+        "id": "urn:visionflow:linked:communication-orchestration",
+        "label": "Communication Orchestration"
+      },
+      {
+        "id": "urn:visionflow:linked:deep-work-protection",
+        "label": "Deep Work Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:interruptibility-awareness",
+        "label": "Interruptibility Awareness"
+      },
+      {
+        "id": "urn:visionflow:linked:meeting-avoidance",
+        "label": "Meeting Avoidance"
+      },
+      {
+        "id": "urn:visionflow:linked:notification-routing",
+        "label": "Notification Routing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:microsoft-graph-api",
+        "label": "Microsoft Graph API"
+      },
+      {
+        "id": "urn:visionflow:linked:polling",
+        "label": "Polling"
+      },
+      {
+        "id": "urn:visionflow:linked:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:visionflow:linked:webhook",
+        "label": "Webhook"
+      },
+      {
+        "id": "urn:visionflow:linked:xmpp",
+        "label": "XMPP"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-machine",
+        "label": "State Machine"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-inference",
+      "label": "Activity Inference"
+    },
+    {
+      "slug": "activity-monitor",
+      "label": "Activity Monitor"
+    },
+    {
+      "slug": "activity-monitoring",
+      "label": "Activity Monitoring"
+    },
+    {
+      "slug": "ai-prediction",
+      "label": "AI Prediction"
+    },
+    {
+      "slug": "always-on-culture",
+      "label": "Always-On Culture"
+    },
+    {
+      "slug": "ambient-awareness",
+      "label": "Ambient Awareness"
+    },
+    {
+      "slug": "ambient-display",
+      "label": "Ambient Display"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "availability-scheduler",
+      "label": "Availability Scheduler"
+    },
+    {
+      "slug": "awareness-mechanisms",
+      "label": "Awareness Mechanisms"
+    },
+    {
+      "slug": "bossware",
+      "label": "Bossware"
+    },
+    {
+      "slug": "calendar-api",
+      "label": "Calendar API"
+    },
+    {
+      "slug": "calendar-data",
+      "label": "Calendar Data"
+    },
+    {
+      "slug": "calendar-integration",
+      "label": "Calendar Integration"
+    },
+    {
+      "slug": "client-activity-tracking",
+      "label": "Client Activity Tracking"
+    },
+    {
+      "slug": "communication-orchestration",
+      "label": "Communication Orchestration"
+    },
+    {
+      "slug": "deep-work-protection",
+      "label": "Deep Work Protection"
+    },
+    {
+      "slug": "device-sensors",
+      "label": "Device Sensors"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "DistributedCollaborationDomain"
+    },
+    {
+      "slug": "distributed-state-synchronisation",
+      "label": "Distributed State Synchronisation"
+    },
+    {
+      "slug": "do-not-disturb",
+      "label": "Do Not Disturb"
+    },
+    {
+      "slug": "focus-mode",
+      "label": "Focus Mode"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "interruptibility-awareness",
+      "label": "Interruptibility Awareness"
+    },
+    {
+      "slug": "keyboard-activity",
+      "label": "Keyboard Activity"
+    },
+    {
+      "slug": "last-seen-timestamp",
+      "label": "Last Seen Timestamp"
+    },
+    {
+      "slug": "meeting-avoidance",
+      "label": "Meeting Avoidance"
+    },
+    {
+      "slug": "microphone-state",
+      "label": "Microphone State"
+    },
+    {
+      "slug": "microsoft-graph-api",
+      "label": "Microsoft Graph API"
+    },
+    {
+      "slug": "microsoft-graph-presence-api",
+      "label": "Microsoft Graph Presence API"
+    },
+    {
+      "slug": "notification-routing",
+      "label": "Notification Routing"
+    },
+    {
+      "slug": "notification-suppression",
+      "label": "Notification Suppression"
+    },
+    {
+      "slug": "open-id-connect",
+      "label": "OpenID Connect"
+    },
+    {
+      "slug": "performative-presence",
+      "label": "Performative Presence"
+    },
+    {
+      "slug": "polling",
+      "label": "Polling"
+    },
+    {
+      "slug": "presence-api",
+      "label": "Presence API"
+    },
+    {
+      "slug": "privacy-controls",
+      "label": "Privacy Controls"
+    },
+    {
+      "slug": "privacy-regulation",
+      "label": "Privacy Regulation"
+    },
+    {
+      "slug": "publish-subscribe-pattern",
+      "label": "Publish-Subscribe Pattern"
+    },
+    {
+      "slug": "push-notification",
+      "label": "Push Notification"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "slug": "remote-work-infrastructure",
+      "label": "Remote Work Infrastructure"
+    },
+    {
+      "slug": "rfc-3921",
+      "label": "RFC 3921"
+    },
+    {
+      "slug": "server-sent-events",
+      "label": "Server-Sent Events"
+    },
+    {
+      "slug": "status-state-machine",
+      "label": "Status State Machine"
+    },
+    {
+      "slug": "surveillance-capitalism",
+      "label": "Surveillance Capitalism"
+    },
+    {
+      "slug": "synchronous-collaboration-infrastructure",
+      "label": "Synchronous Collaboration Infrastructure"
+    },
+    {
+      "slug": "team-communication",
+      "label": "Team Communication"
+    },
+    {
+      "slug": "user-state-management",
+      "label": "User State Management"
+    },
+    {
+      "slug": "virtual-office",
+      "label": "Virtual Office"
+    },
+    {
+      "slug": "webhook",
+      "label": "Webhook"
+    },
+    {
+      "slug": "websocket",
+      "label": "Websocket"
+    },
+    {
+      "slug": "work-life-balance",
+      "label": "Work-Life Balance"
+    },
+    {
+      "slug": "workplace-analytics-domain",
+      "label": "WorkplaceAnalyticsDomain"
+    },
+    {
+      "slug": "xmpp",
+      "label": "XMPP"
+    },
+    {
+      "slug": "xmpp-rfc-6120",
+      "label": "XMPP RFC 6120"
+    },
+    {
+      "slug": "xmpp-rfc-6121",
+      "label": "XMPP RFC 6121"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "network-latency",
+      "label": "Network Latency"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "social-presence-theory",
+      "label": "Social Presence Theory"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    }
+  ]
+}

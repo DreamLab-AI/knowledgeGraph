@@ -1,24 +1,282 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Precision
-uri:: urn:visionclaw:concept:spatial-computing:precision
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:precision
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Precision
-content-hash:: sha256-12-ed19056fac93
-legacy-term-id:: AI-0108
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Precision
+legacy_uri:: urn:visionclaw:concept:spatial-computing:precision
 public:: true
+
+# Precision
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0831dc4ef9ad114d3206f40d232ec0f6e234b1024aa2017e9c8ff9ef0de96909",
+  "@type": "Page",
+  "vc:slug": "precision",
+  "title": "Precision",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:false-positive",
+      "vc:label": "False Positive"
+    },
+    {
+      "@id": "urn:visionflow:linked:positive-predictive-value",
+      "vc:label": "Positive Predictive Value"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-recall-curve",
+      "vc:label": "Precision-Recall Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:specificity",
+      "vc:label": "Specificity"
+    },
+    {
+      "@id": "urn:visionflow:linked:true-positive",
+      "vc:label": "True Positive"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accuracy",
+      "vc:label": "Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:confusion-matrix",
+      "vc:label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:f1-score",
+      "vc:label": "F1 Score"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recall",
+      "vc:label": "Recall"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ed19056fac93"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Precision"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0108"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Precision"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:precision"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:precision"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0831dc4ef9ad114d3206f40d232ec0f6e234b1024aa2017e9c8ff9ef0de96909@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:precision",
+  "@type": "OntologyClass",
+  "label": "Precision",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0831dc4ef9ad114d3206f40d232ec0f6e234b1024aa2017e9c8ff9ef0de96909"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0831dc4ef9ad114d3206f40d232ec0f6e234b1024aa2017e9c8ff9ef0de96909@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct, calculated as the ratio of true positives to all positive predictions (true positives plus false positives), measuring the model's ability to avoid false alarms and providing critical insight into prediction reliability, particularly important in applications where the cost or consequence of false positive errors is significant.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:precision:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0831dc4ef9ad114d3206f40d232ec0f6e234b1024aa2017e9c8ff9ef0de96909"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[False Positive]]",
+      "resolved": "urn:visionflow:linked:false-positive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Positive Predictive Value]]",
+      "resolved": "urn:visionflow:linked:positive-predictive-value",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precision-Recall Curve]]",
+      "resolved": "urn:visionflow:linked:precision-recall-curve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Specificity]]",
+      "resolved": "urn:visionflow:linked:specificity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[True Positive]]",
+      "resolved": "urn:visionflow:linked:true-positive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accuracy]]",
+      "resolved": "urn:visionflow:owl:class:accuracy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Confusion Matrix]]",
+      "resolved": "urn:visionflow:owl:class:confusion-matrix",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[F1 Score]]",
+      "resolved": "urn:visionflow:owl:class:f1-score",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recall]]",
+      "resolved": "urn:visionflow:owl:class:recall",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0831dc4ef9ad114d3206f40d232ec0f6e234b1024aa2017e9c8ff9ef0de96909@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct, calculated as the ratio of true positives to all positive predictions (true positives plus false positives), measuring the model's ability to avoid false alarms and providing critical insight into prediction reliability, particularly important in applications where the cost or consequence of false positive errors is significant.

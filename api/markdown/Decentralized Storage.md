@@ -1,21 +1,429 @@
-iri:: http://narrativegoldmine.com/infrastructure#DecentralizedStorage
-uri:: urn:visionclaw:concept:infrastructure:decentralized-storage
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:decentralized-storage
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Decentralized Storage
-content-hash:: sha256-12-277751153e98
-legacy-term-id:: MV-3061
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DecentralizedStorage
+legacy_uri:: urn:visionclaw:concept:infrastructure:decentralized-storage
 public:: true
+
+# Decentralized Storage
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566",
+  "@type": "Page",
+  "vc:slug": "decentralized-storage",
+  "title": "Decentralized Storage",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:arweave",
+      "vc:label": "Arweave"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-history",
+      "vc:label": "BlockchainHistory"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-distribution",
+      "vc:label": "ContentDistribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-availability",
+      "vc:label": "Data Availability"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-storage",
+      "vc:label": "Decentralised Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-art",
+      "vc:label": "DigitalArt"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-file-system",
+      "vc:label": "DistributedFileSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-archives",
+      "vc:label": "dt:archives"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enables",
+      "vc:label": "dt:enables"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-hosts",
+      "vc:label": "dt:hosts"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-preserves",
+      "vc:label": "dt:preserves"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-stores",
+      "vc:label": "dt:stores"
+    },
+    {
+      "@id": "urn:visionflow:linked:filecoin",
+      "vc:label": "Filecoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee",
+      "vc:label": "IEEE"
+    },
+    {
+      "@id": "urn:visionflow:linked:incentivizes",
+      "vc:label": "incentivizes"
+    },
+    {
+      "@id": "urn:visionflow:linked:ipfs",
+      "vc:label": "IPFS"
+    },
+    {
+      "@id": "urn:visionflow:linked:nftmetadata",
+      "vc:label": "NFTMetadata"
+    },
+    {
+      "@id": "urn:visionflow:linked:persistent-storage",
+      "vc:label": "PersistentStorage"
+    },
+    {
+      "@id": "urn:visionflow:linked:provides-redundancy",
+      "vc:label": "providesRedundancy"
+    },
+    {
+      "@id": "urn:visionflow:linked:stores-data",
+      "vc:label": "storesData"
+    },
+    {
+      "@id": "urn:visionflow:linked:storj",
+      "vc:label": "Storj"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-sovereignty",
+      "vc:label": "User Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-protocol",
+      "vc:label": "usesProtocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:censorship-resistance",
+      "vc:label": "Censorship Resistance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-addressing",
+      "vc:label": "ContentAddressing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-asset",
+      "vc:label": "VirtualAsset"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-277751153e98"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DecentralizedStorage"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3061"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Decentralized Storage"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:decentralized-storage"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:decentralized-storage"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:decentralized-storage",
+  "@type": "OntologyClass",
+  "label": "Decentralized Storage",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure. [[Decentralised Storage]] networks such as [[IPFS]] and [[Filecoin]] provide [[Censorship Resistance]], [[Data Availability]], and [[User Sovereignty]] guarantees.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:decentralized-storage:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Arweave]]",
+      "resolved": "urn:visionflow:linked:arweave",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainHistory]]",
+      "resolved": "urn:visionflow:linked:blockchain-history",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ContentDistribution]]",
+      "resolved": "urn:visionflow:linked:content-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Availability]]",
+      "resolved": "urn:visionflow:linked:data-availability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Storage]]",
+      "resolved": "urn:visionflow:linked:decentralised-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DigitalArt]]",
+      "resolved": "urn:visionflow:linked:digital-art",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DistributedFileSystem]]",
+      "resolved": "urn:visionflow:linked:distributed-file-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:archives]]",
+      "resolved": "urn:visionflow:linked:dt-archives",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enables]]",
+      "resolved": "urn:visionflow:linked:dt-enables",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:hosts]]",
+      "resolved": "urn:visionflow:linked:dt-hosts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:preserves]]",
+      "resolved": "urn:visionflow:linked:dt-preserves",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:stores]]",
+      "resolved": "urn:visionflow:linked:dt-stores",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Filecoin]]",
+      "resolved": "urn:visionflow:linked:filecoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE]]",
+      "resolved": "urn:visionflow:linked:ieee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[incentivizes]]",
+      "resolved": "urn:visionflow:linked:incentivizes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IPFS]]",
+      "resolved": "urn:visionflow:linked:ipfs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NFTMetadata]]",
+      "resolved": "urn:visionflow:linked:nftmetadata",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PersistentStorage]]",
+      "resolved": "urn:visionflow:linked:persistent-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[providesRedundancy]]",
+      "resolved": "urn:visionflow:linked:provides-redundancy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[storesData]]",
+      "resolved": "urn:visionflow:linked:stores-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Storj]]",
+      "resolved": "urn:visionflow:linked:storj",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Sovereignty]]",
+      "resolved": "urn:visionflow:linked:user-sovereignty",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesProtocol]]",
+      "resolved": "urn:visionflow:linked:uses-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Censorship Resistance]]",
+      "resolved": "urn:visionflow:owl:class:censorship-resistance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ContentAddressing]]",
+      "resolved": "urn:visionflow:owl:class:content-addressing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualAsset]]",
+      "resolved": "urn:visionflow:owl:class:virtual-asset",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure. [[Decentralised Storage]] networks such as [[IPFS]] and [[Filecoin]] provide [[Censorship Resistance]], [[Data Availability]], and [[User Sovereignty]] guarantees.

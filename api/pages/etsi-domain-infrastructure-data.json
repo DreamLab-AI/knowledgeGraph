@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c",
+  "title": "ETSI_Domain_Infrastructure_Data",
+  "slug": "etsi-domain-infrastructure-data",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-data",
+  "domain": "infrastructure",
+  "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards. Infrastructure data coordination operates via Trustworthy Data Spaces architecture (ETSI GR PDL 034), International Data Spaces framework, and [[NGSI-LD]] APIs enabling context-aware data exchange with Policy Enforcement Points and Federated Catalogs, supported by F5G standards (ETSI GR F5G 019) providing low-latency backbone connectivity and multi-access edge computing use cases (ETSI GR MEC 043), addressing data sovereignty, security, and real-to-virtual integration challenges across distributed networks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ngsi-ld",
+      "label": "NGSI-LD"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    }
+  ],
+  "backlinks": []
+}

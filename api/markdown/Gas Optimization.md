@@ -1,21 +1,255 @@
-iri:: http://narrativegoldmine.com/blockchain#GasOptimization
-uri:: urn:visionclaw:concept:blockchain:gas-optimization
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:gas-optimization
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Gas Optimization
-content-hash:: sha256-12-246c4d4dce71
-legacy-term-id:: BC-8006
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#GasOptimization
+legacy_uri:: urn:visionclaw:concept:blockchain:gas-optimization
 public:: true
+
+# Gas Optimization
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d",
+  "@type": "Page",
+  "vc:slug": "gas-optimization",
+  "title": "Gas Optimization",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:evm-ethereum-virtual-machine",
+      "vc:label": "EVM (Ethereum Virtual Machine)"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability-solutions",
+      "vc:label": "Scalability Solutions"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-development",
+      "vc:label": "Smart Contract Development"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gas",
+      "vc:label": "Gas"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction-fee",
+      "vc:label": "Transaction Fee"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-246c4d4dce71"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#GasOptimization"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8006"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Gas Optimization"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:gas-optimization"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:gas-optimization"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:gas-optimization",
+  "@type": "OntologyClass",
+  "label": "Gas Optimization",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic viability.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:scalability-solutions",
+      "vc:label": "Scalability Solutions"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:gas",
+      "vc:label": "Gas"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:gas-optimization:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[EVM (Ethereum Virtual Machine)]]",
+      "resolved": "urn:visionflow:linked:evm-ethereum-virtual-machine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scalability Solutions]]",
+      "resolved": "urn:visionflow:linked:scalability-solutions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Contract Development]]",
+      "resolved": "urn:visionflow:linked:smart-contract-development",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gas]]",
+      "resolved": "urn:visionflow:owl:class:gas",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction Fee]]",
+      "resolved": "urn:visionflow:owl:class:transaction-fee",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic viability.

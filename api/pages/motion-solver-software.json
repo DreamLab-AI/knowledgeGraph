@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:e55b16bc6ea326fb2bf3421ee389e37bb2e593f6ef889d0ab8aa1508fa3b961f",
+  "title": "Motion Solver Software",
+  "slug": "motion-solver-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:motion-solver-software",
+  "domain": "spatial-computing",
+  "definition": "Specialized software that uses multibody dynamics and physics-based algorithms to calculate reaction forces, torques, velocities, accelerations, and motor behaviors for mechanical systems and animated characters, enabling accurate simulation of rigid and flexible body movements.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:simulation-software",
+      "label": "Simulation Software"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "real-time-character-animation",
+      "label": "Real Time Character Animation"
+    },
+    {
+      "slug": "simulation-software",
+      "label": "Simulation Software"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    }
+  ]
+}

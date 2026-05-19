@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:7ca35cb5451bcd106c87af3da0670326e1e54a41d32a6ebeef888a3384f6188b",
+  "title": "VP robotics project",
+  "slug": "vp-robotics-project",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vp-robotics-project",
+  "domain": "robotics",
+  "definition": "VP robotics project is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,616 @@
+{
+  "id": "urn:visionflow:page:f03fdbd0b481102f994066f893e23e3ceb3e59e1d8d8feae8aff6825ce47a603",
+  "title": "Embodied Minds",
+  "slug": "embodied-minds",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:embodied-minds",
+  "domain": "artificial-intelligence",
+  "definition": "**Embodied Minds** denotes the theoretical and engineering position that genuine cognition, intelligence and meaning-making cannot be reduced to disembodied symbol manipulation or text-token prediction but instead arises from the dynamic, sensorimotor coupling of a physical body with a structured environment, encompassing the philosophical programme of **4E cognition** (cognition as **Embodied**, **Embedded**, **Enacted**, **Extended**) advanced by Varela/Thompson/Rosch (1991 *The Embodied Mind*), Andy Clark (1997 *Being There*, 2008 *Supersizing the Mind*, 2016 *Surfing Uncertainty*, 2023 *The Experience Machine*), Lakoff & Johnson (1999 *Philosophy in the Flesh*) and Alva No\u00eb (2004 *Action in Perception*), the **predictive processing / active inference** framework formalised by Karl Friston's **Free Energy Principle** (FEP, 2010 *Nature Reviews Neuroscience*) where biological agents minimise variational free energy F = E_q[ln q(s) - ln p(o,s)] by either updating internal generative models (perception) or acting on the world to make sensory observations match predictions (action), the phenomenological critique of classical symbolic AI by Hubert Dreyfus (*What Computers Can't Do* 1",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "id": "urn:visionflow:linked:philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
+      "id": "urn:visionflow:linked:situated-cognition",
+      "label": "Situated Cognition"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:active-inference",
+        "label": "Active Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:affordance",
+        "label": "Affordance"
+      },
+      {
+        "id": "urn:visionflow:linked:body-schema",
+        "label": "Body Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:morphological-computation",
+        "label": "Morphological Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:sensorimotor-loop",
+        "label": "Sensorimotor Loop"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-language-action-model",
+        "label": "Vision-Language-Action Model"
+      },
+      {
+        "id": "urn:visionflow:linked:world-model",
+        "label": "World Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:environment",
+        "label": "Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:physical-body",
+        "label": "Physical Body"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:visionflow:linked:sensorimotor-coupling",
+        "label": "Sensorimotor Coupling"
+      },
+      {
+        "id": "urn:visionflow:linked:sensors",
+        "label": "Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:common-sense-reasoning",
+        "label": "Common Sense Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:grounded-language-understanding",
+        "label": "Grounded Language Understanding"
+      },
+      {
+        "id": "urn:visionflow:linked:locomotion",
+        "label": "Locomotion"
+      },
+      {
+        "id": "urn:visionflow:linked:robust-generalisation",
+        "label": "Robust Generalisation"
+      },
+      {
+        "id": "urn:visionflow:linked:social-cognition",
+        "label": "Social Cognition"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:visionflow:owl:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:4-e-cognition",
+        "label": "4E Cognition"
+      },
+      {
+        "id": "urn:visionflow:linked:behaviour-based-robotics",
+        "label": "Behaviour-Based Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:free-energy-principle",
+        "label": "Free Energy Principle"
+      },
+      {
+        "id": "urn:visionflow:linked:predictive-processing",
+        "label": "Predictive Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:subsumption-architecture",
+        "label": "Subsumption Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "4-e-cognition",
+      "label": "4E Cognition"
+    },
+    {
+      "slug": "action-layer",
+      "label": "ActionLayer"
+    },
+    {
+      "slug": "active-inference",
+      "label": "Active Inference"
+    },
+    {
+      "slug": "actuators",
+      "label": "Actuators"
+    },
+    {
+      "slug": "affordance",
+      "label": "Affordance"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "assistive-robotics",
+      "label": "Assistive Robotics"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "bayesian-brain-hypothesis",
+      "label": "Bayesian Brain Hypothesis"
+    },
+    {
+      "slug": "behaviour-based-robotics",
+      "label": "Behaviour-Based Robotics"
+    },
+    {
+      "slug": "bender-koller-2020-climbing-towards-nlu",
+      "label": "Bender Koller 2020 Climbing Towards NLU"
+    },
+    {
+      "slug": "black-et-al-2024-pi0-vla-flow-model",
+      "label": "Black et al 2024 Pi0 VLA Flow Model"
+    },
+    {
+      "slug": "body-schema",
+      "label": "Body Schema"
+    },
+    {
+      "slug": "brohan-et-al-2023-rt-2",
+      "label": "Brohan et al 2023 RT-2"
+    },
+    {
+      "slug": "brooks-1986-subsumption-architecture",
+      "label": "Brooks 1986 Subsumption Architecture"
+    },
+    {
+      "slug": "brooks-1991-intelligence-without-representation",
+      "label": "Brooks 1991 Intelligence Without Representation"
+    },
+    {
+      "slug": "cartesian-dualism",
+      "label": "Cartesian Dualism"
+    },
+    {
+      "slug": "chi-et-al-2023-diffusion-policy",
+      "label": "Chi et al 2023 Diffusion Policy"
+    },
+    {
+      "slug": "clark-1997-being-there",
+      "label": "Clark 1997 Being There"
+    },
+    {
+      "slug": "clark-2008-supersizing-the-mind",
+      "label": "Clark 2008 Supersizing the Mind"
+    },
+    {
+      "slug": "clark-2016-surfing-uncertainty",
+      "label": "Clark 2016 Surfing Uncertainty"
+    },
+    {
+      "slug": "clark-chalmers-1998-the-extended-mind",
+      "label": "Clark Chalmers 1998 The Extended Mind"
+    },
+    {
+      "slug": "classical-cognitivism",
+      "label": "Classical Cognitivism"
+    },
+    {
+      "slug": "cognitive-robotics",
+      "label": "Cognitive Robotics"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "CognitiveScienceDomain"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "davison-et-al-2007-mono-slam",
+      "label": "Davison et al 2007 MonoSLAM"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
+      "slug": "developmental-robotics",
+      "label": "Developmental Robotics"
+    },
+    {
+      "slug": "differentiable-physics",
+      "label": "Differentiable Physics"
+    },
+    {
+      "slug": "diffusion-policy",
+      "label": "Diffusion Policy"
+    },
+    {
+      "slug": "disembodied-llm",
+      "label": "Disembodied LLM"
+    },
+    {
+      "slug": "domestic-robotics",
+      "label": "Domestic Robotics"
+    },
+    {
+      "slug": "dreyfus-1972-what-computers-cant-do",
+      "label": "Dreyfus 1972 What Computers Cant Do"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "ecological-psychology",
+      "label": "Ecological Psychology"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "environment",
+      "label": "Environment"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "foundation-models-for-robotics",
+      "label": "Foundation Models for Robotics"
+    },
+    {
+      "slug": "free-energy-principle",
+      "label": "Free Energy Principle"
+    },
+    {
+      "slug": "friston-2010-free-energy-principle",
+      "label": "Friston 2010 Free Energy Principle"
+    },
+    {
+      "slug": "gibson-1979-ecological-approach-to-visual-perception",
+      "label": "Gibson 1979 Ecological Approach to Visual Perception"
+    },
+    {
+      "slug": "gofai",
+      "label": "GOFAI"
+    },
+    {
+      "slug": "grounded-language-understanding",
+      "label": "Grounded Language Understanding"
+    },
+    {
+      "slug": "hafner-et-al-2024-dreamer-v3",
+      "label": "Hafner et al 2024 DreamerV3"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "harnad-1990-symbol-grounding-problem",
+      "label": "Harnad 1990 Symbol Grounding Problem"
+    },
+    {
+      "slug": "hohwy-2013-the-predictive-mind",
+      "label": "Hohwy 2013 The Predictive Mind"
+    },
+    {
+      "slug": "humanoid-robotics",
+      "label": "Humanoid Robotics"
+    },
+    {
+      "slug": "ieee-robotics-standards",
+      "label": "IEEE Robotics Standards"
+    },
+    {
+      "slug": "industrial-manipulation",
+      "label": "Industrial Manipulation"
+    },
+    {
+      "slug": "isaac-lab",
+      "label": "Isaac Lab"
+    },
+    {
+      "slug": "kendall-et-al-2019-wayve-learning-to-drive-in-a-day",
+      "label": "Kendall et al 2019 Wayve Learning to Drive in a Day"
+    },
+    {
+      "slug": "lakoff-johnson-1999-philosophy-in-the-flesh",
+      "label": "Lakoff Johnson 1999 Philosophy in the Flesh"
+    },
+    {
+      "slug": "locomotion",
+      "label": "Locomotion"
+    },
+    {
+      "slug": "morphological-computation",
+      "label": "Morphological Computation"
+    },
+    {
+      "slug": "mu-jo-co",
+      "label": "MuJoCo"
+    },
+    {
+      "slug": "noe-2004-action-in-perception",
+      "label": "Noe 2004 Action in Perception"
+    },
+    {
+      "slug": "nvidia-2025-gr00-t-n1",
+      "label": "NVIDIA 2025 GR00T-N1"
+    },
+    {
+      "slug": "open-x-embodiment",
+      "label": "Open X-Embodiment"
+    },
+    {
+      "slug": "open-x-embodiment-collaboration-2023-rt-x",
+      "label": "Open X-Embodiment Collaboration 2023 RT-X"
+    },
+    {
+      "slug": "parr-pezzulo-friston-2022-active-inference",
+      "label": "Parr Pezzulo Friston 2022 Active Inference"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "PerceptionLayer"
+    },
+    {
+      "slug": "pfeifer-bongard-2007-how-the-body-shapes-the-way-we-think",
+      "label": "Pfeifer Bongard 2007 How the Body Shapes the Way We Think"
+    },
+    {
+      "slug": "phenomenology",
+      "label": "Phenomenology"
+    },
+    {
+      "slug": "phenomenology-of-perception",
+      "label": "Phenomenology of Perception"
+    },
+    {
+      "slug": "philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
+      "slug": "physical-body",
+      "label": "Physical Body"
+    },
+    {
+      "slug": "predictive-processing",
+      "label": "Predictive Processing"
+    },
+    {
+      "slug": "pure-language-models",
+      "label": "Pure Language Models"
+    },
+    {
+      "slug": "rao-ballard-1999-predictive-coding",
+      "label": "Rao Ballard 1999 Predictive Coding"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real-Time Control"
+    },
+    {
+      "slug": "robust-generalisation",
+      "label": "Robust Generalisation"
+    },
+    {
+      "slug": "ros-2",
+      "label": "ROS 2"
+    },
+    {
+      "slug": "sensorimotor-coupling",
+      "label": "Sensorimotor Coupling"
+    },
+    {
+      "slug": "sensorimotor-loop",
+      "label": "Sensorimotor Loop"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "seth-2021-being-you",
+      "label": "Seth 2021 Being You"
+    },
+    {
+      "slug": "sim-to-real-transfer",
+      "label": "Sim-to-Real Transfer"
+    },
+    {
+      "slug": "situated-cognition",
+      "label": "Situated Cognition"
+    },
+    {
+      "slug": "social-cognition",
+      "label": "Social Cognition"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "thompson-2007-mind-in-life",
+      "label": "Thompson 2007 Mind in Life"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "urdf",
+      "label": "URDF"
+    },
+    {
+      "slug": "varela-thompson-rosch-1991-the-embodied-mind",
+      "label": "Varela Thompson Rosch 1991 The Embodied Mind"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "vision-language-action-model",
+      "label": "Vision-Language-Action Model"
+    },
+    {
+      "slug": "wheeler-2005-reconstructing-the-cognitive-world",
+      "label": "Wheeler 2005 Reconstructing the Cognitive World"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "manipulation",
+      "label": "Manipulation"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

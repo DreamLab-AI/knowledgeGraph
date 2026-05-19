@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:01587613014d28c8788fce3b6b1dd9c5d8d98e13e3ac9a04da2ac985a9d531c3",
+  "title": "Fractionalized NFT",
+  "slug": "fractionalized-nft",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fractionalized-nft",
+  "domain": "spatial-computing",
+  "definition": "A non-fungible token whose ownership has been divided into multiple fungible token shares, enabling collective ownership and enhanced liquidity of high-value unique digital assets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:fractionalization-contract",
+        "label": "Fractionalization Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-registry",
+        "label": "Ownership Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:visionflow:linked:fractionalization-protocol",
+        "label": "Fractionalization Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collective-ownership",
+        "label": "Collective Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:fractional-trading",
+        "label": "Fractional Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:nft-liquidity",
+        "label": "NFT Liquidity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collective-ownership",
+      "label": "Collective Ownership"
+    },
+    {
+      "slug": "custody-system",
+      "label": "Custody System"
+    },
+    {
+      "slug": "erc-1155",
+      "label": "ERC-1155"
+    },
+    {
+      "slug": "fractional-trading",
+      "label": "Fractional Trading"
+    },
+    {
+      "slug": "fractionalization-contract",
+      "label": "Fractionalization Contract"
+    },
+    {
+      "slug": "fractionalization-protocol",
+      "label": "Fractionalization Protocol"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nft-liquidity",
+      "label": "NFT Liquidity"
+    },
+    {
+      "slug": "oma3",
+      "label": "OMA3"
+    },
+    {
+      "slug": "ownership-registry",
+      "label": "Ownership Registry"
+    },
+    {
+      "slug": "tokenization-system",
+      "label": "Tokenization System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "fungible-token",
+      "label": "Fungible Token"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "shared-ownership-model",
+      "label": "Shared Ownership Model"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

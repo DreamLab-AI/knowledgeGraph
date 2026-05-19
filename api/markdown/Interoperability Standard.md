@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/infrastructure#InteroperabilityStandard
-uri:: urn:visionclaw:concept:infrastructure:interoperability-standard
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:interoperability-standard
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Interoperability Standard
-content-hash:: sha256-12-4abcac71ac89
-legacy-term-id:: MV-9935
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#InteroperabilityStandard
+legacy_uri:: urn:visionclaw:concept:infrastructure:interoperability-standard
 public:: true
+
+# Interoperability Standard
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133",
+  "@type": "Page",
+  "vc:slug": "interoperability-standard",
+  "title": "Interoperability Standard",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cross-platform-compatibility",
+      "vc:label": "Cross-Platform Compatibility"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4abcac71ac89"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#InteroperabilityStandard"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9935"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Interoperability Standard"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability-standard"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability-standard"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:interoperability-standard",
+  "@type": "OntologyClass",
+  "label": "Interoperability Standard",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate together seamlessly, including OpenXR, glTF, USD, and emerging standards from the Metaverse Standards Forum.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-platform-compatibility",
+      "vc:label": "Cross-Platform Compatibility"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:interoperability-standard:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cross-Platform Compatibility]]",
+      "resolved": "urn:visionflow:linked:cross-platform-compatibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technical Standard]]",
+      "resolved": "urn:visionflow:owl:class:technical-standard",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate together seamlessly, including OpenXR, glTF, USD, and emerging standards from the Metaverse Standards Forum.

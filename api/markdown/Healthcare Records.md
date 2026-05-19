@@ -1,21 +1,243 @@
-iri:: http://narrativegoldmine.com/blockchain#HealthcareRecords
-uri:: urn:visionclaw:concept:blockchain:healthcare-records
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:healthcare-records
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Healthcare Records
-content-hash:: sha256-12-ce85aa4b408b
-legacy-term-id:: BC-0491
-status:: complete
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.90
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#HealthcareRecords
+legacy_uri:: urn:visionclaw:concept:blockchain:healthcare-records
 public:: true
+
+# Healthcare Records
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d",
+  "@type": "Page",
+  "vc:slug": "healthcare-records",
+  "title": "Healthcare Records",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "vc:label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
+      "vc:label": "BC-0456-self-sovereign-identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0457-decentralized-identifiers",
+      "vc:label": "BC-0457-decentralized-identifiers"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0458-verifiable-credentials",
+      "vc:label": "BC-0458-verifiable-credentials"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0459-digital-identity-wallet",
+      "vc:label": "BC-0459-digital-identity-wallet"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
+      "vc:label": "BC-0476-aml-kyc-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0492-clinical-trials",
+      "vc:label": "BC-0492-clinical-trials"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.90"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ce85aa4b408b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#HealthcareRecords"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0491"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Healthcare Records"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:healthcare-records"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:healthcare-records"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:healthcare-records",
+  "@type": "OntologyClass",
+  "label": "Healthcare Records",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.90",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:healthcare-records:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0426-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0456-self-sovereign-identity]]",
+      "resolved": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0457-decentralized-identifiers]]",
+      "resolved": "urn:visionflow:linked:bc-0457-decentralized-identifiers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0458-verifiable-credentials]]",
+      "resolved": "urn:visionflow:linked:bc-0458-verifiable-credentials",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0459-digital-identity-wallet]]",
+      "resolved": "urn:visionflow:linked:bc-0459-digital-identity-wallet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0476-aml-kyc-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0492-clinical-trials]]",
+      "resolved": "urn:visionflow:linked:bc-0492-clinical-trials",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures.

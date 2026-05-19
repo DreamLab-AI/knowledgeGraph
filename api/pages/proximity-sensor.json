@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:2ca844538bde77055fd0c9cf81651622c43fbdc292d31ac38dedf1ff91647023",
+  "title": "Proximity Sensor",
+  "slug": "proximity-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proximity-sensor",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    }
+  ]
+}

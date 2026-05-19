@@ -1,0 +1,146 @@
+{
+  "id": "urn:visionflow:page:281cdf45875a731319c752994463696dbb850c7b54402463ce1714136866e9f5",
+  "title": "Latency",
+  "slug": "latency",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:latency",
+  "domain": "spatial-computing",
+  "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:quality-of-service",
+      "label": "Quality of Service"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:measurement-tools",
+        "label": "Measurement Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:visionflow:linked:timestamp-synchronization",
+        "label": "Timestamp Synchronization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:quality-assessment",
+        "label": "Quality Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:sla-monitoring",
+        "label": "SLA Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:user-experience-tuning",
+        "label": "User Experience Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "measurement-tools",
+      "label": "Measurement Tools"
+    },
+    {
+      "slug": "monitoring-system",
+      "label": "Monitoring System"
+    },
+    {
+      "slug": "network-performance-metrics",
+      "label": "Network Performance Metrics"
+    },
+    {
+      "slug": "processing-delay",
+      "label": "Processing Delay"
+    },
+    {
+      "slug": "propagation-delay",
+      "label": "Propagation Delay"
+    },
+    {
+      "slug": "quality-assessment",
+      "label": "Quality Assessment"
+    },
+    {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
+    },
+    {
+      "slug": "sla-monitoring",
+      "label": "SLA Monitoring"
+    },
+    {
+      "slug": "timestamp-synchronization",
+      "label": "Timestamp Synchronization"
+    },
+    {
+      "slug": "user-experience-tuning",
+      "label": "User Experience Tuning"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "quality-of-service",
+      "label": "Quality of Service"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

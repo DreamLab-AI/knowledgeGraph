@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:7651aed8fcc8d20a70f1171158c1edd5022537b61fe8390179319e2aa7e7fa7d",
+  "title": "Spatial Audio Processor",
+  "slug": "spatial-audio-processor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-audio-processor",
+  "domain": "spatial-computing",
+  "definition": "Hardware or software component that renders three-dimensional sound using Head-Related Transfer Functions (HRTFs) and binaural synthesis, processing audio signals to simulate directional sound sources at specific positions in virtual space with real-time head tracking integration for immersive audio experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:audio-processing-system",
+      "label": "Audio Processing System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-sound-rendering",
+        "label": "3D Sound Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-sound-rendering",
+      "label": "3D Sound Rendering"
+    },
+    {
+      "slug": "audio-processing-system",
+      "label": "Audio Processing System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    }
+  ]
+}

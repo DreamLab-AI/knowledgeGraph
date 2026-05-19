@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:ae9313b803159ac31f6cbf65175c36aeab1b2b56847f0713621a111457c5b069",
+  "title": "Accessible Design",
+  "slug": "accessible-design",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accessible-design",
+  "domain": "spatial-computing",
+  "definition": "Accessible Design is the practice of creating virtual environments and interactions usable by people with diverse disabilities, incorporating universal design principles from conception through implementation. It integrates [[Accessibility Standard]]s, [[Accessible Experience]] philosophy, and inclusive [[3D User Interface]] design ensuring equitable [[Metaverse]] participation across visual, auditory, motor, and cognitive access dimensions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "id": "urn:visionflow:linked:universal-design",
+      "label": "Universal Design"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:user-research-with-disabled-participants",
+        "label": "User Research with Disabled Participants"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:broader-user-base",
+        "label": "Broader User Base"
+      },
+      {
+        "id": "urn:visionflow:linked:inclusive-participation",
+        "label": "Inclusive Participation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
+      "slug": "broader-user-base",
+      "label": "Broader User Base"
+    },
+    {
+      "slug": "inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "slug": "inclusive-participation",
+      "label": "Inclusive Participation"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    },
+    {
+      "slug": "user-research-with-disabled-participants",
+      "label": "User Research with Disabled Participants"
+    },
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "inclusive-xr-design",
+      "label": "Inclusive Xr Design"
+    }
+  ]
+}

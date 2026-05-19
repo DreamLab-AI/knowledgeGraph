@@ -1,0 +1,632 @@
+{
+  "id": "urn:visionflow:page:83b841ede88a5e7bef3cf31b83d82ae8176df4c4b1e060b26d6514f6d1336427",
+  "title": "Feedback Loop",
+  "slug": "feedback-loop",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:feedback-loop",
+  "domain": "infrastructure",
+  "definition": "Feedback Loop is a cybernetic and control-theoretic structure in which the output of a system is routed back as input to influence its subsequent behaviour, producing closed-loop regulation, amplification, learning, or instability depending on the loop's sign, gain, delay, and phase characteristics, formalised by Norbert Wiener in *Cybernetics: Or Control and Communication in the Animal and the Machine* (1948) and elaborated through the Macy Conferences (1946-1953), W. Ross Ashby's *Introduction to Cybernetics* (1956) and Law of Requisite Variety (V(E) \u2265 V(D) \u2014 only variety can absorb variety), Heinz von Foerster's second-order cybernetics (the observer-included loop), Gregory Bateson's *Steps to an Ecology of Mind* (1972) on circular causality and double-bind, and Humberto Maturana and Francisco Varela's autopoiesis (1972-1980) describing organisationally closed self-producing loops, instantiated across engineering control (negative-feedback governors from James Watt's centrifugal governor 1788 yielding James Clerk Maxwell's *On Governors* 1868 \u2014 the founding paper of control theory, operational-amplifier negative feedback Black/Bode/Nyquist at Bell Labs 1927-1940 enabling Bode pl",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:circular-causality",
+      "label": "Circular Causality"
+    },
+    {
+      "id": "urn:visionflow:linked:closed-loop-system",
+      "label": "Closed-Loop System"
+    },
+    {
+      "id": "urn:visionflow:linked:control-mechanism",
+      "label": "Control Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:cybernetic-process",
+      "label": "Cybernetic Process"
+    },
+    {
+      "id": "urn:visionflow:linked:system-mechanism",
+      "label": "System Mechanism"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:comparator",
+        "label": "Comparator"
+      },
+      {
+        "id": "urn:visionflow:linked:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:error-signal",
+        "label": "Error Signal"
+      },
+      {
+        "id": "urn:visionflow:linked:feedback-path",
+        "label": "Feedback Path"
+      },
+      {
+        "id": "urn:visionflow:linked:loop-delay",
+        "label": "Loop Delay"
+      },
+      {
+        "id": "urn:visionflow:linked:loop-gain",
+        "label": "Loop Gain"
+      },
+      {
+        "id": "urn:visionflow:linked:setpoint",
+        "label": "Setpoint"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:communication-channel",
+        "label": "Communication Channel"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-source",
+        "label": "Energy Source"
+      },
+      {
+        "id": "urn:visionflow:linked:measurement",
+        "label": "Measurement"
+      },
+      {
+        "id": "urn:visionflow:linked:process-variable",
+        "label": "Process Variable"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-signal",
+        "label": "Reference Signal"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptation",
+        "label": "Adaptation"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-directed-behaviour",
+        "label": "Goal-Directed Behaviour"
+      },
+      {
+        "id": "urn:visionflow:linked:homeostasis",
+        "label": "Homeostasis"
+      },
+      {
+        "id": "urn:visionflow:linked:learning",
+        "label": "Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:visionflow:linked:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:stability",
+        "label": "Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bang-bang-control",
+        "label": "Bang-Bang Control"
+      },
+      {
+        "id": "urn:visionflow:linked:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:negative-feedback",
+        "label": "Negative Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:visionflow:linked:positive-feedback",
+        "label": "Positive Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "adaptation",
+      "label": "Adaptation"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "armstrong-mc-kay-et-al-2022-climate-tipping-points-science",
+      "label": "Armstrong McKay et al 2022 Climate Tipping Points Science"
+    },
+    {
+      "slug": "ashby-1956-introduction-to-cybernetics",
+      "label": "Ashby 1956 Introduction to Cybernetics"
+    },
+    {
+      "slug": "astrom-hagglund-2006-advanced-pid-control",
+      "label": "Astrom Hagglund 2006 Advanced PID Control"
+    },
+    {
+      "slug": "astrom-murray-2020-feedback-systems",
+      "label": "Astrom Murray 2020 Feedback Systems"
+    },
+    {
+      "slug": "autopoiesis",
+      "label": "Autopoiesis"
+    },
+    {
+      "slug": "bai-et-al-2022-constitutional-ai",
+      "label": "Bai et al 2022 Constitutional AI"
+    },
+    {
+      "slug": "bail-2021-breaking-the-social-media-prism",
+      "label": "Bail 2021 Breaking the Social Media Prism"
+    },
+    {
+      "slug": "bang-bang-control",
+      "label": "Bang-Bang Control"
+    },
+    {
+      "slug": "batch-process",
+      "label": "Batch Process"
+    },
+    {
+      "slug": "bateson-1972-steps-to-an-ecology-of-mind",
+      "label": "Bateson 1972 Steps to an Ecology of Mind"
+    },
+    {
+      "slug": "beer-1972-brain-of-the-firm",
+      "label": "Beer 1972 Brain of the Firm"
+    },
+    {
+      "slug": "bode-1945-network-analysis-and-feedback-amplifier-design",
+      "label": "Bode 1945 Network Analysis and Feedback Amplifier Design"
+    },
+    {
+      "slug": "bode-plot",
+      "label": "Bode Plot"
+    },
+    {
+      "slug": "cannon-1932-the-wisdom-of-the-body",
+      "label": "Cannon 1932 The Wisdom of the Body"
+    },
+    {
+      "slug": "causal-loop-diagram",
+      "label": "Causal Loop Diagram"
+    },
+    {
+      "slug": "christiano-et-al-2017-deep-rl-from-human-preferences",
+      "label": "Christiano et al 2017 Deep RL from Human Preferences"
+    },
+    {
+      "slug": "circular-causality",
+      "label": "Circular Causality"
+    },
+    {
+      "slug": "climate-regulation",
+      "label": "Climate Regulation"
+    },
+    {
+      "slug": "closed-loop-system",
+      "label": "Closed-Loop System"
+    },
+    {
+      "slug": "communication-channel",
+      "label": "Communication Channel"
+    },
+    {
+      "slug": "comparator",
+      "label": "Comparator"
+    },
+    {
+      "slug": "control-mechanism",
+      "label": "Control Mechanism"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "ControlTheoryDomain"
+    },
+    {
+      "slug": "controller",
+      "label": "Controller"
+    },
+    {
+      "slug": "cybernetic-process",
+      "label": "Cybernetic Process"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "cybernetics-domain",
+      "label": "CyberneticsDomain"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "energy-source",
+      "label": "Energy Source"
+    },
+    {
+      "slug": "engagement-optimisation",
+      "label": "Engagement Optimisation"
+    },
+    {
+      "slug": "error-signal",
+      "label": "Error Signal"
+    },
+    {
+      "slug": "eyal-2014-hooked",
+      "label": "Eyal 2014 Hooked"
+    },
+    {
+      "slug": "feedback-path",
+      "label": "Feedback Path"
+    },
+    {
+      "slug": "feedforward-control",
+      "label": "Feedforward Control"
+    },
+    {
+      "slug": "forrester-1961-industrial-dynamics",
+      "label": "Forrester 1961 Industrial Dynamics"
+    },
+    {
+      "slug": "goal-directed-behaviour",
+      "label": "Goal-Directed Behaviour"
+    },
+    {
+      "slug": "goodhart-s-law",
+      "label": "Goodhart's Law"
+    },
+    {
+      "slug": "herrington-2021-update-to-limits-to-growth",
+      "label": "Herrington 2021 Update to Limits to Growth"
+    },
+    {
+      "slug": "homeostasis",
+      "label": "Homeostasis"
+    },
+    {
+      "slug": "iec-61131-3",
+      "label": "IEC 61131-3"
+    },
+    {
+      "slug": "ieee-control-systems-society",
+      "label": "IEEE Control Systems Society"
+    },
+    {
+      "slug": "ifac",
+      "label": "IFAC"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "isa-95",
+      "label": "ISA-95"
+    },
+    {
+      "slug": "iso-9001-pdca",
+      "label": "ISO 9001 PDCA"
+    },
+    {
+      "slug": "kalman-1960-a-new-approach-to-linear-filtering",
+      "label": "Kalman 1960 A New Approach to Linear Filtering"
+    },
+    {
+      "slug": "khalil-2002-nonlinear-systems",
+      "label": "Khalil 2002 Nonlinear Systems"
+    },
+    {
+      "slug": "laplace-transform",
+      "label": "Laplace Transform"
+    },
+    {
+      "slug": "learning",
+      "label": "Learning"
+    },
+    {
+      "slug": "lee-padmanabhan-whang-1997-bullwhip-effect",
+      "label": "Lee Padmanabhan Whang 1997 Bullwhip Effect"
+    },
+    {
+      "slug": "lenton-et-al-2008-tipping-elements-pnas",
+      "label": "Lenton et al 2008 Tipping Elements PNAS"
+    },
+    {
+      "slug": "loop-delay",
+      "label": "Loop Delay"
+    },
+    {
+      "slug": "loop-gain",
+      "label": "Loop Gain"
+    },
+    {
+      "slug": "lyapunov-stability",
+      "label": "Lyapunov Stability"
+    },
+    {
+      "slug": "maturana-varela-1980-autopoiesis-and-cognition",
+      "label": "Maturana Varela 1980 Autopoiesis and Cognition"
+    },
+    {
+      "slug": "maxwell-1868-on-governors",
+      "label": "Maxwell 1868 On Governors"
+    },
+    {
+      "slug": "meadows-2008-thinking-in-systems",
+      "label": "Meadows 2008 Thinking in Systems"
+    },
+    {
+      "slug": "meadows-et-al-1972-limits-to-growth",
+      "label": "Meadows et al 1972 Limits to Growth"
+    },
+    {
+      "slug": "measurement",
+      "label": "Measurement"
+    },
+    {
+      "slug": "mechanism-layer",
+      "label": "MechanismLayer"
+    },
+    {
+      "slug": "memoryless-system",
+      "label": "Memoryless System"
+    },
+    {
+      "slug": "model-alignment",
+      "label": "Model Alignment"
+    },
+    {
+      "slug": "model-collapse",
+      "label": "Model Collapse"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "negative-feedback",
+      "label": "Negative Feedback"
+    },
+    {
+      "slug": "nyquist-1932-regeneration-theory",
+      "label": "Nyquist 1932 Regeneration Theory"
+    },
+    {
+      "slug": "nyquist-criterion",
+      "label": "Nyquist Criterion"
+    },
+    {
+      "slug": "one-shot-process",
+      "label": "One-Shot Process"
+    },
+    {
+      "slug": "open-loop-system",
+      "label": "Open-Loop System"
+    },
+    {
+      "slug": "organisational-layer",
+      "label": "OrganisationalLayer"
+    },
+    {
+      "slug": "ouyang-et-al-2022-instruct-gpt",
+      "label": "Ouyang et al 2022 InstructGPT"
+    },
+    {
+      "slug": "pickering-2010-the-cybernetic-brain",
+      "label": "Pickering 2010 The Cybernetic Brain"
+    },
+    {
+      "slug": "pid-control",
+      "label": "PID Control"
+    },
+    {
+      "slug": "population-dynamics",
+      "label": "Population Dynamics"
+    },
+    {
+      "slug": "positive-feedback",
+      "label": "Positive Feedback"
+    },
+    {
+      "slug": "process-control",
+      "label": "Process Control"
+    },
+    {
+      "slug": "process-variable",
+      "label": "Process Variable"
+    },
+    {
+      "slug": "rafailov-et-al-2023-direct-preference-optimization",
+      "label": "Rafailov et al 2023 Direct Preference Optimization"
+    },
+    {
+      "slug": "rantanen-et-al-2022-arctic-warming-communications-earth-environment",
+      "label": "Rantanen et al 2022 Arctic Warming Communications Earth Environment"
+    },
+    {
+      "slug": "reference-signal",
+      "label": "Reference Signal"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "robotic-control",
+      "label": "Robotic Control"
+    },
+    {
+      "slug": "rosenblueth-wiener-bigelow-1943-behavior-purpose-and-teleology",
+      "label": "Rosenblueth Wiener Bigelow 1943 Behavior Purpose and Teleology"
+    },
+    {
+      "slug": "self-organisation",
+      "label": "Self-Organisation"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
+    },
+    {
+      "slug": "setpoint",
+      "label": "Setpoint"
+    },
+    {
+      "slug": "sherwood-et-al-2020-climate-sensitivity-reviews-of-geophysics",
+      "label": "Sherwood et al 2020 Climate Sensitivity Reviews of Geophysics"
+    },
+    {
+      "slug": "shumailov-et-al-2024-model-collapse-nature",
+      "label": "Shumailov et al 2024 Model Collapse Nature"
+    },
+    {
+      "slug": "stability",
+      "label": "Stability"
+    },
+    {
+      "slug": "sterman-2000-business-dynamics",
+      "label": "Sterman 2000 Business Dynamics"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "slug": "strathern-1997-improving-ratings-goodharts-law",
+      "label": "Strathern 1997 Improving Ratings Goodharts Law"
+    },
+    {
+      "slug": "sutton-barto-2018-reinforcement-learning",
+      "label": "Sutton Barto 2018 Reinforcement Learning"
+    },
+    {
+      "slug": "system-mechanism",
+      "label": "System Mechanism"
+    },
+    {
+      "slug": "systems-dynamics",
+      "label": "Systems Dynamics"
+    },
+    {
+      "slug": "systems-thinking-domain",
+      "label": "SystemsThinkingDomain"
+    },
+    {
+      "slug": "tipping-point",
+      "label": "Tipping Point"
+    },
+    {
+      "slug": "transfer-function",
+      "label": "Transfer Function"
+    },
+    {
+      "slug": "von-foerster-1981-observing-systems",
+      "label": "von Foerster 1981 Observing Systems"
+    },
+    {
+      "slug": "wiener-1948-cybernetics",
+      "label": "Wiener 1948 Cybernetics"
+    },
+    {
+      "slug": "yao-et-al-2023-re-act",
+      "label": "Yao et al 2023 ReAct"
+    },
+    {
+      "slug": "zuboff-2019-age-of-surveillance-capitalism",
+      "label": "Zuboff 2019 Age of Surveillance Capitalism"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    }
+  ]
+}

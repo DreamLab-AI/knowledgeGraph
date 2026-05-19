@@ -1,21 +1,280 @@
-iri:: http://narrativegoldmine.com/metaverse#DigitalActorCreation
-uri:: urn:visionclaw:concept:artificial-intelligence:digital-actor-creation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:digital-actor-creation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Digital Actor Creation
-content-hash:: sha256-12-593d7daacf9a
-legacy-term-id:: MV-9844
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#DigitalActorCreation
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:digital-actor-creation
 public:: true
+
+# Digital Actor Creation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed",
+  "@type": "Page",
+  "vc:slug": "digital-actor-creation",
+  "title": "Digital Actor Creation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-synthesis",
+      "vc:label": "AI Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twins",
+      "vc:label": "Digital Twins"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-performances",
+      "vc:label": "Virtual Performances"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-modeling",
+      "vc:label": "3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-human-technology",
+      "vc:label": "Digital Human Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-capture",
+      "vc:label": "Motion Capture"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-593d7daacf9a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#DigitalActorCreation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9844"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Actor Creation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:digital-actor-creation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:digital-actor-creation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-actor-creation",
+  "@type": "OntologyClass",
+  "label": "Digital Actor Creation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-human-technology",
+      "vc:label": "Digital Human Technology"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications. bridges-to:: [[DID Nostr Identity]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:ai-synthesis",
+      "vc:label": "AI Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-modeling",
+      "vc:label": "3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-capture",
+      "vc:label": "Motion Capture"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:digital-twins",
+      "vc:label": "Digital Twins"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-performances",
+      "vc:label": "Virtual Performances"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-actor-creation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Synthesis]]",
+      "resolved": "urn:visionflow:linked:ai-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Twins]]",
+      "resolved": "urn:visionflow:linked:digital-twins",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Synthetic Media]]",
+      "resolved": "urn:visionflow:linked:synthetic-media",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Performances]]",
+      "resolved": "urn:visionflow:linked:virtual-performances",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Modeling]]",
+      "resolved": "urn:visionflow:owl:class:3-d-modeling",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Human Technology]]",
+      "resolved": "urn:visionflow:owl:class:digital-human-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Capture]]",
+      "resolved": "urn:visionflow:owl:class:motion-capture",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.

@@ -1,21 +1,231 @@
-iri:: http://narrativegoldmine.com/metaverse#DataAugmentationStrategies
-uri:: urn:visionclaw:concept:artificial-intelligence:data-augmentation-strategies
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:data-augmentation-strategies
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Data Augmentation Strategies
-content-hash:: sha256-12-6bb9e44e19b7
-legacy-term-id:: AI-0286
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#DataAugmentationStrategies
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:data-augmentation-strategies
 public:: true
+
+# Data Augmentation Strategies
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e",
+  "@type": "Page",
+  "vc:slug": "data-augmentation-strategies",
+  "title": "Data Augmentation Strategies",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:apple-machine-learning-research",
+      "vc:label": "Apple Machine Learning Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:ar-xiv",
+      "vc:label": "arXiv"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-cvf-international-conference-on-computer-vision",
+      "vc:label": "IEEE/CVF International Conference on Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:nature",
+      "vc:label": "Nature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6bb9e44e19b7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#DataAugmentationStrategies"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0286"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Data Augmentation Strategies"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:data-augmentation-strategies"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:data-augmentation-strategies"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:data-augmentation-strategies",
+  "@type": "OntologyClass",
+  "label": "Data Augmentation Strategies",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:data-augmentation-strategies:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Apple Machine Learning Research]]",
+      "resolved": "urn:visionflow:linked:apple-machine-learning-research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[arXiv]]",
+      "resolved": "urn:visionflow:linked:ar-xiv",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE/CVF International Conference on Computer Vision]]",
+      "resolved": "urn:visionflow:linked:ieee-cvf-international-conference-on-computer-vision",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nature]]",
+      "resolved": "urn:visionflow:linked:nature",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.

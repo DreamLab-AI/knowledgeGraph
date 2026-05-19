@@ -1,0 +1,772 @@
+{
+  "id": "urn:visionflow:page:bc50e32aa9540e73af92b54b682a78ab0b2188deb4acf2b1d2c5884d64fb4dc8",
+  "title": "Hyperledger Indy",
+  "slug": "hyperledger-indy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hyperledger-indy",
+  "domain": "blockchain",
+  "definition": "**Hyperledger Indy** is the purpose-built, permissioned, Byzantine-fault-tolerant distributed-ledger project hosted by the [[Linux Foundation]]-resident [[Hyperledger Foundation]] (now consolidated under the **LF Decentralized Trust** umbrella since June 2024) that provides the canonical reference implementation of a **verifiable data registry** (VDR) for **[[Self-Sovereign Identity]]** (SSI) infrastructure, originally seeded in September 2017 by a code contribution from the **[[Sovrin Foundation]]** (a Utah-incorporated non-profit established in 2016 by Phil Windley, Jason Law and Drummond Reed to operationalise the Sovrin Trust Framework and the public-permissioned Sovrin Network), implementing a four-node-minimum ordering quorum of **stewards** running the **[[Plenum]]** consensus protocol (a Python-based [[Practical Byzantine Fault Tolerance|PBFT]] derivative incorporating the **RBFT** (Redundant BFT, Aublin-Mokhtar-Qu\u00e9ma 2013) and **Aardvark** (Clement-Wong-Alvisi-Dahlin 2009) view-change resilience improvements ensuring liveness under faulty primary replicas), where the on-ledger state is deliberately constrained to four object types \u2014 public **DIDs** under the `did:sov` lega",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "label": "Byzantine Fault Tolerant System"
+    },
+    {
+      "id": "urn:visionflow:linked:decentralized-identifier-method",
+      "label": "Decentralized Identifier Method"
+    },
+    {
+      "id": "urn:visionflow:linked:hyperledger-project",
+      "label": "Hyperledger Project"
+    },
+    {
+      "id": "urn:visionflow:linked:permissioned-distributed-ledger",
+      "label": "Permissioned Distributed Ledger"
+    },
+    {
+      "id": "urn:visionflow:owl:class:verifiable-data-registry",
+      "label": "Verifiable Data Registry"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:anon-creds",
+        "label": "AnonCreds"
+      },
+      {
+        "id": "urn:visionflow:linked:aries-askar",
+        "label": "Aries Askar"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-definition",
+        "label": "Credential Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:genesis-transaction-file",
+        "label": "Genesis Transaction File"
+      },
+      {
+        "id": "urn:visionflow:linked:indy-credx",
+        "label": "Indy Credx"
+      },
+      {
+        "id": "urn:visionflow:linked:indy-node",
+        "label": "Indy Node"
+      },
+      {
+        "id": "urn:visionflow:linked:indy-vdr",
+        "label": "Indy VDR"
+      },
+      {
+        "id": "urn:visionflow:linked:plenum",
+        "label": "Plenum"
+      },
+      {
+        "id": "urn:visionflow:linked:revocation-registry",
+        "label": "Revocation Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:steward-node",
+        "label": "Steward Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-accumulator",
+        "label": "Cryptographic Accumulator"
+      },
+      {
+        "id": "urn:visionflow:linked:genesis-pool-configuration",
+        "label": "Genesis Pool Configuration"
+      },
+      {
+        "id": "urn:visionflow:linked:hyperledger-aries",
+        "label": "Hyperledger Aries"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-wallet-storage",
+        "label": "Secure Wallet Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:steward-network",
+        "label": "Steward Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:issuer-holder-verifier-triangle",
+        "label": "Issuer-Holder-Verifier Triangle"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-tenant-identity-ledger",
+        "label": "Multi-Tenant Identity Ledger"
+      },
+      {
+        "id": "urn:visionflow:linked:offline-credential-verification",
+        "label": "Offline Credential Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:predicate-proof",
+        "label": "Predicate Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:revocation-without-correlation",
+        "label": "Revocation without Correlation"
+      },
+      {
+        "id": "urn:visionflow:linked:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:unlinkable-credential-presentation",
+        "label": "Unlinkable Credential Presentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:sovrin-trust-framework",
+        "label": "Sovrin Trust Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-over-ip-stack",
+        "label": "Trust over IP Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-decentralized-identifier-specification",
+        "label": "W3C Decentralized Identifier Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "id": "urn:visionflow:linked:zkp-based-anonymous-credentials",
+        "label": "ZKP-Based Anonymous Credentials"
+      },
+      {
+        "id": "urn:visionflow:owl:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aardvark-bft",
+      "label": "Aardvark BFT"
+    },
+    {
+      "slug": "allen-2016-the-path-to-self-sovereign-identity",
+      "label": "Allen 2016 The Path to Self-Sovereign Identity"
+    },
+    {
+      "slug": "anon-creds",
+      "label": "AnonCreds"
+    },
+    {
+      "slug": "anon-creds-specification-v1-0",
+      "label": "AnonCreds Specification v1.0"
+    },
+    {
+      "slug": "aries-askar",
+      "label": "Aries Askar"
+    },
+    {
+      "slug": "aries-cloud-agent-python",
+      "label": "Aries Cloud Agent Python"
+    },
+    {
+      "slug": "aries-cloud-agent-python",
+      "label": "Aries Cloud Agent Python"
+    },
+    {
+      "slug": "atala-prism",
+      "label": "Atala PRISM"
+    },
+    {
+      "slug": "aublin-mokhtar-qu-ma-2013-icdcs-rbft",
+      "label": "Aublin Mokhtar Qu\u00e9ma 2013 ICDCS RBFT"
+    },
+    {
+      "slug": "bc-wallet",
+      "label": "BC Wallet"
+    },
+    {
+      "slug": "bifold-wallet",
+      "label": "Bifold Wallet"
+    },
+    {
+      "slug": "bls12-381",
+      "label": "BLS12-381"
+    },
+    {
+      "slug": "boneh-boyen-shacham-2004-crypto-short-group-signatures",
+      "label": "Boneh Boyen Shacham 2004 CRYPTO Short Group Signatures"
+    },
+    {
+      "slug": "byzantine-fault-tolerant-system",
+      "label": "Byzantine Fault Tolerant System"
+    },
+    {
+      "slug": "camenisch-drijvers-lehmann-2016-trust-anonymous-attestation",
+      "label": "Camenisch Drijvers Lehmann 2016 TRUST Anonymous Attestation"
+    },
+    {
+      "slug": "camenisch-kohlweiss-soriente-2009-pkc-accumulator-anonymous-credentials",
+      "label": "Camenisch Kohlweiss Soriente 2009 PKC Accumulator Anonymous Credentials"
+    },
+    {
+      "slug": "camenisch-lysyanskaya-2002-scn-signature-scheme",
+      "label": "Camenisch Lysyanskaya 2002 SCN Signature Scheme"
+    },
+    {
+      "slug": "camenisch-lysyanskaya-2004-crypto-bilinear-maps",
+      "label": "Camenisch Lysyanskaya 2004 CRYPTO Bilinear Maps"
+    },
+    {
+      "slug": "camenisch-lysyanskaya-signature",
+      "label": "Camenisch-Lysyanskaya Signature"
+    },
+    {
+      "slug": "cameron-2005-the-laws-of-identity",
+      "label": "Cameron 2005 The Laws of Identity"
+    },
+    {
+      "slug": "castro-liskov-1999-osdi-practical-byzantine-fault-tolerance",
+      "label": "Castro Liskov 1999 OSDI Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "clement-wong-alvisi-dahlin-2009-nsdi-aardvark",
+      "label": "Clement Wong Alvisi Dahlin 2009 NSDI Aardvark"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "credential-definition",
+      "label": "Credential Definition"
+    },
+    {
+      "slug": "credential-layer",
+      "label": "CredentialLayer"
+    },
+    {
+      "slug": "credential-schema",
+      "label": "Credential Schema"
+    },
+    {
+      "slug": "credo",
+      "label": "Credo"
+    },
+    {
+      "slug": "cross-border-credential-recognition",
+      "label": "Cross-Border Credential Recognition"
+    },
+    {
+      "slug": "cryptographic-accumulator",
+      "label": "Cryptographic Accumulator"
+    },
+    {
+      "slug": "cryptographic-primitive-layer",
+      "label": "CryptographicPrimitiveLayer"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "decentralized-identifier-method",
+      "label": "Decentralized Identifier Method"
+    },
+    {
+      "slug": "decentralized-identity-foundation",
+      "label": "Decentralized Identity Foundation"
+    },
+    {
+      "slug": "did-ethr",
+      "label": "did:ethr"
+    },
+    {
+      "slug": "did-indy-method-specification",
+      "label": "did:indy Method Specification"
+    },
+    {
+      "slug": "did-ion",
+      "label": "did:ion"
+    },
+    {
+      "slug": "did-key",
+      "label": "did:key"
+    },
+    {
+      "slug": "did-peer",
+      "label": "did:peer"
+    },
+    {
+      "slug": "did-plc",
+      "label": "did:plc"
+    },
+    {
+      "slug": "did-sov-method-specification",
+      "label": "did:sov Method Specification"
+    },
+    {
+      "slug": "did-web",
+      "label": "did:web"
+    },
+    {
+      "slug": "did-webvh",
+      "label": "did:webvh"
+    },
+    {
+      "slug": "distributed-hash-table-routing",
+      "label": "Distributed Hash Table Routing"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "e-idas-article-6a-wallet-trust-model",
+      "label": "eIDAS Article 6a Wallet Trust Model"
+    },
+    {
+      "slug": "esatus-ag",
+      "label": "esatus AG"
+    },
+    {
+      "slug": "european-commission-2024-eudi-wallet-arf-v1-3",
+      "label": "European Commission 2024 EUDI Wallet ARF v1.3"
+    },
+    {
+      "slug": "findy",
+      "label": "Findy"
+    },
+    {
+      "slug": "gdpr-data-minimisation",
+      "label": "GDPR Data Minimisation"
+    },
+    {
+      "slug": "genesis-pool-configuration",
+      "label": "Genesis Pool Configuration"
+    },
+    {
+      "slug": "genesis-transaction-file",
+      "label": "Genesis Transaction File"
+    },
+    {
+      "slug": "government-digital-identity",
+      "label": "Government Digital Identity"
+    },
+    {
+      "slug": "government-of-british-columbia-von-org-book-case-studies",
+      "label": "Government of British Columbia VON OrgBook Case Studies"
+    },
+    {
+      "slug": "hyperledger-aries",
+      "label": "Hyperledger Aries"
+    },
+    {
+      "slug": "hyperledger-foundation",
+      "label": "Hyperledger Foundation"
+    },
+    {
+      "slug": "hyperledger-lf-decentralized-trust-indy-project-documentation",
+      "label": "Hyperledger / LF Decentralized Trust Indy Project Documentation"
+    },
+    {
+      "slug": "hyperledger-project",
+      "label": "Hyperledger Project"
+    },
+    {
+      "slug": "hyperledger-ursa",
+      "label": "Hyperledger Ursa"
+    },
+    {
+      "slug": "iata-travel-pass",
+      "label": "IATA Travel Pass"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "IdentityDomain"
+    },
+    {
+      "slug": "idnow",
+      "label": "IDnow"
+    },
+    {
+      "slug": "idunion",
+      "label": "IDUnion"
+    },
+    {
+      "slug": "idunion-e-g-production-network-documentation",
+      "label": "IDUnion eG Production Network Documentation"
+    },
+    {
+      "slug": "ietf-sd-jwt-vc-internet-draft",
+      "label": "IETF SD-JWT-VC Internet Draft"
+    },
+    {
+      "slug": "indicio",
+      "label": "Indicio"
+    },
+    {
+      "slug": "indicio-network",
+      "label": "Indicio Network"
+    },
+    {
+      "slug": "indy-credx",
+      "label": "Indy Credx"
+    },
+    {
+      "slug": "indy-node",
+      "label": "Indy Node"
+    },
+    {
+      "slug": "indy-plenum",
+      "label": "Indy Plenum"
+    },
+    {
+      "slug": "indy-vdr",
+      "label": "Indy VDR"
+    },
+    {
+      "slug": "ion-sidetree-on-bitcoin",
+      "label": "ION (Sidetree on Bitcoin)"
+    },
+    {
+      "slug": "iso-iec-18013-5-m-dl",
+      "label": "ISO/IEC 18013-5 (mDL)"
+    },
+    {
+      "slug": "iso-iec-18013-5-m-dl",
+      "label": "ISO/IEC 18013-5 mDL"
+    },
+    {
+      "slug": "iso-m-dl-18013-5",
+      "label": "ISO mDL 18013-5"
+    },
+    {
+      "slug": "iso-m-dl-18013-5",
+      "label": "ISO mDL 18013-5"
+    },
+    {
+      "slug": "issuer-holder-verifier-triangle",
+      "label": "Issuer-Holder-Verifier Triangle"
+    },
+    {
+      "slug": "json-ld",
+      "label": "JSON-LD"
+    },
+    {
+      "slug": "lamport-shostak-pease-1982-byzantine-generals",
+      "label": "Lamport Shostak Pease 1982 Byzantine Generals"
+    },
+    {
+      "slug": "ledger-layer",
+      "label": "LedgerLayer"
+    },
+    {
+      "slug": "lf-decentralized-trust",
+      "label": "LF Decentralized Trust"
+    },
+    {
+      "slug": "linux-foundation",
+      "label": "Linux Foundation"
+    },
+    {
+      "slug": "linux-foundation-public-health-good-health-pass-blueprint",
+      "label": "Linux Foundation Public Health Good Health Pass Blueprint"
+    },
+    {
+      "slug": "m-doc",
+      "label": "mDoc"
+    },
+    {
+      "slug": "mattr",
+      "label": "MATTR"
+    },
+    {
+      "slug": "microsoft-entra-verified-id",
+      "label": "Microsoft Entra Verified ID"
+    },
+    {
+      "slug": "multi-signature-cryptographic-schemes",
+      "label": "Multi-Signature Cryptographic Schemes"
+    },
+    {
+      "slug": "multi-tenant-identity-ledger",
+      "label": "Multi-Tenant Identity Ledger"
+    },
+    {
+      "slug": "offline-credential-verification",
+      "label": "Offline Credential Verification"
+    },
+    {
+      "slug": "open-identity-exchange",
+      "label": "Open Identity Exchange"
+    },
+    {
+      "slug": "open-wallet-foundation",
+      "label": "OpenWallet Foundation"
+    },
+    {
+      "slug": "open-wallet-foundation-credo-bifold-aca-py-documentation",
+      "label": "OpenWallet Foundation Credo Bifold ACA-Py Documentation"
+    },
+    {
+      "slug": "org-book-bc",
+      "label": "OrgBook BC"
+    },
+    {
+      "slug": "pairing-friendly-elliptic-curve",
+      "label": "Pairing-Friendly Elliptic Curve"
+    },
+    {
+      "slug": "pedersen-1991-crypto-verifiable-secret-sharing",
+      "label": "Pedersen 1991 CRYPTO Verifiable Secret Sharing"
+    },
+    {
+      "slug": "pedersen-commitment",
+      "label": "Pedersen Commitment"
+    },
+    {
+      "slug": "permissioned-distributed-ledger",
+      "label": "Permissioned Distributed Ledger"
+    },
+    {
+      "slug": "plenum",
+      "label": "Plenum"
+    },
+    {
+      "slug": "plenum-consensus",
+      "label": "Plenum Consensus"
+    },
+    {
+      "slug": "predicate-proof",
+      "label": "Predicate Proof"
+    },
+    {
+      "slug": "predicate-proofs",
+      "label": "Predicate Proofs"
+    },
+    {
+      "slug": "preukschat-reed-2021-self-sovereign-identity-manning",
+      "label": "Preukschat Reed 2021 Self-Sovereign Identity Manning"
+    },
+    {
+      "slug": "privacy-preserving-compliance",
+      "label": "Privacy-Preserving Compliance"
+    },
+    {
+      "slug": "python-3-6",
+      "label": "Python 3.6+"
+    },
+    {
+      "slug": "rbft-consensus",
+      "label": "RBFT Consensus"
+    },
+    {
+      "slug": "reed-law-hardman-2017-the-inevitable-rise-of-self-sovereign-identity",
+      "label": "Reed Law Hardman 2017 The Inevitable Rise of Self-Sovereign Identity"
+    },
+    {
+      "slug": "regulation-eu-2024-1183-e-idas-2-0",
+      "label": "Regulation EU 2024-1183 eIDAS 2.0"
+    },
+    {
+      "slug": "revocation-registry",
+      "label": "Revocation Registry"
+    },
+    {
+      "slug": "revocation-without-correlation",
+      "label": "Revocation without Correlation"
+    },
+    {
+      "slug": "rocks-db",
+      "label": "RocksDB"
+    },
+    {
+      "slug": "sd-jwt-vc",
+      "label": "SD-JWT VC"
+    },
+    {
+      "slug": "secure-wallet-storage",
+      "label": "Secure Wallet Storage"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "Selective Disclosure"
+    },
+    {
+      "slug": "sovrin-foundation",
+      "label": "Sovrin Foundation"
+    },
+    {
+      "slug": "sovrin-governance-framework-v2",
+      "label": "Sovrin Governance Framework v2"
+    },
+    {
+      "slug": "sovrin-token-deprecated",
+      "label": "Sovrin Token (deprecated)"
+    },
+    {
+      "slug": "sovrin-trust-framework",
+      "label": "Sovrin Trust Framework"
+    },
+    {
+      "slug": "steward-network",
+      "label": "Steward Network"
+    },
+    {
+      "slug": "steward-node",
+      "label": "Steward Node"
+    },
+    {
+      "slug": "trust-over-ip-foundation",
+      "label": "Trust over IP Foundation"
+    },
+    {
+      "slug": "trust-over-ip-foundation",
+      "label": "Trust over IP Foundation"
+    },
+    {
+      "slug": "trust-over-ip-foundation-technology-stack",
+      "label": "Trust over IP Foundation Technology Stack"
+    },
+    {
+      "slug": "trust-over-ip-stack",
+      "label": "Trust over IP Stack"
+    },
+    {
+      "slug": "trust-over-ip-technology-stack",
+      "label": "Trust over IP Technology Stack"
+    },
+    {
+      "slug": "unlinkable-credential-presentation",
+      "label": "Unlinkable Credential Presentation"
+    },
+    {
+      "slug": "verifiable-organizational-credentials",
+      "label": "Verifiable Organizational Credentials"
+    },
+    {
+      "slug": "verifiable-organizations-network",
+      "label": "Verifiable Organizations Network"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-2022-did-core-1-0-recommendation",
+      "label": "W3C 2022 DID Core 1.0 Recommendation"
+    },
+    {
+      "slug": "w3-c-2024-verifiable-credentials-data-model-v2-0",
+      "label": "W3C 2024 Verifiable Credentials Data Model v2.0"
+    },
+    {
+      "slug": "w3-c-decentralized-identifier-specification",
+      "label": "W3C Decentralized Identifier Specification"
+    },
+    {
+      "slug": "w3-c-did-core-1-0",
+      "label": "W3C DID Core 1.0"
+    },
+    {
+      "slug": "w3-c-did-specification-registries-did-indy-2022",
+      "label": "W3C DID Specification Registries did:indy 2022"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials-data-model",
+      "label": "W3C Verifiable Credentials Data Model"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials-data-model-v2-0",
+      "label": "W3C Verifiable Credentials Data Model v2.0"
+    },
+    {
+      "slug": "windley-2018-sovrin-protocol-token-white-paper",
+      "label": "Windley 2018 Sovrin Protocol Token White Paper"
+    },
+    {
+      "slug": "zero-mq",
+      "label": "ZeroMQ"
+    },
+    {
+      "slug": "zkp-based-anonymous-credentials",
+      "label": "ZKP-Based Anonymous Credentials"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "rust",
+      "label": "Rust"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "verifiable-data-registry",
+      "label": "Verifiable Data Registry"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

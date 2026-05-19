@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:79e120356a5c86174c4a2db4b7513761129e86e03edfc81eafa88806f1f5e13c",
+  "title": "Reality Virtuality Continuum",
+  "slug": "reality-virtuality-continuum",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reality-virtuality-continuum",
+  "domain": "spatial-computing",
+  "definition": "A theoretical framework introduced by Milgram and Kishino in 1994 describing the continuous spectrum between purely physical reality and fully virtual environments, with augmented reality and augmented virtuality as intermediate mixed reality states along this scale.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:xr-framework",
+      "label": "XR Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-reality-experiences",
+        "label": "Cross Reality Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-reality-experiences",
+      "label": "Cross Reality Experiences"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "xr-framework",
+      "label": "XR Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

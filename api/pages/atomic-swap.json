@@ -1,0 +1,142 @@
+{
+  "id": "urn:visionflow:page:d64fce874cf711a852f123ef29e1fb18fff53a49cac102b6d24c255e988eae9a",
+  "title": "Atomic Swap",
+  "slug": "atomic-swap",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:atomic-swap",
+  "domain": "blockchain",
+  "definition": "Trustless peer-to-peer cryptocurrency exchange mechanism across different blockchains using Hash Time-Locked Contracts (HTLCs) that guarantees atomic execution where the swap either completes fully or not at all, eliminating counterparty risk without requiring centralized intermediaries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    },
+    {
+      "slug": "erc-20-token",
+      "label": "ERC-20 Token"
+    },
+    {
+      "slug": "hash-time-locked-contract",
+      "label": "Hash Time-Locked Contract"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lock-and-mint-mechanism",
+      "label": "Lock and Mint Mechanism"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

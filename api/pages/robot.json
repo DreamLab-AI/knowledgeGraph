@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:117419dfa915d7e1851df02640e5ab9e93fa372662b543b5987ef040a3aaee24",
+  "title": "Robot",
+  "slug": "robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot",
+  "domain": "robotics",
+  "definition": "A robot is an actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, to perform intended tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 1.0,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "mechatronic-system",
+      "label": "MechatronicSystem"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "AutonomousAgent"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "manipulator-robot",
+      "label": "Manipulator Robot"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

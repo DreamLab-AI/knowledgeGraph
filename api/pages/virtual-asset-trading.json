@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:cb66f9db7a80e754568a0338fe0a10922cf761f6614b577b34e070ebe4f7751e",
+  "title": "Virtual Asset Trading",
+  "slug": "virtual-asset-trading",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-asset-trading",
+  "domain": "spatial-computing",
+  "definition": "The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    }
+  ]
+}

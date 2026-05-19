@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:0c1126d0248cd5722320d63a95026916ff3dd44bd739ab4e2738df8c1700995c",
+  "title": "Bias Mitigation Techniques",
+  "slug": "bias-mitigation-techniques",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bias-mitigation-techniques",
+  "domain": "artificial-intelligence",
+  "definition": "Bias Mitigation Techniques are methods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at different stages of the machine learning pipeline. These techniques are categorized into pre-processing methods (data transformation before training, including reweighting samples, resampling underrepresented groups, SMOTE for synthetic minority oversampling, and feature modification), in-processing methods (fairness constraints during model training, including regularization penalties, adversarial debiasing that trains models to be invariant to protected attributes, and constrained optimization), and post-processing methods (prediction adjustment after training, including threshold optimization for different groups and calibration techniques). Each approach involves tradeoffs between fairness improvement and predictive accuracy, with pre-processing methods typically preserving model flexibility but potentially discarding useful data, in-processing methods directly optimizing fairness-accuracy frontiers but requiring specialized algorithms, and post-processing methods being model-agnostic but potentially violating calibration. The ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aif360",
+      "label": "AIF360"
+    },
+    {
+      "slug": "fairlearn",
+      "label": "Fairlearn"
+    },
+    {
+      "slug": "ieee-p7003-2021",
+      "label": "IEEE P7003-2021"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    }
+  ]
+}

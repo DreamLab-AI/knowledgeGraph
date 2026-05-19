@@ -1,20 +1,706 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Langchain
-uri:: urn:visionclaw:concept:artificial-intelligence:langchain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:langchain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: LangChain
-content-hash:: sha256-12-3b7f1d5e9c2a
-status:: complete
-maturity:: established
-quality-score:: 0.60
-authority-score:: 0.75
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Langchain
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:langchain
 public:: true
+
+# LangChain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457",
+  "@type": "Page",
+  "vc:slug": "lang-chain",
+  "title": "LangChain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:agent-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestration-framework",
+      "vc:label": "Agent Orchestration Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic-claude-api",
+      "vc:label": "Anthropic Claude API"
+    },
+    {
+      "@id": "urn:visionflow:linked:chroma-vector-database",
+      "vc:label": "Chroma Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-memory",
+      "vc:label": "Conversational Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding-model",
+      "vc:label": "Embedding Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:faiss",
+      "vc:label": "FAISS"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-agent",
+      "vc:label": "LangChain Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-chain",
+      "vc:label": "LangChain Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-git-hub-repository",
+      "vc:label": "LangChain GitHub Repository"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-memory",
+      "vc:label": "LangChain Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-retriever",
+      "vc:label": "LangChain Retriever"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-tool",
+      "vc:label": "LangChain Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph-documentation",
+      "vc:label": "LangGraph Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph-workflow",
+      "vc:label": "LangGraph Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-smith-observability",
+      "vc:label": "LangSmith Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-smith-platform",
+      "vc:label": "LangSmith Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:lcel-lang-chain-expression-language",
+      "vc:label": "LCEL LangChain Expression Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-application-framework",
+      "vc:label": "LLM Application Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-application-stack",
+      "vc:label": "LLM Application Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol-integration",
+      "vc:label": "Model Context Protocol Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-step-reasoning",
+      "vc:label": "Multi-Step Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips-2020-rag-paper",
+      "vc:label": "NeurIPS 2020 RAG Paper"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-ai-api",
+      "vc:label": "OpenAI API"
+    },
+    {
+      "@id": "urn:visionflow:linked:pinecone",
+      "vc:label": "Pinecone"
+    },
+    {
+      "@id": "urn:visionflow:linked:python-3",
+      "vc:label": "Python 3"
+    },
+    {
+      "@id": "urn:visionflow:linked:rag-pipeline",
+      "vc:label": "RAG Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-agent-pattern",
+      "vc:label": "ReAct Agent Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-iclr-2023",
+      "vc:label": "ReAct ICLR 2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-calling-agent",
+      "vc:label": "Tool-Calling Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:auto-ml",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "Blockchain Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "vc:label": "NGM Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-xr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "Robotics Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solid-pod",
+      "vc:label": "Solid Pod"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.75"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3b7f1d5e9c2a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Langchain"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "LangChain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.60"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:langchain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:langchain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:lang-chain",
+  "@type": "OntologyClass",
+  "label": "LangChain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:agent-orchestration-framework",
+      "vc:label": "Agent Orchestration Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-application-framework",
+      "vc:label": "LLM Application Framework"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "LangChain is an open-source Python and TypeScript framework for composing [[Large Language Model]] applications as chains of modular components — prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents — providing a unified interface across LLM providers (OpenAI, Anthropic, Cohere, local Ollama) and complementary services (vector databases, document loaders, external APIs) that accelerates the development of conversational AI systems, RAG pipelines, and agentic workflows, integrating natively with the [[Model Context Protocol]] tool surface used by [[VisionClaw Agentic Container]] agent skills.",
+  "vc:qualityScore": {
+    "@value": "0.60",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.75",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:llm-application-stack",
+      "vc:label": "LLM Application Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:rag-pipeline",
+      "vc:label": "RAG Pipeline"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:lang-chain-agent",
+      "vc:label": "LangChain Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-chain",
+      "vc:label": "LangChain Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-memory",
+      "vc:label": "LangChain Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-retriever",
+      "vc:label": "LangChain Retriever"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-tool",
+      "vc:label": "LangChain Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph-workflow",
+      "vc:label": "LangGraph Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-smith-observability",
+      "vc:label": "LangSmith Observability"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:embedding-model",
+      "vc:label": "Embedding Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:python-3",
+      "vc:label": "Python 3"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:conversational-memory",
+      "vc:label": "Conversational Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-step-reasoning",
+      "vc:label": "Multi-Step Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-calling-agent",
+      "vc:label": "Tool-Calling Agent"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:lcel-lang-chain-expression-language",
+      "vc:label": "LCEL LangChain Expression Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol-integration",
+      "vc:label": "Model Context Protocol Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-agent-pattern",
+      "vc:label": "ReAct Agent Pattern"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:anthropic-claude-api",
+      "vc:label": "Anthropic Claude API"
+    },
+    {
+      "@id": "urn:visionflow:linked:chroma-vector-database",
+      "vc:label": "Chroma Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:faiss",
+      "vc:label": "FAISS"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-ai-api",
+      "vc:label": "OpenAI API"
+    },
+    {
+      "@id": "urn:visionflow:linked:pinecone",
+      "vc:label": "Pinecone"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:auto-ml",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solid-pod",
+      "vc:label": "Solid Pod"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:lang-chain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AgentLayer]]",
+      "resolved": "urn:visionflow:linked:agent-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Orchestration Framework]]",
+      "resolved": "urn:visionflow:linked:agent-orchestration-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic Claude API]]",
+      "resolved": "urn:visionflow:linked:anthropic-claude-api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chroma Vector Database]]",
+      "resolved": "urn:visionflow:linked:chroma-vector-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conversational Memory]]",
+      "resolved": "urn:visionflow:linked:conversational-memory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Embedding Model]]",
+      "resolved": "urn:visionflow:linked:embedding-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FAISS]]",
+      "resolved": "urn:visionflow:linked:faiss",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangChain Agent]]",
+      "resolved": "urn:visionflow:linked:lang-chain-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangChain Chain]]",
+      "resolved": "urn:visionflow:linked:lang-chain-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangChain GitHub Repository]]",
+      "resolved": "urn:visionflow:linked:lang-chain-git-hub-repository",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangChain Memory]]",
+      "resolved": "urn:visionflow:linked:lang-chain-memory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangChain Retriever]]",
+      "resolved": "urn:visionflow:linked:lang-chain-retriever",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangChain Tool]]",
+      "resolved": "urn:visionflow:linked:lang-chain-tool",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangGraph Documentation]]",
+      "resolved": "urn:visionflow:linked:lang-graph-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangGraph Workflow]]",
+      "resolved": "urn:visionflow:linked:lang-graph-workflow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangSmith Observability]]",
+      "resolved": "urn:visionflow:linked:lang-smith-observability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangSmith Platform]]",
+      "resolved": "urn:visionflow:linked:lang-smith-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large Language Model]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LCEL LangChain Expression Language]]",
+      "resolved": "urn:visionflow:linked:lcel-lang-chain-expression-language",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LLM Application Framework]]",
+      "resolved": "urn:visionflow:linked:llm-application-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LLM Application Stack]]",
+      "resolved": "urn:visionflow:linked:llm-application-stack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Context Protocol Integration]]",
+      "resolved": "urn:visionflow:linked:model-context-protocol-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Step Reasoning]]",
+      "resolved": "urn:visionflow:linked:multi-step-reasoning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NeurIPS 2020 RAG Paper]]",
+      "resolved": "urn:visionflow:linked:neur-ips-2020-rag-paper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenAI API]]",
+      "resolved": "urn:visionflow:linked:open-ai-api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pinecone]]",
+      "resolved": "urn:visionflow:linked:pinecone",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Python 3]]",
+      "resolved": "urn:visionflow:linked:python-3",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RAG Pipeline]]",
+      "resolved": "urn:visionflow:linked:rag-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ReAct Agent Pattern]]",
+      "resolved": "urn:visionflow:linked:re-act-agent-pattern",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ReAct ICLR 2023]]",
+      "resolved": "urn:visionflow:linked:re-act-iclr-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Retrieval Augmented Generation]]",
+      "resolved": "urn:visionflow:linked:retrieval-augmented-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tool-Calling Agent]]",
+      "resolved": "urn:visionflow:linked:tool-calling-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vector Database]]",
+      "resolved": "urn:visionflow:linked:vector-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutoML]]",
+      "resolved": "urn:visionflow:owl:class:auto-ml",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Domain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NGM Domain]]",
+      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenXR]]",
+      "resolved": "urn:visionflow:owl:class:open-xr",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Operating System]]",
+      "resolved": "urn:visionflow:owl:class:robot-operating-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics Domain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solid Pod]]",
+      "resolved": "urn:visionflow:owl:class:solid-pod",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - LangChain is an open-source Python and TypeScript framework for composing [[Large Language Model]] applications as chains of modular components — prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents — providing a unified interface across LLM providers (OpenAI, Anthropic, Cohere, local Ollama) and complementary services (vector databases, document loaders, external APIs) that accelerates the development of conversational AI systems, RAG pipelines, and agentic workflows, integrating natively with the [[Model Context Protocol]] tool surface used by [[VisionClaw Agentic Container]] agent skills.

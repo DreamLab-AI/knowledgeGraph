@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251",
+  "title": "Virtual Reality Telepresence",
+  "slug": "virtual-reality-telepresence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-reality-telepresence",
+  "domain": "distributed-collaboration",
+  "definition": "\"The use of virtual reality head-mounted displays and immersive 3D environments to enable remote participants to experience shared virtual spaces with stereoscopic vision, spatial audio, head tracking, and avatar embodiment, creating a subjective sense of co-location despite geographical separation.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:tele-110-spatial-audio-processing",
+        "label": "TELE-110-spatial-audio-processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:remote-design-review",
+        "label": "RemoteDesignReview"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "remote-design-review",
+      "label": "RemoteDesignReview"
+    },
+    {
+      "slug": "tele-021-augmented-reality-collaboration",
+      "label": "TELE-021-augmented-reality-collaboration"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform"
+    },
+    {
+      "slug": "tele-028-horizon-workrooms",
+      "label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "slug": "tele-058-foveated-rendering",
+      "label": "TELE-058-foveated-rendering"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-102-codec-avatars",
+      "label": "TELE-102-codec-avatars"
+    },
+    {
+      "slug": "tele-110-spatial-audio-processing",
+      "label": "TELE-110-spatial-audio-processing"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence"
+    },
+    {
+      "slug": "tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": []
+}

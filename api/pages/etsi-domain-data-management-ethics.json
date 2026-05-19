@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:cdbf7d8de51be24622332467e306677781b6c7c8b0a675c2fd756df80dee8286",
+  "title": "ETSI Domain: Data Management + Ethics",
+  "slug": "etsi-domain-data-management-ethics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-data-management-ethics",
+  "domain": "artificial-intelligence",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing ethical data handling, privacy-preserving storage, consent management, and responsible data governance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:anonymization",
+        "label": "Anonymization"
+      },
+      {
+        "id": "urn:visionflow:linked:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-controls",
+        "label": "Privacy Controls"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ethics-and-law",
+        "label": "Ethics & Law"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-control",
+        "label": "User Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-preserving-analytics",
+        "label": "Privacy-Preserving Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "anonymization",
+      "label": "Anonymization"
+    },
+    {
+      "slug": "audit-logging",
+      "label": "Audit Logging"
+    },
+    {
+      "slug": "ethics-and-law",
+      "label": "Ethics & Law"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "privacy-controls",
+      "label": "Privacy Controls"
+    },
+    {
+      "slug": "privacy-regulations",
+      "label": "Privacy Regulations"
+    },
+    {
+      "slug": "user-control",
+      "label": "User Control"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy-Preserving Analytics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    }
+  ]
+}

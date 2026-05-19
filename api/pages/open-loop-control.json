@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:85c85a276a0300f8c7b914629e1ea5df831452107aee69b4b78a779e9ff5aab5",
+  "title": "Open-Loop Control",
+  "slug": "open-loop-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:open-loop-control",
+  "domain": "robotics",
+  "definition": "A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "no-feedback",
+      "label": "No Feedback"
+    },
+    {
+      "slug": "predictability",
+      "label": "Predictability"
+    },
+    {
+      "slug": "rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
+    },
+    {
+      "slug": "stepper-motor-control",
+      "label": "Stepper Motor Control"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "forward-kinematics",
+      "label": "Forward Kinematics"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "servo-control",
+      "label": "Servo Control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    }
+  ]
+}

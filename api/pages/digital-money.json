@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:4baed414191e63dfe34f4939895abd824a6461682942fa5dc18b9b0ca08e8766",
+  "title": "Digital Money",
+  "slug": "digital-money",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-money",
+  "domain": "spatial-computing",
+  "definition": "Any form of monetary value existing purely in electronic format, encompassing e-money, central bank digital currencies, cryptocurrencies, and stablecoins, that can be stored, transferred, and transacted electronically across payment networks, metaverse economies, and blockchain systems. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:financial-instruments",
+      "label": "Financial Instruments"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "id": "urn:visionflow:linked:security-infrastructure",
+        "label": "Security Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:electronic-payments",
+        "label": "Electronic Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:instant-settlement",
+        "label": "Instant Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-money",
+        "label": "Programmable Money"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "electronic-payments",
+      "label": "Electronic Payments"
+    },
+    {
+      "slug": "instant-settlement",
+      "label": "Instant Settlement"
+    },
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "slug": "security-infrastructure",
+      "label": "Security Infrastructure"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "financial-instruments",
+      "label": "Financial Instruments"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ]
+}

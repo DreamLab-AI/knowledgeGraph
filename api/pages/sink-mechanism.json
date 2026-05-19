@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03",
+  "title": "Sink Mechanism",
+  "slug": "sink-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sink-mechanism",
+  "domain": "blockchain",
+  "definition": "Sink Mechanism is a concept within the bc domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economic-balance",
+      "label": "Economic Balance"
+    },
+    {
+      "slug": "game-economy",
+      "label": "Game Economy"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "Virtual Currency"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": []
+}

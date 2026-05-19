@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:8189743144780ed3fc7d704128a09d3756c6e4367e274853b96bb4daff7d99f9",
+  "title": "Data Integration",
+  "slug": "data-integration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-integration",
+  "domain": "infrastructure",
+  "definition": "Data Integration is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "data-virtualization",
+      "label": "Data Virtualization"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    }
+  ]
+}

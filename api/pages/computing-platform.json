@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d48dec94d04c44678492db1d1d7df1ff66ed80097538cd030011a0a2e77b2976",
+  "title": "Computing Platform",
+  "slug": "computing-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computing-platform",
+  "domain": "infrastructure",
+  "definition": "Computing Platform is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "wearable-computing-platform",
+      "label": "Wearable Computing Platform"
+    }
+  ]
+}

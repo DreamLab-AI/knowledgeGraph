@@ -1,0 +1,202 @@
+{
+  "id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb",
+  "title": "Health Metaverse Application",
+  "slug": "health-metaverse-application",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:health-metaverse-application",
+  "domain": "spatial-computing",
+  "definition": "A specialized virtual platform integrating healthcare delivery, medical training, therapeutic interventions, and patient engagement through immersive environments that comply with health data regulations and clinical standards.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:diagnostic-interface",
+        "label": "Diagnostic Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:health-record-system",
+        "label": "Health Record System"
+      },
+      {
+        "id": "urn:visionflow:linked:medical-simulation",
+        "label": "Medical Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:patient-portal",
+        "label": "Patient Portal"
+      },
+      {
+        "id": "urn:visionflow:linked:therapy-environment",
+        "label": "Therapy Environment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-clinic",
+        "label": "Virtual Clinic"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:biometric-sensor-integration",
+        "label": "Biometric Sensor Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:haptic-feedback-system",
+        "label": "Haptic Feedback System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:medical-education",
+        "label": "Medical Education"
+      },
+      {
+        "id": "urn:visionflow:linked:mental-health-therapy",
+        "label": "Mental Health Therapy"
+      },
+      {
+        "id": "urn:visionflow:linked:rehabilitation-program",
+        "label": "Rehabilitation Program"
+      },
+      {
+        "id": "urn:visionflow:linked:surgical-training",
+        "label": "Surgical Training"
+      },
+      {
+        "id": "urn:visionflow:linked:telemedicine",
+        "label": "Telemedicine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-medical-imaging",
+      "label": "3D Medical Imaging"
+    },
+    {
+      "slug": "biometric-sensor-integration",
+      "label": "Biometric Sensor Integration"
+    },
+    {
+      "slug": "clinical-ai",
+      "label": "Clinical AI"
+    },
+    {
+      "slug": "diagnostic-interface",
+      "label": "Diagnostic Interface"
+    },
+    {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
+      "slug": "end-to-end-encryption",
+      "label": "End-to-End Encryption"
+    },
+    {
+      "slug": "fda-digital-health",
+      "label": "FDA Digital Health"
+    },
+    {
+      "slug": "haptic-feedback-system",
+      "label": "Haptic Feedback System"
+    },
+    {
+      "slug": "health-record-system",
+      "label": "Health Record System"
+    },
+    {
+      "slug": "hl7-fhir",
+      "label": "HL7 FHIR"
+    },
+    {
+      "slug": "medical-education",
+      "label": "Medical Education"
+    },
+    {
+      "slug": "medical-simulation",
+      "label": "Medical Simulation"
+    },
+    {
+      "slug": "mental-health-therapy",
+      "label": "Mental Health Therapy"
+    },
+    {
+      "slug": "open-xr-healthcare",
+      "label": "OpenXR Healthcare"
+    },
+    {
+      "slug": "patient-portal",
+      "label": "Patient Portal"
+    },
+    {
+      "slug": "rehabilitation-program",
+      "label": "Rehabilitation Program"
+    },
+    {
+      "slug": "surgical-training",
+      "label": "Surgical Training"
+    },
+    {
+      "slug": "telemedicine",
+      "label": "Telemedicine"
+    },
+    {
+      "slug": "therapy-environment",
+      "label": "Therapy Environment"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "metaverse-application-platform",
+      "label": "Metaverse Application Platform"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "virtual-clinic",
+      "label": "Virtual Clinic"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "xr-device",
+      "label": "XR Device"
+    }
+  ],
+  "backlinks": []
+}

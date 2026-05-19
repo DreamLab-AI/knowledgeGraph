@@ -1,0 +1,280 @@
+{
+  "id": "urn:visionflow:page:b87156006fb81027dc511e3b8bbb3e9d9be780de76bf6403ad6ee7151f7b308c",
+  "title": "Sovereign Mesh",
+  "slug": "sovereign-mesh",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sovereign-mesh",
+  "domain": "blockchain",
+  "definition": "A peer-to-peer agent network where each node is identified by a [[DID Nostr Identity|did:nostr:<pubkey>]] DIDs and communicates via [[Nostr Relay|Nostr relays]], enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting each agent's sovereignty over its own keys and credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    }
+  ],
+  "qualityScore": 0.87,
+  "authorityScore": 0.9,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:agent-beacon",
+        "label": "Agent Beacon"
+      },
+      {
+        "id": "urn:visionflow:linked:nostr-relay",
+        "label": "Nostr Relay"
+      },
+      {
+        "id": "urn:visionflow:owl:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "id": "urn:visionflow:linked:message-signing",
+        "label": "Message Signing"
+      },
+      {
+        "id": "urn:visionflow:linked:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-agent-coordination",
+        "label": "Decentralised Agent Coordination"
+      },
+      {
+        "id": "urn:visionflow:linked:federation",
+        "label": "Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:trustless-peer-communication",
+        "label": "Trustless Peer Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:work-distribution",
+        "label": "Work Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:gossip-consensus",
+        "label": "Gossip Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:nostr-protocol-nip-01",
+        "label": "Nostr Protocol (NIP-01)"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-009",
+      "label": "ADR-009"
+    },
+    {
+      "slug": "agent-beacon",
+      "label": "Agent Beacon"
+    },
+    {
+      "slug": "agent-beacon",
+      "label": "Agent Beacon"
+    },
+    {
+      "slug": "agent-bead",
+      "label": "Agent Bead"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "bip-340-schnorr-keypair",
+      "label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "CoordinationLayer"
+    },
+    {
+      "slug": "decentralised-agent-coordination",
+      "label": "Decentralised Agent Coordination"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "decentralised-coordination",
+      "label": "Decentralised Coordination"
+    },
+    {
+      "slug": "federation",
+      "label": "Federation"
+    },
+    {
+      "slug": "gossip-consensus",
+      "label": "Gossip Consensus"
+    },
+    {
+      "slug": "message-signing",
+      "label": "Message Signing"
+    },
+    {
+      "slug": "network-connectivity",
+      "label": "Network Connectivity"
+    },
+    {
+      "slug": "nip-01-nostr-protocol",
+      "label": "NIP-01 Nostr Protocol"
+    },
+    {
+      "slug": "nostr-protocol-nip-01",
+      "label": "Nostr Protocol (NIP-01)"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "p2-pnetwork-domain",
+      "label": "P2PNetworkDomain"
+    },
+    {
+      "slug": "prd-006",
+      "label": "PRD-006"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "sovereign-data-domain",
+      "label": "SovereignDataDomain"
+    },
+    {
+      "slug": "trustless-peer-communication",
+      "label": "Trustless Peer Communication"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "work-distribution",
+      "label": "Work Distribution"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

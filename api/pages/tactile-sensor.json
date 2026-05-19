@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b996933043776390dd3212df9c6f2d4945fc81bafe506bbc9ea57df5d449cb05",
+  "title": "Tactile Sensor",
+  "slug": "tactile-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tactile-sensor",
+  "domain": "robotics",
+  "definition": "Tactile sensor provides touch sensing capability similar to human fingertips.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

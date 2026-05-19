@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/infrastructure#RegulatoryFramework
-uri:: urn:visionclaw:concept:infrastructure:regulatory-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:regulatory-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Regulatory Framework
-content-hash:: sha256-12-2dca96d76d0d
-legacy-term-id:: NGM-7028
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#RegulatoryFramework
+legacy_uri:: urn:visionclaw:concept:infrastructure:regulatory-framework
 public:: true
+
+# Regulatory Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4",
+  "@type": "Page",
+  "vc:slug": "regulatory-framework",
+  "title": "Regulatory Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:market-integrity",
+      "vc:label": "Market Integrity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-mi-ca-regulation",
+      "vc:label": "EU MiCA Regulation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2dca96d76d0d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#RegulatoryFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7028"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Regulatory Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:regulatory-framework"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:regulatory-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:regulatory-framework",
+  "@type": "OntologyClass",
+  "label": "Regulatory Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:legal-framework",
+      "vc:label": "Legal Framework"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets. These frameworks address consumer protection, market integrity, anti-money laundering (AML) compliance, and financial stability whilst balancing innovation enablement with risk mitigation.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:market-integrity",
+      "vc:label": "Market Integrity"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:regulatory-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Market Integrity]]",
+      "resolved": "urn:visionflow:linked:market-integrity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU MiCA Regulation]]",
+      "resolved": "urn:visionflow:owl:class:eu-mi-ca-regulation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets. These frameworks address consumer protection, market integrity, anti-money laundering (AML) compliance, and financial stability whilst balancing innovation enablement with risk mitigation.

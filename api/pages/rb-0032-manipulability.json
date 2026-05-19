@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:f674b2fbc4075f853f64ee88ee7f7876475329b6a186a20f41cbdd03d85dd0bd",
+  "title": "rb 0032 manipulability",
+  "slug": "rb-0032-manipulability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0032-manipulability",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

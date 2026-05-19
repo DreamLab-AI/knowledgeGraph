@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604",
+  "title": "Human Rights",
+  "slug": "human-rights",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-rights",
+  "domain": "spatial-computing",
+  "definition": "Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.95,
+  "authorityScore": 0.0,
+  "maturity": "production",
+  "status": "revised",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aigrounded-domain",
+      "label": "AIGroundedDomain"
+    },
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "council-of-europe-ai-treaty",
+      "label": "Council of Europe AI Treaty"
+    },
+    {
+      "slug": "fundamental-rights-impact-assessment",
+      "label": "Fundamental Rights Impact Assessment"
+    },
+    {
+      "slug": "oecd-ai-principles-2024",
+      "label": "OECD AI Principles 2024"
+    },
+    {
+      "slug": "privacy-rights",
+      "label": "Privacy Rights"
+    },
+    {
+      "slug": "universal-declaration-of-human-rights",
+      "label": "Universal Declaration of Human Rights"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "democratic-values",
+      "label": "Democratic Values"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "fairness-oecd",
+      "label": "Fairness (OECD)"
+    },
+    {
+      "slug": "human-centred-values",
+      "label": "Human Centred Values"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    }
+  ]
+}

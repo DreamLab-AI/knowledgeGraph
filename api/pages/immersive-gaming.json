@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:017394f0d26e93a21fb8ab35dbf94870ed99a9c5b70f6f43bd50ca1f63f1ca80",
+  "title": "Immersive Gaming",
+  "slug": "immersive-gaming",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-gaming",
+  "domain": "spatial-computing",
+  "definition": "Video gaming experiences enhanced through VR, AR, and metaverse technologies that place players within interactive 3D environments, enabling physical interaction, spatial awareness, and presence-based gameplay through advanced headsets, motion tracking, and haptic feedback systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-gaming",
+      "label": "Digital Gaming"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:vr-gaming-experience",
+        "label": "VR Gaming Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "vr-gaming-experience",
+      "label": "VR Gaming Experience"
+    },
+    {
+      "slug": "digital-gaming",
+      "label": "Digital Gaming"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

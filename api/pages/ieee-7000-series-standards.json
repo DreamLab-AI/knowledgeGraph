@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:9db40ec8d985f7e10b44a30afcda08c715530b824c73ddc8614fe6074d66f08d",
+  "title": "IEEE 7000 Series Standards",
+  "slug": "ieee-7000-series-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ieee-7000-series-standards",
+  "domain": "artificial-intelligence",
+  "definition": "IEEE 7000 Series Standards are a comprehensive suite of technical and ethics standards providing process-based guidance for addressing ethical concerns in system design, development, and deployment, with specific focus on autonomous and intelligent systems including AI. This series encompasses multiple complementary standards: IEEE 7000 (core standard for addressing ethical concerns in system design providing systems engineering process for value-sensitive design that identifies stakeholder values and translates them into verifiable requirements), IEEE P7001 (transparency of autonomous systems defining transparency requirements, metrics, and implementation guidance enabling stakeholders to understand system capabilities, limitations, and decision processes), IEEE P7002 (data privacy process establishing privacy-by-design methodologies, privacy impact assessment procedures, and technical safeguards for personal data protection in AI systems), IEEE P7003 (algorithmic bias considerations providing bias assessment methods, fairness testing procedures, and mitigation strategies addressing discriminatory outcomes across protected groups), IEEE P7010 (wellbeing metrics standard for autono",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-7000",
+      "label": "IEEE 7000"
+    },
+    {
+      "slug": "ieee-p2863",
+      "label": "IEEE P2863"
+    },
+    {
+      "slug": "ieee-p7001",
+      "label": "IEEE P7001"
+    },
+    {
+      "slug": "ieee-p7003",
+      "label": "IEEE P7003"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": []
+}

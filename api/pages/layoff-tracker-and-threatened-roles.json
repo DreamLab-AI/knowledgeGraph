@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:3b4516c8f4d86c6300b4674f79d89c17224fec7b3a4370f577c3fb33a870de12",
+  "title": "Layoff tracker and threatened roles",
+  "slug": "layoff-tracker-and-threatened-roles",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:layoff-tracker-and-threatened-roles",
+  "domain": "infrastructure",
+  "definition": "Layoff tracker and threatened roles is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

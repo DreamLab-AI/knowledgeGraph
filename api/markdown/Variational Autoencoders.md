@@ -1,21 +1,3186 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#VariationalAutoencoders
-uri:: urn:visionclaw:concept:artificial-intelligence:variational-autoencoders
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:variational-autoencoders
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Variational Autoencoders
-content-hash:: sha256-12-5fff28308c7b
-legacy-term-id:: AI-VAE-001
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.93
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#VariationalAutoencoders
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:variational-autoencoders
 public:: true
+
+# Variational Autoencoders
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fa328785412652ab98a5ac08e5f3a7779e397ce2cf01845ad31e5508798b5cda",
+  "@type": "Page",
+  "vc:slug": "variational-autoencoders",
+  "title": "Variational Autoencoders",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-convolutional-network",
+      "vc:label": "3D Convolutional Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-units",
+      "vc:label": "Active Units"
+    },
+    {
+      "@id": "urn:visionflow:linked:adam-optimizer",
+      "vc:label": "Adam Optimizer"
+    },
+    {
+      "@id": "urn:visionflow:linked:adam-w",
+      "vc:label": "AdamW"
+    },
+    {
+      "@id": "urn:visionflow:linked:adversarial-autoencoder",
+      "vc:label": "Adversarial Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:alireza-makhzani",
+      "vc:label": "Alireza Makhzani"
+    },
+    {
+      "@id": "urn:visionflow:linked:alpha-fold",
+      "vc:label": "AlphaFold"
+    },
+    {
+      "@id": "urn:visionflow:linked:alpha-fold2",
+      "vc:label": "AlphaFold2"
+    },
+    {
+      "@id": "urn:visionflow:linked:amortized-inference",
+      "vc:label": "Amortized Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:ar",
+      "vc:label": "AR"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanisms",
+      "vc:label": "Attention Mechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-synthesis",
+      "vc:label": "Audio Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-robots",
+      "vc:label": "Autonomous Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive",
+      "vc:label": "Autoregressive"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-normalization",
+      "vc:label": "Batch Normalization"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimization",
+      "vc:label": "Bayesian Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:berkeley",
+      "vc:label": "Berkeley"
+    },
+    {
+      "@id": "urn:visionflow:linked:beta-vae",
+      "vc:label": "Beta-VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:bi-directional-lstm",
+      "vc:label": "Bi-directional LSTM"
+    },
+    {
+      "@id": "urn:visionflow:linked:binance-smart-chain",
+      "vc:label": "Binance Smart Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:binary-cross-entropy",
+      "vc:label": "Binary Cross-Entropy"
+    },
+    {
+      "@id": "urn:visionflow:linked:binding-affinity",
+      "vc:label": "Binding Affinity"
+    },
+    {
+      "@id": "urn:visionflow:linked:black-box-variational-inference",
+      "vc:label": "Black Box Variational Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-analytics",
+      "vc:label": "Blockchain Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:brain-scale-s",
+      "vc:label": "BrainScaleS"
+    },
+    {
+      "@id": "urn:visionflow:linked:celeb-a",
+      "vc:label": "CelebA"
+    },
+    {
+      "@id": "urn:visionflow:linked:ch-embl",
+      "vc:label": "ChEMBL"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainalysis",
+      "vc:label": "Chainalysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:chem-vae",
+      "vc:label": "ChemVAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:cifar-10",
+      "vc:label": "CIFAR-10"
+    },
+    {
+      "@id": "urn:visionflow:linked:classifier-free-guidance",
+      "vc:label": "Classifier-Free Guidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:climate-modeling",
+      "vc:label": "Climate Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:clustering",
+      "vc:label": "Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-bert",
+      "vc:label": "CodeBERT"
+    },
+    {
+      "@id": "urn:visionflow:linked:code2-vec",
+      "vc:label": "Code2Vec"
+    },
+    {
+      "@id": "urn:visionflow:linked:conditional-vae",
+      "vc:label": "Conditional VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-free-grammar",
+      "vc:label": "Context-Free Grammar"
+    },
+    {
+      "@id": "urn:visionflow:linked:controller",
+      "vc:label": "Controller"
+    },
+    {
+      "@id": "urn:visionflow:linked:daan-wierstra",
+      "vc:label": "Daan Wierstra"
+    },
+    {
+      "@id": "urn:visionflow:linked:dall-e-2",
+      "vc:label": "DALL-E 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:danilo-rezende",
+      "vc:label": "Danilo Rezende"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-generation",
+      "vc:label": "Data Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:david-ha",
+      "vc:label": "David Ha"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-novo-drug-design",
+      "vc:label": "De Novo Drug Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identifier",
+      "vc:label": "Decentralized Identifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-chem",
+      "vc:label": "DeepChem"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-generative-models",
+      "vc:label": "Deep Generative Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-mind",
+      "vc:label": "DeepMind"
+    },
+    {
+      "@id": "urn:visionflow:linked:denoising-autoencoder",
+      "vc:label": "Denoising Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-systems",
+      "vc:label": "Dialogue Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:diederik-p-kingma",
+      "vc:label": "Diederik P. Kingma"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-policy",
+      "vc:label": "Diffusion Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:disentangled-representation",
+      "vc:label": "Disentangled Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:disentangled-representations",
+      "vc:label": "Disentangled Representations"
+    },
+    {
+      "@id": "urn:visionflow:linked:downstream-tasks",
+      "vc:label": "Downstream Tasks"
+    },
+    {
+      "@id": "urn:visionflow:linked:dreamer",
+      "vc:label": "Dreamer"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:efficient-net",
+      "vc:label": "EfficientNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:electronic-health-record",
+      "vc:label": "Electronic Health Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:elliptic",
+      "vc:label": "Elliptic"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoder-network",
+      "vc:label": "Encoder Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:euclidean-space",
+      "vc:label": "Euclidean Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-camera",
+      "vc:label": "Event Camera"
+    },
+    {
+      "@id": "urn:visionflow:linked:evidence-lower-bound",
+      "vc:label": "Evidence Lower Bound"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:face-generation",
+      "vc:label": "Face Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:fed-avg",
+      "vc:label": "FedAvg"
+    },
+    {
+      "@id": "urn:visionflow:linked:fed-prox",
+      "vc:label": "FedProx"
+    },
+    {
+      "@id": "urn:visionflow:linked:few-shot-learning",
+      "vc:label": "Few-Shot Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:flash-loan",
+      "vc:label": "Flash Loan"
+    },
+    {
+      "@id": "urn:visionflow:linked:fraud-detection",
+      "vc:label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:frechet-inception-distance",
+      "vc:label": "Frechet Inception Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:gan",
+      "vc:label": "GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:gan",
+      "vc:label": "GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-distribution",
+      "vc:label": "Gaussian Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-models",
+      "vc:label": "Generative Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-query-network",
+      "vc:label": "Generative Query Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:genetic-algorithms",
+      "vc:label": "Genetic Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:linked:genomics",
+      "vc:label": "Genomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-cirq",
+      "vc:label": "Google Cirq"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-magenta",
+      "vc:label": "Google Magenta"
+    },
+    {
+      "@id": "urn:visionflow:linked:grammar-vae",
+      "vc:label": "Grammar VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-networks",
+      "vc:label": "Graph Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:gretel-ai",
+      "vc:label": "Gretel.ai"
+    },
+    {
+      "@id": "urn:visionflow:linked:gru",
+      "vc:label": "GRU"
+    },
+    {
+      "@id": "urn:visionflow:linked:gumbel-softmax",
+      "vc:label": "Gumbel-Softmax"
+    },
+    {
+      "@id": "urn:visionflow:linked:hamiltonian-monte-carlo",
+      "vc:label": "Hamiltonian Monte Carlo"
+    },
+    {
+      "@id": "urn:visionflow:linked:handwritten-digit-generation",
+      "vc:label": "Handwritten Digit Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-vae",
+      "vc:label": "Hierarchical VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-vae",
+      "vc:label": "Hierarchical VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:hindsight-experience-replay",
+      "vc:label": "Hindsight Experience Replay"
+    },
+    {
+      "@id": "urn:visionflow:linked:homomorphic-encryption",
+      "vc:label": "Homomorphic Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm-qiskit",
+      "vc:label": "IBM Qiskit"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm-synthetic-data-generator",
+      "vc:label": "IBM Synthetic Data Generator"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm-true-north",
+      "vc:label": "IBM TrueNorth"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-synthesis",
+      "vc:label": "Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:implicit-neural-representation",
+      "vc:label": "Implicit Neural Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:importance-weighted-autoencoders",
+      "vc:label": "Importance Weighted Autoencoders"
+    },
+    {
+      "@id": "urn:visionflow:linked:inception-score",
+      "vc:label": "Inception Score"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-network",
+      "vc:label": "Inference Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:intel-loihi",
+      "vc:label": "Intel Loihi"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:intrinsic-motivation",
+      "vc:label": "Intrinsic Motivation"
+    },
+    {
+      "@id": "urn:visionflow:linked:intro-vae",
+      "vc:label": "IntroVAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:io-t",
+      "vc:label": "IoT"
+    },
+    {
+      "@id": "urn:visionflow:linked:iron",
+      "vc:label": "Iron"
+    },
+    {
+      "@id": "urn:visionflow:linked:j-rgen-schmidhuber",
+      "vc:label": "Jürgen Schmidhuber"
+    },
+    {
+      "@id": "urn:visionflow:linked:jensen-s-inequality",
+      "vc:label": "Jensen's Inequality"
+    },
+    {
+      "@id": "urn:visionflow:linked:junction-tree-vae",
+      "vc:label": "Junction Tree VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:keras",
+      "vc:label": "Keras"
+    },
+    {
+      "@id": "urn:visionflow:linked:kl-annealing",
+      "vc:label": "KL Annealing"
+    },
+    {
+      "@id": "urn:visionflow:linked:kl-divergence",
+      "vc:label": "KL Divergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:kullback-leibler-divergence",
+      "vc:label": "Kullback-Leibler Divergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:ladder-vae",
+      "vc:label": "Ladder VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-representation",
+      "vc:label": "Latent Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-representations",
+      "vc:label": "Latent Representations"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-space-interpolation",
+      "vc:label": "Latent Space Interpolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-traversal",
+      "vc:label": "Latent Traversal"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-variable-collapse",
+      "vc:label": "Latent Variable Collapse"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2",
+      "vc:label": "Layer 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-normalization",
+      "vc:label": "Layer Normalization"
+    },
+    {
+      "@id": "urn:visionflow:linked:leaky-integrate-and-fire",
+      "vc:label": "Leaky Integrate-and-Fire"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-rate-scheduling",
+      "vc:label": "Learning Rate Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:light-clients",
+      "vc:label": "Light Clients"
+    },
+    {
+      "@id": "urn:visionflow:linked:likelihood-model",
+      "vc:label": "Likelihood Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:lipinski-s-rule-of-five",
+      "vc:label": "Lipinski's Rule of Five"
+    },
+    {
+      "@id": "urn:visionflow:linked:log-likelihood",
+      "vc:label": "Log-Likelihood"
+    },
+    {
+      "@id": "urn:visionflow:linked:lpips",
+      "vc:label": "LPIPS"
+    },
+    {
+      "@id": "urn:visionflow:linked:lstm",
+      "vc:label": "LSTM"
+    },
+    {
+      "@id": "urn:visionflow:linked:manufacturing-defect-detection",
+      "vc:label": "Manufacturing Defect Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:masked-attention",
+      "vc:label": "Masked Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:materials-science",
+      "vc:label": "Materials Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:matplotlib",
+      "vc:label": "Matplotlib"
+    },
+    {
+      "@id": "urn:visionflow:linked:max-welling",
+      "vc:label": "Max Welling"
+    },
+    {
+      "@id": "urn:visionflow:linked:mean-field-approximation",
+      "vc:label": "Mean-Field Approximation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mean-squared-error",
+      "vc:label": "Mean Squared Error"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-diagnosis",
+      "vc:label": "Medical Diagnosis"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-image-synthesis",
+      "vc:label": "Medical Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:mode-collapse",
+      "vc:label": "Mode Collapse"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-compression",
+      "vc:label": "Model Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:mol-gan",
+      "vc:label": "MolGAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:molecular-optimization",
+      "vc:label": "Molecular Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:molecular-property-prediction",
+      "vc:label": "Molecular Property Prediction"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo",
+      "vc:label": "Monte Carlo"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-estimation",
+      "vc:label": "Monte Carlo Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:moses",
+      "vc:label": "Moses"
+    },
+    {
+      "@id": "urn:visionflow:linked:mostly-ai",
+      "vc:label": "Mostly AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-objective-optimization",
+      "vc:label": "Multi-Objective Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-learning",
+      "vc:label": "Multimodal Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multiple-importance-sampling",
+      "vc:label": "Multiple Importance Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-vae",
+      "vc:label": "Music VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-vae",
+      "vc:label": "MusicVAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-intrusion-detection",
+      "vc:label": "Network Intrusion Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-machine-translation",
+      "vc:label": "Neural Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:noisy-intermediate-scale-quantum",
+      "vc:label": "Noisy Intermediate-Scale Quantum"
+    },
+    {
+      "@id": "urn:visionflow:linked:normal-distribution",
+      "vc:label": "Normal Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:normalizing-flows",
+      "vc:label": "Normalizing Flows"
+    },
+    {
+      "@id": "urn:visionflow:linked:nvae",
+      "vc:label": "NVAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:nvidia-jetson",
+      "vc:label": "NVIDIA Jetson"
+    },
+    {
+      "@id": "urn:visionflow:linked:occupancy-networks",
+      "vc:label": "Occupancy Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:offline-reinforcement-learning",
+      "vc:label": "Offline Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-chain-metrics",
+      "vc:label": "On-Chain Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:onnx-runtime",
+      "vc:label": "ONNX Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-ai-robotics",
+      "vc:label": "OpenAI Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:options-framework",
+      "vc:label": "Options Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:outlier-detection",
+      "vc:label": "Outlier Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:paragraph-vae",
+      "vc:label": "Paragraph VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:parameter-shift-rule",
+      "vc:label": "Parameter Shift Rule"
+    },
+    {
+      "@id": "urn:visionflow:linked:parameterized-quantum-circuit",
+      "vc:label": "Parameterized Quantum Circuit"
+    },
+    {
+      "@id": "urn:visionflow:linked:pca",
+      "vc:label": "PCA"
+    },
+    {
+      "@id": "urn:visionflow:linked:penny-lane",
+      "vc:label": "PennyLane"
+    },
+    {
+      "@id": "urn:visionflow:linked:perceptual-path-length",
+      "vc:label": "Perceptual Path Length"
+    },
+    {
+      "@id": "urn:visionflow:linked:pla-net",
+      "vc:label": "PlaNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:point-cloud-network",
+      "vc:label": "Point Cloud Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-search",
+      "vc:label": "Policy Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:pooling-layers",
+      "vc:label": "Pooling Layers"
+    },
+    {
+      "@id": "urn:visionflow:linked:portfolio-management",
+      "vc:label": "Portfolio Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:posterior-collapse",
+      "vc:label": "Posterior Collapse"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-preserving",
+      "vc:label": "Privacy-Preserving"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-modeling",
+      "vc:label": "Probabilistic Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-distribution",
+      "vc:label": "Probability Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:progressive-growing",
+      "vc:label": "Progressive Growing"
+    },
+    {
+      "@id": "urn:visionflow:linked:pub-chem",
+      "vc:label": "PubChem"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-circuit",
+      "vc:label": "Quantum Circuit"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-error-correction",
+      "vc:label": "Quantum Error Correction"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-gradient-estimation",
+      "vc:label": "Quantum Gradient Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:qvae",
+      "vc:label": "QVAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-network-distillation",
+      "vc:label": "Random Network Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ransomware",
+      "vc:label": "Ransomware"
+    },
+    {
+      "@id": "urn:visionflow:linked:raspberry-pi",
+      "vc:label": "Raspberry Pi"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdkit",
+      "vc:label": "RDKit"
+    },
+    {
+      "@id": "urn:visionflow:linked:recognition-model",
+      "vc:label": "Recognition Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:reentrancy-attack",
+      "vc:label": "Reentrancy Attack"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularization",
+      "vc:label": "Regularization"
+    },
+    {
+      "@id": "urn:visionflow:linked:reparameterization-trick",
+      "vc:label": "Reparameterization Trick"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:res-net",
+      "vc:label": "ResNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:rnn",
+      "vc:label": "RNN"
+    },
+    {
+      "@id": "urn:visionflow:linked:rollup",
+      "vc:label": "Rollup"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros2",
+      "vc:label": "ROS2"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros2-humble",
+      "vc:label": "ROS2 Humble"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability",
+      "vc:label": "Scalability"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-referenc-ing-embedded-strings",
+      "vc:label": "SELF-referencIng Embedded Strings"
+    },
+    {
+      "@id": "urn:visionflow:linked:selfies-vae",
+      "vc:label": "SELFIES-VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:semi-supervised-vae",
+      "vc:label": "Semi-Supervised VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentence-vae",
+      "vc:label": "Sentence VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:shakir-mohamed",
+      "vc:label": "Shakir Mohamed"
+    },
+    {
+      "@id": "urn:visionflow:linked:sigmoid",
+      "vc:label": "Sigmoid"
+    },
+    {
+      "@id": "urn:visionflow:linked:signed-distance-function",
+      "vc:label": "Signed Distance Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:skip-connections",
+      "vc:label": "Skip Connections"
+    },
+    {
+      "@id": "urn:visionflow:linked:slac",
+      "vc:label": "SLAC"
+    },
+    {
+      "@id": "urn:visionflow:linked:smiles",
+      "vc:label": "SMILES"
+    },
+    {
+      "@id": "urn:visionflow:linked:snn-vae",
+      "vc:label": "SNN-VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:soft-intro-vae",
+      "vc:label": "Soft-IntroVAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:softplus",
+      "vc:label": "Softplus"
+    },
+    {
+      "@id": "urn:visionflow:linked:solidity",
+      "vc:label": "Solidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:solubility",
+      "vc:label": "Solubility"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-synthesis",
+      "vc:label": "Speech Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:spherical-interpolation",
+      "vc:label": "Spherical Interpolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:spi-nnaker",
+      "vc:label": "SpiNNaker"
+    },
+    {
+      "@id": "urn:visionflow:linked:spike-timing-dependent-plasticity",
+      "vc:label": "Spike-Timing-Dependent Plasticity"
+    },
+    {
+      "@id": "urn:visionflow:linked:split-learning",
+      "vc:label": "Split Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:straight-through-estimator",
+      "vc:label": "Straight-Through Estimator"
+    },
+    {
+      "@id": "urn:visionflow:linked:style-gan",
+      "vc:label": "StyleGAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:surrogate-gradient-learning",
+      "vc:label": "Surrogate Gradient Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-execution",
+      "vc:label": "Symbolic Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:t-sne",
+      "vc:label": "t-SNE"
+    },
+    {
+      "@id": "urn:visionflow:linked:tanh",
+      "vc:label": "Tanh"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-and-motion-planning",
+      "vc:label": "Task and Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow",
+      "vc:label": "TensorFlow"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow-quantum",
+      "vc:label": "TensorFlow Quantum"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-rt",
+      "vc:label": "TensorRT"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-style-transfer",
+      "vc:label": "Text Style Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image-synthesis",
+      "vc:label": "Text-to-Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:texture-synthesis",
+      "vc:label": "Texture Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:toxicity",
+      "vc:label": "Toxicity"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-decoders",
+      "vc:label": "Transformer Decoders"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-models",
+      "vc:label": "Transformer Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:transposed-convolution",
+      "vc:label": "Transposed Convolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:upsampling",
+      "vc:label": "Upsampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae-gan",
+      "vc:label": "VAE-GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-inference",
+      "vc:label": "Variational Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-quantization",
+      "vc:label": "Vector Quantization"
+    },
+    {
+      "@id": "urn:visionflow:linked:very-deep-vae",
+      "vc:label": "Very Deep VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:vgg-network",
+      "vc:label": "VGG Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-compression",
+      "vc:label": "Video Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-try-on",
+      "vc:label": "Virtual Try-On"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-language-models",
+      "vc:label": "Vision-Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-transformer",
+      "vc:label": "Vision Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-transformers",
+      "vc:label": "Vision Transformers"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-servoing",
+      "vc:label": "Visual Servoing"
+    },
+    {
+      "@id": "urn:visionflow:linked:von-mises-fisher-distribution",
+      "vc:label": "Von Mises-Fisher Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:vq-vae",
+      "vc:label": "VQ-VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:vqc",
+      "vc:label": "VQC"
+    },
+    {
+      "@id": "urn:visionflow:linked:vr",
+      "vc:label": "VR"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasserstein-distance",
+      "vc:label": "Wasserstein Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:wave-net",
+      "vc:label": "WaveNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:world-models",
+      "vc:label": "World Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr",
+      "vc:label": "XR"
+    },
+    {
+      "@id": "urn:visionflow:linked:zinc",
+      "vc:label": "ZINC"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-snark",
+      "vc:label": "ZK-SNARK"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aidomain",
+      "vc:label": "AIDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:augmented-reality",
+      "vc:label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autoencoder",
+      "vc:label": "Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autoencoder",
+      "vc:label": "Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dall-e",
+      "vc:label": "DALL-E"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decoder",
+      "vc:label": "Decoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:differential-privacy",
+      "vc:label": "Differential Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dimensionality-reduction",
+      "vc:label": "Dimensionality Reduction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:encoder",
+      "vc:label": "Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gaussian-splatting",
+      "vc:label": "Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google-deep-mind",
+      "vc:label": "Google DeepMind"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gossip-protocol",
+      "vc:label": "Gossip Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-clipping",
+      "vc:label": "Gradient Clipping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-to-image-translation",
+      "vc:label": "Image to Image Translation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-space",
+      "vc:label": "latent space"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-space",
+      "vc:label": "Latent Space"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-radiance-fields",
+      "vc:label": "Neural Radiance Fields"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neuromorphic-computing",
+      "vc:label": "Neuromorphic Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nvidia",
+      "vc:label": "NVIDIA"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quantum-computing",
+      "vc:label": "Quantum Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:secure-multi-party-computation",
+      "vc:label": "Secure Multi-Party Computation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-attention",
+      "vc:label": "Self Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
+      "vc:label": "Self-Sovereign Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semi-supervised-learning",
+      "vc:label": "Semi-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:slam",
+      "vc:label": "SLAM"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:style-transfer",
+      "vc:label": "Style Transfer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-generation",
+      "vc:label": "Text Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:variational-autoencoders",
+      "vc:label": "Variational Autoencoders"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-reality",
+      "vc:label": "Virtual Reality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "vc:label": "Zero-Knowledge Proof"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.93"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5fff28308c7b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#VariationalAutoencoders"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-VAE-001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Variational Autoencoders"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:variational-autoencoders"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:variational-autoencoders"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa328785412652ab98a5ac08e5f3a7779e397ce2cf01845ad31e5508798b5cda@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:variational-autoencoders",
+  "@type": "OntologyClass",
+  "label": "Variational Autoencoders",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:generative-model",
+      "vc:label": "Generative Model"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fa328785412652ab98a5ac08e5f3a7779e397ce2cf01845ad31e5508798b5cda"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa328785412652ab98a5ac08e5f3a7779e397ce2cf01845ad31e5508798b5cda@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Generative neural network architecture combining autoencoders with variational inference for probabilistic latent space modeling and data generation",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.93",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:variational-autoencoders:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fa328785412652ab98a5ac08e5f3a7779e397ce2cf01845ad31e5508798b5cda"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Convolutional Network]]",
+      "resolved": "urn:visionflow:linked:3-d-convolutional-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Active Units]]",
+      "resolved": "urn:visionflow:linked:active-units",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adam Optimizer]]",
+      "resolved": "urn:visionflow:linked:adam-optimizer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AdamW]]",
+      "resolved": "urn:visionflow:linked:adam-w",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adversarial Autoencoder]]",
+      "resolved": "urn:visionflow:linked:adversarial-autoencoder",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alireza Makhzani]]",
+      "resolved": "urn:visionflow:linked:alireza-makhzani",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AlphaFold]]",
+      "resolved": "urn:visionflow:linked:alpha-fold",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AlphaFold2]]",
+      "resolved": "urn:visionflow:linked:alpha-fold2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Amortized Inference]]",
+      "resolved": "urn:visionflow:linked:amortized-inference",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anomaly Detection]]",
+      "resolved": "urn:visionflow:linked:anomaly-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AR]]",
+      "resolved": "urn:visionflow:linked:ar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Attention Mechanisms]]",
+      "resolved": "urn:visionflow:linked:attention-mechanisms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Audio Generation]]",
+      "resolved": "urn:visionflow:linked:audio-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Audio Synthesis]]",
+      "resolved": "urn:visionflow:linked:audio-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Robots]]",
+      "resolved": "urn:visionflow:linked:autonomous-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autoregressive]]",
+      "resolved": "urn:visionflow:linked:autoregressive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autoregressive Model|autoregressive decoders]]",
+      "resolved": "urn:visionflow:linked:autoregressive-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Batch Normalization]]",
+      "resolved": "urn:visionflow:linked:batch-normalization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bayesian Optimization]]",
+      "resolved": "urn:visionflow:linked:bayesian-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Berkeley]]",
+      "resolved": "urn:visionflow:linked:berkeley",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Beta-VAE]]",
+      "resolved": "urn:visionflow:linked:beta-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bi-directional LSTM]]",
+      "resolved": "urn:visionflow:linked:bi-directional-lstm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binance Smart Chain]]",
+      "resolved": "urn:visionflow:linked:binance-smart-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binary Cross-Entropy]]",
+      "resolved": "urn:visionflow:linked:binary-cross-entropy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binding Affinity]]",
+      "resolved": "urn:visionflow:linked:binding-affinity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Black Box Variational Inference]]",
+      "resolved": "urn:visionflow:linked:black-box-variational-inference",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Analytics]]",
+      "resolved": "urn:visionflow:linked:blockchain-analytics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BrainScaleS]]",
+      "resolved": "urn:visionflow:linked:brain-scale-s",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CelebA]]",
+      "resolved": "urn:visionflow:linked:celeb-a",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ChEMBL]]",
+      "resolved": "urn:visionflow:linked:ch-embl",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainalysis]]",
+      "resolved": "urn:visionflow:linked:chainalysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ChemVAE]]",
+      "resolved": "urn:visionflow:linked:chem-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CIFAR-10]]",
+      "resolved": "urn:visionflow:linked:cifar-10",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Classifier-Free Guidance]]",
+      "resolved": "urn:visionflow:linked:classifier-free-guidance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Climate Modeling]]",
+      "resolved": "urn:visionflow:linked:climate-modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Clustering]]",
+      "resolved": "urn:visionflow:linked:clustering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CodeBERT]]",
+      "resolved": "urn:visionflow:linked:code-bert",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Code2Vec]]",
+      "resolved": "urn:visionflow:linked:code2-vec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conditional VAE]]",
+      "resolved": "urn:visionflow:linked:conditional-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Context-Free Grammar]]",
+      "resolved": "urn:visionflow:linked:context-free-grammar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Controller]]",
+      "resolved": "urn:visionflow:linked:controller",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Daan Wierstra]]",
+      "resolved": "urn:visionflow:linked:daan-wierstra",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DALL-E 2]]",
+      "resolved": "urn:visionflow:linked:dall-e-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Danilo Rezende]]",
+      "resolved": "urn:visionflow:linked:danilo-rezende",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Generation]]",
+      "resolved": "urn:visionflow:linked:data-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[David Ha]]",
+      "resolved": "urn:visionflow:linked:david-ha",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[De Novo Drug Design]]",
+      "resolved": "urn:visionflow:linked:de-novo-drug-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Identifier]]",
+      "resolved": "urn:visionflow:linked:decentralized-identifier",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeepChem]]",
+      "resolved": "urn:visionflow:linked:deep-chem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deep Generative Models]]",
+      "resolved": "urn:visionflow:linked:deep-generative-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeepMind]]",
+      "resolved": "urn:visionflow:linked:deep-mind",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Denoising Autoencoder]]",
+      "resolved": "urn:visionflow:linked:denoising-autoencoder",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dialogue Systems]]",
+      "resolved": "urn:visionflow:linked:dialogue-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diederik P. Kingma]]",
+      "resolved": "urn:visionflow:linked:diederik-p-kingma",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diffusion Policy]]",
+      "resolved": "urn:visionflow:linked:diffusion-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Disentangled Representation|disentangled representations]]",
+      "resolved": "urn:visionflow:linked:disentangled-representation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Disentangled Representations]]",
+      "resolved": "urn:visionflow:linked:disentangled-representations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Downstream Tasks]]",
+      "resolved": "urn:visionflow:linked:downstream-tasks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dreamer]]",
+      "resolved": "urn:visionflow:linked:dreamer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Drug Discovery]]",
+      "resolved": "urn:visionflow:linked:drug-discovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EfficientNet]]",
+      "resolved": "urn:visionflow:linked:efficient-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Electronic Health Record]]",
+      "resolved": "urn:visionflow:linked:electronic-health-record",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Elliptic]]",
+      "resolved": "urn:visionflow:linked:elliptic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Encoder Network]]",
+      "resolved": "urn:visionflow:linked:encoder-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Euclidean Space]]",
+      "resolved": "urn:visionflow:linked:euclidean-space",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Camera]]",
+      "resolved": "urn:visionflow:linked:event-camera",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Evidence Lower Bound]]",
+      "resolved": "urn:visionflow:linked:evidence-lower-bound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Extended Reality]]",
+      "resolved": "urn:visionflow:linked:extended-reality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Face Generation]]",
+      "resolved": "urn:visionflow:linked:face-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FedAvg]]",
+      "resolved": "urn:visionflow:linked:fed-avg",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FedProx]]",
+      "resolved": "urn:visionflow:linked:fed-prox",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Few-Shot Learning]]",
+      "resolved": "urn:visionflow:linked:few-shot-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Flash Loan]]",
+      "resolved": "urn:visionflow:linked:flash-loan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fraud Detection]]",
+      "resolved": "urn:visionflow:linked:fraud-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Frechet Inception Distance]]",
+      "resolved": "urn:visionflow:linked:frechet-inception-distance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GAN]]",
+      "resolved": "urn:visionflow:linked:gan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GAN|GANs]]",
+      "resolved": "urn:visionflow:linked:gan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gaussian Distribution]]",
+      "resolved": "urn:visionflow:linked:gaussian-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Generative Models]]",
+      "resolved": "urn:visionflow:linked:generative-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Generative Query Network]]",
+      "resolved": "urn:visionflow:linked:generative-query-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Genetic Algorithms]]",
+      "resolved": "urn:visionflow:linked:genetic-algorithms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Genomics]]",
+      "resolved": "urn:visionflow:linked:genomics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Google Cirq]]",
+      "resolved": "urn:visionflow:linked:google-cirq",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Google Magenta]]",
+      "resolved": "urn:visionflow:linked:google-magenta",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Grammar VAE]]",
+      "resolved": "urn:visionflow:linked:grammar-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graph Neural Networks]]",
+      "resolved": "urn:visionflow:linked:graph-neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gretel.ai]]",
+      "resolved": "urn:visionflow:linked:gretel-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GRU]]",
+      "resolved": "urn:visionflow:linked:gru",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gumbel-Softmax]]",
+      "resolved": "urn:visionflow:linked:gumbel-softmax",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hamiltonian Monte Carlo]]",
+      "resolved": "urn:visionflow:linked:hamiltonian-monte-carlo",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Handwritten Digit Generation]]",
+      "resolved": "urn:visionflow:linked:handwritten-digit-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hierarchical VAE]]",
+      "resolved": "urn:visionflow:linked:hierarchical-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hierarchical VAE|Hierarchical VAEs]]",
+      "resolved": "urn:visionflow:linked:hierarchical-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hindsight Experience Replay]]",
+      "resolved": "urn:visionflow:linked:hindsight-experience-replay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Homomorphic Encryption]]",
+      "resolved": "urn:visionflow:linked:homomorphic-encryption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM Qiskit]]",
+      "resolved": "urn:visionflow:linked:ibm-qiskit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM Synthetic Data Generator]]",
+      "resolved": "urn:visionflow:linked:ibm-synthetic-data-generator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM TrueNorth]]",
+      "resolved": "urn:visionflow:linked:ibm-true-north",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Image Synthesis]]",
+      "resolved": "urn:visionflow:linked:image-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Implicit Neural Representation]]",
+      "resolved": "urn:visionflow:linked:implicit-neural-representation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Importance Weighted Autoencoders]]",
+      "resolved": "urn:visionflow:linked:importance-weighted-autoencoders",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inception Score]]",
+      "resolved": "urn:visionflow:linked:inception-score",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inference Network]]",
+      "resolved": "urn:visionflow:linked:inference-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Information Theory]]",
+      "resolved": "urn:visionflow:linked:information-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intel Loihi]]",
+      "resolved": "urn:visionflow:linked:intel-loihi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Internet of Things]]",
+      "resolved": "urn:visionflow:linked:internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intrinsic Motivation]]",
+      "resolved": "urn:visionflow:linked:intrinsic-motivation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IntroVAE]]",
+      "resolved": "urn:visionflow:linked:intro-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IoT]]",
+      "resolved": "urn:visionflow:linked:io-t",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Iron]]",
+      "resolved": "urn:visionflow:linked:iron",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jürgen Schmidhuber]]",
+      "resolved": "urn:visionflow:linked:j-rgen-schmidhuber",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jensen's Inequality]]",
+      "resolved": "urn:visionflow:linked:jensen-s-inequality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Junction Tree VAE]]",
+      "resolved": "urn:visionflow:linked:junction-tree-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Keras]]",
+      "resolved": "urn:visionflow:linked:keras",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KL Annealing]]",
+      "resolved": "urn:visionflow:linked:kl-annealing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KL Divergence]]",
+      "resolved": "urn:visionflow:linked:kl-divergence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kullback-Leibler Divergence]]",
+      "resolved": "urn:visionflow:linked:kullback-leibler-divergence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ladder VAE]]",
+      "resolved": "urn:visionflow:linked:ladder-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Diffusion]]",
+      "resolved": "urn:visionflow:linked:latent-diffusion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Representation]]",
+      "resolved": "urn:visionflow:linked:latent-representation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Representations]]",
+      "resolved": "urn:visionflow:linked:latent-representations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Space Interpolation]]",
+      "resolved": "urn:visionflow:linked:latent-space-interpolation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Traversal]]",
+      "resolved": "urn:visionflow:linked:latent-traversal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Latent Variable Collapse]]",
+      "resolved": "urn:visionflow:linked:latent-variable-collapse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2]]",
+      "resolved": "urn:visionflow:linked:layer-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer Normalization]]",
+      "resolved": "urn:visionflow:linked:layer-normalization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Leaky Integrate-and-Fire]]",
+      "resolved": "urn:visionflow:linked:leaky-integrate-and-fire",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Learning Rate Scheduling]]",
+      "resolved": "urn:visionflow:linked:learning-rate-scheduling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Light Clients]]",
+      "resolved": "urn:visionflow:linked:light-clients",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Likelihood Model]]",
+      "resolved": "urn:visionflow:linked:likelihood-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lipinski's Rule of Five]]",
+      "resolved": "urn:visionflow:linked:lipinski-s-rule-of-five",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Log-Likelihood]]",
+      "resolved": "urn:visionflow:linked:log-likelihood",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LPIPS]]",
+      "resolved": "urn:visionflow:linked:lpips",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LSTM]]",
+      "resolved": "urn:visionflow:linked:lstm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manufacturing Defect Detection]]",
+      "resolved": "urn:visionflow:linked:manufacturing-defect-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Masked Attention]]",
+      "resolved": "urn:visionflow:linked:masked-attention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Materials Science]]",
+      "resolved": "urn:visionflow:linked:materials-science",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Matplotlib]]",
+      "resolved": "urn:visionflow:linked:matplotlib",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Max Welling]]",
+      "resolved": "urn:visionflow:linked:max-welling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mean-Field Approximation]]",
+      "resolved": "urn:visionflow:linked:mean-field-approximation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mean Squared Error]]",
+      "resolved": "urn:visionflow:linked:mean-squared-error",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Medical Diagnosis]]",
+      "resolved": "urn:visionflow:linked:medical-diagnosis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Medical Image Synthesis]]",
+      "resolved": "urn:visionflow:linked:medical-image-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MLOps]]",
+      "resolved": "urn:visionflow:linked:mlops",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mode Collapse]]",
+      "resolved": "urn:visionflow:linked:mode-collapse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Compression]]",
+      "resolved": "urn:visionflow:linked:model-compression",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MolGAN]]",
+      "resolved": "urn:visionflow:linked:mol-gan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Molecular Optimization]]",
+      "resolved": "urn:visionflow:linked:molecular-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Molecular Property Prediction]]",
+      "resolved": "urn:visionflow:linked:molecular-property-prediction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monte Carlo]]",
+      "resolved": "urn:visionflow:linked:monte-carlo",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monte Carlo Estimation]]",
+      "resolved": "urn:visionflow:linked:monte-carlo-estimation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Moses]]",
+      "resolved": "urn:visionflow:linked:moses",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mostly AI]]",
+      "resolved": "urn:visionflow:linked:mostly-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent Systems]]",
+      "resolved": "urn:visionflow:linked:multi-agent-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Objective Optimization]]",
+      "resolved": "urn:visionflow:linked:multi-objective-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multimodal Learning]]",
+      "resolved": "urn:visionflow:linked:multimodal-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multiple Importance Sampling]]",
+      "resolved": "urn:visionflow:linked:multiple-importance-sampling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Music VAE]]",
+      "resolved": "urn:visionflow:linked:music-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MusicVAE]]",
+      "resolved": "urn:visionflow:linked:music-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Network Intrusion Detection]]",
+      "resolved": "urn:visionflow:linked:network-intrusion-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Machine Translation]]",
+      "resolved": "urn:visionflow:linked:neural-machine-translation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Noisy Intermediate-Scale Quantum]]",
+      "resolved": "urn:visionflow:linked:noisy-intermediate-scale-quantum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Normal Distribution]]",
+      "resolved": "urn:visionflow:linked:normal-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Normalizing Flows]]",
+      "resolved": "urn:visionflow:linked:normalizing-flows",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NVAE]]",
+      "resolved": "urn:visionflow:linked:nvae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NVIDIA Jetson]]",
+      "resolved": "urn:visionflow:linked:nvidia-jetson",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Occupancy Networks]]",
+      "resolved": "urn:visionflow:linked:occupancy-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Offline Reinforcement Learning]]",
+      "resolved": "urn:visionflow:linked:offline-reinforcement-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[On-Chain Metrics]]",
+      "resolved": "urn:visionflow:linked:on-chain-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ONNX Runtime]]",
+      "resolved": "urn:visionflow:linked:onnx-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenAI Robotics]]",
+      "resolved": "urn:visionflow:linked:open-ai-robotics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Options Framework]]",
+      "resolved": "urn:visionflow:linked:options-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Outlier Detection]]",
+      "resolved": "urn:visionflow:linked:outlier-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paragraph VAE]]",
+      "resolved": "urn:visionflow:linked:paragraph-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Parameter Shift Rule]]",
+      "resolved": "urn:visionflow:linked:parameter-shift-rule",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Parameterized Quantum Circuit]]",
+      "resolved": "urn:visionflow:linked:parameterized-quantum-circuit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PCA]]",
+      "resolved": "urn:visionflow:linked:pca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PennyLane]]",
+      "resolved": "urn:visionflow:linked:penny-lane",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Perceptual Path Length]]",
+      "resolved": "urn:visionflow:linked:perceptual-path-length",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PlaNet]]",
+      "resolved": "urn:visionflow:linked:pla-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Point Cloud Network]]",
+      "resolved": "urn:visionflow:linked:point-cloud-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Policy Search]]",
+      "resolved": "urn:visionflow:linked:policy-search",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pooling Layers]]",
+      "resolved": "urn:visionflow:linked:pooling-layers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Portfolio Management]]",
+      "resolved": "urn:visionflow:linked:portfolio-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Posterior Collapse]]",
+      "resolved": "urn:visionflow:linked:posterior-collapse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy-Preserving]]",
+      "resolved": "urn:visionflow:linked:privacy-preserving",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Probabilistic Modeling]]",
+      "resolved": "urn:visionflow:linked:probabilistic-modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Probability Distribution|probability distributions]]",
+      "resolved": "urn:visionflow:linked:probability-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Progressive Growing]]",
+      "resolved": "urn:visionflow:linked:progressive-growing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PubChem]]",
+      "resolved": "urn:visionflow:linked:pub-chem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PyTorch]]",
+      "resolved": "urn:visionflow:linked:py-torch",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Circuit]]",
+      "resolved": "urn:visionflow:linked:quantum-circuit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Error Correction]]",
+      "resolved": "urn:visionflow:linked:quantum-error-correction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Gradient Estimation]]",
+      "resolved": "urn:visionflow:linked:quantum-gradient-estimation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[QVAE]]",
+      "resolved": "urn:visionflow:linked:qvae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Random Network Distillation]]",
+      "resolved": "urn:visionflow:linked:random-network-distillation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ransomware]]",
+      "resolved": "urn:visionflow:linked:ransomware",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Raspberry Pi]]",
+      "resolved": "urn:visionflow:linked:raspberry-pi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RDKit]]",
+      "resolved": "urn:visionflow:linked:rdkit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recognition Model]]",
+      "resolved": "urn:visionflow:linked:recognition-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reentrancy Attack|reentrancy attacks]]",
+      "resolved": "urn:visionflow:linked:reentrancy-attack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regularization]]",
+      "resolved": "urn:visionflow:linked:regularization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reparameterization Trick]]",
+      "resolved": "urn:visionflow:linked:reparameterization-trick",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Representation Learning]]",
+      "resolved": "urn:visionflow:linked:representation-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ResNet]]",
+      "resolved": "urn:visionflow:linked:res-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RNN]]",
+      "resolved": "urn:visionflow:linked:rnn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rollup]]",
+      "resolved": "urn:visionflow:linked:rollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ROS2]]",
+      "resolved": "urn:visionflow:linked:ros2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ROS2 Humble]]",
+      "resolved": "urn:visionflow:linked:ros2-humble",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scalability]]",
+      "resolved": "urn:visionflow:linked:scalability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SELF-referencIng Embedded Strings]]",
+      "resolved": "urn:visionflow:linked:self-referenc-ing-embedded-strings",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SELFIES-VAE]]",
+      "resolved": "urn:visionflow:linked:selfies-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Semi-Supervised VAE]]",
+      "resolved": "urn:visionflow:linked:semi-supervised-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sentence VAE]]",
+      "resolved": "urn:visionflow:linked:sentence-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Shakir Mohamed]]",
+      "resolved": "urn:visionflow:linked:shakir-mohamed",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sigmoid]]",
+      "resolved": "urn:visionflow:linked:sigmoid",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Signed Distance Function]]",
+      "resolved": "urn:visionflow:linked:signed-distance-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Skip Connections]]",
+      "resolved": "urn:visionflow:linked:skip-connections",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SLAC]]",
+      "resolved": "urn:visionflow:linked:slac",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SMILES]]",
+      "resolved": "urn:visionflow:linked:smiles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SNN-VAE]]",
+      "resolved": "urn:visionflow:linked:snn-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Soft-IntroVAE]]",
+      "resolved": "urn:visionflow:linked:soft-intro-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Softplus]]",
+      "resolved": "urn:visionflow:linked:softplus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solidity]]",
+      "resolved": "urn:visionflow:linked:solidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solubility]]",
+      "resolved": "urn:visionflow:linked:solubility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Speech Synthesis]]",
+      "resolved": "urn:visionflow:linked:speech-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Spherical Interpolation]]",
+      "resolved": "urn:visionflow:linked:spherical-interpolation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SpiNNaker]]",
+      "resolved": "urn:visionflow:linked:spi-nnaker",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Spike-Timing-Dependent Plasticity]]",
+      "resolved": "urn:visionflow:linked:spike-timing-dependent-plasticity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Split Learning]]",
+      "resolved": "urn:visionflow:linked:split-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Straight-Through Estimator]]",
+      "resolved": "urn:visionflow:linked:straight-through-estimator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[StyleGAN]]",
+      "resolved": "urn:visionflow:linked:style-gan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Surrogate Gradient Learning]]",
+      "resolved": "urn:visionflow:linked:surrogate-gradient-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Symbolic Execution]]",
+      "resolved": "urn:visionflow:linked:symbolic-execution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[t-SNE]]",
+      "resolved": "urn:visionflow:linked:t-sne",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tanh]]",
+      "resolved": "urn:visionflow:linked:tanh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Task and Motion Planning]]",
+      "resolved": "urn:visionflow:linked:task-and-motion-planning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow]]",
+      "resolved": "urn:visionflow:linked:tensor-flow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow Quantum]]",
+      "resolved": "urn:visionflow:linked:tensor-flow-quantum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorRT]]",
+      "resolved": "urn:visionflow:linked:tensor-rt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Text Style Transfer]]",
+      "resolved": "urn:visionflow:linked:text-style-transfer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Text-to-Image Synthesis]]",
+      "resolved": "urn:visionflow:linked:text-to-image-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Texture Synthesis]]",
+      "resolved": "urn:visionflow:linked:texture-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Toxicity]]",
+      "resolved": "urn:visionflow:linked:toxicity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transfer Learning]]",
+      "resolved": "urn:visionflow:linked:transfer-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transformer Decoders]]",
+      "resolved": "urn:visionflow:linked:transformer-decoders",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transformer Models]]",
+      "resolved": "urn:visionflow:linked:transformer-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transposed Convolution|transposed convolutions]]",
+      "resolved": "urn:visionflow:linked:transposed-convolution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Upsampling]]",
+      "resolved": "urn:visionflow:linked:upsampling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VAE-GAN]]",
+      "resolved": "urn:visionflow:linked:vae-gan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Variational Autoencoder]]",
+      "resolved": "urn:visionflow:linked:variational-autoencoder",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Variational Inference]]",
+      "resolved": "urn:visionflow:linked:variational-inference",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vector Quantization]]",
+      "resolved": "urn:visionflow:linked:vector-quantization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Very Deep VAE]]",
+      "resolved": "urn:visionflow:linked:very-deep-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VGG Network]]",
+      "resolved": "urn:visionflow:linked:vgg-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Video Compression]]",
+      "resolved": "urn:visionflow:linked:video-compression",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Try-On]]",
+      "resolved": "urn:visionflow:linked:virtual-try-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vision-Language Models]]",
+      "resolved": "urn:visionflow:linked:vision-language-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vision Transformer]]",
+      "resolved": "urn:visionflow:linked:vision-transformer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vision Transformers]]",
+      "resolved": "urn:visionflow:linked:vision-transformers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Visual Servoing]]",
+      "resolved": "urn:visionflow:linked:visual-servoing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Von Mises-Fisher Distribution]]",
+      "resolved": "urn:visionflow:linked:von-mises-fisher-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VQ-VAE]]",
+      "resolved": "urn:visionflow:linked:vq-vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VQC]]",
+      "resolved": "urn:visionflow:linked:vqc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VR]]",
+      "resolved": "urn:visionflow:linked:vr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wasserstein Distance]]",
+      "resolved": "urn:visionflow:linked:wasserstein-distance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WaveNet]]",
+      "resolved": "urn:visionflow:linked:wave-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[World Models]]",
+      "resolved": "urn:visionflow:linked:world-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[XR]]",
+      "resolved": "urn:visionflow:linked:xr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ZINC]]",
+      "resolved": "urn:visionflow:linked:zinc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ZK-SNARK]]",
+      "resolved": "urn:visionflow:linked:zk-snark",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIDomain]]",
+      "resolved": "urn:visionflow:owl:class:aidomain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Augmented Reality]]",
+      "resolved": "urn:visionflow:owl:class:augmented-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autoencoder]]",
+      "resolved": "urn:visionflow:owl:class:autoencoder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autoencoder|autoencoders]]",
+      "resolved": "urn:visionflow:owl:class:autoencoder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Backpropagation]]",
+      "resolved": "urn:visionflow:owl:class:backpropagation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BERT]]",
+      "resolved": "urn:visionflow:owl:class:bert",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network|CNN]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DALL-E]]",
+      "resolved": "urn:visionflow:owl:class:dall-e",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decoder]]",
+      "resolved": "urn:visionflow:owl:class:decoder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Differential Privacy]]",
+      "resolved": "urn:visionflow:owl:class:differential-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diffusion Models]]",
+      "resolved": "urn:visionflow:owl:class:diffusion-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Dimensionality Reduction]]",
+      "resolved": "urn:visionflow:owl:class:dimensionality-reduction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Edge Computing]]",
+      "resolved": "urn:visionflow:owl:class:edge-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Encoder]]",
+      "resolved": "urn:visionflow:owl:class:encoder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feature Extraction]]",
+      "resolved": "urn:visionflow:owl:class:feature-extraction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Federated Learning]]",
+      "resolved": "urn:visionflow:owl:class:federated-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gaussian Splatting]]",
+      "resolved": "urn:visionflow:owl:class:gaussian-splatting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Adversarial Network]]",
+      "resolved": "urn:visionflow:owl:class:generative-adversarial-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Adversarial Networks]]",
+      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Model]]",
+      "resolved": "urn:visionflow:owl:class:generative-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google DeepMind]]",
+      "resolved": "urn:visionflow:owl:class:google-deep-mind",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gossip Protocol]]",
+      "resolved": "urn:visionflow:owl:class:gossip-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gradient Clipping]]",
+      "resolved": "urn:visionflow:owl:class:gradient-clipping",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gradient Descent]]",
+      "resolved": "urn:visionflow:owl:class:gradient-descent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image Generation]]",
+      "resolved": "urn:visionflow:owl:class:image-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image to Image Translation]]",
+      "resolved": "urn:visionflow:owl:class:image-to-image-translation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Imitation Learning]]",
+      "resolved": "urn:visionflow:owl:class:imitation-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Latent Space]]",
+      "resolved": "urn:visionflow:owl:class:latent-space",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[latent space]]",
+      "resolved": "urn:visionflow:owl:class:latent-space",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Planning]]",
+      "resolved": "urn:visionflow:owl:class:motion-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Radiance Fields]]",
+      "resolved": "urn:visionflow:owl:class:neural-radiance-fields",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neuromorphic Computing]]",
+      "resolved": "urn:visionflow:owl:class:neuromorphic-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NVIDIA]]",
+      "resolved": "urn:visionflow:owl:class:nvidia",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quantum Computing]]",
+      "resolved": "urn:visionflow:owl:class:quantum-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recurrent Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:recurrent-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recurrent Neural Network|RNN]]",
+      "resolved": "urn:visionflow:owl:class:recurrent-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning]]",
+      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Operating System]]",
+      "resolved": "urn:visionflow:owl:class:robot-operating-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Secure Multi-Party Computation]]",
+      "resolved": "urn:visionflow:owl:class:secure-multi-party-computation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Self Attention]]",
+      "resolved": "urn:visionflow:owl:class:self-attention",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Self-Sovereign Identity]]",
+      "resolved": "urn:visionflow:owl:class:self-sovereign-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Semi-Supervised Learning]]",
+      "resolved": "urn:visionflow:owl:class:semi-supervised-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SLAM]]",
+      "resolved": "urn:visionflow:owl:class:slam",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stochastic Gradient Descent]]",
+      "resolved": "urn:visionflow:owl:class:stochastic-gradient-descent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Style Transfer]]",
+      "resolved": "urn:visionflow:owl:class:style-transfer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Text Generation]]",
+      "resolved": "urn:visionflow:owl:class:text-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Unsupervised Learning]]",
+      "resolved": "urn:visionflow:owl:class:unsupervised-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Variational Autoencoders]]",
+      "resolved": "urn:visionflow:owl:class:variational-autoencoders",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Reality]]",
+      "resolved": "urn:visionflow:owl:class:virtual-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Zero-Knowledge Proof]]",
+      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa328785412652ab98a5ac08e5f3a7779e397ce2cf01845ad31e5508798b5cda@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Generative neural network architecture combining autoencoders with variational inference for probabilistic latent space modeling and data generation
@@ -152,7 +3317,7 @@ public:: true
 
   - Modern encoders often use [[ResNet]], [[Vision Transformer]], or [[EfficientNet]] backbones for improved feature extraction
 
-  - [Updated 2025] Encoders increasingly incorporate [[Attention Mechanisms]] and [[Self-Attention]] for global context
+  - [Updated 2025] Encoders increasingly incorporate [[Attention Mechanisms]] and [[Self Attention]] for global context
 
   - ### Decoder Network (Generative Model)
 
@@ -312,7 +3477,7 @@ public:: true
   - Both encoder and decoder receive condition: q(z|x,c) and p(x|z,c)
 
   - **Applications**:
-  - [[Image-to-Image Translation]]
+  - [[Image to Image Translation]]
   - [[Text-to-Image Synthesis]]
   - Controlled generation with class labels or attributes
   - [[Semi-Supervised Learning]]

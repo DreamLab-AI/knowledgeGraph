@@ -1,20 +1,515 @@
-iri:: http://narrativegoldmine.com/infrastructure#URICanonicaliser
-uri:: urn:visionclaw:concept:infrastructure:uri-canonicaliser
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:uri-canonicaliser
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: URI Canonicaliser
-content-hash:: sha256-12-d4e5f6a7b8c9
-status:: complete
-maturity:: established
-quality-score:: 0.89
-authority-score:: 0.93
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#URICanonicaliser
+legacy_uri:: urn:visionclaw:concept:infrastructure:uri-canonicaliser
 public:: true
+
+# URI Canonicaliser
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1",
+  "@type": "Page",
+  "vc:slug": "uri-canonicaliser",
+  "title": "URI Canonicaliser",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adr-013",
+      "vc:label": "ADR-013"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340",
+      "vc:label": "BIP-340"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340-pubkey",
+      "vc:label": "BIP-340 Pubkey"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "vc:label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-hash-function",
+      "vc:label": "Blockchain Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-addressed-storage",
+      "vc:label": "Content-Addressed Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance-domain",
+      "vc:label": "DataGovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-resolution",
+      "vc:label": "Decentralised Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-serialisation",
+      "vc:label": "Deterministic Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-computation",
+      "vc:label": "Hash Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ietf-content-addressable-architecture",
+      "vc:label": "IETF Content-Addressable Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-stringification",
+      "vc:label": "JSON Stringification"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8141",
+      "vc:label": "RFC 8141"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8141-urn-syntax",
+      "vc:label": "RFC 8141 URN Syntax"
+    },
+    {
+      "@id": "urn:visionflow:linked:scope-bearer",
+      "vc:label": "Scope Bearer"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web-domain",
+      "vc:label": "SemanticWebDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:sha-256-hash-function",
+      "vc:label": "SHA-256 Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:slug-derivation",
+      "vc:label": "Slug Derivation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-detection",
+      "vc:label": "Tamper Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:uri-rfc-8141",
+      "vc:label": "URI RFC 8141"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did-core",
+      "vc:label": "W3C DID Core"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-addressing",
+      "vc:label": "Content Addressing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:federation-surface",
+      "vc:label": "Federation Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-layer",
+      "vc:label": "InfrastructureLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sha-256",
+      "vc:label": "SHA-256"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "vc:label": "Verifiable Credential Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.93"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d4e5f6a7b8c9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#URICanonicaliser"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "URI Canonicaliser"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.89"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:uri-canonicaliser"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:uri-canonicaliser"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+  "@type": "OntologyClass",
+  "label": "URI Canonicaliser",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:identity-systems",
+      "vc:label": "Identity Systems"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1–R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification of agent-emitted artefacts.",
+  "vc:qualityScore": {
+    "@value": "0.89",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.93",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:hash-computation",
+      "vc:label": "Hash Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:scope-bearer",
+      "vc:label": "Scope Bearer"
+    },
+    {
+      "@id": "urn:visionflow:linked:slug-derivation",
+      "vc:label": "Slug Derivation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-addressing",
+      "vc:label": "Content Addressing"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:bip-340-pubkey",
+      "vc:label": "BIP-340 Pubkey"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-stringification",
+      "vc:label": "JSON Stringification"
+    },
+    {
+      "@id": "urn:visionflow:linked:sha-256-hash-function",
+      "vc:label": "SHA-256 Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:uri-rfc-8141",
+      "vc:label": "URI RFC 8141"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-resolution",
+      "vc:label": "Decentralised Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-serialisation",
+      "vc:label": "Deterministic Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-detection",
+      "vc:label": "Tamper Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-addressing",
+      "vc:label": "Content Addressing"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:ietf-content-addressable-architecture",
+      "vc:label": "IETF Content-Addressable Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8141-urn-syntax",
+      "vc:label": "RFC 8141 URN Syntax"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did-core",
+      "vc:label": "W3C DID Core"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-hash-function",
+      "vc:label": "Blockchain Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-addressed-storage",
+      "vc:label": "Content-Addressed Storage"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:uri-canonicaliser:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ADR-013]]",
+      "resolved": "urn:visionflow:linked:adr-013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340]]",
+      "resolved": "urn:visionflow:linked:bip-340",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340 Pubkey]]",
+      "resolved": "urn:visionflow:linked:bip-340-pubkey",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340 Schnorr Keypair|BIP-340 x-only pubkey]]",
+      "resolved": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Hash Function]]",
+      "resolved": "urn:visionflow:linked:blockchain-hash-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content-Addressed Storage]]",
+      "resolved": "urn:visionflow:linked:content-addressed-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataGovernanceDomain]]",
+      "resolved": "urn:visionflow:linked:data-governance-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Resolution]]",
+      "resolved": "urn:visionflow:linked:decentralised-resolution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deterministic Serialisation]]",
+      "resolved": "urn:visionflow:linked:deterministic-serialisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash Computation]]",
+      "resolved": "urn:visionflow:linked:hash-computation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IETF Content-Addressable Architecture]]",
+      "resolved": "urn:visionflow:linked:ietf-content-addressable-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON Stringification]]",
+      "resolved": "urn:visionflow:linked:json-stringification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 8141]]",
+      "resolved": "urn:visionflow:linked:rfc-8141",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 8141 URN Syntax]]",
+      "resolved": "urn:visionflow:linked:rfc-8141-urn-syntax",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scope Bearer]]",
+      "resolved": "urn:visionflow:linked:scope-bearer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SemanticWebDomain]]",
+      "resolved": "urn:visionflow:linked:semantic-web-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHA-256 Hash Function]]",
+      "resolved": "urn:visionflow:linked:sha-256-hash-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Slug Derivation]]",
+      "resolved": "urn:visionflow:linked:slug-derivation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tamper Detection]]",
+      "resolved": "urn:visionflow:linked:tamper-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[URI RFC 8141]]",
+      "resolved": "urn:visionflow:linked:uri-rfc-8141",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C DID Core]]",
+      "resolved": "urn:visionflow:linked:w3-c-did-core",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Addressing]]",
+      "resolved": "urn:visionflow:owl:class:content-addressing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity|did:nostr]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Federation Surface]]",
+      "resolved": "urn:visionflow:owl:class:federation-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureLayer]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SHA-256]]",
+      "resolved": "urn:visionflow:owl:class:sha-256",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credential Surface|verifiable credential]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container|VisionClaw]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1–R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification of agent-emitted artefacts.

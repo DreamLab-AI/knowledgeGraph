@@ -1,21 +1,398 @@
-iri:: http://narrativegoldmine.com/infrastructure#Cryptography
-uri:: urn:visionclaw:concept:infrastructure:cryptography
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:cryptography
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Cryptography
-content-hash:: sha256-12-913bb9da1191
-legacy-term-id:: MV-9545
-status:: draft
-maturity:: draft
-quality-score:: 0.55
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T12:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#Cryptography
+legacy_uri:: urn:visionclaw:concept:infrastructure:cryptography
 public:: true
+
+# Cryptography
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9e85212fed05bed939980cd7bafcbe644e9b71d111f53aad6c944ba4ce29add5",
+  "@type": "Page",
+  "vc:slug": "cryptography",
+  "title": "Cryptography",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:encryption",
+      "vc:label": "encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:encryption-scheme",
+      "vc:label": "Encryption-Scheme"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-14888",
+      "vc:label": "ISO/IEC 14888"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-18033",
+      "vc:label": "ISO/IEC 18033"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist",
+      "vc:label": "NIST"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-quantum-cryptography-standards",
+      "vc:label": "Post-Quantum Cryptography Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaboration",
+      "vc:label": "Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus-Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:control-algorithm",
+      "vc:label": "Control-Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
+      "vc:label": "Cryptographic-Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital-Asset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-infrastructure",
+      "vc:label": "Digital-Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital-Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital-Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash-Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
+      "vc:label": "Post-Quantum-Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quantum-computing",
+      "vc:label": "Quantum-Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:security",
+      "vc:label": "Security"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-913bb9da1191"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#Cryptography"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9545"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T12:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cryptography"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.55"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cryptography"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cryptography"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e85212fed05bed939980cd7bafcbe644e9b71d111f53aad6c944ba4ce29add5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cryptography",
+  "@type": "OntologyClass",
+  "label": "Cryptography",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-security",
+      "vc:label": "Cryptographic Security"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9e85212fed05bed939980cd7bafcbe644e9b71d111f53aad6c944ba4ce29add5"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e85212fed05bed939980cd7bafcbe644e9b71d111f53aad6c944ba4ce29add5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "[[Cryptography]] is the mathematical science of transforming information through [[encryption]], ensuring confidentiality, authenticity, and integrity in digital communications and [[blockchain]] systems. Employed across [[Consensus-Protocol]], [[Digital-Asset]], and [[Security]], cryptographic methods enable secure value transfer and trust-less coordination in decentralised networks.",
+  "vc:qualityScore": {
+    "@value": "0.55",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:encryption-scheme",
+      "vc:label": "Encryption-Scheme"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital-Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash-Function"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus-Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
+      "vc:label": "Cryptographic-Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital-Asset"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
+      "vc:label": "Post-Quantum-Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quantum-computing",
+      "vc:label": "Quantum-Computing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cryptography:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9e85212fed05bed939980cd7bafcbe644e9b71d111f53aad6c944ba4ce29add5"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[encryption]]",
+      "resolved": "urn:visionflow:linked:encryption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Encryption-Scheme]]",
+      "resolved": "urn:visionflow:linked:encryption-scheme",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 14888]]",
+      "resolved": "urn:visionflow:linked:iso-iec-14888",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 18033]]",
+      "resolved": "urn:visionflow:linked:iso-iec-18033",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST]]",
+      "resolved": "urn:visionflow:linked:nist",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Post-Quantum Cryptography Standards]]",
+      "resolved": "urn:visionflow:linked:post-quantum-cryptography-standards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Collaboration]]",
+      "resolved": "urn:visionflow:owl:class:collaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus-Protocol]]",
+      "resolved": "urn:visionflow:owl:class:consensus-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Control-Algorithm]]",
+      "resolved": "urn:visionflow:owl:class:control-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptographic-Protocol]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital-Asset]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital-Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:digital-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital-Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital-Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hash-Function]]",
+      "resolved": "urn:visionflow:owl:class:hash-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Post-Quantum-Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:post-quantum-cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quantum-Computing]]",
+      "resolved": "urn:visionflow:owl:class:quantum-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Security]]",
+      "resolved": "urn:visionflow:owl:class:security",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e85212fed05bed939980cd7bafcbe644e9b71d111f53aad6c944ba4ce29add5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - [[Cryptography]] is the mathematical science of transforming information through [[encryption]], ensuring confidentiality, authenticity, and integrity in digital communications and [[blockchain]] systems. Employed across [[Consensus-Protocol]], [[Digital-Asset]], and [[Security]], cryptographic methods enable secure value transfer and trust-less coordination in decentralised networks.

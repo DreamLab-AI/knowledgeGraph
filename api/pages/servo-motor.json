@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:8b728461a248e72b7c8efa0dac1c38606df6c7858e27acdeb1260746cbf03d3f",
+  "title": "Servo Motor",
+  "slug": "servo-motor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:servo-motor",
+  "domain": "robotics",
+  "definition": "Servo motor provides precise position, velocity, and torque control.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:electric-motor",
+      "label": "Electric Motor"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

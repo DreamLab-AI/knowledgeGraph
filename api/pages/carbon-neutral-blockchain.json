@@ -1,0 +1,736 @@
+{
+  "id": "urn:visionflow:page:6019d9288b1c51ada408fa2f049258bcc56cae831a27ff87347133485f20e14b",
+  "title": "Carbon Neutral Blockchain",
+  "slug": "carbon-neutral-blockchain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-neutral-blockchain",
+  "domain": "blockchain",
+  "definition": "**Carbon Neutral Blockchain** is any distributed ledger infrastructure that achieves net-zero or carbon-negative lifecycle greenhouse gas emissions through one or more of three principal mechanisms: **(1) Consensus mechanism transition**: Adoption of low-energy [[Consensus Mechanisms]] \u2014 pre-eminently [[Proof of Stake]] \u2014 which eliminate the energy-intensive computational competition of [[Proof of Work]] mining. Proof of Stake (PoS), Liquid Proof of Stake (LPoS), Pure Proof of Stake (PPoS), Nominated Proof of Stake (NPoS), Delegated Proof of Stake (DPoS), and directed acyclic graph (DAG) mechanisms achieve equivalent or superior cryptoeconomic security to [[Proof of Work]] at a fraction of the energy cost, because security derives from economic stake rather than hashrate expenditure. **(2) Renewable energy procurement**: Sourcing electrical power exclusively from [[Renewable Energy]] generation verified through [[Renewable Energy Certificates]] (RECs), Guarantees of Origin (GOs in the EU), or the emerging EnergyTag Granular Certificate (GC) standard enabling hourly-resolution clean energy matching rather than annual averaging.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:climate-aligned-finance",
+      "label": "Climate-Aligned Finance"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:green-infrastructure",
+      "label": "Green Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sustainable-technology",
+      "label": "Sustainable Technology"
+    }
+  ],
+  "qualityScore": 0.53,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:carbon-credit",
+        "label": "Carbon Credit"
+      },
+      {
+        "id": "urn:visionflow:linked:carbon-offset-programme",
+        "label": "Carbon Offset Programme"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-metering-system",
+        "label": "Energy Metering System"
+      },
+      {
+        "id": "urn:visionflow:linked:ghg-protocol-accounting",
+        "label": "GHG Protocol Accounting"
+      },
+      {
+        "id": "urn:visionflow:linked:renewable-energy-certificate",
+        "label": "Renewable Energy Certificate"
+      },
+      {
+        "id": "urn:visionflow:linked:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-reporting-framework",
+        "label": "Sustainability Reporting Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:visionflow:owl:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:energy-audit",
+        "label": "Energy Audit"
+      },
+      {
+        "id": "urn:visionflow:linked:renewable-energy-certificate",
+        "label": "Renewable Energy Certificate"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:visionflow:linked:third-party-verification",
+        "label": "Third-Party Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:climate-disclosure",
+        "label": "Climate Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:csrd-compliance",
+        "label": "CSRD Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:visionflow:linked:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-carbon-markets",
+        "label": "On-Chain Carbon Markets"
+      },
+      {
+        "id": "urn:visionflow:linked:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainable-supply-chain",
+        "label": "Sustainable Supply Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenized-carbon-credits",
+        "label": "Tokenized Carbon Credits"
+      },
+      {
+        "id": "urn:visionflow:linked:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:environmental-accounting-standard",
+        "label": "Environmental Accounting Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "id": "urn:visionflow:linked:net-zero-commitment",
+        "label": "Net-Zero Commitment"
+      },
+      {
+        "id": "urn:visionflow:linked:paris-agreement-alignment",
+        "label": "Paris Agreement Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:pas-2060-carbon-neutrality",
+        "label": "PAS 2060 Carbon Neutrality"
+      },
+      {
+        "id": "urn:visionflow:linked:science-based-targets",
+        "label": "Science Based Targets"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorand",
+      "label": "Algorand"
+    },
+    {
+      "slug": "algorand-foundation-2022-2025-sustainability-carbon-negative-certification",
+      "label": "Algorand Foundation 2022-2025 Sustainability Carbon-Negative Certification"
+    },
+    {
+      "slug": "ar-xiv-2024-blockchain-carbon-markets-standards-overview",
+      "label": "ArXiv 2024 Blockchain Carbon Markets Standards Overview"
+    },
+    {
+      "slug": "cambridge-blockchain-network-sustainability-index-cbeci",
+      "label": "Cambridge Blockchain Network Sustainability Index CBECI"
+    },
+    {
+      "slug": "cambridge-ccaf-2025-digital-mining-industry-report",
+      "label": "Cambridge CCAF 2025 Digital Mining Industry Report"
+    },
+    {
+      "slug": "carbon-accounting-layer",
+      "label": "CarbonAccountingLayer"
+    },
+    {
+      "slug": "carbon-credit",
+      "label": "Carbon Credit"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    },
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "slug": "carbon-neutrality",
+      "label": "Carbon Neutrality"
+    },
+    {
+      "slug": "carbon-offset",
+      "label": "Carbon Offset"
+    },
+    {
+      "slug": "carbon-offset-programme",
+      "label": "Carbon Offset Programme"
+    },
+    {
+      "slug": "carbonmark-2025-state-of-voluntary-carbon-market",
+      "label": "Carbonmark 2025 State of Voluntary Carbon Market"
+    },
+    {
+      "slug": "centralised-carbon-market",
+      "label": "Centralised Carbon Market"
+    },
+    {
+      "slug": "climate-aligned-finance",
+      "label": "Climate-Aligned Finance"
+    },
+    {
+      "slug": "climate-commitments",
+      "label": "Climate Commitments"
+    },
+    {
+      "slug": "climate-disclosure",
+      "label": "Climate Disclosure"
+    },
+    {
+      "slug": "climate-trade",
+      "label": "ClimateTrade"
+    },
+    {
+      "slug": "climate-trade-2021-algorand-carbon-negative-announcement",
+      "label": "ClimateTrade 2021 Algorand Carbon-Negative Announcement"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "consensys-2022-ethereum-carbon-footprint-post-merge",
+      "label": "Consensys 2022 Ethereum Carbon Footprint Post-Merge"
+    },
+    {
+      "slug": "corporate-sustainability-reporting",
+      "label": "Corporate Sustainability Reporting"
+    },
+    {
+      "slug": "crypto-carbon-ratings-institute-2023-po-s-network-assessments",
+      "label": "Crypto Carbon Ratings Institute 2023 PoS Network Assessments"
+    },
+    {
+      "slug": "csrd-compliance",
+      "label": "CSRD Compliance"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-vries-2018-joule-bitcoin-energy-problem",
+      "label": "de Vries 2018 Joule Bitcoin Energy Problem"
+    },
+    {
+      "slug": "de-vries-2022-joule-bitcoin-carbon-footprint",
+      "label": "de Vries 2022 Joule Bitcoin Carbon Footprint"
+    },
+    {
+      "slug": "decarbonisation",
+      "label": "Decarbonisation"
+    },
+    {
+      "slug": "decentralised-network",
+      "label": "Decentralised Network"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "energy-audit",
+      "label": "Energy Audit"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
+      "slug": "energy-intensive-blockchain",
+      "label": "Energy-Intensive Blockchain"
+    },
+    {
+      "slug": "energy-metering",
+      "label": "Energy Metering"
+    },
+    {
+      "slug": "energy-metering-system",
+      "label": "Energy Metering System"
+    },
+    {
+      "slug": "energy-procurement-layer",
+      "label": "EnergyProcurementLayer"
+    },
+    {
+      "slug": "energy-tag-foundation-2020-2025-granular-certificate-standard",
+      "label": "EnergyTag Foundation 2020-2025 Granular Certificate Standard"
+    },
+    {
+      "slug": "energy-tag-granular-certificate",
+      "label": "EnergyTag Granular Certificate"
+    },
+    {
+      "slug": "energy-tag-granular-certificate-standard",
+      "label": "EnergyTag Granular Certificate Standard"
+    },
+    {
+      "slug": "environmental-accounting-standard",
+      "label": "Environmental Accounting Standard"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "EnvironmentalDomain"
+    },
+    {
+      "slug": "esg",
+      "label": "ESG"
+    },
+    {
+      "slug": "esg-investing",
+      "label": "ESG Investing"
+    },
+    {
+      "slug": "ethereum-foundation-2022-merge-energy-consumption-analysis",
+      "label": "Ethereum Foundation 2022 Merge Energy Consumption Analysis"
+    },
+    {
+      "slug": "european-commission-2023-csrd",
+      "label": "European Commission 2023 CSRD"
+    },
+    {
+      "slug": "frontiers-in-blockchain-2025-voluntary-carbon-market-network-structure",
+      "label": "Frontiers in Blockchain 2025 Voluntary Carbon Market Network Structure"
+    },
+    {
+      "slug": "ghg-protocol",
+      "label": "GHG Protocol"
+    },
+    {
+      "slug": "ghg-protocol-accounting",
+      "label": "GHG Protocol Accounting"
+    },
+    {
+      "slug": "ghg-protocol-corporate-standard",
+      "label": "GHG Protocol Corporate Standard"
+    },
+    {
+      "slug": "gmi-2025-blockchain-sustainable-supply-chains-market",
+      "label": "GMI 2025 Blockchain Sustainable Supply Chains Market"
+    },
+    {
+      "slug": "gold-standard",
+      "label": "Gold Standard"
+    },
+    {
+      "slug": "gold-standard-2024-blockchain-tokenisation-carbon-markets",
+      "label": "Gold Standard 2024 Blockchain Tokenisation Carbon Markets"
+    },
+    {
+      "slug": "green-bond-market",
+      "label": "Green Bond Market"
+    },
+    {
+      "slug": "green-finance",
+      "label": "Green Finance"
+    },
+    {
+      "slug": "green-finance-domain",
+      "label": "GreenFinanceDomain"
+    },
+    {
+      "slug": "green-infrastructure",
+      "label": "Green Infrastructure"
+    },
+    {
+      "slug": "hashgraph-consensus",
+      "label": "Hashgraph Consensus"
+    },
+    {
+      "slug": "hedera-2024-sustainability-carbon-negative-council",
+      "label": "Hedera 2024 Sustainability Carbon-Negative Council"
+    },
+    {
+      "slug": "hedera-blockchain-for-energy-2024-b4-ecarbon",
+      "label": "Hedera Blockchain for Energy 2024 B4ECarbon"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
+      "slug": "high-carbon-consensus",
+      "label": "High-Carbon Consensus"
+    },
+    {
+      "slug": "hm-treasury-2023-2025-future-financial-services-cryptoassets",
+      "label": "HM Treasury 2023-2025 Future Financial Services Cryptoassets"
+    },
+    {
+      "slug": "ibm-2024-rec-markets-tokenization",
+      "label": "IBM 2024 REC Markets Tokenization"
+    },
+    {
+      "slug": "ieee-access-2022-tokenizing-renewable-energy-certificates",
+      "label": "IEEE Access 2022 Tokenizing Renewable Energy Certificates"
+    },
+    {
+      "slug": "imf-2025-carbon-tax-cryptocurrency-mining-proposal",
+      "label": "IMF 2025 Carbon Tax Cryptocurrency Mining Proposal"
+    },
+    {
+      "slug": "impact-investing",
+      "label": "Impact Investing"
+    },
+    {
+      "slug": "integrity-council-for-the-voluntary-carbon-market",
+      "label": "Integrity Council for the Voluntary Carbon Market"
+    },
+    {
+      "slug": "iso-14064",
+      "label": "ISO 14064"
+    },
+    {
+      "slug": "jp-morgan-kinexys-2024-carbon-markets-reimagined",
+      "label": "JP Morgan Kinexys 2024 Carbon Markets Reimagined"
+    },
+    {
+      "slug": "klima-dao",
+      "label": "KlimaDAO"
+    },
+    {
+      "slug": "klima-dao-2021-2025-digital-carbon-ecosystem",
+      "label": "KlimaDAO 2021-2025 Digital Carbon Ecosystem"
+    },
+    {
+      "slug": "net-zero-commitment",
+      "label": "Net-Zero Commitment"
+    },
+    {
+      "slug": "network-infrastructure-layer",
+      "label": "NetworkInfrastructureLayer"
+    },
+    {
+      "slug": "on-chain-carbon-markets",
+      "label": "On-Chain Carbon Markets"
+    },
+    {
+      "slug": "oracle-network",
+      "label": "Oracle Network"
+    },
+    {
+      "slug": "paris-agreement-alignment",
+      "label": "Paris Agreement Alignment"
+    },
+    {
+      "slug": "pas-2060",
+      "label": "PAS 2060"
+    },
+    {
+      "slug": "pas-2060-carbon-neutrality",
+      "label": "PAS 2060 Carbon Neutrality"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    },
+    {
+      "slug": "renewable-energy-certificate",
+      "label": "Renewable Energy Certificate"
+    },
+    {
+      "slug": "renewable-energy-integration",
+      "label": "Renewable Energy Integration"
+    },
+    {
+      "slug": "rizzello-2024-frontiers-in-blockchain-klima-dao-tokenized-carbon-credits",
+      "label": "Rizzello 2024 Frontiers in Blockchain KlimaDAO Tokenized Carbon Credits"
+    },
+    {
+      "slug": "science-based-targets",
+      "label": "Science Based Targets"
+    },
+    {
+      "slug": "science-direct-heliyon-2025-blockchain-rec-indonesia",
+      "label": "ScienceDirect Heliyon 2025 Blockchain REC Indonesia"
+    },
+    {
+      "slug": "scope-1-emissions",
+      "label": "Scope 1 Emissions"
+    },
+    {
+      "slug": "scope-2-emissions",
+      "label": "Scope 2 Emissions"
+    },
+    {
+      "slug": "scope-3-emissions",
+      "label": "Scope 3 Emissions"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "SustainabilityDomain"
+    },
+    {
+      "slug": "sustainability-reporting-framework",
+      "label": "Sustainability Reporting Framework"
+    },
+    {
+      "slug": "sustainable-supply-chain",
+      "label": "Sustainable Supply Chain"
+    },
+    {
+      "slug": "task-force-on-climate-related-financial-disclosures",
+      "label": "Task Force on Climate-related Financial Disclosures"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
+    },
+    {
+      "slug": "tezos-foundation-2022-2025-energy-efficient-blockchain",
+      "label": "Tezos Foundation 2022-2025 Energy-Efficient Blockchain"
+    },
+    {
+      "slug": "third-party-verification",
+      "label": "Third-Party Verification"
+    },
+    {
+      "slug": "tokenized-carbon-credits",
+      "label": "Tokenized Carbon Credits"
+    },
+    {
+      "slug": "toucan-protocol",
+      "label": "Toucan Protocol"
+    },
+    {
+      "slug": "toucan-protocol-2021-2025-carbon-bridge-bct-architecture",
+      "label": "Toucan Protocol 2021-2025 Carbon Bridge BCT Architecture"
+    },
+    {
+      "slug": "traditional-carbon-registry",
+      "label": "Traditional Carbon Registry"
+    },
+    {
+      "slug": "verra",
+      "label": "Verra"
+    },
+    {
+      "slug": "verra-verified-carbon-standard",
+      "label": "Verra Verified Carbon Standard"
+    },
+    {
+      "slug": "voluntary-carbon-market",
+      "label": "Voluntary Carbon Market"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "environmental-sustainability",
+      "label": "Environmental Sustainability"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "liquid-proof-of-stake",
+      "label": "Liquid Proof of Stake"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "pure-proof-of-stake",
+      "label": "Pure Proof of Stake"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "sustainable-technology",
+      "label": "Sustainable Technology"
+    },
+    {
+      "slug": "validator-node",
+      "label": "Validator Node"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

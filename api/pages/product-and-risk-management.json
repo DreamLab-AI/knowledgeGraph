@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0",
+  "title": "Product and Risk Management",
+  "slug": "product-and-risk-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:product-and-risk-management",
+  "domain": "infrastructure",
+  "definition": "Product and Risk Management is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ],
+  "backlinks": []
+}

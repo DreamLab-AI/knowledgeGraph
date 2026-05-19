@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:e48aaaddfe1c680a77e8c61a11a66b37436016a9d310e7390ef0f920233c3be4",
+  "title": "Digital Evidence Chain of Custody",
+  "slug": "digital-evidence-chain-of-custody",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-evidence-chain-of-custody",
+  "domain": "infrastructure",
+  "definition": "Forensic procedure preserving integrity and authenticity of digital evidence through cryptographic sealing and immutable logging from capture to legal presentation. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:visionflow:linked:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-storage",
+        "label": "Secure Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:evidence-integrity-verification",
+        "label": "Evidence Integrity Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:forensic-investigation",
+        "label": "Forensic Investigation"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-admissibility",
+        "label": "Legal Admissibility"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-log",
+      "label": "Audit Log"
+    },
+    {
+      "slug": "blockchain-ledger",
+      "label": "Blockchain Ledger"
+    },
+    {
+      "slug": "evidence-collection-protocol",
+      "label": "Evidence Collection Protocol"
+    },
+    {
+      "slug": "evidence-integrity-verification",
+      "label": "Evidence Integrity Verification"
+    },
+    {
+      "slug": "forensic-investigation",
+      "label": "Forensic Investigation"
+    },
+    {
+      "slug": "iso-27037",
+      "label": "ISO 27037"
+    },
+    {
+      "slug": "legal-admissibility",
+      "label": "Legal Admissibility"
+    },
+    {
+      "slug": "secure-storage",
+      "label": "Secure Storage"
+    },
+    {
+      "slug": "tamper-detection",
+      "label": "Tamper Detection"
+    },
+    {
+      "slug": "timestamp-authority",
+      "label": "Timestamp Authority"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

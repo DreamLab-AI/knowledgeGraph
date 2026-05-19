@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:a19b5332b7c86308a2b8dcd6f11a02ff41d2317b613ed43d7f34dcb9ce9a6be7",
+  "title": "copyright",
+  "slug": "copyright",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:copyright",
+  "domain": "infrastructure",
+  "definition": "copyright is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

@@ -1,0 +1,780 @@
+{
+  "id": "urn:visionflow:page:6ba687e3be527a90718a6ffad96649b33009359a9005e4a0b61fbb263fe76284",
+  "title": "Diagrams as Code",
+  "slug": "diagrams-as-code",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:diagrams-as-code",
+  "domain": "infrastructure",
+  "definition": "Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar rather than drawn in a graphical [[WYSIWYG]] editor, are stored alongside application code in [[Version Control]] systems such as [[Git]] under the same review and CI workflows ([[Pull Request|pull-request]] diffs, blame history, branch protection, automated linting via [[Pre-commit Hooks]]), and are rendered to images (SVG, PNG, PDF) at build time, in the browser, or by a server (Kroki, Mermaid Live Editor, PlantUML server) so the rendered artefact is treated as a derived output rather than the source of truth; the canonical grammars include [[Mermaid]] (created by Knut Sveidqvist 2014 at Qlik Sweden, 70K+ GitHub stars January 2026, 12.5M weekly npm downloads, governed by the Mermaid Open-Source Project, native rendering in [[GitHub]] Markdown since February 2022 and [[GitLab]] Markdown 2020, also rendered natively by [[ChatGPT]] canvas and [[Anthropic Claude]] artifacts since 2024), [[Pla",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:declarative-specification",
+      "label": "Declarative Specification"
+    },
+    {
+      "id": "urn:visionflow:linked:documentation-as-code",
+      "label": "Documentation as Code"
+    },
+    {
+      "id": "urn:visionflow:linked:domain-specific-language",
+      "label": "Domain-Specific Language"
+    },
+    {
+      "id": "urn:visionflow:linked:text-based-authoring",
+      "label": "Text-Based Authoring"
+    },
+    {
+      "id": "urn:visionflow:linked:version-controlled-artefact",
+      "label": "Version-Controlled Artefact"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:build-pipeline",
+        "label": "Build Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:diagram-grammar",
+        "label": "Diagram Grammar"
+      },
+      {
+        "id": "urn:visionflow:linked:icon-library",
+        "label": "Icon Library"
+      },
+      {
+        "id": "urn:visionflow:linked:layout-engine",
+        "label": "Layout Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:preview-plugin",
+        "label": "Preview Plugin"
+      },
+      {
+        "id": "urn:visionflow:linked:renderer",
+        "label": "Renderer"
+      },
+      {
+        "id": "urn:visionflow:linked:source-file",
+        "label": "Source File"
+      },
+      {
+        "id": "urn:visionflow:linked:theme",
+        "label": "Theme"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:layout-algorithm",
+        "label": "Layout Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:markdown",
+        "label": "Markdown"
+      },
+      {
+        "id": "urn:visionflow:linked:render-toolchain",
+        "label": "Render Toolchain"
+      },
+      {
+        "id": "urn:visionflow:linked:text-editor",
+        "label": "Text Editor"
+      },
+      {
+        "id": "urn:visionflow:linked:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:architectural-decision-records",
+        "label": "Architectural Decision Records"
+      },
+      {
+        "id": "urn:visionflow:linked:c4-model",
+        "label": "C4 Model"
+      },
+      {
+        "id": "urn:visionflow:linked:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:living-documentation",
+        "label": "Living Documentation"
+      },
+      {
+        "id": "urn:visionflow:linked:pull-request-review",
+        "label": "Pull Request Review"
+      },
+      {
+        "id": "urn:visionflow:linked:refactor-time-consistency",
+        "label": "Refactor-Time Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:runbook",
+        "label": "Runbook"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:d2",
+        "label": "D2"
+      },
+      {
+        "id": "urn:visionflow:linked:graphviz-dot",
+        "label": "Graphviz DOT"
+      },
+      {
+        "id": "urn:visionflow:linked:penrose",
+        "label": "Penrose"
+      },
+      {
+        "id": "urn:visionflow:linked:pikchr",
+        "label": "Pikchr"
+      },
+      {
+        "id": "urn:visionflow:linked:plant-uml",
+        "label": "PlantUML"
+      },
+      {
+        "id": "urn:visionflow:linked:structurizr-dsl",
+        "label": "Structurizr DSL"
+      },
+      {
+        "id": "urn:visionflow:linked:tik-z",
+        "label": "TikZ"
+      },
+      {
+        "id": "urn:visionflow:linked:vega-lite",
+        "label": "Vega-Lite"
+      },
+      {
+        "id": "urn:visionflow:linked:wavedrom",
+        "label": "Wavedrom"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mermaid",
+        "label": "Mermaid"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr",
+      "label": "ADR"
+    },
+    {
+      "slug": "adr",
+      "label": "ADR"
+    },
+    {
+      "slug": "antora",
+      "label": "Antora"
+    },
+    {
+      "slug": "architectural-decision-records",
+      "label": "Architectural Decision Records"
+    },
+    {
+      "slug": "asciiflow",
+      "label": "ASCIIflow"
+    },
+    {
+      "slug": "atlassian",
+      "label": "Atlassian"
+    },
+    {
+      "slug": "aws",
+      "label": "AWS"
+    },
+    {
+      "slug": "azure",
+      "label": "Azure"
+    },
+    {
+      "slug": "bass-clements-kazman-2021-software-architecture-in-practice-4th",
+      "label": "Bass Clements Kazman 2021 Software Architecture in Practice 4th"
+    },
+    {
+      "slug": "belouadi-lauscher-eger-2024-automa-tik-z-iclr",
+      "label": "Belouadi Lauscher Eger 2024 AutomaTikZ ICLR"
+    },
+    {
+      "slug": "brandes-and-k-pf-2001-fast-and-simple-horizontal-coordinate-assignment",
+      "label": "Brandes & K\u00f6pf 2001 Fast and Simple Horizontal Coordinate Assignment"
+    },
+    {
+      "slug": "brown-2018-c4-model-for-visualising-software-architecture",
+      "label": "Brown 2018 C4 Model for Visualising Software Architecture"
+    },
+    {
+      "slug": "brown-2020-software-architecture-for-developers-volume-2",
+      "label": "Brown 2020 Software Architecture for Developers Volume 2"
+    },
+    {
+      "slug": "build-pipeline",
+      "label": "Build Pipeline"
+    },
+    {
+      "slug": "build-system-layer",
+      "label": "BuildSystemLayer"
+    },
+    {
+      "slug": "c4-model",
+      "label": "C4 Model"
+    },
+    {
+      "slug": "c4-model",
+      "label": "C4 Model"
+    },
+    {
+      "slug": "chart-gpt",
+      "label": "ChartGPT"
+    },
+    {
+      "slug": "class-diagram",
+      "label": "Class Diagram"
+    },
+    {
+      "slug": "confluence",
+      "label": "Confluence"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "d2",
+      "label": "D2"
+    },
+    {
+      "slug": "d2-language-documentation-terrastruct",
+      "label": "D2 Language Documentation Terrastruct"
+    },
+    {
+      "slug": "declarative-specification",
+      "label": "Declarative Specification"
+    },
+    {
+      "slug": "deployment-diagram",
+      "label": "Deployment Diagram"
+    },
+    {
+      "slug": "diagram-grammar",
+      "label": "Diagram Grammar"
+    },
+    {
+      "slug": "diagrams-py",
+      "label": "Diagrams.py"
+    },
+    {
+      "slug": "diagrams-py-documentation-mingrammer",
+      "label": "Diagrams.py Documentation mingrammer"
+    },
+    {
+      "slug": "documentation-as-code",
+      "label": "Documentation as Code"
+    },
+    {
+      "slug": "documentation-domain",
+      "label": "DocumentationDomain"
+    },
+    {
+      "slug": "documentation-layer",
+      "label": "DocumentationLayer"
+    },
+    {
+      "slug": "docusaurus",
+      "label": "Docusaurus"
+    },
+    {
+      "slug": "domain-specific-language",
+      "label": "Domain-Specific Language"
+    },
+    {
+      "slug": "eclipse-layout-kernel",
+      "label": "Eclipse Layout Kernel"
+    },
+    {
+      "slug": "eclipse-layout-kernel",
+      "label": "Eclipse Layout Kernel"
+    },
+    {
+      "slug": "eclipse-layout-kernel-elk-documentation-kiel",
+      "label": "Eclipse Layout Kernel ELK Documentation Kiel"
+    },
+    {
+      "slug": "entity-relationship-diagram",
+      "label": "Entity-Relationship Diagram"
+    },
+    {
+      "slug": "excalidraw",
+      "label": "Excalidraw"
+    },
+    {
+      "slug": "flowchart",
+      "label": "Flowchart"
+    },
+    {
+      "slug": "force-directed-layout",
+      "label": "Force-Directed Layout"
+    },
+    {
+      "slug": "fruchterman-reingold-1991-graph-drawing-by-force-directed-placement",
+      "label": "Fruchterman Reingold 1991 Graph Drawing by Force-Directed Placement"
+    },
+    {
+      "slug": "gansner-koutsofios-north-vo-1993-a-technique-for-drawing-directed-graphs-dot",
+      "label": "Gansner Koutsofios North Vo 1993 A Technique for Drawing Directed Graphs Dot"
+    },
+    {
+      "slug": "gantt-chart",
+      "label": "Gantt Chart"
+    },
+    {
+      "slug": "gcp",
+      "label": "GCP"
+    },
+    {
+      "slug": "generative-image-models",
+      "label": "Generative Image Models"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "git-lab",
+      "label": "GitLab"
+    },
+    {
+      "slug": "graphviz",
+      "label": "Graphviz"
+    },
+    {
+      "slug": "graphviz-documentation-at-and-t-bell-labs",
+      "label": "Graphviz Documentation AT&T Bell Labs"
+    },
+    {
+      "slug": "graphviz-dot",
+      "label": "Graphviz DOT"
+    },
+    {
+      "slug": "hugo",
+      "label": "Hugo"
+    },
+    {
+      "slug": "icon-library",
+      "label": "Icon Library"
+    },
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    },
+    {
+      "slug": "jekyll",
+      "label": "Jekyll"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "kamada-and-kawai-1989-drawing-general-undirected-graphs",
+      "label": "Kamada & Kawai 1989 Drawing General Undirected Graphs"
+    },
+    {
+      "slug": "kembhavi-salvato-et-al-2016-ai2-d-diagram-is-worth-a-dozen-images-eccv",
+      "label": "Kembhavi Salvato et al 2016 AI2D Diagram Is Worth a Dozen Images ECCV"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "KnowledgeRepresentationDomain"
+    },
+    {
+      "slug": "kroki",
+      "label": "Kroki"
+    },
+    {
+      "slug": "kroki-unified-diagram-api-yuzu-tech",
+      "label": "Kroki Unified Diagram API Yuzu Tech"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "larkin-and-simon-1987-why-a-diagram-is-sometimes-worth-ten-thousand-words",
+      "label": "Larkin & Simon 1987 Why a Diagram Is Sometimes Worth Ten Thousand Words"
+    },
+    {
+      "slug": "layout-algorithm",
+      "label": "Layout Algorithm"
+    },
+    {
+      "slug": "layout-engine",
+      "label": "Layout Engine"
+    },
+    {
+      "slug": "lin-patel-rodriguez-2024-benchmarking-llm-diagram-generation",
+      "label": "Lin Patel Rodriguez 2024 Benchmarking LLM Diagram Generation"
+    },
+    {
+      "slug": "living-documentation",
+      "label": "Living Documentation"
+    },
+    {
+      "slug": "lucidchart",
+      "label": "Lucidchart"
+    },
+    {
+      "slug": "lucidchart-drag-drop",
+      "label": "Lucidchart Drag-Drop"
+    },
+    {
+      "slug": "madr-markdown-any-decision-records",
+      "label": "MADR Markdown Any Decision Records"
+    },
+    {
+      "slug": "markdown",
+      "label": "Markdown"
+    },
+    {
+      "slug": "markdown-code-fence",
+      "label": "Markdown Code Fence"
+    },
+    {
+      "slug": "mermaid-open-source-project",
+      "label": "Mermaid Open-Source Project"
+    },
+    {
+      "slug": "mermaid-v11-documentation-2024",
+      "label": "Mermaid v11 Documentation 2024"
+    },
+    {
+      "slug": "microsoft-visio",
+      "label": "Microsoft Visio"
+    },
+    {
+      "slug": "mind-map",
+      "label": "Mind Map"
+    },
+    {
+      "slug": "miro",
+      "label": "Miro"
+    },
+    {
+      "slug": "mk-docs",
+      "label": "MkDocs"
+    },
+    {
+      "slug": "napkin-ai",
+      "label": "Napkin AI"
+    },
+    {
+      "slug": "notion",
+      "label": "Notion"
+    },
+    {
+      "slug": "nygard-2011-documenting-architecture-decisions",
+      "label": "Nygard 2011 Documenting Architecture Decisions"
+    },
+    {
+      "slug": "object-management-group",
+      "label": "Object Management Group"
+    },
+    {
+      "slug": "omg",
+      "label": "OMG"
+    },
+    {
+      "slug": "open-api-specification",
+      "label": "OpenAPI Specification"
+    },
+    {
+      "slug": "oracle-cloud-infrastructure",
+      "label": "Oracle Cloud Infrastructure"
+    },
+    {
+      "slug": "penrose",
+      "label": "Penrose"
+    },
+    {
+      "slug": "pikchr",
+      "label": "Pikchr"
+    },
+    {
+      "slug": "plant-uml",
+      "label": "PlantUML"
+    },
+    {
+      "slug": "plant-uml-documentation-arnaud-roques",
+      "label": "PlantUML Documentation Arnaud Roques"
+    },
+    {
+      "slug": "pre-commit-hooks",
+      "label": "Pre-commit Hooks"
+    },
+    {
+      "slug": "preview-plugin",
+      "label": "Preview Plugin"
+    },
+    {
+      "slug": "pull-request",
+      "label": "Pull Request"
+    },
+    {
+      "slug": "pull-request-review",
+      "label": "Pull Request Review"
+    },
+    {
+      "slug": "refactor-time-consistency",
+      "label": "Refactor-Time Consistency"
+    },
+    {
+      "slug": "reingold-tilford-1981-tidier-drawings-of-trees",
+      "label": "Reingold Tilford 1981 Tidier Drawings of Trees"
+    },
+    {
+      "slug": "render-toolchain",
+      "label": "Render Toolchain"
+    },
+    {
+      "slug": "renderer",
+      "label": "Renderer"
+    },
+    {
+      "slug": "rodriguez-et-al-2024-big-docs-7-5-m-neur-ips",
+      "label": "Rodriguez et al 2024 BigDocs-7.5M NeurIPS"
+    },
+    {
+      "slug": "runbook",
+      "label": "Runbook"
+    },
+    {
+      "slug": "runbook",
+      "label": "Runbook"
+    },
+    {
+      "slug": "satyanarayan-moritz-wongsuphasawat-heer-2017-vega-lite-grammar-ieee-info-vis",
+      "label": "Satyanarayan Moritz Wongsuphasawat Heer 2017 Vega-Lite Grammar IEEE InfoVis"
+    },
+    {
+      "slug": "sequence-diagram",
+      "label": "Sequence Diagram"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "SoftwareEngineeringDomain"
+    },
+    {
+      "slug": "source-file",
+      "label": "Source File"
+    },
+    {
+      "slug": "sphinx",
+      "label": "Sphinx"
+    },
+    {
+      "slug": "state-diagram",
+      "label": "State Diagram"
+    },
+    {
+      "slug": "static-site-generator",
+      "label": "Static Site Generator"
+    },
+    {
+      "slug": "structurizr-dsl",
+      "label": "Structurizr DSL"
+    },
+    {
+      "slug": "structurizr-dsl-documentation-simon-brown",
+      "label": "Structurizr DSL Documentation Simon Brown"
+    },
+    {
+      "slug": "sugiyama-algorithm",
+      "label": "Sugiyama Algorithm"
+    },
+    {
+      "slug": "sugiyama-tagawa-toda-1981-hierarchical-system-structures-ieee-tsmc",
+      "label": "Sugiyama Tagawa Toda 1981 Hierarchical System Structures IEEE TSMC"
+    },
+    {
+      "slug": "svg",
+      "label": "SVG"
+    },
+    {
+      "slug": "text-based-authoring",
+      "label": "Text-Based Authoring"
+    },
+    {
+      "slug": "text-editor",
+      "label": "Text Editor"
+    },
+    {
+      "slug": "theme",
+      "label": "Theme"
+    },
+    {
+      "slug": "thought-works-tech-radar",
+      "label": "ThoughtWorks Tech Radar"
+    },
+    {
+      "slug": "thought-works-technology-radar-vol-30-april-2024",
+      "label": "ThoughtWorks Technology Radar Vol 30 April 2024"
+    },
+    {
+      "slug": "tik-z",
+      "label": "TikZ"
+    },
+    {
+      "slug": "timing-diagram",
+      "label": "Timing Diagram"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "ToolingLayer"
+    },
+    {
+      "slug": "uml",
+      "label": "UML"
+    },
+    {
+      "slug": "unicode",
+      "label": "Unicode"
+    },
+    {
+      "slug": "vega",
+      "label": "Vega"
+    },
+    {
+      "slug": "vega-lite",
+      "label": "Vega-Lite"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "version-controlled-artefact",
+      "label": "Version-Controlled Artefact"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "walker-1990-node-positioning-algorithm-for-general-trees",
+      "label": "Walker 1990 Node-Positioning Algorithm for General Trees"
+    },
+    {
+      "slug": "wavedrom",
+      "label": "Wavedrom"
+    },
+    {
+      "slug": "web-components",
+      "label": "Web Components"
+    },
+    {
+      "slug": "whimsical",
+      "label": "Whimsical"
+    },
+    {
+      "slug": "whiteboard-photographs",
+      "label": "Whiteboard Photographs"
+    },
+    {
+      "slug": "wilkinson-2005-the-grammar-of-graphics",
+      "label": "Wilkinson 2005 The Grammar of Graphics"
+    },
+    {
+      "slug": "wysiwyg",
+      "label": "WYSIWYG"
+    },
+    {
+      "slug": "wysiwyg-editor",
+      "label": "WYSIWYG Editor"
+    },
+    {
+      "slug": "yaml-frontmatter",
+      "label": "YAML Frontmatter"
+    },
+    {
+      "slug": "yang-et-al-2023-set-of-mark-prompting-gpt-4-v",
+      "label": "Yang et al 2023 Set-of-Mark Prompting GPT-4V"
+    },
+    {
+      "slug": "ye-et-al-2020-penrose-acm-tog-siggraph",
+      "label": "Ye et al 2020 Penrose ACM TOG SIGGRAPH"
+    },
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "mermaid",
+      "label": "Mermaid"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    }
+  ]
+}

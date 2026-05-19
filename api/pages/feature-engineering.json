@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:ea372f6aa6a236baf429b18f4443669f3f7c5db597c2436e59ccda71568c41b5",
+  "title": "Feature Engineering",
+  "slug": "feature-engineering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:feature-engineering",
+  "domain": "artificial-intelligence",
+  "definition": "Feature Engineering is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:data-preprocessing",
+      "label": "Data Preprocessing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-preprocessing",
+      "label": "Data Preprocessing"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    }
+  ]
+}

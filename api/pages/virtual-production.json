@@ -1,0 +1,2292 @@
+{
+  "id": "urn:visionflow:page:bd211d395a4ea32ddb94fe3caa193c53328fd5c8f00630b57b42914cceb7e8dd",
+  "title": "Virtual Production",
+  "slug": "virtual-production",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-production",
+  "domain": "spatial-computing",
+  "definition": "Real-time filmmaking technique combining [[LED Volume]] stages, [[game engine]] rendering, and [[in-camera visual effects]] (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:real-time-rendering",
+      "label": "Real Time Rendering"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.94,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "1899",
+      "label": "1899"
+    },
+    {
+      "slug": "3-2-pulldown",
+      "label": "3:2 pulldown"
+    },
+    {
+      "slug": "3-d-modelers",
+      "label": "3D modelers"
+    },
+    {
+      "slug": "5-g-private-networks",
+      "label": "5G private networks"
+    },
+    {
+      "slug": "7680-hz",
+      "label": "7680 Hz"
+    },
+    {
+      "slug": "absen",
+      "label": "Absen"
+    },
+    {
+      "slug": "aces",
+      "label": "ACES"
+    },
+    {
+      "slug": "aces-1-2",
+      "label": "ACES 1.2"
+    },
+    {
+      "slug": "aces-1-3",
+      "label": "ACES 1.3"
+    },
+    {
+      "slug": "aces-ap1",
+      "label": "ACES AP1"
+    },
+    {
+      "slug": "adaptive-performance",
+      "label": "Adaptive Performance"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "after-effects",
+      "label": "After Effects"
+    },
+    {
+      "slug": "agisoft-metashape",
+      "label": "Agisoft Metashape"
+    },
+    {
+      "slug": "ai-denoising",
+      "label": "AI denoising"
+    },
+    {
+      "slug": "ai-driven",
+      "label": "AI-driven"
+    },
+    {
+      "slug": "ai-person-detection",
+      "label": "AI person detection"
+    },
+    {
+      "slug": "ai-powered-animation",
+      "label": "AI-powered animation"
+    },
+    {
+      "slug": "ai-powered-rotoscoping",
+      "label": "AI-powered rotoscoping"
+    },
+    {
+      "slug": "alembic",
+      "label": "Alembic"
+    },
+    {
+      "slug": "alessandro-pepe",
+      "label": "Alessandro Pepe"
+    },
+    {
+      "slug": "amazon-studios",
+      "label": "Amazon Studios"
+    },
+    {
+      "slug": "amd-fsr-3",
+      "label": "AMD FSR 3"
+    },
+    {
+      "slug": "amd-radeon",
+      "label": "AMD Radeon"
+    },
+    {
+      "slug": "amd-rdna-3",
+      "label": "AMD RDNA 3"
+    },
+    {
+      "slug": "ar-vr",
+      "label": "AR/VR"
+    },
+    {
+      "slug": "array-studios",
+      "label": "Array Studios"
+    },
+    {
+      "slug": "arri-alexa-65",
+      "label": "ARRI Alexa 65"
+    },
+    {
+      "slug": "arri-alexa-lf",
+      "label": "ARRI Alexa LF"
+    },
+    {
+      "slug": "arri-signature-prime",
+      "label": "ARRI Signature Prime"
+    },
+    {
+      "slug": "art-net",
+      "label": "Art-Net"
+    },
+    {
+      "slug": "arweave",
+      "label": "Arweave"
+    },
+    {
+      "slug": "asset-libraries",
+      "label": "Asset libraries"
+    },
+    {
+      "slug": "assimilate-scratch",
+      "label": "Assimilate Scratch"
+    },
+    {
+      "slug": "automated-focus-rigs",
+      "label": "Automated focus rigs"
+    },
+    {
+      "slug": "aws",
+      "label": "AWS"
+    },
+    {
+      "slug": "aws-ec2-g5",
+      "label": "AWS EC2 G5"
+    },
+    {
+      "slug": "aws-gpu-instances",
+      "label": "AWS GPU instances"
+    },
+    {
+      "slug": "aws-media-convert",
+      "label": "AWS MediaConvert"
+    },
+    {
+      "slug": "aws-s3",
+      "label": "AWS S3"
+    },
+    {
+      "slug": "azure",
+      "label": "Azure"
+    },
+    {
+      "slug": "azure-blob-storage",
+      "label": "Azure Blob Storage"
+    },
+    {
+      "slug": "b-haptics",
+      "label": "bHaptics"
+    },
+    {
+      "slug": "bafta-albert",
+      "label": "BAFTA albert"
+    },
+    {
+      "slug": "baselight",
+      "label": "Baselight"
+    },
+    {
+      "slug": "batmobile",
+      "label": "Batmobile"
+    },
+    {
+      "slug": "battery-storage",
+      "label": "battery storage"
+    },
+    {
+      "slug": "bbc",
+      "label": "BBC"
+    },
+    {
+      "slug": "bbc-natural-history-unit",
+      "label": "BBC Natural History Unit"
+    },
+    {
+      "slug": "bbc-studios",
+      "label": "BBC Studios"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
+      "slug": "black-burst",
+      "label": "black burst"
+    },
+    {
+      "slug": "black-widow",
+      "label": "Black Widow"
+    },
+    {
+      "slug": "blade-runner-2049",
+      "label": "Blade Runner 2049"
+    },
+    {
+      "slug": "blade-runner-2049-color-script",
+      "label": "Blade Runner 2049 color script"
+    },
+    {
+      "slug": "bolt-cinebot",
+      "label": "Bolt Cinebot"
+    },
+    {
+      "slug": "boris-fx-mocha-pro",
+      "label": "Boris FX Mocha Pro"
+    },
+    {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
+      "slug": "brompton-technology",
+      "label": "Brompton Technology"
+    },
+    {
+      "slug": "brompton-tessera-processors",
+      "label": "Brompton Tessera processors"
+    },
+    {
+      "slug": "brompton-tessera-sx40",
+      "label": "Brompton Tessera SX40"
+    },
+    {
+      "slug": "bullet-time",
+      "label": "bullet time"
+    },
+    {
+      "slug": "caltech",
+      "label": "Caltech"
+    },
+    {
+      "slug": "camera-control",
+      "label": "camera control"
+    },
+    {
+      "slug": "camera-feed",
+      "label": "camera feed"
+    },
+    {
+      "slug": "camera-monitors",
+      "label": "camera monitors"
+    },
+    {
+      "slug": "camera-to-wall-distance",
+      "label": "camera-to-wall distance"
+    },
+    {
+      "slug": "camera-tracking",
+      "label": "camera tracking"
+    },
+    {
+      "slug": "camera-tracking",
+      "label": "Camera tracking"
+    },
+    {
+      "slug": "camera-tracking-systems",
+      "label": "camera tracking systems"
+    },
+    {
+      "slug": "canon-cr-n500",
+      "label": "Canon CR-N500"
+    },
+    {
+      "slug": "carbon-footprint",
+      "label": "Carbon footprint"
+    },
+    {
+      "slug": "cardiff",
+      "label": "Cardiff"
+    },
+    {
+      "slug": "caustics",
+      "label": "caustics"
+    },
+    {
+      "slug": "ceiling-led-arrays",
+      "label": "ceiling LED arrays"
+    },
+    {
+      "slug": "ceiling-led-panels",
+      "label": "Ceiling LED panels"
+    },
+    {
+      "slug": "chainlink-oracles",
+      "label": "Chainlink oracles"
+    },
+    {
+      "slug": "chapman-university",
+      "label": "Chapman University"
+    },
+    {
+      "slug": "chroma-key",
+      "label": "chroma key"
+    },
+    {
+      "slug": "cine-tape",
+      "label": "Cine Tape"
+    },
+    {
+      "slug": "cine-tape",
+      "label": "CineTape"
+    },
+    {
+      "slug": "cinema-cameras",
+      "label": "cinema cameras"
+    },
+    {
+      "slug": "circadian-lighting",
+      "label": "Circadian lighting"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "colmap",
+      "label": "COLMAP"
+    },
+    {
+      "slug": "color-calibration",
+      "label": "Color calibration"
+    },
+    {
+      "slug": "color-grading-luts",
+      "label": "Color Grading LUTs"
+    },
+    {
+      "slug": "color-management",
+      "label": "color management"
+    },
+    {
+      "slug": "color-scripting",
+      "label": "Color scripting"
+    },
+    {
+      "slug": "color-temperature",
+      "label": "color temperature"
+    },
+    {
+      "slug": "concept-artists",
+      "label": "concept artists"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "cooke-i-technology",
+      "label": "Cooke /i Technology"
+    },
+    {
+      "slug": "crane",
+      "label": "crane"
+    },
+    {
+      "slug": "creative-england",
+      "label": "Creative England"
+    },
+    {
+      "slug": "cryptomatte",
+      "label": "cryptomatte"
+    },
+    {
+      "slug": "d-box",
+      "label": "D-BOX"
+    },
+    {
+      "slug": "d65-white-point",
+      "label": "D65 white point"
+    },
+    {
+      "slug": "da-vinci-resolve",
+      "label": "DaVinci Resolve"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "dark",
+      "label": "Dark"
+    },
+    {
+      "slug": "dark-bay",
+      "label": "Dark Bay"
+    },
+    {
+      "slug": "dark-bay-studio",
+      "label": "Dark Bay Studio"
+    },
+    {
+      "slug": "dassault-catia",
+      "label": "Dassault CATIA"
+    },
+    {
+      "slug": "dc-films",
+      "label": "DC Films"
+    },
+    {
+      "slug": "dcp",
+      "label": "DCP"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "deep-motion",
+      "label": "DeepMotion"
+    },
+    {
+      "slug": "depth-aware-rendering",
+      "label": "depth-aware rendering"
+    },
+    {
+      "slug": "depth-maps",
+      "label": "depth maps"
+    },
+    {
+      "slug": "depth-of-field",
+      "label": "depth of field"
+    },
+    {
+      "slug": "despill",
+      "label": "Despill"
+    },
+    {
+      "slug": "dimension-studio",
+      "label": "Dimension Studio"
+    },
+    {
+      "slug": "disguise",
+      "label": "Disguise"
+    },
+    {
+      "slug": "disney",
+      "label": "Disney+"
+    },
+    {
+      "slug": "dit-stations",
+      "label": "DIT stations"
+    },
+    {
+      "slug": "dits",
+      "label": "DITs"
+    },
+    {
+      "slug": "dji-ronin-4-d",
+      "label": "DJI Ronin 4D"
+    },
+    {
+      "slug": "dmx512",
+      "label": "DMX512"
+    },
+    {
+      "slug": "dna-engine",
+      "label": "DNA Engine"
+    },
+    {
+      "slug": "dneg",
+      "label": "DNEG"
+    },
+    {
+      "slug": "dneg-london",
+      "label": "DNEG London"
+    },
+    {
+      "slug": "doctor-who",
+      "label": "Doctor Who"
+    },
+    {
+      "slug": "dolby-vision",
+      "label": "Dolby Vision"
+    },
+    {
+      "slug": "dolly",
+      "label": "dolly"
+    },
+    {
+      "slug": "dragon-flight-sequences",
+      "label": "Dragon flight sequences"
+    },
+    {
+      "slug": "dragonstone",
+      "label": "Dragonstone"
+    },
+    {
+      "slug": "dream-fusion",
+      "label": "DreamFusion"
+    },
+    {
+      "slug": "driftmark",
+      "label": "Driftmark"
+    },
+    {
+      "slug": "eco-stage",
+      "label": "EcoStage"
+    },
+    {
+      "slug": "epic-games",
+      "label": "Epic Games"
+    },
+    {
+      "slug": "equipment-purchase",
+      "label": "Equipment purchase"
+    },
+    {
+      "slug": "ericsson",
+      "label": "Ericsson"
+    },
+    {
+      "slug": "etc-eos",
+      "label": "ETC Eos"
+    },
+    {
+      "slug": "evermotion",
+      "label": "Evermotion"
+    },
+    {
+      "slug": "false-color-exposure-monitor",
+      "label": "false color exposure monitor"
+    },
+    {
+      "slug": "faro-focus",
+      "label": "Faro Focus"
+    },
+    {
+      "slug": "fbx",
+      "label": "FBX"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "final-pixel",
+      "label": "final pixel"
+    },
+    {
+      "slug": "focus",
+      "label": "focus"
+    },
+    {
+      "slug": "focus-controllers",
+      "label": "focus controllers"
+    },
+    {
+      "slug": "focus-pullers",
+      "label": "Focus pullers"
+    },
+    {
+      "slug": "forced-air-cooling",
+      "label": "forced air cooling"
+    },
+    {
+      "slug": "foundation",
+      "label": "Foundation"
+    },
+    {
+      "slug": "foundry-nuke",
+      "label": "Foundry Nuke"
+    },
+    {
+      "slug": "fox-studios-australia",
+      "label": "Fox Studios Australia"
+    },
+    {
+      "slug": "free-d",
+      "label": "Free-D"
+    },
+    {
+      "slug": "free-d-protocol",
+      "label": "Free-D protocol"
+    },
+    {
+      "slug": "frustum-culling",
+      "label": "frustum culling"
+    },
+    {
+      "slug": "frustum-rendering",
+      "label": "Frustum rendering"
+    },
+    {
+      "slug": "fsr-3",
+      "label": "FSR 3"
+    },
+    {
+      "slug": "fujinon-premista",
+      "label": "Fujinon Premista"
+    },
+    {
+      "slug": "gaffer",
+      "label": "Gaffer"
+    },
+    {
+      "slug": "gaffers",
+      "label": "gaffers"
+    },
+    {
+      "slug": "game-engine-domain",
+      "label": "GameEngineDomain"
+    },
+    {
+      "slug": "game-engines",
+      "label": "game engines"
+    },
+    {
+      "slug": "game-of-thrones",
+      "label": "Game of Thrones"
+    },
+    {
+      "slug": "gaussian-splat",
+      "label": "Gaussian Splat"
+    },
+    {
+      "slug": "genlock",
+      "label": "genlock"
+    },
+    {
+      "slug": "genlock-synchronization",
+      "label": "Genlock synchronization"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "glass-to-glass-latency",
+      "label": "Glass-to-glass latency"
+    },
+    {
+      "slug": "global-shutter-cameras",
+      "label": "Global shutter cameras"
+    },
+    {
+      "slug": "golem-network",
+      "label": "Golem Network"
+    },
+    {
+      "slug": "google-arcore-geospatial-api",
+      "label": "Google ARCore Geospatial API"
+    },
+    {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "google-cloud-a2",
+      "label": "Google Cloud A2"
+    },
+    {
+      "slug": "google-sycamore",
+      "label": "Google Sycamore"
+    },
+    {
+      "slug": "gotham-city",
+      "label": "Gotham City"
+    },
+    {
+      "slug": "gpu-direct",
+      "label": "GPU Direct"
+    },
+    {
+      "slug": "gpu-partitioning",
+      "label": "GPU partitioning"
+    },
+    {
+      "slug": "grand-ma3",
+      "label": "GrandMA3"
+    },
+    {
+      "slug": "greenscreen",
+      "label": "greenscreen"
+    },
+    {
+      "slug": "gx-3",
+      "label": "GX 3"
+    },
+    {
+      "slug": "haptic-suits",
+      "label": "Haptic suits"
+    },
+    {
+      "slug": "hardware-accelerated-lumen",
+      "label": "Hardware-accelerated Lumen"
+    },
+    {
+      "slug": "hardware-accelerated-ray-tracing",
+      "label": "hardware-accelerated ray tracing"
+    },
+    {
+      "slug": "harry-potter",
+      "label": "Harry Potter"
+    },
+    {
+      "slug": "hbo",
+      "label": "HBO"
+    },
+    {
+      "slug": "hdr",
+      "label": "HDR"
+    },
+    {
+      "slug": "hdr-led-walls",
+      "label": "HDR LED walls"
+    },
+    {
+      "slug": "hdr10",
+      "label": "HDR10+"
+    },
+    {
+      "slug": "hdr10",
+      "label": "HDR10"
+    },
+    {
+      "slug": "helios",
+      "label": "Helios"
+    },
+    {
+      "slug": "helios-engine",
+      "label": "Helios Engine"
+    },
+    {
+      "slug": "high-speed-photography",
+      "label": "high-speed photography"
+    },
+    {
+      "slug": "hmrc",
+      "label": "HMRC"
+    },
+    {
+      "slug": "holograms",
+      "label": "holograms"
+    },
+    {
+      "slug": "holographic-displays",
+      "label": "Holographic displays"
+    },
+    {
+      "slug": "holographic-point-clouds",
+      "label": "holographic point clouds"
+    },
+    {
+      "slug": "holographic-telepresence",
+      "label": "holographic telepresence"
+    },
+    {
+      "slug": "houdini",
+      "label": "Houdini"
+    },
+    {
+      "slug": "houdini-engine",
+      "label": "Houdini Engine"
+    },
+    {
+      "slug": "houdini-ocean-toolkit",
+      "label": "Houdini Ocean Toolkit"
+    },
+    {
+      "slug": "house-of-the-dragon",
+      "label": "House of the Dragon"
+    },
+    {
+      "slug": "hvac",
+      "label": "HVAC"
+    },
+    {
+      "slug": "hybrid-rendering",
+      "label": "Hybrid rendering"
+    },
+    {
+      "slug": "i-pad-pro",
+      "label": "iPad Pro"
+    },
+    {
+      "slug": "i-phone-14-pro",
+      "label": "iPhone 14 Pro"
+    },
+    {
+      "slug": "ibm-quantum",
+      "label": "IBM Quantum"
+    },
+    {
+      "slug": "ilm",
+      "label": "ILM"
+    },
+    {
+      "slug": "ilm-stage-craft",
+      "label": "ILM StageCraft"
+    },
+    {
+      "slug": "in-camera-visual-effects",
+      "label": "in-camera visual effects"
+    },
+    {
+      "slug": "indiana-jones-5",
+      "label": "Indiana Jones 5"
+    },
+    {
+      "slug": "industrial-light-and-magic",
+      "label": "Industrial Light & Magic"
+    },
+    {
+      "slug": "inner-frustum",
+      "label": "Inner frustum"
+    },
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
+      "slug": "intel-arc",
+      "label": "Intel Arc"
+    },
+    {
+      "slug": "intel-arc-alchemist",
+      "label": "Intel Arc Alchemist"
+    },
+    {
+      "slug": "interactive-lighting",
+      "label": "Interactive lighting"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
+      "slug": "ion-q",
+      "label": "IonQ"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "iris",
+      "label": "iris"
+    },
+    {
+      "slug": "itv",
+      "label": "ITV"
+    },
+    {
+      "slug": "jon-favreau",
+      "label": "Jon Favreau"
+    },
+    {
+      "slug": "karma-xpu",
+      "label": "Karma XPU"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "king-s-landing",
+      "label": "King's Landing"
+    },
+    {
+      "slug": "labor-force",
+      "label": "Labor force"
+    },
+    {
+      "slug": "laser-rangefinding",
+      "label": "laser rangefinding"
+    },
+    {
+      "slug": "led-display",
+      "label": "LED display"
+    },
+    {
+      "slug": "led-flicker",
+      "label": "LED flicker"
+    },
+    {
+      "slug": "led-panels",
+      "label": "LED panels"
+    },
+    {
+      "slug": "led-stage-rental",
+      "label": "LED stage rental"
+    },
+    {
+      "slug": "led-technicians",
+      "label": "LED technicians"
+    },
+    {
+      "slug": "led-volume",
+      "label": "LED Volume"
+    },
+    {
+      "slug": "led-volume",
+      "label": "LED volume"
+    },
+    {
+      "slug": "led-volumes",
+      "label": "LED volumes"
+    },
+    {
+      "slug": "led-wall-calibration",
+      "label": "LED wall calibration"
+    },
+    {
+      "slug": "led-wall-removal",
+      "label": "LED wall removal"
+    },
+    {
+      "slug": "led-walls",
+      "label": "LED walls"
+    },
+    {
+      "slug": "leia-inc",
+      "label": "LEIA Inc"
+    },
+    {
+      "slug": "leica-blk360",
+      "label": "Leica BLK360"
+    },
+    {
+      "slug": "lens-distortion-mapping",
+      "label": "Lens distortion mapping"
+    },
+    {
+      "slug": "lens-encoders",
+      "label": "lens encoders"
+    },
+    {
+      "slug": "lens-metadata",
+      "label": "lens metadata"
+    },
+    {
+      "slug": "li-dar-scanning",
+      "label": "LiDAR scanning"
+    },
+    {
+      "slug": "li-dar-scans",
+      "label": "LiDAR scans"
+    },
+    {
+      "slug": "light-baking",
+      "label": "light baking"
+    },
+    {
+      "slug": "light-space-cms",
+      "label": "LightSpace CMS"
+    },
+    {
+      "slug": "lighting-desks",
+      "label": "Lighting desks"
+    },
+    {
+      "slug": "lighting-rigs",
+      "label": "lighting rigs"
+    },
+    {
+      "slug": "lightning-service-authentication-tokens",
+      "label": "Lightning Service Authentication Tokens"
+    },
+    {
+      "slug": "liquid-cooling-systems",
+      "label": "liquid cooling systems"
+    },
+    {
+      "slug": "live-environment-design",
+      "label": "live environment design"
+    },
+    {
+      "slug": "live-link",
+      "label": "Live Link"
+    },
+    {
+      "slug": "livepeer",
+      "label": "Livepeer"
+    },
+    {
+      "slug": "lnpay",
+      "label": "LNPay"
+    },
+    {
+      "slug": "location-based-ar",
+      "label": "location-based AR"
+    },
+    {
+      "slug": "lod",
+      "label": "LOD"
+    },
+    {
+      "slug": "looking-glass",
+      "label": "Looking Glass"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
+      "slug": "luma-ue5-plugin",
+      "label": "Luma UE5 Plugin"
+    },
+    {
+      "slug": "lumen",
+      "label": "Lumen"
+    },
+    {
+      "slug": "lut",
+      "label": "LUT"
+    },
+    {
+      "slug": "luts",
+      "label": "LUTs"
+    },
+    {
+      "slug": "maldo-kreis",
+      "label": "Maldo Kreis"
+    },
+    {
+      "slug": "manchester-metropolitan-university",
+      "label": "Manchester Metropolitan University"
+    },
+    {
+      "slug": "manhattan-beach-studios",
+      "label": "Manhattan Beach Studios"
+    },
+    {
+      "slug": "manuka",
+      "label": "Manuka"
+    },
+    {
+      "slug": "many-light",
+      "label": "many-light"
+    },
+    {
+      "slug": "market-research-future",
+      "label": "Market Research Future"
+    },
+    {
+      "slug": "matt-reeves",
+      "label": "Matt Reeves"
+    },
+    {
+      "slug": "matterport",
+      "label": "Matterport"
+    },
+    {
+      "slug": "maya",
+      "label": "Maya"
+    },
+    {
+      "slug": "media-production-domain",
+      "label": "MediaProductionDomain"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "meta-human",
+      "label": "MetaHuman"
+    },
+    {
+      "slug": "meta-human-animator",
+      "label": "MetaHuman Animator"
+    },
+    {
+      "slug": "metameric-matching",
+      "label": "Metameric matching"
+    },
+    {
+      "slug": "micro-led",
+      "label": "MicroLED"
+    },
+    {
+      "slug": "microsoft-azure-kinect",
+      "label": "Microsoft Azure Kinect"
+    },
+    {
+      "slug": "microsoft-azure-n-series",
+      "label": "Microsoft Azure N-series"
+    },
+    {
+      "slug": "microsoft-mixed-reality-capture-studios",
+      "label": "Microsoft Mixed Reality Capture Studios"
+    },
+    {
+      "slug": "microsoft-quantum",
+      "label": "Microsoft Quantum"
+    },
+    {
+      "slug": "mip-ne-rf-360",
+      "label": "Mip-NeRF 360"
+    },
+    {
+      "slug": "mm-wave-5-g",
+      "label": "mmWave 5G"
+    },
+    {
+      "slug": "mo-sys",
+      "label": "Mo-Sys"
+    },
+    {
+      "slug": "mo-sys-star-tracker",
+      "label": "Mo-Sys StarTracker"
+    },
+    {
+      "slug": "mo-sys-tracking",
+      "label": "Mo-Sys tracking"
+    },
+    {
+      "slug": "moir-pattern",
+      "label": "moir\u00e9 pattern"
+    },
+    {
+      "slug": "moir-patterns",
+      "label": "Moir\u00e9 patterns"
+    },
+    {
+      "slug": "mosaic-rendering",
+      "label": "mosaic rendering"
+    },
+    {
+      "slug": "motion-blur",
+      "label": "motion blur"
+    },
+    {
+      "slug": "motion-control-photography",
+      "label": "motion control photography"
+    },
+    {
+      "slug": "motion-to-photon-latency",
+      "label": "Motion-to-photon latency"
+    },
+    {
+      "slug": "motion-vectors",
+      "label": "motion vectors"
+    },
+    {
+      "slug": "mrmc-bolt",
+      "label": "MRMC Bolt"
+    },
+    {
+      "slug": "mrmc-robots",
+      "label": "MRMC robots"
+    },
+    {
+      "slug": "multi-instance-gpu",
+      "label": "Multi-Instance GPU"
+    },
+    {
+      "slug": "n-display",
+      "label": "nDisplay"
+    },
+    {
+      "slug": "nanite",
+      "label": "Nanite"
+    },
+    {
+      "slug": "natural-history",
+      "label": "natural history"
+    },
+    {
+      "slug": "navier-motion-platform",
+      "label": "Navier Motion Platform"
+    },
+    {
+      "slug": "ncam-reality",
+      "label": "Ncam Reality"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "ne-rf2-mesh",
+      "label": "NeRF2Mesh"
+    },
+    {
+      "slug": "neon-signs",
+      "label": "neon signs"
+    },
+    {
+      "slug": "nep",
+      "label": "NEP"
+    },
+    {
+      "slug": "nep-sweetwater",
+      "label": "NEP Sweetwater"
+    },
+    {
+      "slug": "nerfstudio",
+      "label": "Nerfstudio"
+    },
+    {
+      "slug": "netflix",
+      "label": "Netflix"
+    },
+    {
+      "slug": "network-time-protocol",
+      "label": "Network time protocol"
+    },
+    {
+      "slug": "niagara-particle-system",
+      "label": "Niagara particle system"
+    },
+    {
+      "slug": "nokia",
+      "label": "Nokia"
+    },
+    {
+      "slug": "non-fungible-studios",
+      "label": "Non-Fungible Studios"
+    },
+    {
+      "slug": "normal-passes",
+      "label": "normal passes"
+    },
+    {
+      "slug": "notch-lc",
+      "label": "NotchLC"
+    },
+    {
+      "slug": "nuke",
+      "label": "Nuke"
+    },
+    {
+      "slug": "nvidia-cloud-xr",
+      "label": "NVIDIA CloudXR"
+    },
+    {
+      "slug": "nvidia-dlss-3-5",
+      "label": "NVIDIA DLSS 3.5"
+    },
+    {
+      "slug": "nvidia-instant-ngp",
+      "label": "NVIDIA Instant-NGP"
+    },
+    {
+      "slug": "nvidia-opti-x-denoiser",
+      "label": "NVIDIA OptiX Denoiser"
+    },
+    {
+      "slug": "nvidia-reflex",
+      "label": "NVIDIA Reflex"
+    },
+    {
+      "slug": "nvidia-rtx",
+      "label": "NVIDIA RTX"
+    },
+    {
+      "slug": "nvidia-rtx-3090",
+      "label": "NVIDIA RTX 3090"
+    },
+    {
+      "slug": "nvidia-rtx-4090",
+      "label": "NVIDIA RTX 4090"
+    },
+    {
+      "slug": "object-ids",
+      "label": "object IDs"
+    },
+    {
+      "slug": "ocean-simulation",
+      "label": "Ocean simulation"
+    },
+    {
+      "slug": "octane-render",
+      "label": "OctaneRender"
+    },
+    {
+      "slug": "oidn",
+      "label": "OIDN"
+    },
+    {
+      "slug": "open-exr",
+      "label": "OpenEXR"
+    },
+    {
+      "slug": "open-sea",
+      "label": "OpenSea"
+    },
+    {
+      "slug": "open-usd-alliance",
+      "label": "OpenUSD Alliance"
+    },
+    {
+      "slug": "opti-track",
+      "label": "OptiTrack"
+    },
+    {
+      "slug": "optical-blur-filters",
+      "label": "optical blur filters"
+    },
+    {
+      "slug": "optical-low-pass-filters",
+      "label": "optical low-pass filters"
+    },
+    {
+      "slug": "otoy",
+      "label": "OTOY"
+    },
+    {
+      "slug": "outer-frustum",
+      "label": "outer frustum"
+    },
+    {
+      "slug": "pan",
+      "label": "pan"
+    },
+    {
+      "slug": "parallax-correction",
+      "label": "parallax correction"
+    },
+    {
+      "slug": "paramount",
+      "label": "Paramount+"
+    },
+    {
+      "slug": "paramount-theatre",
+      "label": "Paramount Theatre"
+    },
+    {
+      "slug": "parsec",
+      "label": "Parsec"
+    },
+    {
+      "slug": "path-traced",
+      "label": "path-traced"
+    },
+    {
+      "slug": "path-tracing",
+      "label": "path tracing"
+    },
+    {
+      "slug": "perspective-matching",
+      "label": "perspective matching"
+    },
+    {
+      "slug": "photorealistic-digital-humans",
+      "label": "Photorealistic digital humans"
+    },
+    {
+      "slug": "pinewood",
+      "label": "Pinewood"
+    },
+    {
+      "slug": "pinewood-studios",
+      "label": "Pinewood Studios"
+    },
+    {
+      "slug": "pixar",
+      "label": "Pixar"
+    },
+    {
+      "slug": "pixel-pitch",
+      "label": "Pixel pitch"
+    },
+    {
+      "slug": "pixel-pitch",
+      "label": "pixel pitch"
+    },
+    {
+      "slug": "pixotope",
+      "label": "Pixotope"
+    },
+    {
+      "slug": "plask",
+      "label": "Plask"
+    },
+    {
+      "slug": "plate-reconstruction",
+      "label": "Plate reconstruction"
+    },
+    {
+      "slug": "point-clouds",
+      "label": "point clouds"
+    },
+    {
+      "slug": "point-e",
+      "label": "Point-E"
+    },
+    {
+      "slug": "polycam-ue-plugin",
+      "label": "Polycam UE Plugin"
+    },
+    {
+      "slug": "pomfort-live-grade",
+      "label": "Pomfort LiveGrade"
+    },
+    {
+      "slug": "portrait-displays-calman",
+      "label": "Portrait Displays Calman"
+    },
+    {
+      "slug": "post-process-volumes",
+      "label": "Post Process Volumes"
+    },
+    {
+      "slug": "post-production",
+      "label": "post-production"
+    },
+    {
+      "slug": "post-production",
+      "label": "Post-production"
+    },
+    {
+      "slug": "precision-time-protocol",
+      "label": "Precision Time Protocol"
+    },
+    {
+      "slug": "preston-mdr-4",
+      "label": "Preston MDR-4"
+    },
+    {
+      "slug": "previsualization",
+      "label": "Previsualization"
+    },
+    {
+      "slug": "prg",
+      "label": "PRG"
+    },
+    {
+      "slug": "prime-x-22",
+      "label": "Prime X 22"
+    },
+    {
+      "slug": "procedurally-generated",
+      "label": "procedurally generated"
+    },
+    {
+      "slug": "proprietary-engines",
+      "label": "proprietary engines"
+    },
+    {
+      "slug": "pwm-dimming",
+      "label": "PWM dimming"
+    },
+    {
+      "slug": "qr-code",
+      "label": "QR code"
+    },
+    {
+      "slug": "quantum-machine-learning",
+      "label": "Quantum machine learning"
+    },
+    {
+      "slug": "quantum-monte-carlo",
+      "label": "Quantum Monte Carlo"
+    },
+    {
+      "slug": "quantum-rendering",
+      "label": "Quantum rendering"
+    },
+    {
+      "slug": "quixel-megascans",
+      "label": "Quixel Megascans"
+    },
+    {
+      "slug": "radeon-rx-7900-xtx",
+      "label": "Radeon RX 7900 XTX"
+    },
+    {
+      "slug": "rain-effects",
+      "label": "rain effects"
+    },
+    {
+      "slug": "rarible",
+      "label": "Rarible"
+    },
+    {
+      "slug": "re-stir",
+      "label": "ReSTIR"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
+    },
+    {
+      "slug": "real-esrgan",
+      "label": "Real-ESRGAN"
+    },
+    {
+      "slug": "real-estate",
+      "label": "Real estate"
+    },
+    {
+      "slug": "real-time-collaboration",
+      "label": "real-time collaboration"
+    },
+    {
+      "slug": "real-time-color-grading",
+      "label": "Real-time color grading"
+    },
+    {
+      "slug": "real-time-compositing",
+      "label": "real-time compositing"
+    },
+    {
+      "slug": "real-time-ray-tracing",
+      "label": "real-time ray tracing"
+    },
+    {
+      "slug": "real-time-technical-directors",
+      "label": "real-time technical directors"
+    },
+    {
+      "slug": "reality-capture",
+      "label": "Reality Capture"
+    },
+    {
+      "slug": "reality-kit",
+      "label": "RealityKit"
+    },
+    {
+      "slug": "rec-2020",
+      "label": "Rec. 2020"
+    },
+    {
+      "slug": "rec-709",
+      "label": "Rec. 709"
+    },
+    {
+      "slug": "red-komodo",
+      "label": "RED Komodo"
+    },
+    {
+      "slug": "refresh-rates",
+      "label": "Refresh rates"
+    },
+    {
+      "slug": "refresh-rates",
+      "label": "refresh rates"
+    },
+    {
+      "slug": "reits",
+      "label": "REITs"
+    },
+    {
+      "slug": "render-network",
+      "label": "Render Network"
+    },
+    {
+      "slug": "rigetti-computing",
+      "label": "Rigetti Computing"
+    },
+    {
+      "slug": "rndr",
+      "label": "RNDR"
+    },
+    {
+      "slug": "robert-pattinson",
+      "label": "Robert Pattinson"
+    },
+    {
+      "slug": "robotic-camera",
+      "label": "robotic camera"
+    },
+    {
+      "slug": "roe-visual",
+      "label": "ROE Visual"
+    },
+    {
+      "slug": "roll",
+      "label": "roll"
+    },
+    {
+      "slug": "rolling-shutter",
+      "label": "rolling shutter"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
+      "slug": "runway-ml-gen-2",
+      "label": "Runway ML Gen-2"
+    },
+    {
+      "slug": "salford",
+      "label": "Salford"
+    },
+    {
+      "slug": "sam-segment-anything-model",
+      "label": "SAM (Segment Anything Model)"
+    },
+    {
+      "slug": "samsung",
+      "label": "Samsung"
+    },
+    {
+      "slug": "sats",
+      "label": "Sats"
+    },
+    {
+      "slug": "scenario-gg",
+      "label": "Scenario.gg"
+    },
+    {
+      "slug": "schedule-compression",
+      "label": "Schedule compression"
+    },
+    {
+      "slug": "screen-skills",
+      "label": "ScreenSkills"
+    },
+    {
+      "slug": "sdxl-1-0",
+      "label": "SDXL 1.0"
+    },
+    {
+      "slug": "secondary-vfx",
+      "label": "secondary VFX"
+    },
+    {
+      "slug": "shap-e",
+      "label": "Shap-E"
+    },
+    {
+      "slug": "side-fx-houdini",
+      "label": "SideFX Houdini"
+    },
+    {
+      "slug": "siemens-nx",
+      "label": "Siemens NX"
+    },
+    {
+      "slug": "sim-craft-apex",
+      "label": "SimCraft APEX"
+    },
+    {
+      "slug": "sketchfab",
+      "label": "Sketchfab"
+    },
+    {
+      "slug": "slate-information",
+      "label": "slate information"
+    },
+    {
+      "slug": "smpte-2110",
+      "label": "SMPTE 2110"
+    },
+    {
+      "slug": "solar-panels",
+      "label": "solar panels"
+    },
+    {
+      "slug": "sony",
+      "label": "Sony"
+    },
+    {
+      "slug": "sony-fx9",
+      "label": "Sony FX9"
+    },
+    {
+      "slug": "sony-venice-2",
+      "label": "Sony Venice 2"
+    },
+    {
+      "slug": "sony-xperia-pro",
+      "label": "Sony Xperia Pro"
+    },
+    {
+      "slug": "spacecraft-cockpit",
+      "label": "spacecraft cockpit"
+    },
+    {
+      "slug": "spectrophotometer",
+      "label": "Spectrophotometer"
+    },
+    {
+      "slug": "spill-suppression",
+      "label": "Spill suppression"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
+    },
+    {
+      "slug": "stage-craft",
+      "label": "StageCraft"
+    },
+    {
+      "slug": "stagecraft-2-0",
+      "label": "Stagecraft 2.0"
+    },
+    {
+      "slug": "stakwork",
+      "label": "Stakwork"
+    },
+    {
+      "slug": "star-tracker",
+      "label": "StarTracker"
+    },
+    {
+      "slug": "starlink",
+      "label": "Starlink"
+    },
+    {
+      "slug": "steadicam",
+      "label": "Steadicam"
+    },
+    {
+      "slug": "stereo-cleanup",
+      "label": "stereo cleanup"
+    },
+    {
+      "slug": "stochastic-anti-aliasing",
+      "label": "stochastic anti-aliasing"
+    },
+    {
+      "slug": "stype-red-spy",
+      "label": "Stype RedSpy"
+    },
+    {
+      "slug": "substance-3-d",
+      "label": "Substance 3D"
+    },
+    {
+      "slug": "substrate",
+      "label": "Substrate"
+    },
+    {
+      "slug": "subsurface-scattering",
+      "label": "subsurface scattering"
+    },
+    {
+      "slug": "super-splat",
+      "label": "SuperSplat"
+    },
+    {
+      "slug": "take-recorder",
+      "label": "Take Recorder"
+    },
+    {
+      "slug": "tatooine",
+      "label": "Tatooine"
+    },
+    {
+      "slug": "tcp-ip",
+      "label": "TCP/IP"
+    },
+    {
+      "slug": "tech-visualization",
+      "label": "Tech visualization"
+    },
+    {
+      "slug": "technical-artists",
+      "label": "technical artists"
+    },
+    {
+      "slug": "technodolly",
+      "label": "Technodolly"
+    },
+    {
+      "slug": "telephoto-lenses",
+      "label": "telephoto lenses"
+    },
+    {
+      "slug": "temporal-aliasing",
+      "label": "temporal aliasing"
+    },
+    {
+      "slug": "temporal-anti-aliasing",
+      "label": "temporal anti-aliasing"
+    },
+    {
+      "slug": "teradek-bolt-6",
+      "label": "Teradek Bolt 6"
+    },
+    {
+      "slug": "teradek-cube",
+      "label": "Teradek CUBE"
+    },
+    {
+      "slug": "tesla-powerpack",
+      "label": "Tesla Powerpack"
+    },
+    {
+      "slug": "teslasuit",
+      "label": "Teslasuit"
+    },
+    {
+      "slug": "text-to-environment",
+      "label": "text-to-environment"
+    },
+    {
+      "slug": "the-batman",
+      "label": "The Batman"
+    },
+    {
+      "slug": "the-mandalorian",
+      "label": "The Mandalorian"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "thor-love-and-thunder",
+      "label": "Thor: Love and Thunder"
+    },
+    {
+      "slug": "throne-room",
+      "label": "Throne room"
+    },
+    {
+      "slug": "tilt",
+      "label": "tilt"
+    },
+    {
+      "slug": "tracking-system-status",
+      "label": "tracking system status"
+    },
+    {
+      "slug": "traffic-simulation",
+      "label": "traffic simulation"
+    },
+    {
+      "slug": "tri-level-sync",
+      "label": "tri-level sync"
+    },
+    {
+      "slug": "triangulation",
+      "label": "triangulation"
+    },
+    {
+      "slug": "turbosquid",
+      "label": "Turbosquid"
+    },
+    {
+      "slug": "uhf-radio",
+      "label": "UHF radio"
+    },
+    {
+      "slug": "uk-screen-alliance-virtual-production-committee",
+      "label": "UK Screen Alliance Virtual Production Committee"
+    },
+    {
+      "slug": "uk-stage-craft",
+      "label": "UK StageCraft"
+    },
+    {
+      "slug": "uk-tax-reliefs",
+      "label": "UK tax reliefs"
+    },
+    {
+      "slug": "ultrasonic",
+      "label": "ultrasonic"
+    },
+    {
+      "slug": "unilumin",
+      "label": "Unilumin"
+    },
+    {
+      "slug": "unity",
+      "label": "Unity"
+    },
+    {
+      "slug": "unity-2023-lts",
+      "label": "Unity 2023 LTS"
+    },
+    {
+      "slug": "unity-hdrp",
+      "label": "Unity HDRP"
+    },
+    {
+      "slug": "unity-technologies",
+      "label": "Unity Technologies"
+    },
+    {
+      "slug": "universal-robots-ur10e",
+      "label": "Universal Robots UR10e"
+    },
+    {
+      "slug": "unreal-engine-4-23",
+      "label": "Unreal Engine 4.23"
+    },
+    {
+      "slug": "unreal-engine-4-25",
+      "label": "Unreal Engine 4.25"
+    },
+    {
+      "slug": "unreal-engine-4-27",
+      "label": "Unreal Engine 4.27"
+    },
+    {
+      "slug": "unreal-engine-5",
+      "label": "Unreal Engine 5"
+    },
+    {
+      "slug": "unreal-engine-5-0",
+      "label": "Unreal Engine 5.0"
+    },
+    {
+      "slug": "unreal-engine-5-3",
+      "label": "Unreal Engine 5.3+"
+    },
+    {
+      "slug": "unreal-engine-5-4",
+      "label": "Unreal Engine 5.4"
+    },
+    {
+      "slug": "unreal-engine-blueprints",
+      "label": "Unreal Engine Blueprints"
+    },
+    {
+      "slug": "unreal-engine-marketplace",
+      "label": "Unreal Engine Marketplace"
+    },
+    {
+      "slug": "unreal-engine-viewport",
+      "label": "Unreal Engine viewport"
+    },
+    {
+      "slug": "unreal-pixel-streaming",
+      "label": "Unreal Pixel Streaming"
+    },
+    {
+      "slug": "unreal-virtual-camera",
+      "label": "Unreal Virtual Camera"
+    },
+    {
+      "slug": "upscaling",
+      "label": "upscaling"
+    },
+    {
+      "slug": "usc",
+      "label": "USC"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "vancouver-film-school",
+      "label": "Vancouver Film School"
+    },
+    {
+      "slug": "vantage",
+      "label": "Vantage"
+    },
+    {
+      "slug": "vehicle-interior",
+      "label": "vehicle interior"
+    },
+    {
+      "slug": "vero",
+      "label": "Vero"
+    },
+    {
+      "slug": "vfx-plate-photography",
+      "label": "VFX plate photography"
+    },
+    {
+      "slug": "vicon",
+      "label": "Vicon"
+    },
+    {
+      "slug": "video-village",
+      "label": "Video village"
+    },
+    {
+      "slug": "virtual-art-department",
+      "label": "Virtual Art Department"
+    },
+    {
+      "slug": "virtual-art-department",
+      "label": "Virtual art department"
+    },
+    {
+      "slug": "virtual-art-department",
+      "label": "virtual art department"
+    },
+    {
+      "slug": "virtual-art-departments",
+      "label": "virtual art departments"
+    },
+    {
+      "slug": "virtual-camera-controllers",
+      "label": "virtual camera controllers"
+    },
+    {
+      "slug": "virtual-production-supervisors",
+      "label": "virtual production supervisors"
+    },
+    {
+      "slug": "virtual-scout",
+      "label": "virtual scout"
+    },
+    {
+      "slug": "volumetric-capture-rigs",
+      "label": "Volumetric capture rigs"
+    },
+    {
+      "slug": "volumetric-rendering",
+      "label": "volumetric rendering"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric video"
+    },
+    {
+      "slug": "voxel-cone-tracing",
+      "label": "voxel cone tracing"
+    },
+    {
+      "slug": "warner-bros-leavesden",
+      "label": "Warner Bros. Leavesden"
+    },
+    {
+      "slug": "warner-bros-studios-leavesden",
+      "label": "Warner Bros. Studios Leavesden"
+    },
+    {
+      "slug": "weta-brain-animation-system",
+      "label": "Weta Brain Animation System"
+    },
+    {
+      "slug": "weta-digital",
+      "label": "Weta Digital"
+    },
+    {
+      "slug": "wide-angle-lenses",
+      "label": "wide-angle lenses"
+    },
+    {
+      "slug": "wireless-focus-systems",
+      "label": "wireless focus systems"
+    },
+    {
+      "slug": "world-composition",
+      "label": "World composition"
+    },
+    {
+      "slug": "x-y-z-position",
+      "label": "X/Y/Z position"
+    },
+    {
+      "slug": "xe-ss",
+      "label": "XeSS"
+    },
+    {
+      "slug": "xrdomain",
+      "label": "XRDomain"
+    },
+    {
+      "slug": "zeiss-e-xtended-data",
+      "label": "ZEISS eXtended Data"
+    },
+    {
+      "slug": "zoom",
+      "label": "zoom"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "digital twin"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "game-engine",
+      "label": "game engine"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game engine"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "global-illumination",
+      "label": "global illumination"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "motion capture"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "photogrammetry"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "post-processing",
+      "label": "Post-processing"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "procedural generation"
+    },
+    {
+      "slug": "projection-mapping",
+      "label": "projection mapping"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum computing"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "real-time rendering"
+    },
+    {
+      "slug": "relighting",
+      "label": "relighting"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic segmentation"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-to-3-d",
+      "label": "Text-to-3D"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-camera",
+      "label": "Virtual Camera"
+    },
+    {
+      "slug": "virtual-commissioning",
+      "label": "virtual commissioning"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "volumetric-capture",
+      "label": "Volumetric capture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "virtual-camera",
+      "label": "Virtual Camera"
+    },
+    {
+      "slug": "virtual-production-pipeline",
+      "label": "Virtual Production Pipeline"
+    }
+  ]
+}

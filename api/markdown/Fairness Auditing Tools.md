@@ -1,21 +1,253 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#FairnessAuditingTools
-uri:: urn:visionclaw:concept:artificial-intelligence:fairness-auditing-tools
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:fairness-auditing-tools
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Fairness Auditing Tools
-content-hash:: sha256-12-751f8e92de62
-legacy-term-id:: AI-0386
-status:: complete
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#FairnessAuditingTools
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:fairness-auditing-tools
 public:: true
+
+# Fairness Auditing Tools
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715",
+  "@type": "Page",
+  "vc:slug": "fairness-auditing-tools",
+  "title": "Fairness Auditing Tools",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aif360",
+      "vc:label": "AIF360"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairlearn",
+      "vc:label": "Fairlearn"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-p7003-2021",
+      "vc:label": "IEEE P7003-2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-tr-24027",
+      "vc:label": "ISO/IEC TR 24027"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-751f8e92de62"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#FairnessAuditingTools"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0386"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Fairness Auditing Tools"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:fairness-auditing-tools"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:fairness-auditing-tools"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:fairness-auditing-tools",
+  "@type": "OntologyClass",
+  "label": "Fairness Auditing Tools",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities. Leading open-source tools include Fairlearn (Microsoft, MIT license) providing fairness metrics and mitigation algorithms for Python with scikit-learn integration, AIF360 (IBM, Apache-2.0 license) offering comprehensive bias detection and mitigation across the ML pipeline with 70+ fairness metrics, What-If Tool (Google, Apache-2.0) providing interactive visual interfaces for TensorFlow model exploration and counterfactual analysis, Aequitas (University of Chicago, MIT license) focusing on fairness auditing for criminal justice and policy applications, and FairTest (Columbia University, MIT license) enabling statistical fairness testing with association discovery. These tools implement fairness metrics including demographic parity, equalized odds, and predictive parity, provide visualizations such as fairness dashboards, confusion matrices disaggregated by group, and disparity charts, and support mitigation techniques including reweighting, threshold optimization, a",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:fairness-auditing-tools:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AIF360]]",
+      "resolved": "urn:visionflow:linked:aif360",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fairlearn]]",
+      "resolved": "urn:visionflow:linked:fairlearn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE P7003-2021]]",
+      "resolved": "urn:visionflow:linked:ieee-p7003-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC TR 24027]]",
+      "resolved": "urn:visionflow:linked:iso-iec-tr-24027",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities. Leading open-source tools include Fairlearn (Microsoft, MIT license) providing fairness metrics and mitigation algorithms for Python with scikit-learn integration, AIF360 (IBM, Apache-2.0 license) offering comprehensive bias detection and mitigation across the ML pipeline with 70+ fairness metrics, What-If Tool (Google, Apache-2.0) providing interactive visual interfaces for TensorFlow model exploration and counterfactual analysis, Aequitas (University of Chicago, MIT license) focusing on fairness auditing for criminal justice and policy applications, and FairTest (Columbia University, MIT license) enabling statistical fairness testing with association discovery. These tools implement fairness metrics including demographic parity, equalized odds, and predictive parity, provide visualizations such as fairness dashboards, confusion matrices disaggregated by group, and disparity charts, and support mitigation techniques including reweighting, threshold optimization, and adversarial debiasing. Adoption best practices include multi-tool validation to cross-verify findings, integration into CI/CD pipelines for continuous fairness monitoring, documentation of fairness decisions and tradeoffs, and stakeholder engagement in selecting appropriate fairness metrics. These tools operationalize fairness requirements from standards including IEEE P7003-2021, ISO/IEC TR 24027:2021, and the EU AI Act Article 10 on data governance and bias mitigation.

@@ -1,0 +1,392 @@
+{
+  "id": "urn:visionflow:page:7fa52b3eac1c4445603e2697024c836ee07588b33f91e802d826c0a4f74d4115",
+  "title": "Asset Registry",
+  "slug": "asset-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:asset-registry",
+  "domain": "blockchain",
+  "definition": "An [[Asset Registry]] is a cryptographically-secured, on-chain or hybrid on/off-chain system for recording, authenticating, and transferring legal ownership rights and provenance metadata for real-world or digital assets, implemented through [[Smart Contracts]], [[Distributed Ledger]] infrastructure, and regulated identity layers \u2014 enabling immutable, auditable ownership histories, programmable compliance enforcement (KYC/AML, transfer restrictions), fractional ownership via [[Asset Tokenisation]], and elimination of trusted intermediary bottlenecks prevalent in traditional title, securities, and provenance systems. Governed examples span securities registries enforcing ERC-3643 (T-REX) identity-gating, real-property title ledgers piloted by HM Land Registry (Digital Street) and Sweden's Lantm\u00e4teriet, real-world asset (RWA) tokenization platforms (Centrifuge, Maple Finance) targeting a BCG/ADDX-projected $16T tokenizable asset market by 2030, securities registries (Polymesh for regulated equities), and art provenance chains (Artory, Verisart). UK deployments concentrate at HM Land Registry Plymouth, with PropTech research at Manchester and Imperial College London blockchain labs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ownership-system",
+      "label": "Ownership System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "id": "urn:visionflow:owl:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-compliance",
+        "label": "Automated Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:real-world-asset-tokenisation",
+        "label": "Real World Asset Tokenisation"
+      },
+      {
+        "id": "urn:visionflow:linked:secondary-market-liquidity",
+        "label": "Secondary Market Liquidity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:erc-3643-standard",
+        "label": "ERC-3643 Standard"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-identity",
+        "label": "Distributed Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "automated-compliance",
+      "label": "Automated Compliance"
+    },
+    {
+      "slug": "centralised-database",
+      "label": "Centralised Database"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "cmta-token-standard",
+      "label": "CMTA Token Standard"
+    },
+    {
+      "slug": "cross-border-settlement",
+      "label": "Cross-Border Settlement"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "erc-3643-standard",
+      "label": "ERC-3643 Standard"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "FinancialInfrastructureDomain"
+    },
+    {
+      "slug": "fractional-ownership",
+      "label": "Fractional Ownership"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "legal-tech-domain",
+      "label": "LegalTechDomain"
+    },
+    {
+      "slug": "ownership-system",
+      "label": "Ownership System"
+    },
+    {
+      "slug": "paper-based-land-registry",
+      "label": "Paper-Based Land Registry"
+    },
+    {
+      "slug": "polymesh-protocol",
+      "label": "Polymesh Protocol"
+    },
+    {
+      "slug": "real-estate-registry",
+      "label": "Real Estate Registry"
+    },
+    {
+      "slug": "real-world-asset-tokenisation",
+      "label": "Real World Asset Tokenisation"
+    },
+    {
+      "slug": "secondary-market-liquidity",
+      "label": "Secondary Market Liquidity"
+    },
+    {
+      "slug": "securities-settlement",
+      "label": "Securities Settlement"
+    },
+    {
+      "slug": "supply-chain-tracking",
+      "label": "Supply Chain Tracking"
+    },
+    {
+      "slug": "traditional-title-systems",
+      "label": "Traditional Title Systems"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "financial-infrastructure",
+      "label": "Financial Infrastructure"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    },
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    }
+  ]
+}

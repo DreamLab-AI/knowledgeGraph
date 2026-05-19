@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:d7fac6d47bad7bc287a079ec79896bf3537dfbc8399c0b6624d1891023a4256f",
+  "title": "Security Token Offering",
+  "slug": "security-token-offering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:security-token-offering",
+  "domain": "spatial-computing",
+  "definition": "Security Token Offering is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

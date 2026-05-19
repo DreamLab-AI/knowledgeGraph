@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:9562a5d1baeb72ea8798ce8fe1410897d44a58897b2cebee59d2f023fadeca02",
+  "title": "Light Parameters",
+  "slug": "light-parameters",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:light-parameters",
+  "domain": "spatial-computing",
+  "definition": "Configurable settings that control virtual lighting behaviour in VR and metaverse environments, including intensity, colour temperature, bounce calculations, shadow quality, and reflection properties that determine visual realism and immersion.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:rendering-technology",
+      "label": "Rendering Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:visual-realism",
+        "label": "Visual Realism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "visual-realism",
+      "label": "Visual Realism"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "rendering-technology",
+      "label": "Rendering Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    }
+  ]
+}

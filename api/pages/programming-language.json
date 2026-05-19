@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:80efa816c8860e7fb796d7c46309d61c3d2022b95e5e58b1dbf053ec0e10d81a",
+  "title": "Programming Language",
+  "slug": "programming-language",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:programming-language",
+  "domain": "artificial-intelligence",
+  "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications. Popular languages include Python (dominant in ML/DL ecosystems), Julia (high-performance numerical computing), R (statistical analysis), and domain-specific languages like TensorFlow's graph definition language. Key features include support for tensor operations, automatic differentiation, GPU acceleration, functional programming paradigms, and integration with ML frameworks. Modern AI languages emphasize readability, expressiveness, performance, and ecosystem richness.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compiler-optimization",
+      "label": "Compiler Optimization"
+    },
+    {
+      "slug": "domain-specific-languages",
+      "label": "Domain-Specific Languages"
+    },
+    {
+      "slug": "julia-language",
+      "label": "Julia Language"
+    },
+    {
+      "slug": "python-ecosystem",
+      "label": "Python Ecosystem"
+    }
+  ],
+  "backlinks": []
+}

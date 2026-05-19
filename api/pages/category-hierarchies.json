@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:3e98bdb550113e7d2a154edff1590b8d2c2525f7aff4ad4d364d87ccbc5091cf",
+  "title": "Category Hierarchies",
+  "slug": "category-hierarchies",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:category-hierarchies",
+  "domain": "spatial-computing",
+  "definition": "A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-organization-system",
+      "label": "Knowledge Organization System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:classification-rules",
+        "label": "Classification Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:taxonomy-design",
+        "label": "Taxonomy Design"
+      },
+      {
+        "id": "urn:visionflow:linked:term-relationships",
+        "label": "Term Relationships"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-classification",
+        "label": "Content Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:navigation-structure",
+        "label": "Navigation Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-organization",
+        "label": "Semantic Organization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
+      "slug": "content-classification",
+      "label": "Content Classification"
+    },
+    {
+      "slug": "navigation-structure",
+      "label": "Navigation Structure"
+    },
+    {
+      "slug": "semantic-organization",
+      "label": "Semantic Organization"
+    },
+    {
+      "slug": "taxonomy-design",
+      "label": "Taxonomy Design"
+    },
+    {
+      "slug": "term-relationships",
+      "label": "Term Relationships"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "knowledge-organization-system",
+      "label": "Knowledge Organization System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "glossary-index",
+      "label": "Glossary Index"
+    }
+  ]
+}

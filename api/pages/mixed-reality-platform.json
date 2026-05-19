@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:425a7b0ec25134473017a2a70d524d2450bf4a3af0a7529080d0df09446ad4bc",
+  "title": "Mixed Reality Platform",
+  "slug": "mixed-reality-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mixed-reality-platform",
+  "domain": "spatial-computing",
+  "definition": "Mixed Reality Platform is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "spatial-computing-system",
+      "label": "Spatial Computing System"
+    }
+  ]
+}

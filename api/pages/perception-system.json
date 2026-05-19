@@ -1,0 +1,637 @@
+{
+  "id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00",
+  "title": "Perception System",
+  "slug": "perception-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:perception-system",
+  "domain": "artificial-intelligence",
+  "definition": "A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localization]], and [[Scene Understanding]]. Perception systems fuse data from multiple [[Sensor Modalities]] ([[Camera]], [[LiDAR]], [[Radar]], [[Ultrasonic Sensors]]) to create robust environmental models for [[Autonomous Decision-Making]]. [Updated 2025]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:autonomous-systems",
+      "label": "Autonomous Systems"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "production",
+  "status": "production",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:environmental-mapping",
+        "label": "Environmental Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:situational-awareness",
+        "label": "Situational Awareness"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-vision",
+      "label": "3D Vision"
+    },
+    {
+      "slug": "4-d-perception",
+      "label": "4D Perception"
+    },
+    {
+      "slug": "4-d-radar",
+      "label": "4D Radar"
+    },
+    {
+      "slug": "adverse-weather",
+      "label": "Adverse Weather"
+    },
+    {
+      "slug": "agricultural-robots",
+      "label": "Agricultural Robots"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "amazon-robotics",
+      "label": "Amazon Robotics"
+    },
+    {
+      "slug": "apollo-auto",
+      "label": "Apollo Auto"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "automotive-edge-computing-consortium",
+      "label": "Automotive Edge Computing Consortium"
+    },
+    {
+      "slug": "autonomous-decision-making",
+      "label": "Autonomous Decision-Making"
+    },
+    {
+      "slug": "autonomous-mobile-robots",
+      "label": "Autonomous Mobile Robots"
+    },
+    {
+      "slug": "autonomous-mobility",
+      "label": "Autonomous Mobility"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "autoware",
+      "label": "Autoware"
+    },
+    {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
+      "slug": "carla",
+      "label": "CARLA"
+    },
+    {
+      "slug": "carmaker",
+      "label": "Carmaker"
+    },
+    {
+      "slug": "causal-reasoning",
+      "label": "Causal Reasoning"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "cnn",
+      "label": "CNN"
+    },
+    {
+      "slug": "computational-cost",
+      "label": "Computational Cost"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "coursera-computer-vision-specialization",
+      "label": "Coursera Computer Vision Specialization"
+    },
+    {
+      "slug": "cruise-origin",
+      "label": "Cruise Origin"
+    },
+    {
+      "slug": "cryptographically-verified",
+      "label": "Cryptographically Verified"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "data-anonymization",
+      "label": "Data Anonymization"
+    },
+    {
+      "slug": "decentralized-ai",
+      "label": "Decentralized AI"
+    },
+    {
+      "slug": "decentralized-perception-networks",
+      "label": "Decentralized Perception Networks"
+    },
+    {
+      "slug": "decentralized-systems",
+      "label": "Decentralized Systems"
+    },
+    {
+      "slug": "detectron2",
+      "label": "Detectron2"
+    },
+    {
+      "slug": "detr",
+      "label": "DETR"
+    },
+    {
+      "slug": "dinov2",
+      "label": "DINOv2"
+    },
+    {
+      "slug": "dji-enterprise",
+      "label": "DJI Enterprise"
+    },
+    {
+      "slug": "dynamic-environments",
+      "label": "Dynamic Environments"
+    },
+    {
+      "slug": "eccv",
+      "label": "ECCV"
+    },
+    {
+      "slug": "end-to-end-learning",
+      "label": "End-to-End Learning"
+    },
+    {
+      "slug": "environmental-mapping",
+      "label": "Environmental Mapping"
+    },
+    {
+      "slug": "ethical-guidelines",
+      "label": "Ethical Guidelines"
+    },
+    {
+      "slug": "event-based-vision",
+      "label": "Event-Based Vision"
+    },
+    {
+      "slug": "explainable-perception",
+      "label": "Explainable Perception"
+    },
+    {
+      "slug": "few-shot-detection",
+      "label": "Few-Shot Detection"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "gm-ultra-cruise",
+      "label": "GM Ultra Cruise"
+    },
+    {
+      "slug": "hardware-in-the-loop",
+      "label": "Hardware-in-the-Loop"
+    },
+    {
+      "slug": "hdr-cameras",
+      "label": "HDR Cameras"
+    },
+    {
+      "slug": "hil",
+      "label": "HIL"
+    },
+    {
+      "slug": "iccv",
+      "label": "ICCV"
+    },
+    {
+      "slug": "icra",
+      "label": "ICRA"
+    },
+    {
+      "slug": "ieee-intelligent-transportation-systems-society",
+      "label": "IEEE Intelligent Transportation Systems Society"
+    },
+    {
+      "slug": "iros",
+      "label": "IROS"
+    },
+    {
+      "slug": "iso-21448",
+      "label": "ISO 21448"
+    },
+    {
+      "slug": "iso-26262",
+      "label": "ISO 26262"
+    },
+    {
+      "slug": "iso-pas-21448",
+      "label": "ISO/PAS 21448"
+    },
+    {
+      "slug": "iso-tc-204",
+      "label": "ISO TC 204"
+    },
+    {
+      "slug": "lgsvl",
+      "label": "LGSVL"
+    },
+    {
+      "slug": "li-dar",
+      "label": "LiDAR"
+    },
+    {
+      "slug": "li-dar-slam",
+      "label": "LiDAR SLAM"
+    },
+    {
+      "slug": "lighting-variations",
+      "label": "Lighting Variations"
+    },
+    {
+      "slug": "long-tail-events",
+      "label": "Long-Tail Events"
+    },
+    {
+      "slug": "maps",
+      "label": "Maps"
+    },
+    {
+      "slug": "mercedes-benz-drive-pilot",
+      "label": "Mercedes-Benz Drive Pilot"
+    },
+    {
+      "slug": "mit-6-s094-deep-learning-for-self-driving-cars",
+      "label": "MIT 6.S094: Deep Learning for Self-Driving Cars"
+    },
+    {
+      "slug": "mmdetection",
+      "label": "MMDetection"
+    },
+    {
+      "slug": "multi-agent-perception",
+      "label": "Multi-Agent Perception"
+    },
+    {
+      "slug": "multi-modal-data",
+      "label": "Multi-Modal Data"
+    },
+    {
+      "slug": "multispectral-cameras",
+      "label": "Multispectral Cameras"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "neuromorphic-cameras",
+      "label": "Neuromorphic Cameras"
+    },
+    {
+      "slug": "nvidia-developer-program",
+      "label": "NVIDIA Developer Program"
+    },
+    {
+      "slug": "object-recognition",
+      "label": "Object Recognition"
+    },
+    {
+      "slug": "occlusion-handling",
+      "label": "Occlusion Handling"
+    },
+    {
+      "slug": "occupancy-networks",
+      "label": "Occupancy Networks"
+    },
+    {
+      "slug": "on-road-testing",
+      "label": "On-Road Testing"
+    },
+    {
+      "slug": "open-cv",
+      "label": "OpenCV"
+    },
+    {
+      "slug": "perception-systems",
+      "label": "Perception Systems"
+    },
+    {
+      "slug": "physical-adversarial-attacks",
+      "label": "Physical Adversarial Attacks"
+    },
+    {
+      "slug": "point-cloud-library",
+      "label": "Point Cloud Library"
+    },
+    {
+      "slug": "privacy-preserving",
+      "label": "Privacy-Preserving"
+    },
+    {
+      "slug": "probabilistic-tracking",
+      "label": "Probabilistic Tracking"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
+      "slug": "robotaxi",
+      "label": "Robotaxi"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
+      "slug": "sae-international",
+      "label": "SAE International"
+    },
+    {
+      "slug": "sae-j3016",
+      "label": "SAE J3016"
+    },
+    {
+      "slug": "saliency-maps",
+      "label": "Saliency Maps"
+    },
+    {
+      "slug": "sam-2",
+      "label": "SAM 2"
+    },
+    {
+      "slug": "scenario-based-testing",
+      "label": "Scenario-Based Testing"
+    },
+    {
+      "slug": "sensor-data",
+      "label": "Sensor Data"
+    },
+    {
+      "slug": "sensor-modalities",
+      "label": "Sensor Modalities"
+    },
+    {
+      "slug": "sensor-to-action",
+      "label": "Sensor-to-Action"
+    },
+    {
+      "slug": "sim-to-real-gap",
+      "label": "Sim-to-Real Gap"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "skydio",
+      "label": "Skydio"
+    },
+    {
+      "slug": "smart-cities",
+      "label": "Smart Cities"
+    },
+    {
+      "slug": "solid-state-li-dar",
+      "label": "Solid-State LiDAR"
+    },
+    {
+      "slug": "tesla-autopilot-fsd",
+      "label": "Tesla Autopilot/FSD"
+    },
+    {
+      "slug": "tracking",
+      "label": "Tracking"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "transformer-based-architectures",
+      "label": "Transformer-Based Architectures"
+    },
+    {
+      "slug": "transformer-based-perception",
+      "label": "Transformer-Based Perception"
+    },
+    {
+      "slug": "udacity-self-driving-car-nanodegree",
+      "label": "Udacity Self-Driving Car Nanodegree"
+    },
+    {
+      "slug": "ultrasonic-sensors",
+      "label": "Ultrasonic Sensors"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "vehicle-to-vehicle",
+      "label": "Vehicle-to-Vehicle"
+    },
+    {
+      "slug": "virtual-testing",
+      "label": "Virtual Testing"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "visual-slam",
+      "label": "Visual SLAM"
+    },
+    {
+      "slug": "waymo-driver",
+      "label": "Waymo Driver"
+    },
+    {
+      "slug": "yolov12",
+      "label": "YOLOv12"
+    },
+    {
+      "slug": "zipline",
+      "label": "Zipline"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "adversarial-robustness",
+      "label": "Adversarial Robustness"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adas",
+      "label": "ADAS"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "self-driving-car",
+      "label": "Self Driving Car"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ]
+}

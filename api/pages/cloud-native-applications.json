@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:67ed2abc6b787568fac921bb0131d93e85bfa784a97444f21b866491ac374d14",
+  "title": "Cloud-Native Applications",
+  "slug": "cloud-native-applications",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cloud-native-applications",
+  "domain": "infrastructure",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

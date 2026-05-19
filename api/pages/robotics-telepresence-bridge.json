@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:e4ab9731e8ec794b84856268b360fdfaa5d4554143591abde9e2e197392a1e95",
+  "title": "Robotics-Telepresence Bridge",
+  "slug": "robotics-telepresence-bridge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robotics-telepresence-bridge",
+  "domain": "distributed-collaboration",
+  "definition": "\"The conceptual and technical integration between robotics systems and telepresence technologies, where remote operators experience physical presence in distant real-world locations through robot-mediated perception and action, combining robotic manipulation capabilities with telepresence social presence and immersive interfaces to enable embodied remote interaction with physical environments.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.6,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+        "label": "TELE-203-haptic-feedback-telepresence"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:hazardous-environment-access",
+        "label": "HazardousEnvironmentAccess"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hazardous-environment-access",
+      "label": "HazardousEnvironmentAccess"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence"
+    },
+    {
+      "slug": "tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking"
+    },
+    {
+      "slug": "tele-200-robotic-telepresence",
+      "label": "TELE-200-robotic-telepresence"
+    },
+    {
+      "slug": "tele-201-teleoperation-systems",
+      "label": "TELE-201-teleoperation-systems"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "tele-205-surgical-telepresence",
+      "label": "TELE-205-surgical-telepresence"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "CollaborativeRobot"
+    },
+    {
+      "slug": "convergence-concept",
+      "label": "ConvergenceConcept"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "HumanRobotInteraction"
+    },
+    {
+      "slug": "robotic-system",
+      "label": "RoboticSystem"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "teleoperation-systems",
+      "label": "Teleoperation Systems"
+    }
+  ]
+}

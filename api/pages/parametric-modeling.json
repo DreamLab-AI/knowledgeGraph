@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:0e3f28abf18466b94406e66a72793f0e27b9ce0a36df35b339a6e003f32fdcd9",
+  "title": "Parametric Modeling",
+  "slug": "parametric-modeling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:parametric-modeling",
+  "domain": "spatial-computing",
+  "definition": "A CAD design methodology that uses algorithms and adjustable parameters to generate and modify complex 3D geometry, enabling flexible, constraint-driven design where changes to input values automatically propagate throughout the model.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:generative-design",
+        "label": "Generative Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-design",
+      "label": "Generative Design"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    }
+  ]
+}

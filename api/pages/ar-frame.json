@@ -1,0 +1,632 @@
+{
+  "id": "urn:visionflow:page:acffbbdfe0297b61db6fbaac415c08f243cd489eb8bda68f12560fc2d42ca978",
+  "title": "AR Frame",
+  "slug": "ar-frame",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ar-frame",
+  "domain": "spatial-computing",
+  "definition": "An **AR Frame** is a head-worn optical see-through augmented reality platform integrating a transparent or semi-transparent microdisplay (typically a microOLED, LCoS, or holographic waveguide projecting 480p-1080p imagery onto a combiner lens of 20\u00b0-50\u00b0 diagonal field-of-view), onboard processing (ARM Cortex-M, Qualcomm Snapdragon AR, or Apple R-series silicon ranging from a 64MHz Cortex-M4F in the Brilliant Labs Frame at 39g through a 3nm Snapdragon AR2 Gen 1 in Meta Orion at 98g to an Apple M2 + R1 chip pair in Vision Pro at 600-650g), a multimodal sensor suite (6-DOF inertial measurement unit, RGB world-facing camera 1-12MP, optional depth sensor or LiDAR, microphone array for spatial audio capture, optional eye-tracking and electrooculography), wireless connectivity (Bluetooth 5.x BLE for phone tethering, Wi-Fi 6/6E for cloud integration, increasingly 5G via tethered companion), and a developer-facing software stack (Lua scripting on Frame, C++ Snapdragon Spaces SDK on Qualcomm reference designs, Unity XR Plugin Management or Unreal OpenXR runtimes for higher-tier devices, Apple visionOS for the spatial-computing apex device) to deliver hands-free augmented reality experiences ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ar-hardware",
+      "label": "AR Hardware"
+    },
+    {
+      "id": "urn:visionflow:linked:head-mounted-display",
+      "label": "Head-Mounted Display"
+    },
+    {
+      "id": "urn:visionflow:linked:optical-see-through-hmd",
+      "label": "Optical See-Through HMD"
+    },
+    {
+      "id": "urn:visionflow:linked:spatial-computing-platform",
+      "label": "Spatial Computing Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:wearable-device",
+      "label": "Wearable Device"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:battery",
+        "label": "Battery"
+      },
+      {
+        "id": "urn:visionflow:linked:eye-tracking-sensor",
+        "label": "Eye-Tracking Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:microdisplay",
+        "label": "Microdisplay"
+      },
+      {
+        "id": "urn:visionflow:linked:microphone-array",
+        "label": "Microphone Array"
+      },
+      {
+        "id": "urn:visionflow:linked:onboard-so-c",
+        "label": "Onboard SoC"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-combiner",
+        "label": "Optical Combiner"
+      },
+      {
+        "id": "urn:visionflow:linked:wireless-radio",
+        "label": "Wireless Radio"
+      },
+      {
+        "id": "urn:visionflow:linked:world-facing-camera",
+        "label": "World-Facing Camera"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:inertial-sensors",
+        "label": "Inertial Sensors"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-display",
+        "label": "Optical Display"
+      },
+      {
+        "id": "urn:visionflow:linked:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:visionflow:linked:slam-algorithm",
+        "label": "SLAM Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:environmental-awareness",
+        "label": "Environmental Awareness"
+      },
+      {
+        "id": "urn:visionflow:linked:hands-free-interaction",
+        "label": "Hands-Free Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:heads-up-display",
+        "label": "Heads-Up Display"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-content-anchoring",
+        "label": "Persistent Content Anchoring"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-expert-guidance",
+        "label": "Remote Expert Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-translation",
+        "label": "Real-Time Translation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:late-stage-reprojection",
+        "label": "Late-Stage Reprojection"
+      },
+      {
+        "id": "urn:visionflow:linked:open-xr-runtime",
+        "label": "OpenXR Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:slam-tracking",
+        "label": "SLAM Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-captioning",
+      "label": "Accessibility Captioning"
+    },
+    {
+      "slug": "ai-assistant",
+      "label": "AI Assistant"
+    },
+    {
+      "slug": "ambient-computing",
+      "label": "Ambient Computing"
+    },
+    {
+      "slug": "apple-vision-os-developer-documentation",
+      "label": "Apple visionOS Developer Documentation"
+    },
+    {
+      "slug": "ar-hardware",
+      "label": "AR Hardware"
+    },
+    {
+      "slug": "azuma-1997-survey-of-augmented-reality",
+      "label": "Azuma 1997 Survey of Augmented Reality"
+    },
+    {
+      "slug": "battery",
+      "label": "Battery"
+    },
+    {
+      "slug": "billinghurst-clark-and-lee-2015-ar-survey",
+      "label": "Billinghurst Clark & Lee 2015 AR Survey"
+    },
+    {
+      "slug": "birdbath-optics",
+      "label": "Birdbath Optics"
+    },
+    {
+      "slug": "bloomberg-power-on-gurman-2024",
+      "label": "Bloomberg Power On Gurman 2024"
+    },
+    {
+      "slug": "bluetooth-low-energy",
+      "label": "Bluetooth Low Energy"
+    },
+    {
+      "slug": "bluetooth-sig",
+      "label": "Bluetooth SIG"
+    },
+    {
+      "slug": "brilliant-labs-frame-hardware-documentation",
+      "label": "Brilliant Labs Frame Hardware Documentation"
+    },
+    {
+      "slug": "caudell-and-mizell-1992-augmented-reality-boeing",
+      "label": "Caudell & Mizell 1992 Augmented Reality Boeing"
+    },
+    {
+      "slug": "consumer-electronics-domain",
+      "label": "ConsumerElectronicsDomain"
+    },
+    {
+      "slug": "counterpoint-research-smart-glasses-tracker",
+      "label": "Counterpoint Research Smart Glasses Tracker"
+    },
+    {
+      "slug": "davison-et-al-2007-mono-slam",
+      "label": "Davison et al. 2007 MonoSLAM"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "edge-compute-layer",
+      "label": "EdgeComputeLayer"
+    },
+    {
+      "slug": "elmi-terander-et-al-2019-ar-spine-navigation",
+      "label": "Elmi-Terander et al. 2019 AR Spine Navigation"
+    },
+    {
+      "slug": "environmental-awareness",
+      "label": "Environmental Awareness"
+    },
+    {
+      "slug": "eye-tracking-sensor",
+      "label": "Eye-Tracking Sensor"
+    },
+    {
+      "slug": "feiner-mac-intyre-and-seligmann-1993-karma",
+      "label": "Feiner MacIntyre & Seligmann 1993 KARMA"
+    },
+    {
+      "slug": "field-service",
+      "label": "Field Service"
+    },
+    {
+      "slug": "foveated-rendering",
+      "label": "Foveated Rendering"
+    },
+    {
+      "slug": "git-hub-brilliantlabs-ar-frame-codebase",
+      "label": "GitHub brilliantlabsAR frame-codebase"
+    },
+    {
+      "slug": "hands-free-interaction",
+      "label": "Hands-Free Interaction"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "head-mounted-display",
+      "label": "Head-Mounted Display"
+    },
+    {
+      "slug": "heads-up-display",
+      "label": "Heads-Up Display"
+    },
+    {
+      "slug": "henderson-and-feiner-2011-ar-psychomotor-phase",
+      "label": "Henderson & Feiner 2011 AR Psychomotor Phase"
+    },
+    {
+      "slug": "holographic-display",
+      "label": "Holographic Display"
+    },
+    {
+      "slug": "holographic-waveguide",
+      "label": "Holographic Waveguide"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "idc-ar-vr-headset-tracker-q1-2025",
+      "label": "IDC AR VR Headset Tracker Q1 2025"
+    },
+    {
+      "slug": "ieee-802-11",
+      "label": "IEEE 802.11"
+    },
+    {
+      "slug": "industrial-inspection",
+      "label": "Industrial Inspection"
+    },
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "inertial-navigation",
+      "label": "Inertial Navigation"
+    },
+    {
+      "slug": "inertial-sensors",
+      "label": "Inertial Sensors"
+    },
+    {
+      "slug": "interaction-layer",
+      "label": "InteractionLayer"
+    },
+    {
+      "slug": "kerbl-et-al-2023-3-d-gaussian-splatting",
+      "label": "Kerbl et al. 2023 3D Gaussian Splatting"
+    },
+    {
+      "slug": "khronos-gl-tf",
+      "label": "Khronos glTF"
+    },
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
+      "slug": "khronos-open-xr-1-1-specification",
+      "label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "slug": "klein-and-murray-2007-ptam",
+      "label": "Klein & Murray 2007 PTAM"
+    },
+    {
+      "slug": "kress-2020-optical-architectures-for-ar-vr-mr",
+      "label": "Kress 2020 Optical Architectures for AR/VR/MR"
+    },
+    {
+      "slug": "late-stage-reprojection",
+      "label": "Late-Stage Reprojection"
+    },
+    {
+      "slug": "maimone-et-al-2017-holographic-near-eye-displays",
+      "label": "Maimone et al. 2017 Holographic Near-Eye Displays"
+    },
+    {
+      "slug": "mann-1997-wearable-computing",
+      "label": "Mann 1997 Wearable Computing"
+    },
+    {
+      "slug": "marketsand-markets-smart-glasses-2024",
+      "label": "MarketsandMarkets Smart Glasses 2024"
+    },
+    {
+      "slug": "meta-orion-2024-press-release",
+      "label": "Meta Orion 2024 Press Release"
+    },
+    {
+      "slug": "micro-led-display",
+      "label": "MicroLED Display"
+    },
+    {
+      "slug": "micro-oled-display",
+      "label": "MicroOLED Display"
+    },
+    {
+      "slug": "microdisplay",
+      "label": "Microdisplay"
+    },
+    {
+      "slug": "microelectromechanical-systems",
+      "label": "Microelectromechanical Systems"
+    },
+    {
+      "slug": "microphone-array",
+      "label": "Microphone Array"
+    },
+    {
+      "slug": "mpeg-i",
+      "label": "MPEG-I"
+    },
+    {
+      "slug": "mur-artal-et-al-2015-orb-slam",
+      "label": "Mur-Artal et al. 2015 ORB-SLAM"
+    },
+    {
+      "slug": "newcombe-et-al-2011-kinect-fusion",
+      "label": "Newcombe et al. 2011 KinectFusion"
+    },
+    {
+      "slug": "onboard-so-c",
+      "label": "Onboard SoC"
+    },
+    {
+      "slug": "open-xr-runtime",
+      "label": "OpenXR Runtime"
+    },
+    {
+      "slug": "optical-combiner",
+      "label": "Optical Combiner"
+    },
+    {
+      "slug": "optical-display",
+      "label": "Optical Display"
+    },
+    {
+      "slug": "optical-see-through-hmd",
+      "label": "Optical See-Through HMD"
+    },
+    {
+      "slug": "peng-et-al-2020-neural-holography",
+      "label": "Peng et al. 2020 Neural Holography"
+    },
+    {
+      "slug": "persistent-content-anchoring",
+      "label": "Persistent Content Anchoring"
+    },
+    {
+      "slug": "power-management",
+      "label": "Power Management"
+    },
+    {
+      "slug": "projection-mapping-system",
+      "label": "Projection Mapping System"
+    },
+    {
+      "slug": "remote-expert-guidance",
+      "label": "Remote Expert Guidance"
+    },
+    {
+      "slug": "retail-assistance",
+      "label": "Retail Assistance"
+    },
+    {
+      "slug": "slam-algorithm",
+      "label": "SLAM Algorithm"
+    },
+    {
+      "slug": "slam-tracking",
+      "label": "SLAM Tracking"
+    },
+    {
+      "slug": "smartphone-ar",
+      "label": "Smartphone AR"
+    },
+    {
+      "slug": "snap-spectacles-5-documentation",
+      "label": "Snap Spectacles 5 Documentation"
+    },
+    {
+      "slug": "snapdragon-ar-so-c",
+      "label": "Snapdragon AR SoC"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "spatial-computing-platform",
+      "label": "Spatial Computing Platform"
+    },
+    {
+      "slug": "statista-ar-vr-outlook-2025",
+      "label": "Statista AR VR Outlook 2025"
+    },
+    {
+      "slug": "surgical-navigation",
+      "label": "Surgical Navigation"
+    },
+    {
+      "slug": "sutherland-1968-head-mounted-three-dimensional-display",
+      "label": "Sutherland 1968 Head-Mounted Three-Dimensional Display"
+    },
+    {
+      "slug": "tourism-guidance",
+      "label": "Tourism Guidance"
+    },
+    {
+      "slug": "usb-if",
+      "label": "USB-IF"
+    },
+    {
+      "slug": "video-passthrough-hmd",
+      "label": "Video Passthrough HMD"
+    },
+    {
+      "slug": "virtual-reality-headset",
+      "label": "Virtual Reality Headset"
+    },
+    {
+      "slug": "visual-question-answering",
+      "label": "Visual Question Answering"
+    },
+    {
+      "slug": "w3-c-web-xr",
+      "label": "W3C WebXR"
+    },
+    {
+      "slug": "w3-c-web-xr-device-api",
+      "label": "W3C WebXR Device API"
+    },
+    {
+      "slug": "waveguide-optics",
+      "label": "Waveguide Optics"
+    },
+    {
+      "slug": "wearable-ai",
+      "label": "Wearable AI"
+    },
+    {
+      "slug": "wearable-device",
+      "label": "Wearable Device"
+    },
+    {
+      "slug": "wearable-technology-domain",
+      "label": "WearableTechnologyDomain"
+    },
+    {
+      "slug": "wi-fi-6",
+      "label": "Wi-Fi 6"
+    },
+    {
+      "slug": "wireless-connectivity",
+      "label": "Wireless Connectivity"
+    },
+    {
+      "slug": "wireless-networking",
+      "label": "Wireless Networking"
+    },
+    {
+      "slug": "wireless-radio",
+      "label": "Wireless Radio"
+    },
+    {
+      "slug": "world-facing-camera",
+      "label": "World-Facing Camera"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-Time Translation"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

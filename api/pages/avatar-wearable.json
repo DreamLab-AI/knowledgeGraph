@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:6cf73d6accc7a631c68605ba9859a98fc22afc0dbcb7c8c8fdc7fb78b5f146cf",
+  "title": "Avatar Wearable",
+  "slug": "avatar-wearable",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-wearable",
+  "domain": "spatial-computing",
+  "definition": "Digital clothing, accessories, and cosmetic items that can be equipped by avatars in virtual environments, often tradeable as digital assets or NFTs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

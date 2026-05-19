@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DemocraticParticipation
-uri:: urn:visionclaw:concept:spatial-computing:democratic-participation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:democratic-participation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Democratic Participation
-content-hash:: sha256-12-1abeade628f9
-legacy-term-id:: MV-9842
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DemocraticParticipation
+legacy_uri:: urn:visionclaw:concept:spatial-computing:democratic-participation
 public:: true
+
+# Democratic Participation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761",
+  "@type": "Page",
+  "vc:slug": "democratic-participation",
+  "title": "Democratic Participation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:civic-engagement",
+      "vc:label": "Civic Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-decision-making",
+      "vc:label": "Community Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-voting",
+      "vc:label": "Virtual Voting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-governance",
+      "vc:label": "Digital Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-framework",
+      "vc:label": "Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:voting-systems",
+      "vc:label": "Voting Systems"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1abeade628f9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DemocraticParticipation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9842"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Democratic Participation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:democratic-participation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:democratic-participation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:democratic-participation",
+  "@type": "OntologyClass",
+  "label": "Democratic Participation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-governance",
+      "vc:label": "Digital Governance"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance frameworks.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:governance-framework",
+      "vc:label": "Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:voting-systems",
+      "vc:label": "Voting Systems"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:civic-engagement",
+      "vc:label": "Civic Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-decision-making",
+      "vc:label": "Community Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-voting",
+      "vc:label": "Virtual Voting"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:democratic-participation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Civic Engagement]]",
+      "resolved": "urn:visionflow:linked:civic-engagement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Community Decision Making]]",
+      "resolved": "urn:visionflow:linked:community-decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Voting]]",
+      "resolved": "urn:visionflow:linked:virtual-voting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Governance]]",
+      "resolved": "urn:visionflow:owl:class:digital-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Governance Framework]]",
+      "resolved": "urn:visionflow:owl:class:governance-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Verification]]",
+      "resolved": "urn:visionflow:owl:class:identity-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Voting Systems]]",
+      "resolved": "urn:visionflow:owl:class:voting-systems",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance frameworks.

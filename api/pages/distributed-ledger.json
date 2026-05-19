@@ -1,0 +1,900 @@
+{
+  "id": "urn:visionflow:page:ad6f6b5f311065497ba0d045fa93be28e7cc67cf0d3b0f006826537a5efd968e",
+  "title": "Distributed Ledger",
+  "slug": "distributed-ledger",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributed-ledger",
+  "domain": "blockchain",
+  "definition": "A **Distributed Ledger** (or **Distributed Ledger Technology**, **DLT**) is a cryptographically-secured, append-only data structure replicated across a set of independently-operated nodes that collectively reach agreement on the canonical sequence and validity of state transitions through a deterministic [[Consensus Mechanism]] without recourse to a single central authority, encompassing the full superset of architectures from chain-of-blocks designs ([[Bitcoin]], [[Ethereum]] proof-of-work and proof-of-stake) through directed acyclic graph (DAG) topologies ([[IOTA]] Tangle, [[Hashgraph]] Hedera gossip-about-gossip, [[Avalanche]] subnets with metastable consensus), agent-centric replicated event chains ([[Holochain]] without global consensus), permissioned channel architectures ([[Hyperledger Fabric]] with per-channel ledgers and pluggable Kafka/Raft ordering), UTXO-style transaction-finality systems with selective broadcast ([[R3 Corda]] notary-mediated finality without global broadcast), and Ethereum Virtual Machine permissioned forks ([[Quorum]], Besu, Polygon Edge), formally defined by **ISO 22739:2024 *Blockchain and distributed ledger technologies \u2014 Vocabulary*** (the canonic",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:append-only-log",
+      "label": "Append-Only Log"
+    },
+    {
+      "id": "urn:visionflow:linked:multi-party-database",
+      "label": "Multi-Party Database"
+    },
+    {
+      "id": "urn:visionflow:linked:replicated-state-machine",
+      "label": "Replicated State Machine"
+    },
+    {
+      "id": "urn:visionflow:owl:class:data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-system",
+      "label": "Distributed System"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:notary-service",
+        "label": "Notary Service"
+      },
+      {
+        "id": "urn:visionflow:linked:state-transition-function",
+        "label": "State Transition Function"
+      },
+      {
+        "id": "urn:visionflow:linked:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transaction-pool",
+        "label": "Transaction Pool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:visionflow:linked:node-software",
+        "label": "Node Software"
+      },
+      {
+        "id": "urn:visionflow:linked:time-ordering",
+        "label": "Time Ordering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:cbdc",
+        "label": "CBDC"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:immutable-record",
+        "label": "Immutable Record"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:state-synchronisation",
+        "label": "State Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-history",
+        "label": "Transaction History"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:channel-isolation-pattern",
+        "label": "Channel Isolation Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:merkle-tree-structure",
+        "label": "Merkle Tree Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:notary-validation-pattern",
+        "label": "Notary Validation Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:state-replication-protocol",
+        "label": "State Replication Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "androulaki-2018-hyperledger-fabric-euro-sys",
+      "label": "Androulaki 2018 Hyperledger Fabric EuroSys"
+    },
+    {
+      "slug": "append-only-log",
+      "label": "Append-Only Log"
+    },
+    {
+      "slug": "atomic-settlement",
+      "label": "Atomic Settlement"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "baird-2016-hashgraph-consensus",
+      "label": "Baird 2016 Hashgraph Consensus"
+    },
+    {
+      "slug": "bank-for-international-settlements",
+      "label": "Bank for International Settlements"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "bis-2023-annual-economic-report-unified-ledger",
+      "label": "BIS 2023 Annual Economic Report Unified Ledger"
+    },
+    {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
+      "slug": "black-rock-buidl",
+      "label": "BlackRock BUIDL"
+    },
+    {
+      "slug": "bo-e-bis-2023-project-rosalind-phase-1",
+      "label": "BoE BIS 2023 Project Rosalind Phase 1"
+    },
+    {
+      "slug": "bo-e-hmt-2023-digital-pound-consultation",
+      "label": "BoE HMT 2023 Digital Pound Consultation"
+    },
+    {
+      "slug": "brewer-2000-cap-theorem",
+      "label": "Brewer 2000 CAP Theorem"
+    },
+    {
+      "slug": "brown-carlyle-grigg-hearn-2016-corda-introduction",
+      "label": "Brown Carlyle Grigg Hearn 2016 Corda Introduction"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
+    },
+    {
+      "slug": "castro-liskov-1999-pbft",
+      "label": "Castro Liskov 1999 PBFT"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "centralised-ledger",
+      "label": "Centralised Ledger"
+    },
+    {
+      "slug": "channel-isolation-pattern",
+      "label": "Channel Isolation Pattern"
+    },
+    {
+      "slug": "citi-token-services",
+      "label": "Citi Token Services"
+    },
+    {
+      "slug": "city-of-london-corporation",
+      "label": "City of London Corporation"
+    },
+    {
+      "slug": "cloud-database",
+      "label": "Cloud Database"
+    },
+    {
+      "slug": "cls-bank-international",
+      "label": "CLS Bank International"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "cryptographic-primitives",
+      "label": "Cryptographic Primitives"
+    },
+    {
+      "slug": "data-layer-domain",
+      "label": "DataLayerDomain"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "dtcc",
+      "label": "DTCC"
+    },
+    {
+      "slug": "enterprise-ethereum-alliance",
+      "label": "Enterprise Ethereum Alliance"
+    },
+    {
+      "slug": "eu-dlt-pilot-regime",
+      "label": "EU DLT Pilot Regime"
+    },
+    {
+      "slug": "eu-regulation-2022-858-dlt-pilot-regime",
+      "label": "EU Regulation 2022 858 DLT Pilot Regime"
+    },
+    {
+      "slug": "euroclear-uk-and-ireland",
+      "label": "Euroclear UK & Ireland"
+    },
+    {
+      "slug": "eyal-sirer-2014-selfish-mining",
+      "label": "Eyal Sirer 2014 Selfish Mining"
+    },
+    {
+      "slug": "fatf-travel-rule",
+      "label": "FATF Travel Rule"
+    },
+    {
+      "slug": "federated-database",
+      "label": "Federated Database"
+    },
+    {
+      "slug": "financial-conduct-authority",
+      "label": "Financial Conduct Authority"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "FinancialInfrastructureDomain"
+    },
+    {
+      "slug": "financial-market-infrastructure-sandbox",
+      "label": "Financial Market Infrastructure Sandbox"
+    },
+    {
+      "slug": "fischer-lynch-paterson-1985-flp-impossibility",
+      "label": "Fischer Lynch Paterson 1985 FLP Impossibility"
+    },
+    {
+      "slug": "fnality-international",
+      "label": "Fnality International"
+    },
+    {
+      "slug": "garay-kiayias-leonardos-2015-bitcoin-backbone",
+      "label": "Garay Kiayias Leonardos 2015 Bitcoin Backbone"
+    },
+    {
+      "slug": "gilad-hemo-micali-2017-algorand",
+      "label": "Gilad Hemo Micali 2017 Algorand"
+    },
+    {
+      "slug": "gilbert-lynch-2002-cap-theorem-proof",
+      "label": "Gilbert Lynch 2002 CAP Theorem Proof"
+    },
+    {
+      "slug": "hash-pointers",
+      "label": "Hash Pointers"
+    },
+    {
+      "slug": "hashgraph",
+      "label": "Hashgraph"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
+      "slug": "holochain",
+      "label": "Holochain"
+    },
+    {
+      "slug": "hsbc-fx-everywhere",
+      "label": "HSBC FX Everywhere"
+    },
+    {
+      "slug": "hyperledger-foundation",
+      "label": "Hyperledger Foundation"
+    },
+    {
+      "slug": "ice-bakkt",
+      "label": "ICE Bakkt"
+    },
+    {
+      "slug": "ieee-p2418",
+      "label": "IEEE P2418"
+    },
+    {
+      "slug": "immutable-record",
+      "label": "Immutable Record"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "innovate-finance",
+      "label": "Innovate Finance"
+    },
+    {
+      "slug": "iota",
+      "label": "IOTA"
+    },
+    {
+      "slug": "isda",
+      "label": "ISDA"
+    },
+    {
+      "slug": "isda-common-domain-model",
+      "label": "ISDA Common Domain Model"
+    },
+    {
+      "slug": "isda-regnosys-2024-common-domain-model",
+      "label": "ISDA REGnosys 2024 Common Domain Model"
+    },
+    {
+      "slug": "iso-22739",
+      "label": "ISO 22739"
+    },
+    {
+      "slug": "iso-22739-2024-blockchain-dlt-vocabulary",
+      "label": "ISO 22739 2024 Blockchain DLT Vocabulary"
+    },
+    {
+      "slug": "iso-23257-2022-dlt-reference-architecture",
+      "label": "ISO 23257 2022 DLT Reference Architecture"
+    },
+    {
+      "slug": "iso-tc-307",
+      "label": "ISO TC 307"
+    },
+    {
+      "slug": "iso-tr-23244",
+      "label": "ISO TR 23244"
+    },
+    {
+      "slug": "iso-ts-23258",
+      "label": "ISO TS 23258"
+    },
+    {
+      "slug": "jpmorgan-onyx",
+      "label": "JPMorgan Onyx"
+    },
+    {
+      "slug": "kiayias-2017-ouroboros",
+      "label": "Kiayias 2017 Ouroboros"
+    },
+    {
+      "slug": "king-s-college-london",
+      "label": "King's College London"
+    },
+    {
+      "slug": "lamport-shostak-pease-1982-byzantine-generals",
+      "label": "Lamport Shostak Pease 1982 Byzantine Generals"
+    },
+    {
+      "slug": "lch",
+      "label": "LCH"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "london-school-of-economics",
+      "label": "London School of Economics"
+    },
+    {
+      "slug": "london-stock-exchange-group",
+      "label": "London Stock Exchange Group"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "mastercard-mtn",
+      "label": "Mastercard MTN"
+    },
+    {
+      "slug": "merkle-tree-structure",
+      "label": "Merkle Tree Structure"
+    },
+    {
+      "slug": "merkle-trees",
+      "label": "Merkle Trees"
+    },
+    {
+      "slug": "miller-xia-croman-2016-honey-badger-bft",
+      "label": "Miller Xia Croman 2016 HoneyBadgerBFT"
+    },
+    {
+      "slug": "multi-party-computation",
+      "label": "Multi-Party Computation"
+    },
+    {
+      "slug": "multi-party-database",
+      "label": "Multi-Party Database"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "network-connectivity",
+      "label": "Network Connectivity"
+    },
+    {
+      "slug": "node-operators",
+      "label": "Node Operators"
+    },
+    {
+      "slug": "node-software",
+      "label": "Node Software"
+    },
+    {
+      "slug": "notary-service",
+      "label": "Notary Service"
+    },
+    {
+      "slug": "notary-validation-pattern",
+      "label": "Notary Validation Pattern"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "ondo-finance",
+      "label": "Ondo Finance"
+    },
+    {
+      "slug": "pay-uk",
+      "label": "Pay.UK"
+    },
+    {
+      "slug": "popov-2018-iota-tangle-whitepaper",
+      "label": "Popov 2018 IOTA Tangle Whitepaper"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "slug": "project-cedar",
+      "label": "Project Cedar"
+    },
+    {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
+    },
+    {
+      "slug": "project-mariana",
+      "label": "Project Mariana"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "real-time-gross-settlement",
+      "label": "Real-Time Gross Settlement"
+    },
+    {
+      "slug": "replicated-state-machine",
+      "label": "Replicated State Machine"
+    },
+    {
+      "slug": "retail-cbdc",
+      "label": "Retail CBDC"
+    },
+    {
+      "slug": "sdx",
+      "label": "SDX"
+    },
+    {
+      "slug": "securities-settlement",
+      "label": "Securities Settlement"
+    },
+    {
+      "slug": "securitize",
+      "label": "Securitize"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    },
+    {
+      "slug": "sompolinsky-zohar-2015-ghost",
+      "label": "Sompolinsky Zohar 2015 GHOST"
+    },
+    {
+      "slug": "state-replication-protocol",
+      "label": "State Replication Protocol"
+    },
+    {
+      "slug": "state-synchronisation",
+      "label": "State Synchronisation"
+    },
+    {
+      "slug": "state-transition-function",
+      "label": "State Transition Function"
+    },
+    {
+      "slug": "supply-chain-provenance",
+      "label": "Supply Chain Provenance"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "threshold-cryptography",
+      "label": "Threshold Cryptography"
+    },
+    {
+      "slug": "time-ordering",
+      "label": "Time Ordering"
+    },
+    {
+      "slug": "tokenised-deposits",
+      "label": "Tokenised Deposits"
+    },
+    {
+      "slug": "tokenised-real-world-assets",
+      "label": "Tokenised Real-World Assets"
+    },
+    {
+      "slug": "trade-finance",
+      "label": "Trade Finance"
+    },
+    {
+      "slug": "traditional-database",
+      "label": "Traditional Database"
+    },
+    {
+      "slug": "transaction-history",
+      "label": "Transaction History"
+    },
+    {
+      "slug": "ucl-cbt-2024-dlt-industry-adoption-review",
+      "label": "UCL CBT 2024 DLT Industry Adoption Review"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    },
+    {
+      "slug": "university-of-warwick",
+      "label": "University of Warwick"
+    },
+    {
+      "slug": "validator-set",
+      "label": "Validator Set"
+    },
+    {
+      "slug": "wef-2023-pathways-regulation-crypto-assets",
+      "label": "WEF 2023 Pathways Regulation Crypto Assets"
+    },
+    {
+      "slug": "wholesale-cbdc",
+      "label": "Wholesale CBDC"
+    },
+    {
+      "slug": "wood-2014-ethereum-yellow-paper",
+      "label": "Wood 2014 Ethereum Yellow Paper"
+    },
+    {
+      "slug": "world-economic-forum",
+      "label": "World Economic Forum"
+    },
+    {
+      "slug": "yin-malkhi-reiter-2019-hot-stuff",
+      "label": "Yin Malkhi Reiter 2019 HotStuff"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero Knowledge Proofs"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "transaction-pool",
+      "label": "Transaction Pool"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

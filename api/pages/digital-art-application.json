@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:5bdc811fb5fd14eeb0eb39947e6f61caec3e5670779a34160ae77bf2bab80923",
+  "title": "Digital Art Application",
+  "slug": "digital-art-application",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-art-application",
+  "domain": "spatial-computing",
+  "definition": "Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:creative-software",
+      "label": "Creative Software"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-systems",
+        "label": "Storage Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-art-creation",
+        "label": "Digital Art Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-exhibitions",
+        "label": "Virtual Exhibitions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-art-creation",
+      "label": "Digital Art Creation"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "slug": "storage-systems",
+      "label": "Storage Systems"
+    },
+    {
+      "slug": "virtual-exhibitions",
+      "label": "Virtual Exhibitions"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-software",
+      "label": "Creative Software"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:d601892dc395a78b9394b45e0d8b948d201bd59f0da8fc77650db2d8ecc85961",
+  "title": "Fast Spatial Queries",
+  "slug": "fast-spatial-queries",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fast-spatial-queries",
+  "domain": "spatial-computing",
+  "definition": "Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:real-time-metaverse-interactions",
+        "label": "Real-Time Metaverse Interactions"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "real-time-metaverse-interactions",
+      "label": "Real-Time Metaverse Interactions"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

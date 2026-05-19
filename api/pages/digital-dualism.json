@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:eddecfa06478b1c60af9fdc5a2d788effa50f884f647325d3b75147c27841ec9",
+  "title": "Digital Dualism",
+  "slug": "digital-dualism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-dualism",
+  "domain": "spatial-computing",
+  "definition": "Digital Dualism is a concept within the mv domain. bridges-to:: [[Telecollaboration]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blended-reality",
+      "label": "Blended Reality"
+    },
+    {
+      "slug": "digital-embodiment",
+      "label": "Digital Embodiment"
+    },
+    {
+      "slug": "hybrid-space",
+      "label": "Hybrid Space"
+    },
+    {
+      "slug": "phygital-experience",
+      "label": "Phygital Experience"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

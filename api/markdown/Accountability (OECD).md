@@ -1,21 +1,308 @@
-iri:: http://narrativegoldmine.com/metaverse#AccountabilityOECD
-uri:: urn:visionclaw:concept:artificial-intelligence:accountability-oecd
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:accountability-oecd
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Accountability (OECD)
-content-hash:: sha256-12-b910017e0bee
-legacy-term-id:: AI-0165
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:13:30Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AccountabilityOECD
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:accountability-oecd
 public:: true
+
+# Accountability (OECD)
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:37665a743988f934a148041e1f8154cfd9342f9b098caa0151a1e37d6d3e060f",
+  "@type": "Page",
+  "vc:slug": "accountability-oecd",
+  "title": "Accountability (OECD)",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:continuous-improvement",
+      "vc:label": "continuous improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:effective-governance",
+      "vc:label": "Effective governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000",
+      "vc:label": "IEEE 7000"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-31000-2018",
+      "vc:label": "ISO 31000:2018"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-37301-2021",
+      "vc:label": "ISO 37301:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-42001",
+      "vc:label": "ISO 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-27001-2022",
+      "vc:label": "ISO/IEC 27001:2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001-2023",
+      "vc:label": "ISO/IEC 42001:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd",
+      "vc:label": "OECD"
+    },
+    {
+      "@id": "urn:visionflow:linked:redress",
+      "vc:label": "redress"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b910017e0bee"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AccountabilityOECD"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0165"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:13:30Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Accountability (OECD)"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accountability-oecd"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accountability-oecd"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:37665a743988f934a148041e1f8154cfd9342f9b098caa0151a1e37d6d3e060f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:accountability-oecd",
+  "@type": "OntologyClass",
+  "label": "Accountability (OECD)",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:37665a743988f934a148041e1f8154cfd9342f9b098caa0151a1e37d6d3e060f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:37665a743988f934a148041e1f8154cfd9342f9b098caa0151a1e37d6d3e060f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Organisations and individuals developing, deploying or operating AI systems should be accountable for their proper functioning in accordance with OECD AI Principles and applicable legal frameworks, based on their roles, context and ability to act.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:continuous-improvement",
+      "vc:label": "continuous improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:effective-governance",
+      "vc:label": "Effective governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:redress",
+      "vc:label": "redress"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:accountability-oecd:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:37665a743988f934a148041e1f8154cfd9342f9b098caa0151a1e37d6d3e060f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[continuous improvement]]",
+      "resolved": "urn:visionflow:linked:continuous-improvement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Effective governance]]",
+      "resolved": "urn:visionflow:linked:effective-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 7000]]",
+      "resolved": "urn:visionflow:linked:ieee-7000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 31000:2018]]",
+      "resolved": "urn:visionflow:linked:iso-31000-2018",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 37301:2021]]",
+      "resolved": "urn:visionflow:linked:iso-37301-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 42001]]",
+      "resolved": "urn:visionflow:linked:iso-42001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 27001:2022]]",
+      "resolved": "urn:visionflow:linked:iso-iec-27001-2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD]]",
+      "resolved": "urn:visionflow:linked:oecd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[redress]]",
+      "resolved": "urn:visionflow:linked:redress",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:37665a743988f934a148041e1f8154cfd9342f9b098caa0151a1e37d6d3e060f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Organisations and individuals developing, deploying or operating AI systems should be accountable for their proper functioning in accordance with OECD AI Principles and applicable legal frameworks, based on their roles, context and ability to act.

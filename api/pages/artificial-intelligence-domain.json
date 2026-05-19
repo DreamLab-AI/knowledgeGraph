@@ -1,0 +1,360 @@
+{
+  "id": "urn:visionflow:page:eacd980e5a0601ed079e499c4db6d3b37d2fc9c717a195391f4a7a80536280e5",
+  "title": "Artificial Intelligence Domain",
+  "slug": "artificial-intelligence-domain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:artificial-intelligence-domain",
+  "domain": "artificial-intelligence",
+  "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "stable",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "aiapplications",
+      "label": "AIApplications"
+    },
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "attention-head",
+      "label": "Attention Head"
+    },
+    {
+      "slug": "attention-mask",
+      "label": "Attention Mask"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "batch-size",
+      "label": "Batch Size"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "Computation And Intelligence Domain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    },
+    {
+      "slug": "data-lake",
+      "label": "Data Lake"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "etl-pipeline",
+      "label": "ETL Pipeline"
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "epoch",
+      "label": "Epoch"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "feedforward-neural-network",
+      "label": "Feedforward Neural Network"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "gpt-2",
+      "label": "GPT 2"
+    },
+    {
+      "slug": "gpt-3",
+      "label": "GPT 3"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "gradient-clipping",
+      "label": "Gradient Clipping"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "model-capacity",
+      "label": "Model Capacity"
+    },
+    {
+      "slug": "model-depth",
+      "label": "Model Depth"
+    },
+    {
+      "slug": "model-ensembling",
+      "label": "Model Ensembling"
+    },
+    {
+      "slug": "model-extraction",
+      "label": "Model Extraction"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "model-parameters",
+      "label": "Model Parameters"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "model-robustness",
+      "label": "Model Robustness"
+    },
+    {
+      "slug": "model-weights",
+      "label": "Model Weights"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "npu",
+      "label": "NPU"
+    },
+    {
+      "slug": "neuromorphic-chip",
+      "label": "Neuromorphic Chip"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "tpu",
+      "label": "TPU"
+    },
+    {
+      "slug": "token-embedding",
+      "label": "Token Embedding"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "weight-decay",
+      "label": "Weight Decay"
+    }
+  ]
+}

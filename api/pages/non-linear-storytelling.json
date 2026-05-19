@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:68cf335075b9062694fc0b9abd1aebc4857673c1ab01a0bbc42c09ec971718b3",
+  "title": "Non Linear Storytelling",
+  "slug": "non-linear-storytelling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:non-linear-storytelling",
+  "domain": "spatial-computing",
+  "definition": "The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:storytelling",
+      "label": "Storytelling"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:multiple-endings",
+        "label": "Multiple Endings"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "multiple-endings",
+      "label": "Multiple Endings"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "storytelling",
+      "label": "Storytelling"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:7aea0f03249714127ccbbe9fdf3c04891c5448d81d4648a6be803b084c39264f",
+  "title": "Learning Platform Categorization",
+  "slug": "learning-platform-categorization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:learning-platform-categorization",
+  "domain": "spatial-computing",
+  "definition": "A learning platform categorization component in the Metaverse domain that enables EtsiDomainApplicationEducation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-classification",
+      "label": "Metaverse Classification"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-classification",
+      "label": "Metaverse Classification"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-application-education",
+      "label": "ETSI Domain Application + Education"
+    }
+  ]
+}

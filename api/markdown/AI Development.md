@@ -1,21 +1,443 @@
-iri:: http://narrativegoldmine.com/metaverse#AIDevelopment
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-development
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-development
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Development
-content-hash:: sha256-12-b8263c951681
-legacy-term-id:: AI-0093
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIDevelopment
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-development
 public:: true
+
+# AI Development
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076",
+  "@type": "Page",
+  "vc:slug": "ai-development",
+  "title": "AI Development",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-resources",
+      "vc:label": "computational resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23053",
+      "vc:label": "ISO/IEC 23053"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25059",
+      "vc:label": "ISO/IEC 25059"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001-2023",
+      "vc:label": "ISO/IEC 42001:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-5338-2023",
+      "vc:label": "ISO/IEC 5338:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-video-diffusion",
+      "vc:label": "Stable Video Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-expertise",
+      "vc:label": "technical expertise"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-deployment",
+      "vc:label": "AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias",
+      "vc:label": "Bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "vc:label": "Bias in Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lead-poisoning-hypothesis",
+      "vc:label": "Lead Poisoning Hypothesis"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microsoft-copilot",
+      "vc:label": "Microsoft Copilot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
+      "vc:label": "NVIDIA Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:product-design",
+      "vc:label": "Product Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:unreal-engine",
+      "vc:label": "Unreal Engine"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b8263c951681"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIDevelopment"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0093"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Development"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-development"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-development"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-development",
+  "@type": "OntologyClass",
+  "label": "AI Development",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance evaluation, and documentation, conducted according to established engineering principles, ethical guidelines, and governance frameworks to produce AI systems suitable for their intended purpose.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:computational-resources",
+      "vc:label": "computational resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-expertise",
+      "vc:label": "technical expertise"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-development:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Model]]",
+      "resolved": "urn:visionflow:linked:ai-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[computational resources]]",
+      "resolved": "urn:visionflow:linked:computational-resources",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23053]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23053",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25059]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25059",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 5338:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-5338-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stable Video Diffusion]]",
+      "resolved": "urn:visionflow:linked:stable-video-diffusion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[technical expertise]]",
+      "resolved": "urn:visionflow:linked:technical-expertise",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Deployment]]",
+      "resolved": "urn:visionflow:owl:class:ai-deployment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Lifecycle]]",
+      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bias]]",
+      "resolved": "urn:visionflow:owl:class:bias",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bias in Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Explainability]]",
+      "resolved": "urn:visionflow:owl:class:explainability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lead Poisoning Hypothesis]]",
+      "resolved": "urn:visionflow:owl:class:lead-poisoning-hypothesis",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microsoft Copilot]]",
+      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NVIDIA Omniverse]]",
+      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Product Design]]",
+      "resolved": "urn:visionflow:owl:class:product-design",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training Data]]",
+      "resolved": "urn:visionflow:owl:class:training-data",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Unreal Engine]]",
+      "resolved": "urn:visionflow:owl:class:unreal-engine",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance evaluation, and documentation, conducted according to established engineering principles, ethical guidelines, and governance frameworks to produce AI systems suitable for their intended purpose.
@@ -45,7 +467,7 @@ public:: true
 		- Despite this lead, China's advancements in AI research publications and patent filings indicate a narrowing gap, emphasizing the intensifying global competition in AI development.  ([US ahead in AI innovation, easily surpassing China in Stanford's new ranking](https://apnews.com/article/c8eb9be0253eb39776c3e38d05f1a329?utm_source=chatgpt.com))
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Training and Simulation:
 		- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
@@ -431,7 +853,7 @@ public:: true
 		- Despite this lead, China's advancements in AI research publications and patent filings indicate a narrowing gap, emphasizing the intensifying global competition in AI development.  ([US ahead in AI innovation, easily surpassing China in Stanford's new ranking](https://apnews.com/article/c8eb9be0253eb39776c3e38d05f1a329?utm_source=chatgpt.com))
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Training and Simulation:
 		- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
@@ -839,7 +1261,7 @@ public:: true
 		- Meeting summarisation: 24%
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Training and Simulation:
 		- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
@@ -852,7 +1274,7 @@ public:: true
 		- **The increasing integration of AI into our daily lives.**
 		- **The ongoing debate about the ethical and societal implications of AI.**
   - [[Bias in Large Language Models]]
-  - [[Large language models]]
+  - [[Large Language Models]]
 
   - ## Title: Bitcoin Mining Supporting Renewable Energy Development
 
@@ -1015,7 +1437,7 @@ public:: true
 		- Despite this lead, China's advancements in AI research publications and patent filings indicate a narrowing gap, emphasizing the intensifying global competition in AI development.  ([US ahead in AI innovation, easily surpassing China in Stanford's new ranking](https://apnews.com/article/c8eb9be0253eb39776c3e38d05f1a329?utm_source=chatgpt.com))
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Art & Media Collaboration:
 		- Artists, animators, and multimedia professionals can collaborate in CVEs to create and develop their projects, such as films, animations, or video games. Natural language AI can help in storyboarding, scriptwriting, or character development, while visual generative ML can generate new visuals or adapt existing assets based on user input and style preferences.
@@ -1346,7 +1768,7 @@ public:: true
   - Developing agents for device-specific and web-based tasks
   - Device agents automate actions like data transfer and report filling
   - Web agents handle internet-based tasks, expanding AI's utility
-  - OpenAI's efforts could challenge [[Microsoft CoPilot]] which is somewhat explicitly designed for this role
+  - OpenAI's efforts could challenge [[Microsoft Copilot]] which is somewhat explicitly designed for this role
   - Collaboration with developers through APIs to create agent experiences
 
   - ## Future Outlook and Potential Developments
@@ -1444,7 +1866,7 @@ public:: true
   - Developing agents for device-specific and web-based tasks
   - Device agents automate actions like data transfer and report filling
   - Web agents handle internet-based tasks, expanding AI's utility
-  - OpenAI's efforts could challenge [[Microsoft CoPilot]] which is somewhat explicitly designed for this role
+  - OpenAI's efforts could challenge [[Microsoft Copilot]] which is somewhat explicitly designed for this role
   - Collaboration with developers through APIs to create agent experiences
 
   - ## Future Outlook and Potential Developments

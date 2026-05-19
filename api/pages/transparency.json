@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:492e9a425d67ce3cad65eae7dde6be8ddb547c38c920e3325e827bf1be3facc8",
+  "title": "Transparency",
+  "slug": "transparency",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transparency",
+  "domain": "artificial-intelligence",
+  "definition": "The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accountability-ai-0068",
+        "label": "Accountability (AI-0068)"
+      },
+      {
+        "id": "urn:visionflow:linked:explainability-ai-0064",
+        "label": "Explainability (AI-0064)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "explainability-ai-0064",
+      "label": "Explainability (AI-0064)"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "stakeholder",
+      "label": "Stakeholder"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust and Governance Domain"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

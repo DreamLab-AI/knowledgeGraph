@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:f27cd328a0995532faad73fec150a42af5137a83bb13dd0d3c30eb76e85c8a23",
+  "title": "Training Method",
+  "slug": "training-method",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:training-method",
+  "domain": "artificial-intelligence",
+  "definition": "Training methods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates. The core approach combines backpropagation (computing gradients via the chain rule) with gradient descent optimization (adjusting weights in the direction that reduces loss), with variants including stochastic gradient descent (SGD), Adam, RMSprop, and AdaGrad offering different convergence properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,400 @@
+{
+  "id": "urn:visionflow:page:4bd95fb82f19144831fc7655fae23d34fc905b4dd04ed486e782b280a5143003",
+  "title": "Image Segmentation",
+  "slug": "image-segmentation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:image-segmentation",
+  "domain": "artificial-intelligence",
+  "definition": "Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to reason about the spatial structure and composition of visual scenes at pixel granularity rather than merely bounding-box or image-level resolution. Unlike object detection\u2014which produces coarse bounding rectangles\u2014and image classification\u2014which assigns a single label to an entire image\u2014segmentation delivers dense per-pixel predictions that precisely delineate object boundaries, capture irregular shapes, and distinguish overlapping or touching objects of the same class, making it indispensable for applications requiring spatial understanding: surgical robots that must avoid cutting blood vessels, autonomous vehicles that must distinguish drivable road surface from pedestrian crossings, and augmented reality pipelines that must cleanly separate foreground subjects from backgrounds in real time.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:dense-prediction",
+      "label": "Dense Prediction"
+    },
+    {
+      "id": "urn:visionflow:linked:structured-prediction",
+      "label": "Structured Prediction"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:scene-understanding",
+      "label": "Scene Understanding"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:atrous-convolution",
+        "label": "Atrous Convolution"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "id": "urn:visionflow:linked:mask-head",
+        "label": "Mask Head"
+      },
+      {
+        "id": "urn:visionflow:linked:pixel-classifier",
+        "label": "Pixel Classifier"
+      },
+      {
+        "id": "urn:visionflow:linked:skip-connections",
+        "label": "Skip Connections"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:visionflow:linked:evaluation-metrics",
+        "label": "Evaluation Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:labelled-training-data",
+        "label": "Labelled Training Data"
+      },
+      {
+        "id": "urn:visionflow:linked:loss-functions",
+        "label": "Loss Functions"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:visionflow:linked:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:visionflow:linked:satellite-imagery-analysis",
+        "label": "Satellite Imagery Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:video-object-segmentation",
+        "label": "Video Object Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:interactive-segmentation",
+        "label": "Interactive Segmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-shot-segmentation",
+        "label": "Zero-Shot Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "atrous-convolution",
+      "label": "Atrous Convolution"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "average-precision",
+      "label": "Average Precision"
+    },
+    {
+      "slug": "background-removal",
+      "label": "Background Removal"
+    },
+    {
+      "slug": "cancer-detection",
+      "label": "Cancer Detection"
+    },
+    {
+      "slug": "cityscapes-dataset",
+      "label": "Cityscapes Dataset"
+    },
+    {
+      "slug": "coco-dataset",
+      "label": "COCO Dataset"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross Entropy Loss"
+    },
+    {
+      "slug": "dense-prediction",
+      "label": "Dense Prediction"
+    },
+    {
+      "slug": "dice-coefficient",
+      "label": "Dice Coefficient"
+    },
+    {
+      "slug": "evaluation-metrics",
+      "label": "Evaluation Metrics"
+    },
+    {
+      "slug": "feature-pyramid-network",
+      "label": "Feature Pyramid Network"
+    },
+    {
+      "slug": "fully-convolutional-networks",
+      "label": "Fully Convolutional Networks"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "image-net",
+      "label": "ImageNet"
+    },
+    {
+      "slug": "interactive-segmentation",
+      "label": "Interactive Segmentation"
+    },
+    {
+      "slug": "keypoint-detection",
+      "label": "Keypoint Detection"
+    },
+    {
+      "slug": "labelled-training-data",
+      "label": "Labelled Training Data"
+    },
+    {
+      "slug": "loss-functions",
+      "label": "Loss Functions"
+    },
+    {
+      "slug": "mask-head",
+      "label": "Mask Head"
+    },
+    {
+      "slug": "mean-intersection-over-union",
+      "label": "Mean Intersection over Union"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "multi-modal-learning",
+      "label": "Multi-Modal Learning"
+    },
+    {
+      "slug": "optical-flow",
+      "label": "Optical Flow"
+    },
+    {
+      "slug": "panoptic-quality",
+      "label": "Panoptic Quality"
+    },
+    {
+      "slug": "pascal-voc",
+      "label": "PASCAL VOC"
+    },
+    {
+      "slug": "pixel-classifier",
+      "label": "Pixel Classifier"
+    },
+    {
+      "slug": "remote-sensing",
+      "label": "Remote Sensing"
+    },
+    {
+      "slug": "satellite-imagery-analysis",
+      "label": "Satellite Imagery Analysis"
+    },
+    {
+      "slug": "skip-connections",
+      "label": "Skip Connections"
+    },
+    {
+      "slug": "structured-prediction",
+      "label": "Structured Prediction"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "video-object-segmentation",
+      "label": "Video Object Segmentation"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "zero-shot-segmentation",
+      "label": "Zero-Shot Segmentation"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "panoptic-segmentation",
+      "label": "Panoptic Segmentation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

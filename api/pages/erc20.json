@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:a1a3628aa6ab646d05a4dccfd79ebfa48b50fa2590f074fdb4d4b843c38ed953",
+  "title": "ERC20",
+  "slug": "erc20",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc20",
+  "domain": "blockchain",
+  "definition": "The Ethereum fungible token standard defining a common interface for token transfers and balances.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "balance-tracking",
+      "label": "Balance Tracking"
+    },
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "token-transfer",
+      "label": "Token Transfer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": []
+}

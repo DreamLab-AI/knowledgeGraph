@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:781f124eef7ca67c62af96e3c250f532e58f4cfc1a4c4368e313a8ec49f79969",
+  "title": "Web Bookmarks",
+  "slug": "web-bookmarks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:web-bookmarks",
+  "domain": "infrastructure",
+  "definition": "Web Bookmarks is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

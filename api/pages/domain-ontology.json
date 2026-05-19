@@ -1,0 +1,596 @@
+{
+  "id": "urn:visionflow:page:ace2030e133f2e6874cd2e2291c62921ed9b7b32e032bdec4db823b90de5134d",
+  "title": "Domain Ontology",
+  "slug": "domain-ontology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:domain-ontology",
+  "domain": "infrastructure",
+  "definition": "A **Domain Ontology** is a formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, manufacturing robotics, gene products, scholarly publications, e-commerce products), following Tom Gruber's foundational 1993 definition \"a specification of a conceptualization\" as extended by Studer, Benjamins and Fensel (1998) to \"a formal, explicit specification of a shared conceptualization\", encoded in description-logic-grounded representation languages (W3C OWL 2 with EL/QL/RL/DL profiles, RDF/RDFS, SKOS for concept hierarchies, Common Logic ISO/IEC 24707, KIF Knowledge Interchange Format, Frame Logic F-Logic) and materialising four constituent layers: a **terminological component (TBox)** declaring named classes (rdfs:Class, owl:Class), object properties (owl:ObjectProperty) and data properties (owl:DataProperty) along with axiomatic relationships SubClassOf, EquivalentClasses, DisjointClasses, ObjectSomeValuesFrom, ObjectAllValuesFrom, cardinality restrictions and property characteristics (Transitive, Symmetric, Functional, InverseFunctional, Asymmetric, Reflexive, Irr",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:conceptual-model",
+      "label": "Conceptual Model"
+    },
+    {
+      "id": "urn:visionflow:linked:formal-specification",
+      "label": "Formal Specification"
+    },
+    {
+      "id": "urn:visionflow:linked:knowledge-representation-artifact",
+      "label": "Knowledge Representation Artifact"
+    },
+    {
+      "id": "urn:visionflow:linked:ontology",
+      "label": "Ontology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:annotation-property",
+        "label": "Annotation Property"
+      },
+      {
+        "id": "urn:visionflow:linked:axiom-set",
+        "label": "Axiom Set"
+      },
+      {
+        "id": "urn:visionflow:linked:class-hierarchy",
+        "label": "Class Hierarchy"
+      },
+      {
+        "id": "urn:visionflow:linked:data-property",
+        "label": "Data Property"
+      },
+      {
+        "id": "urn:visionflow:linked:named-individual",
+        "label": "Named Individual"
+      },
+      {
+        "id": "urn:visionflow:linked:namespace-iri",
+        "label": "Namespace IRI"
+      },
+      {
+        "id": "urn:visionflow:linked:object-property",
+        "label": "Object Property"
+      },
+      {
+        "id": "urn:visionflow:linked:ontology-design-pattern",
+        "label": "Ontology Design Pattern"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:conceptualisation",
+        "label": "Conceptualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-expert",
+        "label": "Domain Expert"
+      },
+      {
+        "id": "urn:visionflow:linked:identifier-scheme",
+        "label": "Identifier Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-engineer",
+        "label": "Knowledge Engineer"
+      },
+      {
+        "id": "urn:visionflow:linked:logical-formalism",
+        "label": "Logical Formalism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:fair-data-principles",
+        "label": "FAIR Data Principles"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-reuse",
+        "label": "Knowledge Reuse"
+      },
+      {
+        "id": "urn:visionflow:linked:linked-data-publication",
+        "label": "Linked Data Publication"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:closed-world-negation-as-failure",
+        "label": "Closed-World Negation as Failure"
+      },
+      {
+        "id": "urn:visionflow:linked:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:visionflow:linked:open-world-assumption",
+        "label": "Open-World Assumption"
+      },
+      {
+        "id": "urn:visionflow:linked:owl-2-semantics",
+        "label": "OWL 2 Semantics"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-schema",
+        "label": "RDF Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:skos-concept-scheme",
+        "label": "SKOS Concept Scheme"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "annotation-property",
+      "label": "Annotation Property"
+    },
+    {
+      "slug": "application-ontology",
+      "label": "Application Ontology"
+    },
+    {
+      "slug": "ashburner-et-al-2000-gene-ontology",
+      "label": "Ashburner et al 2000 Gene Ontology"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "axiom-set",
+      "label": "Axiom Set"
+    },
+    {
+      "slug": "baader-calvanese-mc-guinness-nardi-patel-schneider-2010-description-logic-handbook",
+      "label": "Baader Calvanese McGuinness Nardi Patel-Schneider 2010 Description Logic Handbook"
+    },
+    {
+      "slug": "bennett-allemang-et-al-2018-fibo",
+      "label": "Bennett Allemang et al 2018 FIBO"
+    },
+    {
+      "slug": "berners-lee-2006-linked-data-design-issues",
+      "label": "Berners-Lee 2006 Linked Data Design Issues"
+    },
+    {
+      "slug": "bizer-heath-berners-lee-2009-linked-data-story-so-far",
+      "label": "Bizer Heath Berners-Lee 2009 Linked Data Story So Far"
+    },
+    {
+      "slug": "caufield-et-al-2024-onto-gpt-spires",
+      "label": "Caufield et al 2024 OntoGPT SPIRES"
+    },
+    {
+      "slug": "class-hierarchy",
+      "label": "Class Hierarchy"
+    },
+    {
+      "slug": "closed-world-negation-as-failure",
+      "label": "Closed-World Negation as Failure"
+    },
+    {
+      "slug": "conceptual-model",
+      "label": "Conceptual Model"
+    },
+    {
+      "slug": "conceptualisation",
+      "label": "Conceptualisation"
+    },
+    {
+      "slug": "data-property",
+      "label": "Data Property"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "document-schema",
+      "label": "Document Schema"
+    },
+    {
+      "slug": "doerr-2003-cidoc-crm",
+      "label": "Doerr 2003 CIDOC CRM"
+    },
+    {
+      "slug": "domain-expert",
+      "label": "Domain Expert"
+    },
+    {
+      "slug": "edge-et-al-2024-graph-rag-microsoft-research",
+      "label": "Edge et al 2024 Graph RAG Microsoft Research"
+    },
+    {
+      "slug": "fair-data-principles",
+      "label": "FAIR Data Principles"
+    },
+    {
+      "slug": "fernandez-lopez-gomez-perez-juristo-1997-methontology",
+      "label": "Fernandez-Lopez Gomez-Perez Juristo 1997 METHONTOLOGY"
+    },
+    {
+      "slug": "first-order-logic",
+      "label": "First-Order Logic"
+    },
+    {
+      "slug": "folksonomy",
+      "label": "Folksonomy"
+    },
+    {
+      "slug": "formal-specification",
+      "label": "Formal Specification"
+    },
+    {
+      "slug": "gangemi-presutti-2009-ontology-design-patterns",
+      "label": "Gangemi Presutti 2009 Ontology Design Patterns"
+    },
+    {
+      "slug": "glimm-horrocks-motik-stoilos-wang-2014-hermi-t",
+      "label": "Glimm Horrocks Motik Stoilos Wang 2014 HermiT"
+    },
+    {
+      "slug": "gruber-1993-translation-approach-to-portable-ontology-specifications",
+      "label": "Gruber 1993 Translation Approach to Portable Ontology Specifications"
+    },
+    {
+      "slug": "guarino-1998-formal-ontology-and-information-systems",
+      "label": "Guarino 1998 Formal Ontology and Information Systems"
+    },
+    {
+      "slug": "hepp-2008-good-relations",
+      "label": "Hepp 2008 GoodRelations"
+    },
+    {
+      "slug": "hogan-et-al-2021-knowledge-graphs-acm-computing-surveys",
+      "label": "Hogan et al 2021 Knowledge Graphs ACM Computing Surveys"
+    },
+    {
+      "slug": "horrocks-kutz-sattler-2006-sroiq",
+      "label": "Horrocks Kutz Sattler 2006 SROIQ"
+    },
+    {
+      "slug": "identifier-scheme",
+      "label": "Identifier Scheme"
+    },
+    {
+      "slug": "information-science-domain",
+      "label": "InformationScienceDomain"
+    },
+    {
+      "slug": "iso-21127-2014-cidoc-crm",
+      "label": "ISO 21127 2014 CIDOC CRM"
+    },
+    {
+      "slug": "iso-21127-cidoc-crm",
+      "label": "ISO 21127 CIDOC CRM"
+    },
+    {
+      "slug": "iso-iec-21838-2-2020-bfo",
+      "label": "ISO/IEC 21838-2 2020 BFO"
+    },
+    {
+      "slug": "iso-iec-21838-2-bfo",
+      "label": "ISO/IEC 21838-2 BFO"
+    },
+    {
+      "slug": "iso-iec-24707-2018-common-logic",
+      "label": "ISO/IEC 24707 2018 Common Logic"
+    },
+    {
+      "slug": "iso-iec-24707-common-logic",
+      "label": "ISO/IEC 24707 Common Logic"
+    },
+    {
+      "slug": "kazakov-kr-tzsch-siman-k-2014-elk-reasoner",
+      "label": "Kazakov Kr\u00f6tzsch Siman\u010d\u00edk 2014 ELK Reasoner"
+    },
+    {
+      "slug": "knowledge-engineer",
+      "label": "Knowledge Engineer"
+    },
+    {
+      "slug": "knowledge-layer",
+      "label": "KnowledgeLayer"
+    },
+    {
+      "slug": "knowledge-representation-artifact",
+      "label": "Knowledge Representation Artifact"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "KnowledgeRepresentationDomain"
+    },
+    {
+      "slug": "knowledge-reuse",
+      "label": "Knowledge Reuse"
+    },
+    {
+      "slug": "linked-data-publication",
+      "label": "Linked Data Publication"
+    },
+    {
+      "slug": "linked-open-data",
+      "label": "Linked Open Data"
+    },
+    {
+      "slug": "logical-formalism",
+      "label": "Logical Formalism"
+    },
+    {
+      "slug": "model-theory",
+      "label": "Model Theory"
+    },
+    {
+      "slug": "named-individual",
+      "label": "Named Individual"
+    },
+    {
+      "slug": "namespace-iri",
+      "label": "Namespace IRI"
+    },
+    {
+      "slug": "natural-language-knowledge-base",
+      "label": "Natural Language Knowledge Base"
+    },
+    {
+      "slug": "object-property",
+      "label": "Object Property"
+    },
+    {
+      "slug": "obo-foundry",
+      "label": "OBO Foundry"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "ontology-alignment",
+      "label": "Ontology Alignment"
+    },
+    {
+      "slug": "ontology-design-pattern",
+      "label": "Ontology Design Pattern"
+    },
+    {
+      "slug": "ontology-design-patterns",
+      "label": "Ontology Design Patterns"
+    },
+    {
+      "slug": "open-world-assumption",
+      "label": "Open-World Assumption"
+    },
+    {
+      "slug": "owl-2",
+      "label": "OWL 2"
+    },
+    {
+      "slug": "owl-2-semantics",
+      "label": "OWL 2 Semantics"
+    },
+    {
+      "slug": "property-graph",
+      "label": "Property Graph"
+    },
+    {
+      "slug": "prot-g",
+      "label": "Prot\u00e9g\u00e9"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "rdf-rdfs",
+      "label": "RDF/RDFS"
+    },
+    {
+      "slug": "rdf-schema",
+      "label": "RDF Schema"
+    },
+    {
+      "slug": "relational-schema",
+      "label": "Relational Schema"
+    },
+    {
+      "slug": "schema-layer",
+      "label": "SchemaLayer"
+    },
+    {
+      "slug": "schema-org",
+      "label": "Schema.org"
+    },
+    {
+      "slug": "scientific-data-sharing",
+      "label": "Scientific Data Sharing"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "semantic-interoperability-layer",
+      "label": "SemanticInteroperabilityLayer"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "SemanticWebDomain"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "sh-ex",
+      "label": "ShEx"
+    },
+    {
+      "slug": "shacl",
+      "label": "SHACL"
+    },
+    {
+      "slug": "skos-concept-scheme",
+      "label": "SKOS Concept Scheme"
+    },
+    {
+      "slug": "smith-ceusters-2010-ontological-realism",
+      "label": "Smith Ceusters 2010 Ontological Realism"
+    },
+    {
+      "slug": "sowa-2000-knowledge-representation",
+      "label": "Sowa 2000 Knowledge Representation"
+    },
+    {
+      "slug": "spackman-campbell-cote-1997-snomed-rt",
+      "label": "Spackman Campbell Cote 1997 SNOMED RT"
+    },
+    {
+      "slug": "sparql",
+      "label": "SPARQL"
+    },
+    {
+      "slug": "studer-benjamins-fensel-1998-knowledge-engineering-principles-and-methods",
+      "label": "Studer Benjamins Fensel 1998 Knowledge Engineering Principles and Methods"
+    },
+    {
+      "slug": "suarez-figueroa-gomez-perez-motta-gangemi-2012-ne-on",
+      "label": "Suarez-Figueroa Gomez-Perez Motta Gangemi 2012 NeOn"
+    },
+    {
+      "slug": "tableaux-reasoning",
+      "label": "Tableaux Reasoning"
+    },
+    {
+      "slug": "taxonomy",
+      "label": "Taxonomy"
+    },
+    {
+      "slug": "thesaurus",
+      "label": "Thesaurus"
+    },
+    {
+      "slug": "upper-ontology",
+      "label": "Upper Ontology"
+    },
+    {
+      "slug": "w3-c-owl-2",
+      "label": "W3C OWL 2"
+    },
+    {
+      "slug": "w3-c-owl-2-recommendation-2012",
+      "label": "W3C OWL 2 Recommendation 2012"
+    },
+    {
+      "slug": "w3-c-rdf-1-1",
+      "label": "W3C RDF 1.1"
+    },
+    {
+      "slug": "w3-c-rdf-1-1-recommendation-2014",
+      "label": "W3C RDF 1.1 Recommendation 2014"
+    },
+    {
+      "slug": "w3-c-skos",
+      "label": "W3C SKOS"
+    },
+    {
+      "slug": "w3-c-skos-recommendation-2009",
+      "label": "W3C SKOS Recommendation 2009"
+    },
+    {
+      "slug": "w3-c-sparql-1-1",
+      "label": "W3C SPARQL 1.1"
+    },
+    {
+      "slug": "w3-c-sparql-1-1-recommendation-2013",
+      "label": "W3C SPARQL 1.1 Recommendation 2013"
+    },
+    {
+      "slug": "wikidata",
+      "label": "Wikidata"
+    },
+    {
+      "slug": "wilkinson-et-al-2016-fair-guiding-principles",
+      "label": "Wilkinson et al 2016 FAIR Guiding Principles"
+    },
+    {
+      "slug": "wisniewski-potoniec-lawrynowicz-keet-2019-lean-ontology-engineering",
+      "label": "Wisniewski Potoniec Lawrynowicz Keet 2019 Lean Ontology Engineering"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    }
+  ]
+}

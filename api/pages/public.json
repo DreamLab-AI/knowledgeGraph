@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:05ab35616b3e8425900a53ac6a6e61b464a5df1109fdd64ffc0041aae8058196",
+  "title": "Public",
+  "slug": "public",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:public",
+  "domain": "infrastructure",
+  "definition": "Public is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

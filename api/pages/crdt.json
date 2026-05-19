@@ -1,0 +1,580 @@
+{
+  "id": "urn:visionflow:page:1eb6d2e96bdd2a01cd2f505b471e591f5289735be3a5a732d5c245f1bb3904a3",
+  "title": "CRDT",
+  "slug": "crdt",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:crdt",
+  "domain": "distributed-collaboration",
+  "definition": "Conflict-free Replicated Data Types (CRDTs) are a family of data structures with mathematically proven convergence guarantees that allow multiple distributed replicas to be independently modified without requiring coordination, locks, or a consensus protocol, and which automatically merge to a single consistent state regardless of the order in which updates arrive or the duration of network partitions, realising Strong Eventual Consistency (SEC) through algebraic properties\u2014idempotency, commutativity, and associativity of the merge operation\u2014that guarantee any number of replicas receiving the same set of updates will converge to identical state. Formalised by Marc Shapiro, Nuno Pregui\u00e7a, Carlos Baquero, and Marek Zawirski in their landmark 2011 ACM Symposium on Cloud Computing (SoCC) paper \"Conflict-free Replicated Data Types,\" the CRDT framework resolves the fundamental tension expressed by the [[CAP Theorem]]\u2014between consistency and availability\u2014by relaxing the consistency model from strong consistency to eventual consistency while providing the formal guarantee that convergence is mathematically certain rather than operationally best-effort, distinguishing CRDTs from ad hoc even",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:commutative-data-structure",
+      "label": "Commutative Data Structure"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-data-synchronisation",
+      "label": "Distributed Data Synchronisation"
+    },
+    {
+      "id": "urn:visionflow:linked:eventually-consistent-data-structure",
+      "label": "Eventually Consistent Data Structure"
+    },
+    {
+      "id": "urn:visionflow:linked:mergeable-data-type",
+      "label": "Mergeable Data Type"
+    },
+    {
+      "id": "urn:visionflow:linked:monotone-data-structure",
+      "label": "Monotone Data Structure"
+    },
+    {
+      "id": "urn:visionflow:linked:replicated-data-structure",
+      "label": "Replicated Data Structure"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:causal-history-graph",
+        "label": "Causal History Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:causal-ordering",
+        "label": "Causal Ordering"
+      },
+      {
+        "id": "urn:visionflow:linked:delta-state",
+        "label": "Delta State"
+      },
+      {
+        "id": "urn:visionflow:linked:g-counter",
+        "label": "G-Counter"
+      },
+      {
+        "id": "urn:visionflow:linked:g-set",
+        "label": "G-Set"
+      },
+      {
+        "id": "urn:visionflow:linked:lww-element-set",
+        "label": "LWW-Element-Set"
+      },
+      {
+        "id": "urn:visionflow:linked:or-set",
+        "label": "OR-Set"
+      },
+      {
+        "id": "urn:visionflow:linked:replicated-growable-array",
+        "label": "Replicated Growable Array"
+      },
+      {
+        "id": "urn:visionflow:linked:semilattice-merge-function",
+        "label": "Semilattice Merge Function"
+      },
+      {
+        "id": "urn:visionflow:linked:tombstone-record",
+        "label": "Tombstone Record"
+      },
+      {
+        "id": "urn:visionflow:linked:unique-identifier",
+        "label": "Unique Identifier"
+      },
+      {
+        "id": "urn:visionflow:linked:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "id": "urn:visionflow:linked:version-vector",
+        "label": "Version Vector"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:causal-broadcast-protocol",
+        "label": "Causal Broadcast Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:causal-delivery",
+        "label": "Causal Delivery"
+      },
+      {
+        "id": "urn:visionflow:linked:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:idempotent-merge",
+        "label": "Idempotent Merge"
+      },
+      {
+        "id": "urn:visionflow:linked:monotone-operations",
+        "label": "Monotone Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:semilattice-ordering",
+        "label": "Semilattice Ordering"
+      },
+      {
+        "id": "urn:visionflow:linked:unique-replica-identifiers",
+        "label": "Unique Replica Identifiers"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:coordination-free-computing",
+        "label": "Coordination-free Computing"
+      },
+      {
+        "id": "urn:visionflow:linked:local-first-software",
+        "label": "Local-first Software"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-datacenter-replication",
+        "label": "Multi-datacenter Replication"
+      },
+      {
+        "id": "urn:visionflow:linked:offline-first-collaboration",
+        "label": "Offline-first Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:optimistic-replication",
+        "label": "Optimistic Replication"
+      },
+      {
+        "id": "urn:visionflow:linked:partition-tolerant-databases",
+        "label": "Partition-tolerant Databases"
+      },
+      {
+        "id": "urn:visionflow:linked:peer-to-peer-synchronisation",
+        "label": "Peer-to-peer Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-collaborative-editing",
+        "label": "Real-time Collaborative Editing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:associativity",
+        "label": "Associativity"
+      },
+      {
+        "id": "urn:visionflow:linked:causal-broadcast",
+        "label": "Causal Broadcast"
+      },
+      {
+        "id": "urn:visionflow:linked:commutativity",
+        "label": "Commutativity"
+      },
+      {
+        "id": "urn:visionflow:linked:delta-synchronisation",
+        "label": "Delta Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:visionflow:linked:join-semilattice",
+        "label": "Join Semilattice"
+      },
+      {
+        "id": "urn:visionflow:linked:state-lattice-merge",
+        "label": "State Lattice Merge"
+      },
+      {
+        "id": "urn:visionflow:linked:strong-eventual-consistency",
+        "label": "Strong Eventual Consistency"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "associativity",
+      "label": "Associativity"
+    },
+    {
+      "slug": "automerge",
+      "label": "Automerge"
+    },
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "causal-broadcast",
+      "label": "Causal Broadcast"
+    },
+    {
+      "slug": "causal-broadcast-protocol",
+      "label": "Causal Broadcast Protocol"
+    },
+    {
+      "slug": "causal-consistency",
+      "label": "Causal Consistency"
+    },
+    {
+      "slug": "causal-delivery",
+      "label": "Causal Delivery"
+    },
+    {
+      "slug": "causal-history",
+      "label": "Causal History"
+    },
+    {
+      "slug": "causal-history-graph",
+      "label": "Causal History Graph"
+    },
+    {
+      "slug": "causal-ordering",
+      "label": "Causal Ordering"
+    },
+    {
+      "slug": "collaborative-ides",
+      "label": "Collaborative IDEs"
+    },
+    {
+      "slug": "commutative-data-structure",
+      "label": "Commutative Data Structure"
+    },
+    {
+      "slug": "commutativity",
+      "label": "Commutativity"
+    },
+    {
+      "slug": "coordination-free-computing",
+      "label": "Coordination-free Computing"
+    },
+    {
+      "slug": "cqrs",
+      "label": "CQRS"
+    },
+    {
+      "slug": "databases-domain",
+      "label": "DatabasesDomain"
+    },
+    {
+      "slug": "delta-state",
+      "label": "Delta State"
+    },
+    {
+      "slug": "delta-synchronisation",
+      "label": "Delta Synchronisation"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "DistributedCollaborationDomain"
+    },
+    {
+      "slug": "distributed-data-synchronisation",
+      "label": "Distributed Data Synchronisation"
+    },
+    {
+      "slug": "distributed-databases",
+      "label": "Distributed Databases"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "event-sourcing",
+      "label": "Event Sourcing"
+    },
+    {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
+    },
+    {
+      "slug": "eventually-consistent-data-structure",
+      "label": "Eventually Consistent Data Structure"
+    },
+    {
+      "slug": "g-counter",
+      "label": "G-Counter"
+    },
+    {
+      "slug": "g-set",
+      "label": "G-Set"
+    },
+    {
+      "slug": "hybrid-logical-clocks",
+      "label": "Hybrid Logical Clocks"
+    },
+    {
+      "slug": "idempotency",
+      "label": "Idempotency"
+    },
+    {
+      "slug": "idempotent-merge",
+      "label": "Idempotent Merge"
+    },
+    {
+      "slug": "inria-technical-report-rr-7506",
+      "label": "INRIA Technical Report RR-7506"
+    },
+    {
+      "slug": "io-t-synchronisation",
+      "label": "IoT Synchronisation"
+    },
+    {
+      "slug": "join-semilattice",
+      "label": "Join Semilattice"
+    },
+    {
+      "slug": "lamport-timestamps",
+      "label": "Lamport Timestamps"
+    },
+    {
+      "slug": "lattice-theory",
+      "label": "Lattice Theory"
+    },
+    {
+      "slug": "local-first-software",
+      "label": "Local-first Software"
+    },
+    {
+      "slug": "logical-clocks",
+      "label": "Logical Clocks"
+    },
+    {
+      "slug": "lww-element-set",
+      "label": "LWW-Element-Set"
+    },
+    {
+      "slug": "mergeable-data-type",
+      "label": "Mergeable Data Type"
+    },
+    {
+      "slug": "merkle-dag",
+      "label": "Merkle DAG"
+    },
+    {
+      "slug": "mobile-sync",
+      "label": "Mobile Sync"
+    },
+    {
+      "slug": "monotone-data-structure",
+      "label": "Monotone Data Structure"
+    },
+    {
+      "slug": "monotone-operations",
+      "label": "Monotone Operations"
+    },
+    {
+      "slug": "multi-datacenter-replication",
+      "label": "Multi-datacenter Replication"
+    },
+    {
+      "slug": "multiplayer-collaboration-tools",
+      "label": "Multiplayer Collaboration Tools"
+    },
+    {
+      "slug": "offline-first-architecture",
+      "label": "Offline-first Architecture"
+    },
+    {
+      "slug": "offline-first-collaboration",
+      "label": "Offline-first Collaboration"
+    },
+    {
+      "slug": "operational-transformation",
+      "label": "Operational Transformation"
+    },
+    {
+      "slug": "optimistic-locking",
+      "label": "Optimistic Locking"
+    },
+    {
+      "slug": "optimistic-replication",
+      "label": "Optimistic Replication"
+    },
+    {
+      "slug": "or-set",
+      "label": "OR-Set"
+    },
+    {
+      "slug": "order-theory",
+      "label": "Order Theory"
+    },
+    {
+      "slug": "partition-tolerant-databases",
+      "label": "Partition-tolerant Databases"
+    },
+    {
+      "slug": "paxos-consensus",
+      "label": "Paxos Consensus"
+    },
+    {
+      "slug": "peer-to-peer-synchronisation",
+      "label": "Peer-to-peer Synchronisation"
+    },
+    {
+      "slug": "pessimistic-locking",
+      "label": "Pessimistic Locking"
+    },
+    {
+      "slug": "raft-consensus",
+      "label": "Raft Consensus"
+    },
+    {
+      "slug": "real-time-collaborative-editing",
+      "label": "Real-time Collaborative Editing"
+    },
+    {
+      "slug": "replicated-data-structure",
+      "label": "Replicated Data Structure"
+    },
+    {
+      "slug": "replicated-growable-array",
+      "label": "Replicated Growable Array"
+    },
+    {
+      "slug": "riak",
+      "label": "Riak"
+    },
+    {
+      "slug": "semilattice-merge-function",
+      "label": "Semilattice Merge Function"
+    },
+    {
+      "slug": "semilattice-ordering",
+      "label": "Semilattice Ordering"
+    },
+    {
+      "slug": "shapiro-et-al-2011-so-cc",
+      "label": "Shapiro et al. 2011 SoCC"
+    },
+    {
+      "slug": "state-lattice-merge",
+      "label": "State Lattice Merge"
+    },
+    {
+      "slug": "strong-consistency",
+      "label": "Strong Consistency"
+    },
+    {
+      "slug": "strong-eventual-consistency",
+      "label": "Strong Eventual Consistency"
+    },
+    {
+      "slug": "sync-free-eu-project-fp7-ict-2011-7-609551",
+      "label": "SyncFree EU Project FP7-ICT-2011-7 609551"
+    },
+    {
+      "slug": "synchronisation-layer",
+      "label": "SynchronisationLayer"
+    },
+    {
+      "slug": "tombstone-record",
+      "label": "Tombstone Record"
+    },
+    {
+      "slug": "two-phase-commit",
+      "label": "Two-phase Commit"
+    },
+    {
+      "slug": "unique-identifier",
+      "label": "Unique Identifier"
+    },
+    {
+      "slug": "unique-identifiers-per-replica",
+      "label": "Unique Identifiers per Replica"
+    },
+    {
+      "slug": "unique-replica-identifiers",
+      "label": "Unique Replica Identifiers"
+    },
+    {
+      "slug": "vector-clocks",
+      "label": "Vector Clocks"
+    },
+    {
+      "slug": "version-vector",
+      "label": "Version Vector"
+    },
+    {
+      "slug": "version-vectors",
+      "label": "Version Vectors"
+    },
+    {
+      "slug": "yjs",
+      "label": "Yjs"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

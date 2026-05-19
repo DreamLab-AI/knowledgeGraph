@@ -1,24 +1,246 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ResilienceMetric
-uri:: urn:visionclaw:concept:spatial-computing:resilience-metric
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:resilience-metric
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Resilience Metric
-content-hash:: sha256-12-f5a0fd45e468
-legacy-term-id:: MV-3047
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ResilienceMetric
+legacy_uri:: urn:visionclaw:concept:spatial-computing:resilience-metric
 public:: true
+
+# Resilience Metric
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691",
+  "@type": "Page",
+  "vc:slug": "resilience-metric",
+  "title": "Resilience Metric",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-networks",
+      "vc:label": "BlockchainNetworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-response",
+      "vc:label": "IncidentResponse"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-platforms",
+      "vc:label": "MetaversePlatforms"
+    },
+    {
+      "@id": "urn:visionflow:linked:recovery-time-objective",
+      "vc:label": "RecoveryTimeObjective"
+    },
+    {
+      "@id": "urn:visionflow:linked:slaverification",
+      "vc:label": "SLAVerification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
+      "vc:label": "CloudInfrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f5a0fd45e468"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ResilienceMetric"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3047"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Resilience Metric"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:resilience-metric"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:resilience-metric"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:resilience-metric",
+  "@type": "OntologyClass",
+  "label": "Resilience Metric",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-systems",
+      "vc:label": "Distributed Systems"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that determine operational continuity. These metrics enable proactive [[IncidentResponse|incident management]] and [[SLAVerification|SLA compliance verification]] across [[CloudInfrastructure|cloud platforms]], [[MetaversePlatforms|metaverse services]], and [[BlockchainNetworks|blockchain networks]]. Effective resilience measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality during adverse conditions.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:resilience-metric:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BlockchainNetworks|blockchain networks]]",
+      "resolved": "urn:visionflow:linked:blockchain-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IncidentResponse|incident management]]",
+      "resolved": "urn:visionflow:linked:incident-response",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaversePlatforms|metaverse services]]",
+      "resolved": "urn:visionflow:linked:metaverse-platforms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RecoveryTimeObjective|recovery time objectives]]",
+      "resolved": "urn:visionflow:linked:recovery-time-objective",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SLAVerification|SLA compliance verification]]",
+      "resolved": "urn:visionflow:linked:slaverification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CloudInfrastructure|cloud platforms]]",
+      "resolved": "urn:visionflow:owl:class:cloud-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that determine operational continuity. These metrics enable proactive [[IncidentResponse|incident management]] and [[SLAVerification|SLA compliance verification]] across [[CloudInfrastructure|cloud platforms]], [[MetaversePlatforms|metaverse services]], and [[BlockchainNetworks|blockchain networks]]. Effective resilience measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality during adverse conditions.

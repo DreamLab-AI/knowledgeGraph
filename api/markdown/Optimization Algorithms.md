@@ -1,21 +1,207 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#OptimizationAlgorithms
-uri:: urn:visionclaw:concept:artificial-intelligence:optimization-algorithms
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:optimization-algorithms
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Optimization Algorithms
-content-hash:: sha256-12-8dec2d8c858c
-legacy-term-id:: AI-9023
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#OptimizationAlgorithms
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:optimization-algorithms
 public:: true
+
+# Optimization Algorithms
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:139abe981527b5b52195ffe678064acce416dbb7ca2c36df7a58d9e0763a878f",
+  "@type": "Page",
+  "vc:slug": "optimization-algorithms",
+  "title": "Optimization Algorithms",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:convex-optimization",
+      "vc:label": "Convex Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-descent",
+      "vc:label": "Gradient Descent"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8dec2d8c858c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#OptimizationAlgorithms"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-9023"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Optimization Algorithms"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:optimization-algorithms"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:optimization-algorithms"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:139abe981527b5b52195ffe678064acce416dbb7ca2c36df7a58d9e0763a878f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:optimization-algorithms",
+  "@type": "OntologyClass",
+  "label": "Optimization Algorithms",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "['owl:Thing']"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:139abe981527b5b52195ffe678064acce416dbb7ca2c36df7a58d9e0763a878f"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:139abe981527b5b52195ffe678064acce416dbb7ca2c36df7a58d9e0763a878f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions. Advanced techniques include momentum-based optimization, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free optimization (evolutionary strategies, Bayesian optimization). Optimization algorithms address challenges of non-convexity, saddle points, vanishing/exploding gradients, and computational efficiency in high-dimensional parameter spaces.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:optimization-algorithms:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:139abe981527b5b52195ffe678064acce416dbb7ca2c36df7a58d9e0763a878f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Convex Optimization]]",
+      "resolved": "urn:visionflow:linked:convex-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hyperparameter Tuning]]",
+      "resolved": "urn:visionflow:linked:hyperparameter-tuning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Backpropagation]]",
+      "resolved": "urn:visionflow:owl:class:backpropagation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gradient Descent]]",
+      "resolved": "urn:visionflow:owl:class:gradient-descent",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:139abe981527b5b52195ffe678064acce416dbb7ca2c36df7a58d9e0763a878f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions. Advanced techniques include momentum-based optimization, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free optimization (evolutionary strategies, Bayesian optimization). Optimization algorithms address challenges of non-convexity, saddle points, vanishing/exploding gradients, and computational efficiency in high-dimensional parameter spaces.

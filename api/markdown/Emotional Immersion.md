@@ -1,24 +1,370 @@
-iri:: http://narrativegoldmine.com/spatial-computing#EmotionalImmersion
-uri:: urn:visionclaw:concept:spatial-computing:emotional-immersion
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:emotional-immersion
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Emotional Immersion
-content-hash:: sha256-12-ab0a36b497df
-legacy-term-id:: 20254
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#EmotionalImmersion
+legacy_uri:: urn:visionclaw:concept:spatial-computing:emotional-immersion
 public:: true
+
+# Emotional Immersion
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0",
+  "@type": "Page",
+  "vc:slug": "emotional-immersion",
+  "title": "Emotional Immersion",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:acm",
+      "vc:label": "ACM"
+    },
+    {
+      "@id": "urn:visionflow:linked:affective-design",
+      "vc:label": "Affective Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-design",
+      "vc:label": "Audio Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:emotional-resonance",
+      "vc:label": "Emotional Resonance"
+    },
+    {
+      "@id": "urn:visionflow:linked:empathetic-connection",
+      "vc:label": "Empathetic Connection"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-design",
+      "vc:label": "Interaction Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:presentation-layer",
+      "vc:label": "PresentationLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensory-feedback",
+      "vc:label": "Sensory Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:story-engagement",
+      "vc:label": "Story Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-engagement",
+      "vc:label": "User Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-fidelity",
+      "vc:label": "Visual Fidelity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersion",
+      "vc:label": "Immersion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "vc:label": "InteractionDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:narrative-content",
+      "vc:label": "Narrative Content"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ab0a36b497df"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#EmotionalImmersion"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20254"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Emotional Immersion"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:emotional-immersion"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:emotional-immersion"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:emotional-immersion",
+  "@type": "OntologyClass",
+  "label": "Emotional Immersion",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:immersion",
+      "vc:label": "Immersion"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Psychological absorption and empathetic engagement experienced during virtual interaction, characterized by affective resonance with virtual content and reduced awareness of physical surroundings.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:user-engagement",
+      "vc:label": "User Engagement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersion",
+      "vc:label": "Immersion"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:affective-design",
+      "vc:label": "Affective Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensory-feedback",
+      "vc:label": "Sensory Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:narrative-content",
+      "vc:label": "Narrative Content"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:emotional-resonance",
+      "vc:label": "Emotional Resonance"
+    },
+    {
+      "@id": "urn:visionflow:linked:empathetic-connection",
+      "vc:label": "Empathetic Connection"
+    },
+    {
+      "@id": "urn:visionflow:linked:story-engagement",
+      "vc:label": "Story Engagement"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:audio-design",
+      "vc:label": "Audio Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-design",
+      "vc:label": "Interaction Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-fidelity",
+      "vc:label": "Visual Fidelity"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:emotional-immersion:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ACM]]",
+      "resolved": "urn:visionflow:linked:acm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Affective Design]]",
+      "resolved": "urn:visionflow:linked:affective-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Audio Design]]",
+      "resolved": "urn:visionflow:linked:audio-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Emotional Resonance]]",
+      "resolved": "urn:visionflow:linked:emotional-resonance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Empathetic Connection]]",
+      "resolved": "urn:visionflow:linked:empathetic-connection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interaction Design]]",
+      "resolved": "urn:visionflow:linked:interaction-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PresentationLayer]]",
+      "resolved": "urn:visionflow:linked:presentation-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensory Feedback]]",
+      "resolved": "urn:visionflow:linked:sensory-feedback",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Story Engagement]]",
+      "resolved": "urn:visionflow:linked:story-engagement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Engagement]]",
+      "resolved": "urn:visionflow:linked:user-engagement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Visual Fidelity]]",
+      "resolved": "urn:visionflow:linked:visual-fidelity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Immersion]]",
+      "resolved": "urn:visionflow:owl:class:immersion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InteractionDomain]]",
+      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Narrative Content]]",
+      "resolved": "urn:visionflow:owl:class:narrative-content",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Psychological absorption and empathetic engagement experienced during virtual interaction, characterized by affective resonance with virtual content and reduced awareness of physical surroundings.

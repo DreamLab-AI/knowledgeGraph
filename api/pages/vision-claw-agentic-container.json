@@ -1,0 +1,476 @@
+{
+  "id": "urn:visionflow:page:8bfb41d9b62c4ea1a2760ab7a086eac1fc9cfbbd4a191ee60e6e41955d44d3ba",
+  "title": "VisionClaw Agentic Container",
+  "slug": "vision-claw-agentic-container",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vision-claw-agentic-container",
+  "domain": "artificial-intelligence",
+  "definition": "A [[Sovereign Mesh|sovereign, manifest-driven]] agentic runtime container that orchestrates [[DID Nostr Identity|DID Nostr]] agents across a decentralised [[Peer-to-Peer Network|peer-to-peer network]], enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and content-addressed state through a unified [[URI Canonicaliser|URI grammar]] and [[Linked Data Encoder|JSON-LD federation surfaces]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "qualityScore": 0.88,
+  "authorityScore": 0.92,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:adapter-slot",
+        "label": "Adapter Slot"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:visionflow:owl:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:linked-data-encoder",
+        "label": "Linked Data Encoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-filter",
+        "label": "Privacy Filter"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sovereign-mesh",
+        "label": "Sovereign Mesh"
+      },
+      {
+        "id": "urn:visionflow:owl:class:uri-canonicaliser",
+        "label": "URI Canonicaliser"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-credential-surface",
+        "label": "Verifiable Credential Surface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "id": "urn:visionflow:linked:json-ld-context",
+        "label": "JSON-LD Context"
+      },
+      {
+        "id": "urn:visionflow:linked:manifest-file",
+        "label": "Manifest File"
+      },
+      {
+        "id": "urn:visionflow:linked:nostr-relay",
+        "label": "Nostr Relay"
+      },
+      {
+        "id": "urn:visionflow:linked:solid-pod-storage",
+        "label": "Solid Pod Storage"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-agent-operation",
+        "label": "Autonomous Agent Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-agent-federation",
+        "label": "Cross-Agent Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "id": "urn:visionflow:linked:verifiable-assertion",
+        "label": "Verifiable Assertion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:visionflow:linked:sparc-architecture",
+        "label": "SPARC Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-verifiable-credentials-2-0",
+        "label": "W3C Verifiable Credentials 2.0"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-005",
+      "label": "ADR-005"
+    },
+    {
+      "slug": "adr-006",
+      "label": "ADR-006"
+    },
+    {
+      "slug": "adr-007",
+      "label": "ADR-007"
+    },
+    {
+      "slug": "adr-008",
+      "label": "ADR-008"
+    },
+    {
+      "slug": "adr-009",
+      "label": "ADR-009"
+    },
+    {
+      "slug": "adr-010",
+      "label": "ADR-010"
+    },
+    {
+      "slug": "adr-012",
+      "label": "ADR-012"
+    },
+    {
+      "slug": "adr-013",
+      "label": "ADR-013"
+    },
+    {
+      "slug": "agent-bead",
+      "label": "Agent Bead"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "autonomous-agent-operation",
+      "label": "Autonomous Agent Operation"
+    },
+    {
+      "slug": "bip-340-schnorr-keypair",
+      "label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "slug": "bip-340-schnorr-keypair",
+      "label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "slug": "bip-340-schnorr-keypair",
+      "label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "slug": "blockchain-integration-domain",
+      "label": "BlockchainIntegrationDomain"
+    },
+    {
+      "slug": "consultation-mcp",
+      "label": "Consultation MCP"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "CoordinationLayer"
+    },
+    {
+      "slug": "cross-agent-federation",
+      "label": "Cross-Agent Federation"
+    },
+    {
+      "slug": "ddd-004",
+      "label": "DDD-004"
+    },
+    {
+      "slug": "decentralised-coordination",
+      "label": "Decentralised Coordination"
+    },
+    {
+      "slug": "did-registry",
+      "label": "DID Registry"
+    },
+    {
+      "slug": "jcs-canonicalisation",
+      "label": "JCS Canonicalisation"
+    },
+    {
+      "slug": "jcs-canonicalisation",
+      "label": "JCS Canonicalisation"
+    },
+    {
+      "slug": "json-ld-1-1",
+      "label": "JSON-LD 1.1"
+    },
+    {
+      "slug": "json-ld-context",
+      "label": "JSON-LD Context"
+    },
+    {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
+      "slug": "manifest-file",
+      "label": "Manifest File"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "prd-006",
+      "label": "PRD-006"
+    },
+    {
+      "slug": "runtime-layer",
+      "label": "RuntimeLayer"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "sovereign-data-domain",
+      "label": "SovereignDataDomain"
+    },
+    {
+      "slug": "sparc-architecture",
+      "label": "SPARC Architecture"
+    },
+    {
+      "slug": "sparc-methodology",
+      "label": "SPARC Methodology"
+    },
+    {
+      "slug": "verifiable-assertion",
+      "label": "Verifiable Assertion"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials-2-0",
+      "label": "W3C Verifiable Credentials 2.0"
+    },
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "id": "urn:visionflow:page:7336ad70872209718797cf005a7b6d350c1aff8cd87346f3107279643b481e28",
+  "title": "Platform Layer",
+  "slug": "platform-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:platform-layer",
+  "domain": "spatial-computing",
+  "definition": "Architectural tier providing core platform services including identity, world state management, and asset services upon which metaverse applications are built.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-service",
+        "label": "Asset Service"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-service",
+        "label": "Identity Service"
+      },
+      {
+        "id": "urn:visionflow:linked:persistence-service",
+        "label": "Persistence Service"
+      },
+      {
+        "id": "urn:visionflow:linked:world-state-service",
+        "label": "World State Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:platform-middleware",
+        "label": "Platform Middleware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication-system",
+        "label": "Authentication System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:networking-layer",
+        "label": "Networking Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:application-development",
+        "label": "Application Development"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-world-interoperability",
+        "label": "Cross-World Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:user-identity-management",
+        "label": "User Identity Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "application-development",
+      "label": "Application Development"
+    },
+    {
+      "slug": "asset-portability",
+      "label": "Asset Portability"
+    },
+    {
+      "slug": "asset-service",
+      "label": "Asset Service"
+    },
+    {
+      "slug": "authentication-system",
+      "label": "Authentication System"
+    },
+    {
+      "slug": "cross-world-interoperability",
+      "label": "Cross-World Interoperability"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF Taxonomy"
+    },
+    {
+      "slug": "identity-service",
+      "label": "Identity Service"
+    },
+    {
+      "slug": "persistence-service",
+      "label": "Persistence Service"
+    },
+    {
+      "slug": "platform-services-layer",
+      "label": "Platform Services Layer"
+    },
+    {
+      "slug": "user-identity-management",
+      "label": "User Identity Management"
+    },
+    {
+      "slug": "world-state-service",
+      "label": "World State Service"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "infrastructure-architecture",
+      "label": "Infrastructure Architecture"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "platform-middleware",
+      "label": "Platform Middleware"
+    },
+    {
+      "slug": "service-oriented-architecture",
+      "label": "Service-Oriented Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

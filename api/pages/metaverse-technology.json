@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:c7b20c20c8e45d94cf8852141f4964aed91a30443cc7e1403f271257310535aa",
+  "title": "Metaverse Technology",
+  "slug": "metaverse-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-technology",
+  "domain": "spatial-computing",
+  "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-time social interaction across physical and virtual boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "stable",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ]
+}

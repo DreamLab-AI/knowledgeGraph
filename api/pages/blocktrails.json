@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:7e179ca7caeaba8eefaf69746619a187fa9f009d719a11b4aa66edd03b04834c",
+  "title": "blocktrails",
+  "slug": "blocktrails",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blocktrails",
+  "domain": "infrastructure",
+  "definition": "blocktrails is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

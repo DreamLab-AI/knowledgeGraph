@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:46e8c5591f127bd144f347738adcee62df1640a86f73aef1a32ae7f92da0718a",
+  "title": "Digital Security",
+  "slug": "digital-security",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-security",
+  "domain": "spatial-computing",
+  "definition": "Digital Security is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:5d5fb192acbe9b5ceb4894c74cb69ad2abb8a10595f14020e314a8a0b3bcc124",
+  "title": "QLoRA",
+  "slug": "qlo-ra",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:qlo-ra",
+  "domain": "artificial-intelligence",
+  "definition": "An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs. QLoRA uses NormalFloat4 quantisation, double quantisation, and paged optimisers to achieve extreme memory efficiency whilst maintaining performance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "label": "Parameter Efficient Fine-Tuning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

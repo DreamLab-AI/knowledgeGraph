@@ -1,0 +1,202 @@
+{
+  "id": "urn:visionflow:page:4d8a6a9ae12060358e94eefcbd228a0cc82e3731109134d3f53b01af1b43315b",
+  "title": "Provenance Ontology (PROV-O)",
+  "slug": "provenance-ontology-prov-o",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:provenance-ontology-prov-o",
+  "domain": "spatial-computing",
+  "definition": "W3C standard ontology for representing and interchanging provenance information, capturing the origin, attribution, derivation, and lifecycle of digital entities through formal Entity-Activity-Agent relationships.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:activity-model",
+        "label": "Activity Model"
+      },
+      {
+        "id": "urn:visionflow:linked:agent-model",
+        "label": "Agent Model"
+      },
+      {
+        "id": "urn:visionflow:linked:attribution-model",
+        "label": "Attribution Model"
+      },
+      {
+        "id": "urn:visionflow:linked:derivation-chains",
+        "label": "Derivation Chains"
+      },
+      {
+        "id": "urn:visionflow:linked:entity-model",
+        "label": "Entity Model"
+      },
+      {
+        "id": "urn:visionflow:linked:generation-events",
+        "label": "Generation Events"
+      },
+      {
+        "id": "urn:visionflow:linked:influence-patterns",
+        "label": "Influence Patterns"
+      },
+      {
+        "id": "urn:visionflow:linked:qualified-relations",
+        "label": "Qualified Relations"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-events",
+        "label": "Usage Events"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ontology-reasoner",
+        "label": "Ontology Reasoner"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-store",
+        "label": "RDF Store"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:audit-trails",
+        "label": "Audit Trails"
+      },
+      {
+        "id": "urn:visionflow:linked:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "id": "urn:visionflow:linked:data-lineage-tracking",
+        "label": "Data Lineage Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-reproducibility",
+        "label": "Scientific Reproducibility"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-verification",
+        "label": "Trust Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-model",
+      "label": "Activity Model"
+    },
+    {
+      "slug": "agent-model",
+      "label": "Agent Model"
+    },
+    {
+      "slug": "attribution-model",
+      "label": "Attribution Model"
+    },
+    {
+      "slug": "audit-trails",
+      "label": "Audit Trails"
+    },
+    {
+      "slug": "blockchain-provenance",
+      "label": "Blockchain Provenance"
+    },
+    {
+      "slug": "data-lineage-tracking",
+      "label": "Data Lineage Tracking"
+    },
+    {
+      "slug": "derivation-chains",
+      "label": "Derivation Chains"
+    },
+    {
+      "slug": "entity-model",
+      "label": "Entity Model"
+    },
+    {
+      "slug": "generation-events",
+      "label": "Generation Events"
+    },
+    {
+      "slug": "influence-patterns",
+      "label": "Influence Patterns"
+    },
+    {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
+      "slug": "ontology-reasoner",
+      "label": "Ontology Reasoner"
+    },
+    {
+      "slug": "qualified-relations",
+      "label": "Qualified Relations"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
+    },
+    {
+      "slug": "scientific-reproducibility",
+      "label": "Scientific Reproducibility"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
+      "slug": "trust-verification",
+      "label": "Trust Verification"
+    },
+    {
+      "slug": "usage-events",
+      "label": "Usage Events"
+    },
+    {
+      "slug": "w3-c-prov-data-model",
+      "label": "W3C PROV Data Model"
+    },
+    {
+      "slug": "w3-c-prov-o-recommendation",
+      "label": "W3C PROV-O Recommendation"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "semantic-web-standards",
+      "label": "Semantic Web Standards"
+    },
+    {
+      "slug": "sparql-endpoint",
+      "label": "SPARQL Endpoint"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

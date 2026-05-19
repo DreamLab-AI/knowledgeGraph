@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668",
+  "title": "Collaborative Operation",
+  "slug": "collaborative-operation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collaborative-operation",
+  "domain": "robotics",
+  "definition": "**Collaborative Operation** - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.56,
+  "authorityScore": 0.12,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-monitoring",
+        "label": "Safety Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:task-planning",
+        "label": "Task Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:production-flexibility",
+        "label": "Production Flexibility"
+      },
+      {
+        "id": "urn:visionflow:linked:workspace-efficiency",
+        "label": "Workspace Efficiency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "force-feedback",
+      "label": "Force Feedback"
+    },
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "human-operators",
+      "label": "Human Operators"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "manufacturing-process",
+      "label": "Manufacturing Process"
+    },
+    {
+      "slug": "production-flexibility",
+      "label": "Production Flexibility"
+    },
+    {
+      "slug": "robotic-systems",
+      "label": "Robotic Systems"
+    },
+    {
+      "slug": "safety-monitoring",
+      "label": "Safety Monitoring"
+    },
+    {
+      "slug": "workspace-efficiency",
+      "label": "Workspace Efficiency"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ],
+  "backlinks": []
+}

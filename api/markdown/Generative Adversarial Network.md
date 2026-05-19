@@ -1,21 +1,215 @@
-iri:: http://narrativegoldmine.com/metaverse#GenerativeAdversarialNetwork
-uri:: urn:visionclaw:concept:artificial-intelligence:generative-adversarial-network
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:generative-adversarial-network
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Generative Adversarial Network
-content-hash:: sha256-12-9667dc7b9c39
-legacy-term-id:: AI-0035
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#GenerativeAdversarialNetwork
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:generative-adversarial-network
 public:: true
+
+# Generative Adversarial Network
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:49f568afcff6f63e97df92f4a5f3eaf51e286f2ad1695140fd1d73e88f880c4f",
+  "@type": "Page",
+  "vc:slug": "generative-adversarial-network",
+  "title": "Generative Adversarial Network",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:untitled",
+      "vc:label": "🤖"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:research-tools",
+      "vc:label": "Research Tools"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9667dc7b9c39"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#GenerativeAdversarialNetwork"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0035"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Generative Adversarial Network"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:generative-adversarial-network"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:generative-adversarial-network"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:49f568afcff6f63e97df92f4a5f3eaf51e286f2ad1695140fd1d73e88f880c4f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:generative-adversarial-network",
+  "@type": "OntologyClass",
+  "label": "Generative Adversarial Network",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:49f568afcff6f63e97df92f4a5f3eaf51e286f2ad1695140fd1d73e88f880c4f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:49f568afcff6f63e97df92f4a5f3eaf51e286f2ad1695140fd1d73e88f880c4f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:generative-adversarial-network:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:49f568afcff6f63e97df92f4a5f3eaf51e286f2ad1695140fd1d73e88f880c4f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[🤖]]",
+      "resolved": "urn:visionflow:linked:untitled",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diffusion Models]]",
+      "resolved": "urn:visionflow:owl:class:diffusion-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Adversarial Networks]]",
+      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Research Tools]]",
+      "resolved": "urn:visionflow:owl:class:research-tools",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:49f568afcff6f63e97df92f4a5f3eaf51e286f2ad1695140fd1d73e88f880c4f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ### Primary Definition
@@ -87,7 +281,7 @@ public:: true
   - ### Generative AI
 		- Generative AI models can be used to create original podcast content, such as stories, interviews, and news reports.
 
-		- #### 5️⃣ Generative Adversarial Networks [[GANs]]
+		- #### 5️⃣ Generative Adversarial Networks [[Generative Adversarial Networks]]
 			- **Description**: Two neural networks trained in an adversarial process.
 			- **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
 			- **Paper**: [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8253599?)
@@ -101,7 +295,7 @@ public:: true
   - ### Generative AI
 		- Generative AI models can be used to create original podcast content, such as stories, interviews, and news reports.
 
-		- #### 5️⃣ Generative Adversarial Networks [[GANs]]
+		- #### 5️⃣ Generative Adversarial Networks [[Generative Adversarial Networks]]
 			- **Description**: Two neural networks trained in an adversarial process.
 			- **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
 			- **Paper**: [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8253599?)

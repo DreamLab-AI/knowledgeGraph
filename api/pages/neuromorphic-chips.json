@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:dd827af45218f978eeb6c5dd694445314da645bbca54f7282e1d8c3b09de61f9",
+  "title": "Neuromorphic Chips",
+  "slug": "neuromorphic-chips",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:neuromorphic-chips",
+  "domain": "artificial-intelligence",
+  "definition": "Neuromorphic Chips is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:inference-hardware",
+      "label": "Inference Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ultra-low-power-ai",
+        "label": "Ultra-Low-Power AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ultra-low-power-ai",
+      "label": "Ultra-Low-Power AI"
+    },
+    {
+      "slug": "inference-hardware",
+      "label": "Inference Hardware"
+    }
+  ],
+  "backlinks": []
+}

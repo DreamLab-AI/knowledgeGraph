@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d",
+  "title": "Ethical AI",
+  "slug": "ethical-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ethical-ai",
+  "domain": "artificial-intelligence",
+  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:stakeholder-engagement",
+        "label": "stakeholder engagement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethics-by-design",
+      "label": "Ethics by Design"
+    },
+    {
+      "slug": "nip-05",
+      "label": "NIP-05"
+    },
+    {
+      "slug": "stakeholder-engagement",
+      "label": "stakeholder engagement"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    }
+  ]
+}

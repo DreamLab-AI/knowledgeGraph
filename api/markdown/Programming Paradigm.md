@@ -1,21 +1,216 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ProgrammingParadigm
-uri:: urn:visionclaw:concept:artificial-intelligence:programming-paradigm
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:programming-paradigm
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Programming Paradigm
-content-hash:: sha256-12-45cac3f84d1e
-legacy-term-id:: AI-9026
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ProgrammingParadigm
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:programming-paradigm
 public:: true
+
+# Programming Paradigm
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d7db6dcabad03593eaf7dd124ee4734e289d5830e7d2f488fc33a570cafbf178",
+  "@type": "Page",
+  "vc:slug": "programming-paradigm",
+  "title": "Programming Paradigm",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:differentiable-programming",
+      "vc:label": "Differentiable Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:functional-programming",
+      "vc:label": "Functional Programming"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "owl:Thing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:software-engineering",
+      "vc:label": "Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-45cac3f84d1e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ProgrammingParadigm"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-9026"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Programming Paradigm"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:programming-paradigm"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:programming-paradigm"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d7db6dcabad03593eaf7dd124ee4734e289d5830e7d2f488fc33a570cafbf178@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:programming-paradigm",
+  "@type": "OntologyClass",
+  "label": "Programming Paradigm",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "owl:Thing"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d7db6dcabad03593eaf7dd124ee4734e289d5830e7d2f488fc33a570cafbf178"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d7db6dcabad03593eaf7dd124ee4734e289d5830e7d2f488fc33a570cafbf178@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming. Functional programming (Haskell, Lisp) emphasizes immutability and higher-order functions, suited for mathematical ML algorithms. Differentiable programming treats entire programs as differentiable functions, enabling end-to-end gradient-based optimization. Modern AI development combines paradigms: object-oriented for software engineering, functional for mathematical rigor, and differentiable for learning.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:programming-paradigm:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d7db6dcabad03593eaf7dd124ee4734e289d5830e7d2f488fc33a570cafbf178"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Differentiable Programming]]",
+      "resolved": "urn:visionflow:linked:differentiable-programming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Functional Programming]]",
+      "resolved": "urn:visionflow:linked:functional-programming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[owl:Thing]]",
+      "resolved": "urn:visionflow:owl:class:owl-thing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Software Engineering]]",
+      "resolved": "urn:visionflow:owl:class:software-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Symbolic AI]]",
+      "resolved": "urn:visionflow:owl:class:symbolic-ai",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d7db6dcabad03593eaf7dd124ee4734e289d5830e7d2f488fc33a570cafbf178@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming. Functional programming (Haskell, Lisp) emphasizes immutability and higher-order functions, suited for mathematical ML algorithms. Differentiable programming treats entire programs as differentiable functions, enabling end-to-end gradient-based optimization. Modern AI development combines paradigms: object-oriented for software engineering, functional for mathematical rigor, and differentiable for learning.

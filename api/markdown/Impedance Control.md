@@ -1,21 +1,321 @@
-iri:: http://narrativegoldmine.com/robotics#ImpedanceControl
-uri:: urn:visionclaw:concept:robotics:impedance-control
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:impedance-control
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Impedance Control
-content-hash:: sha256-12-472b33e1d2ed
-legacy-term-id:: RB-0941
-status:: draft
-maturity:: draft
-quality-score:: 0.66
-authority-score:: 0.20
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#ImpedanceControl
+legacy_uri:: urn:visionclaw:concept:robotics:impedance-control
 public:: true
+
+# Impedance Control
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330",
+  "@type": "Page",
+  "vc:slug": "impedance-control",
+  "title": "Impedance Control",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-manipulation",
+      "vc:label": "Adaptive Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliant-motion-control",
+      "vc:label": "Compliant Motion Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-systems",
+      "vc:label": "Control Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:damping-control",
+      "vc:label": "Damping Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:force-regulation",
+      "vc:label": "Force Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-control",
+      "vc:label": "Hybrid Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-human-interaction",
+      "vc:label": "Safe Human Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:soft-contact-tasks",
+      "vc:label": "Soft Contact Tasks"
+    },
+    {
+      "@id": "urn:visionflow:linked:stiffness-modulation",
+      "vc:label": "Stiffness Modulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-dynamics-model",
+      "vc:label": "Virtual Dynamics Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.20"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-472b33e1d2ed"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#ImpedanceControl"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0941"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Impedance Control"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.66"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:impedance-control"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:impedance-control"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:impedance-control",
+  "@type": "OntologyClass",
+  "label": "Impedance Control",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:control-systems",
+      "vc:label": "Control Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Impedance Control** - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
+  "vc:qualityScore": {
+    "@value": "0.66",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.20",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:compliant-motion-control",
+      "vc:label": "Compliant Motion Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:force-regulation",
+      "vc:label": "Force Regulation"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:damping-control",
+      "vc:label": "Damping Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:stiffness-modulation",
+      "vc:label": "Stiffness Modulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-dynamics-model",
+      "vc:label": "Virtual Dynamics Model"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-manipulation",
+      "vc:label": "Adaptive Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-human-interaction",
+      "vc:label": "Safe Human Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:soft-contact-tasks",
+      "vc:label": "Soft Contact Tasks"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:impedance-control:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adaptive Manipulation]]",
+      "resolved": "urn:visionflow:linked:adaptive-manipulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compliant Motion Control]]",
+      "resolved": "urn:visionflow:linked:compliant-motion-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Control Systems]]",
+      "resolved": "urn:visionflow:linked:control-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Damping Control]]",
+      "resolved": "urn:visionflow:linked:damping-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Force Regulation]]",
+      "resolved": "urn:visionflow:linked:force-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hybrid Control]]",
+      "resolved": "urn:visionflow:linked:hybrid-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safe Human Interaction]]",
+      "resolved": "urn:visionflow:linked:safe-human-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Soft Contact Tasks]]",
+      "resolved": "urn:visionflow:linked:soft-contact-tasks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stiffness Modulation]]",
+      "resolved": "urn:visionflow:linked:stiffness-modulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Dynamics Model]]",
+      "resolved": "urn:visionflow:linked:virtual-dynamics-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Impedance Control** - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.

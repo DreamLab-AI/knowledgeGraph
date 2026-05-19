@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:0f1d7be4df6e2668385b5673a95a2b4b7be36b678f20ef2aaf9bbd4a9e7d3e59",
+  "title": "Soft Prompt Embedding",
+  "slug": "soft-prompt-embedding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:soft-prompt-embedding",
+  "domain": "artificial-intelligence",
+  "definition": "Continuous prompt representations learned during tuning.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

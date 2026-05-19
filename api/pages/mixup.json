@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:4399fff3265f47adad98f39762a8cf2cfade1eb75f4b1cc2ab2f1c79f0b81865",
+  "title": "Mixup",
+  "slug": "mixup",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mixup",
+  "domain": "artificial-intelligence",
+  "definition": "A data augmentation technique that creates virtual training examples by linearly interpolating pairs of examples and their labels. Mixup improves generalisation, calibration, and robustness by training on convex combinations of training samples.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-augmentation-strategies",
+      "label": "Data Augmentation Strategies"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

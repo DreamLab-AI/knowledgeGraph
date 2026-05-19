@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:751e139c632d3833fcb44b5253cc713ad29b0293c825739e02aaeec4689d4349",
+  "title": "Mining Reward",
+  "slug": "mining-reward",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mining-reward",
+  "domain": "blockchain",
+  "definition": "Block creation compensation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consensus-protocol",
+      "label": "ConsensusProtocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "consensus-domain",
+      "label": "ConsensusDomain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "ConsensusProtocol"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    }
+  ],
+  "backlinks": []
+}

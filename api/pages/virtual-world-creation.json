@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:c6669d9f0dec5e55e97d3a62c6d031022f87eb9a5bd490041857193a57e24715",
+  "title": "Virtual World Creation",
+  "slug": "virtual-world-creation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-world-creation",
+  "domain": "spatial-computing",
+  "definition": "The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse platforms, and simulations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-content-creation",
+      "label": "Digital Content Creation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    }
+  ]
+}

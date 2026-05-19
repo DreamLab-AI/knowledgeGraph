@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f",
+  "title": "Fault Tolerance System",
+  "slug": "fault-tolerance-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fault-tolerance-system",
+  "domain": "blockchain",
+  "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants. Fault tolerance is essential for blockchain systems that must maintain availability and consistency across geographically distributed nodes operating in adversarial environments without centralized recovery mechanisms. These systems employ redundancy (replicating data and computation across multiple nodes), error detection (identifying when failures occur), error recovery (restoring correct state after failures), and failure masking (hiding failures from users through automatic compensation). Fault tolerance systems are classified by failure models: crash faults (nodes stop operating but don't send incorrect information), omission faults (nodes fail to send or receive messages), timing faults (nodes operate correctly but too slowly), and Byzantine faults (nodes exhibit arbitrary malicious behavior including sending conflicting information). Blockchain fault tolerance systems must typically handle Byzantine failures since blockchain operates in adversarial environ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "byzantine-fault-tolerant-system",
+      "label": "Byzantine Fault Tolerant System"
+    },
+    {
+      "slug": "checkpoint-system",
+      "label": "Checkpoint System"
+    },
+    {
+      "slug": "crash-fault-tolerant-system",
+      "label": "Crash Fault Tolerant System"
+    },
+    {
+      "slug": "dependable-computing-systems",
+      "label": "Dependable Computing Systems"
+    },
+    {
+      "slug": "fault-tolerant-systems",
+      "label": "Fault-Tolerant Systems"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "replication-system",
+      "label": "Replication System"
+    },
+    {
+      "slug": "state-machine-replication",
+      "label": "State Machine Replication"
+    }
+  ],
+  "backlinks": []
+}

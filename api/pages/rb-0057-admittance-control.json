@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:79b3fe66ad79b97009bb96ec62c31dc73ebb77d73a67bb5ff024313df0efbc2c",
+  "title": "rb 0057 admittance control",
+  "slug": "rb-0057-admittance-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0057-admittance-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:interaction-control",
+      "label": "Interaction Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

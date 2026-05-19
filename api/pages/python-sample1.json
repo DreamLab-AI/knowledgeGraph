@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:579caa13453ba9c26588998580d9c68647c3f141100dd94d1c299dd7746731be",
+  "title": "Python Sample1",
+  "slug": "python-sample1",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:python-sample1",
+  "domain": "infrastructure",
+  "definition": "PythonSample1 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

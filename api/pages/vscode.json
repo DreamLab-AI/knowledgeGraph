@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:388a9cce8df31f3575ca97469dc125c20e6ab9349af348e80211533780654e36",
+  "title": "VSCode",
+  "slug": "vscode",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vscode",
+  "domain": "infrastructure",
+  "definition": "VSCode is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "i",
+      "label": "$- =~ i"
+    },
+    {
+      "slug": "n-ssh-tty",
+      "label": "-n \"$SSH_TTY\""
+    },
+    {
+      "slug": "z-tmux",
+      "label": "-z \"$TMUX\""
+    }
+  ],
+  "backlinks": []
+}

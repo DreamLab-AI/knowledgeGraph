@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:afc29d05df3253a1fb4e1e2d4c5d9423dbfcfaa44acadaebaba3690be4133cb9",
+  "title": "Digital Twin Generation",
+  "slug": "digital-twin-generation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-generation",
+  "domain": "spatial-computing",
+  "definition": "The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:automated-modeling",
+      "label": "Automated Modeling"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-capture",
+        "label": "3D Capture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-training",
+        "label": "AI Training"
+      },
+      {
+        "id": "urn:visionflow:linked:mass-digitization",
+        "label": "Mass Digitization"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-capture",
+      "label": "3D Capture"
+    },
+    {
+      "slug": "ai-training",
+      "label": "AI Training"
+    },
+    {
+      "slug": "mass-digitization",
+      "label": "Mass Digitization"
+    },
+    {
+      "slug": "rapid-prototyping",
+      "label": "Rapid Prototyping"
+    },
+    {
+      "slug": "automated-modeling",
+      "label": "Automated Modeling"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    }
+  ]
+}

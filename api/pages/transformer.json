@@ -1,0 +1,193 @@
+{
+  "id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2",
+  "title": "Transformer",
+  "slug": "transformer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transformer",
+  "domain": "artificial-intelligence",
+  "definition": "A neural network architecture that relies on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models including GPT, BERT, and their successors.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gpt",
+        "label": "GPT"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aigrounded-domain",
+      "label": "AIGroundedDomain"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "iso-iec-22989",
+      "label": "ISO/IEC 22989"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "nist-ai-600-1",
+      "label": "NIST AI 600-1"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "vaswani-et-al-2017",
+      "label": "Vaswani et al. 2017"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

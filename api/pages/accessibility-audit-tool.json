@@ -1,0 +1,166 @@
+{
+  "id": "urn:visionflow:page:70af827f62984f2f4d7f04b1ff53940fdd48860dd469477100dc3bfd7b7addbd",
+  "title": "Accessibility Audit Tool",
+  "slug": "accessibility-audit-tool",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accessibility-audit-tool",
+  "domain": "spatial-computing",
+  "definition": "An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:automated-testing-engine",
+        "label": "Automated Testing Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:report-generator",
+        "label": "Report Generator"
+      },
+      {
+        "id": "urn:visionflow:linked:wcag-validator",
+        "label": "WCAG Validator"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:testing-framework",
+        "label": "Testing Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:user-interface-analyzer",
+        "label": "User Interface Analyzer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accessibility-reporting",
+        "label": "Accessibility Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-reporting",
+      "label": "Accessibility Reporting"
+    },
+    {
+      "slug": "automated-testing-engine",
+      "label": "Automated Testing Engine"
+    },
+    {
+      "slug": "inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "slug": "quality-assurance-toolchain",
+      "label": "Quality Assurance Toolchain"
+    },
+    {
+      "slug": "report-generator",
+      "label": "Report Generator"
+    },
+    {
+      "slug": "testing-framework",
+      "label": "Testing Framework"
+    },
+    {
+      "slug": "testing-protocol",
+      "label": "Testing Protocol"
+    },
+    {
+      "slug": "user-interface-analyzer",
+      "label": "User Interface Analyzer"
+    },
+    {
+      "slug": "w3-c-xr-accessibility-user-requirements",
+      "label": "W3C XR Accessibility User Requirements"
+    },
+    {
+      "slug": "wcag-guidelines",
+      "label": "WCAG Guidelines"
+    },
+    {
+      "slug": "wcag-validator",
+      "label": "WCAG Validator"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "accessibility-standards",
+      "label": "Accessibility Standards"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "xr-accessibility-standards",
+      "label": "XR Accessibility Standards"
+    }
+  ],
+  "backlinks": []
+}

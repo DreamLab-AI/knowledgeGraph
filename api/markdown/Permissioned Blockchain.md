@@ -1,21 +1,330 @@
-iri:: http://narrativegoldmine.com/blockchain#PermissionedBlockchain
-uri:: urn:visionclaw:concept:blockchain:permissioned-blockchain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:permissioned-blockchain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Permissioned Blockchain
-content-hash:: sha256-12-fa86429b8c81
-legacy-term-id:: BC-0429
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#PermissionedBlockchain
+legacy_uri:: urn:visionclaw:concept:blockchain:permissioned-blockchain
 public:: true
+
+# Permissioned Blockchain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac",
+  "@type": "Page",
+  "vc:slug": "permissioned-blockchain",
+  "title": "Permissioned Blockchain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0001-blockchain",
+      "vc:label": "BC-0001-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0120-consensus-mechanism",
+      "vc:label": "BC-0120-consensus-mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0245-proof-of-authority",
+      "vc:label": "BC-0245-proof-of-authority"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "vc:label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0427-hyperledger-besu",
+      "vc:label": "BC-0427-hyperledger-besu"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0428-enterprise-blockchain-architecture",
+      "vc:label": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0430-private-channels",
+      "vc:label": "BC-0430-private-channels"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "HyperledgerFabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:private-channels",
+      "vc:label": "PrivateChannels"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quorum-blockchain",
+      "vc:label": "Quorum Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quorum-blockchain",
+      "vc:label": "QuorumBlockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:r3-corda",
+      "vc:label": "R3 Corda"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:r3-corda",
+      "vc:label": "R3Corda"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-fa86429b8c81"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#PermissionedBlockchain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0429"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Permissioned Blockchain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:permissioned-blockchain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:permissioned-blockchain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:permissioned-blockchain",
+  "@type": "OntologyClass",
+  "label": "Permissioned Blockchain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable [[Consensus Mechanism|consensus mechanisms]], enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintaining regulatory compliance and business confidentiality. Permissioned blockchains implement access control at multiple layers—node permissioning restricting which organisations participate, account permissioning controlling transaction submission, and [[PrivateChannels]] enabling confidential subsets of participants to conduct transactions invisibly to others—deployed extensively in enterprise contexts including [[Hyperledger Fabric]], [[Quorum Blockchain]], and [[R3 Corda]] supporting supply chain, trade finance, healthcare, and financial services applications.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:bc-0120-consensus-mechanism",
+      "vc:label": "BC-0120-consensus-mechanism"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:permissioned-blockchain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0001-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0001-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0120-consensus-mechanism]]",
+      "resolved": "urn:visionflow:linked:bc-0120-consensus-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0245-proof-of-authority]]",
+      "resolved": "urn:visionflow:linked:bc-0245-proof-of-authority",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0426-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0427-hyperledger-besu]]",
+      "resolved": "urn:visionflow:linked:bc-0427-hyperledger-besu",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0428-enterprise-blockchain-architecture]]",
+      "resolved": "urn:visionflow:linked:bc-0428-enterprise-blockchain-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0430-private-channels]]",
+      "resolved": "urn:visionflow:linked:bc-0430-private-channels",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism|consensus mechanisms]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[HyperledgerFabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PrivateChannels]]",
+      "resolved": "urn:visionflow:owl:class:private-channels",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quorum Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:quorum-blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[QuorumBlockchain]]",
+      "resolved": "urn:visionflow:owl:class:quorum-blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[R3 Corda]]",
+      "resolved": "urn:visionflow:owl:class:r3-corda",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[R3Corda]]",
+      "resolved": "urn:visionflow:owl:class:r3-corda",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable [[Consensus Mechanism|consensus mechanisms]], enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintaining regulatory compliance and business confidentiality. Permissioned blockchains implement access control at multiple layers—node permissioning restricting which organisations participate, account permissioning controlling transaction submission, and [[PrivateChannels]] enabling confidential subsets of participants to conduct transactions invisibly to others—deployed extensively in enterprise contexts including [[Hyperledger Fabric]], [[Quorum Blockchain]], and [[R3 Corda]] supporting supply chain, trade finance, healthcare, and financial services applications.

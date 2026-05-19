@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:f9b045e980ce49944f0781f6b1e091c69571a28d60dc254357ac0a642d455c48",
+  "title": "Semi-Supervised Learning",
+  "slug": "semi-supervised-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:semi-supervised-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Semi-Supervised Learning is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:data-efficient-learning",
+        "label": "Data-Efficient Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-efficient-learning",
+      "label": "Data-Efficient Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

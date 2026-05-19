@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:098dd31d68a1ec13e0ca729d9b818c299380ad6a8b41928fb3e64f701ecad974",
+  "title": "Interpretability",
+  "slug": "interpretability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:interpretability",
+  "domain": "artificial-intelligence",
+  "definition": "The degree to which a human can understand the internal mechanics, decision-making processes, and cause-effect relationships within an AI system, independent of external explanation tools.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:debugging",
+        "label": "Debugging"
+      },
+      {
+        "id": "urn:visionflow:linked:model-validation",
+        "label": "Model Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:trust",
+        "label": "Trust"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "debugging",
+      "label": "Debugging"
+    },
+    {
+      "slug": "model-validation",
+      "label": "Model Validation"
+    },
+    {
+      "slug": "trust",
+      "label": "Trust"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

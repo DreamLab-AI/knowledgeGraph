@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1",
+  "title": "State of the art in AI",
+  "slug": "state-of-the-art-in-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:state-of-the-art-in-ai",
+  "domain": "artificial-intelligence",
+  "definition": "State of the art in AI is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "presentation",
+      "label": "presentation"
+    },
+    {
+      "slug": "rework-based-on-gpt",
+      "label": "rework based on gpt"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

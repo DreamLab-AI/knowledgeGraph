@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6",
+  "title": "System Interoperability",
+  "slug": "system-interoperability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:system-interoperability",
+  "domain": "infrastructure",
+  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:system-capability",
+      "label": "System Capability"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:enterprise-connectivity",
+        "label": "Enterprise Connectivity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-sharing",
+        "label": "Data Sharing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:common-data-formats",
+        "label": "Common Data Formats"
+      },
+      {
+        "id": "urn:visionflow:linked:standard-protocols",
+        "label": "Standard Protocols"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "common-data-formats",
+      "label": "Common Data Formats"
+    },
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "enterprise-connectivity",
+      "label": "Enterprise Connectivity"
+    },
+    {
+      "slug": "standard-protocols",
+      "label": "Standard Protocols"
+    },
+    {
+      "slug": "system-capability",
+      "label": "System Capability"
+    },
+    {
+      "slug": "data-sharing",
+      "label": "Data Sharing"
+    },
+    {
+      "slug": "system-integration",
+      "label": "System Integration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-standard",
+      "label": "API Standard"
+    },
+    {
+      "slug": "digital-twin-framework",
+      "label": "Digital Twin Framework"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "platform-middleware",
+      "label": "Platform Middleware"
+    },
+    {
+      "slug": "service-oriented-architecture",
+      "label": "Service Oriented Architecture"
+    }
+  ]
+}

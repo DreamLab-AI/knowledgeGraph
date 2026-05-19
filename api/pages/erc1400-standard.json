@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:cf2bb2e9ced3e494a669da241a719e43118ef2a5600b3fe6b33ddd09464faca1",
+  "title": "ERC1400 Standard",
+  "slug": "erc1400-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc1400-standard",
+  "domain": "blockchain",
+  "definition": "Security token standard with compliance controls and transfer restrictions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

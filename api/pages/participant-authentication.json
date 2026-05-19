@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:7ff0e9e52489a87056096086f40a23a716da920c596f5cdda085b061696794eb",
+  "title": "Participant Authentication",
+  "slug": "participant-authentication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:participant-authentication",
+  "domain": "infrastructure",
+  "definition": "The process of verifying the identity of users in virtual environments, events, and metaverse platforms through methods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:secure-virtual-events",
+        "label": "Secure Virtual Events"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "secure-virtual-events",
+      "label": "Secure Virtual Events"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    }
+  ]
+}

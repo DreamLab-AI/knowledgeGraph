@@ -1,21 +1,317 @@
-iri:: http://narrativegoldmine.com/metaverse#EthicalAI
-uri:: urn:visionclaw:concept:artificial-intelligence:ethical-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ethical-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Ethical AI
-content-hash:: sha256-12-9602f835234c
-legacy-term-id:: AI-0103
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#EthicalAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ethical-ai
 public:: true
+
+# Ethical AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d",
+  "@type": "Page",
+  "vc:slug": "ethical-ai",
+  "title": "Ethical AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ethics-by-design",
+      "vc:label": "Ethics by Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-05",
+      "vc:label": "NIP-05"
+    },
+    {
+      "@id": "urn:visionflow:linked:stakeholder-engagement",
+      "vc:label": "stakeholder engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:trustworthy-ai",
+      "vc:label": "Trustworthy AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-impact-assessment",
+      "vc:label": "AI Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-rights",
+      "vc:label": "Human Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9602f835234c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#EthicalAI"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0103"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Ethical AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ethical-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ethical-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ethical-ai",
+  "@type": "OntologyClass",
+  "label": "Ethical AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:stakeholder-engagement",
+      "vc:label": "stakeholder engagement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:trustworthy-ai",
+      "vc:label": "Trustworthy AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ethical-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Ethics by Design]]",
+      "resolved": "urn:visionflow:linked:ethics-by-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIP-05]]",
+      "resolved": "urn:visionflow:linked:nip-05",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[stakeholder engagement]]",
+      "resolved": "urn:visionflow:linked:stakeholder-engagement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trustworthy AI]]",
+      "resolved": "urn:visionflow:linked:trustworthy-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Impact Assessment]]",
+      "resolved": "urn:visionflow:owl:class:ai-impact-assessment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Rights]]",
+      "resolved": "urn:visionflow:owl:class:human-rights",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Privacy]]",
+      "resolved": "urn:visionflow:owl:class:privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Responsible AI]]",
+      "resolved": "urn:visionflow:owl:class:responsible-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparency]]",
+      "resolved": "urn:visionflow:owl:class:transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.

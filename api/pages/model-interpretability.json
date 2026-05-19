@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:547fd240ca08f289f8e618c04cbd5aeb140f0f86ffc142254e45a726940a7b57",
+  "title": "Model Interpretability",
+  "slug": "model-interpretability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-interpretability",
+  "domain": "artificial-intelligence",
+  "definition": "The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:explainable-ai",
+      "label": "Explainable AI"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "interpretable-ai",
+      "label": "Interpretable AI"
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "label": "Intrinsic Interpretability"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-transparency",
+      "label": "Model Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "interpretable-ai",
+      "label": "Interpretable AI"
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "label": "Intrinsic Interpretability"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    }
+  ]
+}

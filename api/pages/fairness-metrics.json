@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:655ddd6220ef4b1d8cdf5f3b713f29ab9db463aeba8fce27be118a52bf4cc4fc",
+  "title": "Fairness Metrics",
+  "slug": "fairness-metrics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fairness-metrics",
+  "domain": "artificial-intelligence",
+  "definition": "Fairness Metrics are quantitative measures and mathematical frameworks used to evaluate and ensure equitable treatment across different demographic groups in AI systems. These metrics provide objective, measurable criteria to assess whether an algorithmic system produces disparate impacts, maintains statistical parity, or achieves equalized odds across protected attributes such as race, gender, age, or disability status. Key fairness metrics include demographic parity (equal positive prediction rates across groups), equalized odds (equal true positive and false positive rates), equal opportunity (equal true positive rates), and predictive parity (equal precision across groups). The selection and application of fairness metrics depends on the specific context, stakeholder values, and regulatory requirements, as different metrics can conflict and no single metric satisfies all fairness criteria simultaneously. Implementation requires confusion matrix analysis, statistical testing, and careful consideration of base rate differences between groups, as formalized in IEEE P7003-2021 and NIST SP 1270 guidelines for algorithmic fairness assessment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-p7003-2021",
+      "label": "IEEE P7003-2021"
+    },
+    {
+      "slug": "iso-iec-tr-24027",
+      "label": "ISO/IEC TR 24027"
+    },
+    {
+      "slug": "nist-sp-1270",
+      "label": "NIST SP 1270"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    }
+  ]
+}

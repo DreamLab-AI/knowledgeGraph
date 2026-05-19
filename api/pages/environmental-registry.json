@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:5d9d2e2288661ed59bbc49cd6573038dd08ff2c289435d6796438d48dd5723e9",
+  "title": "Environmental Registry",
+  "slug": "environmental-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-registry",
+  "domain": "spatial-computing",
+  "definition": "Environmental Registry is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    }
+  ]
+}

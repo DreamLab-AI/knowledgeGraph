@@ -1,0 +1,868 @@
+{
+  "id": "urn:visionflow:page:ab43625bf6a8f57cc3b124160e2f0efe984b678905c715c501fd490c669919c5",
+  "title": "Mechanical Component",
+  "slug": "mechanical-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mechanical-component",
+  "domain": "robotics",
+  "definition": "MechanicalComponent is the ontological superclass for all physical structural, kinematic, and power-transmission elements constituting robotic hardware systems. Encompassing [[Actuator|actuators]], [[Transmission|transmissions]], [[Bearing|bearings]], [[Structural Frame|frames]], [[Coupling|couplings]], [[End-Effector|end-effectors]], sensor housings, and [[Compliant Mechanism|compliant mechanisms]], this class captures the physical layer upon which [[Robot Kinematics]], [[Robot Dynamics]], payload capacity, stiffness, backlash, and contact mechanics are predicated. Mechanical components exist within a multi-material, multi-scale design space spanning nanometre surface finishes on bearing raceways through metre-scale [[Carbon Fibre Composite|carbon-fibre]] structural tubes, and their selection, sizing, and integration determines the fundamental performance envelope \u2014 speed, torque, positioning accuracy, fatigue life, thermal budget \u2014 of any robotic system from precision [[Surgical Robotics|surgical instruments]] to heavy [[Industrial Manipulators|industrial manipulators]]. Unlike the [[Software Component|software]], [[Sensor|sensing]], or computation layers, mechanical components a",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:kinematic-chain",
+      "label": "Kinematic Chain"
+    },
+    {
+      "id": "urn:visionflow:linked:manufacturing-product",
+      "label": "Manufacturing Product"
+    },
+    {
+      "id": "urn:visionflow:linked:mechatronic-system",
+      "label": "Mechatronic System"
+    },
+    {
+      "id": "urn:visionflow:linked:physical-system",
+      "label": "Physical System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:ball-screw",
+        "label": "Ball Screw"
+      },
+      {
+        "id": "urn:visionflow:linked:bearing",
+        "label": "Bearing"
+      },
+      {
+        "id": "urn:visionflow:linked:cable-drive",
+        "label": "Cable Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:coupling",
+        "label": "Coupling"
+      },
+      {
+        "id": "urn:visionflow:linked:cycloidal-drive",
+        "label": "Cycloidal Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:flexure",
+        "label": "Flexure"
+      },
+      {
+        "id": "urn:visionflow:linked:harmonic-drive",
+        "label": "Harmonic Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:mounting-interface",
+        "label": "Mounting Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:planetary-gearbox",
+        "label": "Planetary Gearbox"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-housing",
+        "label": "Sensor Housing"
+      },
+      {
+        "id": "urn:visionflow:linked:structural-frame",
+        "label": "Structural Frame"
+      },
+      {
+        "id": "urn:visionflow:linked:transmission",
+        "label": "Transmission"
+      },
+      {
+        "id": "urn:visionflow:owl:class:end-effector",
+        "label": "End-Effector"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:fatigue-analysis",
+        "label": "Fatigue Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:lubrication",
+        "label": "Lubrication"
+      },
+      {
+        "id": "urn:visionflow:linked:manufacturing-process",
+        "label": "Manufacturing Process"
+      },
+      {
+        "id": "urn:visionflow:linked:material-science",
+        "label": "Material Science"
+      },
+      {
+        "id": "urn:visionflow:linked:surface-finishing",
+        "label": "Surface Finishing"
+      },
+      {
+        "id": "urn:visionflow:linked:tolerance-stack-analysis",
+        "label": "Tolerance Stack Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:tribology",
+        "label": "Tribology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:backdrivability",
+        "label": "Backdrivability"
+      },
+      {
+        "id": "urn:visionflow:linked:payload-capacity",
+        "label": "Payload Capacity"
+      },
+      {
+        "id": "urn:visionflow:linked:positional-accuracy",
+        "label": "Positional Accuracy"
+      },
+      {
+        "id": "urn:visionflow:linked:quasi-direct-drive",
+        "label": "Quasi-Direct Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ball-screw-mechanism",
+        "label": "Ball Screw Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:cable-drive",
+        "label": "Cable Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:cycloidal-drive",
+        "label": "Cycloidal Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:harmonic-drive",
+        "label": "Harmonic Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:planetary-gearbox",
+        "label": "Planetary Gearbox"
+      },
+      {
+        "id": "urn:visionflow:linked:quasi-direct-drive",
+        "label": "Quasi-Direct Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:visionflow:linked:strain-wave-gearing",
+        "label": "Strain-Wave Gearing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "additive-manufacturing",
+      "label": "Additive Manufacturing"
+    },
+    {
+      "slug": "additive-manufacturing",
+      "label": "Additive Manufacturing"
+    },
+    {
+      "slug": "additive-manufacturing",
+      "label": "Additive Manufacturing"
+    },
+    {
+      "slug": "aluminium-alloy",
+      "label": "Aluminium Alloy"
+    },
+    {
+      "slug": "aluminium-alloy",
+      "label": "Aluminium Alloy"
+    },
+    {
+      "slug": "backdrivability",
+      "label": "Backdrivability"
+    },
+    {
+      "slug": "ball-screw",
+      "label": "Ball Screw"
+    },
+    {
+      "slug": "ball-screw",
+      "label": "Ball Screw"
+    },
+    {
+      "slug": "ball-screw-mechanism",
+      "label": "Ball Screw Mechanism"
+    },
+    {
+      "slug": "bearing",
+      "label": "Bearing"
+    },
+    {
+      "slug": "bearing",
+      "label": "Bearing"
+    },
+    {
+      "slug": "bearing",
+      "label": "Bearing"
+    },
+    {
+      "slug": "bldc-motor",
+      "label": "BLDC Motor"
+    },
+    {
+      "slug": "cable-drive",
+      "label": "Cable Drive"
+    },
+    {
+      "slug": "cable-drive",
+      "label": "Cable Drive"
+    },
+    {
+      "slug": "carbon-fibre-composite",
+      "label": "Carbon Fibre Composite"
+    },
+    {
+      "slug": "carbon-fibre-composite",
+      "label": "Carbon Fibre Composite"
+    },
+    {
+      "slug": "carbon-fibre-composite",
+      "label": "Carbon Fibre Composite"
+    },
+    {
+      "slug": "carbon-fibre-composite",
+      "label": "Carbon Fibre Composite"
+    },
+    {
+      "slug": "cfrp-laminate",
+      "label": "CFRP Laminate"
+    },
+    {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
+      "slug": "compliant-mechanism",
+      "label": "Compliant Mechanism"
+    },
+    {
+      "slug": "compliant-mechanism",
+      "label": "Compliant Mechanism"
+    },
+    {
+      "slug": "compliant-mechanism",
+      "label": "Compliant Mechanism"
+    },
+    {
+      "slug": "compliant-mechanism",
+      "label": "Compliant Mechanism"
+    },
+    {
+      "slug": "computation-hardware",
+      "label": "Computation Hardware"
+    },
+    {
+      "slug": "coupling",
+      "label": "Coupling"
+    },
+    {
+      "slug": "coupling",
+      "label": "Coupling"
+    },
+    {
+      "slug": "cycloidal-drive",
+      "label": "Cycloidal Drive"
+    },
+    {
+      "slug": "cycloidal-drive",
+      "label": "Cycloidal Drive"
+    },
+    {
+      "slug": "cycloidal-drive",
+      "label": "Cycloidal Drive"
+    },
+    {
+      "slug": "cycloidal-drive",
+      "label": "Cycloidal Drive"
+    },
+    {
+      "slug": "cycloidal-drive",
+      "label": "Cycloidal Drive"
+    },
+    {
+      "slug": "cycloidal-drive",
+      "label": "Cycloidal Drive"
+    },
+    {
+      "slug": "din-3960-gear-standards",
+      "label": "DIN 3960 Gear Standards"
+    },
+    {
+      "slug": "elastomer",
+      "label": "Elastomer"
+    },
+    {
+      "slug": "electronic-component",
+      "label": "Electronic Component"
+    },
+    {
+      "slug": "fatigue-analysis",
+      "label": "Fatigue Analysis"
+    },
+    {
+      "slug": "finite-element-analysis",
+      "label": "Finite Element Analysis"
+    },
+    {
+      "slug": "flexure",
+      "label": "Flexure"
+    },
+    {
+      "slug": "force-sensing",
+      "label": "Force Sensing"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "harmonic-drive",
+      "label": "Harmonic Drive"
+    },
+    {
+      "slug": "harmonic-drive",
+      "label": "Harmonic Drive"
+    },
+    {
+      "slug": "harmonic-drive",
+      "label": "Harmonic Drive"
+    },
+    {
+      "slug": "harmonic-drive",
+      "label": "Harmonic Drive"
+    },
+    {
+      "slug": "humanoid-robots",
+      "label": "Humanoid Robots"
+    },
+    {
+      "slug": "humanoid-robots",
+      "label": "Humanoid Robots"
+    },
+    {
+      "slug": "humanoid-robots",
+      "label": "Humanoid Robots"
+    },
+    {
+      "slug": "ieee-robotics-standards",
+      "label": "IEEE Robotics Standards"
+    },
+    {
+      "slug": "industrial-manipulators",
+      "label": "Industrial Manipulators"
+    },
+    {
+      "slug": "industrial-manipulators",
+      "label": "Industrial Manipulators"
+    },
+    {
+      "slug": "industrial-manipulators",
+      "label": "Industrial Manipulators"
+    },
+    {
+      "slug": "industrial-manipulators",
+      "label": "Industrial Manipulators"
+    },
+    {
+      "slug": "iso-10218",
+      "label": "ISO 10218"
+    },
+    {
+      "slug": "iso-281-bearing-life",
+      "label": "ISO 281 Bearing Life"
+    },
+    {
+      "slug": "iso-9283",
+      "label": "ISO 9283"
+    },
+    {
+      "slug": "iso-ts-15066",
+      "label": "ISO TS 15066"
+    },
+    {
+      "slug": "kinematic-chain",
+      "label": "Kinematic Chain"
+    },
+    {
+      "slug": "kinematic-layer",
+      "label": "KinematicLayer"
+    },
+    {
+      "slug": "legged-robotics",
+      "label": "Legged Robotics"
+    },
+    {
+      "slug": "legged-robotics",
+      "label": "Legged Robotics"
+    },
+    {
+      "slug": "legged-robotics",
+      "label": "Legged Robotics"
+    },
+    {
+      "slug": "legged-robotics",
+      "label": "Legged Robotics"
+    },
+    {
+      "slug": "legged-robotics",
+      "label": "Legged Robotics"
+    },
+    {
+      "slug": "lubrication",
+      "label": "Lubrication"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "ManufacturingDomain"
+    },
+    {
+      "slug": "manufacturing-process",
+      "label": "Manufacturing Process"
+    },
+    {
+      "slug": "manufacturing-product",
+      "label": "Manufacturing Product"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "mechanical-engineering",
+      "label": "Mechanical Engineering"
+    },
+    {
+      "slug": "mechanical-engineering-domain",
+      "label": "MechanicalEngineeringDomain"
+    },
+    {
+      "slug": "mechatronic-system",
+      "label": "Mechatronic System"
+    },
+    {
+      "slug": "mounting-interface",
+      "label": "Mounting Interface"
+    },
+    {
+      "slug": "payload-capacity",
+      "label": "Payload Capacity"
+    },
+    {
+      "slug": "physical-system",
+      "label": "Physical System"
+    },
+    {
+      "slug": "piezoelectric-material",
+      "label": "Piezoelectric Material"
+    },
+    {
+      "slug": "planetary-gearbox",
+      "label": "Planetary Gearbox"
+    },
+    {
+      "slug": "planetary-gearbox",
+      "label": "Planetary Gearbox"
+    },
+    {
+      "slug": "planetary-gearbox",
+      "label": "Planetary Gearbox"
+    },
+    {
+      "slug": "planetary-gearbox",
+      "label": "Planetary Gearbox"
+    },
+    {
+      "slug": "planetary-gearbox",
+      "label": "Planetary Gearbox"
+    },
+    {
+      "slug": "planetary-gearbox",
+      "label": "Planetary Gearbox"
+    },
+    {
+      "slug": "positional-accuracy",
+      "label": "Positional Accuracy"
+    },
+    {
+      "slug": "proprioceptive-sensing",
+      "label": "Proprioceptive Sensing"
+    },
+    {
+      "slug": "proprioceptive-sensing",
+      "label": "Proprioceptive Sensing"
+    },
+    {
+      "slug": "prosthetics",
+      "label": "Prosthetics"
+    },
+    {
+      "slug": "prosthetics",
+      "label": "Prosthetics"
+    },
+    {
+      "slug": "prosthetics",
+      "label": "Prosthetics"
+    },
+    {
+      "slug": "prosthetics",
+      "label": "Prosthetics"
+    },
+    {
+      "slug": "quasi-direct-drive",
+      "label": "Quasi-Direct Drive"
+    },
+    {
+      "slug": "quasi-direct-drive",
+      "label": "Quasi-Direct Drive"
+    },
+    {
+      "slug": "quasi-direct-drive",
+      "label": "Quasi-Direct Drive"
+    },
+    {
+      "slug": "quasi-direct-drive",
+      "label": "Quasi-Direct Drive"
+    },
+    {
+      "slug": "quasi-direct-drive",
+      "label": "Quasi-Direct Drive"
+    },
+    {
+      "slug": "quasi-direct-drive",
+      "label": "Quasi-Direct Drive"
+    },
+    {
+      "slug": "robot-design",
+      "label": "Robot Design"
+    },
+    {
+      "slug": "robot-design",
+      "label": "Robot Design"
+    },
+    {
+      "slug": "robot-design",
+      "label": "Robot Design"
+    },
+    {
+      "slug": "sensor-housing",
+      "label": "Sensor Housing"
+    },
+    {
+      "slug": "series-elastic-actuation",
+      "label": "Series Elastic Actuation"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "shape-memory-alloy",
+      "label": "Shape Memory Alloy"
+    },
+    {
+      "slug": "shape-memory-alloy",
+      "label": "Shape Memory Alloy"
+    },
+    {
+      "slug": "shape-memory-alloy",
+      "label": "Shape Memory Alloy"
+    },
+    {
+      "slug": "shape-memory-alloy",
+      "label": "Shape Memory Alloy"
+    },
+    {
+      "slug": "software-component",
+      "label": "Software Component"
+    },
+    {
+      "slug": "software-component",
+      "label": "Software Component"
+    },
+    {
+      "slug": "space-robotics",
+      "label": "Space Robotics"
+    },
+    {
+      "slug": "steel-alloy",
+      "label": "Steel Alloy"
+    },
+    {
+      "slug": "strain-wave-gearing",
+      "label": "Strain-Wave Gearing"
+    },
+    {
+      "slug": "structural-frame",
+      "label": "Structural Frame"
+    },
+    {
+      "slug": "structural-frame",
+      "label": "Structural Frame"
+    },
+    {
+      "slug": "surface-finishing",
+      "label": "Surface Finishing"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "thermal-management",
+      "label": "Thermal Management"
+    },
+    {
+      "slug": "titanium-alloy",
+      "label": "Titanium Alloy"
+    },
+    {
+      "slug": "tolerance-stack-analysis",
+      "label": "Tolerance Stack Analysis"
+    },
+    {
+      "slug": "topology-optimisation",
+      "label": "Topology Optimisation"
+    },
+    {
+      "slug": "transmission",
+      "label": "Transmission"
+    },
+    {
+      "slug": "transmission",
+      "label": "Transmission"
+    },
+    {
+      "slug": "tribology",
+      "label": "Tribology"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "delta-robot",
+      "label": "Delta Robot"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End-Effector"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End-Effector"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End-Effector"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "robot-dynamics",
+      "label": "Robot Dynamics"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robot-kinematics",
+      "label": "Robot Kinematics"
+    },
+    {
+      "slug": "robot-kinematics",
+      "label": "Robot Kinematics"
+    },
+    {
+      "slug": "robot-kinematics",
+      "label": "Robot Kinematics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "end-effector",
+      "label": "End Effector"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robot-link",
+      "label": "RobotLink"
+    }
+  ]
+}

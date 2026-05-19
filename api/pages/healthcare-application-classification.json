@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a",
+  "title": "Healthcare Application Classification",
+  "slug": "healthcare-application-classification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:healthcare-application-classification",
+  "domain": "artificial-intelligence",
+  "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:healthcare-technology",
+      "label": "Healthcare Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:structured-healthcare-innovation",
+        "label": "Structured Healthcare Innovation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "structured-healthcare-innovation",
+      "label": "Structured Healthcare Innovation"
+    },
+    {
+      "slug": "healthcare-technology",
+      "label": "Healthcare Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-application-health",
+      "label": "ETSI Domain Application + Health"
+    }
+  ]
+}

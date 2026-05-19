@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:9fa0b99bd2d36744fb6372907bf72229544b7178a54ee8e604ce9306b65f2c0b",
+  "title": "Distributed Protocol",
+  "slug": "distributed-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributed-protocol",
+  "domain": "blockchain",
+  "definition": "A Distributed Protocol is a formally specified set of rules, message formats, and procedures governing communication, coordination, and state synchronization among independent nodes in a distributed network without centralized control. Unlike centralized protocols where a single authoritative server coordinates client interactions, distributed protocols enable peer-to-peer coordination where participants jointly implement the protocol logic to achieve system-wide objectives. These protocols must address fundamental distributed systems challenges including asynchronous message delivery, network partitions, Byzantine failures (where nodes may behave arbitrarily or maliciously), and the impossibility of perfectly coordinating clocks across geographic distances. Blockchain distributed protocols encompass consensus protocols for agreeing on transaction ordering, gossip protocols for information dissemination, peer discovery protocols for network topology management, and state synchronization protocols for new node bootstrapping. Effective distributed protocols must specify normal operation (how honest nodes behave), failure handling (how to detect and recover from node failures), and at",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "block-propagation-protocol",
+      "label": "Block Propagation Protocol"
+    },
+    {
+      "slug": "byzantine-agreement-protocols",
+      "label": "Byzantine Agreement Protocols"
+    },
+    {
+      "slug": "distributed-systems-concepts-and-design",
+      "label": "Distributed Systems: Concepts and Design"
+    },
+    {
+      "slug": "peer-discovery-protocol",
+      "label": "Peer Discovery Protocol"
+    },
+    {
+      "slug": "peer-to-peer-networks",
+      "label": "Peer-to-Peer Networks"
+    },
+    {
+      "slug": "state-synchronization-protocol",
+      "label": "State Synchronization Protocol"
+    },
+    {
+      "slug": "transaction-broadcast-protocol",
+      "label": "Transaction Broadcast Protocol"
+    },
+    {
+      "slug": "agreement-protocol",
+      "label": "Agreement Protocol"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agreement-protocol",
+      "label": "Agreement Protocol"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    }
+  ]
+}

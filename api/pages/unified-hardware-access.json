@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:cacd57ff9cba45aa8e2b10b40358d68d943eb09523704d7e1b77eb447db01705",
+  "title": "Unified Hardware Access",
+  "slug": "unified-hardware-access",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:unified-hardware-access",
+  "domain": "spatial-computing",
+  "definition": "A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:hardware-abstraction",
+      "label": "Hardware Abstraction"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-abstraction",
+      "label": "Hardware Abstraction"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    }
+  ]
+}

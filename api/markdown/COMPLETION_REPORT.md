@@ -1,25 +1,283 @@
-iri:: http://narrativegoldmine.com/spatial-computing#COMPLETIONREPORT
-uri:: urn:visionclaw:concept:spatial-computing:completionreport
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:completionreport
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: COMPLETION_REPORT
-content-hash:: sha256-12-ad9c1cd577a2
-legacy-term-id:: MV-3064
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#COMPLETIONREPORT
+legacy_uri:: urn:visionclaw:concept:spatial-computing:completionreport
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# COMPLETION_REPORT
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b",
+  "@type": "Page",
+  "vc:slug": "completion-report",
+  "title": "COMPLETION_REPORT",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:deliverables",
+      "vc:label": "Deliverables"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:project",
+      "vc:label": "Project"
+    },
+    {
+      "@id": "urn:visionflow:linked:project-governance",
+      "vc:label": "Project Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:quality-metrics",
+      "vc:label": "Quality Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:sign-off-records",
+      "vc:label": "Sign-off Records"
+    },
+    {
+      "@id": "urn:visionflow:linked:stakeholder-communication",
+      "vc:label": "Stakeholder Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-world-wide-web-consortium",
+      "vc:label": "W3C (World Wide Web Consortium)"
+    },
+    {
+      "@id": "urn:visionflow:linked:work-package",
+      "vc:label": "Work Package"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ad9c1cd577a2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#COMPLETIONREPORT"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3064"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "COMPLETION_REPORT"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:completionreport"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:completionreport"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:completion-report",
+  "@type": "OntologyClass",
+  "label": "COMPLETION_REPORT",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed [[Project]] or [[Work Package]]. Completion reports capture [[Deliverables]], [[Quality Metrics]], and [[Sign-off Records]] necessary for [[Project Governance]] and [[Stakeholder Communication]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:completion-report:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Deliverables]]",
+      "resolved": "urn:visionflow:linked:deliverables",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Project]]",
+      "resolved": "urn:visionflow:linked:project",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Project Governance]]",
+      "resolved": "urn:visionflow:linked:project-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quality Metrics]]",
+      "resolved": "urn:visionflow:linked:quality-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sign-off Records]]",
+      "resolved": "urn:visionflow:linked:sign-off-records",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stakeholder Communication]]",
+      "resolved": "urn:visionflow:linked:stakeholder-communication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C (World Wide Web Consortium)]]",
+      "resolved": "urn:visionflow:linked:w3-c-world-wide-web-consortium",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Work Package]]",
+      "resolved": "urn:visionflow:linked:work-package",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed [[Project]] or [[Work Package]]. Completion reports capture [[Deliverables]], [[Quality Metrics]], and [[Sign-off Records]] necessary for [[Project Governance]] and [[Stakeholder Communication]].

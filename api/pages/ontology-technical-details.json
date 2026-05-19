@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808",
+  "title": "ONTOLOGY_TECHNICAL_DETAILS",
+  "slug": "ontology-technical-details",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ontology-technical-details",
+  "domain": "infrastructure",
+  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-data-structure",
+      "label": "DistributedDataStructure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:record-keeping-system",
+      "label": "Record-Keeping System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0427-hyperledger-besu",
+      "label": "BC-0427-hyperledger-besu"
+    },
+    {
+      "slug": "bc-0428-enterprise-blockchain-architecture",
+      "label": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "slug": "bc-0429-permissioned-blockchain",
+      "label": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0430-private-channels",
+      "label": "BC-0430-private-channels"
+    },
+    {
+      "slug": "untitled",
+      "label": "..."
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "DistributedDataStructure"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "Distributed Data Structure"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "distributed-protocol",
+      "label": "Distributed Protocol"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "enterprise-blockchain-architecture",
+      "label": "Enterprise Blockchain Architecture"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "mathematical-science",
+      "label": "Mathematical Science"
+    },
+    {
+      "slug": "node",
+      "label": "Node"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "private-channels",
+      "label": "Private Channels"
+    },
+    {
+      "slug": "record-keeping-system",
+      "label": "Record-Keeping System"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    }
+  ],
+  "backlinks": []
+}

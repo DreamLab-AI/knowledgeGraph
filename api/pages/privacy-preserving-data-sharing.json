@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:6fcc5f99f99d3c789105cc3c88851384300a7cd672bf9769d8e61041ade58404",
+  "title": "Privacy Preserving Data Sharing",
+  "slug": "privacy-preserving-data-sharing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-preserving-data-sharing",
+  "domain": "infrastructure",
+  "definition": "Technologies and protocols enabling secure exchange of data between parties while protecting sensitive information through techniques such as differential privacy, secure multi-party computation, federated learning, and synthetic data generation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-sharing",
+      "label": "Data Sharing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-analytics",
+        "label": "Collaborative Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-analytics",
+      "label": "Collaborative Analytics"
+    },
+    {
+      "slug": "data-sharing",
+      "label": "Data Sharing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "synthetic-data-generator",
+      "label": "Synthetic Data Generator"
+    }
+  ]
+}

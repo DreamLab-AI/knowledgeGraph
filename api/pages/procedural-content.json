@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:fccc2d98aa829611a52790043ab9fc79257fd717cd4d00ffa1c08ee417155ea5",
+  "title": "Procedural Content",
+  "slug": "procedural-content",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:procedural-content",
+  "domain": "spatial-computing",
+  "definition": "ProceduralContent is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "noise-function-library",
+      "label": "Noise Function Library"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:d1ced0ecbc0d9072d8a7ffba01d384e6dc563a96643b6fadbdbaaa6a26de0604",
+  "title": "NLPTask",
+  "slug": "nlptask",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nlptask",
+  "domain": "infrastructure",
+  "definition": "Natural Language Processing (NLP) tasks are computational problems involving human language understanding and generation, including text classification, sentiment analysis (identifying positive/negative/neutral opinions), named entity recognition, machine translation, text summarization, and question answering. These tasks leverage machine learning approaches from traditional models (Naive Bayes, SVM) to transformer-based architectures (BERT, GPT) that have revolutionized accuracy through powerful text representations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

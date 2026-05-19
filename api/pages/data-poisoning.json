@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801",
+  "title": "Data Poisoning",
+  "slug": "data-poisoning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-poisoning",
+  "domain": "artificial-intelligence",
+  "definition": "A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:adversarial-attack",
+      "label": "Adversarial Attack"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ball2020metaverse",
+      "label": "ball2020metaverse"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "mitre-atlas",
+      "label": "MITRE ATLAS"
+    },
+    {
+      "slug": "ncsc",
+      "label": "NCSC"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "neural networks"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "wouters2022",
+      "label": "Wouters2022"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "computer vision"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "latent-space",
+      "label": "latent space"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

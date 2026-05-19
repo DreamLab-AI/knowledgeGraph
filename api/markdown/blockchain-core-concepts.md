@@ -1,22 +1,3 @@
-iri:: http://narrativegoldmine.com/infrastructure#BlockchainCoreConcepts
-uri:: urn:visionclaw:concept:infrastructure:blockchain-core-concepts
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:blockchain-core-concepts
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: blockchain core concepts
-content-hash:: sha256-12-86312f066ef2
-legacy-term-id:: MV-3067
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-public:: true
-
 - ### Definition
   - Core blockchain concepts encompass distributed ledger technology fundamentals including [[Consensus|consensus mechanisms]] ([[ProofOfWork|PoW]], [[ProofOfStake|PoS]]), [[CryptographyFundamentals|cryptographic primitives]] ([[PublicKeyEncryption|PKC]], [[DigitalSignature|signatures]]), and [[DataStructure|data structures]] ([[MerkleTree|Merkle trees]], [[HashFunction|hash functions]]). Essential components include [[Transaction|transactions]], [[SmartContract|smart contracts]], [[Token|tokens]], and [[BlockchainGovernance|governance mechanisms]], with application frameworks spanning [[DecentralisedFinance|DeFi]], [[NFT|NFTs]], and [[MetaverseEconomy|metaverse economies]]. Broader considerations encompass [[Scalability|scalability]] solutions ([[LayerTwo|Layer 2s]]), [[Interoperability|cross-chain interoperability]], [[PrivacyEnhancements|privacy enhancements]], and [[RegulatoryCompliance|regulatory compliance]] across jurisdictions.
 
@@ -56,7 +37,7 @@ public:: true
 		  - ## Infrastructure & Scaling
 		    - [[Layer2Scaling]] - Scalability solutions (rollups, channels)
 		    - [[DecentralizedStorage]] - Distributed file storage systems
-		    - [[Oracle]] - External data bridges for smart contracts
+		    - [[Blockchain Oracle]] - External data bridges for smart contracts
 		    - [[CrossChainBridge]] - Inter-blockchain asset transfers
 
 		  - ## Cross-Domain Integration

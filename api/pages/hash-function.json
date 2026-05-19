@@ -1,0 +1,680 @@
+{
+  "id": "urn:visionflow:page:f7e02cf5d0ba2fff15f40a10ed5cee40609f0cbc23a37ae231906fb8d8d0385f",
+  "title": "Hash Function",
+  "slug": "hash-function",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hash-function",
+  "domain": "blockchain",
+  "definition": "A [[Hash Function]] is a deterministic computational mapping H: {0,1}* \u2192 {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n \u2208 {128, 160, 224, 256, 384, 512}), whose security and utility derive from three formally distinct property regimes governing different deployment contexts: (1) **cryptographic hash functions** simultaneously satisfying pre-image resistance (given y \u2208 {0,1}^n it is computationally infeasible to find any x such that H(x) = y, requiring \u22482^n work), second pre-image resistance (given x\u2081 it is infeasible to find x\u2082 \u2260 x\u2081 with H(x\u2081) = H(x\u2082), \u22482^n work), collision resistance (it is infeasible to find any pair x\u2081 \u2260 x\u2082 with H(x\u2081) = H(x\u2082), bounded below by the birthday paradox at \u22482^(n/2) work), and ideally pseudo-randomness / indistinguishability from a random oracle, instantiated by NIST-standardised constructions including SHA-1 (Merkle-Damg\u00e5rd, 160-bit, deprecated by NIST SP 800-131A in 2011 following Wang et al. 2005 theoretical collision attack at 2^69 operations and broken by SHAttered Stevens-Bursztein-Karpman-Albertini-Markov 2017 Google Mountain View producing t",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:compression-function",
+      "label": "Compression Function"
+    },
+    {
+      "id": "urn:visionflow:linked:cryptographic-algorithm",
+      "label": "Cryptographic Algorithm"
+    },
+    {
+      "id": "urn:visionflow:linked:deterministic-function",
+      "label": "Deterministic Function"
+    },
+    {
+      "id": "urn:visionflow:linked:digital-fingerprint",
+      "label": "Digital Fingerprint"
+    },
+    {
+      "id": "urn:visionflow:linked:one-way-function",
+      "label": "One-Way Function"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:compression-function",
+        "label": "Compression Function"
+      },
+      {
+        "id": "urn:visionflow:linked:initialization-vector",
+        "label": "Initialization Vector"
+      },
+      {
+        "id": "urn:visionflow:linked:internal-state",
+        "label": "Internal State"
+      },
+      {
+        "id": "urn:visionflow:linked:output-truncation",
+        "label": "Output Truncation"
+      },
+      {
+        "id": "urn:visionflow:linked:padding-scheme",
+        "label": "Padding Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:round-function",
+        "label": "Round Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:avalanche-effect",
+        "label": "Avalanche Effect"
+      },
+      {
+        "id": "urn:visionflow:linked:computational-security",
+        "label": "Computational Security"
+      },
+      {
+        "id": "urn:visionflow:linked:determinism",
+        "label": "Determinism"
+      },
+      {
+        "id": "urn:visionflow:linked:pseudo-randomness",
+        "label": "Pseudo-Randomness"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:blockchain-immutability",
+        "label": "Blockchain Immutability"
+      },
+      {
+        "id": "urn:visionflow:linked:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "id": "urn:visionflow:linked:key-derivation",
+        "label": "Key Derivation"
+      },
+      {
+        "id": "urn:visionflow:linked:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:visionflow:linked:password-storage",
+        "label": "Password Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof-of-Work"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:indistinguishability",
+        "label": "Indistinguishability"
+      },
+      {
+        "id": "urn:visionflow:linked:pre-image-resistance",
+        "label": "Pre-Image Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:random-oracle-model",
+        "label": "Random Oracle Model"
+      },
+      {
+        "id": "urn:visionflow:linked:second-pre-image-resistance",
+        "label": "Second Pre-Image Resistance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-resistance",
+        "label": "Collision Resistance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "albrecht-grassi-rechberger-roy-tiessen-2016-mi-mc-asiacrypt",
+      "label": "Albrecht Grassi Rechberger Roy Tiessen 2016 MiMC ASIACRYPT"
+    },
+    {
+      "slug": "aumasson-et-al-2013-blake2-acns",
+      "label": "Aumasson et al. 2013 BLAKE2 ACNS"
+    },
+    {
+      "slug": "avalanche-effect",
+      "label": "Avalanche Effect"
+    },
+    {
+      "slug": "bellare-and-rogaway-1993-random-oracle-model",
+      "label": "Bellare & Rogaway 1993 Random Oracle Model"
+    },
+    {
+      "slug": "bellare-canetti-krawczyk-1996-hmac-crypto",
+      "label": "Bellare Canetti Krawczyk 1996 HMAC CRYPTO"
+    },
+    {
+      "slug": "bernstein-et-al-2019-sphincs-acm-ccs",
+      "label": "Bernstein et al. 2019 SPHINCS+ ACM CCS"
+    },
+    {
+      "slug": "bertoni-daemen-peeters-van-assche-2007-sponge-functions",
+      "label": "Bertoni Daemen Peeters Van Assche 2007 Sponge Functions"
+    },
+    {
+      "slug": "bertoni-et-al-2013-keccak-eurocrypt",
+      "label": "Bertoni et al. 2013 Keccak EUROCRYPT"
+    },
+    {
+      "slug": "bertoni-et-al-2016-kangaroo-twelve",
+      "label": "Bertoni et al. 2016 KangarooTwelve"
+    },
+    {
+      "slug": "birthday-attack",
+      "label": "Birthday Attack"
+    },
+    {
+      "slug": "biryukov-dinu-khovratovich-2016-argon2-euro-s-and-p",
+      "label": "Biryukov Dinu Khovratovich 2016 Argon2 EuroS&P"
+    },
+    {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
+      "slug": "bitwise-operations",
+      "label": "Bitwise Operations"
+    },
+    {
+      "slug": "blockchain-immutability",
+      "label": "Blockchain Immutability"
+    },
+    {
+      "slug": "bloom-filter",
+      "label": "Bloom Filter"
+    },
+    {
+      "slug": "boolean-algebra",
+      "label": "Boolean Algebra"
+    },
+    {
+      "slug": "certificate-transparency",
+      "label": "Certificate Transparency"
+    },
+    {
+      "slug": "checksum",
+      "label": "Checksum"
+    },
+    {
+      "slug": "code-signing",
+      "label": "Code Signing"
+    },
+    {
+      "slug": "commitment-scheme",
+      "label": "Commitment Scheme"
+    },
+    {
+      "slug": "complexity-theory",
+      "label": "Complexity Theory"
+    },
+    {
+      "slug": "compression-function",
+      "label": "Compression Function"
+    },
+    {
+      "slug": "computational-security",
+      "label": "Computational Security"
+    },
+    {
+      "slug": "computational-security-domain",
+      "label": "ComputationalSecurityDomain"
+    },
+    {
+      "slug": "cryptanalysis",
+      "label": "Cryptanalysis"
+    },
+    {
+      "slug": "cryptographic-algorithm",
+      "label": "Cryptographic Algorithm"
+    },
+    {
+      "slug": "cryptographic-layer",
+      "label": "CryptographicLayer"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "damg-rd-1989-design-principle-for-hash-functions",
+      "label": "Damg\u00e5rd 1989 Design Principle for Hash Functions"
+    },
+    {
+      "slug": "data-integrity",
+      "label": "Data Integrity"
+    },
+    {
+      "slug": "davies-meyer-construction",
+      "label": "Davies-Meyer Construction"
+    },
+    {
+      "slug": "deduplication",
+      "label": "Deduplication"
+    },
+    {
+      "slug": "determinism",
+      "label": "Determinism"
+    },
+    {
+      "slug": "deterministic-function",
+      "label": "Deterministic Function"
+    },
+    {
+      "slug": "digital-fingerprint",
+      "label": "Digital Fingerprint"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "error-detection-code",
+      "label": "Error Detection Code"
+    },
+    {
+      "slug": "finite-field-arithmetic",
+      "label": "Finite Field Arithmetic"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "grassi-khovratovich-rechberger-roy-schofnegger-2021-poseidon-usenix",
+      "label": "Grassi Khovratovich Rechberger Roy Schofnegger 2021 Poseidon USENIX"
+    },
+    {
+      "slug": "haifa-construction",
+      "label": "HAIFA Construction"
+    },
+    {
+      "slug": "ietf-rfc-2104-hmac",
+      "label": "IETF RFC 2104 HMAC"
+    },
+    {
+      "slug": "ietf-rfc-6234",
+      "label": "IETF RFC 6234"
+    },
+    {
+      "slug": "ietf-rfc-8439",
+      "label": "IETF RFC 8439"
+    },
+    {
+      "slug": "ietf-rfc-9106-argon2",
+      "label": "IETF RFC 9106 Argon2"
+    },
+    {
+      "slug": "indistinguishability",
+      "label": "Indistinguishability"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "InformationSecurityDomain"
+    },
+    {
+      "slug": "initialization-vector",
+      "label": "Initialization Vector"
+    },
+    {
+      "slug": "internal-state",
+      "label": "Internal State"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "iso-iec-10118-3",
+      "label": "ISO/IEC 10118-3"
+    },
+    {
+      "slug": "key-derivation",
+      "label": "Key Derivation"
+    },
+    {
+      "slug": "length-extension-attack",
+      "label": "Length-Extension Attack"
+    },
+    {
+      "slug": "leurent-and-peyrin-2020-sha-1-is-a-shambles",
+      "label": "Leurent & Peyrin 2020 SHA-1 is a Shambles"
+    },
+    {
+      "slug": "merkle-1989-one-way-hash-functions",
+      "label": "Merkle 1989 One Way Hash Functions"
+    },
+    {
+      "slug": "merkle-damg-rd-construction",
+      "label": "Merkle-Damg\u00e5rd Construction"
+    },
+    {
+      "slug": "message-authentication-code",
+      "label": "Message Authentication Code"
+    },
+    {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "nist-fips-180-4",
+      "label": "NIST FIPS 180-4"
+    },
+    {
+      "slug": "nist-fips-180-4-sha-standard",
+      "label": "NIST FIPS 180-4 SHA Standard"
+    },
+    {
+      "slug": "nist-fips-202",
+      "label": "NIST FIPS 202"
+    },
+    {
+      "slug": "nist-fips-202-sha-3-standard",
+      "label": "NIST FIPS 202 SHA-3 Standard"
+    },
+    {
+      "slug": "nist-fips-205",
+      "label": "NIST FIPS 205"
+    },
+    {
+      "slug": "nist-fips-205-slh-dsa-sphincs",
+      "label": "NIST FIPS 205 SLH-DSA SPHINCS+"
+    },
+    {
+      "slug": "nist-sp-800-185-sha-3-derived-functions",
+      "label": "NIST SP 800-185 SHA-3 Derived Functions"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "o-connor-et-al-2020-blake3-whitepaper",
+      "label": "O'Connor et al. 2020 BLAKE3 Whitepaper"
+    },
+    {
+      "slug": "one-way-function",
+      "label": "One-Way Function"
+    },
+    {
+      "slug": "output-truncation",
+      "label": "Output Truncation"
+    },
+    {
+      "slug": "padding-scheme",
+      "label": "Padding Scheme"
+    },
+    {
+      "slug": "password-storage",
+      "label": "Password Storage"
+    },
+    {
+      "slug": "percival-2009-scrypt-bsdcan",
+      "label": "Percival 2009 scrypt BSDCan"
+    },
+    {
+      "slug": "pre-image-resistance",
+      "label": "Pre-Image Resistance"
+    },
+    {
+      "slug": "preneel-2010-first-30-years-of-cryptographic-hash-functions",
+      "label": "Preneel 2010 First 30 Years of Cryptographic Hash Functions"
+    },
+    {
+      "slug": "provos-and-mazi-res-1999-bcrypt-usenix",
+      "label": "Provos & Mazi\u00e8res 1999 bcrypt USENIX"
+    },
+    {
+      "slug": "pseudo-randomness",
+      "label": "Pseudo-Randomness"
+    },
+    {
+      "slug": "random-oracle-model",
+      "label": "Random Oracle Model"
+    },
+    {
+      "slug": "rfc-5869-hkdf-krawczyk-eronen",
+      "label": "RFC 5869 HKDF Krawczyk Eronen"
+    },
+    {
+      "slug": "rfc-8391-xmss-huelsing-et-al",
+      "label": "RFC 8391 XMSS Huelsing et al."
+    },
+    {
+      "slug": "rfc-8439-cha-cha20-poly1305-nir-langley",
+      "label": "RFC 8439 ChaCha20-Poly1305 Nir Langley"
+    },
+    {
+      "slug": "rfc-8554-lms-mc-grew-curcio-fluhrer",
+      "label": "RFC 8554 LMS McGrew Curcio Fluhrer"
+    },
+    {
+      "slug": "rfc-9106-argon2-memory-hard-function",
+      "label": "RFC 9106 Argon2 Memory-Hard Function"
+    },
+    {
+      "slug": "round-function",
+      "label": "Round Function"
+    },
+    {
+      "slug": "second-pre-image-resistance",
+      "label": "Second Pre-Image Resistance"
+    },
+    {
+      "slug": "side-channel-attack",
+      "label": "Side-Channel Attack"
+    },
+    {
+      "slug": "sponge-construction",
+      "label": "Sponge Construction"
+    },
+    {
+      "slug": "stevens-et-al-2017-shattered-first-sha-1-collision",
+      "label": "Stevens et al. 2017 SHAttered First SHA-1 Collision"
+    },
+    {
+      "slug": "tls",
+      "label": "TLS"
+    },
+    {
+      "slug": "wang-yin-yu-2005-finding-collisions-in-full-sha-1",
+      "label": "Wang Yin Yu 2005 Finding Collisions in Full SHA-1"
+    },
+    {
+      "slug": "wide-pipe-construction",
+      "label": "Wide-Pipe Construction"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "collision-resistance",
+      "label": "Collision Resistance"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

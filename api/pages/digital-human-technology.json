@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:c5f87529b20a2a0e4ca7fbbfa258d80e81a5ea70512be6015ca04c2bc4782a1a",
+  "title": "Digital Human Technology",
+  "slug": "digital-human-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-human-technology",
+  "domain": "spatial-computing",
+  "definition": "Digital Human Technology is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-actor-creation",
+      "label": "Digital Actor Creation"
+    }
+  ]
+}

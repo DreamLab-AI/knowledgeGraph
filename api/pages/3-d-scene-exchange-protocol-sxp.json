@@ -1,0 +1,528 @@
+{
+  "id": "urn:visionflow:page:7547c4f32919fdf486ed225dde8e0f190297e3dd8710395261bc9f0bf8b4df91",
+  "title": "3D Scene Exchange Protocol (SXP)",
+  "slug": "3-d-scene-exchange-protocol-sxp",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-d-scene-exchange-protocol-sxp",
+  "domain": "spatial-computing",
+  "definition": "Open standards framework enabling interoperable transfer of complete 3D scene graphs including geometric meshes (polygon topology vertex positions normals texture coordinates with indexed triangle lists optimized for GPU rendering), physically-based rendering (PBR) material systems (metallic-roughness workflows base color textures normal maps ambient occlusion emission properties following Disney Principled BRDF model adopted across real-time engines), skeletal animation rigs (hierarchical bone transforms keyframe interpolation blend shapes morph targets skinning weights supporting quaternion rotation curves SLERP interpolation), environmental lighting (image-based lighting spherical harmonics environment maps reflections shadows caustics global illumination probes), camera definitions (perspective/orthographic projections field-of-view aspect ratios near/far clipping planes), and spatial metadata (scene hierarchies parent-child transforms pivot points bounding volumes level-of-detail specifications occlusion culling hints) between heterogeneous 3D software applications (content creation tools Blender Maya 3ds Max Houdini Cinema 4D, game engines Unity Unreal Godot, rendering engine",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:scene-graph-format",
+      "label": "Scene Graph Format"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.86,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:animation-rig",
+        "label": "Animation Rig"
+      },
+      {
+        "id": "urn:visionflow:linked:camera-definition",
+        "label": "Camera Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:geometric-mesh",
+        "label": "Geometric Mesh"
+      },
+      {
+        "id": "urn:visionflow:linked:lighting-environment",
+        "label": "Lighting Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:lod-specification",
+        "label": "LOD Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:material-system",
+        "label": "Material System"
+      },
+      {
+        "id": "urn:visionflow:linked:normal-map",
+        "label": "Normal Map"
+      },
+      {
+        "id": "urn:visionflow:linked:pbr-workflow",
+        "label": "PBR Workflow"
+      },
+      {
+        "id": "urn:visionflow:linked:polygon-topology",
+        "label": "Polygon Topology"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-hierarchy",
+        "label": "Scene Hierarchy"
+      },
+      {
+        "id": "urn:visionflow:linked:skeletal-bone",
+        "label": "Skeletal Bone"
+      },
+      {
+        "id": "urn:visionflow:linked:texture-map",
+        "label": "Texture Map"
+      },
+      {
+        "id": "urn:visionflow:linked:uv-coordinate",
+        "label": "UV Coordinate"
+      },
+      {
+        "id": "urn:visionflow:linked:vertex-attribute",
+        "label": "Vertex Attribute"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-modeling-software",
+        "label": "3D Modeling Software"
+      },
+      {
+        "id": "urn:visionflow:linked:animation-tools",
+        "label": "Animation Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:material-converter",
+        "label": "Material Converter"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-compression",
+        "label": "Mesh Compression"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-validator",
+        "label": "Scene Validator"
+      },
+      {
+        "id": "urn:visionflow:linked:texture-authoring",
+        "label": "Texture Authoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-asset-interchange",
+        "label": "3D Asset Interchange"
+      },
+      {
+        "id": "urn:visionflow:linked:ar-vr-experiences",
+        "label": "AR/VR Experiences"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:collaborative-workflows",
+        "label": "Collaborative Workflows"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      },
+      {
+        "id": "urn:visionflow:linked:e-commerce-3-d",
+        "label": "E-Commerce 3D"
+      },
+      {
+        "id": "urn:visionflow:linked:metaverse-interoperability",
+        "label": "Metaverse Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:web-3-d-visualization",
+        "label": "Web 3D Visualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:extension-mechanism",
+        "label": "Extension Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-lod",
+        "label": "Mesh LOD"
+      },
+      {
+        "id": "urn:visionflow:linked:non-destructive-editing",
+        "label": "Non-Destructive Editing"
+      },
+      {
+        "id": "urn:visionflow:linked:pbr-materials",
+        "label": "PBR Materials"
+      },
+      {
+        "id": "urn:visionflow:linked:progressive-loading",
+        "label": "Progressive Loading"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-composition",
+        "label": "Scene Composition"
+      },
+      {
+        "id": "urn:visionflow:linked:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-asset-interchange",
+      "label": "3D Asset Interchange"
+    },
+    {
+      "slug": "3-d-modeling-software",
+      "label": "3D Modeling Software"
+    },
+    {
+      "slug": "academy-software-foundation-open-usd",
+      "label": "Academy Software Foundation OpenUSD"
+    },
+    {
+      "slug": "adobe-substance-painter",
+      "label": "Adobe Substance Painter"
+    },
+    {
+      "slug": "alembic-framework",
+      "label": "Alembic Framework"
+    },
+    {
+      "slug": "animation-rig",
+      "label": "Animation Rig"
+    },
+    {
+      "slug": "animation-tools",
+      "label": "Animation Tools"
+    },
+    {
+      "slug": "ar-vr-experiences",
+      "label": "AR/VR Experiences"
+    },
+    {
+      "slug": "asset-portability",
+      "label": "Asset Portability"
+    },
+    {
+      "slug": "autodesk-fbx-documentation",
+      "label": "Autodesk FBX Documentation"
+    },
+    {
+      "slug": "babylon-js-framework",
+      "label": "Babylon.js Framework"
+    },
+    {
+      "slug": "blender-gl-tf-exporter",
+      "label": "Blender glTF Exporter"
+    },
+    {
+      "slug": "camera-definition",
+      "label": "Camera Definition"
+    },
+    {
+      "slug": "collaborative-workflows",
+      "label": "Collaborative Workflows"
+    },
+    {
+      "slug": "collada-specification",
+      "label": "COLLADA Specification"
+    },
+    {
+      "slug": "cross-platform-compatibility",
+      "label": "Cross-Platform Compatibility"
+    },
+    {
+      "slug": "draco-compression",
+      "label": "Draco Compression"
+    },
+    {
+      "slug": "draco-mesh-compression",
+      "label": "Draco Mesh Compression"
+    },
+    {
+      "slug": "e-commerce-3-d",
+      "label": "E-Commerce 3D"
+    },
+    {
+      "slug": "eurographics-interchange-standards",
+      "label": "Eurographics Interchange Standards"
+    },
+    {
+      "slug": "extension-mechanism",
+      "label": "Extension Mechanism"
+    },
+    {
+      "slug": "gdc-technical-papers",
+      "label": "GDC Technical Papers"
+    },
+    {
+      "slug": "geometric-mesh",
+      "label": "Geometric Mesh"
+    },
+    {
+      "slug": "gl-tf-specification",
+      "label": "glTF Specification"
+    },
+    {
+      "slug": "google-model-viewer",
+      "label": "Google model-viewer"
+    },
+    {
+      "slug": "json-format",
+      "label": "JSON Format"
+    },
+    {
+      "slug": "khronos-group-gl-tf-2-0-specification",
+      "label": "Khronos Group glTF 2.0 Specification"
+    },
+    {
+      "slug": "lighting-environment",
+      "label": "Lighting Environment"
+    },
+    {
+      "slug": "lod-specification",
+      "label": "LOD Specification"
+    },
+    {
+      "slug": "material-converter",
+      "label": "Material Converter"
+    },
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
+      "slug": "material-x-specification",
+      "label": "MaterialX Specification"
+    },
+    {
+      "slug": "mesh-compression",
+      "label": "Mesh Compression"
+    },
+    {
+      "slug": "mesh-lod",
+      "label": "Mesh LOD"
+    },
+    {
+      "slug": "metaverse-interoperability",
+      "label": "Metaverse Interoperability"
+    },
+    {
+      "slug": "metaverse-standards-forum-interchange-wg",
+      "label": "Metaverse Standards Forum Interchange WG"
+    },
+    {
+      "slug": "non-destructive-editing",
+      "label": "Non-Destructive Editing"
+    },
+    {
+      "slug": "normal-map",
+      "label": "Normal Map"
+    },
+    {
+      "slug": "nvidia-omniverse-usd",
+      "label": "Nvidia Omniverse USD"
+    },
+    {
+      "slug": "oma3-avatar-interoperability",
+      "label": "OMA3 Avatar Interoperability"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
+      "slug": "open-gl-transmission-format",
+      "label": "OpenGL Transmission Format"
+    },
+    {
+      "slug": "pbr-materials",
+      "label": "PBR Materials"
+    },
+    {
+      "slug": "pbr-workflow",
+      "label": "PBR Workflow"
+    },
+    {
+      "slug": "pixar-usd-documentation",
+      "label": "Pixar USD Documentation"
+    },
+    {
+      "slug": "polygon-topology",
+      "label": "Polygon Topology"
+    },
+    {
+      "slug": "progressive-loading",
+      "label": "Progressive Loading"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
+    },
+    {
+      "slug": "scene-composition",
+      "label": "Scene Composition"
+    },
+    {
+      "slug": "scene-hierarchy",
+      "label": "Scene Hierarchy"
+    },
+    {
+      "slug": "scene-validator",
+      "label": "Scene Validator"
+    },
+    {
+      "slug": "shopify-3-d-commerce",
+      "label": "Shopify 3D Commerce"
+    },
+    {
+      "slug": "siggraph-real-time-rendering",
+      "label": "SIGGRAPH Real-Time Rendering"
+    },
+    {
+      "slug": "skeletal-animation",
+      "label": "Skeletal Animation"
+    },
+    {
+      "slug": "skeletal-bone",
+      "label": "Skeletal Bone"
+    },
+    {
+      "slug": "texture-authoring",
+      "label": "Texture Authoring"
+    },
+    {
+      "slug": "texture-map",
+      "label": "Texture Map"
+    },
+    {
+      "slug": "three-js-documentation",
+      "label": "Three.js Documentation"
+    },
+    {
+      "slug": "unity-gl-tf-importer",
+      "label": "Unity glTF Importer"
+    },
+    {
+      "slug": "unreal-usd-integration",
+      "label": "Unreal USD Integration"
+    },
+    {
+      "slug": "usd-framework",
+      "label": "USD Framework"
+    },
+    {
+      "slug": "uv-coordinate",
+      "label": "UV Coordinate"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "vertex-attribute",
+      "label": "Vertex Attribute"
+    },
+    {
+      "slug": "vulkan-api",
+      "label": "Vulkan API"
+    },
+    {
+      "slug": "w3-c-immersive-web-standards",
+      "label": "W3C Immersive Web Standards"
+    },
+    {
+      "slug": "wavefront-obj-format",
+      "label": "Wavefront OBJ Format"
+    },
+    {
+      "slug": "web-3-d-visualization",
+      "label": "Web 3D Visualization"
+    },
+    {
+      "slug": "web-gl",
+      "label": "WebGL"
+    },
+    {
+      "slug": "web-gpu",
+      "label": "WebGPU"
+    },
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "binary-encoding",
+      "label": "Binary Encoding"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-format",
+      "label": "Data Format"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "interchange-protocol",
+      "label": "Interchange Protocol"
+    },
+    {
+      "slug": "metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    },
+    {
+      "slug": "open-standard",
+      "label": "Open Standard"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "scene-graph-format",
+      "label": "Scene Graph Format"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

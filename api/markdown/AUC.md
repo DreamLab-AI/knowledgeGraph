@@ -1,21 +1,294 @@
-iri:: http://narrativegoldmine.com/metaverse#AUC
-uri:: urn:visionclaw:concept:artificial-intelligence:auc
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:auc
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AUC
-content-hash:: sha256-12-2b4af8afc330
-legacy-term-id:: AI-0113
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AUC
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:auc
 public:: true
+
+# AUC
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc",
+  "@type": "Page",
+  "vc:slug": "auc",
+  "title": "AUC",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:classification",
+      "vc:label": "Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:false-positive-rate",
+      "vc:label": "False Positive Rate"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25059",
+      "vc:label": "ISO/IEC 25059"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-comparison",
+      "vc:label": "Model Comparison"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-recall-curve",
+      "vc:label": "Precision-Recall Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:ranking-metric",
+      "vc:label": "Ranking Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-selection",
+      "vc:label": "Threshold Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:true-positive-rate",
+      "vc:label": "True Positive Rate"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:roc-curve",
+      "vc:label": "ROC Curve"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2b4af8afc330"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AUC"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0113"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AUC"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:auc"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:auc"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:auc",
+  "@type": "OntologyClass",
+  "label": "AUC",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly chosen negative instance, providing threshold-independent assessment of a classifier's discriminative ability with values ranging from 0 to 1, where 0.5 indicates random guessing, 1.0 represents perfect classification, and values above 0.5 indicate better-than-random performance.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:auc:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Classification]]",
+      "resolved": "urn:visionflow:linked:classification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[False Positive Rate]]",
+      "resolved": "urn:visionflow:linked:false-positive-rate",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25059]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25059",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Comparison]]",
+      "resolved": "urn:visionflow:linked:model-comparison",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI RMF]]",
+      "resolved": "urn:visionflow:linked:nist-ai-rmf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precision-Recall Curve]]",
+      "resolved": "urn:visionflow:linked:precision-recall-curve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ranking Metric]]",
+      "resolved": "urn:visionflow:linked:ranking-metric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Threshold Selection]]",
+      "resolved": "urn:visionflow:linked:threshold-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[True Positive Rate]]",
+      "resolved": "urn:visionflow:linked:true-positive-rate",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ROC Curve]]",
+      "resolved": "urn:visionflow:owl:class:roc-curve",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly chosen negative instance, providing threshold-independent assessment of a classifier's discriminative ability with values ranging from 0 to 1, where 0.5 indicates random guessing, 1.0 represents perfect classification, and values above 0.5 indicate better-than-random performance.

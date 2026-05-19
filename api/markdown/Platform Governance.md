@@ -1,21 +1,195 @@
-iri:: http://narrativegoldmine.com/ontology#PlatformGovernance
-uri:: urn:visionclaw:concept:artificial-intelligence:platform-governance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:platform-governance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Platform Governance
-content-hash:: sha256-12-03ed0fd77f0b
-legacy-term-id:: NGM-7037
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#PlatformGovernance
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:platform-governance
 public:: true
+
+# Platform Governance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4",
+  "@type": "Page",
+  "vc:slug": "platform-governance",
+  "title": "Platform Governance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-decision-making",
+      "vc:label": "Decentralised Decision-Making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-03ed0fd77f0b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#PlatformGovernance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7037"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Platform Governance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:platform-governance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:platform-governance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:platform-governance",
+  "@type": "OntologyClass",
+  "label": "Platform Governance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-decision-making",
+      "vc:label": "Decentralised Decision-Making"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:platform-governance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Decentralised Decision-Making]]",
+      "resolved": "urn:visionflow:linked:decentralised-decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.

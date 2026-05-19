@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff",
+  "title": "Synchronous Collaboration",
+  "slug": "synchronous-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:synchronous-collaboration",
+  "domain": "distributed-collaboration",
+  "definition": "\"Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "label": "TC-0001-telecollaboration-domain"
+    }
+  ],
+  "qualityScore": 0.55,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:tc-0040-communication-protocols",
+        "label": "TC-0040-Communication-Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tc-0001-telecollaboration-domain",
+      "label": "TC-0001-telecollaboration-domain"
+    },
+    {
+      "slug": "tc-0011-video-conferencing",
+      "label": "TC-0011-Video-Conferencing"
+    },
+    {
+      "slug": "tc-0020-asynchronous-collaboration",
+      "label": "TC-0020-Asynchronous-Collaboration"
+    },
+    {
+      "slug": "tc-0040-communication-protocols",
+      "label": "TC-0040-Communication-Protocols"
+    },
+    {
+      "slug": "tc-0080-team-coordination",
+      "label": "TC-0080-Team-Coordination"
+    },
+    {
+      "slug": "tele-028-horizon-workrooms",
+      "label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-105-real-time-language-translation",
+      "label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-153-5g-telepresence",
+      "label": "TELE-153-5g-telepresence"
+    },
+    {
+      "slug": "tele-251-smart-contract-coordination",
+      "label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "slug": "tele-301-virtual-office-spaces",
+      "label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ]
+}

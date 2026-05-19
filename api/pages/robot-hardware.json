@@ -1,0 +1,516 @@
+{
+  "id": "urn:visionflow:page:e1aa7e2d39138d30e3afa4c8863090b8f5dcc8bfdb766c256642ee8f920ea645",
+  "title": "Robot Hardware",
+  "slug": "robot-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-hardware",
+  "domain": "robotics",
+  "definition": "RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4.1, RP2040, ESP32-S3), motor driver electronics (ODrive Pro, MoteusController, hoverboard motor controllers), actuator assemblies (BLDC motors, servo motors, hydraulic/pneumatic actuators, compliant series-elastic actuators), power systems (multi-cell LiPo/LiFePO4 battery packs, Battery Management Systems enforcing SOC/SOH monitoring, cell balancing, thermal protection at 2\u201380A continuous), wiring harnesses (shielded twisted-pair CAN-FD at 8 Mbit/s, EtherCAT at 100 Mbit/s, RS-485, PWM signal cables rated 600V), sensor suites (proprioceptive IMUs, encoders, force/torque sensors; exteroceptive LiDAR, depth cameras, stereo rigs), communication fabric (Gigabit Ethernet, Wi-Fi 6/6E, Bluetooth 5.3, 5G NR), and structural chassis designed to IP20\u2013IP68 environmental ingress ratings. Hardware integration is mediated by [[ROS 2]] and micro-ROS, which bridge deterministic real-time microcontroller loop",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:mechatronics",
+      "label": "Mechatronics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:communication-bus",
+        "label": "Communication Bus"
+      },
+      {
+        "id": "urn:visionflow:linked:embedded-controller",
+        "label": "Embedded Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:power-distribution-board",
+        "label": "Power Distribution Board"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-suite",
+        "label": "Sensor Suite"
+      },
+      {
+        "id": "urn:visionflow:linked:wiring-harness",
+        "label": "Wiring Harness"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:can-fd-bus",
+        "label": "CAN-FD Bus"
+      },
+      {
+        "id": "urn:visionflow:linked:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:visionflow:linked:imu-sensor",
+        "label": "IMU Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:li-po-battery",
+        "label": "LiPo Battery"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-encoder",
+        "label": "Motor Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-2",
+        "label": "ROS 2"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-operation",
+        "label": "Autonomous Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:visionflow:owl:class:kinematics-model",
+        "label": "Kinematics Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:can-fd-protocol",
+        "label": "CAN-FD Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "id": "urn:visionflow:linked:ether-cat-protocol",
+        "label": "EtherCAT Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:micro-ros",
+        "label": "micro-ROS"
+      },
+      {
+        "id": "urn:visionflow:linked:ros2-control-framework",
+        "label": "ros2_control Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:urdf-hardware-description",
+        "label": "URDF Hardware Description"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "arm-cortex-m",
+      "label": "ARM Cortex-M"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "battery-management-system",
+      "label": "Battery Management System"
+    },
+    {
+      "slug": "bsi-pas-1085-collaborative-robots-2021",
+      "label": "BSI PAS 1085 Collaborative Robots 2021"
+    },
+    {
+      "slug": "can-fd-bus",
+      "label": "CAN-FD Bus"
+    },
+    {
+      "slug": "can-fd-protocol",
+      "label": "CAN-FD Protocol"
+    },
+    {
+      "slug": "ci-a-301-canopen-standard",
+      "label": "CiA 301 CANopen Standard"
+    },
+    {
+      "slug": "communication-bus",
+      "label": "Communication Bus"
+    },
+    {
+      "slug": "communication-layer",
+      "label": "CommunicationLayer"
+    },
+    {
+      "slug": "craig-introduction-to-robotics-2017",
+      "label": "Craig Introduction to Robotics 2017"
+    },
+    {
+      "slug": "dds-middleware",
+      "label": "DDS Middleware"
+    },
+    {
+      "slug": "electromechanical-domain",
+      "label": "ElectromechanicalDomain"
+    },
+    {
+      "slug": "embedded-controller",
+      "label": "Embedded Controller"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "EmbeddedSystemsDomain"
+    },
+    {
+      "slug": "ether-cat",
+      "label": "EtherCAT"
+    },
+    {
+      "slug": "ether-cat-protocol",
+      "label": "EtherCAT Protocol"
+    },
+    {
+      "slug": "ether-cat-technology-group",
+      "label": "EtherCAT Technology Group"
+    },
+    {
+      "slug": "ether-cat-technology-group-specification-v1-0-5",
+      "label": "EtherCAT Technology Group Specification v1.0.5"
+    },
+    {
+      "slug": "ethernet-switch",
+      "label": "Ethernet Switch"
+    },
+    {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
+      "slug": "fpga-acceleration",
+      "label": "FPGA Acceleration"
+    },
+    {
+      "slug": "iec-61800-5-2-drive-safety-2016",
+      "label": "IEC 61800-5-2 Drive Safety 2016"
+    },
+    {
+      "slug": "iec-61800-drives-standard",
+      "label": "IEC 61800 Drives Standard"
+    },
+    {
+      "slug": "imu-sensor",
+      "label": "IMU Sensor"
+    },
+    {
+      "slug": "intel-real-sense-d400-datasheet-2024",
+      "label": "Intel RealSense D400 Datasheet 2024"
+    },
+    {
+      "slug": "inven-sense-icm-42688-p-datasheet-2024",
+      "label": "InvenSense ICM-42688-P Datasheet 2024"
+    },
+    {
+      "slug": "iso-10218-1-robot-safety-2021",
+      "label": "ISO 10218-1 Robot Safety 2021"
+    },
+    {
+      "slug": "iso-10218-robot-safety",
+      "label": "ISO 10218 Robot Safety"
+    },
+    {
+      "slug": "li-po-battery",
+      "label": "LiPo Battery"
+    },
+    {
+      "slug": "lynch-and-park-modern-robotics-2017",
+      "label": "Lynch & Park Modern Robotics 2017"
+    },
+    {
+      "slug": "macenski-et-al-ros-2-science-robotics-2022",
+      "label": "Macenski et al. ROS 2 Science Robotics 2022"
+    },
+    {
+      "slug": "mechatronics",
+      "label": "Mechatronics"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
+    },
+    {
+      "slug": "micro-ros-e-prosima-documentation-v3-0",
+      "label": "micro-ROS eProsima Documentation v3.0"
+    },
+    {
+      "slug": "mjbots-moteus-r4-11-reference",
+      "label": "mjbots Moteus r4.11 Reference"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "Motor Driver"
+    },
+    {
+      "slug": "motor-encoder",
+      "label": "Motor Encoder"
+    },
+    {
+      "slug": "nvidia-jetson",
+      "label": "NVIDIA Jetson"
+    },
+    {
+      "slug": "odrive-pro-firmware-documentation-2024",
+      "label": "ODrive Pro Firmware Documentation 2024"
+    },
+    {
+      "slug": "ouster-os-series-user-guide-2024",
+      "label": "Ouster OS Series User Guide 2024"
+    },
+    {
+      "slug": "plett-battery-management-systems-2015",
+      "label": "Plett Battery Management Systems 2015"
+    },
+    {
+      "slug": "power-distribution-board",
+      "label": "Power Distribution Board"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
+      "slug": "pratt-and-williamson-series-elastic-actuators-iros-1995",
+      "label": "Pratt & Williamson Series Elastic Actuators IROS 1995"
+    },
+    {
+      "slug": "real-time-operating-system",
+      "label": "Real-Time Operating System"
+    },
+    {
+      "slug": "real-time-scheduling",
+      "label": "Real-Time Scheduling"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
+    },
+    {
+      "slug": "ros-2",
+      "label": "ROS 2"
+    },
+    {
+      "slug": "ros-2-reps",
+      "label": "ROS 2 REPs"
+    },
+    {
+      "slug": "ros2-control-framework",
+      "label": "ros2_control Framework"
+    },
+    {
+      "slug": "sensor-suite",
+      "label": "Sensor Suite"
+    },
+    {
+      "slug": "siciliano-and-khatib-springer-handbook-of-robotics-2016",
+      "label": "Siciliano & Khatib Springer Handbook of Robotics 2016"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "software-robot",
+      "label": "Software Robot"
+    },
+    {
+      "slug": "stm32-microcontroller",
+      "label": "STM32 Microcontroller"
+    },
+    {
+      "slug": "texas-instruments-bq76942-technical-reference-2024",
+      "label": "Texas Instruments BQ76942 Technical Reference 2024"
+    },
+    {
+      "slug": "thermal-management",
+      "label": "Thermal Management"
+    },
+    {
+      "slug": "ukri-national-robotarium-hardware-integration-standards-2024",
+      "label": "UKRI National Robotarium Hardware Integration Standards 2024"
+    },
+    {
+      "slug": "urdf-hardware-description",
+      "label": "URDF Hardware Description"
+    },
+    {
+      "slug": "virtual-agent",
+      "label": "Virtual Agent"
+    },
+    {
+      "slug": "wensing-et-al-proprioceptive-actuator-mit-cheetah-tro-2017",
+      "label": "Wensing et al. Proprioceptive Actuator MIT Cheetah TRO 2017"
+    },
+    {
+      "slug": "wiring-harness",
+      "label": "Wiring Harness"
+    },
+    {
+      "slug": "zephyr-rtos-3-6-release-notes",
+      "label": "Zephyr RTOS 3.6 Release Notes"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "surgical-robot",
+      "label": "Surgical Robot"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    }
+  ]
+}

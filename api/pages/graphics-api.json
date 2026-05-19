@@ -1,0 +1,588 @@
+{
+  "id": "urn:visionflow:page:5108d32a09d1d96bfc3fd83cd91945049f2c5bcb655fea6a3196ba4175fb8c28",
+  "title": "Graphics API",
+  "slug": "graphics-api",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:graphics-api",
+  "domain": "spatial-computing",
+  "definition": "A Graphics API (Application Programming Interface) is a standardised software interface mediating between application code and Graphics Processing Unit (GPU) hardware, exposing primitives for command submission, shader compilation, resource allocation, synchronisation, and frame presentation across the four canonical API generations (legacy fixed-function era 1992-2003 typified by OpenGL 1.x immediate-mode glBegin/glEnd state machine and DirectX 7 with fixed transform-and-lighting pipelines lacking programmability; programmable shader era 2004-2014 inaugurated by OpenGL 2.0 GLSL vertex/fragment shaders, DirectX 9 HLSL Shader Model 2.0/3.0, and NVIDIA Cg providing first user-authored GPU programs enabling per-pixel lighting, normal mapping, post-processing whilst retaining driver-managed resource state; modern explicit era 2015-present represented by Vulkan 1.4 Khronos Group, DirectX 12 Ultimate Microsoft, and Metal 3 Apple replacing implicit driver state with explicit application-managed memory heaps, command buffer recording, multi-threaded queue submission, descriptor sets, pipeline state objects, and synchronisation barriers yielding 5-10\u00d7 CPU overhead reduction; next-generation",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:application-programming-interface",
+      "label": "Application Programming Interface"
+    },
+    {
+      "id": "urn:visionflow:linked:hardware-abstraction-layer",
+      "label": "Hardware Abstraction Layer"
+    },
+    {
+      "id": "urn:visionflow:linked:hardware-interface",
+      "label": "Hardware Interface"
+    },
+    {
+      "id": "urn:visionflow:linked:rendering-interface",
+      "label": "Rendering Interface"
+    },
+    {
+      "id": "urn:visionflow:owl:class:system-software",
+      "label": "System Software"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:command-buffer",
+        "label": "Command Buffer"
+      },
+      {
+        "id": "urn:visionflow:linked:descriptor-set",
+        "label": "Descriptor Set"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-allocator",
+        "label": "Memory Allocator"
+      },
+      {
+        "id": "urn:visionflow:linked:pipeline-state-object",
+        "label": "Pipeline State Object"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-manager",
+        "label": "Resource Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:shader-compiler",
+        "label": "Shader Compiler"
+      },
+      {
+        "id": "urn:visionflow:linked:swap-chain",
+        "label": "Swap Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronisation-primitive",
+        "label": "Synchronisation Primitive"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:device-driver",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:driver-compiler",
+        "label": "Driver Compiler"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-hardware",
+        "label": "GPU Hardware"
+      },
+      {
+        "id": "urn:visionflow:owl:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:shader-language",
+        "label": "Shader Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-rendering",
+        "label": "Cross-Platform Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-programming",
+        "label": "GPU Programming"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-shading",
+        "label": "Mesh Shading"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:command-submission-pattern",
+        "label": "Command Submission Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:frame-presentation-protocol",
+        "label": "Frame Presentation Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-queue-submission",
+        "label": "Multi-Queue Submission"
+      },
+      {
+        "id": "urn:visionflow:linked:pipeline-compilation",
+        "label": "Pipeline Compilation"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-binding-model",
+        "label": "Resource Binding Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "akenine-m-ller-et-al-2018-real-time-rendering-4th-ed",
+      "label": "Akenine-M\u00f6ller et al. 2018 Real-Time Rendering 4th ed"
+    },
+    {
+      "slug": "apple-metal-shading-language-specification-v3-2",
+      "label": "Apple Metal Shading Language Specification v3.2"
+    },
+    {
+      "slug": "application-programming-interface",
+      "label": "Application Programming Interface"
+    },
+    {
+      "slug": "bailey-2024-vulkan-programming-guide-siggraph-course",
+      "label": "Bailey 2024 Vulkan Programming Guide SIGGRAPH course"
+    },
+    {
+      "slug": "cad-software",
+      "label": "CAD Software"
+    },
+    {
+      "slug": "command-buffer",
+      "label": "Command Buffer"
+    },
+    {
+      "slug": "command-submission-pattern",
+      "label": "Command Submission Pattern"
+    },
+    {
+      "slug": "cpu-rendering",
+      "label": "CPU Rendering"
+    },
+    {
+      "slug": "cross-platform-rendering",
+      "label": "Cross-Platform Rendering"
+    },
+    {
+      "slug": "descriptor-set",
+      "label": "Descriptor Set"
+    },
+    {
+      "slug": "device-driver",
+      "label": "Device Driver"
+    },
+    {
+      "slug": "driver-compiler",
+      "label": "Driver Compiler"
+    },
+    {
+      "slug": "driver-layer",
+      "label": "DriverLayer"
+    },
+    {
+      "slug": "driver-stack",
+      "label": "Driver Stack"
+    },
+    {
+      "slug": "fixed-function-pipeline",
+      "label": "Fixed-Function Pipeline"
+    },
+    {
+      "slug": "foley-et-al-2013-computer-graphics-principles-and-practice",
+      "label": "Foley et al. 2013 Computer Graphics Principles and Practice"
+    },
+    {
+      "slug": "frame-presentation-protocol",
+      "label": "Frame Presentation Protocol"
+    },
+    {
+      "slug": "game-engine-framework",
+      "label": "Game Engine Framework"
+    },
+    {
+      "slug": "game-engines",
+      "label": "Game Engines"
+    },
+    {
+      "slug": "glsl",
+      "label": "GLSL"
+    },
+    {
+      "slug": "google-dawn-web-gpu-implementation-2024",
+      "label": "Google Dawn WebGPU Implementation 2024"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "gpu-compute-api",
+      "label": "GPU Compute API"
+    },
+    {
+      "slug": "gpu-for-the-web-working-group",
+      "label": "GPU for the Web Working Group"
+    },
+    {
+      "slug": "gpu-hardware",
+      "label": "GPU Hardware"
+    },
+    {
+      "slug": "gpu-programming",
+      "label": "GPU Programming"
+    },
+    {
+      "slug": "hardware-abstraction-layer",
+      "label": "Hardware Abstraction Layer"
+    },
+    {
+      "slug": "hardware-interface",
+      "label": "Hardware Interface"
+    },
+    {
+      "slug": "higher-level-renderer",
+      "label": "Higher-Level Renderer"
+    },
+    {
+      "slug": "hlsl",
+      "label": "HLSL"
+    },
+    {
+      "slug": "karis-et-al-2024-nanite-foliage-and-virtualised-heightfields-siggraph",
+      "label": "Karis et al. 2024 Nanite Foliage and Virtualised Heightfields SIGGRAPH"
+    },
+    {
+      "slug": "karis-stubbe-wihlidal-2021-nanite-siggraph",
+      "label": "Karis Stubbe Wihlidal 2021 Nanite SIGGRAPH"
+    },
+    {
+      "slug": "kernel-mode-driver",
+      "label": "Kernel Mode Driver"
+    },
+    {
+      "slug": "kessenich-sellers-shreiner-2017-open-gl-programming-guide",
+      "label": "Kessenich Sellers Shreiner 2017 OpenGL Programming Guide"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "khronos-open-gl-4-6-specification-2017",
+      "label": "Khronos OpenGL 4.6 Specification 2017"
+    },
+    {
+      "slug": "khronos-open-xr-1-1-specification-2024",
+      "label": "Khronos OpenXR 1.1 Specification 2024"
+    },
+    {
+      "slug": "khronos-sycl-2020-specification-codeplay-implementation",
+      "label": "Khronos SYCL 2020 Specification Codeplay Implementation"
+    },
+    {
+      "slug": "khronos-vulkan-1-4-specification-october-2024",
+      "label": "Khronos Vulkan 1.4 Specification October 2024"
+    },
+    {
+      "slug": "kubisch-2018-introduction-to-turing-mesh-shaders-nvidia",
+      "label": "Kubisch 2018 Introduction to Turing Mesh Shaders NVIDIA"
+    },
+    {
+      "slug": "lengyel-2019-foundations-of-game-engine-development-vol-2-rendering",
+      "label": "Lengyel 2019 Foundations of Game Engine Development Vol 2 Rendering"
+    },
+    {
+      "slug": "lottes-2019-fidelity-fx-super-resolution-whitepaper-amd",
+      "label": "Lottes 2019 FidelityFX Super Resolution Whitepaper AMD"
+    },
+    {
+      "slug": "m-ller-and-trumbore-1997-fast-ray-triangle-intersection",
+      "label": "M\u00f6ller & Trumbore 1997 Fast Ray-Triangle Intersection"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "memory-allocator",
+      "label": "Memory Allocator"
+    },
+    {
+      "slug": "mesh-shading",
+      "label": "Mesh Shading"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "microsoft-direct-x-12-ultimate-documentation",
+      "label": "Microsoft DirectX 12 Ultimate Documentation"
+    },
+    {
+      "slug": "mozilla-wgpu-rs-documentation-2024",
+      "label": "Mozilla wgpu-rs Documentation 2024"
+    },
+    {
+      "slug": "msl",
+      "label": "MSL"
+    },
+    {
+      "slug": "multi-queue-submission",
+      "label": "Multi-Queue Submission"
+    },
+    {
+      "slug": "ninomiya-maxfield-wallez-malyshau-derin-2023-web-gpu-w3-c-talks",
+      "label": "Ninomiya Maxfield Wallez Malyshau Derin 2023 WebGPU W3C Talks"
+    },
+    {
+      "slug": "nvidia-dlss-4-multi-frame-generation-technical-overview-2025",
+      "label": "NVIDIA DLSS 4 Multi-Frame Generation Technical Overview 2025"
+    },
+    {
+      "slug": "nvidia-opti-x-8-programming-guide-2024",
+      "label": "NVIDIA OptiX 8 Programming Guide 2024"
+    },
+    {
+      "slug": "pharr-jakob-humphreys-2023-physically-based-rendering-pbrt-v4",
+      "label": "Pharr Jakob Humphreys 2023 Physically Based Rendering PBRT-v4"
+    },
+    {
+      "slug": "pipeline-compilation",
+      "label": "Pipeline Compilation"
+    },
+    {
+      "slug": "pipeline-state-object",
+      "label": "Pipeline State Object"
+    },
+    {
+      "slug": "professional-visualisation",
+      "label": "Professional Visualisation"
+    },
+    {
+      "slug": "rendering-interface",
+      "label": "Rendering Interface"
+    },
+    {
+      "slug": "resource-binding-model",
+      "label": "Resource Binding Model"
+    },
+    {
+      "slug": "resource-manager",
+      "label": "Resource Manager"
+    },
+    {
+      "slug": "scientific-computing",
+      "label": "Scientific Computing"
+    },
+    {
+      "slug": "segal-and-akeley-1992-open-gl-1-0-specification",
+      "label": "Segal & Akeley 1992 OpenGL 1.0 Specification"
+    },
+    {
+      "slug": "sellers-wright-haemel-2018-open-gl-super-bible",
+      "label": "Sellers Wright Haemel 2018 OpenGL SuperBible"
+    },
+    {
+      "slug": "shader-compilation-toolchain",
+      "label": "Shader Compilation Toolchain"
+    },
+    {
+      "slug": "shader-compiler",
+      "label": "Shader Compiler"
+    },
+    {
+      "slug": "shirley-black-hollasch-2024-ray-tracing-in-one-weekend",
+      "label": "Shirley Black Hollasch 2024 Ray Tracing in One Weekend"
+    },
+    {
+      "slug": "software-rasterisation",
+      "label": "Software Rasterisation"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "spir-v",
+      "label": "SPIR-V"
+    },
+    {
+      "slug": "sutherland-1963-sketchpad-mit-ph-d",
+      "label": "Sutherland 1963 Sketchpad MIT PhD"
+    },
+    {
+      "slug": "swap-chain",
+      "label": "Swap Chain"
+    },
+    {
+      "slug": "synchronisation-primitive",
+      "label": "Synchronisation Primitive"
+    },
+    {
+      "slug": "system-software-layer",
+      "label": "SystemSoftwareLayer"
+    },
+    {
+      "slug": "systems-software-domain",
+      "label": "SystemsSoftwareDomain"
+    },
+    {
+      "slug": "tewari-et-al-2022-advances-in-neural-rendering-eurographics-star",
+      "label": "Tewari et al. 2022 Advances in Neural Rendering Eurographics STAR"
+    },
+    {
+      "slug": "vendor-driver",
+      "label": "Vendor Driver"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-web-gpu-candidate-recommendation-2024",
+      "label": "W3C WebGPU Candidate Recommendation 2024"
+    },
+    {
+      "slug": "w3-c-wgsl-specification-2024",
+      "label": "W3C WGSL Specification 2024"
+    },
+    {
+      "slug": "web-rendering",
+      "label": "Web Rendering"
+    },
+    {
+      "slug": "wgsl",
+      "label": "WGSL"
+    },
+    {
+      "slug": "window-system-api",
+      "label": "Window System API"
+    },
+    {
+      "slug": "window-system-integration",
+      "label": "Window System Integration"
+    },
+    {
+      "slug": "wright-narkowicz-kelly-2022-lumen-siggraph",
+      "label": "Wright Narkowicz Kelly 2022 Lumen SIGGRAPH"
+    },
+    {
+      "slug": "xr-compositing",
+      "label": "XR Compositing"
+    },
+    {
+      "slug": "xr-runtime-api",
+      "label": "XR Runtime API"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "hardware-abstraction",
+      "label": "Hardware Abstraction"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "shader-language",
+      "label": "Shader Language"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "system-software",
+      "label": "System Software"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "visualization-layer",
+      "label": "Visualization Layer"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

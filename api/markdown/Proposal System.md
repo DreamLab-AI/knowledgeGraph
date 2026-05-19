@@ -1,21 +1,417 @@
-iri:: http://narrativegoldmine.com/blockchain#ProposalSystem
-uri:: urn:visionclaw:concept:blockchain:proposal-system
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:proposal-system
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Proposal System
-content-hash:: sha256-12-1f8b89eb3503
-legacy-term-id:: BC-0465
-status:: stub-needs-content
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#ProposalSystem
+legacy_uri:: urn:visionclaw:concept:blockchain:proposal-system
 public:: true
+
+# Proposal System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9",
+  "@type": "Page",
+  "vc:slug": "proposal-system",
+  "title": "Proposal System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aave",
+      "vc:label": "Aave"
+    },
+    {
+      "@id": "urn:visionflow:linked:aave-improvement-proposals",
+      "vc:label": "Aave Improvement Proposals"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0142-smart-contract",
+      "vc:label": "BC-0142-smart-contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0142-smart-contract",
+      "vc:label": "BC-0142-smart-contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0461-decentralized-autonomous-organization",
+      "vc:label": "BC-0461-decentralized-autonomous-organization"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0461-decentralized-autonomous-organization",
+      "vc:label": "BC-0461-decentralized-autonomous-organization"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0462-on-chain-voting",
+      "vc:label": "BC-0462-on-chain-voting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0462-on-chain-voting",
+      "vc:label": "BC-0462-on-chain-voting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0463-governance-token",
+      "vc:label": "BC-0463-governance-token"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0463-governance-token",
+      "vc:label": "BC-0463-governance-token"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0464-treasury-management",
+      "vc:label": "BC-0464-treasury-management"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound",
+      "vc:label": "Compound"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound-governor-bravo",
+      "vc:label": "Compound Governor Bravo"
+    },
+    {
+      "@id": "urn:visionflow:linked:maker-dao",
+      "vc:label": "MakerDAO"
+    },
+    {
+      "@id": "urn:visionflow:linked:maker-dao-executive-votes",
+      "vc:label": "MakerDAO Executive Votes"
+    },
+    {
+      "@id": "urn:visionflow:linked:snapshot",
+      "vc:label": "Snapshot"
+    },
+    {
+      "@id": "urn:visionflow:linked:snapshot-off-chain-voting",
+      "vc:label": "Snapshot Off-Chain Voting"
+    },
+    {
+      "@id": "urn:visionflow:linked:tally-governance",
+      "vc:label": "Tally Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:uniswap",
+      "vc:label": "Uniswap"
+    },
+    {
+      "@id": "urn:visionflow:linked:uniswap-governance-process",
+      "vc:label": "Uniswap Governance Process"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dao",
+      "vc:label": "DAO"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-token",
+      "vc:label": "GovernanceToken"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:on-chain-voting",
+      "vc:label": "OnChainVoting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:on-chain-voting",
+      "vc:label": "OnChainVoting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1f8b89eb3503"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#ProposalSystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0465"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Proposal System"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:proposal-system"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub-needs-content"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:proposal-system"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:proposal-system",
+  "@type": "OntologyClass",
+  "label": "Proposal System",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub-needs-content",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain execution]] via [[SmartContract|smart contracts]]. Proposal systems implement thresholds—[[GovernanceToken]] requirements for initiation, quorum thresholds for binding, timelocks before execution—creating barriers preventing spam whilst enabling broad participation. Systems balance bottom-up permissionless initiation with governance efficiency, facing challenges around proposal spam, voter fatigue (5-15% typical participation), and professionalization concentrating power amongst technical elites.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:snapshot",
+      "vc:label": "Snapshot"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:on-chain-voting",
+      "vc:label": "OnChainVoting"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:proposal-system:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Aave]]",
+      "resolved": "urn:visionflow:linked:aave",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aave Improvement Proposals]]",
+      "resolved": "urn:visionflow:linked:aave-improvement-proposals",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0142-smart-contract]]",
+      "resolved": "urn:visionflow:linked:bc-0142-smart-contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0142-smart-contract|smart contracts]]",
+      "resolved": "urn:visionflow:linked:bc-0142-smart-contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0461-decentralized-autonomous-organization]]",
+      "resolved": "urn:visionflow:linked:bc-0461-decentralized-autonomous-organization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0461-decentralized-autonomous-organization|DAOs]]",
+      "resolved": "urn:visionflow:linked:bc-0461-decentralized-autonomous-organization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0462-on-chain-voting]]",
+      "resolved": "urn:visionflow:linked:bc-0462-on-chain-voting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0462-on-chain-voting|on-chain execution]]",
+      "resolved": "urn:visionflow:linked:bc-0462-on-chain-voting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0463-governance-token]]",
+      "resolved": "urn:visionflow:linked:bc-0463-governance-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0463-governance-token|governance token]]",
+      "resolved": "urn:visionflow:linked:bc-0463-governance-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0464-treasury-management]]",
+      "resolved": "urn:visionflow:linked:bc-0464-treasury-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compound]]",
+      "resolved": "urn:visionflow:linked:compound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compound Governor Bravo]]",
+      "resolved": "urn:visionflow:linked:compound-governor-bravo",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MakerDAO]]",
+      "resolved": "urn:visionflow:linked:maker-dao",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MakerDAO Executive Votes]]",
+      "resolved": "urn:visionflow:linked:maker-dao-executive-votes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Snapshot]]",
+      "resolved": "urn:visionflow:linked:snapshot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Snapshot Off-Chain Voting]]",
+      "resolved": "urn:visionflow:linked:snapshot-off-chain-voting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tally Governance]]",
+      "resolved": "urn:visionflow:linked:tally-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uniswap]]",
+      "resolved": "urn:visionflow:linked:uniswap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uniswap Governance Process]]",
+      "resolved": "urn:visionflow:linked:uniswap-governance-process",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DAO]]",
+      "resolved": "urn:visionflow:owl:class:dao",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GovernanceToken]]",
+      "resolved": "urn:visionflow:owl:class:governance-token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OnChainVoting]]",
+      "resolved": "urn:visionflow:owl:class:on-chain-voting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OnChainVoting|on-chain execution]]",
+      "resolved": "urn:visionflow:owl:class:on-chain-voting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract|smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain execution]] via [[SmartContract|smart contracts]]. Proposal systems implement thresholds—[[GovernanceToken]] requirements for initiation, quorum thresholds for binding, timelocks before execution—creating barriers preventing spam whilst enabling broad participation. Systems balance bottom-up permissionless initiation with governance efficiency, facing challenges around proposal spam, voter fatigue (5-15% typical participation), and professionalization concentrating power amongst technical elites.

@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:7774a5d76d809d773090d8342e053b35bd7303c2d70e43c1eb5263994c6d80aa",
+  "title": "Quality Assurance",
+  "slug": "quality-assurance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quality-assurance",
+  "domain": "infrastructure",
+  "definition": "QualityAssurance is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "benchmark-standard",
+      "label": "Benchmark Standard"
+    },
+    {
+      "slug": "calibration-standards",
+      "label": "Calibration Standards"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    },
+    {
+      "slug": "validation-report",
+      "label": "VALIDATION_REPORT"
+    }
+  ]
+}

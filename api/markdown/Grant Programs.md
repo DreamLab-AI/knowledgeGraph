@@ -1,21 +1,603 @@
-iri:: http://narrativegoldmine.com/blockchain#GrantPrograms
-uri:: urn:visionclaw:concept:blockchain:grant-programs
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:grant-programs
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Grant Programs
-content-hash:: sha256-12-1af058b49288
-legacy-term-id:: BC-0474
-status:: stub-needs-content
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#GrantPrograms
+legacy_uri:: urn:visionclaw:concept:blockchain:grant-programs
 public:: true
+
+# Grant Programs
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c",
+  "@type": "Page",
+  "vc:slug": "grant-programs",
+  "title": "Grant Programs",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:1-hive",
+      "vc:label": "1Hive"
+    },
+    {
+      "@id": "urn:visionflow:linked:aave",
+      "vc:label": "Aave"
+    },
+    {
+      "@id": "urn:visionflow:linked:allo-protocol",
+      "vc:label": "Allo Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:arbitrum",
+      "vc:label": "Arbitrum"
+    },
+    {
+      "@id": "urn:visionflow:linked:balancer",
+      "vc:label": "Balancer"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0410-decentralised-autonomous-organisations",
+      "vc:label": "BC-0410-decentralised-autonomous-organisations"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0411-dao-governance-models",
+      "vc:label": "BC-0411-dao-governance-models"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0462-treasury-management",
+      "vc:label": "BC-0462-treasury-management"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0469-governance-tokens",
+      "vc:label": "BC-0469-governance-tokens"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0471-tokenomics-governance",
+      "vc:label": "BC-0471-tokenomics-governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0472-dao-tooling",
+      "vc:label": "BC-0472-dao-tooling"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0473-delegate-democracy",
+      "vc:label": "BC-0473-delegate-democracy"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0475-dao-analytics",
+      "vc:label": "BC-0475-dao-analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:camelot",
+      "vc:label": "Camelot"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound",
+      "vc:label": "Compound"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethereum-foundation",
+      "vc:label": "Ethereum Foundation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethereum-js",
+      "vc:label": "EthereumJS"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethers-js",
+      "vc:label": "Ethers.js"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundry",
+      "vc:label": "Foundry"
+    },
+    {
+      "@id": "urn:visionflow:linked:geth",
+      "vc:label": "Geth"
+    },
+    {
+      "@id": "urn:visionflow:linked:gitcoin",
+      "vc:label": "Gitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:gitcoin-passport",
+      "vc:label": "Gitcoin Passport"
+    },
+    {
+      "@id": "urn:visionflow:linked:gmx",
+      "vc:label": "GMX"
+    },
+    {
+      "@id": "urn:visionflow:linked:hypercerts",
+      "vc:label": "Hypercerts"
+    },
+    {
+      "@id": "urn:visionflow:linked:lighthouse",
+      "vc:label": "Lighthouse"
+    },
+    {
+      "@id": "urn:visionflow:linked:metagov",
+      "vc:label": "Metagov"
+    },
+    {
+      "@id": "urn:visionflow:linked:nethermind",
+      "vc:label": "Nethermind"
+    },
+    {
+      "@id": "urn:visionflow:linked:nimbus",
+      "vc:label": "Nimbus"
+    },
+    {
+      "@id": "urn:visionflow:linked:nouns-dao",
+      "vc:label": "Nouns DAO"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimism",
+      "vc:label": "Optimism"
+    },
+    {
+      "@id": "urn:visionflow:linked:polygon",
+      "vc:label": "Polygon"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol-guild",
+      "vc:label": "Protocol Guild"
+    },
+    {
+      "@id": "urn:visionflow:linked:prysm",
+      "vc:label": "Prysm"
+    },
+    {
+      "@id": "urn:visionflow:linked:radiant-capital",
+      "vc:label": "Radiant Capital"
+    },
+    {
+      "@id": "urn:visionflow:linked:sablier",
+      "vc:label": "Sablier"
+    },
+    {
+      "@id": "urn:visionflow:linked:solidity",
+      "vc:label": "Solidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:superfluid",
+      "vc:label": "Superfluid"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetix",
+      "vc:label": "Synthetix"
+    },
+    {
+      "@id": "urn:visionflow:linked:uniswap",
+      "vc:label": "Uniswap"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertex-protocol",
+      "vc:label": "Vertex Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:vyper",
+      "vc:label": "Vyper"
+    },
+    {
+      "@id": "urn:visionflow:linked:wallet-connect",
+      "vc:label": "WalletConnect"
+    },
+    {
+      "@id": "urn:visionflow:linked:web3-py",
+      "vc:label": "Web3.py"
+    },
+    {
+      "@id": "urn:visionflow:linked:yearn",
+      "vc:label": "Yearn"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-sync",
+      "vc:label": "zkSync"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dao",
+      "vc:label": "DAO"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1af058b49288"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#GrantPrograms"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0474"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Grant Programs"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:grant-programs"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub-needs-content"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:grant-programs"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:grant-programs",
+  "@type": "OntologyClass",
+  "label": "Grant Programs",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub-needs-content",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth billions to ecosystem development, public goods funding, protocol research, and community initiatives—ranging from prospective grants (Uniswap $74M) to retroactive public goods funding ([[Optimism]] $30M) to innovative quadratic funding mechanisms ([[Gitcoin]] $50M+).",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:grant-programs:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[1Hive]]",
+      "resolved": "urn:visionflow:linked:1-hive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aave]]",
+      "resolved": "urn:visionflow:linked:aave",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Allo Protocol]]",
+      "resolved": "urn:visionflow:linked:allo-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Arbitrum]]",
+      "resolved": "urn:visionflow:linked:arbitrum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Balancer]]",
+      "resolved": "urn:visionflow:linked:balancer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0410-decentralised-autonomous-organisations]]",
+      "resolved": "urn:visionflow:linked:bc-0410-decentralised-autonomous-organisations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0411-dao-governance-models]]",
+      "resolved": "urn:visionflow:linked:bc-0411-dao-governance-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0462-treasury-management]]",
+      "resolved": "urn:visionflow:linked:bc-0462-treasury-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0469-governance-tokens]]",
+      "resolved": "urn:visionflow:linked:bc-0469-governance-tokens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0471-tokenomics-governance]]",
+      "resolved": "urn:visionflow:linked:bc-0471-tokenomics-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0472-dao-tooling]]",
+      "resolved": "urn:visionflow:linked:bc-0472-dao-tooling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0473-delegate-democracy]]",
+      "resolved": "urn:visionflow:linked:bc-0473-delegate-democracy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0475-dao-analytics]]",
+      "resolved": "urn:visionflow:linked:bc-0475-dao-analytics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Camelot]]",
+      "resolved": "urn:visionflow:linked:camelot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compound]]",
+      "resolved": "urn:visionflow:linked:compound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethereum Foundation]]",
+      "resolved": "urn:visionflow:linked:ethereum-foundation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EthereumJS]]",
+      "resolved": "urn:visionflow:linked:ethereum-js",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethers.js]]",
+      "resolved": "urn:visionflow:linked:ethers-js",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foundry]]",
+      "resolved": "urn:visionflow:linked:foundry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Geth]]",
+      "resolved": "urn:visionflow:linked:geth",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gitcoin]]",
+      "resolved": "urn:visionflow:linked:gitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gitcoin Passport]]",
+      "resolved": "urn:visionflow:linked:gitcoin-passport",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GMX]]",
+      "resolved": "urn:visionflow:linked:gmx",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hypercerts]]",
+      "resolved": "urn:visionflow:linked:hypercerts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lighthouse]]",
+      "resolved": "urn:visionflow:linked:lighthouse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metagov]]",
+      "resolved": "urn:visionflow:linked:metagov",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nethermind]]",
+      "resolved": "urn:visionflow:linked:nethermind",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nimbus]]",
+      "resolved": "urn:visionflow:linked:nimbus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nouns DAO]]",
+      "resolved": "urn:visionflow:linked:nouns-dao",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimism]]",
+      "resolved": "urn:visionflow:linked:optimism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polygon]]",
+      "resolved": "urn:visionflow:linked:polygon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Protocol Guild]]",
+      "resolved": "urn:visionflow:linked:protocol-guild",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Prysm]]",
+      "resolved": "urn:visionflow:linked:prysm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Radiant Capital]]",
+      "resolved": "urn:visionflow:linked:radiant-capital",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sablier]]",
+      "resolved": "urn:visionflow:linked:sablier",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solidity]]",
+      "resolved": "urn:visionflow:linked:solidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Superfluid]]",
+      "resolved": "urn:visionflow:linked:superfluid",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Synthetix]]",
+      "resolved": "urn:visionflow:linked:synthetix",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uniswap]]",
+      "resolved": "urn:visionflow:linked:uniswap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vertex Protocol]]",
+      "resolved": "urn:visionflow:linked:vertex-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vyper]]",
+      "resolved": "urn:visionflow:linked:vyper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WalletConnect]]",
+      "resolved": "urn:visionflow:linked:wallet-connect",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Web3.py]]",
+      "resolved": "urn:visionflow:linked:web3-py",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Yearn]]",
+      "resolved": "urn:visionflow:linked:yearn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zkSync]]",
+      "resolved": "urn:visionflow:linked:zk-sync",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DAO|DAOs]]",
+      "resolved": "urn:visionflow:owl:class:dao",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth billions to ecosystem development, public goods funding, protocol research, and community initiatives—ranging from prospective grants (Uniswap $74M) to retroactive public goods funding ([[Optimism]] $30M) to innovative quadratic funding mechanisms ([[Gitcoin]] $50M+).

@@ -1,0 +1,448 @@
+{
+  "id": "urn:visionflow:page:98d5d126963ac029e8e998554a1c256b16863a85385116cebccd43d19e7c19f4",
+  "title": "Safety and alignment",
+  "slug": "safety-and-alignment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:safety-and-alignment",
+  "domain": "artificial-intelligence",
+  "definition": "AI safety and alignment is the interdisciplinary research programme and engineering practice concerned with ensuring that artificial intelligence systems \u2014 particularly large language models and future general AI \u2014 behave in accordance with human intentions, values, and oversight mechanisms across all operational conditions, including adversarial, out-of-distribution, and high-stakes deployment contexts. The field encompasses: (1) **alignment techniques** instilling intended goals through reinforcement learning from human feedback (RLHF, Christiano et al. 2017), reinforcement learning from AI feedback (RLAIF), and Constitutional AI (Bai et al. 2022, Anthropic); (2) **scalable oversight** methodologies including debate (Irving et al. 2018, OpenAI), iterated amplification (Christiano et al. 2018), and weak-to-strong generalisation (Burns et al. 2023, OpenAI) enabling humans to supervise systems exceeding narrow human expertise; (3) **mechanistic interpretability** research (Elhage et al. 2021\u20132026, Anthropic Circuits; Nanda et al. 2022 OthelloGPT; Templeton et al. 2024 Sparse Autoencoders) reverse-engineering model circuits; (4) **red-teaming and dangerous-capability evaluations** pr",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:existential-risk-research",
+      "label": "Existential Risk Research"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:dangerous-capability-evaluations",
+        "label": "Dangerous Capability Evaluations"
+      },
+      {
+        "id": "urn:visionflow:linked:debate",
+        "label": "Debate"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:visionflow:linked:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:linked:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:visionflow:linked:sparse-autoencoders",
+        "label": "Sparse Autoencoders"
+      },
+      {
+        "id": "urn:visionflow:linked:weak-to-strong-generalisation",
+        "label": "Weak-to-Strong Generalisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:evaluation-benchmarks",
+        "label": "Evaluation Benchmarks"
+      },
+      {
+        "id": "urn:visionflow:linked:governance-frameworks",
+        "label": "Governance Frameworks"
+      },
+      {
+        "id": "urn:visionflow:linked:interpretability-tools",
+        "label": "Interpretability Tools"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:catastrophic-risk-reduction",
+        "label": "Catastrophic Risk Reduction"
+      },
+      {
+        "id": "urn:visionflow:linked:responsible-scaling",
+        "label": "Responsible Scaling"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-ai-deployment",
+        "label": "Safe AI Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:trustworthy-ai-systems",
+        "label": "Trustworthy AI Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:adversarial-red-teaming",
+        "label": "Adversarial Red Teaming"
+      },
+      {
+        "id": "urn:visionflow:linked:debate-protocol",
+        "label": "Debate Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanistic-circuits-analysis",
+        "label": "Mechanistic Circuits Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:weak-to-strong-generalisation",
+        "label": "Weak-to-Strong Generalisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activation-patching",
+      "label": "Activation Patching"
+    },
+    {
+      "slug": "adversarial-red-teaming",
+      "label": "Adversarial Red Teaming"
+    },
+    {
+      "slug": "ai-capabilities-research",
+      "label": "AI Capabilities Research"
+    },
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "bletchley-declaration",
+      "label": "Bletchley Declaration"
+    },
+    {
+      "slug": "catastrophic-risk-reduction",
+      "label": "Catastrophic Risk Reduction"
+    },
+    {
+      "slug": "causal-tracing",
+      "label": "Causal Tracing"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "dangerous-capability-evaluations",
+      "label": "Dangerous Capability Evaluations"
+    },
+    {
+      "slug": "debate",
+      "label": "Debate"
+    },
+    {
+      "slug": "debate-protocol",
+      "label": "Debate Protocol"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
+      "slug": "ethics-and-governance-domain",
+      "label": "EthicsAndGovernanceDomain"
+    },
+    {
+      "slug": "evaluation-benchmarks",
+      "label": "Evaluation Benchmarks"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "EvaluationLayer"
+    },
+    {
+      "slug": "existential-risk-research",
+      "label": "Existential Risk Research"
+    },
+    {
+      "slug": "governance-frameworks",
+      "label": "Governance Frameworks"
+    },
+    {
+      "slug": "interpretability-tools",
+      "label": "Interpretability Tools"
+    },
+    {
+      "slug": "iso-42001",
+      "label": "ISO 42001"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "mechanistic-circuits-analysis",
+      "label": "Mechanistic Circuits Analysis"
+    },
+    {
+      "slug": "mechanistic-interpretability",
+      "label": "Mechanistic Interpretability"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "opaque-systems",
+      "label": "Opaque Systems"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "responsible-scaling",
+      "label": "Responsible Scaling"
+    },
+    {
+      "slug": "responsible-scaling-policy",
+      "label": "Responsible Scaling Policy"
+    },
+    {
+      "slug": "reward-modelling",
+      "label": "Reward Modelling"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "safe-ai-deployment",
+      "label": "Safe AI Deployment"
+    },
+    {
+      "slug": "scalable-oversight",
+      "label": "Scalable Oversight"
+    },
+    {
+      "slug": "seoul-ai-summit",
+      "label": "Seoul AI Summit"
+    },
+    {
+      "slug": "sparse-autoencoders",
+      "label": "Sparse Autoencoders"
+    },
+    {
+      "slug": "trustworthy-ai-systems",
+      "label": "Trustworthy AI Systems"
+    },
+    {
+      "slug": "uk-aisi-evaluation-protocols",
+      "label": "UK AISI Evaluation Protocols"
+    },
+    {
+      "slug": "uncontrolled-deployment",
+      "label": "Uncontrolled Deployment"
+    },
+    {
+      "slug": "weak-to-strong-generalisation",
+      "label": "Weak-to-Strong Generalisation"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "direct-preference-optimisation",
+      "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "human-feedback",
+      "label": "Human Feedback"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "conspiracies",
+      "label": "Conspiracies"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "product-and-risk-management",
+      "label": "Product and Risk Management"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

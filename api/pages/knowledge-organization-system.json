@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:c53ef1d39f071ca806d0645d7413ba5f6774b56d7f441e212cbf75c6862a490e",
+  "title": "Knowledge Organization System",
+  "slug": "knowledge-organization-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-organization-system",
+  "domain": "artificial-intelligence",
+  "definition": "Knowledge Organization System is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "category-hierarchies",
+      "label": "Category Hierarchies"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "skos-vocabulary",
+      "label": "Skos Vocabulary"
+    }
+  ]
+}

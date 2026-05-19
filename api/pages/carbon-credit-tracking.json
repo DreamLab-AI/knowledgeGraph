@@ -1,0 +1,676 @@
+{
+  "id": "urn:visionflow:page:2bffcae77127ace01e24f2316e3bbafec035ee003460f995f0acd17574b4323b",
+  "title": "Carbon Credit Tracking",
+  "slug": "carbon-credit-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-credit-tracking",
+  "domain": "blockchain",
+  "definition": "**Carbon Credit Tracking** is the application of [[Blockchain]] and distributed ledger technology to record, verify, transfer, and permanently retire carbon emission reduction credits across their full lifecycle \u2014 from project origination through third-party verification to final environmental claim \u2014 replacing fragmented centralised registries with immutable, publicly auditable on-chain provenance that eliminates double-counting and enables programmatic carbon accounting. Each tokenised carbon credit \u2014 standardly representing one metric tonne of CO2 equivalent (tCO2e) removed or avoided \u2014 is minted as a cryptographic token embedding verifiable metadata: project type, vintage year, geographic coordinates, applicable carbon standard ([[Verra VCS]] or [[Gold Standard]] or [[Climate Action Reserve]]), UN Sustainable Development Goal co-benefits, and monitoring provenance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-ledger-application",
+      "label": "Distributed Ledger Application"
+    },
+    {
+      "id": "urn:visionflow:linked:environmental-finance",
+      "label": "Environmental Finance"
+    },
+    {
+      "id": "urn:visionflow:linked:green-finance",
+      "label": "Green Finance"
+    },
+    {
+      "id": "urn:visionflow:linked:real-world-asset-tokenisation",
+      "label": "Real World Asset Tokenisation"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:carbon-registry-bridge",
+        "label": "Carbon Registry Bridge"
+      },
+      {
+        "id": "urn:visionflow:linked:corresponding-adjustment-record",
+        "label": "Corresponding Adjustment Record"
+      },
+      {
+        "id": "urn:visionflow:linked:credit-issuance-engine",
+        "label": "Credit Issuance Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:mrv-oracle",
+        "label": "MRV Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:permanence-buffer-pool",
+        "label": "Permanence Buffer Pool"
+      },
+      {
+        "id": "urn:visionflow:linked:retirement-smart-contract",
+        "label": "Retirement Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:carbon-standard-certification",
+        "label": "Carbon Standard Certification"
+      },
+      {
+        "id": "urn:visionflow:linked:immutable-audit-trail",
+        "label": "Immutable Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:linked:kyc-aml-compliance",
+        "label": "KYC AML Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:visionflow:linked:verified-emissions-data",
+        "label": "Verified Emissions Data"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:article-6-compliance",
+        "label": "Article 6 Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-carbon-accounting",
+        "label": "Automated Carbon Accounting"
+      },
+      {
+        "id": "urn:visionflow:linked:carbon-price-discovery",
+        "label": "Carbon Price Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:corporate-carbon-neutrality",
+        "label": "Corporate Carbon Neutrality"
+      },
+      {
+        "id": "urn:visionflow:linked:fractional-carbon-credit-ownership",
+        "label": "Fractional Carbon Credit Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-carbon-offsetting",
+        "label": "Real-Time Carbon Offsetting"
+      },
+      {
+        "id": "urn:visionflow:linked:voluntary-carbon-markets",
+        "label": "Voluntary Carbon Markets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:corsia-aviation-offsets",
+        "label": "CORSIA Aviation Offsets"
+      },
+      {
+        "id": "urn:visionflow:linked:eu-taxonomy-green-finance",
+        "label": "EU Taxonomy Green Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:gold-standard-certification",
+        "label": "Gold Standard Certification"
+      },
+      {
+        "id": "urn:visionflow:linked:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      },
+      {
+        "id": "urn:visionflow:linked:paris-agreement-article-6",
+        "label": "Paris Agreement Article 6"
+      },
+      {
+        "id": "urn:visionflow:linked:verra-vcs-methodology",
+        "label": "Verra VCS Methodology"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "article-6-compliance",
+      "label": "Article 6 Compliance"
+    },
+    {
+      "slug": "automated-carbon-accounting",
+      "label": "Automated Carbon Accounting"
+    },
+    {
+      "slug": "biodiversity-credits",
+      "label": "Biodiversity Credits"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    },
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "slug": "carbon-plan-2022-zombies-on-the-blockchain",
+      "label": "CarbonPlan 2022 Zombies on the Blockchain"
+    },
+    {
+      "slug": "carbon-price-discovery",
+      "label": "Carbon Price Discovery"
+    },
+    {
+      "slug": "carbon-registries",
+      "label": "Carbon Registries"
+    },
+    {
+      "slug": "carbon-registry-bridge",
+      "label": "Carbon Registry Bridge"
+    },
+    {
+      "slug": "carbon-standard-certification",
+      "label": "Carbon Standard Certification"
+    },
+    {
+      "slug": "carbonplace-2024-ledger-insights-live-pilot-seed-round",
+      "label": "Carbonplace 2024 Ledger Insights Live Pilot Seed Round"
+    },
+    {
+      "slug": "centralised-carbon-exchange",
+      "label": "Centralised Carbon Exchange"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "chainlink-oracles",
+      "label": "Chainlink Oracles"
+    },
+    {
+      "slug": "climate-action-reserve",
+      "label": "Climate Action Reserve"
+    },
+    {
+      "slug": "climate-tech",
+      "label": "Climate Tech"
+    },
+    {
+      "slug": "climate-tech-domain",
+      "label": "ClimateTechDomain"
+    },
+    {
+      "slug": "columbia-sipa-cgep-2024-operationalise-article-6",
+      "label": "Columbia SIPA CGEP 2024 Operationalise Article 6"
+    },
+    {
+      "slug": "compliance-cap-and-trade-registry",
+      "label": "Compliance Cap-and-Trade Registry"
+    },
+    {
+      "slug": "corporate-carbon-neutrality",
+      "label": "Corporate Carbon Neutrality"
+    },
+    {
+      "slug": "corporate-climate-commitments",
+      "label": "Corporate Climate Commitments"
+    },
+    {
+      "slug": "corresponding-adjustment-record",
+      "label": "Corresponding Adjustment Record"
+    },
+    {
+      "slug": "corsia",
+      "label": "CORSIA"
+    },
+    {
+      "slug": "corsia-aviation-offsets",
+      "label": "CORSIA Aviation Offsets"
+    },
+    {
+      "slug": "credit-issuance-engine",
+      "label": "Credit Issuance Engine"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "diehl-2023-klima-dao-journal-of-organisation-design",
+      "label": "Diehl 2023 KlimaDAO Journal of Organisation Design"
+    },
+    {
+      "slug": "distributed-ledger-application",
+      "label": "Distributed Ledger Application"
+    },
+    {
+      "slug": "ecosystem-marketplace-state-of-vcm-2023",
+      "label": "Ecosystem Marketplace State of VCM 2023"
+    },
+    {
+      "slug": "energy-research-social-science-2025-blockchain-tokenised-carbon-markets",
+      "label": "Energy Research Social Science 2025 Blockchain Tokenised Carbon Markets"
+    },
+    {
+      "slug": "environmental-finance",
+      "label": "Environmental Finance"
+    },
+    {
+      "slug": "environmental-finance-domain",
+      "label": "EnvironmentalFinanceDomain"
+    },
+    {
+      "slug": "erc-20-tokens",
+      "label": "ERC-20 Tokens"
+    },
+    {
+      "slug": "erc-721-nfts",
+      "label": "ERC-721 NFTs"
+    },
+    {
+      "slug": "esg-investing",
+      "label": "ESG Investing"
+    },
+    {
+      "slug": "eu-corporate-sustainability-reporting-directive",
+      "label": "EU Corporate Sustainability Reporting Directive"
+    },
+    {
+      "slug": "eu-taxonomy-green-finance",
+      "label": "EU Taxonomy Green Finance"
+    },
+    {
+      "slug": "fca-2023-cryptoasset-promotions-ps23-6",
+      "label": "FCA 2023 Cryptoasset Promotions PS23-6"
+    },
+    {
+      "slug": "flowcarbon",
+      "label": "Flowcarbon"
+    },
+    {
+      "slug": "fractional-carbon-credit-ownership",
+      "label": "Fractional Carbon Credit Ownership"
+    },
+    {
+      "slug": "frontiers-blockchain-2024-tokenised-carbon-credits-klima-dao",
+      "label": "Frontiers Blockchain 2024 Tokenised Carbon Credits KlimaDAO"
+    },
+    {
+      "slug": "frontiers-blockchain-2025-blockchain-vcm-network-structure",
+      "label": "Frontiers Blockchain 2025 Blockchain VCM Network Structure"
+    },
+    {
+      "slug": "gold-standard",
+      "label": "Gold Standard"
+    },
+    {
+      "slug": "gold-standard-certification",
+      "label": "Gold Standard Certification"
+    },
+    {
+      "slug": "green-finance",
+      "label": "Green Finance"
+    },
+    {
+      "slug": "green-finance-domain",
+      "label": "GreenFinanceDomain"
+    },
+    {
+      "slug": "green-finance-institute-2024-blockchain-uk-vcm",
+      "label": "Green Finance Institute 2024 Blockchain UK VCM"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
+      "slug": "holtz-2025-tokenisation-opportunities-vcm-jrfm",
+      "label": "Holtz 2025 Tokenisation Opportunities VCM JRFM"
+    },
+    {
+      "slug": "icvcm-core-carbon-principles",
+      "label": "ICVCM Core Carbon Principles"
+    },
+    {
+      "slug": "icvcm-core-carbon-principles-2023",
+      "label": "ICVCM Core Carbon Principles 2023"
+    },
+    {
+      "slug": "immutable-audit-trail",
+      "label": "Immutable Audit Trail"
+    },
+    {
+      "slug": "integrity-council-for-the-voluntary-carbon-market",
+      "label": "Integrity Council for the Voluntary Carbon Market"
+    },
+    {
+      "slug": "intel-market-research-2025-blockchain-carbon-platform-market",
+      "label": "Intel Market Research 2025 Blockchain Carbon Platform Market"
+    },
+    {
+      "slug": "intel-market-research-2025-vcm-platform-market",
+      "label": "Intel Market Research 2025 VCM Platform Market"
+    },
+    {
+      "slug": "ipcc-ar6-synthesis-report-2023",
+      "label": "IPCC AR6 Synthesis Report 2023"
+    },
+    {
+      "slug": "klima-dao",
+      "label": "KlimaDAO"
+    },
+    {
+      "slug": "kyc-aml-compliance",
+      "label": "KYC AML Compliance"
+    },
+    {
+      "slug": "lee-2024-blockchain-carbon-markets-standards-overview-ar-xiv",
+      "label": "Lee 2024 Blockchain Carbon Markets Standards Overview arXiv"
+    },
+    {
+      "slug": "mrv",
+      "label": "MRV"
+    },
+    {
+      "slug": "mrv-oracle",
+      "label": "MRV Oracle"
+    },
+    {
+      "slug": "mrvlayer",
+      "label": "MRVLayer"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "nature-based-solutions",
+      "label": "Nature-Based Solutions"
+    },
+    {
+      "slug": "nature-npj-climate-action-2026-blockchain-carbon-registry-transportation",
+      "label": "Nature npj Climate Action 2026 Blockchain Carbon Registry Transportation"
+    },
+    {
+      "slug": "net-zero-targets",
+      "label": "Net Zero Targets"
+    },
+    {
+      "slug": "nfts",
+      "label": "NFTs"
+    },
+    {
+      "slug": "offset-broker",
+      "label": "Offset Broker"
+    },
+    {
+      "slug": "oracle-layer",
+      "label": "OracleLayer"
+    },
+    {
+      "slug": "oracle-network",
+      "label": "Oracle Network"
+    },
+    {
+      "slug": "oracle-networks",
+      "label": "Oracle Networks"
+    },
+    {
+      "slug": "paris-agreement",
+      "label": "Paris Agreement"
+    },
+    {
+      "slug": "paris-agreement-article-6",
+      "label": "Paris Agreement Article 6"
+    },
+    {
+      "slug": "permanence-buffer-pool",
+      "label": "Permanence Buffer Pool"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "polygon-network",
+      "label": "Polygon Network"
+    },
+    {
+      "slug": "probst-2024-nature-climate-change-forest-carbon-over-crediting",
+      "label": "Probst 2024 Nature Climate Change Forest Carbon Over-crediting"
+    },
+    {
+      "slug": "pw-c-2024-tokenisation-report-vcm",
+      "label": "PwC 2024 Tokenisation Report VCM"
+    },
+    {
+      "slug": "real-time-carbon-offsetting",
+      "label": "Real-Time Carbon Offsetting"
+    },
+    {
+      "slug": "real-world-asset-tokenisation",
+      "label": "Real World Asset Tokenisation"
+    },
+    {
+      "slug": "redd-paper-certificates",
+      "label": "REDD+ Paper Certificates"
+    },
+    {
+      "slug": "retirement-smart-contract",
+      "label": "Retirement Smart Contract"
+    },
+    {
+      "slug": "satellite-remote-sensing",
+      "label": "Satellite Remote Sensing"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "SettlementLayer"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "SmartContractLayer"
+    },
+    {
+      "slug": "springer-discover-environment-2025-blockchain-carbon-market-literature-review",
+      "label": "Springer Discover Environment 2025 Blockchain Carbon Market Literature Review"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "SustainabilityDomain"
+    },
+    {
+      "slug": "tokenisation-layer",
+      "label": "TokenisationLayer"
+    },
+    {
+      "slug": "toucan-protocol",
+      "label": "Toucan Protocol"
+    },
+    {
+      "slug": "traditional-carbon-registry",
+      "label": "Traditional Carbon Registry"
+    },
+    {
+      "slug": "unfccc-2024-article-6-cop29-agreement",
+      "label": "UNFCCC 2024 Article 6 COP29 Agreement"
+    },
+    {
+      "slug": "verified-emissions-data",
+      "label": "Verified Emissions Data"
+    },
+    {
+      "slug": "verra",
+      "label": "Verra"
+    },
+    {
+      "slug": "verra-2022-crypto-tokenisation-position",
+      "label": "Verra 2022 Crypto Tokenisation Position"
+    },
+    {
+      "slug": "verra-hedera-foundation-partnership-2025",
+      "label": "Verra Hedera Foundation Partnership 2025"
+    },
+    {
+      "slug": "verra-s-and-p-global-next-generation-registry-2025",
+      "label": "Verra S&P Global Next-Generation Registry 2025"
+    },
+    {
+      "slug": "verra-vcs",
+      "label": "Verra VCS"
+    },
+    {
+      "slug": "verra-vcs-methodology",
+      "label": "Verra VCS Methodology"
+    },
+    {
+      "slug": "verra-vcs-standard",
+      "label": "Verra VCS Standard"
+    },
+    {
+      "slug": "voluntary-carbon-markets",
+      "label": "Voluntary Carbon Markets"
+    },
+    {
+      "slug": "west-2023-science-redd-carbon-offsets",
+      "label": "West 2023 Science REDD+ Carbon Offsets"
+    },
+    {
+      "slug": "world-bank-2024-harnessing-blockchain-climate-markets",
+      "label": "World Bank 2024 Harnessing Blockchain Climate Markets"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "IoT Sensors"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

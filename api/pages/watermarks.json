@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:bb3b078f249d70a4efa5b90f63b5f35cc856f30d54719fb45b3985f86f651512",
+  "title": "Watermarks",
+  "slug": "watermarks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:watermarks",
+  "domain": "infrastructure",
+  "definition": "Watermarks is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

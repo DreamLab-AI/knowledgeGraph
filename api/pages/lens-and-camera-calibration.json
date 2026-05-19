@@ -1,0 +1,612 @@
+{
+  "id": "urn:visionflow:page:38a1179be185b3123c3b2c7fbaa360b965f02e33e05bd94e029f9cdc8b588f3b",
+  "title": "Lens and Camera Calibration",
+  "slug": "lens-and-camera-calibration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lens-and-camera-calibration",
+  "domain": "computer-vision",
+  "definition": "Lens and Camera Calibration is the systematic metrology process of estimating the full set of geometric and photometric parameters that govern image formation in a camera-lens system, enabling precise bidirectional mapping between three-dimensional world coordinates and two-dimensional image pixel coordinates. This estimation is foundational to every quantitative computer vision task: metric [[3D Reconstruction]], [[Structure from Motion]], [[Stereo Vision]], [[SLAM]], [[Augmented Reality]] hologram registration, surgical robot navigation, autonomous vehicle perception, satellite photogrammetry, and industrial dimensional inspection. Without calibration a camera functions as a qualitative sensor; with calibration every pixel becomes a directed ray in 3D space with known angular bearing, origin, and depth scale, enabling millimetre-accurate spatial reasoning from images alone. The canonical mathematical model decomposes into two tightly coupled components: intrinsic parameters and lens distortion. The intrinsic matrix K \u2014 a 3\u00d73 upper-triangular matrix K = [[fx, s, cx], [0, fy, cy], [0, 0, 1]] \u2014 encodes the focal lengths fx, fy (in pixel units, related to the physical focal length f ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "id": "urn:visionflow:linked:geometric-camera-models",
+      "label": "Geometric Camera Models"
+    },
+    {
+      "id": "urn:visionflow:linked:sensor-calibration",
+      "label": "Sensor Calibration"
+    },
+    {
+      "id": "urn:visionflow:owl:class:3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:april-tag",
+        "label": "AprilTag"
+      },
+      {
+        "id": "urn:visionflow:linked:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:visionflow:linked:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:visionflow:linked:ch-ar-uco-board",
+        "label": "ChArUco Board"
+      },
+      {
+        "id": "urn:visionflow:linked:extrinsic-parameters",
+        "label": "Extrinsic Parameters"
+      },
+      {
+        "id": "urn:visionflow:linked:homography",
+        "label": "Homography"
+      },
+      {
+        "id": "urn:visionflow:linked:lens-distortion-model",
+        "label": "Lens Distortion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:pinhole-camera-model",
+        "label": "Pinhole Camera Model"
+      },
+      {
+        "id": "urn:visionflow:linked:reprojection-error",
+        "label": "Reprojection Error"
+      },
+      {
+        "id": "urn:visionflow:owl:class:calibration-target",
+        "label": "Calibration Target"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:visionflow:linked:nonlinear-optimisation",
+        "label": "Nonlinear Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:projective-geometry",
+        "label": "Projective Geometry"
+      },
+      {
+        "id": "urn:visionflow:linked:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:calibration-target",
+        "label": "Calibration Target"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      },
+      {
+        "id": "urn:visionflow:linked:metric-reconstruction",
+        "label": "Metric Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:linked:robotic-grasping",
+        "label": "Robotic Grasping"
+      },
+      {
+        "id": "urn:visionflow:linked:stereo-depth-estimation",
+        "label": "Stereo Depth Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:brown-conrady-distortion-model",
+        "label": "Brown-Conrady Distortion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:direct-linear-transform",
+        "label": "Direct Linear Transform"
+      },
+      {
+        "id": "urn:visionflow:linked:dual-quaternion-hand-eye-calibration",
+        "label": "Dual Quaternion Hand-Eye Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:kannala-brandt-fisheye-model",
+        "label": "Kannala-Brandt Fisheye Model"
+      },
+      {
+        "id": "urn:visionflow:linked:levenberg-marquardt-optimisation",
+        "label": "Levenberg-Marquardt Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:zhang-calibration-method",
+        "label": "Zhang Calibration Method"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "april-tag",
+      "label": "AprilTag"
+    },
+    {
+      "slug": "ar-uco",
+      "label": "ArUco"
+    },
+    {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "bogdan-et-al-2018-deep-calib-siggraph-cvmp",
+      "label": "Bogdan et al 2018 DeepCalib SIGGRAPH CVMP"
+    },
+    {
+      "slug": "bouguet-2004-matlab-calibration-toolbox-caltech",
+      "label": "Bouguet 2004 MATLAB Calibration Toolbox Caltech"
+    },
+    {
+      "slug": "brown-1966-decentering-distortion-photogrammetric-engineering",
+      "label": "Brown 1966 Decentering Distortion Photogrammetric Engineering"
+    },
+    {
+      "slug": "brown-conrady-distortion-model",
+      "label": "Brown-Conrady Distortion Model"
+    },
+    {
+      "slug": "bundle-adjustment",
+      "label": "Bundle Adjustment"
+    },
+    {
+      "slug": "camera-intrinsics",
+      "label": "Camera Intrinsics"
+    },
+    {
+      "slug": "ch-ar-uco-board",
+      "label": "ChArUco Board"
+    },
+    {
+      "slug": "colmap",
+      "label": "COLMAP"
+    },
+    {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "conrady-1919-decentred-lenses-mnras",
+      "label": "Conrady 1919 Decentred Lenses MNRAS"
+    },
+    {
+      "slug": "daniilidis-1999-hand-eye-dual-quaternions-ijrr",
+      "label": "Daniilidis 1999 Hand-Eye Dual Quaternions IJRR"
+    },
+    {
+      "slug": "direct-linear-transform",
+      "label": "Direct Linear Transform"
+    },
+    {
+      "slug": "drone-photogrammetry",
+      "label": "Drone Photogrammetry"
+    },
+    {
+      "slug": "dual-quaternion-hand-eye-calibration",
+      "label": "Dual Quaternion Hand-Eye Calibration"
+    },
+    {
+      "slug": "extrinsic-parameters",
+      "label": "Extrinsic Parameters"
+    },
+    {
+      "slug": "faugeras-toscani-1986-stereo-calibration-cvpr",
+      "label": "Faugeras-Toscani 1986 Stereo Calibration CVPR"
+    },
+    {
+      "slug": "feature-detection",
+      "label": "Feature Detection"
+    },
+    {
+      "slug": "fiducial-markers",
+      "label": "Fiducial Markers"
+    },
+    {
+      "slug": "furgale-et-al-2013-kalibr-iros",
+      "label": "Furgale et al 2013 Kalibr IROS"
+    },
+    {
+      "slug": "garrido-jurado-et-al-2014-ar-uco-pattern-recognition",
+      "label": "Garrido-Jurado et al 2014 ArUco Pattern Recognition"
+    },
+    {
+      "slug": "geiger-et-al-2012-lidar-camera-calibration-icra",
+      "label": "Geiger et al 2012 Lidar-Camera Calibration ICRA"
+    },
+    {
+      "slug": "geometric-camera-models",
+      "label": "Geometric Camera Models"
+    },
+    {
+      "slug": "hardware-abstraction-layer",
+      "label": "HardwareAbstractionLayer"
+    },
+    {
+      "slug": "hartley-zisserman-2003-multiple-view-geometry-cambridge-university-press",
+      "label": "Hartley-Zisserman 2003 Multiple View Geometry Cambridge University Press"
+    },
+    {
+      "slug": "homogeneous-coordinates",
+      "label": "Homogeneous Coordinates"
+    },
+    {
+      "slug": "homography",
+      "label": "Homography"
+    },
+    {
+      "slug": "ieee-transactions-on-pattern-analysis-and-machine-intelligence",
+      "label": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    },
+    {
+      "slug": "imu-preintegration",
+      "label": "IMU Preintegration"
+    },
+    {
+      "slug": "imu-sensors",
+      "label": "IMU Sensors"
+    },
+    {
+      "slug": "industrial-machine-vision",
+      "label": "Industrial Machine Vision"
+    },
+    {
+      "slug": "iso-10110-optics-standards",
+      "label": "ISO 10110 Optics Standards"
+    },
+    {
+      "slug": "iso-tc172-optics-standardisation",
+      "label": "ISO TC172 Optics Standardisation"
+    },
+    {
+      "slug": "kalibr",
+      "label": "Kalibr"
+    },
+    {
+      "slug": "kannala-brandt-2006-fisheye-model-ieee-t-pami",
+      "label": "Kannala-Brandt 2006 Fisheye Model IEEE T-PAMI"
+    },
+    {
+      "slug": "kannala-brandt-fisheye-model",
+      "label": "Kannala-Brandt Fisheye Model"
+    },
+    {
+      "slug": "lens-distortion-model",
+      "label": "Lens Distortion Model"
+    },
+    {
+      "slug": "levenberg-marquardt-optimisation",
+      "label": "Levenberg-Marquardt Optimisation"
+    },
+    {
+      "slug": "lidar-calibration",
+      "label": "Lidar Calibration"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "luhmann-et-al-2019-close-range-photogrammetry-de-gruyter",
+      "label": "Luhmann et al 2019 Close-Range Photogrammetry De Gruyter"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "metric-reconstruction",
+      "label": "Metric Reconstruction"
+    },
+    {
+      "slug": "model-based-rendering",
+      "label": "Model-Based Rendering"
+    },
+    {
+      "slug": "muglikar-et-al-2021-event-camera-calibration-cvprw",
+      "label": "Muglikar et al 2021 Event Camera Calibration CVPRW"
+    },
+    {
+      "slug": "nonlinear-least-squares",
+      "label": "Nonlinear Least Squares"
+    },
+    {
+      "slug": "nonlinear-optimisation",
+      "label": "Nonlinear Optimisation"
+    },
+    {
+      "slug": "olson-2011-april-tag-icra",
+      "label": "Olson 2011 AprilTag ICRA"
+    },
+    {
+      "slug": "open-cv",
+      "label": "OpenCV"
+    },
+    {
+      "slug": "open-cv-4-10-documentation-calib3d",
+      "label": "OpenCV 4.10 Documentation calib3d"
+    },
+    {
+      "slug": "open-cv-documentation",
+      "label": "OpenCV Documentation"
+    },
+    {
+      "slug": "optical-metrology-domain",
+      "label": "OpticalMetrologyDomain"
+    },
+    {
+      "slug": "park-martin-1994-ax-xb-ieee-tra",
+      "label": "Park-Martin 1994 AX=XB IEEE TRA"
+    },
+    {
+      "slug": "photogrammetry-domain",
+      "label": "PhotogrammetryDomain"
+    },
+    {
+      "slug": "photometric-calibration",
+      "label": "Photometric Calibration"
+    },
+    {
+      "slug": "pinhole-camera-model",
+      "label": "Pinhole Camera Model"
+    },
+    {
+      "slug": "point-cloud-processing",
+      "label": "Point Cloud Processing"
+    },
+    {
+      "slug": "pollefeys-et-al-1999-self-calibration-ijcv",
+      "label": "Pollefeys et al 1999 Self-Calibration IJCV"
+    },
+    {
+      "slug": "projective-geometry",
+      "label": "Projective Geometry"
+    },
+    {
+      "slug": "projective-reconstruction",
+      "label": "Projective Reconstruction"
+    },
+    {
+      "slug": "reprojection-error",
+      "label": "Reprojection Error"
+    },
+    {
+      "slug": "robotic-grasping",
+      "label": "Robotic Grasping"
+    },
+    {
+      "slug": "robotics-perception-domain",
+      "label": "RoboticsPerceptionDomain"
+    },
+    {
+      "slug": "romero-ramirez-et-al-2018-ar-uco3-ivc",
+      "label": "Romero-Ramirez et al 2018 ArUco3 IVC"
+    },
+    {
+      "slug": "rufael-et-al-2022-laparoscope-sterilisation-ijcars",
+      "label": "Rufael et al 2022 Laparoscope Sterilisation IJCARS"
+    },
+    {
+      "slug": "satellite-imagery",
+      "label": "Satellite Imagery"
+    },
+    {
+      "slug": "sch-nberger-frahm-2016-colmap-cvpr",
+      "label": "Sch\u00f6nberger-Frahm 2016 COLMAP CVPR"
+    },
+    {
+      "slug": "sensor-calibration",
+      "label": "Sensor Calibration"
+    },
+    {
+      "slug": "singular-value-decomposition",
+      "label": "Singular Value Decomposition"
+    },
+    {
+      "slug": "stereo-depth-estimation",
+      "label": "Stereo Depth Estimation"
+    },
+    {
+      "slug": "stereo-matching",
+      "label": "Stereo Matching"
+    },
+    {
+      "slug": "stereo-vision",
+      "label": "Stereo Vision"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure from Motion"
+    },
+    {
+      "slug": "sturm-triggs-1996-projective-self-calibration-eccv",
+      "label": "Sturm-Triggs 1996 Projective Self-Calibration ECCV"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "system-calibration-layer",
+      "label": "SystemCalibrationLayer"
+    },
+    {
+      "slug": "triggs-et-al-2000-bundle-adjustment-lncs",
+      "label": "Triggs et al 2000 Bundle Adjustment LNCS"
+    },
+    {
+      "slug": "tsai-1987-camera-calibration-ieee-jra",
+      "label": "Tsai 1987 Camera Calibration IEEE JRA"
+    },
+    {
+      "slug": "tsai-lenz-1989-hand-eye-calibration-ieee-tra",
+      "label": "Tsai-Lenz 1989 Hand-Eye Calibration IEEE TRA"
+    },
+    {
+      "slug": "uncalibrated-reconstruction",
+      "label": "Uncalibrated Reconstruction"
+    },
+    {
+      "slug": "uncalibrated-structure-from-motion",
+      "label": "Uncalibrated Structure from Motion"
+    },
+    {
+      "slug": "veicht-et-al-2024-geo-calib-eccv-ar-xiv-2409-06704",
+      "label": "Veicht et al 2024 GeoCalib ECCV arXiv:2409.06704"
+    },
+    {
+      "slug": "visual-odometry",
+      "label": "Visual Odometry"
+    },
+    {
+      "slug": "wang-olson-2019-april-tag3-iros",
+      "label": "Wang-Olson 2019 AprilTag3 IROS"
+    },
+    {
+      "slug": "wikilink",
+      "label": "wikilink"
+    },
+    {
+      "slug": "zhang-2000-flexible-camera-calibration-ieee-t-pami",
+      "label": "Zhang 2000 Flexible Camera Calibration IEEE T-PAMI"
+    },
+    {
+      "slug": "zhang-calibration-method",
+      "label": "Zhang Calibration Method"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

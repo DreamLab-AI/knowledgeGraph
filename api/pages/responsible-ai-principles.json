@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:a7a5fde053465538e239265d308e38ea7884538795614782f52e8605e943616a",
+  "title": "Responsible AI Principles",
+  "slug": "responsible-ai-principles",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:responsible-ai-principles",
+  "domain": "artificial-intelligence",
+  "definition": "Responsible AI Principles are foundational ethical commitments and normative guidelines that govern AI system design, development, deployment, and monitoring to ensure beneficial, fair, and rights-respecting outcomes. These principles establish organizational values and constraints that guide technical decisions, risk management, and stakeholder engagement throughout the AI lifecycle. Core principles widely adopted across international frameworks include fairness and non-discrimination (ensuring equitable treatment across demographic groups and mitigating algorithmic bias), transparency and explainability (providing understandable information about system functionality and decision logic), accountability and governance (establishing clear responsibility for AI outcomes and oversight mechanisms), privacy and data protection (safeguarding personal information and respecting data rights), safety and security (ensuring robust performance and resistance to adversarial attacks), human agency and oversight (preserving meaningful human control and decision-making authority), and societal and environmental wellbeing (considering broader impacts on communities and sustainability). These prin",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-hleg-ai",
+      "label": "EU HLEG AI"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "unesco-recommendation-on-ai-ethics",
+      "label": "UNESCO Recommendation on AI Ethics"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

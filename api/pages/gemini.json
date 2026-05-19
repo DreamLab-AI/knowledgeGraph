@@ -1,0 +1,180 @@
+{
+  "id": "urn:visionflow:page:d6a3356304e0a3b92f57afec67bd6f2ef970fef94e95d7e9d64b35bbfde28704",
+  "title": "Gemini",
+  "slug": "gemini",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gemini",
+  "domain": "artificial-intelligence",
+  "definition": "A family of multimodal AI models developed by Google DeepMind that natively process text, images, audio, and video, designed for efficiency across different scales from mobile devices to data centres.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "comparison-of-gpt4-and-gemini-ultra",
+      "label": "Comparison of GPT4 and Gemini Ultra"
+    },
+    {
+      "slug": "contracts-and-jobs",
+      "label": "Contracts and jobs"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "multimodal",
+      "label": "Multimodal"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "should",
+      "label": "SHOULD"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "consumer-tools-for-smes",
+      "label": "Consumer Tools for SMEs"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "training-for-design-practitioners",
+      "label": "Training for Design Practitioners"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

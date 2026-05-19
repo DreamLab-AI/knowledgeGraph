@@ -1,0 +1,523 @@
+{
+  "id": "urn:visionflow:page:7f11ca5983d4911b202c0d3ad93fc393b84588692e6d44e7e7837fb8dcce4bed",
+  "title": "ETSI_Domain_Virtual_Society",
+  "slug": "etsi-domain-virtual-society",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-virtual-society",
+  "domain": "spatial-computing",
+  "definition": "A standardization domain within the [[ETSI]] (European Telecommunications Standards Institute) focused on virtual society technologies, encompassing metaverse ecosystems, [[XR (Extended Reality)]], [[digital identity]], and interoperable virtual worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "active",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-assets",
+      "label": "3D assets"
+    },
+    {
+      "slug": "3-d-audio",
+      "label": "3D Audio"
+    },
+    {
+      "slug": "3-d-web-interoperability",
+      "label": "3D Web Interoperability"
+    },
+    {
+      "slug": "3-gpp",
+      "label": "3GPP"
+    },
+    {
+      "slug": "5-g-6-g",
+      "label": "5G/6G"
+    },
+    {
+      "slug": "advanced-audio-coding-aac",
+      "label": "advanced audio coding (AAC)"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "ai-enhanced-ar-vr",
+      "label": "AI-enhanced AR/VR"
+    },
+    {
+      "slug": "ar-vr-interfaces",
+      "label": "AR/VR interfaces"
+    },
+    {
+      "slug": "avatar-standards",
+      "label": "avatar standards"
+    },
+    {
+      "slug": "avatars",
+      "label": "avatars"
+    },
+    {
+      "slug": "blockchain-based-solutions",
+      "label": "Blockchain-based solutions"
+    },
+    {
+      "slug": "blockchain-integration",
+      "label": "Blockchain integration"
+    },
+    {
+      "slug": "blockchain-technology",
+      "label": "blockchain technology"
+    },
+    {
+      "slug": "cloud-streaming",
+      "label": "cloud streaming"
+    },
+    {
+      "slug": "cyber-resilience-act",
+      "label": "Cyber Resilience Act"
+    },
+    {
+      "slug": "daos",
+      "label": "DAOs"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "decentralized identity"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "digital-health",
+      "label": "Digital health"
+    },
+    {
+      "slug": "digital-rights-management-drm",
+      "label": "digital rights management (DRM)"
+    },
+    {
+      "slug": "digital-single-market",
+      "label": "Digital Single Market"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "etsi-arf",
+      "label": "ETSI ARF"
+    },
+    {
+      "slug": "etsi-gr-arf-007",
+      "label": "ETSI GR ARF 007"
+    },
+    {
+      "slug": "etsi-gr-arf-007-v1-1-1",
+      "label": "ETSI GR ARF 007 V1.1.1"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "etsi-gr-arf-010-v1-1-1",
+      "label": "ETSI GR ARF 010 V1.1.1"
+    },
+    {
+      "slug": "etsi-work-programme-2024-2025",
+      "label": "ETSI Work Programme 2024-2025"
+    },
+    {
+      "slug": "eu-digital-identity",
+      "label": "EU Digital Identity"
+    },
+    {
+      "slug": "eu-digital-identity-initiative",
+      "label": "EU Digital Identity Initiative"
+    },
+    {
+      "slug": "eu-standardisation-strategy",
+      "label": "EU Standardisation Strategy"
+    },
+    {
+      "slug": "european-digital-strategy",
+      "label": "European Digital Strategy"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "game-fi",
+      "label": "GameFi"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "immersive-media",
+      "label": "immersive media"
+    },
+    {
+      "slug": "immersive-media",
+      "label": "Immersive Media"
+    },
+    {
+      "slug": "immersive-training-simulations",
+      "label": "immersive training simulations"
+    },
+    {
+      "slug": "interoperable-anchoring",
+      "label": "Interoperable Anchoring"
+    },
+    {
+      "slug": "ipsme",
+      "label": "IPSME"
+    },
+    {
+      "slug": "ipsme-inter-platform-semantic-messaging-environment",
+      "label": "IPSME (Inter-Platform Semantic Messaging Environment)"
+    },
+    {
+      "slug": "iso-iec",
+      "label": "ISO/IEC"
+    },
+    {
+      "slug": "iso-iec-standards",
+      "label": "ISO/IEC Standards"
+    },
+    {
+      "slug": "itu-t-focus-group-on-metaverse",
+      "label": "ITU-T Focus Group on Metaverse"
+    },
+    {
+      "slug": "itu-t-focus-group-on-metaverse-fg-mv",
+      "label": "ITU-T Focus Group on Metaverse (FG-MV)"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "medical-training-simulations",
+      "label": "medical training simulations"
+    },
+    {
+      "slug": "meta-horizon-worlds",
+      "label": "Meta Horizon Worlds"
+    },
+    {
+      "slug": "metaverse-events",
+      "label": "metaverse events"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "metaverse-standards-forum-msf",
+      "label": "Metaverse Standards Forum (MSF)"
+    },
+    {
+      "slug": "mpeg-h-3-d-audio",
+      "label": "MPEG-H 3D audio"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nfts",
+      "label": "NFTs"
+    },
+    {
+      "slug": "open-metaverse-interoperability-group-omi",
+      "label": "Open Metaverse Interoperability Group (OMI)"
+    },
+    {
+      "slug": "privacy-preserving-identity",
+      "label": "Privacy-preserving identity"
+    },
+    {
+      "slug": "privacy-preserving-identity",
+      "label": "Privacy-preserving Identity"
+    },
+    {
+      "slug": "privacy-preserving-identity-frameworks",
+      "label": "privacy-preserving identity frameworks"
+    },
+    {
+      "slug": "self-sovereign-identity-ssi",
+      "label": "Self-Sovereign Identity (SSI)"
+    },
+    {
+      "slug": "self-sovereign-identity-ssi",
+      "label": "self-sovereign identity (SSI)"
+    },
+    {
+      "slug": "virtual-economies",
+      "label": "virtual economies"
+    },
+    {
+      "slug": "virtual-economies",
+      "label": "Virtual Economies"
+    },
+    {
+      "slug": "virtual-worlds",
+      "label": "virtual worlds"
+    },
+    {
+      "slug": "virtual-worlds",
+      "label": "Virtual worlds"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "volumetric video"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
+    },
+    {
+      "slug": "web-4-0",
+      "label": "Web 4.0"
+    },
+    {
+      "slug": "world-graph",
+      "label": "world graph"
+    },
+    {
+      "slug": "world-graph",
+      "label": "World Graph"
+    },
+    {
+      "slug": "xr",
+      "label": "XR"
+    },
+    {
+      "slug": "xr-accessibility-guidelines",
+      "label": "XR accessibility guidelines"
+    },
+    {
+      "slug": "xr-extended-reality",
+      "label": "XR (Extended Reality)"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "zero-knowledge proofs"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital citizenship"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "digital identity"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "digital rights management"
+    },
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "digital twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge computing"
+    },
+    {
+      "slug": "identity-management",
+      "label": "identity management"
+    },
+    {
+      "slug": "interoperability",
+      "label": "interoperability"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "nft-standards",
+      "label": "NFT standards"
+    },
+    {
+      "slug": "nft-standards",
+      "label": "NFT Standards"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "privacy",
+      "label": "privacy"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "self-sovereign identity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart contracts"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "smart contracts"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial anchors"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "spatial anchors"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial Anchors"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "tokenomics"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "verifiable credentials"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,272 @@
+{
+  "id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1",
+  "title": "URI Canonicaliser",
+  "slug": "uri-canonicaliser",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:uri-canonicaliser",
+  "domain": "infrastructure",
+  "definition": "The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1\u2013R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification of agent-emitted artefacts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:identity-systems",
+      "label": "Identity Systems"
+    }
+  ],
+  "qualityScore": 0.89,
+  "authorityScore": 0.93,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:hash-computation",
+        "label": "Hash Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-bearer",
+        "label": "Scope Bearer"
+      },
+      {
+        "id": "urn:visionflow:linked:slug-derivation",
+        "label": "Slug Derivation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bip-340-pubkey",
+        "label": "BIP-340 Pubkey"
+      },
+      {
+        "id": "urn:visionflow:linked:json-stringification",
+        "label": "JSON Stringification"
+      },
+      {
+        "id": "urn:visionflow:linked:sha-256-hash-function",
+        "label": "SHA-256 Hash Function"
+      },
+      {
+        "id": "urn:visionflow:linked:uri-rfc-8141",
+        "label": "URI RFC 8141"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-resolution",
+        "label": "Decentralised Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:deterministic-serialisation",
+        "label": "Deterministic Serialisation"
+      },
+      {
+        "id": "urn:visionflow:linked:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ietf-content-addressable-architecture",
+        "label": "IETF Content-Addressable Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:rfc-8141-urn-syntax",
+        "label": "RFC 8141 URN Syntax"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-013",
+      "label": "ADR-013"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "bip-340",
+      "label": "BIP-340"
+    },
+    {
+      "slug": "bip-340-pubkey",
+      "label": "BIP-340 Pubkey"
+    },
+    {
+      "slug": "bip-340-schnorr-keypair",
+      "label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "slug": "blockchain-hash-function",
+      "label": "Blockchain Hash Function"
+    },
+    {
+      "slug": "content-addressed-storage",
+      "label": "Content-Addressed Storage"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "DataGovernanceDomain"
+    },
+    {
+      "slug": "decentralised-resolution",
+      "label": "Decentralised Resolution"
+    },
+    {
+      "slug": "deterministic-serialisation",
+      "label": "Deterministic Serialisation"
+    },
+    {
+      "slug": "hash-computation",
+      "label": "Hash Computation"
+    },
+    {
+      "slug": "ietf-content-addressable-architecture",
+      "label": "IETF Content-Addressable Architecture"
+    },
+    {
+      "slug": "json-stringification",
+      "label": "JSON Stringification"
+    },
+    {
+      "slug": "rfc-8141",
+      "label": "RFC 8141"
+    },
+    {
+      "slug": "rfc-8141-urn-syntax",
+      "label": "RFC 8141 URN Syntax"
+    },
+    {
+      "slug": "scope-bearer",
+      "label": "Scope Bearer"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "SemanticWebDomain"
+    },
+    {
+      "slug": "sha-256-hash-function",
+      "label": "SHA-256 Hash Function"
+    },
+    {
+      "slug": "slug-derivation",
+      "label": "Slug Derivation"
+    },
+    {
+      "slug": "tamper-detection",
+      "label": "Tamper Detection"
+    },
+    {
+      "slug": "uri-rfc-8141",
+      "label": "URI RFC 8141"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

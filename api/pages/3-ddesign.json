@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:8b5f26e1526d95a377b2fcfc06fb7875aaa0de259d2a6433c75c59194143993b",
+  "title": "3DDesign",
+  "slug": "3-ddesign",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-ddesign",
+  "domain": "infrastructure",
+  "definition": "3DDesign is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

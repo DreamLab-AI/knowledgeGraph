@@ -1,0 +1,46 @@
+{
+  "id": "urn:visionflow:page:90248e1112757b7a22550b2f354b9f3d52f07ef2304b99229be003293f530073",
+  "title": "Chatbot",
+  "slug": "chatbot",
+  "public": true,
+  "wikilinks": [
+    {
+      "slug": "virtual-assistant",
+      "label": "Virtual Assistant"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    }
+  ]
+}

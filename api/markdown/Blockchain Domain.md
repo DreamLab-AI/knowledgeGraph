@@ -1,20 +1,209 @@
-iri:: http://narrativegoldmine.com/blockchain#BlockchainDomain
-uri:: urn:visionclaw:concept:blockchain:blockchain-domain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:blockchain-domain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Blockchain Domain
-content-hash:: sha256-12-50bca1361db5
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.80
-version:: 2.1.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#BlockchainDomain
+legacy_uri:: urn:visionclaw:concept:blockchain:blockchain-domain
 public:: true
+
+# Blockchain Domain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817",
+  "@type": "Page",
+  "vc:slug": "blockchain-domain",
+  "title": "Blockchain Domain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
+      "vc:label": "NIST (National Institute of Standards and Technology)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.80"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-50bca1361db5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#BlockchainDomain"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Blockchain Domain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-domain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-domain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.1.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:blockchain-domain",
+  "@type": "OntologyClass",
+  "label": "Blockchain Domain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies. This domain encompasses the foundational concepts, cryptographic primitives, consensus mechanisms, network architectures, smart contract systems, and economic models that constitute blockchain technology. It includes both theoretical concepts and practical implementations of distributed, cryptographically-secured data structures that enable decentralized consensus without trusted intermediaries. The domain spans from low-level cryptographic operations to high-level decentralized applications, covering blockchain fundamentals, data structures, transaction models, consensus protocols, network topologies, virtual machine architectures, token economics, and enterprise blockchain solutions. This domain serves as the primary classification for all blockchain-related ontological concepts, providing a unified framework for organizing and understanding the complex ecosystem of distributed ledger technologies.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.80",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-domain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST (National Institute of Standards and Technology)]]",
+      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies. This domain encompasses the foundational concepts, cryptographic primitives, consensus mechanisms, network architectures, smart contract systems, and economic models that constitute blockchain technology. It includes both theoretical concepts and practical implementations of distributed, cryptographically-secured data structures that enable decentralized consensus without trusted intermediaries. The domain spans from low-level cryptographic operations to high-level decentralized applications, covering blockchain fundamentals, data structures, transaction models, consensus protocols, network topologies, virtual machine architectures, token economics, and enterprise blockchain solutions. This domain serves as the primary classification for all blockchain-related ontological concepts, providing a unified framework for organizing and understanding the complex ecosystem of distributed ledger technologies.

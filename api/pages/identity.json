@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:193a889e1588631612acdaddd46b8059f1af8e677e183e15b3127a2d184b0ef0",
+  "title": "Identity",
+  "slug": "identity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:identity",
+  "domain": "infrastructure",
+  "definition": "Identity is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    }
+  ]
+}

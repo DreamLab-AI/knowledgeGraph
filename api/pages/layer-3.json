@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b",
+  "title": "Layer 3",
+  "slug": "layer-3",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:layer-3",
+  "domain": "blockchain",
+  "definition": "Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications. Layer 3 inherits security from L2 while enabling hyperscalability through domain-specific transaction processing and optimized state management.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:custom-execution-environment",
+        "label": "Custom Execution Environment"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "application-specific-blockchain",
+      "label": "Application-Specific Blockchain"
+    },
+    {
+      "slug": "arbitrum-orbit",
+      "label": "Arbitrum Orbit"
+    },
+    {
+      "slug": "custom-execution-environment",
+      "label": "Custom Execution Environment"
+    },
+    {
+      "slug": "d-yd-x-v4",
+      "label": "dYdX v4"
+    },
+    {
+      "slug": "general-purpose-smart-contract-platform",
+      "label": "General-Purpose Smart Contract Platform"
+    },
+    {
+      "slug": "immutable-x",
+      "label": "Immutable X"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer 2"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "scalability-solutions",
+      "label": "Scalability Solutions"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

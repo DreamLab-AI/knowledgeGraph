@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:e8e001523dadbbc355c08cb5c6d28c21216a27581d73196e12f3a4b09bd8e4e6",
+  "title": "Feature Extraction",
+  "slug": "feature-extraction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:feature-extraction",
+  "domain": "spatial-computing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

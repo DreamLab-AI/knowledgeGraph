@@ -1,0 +1,780 @@
+{
+  "id": "urn:visionflow:page:78101acfd579c02149c87e7d5ef616d2f88c7e0e286d1d81be142b40a408424a",
+  "title": "Edge Computing",
+  "slug": "edge-computing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:edge-computing",
+  "domain": "infrastructure",
+  "definition": "Edge Computing is a distributed computing paradigm that relocates computation, storage, and intelligence from centralised hyperscale data centres towards the topological extremities of the network \u2014 into base stations, on-premises micro data centres, customer-premises gateways, vehicles, industrial PLCs and end-user devices \u2014 forming a hierarchical compute continuum from cloud (Tier 0 hyperscale regions <50 ms RTT) through fog/regional (Tier 1 metropolitan 10-30 ms) and edge (Tier 2 access network 1-10 ms) to far-edge (Tier 3 on-premises 0.5-2 ms) and finally on-device (Tier 4 sub-millisecond), formalised across multiple converging standards bodies and reference architectures (ETSI Multi-access Edge Computing MEC ISG founded 2014 ratifying the GS MEC 003 framework specifying virtualisation infrastructure manager VIM, multi-access edge orchestrator MEO, mobile edge platform manager MEPM, and a Mp1/Mp2/Mp3 service-API surface allowing third-party applications onboarded as Virtual Network Functions VNFs or containers to consume location, radio network information RNI, bandwidth management, and UE identity APIs co-located with the radio access network; 3GPP Release 15-18 specifying the",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-architecture",
+      "label": "Decentralised Architecture"
+    },
+    {
+      "id": "urn:visionflow:linked:latency-sensitive-infrastructure",
+      "label": "Latency-Sensitive Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:network-function-virtualisation",
+      "label": "Network Function Virtualisation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-application-server",
+        "label": "Edge Application Server"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-gateway",
+        "label": "Edge Gateway"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-node",
+        "label": "Edge Node"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-orchestrator",
+        "label": "Edge Orchestrator"
+      },
+      {
+        "id": "urn:visionflow:linked:fallback-mechanism",
+        "label": "Fallback Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:local-processing",
+        "label": "Local Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:visionflow:linked:container-runtime",
+        "label": "Container Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bandwidth-efficiency",
+        "label": "Bandwidth Efficiency"
+      },
+      {
+        "id": "urn:visionflow:linked:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-processing",
+        "label": "Decentralised Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:offline-operation",
+        "label": "Offline Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:reduced-latency",
+        "label": "Reduced Latency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:cloudlet-architecture",
+        "label": "Cloudlet Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-ai-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-caching",
+        "label": "Edge Caching"
+      },
+      {
+        "id": "urn:visionflow:linked:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-access-edge-computing",
+        "label": "Multi-access Edge Computing"
+      },
+      {
+        "id": "urn:visionflow:linked:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-gpp",
+      "label": "3GPP"
+    },
+    {
+      "slug": "3-gpp-ts-23-558-architecture-for-enabling-edge-applications",
+      "label": "3GPP TS 23.558 Architecture for Enabling Edge Applications"
+    },
+    {
+      "slug": "5-g",
+      "label": "5G"
+    },
+    {
+      "slug": "5-g-core",
+      "label": "5G Core"
+    },
+    {
+      "slug": "5-g-network",
+      "label": "5G Network"
+    },
+    {
+      "slug": "6-g",
+      "label": "6G"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "banbury-et-al-2021-mlperf-tiny-benchmark",
+      "label": "Banbury et al. 2021 MLPerf Tiny Benchmark"
+    },
+    {
+      "slug": "bandwidth-efficiency",
+      "label": "Bandwidth Efficiency"
+    },
+    {
+      "slug": "beutel-et-al-2022-flower-federated-learning-framework",
+      "label": "Beutel et al. 2022 Flower Federated Learning Framework"
+    },
+    {
+      "slug": "bonomi-et-al-2012-fog-computing-and-its-role-in-io-t",
+      "label": "Bonomi et al. 2012 Fog Computing and Its Role in IoT"
+    },
+    {
+      "slug": "cao-et-al-2023-overview-on-edge-computing-research",
+      "label": "Cao et al. 2023 Overview on Edge Computing Research"
+    },
+    {
+      "slug": "centralised-cloud-computing",
+      "label": "Centralised Cloud Computing"
+    },
+    {
+      "slug": "cloudflare-workers-v8-isolates-architecture",
+      "label": "Cloudflare Workers V8 Isolates Architecture"
+    },
+    {
+      "slug": "cloudlet-architecture",
+      "label": "Cloudlet Architecture"
+    },
+    {
+      "slug": "cncf",
+      "label": "CNCF"
+    },
+    {
+      "slug": "compute-and-networking-domain",
+      "label": "ComputeAndNetworkingDomain"
+    },
+    {
+      "slug": "container-image",
+      "label": "Container Image"
+    },
+    {
+      "slug": "container-runtime",
+      "label": "Container Runtime"
+    },
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "decentralised-architecture",
+      "label": "Decentralised Architecture"
+    },
+    {
+      "slug": "decentralised-processing",
+      "label": "Decentralised Processing"
+    },
+    {
+      "slug": "deng-et-al-2020-edge-intelligence-confluence",
+      "label": "Deng et al. 2020 Edge Intelligence Confluence"
+    },
+    {
+      "slug": "edge-ai-inference",
+      "label": "Edge AI Inference"
+    },
+    {
+      "slug": "edge-application-server",
+      "label": "Edge Application Server"
+    },
+    {
+      "slug": "edge-caching",
+      "label": "Edge Caching"
+    },
+    {
+      "slug": "edge-gateway",
+      "label": "Edge Gateway"
+    },
+    {
+      "slug": "edge-node",
+      "label": "Edge Node"
+    },
+    {
+      "slug": "edge-orchestrator",
+      "label": "Edge Orchestrator"
+    },
+    {
+      "slug": "etsi-gs-mec-003-framework-and-reference-architecture",
+      "label": "ETSI GS MEC 003 Framework and Reference Architecture"
+    },
+    {
+      "slug": "etsi-mec",
+      "label": "ETSI MEC"
+    },
+    {
+      "slug": "fallback-mechanism",
+      "label": "Fallback Mechanism"
+    },
+    {
+      "slug": "fog-computing",
+      "label": "Fog Computing"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "hellerstein-et-al-2019-serverless-one-step-forward",
+      "label": "Hellerstein et al. 2019 Serverless One Step Forward"
+    },
+    {
+      "slug": "hua-et-al-2023-edge-computing-with-ai-machine-learning-perspective",
+      "label": "Hua et al. 2023 Edge Computing with AI Machine Learning Perspective"
+    },
+    {
+      "slug": "ieee-1934-2018-open-fog-reference-architecture",
+      "label": "IEEE 1934-2018 OpenFog Reference Architecture"
+    },
+    {
+      "slug": "ieee-1934-open-fog",
+      "label": "IEEE 1934 OpenFog"
+    },
+    {
+      "slug": "industrial-io-t",
+      "label": "Industrial IoT"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "itu-t-y-3508",
+      "label": "ITU-T Y.3508"
+    },
+    {
+      "slug": "itu-t-y-3508-cloud-edge-computing",
+      "label": "ITU-T Y.3508 Cloud-Edge Computing"
+    },
+    {
+      "slug": "kairouz-et-al-2021-advances-and-open-problems-in-federated-learning",
+      "label": "Kairouz et al. 2021 Advances and Open Problems in Federated Learning"
+    },
+    {
+      "slug": "ksentini-and-frangoudis-2020-slicing-enabled-mec",
+      "label": "Ksentini & Frangoudis 2020 Slicing-Enabled MEC"
+    },
+    {
+      "slug": "kube-edge",
+      "label": "KubeEdge"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "lane-et-al-2017-squeezing-deep-learning-into-mobile-and-embedded-devices",
+      "label": "Lane et al. 2017 Squeezing Deep Learning into Mobile and Embedded Devices"
+    },
+    {
+      "slug": "latency-sensitive-infrastructure",
+      "label": "Latency-Sensitive Infrastructure"
+    },
+    {
+      "slug": "linux-foundation-edge",
+      "label": "Linux Foundation Edge"
+    },
+    {
+      "slug": "local-processing",
+      "label": "Local Processing"
+    },
+    {
+      "slug": "mainframe-computing",
+      "label": "Mainframe Computing"
+    },
+    {
+      "slug": "mao-et-al-2017-survey-on-mobile-edge-computing",
+      "label": "Mao et al. 2017 Survey on Mobile Edge Computing"
+    },
+    {
+      "slug": "mc-mahan-et-al-2017-federated-averaging",
+      "label": "McMahan et al. 2017 Federated Averaging"
+    },
+    {
+      "slug": "multi-access-edge-computing",
+      "label": "Multi-access Edge Computing"
+    },
+    {
+      "slug": "murshed-et-al-2022-machine-learning-at-the-network-edge",
+      "label": "Murshed et al. 2022 Machine Learning at the Network Edge"
+    },
+    {
+      "slug": "narrative-gold-mine",
+      "label": "Narrative Gold Mine"
+    },
+    {
+      "slug": "network-function-virtualisation",
+      "label": "Network Function Virtualisation"
+    },
+    {
+      "slug": "network-slicing",
+      "label": "Network Slicing"
+    },
+    {
+      "slug": "neural-processing-unit",
+      "label": "Neural Processing Unit"
+    },
+    {
+      "slug": "o-ran-alliance",
+      "label": "O-RAN Alliance"
+    },
+    {
+      "slug": "o-ran-alliance-architecture-description",
+      "label": "O-RAN Alliance Architecture Description"
+    },
+    {
+      "slug": "offline-operation",
+      "label": "Offline Operation"
+    },
+    {
+      "slug": "on-device-llm",
+      "label": "On-Device LLM"
+    },
+    {
+      "slug": "open-yurt",
+      "label": "OpenYurt"
+    },
+    {
+      "slug": "porambage-et-al-2018-mec-for-io-t-realization",
+      "label": "Porambage et al. 2018 MEC for IoT Realization"
+    },
+    {
+      "slug": "privacy-preserving-computation",
+      "label": "Privacy-Preserving Computation"
+    },
+    {
+      "slug": "pure-on-device-computing",
+      "label": "Pure On-Device Computing"
+    },
+    {
+      "slug": "real-time-ai-inference",
+      "label": "Real-Time AI Inference"
+    },
+    {
+      "slug": "reduced-latency",
+      "label": "Reduced Latency"
+    },
+    {
+      "slug": "satyanarayanan-et-al-2009-the-case-for-vm-based-cloudlets",
+      "label": "Satyanarayanan et al. 2009 The Case for VM-Based Cloudlets"
+    },
+    {
+      "slug": "shi-and-dustdar-2016-the-promise-of-edge-computing",
+      "label": "Shi & Dustdar 2016 The Promise of Edge Computing"
+    },
+    {
+      "slug": "shi-et-al-2016-edge-computing-vision-and-challenges",
+      "label": "Shi et al. 2016 Edge Computing Vision and Challenges"
+    },
+    {
+      "slug": "smart-city",
+      "label": "Smart City"
+    },
+    {
+      "slug": "software-defined-networking",
+      "label": "Software-Defined Networking"
+    },
+    {
+      "slug": "synchronisation",
+      "label": "Synchronisation"
+    },
+    {
+      "slug": "taleb-et-al-2017-on-multi-access-edge-computing",
+      "label": "Taleb et al. 2017 On Multi-Access Edge Computing"
+    },
+    {
+      "slug": "tao-et-al-2018-digital-twin-driven-manufacturing",
+      "label": "Tao et al. 2018 Digital Twin-Driven Manufacturing"
+    },
+    {
+      "slug": "time-sensitive-networking",
+      "label": "Time-Sensitive Networking"
+    },
+    {
+      "slug": "time-synchronisation",
+      "label": "Time Synchronisation"
+    },
+    {
+      "slug": "traditional-cdn",
+      "label": "Traditional CDN"
+    },
+    {
+      "slug": "v8-isolates",
+      "label": "V8 Isolates"
+    },
+    {
+      "slug": "warden-and-situnayake-2019-tiny-ml",
+      "label": "Warden & Situnayake 2019 TinyML"
+    },
+    {
+      "slug": "zhang-et-al-2024-adaptive-edge-computing-survey",
+      "label": "Zhang et al. 2024 Adaptive Edge Computing Survey"
+    },
+    {
+      "slug": "zhou-et-al-2019-edge-intelligence-paving-the-last-mile",
+      "label": "Zhou et al. 2019 Edge Intelligence Paving the Last Mile"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience"
+    },
+    {
+      "slug": "tiny-ml",
+      "label": "TinyML"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aiops",
+      "label": "AIOps"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "asynchronous-execution",
+      "label": "Asynchronous Execution"
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "gartner-prediction",
+      "label": "Gartner Prediction"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "internet-infrastructure",
+      "label": "Internet Infrastructure"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "Io T Sensors"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "npu",
+      "label": "NPU"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

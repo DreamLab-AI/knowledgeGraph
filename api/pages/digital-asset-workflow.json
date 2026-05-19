@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:c379a7756ece7bfcf70e2280d134d1a558ea6b478a0f3f78b17fa6c49450f06f",
+  "title": "Digital Asset Workflow",
+  "slug": "digital-asset-workflow",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-asset-workflow",
+  "domain": "spatial-computing",
+  "definition": "Controlled process governing the creation, approval, distribution, and lifecycle management of digital content assets in virtual environments. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:approval-workflow",
+        "label": "Approval Workflow"
+      },
+      {
+        "id": "urn:visionflow:linked:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:distribution-system",
+        "label": "Distribution System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-archive",
+        "label": "Asset Archive"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-monetization",
+        "label": "Asset Monetization"
+      },
+      {
+        "id": "urn:visionflow:linked:content-distribution",
+        "label": "Content Distribution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-goods",
+        "label": "Digital Goods"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "approval-workflow",
+      "label": "Approval Workflow"
+    },
+    {
+      "slug": "asset-monetization",
+      "label": "Asset Monetization"
+    },
+    {
+      "slug": "content-creation-pipeline",
+      "label": "Content Creation Pipeline"
+    },
+    {
+      "slug": "content-distribution",
+      "label": "Content Distribution"
+    },
+    {
+      "slug": "content-management-system",
+      "label": "Content Management System"
+    },
+    {
+      "slug": "distribution-system",
+      "label": "Distribution System"
+    },
+    {
+      "slug": "smpte-st-2128",
+      "label": "SMPTE ST 2128"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "asset-archive",
+      "label": "Asset Archive"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    }
+  ]
+}

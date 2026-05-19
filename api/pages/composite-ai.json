@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:28bc17ab7109188c50031b29f3fd9565ca2b43e0eae09a6511ff198ed280d651",
+  "title": "Composite AI",
+  "slug": "composite-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:composite-ai",
+  "domain": "artificial-intelligence",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

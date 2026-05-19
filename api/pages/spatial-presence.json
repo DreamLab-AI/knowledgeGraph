@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:8d84cbedc90384ef26d0b429aaa56a1282d166cd7b6e9762734ff00529c9c850",
+  "title": "Spatial Presence",
+  "slug": "spatial-presence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-presence",
+  "domain": "spatial-computing",
+  "definition": "The psychological state of feeling physically located within a virtual environment, experiencing the sense of \"being there\" despite technological mediation, influenced by place illusion (perceived location), plausibility illusion (believable events), and temporal presence (immediacy of experience).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:vr-psychology",
+      "label": "VR Psychology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "vr-psychology",
+      "label": "VR Psychology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersive-audio-system",
+      "label": "Immersive Audio System"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

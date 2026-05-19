@@ -1,21 +1,402 @@
-iri:: http://narrativegoldmine.com/robotics#PathPlanning
-uri:: urn:visionclaw:concept:robotics:path-planning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:path-planning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Path Planning
-content-hash:: sha256-12-63a31ed9ee4c
-legacy-term-id:: RB-1016
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.97
-version:: 2.0.0
-created:: 2025-11-24T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#PathPlanning
+legacy_uri:: urn:visionclaw:concept:robotics:path-planning
 public:: true
+
+# Path Planning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67",
+  "@type": "Page",
+  "vc:slug": "path-planning",
+  "title": "Path Planning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicles",
+      "vc:label": "Autonomous Vehicles"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment-model",
+      "vc:label": "Environment Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:feasibility",
+      "vc:label": "Feasibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-configuration",
+      "vc:label": "Goal Configuration"
+    },
+    {
+      "@id": "urn:visionflow:linked:manipulators",
+      "vc:label": "Manipulators"
+    },
+    {
+      "@id": "urn:visionflow:linked:mapping",
+      "vc:label": "Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:mobile-robots",
+      "vc:label": "Mobile Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:obstacles",
+      "vc:label": "Obstacles"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimality",
+      "vc:label": "Optimality"
+    },
+    {
+      "@id": "urn:visionflow:linked:path",
+      "vc:label": "Path"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1003-optimal-control",
+      "vc:label": "RB-1003-optimal-control"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+      "vc:label": "RB-1007-trajectory-generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1017-rrt-algorithm",
+      "vc:label": "RB-1017-rrt-algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1018-dijkstra-algorithm",
+      "vc:label": "RB-1018-dijkstra-algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1019-obstacle-avoidance",
+      "vc:label": "RB-1019-obstacle-avoidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:start-configuration",
+      "vc:label": "Start Configuration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:navigation",
+      "vc:label": "Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rb-1013-localization",
+      "vc:label": "RB-1013-localization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.97"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-63a31ed9ee4c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-24T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#PathPlanning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-1016"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Path Planning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:path-planning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:path-planning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:path-planning",
+  "@type": "OntologyClass",
+  "label": "Path Planning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.97",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:environment-model",
+      "vc:label": "Environment Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-configuration",
+      "vc:label": "Goal Configuration"
+    },
+    {
+      "@id": "urn:visionflow:linked:mapping",
+      "vc:label": "Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:start-configuration",
+      "vc:label": "Start Configuration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rb-1013-localization",
+      "vc:label": "RB-1013-localization"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+      "vc:label": "RB-1007-trajectory-generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:navigation",
+      "vc:label": "Navigation"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:rb-1017-rrt-algorithm",
+      "vc:label": "RB-1017-rrt-algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1018-dijkstra-algorithm",
+      "vc:label": "RB-1018-dijkstra-algorithm"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:path-planning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Autonomous Systems]]",
+      "resolved": "urn:visionflow:linked:autonomous-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Vehicles]]",
+      "resolved": "urn:visionflow:linked:autonomous-vehicles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environment Model]]",
+      "resolved": "urn:visionflow:linked:environment-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Feasibility]]",
+      "resolved": "urn:visionflow:linked:feasibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goal Configuration]]",
+      "resolved": "urn:visionflow:linked:goal-configuration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manipulators]]",
+      "resolved": "urn:visionflow:linked:manipulators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mapping]]",
+      "resolved": "urn:visionflow:linked:mapping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mobile Robots]]",
+      "resolved": "urn:visionflow:linked:mobile-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Obstacles]]",
+      "resolved": "urn:visionflow:linked:obstacles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimality]]",
+      "resolved": "urn:visionflow:linked:optimality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Path]]",
+      "resolved": "urn:visionflow:linked:path",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1003-optimal-control]]",
+      "resolved": "urn:visionflow:linked:rb-1003-optimal-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1007-trajectory-generation]]",
+      "resolved": "urn:visionflow:linked:rb-1007-trajectory-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1017-rrt-algorithm]]",
+      "resolved": "urn:visionflow:linked:rb-1017-rrt-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1018-dijkstra-algorithm]]",
+      "resolved": "urn:visionflow:linked:rb-1018-dijkstra-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1019-obstacle-avoidance]]",
+      "resolved": "urn:visionflow:linked:rb-1019-obstacle-avoidance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Start Configuration]]",
+      "resolved": "urn:visionflow:linked:start-configuration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion Planning]]",
+      "resolved": "urn:visionflow:owl:class:motion-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Navigation]]",
+      "resolved": "urn:visionflow:owl:class:navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RB-1013-localization]]",
+      "resolved": "urn:visionflow:owl:class:rb-1013-localization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.

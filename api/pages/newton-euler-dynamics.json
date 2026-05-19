@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:fa373ffae9755d4e741886068ba80cf20d45e8c061ca3e1b3deda7447484bbd1",
+  "title": "Newton-Euler Dynamics",
+  "slug": "newton-euler-dynamics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:newton-euler-dynamics",
+  "domain": "robotics",
+  "definition": "Newton-Euler method applies F=ma and \u03c4=I\u03b1 to each link recursively.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-dynamics",
+      "label": "Robot Dynamics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robot-dynamics",
+      "label": "Robot Dynamics"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

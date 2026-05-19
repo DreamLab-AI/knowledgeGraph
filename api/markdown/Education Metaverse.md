@@ -1,24 +1,507 @@
-iri:: http://narrativegoldmine.com/spatial-computing#EducationMetaverse
-uri:: urn:visionclaw:concept:spatial-computing:education-metaverse
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:education-metaverse
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Education Metaverse
-content-hash:: sha256-12-eecfb69f4199
-legacy-term-id:: 20310
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#EducationMetaverse
+legacy_uri:: urn:visionclaw:concept:spatial-computing:education-metaverse
 public:: true
+
+# Education Metaverse
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755",
+  "@type": "Page",
+  "vc:slug": "education-metaverse",
+  "title": "Education Metaverse",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:assessment-system",
+      "vc:label": "Assessment System"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaboration-tool",
+      "vc:label": "Collaboration Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-authoring-system",
+      "vc:label": "Content Authoring System"
+    },
+    {
+      "@id": "urn:visionflow:linked:educational-content",
+      "vc:label": "Educational Content"
+    },
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-2888-1-2023",
+      "vc:label": "IEEE 2888.1-2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:ims-global-learning-consortium",
+      "vc:label": "IMS Global Learning Consortium"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-education",
+      "vc:label": "Remote Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:skills-training",
+      "vc:label": "Skills Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "vc:label": "3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-system",
+      "vc:label": "Avatar System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaborative-learning",
+      "vc:label": "Collaborative Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-learning",
+      "vc:label": "Immersive Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-analytics",
+      "vc:label": "Learning Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-module",
+      "vc:label": "Learning Module"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "vc:label": "Metaverse Application Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-xr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-audio",
+      "vc:label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-classroom",
+      "vc:label": "Virtual Classroom"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-field-trip",
+      "vc:label": "Virtual Field Trip"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "vc:label": "VirtualSocietyDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-device",
+      "vc:label": "XR Device"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-eecfb69f4199"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#EducationMetaverse"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20310"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Education Metaverse"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:education-metaverse"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:education-metaverse"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:education-metaverse",
+  "@type": "OntologyClass",
+  "label": "Education Metaverse",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A virtual platform that provides immersive educational experiences through interconnected digital learning environments, enabling collaborative instruction, skills development, and knowledge transfer across distributed participants.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "vc:label": "Metaverse Application Platform"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:assessment-system",
+      "vc:label": "Assessment System"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaboration-tool",
+      "vc:label": "Collaboration Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-authoring-system",
+      "vc:label": "Content Authoring System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-analytics",
+      "vc:label": "Learning Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-module",
+      "vc:label": "Learning Module"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-classroom",
+      "vc:label": "Virtual Classroom"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "vc:label": "3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-system",
+      "vc:label": "Avatar System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:remote-education",
+      "vc:label": "Remote Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:skills-training",
+      "vc:label": "Skills Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaborative-learning",
+      "vc:label": "Collaborative Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-learning",
+      "vc:label": "Immersive Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-field-trip",
+      "vc:label": "Virtual Field Trip"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:educational-content",
+      "vc:label": "Educational Content"
+    },
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-audio",
+      "vc:label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-device",
+      "vc:label": "XR Device"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:education-metaverse:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Assessment System]]",
+      "resolved": "urn:visionflow:linked:assessment-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collaboration Tool]]",
+      "resolved": "urn:visionflow:linked:collaboration-tool",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Authoring System]]",
+      "resolved": "urn:visionflow:linked:content-authoring-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Educational Content]]",
+      "resolved": "urn:visionflow:linked:educational-content",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gesture Recognition]]",
+      "resolved": "urn:visionflow:linked:gesture-recognition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 2888.1-2023]]",
+      "resolved": "urn:visionflow:linked:ieee-2888-1-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IMS Global Learning Consortium]]",
+      "resolved": "urn:visionflow:linked:ims-global-learning-consortium",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Remote Education]]",
+      "resolved": "urn:visionflow:linked:remote-education",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Skills Training]]",
+      "resolved": "urn:visionflow:linked:skills-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Rendering Engine]]",
+      "resolved": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Avatar System]]",
+      "resolved": "urn:visionflow:owl:class:avatar-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Collaborative Learning]]",
+      "resolved": "urn:visionflow:owl:class:collaborative-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Management]]",
+      "resolved": "urn:visionflow:owl:class:identity-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Immersive Learning]]",
+      "resolved": "urn:visionflow:owl:class:immersive-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Learning Analytics]]",
+      "resolved": "urn:visionflow:owl:class:learning-analytics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Learning Module]]",
+      "resolved": "urn:visionflow:owl:class:learning-module",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Application Platform]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-application-platform",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:network-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenXR]]",
+      "resolved": "urn:visionflow:owl:class:open-xr",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Audio]]",
+      "resolved": "urn:visionflow:owl:class:spatial-audio",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Classroom]]",
+      "resolved": "urn:visionflow:owl:class:virtual-classroom",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Field Trip]]",
+      "resolved": "urn:visionflow:owl:class:virtual-field-trip",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualSocietyDomain]]",
+      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[XR Device]]",
+      "resolved": "urn:visionflow:owl:class:xr-device",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A virtual platform that provides immersive educational experiences through interconnected digital learning environments, enabling collaborative instruction, skills development, and knowledge transfer across distributed participants.

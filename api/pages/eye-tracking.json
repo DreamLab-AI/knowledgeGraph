@@ -1,0 +1,243 @@
+{
+  "id": "urn:visionflow:page:c8156483e73a6211f097437ed0f386a178c35e6636897c9b87efe71e9392c875",
+  "title": "Eye Tracking",
+  "slug": "eye-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:eye-tracking",
+  "domain": "spatial-computing",
+  "definition": "Physical sensor hardware that measures gaze direction, pupil dilation, and eye movements to enable foveated rendering, attention analytics, and natural interaction in XR devices.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrared-camera",
+      "label": "Infrared Camera"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:calibration-system",
+        "label": "Calibration System"
+      },
+      {
+        "id": "urn:visionflow:linked:hot-mirror",
+        "label": "Hot Mirror"
+      },
+      {
+        "id": "urn:visionflow:linked:image-sensor",
+        "label": "Image Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:pupil-detection-algorithm",
+        "label": "Pupil Detection Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-camera",
+        "label": "Infrared Camera"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-led-illuminator",
+        "label": "Infrared LED Illuminator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:high-speed-camera",
+        "label": "High-Speed Camera"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-data-bus",
+        "label": "Low-Latency Data Bus"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-processing-unit",
+        "label": "Real-Time Processing Unit"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-light-source",
+        "label": "Infrared Light Source"
+      },
+      {
+        "id": "urn:visionflow:owl:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:attention-analytics",
+        "label": "Attention Analytics"
+      },
+      {
+        "id": "urn:visionflow:linked:eye-gesture-control",
+        "label": "Eye Gesture Control"
+      },
+      {
+        "id": "urn:visionflow:linked:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:gaze-based-interaction",
+        "label": "Gaze-Based Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:vergence-accommodation-matching",
+        "label": "Vergence-Accommodation Matching"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm",
+      "label": "ACM"
+    },
+    {
+      "slug": "attention-analytics",
+      "label": "Attention Analytics"
+    },
+    {
+      "slug": "calibration-system",
+      "label": "Calibration System"
+    },
+    {
+      "slug": "edge-layer",
+      "label": "EdgeLayer"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "eye-gesture-control",
+      "label": "Eye Gesture Control"
+    },
+    {
+      "slug": "foveated-rendering",
+      "label": "Foveated Rendering"
+    },
+    {
+      "slug": "gaze-based-interaction",
+      "label": "Gaze-Based Interaction"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "head-mounted-display",
+      "label": "Head-Mounted Display"
+    },
+    {
+      "slug": "high-speed-camera",
+      "label": "High-Speed Camera"
+    },
+    {
+      "slug": "hot-mirror",
+      "label": "Hot Mirror"
+    },
+    {
+      "slug": "human-computer-interaction-framework",
+      "label": "Human-Computer Interaction Framework"
+    },
+    {
+      "slug": "image-sensor",
+      "label": "Image Sensor"
+    },
+    {
+      "slug": "low-latency-data-bus",
+      "label": "Low-Latency Data Bus"
+    },
+    {
+      "slug": "perceptual-computing-system",
+      "label": "Perceptual Computing System"
+    },
+    {
+      "slug": "pupil-detection-algorithm",
+      "label": "Pupil Detection Algorithm"
+    },
+    {
+      "slug": "real-time-processing-unit",
+      "label": "Real-Time Processing Unit"
+    },
+    {
+      "slug": "vergence-accommodation-matching",
+      "label": "Vergence-Accommodation Matching"
+    },
+    {
+      "slug": "infrared-camera",
+      "label": "Infrared Camera"
+    },
+    {
+      "slug": "infrared-led-illuminator",
+      "label": "Infrared LED Illuminator"
+    },
+    {
+      "slug": "infrared-light-source",
+      "label": "Infrared Light Source"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "optical-calibration-target",
+      "label": "Optical Calibration Target"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "xr-headset",
+      "label": "XR Headset"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "cognitive-feedback-interface",
+      "label": "Cognitive Feedback Interface"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

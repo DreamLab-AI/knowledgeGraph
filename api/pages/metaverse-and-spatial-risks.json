@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:10711974a3630a663f6cff68a5e5b489f8416acbdbc6844e44f8cf3aafbf6257",
+  "title": "Metaverse and Spatial Risks",
+  "slug": "metaverse-and-spatial-risks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
+  "domain": "spatial-computing",
+  "definition": "Metaverse and Spatial Risks is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rosenberg2022regulation",
+      "label": "rosenberg2022regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "id": "urn:visionflow:page:50f9c45cee2cedb21d582206eaee30e7c09fc887af9d8217ad54552f020d30e9",
+  "title": "Federation Surface",
+  "slug": "federation-surface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:federation-surface",
+  "domain": "infrastructure",
+  "definition": "A standardised [[JSON-LD 1.1]] encoding surface (S1\u2013S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge graphs) without agent-specific API adapters.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:middleware-layer",
+      "label": "Middleware Layer"
+    }
+  ],
+  "qualityScore": 0.86,
+  "authorityScore": 0.89,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:json-ld-context",
+        "label": "JSON-LD Context"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:linked-data-encoder",
+        "label": "Linked Data Encoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:uri-canonicaliser",
+        "label": "URI Canonicaliser"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:http-endpoint",
+        "label": "HTTP Endpoint"
+      },
+      {
+        "id": "urn:visionflow:linked:json-ld-1-1-standard",
+        "label": "JSON-LD 1.1 Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-vocabulary",
+        "label": "W3C Vocabulary"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-monitoring",
+        "label": "Automated Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:blockchain-oracle-integration",
+        "label": "Blockchain Oracle Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-system-querying",
+        "label": "Cross-System Querying"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-graph-federation",
+        "label": "Knowledge Graph Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:linked-data-consumption",
+        "label": "Linked Data Consumption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-linked-data-platform",
+        "label": "W3C Linked Data Platform"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-008",
+      "label": "ADR-008"
+    },
+    {
+      "slug": "adr-012",
+      "label": "ADR-012"
+    },
+    {
+      "slug": "agent-bead",
+      "label": "Agent Bead"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "automated-monitoring",
+      "label": "Automated Monitoring"
+    },
+    {
+      "slug": "blockchain-oracle-integration",
+      "label": "Blockchain Oracle Integration"
+    },
+    {
+      "slug": "cross-system-querying",
+      "label": "Cross-System Querying"
+    },
+    {
+      "slug": "data-integration-domain",
+      "label": "DataIntegrationDomain"
+    },
+    {
+      "slug": "data-portal",
+      "label": "Data Portal"
+    },
+    {
+      "slug": "http-endpoint",
+      "label": "HTTP Endpoint"
+    },
+    {
+      "slug": "json-ld-1-1",
+      "label": "JSON-LD 1.1"
+    },
+    {
+      "slug": "json-ld-1-1-spec",
+      "label": "JSON-LD 1.1 Spec"
+    },
+    {
+      "slug": "json-ld-1-1-standard",
+      "label": "JSON-LD 1.1 Standard"
+    },
+    {
+      "slug": "json-ld-context",
+      "label": "JSON-LD Context"
+    },
+    {
+      "slug": "json-ld-context",
+      "label": "JSON-LD Context"
+    },
+    {
+      "slug": "knowledge-graph-federation",
+      "label": "Knowledge Graph Federation"
+    },
+    {
+      "slug": "linked-data-consumption",
+      "label": "Linked Data Consumption"
+    },
+    {
+      "slug": "prd-006",
+      "label": "PRD-006"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "SemanticWebDomain"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "w3-c-linked-data-platform",
+      "label": "W3C Linked Data Platform"
+    },
+    {
+      "slug": "w3-c-vocabulary",
+      "label": "W3C Vocabulary"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

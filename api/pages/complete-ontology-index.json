@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:28c729f4dfe35badc87d9e73376ba77bbe08836d3fc95a68ff4f5e1b331191ee",
+  "title": "COMPLETE ONTOLOGY INDEX",
+  "slug": "complete-ontology-index",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:complete-ontology-index",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive reference catalog documenting and interconnecting all [[Ontology]] terms, [[Semantic Classifications]], and [[Knowledge Relationships]] across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire [[Knowledge Base]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-ontology",
+      "label": "Metaverse Ontology"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "ietf-internet-engineering-task-force",
+      "label": "IETF (Internet Engineering Task Force)"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "knowledge-relationships",
+      "label": "Knowledge Relationships"
+    },
+    {
+      "slug": "nist-national-institute-of-standards-and-technology",
+      "label": "NIST (National Institute of Standards and Technology)"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "rfc-request-for-comments",
+      "label": "RFC (Request for Comments)"
+    },
+    {
+      "slug": "semantic-classifications",
+      "label": "Semantic Classifications"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

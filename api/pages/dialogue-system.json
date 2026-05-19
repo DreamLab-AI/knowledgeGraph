@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:4d832cb308dec9f4f45a321a331d5714f2fcb96a49931babee5f4657f8dbda16",
+  "title": "Dialogue System",
+  "slug": "dialogue-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dialogue-system",
+  "domain": "artificial-intelligence",
+  "definition": "A Dialogue System (conversational AI system) is an AI application that engages in natural language conversations with users through text or speech, managing multi-turn interactions, maintaining conversational context, and executing task-oriented or open-domain dialogues. Modern dialogue systems employ transformer-based language models, dialogue state tracking, and reinforcement learning to power virtual assistants, customer service chatbots, and conversational interfaces. bridges-to:: [[Telecollaboration]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cashu",
+      "label": "cashu"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "narrative-design-ontology",
+      "label": "Narrative Design Ontology"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    }
+  ]
+}

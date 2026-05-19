@@ -1,0 +1,488 @@
+{
+  "id": "urn:visionflow:page:0d0875a062df379668c7410230e7acb8fb6c3ca83e8fb605c1a63a942cb274de",
+  "title": "Tokenomics Governance",
+  "slug": "tokenomics-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tokenomics-governance",
+  "domain": "blockchain",
+  "definition": "Tokenomics governance is the discipline integrating token-economic design with decentralised decision-making mechanisms, defining how [[Governance Token]] holders in [[DeFi]] and [[DAO]] protocols gain, exercise, and lose voting power whilst simultaneously participating as economic stakeholders through fee accrual, inflationary rewards, and secondary-market liquidity. The field encompasses the full lifecycle of protocol-native tokens from initial issuance (airdrops, liquidity mining, bonding, [[Token Generation Event]]) through vesting schedules and cliff periods, vote-escrow locking (veCRV on [[Curve Finance]], veBAL on [[Balancer]], vlAURA on Aura Finance), secondary markets for locked voting power (Votium, Hidden Hand, Paladin \u2014 collectively the \"bribe economy\"), tail-emission schedules, halving curves, buyback-and-burn deflation (MKR, [[Ethereum]] EIP-1559), real-yield fee distribution ([[GMX]], [[Gains Network]]), bonding curves for algorithmic supply adjustment ([[Olympus DAO]] OHM), and the emergent meta-governance layer in which aggregator protocols (Convex Finance, Llama Airforce, vlAURA) accumulate locked tokens to steer billions in weekly emission votes \u2014 known as the [[",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "id": "urn:visionflow:linked:mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "id": "urn:visionflow:linked:protocol-economics",
+      "label": "Protocol Economics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:dao",
+      "label": "DAO"
+    },
+    {
+      "id": "urn:visionflow:owl:class:governance-token",
+      "label": "Governance Token"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "id": "urn:visionflow:linked:bribe-market",
+        "label": "Bribe Market"
+      },
+      {
+        "id": "urn:visionflow:linked:buyback-and-burn",
+        "label": "Buyback and Burn"
+      },
+      {
+        "id": "urn:visionflow:linked:delegation-system",
+        "label": "Delegation System"
+      },
+      {
+        "id": "urn:visionflow:linked:gauge-voting",
+        "label": "Gauge Voting"
+      },
+      {
+        "id": "urn:visionflow:linked:vesting-schedule",
+        "label": "Vesting Schedule"
+      },
+      {
+        "id": "urn:visionflow:linked:vote-escrow",
+        "label": "Vote Escrow"
+      },
+      {
+        "id": "urn:visionflow:owl:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "id": "urn:visionflow:owl:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:on-chain-voting-infrastructure",
+        "label": "On-chain Voting Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:token-distribution-event",
+        "label": "Token Distribution Event"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:emission-direction-control",
+        "label": "Emission Direction Control"
+      },
+      {
+        "id": "urn:visionflow:linked:long-term-holder-alignment",
+        "label": "Long-term Holder Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:meta-governance-attack-resistance",
+        "label": "Meta-governance Attack Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-fee-distribution",
+        "label": "Protocol Fee Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:treasury-governance",
+        "label": "Treasury Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bonding-mechanism",
+        "label": "Bonding Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:gauge-weighting",
+        "label": "Gauge Weighting"
+      },
+      {
+        "id": "urn:visionflow:linked:real-yield-distribution",
+        "label": "Real Yield Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:vote-escrow-model",
+        "label": "Vote-Escrow Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "balancer",
+      "label": "Balancer"
+    },
+    {
+      "slug": "bonding-curve",
+      "label": "Bonding Curve"
+    },
+    {
+      "slug": "bonding-mechanism",
+      "label": "Bonding Mechanism"
+    },
+    {
+      "slug": "bribe-market",
+      "label": "Bribe Market"
+    },
+    {
+      "slug": "buyback-and-burn",
+      "label": "Buyback and Burn"
+    },
+    {
+      "slug": "centralised-exchange-token",
+      "label": "Centralised Exchange Token"
+    },
+    {
+      "slug": "compound",
+      "label": "Compound"
+    },
+    {
+      "slug": "compound-governor-bravo",
+      "label": "Compound Governor Bravo"
+    },
+    {
+      "slug": "convex-finance",
+      "label": "Convex Finance"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "curve-wars",
+      "label": "Curve Wars"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "DecentralisedFinanceDomain"
+    },
+    {
+      "slug": "delegation-system",
+      "label": "Delegation System"
+    },
+    {
+      "slug": "eigen-layer",
+      "label": "EigenLayer"
+    },
+    {
+      "slug": "eip-1559",
+      "label": "EIP-1559"
+    },
+    {
+      "slug": "emission-direction-control",
+      "label": "Emission Direction Control"
+    },
+    {
+      "slug": "ens",
+      "label": "ENS"
+    },
+    {
+      "slug": "erc-20-standard",
+      "label": "ERC-20 Standard"
+    },
+    {
+      "slug": "gains-network",
+      "label": "Gains Network"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "game-theory-domain",
+      "label": "GameTheoryDomain"
+    },
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "gauge-weighting",
+      "label": "Gauge Weighting"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "governance-attack-resistance",
+      "label": "Governance Attack Resistance"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
+      "slug": "liquidity-depth",
+      "label": "Liquidity Depth"
+    },
+    {
+      "slug": "long-term-holder-alignment",
+      "label": "Long-term Holder Alignment"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "maker-dao-endgame-framework",
+      "label": "MakerDAO Endgame Framework"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "MechanismDesignDomain"
+    },
+    {
+      "slug": "meta-governance-attack-resistance",
+      "label": "Meta-governance Attack Resistance"
+    },
+    {
+      "slug": "multisignature-wallet",
+      "label": "Multisignature Wallet"
+    },
+    {
+      "slug": "off-chain-governance",
+      "label": "Off-chain Governance"
+    },
+    {
+      "slug": "olympus-dao",
+      "label": "Olympus DAO"
+    },
+    {
+      "slug": "on-chain-voting-infrastructure",
+      "label": "On-chain Voting Infrastructure"
+    },
+    {
+      "slug": "open-zeppelin-governance-contracts",
+      "label": "OpenZeppelin Governance Contracts"
+    },
+    {
+      "slug": "open-zeppelin-governor",
+      "label": "OpenZeppelin Governor"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "oracle-infrastructure",
+      "label": "Oracle Infrastructure"
+    },
+    {
+      "slug": "protocol-economics",
+      "label": "Protocol Economics"
+    },
+    {
+      "slug": "protocol-fee-distribution",
+      "label": "Protocol Fee Distribution"
+    },
+    {
+      "slug": "protocol-sustainability",
+      "label": "Protocol Sustainability"
+    },
+    {
+      "slug": "real-yield-distribution",
+      "label": "Real Yield Distribution"
+    },
+    {
+      "slug": "shareholder-voting",
+      "label": "Shareholder Voting"
+    },
+    {
+      "slug": "smart-contract-security",
+      "label": "Smart Contract Security"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "snapshot-governance",
+      "label": "Snapshot Governance"
+    },
+    {
+      "slug": "stakeholder-coordination",
+      "label": "Stakeholder Coordination"
+    },
+    {
+      "slug": "tally-on-chain-voting",
+      "label": "Tally On-chain Voting"
+    },
+    {
+      "slug": "timelock-controller",
+      "label": "Timelock Controller"
+    },
+    {
+      "slug": "token-distribution-event",
+      "label": "Token Distribution Event"
+    },
+    {
+      "slug": "token-generation-event",
+      "label": "Token Generation Event"
+    },
+    {
+      "slug": "traditional-corporate-governance",
+      "label": "Traditional Corporate Governance"
+    },
+    {
+      "slug": "treasury-governance",
+      "label": "Treasury Governance"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "value-accrual",
+      "label": "Value Accrual"
+    },
+    {
+      "slug": "velodrome-finance",
+      "label": "Velodrome Finance"
+    },
+    {
+      "slug": "vesting-schedule",
+      "label": "Vesting Schedule"
+    },
+    {
+      "slug": "vote-escrow",
+      "label": "Vote Escrow"
+    },
+    {
+      "slug": "vote-escrow-model",
+      "label": "Vote-Escrow Model"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "emission-schedule",
+      "label": "Emission Schedule"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    }
+  ]
+}

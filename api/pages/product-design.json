@@ -1,0 +1,552 @@
+{
+  "id": "urn:visionflow:page:3563dc5c564fb228a7ccbf90823d4b7fb4038a89db8b350de8f68f681c1902b2",
+  "title": "Product Design",
+  "slug": "product-design",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:product-design",
+  "domain": "creative-process",
+  "definition": "Product Design is the multidisciplinary creative and engineering practice of conceiving, planning, and producing goods, digital interfaces, and services that satisfy user needs, business objectives, and manufacturing or deployment constraints \u2014 integrating human-centred research methods, aesthetic judgement, functional specification, materials selection, and iterative prototyping across the entire lifecycle from ideation through to market launch and post-launch refinement. In the AI era (2024\u20132026) the discipline has been substantially transformed by generative AI tools that automate or accelerate rote creative tasks: text-to-UI systems (Vercel V0, Galileo AI, Uizard) generate functional interface scaffolding from natural-language prompts; topology-optimisation and generative design engines (Autodesk Fusion 360 Generative Design, nTopology) explore structural solution spaces orders of magnitude larger than human designers can manually survey; large multimodal models produce concept sketches, design variants, and manufacturing simulations on demand; and design-system toolchains (Figma AI, Material Design 3, IBM Carbon 11, Shopify Polaris 12) propagate design tokens, component specif",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:creative-practice",
+      "label": "Creative Practice"
+    },
+    {
+      "id": "urn:visionflow:linked:design-thinking",
+      "label": "Design Thinking"
+    },
+    {
+      "id": "urn:visionflow:linked:engineering-design",
+      "label": "Engineering Design"
+    },
+    {
+      "id": "urn:visionflow:linked:systems-thinking",
+      "label": "Systems Thinking"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:design-ops",
+        "label": "DesignOps"
+      },
+      {
+        "id": "urn:visionflow:linked:design-systems",
+        "label": "Design Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:design-tokens",
+        "label": "Design Tokens"
+      },
+      {
+        "id": "urn:visionflow:linked:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "id": "urn:visionflow:linked:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:visionflow:linked:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "id": "urn:visionflow:linked:service-blueprint",
+        "label": "Service Blueprint"
+      },
+      {
+        "id": "urn:visionflow:linked:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-design",
+        "label": "Visual Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:visionflow:owl:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:brand-guidelines",
+        "label": "Brand Guidelines"
+      },
+      {
+        "id": "urn:visionflow:linked:competitive-analysis",
+        "label": "Competitive Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:design-systems",
+        "label": "Design Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:manufacturing-constraints",
+        "label": "Manufacturing Constraints"
+      },
+      {
+        "id": "urn:visionflow:linked:prototyping-tools",
+        "label": "Prototyping Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:customer-satisfaction",
+        "label": "Customer Satisfaction"
+      },
+      {
+        "id": "urn:visionflow:linked:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:visionflow:linked:product-development",
+        "label": "Product Development"
+      },
+      {
+        "id": "urn:visionflow:linked:product-market-fit",
+        "label": "Product-Market Fit"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainable-design",
+        "label": "Sustainable Design"
+      },
+      {
+        "id": "urn:visionflow:linked:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:agile-design",
+        "label": "Agile Design"
+      },
+      {
+        "id": "urn:visionflow:linked:continuous-discovery",
+        "label": "Continuous Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:design-sprints",
+        "label": "Design Sprints"
+      },
+      {
+        "id": "urn:visionflow:linked:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:visionflow:linked:double-diamond-process",
+        "label": "Double Diamond Process"
+      },
+      {
+        "id": "urn:visionflow:linked:human-centred-design",
+        "label": "Human-Centred Design"
+      },
+      {
+        "id": "urn:visionflow:linked:jobs-to-be-done-framework",
+        "label": "Jobs-to-be-Done Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:lean-ux",
+        "label": "Lean UX"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "additive-manufacturing",
+      "label": "Additive Manufacturing"
+    },
+    {
+      "slug": "adobe-creative-cloud",
+      "label": "Adobe Creative Cloud"
+    },
+    {
+      "slug": "agile-design",
+      "label": "Agile Design"
+    },
+    {
+      "slug": "autodesk-fusion-360",
+      "label": "Autodesk Fusion 360"
+    },
+    {
+      "slug": "brand-guidelines",
+      "label": "Brand Guidelines"
+    },
+    {
+      "slug": "brand-identity",
+      "label": "Brand Identity"
+    },
+    {
+      "slug": "brand-management",
+      "label": "Brand Management"
+    },
+    {
+      "slug": "bs-en-iso-9241-210",
+      "label": "BS EN ISO 9241-210"
+    },
+    {
+      "slug": "bsi-design-standards",
+      "label": "BSI Design Standards"
+    },
+    {
+      "slug": "business-strategy",
+      "label": "Business Strategy"
+    },
+    {
+      "slug": "cad",
+      "label": "CAD"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "competitive-analysis",
+      "label": "Competitive Analysis"
+    },
+    {
+      "slug": "continuous-discovery",
+      "label": "Continuous Discovery"
+    },
+    {
+      "slug": "creative-practice",
+      "label": "Creative Practice"
+    },
+    {
+      "slug": "creative-process-domain",
+      "label": "CreativeProcessDomain"
+    },
+    {
+      "slug": "customer-satisfaction",
+      "label": "Customer Satisfaction"
+    },
+    {
+      "slug": "design-operations",
+      "label": "Design Operations"
+    },
+    {
+      "slug": "design-ops",
+      "label": "DesignOps"
+    },
+    {
+      "slug": "design-research",
+      "label": "Design Research"
+    },
+    {
+      "slug": "design-sprints",
+      "label": "Design Sprints"
+    },
+    {
+      "slug": "design-systems",
+      "label": "Design Systems"
+    },
+    {
+      "slug": "design-thinking",
+      "label": "Design Thinking"
+    },
+    {
+      "slug": "design-tokens",
+      "label": "Design Tokens"
+    },
+    {
+      "slug": "double-diamond-process",
+      "label": "Double Diamond Process"
+    },
+    {
+      "slug": "engineering-design",
+      "label": "Engineering Design"
+    },
+    {
+      "slug": "engineering-domain",
+      "label": "EngineeringDomain"
+    },
+    {
+      "slug": "engineering-led-design",
+      "label": "Engineering-Led Design"
+    },
+    {
+      "slug": "ergonomics",
+      "label": "Ergonomics"
+    },
+    {
+      "slug": "feature-led-development",
+      "label": "Feature-Led Development"
+    },
+    {
+      "slug": "fig-jam",
+      "label": "FigJam"
+    },
+    {
+      "slug": "figma",
+      "label": "Figma"
+    },
+    {
+      "slug": "generative-design",
+      "label": "Generative Design"
+    },
+    {
+      "slug": "human-centred-design",
+      "label": "Human-Centred Design"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "in-vision",
+      "label": "InVision"
+    },
+    {
+      "slug": "inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "slug": "industrial-design",
+      "label": "Industrial Design"
+    },
+    {
+      "slug": "interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "slug": "iso-13407",
+      "label": "ISO 13407"
+    },
+    {
+      "slug": "iso-9241-ergonomics",
+      "label": "ISO 9241 Ergonomics"
+    },
+    {
+      "slug": "jobs-to-be-done-framework",
+      "label": "Jobs-to-be-Done Framework"
+    },
+    {
+      "slug": "lean-ux",
+      "label": "Lean UX"
+    },
+    {
+      "slug": "manufacturing-constraints",
+      "label": "Manufacturing Constraints"
+    },
+    {
+      "slug": "manufacturing-processes",
+      "label": "Manufacturing Processes"
+    },
+    {
+      "slug": "marketing",
+      "label": "Marketing"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "miro",
+      "label": "Miro"
+    },
+    {
+      "slug": "principle",
+      "label": "Principle"
+    },
+    {
+      "slug": "process-layer",
+      "label": "ProcessLayer"
+    },
+    {
+      "slug": "product-development",
+      "label": "Product Development"
+    },
+    {
+      "slug": "product-management",
+      "label": "Product Management"
+    },
+    {
+      "slug": "product-market-fit",
+      "label": "Product-Market Fit"
+    },
+    {
+      "slug": "proto-pie",
+      "label": "ProtoPie"
+    },
+    {
+      "slug": "prototyping",
+      "label": "Prototyping"
+    },
+    {
+      "slug": "prototyping-tools",
+      "label": "Prototyping Tools"
+    },
+    {
+      "slug": "service-blueprint",
+      "label": "Service Blueprint"
+    },
+    {
+      "slug": "service-design",
+      "label": "Service Design"
+    },
+    {
+      "slug": "sketch",
+      "label": "Sketch"
+    },
+    {
+      "slug": "stakeholder-analysis",
+      "label": "Stakeholder Analysis"
+    },
+    {
+      "slug": "sustainable-design",
+      "label": "Sustainable Design"
+    },
+    {
+      "slug": "systems-thinking",
+      "label": "Systems Thinking"
+    },
+    {
+      "slug": "tech-push-innovation",
+      "label": "Tech-Push Innovation"
+    },
+    {
+      "slug": "technology-first-design",
+      "label": "Technology-First Design"
+    },
+    {
+      "slug": "ui-design",
+      "label": "UI Design"
+    },
+    {
+      "slug": "usability-testing",
+      "label": "Usability Testing"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "ux-design",
+      "label": "UX Design"
+    },
+    {
+      "slug": "v0-dev",
+      "label": "V0.dev"
+    },
+    {
+      "slug": "visual-design",
+      "label": "Visual Design"
+    },
+    {
+      "slug": "w3-c-design-tokens-community-group",
+      "label": "W3C Design Tokens Community Group"
+    },
+    {
+      "slug": "w3-c-wcag",
+      "label": "W3C WCAG"
+    },
+    {
+      "slug": "waterfall-product-development",
+      "label": "Waterfall Product Development"
+    },
+    {
+      "slug": "zeplin",
+      "label": "Zeplin"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "accessibility-standards",
+      "label": "Accessibility Standards"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "information-architecture",
+      "label": "Information Architecture"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "user-research",
+      "label": "User Research"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "product-and-risk-management",
+      "label": "Product and Risk Management"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

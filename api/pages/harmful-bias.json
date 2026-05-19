@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:c163cbf11a27616761ae7f5404cc11fc00effc82544c526f54545a8a9e50f3c5",
+  "title": "Harmful Bias",
+  "slug": "harmful-bias",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:harmful-bias",
+  "domain": "artificial-intelligence",
+  "definition": "Systematic and unjust discrimination in AI system outcomes that disadvantages individuals or groups based on protected characteristics (race, gender, age, disability, religion, etc.) or other sensitive attributes, resulting in material harm, dignity violations, or perpetuation of societal inequalities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    }
+  ]
+}

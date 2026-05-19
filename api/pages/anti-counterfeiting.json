@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0",
+  "title": "Anti Counterfeiting",
+  "slug": "anti-counterfeiting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:anti-counterfeiting",
+  "domain": "blockchain",
+  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:supply-chain-blockchain",
+      "label": "Supply Chain Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.88,
+  "maturity": "draft",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0432-consortium-blockchain",
+      "label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "slug": "bc-0441-provenance-tracking",
+      "label": "BC-0441-provenance-tracking"
+    },
+    {
+      "slug": "bc-0442-pharmaceutical-traceability",
+      "label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "slug": "bc-0444-luxury-goods-authentication",
+      "label": "BC-0444-luxury-goods-authentication"
+    },
+    {
+      "slug": "bc-0446-supply-chain-traceability",
+      "label": "BC-0446-supply-chain-traceability"
+    },
+    {
+      "slug": "bc-0476-aml-kyc-compliance",
+      "label": "BC-0476-aml-kyc-compliance"
+    },
+    {
+      "slug": "iso-iec-20248",
+      "label": "ISO/IEC 20248"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    }
+  ],
+  "backlinks": []
+}

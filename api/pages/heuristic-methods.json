@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:d6505ba320905f65e5ff23b3bac8d306cdec820f7bdb3d5ea674b20a18b0c029",
+  "title": "Heuristic Methods",
+  "slug": "heuristic-methods",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:heuristic-methods",
+  "domain": "artificial-intelligence",
+  "definition": "Heuristic Methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. These methods include search heuristics (A*, hill climbing, simulated annealing), rule-of-thumb strategies, and metaheuristics (genetic algorithms, particle swarm optimization). Heuristics trade completeness and optimality for efficiency, making them essential for combinatorial optimization, planning, and decision-making in large search spaces. Modern applications integrate heuristics with learning algorithms, creating adaptive heuristic systems that improve through experience.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaheuristics",
+      "label": "Metaheuristics"
+    },
+    {
+      "slug": "optimization",
+      "label": "Optimization"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "search-algorithms",
+      "label": "Search Algorithms"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ]
+}

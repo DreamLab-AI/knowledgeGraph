@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:6a77b42244c30a8246b76f67625531df6f518b71856ab2a1165edf2aa57135a1",
+  "title": "ETL Pipeline",
+  "slug": "etl-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etl-pipeline",
+  "domain": "artificial-intelligence",
+  "definition": "Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": []
+}

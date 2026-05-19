@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:1388aff77d19dda377b21fe101df243f94bd5915c50274c1d8b0a48b924e91bb",
+  "title": "Smart Royalty Contract",
+  "slug": "smart-royalty-contract",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:smart-royalty-contract",
+  "domain": "spatial-computing",
+  "definition": "A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:royalty-mechanism",
+      "label": "Royalty Mechanism"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:enforcement-module",
+        "label": "Enforcement Module"
+      },
+      {
+        "id": "urn:visionflow:linked:event-emitter",
+        "label": "Event Emitter"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-splitter",
+        "label": "Payment Splitter"
+      },
+      {
+        "id": "urn:visionflow:linked:royalty-logic",
+        "label": "Royalty Logic"
+      },
+      {
+        "id": "urn:visionflow:linked:royalty-registry",
+        "label": "Royalty Registry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:oracle-service",
+        "label": "Oracle Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:payment-token",
+        "label": "Payment Token"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-payment-enforcement",
+        "label": "Automated Payment Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-recipient-distribution",
+        "label": "Multi-Recipient Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:perpetual-creator-royalties",
+        "label": "Perpetual Creator Royalties"
+      },
+      {
+        "id": "urn:visionflow:linked:royalty-verification",
+        "label": "Royalty Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-payment-enforcement",
+      "label": "Automated Payment Enforcement"
+    },
+    {
+      "slug": "eip-2981",
+      "label": "EIP-2981"
+    },
+    {
+      "slug": "enforcement-module",
+      "label": "Enforcement Module"
+    },
+    {
+      "slug": "event-emitter",
+      "label": "Event Emitter"
+    },
+    {
+      "slug": "metadata-storage",
+      "label": "Metadata Storage"
+    },
+    {
+      "slug": "multi-recipient-distribution",
+      "label": "Multi-Recipient Distribution"
+    },
+    {
+      "slug": "nft-standard-implementation",
+      "label": "NFT Standard Implementation"
+    },
+    {
+      "slug": "oracle-service",
+      "label": "Oracle Service"
+    },
+    {
+      "slug": "payment-splitter",
+      "label": "Payment Splitter"
+    },
+    {
+      "slug": "perpetual-creator-royalties",
+      "label": "Perpetual Creator Royalties"
+    },
+    {
+      "slug": "royalty-logic",
+      "label": "Royalty Logic"
+    },
+    {
+      "slug": "royalty-registry",
+      "label": "Royalty Registry"
+    },
+    {
+      "slug": "royalty-verification",
+      "label": "Royalty Verification"
+    },
+    {
+      "slug": "wallet-infrastructure",
+      "label": "Wallet Infrastructure"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "gas-fee-market",
+      "label": "Gas Fee Market"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "payment-token",
+      "label": "Payment Token"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    }
+  ]
+}

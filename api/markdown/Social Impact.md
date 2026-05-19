@@ -1,24 +1,399 @@
-iri:: http://narrativegoldmine.com/spatial-computing#SocialImpact
-uri:: urn:visionclaw:concept:spatial-computing:social-impact
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:social-impact
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Social Impact
-content-hash:: sha256-12-39b0e7a798b2
-legacy-term-id:: AI-0170
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#SocialImpact
+legacy_uri:: urn:visionclaw:concept:spatial-computing:social-impact
 public:: true
+
+# Social Impact
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6",
+  "@type": "Page",
+  "vc:slug": "social-impact",
+  "title": "Social Impact",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ethan-mollick",
+      "vc:label": "Ethan Mollick"
+    },
+    {
+      "@id": "urn:visionflow:linked:heiphetz2010training-aldrich2005learning",
+      "vc:label": "heiphetz2010training; @aldrich2005learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr",
+      "vc:label": "Nostr"
+    },
+    {
+      "@id": "urn:visionflow:linked:torok2017cascading",
+      "vc:label": "torok2017cascading"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cyber-security-and-military",
+      "vc:label": "Cyber Security and Military"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+      "vc:label": "Deepfakes and fraudulent content"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:equity",
+      "vc:label": "Equity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:humans-avatars-character",
+      "vc:label": "Humans, Avatars , Character"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:legacy-media",
+      "vc:label": "legacy media"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:meta-platforms",
+      "vc:label": "Meta Platforms"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "vc:label": "Metaverse and Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:money",
+      "vc:label": "Money"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nostr-protocol",
+      "vc:label": "Nostr protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "vc:label": "Social contract and jobs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-safety",
+      "vc:label": "Trust and Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-reality",
+      "vc:label": "Virtual Reality"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-39b0e7a798b2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#SocialImpact"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0170"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Social Impact"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:social-impact"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:social-impact"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:social-impact",
+  "@type": "OntologyClass",
+  "label": "Social Impact",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The effects—positive and negative, intended and unintended—that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:social-impact:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Ethan Mollick]]",
+      "resolved": "urn:visionflow:linked:ethan-mollick",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[heiphetz2010training; @aldrich2005learning]]",
+      "resolved": "urn:visionflow:linked:heiphetz2010training-aldrich2005learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr]]",
+      "resolved": "urn:visionflow:linked:nostr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[torok2017cascading]]",
+      "resolved": "urn:visionflow:linked:torok2017cascading",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cyber Security and Military]]",
+      "resolved": "urn:visionflow:owl:class:cyber-security-and-military",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deepfakes and fraudulent content]]",
+      "resolved": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Equity]]",
+      "resolved": "urn:visionflow:owl:class:equity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative AI]]",
+      "resolved": "urn:visionflow:owl:class:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Humans, Avatars , Character]]",
+      "resolved": "urn:visionflow:owl:class:humans-avatars-character",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[legacy media]]",
+      "resolved": "urn:visionflow:owl:class:legacy-media",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Meta Platforms]]",
+      "resolved": "urn:visionflow:owl:class:meta-platforms",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse and Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Money]]",
+      "resolved": "urn:visionflow:owl:class:money",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Nostr protocol]]",
+      "resolved": "urn:visionflow:owl:class:nostr-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social contract and jobs]]",
+      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust and Safety]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-safety",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Reality]]",
+      "resolved": "urn:visionflow:owl:class:virtual-reality",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The effects—positive and negative, intended and unintended—that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.
@@ -79,11 +454,11 @@ public:: true
 		- While AI presents new challenges, it also offers significant opportunities for enhancing education, requiring a balanced approach to its integration. We need to be doing more.
 		- {{embed ((657d1029-63aa-4766-8324-e7d6e5e19001))}}
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Privacy, Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
-		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large language models]]
-		- [[Facebook Meta]] shifts to [[Education and AI]] in [[Metaverse and Telecollaboration]] [Meta Shift Focus From Gaming to an Education Metaverse - Altcoin Buzz](https://www.altcoinbuzz.io/cryptocurrency-news/meta-shift-focus-from-gaming-to-an-education-metaverse/)
+		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large Language Models]]
+		- [[Meta Platforms]] shifts to [[Education and AI]] in [[Metaverse and Telecollaboration]] [Meta Shift Focus From Gaming to an Education Metaverse - Altcoin Buzz](https://www.altcoinbuzz.io/cryptocurrency-news/meta-shift-focus-from-gaming-to-an-education-metaverse/)
 		- [Using AI to Implement Effective Teaching Strategies in Classrooms: Five Strategies, Including Prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4391243) [[Education and AI]]
 		- low stakes testing paper [(11) (PDF) Ten Benefits of Testing and Their Applications to Educational Practice (researchgate.net)](https://www.researchgate.net/publication/291166244_Ten_Benefits_of_Testing_and_Their_Applications_to_Educational_Practice)
 
@@ -184,7 +559,7 @@ public:: true
   - # Links for developing
   - Microsoft working trends, technical debt through loss to communication systems [[Social contract and jobs]]
   - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Social contract and jobs]]
-  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Privacy, Trust and Safety]] [[Social contract and jobs]]
+  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Social contract and jobs]]
   - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Social contract and jobs]] [[Equity]]
   - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Social contract and jobs]]
 		- [The impact of artificial intelligence on employment: the role of virtual agglomeration | Humanities and Social Sciences Communications (nature.com)](https://www.nature.com/articles/s41599-024-02647-9)
@@ -259,11 +634,11 @@ public:: true
 		- While AI presents new challenges, it also offers significant opportunities for enhancing education, requiring a balanced approach to its integration. We need to be doing more.
 		- {{embed ((657d1029-63aa-4766-8324-e7d6e5e19001))}}
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Privacy, Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
-		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large language models]]
-		- [[Facebook Meta]] shifts to [[Education and AI]] in [[Metaverse and Telecollaboration]] [Meta Shift Focus From Gaming to an Education Metaverse - Altcoin Buzz](https://www.altcoinbuzz.io/cryptocurrency-news/meta-shift-focus-from-gaming-to-an-education-metaverse/)
+		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large Language Models]]
+		- [[Meta Platforms]] shifts to [[Education and AI]] in [[Metaverse and Telecollaboration]] [Meta Shift Focus From Gaming to an Education Metaverse - Altcoin Buzz](https://www.altcoinbuzz.io/cryptocurrency-news/meta-shift-focus-from-gaming-to-an-education-metaverse/)
 		- [Using AI to Implement Effective Teaching Strategies in Classrooms: Five Strategies, Including Prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4391243) [[Education and AI]]
 		- low stakes testing paper [(11) (PDF) Ten Benefits of Testing and Their Applications to Educational Practice (researchgate.net)](https://www.researchgate.net/publication/291166244_Ten_Benefits_of_Testing_and_Their_Applications_to_Educational_Practice)
 
@@ -364,7 +739,7 @@ public:: true
   - # Links for developing
   - Microsoft working trends, technical debt through loss to communication systems [[Social contract and jobs]]
   - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Social contract and jobs]]
-  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Privacy, Trust and Safety]] [[Social contract and jobs]]
+  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Social contract and jobs]]
   - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Social contract and jobs]] [[Equity]]
   - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Social contract and jobs]]
 		- [The impact of artificial intelligence on employment: the role of virtual agglomeration | Humanities and Social Sciences Communications (nature.com)](https://www.nature.com/articles/s41599-024-02647-9)
@@ -424,10 +799,10 @@ public:: true
 		- While AI presents new challenges, it also offers significant opportunities for enhancing education, requiring a balanced approach to its integration. We need to be doing more.
 		- {{embed ((657d1029-63aa-4766-8324-e7d6e5e19001))}}
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Privacy, Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
-		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large language models]]
+		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large Language Models]]
 
 		- ### The Social Cost of Inequality
 		- Four decades later, the social impacts of rising inequality are becoming clear. Of the 14 million people living in poverty in Britain today, mostare in working families \[ref needed\]. Upward mobility is declining, as the continued dominance of the privately educated elite in top jobs hinders meritocracy \[The Gender Wage Gap Among University Vice Chancellors in the UK 2022\] . The lack of affordable housing and regulation in the rental market has led to increasing homelessness \[ref needed\]. And with the super-rich able to avoid taxes, the burden falls more heavily on lower income groups \[ref needed\].

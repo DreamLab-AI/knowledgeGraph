@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:bf45bebbb1b1c59541d2507cc1c5d4cccbe83525c655b21d0726ee75b5324717",
+  "title": "AI Infrastructure",
+  "slug": "ai-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-infrastructure",
+  "domain": "artificial-intelligence",
+  "definition": "AI Infrastructure refers to the hardware, software, and systems required to develop, train, deploy, and operate artificial intelligence applications. This includes GPU computing clusters, cloud AI services, edge computing devices, machine learning platforms, and the supporting toolchains for model development and deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "groq",
+      "label": "Groq"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

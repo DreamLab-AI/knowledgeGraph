@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b",
+  "title": "Digital Identity Management",
+  "slug": "digital-identity-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-identity-management",
+  "domain": "infrastructure",
+  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication. bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:identity-systems",
+      "label": "Identity Systems"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:credential-storage",
+        "label": "Credential Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-providers",
+        "label": "Identity Providers"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:privacy-control",
+        "label": "Privacy Control"
+      },
+      {
+        "id": "urn:visionflow:linked:user-authentication",
+        "label": "User Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "credential-storage",
+      "label": "Credential Storage"
+    },
+    {
+      "slug": "e-idas-2-0",
+      "label": "eIDAS 2.0"
+    },
+    {
+      "slug": "identity-providers",
+      "label": "Identity Providers"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "privacy-control",
+      "label": "Privacy Control"
+    },
+    {
+      "slug": "user-authentication",
+      "label": "User Authentication"
+    },
+    {
+      "slug": "w3-c-did-core-1-0",
+      "label": "W3C DID Core 1.0"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "identity-systems",
+      "label": "Identity Systems"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

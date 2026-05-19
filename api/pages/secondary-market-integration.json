@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:eaf4dd3955eb290201c0bffd516757231021f5f864beb903009f977dcd47569c",
+  "title": "Secondary Market Integration",
+  "slug": "secondary-market-integration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:secondary-market-integration",
+  "domain": "spatial-computing",
+  "definition": "Technical and business infrastructure connecting primary asset creation with resale marketplaces, enabling liquidity for digital collectibles, virtual real estate, and NFTs through automated royalty distribution and cross-platform trading protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-trading",
+      "label": "Digital Asset Trading"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-liquidity",
+        "label": "Asset Liquidity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-liquidity",
+      "label": "Asset Liquidity"
+    },
+    {
+      "slug": "digital-asset-trading",
+      "label": "Digital Asset Trading"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    }
+  ]
+}

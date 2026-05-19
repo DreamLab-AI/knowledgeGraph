@@ -1,21 +1,502 @@
-iri:: http://narrativegoldmine.com/blockchain#Blockchain
-uri:: urn:visionclaw:concept:blockchain:blockchain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:blockchain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Blockchain
-content-hash:: sha256-12-7eff95984f87
-legacy-term-id:: BC-0001
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 1.0
-version:: 2.0.0
-created:: 2025-10-28T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Blockchain
+legacy_uri:: urn:visionclaw:concept:blockchain:blockchain
 public:: true
+
+# Blockchain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b",
+  "@type": "Page",
+  "vc:slug": "blockchain",
+  "title": "Blockchain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-energy-optimisation",
+      "vc:label": "AI Energy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-finance",
+      "vc:label": "Decentralised Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-consensus",
+      "vc:label": "Distributed Consensus"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23257-2021",
+      "vc:label": "ISO/IEC 23257:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23455-2019",
+      "vc:label": "ISO/IEC 23455:2019"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-tr",
+      "vc:label": "ISO/IEC TR"
+    },
+    {
+      "@id": "urn:visionflow:linked:itu-t-y-4460",
+      "vc:label": "ITU-T Y.4460"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-transparency",
+      "vc:label": "Supply Chain Transparency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:block",
+      "vc:label": "Block"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-system",
+      "vc:label": "Cryptographic System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-data-structure",
+      "vc:label": "Distributed Data Structure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-ledger",
+      "vc:label": "Distributed Ledger"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mining",
+      "vc:label": "Mining"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:node",
+      "vc:label": "Node"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "vc:label": "Peer-to-Peer Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:token-economics",
+      "vc:label": "Token Economics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction",
+      "vc:label": "Transaction"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "1.0"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7eff95984f87"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-28T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Blockchain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Blockchain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:blockchain",
+  "@type": "OntologyClass",
+  "label": "Blockchain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-system",
+      "vc:label": "Cryptographic System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-data-structure",
+      "vc:label": "Distributed Data Structure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-ledger",
+      "vc:label": "Distributed Ledger"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without requiring a trusted central authority.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "1.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:owl:class:block",
+      "vc:label": "Block"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mining",
+      "vc:label": "Mining"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:node",
+      "vc:label": "Node"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction",
+      "vc:label": "Transaction"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-consensus",
+      "vc:label": "Distributed Consensus"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "vc:label": "Peer-to-Peer Network"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-finance",
+      "vc:label": "Decentralised Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-transparency",
+      "vc:label": "Supply Chain Transparency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:token-economics",
+      "vc:label": "Token Economics"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:ai-energy-optimisation",
+      "vc:label": "AI Energy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:blockchain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Energy Optimisation]]",
+      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Hash Function]]",
+      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Finance]]",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Consensus]]",
+      "resolved": "urn:visionflow:linked:distributed-consensus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23257:2021]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23455:2019]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23455-2019",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC TR]]",
+      "resolved": "urn:visionflow:linked:iso-iec-tr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ITU-T Y.4460]]",
+      "resolved": "urn:visionflow:linked:itu-t-y-4460",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Supply Chain Transparency]]",
+      "resolved": "urn:visionflow:linked:supply-chain-transparency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Block]]",
+      "resolved": "urn:visionflow:owl:class:block",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptographic System]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Asset]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Data Structure]]",
+      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Ledger]]",
+      "resolved": "urn:visionflow:owl:class:distributed-ledger",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mining]]",
+      "resolved": "urn:visionflow:owl:class:mining",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Node]]",
+      "resolved": "urn:visionflow:owl:class:node",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Peer-to-Peer Network]]",
+      "resolved": "urn:visionflow:owl:class:peer-to-peer-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Token Economics]]",
+      "resolved": "urn:visionflow:owl:class:token-economics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction]]",
+      "resolved": "urn:visionflow:owl:class:transaction",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without requiring a trusted central authority.

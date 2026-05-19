@@ -1,21 +1,365 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Transformer
-uri:: urn:visionclaw:concept:artificial-intelligence:transformer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:transformer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Transformer
-content-hash:: sha256-12-cacdeecf1964
-legacy-term-id:: AI-0037
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Transformer
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:transformer
 public:: true
+
+# Transformer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2",
+  "@type": "Page",
+  "vc:slug": "transformer",
+  "title": "Transformer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aigrounded-domain",
+      "vc:label": "AIGroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face",
+      "vc:label": "Hugging Face"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-22989",
+      "vc:label": "ISO/IEC 22989"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-600-1",
+      "vc:label": "NIST AI 600-1"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow",
+      "vc:label": "TensorFlow"
+    },
+    {
+      "@id": "urn:visionflow:linked:vaswani-et-al-2017",
+      "vc:label": "Vaswani et al. 2017"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt",
+      "vc:label": "GPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-attention",
+      "vc:label": "Self Attention"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cacdeecf1964"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Transformer"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0037"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Transformer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:transformer"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:transformer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:transformer",
+  "@type": "OntologyClass",
+  "label": "Transformer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A neural network architecture that relies on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models including GPT, BERT, and their successors.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt",
+      "vc:label": "GPT"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-attention",
+      "vc:label": "Self Attention"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:transformer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AIGroundedDomain]]",
+      "resolved": "urn:visionflow:linked:aigrounded-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foundation Model]]",
+      "resolved": "urn:visionflow:linked:foundation-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foundation Model|Foundation models]]",
+      "resolved": "urn:visionflow:linked:foundation-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hugging Face]]",
+      "resolved": "urn:visionflow:linked:hugging-face",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 22989]]",
+      "resolved": "urn:visionflow:linked:iso-iec-22989",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large Language Model]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large Language Model|LLMs]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI 600-1]]",
+      "resolved": "urn:visionflow:linked:nist-ai-600-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PyTorch]]",
+      "resolved": "urn:visionflow:linked:py-torch",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow]]",
+      "resolved": "urn:visionflow:linked:tensor-flow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vaswani et al. 2017]]",
+      "resolved": "urn:visionflow:linked:vaswani-et-al-2017",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Attention Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:attention-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BERT]]",
+      "resolved": "urn:visionflow:owl:class:bert",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GPT]]",
+      "resolved": "urn:visionflow:owl:class:gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recurrent Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:recurrent-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Self Attention]]",
+      "resolved": "urn:visionflow:owl:class:self-attention",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A neural network architecture that relies on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models including GPT, BERT, and their successors.
@@ -26,7 +370,7 @@ public:: true
   - belongs-to-domain:: [[AIGroundedDomain]]
 
 - ### Relationships
-  - related-to:: [[Large Language Model]], [[Attention Mechanism]], [[Foundation Model]], [[Self-Attention]]
+  - related-to:: [[Large Language Model]], [[Attention Mechanism]], [[Foundation Model]], [[Self Attention]]
   - preceded-by:: [[Recurrent Neural Network]], [[Convolutional Neural Network]]
   - enables:: [[BERT]], [[GPT]], [[Foundation Model]]
   - implemented-in:: [[PyTorch]], [[TensorFlow]], [[Hugging Face]]

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:b77485ecffdf14dff31efaa65b591bac908d65d14e499fc106817a02323e8690",
+  "title": "Transaction Processing",
+  "slug": "transaction-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transaction-processing",
+  "domain": "infrastructure",
+  "definition": "TransactionProcessing is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-asset-infrastructure",
+      "label": "Digital Asset Infrastructure"
+    },
+    {
+      "slug": "synchronous-execution",
+      "label": "Synchronous Execution"
+    }
+  ]
+}

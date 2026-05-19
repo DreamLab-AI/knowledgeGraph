@@ -1,21 +1,288 @@
-iri:: http://narrativegoldmine.com/blockchain#SupplyChainTraceability
-uri:: urn:visionclaw:concept:blockchain:supply-chain-traceability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:supply-chain-traceability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Supply Chain Traceability
-content-hash:: sha256-12-267a95157874
-legacy-term-id:: BC-0446
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#SupplyChainTraceability
+legacy_uri:: urn:visionclaw:concept:blockchain:supply-chain-traceability
 public:: true
+
+# Supply Chain Traceability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a",
+  "@type": "Page",
+  "vc:slug": "supply-chain-traceability",
+  "title": "Supply Chain Traceability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0142-smart-contract",
+      "vc:label": "BC-0142-smart-contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0245-internet-of-things",
+      "vc:label": "BC-0245-internet-of-things"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "vc:label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0447-anti-counterfeiting",
+      "vc:label": "BC-0447-anti-counterfeiting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0448-cold-chain-monitoring",
+      "vc:label": "BC-0448-cold-chain-monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0449-circular-economy",
+      "vc:label": "BC-0449-circular-economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "BlockchainTechnology"
+    },
+    {
+      "@id": "urn:visionflow:linked:counterfeiting",
+      "vc:label": "Counterfeiting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:circular-economy",
+      "vc:label": "CircularEconomy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cold-chain-monitoring",
+      "vc:label": "ColdChainMonitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "HyperledgerFabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-267a95157874"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#SupplyChainTraceability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0446"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Supply Chain Traceability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:supply-chain-traceability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:supply-chain-traceability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:supply-chain-traceability",
+  "@type": "OntologyClass",
+  "label": "Supply Chain Traceability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-application",
+      "vc:label": "Blockchain Application"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each stage. Systems like [[HyperledgerFabric|Hyperledger Fabric]] implementations track product provenance, environmental conditions (via [[ColdChainMonitoring|cold chain monitoring]]), and regulatory certifications, providing consumers and businesses with cryptographic proof of authenticity and preventing [[Counterfeiting|counterfeiting]]. Applications extend across food safety, pharmaceutical verification, luxury goods authentication, and [[CircularEconomy|circular economy]] initiatives where blockchain records enable product take-back, refurbishment, and responsible resource recovery.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:supply-chain-traceability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0142-smart-contract]]",
+      "resolved": "urn:visionflow:linked:bc-0142-smart-contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0245-internet-of-things]]",
+      "resolved": "urn:visionflow:linked:bc-0245-internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0426-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0447-anti-counterfeiting]]",
+      "resolved": "urn:visionflow:linked:bc-0447-anti-counterfeiting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0448-cold-chain-monitoring]]",
+      "resolved": "urn:visionflow:linked:bc-0448-cold-chain-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0449-circular-economy]]",
+      "resolved": "urn:visionflow:linked:bc-0449-circular-economy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainTechnology|blockchain]]",
+      "resolved": "urn:visionflow:linked:blockchain-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Counterfeiting|counterfeiting]]",
+      "resolved": "urn:visionflow:linked:counterfeiting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CircularEconomy|circular economy]]",
+      "resolved": "urn:visionflow:owl:class:circular-economy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ColdChainMonitoring|cold chain monitoring]]",
+      "resolved": "urn:visionflow:owl:class:cold-chain-monitoring",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[HyperledgerFabric|Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract|smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each stage. Systems like [[HyperledgerFabric|Hyperledger Fabric]] implementations track product provenance, environmental conditions (via [[ColdChainMonitoring|cold chain monitoring]]), and regulatory certifications, providing consumers and businesses with cryptographic proof of authenticity and preventing [[Counterfeiting|counterfeiting]]. Applications extend across food safety, pharmaceutical verification, luxury goods authentication, and [[CircularEconomy|circular economy]] initiatives where blockchain records enable product take-back, refurbishment, and responsible resource recovery.

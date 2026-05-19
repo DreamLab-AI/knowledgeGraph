@@ -1,0 +1,656 @@
+{
+  "id": "urn:visionflow:page:39ae78fbe12f8771b70bf6fa95228948b31080850b4f624e09aee5d87261f643",
+  "title": "Compliance Control",
+  "slug": "compliance-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compliance-control",
+  "domain": "governance",
+  "definition": "Compliance Control is an enterprise governance mechanism comprising the policies, procedures, automated tests, and continuous monitoring activities that an organisation deploys to demonstrate, document, and enforce adherence to regulatory obligations, internal standards, and contractual requirements across operational, financial, and information-security domains. Compliance controls are operationalised within structured frameworks \u2014 COSO Internal Control\u2013Integrated Framework 2013 (refreshed with cloud-era guidance 2023), NIST Cybersecurity Framework 2.0 published February 2024, ISO/IEC 27001:2022, SOX Sections 302 and 404, GDPR Article 32 technical-and-organisational measures, EU AI Act Articles 9\u201317 for high-risk AI systems, and DORA (Digital Operational Resilience Act) operative January 2025 \u2014 and are executed across three organisational lines of defence: first line (business units executing controls as embedded workflow steps), second line (risk and compliance functions monitoring design and operating effectiveness), and third line (internal and external audit providing independent assurance).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "id": "urn:visionflow:linked:enterprise-risk-management",
+      "label": "Enterprise Risk Management"
+    },
+    {
+      "id": "urn:visionflow:linked:information-security-management",
+      "label": "Information Security Management"
+    },
+    {
+      "id": "urn:visionflow:linked:internal-control",
+      "label": "Internal Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:control-activity",
+        "label": "Control Activity"
+      },
+      {
+        "id": "urn:visionflow:linked:control-evidence",
+        "label": "Control Evidence"
+      },
+      {
+        "id": "urn:visionflow:linked:control-library",
+        "label": "Control Library"
+      },
+      {
+        "id": "urn:visionflow:linked:control-maturity-assessment",
+        "label": "Control Maturity Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:control-objective",
+        "label": "Control Objective"
+      },
+      {
+        "id": "urn:visionflow:linked:control-owner",
+        "label": "Control Owner"
+      },
+      {
+        "id": "urn:visionflow:linked:control-testing",
+        "label": "Control Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:exception-management",
+        "label": "Exception Management"
+      },
+      {
+        "id": "urn:visionflow:linked:remediation-plan",
+        "label": "Remediation Plan"
+      },
+      {
+        "id": "urn:visionflow:linked:segregation-of-duties",
+        "label": "Segregation of Duties"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:visionflow:linked:control-documentation",
+        "label": "Control Documentation"
+      },
+      {
+        "id": "urn:visionflow:linked:it-general-controls",
+        "label": "IT General Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:management-oversight",
+        "label": "Management Oversight"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-mapping",
+        "label": "Regulatory Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:segregation-of-duties",
+        "label": "Segregation of Duties"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:basel-iii-compliance",
+        "label": "Basel III Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:consumer-duty-compliance",
+        "label": "Consumer Duty Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:dora-compliance",
+        "label": "DORA Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:gdpr-accountability",
+        "label": "GDPR Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-27001-certification",
+        "label": "ISO 27001 Certification"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-assurance",
+        "label": "Regulatory Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:smcr-compliance",
+        "label": "SMCR Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:soc-2-type-ii-attestation",
+        "label": "SOC 2 Type II Attestation"
+      },
+      {
+        "id": "urn:visionflow:linked:sox-compliance",
+        "label": "SOX Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:continuous-controls-monitoring",
+        "label": "Continuous Controls Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:coso-internal-control-framework",
+        "label": "COSO Internal Control Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:grc-platform",
+        "label": "GRC Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-27701",
+        "label": "ISO 27701"
+      },
+      {
+        "id": "urn:visionflow:linked:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:reg-tech-automation",
+        "label": "RegTech Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:three-lines-of-defence",
+        "label": "Three Lines of Defence"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "assurance-layer",
+      "label": "AssuranceLayer"
+    },
+    {
+      "slug": "audit",
+      "label": "Audit"
+    },
+    {
+      "slug": "audit-management-system",
+      "label": "Audit Management System"
+    },
+    {
+      "slug": "automated-control",
+      "label": "Automated Control"
+    },
+    {
+      "slug": "basel-committee-on-banking-supervision",
+      "label": "Basel Committee on Banking Supervision"
+    },
+    {
+      "slug": "basel-iii-compliance",
+      "label": "Basel III Compliance"
+    },
+    {
+      "slug": "business-process-management",
+      "label": "Business Process Management"
+    },
+    {
+      "slug": "compensating-control",
+      "label": "Compensating Control"
+    },
+    {
+      "slug": "conduct-risk-management",
+      "label": "Conduct Risk Management"
+    },
+    {
+      "slug": "consumer-duty",
+      "label": "Consumer Duty"
+    },
+    {
+      "slug": "consumer-duty-compliance",
+      "label": "Consumer Duty Compliance"
+    },
+    {
+      "slug": "continuous-controls-monitoring",
+      "label": "Continuous Controls Monitoring"
+    },
+    {
+      "slug": "control-activity",
+      "label": "Control Activity"
+    },
+    {
+      "slug": "control-documentation",
+      "label": "Control Documentation"
+    },
+    {
+      "slug": "control-evidence",
+      "label": "Control Evidence"
+    },
+    {
+      "slug": "control-library",
+      "label": "Control Library"
+    },
+    {
+      "slug": "control-maturity-assessment",
+      "label": "Control Maturity Assessment"
+    },
+    {
+      "slug": "control-objective",
+      "label": "Control Objective"
+    },
+    {
+      "slug": "control-owner",
+      "label": "Control Owner"
+    },
+    {
+      "slug": "control-testing",
+      "label": "Control Testing"
+    },
+    {
+      "slug": "corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "slug": "corrective-control",
+      "label": "Corrective Control"
+    },
+    {
+      "slug": "coso",
+      "label": "COSO"
+    },
+    {
+      "slug": "coso-internal-control-framework",
+      "label": "COSO Internal Control Framework"
+    },
+    {
+      "slug": "cyber-risk-management",
+      "label": "Cyber Risk Management"
+    },
+    {
+      "slug": "data-loss-prevention",
+      "label": "Data Loss Prevention"
+    },
+    {
+      "slug": "deloitte",
+      "label": "Deloitte"
+    },
+    {
+      "slug": "detective-control",
+      "label": "Detective Control"
+    },
+    {
+      "slug": "dora-compliance",
+      "label": "DORA Compliance"
+    },
+    {
+      "slug": "enterprise-risk-domain",
+      "label": "EnterpriseRiskDomain"
+    },
+    {
+      "slug": "enterprise-risk-management",
+      "label": "Enterprise Risk Management"
+    },
+    {
+      "slug": "european-parliament",
+      "label": "European Parliament"
+    },
+    {
+      "slug": "exception-management",
+      "label": "Exception Management"
+    },
+    {
+      "slug": "ey",
+      "label": "EY"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "financial-reporting-domain",
+      "label": "FinancialReportingDomain"
+    },
+    {
+      "slug": "financial-reporting-integrity",
+      "label": "Financial Reporting Integrity"
+    },
+    {
+      "slug": "frc",
+      "label": "FRC"
+    },
+    {
+      "slug": "gartner",
+      "label": "Gartner"
+    },
+    {
+      "slug": "gdpr-accountability",
+      "label": "GDPR Accountability"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "grc-platform",
+      "label": "GRC Platform"
+    },
+    {
+      "slug": "grc-software",
+      "label": "GRC Software"
+    },
+    {
+      "slug": "ico",
+      "label": "ICO"
+    },
+    {
+      "slug": "identity-and-access-management",
+      "label": "Identity and Access Management"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "iia",
+      "label": "IIA"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "InformationSecurityDomain"
+    },
+    {
+      "slug": "information-security-management",
+      "label": "Information Security Management"
+    },
+    {
+      "slug": "internal-control",
+      "label": "Internal Control"
+    },
+    {
+      "slug": "isaca",
+      "label": "ISACA"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "iso-27001-certification",
+      "label": "ISO 27001 Certification"
+    },
+    {
+      "slug": "iso-27701",
+      "label": "ISO 27701"
+    },
+    {
+      "slug": "iso-iec",
+      "label": "ISO/IEC"
+    },
+    {
+      "slug": "it-general-controls",
+      "label": "IT General Controls"
+    },
+    {
+      "slug": "kpmg",
+      "label": "KPMG"
+    },
+    {
+      "slug": "management-oversight",
+      "label": "Management Oversight"
+    },
+    {
+      "slug": "manual-control",
+      "label": "Manual Control"
+    },
+    {
+      "slug": "nca",
+      "label": "NCA"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "nist-cybersecurity-framework",
+      "label": "NIST Cybersecurity Framework"
+    },
+    {
+      "slug": "one-trust",
+      "label": "OneTrust"
+    },
+    {
+      "slug": "operational-resilience",
+      "label": "Operational Resilience"
+    },
+    {
+      "slug": "operational-risk",
+      "label": "Operational Risk"
+    },
+    {
+      "slug": "operational-risk-framework",
+      "label": "Operational Risk Framework"
+    },
+    {
+      "slug": "pcaob",
+      "label": "PCAOB"
+    },
+    {
+      "slug": "policy-framework",
+      "label": "Policy Framework"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "policy-management",
+      "label": "Policy Management"
+    },
+    {
+      "slug": "policy-management-platform",
+      "label": "Policy Management Platform"
+    },
+    {
+      "slug": "pra",
+      "label": "PRA"
+    },
+    {
+      "slug": "preventive-control",
+      "label": "Preventive Control"
+    },
+    {
+      "slug": "process-layer",
+      "label": "ProcessLayer"
+    },
+    {
+      "slug": "pw-c",
+      "label": "PwC"
+    },
+    {
+      "slug": "reg-tech-automation",
+      "label": "RegTech Automation"
+    },
+    {
+      "slug": "regulatory-assurance",
+      "label": "Regulatory Assurance"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "regulatory-mapping",
+      "label": "Regulatory Mapping"
+    },
+    {
+      "slug": "remediation-plan",
+      "label": "Remediation Plan"
+    },
+    {
+      "slug": "role-based-access-control",
+      "label": "Role-Based Access Control"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "segregation-of-duties",
+      "label": "Segregation of Duties"
+    },
+    {
+      "slug": "service-now",
+      "label": "ServiceNow"
+    },
+    {
+      "slug": "siem",
+      "label": "SIEM"
+    },
+    {
+      "slug": "smcr-compliance",
+      "label": "SMCR Compliance"
+    },
+    {
+      "slug": "soc-2-type-ii-attestation",
+      "label": "SOC 2 Type II Attestation"
+    },
+    {
+      "slug": "sox-compliance",
+      "label": "SOX Compliance"
+    },
+    {
+      "slug": "technology-layer",
+      "label": "TechnologyLayer"
+    },
+    {
+      "slug": "third-party-risk-management",
+      "label": "Third Party Risk Management"
+    },
+    {
+      "slug": "thomson-reuters",
+      "label": "Thomson Reuters"
+    },
+    {
+      "slug": "three-lines-of-defence",
+      "label": "Three Lines of Defence"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

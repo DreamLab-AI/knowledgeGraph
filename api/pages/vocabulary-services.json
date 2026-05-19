@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ff9294ba42b477a913fa2bddc3bf551954f91adc0fe33a8b717fbff910fa3db5",
+  "title": "Vocabulary Services",
+  "slug": "vocabulary-services",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vocabulary-services",
+  "domain": "spatial-computing",
+  "definition": "Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-management",
+      "label": "Knowledge Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "urn:visionflow:page:41520d5a4901d011aa562d2e9d0badc324ae984269908d98624333d035e4387f",
+  "title": "RRT Algorithm",
+  "slug": "rrt-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rrt-algorithm",
+  "domain": "robotics",
+  "definition": "A sampling-based path planning algorithm that incrementally builds a tree of collision-free configurations by randomly sampling the configuration space and connecting samples to the nearest existing tree node. It efficiently explores high-dimensional spaces and is probabilistically complete.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:rb-1016-path-planning",
+      "label": "RB-1016-path-planning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.96,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:collision-checker",
+        "label": "Collision Checker"
+      },
+      {
+        "id": "urn:visionflow:linked:configuration-space",
+        "label": "Configuration Space"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "collision-checker",
+      "label": "Collision Checker"
+    },
+    {
+      "slug": "configuration-space",
+      "label": "Configuration Space"
+    },
+    {
+      "slug": "informed-rrt-star",
+      "label": "Informed RRT-Star"
+    },
+    {
+      "slug": "manipulators",
+      "label": "Manipulators"
+    },
+    {
+      "slug": "mobile-robots",
+      "label": "Mobile Robots"
+    },
+    {
+      "slug": "probabilistic-completeness",
+      "label": "Probabilistic Completeness"
+    },
+    {
+      "slug": "randomization",
+      "label": "Randomization"
+    },
+    {
+      "slug": "rb-1016-path-planning",
+      "label": "RB-1016-path-planning"
+    },
+    {
+      "slug": "rb-1018-dijkstra-algorithm",
+      "label": "RB-1018-dijkstra-algorithm"
+    },
+    {
+      "slug": "rrt-connect",
+      "label": "RRT-Connect"
+    },
+    {
+      "slug": "rrt-star",
+      "label": "RRT-Star"
+    },
+    {
+      "slug": "sampling-based-method",
+      "label": "Sampling-Based Method"
+    },
+    {
+      "slug": "steven-la-valle-1998",
+      "label": "Steven LaValle 1998"
+    },
+    {
+      "slug": "tree-structure",
+      "label": "Tree Structure"
+    },
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "nearest-neighbor-search",
+      "label": "Nearest Neighbor Search"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

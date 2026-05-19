@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79",
+  "title": "Soon-Next-Later (AI futurology)",
+  "slug": "soon-next-later-ai-futurology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:soon-next-later-ai-futurology",
+  "domain": "artificial-intelligence",
+  "definition": "Soon-Next-Later (AI futurology) is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "collaborative",
+      "label": "collaborative"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "sam-hammond",
+      "label": "Sam Hammond"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:97127706e7c07e72db62515e5d6027d38c869953e48ef7d490afb4ebbf76ed44",
+  "title": "Governance Board",
+  "slug": "governance-board",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:governance-board",
+  "domain": "artificial-intelligence",
+  "definition": "An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:governance-architecture",
+      "label": "Governance Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collective-decision-making",
+        "label": "Collective Decision Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collective-decision-making",
+      "label": "Collective Decision Making"
+    },
+    {
+      "slug": "governance-architecture",
+      "label": "Governance Architecture"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-governance-and-ethics",
+      "label": "ETSI Domain: Governance & Ethics"
+    }
+  ]
+}

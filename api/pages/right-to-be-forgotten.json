@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:0d82d3558cc494a2d1259a20b4fd6c8d4bfd2d9ce6ae2599e99a6f958af2b3f8",
+  "title": "Right to Be Forgotten",
+  "slug": "right-to-be-forgotten",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:right-to-be-forgotten",
+  "domain": "infrastructure",
+  "definition": "A privacy right framework enabling individuals to request deletion or removal of personal data from online platforms and databases, with verification and audit mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:privacy-framework",
+      "label": "Privacy Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:deletion-request",
+        "label": "Deletion Request"
+      },
+      {
+        "id": "urn:visionflow:linked:erasure-verification",
+        "label": "Erasure Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-inventory",
+        "label": "Data Inventory"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compliance-reporting",
+        "label": "Compliance Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:content-removal",
+        "label": "Content Removal"
+      },
+      {
+        "id": "urn:visionflow:linked:data-erasure",
+        "label": "Data Erasure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-privacy-control",
+        "label": "User Privacy Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
+      "slug": "compliance-reporting",
+      "label": "Compliance Reporting"
+    },
+    {
+      "slug": "content-removal",
+      "label": "Content Removal"
+    },
+    {
+      "slug": "data-controller",
+      "label": "Data Controller"
+    },
+    {
+      "slug": "data-erasure",
+      "label": "Data Erasure"
+    },
+    {
+      "slug": "data-inventory",
+      "label": "Data Inventory"
+    },
+    {
+      "slug": "data-processor",
+      "label": "Data Processor"
+    },
+    {
+      "slug": "data-protection-framework",
+      "label": "Data Protection Framework"
+    },
+    {
+      "slug": "deletion-request",
+      "label": "Deletion Request"
+    },
+    {
+      "slug": "erasure-verification",
+      "label": "Erasure Verification"
+    },
+    {
+      "slug": "gdpr-article-17",
+      "label": "GDPR Article 17"
+    },
+    {
+      "slug": "privacy-policy",
+      "label": "Privacy Policy"
+    },
+    {
+      "slug": "privacy-rights-system",
+      "label": "Privacy Rights System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "user-privacy-control",
+      "label": "User Privacy Control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    }
+  ]
+}

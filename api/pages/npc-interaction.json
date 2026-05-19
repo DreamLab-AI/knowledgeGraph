@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:770d416f04a209151360c7a0c178c195c6c1c89bbbf3769dcece359b46638789",
+  "title": "NPC Interaction",
+  "slug": "npc-interaction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:npc-interaction",
+  "domain": "spatial-computing",
+  "definition": "The systems and mechanics enabling player communication and engagement with non-player characters in video games and virtual worlds, increasingly powered by AI and large language models to generate dynamic, unscripted dialogue and contextual responses.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:game-mechanics",
+      "label": "Game Mechanics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-gameplay",
+        "label": "Immersive Gameplay"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-gameplay",
+      "label": "Immersive Gameplay"
+    },
+    {
+      "slug": "game-mechanics",
+      "label": "Game Mechanics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    }
+  ]
+}

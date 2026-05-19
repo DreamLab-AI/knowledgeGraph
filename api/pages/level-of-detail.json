@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:a42b841f00b5f680fd0185c567eb94fbd929c84ba1834065a17a8673501ef670",
+  "title": "Level of Detail",
+  "slug": "level-of-detail",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:level-of-detail",
+  "domain": "spatial-computing",
+  "definition": "Level of Detail is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "culling",
+      "label": "Culling"
+    },
+    {
+      "slug": "instancing",
+      "label": "Instancing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "occlusion-culling",
+      "label": "Occlusion Culling"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

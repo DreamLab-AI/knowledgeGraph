@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:37be8ac994f26f057f693f2f32327408af55c3e690f7f8c95716ad4a15888244",
+  "title": "Low Energy Consumption",
+  "slug": "low-energy-consumption",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:low-energy-consumption",
+  "domain": "blockchain",
+  "definition": "Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99% less than PoW).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

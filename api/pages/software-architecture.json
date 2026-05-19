@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:270d8f44655f173e68f6d51a230c88c17572bfd7e7c775ba855996a7f1cdc634",
+  "title": "Software Architecture",
+  "slug": "software-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:software-architecture",
+  "domain": "artificial-intelligence",
+  "definition": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications. Architectural patterns include microservices (decoupled AI components), serverless (event-driven inference), model-view-controller (MVC) for AI applications, and lambda architecture (batch and stream processing). AI-specific concerns include model versioning, A/B testing infrastructure, feature stores, model registries, and monitoring systems. Modern architectures emphasize modularity, reproducibility, and operational excellence.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "system-design",
+      "label": "System Design"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "reference-architecture",
+      "label": "Reference Architecture"
+    },
+    {
+      "slug": "service-oriented-architecture",
+      "label": "Service Oriented Architecture"
+    }
+  ]
+}

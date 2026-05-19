@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:c0d9c4dc010b1318224dd758171a193d53ceecec47735d2d7a3bd382905c2328",
+  "title": "Polar Robot",
+  "slug": "polar-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:polar-robot",
+  "domain": "robotics",
+  "definition": "Polar robot has rotary base, elevated rotary shoulder, and telescoping arm creating spherical workspace.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

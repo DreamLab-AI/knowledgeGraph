@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:d4fd0b74b852b1911ba0d715428d40e39b4396bcb74a23ae83765b3d56f2e306",
+  "title": "Digital Twin Synchronisation Bus",
+  "slug": "digital-twin-synchronisation-bus",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-synchronisation-bus",
+  "domain": "spatial-computing",
+  "definition": "Middleware infrastructure maintaining real-time state coherence and bidirectional synchronisation among distributed digital twin instances through event streaming and conflict resolution. bridges-to:: [[Autonomous Robot]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conflict-resolution-module",
+        "label": "Conflict Resolution Module"
+      },
+      {
+        "id": "urn:visionflow:linked:event-stream-processor",
+        "label": "Event Stream Processor"
+      },
+      {
+        "id": "urn:visionflow:linked:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:visionflow:linked:state-synchronization-engine",
+        "label": "State Synchronization Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:event-log",
+        "label": "Event Log"
+      },
+      {
+        "id": "urn:visionflow:linked:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:visionflow:linked:state-store",
+        "label": "State Store"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bidirectional-data-flow",
+        "label": "Bidirectional Data Flow"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-twin-orchestration",
+        "label": "Distributed Twin Orchestration"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-instance-state-coherence",
+        "label": "Multi-Instance State Coherence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-digital-twin-synchronization",
+        "label": "Real-Time Digital Twin Synchronization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bidirectional-data-flow",
+      "label": "Bidirectional Data Flow"
+    },
+    {
+      "slug": "conflict-resolution-module",
+      "label": "Conflict Resolution Module"
+    },
+    {
+      "slug": "distributed-twin-orchestration",
+      "label": "Distributed Twin Orchestration"
+    },
+    {
+      "slug": "event-log",
+      "label": "Event Log"
+    },
+    {
+      "slug": "event-stream-processor",
+      "label": "Event Stream Processor"
+    },
+    {
+      "slug": "iso-23247-addendum",
+      "label": "ISO 23247 Addendum"
+    },
+    {
+      "slug": "iv-data-layer",
+      "label": "IV) Data Layer"
+    },
+    {
+      "slug": "message-broker",
+      "label": "Message Broker"
+    },
+    {
+      "slug": "message-queue",
+      "label": "Message Queue"
+    },
+    {
+      "slug": "multi-instance-state-coherence",
+      "label": "Multi-Instance State Coherence"
+    },
+    {
+      "slug": "publish-subscribe-pattern",
+      "label": "Publish-Subscribe Pattern"
+    },
+    {
+      "slug": "state-store",
+      "label": "State Store"
+    },
+    {
+      "slug": "state-synchronization-engine",
+      "label": "State Synchronization Engine"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event-Driven Architecture"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "real-time-digital-twin-synchronization",
+      "label": "Real-Time Digital Twin Synchronization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

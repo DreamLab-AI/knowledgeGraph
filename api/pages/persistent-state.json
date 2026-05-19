@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:910cfd696132febf7677a068c9cf71786b22d0a8c66fa8606fc56dc3ebcac9e3",
+  "title": "Persistent State",
+  "slug": "persistent-state",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:persistent-state",
+  "domain": "infrastructure",
+  "definition": "PersistentState is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ]
+}

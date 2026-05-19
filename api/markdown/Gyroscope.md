@@ -1,21 +1,350 @@
-iri:: http://narrativegoldmine.com/robotics#Gyroscope
-uri:: urn:visionclaw:concept:robotics:gyroscope
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:gyroscope
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Gyroscope
-content-hash:: sha256-12-49d0daf130e5
-legacy-term-id:: RB-0081
-status:: draft
-maturity:: draft
-quality-score:: 0.56
-authority-score:: 0.11
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#Gyroscope
+legacy_uri:: urn:visionclaw:concept:robotics:gyroscope
 public:: true
+
+# Gyroscope
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e",
+  "@type": "Page",
+  "vc:slug": "gyroscope",
+  "title": "Gyroscope",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:attitude-determination",
+      "vc:label": "Attitude Determination"
+    },
+    {
+      "@id": "urn:visionflow:linked:attitude-estimation",
+      "vc:label": "Attitude Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:balance-control",
+      "vc:label": "Balance Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-compensation",
+      "vc:label": "Bias Compensation"
+    },
+    {
+      "@id": "urn:visionflow:linked:drone-stabilisation",
+      "vc:label": "Drone Stabilisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:inertial-measurement-unit",
+      "vc:label": "Inertial Measurement Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:inertial-navigation",
+      "vc:label": "Inertial Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:inertial-sensor",
+      "vc:label": "Inertial Sensor"
+    },
+    {
+      "@id": "urn:visionflow:linked:orientation-reference",
+      "vc:label": "Orientation Reference"
+    },
+    {
+      "@id": "urn:visionflow:linked:orientation-tracking",
+      "vc:label": "Orientation Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:roll-pitch-yaw-measurement",
+      "vc:label": "Roll/Pitch/Yaw Measurement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.11"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-49d0daf130e5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#Gyroscope"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0081"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Gyroscope"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.56"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:gyroscope"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:gyroscope"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:gyroscope",
+  "@type": "OntologyClass",
+  "label": "Gyroscope",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:inertial-sensor",
+      "vc:label": "Inertial Sensor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Gyroscope** - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.",
+  "vc:qualityScore": {
+    "@value": "0.56",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.11",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:attitude-determination",
+      "vc:label": "Attitude Determination"
+    },
+    {
+      "@id": "urn:visionflow:linked:inertial-measurement-unit",
+      "vc:label": "Inertial Measurement Unit"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:bias-compensation",
+      "vc:label": "Bias Compensation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:balance-control",
+      "vc:label": "Balance Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:drone-stabilisation",
+      "vc:label": "Drone Stabilisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:orientation-reference",
+      "vc:label": "Orientation Reference"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:gyroscope:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Attitude Determination]]",
+      "resolved": "urn:visionflow:linked:attitude-determination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Attitude Estimation]]",
+      "resolved": "urn:visionflow:linked:attitude-estimation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Balance Control]]",
+      "resolved": "urn:visionflow:linked:balance-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bias Compensation]]",
+      "resolved": "urn:visionflow:linked:bias-compensation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Drone Stabilisation]]",
+      "resolved": "urn:visionflow:linked:drone-stabilisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inertial Measurement Unit]]",
+      "resolved": "urn:visionflow:linked:inertial-measurement-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inertial Navigation]]",
+      "resolved": "urn:visionflow:linked:inertial-navigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inertial Sensor]]",
+      "resolved": "urn:visionflow:linked:inertial-sensor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Orientation Reference]]",
+      "resolved": "urn:visionflow:linked:orientation-reference",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Orientation Tracking]]",
+      "resolved": "urn:visionflow:linked:orientation-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Roll/Pitch/Yaw Measurement]]",
+      "resolved": "urn:visionflow:linked:roll-pitch-yaw-measurement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor Fusion]]",
+      "resolved": "urn:visionflow:owl:class:sensor-fusion",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Gyroscope** - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.

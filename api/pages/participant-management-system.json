@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:5212f56e6512730e152d5789388bc7dd76daf0bf2225a5c1537f5f4bcabeb124",
+  "title": "Participant Management System",
+  "slug": "participant-management-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:participant-management-system",
+  "domain": "spatial-computing",
+  "definition": "A platform for organizing event attendees through registration, invitation management, check-in tracking, and real-time attendance monitoring, providing tools for ticketing, payment processing, and post-event analytics.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:event-management",
+      "label": "Event Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:event-analytics",
+        "label": "Event Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "event-analytics",
+      "label": "Event Analytics"
+    },
+    {
+      "slug": "event-management",
+      "label": "Event Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    }
+  ]
+}

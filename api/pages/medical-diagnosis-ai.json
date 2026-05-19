@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:0568a78019883114e75f26e1ec4b35ad9678728d1b4a7bb0bb00f2072badf4e4",
+  "title": "Medical Diagnosis AI",
+  "slug": "medical-diagnosis-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:medical-diagnosis-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:medical-ai",
+      "label": "Medical AI"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "treatment-planning-ai",
+      "label": "Treatment Planning AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "treatment-planning-ai",
+      "label": "Treatment Planning AI"
+    }
+  ]
+}

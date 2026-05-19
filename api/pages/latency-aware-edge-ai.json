@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:cce16d201a2438a013de241102a0a032905d9cd14d71502851e9118b483dd81f",
+  "title": "Latency-Aware Edge AI",
+  "slug": "latency-aware-edge-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:latency-aware-edge-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Latency-Aware Edge AI systems dynamically adapt machine learning inference strategies to meet strict response time requirements while optimizing accuracy and resource consumption. These systems continuously monitor network conditions, device load, and inference deadlines, selecting optimal inference strategies from a portfolio of options. Dynamic model selection automatically chooses different neural network architectures (fast shallow networks versus accurate deep networks) based on available time budget; 50ms deadline might use lightweight EfficientNet-B0 while 500ms deadline allows ResNet-50. Adaptive offloading intelligently routes inference between edge and cloud: simple queries execute locally within milliseconds, complex requests offload to cloud when network latency allows before deadline expiration. Cascading inference employs early-exit networks that provide predictions at intermediate layers, reducing latency when initial predictions carry sufficient confidence. Adaptive batching accumulates multiple inference requests into batches for efficient processing when time permits; streaming requests process individually for minimal latency. Latency prediction models estimate e",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:f78f310c6119597a78e82b4047210b9a1543af5a8962e01e0e910d9318b19f06",
+  "title": "Digital Infrastructure",
+  "slug": "digital-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-infrastructure",
+  "domain": "infrastructure",
+  "definition": "DigitalInfrastructure is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cncf",
+      "label": "CNCF"
+    },
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "linux-foundation",
+      "label": "Linux Foundation"
+    },
+    {
+      "slug": "open-compute-project",
+      "label": "Open Compute Project"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-asset-infrastructure",
+      "label": "Digital Asset Infrastructure"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "virtual-world-infrastructure",
+      "label": "Virtual World Infrastructure"
+    }
+  ]
+}

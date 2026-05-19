@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:ec01c12da3af923557af163b0267d04535571fba804a1ce32ac416846cf80ddc",
+  "title": "rb 0036 resolution",
+  "slug": "rb-0036-resolution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0036-resolution",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:2ba4cfcac5e4420439f9733272493d61f43cf8d395e20a0b19333f4370c55267",
+  "title": "Technical Architecture",
+  "slug": "technical-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technical-architecture",
+  "domain": "spatial-computing",
+  "definition": "Technical Architecture is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "infrastructure-architecture",
+      "label": "Infrastructure Architecture"
+    },
+    {
+      "slug": "interoperability-architecture",
+      "label": "Interoperability Architecture"
+    }
+  ]
+}

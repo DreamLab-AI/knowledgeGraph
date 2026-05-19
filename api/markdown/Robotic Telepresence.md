@@ -1,21 +1,264 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#RoboticTelepresence
-uri:: urn:visionclaw:concept:distributed-collaboration:robotic-telepresence
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:robotic-telepresence
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Robotic Telepresence
-content-hash:: sha256-12-a48fcc3fd5e4
-legacy-term-id:: TC-0200
-status:: active
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#RoboticTelepresence
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:robotic-telepresence
 public:: true
+
+# Robotic Telepresence
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7",
+  "@type": "Page",
+  "vc:slug": "robotic-telepresence",
+  "title": "Robotic Telepresence",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:remote-office-attendance",
+      "vc:label": "RemoteOfficeAttendance"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-201-teleoperation-systems",
+      "vc:label": "TELE-201-teleoperation-systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-202-remote-manipulation",
+      "vc:label": "TELE-202-remote-manipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "vc:label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "AutonomousNavigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-robot-interaction",
+      "vc:label": "HumanRobotInteraction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a48fcc3fd5e4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#RoboticTelepresence"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0200"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Robotic Telepresence"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:robotic-telepresence"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:robotic-telepresence"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:robotic-telepresence",
+  "@type": "OntologyClass",
+  "label": "Robotic Telepresence",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"The projection of human presence into remote physical locations through mobile robotic platforms equipped with cameras, displays, microphones, and speakers, enabling remote operators to navigate environments, interact with people, and manipulate objects as if physically present, bridging virtual and physical collaboration modalities.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "AutonomousNavigation"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:remote-office-attendance",
+      "vc:label": "RemoteOfficeAttendance"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:robotic-telepresence:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[RemoteOfficeAttendance]]",
+      "resolved": "urn:visionflow:linked:remote-office-attendance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-201-teleoperation-systems]]",
+      "resolved": "urn:visionflow:linked:tele-201-teleoperation-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-202-remote-manipulation]]",
+      "resolved": "urn:visionflow:linked:tele-202-remote-manipulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AutonomousNavigation]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[HumanRobotInteraction]]",
+      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TELE-001-telepresence]]",
+      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "The projection of human presence into remote physical locations through mobile robotic platforms equipped with cameras, displays, microphones, and speakers, enabling remote operators to navigate environments, interact with people, and manipulate objects as if physically present, bridging virtual and physical collaboration modalities."

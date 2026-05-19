@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:b8f3dfdc86320f8fdfefde117fa1e1b2f7cf661fdb624e325cb66466108948fe",
+  "title": "Velocity",
+  "slug": "velocity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:velocity",
+  "domain": "robotics",
+  "definition": "**Velocity** - Rate of change of position",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

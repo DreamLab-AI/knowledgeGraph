@@ -1,0 +1,142 @@
+{
+  "id": "urn:visionflow:page:5f832c6f9d23e989ba56c11217bb56786b3e95795ec19ba3fed7f4096fbfcfa2",
+  "title": "Central Bank Digital Currency",
+  "slug": "central-bank-digital-currency",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:central-bank-digital-currency",
+  "domain": "infrastructure",
+  "definition": "A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-currency",
+      "label": "Digital Currency"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:central-bank-infrastructure",
+        "label": "Central Bank Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-payments",
+        "label": "Digital Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "central-bank-infrastructure",
+      "label": "Central Bank Infrastructure"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "monetary-policy-transmission",
+      "label": "Monetary Policy Transmission"
+    },
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:40319684c1b379c535893bdd7d3e69cc4a687c6422f4bf052d5ca8db61d7bb58",
+  "title": "Digital Twin Technology",
+  "slug": "digital-twin-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-technology",
+  "domain": "spatial-computing",
+  "definition": "Digital Twin Technology is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "real-time-digital-twin-synchronization",
+      "label": "Real Time Digital Twin Synchronization"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

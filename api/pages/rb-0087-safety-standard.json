@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:f5616b6bf9eefab3b7bd006c5f3771c4d122ea9f04c883fccac8ecc84ecb4f5b",
+  "title": "rb 0087 safety standard",
+  "slug": "rb-0087-safety-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0087-safety-standard",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-standard",
+      "label": "Robot Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "people",
+      "label": "PEOPLE"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

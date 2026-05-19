@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:27cbd8357ce3d2856c35f7ba63968edf197a8869de37a325ef74436cca427f7b",
+  "title": "XR Headset",
+  "slug": "xr-headset",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-headset",
+  "domain": "spatial-computing",
+  "definition": "A head-mounted display device that delivers immersive visual and audio experiences for virtual reality, augmented reality, or mixed reality applications, featuring integrated displays, tracking sensors, audio systems, and processing capabilities for rendering digital content in the user's field of view.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    }
+  ]
+}

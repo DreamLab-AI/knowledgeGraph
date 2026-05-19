@@ -1,21 +1,384 @@
-iri:: http://narrativegoldmine.com/metaverse#Accuracy
-uri:: urn:visionclaw:concept:artificial-intelligence:accuracy
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:accuracy
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Accuracy
-content-hash:: sha256-12-53ececcfa757
-legacy-term-id:: AI-0107
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Accuracy
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:accuracy
 public:: true
+
+# Accuracy
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ad90933ecc79efb68a9fc0640d30a6d6ededecf5d8c9edc7295c116862291178",
+  "@type": "Page",
+  "vc:slug": "accuracy",
+  "title": "Accuracy",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:balanced-accuracy",
+      "vc:label": "Balanced Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation",
+      "vc:label": "documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25024",
+      "vc:label": "ISO/IEC 25024"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25059",
+      "vc:label": "ISO/IEC 25059"
+    },
+    {
+      "@id": "urn:visionflow:linked:modeling",
+      "vc:label": "modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:organisation",
+      "vc:label": "organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance",
+      "vc:label": "performance"
+    },
+    {
+      "@id": "urn:visionflow:linked:research",
+      "vc:label": "research"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensitivity",
+      "vc:label": "Sensitivity"
+    },
+    {
+      "@id": "urn:visionflow:linked:specificity",
+      "vc:label": "Specificity"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "user experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:confusion-matrix",
+      "vc:label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:f1-score",
+      "vc:label": "F1 Score"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "machine learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:precision",
+      "vc:label": "Precision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:product-design",
+      "vc:label": "Product Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recall",
+      "vc:label": "Recall"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:roc-curve",
+      "vc:label": "ROC Curve"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "training"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-53ececcfa757"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Accuracy"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0107"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Accuracy"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accuracy"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accuracy"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ad90933ecc79efb68a9fc0640d30a6d6ededecf5d8c9edc7295c116862291178@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:accuracy",
+  "@type": "OntologyClass",
+  "label": "Accuracy",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ad90933ecc79efb68a9fc0640d30a6d6ededecf5d8c9edc7295c116862291178"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ad90933ecc79efb68a9fc0640d30a6d6ededecf5d8c9edc7295c116862291178@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate measure of overall model correctness but potentially obscuring performance disparities across classes, particularly in datasets with imbalanced class distributions or asymmetric misclassification costs.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:accuracy:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ad90933ecc79efb68a9fc0640d30a6d6ededecf5d8c9edc7295c116862291178"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Balanced Accuracy]]",
+      "resolved": "urn:visionflow:linked:balanced-accuracy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[documentation]]",
+      "resolved": "urn:visionflow:linked:documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25024]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25059]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25059",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[modeling]]",
+      "resolved": "urn:visionflow:linked:modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI RMF]]",
+      "resolved": "urn:visionflow:linked:nist-ai-rmf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[organisation]]",
+      "resolved": "urn:visionflow:linked:organisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[performance]]",
+      "resolved": "urn:visionflow:linked:performance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[research]]",
+      "resolved": "urn:visionflow:linked:research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensitivity]]",
+      "resolved": "urn:visionflow:linked:sensitivity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Specificity]]",
+      "resolved": "urn:visionflow:linked:specificity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[user experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Confusion Matrix]]",
+      "resolved": "urn:visionflow:owl:class:confusion-matrix",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[F1 Score]]",
+      "resolved": "urn:visionflow:owl:class:f1-score",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Precision]]",
+      "resolved": "urn:visionflow:owl:class:precision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Product Design]]",
+      "resolved": "urn:visionflow:owl:class:product-design",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recall]]",
+      "resolved": "urn:visionflow:owl:class:recall",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ROC Curve]]",
+      "resolved": "urn:visionflow:owl:class:roc-curve",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[training]]",
+      "resolved": "urn:visionflow:owl:class:training",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ad90933ecc79efb68a9fc0640d30a6d6ededecf5d8c9edc7295c116862291178@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate measure of overall model correctness but potentially obscuring performance disparities across classes, particularly in datasets with imbalanced class distributions or asymmetric misclassification costs.

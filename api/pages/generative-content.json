@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:0d25246ecb00c569d00d6d8a95d5c2830391d69f0582784af3ea9e30afdad844",
+  "title": "Generative Content",
+  "slug": "generative-content",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:generative-content",
+  "domain": "artificial-intelligence",
+  "definition": "Generative Content is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unique-content-variation",
+      "label": "Unique Content Variation"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:d821e7fd520a3580f6384c0e0d808ce5c0c6ce014adf6b9ce7c2c76d458fc563",
+  "title": "rb 0072 encoder",
+  "slug": "rb-0072-encoder",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0072-encoder",
+  "domain": "robotics",
+  "definition": "**Encoder** - Encoder in robotics systems",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

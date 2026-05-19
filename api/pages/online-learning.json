@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b7dde5659b14ed5eca1561af54fb08edbbb55fc9ea734934344c86da6e155120",
+  "title": "Online Learning",
+  "slug": "online-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:online-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Online Learning is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:real-time-learning",
+        "label": "Real-Time Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "real-time-learning",
+      "label": "Real-Time Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": []
+}

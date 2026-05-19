@@ -1,0 +1,203 @@
+{
+  "id": "urn:visionflow:page:690966d77ee33acad37ddf63e5f59e2bb7eb16a22fa96025ed2ad5d29766b508",
+  "title": "Human Factors",
+  "slug": "human-factors",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-factors",
+  "domain": "robotics",
+  "definition": "Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety. Effective human factors engineering is critical for successful [[Human-Robot Interaction]], [[Collaborative Robotics]], and safe deployment in human-centred environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "id": "urn:visionflow:linked:systems-engineering",
+      "label": "Systems Engineering"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cognitive-load-analysis",
+        "label": "Cognitive Load Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:ergonomics",
+        "label": "Ergonomics"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-assessment",
+        "label": "Safety Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-calibration",
+        "label": "Trust Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:interface-design",
+        "label": "Interface Design"
+      },
+      {
+        "id": "urn:visionflow:linked:task-analysis",
+        "label": "Task Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:efficient-collaboration",
+        "label": "Efficient Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:intuitive-control",
+        "label": "Intuitive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:operator-safety",
+        "label": "Operator Safety"
+      },
+      {
+        "id": "urn:visionflow:linked:user-acceptance",
+        "label": "User Acceptance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "biomechanics",
+      "label": "Biomechanics"
+    },
+    {
+      "slug": "cognitive-load-analysis",
+      "label": "Cognitive Load Analysis"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "collaborative-robotics",
+      "label": "Collaborative Robotics"
+    },
+    {
+      "slug": "efficient-collaboration",
+      "label": "Efficient Collaboration"
+    },
+    {
+      "slug": "ergonomics",
+      "label": "Ergonomics"
+    },
+    {
+      "slug": "human-robot-teamwork",
+      "label": "Human-Robot Teamwork"
+    },
+    {
+      "slug": "interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "slug": "interface-design",
+      "label": "Interface Design"
+    },
+    {
+      "slug": "intuitive-control",
+      "label": "Intuitive Control"
+    },
+    {
+      "slug": "moral-agency",
+      "label": "Moral Agency"
+    },
+    {
+      "slug": "operator-safety",
+      "label": "Operator Safety"
+    },
+    {
+      "slug": "psychology",
+      "label": "Psychology"
+    },
+    {
+      "slug": "safety-assessment",
+      "label": "Safety Assessment"
+    },
+    {
+      "slug": "systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "slug": "task-analysis",
+      "label": "Task Analysis"
+    },
+    {
+      "slug": "trust-calibration",
+      "label": "Trust Calibration"
+    },
+    {
+      "slug": "usability-testing",
+      "label": "Usability Testing"
+    },
+    {
+      "slug": "user-acceptance",
+      "label": "User Acceptance"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "performance-metrics",
+      "label": "Performance Metrics"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "user-research",
+      "label": "User Research"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

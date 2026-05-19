@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:e3a2b90b61d19ae2459ec105c31fae4dc28e7baac2f011077629306da3f8092e",
+  "title": "Pathology AI",
+  "slug": "pathology-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pathology-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "radiology-ai",
+      "label": "Radiology AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "radiology-ai",
+      "label": "Radiology AI"
+    }
+  ]
+}

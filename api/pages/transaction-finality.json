@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:57741e66a6801c61652d68fcc0d990c4dfa0eb4fe46c1b298ad3d0c00633baf5",
+  "title": "Transaction Finality",
+  "slug": "transaction-finality",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transaction-finality",
+  "domain": "blockchain",
+  "definition": "The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants. Finality types include probabilistic (increasing confidence with confirmations), deterministic (explicit protocol guarantee), and economic (cost to revert exceeds benefit).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "settlement",
+      "label": "Settlement"
+    },
+    {
+      "slug": "transaction-confirmation-time",
+      "label": "Transaction Confirmation Time"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "transaction-confirmation",
+      "label": "Transaction Confirmation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    }
+  ]
+}

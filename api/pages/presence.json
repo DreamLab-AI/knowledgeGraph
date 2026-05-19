@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:78a3525a34bc522ad9b8a9a09d0b98538fbf4240ea0975dbc8cd0125d7c78984",
+  "title": "Presence",
+  "slug": "presence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:presence",
+  "domain": "spatial-computing",
+  "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:immersive-experience",
+      "label": "Immersive Experience"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:self-presence",
+        "label": "Self Presence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-presence",
+        "label": "Spatial Presence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:haptic-device",
+        "label": "Haptic Device"
+      },
+      {
+        "id": "urn:visionflow:linked:sensory-feedback",
+        "label": "Sensory Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-display",
+        "label": "Visual Display"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:embodiment",
+        "label": "Embodiment"
+      },
+      {
+        "id": "urn:visionflow:linked:engagement",
+        "label": "Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:social-connection",
+        "label": "Social Connection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm",
+      "label": "ACM"
+    },
+    {
+      "slug": "embodiment",
+      "label": "Embodiment"
+    },
+    {
+      "slug": "engagement",
+      "label": "Engagement"
+    },
+    {
+      "slug": "field-of-view",
+      "label": "Field of View"
+    },
+    {
+      "slug": "frame-rate",
+      "label": "Frame Rate"
+    },
+    {
+      "slug": "haptic-device",
+      "label": "Haptic Device"
+    },
+    {
+      "slug": "sensory-feedback",
+      "label": "Sensory Feedback"
+    },
+    {
+      "slug": "social-connection",
+      "label": "Social Connection"
+    },
+    {
+      "slug": "visual-display",
+      "label": "Visual Display"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "self-presence",
+      "label": "Self Presence"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    },
+    {
+      "slug": "spatial-presence",
+      "label": "Spatial Presence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "human-interface-layer-hil",
+      "label": "Human Interface Layer (HIL)"
+    },
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    },
+    {
+      "slug": "self-presence",
+      "label": "Self Presence"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:89b6019e2ede8cbcbffe81d201c413202957c428bd34936c868609280c417ff9",
+  "title": "Real-Time Language Translation",
+  "slug": "real-time-language-translation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-language-translation",
+  "domain": "distributed-collaboration",
+  "definition": "\"The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machine translation, speech recognition, and text-to-speech synthesis.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:neural-machine-translation",
+        "label": "NeuralMachineTranslation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-lingual-collaboration",
+        "label": "CrossLingualCollaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-lingual-collaboration",
+      "label": "CrossLingualCollaboration"
+    },
+    {
+      "slug": "neural-machine-translation",
+      "label": "NeuralMachineTranslation"
+    },
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-106-speech-to-speech-translation",
+      "label": "TELE-106-speech-to-speech-translation"
+    },
+    {
+      "slug": "tele-107-ai-meeting-assistants",
+      "label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "NaturalLanguageProcessing"
+    }
+  ],
+  "backlinks": []
+}

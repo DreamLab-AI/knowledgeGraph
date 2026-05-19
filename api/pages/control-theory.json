@@ -1,0 +1,716 @@
+{
+  "id": "urn:visionflow:page:318d06d6b320b03c6a8e3f000762d1485009f464f2b7d8d58055bc35ab6643a5",
+  "title": "Control Theory",
+  "slug": "control-theory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:control-theory",
+  "domain": "robotics",
+  "definition": "Control Theory is the interdisciplinary mathematical framework for analysing and synthesising dynamical systems that automatically regulate themselves toward desired behaviour in the presence of disturbances, model uncertainty, sensor noise, and parameter variation, formalising the closed-loop feedback principle in which a controller observes system outputs y(t), compares them against a reference r(t) generating an error signal e(t)=r(t)\u2212y(t), and computes an input u(t) driving the plant toward its setpoint, originating in James Clerk Maxwell's 1868 analysis \"On Governors\" of Watt's centrifugal governor establishing the first stability criterion, formalised through Edward Routh (1877) and Adolf Hurwitz (1895) algebraic stability tests, Harry Nyquist's 1932 frequency-domain stability criterion at Bell Labs, Hendrik Bode's 1945 Network Analysis and Feedback Amplifier Design introducing gain-phase relations and the Bode plot, Walter Evans's 1948 root-locus method, and the postwar synthesis of classical control around the PID (proportional-integral-derivative) controller (proportional term K_p\u00b7e(t), integral term K_i\u00b7\u222be(\u03c4)d\u03c4 removing steady-state error, derivative term K_d\u00b7de/dt provid",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "id": "urn:visionflow:linked:control-engineering",
+      "label": "Control Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "id": "urn:visionflow:linked:dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "id": "urn:visionflow:linked:systems-engineering",
+      "label": "Systems Engineering"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:disturbance-model",
+        "label": "Disturbance Model"
+      },
+      {
+        "id": "urn:visionflow:linked:feedback-loops",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:visionflow:linked:plant-model",
+        "label": "Plant Model"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-signal",
+        "label": "Reference Signal"
+      },
+      {
+        "id": "urn:visionflow:linked:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:visionflow:linked:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:visionflow:linked:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-computation",
+        "label": "Real-Time Computation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:closed-loop-operation",
+        "label": "Closed-Loop Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:flight-stability",
+        "label": "Flight Stability"
+      },
+      {
+        "id": "urn:visionflow:linked:process-regulation",
+        "label": "Process Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:robust-performance",
+        "label": "Robust Performance"
+      },
+      {
+        "id": "urn:visionflow:linked:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:backstepping",
+        "label": "Backstepping"
+      },
+      {
+        "id": "urn:visionflow:linked:h-control",
+        "label": "H\u221e Control"
+      },
+      {
+        "id": "urn:visionflow:linked:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:visionflow:linked:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:visionflow:linked:sliding-mode-control",
+        "label": "Sliding Mode Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "aerospace-engineering",
+      "label": "Aerospace Engineering"
+    },
+    {
+      "slug": "ai-without-dynamics-models",
+      "label": "AI Without Dynamics Models"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "ames-2019-control-barrier-functions",
+      "label": "Ames 2019 Control Barrier Functions"
+    },
+    {
+      "slug": "anderson-moore-1989-optimal-control-lq-methods",
+      "label": "Anderson Moore 1989 Optimal Control LQ Methods"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "applied-mathematics-domain",
+      "label": "AppliedMathematicsDomain"
+    },
+    {
+      "slug": "arp4754-a",
+      "label": "ARP4754A"
+    },
+    {
+      "slug": "astrom-wittenmark-1995-adaptive-control",
+      "label": "Astrom Wittenmark 1995 Adaptive Control"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "backstepping",
+      "label": "Backstepping"
+    },
+    {
+      "slug": "bellman-1957-dynamic-programming",
+      "label": "Bellman 1957 Dynamic Programming"
+    },
+    {
+      "slug": "bertsekas-tsitsiklis-1996-neuro-dynamic-programming",
+      "label": "Bertsekas Tsitsiklis 1996 Neuro-Dynamic Programming"
+    },
+    {
+      "slug": "biomedical-engineering",
+      "label": "Biomedical Engineering"
+    },
+    {
+      "slug": "bode-1945-network-analysis-feedback-amplifier-design",
+      "label": "Bode 1945 Network Analysis Feedback Amplifier Design"
+    },
+    {
+      "slug": "bode-plot",
+      "label": "Bode Plot"
+    },
+    {
+      "slug": "classical-optimisation-without-feedback",
+      "label": "Classical Optimisation Without Feedback"
+    },
+    {
+      "slug": "closed-loop-operation",
+      "label": "Closed-Loop Operation"
+    },
+    {
+      "slug": "control-and-automation-domain",
+      "label": "ControlAndAutomationDomain"
+    },
+    {
+      "slug": "control-engineering",
+      "label": "Control Engineering"
+    },
+    {
+      "slug": "controller",
+      "label": "Controller"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "cost-function",
+      "label": "Cost Function"
+    },
+    {
+      "slug": "cutler-ramaker-1979-dynamic-matrix-control",
+      "label": "Cutler Ramaker 1979 Dynamic Matrix Control"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "CyberPhysicalSystemsDomain"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "deisenroth-rasmussen-2011-pilco",
+      "label": "Deisenroth Rasmussen 2011 PILCO"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "disturbance-model",
+      "label": "Disturbance Model"
+    },
+    {
+      "slug": "do-178-c-avionics",
+      "label": "DO-178C Avionics"
+    },
+    {
+      "slug": "doyle-1982-structured-singular-value",
+      "label": "Doyle 1982 Structured Singular Value"
+    },
+    {
+      "slug": "doyle-glover-khargonekar-francis-1989-dgkf-h-infinity",
+      "label": "Doyle Glover Khargonekar Francis 1989 DGKF H-infinity"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "embedded-systems-layer",
+      "label": "EmbeddedSystemsLayer"
+    },
+    {
+      "slug": "estimation-theory",
+      "label": "Estimation Theory"
+    },
+    {
+      "slug": "evans-1948-graphical-analysis-root-locus",
+      "label": "Evans 1948 Graphical Analysis Root Locus"
+    },
+    {
+      "slug": "feedback-loops",
+      "label": "Feedback Loops"
+    },
+    {
+      "slug": "flight-stability",
+      "label": "Flight Stability"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "h-control",
+      "label": "H\u221e Control"
+    },
+    {
+      "slug": "haarnoja-2018-soft-actor-critic",
+      "label": "Haarnoja 2018 Soft Actor Critic"
+    },
+    {
+      "slug": "hafner-2023-dreamer-v3",
+      "label": "Hafner 2023 DreamerV3"
+    },
+    {
+      "slug": "hamilton-jacobi-bellman-equation",
+      "label": "Hamilton-Jacobi-Bellman Equation"
+    },
+    {
+      "slug": "hewing-2020-learning-based-mpc-annual-review",
+      "label": "Hewing 2020 Learning Based MPC Annual Review"
+    },
+    {
+      "slug": "horowitz-1963-qft",
+      "label": "Horowitz 1963 QFT"
+    },
+    {
+      "slug": "hurwitz-1895-conditions-for-negative-real-parts",
+      "label": "Hurwitz 1895 Conditions for Negative Real Parts"
+    },
+    {
+      "slug": "hvac-systems",
+      "label": "HVAC Systems"
+    },
+    {
+      "slug": "iec-61131-3",
+      "label": "IEC 61131-3"
+    },
+    {
+      "slug": "iec-61508-functional-safety",
+      "label": "IEC 61508 Functional Safety"
+    },
+    {
+      "slug": "ieee-control-systems-society",
+      "label": "IEEE Control Systems Society"
+    },
+    {
+      "slug": "ifac",
+      "label": "IFAC"
+    },
+    {
+      "slug": "isa-95",
+      "label": "ISA-95"
+    },
+    {
+      "slug": "isidori-1995-nonlinear-control-systems",
+      "label": "Isidori 1995 Nonlinear Control Systems"
+    },
+    {
+      "slug": "kalman-1960-general-theory-of-control-systems",
+      "label": "Kalman 1960 General Theory of Control Systems"
+    },
+    {
+      "slug": "kalman-1960-linear-filtering-prediction",
+      "label": "Kalman 1960 Linear Filtering Prediction"
+    },
+    {
+      "slug": "khalil-2014-nonlinear-systems",
+      "label": "Khalil 2014 Nonlinear Systems"
+    },
+    {
+      "slug": "krstic-kanellakopoulos-kokotovic-1995-backstepping",
+      "label": "Krstic Kanellakopoulos Kokotovic 1995 Backstepping"
+    },
+    {
+      "slug": "laplace-transform",
+      "label": "Laplace Transform"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "linear-quadratic-regulator",
+      "label": "Linear Quadratic Regulator"
+    },
+    {
+      "slug": "lyapunov-function",
+      "label": "Lyapunov Function"
+    },
+    {
+      "slug": "lyapunov-stability-theory",
+      "label": "Lyapunov Stability Theory"
+    },
+    {
+      "slug": "maciejowski-2002-predictive-control-with-constraints",
+      "label": "Maciejowski 2002 Predictive Control with Constraints"
+    },
+    {
+      "slug": "maxwell-1868-on-governors",
+      "label": "Maxwell 1868 On Governors"
+    },
+    {
+      "slug": "mayne-rawlings-rao-scokaert-2000-constrained-mpc",
+      "label": "Mayne Rawlings Rao Scokaert 2000 Constrained MPC"
+    },
+    {
+      "slug": "mayne-seron-rakovic-2005-tube-mpc",
+      "label": "Mayne Seron Rakovic 2005 Tube MPC"
+    },
+    {
+      "slug": "model-free-heuristic-tuning",
+      "label": "Model-Free Heuristic Tuning"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "nyquist-1932-regeneration-theory",
+      "label": "Nyquist 1932 Regeneration Theory"
+    },
+    {
+      "slug": "nyquist-diagram",
+      "label": "Nyquist Diagram"
+    },
+    {
+      "slug": "open-loop-scheduling",
+      "label": "Open-Loop Scheduling"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "pid-control",
+      "label": "PID Control"
+    },
+    {
+      "slug": "plant-model",
+      "label": "Plant Model"
+    },
+    {
+      "slug": "pontryagin-1962-mathematical-theory-of-optimal-processes",
+      "label": "Pontryagin 1962 Mathematical Theory of Optimal Processes"
+    },
+    {
+      "slug": "power-systems",
+      "label": "Power Systems"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "process-industries",
+      "label": "Process Industries"
+    },
+    {
+      "slug": "process-regulation",
+      "label": "Process Regulation"
+    },
+    {
+      "slug": "qin-badgwell-2003-industrial-mpc-survey",
+      "label": "Qin Badgwell 2003 Industrial MPC Survey"
+    },
+    {
+      "slug": "rawlings-mayne-diehl-2017-mpc-textbook",
+      "label": "Rawlings Mayne Diehl 2017 MPC Textbook"
+    },
+    {
+      "slug": "real-time-computation",
+      "label": "Real-Time Computation"
+    },
+    {
+      "slug": "reference-signal",
+      "label": "Reference Signal"
+    },
+    {
+      "slug": "riccati-equation",
+      "label": "Riccati Equation"
+    },
+    {
+      "slug": "robust-performance",
+      "label": "Robust Performance"
+    },
+    {
+      "slug": "root-locus",
+      "label": "Root Locus"
+    },
+    {
+      "slug": "routh-1877-treatise-on-stability",
+      "label": "Routh 1877 Treatise on Stability"
+    },
+    {
+      "slug": "sliding-mode-control",
+      "label": "Sliding Mode Control"
+    },
+    {
+      "slug": "stability-analysis",
+      "label": "Stability Analysis"
+    },
+    {
+      "slug": "state-space-model",
+      "label": "State-Space Model"
+    },
+    {
+      "slug": "state-space-representation",
+      "label": "State-Space Representation"
+    },
+    {
+      "slug": "sutton-barto-2018-reinforcement-learning",
+      "label": "Sutton Barto 2018 Reinforcement Learning"
+    },
+    {
+      "slug": "system-identification",
+      "label": "System Identification"
+    },
+    {
+      "slug": "systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "slug": "trajectory-tracking",
+      "label": "Trajectory Tracking"
+    },
+    {
+      "slug": "transfer-function",
+      "label": "Transfer Function"
+    },
+    {
+      "slug": "utkin-1977-sliding-mode",
+      "label": "Utkin 1977 Sliding Mode"
+    },
+    {
+      "slug": "wiener-1948-cybernetics",
+      "label": "Wiener 1948 Cybernetics"
+    },
+    {
+      "slug": "z-transform",
+      "label": "Z-Transform"
+    },
+    {
+      "slug": "zames-1981-feedback-optimal-sensitivity",
+      "label": "Zames 1981 Feedback Optimal Sensitivity"
+    },
+    {
+      "slug": "ziegler-nichols-1942-optimum-controller-settings",
+      "label": "Ziegler Nichols 1942 Optimum Controller Settings"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open-Loop Control"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

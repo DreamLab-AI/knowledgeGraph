@@ -1,21 +1,231 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AlgorithmicBias
-uri:: urn:visionclaw:concept:artificial-intelligence:algorithmic-bias
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:algorithmic-bias
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Algorithmic Bias
-content-hash:: sha256-12-8c5086d6a493
-legacy-term-id:: AI-0378
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AlgorithmicBias
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:algorithmic-bias
 public:: true
+
+# Algorithmic Bias
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871",
+  "@type": "Page",
+  "vc:slug": "algorithmic-bias",
+  "title": "Algorithmic Bias",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ieee-p7003-2021",
+      "vc:label": "IEEE P7003-2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-tr-24027",
+      "vc:label": "ISO/IEC TR 24027"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-sp-1270",
+      "vc:label": "NIST SP 1270"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8c5086d6a493"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AlgorithmicBias"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0378"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Algorithmic Bias"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:algorithmic-bias"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:algorithmic-bias"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:algorithmic-bias",
+  "@type": "OntologyClass",
+  "label": "Algorithmic Bias",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Algorithmic Bias refers to systematic and repeatable errors in AI systems that create unfair outcomes favoring or discriminating against particular groups or individuals. This bias manifests through multiple pathways including historical bias (reflecting past societal inequalities in training data), representation bias (unrepresentative or incomplete data samples), measurement bias (flawed proxy variables), aggregation bias (combining heterogeneous groups inappropriately), and feedback loops (where system outputs influence future inputs, amplifying initial biases). Algorithmic bias affects protected groups based on attributes such as race, gender, age, disability, or socioeconomic status, potentially resulting in discriminatory decisions in critical domains like hiring, lending, criminal justice, and healthcare. Detection requires statistical analysis, fairness auditing, and counterfactual testing, while mitigation involves pre-processing data corrections, in-processing fairness constraints, and post-processing prediction adjustments. The severity and legal implications of algorithmic bias are governed by anti-discrimination frameworks including the EU Anti-Discrimination Directive",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:algorithmic-bias:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[IEEE P7003-2021]]",
+      "resolved": "urn:visionflow:linked:ieee-p7003-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC TR 24027]]",
+      "resolved": "urn:visionflow:linked:iso-iec-tr-24027",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST SP 1270]]",
+      "resolved": "urn:visionflow:linked:nist-sp-1270",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Algorithmic Bias refers to systematic and repeatable errors in AI systems that create unfair outcomes favoring or discriminating against particular groups or individuals. This bias manifests through multiple pathways including historical bias (reflecting past societal inequalities in training data), representation bias (unrepresentative or incomplete data samples), measurement bias (flawed proxy variables), aggregation bias (combining heterogeneous groups inappropriately), and feedback loops (where system outputs influence future inputs, amplifying initial biases). Algorithmic bias affects protected groups based on attributes such as race, gender, age, disability, or socioeconomic status, potentially resulting in discriminatory decisions in critical domains like hiring, lending, criminal justice, and healthcare. Detection requires statistical analysis, fairness auditing, and counterfactual testing, while mitigation involves pre-processing data corrections, in-processing fairness constraints, and post-processing prediction adjustments. The severity and legal implications of algorithmic bias are governed by anti-discrimination frameworks including the EU Anti-Discrimination Directives, UK Equality Act 2010, and US civil rights legislation.

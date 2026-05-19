@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc",
+  "title": "Gaze Control",
+  "slug": "gaze-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gaze-control",
+  "domain": "robotics",
+  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]]. Gaze serves both functional roles\u2014directing perception toward task-relevant features\u2014and social functions\u2014signalling attentiveness and promoting human comprehension of robot behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:attention-control",
+      "label": "Attention Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:eye-movement-controller",
+        "label": "Eye Movement Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:gaze-target-estimator",
+        "label": "Gaze Target Estimator"
+      },
+      {
+        "id": "urn:visionflow:linked:head-movement-mechanism",
+        "label": "Head Movement Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-attention-model",
+        "label": "Visual Attention Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-actuators",
+        "label": "Camera Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:social-understanding",
+        "label": "Social Understanding"
+      },
+      {
+        "id": "urn:visionflow:linked:target-tracking",
+        "label": "Target Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-perception",
+        "label": "Visual Perception"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:attention-redirection",
+        "label": "Attention Redirection"
+      },
+      {
+        "id": "urn:visionflow:linked:joint-attention",
+        "label": "Joint Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:social-signal-transmission",
+        "label": "Social Signal Transmission"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "attention-control",
+      "label": "Attention Control"
+    },
+    {
+      "slug": "attention-redirection",
+      "label": "Attention Redirection"
+    },
+    {
+      "slug": "camera-actuators",
+      "label": "Camera Actuators"
+    },
+    {
+      "slug": "eye-movement-controller",
+      "label": "Eye Movement Controller"
+    },
+    {
+      "slug": "gaze-target-estimator",
+      "label": "Gaze Target Estimator"
+    },
+    {
+      "slug": "head-movement-mechanism",
+      "label": "Head Movement Mechanism"
+    },
+    {
+      "slug": "hri",
+      "label": "HRI"
+    },
+    {
+      "slug": "joint-attention",
+      "label": "Joint Attention"
+    },
+    {
+      "slug": "kinematics-computation",
+      "label": "Kinematics Computation"
+    },
+    {
+      "slug": "natural-interaction",
+      "label": "Natural Interaction"
+    },
+    {
+      "slug": "pan-tilt-unit",
+      "label": "Pan-Tilt Unit"
+    },
+    {
+      "slug": "servo-motors",
+      "label": "Servo Motors"
+    },
+    {
+      "slug": "social-signal-transmission",
+      "label": "Social Signal Transmission"
+    },
+    {
+      "slug": "social-understanding",
+      "label": "Social Understanding"
+    },
+    {
+      "slug": "target-detection",
+      "label": "Target Detection"
+    },
+    {
+      "slug": "target-tracking",
+      "label": "Target Tracking"
+    },
+    {
+      "slug": "visual-attention-model",
+      "label": "Visual Attention Model"
+    },
+    {
+      "slug": "visual-perception",
+      "label": "Visual Perception"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    }
+  ]
+}

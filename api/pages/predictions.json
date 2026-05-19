@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:ff7d77d095e18002d5b1f96339f1d4f84078188e736b5448490fc0b2d62c3d37",
+  "title": "Predictions",
+  "slug": "predictions",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:predictions",
+  "domain": "infrastructure",
+  "definition": "Predictions is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

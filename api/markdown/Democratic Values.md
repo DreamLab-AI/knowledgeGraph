@@ -1,24 +1,246 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DemocraticValues
-uri:: urn:visionclaw:concept:spatial-computing:democratic-values
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:democratic-values
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Democratic Values
-content-hash:: sha256-12-c199fc07b0a4
-legacy-term-id:: AI-0167
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DemocraticValues
+legacy_uri:: urn:visionclaw:concept:spatial-computing:democratic-values
 public:: true
+
+# Democratic Values
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643",
+  "@type": "Page",
+  "vc:slug": "democratic-values",
+  "title": "Democratic Values",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:council-of-europe",
+      "vc:label": "Council of Europe"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles-2024",
+      "vc:label": "OECD AI Principles 2024"
+    },
+    {
+      "@id": "urn:visionflow:linked:unesco",
+      "vc:label": "UNESCO"
+    },
+    {
+      "@id": "urn:visionflow:linked:venice-commission",
+      "vc:label": "Venice Commission"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c199fc07b0a4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DemocraticValues"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0167"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Democratic Values"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:democratic-values"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:democratic-values"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:democratic-values",
+  "@type": "OntologyClass",
+  "label": "Democratic Values",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:policy-enforcement",
+      "vc:label": "Policy Enforcement"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine. bridges-to:: [[Telecollaboration]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:democratic-values:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Council of Europe]]",
+      "resolved": "urn:visionflow:linked:council-of-europe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD AI Principles 2024]]",
+      "resolved": "urn:visionflow:linked:oecd-ai-principles-2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UNESCO]]",
+      "resolved": "urn:visionflow:linked:unesco",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Venice Commission]]",
+      "resolved": "urn:visionflow:linked:venice-commission",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.

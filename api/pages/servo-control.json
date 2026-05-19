@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:d2a6951bbc82ff91b4b898877b89fa273feb28a0884c7eb25b02d50199b19e4f",
+  "title": "Servo Control",
+  "slug": "servo-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:servo-control",
+  "domain": "robotics",
+  "definition": "Servo Control is a concept within the robotics domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open-Loop Control"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

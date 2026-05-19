@@ -1,21 +1,360 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ModelPerformance
-uri:: urn:visionclaw:concept:artificial-intelligence:model-performance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:model-performance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Model Performance
-content-hash:: sha256-12-3021a8109459
-legacy-term-id:: AI-0106
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ModelPerformance
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:model-performance
 public:: true
+
+# Model Performance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3c022472ea8c6df887e0ed7e03db24243029b641e100d133a6cf10dbaa9fcbdc",
+  "@type": "Page",
+  "vc:slug": "model-performance",
+  "title": "Model Performance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bitnet-and-the-rise-of-the-1bit-model",
+      "vc:label": "Bitnet and the rise of the 1bit model"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-drift",
+      "vc:label": "Data Drift"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source",
+      "vc:label": "open source"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "user experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accuracy",
+      "vc:label": "Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-monitoring",
+      "vc:label": "AI Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:confusion-matrix",
+      "vc:label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:f1-score",
+      "vc:label": "F1 Score"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:flux-1",
+      "vc:label": "Flux.1"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-and-edge",
+      "vc:label": "Hardware and Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:medical-ai",
+      "vc:label": "Medical AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:precision",
+      "vc:label": "Precision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recall",
+      "vc:label": "Recall"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:roc-curve",
+      "vc:label": "ROC Curve"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "training"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3021a8109459"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ModelPerformance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0106"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Model Performance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-performance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-performance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c022472ea8c6df887e0ed7e03db24243029b641e100d133a6cf10dbaa9fcbdc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:model-performance",
+  "@type": "OntologyClass",
+  "label": "Model Performance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3c022472ea8c6df887e0ed7e03db24243029b641e100d133a6cf10dbaa9fcbdc"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c022472ea8c6df887e0ed7e03db24243029b641e100d133a6cf10dbaa9fcbdc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:model-performance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3c022472ea8c6df887e0ed7e03db24243029b641e100d133a6cf10dbaa9fcbdc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Bitnet and the rise of the 1bit model]]",
+      "resolved": "urn:visionflow:linked:bitnet-and-the-rise-of-the-1bit-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Drift]]",
+      "resolved": "urn:visionflow:linked:data-drift",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Evaluation]]",
+      "resolved": "urn:visionflow:linked:model-evaluation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[open source]]",
+      "resolved": "urn:visionflow:linked:open-source",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[user experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accuracy]]",
+      "resolved": "urn:visionflow:owl:class:accuracy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Monitoring]]",
+      "resolved": "urn:visionflow:owl:class:ai-monitoring",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[artificial intelligence|AI]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Confusion Matrix]]",
+      "resolved": "urn:visionflow:owl:class:confusion-matrix",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[F1 Score]]",
+      "resolved": "urn:visionflow:owl:class:f1-score",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Flux.1]]",
+      "resolved": "urn:visionflow:owl:class:flux-1",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hardware and Edge]]",
+      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Medical AI]]",
+      "resolved": "urn:visionflow:owl:class:medical-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Precision]]",
+      "resolved": "urn:visionflow:owl:class:precision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recall]]",
+      "resolved": "urn:visionflow:owl:class:recall",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ROC Curve]]",
+      "resolved": "urn:visionflow:owl:class:roc-curve",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[training]]",
+      "resolved": "urn:visionflow:owl:class:training",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c022472ea8c6df887e0ed7e03db24243029b641e100d133a6cf10dbaa9fcbdc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.
@@ -85,7 +424,7 @@ public:: true
 
   - # ComfyUI's Innovative Flux Inpainting
   - [This web link has been automatically summarised](https://openart.ai/workflows/cgtips/comfyui---flux-inpainting-technique/cto0IyTgL6FpwGD6qbaA)
-  - ComfyUI introduces the [[Flux]] , an advanced [[artificial intelligence|AI]] image generation model available in three variants:
+  - ComfyUI introduces the [[Flux.1]] , an advanced [[artificial intelligence|AI]] image generation model available in three variants:
 		- FLUX.1 [pro] for superior performance;
 		- FLUX.1 [dev] for efficient non-commercial applications;
 		- FLUX.1 [schnell] for rapid local development.
@@ -244,7 +583,7 @@ public:: true
 
   - # ComfyUI's Innovative Flux Inpainting
   - [This web link has been automatically summarised](https://openart.ai/workflows/cgtips/comfyui---flux-inpainting-technique/cto0IyTgL6FpwGD6qbaA)
-  - ComfyUI introduces the [[Flux]] , an advanced [[artificial intelligence|AI]] image generation model available in three variants:
+  - ComfyUI introduces the [[Flux.1]] , an advanced [[artificial intelligence|AI]] image generation model available in three variants:
 		- FLUX.1 [pro] for superior performance;
 		- FLUX.1 [dev] for efficient non-commercial applications;
 		- FLUX.1 [schnell] for rapid local development.

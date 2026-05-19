@@ -1,21 +1,219 @@
-iri:: http://narrativegoldmine.com/metaverse#Chatbot
-uri:: urn:visionclaw:concept:artificial-intelligence:chatbot
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:chatbot
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Chatbot
-content-hash:: sha256-12-3ab9ea6653ef
-legacy-term-id:: AI-0373
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Chatbot
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:chatbot
 public:: true
+
+# Chatbot
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:90248e1112757b7a22550b2f354b9f3d52f07ef2304b99229be003293f530073",
+  "@type": "Page",
+  "vc:slug": "chatbot",
+  "title": "Chatbot",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:virtual-assistant",
+      "vc:label": "Virtual Assistant"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dialogue-system",
+      "vc:label": "Dialogue System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3ab9ea6653ef"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Chatbot"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0373"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Chatbot"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:chatbot"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:chatbot"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:90248e1112757b7a22550b2f354b9f3d52f07ef2304b99229be003293f530073@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:chatbot",
+  "@type": "OntologyClass",
+  "label": "Chatbot",
+  "urn:visionflow:owl:class:dialogue-system","Dialogue System"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:90248e1112757b7a22550b2f354b9f3d52f07ef2304b99229be003293f530073"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:90248e1112757b7a22550b2f354b9f3d52f07ef2304b99229be003293f530073@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Chatbot is a software application that simulates human conversation through text or voice interactions, automating customer service, information retrieval, and task completion through natural language dialogue. Chatbots range from rule-based systems to sophisticated AI-powered conversational agents employing large language models, intent classification, and dialogue management to provide responsive, context-aware interactions across messaging platforms, websites, and voice interfaces.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:chatbot:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:90248e1112757b7a22550b2f354b9f3d52f07ef2304b99229be003293f530073"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Virtual Assistant]]",
+      "resolved": "urn:visionflow:linked:virtual-assistant",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dialogue System]]",
+      "resolved": "urn:visionflow:owl:class:dialogue-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:90248e1112757b7a22550b2f354b9f3d52f07ef2304b99229be003293f530073@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Chatbot is a software application that simulates human conversation through text or voice interactions, automating customer service, information retrieval, and task completion through natural language dialogue. Chatbots range from rule-based systems to sophisticated AI-powered conversational agents employing large language models, intent classification, and dialogue management to provide responsive, context-aware interactions across messaging platforms, websites, and voice interfaces.

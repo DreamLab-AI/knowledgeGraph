@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:0530bb4860c09a4b3adabc00c11b9616696130ef7e5c92263ddd8993f352076b",
+  "title": "Compliance Audit Trail",
+  "slug": "compliance-audit-trail",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compliance-audit-trail",
+  "domain": "artificial-intelligence",
+  "definition": "Immutable record system demonstrating adherence to policies and regulations through cryptographically sealed logs of compliance verification activities and evidence.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:compliance-event-log",
+        "label": "Compliance Event Log"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-document",
+        "label": "Policy Document"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-evidence",
+        "label": "Regulatory Evidence"
+      },
+      {
+        "id": "urn:visionflow:linked:verification-record",
+        "label": "Verification Record"
+      },
+      {
+        "id": "urn:visionflow:owl:class:timestamp",
+        "label": "Timestamp"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:immutable-storage",
+        "label": "Immutable Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-automation",
+      "label": "Audit Automation"
+    },
+    {
+      "slug": "compliance-event-log",
+      "label": "Compliance Event Log"
+    },
+    {
+      "slug": "compliance-management-system",
+      "label": "Compliance Management System"
+    },
+    {
+      "slug": "immutable-storage",
+      "label": "Immutable Storage"
+    },
+    {
+      "slug": "iso-37301",
+      "label": "ISO 37301"
+    },
+    {
+      "slug": "policy-document",
+      "label": "Policy Document"
+    },
+    {
+      "slug": "regulatory-evidence",
+      "label": "Regulatory Evidence"
+    },
+    {
+      "slug": "verification-record",
+      "label": "Verification Record"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "timestamp",
+      "label": "Timestamp"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "id": "urn:visionflow:page:6827b2f088798ff2cca8e2955b3fce9cd9f8e16f49c8ec12779760d57998d9eb",
+  "title": "ecash",
+  "slug": "ecash",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ecash",
+  "domain": "blockchain",
+  "definition": "ecash is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-coordination",
+      "label": "Agent Coordination"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "anonymity-protocols",
+      "label": "Anonymity Protocols"
+    },
+    {
+      "slug": "anonymous-transactions",
+      "label": "Anonymous Transactions"
+    },
+    {
+      "slug": "ark-protocol",
+      "label": "Ark Protocol"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "bitcoin-privacy",
+      "label": "Bitcoin Privacy"
+    },
+    {
+      "slug": "blind-signatures",
+      "label": "Blind Signatures"
+    },
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "byzantine-tolerance",
+      "label": "Byzantine Tolerance"
+    },
+    {
+      "slug": "chaumian-mint",
+      "label": "Chaumian Mint"
+    },
+    {
+      "slug": "coin-join",
+      "label": "CoinJoin"
+    },
+    {
+      "slug": "confidential-transactions",
+      "label": "Confidential Transactions"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
+    },
+    {
+      "slug": "decentralized-commerce",
+      "label": "Decentralized Commerce"
+    },
+    {
+      "slug": "digital-cash",
+      "label": "Digital Cash"
+    },
+    {
+      "slug": "economic-networks",
+      "label": "Economic Networks"
+    },
+    {
+      "slug": "fedimint",
+      "label": "Fedimint"
+    },
+    {
+      "slug": "financial-privacy",
+      "label": "Financial Privacy"
+    },
+    {
+      "slug": "hash-functions",
+      "label": "Hash Functions"
+    },
+    {
+      "slug": "l402",
+      "label": "L402"
+    },
+    {
+      "slug": "layer-2-solutions",
+      "label": "Layer 2 Solutions"
+    },
+    {
+      "slug": "micropayment-systems",
+      "label": "Micropayment Systems"
+    },
+    {
+      "slug": "mimblewimble",
+      "label": "Mimblewimble"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
+      "slug": "payment-privacy",
+      "label": "Payment Privacy"
+    },
+    {
+      "slug": "privacy-networks",
+      "label": "Privacy Networks"
+    },
+    {
+      "slug": "privacy-preserving-ai",
+      "label": "Privacy-Preserving AI"
+    },
+    {
+      "slug": "privacy-tech",
+      "label": "Privacy Tech"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    },
+    {
+      "slug": "rsa-cryptography",
+      "label": "RSA Cryptography"
+    },
+    {
+      "slug": "scalability-solutions",
+      "label": "Scalability Solutions"
+    },
+    {
+      "slug": "service-markets",
+      "label": "Service Markets"
+    },
+    {
+      "slug": "sidechain-technology",
+      "label": "Sidechain Technology"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
+      "slug": "tor-network",
+      "label": "Tor Network"
+    },
+    {
+      "slug": "transaction-confidentiality",
+      "label": "Transaction Confidentiality"
+    },
+    {
+      "slug": "transaction-privacy",
+      "label": "Transaction Privacy"
+    },
+    {
+      "slug": "trustless-systems",
+      "label": "Trustless Systems"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    }
+  ]
+}

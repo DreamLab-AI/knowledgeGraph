@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:0cb5315b310687f698e30b71d169aec784c29046bc951345c1179aab62441cd9",
+  "title": "Algorithm",
+  "slug": "algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "Algorithm is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "pathfinding-algorithm",
+      "label": "Pathfinding Algorithm"
+    }
+  ]
+}

@@ -1,0 +1,664 @@
+{
+  "id": "urn:visionflow:page:9be65381017e2dc46472b27bbd6d86371a3af788e1bda626d340ed477ae33cb2",
+  "title": "Quadratic Voting",
+  "slug": "quadratic-voting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quadratic-voting",
+  "domain": "blockchain",
+  "definition": "Collective decision-making mechanism where the cost of casting n votes on any single proposal equals n\u00b2 voice credits, formalising preference-intensity revelation whilst resisting plutocratic capture \u2014 developed by Steven Lalley and E. Glen Weyl (2018 AEA Papers and Proceedings), extended into Quadratic Funding (QF) by Buterin, Hitzig and Weyl (2019 Liberal Radicalism / Management Science) where matching subsidies scale as (\u03a3\u221ac\u1d62)\u00b2 \u2212 \u03a3c\u1d62 to amplify projects with broad community support over concentrated large donations, achieving asymptotic convergence to utilitarian social welfare optimum in large populations (Lalley-Weyl 2018), 50-99% reduction in plutocratic distortion versus token-weighted voting, deployed in [[Gitcoin]] 20+ grant rounds distributing $60 M+ to Ethereum public goods (2019-2026), [[Optimism]] RPGF rounds 1-6 allocating $170 M+ (2021-2024), MACI (Minimal Anti-Collusion Infrastructure, PSE Team 2020-2024) providing ZK-SNARK-backed collusion resistance, the Colorado House Democratic Caucus 2019 pilot (107 legislators, 100 voice credits each), Decentraland DAO ($12 M 2023 grant allocation), Taiwan Presidential Hackathon (200K+ citizen participants), clr.fund on-chain ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "id": "urn:visionflow:linked:governance-protocol",
+      "label": "Governance Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "id": "urn:visionflow:linked:public-goods-funding",
+      "label": "Public Goods Funding"
+    },
+    {
+      "id": "urn:visionflow:linked:voting-theory",
+      "label": "Voting Theory"
+    },
+    {
+      "id": "urn:visionflow:linked:welfare-economics",
+      "label": "Welfare Economics"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "id": "urn:visionflow:linked:grant-round",
+        "label": "Grant Round"
+      },
+      {
+        "id": "urn:visionflow:linked:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "id": "urn:visionflow:linked:maci",
+        "label": "MACI"
+      },
+      {
+        "id": "urn:visionflow:linked:matching-pool",
+        "label": "Matching Pool"
+      },
+      {
+        "id": "urn:visionflow:linked:pairwise-qf",
+        "label": "Pairwise QF"
+      },
+      {
+        "id": "urn:visionflow:linked:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-credits",
+        "label": "Voice Credits"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:commit-reveal-scheme",
+        "label": "Commit-Reveal Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:merkle-proofs",
+        "label": "Merkle Proofs"
+      },
+      {
+        "id": "urn:visionflow:linked:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-credit-allocation",
+        "label": "Voice Credit Allocation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anti-plutocratic-governance",
+        "label": "Anti-Plutocratic Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:community-led-allocation",
+        "label": "Community-Led Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "id": "urn:visionflow:linked:preference-intensity-revelation",
+        "label": "Preference Intensity Revelation"
+      },
+      {
+        "id": "urn:visionflow:linked:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:welfare-optimisation",
+        "label": "Welfare Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:allo-protocol",
+        "label": "Allo Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:clr-fund-protocol",
+        "label": "clr.fund Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:visionflow:linked:lalley-weyl-qv-protocol",
+        "label": "Lalley-Weyl QV Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "id": "urn:visionflow:linked:maci-v2",
+        "label": "MACI v2"
+      },
+      {
+        "id": "urn:visionflow:linked:optimism-rpgf",
+        "label": "Optimism RPGF"
+      },
+      {
+        "id": "urn:visionflow:linked:pairwise-qf",
+        "label": "Pairwise QF"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "allo-protocol",
+      "label": "Allo Protocol"
+    },
+    {
+      "slug": "allo-protocol-v2-git-hub",
+      "label": "Allo Protocol v2 GitHub"
+    },
+    {
+      "slug": "anti-plutocratic-governance",
+      "label": "Anti-Plutocratic Governance"
+    },
+    {
+      "slug": "block-science-qf-risk-parameters-2022",
+      "label": "BlockScience QF Risk Parameters 2022"
+    },
+    {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
+    {
+      "slug": "buterin-2019-on-collusion",
+      "label": "Buterin 2019 On Collusion"
+    },
+    {
+      "slug": "buterin-2019-pairwise-qf-ethresear",
+      "label": "Buterin 2019 Pairwise QF Ethresear"
+    },
+    {
+      "slug": "buterin-hitzig-weyl-2019-liberal-radicalism-management-science",
+      "label": "Buterin-Hitzig-Weyl 2019 Liberal Radicalism Management Science"
+    },
+    {
+      "slug": "circom",
+      "label": "Circom"
+    },
+    {
+      "slug": "civic-technology",
+      "label": "Civic Technology"
+    },
+    {
+      "slug": "clr-fund-protocol",
+      "label": "clr.fund Protocol"
+    },
+    {
+      "slug": "clr-fund-protocol-v1-1",
+      "label": "clr.fund Protocol v1.1"
+    },
+    {
+      "slug": "commit-reveal-scheme",
+      "label": "Commit-Reveal Scheme"
+    },
+    {
+      "slug": "common-pool-resources",
+      "label": "Common Pool Resources"
+    },
+    {
+      "slug": "commons-stack-mechanism-comparison-2022",
+      "label": "Commons Stack Mechanism Comparison 2022"
+    },
+    {
+      "slug": "community-led-allocation",
+      "label": "Community-Led Allocation"
+    },
+    {
+      "slug": "de-fi-governance",
+      "label": "DeFi Governance"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "digital-democracy",
+      "label": "Digital Democracy"
+    },
+    {
+      "slug": "edinburgh-blt-epsrc-year-1-report-2024",
+      "label": "Edinburgh BLT EPSRC Year 1 Report 2024"
+    },
+    {
+      "slug": "ethereum-mainnet",
+      "label": "Ethereum Mainnet"
+    },
+    {
+      "slug": "ethereum-research-forum",
+      "label": "Ethereum Research Forum"
+    },
+    {
+      "slug": "futarchy",
+      "label": "Futarchy"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "gitcoin",
+      "label": "Gitcoin"
+    },
+    {
+      "slug": "gitcoin-grants",
+      "label": "Gitcoin Grants"
+    },
+    {
+      "slug": "gitcoin-grants-round-20-report-2024",
+      "label": "Gitcoin Grants Round 20 Report 2024"
+    },
+    {
+      "slug": "gitcoin-passport",
+      "label": "Gitcoin Passport"
+    },
+    {
+      "slug": "gitcoin-passport-v2-2025",
+      "label": "Gitcoin Passport v2 2025"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "governance-protocol",
+      "label": "Governance Protocol"
+    },
+    {
+      "slug": "grant-round",
+      "label": "Grant Round"
+    },
+    {
+      "slug": "groth16",
+      "label": "Groth16"
+    },
+    {
+      "slug": "harberger-tax",
+      "label": "Harberger Tax"
+    },
+    {
+      "slug": "hitzig-huang-weyl-2020-bribe-proof-protocol",
+      "label": "Hitzig Huang Weyl 2020 Bribe-Proof Protocol"
+    },
+    {
+      "slug": "incentive-compatibility",
+      "label": "Incentive Compatibility"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "koh-whitehat-2020-maci-v1-git-hub",
+      "label": "Koh Whitehat 2020 MACI v1 GitHub"
+    },
+    {
+      "slug": "lalley-weyl-2018-qv-aea-p-and-p",
+      "label": "Lalley-Weyl 2018 QV AEA P&P"
+    },
+    {
+      "slug": "lalley-weyl-2021-qv-finite-populations-ssrn",
+      "label": "Lalley-Weyl 2021 QV Finite Populations SSRN"
+    },
+    {
+      "slug": "lalley-weyl-qv-protocol",
+      "label": "Lalley-Weyl QV Protocol"
+    },
+    {
+      "slug": "liberal-radicalism",
+      "label": "Liberal Radicalism"
+    },
+    {
+      "slug": "maci",
+      "label": "MACI"
+    },
+    {
+      "slug": "maci-git-hub",
+      "label": "MACI GitHub"
+    },
+    {
+      "slug": "maci-v2",
+      "label": "MACI v2"
+    },
+    {
+      "slug": "matching-pool",
+      "label": "Matching Pool"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "MechanismDesignDomain"
+    },
+    {
+      "slug": "merkle-proofs",
+      "label": "Merkle Proofs"
+    },
+    {
+      "slug": "nesta-2024-northern-england-qf-report",
+      "label": "Nesta 2024 Northern England QF Report"
+    },
+    {
+      "slug": "one-person-one-vote",
+      "label": "One-Person-One-Vote"
+    },
+    {
+      "slug": "open-source-funding",
+      "label": "Open Source Funding"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "optimism-collective",
+      "label": "Optimism Collective"
+    },
+    {
+      "slug": "optimism-rpgf",
+      "label": "Optimism RPGF"
+    },
+    {
+      "slug": "optimism-rpgf-round-3-results",
+      "label": "Optimism RPGF Round 3 Results"
+    },
+    {
+      "slug": "optimism-rpgf-round-5-retrospective",
+      "label": "Optimism RPGF Round 5 Retrospective"
+    },
+    {
+      "slug": "optimism-season-5-citizens-house-reform",
+      "label": "Optimism Season 5 Citizens House Reform"
+    },
+    {
+      "slug": "pairwise-qf",
+      "label": "Pairwise QF"
+    },
+    {
+      "slug": "participatory-budgeting",
+      "label": "Participatory Budgeting"
+    },
+    {
+      "slug": "polygon-id",
+      "label": "Polygon ID"
+    },
+    {
+      "slug": "polygon-id-qf-integration-2024",
+      "label": "Polygon ID QF Integration 2024"
+    },
+    {
+      "slug": "preference-intensity-revelation",
+      "label": "Preference Intensity Revelation"
+    },
+    {
+      "slug": "privacy-and-scaling-explorations",
+      "label": "Privacy and Scaling Explorations"
+    },
+    {
+      "slug": "pse-2023-maci-v2-technical-spec",
+      "label": "PSE 2023 MACI v2 Technical Spec"
+    },
+    {
+      "slug": "public-economics-domain",
+      "label": "PublicEconomicsDomain"
+    },
+    {
+      "slug": "public-goods",
+      "label": "Public Goods"
+    },
+    {
+      "slug": "public-goods-funding",
+      "label": "Public Goods Funding"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "radical-markets",
+      "label": "Radical Markets"
+    },
+    {
+      "slug": "radicalx-change",
+      "label": "RadicalxChange"
+    },
+    {
+      "slug": "radicalx-change-colorado-pilot-2019",
+      "label": "RadicalxChange Colorado Pilot 2019"
+    },
+    {
+      "slug": "radicalx-change-foundation",
+      "label": "RadicalxChange Foundation"
+    },
+    {
+      "slug": "retroactive-public-goods-funding",
+      "label": "Retroactive Public Goods Funding"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "SmartContractLayer"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "token-weighted-voting",
+      "label": "Token-Weighted Voting"
+    },
+    {
+      "slug": "trail-of-bits-maci-audit-2023",
+      "label": "Trail of Bits MACI Audit 2023"
+    },
+    {
+      "slug": "ucl-cbt-qf-uk-grants-white-paper-2023",
+      "label": "UCL CBT QF UK Grants White Paper 2023"
+    },
+    {
+      "slug": "veridise-maci-v2-1-verification-2024",
+      "label": "Veridise MACI v2.1 Verification 2024"
+    },
+    {
+      "slug": "vidal-robert-weyl-2021-constrained-liberal-radicalism",
+      "label": "Vidal-Robert Weyl 2021 Constrained Liberal Radicalism"
+    },
+    {
+      "slug": "voice-credit-allocation",
+      "label": "Voice Credit Allocation"
+    },
+    {
+      "slug": "voice-credits",
+      "label": "Voice Credits"
+    },
+    {
+      "slug": "voting-theory",
+      "label": "Voting Theory"
+    },
+    {
+      "slug": "welfare-economics",
+      "label": "Welfare Economics"
+    },
+    {
+      "slug": "welfare-optimisation",
+      "label": "Welfare Optimisation"
+    },
+    {
+      "slug": "weyl-posner-2018-radical-markets",
+      "label": "Weyl-Posner 2018 Radical Markets"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "worldcoin-world-id-2-0-2024",
+      "label": "Worldcoin World ID 2.0 2024"
+    },
+    {
+      "slug": "zkcircuit-layer",
+      "label": "ZKCircuitLayer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi-Sig Governance"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    },
+    {
+      "slug": "zk-snarks",
+      "label": "ZK-SNARKs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

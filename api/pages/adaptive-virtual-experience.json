@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:d19b57add8c30575641ab3c4eefb27c2282d87b463cb19ae3a60c887c0bdeb8d",
+  "title": "Adaptive Virtual Experience",
+  "slug": "adaptive-virtual-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adaptive-virtual-experience",
+  "domain": "spatial-computing",
+  "definition": "Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:virtual-reality-experience",
+      "label": "Virtual Reality Experience"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:real-time-analytics",
+        "label": "Real-Time Analytics"
+      },
+      {
+        "id": "urn:visionflow:linked:user-behavior-tracking",
+        "label": "User Behavior Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-gaming",
+        "label": "Dynamic Gaming"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-learning",
+        "label": "Personalized Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:therapeutic-vr",
+        "label": "Therapeutic VR"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dynamic-gaming",
+      "label": "Dynamic Gaming"
+    },
+    {
+      "slug": "personalized-learning",
+      "label": "Personalized Learning"
+    },
+    {
+      "slug": "real-time-analytics",
+      "label": "Real-Time Analytics"
+    },
+    {
+      "slug": "user-behavior-tracking",
+      "label": "User Behavior Tracking"
+    },
+    {
+      "slug": "virtual-reality-experience",
+      "label": "Virtual Reality Experience"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "therapeutic-vr",
+      "label": "Therapeutic VR"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    }
+  ]
+}

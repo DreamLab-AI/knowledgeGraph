@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:460ddc29975b00ef4b91206b771920aa2abe017f4a9c97551f4cd538dc47b4e3",
+  "title": "Courses and Training",
+  "slug": "courses-and-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:courses-and-training",
+  "domain": "infrastructure",
+  "definition": "Courses and Training is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "latent-space",
+      "label": "latent space"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "google-cloud-skills-boost",
+      "label": "Google cloud skills boost"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ]
+}

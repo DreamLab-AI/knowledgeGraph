@@ -1,0 +1,668 @@
+{
+  "id": "urn:visionflow:page:e2699493fd6b86cbd2898083410a3e4d8a4006e81c194f64994a2a4fe8a39e59",
+  "title": "Distributed Computing",
+  "slug": "distributed-computing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributed-computing",
+  "domain": "infrastructure",
+  "definition": "Distributed Computing is a computational paradigm in which networked autonomous nodes (processes, machines, datacentres or geographic regions) coordinate through message passing over partially synchronous networks to solve problems no single node can solve alone or to scale capacity beyond a single machine's limits, formalised through foundational theory (Lamport's happens-before relation and logical clocks 1978 establishing partial order over distributed events, Fidge 1988 and Mattern 1989 vector clocks capturing concurrent causality with O(n)-component timestamps, Lamport Shostak Pease Byzantine generals 1982 proving 3f+1 nodes required to tolerate f arbitrary faults, FLP impossibility Fischer Lynch Paterson 1985 proving deterministic consensus impossible in pure asynchrony with a single crash, CAP Brewer 2000 conjecture and Gilbert-Lynch 2002 proof establishing the consistency-availability-partition trilemma, Abadi 2012 PACELC extending CAP with else-latency-consistency tradeoffs during normal operation, the two-generals problem demonstrating impossibility of reliable agreement over lossy channels), implemented through consensus protocols (Paxos Lamport 1998 and Multi-Paxos and ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:concurrent-computing",
+      "label": "Concurrent Computing"
+    },
+    {
+      "id": "urn:visionflow:linked:coordination-systems",
+      "label": "Coordination Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:networked-systems",
+      "label": "Networked Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:parallel-computing",
+      "label": "Parallel Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:coordination-service",
+        "label": "Coordination Service"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-lock",
+        "label": "Distributed Lock"
+      },
+      {
+        "id": "urn:visionflow:linked:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:visionflow:linked:logical-clock",
+        "label": "Logical Clock"
+      },
+      {
+        "id": "urn:visionflow:linked:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:visionflow:linked:replication-mechanism",
+        "label": "Replication Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:identity-and-naming",
+        "label": "Identity and Naming"
+      },
+      {
+        "id": "urn:visionflow:linked:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:visionflow:linked:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:partial-failure-tolerance",
+        "label": "Partial Failure Tolerance"
+      },
+      {
+        "id": "urn:visionflow:linked:serialisation-format",
+        "label": "Serialisation Format"
+      },
+      {
+        "id": "urn:visionflow:linked:time-synchronisation",
+        "label": "Time Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:visionflow:linked:elastic-capacity",
+        "label": "Elastic Capacity"
+      },
+      {
+        "id": "urn:visionflow:linked:geographic-distribution",
+        "label": "Geographic Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:visionflow:linked:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:actor-model",
+        "label": "Actor Model"
+      },
+      {
+        "id": "urn:visionflow:linked:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
+      },
+      {
+        "id": "urn:visionflow:linked:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:visionflow:linked:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:visionflow:linked:pbft",
+        "label": "PBFT"
+      },
+      {
+        "id": "urn:visionflow:linked:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:visionflow:linked:saga-pattern",
+        "label": "Saga Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:visionflow:owl:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abadi-2012-pacelc",
+      "label": "Abadi 2012 PACELC"
+    },
+    {
+      "slug": "actor-model",
+      "label": "Actor Model"
+    },
+    {
+      "slug": "apache-flink",
+      "label": "Apache Flink"
+    },
+    {
+      "slug": "apache-kafka",
+      "label": "Apache Kafka"
+    },
+    {
+      "slug": "apache-software-foundation",
+      "label": "Apache Software Foundation"
+    },
+    {
+      "slug": "apache-software-foundation-documentation",
+      "label": "Apache Software Foundation Documentation"
+    },
+    {
+      "slug": "apache-spark",
+      "label": "Apache Spark"
+    },
+    {
+      "slug": "blockchain-consensus",
+      "label": "Blockchain Consensus"
+    },
+    {
+      "slug": "brewer-2000-cap-conjecture",
+      "label": "Brewer 2000 CAP Conjecture"
+    },
+    {
+      "slug": "bulk-synchronous-parallel",
+      "label": "Bulk Synchronous Parallel"
+    },
+    {
+      "slug": "byzantine-generals-problem",
+      "label": "Byzantine Generals Problem"
+    },
+    {
+      "slug": "cambridge-computer-laboratory-history",
+      "label": "Cambridge Computer Laboratory History"
+    },
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "carbone-et-al-2015-apache-flink",
+      "label": "Carbone et al 2015 Apache Flink"
+    },
+    {
+      "slug": "castro-liskov-1999-pbft",
+      "label": "Castro Liskov 1999 PBFT"
+    },
+    {
+      "slug": "centralised-computing",
+      "label": "Centralised Computing"
+    },
+    {
+      "slug": "cloud-native",
+      "label": "Cloud Native"
+    },
+    {
+      "slug": "cncf",
+      "label": "CNCF"
+    },
+    {
+      "slug": "cncf-annual-survey-2024",
+      "label": "CNCF Annual Survey 2024"
+    },
+    {
+      "slug": "concurrent-computing",
+      "label": "Concurrent Computing"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "CoordinationLayer"
+    },
+    {
+      "slug": "coordination-service",
+      "label": "Coordination Service"
+    },
+    {
+      "slug": "coordination-systems",
+      "label": "Coordination Systems"
+    },
+    {
+      "slug": "corbett-et-al-2012-spanner",
+      "label": "Corbett et al 2012 Spanner"
+    },
+    {
+      "slug": "de-candia-et-al-2007-dynamo",
+      "label": "DeCandia et al 2007 Dynamo"
+    },
+    {
+      "slug": "dean-ghemawat-2004-map-reduce",
+      "label": "Dean Ghemawat 2004 MapReduce"
+    },
+    {
+      "slug": "distributed-ai-training",
+      "label": "Distributed AI Training"
+    },
+    {
+      "slug": "distributed-databases",
+      "label": "Distributed Databases"
+    },
+    {
+      "slug": "distributed-lock",
+      "label": "Distributed Lock"
+    },
+    {
+      "slug": "elastic-capacity",
+      "label": "Elastic Capacity"
+    },
+    {
+      "slug": "embarrassingly-parallel-batch",
+      "label": "Embarrassingly Parallel Batch"
+    },
+    {
+      "slug": "etcd",
+      "label": "etcd"
+    },
+    {
+      "slug": "fidge-1988-vector-clocks",
+      "label": "Fidge 1988 Vector Clocks"
+    },
+    {
+      "slug": "fischer-lynch-paterson-1985-flp-impossibility",
+      "label": "Fischer Lynch Paterson 1985 FLP Impossibility"
+    },
+    {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
+    },
+    {
+      "slug": "g-rpc",
+      "label": "gRPC"
+    },
+    {
+      "slug": "g-rpc-specification",
+      "label": "gRPC Specification"
+    },
+    {
+      "slug": "garcia-molina-salem-1987-sagas",
+      "label": "Garcia-Molina Salem 1987 Sagas"
+    },
+    {
+      "slug": "geographic-distribution",
+      "label": "Geographic Distribution"
+    },
+    {
+      "slug": "gilbert-lynch-2002-cap-proof",
+      "label": "Gilbert Lynch 2002 CAP Proof"
+    },
+    {
+      "slug": "herlihy-wing-1990-linearizability",
+      "label": "Herlihy Wing 1990 Linearizability"
+    },
+    {
+      "slug": "hewitt-bishop-steiger-1973-actor-model",
+      "label": "Hewitt Bishop Steiger 1973 Actor Model"
+    },
+    {
+      "slug": "high-availability",
+      "label": "High Availability"
+    },
+    {
+      "slug": "high-performance-computing",
+      "label": "High-Performance Computing"
+    },
+    {
+      "slug": "horizontal-scalability",
+      "label": "Horizontal Scalability"
+    },
+    {
+      "slug": "identity-and-naming",
+      "label": "Identity and Naming"
+    },
+    {
+      "slug": "ietf-quic",
+      "label": "IETF QUIC"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "lamport-1978-time-clocks-ordering-of-events",
+      "label": "Lamport 1978 Time Clocks Ordering of Events"
+    },
+    {
+      "slug": "lamport-1998-part-time-parliament-paxos",
+      "label": "Lamport 1998 Part-Time Parliament Paxos"
+    },
+    {
+      "slug": "lamport-shostak-pease-1982-byzantine-generals",
+      "label": "Lamport Shostak Pease 1982 Byzantine Generals"
+    },
+    {
+      "slug": "lamport-timestamps",
+      "label": "Lamport Timestamps"
+    },
+    {
+      "slug": "leader-election",
+      "label": "Leader Election"
+    },
+    {
+      "slug": "logical-clock",
+      "label": "Logical Clock"
+    },
+    {
+      "slug": "mainframe-computing",
+      "label": "Mainframe Computing"
+    },
+    {
+      "slug": "malewicz-et-al-2010-pregel",
+      "label": "Malewicz et al 2010 Pregel"
+    },
+    {
+      "slug": "map-reduce",
+      "label": "MapReduce"
+    },
+    {
+      "slug": "mattern-1989-virtual-time",
+      "label": "Mattern 1989 Virtual Time"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "message-queue",
+      "label": "Message Queue"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "moritz-et-al-2018-ray",
+      "label": "Moritz et al 2018 Ray"
+    },
+    {
+      "slug": "mpi-forum",
+      "label": "MPI Forum"
+    },
+    {
+      "slug": "network-communication",
+      "label": "Network Communication"
+    },
+    {
+      "slug": "networked-systems",
+      "label": "Networked Systems"
+    },
+    {
+      "slug": "ongaro-ousterhout-2014-raft",
+      "label": "Ongaro Ousterhout 2014 Raft"
+    },
+    {
+      "slug": "open-telemetry",
+      "label": "OpenTelemetry"
+    },
+    {
+      "slug": "pacelc",
+      "label": "PACELC"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "partial-failure-tolerance",
+      "label": "Partial Failure Tolerance"
+    },
+    {
+      "slug": "paxos",
+      "label": "Paxos"
+    },
+    {
+      "slug": "pbft",
+      "label": "PBFT"
+    },
+    {
+      "slug": "peer-to-peer-computing",
+      "label": "Peer-to-Peer Computing"
+    },
+    {
+      "slug": "raft",
+      "label": "Raft"
+    },
+    {
+      "slug": "rajbhandari-et-al-2020-ze-ro",
+      "label": "Rajbhandari et al 2020 ZeRO"
+    },
+    {
+      "slug": "ray",
+      "label": "Ray"
+    },
+    {
+      "slug": "replication-mechanism",
+      "label": "Replication Mechanism"
+    },
+    {
+      "slug": "saga-pattern",
+      "label": "Saga Pattern"
+    },
+    {
+      "slug": "serialisation-format",
+      "label": "Serialisation Format"
+    },
+    {
+      "slug": "service-mesh",
+      "label": "Service Mesh"
+    },
+    {
+      "slug": "shapiro-preguica-baquero-zawirski-2011-crdts",
+      "label": "Shapiro Preguica Baquero Zawirski 2011 CRDTs"
+    },
+    {
+      "slug": "single-machine-multiprocessing",
+      "label": "Single-Machine Multiprocessing"
+    },
+    {
+      "slug": "streaming-analytics",
+      "label": "Streaming Analytics"
+    },
+    {
+      "slug": "systems-engineering-domain",
+      "label": "SystemsEngineeringDomain"
+    },
+    {
+      "slug": "time-synchronisation",
+      "label": "Time Synchronisation"
+    },
+    {
+      "slug": "two-generals-problem",
+      "label": "Two Generals Problem"
+    },
+    {
+      "slug": "two-phase-commit",
+      "label": "Two-Phase Commit"
+    },
+    {
+      "slug": "valiant-1990-bridging-model-bsp",
+      "label": "Valiant 1990 Bridging Model BSP"
+    },
+    {
+      "slug": "vector-clocks",
+      "label": "Vector Clocks"
+    },
+    {
+      "slug": "vogels-2009-eventually-consistent",
+      "label": "Vogels 2009 Eventually Consistent"
+    },
+    {
+      "slug": "yin-malkhi-reiter-abraham-2019-hot-stuff",
+      "label": "Yin Malkhi Reiter Abraham 2019 HotStuff"
+    },
+    {
+      "slug": "zaharia-et-al-2012-spark-rdds",
+      "label": "Zaharia et al 2012 Spark RDDs"
+    },
+    {
+      "slug": "zoo-keeper",
+      "label": "ZooKeeper"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-alliance",
+      "label": "Agentic Alliance"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc",
+  "title": "Lidar Scanning",
+  "slug": "lidar-scanning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lidar-scanning",
+  "domain": "robotics",
+  "definition": "Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-mapping-technology",
+      "label": "Spatial Mapping Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-mapping-technology",
+      "label": "Spatial Mapping Technology"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:113e1ddc3a7e833df9098618e427ecbc4ebd412ed7c820ac701a992000a6e240",
+  "title": "Reputation Scoring Model",
+  "slug": "reputation-scoring-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reputation-scoring-model",
+  "domain": "spatial-computing",
+  "definition": "An algorithmic process that computes quantitative reputation scores by aggregating behavioral data, applying weighted scoring functions, implementing temporal decay, and evaluating threshold conditions to generate trust indicators for entities in virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:behavioral-data-aggregator",
+        "label": "Behavioral Data Aggregator"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-decay-engine",
+        "label": "Temporal Decay Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:threshold-evaluator",
+        "label": "Threshold Evaluator"
+      },
+      {
+        "id": "urn:visionflow:linked:weighted-scoring-function",
+        "label": "Weighted Scoring Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:behavioral-models",
+        "label": "Behavioral Models"
+      },
+      {
+        "id": "urn:visionflow:linked:scoring-algorithms",
+        "label": "Scoring Algorithms"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-rules",
+        "label": "Validation Rules"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reputation-data",
+        "label": "Reputation Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:access-control-decisions",
+        "label": "Access Control Decisions"
+      },
+      {
+        "id": "urn:visionflow:linked:governance-voting-weight",
+        "label": "Governance Voting Weight"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:trust-score-metric",
+        "label": "Trust Score Metric"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control-decisions",
+      "label": "Access Control Decisions"
+    },
+    {
+      "slug": "behavioral-data-aggregator",
+      "label": "Behavioral Data Aggregator"
+    },
+    {
+      "slug": "behavioral-models",
+      "label": "Behavioral Models"
+    },
+    {
+      "slug": "data-collection-pipeline",
+      "label": "Data Collection Pipeline"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "governance-voting-weight",
+      "label": "Governance Voting Weight"
+    },
+    {
+      "slug": "metric-computation",
+      "label": "Metric Computation"
+    },
+    {
+      "slug": "scoring-algorithms",
+      "label": "Scoring Algorithms"
+    },
+    {
+      "slug": "statistical-analysis",
+      "label": "Statistical Analysis"
+    },
+    {
+      "slug": "temporal-decay-engine",
+      "label": "Temporal Decay Engine"
+    },
+    {
+      "slug": "threshold-evaluator",
+      "label": "Threshold Evaluator"
+    },
+    {
+      "slug": "validation-rules",
+      "label": "Validation Rules"
+    },
+    {
+      "slug": "weighted-scoring-function",
+      "label": "Weighted Scoring Function"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    }
+  ]
+}

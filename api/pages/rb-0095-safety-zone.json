@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:081891aca2e94f0fc5868808bc80360d220587a98d2749c87ef4e8375192edd3",
+  "title": "rb 0095 safety zone",
+  "slug": "rb-0095-safety-zone",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0095-safety-zone",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-safety",
+      "label": "Robot Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

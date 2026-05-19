@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:2511092498fed37687ebf4c9b60a2de66ecf6b1c111fcdd626ceedae75ce9924",
+  "title": "Robustness (OECD)",
+  "slug": "robustness-oecd",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robustness-oecd",
+  "domain": "spatial-computing",
+  "definition": "AI systems should function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, inconsistencies and attempts to alter system use or performance, with continuous assessment and management of potential risks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

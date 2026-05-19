@@ -1,0 +1,1528 @@
+{
+  "id": "urn:visionflow:page:0139ffa1e9c52fd0aaa29b745e1c101c3c9014264813645e7a5b543d218bce2e",
+  "title": "Agentic Internet",
+  "slug": "agentic-internet",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agentic-internet",
+  "domain": "artificial-intelligence",
+  "definition": "**Agentic Internet** is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents \u2014 rather than human users clicking through browsers \u2014 discover services, negotiate terms, exchange data and settle value on behalf of principals (human users, enterprises, other agents); operationally instantiated through a 2024-2026 stack comprising tool-and-data connection protocols ([[Model Context Protocol]] released by [[Anthropic]] 25 November 2024 as 'USB-C for AI', adopted by [[OpenAI]] March 2025, [[Google DeepMind]] April 2025, [[Microsoft]] Copilot Studio, [[Replit]], [[Sourcegraph]], [[Block]], [[Apollo]], with 2025-06-18 protocol revision adding elicitation, structured outputs and OAuth 2.1 authorisation), agent-to-agent interoperability ([[A2A Protocol]] announced by [[Google]] 9 April 2025 at Cloud Next with 50+ launch partners spanning [[Atlassian]], [[Box]], [[Cohere]], [[Intuit]], [[LangChain]], [[MongoDB]], [[PayPal]], [[Salesforce]], [[SAP]], [[ServiceNow]], [[Workday]], using HTTP+JSON-RPC+Server-Sent Events with AgentCard capability discovery and Task lifecycle), computer-using agents ([[Anthropic Computer Use",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:agent-oriented-computing",
+      "label": "Agent-Oriented Computing"
+    },
+    {
+      "id": "urn:visionflow:linked:sociotechnical-system",
+      "label": "Sociotechnical System"
+    },
+    {
+      "id": "urn:visionflow:linked:web-architecture",
+      "label": "Web Architecture"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:a2-a-protocol",
+        "label": "A2A Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:agent-identity",
+        "label": "Agent Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:agent-marketplace",
+        "label": "Agent Marketplace"
+      },
+      {
+        "id": "urn:visionflow:linked:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "id": "urn:visionflow:linked:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:agentic-commerce-layer",
+        "label": "Agentic Commerce Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:browser-agent",
+        "label": "Browser Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:capability-token",
+        "label": "Capability Token"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:visionflow:linked:discovery-protocol",
+        "label": "Discovery Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-memory",
+        "label": "Persistent Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:reasoning-engine",
+        "label": "Reasoning Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:visionflow:linked:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agentic-search",
+        "label": "Agentic Search"
+      },
+      {
+        "id": "urn:visionflow:linked:api-first-web",
+        "label": "API-First Web"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-workflows",
+        "label": "Autonomous Workflows"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-vendor-agent-interoperability",
+        "label": "Cross-Vendor Agent Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:long-horizon-task-execution",
+        "label": "Long-Horizon Task Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-to-machine-commerce",
+        "label": "Machine-to-Machine Commerce"
+      },
+      {
+        "id": "urn:visionflow:linked:personal-ai",
+        "label": "Personal AI"
+      },
+      {
+        "id": "urn:visionflow:linked:programmatic-service-composition",
+        "label": "Programmatic Service Composition"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:capability-discovery",
+        "label": "Capability Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:elicitation",
+        "label": "Elicitation"
+      },
+      {
+        "id": "urn:visionflow:linked:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "id": "urn:visionflow:linked:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:visionflow:linked:streaming-responses",
+        "label": "Streaming Responses"
+      },
+      {
+        "id": "urn:visionflow:linked:task-lifecycle-management",
+        "label": "Task Lifecycle Management"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a2-a",
+      "label": "A2A"
+    },
+    {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "abridge",
+      "label": "Abridge"
+    },
+    {
+      "slug": "agent-connect-protocol",
+      "label": "Agent Connect Protocol"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-marketplace",
+      "label": "Agent Marketplace"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-oriented-computing",
+      "label": "Agent-Oriented Computing"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agentic-commerce-layer",
+      "label": "Agentic Commerce Layer"
+    },
+    {
+      "slug": "agentic-economy",
+      "label": "Agentic Economy"
+    },
+    {
+      "slug": "agentic-search",
+      "label": "Agentic Search"
+    },
+    {
+      "slug": "agntcy",
+      "label": "AGNTCY"
+    },
+    {
+      "slug": "agntcy-collective-launch-2025",
+      "label": "AGNTCY Collective Launch 2025"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "ai-opportunities-action-plan",
+      "label": "AI Opportunities Action Plan"
+    },
+    {
+      "slug": "ai-security-institute",
+      "label": "AI Security Institute"
+    },
+    {
+      "slug": "aisi",
+      "label": "AISI"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "anchor-browser",
+      "label": "Anchor Browser"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "anthropic-computer-use",
+      "label": "Anthropic Computer Use"
+    },
+    {
+      "slug": "anthropic-computer-use-2024",
+      "label": "Anthropic Computer Use 2024"
+    },
+    {
+      "slug": "anthropic-economic-index-2025",
+      "label": "Anthropic Economic Index 2025"
+    },
+    {
+      "slug": "anthropic-mcp-specification-2024",
+      "label": "Anthropic MCP Specification 2024"
+    },
+    {
+      "slug": "anthropic-multi-agent-research",
+      "label": "Anthropic Multi-Agent Research"
+    },
+    {
+      "slug": "anthropic-sleeper-agents-2024",
+      "label": "Anthropic Sleeper Agents 2024"
+    },
+    {
+      "slug": "api-first-web",
+      "label": "API-First Web"
+    },
+    {
+      "slug": "apollo",
+      "label": "Apollo"
+    },
+    {
+      "slug": "apple-app-intents",
+      "label": "Apple App Intents"
+    },
+    {
+      "slug": "arc-search",
+      "label": "Arc Search"
+    },
+    {
+      "slug": "artificial-superintelligence-alliance",
+      "label": "Artificial Superintelligence Alliance"
+    },
+    {
+      "slug": "atlas-reasoning-engine",
+      "label": "Atlas Reasoning Engine"
+    },
+    {
+      "slug": "atlassian",
+      "label": "Atlassian"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "authorisation",
+      "label": "Authorisation"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "autonomous-workflows",
+      "label": "Autonomous Workflows"
+    },
+    {
+      "slug": "bbc-r-and-d",
+      "label": "BBC R&D"
+    },
+    {
+      "slug": "bbc-r-and-d-responsible-ai-principles-2024",
+      "label": "BBC R&D Responsible AI Principles 2024"
+    },
+    {
+      "slug": "berners-lee-hendler-lassila-semantic-web-2001",
+      "label": "Berners-Lee Hendler Lassila Semantic Web 2001"
+    },
+    {
+      "slug": "big-query",
+      "label": "BigQuery"
+    },
+    {
+      "slug": "bittensor",
+      "label": "Bittensor"
+    },
+    {
+      "slug": "bolt-new",
+      "label": "Bolt.new"
+    },
+    {
+      "slug": "booking-agents",
+      "label": "Booking Agents"
+    },
+    {
+      "slug": "box",
+      "label": "Box"
+    },
+    {
+      "slug": "braintree",
+      "label": "Braintree"
+    },
+    {
+      "slug": "browser-agent",
+      "label": "Browser Agent"
+    },
+    {
+      "slug": "browser-base",
+      "label": "BrowserBase"
+    },
+    {
+      "slug": "browser-centric-internet",
+      "label": "Browser-Centric Internet"
+    },
+    {
+      "slug": "browser-use",
+      "label": "Browser Use"
+    },
+    {
+      "slug": "capability-discovery",
+      "label": "Capability Discovery"
+    },
+    {
+      "slug": "capability-token",
+      "label": "Capability Token"
+    },
+    {
+      "slug": "capability-tokens",
+      "label": "capability tokens"
+    },
+    {
+      "slug": "censorship-resistant",
+      "label": "censorship-resistant"
+    },
+    {
+      "slug": "chat-gpt-agent",
+      "label": "ChatGPT Agent"
+    },
+    {
+      "slug": "chroma",
+      "label": "Chroma"
+    },
+    {
+      "slug": "cisco",
+      "label": "Cisco"
+    },
+    {
+      "slug": "claude-code",
+      "label": "Claude Code"
+    },
+    {
+      "slug": "client-side-validation",
+      "label": "client-side validation"
+    },
+    {
+      "slug": "codex",
+      "label": "Codex"
+    },
+    {
+      "slug": "coding-copilots",
+      "label": "Coding Copilots"
+    },
+    {
+      "slug": "cognition-labs",
+      "label": "Cognition Labs"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "cohere-north",
+      "label": "Cohere North"
+    },
+    {
+      "slug": "coinbase-agent-kit",
+      "label": "Coinbase AgentKit"
+    },
+    {
+      "slug": "computer-use",
+      "label": "Computer Use"
+    },
+    {
+      "slug": "confused-deputy",
+      "label": "confused deputy"
+    },
+    {
+      "slug": "crescendo",
+      "label": "Crescendo"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cross-vendor-agent-interoperability",
+      "label": "Cross-Vendor Agent Interoperability"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "slug": "data-exfiltration",
+      "label": "data exfiltration"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "deep-research",
+      "label": "Deep Research"
+    },
+    {
+      "slug": "deep-scribe",
+      "label": "DeepScribe"
+    },
+    {
+      "slug": "deep-seek-r1",
+      "label": "DeepSeek R1"
+    },
+    {
+      "slug": "dell",
+      "label": "Dell"
+    },
+    {
+      "slug": "deng-mind2-web-neur-ips-2023",
+      "label": "Deng Mind2Web NeurIPS 2023"
+    },
+    {
+      "slug": "devin",
+      "label": "Devin"
+    },
+    {
+      "slug": "dia",
+      "label": "Dia"
+    },
+    {
+      "slug": "digital-advertising",
+      "label": "digital advertising"
+    },
+    {
+      "slug": "digital-economy-domain",
+      "label": "DigitalEconomyDomain"
+    },
+    {
+      "slug": "discovery-protocol",
+      "label": "Discovery Protocol"
+    },
+    {
+      "slug": "dns",
+      "label": "DNS"
+    },
+    {
+      "slug": "edinburgh-informatics",
+      "label": "Edinburgh Informatics"
+    },
+    {
+      "slug": "eleven-labs",
+      "label": "ElevenLabs"
+    },
+    {
+      "slug": "elicitation",
+      "label": "Elicitation"
+    },
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "fetch-ai",
+      "label": "Fetch.ai"
+    },
+    {
+      "slug": "five-ai",
+      "label": "FiveAI"
+    },
+    {
+      "slug": "future-house",
+      "label": "FutureHouse"
+    },
+    {
+      "slug": "galileo",
+      "label": "Galileo"
+    },
+    {
+      "slug": "gds-agent-strategy",
+      "label": "GDS Agent Strategy"
+    },
+    {
+      "slug": "gemini-thinking",
+      "label": "Gemini Thinking"
+    },
+    {
+      "slug": "gensyn",
+      "label": "Gensyn"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "git-hub-copilot-workspace",
+      "label": "GitHub Copilot Workspace"
+    },
+    {
+      "slug": "glass-health",
+      "label": "Glass Health"
+    },
+    {
+      "slug": "glean",
+      "label": "Glean"
+    },
+    {
+      "slug": "glean-agents",
+      "label": "Glean Agents"
+    },
+    {
+      "slug": "google-a2-a-protocol-2025",
+      "label": "Google A2A Protocol 2025"
+    },
+    {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "google-gemini",
+      "label": "Google Gemini"
+    },
+    {
+      "slug": "google-project-mariner",
+      "label": "Google Project Mariner"
+    },
+    {
+      "slug": "google-project-mariner-2024",
+      "label": "Google Project Mariner 2024"
+    },
+    {
+      "slug": "greshake-indirect-prompt-injection-aisec-2023",
+      "label": "Greshake Indirect Prompt Injection AISec 2023"
+    },
+    {
+      "slug": "harvey",
+      "label": "Harvey"
+    },
+    {
+      "slug": "he-web-voyager-acl-2024",
+      "label": "He WebVoyager ACL 2024"
+    },
+    {
+      "slug": "hebbia",
+      "label": "Hebbia"
+    },
+    {
+      "slug": "hippocratic-ai",
+      "label": "Hippocratic AI"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "human-in-the-loop-workflow",
+      "label": "Human-in-the-Loop Workflow"
+    },
+    {
+      "slug": "ibm",
+      "label": "IBM"
+    },
+    {
+      "slug": "ibm-watsonx-orchestrate",
+      "label": "IBM watsonx Orchestrate"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "IdentityLayer"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "ietf-oauth-2-1-draft",
+      "label": "IETF OAuth 2.1 Draft"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "imperial-college-web-science",
+      "label": "Imperial College Web Science"
+    },
+    {
+      "slug": "indirect-prompt-injection",
+      "label": "indirect prompt injection"
+    },
+    {
+      "slug": "indirect-prompt-injection",
+      "label": "Indirect Prompt Injection"
+    },
+    {
+      "slug": "internet-of-agents",
+      "label": "Internet of Agents"
+    },
+    {
+      "slug": "intuit",
+      "label": "Intuit"
+    },
+    {
+      "slug": "invariant-labs-mcp-tool-poisoning-2025",
+      "label": "Invariant Labs MCP Tool Poisoning 2025"
+    },
+    {
+      "slug": "json-rpc",
+      "label": "JSON-RPC"
+    },
+    {
+      "slug": "khanmigo",
+      "label": "Khanmigo"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "linear",
+      "label": "Linear"
+    },
+    {
+      "slug": "linux-foundation",
+      "label": "Linux Foundation"
+    },
+    {
+      "slug": "llama",
+      "label": "Llama"
+    },
+    {
+      "slug": "llama-index",
+      "label": "LlamaIndex"
+    },
+    {
+      "slug": "long-horizon-task-execution",
+      "label": "Long-Horizon Task Execution"
+    },
+    {
+      "slug": "lovable",
+      "label": "Lovable"
+    },
+    {
+      "slug": "machine-to-machine-commerce",
+      "label": "Machine-to-Machine Commerce"
+    },
+    {
+      "slug": "magic-school",
+      "label": "MagicSchool"
+    },
+    {
+      "slug": "mastercard-agent-pay",
+      "label": "Mastercard Agent Pay"
+    },
+    {
+      "slug": "mastercard-agent-pay-2025",
+      "label": "Mastercard Agent Pay 2025"
+    },
+    {
+      "slug": "mastra",
+      "label": "Mastra"
+    },
+    {
+      "slug": "meta-llama",
+      "label": "Meta Llama"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "microsoft-copilot-studio",
+      "label": "Microsoft Copilot Studio"
+    },
+    {
+      "slug": "mongo-db",
+      "label": "MongoDB"
+    },
+    {
+      "slug": "multi-agent-research",
+      "label": "multi-agent research"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "multion",
+      "label": "Multion"
+    },
+    {
+      "slug": "news-corp",
+      "label": "News Corp"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "nostr-relays",
+      "label": "Nostr relays"
+    },
+    {
+      "slug": "notion",
+      "label": "Notion"
+    },
+    {
+      "slug": "notion-ai",
+      "label": "Notion AI"
+    },
+    {
+      "slug": "nuance-dax",
+      "label": "Nuance DAX"
+    },
+    {
+      "slug": "o1",
+      "label": "o1"
+    },
+    {
+      "slug": "o3",
+      "label": "o3"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
+      "slug": "oauth-2-1",
+      "label": "OAuth 2.1"
+    },
+    {
+      "slug": "ocean-protocol",
+      "label": "Ocean Protocol"
+    },
+    {
+      "slug": "open-agent-schema-framework",
+      "label": "Open Agent Schema Framework"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "open-ai-gpt",
+      "label": "OpenAI GPT"
+    },
+    {
+      "slug": "open-ai-operator",
+      "label": "OpenAI Operator"
+    },
+    {
+      "slug": "open-ai-operator-launch-2025",
+      "label": "OpenAI Operator Launch 2025"
+    },
+    {
+      "slug": "open-ai-swarm",
+      "label": "OpenAI Swarm"
+    },
+    {
+      "slug": "open-evidence",
+      "label": "OpenEvidence"
+    },
+    {
+      "slug": "open-id-for-verifiable-credentials",
+      "label": "OpenID for Verifiable Credentials"
+    },
+    {
+      "slug": "open-id-foundation",
+      "label": "OpenID Foundation"
+    },
+    {
+      "slug": "park-generative-agents-uist-2023",
+      "label": "Park Generative Agents UIST 2023"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "pay-pal-agent-toolkit",
+      "label": "PayPal Agent Toolkit"
+    },
+    {
+      "slug": "payment-layer",
+      "label": "PaymentLayer"
+    },
+    {
+      "slug": "persistent-memory",
+      "label": "Persistent Memory"
+    },
+    {
+      "slug": "personal-ai",
+      "label": "Personal AI"
+    },
+    {
+      "slug": "personal-assistants",
+      "label": "Personal Assistants"
+    },
+    {
+      "slug": "pgvector",
+      "label": "pgvector"
+    },
+    {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
+      "slug": "poly-ai",
+      "label": "PolyAI"
+    },
+    {
+      "slug": "postgre-sql",
+      "label": "PostgreSQL"
+    },
+    {
+      "slug": "procurement-agents",
+      "label": "Procurement Agents"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "programmable money"
+    },
+    {
+      "slug": "programmatic-service-composition",
+      "label": "Programmatic Service Composition"
+    },
+    {
+      "slug": "protocol-domain",
+      "label": "ProtocolDomain"
+    },
+    {
+      "slug": "pydantic-ai",
+      "label": "Pydantic AI"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "qdrant",
+      "label": "Qdrant"
+    },
+    {
+      "slug": "reasoning-engine",
+      "label": "Reasoning Engine"
+    },
+    {
+      "slug": "red-hat",
+      "label": "Red Hat"
+    },
+    {
+      "slug": "reddit",
+      "label": "Reddit"
+    },
+    {
+      "slug": "replit",
+      "label": "Replit"
+    },
+    {
+      "slug": "replit-agent",
+      "label": "Replit Agent"
+    },
+    {
+      "slug": "research-agents",
+      "label": "Research Agents"
+    },
+    {
+      "slug": "rest",
+      "label": "REST"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rgb-protocol",
+      "label": "RGB Protocol"
+    },
+    {
+      "slug": "ritual",
+      "label": "Ritual"
+    },
+    {
+      "slug": "rogo",
+      "label": "Rogo"
+    },
+    {
+      "slug": "russell-norvig-aima-4th-edition",
+      "label": "Russell Norvig AIMA 4th Edition"
+    },
+    {
+      "slug": "sakana-ai",
+      "label": "Sakana AI"
+    },
+    {
+      "slug": "salesforce",
+      "label": "Salesforce"
+    },
+    {
+      "slug": "salesforce-agentforce",
+      "label": "Salesforce Agentforce"
+    },
+    {
+      "slug": "salesforce-agentforce-launch-2024",
+      "label": "Salesforce Agentforce Launch 2024"
+    },
+    {
+      "slug": "samsung",
+      "label": "Samsung"
+    },
+    {
+      "slug": "sap",
+      "label": "SAP"
+    },
+    {
+      "slug": "schick-toolformer-neur-ips-2023",
+      "label": "Schick Toolformer NeurIPS 2023"
+    },
+    {
+      "slug": "seo",
+      "label": "SEO"
+    },
+    {
+      "slug": "server-sent-events",
+      "label": "Server-Sent Events"
+    },
+    {
+      "slug": "service-now",
+      "label": "ServiceNow"
+    },
+    {
+      "slug": "service-now-ai-agents",
+      "label": "ServiceNow AI Agents"
+    },
+    {
+      "slug": "shift-technology",
+      "label": "Shift Technology"
+    },
+    {
+      "slug": "shopping-agents",
+      "label": "Shopping Agents"
+    },
+    {
+      "slug": "shopping-agents",
+      "label": "Shopping agents"
+    },
+    {
+      "slug": "singularity-net",
+      "label": "SingularityNET"
+    },
+    {
+      "slug": "skyvern",
+      "label": "Skyvern"
+    },
+    {
+      "slug": "slack",
+      "label": "Slack"
+    },
+    {
+      "slug": "slack-ai",
+      "label": "Slack AI"
+    },
+    {
+      "slug": "snowflake",
+      "label": "Snowflake"
+    },
+    {
+      "slug": "sociotechnical-system",
+      "label": "Sociotechnical System"
+    },
+    {
+      "slug": "software-engineering-agents",
+      "label": "Software Engineering Agents"
+    },
+    {
+      "slug": "sourcegraph",
+      "label": "Sourcegraph"
+    },
+    {
+      "slug": "spellbook",
+      "label": "Spellbook"
+    },
+    {
+      "slug": "static-web",
+      "label": "Static Web"
+    },
+    {
+      "slug": "streaming-responses",
+      "label": "Streaming Responses"
+    },
+    {
+      "slug": "stripe",
+      "label": "Stripe"
+    },
+    {
+      "slug": "stripe-agent-sdk-2025",
+      "label": "Stripe Agent SDK 2025"
+    },
+    {
+      "slug": "stripe-agent-toolkit",
+      "label": "Stripe Agent Toolkit"
+    },
+    {
+      "slug": "suki-ai",
+      "label": "Suki AI"
+    },
+    {
+      "slug": "task-lifecycle-management",
+      "label": "Task Lifecycle Management"
+    },
+    {
+      "slug": "the-browser-company",
+      "label": "The Browser Company"
+    },
+    {
+      "slug": "tls",
+      "label": "TLS"
+    },
+    {
+      "slug": "tool-poisoning",
+      "label": "tool poisoning"
+    },
+    {
+      "slug": "tool-registry",
+      "label": "Tool Registry"
+    },
+    {
+      "slug": "tool-schema",
+      "label": "Tool Schema"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "tractable",
+      "label": "Tractable"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    },
+    {
+      "slug": "trust-over-ip-foundation",
+      "label": "Trust over IP Foundation"
+    },
+    {
+      "slug": "type-script",
+      "label": "TypeScript"
+    },
+    {
+      "slug": "ucl-interaction-centre",
+      "label": "UCL Interaction Centre"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan-clifford-2025",
+      "label": "UK AI Opportunities Action Plan Clifford 2025"
+    },
+    {
+      "slug": "uk-context",
+      "label": "UK Context"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    },
+    {
+      "slug": "university-of-southampton",
+      "label": "University of Southampton"
+    },
+    {
+      "slug": "v0",
+      "label": "v0"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "visa-intelligent-commerce",
+      "label": "Visa Intelligent Commerce"
+    },
+    {
+      "slug": "visa-intelligent-commerce-2025",
+      "label": "Visa Intelligent Commerce 2025"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-did-core-v1-0-2022",
+      "label": "W3C DID Core v1.0 2022"
+    },
+    {
+      "slug": "w3-c-vc-data-model-v2-0-2025",
+      "label": "W3C VC Data Model v2.0 2025"
+    },
+    {
+      "slug": "walled-garden",
+      "label": "Walled Garden"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
+    },
+    {
+      "slug": "web-2-0-saa-s",
+      "label": "Web 2.0 SaaS"
+    },
+    {
+      "slug": "web-architecture",
+      "label": "Web Architecture"
+    },
+    {
+      "slug": "web-architecture-domain",
+      "label": "WebArchitectureDomain"
+    },
+    {
+      "slug": "web-economics",
+      "label": "web economics"
+    },
+    {
+      "slug": "web-science",
+      "label": "Web Science"
+    },
+    {
+      "slug": "web-sockets",
+      "label": "WebSockets"
+    },
+    {
+      "slug": "web3-blockchain-agents",
+      "label": "Web3 Blockchain Agents"
+    },
+    {
+      "slug": "wooldridge-intelligent-agents-1995",
+      "label": "Wooldridge Intelligent Agents 1995"
+    },
+    {
+      "slug": "workday",
+      "label": "Workday"
+    },
+    {
+      "slug": "wu-auto-gen-2023",
+      "label": "Wu AutoGen 2023"
+    },
+    {
+      "slug": "xie-osworld-neur-ips-2024",
+      "label": "Xie OSWorld NeurIPS 2024"
+    },
+    {
+      "slug": "y-combinator",
+      "label": "Y Combinator"
+    },
+    {
+      "slug": "yao-re-act-iclr-2023",
+      "label": "Yao ReAct ICLR 2023"
+    },
+    {
+      "slug": "zero-click-search",
+      "label": "Zero-Click Search"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "json",
+      "label": "JSON"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "perplexity",
+      "label": "Perplexity"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

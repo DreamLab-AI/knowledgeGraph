@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:0a69ab42d903224d31f92e4e1cf4787a6b790d0cb44fadae75e240a40415f29e",
+  "title": "Notification System",
+  "slug": "notification-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:notification-system",
+  "domain": "infrastructure",
+  "definition": "Notification System is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

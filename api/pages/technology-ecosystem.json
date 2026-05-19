@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1b0110cc6123b6199789506d1cc9df1de9d9206a0d0acfc51491632c98062524",
+  "title": "Technology Ecosystem",
+  "slug": "technology-ecosystem",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technology-ecosystem",
+  "domain": "infrastructure",
+  "definition": "TechnologyEcosystem is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-ecosystem",
+      "label": "Digital Twin Ecosystem"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:944caf776b8e758f540e1d506df9ae705c052ccd7f699a2d41fc361a13bb9698",
+  "title": "Software Testing",
+  "slug": "software-testing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:software-testing",
+  "domain": "spatial-computing",
+  "definition": "Software Testing is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "performance-benchmarks",
+      "label": "Performance Benchmarks"
+    }
+  ]
+}

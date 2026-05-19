@@ -1,0 +1,552 @@
+{
+  "id": "urn:visionflow:page:836f082d6455d72a6bb2b1dc9f8070937c383b2ae5859c5c0485213c6954f695",
+  "title": "Blockchain Protocol",
+  "slug": "blockchain-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-protocol",
+  "domain": "blockchain",
+  "definition": "Foundational rule set governing distributed ledger system operation comprising consensus mechanisms (algorithmic procedures enabling network-wide agreement on canonical state without centralized authority including Proof of Work PoW SHA-256 hash puzzles requiring computational expenditure Bitcoin 10-minute target block time difficulty adjustment every 2,016 blocks maintaining probabilistic finality 6-confirmation standard 99.9% security, Proof of Stake PoS validator selection weighted by token stake Ethereum Beacon Chain 32 ETH minimum deposit Casper FFG finality gadget achieving economic finality through slashing 1-4 ETH penalties equivocation offline infractions, Byzantine Fault Tolerance BFT Practical Byzantine Fault Tolerance PBFT tolerating f < n/3 faulty nodes deterministic finality single-slot confirmation Tendermint Core 67% supermajority voting rounds, Delegated Proof of Stake DPoS witness election systems EOS 21 block producers 0.5-second block time, Nominated Proof of Stake NPoS Polkadot validator nomination 297 active validators 24-hour era rotation), network communication protocols (peer-to-peer topology gossip protocols epidemic information dissemination Bitcoin INV/G",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:peer-to-peer-protocol",
+      "label": "Peer-to-Peer Protocol"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-system-protocol",
+      "label": "Distributed System Protocol"
+    },
+    {
+      "id": "urn:visionflow:owl:class:network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "id": "urn:visionflow:owl:class:state-machine-replication",
+      "label": "State Machine Replication"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:block-structure",
+        "label": "Block Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:governance-system",
+        "label": "Governance System"
+      },
+      {
+        "id": "urn:visionflow:linked:state-storage",
+        "label": "State Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:state-transition-function",
+        "label": "State Transition Function"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-format",
+        "label": "Transaction Format"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-validation",
+        "label": "Transaction Validation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:block-validation",
+        "label": "Block Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:visionflow:linked:economic-incentives",
+        "label": "Economic Incentives"
+      },
+      {
+        "id": "urn:visionflow:linked:state-database",
+        "label": "State Database"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transaction-pool",
+        "label": "Transaction Pool"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:de-fi-applications",
+        "label": "DeFi Applications"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralized-consensus",
+        "label": "Decentralized Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:trustless-execution",
+        "label": "Trustless Execution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nft-standards",
+        "label": "NFT Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:value-transfer",
+        "label": "Value Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bft-consensus",
+        "label": "BFT Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:fee-mechanism",
+        "label": "Fee Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:governance-voting",
+        "label": "Governance Voting"
+      },
+      {
+        "id": "urn:visionflow:linked:merkle-proof-verification",
+        "label": "Merkle Proof Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:slashing-conditions",
+        "label": "Slashing Conditions"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-ordering",
+        "label": "Transaction Ordering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bft-consensus",
+      "label": "BFT Consensus"
+    },
+    {
+      "slug": "bitcoin-improvement-proposals-bip",
+      "label": "Bitcoin Improvement Proposals BIP"
+    },
+    {
+      "slug": "bitcoin-whitepaper-nakamoto-2008",
+      "label": "Bitcoin Whitepaper Nakamoto 2008"
+    },
+    {
+      "slug": "block-structure",
+      "label": "Block Structure"
+    },
+    {
+      "slug": "block-validation",
+      "label": "Block Validation"
+    },
+    {
+      "slug": "byzantine-generals-problem-lamport-1982",
+      "label": "Byzantine Generals Problem Lamport 1982"
+    },
+    {
+      "slug": "cap-theorem-brewer",
+      "label": "CAP Theorem Brewer"
+    },
+    {
+      "slug": "cosmos-ibc-protocol",
+      "label": "Cosmos IBC Protocol"
+    },
+    {
+      "slug": "cross-chain-communication",
+      "label": "Cross-Chain Communication"
+    },
+    {
+      "slug": "cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    },
+    {
+      "slug": "cryptographic-primitives",
+      "label": "Cryptographic Primitives"
+    },
+    {
+      "slug": "de-fi-applications",
+      "label": "DeFi Applications"
+    },
+    {
+      "slug": "de-fi-protocol-standards",
+      "label": "DeFi Protocol Standards"
+    },
+    {
+      "slug": "decentralized-consensus",
+      "label": "Decentralized Consensus"
+    },
+    {
+      "slug": "digital-signature-scheme",
+      "label": "Digital Signature Scheme"
+    },
+    {
+      "slug": "double-spend-prevention",
+      "label": "Double-Spend Prevention"
+    },
+    {
+      "slug": "economic-incentives",
+      "label": "Economic Incentives"
+    },
+    {
+      "slug": "economic-model",
+      "label": "Economic Model"
+    },
+    {
+      "slug": "enterprise-ethereum-alliance",
+      "label": "Enterprise Ethereum Alliance"
+    },
+    {
+      "slug": "ethereum-improvement-proposals-eip",
+      "label": "Ethereum Improvement Proposals EIP"
+    },
+    {
+      "slug": "ethereum-yellowpaper-buterin-wood-2014",
+      "label": "Ethereum Yellowpaper Buterin Wood 2014"
+    },
+    {
+      "slug": "fee-mechanism",
+      "label": "Fee Mechanism"
+    },
+    {
+      "slug": "flp-impossibility-result",
+      "label": "FLP Impossibility Result"
+    },
+    {
+      "slug": "governance-system",
+      "label": "Governance System"
+    },
+    {
+      "slug": "governance-voting",
+      "label": "Governance Voting"
+    },
+    {
+      "slug": "hyperledger-fabric-architecture",
+      "label": "Hyperledger Fabric Architecture"
+    },
+    {
+      "slug": "iso-tc-307-blockchain-standards",
+      "label": "ISO TC 307 Blockchain Standards"
+    },
+    {
+      "slug": "layer-2-scaling-solutions",
+      "label": "Layer-2 Scaling Solutions"
+    },
+    {
+      "slug": "lightning-network-whitepaper",
+      "label": "Lightning Network Whitepaper"
+    },
+    {
+      "slug": "merkle-proof-verification",
+      "label": "Merkle Proof Verification"
+    },
+    {
+      "slug": "merkle-tree-structure",
+      "label": "Merkle Tree Structure"
+    },
+    {
+      "slug": "merkle-trees-authenticated-data",
+      "label": "Merkle Trees Authenticated Data"
+    },
+    {
+      "slug": "networking-stack",
+      "label": "Networking Stack"
+    },
+    {
+      "slug": "nft-token-standards",
+      "label": "NFT Token Standards"
+    },
+    {
+      "slug": "peer-to-peer-protocol",
+      "label": "Peer-to-Peer Protocol"
+    },
+    {
+      "slug": "permissionless-participation",
+      "label": "Permissionless Participation"
+    },
+    {
+      "slug": "polkadot-relay-chain",
+      "label": "Polkadot Relay Chain"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance-castro-liskov-1999",
+      "label": "Practical Byzantine Fault Tolerance Castro Liskov 1999"
+    },
+    {
+      "slug": "proof-of-stake-casper-ffg",
+      "label": "Proof of Stake Casper FFG"
+    },
+    {
+      "slug": "quantum-resistant-cryptography",
+      "label": "Quantum-Resistant Cryptography"
+    },
+    {
+      "slug": "slashing-conditions",
+      "label": "Slashing Conditions"
+    },
+    {
+      "slug": "smart-contract-execution",
+      "label": "Smart Contract Execution"
+    },
+    {
+      "slug": "state-database",
+      "label": "State Database"
+    },
+    {
+      "slug": "state-storage",
+      "label": "State Storage"
+    },
+    {
+      "slug": "state-transition-function",
+      "label": "State Transition Function"
+    },
+    {
+      "slug": "tendermint-buchman-kwon-2014",
+      "label": "Tendermint Buchman Kwon 2014"
+    },
+    {
+      "slug": "transaction-format",
+      "label": "Transaction Format"
+    },
+    {
+      "slug": "transaction-ordering",
+      "label": "Transaction Ordering"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "trustless-execution",
+      "label": "Trustless Execution"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "block-propagation",
+      "label": "Block Propagation"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "delegated-proof-of-stake",
+      "label": "Delegated Proof of Stake"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-system-protocol",
+      "label": "Distributed System Protocol"
+    },
+    {
+      "slug": "fee-market",
+      "label": "Fee Market"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "network-synchronization",
+      "label": "Network Synchronization"
+    },
+    {
+      "slug": "nft-standards",
+      "label": "NFT Standards"
+    },
+    {
+      "slug": "nominated-proof-of-stake",
+      "label": "Nominated Proof of Stake"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "state-machine-replication",
+      "label": "State Machine Replication"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "transaction-pool",
+      "label": "Transaction Pool"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

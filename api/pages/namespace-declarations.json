@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:06c9959e5fc2149c3ae14f9539bfa8b4b18f9f66349e80f3d67b7ffdd8700f6a",
+  "title": "Namespace Declarations",
+  "slug": "namespace-declarations",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:namespace-declarations",
+  "domain": "spatial-computing",
+  "definition": "XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:semantic-web-standards",
+      "label": "Semantic Web Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ontology-interoperability",
+        "label": "Ontology Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ontology-interoperability",
+      "label": "Ontology Interoperability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "semantic-web-standards",
+      "label": "Semantic Web Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    }
+  ]
+}

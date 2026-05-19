@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:a0ed3047e419d0cb5504c5249d040d9a521fefb7b8039113edd3eccb93fae4dd",
+  "title": "NFT Swapping",
+  "slug": "nft-swapping",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nft-swapping",
+  "domain": "spatial-computing",
+  "definition": "Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-verification",
+        "label": "Asset Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:atomic-transaction",
+        "label": "Atomic Transaction"
+      },
+      {
+        "id": "urn:visionflow:linked:exchange-agreement",
+        "label": "Exchange Agreement"
+      },
+      {
+        "id": "urn:visionflow:linked:swap-smart-contract",
+        "label": "Swap Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gas-fee-payment",
+        "label": "Gas Fee Payment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-liquidity",
+        "label": "Asset Liquidity"
+      },
+      {
+        "id": "urn:visionflow:linked:direct-exchange",
+        "label": "Direct Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:peer-to-peer-trading",
+        "label": "Peer-to-Peer Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-minimized-transfer",
+        "label": "Trust-Minimized Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-liquidity",
+      "label": "Asset Liquidity"
+    },
+    {
+      "slug": "asset-verification",
+      "label": "Asset Verification"
+    },
+    {
+      "slug": "atomic-transaction",
+      "label": "Atomic Transaction"
+    },
+    {
+      "slug": "direct-exchange",
+      "label": "Direct Exchange"
+    },
+    {
+      "slug": "exchange-agreement",
+      "label": "Exchange Agreement"
+    },
+    {
+      "slug": "gas-fee-payment",
+      "label": "Gas Fee Payment"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "peer-to-peer-trading",
+      "label": "Peer-to-Peer Trading"
+    },
+    {
+      "slug": "swap-smart-contract",
+      "label": "Swap Smart Contract"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "trust-minimized-transfer",
+      "label": "Trust-Minimized Transfer"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptographic-verification",
+      "label": "Cryptographic Verification"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-marketplace",
+      "label": "NFT Marketplace"
+    },
+    {
+      "slug": "nft-ownership-proof",
+      "label": "NFT Ownership Proof"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    }
+  ]
+}

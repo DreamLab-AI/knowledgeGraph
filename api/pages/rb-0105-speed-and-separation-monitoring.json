@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:065e5621bb21004baca2e890d66286f4c02708762c44f5ae95e888cbb9defd2a",
+  "title": "rb 0105 speed and separation monitoring",
+  "slug": "rb-0105-speed-and-separation-monitoring",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0105-speed-and-separation-monitoring",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:light-curtain",
+      "label": "Light Curtain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

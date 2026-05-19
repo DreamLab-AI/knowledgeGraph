@@ -1,24 +1,516 @@
-iri:: http://narrativegoldmine.com/spatial-computing#HealthMetaverseApplication
-uri:: urn:visionclaw:concept:spatial-computing:health-metaverse-application
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:health-metaverse-application
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Health Metaverse Application
-content-hash:: sha256-12-7f194f186646
-legacy-term-id:: 20311
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#HealthMetaverseApplication
+legacy_uri:: urn:visionclaw:concept:spatial-computing:health-metaverse-application
 public:: true
+
+# Health Metaverse Application
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb",
+  "@type": "Page",
+  "vc:slug": "health-metaverse-application",
+  "title": "Health Metaverse Application",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-medical-imaging",
+      "vc:label": "3D Medical Imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:biometric-sensor-integration",
+      "vc:label": "Biometric Sensor Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:clinical-ai",
+      "vc:label": "Clinical AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:diagnostic-interface",
+      "vc:label": "Diagnostic Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:dicom",
+      "vc:label": "DICOM"
+    },
+    {
+      "@id": "urn:visionflow:linked:end-to-end-encryption",
+      "vc:label": "End-to-End Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:fda-digital-health",
+      "vc:label": "FDA Digital Health"
+    },
+    {
+      "@id": "urn:visionflow:linked:haptic-feedback-system",
+      "vc:label": "Haptic Feedback System"
+    },
+    {
+      "@id": "urn:visionflow:linked:health-record-system",
+      "vc:label": "Health Record System"
+    },
+    {
+      "@id": "urn:visionflow:linked:hl7-fhir",
+      "vc:label": "HL7 FHIR"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-education",
+      "vc:label": "Medical Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-simulation",
+      "vc:label": "Medical Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mental-health-therapy",
+      "vc:label": "Mental Health Therapy"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-healthcare",
+      "vc:label": "OpenXR Healthcare"
+    },
+    {
+      "@id": "urn:visionflow:linked:patient-portal",
+      "vc:label": "Patient Portal"
+    },
+    {
+      "@id": "urn:visionflow:linked:rehabilitation-program",
+      "vc:label": "Rehabilitation Program"
+    },
+    {
+      "@id": "urn:visionflow:linked:surgical-training",
+      "vc:label": "Surgical Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:telemedicine",
+      "vc:label": "Telemedicine"
+    },
+    {
+      "@id": "urn:visionflow:linked:therapy-environment",
+      "vc:label": "Therapy Environment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "vc:label": "Metaverse Application Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-clinic",
+      "vc:label": "Virtual Clinic"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "vc:label": "VirtualSocietyDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-device",
+      "vc:label": "XR Device"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7f194f186646"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#HealthMetaverseApplication"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20311"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Health Metaverse Application"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:health-metaverse-application"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:health-metaverse-application"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:health-metaverse-application",
+  "@type": "OntologyClass",
+  "label": "Health Metaverse Application",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A specialized virtual platform integrating healthcare delivery, medical training, therapeutic interventions, and patient engagement through immersive environments that comply with health data regulations and clinical standards.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "vc:label": "Metaverse Application Platform"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:diagnostic-interface",
+      "vc:label": "Diagnostic Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:health-record-system",
+      "vc:label": "Health Record System"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-simulation",
+      "vc:label": "Medical Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:patient-portal",
+      "vc:label": "Patient Portal"
+    },
+    {
+      "@id": "urn:visionflow:linked:therapy-environment",
+      "vc:label": "Therapy Environment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-clinic",
+      "vc:label": "Virtual Clinic"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:biometric-sensor-integration",
+      "vc:label": "Biometric Sensor Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:end-to-end-encryption",
+      "vc:label": "End-to-End Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:haptic-feedback-system",
+      "vc:label": "Haptic Feedback System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:medical-education",
+      "vc:label": "Medical Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:mental-health-therapy",
+      "vc:label": "Mental Health Therapy"
+    },
+    {
+      "@id": "urn:visionflow:linked:rehabilitation-program",
+      "vc:label": "Rehabilitation Program"
+    },
+    {
+      "@id": "urn:visionflow:linked:surgical-training",
+      "vc:label": "Surgical Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:telemedicine",
+      "vc:label": "Telemedicine"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:3-d-medical-imaging",
+      "vc:label": "3D Medical Imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:clinical-ai",
+      "vc:label": "Clinical AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-device",
+      "vc:label": "XR Device"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:health-metaverse-application:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Medical Imaging]]",
+      "resolved": "urn:visionflow:linked:3-d-medical-imaging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Biometric Sensor Integration]]",
+      "resolved": "urn:visionflow:linked:biometric-sensor-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Clinical AI]]",
+      "resolved": "urn:visionflow:linked:clinical-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diagnostic Interface]]",
+      "resolved": "urn:visionflow:linked:diagnostic-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DICOM]]",
+      "resolved": "urn:visionflow:linked:dicom",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[End-to-End Encryption]]",
+      "resolved": "urn:visionflow:linked:end-to-end-encryption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FDA Digital Health]]",
+      "resolved": "urn:visionflow:linked:fda-digital-health",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Haptic Feedback System]]",
+      "resolved": "urn:visionflow:linked:haptic-feedback-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Health Record System]]",
+      "resolved": "urn:visionflow:linked:health-record-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HL7 FHIR]]",
+      "resolved": "urn:visionflow:linked:hl7-fhir",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Medical Education]]",
+      "resolved": "urn:visionflow:linked:medical-education",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Medical Simulation]]",
+      "resolved": "urn:visionflow:linked:medical-simulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mental Health Therapy]]",
+      "resolved": "urn:visionflow:linked:mental-health-therapy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Healthcare]]",
+      "resolved": "urn:visionflow:linked:open-xr-healthcare",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Patient Portal]]",
+      "resolved": "urn:visionflow:linked:patient-portal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rehabilitation Program]]",
+      "resolved": "urn:visionflow:linked:rehabilitation-program",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Surgical Training]]",
+      "resolved": "urn:visionflow:linked:surgical-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Telemedicine]]",
+      "resolved": "urn:visionflow:linked:telemedicine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Therapy Environment]]",
+      "resolved": "urn:visionflow:linked:therapy-environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Management]]",
+      "resolved": "urn:visionflow:owl:class:identity-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Application Platform]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-application-platform",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:network-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Clinic]]",
+      "resolved": "urn:visionflow:owl:class:virtual-clinic",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualSocietyDomain]]",
+      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[XR Device]]",
+      "resolved": "urn:visionflow:owl:class:xr-device",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A specialized virtual platform integrating healthcare delivery, medical training, therapeutic interventions, and patient engagement through immersive environments that comply with health data regulations and clinical standards.

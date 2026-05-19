@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:f9cc0599e86774f097dabb0b2f3332faddbdcf49793b4b44b904fdf0a01bfb7d",
+  "title": "XR Hardware",
+  "slug": "xr-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-hardware",
+  "domain": "spatial-computing",
+  "definition": "X R Hardware is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "vr-controllers",
+      "label": "VR Controllers"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "xr-device",
+      "label": "XR Device"
+    },
+    {
+      "slug": "xr-headset",
+      "label": "XR Headset"
+    }
+  ]
+}

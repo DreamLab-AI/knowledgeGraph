@@ -1,21 +1,264 @@
-iri:: http://narrativegoldmine.com/blockchain#BlockchainSustainability
-uri:: urn:visionclaw:concept:blockchain:blockchain-sustainability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:blockchain-sustainability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Blockchain Sustainability
-content-hash:: sha256-12-dd24f221a695
-legacy-term-id:: BC-7008
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#BlockchainSustainability
+legacy_uri:: urn:visionclaw:concept:blockchain:blockchain-sustainability
 public:: true
+
+# Blockchain Sustainability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe",
+  "@type": "Page",
+  "vc:slug": "blockchain-sustainability",
+  "title": "Blockchain Sustainability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-energy-optimisation",
+      "vc:label": "AI Energy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:carbon-credit",
+      "vc:label": "Carbon Credit"
+    },
+    {
+      "@id": "urn:visionflow:linked:esg-compliance",
+      "vc:label": "ESG Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:green-finance",
+      "vc:label": "Green Finance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-stake",
+      "vc:label": "Proof-of-Stake"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "Proof-of-Work"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dd24f221a695"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#BlockchainSustainability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-7008"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Blockchain Sustainability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-sustainability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-sustainability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:blockchain-sustainability",
+  "@type": "OntologyClass",
+  "label": "Blockchain Sustainability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies. Proof-of-Stake networks like Ethereum post-Merge achieve 99.9% energy reduction versus Proof-of-Work, while protocols like Algorand have achieved carbon-negative status.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:carbon-credit",
+      "vc:label": "Carbon Credit"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-stake",
+      "vc:label": "Proof-of-Stake"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "Proof-of-Work"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:linked:esg-compliance",
+      "vc:label": "ESG Compliance"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:ai-energy-optimisation",
+      "vc:label": "AI Energy Optimisation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-sustainability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Energy Optimisation]]",
+      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Carbon Credit]]",
+      "resolved": "urn:visionflow:linked:carbon-credit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ESG Compliance]]",
+      "resolved": "urn:visionflow:linked:esg-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Green Finance]]",
+      "resolved": "urn:visionflow:linked:green-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof-of-Stake]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-stake",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof-of-Work]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-work",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies. Proof-of-Stake networks like Ethereum post-Merge achieve 99.9% energy reduction versus Proof-of-Work, while protocols like Algorand have achieved carbon-negative status.

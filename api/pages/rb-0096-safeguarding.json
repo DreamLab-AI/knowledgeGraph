@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:793ee71dc13fc12236f5d2b1da5bf2d52e223f94034e81e7132f9307ad4fea7d",
+  "title": "rb 0096 safeguarding",
+  "slug": "rb-0096-safeguarding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0096-safeguarding",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-safety",
+      "label": "Robot Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

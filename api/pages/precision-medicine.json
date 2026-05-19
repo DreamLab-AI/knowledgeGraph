@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:32bd93baf91d0fd6cb0f52cea2ac473968231e0d2f7615713b9a3e356005360b",
+  "title": "Precision Medicine",
+  "slug": "precision-medicine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:precision-medicine",
+  "domain": "spatial-computing",
+  "definition": "Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "genomics",
+      "label": "Genomics"
+    },
+    {
+      "slug": "drug-discovery-ai",
+      "label": "Drug Discovery AI"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    }
+  ]
+}

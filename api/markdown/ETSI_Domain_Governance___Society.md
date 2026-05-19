@@ -1,21 +1,267 @@
-iri:: http://narrativegoldmine.com/metaverse#ETSIDomainGovernanceSociety
-uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancesociety
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancesociety
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: ETSI_Domain_Governance___Society
-content-hash:: sha256-12-b9a0ed058439
-legacy-term-id:: MV-2002
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ETSIDomainGovernanceSociety
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancesociety
 public:: true
+
+# ETSI_Domain_Governance___Society
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-governance-society",
+  "title": "ETSI_Domain_Governance___Society",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:community-participation",
+      "vc:label": "Community Participation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-respect",
+      "vc:label": "Cultural Respect"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi",
+      "vc:label": "ETSI"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-mec-032",
+      "vc:label": "ETSI GR MEC 032"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-23257",
+      "vc:label": "ISO 23257"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-standards-forum",
+      "vc:label": "Metaverse Standards Forum"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-equity",
+      "vc:label": "Social Equity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accessibility-standards",
+      "vc:label": "Accessibility Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b9a0ed058439"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ETSIDomainGovernanceSociety"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2002"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Governance___Society"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancesociety"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancesociety"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-governance-society",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Governance___Society",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure. This domain ensures [[Social Equity]], [[Community Participation]], [[Accessibility Standards]], and [[Cultural Respect]] in technology governance.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-governance-society:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Community Participation]]",
+      "resolved": "urn:visionflow:linked:community-participation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cultural Respect]]",
+      "resolved": "urn:visionflow:linked:cultural-respect",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI]]",
+      "resolved": "urn:visionflow:linked:etsi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR MEC 032]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 23257]]",
+      "resolved": "urn:visionflow:linked:iso-23257",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Standards Forum]]",
+      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Social Equity]]",
+      "resolved": "urn:visionflow:linked:social-equity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accessibility Standards]]",
+      "resolved": "urn:visionflow:owl:class:accessibility-standards",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure. This domain ensures [[Social Equity]], [[Community Participation]], [[Accessibility Standards]], and [[Cultural Respect]] in technology governance.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:304b144012944413e44457d58592651783d254d0d6517681ad277a7352e43111",
+  "title": "Fuzzy Logic",
+  "slug": "fuzzy-logic",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fuzzy-logic",
+  "domain": "artificial-intelligence",
+  "definition": "Fuzzy Logic is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:control-systems",
+        "label": "Control Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

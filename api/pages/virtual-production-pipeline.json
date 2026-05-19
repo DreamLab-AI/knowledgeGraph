@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:96d7d837a9d4ef7a28fe525ab1f80dd675862cfdeebc4b591a76dc6e2fdaf73c",
+  "title": "Virtual Production Pipeline",
+  "slug": "virtual-production-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-production-pipeline",
+  "domain": "spatial-computing",
+  "definition": "The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-production-volume",
+      "label": "Virtual Production Volume"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:52d492846a8cc9529b38ebd87998f011411b8d1f4681cd8ddd578920fd774a4a",
+  "title": "VisioningLab-Property-Crosswalk",
+  "slug": "visioning-lab-property-crosswalk",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:visioning-lab-property-crosswalk",
+  "domain": "spatial-computing",
+  "definition": "Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "\u2192 ai:maturity",
+  "status": "\u2192 ai:status",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-has-part",
+        "label": "\u2192 ai:hasPart"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-requires",
+        "label": "\u2192 ai:requires"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-enables",
+        "label": "\u2192 ai:enables"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ai-implements",
+        "label": "\u2192 ai:implements"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aliases",
+      "label": "Aliases"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:f6ac8428e4a51ff4a7b4bed1f9305f6644002856c2be1b8a8505a93f7080c487",
+  "title": "Digital Asset Standards",
+  "slug": "digital-asset-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-asset-standards",
+  "domain": "spatial-computing",
+  "definition": "Digital Asset Standards is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "provenance-standard",
+      "label": "Provenance Standard"
+    }
+  ]
+}

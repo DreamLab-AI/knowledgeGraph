@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:685b0907b0977c4b94716b0da2100a80f73f7244fcd2075ef99ebd715162b27f",
+  "title": "ETSI Domain AI + Human Interface",
+  "slug": "etsi-domain-ai-human-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
+  "domain": "artificial-intelligence",
+  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with human interaction systems including conversational AI, gesture recognition, emotion detection, and intelligent user experience adaptation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:conversational-ai-classification",
+        "label": "Conversational AI Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligent-ux-categorization",
+        "label": "Intelligent UX Categorization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "conversational-ai-classification",
+      "label": "Conversational AI Classification"
+    },
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "intelligent-ux-categorization",
+      "label": "Intelligent UX Categorization"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    }
+  ]
+}

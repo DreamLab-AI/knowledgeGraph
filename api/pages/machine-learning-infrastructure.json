@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd",
+  "title": "Machine Learning Infrastructure",
+  "slug": "machine-learning-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:machine-learning-infrastructure",
+  "domain": "artificial-intelligence",
+  "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:scalable-ai-training",
+        "label": "Scalable AI Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "scalable-ai-training",
+      "label": "Scalable AI Training"
+    },
+    {
+      "slug": "computing-infrastructure",
+      "label": "Computing Infrastructure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    }
+  ]
+}

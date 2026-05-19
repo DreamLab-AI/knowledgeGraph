@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:8ae540687788c83c06ce6066e7b4bea481f661e9ca30bb0941480e10dd0e454c",
+  "title": "Digital Payment System",
+  "slug": "digital-payment-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-payment-system",
+  "domain": "spatial-computing",
+  "definition": "The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and services. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-transactions",
+        "label": "Virtual Transactions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "payment-gateway",
+      "label": "Payment Gateway"
+    },
+    {
+      "slug": "virtual-transactions",
+      "label": "Virtual Transactions"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "financial-infrastructure",
+      "label": "Financial Infrastructure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    }
+  ]
+}

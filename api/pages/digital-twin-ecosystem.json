@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:35e772f5431ce439f1e6dd93fa53550a386b412644cd5ef0758bbb0527e54a82",
+  "title": "Digital Twin Ecosystem",
+  "slug": "digital-twin-ecosystem",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-ecosystem",
+  "domain": "spatial-computing",
+  "definition": "The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working together to create, maintain, and derive value from virtual replicas of physical systems. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technology-ecosystem",
+      "label": "Technology Ecosystem"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-analytics",
+        "label": "Cross-Platform Analytics"
+      },
+      {
+        "id": "urn:visionflow:linked:enterprise-digital-twins",
+        "label": "Enterprise Digital Twins"
+      },
+      {
+        "id": "urn:visionflow:owl:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cloud-platform",
+      "label": "Cloud Platform"
+    },
+    {
+      "slug": "cross-platform-analytics",
+      "label": "Cross-Platform Analytics"
+    },
+    {
+      "slug": "enterprise-digital-twins",
+      "label": "Enterprise Digital Twins"
+    },
+    {
+      "slug": "io-t-infrastructure",
+      "label": "IoT Infrastructure"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-standards",
+      "label": "Data Standards"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-integration",
+      "label": "System Integration"
+    },
+    {
+      "slug": "technology-ecosystem",
+      "label": "Technology Ecosystem"
+    }
+  ],
+  "backlinks": []
+}

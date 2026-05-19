@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d04fe10c7eb8472ec6c7a0bbc94b84991861d0bc9888e8ce55a4af632fb68e66",
+  "title": "Data Access Interface",
+  "slug": "data-access-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-access-interface",
+  "domain": "infrastructure",
+  "definition": "Data Access Interface is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "sparql-endpoint",
+      "label": "SPARQL Endpoint"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": "urn:visionflow:page:56d1b7db3ab197eb27be0e9a230745dd18b641567fcefd02b80503b23e89b373",
+  "title": "Biometric Binding Mechanism",
+  "slug": "biometric-binding-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:biometric-binding-mechanism",
+  "domain": "spatial-computing",
+  "definition": "Physical hardware device that captures and verifies biometric traits (fingerprints, iris patterns, facial geometry) to bind digital identities to authenticated users.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:facial-recognition-sensor",
+        "label": "Facial Recognition Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:fingerprint-scanner",
+        "label": "Fingerprint Scanner"
+      },
+      {
+        "id": "urn:visionflow:linked:iris-recognition-camera",
+        "label": "Iris Recognition Camera"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-element-chip",
+        "label": "Secure Element Chip"
+      },
+      {
+        "id": "urn:visionflow:linked:template-matching-processor",
+        "label": "Template Matching Processor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:anti-spoofing-module",
+        "label": "Anti-Spoofing Module"
+      },
+      {
+        "id": "urn:visionflow:linked:encrypted-storage",
+        "label": "Encrypted Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrared-illuminator",
+        "label": "Infrared Illuminator"
+      },
+      {
+        "id": "urn:visionflow:owl:class:optical-sensor-array",
+        "label": "Optical Sensor Array"
+      },
+      {
+        "id": "urn:visionflow:owl:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "anti-spoofing-module",
+      "label": "Anti-Spoofing Module"
+    },
+    {
+      "slug": "authentication-server",
+      "label": "Authentication Server"
+    },
+    {
+      "slug": "biometric-template-database",
+      "label": "Biometric Template Database"
+    },
+    {
+      "slug": "edge-layer",
+      "label": "EdgeLayer"
+    },
+    {
+      "slug": "encrypted-storage",
+      "label": "Encrypted Storage"
+    },
+    {
+      "slug": "facial-recognition-sensor",
+      "label": "Facial Recognition Sensor"
+    },
+    {
+      "slug": "fido-alliance",
+      "label": "FIDO Alliance"
+    },
+    {
+      "slug": "fingerprint-scanner",
+      "label": "Fingerprint Scanner"
+    },
+    {
+      "slug": "iris-recognition-camera",
+      "label": "Iris Recognition Camera"
+    },
+    {
+      "slug": "iso-19794",
+      "label": "ISO 19794"
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    },
+    {
+      "slug": "secure-element-chip",
+      "label": "Secure Element Chip"
+    },
+    {
+      "slug": "template-matching-processor",
+      "label": "Template Matching Processor"
+    },
+    {
+      "slug": "zero-trust-security-framework",
+      "label": "Zero Trust Security Framework"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "infrared-illuminator",
+      "label": "Infrared Illuminator"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

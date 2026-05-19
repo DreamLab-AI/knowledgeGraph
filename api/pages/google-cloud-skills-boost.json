@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:cdc6a7b228069895b1efaa8e32b7599a8e050d916b355636e81a6d298ee64962",
+  "title": "Google cloud skills boost",
+  "slug": "google-cloud-skills-boost",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:google-cloud-skills-boost",
+  "domain": "infrastructure",
+  "definition": "Google cloud skills boost is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "courses-and-training",
+      "label": "Courses and Training"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "large language models"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,264 @@
+{
+  "id": "urn:visionflow:page:ad07f69a9b70c56365508eae6f73464d7111d0f6c176666f7bb4e7462755d363",
+  "title": "VelocityControl",
+  "slug": "velocity-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:velocity-control",
+  "domain": "robotics",
+  "definition": "A closed-loop feedback control strategy that regulates the rate of change of position (linear velocity v in m/s or angular velocity \u03c9 in rad/s) of a robotic actuator, motor shaft, conveyor system, or mobile robot platform by continuously measuring actual velocity via tachometers (\u00b10.1% full-scale accuracy), optical encoders differentiated numerically (1000-10,000 pulses per revolution providing 0.006-0.06 \u00b0/pulse resolution), or inertial measurement units (IMUs with \u00b12% velocity estimation error), computing velocity error (commanded minus measured), and adjusting motor current or voltage through proportional-integral (PI) controllers (C(s) = K_p + K_i/s with typical gains K_p = 0.5-5 A/(rad/s), K_i = 10-100 A/(rad\u00b7s)), velocity feedforward compensation (u_ff = J\u00b7\u03c9\u0307_cmd + B\u00b7\u03c9_cmd accounting for inertia J and damping B), or state observers (Luenberger observers reconstructing velocity from position measurements when direct velocity sensing unavailable), with applications including CNC machine tool spindle speed regulation (maintaining 6,000-24,000 RPM \u00b10.5% for precision milling), conveyor belt speed synchronization (coordinating multiple belts at 0.5-5 m/s \u00b12% for packaging lines), ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.9,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:error-calculation",
+        "label": "ErrorCalculation"
+      },
+      {
+        "id": "urn:visionflow:linked:feedforward-compensation",
+        "label": "FeedforwardCompensation"
+      },
+      {
+        "id": "urn:visionflow:linked:picontroller",
+        "label": "PIController"
+      },
+      {
+        "id": "urn:visionflow:linked:state-observer",
+        "label": "StateObserver"
+      },
+      {
+        "id": "urn:visionflow:linked:velocity-measurement",
+        "label": "VelocityMeasurement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bandwidth-design",
+        "label": "BandwidthDesign"
+      },
+      {
+        "id": "urn:visionflow:linked:controller-tuning",
+        "label": "ControllerTuning"
+      },
+      {
+        "id": "urn:visionflow:linked:noise-filtering",
+        "label": "NoiseFiltering"
+      },
+      {
+        "id": "urn:visionflow:linked:stability-analysis",
+        "label": "StabilityAnalysis"
+      },
+      {
+        "id": "urn:visionflow:linked:velocity-estimation",
+        "label": "VelocityEstimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:constant-throughput",
+        "label": "ConstantThroughput"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-efficiency",
+        "label": "EnergyEfficiency"
+      },
+      {
+        "id": "urn:visionflow:linked:speed-regulation",
+        "label": "SpeedRegulation"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronized-motion",
+        "label": "SynchronizedMotion"
+      },
+      {
+        "id": "urn:visionflow:linked:velocity-profiling",
+        "label": "VelocityProfiling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:cascade-control",
+        "label": "CascadeControl"
+      },
+      {
+        "id": "urn:visionflow:linked:feedforward-control",
+        "label": "FeedforwardControl"
+      },
+      {
+        "id": "urn:visionflow:linked:observer-design",
+        "label": "ObserverDesign"
+      },
+      {
+        "id": "urn:visionflow:linked:picontrol",
+        "label": "PIControl"
+      },
+      {
+        "id": "urn:visionflow:owl:class:adaptive-control",
+        "label": "AdaptiveControl"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ansi-ria-r15-06-industrial-robot-safety",
+      "label": "ANSI/RIA R15.06 Industrial Robot Safety"
+    },
+    {
+      "slug": "bandwidth-design",
+      "label": "BandwidthDesign"
+    },
+    {
+      "slug": "cascade-control",
+      "label": "CascadeControl"
+    },
+    {
+      "slug": "constant-throughput",
+      "label": "ConstantThroughput"
+    },
+    {
+      "slug": "controller-tuning",
+      "label": "ControllerTuning"
+    },
+    {
+      "slug": "current-amplifier",
+      "label": "CurrentAmplifier"
+    },
+    {
+      "slug": "digital-controller",
+      "label": "DigitalController"
+    },
+    {
+      "slug": "energy-efficiency",
+      "label": "EnergyEfficiency"
+    },
+    {
+      "slug": "error-calculation",
+      "label": "ErrorCalculation"
+    },
+    {
+      "slug": "feedback-control-of-dynamic-systems-franklin-et-al",
+      "label": "Feedback Control of Dynamic Systems - Franklin et al."
+    },
+    {
+      "slug": "feedforward-compensation",
+      "label": "FeedforwardCompensation"
+    },
+    {
+      "slug": "feedforward-control",
+      "label": "FeedforwardControl"
+    },
+    {
+      "slug": "iec-61800-adjustable-speed-electrical-power-drive-systems",
+      "label": "IEC 61800 Adjustable Speed Electrical Power Drive Systems"
+    },
+    {
+      "slug": "ieee-std-1547-distributed-energy-resources",
+      "label": "IEEE Std 1547 Distributed Energy Resources"
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "label": "ISO 8373 Robotics Vocabulary"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "MotorDriver"
+    },
+    {
+      "slug": "noise-filtering",
+      "label": "NoiseFiltering"
+    },
+    {
+      "slug": "observer-design",
+      "label": "ObserverDesign"
+    },
+    {
+      "slug": "picontrol",
+      "label": "PIControl"
+    },
+    {
+      "slug": "picontroller",
+      "label": "PIController"
+    },
+    {
+      "slug": "pwmmodulator",
+      "label": "PWMModulator"
+    },
+    {
+      "slug": "speed-regulation",
+      "label": "SpeedRegulation"
+    },
+    {
+      "slug": "stability-analysis",
+      "label": "StabilityAnalysis"
+    },
+    {
+      "slug": "state-observer",
+      "label": "StateObserver"
+    },
+    {
+      "slug": "synchronized-motion",
+      "label": "SynchronizedMotion"
+    },
+    {
+      "slug": "velocity-estimation",
+      "label": "VelocityEstimation"
+    },
+    {
+      "slug": "velocity-measurement",
+      "label": "VelocityMeasurement"
+    },
+    {
+      "slug": "velocity-profiling",
+      "label": "VelocityProfiling"
+    },
+    {
+      "slug": "velocity-sensor",
+      "label": "VelocitySensor"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "AdaptiveControl"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "ControlAlgorithm"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "FeedbackControl"
+    },
+    {
+      "slug": "motion-control",
+      "label": "MotionControl"
+    },
+    {
+      "slug": "servo-control",
+      "label": "ServoControl"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    }
+  ]
+}

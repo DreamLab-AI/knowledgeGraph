@@ -1,0 +1,255 @@
+{
+  "id": "urn:visionflow:page:fa1321ba559955742ac283d88f118e36f12a219ea86d2e9c7c924d65faccdcb9",
+  "title": "Communication Protocol",
+  "slug": "communication-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:communication-protocol",
+  "domain": "robotics",
+  "definition": "Communication protocol defines message formats, transmission rules, addressing schemes, and error-handling procedures that enable robots and computational systems to reliably exchange information over wired or wireless channels. Protocols form the foundational layer enabling [[Inter-Robot Communication]], centralised control architectures, sensor data fusion, and multi-robot task coordination.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:communication-systems",
+      "label": "Communication Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:information-architecture",
+      "label": "Information Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:addressing-scheme",
+        "label": "Addressing Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:visionflow:linked:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "id": "urn:visionflow:linked:message-format",
+        "label": "Message Format"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bandwidth-constraints",
+        "label": "Bandwidth Constraints"
+      },
+      {
+        "id": "urn:visionflow:linked:data-serialisation",
+        "label": "Data Serialisation"
+      },
+      {
+        "id": "urn:visionflow:linked:latency-tolerance",
+        "label": "Latency Tolerance"
+      },
+      {
+        "id": "urn:visionflow:linked:network-physical-layer",
+        "label": "Network Physical Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronisation-mechanism",
+        "label": "Synchronisation Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:distributed-control",
+        "label": "Distributed Control"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-teleoperation",
+        "label": "Remote Teleoperation"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-data-fusion",
+        "label": "Sensor Data Fusion"
+      },
+      {
+        "id": "urn:visionflow:linked:swarm-coordination",
+        "label": "Swarm Coordination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "5-g",
+      "label": "5G"
+    },
+    {
+      "slug": "addressing-scheme",
+      "label": "Addressing Scheme"
+    },
+    {
+      "slug": "bandwidth-constraints",
+      "label": "Bandwidth Constraints"
+    },
+    {
+      "slug": "battery-powered-robots",
+      "label": "Battery-Powered Robots"
+    },
+    {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
+      "slug": "communication-systems",
+      "label": "Communication Systems"
+    },
+    {
+      "slug": "congestion-control",
+      "label": "Congestion Control"
+    },
+    {
+      "slug": "cyber-physical-security",
+      "label": "Cyber-Physical Security"
+    },
+    {
+      "slug": "data-serialisation",
+      "label": "Data Serialisation"
+    },
+    {
+      "slug": "dds",
+      "label": "DDS"
+    },
+    {
+      "slug": "distributed-control",
+      "label": "Distributed Control"
+    },
+    {
+      "slug": "error-correction",
+      "label": "Error Correction"
+    },
+    {
+      "slug": "ethernet",
+      "label": "Ethernet"
+    },
+    {
+      "slug": "inter-robot-communication",
+      "label": "Inter-Robot Communication"
+    },
+    {
+      "slug": "latency-tolerance",
+      "label": "Latency Tolerance"
+    },
+    {
+      "slug": "message-format",
+      "label": "Message Format"
+    },
+    {
+      "slug": "network-physical-layer",
+      "label": "Network Physical Layer"
+    },
+    {
+      "slug": "orocos",
+      "label": "OROCOS"
+    },
+    {
+      "slug": "profinet",
+      "label": "PROFINET"
+    },
+    {
+      "slug": "remote-teleoperation",
+      "label": "Remote Teleoperation"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
+      "slug": "ros-2",
+      "label": "ROS 2"
+    },
+    {
+      "slug": "sensor-data-fusion",
+      "label": "Sensor Data Fusion"
+    },
+    {
+      "slug": "swarm-coordination",
+      "label": "Swarm Coordination"
+    },
+    {
+      "slug": "synchronisation-mechanism",
+      "label": "Synchronisation Mechanism"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "information-architecture",
+      "label": "Information Architecture"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "api-standard",
+      "label": "API Standard"
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "emc-standard",
+      "label": "EMC Standard"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

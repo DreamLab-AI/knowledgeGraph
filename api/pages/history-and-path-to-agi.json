@@ -1,0 +1,448 @@
+{
+  "id": "urn:visionflow:page:b814dcac254473d609c6a63302198692b21aa0922a9aec6f4c81e656034b411a",
+  "title": "History and Path to AGI",
+  "slug": "history-and-path-to-agi",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:history-and-path-to-agi",
+  "domain": "artificial-intelligence",
+  "definition": "History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's trajectory toward Artificial General Intelligence (AGI) \u2014 a hypothetical system matching or exceeding human-level cognitive performance across all domains without task-specific training \u2014 spanning the conceptual foundations of Alan Turing's 1950 paper \"Computing Machinery and Intelligence\" in Mind (introducing the imitation game as an operational criterion for machine thought, asking \"Can machines think?\" and proposing the Turing Test as the deflationary substitute for that metaphysically fraught question), the formal founding of AI as a discipline at the Dartmouth Summer Research Project on Artificial Intelligence in 1956 convened by John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon at Dartmouth College proposing over two months that \"every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simu",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-research",
+      "label": "AI Research"
+    },
+    {
+      "id": "urn:visionflow:linked:cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "id": "urn:visionflow:linked:scientific-paradigm",
+      "label": "Scientific Paradigm"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-history",
+      "label": "Technology History"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-winter",
+        "label": "AI Winter"
+      },
+      {
+        "id": "urn:visionflow:linked:connectionism",
+        "label": "Connectionism"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:linked:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:visionflow:owl:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-substrate",
+        "label": "Computational Substrate"
+      },
+      {
+        "id": "urn:visionflow:linked:institutional-funding",
+        "label": "Institutional Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-ai-evaluation",
+        "label": "Frontier AI Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-discovery-acceleration",
+        "label": "Scientific Discovery Acceleration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:visionflow:linked:turing-test",
+        "label": "Turing Test"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "acl",
+      "label": "ACL"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "ai-research",
+      "label": "AI Research"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "ai-winter",
+      "label": "AI Winter"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "computational-substrate",
+      "label": "Computational Substrate"
+    },
+    {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    },
+    {
+      "slug": "connectionism",
+      "label": "Connectionism"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "frontier-ai-evaluation",
+      "label": "Frontier AI Evaluation"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "iclr",
+      "label": "ICLR"
+    },
+    {
+      "slug": "icml",
+      "label": "ICML"
+    },
+    {
+      "slug": "institutional-funding",
+      "label": "Institutional Funding"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "mathematical-foundations",
+      "label": "Mathematical Foundations"
+    },
+    {
+      "slug": "mathematics",
+      "label": "Mathematics"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
+      "slug": "nature",
+      "label": "Nature"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "neuroscience",
+      "label": "Neuroscience"
+    },
+    {
+      "slug": "philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
+      "slug": "research-layer",
+      "label": "ResearchLayer"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "science",
+      "label": "Science"
+    },
+    {
+      "slug": "science-and-technology-studies-domain",
+      "label": "ScienceAndTechnologyStudiesDomain"
+    },
+    {
+      "slug": "scientific-discovery-acceleration",
+      "label": "Scientific Discovery Acceleration"
+    },
+    {
+      "slug": "scientific-method",
+      "label": "Scientific Method"
+    },
+    {
+      "slug": "scientific-paradigm",
+      "label": "Scientific Paradigm"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "technology-history",
+      "label": "Technology History"
+    },
+    {
+      "slug": "turing-test",
+      "label": "Turing Test"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

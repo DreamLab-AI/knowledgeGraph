@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearningInfrastructure
-uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning-infrastructure
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:machine-learning-infrastructure
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Machine Learning Infrastructure
-content-hash:: sha256-12-1f94d8fcec0e
-legacy-term-id:: MV-9950
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearningInfrastructure
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning-infrastructure
 public:: true
+
+# Machine Learning Infrastructure
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd",
+  "@type": "Page",
+  "vc:slug": "machine-learning-infrastructure",
+  "title": "Machine Learning Infrastructure",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:scalable-ai-training",
+      "vc:label": "Scalable AI Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computing-infrastructure",
+      "vc:label": "Computing Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1f94d8fcec0e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#MachineLearningInfrastructure"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9950"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Machine Learning Infrastructure"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:machine-learning-infrastructure"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:machine-learning-infrastructure"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:machine-learning-infrastructure",
+  "@type": "OntologyClass",
+  "label": "Machine Learning Infrastructure",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:computing-infrastructure",
+      "vc:label": "Computing Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:scalable-ai-training",
+      "vc:label": "Scalable AI Training"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning-infrastructure:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Scalable AI Training]]",
+      "resolved": "urn:visionflow:linked:scalable-ai-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computing Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:computing-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.

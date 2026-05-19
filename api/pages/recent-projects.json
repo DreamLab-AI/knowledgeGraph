@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:a5aaea4fea1863711995698c3a7a15a1bc807ceeabb8c0a6b5bdbefa284f4634",
+  "title": "Recent Projects",
+  "slug": "recent-projects",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:recent-projects",
+  "domain": "infrastructure",
+  "definition": "Recent Projects is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "presentation",
+      "label": "presentation"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    }
+  ]
+}

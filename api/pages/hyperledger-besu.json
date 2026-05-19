@@ -1,0 +1,145 @@
+{
+  "id": "urn:visionflow:page:d049053df1cf9b4d57ee78bd9af6401b7b156825db3ed717c54ec02cdcee358f",
+  "title": "Hyperledger Besu",
+  "slug": "hyperledger-besu",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hyperledger-besu",
+  "domain": "blockchain",
+  "definition": "Enterprise-grade Ethereum client developed by [[Hyperledger Foundation]] supporting both public and private blockchain deployments with multiple consensus mechanisms\u2014[[ProofOfWork]], [[ProofOfAuthority]], [[Practical Byzantine Fault Tolerance|PBFT]]. Besu provides full Ethereum compatibility whilst enabling permissioned networks through identity verification and privacy features like [[PrivateChannels]], making it suitable for enterprise consortia and regulatory compliance. The client integrates with [[Hyperledger Fabric]] and [[InterledgerProtocol]] for cross-chain interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "ConsensusProtocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0001-blockchain",
+      "label": "BC-0001-blockchain"
+    },
+    {
+      "slug": "bc-0142-smart-contract",
+      "label": "BC-0142-smart-contract"
+    },
+    {
+      "slug": "bc-0315-zero-knowledge-proof",
+      "label": "BC-0315-zero-knowledge-proof"
+    },
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0428-enterprise-blockchain-architecture",
+      "label": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "slug": "bc-0429-permissioned-blockchain",
+      "label": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0431-privacy-preserving-blockchain",
+      "label": "BC-0431-privacy-preserving-blockchain"
+    },
+    {
+      "slug": "hyperledger-foundation",
+      "label": "Hyperledger Foundation"
+    },
+    {
+      "slug": "hyperledger-foundation",
+      "label": "HyperledgerFoundation"
+    },
+    {
+      "slug": "interledger-protocol",
+      "label": "InterledgerProtocol"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "ConsensusProtocol"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "private-channels",
+      "label": "PrivateChannels"
+    },
+    {
+      "slug": "proof-of-authority",
+      "label": "ProofOfAuthority"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "ProofOfWork"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "enterprise-blockchain-architecture",
+      "label": "Enterprise Blockchain Architecture"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:00ed14d4080896336bce6123a0bb81ed17b13f7ef28b61993a4f041afe9bc1ba",
+  "title": "Social Presence Theory",
+  "slug": "social-presence-theory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-presence-theory",
+  "domain": "distributed-collaboration",
+  "definition": "\"A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and engaged in interpersonal exchange.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:nonverbal-communication",
+        "label": "NonverbalCommunication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:tele-002-telecollaboration",
+        "label": "TELE-002-telecollaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nonverbal-communication",
+      "label": "NonverbalCommunication"
+    },
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-004-media-richness-theory",
+      "label": "TELE-004-media-richness-theory"
+    },
+    {
+      "slug": "tele-006-presence",
+      "label": "TELE-006-presence"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-110-spatial-audio-processing",
+      "label": "TELE-110-spatial-audio-processing"
+    },
+    {
+      "slug": "tele-115-gaze-tracking",
+      "label": "TELE-115-gaze-tracking"
+    },
+    {
+      "slug": "communication-theory",
+      "label": "CommunicationTheory"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

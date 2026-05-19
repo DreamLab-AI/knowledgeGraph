@@ -1,22 +1,226 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#DaoGovernanceForTelecollaboration
-uri:: urn:visionclaw:concept:distributed-collaboration:dao-governance-for-telecollaboration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:dao-governance-for-telecollaboration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: DAO Governance for Telecollaboration
-content-hash:: sha256-12-53c11cbe00e9
-legacy-term-id:: TC-0252
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#DaoGovernanceForTelecollaboration
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:dao-governance-for-telecollaboration
 public:: true
-bridges-to:: [[Smart Contract]]
+
+# DAO Governance for Telecollaboration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82",
+  "@type": "Page",
+  "vc:slug": "dao-governance-for-telecollaboration",
+  "title": "DAO Governance for Telecollaboration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "Blockchain Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-autonomous-organisation",
+      "vc:label": "DecentralisedAutonomousOrganisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-250-blockchain-collaboration",
+      "vc:label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "vc:label": "TELE-251-smart-contract-coordination"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Smart Contract]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-53c11cbe00e9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#DaoGovernanceForTelecollaboration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0252"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "DAO Governance for Telecollaboration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:dao-governance-for-telecollaboration"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:dao-governance-for-telecollaboration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:dao-governance-for-telecollaboration",
+  "@type": "OntologyClass",
+  "label": "DAO Governance for Telecollaboration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "Blockchain Technology"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"The application of decentralised autonomous organisation (DAO) governance mechanisms—token-weighted voting, proposal systems, treasury management—to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:dao-governance-for-telecollaboration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Blockchain Technology]]",
+      "resolved": "urn:visionflow:linked:blockchain-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DecentralisedAutonomousOrganisation]]",
+      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-002-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-250-blockchain-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-250-blockchain-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-251-smart-contract-coordination]]",
+      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "The application of decentralised autonomous organisation (DAO) governance mechanisms—token-weighted voting, proposal systems, treasury management—to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures."

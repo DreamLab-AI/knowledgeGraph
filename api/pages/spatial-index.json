@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:87e134c26b99f088f559551a76aa16067c8cb6a96a0abac5ad55a1c6137bde45",
+  "title": "Spatial Index",
+  "slug": "spatial-index",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-index",
+  "domain": "spatial-computing",
+  "definition": "Data structure optimized for efficient storage, retrieval, and querying of 3D spatial objects within virtual worlds using hierarchical geometric partitioning.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:grid-based-index",
+        "label": "Grid-based Index"
+      },
+      {
+        "id": "urn:visionflow:linked:octree",
+        "label": "Octree"
+      },
+      {
+        "id": "urn:visionflow:linked:quadtree",
+        "label": "Quadtree"
+      },
+      {
+        "id": "urn:visionflow:linked:r-tree-structure",
+        "label": "R-tree Structure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bounding-box",
+        "label": "Bounding Box"
+      },
+      {
+        "id": "urn:visionflow:linked:distance-metric",
+        "label": "Distance Metric"
+      },
+      {
+        "id": "urn:visionflow:linked:geometric-primitives",
+        "label": "Geometric Primitives"
+      },
+      {
+        "id": "urn:visionflow:owl:class:coordinate-system",
+        "label": "Coordinate System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:level-of-detail-selection",
+        "label": "Level of Detail Selection"
+      },
+      {
+        "id": "urn:visionflow:linked:view-frustum-culling",
+        "label": "View Frustum Culling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fast-spatial-queries",
+        "label": "Fast Spatial Queries"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proximity-search",
+        "label": "Proximity Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bounding-box",
+      "label": "Bounding Box"
+    },
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "distance-metric",
+      "label": "Distance Metric"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF taxonomy"
+    },
+    {
+      "slug": "geometric-primitives",
+      "label": "Geometric Primitives"
+    },
+    {
+      "slug": "grid-based-index",
+      "label": "Grid-based Index"
+    },
+    {
+      "slug": "i-physical-layer",
+      "label": "I) Physical Layer"
+    },
+    {
+      "slug": "iv-data-layer",
+      "label": "IV) Data Layer"
+    },
+    {
+      "slug": "level-of-detail-selection",
+      "label": "Level of Detail Selection"
+    },
+    {
+      "slug": "octree",
+      "label": "Octree"
+    },
+    {
+      "slug": "quadtree",
+      "label": "Quadtree"
+    },
+    {
+      "slug": "r-tree-structure",
+      "label": "R-tree Structure"
+    },
+    {
+      "slug": "view-frustum-culling",
+      "label": "View Frustum Culling"
+    },
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "coordinate-system",
+      "label": "Coordinate System"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "fast-spatial-queries",
+      "label": "Fast Spatial Queries"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "nearest-neighbor-search",
+      "label": "Nearest Neighbor Search"
+    },
+    {
+      "slug": "proximity-search",
+      "label": "Proximity Search"
+    },
+    {
+      "slug": "spatial-database",
+      "label": "Spatial Database"
+    },
+    {
+      "slug": "virtual-world-infrastructure",
+      "label": "Virtual World Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    }
+  ]
+}

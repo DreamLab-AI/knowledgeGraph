@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:e9e19dd26dc00a72ad16b4c7c1f0a3470dc4e8659e720194345964c6b1392023",
+  "title": "Personalized Virtual Experiences",
+  "slug": "personalized-virtual-experiences",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:personalized-virtual-experiences",
+  "domain": "spatial-computing",
+  "definition": "AI-driven customization of virtual environments, content, and interactions based on individual user preferences, behaviors, and interests, enabling tailored journeys through metaverse spaces with adaptive storytelling, avatars, and content recommendations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-experience",
+      "label": "Virtual Experience"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-engagement",
+        "label": "User Engagement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "user-engagement",
+      "label": "User Engagement"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-experience",
+      "label": "Virtual Experience"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-psychology-profile",
+      "label": "Metaverse Psychology Profile"
+    },
+    {
+      "slug": "narrative-content",
+      "label": "Narrative Content"
+    }
+  ]
+}

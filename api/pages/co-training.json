@@ -1,0 +1,143 @@
+{
+  "id": "urn:visionflow:page:3914df8905fab887e68a262da3cffd1b33509c8b308d4eb4e8a15ba9538f4c58",
+  "title": "Co Training",
+  "slug": "co-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:co-training",
+  "domain": "artificial-intelligence",
+  "definition": "A semi-supervised learning technique where two or more models with different views of the data train each other by labelling unlabelled examples. Co-training leverages complementary feature sets or model architectures to improve performance through mutual teaching. bridges-to:: [[Autonomous Robot]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automation",
+      "label": "automation"
+    },
+    {
+      "slug": "base-models",
+      "label": "Base models"
+    },
+    {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "optimization",
+      "label": "optimization"
+    },
+    {
+      "slug": "research",
+      "label": "research"
+    },
+    {
+      "slug": "sec-securities-and-exchange-commission",
+      "label": "SEC (Securities and Exchange Commission)"
+    },
+    {
+      "slug": "siyaev2021towards",
+      "label": "siyaev2021towards"
+    },
+    {
+      "slug": "visualization",
+      "label": "visualization"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-superintelligence",
+      "label": "Artificial Superintelligence"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "copyright",
+      "label": "copyright"
+    },
+    {
+      "slug": "data-management",
+      "label": "data management"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ],
+  "backlinks": []
+}

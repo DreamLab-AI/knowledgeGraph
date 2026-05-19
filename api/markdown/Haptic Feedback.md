@@ -1,24 +1,402 @@
-iri:: http://narrativegoldmine.com/spatial-computing#HapticFeedback
-uri:: urn:visionclaw:concept:spatial-computing:haptic-feedback
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:haptic-feedback
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Haptic Feedback
-content-hash:: sha256-12-1b30bb682082
-legacy-term-id:: MV-3055
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#HapticFeedback
+legacy_uri:: urn:visionclaw:concept:spatial-computing:haptic-feedback
 public:: true
+
+# Haptic Feedback
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33",
+  "@type": "Page",
+  "vc:slug": "haptic-feedback",
+  "title": "Haptic Feedback",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:dt-calibrated-by",
+      "vc:label": "dt:calibratedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-controlled-by",
+      "vc:label": "dt:controlledBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enhances",
+      "vc:label": "dt:enhances"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-integrated-with",
+      "vc:label": "dt:integratedWith"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-optimized-by",
+      "vc:label": "dt:optimizedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:enhances-experience",
+      "vc:label": "enhancesExperience"
+    },
+    {
+      "@id": "urn:visionflow:linked:force-feedback",
+      "vc:label": "ForceFeedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:integrats-with",
+      "vc:label": "integratsWith"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensory-immersion",
+      "vc:label": "SensoryImmersion"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulates-sensation",
+      "vc:label": "simulatesSensation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tactile-actuator",
+      "vc:label": "TactileActuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:tactile-actuator",
+      "vc:label": "TactileActuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:touch-simulation",
+      "vc:label": "TouchSimulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-actuator",
+      "vc:label": "usesActuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:wearable-haptics",
+      "vc:label": "WearableHaptics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aisystem",
+      "vc:label": "AISystem"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:augmented-reality",
+      "vc:label": "AugmentedReality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptics",
+      "vc:label": "Haptics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "MachineLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotic-system",
+      "vc:label": "RoboticSystem"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "SensorFusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-reality",
+      "vc:label": "VirtualReality"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1b30bb682082"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#HapticFeedback"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3055"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Haptic Feedback"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:haptic-feedback"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:haptic-feedback"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:haptic-feedback",
+  "@type": "OntologyClass",
+  "label": "Haptic Feedback",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:tactile-actuator",
+      "vc:label": "TactileActuator"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:haptics",
+      "vc:label": "Haptics"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:haptic-feedback:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[dt:calibratedBy]]",
+      "resolved": "urn:visionflow:linked:dt-calibrated-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:controlledBy]]",
+      "resolved": "urn:visionflow:linked:dt-controlled-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enhances]]",
+      "resolved": "urn:visionflow:linked:dt-enhances",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:integratedWith]]",
+      "resolved": "urn:visionflow:linked:dt-integrated-with",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:optimizedBy]]",
+      "resolved": "urn:visionflow:linked:dt-optimized-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[enhancesExperience]]",
+      "resolved": "urn:visionflow:linked:enhances-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ForceFeedback]]",
+      "resolved": "urn:visionflow:linked:force-feedback",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[integratsWith]]",
+      "resolved": "urn:visionflow:linked:integrats-with",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SensoryImmersion]]",
+      "resolved": "urn:visionflow:linked:sensory-immersion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[simulatesSensation]]",
+      "resolved": "urn:visionflow:linked:simulates-sensation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TactileActuator]]",
+      "resolved": "urn:visionflow:linked:tactile-actuator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TactileActuator|tactile actuators]]",
+      "resolved": "urn:visionflow:linked:tactile-actuator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TouchSimulation]]",
+      "resolved": "urn:visionflow:linked:touch-simulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesActuator]]",
+      "resolved": "urn:visionflow:linked:uses-actuator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WearableHaptics]]",
+      "resolved": "urn:visionflow:linked:wearable-haptics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AISystem]]",
+      "resolved": "urn:visionflow:owl:class:aisystem",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AugmentedReality]]",
+      "resolved": "urn:visionflow:owl:class:augmented-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Haptics]]",
+      "resolved": "urn:visionflow:owl:class:haptics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MachineLearning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticSystem]]",
+      "resolved": "urn:visionflow:owl:class:robotic-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SensorFusion]]",
+      "resolved": "urn:visionflow:owl:class:sensor-fusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualReality]]",
+      "resolved": "urn:visionflow:owl:class:virtual-reality",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].

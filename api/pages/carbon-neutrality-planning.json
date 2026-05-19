@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:275f8246a3677c4b5e873d7f675254f59ddc9de43e034b4607e384bdeb732610",
+  "title": "Carbon Neutrality Planning",
+  "slug": "carbon-neutrality-planning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-neutrality-planning",
+  "domain": "spatial-computing",
+  "definition": "The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:strategic-planning",
+      "label": "Strategic Planning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ghg-baseline",
+        "label": "GHG Baseline"
+      },
+      {
+        "id": "urn:visionflow:linked:implementation-strategy",
+        "label": "Implementation Strategy"
+      },
+      {
+        "id": "urn:visionflow:linked:reduction-targets",
+        "label": "Reduction Targets"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:climate-action",
+        "label": "Climate Action"
+      },
+      {
+        "id": "urn:visionflow:linked:decarbonization",
+        "label": "Decarbonization"
+      },
+      {
+        "id": "urn:visionflow:linked:net-zero-achievement",
+        "label": "Net Zero Achievement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "climate-action",
+      "label": "Climate Action"
+    },
+    {
+      "slug": "decarbonization",
+      "label": "Decarbonization"
+    },
+    {
+      "slug": "ghg-baseline",
+      "label": "GHG Baseline"
+    },
+    {
+      "slug": "implementation-strategy",
+      "label": "Implementation Strategy"
+    },
+    {
+      "slug": "net-zero-achievement",
+      "label": "Net Zero Achievement"
+    },
+    {
+      "slug": "reduction-targets",
+      "label": "Reduction Targets"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "strategic-planning",
+      "label": "Strategic Planning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "environmental-impact-metric",
+      "label": "Environmental Impact Metric"
+    }
+  ]
+}

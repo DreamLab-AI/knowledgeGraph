@@ -1,21 +1,899 @@
-iri:: http://narrativegoldmine.com/blockchain#Token
-uri:: urn:visionclaw:concept:blockchain:token
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:token
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Token
-content-hash:: sha256-12-f036b47ed4a8
-legacy-term-id:: BC-0096
-status:: complete
-maturity:: established
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-01-23T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Token
+legacy_uri:: urn:visionclaw:concept:blockchain:token
 public:: true
+
+# Token
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a1b98247de33ed6eb2a38387a1afb6620065bc156d62a53495fd6bf85a898f12",
+  "@type": "Page",
+  "vc:slug": "token",
+  "title": "Token",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aave",
+      "vc:label": "Aave"
+    },
+    {
+      "@id": "urn:visionflow:linked:aml",
+      "vc:label": "AML"
+    },
+    {
+      "@id": "urn:visionflow:linked:arbitrum",
+      "vc:label": "Arbitrum"
+    },
+    {
+      "@id": "urn:visionflow:linked:avalanche",
+      "vc:label": "Avalanche"
+    },
+    {
+      "@id": "urn:visionflow:linked:bep-20",
+      "vc:label": "BEP-20"
+    },
+    {
+      "@id": "urn:visionflow:linked:brc-20",
+      "vc:label": "BRC-20"
+    },
+    {
+      "@id": "urn:visionflow:linked:bridge",
+      "vc:label": "Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainlink",
+      "vc:label": "Chainlink"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound",
+      "vc:label": "Compound"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos",
+      "vc:label": "Cosmos"
+    },
+    {
+      "@id": "urn:visionflow:linked:curve-finance",
+      "vc:label": "Curve Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-1155",
+      "vc:label": "ERC-1155"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-20",
+      "vc:label": "ERC-20"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-3643",
+      "vc:label": "ERC-3643"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-4626",
+      "vc:label": "ERC-4626"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-721",
+      "vc:label": "ERC-721"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-7540",
+      "vc:label": "ERC-7540"
+    },
+    {
+      "@id": "urn:visionflow:linked:howey-test",
+      "vc:label": "Howey Test"
+    },
+    {
+      "@id": "urn:visionflow:linked:ipfs",
+      "vc:label": "IPFS"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23257-2021",
+      "vc:label": "ISO/IEC 23257:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyc",
+      "vc:label": "KYC"
+    },
+    {
+      "@id": "urn:visionflow:linked:lending-protocol",
+      "vc:label": "Lending Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:lido",
+      "vc:label": "Lido"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity-mining",
+      "vc:label": "Liquidity Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:maker-dao",
+      "vc:label": "MakerDAO"
+    },
+    {
+      "@id": "urn:visionflow:linked:metadata",
+      "vc:label": "Metadata"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaplex",
+      "vc:label": "Metaplex"
+    },
+    {
+      "@id": "urn:visionflow:linked:mi-ca",
+      "vc:label": "MiCA"
+    },
+    {
+      "@id": "urn:visionflow:linked:nft",
+      "vc:label": "NFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-fungible-token",
+      "vc:label": "Non-Fungible Token"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-sea",
+      "vc:label": "OpenSea"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimism",
+      "vc:label": "Optimism"
+    },
+    {
+      "@id": "urn:visionflow:linked:ordinals",
+      "vc:label": "Ordinals"
+    },
+    {
+      "@id": "urn:visionflow:linked:polkadot",
+      "vc:label": "Polkadot"
+    },
+    {
+      "@id": "urn:visionflow:linked:polygon",
+      "vc:label": "Polygon"
+    },
+    {
+      "@id": "urn:visionflow:linked:proposal",
+      "vc:label": "Proposal"
+    },
+    {
+      "@id": "urn:visionflow:linked:rgb-protocol",
+      "vc:label": "RGB Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:royalties",
+      "vc:label": "Royalties"
+    },
+    {
+      "@id": "urn:visionflow:linked:runes-protocol",
+      "vc:label": "Runes Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:satoshi",
+      "vc:label": "Satoshi"
+    },
+    {
+      "@id": "urn:visionflow:linked:sec",
+      "vc:label": "SEC"
+    },
+    {
+      "@id": "urn:visionflow:linked:spl-token",
+      "vc:label": "SPL Token"
+    },
+    {
+      "@id": "urn:visionflow:linked:staking",
+      "vc:label": "Staking"
+    },
+    {
+      "@id": "urn:visionflow:linked:taproot",
+      "vc:label": "Taproot"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-burn",
+      "vc:label": "Token Burn"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-distribution",
+      "vc:label": "Token Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:trc-20",
+      "vc:label": "TRC-20"
+    },
+    {
+      "@id": "urn:visionflow:linked:uniswap",
+      "vc:label": "Uniswap"
+    },
+    {
+      "@id": "urn:visionflow:linked:utxo",
+      "vc:label": "UTXO"
+    },
+    {
+      "@id": "urn:visionflow:linked:ve-tokenomics",
+      "vc:label": "veTokenomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:vesting-schedule",
+      "vc:label": "Vesting Schedule"
+    },
+    {
+      "@id": "urn:visionflow:linked:voting",
+      "vc:label": "Voting"
+    },
+    {
+      "@id": "urn:visionflow:linked:yield-farming",
+      "vc:label": "Yield Farming"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:automated-market-maker",
+      "vc:label": "Automated Market Maker"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dao",
+      "vc:label": "DAO"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-exchange",
+      "vc:label": "Decentralized Exchange"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:economic-layer",
+      "vc:label": "EconomicLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fungible-token",
+      "vc:label": "Fungible Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance",
+      "vc:label": "Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-token",
+      "vc:label": "Governance Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-pool",
+      "vc:label": "Liquidity Pool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nft-marketplace",
+      "vc:label": "NFT Marketplace"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:security-token",
+      "vc:label": "Security Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semi-fungible-token",
+      "vc:label": "Semi-Fungible Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solana",
+      "vc:label": "Solana"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stablecoin",
+      "vc:label": "Stablecoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:taproot-assets",
+      "vc:label": "Taproot Assets"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tokenomics",
+      "vc:label": "Tokenomics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transferable-right",
+      "vc:label": "Transferable Right"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:utility-token",
+      "vc:label": "Utility Token"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f036b47ed4a8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-01-23T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Token"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0096"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Token"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:token"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:token"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a1b98247de33ed6eb2a38387a1afb6620065bc156d62a53495fd6bf85a898f12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:token",
+  "@type": "OntologyClass",
+  "label": "Token",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transferable-right",
+      "vc:label": "Transferable Right"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a1b98247de33ed6eb2a38387a1afb6620065bc156d62a53495fd6bf85a898f12"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a1b98247de33ed6eb2a38387a1afb6620065bc156d62a53495fd6bf85a898f12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A digital asset representation built on an existing blockchain platform that represents ownership, utility, or access rights, typically adhering to standardized protocols for transferability and interoperability, implemented as a cryptographically-secured unit that can be owned, transferred, and programmably controlled through smart contracts according to defined rules and token standards.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:staking",
+      "vc:label": "Staking"
+    },
+    {
+      "@id": "urn:visionflow:linked:yield-farming",
+      "vc:label": "Yield Farming"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-exchange",
+      "vc:label": "Decentralized Exchange"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-pool",
+      "vc:label": "Liquidity Pool"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:token:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a1b98247de33ed6eb2a38387a1afb6620065bc156d62a53495fd6bf85a898f12"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Aave]]",
+      "resolved": "urn:visionflow:linked:aave",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AML]]",
+      "resolved": "urn:visionflow:linked:aml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Arbitrum]]",
+      "resolved": "urn:visionflow:linked:arbitrum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Avalanche]]",
+      "resolved": "urn:visionflow:linked:avalanche",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BEP-20]]",
+      "resolved": "urn:visionflow:linked:bep-20",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BRC-20]]",
+      "resolved": "urn:visionflow:linked:brc-20",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bridge]]",
+      "resolved": "urn:visionflow:linked:bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainlink]]",
+      "resolved": "urn:visionflow:linked:chainlink",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compound]]",
+      "resolved": "urn:visionflow:linked:compound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos]]",
+      "resolved": "urn:visionflow:linked:cosmos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Curve Finance]]",
+      "resolved": "urn:visionflow:linked:curve-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-1155]]",
+      "resolved": "urn:visionflow:linked:erc-1155",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-20]]",
+      "resolved": "urn:visionflow:linked:erc-20",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-3643]]",
+      "resolved": "urn:visionflow:linked:erc-3643",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-4626]]",
+      "resolved": "urn:visionflow:linked:erc-4626",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-721]]",
+      "resolved": "urn:visionflow:linked:erc-721",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-7540]]",
+      "resolved": "urn:visionflow:linked:erc-7540",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Howey Test]]",
+      "resolved": "urn:visionflow:linked:howey-test",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IPFS]]",
+      "resolved": "urn:visionflow:linked:ipfs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23257:2021]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KYC]]",
+      "resolved": "urn:visionflow:linked:kyc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lending Protocol]]",
+      "resolved": "urn:visionflow:linked:lending-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lido]]",
+      "resolved": "urn:visionflow:linked:lido",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquidity Mining]]",
+      "resolved": "urn:visionflow:linked:liquidity-mining",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MakerDAO]]",
+      "resolved": "urn:visionflow:linked:maker-dao",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metadata]]",
+      "resolved": "urn:visionflow:linked:metadata",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaplex]]",
+      "resolved": "urn:visionflow:linked:metaplex",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MiCA]]",
+      "resolved": "urn:visionflow:linked:mi-ca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NFT]]",
+      "resolved": "urn:visionflow:linked:nft",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Non-Fungible Token]]",
+      "resolved": "urn:visionflow:linked:non-fungible-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenSea]]",
+      "resolved": "urn:visionflow:linked:open-sea",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimism]]",
+      "resolved": "urn:visionflow:linked:optimism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ordinals]]",
+      "resolved": "urn:visionflow:linked:ordinals",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polkadot]]",
+      "resolved": "urn:visionflow:linked:polkadot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polygon]]",
+      "resolved": "urn:visionflow:linked:polygon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Proposal]]",
+      "resolved": "urn:visionflow:linked:proposal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RGB Protocol]]",
+      "resolved": "urn:visionflow:linked:rgb-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Royalties]]",
+      "resolved": "urn:visionflow:linked:royalties",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Runes Protocol]]",
+      "resolved": "urn:visionflow:linked:runes-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Satoshi]]",
+      "resolved": "urn:visionflow:linked:satoshi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SEC]]",
+      "resolved": "urn:visionflow:linked:sec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SPL Token]]",
+      "resolved": "urn:visionflow:linked:spl-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Staking]]",
+      "resolved": "urn:visionflow:linked:staking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Taproot]]",
+      "resolved": "urn:visionflow:linked:taproot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Token Burn]]",
+      "resolved": "urn:visionflow:linked:token-burn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Token Distribution]]",
+      "resolved": "urn:visionflow:linked:token-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TRC-20]]",
+      "resolved": "urn:visionflow:linked:trc-20",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uniswap]]",
+      "resolved": "urn:visionflow:linked:uniswap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UTXO]]",
+      "resolved": "urn:visionflow:linked:utxo",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[veTokenomics]]",
+      "resolved": "urn:visionflow:linked:ve-tokenomics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vesting Schedule]]",
+      "resolved": "urn:visionflow:linked:vesting-schedule",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Voting]]",
+      "resolved": "urn:visionflow:linked:voting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Yield Farming]]",
+      "resolved": "urn:visionflow:linked:yield-farming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Market Maker]]",
+      "resolved": "urn:visionflow:owl:class:automated-market-maker",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DAO]]",
+      "resolved": "urn:visionflow:owl:class:dao",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Exchange]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-exchange",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Asset]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EconomicLayer]]",
+      "resolved": "urn:visionflow:owl:class:economic-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fungible Token]]",
+      "resolved": "urn:visionflow:owl:class:fungible-token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Governance]]",
+      "resolved": "urn:visionflow:owl:class:governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Governance Token]]",
+      "resolved": "urn:visionflow:owl:class:governance-token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Liquidity Pool]]",
+      "resolved": "urn:visionflow:owl:class:liquidity-pool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NFT Marketplace]]",
+      "resolved": "urn:visionflow:owl:class:nft-marketplace",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Security Token]]",
+      "resolved": "urn:visionflow:owl:class:security-token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Semi-Fungible Token]]",
+      "resolved": "urn:visionflow:owl:class:semi-fungible-token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solana]]",
+      "resolved": "urn:visionflow:owl:class:solana",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stablecoin]]",
+      "resolved": "urn:visionflow:owl:class:stablecoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Taproot Assets]]",
+      "resolved": "urn:visionflow:owl:class:taproot-assets",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Tokenomics]]",
+      "resolved": "urn:visionflow:owl:class:tokenomics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transferable Right]]",
+      "resolved": "urn:visionflow:owl:class:transferable-right",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Utility Token]]",
+      "resolved": "urn:visionflow:owl:class:utility-token",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a1b98247de33ed6eb2a38387a1afb6620065bc156d62a53495fd6bf85a898f12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A digital asset representation built on an existing blockchain platform that represents ownership, utility, or access rights, typically adhering to standardized protocols for transferability and interoperability, implemented as a cryptographically-secured unit that can be owned, transferred, and programmably controlled through smart contracts according to defined rules and token standards.

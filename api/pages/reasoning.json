@@ -1,0 +1,432 @@
+{
+  "id": "urn:visionflow:page:8432b34802c3061452c646382ca2ef046af5cd39534b0266d88d8001e7116b04",
+  "title": "Reasoning",
+  "slug": "reasoning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reasoning",
+  "domain": "artificial-intelligence",
+  "definition": "Reasoning in artificial intelligence encompasses the computational processes by which systems derive conclusions, formulate plans, solve problems, and generate explanations from knowledge, data, and prior context. The field spans the full spectrum from fast, pattern-driven inference (System 1 in dual-process cognitive theory, Stanovich & West 2000; Kahneman 2011) through slow, deliberate, step-by-step logical analysis (System 2). A now-dominant class of test-time compute scaling methods allocates additional compute budget at inference for models to search, verify, and self-correct intermediate steps before emitting a final answer. Modern AI reasoning research covers five interlocking sub-fields: (1) **Prompting-level interventions** \u2014 chain-of-thought (CoT) eliciting intermediate reasoning steps in natural language (Wei et al., Google Brain, NeurIPS 2022) across both few-shot exemplar mode and zero-shot mode (Kojima et al. NeurIPS 2022); self-consistency sampling k independent CoT paths and selecting majority-vote answers (Wang et al., Google Brain, ICLR 2023); Tree-of-Thoughts (ToT) exploring branching deliberation trees with BFS/DFS backtracking (Yao et al., Princeton/DeepMind, N",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "urn:visionflow:linked:extended-thinking",
+        "label": "Extended Thinking"
+      },
+      {
+        "id": "urn:visionflow:linked:outcome-reward-model",
+        "label": "Outcome Reward Model"
+      },
+      {
+        "id": "urn:visionflow:linked:process-reward-model",
+        "label": "Process Reward Model"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:visionflow:linked:scratchpad-computation",
+        "label": "Scratchpad Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:visionflow:linked:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "urn:visionflow:linked:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:visionflow:linked:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:test-time-compute",
+        "label": "Test-Time Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aime-benchmark",
+      "label": "AIME Benchmark"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "benchmarks",
+      "label": "Benchmarks"
+    },
+    {
+      "slug": "chain-of-thought-prompting",
+      "label": "Chain-of-Thought Prompting"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "CognitiveScienceDomain"
+    },
+    {
+      "slug": "extended-thinking",
+      "label": "Extended Thinking"
+    },
+    {
+      "slug": "formal-logic",
+      "label": "Formal Logic"
+    },
+    {
+      "slug": "formal-methods-domain",
+      "label": "FormalMethodsDomain"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "gpqa-benchmark",
+      "label": "GPQA Benchmark"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "lean",
+      "label": "Lean"
+    },
+    {
+      "slug": "mathematical-reasoning",
+      "label": "Mathematical Reasoning"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "neuro-symbolic-ai",
+      "label": "Neuro-Symbolic AI"
+    },
+    {
+      "slug": "outcome-reward-model",
+      "label": "Outcome Reward Model"
+    },
+    {
+      "slug": "pattern-matching",
+      "label": "Pattern Matching"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "process-reward-model",
+      "label": "Process Reward Model"
+    },
+    {
+      "slug": "re-act",
+      "label": "ReAct"
+    },
+    {
+      "slug": "scientific-discovery",
+      "label": "Scientific Discovery"
+    },
+    {
+      "slug": "scratchpad-computation",
+      "label": "Scratchpad Computation"
+    },
+    {
+      "slug": "self-consistency",
+      "label": "Self-Consistency"
+    },
+    {
+      "slug": "test-time-compute",
+      "label": "Test-Time Compute"
+    },
+    {
+      "slug": "tree-of-thoughts",
+      "label": "Tree of Thoughts"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

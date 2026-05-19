@@ -1,21 +1,285 @@
-iri:: http://narrativegoldmine.com/robotics#AutonomousVehicle
-uri:: urn:visionclaw:concept:robotics:autonomous-vehicle
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:autonomous-vehicle
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Autonomous Vehicle
-content-hash:: sha256-12-563b495ec52a
-legacy-term-id:: AI-0346
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#AutonomousVehicle
+legacy_uri:: urn:visionclaw:concept:robotics:autonomous-vehicle
 public:: true
+
+# Autonomous Vehicle
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ac07d2d76c49d24b79950a99dcb14134a98ecb1a0a5e38c9d6f6574e9584b189",
+  "@type": "Page",
+  "vc:slug": "autonomous-vehicle",
+  "title": "Autonomous Vehicle",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:iso-21448",
+      "vc:label": "ISO 21448"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-26262",
+      "vc:label": "ISO 26262"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adas",
+      "vc:label": "ADAS"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:path-planning",
+      "vc:label": "Path Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-driving-car",
+      "vc:label": "Self Driving Car"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "vc:label": "Social contract and jobs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:some-legacy-linked-json",
+      "vc:label": "Some legacy Linked-JSON"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-563b495ec52a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#AutonomousVehicle"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0346"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Autonomous Vehicle"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:autonomous-vehicle"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:autonomous-vehicle"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ac07d2d76c49d24b79950a99dcb14134a98ecb1a0a5e38c9d6f6574e9584b189@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:autonomous-vehicle",
+  "@type": "OntologyClass",
+  "label": "Autonomous Vehicle",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ac07d2d76c49d24b79950a99dcb14134a98ecb1a0a5e38c9d6f6574e9584b189"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ac07d2d76c49d24b79950a99dcb14134a98ecb1a0a5e38c9d6f6574e9584b189@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:autonomous-vehicle:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ac07d2d76c49d24b79950a99dcb14134a98ecb1a0a5e38c9d6f6574e9584b189"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ISO 21448]]",
+      "resolved": "urn:visionflow:linked:iso-21448",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 26262]]",
+      "resolved": "urn:visionflow:linked:iso-26262",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ADAS]]",
+      "resolved": "urn:visionflow:owl:class:adas",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Path Planning]]",
+      "resolved": "urn:visionflow:owl:class:path-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Perception System]]",
+      "resolved": "urn:visionflow:owl:class:perception-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Self Driving Car]]",
+      "resolved": "urn:visionflow:owl:class:self-driving-car",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor Fusion]]",
+      "resolved": "urn:visionflow:owl:class:sensor-fusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social contract and jobs]]",
+      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Some legacy Linked-JSON]]",
+      "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ac07d2d76c49d24b79950a99dcb14134a98ecb1a0a5e38c9d6f6574e9584b189@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).
@@ -522,7 +786,7 @@ public:: true
 
   ## See Also
 
-  - [[Self-Driving Car]]
+  - [[Self Driving Car]]
   - [[ADAS]]
   - [[Perception System]]
   - [[Sensor Fusion]]
@@ -996,7 +1260,7 @@ public:: true
 
   ## See Also
 
-  - [[Self-Driving Car]]
+  - [[Self Driving Car]]
   - [[ADAS]]
   - [[Perception System]]
   - [[Sensor Fusion]]

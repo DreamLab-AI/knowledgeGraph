@@ -1,21 +1,318 @@
-iri:: http://narrativegoldmine.com/metaverse#Accountability
-uri:: urn:visionclaw:concept:artificial-intelligence:accountability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:accountability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Accountability
-content-hash:: sha256-12-02d9fc164513
-legacy-term-id:: AI-0067
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Accountability
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:accountability
 public:: true
+
+# Accountability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4",
+  "@type": "Page",
+  "vc:slug": "accountability",
+  "title": "Accountability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:compliance",
+      "vc:label": "Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability-ai-0063",
+      "vc:label": "Explainability (AI-0063)"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-38500-2024",
+      "vc:label": "ISO/IEC 38500:2024"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd",
+      "vc:label": "OECD"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management-ai-0078",
+      "vc:label": "Risk Management (AI-0078)"
+    },
+    {
+      "@id": "urn:visionflow:linked:transparency-ai-0062",
+      "vc:label": "Transparency (AI-0062)"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust",
+      "vc:label": "Trust"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-02d9fc164513"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Accountability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0067"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Accountability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accountability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accountability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:accountability",
+  "@type": "OntologyClass",
+  "label": "Accountability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:explainability-ai-0063",
+      "vc:label": "Explainability (AI-0063)"
+    },
+    {
+      "@id": "urn:visionflow:linked:transparency-ai-0062",
+      "vc:label": "Transparency (AI-0062)"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:compliance",
+      "vc:label": "Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management-ai-0078",
+      "vc:label": "Risk Management (AI-0078)"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust",
+      "vc:label": "Trust"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:accountability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Compliance]]",
+      "resolved": "urn:visionflow:linked:compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Explainability (AI-0063)]]",
+      "resolved": "urn:visionflow:linked:explainability-ai-0063",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 38500:2024]]",
+      "resolved": "urn:visionflow:linked:iso-iec-38500-2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI RMF]]",
+      "resolved": "urn:visionflow:linked:nist-ai-rmf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD]]",
+      "resolved": "urn:visionflow:linked:oecd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risk Management (AI-0078)]]",
+      "resolved": "urn:visionflow:linked:risk-management-ai-0078",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transparency (AI-0062)]]",
+      "resolved": "urn:visionflow:linked:transparency-ai-0062",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trust]]",
+      "resolved": "urn:visionflow:linked:trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.

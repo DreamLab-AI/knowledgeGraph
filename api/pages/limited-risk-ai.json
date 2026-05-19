@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:73866c6e048636fd0be313204c5ccc81cd5d5d4ef06ed8e327274536eb734114",
+  "title": "Limited Risk AI",
+  "slug": "limited-risk-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:limited-risk-ai",
+  "domain": "artificial-intelligence",
+  "definition": "AI systems subject only to transparency obligations, requiring users to be informed they are interacting with AI. These systems include chatbots, emotion recognition, biometric categorisation, and deepfake generation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

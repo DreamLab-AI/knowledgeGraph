@@ -1,0 +1,1012 @@
+{
+  "id": "urn:visionflow:page:56bc38c2965dbc77704b41e389e8ac08fbf217dfb6e3ddb490e42d491c273797",
+  "title": "Decentralised Web",
+  "slug": "decentralised-web",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralised-web",
+  "domain": "infrastructure",
+  "definition": "**Decentralised Web** (dWeb) is the architectural counter-movement to platform-consolidated Web 2.0, comprising the family of protocols, data models, identity primitives and economic mechanisms that re-establish the original distributed character of the internet by replacing location-addressed client-server requests (`https://server.example/path`) with content-addressed peer-to-peer exchange (`ipfs://bafy...`, `at://did:plc:...`, `nostr:nevent1...`), user-held cryptographic identity (W3C DIDs, Bitcoin-style keypairs, Solid WebIDs) and portable data stores under user rather than platform control; operationally instantiated through a 2014-2026 protocol stack including content-addressed storage and transport ([[IPFS]] introduced by Juan Benet at [[Protocol Labs]] July 2014 via arXiv:1407.3561 with CIDv1 self-describing identifiers binding multihash+multicodec+multibase, reference Kubo implementation in Go and Helia in JavaScript, >300K public nodes in 2024 telemetry, public gateways from Cloudflare/Brave/Pinata/Filebase/4EVERLAND/web3.storage; [[Filecoin]] mainnet launched 15 October 2020 after $257M July 2017 ICO providing the incentive layer over IPFS via Proof-of-Replication and Pr",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:open-protocol",
+      "label": "Open Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:sociotechnical-system",
+      "label": "Sociotechnical System"
+    },
+    {
+      "id": "urn:visionflow:linked:web-architecture",
+      "label": "Web Architecture"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "label": "Peer To Peer Network"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:activity-pub",
+        "label": "ActivityPub"
+      },
+      {
+        "id": "urn:visionflow:linked:arweave",
+        "label": "Arweave"
+      },
+      {
+        "id": "urn:visionflow:linked:at-protocol",
+        "label": "AT Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:ceramic",
+        "label": "Ceramic"
+      },
+      {
+        "id": "urn:visionflow:linked:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:visionflow:linked:farcaster",
+        "label": "Farcaster"
+      },
+      {
+        "id": "urn:visionflow:linked:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "id": "urn:visionflow:linked:hypercore-protocol",
+        "label": "Hypercore Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:visionflow:linked:ipld",
+        "label": "IPLD"
+      },
+      {
+        "id": "urn:visionflow:linked:lens-protocol",
+        "label": "Lens Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "id": "urn:visionflow:linked:orbit-db",
+        "label": "OrbitDB"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:solid",
+        "label": "Solid"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:archive-permanence",
+        "label": "Archive Permanence"
+      },
+      {
+        "id": "urn:visionflow:linked:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:disintermediation",
+        "label": "Disintermediation"
+      },
+      {
+        "id": "urn:visionflow:linked:offline-first-applications",
+        "label": "Offline-First Applications"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-innovation",
+        "label": "Permissionless Innovation"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-minimisation",
+        "label": "Trust Minimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:user-sovereignty",
+        "label": "User Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:account-portability",
+        "label": "Account Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:crdt-synchronisation",
+        "label": "CRDT Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:federation-protocol",
+        "label": "Federation Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "id": "urn:visionflow:linked:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aave-companies",
+      "label": "Aave Companies"
+    },
+    {
+      "slug": "account-portability",
+      "label": "Account Portability"
+    },
+    {
+      "slug": "activity-pub",
+      "label": "ActivityPub"
+    },
+    {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "anna-s-archive",
+      "label": "Anna's Archive"
+    },
+    {
+      "slug": "archive-permanence",
+      "label": "Archive Permanence"
+    },
+    {
+      "slug": "argent",
+      "label": "Argent"
+    },
+    {
+      "slug": "arweave",
+      "label": "Arweave"
+    },
+    {
+      "slug": "at-protocol",
+      "label": "AT Protocol"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "bbc-r-and-d",
+      "label": "BBC R&D"
+    },
+    {
+      "slug": "bbc-r-and-d-2019-reimagining-public-service-media-distributed-network",
+      "label": "BBC R&D 2019 Reimagining Public Service Media Distributed Network"
+    },
+    {
+      "slug": "benet-2014-ipfs-white-paper-ar-xiv-1407-3561",
+      "label": "Benet 2014 IPFS White Paper arXiv 1407.3561"
+    },
+    {
+      "slug": "berners-lee-hendler-lassila-2001-semantic-web-scientific-american",
+      "label": "Berners-Lee Hendler Lassila 2001 Semantic Web Scientific American"
+    },
+    {
+      "slug": "berners-lee-shadbolt-2012-open-government-data-cacm",
+      "label": "Berners-Lee Shadbolt 2012 Open Government Data CACM"
+    },
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
+      "slug": "bitcraft",
+      "label": "Bitcraft"
+    },
+    {
+      "slug": "blockchain-only-web3",
+      "label": "Blockchain-only Web3"
+    },
+    {
+      "slug": "bluesky",
+      "label": "Bluesky"
+    },
+    {
+      "slug": "bluesky-pbc",
+      "label": "Bluesky PBC"
+    },
+    {
+      "slug": "bluesky-pbc-2024-at-protocol-specifications",
+      "label": "Bluesky PBC 2024 AT Protocol Specifications"
+    },
+    {
+      "slug": "bonfida-sns",
+      "label": "Bonfida SNS"
+    },
+    {
+      "slug": "brewster-kahle",
+      "label": "Brewster Kahle"
+    },
+    {
+      "slug": "briar",
+      "label": "Briar"
+    },
+    {
+      "slug": "centralised-cloud",
+      "label": "Centralised Cloud"
+    },
+    {
+      "slug": "ceramic",
+      "label": "Ceramic"
+    },
+    {
+      "slug": "ceramic-network-2023-compose-db",
+      "label": "Ceramic Network 2023 ComposeDB"
+    },
+    {
+      "slug": "cern",
+      "label": "CERN"
+    },
+    {
+      "slug": "cid",
+      "label": "CID"
+    },
+    {
+      "slug": "cnbc",
+      "label": "CNBC"
+    },
+    {
+      "slug": "computerphile",
+      "label": "Computerphile"
+    },
+    {
+      "slug": "confluence",
+      "label": "Confluence"
+    },
+    {
+      "slug": "consen-sys",
+      "label": "ConsenSys"
+    },
+    {
+      "slug": "costigan-et-al-2018-world-wide-web-at-30",
+      "label": "Costigan et al 2018 World Wide Web at 30"
+    },
+    {
+      "slug": "crdt-synchronisation",
+      "label": "CRDT Synchronisation"
+    },
+    {
+      "slug": "crypto-anarchism",
+      "label": "Crypto Anarchism"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "cypherpunk-movement",
+      "label": "Cypherpunk Movement"
+    },
+    {
+      "slug": "data-portability",
+      "label": "Data Portability"
+    },
+    {
+      "slug": "data-sovereignty",
+      "label": "data sovereignty"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "decentralised-social-media",
+      "label": "Decentralised Social Media"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
+      "slug": "did",
+      "label": "DID"
+    },
+    {
+      "slug": "diehl-wagg-budish-2022-popping-the-crypto-bubble",
+      "label": "Diehl Wagg Budish 2022 Popping the Crypto Bubble"
+    },
+    {
+      "slug": "digital-sovereignty-domain",
+      "label": "DigitalSovereigntyDomain"
+    },
+    {
+      "slug": "disintermediation",
+      "label": "Disintermediation"
+    },
+    {
+      "slug": "distributed-hash-table",
+      "label": "Distributed Hash Table"
+    },
+    {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
+      "slug": "dnslink",
+      "label": "DNSLink"
+    },
+    {
+      "slug": "ed25519",
+      "label": "Ed25519"
+    },
+    {
+      "slug": "ens",
+      "label": "ENS"
+    },
+    {
+      "slug": "eu-digital-identity-wallet",
+      "label": "EU Digital Identity Wallet"
+    },
+    {
+      "slug": "farcaster",
+      "label": "Farcaster"
+    },
+    {
+      "slug": "farcaster-2024-protocol-documentation",
+      "label": "Farcaster 2024 Protocol Documentation"
+    },
+    {
+      "slug": "federated-network",
+      "label": "Federated Network"
+    },
+    {
+      "slug": "federation-protocol",
+      "label": "Federation Protocol"
+    },
+    {
+      "slug": "fiatjaf-2020-2024-nostr-nips-repository",
+      "label": "fiatjaf 2020-2024 Nostr NIPs Repository"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "fluence-labs",
+      "label": "Fluence Labs"
+    },
+    {
+      "slug": "galloway-2022-web3-is-crypto-snake-oil",
+      "label": "Galloway 2022 Web3 Is Crypto Snake Oil"
+    },
+    {
+      "slug": "graber-et-al-2023-at-protocol-self-authenticating-data",
+      "label": "Graber et al 2023 AT Protocol Self-Authenticating Data"
+    },
+    {
+      "slug": "gun",
+      "label": "GUN"
+    },
+    {
+      "slug": "handshake",
+      "label": "Handshake"
+    },
+    {
+      "slug": "hashing",
+      "label": "Hashing"
+    },
+    {
+      "slug": "holepunch",
+      "label": "Holepunch"
+    },
+    {
+      "slug": "holepunch-2023-pear-hypercore-documentation",
+      "label": "Holepunch 2023 Pear Hypercore Documentation"
+    },
+    {
+      "slug": "hypercore",
+      "label": "Hypercore"
+    },
+    {
+      "slug": "hypercore-protocol",
+      "label": "Hypercore Protocol"
+    },
+    {
+      "slug": "hyperdrive",
+      "label": "Hyperdrive"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "IdentityLayer"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "inrupt",
+      "label": "Inrupt"
+    },
+    {
+      "slug": "internet-archive",
+      "label": "Internet Archive"
+    },
+    {
+      "slug": "internet-of-agents",
+      "label": "Internet of Agents"
+    },
+    {
+      "slug": "internet-protocol",
+      "label": "Internet Protocol"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "ipld",
+      "label": "IPLD"
+    },
+    {
+      "slug": "ipns",
+      "label": "IPNS"
+    },
+    {
+      "slug": "juan-benet",
+      "label": "Juan Benet"
+    },
+    {
+      "slug": "kademlia-dht",
+      "label": "Kademlia DHT"
+    },
+    {
+      "slug": "kiayias-et-al-2017-ouroboros-crypto",
+      "label": "Kiayias et al 2017 Ouroboros CRYPTO"
+    },
+    {
+      "slug": "lemmer-webber-tallon-shepherd-2018-activity-pub-rationale",
+      "label": "Lemmer-Webber Tallon Shepherd 2018 ActivityPub Rationale"
+    },
+    {
+      "slug": "lens-protocol",
+      "label": "Lens Protocol"
+    },
+    {
+      "slug": "lens-protocol-2024-v3-whitepaper",
+      "label": "Lens Protocol 2024 v3 Whitepaper"
+    },
+    {
+      "slug": "libp2p",
+      "label": "libp2p"
+    },
+    {
+      "slug": "mancini-et-al-2016-solid-mit-csail",
+      "label": "Mancini et al 2016 Solid MIT CSAIL"
+    },
+    {
+      "slug": "marlinspike-2022-first-impressions-of-web3",
+      "label": "Marlinspike 2022 First Impressions of Web3"
+    },
+    {
+      "slug": "mastodon",
+      "label": "Mastodon"
+    },
+    {
+      "slug": "maymounkov-mazieres-2002-kademlia",
+      "label": "Maymounkov Mazieres 2002 Kademlia"
+    },
+    {
+      "slug": "merkle-dag",
+      "label": "Merkle DAG"
+    },
+    {
+      "slug": "mirror-xyz",
+      "label": "Mirror.xyz"
+    },
+    {
+      "slug": "mojang",
+      "label": "Mojang"
+    },
+    {
+      "slug": "moxie-marlinspike",
+      "label": "Moxie Marlinspike"
+    },
+    {
+      "slug": "multihash",
+      "label": "Multihash"
+    },
+    {
+      "slug": "networking",
+      "label": "Networking"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "NetworkingDomain"
+    },
+    {
+      "slug": "nillion",
+      "label": "Nillion"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "o-hara-hall-2018-four-internets-cigi",
+      "label": "O'Hara Hall 2018 Four Internets CIGI"
+    },
+    {
+      "slug": "offline-first-applications",
+      "label": "Offline-First Applications"
+    },
+    {
+      "slug": "open-data-institute",
+      "label": "Open Data Institute"
+    },
+    {
+      "slug": "open-knowledge-graphs",
+      "label": "Open Knowledge Graphs"
+    },
+    {
+      "slug": "open-protocol",
+      "label": "Open Protocol"
+    },
+    {
+      "slug": "open-sats",
+      "label": "OpenSats"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "orbit-db",
+      "label": "OrbitDB"
+    },
+    {
+      "slug": "org",
+      "label": "ORG"
+    },
+    {
+      "slug": "paragraph-xyz",
+      "label": "Paragraph.xyz"
+    },
+    {
+      "slug": "peer-to-peer-messaging",
+      "label": "Peer-to-Peer Messaging"
+    },
+    {
+      "slug": "penumbra",
+      "label": "Penumbra"
+    },
+    {
+      "slug": "permanent-archives",
+      "label": "Permanent Archives"
+    },
+    {
+      "slug": "permissionless-innovation",
+      "label": "Permissionless Innovation"
+    },
+    {
+      "slug": "protocol-labs",
+      "label": "Protocol Labs"
+    },
+    {
+      "slug": "protocol-labs-2017-filecoin-white-paper",
+      "label": "Protocol Labs 2017 Filecoin White Paper"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "quic",
+      "label": "QUIC"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "snarfed-2024-bridgy-fed",
+      "label": "Snarfed 2024 Bridgy Fed"
+    },
+    {
+      "slug": "sociotechnical-system",
+      "label": "Sociotechnical System"
+    },
+    {
+      "slug": "software-as-a-service",
+      "label": "Software as a Service"
+    },
+    {
+      "slug": "stacker-news",
+      "label": "Stacker News"
+    },
+    {
+      "slug": "status",
+      "label": "Status"
+    },
+    {
+      "slug": "stephen-diehl",
+      "label": "Stephen Diehl"
+    },
+    {
+      "slug": "stoica-et-al-2001-chord-sigcomm",
+      "label": "Stoica et al 2001 Chord SIGCOMM"
+    },
+    {
+      "slug": "storj",
+      "label": "Storj"
+    },
+    {
+      "slug": "substack",
+      "label": "Substack"
+    },
+    {
+      "slug": "surveillance-economics",
+      "label": "surveillance economics"
+    },
+    {
+      "slug": "the-next-web",
+      "label": "The Next Web"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "tim-berners-lee",
+      "label": "Tim Berners-Lee"
+    },
+    {
+      "slug": "tokenised-economics",
+      "label": "Tokenised Economics"
+    },
+    {
+      "slug": "topl",
+      "label": "Topl"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "TransportLayer"
+    },
+    {
+      "slug": "treasure-dao",
+      "label": "Treasure DAO"
+    },
+    {
+      "slug": "trust-minimisation",
+      "label": "Trust Minimisation"
+    },
+    {
+      "slug": "trust-over-ip-foundation",
+      "label": "Trust over IP Foundation"
+    },
+    {
+      "slug": "ucl-info-lab",
+      "label": "UCL InfoLab"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "unstoppable-domains",
+      "label": "Unstoppable Domains"
+    },
+    {
+      "slug": "user-sovereignty",
+      "label": "User Sovereignty"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-2018-activity-pub-recommendation",
+      "label": "W3C 2018 ActivityPub Recommendation"
+    },
+    {
+      "slug": "w3-c-2022-did-core-1-0-recommendation",
+      "label": "W3C 2022 DID Core 1.0 Recommendation"
+    },
+    {
+      "slug": "w3-c-2025-vc-data-model-2-0-recommendation",
+      "label": "W3C 2025 VC Data Model 2.0 Recommendation"
+    },
+    {
+      "slug": "w3-c-did",
+      "label": "W3C DID"
+    },
+    {
+      "slug": "walled-garden",
+      "label": "Walled Garden"
+    },
+    {
+      "slug": "web-2-0",
+      "label": "Web 2.0"
+    },
+    {
+      "slug": "web-architecture",
+      "label": "Web Architecture"
+    },
+    {
+      "slug": "web-architecture-domain",
+      "label": "WebArchitectureDomain"
+    },
+    {
+      "slug": "web-socket",
+      "label": "WebSocket"
+    },
+    {
+      "slug": "white-2022-2024-web3-is-going-just-great",
+      "label": "White 2022-2024 Web3 Is Going Just Great"
+    },
+    {
+      "slug": "williams-diordiiev-2018-arweave-yellow-paper",
+      "label": "Williams Diordiiev 2018 Arweave Yellow Paper"
+    },
+    {
+      "slug": "wuthering-bytes",
+      "label": "Wuthering Bytes"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zittrain-2008-future-of-the-internet",
+      "label": "Zittrain 2008 Future of the Internet"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "censorship resistance"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interoperability",
+      "label": "interoperability"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer To Peer Network"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "StorageLayer"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "client-side-dco",
+      "label": "Client side DCO"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

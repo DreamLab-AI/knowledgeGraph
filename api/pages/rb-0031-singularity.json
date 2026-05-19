@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:8cbaabc0e141534f79adfb6eef6ded8f8b09fa497151fe24f9b41282175f1257",
+  "title": "rb 0031 singularity",
+  "slug": "rb-0031-singularity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0031-singularity",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ],
+  "backlinks": []
+}

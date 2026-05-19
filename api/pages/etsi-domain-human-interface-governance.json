@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32",
+  "title": "ETSI_Domain_Human_Interface___Governance",
+  "slug": "etsi-domain-human-interface-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-human-interface-governance",
+  "domain": "artificial-intelligence",
+  "definition": "An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]]. This specialised domain combines [[DecentralisedGovernance]], [[RoleBasedAccess]], [[ConsentManagement]], and [[PolicyEnforcement]] to establish accountable, transparent participation structures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-governance",
+      "label": "DecentralisedGovernance"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "iso-23257",
+      "label": "ISO 23257"
+    },
+    {
+      "slug": "role-based-access",
+      "label": "RoleBasedAccess"
+    },
+    {
+      "slug": "wcag-2-1",
+      "label": "WCAG 2.1"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consent-management",
+      "label": "ConsentManagement"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "PolicyEnforcement"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "VirtualEnvironment"
+    }
+  ],
+  "backlinks": []
+}

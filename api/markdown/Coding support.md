@@ -1,21 +1,257 @@
-iri:: http://narrativegoldmine.com/infrastructure#CodingSupport
-uri:: urn:visionclaw:concept:infrastructure:coding-support
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:coding-support
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Coding support
-content-hash:: sha256-12-042f57bd6b0c
-status:: stub
-maturity:: draft
-bridges-to:: [[Blockchain]] (bc), [[AI Agent System]] (ai), or [[Digital Twin]] (mv)
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#CodingSupport
+legacy_uri:: urn:visionclaw:concept:infrastructure:coding-support
 public:: true
+
+# Coding support
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2",
+  "@type": "Page",
+  "vc:slug": "coding-support",
+  "title": "Coding support",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:training-modules",
+      "vc:label": "Training Modules"
+    },
+    {
+      "@id": "urn:visionflow:linked:vercel",
+      "vc:label": "Vercel"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt-engineer",
+      "vc:label": "GPT Engineer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microsoft-copilot",
+      "vc:label": "Microsoft Copilot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tips-and-tricks",
+      "vc:label": "Tips and Tricks"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Blockchain]] (bc), [[AI Agent System]] (ai), or [[Digital Twin]] (mv)"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-042f57bd6b0c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#CodingSupport"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Coding support"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:coding-support"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:coding-support"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:coding-support",
+  "@type": "OntologyClass",
+  "label": "Coding support",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:software-engineering",
+      "vc:label": "Software Engineering"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Coding support is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:coding-support:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Training Modules]]",
+      "resolved": "urn:visionflow:linked:training-modules",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vercel]]",
+      "resolved": "urn:visionflow:linked:vercel",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Frameworks]]",
+      "resolved": "urn:visionflow:owl:class:agent-frameworks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GPT Engineer]]",
+      "resolved": "urn:visionflow:owl:class:gpt-engineer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microsoft Copilot]]",
+      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Tips and Tricks]]",
+      "resolved": "urn:visionflow:owl:class:tips-and-tricks",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Coding support is a concept within the ngm domain.
@@ -172,7 +408,7 @@ public:: true
   - [[Vercel]] provides front-end [[Infrastructure]] to allow developers to build fast, dynamic websites and applications efficiently at global scale. Its open source Next.js framework powers many leading AI products' user interfaces.
   - Vercel's new vZero product allows developers to visually iterate on UIs with AI assistance.
   - [Demo/Tutorial: v0 by Vercel AI Code Generation (youtube.com)](https://www.youtube.com/watch?v=gi5nnOqzHeQ)
-  - AI code auto-completion tools like [[Microsoft CoPilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft CoPilot]] leverages [[ChatGPT]] 4 and is extremely good.
+  - AI code auto-completion tools like [[Microsoft Copilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft Copilot]] leverages [[ChatGPT]] 4 and is extremely good.
   - AI will likely be incorporated into most software products going forward to enhance capabilities and engagement. Some experiences are better suited to standalone interfaces rather than cramming functionality into chatbots.
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.

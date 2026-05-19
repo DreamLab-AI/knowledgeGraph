@@ -1,0 +1,144 @@
+{
+  "id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248",
+  "title": "Convolutional Neural Network",
+  "slug": "convolutional-neural-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:convolutional-neural-network",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-iec-22989-2022",
+      "label": "ISO/IEC 22989:2022"
+    },
+    {
+      "slug": "iso-iec-23053-2022",
+      "label": "ISO/IEC 23053:2022"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "nist-ai-100-3",
+      "label": "NIST AI 100-3"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "super-resolution",
+      "label": "Super Resolution"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

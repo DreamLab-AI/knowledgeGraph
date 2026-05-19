@@ -1,21 +1,447 @@
-iri:: http://narrativegoldmine.com/blockchain#FoodSafetyBlockchain
-uri:: urn:visionclaw:concept:blockchain:food-safety-blockchain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:food-safety-blockchain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Food Safety Blockchain
-content-hash:: sha256-12-39a5b4bc21a4
-legacy-term-id:: BC-0443
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.91
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#FoodSafetyBlockchain
+legacy_uri:: urn:visionclaw:concept:blockchain:food-safety-blockchain
 public:: true
+
+# Food Safety Blockchain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11",
+  "@type": "Page",
+  "vc:slug": "food-safety-blockchain",
+  "title": "Food Safety Blockchain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "vc:label": "BC-0013-smart-contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "vc:label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0044-supply-chain-management",
+      "vc:label": "BC-0044-supply-chain-management"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "vc:label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0214-environmental-sustainability",
+      "vc:label": "BC-0214-environmental-sustainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "vc:label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "vc:label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "vc:label": "BC-0441-provenance-tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "vc:label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos",
+      "vc:label": "Cosmos"
+    },
+    {
+      "@id": "urn:visionflow:linked:grass-roots-farmers-cooperative",
+      "vc:label": "Grass Roots Farmers' Cooperative"
+    },
+    {
+      "@id": "urn:visionflow:linked:gs1",
+      "vc:label": "GS1"
+    },
+    {
+      "@id": "urn:visionflow:linked:gs1-blockchain-working-group",
+      "vc:label": "GS1 Blockchain Working Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm-food-trust",
+      "vc:label": "IBM Food Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:origin-trail",
+      "vc:label": "OriginTrail"
+    },
+    {
+      "@id": "urn:visionflow:linked:polkadot",
+      "vc:label": "Polkadot"
+    },
+    {
+      "@id": "urn:visionflow:linked:provenance",
+      "vc:label": "Provenance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ripe-io",
+      "vc:label": "Ripe.io"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-traces",
+      "vc:label": "SafeTraces"
+    },
+    {
+      "@id": "urn:visionflow:linked:te-food",
+      "vc:label": "TE-FOOD"
+    },
+    {
+      "@id": "urn:visionflow:linked:too-good-to-go",
+      "vc:label": "Too Good To Go"
+    },
+    {
+      "@id": "urn:visionflow:linked:ve-chain",
+      "vc:label": "VeChain"
+    },
+    {
+      "@id": "urn:visionflow:linked:winnow",
+      "vc:label": "Winnow"
+    },
+    {
+      "@id": "urn:visionflow:linked:zest-labs",
+      "vc:label": "Zest Labs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.91"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-39a5b4bc21a4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#FoodSafetyBlockchain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0443"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Food Safety Blockchain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:food-safety-blockchain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:food-safety-blockchain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:food-safety-blockchain",
+  "@type": "OntologyClass",
+  "label": "Food Safety Blockchain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers. Major implementations including IBM Food Trust (500+ participants including Walmart, Carrefour, Dole, Nestlé) and VeChain's Walmart China deployment demonstrate transformative impact on the £55 billion annual foodborne illness problem affecting 48 million Americans, with 50-70% reductions in trace-back time and 30% sales increases for blockchain-tracked products through enhanced consumer trust.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.91",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:food-safety-blockchain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0013-smart-contracts]]",
+      "resolved": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0029-permissioned-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0044-supply-chain-management]]",
+      "resolved": "urn:visionflow:linked:bc-0044-supply-chain-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0067-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0214-environmental-sustainability]]",
+      "resolved": "urn:visionflow:linked:bc-0214-environmental-sustainability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0432-consortium-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0434-blockchain-as-a-service]]",
+      "resolved": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0441-provenance-tracking]]",
+      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0442-pharmaceutical-traceability]]",
+      "resolved": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos]]",
+      "resolved": "urn:visionflow:linked:cosmos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Grass Roots Farmers' Cooperative]]",
+      "resolved": "urn:visionflow:linked:grass-roots-farmers-cooperative",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GS1]]",
+      "resolved": "urn:visionflow:linked:gs1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GS1 Blockchain Working Group]]",
+      "resolved": "urn:visionflow:linked:gs1-blockchain-working-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM Food Trust]]",
+      "resolved": "urn:visionflow:linked:ibm-food-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Internet of Things]]",
+      "resolved": "urn:visionflow:linked:internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OriginTrail]]",
+      "resolved": "urn:visionflow:linked:origin-trail",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polkadot]]",
+      "resolved": "urn:visionflow:linked:polkadot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Provenance]]",
+      "resolved": "urn:visionflow:linked:provenance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ripe.io]]",
+      "resolved": "urn:visionflow:linked:ripe-io",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SafeTraces]]",
+      "resolved": "urn:visionflow:linked:safe-traces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TE-FOOD]]",
+      "resolved": "urn:visionflow:linked:te-food",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Too Good To Go]]",
+      "resolved": "urn:visionflow:linked:too-good-to-go",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VeChain]]",
+      "resolved": "urn:visionflow:linked:ve-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Winnow]]",
+      "resolved": "urn:visionflow:linked:winnow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zest Labs]]",
+      "resolved": "urn:visionflow:linked:zest-labs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers. Major implementations including IBM Food Trust (500+ participants including Walmart, Carrefour, Dole, Nestlé) and VeChain's Walmart China deployment demonstrate transformative impact on the £55 billion annual foodborne illness problem affecting 48 million Americans, with 50-70% reductions in trace-back time and 30% sales increases for blockchain-tracked products through enhanced consumer trust.

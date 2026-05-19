@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d",
+  "title": "ETSI_Domain_Infrastructure___Governance",
+  "slug": "etsi-domain-infrastructure-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-governance",
+  "domain": "artificial-intelligence",
+  "definition": "ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components. Infrastructure governance integrates autonomic management via ETSI GANA, cloud orchestration frameworks (TC-MANO) enabling declarative management, and trust domain governance standards (ETSI TS 104 007) supporting policy-driven control of network flows, lifecycle management, and domain separation ensuring security and regulatory compliance. Applications span telecommunications, cloud-native functions, and metaverse platforms with emerging focus on AI-driven governance models, 6G integration, and multi-domain trust frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "resilience-metric",
+      "label": "Resilience Metric"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5",
+  "title": "Neural Radiance Fields",
+  "slug": "neural-radiance-fields",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:neural-radiance-fields",
+  "domain": "distributed-collaboration",
+  "definition": "\"A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetric ray marching and gradient-based optimisation.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-050-neural-rendering-telepresence",
+      "label": "TELE-050-neural-rendering-telepresence"
+    },
+    {
+      "slug": "tele-051-3d-gaussian-splatting",
+      "label": "TELE-051-3d-gaussian-splatting"
+    },
+    {
+      "slug": "tele-053-volumetric-video-conferencing",
+      "label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
+      "slug": "tele-060-instant-ngp",
+      "label": "TELE-060-instant-ngp"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

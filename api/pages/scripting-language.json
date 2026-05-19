@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:082e06d88c8c4d9956794713aa0c1b8de33778107f6e550110d89db6586a8cb4",
+  "title": "Scripting Language",
+  "slug": "scripting-language",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scripting-language",
+  "domain": "infrastructure",
+  "definition": "ScriptingLanguage is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

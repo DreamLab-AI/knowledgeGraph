@@ -1,21 +1,243 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#VirtualOfficeSpaces
-uri:: urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Virtual Office Spaces
-content-hash:: sha256-12-1bb4495e6ff8
-legacy-term-id:: TC-0301
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#VirtualOfficeSpaces
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces
 public:: true
+
+# Virtual Office Spaces
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c",
+  "@type": "Page",
+  "vc:slug": "virtual-office-spaces",
+  "title": "Virtual Office Spaces",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "vc:label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-027-spatial-platform",
+      "vc:label": "TELE-027-spatial-platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "vc:label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-300-digital-twin-collaboration",
+      "vc:label": "TELE-300-digital-twin-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "vc:label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "Virtual Environment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1bb4495e6ff8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#VirtualOfficeSpaces"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0301"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Virtual Office Spaces"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:virtual-office-spaces",
+  "@type": "OntologyClass",
+  "label": "Virtual Office Spaces",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "Virtual Environment"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote participation through immersive telepresence platforms.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:virtual-office-spaces:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[TELE-002-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-026-microsoft-mesh]]",
+      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-027-spatial-platform]]",
+      "resolved": "urn:visionflow:linked:tele-027-spatial-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-028-horizon-workrooms]]",
+      "resolved": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-300-digital-twin-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-300-digital-twin-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-302-shared-whiteboards]]",
+      "resolved": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Environment]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote participation through immersive telepresence platforms."

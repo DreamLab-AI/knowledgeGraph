@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:6fcdd04dbe02c0d97d2e051671b1e26745781f98a10d9efe56fd4194d163efee",
+  "title": "Agentic Metaverse for Global Creatives",
+  "slug": "agentic-metaverse-for-global-creatives",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agentic-metaverse-for-global-creatives",
+  "domain": "artificial-intelligence",
+  "definition": "Agentic Metaverse for Global Creatives is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:17caee2cfd444ed886c354c6e736d7af6b572a5f85174530a870fc031005f786",
+  "title": "Taylor Swift is Venice",
+  "slug": "taylor-swift-is-venice",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:taylor-swift-is-venice",
+  "domain": "infrastructure",
+  "definition": "Taylor Swift is Venice is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

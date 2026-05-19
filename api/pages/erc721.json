@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:e5321d5996c838de115a249d766701d1612d9a938661e8e39720b24836af3064",
+  "title": "ERC721",
+  "slug": "erc721",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc721",
+  "domain": "blockchain",
+  "definition": "The Ethereum non-fungible token standard for unique digital assets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "ownership-transfer",
+      "label": "Ownership Transfer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": []
+}

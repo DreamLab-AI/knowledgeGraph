@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:eae19c1ba05cd32a9ffc5c323b2ec12bc9c3981f5bd08e29f8a065fd6bb091ae",
+  "title": "Swarm Robot",
+  "slug": "swarm-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:swarm-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:autonomous-robot",
+      "label": "Autonomous Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

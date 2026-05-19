@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:18f8091fa7ceb1741aca9cf83dba6e0da80f75b042048cda453b724b9fbf963d",
+  "title": "Scene Management",
+  "slug": "scene-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scene-management",
+  "domain": "spatial-computing",
+  "definition": "SceneManagement is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

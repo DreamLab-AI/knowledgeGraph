@@ -1,21 +1,665 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Neural3DGeneration
-uri:: urn:visionclaw:concept:artificial-intelligence:neural-3d-generation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:neural-3d-generation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Neural 3D Generation
-content-hash:: sha256-12-3de857ea4bf4
-legacy-term-id:: AI-0700
-status:: complete
-maturity:: emerging
-quality-score:: 0.50
-authority-score:: 0.90
-version:: 2.0.0
-created:: 2025-11-05T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Neural3DGeneration
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:neural-3d-generation
 public:: true
+
+# Neural 3D Generation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53",
+  "@type": "Page",
+  "vc:slug": "neural-3-d-generation",
+  "title": "Neural 3D Generation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-asset-dataset",
+      "vc:label": "3D Asset Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:3-d-representation",
+      "vc:label": "3D Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-3-d-modeling",
+      "vc:label": "Automated 3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:dream-fusion-google",
+      "vc:label": "DreamFusion (Google)"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:gan",
+      "vc:label": "GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:get3-d",
+      "vc:label": "GET3D"
+    },
+    {
+      "@id": "urn:visionflow:linked:get3-d-nvidia",
+      "vc:label": "GET3D (NVIDIA)"
+    },
+    {
+      "@id": "urn:visionflow:linked:gl-tf-2-0",
+      "vc:label": "glTF 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:ne-rf",
+      "vc:label": "NeRF"
+    },
+    {
+      "@id": "urn:visionflow:linked:ne-rf-mildenhall-et-al",
+      "vc:label": "NeRF (Mildenhall et al.)"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-ai-point-e",
+      "vc:label": "OpenAI Point-E"
+    },
+    {
+      "@id": "urn:visionflow:linked:rapid-prototyping",
+      "vc:label": "Rapid Prototyping"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap-e-open-ai",
+      "vc:label": "Shap-E (OpenAI)"
+    },
+    {
+      "@id": "urn:visionflow:linked:siggraph-ai",
+      "vc:label": "SIGGRAPH AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-pipeline",
+      "vc:label": "Training Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-content-generation",
+      "vc:label": "3D Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+      "vc:label": "3D Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-model",
+      "vc:label": "3D Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar",
+      "vc:label": "Avatar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:camera-parameters",
+      "vc:label": "Camera Parameters"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin-generation",
+      "vc:label": "Digital Twin Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:game-engine",
+      "vc:label": "Game Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gaussian-splatting",
+      "vc:label": "Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-design-tool",
+      "vc:label": "Generative Design Tool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-radiance-field",
+      "vc:label": "Neural Radiance Field"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rendering-engine",
+      "vc:label": "Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment-creation",
+      "vc:label": "Virtual Environment Creation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-world",
+      "vc:label": "Virtual World"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.90"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3de857ea4bf4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-05T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Neural3DGeneration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0700"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "emerging"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Neural 3D Generation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:neural-3d-generation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:neural-3d-generation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:neural-3-d-generation",
+  "@type": "OntologyClass",
+  "label": "Neural 3D Generation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "emerging",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.90",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:3-d-representation",
+      "vc:label": "3D Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-pipeline",
+      "vc:label": "Training Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rendering-engine",
+      "vc:label": "Rendering Engine"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:3-d-asset-dataset",
+      "vc:label": "3D Asset Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:camera-parameters",
+      "vc:label": "Camera Parameters"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:automated-3-d-modeling",
+      "vc:label": "Automated 3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:rapid-prototyping",
+      "vc:label": "Rapid Prototyping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin-generation",
+      "vc:label": "Digital Twin Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment-creation",
+      "vc:label": "Virtual Environment Creation"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:gan",
+      "vc:label": "GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gaussian-splatting",
+      "vc:label": "Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-radiance-field",
+      "vc:label": "Neural Radiance Field"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:3-d-model",
+      "vc:label": "3D Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar",
+      "vc:label": "Avatar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-world",
+      "vc:label": "Virtual World"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:neural-3-d-generation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Asset Dataset]]",
+      "resolved": "urn:visionflow:linked:3-d-asset-dataset",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Representation]]",
+      "resolved": "urn:visionflow:linked:3-d-representation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated 3D Modeling]]",
+      "resolved": "urn:visionflow:linked:automated-3-d-modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diffusion Model]]",
+      "resolved": "urn:visionflow:linked:diffusion-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DreamFusion (Google)]]",
+      "resolved": "urn:visionflow:linked:dream-fusion-google",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Extended Reality]]",
+      "resolved": "urn:visionflow:linked:extended-reality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GAN]]",
+      "resolved": "urn:visionflow:linked:gan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GET3D]]",
+      "resolved": "urn:visionflow:linked:get3-d",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GET3D (NVIDIA)]]",
+      "resolved": "urn:visionflow:linked:get3-d-nvidia",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[glTF 2.0]]",
+      "resolved": "urn:visionflow:linked:gl-tf-2-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPU Compute]]",
+      "resolved": "urn:visionflow:linked:gpu-compute",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NeRF]]",
+      "resolved": "urn:visionflow:linked:ne-rf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NeRF (Mildenhall et al.)]]",
+      "resolved": "urn:visionflow:linked:ne-rf-mildenhall-et-al",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenAI Point-E]]",
+      "resolved": "urn:visionflow:linked:open-ai-point-e",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rapid Prototyping]]",
+      "resolved": "urn:visionflow:linked:rapid-prototyping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Shap-E (OpenAI)]]",
+      "resolved": "urn:visionflow:linked:shap-e-open-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SIGGRAPH AI]]",
+      "resolved": "urn:visionflow:linked:siggraph-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Training Pipeline]]",
+      "resolved": "urn:visionflow:linked:training-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VAE]]",
+      "resolved": "urn:visionflow:linked:vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Content Generation]]",
+      "resolved": "urn:visionflow:owl:class:3-d-content-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[3D Gaussian Splatting]]",
+      "resolved": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[3D Model]]",
+      "resolved": "urn:visionflow:owl:class:3-d-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Avatar]]",
+      "resolved": "urn:visionflow:owl:class:avatar",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Camera Parameters]]",
+      "resolved": "urn:visionflow:owl:class:camera-parameters",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin Generation]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Game Engine]]",
+      "resolved": "urn:visionflow:owl:class:game-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gaussian Splatting]]",
+      "resolved": "urn:visionflow:owl:class:gaussian-splatting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative AI]]",
+      "resolved": "urn:visionflow:owl:class:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Design Tool]]",
+      "resolved": "urn:visionflow:owl:class:generative-design-tool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Model]]",
+      "resolved": "urn:visionflow:owl:class:generative-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image Generation]]",
+      "resolved": "urn:visionflow:owl:class:image-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Radiance Field]]",
+      "resolved": "urn:visionflow:owl:class:neural-radiance-field",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Procedural Content Generation]]",
+      "resolved": "urn:visionflow:owl:class:procedural-content-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Rendering Engine]]",
+      "resolved": "urn:visionflow:owl:class:rendering-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training Data]]",
+      "resolved": "urn:visionflow:owl:class:training-data",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Environment Creation]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment-creation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual World]]",
+      "resolved": "urn:visionflow:owl:class:virtual-world",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.

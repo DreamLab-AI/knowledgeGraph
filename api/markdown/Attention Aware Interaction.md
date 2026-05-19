@@ -1,21 +1,286 @@
-iri:: http://narrativegoldmine.com/metaverse#AttentionAwareInteraction
-uri:: urn:visionclaw:concept:artificial-intelligence:attention-aware-interaction
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:attention-aware-interaction
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Attention Aware Interaction
-content-hash:: sha256-12-1ac40503fbfa
-legacy-term-id:: MV-9781
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AttentionAwareInteraction
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:attention-aware-interaction
 public:: true
+
+# Attention Aware Interaction
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc",
+  "@type": "Page",
+  "vc:slug": "attention-aware-interaction",
+  "title": "Attention Aware Interaction",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-interfaces",
+      "vc:label": "Adaptive Interfaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-modeling",
+      "vc:label": "Attention Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:eye-tracking-hardware",
+      "vc:label": "Eye Tracking Hardware"
+    },
+    {
+      "@id": "urn:visionflow:linked:foveated-rendering",
+      "vc:label": "Foveated Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaze-based-selection",
+      "vc:label": "Gaze-Based Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaze-detection-algorithms",
+      "vc:label": "Gaze Detection Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1ac40503fbfa"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AttentionAwareInteraction"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9781"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Attention Aware Interaction"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:attention-aware-interaction"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:attention-aware-interaction"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:attention-aware-interaction",
+  "@type": "OntologyClass",
+  "label": "Attention Aware Interaction",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:attention-modeling",
+      "vc:label": "Attention Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:eye-tracking-hardware",
+      "vc:label": "Eye Tracking Hardware"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaze-detection-algorithms",
+      "vc:label": "Gaze Detection Algorithms"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-interfaces",
+      "vc:label": "Adaptive Interfaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:foveated-rendering",
+      "vc:label": "Foveated Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaze-based-selection",
+      "vc:label": "Gaze-Based Selection"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:attention-aware-interaction:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adaptive Interfaces]]",
+      "resolved": "urn:visionflow:linked:adaptive-interfaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Attention Modeling]]",
+      "resolved": "urn:visionflow:linked:attention-modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eye Tracking Hardware]]",
+      "resolved": "urn:visionflow:linked:eye-tracking-hardware",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Foveated Rendering]]",
+      "resolved": "urn:visionflow:linked:foveated-rendering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gaze-Based Selection]]",
+      "resolved": "urn:visionflow:linked:gaze-based-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gaze Detection Algorithms]]",
+      "resolved": "urn:visionflow:linked:gaze-detection-algorithms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Input]]",
+      "resolved": "urn:visionflow:linked:sensor-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human-Computer Interaction]]",
+      "resolved": "urn:visionflow:owl:class:human-computer-interaction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.

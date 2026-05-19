@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b97b3244f8963023bc2e43eeeed1e257b2c5015674062642a3f4ecd86f6890d2",
+  "title": "Digital Entertainment",
+  "slug": "digital-entertainment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-entertainment",
+  "domain": "spatial-computing",
+  "definition": "Digital Entertainment is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersive-entertainment",
+      "label": "Immersive Entertainment"
+    }
+  ]
+}

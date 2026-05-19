@@ -1,0 +1,156 @@
+{
+  "id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b",
+  "title": "3D and 4D",
+  "slug": "3-d-and-4-d",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-d-and-4-d",
+  "domain": "spatial-computing",
+  "definition": "3D and 4D is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automation",
+      "label": "automation"
+    },
+    {
+      "slug": "community",
+      "label": "community"
+    },
+    {
+      "slug": "decision-making",
+      "label": "decision making"
+    },
+    {
+      "slug": "design-thinking",
+      "label": "design thinking"
+    },
+    {
+      "slug": "documentation",
+      "label": "documentation"
+    },
+    {
+      "slug": "innovation",
+      "label": "innovation"
+    },
+    {
+      "slug": "modeling",
+      "label": "modeling"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "neural networks"
+    },
+    {
+      "slug": "open-source",
+      "label": "open source"
+    },
+    {
+      "slug": "optimization",
+      "label": "optimization"
+    },
+    {
+      "slug": "organisation",
+      "label": "organisation"
+    },
+    {
+      "slug": "performance",
+      "label": "performance"
+    },
+    {
+      "slug": "research",
+      "label": "research"
+    },
+    {
+      "slug": "scalability",
+      "label": "scalability"
+    },
+    {
+      "slug": "skills-development",
+      "label": "skills development"
+    },
+    {
+      "slug": "user-experience",
+      "label": "user experience"
+    },
+    {
+      "slug": "visualization",
+      "label": "visualization"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "artificial intelligence"
+    },
+    {
+      "slug": "bias",
+      "label": "bias"
+    },
+    {
+      "slug": "collaboration",
+      "label": "collaboration"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "computer vision"
+    },
+    {
+      "slug": "data-management",
+      "label": "data management"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "deep learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "natural language processing"
+    },
+    {
+      "slug": "robotics",
+      "label": "robotics"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "software engineering"
+    },
+    {
+      "slug": "training",
+      "label": "training"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ]
+}

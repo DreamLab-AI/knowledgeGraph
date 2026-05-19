@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:420fddc1823797c3495ae92d8df00d75efa99e6ba98f43f2773d5748887dd48c",
+  "title": "Appearance Translation",
+  "slug": "appearance-translation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:appearance-translation",
+  "domain": "spatial-computing",
+  "definition": "Appearance Translation refers to neural style transfer and image-to-image translation techniques that use deep learning to transform the visual style of images or video while preserving semantic content, enabling artistic stylization, domain adaptation, and visual content transformation across different aesthetic representations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:neural-image-processing",
+      "label": "Neural Image Processing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-preservation",
+        "label": "Content Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:visionflow:linked:style-representations",
+        "label": "Style Representations"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:artistic-stylization",
+        "label": "Artistic Stylization"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-content-transformation",
+        "label": "Visual Content Transformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artistic-stylization",
+      "label": "Artistic Stylization"
+    },
+    {
+      "slug": "content-preservation",
+      "label": "Content Preservation"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "slug": "neural-image-processing",
+      "label": "Neural Image Processing"
+    },
+    {
+      "slug": "style-representations",
+      "label": "Style Representations"
+    },
+    {
+      "slug": "visual-content-transformation",
+      "label": "Visual Content Transformation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    }
+  ]
+}

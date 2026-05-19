@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:cfcada562c4361d988eedbce718729f50ec24004fdb6d80705308388af8bb793",
+  "title": "Relayer",
+  "slug": "relayer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:relayer",
+  "domain": "blockchain",
+  "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    }
+  ]
+}

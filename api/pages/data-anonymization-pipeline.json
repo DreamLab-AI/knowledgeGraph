@@ -1,0 +1,190 @@
+{
+  "id": "urn:visionflow:page:fbd93a694b6d79dc140cc07d546a2ec3962002008ce1528a7976299fbc40e565",
+  "title": "Data Anonymization Pipeline",
+  "slug": "data-anonymization-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-anonymization-pipeline",
+  "domain": "spatial-computing",
+  "definition": "An automated, multi-stage process that systematically removes, masks, or generalizes personally identifiable information (PII) from datasets to protect individual privacy while preserving data utility for analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-protection",
+      "label": "Data Protection"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:de-identification-module",
+        "label": "De-identification Module"
+      },
+      {
+        "id": "urn:visionflow:linked:generalization-engine",
+        "label": "Generalization Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:perturbation-function",
+        "label": "Perturbation Function"
+      },
+      {
+        "id": "urn:visionflow:linked:pii-detector",
+        "label": "PII Detector"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-assessor",
+        "label": "Risk Assessor"
+      },
+      {
+        "id": "urn:visionflow:linked:suppression-filter",
+        "label": "Suppression Filter"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-classification",
+        "label": "Data Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-preserving-analytics",
+        "label": "Privacy-Preserving Analytics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-data-sharing",
+        "label": "Secure Data Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-classification",
+      "label": "Data Classification"
+    },
+    {
+      "slug": "de-identification-module",
+      "label": "De-identification Module"
+    },
+    {
+      "slug": "enisa-anonymization-guide",
+      "label": "ENISA Anonymization Guide"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "generalization-engine",
+      "label": "Generalization Engine"
+    },
+    {
+      "slug": "iso-20889",
+      "label": "ISO 20889"
+    },
+    {
+      "slug": "perturbation-function",
+      "label": "Perturbation Function"
+    },
+    {
+      "slug": "pii-detection",
+      "label": "PII Detection"
+    },
+    {
+      "slug": "pii-detector",
+      "label": "PII Detector"
+    },
+    {
+      "slug": "privacy-engineering",
+      "label": "Privacy Engineering"
+    },
+    {
+      "slug": "privacy-policy",
+      "label": "Privacy Policy"
+    },
+    {
+      "slug": "risk-assessor",
+      "label": "Risk Assessor"
+    },
+    {
+      "slug": "suppression-filter",
+      "label": "Suppression Filter"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy-Preserving Analytics"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "secure-data-sharing",
+      "label": "Secure Data Sharing"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

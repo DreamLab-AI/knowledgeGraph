@@ -1,20 +1,254 @@
-iri:: http://narrativegoldmine.com/ontology#AgenticMycelia
-uri:: urn:visionclaw:concept:artificial-intelligence:agentic-mycelia
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:agentic-mycelia
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Agentic Mycelia
-content-hash:: sha256-12-1c66d542567e
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#AgenticMycelia
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:agentic-mycelia
 public:: true
+
+# Agentic Mycelia
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0c0a5620caaa7038443d04ce1ad86e1f6db25d9a740ed53efe7067edf560625a",
+  "@type": "Page",
+  "vc:slug": "agentic-mycelia",
+  "title": "Agentic Mycelia",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diagrams-as-code",
+      "vc:label": "Diagrams as Code"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-ontology",
+      "vc:label": "Metaverse Ontology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1c66d542567e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#AgenticMycelia"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Agentic Mycelia"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:agentic-mycelia"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:agentic-mycelia"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c0a5620caaa7038443d04ce1ad86e1f6db25d9a740ed53efe7067edf560625a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:agentic-mycelia",
+  "@type": "OntologyClass",
+  "label": "Agentic Mycelia",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0c0a5620caaa7038443d04ce1ad86e1f6db25d9a740ed53efe7067edf560625a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c0a5620caaa7038443d04ce1ad86e1f6db25d9a740ed53efe7067edf560625a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Agentic Mycelia is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:agentic-mycelia:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0c0a5620caaa7038443d04ce1ad86e1f6db25d9a740ed53efe7067edf560625a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Chain of Thought]]",
+      "resolved": "urn:visionflow:linked:chain-of-thought",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic Claude]]",
+      "resolved": "urn:visionflow:owl:class:anthropic-claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diagrams as Code]]",
+      "resolved": "urn:visionflow:owl:class:diagrams-as-code",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Ontology]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-ontology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Prompt Engineering]]",
+      "resolved": "urn:visionflow:owl:class:prompt-engineering",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c0a5620caaa7038443d04ce1ad86e1f6db25d9a740ed53efe7067edf560625a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Agentic Mycelia is a concept within the ngm domain.
@@ -69,7 +303,7 @@ public:: true
   - [[Google]] [[Gemini]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
   - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
   - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
-		- I build [[Chain of Thought]] scaffolds in [[Large language models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
+		- I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
 			- Current large language models benefit greatly from being asked to create diagrams as code, in a guided manner.
 			- These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
 			- Human comprehension is radically increased during the co-creations.

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:64777b3857c5c3ea32a85d91f620cf0ca0886499d9cb94f59c4b7fe2d528f8c5",
+  "title": "Spatial Mapping Technology",
+  "slug": "spatial-mapping-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-mapping-technology",
+  "domain": "spatial-computing",
+  "definition": "Spatial Mapping Technology is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lidar-scanning",
+      "label": "Lidar Scanning"
+    }
+  ]
+}

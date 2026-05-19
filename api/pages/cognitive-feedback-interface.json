@@ -1,0 +1,158 @@
+{
+  "id": "urn:visionflow:page:753c9e6a8e1e472b3f5d5e703ace42e563109bf81e7bf9e3524ad9782d098f5f",
+  "title": "Cognitive Feedback Interface",
+  "slug": "cognitive-feedback-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cognitive-feedback-interface",
+  "domain": "spatial-computing",
+  "definition": "Adaptive interface system that dynamically adjusts information flow and interaction modalities based on real-time assessment of user cognitive state, attention levels, and mental workload.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:adaptive-ui-controller",
+        "label": "Adaptive UI Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:attention-tracker",
+        "label": "Attention Tracker"
+      },
+      {
+        "id": "urn:visionflow:linked:cognitive-state-monitor",
+        "label": "Cognitive State Monitor"
+      },
+      {
+        "id": "urn:visionflow:linked:workload-analyzer",
+        "label": "Workload Analyzer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:brain-computer-interface",
+        "label": "Brain-Computer Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:cognitive-model",
+        "label": "Cognitive Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-information-display",
+        "label": "Adaptive Information Display"
+      },
+      {
+        "id": "urn:visionflow:linked:cognitive-load-management",
+        "label": "Cognitive Load Management"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-ux",
+        "label": "Personalized UX"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-aware-interaction",
+        "label": "Attention-Aware Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-information-display",
+      "label": "Adaptive Information Display"
+    },
+    {
+      "slug": "adaptive-ui-controller",
+      "label": "Adaptive UI Controller"
+    },
+    {
+      "slug": "attention-tracker",
+      "label": "Attention Tracker"
+    },
+    {
+      "slug": "biometric-sensors",
+      "label": "Biometric Sensors"
+    },
+    {
+      "slug": "brain-computer-interface",
+      "label": "Brain-Computer Interface"
+    },
+    {
+      "slug": "cognitive-load-management",
+      "label": "Cognitive Load Management"
+    },
+    {
+      "slug": "cognitive-model",
+      "label": "Cognitive Model"
+    },
+    {
+      "slug": "cognitive-state-monitor",
+      "label": "Cognitive State Monitor"
+    },
+    {
+      "slug": "iso-9241-112",
+      "label": "ISO 9241-112"
+    },
+    {
+      "slug": "neurofeedback-system",
+      "label": "Neurofeedback System"
+    },
+    {
+      "slug": "personalized-ux",
+      "label": "Personalized UX"
+    },
+    {
+      "slug": "real-time-analytics",
+      "label": "Real-time Analytics"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "workload-analyzer",
+      "label": "Workload Analyzer"
+    },
+    {
+      "slug": "attention-aware-interaction",
+      "label": "Attention-Aware Interaction"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,24 +1,201 @@
-iri:: http://narrativegoldmine.com/spatial-computing#VirtualPhysicalCollision
-uri:: urn:visionclaw:concept:spatial-computing:virtual-physical-collision
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:virtual-physical-collision
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Virtual Physical Collision
-content-hash:: sha256-12-ad2c45ff0c8c
-legacy-term-id:: MV-10136
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#VirtualPhysicalCollision
+legacy_uri:: urn:visionclaw:concept:spatial-computing:virtual-physical-collision
 public:: true
+
+# Virtual Physical Collision
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b",
+  "@type": "Page",
+  "vc:slug": "virtual-physical-collision",
+  "title": "Virtual Physical Collision",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physics-simulation",
+      "vc:label": "Physics Simulation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ad2c45ff0c8c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#VirtualPhysicalCollision"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10136"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Virtual Physical Collision"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:virtual-physical-collision"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:virtual-physical-collision"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:virtual-physical-collision",
+  "@type": "OntologyClass",
+  "label": "Virtual Physical Collision",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:physics-simulation",
+      "vc:label": "Physics Simulation"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The detection and simulation of contact between virtual objects and real-world elements in mixed reality environments, enabling realistic interactions, haptic feedback, and safety boundaries that prevent users from colliding with physical obstacles while immersed in virtual experiences.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:virtual-physical-collision:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Physics Simulation]]",
+      "resolved": "urn:visionflow:owl:class:physics-simulation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The detection and simulation of contact between virtual objects and real-world elements in mixed reality environments, enabling realistic interactions, haptic feedback, and safety boundaries that prevent users from colliding with physical obstacles while immersed in virtual experiences.

@@ -1,0 +1,484 @@
+{
+  "id": "urn:visionflow:page:0171d0113de45dec632f68274870bdd22a154fda629a3fbf00a45d3757f77a92",
+  "title": "Energy and Power",
+  "slug": "energy-and-power",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:energy-and-power",
+  "domain": "infrastructure",
+  "definition": "Energy and Power, within the [[Infrastructure]] domain, denotes the integrated sociotechnical system governing the generation, transmission, distribution, storage, and consumption of electrical energy in contexts directly relevant to [[AI Data Centres]], [[Bitcoin Mining]] operations, and the broader [[Digital Economy]]. The concept encompasses the physical [[Grid Infrastructure]] (transmission substations, high-voltage interconnects, distribution feeders, reactive power compensation), demand-side actors (hyperscale data centres, Bitcoin mining farms, GPU clusters, edge inference nodes), supply-side actors (utility-scale renewables, gas peakers, baseload nuclear, pumped-hydro storage, battery energy storage systems), and the contractual and regulatory mechanisms \u2014 [[Power Purchase Agreement]]s (PPAs), capacity markets, balancing services, grid connection queues \u2014 that mediate between them.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:critical-infrastructure",
+      "label": "Critical Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:grid-infrastructure",
+      "label": "Grid Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:battery-storage",
+        "label": "Battery Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:carbon-intensity",
+        "label": "Carbon Intensity"
+      },
+      {
+        "id": "urn:visionflow:linked:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:visionflow:linked:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:visionflow:linked:grid-connection",
+        "label": "Grid Connection"
+      },
+      {
+        "id": "urn:visionflow:linked:nuclear-energy",
+        "label": "Nuclear Energy"
+      },
+      {
+        "id": "urn:visionflow:linked:power-purchase-agreement",
+        "label": "Power Purchase Agreement"
+      },
+      {
+        "id": "urn:visionflow:linked:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:visionflow:linked:transmission-network",
+        "label": "Transmission Network"
+      },
+      {
+        "id": "urn:visionflow:linked:water-cooling",
+        "label": "Water Cooling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:balancing-services",
+        "label": "Balancing Services"
+      },
+      {
+        "id": "urn:visionflow:linked:capacity-market",
+        "label": "Capacity Market"
+      },
+      {
+        "id": "urn:visionflow:linked:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:visionflow:linked:generation-capacity",
+        "label": "Generation Capacity"
+      },
+      {
+        "id": "urn:visionflow:linked:grid-connection-queue",
+        "label": "Grid Connection Queue"
+      },
+      {
+        "id": "urn:visionflow:linked:grid-infrastructure",
+        "label": "Grid Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:transmission-network",
+        "label": "Transmission Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-data-centres",
+        "label": "AI Data Centres"
+      },
+      {
+        "id": "urn:visionflow:linked:electrification",
+        "label": "Electrification"
+      },
+      {
+        "id": "urn:visionflow:linked:hyperscaler-operations",
+        "label": "Hyperscaler Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:visionflow:owl:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:behind-the-meter-generation",
+        "label": "Behind-the-Meter Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:capacity-markets",
+        "label": "Capacity Markets"
+      },
+      {
+        "id": "urn:visionflow:linked:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "id": "urn:visionflow:linked:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:visionflow:linked:power-purchase-agreements",
+        "label": "Power Purchase Agreements"
+      },
+      {
+        "id": "urn:visionflow:linked:small-modular-reactors",
+        "label": "Small Modular Reactors"
+      },
+      {
+        "id": "urn:visionflow:owl:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-data-centres",
+      "label": "AI Data Centres"
+    },
+    {
+      "slug": "balancing-services",
+      "label": "Balancing Services"
+    },
+    {
+      "slug": "battery-energy-storage",
+      "label": "Battery Energy Storage"
+    },
+    {
+      "slug": "battery-storage",
+      "label": "Battery Storage"
+    },
+    {
+      "slug": "behind-the-meter-generation",
+      "label": "Behind-the-Meter Generation"
+    },
+    {
+      "slug": "capacity-market",
+      "label": "Capacity Market"
+    },
+    {
+      "slug": "capacity-markets",
+      "label": "Capacity Markets"
+    },
+    {
+      "slug": "carbon-intensity",
+      "label": "Carbon Intensity"
+    },
+    {
+      "slug": "carbon-offsetting",
+      "label": "Carbon Offsetting"
+    },
+    {
+      "slug": "climate-policy",
+      "label": "Climate Policy"
+    },
+    {
+      "slug": "contractual-layer",
+      "label": "ContractualLayer"
+    },
+    {
+      "slug": "critical-infrastructure",
+      "label": "Critical Infrastructure"
+    },
+    {
+      "slug": "data-centre",
+      "label": "Data Centre"
+    },
+    {
+      "slug": "demand-forecasting",
+      "label": "Demand Forecasting"
+    },
+    {
+      "slug": "demand-response",
+      "label": "Demand Response"
+    },
+    {
+      "slug": "digital-economy-domain",
+      "label": "DigitalEconomyDomain"
+    },
+    {
+      "slug": "electrification",
+      "label": "Electrification"
+    },
+    {
+      "slug": "energy-storage",
+      "label": "Energy Storage"
+    },
+    {
+      "slug": "epri-standards",
+      "label": "EPRI Standards"
+    },
+    {
+      "slug": "ferc-regulations",
+      "label": "FERC Regulations"
+    },
+    {
+      "slug": "generation-capacity",
+      "label": "Generation Capacity"
+    },
+    {
+      "slug": "green-hydrogen",
+      "label": "Green Hydrogen"
+    },
+    {
+      "slug": "grid-connection",
+      "label": "Grid Connection"
+    },
+    {
+      "slug": "grid-connection-queue",
+      "label": "Grid Connection Queue"
+    },
+    {
+      "slug": "grid-infrastructure",
+      "label": "Grid Infrastructure"
+    },
+    {
+      "slug": "hyperscaler-operations",
+      "label": "Hyperscaler Operations"
+    },
+    {
+      "slug": "iea-electricity-reports",
+      "label": "IEA Electricity Reports"
+    },
+    {
+      "slug": "ieee-power-standards",
+      "label": "IEEE Power Standards"
+    },
+    {
+      "slug": "national-grid-eso",
+      "label": "National Grid ESO"
+    },
+    {
+      "slug": "net-zero-targets",
+      "label": "Net Zero Targets"
+    },
+    {
+      "slug": "nuclear-energy",
+      "label": "Nuclear Energy"
+    },
+    {
+      "slug": "offshore-wind",
+      "label": "Offshore Wind"
+    },
+    {
+      "slug": "ofgem",
+      "label": "Ofgem"
+    },
+    {
+      "slug": "physical-infrastructure-layer",
+      "label": "PhysicalInfrastructureLayer"
+    },
+    {
+      "slug": "power-purchase-agreement",
+      "label": "Power Purchase Agreement"
+    },
+    {
+      "slug": "power-purchase-agreements",
+      "label": "Power Purchase Agreements"
+    },
+    {
+      "slug": "pumped-hydro-storage",
+      "label": "Pumped Hydro Storage"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "RegulatoryLayer"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    },
+    {
+      "slug": "sbti-net-zero-standard",
+      "label": "SBTi Net-Zero Standard"
+    },
+    {
+      "slug": "small-modular-reactors",
+      "label": "Small Modular Reactors"
+    },
+    {
+      "slug": "smart-grid",
+      "label": "Smart Grid"
+    },
+    {
+      "slug": "solar-pv",
+      "label": "Solar PV"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "SustainabilityDomain"
+    },
+    {
+      "slug": "transmission-infrastructure",
+      "label": "Transmission Infrastructure"
+    },
+    {
+      "slug": "transmission-network",
+      "label": "Transmission Network"
+    },
+    {
+      "slug": "water-cooling",
+      "label": "Water Cooling"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "label": "leopold-aschenbrenner"
+    }
+  ]
+}

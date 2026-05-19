@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:f1fea222d1b6d44acb7dc0311114d243afbc77d0983bc19974c9bfed4614bced",
+  "title": "Authorised Representative",
+  "slug": "authorised-representative",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:authorised-representative",
+  "domain": "spatial-computing",
+  "definition": "A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,21 +1,302 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#NeuralNetwork
-uri:: urn:visionclaw:concept:artificial-intelligence:neural-network
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:neural-network
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Neural Network
-content-hash:: sha256-12-33bd2094969b
-legacy-term-id:: AI-3000
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#NeuralNetwork
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:neural-network
 public:: true
+
+# Neural Network
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f",
+  "@type": "Page",
+  "vc:slug": "neural-network",
+  "title": "Neural Network",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aigrounded-domain",
+      "vc:label": "AIGroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-33bd2094969b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#NeuralNetwork"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-3000"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Neural Network"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:neural-network"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:neural-network"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:neural-network",
+  "@type": "OntologyClass",
+  "label": "Neural Network",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, and transformer architectures.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:neural-network:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AIGroundedDomain]]",
+      "resolved": "urn:visionflow:linked:aigrounded-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Backpropagation]]",
+      "resolved": "urn:visionflow:owl:class:backpropagation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gradient Descent]]",
+      "resolved": "urn:visionflow:owl:class:gradient-descent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Pattern Recognition]]",
+      "resolved": "urn:visionflow:owl:class:pattern-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recurrent Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:recurrent-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stochastic Gradient Descent]]",
+      "resolved": "urn:visionflow:owl:class:stochastic-gradient-descent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, and transformer architectures.

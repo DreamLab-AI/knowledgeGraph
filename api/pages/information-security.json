@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:383607a8d68da310da4004e1554040bdd86cb00b9decfbea6ea49d0b5c4446cd",
+  "title": "Information Security",
+  "slug": "information-security",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:information-security",
+  "domain": "artificial-intelligence",
+  "definition": "Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defending against adversarial examples, model inversion attacks, data poisoning, membership inference, and model extraction. Security measures encompass differential privacy for data protection, federated learning for distributed privacy-preserving training, robust training methods, secure multi-party computation, and encryption of model parameters. As AI systems become critical infrastructure, information security ensures confidentiality, integrity, availability, and trustworthiness.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "slug": "secure-computation",
+      "label": "Secure Computation"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    }
+  ]
+}

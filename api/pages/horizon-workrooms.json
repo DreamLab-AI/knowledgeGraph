@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b",
+  "title": "Horizon Workrooms",
+  "slug": "horizon-workrooms",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:horizon-workrooms",
+  "domain": "distributed-collaboration",
+  "definition": "\"Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:tele-100-ai-avatars",
+        "label": "TELE-100-ai-avatars"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:virtual-whiteboarding",
+        "label": "VirtualWhiteboarding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh\\"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform\\"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-105-real-time-language-translation",
+      "label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "slug": "tele-107-ai-meeting-assistants",
+      "label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "tele-302-shared-whiteboards",
+      "label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "slug": "virtual-whiteboarding",
+      "label": "VirtualWhiteboarding"
+    },
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

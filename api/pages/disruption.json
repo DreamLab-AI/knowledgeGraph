@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:4785a095469023ab97b78d2ce074732f68095498c4372e84965d58c435329329",
+  "title": "Disruption",
+  "slug": "disruption",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:disruption",
+  "domain": "infrastructure",
+  "definition": "Disruption is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

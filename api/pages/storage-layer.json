@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:2db80d7a5a0bdca575f2b381dd4528ab4aaf5772a95b37441c039a14c0abf350",
+  "title": "Storage Layer",
+  "slug": "storage-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:storage-layer",
+  "domain": "infrastructure",
+  "definition": "Hardware and software infrastructure responsible for persistent retention, retrieval, and management of data and digital assets across distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure-layer",
+      "label": "Infrastructure Layer"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:cache-layer",
+        "label": "Cache Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:visionflow:linked:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-hardware",
+        "label": "Storage Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-delivery",
+        "label": "Content Delivery"
+      },
+      {
+        "id": "urn:visionflow:linked:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "block-storage",
+      "label": "Block Storage"
+    },
+    {
+      "slug": "cache-layer",
+      "label": "Cache Layer"
+    },
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "data-persistence",
+      "label": "Data Persistence"
+    },
+    {
+      "slug": "data-storage-infrastructure",
+      "label": "Data Storage Infrastructure"
+    },
+    {
+      "slug": "file-system",
+      "label": "File System"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "network-connectivity",
+      "label": "Network Connectivity"
+    },
+    {
+      "slug": "object-storage",
+      "label": "Object Storage"
+    },
+    {
+      "slug": "replication-protocol",
+      "label": "Replication Protocol"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "storage-hardware",
+      "label": "Storage Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-data",
+      "label": "ETSI_Domain_Infrastructure_Data"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    }
+  ]
+}

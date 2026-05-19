@@ -1,0 +1,211 @@
+{
+  "id": "urn:visionflow:page:c9cf86dad0d305f6d58ee39eb64decbc393256ce1ce9edd997e3866d98062a6d",
+  "title": "Deepfakes",
+  "slug": "deepfakes",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:deepfakes",
+  "domain": "artificial-intelligence",
+  "definition": "AI-generated or manipulated synthetic media content that convincingly alters a person's appearance, voice, or actions using deep learning techniques such as GANs, autoencoders, and voice synthesis models.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audio-manipulation",
+        "label": "Audio Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:face-swapping",
+        "label": "Face Swapping"
+      },
+      {
+        "id": "urn:visionflow:linked:gesture-synthesis",
+        "label": "Gesture Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-video-generation",
+        "label": "Synthetic Video Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-cloning",
+        "label": "Voice Cloning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:visionflow:owl:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:entertainment-production",
+        "label": "Entertainment Production"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-deception",
+        "label": "Identity Deception"
+      },
+      {
+        "id": "urn:visionflow:linked:media-manipulation",
+        "label": "Media Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:misinformation",
+        "label": "Misinformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-generated-content",
+      "label": "AI-Generated Content"
+    },
+    {
+      "slug": "audio-manipulation",
+      "label": "Audio Manipulation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "computational-infrastructure",
+      "label": "Computational Infrastructure"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "entertainment-production",
+      "label": "Entertainment Production"
+    },
+    {
+      "slug": "face-recognition",
+      "label": "Face Recognition"
+    },
+    {
+      "slug": "face-swapping",
+      "label": "Face Swapping"
+    },
+    {
+      "slug": "gesture-synthesis",
+      "label": "Gesture Synthesis"
+    },
+    {
+      "slug": "identity-deception",
+      "label": "Identity Deception"
+    },
+    {
+      "slug": "iso-29100",
+      "label": "ISO 29100"
+    },
+    {
+      "slug": "media-manipulation",
+      "label": "Media Manipulation"
+    },
+    {
+      "slug": "misinformation",
+      "label": "Misinformation"
+    },
+    {
+      "slug": "reed-smith",
+      "label": "Reed Smith"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "synthetic-video-generation",
+      "label": "Synthetic Video Generation"
+    },
+    {
+      "slug": "training-dataset",
+      "label": "Training Dataset"
+    },
+    {
+      "slug": "voice-cloning",
+      "label": "Voice Cloning"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    }
+  ]
+}

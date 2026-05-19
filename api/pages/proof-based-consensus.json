@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:2bd26ee7224f1e047288f46cb79bc09e077d36d69b64c62e5ec020d57f9dbbe2",
+  "title": "Proof-Based Consensus",
+  "slug": "proof-based-consensus",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proof-based-consensus",
+  "domain": "blockchain",
+  "definition": "Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "proof-of-authority",
+      "label": "Proof of Authority"
+    },
+    {
+      "slug": "proof-of-history",
+      "label": "Proof of History"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ]
+}

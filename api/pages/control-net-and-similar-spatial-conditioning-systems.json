@@ -1,0 +1,580 @@
+{
+  "id": "urn:visionflow:page:20b1cca49d349f23365b7c17b0399a160ccc588bb4d93a209a3572c62692f3e7",
+  "title": "ControlNet and Similar Spatial Conditioning Systems",
+  "slug": "control-net-and-similar-spatial-conditioning-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+  "domain": "artificial-intelligence",
+  "definition": "ControlNet and similar spatial conditioning systems constitute a family of neural network architectures and adapter frameworks that augment large pretrained text-to-image [[Diffusion Models]] with fine-grained spatial and semantic control signals\u2014enabling deterministic structural guidance over generated images through conditioning inputs such as [[Edge Detection]] maps (Canny, HED/SoftEdge), depth maps from [[Depth Estimation]] models, human body [[Pose Estimation]] skeletons (OpenPose, DWPose), semantic segmentation maps, line art drawings, handwritten scribbles, surface normal maps, and M-LSD straight-line detections\u2014without retraining or fundamentally altering the base generative model. The canonical architecture, ControlNet, was introduced by Lvmin Zhang and Maneesh Agrawala (Stanford University) in February 2023 in the paper \"Adding Conditional Control to Text-to-Image Diffusion Models\" (ICCV 2023, arXiv:2302.05543, 20,000+ citations by 2026), which proposed attaching a trainable copy of the frozen encoder blocks of [[Stable Diffusion]] 1.5 to a locked copy of the same weights via \"zero convolution\" layers\u20141\u00d71 convolutions with both weights and biases initialised to zero\u2014so th",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:conditional-image-generation",
+      "label": "Conditional Image Generation"
+    },
+    {
+      "id": "urn:visionflow:linked:diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "id": "urn:visionflow:linked:transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:fine-tuning",
+      "label": "Fine-tuning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conditioning-preprocessor",
+        "label": "Conditioning Preprocessor"
+      },
+      {
+        "id": "urn:visionflow:linked:control-signal",
+        "label": "Control Signal"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-attention-adapter",
+        "label": "Cross-Attention Adapter"
+      },
+      {
+        "id": "urn:visionflow:linked:encoder-copy",
+        "label": "Encoder Copy"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-network",
+        "label": "Identity Network"
+      },
+      {
+        "id": "urn:visionflow:linked:skip-connection-injection",
+        "label": "Skip Connection Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-convolution-layer",
+        "label": "Zero Convolution Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:conditioning-signal",
+        "label": "Conditioning Signal"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:pretrained-diffusion-model",
+        "label": "Pretrained Diffusion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-pairs",
+        "label": "Training Data Pairs"
+      },
+      {
+        "id": "urn:visionflow:owl:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:depth-controlled-synthesis",
+        "label": "Depth-Controlled Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-guided-generation",
+        "label": "Edge-Guided Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-preservation",
+        "label": "Identity Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:pose-guided-image-generation",
+        "label": "Pose-Guided Image Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:structural-layout-control",
+        "label": "Structural Layout Control"
+      },
+      {
+        "id": "urn:visionflow:linked:video-frame-consistency",
+        "label": "Video Frame Consistency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:adapter-fine-tuning",
+        "label": "Adapter Fine-tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-attention-injection",
+        "label": "Cross-Attention Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:feedback-control-architecture",
+        "label": "Feedback Control Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-conditioning",
+        "label": "Spatial Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-shot-conditioning",
+        "label": "Zero-Shot Conditioning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adapter-fine-tuning",
+      "label": "Adapter Fine-tuning"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "ar-xiv",
+      "label": "arXiv"
+    },
+    {
+      "slug": "architectural-visualisation",
+      "label": "Architectural Visualisation"
+    },
+    {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "canny-edge-detection",
+      "label": "Canny Edge Detection"
+    },
+    {
+      "slug": "cao-et-al-2017-open-pose-cvpr",
+      "label": "Cao et al. 2017 OpenPose CVPR"
+    },
+    {
+      "slug": "character-design",
+      "label": "Character Design"
+    },
+    {
+      "slug": "chen-et-al-2025-smart-spatial-ijcai",
+      "label": "Chen et al. 2025 SmartSpatial IJCAI"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-encoder",
+      "label": "CLIP Encoder"
+    },
+    {
+      "slug": "clip-image-encoder",
+      "label": "CLIP Image Encoder"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "conditional-image-generation",
+      "label": "Conditional Image Generation"
+    },
+    {
+      "slug": "conditioning-preprocessor",
+      "label": "Conditioning Preprocessor"
+    },
+    {
+      "slug": "conditioning-signal",
+      "label": "Conditioning Signal"
+    },
+    {
+      "slug": "control-signal",
+      "label": "Control Signal"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "cross-attention-adapter",
+      "label": "Cross-Attention Adapter"
+    },
+    {
+      "slug": "cross-attention-injection",
+      "label": "Cross-Attention Injection"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "depth-controlled-synthesis",
+      "label": "Depth-Controlled Synthesis"
+    },
+    {
+      "slug": "depth-fm",
+      "label": "DepthFM"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "dream-booth",
+      "label": "DreamBooth"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "eccv",
+      "label": "ECCV"
+    },
+    {
+      "slug": "edge-detection",
+      "label": "Edge Detection"
+    },
+    {
+      "slug": "edge-guided-generation",
+      "label": "Edge-Guided Generation"
+    },
+    {
+      "slug": "encoder-copy",
+      "label": "Encoder Copy"
+    },
+    {
+      "slug": "feedback-control-architecture",
+      "label": "Feedback Control Architecture"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "hu-et-al-2021-lo-ra",
+      "label": "Hu et al. 2021 LoRA"
+    },
+    {
+      "slug": "hugging-face-diffusers",
+      "label": "Hugging Face Diffusers"
+    },
+    {
+      "slug": "iccv",
+      "label": "ICCV"
+    },
+    {
+      "slug": "identity-network",
+      "label": "Identity Network"
+    },
+    {
+      "slug": "identity-preservation",
+      "label": "Identity Preservation"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
+    },
+    {
+      "slug": "insight-face",
+      "label": "InsightFace"
+    },
+    {
+      "slug": "instant-id",
+      "label": "InstantID"
+    },
+    {
+      "slug": "instant-x-instant-id-hugging-face",
+      "label": "InstantX InstantID Hugging Face"
+    },
+    {
+      "slug": "instant-x-shakker-labs-flux-control-net-union-pro",
+      "label": "InstantX Shakker-Labs FLUX ControlNet-Union-Pro"
+    },
+    {
+      "slug": "instant-x-shakker-labs-flux-control-net-union-pro-2-0",
+      "label": "InstantX Shakker-Labs FLUX ControlNet-Union-Pro-2.0"
+    },
+    {
+      "slug": "jasperai-flux-control-net-models",
+      "label": "Jasperai Flux ControlNet Models"
+    },
+    {
+      "slug": "lee-et-al-2025-control-net-rl-wacvw",
+      "label": "Lee et al. 2025 ControlNet RL WACVW"
+    },
+    {
+      "slug": "lllyasviel-control-net-v1-1-nightly-git-hub",
+      "label": "lllyasviel ControlNet v1.1 Nightly GitHub"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "mi-da-s-depth-estimation",
+      "label": "MiDaS Depth Estimation"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "mokady-et-al-2023-null-text-inversion-cvpr",
+      "label": "Mokady et al. 2023 Null-text Inversion CVPR"
+    },
+    {
+      "slug": "mou-et-al-2024-t2-i-adapter-aaai",
+      "label": "Mou et al. 2024 T2I-Adapter AAAI"
+    },
+    {
+      "slug": "open-pose",
+      "label": "OpenPose"
+    },
+    {
+      "slug": "podell-et-al-2023-sdxl",
+      "label": "Podell et al. 2023 SDXL"
+    },
+    {
+      "slug": "pose-guided-image-generation",
+      "label": "Pose-Guided Image Generation"
+    },
+    {
+      "slug": "pretrained-diffusion-model",
+      "label": "Pretrained Diffusion Model"
+    },
+    {
+      "slug": "ranftl-et-al-2020-mi-da-s-tpami",
+      "label": "Ranftl et al. 2020 MiDaS TPAMI"
+    },
+    {
+      "slug": "rombach-et-al-2022-stable-diffusion-cvpr",
+      "label": "Rombach et al. 2022 Stable Diffusion CVPR"
+    },
+    {
+      "slug": "skip-connection-injection",
+      "label": "Skip Connection Injection"
+    },
+    {
+      "slug": "spatial-conditioning",
+      "label": "Spatial Conditioning"
+    },
+    {
+      "slug": "stability-ai-sd3-5-control-nets",
+      "label": "Stability AI SD3.5 ControlNets"
+    },
+    {
+      "slug": "structural-layout-control",
+      "label": "Structural Layout Control"
+    },
+    {
+      "slug": "t2-i-adapter",
+      "label": "T2I-Adapter"
+    },
+    {
+      "slug": "tencent-arc-lab-ip-adapter-face-id",
+      "label": "Tencent ARC Lab IP-Adapter-FaceID"
+    },
+    {
+      "slug": "tencent-arc-t2-i-adapter-sdxl-hugging-face",
+      "label": "TencentARC T2I-Adapter-SDXL Hugging Face"
+    },
+    {
+      "slug": "textual-inversion",
+      "label": "Textual Inversion"
+    },
+    {
+      "slug": "training-data-pairs",
+      "label": "Training Data Pairs"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "u-net-architecture",
+      "label": "U-Net Architecture"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "video-frame-consistency",
+      "label": "Video Frame Consistency"
+    },
+    {
+      "slug": "vislearn-control-net-xs-git-hub",
+      "label": "vislearn ControlNet-XS GitHub"
+    },
+    {
+      "slug": "wang-et-al-2024-instant-id-ar-xiv",
+      "label": "Wang et al. 2024 InstantID arXiv"
+    },
+    {
+      "slug": "xia-et-al-2023-soft-edge-pidi",
+      "label": "Xia et al. 2023 SoftEdge PIDI"
+    },
+    {
+      "slug": "xinsir-control-net-union-sdxl",
+      "label": "xinsir ControlNet Union SDXL"
+    },
+    {
+      "slug": "yang-et-al-2023-dwpose-iccv-workshop",
+      "label": "Yang et al. 2023 DWPose ICCV Workshop"
+    },
+    {
+      "slug": "ye-et-al-2023-ip-adapter",
+      "label": "Ye et al. 2023 IP-Adapter"
+    },
+    {
+      "slug": "yin-et-al-2021-le-re-s-cvpr",
+      "label": "Yin et al. 2021 LeReS CVPR"
+    },
+    {
+      "slug": "zavadski-et-al-2024-control-net-xs-eccv",
+      "label": "Zavadski et al. 2024 ControlNet-XS ECCV"
+    },
+    {
+      "slug": "zavadski-et-al-2024-control-net-xs-eccv-benchmark",
+      "label": "Zavadski et al. 2024 ControlNet-XS ECCV Benchmark"
+    },
+    {
+      "slug": "zero-convolution-layer",
+      "label": "Zero Convolution Layer"
+    },
+    {
+      "slug": "zero-shot-conditioning",
+      "label": "Zero-Shot Conditioning"
+    },
+    {
+      "slug": "zhang-et-al-2023-control-net-iccv",
+      "label": "Zhang et al. 2023 ControlNet ICCV"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-tuning"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

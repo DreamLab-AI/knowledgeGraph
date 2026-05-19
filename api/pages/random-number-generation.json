@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca",
+  "title": "Random Number Generation",
+  "slug": "random-number-generation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:random-number-generation",
+  "domain": "blockchain",
+  "definition": "The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from deterministic algorithms seeded with entropy.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "commitment-scheme",
+      "label": "Commitment Scheme"
+    },
+    {
+      "slug": "verifiable-random-function",
+      "label": "Verifiable Random Function"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    }
+  ]
+}

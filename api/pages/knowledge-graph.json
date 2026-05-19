@@ -1,0 +1,255 @@
+{
+  "id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce",
+  "title": "Knowledge Graph",
+  "slug": "knowledge-graph",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-graph",
+  "domain": "spatial-computing",
+  "definition": "A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:entity-node",
+        "label": "Entity Node"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:ontology-schema",
+        "label": "Ontology Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:relationship-edge",
+        "label": "Relationship Edge"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-property",
+        "label": "Semantic Property"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:triple-store",
+        "label": "Triple Store"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-reasoning",
+        "label": "AI Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-reasoning",
+      "label": "AI Reasoning"
+    },
+    {
+      "slug": "entity-node",
+      "label": "Entity Node"
+    },
+    {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "knowledge-discovery",
+      "label": "Knowledge Discovery"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "ontology-schema",
+      "label": "Ontology Schema"
+    },
+    {
+      "slug": "rdf-framework",
+      "label": "RDF Framework"
+    },
+    {
+      "slug": "reasoning-service",
+      "label": "Reasoning Service"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    },
+    {
+      "slug": "relationship-edge",
+      "label": "Relationship Edge"
+    },
+    {
+      "slug": "schema-definition",
+      "label": "Schema Definition"
+    },
+    {
+      "slug": "schema-org",
+      "label": "Schema.org"
+    },
+    {
+      "slug": "semantic-property",
+      "label": "Semantic Property"
+    },
+    {
+      "slug": "semantic-web-infrastructure",
+      "label": "Semantic Web Infrastructure"
+    },
+    {
+      "slug": "triple-store",
+      "label": "Triple Store"
+    },
+    {
+      "slug": "w3-c-owl",
+      "label": "W3C OWL"
+    },
+    {
+      "slug": "w3-c-rdf",
+      "label": "W3C RDF"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "knowledge-management-system",
+      "label": "Knowledge Management System"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "sparql-query-engine",
+      "label": "SPARQL Query Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "verification-report",
+      "label": "VERIFICATION REPORT"
+    }
+  ]
+}

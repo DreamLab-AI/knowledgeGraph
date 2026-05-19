@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d",
+  "title": "Asynchronous Collaboration",
+  "slug": "asynchronous-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:asynchronous-collaboration",
+  "domain": "distributed-collaboration",
+  "definition": "\"Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "label": "TC-0001-telecollaboration-domain"
+    }
+  ],
+  "qualityScore": 0.55,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:documentation-culture",
+        "label": "Documentation Culture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:global-accessibility",
+        "label": "Global Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "documentation-culture",
+      "label": "Documentation Culture"
+    },
+    {
+      "slug": "documentation-systems",
+      "label": "Documentation Systems"
+    },
+    {
+      "slug": "global-accessibility",
+      "label": "Global Accessibility"
+    },
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "rfc",
+      "label": "RFC"
+    },
+    {
+      "slug": "tc-0001-telecollaboration-domain",
+      "label": "TC-0001-telecollaboration-domain"
+    },
+    {
+      "slug": "tc-0010-synchronous-collaboration",
+      "label": "TC-0010-Synchronous-Collaboration"
+    },
+    {
+      "slug": "tc-0021-collaborative-document-editing",
+      "label": "TC-0021-Collaborative-Document-Editing"
+    },
+    {
+      "slug": "tc-0022-version-control",
+      "label": "TC-0022-Version-Control"
+    },
+    {
+      "slug": "tc-0024-project-management-system",
+      "label": "TC-0024-Project-Management-System"
+    },
+    {
+      "slug": "tc-0025-issue-tracking",
+      "label": "TC-0025-Issue-Tracking"
+    },
+    {
+      "slug": "tc-0026-code-review",
+      "label": "TC-0026-Code-Review"
+    },
+    {
+      "slug": "tc-0080-team-coordination",
+      "label": "TC-0080-Team-Coordination"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "threaded-messaging",
+      "label": "Threaded Messaging"
+    },
+    {
+      "slug": "video-async",
+      "label": "Video Async"
+    },
+    {
+      "slug": "voice-memo",
+      "label": "Voice Memo"
+    }
+  ]
+}

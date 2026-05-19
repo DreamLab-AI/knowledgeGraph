@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:d723772f8167f4a3e57745bd67425d2b1c88a4de1e82085478e8e20f3a834617",
+  "title": "AI Defence Doc",
+  "slug": "ai-defence-doc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-defence-doc",
+  "domain": "artificial-intelligence",
+  "definition": "AI Defence Doc is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-ai-will-be-designing-new-drugs-all-on-its-own-in-the-near-future",
+      "label": "Generative AI will be designing new drugs all on its own in the near future"
+    }
+  ],
+  "backlinks": []
+}

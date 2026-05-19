@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:e1dd77201f50b3cf46140cc1dc4454c0a9c207b9b2200649a09cdf3f1cff1c77",
+  "title": "Shared Virtual World",
+  "slug": "shared-virtual-world",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shared-virtual-world",
+  "domain": "spatial-computing",
+  "definition": "A persistent, synchronous three-dimensional digital environment where unlimited users interact simultaneously through avatars, featuring continuous data persistence for identity, assets, and social relationships across sessions while supporting real-time rendering and cross-platform access.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-social-presence",
+        "label": "Digital Social Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-social-presence",
+      "label": "Digital Social Presence"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

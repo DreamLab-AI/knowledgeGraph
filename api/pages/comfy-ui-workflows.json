@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:4cf003fa25ed3e248fa7ea7e7e600d5dd9e534ecca54d388710673bdc6ee4493",
+  "title": "ComfyUI Workflows",
+  "slug": "comfy-ui-workflows",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:comfy-ui-workflows",
+  "domain": "artificial-intelligence",
+  "definition": "ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for [[Stable Diffusion]] and broader generative AI inference, implemented within the [[ComfyUI]] open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations\u2014model loading, conditioning, sampling, decoding, upscaling, face restoration, video frame generation, and more\u2014are represented as typed nodes whose outputs are connected to inputs of downstream nodes via explicit wire edges, the full pipeline serialised as a JSON object mapping node IDs to node definitions and link arrays that together form an executable, reproducible, and shareable specification of an entire [[Image Generation]] or [[Video Generation]] computation. Each workflow JSON encodes `version`, `nodes` (array of typed node objects with `id`, `type`, `inputs`, `outputs`, `pos`, and `size` fields), `links` (array of `[link_id, source_node_id, source_slot, target_node_id, target_slot, type]` tuples), and optional `groups` for visual organisation\u2014making the format both machine-executable by the ComfyUI backend server and human-readable for inspection and modification. The minimal [[St",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:diffusion-model-interface",
+      "label": "Diffusion Model Interface"
+    },
+    {
+      "id": "urn:visionflow:linked:generative-ai-pipeline",
+      "label": "Generative AI Pipeline"
+    },
+    {
+      "id": "urn:visionflow:linked:inference-orchestration-system",
+      "label": "Inference Orchestration System"
+    },
+    {
+      "id": "urn:visionflow:linked:node-based-visual-programming",
+      "label": "Node-Based Visual Programming"
+    },
+    {
+      "id": "urn:visionflow:linked:workflow-execution-engine",
+      "label": "Workflow Execution Engine"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:checkpoint-loader",
+        "label": "CheckpointLoader"
+      },
+      {
+        "id": "urn:visionflow:linked:cliptext-encode",
+        "label": "CLIPTextEncode"
+      },
+      {
+        "id": "urn:visionflow:linked:comfy-ui-manager",
+        "label": "ComfyUI Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:control-net-node",
+        "label": "ControlNet Node"
+      },
+      {
+        "id": "urn:visionflow:linked:ksampler",
+        "label": "KSampler"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-tensor",
+        "label": "Latent Tensor"
+      },
+      {
+        "id": "urn:visionflow:linked:lo-ra-loader",
+        "label": "LoRA Loader"
+      },
+      {
+        "id": "urn:visionflow:linked:node-link",
+        "label": "Node Link"
+      },
+      {
+        "id": "urn:visionflow:linked:vaedecode",
+        "label": "VAEDecode"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-json-format",
+        "label": "Workflow JSON Format"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-node",
+        "label": "Workflow Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:model-checkpoint",
+        "label": "Model Checkpoint"
+      },
+      {
+        "id": "urn:visionflow:linked:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:visionflow:linked:python-runtime",
+        "label": "Python Runtime"
+      },
+      {
+        "id": "urn:visionflow:owl:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:batch-image-processing",
+        "label": "Batch Image Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:control-net-conditioning",
+        "label": "ControlNet Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:face-restoration",
+        "label": "Face Restoration"
+      },
+      {
+        "id": "urn:visionflow:linked:image-to-image-generation",
+        "label": "Image-to-Image Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:image-upscaling",
+        "label": "Image Upscaling"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-upscaling",
+        "label": "Latent Upscaling"
+      },
+      {
+        "id": "urn:visionflow:linked:lo-ra-stacking",
+        "label": "LoRA Stacking"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:api-server-protocol",
+        "label": "API Server Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-model-inference",
+        "label": "Diffusion Model Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:directed-acyclic-graph-execution",
+        "label": "Directed Acyclic Graph Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion-pipeline",
+        "label": "Latent Diffusion Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-serialisation",
+        "label": "Workflow Serialisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "api-server-protocol",
+      "label": "API Server Protocol"
+    },
+    {
+      "slug": "automatic1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "batch-image-processing",
+      "label": "Batch Image Processing"
+    },
+    {
+      "slug": "bento-ml-2025-comfy-pack",
+      "label": "BentoML 2025 comfy-pack"
+    },
+    {
+      "slug": "black-forest-labs-2024-flux-1",
+      "label": "Black Forest Labs 2024 Flux.1"
+    },
+    {
+      "slug": "checkpoint-loader",
+      "label": "CheckpointLoader"
+    },
+    {
+      "slug": "civitai-workflow-sharing",
+      "label": "Civitai Workflow Sharing"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "cliptext-encode",
+      "label": "CLIPTextEncode"
+    },
+    {
+      "slug": "comfy-org-2024-workflow-json-spec",
+      "label": "Comfy-Org 2024 Workflow JSON Spec"
+    },
+    {
+      "slug": "comfy-org-2025-workflow-templates",
+      "label": "Comfy-Org 2025 Workflow Templates"
+    },
+    {
+      "slug": "comfy-org-git-hub-organisation",
+      "label": "Comfy-Org GitHub Organisation"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "ComfyUI Manager"
+    },
+    {
+      "slug": "comfyanonymous-2023-comfy-ui",
+      "label": "comfyanonymous 2023 ComfyUI"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "control-net-node",
+      "label": "ControlNet Node"
+    },
+    {
+      "slug": "creative-aidomain",
+      "label": "CreativeAIDomain"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "diffusers-library",
+      "label": "Diffusers Library"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-model-inference",
+      "label": "Diffusion Model Inference"
+    },
+    {
+      "slug": "diffusion-model-interface",
+      "label": "Diffusion Model Interface"
+    },
+    {
+      "slug": "directed-acyclic-graph-execution",
+      "label": "Directed Acyclic Graph Execution"
+    },
+    {
+      "slug": "draw-things",
+      "label": "Draw Things"
+    },
+    {
+      "slug": "esrgan-upscaling",
+      "label": "ESRGAN Upscaling"
+    },
+    {
+      "slug": "face-restoration",
+      "label": "Face Restoration"
+    },
+    {
+      "slug": "generative-ai-pipeline",
+      "label": "Generative AI Pipeline"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gfpgan-face-restoration",
+      "label": "GFPGAN Face Restoration"
+    },
+    {
+      "slug": "gitnux-2026-comfy-ui-statistics",
+      "label": "Gitnux 2026 ComfyUI Statistics"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "guo-et-al-2023-animate-diff",
+      "label": "Guo et al. 2023 AnimateDiff"
+    },
+    {
+      "slug": "ho-et-al-2020-ddpm",
+      "label": "Ho et al. 2020 DDPM"
+    },
+    {
+      "slug": "hu-et-al-2022-lo-ra",
+      "label": "Hu et al. 2022 LoRA"
+    },
+    {
+      "slug": "hugging-face-hub",
+      "label": "Hugging Face Hub"
+    },
+    {
+      "slug": "image-to-image-generation",
+      "label": "Image-to-Image Generation"
+    },
+    {
+      "slug": "image-upscaling",
+      "label": "Image Upscaling"
+    },
+    {
+      "slug": "inference-orchestration-system",
+      "label": "Inference Orchestration System"
+    },
+    {
+      "slug": "inference-pipeline-layer",
+      "label": "InferencePipelineLayer"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
+      "slug": "json-serialisation",
+      "label": "JSON Serialisation"
+    },
+    {
+      "slug": "karras-et-al-2022-edm",
+      "label": "Karras et al. 2022 EDM"
+    },
+    {
+      "slug": "ksampler",
+      "label": "KSampler"
+    },
+    {
+      "slug": "latent-diffusion-pipeline",
+      "label": "Latent Diffusion Pipeline"
+    },
+    {
+      "slug": "latent-tensor",
+      "label": "Latent Tensor"
+    },
+    {
+      "slug": "latent-upscaling",
+      "label": "Latent Upscaling"
+    },
+    {
+      "slug": "lipman-et-al-2022-flow-matching",
+      "label": "Lipman et al. 2022 Flow Matching"
+    },
+    {
+      "slug": "lo-ra-loader",
+      "label": "LoRA Loader"
+    },
+    {
+      "slug": "lo-ra-stacking",
+      "label": "LoRA Stacking"
+    },
+    {
+      "slug": "ltdrdata-2023-comfy-ui-manager",
+      "label": "ltdrdata 2023 ComfyUI-Manager"
+    },
+    {
+      "slug": "model-checkpoint",
+      "label": "Model Checkpoint"
+    },
+    {
+      "slug": "mou-et-al-2023-t2-i-adapter",
+      "label": "Mou et al. 2023 T2I-Adapter"
+    },
+    {
+      "slug": "node-based-visual-programming",
+      "label": "Node-Based Visual Programming"
+    },
+    {
+      "slug": "node-link",
+      "label": "Node Link"
+    },
+    {
+      "slug": "open-art-workflow-registry",
+      "label": "OpenArt Workflow Registry"
+    },
+    {
+      "slug": "png-metadata-embedding",
+      "label": "PNG Metadata Embedding"
+    },
+    {
+      "slug": "podell-et-al-2023-sdxl",
+      "label": "Podell et al. 2023 SDXL"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "python-runtime",
+      "label": "Python Runtime"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-models",
+      "label": "Rombach et al. 2022 Latent Diffusion Models"
+    },
+    {
+      "slug": "ruiz-et-al-2023-dream-booth",
+      "label": "Ruiz et al. 2023 DreamBooth"
+    },
+    {
+      "slug": "salad-technologies-2024-comfyui-api",
+      "label": "Salad Technologies 2024 comfyui-api"
+    },
+    {
+      "slug": "sdxl",
+      "label": "SDXL"
+    },
+    {
+      "slug": "song-et-al-2021-ddim",
+      "label": "Song et al. 2021 DDIM"
+    },
+    {
+      "slug": "tech-crunch-2026-comfy-ui-500-m-valuation",
+      "label": "TechCrunch 2026 ComfyUI $500M Valuation"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "vae-encoder",
+      "label": "VAE Encoder"
+    },
+    {
+      "slug": "vaedecode",
+      "label": "VAEDecode"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "view-comfy-2025-production-api-guide",
+      "label": "ViewComfy 2025 Production API Guide"
+    },
+    {
+      "slug": "wan-team-2025-wan2-1",
+      "label": "Wan Team 2025 Wan2.1"
+    },
+    {
+      "slug": "wan2-1-video",
+      "label": "Wan2.1 Video"
+    },
+    {
+      "slug": "wang-et-al-2018-esrgan",
+      "label": "Wang et al. 2018 ESRGAN"
+    },
+    {
+      "slug": "wang-et-al-2021-gfpgan",
+      "label": "Wang et al. 2021 GFPGAN"
+    },
+    {
+      "slug": "web-socket-protocol",
+      "label": "WebSocket Protocol"
+    },
+    {
+      "slug": "wifitalents-2026-comfy-ui-statistics",
+      "label": "Wifitalents 2026 ComfyUI Statistics"
+    },
+    {
+      "slug": "workflow-execution-engine",
+      "label": "Workflow Execution Engine"
+    },
+    {
+      "slug": "workflow-json-format",
+      "label": "Workflow JSON Format"
+    },
+    {
+      "slug": "workflow-node",
+      "label": "Workflow Node"
+    },
+    {
+      "slug": "workflow-orchestration-layer",
+      "label": "WorkflowOrchestrationLayer"
+    },
+    {
+      "slug": "workflow-serialisation",
+      "label": "Workflow Serialisation"
+    },
+    {
+      "slug": "ye-et-al-2023-ipadapter",
+      "label": "Ye et al. 2023 IPAdapter"
+    },
+    {
+      "slug": "zhang-et-al-2023-control-net",
+      "label": "Zhang et al. 2023 ControlNet"
+    },
+    {
+      "slug": "zhou-et-al-2022-code-former",
+      "label": "Zhou et al. 2022 CodeFormer"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

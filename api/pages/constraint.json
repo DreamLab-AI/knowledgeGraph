@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:8610ab5a331143af044c5c779546bd2f7a5670ec97b763c64c5773d53aaea6a8",
+  "title": "Constraint",
+  "slug": "constraint",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:constraint",
+  "domain": "artificial-intelligence",
+  "definition": "Constraint is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": []
+}

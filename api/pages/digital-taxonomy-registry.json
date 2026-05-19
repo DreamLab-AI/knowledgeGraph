@@ -1,0 +1,194 @@
+{
+  "id": "urn:visionflow:page:88bd31be4d67f0274c8bb184aa11c106001a02fe35e666ec0f5f2a2fbe881015",
+  "title": "Digital Taxonomy Registry",
+  "slug": "digital-taxonomy-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-taxonomy-registry",
+  "domain": "spatial-computing",
+  "definition": "An authoritative registry that assigns unique identifiers to digital asset categories and classification schemes, supporting compliance, analytics, and standardised categorisation across platforms. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metadata-repository",
+      "label": "Metadata Repository"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:api-interface",
+        "label": "API Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:classification-scheme-database",
+        "label": "Classification Scheme Database"
+      },
+      {
+        "id": "urn:visionflow:linked:unique-identifier-system",
+        "label": "Unique Identifier System"
+      },
+      {
+        "id": "urn:visionflow:linked:versioning-system",
+        "label": "Versioning System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-repository",
+        "label": "Metadata Repository"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:change-management-process",
+        "label": "Change Management Process"
+      },
+      {
+        "id": "urn:visionflow:linked:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:quality-assurance-system",
+        "label": "Quality Assurance System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:analytics-and-reporting",
+        "label": "Analytics & Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-categorization",
+        "label": "Cross-Platform Categorization"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standardized-asset-classification",
+        "label": "Standardized Asset Classification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analytics-and-reporting",
+      "label": "Analytics & Reporting"
+    },
+    {
+      "slug": "api-interface",
+      "label": "API Interface"
+    },
+    {
+      "slug": "change-management-process",
+      "label": "Change Management Process"
+    },
+    {
+      "slug": "classification-scheme-database",
+      "label": "Classification Scheme Database"
+    },
+    {
+      "slug": "cross-platform-categorization",
+      "label": "Cross-Platform Categorization"
+    },
+    {
+      "slug": "database-management-system",
+      "label": "Database Management System"
+    },
+    {
+      "slug": "iso-11179",
+      "label": "ISO 11179"
+    },
+    {
+      "slug": "oecd-crypto-asset-registry",
+      "label": "OECD Crypto-Asset Registry"
+    },
+    {
+      "slug": "quality-assurance-system",
+      "label": "Quality Assurance System"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "unique-identifier-system",
+      "label": "Unique Identifier System"
+    },
+    {
+      "slug": "versioning-system",
+      "label": "Versioning System"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "metadata-repository",
+      "label": "Metadata Repository"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "standardized-asset-classification",
+      "label": "Standardized Asset Classification"
+    },
+    {
+      "slug": "standards-documentation",
+      "label": "Standards Documentation"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": []
+}

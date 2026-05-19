@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:b87f27cdf19885db9ad8461222fdc0108361fe61166e6fa53a1b132a0fc1e150",
+  "title": "Ieee7000 Standard",
+  "slug": "ieee7000-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ieee7000-standard",
+  "domain": "spatial-computing",
+  "definition": "IEEE Standard Model Process for Addressing Ethical Concerns during System Design (IEEE 7000-2021), establishing systematic processes for incorporating ethical values such as transparency, sustainability, privacy, fairness, and accountability into technology development from concept exploration through implementation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ethical-design-standard",
+      "label": "Ethical Design Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ethical-technology-development",
+        "label": "Ethical Technology Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethical-technology-development",
+      "label": "Ethical Technology Development"
+    },
+    {
+      "slug": "ethical-design-standard",
+      "label": "Ethical Design Standard"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": []
+}

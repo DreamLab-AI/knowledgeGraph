@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:6a24e789c37135721b732a73e44c0de5403b5b4d7ec7e7b0d3888c93d22fe2f1",
+  "title": "Making Available",
+  "slug": "making-available",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:making-available",
+  "domain": "spatial-computing",
+  "definition": "The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

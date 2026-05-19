@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1",
+  "title": "Agreement Protocol",
+  "slug": "agreement-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agreement-protocol",
+  "domain": "blockchain",
+  "definition": "An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement\u2014all honest nodes agree on the same value), liveness (also called termination\u2014the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-protocol",
+      "label": "Distributed Protocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bft-consensus",
+      "label": "BFT Consensus"
+    },
+    {
+      "slug": "byzantine-agreement",
+      "label": "Byzantine Agreement"
+    },
+    {
+      "slug": "byzantine-agreement-papers",
+      "label": "Byzantine Agreement Papers"
+    },
+    {
+      "slug": "crash-fault-tolerant-agreement",
+      "label": "Crash Fault Tolerant Agreement"
+    },
+    {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
+    },
+    {
+      "slug": "paxos",
+      "label": "Paxos"
+    },
+    {
+      "slug": "paxos-and-raft-consensus",
+      "label": "Paxos and Raft Consensus"
+    },
+    {
+      "slug": "pbft",
+      "label": "PBFT"
+    },
+    {
+      "slug": "pbft-algorithm",
+      "label": "PBFT Algorithm"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-protocol",
+      "label": "Distributed Protocol"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-protocol",
+      "label": "Distributed Protocol"
+    }
+  ]
+}

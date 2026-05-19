@@ -1,0 +1,648 @@
+{
+  "id": "urn:visionflow:page:da3bf63061b3d098e9664dd802e55874729aa618925e445ee848173a34c93f7a",
+  "title": "Death of the Internet",
+  "slug": "death-of-the-internet",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:death-of-the-internet",
+  "domain": "ethics-society",
+  "definition": "**Death of the Internet** is a concept cluster in the ethics-society and [[Media Theory]] domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse. The cluster synthesises four interlocking phenomena operating on different timescales and through different causal mechanisms, yet mutually reinforcing in their combined effect on [[Information Integrity]] and [[Digital Society Surveillance]]: **(1) The Dead Internet Theory** \u2014 originally a 2021 fringe hypothesis posted anonymously on Agora Road forum, now substantially corroborated empirically, proposing that the majority of online activity is driven by bots, automated content systems, algorithmic feeds, and state and corporate manipulation rather than genuine human-to-human interaction. The theory predicts that organic, serendipitous human discourse has been displaced by choreographed, commercially or politically motivated automated activity that mimics the appearance of human engagement whilst serving radically different incentive structures. By 2024, empirical measurement had validated the core claim: Imperva's Bad Bot Report 2024",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:information-integrity",
+      "label": "Information Integrity"
+    },
+    {
+      "id": "urn:visionflow:linked:platform-decay",
+      "label": "Platform Decay"
+    },
+    {
+      "id": "urn:visionflow:linked:surveillance-capitalism",
+      "label": "Surveillance Capitalism"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:media-theory",
+      "label": "Media Theory"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:algorithmic-capture",
+        "label": "Algorithmic Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:background-tokens",
+        "label": "Background Tokens"
+      },
+      {
+        "id": "urn:visionflow:linked:bot-traffic",
+        "label": "Bot Traffic"
+      },
+      {
+        "id": "urn:visionflow:linked:dark-forest-theory",
+        "label": "Dark Forest Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:dead-internet-theory",
+        "label": "Dead Internet Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:enshittification",
+        "label": "Enshittification"
+      },
+      {
+        "id": "urn:visionflow:linked:filter-bubble",
+        "label": "Filter Bubble"
+      },
+      {
+        "id": "urn:visionflow:linked:habsburg-ai",
+        "label": "Habsburg AI"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-content-saturation",
+        "label": "Synthetic Content Saturation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentic-content",
+        "label": "Authentic Content"
+      },
+      {
+        "id": "urn:visionflow:linked:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:visionflow:linked:epistemic-infrastructure",
+        "label": "Epistemic Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:human-authorship",
+        "label": "Human Authorship"
+      },
+      {
+        "id": "urn:visionflow:linked:open-api-access",
+        "label": "Open API Access"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-accountability",
+        "label": "Platform Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:algorithmic-capture",
+        "label": "Algorithmic Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:attention-manipulation",
+        "label": "Attention Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-divide",
+        "label": "Digital Divide"
+      },
+      {
+        "id": "urn:visionflow:linked:disinformation-ecosystem",
+        "label": "Disinformation Ecosystem"
+      },
+      {
+        "id": "urn:visionflow:linked:epistemic-degradation",
+        "label": "Epistemic Degradation"
+      },
+      {
+        "id": "urn:visionflow:linked:model-collapse",
+        "label": "Model Collapse"
+      },
+      {
+        "id": "urn:visionflow:linked:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:api-rate-limiting",
+        "label": "API Rate Limiting"
+      },
+      {
+        "id": "urn:visionflow:linked:content-credentials",
+        "label": "Content Credentials"
+      },
+      {
+        "id": "urn:visionflow:linked:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "id": "urn:visionflow:linked:robots-txt-enforcement",
+        "label": "Robots.txt Enforcement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:c2-pa-standard",
+        "label": "C2PA Standard"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-pub",
+      "label": "ActivityPub"
+    },
+    {
+      "slug": "advertising-economics",
+      "label": "Advertising Economics"
+    },
+    {
+      "slug": "age-verification",
+      "label": "Age Verification"
+    },
+    {
+      "slug": "ai-training-data",
+      "label": "AI Training Data"
+    },
+    {
+      "slug": "aigovernance-domain",
+      "label": "AIGovernanceDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "algorithmic-capture",
+      "label": "Algorithmic Capture"
+    },
+    {
+      "slug": "api-rate-limiting",
+      "label": "API Rate Limiting"
+    },
+    {
+      "slug": "attention-manipulation",
+      "label": "Attention Manipulation"
+    },
+    {
+      "slug": "authentic-content",
+      "label": "Authentic Content"
+    },
+    {
+      "slug": "authentic-internet",
+      "label": "Authentic Internet"
+    },
+    {
+      "slug": "background-tokens",
+      "label": "Background Tokens"
+    },
+    {
+      "slug": "blockchain-attestation",
+      "label": "Blockchain Attestation"
+    },
+    {
+      "slug": "bot-traffic",
+      "label": "Bot Traffic"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "content-credentials",
+      "label": "Content Credentials"
+    },
+    {
+      "slug": "content-layer",
+      "label": "ContentLayer"
+    },
+    {
+      "slug": "content-provenance",
+      "label": "Content Provenance"
+    },
+    {
+      "slug": "dark-forest-theory",
+      "label": "Dark Forest Theory"
+    },
+    {
+      "slug": "data-provenance-initiative-2024",
+      "label": "Data Provenance Initiative 2024"
+    },
+    {
+      "slug": "dead-internet-theory",
+      "label": "Dead Internet Theory"
+    },
+    {
+      "slug": "digital-divide",
+      "label": "Digital Divide"
+    },
+    {
+      "slug": "disinformation-ecosystem",
+      "label": "Disinformation Ecosystem"
+    },
+    {
+      "slug": "dsa",
+      "label": "DSA"
+    },
+    {
+      "slug": "enshittification",
+      "label": "Enshittification"
+    },
+    {
+      "slug": "epistemic-degradation",
+      "label": "Epistemic Degradation"
+    },
+    {
+      "slug": "epistemic-infrastructure",
+      "label": "Epistemic Infrastructure"
+    },
+    {
+      "slug": "ethics-society-domain",
+      "label": "EthicsSocietyDomain"
+    },
+    {
+      "slug": "federated-social-networks",
+      "label": "Federated Social Networks"
+    },
+    {
+      "slug": "filter-bubble",
+      "label": "Filter Bubble"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "habsburg-ai",
+      "label": "Habsburg AI"
+    },
+    {
+      "slug": "human-authored-content",
+      "label": "Human-Authored Content"
+    },
+    {
+      "slug": "human-authorship",
+      "label": "Human Authorship"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "imperva-bad-bot-report-2024",
+      "label": "Imperva Bad Bot Report 2024"
+    },
+    {
+      "slug": "indie-web-movement",
+      "label": "IndieWeb Movement"
+    },
+    {
+      "slug": "information-integrity",
+      "label": "Information Integrity"
+    },
+    {
+      "slug": "media-theory-domain",
+      "label": "MediaTheoryDomain"
+    },
+    {
+      "slug": "model-collapse",
+      "label": "Model Collapse"
+    },
+    {
+      "slug": "network-effects",
+      "label": "Network Effects"
+    },
+    {
+      "slug": "news-guard-ai-tracker-2024",
+      "label": "NewsGuard AI Tracker 2024"
+    },
+    {
+      "slug": "ofcom",
+      "label": "Ofcom"
+    },
+    {
+      "slug": "online-safety-act-2023",
+      "label": "Online Safety Act 2023"
+    },
+    {
+      "slug": "open-api-access",
+      "label": "Open API Access"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "open-web",
+      "label": "Open Web"
+    },
+    {
+      "slug": "platform-accountability",
+      "label": "Platform Accountability"
+    },
+    {
+      "slug": "platform-decay",
+      "label": "Platform Decay"
+    },
+    {
+      "slug": "platform-monopoly",
+      "label": "Platform Monopoly"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "programmatic-advertising",
+      "label": "Programmatic Advertising"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "robots-txt-enforcement",
+      "label": "Robots.txt Enforcement"
+    },
+    {
+      "slug": "search-economics",
+      "label": "Search Economics"
+    },
+    {
+      "slug": "shumailov-et-al-nature-2024",
+      "label": "Shumailov et al. Nature 2024"
+    },
+    {
+      "slug": "social-layer",
+      "label": "SocialLayer"
+    },
+    {
+      "slug": "social-media-algorithms",
+      "label": "Social Media Algorithms"
+    },
+    {
+      "slug": "surveillance-capitalism",
+      "label": "Surveillance Capitalism"
+    },
+    {
+      "slug": "switching-costs",
+      "label": "Switching Costs"
+    },
+    {
+      "slug": "synthetic-content-saturation",
+      "label": "Synthetic Content Saturation"
+    },
+    {
+      "slug": "uk-online-safety-act",
+      "label": "UK Online Safety Act"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "human-vs-ai",
+      "label": "Human vs AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "legacy-media",
+      "label": "Legacy Media"
+    },
+    {
+      "slug": "media-theory",
+      "label": "Media Theory"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "social-media",
+      "label": "Social Media"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "disruption",
+      "label": "Disruption"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "project-bro-bots",
+      "label": "Project BroBots"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "label": "State of the art in AI"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "rb-0022-robot-dynamics",
+      "label": "rb 0022 robot dynamics"
+    }
+  ]
+}

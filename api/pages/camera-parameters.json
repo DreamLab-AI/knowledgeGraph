@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:3cb140a327f88b8957595e1fdd913ccb75ef2bb5f3cfb439cc9f9d6cf7012504",
+  "title": "Camera Parameters",
+  "slug": "camera-parameters",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:camera-parameters",
+  "domain": "spatial-computing",
+  "definition": "The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction and photogrammetry.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:imaging-parameters",
+      "label": "Imaging Parameters"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:calibration-target",
+        "label": "Calibration Target"
+      },
+      {
+        "id": "urn:visionflow:owl:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:object-measurement",
+        "label": "Object Measurement"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-localization",
+        "label": "Scene Localization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "object-measurement",
+      "label": "Object Measurement"
+    },
+    {
+      "slug": "scene-localization",
+      "label": "Scene Localization"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "imaging-parameters",
+      "label": "Imaging Parameters"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

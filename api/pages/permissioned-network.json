@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:baae6a9077691ca194fa6497b2bc2988838c96f027f30a5a3f0531f090f0da7d",
+  "title": "Permissioned Network",
+  "slug": "permissioned-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:permissioned-network",
+  "domain": "blockchain",
+  "definition": "Restricted access blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:network-component",
+      "label": "NetworkComponent"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "CryptographicDomain"
+    },
+    {
+      "slug": "network-component",
+      "label": "NetworkComponent"
+    },
+    {
+      "slug": "security-layer",
+      "label": "SecurityLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    }
+  ]
+}

@@ -1,21 +1,288 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#PromptTuning
-uri:: urn:visionclaw:concept:artificial-intelligence:prompt-tuning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:prompt-tuning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Prompt Tuning
-content-hash:: sha256-12-75bb74b98e8f
-legacy-term-id:: AI-0251
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#PromptTuning
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:prompt-tuning
 public:: true
+
+# Prompt Tuning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31",
+  "@type": "Page",
+  "vc:slug": "prompt-tuning",
+  "title": "Prompt Tuning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:dec-19th-2023",
+      "vc:label": "Dec 19th, 2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:dspy",
+      "vc:label": "DSPy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethan-mollick",
+      "vc:label": "Ethan Mollick"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimization",
+      "vc:label": "optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:organisation",
+      "vc:label": "organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:productivity",
+      "vc:label": "productivity"
+    },
+    {
+      "@id": "urn:visionflow:linked:project-management",
+      "vc:label": "project management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-computing",
+      "vc:label": "cloud computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-management",
+      "vc:label": "knowledge management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:melvin-carvalho",
+      "vc:label": "Melvin Carvalho"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-75bb74b98e8f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#PromptTuning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0251"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Prompt Tuning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:prompt-tuning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:prompt-tuning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:prompt-tuning",
+  "@type": "OntologyClass",
+  "label": "Prompt Tuning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:prompt-tuning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Dec 19th, 2023]]",
+      "resolved": "urn:visionflow:linked:dec-19th-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DSPy]]",
+      "resolved": "urn:visionflow:linked:dspy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethan Mollick]]",
+      "resolved": "urn:visionflow:linked:ethan-mollick",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[optimization]]",
+      "resolved": "urn:visionflow:linked:optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[organisation]]",
+      "resolved": "urn:visionflow:linked:organisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[productivity]]",
+      "resolved": "urn:visionflow:linked:productivity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[project management]]",
+      "resolved": "urn:visionflow:linked:project-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[cloud computing]]",
+      "resolved": "urn:visionflow:owl:class:cloud-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[knowledge management]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Melvin Carvalho]]",
+      "resolved": "urn:visionflow:owl:class:melvin-carvalho",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.

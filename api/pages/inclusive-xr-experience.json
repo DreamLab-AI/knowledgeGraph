@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:6ddb3e795caa919a74c2af88bb56b0beb459c2c10d6cfaf7e442079afe900ff9",
+  "title": "Inclusive Xr Experience",
+  "slug": "inclusive-xr-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inclusive-xr-experience",
+  "domain": "spatial-computing",
+  "definition": "Extended reality applications and environments designed to provide equitable, accessible experiences for users of all abilities, incorporating assistive technologies, alternative interaction modalities, and adaptive features that ensure meaningful participation in VR, AR, and metaverse spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:accessible-experience",
+      "label": "Accessible Experience"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:equitable-metaverse-access",
+        "label": "Equitable Metaverse Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "equitable-metaverse-access",
+      "label": "Equitable Metaverse Access"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    }
+  ]
+}

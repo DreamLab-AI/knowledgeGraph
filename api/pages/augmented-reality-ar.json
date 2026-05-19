@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:080523a116005bfe2b94ff503bd475d89235c2f5453301970d0fe5724a010550",
+  "title": "Augmented Reality (AR)",
+  "slug": "augmented-reality-ar",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:augmented-reality-ar",
+  "domain": "spatial-computing",
+  "definition": "Interactive system that overlays digital content (visual, audio, haptic) onto the physical environment in real time, enabling spatially-registered blended experiences where virtual information enhances physical perception.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:environmental-sensor",
+        "label": "Environmental Sensor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ar-display-device",
+        "label": "AR Display Device"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-content-overlay",
+        "label": "Digital Content Overlay"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-tracking-system",
+        "label": "Spatial Tracking System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:device-camera",
+        "label": "Device Camera"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:contextual-information-overlay",
+        "label": "Contextual Information Overlay"
+      },
+      {
+        "id": "urn:visionflow:linked:interactive-holograms",
+        "label": "Interactive Holograms"
+      },
+      {
+        "id": "urn:visionflow:linked:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "6-dof-tracking",
+      "label": "6DOF Tracking"
+    },
+    {
+      "slug": "contextual-information-overlay",
+      "label": "Contextual Information Overlay"
+    },
+    {
+      "slug": "device-camera",
+      "label": "Device Camera"
+    },
+    {
+      "slug": "environmental-sensor",
+      "label": "Environmental Sensor"
+    },
+    {
+      "slug": "environmental-understanding",
+      "label": "Environmental Understanding"
+    },
+    {
+      "slug": "ieee-p2048-3",
+      "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "interactive-holograms",
+      "label": "Interactive Holograms"
+    },
+    {
+      "slug": "iso-9241-940",
+      "label": "ISO 9241-940"
+    },
+    {
+      "slug": "object-recognition",
+      "label": "Object Recognition"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "ar-display-device",
+      "label": "AR Display Device"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "depth-sensing",
+      "label": "Depth Sensing"
+    },
+    {
+      "slug": "digital-content-overlay",
+      "label": "Digital Content Overlay"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-anchoring",
+      "label": "Spatial Anchoring"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-mapping",
+      "label": "Spatial Mapping"
+    },
+    {
+      "slug": "spatial-tracking-system",
+      "label": "Spatial Tracking System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

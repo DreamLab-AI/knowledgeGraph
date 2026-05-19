@@ -1,21 +1,440 @@
-iri:: http://narrativegoldmine.com/metaverse#AIGovernanceFramework
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-governance-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-governance-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Governance Framework
-content-hash:: sha256-12-1c8b6be21010
-legacy-term-id:: 20181
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIGovernanceFramework
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-governance-framework
 public:: true
+
+# AI Governance Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8",
+  "@type": "Page",
+  "vc:slug": "ai-governance-framework",
+  "title": "AI Governance Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-accountability",
+      "vc:label": "AI Accountability"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-risk-assessment",
+      "vc:label": "AI Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-transparency",
+      "vc:label": "AI Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:audit-mechanism",
+      "vc:label": "Audit Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-policy",
+      "vc:label": "Compliance Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethical-ai-operation",
+      "vc:label": "Ethical AI Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles",
+      "vc:label": "OECD AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-framework",
+      "vc:label": "Policy Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics-checklist",
+      "vc:label": "AI Ethics Checklist"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-transparency-index",
+      "vc:label": "Algorithmic Transparency Index"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethical-framework",
+      "vc:label": "Ethical Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-model",
+      "vc:label": "Governance Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1c8b6be21010"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIGovernanceFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20181"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Governance Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-governance-framework"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-governance-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-governance-framework",
+  "@type": "OntologyClass",
+  "label": "AI Governance Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:governance-model",
+      "vc:label": "Governance Model"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:ai-risk-assessment",
+      "vc:label": "AI Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:audit-mechanism",
+      "vc:label": "Audit Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-policy",
+      "vc:label": "Compliance Policy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics-checklist",
+      "vc:label": "AI Ethics Checklist"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-transparency-index",
+      "vc:label": "Algorithmic Transparency Index"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethical-framework",
+      "vc:label": "Ethical Framework"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-accountability",
+      "vc:label": "AI Accountability"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-transparency",
+      "vc:label": "AI Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethical-ai-operation",
+      "vc:label": "Ethical AI Operation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:policy-framework",
+      "vc:label": "Policy Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-governance-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Accountability]]",
+      "resolved": "urn:visionflow:linked:ai-accountability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Risk Assessment]]",
+      "resolved": "urn:visionflow:linked:ai-risk-assessment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Transparency]]",
+      "resolved": "urn:visionflow:linked:ai-transparency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Audit Mechanism]]",
+      "resolved": "urn:visionflow:linked:audit-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compliance Policy]]",
+      "resolved": "urn:visionflow:linked:compliance-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethical AI Operation]]",
+      "resolved": "urn:visionflow:linked:ethical-ai-operation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD AI Principles]]",
+      "resolved": "urn:visionflow:linked:oecd-ai-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Policy Framework]]",
+      "resolved": "urn:visionflow:linked:policy-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Access Control]]",
+      "resolved": "urn:visionflow:owl:class:access-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Ethics Checklist]]",
+      "resolved": "urn:visionflow:owl:class:ai-ethics-checklist",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Algorithmic Transparency Index]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-transparency-index",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Governance]]",
+      "resolved": "urn:visionflow:owl:class:data-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethical Framework]]",
+      "resolved": "urn:visionflow:owl:class:ethical-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Governance Model]]",
+      "resolved": "urn:visionflow:owl:class:governance-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Management]]",
+      "resolved": "urn:visionflow:owl:class:identity-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Compliance]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Responsible AI]]",
+      "resolved": "urn:visionflow:owl:class:responsible-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse.

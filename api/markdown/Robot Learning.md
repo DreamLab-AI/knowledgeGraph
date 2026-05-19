@@ -1,21 +1,414 @@
-iri:: http://narrativegoldmine.com/robotics#RobotLearning
-uri:: urn:visionclaw:concept:robotics:robot-learning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:robot-learning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Robot Learning
-content-hash:: sha256-12-0162b1e2f132
-legacy-term-id:: RB-3000
-status:: mature
-maturity:: production-ready
-quality-score:: 0.50
-authority-score:: 0.89
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#RobotLearning
+legacy_uri:: urn:visionclaw:concept:robotics:robot-learning
 public:: true
+
+# Robot Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1",
+  "@type": "Page",
+  "vc:slug": "robot-learning",
+  "title": "Robot Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:association-for-the-advancement-of-artificial-intelligence-aaai",
+      "vc:label": "Association for the Advancement of Artificial Intelligence (AAAI)"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-resources",
+      "vc:label": "ComputeResources"
+    },
+    {
+      "@id": "urn:visionflow:linked:conference-on-robot-learning-co-rl",
+      "vc:label": "Conference on Robot Learning (CoRL)"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-robotics-and-automation",
+      "vc:label": "IEEE Robotics and Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:international-conference-on-learning-representations-iclr",
+      "vc:label": "International Conference on Learning Representations (ICLR)"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "SelfSupervisedLearning"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-data",
+      "vc:label": "SensorData"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation-environment",
+      "vc:label": "SimulationEnvironment"
+    },
+    {
+      "@id": "urn:visionflow:linked:skill-acquisition",
+      "vc:label": "SkillAcquisition"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "TransferLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adaptive-control",
+      "vc:label": "AdaptiveControl"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aidomain",
+      "vc:label": "AIDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "AutonomousNavigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:imitation-learning",
+      "vc:label": "ImitationLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "MachineLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:manipulation",
+      "vc:label": "Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "ReinforcementLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "TrainingData"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.89"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0162b1e2f132"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#RobotLearning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-3000"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Robot Learning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:robot-learning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:robot-learning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:robot-learning",
+  "@type": "OntologyClass",
+  "label": "Robot Learning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "mature",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforcement learning (policy optimization, reward-based training), and self-supervised learning (representation learning, world models) for perception, control, planning, and human-robot interaction.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.89",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "SelfSupervisedLearning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "TransferLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:imitation-learning",
+      "vc:label": "ImitationLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "ReinforcementLearning"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:compute-resources",
+      "vc:label": "ComputeResources"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-data",
+      "vc:label": "SensorData"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation-environment",
+      "vc:label": "SimulationEnvironment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "TrainingData"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:skill-acquisition",
+      "vc:label": "SkillAcquisition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adaptive-control",
+      "vc:label": "AdaptiveControl"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "AutonomousNavigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:manipulation",
+      "vc:label": "Manipulation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:robot-learning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Association for the Advancement of Artificial Intelligence (AAAI)]]",
+      "resolved": "urn:visionflow:linked:association-for-the-advancement-of-artificial-intelligence-aaai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ComputeResources]]",
+      "resolved": "urn:visionflow:linked:compute-resources",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conference on Robot Learning (CoRL)]]",
+      "resolved": "urn:visionflow:linked:conference-on-robot-learning-co-rl",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE Robotics and Automation]]",
+      "resolved": "urn:visionflow:linked:ieee-robotics-and-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[International Conference on Learning Representations (ICLR)]]",
+      "resolved": "urn:visionflow:linked:international-conference-on-learning-representations-iclr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SelfSupervisedLearning]]",
+      "resolved": "urn:visionflow:linked:self-supervised-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SensorData]]",
+      "resolved": "urn:visionflow:linked:sensor-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SimulationEnvironment]]",
+      "resolved": "urn:visionflow:linked:simulation-environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SkillAcquisition]]",
+      "resolved": "urn:visionflow:linked:skill-acquisition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TransferLearning]]",
+      "resolved": "urn:visionflow:linked:transfer-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AdaptiveControl]]",
+      "resolved": "urn:visionflow:owl:class:adaptive-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AIDomain]]",
+      "resolved": "urn:visionflow:owl:class:aidomain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutonomousNavigation]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ImitationLearning]]",
+      "resolved": "urn:visionflow:owl:class:imitation-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MachineLearning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Manipulation]]",
+      "resolved": "urn:visionflow:owl:class:manipulation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ReinforcementLearning]]",
+      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrainingData]]",
+      "resolved": "urn:visionflow:owl:class:training-data",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforcement learning (policy optimization, reward-based training), and self-supervised learning (representation learning, world models) for perception, control, planning, and human-robot interaction.

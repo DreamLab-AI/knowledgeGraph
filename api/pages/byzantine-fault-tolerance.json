@@ -1,0 +1,239 @@
+{
+  "id": "urn:visionflow:page:3230b05f1b205e113b5f0a7fc05e44ed3056d17aeb500678c992e7169780475e",
+  "title": "Byzantine Fault Tolerance",
+  "slug": "byzantine-fault-tolerance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+  "domain": "blockchain",
+  "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:distributed-agreement",
+      "label": "Distributed Agreement"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:finality-gadget",
+        "label": "Finality Gadget"
+      },
+      {
+        "id": "urn:visionflow:linked:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-round",
+        "label": "Voting Round"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:message-authentication",
+        "label": "Message Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:consensus-safety",
+        "label": "Consensus Safety"
+      },
+      {
+        "id": "urn:visionflow:linked:malicious-node-handling",
+        "label": "Malicious Node Handling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "consensus-safety",
+      "label": "Consensus Safety"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "distributed-agreement",
+      "label": "Distributed Agreement"
+    },
+    {
+      "slug": "finality-gadget",
+      "label": "Finality Gadget"
+    },
+    {
+      "slug": "leader-election",
+      "label": "Leader Election"
+    },
+    {
+      "slug": "malicious-node-handling",
+      "label": "Malicious Node Handling"
+    },
+    {
+      "slug": "message-authentication",
+      "label": "Message Authentication"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "voting-round",
+      "label": "Voting Round"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "fault-tolerance-system",
+      "label": "Fault Tolerance System"
+    },
+    {
+      "slug": "federated-byzantine-fault-tolerance",
+      "label": "Federated Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "hot-stuff-consensus",
+      "label": "HotStuff Consensus"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "reputation-based-bft",
+      "label": "Reputation-Based BFT"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tendermint-consensus",
+      "label": "Tendermint Consensus"
+    }
+  ]
+}

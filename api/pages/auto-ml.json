@@ -1,0 +1,308 @@
+{
+  "id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a",
+  "title": "AutoML",
+  "slug": "auto-ml",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:auto-ml",
+  "domain": "artificial-intelligence",
+  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems \u2014 encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyperparameter optimisation (HPO), and ensemble construction \u2014 enabling practitioners without deep ML expertise to produce competitive models whilst simultaneously accelerating expert workflows, with modern systems such as Google AutoML, Auto-Sklearn, and NAS-based tools (DARTS, EffNet) achieving state-of-the-art performance on standard benchmarks through efficient search strategies including Bayesian optimisation, evolutionary algorithms, and differentiable architecture search.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:automated-optimisation-system",
+      "label": "Automated Optimisation System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    }
+  ],
+  "qualityScore": 0.6,
+  "authorityScore": 0.72,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:algorithm-selection",
+        "label": "Algorithm Selection"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-engineering-automation",
+        "label": "Feature Engineering Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:visionflow:linked:pipeline-optimisation",
+        "label": "Pipeline Optimisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-budget",
+        "label": "Computational Budget"
+      },
+      {
+        "id": "urn:visionflow:linked:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:visionflow:linked:search-space-definition",
+        "label": "Search Space Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:training-dataset",
+        "label": "Training Dataset"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:democratised-ml-development",
+        "label": "Democratised ML Development"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-model-iteration",
+        "label": "Rapid Model Iteration"
+      },
+      {
+        "id": "urn:visionflow:linked:reproducible-experiments",
+        "label": "Reproducible Experiments"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-efficient-training",
+        "label": "Resource-Efficient Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:darts-differentiable-nas",
+        "label": "DARTS Differentiable NAS"
+      },
+      {
+        "id": "urn:visionflow:linked:evolutionary-neural-architecture-search",
+        "label": "Evolutionary Neural Architecture Search"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-development-lifecycle",
+      "label": "AI Development Lifecycle"
+    },
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "algorithm-selection",
+      "label": "Algorithm Selection"
+    },
+    {
+      "slug": "auto-ml-survey-knowledge-based-systems-2021",
+      "label": "AutoML Survey Knowledge-Based Systems 2021"
+    },
+    {
+      "slug": "automated-optimisation-system",
+      "label": "Automated Optimisation System"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "computational-budget",
+      "label": "Computational Budget"
+    },
+    {
+      "slug": "darts-differentiable-nas",
+      "label": "DARTS Differentiable NAS"
+    },
+    {
+      "slug": "darts-iclr-2019",
+      "label": "DARTS ICLR 2019"
+    },
+    {
+      "slug": "democratised-ml-development",
+      "label": "Democratised ML Development"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "evolutionary-neural-architecture-search",
+      "label": "Evolutionary Neural Architecture Search"
+    },
+    {
+      "slug": "feature-engineering-automation",
+      "label": "Feature Engineering Automation"
+    },
+    {
+      "slug": "google-vertex-ai-auto-ml",
+      "label": "Google Vertex AI AutoML"
+    },
+    {
+      "slug": "h2-o-auto-ml-documentation",
+      "label": "H2O AutoML Documentation"
+    },
+    {
+      "slug": "hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "mlops-platform",
+      "label": "MLOps Platform"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "neur-ips-2015-auto-sklearn-paper",
+      "label": "NeurIPS 2015 Auto-Sklearn Paper"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "optuna-hpo-framework",
+      "label": "Optuna HPO Framework"
+    },
+    {
+      "slug": "pipeline-optimisation",
+      "label": "Pipeline Optimisation"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "rapid-model-iteration",
+      "label": "Rapid Model Iteration"
+    },
+    {
+      "slug": "ray-tune",
+      "label": "Ray Tune"
+    },
+    {
+      "slug": "reproducible-experiments",
+      "label": "Reproducible Experiments"
+    },
+    {
+      "slug": "resource-efficient-training",
+      "label": "Resource-Efficient Training"
+    },
+    {
+      "slug": "search-space-definition",
+      "label": "Search Space Definition"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "training-dataset",
+      "label": "Training Dataset"
+    },
+    {
+      "slug": "training-layer",
+      "label": "TrainingLayer"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development-tools",
+      "label": "AI Development Tools"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ]
+}

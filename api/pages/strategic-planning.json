@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:bc73254c78f8a5f0497b94d9a3ea23a6c32fd77bcefd5e7468dee5c91c8e6261",
+  "title": "Strategic Planning",
+  "slug": "strategic-planning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:strategic-planning",
+  "domain": "spatial-computing",
+  "definition": "Strategic Planning is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-neutrality-planning",
+      "label": "Carbon Neutrality Planning"
+    }
+  ]
+}

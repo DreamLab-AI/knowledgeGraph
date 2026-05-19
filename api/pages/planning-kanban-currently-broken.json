@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:4b45bf9bf06bf230599a6798c0e3b02733001f739ae742e6e61eadced69c537d",
+  "title": "Planning Kanban - currently broken",
+  "slug": "planning-kanban-currently-broken",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:planning-kanban-currently-broken",
+  "domain": "infrastructure",
+  "definition": "Planning Kanban - currently broken is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:projects",
+      "label": "Projects"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "kno-where",
+      "label": "KnoWhere"
+    },
+    {
+      "slug": "nlw-education-discord",
+      "label": "NLW education discord"
+    },
+    {
+      "slug": "pete-woodbridge",
+      "label": "Pete Woodbridge"
+    },
+    {
+      "slug": "training-material",
+      "label": "Training Material"
+    },
+    {
+      "slug": "parents-guide-to-ai",
+      "label": "ParentsGuideToAI"
+    },
+    {
+      "slug": "player-two",
+      "label": "PlayerTwo"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,146 @@
+{
+  "id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca",
+  "title": "Monte Carlo Localization",
+  "slug": "monte-carlo-localization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:monte-carlo-localization",
+  "domain": "robotics",
+  "definition": "A probabilistic localization algorithm that represents the robot's belief about its position using a set of weighted particles (samples), where each particle represents a hypothesis of the robot's pose. It implements a particle filter to recursively estimate the robot's pose distribution.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:rb-1013-localization",
+      "label": "RB-1013-localization"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.96,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:map",
+        "label": "Map"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-measurements",
+        "label": "Sensor Measurements"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:global-localization",
+        "label": "Global Localization"
+      },
+      {
+        "id": "urn:visionflow:linked:kidnapped-robot-problem",
+        "label": "Kidnapped Robot Problem"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "global-localization",
+      "label": "Global Localization"
+    },
+    {
+      "slug": "global-localization-capability",
+      "label": "Global Localization Capability"
+    },
+    {
+      "slug": "importance-sampling",
+      "label": "Importance Sampling"
+    },
+    {
+      "slug": "kidnapped-robot-problem",
+      "label": "Kidnapped Robot Problem"
+    },
+    {
+      "slug": "map",
+      "label": "Map"
+    },
+    {
+      "slug": "mobile-robots",
+      "label": "Mobile Robots"
+    },
+    {
+      "slug": "motion-model",
+      "label": "Motion Model"
+    },
+    {
+      "slug": "non-parametric",
+      "label": "Non-Parametric"
+    },
+    {
+      "slug": "particle-filter-theory",
+      "label": "Particle Filter Theory"
+    },
+    {
+      "slug": "probabilistic-methods",
+      "label": "Probabilistic Methods"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "rb-1008-odometry",
+      "label": "RB-1008-odometry"
+    },
+    {
+      "slug": "rb-1015-kalman-filter",
+      "label": "RB-1015-kalman-filter"
+    },
+    {
+      "slug": "sensor-measurements",
+      "label": "Sensor Measurements"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB-1013-localization"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4",
+  "title": "Soft Robotics",
+  "slug": "soft-robotics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:soft-robotics",
+  "domain": "robotics",
+  "definition": "Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments, with applications across surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing\u2014advancing through bio-inspired design, soft actuation, and machine learning control.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-dprinting",
+      "label": "3DPrinting"
+    },
+    {
+      "slug": "adaptive-grasping",
+      "label": "AdaptiveGrasping"
+    },
+    {
+      "slug": "bio-inspired-design",
+      "label": "BioInspiredDesign"
+    },
+    {
+      "slug": "compliant-actuator",
+      "label": "CompliantActuator"
+    },
+    {
+      "slug": "controlled-by",
+      "label": "controlledBy"
+    },
+    {
+      "slug": "dt-controlled-via",
+      "label": "dt:controlledVia"
+    },
+    {
+      "slug": "dt-designed-with",
+      "label": "dt:designedWith"
+    },
+    {
+      "slug": "dt-manufactured-by",
+      "label": "dt:manufacturedBy"
+    },
+    {
+      "slug": "dt-modeled-by",
+      "label": "dt:modeledBy"
+    },
+    {
+      "slug": "dt-simulated-in",
+      "label": "dt:simulatedIn"
+    },
+    {
+      "slug": "finite-element-analysis",
+      "label": "FiniteElementAnalysis"
+    },
+    {
+      "slug": "generative-design",
+      "label": "GenerativeDesign"
+    },
+    {
+      "slug": "has-actuator",
+      "label": "hasActuator"
+    },
+    {
+      "slug": "performs-grasping",
+      "label": "performsGrasping"
+    },
+    {
+      "slug": "pneumatic-actuation",
+      "label": "PneumaticActuation"
+    },
+    {
+      "slug": "safe-interaction",
+      "label": "SafeInteraction"
+    },
+    {
+      "slug": "uses-material",
+      "label": "usesMaterial"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "PhysicsEngine"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agricultural-robot",
+      "label": "Agricultural Robot"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "shape-memory-alloy-actuator",
+      "label": "Shape Memory Alloy Actuator"
+    }
+  ]
+}

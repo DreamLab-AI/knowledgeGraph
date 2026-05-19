@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:5db15273477303712091b09cb1d520a02f4709f09dc257417bdb51f642b84454",
+  "title": "Collaborative Learning",
+  "slug": "collaborative-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collaborative-learning",
+  "domain": "spatial-computing",
+  "definition": "An educational approach where learners work together in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-methodology",
+      "label": "Educational Methodology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:communication-tools",
+        "label": "Communication Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:shared-workspace",
+        "label": "Shared Workspace"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:knowledge-co-construction",
+        "label": "Knowledge Co-Construction"
+      },
+      {
+        "id": "urn:visionflow:linked:social-learning",
+        "label": "Social Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-tools",
+      "label": "Communication Tools"
+    },
+    {
+      "slug": "knowledge-co-construction",
+      "label": "Knowledge Co-Construction"
+    },
+    {
+      "slug": "shared-workspace",
+      "label": "Shared Workspace"
+    },
+    {
+      "slug": "social-learning",
+      "label": "Social Learning"
+    },
+    {
+      "slug": "educational-methodology",
+      "label": "Educational Methodology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    }
+  ]
+}

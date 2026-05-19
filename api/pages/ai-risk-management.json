@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:d316418e4c007d2c4c7e94bcf0a1a42c61cc240d967c51d6e60e30af386fd33f",
+  "title": "AI Risk Management",
+  "slug": "ai-risk-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-risk-management",
+  "domain": "artificial-intelligence",
+  "definition": "AI Risk Management is the systematic process of identifying, assessing, mitigating, and monitoring risks associated with artificial intelligence systems throughout their lifecycle, integrating AI-specific considerations into broader enterprise risk management frameworks. It encompasses governance structures, assessment methodologies, control mechanisms, and continuous oversight to ensure AI systems operate safely, ethically, and in compliance with regulations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    }
+  ]
+}

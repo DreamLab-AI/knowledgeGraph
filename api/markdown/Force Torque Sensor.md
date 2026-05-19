@@ -1,21 +1,363 @@
-iri:: http://narrativegoldmine.com/robotics#ForceTorqueSensor
-uri:: urn:visionclaw:concept:robotics:force-torque-sensor
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:force-torque-sensor
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Force Torque Sensor
-content-hash:: sha256-12-21a71a802780
-legacy-term-id:: RB-0921
-status:: draft
-maturity:: draft
-quality-score:: 0.63
-authority-score:: 0.17
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#ForceTorqueSensor
+legacy_uri:: urn:visionclaw:concept:robotics:force-torque-sensor
 public:: true
+
+# Force Torque Sensor
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13",
+  "@type": "Page",
+  "vc:slug": "force-torque-sensor",
+  "title": "Force Torque Sensor",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:calibration",
+      "vc:label": "Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:contact-detection",
+      "vc:label": "Contact Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:force-feedback",
+      "vc:label": "Force Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:haptic-feedback-system",
+      "vc:label": "Haptic Feedback System"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-assembly",
+      "vc:label": "Precision Assembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:robot-wrist",
+      "vc:label": "Robot Wrist"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-amplification",
+      "vc:label": "Signal Amplification"
+    },
+    {
+      "@id": "urn:visionflow:linked:soft-robotic-grasping",
+      "vc:label": "Soft Robotic Grasping"
+    },
+    {
+      "@id": "urn:visionflow:linked:wrist-assembly",
+      "vc:label": "Wrist Assembly"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-control",
+      "vc:label": "Compliance Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-processing",
+      "vc:label": "Data Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:impedance-control",
+      "vc:label": "Impedance Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor",
+      "vc:label": "Sensor"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.17"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-21a71a802780"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#ForceTorqueSensor"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0921"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Force Torque Sensor"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.63"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:force-torque-sensor"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:force-torque-sensor"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:force-torque-sensor",
+  "@type": "OntologyClass",
+  "label": "Force Torque Sensor",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor",
+      "vc:label": "Sensor"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Force-Torque Sensor** - A multi-axis transducer mounted on the [[Robot Wrist]] that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling [[Force Feedback]], [[Contact Detection]], and [[Compliance Control]] in precision manipulation.",
+  "vc:qualityScore": {
+    "@value": "0.63",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.17",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:haptic-feedback-system",
+      "vc:label": "Haptic Feedback System"
+    },
+    {
+      "@id": "urn:visionflow:linked:wrist-assembly",
+      "vc:label": "Wrist Assembly"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:calibration",
+      "vc:label": "Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-amplification",
+      "vc:label": "Signal Amplification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-processing",
+      "vc:label": "Data Processing"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:precision-assembly",
+      "vc:label": "Precision Assembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:soft-robotic-grasping",
+      "vc:label": "Soft Robotic Grasping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:impedance-control",
+      "vc:label": "Impedance Control"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:force-torque-sensor:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Calibration]]",
+      "resolved": "urn:visionflow:linked:calibration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Contact Detection]]",
+      "resolved": "urn:visionflow:linked:contact-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Force Feedback]]",
+      "resolved": "urn:visionflow:linked:force-feedback",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Haptic Feedback System]]",
+      "resolved": "urn:visionflow:linked:haptic-feedback-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precision Assembly]]",
+      "resolved": "urn:visionflow:linked:precision-assembly",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robot Wrist]]",
+      "resolved": "urn:visionflow:linked:robot-wrist",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Signal Amplification]]",
+      "resolved": "urn:visionflow:linked:signal-amplification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Soft Robotic Grasping]]",
+      "resolved": "urn:visionflow:linked:soft-robotic-grasping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wrist Assembly]]",
+      "resolved": "urn:visionflow:linked:wrist-assembly",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compliance Control]]",
+      "resolved": "urn:visionflow:owl:class:compliance-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Processing]]",
+      "resolved": "urn:visionflow:owl:class:data-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Impedance Control]]",
+      "resolved": "urn:visionflow:owl:class:impedance-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor]]",
+      "resolved": "urn:visionflow:owl:class:sensor",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Force-Torque Sensor** - A multi-axis transducer mounted on the [[Robot Wrist]] that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling [[Force Feedback]], [[Contact Detection]], and [[Compliance Control]] in precision manipulation.

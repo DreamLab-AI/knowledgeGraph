@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d553d354890772d8f4f305b72b43e70314c530909401d17824663e7e657af4ce",
+  "title": "Simulation Software",
+  "slug": "simulation-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:simulation-software",
+  "domain": "spatial-computing",
+  "definition": "Simulation Software is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "motion-solver-software",
+      "label": "Motion Solver Software"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

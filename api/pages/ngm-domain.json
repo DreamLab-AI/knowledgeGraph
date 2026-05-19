@@ -1,0 +1,272 @@
+{
+  "id": "urn:visionflow:page:efe790183fca9b08c7c84bd9c807ec2d67053078a9d22cf07769c70ce75a511d",
+  "title": "NGM Domain",
+  "slug": "ngm-domain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ngm-domain",
+  "domain": "infrastructure",
+  "definition": "The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts \u2014 identity primitives, data governance constructs, semantic web patterns, and integration infrastructure \u2014 that do not belong exclusively to any single specialised domain (ai, bc, mv, rb, tc) but are required as shared dependencies by all of them. It corresponds to the `http://narrativegoldmine.com/ontology#` IRI namespace and acts as the backbone against which domain-specific ontologies align their upper-level classes and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:knowledge-graph-domain",
+      "label": "Knowledge Graph Domain"
+    },
+    {
+      "id": "urn:visionflow:linked:ontology-namespace",
+      "label": "Ontology Namespace"
+    }
+  ],
+  "qualityScore": 0.65,
+  "authorityScore": 0.75,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:solid-pod",
+        "label": "Solid Pod"
+      },
+      {
+        "id": "urn:visionflow:owl:class:uri-canonicaliser",
+        "label": "URI Canonicaliser"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-credential-surface",
+        "label": "Verifiable Credential Surface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+        "label": "VisionClaw Agentic Container"
+      },
+      {
+        "id": "urn:visionflow:owl:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:json-ld-context",
+        "label": "JSON-LD Context"
+      },
+      {
+        "id": "urn:visionflow:linked:owl-2-web-ontology-language",
+        "label": "OWL 2 Web Ontology Language"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-data-model",
+        "label": "RDF Data Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-domain-concept-linking",
+        "label": "Cross-Domain Concept Linking"
+      },
+      {
+        "id": "urn:visionflow:linked:federated-knowledge-graph",
+        "label": "Federated Knowledge Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:w3-c-json-ld-1-1",
+        "label": "W3C JSON-LD 1.1"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-owl-2-specification",
+        "label": "W3C OWL 2 Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-rdf-specification",
+        "label": "W3C RDF Specification"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "cross-domain-concept-linking",
+      "label": "Cross-Domain Concept Linking"
+    },
+    {
+      "slug": "federated-knowledge-graph",
+      "label": "Federated Knowledge Graph"
+    },
+    {
+      "slug": "json-ld-context",
+      "label": "JSON-LD Context"
+    },
+    {
+      "slug": "knowledge-graph-domain",
+      "label": "Knowledge Graph Domain"
+    },
+    {
+      "slug": "logseq-graph-database",
+      "label": "Logseq Graph Database"
+    },
+    {
+      "slug": "narrative-gold-mine-ontology",
+      "label": "Narrative Gold Mine Ontology"
+    },
+    {
+      "slug": "ontology-layer",
+      "label": "OntologyLayer"
+    },
+    {
+      "slug": "ontology-namespace",
+      "label": "Ontology Namespace"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "rdf-data-model",
+      "label": "RDF Data Model"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "vision-claw-adr-013",
+      "label": "VisionClaw ADR-013"
+    },
+    {
+      "slug": "vision-claw-json-ld-context",
+      "label": "VisionClaw JSON-LD Context"
+    },
+    {
+      "slug": "w3-c-json-ld-1-1",
+      "label": "W3C JSON-LD 1.1"
+    },
+    {
+      "slug": "w3-c-owl-2-specification",
+      "label": "W3C OWL 2 Specification"
+    },
+    {
+      "slug": "w3-c-rdf-specification",
+      "label": "W3C RDF Specification"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust and Governance Domain"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ]
+}

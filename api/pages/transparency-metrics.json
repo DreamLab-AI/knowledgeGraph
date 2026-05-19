@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0a07fc65e3b283fd2653ec2ccbad50613cc5760b097698e64e2931f605ba0c71",
+  "title": "Transparency Metrics",
+  "slug": "transparency-metrics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transparency-metrics",
+  "domain": "artificial-intelligence",
+  "definition": "Quantitative and qualitative measures used to assess and communicate the openness, accountability, and visibility of governance, operations, and decision-making processes in digital platforms, DAOs, and metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    }
+  ]
+}

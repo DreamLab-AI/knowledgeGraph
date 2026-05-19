@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:befd85f49a23293fe9ce611589bd86294d7a371992519deafd1eff776a52fb13",
+  "title": "AIApplications",
+  "slug": "aiapplications",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:aiapplications",
+  "domain": "artificial-intelligence",
+  "definition": "A domain classification encompassing the practical deployment and use cases of artificial intelligence systems across industries, including autonomous systems, decision support, content generation, predictive analytics, and intelligent automation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "stable",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ai-capability",
+        "label": "AI Capability"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-capability",
+      "label": "AI Capability"
+    },
+    {
+      "slug": "application-domain",
+      "label": "Application Domain"
+    },
+    {
+      "slug": "industry-vertical",
+      "label": "Industry Vertical"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:82a38c428fea6fbb5fd2e0a602738592388b49975a7a92cfe4ada600f7d84cac",
+  "title": "Module",
+  "slug": "module",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:module",
+  "domain": "artificial-intelligence",
+  "definition": "Module is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:component",
+      "label": "Component"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    }
+  ],
+  "backlinks": []
+}

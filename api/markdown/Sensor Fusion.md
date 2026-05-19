@@ -1,21 +1,279 @@
-iri:: http://narrativegoldmine.com/robotics#SensorFusion
-uri:: urn:visionclaw:concept:robotics:sensor-fusion
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:sensor-fusion
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Sensor Fusion
-content-hash:: sha256-12-85fa11e2836b
-legacy-term-id:: AI-0350
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#SensorFusion
+legacy_uri:: urn:visionclaw:concept:robotics:sensor-fusion
 public:: true
+
+# Sensor Fusion
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fc107277f6b237548b7b60269a26812f0eecd134a1be3e3f2ab4e0eb9769a179",
+  "@type": "Page",
+  "vc:slug": "sensor-fusion",
+  "title": "Sensor Fusion",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:localisation",
+      "vc:label": "Localisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-and-4-d",
+      "vc:label": "3D and 4D"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:copyright",
+      "vc:label": "copyright"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microsoft-copilot",
+      "vc:label": "Microsoft Copilot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:music-and-audio",
+      "vc:label": "Music and Audio"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-85fa11e2836b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#SensorFusion"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0350"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Sensor Fusion"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:sensor-fusion"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:sensor-fusion"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fc107277f6b237548b7b60269a26812f0eecd134a1be3e3f2ab4e0eb9769a179@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:sensor-fusion",
+  "@type": "OntologyClass",
+  "label": "Sensor Fusion",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fc107277f6b237548b7b60269a26812f0eecd134a1be3e3f2ab4e0eb9769a179"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fc107277f6b237548b7b60269a26812f0eecd134a1be3e3f2ab4e0eb9769a179@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:sensor-fusion:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fc107277f6b237548b7b60269a26812f0eecd134a1be3e3f2ab4e0eb9769a179"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Localisation]]",
+      "resolved": "urn:visionflow:linked:localisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D and 4D]]",
+      "resolved": "urn:visionflow:owl:class:3-d-and-4-d",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Video]]",
+      "resolved": "urn:visionflow:owl:class:ai-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[copyright]]",
+      "resolved": "urn:visionflow:owl:class:copyright",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microsoft Copilot]]",
+      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Music and Audio]]",
+      "resolved": "urn:visionflow:owl:class:music-and-audio",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Object Detection]]",
+      "resolved": "urn:visionflow:owl:class:object-detection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Perception System]]",
+      "resolved": "urn:visionflow:owl:class:perception-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fc107277f6b237548b7b60269a26812f0eecd134a1be3e3f2ab4e0eb9769a179@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.
@@ -137,7 +395,7 @@ public:: true
   - [Generating audio for video - Google DeepMind](https://deepmind.google/discover/blog/generating-audio-for-video/)
   - This needs a big overhaul update
   - [Motion Array So Easy (youtube.com)](https://www.youtube.com/watch?v=Hd0KYxotzv8)
-  - [Suno AI](https://www.suno.ai/) is now integrated into Microsoft [[Microsoft CoPilot]] [[Music and audio]]
+  - [Suno AI](https://www.suno.ai/) is now integrated into Microsoft [[Microsoft Copilot]] [[Music and Audio]]
 		- {{tweet https://twitter.com/NickADobos/status/1737335846414770583}}
   - Remember Limewire? They have relaunched as a creative portal with digital sales. This is from Mark Farrell [Biomorphic Coalescence LimeWire](https://limewire.com/post/b9c58f0b-154e-484b-868c-9c6f5ec2e960)
   - ![1703054111335.mp4](assets/1703054111335_1703357299299_0.mp4) [Post | Feed | LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7143126665659826176/)
@@ -213,7 +471,7 @@ public:: true
   - [Generating audio for video - Google DeepMind](https://deepmind.google/discover/blog/generating-audio-for-video/)
   - This needs a big overhaul update
   - [Motion Array So Easy (youtube.com)](https://www.youtube.com/watch?v=Hd0KYxotzv8)
-  - [Suno AI](https://www.suno.ai/) is now integrated into Microsoft [[Microsoft CoPilot]] [[Music and audio]]
+  - [Suno AI](https://www.suno.ai/) is now integrated into Microsoft [[Microsoft Copilot]] [[Music and Audio]]
 		- {{tweet https://twitter.com/NickADobos/status/1737335846414770583}}
   - Remember Limewire? They have relaunched as a creative portal with digital sales. This is from Mark Farrell [Biomorphic Coalescence LimeWire](https://limewire.com/post/b9c58f0b-154e-484b-868c-9c6f5ec2e960)
   - ![1703054111335.mp4](assets/1703054111335_1703357299299_0.mp4) [Post | Feed | LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7143126665659826176/)

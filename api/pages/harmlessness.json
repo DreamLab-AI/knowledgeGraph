@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:a087d9c16481a04a2f10a8ed250a0caf9edfeff39dbef679d958e5f1a98ad01b",
+  "title": "Harmlessness",
+  "slug": "harmlessness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:harmlessness",
+  "domain": "spatial-computing",
+  "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "untitled",
+      "label": "\ud83e\udd16"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "research-tools",
+      "label": "Research Tools"
+    },
+    {
+      "slug": "sam-hammond",
+      "label": "Sam Hammond"
+    }
+  ],
+  "backlinks": []
+}

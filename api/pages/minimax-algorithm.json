@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d9e1ec6f3323eba996d79c85a30ff26a9090223ba061defd0eb921e4733e93f4",
+  "title": "Minimax Algorithm",
+  "slug": "minimax-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:minimax-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "Minimax Algorithm is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:search-algorithms",
+      "label": "Search Algorithms"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adversarial-search",
+        "label": "Adversarial Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adversarial-search",
+      "label": "Adversarial Search"
+    },
+    {
+      "slug": "search-algorithms",
+      "label": "Search Algorithms"
+    }
+  ],
+  "backlinks": []
+}

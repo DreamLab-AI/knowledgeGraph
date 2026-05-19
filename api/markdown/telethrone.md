@@ -1,0 +1,15 @@
+- ### Definition
+  - Telethrone is a concept within the ngm domain.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Telethrone
+  - owl-role:: Concept
+- ### Relationships
+  - <!-- No relationships defined -->
+- ### Content
+  - Telehtrone metahuman avatar
+  - Hyperpersonal display is solved
+  - Create the 3d from 2d
+  - [[MUST]]
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

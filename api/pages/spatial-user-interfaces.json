@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:65aa7cbbce6cf86c81f621a6767062359a0db2bd063cfa093d244e6985c2afb3",
+  "title": "Spatial User Interfaces",
+  "slug": "spatial-user-interfaces",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-user-interfaces",
+  "domain": "spatial-computing",
+  "definition": "Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware methods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6DOF input.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-interaction",
+        "label": "Immersive Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-interaction",
+      "label": "Immersive Interaction"
+    },
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": []
+}

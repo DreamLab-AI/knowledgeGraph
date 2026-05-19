@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92",
+  "title": "Generative Design Tool",
+  "slug": "generative-design-tool",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:generative-design-tool",
+  "domain": "artificial-intelligence",
+  "definition": "AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:3-d-generator",
+        "label": "3D Generator"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:visionflow:linked:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:design-optimizer",
+        "label": "Design Optimizer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:design-database",
+        "label": "Design Database"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-design",
+        "label": "Automated Design"
+      },
+      {
+        "id": "urn:visionflow:linked:design-optimization",
+        "label": "Design Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constraint-based-design",
+        "label": "Constraint-Based Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:parametric-modeling",
+        "label": "Parametric Modeling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-generator",
+      "label": "3D Generator"
+    },
+    {
+      "slug": "ai-engine",
+      "label": "AI Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "autodesk-design-ml",
+      "label": "Autodesk Design ML"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "content-creation-tool",
+      "label": "Content Creation Tool"
+    },
+    {
+      "slug": "design-database",
+      "label": "Design Database"
+    },
+    {
+      "slug": "design-optimization",
+      "label": "Design Optimization"
+    },
+    {
+      "slug": "design-optimizer",
+      "label": "Design Optimizer"
+    },
+    {
+      "slug": "siggraph-ai-design-wg",
+      "label": "SIGGRAPH AI Design WG"
+    },
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint-Based Design"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "machine-learning-infrastructure",
+      "label": "Machine Learning Infrastructure"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "parametric-modeling",
+      "label": "Parametric Modeling"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    }
+  ]
+}

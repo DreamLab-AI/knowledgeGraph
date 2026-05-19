@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:5ecf3d2f40793ecf1a791e87c54297265caf538b822564c95261505cacdfdba3",
+  "title": "Robot Component",
+  "slug": "robot-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-component",
+  "domain": "robotics",
+  "definition": "RobotComponent is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

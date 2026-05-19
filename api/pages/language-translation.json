@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:162bb937c74890a379898d4589e830dbf526dd4aaae36cdb0775426f3ac4ad77",
+  "title": "Language Translation",
+  "slug": "language-translation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:language-translation",
+  "domain": "distributed-collaboration",
+  "definition": "Language Translation is a concept within the telecollaboration domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

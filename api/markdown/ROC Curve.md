@@ -1,24 +1,355 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ROCCurve
-uri:: urn:visionclaw:concept:spatial-computing:roc-curve
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:roc-curve
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: ROC Curve
-content-hash:: sha256-12-c2a884cdbb91
-legacy-term-id:: AI-0112
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ROCCurve
+legacy_uri:: urn:visionclaw:concept:spatial-computing:roc-curve
 public:: true
+
+# ROC Curve
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71",
+  "@type": "Page",
+  "vc:slug": "roc-curve",
+  "title": "ROC Curve",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:diffie1976new",
+      "vc:label": "diffie1976new"
+    },
+    {
+      "@id": "urn:visionflow:linked:false-positive-rate",
+      "vc:label": "False Positive Rate"
+    },
+    {
+      "@id": "urn:visionflow:linked:gayoso2018secure",
+      "vc:label": "gayoso2018secure"
+    },
+    {
+      "@id": "urn:visionflow:linked:harris2020flood",
+      "vc:label": "harris2020flood"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-comparison",
+      "vc:label": "model comparison"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-comparison",
+      "vc:label": "Model Comparison"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-recall-curve",
+      "vc:label": "Precision-Recall Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr1989efficient",
+      "vc:label": "schnorr1989efficient"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensitivity",
+      "vc:label": "Sensitivity"
+    },
+    {
+      "@id": "urn:visionflow:linked:specificity",
+      "vc:label": "Specificity"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-selection",
+      "vc:label": "Threshold selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-selection",
+      "vc:label": "Threshold Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:true-positive-rate",
+      "vc:label": "True Positive Rate"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:auc",
+      "vc:label": "AUC"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:confusion-matrix",
+      "vc:label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "vc:label": "Retrieval Augmented Generation - RAG"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c2a884cdbb91"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ROCCurve"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0112"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ROC Curve"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:roc-curve"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:roc-curve"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:roc-curve",
+  "@type": "OntologyClass",
+  "label": "ROC Curve",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A graphical performance evaluation tool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifying negative instances as positive, enabling threshold selection, model comparison, and assessment of a classifier's discriminative ability independent of class distribution or threshold choice.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:model-comparison",
+      "vc:label": "model comparison"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-selection",
+      "vc:label": "Threshold selection"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:roc-curve:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[diffie1976new]]",
+      "resolved": "urn:visionflow:linked:diffie1976new",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[False Positive Rate]]",
+      "resolved": "urn:visionflow:linked:false-positive-rate",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[gayoso2018secure]]",
+      "resolved": "urn:visionflow:linked:gayoso2018secure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[harris2020flood]]",
+      "resolved": "urn:visionflow:linked:harris2020flood",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Comparison]]",
+      "resolved": "urn:visionflow:linked:model-comparison",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[model comparison]]",
+      "resolved": "urn:visionflow:linked:model-comparison",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precision-Recall Curve]]",
+      "resolved": "urn:visionflow:linked:precision-recall-curve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[schnorr1989efficient]]",
+      "resolved": "urn:visionflow:linked:schnorr1989efficient",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensitivity]]",
+      "resolved": "urn:visionflow:linked:sensitivity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Specificity]]",
+      "resolved": "urn:visionflow:linked:specificity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Threshold Selection]]",
+      "resolved": "urn:visionflow:linked:threshold-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Threshold selection]]",
+      "resolved": "urn:visionflow:linked:threshold-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[True Positive Rate]]",
+      "resolved": "urn:visionflow:linked:true-positive-rate",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AUC]]",
+      "resolved": "urn:visionflow:owl:class:auc",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Confusion Matrix]]",
+      "resolved": "urn:visionflow:owl:class:confusion-matrix",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Retrieval Augmented Generation - RAG]]",
+      "resolved": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A graphical performance evaluation tool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifying negative instances as positive, enabling threshold selection, model comparison, and assessment of a classifier's discriminative ability independent of class distribution or threshold choice.

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:4df0d74453f0f179b3b70478f791466af35b9f48d3ada58bf9b1cb9ba7bb1cb6",
+  "title": "Spatial Database",
+  "slug": "spatial-database",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-database",
+  "domain": "infrastructure",
+  "definition": "A database system optimized for storing, indexing, and querying georeferenced data and geometric objects, supporting spatial data types (points, lines, polygons) and spatial operations (intersection, containment, proximity) per OGC Simple Features specification for GIS and metaverse applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:database-system",
+      "label": "Database System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:geospatial-data-management",
+        "label": "Geospatial Data Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "geospatial-data-management",
+      "label": "Geospatial Data Management"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

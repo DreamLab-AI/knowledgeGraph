@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:43acfa8b7c84976ae4e2328591f9183d838ad62ed44c860f82cf2fce083f20df",
+  "title": "Query Vector",
+  "slug": "query-vector",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:query-vector",
+  "domain": "artificial-intelligence",
+  "definition": "Query Vector is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

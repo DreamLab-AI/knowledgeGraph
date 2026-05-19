@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:878ffdd88a80fa9e38e3367b1ef01ca82b5fa7eebb7a59af75ef45cef2071e73",
+  "title": "Blockchain Transaction",
+  "slug": "blockchain-transaction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-transaction",
+  "domain": "blockchain",
+  "definition": "BlockchainTransaction is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.7,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "transaction-parameter",
+      "label": "Transaction Parameter"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

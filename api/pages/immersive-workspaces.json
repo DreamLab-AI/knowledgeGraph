@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9e1a07e32f3fece8e6b64b5de0e702c8d9f6aaafa2554d29a0cf40d76f66d6da",
+  "title": "Immersive Workspaces",
+  "slug": "immersive-workspaces",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-workspaces",
+  "domain": "spatial-computing",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,664 @@
+{
+  "id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613",
+  "title": "AI Liability",
+  "slug": "ai-liability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-liability",
+  "domain": "artificial-intelligence",
+  "definition": "AI Liability is the body of legal doctrine, statutory regime, regulatory practice and emerging case law that allocates civil responsibility for personal injury, property damage, economic loss, discrimination, privacy invasion and consequential harm caused by artificial intelligence systems\u2014encompassing the application and adaptation of common-law tort frameworks (negligence requiring duty/breach/causation/damage per [[Donoghue v. Stevenson]] 1932 and [[Caparo Industries plc v. Dickman]] 1990 in the UK; the four-element negligence formulation traced to [[Brown v. Kendall]] 1850 and [[Palsgraf v. Long Island Railroad]] 1928 in the US), statutory strict-liability regimes (the UK [[Consumer Protection Act 1987]] implementing EC Directive 85/374/EEC; [[Restatement (Second) of Torts \u00a7 402A]] in the US; the EU revised [[Product Liability Directive]] (EU) 2024/2853 entering into force 9 December 2024 explicitly extending product status to software, AI systems and digital manufacturing files with a presumption of defectiveness when a claimant faces excessive difficulty in proving technical complexity), the doctrine of strict liability for [[Abnormally Dangerous Activity]] descended from [[R",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:civil-liability",
+      "label": "Civil Liability"
+    },
+    {
+      "id": "urn:visionflow:linked:product-liability",
+      "label": "Product Liability"
+    },
+    {
+      "id": "urn:visionflow:linked:tort-law",
+      "label": "Tort Law"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:breach-of-duty",
+        "label": "Breach of Duty"
+      },
+      {
+        "id": "urn:visionflow:linked:causation",
+        "label": "Causation"
+      },
+      {
+        "id": "urn:visionflow:linked:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:damages",
+        "label": "Damages"
+      },
+      {
+        "id": "urn:visionflow:linked:duty-of-care",
+        "label": "Duty of Care"
+      },
+      {
+        "id": "urn:visionflow:linked:foreseeability",
+        "label": "Foreseeability"
+      },
+      {
+        "id": "urn:visionflow:linked:post-market-monitoring",
+        "label": "Post-Market Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:strict-liability-standard",
+        "label": "Strict Liability Standard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:causal-linkage",
+        "label": "Causal Linkage"
+      },
+      {
+        "id": "urn:visionflow:linked:compensable-harm",
+        "label": "Compensable Harm"
+      },
+      {
+        "id": "urn:visionflow:linked:evidentiary-record",
+        "label": "Evidentiary Record"
+      },
+      {
+        "id": "urn:visionflow:linked:identifiable-legal-person",
+        "label": "Identifiable Legal Person"
+      },
+      {
+        "id": "urn:visionflow:linked:jurisdictional-framework",
+        "label": "Jurisdictional Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compensation-for-victims",
+        "label": "Compensation for Victims"
+      },
+      {
+        "id": "urn:visionflow:linked:deterrence-of-harm",
+        "label": "Deterrence of Harm"
+      },
+      {
+        "id": "urn:visionflow:linked:insurance-pricing",
+        "label": "Insurance Pricing"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-internalisation",
+        "label": "Risk Internalisation"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-investment",
+        "label": "Safety Investment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:abnormally-dangerous-activity-doctrine",
+        "label": "Abnormally Dangerous Activity Doctrine"
+      },
+      {
+        "id": "urn:visionflow:linked:negligence-standard",
+        "label": "Negligence Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:product-liability-directive",
+        "label": "Product Liability Directive"
+      },
+      {
+        "id": "urn:visionflow:linked:strict-liability",
+        "label": "Strict Liability"
+      },
+      {
+        "id": "urn:visionflow:linked:vicarious-liability",
+        "label": "Vicarious Liability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abnormally-dangerous-activity",
+      "label": "Abnormally Dangerous Activity"
+    },
+    {
+      "slug": "abnormally-dangerous-activity-doctrine",
+      "label": "Abnormally Dangerous Activity Doctrine"
+    },
+    {
+      "slug": "ai-insurance",
+      "label": "AI Insurance"
+    },
+    {
+      "slug": "ai-liability-directive",
+      "label": "AI Liability Directive"
+    },
+    {
+      "slug": "air-canada-v-moffatt",
+      "label": "Air Canada v. Moffatt"
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "label": "Algorithmic Auditing"
+    },
+    {
+      "slug": "andersen-v-stability-ai",
+      "label": "Andersen v. Stability AI"
+    },
+    {
+      "slug": "automated-vehicles-act-2024",
+      "label": "Automated Vehicles Act 2024"
+    },
+    {
+      "slug": "black-box",
+      "label": "black box"
+    },
+    {
+      "slug": "breach-of-duty",
+      "label": "Breach of Duty"
+    },
+    {
+      "slug": "brown-v-kendall",
+      "label": "Brown v. Kendall"
+    },
+    {
+      "slug": "caparo-industries-plc-v-dickman",
+      "label": "Caparo Industries plc v. Dickman"
+    },
+    {
+      "slug": "caparo-three-stage-test",
+      "label": "Caparo Three-Stage Test"
+    },
+    {
+      "slug": "causal-linkage",
+      "label": "Causal Linkage"
+    },
+    {
+      "slug": "causation",
+      "label": "Causation"
+    },
+    {
+      "slug": "causation-doctrine",
+      "label": "Causation Doctrine"
+    },
+    {
+      "slug": "centre-for-law-and-future-of-innovation",
+      "label": "Centre for Law & Future of Innovation"
+    },
+    {
+      "slug": "character-ai",
+      "label": "Character.AI"
+    },
+    {
+      "slug": "civil-liability",
+      "label": "Civil Liability"
+    },
+    {
+      "slug": "civil-procedure-rules",
+      "label": "Civil Procedure Rules"
+    },
+    {
+      "slug": "common-law-system",
+      "label": "Common Law System"
+    },
+    {
+      "slug": "compensable-harm",
+      "label": "Compensable Harm"
+    },
+    {
+      "slug": "compensation-for-victims",
+      "label": "Compensation for Victims"
+    },
+    {
+      "slug": "competition-and-markets-authority-cma",
+      "label": "Competition and Markets Authority (CMA)"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "consumer-protection-act-1987",
+      "label": "Consumer Protection Act 1987"
+    },
+    {
+      "slug": "contract-layer",
+      "label": "ContractLayer"
+    },
+    {
+      "slug": "contractual-liability",
+      "label": "Contractual Liability"
+    },
+    {
+      "slug": "criminal-liability",
+      "label": "Criminal Liability"
+    },
+    {
+      "slug": "damages",
+      "label": "Damages"
+    },
+    {
+      "slug": "daubert-standard",
+      "label": "Daubert Standard"
+    },
+    {
+      "slug": "deterrence-of-harm",
+      "label": "Deterrence of Harm"
+    },
+    {
+      "slug": "donoghue-v-stevenson",
+      "label": "Donoghue v. Stevenson"
+    },
+    {
+      "slug": "duty-of-care",
+      "label": "Duty of Care"
+    },
+    {
+      "slug": "evidentiary-record",
+      "label": "Evidentiary Record"
+    },
+    {
+      "slug": "exemplary-damages",
+      "label": "exemplary damages"
+    },
+    {
+      "slug": "expert-evidence",
+      "label": "Expert Evidence"
+    },
+    {
+      "slug": "fda",
+      "label": "FDA"
+    },
+    {
+      "slug": "federal-judicial-center",
+      "label": "Federal Judicial Center"
+    },
+    {
+      "slug": "foreseeability",
+      "label": "Foreseeability"
+    },
+    {
+      "slug": "foreseeability-test",
+      "label": "Foreseeability Test"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "ftc",
+      "label": "FTC"
+    },
+    {
+      "slug": "gabriel-weil",
+      "label": "Gabriel Weil"
+    },
+    {
+      "slug": "getty-images-v-stability-ai",
+      "label": "Getty Images v. Stability AI"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "house-of-commons-science-innovation-and-technology-committee",
+      "label": "House of Commons Science, Innovation and Technology Committee"
+    },
+    {
+      "slug": "ico",
+      "label": "ICO"
+    },
+    {
+      "slug": "identifiable-legal-person",
+      "label": "Identifiable Legal Person"
+    },
+    {
+      "slug": "ieee-7000-series",
+      "label": "IEEE 7000 Series"
+    },
+    {
+      "slug": "information-commissioner-s-office-ico",
+      "label": "Information Commissioner's Office (ICO)"
+    },
+    {
+      "slug": "insurance-layer",
+      "label": "InsuranceLayer"
+    },
+    {
+      "slug": "insurance-pricing",
+      "label": "Insurance Pricing"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "judicial-capacity",
+      "label": "Judicial Capacity"
+    },
+    {
+      "slug": "jurisdictional-framework",
+      "label": "Jurisdictional Framework"
+    },
+    {
+      "slug": "law-commission",
+      "label": "Law Commission"
+    },
+    {
+      "slug": "legal-and-regulatory-domain",
+      "label": "LegalAndRegulatoryDomain"
+    },
+    {
+      "slug": "lloyd-s-of-london",
+      "label": "Lloyd's of London"
+    },
+    {
+      "slug": "market-surveillance",
+      "label": "Market Surveillance"
+    },
+    {
+      "slug": "mata-v-avianca",
+      "label": "Mata v. Avianca"
+    },
+    {
+      "slug": "mhra",
+      "label": "MHRA"
+    },
+    {
+      "slug": "national-courts-and-sciences-institute",
+      "label": "National Courts and Sciences Institute"
+    },
+    {
+      "slug": "negligence",
+      "label": "Negligence"
+    },
+    {
+      "slug": "negligence-standard",
+      "label": "Negligence Standard"
+    },
+    {
+      "slug": "nhtsa",
+      "label": "NHTSA"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "palsgraf-v-long-island-railroad",
+      "label": "Palsgraf v. Long Island Railroad"
+    },
+    {
+      "slug": "post-market-monitoring",
+      "label": "Post-Market Monitoring"
+    },
+    {
+      "slug": "precedent",
+      "label": "Precedent"
+    },
+    {
+      "slug": "price-anderson-act",
+      "label": "Price-Anderson Act"
+    },
+    {
+      "slug": "pro-innovation",
+      "label": "pro-innovation"
+    },
+    {
+      "slug": "product-liability",
+      "label": "Product Liability"
+    },
+    {
+      "slug": "product-liability-directive",
+      "label": "Product Liability Directive"
+    },
+    {
+      "slug": "punitive-damages",
+      "label": "Punitive Damages"
+    },
+    {
+      "slug": "reasonable-care-standard",
+      "label": "Reasonable Care Standard"
+    },
+    {
+      "slug": "regulatory-enforcement",
+      "label": "Regulatory Enforcement"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "RegulatoryLayer"
+    },
+    {
+      "slug": "regulatory-sanction",
+      "label": "Regulatory Sanction"
+    },
+    {
+      "slug": "restatement-second-of-torts-402-a",
+      "label": "Restatement (Second) of Torts \u00a7 402A"
+    },
+    {
+      "slug": "risk-benefit-analysis",
+      "label": "Risk-Benefit Analysis"
+    },
+    {
+      "slug": "risk-internalisation",
+      "label": "Risk Internalisation"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "RiskManagementDomain"
+    },
+    {
+      "slug": "rite-aid",
+      "label": "Rite Aid"
+    },
+    {
+      "slug": "rookes-v-barnard",
+      "label": "Rookes v Barnard"
+    },
+    {
+      "slug": "rylands-v-fletcher",
+      "label": "Rylands v. Fletcher"
+    },
+    {
+      "slug": "safety-investment",
+      "label": "Safety Investment"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
+    },
+    {
+      "slug": "statutory-interpretation",
+      "label": "Statutory Interpretation"
+    },
+    {
+      "slug": "strict-liability",
+      "label": "Strict Liability"
+    },
+    {
+      "slug": "strict-liability-standard",
+      "label": "Strict Liability Standard"
+    },
+    {
+      "slug": "strict-product-liability",
+      "label": "Strict Product Liability"
+    },
+    {
+      "slug": "tort-law",
+      "label": "Tort Law"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "vicarious-liability",
+      "label": "Vicarious Liability"
+    },
+    {
+      "slug": "voluntary-code",
+      "label": "Voluntary Code"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

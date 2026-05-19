@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c",
+  "title": "Text Summarisation",
+  "slug": "text-summarisation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:text-summarisation",
+  "domain": "spatial-computing",
+  "definition": "Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections. Summarisation systems employ extractive methods (selecting key sentences) or abstractive methods (generating new summary text) using transformer models to enable applications in news aggregation, document analysis, and information retrieval.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "chen2011leet",
+      "label": "chen2011leet"
+    },
+    {
+      "slug": "cole2013call",
+      "label": "cole2013call"
+    },
+    {
+      "slug": "comfy-work-flows",
+      "label": "ComfyWorkFlows"
+    },
+    {
+      "slug": "flux",
+      "label": "flux"
+    },
+    {
+      "slug": "glas2013battlefields",
+      "label": "glas2013battlefields"
+    },
+    {
+      "slug": "iser1993fictive",
+      "label": "iser1993fictive"
+    },
+    {
+      "slug": "serapis2008coming",
+      "label": "serapis2008coming"
+    },
+    {
+      "slug": "taylor2009play",
+      "label": "taylor2009play"
+    },
+    {
+      "slug": "visionflow",
+      "label": "visionflow"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "bart",
+      "label": "BART"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "layoff-tracker-and-threatened-roles",
+      "label": "Layoff tracker and threatened roles"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "style transfer"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ],
+  "backlinks": []
+}

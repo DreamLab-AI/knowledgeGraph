@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:f9773e9e03dfbe317c740399917d2e42ad26323bd68bc12722a63a5456d04726",
+  "title": "ETSI_Domain_Governance_Compliance",
+  "slug": "etsi-domain-governance-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-governance-compliance",
+  "domain": "artificial-intelligence",
+  "definition": "ETSI domain categorisation encompassing governance and regulatory compliance mechanisms, addressing frameworks for regulatory adherence, compliance oversight, and governance enforcement within metaverse infrastructure. These [[Governance Structures]] integrate [[Regulatory Requirements]], [[Compliance Audits]], and [[Oversight Mechanisms]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cobit",
+      "label": "COBIT"
+    },
+    {
+      "slug": "compliance-audits",
+      "label": "Compliance Audits"
+    },
+    {
+      "slug": "compliance-oversight",
+      "label": "Compliance Oversight"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "etsi-tr-104-077-series",
+      "label": "ETSI TR 104 077 series"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "governance-enforcement",
+      "label": "Governance Enforcement"
+    },
+    {
+      "slug": "governance-structures",
+      "label": "Governance Structures"
+    },
+    {
+      "slug": "iso-23257",
+      "label": "ISO 23257"
+    },
+    {
+      "slug": "iso-iec-38500",
+      "label": "ISO/IEC 38500"
+    },
+    {
+      "slug": "nist-cybersecurity-framework",
+      "label": "NIST Cybersecurity Framework"
+    },
+    {
+      "slug": "oversight-mechanisms",
+      "label": "Oversight Mechanisms"
+    },
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

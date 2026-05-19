@@ -1,21 +1,337 @@
-iri:: http://narrativegoldmine.com/robotics#CollisionAvoidance
-uri:: urn:visionclaw:concept:robotics:collision-avoidance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:collision-avoidance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Collision Avoidance
-content-hash:: sha256-12-abc0ea4a3651
-legacy-term-id:: RB-0886
-status:: draft
-maturity:: draft
-quality-score:: 0.58
-authority-score:: 0.11
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#CollisionAvoidance
+legacy_uri:: urn:visionclaw:concept:robotics:collision-avoidance
 public:: true
+
+# Collision Avoidance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673",
+  "@type": "Page",
+  "vc:slug": "collision-avoidance",
+  "title": "Collision Avoidance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:emergency-stop",
+      "vc:label": "Emergency Stop"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:linked:robot-trajectories",
+      "vc:label": "Robot Trajectories"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-human-robot-proximity",
+      "vc:label": "Safe Human-Robot Proximity"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-system",
+      "vc:label": "Safety System"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensors",
+      "vc:label": "Sensors"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "Autonomous Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-control",
+      "vc:label": "Motion Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time-processing",
+      "vc:label": "Real-time Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.11"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-abc0ea4a3651"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#CollisionAvoidance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0886"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Collision Avoidance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.58"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:collision-avoidance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:collision-avoidance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:collision-avoidance",
+  "@type": "OntologyClass",
+  "label": "Collision Avoidance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Collision Avoidance** - An active safety mechanism using [[Sensors]] (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify [[Robot Trajectories]] to prevent unintended contact with people, equipment, or structures.",
+  "vc:qualityScore": {
+    "@value": "0.58",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.11",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:safety-system",
+      "vc:label": "Safety System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-control",
+      "vc:label": "Motion Control"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:emergency-stop",
+      "vc:label": "Emergency Stop"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time-processing",
+      "vc:label": "Real-time Processing"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:safe-human-robot-proximity",
+      "vc:label": "Safe Human-Robot Proximity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "Autonomous Navigation"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:collision-avoidance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Emergency Stop]]",
+      "resolved": "urn:visionflow:linked:emergency-stop",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robot Trajectories]]",
+      "resolved": "urn:visionflow:linked:robot-trajectories",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safe Human-Robot Proximity]]",
+      "resolved": "urn:visionflow:linked:safe-human-robot-proximity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety System]]",
+      "resolved": "urn:visionflow:linked:safety-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensors]]",
+      "resolved": "urn:visionflow:linked:sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Navigation]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Control]]",
+      "resolved": "urn:visionflow:owl:class:motion-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Perception System]]",
+      "resolved": "urn:visionflow:owl:class:perception-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Real-time Processing]]",
+      "resolved": "urn:visionflow:owl:class:real-time-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Collision Avoidance** - An active safety mechanism using [[Sensors]] (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify [[Robot Trajectories]] to prevent unintended contact with people, equipment, or structures.

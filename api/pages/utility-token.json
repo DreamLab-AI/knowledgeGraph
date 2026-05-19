@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:0537236a19fb0680cdb6c0b63d70cb67f26772c8e2f39df6a424c7115349698e",
+  "title": "Utility Token",
+  "slug": "utility-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:utility-token",
+  "domain": "blockchain",
+  "definition": "Tokens providing access to services.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

@@ -1,20 +1,676 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Automl
-uri:: urn:visionclaw:concept:artificial-intelligence:automl
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:automl
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AutoML
-content-hash:: sha256-12-1d5f9b3e7a2c
-status:: complete
-maturity:: established
-quality-score:: 0.60
-authority-score:: 0.72
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Automl
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:automl
 public:: true
+
+# AutoML
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a",
+  "@type": "Page",
+  "vc:slug": "auto-ml",
+  "title": "AutoML",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-development-lifecycle",
+      "vc:label": "AI Development Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-selection",
+      "vc:label": "Algorithm Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:auto-ml-survey-knowledge-based-systems-2021",
+      "vc:label": "AutoML Survey Knowledge-Based Systems 2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-optimisation-system",
+      "vc:label": "Automated Optimisation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-budget",
+      "vc:label": "Computational Budget"
+    },
+    {
+      "@id": "urn:visionflow:linked:darts-differentiable-nas",
+      "vc:label": "DARTS Differentiable NAS"
+    },
+    {
+      "@id": "urn:visionflow:linked:darts-iclr-2019",
+      "vc:label": "DARTS ICLR 2019"
+    },
+    {
+      "@id": "urn:visionflow:linked:democratised-ml-development",
+      "vc:label": "Democratised ML Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-neural-architecture-search",
+      "vc:label": "Evolutionary Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering-automation",
+      "vc:label": "Feature Engineering Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-vertex-ai-auto-ml",
+      "vc:label": "Google Vertex AI AutoML"
+    },
+    {
+      "@id": "urn:visionflow:linked:h2-o-auto-ml-documentation",
+      "vc:label": "H2O AutoML Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops-platform",
+      "vc:label": "MLOps Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-layer",
+      "vc:label": "ModelLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips-2015-auto-sklearn-paper",
+      "vc:label": "NeurIPS 2015 Auto-Sklearn Paper"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:optuna-hpo-framework",
+      "vc:label": "Optuna HPO Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:pipeline-optimisation",
+      "vc:label": "Pipeline Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:rapid-model-iteration",
+      "vc:label": "Rapid Model Iteration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ray-tune",
+      "vc:label": "Ray Tune"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducible-experiments",
+      "vc:label": "Reproducible Experiments"
+    },
+    {
+      "@id": "urn:visionflow:linked:resource-efficient-training",
+      "vc:label": "Resource-Efficient Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-space-definition",
+      "vc:label": "Search Space Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow",
+      "vc:label": "TensorFlow"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-dataset",
+      "vc:label": "Training Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-layer",
+      "vc:label": "TrainingLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gazebo-simulator",
+      "vc:label": "Gazebo Simulator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lang-chain",
+      "vc:label": "LangChain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "vc:label": "Machine Learning Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "vc:label": "NGM Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-xr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "Robotics Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-assembly",
+      "vc:label": "WebAssembly"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.72"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1d5f9b3e7a2c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Automl"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AutoML"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.60"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:automl"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:automl"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:auto-ml",
+  "@type": "OntologyClass",
+  "label": "AutoML",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:automated-optimisation-system",
+      "vc:label": "Automated Optimisation System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "vc:label": "Machine Learning Pipeline"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems — encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyperparameter optimisation (HPO), and ensemble construction — enabling practitioners without deep ML expertise to produce competitive models whilst simultaneously accelerating expert workflows, with modern systems such as Google AutoML, Auto-Sklearn, and NAS-based tools (DARTS, EffNet) achieving state-of-the-art performance on standard benchmarks through efficient search strategies including Bayesian optimisation, evolutionary algorithms, and differentiable architecture search.",
+  "vc:qualityScore": {
+    "@value": "0.60",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.72",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:ai-development-lifecycle",
+      "vc:label": "AI Development Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops-platform",
+      "vc:label": "MLOps Platform"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:algorithm-selection",
+      "vc:label": "Algorithm Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering-automation",
+      "vc:label": "Feature Engineering Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:pipeline-optimisation",
+      "vc:label": "Pipeline Optimisation"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:computational-budget",
+      "vc:label": "Computational Budget"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-space-definition",
+      "vc:label": "Search Space Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-dataset",
+      "vc:label": "Training Dataset"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:democratised-ml-development",
+      "vc:label": "Democratised ML Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:rapid-model-iteration",
+      "vc:label": "Rapid Model Iteration"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducible-experiments",
+      "vc:label": "Reproducible Experiments"
+    },
+    {
+      "@id": "urn:visionflow:linked:resource-efficient-training",
+      "vc:label": "Resource-Efficient Training"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:darts-differentiable-nas",
+      "vc:label": "DARTS Differentiable NAS"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-neural-architecture-search",
+      "vc:label": "Evolutionary Neural Architecture Search"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:optuna-hpo-framework",
+      "vc:label": "Optuna HPO Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:ray-tune",
+      "vc:label": "Ray Tune"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow",
+      "vc:label": "TensorFlow"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:gazebo-simulator",
+      "vc:label": "Gazebo Simulator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lang-chain",
+      "vc:label": "LangChain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-assembly",
+      "vc:label": "WebAssembly"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:auto-ml:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Development Lifecycle]]",
+      "resolved": "urn:visionflow:linked:ai-development-lifecycle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithm Selection]]",
+      "resolved": "urn:visionflow:linked:algorithm-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AutoML Survey Knowledge-Based Systems 2021]]",
+      "resolved": "urn:visionflow:linked:auto-ml-survey-knowledge-based-systems-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Optimisation System]]",
+      "resolved": "urn:visionflow:linked:automated-optimisation-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bayesian Optimisation]]",
+      "resolved": "urn:visionflow:linked:bayesian-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Budget]]",
+      "resolved": "urn:visionflow:linked:computational-budget",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DARTS Differentiable NAS]]",
+      "resolved": "urn:visionflow:linked:darts-differentiable-nas",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DARTS ICLR 2019]]",
+      "resolved": "urn:visionflow:linked:darts-iclr-2019",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Democratised ML Development]]",
+      "resolved": "urn:visionflow:linked:democratised-ml-development",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Evaluation Metric]]",
+      "resolved": "urn:visionflow:linked:evaluation-metric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Evolutionary Neural Architecture Search]]",
+      "resolved": "urn:visionflow:linked:evolutionary-neural-architecture-search",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Feature Engineering Automation]]",
+      "resolved": "urn:visionflow:linked:feature-engineering-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Google Vertex AI AutoML]]",
+      "resolved": "urn:visionflow:linked:google-vertex-ai-auto-ml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[H2O AutoML Documentation]]",
+      "resolved": "urn:visionflow:linked:h2-o-auto-ml-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hyperparameter Optimisation]]",
+      "resolved": "urn:visionflow:linked:hyperparameter-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Meta-Learning]]",
+      "resolved": "urn:visionflow:linked:meta-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MLOps Platform]]",
+      "resolved": "urn:visionflow:linked:mlops-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ModelLayer]]",
+      "resolved": "urn:visionflow:linked:model-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NeurIPS 2015 Auto-Sklearn Paper]]",
+      "resolved": "urn:visionflow:linked:neur-ips-2015-auto-sklearn-paper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Architecture Search]]",
+      "resolved": "urn:visionflow:linked:neural-architecture-search",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optuna HPO Framework]]",
+      "resolved": "urn:visionflow:linked:optuna-hpo-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pipeline Optimisation]]",
+      "resolved": "urn:visionflow:linked:pipeline-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PyTorch]]",
+      "resolved": "urn:visionflow:linked:py-torch",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rapid Model Iteration]]",
+      "resolved": "urn:visionflow:linked:rapid-model-iteration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ray Tune]]",
+      "resolved": "urn:visionflow:linked:ray-tune",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reproducible Experiments]]",
+      "resolved": "urn:visionflow:linked:reproducible-experiments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Resource-Efficient Training]]",
+      "resolved": "urn:visionflow:linked:resource-efficient-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Search Space Definition]]",
+      "resolved": "urn:visionflow:linked:search-space-definition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow]]",
+      "resolved": "urn:visionflow:linked:tensor-flow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Training Dataset]]",
+      "resolved": "urn:visionflow:linked:training-dataset",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TrainingLayer]]",
+      "resolved": "urn:visionflow:linked:training-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gazebo Simulator]]",
+      "resolved": "urn:visionflow:owl:class:gazebo-simulator",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LangChain]]",
+      "resolved": "urn:visionflow:owl:class:lang-chain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Pipeline]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NGM Domain]]",
+      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenXR]]",
+      "resolved": "urn:visionflow:owl:class:open-xr",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Operating System]]",
+      "resolved": "urn:visionflow:owl:class:robot-operating-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics Domain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[WebAssembly]]",
+      "resolved": "urn:visionflow:owl:class:web-assembly",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems — encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyperparameter optimisation (HPO), and ensemble construction — enabling practitioners without deep ML expertise to produce competitive models whilst simultaneously accelerating expert workflows, with modern systems such as Google AutoML, Auto-Sklearn, and NAS-based tools (DARTS, EffNet) achieving state-of-the-art performance on standard benchmarks through efficient search strategies including Bayesian optimisation, evolutionary algorithms, and differentiable architecture search.

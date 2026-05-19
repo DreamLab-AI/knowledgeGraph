@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:f132279e458999de1a846bbf3645cc7420d1fa9a8c7b0c17e2dceda773f0910f",
+  "title": "Privacy Architecture",
+  "slug": "privacy-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-architecture",
+  "domain": "spatial-computing",
+  "definition": "A systematic design framework that embeds data protection principles into software systems from inception, incorporating privacy-by-design methodologies, access controls, anonymization techniques, and compliance mechanisms to safeguard personal information.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    }
+  ]
+}

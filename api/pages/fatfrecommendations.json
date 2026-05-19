@@ -1,0 +1,227 @@
+{
+  "id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a",
+  "title": "FATFRecommendations",
+  "slug": "fatfrecommendations",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fatfrecommendations",
+  "domain": "blockchain",
+  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)\u2014an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs) covering over 200 jurisdictions globally\u2014for combating money laundering, terrorist financing, and financing of proliferation of weapons of mass destruction, encompassing 40 Recommendations (consolidated from original 40 plus 9 Special Recommendations on terrorist financing through comprehensive 2012 revision) that apply to both money laundering and counter-terrorist financing with requirements for customer due diligence per Recommendation 10 (identifying and verifying customer identity using reliable independent source documents, identifying beneficial owners controlling 25% or greater ownership or exercising control, understanding nature and purpose of business relationship), record-keeping per Recommendation 11 (retaining transaction records and customer identification information for minimum 5 years following transaction completion or relationship termination), suspicious transaction r",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.91,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "bc-0456-virtual-asset-service-providers",
+      "label": "BC-0456-virtual-asset-service-providers"
+    },
+    {
+      "slug": "bc-0457-aml-kyc-compliance",
+      "label": "BC-0457-aml-kyc-compliance"
+    },
+    {
+      "slug": "bc-0482-eu-mica-regulation",
+      "label": "BC-0482-eu-mica-regulation"
+    },
+    {
+      "slug": "bc-0483-us-regulatory-framework",
+      "label": "BC-0483-us-regulatory-framework"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "ComplianceDomain"
+    },
+    {
+      "slug": "counter-terrorist-financing",
+      "label": "Counter-Terrorist Financing"
+    },
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
+    },
+    {
+      "slug": "cryptocurrency-exchange",
+      "label": "Cryptocurrency Exchange"
+    },
+    {
+      "slug": "cryptocurrency-wallets",
+      "label": "Cryptocurrency Wallets"
+    },
+    {
+      "slug": "dash",
+      "label": "Dash"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "eu-transfer-of-funds-regulation-june-2023",
+      "label": "EU Transfer of Funds Regulation June 2023"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fatf-40-recommendations-february-2012",
+      "label": "FATF 40 Recommendations February 2012"
+    },
+    {
+      "slug": "fatf-interpretive-note-to-recommendation-15-june-2019",
+      "label": "FATF Interpretive Note to Recommendation 15 June 2019"
+    },
+    {
+      "slug": "fatf-revised-guidance-on-risk-based-approach-to-virtual-assets-march-2021",
+      "label": "FATF Revised Guidance on Risk-Based Approach to Virtual Assets March 2021"
+    },
+    {
+      "slug": "fatf-updated-guidance-on-virtual-assets-october-2021",
+      "label": "FATF Updated Guidance on Virtual Assets October 2021"
+    },
+    {
+      "slug": "fin-cen-proposed-rulemaking-december-2020",
+      "label": "FinCEN Proposed Rulemaking December 2020"
+    },
+    {
+      "slug": "financial-intelligence-unit",
+      "label": "Financial Intelligence Unit"
+    },
+    {
+      "slug": "g7-summit-paris-july-1989",
+      "label": "G7 Summit Paris July 1989"
+    },
+    {
+      "slug": "ico",
+      "label": "ICO"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "mixing-services",
+      "label": "Mixing Services"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
+      "slug": "non-fungible-tokens",
+      "label": "Non-Fungible Tokens"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "sanctions-compliance",
+      "label": "Sanctions Compliance"
+    },
+    {
+      "slug": "self-hosted-wallets",
+      "label": "Self-Hosted Wallets"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "united-nations-security-council",
+      "label": "United Nations Security Council"
+    },
+    {
+      "slug": "us-bank-secrecy-act-31-usc-5311",
+      "label": "US Bank Secrecy Act 31 USC 5311"
+    },
+    {
+      "slug": "virtual-assets",
+      "label": "Virtual Assets"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    }
+  ],
+  "backlinks": []
+}

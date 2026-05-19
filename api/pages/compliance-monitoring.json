@@ -1,0 +1,784 @@
+{
+  "id": "urn:visionflow:page:774871a8e7720009079dc08e4b5bebb594034ed6770bcbd44c0d3c3b97988605",
+  "title": "Compliance Monitoring",
+  "slug": "compliance-monitoring",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compliance-monitoring",
+  "domain": "infrastructure",
+  "definition": "Compliance Monitoring is the continuous, automated oversight of systems, processes, people, and data flows to verify ongoing adherence to applicable regulatory requirements, internal policies, contractual obligations, and technical standards across the full operational surface area of an organisation. It encompasses real-time ingestion of control evidence, automated rule evaluation against coded policy logic, risk-scored alerting with prioritised analyst queues, structured case management and investigation workflows, regulatory submission pipelines, and immutable audit trail generation \u2014 transforming regulatory adherence from a periodic attestation exercise into a continuously maintained operational state. Distinguished from point-in-time auditing by its persistent cadence: evaluation cycles range from sub-second (real-time transaction screening, SIEM event correlation) to hourly (cloud configuration drift detection, access control validation) to daily (ROPA refresh, sanctions list rescreening), with continuous evidence accumulation rather than snapshot evidence capture.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:automated-compliance",
+      "label": "Automated Compliance"
+    },
+    {
+      "id": "urn:visionflow:linked:continuous-control-monitoring",
+      "label": "Continuous Control Monitoring"
+    },
+    {
+      "id": "urn:visionflow:linked:governance-risk-compliance",
+      "label": "Governance Risk Compliance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:alert-management",
+        "label": "Alert Management"
+      },
+      {
+        "id": "urn:visionflow:linked:case-management-system",
+        "label": "Case Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:evidence-repository",
+        "label": "Evidence Repository"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-reporting-module",
+        "label": "Regulatory Reporting Module"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-scoring-engine",
+        "label": "Risk Scoring Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:visionflow:linked:kyc",
+        "label": "KYC"
+      },
+      {
+        "id": "urn:visionflow:linked:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-27001-controls",
+        "label": "ISO 27001 Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:visionflow:linked:soc-2-compliance",
+        "label": "SOC 2 Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:continuous-assurance",
+        "label": "Continuous Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-as-code",
+        "label": "Policy-as-Code"
+      },
+      {
+        "id": "urn:visionflow:owl:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "alert-management",
+      "label": "Alert Management"
+    },
+    {
+      "slug": "amld6-directive-2024",
+      "label": "AMLD6 Directive 2024"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti Money Laundering"
+    },
+    {
+      "slug": "archer-grc",
+      "label": "Archer GRC"
+    },
+    {
+      "slug": "arthur-ai",
+      "label": "Arthur AI"
+    },
+    {
+      "slug": "automated-compliance",
+      "label": "Automated Compliance"
+    },
+    {
+      "slug": "basel-committee-on-banking-supervision",
+      "label": "Basel Committee on Banking Supervision"
+    },
+    {
+      "slug": "basel-committee-on-banking-supervision-principles-2023",
+      "label": "Basel Committee on Banking Supervision Principles 2023"
+    },
+    {
+      "slug": "bayesian-risk-models",
+      "label": "Bayesian Risk Models"
+    },
+    {
+      "slug": "big-id",
+      "label": "BigID"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "business-process-management",
+      "label": "Business Process Management"
+    },
+    {
+      "slug": "case-management-system",
+      "label": "Case Management System"
+    },
+    {
+      "slug": "checkbox-compliance",
+      "label": "Checkbox Compliance"
+    },
+    {
+      "slug": "collibra",
+      "label": "Collibra"
+    },
+    {
+      "slug": "comp-ai",
+      "label": "Comp AI"
+    },
+    {
+      "slug": "continuous-assurance",
+      "label": "Continuous Assurance"
+    },
+    {
+      "slug": "continuous-control-monitoring",
+      "label": "Continuous Control Monitoring"
+    },
+    {
+      "slug": "credo-ai",
+      "label": "Credo AI"
+    },
+    {
+      "slug": "cryptographic-hashing",
+      "label": "Cryptographic Hashing"
+    },
+    {
+      "slug": "digital-operational-resilience",
+      "label": "Digital Operational Resilience"
+    },
+    {
+      "slug": "dora-regulation-2022-2554",
+      "label": "DORA Regulation 2022/2554"
+    },
+    {
+      "slug": "drata",
+      "label": "Drata"
+    },
+    {
+      "slug": "eba",
+      "label": "EBA"
+    },
+    {
+      "slug": "eba-guidelines-on-machine-learning-in-aml-2024",
+      "label": "EBA Guidelines on Machine Learning in AML 2024"
+    },
+    {
+      "slug": "eu-ai-act-2024",
+      "label": "EU AI Act 2024"
+    },
+    {
+      "slug": "evidence-repository",
+      "label": "Evidence Repository"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fatf-guidance-on-virtual-assets-and-vasps-2023",
+      "label": "FATF Guidance on Virtual Assets and VASPs 2023"
+    },
+    {
+      "slug": "fatf-recommendations-2023",
+      "label": "FATF Recommendations 2023"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "fca-ai-lab-feedback-statement-2025",
+      "label": "FCA AI Lab Feedback Statement 2025"
+    },
+    {
+      "slug": "fca-consumer-duty-ps22-9",
+      "label": "FCA Consumer Duty PS22/9"
+    },
+    {
+      "slug": "featurespace",
+      "label": "Featurespace"
+    },
+    {
+      "slug": "feedzai",
+      "label": "Feedzai"
+    },
+    {
+      "slug": "fin-cen",
+      "label": "FinCEN"
+    },
+    {
+      "slug": "fin-cen-aml-program-rule-proposed-2024",
+      "label": "FinCEN AML Program Rule Proposed 2024"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "fiserv-aml-manager",
+      "label": "Fiserv AML Manager"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "future-market-insights-reg-tech-market-report-2024",
+      "label": "Future Market Insights RegTech Market Report 2024"
+    },
+    {
+      "slug": "galileo-ai",
+      "label": "Galileo AI"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-regulation-2016-679",
+      "label": "GDPR Regulation 2016/679"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "governance-risk-compliance",
+      "label": "Governance Risk Compliance"
+    },
+    {
+      "slug": "governatori-et-al-legal-rule-ml-w3-c-2016",
+      "label": "Governatori et al. LegalRuleML W3C 2016"
+    },
+    {
+      "slug": "graph-analytics",
+      "label": "Graph Analytics"
+    },
+    {
+      "slug": "graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "hyperproof",
+      "label": "Hyperproof"
+    },
+    {
+      "slug": "ibm-cost-of-a-data-breach-2024",
+      "label": "IBM Cost of a Data Breach 2024"
+    },
+    {
+      "slug": "identity-and-access-management",
+      "label": "Identity and Access Management"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "IntegrationLayer"
+    },
+    {
+      "slug": "iosco",
+      "label": "IOSCO"
+    },
+    {
+      "slug": "isaca-continuous-assurance-framework-2024",
+      "label": "ISACA Continuous Assurance Framework 2024"
+    },
+    {
+      "slug": "iso-27001-controls",
+      "label": "ISO 27001 Controls"
+    },
+    {
+      "slug": "iso-iec-27001",
+      "label": "ISO/IEC 27001"
+    },
+    {
+      "slug": "iso-iec-27001-2022",
+      "label": "ISO/IEC 27001:2022"
+    },
+    {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "kpmg",
+      "label": "KPMG"
+    },
+    {
+      "slug": "kyc",
+      "label": "KYC"
+    },
+    {
+      "slug": "lexis-nexis-true-cost-of-financial-crime-2024",
+      "label": "LexisNexis True Cost of Financial Crime 2024"
+    },
+    {
+      "slug": "logic-gate",
+      "label": "LogicGate"
+    },
+    {
+      "slug": "manual-review",
+      "label": "Manual Review"
+    },
+    {
+      "slug": "market-abuse-detection",
+      "label": "Market Abuse Detection"
+    },
+    {
+      "slug": "market-us-ai-in-reg-tech-market-report-2024",
+      "label": "Market.us AI in RegTech Market Report 2024"
+    },
+    {
+      "slug": "mas-veritas-framework-2022",
+      "label": "MAS Veritas Framework 2022"
+    },
+    {
+      "slug": "metric-stream",
+      "label": "MetricStream"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "mi-ca-regulation-2023-1114",
+      "label": "MiCA Regulation 2023/1114"
+    },
+    {
+      "slug": "mi-fid-ii-2014-65-eu",
+      "label": "MiFID II 2014/65/EU"
+    },
+    {
+      "slug": "napier-ai",
+      "label": "Napier AI"
+    },
+    {
+      "slug": "nice-actimize",
+      "label": "NICE Actimize"
+    },
+    {
+      "slug": "nist-csf-2-0-2024",
+      "label": "NIST CSF 2.0 2024"
+    },
+    {
+      "slug": "nist-cybersecurity-framework",
+      "label": "NIST Cybersecurity Framework"
+    },
+    {
+      "slug": "nist-sp-800-137",
+      "label": "NIST SP 800-137"
+    },
+    {
+      "slug": "one-trust",
+      "label": "OneTrust"
+    },
+    {
+      "slug": "operational-resilience",
+      "label": "Operational Resilience"
+    },
+    {
+      "slug": "oracle-financial-services-aml",
+      "label": "Oracle Financial Services AML"
+    },
+    {
+      "slug": "pareja-et-al-evolve-gcn-neur-ips-2020",
+      "label": "Pareja et al. EvolveGCN NeurIPS 2020"
+    },
+    {
+      "slug": "periodic-auditing",
+      "label": "Periodic Auditing"
+    },
+    {
+      "slug": "policy-as-code",
+      "label": "Policy-as-Code"
+    },
+    {
+      "slug": "quantexa",
+      "label": "Quantexa"
+    },
+    {
+      "slug": "reactive-incident-response",
+      "label": "Reactive Incident Response"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "regulatory-reporting-module",
+      "label": "Regulatory Reporting Module"
+    },
+    {
+      "slug": "resolver",
+      "label": "Resolver"
+    },
+    {
+      "slug": "risk-scoring-engine",
+      "label": "Risk Scoring Engine"
+    },
+    {
+      "slug": "sanctions-screening",
+      "label": "Sanctions Screening"
+    },
+    {
+      "slug": "sas-aml",
+      "label": "SAS AML"
+    },
+    {
+      "slug": "secureframe",
+      "label": "Secureframe"
+    },
+    {
+      "slug": "securiti-ai",
+      "label": "Securiti.ai"
+    },
+    {
+      "slug": "security-information-and-event-management",
+      "label": "Security Information and Event Management"
+    },
+    {
+      "slug": "security-operations",
+      "label": "Security Operations"
+    },
+    {
+      "slug": "service-now",
+      "label": "ServiceNow"
+    },
+    {
+      "slug": "service-now-irm",
+      "label": "ServiceNow IRM"
+    },
+    {
+      "slug": "silent-eight",
+      "label": "Silent Eight"
+    },
+    {
+      "slug": "soc-2-compliance",
+      "label": "SOC 2 Compliance"
+    },
+    {
+      "slug": "soc-2-trust-services-criteria-2017",
+      "label": "SOC 2 Trust Services Criteria 2017"
+    },
+    {
+      "slug": "stream-processing",
+      "label": "Stream Processing"
+    },
+    {
+      "slug": "supply-chain-compliance",
+      "label": "Supply Chain Compliance"
+    },
+    {
+      "slug": "symphony-ai",
+      "label": "SymphonyAI"
+    },
+    {
+      "slug": "temenos-financial-crime-mitigation",
+      "label": "Temenos Financial Crime Mitigation"
+    },
+    {
+      "slug": "transaction-monitoring",
+      "label": "Transaction Monitoring"
+    },
+    {
+      "slug": "ucl",
+      "label": "UCL"
+    },
+    {
+      "slug": "uk-ico-accountability-framework-2024",
+      "label": "UK ICO Accountability Framework 2024"
+    },
+    {
+      "slug": "uk-money-laundering-regulations-2017-as-amended",
+      "label": "UK Money Laundering Regulations 2017 as amended"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "university-of-sheffield",
+      "label": "University of Sheffield"
+    },
+    {
+      "slug": "van-der-aalst-pesic-schonenberg-declarative-process-compliance-2009",
+      "label": "van der Aalst Pesic Schonenberg Declarative Process Compliance 2009"
+    },
+    {
+      "slug": "vanta",
+      "label": "Vanta"
+    },
+    {
+      "slug": "weber-et-al-elliptic-dataset-2019",
+      "label": "Weber et al. Elliptic Dataset 2019"
+    },
+    {
+      "slug": "work-fusion",
+      "label": "WorkFusion"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:cfbb716f64d2eebcc7b10dd9e13c98e17ee3c4b82be22e23edfabb96b62d46b4",
+  "title": "Dynamic Scalable BFT",
+  "slug": "dynamic-scalable-bft",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dynamic-scalable-bft",
+  "domain": "blockchain",
+  "definition": "An optimized SBFT protocol using Distributed Key Generation (DKG) technology and BLS aggregate signature scheme for enhanced scalability with dynamic node management.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    }
+  ],
+  "backlinks": []
+}

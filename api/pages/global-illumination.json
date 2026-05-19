@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97",
+  "title": "Global Illumination",
+  "slug": "global-illumination",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:global-illumination",
+  "domain": "spatial-computing",
+  "definition": "Global Illumination is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "light-probe",
+      "label": "Light Probe"
+    },
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "physically-based-rendering",
+      "label": "Physically-Based Rendering"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

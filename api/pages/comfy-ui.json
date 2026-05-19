@@ -1,0 +1,832 @@
+{
+  "id": "urn:visionflow:page:5da590bc428435dc4adf8f8539aa900de8833a0a6b1e58df99e15694bb11510a",
+  "title": "ComfyUI",
+  "slug": "comfy-ui",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:comfy-ui",
+  "domain": "artificial-intelligence",
+  "definition": "**ComfyUI** is an open-source, node-based graphical workflow editor and inference runtime for diffusion-model image, video and audio generation, created by the pseudonymous developer **comfyanonymous** (Comfy Org) and first released in **January 2023** as a graph/canvas alternative to the form-based Stable Diffusion WebUI (AUTOMATIC1111), built on a **Python backend** exposing diffusion-pipeline primitives\u2014checkpoint loaders, CLIP text encoders, KSamplers, VAE encoders/decoders, latent operations, ControlNet conditioners, LoRA injectors, post-processors\u2014as discrete graph nodes that users connect on a JavaScript canvas frontend (originally LiteGraph.js, replaced 2024-2025 by the **Comfy Frontend** React+TypeScript rewrite) into directed acyclic workflows serialised as JSON, executed via a queue-based asynchronous runner that performs incremental re-execution by content-hashing each node's inputs so that only changed sub-graphs recompute (a fundamental efficiency advantage over linear pipelines), supporting every major open-weight diffusion family released 2022-2026 (Stable Diffusion 1.5/2.x/SDXL/SD3/SD3.5, Flux.1 dev/schnell/pro from Black Forest Labs, Stable Cascade, Stable Video D",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:diffusion-model-runtime",
+      "label": "Diffusion Model Runtime"
+    },
+    {
+      "id": "urn:visionflow:linked:generative-ai-tool",
+      "label": "Generative AI Tool"
+    },
+    {
+      "id": "urn:visionflow:linked:inference-orchestrator",
+      "label": "Inference Orchestrator"
+    },
+    {
+      "id": "urn:visionflow:linked:node-based-visual-programming-environment",
+      "label": "Node-Based Visual Programming Environment"
+    },
+    {
+      "id": "urn:visionflow:linked:open-source-software",
+      "label": "Open Source Software"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:checkpoint-loader",
+        "label": "Checkpoint Loader"
+      },
+      {
+        "id": "urn:visionflow:linked:clip-text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:comfy-backend",
+        "label": "Comfy Backend"
+      },
+      {
+        "id": "urn:visionflow:linked:comfy-frontend",
+        "label": "Comfy Frontend"
+      },
+      {
+        "id": "urn:visionflow:linked:custom-node-registry",
+        "label": "Custom Node Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:ksampler-node",
+        "label": "KSampler Node"
+      },
+      {
+        "id": "urn:visionflow:linked:queue-runner",
+        "label": "Queue Runner"
+      },
+      {
+        "id": "urn:visionflow:linked:vae-encoder-decoder",
+        "label": "VAE Encoder Decoder"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-json-schema",
+        "label": "Workflow JSON Schema"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cuda-toolkit",
+        "label": "CUDA Toolkit"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-model-weights",
+        "label": "Diffusion Model Weights"
+      },
+      {
+        "id": "urn:visionflow:linked:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:visionflow:linked:python-runtime",
+        "label": "Python Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:vae",
+        "label": "VAE"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:control-net-conditioning",
+        "label": "ControlNet Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:visionflow:linked:reproducible-generation",
+        "label": "Reproducible Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-sharing",
+        "label": "Workflow Sharing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:image-to-image-translation",
+        "label": "Image to Image Translation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-attention-conditioning",
+        "label": "Cross-Attention Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:directed-acyclic-graph-execution",
+        "label": "Directed Acyclic Graph Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:incremental-recomputation",
+        "label": "Incremental Recomputation"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion-sampling",
+        "label": "Latent Diffusion Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:lo-ra-injection",
+        "label": "LoRA Injection"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "black-forest-labs-2024-flux-technical-report",
+      "label": "Black Forest Labs 2024 Flux Technical Report"
+    },
+    {
+      "slug": "blattmann-et-al-2023-stable-video-diffusion",
+      "label": "Blattmann et al. 2023 Stable Video Diffusion"
+    },
+    {
+      "slug": "block-swap",
+      "label": "Block Swap"
+    },
+    {
+      "slug": "burnett-1999-visual-programming",
+      "label": "Burnett 1999 Visual Programming"
+    },
+    {
+      "slug": "checkpoint-loader",
+      "label": "Checkpoint Loader"
+    },
+    {
+      "slug": "civitai",
+      "label": "Civitai"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-text-encoder",
+      "label": "CLIP Text Encoder"
+    },
+    {
+      "slug": "comfy-backend",
+      "label": "Comfy Backend"
+    },
+    {
+      "slug": "comfy-frontend",
+      "label": "Comfy Frontend"
+    },
+    {
+      "slug": "comfy-org-announcement-2024",
+      "label": "Comfy Org Announcement 2024"
+    },
+    {
+      "slug": "comfy-org-registry",
+      "label": "Comfy Org Registry"
+    },
+    {
+      "slug": "comfy-ui-workflow-json-schema",
+      "label": "ComfyUI Workflow JSON Schema"
+    },
+    {
+      "slug": "comfy-work-flows",
+      "label": "ComfyWorkFlows"
+    },
+    {
+      "slug": "comfyanonymous-comfy-ui-repository",
+      "label": "comfyanonymous ComfyUI Repository"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "cpu-offload",
+      "label": "CPU Offload"
+    },
+    {
+      "slug": "cross-attention-conditioning",
+      "label": "Cross-Attention Conditioning"
+    },
+    {
+      "slug": "cubiq-comfy-ui-ipadapter-plus",
+      "label": "cubiq ComfyUI IPAdapter plus"
+    },
+    {
+      "slug": "cuda-toolkit",
+      "label": "CUDA Toolkit"
+    },
+    {
+      "slug": "custom-node-registry",
+      "label": "Custom Node Registry"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "dao-et-al-2022-flash-attention",
+      "label": "Dao et al. 2022 Flash Attention"
+    },
+    {
+      "slug": "denoising-diffusion-probabilistic-model",
+      "label": "Denoising Diffusion Probabilistic Model"
+    },
+    {
+      "slug": "diffusion-model-runtime",
+      "label": "Diffusion Model Runtime"
+    },
+    {
+      "slug": "diffusion-model-weights",
+      "label": "Diffusion Model Weights"
+    },
+    {
+      "slug": "directed-acyclic-graph-execution",
+      "label": "Directed Acyclic Graph Execution"
+    },
+    {
+      "slug": "esser-et-al-2024-stable-diffusion-3-mmdi-t",
+      "label": "Esser et al. 2024 Stable Diffusion 3 MMDiT"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "forge-web-ui",
+      "label": "Forge WebUI"
+    },
+    {
+      "slug": "fp8-quantisation",
+      "label": "FP8 Quantisation"
+    },
+    {
+      "slug": "generative-ai-tool",
+      "label": "Generative AI Tool"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "genmo-2024-mochi-1",
+      "label": "Genmo 2024 Mochi 1"
+    },
+    {
+      "slug": "gguf-quantisation",
+      "label": "GGUF Quantisation"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "green-and-petre-1996-cognitive-dimensions-vpl",
+      "label": "Green & Petre 1996 Cognitive Dimensions VPL"
+    },
+    {
+      "slug": "guo-et-al-2024-animate-diff",
+      "label": "Guo et al. 2024 AnimateDiff"
+    },
+    {
+      "slug": "ho-et-al-2020-ddpm",
+      "label": "Ho et al. 2020 DDPM"
+    },
+    {
+      "slug": "hu-et-al-2022-lo-ra",
+      "label": "Hu et al. 2022 LoRA"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "incremental-recomputation",
+      "label": "Incremental Recomputation"
+    },
+    {
+      "slug": "inference-orchestrator",
+      "label": "Inference Orchestrator"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "Invoke AI"
+    },
+    {
+      "slug": "karras-et-al-2022-elucidating-diffusion-design-space-edm",
+      "label": "Karras et al. 2022 Elucidating Diffusion Design Space EDM"
+    },
+    {
+      "slug": "kong-et-al-2025-hunyuan-video",
+      "label": "Kong et al. 2025 HunyuanVideo"
+    },
+    {
+      "slug": "ksampler-node",
+      "label": "KSampler Node"
+    },
+    {
+      "slug": "latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "slug": "latent-diffusion-sampling",
+      "label": "Latent Diffusion Sampling"
+    },
+    {
+      "slug": "lipman-et-al-2023-flow-matching",
+      "label": "Lipman et al. 2023 Flow Matching"
+    },
+    {
+      "slug": "lo-ra-injection",
+      "label": "LoRA Injection"
+    },
+    {
+      "slug": "ltdrdata-comfy-ui-manager",
+      "label": "ltdrdata ComfyUI-Manager"
+    },
+    {
+      "slug": "ltx-video",
+      "label": "LTX-Video"
+    },
+    {
+      "slug": "lu-et-al-2022-dpm-solver",
+      "label": "Lu et al. 2022 DPM-Solver++"
+    },
+    {
+      "slug": "luo-et-al-2023-latent-consistency-models",
+      "label": "Luo et al. 2023 Latent Consistency Models"
+    },
+    {
+      "slug": "mochi-1",
+      "label": "Mochi 1"
+    },
+    {
+      "slug": "node-based-visual-programming-environment",
+      "label": "Node-Based Visual Programming Environment"
+    },
+    {
+      "slug": "open-model-initiative",
+      "label": "Open Model Initiative"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "outpainting",
+      "label": "Outpainting"
+    },
+    {
+      "slug": "peebles-and-xie-2023-di-t",
+      "label": "Peebles & Xie 2023 DiT"
+    },
+    {
+      "slug": "photoshop",
+      "label": "Photoshop"
+    },
+    {
+      "slug": "podell-et-al-2023-sdxl",
+      "label": "Podell et al. 2023 SDXL"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "python-runtime",
+      "label": "Python Runtime"
+    },
+    {
+      "slug": "queue-runner",
+      "label": "Queue Runner"
+    },
+    {
+      "slug": "reproducible-generation",
+      "label": "Reproducible Generation"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-stable-diffusion",
+      "label": "Rombach et al. 2022 Latent Diffusion Stable Diffusion"
+    },
+    {
+      "slug": "sage-attention",
+      "label": "Sage Attention"
+    },
+    {
+      "slug": "sdxl",
+      "label": "SDXL"
+    },
+    {
+      "slug": "si-et-al-2024-free-u",
+      "label": "Si et al. 2024 FreeU"
+    },
+    {
+      "slug": "sohl-dickstein-et-al-2015-deep-unsupervised-learning-diffusion",
+      "label": "Sohl-Dickstein et al. 2015 Deep Unsupervised Learning Diffusion"
+    },
+    {
+      "slug": "song-et-al-2021-score-sde",
+      "label": "Song et al. 2021 Score SDE"
+    },
+    {
+      "slug": "stable-diffusion-3",
+      "label": "Stable Diffusion 3"
+    },
+    {
+      "slug": "stable-diffusion-web-ui",
+      "label": "Stable Diffusion WebUI"
+    },
+    {
+      "slug": "stable-video-diffusion",
+      "label": "Stable Video Diffusion"
+    },
+    {
+      "slug": "swarm-ui",
+      "label": "SwarmUI"
+    },
+    {
+      "slug": "text-encoder",
+      "label": "Text Encoder"
+    },
+    {
+      "slug": "tooling-and-development-domain",
+      "label": "ToolingAndDevelopmentDomain"
+    },
+    {
+      "slug": "torch-sdpa",
+      "label": "Torch SDPA"
+    },
+    {
+      "slug": "touch-designer",
+      "label": "TouchDesigner"
+    },
+    {
+      "slug": "user-interface-layer",
+      "label": "UserInterfaceLayer"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "vae-encoder-decoder",
+      "label": "VAE Encoder Decoder"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "visual-programming-domain",
+      "label": "VisualProgrammingDomain"
+    },
+    {
+      "slug": "wan-2-1",
+      "label": "Wan 2.1"
+    },
+    {
+      "slug": "wang-et-al-2024-instant-id",
+      "label": "Wang et al. 2024 InstantID"
+    },
+    {
+      "slug": "wang-et-al-2025-wan-2-1",
+      "label": "Wang et al. 2025 Wan 2.1"
+    },
+    {
+      "slug": "workflow-json-schema",
+      "label": "Workflow JSON Schema"
+    },
+    {
+      "slug": "workflow-sharing",
+      "label": "Workflow Sharing"
+    },
+    {
+      "slug": "xformers",
+      "label": "xformers"
+    },
+    {
+      "slug": "ye-et-al-2023-ipadapter",
+      "label": "Ye et al. 2023 IPAdapter"
+    },
+    {
+      "slug": "zhang-et-al-2023-control-net",
+      "label": "Zhang et al. 2023 ControlNet"
+    },
+    {
+      "slug": "zhang-et-al-2025-sage-attention",
+      "label": "Zhang et al. 2025 Sage Attention"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux 1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "HunyuanVideo"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-to-image-translation",
+      "label": "Image to Image Translation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "krita",
+      "label": "Krita"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "player-two",
+      "label": "Player Two"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "python-and-py-torch",
+      "label": "Python and PyTorch"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "ollama",
+      "label": "ollama"
+    },
+    {
+      "slug": "relighting",
+      "label": "relighting"
+    }
+  ]
+}

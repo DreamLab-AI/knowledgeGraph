@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:561ec29e94668bbb770dc204f0a0e3c32a35d7edcff8e51aa1f8a083f4a18028",
+  "title": "Virtual Wedding",
+  "slug": "virtual-wedding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-wedding",
+  "domain": "spatial-computing",
+  "definition": "A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for official recognition.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-event",
+      "label": "Virtual Event"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-event",
+      "label": "Virtual Event"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    }
+  ]
+}

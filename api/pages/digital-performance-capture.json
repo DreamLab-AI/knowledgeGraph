@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:603f13bcfe2894c33baae9c90147408d35670585571a75066e8a1e2abb197931",
+  "title": "Digital Performance Capture",
+  "slug": "digital-performance-capture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-performance-capture",
+  "domain": "spatial-computing",
+  "definition": "Integrated capture of body, facial, and voice data for real-time animation of digital characters in virtual environments. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:creative-media-domain",
+      "label": "Creative Media Domain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:facial-capture-system",
+        "label": "Facial Capture System"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-capture-system",
+        "label": "Motion Capture System"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-solver",
+        "label": "Real-Time Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-recording-system",
+        "label": "Voice Recording System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audio-recording-equipment",
+        "label": "Audio Recording Equipment"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-sensors",
+        "label": "Optical Sensors"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronization-system",
+        "label": "Synchronization System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:marker-based-tracking",
+        "label": "Marker-Based Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:live-performance",
+        "label": "Live Performance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-actor-creation",
+        "label": "Digital Actor Creation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-character-animation",
+        "label": "Real-Time Character Animation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audio-recording-equipment",
+      "label": "Audio Recording Equipment"
+    },
+    {
+      "slug": "facial-capture-system",
+      "label": "Facial Capture System"
+    },
+    {
+      "slug": "live-performance",
+      "label": "Live Performance"
+    },
+    {
+      "slug": "motion-capture-system",
+      "label": "Motion Capture System"
+    },
+    {
+      "slug": "optical-sensors",
+      "label": "Optical Sensors"
+    },
+    {
+      "slug": "performance-animation",
+      "label": "Performance Animation"
+    },
+    {
+      "slug": "real-time-solver",
+      "label": "Real-Time Solver"
+    },
+    {
+      "slug": "reality-capture-workflow",
+      "label": "Reality Capture Workflow"
+    },
+    {
+      "slug": "skeletal-animation",
+      "label": "Skeletal Animation"
+    },
+    {
+      "slug": "smpte-st-2119",
+      "label": "SMPTE ST 2119"
+    },
+    {
+      "slug": "synchronization-system",
+      "label": "Synchronization System"
+    },
+    {
+      "slug": "voice-recording-system",
+      "label": "Voice Recording System"
+    },
+    {
+      "slug": "character-rigging",
+      "label": "Character Rigging"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "digital-actor-creation",
+      "label": "Digital Actor Creation"
+    },
+    {
+      "slug": "marker-based-tracking",
+      "label": "Marker-Based Tracking"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "real-time-character-animation",
+      "label": "Real-Time Character Animation"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-reality-capture-creative",
+      "label": "ETSI_Domain_Reality_Capture___Creative"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

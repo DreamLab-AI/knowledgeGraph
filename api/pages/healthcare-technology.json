@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:a01ec4edb528a6bcd5ef5bc53f0aded6fc3fdb86b0b093c50df5701563a148dd",
+  "title": "Healthcare Technology",
+  "slug": "healthcare-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:healthcare-technology",
+  "domain": "spatial-computing",
+  "definition": "Healthcare Technology is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "healthcare-application-classification",
+      "label": "Healthcare Application Classification"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:bb4de0ca4b74e1844b6f59b74d06050bad7b395128358614f305b4a42ff6780e",
+  "title": "Explainability (OECD)",
+  "slug": "explainability-oecd",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:explainability-oecd",
+  "domain": "artificial-intelligence",
+  "definition": "People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

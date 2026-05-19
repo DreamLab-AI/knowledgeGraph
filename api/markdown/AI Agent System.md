@@ -1,21 +1,2029 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AIAgentSystem
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-agent-system
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-agent-system
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Agent System
-content-hash:: sha256-12-5916d15f1fe9
-legacy-term-id:: AI-0600
-status:: complete
-maturity:: mature
-quality-score:: 0.92
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-05T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIAgentSystem
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-agent-system
 public:: true
+
+# AI Agent System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e",
+  "@type": "Page",
+  "vc:slug": "ai-agent-system",
+  "title": "AI Agent System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:a-swe",
+      "vc:label": "A-SWE"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-executor",
+      "vc:label": "Action Executor"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-space",
+      "vc:label": "Action Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-behavior",
+      "vc:label": "Adaptive Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-behavior",
+      "vc:label": "Adaptive Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:address-clustering",
+      "vc:label": "Address Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-autonomy",
+      "vc:label": "Agent Autonomy"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-system",
+      "vc:label": "Agentic System"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-techniques",
+      "vc:label": "AI Techniques"
+    },
+    {
+      "@id": "urn:visionflow:linked:alexa",
+      "vc:label": "Alexa"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-trading",
+      "vc:label": "Algorithmic Trading"
+    },
+    {
+      "@id": "urn:visionflow:linked:alpha-go",
+      "vc:label": "AlphaGo"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic-computer-use",
+      "vc:label": "Anthropic Computer Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic-computer-use-documentation",
+      "vc:label": "Anthropic Computer Use Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-access",
+      "vc:label": "API Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:arbitrage",
+      "vc:label": "Arbitrage"
+    },
+    {
+      "@id": "urn:visionflow:linked:authentication-system",
+      "vc:label": "Authentication System"
+    },
+    {
+      "@id": "urn:visionflow:linked:auto-gpt",
+      "vc:label": "AutoGPT"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-software-engineering",
+      "vc:label": "Automated Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-behavior",
+      "vc:label": "Autonomous Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-drone",
+      "vc:label": "Autonomous Drone"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-economic-agent",
+      "vc:label": "Autonomous Economic Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-operation",
+      "vc:label": "Autonomous Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:baby-agi",
+      "vc:label": "BabyAGI"
+    },
+    {
+      "@id": "urn:visionflow:linked:beta-capability",
+      "vc:label": "Beta Capability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-node",
+      "vc:label": "Bitcoin Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-trading-bot",
+      "vc:label": "Bitcoin Trading Bot"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-trading-bot",
+      "vc:label": "Bitcoin Trading Bot"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-agent",
+      "vc:label": "Blockchain Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-data-analysis",
+      "vc:label": "Blockchain Data Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-integration",
+      "vc:label": "Blockchain Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-automation",
+      "vc:label": "Browser Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-workflow",
+      "vc:label": "Browser Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:bug-detection",
+      "vc:label": "Bug Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:business-workflow",
+      "vc:label": "Business Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:channel-management-agent",
+      "vc:label": "Channel Management Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:chess-engine",
+      "vc:label": "Chess Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:claude-3-5-sonnet",
+      "vc:label": "Claude 3.5 Sonnet"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-review",
+      "vc:label": "Code Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfort-optimization",
+      "vc:label": "Comfort Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-agent",
+      "vc:label": "Conversational Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-agent",
+      "vc:label": "Conversational Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-support",
+      "vc:label": "Customer Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:dao-agent",
+      "vc:label": "DAO Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-collection",
+      "vc:label": "Data Collection"
+    },
+    {
+      "@id": "urn:visionflow:linked:database-interaction",
+      "vc:label": "Database Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi-agent",
+      "vc:label": "DeFi Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-finance",
+      "vc:label": "Decentralised Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-research",
+      "vc:label": "Deep Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:developer-tool",
+      "vc:label": "Developer Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-task-automation",
+      "vc:label": "Digital Task Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-management",
+      "vc:label": "Energy Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment",
+      "vc:label": "Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment-model",
+      "vc:label": "Environment Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-change",
+      "vc:label": "Environmental Change"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-profile",
+      "vc:label": "Error Profile"
+    },
+    {
+      "@id": "urn:visionflow:linked:experiment-design",
+      "vc:label": "Experiment Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-data",
+      "vc:label": "External Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:file-system-access",
+      "vc:label": "File System Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-market",
+      "vc:label": "Financial Market"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai",
+      "vc:label": "Game AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai",
+      "vc:label": "Game AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-achievement",
+      "vc:label": "Goal Achievement"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-planner",
+      "vc:label": "Goal Planner"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-assistant",
+      "vc:label": "Google Assistant"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpt-4-5",
+      "vc:label": "GPT-4.5"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-rate",
+      "vc:label": "Hash Rate"
+    },
+    {
+      "@id": "urn:visionflow:linked:high-frequency-trading",
+      "vc:label": "High-Frequency Trading"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-intervention",
+      "vc:label": "Human Intervention"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-p7009",
+      "vc:label": "IEEE P7009"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-system",
+      "vc:label": "Intelligent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:interface-manipulation",
+      "vc:label": "Interface Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:intrusion-detection",
+      "vc:label": "Intrusion Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-network-agent",
+      "vc:label": "Lightning Network Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-network-node",
+      "vc:label": "Lightning Network Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:literature-review",
+      "vc:label": "Literature Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:malware-analysis",
+      "vc:label": "Malware Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-condition",
+      "vc:label": "Market Condition"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-making",
+      "vc:label": "Market Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-science",
+      "vc:label": "Material Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-system",
+      "vc:label": "Memory System"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems-wooldridge",
+      "vc:label": "Multi-Agent Systems (Wooldridge)"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-management-agent",
+      "vc:label": "Node Management Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:o3-mini",
+      "vc:label": "o3-mini"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-ai-agent-research",
+      "vc:label": "OpenAI Agent Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-ai-agents-sdk",
+      "vc:label": "OpenAI Agents SDK"
+    },
+    {
+      "@id": "urn:visionflow:linked:oracle-agent",
+      "vc:label": "Oracle Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:paper-summarization",
+      "vc:label": "Paper Summarization"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-channel",
+      "vc:label": "Payment Channel"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-channel-management",
+      "vc:label": "Payment Channel Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:perception-action-cycle",
+      "vc:label": "Perception-Action Cycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalized-recommendation",
+      "vc:label": "Personalized Recommendation"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-algorithm",
+      "vc:label": "Planning Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:poker-bot",
+      "vc:label": "Poker Bot"
+    },
+    {
+      "@id": "urn:visionflow:linked:pool-selection",
+      "vc:label": "Pool Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:protein-folding",
+      "vc:label": "Protein Folding"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol-interaction",
+      "vc:label": "Protocol Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning-model",
+      "vc:label": "Reasoning Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-an-introduction-sutton-and-barto",
+      "vc:label": "Reinforcement Learning: An Introduction (Sutton & Barto)"
+    },
+    {
+      "@id": "urn:visionflow:linked:research-agent",
+      "vc:label": "Research Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:research-preview",
+      "vc:label": "Research Preview"
+    },
+    {
+      "@id": "urn:visionflow:linked:resource-budget",
+      "vc:label": "Resource Budget"
+    },
+    {
+      "@id": "urn:visionflow:linked:routing-strategy",
+      "vc:label": "Routing Strategy"
+    },
+    {
+      "@id": "urn:visionflow:linked:russell-and-norvig-ai-a-modern-approach",
+      "vc:label": "Russell & Norvig AI: A Modern Approach"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-guardrail",
+      "vc:label": "Safety Guardrail"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-system",
+      "vc:label": "Security System"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-threat",
+      "vc:label": "Security Threat"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:linked:siri",
+      "vc:label": "Siri"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-agent",
+      "vc:label": "Smart Contract Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-auditing",
+      "vc:label": "Smart Contract Auditing"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-deployment",
+      "vc:label": "Smart Contract Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-agent",
+      "vc:label": "Software Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:star-craft-ai",
+      "vc:label": "StarCraft AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-framework",
+      "vc:label": "Swarm Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:test-generation",
+      "vc:label": "Test Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use-system",
+      "vc:label": "Tool Use System"
+    },
+    {
+      "@id": "urn:visionflow:linked:trading-bot",
+      "vc:label": "Trading Bot"
+    },
+    {
+      "@id": "urn:visionflow:linked:trading-system",
+      "vc:label": "Trading System"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-analysis",
+      "vc:label": "Transaction Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-assistant",
+      "vc:label": "Virtual Assistant"
+    },
+    {
+      "@id": "urn:visionflow:linked:yield-farming",
+      "vc:label": "Yield Farming"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:automated-market-maker",
+      "vc:label": "Automated Market Maker"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-vehicle",
+      "vc:label": "Autonomous Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-oracle",
+      "vc:label": "Blockchain Oracle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:claude",
+      "vc:label": "Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:communication-protocol",
+      "vc:label": "Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dao-governance",
+      "vc:label": "DAO Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-governance",
+      "vc:label": "Decentralized Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:full-node",
+      "vc:label": "Full Node"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-module",
+      "vc:label": "Learning Module"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-pool",
+      "vc:label": "Liquidity Pool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-provision",
+      "vc:label": "Liquidity Provision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mempool",
+      "vc:label": "Mempool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reward-function",
+      "vc:label": "Reward Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotic-system",
+      "vc:label": "Robotic System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-driving-car",
+      "vc:label": "Self Driving Car"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5916d15f1fe9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-05T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIAgentSystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0600"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Agent System"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.92"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-agent-system"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-agent-system"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-agent-system",
+  "@type": "OntologyClass",
+  "label": "AI Agent System",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.",
+  "vc:qualityScore": {
+    "@value": "0.92",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:action-executor",
+      "vc:label": "Action Executor"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-planner",
+      "vc:label": "Goal Planner"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-system",
+      "vc:label": "Memory System"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use-system",
+      "vc:label": "Tool Use System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:communication-protocol",
+      "vc:label": "Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-module",
+      "vc:label": "Learning Module"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:action-space",
+      "vc:label": "Action Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-access",
+      "vc:label": "API Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:authentication-system",
+      "vc:label": "Authentication System"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment-model",
+      "vc:label": "Environment Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:resource-budget",
+      "vc:label": "Resource Budget"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reward-function",
+      "vc:label": "Reward Function"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-behavior",
+      "vc:label": "Adaptive Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-operation",
+      "vc:label": "Autonomous Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-automation",
+      "vc:label": "Browser Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:database-interaction",
+      "vc:label": "Database Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:file-system-access",
+      "vc:label": "File System Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-achievement",
+      "vc:label": "Goal Achievement"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:code-generation",
+      "vc:label": "Code Generation"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-behavior",
+      "vc:label": "Autonomous Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-algorithm",
+      "vc:label": "Planning Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:algorithmic-trading",
+      "vc:label": "Algorithmic Trading"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-economic-agent",
+      "vc:label": "Autonomous Economic Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-trading-bot",
+      "vc:label": "Bitcoin Trading Bot"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi-agent",
+      "vc:label": "DeFi Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-network-node",
+      "vc:label": "Lightning Network Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-channel-management",
+      "vc:label": "Payment Channel Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol-interaction",
+      "vc:label": "Protocol Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-agent-system:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[A-SWE]]",
+      "resolved": "urn:visionflow:linked:a-swe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Action Executor]]",
+      "resolved": "urn:visionflow:linked:action-executor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Action Space]]",
+      "resolved": "urn:visionflow:linked:action-space",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adaptive Behavior]]",
+      "resolved": "urn:visionflow:linked:adaptive-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adaptive Behavior|behaviour]]",
+      "resolved": "urn:visionflow:linked:adaptive-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Address Clustering]]",
+      "resolved": "urn:visionflow:linked:address-clustering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Autonomy]]",
+      "resolved": "urn:visionflow:linked:agent-autonomy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agentic System|agentic systems]]",
+      "resolved": "urn:visionflow:linked:agentic-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Model|AI models]]",
+      "resolved": "urn:visionflow:linked:ai-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Techniques]]",
+      "resolved": "urn:visionflow:linked:ai-techniques",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alexa]]",
+      "resolved": "urn:visionflow:linked:alexa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithmic Trading]]",
+      "resolved": "urn:visionflow:linked:algorithmic-trading",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AlphaGo]]",
+      "resolved": "urn:visionflow:linked:alpha-go",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic]]",
+      "resolved": "urn:visionflow:linked:anthropic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic Computer Use]]",
+      "resolved": "urn:visionflow:linked:anthropic-computer-use",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic Computer Use Documentation]]",
+      "resolved": "urn:visionflow:linked:anthropic-computer-use-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[API Access]]",
+      "resolved": "urn:visionflow:linked:api-access",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[API Integration]]",
+      "resolved": "urn:visionflow:linked:api-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[API Integration|API interactions]]",
+      "resolved": "urn:visionflow:linked:api-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Arbitrage]]",
+      "resolved": "urn:visionflow:linked:arbitrage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Authentication System]]",
+      "resolved": "urn:visionflow:linked:authentication-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AutoGPT]]",
+      "resolved": "urn:visionflow:linked:auto-gpt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Software Engineering]]",
+      "resolved": "urn:visionflow:linked:automated-software-engineering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Behavior]]",
+      "resolved": "urn:visionflow:linked:autonomous-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Drone|drones]]",
+      "resolved": "urn:visionflow:linked:autonomous-drone",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Economic Agent|autonomous economic agents]]",
+      "resolved": "urn:visionflow:linked:autonomous-economic-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Operation]]",
+      "resolved": "urn:visionflow:linked:autonomous-operation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BabyAGI]]",
+      "resolved": "urn:visionflow:linked:baby-agi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Beta Capability]]",
+      "resolved": "urn:visionflow:linked:beta-capability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Node]]",
+      "resolved": "urn:visionflow:linked:bitcoin-node",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Trading Bot]]",
+      "resolved": "urn:visionflow:linked:bitcoin-trading-bot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Trading Bot|Bitcoin trading]]",
+      "resolved": "urn:visionflow:linked:bitcoin-trading-bot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Agent|blockchain agents]]",
+      "resolved": "urn:visionflow:linked:blockchain-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Data Analysis]]",
+      "resolved": "urn:visionflow:linked:blockchain-data-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Integration]]",
+      "resolved": "urn:visionflow:linked:blockchain-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Browser Automation]]",
+      "resolved": "urn:visionflow:linked:browser-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Browser Workflow|browser workflows]]",
+      "resolved": "urn:visionflow:linked:browser-workflow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bug Detection]]",
+      "resolved": "urn:visionflow:linked:bug-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Business Workflow|business workflows]]",
+      "resolved": "urn:visionflow:linked:business-workflow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Channel Management Agent]]",
+      "resolved": "urn:visionflow:linked:channel-management-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chess Engine|Chess engines]]",
+      "resolved": "urn:visionflow:linked:chess-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Claude 3.5 Sonnet]]",
+      "resolved": "urn:visionflow:linked:claude-3-5-sonnet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Code Execution]]",
+      "resolved": "urn:visionflow:linked:code-execution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Code Review]]",
+      "resolved": "urn:visionflow:linked:code-review",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Comfort Optimization|comfort]]",
+      "resolved": "urn:visionflow:linked:comfort-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conversational Agent|Conversational agents]]",
+      "resolved": "urn:visionflow:linked:conversational-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conversational Agent|conversational agents]]",
+      "resolved": "urn:visionflow:linked:conversational-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Customer Support]]",
+      "resolved": "urn:visionflow:linked:customer-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DAO Agent]]",
+      "resolved": "urn:visionflow:linked:dao-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Collection]]",
+      "resolved": "urn:visionflow:linked:data-collection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Database Interaction]]",
+      "resolved": "urn:visionflow:linked:database-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi Agent]]",
+      "resolved": "urn:visionflow:linked:de-fi-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Finance]]",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Engine]]",
+      "resolved": "urn:visionflow:linked:decision-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Making]]",
+      "resolved": "urn:visionflow:linked:decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deep Research]]",
+      "resolved": "urn:visionflow:linked:deep-research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Developer Tool]]",
+      "resolved": "urn:visionflow:linked:developer-tool",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Task Automation|digital tasks]]",
+      "resolved": "urn:visionflow:linked:digital-task-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Drug Discovery]]",
+      "resolved": "urn:visionflow:linked:drug-discovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Energy Management|energy]]",
+      "resolved": "urn:visionflow:linked:energy-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environment]]",
+      "resolved": "urn:visionflow:linked:environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environment Model]]",
+      "resolved": "urn:visionflow:linked:environment-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environmental Change|environmental changes]]",
+      "resolved": "urn:visionflow:linked:environmental-change",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Error Profile|error profiles]]",
+      "resolved": "urn:visionflow:linked:error-profile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Experiment Design]]",
+      "resolved": "urn:visionflow:linked:experiment-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[External Data]]",
+      "resolved": "urn:visionflow:linked:external-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[File System Access]]",
+      "resolved": "urn:visionflow:linked:file-system-access",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Market|financial markets]]",
+      "resolved": "urn:visionflow:linked:financial-market",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Game AI]]",
+      "resolved": "urn:visionflow:linked:game-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Game AI|game-playing AI]]",
+      "resolved": "urn:visionflow:linked:game-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goal Achievement]]",
+      "resolved": "urn:visionflow:linked:goal-achievement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goal Planner]]",
+      "resolved": "urn:visionflow:linked:goal-planner",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Google Assistant]]",
+      "resolved": "urn:visionflow:linked:google-assistant",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPT-4.5]]",
+      "resolved": "urn:visionflow:linked:gpt-4-5",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash Rate]]",
+      "resolved": "urn:visionflow:linked:hash-rate",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[High-Frequency Trading]]",
+      "resolved": "urn:visionflow:linked:high-frequency-trading",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human Intervention]]",
+      "resolved": "urn:visionflow:linked:human-intervention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE P7009]]",
+      "resolved": "urn:visionflow:linked:ieee-p7009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intelligent System|intelligent systems]]",
+      "resolved": "urn:visionflow:linked:intelligent-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interface Manipulation]]",
+      "resolved": "urn:visionflow:linked:interface-manipulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intrusion Detection]]",
+      "resolved": "urn:visionflow:linked:intrusion-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Base]]",
+      "resolved": "urn:visionflow:linked:knowledge-base",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LangGraph]]",
+      "resolved": "urn:visionflow:linked:lang-graph",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Network Agent]]",
+      "resolved": "urn:visionflow:linked:lightning-network-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Network Node]]",
+      "resolved": "urn:visionflow:linked:lightning-network-node",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Literature Review]]",
+      "resolved": "urn:visionflow:linked:literature-review",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Malware Analysis]]",
+      "resolved": "urn:visionflow:linked:malware-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Condition|market conditions]]",
+      "resolved": "urn:visionflow:linked:market-condition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Making]]",
+      "resolved": "urn:visionflow:linked:market-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Material Science]]",
+      "resolved": "urn:visionflow:linked:material-science",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Memory System]]",
+      "resolved": "urn:visionflow:linked:memory-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Meta-Learning]]",
+      "resolved": "urn:visionflow:linked:meta-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent Coordination]]",
+      "resolved": "urn:visionflow:linked:multi-agent-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent System]]",
+      "resolved": "urn:visionflow:linked:multi-agent-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent System|multi-agent coordination]]",
+      "resolved": "urn:visionflow:linked:multi-agent-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent Systems (Wooldridge)]]",
+      "resolved": "urn:visionflow:linked:multi-agent-systems-wooldridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Node Management Agent]]",
+      "resolved": "urn:visionflow:linked:node-management-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[o3-mini]]",
+      "resolved": "urn:visionflow:linked:o3-mini",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenAI Agent Research]]",
+      "resolved": "urn:visionflow:linked:open-ai-agent-research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenAI Agents SDK]]",
+      "resolved": "urn:visionflow:linked:open-ai-agents-sdk",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Oracle Agent]]",
+      "resolved": "urn:visionflow:linked:oracle-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paper Summarization]]",
+      "resolved": "urn:visionflow:linked:paper-summarization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Channel|payment channels]]",
+      "resolved": "urn:visionflow:linked:payment-channel",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Channel Management]]",
+      "resolved": "urn:visionflow:linked:payment-channel-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Perception-Action Cycle|perception-action cycles]]",
+      "resolved": "urn:visionflow:linked:perception-action-cycle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Personalized Recommendation|Personalized content curation agents]]",
+      "resolved": "urn:visionflow:linked:personalized-recommendation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Planning Algorithm]]",
+      "resolved": "urn:visionflow:linked:planning-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Poker Bot|Poker bots]]",
+      "resolved": "urn:visionflow:linked:poker-bot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pool Selection]]",
+      "resolved": "urn:visionflow:linked:pool-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Protein Folding]]",
+      "resolved": "urn:visionflow:linked:protein-folding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Protocol Interaction]]",
+      "resolved": "urn:visionflow:linked:protocol-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reasoning Model|reasoning models]]",
+      "resolved": "urn:visionflow:linked:reasoning-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning: An Introduction (Sutton & Barto)]]",
+      "resolved": "urn:visionflow:linked:reinforcement-learning-an-introduction-sutton-and-barto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Research Agent]]",
+      "resolved": "urn:visionflow:linked:research-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Research Preview]]",
+      "resolved": "urn:visionflow:linked:research-preview",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Resource Budget]]",
+      "resolved": "urn:visionflow:linked:resource-budget",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Routing Strategy|routing]]",
+      "resolved": "urn:visionflow:linked:routing-strategy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Russell & Norvig AI: A Modern Approach]]",
+      "resolved": "urn:visionflow:linked:russell-and-norvig-ai-a-modern-approach",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Guardrail|guardrails]]",
+      "resolved": "urn:visionflow:linked:safety-guardrail",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Security System|security]]",
+      "resolved": "urn:visionflow:linked:security-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Security Threat|threats]]",
+      "resolved": "urn:visionflow:linked:security-threat",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Input]]",
+      "resolved": "urn:visionflow:linked:sensor-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Input|sensors]]",
+      "resolved": "urn:visionflow:linked:sensor-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Siri]]",
+      "resolved": "urn:visionflow:linked:siri",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Contract Agent]]",
+      "resolved": "urn:visionflow:linked:smart-contract-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Contract Auditing]]",
+      "resolved": "urn:visionflow:linked:smart-contract-auditing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Contract Deployment]]",
+      "resolved": "urn:visionflow:linked:smart-contract-deployment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Software Agent|Software agents]]",
+      "resolved": "urn:visionflow:linked:software-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[StarCraft AI]]",
+      "resolved": "urn:visionflow:linked:star-craft-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Swarm Framework]]",
+      "resolved": "urn:visionflow:linked:swarm-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Test Generation]]",
+      "resolved": "urn:visionflow:linked:test-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tool Use]]",
+      "resolved": "urn:visionflow:linked:tool-use",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tool Use System]]",
+      "resolved": "urn:visionflow:linked:tool-use-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trading Bot]]",
+      "resolved": "urn:visionflow:linked:trading-bot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trading System|trading systems]]",
+      "resolved": "urn:visionflow:linked:trading-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transaction Analysis]]",
+      "resolved": "urn:visionflow:linked:transaction-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transfer Learning]]",
+      "resolved": "urn:visionflow:linked:transfer-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Assistant|virtual assistants]]",
+      "resolved": "urn:visionflow:linked:virtual-assistant",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Yield Farming]]",
+      "resolved": "urn:visionflow:linked:yield-farming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Active Learning]]",
+      "resolved": "urn:visionflow:owl:class:active-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Automated Market Maker]]",
+      "resolved": "urn:visionflow:owl:class:automated-market-maker",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Vehicle|autonomous vehicles]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-vehicle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Oracle]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-oracle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Claude]]",
+      "resolved": "urn:visionflow:owl:class:claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Code Generation]]",
+      "resolved": "urn:visionflow:owl:class:code-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Communication Protocol]]",
+      "resolved": "urn:visionflow:owl:class:communication-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross-Chain Bridge|cross-chain bridging]]",
+      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DAO Governance]]",
+      "resolved": "urn:visionflow:owl:class:dao-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Finance (DeFi)]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Governance]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Full Node|full nodes]]",
+      "resolved": "urn:visionflow:owl:class:full-node",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Imitation Learning]]",
+      "resolved": "urn:visionflow:owl:class:imitation-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Intelligent Virtual Entity]]",
+      "resolved": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Learning Module]]",
+      "resolved": "urn:visionflow:owl:class:learning-module",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Liquidity Pool]]",
+      "resolved": "urn:visionflow:owl:class:liquidity-pool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Liquidity Provision]]",
+      "resolved": "urn:visionflow:owl:class:liquidity-provision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning|learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mempool]]",
+      "resolved": "urn:visionflow:owl:class:mempool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Perception System]]",
+      "resolved": "urn:visionflow:owl:class:perception-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning]]",
+      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reward Function]]",
+      "resolved": "urn:visionflow:owl:class:reward-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotic System|robotic systems]]",
+      "resolved": "urn:visionflow:owl:class:robotic-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Self Driving Car|Self-driving cars]]",
+      "resolved": "urn:visionflow:owl:class:self-driving-car",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.
@@ -32,7 +2040,7 @@ public:: true
   - requires:: [[Sensor Input]], [[Environment Model]], [[Reward Function]], [[Action Space]], [[API Access]], [[Authentication System]], [[Resource Budget]]
   - enables:: [[Autonomous Operation]], [[Adaptive Behavior]], [[Goal Achievement]], [[Multi-Agent Coordination]], [[Browser Automation]], [[File System Access]], [[Database Interaction]], [[Code Generation]]
   - implements:: [[Reinforcement Learning]], [[Planning Algorithm]], [[Decision Making]], [[Autonomous Behavior]], [[Active Learning]], [[Meta-Learning]], [[Transfer Learning]], [[Imitation Learning]]
-  - bridges-to:: [[Intelligent Virtual Entity]] (domain: metaverse), [[Autonomous Robot]] (domain: robotics), [[Smart Contract]] (domain: blockchain - for autonomous economic agents), [[Intelligent Virtual Entity]] (domain: [[Metaverse]]), [[Autonomous Robot]] (domain: [[Robotics]]), [[Smart Contract]] (domain: [[Blockchain]] - for [[Autonomous Economic Agent|autonomous economic agents]]), [[Bitcoin Trading Bot]] (domain: [[Cryptocurrency]] - for [[Algorithmic Trading]]), [[DeFi Agent]] (domain: [[Decentralized Finance]] - for [[Protocol Interaction]]), [[Lightning Network Node]] (domain: [[Bitcoin]] - for [[Payment Channel Management]])
+  - bridges-to:: [[Intelligent Virtual Entity]] (domain: metaverse), [[Autonomous Robot]] (domain: robotics), [[Smart Contract]] (domain: blockchain - for autonomous economic agents), [[Intelligent Virtual Entity]] (domain: [[Metaverse]]), [[Autonomous Robot]] (domain: [[Robotics]]), [[Smart Contract]] (domain: [[Blockchain]] - for [[Autonomous Economic Agent|autonomous economic agents]]), [[Bitcoin Trading Bot]] (domain: [[Cryptocurrency]] - for [[Algorithmic Trading]]), [[DeFi Agent]] (domain: [[Decentralized Finance (DeFi)]] - for [[Protocol Interaction]]), [[Lightning Network Node]] (domain: [[Bitcoin]] - for [[Payment Channel Management]])
 
 - ### Content
 
@@ -347,7 +2355,7 @@ public:: true
     - **See**: [[Smart Contract]], [[Decentralised Finance]], [[Bitcoin]], [[Lightning Network]], [[Automated Market Maker]], [[Blockchain Oracle]]
   - ### Use Cases
     - **Game Playing**: [[AlphaGo]], [[Chess Engine|Chess engines]], [[Poker Bot|Poker bots]], [[StarCraft AI]]
-    - **Autonomous Vehicles**: [[Self-Driving Car|Self-driving cars]] and [[Autonomous Drone|drones]]
+    - **Autonomous Vehicles**: [[Self Driving Car|Self-driving cars]] and [[Autonomous Drone|drones]]
     - **Virtual Assistants**: [[Siri]], [[Alexa]], [[Google Assistant]], [[ChatGPT]], [[Claude]]
     - **Robotic Process Automation**: [[Software Agent|Software agents]] automating [[Business Workflow|business workflows]]
     - **Trading Systems**: [[Algorithmic Trading]] in [[Financial Market|financial markets]], [[Bitcoin Trading Bot|Bitcoin trading]], [[High-Frequency Trading]]

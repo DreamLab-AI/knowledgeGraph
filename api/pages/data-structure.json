@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:9ab947d73ad5302a41fe8fde73189c7baa75cda7a4468f62c958e8522afb8973",
+  "title": "Data Structure",
+  "slug": "data-structure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-structure",
+  "domain": "artificial-intelligence",
+  "definition": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimensional arrays for neural networks), graphs (for knowledge graphs and GNNs), trees (decision trees, search trees), hash tables (for feature indexing), and specialized structures like attention mechanisms' key-value stores. Efficient data structures are crucial for algorithmic complexity, memory utilization, and computational performance in AI systems. Modern implementations leverage GPU-optimized data layouts and distributed data structures for large-scale ML.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "ieee-micro",
+      "label": "IEEE Micro"
+    },
+    {
+      "slug": "memory-optimization",
+      "label": "Memory Optimization"
+    },
+    {
+      "slug": "sparse-matrices",
+      "label": "Sparse Matrices"
+    },
+    {
+      "slug": "tensor-operations",
+      "label": "Tensor Operations"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "binary-buffer",
+      "label": "Binary Buffer"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "search-index",
+      "label": "Search Index"
+    },
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

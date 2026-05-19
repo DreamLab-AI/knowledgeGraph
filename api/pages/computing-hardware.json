@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:9b62ee4dd8398ff57c5191d4ae4885dcf78c53b0e3c7c30f1984f4504fc9695a",
+  "title": "Computing Hardware",
+  "slug": "computing-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computing-hardware",
+  "domain": "spatial-computing",
+  "definition": "Computing Hardware is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

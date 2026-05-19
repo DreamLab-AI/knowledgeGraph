@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:0a227c390314a3128b7acc92749fe01359c9c486cd28ca8273b238824f182c14",
+  "title": "Audio Technology",
+  "slug": "audio-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:audio-technology",
+  "domain": "spatial-computing",
+  "definition": "Audio Technology is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersive-audio-system",
+      "label": "Immersive Audio System"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ]
+}

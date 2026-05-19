@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:e8f8e032dd0ab4679c7a43527aa0916adebbe83b663564cab99baf89153bc228",
+  "title": "Data Integration Interface",
+  "slug": "data-integration-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-integration-interface",
+  "domain": "infrastructure",
+  "definition": "A standardized set of protocols, rules, and formats for unifying and mediating data flows across heterogeneous platforms, enabling seamless data exchange and interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-adapter",
+        "label": "Data Adapter"
+      },
+      {
+        "id": "urn:visionflow:linked:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-translator",
+        "label": "Protocol Translator"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-mapper",
+        "label": "Schema Mapper"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-data-exchange",
+        "label": "Cross-Platform Data Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:data-federation",
+        "label": "Data Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-synchronization",
+        "label": "Real-Time Synchronization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-platform-data-exchange",
+      "label": "Cross-Platform Data Exchange"
+    },
+    {
+      "slug": "data-adapter",
+      "label": "Data Adapter"
+    },
+    {
+      "slug": "data-federation",
+      "label": "Data Federation"
+    },
+    {
+      "slug": "data-management-domain",
+      "label": "DataManagementDomain"
+    },
+    {
+      "slug": "data-schema",
+      "label": "Data Schema"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "InteroperabilityDomain"
+    },
+    {
+      "slug": "iso-23247",
+      "label": "ISO 23247"
+    },
+    {
+      "slug": "message-broker",
+      "label": "Message Broker"
+    },
+    {
+      "slug": "protocol-translator",
+      "label": "Protocol Translator"
+    },
+    {
+      "slug": "real-time-synchronization",
+      "label": "Real-Time Synchronization"
+    },
+    {
+      "slug": "schema-mapper",
+      "label": "Schema Mapper"
+    },
+    {
+      "slug": "service-discovery",
+      "label": "Service Discovery"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "metadata-registry",
+      "label": "Metadata Registry"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    }
+  ]
+}

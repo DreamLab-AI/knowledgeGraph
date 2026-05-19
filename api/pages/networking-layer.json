@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:3f35235c85b2137ab107083ad7c299a208c62ee4028d00e139b9f87bd352bfca",
+  "title": "Networking Layer",
+  "slug": "networking-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:networking-layer",
+  "domain": "spatial-computing",
+  "definition": "Communication systems that connect components and users across distributed metaverse environments through network protocols and software.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure-architecture",
+      "label": "Infrastructure Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-transmission-service",
+        "label": "Data Transmission Service"
+      },
+      {
+        "id": "urn:visionflow:linked:routing-infrastructure",
+        "label": "Routing Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-software",
+        "label": "Communication Software"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:communication-protocols",
+        "label": "Communication Protocols"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-standards",
+        "label": "Network Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physical-network-hardware",
+        "label": "Physical Network Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-connectivity",
+        "label": "Cross-Platform Connectivity"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-interaction",
+        "label": "Low-latency Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-communication",
+        "label": "Real-time Communication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "cross-platform-connectivity",
+      "label": "Cross-Platform Connectivity"
+    },
+    {
+      "slug": "data-transmission-service",
+      "label": "Data Transmission Service"
+    },
+    {
+      "slug": "low-latency-interaction",
+      "label": "Low-latency Interaction"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "osi-model",
+      "label": "OSI Model"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-time Communication"
+    },
+    {
+      "slug": "routing-infrastructure",
+      "label": "Routing Infrastructure"
+    },
+    {
+      "slug": "tcp-ip-stack",
+      "label": "TCP/IP Stack"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    },
+    {
+      "slug": "communication-software",
+      "label": "Communication Software"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "infrastructure-architecture",
+      "label": "Infrastructure Architecture"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "network-standards",
+      "label": "Network Standards"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "physical-network-hardware",
+      "label": "Physical Network Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

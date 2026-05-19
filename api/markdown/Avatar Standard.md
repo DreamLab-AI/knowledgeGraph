@@ -1,25 +1,329 @@
-iri:: http://narrativegoldmine.com/spatial-computing#AvatarStandard
-uri:: urn:visionclaw:concept:spatial-computing:avatar-standard
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:avatar-standard
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Avatar Standard
-content-hash:: sha256-12-9e0b2eb1b872
-legacy-term-id:: MV-9791
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#AvatarStandard
+legacy_uri:: urn:visionclaw:concept:spatial-computing:avatar-standard
 public:: true
-bridges-to:: [[DID Nostr Identity]]
+
+# Avatar Standard
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2",
+  "@type": "Page",
+  "vc:slug": "avatar-standard",
+  "title": "Avatar Standard",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:format-compliance",
+      "vc:label": "Format Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:gl-tf-2-0",
+      "vc:label": "glTF 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:khronos-group",
+      "vc:label": "Khronos Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:metadata-specification",
+      "vc:label": "Metadata Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-standards-forum",
+      "vc:label": "Metaverse Standards Forum"
+    },
+    {
+      "@id": "urn:visionflow:linked:platform-independent-identities",
+      "vc:label": "Platform-Independent Identities"
+    },
+    {
+      "@id": "urn:visionflow:linked:skeleton-configuration",
+      "vc:label": "Skeleton Configuration"
+    },
+    {
+      "@id": "urn:visionflow:linked:standardized-rigging",
+      "vc:label": "Standardized Rigging"
+    },
+    {
+      "@id": "urn:visionflow:linked:vrm-1-0",
+      "vc:label": "VRM 1.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:vrm-consortium",
+      "vc:label": "VRM Consortium"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-interoperability",
+      "vc:label": "Avatar Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[DID Nostr Identity]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9e0b2eb1b872"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#AvatarStandard"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9791"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Avatar Standard"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:avatar-standard"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:avatar-standard"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:avatar-standard",
+  "@type": "OntologyClass",
+  "label": "Avatar Standard",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:format-compliance",
+      "vc:label": "Format Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:metadata-specification",
+      "vc:label": "Metadata Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:skeleton-configuration",
+      "vc:label": "Skeleton Configuration"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:platform-independent-identities",
+      "vc:label": "Platform-Independent Identities"
+    },
+    {
+      "@id": "urn:visionflow:linked:standardized-rigging",
+      "vc:label": "Standardized Rigging"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-interoperability",
+      "vc:label": "Avatar Interoperability"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:avatar-standard:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Format Compliance]]",
+      "resolved": "urn:visionflow:linked:format-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[glTF 2.0]]",
+      "resolved": "urn:visionflow:linked:gl-tf-2-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Khronos Group]]",
+      "resolved": "urn:visionflow:linked:khronos-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metadata Specification]]",
+      "resolved": "urn:visionflow:linked:metadata-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Standards Forum]]",
+      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Platform-Independent Identities]]",
+      "resolved": "urn:visionflow:linked:platform-independent-identities",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Skeleton Configuration]]",
+      "resolved": "urn:visionflow:linked:skeleton-configuration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Standardized Rigging]]",
+      "resolved": "urn:visionflow:linked:standardized-rigging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VRM 1.0]]",
+      "resolved": "urn:visionflow:linked:vrm-1-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VRM Consortium]]",
+      "resolved": "urn:visionflow:linked:vrm-consortium",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Avatar Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:avatar-interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technical Standard]]",
+      "resolved": "urn:visionflow:owl:class:technical-standard",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.

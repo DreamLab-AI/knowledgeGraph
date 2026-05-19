@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:bb44e53a0e5d16baee743b5ebed43a3dffb7b2cc2d67864870e7239a02e5a24f",
+  "title": "Digital Repository",
+  "slug": "digital-repository",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-repository",
+  "domain": "spatial-computing",
+  "definition": "A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:access-controls",
+        "label": "Access Controls"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-access",
+        "label": "Content Access"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-preservation",
+        "label": "Digital Preservation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-controls",
+      "label": "Access Controls"
+    },
+    {
+      "slug": "content-access",
+      "label": "Content Access"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "digital-preservation",
+      "label": "Digital Preservation"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-archive",
+      "label": "Asset Archive"
+    },
+    {
+      "slug": "collective-memory-archive",
+      "label": "Collective Memory Archive"
+    }
+  ]
+}

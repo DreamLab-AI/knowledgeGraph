@@ -1,0 +1,21 @@
+- ### Definition
+  - Domain marker for ETSI metaverse categorisation covering creative content production, 3D modelling, rendering, and multimedia authoring for virtual environments.
+- ### Bridge-To
+  - bridges-to:: [[Computer Vision]] (ai)
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ETSIDomain_CreativeMedia
+  - owl-role:: Object
+  - owl-inferred:: spatial-computing:VirtualObject
+  - belongs-to-domain:: [[InfrastructureDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]]
+- ### Relationships
+  - has-part:: [[3D Content Creation]], [[Rendering Pipeline]], [[Asset Management]], [[Multimedia Authoring]]
+  - is-part-of:: [[ETSI Metaverse Domain Taxonomy]]
+  - requires:: [[Creative Tools]], [[Content Pipeline]]
+  - enables:: [[Virtual World Building]], [[Avatar Customization]], [[Scene Design]]
+  - depends-on:: [[Graphics Processing]], [[Asset Format Standards]]
+- ### Content
+  ETSI Domain: Creative Media — content pending enrichment.
+- ### Provenance
+  - sources:: [[ETSI GR MEC 032]]
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,680 @@
+{
+  "id": "urn:visionflow:page:d246e3dd17916978bf949ecbd727e86bf964eb7d9664f2eaca28f59bf8fb1b22",
+  "title": "NVIDIA",
+  "slug": "nvidia",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nvidia",
+  "domain": "infrastructure",
+  "definition": "**NVIDIA Corporation** (NASDAQ: NVDA) is a Santa Clara, California-headquartered fabless semiconductor and AI computing company founded in 1993 by Jensen Huang, Chris Malachowsky and Curtis Priem that evolved from a consumer graphics processor pioneer into the dominant supplier of accelerated computing hardware and software for artificial intelligence training and inference, achieving a $3 trillion market capitalisation milestone in June 2024 \u2014 briefly making NVDA the world's most valuable publicly traded company \u2014 underpinned by fiscal year 2025 (ending January 2025) revenues of approximately $130B growing ~114% year-on-year. The demand driver is NVIDIA's data centre GPU franchise: the H100/H200 Hopper-architecture tensor-core GPUs became the de-facto standard for training large language models and diffusion models from 2022 onward, commanding 80-95% of AI accelerator market revenue share. The March 2024 Blackwell architecture launch (GTC 2024, San Jose) introduced the B100, B200 (192 GB HBM3e, 8 TB/s, 20 PFLOPS FP4), GB200 Superchip (two B200 GPUs + Grace ARM CPU via NVLink-C2C at 900 GB/s), and the GB200 NVL72 rack platform integrating 36 Grace CPUs and 72 B200 GPUs through NVSw",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:accelerated-computing-platform",
+      "label": "Accelerated Computing Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:ai-hardware-vendor",
+      "label": "AI Hardware Vendor"
+    },
+    {
+      "id": "urn:visionflow:linked:fabless-semiconductor",
+      "label": "Fabless Semiconductor"
+    },
+    {
+      "id": "urn:visionflow:linked:gpu-manufacturer",
+      "label": "GPU Manufacturer"
+    },
+    {
+      "id": "urn:visionflow:linked:semiconductor-company",
+      "label": "Semiconductor Company"
+    }
+  ],
+  "qualityScore": 0.54,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:blackwell-gpu",
+        "label": "Blackwell GPU"
+      },
+      {
+        "id": "urn:visionflow:linked:cuda-platform",
+        "label": "CUDA Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:drive-av",
+        "label": "Drive AV"
+      },
+      {
+        "id": "urn:visionflow:linked:gb200-nvl72",
+        "label": "GB200 NVL72"
+      },
+      {
+        "id": "urn:visionflow:linked:h100-gpu",
+        "label": "H100 GPU"
+      },
+      {
+        "id": "urn:visionflow:linked:h200-gpu",
+        "label": "H200 GPU"
+      },
+      {
+        "id": "urn:visionflow:linked:infini-band-networking",
+        "label": "InfiniBand Networking"
+      },
+      {
+        "id": "urn:visionflow:linked:isaac-robotics",
+        "label": "Isaac Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:ne-mo",
+        "label": "NeMo"
+      },
+      {
+        "id": "urn:visionflow:linked:nim-microservices",
+        "label": "NIM Microservices"
+      },
+      {
+        "id": "urn:visionflow:linked:nvlink",
+        "label": "NVLink"
+      },
+      {
+        "id": "urn:visionflow:linked:nvswitch",
+        "label": "NVSwitch"
+      },
+      {
+        "id": "urn:visionflow:linked:omniverse",
+        "label": "Omniverse"
+      },
+      {
+        "id": "urn:visionflow:linked:rapids",
+        "label": "RAPIDS"
+      },
+      {
+        "id": "urn:visionflow:linked:rtx-consumer-gpu",
+        "label": "RTX Consumer GPU"
+      },
+      {
+        "id": "urn:visionflow:linked:spectrum-x-ethernet",
+        "label": "Spectrum-X Ethernet"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-rt",
+        "label": "TensorRT"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-rt-llm",
+        "label": "TensorRT-LLM"
+      },
+      {
+        "id": "urn:visionflow:linked:triton-inference-server",
+        "label": "Triton Inference Server"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:arm-architecture-license",
+        "label": "ARM Architecture License"
+      },
+      {
+        "id": "urn:visionflow:linked:co-wo-s-packaging",
+        "label": "CoWoS Packaging"
+      },
+      {
+        "id": "urn:visionflow:linked:cuda-ecosystem",
+        "label": "CUDA Ecosystem"
+      },
+      {
+        "id": "urn:visionflow:linked:hbm3e-memory",
+        "label": "HBM3e Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:nvlink-interconnect",
+        "label": "NVLink Interconnect"
+      },
+      {
+        "id": "urn:visionflow:linked:software-stack",
+        "label": "Software Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:tsmc-advanced-packaging",
+        "label": "TSMC Advanced Packaging"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-inference-at-scale",
+        "label": "AI Inference at Scale"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-vehicle-perception",
+        "label": "Autonomous Vehicle Perception"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-twin-simulation",
+        "label": "Digital Twin Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:generative-ai-deployment",
+        "label": "Generative AI Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-accelerated-data-science",
+        "label": "GPU-Accelerated Data Science"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "id": "urn:visionflow:linked:robotics-ai",
+        "label": "Robotics AI"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-hpc",
+        "label": "Scientific HPC"
+      },
+      {
+        "id": "urn:visionflow:owl:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:blackwell-architecture",
+        "label": "Blackwell Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:cuda-parallel-computing-model",
+        "label": "CUDA Parallel Computing Model"
+      },
+      {
+        "id": "urn:visionflow:linked:fp8-mixed-precision-training",
+        "label": "FP8 Mixed Precision Training"
+      },
+      {
+        "id": "urn:visionflow:linked:hopper-architecture",
+        "label": "Hopper Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:infini-band-scale-out-networking",
+        "label": "InfiniBand Scale-Out Networking"
+      },
+      {
+        "id": "urn:visionflow:linked:nvlink-scale-up-networking",
+        "label": "NVLink Scale-Up Networking"
+      },
+      {
+        "id": "urn:visionflow:linked:structured-sparsity-acceleration",
+        "label": "Structured Sparsity Acceleration"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-core-architecture",
+        "label": "Tensor Core Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:transformer-engine",
+        "label": "Transformer Engine"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accelerated-computing-platform",
+      "label": "Accelerated Computing Platform"
+    },
+    {
+      "slug": "ai-chips",
+      "label": "AI Chips"
+    },
+    {
+      "slug": "ai-hardware-vendor",
+      "label": "AI Hardware Vendor"
+    },
+    {
+      "slug": "ai-inference-at-scale",
+      "label": "AI Inference at Scale"
+    },
+    {
+      "slug": "aihardware-domain",
+      "label": "AIHardwareDomain"
+    },
+    {
+      "slug": "amazon-aws-ai",
+      "label": "Amazon AWS AI"
+    },
+    {
+      "slug": "amd-instinct-gpu",
+      "label": "AMD Instinct GPU"
+    },
+    {
+      "slug": "arm-architecture-license",
+      "label": "ARM Architecture License"
+    },
+    {
+      "slug": "arm-holdings",
+      "label": "ARM Holdings"
+    },
+    {
+      "slug": "autonomous-vehicle-perception",
+      "label": "Autonomous Vehicle Perception"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "aws-trainium",
+      "label": "AWS Trainium"
+    },
+    {
+      "slug": "blackwell-architecture",
+      "label": "Blackwell Architecture"
+    },
+    {
+      "slug": "blackwell-gpu",
+      "label": "Blackwell GPU"
+    },
+    {
+      "slug": "cerebras-wse",
+      "label": "Cerebras WSE"
+    },
+    {
+      "slug": "co-wo-s-l-advanced-packaging",
+      "label": "CoWoS-L Advanced Packaging"
+    },
+    {
+      "slug": "co-wo-s-packaging",
+      "label": "CoWoS Packaging"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "cuda-ecosystem",
+      "label": "CUDA Ecosystem"
+    },
+    {
+      "slug": "cuda-parallel-computing-model",
+      "label": "CUDA Parallel Computing Model"
+    },
+    {
+      "slug": "cuda-platform",
+      "label": "CUDA Platform"
+    },
+    {
+      "slug": "cuda-programming-model",
+      "label": "CUDA Programming Model"
+    },
+    {
+      "slug": "data-centre-infrastructure",
+      "label": "Data Centre Infrastructure"
+    },
+    {
+      "slug": "data-centre-power-infrastructure",
+      "label": "Data Centre Power Infrastructure"
+    },
+    {
+      "slug": "digital-twin-simulation",
+      "label": "Digital Twin Simulation"
+    },
+    {
+      "slug": "drive-av",
+      "label": "Drive AV"
+    },
+    {
+      "slug": "enterprise-aidomain",
+      "label": "EnterpriseAIDomain"
+    },
+    {
+      "slug": "export-controls",
+      "label": "Export Controls"
+    },
+    {
+      "slug": "fabless-semiconductor",
+      "label": "Fabless Semiconductor"
+    },
+    {
+      "slug": "firmware-layer",
+      "label": "FirmwareLayer"
+    },
+    {
+      "slug": "fp8-mixed-precision-training",
+      "label": "FP8 Mixed Precision Training"
+    },
+    {
+      "slug": "gb200-nvl72",
+      "label": "GB200 NVL72"
+    },
+    {
+      "slug": "gddr7-memory",
+      "label": "GDDR7 Memory"
+    },
+    {
+      "slug": "generative-ai-deployment",
+      "label": "Generative AI Deployment"
+    },
+    {
+      "slug": "google-gemini-infrastructure",
+      "label": "Google Gemini Infrastructure"
+    },
+    {
+      "slug": "google-tpu",
+      "label": "Google TPU"
+    },
+    {
+      "slug": "gpu-accelerated-data-science",
+      "label": "GPU-Accelerated Data Science"
+    },
+    {
+      "slug": "gpu-manufacturer",
+      "label": "GPU Manufacturer"
+    },
+    {
+      "slug": "graphcore-ipu",
+      "label": "Graphcore IPU"
+    },
+    {
+      "slug": "groq-lpu",
+      "label": "Groq LPU"
+    },
+    {
+      "slug": "h100-gpu",
+      "label": "H100 GPU"
+    },
+    {
+      "slug": "h200-gpu",
+      "label": "H200 GPU"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "hbm-memory",
+      "label": "HBM Memory"
+    },
+    {
+      "slug": "hbm3e-high-bandwidth-memory",
+      "label": "HBM3e High Bandwidth Memory"
+    },
+    {
+      "slug": "hbm3e-memory",
+      "label": "HBM3e Memory"
+    },
+    {
+      "slug": "hopper-architecture",
+      "label": "Hopper Architecture"
+    },
+    {
+      "slug": "huawei-ascend",
+      "label": "Huawei Ascend"
+    },
+    {
+      "slug": "infini-band-networking",
+      "label": "InfiniBand Networking"
+    },
+    {
+      "slug": "infini-band-scale-out-networking",
+      "label": "InfiniBand Scale-Out Networking"
+    },
+    {
+      "slug": "intel-gaudi-accelerator",
+      "label": "Intel Gaudi Accelerator"
+    },
+    {
+      "slug": "isaac-robotics",
+      "label": "Isaac Robotics"
+    },
+    {
+      "slug": "jedec-hbm-standard",
+      "label": "JEDEC HBM Standard"
+    },
+    {
+      "slug": "jensen-huang",
+      "label": "Jensen Huang"
+    },
+    {
+      "slug": "large-language-model-training",
+      "label": "Large Language Model Training"
+    },
+    {
+      "slug": "linux-kernel-drivers",
+      "label": "Linux Kernel Drivers"
+    },
+    {
+      "slug": "mellanox",
+      "label": "Mellanox"
+    },
+    {
+      "slug": "meta-lla-ma-training",
+      "label": "Meta LLaMA Training"
+    },
+    {
+      "slug": "microsoft-azure-ai",
+      "label": "Microsoft Azure AI"
+    },
+    {
+      "slug": "ne-mo",
+      "label": "NeMo"
+    },
+    {
+      "slug": "nim-microservices",
+      "label": "NIM Microservices"
+    },
+    {
+      "slug": "nvlink",
+      "label": "NVLink"
+    },
+    {
+      "slug": "nvlink-c2-c-die-to-die",
+      "label": "NVLink-C2C Die-to-Die"
+    },
+    {
+      "slug": "nvlink-interconnect",
+      "label": "NVLink Interconnect"
+    },
+    {
+      "slug": "nvlink-protocol",
+      "label": "NVLink Protocol"
+    },
+    {
+      "slug": "nvlink-scale-up-networking",
+      "label": "NVLink Scale-Up Networking"
+    },
+    {
+      "slug": "nvswitch",
+      "label": "NVSwitch"
+    },
+    {
+      "slug": "nvswitch-4th-gen",
+      "label": "NVSwitch 4th Gen"
+    },
+    {
+      "slug": "omniverse",
+      "label": "Omniverse"
+    },
+    {
+      "slug": "onnx-model-format",
+      "label": "ONNX Model Format"
+    },
+    {
+      "slug": "open-ai-api-compatibility",
+      "label": "OpenAI API Compatibility"
+    },
+    {
+      "slug": "open-ai-gpt-training",
+      "label": "OpenAI GPT Training"
+    },
+    {
+      "slug": "open-xla",
+      "label": "OpenXLA"
+    },
+    {
+      "slug": "pcie-gen-5",
+      "label": "PCIe Gen 5"
+    },
+    {
+      "slug": "pcie-interface",
+      "label": "PCIe Interface"
+    },
+    {
+      "slug": "pcie-standard",
+      "label": "PCIe Standard"
+    },
+    {
+      "slug": "rapids",
+      "label": "RAPIDS"
+    },
+    {
+      "slug": "robotics-ai",
+      "label": "Robotics AI"
+    },
+    {
+      "slug": "rtx-consumer-gpu",
+      "label": "RTX Consumer GPU"
+    },
+    {
+      "slug": "scientific-hpc",
+      "label": "Scientific HPC"
+    },
+    {
+      "slug": "semiconductor-company",
+      "label": "Semiconductor Company"
+    },
+    {
+      "slug": "semiconductor-domain",
+      "label": "SemiconductorDomain"
+    },
+    {
+      "slug": "software-layer",
+      "label": "SoftwareLayer"
+    },
+    {
+      "slug": "software-stack",
+      "label": "Software Stack"
+    },
+    {
+      "slug": "sovereign-ai-infrastructure",
+      "label": "Sovereign AI Infrastructure"
+    },
+    {
+      "slug": "spectrum-x-ethernet",
+      "label": "Spectrum-X Ethernet"
+    },
+    {
+      "slug": "stargate-initiative",
+      "label": "Stargate Initiative"
+    },
+    {
+      "slug": "structured-sparsity-acceleration",
+      "label": "Structured Sparsity Acceleration"
+    },
+    {
+      "slug": "sxm5-form-factor",
+      "label": "SXM5 Form Factor"
+    },
+    {
+      "slug": "tensor-core-architecture",
+      "label": "Tensor Core Architecture"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
+    },
+    {
+      "slug": "tensor-rt-llm",
+      "label": "TensorRT-LLM"
+    },
+    {
+      "slug": "transformer-engine",
+      "label": "Transformer Engine"
+    },
+    {
+      "slug": "triton-inference-server",
+      "label": "Triton Inference Server"
+    },
+    {
+      "slug": "tsmc-advanced-packaging",
+      "label": "TSMC Advanced Packaging"
+    },
+    {
+      "slug": "tsmc-foundry",
+      "label": "TSMC Foundry"
+    },
+    {
+      "slug": "tsmc-n3-process",
+      "label": "TSMC N3 Process"
+    },
+    {
+      "slug": "tsmc-n4-n-process",
+      "label": "TSMC N4N Process"
+    },
+    {
+      "slug": "us-china-tech-war",
+      "label": "US China Tech War"
+    },
+    {
+      "slug": "x86-host-cpu",
+      "label": "x86 Host CPU"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "drug-discovery-ai",
+      "label": "Drug Discovery AI"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "groq",
+      "label": "Groq"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:22090cced5f0bc5190bf785464da370aacff6a9ee6e7fde24687ce2813420a00",
+  "title": "Separation Of Powers",
+  "slug": "separation-of-powers",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:separation-of-powers",
+  "domain": "spatial-computing",
+  "definition": "Governance design patterns in decentralized autonomous organizations that distribute authority across distinct functional roles, preventing concentration of control through checks and balances between proposal creation, voting, execution, and oversight functions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:dao-governance",
+      "label": "DAO Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralized-control",
+        "label": "Decentralized Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralized-control",
+      "label": "Decentralized Control"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    }
+  ]
+}

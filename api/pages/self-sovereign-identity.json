@@ -1,0 +1,716 @@
+{
+  "id": "urn:visionflow:page:a0d3752e394e49c8c0b47f62b852d32a0b68ddf3c8fa7b35501f5da38622c1d7",
+  "title": "Self Sovereign Identity",
+  "slug": "self-sovereign-identity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:self-sovereign-identity",
+  "domain": "identity",
+  "definition": "Self-Sovereign Identity (SSI) is an identity management paradigm \u2014 first articulated as a systematic framework by Christopher Allen in \"The Path to Self-Sovereign Identity\" (April 2016) \u2014 where individuals hold and control cryptographically verifiable credentials in their own [[Digital Wallet]] rather than depending on [[Centralised Identity]] providers or [[Federated Identity]] intermediaries such as corporate identity providers, national databases, or single-sign-on brokers. SSI rests on three interdependent W3C open standards: [[Decentralized Identifiers]] (DID Core 1.0 became a W3C Recommendation in July 2022; v1.1 in Working Draft as of 2026), [[Verifiable Credentials]] (VC Data Model v2.0 became a W3C Recommendation in May 2025), and the DIDComm v2 secure messaging protocol maintained by the [[Decentralized Identity Foundation]]; these three layers together enable cryptographic proof of identity claims without requiring centralised databases or online validation calls to the issuing authority. Trust roots are anchored to [[Verifiable Data Registry]] infrastructure spanning permissioned ledgers ([[Hyperledger Indy]] underlying the [[Sovrin Network]]), public blockchains ([[Bit",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "id": "urn:visionflow:linked:privacy-enhancing-technology",
+      "label": "Privacy-Enhancing Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:user-centric-identity",
+      "label": "User-Centric Identity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:credential-definition",
+        "label": "Credential Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:visionflow:linked:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "id": "urn:visionflow:linked:link-secret",
+        "label": "Link Secret"
+      },
+      {
+        "id": "urn:visionflow:linked:revocation-registry",
+        "label": "Revocation Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:issuer-agent",
+        "label": "Issuer Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:linked:verifier-agent",
+        "label": "Verifier Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:wallet-software",
+        "label": "Wallet Software"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:visionflow:owl:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:correlation-resistance",
+        "label": "Correlation Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-identity",
+        "label": "Cross-Border Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:holder-binding",
+        "label": "Holder Binding"
+      },
+      {
+        "id": "urn:visionflow:linked:offline-verification",
+        "label": "Offline Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:portable-identity",
+        "label": "Portable Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-kyc",
+        "label": "Privacy-Preserving KYC"
+      },
+      {
+        "id": "urn:visionflow:linked:reusable-identity-verification",
+        "label": "Reusable Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-knowledge-predicate-proof",
+        "label": "Zero-Knowledge Predicate Proof"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:anon-creds",
+        "label": "AnonCreds"
+      },
+      {
+        "id": "urn:visionflow:linked:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:didcomm-v2",
+        "label": "DIDComm v2"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-18013-5",
+        "label": "ISO 18013-5"
+      },
+      {
+        "id": "urn:visionflow:linked:open-id-for-verifiable-credentials",
+        "label": "OpenID for Verifiable Credentials"
+      },
+      {
+        "id": "urn:visionflow:linked:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-over-ip-stack",
+        "label": "Trust Over IP Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "anon-creds",
+      "label": "AnonCreds"
+    },
+    {
+      "slug": "bbs-signatures",
+      "label": "BBS+ Signatures"
+    },
+    {
+      "slug": "bitstring-status-list",
+      "label": "Bitstring Status List"
+    },
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "camenisch-lysyanskaya-signatures",
+      "label": "Camenisch-Lysyanskaya Signatures"
+    },
+    {
+      "slug": "cbor",
+      "label": "CBOR"
+    },
+    {
+      "slug": "centralised-identity",
+      "label": "Centralised Identity"
+    },
+    {
+      "slug": "correlation-resistance",
+      "label": "Correlation Resistance"
+    },
+    {
+      "slug": "credential-definition",
+      "label": "Credential Definition"
+    },
+    {
+      "slug": "credential-schema",
+      "label": "Credential Schema"
+    },
+    {
+      "slug": "cross-border-identity",
+      "label": "Cross-Border Identity"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "decentralized-identity-foundation",
+      "label": "Decentralized Identity Foundation"
+    },
+    {
+      "slug": "did-document",
+      "label": "DID Document"
+    },
+    {
+      "slug": "didcomm",
+      "label": "DIDComm"
+    },
+    {
+      "slug": "didcomm-v2",
+      "label": "DIDComm v2"
+    },
+    {
+      "slug": "digital-government",
+      "label": "Digital Government"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
+    },
+    {
+      "slug": "ecdh-1-pu",
+      "label": "ECDH-1PU"
+    },
+    {
+      "slug": "ed-dsa",
+      "label": "EdDSA"
+    },
+    {
+      "slug": "educational-credentials",
+      "label": "Educational Credentials"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "federated-identity",
+      "label": "Federated Identity"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "healthcare-identity",
+      "label": "Healthcare Identity"
+    },
+    {
+      "slug": "holder-binding",
+      "label": "Holder Binding"
+    },
+    {
+      "slug": "hyperledger-aries",
+      "label": "Hyperledger Aries"
+    },
+    {
+      "slug": "hyperledger-foundation",
+      "label": "Hyperledger Foundation"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "IdentityDomain"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "io-t-security",
+      "label": "IoT Security"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "iso-18013-5",
+      "label": "ISO 18013-5"
+    },
+    {
+      "slug": "issuer-agent",
+      "label": "Issuer Agent"
+    },
+    {
+      "slug": "json-ld",
+      "label": "JSON-LD"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "ldap",
+      "label": "LDAP"
+    },
+    {
+      "slug": "link-secret",
+      "label": "Link Secret"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
+      "slug": "offline-verification",
+      "label": "Offline Verification"
+    },
+    {
+      "slug": "open-id-connect",
+      "label": "OpenID Connect"
+    },
+    {
+      "slug": "open-id-for-verifiable-credentials",
+      "label": "OpenID for Verifiable Credentials"
+    },
+    {
+      "slug": "open-id-foundation",
+      "label": "OpenID Foundation"
+    },
+    {
+      "slug": "portable-identity",
+      "label": "Portable Identity"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "PrivacyDomain"
+    },
+    {
+      "slug": "privacy-enhancing-technology",
+      "label": "Privacy-Enhancing Technology"
+    },
+    {
+      "slug": "privacy-preserving-kyc",
+      "label": "Privacy-Preserving KYC"
+    },
+    {
+      "slug": "reusable-identity-verification",
+      "label": "Reusable Identity Verification"
+    },
+    {
+      "slug": "revocation-registry",
+      "label": "Revocation Registry"
+    },
+    {
+      "slug": "saml",
+      "label": "SAML"
+    },
+    {
+      "slug": "sd-jwt",
+      "label": "SD-JWT"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "Selective Disclosure"
+    },
+    {
+      "slug": "sidetree-protocol",
+      "label": "Sidetree Protocol"
+    },
+    {
+      "slug": "sovrin-network",
+      "label": "Sovrin Network"
+    },
+    {
+      "slug": "supply-chain-provenance",
+      "label": "Supply Chain Provenance"
+    },
+    {
+      "slug": "trust-over-ip-foundation",
+      "label": "Trust Over IP Foundation"
+    },
+    {
+      "slug": "trust-over-ip-stack",
+      "label": "Trust Over IP Stack"
+    },
+    {
+      "slug": "user-centric-identity",
+      "label": "User-Centric Identity"
+    },
+    {
+      "slug": "verifier-agent",
+      "label": "Verifier Agent"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "w3-c-standards",
+      "label": "W3C Standards"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "wallet-software",
+      "label": "Wallet Software"
+    },
+    {
+      "slug": "x-509-pki",
+      "label": "X.509 PKI"
+    },
+    {
+      "slug": "xchacha20-poly1305",
+      "label": "XChacha20Poly1305"
+    },
+    {
+      "slug": "zero-knowledge-predicate-proof",
+      "label": "Zero-Knowledge Predicate Proof"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "verifiable-data-registry",
+      "label": "Verifiable Data Registry"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

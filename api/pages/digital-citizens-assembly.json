@@ -1,0 +1,174 @@
+{
+  "id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e",
+  "title": "Digital Citizens' Assembly",
+  "slug": "digital-citizens-assembly",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-citizens-assembly",
+  "domain": "spatial-computing",
+  "definition": "Structured deliberation process using XR spaces for policy co-creation through multi-agent democratic decision-making. bridges-to:: [[Sensor Input]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "production-ready",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:deliberation-agent",
+        "label": "Deliberation Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-synthesis-engine",
+        "label": "Policy Synthesis Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:participant-management-system",
+        "label": "Participant Management System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:decision-recording-system",
+        "label": "Decision Recording System"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "id": "urn:visionflow:linked:democratic-deliberation",
+        "label": "Democratic Deliberation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:participatory-policy-making",
+        "label": "Participatory Policy Making"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparent-governance",
+        "label": "Transparent Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "civic-engagement-platform",
+      "label": "Civic Engagement Platform"
+    },
+    {
+      "slug": "collective-decision-making",
+      "label": "Collective Decision-Making"
+    },
+    {
+      "slug": "decision-recording-system",
+      "label": "Decision Recording System"
+    },
+    {
+      "slug": "deliberation-agent",
+      "label": "Deliberation Agent"
+    },
+    {
+      "slug": "democratic-deliberation",
+      "label": "Democratic Deliberation"
+    },
+    {
+      "slug": "democratic-governance-system",
+      "label": "Democratic Governance System"
+    },
+    {
+      "slug": "distributed-voting",
+      "label": "Distributed Voting"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "policy-synthesis-engine",
+      "label": "Policy Synthesis Engine"
+    },
+    {
+      "slug": "secure-communication",
+      "label": "Secure Communication"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "un-habitat-digital-civics",
+      "label": "UN Habitat Digital Civics"
+    },
+    {
+      "slug": "voting-mechanism",
+      "label": "Voting Mechanism"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "participant-management-system",
+      "label": "Participant Management System"
+    },
+    {
+      "slug": "participatory-policy-making",
+      "label": "Participatory Policy Making"
+    },
+    {
+      "slug": "transparent-governance",
+      "label": "Transparent Governance"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "virtual-world-platform",
+      "label": "Virtual World Platform"
+    },
+    {
+      "slug": "xr-meeting-space",
+      "label": "XR Meeting Space"
+    }
+  ],
+  "backlinks": []
+}

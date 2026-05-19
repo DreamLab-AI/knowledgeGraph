@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:41f6a7b2cfbecd3cf65618c4f56c8353cda8ff1e9cfa38b75cddf7e833839238",
+  "title": "Redress Procedure",
+  "slug": "redress-procedure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:redress-procedure",
+  "domain": "artificial-intelligence",
+  "definition": "A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes. Redress procedures address a fundamental accountability requirement: when AI systems make consequential decisions affecting employment, credit, housing, criminal justice, or other significant life opportunities, affected individuals must have meaningful avenues to contest erroneous or unfair outcomes. These procedures encompass complaint submission mechanisms (accessible interfaces for lodging grievances), investigation processes (systematic review of contested decisions), human oversight interventions (qualified personnel examining AI outputs and overriding when appropriate), explanation provision (meaningful information about decision factors), and remedy implementation (corrective actions ranging from decision reversal to compensation for damages). Effective redress requires balancing competing concerns: accessibility (procedures must be understandable and available to all affected parties including those with limited ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-governance-principle",
+      "label": "AI Governance Principle"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance-principle",
+      "label": "AI Governance Principle"
+    },
+    {
+      "slug": "algorithmic-accountability-act",
+      "label": "Algorithmic Accountability Act"
+    },
+    {
+      "slug": "alternative-dispute-resolution",
+      "label": "Alternative Dispute Resolution"
+    },
+    {
+      "slug": "complaint-mechanism",
+      "label": "Complaint Mechanism"
+    },
+    {
+      "slug": "decision-appeal",
+      "label": "Decision Appeal"
+    },
+    {
+      "slug": "explanation-provision",
+      "label": "Explanation Provision"
+    },
+    {
+      "slug": "gdpr-article-22",
+      "label": "GDPR Article 22"
+    },
+    {
+      "slug": "human-review-process",
+      "label": "Human Review Process"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "judicial-review",
+      "label": "Judicial Review"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "ombudsman-service",
+      "label": "Ombudsman Service"
+    },
+    {
+      "slug": "remedy-implementation",
+      "label": "Remedy Implementation"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
+  "backlinks": []
+}

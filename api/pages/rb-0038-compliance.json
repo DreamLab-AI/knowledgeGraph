@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:18c5eff2d77b539728d895e9e3bdec1b013cf042bf000307e4c56fe6885426c9",
+  "title": "rb 0038 compliance",
+  "slug": "rb-0038-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0038-compliance",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "open-source",
+      "label": "Open Source"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

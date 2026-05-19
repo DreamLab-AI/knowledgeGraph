@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:777c046d839ec59d85eb7612200e5d2fa6cd8d1a3aa6ff38bcfdb79763da1b91",
+  "title": "Metaverse Architecture",
+  "slug": "metaverse-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-architecture",
+  "domain": "spatial-computing",
+  "definition": "The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:virtual-world-operation",
+        "label": "Virtual World Operation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "virtual-world-operation",
+      "label": "Virtual World Operation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-content-layer",
+      "label": "Digital Content Layer"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    }
+  ]
+}

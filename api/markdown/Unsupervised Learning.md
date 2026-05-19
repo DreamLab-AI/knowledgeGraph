@@ -1,21 +1,207 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#UnsupervisedLearning
-uri:: urn:visionclaw:concept:artificial-intelligence:unsupervised-learning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:unsupervised-learning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Unsupervised Learning
-content-hash:: sha256-12-641e60815887
-legacy-term-id:: AI-9035
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#UnsupervisedLearning
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:unsupervised-learning
 public:: true
+
+# Unsupervised Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928",
+  "@type": "Page",
+  "vc:slug": "unsupervised-learning",
+  "title": "Unsupervised Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:autoencoders",
+      "vc:label": "Autoencoders"
+    },
+    {
+      "@id": "urn:visionflow:linked:clustering",
+      "vc:label": "Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-models",
+      "vc:label": "Generative Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dimensionality-reduction",
+      "vc:label": "Dimensionality Reduction"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-641e60815887"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#UnsupervisedLearning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-9035"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Unsupervised Learning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:unsupervised-learning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:unsupervised-learning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:unsupervised-learning",
+  "@type": "OntologyClass",
+  "label": "Unsupervised Learning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "['owl:Thing']"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:unsupervised-learning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Autoencoders]]",
+      "resolved": "urn:visionflow:linked:autoencoders",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Clustering]]",
+      "resolved": "urn:visionflow:linked:clustering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Generative Models]]",
+      "resolved": "urn:visionflow:linked:generative-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dimensionality Reduction]]",
+      "resolved": "urn:visionflow:owl:class:dimensionality-reduction",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.

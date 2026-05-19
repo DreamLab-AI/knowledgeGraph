@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:c21d208ad32e7d03dbdd1c22819c96a6b2034ffdcf397f6fc9de4252e69c8da4",
+  "title": "rb 0070 tactile sensing",
+  "slug": "rb-0070-tactile-sensing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0070-tactile-sensing",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tactile-sensor",
+      "label": "Tactile Sensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

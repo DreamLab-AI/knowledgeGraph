@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:cf896ddeb92dd3246fa9a4122d6022bee354e3dcc382733cec02acf55d9c47d4",
+  "title": "civil service job",
+  "slug": "civil-service-job",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:civil-service-job",
+  "domain": "infrastructure",
+  "definition": "civil service job is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

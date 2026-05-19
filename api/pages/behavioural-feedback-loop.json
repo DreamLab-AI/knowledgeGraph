@@ -1,0 +1,158 @@
+{
+  "id": "urn:visionflow:page:07ffea1a14900ad6c0299d9ecd1b126b1ec1f8726cd64ce72dc2c84174c83742",
+  "title": "Behavioural Feedback Loop",
+  "slug": "behavioural-feedback-loop",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:behavioural-feedback-loop",
+  "domain": "spatial-computing",
+  "definition": "Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:action-detection",
+        "label": "Action Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:adaptive-reinforcement",
+        "label": "Adaptive Reinforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:environment-response",
+        "label": "Environment Response"
+      },
+      {
+        "id": "urn:visionflow:owl:class:behavior-analysis",
+        "label": "Behavior Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:visionflow:linked:state-management",
+        "label": "State Management"
+      },
+      {
+        "id": "urn:visionflow:linked:user-tracking",
+        "label": "User Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-experience",
+        "label": "Adaptive Experience"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-adjustment",
+        "label": "Dynamic Adjustment"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-interaction",
+        "label": "Personalized Interaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:behavioral-learning",
+        "label": "Behavioral Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action-detection",
+      "label": "Action Detection"
+    },
+    {
+      "slug": "adaptive-experience",
+      "label": "Adaptive Experience"
+    },
+    {
+      "slug": "adaptive-reinforcement",
+      "label": "Adaptive Reinforcement"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "dynamic-adjustment",
+      "label": "Dynamic Adjustment"
+    },
+    {
+      "slug": "environment-response",
+      "label": "Environment Response"
+    },
+    {
+      "slug": "ieee-affective-systems",
+      "label": "IEEE Affective Systems"
+    },
+    {
+      "slug": "personalized-interaction",
+      "label": "Personalized Interaction"
+    },
+    {
+      "slug": "state-management",
+      "label": "State Management"
+    },
+    {
+      "slug": "user-modeling",
+      "label": "User Modeling"
+    },
+    {
+      "slug": "user-tracking",
+      "label": "User Tracking"
+    },
+    {
+      "slug": "behavior-analysis",
+      "label": "Behavior Analysis"
+    },
+    {
+      "slug": "behavioral-learning",
+      "label": "Behavioral Learning"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,286 @@
+{
+  "id": "urn:visionflow:page:9e85212fed05bed939980cd7bafcbe644e9b71d111f53aad6c944ba4ce29add5",
+  "title": "Cryptography",
+  "slug": "cryptography",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cryptography",
+  "domain": "infrastructure",
+  "definition": "[[Cryptography]] is the mathematical science of transforming information through [[encryption]], ensuring confidentiality, authenticity, and integrity in digital communications and [[blockchain]] systems. Employed across [[Consensus-Protocol]], [[Digital-Asset]], and [[Security]], cryptographic methods enable secure value transfer and trust-less coordination in decentralised networks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-security",
+      "label": "Cryptographic Security"
+    }
+  ],
+  "qualityScore": 0.55,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:encryption-scheme",
+        "label": "Encryption-Scheme"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital-Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash-Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "Consensus-Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-protocol",
+        "label": "Cryptographic-Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset",
+        "label": "Digital-Asset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "encryption",
+      "label": "encryption"
+    },
+    {
+      "slug": "encryption-scheme",
+      "label": "Encryption-Scheme"
+    },
+    {
+      "slug": "iso-iec-14888",
+      "label": "ISO/IEC 14888"
+    },
+    {
+      "slug": "iso-iec-18033",
+      "label": "ISO/IEC 18033"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "post-quantum-cryptography-standards",
+      "label": "Post-Quantum Cryptography Standards"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus-Protocol"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control-Algorithm"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic-Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital-Asset"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital-Infrastructure"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital-Signature"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital-Twin"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash-Function"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum-Cryptography"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum-Computing"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-privacy-at-the-2024-olympics",
+      "label": "AI privacy at the 2024 Olympics"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "security-audit-guide",
+      "label": "security audit guide"
+    }
+  ]
+}

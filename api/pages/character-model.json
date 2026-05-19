@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:7784458def1b42e0ee3e2e3b5100c6552353a1e04f7c9548fa38b8953db83719",
+  "title": "Character Model",
+  "slug": "character-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:character-model",
+  "domain": "spatial-computing",
+  "definition": "A 3D digital representation of a character consisting of a polygonal mesh, textures, and materials, designed with clean topology optimized for animation and real-time rendering, serving as the foundation for rigging, skinning, and character animation workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-modeling-software",
+        "label": "3D Modeling Software"
+      },
+      {
+        "id": "urn:visionflow:linked:topology-design",
+        "label": "Topology Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:game-characters",
+        "label": "Game Characters"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-avatars",
+        "label": "Virtual Avatars"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-modeling-software",
+      "label": "3D Modeling Software"
+    },
+    {
+      "slug": "character-animation",
+      "label": "Character Animation"
+    },
+    {
+      "slug": "game-characters",
+      "label": "Game Characters"
+    },
+    {
+      "slug": "topology-design",
+      "label": "Topology Design"
+    },
+    {
+      "slug": "virtual-avatars",
+      "label": "Virtual Avatars"
+    },
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "texture-mapping",
+      "label": "Texture Mapping"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "character-rigging",
+      "label": "Character Rigging"
+    },
+    {
+      "slug": "narrative-design-ontology",
+      "label": "Narrative Design Ontology"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

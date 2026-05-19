@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:b6c3a35891e6eb9720799e16bb1e589eccd2ec24f4801a969abfa9fc6f2d016e",
+  "title": "Digital Content Creation",
+  "slug": "digital-content-creation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-content-creation",
+  "domain": "spatial-computing",
+  "definition": "Digital Content Creation is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "virtual-world-creation",
+      "label": "Virtual World Creation"
+    }
+  ]
+}

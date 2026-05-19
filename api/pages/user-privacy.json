@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:f80c49e5d87c11ca8890c4a30afecc0f8bab1bbc7e317c3a5a7f6bbecba52828",
+  "title": "User Privacy",
+  "slug": "user-privacy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-privacy",
+  "domain": "infrastructure",
+  "definition": "UserPrivacy is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:privacy-framework",
+      "label": "Privacy Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

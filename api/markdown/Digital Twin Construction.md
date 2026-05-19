@@ -1,24 +1,292 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalTwinConstruction
-uri:: urn:visionclaw:concept:spatial-computing:digital-twin-construction
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-twin-construction
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Twin Construction
-content-hash:: sha256-12-abf754b5593c
-legacy-term-id:: MV-9874
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalTwinConstruction
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-twin-construction
 public:: true
+
+# Digital Twin Construction
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d",
+  "@type": "Page",
+  "vc:slug": "digital-twin-construction",
+  "title": "Digital Twin Construction",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bim",
+      "vc:label": "BIM"
+    },
+    {
+      "@id": "urn:visionflow:linked:building-lifecycle-management",
+      "vc:label": "Building Lifecycle Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-platform",
+      "vc:label": "Cloud Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:construction-optimization",
+      "vc:label": "Construction Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensors",
+      "vc:label": "IoT Sensors"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-abf754b5593c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalTwinConstruction"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9874"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Twin Construction"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-twin-construction"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-twin-construction"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-twin-construction",
+  "@type": "OntologyClass",
+  "label": "Digital Twin Construction",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle. bridges-to:: [[Computer Vision]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:bim",
+      "vc:label": "BIM"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-platform",
+      "vc:label": "Cloud Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensors",
+      "vc:label": "IoT Sensors"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:building-lifecycle-management",
+      "vc:label": "Building Lifecycle Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:construction-optimization",
+      "vc:label": "Construction Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-construction:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BIM]]",
+      "resolved": "urn:visionflow:linked:bim",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Building Lifecycle Management]]",
+      "resolved": "urn:visionflow:linked:building-lifecycle-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cloud Platform]]",
+      "resolved": "urn:visionflow:linked:cloud-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Construction Optimization]]",
+      "resolved": "urn:visionflow:linked:construction-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[IoT Sensors]]",
+      "resolved": "urn:visionflow:owl:class:io-t-sensors",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Maintenance]]",
+      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle.

@@ -1,0 +1,403 @@
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainDataManagementCulturalHeritage
+legacy_uri:: urn:visionclaw:concept:infrastructure:etsi-domain-data-management-cultural-heritage
+public:: true
+
+# ETSI Domain: Data Management + Cultural Heritage
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-data-management-cultural-heritage",
+  "title": "ETSI Domain: Data Management + Cultural Heritage",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-digitization",
+      "vc:label": "Cultural Heritage Digitization"
+    },
+    {
+      "@id": "urn:visionflow:linked:educational-outreach",
+      "vc:label": "Educational Outreach"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-mec-032",
+      "vc:label": "ETSI GR MEC 032"
+    },
+    {
+      "@id": "urn:visionflow:linked:heritage-database",
+      "vc:label": "Heritage Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-term-preservation",
+      "vc:label": "Long-term Preservation"
+    },
+    {
+      "@id": "urn:visionflow:linked:metadata-schemas",
+      "vc:label": "Metadata Schemas"
+    },
+    {
+      "@id": "urn:visionflow:linked:preservation-system",
+      "vc:label": "Preservation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:public-access",
+      "vc:label": "Public Access"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:archival-standards",
+      "vc:label": "Archival Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-management",
+      "vc:label": "Data Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-archive",
+      "vc:label": "Digital Archive"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "vc:label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "vc:label": "InfrastructureDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ce4ddce9b1ac"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ETSIDomainDataManagementCulturalHeritage"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-20343"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI Domain: Data Management + Cultural Heritage"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsi-domain-data-management-cultural-heritage"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsi-domain-data-management-cultural-heritage"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-data-management-cultural-heritage",
+  "@type": "OntologyClass",
+  "label": "ETSI Domain: Data Management + Cultural Heritage",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing data preservation and management systems for cultural heritage digitisation, archival, and accessibility.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "vc:label": "ETSI Metaverse Domain Taxonomy"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:heritage-database",
+      "vc:label": "Heritage Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:preservation-system",
+      "vc:label": "Preservation System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-archive",
+      "vc:label": "Digital Archive"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-digitization",
+      "vc:label": "Cultural Heritage Digitization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-management",
+      "vc:label": "Data Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:educational-outreach",
+      "vc:label": "Educational Outreach"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-term-preservation",
+      "vc:label": "Long-term Preservation"
+    },
+    {
+      "@id": "urn:visionflow:linked:public-access",
+      "vc:label": "Public Access"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:metadata-schemas",
+      "vc:label": "Metadata Schemas"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:archival-standards",
+      "vc:label": "Archival Standards"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-data-management-cultural-heritage:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cultural Heritage Digitization]]",
+      "resolved": "urn:visionflow:linked:cultural-heritage-digitization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Educational Outreach]]",
+      "resolved": "urn:visionflow:linked:educational-outreach",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR MEC 032]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heritage Database]]",
+      "resolved": "urn:visionflow:linked:heritage-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Long-term Preservation]]",
+      "resolved": "urn:visionflow:linked:long-term-preservation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metadata Schemas]]",
+      "resolved": "urn:visionflow:linked:metadata-schemas",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Preservation System]]",
+      "resolved": "urn:visionflow:linked:preservation-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Public Access]]",
+      "resolved": "urn:visionflow:linked:public-access",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Access Control]]",
+      "resolved": "urn:visionflow:owl:class:access-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Archival Standards]]",
+      "resolved": "urn:visionflow:owl:class:archival-standards",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Management]]",
+      "resolved": "urn:visionflow:owl:class:data-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Archive]]",
+      "resolved": "urn:visionflow:owl:class:digital-archive",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ETSI Metaverse Domain Taxonomy]]",
+      "resolved": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureDomain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Crossover domain for ETSI metaverse categorisation addressing data preservation and management systems for cultural heritage digitisation, archival, and accessibility.
+
+- ### Bridge-To
+  - bridges-to:: [[Telecollaboration]] (tc)
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:ETSIDomain_DataMgmt_Culture
+  - owl-role:: Object
+  - owl-inferred:: infrastructure:VirtualObject
+  - belongs-to-domain:: [[InfrastructureDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]]
+
+- ### Relationships
+  - has-part:: [[Digital Archive]], [[Preservation System]], [[Heritage Database]], [[Access Control]]
+  - is-part-of:: [[ETSI Metaverse Domain Taxonomy]]
+  - requires:: [[Data Management]], [[Cultural Heritage Digitization]]
+  - enables:: [[Long-term Preservation]], [[Public Access]], [[Educational Outreach]]
+  - depends-on:: [[Archival Standards]], [[Metadata Schemas]]
+
+- ### Content
+  ETSI Domain: Data Management + Cultural Heritage — content pending enrichment.
+
+- ### Provenance
+  - sources:: [[ETSI GR MEC 032]]
+  - migration-date:: 2026-04-26T00:00:00Z

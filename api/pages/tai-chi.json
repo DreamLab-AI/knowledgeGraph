@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:ac5c957df7dd809f67aac1ad6ecf05cbacb2e98d4b78f16988d80d96e5a02d9b",
+  "title": "Tai Chi",
+  "slug": "tai-chi",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tai-chi",
+  "domain": "infrastructure",
+  "definition": "Tai Chi is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "research-tools",
+      "label": "Research Tools"
+    }
+  ],
+  "backlinks": []
+}

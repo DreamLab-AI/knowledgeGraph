@@ -1,0 +1,124 @@
+{
+  "id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f",
+  "title": "Language Modeling",
+  "slug": "language-modeling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:language-modeling",
+  "domain": "spatial-computing",
+  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "omniverse",
+      "label": "Omniverse"
+    },
+    {
+      "slug": "open-usd",
+      "label": "OpenUSD"
+    },
+    {
+      "slug": "presentation",
+      "label": "presentation"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:8c8753b8e5445f4bf8064cb4c18055d9a85fd4a6724b116a7f741dc55d8a16ea",
+  "title": "Token Bonding Curve",
+  "slug": "token-bonding-curve",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:token-bonding-curve",
+  "domain": "spatial-computing",
+  "definition": "Algorithmic pricing mechanism that defines token value as a mathematical function of circulating supply and reserve balance, providing continuous liquidity through automated market making.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:liquidity-mechanism",
+        "label": "Liquidity Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:pricing-formula",
+        "label": "Pricing Formula"
+      },
+      {
+        "id": "urn:visionflow:linked:reserve-pool",
+        "label": "Reserve Pool"
+      },
+      {
+        "id": "urn:visionflow:linked:supply-function",
+        "label": "Supply Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:reserve-token",
+        "label": "Reserve Token"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-trading",
+        "label": "Automated Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:continuous-liquidity",
+        "label": "Continuous Liquidity"
+      },
+      {
+        "id": "urn:visionflow:linked:predictable-pricing",
+        "label": "Predictable Pricing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-trading",
+      "label": "Automated Trading"
+    },
+    {
+      "slug": "continuous-liquidity",
+      "label": "Continuous Liquidity"
+    },
+    {
+      "slug": "de-fi-standards-alliance",
+      "label": "DeFi Standards Alliance"
+    },
+    {
+      "slug": "liquidity-mechanism",
+      "label": "Liquidity Mechanism"
+    },
+    {
+      "slug": "mathematical-model",
+      "label": "Mathematical Model"
+    },
+    {
+      "slug": "predictable-pricing",
+      "label": "Predictable Pricing"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "pricing-formula",
+      "label": "Pricing Formula"
+    },
+    {
+      "slug": "reserve-pool",
+      "label": "Reserve Pool"
+    },
+    {
+      "slug": "reserve-token",
+      "label": "Reserve Token"
+    },
+    {
+      "slug": "supply-function",
+      "label": "Supply Function"
+    },
+    {
+      "slug": "token-economy",
+      "label": "Token Economy"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "economic-parameters",
+      "label": "Economic Parameters"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

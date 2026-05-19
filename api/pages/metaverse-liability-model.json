@@ -1,0 +1,214 @@
+{
+  "id": "urn:visionflow:page:95776ae17a0f43e1586f6a3a0c3183ace0eb60074fa7e8adb3fe5983b7ef76c2",
+  "title": "Metaverse Liability Model",
+  "slug": "metaverse-liability-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-liability-model",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive legal responsibility framework for virtual worlds that defines liability attribution, responsibility allocation, and harm redress mechanisms across platforms, users, AI agents, and content creators in metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-agent-liability",
+        "label": "AI Agent Liability"
+      },
+      {
+        "id": "urn:visionflow:linked:content-creator-liability",
+        "label": "Content Creator Liability"
+      },
+      {
+        "id": "urn:visionflow:linked:harm-redress-mechanism",
+        "label": "Harm Redress Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:insurance-integration",
+        "label": "Insurance Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-liability-framework",
+        "label": "Platform Liability Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:user-liability-rules",
+        "label": "User Liability Rules"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:evidence-collection",
+        "label": "Evidence Collection"
+      },
+      {
+        "id": "urn:visionflow:linked:harm-classification-system",
+        "label": "Harm Classification System"
+      },
+      {
+        "id": "urn:visionflow:linked:jurisdiction-mapping",
+        "label": "Jurisdiction Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:liability-attribution-engine",
+        "label": "Liability Attribution Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:harm-compensation",
+        "label": "Harm Compensation"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-accountability",
+        "label": "Legal Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-protection",
+        "label": "Platform Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:user-protection",
+        "label": "User Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-logging",
+      "label": "Activity Logging"
+    },
+    {
+      "slug": "ai-agent-liability",
+      "label": "AI Agent Liability"
+    },
+    {
+      "slug": "content-creator-liability",
+      "label": "Content Creator Liability"
+    },
+    {
+      "slug": "dispute-resolution",
+      "label": "Dispute Resolution"
+    },
+    {
+      "slug": "eu-digital-services-act",
+      "label": "EU Digital Services Act"
+    },
+    {
+      "slug": "evidence-collection",
+      "label": "Evidence Collection"
+    },
+    {
+      "slug": "harm-classification-system",
+      "label": "Harm Classification System"
+    },
+    {
+      "slug": "harm-compensation",
+      "label": "Harm Compensation"
+    },
+    {
+      "slug": "harm-redress-mechanism",
+      "label": "Harm Redress Mechanism"
+    },
+    {
+      "slug": "insurance-integration",
+      "label": "Insurance Integration"
+    },
+    {
+      "slug": "jurisdiction-mapping",
+      "label": "Jurisdiction Mapping"
+    },
+    {
+      "slug": "legal-accountability",
+      "label": "Legal Accountability"
+    },
+    {
+      "slug": "legal-governance-framework",
+      "label": "Legal Governance Framework"
+    },
+    {
+      "slug": "legal-precedent-database",
+      "label": "Legal Precedent Database"
+    },
+    {
+      "slug": "liability-attribution-engine",
+      "label": "Liability Attribution Engine"
+    },
+    {
+      "slug": "platform-liability-framework",
+      "label": "Platform Liability Framework"
+    },
+    {
+      "slug": "platform-protection",
+      "label": "Platform Protection"
+    },
+    {
+      "slug": "product-liability-directive",
+      "label": "Product Liability Directive"
+    },
+    {
+      "slug": "section-230-cda",
+      "label": "Section 230 CDA"
+    },
+    {
+      "slug": "terms-of-service",
+      "label": "Terms of Service"
+    },
+    {
+      "slug": "user-liability-rules",
+      "label": "User Liability Rules"
+    },
+    {
+      "slug": "user-protection",
+      "label": "User Protection"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "virtual-society-regulations",
+      "label": "Virtual Society Regulations"
+    }
+  ],
+  "backlinks": []
+}

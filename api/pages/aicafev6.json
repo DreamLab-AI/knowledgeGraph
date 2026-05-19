@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:15894c342f38b45ea44b1544d43816d9290727ceba048f5337289b7d6601b7d5",
+  "title": "AICafev6",
+  "slug": "aicafev6",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:aicafev6",
+  "domain": "infrastructure",
+  "definition": "AICafev6 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "vision-flow-and-junkie-jarvis",
+      "label": "VisionFlow and Junkie Jarvis"
+    }
+  ],
+  "backlinks": []
+}

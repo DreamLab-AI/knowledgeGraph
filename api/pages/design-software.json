@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:9067d35208585dbcbe141ad2f1700557522bc226403a3c15f1f709d679564b06",
+  "title": "Design Software",
+  "slug": "design-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:design-software",
+  "domain": "spatial-computing",
+  "definition": "Design Software is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bim-software",
+      "label": "BIM Software"
+    }
+  ]
+}

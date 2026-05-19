@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:52a5afe62f585aef3eef61f0a641331c226d99dfa13b54ce3d0e996dc6d1c04d",
+  "title": "Media Theory",
+  "slug": "media-theory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:media-theory",
+  "domain": "distributed-collaboration",
+  "definition": "Media Theory is a concept within the telecollaboration domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    }
+  ]
+}

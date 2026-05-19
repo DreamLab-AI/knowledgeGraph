@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:caff895e1b4e5a67179144fae616e7fe17f065a9ee02d082d85705128f406ae0",
+  "title": "Virtual World Building",
+  "slug": "virtual-world-building",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-world-building",
+  "domain": "spatial-computing",
+  "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-design",
+      "label": "3D Design"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-design",
+      "label": "3D Design"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    }
+  ]
+}

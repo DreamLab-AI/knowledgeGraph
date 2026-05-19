@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:8863702b6f99456cf84b9abd1fce1ca0e203520e6b5a461aa399f2d1c64fe1ab",
+  "title": "Orphan Reddit Links",
+  "slug": "orphan-reddit-links",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:orphan-reddit-links",
+  "domain": "infrastructure",
+  "definition": "Orphan Reddit Links is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

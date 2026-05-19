@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:aac956e03f1e2210ac04181552b1f9ab242e577f8b4744c67211f83cc3b10193",
+  "title": "Some legacy Linked-JSON",
+  "slug": "some-legacy-linked-json",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:some-legacy-linked-json",
+  "domain": "infrastructure",
+  "definition": "Some legacy Linked-JSON is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    }
+  ]
+}

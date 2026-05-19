@@ -1,0 +1,260 @@
+{
+  "id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03",
+  "title": "SLAM",
+  "slug": "slam",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:slam",
+  "domain": "spatial-computing",
+  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining [[LocalizationTechnique|localisation]] and [[MapConstruction|map construction]] in real-time. Essential for [[AutonomousNavigation|autonomous navigation]], [[AugmentedReality|AR/VR systems]], and [[AutonomousVehicles|autonomous vehicles]], SLAM processes sensor data from [[LiDAR]], [[RGBDCamera|RGB-D cameras]], and [[VisualOdometry|visual odometry]] to estimate robot pose and build spatial representations. Modern implementations integrate [[DeepLearning|neural networks]] for improved robustness and performance in dynamic environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-mapping",
+      "label": "Spatial Mapping"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-vehicles",
+      "label": "AutonomousVehicles"
+    },
+    {
+      "slug": "builds-map",
+      "label": "buildsMap"
+    },
+    {
+      "slug": "dt-enables-for",
+      "label": "dt:enablesFor"
+    },
+    {
+      "slug": "dt-enhanced-by",
+      "label": "dt:enhancedBy"
+    },
+    {
+      "slug": "dt-optimized-by",
+      "label": "dt:optimizedBy"
+    },
+    {
+      "slug": "dt-used-in",
+      "label": "dt:usedIn"
+    },
+    {
+      "slug": "dt-validated-in",
+      "label": "dt:validatedIn"
+    },
+    {
+      "slug": "estimates-state",
+      "label": "estimatesState"
+    },
+    {
+      "slug": "graph-optimization",
+      "label": "GraphOptimization"
+    },
+    {
+      "slug": "implements-algorithm",
+      "label": "implementsAlgorithm"
+    },
+    {
+      "slug": "li-dar",
+      "label": "LiDAR"
+    },
+    {
+      "slug": "localization-technique",
+      "label": "LocalizationTechnique"
+    },
+    {
+      "slug": "loop-closure",
+      "label": "LoopClosure"
+    },
+    {
+      "slug": "map-construction",
+      "label": "MapConstruction"
+    },
+    {
+      "slug": "mapping",
+      "label": "Mapping"
+    },
+    {
+      "slug": "occupancy-grid",
+      "label": "OccupancyGrid"
+    },
+    {
+      "slug": "rgbdcamera",
+      "label": "RGBDCamera"
+    },
+    {
+      "slug": "uses-sensor",
+      "label": "usesSensor"
+    },
+    {
+      "slug": "visual-odometry",
+      "label": "VisualOdometry"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "AugmentedReality"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "AugmentedReality"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "AutonomousNavigation"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "AutonomousRobot"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "DeepLearning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "DeepLearning"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "PoseEstimation"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "VirtualEnvironment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    }
+  ]
+}

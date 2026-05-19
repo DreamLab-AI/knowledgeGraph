@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:b26ef48f3095382442651b4c5db06961ac68bba8ac4208dfac4c15e8fa2476ed",
+  "title": "Virtual World Traversal",
+  "slug": "virtual-world-traversal",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-world-traversal",
+  "domain": "spatial-computing",
+  "definition": "Virtual World Traversal is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": []
+}

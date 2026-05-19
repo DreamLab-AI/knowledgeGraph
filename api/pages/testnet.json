@@ -1,0 +1,560 @@
+{
+  "id": "urn:visionflow:page:9e964691e40b18ac8d6574bf3e7ce9e71d9faa479f306efdc5198bdd9a84a852",
+  "title": "Testnet",
+  "slug": "testnet",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:testnet",
+  "domain": "blockchain",
+  "definition": "Blockchain testnet is a parallel blockchain network maintained by protocol developers and validators that mirrors the structure, consensus rules, and transaction semantics of a production mainnet whilst operating in a sandboxed environment with free or faucet-dispensed native tokens (typically 1 million+ validators/testers maintaining testnet nodes generating blocks every 12-15 seconds Ethereum Sepolia, Bitcoin Testnet3 network difficulty adjusted to 1/3 mainnet targeting ~10 minute blocks with ~2000 active miners), enabling smart contract developers to deploy and test contract code under realistic network conditions without financial risk or mainnet state pollution, protocol upgrade testing where new consensus rules, cryptographic algorithms (post-quantum lattice-based signatures, BLS aggregation), and economic mechanisms are validated on live networks before mainnet activation (Ethereum 2.0 Beacon Chain testing 2020-2021 across Pyrmont/Goerli/Sepolia testnets with 300K+ validators, Bitcoin Taproot upgrade tested on Signet with 150+ block producers), operational testing of full-stack node infrastructure including peer-to-peer networking (libp2p with 500+ concurrent connections per",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:protocol-implementation",
+      "label": "Protocol Implementation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:testing-infrastructure",
+      "label": "Testing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.51,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:block-explorer",
+        "label": "Block Explorer"
+      },
+      {
+        "id": "urn:visionflow:linked:faucet",
+        "label": "Faucet"
+      },
+      {
+        "id": "urn:visionflow:linked:mining-staking-pool",
+        "label": "Mining/Staking Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:visionflow:owl:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "id": "urn:visionflow:owl:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:consensus-rules",
+        "label": "Consensus Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:visionflow:linked:native-token-distribution",
+        "label": "Native Token Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:peer-to-peer-protocol",
+        "label": "Peer-to-Peer Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:state-management",
+        "label": "State Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:consensus-research",
+        "label": "Consensus Research"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-chain-integration",
+        "label": "Cross-Chain Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:d-app-deployment",
+        "label": "dApp Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-testing",
+        "label": "Protocol Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-development",
+        "label": "Smart Contract Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:pbft-consensus",
+        "label": "PBFT Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:validator-selection",
+        "label": "Validator Selection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "label": "Proof-of-Stake"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof-of-Work"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adler-quintyne-collins-2019-building-scalable-decentralized-payment-systems",
+      "label": "Adler Quintyne-Collins 2019 Building Scalable Decentralized Payment Systems"
+    },
+    {
+      "slug": "al-bassam-sonnino-buterin-2018-fraud-and-data-availability-proofs",
+      "label": "Al-Bassam Sonnino Buterin 2018 Fraud and Data Availability Proofs"
+    },
+    {
+      "slug": "arbitrum-sepolia",
+      "label": "Arbitrum Sepolia"
+    },
+    {
+      "slug": "bahack-2013-bitcoin-po-w-theoretical-attacks",
+      "label": "Bahack 2013 Bitcoin PoW Theoretical Attacks"
+    },
+    {
+      "slug": "ben-sasson-et-al-2014-zk-snarks-succinct",
+      "label": "Ben-Sasson et al 2014 zk-SNARKs Succinct"
+    },
+    {
+      "slug": "bitcoin-core",
+      "label": "Bitcoin Core"
+    },
+    {
+      "slug": "bitcoin-testnet3",
+      "label": "Bitcoin Testnet3"
+    },
+    {
+      "slug": "block-explorer",
+      "label": "Block Explorer"
+    },
+    {
+      "slug": "blockchain-grounded-domain",
+      "label": "Blockchain-GroundedDomain"
+    },
+    {
+      "slug": "buchman-kwon-milosevic-2018-tendermint-bft",
+      "label": "Buchman Kwon Milosevic 2018 Tendermint BFT"
+    },
+    {
+      "slug": "bug-discovery",
+      "label": "Bug Discovery"
+    },
+    {
+      "slug": "buterin-2014-ethereum-yellow-paper",
+      "label": "Buterin 2014 Ethereum Yellow Paper"
+    },
+    {
+      "slug": "buterin-and-griffith-2017-casper-ffg",
+      "label": "Buterin & Griffith 2017 Casper FFG"
+    },
+    {
+      "slug": "buterin-hertzog-hsu-2019-combining-ghost-and-casper",
+      "label": "Buterin Hertzog Hsu 2019 Combining GHOST and Casper"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "consensus-liveness",
+      "label": "Consensus Liveness"
+    },
+    {
+      "slug": "consensus-research",
+      "label": "Consensus Research"
+    },
+    {
+      "slug": "consensus-rules",
+      "label": "Consensus Rules"
+    },
+    {
+      "slug": "cross-chain-integration",
+      "label": "Cross-Chain Integration"
+    },
+    {
+      "slug": "cross-client-interoperability",
+      "label": "Cross-Client Interoperability"
+    },
+    {
+      "slug": "cryptographic-primitives",
+      "label": "Cryptographic Primitives"
+    },
+    {
+      "slug": "cryptographic-soundness",
+      "label": "Cryptographic Soundness"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "d-app-deployment",
+      "label": "dApp Deployment"
+    },
+    {
+      "slug": "daian-et-al-2020-flash-boys-2-0-mev",
+      "label": "Daian et al 2020 Flash Boys 2.0 MEV"
+    },
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "deployment-risk",
+      "label": "Deployment Risk"
+    },
+    {
+      "slug": "developer-onboarding",
+      "label": "Developer Onboarding"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "economic-incentive-alignment",
+      "label": "Economic Incentive Alignment"
+    },
+    {
+      "slug": "economic-models",
+      "label": "Economic Models"
+    },
+    {
+      "slug": "eigenlayer-whitepaper-2024-restaking-cryptoeconomic-security",
+      "label": "Eigenlayer Whitepaper 2024 Restaking Cryptoeconomic Security"
+    },
+    {
+      "slug": "ethereum-specification",
+      "label": "Ethereum Specification"
+    },
+    {
+      "slug": "eyal-and-sirer-2014-selfish-mining",
+      "label": "Eyal & Sirer 2014 Selfish Mining"
+    },
+    {
+      "slug": "faucet",
+      "label": "Faucet"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "formal-verification-theory",
+      "label": "Formal Verification Theory"
+    },
+    {
+      "slug": "foundation-ethereum-2024-goerli-testnet-sunset-retrospective",
+      "label": "Foundation Ethereum 2024 Goerli Testnet Sunset Retrospective"
+    },
+    {
+      "slug": "gabizon-williamson-ciobotaru-2019-plon-k-universal-snarks",
+      "label": "Gabizon Williamson Ciobotaru 2019 PlonK Universal SNARKs"
+    },
+    {
+      "slug": "garay-kiayias-leonardos-2015-bitcoin-backbone",
+      "label": "Garay Kiayias Leonardos 2015 Bitcoin Backbone"
+    },
+    {
+      "slug": "goldwasser-micali-rackoff-1989-zero-knowledge-proofs",
+      "label": "Goldwasser Micali Rackoff 1989 Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "heimbach-wattenhofer-2022-eliminating-sandwich-attacks",
+      "label": "Heimbach Wattenhofer 2022 Eliminating Sandwich Attacks"
+    },
+    {
+      "slug": "holesky-testnet",
+      "label": "Holesky Testnet"
+    },
+    {
+      "slug": "kalodner-et-al-2018-arbitrum-off-chain-computation",
+      "label": "Kalodner et al 2018 Arbitrum Off-Chain Computation"
+    },
+    {
+      "slug": "khalilov-and-tran-2022-ethereum-systems-security-survey",
+      "label": "Khalilov & Tran 2022 Ethereum Systems Security Survey"
+    },
+    {
+      "slug": "kiayias-russell-david-oliynykov-2017-ouroboros-po-s",
+      "label": "Kiayias Russell David Oliynykov 2017 Ouroboros PoS"
+    },
+    {
+      "slug": "kwon-buchman-2019-cosmos-network-vision",
+      "label": "Kwon Buchman 2019 Cosmos Network Vision"
+    },
+    {
+      "slug": "local-development-network",
+      "label": "Local Development Network"
+    },
+    {
+      "slug": "mainnet",
+      "label": "Mainnet"
+    },
+    {
+      "slug": "merkle-trees",
+      "label": "Merkle Trees"
+    },
+    {
+      "slug": "mining-staking-pool",
+      "label": "Mining/Staking Pool"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "native-token-distribution",
+      "label": "Native Token Distribution"
+    },
+    {
+      "slug": "network-protocol-stack",
+      "label": "Network Protocol Stack"
+    },
+    {
+      "slug": "optimism-sepolia",
+      "label": "Optimism Sepolia"
+    },
+    {
+      "slug": "parmentel-sall-jevons-2023-mev-boost-empirical-analysis",
+      "label": "Parmentel Sall Jevons 2023 MEV-Boost Empirical Analysis"
+    },
+    {
+      "slug": "pass-seeman-shelat-2017-asynchronous-blockchain-analysis",
+      "label": "Pass Seeman Shelat 2017 Asynchronous Blockchain Analysis"
+    },
+    {
+      "slug": "pbft-consensus",
+      "label": "PBFT Consensus"
+    },
+    {
+      "slug": "peer-to-peer-protocol",
+      "label": "Peer-to-Peer Protocol"
+    },
+    {
+      "slug": "performance-benchmarking",
+      "label": "Performance Benchmarking"
+    },
+    {
+      "slug": "polkadot-runtime",
+      "label": "Polkadot Runtime"
+    },
+    {
+      "slug": "polygon-amoy",
+      "label": "Polygon Amoy"
+    },
+    {
+      "slug": "poon-buterin-2017-plasma-scaling",
+      "label": "Poon Buterin 2017 Plasma Scaling"
+    },
+    {
+      "slug": "protocol-implementation",
+      "label": "Protocol Implementation"
+    },
+    {
+      "slug": "protocol-testing",
+      "label": "Protocol Testing"
+    },
+    {
+      "slug": "protocol-upgrade",
+      "label": "Protocol Upgrade"
+    },
+    {
+      "slug": "protocol-upgrade-uncertainty",
+      "label": "Protocol Upgrade Uncertainty"
+    },
+    {
+      "slug": "rlp-encoding",
+      "label": "RLP Encoding"
+    },
+    {
+      "slug": "security-auditing",
+      "label": "Security Auditing"
+    },
+    {
+      "slug": "sepolia-testnet",
+      "label": "Sepolia Testnet"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "smart-contract-development",
+      "label": "Smart Contract Development"
+    },
+    {
+      "slug": "smart-contract-vulnerability",
+      "label": "Smart Contract Vulnerability"
+    },
+    {
+      "slug": "solana-devnet",
+      "label": "Solana Devnet"
+    },
+    {
+      "slug": "staging-environment",
+      "label": "Staging Environment"
+    },
+    {
+      "slug": "state-management",
+      "label": "State Management"
+    },
+    {
+      "slug": "trail-of-bits-2024-bridge-security-aggregate-report",
+      "label": "Trail of Bits 2024 Bridge Security Aggregate Report"
+    },
+    {
+      "slug": "transaction-mempool",
+      "label": "Transaction Mempool"
+    },
+    {
+      "slug": "validator-economics",
+      "label": "Validator Economics"
+    },
+    {
+      "slug": "validator-misconfiguration-risk",
+      "label": "Validator Misconfiguration Risk"
+    },
+    {
+      "slug": "validator-selection",
+      "label": "Validator Selection"
+    },
+    {
+      "slug": "validator-training",
+      "label": "Validator Training"
+    },
+    {
+      "slug": "wood-2016-polkadot-multichain-vision",
+      "label": "Wood 2016 Polkadot Multichain Vision"
+    },
+    {
+      "slug": "yaish-qin-tang-2024-blockchain-stalker-restaking-risks",
+      "label": "Yaish Qin Tang 2024 Blockchain Stalker Restaking Risks"
+    },
+    {
+      "slug": "yakovenko-2018-solana-proof-of-history",
+      "label": "Yakovenko 2018 Solana Proof of History"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cosmos-ibc",
+      "label": "Cosmos IBC"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "genesis-block",
+      "label": "Genesis Block"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "state-machine-replication",
+      "label": "State Machine Replication"
+    },
+    {
+      "slug": "testing-infrastructure",
+      "label": "Testing Infrastructure"
+    },
+    {
+      "slug": "validator-node",
+      "label": "Validator Node"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "runes-and-glyphs",
+      "label": "Runes and Glyphs"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

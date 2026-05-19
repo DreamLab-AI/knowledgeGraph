@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:048e394ebc5457c5ab1fcee75da06462811c9df72f273408831fff3397b6be14",
+  "title": "rb 0024 workspace",
+  "slug": "rb-0024-workspace",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0024-workspace",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

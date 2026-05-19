@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:6aebfeb79efe77570fc745314b025fec7737a565cf13cbc0bc131ce5372fbfe1",
+  "title": "ZK-SNARKs",
+  "slug": "zk-snarks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:zk-snarks",
+  "domain": "spatial-computing",
+  "definition": "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verifier, though requiring a trusted setup ceremony.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:a47c6cd4e352b99ca1d167a48314186d7d4216fac680962f180c80e9c4434b76",
+  "title": "Robot Safety",
+  "slug": "robot-safety",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-safety",
+  "domain": "robotics",
+  "definition": "**Robot Safety** - Robot Safety in robotics systems",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

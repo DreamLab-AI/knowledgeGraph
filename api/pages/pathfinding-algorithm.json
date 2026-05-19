@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:0572a1ddf7a0e6f7ee6f50133424e02703aecff9549bc5bbb825f55245f57bea",
+  "title": "Pathfinding Algorithm",
+  "slug": "pathfinding-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pathfinding-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "Pathfinding Algorithm is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:algorithm",
+      "label": "Algorithm"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

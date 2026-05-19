@@ -1,0 +1,576 @@
+{
+  "id": "urn:visionflow:page:1529739f2d7b3b69e00398df438525fe00b61c4d5c59fede2f7253fc4a58246d",
+  "title": "Bayes Filter",
+  "slug": "bayes-filter",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bayes-filter",
+  "domain": "artificial-intelligence",
+  "definition": "BayesFilter denotes the canonical recursive probabilistic framework for sequential state estimation in partially-observable stochastic dynamical systems, computing at each timestep the posterior belief bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the latent system state x_t conditioned on the full history of observations z_{1:t} and control inputs u_{1:t}, decomposed via the Markov assumption into a two-stage recursion comprising the **prediction step** bel(x_t) = \u222b p(x_t | u_t, x_{t-1}) bel(x_{t-1}) dx_{t-1} (Chapman-Kolmogorov propagation of the prior belief forward through the motion model p(x_t | u_t, x_{t-1})) and the **measurement update step** bel(x_t) = \u03b7 p(z_t | x_t) bel(x_t) (Bayes-rule incorporation of the new sensor observation z_t weighted by the observation likelihood p(z_t | x_t) and normalised by \u03b7 to integrate to unity), constituting the theoretical substrate of [[Probabilistic Robotics]] (Thrun, Burgard & Fox 2005, MIT Press, 16,000+ citations) and the algorithmic backbone of essentially all modern robotic localisation, [[SLAM]] (Simultaneous Localisation and Mapping), target-tracking, sensor-fusion, navigation and autonomy stacks deployed across an estimated 12 mill",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "id": "urn:visionflow:linked:probabilistic-filter",
+      "label": "Probabilistic Filter"
+    },
+    {
+      "id": "urn:visionflow:linked:recursive-estimator",
+      "label": "Recursive Estimator"
+    },
+    {
+      "id": "urn:visionflow:linked:sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
+    },
+    {
+      "id": "urn:visionflow:owl:class:state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:belief-state",
+        "label": "Belief State"
+      },
+      {
+        "id": "urn:visionflow:linked:measurement-update-step",
+        "label": "Measurement Update Step"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:normalisation-constant",
+        "label": "Normalisation Constant"
+      },
+      {
+        "id": "urn:visionflow:linked:observation-model",
+        "label": "Observation Model"
+      },
+      {
+        "id": "urn:visionflow:linked:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:prediction-step",
+        "label": "Prediction Step"
+      },
+      {
+        "id": "urn:visionflow:linked:prior-distribution",
+        "label": "Prior Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:control-inputs",
+        "label": "Control Inputs"
+      },
+      {
+        "id": "urn:visionflow:linked:initial-belief",
+        "label": "Initial Belief"
+      },
+      {
+        "id": "urn:visionflow:linked:markov-assumption",
+        "label": "Markov Assumption"
+      },
+      {
+        "id": "urn:visionflow:linked:probabilistic-motion-model",
+        "label": "Probabilistic Motion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:probabilistic-observation-model",
+        "label": "Probabilistic Observation Model"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-measurements",
+        "label": "Sensor Measurements"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:active-perception",
+        "label": "Active Perception"
+      },
+      {
+        "id": "urn:visionflow:linked:belief-space-planning",
+        "label": "Belief-Space Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-localisation",
+        "label": "Robot Localisation"
+      },
+      {
+        "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:target-tracking",
+        "label": "Target Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bayes-rule",
+        "label": "Bayes Rule"
+      },
+      {
+        "id": "urn:visionflow:linked:chapman-kolmogorov-equation",
+        "label": "Chapman-Kolmogorov Equation"
+      },
+      {
+        "id": "urn:visionflow:linked:recursive-state-estimation",
+        "label": "Recursive State Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:sequential-bayesian-updating",
+        "label": "Sequential Bayesian Updating"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "active-perception",
+      "label": "Active Perception"
+    },
+    {
+      "slug": "aerospace-guidance-navigation-control",
+      "label": "Aerospace Guidance Navigation Control"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "arasaratnam-haykin-2009-cubature-kalman-filters",
+      "label": "Arasaratnam Haykin 2009 Cubature Kalman Filters"
+    },
+    {
+      "slug": "arulampalam-maskell-gordon-clapp-2002-particle-filter-tutorial",
+      "label": "Arulampalam Maskell Gordon Clapp 2002 Particle Filter Tutorial"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "bar-shalom-li-kirubarajan-2001-estimation-with-tracking-and-navigation",
+      "label": "Bar-Shalom Li Kirubarajan 2001 Estimation with Tracking and Navigation"
+    },
+    {
+      "slug": "batch-optimisation",
+      "label": "Batch Optimisation"
+    },
+    {
+      "slug": "bayes-rule",
+      "label": "Bayes Rule"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "belief-space-planning",
+      "label": "Belief-Space Planning"
+    },
+    {
+      "slug": "belief-state",
+      "label": "Belief State"
+    },
+    {
+      "slug": "campos-elvira-gomez-rodriguez-montiel-tardos-2021-orb-slam3",
+      "label": "Campos Elvira Gomez Rodriguez Montiel Tardos 2021 ORB-SLAM3"
+    },
+    {
+      "slug": "chapman-kolmogorov-equation",
+      "label": "Chapman-Kolmogorov Equation"
+    },
+    {
+      "slug": "control-and-estimation-domain",
+      "label": "ControlAndEstimationDomain"
+    },
+    {
+      "slug": "control-inputs",
+      "label": "Control Inputs"
+    },
+    {
+      "slug": "davison-reid-molton-stasse-2007-mono-slam",
+      "label": "Davison Reid Molton Stasse 2007 MonoSLAM"
+    },
+    {
+      "slug": "dellaert-fox-burgard-thrun-1999-monte-carlo-localization",
+      "label": "Dellaert Fox Burgard Thrun 1999 Monte Carlo Localization"
+    },
+    {
+      "slug": "deterministic-observer",
+      "label": "Deterministic Observer"
+    },
+    {
+      "slug": "doucet-de-freitas-gordon-2001-sequential-monte-carlo-methods",
+      "label": "Doucet de Freitas Gordon 2001 Sequential Monte Carlo Methods"
+    },
+    {
+      "slug": "doucet-de-freitas-murphy-russell-2000-rao-blackwellised-pf",
+      "label": "Doucet de Freitas Murphy Russell 2000 Rao-Blackwellised PF"
+    },
+    {
+      "slug": "drone-autonomy",
+      "label": "Drone Autonomy"
+    },
+    {
+      "slug": "durrant-whyte-bailey-2006-slam-part-i",
+      "label": "Durrant-Whyte Bailey 2006 SLAM Part I"
+    },
+    {
+      "slug": "dynamic-bayesian-network",
+      "label": "Dynamic Bayesian Network"
+    },
+    {
+      "slug": "dynamic-bayesian-networks",
+      "label": "Dynamic Bayesian Networks"
+    },
+    {
+      "slug": "expectation-maximisation",
+      "label": "Expectation Maximisation"
+    },
+    {
+      "slug": "factor-graph",
+      "label": "Factor Graph"
+    },
+    {
+      "slug": "fox-2003-adaptive-particle-filters-kld-sampling",
+      "label": "Fox 2003 Adaptive Particle Filters KLD-Sampling"
+    },
+    {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
+      "slug": "gordon-salmond-smith-1993-novel-approach-nonlinear-non-gaussian",
+      "label": "Gordon Salmond Smith 1993 Novel Approach Nonlinear Non-Gaussian"
+    },
+    {
+      "slug": "haarnoja-ajay-levine-abbeel-2016-backprop-kf",
+      "label": "Haarnoja Ajay Levine Abbeel 2016 Backprop KF"
+    },
+    {
+      "slug": "hidden-markov-models",
+      "label": "Hidden Markov Models"
+    },
+    {
+      "slug": "ieee-robotics-and-automation-society",
+      "label": "IEEE Robotics And Automation Society"
+    },
+    {
+      "slug": "ieee-transactions-on-robotics",
+      "label": "IEEE Transactions on Robotics"
+    },
+    {
+      "slug": "ieee-transactions-on-signal-processing",
+      "label": "IEEE Transactions on Signal Processing"
+    },
+    {
+      "slug": "importance-sampling",
+      "label": "Importance Sampling"
+    },
+    {
+      "slug": "initial-belief",
+      "label": "Initial Belief"
+    },
+    {
+      "slug": "isard-blake-1998-condensation-visual-tracking",
+      "label": "Isard Blake 1998 CONDENSATION Visual Tracking"
+    },
+    {
+      "slug": "jonschkowski-rastogi-brock-2018-differentiable-particle-filters",
+      "label": "Jonschkowski Rastogi Brock 2018 Differentiable Particle Filters"
+    },
+    {
+      "slug": "julier-uhlmann-1997-new-extension-kalman-filter-nonlinear",
+      "label": "Julier Uhlmann 1997 New Extension Kalman Filter Nonlinear"
+    },
+    {
+      "slug": "kaess-johannsson-roberts-ila-leonard-dellaert-2012-i-sam2-bayes-tree",
+      "label": "Kaess Johannsson Roberts Ila Leonard Dellaert 2012 iSAM2 Bayes Tree"
+    },
+    {
+      "slug": "kalman-1960-new-approach-to-linear-filtering",
+      "label": "Kalman 1960 New Approach to Linear Filtering"
+    },
+    {
+      "slug": "karkus-hsu-lee-2018-particle-filter-networks",
+      "label": "Karkus Hsu Lee 2018 Particle Filter Networks"
+    },
+    {
+      "slug": "krishnan-shalit-sontag-2017-structured-inference-networks-state-space",
+      "label": "Krishnan Shalit Sontag 2017 Structured Inference Networks State Space"
+    },
+    {
+      "slug": "kushner-1964-differential-equations-conditional-probability-densities",
+      "label": "Kushner 1964 Differential Equations Conditional Probability Densities"
+    },
+    {
+      "slug": "least-squares-estimation",
+      "label": "Least Squares Estimation"
+    },
+    {
+      "slug": "linearisation",
+      "label": "Linearisation"
+    },
+    {
+      "slug": "markov-assumption",
+      "label": "Markov Assumption"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "measurement-update-step",
+      "label": "Measurement Update Step"
+    },
+    {
+      "slug": "mobile-robotics",
+      "label": "Mobile Robotics"
+    },
+    {
+      "slug": "monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    },
+    {
+      "slug": "montemerlo-thrun-koller-wegbreit-2002-fast-slam",
+      "label": "Montemerlo Thrun Koller Wegbreit 2002 FastSLAM"
+    },
+    {
+      "slug": "motion-model",
+      "label": "Motion Model"
+    },
+    {
+      "slug": "normalisation-constant",
+      "label": "Normalisation Constant"
+    },
+    {
+      "slug": "observation-model",
+      "label": "Observation Model"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "PerceptionLayer"
+    },
+    {
+      "slug": "pitt-shephard-1999-auxiliary-particle-filters",
+      "label": "Pitt Shephard 1999 Auxiliary Particle Filters"
+    },
+    {
+      "slug": "pomdp",
+      "label": "POMDP"
+    },
+    {
+      "slug": "pose-graph-optimisation",
+      "label": "Pose Graph Optimisation"
+    },
+    {
+      "slug": "posterior-distribution",
+      "label": "Posterior Distribution"
+    },
+    {
+      "slug": "prediction-step",
+      "label": "Prediction Step"
+    },
+    {
+      "slug": "prior-distribution",
+      "label": "Prior Distribution"
+    },
+    {
+      "slug": "probabilistic-filter",
+      "label": "Probabilistic Filter"
+    },
+    {
+      "slug": "probabilistic-inference-domain",
+      "label": "ProbabilisticInferenceDomain"
+    },
+    {
+      "slug": "probabilistic-motion-model",
+      "label": "Probabilistic Motion Model"
+    },
+    {
+      "slug": "probabilistic-observation-model",
+      "label": "Probabilistic Observation Model"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "probabilistic-robotics-textbook",
+      "label": "Probabilistic Robotics Textbook"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "pure-neural-state-estimation",
+      "label": "Pure Neural State Estimation"
+    },
+    {
+      "slug": "recursive-estimator",
+      "label": "Recursive Estimator"
+    },
+    {
+      "slug": "recursive-state-estimation",
+      "label": "Recursive State Estimation"
+    },
+    {
+      "slug": "resampling",
+      "label": "Resampling"
+    },
+    {
+      "slug": "robot-localisation",
+      "label": "Robot Localisation"
+    },
+    {
+      "slug": "ros-navigation-stack",
+      "label": "ROS Navigation Stack"
+    },
+    {
+      "slug": "sarkka-2013-bayesian-filtering-and-smoothing",
+      "label": "Sarkka 2013 Bayesian Filtering and Smoothing"
+    },
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "SensorFusionLayer"
+    },
+    {
+      "slug": "sensor-measurements",
+      "label": "Sensor Measurements"
+    },
+    {
+      "slug": "sequential-bayesian-updating",
+      "label": "Sequential Bayesian Updating"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
+    },
+    {
+      "slug": "sigma-point-sampling",
+      "label": "Sigma-Point Sampling"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "smoothing-and-mapping",
+      "label": "Smoothing And Mapping"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "slug": "stratonovich-1960-conditional-markov-processes",
+      "label": "Stratonovich 1960 Conditional Markov Processes"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "target-tracking",
+      "label": "Target Tracking"
+    },
+    {
+      "slug": "thrun-burgard-fox-2005-probabilistic-robotics",
+      "label": "Thrun Burgard Fox 2005 Probabilistic Robotics"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "zakai-1969-optimal-filtering-diffusion-processes",
+      "label": "Zakai 1969 Optimal Filtering Diffusion Processes"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

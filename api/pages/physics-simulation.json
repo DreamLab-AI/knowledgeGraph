@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:db4f7a72de3eb29056ec9448e77b2673e159f31de3d10d5852c46b5f22ea845e",
+  "title": "Physics Simulation",
+  "slug": "physics-simulation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:physics-simulation",
+  "domain": "spatial-computing",
+  "definition": "PhysicsSimulation is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "physics-material",
+      "label": "Physics Material"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-physical-collision",
+      "label": "Virtual Physical Collision"
+    }
+  ]
+}

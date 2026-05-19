@@ -1,0 +1,174 @@
+{
+  "id": "urn:visionflow:page:8cd039d8f31a665376d532a0e5460739e7640a51c0272fb54b1862176289ac9a",
+  "title": "DC Servo Motor",
+  "slug": "dc-servo-motor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dc-servo-motor",
+  "domain": "robotics",
+  "definition": "DC servo motor combines a direct-current electric motor with integrated or external feedback control electronics to enable precise position, velocity, or torque regulation. The servo loop continuously adjusts motor current based on sensor feedback, enabling rapid response to disturbances and accurate tracking of command trajectories for [[Robotic Manipulation]] and [[Motion Control]] applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "id": "urn:visionflow:owl:class:servo-motor",
+      "label": "Servo Motor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:control-electronics",
+        "label": "Control Electronics"
+      },
+      {
+        "id": "urn:visionflow:linked:current-driver",
+        "label": "Current Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:dc-motor",
+        "label": "DC Motor"
+      },
+      {
+        "id": "urn:visionflow:linked:position-encoder",
+        "label": "Position Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:dc-power-supply",
+        "label": "DC Power Supply"
+      },
+      {
+        "id": "urn:visionflow:linked:feedback-sensor",
+        "label": "Feedback Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanical-load",
+        "label": "Mechanical Load"
+      },
+      {
+        "id": "urn:visionflow:linked:servo-amplifier",
+        "label": "Servo Amplifier"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-control",
+        "label": "Dynamic Control"
+      },
+      {
+        "id": "urn:visionflow:linked:load-adaptation",
+        "label": "Load Adaptation"
+      },
+      {
+        "id": "urn:visionflow:linked:precise-positioning",
+        "label": "Precise Positioning"
+      },
+      {
+        "id": "urn:visionflow:linked:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bearings",
+      "label": "Bearings"
+    },
+    {
+      "slug": "control-electronics",
+      "label": "Control Electronics"
+    },
+    {
+      "slug": "cooling-system",
+      "label": "Cooling System"
+    },
+    {
+      "slug": "current-driver",
+      "label": "Current Driver"
+    },
+    {
+      "slug": "dc-motor",
+      "label": "DC Motor"
+    },
+    {
+      "slug": "dc-power-supply",
+      "label": "DC Power Supply"
+    },
+    {
+      "slug": "dynamic-control",
+      "label": "Dynamic Control"
+    },
+    {
+      "slug": "feedback-sensor",
+      "label": "Feedback Sensor"
+    },
+    {
+      "slug": "load-adaptation",
+      "label": "Load Adaptation"
+    },
+    {
+      "slug": "mechanical-load",
+      "label": "Mechanical Load"
+    },
+    {
+      "slug": "motor-shaft",
+      "label": "Motor Shaft"
+    },
+    {
+      "slug": "position-encoder",
+      "label": "Position Encoder"
+    },
+    {
+      "slug": "precise-positioning",
+      "label": "Precise Positioning"
+    },
+    {
+      "slug": "robotic-joint",
+      "label": "Robotic Joint"
+    },
+    {
+      "slug": "robotic-manipulation",
+      "label": "Robotic Manipulation"
+    },
+    {
+      "slug": "servo-amplifier",
+      "label": "Servo Amplifier"
+    },
+    {
+      "slug": "trajectory-tracking",
+      "label": "Trajectory Tracking"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "servo-motor",
+      "label": "Servo Motor"
+    }
+  ],
+  "backlinks": []
+}

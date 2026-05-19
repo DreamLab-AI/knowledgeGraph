@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:2ead0039f60059513184d25371bdeaed581db8880e873ac8fd109ac2856d5e5d",
+  "title": "Omnidirectional Robot",
+  "slug": "omnidirectional-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:omnidirectional-robot",
+  "domain": "robotics",
+  "definition": "Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:wheeled-robot",
+      "label": "Wheeled Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "wheeled-robot",
+      "label": "Wheeled Robot"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mecanum-wheel-robot",
+      "label": "Mecanum Wheel Robot"
+    }
+  ]
+}

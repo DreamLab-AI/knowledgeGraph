@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b",
+  "title": "Real Time Character Animation",
+  "slug": "real-time-character-animation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-character-animation",
+  "domain": "spatial-computing",
+  "definition": "The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-animation",
+      "label": "3D Animation"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:interactive-experiences",
+        "label": "Interactive Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-animation",
+      "label": "3D Animation"
+    },
+    {
+      "slug": "interactive-experiences",
+      "label": "Interactive Experiences"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "motion-solver-software",
+      "label": "Motion Solver Software"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

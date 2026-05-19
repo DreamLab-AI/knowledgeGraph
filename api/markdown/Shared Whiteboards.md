@@ -1,21 +1,198 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#SharedWhiteboards
-uri:: urn:visionclaw:concept:distributed-collaboration:shared-whiteboards
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:shared-whiteboards
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Shared Whiteboards
-content-hash:: sha256-12-0bda0ca5d97a
-legacy-term-id:: TC-0302
-status:: active
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#SharedWhiteboards
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:shared-whiteboards
 public:: true
+
+# Shared Whiteboards
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2",
+  "@type": "Page",
+  "vc:slug": "shared-whiteboards",
+  "title": "Shared Whiteboards",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "vc:label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "vc:label": "TELE-301-virtual-office-spaces"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0bda0ca5d97a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#SharedWhiteboards"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0302"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Shared Whiteboards"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:shared-whiteboards"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:shared-whiteboards"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:shared-whiteboards",
+  "@type": "OntologyClass",
+  "label": "Shared Whiteboards",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts.\"",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:shared-whiteboards:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[TELE-002-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-028-horizon-workrooms]]",
+      "resolved": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-301-virtual-office-spaces]]",
+      "resolved": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts."

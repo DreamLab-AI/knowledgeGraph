@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:13b54f1ac4d899606d7a0705db2df428417aa8fc0d08f97edf4d902baf42fb29",
+  "title": "Electric Linear Actuator",
+  "slug": "electric-linear-actuator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:electric-linear-actuator",
+  "domain": "robotics",
+  "definition": "Electric linear actuator converts rotary motion to linear motion using screw, belt, or rack-pinion.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:electric-actuator",
+      "label": "Electric Actuator"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lead-screw-actuator",
+      "label": "Lead Screw Actuator"
+    },
+    {
+      "slug": "rack-and-pinion-actuator",
+      "label": "Rack and Pinion Actuator"
+    }
+  ]
+}

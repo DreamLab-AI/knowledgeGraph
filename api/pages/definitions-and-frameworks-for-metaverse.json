@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:53b06e9ab976561f64c53d6be34214d66a2be5f42280e072f7815c3c5a653dc3",
+  "title": "Definitions and frameworks for Metaverse",
+  "slug": "definitions-and-frameworks-for-metaverse",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:definitions-and-frameworks-for-metaverse",
+  "domain": "spatial-computing",
+  "definition": "Definitions and frameworks for Metaverse is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-ontology",
+      "label": "Metaverse Ontology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aoki2003",
+      "label": "Aoki2003"
+    },
+    {
+      "slug": "chen2011leet",
+      "label": "chen2011leet"
+    },
+    {
+      "slug": "cole2013call",
+      "label": "cole2013call"
+    },
+    {
+      "slug": "cook1977-kleinke1986-fagel2010",
+      "label": "Cook1977; @Kleinke1986; @Fagel2010"
+    },
+    {
+      "slug": "gadekallu2022blockchain",
+      "label": "gadekallu2022blockchain"
+    },
+    {
+      "slug": "glas2013battlefields",
+      "label": "glas2013battlefields"
+    },
+    {
+      "slug": "heiphetz2010training-aldrich2005learning",
+      "label": "heiphetz2010training; @aldrich2005learning"
+    },
+    {
+      "slug": "iser1993fictive",
+      "label": "iser1993fictive"
+    },
+    {
+      "slug": "kendon1967",
+      "label": "Kendon1967"
+    },
+    {
+      "slug": "kleinke1986-nguyen2009",
+      "label": "Kleinke1986; @Nguyen2009"
+    },
+    {
+      "slug": "kraus2022facebook",
+      "label": "kraus2022facebook"
+    },
+    {
+      "slug": "otsuka2005",
+      "label": "Otsuka2005"
+    },
+    {
+      "slug": "park2022metaverse",
+      "label": "park2022metaverse"
+    },
+    {
+      "slug": "serapis2008coming",
+      "label": "serapis2008coming"
+    },
+    {
+      "slug": "siyaev2021towards",
+      "label": "siyaev2021towards"
+    },
+    {
+      "slug": "taylor2009play",
+      "label": "taylor2009play"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

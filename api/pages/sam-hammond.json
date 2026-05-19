@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d612f8a37ba73170578641297f0f66d77c3d08102142a2068c5b42fd9d8fd548",
+  "title": "Sam Hammond",
+  "slug": "sam-hammond",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sam-hammond",
+  "domain": "infrastructure",
+  "definition": "Sam Hammond is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "harmlessness",
+      "label": "Harmlessness"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    }
+  ]
+}

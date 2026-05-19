@@ -1,24 +1,237 @@
-iri:: http://narrativegoldmine.com/spatial-computing#GlobalIllumination
-uri:: urn:visionclaw:concept:spatial-computing:global-illumination
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:global-illumination
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Global Illumination
-content-hash:: sha256-12-666ab00be2e2
-legacy-term-id::
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#GlobalIllumination
+legacy_uri:: urn:visionclaw:concept:spatial-computing:global-illumination
 public:: true
+
+# Global Illumination
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97",
+  "@type": "Page",
+  "vc:slug": "global-illumination",
+  "title": "Global Illumination",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:light-probe",
+      "vc:label": "Light Probe"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-shader",
+      "vc:label": "Compute Shader"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physically-based-rendering",
+      "vc:label": "Physically-Based Rendering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rasterization",
+      "vc:label": "Rasterization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ray-tracing",
+      "vc:label": "Ray Tracing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-666ab00be2e2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#GlobalIllumination"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Global Illumination"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:global-illumination"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:global-illumination"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:global-illumination",
+  "@type": "OntologyClass",
+  "label": "Global Illumination",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Global Illumination is a concept within the mv domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:global-illumination:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Light Probe]]",
+      "resolved": "urn:visionflow:linked:light-probe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compute Shader]]",
+      "resolved": "urn:visionflow:owl:class:compute-shader",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Physically-Based Rendering]]",
+      "resolved": "urn:visionflow:owl:class:physically-based-rendering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Rasterization]]",
+      "resolved": "urn:visionflow:owl:class:rasterization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ray Tracing]]",
+      "resolved": "urn:visionflow:owl:class:ray-tracing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Global Illumination is a concept within the mv domain.

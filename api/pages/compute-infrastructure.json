@@ -1,0 +1,1056 @@
+{
+  "id": "urn:visionflow:page:ecbc06a88660ceb1021fdeee30965a5d466ac63e8c09213749642438cb765b56",
+  "title": "Compute Infrastructure",
+  "slug": "compute-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compute-infrastructure",
+  "domain": "infrastructure",
+  "definition": "[[Compute Infrastructure]] in the artificial intelligence era denotes the integrated stack of accelerated silicon, high-bandwidth interconnect fabrics, multi-megawatt power and cooling plant, and orchestration software that hosts the training and inference of frontier neural-network models at industrial scale, encompassing dense matrix-multiply accelerators ([[NVIDIA H100]] Hopper SXM5 with 80 GB HBM3 / 3.35 TB\u00b7s\u207b\u00b9 / 989 TFLOPS BF16 tensor / 1,979 TFLOPS FP8; [[NVIDIA H200]] 141 GB HBM3e / 4.8 TB\u00b7s\u207b\u00b9 shipping H2 2024; [[NVIDIA B100]]/[[NVIDIA B200]] Blackwell announced GTC 2024 with 192 GB HBM3e / 8 TB\u00b7s\u207b\u00b9 / 18 PFLOPS FP4 sparse per B200; [[NVIDIA GB200]] NVL72 rack-scale 72-GPU coherent domain via fifth-generation [[NVLink]] 1.8 TB\u00b7s\u207b\u00b9 per GPU shipping early 2025; [[NVIDIA B300]] Blackwell Ultra GTC 2025 with 288 GB HBM3e / 8 TB\u00b7s\u207b\u00b9 / 15 PFLOPS FP4 dense per GPU and GB300 NVL72 delivering 1.1 EFLOPS FP4 dense per 132-140 kW liquid-cooled rack; [[AMD MI300X]] CDNA3 with 192 GB HBM3 / 5.3 TB\u00b7s\u207b\u00b9 / 1.3 PFLOPS BF16 launched December 2023; [[AMD MI325X]] 256 GB HBM3e October 2024; [[AMD MI350X]] CDNA4 288 GB HBM3e with FP4/FP6 datatypes for 2025; [[Intel Gaudi 3]] 128 GB HBM2e / 1.835 ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-asic",
+        "label": "AI ASIC"
+      },
+      {
+        "id": "urn:visionflow:linked:datacentre-network",
+        "label": "Datacentre Network"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-accelerator",
+        "label": "GPU Accelerator"
+      },
+      {
+        "id": "urn:visionflow:linked:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:infini-band",
+        "label": "InfiniBand"
+      },
+      {
+        "id": "urn:visionflow:linked:liquid-cooling",
+        "label": "Liquid Cooling"
+      },
+      {
+        "id": "urn:visionflow:linked:nvlink",
+        "label": "NVLink"
+      },
+      {
+        "id": "urn:visionflow:linked:orchestration-layer",
+        "label": "Orchestration Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:power-distribution",
+        "label": "Power Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:spectrum-x",
+        "label": "Spectrum-X"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-systems",
+        "label": "Storage Systems"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:co-wo-s-packaging",
+        "label": "CoWoS Packaging"
+      },
+      {
+        "id": "urn:visionflow:linked:cooling-capacity",
+        "label": "Cooling Capacity"
+      },
+      {
+        "id": "urn:visionflow:linked:electrical-power",
+        "label": "Electrical Power"
+      },
+      {
+        "id": "urn:visionflow:linked:hbm-memory",
+        "label": "HBM Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:network-fabric",
+        "label": "Network Fabric"
+      },
+      {
+        "id": "urn:visionflow:linked:semiconductor-supply-chain",
+        "label": "Semiconductor Supply Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:skilled-operators",
+        "label": "Skilled Operators"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-factory",
+        "label": "AI Factory"
+      },
+      {
+        "id": "urn:visionflow:linked:foundation-model-inference",
+        "label": "Foundation Model Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-simulation",
+        "label": "Scientific Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:expert-parallelism",
+        "label": "Expert Parallelism"
+      },
+      {
+        "id": "urn:visionflow:linked:mixed-precision-arithmetic",
+        "label": "Mixed-Precision Arithmetic"
+      },
+      {
+        "id": "urn:visionflow:linked:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:visionflow:linked:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-computation",
+        "label": "Tensor Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-action-plan",
+      "label": "AI Action Plan"
+    },
+    {
+      "slug": "ai-asic",
+      "label": "AI ASIC"
+    },
+    {
+      "slug": "ai-factory",
+      "label": "AI Factory"
+    },
+    {
+      "slug": "ai-factory",
+      "label": "AI Factory"
+    },
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "ai-supply-chain",
+      "label": "AI Supply Chain"
+    },
+    {
+      "slug": "amazon",
+      "label": "Amazon"
+    },
+    {
+      "slug": "amd-mi300-x",
+      "label": "AMD MI300X"
+    },
+    {
+      "slug": "amd-mi300-x-datasheet",
+      "label": "AMD MI300X Datasheet"
+    },
+    {
+      "slug": "amd-mi325-x",
+      "label": "AMD MI325X"
+    },
+    {
+      "slug": "amd-mi325-x-product-brief",
+      "label": "AMD MI325X Product Brief"
+    },
+    {
+      "slug": "amd-mi350-x",
+      "label": "AMD MI350X"
+    },
+    {
+      "slug": "amd-mi350-x-product-brief",
+      "label": "AMD MI350X Product Brief"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "aria",
+      "label": "ARIA"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "aws-inferentia-2",
+      "label": "AWS Inferentia 2"
+    },
+    {
+      "slug": "aws-trainium-2",
+      "label": "AWS Trainium 2"
+    },
+    {
+      "slug": "aws-trainium-2-project-rainier",
+      "label": "AWS Trainium 2 Project Rainier"
+    },
+    {
+      "slug": "blackstone",
+      "label": "Blackstone"
+    },
+    {
+      "slug": "cerebras-cs-3",
+      "label": "Cerebras CS-3"
+    },
+    {
+      "slug": "cerebras-cs-3-whitepaper",
+      "label": "Cerebras CS-3 Whitepaper"
+    },
+    {
+      "slug": "classical-cloud-compute",
+      "label": "Classical Cloud Compute"
+    },
+    {
+      "slug": "climate-modelling",
+      "label": "Climate Modelling"
+    },
+    {
+      "slug": "co-wo-s-packaging",
+      "label": "CoWoS Packaging"
+    },
+    {
+      "slug": "collective-communication",
+      "label": "Collective Communication"
+    },
+    {
+      "slug": "colossal-ai",
+      "label": "Colossal-AI"
+    },
+    {
+      "slug": "computing-domain",
+      "label": "ComputingDomain"
+    },
+    {
+      "slug": "constellation",
+      "label": "Constellation"
+    },
+    {
+      "slug": "contrasts-with",
+      "label": "contrasts-with"
+    },
+    {
+      "slug": "cooling-capacity",
+      "label": "Cooling Capacity"
+    },
+    {
+      "slug": "cpu-centric-datacentre",
+      "label": "CPU-Centric Datacentre"
+    },
+    {
+      "slug": "critical-national-infrastructure",
+      "label": "Critical National Infrastructure"
+    },
+    {
+      "slug": "cu-blas",
+      "label": "cuBLAS"
+    },
+    {
+      "slug": "cu-dnn",
+      "label": "cuDNN"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "cutlass",
+      "label": "CUTLASS"
+    },
+    {
+      "slug": "data-centre-infrastructure",
+      "label": "Data Centre Infrastructure"
+    },
+    {
+      "slug": "datacentre-network",
+      "label": "Datacentre Network"
+    },
+    {
+      "slug": "deep-seek",
+      "label": "DeepSeek"
+    },
+    {
+      "slug": "deep-speed",
+      "label": "DeepSpeed"
+    },
+    {
+      "slug": "deep-speed-mii",
+      "label": "DeepSpeed-MII"
+    },
+    {
+      "slug": "determined-ai",
+      "label": "Determined AI"
+    },
+    {
+      "slug": "direct-current-distribution",
+      "label": "Direct Current Distribution"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "electrical-grid",
+      "label": "Electrical Grid"
+    },
+    {
+      "slug": "electrical-power",
+      "label": "Electrical Power"
+    },
+    {
+      "slug": "eu-ai-factories",
+      "label": "EU AI Factories"
+    },
+    {
+      "slug": "expert-parallelism",
+      "label": "Expert Parallelism"
+    },
+    {
+      "slug": "facility-layer",
+      "label": "FacilityLayer"
+    },
+    {
+      "slug": "foundation-model-inference",
+      "label": "Foundation Model Inference"
+    },
+    {
+      "slug": "fp4-arithmetic",
+      "label": "FP4 Arithmetic"
+    },
+    {
+      "slug": "fp64-optimised-hpc",
+      "label": "FP64-Optimised HPC"
+    },
+    {
+      "slug": "fp8-arithmetic",
+      "label": "FP8 Arithmetic"
+    },
+    {
+      "slug": "frontier-model-training",
+      "label": "Frontier Model Training"
+    },
+    {
+      "slug": "gb200",
+      "label": "GB200"
+    },
+    {
+      "slug": "google-tpu-v5p",
+      "label": "Google TPU v5p"
+    },
+    {
+      "slug": "google-trillium",
+      "label": "Google Trillium"
+    },
+    {
+      "slug": "google-trillium-tpu-v6e-announcement",
+      "label": "Google Trillium TPU v6e Announcement"
+    },
+    {
+      "slug": "gpu-accelerator",
+      "label": "GPU Accelerator"
+    },
+    {
+      "slug": "gpudirect",
+      "label": "GPUDirect"
+    },
+    {
+      "slug": "graphcore",
+      "label": "Graphcore"
+    },
+    {
+      "slug": "groq-lpu",
+      "label": "Groq LPU"
+    },
+    {
+      "slug": "groq-lpu-architecture-brief",
+      "label": "Groq LPU Architecture Brief"
+    },
+    {
+      "slug": "h100",
+      "label": "H100"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "hbm-memory",
+      "label": "HBM Memory"
+    },
+    {
+      "slug": "hbm-supply",
+      "label": "HBM Supply"
+    },
+    {
+      "slug": "hbm3e",
+      "label": "HBM3e"
+    },
+    {
+      "slug": "high-bandwidth-memory",
+      "label": "High-Bandwidth Memory"
+    },
+    {
+      "slug": "high-bandwidth-memory",
+      "label": "High-Bandwidth Memory"
+    },
+    {
+      "slug": "high-performance-computing",
+      "label": "High Performance Computing"
+    },
+    {
+      "slug": "hoffmann-et-al-2022-chinchilla",
+      "label": "Hoffmann et al 2022 Chinchilla"
+    },
+    {
+      "slug": "hpcwire-isambard-ai-launch-2025",
+      "label": "HPCwire Isambard-AI Launch 2025"
+    },
+    {
+      "slug": "huawei",
+      "label": "Huawei"
+    },
+    {
+      "slug": "hyperscaler",
+      "label": "Hyperscaler"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "infini-band",
+      "label": "InfiniBand"
+    },
+    {
+      "slug": "infini-band-trade-association",
+      "label": "InfiniBand Trade Association"
+    },
+    {
+      "slug": "intel-gaudi-3",
+      "label": "Intel Gaudi 3"
+    },
+    {
+      "slug": "intel-gaudi-3-whitepaper",
+      "label": "Intel Gaudi 3 Whitepaper"
+    },
+    {
+      "slug": "isambard-ai",
+      "label": "Isambard-AI"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "kairos-power",
+      "label": "Kairos Power"
+    },
+    {
+      "slug": "kaplan-et-al-2020-scaling-laws",
+      "label": "Kaplan et al 2020 Scaling Laws"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "large-language-model-training",
+      "label": "Large Language Model Training"
+    },
+    {
+      "slug": "levanter",
+      "label": "Levanter"
+    },
+    {
+      "slug": "lightelligence",
+      "label": "Lightelligence"
+    },
+    {
+      "slug": "liquid-cooling",
+      "label": "Liquid Cooling"
+    },
+    {
+      "slug": "llama",
+      "label": "Llama"
+    },
+    {
+      "slug": "llama-cpp",
+      "label": "llama.cpp"
+    },
+    {
+      "slug": "lmdeploy",
+      "label": "LMDeploy"
+    },
+    {
+      "slug": "megatron-lm",
+      "label": "Megatron-LM"
+    },
+    {
+      "slug": "meta",
+      "label": "Meta"
+    },
+    {
+      "slug": "meta-mtia-v2",
+      "label": "Meta MTIA v2"
+    },
+    {
+      "slug": "meta-mtia-v2-inference-accelerator",
+      "label": "Meta MTIA v2 Inference Accelerator"
+    },
+    {
+      "slug": "micikevicius-et-al-2018-mixed-precision",
+      "label": "Micikevicius et al 2018 Mixed Precision"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "microsoft-azure-maia-100-cobalt-100",
+      "label": "Microsoft Azure Maia 100 Cobalt 100"
+    },
+    {
+      "slug": "microsoft-maia-100",
+      "label": "Microsoft Maia 100"
+    },
+    {
+      "slug": "mixed-precision-arithmetic",
+      "label": "Mixed-Precision Arithmetic"
+    },
+    {
+      "slug": "mlcommons",
+      "label": "MLCommons"
+    },
+    {
+      "slug": "model-parallelism",
+      "label": "Model Parallelism"
+    },
+    {
+      "slug": "nccl",
+      "label": "NCCL"
+    },
+    {
+      "slug": "ne-mo",
+      "label": "NeMo"
+    },
+    {
+      "slug": "network-fabric",
+      "label": "Network Fabric"
+    },
+    {
+      "slug": "nuclear-power",
+      "label": "Nuclear Power"
+    },
+    {
+      "slug": "nvidia-b100",
+      "label": "NVIDIA B100"
+    },
+    {
+      "slug": "nvidia-b200",
+      "label": "NVIDIA B200"
+    },
+    {
+      "slug": "nvidia-b300",
+      "label": "NVIDIA B300"
+    },
+    {
+      "slug": "nvidia-base-command",
+      "label": "NVIDIA Base Command"
+    },
+    {
+      "slug": "nvidia-blackwell-architecture-technical-brief",
+      "label": "NVIDIA Blackwell Architecture Technical Brief"
+    },
+    {
+      "slug": "nvidia-blog-isambard-ai-live-2025",
+      "label": "NVIDIA Blog Isambard-AI Live 2025"
+    },
+    {
+      "slug": "nvidia-gb200",
+      "label": "NVIDIA GB200"
+    },
+    {
+      "slug": "nvidia-gb300-nvl72-datasheet",
+      "label": "NVIDIA GB300 NVL72 Datasheet"
+    },
+    {
+      "slug": "nvidia-h100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "nvidia-h100-architecture-whitepaper",
+      "label": "NVIDIA H100 Architecture Whitepaper"
+    },
+    {
+      "slug": "nvidia-h200",
+      "label": "NVIDIA H200"
+    },
+    {
+      "slug": "nvidia-triton-kernel-language",
+      "label": "NVIDIA Triton kernel language"
+    },
+    {
+      "slug": "nvlink",
+      "label": "NVLink"
+    },
+    {
+      "slug": "nvshmem",
+      "label": "NVSHMEM"
+    },
+    {
+      "slug": "oklo",
+      "label": "Oklo"
+    },
+    {
+      "slug": "one-api",
+      "label": "oneAPI"
+    },
+    {
+      "slug": "open-ai-five-new-stargate-sites",
+      "label": "OpenAI Five New Stargate Sites"
+    },
+    {
+      "slug": "open-compute-project",
+      "label": "Open Compute Project"
+    },
+    {
+      "slug": "optical-networking",
+      "label": "Optical Networking"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "Orchestration Layer"
+    },
+    {
+      "slug": "pennsylvania-capital-star-three-mile-island-microsoft",
+      "label": "Pennsylvania Capital-Star Three Mile Island Microsoft"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    },
+    {
+      "slug": "power-distribution",
+      "label": "Power Distribution"
+    },
+    {
+      "slug": "power-grid",
+      "label": "Power Grid"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "quantum-2-infini-band-datasheet",
+      "label": "Quantum-2 InfiniBand Datasheet"
+    },
+    {
+      "slug": "quantum-x800-spectrum-x-reference-architecture",
+      "label": "Quantum-X800 Spectrum-X Reference Architecture"
+    },
+    {
+      "slug": "rajbhandari-et-al-2020-ze-ro",
+      "label": "Rajbhandari et al 2020 ZeRO"
+    },
+    {
+      "slug": "ray",
+      "label": "Ray"
+    },
+    {
+      "slug": "rdma",
+      "label": "RDMA"
+    },
+    {
+      "slug": "rocm",
+      "label": "ROCm"
+    },
+    {
+      "slug": "run-ai",
+      "label": "Run.ai"
+    },
+    {
+      "slug": "samba-nova-sn40-l",
+      "label": "SambaNova SN40L"
+    },
+    {
+      "slug": "samba-nova-sn40-l-whitepaper",
+      "label": "SambaNova SN40L Whitepaper"
+    },
+    {
+      "slug": "scientific-computing",
+      "label": "Scientific Computing"
+    },
+    {
+      "slug": "scientific-simulation",
+      "label": "Scientific Simulation"
+    },
+    {
+      "slug": "semi-analysis-colossus-2-gigawatt",
+      "label": "SemiAnalysis Colossus 2 Gigawatt"
+    },
+    {
+      "slug": "semiconductor-manufacturing",
+      "label": "Semiconductor Manufacturing"
+    },
+    {
+      "slug": "semiconductor-supply-chain",
+      "label": "Semiconductor Supply Chain"
+    },
+    {
+      "slug": "sglang",
+      "label": "SGLang"
+    },
+    {
+      "slug": "shoeybi-et-al-2019-megatron-lm",
+      "label": "Shoeybi et al 2019 Megatron-LM"
+    },
+    {
+      "slug": "skilled-operators",
+      "label": "Skilled Operators"
+    },
+    {
+      "slug": "slurm",
+      "label": "Slurm"
+    },
+    {
+      "slug": "small-modular-reactor",
+      "label": "Small Modular Reactor"
+    },
+    {
+      "slug": "sovereign-ai",
+      "label": "Sovereign AI"
+    },
+    {
+      "slug": "sovereign-research",
+      "label": "Sovereign Research"
+    },
+    {
+      "slug": "spectrum-x",
+      "label": "Spectrum-X"
+    },
+    {
+      "slug": "storage-systems",
+      "label": "Storage Systems"
+    },
+    {
+      "slug": "tensor-computation",
+      "label": "Tensor Computation"
+    },
+    {
+      "slug": "tensor-core",
+      "label": "Tensor Core"
+    },
+    {
+      "slug": "tensor-parallelism",
+      "label": "Tensor Parallelism"
+    },
+    {
+      "slug": "tensor-rt-llm",
+      "label": "TensorRT-LLM"
+    },
+    {
+      "slug": "tenstorrent",
+      "label": "Tenstorrent"
+    },
+    {
+      "slug": "three-mile-island",
+      "label": "Three Mile Island"
+    },
+    {
+      "slug": "traditional-hpc",
+      "label": "Traditional HPC"
+    },
+    {
+      "slug": "trainium-2",
+      "label": "Trainium 2"
+    },
+    {
+      "slug": "triton",
+      "label": "Triton"
+    },
+    {
+      "slug": "triton-inference-server",
+      "label": "Triton Inference Server"
+    },
+    {
+      "slug": "tsmc",
+      "label": "TSMC"
+    },
+    {
+      "slug": "ualink",
+      "label": "UALink"
+    },
+    {
+      "slug": "ualink-consortium",
+      "label": "UALink Consortium"
+    },
+    {
+      "slug": "ualink-specification-1-0",
+      "label": "UALink Specification 1.0"
+    },
+    {
+      "slug": "uk-ai-research-resource",
+      "label": "UK AI Research Resource"
+    },
+    {
+      "slug": "ultra-ethernet",
+      "label": "Ultra Ethernet"
+    },
+    {
+      "slug": "ultra-ethernet-consortium",
+      "label": "Ultra Ethernet Consortium"
+    },
+    {
+      "slug": "university-of-bristol",
+      "label": "University of Bristol"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
+    },
+    {
+      "slug": "weights-and-biases",
+      "label": "Weights & Biases"
+    },
+    {
+      "slug": "x-ai",
+      "label": "xAI"
+    },
+    {
+      "slug": "x-ai-colossus",
+      "label": "xAI Colossus"
+    },
+    {
+      "slug": "x-energy",
+      "label": "X-Energy"
+    },
+    {
+      "slug": "zhao-et-al-2023-py-torch-fsdp",
+      "label": "Zhao et al 2023 PyTorch FSDP"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "computing-infrastructure",
+      "label": "Computing Infrastructure"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

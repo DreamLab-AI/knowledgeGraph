@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:8d4d145906c8c8676ac785e0f3193531eb857d97f6d3e732d792c0aed5b525f9",
+  "title": "Difficulty Target",
+  "slug": "difficulty-target",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:difficulty-target",
+  "domain": "blockchain",
+  "definition": "Mining success threshold within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consensus-protocol",
+      "label": "ConsensusProtocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "consensus-domain",
+      "label": "ConsensusDomain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "ConsensusProtocol"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

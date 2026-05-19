@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:55214cb6b9b758cc0ddc2b54259dac898cd206f41d7e7d71be9156e3b383297f",
+  "title": "Virtual Destination",
+  "slug": "virtual-destination",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-destination",
+  "domain": "spatial-computing",
+  "definition": "A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    }
+  ]
+}

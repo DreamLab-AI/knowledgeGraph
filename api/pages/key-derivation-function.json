@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9",
+  "title": "Key Derivation Function",
+  "slug": "key-derivation-function",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:key-derivation-function",
+  "domain": "blockchain",
+  "definition": "A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in blockchain systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:password-hashing",
+        "label": "Password Hashing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hierarchical-deterministic-wallet",
+      "label": "Hierarchical Deterministic Wallet"
+    },
+    {
+      "slug": "mnemonic-phrase",
+      "label": "Mnemonic Phrase"
+    },
+    {
+      "slug": "password-hashing",
+      "label": "Password Hashing"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    }
+  ]
+}

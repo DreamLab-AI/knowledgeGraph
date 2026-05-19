@@ -1,20 +1,302 @@
-iri:: http://narrativegoldmine.com/infrastructure#TechnicalHistoryExtendedCV
-uri:: urn:visionclaw:concept:infrastructure:technical-history-extended-cv
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:technical-history-extended-cv
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Technical History (extended CV)
-content-hash:: sha256-12-1b0beffbfebd
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#TechnicalHistoryExtendedCV
+legacy_uri:: urn:visionclaw:concept:infrastructure:technical-history-extended-cv
 public:: true
+
+# Technical History (extended CV)
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f",
+  "@type": "Page",
+  "vc:slug": "technical-history-extended-cv",
+  "title": "Technical History (extended CV)",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-objects",
+      "vc:label": "Digital Objects"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:flossverse",
+      "vc:label": "flossverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyper-personalisation",
+      "vc:label": "Hyper personalisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowhere",
+      "vc:label": "Knowhere"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:location-based-experience",
+      "vc:label": "Location Based Experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "vc:label": "Metaverse and Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mixed-reality",
+      "vc:label": "Mixed Reality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:national-industrial-centre-for-virtual-environments",
+      "vc:label": "National Industrial Centre for Virtual Environments"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-coins",
+      "vc:label": "Stable Coins"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-safety",
+      "vc:label": "Trust and Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:unreal-engine",
+      "vc:label": "Unreal Engine"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1b0beffbfebd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#TechnicalHistoryExtendedCV"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Technical History (extended CV)"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:technical-history-extended-cv"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:technical-history-extended-cv"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:technical-history-extended-cv",
+  "@type": "OntologyClass",
+  "label": "Technical History (extended CV)",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Technical History (extended CV) is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:technical-history-extended-cv:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Objects]]",
+      "resolved": "urn:visionflow:owl:class:digital-objects",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[flossverse]]",
+      "resolved": "urn:visionflow:owl:class:flossverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyper personalisation]]",
+      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowhere]]",
+      "resolved": "urn:visionflow:owl:class:knowhere",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Location Based Experience]]",
+      "resolved": "urn:visionflow:owl:class:location-based-experience",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse and Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mixed Reality]]",
+      "resolved": "urn:visionflow:owl:class:mixed-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[National Industrial Centre for Virtual Environments]]",
+      "resolved": "urn:visionflow:owl:class:national-industrial-centre-for-virtual-environments",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Coins]]",
+      "resolved": "urn:visionflow:owl:class:stable-coins",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust and Safety]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-safety",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Unreal Engine]]",
+      "resolved": "urn:visionflow:owl:class:unreal-engine",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Technical History (extended CV) is a concept within the ngm domain.
@@ -98,7 +380,7 @@ public:: true
 		- **Project:** "Future Fleet
 		- NDA"
 		- **Role:** Co Founder and AI Lead.
-		- **Outcome:** Implemented GenAI algorithm integrated with a Cesium and [[Unreal]] global ship digital twin system, to revolutionise ship to shore communications with Michal (ex thinklab), IBM, Patent Pending.
+		- **Outcome:** Implemented GenAI algorithm integrated with a Cesium and [[Unreal Engine]] global ship digital twin system, to revolutionise ship to shore communications with Michal (ex thinklab), IBM, Patent Pending.
 		- ![labelled3D.png](../assets/labelled3D_1707471298514_0.png)
 		- /upload -
 		- **Engagement and Visibility**: Increase readiness to engage publicly with project initiatives.
@@ -153,9 +435,9 @@ public:: true
 		- Scaffolding of human creativity and shared storytelling across a diversity of immersive spaces.
   - My focus: is leveraging technology to reconnect people, value ([[Stable Coins]] and [[Bitcoin]]), and ideas, across geographic, and organisational barriers ([[Metaverse and Telecollaboration]]).
   - This is significantly accelerated by AI, but there are inequalities of global access.
-		- Focusing on the intersection of digital society with [[Proprietary Large Language Models]] in real-world applications (B2B and B2C spatial [[Mixed reality]]).
+		- Focusing on the intersection of digital society with [[Proprietary Large Language Models]] in real-world applications (B2B and B2C spatial [[Mixed Reality]]).
 		- Supporting  equity of access to AI globally, to mitigate consolidation of power and opportunity.
-		- Researching cryptographic verifiability, for both humans and their AI [[Agents]] [[Privacy, Trust and Safety]]
+		- Researching cryptographic verifiability, for both humans and their AI [[Agents]] [[Trust and Safety]]
 		- Exploring ways to transfer value, data, [[Digital Objects]], and money, verifiably across the internet.
 		- Ensuring data sovereignty to underpin trust in digital interactions.
 		- **Investigating how [[Agents]] can create, sustain, and return value to their human owners in open and global value markets.**

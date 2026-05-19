@@ -1,0 +1,203 @@
+{
+  "id": "urn:visionflow:page:75537a245d178500a915daccbd290091f72896425c52148f6e9f504336469569",
+  "title": "Community Governance Model",
+  "slug": "community-governance-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:community-governance-model",
+  "domain": "artificial-intelligence",
+  "definition": "A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:decision-rules",
+        "label": "Decision Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:dispute-resolution-process",
+        "label": "Dispute Resolution Process"
+      },
+      {
+        "id": "urn:visionflow:linked:membership-criteria",
+        "label": "Membership Criteria"
+      },
+      {
+        "id": "urn:visionflow:linked:proposal-mechanism",
+        "label": "Proposal Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-system",
+        "label": "Voting System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "id": "urn:visionflow:linked:community-decision-making",
+        "label": "Community Decision Making"
+      },
+      {
+        "id": "urn:visionflow:owl:class:democratic-participation",
+        "label": "Democratic Participation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparent-governance",
+        "label": "Transparent Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collective-action",
+      "label": "Collective Action"
+    },
+    {
+      "slug": "community-decision-making",
+      "label": "Community Decision Making"
+    },
+    {
+      "slug": "dao-governance-standards",
+      "label": "DAO Governance Standards"
+    },
+    {
+      "slug": "decision-rules",
+      "label": "Decision Rules"
+    },
+    {
+      "slug": "dispute-resolution-process",
+      "label": "Dispute Resolution Process"
+    },
+    {
+      "slug": "iso-37001-anti-bribery-management",
+      "label": "ISO 37001 Anti-Bribery Management"
+    },
+    {
+      "slug": "membership-criteria",
+      "label": "Membership Criteria"
+    },
+    {
+      "slug": "proposal-mechanism",
+      "label": "Proposal Mechanism"
+    },
+    {
+      "slug": "voting-system",
+      "label": "Voting System"
+    },
+    {
+      "slug": "w3-c-decentralized-governance",
+      "label": "W3C Decentralized Governance"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "democratic-participation",
+      "label": "Democratic Participation"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "transparent-governance",
+      "label": "Transparent Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-community-platform",
+      "label": "Virtual Community Platform"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "urn:visionflow:page:66caed5f36e2538e7bf6c986b0178bef00b746f43b45ed11dfbf6e0381481b27",
+  "title": "AI Upscaling and Super-Resolution",
+  "slug": "ai-upscaling-and-super-resolution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-upscaling-and-super-resolution",
+  "domain": "artificial-intelligence",
+  "definition": "AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.92,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "akt",
+      "label": "AKT"
+    },
+    {
+      "slug": "alex-net",
+      "label": "AlexNet"
+    },
+    {
+      "slug": "arweave",
+      "label": "Arweave"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "cnn",
+      "label": "CNN"
+    },
+    {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "esrgan",
+      "label": "ESRGAN"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "generator",
+      "label": "Generator"
+    },
+    {
+      "slug": "gimp",
+      "label": "GIMP"
+    },
+    {
+      "slug": "google-photos",
+      "label": "Google Photos"
+    },
+    {
+      "slug": "i-os",
+      "label": "iOS"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "slug": "lightroom",
+      "label": "Lightroom"
+    },
+    {
+      "slug": "mpv",
+      "label": "MPV"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "nvidia-shield",
+      "label": "NVIDIA Shield"
+    },
+    {
+      "slug": "open-cv",
+      "label": "OpenCV"
+    },
+    {
+      "slug": "photoshop",
+      "label": "Photoshop"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "real-esrgan",
+      "label": "Real-ESRGAN"
+    },
+    {
+      "slug": "remini",
+      "label": "Remini"
+    },
+    {
+      "slug": "rndr",
+      "label": "RNDR"
+    },
+    {
+      "slug": "score-matching",
+      "label": "Score Matching"
+    },
+    {
+      "slug": "sd-1-5",
+      "label": "SD 1.5"
+    },
+    {
+      "slug": "sdxl",
+      "label": "SDXL"
+    },
+    {
+      "slug": "srgan",
+      "label": "SRGAN"
+    },
+    {
+      "slug": "supir",
+      "label": "SUPIR"
+    },
+    {
+      "slug": "tensor-core",
+      "label": "Tensor Core"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
+    },
+    {
+      "slug": "topaz-gigapixel-ai",
+      "label": "Topaz Gigapixel AI"
+    },
+    {
+      "slug": "unet",
+      "label": "UNet"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "vgg",
+      "label": "VGG"
+    },
+    {
+      "slug": "vgg19",
+      "label": "VGG19"
+    },
+    {
+      "slug": "x-formers",
+      "label": "xFormers"
+    },
+    {
+      "slug": "you-tube",
+      "label": "YouTube"
+    },
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "android",
+      "label": "Android"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    }
+  ]
+}

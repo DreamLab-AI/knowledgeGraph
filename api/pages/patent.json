@@ -1,0 +1,1467 @@
+{
+  "id": "urn:visionflow:page:227355582856c7edf70f102d0fd964a10f6ba493cd464d60d79a9a16070fb8d2",
+  "title": "Patent",
+  "slug": "patent",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:patent",
+  "domain": "infrastructure",
+  "definition": "Patent is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "Active Research [Updated 2025]",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-gpp-standard-development",
+      "label": "3GPP Standard Development"
+    },
+    {
+      "slug": "5-g-6-g-patents",
+      "label": "5G/6G Patents"
+    },
+    {
+      "slug": "5-g-networks",
+      "label": "5G Networks"
+    },
+    {
+      "slug": "5-g-patent-portfolio",
+      "label": "5G Patent Portfolio"
+    },
+    {
+      "slug": "5-g-technology",
+      "label": "5G Technology"
+    },
+    {
+      "slug": "5-g-technology-patents",
+      "label": "5G Technology Patents"
+    },
+    {
+      "slug": "6-g-research",
+      "label": "6G Research"
+    },
+    {
+      "slug": "6-g-research-patents",
+      "label": "6G Research Patents"
+    },
+    {
+      "slug": "adaptive-coding-patents",
+      "label": "Adaptive Coding Patents"
+    },
+    {
+      "slug": "adaptive-communication",
+      "label": "adaptive communication"
+    },
+    {
+      "slug": "adaptive-compression",
+      "label": "Adaptive Compression"
+    },
+    {
+      "slug": "adaptive-image-transmission",
+      "label": "adaptive image transmission"
+    },
+    {
+      "slug": "adaptive-systems-patents",
+      "label": "Adaptive Systems Patents"
+    },
+    {
+      "slug": "advanced-neural-techniques",
+      "label": "advanced neural techniques"
+    },
+    {
+      "slug": "adversarial-loss",
+      "label": "Adversarial loss"
+    },
+    {
+      "slug": "adversarial-optimization",
+      "label": "adversarial optimization"
+    },
+    {
+      "slug": "adversarial-training-patents",
+      "label": "Adversarial Training Patents"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "ai-blockchain-integration",
+      "label": "AI-Blockchain Integration"
+    },
+    {
+      "slug": "ai-encoding",
+      "label": "AI encoding"
+    },
+    {
+      "slug": "ai-patents",
+      "label": "AI Patents"
+    },
+    {
+      "slug": "alignment-modules",
+      "label": "alignment modules"
+    },
+    {
+      "slug": "alphabet-google",
+      "label": "Alphabet/Google"
+    },
+    {
+      "slug": "asia-pacific-patent-region",
+      "label": "Asia-Pacific Patent Region"
+    },
+    {
+      "slug": "attention-based-processing",
+      "label": "attention-based processing"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "attention mechanisms"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention mechanisms"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "autonomous-vehicle-patents",
+      "label": "Autonomous Vehicle Patents"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "autonomous-vehicles-patents",
+      "label": "Autonomous Vehicles Patents"
+    },
+    {
+      "slug": "bandwidth-limited-networks",
+      "label": "bandwidth-limited networks"
+    },
+    {
+      "slug": "biotech-patents",
+      "label": "Biotech Patents"
+    },
+    {
+      "slug": "blockchain-patent-registry",
+      "label": "Blockchain Patent Registry"
+    },
+    {
+      "slug": "blockchain-patents",
+      "label": "Blockchain Patents"
+    },
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "broadcasting",
+      "label": "Broadcasting"
+    },
+    {
+      "slug": "channel-adaptation",
+      "label": "channel adaptation"
+    },
+    {
+      "slug": "china",
+      "label": "China"
+    },
+    {
+      "slug": "china-cnipa",
+      "label": "China CNIPA"
+    },
+    {
+      "slug": "claim-construction",
+      "label": "Claim Construction"
+    },
+    {
+      "slug": "claims-mapping",
+      "label": "Claims Mapping"
+    },
+    {
+      "slug": "classification-metrics",
+      "label": "classification metrics"
+    },
+    {
+      "slug": "classification-tasks",
+      "label": "classification tasks"
+    },
+    {
+      "slug": "climate-tech-patents",
+      "label": "Climate Tech Patents"
+    },
+    {
+      "slug": "cloud-computing-patents",
+      "label": "Cloud Computing Patents"
+    },
+    {
+      "slug": "cloud-services",
+      "label": "Cloud Services"
+    },
+    {
+      "slug": "cnipa",
+      "label": "CNIPA"
+    },
+    {
+      "slug": "collaborative-communication",
+      "label": "Collaborative Communication"
+    },
+    {
+      "slug": "collaborative-platforms",
+      "label": "Collaborative Platforms"
+    },
+    {
+      "slug": "collaborative-systems",
+      "label": "collaborative systems"
+    },
+    {
+      "slug": "communication-efficiency",
+      "label": "communication efficiency"
+    },
+    {
+      "slug": "communication-patents",
+      "label": "Communication Patents"
+    },
+    {
+      "slug": "communication-systems",
+      "label": "communication systems"
+    },
+    {
+      "slug": "complex-communication-systems",
+      "label": "complex communication systems"
+    },
+    {
+      "slug": "compression",
+      "label": "compression"
+    },
+    {
+      "slug": "compression-patents",
+      "label": "Compression Patents"
+    },
+    {
+      "slug": "computer-vision-patents",
+      "label": "Computer Vision Patents"
+    },
+    {
+      "slug": "context-adaptation",
+      "label": "context adaptation"
+    },
+    {
+      "slug": "copyright-law",
+      "label": "Copyright Law"
+    },
+    {
+      "slug": "corporate-r-and-d",
+      "label": "Corporate R&D"
+    },
+    {
+      "slug": "crispr-gene-editing",
+      "label": "CRISPR Gene Editing"
+    },
+    {
+      "slug": "cross-licensing",
+      "label": "Cross-Licensing"
+    },
+    {
+      "slug": "cross-licensing",
+      "label": "Cross-licensing"
+    },
+    {
+      "slug": "decoding",
+      "label": "decoding"
+    },
+    {
+      "slug": "deep-compression-technology",
+      "label": "deep compression technology"
+    },
+    {
+      "slug": "deep-feature-distance",
+      "label": "deep feature distance"
+    },
+    {
+      "slug": "deep-joint-coding",
+      "label": "deep joint coding"
+    },
+    {
+      "slug": "defensive-patent-aggregation",
+      "label": "Defensive Patent Aggregation"
+    },
+    {
+      "slug": "design-patent",
+      "label": "Design Patent"
+    },
+    {
+      "slug": "discriminator-networks",
+      "label": "discriminator networks"
+    },
+    {
+      "slug": "distortion",
+      "label": "distortion"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "doctrine-of-equivalents",
+      "label": "Doctrine of Equivalents"
+    },
+    {
+      "slug": "dynamic",
+      "label": "dynamic"
+    },
+    {
+      "slug": "dynamic-adaptation",
+      "label": "dynamic adaptation"
+    },
+    {
+      "slug": "dynamic-communication-patents",
+      "label": "Dynamic Communication Patents"
+    },
+    {
+      "slug": "dynamic-data-environments",
+      "label": "dynamic data environments"
+    },
+    {
+      "slug": "dynamic-environments",
+      "label": "dynamic environments"
+    },
+    {
+      "slug": "edge-computing-patents",
+      "label": "Edge Computing Patents"
+    },
+    {
+      "slug": "efficiency",
+      "label": "efficiency"
+    },
+    {
+      "slug": "efficiency-optimization",
+      "label": "efficiency optimization"
+    },
+    {
+      "slug": "emerging-markets-patent-growth",
+      "label": "Emerging Markets Patent Growth"
+    },
+    {
+      "slug": "end-to-end-learning",
+      "label": "end-to-end learning"
+    },
+    {
+      "slug": "enterprise-communication",
+      "label": "Enterprise Communication"
+    },
+    {
+      "slug": "epo",
+      "label": "EPO"
+    },
+    {
+      "slug": "europe",
+      "label": "Europe"
+    },
+    {
+      "slug": "europe-epo",
+      "label": "Europe EPO"
+    },
+    {
+      "slug": "european-patent-market",
+      "label": "European Patent Market"
+    },
+    {
+      "slug": "european-patent-office",
+      "label": "European Patent Office"
+    },
+    {
+      "slug": "first-sale-doctrine",
+      "label": "First Sale Doctrine"
+    },
+    {
+      "slug": "first-to-file",
+      "label": "First-to-File"
+    },
+    {
+      "slug": "first-to-invent",
+      "label": "First-to-Invent"
+    },
+    {
+      "slug": "flexible-architectures",
+      "label": "flexible architectures"
+    },
+    {
+      "slug": "freedom-to-operate",
+      "label": "Freedom to Operate"
+    },
+    {
+      "slug": "freedom-to-operate-analysis",
+      "label": "Freedom to Operate Analysis"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "gan-based",
+      "label": "GAN-based"
+    },
+    {
+      "slug": "gan-patents",
+      "label": "GAN Patents"
+    },
+    {
+      "slug": "gene-editing-patents",
+      "label": "Gene Editing Patents"
+    },
+    {
+      "slug": "gene-therapy",
+      "label": "Gene Therapy"
+    },
+    {
+      "slug": "german-patent-court",
+      "label": "German Patent Court"
+    },
+    {
+      "slug": "global-semantic-information",
+      "label": "global semantic information"
+    },
+    {
+      "slug": "gpl-licensing",
+      "label": "GPL Licensing"
+    },
+    {
+      "slug": "group-communication",
+      "label": "group communication"
+    },
+    {
+      "slug": "heterogeneous-networks",
+      "label": "heterogeneous networks"
+    },
+    {
+      "slug": "high-fidelity",
+      "label": "high-fidelity"
+    },
+    {
+      "slug": "huawei-technologies",
+      "label": "Huawei Technologies"
+    },
+    {
+      "slug": "hybrid-architectures",
+      "label": "hybrid architectures"
+    },
+    {
+      "slug": "hyperspectral-imaging",
+      "label": "hyperspectral imaging"
+    },
+    {
+      "slug": "ibm",
+      "label": "IBM"
+    },
+    {
+      "slug": "image-compression",
+      "label": "image compression"
+    },
+    {
+      "slug": "image-compression",
+      "label": "Image Compression"
+    },
+    {
+      "slug": "image-compression-patents",
+      "label": "Image Compression Patents"
+    },
+    {
+      "slug": "image-processing-patents",
+      "label": "Image Processing Patents"
+    },
+    {
+      "slug": "image-quality",
+      "label": "image quality"
+    },
+    {
+      "slug": "image-reconstruction",
+      "label": "image reconstruction"
+    },
+    {
+      "slug": "image-retrieval",
+      "label": "Image retrieval"
+    },
+    {
+      "slug": "image-semantic-transmission",
+      "label": "image semantic transmission"
+    },
+    {
+      "slug": "image-semantics",
+      "label": "image semantics"
+    },
+    {
+      "slug": "image-transmission",
+      "label": "image transmission"
+    },
+    {
+      "slug": "image-transmission",
+      "label": "Image transmission"
+    },
+    {
+      "slug": "image-transmission-patents",
+      "label": "Image Transmission Patents"
+    },
+    {
+      "slug": "information-extraction",
+      "label": "information extraction"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "infringement-assessment",
+      "label": "Infringement Assessment"
+    },
+    {
+      "slug": "infringement-risk-assessment",
+      "label": "Infringement Risk Assessment"
+    },
+    {
+      "slug": "innovation-portfolio",
+      "label": "Innovation Portfolio"
+    },
+    {
+      "slug": "innovative-quantization-techniques",
+      "label": "innovative quantization techniques"
+    },
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
+      "slug": "intellectual-property-strategy",
+      "label": "Intellectual Property Strategy"
+    },
+    {
+      "slug": "inter-partes-review",
+      "label": "Inter Partes Review"
+    },
+    {
+      "slug": "international",
+      "label": "International"
+    },
+    {
+      "slug": "international-patent-disputes",
+      "label": "International Patent Disputes"
+    },
+    {
+      "slug": "international-patent-treaty",
+      "label": "International Patent Treaty"
+    },
+    {
+      "slug": "international-trade-commission",
+      "label": "International Trade Commission"
+    },
+    {
+      "slug": "invalidity-arguments",
+      "label": "Invalidity Arguments"
+    },
+    {
+      "slug": "io-t-patents",
+      "label": "IoT Patents"
+    },
+    {
+      "slug": "io-t-systems",
+      "label": "IoT Systems"
+    },
+    {
+      "slug": "ipc-classification",
+      "label": "IPC Classification"
+    },
+    {
+      "slug": "japan-jpo",
+      "label": "Japan JPO"
+    },
+    {
+      "slug": "japan-patent-office",
+      "label": "Japan Patent Office"
+    },
+    {
+      "slug": "joint-optimization-patents",
+      "label": "Joint Optimization Patents"
+    },
+    {
+      "slug": "joint-source-channel-coding",
+      "label": "Joint source-channel coding"
+    },
+    {
+      "slug": "jpo",
+      "label": "JPO"
+    },
+    {
+      "slug": "kipo",
+      "label": "KIPO"
+    },
+    {
+      "slug": "latent-space-semantics",
+      "label": "latent space semantics"
+    },
+    {
+      "slug": "learned-image-compression",
+      "label": "learned image compression"
+    },
+    {
+      "slug": "learned-metadata",
+      "label": "learned metadata"
+    },
+    {
+      "slug": "licensing-agreements",
+      "label": "Licensing Agreements"
+    },
+    {
+      "slug": "licensing-deal",
+      "label": "Licensing Deal"
+    },
+    {
+      "slug": "licensing-negotiations",
+      "label": "Licensing Negotiations"
+    },
+    {
+      "slug": "licensing-opportunity",
+      "label": "Licensing Opportunity"
+    },
+    {
+      "slug": "local-texture-preservation",
+      "label": "local texture preservation"
+    },
+    {
+      "slug": "lossy-compression",
+      "label": "lossy compression"
+    },
+    {
+      "slug": "low-bitrate-conditions",
+      "label": "low bitrate conditions"
+    },
+    {
+      "slug": "low-bitrate-transmission",
+      "label": "low bitrate transmission"
+    },
+    {
+      "slug": "low-bitrate-transmission",
+      "label": "low-bitrate transmission"
+    },
+    {
+      "slug": "low-bitrates",
+      "label": "low bitrates"
+    },
+    {
+      "slug": "machine-learning-patents",
+      "label": "Machine Learning Patents"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "mobile-computing",
+      "label": "Mobile Computing"
+    },
+    {
+      "slug": "multi-scale-quantization",
+      "label": "Multi-scale quantization"
+    },
+    {
+      "slug": "multi-user-communication",
+      "label": "multi-user communication"
+    },
+    {
+      "slug": "multi-user-patents",
+      "label": "Multi-user Patents"
+    },
+    {
+      "slug": "multimedia-patents",
+      "label": "Multimedia Patents"
+    },
+    {
+      "slug": "multimedia-systems",
+      "label": "multimedia systems"
+    },
+    {
+      "slug": "multimodal-data-transmission",
+      "label": "multimodal data transmission"
+    },
+    {
+      "slug": "nanotechnology-patents",
+      "label": "Nanotechnology Patents"
+    },
+    {
+      "slug": "neural-compression",
+      "label": "neural compression"
+    },
+    {
+      "slug": "neural-network-based",
+      "label": "neural network-based"
+    },
+    {
+      "slug": "neural-network-patents",
+      "label": "Neural Network Patents"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "neural networks"
+    },
+    {
+      "slug": "neural-representation-patents",
+      "label": "Neural Representation Patents"
+    },
+    {
+      "slug": "neural-representations",
+      "label": "neural representations"
+    },
+    {
+      "slug": "non-practicing-entity",
+      "label": "Non-Practicing Entity"
+    },
+    {
+      "slug": "non-provisional-patent",
+      "label": "Non-Provisional Patent"
+    },
+    {
+      "slug": "novelty-requirement",
+      "label": "Novelty Requirement"
+    },
+    {
+      "slug": "obviousness-test",
+      "label": "Obviousness Test"
+    },
+    {
+      "slug": "open-source-patents",
+      "label": "Open Source Patents"
+    },
+    {
+      "slug": "paris-convention",
+      "label": "Paris Convention"
+    },
+    {
+      "slug": "patent-abuse",
+      "label": "Patent Abuse"
+    },
+    {
+      "slug": "patent-assertion-entities",
+      "label": "Patent Assertion Entities"
+    },
+    {
+      "slug": "patent-claims",
+      "label": "Patent Claims"
+    },
+    {
+      "slug": "patent-class",
+      "label": "Patent Class"
+    },
+    {
+      "slug": "patent-classification",
+      "label": "Patent Classification"
+    },
+    {
+      "slug": "patent-cooperation-treaty",
+      "label": "Patent Cooperation Treaty"
+    },
+    {
+      "slug": "patent-examination-process",
+      "label": "Patent Examination Process"
+    },
+    {
+      "slug": "patent-exhaustion",
+      "label": "Patent Exhaustion"
+    },
+    {
+      "slug": "patent-filed",
+      "label": "Patent Filed"
+    },
+    {
+      "slug": "patent-foundation",
+      "label": "Patent Foundation"
+    },
+    {
+      "slug": "patent-innovation",
+      "label": "Patent Innovation"
+    },
+    {
+      "slug": "patent-landscape-analysis",
+      "label": "Patent Landscape Analysis"
+    },
+    {
+      "slug": "patent-landscaping",
+      "label": "Patent Landscaping"
+    },
+    {
+      "slug": "patent-law-treaty",
+      "label": "Patent Law Treaty"
+    },
+    {
+      "slug": "patent-maintenance",
+      "label": "Patent Maintenance"
+    },
+    {
+      "slug": "patent-monetization",
+      "label": "Patent Monetization"
+    },
+    {
+      "slug": "patent-name",
+      "label": "Patent Name"
+    },
+    {
+      "slug": "patent-pending",
+      "label": "Patent Pending"
+    },
+    {
+      "slug": "patent-pools",
+      "label": "Patent Pools"
+    },
+    {
+      "slug": "patent-portfolio-management",
+      "label": "Patent Portfolio Management"
+    },
+    {
+      "slug": "patent-priority",
+      "label": "Patent Priority"
+    },
+    {
+      "slug": "patent-prosecution",
+      "label": "Patent Prosecution"
+    },
+    {
+      "slug": "patent-quality-metrics",
+      "label": "Patent Quality Metrics"
+    },
+    {
+      "slug": "patent-status",
+      "label": "Patent Status"
+    },
+    {
+      "slug": "patent-thickets",
+      "label": "Patent Thickets"
+    },
+    {
+      "slug": "patent-treaty-networks",
+      "label": "Patent Treaty Networks"
+    },
+    {
+      "slug": "patent-trial-and-appeal-board",
+      "label": "Patent Trial and Appeal Board"
+    },
+    {
+      "slug": "patent-troll",
+      "label": "Patent Troll"
+    },
+    {
+      "slug": "patentability-analysis",
+      "label": "Patentability Analysis"
+    },
+    {
+      "slug": "patentable-subject-matter",
+      "label": "Patentable Subject Matter"
+    },
+    {
+      "slug": "pct",
+      "label": "PCT"
+    },
+    {
+      "slug": "perception-quality",
+      "label": "perception quality"
+    },
+    {
+      "slug": "perceptual-loss",
+      "label": "perceptual loss"
+    },
+    {
+      "slug": "perceptual-optimization",
+      "label": "perceptual optimization"
+    },
+    {
+      "slug": "perceptual-quality",
+      "label": "perceptual quality"
+    },
+    {
+      "slug": "pharmaceutical-patents",
+      "label": "Pharmaceutical Patents"
+    },
+    {
+      "slug": "plant-patent",
+      "label": "Plant Patent"
+    },
+    {
+      "slug": "prior-art",
+      "label": "Prior Art"
+    },
+    {
+      "slug": "prior-art-search",
+      "label": "Prior Art Search"
+    },
+    {
+      "slug": "prior-art-search-methodology",
+      "label": "Prior Art Search Methodology"
+    },
+    {
+      "slug": "professional-broadcasting",
+      "label": "Professional Broadcasting"
+    },
+    {
+      "slug": "progressive-compression",
+      "label": "progressive compression"
+    },
+    {
+      "slug": "progressive-neural-networks",
+      "label": "Progressive Neural Networks"
+    },
+    {
+      "slug": "provisional-patent",
+      "label": "Provisional Patent"
+    },
+    {
+      "slug": "ptab",
+      "label": "PTAB"
+    },
+    {
+      "slug": "qualcomm",
+      "label": "Qualcomm"
+    },
+    {
+      "slug": "quality-control",
+      "label": "quality control"
+    },
+    {
+      "slug": "quality-enhancement",
+      "label": "quality enhancement"
+    },
+    {
+      "slug": "quality-metrics",
+      "label": "quality metrics"
+    },
+    {
+      "slug": "quantization-innovation",
+      "label": "quantization innovation"
+    },
+    {
+      "slug": "quantization-patents",
+      "label": "Quantization Patents"
+    },
+    {
+      "slug": "quantum-algorithms",
+      "label": "Quantum algorithms"
+    },
+    {
+      "slug": "quantum-computing-patents",
+      "label": "Quantum Computing Patents"
+    },
+    {
+      "slug": "quantum-patent-portfolio",
+      "label": "Quantum Patent Portfolio"
+    },
+    {
+      "slug": "rate-control",
+      "label": "rate control"
+    },
+    {
+      "slug": "rate-optimization",
+      "label": "rate optimization"
+    },
+    {
+      "slug": "raw-image",
+      "label": "raw image"
+    },
+    {
+      "slug": "real-time-systems",
+      "label": "real-time systems"
+    },
+    {
+      "slug": "reciprocal-patent-enforcement",
+      "label": "Reciprocal Patent Enforcement"
+    },
+    {
+      "slug": "redundancy-elimination",
+      "label": "redundancy elimination"
+    },
+    {
+      "slug": "reinforcement-learning-patents",
+      "label": "Reinforcement Learning Patents"
+    },
+    {
+      "slug": "remote-sensing-patents",
+      "label": "Remote Sensing Patents"
+    },
+    {
+      "slug": "research-institution",
+      "label": "Research Institution"
+    },
+    {
+      "slug": "residual-networks",
+      "label": "residual networks"
+    },
+    {
+      "slug": "resource-constrained-environments",
+      "label": "resource-constrained environments"
+    },
+    {
+      "slug": "rl-based-adaptive",
+      "label": "RL-based adaptive"
+    },
+    {
+      "slug": "samsung-electronics",
+      "label": "Samsung Electronics"
+    },
+    {
+      "slug": "satellite-communication",
+      "label": "Satellite Communication"
+    },
+    {
+      "slug": "satellite-imagery-patents",
+      "label": "Satellite Imagery Patents"
+    },
+    {
+      "slug": "scientific-data-transmission",
+      "label": "Scientific Data Transmission"
+    },
+    {
+      "slug": "semantic-aware-speech",
+      "label": "semantic-aware speech"
+    },
+    {
+      "slug": "semantic-coding",
+      "label": "semantic coding"
+    },
+    {
+      "slug": "semantic-communication",
+      "label": "Semantic Communication"
+    },
+    {
+      "slug": "semantic-communication",
+      "label": "semantic communication"
+    },
+    {
+      "slug": "semantic-communication-patents",
+      "label": "Semantic Communication Patents"
+    },
+    {
+      "slug": "semantic-communication-system",
+      "label": "semantic communication system"
+    },
+    {
+      "slug": "semantic-communication-systems",
+      "label": "semantic communication systems"
+    },
+    {
+      "slug": "semantic-communications-field",
+      "label": "semantic communications field"
+    },
+    {
+      "slug": "semantic-compression",
+      "label": "semantic compression"
+    },
+    {
+      "slug": "semantic-consistent-reconstruction",
+      "label": "Semantic-consistent reconstruction"
+    },
+    {
+      "slug": "semantic-encoding",
+      "label": "Semantic encoding"
+    },
+    {
+      "slug": "semantic-feature-extraction",
+      "label": "semantic feature extraction"
+    },
+    {
+      "slug": "semantic-fidelity",
+      "label": "semantic fidelity"
+    },
+    {
+      "slug": "semantic-image-transmission",
+      "label": "Semantic image transmission"
+    },
+    {
+      "slug": "semantic-importance-weighting",
+      "label": "semantic importance weighting"
+    },
+    {
+      "slug": "semantic-preservation",
+      "label": "semantic preservation"
+    },
+    {
+      "slug": "semantic-reconstruction",
+      "label": "semantic reconstruction"
+    },
+    {
+      "slug": "semantic-understanding",
+      "label": "semantic understanding"
+    },
+    {
+      "slug": "semantic-video-processing",
+      "label": "Semantic Video Processing"
+    },
+    {
+      "slug": "semantic-video-processing",
+      "label": "semantic video processing"
+    },
+    {
+      "slug": "settlement-and-licensing-deals",
+      "label": "Settlement & Licensing Deals"
+    },
+    {
+      "slug": "signal-processing-patents",
+      "label": "Signal Processing Patents"
+    },
+    {
+      "slug": "single-modal",
+      "label": "Single-modal"
+    },
+    {
+      "slug": "soft-alignment",
+      "label": "Soft alignment"
+    },
+    {
+      "slug": "source-channel-coding-patents",
+      "label": "Source-Channel Coding Patents"
+    },
+    {
+      "slug": "south-korea-kipo",
+      "label": "South Korea KIPO"
+    },
+    {
+      "slug": "space-technology-patents",
+      "label": "Space Technology Patents"
+    },
+    {
+      "slug": "spatial-context-modeling",
+      "label": "spatial context modeling"
+    },
+    {
+      "slug": "speech-communication",
+      "label": "speech communication"
+    },
+    {
+      "slug": "speech-processing-patents",
+      "label": "Speech Processing Patents"
+    },
+    {
+      "slug": "speech-to-text-transmission",
+      "label": "speech-to-text transmission"
+    },
+    {
+      "slug": "statistical-fidelity",
+      "label": "statistical fidelity"
+    },
+    {
+      "slug": "streaming-platforms",
+      "label": "Streaming Platforms"
+    },
+    {
+      "slug": "streaming-technology-patents",
+      "label": "Streaming Technology Patents"
+    },
+    {
+      "slug": "structural-representation",
+      "label": "structural representation"
+    },
+    {
+      "slug": "submarine-patents",
+      "label": "Submarine Patents"
+    },
+    {
+      "slug": "surveillance-systems",
+      "label": "Surveillance Systems"
+    },
+    {
+      "slug": "task-generic-compression",
+      "label": "task-generic compression"
+    },
+    {
+      "slug": "task-oriented-patents",
+      "label": "Task-oriented Patents"
+    },
+    {
+      "slug": "technology-transfer-management",
+      "label": "Technology Transfer Management"
+    },
+    {
+      "slug": "telecom",
+      "label": "Telecom"
+    },
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "slug": "trade-secret-protection",
+      "label": "Trade Secret Protection"
+    },
+    {
+      "slug": "trade-secrets",
+      "label": "Trade Secrets"
+    },
+    {
+      "slug": "trademark-strategy",
+      "label": "Trademark Strategy"
+    },
+    {
+      "slug": "transmission",
+      "label": "transmission"
+    },
+    {
+      "slug": "transmission-efficiency",
+      "label": "transmission efficiency"
+    },
+    {
+      "slug": "u-s-district-courts",
+      "label": "U.S. District Courts"
+    },
+    {
+      "slug": "u-s-patent-market",
+      "label": "U.S. Patent Market"
+    },
+    {
+      "slug": "uk-ip-court",
+      "label": "UK IP Court"
+    },
+    {
+      "slug": "united-states",
+      "label": "United States"
+    },
+    {
+      "slug": "university",
+      "label": "University"
+    },
+    {
+      "slug": "us-patent",
+      "label": "US Patent"
+    },
+    {
+      "slug": "usa",
+      "label": "USA"
+    },
+    {
+      "slug": "usa-uspto",
+      "label": "USA USPTO"
+    },
+    {
+      "slug": "uspto",
+      "label": "USPTO"
+    },
+    {
+      "slug": "uspto-examination",
+      "label": "USPTO Examination"
+    },
+    {
+      "slug": "utility-patent",
+      "label": "Utility Patent"
+    },
+    {
+      "slug": "validity-challenges",
+      "label": "Validity Challenges"
+    },
+    {
+      "slug": "variable-channels",
+      "label": "variable channels"
+    },
+    {
+      "slug": "variable-data-conditions",
+      "label": "variable data conditions"
+    },
+    {
+      "slug": "variable-network-conditions",
+      "label": "variable network conditions"
+    },
+    {
+      "slug": "varied-environments",
+      "label": "varied environments"
+    },
+    {
+      "slug": "vector-quantization-patents",
+      "label": "Vector Quantization Patents"
+    },
+    {
+      "slug": "video-codec-patents",
+      "label": "Video Codec Patents"
+    },
+    {
+      "slug": "video-enhancement",
+      "label": "video enhancement"
+    },
+    {
+      "slug": "video-quality",
+      "label": "video quality"
+    },
+    {
+      "slug": "video-restoration",
+      "label": "video restoration"
+    },
+    {
+      "slug": "video-services",
+      "label": "Video Services"
+    },
+    {
+      "slug": "video-transmission-patents",
+      "label": "Video Transmission Patents"
+    },
+    {
+      "slug": "voice-communication",
+      "label": "Voice Communication"
+    },
+    {
+      "slug": "wi-fi-alliance",
+      "label": "WiFi Alliance"
+    },
+    {
+      "slug": "wipo",
+      "label": "WIPO"
+    },
+    {
+      "slug": "wipo-pct",
+      "label": "WIPO PCT"
+    },
+    {
+      "slug": "wireless-communications",
+      "label": "wireless communications"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "accuracy",
+      "label": "accuracy"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "could",
+      "label": "Could"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "deep learning"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "distributed systems"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "edge computing"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "latent-space",
+      "label": "latent space"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "machine translation"
+    },
+    {
+      "slug": "multi-task-learning",
+      "label": "multi-task learning"
+    },
+    {
+      "slug": "multi-user-systems",
+      "label": "multi-user systems"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement learning"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "super-resolution",
+      "label": "Super-resolution"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    },
+    {
+      "slug": "video-streaming",
+      "label": "Video Streaming"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": []
+}

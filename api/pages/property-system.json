@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:acc32eb13f272e77e7c2c2ac57d1fd2a96babef6c8a02d7d082d9982e8448c23",
+  "title": "Property System",
+  "slug": "property-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:property-system",
+  "domain": "infrastructure",
+  "definition": "PropertySystem is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

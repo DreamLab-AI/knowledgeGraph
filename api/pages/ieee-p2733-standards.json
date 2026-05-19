@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:9147f47cb03ebc7ec8b0f5314b74edb19481671ffd281e893c092008c55b03e1",
+  "title": "Ieee P2733 Standards",
+  "slug": "ieee-p2733-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ieee-p2733-standards",
+  "domain": "spatial-computing",
+  "definition": "IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ethical design practices that ensure safe and accessible immersive experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:xr-technical-standard",
+      "label": "XR Technical Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:safe-immersive-experiences",
+        "label": "Safe Immersive Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "safe-immersive-experiences",
+      "label": "Safe Immersive Experiences"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "xr-technical-standard",
+      "label": "XR Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    }
+  ]
+}

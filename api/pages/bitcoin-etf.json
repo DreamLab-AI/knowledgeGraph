@@ -1,0 +1,720 @@
+{
+  "id": "urn:visionflow:page:28748a006ef2ac75bcd7cc773a9507411f4a9bd77e0ecd776b856ffc902ccc91",
+  "title": "Bitcoin ETF",
+  "slug": "bitcoin-etf",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-etf",
+  "domain": "blockchain",
+  "definition": "A **Bitcoin ETF** (Bitcoin Exchange-Traded Fund) is a regulated, exchange-listed pooled investment vehicle providing investors fungible share-based exposure to the spot price of [[Bitcoin]] (or, in the case of futures-based variants, to rolling CME Bitcoin futures contracts) through traditional brokerage accounts, ISAs, IRAs, 401(k)s and other tax-advantaged wrappers, structurally distinct from direct on-chain [[Bitcoin]] ownership in that the fund \u2014 not the end investor \u2014 bears the cryptographic custody, key management, hot/cold wallet segregation, multi-signature operational controls and insurance arrangements necessary to hold the underlying asset. The category emerged from a **decade-long regulatory standoff** (2013 \u2014 2024) during which the [[United States Securities and Exchange Commission|SEC]] issued more than twenty-five sequential denials of spot [[Bitcoin]] ETF applications \u2014 beginning with the **Winklevoss Bitcoin Trust** filed by Tyler and Cameron Winklevoss with NYSE Arca in July 2013 (denied March 2017, refiled and re-denied July 2018), continuing through **Bitwise Asset Management** (October 2019 denial), **VanEck/SolidX** (multiple withdrawals and denials 2017-2021)",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:bitcoin-exposure-product",
+      "label": "Bitcoin Exposure Product"
+    },
+    {
+      "id": "urn:visionflow:linked:exchange-traded-fund",
+      "label": "Exchange-Traded Fund"
+    },
+    {
+      "id": "urn:visionflow:linked:passive-index-product",
+      "label": "Passive Index Product"
+    },
+    {
+      "id": "urn:visionflow:linked:pooled-investment-vehicle",
+      "label": "Pooled Investment Vehicle"
+    },
+    {
+      "id": "urn:visionflow:linked:regulated-investment-company",
+      "label": "Regulated Investment Company"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:authorized-participant",
+        "label": "Authorized Participant"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-custody",
+        "label": "Bitcoin Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-reference-rate",
+        "label": "Bitcoin Reference Rate"
+      },
+      {
+        "id": "urn:visionflow:linked:creation-unit-basket",
+        "label": "Creation Unit Basket"
+      },
+      {
+        "id": "urn:visionflow:linked:fund-administrator",
+        "label": "Fund Administrator"
+      },
+      {
+        "id": "urn:visionflow:linked:net-asset-value-calculation",
+        "label": "Net Asset Value Calculation"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-agreement",
+        "label": "Trust Agreement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:fund-sponsor",
+        "label": "Fund Sponsor"
+      },
+      {
+        "id": "urn:visionflow:linked:independent-trustee",
+        "label": "Independent Trustee"
+      },
+      {
+        "id": "urn:visionflow:linked:qualified-custodian",
+        "label": "Qualified Custodian"
+      },
+      {
+        "id": "urn:visionflow:linked:rule-19b-4-approval",
+        "label": "Rule 19b-4 Approval"
+      },
+      {
+        "id": "urn:visionflow:linked:sec-form-s-1-registration",
+        "label": "SEC Form S-1 Registration"
+      },
+      {
+        "id": "urn:visionflow:linked:stock-exchange-listing",
+        "label": "Stock Exchange Listing"
+      },
+      {
+        "id": "urn:visionflow:linked:surveillance-sharing-agreement",
+        "label": "Surveillance Sharing Agreement"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-inclusion-in-model-portfolio",
+        "label": "Bitcoin Inclusion in Model Portfolio"
+      },
+      {
+        "id": "urn:visionflow:linked:brokerage-account-bitcoin-access",
+        "label": "Brokerage-Account Bitcoin Access"
+      },
+      {
+        "id": "urn:visionflow:linked:options-on-bitcoin-etf",
+        "label": "Options on Bitcoin ETF"
+      },
+      {
+        "id": "urn:visionflow:linked:pension-fund-bitcoin-allocation",
+        "label": "Pension Fund Bitcoin Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:retirement-account-bitcoin-allocation",
+        "label": "Retirement Account Bitcoin Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:tax-advantaged-bitcoin-exposure",
+        "label": "Tax-Advantaged Bitcoin Exposure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:cash-creation-process",
+        "label": "Cash Creation Process"
+      },
+      {
+        "id": "urn:visionflow:linked:daily-creation-redemption-mechanism",
+        "label": "Daily Creation Redemption Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:in-kind-creation-process",
+        "label": "In-Kind Creation Process"
+      },
+      {
+        "id": "urn:visionflow:linked:investment-company-act-1940-wrapper",
+        "label": "Investment Company Act 1940 Wrapper"
+      },
+      {
+        "id": "urn:visionflow:linked:nav-based-pricing",
+        "label": "NAV-Based Pricing"
+      },
+      {
+        "id": "urn:visionflow:linked:passive-bitcoin-tracking",
+        "label": "Passive Bitcoin Tracking"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "anchorage-digital",
+      "label": "Anchorage Digital"
+    },
+    {
+      "slug": "aramonte-doerr-huang-schrimpf-2024-bis-de-fi-and-spot-bitcoin-etfs",
+      "label": "Aramonte Doerr Huang Schrimpf 2024 BIS DeFi and Spot Bitcoin ETFs"
+    },
+    {
+      "slug": "authorized-participant",
+      "label": "Authorized Participant"
+    },
+    {
+      "slug": "authorized-participant-network",
+      "label": "Authorized Participant Network"
+    },
+    {
+      "slug": "bank-of-england-financial-stability-reports-2023-2024",
+      "label": "Bank of England Financial Stability Reports 2023-2024"
+    },
+    {
+      "slug": "ben-david-franzoni-moussawi-2017-do-etfs-increase-volatility",
+      "label": "Ben-David Franzoni Moussawi 2017 Do ETFs Increase Volatility"
+    },
+    {
+      "slug": "bianchi-babiak-dickerson-2024-impact-of-spot-bitcoin-etf-approval",
+      "label": "Bianchi Babiak Dickerson 2024 Impact of Spot Bitcoin ETF Approval"
+    },
+    {
+      "slug": "bit-go",
+      "label": "BitGo"
+    },
+    {
+      "slug": "bitcoin-custody",
+      "label": "Bitcoin Custody"
+    },
+    {
+      "slug": "bitcoin-exposure-product",
+      "label": "Bitcoin Exposure Product"
+    },
+    {
+      "slug": "bitcoin-inclusion-in-model-portfolio",
+      "label": "Bitcoin Inclusion in Model Portfolio"
+    },
+    {
+      "slug": "bitcoin-lightning-wallet",
+      "label": "Bitcoin Lightning Wallet"
+    },
+    {
+      "slug": "bitcoin-liquidity",
+      "label": "Bitcoin Liquidity"
+    },
+    {
+      "slug": "bitcoin-mining-equity",
+      "label": "Bitcoin Mining Equity"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bitcoin-options",
+      "label": "Bitcoin Options"
+    },
+    {
+      "slug": "bitcoin-reference-rate",
+      "label": "Bitcoin Reference Rate"
+    },
+    {
+      "slug": "bito",
+      "label": "BITO"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "black-rock-i-shares-bitcoin-trust-form-s-1-2023",
+      "label": "BlackRock iShares Bitcoin Trust Form S-1 2023"
+    },
+    {
+      "slug": "block-fi",
+      "label": "BlockFi"
+    },
+    {
+      "slug": "bloomberg-intelligence-balchunas-seyffart-spot-bitcoin-etf-series",
+      "label": "Bloomberg Intelligence Balchunas Seyffart Spot Bitcoin ETF Series"
+    },
+    {
+      "slug": "bohme-christin-edelman-moore-2015-bitcoin-economics",
+      "label": "Bohme Christin Edelman Moore 2015 Bitcoin Economics"
+    },
+    {
+      "slug": "brokerage-account-bitcoin-access",
+      "label": "Brokerage-Account Bitcoin Access"
+    },
+    {
+      "slug": "capital-markets-domain",
+      "label": "CapitalMarketsDomain"
+    },
+    {
+      "slug": "cash-creation-process",
+      "label": "Cash Creation Process"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "cftc-commodity-classification",
+      "label": "CFTC Commodity Classification"
+    },
+    {
+      "slug": "cme-bitcoin-reference-rate",
+      "label": "CME Bitcoin Reference Rate"
+    },
+    {
+      "slug": "cme-brr",
+      "label": "CME BRR"
+    },
+    {
+      "slug": "coates-2024-grayscale-decision-harvard-law-review",
+      "label": "Coates 2024 Grayscale Decision Harvard Law Review"
+    },
+    {
+      "slug": "coinbase-custody",
+      "label": "Coinbase Custody"
+    },
+    {
+      "slug": "coinbase-custody-trust",
+      "label": "Coinbase Custody Trust"
+    },
+    {
+      "slug": "cold-storage",
+      "label": "Cold Storage"
+    },
+    {
+      "slug": "cong-li-wang-2021-tokenomics-dynamic-adoption-and-valuation",
+      "label": "Cong Li Wang 2021 Tokenomics Dynamic Adoption and Valuation"
+    },
+    {
+      "slug": "creation-unit-basket",
+      "label": "Creation Unit Basket"
+    },
+    {
+      "slug": "custody-infrastructure-layer",
+      "label": "CustodyInfrastructureLayer"
+    },
+    {
+      "slug": "daily-creation-redemption-mechanism",
+      "label": "Daily Creation Redemption Mechanism"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "DigitalAssetDomain"
+    },
+    {
+      "slug": "european-bitcoin-etp",
+      "label": "European Bitcoin ETP"
+    },
+    {
+      "slug": "exchange-listed-securities-layer",
+      "label": "ExchangeListedSecuritiesLayer"
+    },
+    {
+      "slug": "exchange-traded-fund",
+      "label": "Exchange-Traded Fund"
+    },
+    {
+      "slug": "fasb-asu-2023-08",
+      "label": "FASB ASU 2023-08"
+    },
+    {
+      "slug": "fca-2021-policy-statement-ps20-10-cryptoassets-retail-ban",
+      "label": "FCA 2021 Policy Statement PS20-10 Cryptoassets Retail Ban"
+    },
+    {
+      "slug": "fca-2024-crypto-etn-professional-investor-statement",
+      "label": "FCA 2024 Crypto ETN Professional Investor Statement"
+    },
+    {
+      "slug": "fca-cryptoasset-promotions-regime",
+      "label": "FCA Cryptoasset Promotions Regime"
+    },
+    {
+      "slug": "fidelity-digital-assets",
+      "label": "Fidelity Digital Assets"
+    },
+    {
+      "slug": "fidelity-investments",
+      "label": "Fidelity Investments"
+    },
+    {
+      "slug": "fund-administrator",
+      "label": "Fund Administrator"
+    },
+    {
+      "slug": "fund-sponsor",
+      "label": "Fund Sponsor"
+    },
+    {
+      "slug": "fund-wrapper-layer",
+      "label": "FundWrapperLayer"
+    },
+    {
+      "slug": "gary-gensler",
+      "label": "Gary Gensler"
+    },
+    {
+      "slug": "gemini-custody",
+      "label": "Gemini Custody"
+    },
+    {
+      "slug": "grayscale",
+      "label": "Grayscale"
+    },
+    {
+      "slug": "grayscale-bitcoin-trust",
+      "label": "Grayscale Bitcoin Trust"
+    },
+    {
+      "slug": "grayscale-bitcoin-trust",
+      "label": "Grayscale Bitcoin Trust"
+    },
+    {
+      "slug": "grayscale-bitcoin-trust-10-k-filings",
+      "label": "Grayscale Bitcoin Trust 10-K Filings"
+    },
+    {
+      "slug": "grayscale-v-sec",
+      "label": "Grayscale v SEC"
+    },
+    {
+      "slug": "grayscale-v-sec-dc-circuit-2023",
+      "label": "Grayscale v SEC DC Circuit 2023"
+    },
+    {
+      "slug": "henderson-raskin-2019-regulatory-classification-of-digital-assets",
+      "label": "Henderson Raskin 2019 Regulatory Classification of Digital Assets"
+    },
+    {
+      "slug": "hmrc-2024-cryptoassets-manual",
+      "label": "HMRC 2024 Cryptoassets Manual"
+    },
+    {
+      "slug": "hong-kong-spot-bitcoin-etf",
+      "label": "Hong Kong Spot Bitcoin ETF"
+    },
+    {
+      "slug": "ibit",
+      "label": "IBIT"
+    },
+    {
+      "slug": "imperial-college-2024-centre-for-digital-finance-cryptoasset-research",
+      "label": "Imperial College 2024 Centre for Digital Finance Cryptoasset Research"
+    },
+    {
+      "slug": "in-kind-creation-process",
+      "label": "In-Kind Creation Process"
+    },
+    {
+      "slug": "independent-trustee",
+      "label": "Independent Trustee"
+    },
+    {
+      "slug": "institutional-bitcoin-adoption",
+      "label": "Institutional Bitcoin Adoption"
+    },
+    {
+      "slug": "investment-company-act-1940",
+      "label": "Investment Company Act 1940"
+    },
+    {
+      "slug": "investment-company-act-1940-wrapper",
+      "label": "Investment Company Act 1940 Wrapper"
+    },
+    {
+      "slug": "liu-tsyvinski-2021-risks-and-returns-of-cryptocurrency",
+      "label": "Liu Tsyvinski 2021 Risks and Returns of Cryptocurrency"
+    },
+    {
+      "slug": "madhavan-2014-exchange-traded-funds",
+      "label": "Madhavan 2014 Exchange-Traded Funds"
+    },
+    {
+      "slug": "makarov-schoar-2020-trading-and-arbitrage-in-cryptocurrency-markets",
+      "label": "Makarov Schoar 2020 Trading and Arbitrage in Cryptocurrency Markets"
+    },
+    {
+      "slug": "market-maker-network",
+      "label": "Market Maker Network"
+    },
+    {
+      "slug": "monochrome-ibtc",
+      "label": "Monochrome IBTC"
+    },
+    {
+      "slug": "multi-signature-wallets",
+      "label": "Multi-Signature Wallets"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "nav-based-pricing",
+      "label": "NAV-Based Pricing"
+    },
+    {
+      "slug": "net-asset-value-calculation",
+      "label": "Net Asset Value Calculation"
+    },
+    {
+      "slug": "options-on-bitcoin-etf",
+      "label": "Options on Bitcoin ETF"
+    },
+    {
+      "slug": "pan-zeng-2019-etf-arbitrage-under-liquidity-mismatch",
+      "label": "Pan Zeng 2019 ETF Arbitrage Under Liquidity Mismatch"
+    },
+    {
+      "slug": "paper-bitcoin",
+      "label": "paper Bitcoin"
+    },
+    {
+      "slug": "passive-bitcoin-tracking",
+      "label": "Passive Bitcoin Tracking"
+    },
+    {
+      "slug": "passive-index-product",
+      "label": "Passive Index Product"
+    },
+    {
+      "slug": "pension-fund-bitcoin-allocation",
+      "label": "Pension Fund Bitcoin Allocation"
+    },
+    {
+      "slug": "pooled-investment-vehicle",
+      "label": "Pooled Investment Vehicle"
+    },
+    {
+      "slug": "pro-shares-bitcoin-strategy-etf-prospectus-2021",
+      "label": "ProShares Bitcoin Strategy ETF Prospectus 2021"
+    },
+    {
+      "slug": "pro-shares-bito",
+      "label": "ProShares BITO"
+    },
+    {
+      "slug": "pro-shares-bito",
+      "label": "ProShares BITO"
+    },
+    {
+      "slug": "purpose-bitcoin-etf",
+      "label": "Purpose Bitcoin ETF"
+    },
+    {
+      "slug": "qualified-custodian",
+      "label": "Qualified Custodian"
+    },
+    {
+      "slug": "regulated-bitcoin-market",
+      "label": "Regulated Bitcoin Market"
+    },
+    {
+      "slug": "regulated-investment-company",
+      "label": "Regulated Investment Company"
+    },
+    {
+      "slug": "regulated-securities-domain",
+      "label": "RegulatedSecuritiesDomain"
+    },
+    {
+      "slug": "retail-bitcoin-access",
+      "label": "Retail Bitcoin Access"
+    },
+    {
+      "slug": "retirement-account-bitcoin-allocation",
+      "label": "Retirement Account Bitcoin Allocation"
+    },
+    {
+      "slug": "rgb-protocol",
+      "label": "RGB Protocol"
+    },
+    {
+      "slug": "rule-19b-4-approval",
+      "label": "Rule 19b-4 Approval"
+    },
+    {
+      "slug": "schwartz-2021-the-case-for-crypto-etfs",
+      "label": "Schwartz 2021 The Case for Crypto ETFs"
+    },
+    {
+      "slug": "sec-2017-winklevoss-bitcoin-trust-denial-order",
+      "label": "SEC 2017 Winklevoss Bitcoin Trust Denial Order"
+    },
+    {
+      "slug": "sec-2024-spot-bitcoin-etf-approval-order",
+      "label": "SEC 2024 Spot Bitcoin ETF Approval Order"
+    },
+    {
+      "slug": "sec-form-s-1",
+      "label": "SEC Form S-1"
+    },
+    {
+      "slug": "sec-form-s-1-registration",
+      "label": "SEC Form S-1 Registration"
+    },
+    {
+      "slug": "sec-rule-19b-4",
+      "label": "SEC Rule 19b-4"
+    },
+    {
+      "slug": "securities-act-1933",
+      "label": "Securities Act 1933"
+    },
+    {
+      "slug": "securities-exchange-act-1934",
+      "label": "Securities Exchange Act 1934"
+    },
+    {
+      "slug": "self-custody-bitcoin",
+      "label": "Self-Custody Bitcoin"
+    },
+    {
+      "slug": "spot-bitcoin-holdings",
+      "label": "Spot Bitcoin Holdings"
+    },
+    {
+      "slug": "spot-ether-etf",
+      "label": "Spot Ether ETF"
+    },
+    {
+      "slug": "stacks-stx",
+      "label": "Stacks (STX)"
+    },
+    {
+      "slug": "stock-exchange",
+      "label": "Stock Exchange"
+    },
+    {
+      "slug": "stock-exchange-listing",
+      "label": "Stock Exchange Listing"
+    },
+    {
+      "slug": "surveillance-sharing-agreement",
+      "label": "Surveillance Sharing Agreement"
+    },
+    {
+      "slug": "tax-advantaged-bitcoin-exposure",
+      "label": "Tax-Advantaged Bitcoin Exposure"
+    },
+    {
+      "slug": "the-block-research-spot-bitcoin-etf-tracker",
+      "label": "The Block Research Spot Bitcoin ETF Tracker"
+    },
+    {
+      "slug": "three-arrows-capital",
+      "label": "Three Arrows Capital"
+    },
+    {
+      "slug": "trust-agreement",
+      "label": "Trust Agreement"
+    },
+    {
+      "slug": "united-states-securities-and-exchange-commission",
+      "label": "United States Securities and Exchange Commission"
+    },
+    {
+      "slug": "wall-street",
+      "label": "Wall Street"
+    },
+    {
+      "slug": "wealth-manager-distribution",
+      "label": "Wealth Manager Distribution"
+    },
+    {
+      "slug": "yermack-2015-is-bitcoin-a-real-currency",
+      "label": "Yermack 2015 Is Bitcoin a Real Currency"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    }
+  ]
+}

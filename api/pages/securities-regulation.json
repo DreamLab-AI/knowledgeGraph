@@ -1,0 +1,580 @@
+{
+  "id": "urn:visionflow:page:9a43b5300dd8ba2ab6012531fe706ed6217dd1c6966ad6eeece92673ba4406ab",
+  "title": "Securities Regulation",
+  "slug": "securities-regulation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:securities-regulation",
+  "domain": "blockchain",
+  "definition": "The legal and regulatory frameworks determining whether digital assets \u2014 cryptocurrency tokens, stablecoins, security tokens, DeFi protocol interests, NFTs, and AI-generated financial instruments \u2014 qualify as securities requiring registration, disclosure, and ongoing compliance obligations across multiple overlapping jurisdictions, anchored by the United States Howey Test (SEC v. W.J. Howey Co. 328 U.S. 293 (1946)) requiring: (1) investment of money, (2) in a common enterprise, (3) with reasonable expectation of profits, (4) derived from the efforts of others; operationalised through the SEC's April 2019 FinHub Framework for Investment Contract Analysis evaluating active participant reliance, network decentralisation sufficiency, purchaser profit expectations, and token utility at time of sale; resolved in landmark enforcement via SEC v. Ripple Labs (Judge Torres July 2023: institutional XRP sales are securities; programmatic exchange sales are not; $125M settlement August 2025); SEC v. Coinbase (2023 charges, evolving under Paul Atkins as SEC Chair from March 2025 on a crypto-industry-friendly mandate); SEC v. Binance ($4.3B DOJ criminal penalty November 2023; Changpeng Zhao guilt",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:capital-markets-regulation",
+      "label": "Capital Markets Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:digital-asset-law",
+      "label": "Digital Asset Law"
+    },
+    {
+      "id": "urn:visionflow:linked:financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:investment-law",
+      "label": "Investment Law"
+    },
+    {
+      "id": "urn:visionflow:owl:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:broker-dealer-registration",
+        "label": "Broker-Dealer Registration"
+      },
+      {
+        "id": "urn:visionflow:linked:disclosure-obligations",
+        "label": "Disclosure Obligations"
+      },
+      {
+        "id": "urn:visionflow:linked:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:exemption-framework",
+        "label": "Exemption Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "id": "urn:visionflow:linked:investment-adviser-act",
+        "label": "Investment Adviser Act"
+      },
+      {
+        "id": "urn:visionflow:linked:periodic-reporting-obligations",
+        "label": "Periodic Reporting Obligations"
+      },
+      {
+        "id": "urn:visionflow:linked:registration-requirements",
+        "label": "Registration Requirements"
+      },
+      {
+        "id": "urn:visionflow:linked:securities-exchange-act",
+        "label": "Securities Exchange Act"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-agent-requirements",
+        "label": "Transfer Agent Requirements"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:accredited-investor-verification",
+        "label": "Accredited Investor Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:investor-disclosure",
+        "label": "Investor Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-classification-system",
+        "label": "Legal Classification System"
+      },
+      {
+        "id": "urn:visionflow:linked:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-authority",
+        "label": "Regulatory Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:securities-counsel-opinion",
+        "label": "Securities Counsel Opinion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:capital-formation",
+        "label": "Capital Formation"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-asset-custody-innovation",
+        "label": "Digital Asset Custody Innovation"
+      },
+      {
+        "id": "urn:visionflow:linked:institutional-crypto-adoption",
+        "label": "Institutional Crypto Adoption"
+      },
+      {
+        "id": "urn:visionflow:linked:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      },
+      {
+        "id": "urn:visionflow:linked:spot-ethereum-etf",
+        "label": "Spot Ethereum ETF"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenised-securities-market",
+        "label": "Tokenised Securities Market"
+      },
+      {
+        "id": "urn:visionflow:owl:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:alternative-trading-system",
+        "label": "Alternative Trading System"
+      },
+      {
+        "id": "urn:visionflow:linked:dlt-pilot-regime",
+        "label": "DLT Pilot Regime"
+      },
+      {
+        "id": "urn:visionflow:linked:fca-consumer-duty",
+        "label": "FCA Consumer Duty"
+      },
+      {
+        "id": "urn:visionflow:linked:genius-act",
+        "label": "GENIUS Act"
+      },
+      {
+        "id": "urn:visionflow:linked:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "id": "urn:visionflow:linked:iosco-recommendations",
+        "label": "IOSCO Recommendations"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-ca",
+        "label": "MiCA"
+      },
+      {
+        "id": "urn:visionflow:linked:regulation-a-plus",
+        "label": "Regulation A Plus"
+      },
+      {
+        "id": "urn:visionflow:linked:regulation-crowdfunding",
+        "label": "Regulation Crowdfunding"
+      },
+      {
+        "id": "urn:visionflow:linked:regulation-d",
+        "label": "Regulation D"
+      },
+      {
+        "id": "urn:visionflow:linked:regulation-s",
+        "label": "Regulation S"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accredited-investor-verification",
+      "label": "Accredited Investor Verification"
+    },
+    {
+      "slug": "alternative-trading-system",
+      "label": "Alternative Trading System"
+    },
+    {
+      "slug": "bank-secrecy-act",
+      "label": "Bank Secrecy Act"
+    },
+    {
+      "slug": "banking-regulation",
+      "label": "Banking Regulation"
+    },
+    {
+      "slug": "basel-committee-on-banking-supervision",
+      "label": "Basel Committee on Banking Supervision"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    },
+    {
+      "slug": "broker-dealer-registration",
+      "label": "Broker-Dealer Registration"
+    },
+    {
+      "slug": "capital-formation",
+      "label": "Capital Formation"
+    },
+    {
+      "slug": "capital-markets-regulation",
+      "label": "Capital Markets Regulation"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
+      "slug": "commodity-regulation",
+      "label": "Commodity Regulation"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "contract-law-frameworks",
+      "label": "Contract Law Frameworks"
+    },
+    {
+      "slug": "cpmi",
+      "label": "CPMI"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralisation-analysis",
+      "label": "Decentralisation Analysis"
+    },
+    {
+      "slug": "digital-asset-custody",
+      "label": "Digital Asset Custody"
+    },
+    {
+      "slug": "digital-asset-custody-innovation",
+      "label": "Digital Asset Custody Innovation"
+    },
+    {
+      "slug": "digital-asset-law",
+      "label": "Digital Asset Law"
+    },
+    {
+      "slug": "disclosure-obligations",
+      "label": "Disclosure Obligations"
+    },
+    {
+      "slug": "dlt-pilot-regime",
+      "label": "DLT Pilot Regime"
+    },
+    {
+      "slug": "economic-substance-test",
+      "label": "Economic Substance Test"
+    },
+    {
+      "slug": "enforcement-mechanism",
+      "label": "Enforcement Mechanism"
+    },
+    {
+      "slug": "esma",
+      "label": "ESMA"
+    },
+    {
+      "slug": "exemption-framework",
+      "label": "Exemption Framework"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "fca-consumer-duty",
+      "label": "FCA Consumer Duty"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "financial-regulatory-domain",
+      "label": "FinancialRegulatoryDomain"
+    },
+    {
+      "slug": "financial-services-and-markets-act",
+      "label": "Financial Services and Markets Act"
+    },
+    {
+      "slug": "finma",
+      "label": "FINMA"
+    },
+    {
+      "slug": "fsb",
+      "label": "FSB"
+    },
+    {
+      "slug": "functional-equivalence-principle",
+      "label": "Functional Equivalence Principle"
+    },
+    {
+      "slug": "g20-financial-regulation",
+      "label": "G20 Financial Regulation"
+    },
+    {
+      "slug": "genius-act",
+      "label": "GENIUS Act"
+    },
+    {
+      "slug": "howey-test",
+      "label": "Howey Test"
+    },
+    {
+      "slug": "initial-coin-offering",
+      "label": "Initial Coin Offering"
+    },
+    {
+      "slug": "institutional-crypto-adoption",
+      "label": "Institutional Crypto Adoption"
+    },
+    {
+      "slug": "insurance-regulation",
+      "label": "Insurance Regulation"
+    },
+    {
+      "slug": "investment-adviser-act",
+      "label": "Investment Adviser Act"
+    },
+    {
+      "slug": "investment-contract-analysis",
+      "label": "Investment Contract Analysis"
+    },
+    {
+      "slug": "investment-law",
+      "label": "Investment Law"
+    },
+    {
+      "slug": "investor-disclosure",
+      "label": "Investor Disclosure"
+    },
+    {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "iosco",
+      "label": "IOSCO"
+    },
+    {
+      "slug": "iosco-recommendations",
+      "label": "IOSCO Recommendations"
+    },
+    {
+      "slug": "jurisdictional-layer",
+      "label": "JurisdictionalLayer"
+    },
+    {
+      "slug": "legal-classification-system",
+      "label": "Legal Classification System"
+    },
+    {
+      "slug": "legal-framework-domain",
+      "label": "LegalFrameworkDomain"
+    },
+    {
+      "slug": "market-integrity",
+      "label": "Market Integrity"
+    },
+    {
+      "slug": "market-surveillance",
+      "label": "Market Surveillance"
+    },
+    {
+      "slug": "markets-in-financial-instruments-directive",
+      "label": "Markets in Financial Instruments Directive"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "payment-services-regulation",
+      "label": "Payment Services Regulation"
+    },
+    {
+      "slug": "periodic-reporting-obligations",
+      "label": "Periodic Reporting Obligations"
+    },
+    {
+      "slug": "progressive-decentralisation-framework",
+      "label": "Progressive Decentralisation Framework"
+    },
+    {
+      "slug": "property-law-frameworks",
+      "label": "Property Law Frameworks"
+    },
+    {
+      "slug": "proportionality-principle",
+      "label": "Proportionality Principle"
+    },
+    {
+      "slug": "real-world-asset-tokenisation",
+      "label": "Real World Asset Tokenisation"
+    },
+    {
+      "slug": "registration-requirements",
+      "label": "Registration Requirements"
+    },
+    {
+      "slug": "regulation-a-plus",
+      "label": "Regulation A Plus"
+    },
+    {
+      "slug": "regulation-crowdfunding",
+      "label": "Regulation Crowdfunding"
+    },
+    {
+      "slug": "regulation-d",
+      "label": "Regulation D"
+    },
+    {
+      "slug": "regulation-s",
+      "label": "Regulation S"
+    },
+    {
+      "slug": "regulatory-authority",
+      "label": "Regulatory Authority"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "RegulatoryLayer"
+    },
+    {
+      "slug": "same-activity-same-risk-principle",
+      "label": "Same Activity Same Risk Principle"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "securities-counsel-opinion",
+      "label": "Securities Counsel Opinion"
+    },
+    {
+      "slug": "securities-exchange-act",
+      "label": "Securities Exchange Act"
+    },
+    {
+      "slug": "spot-bitcoin-etf",
+      "label": "Spot Bitcoin ETF"
+    },
+    {
+      "slug": "spot-ethereum-etf",
+      "label": "Spot Ethereum ETF"
+    },
+    {
+      "slug": "tokenised-securities",
+      "label": "Tokenised Securities"
+    },
+    {
+      "slug": "tokenised-securities-market",
+      "label": "Tokenised Securities Market"
+    },
+    {
+      "slug": "transfer-agent-requirements",
+      "label": "Transfer Agent Requirements"
+    },
+    {
+      "slug": "utility-token-framework",
+      "label": "Utility Token Framework"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "security-token-offering",
+      "label": "Security Token Offering"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:5483ce336250cce2b4b5334e1a0885f83981f34d6607f32a85cff27e57020845",
+  "title": "Web Technology",
+  "slug": "web-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:web-technology",
+  "domain": "infrastructure",
+  "definition": "WebTechnology is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

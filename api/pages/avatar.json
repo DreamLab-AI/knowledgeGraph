@@ -1,0 +1,123 @@
+{
+  "id": "urn:visionflow:page:53ad95c3c89aaacea76e1b303729877048febad65bd8f70a919c3dafec8e6389",
+  "title": "Avatar",
+  "slug": "avatar",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar",
+  "domain": "spatial-computing",
+  "definition": "Digital representation of a person or agent used to interact within a virtual environment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:animation-rig",
+        "label": "Animation Rig"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-mesh",
+        "label": "Visual Mesh"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-embodiment",
+        "label": "User Embodiment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm-web3-d-hanim",
+      "label": "ACM + Web3D HAnim"
+    },
+    {
+      "slug": "animation-rig",
+      "label": "Animation Rig"
+    },
+    {
+      "slug": "user-embodiment",
+      "label": "User Embodiment"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "UserExperienceLayer"
+    },
+    {
+      "slug": "visual-mesh",
+      "label": "Visual Mesh"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "universal-avatar",
+      "label": "Universal Avatar"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    }
+  ]
+}

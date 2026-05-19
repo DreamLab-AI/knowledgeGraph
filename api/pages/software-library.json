@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:10c578c8f92081c367854a54efa22058114b718e7e6e058339f25deaab19da8d",
+  "title": "Software Library",
+  "slug": "software-library",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:software-library",
+  "domain": "infrastructure",
+  "definition": "SoftwareLibrary is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "math-library",
+      "label": "Math Library"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:058b3c454847d3bb3ef35dde703be9fcc3aff67ae0627bf6aa4eb5d68b9a90fb",
+  "title": "NFT Standard",
+  "slug": "nft-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nft-standard",
+  "domain": "blockchain",
+  "definition": "Technical standards for NFTs (ERC-721, ERC-1155, etc.).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "nft-wrapping",
+      "label": "NFT Wrapping"
+    },
+    {
+      "slug": "royalty-mechanism",
+      "label": "Royalty Mechanism"
+    }
+  ]
+}

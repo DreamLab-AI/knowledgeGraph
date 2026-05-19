@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:bbfe21a7ee65bef9c048cf16da8154d1672393f2f9ac7f1edabd9e6e9a2ae6b2",
+  "title": "Task Adaptation",
+  "slug": "task-adaptation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:task-adaptation",
+  "domain": "artificial-intelligence",
+  "definition": "Adaptation of models to new tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:086b878064d5da2d21a69c8a90dfd39f5098ab75e20d7bfc23d75a703db0f1a8",
+  "title": "Semi-Fungible Token",
+  "slug": "semi-fungible-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:semi-fungible-token",
+  "domain": "blockchain",
+  "definition": "A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:token",
+      "label": "Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "erc1155-token",
+      "label": "ERC1155 Token"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

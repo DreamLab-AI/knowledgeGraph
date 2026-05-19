@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:7890754026b303f0cfac64877eda5e982ddd8236222ab72926b4ff9be58b6768",
+  "title": "Model Parameters",
+  "slug": "model-parameters",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-parameters",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automation",
+      "label": "automation"
+    },
+    {
+      "slug": "research",
+      "label": "research"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "artificial intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "natural language processing"
+    },
+    {
+      "slug": "training",
+      "label": "training"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
+}

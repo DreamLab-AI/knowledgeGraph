@@ -1,21 +1,321 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#TelecollaborationDomain
-uri:: urn:visionclaw:concept:distributed-collaboration:telecollaboration-domain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:telecollaboration-domain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Telecollaboration Domain
-content-hash:: sha256-12-63e9d6266edd
-legacy-term-id:: TC-0001
-status:: active
-maturity:: mature
-quality-score:: 0.60
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#TelecollaborationDomain
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:telecollaboration-domain
 public:: true
+
+# Telecollaboration Domain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9ea88c5816af0820711812fa099d27f554bc669235b90f7b004cc935ada72dd7",
+  "@type": "Page",
+  "vc:slug": "telecollaboration-domain",
+  "title": "Telecollaboration Domain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-domain",
+      "vc:label": "BC Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-cloud-collaboration-ai-0436",
+      "vc:label": "Edge-Cloud Collaboration (AI-0436)"
+    },
+    {
+      "@id": "urn:visionflow:linked:mv-domain",
+      "vc:label": "MV Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-domain",
+      "vc:label": "RB Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "vc:label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-200-robotic-telepresence",
+      "vc:label": "TELE-200-robotic-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "vc:label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-250-blockchain-collaboration",
+      "vc:label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "vc:label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "vc:label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "vc:label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-telepresence-bridge",
+      "vc:label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-telepresence-bridge",
+      "vc:label": "Robotics-Telepresence Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technology-domain",
+      "vc:label": "Technology Domain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-63e9d6266edd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#TelecollaborationDomain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Telecollaboration Domain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.60"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:telecollaboration-domain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:telecollaboration-domain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ea88c5816af0820711812fa099d27f554bc669235b90f7b004cc935ada72dd7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+  "@type": "OntologyClass",
+  "label": "Telecollaboration Domain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technology-domain",
+      "vc:label": "Technology Domain"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9ea88c5816af0820711812fa099d27f554bc669235b90f7b004cc935ada72dd7"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ea88c5816af0820711812fa099d27f554bc669235b90f7b004cc935ada72dd7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries.\"",
+  "vc:qualityScore": {
+    "@value": "0.60",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:telecollaboration-domain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9ea88c5816af0820711812fa099d27f554bc669235b90f7b004cc935ada72dd7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC Domain]]",
+      "resolved": "urn:visionflow:linked:bc-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Edge-Cloud Collaboration (AI-0436)]]",
+      "resolved": "urn:visionflow:linked:edge-cloud-collaboration-ai-0436",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MV Domain]]",
+      "resolved": "urn:visionflow:linked:mv-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB Domain]]",
+      "resolved": "urn:visionflow:linked:rb-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-105-real-time-language-translation]]",
+      "resolved": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-200-robotic-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-200-robotic-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-250-blockchain-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-250-blockchain-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-251-smart-contract-coordination]]",
+      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-252-dao-governance-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-301-virtual-office-spaces]]",
+      "resolved": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse-Telepresence Bridge]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-telepresence-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics-Telepresence Bridge]]",
+      "resolved": "urn:visionflow:owl:class:robotics-telepresence-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technology Domain]]",
+      "resolved": "urn:visionflow:owl:class:technology-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ea88c5816af0820711812fa099d27f554bc669235b90f7b004cc935ada72dd7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries."
@@ -264,8 +564,8 @@ public:: true
   - [[RB Domain]] - Robotics
 
   **Cross-Domain Bridges**:
-  - [[TELE-CONV-001-metaverse-telepresence-bridge]] - MV↔TC bridge
-  - [[TELE-CONV-002-robotics-telepresence-bridge]] - RB↔TC bridge
+  - [[Metaverse-Telepresence Bridge]] - MV↔TC bridge
+  - [[Robotics-Telepresence Bridge]] - RB↔TC bridge
   - [[Edge-Cloud Collaboration (AI-0436)]] - AI↔TC bridge
   - [[TELE-250-blockchain-collaboration]] - BC↔TC bridge
 

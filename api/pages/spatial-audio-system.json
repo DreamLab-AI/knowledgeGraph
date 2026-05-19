@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:017495bcfb64eb742fa06bc1c7c3f6a3168a2e60a23e8fc83a030ce6f85946f4",
+  "title": "Spatial Audio System",
+  "slug": "spatial-audio-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-audio-system",
+  "domain": "spatial-computing",
+  "definition": "An integrated audio technology framework creating three-dimensional soundscapes for VR, AR, and metaverse applications by simulating sound direction, distance, and environmental acoustics, enabling realistic audio experiences that respond dynamically to user movement and head orientation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:immersive-audio-technology",
+      "label": "Immersive Audio Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-sound-experience",
+        "label": "Immersive Sound Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-sound-experience",
+      "label": "Immersive Sound Experience"
+    },
+    {
+      "slug": "immersive-audio-technology",
+      "label": "Immersive Audio Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

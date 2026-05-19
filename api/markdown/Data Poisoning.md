@@ -1,21 +1,321 @@
-iri:: http://narrativegoldmine.com/metaverse#DataPoisoning
-uri:: urn:visionclaw:concept:artificial-intelligence:data-poisoning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:data-poisoning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Data Poisoning
-content-hash:: sha256-12-7f3a527315e3
-legacy-term-id:: AI-0085
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#DataPoisoning
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:data-poisoning
 public:: true
+
+# Data Poisoning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801",
+  "@type": "Page",
+  "vc:slug": "data-poisoning",
+  "title": "Data Poisoning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ball2020metaverse",
+      "vc:label": "ball2020metaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:mitre-atlas",
+      "vc:label": "MITRE ATLAS"
+    },
+    {
+      "@id": "urn:visionflow:linked:ncsc",
+      "vc:label": "NCSC"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "neural networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:wouters2022",
+      "vc:label": "Wouters2022"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "computer vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fooocus",
+      "vc:label": "Fooocus"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graphing",
+      "vc:label": "Knowledge Graphing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-space",
+      "vc:label": "latent space"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformers",
+      "vc:label": "Transformers"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:unreal-engine",
+      "vc:label": "Unreal Engine"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7f3a527315e3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#DataPoisoning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0085"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Data Poisoning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:data-poisoning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:data-poisoning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:data-poisoning",
+  "@type": "OntologyClass",
+  "label": "Data Poisoning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:adversarial-attack",
+      "vc:label": "Adversarial Attack"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:data-poisoning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ball2020metaverse]]",
+      "resolved": "urn:visionflow:linked:ball2020metaverse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MITRE ATLAS]]",
+      "resolved": "urn:visionflow:linked:mitre-atlas",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NCSC]]",
+      "resolved": "urn:visionflow:linked:ncsc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[neural networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wouters2022]]",
+      "resolved": "urn:visionflow:linked:wouters2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[computer vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diffusion Models]]",
+      "resolved": "urn:visionflow:owl:class:diffusion-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fooocus]]",
+      "resolved": "urn:visionflow:owl:class:fooocus",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graphing]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[latent space]]",
+      "resolved": "urn:visionflow:owl:class:latent-space",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformers]]",
+      "resolved": "urn:visionflow:owl:class:transformers",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Unreal Engine]]",
+      "resolved": "urn:visionflow:owl:class:unreal-engine",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.
@@ -646,7 +946,7 @@ public:: true
   - A fascinating unexpected second order impact of this is that future models may skew more right wing as those sites [welcome the scraping.](https://www.wired.com/story/most-news-sites-block-ai-bots-right-wing-media-welcomes-them/?)
   - [AI and Leviathan: Part III by Samuel Hammond (secondbest.ca)](https://www.secondbest.ca/p/ai-and-leviathan-part-iii)
 
-  - ### [[Unreal]] & Virtual Production
+  - ### [[Unreal Engine]] & Virtual Production
   - Matthew Ball is an [expert on Metaverse](https://www.matthewball.vc/).He explained his vision and concerns with regard to metaverse in an[adaptation of hisbook](https://time.com/6197849/metaverse-future-matthew-ball/)[[ball2020metaverse]]featured on Time Magazine (Figure<a href="#fig:time" data-reference-type="ref" data-reference="fig:time">7.5</a>).
   - He [talks about Epic’s Unrealengine](https://www.matthewball.vc/all/epicprimer1) and identifies whathe calls the Epic Flywheel for games manufacture seen in Figure<a href="#fig:epicflywheel" data-reference-type="ref" data-reference="fig:epicflywheel">7.6</a>.
   ![]./assets/354b361cffb9d11b9e425cb2d1307ed933b808d5.jpg

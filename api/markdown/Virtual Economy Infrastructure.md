@@ -1,21 +1,189 @@
-iri:: http://narrativegoldmine.com/infrastructure#VirtualEconomyInfrastructure
-uri:: urn:visionclaw:concept:infrastructure:virtual-economy-infrastructure
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:virtual-economy-infrastructure
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Virtual Economy Infrastructure
-content-hash:: sha256-12-ecd5bdfd9cb4
-legacy-term-id:: MV-10117
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#VirtualEconomyInfrastructure
+legacy_uri:: urn:visionclaw:concept:infrastructure:virtual-economy-infrastructure
 public:: true
+
+# Virtual Economy Infrastructure
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:26e933a48ff819ff4601e6b3f834c44156ae38955c613f9a4fe4a7ef3d97499a",
+  "@type": "Page",
+  "vc:slug": "virtual-economy-infrastructure",
+  "title": "Virtual Economy Infrastructure",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ecd5bdfd9cb4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#VirtualEconomyInfrastructure"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10117"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Virtual Economy Infrastructure"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:virtual-economy-infrastructure"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:virtual-economy-infrastructure"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26e933a48ff819ff4601e6b3f834c44156ae38955c613f9a4fe4a7ef3d97499a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:virtual-economy-infrastructure",
+  "@type": "OntologyClass",
+  "label": "Virtual Economy Infrastructure",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:26e933a48ff819ff4601e6b3f834c44156ae38955c613f9a4fe4a7ef3d97499a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26e933a48ff819ff4601e6b3f834c44156ae38955c613f9a4fe4a7ef3d97499a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The collection of technologies, platforms, and systems essential for creating, managing, and sustaining economic activities within metaverse environments, including blockchain networks, payment systems, marketplaces, and decentralized finance protocols.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:virtual-economy-infrastructure:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:26e933a48ff819ff4601e6b3f834c44156ae38955c613f9a4fe4a7ef3d97499a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Economy]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26e933a48ff819ff4601e6b3f834c44156ae38955c613f9a4fe4a7ef3d97499a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The collection of technologies, platforms, and systems essential for creating, managing, and sustaining economic activities within metaverse environments, including blockchain networks, payment systems, marketplaces, and decentralized finance protocols.

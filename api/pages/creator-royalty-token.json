@@ -1,0 +1,211 @@
+{
+  "id": "urn:visionflow:page:16f6fcf5a94ca483b146ee9f5a6fc1d99f9b8e6e3a401d3a259b3aa800427ba7",
+  "title": "Creator Royalty Token",
+  "slug": "creator-royalty-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:creator-royalty-token",
+  "domain": "blockchain",
+  "definition": "Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ip-rights-metadata",
+        "label": "IP Rights Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-record",
+        "label": "Ownership Record"
+      },
+      {
+        "id": "urn:visionflow:linked:revenue-distribution-logic",
+        "label": "Revenue Distribution Logic"
+      },
+      {
+        "id": "urn:visionflow:linked:royalty-smart-contract",
+        "label": "Royalty Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:royalty-tracking-system",
+        "label": "Royalty Tracking System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-royalty-distribution",
+        "label": "Automated Royalty Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:creator-compensation",
+        "label": "Creator Compensation"
+      },
+      {
+        "id": "urn:visionflow:linked:fan-investment",
+        "label": "Fan Investment"
+      },
+      {
+        "id": "urn:visionflow:linked:ip-monetization",
+        "label": "IP Monetization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:revenue-sharing",
+        "label": "Revenue Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-royalty-distribution",
+      "label": "Automated Royalty Distribution"
+    },
+    {
+      "slug": "creator-compensation",
+      "label": "Creator Compensation"
+    },
+    {
+      "slug": "fan-investment",
+      "label": "Fan Investment"
+    },
+    {
+      "slug": "intellectual-property-system",
+      "label": "Intellectual Property System"
+    },
+    {
+      "slug": "ip-monetization",
+      "label": "IP Monetization"
+    },
+    {
+      "slug": "ip-rights-metadata",
+      "label": "IP Rights Metadata"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "oecd-creative-economy",
+      "label": "OECD Creative Economy"
+    },
+    {
+      "slug": "oma3-media-wg",
+      "label": "OMA3 Media WG"
+    },
+    {
+      "slug": "ownership-record",
+      "label": "Ownership Record"
+    },
+    {
+      "slug": "payment-gateway",
+      "label": "Payment Gateway"
+    },
+    {
+      "slug": "revenue-distribution-logic",
+      "label": "Revenue Distribution Logic"
+    },
+    {
+      "slug": "revenue-monitoring-service",
+      "label": "Revenue Monitoring Service"
+    },
+    {
+      "slug": "royalty-smart-contract",
+      "label": "Royalty Smart Contract"
+    },
+    {
+      "slug": "royalty-tracking-system",
+      "label": "Royalty Tracking System"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "SmartContractLayer"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "nft-standard",
+      "label": "NFT Standard"
+    },
+    {
+      "slug": "revenue-sharing",
+      "label": "Revenue Sharing"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

@@ -1,24 +1,292 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalOwnership
-uri:: urn:visionclaw:concept:spatial-computing:digital-ownership
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-ownership
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Ownership
-content-hash:: sha256-12-eb622fad0164
-legacy-term-id:: MV-9863
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalOwnership
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-ownership
 public:: true
+
+# Digital Ownership
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe",
+  "@type": "Page",
+  "vc:slug": "digital-ownership",
+  "title": "Digital Ownership",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:asset-transfer",
+      "vc:label": "Asset Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:creator-royalties",
+      "vc:label": "Creator Royalties"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-wallet",
+      "vc:label": "Digital Wallet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:property-rights",
+      "vc:label": "Property Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-tracking",
+      "vc:label": "Provenance Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-eb622fad0164"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalOwnership"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9863"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Ownership"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-ownership"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-ownership"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-ownership",
+  "@type": "OntologyClass",
+  "label": "Digital Ownership",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:property-rights",
+      "vc:label": "Property Rights"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaverse economies. bridges-to:: [[Blockchain]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-wallet",
+      "vc:label": "Digital Wallet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:asset-transfer",
+      "vc:label": "Asset Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:creator-royalties",
+      "vc:label": "Creator Royalties"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-tracking",
+      "vc:label": "Provenance Tracking"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-ownership:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Asset Transfer]]",
+      "resolved": "urn:visionflow:linked:asset-transfer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Creator Royalties]]",
+      "resolved": "urn:visionflow:linked:creator-royalties",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Network]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Wallet]]",
+      "resolved": "urn:visionflow:owl:class:digital-wallet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Property Rights]]",
+      "resolved": "urn:visionflow:owl:class:property-rights",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Provenance Tracking]]",
+      "resolved": "urn:visionflow:owl:class:provenance-tracking",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaverse economies.

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:023fc23e68bf22213412cf1e0b9b96d5d69526caedc06442d091e17ed167e679",
+  "title": "Ar Scene Graph",
+  "slug": "ar-scene-graph",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ar-scene-graph",
+  "domain": "spatial-computing",
+  "definition": "AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital content and physical environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-scene-reconstruction",
+        "label": "3D Scene Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-relationships",
+        "label": "Spatial Relationships"
+      },
+      {
+        "id": "urn:visionflow:owl:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:context-aware-ar",
+        "label": "Context-Aware AR"
+      },
+      {
+        "id": "urn:visionflow:linked:retargetable-ar-experiences",
+        "label": "Retargetable AR Experiences"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-scene-understanding",
+        "label": "Semantic Scene Understanding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-scene-reconstruction",
+      "label": "3D Scene Reconstruction"
+    },
+    {
+      "slug": "context-aware-ar",
+      "label": "Context-Aware AR"
+    },
+    {
+      "slug": "retargetable-ar-experiences",
+      "label": "Retargetable AR Experiences"
+    },
+    {
+      "slug": "semantic-scene-understanding",
+      "label": "Semantic Scene Understanding"
+    },
+    {
+      "slug": "spatial-relationships",
+      "label": "Spatial Relationships"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

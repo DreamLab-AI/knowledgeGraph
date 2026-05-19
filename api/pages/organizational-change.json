@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:03bad938814d6bc1d262ef021f862f4acc5f4f4f2dcf5ff6d646e7c5418246ce",
+  "title": "Organizational Change",
+  "slug": "organizational-change",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:organizational-change",
+  "domain": "infrastructure",
+  "definition": "OrganizationalChange is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    }
+  ]
+}

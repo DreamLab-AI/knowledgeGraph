@@ -1,0 +1,696 @@
+{
+  "id": "urn:visionflow:page:3fe089f99148ff56b6169d4e20ec90d52c1613b62f144ed62e1cc5b9b7dc6a54",
+  "title": "Snapshot Voting",
+  "slug": "snapshot-voting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:snapshot-voting",
+  "domain": "blockchain",
+  "definition": "Snapshot Voting is the dominant off-chain gasless governance infrastructure operated by Snapshot Labs (Paris/distributed, founded 2020) that enables [[DecentralizedAutonomousOrganization|decentralised autonomous organisations]] and [[DeFi]] protocols to conduct binding-or-advisory governance polls without spending [[GasFees|gas]] on each ballot, replacing on-chain transactions with [[EIP-712]] typed structured-data signatures that any Ethereum-compatible wallet produces at zero marginal cost, fundamentally resolving the prohibitive participation barrier of early DAO governance where on-chain votes cost $50\u2013$500 per transaction during Ethereum congestion. The platform's cryptographic core uses ECDSA signatures over EIP-712 domain-separated structs encoding proposal ID, space identifier, choice index, voter address, and timestamp; anyone can verify authenticity via `ecrecover(hash, v, r, s) == voter_address` without trusting Snapshot's infrastructure, while vote records are pinned to [[IPFS|IPFS]] for tamper-proof archival through content-addressed hashing \u2014 any data modification produces a different CID, making retroactive falsification detectable by any observer.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cryptographic-signalling",
+      "label": "Cryptographic Signalling"
+    },
+    {
+      "id": "urn:visionflow:linked:decentralised-voting",
+      "label": "Decentralised Voting"
+    },
+    {
+      "id": "urn:visionflow:linked:gasless-governance",
+      "label": "Gasless Governance"
+    },
+    {
+      "id": "urn:visionflow:linked:off-chain-voting",
+      "label": "Off-Chain Voting"
+    },
+    {
+      "id": "urn:visionflow:linked:web3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:dao-governance",
+      "label": "DAO Governance"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:delegation-registry",
+        "label": "Delegation Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-ql-api",
+        "label": "GraphQL API"
+      },
+      {
+        "id": "urn:visionflow:linked:hub-relayer",
+        "label": "Hub Relayer"
+      },
+      {
+        "id": "urn:visionflow:linked:ipfs-vote-record",
+        "label": "IPFS Vote Record"
+      },
+      {
+        "id": "urn:visionflow:linked:reality-eth-oracle-integration",
+        "label": "Reality.eth Oracle Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-snap-module",
+        "label": "SafeSnap Module"
+      },
+      {
+        "id": "urn:visionflow:linked:snapshot-block",
+        "label": "Snapshot Block"
+      },
+      {
+        "id": "urn:visionflow:linked:snapshot-hub",
+        "label": "Snapshot Hub"
+      },
+      {
+        "id": "urn:visionflow:linked:snapshot-space",
+        "label": "Snapshot Space"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-strategy",
+        "label": "Voting Strategy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ecdsa-cryptography",
+        "label": "ECDSA Cryptography"
+      },
+      {
+        "id": "urn:visionflow:linked:eip-712-signature",
+        "label": "EIP-712 Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:ens-name",
+        "label": "ENS Name"
+      },
+      {
+        "id": "urn:visionflow:linked:ethereum-rpc-node",
+        "label": "Ethereum RPC Node"
+      },
+      {
+        "id": "urn:visionflow:linked:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:visionflow:linked:keccak-256-hashing",
+        "label": "Keccak-256 Hashing"
+      },
+      {
+        "id": "urn:visionflow:linked:snapshot-hub",
+        "label": "Snapshot Hub"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-strategy-plugin",
+        "label": "Voting Strategy Plugin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-chain-voting-aggregation",
+        "label": "Cross-Chain Voting Aggregation"
+      },
+      {
+        "id": "urn:visionflow:linked:gasless-dao-participation",
+        "label": "Gasless DAO Participation"
+      },
+      {
+        "id": "urn:visionflow:linked:liquid-democracy-delegation",
+        "label": "Liquid Democracy Delegation"
+      },
+      {
+        "id": "urn:visionflow:linked:nft-gated-governance",
+        "label": "NFT-Gated Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-execution-via-safe-snap",
+        "label": "On-Chain Execution via SafeSnap"
+      },
+      {
+        "id": "urn:visionflow:linked:reputation-weighted-voting",
+        "label": "Reputation-Weighted Voting"
+      },
+      {
+        "id": "urn:visionflow:linked:token-weighted-governance",
+        "label": "Token-Weighted Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ecdsa-signature-verification",
+        "label": "ECDSA Signature Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:eip-712-typed-structured-data",
+        "label": "EIP-712 Typed Structured Data"
+      },
+      {
+        "id": "urn:visionflow:linked:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      },
+      {
+        "id": "urn:visionflow:linked:reality-eth-oracle",
+        "label": "Reality.eth Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:snapshot-block-mechanism",
+        "label": "Snapshot Block Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:strategy-plugin-pattern",
+        "label": "Strategy Plugin Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:zodiac-module-standard",
+        "label": "Zodiac Module Standard"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a16z-crypto-2023-state-of-crypto-governance",
+      "label": "a16z Crypto 2023 State of Crypto Governance"
+    },
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "aave-governance",
+      "label": "Aave Governance"
+    },
+    {
+      "slug": "aave-governance-aip-archive",
+      "label": "Aave Governance AIP Archive"
+    },
+    {
+      "slug": "ape-coin-dao",
+      "label": "ApeCoin DAO"
+    },
+    {
+      "slug": "aragon-governance",
+      "label": "Aragon Governance"
+    },
+    {
+      "slug": "arbitrum-dao",
+      "label": "Arbitrum DAO"
+    },
+    {
+      "slug": "arbitrum-dao-governance-documentation",
+      "label": "Arbitrum DAO Governance Documentation"
+    },
+    {
+      "slug": "barbereau-et-al-2022-de-fi-unregulated-governance",
+      "label": "Barbereau et al 2022 DeFi Unregulated Governance"
+    },
+    {
+      "slug": "benet-2014-ipfs-specification",
+      "label": "Benet 2014 IPFS Specification"
+    },
+    {
+      "slug": "boardroom",
+      "label": "Boardroom"
+    },
+    {
+      "slug": "boardroom-dao-governance-report-2024",
+      "label": "Boardroom DAO Governance Report 2024"
+    },
+    {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
+    {
+      "slug": "buterin-2021-moving-beyond-coin-voting-governance",
+      "label": "Buterin 2021 Moving Beyond Coin Voting Governance"
+    },
+    {
+      "slug": "colony-governance",
+      "label": "Colony Governance"
+    },
+    {
+      "slug": "compound-governor-bravo",
+      "label": "Compound Governor Bravo"
+    },
+    {
+      "slug": "cross-chain-voting-aggregation",
+      "label": "Cross-Chain Voting Aggregation"
+    },
+    {
+      "slug": "cryptographic-layer",
+      "label": "CryptographicLayer"
+    },
+    {
+      "slug": "cryptographic-signalling",
+      "label": "Cryptographic Signalling"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "DecentralisedFinanceDomain"
+    },
+    {
+      "slug": "decentralised-voting",
+      "label": "Decentralised Voting"
+    },
+    {
+      "slug": "deep-dao",
+      "label": "DeepDAO"
+    },
+    {
+      "slug": "deep-dao-state-of-dao-governance-report-2025",
+      "label": "DeepDAO State of DAO Governance Report 2025"
+    },
+    {
+      "slug": "delegation-registry",
+      "label": "Delegation Registry"
+    },
+    {
+      "slug": "ecdsa-cryptography",
+      "label": "ECDSA Cryptography"
+    },
+    {
+      "slug": "ecdsa-signature-verification",
+      "label": "ECDSA Signature Verification"
+    },
+    {
+      "slug": "eip-712",
+      "label": "EIP-712"
+    },
+    {
+      "slug": "eip-712-signature",
+      "label": "EIP-712 Signature"
+    },
+    {
+      "slug": "eip-712-typed-structured-data",
+      "label": "EIP-712 Typed Structured Data"
+    },
+    {
+      "slug": "eip-712-typed-structured-data-standard",
+      "label": "EIP-712 Typed Structured Data Standard"
+    },
+    {
+      "slug": "ens",
+      "label": "ENS"
+    },
+    {
+      "slug": "ens-dao",
+      "label": "ENS DAO"
+    },
+    {
+      "slug": "ens-dao-governance-framework",
+      "label": "ENS DAO Governance Framework"
+    },
+    {
+      "slug": "ens-name",
+      "label": "ENS Name"
+    },
+    {
+      "slug": "erc-1155",
+      "label": "ERC-1155"
+    },
+    {
+      "slug": "erc-20",
+      "label": "ERC-20"
+    },
+    {
+      "slug": "erc-20-votes-delegation-standard",
+      "label": "ERC-20Votes Delegation Standard"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "esma-mi-ca-implementation-guidelines-2024",
+      "label": "ESMA MiCA Implementation Guidelines 2024"
+    },
+    {
+      "slug": "ethereum-name-service",
+      "label": "Ethereum Name Service"
+    },
+    {
+      "slug": "ethereum-rpc-node",
+      "label": "Ethereum RPC Node"
+    },
+    {
+      "slug": "fca-cryptoasset-consumer-research-2023",
+      "label": "FCA Cryptoasset Consumer Research 2023"
+    },
+    {
+      "slug": "feichtinger-et-al-2023-hidden-shortcomings-of-daos",
+      "label": "Feichtinger et al 2023 Hidden Shortcomings of DAOs"
+    },
+    {
+      "slug": "fritsch-et-al-2022-analyzing-voting-power-in-daos",
+      "label": "Fritsch et al 2022 Analyzing Voting Power in DAOs"
+    },
+    {
+      "slug": "gas-fees",
+      "label": "GasFees"
+    },
+    {
+      "slug": "gasless-dao-participation",
+      "label": "Gasless DAO Participation"
+    },
+    {
+      "slug": "gasless-governance",
+      "label": "Gasless Governance"
+    },
+    {
+      "slug": "gauntlet-risk-aware-governance-research-2024",
+      "label": "Gauntlet Risk-Aware Governance Research 2024"
+    },
+    {
+      "slug": "gitcoin-dao",
+      "label": "Gitcoin DAO"
+    },
+    {
+      "slug": "gitcoin-passport",
+      "label": "Gitcoin Passport"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "governance-attack",
+      "label": "Governance Attack"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "graph-ql-api",
+      "label": "GraphQL API"
+    },
+    {
+      "slug": "hub-relayer",
+      "label": "Hub Relayer"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "ipfs-content-addressing",
+      "label": "IPFS Content Addressing"
+    },
+    {
+      "slug": "ipfs-specification",
+      "label": "IPFS Specification"
+    },
+    {
+      "slug": "ipfs-vote-record",
+      "label": "IPFS Vote Record"
+    },
+    {
+      "slug": "johnson-et-al-2001-ecdsa",
+      "label": "Johnson et al 2001 ECDSA"
+    },
+    {
+      "slug": "karma-delegate-reputation-report-2024",
+      "label": "Karma Delegate Reputation Report 2024"
+    },
+    {
+      "slug": "karma-delegate-scoring",
+      "label": "Karma Delegate Scoring"
+    },
+    {
+      "slug": "keccak-256-hashing",
+      "label": "Keccak-256 Hashing"
+    },
+    {
+      "slug": "kiayias-and-lazos-2022-so-k-blockchain-governance",
+      "label": "Kiayias and Lazos 2022 SoK Blockchain Governance"
+    },
+    {
+      "slug": "law-commission-2023-digital-assets-final-report",
+      "label": "Law Commission 2023 Digital Assets Final Report"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
+      "slug": "liquid-democracy",
+      "label": "Liquid Democracy"
+    },
+    {
+      "slug": "liquid-democracy-delegation",
+      "label": "Liquid Democracy Delegation"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "mohan-2022-amms-and-dexs-de-fi-primer",
+      "label": "Mohan 2022 AMMs and DEXs DeFi Primer"
+    },
+    {
+      "slug": "multicall-contract",
+      "label": "Multicall Contract"
+    },
+    {
+      "slug": "nft-gated-governance",
+      "label": "NFT-Gated Governance"
+    },
+    {
+      "slug": "off-chain-voting",
+      "label": "Off-Chain Voting"
+    },
+    {
+      "slug": "on-chain-execution-via-safe-snap",
+      "label": "On-Chain Execution via SafeSnap"
+    },
+    {
+      "slug": "open-zeppelin-governor",
+      "label": "OpenZeppelin Governor"
+    },
+    {
+      "slug": "optimism-collective",
+      "label": "Optimism Collective"
+    },
+    {
+      "slug": "outlier-ventures-open-metaverse-report-2023",
+      "label": "Outlier Ventures Open Metaverse Report 2023"
+    },
+    {
+      "slug": "pinata-ipfs-pinning",
+      "label": "Pinata IPFS Pinning"
+    },
+    {
+      "slug": "poap",
+      "label": "POAP"
+    },
+    {
+      "slug": "reality-eth",
+      "label": "Reality.eth"
+    },
+    {
+      "slug": "reality-eth-oracle",
+      "label": "Reality.eth Oracle"
+    },
+    {
+      "slug": "reality-eth-oracle-documentation",
+      "label": "Reality.eth Oracle Documentation"
+    },
+    {
+      "slug": "reality-eth-oracle-integration",
+      "label": "Reality.eth Oracle Integration"
+    },
+    {
+      "slug": "reputation-weighted-voting",
+      "label": "Reputation-Weighted Voting"
+    },
+    {
+      "slug": "rpc-infrastructure",
+      "label": "RPC Infrastructure"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
+    },
+    {
+      "slug": "safe-snap-module",
+      "label": "SafeSnap Module"
+    },
+    {
+      "slug": "sharma-et-al-2023-unpacking-how-daos-work-in-practice",
+      "label": "Sharma et al 2023 Unpacking How DAOs Work in Practice"
+    },
+    {
+      "slug": "snapshot-block",
+      "label": "Snapshot Block"
+    },
+    {
+      "slug": "snapshot-block-mechanism",
+      "label": "Snapshot Block Mechanism"
+    },
+    {
+      "slug": "snapshot-hub",
+      "label": "Snapshot Hub"
+    },
+    {
+      "slug": "snapshot-labs-documentation-2020-2025",
+      "label": "Snapshot Labs Documentation 2020-2025"
+    },
+    {
+      "slug": "snapshot-space",
+      "label": "Snapshot Space"
+    },
+    {
+      "slug": "snapshot-strategies-repository-git-hub",
+      "label": "Snapshot Strategies Repository GitHub"
+    },
+    {
+      "slug": "snapshot-x-starknet-architecture-2023",
+      "label": "Snapshot X Starknet Architecture 2023"
+    },
+    {
+      "slug": "stark-net-cairo",
+      "label": "StarkNet Cairo"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
+    },
+    {
+      "slug": "strategy-plugin-pattern",
+      "label": "Strategy Plugin Pattern"
+    },
+    {
+      "slug": "tally-on-chain-governance",
+      "label": "Tally On-Chain Governance"
+    },
+    {
+      "slug": "token-engineering",
+      "label": "Token Engineering"
+    },
+    {
+      "slug": "token-weighted-governance",
+      "label": "Token-Weighted Governance"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "uniswap-governance",
+      "label": "Uniswap Governance"
+    },
+    {
+      "slug": "uniswap-governance-documentation",
+      "label": "Uniswap Governance Documentation"
+    },
+    {
+      "slug": "voting-strategy",
+      "label": "Voting Strategy"
+    },
+    {
+      "slug": "voting-strategy-plugin",
+      "label": "Voting Strategy Plugin"
+    },
+    {
+      "slug": "web3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "slug": "zargham-et-al-2020-commitment-pooling",
+      "label": "Zargham et al 2020 Commitment Pooling"
+    },
+    {
+      "slug": "zodiac-module-standard",
+      "label": "Zodiac Module Standard"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "DecentralizedAutonomousOrganization"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

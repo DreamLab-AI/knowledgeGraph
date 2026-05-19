@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:838db2460579afacb79c54c7df39f22937acb6bae1954b147091060e2b1222c0",
+  "title": "GPT 3",
+  "slug": "gpt-3",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gpt-3",
+  "domain": "artificial-intelligence",
+  "definition": "An autoregressive language model with 175 billion parameters, 10\u00d7 larger than any previous non-sparse language model, demonstrating few-shot and zero-shot learning capabilities without fine-tuning.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

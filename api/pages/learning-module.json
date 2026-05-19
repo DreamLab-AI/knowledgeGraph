@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:0ae2297207e22786b0bea443167e7d1de9da2f3e268250a03cbea945f8c58f5a",
+  "title": "Learning Module",
+  "slug": "learning-module",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:learning-module",
+  "domain": "spatial-computing",
+  "definition": "Self-contained educational units within VR and metaverse training systems that provide structured learning experiences, including interactive simulations, assessments, and collaborative activities designed for specific skill development objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:structured-training",
+        "label": "Structured Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "structured-training",
+      "label": "Structured Training"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    }
+  ]
+}

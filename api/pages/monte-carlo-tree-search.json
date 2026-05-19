@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd",
+  "title": "Monte Carlo Tree Search",
+  "slug": "monte-carlo-tree-search",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:monte-carlo-tree-search",
+  "domain": "artificial-intelligence",
+  "definition": "Monte Carlo Tree Search is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:search-algorithms",
+      "label": "Search Algorithms"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:game-playing-ai",
+        "label": "Game Playing AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "game-playing-ai",
+      "label": "Game Playing AI"
+    },
+    {
+      "slug": "search-algorithms",
+      "label": "Search Algorithms"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ]
+}

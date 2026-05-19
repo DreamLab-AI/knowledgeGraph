@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:c457a6ffa7f308e2b2969450b6a7cd43b2ac0114b0b55a1555eaff8eb22e3b84",
+  "title": "personal accounts",
+  "slug": "personal-accounts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:personal-accounts",
+  "domain": "infrastructure",
+  "definition": "personal accounts is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:dd4974f8622bc155c036ce08618895c51ec411a0f4a1f28221cdfca5cb3578d9",
+  "title": "Executing Javascript in a code block",
+  "slug": "executing-javascript-in-a-code-block",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:executing-javascript-in-a-code-block",
+  "domain": "infrastructure",
+  "definition": "Executing Javascript in a code block is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

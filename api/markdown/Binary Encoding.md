@@ -1,25 +1,293 @@
-iri:: http://narrativegoldmine.com/spatial-computing#BinaryEncoding
-uri:: urn:visionclaw:concept:spatial-computing:binary-encoding
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:binary-encoding
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Binary Encoding
-content-hash:: sha256-12-afcf08794d11
-legacy-term-id:: MV-9800
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#BinaryEncoding
+legacy_uri:: urn:visionclaw:concept:spatial-computing:binary-encoding
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Binary Encoding
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665",
+  "@type": "Page",
+  "vc:slug": "binary-encoding",
+  "title": "Binary Encoding",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:data-serialization",
+      "vc:label": "Data Serialization"
+    },
+    {
+      "@id": "urn:visionflow:linked:efficient-storage",
+      "vc:label": "Efficient Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoding-rules",
+      "vc:label": "Encoding Rules"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-transmission",
+      "vc:label": "Network Transmission"
+    },
+    {
+      "@id": "urn:visionflow:linked:parser-implementation",
+      "vc:label": "Parser Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:schema-definition",
+      "vc:label": "Schema Definition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-format",
+      "vc:label": "Data Format"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-afcf08794d11"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#BinaryEncoding"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9800"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Binary Encoding"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:binary-encoding"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:binary-encoding"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:binary-encoding",
+  "@type": "OntologyClass",
+  "label": "Binary Encoding",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:data-format",
+      "vc:label": "Data Format"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:encoding-rules",
+      "vc:label": "Encoding Rules"
+    },
+    {
+      "@id": "urn:visionflow:linked:parser-implementation",
+      "vc:label": "Parser Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:schema-definition",
+      "vc:label": "Schema Definition"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:data-serialization",
+      "vc:label": "Data Serialization"
+    },
+    {
+      "@id": "urn:visionflow:linked:efficient-storage",
+      "vc:label": "Efficient Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-transmission",
+      "vc:label": "Network Transmission"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:binary-encoding:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Data Serialization]]",
+      "resolved": "urn:visionflow:linked:data-serialization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Efficient Storage]]",
+      "resolved": "urn:visionflow:linked:efficient-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Encoding Rules]]",
+      "resolved": "urn:visionflow:linked:encoding-rules",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Network Transmission]]",
+      "resolved": "urn:visionflow:linked:network-transmission",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Parser Implementation]]",
+      "resolved": "urn:visionflow:linked:parser-implementation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schema Definition]]",
+      "resolved": "urn:visionflow:linked:schema-definition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Format]]",
+      "resolved": "urn:visionflow:owl:class:data-format",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.

@@ -1,0 +1,740 @@
+{
+  "id": "urn:visionflow:page:95506da010c51e879af3a63a572e69b2bb8d528555eeca36667fc5693fb0ef41",
+  "title": "Graph Database",
+  "slug": "graph-database",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:graph-database",
+  "domain": "data",
+  "definition": "A [[Graph Database]] is a specialised data management system representing data as a network of nodes (vertices) connected by relationships (edges) carrying their own properties and semantics, contrasted with relational databases that scatter relationships across foreign-key joins, organised around three dominant data models (labelled property graph LPG popularised by Neo4j 2007 where nodes and edges both carry typed labels and property maps, supporting Cypher / GQL / Gremlin; W3C Semantic Web RDF triple store decomposing data into subject-predicate-object triples queried via SPARQL 1.1 and reasoned over with OWL 2 / SHACL; hypergraph and generalised relation models where a single edge connects any number of nodes, exemplified by HyperGraphDB and OpenCog AtomSpace), implemented through **index-free adjacency** where each node stores direct pointers to its neighbours yielding O(1) per-hop traversal cost independent of graph size\u2014Neo4j benchmarks demonstrate 1,000\u00d7 speedups on 4-7 hop friend-of-friend queries over PostgreSQL on a 1M-node graph, with the advantage widening exponentially with depth, dominating a $3.5-4.5B 2025 graph database market projected to reach $10-14B by 2030 at ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:data-management-system",
+      "label": "Data Management System"
+    },
+    {
+      "id": "urn:visionflow:linked:database",
+      "label": "Database"
+    },
+    {
+      "id": "urn:visionflow:linked:no-sql-database",
+      "label": "NoSQL Database"
+    },
+    {
+      "id": "urn:visionflow:linked:persistent-data-store",
+      "label": "Persistent Data Store"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:edge-storage",
+        "label": "Edge Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-query-language",
+        "label": "Graph Query Language"
+      },
+      {
+        "id": "urn:visionflow:linked:node-storage",
+        "label": "Node Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:query-optimiser",
+        "label": "Query Optimiser"
+      },
+      {
+        "id": "urn:visionflow:linked:relationship-indexing",
+        "label": "Relationship Indexing"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-engine",
+        "label": "Storage Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-manager",
+        "label": "Transaction Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:traversal-engine",
+        "label": "Traversal Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:property-schema",
+        "label": "Property Schema"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:indexing-algorithm",
+        "label": "Indexing Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:query-parser",
+        "label": "Query Parser"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "id": "urn:visionflow:linked:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management-system",
+        "label": "Identity Management System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:cypher-query-language",
+        "label": "Cypher Query Language"
+      },
+      {
+        "id": "urn:visionflow:linked:gql-standard",
+        "label": "GQL Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-traversal-algorithm",
+        "label": "Graph Traversal Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:gremlin",
+        "label": "Gremlin"
+      },
+      {
+        "id": "urn:visionflow:linked:index-free-adjacency",
+        "label": "Index-Free Adjacency"
+      },
+      {
+        "id": "urn:visionflow:linked:property-graph-model",
+        "label": "Property Graph Model"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-triple-store",
+        "label": "RDF Triple Store"
+      },
+      {
+        "id": "urn:visionflow:linked:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adjacency-list",
+      "label": "Adjacency List"
+    },
+    {
+      "slug": "angles-2018-the-property-graph-database-model",
+      "label": "Angles 2018 The Property Graph Database Model"
+    },
+    {
+      "slug": "angles-arenas-barcelo-hogan-reutter-vrgoc-2017-foundations-of-modern-query-languages-for-graph-databases",
+      "label": "Angles Arenas Barcelo Hogan Reutter Vrgoc 2017 Foundations of Modern Query Languages for Graph Databases"
+    },
+    {
+      "slug": "angles-gutierrez-2008-survey-of-graph-database-models",
+      "label": "Angles Gutierrez 2008 Survey of Graph Database Models"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "apache-tinker-pop",
+      "label": "Apache TinkerPop"
+    },
+    {
+      "slug": "arango-db",
+      "label": "ArangoDB"
+    },
+    {
+      "slug": "b-tree",
+      "label": "B-Tree"
+    },
+    {
+      "slug": "b-tree-indexing",
+      "label": "B-Tree Indexing"
+    },
+    {
+      "slug": "benevolent-ai",
+      "label": "BenevolentAI"
+    },
+    {
+      "slug": "berners-lee-hendler-lassila-2001-the-semantic-web",
+      "label": "Berners-Lee Hendler Lassila 2001 The Semantic Web"
+    },
+    {
+      "slug": "bizer-heath-berners-lee-2009-linked-data-story-so-far",
+      "label": "Bizer Heath Berners-Lee 2009 Linked Data Story So Far"
+    },
+    {
+      "slug": "bloom-filter",
+      "label": "Bloom Filter"
+    },
+    {
+      "slug": "bronson-et-al-2013-tao-facebook-social-graph-usenix-atc",
+      "label": "Bronson et al 2013 TAO Facebook Social Graph USENIX ATC"
+    },
+    {
+      "slug": "columnar-database",
+      "label": "Columnar Database"
+    },
+    {
+      "slug": "cybersecurity-analytics",
+      "label": "Cybersecurity Analytics"
+    },
+    {
+      "slug": "cypher-query-language",
+      "label": "Cypher Query Language"
+    },
+    {
+      "slug": "data-management-domain",
+      "label": "DataManagementDomain"
+    },
+    {
+      "slug": "data-management-system",
+      "label": "Data Management System"
+    },
+    {
+      "slug": "database",
+      "label": "Database"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "deutsch-et-al-2022-graph-pattern-matching-gql-sql-pgq-sigmod",
+      "label": "Deutsch et al 2022 Graph Pattern Matching GQL SQL PGQ SIGMOD"
+    },
+    {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
+      "slug": "document-store",
+      "label": "Document Store"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "edge-storage",
+      "label": "Edge Storage"
+    },
+    {
+      "slug": "edge-trinh-cheng-bradley-chao-mody-truitt-larson-2024-microsoft-graph-rag-ar-xiv",
+      "label": "Edge Trinh Cheng Bradley Chao Mody Truitt Larson 2024 Microsoft GraphRAG arXiv"
+    },
+    {
+      "slug": "elliptic",
+      "label": "Elliptic"
+    },
+    {
+      "slug": "featurespace",
+      "label": "Featurespace"
+    },
+    {
+      "slug": "first-order-logic",
+      "label": "First-Order Logic"
+    },
+    {
+      "slug": "francis-et-al-2018-cypher-evolving-query-language-property-graphs-sigmod",
+      "label": "Francis et al 2018 Cypher Evolving Query Language Property Graphs SIGMOD"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "gql-standard",
+      "label": "GQL Standard"
+    },
+    {
+      "slug": "graph-query-language",
+      "label": "Graph Query Language"
+    },
+    {
+      "slug": "graph-rag",
+      "label": "GraphRAG"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "graph-traversal-algorithm",
+      "label": "Graph Traversal Algorithm"
+    },
+    {
+      "slug": "gremlin",
+      "label": "Gremlin"
+    },
+    {
+      "slug": "hamilton-2020-graph-representation-learning",
+      "label": "Hamilton 2020 Graph Representation Learning"
+    },
+    {
+      "slug": "hamilton-ying-leskovec-2017-graph-sage-neur-ips",
+      "label": "Hamilton Ying Leskovec 2017 GraphSAGE NeurIPS"
+    },
+    {
+      "slug": "hash-indexing",
+      "label": "Hash Indexing"
+    },
+    {
+      "slug": "he-tian-sun-chawla-laurent-le-cun-bresson-hooi-2024-g-retriever-neur-ips",
+      "label": "He Tian Sun Chawla Laurent LeCun Bresson Hooi 2024 G-Retriever NeurIPS"
+    },
+    {
+      "slug": "hitzler-krotzsch-rudolph-2010-foundations-of-semantic-web-technologies",
+      "label": "Hitzler Krotzsch Rudolph 2010 Foundations of Semantic Web Technologies"
+    },
+    {
+      "slug": "hogan-et-al-2021-knowledge-graphs-acm-computing-surveys",
+      "label": "Hogan et al 2021 Knowledge Graphs ACM Computing Surveys"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "index-free-adjacency",
+      "label": "Index-Free Adjacency"
+    },
+    {
+      "slug": "indexing-algorithm",
+      "label": "Indexing Algorithm"
+    },
+    {
+      "slug": "information-systems-domain",
+      "label": "InformationSystemsDomain"
+    },
+    {
+      "slug": "iordanov-2010-hyper-graph-db-generalized-graph-database",
+      "label": "Iordanov 2010 HyperGraphDB Generalized Graph Database"
+    },
+    {
+      "slug": "iso-iec-39075-2024-gql",
+      "label": "ISO/IEC 39075:2024 GQL"
+    },
+    {
+      "slug": "ji-pan-cambria-marttinen-yu-2022-survey-on-knowledge-graphs",
+      "label": "Ji Pan Cambria Marttinen Yu 2022 Survey on Knowledge Graphs"
+    },
+    {
+      "slug": "key-value-store",
+      "label": "Key-Value Store"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "KnowledgeRepresentationDomain"
+    },
+    {
+      "slug": "kuzu-db",
+      "label": "KuzuDB"
+    },
+    {
+      "slug": "lehmann-et-al-2015-dbpedia-large-scale-multilingual-knowledge-base",
+      "label": "Lehmann et al 2015 DBpedia Large-scale Multilingual Knowledge Base"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "lsm-tree",
+      "label": "LSM Tree"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
+    },
+    {
+      "slug": "memgraph",
+      "label": "Memgraph"
+    },
+    {
+      "slug": "memory-management",
+      "label": "Memory Management"
+    },
+    {
+      "slug": "motik-nenov-piro-horrocks-olteanu-2014-parallel-materialisation-datalog-rdfox-aaai",
+      "label": "Motik Nenov Piro Horrocks Olteanu 2014 Parallel Materialisation Datalog RDFox AAAI"
+    },
+    {
+      "slug": "multi-model-database",
+      "label": "Multi-Model Database"
+    },
+    {
+      "slug": "mvcc",
+      "label": "MVCC"
+    },
+    {
+      "slug": "nenov-piro-motik-horrocks-wu-banerjee-2015-rdfox-highly-scalable-rdf-store-iswc",
+      "label": "Nenov Piro Motik Horrocks Wu Banerjee 2015 RDFox Highly-Scalable RDF Store ISWC"
+    },
+    {
+      "slug": "neo4j",
+      "label": "Neo4j"
+    },
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    },
+    {
+      "slug": "network-science",
+      "label": "Network Science"
+    },
+    {
+      "slug": "no-sql-database",
+      "label": "NoSQL Database"
+    },
+    {
+      "slug": "node-storage",
+      "label": "Node Storage"
+    },
+    {
+      "slug": "noy-et-al-2019-industry-scale-knowledge-graphs-cacm",
+      "label": "Noy et al 2019 Industry-Scale Knowledge Graphs CACM"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "ontotext",
+      "label": "Ontotext"
+    },
+    {
+      "slug": "open-university",
+      "label": "Open University"
+    },
+    {
+      "slug": "paulheim-2017-knowledge-graph-refinement-survey",
+      "label": "Paulheim 2017 Knowledge Graph Refinement Survey"
+    },
+    {
+      "slug": "peng-et-al-2024-graph-retrieval-augmented-generation-survey-ar-xiv",
+      "label": "Peng et al 2024 Graph Retrieval-Augmented Generation Survey arXiv"
+    },
+    {
+      "slug": "persistent-data-store",
+      "label": "Persistent Data Store"
+    },
+    {
+      "slug": "persistent-storage",
+      "label": "Persistent Storage"
+    },
+    {
+      "slug": "property-graph-model",
+      "label": "Property Graph Model"
+    },
+    {
+      "slug": "quantexa",
+      "label": "Quantexa"
+    },
+    {
+      "slug": "query-layer",
+      "label": "QueryLayer"
+    },
+    {
+      "slug": "query-optimiser",
+      "label": "Query Optimiser"
+    },
+    {
+      "slug": "query-parser",
+      "label": "Query Parser"
+    },
+    {
+      "slug": "rdf-triple-store",
+      "label": "RDF Triple Store"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    },
+    {
+      "slug": "relational-database",
+      "label": "Relational Database"
+    },
+    {
+      "slug": "relationship-indexing",
+      "label": "Relationship Indexing"
+    },
+    {
+      "slug": "replication",
+      "label": "Replication"
+    },
+    {
+      "slug": "robinson-webber-eifrem-2013-graph-databases-o-reilly",
+      "label": "Robinson Webber Eifrem 2013 Graph Databases O'Reilly"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "shadbolt-ohara-berners-lee-gibbins-glaser-hall-schraefel-2012-linked-open-government-data-uk",
+      "label": "Shadbolt OHara Berners-Lee Gibbins Glaser Hall Schraefel 2012 Linked Open Government Data UK"
+    },
+    {
+      "slug": "sharding",
+      "label": "Sharding"
+    },
+    {
+      "slug": "social-network-analysis",
+      "label": "Social Network Analysis"
+    },
+    {
+      "slug": "sparql",
+      "label": "SPARQL"
+    },
+    {
+      "slug": "storage-engine",
+      "label": "Storage Engine"
+    },
+    {
+      "slug": "supply-chain-visibility",
+      "label": "Supply Chain Visibility"
+    },
+    {
+      "slug": "transaction-manager",
+      "label": "Transaction Manager"
+    },
+    {
+      "slug": "traversal-engine",
+      "label": "Traversal Engine"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-aberdeen",
+      "label": "University of Aberdeen"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    },
+    {
+      "slug": "university-of-southampton",
+      "label": "University of Southampton"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "vector-embedding",
+      "label": "Vector Embedding"
+    },
+    {
+      "slug": "vrandecic-krotzsch-2014-wikidata-free-collaborative-knowledgebase-cacm",
+      "label": "Vrandecic Krotzsch 2014 Wikidata Free Collaborative Knowledgebase CACM"
+    },
+    {
+      "slug": "w3-c-2012-owl-2-document-overview",
+      "label": "W3C 2012 OWL 2 Document Overview"
+    },
+    {
+      "slug": "w3-c-2013-sparql-1-1-query-language",
+      "label": "W3C 2013 SPARQL 1.1 Query Language"
+    },
+    {
+      "slug": "w3-c-2014-rdf-1-1-concepts",
+      "label": "W3C 2014 RDF 1.1 Concepts"
+    },
+    {
+      "slug": "w3-c-2017-shacl-recommendation",
+      "label": "W3C 2017 SHACL Recommendation"
+    },
+    {
+      "slug": "w3-c-owl-2",
+      "label": "W3C OWL 2"
+    },
+    {
+      "slug": "w3-c-rdf-1-1",
+      "label": "W3C RDF 1.1"
+    },
+    {
+      "slug": "w3-c-shacl",
+      "label": "W3C SHACL"
+    },
+    {
+      "slug": "w3-c-sparql-1-1",
+      "label": "W3C SPARQL 1.1"
+    },
+    {
+      "slug": "wikidata",
+      "label": "Wikidata"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "property-schema",
+      "label": "Property Schema"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "StorageLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "character-relationship-graph",
+      "label": "Character Relationship Graph"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "narrative-design-ontology",
+      "label": "Narrative Design Ontology"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

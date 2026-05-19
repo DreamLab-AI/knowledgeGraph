@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9d5774260d4f4355c97e01d2943455602072906a685444b8d532de5645a5a63d",
+  "title": "Collaboration Platform",
+  "slug": "collaboration-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collaboration-platform",
+  "domain": "infrastructure",
+  "definition": "CollaborationPlatform is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ietf-internet-engineering-task-force",
+      "label": "IETF (Internet Engineering Task Force)"
+    }
+  ],
+  "backlinks": []
+}

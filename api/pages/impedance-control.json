@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330",
+  "title": "Impedance Control",
+  "slug": "impedance-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:impedance-control",
+  "domain": "robotics",
+  "definition": "**Impedance Control** - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.66,
+  "authorityScore": 0.2,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:damping-control",
+        "label": "Damping Control"
+      },
+      {
+        "id": "urn:visionflow:linked:stiffness-modulation",
+        "label": "Stiffness Modulation"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-dynamics-model",
+        "label": "Virtual Dynamics Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-manipulation",
+        "label": "Adaptive Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-human-interaction",
+        "label": "Safe Human Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:soft-contact-tasks",
+        "label": "Soft Contact Tasks"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-manipulation",
+      "label": "Adaptive Manipulation"
+    },
+    {
+      "slug": "compliant-motion-control",
+      "label": "Compliant Motion Control"
+    },
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "damping-control",
+      "label": "Damping Control"
+    },
+    {
+      "slug": "force-regulation",
+      "label": "Force Regulation"
+    },
+    {
+      "slug": "hybrid-control",
+      "label": "Hybrid Control"
+    },
+    {
+      "slug": "safe-human-interaction",
+      "label": "Safe Human Interaction"
+    },
+    {
+      "slug": "soft-contact-tasks",
+      "label": "Soft Contact Tasks"
+    },
+    {
+      "slug": "stiffness-modulation",
+      "label": "Stiffness Modulation"
+    },
+    {
+      "slug": "virtual-dynamics-model",
+      "label": "Virtual Dynamics Model"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "variable-impedance-control",
+      "label": "Variable Impedance Control"
+    }
+  ]
+}

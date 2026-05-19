@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9c59537a427d6cfe60f677f0c977750bce7f5576d2e24292093852d39aff014e",
+  "title": "rb 0091 safety rated monitored stop",
+  "slug": "rb-0091-safety-rated-monitored-stop",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0091-safety-rated-monitored-stop",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-safety",
+      "label": "Robot Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

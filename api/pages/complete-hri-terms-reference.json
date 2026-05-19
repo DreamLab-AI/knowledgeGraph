@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af",
+  "title": "COMPLETE_HRI_TERMS_REFERENCE",
+  "slug": "complete-hri-terms-reference",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:complete-hri-terms-reference",
+  "domain": "robotics",
+  "definition": "A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]]. This reference enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "behavioural-patterns",
+      "label": "Behavioural Patterns"
+    },
+    {
+      "slug": "ccpa-california-consumer-privacy-act",
+      "label": "CCPA (California Consumer Privacy Act)"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "engagement-modalities",
+      "label": "Engagement Modalities"
+    },
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

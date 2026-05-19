@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:78731b6b08d07aadace65a45645c6d3683471fdf22cc6e88f311a20fd37a7950",
+  "title": "Wheeled Mobile Robot",
+  "slug": "wheeled-mobile-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:wheeled-mobile-robot",
+  "domain": "robotics",
+  "definition": "**Wheeled Mobile Robot** - Wheeled Mobile Robot in robotics systems",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    }
+  ]
+}

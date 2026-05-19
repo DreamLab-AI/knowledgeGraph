@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:e66c8d379472d2b008f5f4b03718e85c9f11baba4fb05cf29b72cdae9a50e57f",
+  "title": "Safety Fine Tuning",
+  "slug": "safety-fine-tuning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:safety-fine-tuning",
+  "domain": "artificial-intelligence",
+  "definition": "Fine-tuning specifically aimed at improving AI system safety, reducing harmful outputs, and enhancing alignment with safety principles. Safety fine-tuning typically follows general capability training and uses safety-focused datasets and objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

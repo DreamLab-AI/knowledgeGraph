@@ -1,24 +1,216 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ParticipationFramework
-uri:: urn:visionclaw:concept:spatial-computing:participation-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:participation-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Participation Framework
-content-hash:: sha256-12-35922acb5a5b
-legacy-term-id:: MV-9998
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ParticipationFramework
+legacy_uri:: urn:visionclaw:concept:spatial-computing:participation-framework
 public:: true
+
+# Participation Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8",
+  "@type": "Page",
+  "vc:slug": "participation-framework",
+  "title": "Participation Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:inclusive-decision-making",
+      "vc:label": "Inclusive Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-framework",
+      "vc:label": "Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-35922acb5a5b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ParticipationFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9998"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Participation Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:participation-framework"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:participation-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:participation-framework",
+  "@type": "OntologyClass",
+  "label": "Participation Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:governance-framework",
+      "vc:label": "Governance Framework"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A structured approach to designing stakeholder engagement processes that establish goals, principles, methods, and mechanisms for involving citizens, communities, or users in decision-making, governance, and collaborative activities.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:inclusive-decision-making",
+      "vc:label": "Inclusive Decision Making"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:participation-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Inclusive Decision Making]]",
+      "resolved": "urn:visionflow:linked:inclusive-decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance Framework]]",
+      "resolved": "urn:visionflow:owl:class:governance-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A structured approach to designing stakeholder engagement processes that establish goals, principles, methods, and mechanisms for involving citizens, communities, or users in decision-making, governance, and collaborative activities.

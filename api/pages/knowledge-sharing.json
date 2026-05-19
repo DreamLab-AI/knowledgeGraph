@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:c3cc0cf61f3bc2598cff135ff598252277ccd0f61cc7eb9d818850629ddbd93d",
+  "title": "Knowledge Sharing",
+  "slug": "knowledge-sharing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-sharing",
+  "domain": "spatial-computing",
+  "definition": "Collaborative practices and platforms within metaverse environments that facilitate the exchange of information, expertise, and learning experiences among users through immersive virtual spaces, avatars, and AI-enhanced interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:collaborative-technology",
+      "label": "Collaborative Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-team-collaboration",
+      "label": "Distributed Team Collaboration"
+    },
+    {
+      "slug": "collaborative-technology",
+      "label": "Collaborative Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    }
+  ]
+}

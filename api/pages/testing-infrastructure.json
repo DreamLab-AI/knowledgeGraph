@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b46b24470cf10ca3ed97697f675fa2492f47f0df2bf337a9ae398b898c1a7e77",
+  "title": "Testing Infrastructure",
+  "slug": "testing-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:testing-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Testing Infrastructure is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:quality-assurance",
+      "label": "quality-assurance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "xr-testing-infrastructure",
+      "label": "XR Testing Infrastructure"
+    }
+  ]
+}

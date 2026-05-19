@@ -1,0 +1,343 @@
+{
+  "id": "urn:visionflow:page:d578499318800d394c8ec7b4a8bbb0ed9be04cb883c58b652f341e24f87c70e9",
+  "title": "Compute Layer",
+  "slug": "compute-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compute-layer",
+  "domain": "infrastructure",
+  "definition": "Software layer managing computational resources and orchestration for rendering, simulation, physics, AI processing, and real-time processing within metaverse systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-processing-service",
+        "label": "AI Processing Service"
+      },
+      {
+        "id": "urn:visionflow:linked:compute-orchestrator",
+        "label": "Compute Orchestrator"
+      },
+      {
+        "id": "urn:visionflow:owl:class:experience-layer",
+        "label": "Experience Layer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:processing-hardware",
+        "label": "Processing Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-processing-service",
+      "label": "AI Processing Service"
+    },
+    {
+      "slug": "compute-orchestrator",
+      "label": "Compute Orchestrator"
+    },
+    {
+      "slug": "container-orchestration",
+      "label": "Container Orchestration"
+    },
+    {
+      "slug": "gpu-resources",
+      "label": "GPU Resources"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "resource-scheduler",
+      "label": "Resource Scheduler"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "metaverse-stack",
+      "label": "Metaverse Stack"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "processing-hardware",
+      "label": "Processing Hardware"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "simulation-engine",
+      "label": "Simulation Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "behavioural-feedback-loop",
+      "label": "Behavioural Feedback Loop"
+    },
+    {
+      "slug": "cloud-rendering-service",
+      "label": "Cloud Rendering Service"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-network",
+      "label": "Edge Network"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "procedural-audio-generator",
+      "label": "Procedural Audio Generator"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "procedural-texture",
+      "label": "Procedural Texture"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    }
+  ]
+}

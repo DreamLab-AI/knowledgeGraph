@@ -1,0 +1,216 @@
+{
+  "id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2",
+  "title": "Provenance Tracking",
+  "slug": "provenance-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:provenance-tracking",
+  "domain": "blockchain",
+  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling 99.97% reduction in tracing time (7 days to 2.2 seconds), combating \u00a330 billion counterfeit markets, and supporting applications across food safety (Walmart, IBM Food Trust), luxury goods (De Beers Tracr), pharmaceuticals, and ethical sourcing verification.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.89,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "arianee",
+      "label": "Arianee"
+    },
+    {
+      "slug": "artory",
+      "label": "Artory"
+    },
+    {
+      "slug": "aws-managed-blockchain",
+      "label": "AWS Managed Blockchain"
+    },
+    {
+      "slug": "azure-blockchain-service",
+      "label": "Azure Blockchain Service"
+    },
+    {
+      "slug": "bc-0013-smart-contracts",
+      "label": "BC-0013-smart-contracts"
+    },
+    {
+      "slug": "bc-0029-permissioned-blockchain",
+      "label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0067-hyperledger-fabric",
+      "label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0432-consortium-blockchain",
+      "label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "slug": "bc-0434-blockchain-as-a-service",
+      "label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "slug": "bc-0442-pharmaceutical-traceability",
+      "label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "slug": "bc-0443-food-safety-blockchain",
+      "label": "BC-0443-food-safety-blockchain"
+    },
+    {
+      "slug": "bc-0444-luxury-goods-authentication",
+      "label": "BC-0444-luxury-goods-authentication"
+    },
+    {
+      "slug": "bc-0445-conflict-mineral-tracking",
+      "label": "BC-0445-conflict-mineral-tracking"
+    },
+    {
+      "slug": "blockchain-in-transport-alliance",
+      "label": "Blockchain in Transport Alliance"
+    },
+    {
+      "slug": "corda",
+      "label": "Corda"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
+      "slug": "gs1",
+      "label": "GS1"
+    },
+    {
+      "slug": "gs1-blockchain-working-group",
+      "label": "GS1 Blockchain Working Group"
+    },
+    {
+      "slug": "ibm-blockchain-platform",
+      "label": "IBM Blockchain Platform"
+    },
+    {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "oracle-blockchain-platform",
+      "label": "Oracle Blockchain Platform"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "sap-blockchain",
+      "label": "SAP Blockchain"
+    },
+    {
+      "slug": "trusted-io-t-alliance",
+      "label": "Trusted IoT Alliance"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "erc721",
+      "label": "ERC721"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c",
+  "title": "Friction",
+  "slug": "friction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:friction",
+  "domain": "robotics",
+  "definition": "**Friction** - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in robotic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:physics-modelling",
+      "label": "Physics Modelling"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-dynamics",
+      "label": "Robot Dynamics"
+    }
+  ],
+  "qualityScore": 0.54,
+  "authorityScore": 0.1,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:friction-coefficient-estimation",
+        "label": "Friction Coefficient Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:lubrication-management",
+        "label": "Lubrication Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:energy-efficiency-calculation",
+        "label": "Energy Efficiency Calculation"
+      },
+      {
+        "id": "urn:visionflow:linked:wear-prediction",
+        "label": "Wear Prediction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-based-control",
+        "label": "Model-based Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "energy-dissipation",
+      "label": "Energy Dissipation"
+    },
+    {
+      "slug": "energy-efficiency-calculation",
+      "label": "Energy Efficiency Calculation"
+    },
+    {
+      "slug": "friction-coefficient-estimation",
+      "label": "Friction Coefficient Estimation"
+    },
+    {
+      "slug": "joint-efficiency",
+      "label": "Joint Efficiency"
+    },
+    {
+      "slug": "joint-mechanics",
+      "label": "Joint Mechanics"
+    },
+    {
+      "slug": "lubrication-management",
+      "label": "Lubrication Management"
+    },
+    {
+      "slug": "motion-accuracy",
+      "label": "Motion Accuracy"
+    },
+    {
+      "slug": "motor-performance",
+      "label": "Motor Performance"
+    },
+    {
+      "slug": "physics-modelling",
+      "label": "Physics Modelling"
+    },
+    {
+      "slug": "wear-prediction",
+      "label": "Wear Prediction"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model-based Control"
+    },
+    {
+      "slug": "robot-dynamics",
+      "label": "Robot Dynamics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

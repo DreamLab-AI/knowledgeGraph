@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:2502d261538f10d6c0c880d90d68f5f4b504619afea7e8fc02937a4826455310",
+  "title": "Priority Fee",
+  "slug": "priority-fee",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:priority-fee",
+  "domain": "blockchain",
+  "definition": "Miner tip for inclusion within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:economic-mechanism",
+      "label": "EconomicMechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "economic-layer",
+      "label": "EconomicLayer"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "EconomicMechanism"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "TokenEconomicsDomain"
+    }
+  ],
+  "backlinks": []
+}

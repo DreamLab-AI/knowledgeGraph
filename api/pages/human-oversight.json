@@ -1,0 +1,145 @@
+{
+  "id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea",
+  "title": "Human Oversight",
+  "slug": "human-oversight",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-oversight",
+  "domain": "spatial-computing",
+  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human values, ethical principles, legal requirements, and intended purposes, with particular emphasis on preventing, detecting, and correcting harmful or inappropriate AI behaviours through informed human decision-making authority.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:continuous-improvement",
+        "label": "continuous improvement"
+      },
+      {
+        "id": "urn:visionflow:linked:error-correction",
+        "label": "error correction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automation-bias",
+      "label": "Automation Bias"
+    },
+    {
+      "slug": "continuous-improvement",
+      "label": "continuous improvement"
+    },
+    {
+      "slug": "error-correction",
+      "label": "error correction"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

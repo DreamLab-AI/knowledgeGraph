@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:5987477f020d846b0e8446140396eb3dbc8e50cc6070dff9f3f13518f013e320",
+  "title": "Ownership and Freedom Distributed",
+  "slug": "ownership-and-freedom-distributed",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ownership-and-freedom-distributed",
+  "domain": "spatial-computing",
+  "definition": "principle of distributing control and governance of assets or data rather than centralising it in a single authority.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-101",
+      "label": "Metaverse 101"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

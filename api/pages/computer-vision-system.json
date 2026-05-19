@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:d9d0e37a4f82f6ccc49c9bde09db3bdbbc4e7d02b5a6772f7b3a78a5685cdf92",
+  "title": "Computer Vision System",
+  "slug": "computer-vision-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computer-vision-system",
+  "domain": "spatial-computing",
+  "definition": "Computer Vision System is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-processing-software",
+      "label": "Image Processing Software"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

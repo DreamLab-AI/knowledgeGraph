@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:209f9c058bfbb14a04175b93b64d41516e02b28ac4afff653b11e9118df6a1ff",
+  "title": "Data Processing",
+  "slug": "data-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-processing",
+  "domain": "infrastructure",
+  "definition": "Data Processing is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    },
+    {
+      "slug": "etsi-domain-data",
+      "label": "ETSI Domain Data"
+    },
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "format-parser",
+      "label": "Format Parser"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "transparent-data-processing",
+      "label": "Transparent Data Processing"
+    }
+  ]
+}

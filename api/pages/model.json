@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0473e793aead7e580a21620372f0f44f4a2f9190ce02cdb3b55b3097dce0ce09",
+  "title": "Model",
+  "slug": "model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model",
+  "domain": "artificial-intelligence",
+  "definition": "Model is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "pretrained-model",
+      "label": "Pretrained Model"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

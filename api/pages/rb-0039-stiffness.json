@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:b6c4a71fb251881ff911b1fe158c992cbaf3e8510cbcbd94214ad9eeafc44c30",
+  "title": "rb 0039 stiffness",
+  "slug": "rb-0039-stiffness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0039-stiffness",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

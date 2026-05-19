@@ -1,0 +1,141 @@
+{
+  "id": "urn:visionflow:page:671e78a943261a09cfc203f08524d77d6692f6f4ed3bc854379780a62a2d6d68",
+  "title": "AI Audit",
+  "slug": "ai-audit",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-audit",
+  "domain": "artificial-intelligence",
+  "definition": "A systematic, independent examination and evaluation of an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformity with specified standards, regulations, ethical principles, or organisational policies, and to identify deficiencies, risks, or opportunities for improvement, producing documented findings and recommendations that support accountability, transparency, and continuous enhancement of AI system trustworthiness.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:access-to-systems-and-personnel",
+        "label": "access to systems and personnel"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-documentation",
+        "label": "AI documentation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-to-systems-and-personnel",
+      "label": "access to systems and personnel"
+    },
+    {
+      "slug": "ai-documentation",
+      "label": "AI documentation"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "internal-audit",
+      "label": "Internal Audit"
+    },
+    {
+      "slug": "iso-19011",
+      "label": "ISO 19011"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "iso-iec-5338-2023",
+      "label": "ISO/IEC 5338:2023"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "third-party-certification",
+      "label": "Third-Party Certification"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    }
+  ]
+}

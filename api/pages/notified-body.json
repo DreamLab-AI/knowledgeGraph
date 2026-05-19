@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:8c92a79391f6738839a189b911fd4caed160c21f13e5316432514bc9f6b85c87",
+  "title": "Notified Body",
+  "slug": "notified-body",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:notified-body",
+  "domain": "infrastructure",
+  "definition": "A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ]
+}

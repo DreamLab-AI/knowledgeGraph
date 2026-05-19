@@ -1,21 +1,306 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#TraceabilityMechanism
-uri:: urn:visionclaw:concept:artificial-intelligence:traceability-mechanism
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:traceability-mechanism
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Traceability Mechanism
-content-hash:: sha256-12-e05cc361d406
-legacy-term-id:: PC-0013
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#TraceabilityMechanism
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:traceability-mechanism
 public:: true
+
+# Traceability Mechanism
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf",
+  "@type": "Page",
+  "vc:slug": "traceability-mechanism",
+  "title": "Traceability Mechanism",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-governance-principle",
+      "vc:label": "AI Governance Principle"
+    },
+    {
+      "@id": "urn:visionflow:linked:change-management",
+      "vc:label": "Change Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-logging",
+      "vc:label": "Decision Logging"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-2801-recommended-practice",
+      "vc:label": "IEEE 2801 Recommended Practice"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23053-ai-framework",
+      "vc:label": "ISO/IEC 23053 AI Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:lineage-tracking",
+      "vc:label": "Lineage Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-versioning",
+      "vc:label": "Model Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-evident-logging",
+      "vc:label": "Tamper-Evident Logging"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audit-trail",
+      "vc:label": "Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-provenance",
+      "vc:label": "Data Provenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-management",
+      "vc:label": "Metadata Management"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e05cc361d406"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#TraceabilityMechanism"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0013"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Traceability Mechanism"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:traceability-mechanism"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:traceability-mechanism"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:traceability-mechanism",
+  "@type": "OntologyClass",
+  "label": "Traceability Mechanism",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:ai-governance-principle",
+      "vc:label": "AI Governance Principle"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and r",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:traceability-mechanism:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Governance Principle]]",
+      "resolved": "urn:visionflow:linked:ai-governance-principle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Change Management]]",
+      "resolved": "urn:visionflow:linked:change-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Logging]]",
+      "resolved": "urn:visionflow:linked:decision-logging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 2801 Recommended Practice]]",
+      "resolved": "urn:visionflow:linked:ieee-2801-recommended-practice",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23053 AI Framework]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23053-ai-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lineage Tracking]]",
+      "resolved": "urn:visionflow:linked:lineage-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Versioning]]",
+      "resolved": "urn:visionflow:linked:model-versioning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tamper-Evident Logging]]",
+      "resolved": "urn:visionflow:linked:tamper-evident-logging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Audit Trail]]",
+      "resolved": "urn:visionflow:owl:class:audit-trail",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Provenance]]",
+      "resolved": "urn:visionflow:owl:class:data-provenance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Management]]",
+      "resolved": "urn:visionflow:owl:class:metadata-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and real-time accessibility versus long-term archival. Regulatory frameworks increasingly mandate traceability: the EU AI Act requires high-risk systems to maintain logs enabling ex-post verification, GDPR grants individuals rights to explanations of automated decisions, and sector-specific regulations impose record-keeping requirements for compliance demonstration.

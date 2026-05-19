@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:e5fa5bdea7e59ab08c0f35631dd8257b2644c2cc017a5be155d1ecaf8fe6d439",
+  "title": "Cross-Chain Messaging",
+  "slug": "cross-chain-messaging",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cross-chain-messaging",
+  "domain": "blockchain",
+  "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:message-passing-system",
+      "label": "Message Passing System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:handler-execution",
+        "label": "Handler Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:visionflow:linked:proof-verification",
+        "label": "Proof Verification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-proof",
+        "label": "Blockchain Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:message-authentication",
+        "label": "Message Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:relay-network",
+        "label": "Relay Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-movement",
+        "label": "Asset Movement"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-chain-function-calls",
+        "label": "Cross-Chain Function Calls"
+      },
+      {
+        "id": "urn:visionflow:linked:state-synchronisation",
+        "label": "State Synchronisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-movement",
+      "label": "Asset Movement"
+    },
+    {
+      "slug": "blockchain-proof",
+      "label": "Blockchain Proof"
+    },
+    {
+      "slug": "cross-chain-function-calls",
+      "label": "Cross-Chain Function Calls"
+    },
+    {
+      "slug": "decentralised-computation",
+      "label": "Decentralised Computation"
+    },
+    {
+      "slug": "handler-execution",
+      "label": "Handler Execution"
+    },
+    {
+      "slug": "interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "slug": "message-authentication",
+      "label": "Message Authentication"
+    },
+    {
+      "slug": "message-passing-system",
+      "label": "Message Passing System"
+    },
+    {
+      "slug": "message-queue",
+      "label": "Message Queue"
+    },
+    {
+      "slug": "proof-verification",
+      "label": "Proof Verification"
+    },
+    {
+      "slug": "relay-network",
+      "label": "Relay Network"
+    },
+    {
+      "slug": "state-synchronisation",
+      "label": "State Synchronisation"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

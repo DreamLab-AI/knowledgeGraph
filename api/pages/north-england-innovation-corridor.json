@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:42eac200c7346dcfb483c768b830cb893547ccbbb6db2dbc77fb265a64e21d16",
+  "title": "North England Innovation Corridor",
+  "slug": "north-england-innovation-corridor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:north-england-innovation-corridor",
+  "domain": "infrastructure",
+  "definition": "The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "established",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "north-england-innovation-corridor",
+      "label": "North England Innovation Corridor"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "leeds-digital-hub",
+      "label": "Leeds Digital Hub"
+    },
+    {
+      "slug": "liverpool-smart-cities",
+      "label": "Liverpool Smart Cities"
+    },
+    {
+      "slug": "manchester-tech-cluster",
+      "label": "Manchester Tech Cluster"
+    },
+    {
+      "slug": "newcastle-ai-and-health-innovation",
+      "label": "Newcastle AI & Health Innovation"
+    },
+    {
+      "slug": "sheffield-advanced-manufacturing",
+      "label": "Sheffield Advanced Manufacturing"
+    }
+  ]
+}

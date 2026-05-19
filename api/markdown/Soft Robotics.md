@@ -1,21 +1,351 @@
-iri:: http://narrativegoldmine.com/robotics#SoftRobotics
-uri:: urn:visionclaw:concept:robotics:soft-robotics
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:soft-robotics
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Soft Robotics
-content-hash:: sha256-12-74fe79e9b800
-legacy-term-id:: RB-3004
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#SoftRobotics
+legacy_uri:: urn:visionclaw:concept:robotics:soft-robotics
 public:: true
+
+# Soft Robotics
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4",
+  "@type": "Page",
+  "vc:slug": "soft-robotics",
+  "title": "Soft Robotics",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-dprinting",
+      "vc:label": "3DPrinting"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-grasping",
+      "vc:label": "AdaptiveGrasping"
+    },
+    {
+      "@id": "urn:visionflow:linked:bio-inspired-design",
+      "vc:label": "BioInspiredDesign"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliant-actuator",
+      "vc:label": "CompliantActuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:controlled-by",
+      "vc:label": "controlledBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-controlled-via",
+      "vc:label": "dt:controlledVia"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-designed-with",
+      "vc:label": "dt:designedWith"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-manufactured-by",
+      "vc:label": "dt:manufacturedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-modeled-by",
+      "vc:label": "dt:modeledBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-simulated-in",
+      "vc:label": "dt:simulatedIn"
+    },
+    {
+      "@id": "urn:visionflow:linked:finite-element-analysis",
+      "vc:label": "FiniteElementAnalysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-design",
+      "vc:label": "GenerativeDesign"
+    },
+    {
+      "@id": "urn:visionflow:linked:has-actuator",
+      "vc:label": "hasActuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:performs-grasping",
+      "vc:label": "performsGrasping"
+    },
+    {
+      "@id": "urn:visionflow:linked:pneumatic-actuation",
+      "vc:label": "PneumaticActuation"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-interaction",
+      "vc:label": "SafeInteraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-material",
+      "vc:label": "usesMaterial"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "MachineLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physics-engine",
+      "vc:label": "PhysicsEngine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-74fe79e9b800"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#SoftRobotics"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-3004"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Soft Robotics"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:soft-robotics"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:soft-robotics"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:soft-robotics",
+  "@type": "OntologyClass",
+  "label": "Soft Robotics",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments, with applications across surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing—advancing through bio-inspired design, soft actuation, and machine learning control.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:soft-robotics:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3DPrinting]]",
+      "resolved": "urn:visionflow:linked:3-dprinting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AdaptiveGrasping]]",
+      "resolved": "urn:visionflow:linked:adaptive-grasping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BioInspiredDesign]]",
+      "resolved": "urn:visionflow:linked:bio-inspired-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CompliantActuator]]",
+      "resolved": "urn:visionflow:linked:compliant-actuator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[controlledBy]]",
+      "resolved": "urn:visionflow:linked:controlled-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:controlledVia]]",
+      "resolved": "urn:visionflow:linked:dt-controlled-via",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:designedWith]]",
+      "resolved": "urn:visionflow:linked:dt-designed-with",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:manufacturedBy]]",
+      "resolved": "urn:visionflow:linked:dt-manufactured-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:modeledBy]]",
+      "resolved": "urn:visionflow:linked:dt-modeled-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:simulatedIn]]",
+      "resolved": "urn:visionflow:linked:dt-simulated-in",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FiniteElementAnalysis]]",
+      "resolved": "urn:visionflow:linked:finite-element-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GenerativeDesign]]",
+      "resolved": "urn:visionflow:linked:generative-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hasActuator]]",
+      "resolved": "urn:visionflow:linked:has-actuator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[performsGrasping]]",
+      "resolved": "urn:visionflow:linked:performs-grasping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PneumaticActuation]]",
+      "resolved": "urn:visionflow:linked:pneumatic-actuation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SafeInteraction]]",
+      "resolved": "urn:visionflow:linked:safe-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesMaterial]]",
+      "resolved": "urn:visionflow:linked:uses-material",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MachineLearning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PhysicsEngine]]",
+      "resolved": "urn:visionflow:owl:class:physics-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments, with applications across surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing—advancing through bio-inspired design, soft actuation, and machine learning control.

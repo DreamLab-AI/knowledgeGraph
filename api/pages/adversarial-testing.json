@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:1f851c9c5aad2700b2790d2078588034da283435197f518af40f34ebabd62eab",
+  "title": "Adversarial Testing",
+  "slug": "adversarial-testing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adversarial-testing",
+  "domain": "artificial-intelligence",
+  "definition": "Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

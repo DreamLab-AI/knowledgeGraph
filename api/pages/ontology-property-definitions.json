@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:f6fe138c6319439543c1f2fe8422c3cba1b11b8f2689391509f1e074ad9e11f2",
+  "title": "Ontology Property Definitions",
+  "slug": "ontology-property-definitions",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ontology-property-definitions",
+  "domain": "infrastructure",
+  "definition": "Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains. Properties define typed relationships with explicit domains, ranges, inverse relationships, and logical characteristics enabling automated reasoning and knowledge graph traversal.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 1.0,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dublin-core-metadata-initiative",
+      "label": "Dublin Core Metadata Initiative"
+    },
+    {
+      "slug": "ontology-domain",
+      "label": "OntologyDomain"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

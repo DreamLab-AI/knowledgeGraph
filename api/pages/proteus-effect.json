@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80",
+  "title": "Proteus Effect",
+  "slug": "proteus-effect",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proteus-effect",
+  "domain": "spatial-computing",
+  "definition": "Proteus Effect is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-identity",
+      "label": "Avatar Identity"
+    },
+    {
+      "slug": "digital-embodiment",
+      "label": "Digital Embodiment"
+    },
+    {
+      "slug": "virtual-psychology",
+      "label": "Virtual Psychology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    },
+    {
+      "slug": "virtual-group-dynamics",
+      "label": "Virtual Group Dynamics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-group-dynamics",
+      "label": "Virtual Group Dynamics"
+    }
+  ]
+}

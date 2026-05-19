@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:ef780b752d67f74465ef12d421fddaa4b287ee2a78a75cefc359299687bcf24f",
+  "title": "Ai Art Categorization",
+  "slug": "ai-art-categorization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-art-categorization",
+  "domain": "artificial-intelligence",
+  "definition": "AI Art Categorization encompasses taxonomies, classification systems, and machine learning methods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation methodology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the creative process.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:art-classification",
+      "label": "Art Classification"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:art-historical-knowledge",
+        "label": "Art Historical Knowledge"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:art-curation",
+        "label": "Art Curation"
+      },
+      {
+        "id": "urn:visionflow:linked:authenticity-detection",
+        "label": "Authenticity Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:style-analysis",
+        "label": "Style Analysis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "art-classification",
+      "label": "Art Classification"
+    },
+    {
+      "slug": "art-curation",
+      "label": "Art Curation"
+    },
+    {
+      "slug": "art-historical-knowledge",
+      "label": "Art Historical Knowledge"
+    },
+    {
+      "slug": "authenticity-detection",
+      "label": "Authenticity Detection"
+    },
+    {
+      "slug": "style-analysis",
+      "label": "Style Analysis"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ai-creative-media",
+      "label": "ETSI Domain AI + Creative Media"
+    }
+  ]
+}

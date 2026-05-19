@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:f7b166d73383e98b79db8c0cad9399476160f8b8b79f8fd8452b9e66e4997be6",
+  "title": "Accessibility Standard",
+  "slug": "accessibility-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accessibility-standard",
+  "domain": "spatial-computing",
+  "definition": "Specification ensuring equitable access to virtual content and experiences for users with diverse abilities and disabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accessibility-requirement",
+        "label": "Accessibility Requirement"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-metric",
+        "label": "Compliance Metric"
+      },
+      {
+        "id": "urn:visionflow:linked:testing-protocol",
+        "label": "Testing Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:xr-accessibility-guideline",
+        "label": "XR Accessibility Guideline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:accessibility-guideline",
+        "label": "Accessibility Guideline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-interface-standard",
+        "label": "User Interface Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:equitable-access",
+        "label": "Equitable Access"
+      },
+      {
+        "id": "urn:visionflow:linked:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inclusive-xr-experience",
+        "label": "Inclusive XR Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-guideline",
+      "label": "Accessibility Guideline"
+    },
+    {
+      "slug": "accessibility-requirement",
+      "label": "Accessibility Requirement"
+    },
+    {
+      "slug": "compliance-metric",
+      "label": "Compliance Metric"
+    },
+    {
+      "slug": "equitable-access",
+      "label": "Equitable Access"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "iso-9241-112",
+      "label": "ISO 9241-112"
+    },
+    {
+      "slug": "testing-protocol",
+      "label": "Testing Protocol"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    },
+    {
+      "slug": "w3-c-xr-accessibility",
+      "label": "W3C XR Accessibility"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "inclusive-xr-experience",
+      "label": "Inclusive XR Experience"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "user-interface-standard",
+      "label": "User Interface Standard"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "id": "urn:visionflow:page:1ff965747aee253bbf882b052f45de8efc5c9b191e23b00f95be8a96522a7ae4",
+  "title": "ETSI_Domain_Infrastructure___Immersive",
+  "slug": "etsi-domain-infrastructure-immersive",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-immersive",
+  "domain": "infrastructure",
+  "definition": "A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended reality (XR), spatial computing, and metaverse environments, comprising rendering infrastructure (game engines such as Unity with 2.8 million developers globally achieving 50-120 frames per second stereoscopic rendering at 1440\u00d71600 pixels per eye for VR headsets, Unreal Engine with nanite virtualized geometry rendering 10+ billion triangles/scene, Godot supporting cross-platform deployment across 9 platforms), network infrastructure (5G Stand-Alone (SA) architecture with network slicing providing ultra-reliable low-latency communication URLLC <1ms radio latency, multi-access edge computing MEC nodes positioned <10km from users reducing round-trip time RTT to 5-15ms enabling real-time synchronization of shared virtual environments with 100-1000+ concurrent users, fiber-to-premises FTTP deployments achieving symmetric 1Gbps-10Gbps supporting 8K 360\u00b0 video streaming at 100-200 Mbps), edge computi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:content-delivery-network",
+        "label": "ContentDeliveryNetwork"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-storage",
+        "label": "DistributedStorage"
+      },
+      {
+        "id": "urn:visionflow:linked:network-slicing",
+        "label": "NetworkSlicing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing-node",
+        "label": "EdgeComputingNode"
+      },
+      {
+        "id": "urn:visionflow:owl:class:game-engine",
+        "label": "GameEngine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "label": "RenderingPipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:5-gstand-alone-architecture",
+        "label": "5GStandAloneArchitecture"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-caching",
+        "label": "DistributedCaching"
+      },
+      {
+        "id": "urn:visionflow:linked:fiber-optics-infrastructure",
+        "label": "FiberOpticsInfrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:gpucompute-infrastructure",
+        "label": "GPUComputeInfrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:extended-reality",
+        "label": "ExtendedReality"
+      },
+      {
+        "id": "urn:visionflow:linked:metaverse-environment",
+        "label": "MetaverseEnvironment"
+      },
+      {
+        "id": "urn:visionflow:linked:realtime-synchronization",
+        "label": "RealtimeSynchronization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-experience",
+        "label": "ImmersiveExperience"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "SpatialComputing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-gpp-ts-23-501-5-g-system-architecture",
+      "label": "3GPP TS 23.501 5G System Architecture"
+    },
+    {
+      "slug": "5-gstand-alone-architecture",
+      "label": "5GStandAloneArchitecture"
+    },
+    {
+      "slug": "bandwidth-capacity",
+      "label": "BandwidthCapacity"
+    },
+    {
+      "slug": "computational-throughput",
+      "label": "ComputationalThroughput"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "ContentDeliveryNetwork"
+    },
+    {
+      "slug": "distributed-caching",
+      "label": "DistributedCaching"
+    },
+    {
+      "slug": "distributed-storage",
+      "label": "DistributedStorage"
+    },
+    {
+      "slug": "etsi-gs-arf-003-augmented-reality-framework",
+      "label": "ETSI GS ARF 003 Augmented Reality Framework"
+    },
+    {
+      "slug": "etsi-gs-mec-003-multi-access-edge-computing-framework",
+      "label": "ETSI GS MEC 003 Multi-Access Edge Computing Framework"
+    },
+    {
+      "slug": "etsi-gs-nfv-network-functions-virtualization",
+      "label": "ETSI GS NFV Network Functions Virtualization"
+    },
+    {
+      "slug": "etsi-isg-f5-g-fifth-generation-fixed-network",
+      "label": "ETSI ISG F5G Fifth Generation Fixed Network"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "ExtendedReality"
+    },
+    {
+      "slug": "fiber-optics-infrastructure",
+      "label": "FiberOpticsInfrastructure"
+    },
+    {
+      "slug": "gpucompute-infrastructure",
+      "label": "GPUComputeInfrastructure"
+    },
+    {
+      "slug": "iso-iec-23090-14-scene-description-for-mpeg-media",
+      "label": "ISO/IEC 23090-14 Scene Description for MPEG Media"
+    },
+    {
+      "slug": "khronos-open-xr-1-0-specification",
+      "label": "Khronos OpenXR 1.0 Specification"
+    },
+    {
+      "slug": "metaverse-environment",
+      "label": "MetaverseEnvironment"
+    },
+    {
+      "slug": "multi-access-edge-computing",
+      "label": "MultiAccessEdgeComputing"
+    },
+    {
+      "slug": "network-slicing",
+      "label": "NetworkSlicing"
+    },
+    {
+      "slug": "realtime-synchronization",
+      "label": "RealtimeSynchronization"
+    },
+    {
+      "slug": "storage-capacity",
+      "label": "StorageCapacity"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "EdgeComputingNode"
+    },
+    {
+      "slug": "etsidomain-classification",
+      "label": "ETSIDomainClassification"
+    },
+    {
+      "slug": "game-engine",
+      "label": "GameEngine"
+    },
+    {
+      "slug": "immersive-experience",
+      "label": "ImmersiveExperience"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "network-latency",
+      "label": "NetworkLatency"
+    },
+    {
+      "slug": "quality-of-service",
+      "label": "QualityOfService"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "RenderingPipeline"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "SpatialComputing"
+    },
+    {
+      "slug": "standards-based-taxonomy",
+      "label": "StandardsBasedTaxonomy"
+    },
+    {
+      "slug": "technical-architecture-framework",
+      "label": "TechnicalArchitectureFramework"
+    }
+  ],
+  "backlinks": []
+}

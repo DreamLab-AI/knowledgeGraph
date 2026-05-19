@@ -1,24 +1,264 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Mistral
-uri:: urn:visionclaw:concept:spatial-computing:mistral
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:mistral
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Mistral
-content-hash:: sha256-12-a4bf34aa9bdd
-legacy-term-id:: AI-0227
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Mistral
+legacy_uri:: urn:visionclaw:concept:spatial-computing:mistral
 public:: true
+
+# Mistral
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aaa4c8bbf278d91549c8dbae3cb091331ea13167e515a0d4985fff65386f8e04",
+  "@type": "Page",
+  "vc:slug": "mistral",
+  "title": "Mistral",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:deepseek",
+      "vc:label": "Deepseek"
+    },
+    {
+      "@id": "urn:visionflow:linked:falcon",
+      "vc:label": "Falcon"
+    },
+    {
+      "@id": "urn:visionflow:linked:microsoft-models",
+      "vc:label": "Microsoft Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:poro",
+      "vc:label": "Poro"
+    },
+    {
+      "@id": "urn:visionflow:linked:red-pyjama",
+      "vc:label": "Red Pyjama"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mistral",
+      "vc:label": "Mistral"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a4bf34aa9bdd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Mistral"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0227"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Mistral"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:mistral"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:mistral"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aaa4c8bbf278d91549c8dbae3cb091331ea13167e515a0d4985fff65386f8e04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:mistral",
+  "@type": "OntologyClass",
+  "label": "Mistral",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aaa4c8bbf278d91549c8dbae3cb091331ea13167e515a0d4985fff65386f8e04"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aaa4c8bbf278d91549c8dbae3cb091331ea13167e515a0d4985fff65386f8e04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A 7.3B parameter language model that uses grouped-query attention and sliding window attention to achieve strong performance with efficient inference, outperforming larger models on various benchmarks.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:mistral:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aaa4c8bbf278d91549c8dbae3cb091331ea13167e515a0d4985fff65386f8e04"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Deepseek]]",
+      "resolved": "urn:visionflow:linked:deepseek",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Falcon]]",
+      "resolved": "urn:visionflow:linked:falcon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Microsoft Models]]",
+      "resolved": "urn:visionflow:linked:microsoft-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Poro]]",
+      "resolved": "urn:visionflow:linked:poro",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Red Pyjama]]",
+      "resolved": "urn:visionflow:linked:red-pyjama",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mistral]]",
+      "resolved": "urn:visionflow:owl:class:mistral",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aaa4c8bbf278d91549c8dbae3cb091331ea13167e515a0d4985fff65386f8e04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A 7.3B parameter language model that uses grouped-query attention and sliding window attention to achieve strong performance with efficient inference, outperforming larger models on various benchmarks.

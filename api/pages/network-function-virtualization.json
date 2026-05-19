@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275",
+  "title": "Network Function Virtualization",
+  "slug": "network-function-virtualization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:network-function-virtualization",
+  "domain": "spatial-computing",
+  "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-architecture",
+      "label": "Network Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:network-scalability",
+        "label": "Network Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-scalability",
+      "label": "Network Scalability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "network-architecture",
+      "label": "Network Architecture"
+    }
+  ],
+  "backlinks": []
+}

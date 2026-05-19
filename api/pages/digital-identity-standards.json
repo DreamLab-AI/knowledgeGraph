@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:a61ee2886ff9c6660185c5bab417d2be1d24b4311658eb6784800fad15ba5b5b",
+  "title": "Digital Identity Standards",
+  "slug": "digital-identity-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-identity-standards",
+  "domain": "infrastructure",
+  "definition": "The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentralized systems. bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:conformance-testing",
+        "label": "Conformance Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-specifications",
+        "label": "Protocol Specifications"
+      },
+      {
+        "id": "urn:visionflow:linked:standards-bodies",
+        "label": "Standards Bodies"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:credential-exchange",
+        "label": "Credential Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-interoperability",
+        "label": "Identity Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-frameworks",
+        "label": "Trust Frameworks"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "conformance-testing",
+      "label": "Conformance Testing"
+    },
+    {
+      "slug": "credential-exchange",
+      "label": "Credential Exchange"
+    },
+    {
+      "slug": "e-idas-2-0",
+      "label": "eIDAS 2.0"
+    },
+    {
+      "slug": "identity-interoperability",
+      "label": "Identity Interoperability"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "protocol-specifications",
+      "label": "Protocol Specifications"
+    },
+    {
+      "slug": "standards-bodies",
+      "label": "Standards Bodies"
+    },
+    {
+      "slug": "trust-frameworks",
+      "label": "Trust Frameworks"
+    },
+    {
+      "slug": "w3-c-did-core-1-0",
+      "label": "W3C DID Core 1.0"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    }
+  ]
+}

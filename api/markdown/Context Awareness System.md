@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ContextAwarenessSystem
-uri:: urn:visionclaw:concept:spatial-computing:context-awareness-system
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:context-awareness-system
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Context Awareness System
-content-hash:: sha256-12-f9b62fa9d0eb
-legacy-term-id:: MV-9831
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ContextAwarenessSystem
+legacy_uri:: urn:visionclaw:concept:spatial-computing:context-awareness-system
 public:: true
+
+# Context Awareness System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c",
+  "@type": "Page",
+  "vc:slug": "context-awareness-system",
+  "title": "Context Awareness System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-services",
+      "vc:label": "Adaptive Services"
+    },
+    {
+      "@id": "urn:visionflow:linked:location-based-services",
+      "vc:label": "Location Based Services"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:linked:situational-awareness",
+      "vc:label": "Situational Awareness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-analytics",
+      "vc:label": "Data Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-systems",
+      "vc:label": "Intelligent Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensors",
+      "vc:label": "IoT Sensors"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f9b62fa9d0eb"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ContextAwarenessSystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9831"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Context Awareness System"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:context-awareness-system"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:context-awareness-system"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:context-awareness-system",
+  "@type": "OntologyClass",
+  "label": "Context Awareness System",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-systems",
+      "vc:label": "Intelligent Systems"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:data-analytics",
+      "vc:label": "Data Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensors",
+      "vc:label": "IoT Sensors"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-services",
+      "vc:label": "Adaptive Services"
+    },
+    {
+      "@id": "urn:visionflow:linked:location-based-services",
+      "vc:label": "Location Based Services"
+    },
+    {
+      "@id": "urn:visionflow:linked:situational-awareness",
+      "vc:label": "Situational Awareness"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:context-awareness-system:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adaptive Services]]",
+      "resolved": "urn:visionflow:linked:adaptive-services",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Location Based Services]]",
+      "resolved": "urn:visionflow:linked:location-based-services",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Input]]",
+      "resolved": "urn:visionflow:linked:sensor-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Situational Awareness]]",
+      "resolved": "urn:visionflow:linked:situational-awareness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Analytics]]",
+      "resolved": "urn:visionflow:owl:class:data-analytics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Intelligent Systems]]",
+      "resolved": "urn:visionflow:owl:class:intelligent-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[IoT Sensors]]",
+      "resolved": "urn:visionflow:owl:class:io-t-sensors",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:network-infrastructure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.

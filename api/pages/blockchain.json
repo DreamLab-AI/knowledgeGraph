@@ -1,0 +1,1791 @@
+{
+  "id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b",
+  "title": "Blockchain",
+  "slug": "blockchain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain",
+  "domain": "blockchain",
+  "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without requiring a trusted central authority.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 1.0,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:visionflow:owl:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "Distributed Consensus"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "iso-iec-23455-2019",
+      "label": "ISO/IEC 23455:2019"
+    },
+    {
+      "slug": "iso-iec-tr",
+      "label": "ISO/IEC TR"
+    },
+    {
+      "slug": "itu-t-y-4460",
+      "label": "ITU-T Y.4460"
+    },
+    {
+      "slug": "supply-chain-transparency",
+      "label": "Supply Chain Transparency"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "Distributed Data Structure"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "node",
+      "label": "Node"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-concept",
+      "label": "AI Concept"
+    },
+    {
+      "slug": "ai-development-tools",
+      "label": "AI Development Tools"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "ai-metadata",
+      "label": "AI Metadata"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-security",
+      "label": "AI Security"
+    },
+    {
+      "slug": "ai-system-component",
+      "label": "AI System Component"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "api-setup",
+      "label": "api-setup"
+    },
+    {
+      "slug": "api-tests-status",
+      "label": "api-tests-status"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "accounts",
+      "label": "Accounts"
+    },
+    {
+      "slug": "adaptive-virtual-experience",
+      "label": "Adaptive Virtual Experience"
+    },
+    {
+      "slug": "adaptive-virtual-world",
+      "label": "Adaptive Virtual World"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "agentic-alliance",
+      "label": "Agentic Alliance"
+    },
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "arbitration-decision-engine",
+      "label": "Arbitration Decision Engine"
+    },
+    {
+      "slug": "arbitration-process",
+      "label": "Arbitration Process"
+    },
+    {
+      "slug": "arbitrator-expertise",
+      "label": "Arbitrator Expertise"
+    },
+    {
+      "slug": "archival-standards",
+      "label": "Archival Standards"
+    },
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "attack-vector",
+      "label": "Attack Vector"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "automated-market-making",
+      "label": "Automated Market Making"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "blockchain-process",
+      "label": "Blockchain Process"
+    },
+    {
+      "slug": "blockchain-sustainability",
+      "label": "Blockchain Sustainability"
+    },
+    {
+      "slug": "blockchain-transaction",
+      "label": "Blockchain Transaction"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "carbon-calculator",
+      "label": "Carbon Calculator"
+    },
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-assessment",
+      "label": "Carbon Footprint Assessment"
+    },
+    {
+      "slug": "carbon-footprint-indicator",
+      "label": "Carbon Footprint Indicator"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "carbon-neutrality-planning",
+      "label": "Carbon Neutrality Planning"
+    },
+    {
+      "slug": "carbon-neutrality-verification",
+      "label": "Carbon Neutrality Verification"
+    },
+    {
+      "slug": "carbon-offset-certificate",
+      "label": "Carbon Offset Certificate"
+    },
+    {
+      "slug": "carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    },
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "community-governance",
+      "label": "Community Governance"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "compliance-standards",
+      "label": "Compliance Standards"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "slug": "conditional-random-field",
+      "label": "Conditional Random Field"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "conflict-mineral-tracking",
+      "label": "Conflict Mineral Tracking"
+    },
+    {
+      "slug": "consensus-domain",
+      "label": "Consensus Domain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "conspiracies",
+      "label": "Conspiracies"
+    },
+    {
+      "slug": "constitutional-principle",
+      "label": "Constitutional Principle"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
+      "slug": "consumer-tools-for-smes",
+      "label": "Consumer Tools for SMEs"
+    },
+    {
+      "slug": "content-authentication",
+      "label": "Content Authentication"
+    },
+    {
+      "slug": "content-protection",
+      "label": "Content Protection"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    },
+    {
+      "slug": "convergence-concept",
+      "label": "Convergence Concept"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "courses-and-training",
+      "label": "Courses and Training"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "cross-domain-bridge",
+      "label": "Cross Domain Bridge"
+    },
+    {
+      "slug": "cross-metaverse-commerce",
+      "label": "Cross Metaverse Commerce"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "crypto-legal-from-digi-soc",
+      "label": "Crypto Legal from DigiSoc"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "cryptocurrency-storage",
+      "label": "Cryptocurrency Storage"
+    },
+    {
+      "slug": "cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptographic-security",
+      "label": "Cryptographic Security"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "cryptographic-verification",
+      "label": "Cryptographic Verification"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    },
+    {
+      "slug": "customer-rewards",
+      "label": "Customer Rewards"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "dagger",
+      "label": "Dagger"
+    },
+    {
+      "slug": "data-access-interface",
+      "label": "Data Access Interface"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-interoperability",
+      "label": "Data Interoperability"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "data-protection-regulation",
+      "label": "Data Protection Regulation"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "data-registry",
+      "label": "Data Registry"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "data-security",
+      "label": "Data Security"
+    },
+    {
+      "slug": "data-sharing",
+      "label": "Data Sharing"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "data-virtualization",
+      "label": "Data Virtualization"
+    },
+    {
+      "slug": "database-query",
+      "label": "Database Query"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "de-fi-services",
+      "label": "De Fi Services"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralization-layer",
+      "label": "Decentralization Layer"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "deep-decks",
+      "label": "deep-decks"
+    },
+    {
+      "slug": "definitions-and-frameworks-for-metaverse",
+      "label": "Definitions and frameworks for Metaverse"
+    },
+    {
+      "slug": "delegated-proof-of-stake",
+      "label": "Delegated Proof of Stake"
+    },
+    {
+      "slug": "delivery-planning",
+      "label": "Delivery Planning"
+    },
+    {
+      "slug": "democratic-governance",
+      "label": "Democratic Governance"
+    },
+    {
+      "slug": "democratic-participation",
+      "label": "Democratic Participation"
+    },
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    },
+    {
+      "slug": "digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    },
+    {
+      "slug": "digital-asset-infrastructure",
+      "label": "Digital Asset Infrastructure"
+    },
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "digital-asset-market",
+      "label": "Digital Asset Market"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "digital-asset-standards",
+      "label": "Digital Asset Standards"
+    },
+    {
+      "slug": "digital-asset-trading",
+      "label": "Digital Asset Trading"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-commerce",
+      "label": "Digital Commerce"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "digital-entertainment",
+      "label": "Digital Entertainment"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "digital-gaming",
+      "label": "Digital Gaming"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "digital-governance",
+      "label": "Digital Governance"
+    },
+    {
+      "slug": "digital-heritage",
+      "label": "Digital Heritage"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "digital-jurisdiction",
+      "label": "Digital Jurisdiction"
+    },
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "digital-marketplace",
+      "label": "Digital Marketplace"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    },
+    {
+      "slug": "digital-platform",
+      "label": "Digital Platform"
+    },
+    {
+      "slug": "digital-preservation",
+      "label": "Digital Preservation"
+    },
+    {
+      "slug": "digital-property-rights",
+      "label": "Digital Property Rights"
+    },
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    },
+    {
+      "slug": "digital-regulation",
+      "label": "Digital Regulation"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "digital-security",
+      "label": "Digital Security"
+    },
+    {
+      "slug": "digital-signature-verification",
+      "label": "Digital Signature Verification"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "disparate-impact",
+      "label": "Disparate Impact"
+    },
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    },
+    {
+      "slug": "disruption",
+      "label": "Disruption"
+    },
+    {
+      "slug": "disruptive-tech-domain",
+      "label": "Disruptive Tech Domain"
+    },
+    {
+      "slug": "disruptive-technology",
+      "label": "Disruptive Technology"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "Distributed Data Structure"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "distributed-system-protocol",
+      "label": "Distributed System Protocol"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "distributed-work",
+      "label": "Distributed Work"
+    },
+    {
+      "slug": "distributor",
+      "label": "Distributor"
+    },
+    {
+      "slug": "diversity-non-discrimination-and-fairness",
+      "label": "Diversity, Non-Discrimination, and Fairness"
+    },
+    {
+      "slug": "domain",
+      "label": "Domain"
+    },
+    {
+      "slug": "dr-john-o-hare",
+      "label": "Dr John O'Hare"
+    },
+    {
+      "slug": "dynamic-scalable-bft",
+      "label": "Dynamic Scalable BFT"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    },
+    {
+      "slug": "erc1155-standard",
+      "label": "ERC1155 Standard"
+    },
+    {
+      "slug": "erc1155-token",
+      "label": "ERC1155 Token"
+    },
+    {
+      "slug": "erc1400-standard",
+      "label": "ERC1400 Standard"
+    },
+    {
+      "slug": "erc1400-token",
+      "label": "ERC1400 Token"
+    },
+    {
+      "slug": "erc20-standard",
+      "label": "ERC20 Standard"
+    },
+    {
+      "slug": "erc20-token",
+      "label": "ERC20 Token"
+    },
+    {
+      "slug": "erc3643-standard",
+      "label": "ERC3643 Standard"
+    },
+    {
+      "slug": "erc3643-token",
+      "label": "ERC3643 Token"
+    },
+    {
+      "slug": "erc721-standard",
+      "label": "ERC721 Standard"
+    },
+    {
+      "slug": "erc721-token",
+      "label": "ERC721 Token"
+    },
+    {
+      "slug": "etl-pipeline",
+      "label": "ETL Pipeline"
+    },
+    {
+      "slug": "etsi-domain-ai-governance",
+      "label": "ETSI Domain AI + Governance"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "etsi-domain-governance-and-ethics",
+      "label": "ETSI Domain: Governance & Ethics"
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "label": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    },
+    {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "etsi-domain-governance-ethics",
+      "label": "ETSI_Domain_Governance___Ethics"
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "edge-ai-security",
+      "label": "Edge AI Security"
+    },
+    {
+      "slug": "edge-ai-system",
+      "label": "Edge AI System"
+    },
+    {
+      "slug": "edge-cloud-collaboration",
+      "label": "Edge-Cloud Collaboration"
+    },
+    {
+      "slug": "emotional-intelligence",
+      "label": "Emotional Intelligence"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "slug": "epoch",
+      "label": "Epoch"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "ethical-review-process",
+      "label": "Ethical Review Process"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "explanation",
+      "label": "Explanation"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "fairness-accuracy-tradeoffs",
+      "label": "Fairness Accuracy Tradeoffs"
+    },
+    {
+      "slug": "fairness-auditing-tools",
+      "label": "Fairness Auditing Tools"
+    },
+    {
+      "slug": "fairness-constraints",
+      "label": "Fairness Constraints"
+    },
+    {
+      "slug": "fairness-metrics",
+      "label": "Fairness Metrics"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "fault-tolerance-system",
+      "label": "Fault Tolerance System"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "federated-byzantine-fault-tolerance",
+      "label": "Federated Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "federated-edge-learning",
+      "label": "Federated Edge Learning"
+    },
+    {
+      "slug": "fixed-supply-token",
+      "label": "Fixed Supply Token"
+    },
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    },
+    {
+      "slug": "fungible-token",
+      "label": "Fungible Token"
+    },
+    {
+      "slug": "gas-optimization",
+      "label": "Gas Optimization"
+    },
+    {
+      "slug": "gasper-consensus",
+      "label": "Gasper Consensus"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "hanim-standard",
+      "label": "Hanim Standard"
+    },
+    {
+      "slug": "high-energy-consumption",
+      "label": "High Energy Consumption"
+    },
+    {
+      "slug": "hot-stuff-consensus",
+      "label": "HotStuff Consensus"
+    },
+    {
+      "slug": "hybrid-consensus",
+      "label": "Hybrid Consensus"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "inter-world-remittance",
+      "label": "Inter-world Remittance"
+    },
+    {
+      "slug": "interface",
+      "label": "Interface"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    },
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    },
+    {
+      "slug": "layer-0",
+      "label": "Layer 0"
+    },
+    {
+      "slug": "layer-3",
+      "label": "Layer 3"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "label": "leopold-aschenbrenner"
+    },
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    },
+    {
+      "slug": "liquid-proof-of-stake",
+      "label": "Liquid Proof of Stake"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "lock-and-mint-mechanism",
+      "label": "Lock and Mint Mechanism"
+    },
+    {
+      "slug": "low-energy-consumption",
+      "label": "Low Energy Consumption"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "luxury-goods-authentication",
+      "label": "Luxury Goods Authentication"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "nft-marketplace",
+      "label": "NFT Marketplace"
+    },
+    {
+      "slug": "nft-ownership-proof",
+      "label": "NFT Ownership Proof"
+    },
+    {
+      "slug": "nft-standard",
+      "label": "NFT Standard"
+    },
+    {
+      "slug": "nft-standards",
+      "label": "NFT Standards"
+    },
+    {
+      "slug": "node-independent-validation-pbft",
+      "label": "Node-Independent Validation PBFT"
+    },
+    {
+      "slug": "nominated-proof-of-stake",
+      "label": "Nominated Proof of Stake"
+    },
+    {
+      "slug": "non-genesis-block",
+      "label": "Non Genesis Block"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "ouroboros-consensus",
+      "label": "Ouroboros Consensus"
+    },
+    {
+      "slug": "payment-token",
+      "label": "Payment Token"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "pharmaceutical-traceability",
+      "label": "Pharmaceutical Traceability"
+    },
+    {
+      "slug": "platform-governance",
+      "label": "Platform Governance"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "polkadot-parachains",
+      "label": "Polkadot Parachains"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "proof-of-authority",
+      "label": "Proof of Authority"
+    },
+    {
+      "slug": "proof-of-history",
+      "label": "Proof of History"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-based-consensus",
+      "label": "Proof-Based Consensus"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "pure-proof-of-stake",
+      "label": "Pure Proof of Stake"
+    },
+    {
+      "slug": "research-summary",
+      "label": "RESEARCH_SUMMARY"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "relayer",
+      "label": "Relayer"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "reputation-based-bft",
+      "label": "Reputation-Based BFT"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience"
+    },
+    {
+      "slug": "royalty-distribution",
+      "label": "Royalty Distribution"
+    },
+    {
+      "slug": "security-token",
+      "label": "Security Token"
+    },
+    {
+      "slug": "semi-fungible-token",
+      "label": "Semi-Fungible Token"
+    },
+    {
+      "slug": "separation-of-powers",
+      "label": "Separation Of Powers"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "sink-mechanism",
+      "label": "Sink Mechanism"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "stablecoin-token",
+      "label": "Stablecoin Token"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "standardized-asset-classification",
+      "label": "Standardized Asset Classification"
+    },
+    {
+      "slug": "standards-documentation",
+      "label": "Standards Documentation"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    },
+    {
+      "slug": "strategic-planning",
+      "label": "Strategic Planning"
+    },
+    {
+      "slug": "sub-millisecond-latency",
+      "label": "Sub-Millisecond Latency"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "supply-chain-blockchain",
+      "label": "Supply Chain Blockchain"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "tendermint-consensus",
+      "label": "Tendermint Consensus"
+    },
+    {
+      "slug": "threat-actor",
+      "label": "Threat Actor"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "trusted-execution-pbft",
+      "label": "Trusted Execution PBFT"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "utility-token",
+      "label": "Utility Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    },
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vulnerability",
+      "label": "Vulnerability"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "security-audit-guide",
+      "label": "security audit guide"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

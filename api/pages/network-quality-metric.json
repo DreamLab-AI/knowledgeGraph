@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:66650a8ac39b9e531a74218a30d60754334eea98a68d13c185f262ac737979d9",
+  "title": "Network Quality Metric",
+  "slug": "network-quality-metric",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:network-quality-metric",
+  "domain": "spatial-computing",
+  "definition": "Network Quality Metric is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "guaranteed-bandwidth",
+      "label": "Guaranteed Bandwidth"
+    }
+  ]
+}

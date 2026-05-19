@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:706cc9bbc057d8fe0a9a95bd53174d84b99b01689057464814e97d046eab2853",
+  "title": "Data Interoperability",
+  "slug": "data-interoperability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-interoperability",
+  "domain": "infrastructure",
+  "definition": "Data Interoperability is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "slug": "semantic-web-standards",
+      "label": "Semantic Web Standards"
+    },
+    {
+      "slug": "standard-format-support",
+      "label": "Standard Format Support"
+    }
+  ]
+}

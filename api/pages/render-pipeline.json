@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:80e4504e725538a4f6d869dacfd17428c3e51a29ed71bdd1f53c0405579a4b99",
+  "title": "Render Pipeline",
+  "slug": "render-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:render-pipeline",
+  "domain": "spatial-computing",
+  "definition": "RenderPipeline is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

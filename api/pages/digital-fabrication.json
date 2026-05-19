@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:2dc0271c826319d611534bd5750b80846f118bd5f2bde8773a621d98f48b7ed4",
+  "title": "Digital Fabrication",
+  "slug": "digital-fabrication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-fabrication",
+  "domain": "artificial-intelligence",
+  "definition": "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies. AI optimizes fabrication processes through generative design, predictive maintenance, quality control via computer vision, and adaptive toolpath planning. Machine learning models predict material behavior, optimize support structures, detect defects in real-time, and enable mass customization. Applications include topology optimization for lightweight structures, AI-driven 3D printing parameter tuning, and robotic manufacturing systems with reinforcement learning-based control.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-design",
+      "label": "Generative Design"
+    },
+    {
+      "slug": "process-optimization",
+      "label": "Process Optimization"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

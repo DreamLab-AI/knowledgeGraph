@@ -1,24 +1,231 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DistributedSystemArchitecture
-uri:: urn:visionclaw:concept:spatial-computing:distributed-system-architecture
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:distributed-system-architecture
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Distributed System Architecture
-content-hash:: sha256-12-6b39a5f0f087
-legacy-term-id:: MV-9884
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DistributedSystemArchitecture
+legacy_uri:: urn:visionclaw:concept:spatial-computing:distributed-system-architecture
 public:: true
+
+# Distributed System Architecture
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a",
+  "@type": "Page",
+  "vc:slug": "distributed-system-architecture",
+  "title": "Distributed System Architecture",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "vc:label": "Metaverse Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:system-architecture",
+      "vc:label": "System Architecture"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6b39a5f0f087"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DistributedSystemArchitecture"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9884"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Distributed System Architecture"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:distributed-system-architecture"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:distributed-system-architecture"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:distributed-system-architecture",
+  "@type": "OntologyClass",
+  "label": "Distributed System Architecture",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:system-architecture",
+      "vc:label": "System Architecture"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An architectural paradigm for metaverse systems that distributes computing resources, data storage, and processing across multiple interconnected nodes to achieve scalability, fault tolerance, and low-latency experiences whilst supporting millions of concurrent users.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "vc:label": "Metaverse Infrastructure"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:distributed-system-architecture:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[System Architecture]]",
+      "resolved": "urn:visionflow:owl:class:system-architecture",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An architectural paradigm for metaverse systems that distributes computing resources, data storage, and processing across multiple interconnected nodes to achieve scalability, fault tolerance, and low-latency experiences whilst supporting millions of concurrent users.

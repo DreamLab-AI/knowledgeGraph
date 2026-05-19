@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0e859fa5585716d5e9d26a67e80c2546b29e5ae5ecdaddb37430310b77ac7b74",
+  "title": "Virtual Replica",
+  "slug": "virtual-replica",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-replica",
+  "domain": "spatial-computing",
+  "definition": "A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes digital twins.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-model",
+      "label": "Digital Model"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-model",
+      "label": "Digital Model"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ]
+}

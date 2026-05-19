@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:c893bd2a2c50b94e065d239d3bd0a26c184de8eb8a8145f37dee144c9136fa85",
+  "title": "Decentralized Swarm Control",
+  "slug": "decentralized-swarm-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralized-swarm-control",
+  "domain": "robotics",
+  "definition": "Decentralised swarm control distributes decision-making across all robot agents, where each robot computes commands based solely on local sensor information and direct communication with neighbouring agents. This architecture inherently tolerates individual robot failures, scales to arbitrarily large swarms, and enables emergence of collective behaviours from simple local rules, contrasting with [[Centralized Swarm Control]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:swarm-robotics",
+      "label": "Swarm Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:agent-autonomy",
+        "label": "Agent Autonomy"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-behaviour",
+        "label": "Emergent Behaviour"
+      },
+      {
+        "id": "urn:visionflow:linked:local-decision-logic",
+        "label": "Local Decision Logic"
+      },
+      {
+        "id": "urn:visionflow:linked:neighbourhood-communication",
+        "label": "Neighbourhood Communication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asynchronous-coordination",
+        "label": "Asynchronous Coordination"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-algorithm",
+        "label": "Distributed Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:local-sensing",
+        "label": "Local Sensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-swarm-behaviour",
+        "label": "Adaptive Swarm Behaviour"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-task-performance",
+        "label": "Emergent Task Performance"
+      },
+      {
+        "id": "urn:visionflow:linked:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-swarm-behaviour",
+      "label": "Adaptive Swarm Behaviour"
+    },
+    {
+      "slug": "agent-autonomy",
+      "label": "Agent Autonomy"
+    },
+    {
+      "slug": "asynchronous-coordination",
+      "label": "Asynchronous Coordination"
+    },
+    {
+      "slug": "autonomous-vehicle-platooning",
+      "label": "Autonomous Vehicle Platooning"
+    },
+    {
+      "slug": "biologically-inspired-robotics",
+      "label": "Biologically Inspired Robotics"
+    },
+    {
+      "slug": "collective-construction",
+      "label": "Collective Construction"
+    },
+    {
+      "slug": "cooperative-behaviour",
+      "label": "Cooperative Behaviour"
+    },
+    {
+      "slug": "distributed-algorithm",
+      "label": "Distributed Algorithm"
+    },
+    {
+      "slug": "distributed-control-theory",
+      "label": "Distributed Control Theory"
+    },
+    {
+      "slug": "emergent-behaviour",
+      "label": "Emergent Behaviour"
+    },
+    {
+      "slug": "emergent-task-performance",
+      "label": "Emergent Task Performance"
+    },
+    {
+      "slug": "foraging-robots",
+      "label": "Foraging Robots"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "inter-agent-communication",
+      "label": "Inter-Agent Communication"
+    },
+    {
+      "slug": "local-decision-logic",
+      "label": "Local Decision Logic"
+    },
+    {
+      "slug": "local-sensing",
+      "label": "Local Sensing"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "neighbourhood-communication",
+      "label": "Neighbourhood Communication"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    }
+  ]
+}

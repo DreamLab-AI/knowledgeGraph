@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:6318ffc202e3e86299b8737b5f8515224b45394b88c7216f653a2200141383d7",
+  "title": "Membership Inference",
+  "slug": "membership-inference",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:membership-inference",
+  "domain": "artificial-intelligence",
+  "definition": "A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-extraction",
+      "label": "Model Extraction"
+    }
+  ]
+}

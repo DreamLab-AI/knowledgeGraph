@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:69e6811453016f693ceec33fae41e28f3aca86b1547c67360e935927d1fe5141",
+  "title": "Stablecoin Token",
+  "slug": "stablecoin-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stablecoin-token",
+  "domain": "blockchain",
+  "definition": "A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:fungible-token",
+      "label": "Fungible Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "fungible-token",
+      "label": "Fungible Token"
+    }
+  ],
+  "backlinks": []
+}

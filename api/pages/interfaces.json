@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba",
+  "title": "Interfaces",
+  "slug": "interfaces",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:interfaces",
+  "domain": "infrastructure",
+  "definition": "Interfaces is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "langflow",
+      "label": "Langflow"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "interfaces",
+      "label": "Interfaces"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "node-based-visual-interfaces",
+      "label": "Node based visual interfaces"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ],
+  "backlinks": []
+}

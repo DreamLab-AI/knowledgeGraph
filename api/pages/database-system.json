@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:f657c37aac4d058ae68fa62a8c511a8fbd831bc3b187491474e4902770549960",
+  "title": "Database System",
+  "slug": "database-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:database-system",
+  "domain": "infrastructure",
+  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. Modern database systems encompass relational databases using SQL for structured table-based data, and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:visionflow:linked:query-processing",
+        "label": "Query Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-management",
+        "label": "Transaction Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-persistence",
+      "label": "Data Persistence"
+    },
+    {
+      "slug": "query-processing",
+      "label": "Query Processing"
+    },
+    {
+      "slug": "transaction-management",
+      "label": "Transaction Management"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    },
+    {
+      "slug": "spatial-database",
+      "label": "Spatial Database"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

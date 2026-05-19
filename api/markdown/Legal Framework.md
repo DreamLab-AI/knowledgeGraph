@@ -1,21 +1,258 @@
-iri:: http://narrativegoldmine.com/infrastructure#LegalFramework
-uri:: urn:visionclaw:concept:infrastructure:legal-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:legal-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Legal Framework
-content-hash:: sha256-12-c6655f8e80c8
-legacy-term-id:: NGM-7024
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#LegalFramework
+legacy_uri:: urn:visionclaw:concept:infrastructure:legal-framework
 public:: true
+
+# Legal Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859",
+  "@type": "Page",
+  "vc:slug": "legal-framework",
+  "title": "Legal Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:core-technology",
+      "vc:label": "Core Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-compliance",
+      "vc:label": "Legal Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-requirements",
+      "vc:label": "Privacy Requirements"
+    },
+    {
+      "@id": "urn:visionflow:linked:rights-protection",
+      "vc:label": "Rights Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-obligations",
+      "vc:label": "Security Obligations"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-framework",
+      "vc:label": "Regulatory Framework"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c6655f8e80c8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#LegalFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7024"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Legal Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:legal-framework"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:legal-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:legal-framework",
+  "@type": "OntologyClass",
+  "label": "Legal Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-framework",
+      "vc:label": "Regulatory Framework"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:legal-compliance",
+      "vc:label": "Legal Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:rights-protection",
+      "vc:label": "Rights Protection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:privacy-requirements",
+      "vc:label": "Privacy Requirements"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-obligations",
+      "vc:label": "Security Obligations"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:legal-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Core Technology]]",
+      "resolved": "urn:visionflow:linked:core-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Legal Compliance]]",
+      "resolved": "urn:visionflow:linked:legal-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy Requirements]]",
+      "resolved": "urn:visionflow:linked:privacy-requirements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rights Protection]]",
+      "resolved": "urn:visionflow:linked:rights-protection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Security Obligations]]",
+      "resolved": "urn:visionflow:linked:security-obligations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Framework]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-framework",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.

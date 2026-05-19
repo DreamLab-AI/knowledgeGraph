@@ -1,24 +1,507 @@
-iri:: http://narrativegoldmine.com/spatial-computing#TextGeneration
-uri:: urn:visionclaw:concept:spatial-computing:text-generation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:text-generation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Text Generation
-content-hash:: sha256-12-ca2e8d0aeb3e
-legacy-term-id:: AI-0374
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#TextGeneration
+legacy_uri:: urn:visionclaw:concept:spatial-computing:text-generation
 public:: true
+
+# Text Generation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:351a23b4b129a9a0fbd982a7a8993f45cddd2d34759bd0500d7ef1b109240a99",
+  "@type": "Page",
+  "vc:slug": "text-generation",
+  "title": "Text Generation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:automation",
+      "vc:label": "automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "neural networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:organisation",
+      "vc:label": "organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:vercel",
+      "vc:label": "Vercel"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accessibility",
+      "vc:label": "Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:checkpoints",
+      "vc:label": "Checkpoints"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+      "vc:label": "Deepfakes and fraudulent content"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt",
+      "vc:label": "GPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt-engineer",
+      "vc:label": "GPT Engineer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graphing",
+      "vc:label": "Knowledge Graphing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:language-modeling",
+      "vc:label": "Language Modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-space",
+      "vc:label": "latent space"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "vc:label": "LoRA DoRA etc"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microsoft-copilot",
+      "vc:label": "Microsoft Copilot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
+      "vc:label": "NVIDIA Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-webui-and-pipelines",
+      "vc:label": "Open Webui and Pipelines"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:player-two",
+      "vc:label": "PlayerTwo"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:product-design",
+      "vc:label": "Product Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time",
+      "vc:label": "Real Time"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:should",
+      "vc:label": "SHOULD"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "vc:label": "Social contract and jobs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:speech-and-voice",
+      "vc:label": "Speech and Voice"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:translation",
+      "vc:label": "Translation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ca2e8d0aeb3e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#TextGeneration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0374"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Text Generation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:text-generation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:text-generation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:351a23b4b129a9a0fbd982a7a8993f45cddd2d34759bd0500d7ef1b109240a99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:text-generation",
+  "@type": "OntologyClass",
+  "label": "Text Generation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:language-modeling",
+      "vc:label": "Language Modeling"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:351a23b4b129a9a0fbd982a7a8993f45cddd2d34759bd0500d7ef1b109240a99"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:351a23b4b129a9a0fbd982a7a8993f45cddd2d34759bd0500d7ef1b109240a99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:text-generation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:351a23b4b129a9a0fbd982a7a8993f45cddd2d34759bd0500d7ef1b109240a99"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[automation]]",
+      "resolved": "urn:visionflow:linked:automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large Language Model]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[neural networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[organisation]]",
+      "resolved": "urn:visionflow:linked:organisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vercel]]",
+      "resolved": "urn:visionflow:linked:vercel",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accessibility]]",
+      "resolved": "urn:visionflow:owl:class:accessibility",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agent Frameworks]]",
+      "resolved": "urn:visionflow:owl:class:agent-frameworks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[artificial intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Checkpoints]]",
+      "resolved": "urn:visionflow:owl:class:checkpoints",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deepfakes and fraudulent content]]",
+      "resolved": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GPT]]",
+      "resolved": "urn:visionflow:owl:class:gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GPT Engineer]]",
+      "resolved": "urn:visionflow:owl:class:gpt-engineer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graphing]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Language Modeling]]",
+      "resolved": "urn:visionflow:owl:class:language-modeling",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[latent space]]",
+      "resolved": "urn:visionflow:owl:class:latent-space",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LoRA DoRA etc]]",
+      "resolved": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microsoft Copilot]]",
+      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NVIDIA Omniverse]]",
+      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Open Webui and Pipelines]]",
+      "resolved": "urn:visionflow:owl:class:open-webui-and-pipelines",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PlayerTwo]]",
+      "resolved": "urn:visionflow:owl:class:player-two",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Product Design]]",
+      "resolved": "urn:visionflow:owl:class:product-design",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Real Time]]",
+      "resolved": "urn:visionflow:owl:class:real-time",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SHOULD]]",
+      "resolved": "urn:visionflow:owl:class:should",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social contract and jobs]]",
+      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Speech and Voice]]",
+      "resolved": "urn:visionflow:owl:class:speech-and-voice",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Translation]]",
+      "resolved": "urn:visionflow:owl:class:translation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:351a23b4b129a9a0fbd982a7a8993f45cddd2d34759bd0500d7ef1b109240a99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.
@@ -271,7 +754,7 @@ public:: true
   - [[Vercel]] provides front-end [[Infrastructure]] to allow developers to build fast, dynamic websites and applications efficiently at global scale. Its open source Next.js framework powers many leading AI products' user interfaces.
   - Vercel's new vZero product allows developers to visually iterate on UIs with AI assistance.
   - [Demo/Tutorial: v0 by Vercel AI Code Generation (youtube.com)](https://www.youtube.com/watch?v=gi5nnOqzHeQ)
-  - AI code auto-completion tools like [[Microsoft CoPilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft CoPilot]] leverages [[ChatGPT]] 4 and is extremely good.
+  - AI code auto-completion tools like [[Microsoft Copilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft Copilot]] leverages [[ChatGPT]] 4 and is extremely good.
   - AI will likely be incorporated into most software products going forward to enhance capabilities and engagement. Some experiences are better suited to standalone interfaces rather than cramming functionality into chatbots.
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.
@@ -360,7 +843,7 @@ public:: true
 
   - ### Logseq
 		- **Logseq**: is very similar to Obsidian, but self hosted and open source. It works on top of plain text files stored in a local system. It supports markdown and Org-mode formatting and allows for hierarchical and networked note-taking. It can be connected to it's mobile app via github.
-		- Integration to [[Large language models]] can be OpenAI or local.
+		- Integration to [[Large Language Models]] can be OpenAI or local.
 			- Compare notion, obsidian, and logseq, using a simply markdown table with coloured dots
 		- [ChatGPT Logseq Summarizer (openai.com)](https://chat.openai.com/g/g-3ooWV51Sb-logseq-summarizer)
 		- ![Screenshot 2024-01-06 120253.png](assets/Screenshot_2024-01-06_120253_1706020225813_0.png)
@@ -496,15 +979,15 @@ public:: true
   - Krisp is a software application designed to improve the productivity of online meetings by using AI-powered voice clarity and a meeting assistant to cancel background noise, echo, and accent localization. It works on both Mac and Windows platforms and processes only the user's voice on their device, unlike other solutions that transmit voice over the internet. Krisp offers a free forever plan with no credit card required and is trusted by global brands. The insights gathered from calls can be viewed by the user to improve their communication skills over time. Krisp has received recognition from various prestigious awards such as America's Most Promising AI Companies and has been awarded for its quality of support and ease of use. Krisp also offers SDK for developers, pricing and plans, and use cases such as contact centers and enterprise. The company prioritizes customers' privacy, security and offers accessible support, including video tutorials and a help center. By accepting all cookies, users consent to the storing of cookies on their device to enhance site navigation, analyze site usage and assist in the company's marketing efforts. https://krisp.ai/
   - Cleanvoice AI is an artificial intelligence platform that assists users in editing their podcasts or audio recordings. The platform offers various features such as filler sound removal, mouth sound removal, stutter removal, and Deadair remover to make the audio recording more professional. Cleanvoice AI is multilingual and can detect filler sounds in multiple languages, including accents from various countries. The platform also allows for manual editing with assistance and offers tools like podcast mixing and background noise remover. Users can try Cleanvoice AI for free for 30 minutes without providing credit card details. However, users must accept the platform's cookie policy to use the service. https://cleanvoice.ai/
   - The article discusses the potential of Central Intelligent Agents (CIAs) and the role of large language models (LLMs) and other next-generation AI technologies in enabling them. It highlights the need for businesses to have a cross-functional team, ethical guidelines, and clear objectives in deploying their own CIA. The article also suggests steps to build a solid foundation for deploying a CIA, assess organizational readiness, assemble a cross-functional team, define objectives, develop the CIA components and evaluate its performance while continuing to learn and adapt. The author discusses the potential of AI tools and voice assistants in transforming the way businesses interact with their customers and suggests that the advent of advanced AI technologies has revolutionized the shift of businesses towards a more personalized and ethically responsible approach to engaging with their customers. Finally, the article ends by highlighting the importance of experimenting through crisis and providing expert guidance tailored to specific business needs. https://www.linkedin.com/pulse/central-intelligent-agent-enabling-next-generation-james-poulter?
-  - [TensorSpeech/TensorFlowTTS: :stuck_out_tongue_closed_eyes: TensorFlowTTS: Real-Time State-of-the-art Speech Synthesis for Tensorflow 2 (supported including English, French, Korean, Chinese, German and Easy to adapt for other languages)](https://github.com/TensorSpeech/TensorFlowTTS) [[Translation]] [[Accessibility]] [[Speech and voice]] [[Speech and voice]]
-  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and voice]] [[Social contract and jobs]]
-  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and voice]] transcription locally [[SHOULD]]
-  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and voice]] fast speech engine [[SHOULD]]
-  - [[Speech and voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
-  - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and voice]] [[Speech and voice]] [[Product Design]] [[Real Time]]
-  - https://demo.hume.ai/? [[Speech and voice]] [[Large language models]] empathetic voice to voice
-  - [[Speech and voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
-  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse]] [[Speech and voice]] primer and demo.
+  - [TensorSpeech/TensorFlowTTS: :stuck_out_tongue_closed_eyes: TensorFlowTTS: Real-Time State-of-the-art Speech Synthesis for Tensorflow 2 (supported including English, French, Korean, Chinese, German and Easy to adapt for other languages)](https://github.com/TensorSpeech/TensorFlowTTS) [[Translation]] [[Accessibility]] [[Speech and Voice]] [[Speech and Voice]]
+  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and Voice]] [[Social contract and jobs]]
+  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and Voice]] transcription locally [[SHOULD]]
+  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[SHOULD]]
+  - [[Speech and Voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
+  - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and Voice]] [[Speech and Voice]] [[Product Design]] [[Real Time]]
+  - https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Models]] empathetic voice to voice
+  - [[Speech and Voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
+  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse]] [[Speech and Voice]] primer and demo.
 
   - ### Birme image resizer
 		- [2 hour tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc&t=34)
@@ -833,7 +1316,7 @@ public:: true
   - [[Vercel]] provides front-end [[Infrastructure]] to allow developers to build fast, dynamic websites and applications efficiently at global scale. Its open source Next.js framework powers many leading AI products' user interfaces.
   - Vercel's new vZero product allows developers to visually iterate on UIs with AI assistance.
   - [Demo/Tutorial: v0 by Vercel AI Code Generation (youtube.com)](https://www.youtube.com/watch?v=gi5nnOqzHeQ)
-  - AI code auto-completion tools like [[Microsoft CoPilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft CoPilot]] leverages [[ChatGPT]] 4 and is extremely good.
+  - AI code auto-completion tools like [[Microsoft Copilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft Copilot]] leverages [[ChatGPT]] 4 and is extremely good.
   - AI will likely be incorporated into most software products going forward to enhance capabilities and engagement. Some experiences are better suited to standalone interfaces rather than cramming functionality into chatbots.
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.
@@ -922,7 +1405,7 @@ public:: true
 
   - ### Logseq
 		- **Logseq**: is very similar to Obsidian, but self hosted and open source. It works on top of plain text files stored in a local system. It supports markdown and Org-mode formatting and allows for hierarchical and networked note-taking. It can be connected to it's mobile app via github.
-		- Integration to [[Large language models]] can be OpenAI or local.
+		- Integration to [[Large Language Models]] can be OpenAI or local.
 			- Compare notion, obsidian, and logseq, using a simply markdown table with coloured dots
 		- [ChatGPT Logseq Summarizer (openai.com)](https://chat.openai.com/g/g-3ooWV51Sb-logseq-summarizer)
 		- ![Screenshot 2024-01-06 120253.png](assets/Screenshot_2024-01-06_120253_1706020225813_0.png)
@@ -1058,15 +1541,15 @@ public:: true
   - Krisp is a software application designed to improve the productivity of online meetings by using AI-powered voice clarity and a meeting assistant to cancel background noise, echo, and accent localization. It works on both Mac and Windows platforms and processes only the user's voice on their device, unlike other solutions that transmit voice over the internet. Krisp offers a free forever plan with no credit card required and is trusted by global brands. The insights gathered from calls can be viewed by the user to improve their communication skills over time. Krisp has received recognition from various prestigious awards such as America's Most Promising AI Companies and has been awarded for its quality of support and ease of use. Krisp also offers SDK for developers, pricing and plans, and use cases such as contact centers and enterprise. The company prioritizes customers' privacy, security and offers accessible support, including video tutorials and a help center. By accepting all cookies, users consent to the storing of cookies on their device to enhance site navigation, analyze site usage and assist in the company's marketing efforts. https://krisp.ai/
   - Cleanvoice AI is an artificial intelligence platform that assists users in editing their podcasts or audio recordings. The platform offers various features such as filler sound removal, mouth sound removal, stutter removal, and Deadair remover to make the audio recording more professional. Cleanvoice AI is multilingual and can detect filler sounds in multiple languages, including accents from various countries. The platform also allows for manual editing with assistance and offers tools like podcast mixing and background noise remover. Users can try Cleanvoice AI for free for 30 minutes without providing credit card details. However, users must accept the platform's cookie policy to use the service. https://cleanvoice.ai/
   - The article discusses the potential of Central Intelligent Agents (CIAs) and the role of large language models (LLMs) and other next-generation AI technologies in enabling them. It highlights the need for businesses to have a cross-functional team, ethical guidelines, and clear objectives in deploying their own CIA. The article also suggests steps to build a solid foundation for deploying a CIA, assess organizational readiness, assemble a cross-functional team, define objectives, develop the CIA components and evaluate its performance while continuing to learn and adapt. The author discusses the potential of AI tools and voice assistants in transforming the way businesses interact with their customers and suggests that the advent of advanced AI technologies has revolutionized the shift of businesses towards a more personalized and ethically responsible approach to engaging with their customers. Finally, the article ends by highlighting the importance of experimenting through crisis and providing expert guidance tailored to specific business needs. https://www.linkedin.com/pulse/central-intelligent-agent-enabling-next-generation-james-poulter?
-  - [TensorSpeech/TensorFlowTTS: :stuck_out_tongue_closed_eyes: TensorFlowTTS: Real-Time State-of-the-art Speech Synthesis for Tensorflow 2 (supported including English, French, Korean, Chinese, German and Easy to adapt for other languages)](https://github.com/TensorSpeech/TensorFlowTTS) [[Translation]] [[Accessibility]] [[Speech and voice]] [[Speech and voice]]
-  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and voice]] [[Social contract and jobs]]
-  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and voice]] transcription locally [[SHOULD]]
-  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and voice]] fast speech engine [[SHOULD]]
-  - [[Speech and voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
-  - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and voice]] [[Speech and voice]] [[Product Design]] [[Real Time]]
-  - https://demo.hume.ai/? [[Speech and voice]] [[Large language models]] empathetic voice to voice
-  - [[Speech and voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
-  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse]] [[Speech and voice]] primer and demo.
+  - [TensorSpeech/TensorFlowTTS: :stuck_out_tongue_closed_eyes: TensorFlowTTS: Real-Time State-of-the-art Speech Synthesis for Tensorflow 2 (supported including English, French, Korean, Chinese, German and Easy to adapt for other languages)](https://github.com/TensorSpeech/TensorFlowTTS) [[Translation]] [[Accessibility]] [[Speech and Voice]] [[Speech and Voice]]
+  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and Voice]] [[Social contract and jobs]]
+  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and Voice]] transcription locally [[SHOULD]]
+  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[SHOULD]]
+  - [[Speech and Voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
+  - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and Voice]] [[Speech and Voice]] [[Product Design]] [[Real Time]]
+  - https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Models]] empathetic voice to voice
+  - [[Speech and Voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
+  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse]] [[Speech and Voice]] primer and demo.
 
   - ### Birme image resizer
 		- [2 hour tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc&t=34)
@@ -1228,7 +1711,7 @@ public:: true
 		- ![Screenshot 2024-01-18 102807.png](assets/Screenshot_2024-01-18_102807_1706020247381_0.png)
   - [AI-Powered Search: Embedding-Based Retrieval and Retrieval-Augmented Generation (RAG) | by Daniel Tunkelang | Apr, 2024 | Medium](https://dtunkelang.medium.com/ai-powered-search-embedding-based-retrieval-and-retrieval-augmented-generation-rag-cabeaba26a8b)
   - [AutoRAG documentation (marker-inc-korea.github.io)](https://marker-inc-korea.github.io/AutoRAG/index.html)
-  - [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large language models]] [[Infrastructure]] [[Knowledge Graphing]]
+  - [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Models]] [[Infrastructure]] [[Knowledge Graphing]]
   - [turbopuffer](https://turbopuffer.com/) [[Knowledge Graphing]] serverless vector database
   - Using [[agents]] over [[Knowledge Graphing]] [Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT! | by James Nguyen | Nov, 2023 | Medium](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
   - [[ChatGPT]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
@@ -1307,7 +1790,7 @@ public:: true
 
   - ### Multi-Modal Large Language Models (LLMs)
   - **Introduction:**
-		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+		- [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 
   - ## **April 2024**
   - 1 Apr, *Do Language Models Plan Ahead for Future Tokens?*, [https://arxiv.org/abs/2404.00859](https://substack.com/redirect/674dfd1a-800a-4cfd-9e67-e7d8bdf45570?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA)

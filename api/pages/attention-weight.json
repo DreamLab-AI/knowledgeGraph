@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:7a4acc9eef31246577bd0585054c055e1afc9ed69a39c0592361ee56e10c75c7",
+  "title": "Attention Weight",
+  "slug": "attention-weight",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:attention-weight",
+  "domain": "artificial-intelligence",
+  "definition": "Weights computed by attention mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    }
+  ]
+}

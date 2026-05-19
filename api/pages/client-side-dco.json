@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:83f3611a5a6e9f1b2c0158dd591f2a5dbb7de68826826ed499a45f4f5c150df2",
+  "title": "Client side DCO",
+  "slug": "client-side-dco",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:client-side-dco",
+  "domain": "infrastructure",
+  "definition": "Client side DCO is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "latent-space",
+      "label": "latent space"
+    },
+    {
+      "slug": "multimodal",
+      "label": "Multimodal"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ],
+  "backlinks": []
+}

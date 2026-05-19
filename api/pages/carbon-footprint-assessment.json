@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:a7636ababbbe78acccdacc82501a1bd38e190c02898d0939a7ebddbb664b2a63",
+  "title": "Carbon Footprint Assessment",
+  "slug": "carbon-footprint-assessment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-footprint-assessment",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive evaluation methodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:environmental-assessment",
+      "label": "Environmental Assessment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:boundary-definition",
+        "label": "Boundary Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "id": "urn:visionflow:linked:lifecycle-data",
+        "label": "Lifecycle Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:hotspot-identification",
+        "label": "Hotspot Identification"
+      },
+      {
+        "id": "urn:visionflow:linked:impact-quantification",
+        "label": "Impact Quantification"
+      },
+      {
+        "id": "urn:visionflow:linked:reduction-strategy",
+        "label": "Reduction Strategy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "boundary-definition",
+      "label": "Boundary Definition"
+    },
+    {
+      "slug": "emission-factors",
+      "label": "Emission Factors"
+    },
+    {
+      "slug": "hotspot-identification",
+      "label": "Hotspot Identification"
+    },
+    {
+      "slug": "impact-quantification",
+      "label": "Impact Quantification"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "lifecycle-data",
+      "label": "Lifecycle Data"
+    },
+    {
+      "slug": "reduction-strategy",
+      "label": "Reduction Strategy"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "environmental-assessment",
+      "label": "Environmental Assessment"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "environmental-sustainability-label",
+      "label": "Environmental Sustainability Label"
+    }
+  ]
+}

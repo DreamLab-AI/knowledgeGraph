@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:ed7eb5a28dac39d58d20f25a53e3f152a63f473b3d5198aa676945044f6411a7",
+  "title": "Machine Learning Models",
+  "slug": "machine-learning-models",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:machine-learning-models",
+  "domain": "artificial-intelligence",
+  "definition": "Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-decision-making",
+        "label": "Automated Decision Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-decision-making",
+      "label": "Automated Decision Making"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "behavioral-learning",
+      "label": "Behavioral Learning"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ]
+}

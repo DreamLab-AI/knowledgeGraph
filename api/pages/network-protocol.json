@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:b3e94a63b968823a0f27714b9a90dcb328ceb0a7d96429125efb53f6e6bf6174",
+  "title": "Network Protocol",
+  "slug": "network-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:network-protocol",
+  "domain": "distributed-collaboration",
+  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures such as the OSI model (7 layers) and TCP/IP model (4 layers), each layer handling specific aspects of network communication.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-transmission",
+        "label": "Data Transmission"
+      },
+      {
+        "id": "urn:visionflow:linked:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-transmission",
+      "label": "Data Transmission"
+    },
+    {
+      "slug": "network-communication",
+      "label": "Network Communication"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:0061e220f0577b9f22dce06b395ae4d26efaaea8bc4ae7d6a2a1bc74ecc1dc91",
+  "title": "Driver Software",
+  "slug": "driver-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:driver-software",
+  "domain": "spatial-computing",
+  "definition": "System-level software components that enable communication between operating systems and extended reality (XR) hardware devices, translating high-level application commands into hardware-specific instructions for VR headsets, AR glasses, haptic controllers, and spatial computing peripherals.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:system-software",
+      "label": "System Software"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:extended-reality-xr",
+        "label": "Extended Reality Xr"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality Xr"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-software",
+      "label": "System Software"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    }
+  ]
+}

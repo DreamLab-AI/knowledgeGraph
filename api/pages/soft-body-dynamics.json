@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cdbcc3f538d5723c60a9aa2ce722af2f817d76527aeb21ad7425fe85e1d6f664",
+  "title": "Soft Body Dynamics",
+  "slug": "soft-body-dynamics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:soft-body-dynamics",
+  "domain": "spatial-computing",
+  "definition": "Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "game-physics",
+      "label": "Game Physics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    }
+  ]
+}

@@ -1,21 +1,432 @@
-iri:: http://narrativegoldmine.com/blockchain#PharmaceuticalTraceability
-uri:: urn:visionclaw:concept:blockchain:pharmaceutical-traceability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:pharmaceutical-traceability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Pharmaceutical Traceability
-content-hash:: sha256-12-0ac567049b4b
-legacy-term-id:: BC-0442
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.92
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#PharmaceuticalTraceability
+legacy_uri:: urn:visionclaw:concept:blockchain:pharmaceutical-traceability
 public:: true
+
+# Pharmaceutical Traceability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c",
+  "@type": "Page",
+  "vc:slug": "pharmaceutical-traceability",
+  "title": "Pharmaceutical Traceability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:accenture",
+      "vc:label": "Accenture"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "vc:label": "BC-0013-smart-contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0023-zero-knowledge-proofs",
+      "vc:label": "BC-0023-zero-knowledge-proofs"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "vc:label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0044-supply-chain-management",
+      "vc:label": "BC-0044-supply-chain-management"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "vc:label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "vc:label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "vc:label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "vc:label": "BC-0441-provenance-tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0443-food-safety-blockchain",
+      "vc:label": "BC-0443-food-safety-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:chronicled",
+      "vc:label": "Chronicled"
+    },
+    {
+      "@id": "urn:visionflow:linked:corda",
+      "vc:label": "Corda"
+    },
+    {
+      "@id": "urn:visionflow:linked:dhl",
+      "vc:label": "DHL"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethereum-enterprise-alliance",
+      "vc:label": "Ethereum Enterprise Alliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:farma-trust",
+      "vc:label": "FarmaTrust"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:modum",
+      "vc:label": "Modum"
+    },
+    {
+      "@id": "urn:visionflow:linked:pharmaceutical-commerce-association",
+      "vc:label": "Pharmaceutical Commerce Association"
+    },
+    {
+      "@id": "urn:visionflow:linked:pill-pack",
+      "vc:label": "PillPack"
+    },
+    {
+      "@id": "urn:visionflow:linked:rf-xcel",
+      "vc:label": "rfXcel"
+    },
+    {
+      "@id": "urn:visionflow:linked:sap-information-collaboration-hub-for-life-sciences",
+      "vc:label": "SAP Information Collaboration Hub for Life Sciences"
+    },
+    {
+      "@id": "urn:visionflow:linked:trace-link",
+      "vc:label": "TraceLink"
+    },
+    {
+      "@id": "urn:visionflow:linked:trace-link-opus-platform",
+      "vc:label": "TraceLink Opus Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:triall",
+      "vc:label": "Triall"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.92"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0ac567049b4b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#PharmaceuticalTraceability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0442"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Pharmaceutical Traceability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:pharmaceutical-traceability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:pharmaceutical-traceability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:pharmaceutical-traceability",
+  "@type": "OntologyClass",
+  "label": "Pharmaceutical Traceability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the £200 billion counterfeit medicine market causing over 1 million deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network's 150+ million verification transactions (Pfizer, McKesson, AmerisourceBergen), and delivering 40-60% verification cost reductions whilst providing cold chain monitoring, clinical trial supply management, and controlled substance tracking.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.92",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:pharmaceutical-traceability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Accenture]]",
+      "resolved": "urn:visionflow:linked:accenture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0013-smart-contracts]]",
+      "resolved": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0023-zero-knowledge-proofs]]",
+      "resolved": "urn:visionflow:linked:bc-0023-zero-knowledge-proofs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0029-permissioned-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0044-supply-chain-management]]",
+      "resolved": "urn:visionflow:linked:bc-0044-supply-chain-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0067-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0432-consortium-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0434-blockchain-as-a-service]]",
+      "resolved": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0441-provenance-tracking]]",
+      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0443-food-safety-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0443-food-safety-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chronicled]]",
+      "resolved": "urn:visionflow:linked:chronicled",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Corda]]",
+      "resolved": "urn:visionflow:linked:corda",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DHL]]",
+      "resolved": "urn:visionflow:linked:dhl",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethereum Enterprise Alliance]]",
+      "resolved": "urn:visionflow:linked:ethereum-enterprise-alliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FarmaTrust]]",
+      "resolved": "urn:visionflow:linked:farma-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Internet of Things]]",
+      "resolved": "urn:visionflow:linked:internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Modum]]",
+      "resolved": "urn:visionflow:linked:modum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pharmaceutical Commerce Association]]",
+      "resolved": "urn:visionflow:linked:pharmaceutical-commerce-association",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PillPack]]",
+      "resolved": "urn:visionflow:linked:pill-pack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[rfXcel]]",
+      "resolved": "urn:visionflow:linked:rf-xcel",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SAP Information Collaboration Hub for Life Sciences]]",
+      "resolved": "urn:visionflow:linked:sap-information-collaboration-hub-for-life-sciences",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TraceLink]]",
+      "resolved": "urn:visionflow:linked:trace-link",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TraceLink Opus Platform]]",
+      "resolved": "urn:visionflow:linked:trace-link-opus-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Triall]]",
+      "resolved": "urn:visionflow:linked:triall",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the £200 billion counterfeit medicine market causing over 1 million deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network's 150+ million verification transactions (Pfizer, McKesson, AmerisourceBergen), and delivering 40-60% verification cost reductions whilst providing cold chain monitoring, clinical trial supply management, and controlled substance tracking.

@@ -1,0 +1,145 @@
+{
+  "id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07",
+  "title": "Agricultural Robot",
+  "slug": "agricultural-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agricultural-robot",
+  "domain": "robotics",
+  "definition": "**Agricultural Robot** - A semi-autonomous or fully autonomous platform equipped with [[Precision Agriculture Sensors]], [[Manipulation Modules]], and [[Crop Analysis Systems]] for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising soil disturbance and chemical usage.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:service-robot",
+      "label": "Service Robot"
+    }
+  ],
+  "qualityScore": 0.53,
+  "authorityScore": 0.11,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:environmental-sensors",
+        "label": "Environmental Sensors"
+      },
+      {
+        "id": "urn:visionflow:linked:terrain-navigation",
+        "label": "Terrain Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:crop-quality-improvement",
+        "label": "Crop Quality Improvement"
+      },
+      {
+        "id": "urn:visionflow:linked:labour-cost-reduction",
+        "label": "Labour Cost Reduction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "crop-analysis-systems",
+      "label": "Crop Analysis Systems"
+    },
+    {
+      "slug": "crop-quality-improvement",
+      "label": "Crop Quality Improvement"
+    },
+    {
+      "slug": "environmental-sensors",
+      "label": "Environmental Sensors"
+    },
+    {
+      "slug": "iso-18497",
+      "label": "ISO 18497"
+    },
+    {
+      "slug": "iso-18497-2018",
+      "label": "ISO 18497:2018"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "labour-cost-reduction",
+      "label": "Labour Cost Reduction"
+    },
+    {
+      "slug": "manipulation-modules",
+      "label": "Manipulation Modules"
+    },
+    {
+      "slug": "precision-agriculture-sensors",
+      "label": "Precision Agriculture Sensors"
+    },
+    {
+      "slug": "precision-agriculture-system",
+      "label": "Precision Agriculture System"
+    },
+    {
+      "slug": "sustainable-farming",
+      "label": "Sustainable Farming"
+    },
+    {
+      "slug": "terrain-navigation",
+      "label": "Terrain Navigation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "environmental-sustainability",
+      "label": "Environmental Sustainability"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "service-robot",
+      "label": "Service Robot"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:ac4de16dfe47f483e4601f7bdcee0a713d8ea897209045a9c8342af6d7d57d42",
+  "title": "TELE 001 telepresence",
+  "slug": "tele-001-telepresence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tele-001-telepresence",
+  "domain": "distributed-collaboration",
+  "definition": "T E L E 001 telepresence is a concept within the telecollaboration domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-avatars",
+      "label": "AI Avatars"
+    },
+    {
+      "slug": "augmented-reality-collaboration",
+      "label": "Augmented Reality Collaboration"
+    },
+    {
+      "slug": "haptic-feedback-telepresence",
+      "label": "Haptic Feedback Telepresence"
+    },
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "media-richness-theory",
+      "label": "Media Richness Theory"
+    },
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "slug": "robotic-telepresence",
+      "label": "Robotic Telepresence"
+    },
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    },
+    {
+      "slug": "social-presence-theory",
+      "label": "Social Presence Theory"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "label": "Virtual Reality Telepresence"
+    }
+  ]
+}

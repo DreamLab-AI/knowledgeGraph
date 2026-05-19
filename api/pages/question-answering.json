@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:4e888c6d49e226875977fb5732f8037b4113a12dc958da5da74e9c3e367e191e",
+  "title": "Question Answering",
+  "slug": "question-answering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:question-answering",
+  "domain": "artificial-intelligence",
+  "definition": "Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA). QA systems employ reading comprehension models, retrieval-augmented generation, and knowledge reasoning to power applications including search engines, virtual assistants, and customer support.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "scalability",
+      "label": "scalability"
+    },
+    {
+      "slug": "untitled",
+      "label": "\ud83e\udd16"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "research-tools",
+      "label": "Research Tools"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

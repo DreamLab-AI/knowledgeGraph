@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:30c6ffd9b5e7a46aff9c2207efc9763998678677269df0b4ec789ea25f692ccb",
+  "title": "rb 0034 repeatability",
+  "slug": "rb-0034-repeatability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0034-repeatability",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,219 @@
+{
+  "id": "urn:visionflow:page:0d0cc52e62a45e7a4bbc4129cffdf9e075b473bb0a8d4168ea5a5a6763192d89",
+  "title": "Digital Ritual",
+  "slug": "digital-ritual",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-ritual",
+  "domain": "spatial-computing",
+  "definition": "A structured virtual ceremonial process that recreates, adapts, or innovates traditional ritual practices in metaverse environments, enabling communities to perform symbolic cultural, religious, or social ceremonies through coordinated digital performances, shared virtual spaces, and meaningful participant interactions. bridges-to:: [[Telecollaboration]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-community-practice",
+      "label": "Virtual Community Practice"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ceremonial-space",
+        "label": "Ceremonial Space"
+      },
+      {
+        "id": "urn:visionflow:linked:community-bonding",
+        "label": "Community Bonding"
+      },
+      {
+        "id": "urn:visionflow:linked:ritual-design",
+        "label": "Ritual Design"
+      },
+      {
+        "id": "urn:visionflow:linked:symbolic-enactment",
+        "label": "Symbolic Enactment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:participant-coordination",
+        "label": "Participant Coordination"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ritual-artifact",
+        "label": "Ritual Artifact"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audio-visual-environment",
+        "label": "Audio-Visual Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronization-protocol",
+        "label": "Synchronization Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:symbolic-object-library",
+        "label": "Symbolic Object Library"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:commemoration-event",
+        "label": "Commemoration Event"
+      },
+      {
+        "id": "urn:visionflow:linked:cultural-festival",
+        "label": "Cultural Festival"
+      },
+      {
+        "id": "urn:visionflow:linked:initiation-rite",
+        "label": "Initiation Rite"
+      },
+      {
+        "id": "urn:visionflow:linked:memorial-service",
+        "label": "Memorial Service"
+      },
+      {
+        "id": "urn:visionflow:linked:religious-ceremony",
+        "label": "Religious Ceremony"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-wedding",
+        "label": "Virtual Wedding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audio-visual-environment",
+      "label": "Audio-Visual Environment"
+    },
+    {
+      "slug": "ceremonial-space",
+      "label": "Ceremonial Space"
+    },
+    {
+      "slug": "commemoration-event",
+      "label": "Commemoration Event"
+    },
+    {
+      "slug": "community-bonding",
+      "label": "Community Bonding"
+    },
+    {
+      "slug": "cultural-expression-system",
+      "label": "Cultural Expression System"
+    },
+    {
+      "slug": "cultural-festival",
+      "label": "Cultural Festival"
+    },
+    {
+      "slug": "cultural-protocol",
+      "label": "Cultural Protocol"
+    },
+    {
+      "slug": "digital-religion-studies",
+      "label": "Digital Religion Studies"
+    },
+    {
+      "slug": "event-orchestration",
+      "label": "Event Orchestration"
+    },
+    {
+      "slug": "initiation-rite",
+      "label": "Initiation Rite"
+    },
+    {
+      "slug": "memorial-service",
+      "label": "Memorial Service"
+    },
+    {
+      "slug": "religious-ceremony",
+      "label": "Religious Ceremony"
+    },
+    {
+      "slug": "ritual-design",
+      "label": "Ritual Design"
+    },
+    {
+      "slug": "symbolic-enactment",
+      "label": "Symbolic Enactment"
+    },
+    {
+      "slug": "synchronization-protocol",
+      "label": "Synchronization Protocol"
+    },
+    {
+      "slug": "virtual-worlds-research",
+      "label": "Virtual Worlds Research"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "community-governance",
+      "label": "Community Governance"
+    },
+    {
+      "slug": "participant-authentication",
+      "label": "Participant Authentication"
+    },
+    {
+      "slug": "participant-coordination",
+      "label": "Participant Coordination"
+    },
+    {
+      "slug": "ritual-artifact",
+      "label": "Ritual Artifact"
+    },
+    {
+      "slug": "symbolic-object-library",
+      "label": "Symbolic Object Library"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-community-practice",
+      "label": "Virtual Community Practice"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "virtual-wedding",
+      "label": "Virtual Wedding"
+    },
+    {
+      "slug": "virtual-world-platform",
+      "label": "Virtual World Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    }
+  ]
+}

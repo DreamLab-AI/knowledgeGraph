@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e",
+  "title": "Universal Manifest",
+  "slug": "universal-manifest",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:universal-manifest",
+  "domain": "spatial-computing",
+  "definition": "A standardized metadata document describing identifiers, permissions, relationships, and provenance of a user's digital assets and identities across platforms, enabling cross-platform portability and interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:identity-credentials",
+        "label": "Identity Credentials"
+      },
+      {
+        "id": "urn:visionflow:linked:permission-grants",
+        "label": "Permission Grants"
+      },
+      {
+        "id": "urn:visionflow:linked:provenance-record",
+        "label": "Provenance Record"
+      },
+      {
+        "id": "urn:visionflow:linked:relationship-graph",
+        "label": "Relationship Graph"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-registry",
+        "label": "Asset Registry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:visionflow:linked:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralized-ownership",
+        "label": "Decentralized Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:permissioned-access",
+        "label": "Permissioned Access"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-interoperability",
+      "label": "Asset Interoperability"
+    },
+    {
+      "slug": "asset-management-system",
+      "label": "Asset Management System"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "decentralized-ownership",
+      "label": "Decentralized Ownership"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "identity-credentials",
+      "label": "Identity Credentials"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
+      "slug": "msf-use-case-register",
+      "label": "MSF Use Case Register"
+    },
+    {
+      "slug": "permission-grants",
+      "label": "Permission Grants"
+    },
+    {
+      "slug": "permissioned-access",
+      "label": "Permissioned Access"
+    },
+    {
+      "slug": "provenance-record",
+      "label": "Provenance Record"
+    },
+    {
+      "slug": "relationship-graph",
+      "label": "Relationship Graph"
+    },
+    {
+      "slug": "trust-registry",
+      "label": "Trust Registry"
+    },
+    {
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust And Governance Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    }
+  ]
+}

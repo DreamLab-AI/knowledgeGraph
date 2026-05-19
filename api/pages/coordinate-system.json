@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:fedf61f7ad48445d44fee31c2c64df03c591966843b3364e5763a397f6fd3364",
+  "title": "Coordinate System",
+  "slug": "coordinate-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:coordinate-system",
+  "domain": "spatial-computing",
+  "definition": "Coordinate System is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    },
+    {
+      "slug": "spatial-coordinates",
+      "label": "Spatial Coordinates"
+    },
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

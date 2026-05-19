@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:1b238e06d5ea949ca98fbfe8123c50f8f8675875a2f539b10e73b8e17642fdaa",
+  "title": "Cross Attention",
+  "slug": "cross-attention",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cross-attention",
+  "domain": "artificial-intelligence",
+  "definition": "An attention mechanism where queries come from one sequence whilst keys and values come from a different sequence, enabling information flow between the encoder and decoder in sequence-to-sequence models.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iclr",
+      "label": "ICLR"
+    },
+    {
+      "slug": "ieee-transactions-on-medical-imaging",
+      "label": "IEEE Transactions on Medical Imaging"
+    },
+    {
+      "slug": "kno-where",
+      "label": "KnoWhere"
+    },
+    {
+      "slug": "vaswani-et-al-transformers",
+      "label": "Vaswani et al. Transformers"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "people",
+      "label": "PEOPLE"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

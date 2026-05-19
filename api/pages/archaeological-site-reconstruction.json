@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:1520231202e0c3f48d783ec863d8d0dc04ad8683b0bde895f29677ca9c79a280",
+  "title": "Archaeological Site Reconstruction",
+  "slug": "archaeological-site-reconstruction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:archaeological-site-reconstruction",
+  "domain": "spatial-computing",
+  "definition": "Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic simulations of historical environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-heritage",
+      "label": "Digital Heritage"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:historical-research",
+        "label": "Historical Research"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:educational-experiences",
+        "label": "Educational Experiences"
+      },
+      {
+        "id": "urn:visionflow:linked:heritage-preservation",
+        "label": "Heritage Preservation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "educational-experiences",
+      "label": "Educational Experiences"
+    },
+    {
+      "slug": "heritage-preservation",
+      "label": "Heritage Preservation"
+    },
+    {
+      "slug": "historical-research",
+      "label": "Historical Research"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-heritage",
+      "label": "Digital Heritage"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "virtual-tourism",
+      "label": "Virtual Tourism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    }
+  ]
+}

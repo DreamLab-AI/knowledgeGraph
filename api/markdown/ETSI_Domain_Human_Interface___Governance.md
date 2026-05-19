@@ -1,21 +1,276 @@
-iri:: http://narrativegoldmine.com/metaverse#ETSIDomainHumanInterfaceGovernance
-uri:: urn:visionclaw:concept:artificial-intelligence:etsidomainhumaninterfacegovernance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomainhumaninterfacegovernance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: ETSI_Domain_Human_Interface___Governance
-content-hash:: sha256-12-3ece9f33ad4f
-legacy-term-id:: MV-2001
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ETSIDomainHumanInterfaceGovernance
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:etsidomainhumaninterfacegovernance
 public:: true
+
+# ETSI_Domain_Human_Interface___Governance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-human-interface-governance",
+  "title": "ETSI_Domain_Human_Interface___Governance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-governance",
+      "vc:label": "DecentralisedGovernance"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi",
+      "vc:label": "ETSI"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-mec-032",
+      "vc:label": "ETSI GR MEC 032"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-23257",
+      "vc:label": "ISO 23257"
+    },
+    {
+      "@id": "urn:visionflow:linked:role-based-access",
+      "vc:label": "RoleBasedAccess"
+    },
+    {
+      "@id": "urn:visionflow:linked:wcag-2-1",
+      "vc:label": "WCAG 2.1"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consent-management",
+      "vc:label": "ConsentManagement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:policy-enforcement",
+      "vc:label": "PolicyEnforcement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "VirtualEnvironment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3ece9f33ad4f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ETSIDomainHumanInterfaceGovernance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomainhumaninterfacegovernance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomainhumaninterfacegovernance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-human-interface-governance",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Human_Interface___Governance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]]. This specialised domain combines [[DecentralisedGovernance]], [[RoleBasedAccess]], [[ConsentManagement]], and [[PolicyEnforcement]] to establish accountable, transparent participation structures.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-human-interface-governance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[DecentralisedGovernance]]",
+      "resolved": "urn:visionflow:linked:decentralised-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI]]",
+      "resolved": "urn:visionflow:linked:etsi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR MEC 032]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 23257]]",
+      "resolved": "urn:visionflow:linked:iso-23257",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RoleBasedAccess]]",
+      "resolved": "urn:visionflow:linked:role-based-access",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WCAG 2.1]]",
+      "resolved": "urn:visionflow:linked:wcag-2-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConsentManagement]]",
+      "resolved": "urn:visionflow:owl:class:consent-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PolicyEnforcement]]",
+      "resolved": "urn:visionflow:owl:class:policy-enforcement",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEnvironment|virtual environments]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]]. This specialised domain combines [[DecentralisedGovernance]], [[RoleBasedAccess]], [[ConsentManagement]], and [[PolicyEnforcement]] to establish accountable, transparent participation structures.

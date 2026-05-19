@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c",
+  "title": "Confidential Computing",
+  "slug": "confidential-computing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:confidential-computing",
+  "domain": "artificial-intelligence",
+  "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, operating systems, hypervisors, and cloud providers. This approach addresses the three states of data protection by extending encryption beyond data at rest (storage encryption) and data in transit (TLS/network encryption) to data in use (memory encryption during active computation), implementing secure enclaves that are isolated memory regions with hardware-enforced access controls preventing external observation or modification even by ring-0 privileged code. Hardware technologies enabling confidential computing include Intel SGX (Software Guard Extensions) providing application-level enclaves with encrypted memory up to 256MB protected from OS and hypervisor inspection, AMD SEV (Secure Encrypted Virtualization) offering VM-level protection encrypting entire virtual machine memory with VM-specific keys inaccessible to hypervisor, ARM TrustZone partitioning processor into secure and normal w",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "amd-sev",
+      "label": "AMD SEV"
+    },
+    {
+      "slug": "confidential-computing-consortium",
+      "label": "Confidential Computing Consortium"
+    },
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

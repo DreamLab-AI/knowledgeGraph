@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:d3b66f40b8fb9b5ada655daa1265f3bd635e86650549045757468c8960b45c7a",
+  "title": "Procedural Texture",
+  "slug": "procedural-texture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:procedural-texture",
+  "domain": "spatial-computing",
+  "definition": "Algorithmically generated pattern used to simulate surface detail without stored images, computed on-demand using mathematical functions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:render-pipeline",
+      "label": "Render Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:noise-function",
+        "label": "Noise Function"
+      },
+      {
+        "id": "urn:visionflow:linked:pattern-generator",
+        "label": "Pattern Generator"
+      },
+      {
+        "id": "urn:visionflow:linked:shader-code",
+        "label": "Shader Code"
+      },
+      {
+        "id": "urn:visionflow:owl:class:parameter-set",
+        "label": "Parameter Set"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-shader",
+        "label": "GPU Shader"
+      },
+      {
+        "id": "urn:visionflow:linked:mathematical-functions",
+        "label": "Mathematical Functions"
+      },
+      {
+        "id": "urn:visionflow:linked:texture-coordinates",
+        "label": "Texture Coordinates"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-surface-detail",
+        "label": "Dynamic Surface Detail"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-efficient-texturing",
+        "label": "Memory Efficient Texturing"
+      },
+      {
+        "id": "urn:visionflow:linked:procedural-materials",
+        "label": "Procedural Materials"
+      },
+      {
+        "id": "urn:visionflow:linked:resolution-independent-graphics",
+        "label": "Resolution Independent Graphics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dynamic-surface-detail",
+      "label": "Dynamic Surface Detail"
+    },
+    {
+      "slug": "gpu-shader",
+      "label": "GPU Shader"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "mathematical-functions",
+      "label": "Mathematical Functions"
+    },
+    {
+      "slug": "memory-efficient-texturing",
+      "label": "Memory Efficient Texturing"
+    },
+    {
+      "slug": "noise-function",
+      "label": "Noise Function"
+    },
+    {
+      "slug": "pattern-generator",
+      "label": "Pattern Generator"
+    },
+    {
+      "slug": "procedural-materials",
+      "label": "Procedural Materials"
+    },
+    {
+      "slug": "resolution-independent-graphics",
+      "label": "Resolution Independent Graphics"
+    },
+    {
+      "slug": "shader-code",
+      "label": "Shader Code"
+    },
+    {
+      "slug": "siggraph-graphics-glossary",
+      "label": "SIGGRAPH Graphics Glossary"
+    },
+    {
+      "slug": "texture-coordinates",
+      "label": "Texture Coordinates"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "parameter-set",
+      "label": "Parameter Set"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "shader-language",
+      "label": "Shader Language"
+    }
+  ],
+  "backlinks": []
+}

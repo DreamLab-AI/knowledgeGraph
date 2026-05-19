@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:4e23cdbbc7e2be17bbbbedda4f388917b619ca787295d005e5508345d4eaeb73",
+  "title": "rb 0041 inertia",
+  "slug": "rb-0041-inertia",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0041-inertia",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:newton-euler-dynamics",
+      "label": "Newton-Euler Dynamics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

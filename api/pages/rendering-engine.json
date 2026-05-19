@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:c3b310543e9ac79f3f4908eb8a8da164cd0035216e97981c3c7105522e6bb4ca",
+  "title": "Rendering Engine",
+  "slug": "rendering-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rendering-engine",
+  "domain": "spatial-computing",
+  "definition": "A rendering engine is software that generates 2D images or animations from 3D scene descriptions through rasterisation, ray tracing, or hybrid approaches. Modern real-time engines like Unreal Engine 5 and Unity employ advanced techniques including global illumination (Lumen), virtualised geometry (Nanite), neural rendering with RTX Tensor Cores, and DLSS upscaling to achieve cinematic-quality visuals at interactive frame rates.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "digital-content-layer",
+      "label": "Digital Content Layer"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "human-interface-layer-hil",
+      "label": "Human Interface Layer (HIL)"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    },
+    {
+      "slug": "visualization-layer",
+      "label": "Visualization Layer"
+    }
+  ]
+}

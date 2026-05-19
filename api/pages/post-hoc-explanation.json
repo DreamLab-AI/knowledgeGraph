@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:7f249215697b629ff1b771ed9b42f40129e4c27ffc3c3d6a0f972a3d45b9dba0",
+  "title": "Post Hoc Explanation",
+  "slug": "post-hoc-explanation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:post-hoc-explanation",
+  "domain": "artificial-intelligence",
+  "definition": "Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:explainability",
+      "label": "Explainability"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "counterfactual-explanation",
+      "label": "Counterfactual Explanation"
+    },
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "grad-cam",
+      "label": "Grad-CAM"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "model-agnostic-explanations",
+      "label": "Model-Agnostic Explanations"
+    },
+    {
+      "slug": "saliency-map",
+      "label": "Saliency Map"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "label": "Intrinsic Interpretability"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "label": "Intrinsic Interpretability"
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "id": "urn:visionflow:page:9853fde272d42b8dbcf0ed367844a6f084fe838a6042902539a7fa72ab404420",
+  "title": "Checkpoints",
+  "slug": "checkpoints",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:checkpoints",
+  "domain": "artificial-intelligence",
+  "definition": "Checkpoints are serialised snapshots of a machine-learning model's complete trainable state \u2014 weight tensors, optimiser moment accumulators, learning-rate schedules, gradient scalers, random-number-generator seeds, and epoch/step counters \u2014 persisted to durable storage at regular intervals during training so that: (a) training can resume after hardware failure or preemption without replaying all prior computation; (b) intermediate weight versions can be evaluated and compared before committing to a final release; (c) the best-performing weight configuration identified during a hyperparameter sweep can be recovered independently of the final training step; and (d) pre-trained representations can be shared and reused for downstream [[Transfer Learning]] and [[Fine-tuning]] tasks without distributing training code or data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:model-serialisation",
+      "label": "Model Serialisation"
+    },
+    {
+      "id": "urn:visionflow:linked:model-versioning",
+      "label": "Model Versioning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:training",
+      "label": "Training"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:checkpoint-index",
+        "label": "Checkpoint Index"
+      },
+      {
+        "id": "urn:visionflow:linked:ema-shadow-weights",
+        "label": "EMA Shadow Weights"
+      },
+      {
+        "id": "urn:visionflow:linked:optimiser-state",
+        "label": "Optimiser State"
+      },
+      {
+        "id": "urn:visionflow:linked:rng-state",
+        "label": "RNG State"
+      },
+      {
+        "id": "urn:visionflow:linked:shard-metadata",
+        "label": "Shard Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:step-counter",
+        "label": "Step Counter"
+      },
+      {
+        "id": "urn:visionflow:linked:weight-tensor",
+        "label": "Weight Tensor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:checkpoint-frequency-policy",
+        "label": "Checkpoint Frequency Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:serialisation-format",
+        "label": "Serialisation Format"
+      },
+      {
+        "id": "urn:visionflow:linked:training-loop",
+        "label": "Training Loop"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:checkpoint-averaging",
+        "label": "Checkpoint Averaging"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-training-recovery",
+        "label": "Distributed Training Recovery"
+      },
+      {
+        "id": "urn:visionflow:linked:experiment-reproducibility",
+        "label": "Experiment Reproducibility"
+      },
+      {
+        "id": "urn:visionflow:linked:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:visionflow:linked:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "id": "urn:visionflow:linked:training-resumption",
+        "label": "Training Resumption"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fine-tuning",
+        "label": "Fine-tuning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "id": "urn:visionflow:linked:fsdp",
+        "label": "FSDP"
+      },
+      {
+        "id": "urn:visionflow:linked:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "id": "urn:visionflow:linked:mlflow",
+        "label": "MLflow"
+      },
+      {
+        "id": "urn:visionflow:linked:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:visionflow:linked:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-flow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:visionflow:linked:weights-and-biases",
+        "label": "Weights and Biases"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "checkpoint-averaging",
+      "label": "Checkpoint Averaging"
+    },
+    {
+      "slug": "checkpoint-frequency-policy",
+      "label": "Checkpoint Frequency Policy"
+    },
+    {
+      "slug": "checkpoint-index",
+      "label": "Checkpoint Index"
+    },
+    {
+      "slug": "deep-speed",
+      "label": "DeepSpeed"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "distributed-training-recovery",
+      "label": "Distributed Training Recovery"
+    },
+    {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
+      "slug": "ema-shadow-weights",
+      "label": "EMA Shadow Weights"
+    },
+    {
+      "slug": "experiment-reproducibility",
+      "label": "Experiment Reproducibility"
+    },
+    {
+      "slug": "experiment-tracking",
+      "label": "Experiment Tracking"
+    },
+    {
+      "slug": "file-system",
+      "label": "File System"
+    },
+    {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
+      "slug": "gguf",
+      "label": "GGUF"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "hugging-face-hub",
+      "label": "Hugging Face Hub"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "linux-foundation",
+      "label": "Linux Foundation"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "mlflow",
+      "label": "MLflow"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "mlops-domain",
+      "label": "MLOpsDomain"
+    },
+    {
+      "slug": "model-distillation",
+      "label": "Model Distillation"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "model-serialisation",
+      "label": "Model Serialisation"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "model-versioning",
+      "label": "Model Versioning"
+    },
+    {
+      "slug": "neural-machine-translation",
+      "label": "Neural Machine Translation"
+    },
+    {
+      "slug": "on-the-fly-training",
+      "label": "On-the-fly Training"
+    },
+    {
+      "slug": "onnx",
+      "label": "ONNX"
+    },
+    {
+      "slug": "optimiser-state",
+      "label": "Optimiser State"
+    },
+    {
+      "slug": "peft",
+      "label": "PEFT"
+    },
+    {
+      "slug": "persistent-storage",
+      "label": "Persistent Storage"
+    },
+    {
+      "slug": "pickle",
+      "label": "Pickle"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "py-torch-foundation",
+      "label": "PyTorch Foundation"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "rng-state",
+      "label": "RNG State"
+    },
+    {
+      "slug": "safetensors",
+      "label": "Safetensors"
+    },
+    {
+      "slug": "saved-model",
+      "label": "SavedModel"
+    },
+    {
+      "slug": "serialisation",
+      "label": "Serialisation"
+    },
+    {
+      "slug": "serialisation-format",
+      "label": "Serialisation Format"
+    },
+    {
+      "slug": "shard-metadata",
+      "label": "Shard Metadata"
+    },
+    {
+      "slug": "stateless-execution",
+      "label": "Stateless Execution"
+    },
+    {
+      "slug": "step-counter",
+      "label": "Step Counter"
+    },
+    {
+      "slug": "streaming-inference",
+      "label": "Streaming Inference"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "torch-script",
+      "label": "TorchScript"
+    },
+    {
+      "slug": "training-layer",
+      "label": "TrainingLayer"
+    },
+    {
+      "slug": "training-loop",
+      "label": "Training Loop"
+    },
+    {
+      "slug": "training-resumption",
+      "label": "Training Resumption"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "weight-tensor",
+      "label": "Weight Tensor"
+    },
+    {
+      "slug": "weights-and-biases",
+      "label": "Weights and Biases"
+    },
+    {
+      "slug": "ze-ro",
+      "label": "ZeRO"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-tuning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-rate-schedule",
+      "label": "Learning Rate Schedule"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-architecture",
+      "label": "Model Architecture"
+    },
+    {
+      "slug": "optimiser",
+      "label": "Optimiser"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "StorageLayer"
+    },
+    {
+      "slug": "training",
+      "label": "Training"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468",
+  "title": "Avatar Creation",
+  "slug": "avatar-creation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-creation",
+  "domain": "spatial-computing",
+  "definition": "Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-identity-creation",
+      "label": "Digital Identity Creation"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-modeling-tools",
+        "label": "3D Modeling Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-generation-systems",
+        "label": "AI Generation Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:customization-interfaces",
+        "label": "Customization Interfaces"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-persona-management",
+        "label": "Digital Persona Management"
+      },
+      {
+        "id": "urn:visionflow:linked:metaverse-participation",
+        "label": "Metaverse Participation"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-self-expression",
+        "label": "Virtual Self-Expression"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-modeling-tools",
+      "label": "3D Modeling Tools"
+    },
+    {
+      "slug": "ai-generation-systems",
+      "label": "AI Generation Systems"
+    },
+    {
+      "slug": "customization-interfaces",
+      "label": "Customization Interfaces"
+    },
+    {
+      "slug": "digital-identity-creation",
+      "label": "Digital Identity Creation"
+    },
+    {
+      "slug": "digital-persona-management",
+      "label": "Digital Persona Management"
+    },
+    {
+      "slug": "metaverse-participation",
+      "label": "Metaverse Participation"
+    },
+    {
+      "slug": "virtual-self-expression",
+      "label": "Virtual Self-Expression"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    }
+  ]
+}

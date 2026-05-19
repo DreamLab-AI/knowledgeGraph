@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:0dea95a36a9cb630baa2268c55f5aed36aaf1f692c67f0891bcf3c54025f9503",
+  "title": "Installation and display tech",
+  "slug": "installation-and-display-tech",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:installation-and-display-tech",
+  "domain": "infrastructure",
+  "definition": "Installation and display tech is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ],
+  "backlinks": []
+}

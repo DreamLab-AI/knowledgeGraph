@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:51e3c92943d0c2021e9211d62a43171eb150875d3b49645ebe867926414d14d0",
+  "title": "ETSI_Domain_Human_Interface___UX",
+  "slug": "etsi-domain-human-interface-ux",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-human-interface-ux",
+  "domain": "spatial-computing",
+  "definition": "An [[ETSI]] subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in [[VirtualEnvironment|immersive digital environments]]. This specialisation covers [[DesignPrinciples]], [[UsabilityTesting]], [[AccessibilityCompliance]], and [[InclusiveUXDesign]] ensuring equitable digital participation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-compliance",
+      "label": "AccessibilityCompliance"
+    },
+    {
+      "slug": "design-principles",
+      "label": "DesignPrinciples"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "etsi-gr-arf-007",
+      "label": "ETSI GR ARF 007"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "inclusive-uxdesign",
+      "label": "InclusiveUXDesign"
+    },
+    {
+      "slug": "iso-9241-110",
+      "label": "ISO 9241-110"
+    },
+    {
+      "slug": "usability-testing",
+      "label": "UsabilityTesting"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "VirtualEnvironment"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,21 +1,516 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#TelecollaborationAndTelepresenceDomain
-uri:: urn:visionclaw:concept:distributed-collaboration:telecollaboration-and-telepresence-domain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:telecollaboration-and-telepresence-domain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Telecollaboration and Telepresence Domain
-content-hash:: sha256-12-4bc936bf917a
-legacy-term-id:: TC-0303
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#TelecollaborationAndTelepresenceDomain
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:telecollaboration-and-telepresence-domain
 public:: true
+
+# Telecollaboration and Telepresence Domain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8b30940b460030aa13c8422881a5804ceae51407f8bdb7b5a1666e5d16f0d6cb",
+  "@type": "Page",
+  "vc:slug": "telecollaboration-and-telepresence-domain",
+  "title": "Telecollaboration and Telepresence Domain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-003-social-presence-theory",
+      "vc:label": "TELE-003-social-presence-theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-004-media-richness-theory",
+      "vc:label": "TELE-004-media-richness-theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-005-common-ground-theory",
+      "vc:label": "TELE-005-common-ground-theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-006-presence",
+      "vc:label": "TELE-006-presence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-021-augmented-reality-collaboration",
+      "vc:label": "TELE-021-augmented-reality-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-022-mixed-reality-platforms",
+      "vc:label": "TELE-022-mixed-reality-platforms"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-023-meta-quest-platform",
+      "vc:label": "TELE-023-meta-quest-platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-024-apple-vision-pro-platform",
+      "vc:label": "TELE-024-apple-vision-pro-platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-025-microsoft-hololens",
+      "vc:label": "TELE-025-microsoft-hololens"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "vc:label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "vc:label": "TELE-050-neural-rendering-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-051-3d-gaussian-splatting",
+      "vc:label": "TELE-051-3d-gaussian-splatting"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-052-neural-radiance-fields",
+      "vc:label": "TELE-052-neural-radiance-fields"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
+      "vc:label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "vc:label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "vc:label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-110-spatial-audio-processing",
+      "vc:label": "TELE-110-spatial-audio-processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-151-real-time-protocols",
+      "vc:label": "TELE-151-real-time-protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-152-low-latency-networking",
+      "vc:label": "TELE-152-low-latency-networking"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "vc:label": "TELE-153-5g-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-200-robotic-telepresence",
+      "vc:label": "TELE-200-robotic-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-201-teleoperation-systems",
+      "vc:label": "TELE-201-teleoperation-systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "vc:label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-250-blockchain-collaboration",
+      "vc:label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "vc:label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "vc:label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-300-digital-twin-collaboration",
+      "vc:label": "TELE-300-digital-twin-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "vc:label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "vc:label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-work",
+      "vc:label": "DistributedWork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-technology",
+      "vc:label": "ImmersiveTechnology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4bc936bf917a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#TelecollaborationAndTelepresenceDomain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0303"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:telecollaboration-and-telepresence-domain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:telecollaboration-and-telepresence-domain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8b30940b460030aa13c8422881a5804ceae51407f8bdb7b5a1666e5d16f0d6cb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:telecollaboration-and-telepresence-domain",
+  "@type": "OntologyClass",
+  "label": "Telecollaboration and Telepresence Domain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8b30940b460030aa13c8422881a5804ceae51407f8bdb7b5a1666e5d16f0d6cb"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8b30940b460030aa13c8422881a5804ceae51407f8bdb7b5a1666e5d16f0d6cb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Telecollaboration and Telepresence Domain is a concept within the tc domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:immersive-technology",
+      "vc:label": "ImmersiveTechnology"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-work",
+      "vc:label": "DistributedWork"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:telecollaboration-and-telepresence-domain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8b30940b460030aa13c8422881a5804ceae51407f8bdb7b5a1666e5d16f0d6cb"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[TELE-002-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-003-social-presence-theory]]",
+      "resolved": "urn:visionflow:linked:tele-003-social-presence-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-004-media-richness-theory]]",
+      "resolved": "urn:visionflow:linked:tele-004-media-richness-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-005-common-ground-theory]]",
+      "resolved": "urn:visionflow:linked:tele-005-common-ground-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-006-presence]]",
+      "resolved": "urn:visionflow:linked:tele-006-presence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-021-augmented-reality-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-021-augmented-reality-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-022-mixed-reality-platforms]]",
+      "resolved": "urn:visionflow:linked:tele-022-mixed-reality-platforms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-023-meta-quest-platform]]",
+      "resolved": "urn:visionflow:linked:tele-023-meta-quest-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-024-apple-vision-pro-platform]]",
+      "resolved": "urn:visionflow:linked:tele-024-apple-vision-pro-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-025-microsoft-hololens]]",
+      "resolved": "urn:visionflow:linked:tele-025-microsoft-hololens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-026-microsoft-mesh]]",
+      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-050-neural-rendering-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-051-3d-gaussian-splatting]]",
+      "resolved": "urn:visionflow:linked:tele-051-3d-gaussian-splatting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-052-neural-radiance-fields]]",
+      "resolved": "urn:visionflow:linked:tele-052-neural-radiance-fields",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-053-volumetric-video-conferencing]]",
+      "resolved": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-105-real-time-language-translation]]",
+      "resolved": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-107-ai-meeting-assistants]]",
+      "resolved": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-110-spatial-audio-processing]]",
+      "resolved": "urn:visionflow:linked:tele-110-spatial-audio-processing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-151-real-time-protocols]]",
+      "resolved": "urn:visionflow:linked:tele-151-real-time-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-152-low-latency-networking]]",
+      "resolved": "urn:visionflow:linked:tele-152-low-latency-networking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-153-5g-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-200-robotic-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-200-robotic-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-201-teleoperation-systems]]",
+      "resolved": "urn:visionflow:linked:tele-201-teleoperation-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-250-blockchain-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-250-blockchain-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-251-smart-contract-coordination]]",
+      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-252-dao-governance-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-300-digital-twin-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-300-digital-twin-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-301-virtual-office-spaces]]",
+      "resolved": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-302-shared-whiteboards]]",
+      "resolved": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DistributedWork]]",
+      "resolved": "urn:visionflow:owl:class:distributed-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ImmersiveTechnology]]",
+      "resolved": "urn:visionflow:owl:class:immersive-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TELE-001-telepresence]]",
+      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8b30940b460030aa13c8422881a5804ceae51407f8bdb7b5a1666e5d16f0d6cb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Telecollaboration and Telepresence Domain is a concept within the tc domain.

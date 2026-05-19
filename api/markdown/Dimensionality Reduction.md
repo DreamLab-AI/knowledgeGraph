@@ -1,21 +1,259 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#DimensionalityReduction
-uri:: urn:visionclaw:concept:artificial-intelligence:dimensionality-reduction
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:dimensionality-reduction
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Dimensionality Reduction
-content-hash:: sha256-12-8bec41ad0bb5
-legacy-term-id:: AI-1021
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#DimensionalityReduction
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:dimensionality-reduction
 public:: true
+
+# Dimensionality Reduction
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9",
+  "@type": "Page",
+  "vc:slug": "dimensionality-reduction",
+  "title": "Dimensionality Reduction",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:computational-efficiency",
+      "vc:label": "Computational Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:linked:curse-of-dimensionality",
+      "vc:label": "Curse of Dimensionality"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-visualization",
+      "vc:label": "Data Visualization"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-selection",
+      "vc:label": "Feature Selection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8bec41ad0bb5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#DimensionalityReduction"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1021"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Dimensionality Reduction"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:dimensionality-reduction"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:dimensionality-reduction"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:dimensionality-reduction",
+  "@type": "OntologyClass",
+  "label": "Dimensionality Reduction",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Dimensionality Reduction is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:data-visualization",
+      "vc:label": "Data Visualization"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:dimensionality-reduction:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Computational Efficiency]]",
+      "resolved": "urn:visionflow:linked:computational-efficiency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Curse of Dimensionality]]",
+      "resolved": "urn:visionflow:linked:curse-of-dimensionality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Visualization]]",
+      "resolved": "urn:visionflow:linked:data-visualization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Feature Selection]]",
+      "resolved": "urn:visionflow:linked:feature-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feature Engineering]]",
+      "resolved": "urn:visionflow:owl:class:feature-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Unsupervised Learning]]",
+      "resolved": "urn:visionflow:owl:class:unsupervised-learning",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Dimensionality Reduction is a concept within the ai domain.

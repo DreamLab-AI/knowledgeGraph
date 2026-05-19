@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:42c70ec07c30e85fb0075464d410916d311378e9c668a84a040e259ddf30bc06",
+  "title": "Robot Actuator",
+  "slug": "robot-actuator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-actuator",
+  "domain": "robotics",
+  "definition": "Robot Actuator is a concept within the robotics domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    }
+  ]
+}

@@ -1,21 +1,280 @@
-iri:: http://narrativegoldmine.com/infrastructure#DigitalIdentity
-uri:: urn:visionclaw:concept:infrastructure:digital-identity
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:digital-identity
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Digital Identity
-content-hash:: sha256-12-256e07f46bd8
-legacy-term-id:: MV-9860
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DigitalIdentity
+legacy_uri:: urn:visionclaw:concept:infrastructure:digital-identity
 public:: true
+
+# Digital Identity
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:72e524c6383fe447ea9c31555ea22d5b18c67dae0a2c2d8b224e751e58b2719a",
+  "@type": "Page",
+  "vc:slug": "digital-identity",
+  "title": "Digital Identity",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:authentication",
+      "vc:label": "Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:authorization",
+      "vc:label": "Authorization"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-storage",
+      "vc:label": "Credential Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-presence",
+      "vc:label": "Digital Presence"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-controls",
+      "vc:label": "Privacy Controls"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity",
+      "vc:label": "Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-256e07f46bd8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DigitalIdentity"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9860"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Identity"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:digital-identity"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:digital-identity"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:72e524c6383fe447ea9c31555ea22d5b18c67dae0a2c2d8b224e751e58b2719a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-identity",
+  "@type": "OntologyClass",
+  "label": "Digital Identity",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:identity",
+      "vc:label": "Identity"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:72e524c6383fe447ea9c31555ea22d5b18c67dae0a2c2d8b224e751e58b2719a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:72e524c6383fe447ea9c31555ea22d5b18c67dae0a2c2d8b224e751e58b2719a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms. bridges-to:: [[DID Nostr Identity]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:credential-storage",
+      "vc:label": "Credential Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-controls",
+      "vc:label": "Privacy Controls"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:authentication",
+      "vc:label": "Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:authorization",
+      "vc:label": "Authorization"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-presence",
+      "vc:label": "Digital Presence"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-identity:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:72e524c6383fe447ea9c31555ea22d5b18c67dae0a2c2d8b224e751e58b2719a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Authentication]]",
+      "resolved": "urn:visionflow:linked:authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Authorization]]",
+      "resolved": "urn:visionflow:linked:authorization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Storage]]",
+      "resolved": "urn:visionflow:linked:credential-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Presence]]",
+      "resolved": "urn:visionflow:linked:digital-presence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy Controls]]",
+      "resolved": "urn:visionflow:linked:privacy-controls",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity]]",
+      "resolved": "urn:visionflow:owl:class:identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Verification]]",
+      "resolved": "urn:visionflow:owl:class:identity-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:72e524c6383fe447ea9c31555ea22d5b18c67dae0a2c2d8b224e751e58b2719a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.

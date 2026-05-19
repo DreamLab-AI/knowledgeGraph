@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:b9963886abf89bfbd0ccffd622cad0ccaf11f9ba0c6bd4db8dc96701f7a2dafe",
+  "title": "Toxicity Detection",
+  "slug": "toxicity-detection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:toxicity-detection",
+  "domain": "artificial-intelligence",
+  "definition": "Toxicity Detection is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:content-moderation",
+      "label": "Content Moderation"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    }
+  ],
+  "backlinks": []
+}

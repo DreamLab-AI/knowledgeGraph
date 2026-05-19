@@ -1,0 +1,239 @@
+{
+  "id": "urn:visionflow:page:9615518468d5d757ff50e0bb81cdb96ed73f124ac4bd3001c707669e88a78818",
+  "title": "Digital Constitution",
+  "slug": "digital-constitution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-constitution",
+  "domain": "spatial-computing",
+  "definition": "A foundational governance document establishing the core principles, rights, responsibilities, governance structures, and amendment procedures for a virtual society, serving as the supreme law and social contract for metaverse communities and digital platforms. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-society",
+      "label": "Virtual Society"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:amendment-procedure",
+        "label": "Amendment Procedure"
+      },
+      {
+        "id": "urn:visionflow:linked:bill-of-rights",
+        "label": "Bill of Rights"
+      },
+      {
+        "id": "urn:visionflow:linked:checks-and-balances",
+        "label": "Checks and Balances"
+      },
+      {
+        "id": "urn:visionflow:linked:constitutional-rights",
+        "label": "Constitutional Rights"
+      },
+      {
+        "id": "urn:visionflow:linked:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:judicial-system",
+        "label": "Judicial System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-citizenship",
+        "label": "Digital Citizenship"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-structure",
+        "label": "Governance Structure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:separation-of-powers",
+        "label": "Separation of Powers"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:legitimate-authority",
+        "label": "Legitimate Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-protection",
+        "label": "Rights Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:democratic-governance",
+        "label": "Democratic Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rule-of-law",
+        "label": "Rule of Law"
+      },
+      {
+        "id": "urn:visionflow:owl:class:social-contract",
+        "label": "Social Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "amendment-procedure",
+      "label": "Amendment Procedure"
+    },
+    {
+      "slug": "aragon-constitutional-framework",
+      "label": "Aragon Constitutional Framework"
+    },
+    {
+      "slug": "bill-of-rights",
+      "label": "Bill of Rights"
+    },
+    {
+      "slug": "checks-and-balances",
+      "label": "Checks and Balances"
+    },
+    {
+      "slug": "constitution-dao",
+      "label": "Constitution DAO"
+    },
+    {
+      "slug": "constitutional-rights",
+      "label": "Constitutional Rights"
+    },
+    {
+      "slug": "dispute-resolution-process",
+      "label": "Dispute Resolution Process"
+    },
+    {
+      "slug": "enforcement-mechanism",
+      "label": "Enforcement Mechanism"
+    },
+    {
+      "slug": "iso-37001-governance",
+      "label": "ISO 37001 Governance"
+    },
+    {
+      "slug": "judicial-system",
+      "label": "Judicial System"
+    },
+    {
+      "slug": "legitimate-authority",
+      "label": "Legitimate Authority"
+    },
+    {
+      "slug": "rights-protection",
+      "label": "Rights Protection"
+    },
+    {
+      "slug": "un-digital-rights-framework",
+      "label": "UN Digital Rights Framework"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "democratic-governance",
+      "label": "Democratic Governance"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "rule-of-law",
+      "label": "Rule of Law"
+    },
+    {
+      "slug": "separation-of-powers",
+      "label": "Separation of Powers"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "social-contract",
+      "label": "Social Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-society",
+      "label": "Virtual Society"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    }
+  ]
+}

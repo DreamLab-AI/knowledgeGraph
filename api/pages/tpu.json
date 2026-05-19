@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:02c19b1a9b6d3879ec3afd8b904a60e40b3370e26c807f593061029d6ce70541",
+  "title": "TPU",
+  "slug": "tpu",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tpu",
+  "domain": "artificial-intelligence",
+  "definition": "Tensor Processing Unit, Google's custom-developed application-specific integrated circuit (ASIC) optimized for neural network machine learning workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "groq",
+      "label": "Groq"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:01d84d09ec02f82d4726c044ee04e2550533dbd6e7afd04d8ec9f26c086a8bd6",
+  "title": "Virtual Community Platform",
+  "slug": "virtual-community-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-community-platform",
+  "domain": "spatial-computing",
+  "definition": "Spatial computing platforms that enable users to create and interact within immersive 3D virtual environments as digital avatars, supporting social interaction, community building, collaborative activities, and shared experiences across geographic boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    }
+  ]
+}

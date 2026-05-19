@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d",
+  "title": "ETSI Domain AI",
+  "slug": "etsi-domain-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Domain marker concept for categorising metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
+        "label": "ETSI Domain AI Creative Media"
+      },
+      {
+        "id": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
+        "label": "ETSI Domain AI Data Mgmt"
+      },
+      {
+        "id": "urn:visionflow:owl:class:etsi-domain-ai-governance",
+        "label": "ETSI Domain AI Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
+        "label": "ETSI Domain AI Human Interface"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-service-classification",
+        "label": "AI Service Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligence-layer-categorization",
+        "label": "Intelligence Layer Categorization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-service-classification",
+      "label": "AI Service Classification"
+    },
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "intelligence-layer-categorization",
+      "label": "Intelligence Layer Categorization"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "etsi-domain-ai-creative-media",
+      "label": "ETSI Domain AI Creative Media"
+    },
+    {
+      "slug": "etsi-domain-ai-data-mgmt",
+      "label": "ETSI Domain AI Data Mgmt"
+    },
+    {
+      "slug": "etsi-domain-ai-governance",
+      "label": "ETSI Domain AI Governance"
+    },
+    {
+      "slug": "etsi-domain-ai-human-interface",
+      "label": "ETSI Domain AI Human Interface"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ai-creative-media",
+      "label": "ETSI Domain AI + Creative Media"
+    },
+    {
+      "slug": "etsi-domain-ai-data-mgmt",
+      "label": "ETSI Domain AI + Data Mgmt"
+    },
+    {
+      "slug": "etsi-domain-ai-governance",
+      "label": "ETSI Domain AI + Governance"
+    },
+    {
+      "slug": "etsi-domain-ai-human-interface",
+      "label": "ETSI Domain AI + Human Interface"
+    }
+  ]
+}

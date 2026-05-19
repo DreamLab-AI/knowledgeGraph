@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:00b9271e1108bc6fbe5199c2eaf417d5ba5e12e01753c06882794e1f8b896557",
+  "title": "Node based visual interfaces",
+  "slug": "node-based-visual-interfaces",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:node-based-visual-interfaces",
+  "domain": "infrastructure",
+  "definition": "Node based visual interfaces is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "interfaces",
+      "label": "Interfaces"
+    }
+  ]
+}

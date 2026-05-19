@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:15b5d94bc41604fca6bea07eabffce1348827c615d8f1b3d00d74deb19d80c63",
+  "title": "Accounts",
+  "slug": "accounts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accounts",
+  "domain": "infrastructure",
+  "definition": "Accounts is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "tax",
+      "label": "Tax"
+    }
+  ]
+}

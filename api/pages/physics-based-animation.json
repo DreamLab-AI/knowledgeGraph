@@ -1,0 +1,155 @@
+{
+  "id": "urn:visionflow:page:6d020ea6ba9c41d2e94331bd8636567ec7ab1139835315ba4bb2f1e3d3aa9316",
+  "title": "Physics-Based Animation",
+  "slug": "physics-based-animation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:physics-based-animation",
+  "domain": "spatial-computing",
+  "definition": "Animation technique that computes object motion through real-time simulation of physical forces, gravity, collisions, and dynamics to create realistic movement and interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:real-time-rendering",
+      "label": "Real Time Rendering"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:collision-detection-system",
+        "label": "Collision Detection System"
+      },
+      {
+        "id": "urn:visionflow:linked:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:force-integrator",
+        "label": "Force Integrator"
+      },
+      {
+        "id": "urn:visionflow:linked:physics-simulation-engine",
+        "label": "Physics Simulation Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-transform-system",
+        "label": "3D Transform System"
+      },
+      {
+        "id": "urn:visionflow:linked:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cloth-simulation",
+        "label": "Cloth Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:ragdoll-physics",
+        "label": "Ragdoll Physics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:particle-systems",
+        "label": "Particle Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-transform-system",
+      "label": "3D Transform System"
+    },
+    {
+      "slug": "animation-controller",
+      "label": "Animation Controller"
+    },
+    {
+      "slug": "cloth-simulation",
+      "label": "Cloth Simulation"
+    },
+    {
+      "slug": "collision-detection-system",
+      "label": "Collision Detection System"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "force-integrator",
+      "label": "Force Integrator"
+    },
+    {
+      "slug": "numerical-integration",
+      "label": "Numerical Integration"
+    },
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
+    },
+    {
+      "slug": "ragdoll-physics",
+      "label": "Ragdoll Physics"
+    },
+    {
+      "slug": "siggraph-standards",
+      "label": "SIGGRAPH Standards"
+    },
+    {
+      "slug": "soft-body-simulation",
+      "label": "Soft Body Simulation"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "dynamic-character-animation",
+      "label": "Dynamic Character Animation"
+    },
+    {
+      "slug": "particle-systems",
+      "label": "Particle Systems"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "rigid-body-dynamics",
+      "label": "Rigid Body Dynamics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    }
+  ]
+}

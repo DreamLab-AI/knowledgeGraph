@@ -1,21 +1,216 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Tinyml
-uri:: urn:visionclaw:concept:artificial-intelligence:tinyml
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:tinyml
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: TinyML
-content-hash:: sha256-12-01f16cba7a7f
-legacy-term-id:: AI-0432
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Tinyml
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:tinyml
 public:: true
+
+# TinyML
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3",
+  "@type": "Page",
+  "vc:slug": "tiny-ml",
+  "title": "TinyML",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:mlperf-tiny",
+      "vc:label": "MLPerf Tiny"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow-lite-micro",
+      "vc:label": "TensorFlow Lite Micro"
+    },
+    {
+      "@id": "urn:visionflow:linked:tiny-ml-foundation",
+      "vc:label": "TinyML Foundation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-01f16cba7a7f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Tinyml"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0432"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "TinyML"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:tinyml"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:tinyml"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:tiny-ml",
+  "@type": "OntologyClass",
+  "label": "TinyML",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "TinyML is machine learning deployment on extremely resource-constrained microcontrollers with memory measured in kilobytes (typically 256KB RAM, 1MB flash storage), power consumption in milliwatts (under 1mW idle, a few mW active), and processing measured in MHz (typically 16-80MHz ARM Cortex-M cores), enabling intelligent inference at the extreme edge in battery-powered IoT devices, wearables, and embedded sensors. This paradigm enables always-on intelligent sensing at ultra-low power enabling applications infeasible with cloud connectivity including keyword spotting wake-word detection consuming under 1mW enabling multi-year battery life, gesture recognition processing accelerometer data locally for responsive interaction, anomaly detection in industrial sensors identifying equipment failures without connectivity, audio event classification recognizing sounds like glass breaking or baby crying for home automation, and predictive maintenance on rotating machinery analyzing vibration patterns to predict bearing failures. Implementation requires aggressive model optimization through INT8 quantization representing weights and activations in 8-bit integers (4x compression versus FP32)",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:tiny-ml:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[MLPerf Tiny]]",
+      "resolved": "urn:visionflow:linked:mlperf-tiny",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow Lite Micro]]",
+      "resolved": "urn:visionflow:linked:tensor-flow-lite-micro",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TinyML Foundation]]",
+      "resolved": "urn:visionflow:linked:tiny-ml-foundation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - TinyML is machine learning deployment on extremely resource-constrained microcontrollers with memory measured in kilobytes (typically 256KB RAM, 1MB flash storage), power consumption in milliwatts (under 1mW idle, a few mW active), and processing measured in MHz (typically 16-80MHz ARM Cortex-M cores), enabling intelligent inference at the extreme edge in battery-powered IoT devices, wearables, and embedded sensors. This paradigm enables always-on intelligent sensing at ultra-low power enabling applications infeasible with cloud connectivity including keyword spotting wake-word detection consuming under 1mW enabling multi-year battery life, gesture recognition processing accelerometer data locally for responsive interaction, anomaly detection in industrial sensors identifying equipment failures without connectivity, audio event classification recognizing sounds like glass breaking or baby crying for home automation, and predictive maintenance on rotating machinery analyzing vibration patterns to predict bearing failures. Implementation requires aggressive model optimization through INT8 quantization representing weights and activations in 8-bit integers (4x compression versus FP32), extreme pruning removing 70-95% of model weights while maintaining acceptable accuracy, knowledge distillation training compact student models mimicking larger teacher models, and architecture search discovering efficient neural architectures (MobileNet, EfficientNet variants) tailored for resource constraints. Key constraints include memory footprint where entire model must fit in RAM with typical limit 100KB for weights plus activation memory, computational budget constrained to deliver real-time inference within 10-50ms on CPUs without hardware accelerators, energy per inference typically 0.5mJ enabling 10,000+ inferences per mAh battery capacity, and fixed-point arithmetic as floating-point operations prohibitively expensive requiring software emulation or absent from hardware entirely. The TinyML ecosystem comprises frameworks including TensorFlow Lite for Microcontrollers (Google) supporting ARM Cortex-M deployment, Edge Impulse providing end-to-end workflow from data collection to deployment, uTensor enabling neural network inference on mbed-OS devices, and CMSIS-NN providing optimized neural network kernels for ARM Cortex-M processors, while benchmarks from MLPerf Tiny establish standardized metrics for comparing inference latency, accuracy, and energy consumption across TinyML implementations, with typical results showing 10ms keyword spotting inference consuming 0.5mJ on Cortex-M4 processors.

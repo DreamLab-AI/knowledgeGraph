@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:153347d40c95409f3255961c09da98df43600d651ba1db82336129d3a0e659bc",
+  "title": "Media Library",
+  "slug": "media-library",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:media-library",
+  "domain": "spatial-computing",
+  "definition": "Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-management",
+      "label": "Digital Asset Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-organisation",
+        "label": "Content Organisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-organisation",
+      "label": "Content Organisation"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    }
+  ]
+}

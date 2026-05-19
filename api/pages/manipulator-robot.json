@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:8ef6fd27ac02832d352c8e04ad0cd809ce918faa030a17d8b436b8dae76b0b4c",
+  "title": "Manipulator Robot",
+  "slug": "manipulator-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:manipulator-robot",
+  "domain": "robotics",
+  "definition": "Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robot",
+      "label": "Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "parallel-robot",
+      "label": "Parallel Robot"
+    }
+  ]
+}

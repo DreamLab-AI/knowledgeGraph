@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe",
+  "title": "Blockchain Sustainability",
+  "slug": "blockchain-sustainability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-sustainability",
+  "domain": "blockchain",
+  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies. Proof-of-Stake networks like Ethereum post-Merge achieve 99.9% energy reduction versus Proof-of-Work, while protocols like Algorand have achieved carbon-negative status.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:carbon-credit",
+        "label": "Carbon Credit"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "label": "Proof-of-Stake"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "carbon-credit",
+      "label": "Carbon Credit"
+    },
+    {
+      "slug": "esg-compliance",
+      "label": "ESG Compliance"
+    },
+    {
+      "slug": "green-finance",
+      "label": "Green Finance"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    }
+  ]
+}

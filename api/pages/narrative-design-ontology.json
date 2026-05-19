@@ -1,0 +1,190 @@
+{
+  "id": "urn:visionflow:page:8a64e635ed99ebd600e8927a656299afd39f107e0c5881ee1d278bb587d4e6a8",
+  "title": "Narrative Design Ontology",
+  "slug": "narrative-design-ontology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:narrative-design-ontology",
+  "domain": "spatial-computing",
+  "definition": "Formal ontology for modeling structured storytelling frameworks, interactive narratives, story graphs, character relationships, and branching narrative paths in digital and interactive media.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:branching-path",
+        "label": "Branching Path"
+      },
+      {
+        "id": "urn:visionflow:linked:plot-structure",
+        "label": "Plot Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:story-event",
+        "label": "Story Event"
+      },
+      {
+        "id": "urn:visionflow:linked:story-node",
+        "label": "Story Node"
+      },
+      {
+        "id": "urn:visionflow:owl:class:character-relationship-graph",
+        "label": "Character Relationship Graph"
+      },
+      {
+        "id": "urn:visionflow:owl:class:narrative-arc",
+        "label": "Narrative Arc"
+      },
+      {
+        "id": "urn:visionflow:owl:class:narrative-theme",
+        "label": "Narrative Theme"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:event-sequencing",
+        "label": "Event Sequencing"
+      },
+      {
+        "id": "urn:visionflow:linked:plot-graph-database",
+        "label": "Plot Graph Database"
+      },
+      {
+        "id": "urn:visionflow:owl:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dialogue-system",
+        "label": "Dialogue System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:interactive-fiction",
+        "label": "Interactive Fiction"
+      },
+      {
+        "id": "urn:visionflow:linked:procedural-story-generation",
+        "label": "Procedural Story Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:transmedia-storytelling",
+        "label": "Transmedia Storytelling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:game-narratives",
+        "label": "Game Narratives"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "branching-path",
+      "label": "Branching Path"
+    },
+    {
+      "slug": "dramatis-personae-ontology",
+      "label": "Dramatis Personae Ontology"
+    },
+    {
+      "slug": "event-sequencing",
+      "label": "Event Sequencing"
+    },
+    {
+      "slug": "interactive-fiction",
+      "label": "Interactive Fiction"
+    },
+    {
+      "slug": "interactive-storytelling-system",
+      "label": "Interactive Storytelling System"
+    },
+    {
+      "slug": "narrative-schema-org",
+      "label": "Narrative Schema.org"
+    },
+    {
+      "slug": "plot-graph-database",
+      "label": "Plot Graph Database"
+    },
+    {
+      "slug": "plot-structure",
+      "label": "Plot Structure"
+    },
+    {
+      "slug": "procedural-story-generation",
+      "label": "Procedural Story Generation"
+    },
+    {
+      "slug": "story-event",
+      "label": "Story Event"
+    },
+    {
+      "slug": "story-node",
+      "label": "Story Node"
+    },
+    {
+      "slug": "story-ontology",
+      "label": "Story Ontology"
+    },
+    {
+      "slug": "transmedia-storytelling",
+      "label": "Transmedia Storytelling"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "character-model",
+      "label": "Character Model"
+    },
+    {
+      "slug": "character-relationship-graph",
+      "label": "Character Relationship Graph"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "game-narratives",
+      "label": "Game Narratives"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "narrative-arc",
+      "label": "Narrative Arc"
+    },
+    {
+      "slug": "narrative-theme",
+      "label": "Narrative Theme"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "Procedural Generation"
+    }
+  ],
+  "backlinks": []
+}

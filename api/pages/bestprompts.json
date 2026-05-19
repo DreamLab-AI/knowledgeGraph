@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6",
+  "title": "bestprompts",
+  "slug": "bestprompts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bestprompts",
+  "domain": "infrastructure",
+  "definition": "bestprompts is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

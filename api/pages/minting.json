@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:71c84e50b6ac7c90d1f23797048c389ff0b8b70700c68719a42e89cdfcf38742",
+  "title": "Minting",
+  "slug": "minting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:minting",
+  "domain": "blockchain",
+  "definition": "New token creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:economic-mechanism",
+      "label": "EconomicMechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "economic-layer",
+      "label": "EconomicLayer"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "EconomicMechanism"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "TokenEconomicsDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:4583ca4598431ebeac2e7f354d83f3cce801d5c5768847236c703bf514f967bb",
+  "title": "Edge-Cloud Collaboration",
+  "slug": "edge-cloud-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:edge-cloud-collaboration",
+  "domain": "artificial-intelligence",
+  "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting, and hierarchical inference. This approach implements collaboration patterns including model splitting where neural networks are partitioned across edge and cloud with early layers on edge extracting features and final layers in cloud for classification enabling bandwidth reduction through compressed intermediate representations, early exit where models have multiple exit points enabling confident predictions to terminate early on edge while uncertain cases escalate to cloud balancing accuracy and latency, cascaded inference deploying lightweight model on edge as first-stage filter with complex model in cloud for challenging instances providing 60-80% latency reduction for common cases, and federated learning where edge devices collaboratively train shared model through local training and gradient aggregation without centralizing raw data. Optimization objectives balance competing goals inc",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aws-io-t-greengrass",
+      "label": "AWS IoT Greengrass"
+    },
+    {
+      "slug": "azure-io-t-edge",
+      "label": "Azure IoT Edge"
+    },
+    {
+      "slug": "etsi-mec",
+      "label": "ETSI MEC"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:c411e63e6a07316ab62d5e909bb56a30e850574003eb09981484096df22b90e5",
+  "title": "Metaverse Venue",
+  "slug": "metaverse-venue",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-venue",
+  "domain": "spatial-computing",
+  "definition": "Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:global-virtual-gatherings",
+        "label": "Global Virtual Gatherings"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "global-virtual-gatherings",
+      "label": "Global Virtual Gatherings"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    }
+  ]
+}

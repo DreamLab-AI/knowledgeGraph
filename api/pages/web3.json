@@ -1,0 +1,460 @@
+{
+  "id": "urn:visionflow:page:b8d948fb887eb4393b329691ee6da3e71c12098bdc8c5851687b5d59657713c1",
+  "title": "Web3",
+  "slug": "web3",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:web3",
+  "domain": "blockchain",
+  "definition": "Web3 is a blockchain-anchored paradigm for the decentralised web, first coined by Ethereum co-founder Gavin Wood in his April 2014 essay \"DApps: What Web 3.0 Looks Like\", that reconceives the internet as a zero-trust interaction system eliminating the need to trust any individual institution or platform. It assembles four architectural primitives: (1) trustless static content publication via content-addressed storage (IPFS, Filecoin), (2) a pseudonymous low-level messaging layer (Whisper / Waku), (3) a consensus engine executing programmable smart contracts on public blockchains (primarily Ethereum), and (4) an integrated user interface bridging browser-native wallets to on-chain state\u2014together enabling a \"read-write-own\" internet where users hold cryptographic keys to their own assets, identity, and data rather than delegating custody to centralised intermediaries. The dominant execution layer is Ethereum and its growing ecosystem of Layer 2 rollups (Arbitrum, Optimism, Base, zkSync); beyond the Ethereum stack, alternative ecosystems include Solana (high-throughput single-chain), Polkadot (Gavin Wood's substrate-based parachain relay), Cosmos (IBC interoperability), and Bitcoin's ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:crypto-wallet",
+        "label": "Crypto Wallet"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:visionflow:linked:dex",
+        "label": "DEX"
+      },
+      {
+        "id": "urn:visionflow:linked:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:visionflow:linked:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:visionflow:linked:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:visionflow:linked:restaking",
+        "label": "Restaking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-addressed-storage",
+        "label": "Content Addressed Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:eip-4361",
+        "label": "EIP-4361"
+      },
+      {
+        "id": "urn:visionflow:linked:eip-7702",
+        "label": "EIP-7702"
+      },
+      {
+        "id": "urn:visionflow:linked:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:visionflow:linked:erc-4337",
+        "label": "ERC-4337"
+      },
+      {
+        "id": "urn:visionflow:linked:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-did",
+        "label": "W3C DID"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "centralised-identity",
+      "label": "Centralised Identity"
+    },
+    {
+      "slug": "content-addressed-storage",
+      "label": "Content Addressed Storage"
+    },
+    {
+      "slug": "crypto-wallet",
+      "label": "Crypto Wallet"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-application",
+      "label": "Decentralised Application"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
+    },
+    {
+      "slug": "digital-identity-domain",
+      "label": "DigitalIdentityDomain"
+    },
+    {
+      "slug": "digital-sovereignty",
+      "label": "Digital Sovereignty"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "eigen-layer",
+      "label": "EigenLayer"
+    },
+    {
+      "slug": "eip-4361",
+      "label": "EIP-4361"
+    },
+    {
+      "slug": "eip-7702",
+      "label": "EIP-7702"
+    },
+    {
+      "slug": "ens",
+      "label": "ENS"
+    },
+    {
+      "slug": "erc-4337",
+      "label": "ERC-4337"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "meta-mask",
+      "label": "MetaMask"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "on-chain-governance",
+      "label": "On-chain Governance"
+    },
+    {
+      "slug": "open-zeppelin",
+      "label": "OpenZeppelin"
+    },
+    {
+      "slug": "p2-p-networking",
+      "label": "P2P Networking"
+    },
+    {
+      "slug": "phantom-wallet",
+      "label": "Phantom Wallet"
+    },
+    {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
+    },
+    {
+      "slug": "restaking",
+      "label": "Restaking"
+    },
+    {
+      "slug": "solid-project",
+      "label": "Solid Project"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-did",
+      "label": "W3C DID"
+    },
+    {
+      "slug": "web2",
+      "label": "Web2"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

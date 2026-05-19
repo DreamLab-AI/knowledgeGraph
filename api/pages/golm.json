@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:ee2d97fb30038e1c22113520480dfa77aed1ae047e41caa855c24ef5801e16cb",
+  "title": "GOLM",
+  "slug": "golm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:golm",
+  "domain": "infrastructure",
+  "definition": "GOLM is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

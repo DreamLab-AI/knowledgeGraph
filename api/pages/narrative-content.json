@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:9dbd5fac2a0d14909be1292835e35cdeeaa603bb802643f7a5180607cf732cfc",
+  "title": "Narrative Content",
+  "slug": "narrative-content",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:narrative-content",
+  "domain": "spatial-computing",
+  "definition": "Digital storytelling material that combines video, audio, images, text, and interactive elements to create immersive narrative experiences, enabling audiences to engage with stories through multiple media formats and increasingly through participatory technologies like VR, AR, and interactive video.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-content",
+      "label": "Digital Content"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-content",
+      "label": "Digital Content"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "personalized-virtual-experiences",
+      "label": "Personalized Virtual Experiences"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "emotional-immersion",
+      "label": "Emotional Immersion"
+    }
+  ]
+}

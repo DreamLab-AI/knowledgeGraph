@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:836f5c9030f0566d66d8e6626d9f3a9cd0198173f3c8acfa36a93a0a0cbf72df",
+  "title": "Liquid Proof of Stake",
+  "slug": "liquid-proof-of-stake",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:liquid-proof-of-stake",
+  "domain": "blockchain",
+  "definition": "A PoS variant allowing token holders to delegate their staking rights to validators (bakers) while retaining token ownership and liquidity.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

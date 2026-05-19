@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:a87e8403abbd843bfa0344b3c26f23f25105adf1774030d0b73d86c77acfa419",
+  "title": "Stigmergy",
+  "slug": "stigmergy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stigmergy",
+  "domain": "robotics",
+  "definition": "Indirect coordination mechanism in swarm robotics where agents communicate through environmental modifications, enabling emergent collective behavior without direct communication.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:swarm-robotics",
+      "label": "Swarm Robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-research",
+      "label": "Robotics Research"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    }
+  ]
+}

@@ -1,24 +1,216 @@
-iri:: http://narrativegoldmine.com/spatial-computing#MarketplaceIntegration
-uri:: urn:visionclaw:concept:spatial-computing:marketplace-integration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:marketplace-integration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Marketplace Integration
-content-hash:: sha256-12-dc8827703311
-legacy-term-id:: MV-9956
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#MarketplaceIntegration
+legacy_uri:: urn:visionclaw:concept:spatial-computing:marketplace-integration
 public:: true
+
+# Marketplace Integration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529",
+  "@type": "Page",
+  "vc:slug": "marketplace-integration",
+  "title": "Marketplace Integration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:metaverse-commerce",
+      "vc:label": "Metaverse Commerce"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-commerce",
+      "vc:label": "Digital Commerce"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dc8827703311"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#MarketplaceIntegration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9956"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Marketplace Integration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:marketplace-integration"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:marketplace-integration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:marketplace-integration",
+  "@type": "OntologyClass",
+  "label": "Marketplace Integration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-commerce",
+      "vc:label": "Digital Commerce"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Systems and APIs that connect metaverse platforms with NFT marketplaces, e-commerce platforms, and digital asset trading systems, enabling seamless buying, selling, and trading of virtual goods, real estate, and collectibles.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:metaverse-commerce",
+      "vc:label": "Metaverse Commerce"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:marketplace-integration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Metaverse Commerce]]",
+      "resolved": "urn:visionflow:linked:metaverse-commerce",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Commerce]]",
+      "resolved": "urn:visionflow:owl:class:digital-commerce",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Systems and APIs that connect metaverse platforms with NFT marketplaces, e-commerce platforms, and digital asset trading systems, enabling seamless buying, selling, and trading of virtual goods, real estate, and collectibles.

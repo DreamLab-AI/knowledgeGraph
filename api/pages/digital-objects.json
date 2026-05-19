@@ -1,0 +1,608 @@
+{
+  "id": "urn:visionflow:page:2e7d7cca113dbd28ad6b73e811497465e86d363007fa09050f800bff5d4de419",
+  "title": "Digital Objects",
+  "slug": "digital-objects",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-objects",
+  "domain": "infrastructure",
+  "definition": "**Digital Objects** is an umbrella ontology concept covering three closely-related but historically distinct senses of \"an addressable, transferable, identifiable unit of digital content\": (1) **Digital Object Architecture (DOA)**, the formal information-infrastructure paradigm proposed by Robert E. Kahn (CNRI, co-inventor of TCP/IP) and Robert Wilensky in 1995 and standardised as ITU-T Recommendation X.1255 (September 2013), which defines a digital object as a typed, structured entity bound to a globally unique persistent identifier (a Handle) carrying mutable metadata and immutable payload, resolved through a federated Global Handle Registry (GHR) operated by the DONA Foundation in Geneva with thirteen Multi-Primary Administrators (MPAs) including CNRI, IDF/DOI Foundation, ITU, the Chinese Academy of Sciences and the Korean Institute of Science and Technology Information, instantiated in production via the Handle System (RFC 3650/3651/3652), DOI (Digital Object Identifier, ISO 26324, >270 million registered DOIs across Crossref, DataCite, mEDRA, JaLC, KISTI, Airiti and Public.Resource.Org as of 2025), ARK (Archival Resource Key, California Digital Library, 8 billion+ identifiers)",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-artefact",
+      "label": "Digital Artefact"
+    },
+    {
+      "id": "urn:visionflow:linked:identified-entity",
+      "label": "Identified Entity"
+    },
+    {
+      "id": "urn:visionflow:linked:information-resource",
+      "label": "Information Resource"
+    },
+    {
+      "id": "urn:visionflow:linked:networked-resource",
+      "label": "Networked Resource"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:metadata-record",
+        "label": "Metadata Record"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-identifier",
+        "label": "Persistent Identifier"
+      },
+      {
+        "id": "urn:visionflow:linked:provenance-chain",
+        "label": "Provenance Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:resolution-endpoint",
+        "label": "Resolution Endpoint"
+      },
+      {
+        "id": "urn:visionflow:linked:transferable-rights",
+        "label": "Transferable Rights"
+      },
+      {
+        "id": "urn:visionflow:linked:typed-payload",
+        "label": "Typed Payload"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-binding",
+        "label": "Cryptographic Binding"
+      },
+      {
+        "id": "urn:visionflow:linked:identifier-registry",
+        "label": "Identifier Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:resolution-infrastructure",
+        "label": "Resolution Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-layer",
+        "label": "Storage Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:citation",
+        "label": "Citation"
+      },
+      {
+        "id": "urn:visionflow:linked:long-term-preservation",
+        "label": "Long-Term Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:royalty-automation",
+        "label": "Royalty Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-ordinals",
+        "label": "Bitcoin Ordinals"
+      },
+      {
+        "id": "urn:visionflow:linked:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:visionflow:linked:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:visionflow:linked:gl-tf-asset-specification",
+        "label": "glTF Asset Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:handle-system-protocol",
+        "label": "Handle System Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:usd-scene-description",
+        "label": "USD Scene Description"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ark",
+      "label": "ARK"
+    },
+    {
+      "slug": "arweave",
+      "label": "Arweave"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "bitcoin-ordinals",
+      "label": "Bitcoin Ordinals"
+    },
+    {
+      "slug": "buterin-hitzig-weyl-2022-decentralized-society-soulbound-tokens",
+      "label": "Buterin Hitzig Weyl 2022 Decentralized Society Soulbound Tokens"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "c2-pa-technical-specification-2-0",
+      "label": "C2PA Technical Specification 2.0"
+    },
+    {
+      "slug": "catlow-et-al-2017-artists-rethinking-the-blockchain",
+      "label": "Catlow et al. 2017 Artists Rethinking the Blockchain"
+    },
+    {
+      "slug": "chainalysis-2024-nft-market-report",
+      "label": "Chainalysis 2024 NFT Market Report"
+    },
+    {
+      "slug": "citation",
+      "label": "Citation"
+    },
+    {
+      "slug": "cryptographic-binding",
+      "label": "Cryptographic Binding"
+    },
+    {
+      "slug": "cultural-heritage",
+      "label": "Cultural Heritage"
+    },
+    {
+      "slug": "database-row",
+      "label": "Database Row"
+    },
+    {
+      "slug": "de-filippi-and-wright-2018-blockchain-and-the-law",
+      "label": "De Filippi & Wright 2018 Blockchain and the Law"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "digital-art",
+      "label": "Digital Art"
+    },
+    {
+      "slug": "digital-artefact",
+      "label": "Digital Artefact"
+    },
+    {
+      "slug": "digital-object-architecture",
+      "label": "Digital Object Architecture"
+    },
+    {
+      "slug": "digital-objects-nft",
+      "label": "Digital Objects (NFT)"
+    },
+    {
+      "slug": "digital-objects-spatial",
+      "label": "Digital Objects (Spatial)"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "distributed-hash-table",
+      "label": "Distributed Hash Table"
+    },
+    {
+      "slug": "dns",
+      "label": "DNS"
+    },
+    {
+      "slug": "doi",
+      "label": "DOI"
+    },
+    {
+      "slug": "entriken-et-al-2018-eip-721-nft-standard",
+      "label": "Entriken et al. 2018 EIP-721 NFT Standard"
+    },
+    {
+      "slug": "ephemeral-resource",
+      "label": "Ephemeral Resource"
+    },
+    {
+      "slug": "erc-1155",
+      "label": "ERC-1155"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "ethereum-erc-721",
+      "label": "Ethereum ERC-721"
+    },
+    {
+      "slug": "fairfield-2021-tokenized-nft-property",
+      "label": "Fairfield 2021 Tokenized NFT Property"
+    },
+    {
+      "slug": "filesystem-path",
+      "label": "Filesystem Path"
+    },
+    {
+      "slug": "galaxy-digital-2022-survey-of-nft-licenses",
+      "label": "Galaxy Digital 2022 Survey of NFT Licenses"
+    },
+    {
+      "slug": "gl-tf-asset-specification",
+      "label": "glTF Asset Specification"
+    },
+    {
+      "slug": "handle",
+      "label": "Handle"
+    },
+    {
+      "slug": "handle-system-protocol",
+      "label": "Handle System Protocol"
+    },
+    {
+      "slug": "hossfeld-et-al-2025-quality-of-experience-in-the-metaverse",
+      "label": "Hossfeld et al. 2025 Quality of Experience in the Metaverse"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "identified-entity",
+      "label": "Identified Entity"
+    },
+    {
+      "slug": "identifier-layer",
+      "label": "IdentifierLayer"
+    },
+    {
+      "slug": "identifier-registry",
+      "label": "Identifier Registry"
+    },
+    {
+      "slug": "ietf-rfc-3650",
+      "label": "IETF RFC 3650"
+    },
+    {
+      "slug": "ietf-rfc-3650-handle-system-overview",
+      "label": "IETF RFC 3650 Handle System Overview"
+    },
+    {
+      "slug": "ietf-rfc-3651",
+      "label": "IETF RFC 3651"
+    },
+    {
+      "slug": "ietf-rfc-3651-handle-system-namespace",
+      "label": "IETF RFC 3651 Handle System Namespace"
+    },
+    {
+      "slug": "ietf-rfc-3652",
+      "label": "IETF RFC 3652"
+    },
+    {
+      "slug": "ietf-rfc-3652-handle-system-protocol",
+      "label": "IETF RFC 3652 Handle System Protocol"
+    },
+    {
+      "slug": "information-management-domain",
+      "label": "InformationManagementDomain"
+    },
+    {
+      "slug": "information-resource",
+      "label": "Information Resource"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "iso-26324",
+      "label": "ISO 26324"
+    },
+    {
+      "slug": "iso-26324-2022-doi-standard",
+      "label": "ISO 26324 2022 DOI Standard"
+    },
+    {
+      "slug": "iso-iec-23090-14-mpeg-i-scene-description",
+      "label": "ISO IEC 23090-14 MPEG-I Scene Description"
+    },
+    {
+      "slug": "itu-t-x-1255",
+      "label": "ITU-T X.1255"
+    },
+    {
+      "slug": "itu-t-x-1255-framework-for-identity-management-discovery",
+      "label": "ITU-T X.1255 Framework for Identity Management Discovery"
+    },
+    {
+      "slug": "kahn-and-wilensky-1995-framework-for-distributed-digital-object-services",
+      "label": "Kahn & Wilensky 1995 Framework for Distributed Digital Object Services"
+    },
+    {
+      "slug": "kaloudis-2023-bitcoin-ordinals-analysis",
+      "label": "Kaloudis 2023 Bitcoin Ordinals Analysis"
+    },
+    {
+      "slug": "khronos-gl-tf",
+      "label": "Khronos glTF"
+    },
+    {
+      "slug": "khronos-group-gl-tf-2-0-specification",
+      "label": "Khronos Group glTF 2.0 Specification"
+    },
+    {
+      "slug": "khronos-open-xr-1-1-specification",
+      "label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "slug": "klump-et-al-2021-pids-and-fair",
+      "label": "Klump et al. 2021 PIDs and FAIR"
+    },
+    {
+      "slug": "long-term-preservation",
+      "label": "Long-Term Preservation"
+    },
+    {
+      "slug": "metadata-layer",
+      "label": "MetadataLayer"
+    },
+    {
+      "slug": "metadata-record",
+      "label": "Metadata Record"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "metaverse-standards-forum-identifier-reference-architecture",
+      "label": "Metaverse Standards Forum Identifier Reference Architecture"
+    },
+    {
+      "slug": "moringiello-and-odinet-2021-property-law-of-tokens",
+      "label": "Moringiello & Odinet 2021 Property Law of Tokens"
+    },
+    {
+      "slug": "networked-resource",
+      "label": "Networked Resource"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nft-metadata-standard",
+      "label": "NFT Metadata Standard"
+    },
+    {
+      "slug": "orcid",
+      "label": "ORCID"
+    },
+    {
+      "slug": "paskin-2010-doi-system-encyclopedia",
+      "label": "Paskin 2010 DOI System Encyclopedia"
+    },
+    {
+      "slug": "persistent-identifier",
+      "label": "Persistent Identifier"
+    },
+    {
+      "slug": "pixar-universal-scene-description-documentation",
+      "label": "Pixar Universal Scene Description Documentation"
+    },
+    {
+      "slug": "provenance-chain",
+      "label": "Provenance Chain"
+    },
+    {
+      "slug": "radomski-et-al-2019-eip-1155-multi-token-standard",
+      "label": "Radomski et al. 2019 EIP-1155 Multi-Token Standard"
+    },
+    {
+      "slug": "reed-et-al-2022-w3-c-did-core-1-0",
+      "label": "Reed et al. 2022 W3C DID Core 1.0"
+    },
+    {
+      "slug": "resolution-endpoint",
+      "label": "Resolution Endpoint"
+    },
+    {
+      "slug": "resolution-infrastructure",
+      "label": "Resolution Infrastructure"
+    },
+    {
+      "slug": "resolution-layer",
+      "label": "ResolutionLayer"
+    },
+    {
+      "slug": "rodarmor-2023-ordinal-theory",
+      "label": "Rodarmor 2023 Ordinal Theory"
+    },
+    {
+      "slug": "ror",
+      "label": "ROR"
+    },
+    {
+      "slug": "rosenthol-et-al-2024-content-authenticity-initiative-manifesto",
+      "label": "Rosenthol et al. 2024 Content Authenticity Initiative Manifesto"
+    },
+    {
+      "slug": "royalty-automation",
+      "label": "Royalty Automation"
+    },
+    {
+      "slug": "scholarly-communication",
+      "label": "Scholarly Communication"
+    },
+    {
+      "slug": "scholarly-communication-domain",
+      "label": "ScholarlyCommunicationDomain"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "sporny-et-al-2024-verifiable-credentials-data-model-2-0",
+      "label": "Sporny et al. 2024 Verifiable Credentials Data Model 2.0"
+    },
+    {
+      "slug": "transferable-rights",
+      "label": "Transferable Rights"
+    },
+    {
+      "slug": "typed-payload",
+      "label": "Typed Payload"
+    },
+    {
+      "slug": "url",
+      "label": "URL"
+    },
+    {
+      "slug": "urn",
+      "label": "URN"
+    },
+    {
+      "slug": "usd-scene-description",
+      "label": "USD Scene Description"
+    },
+    {
+      "slug": "vrm-consortium-vrm-1-0-specification",
+      "label": "VRM Consortium VRM 1.0 Specification"
+    },
+    {
+      "slug": "w3-c-did",
+      "label": "W3C DID"
+    },
+    {
+      "slug": "web3-domain",
+      "label": "Web3Domain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "runes-and-glyphs",
+      "label": "Runes and Glyphs"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

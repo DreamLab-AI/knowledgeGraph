@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d166312d907e834e813de16b8cd276ef3cdd621fa30837c9a5b07401936670c6",
+  "title": "Environmental Accounting",
+  "slug": "environmental-accounting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-accounting",
+  "domain": "spatial-computing",
+  "definition": "Environmental Accounting is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    }
+  ]
+}

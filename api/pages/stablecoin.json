@@ -1,0 +1,222 @@
+{
+  "id": "urn:visionflow:page:3dd038b6119a27758d5e8177d5e8c8dfb3981352e0edce7120ffc1bb5df158bd",
+  "title": "Stablecoin",
+  "slug": "stablecoin",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stablecoin",
+  "domain": "blockchain",
+  "definition": "A cryptocurrency whose value is algorithmically or institutionally pegged to a reserve asset to maintain price stability, enabling reliable medium of exchange and store of value in virtual economies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:crypto-token",
+      "label": "Crypto Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:collateral-reserves",
+        "label": "Collateral Reserves"
+      },
+      {
+        "id": "urn:visionflow:linked:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-transactions",
+        "label": "Cross-Border Transactions"
+      },
+      {
+        "id": "urn:visionflow:linked:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:value-transfer",
+        "label": "Value Transfer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collateral-reserves",
+      "label": "Collateral Reserves"
+    },
+    {
+      "slug": "cross-border-transactions",
+      "label": "Cross-Border Transactions"
+    },
+    {
+      "slug": "imf-cbdc-notes",
+      "label": "IMF CBDC Notes"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "peg-mechanism",
+      "label": "Peg Mechanism"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "price-stability",
+      "label": "Price Stability"
+    },
+    {
+      "slug": "reserve-asset",
+      "label": "Reserve Asset"
+    },
+    {
+      "slug": "stabilization-algorithm",
+      "label": "Stabilization Algorithm"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-commerce",
+      "label": "Virtual Commerce"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "Virtual Currency"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

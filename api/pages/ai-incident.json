@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34",
+  "title": "AI Incident",
+  "slug": "ai-incident",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-incident",
+  "domain": "artificial-intelligence",
+  "definition": "An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-risk",
+      "label": "AI Risk"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-ai-act-regulation-2024-1689-article-72",
+      "label": "EU AI Act Regulation 2024/1689 Article 72"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "oecd-ai-incident-monitor",
+      "label": "OECD AI Incident Monitor"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    }
+  ]
+}

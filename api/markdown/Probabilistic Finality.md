@@ -1,21 +1,264 @@
-iri:: http://narrativegoldmine.com/blockchain#ProbabilisticFinality
-uri:: urn:visionclaw:concept:blockchain:probabilistic-finality
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:probabilistic-finality
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Probabilistic Finality
-content-hash:: sha256-12-1e739e77a615
-legacy-term-id:: BC-8013
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#ProbabilisticFinality
+legacy_uri:: urn:visionclaw:concept:blockchain:probabilistic-finality
 public:: true
+
+# Probabilistic Finality
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a",
+  "@type": "Page",
+  "vc:slug": "probabilistic-finality",
+  "title": "Probabilistic Finality",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:51-attack",
+      "vc:label": "51% Attack"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deterministic-finality",
+      "vc:label": "Deterministic Finality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:longest-chain-rule",
+      "vc:label": "Longest Chain Rule"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "Proof of Work"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction-confirmation",
+      "vc:label": "Transaction Confirmation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction-finality",
+      "vc:label": "Transaction Finality"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1e739e77a615"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#ProbabilisticFinality"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8013"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Probabilistic Finality"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:probabilistic-finality"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:probabilistic-finality"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:probabilistic-finality",
+  "@type": "OntologyClass",
+  "label": "Probabilistic Finality",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:longest-chain-rule",
+      "vc:label": "Longest Chain Rule"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:owl:class:deterministic-finality",
+      "vc:label": "Deterministic Finality"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:probabilistic-finality:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[51% Attack]]",
+      "resolved": "urn:visionflow:owl:class:51-attack",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deterministic Finality]]",
+      "resolved": "urn:visionflow:owl:class:deterministic-finality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Longest Chain Rule]]",
+      "resolved": "urn:visionflow:owl:class:longest-chain-rule",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof of Work]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction Confirmation]]",
+      "resolved": "urn:visionflow:owl:class:transaction-confirmation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction Finality]]",
+      "resolved": "urn:visionflow:owl:class:transaction-finality",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.

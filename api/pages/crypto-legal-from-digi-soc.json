@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1ac92660b801eae66f47090894431ee291b7212fe94a958c4560fca02052d972",
+  "title": "Crypto Legal from DigiSoc",
+  "slug": "crypto-legal-from-digi-soc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:crypto-legal-from-digi-soc",
+  "domain": "blockchain",
+  "definition": "Crypto Legal from DigiSoc is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.55,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

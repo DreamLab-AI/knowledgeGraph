@@ -1,24 +1,282 @@
-iri:: http://narrativegoldmine.com/spatial-computing#FeatureImportance
-uri:: urn:visionclaw:concept:spatial-computing:feature-importance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:feature-importance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Feature Importance
-content-hash:: sha256-12-d07bf81edbfb
-legacy-term-id:: AI-0303
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#FeatureImportance
+legacy_uri:: urn:visionclaw:concept:spatial-computing:feature-importance
 public:: true
+
+# Feature Importance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:87f720bd87ae88def56c76139724201930610c0bc1dd3f4196f490d866c7b841",
+  "@type": "Page",
+  "vc:slug": "feature-importance",
+  "title": "Feature Importance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:feature-attribution",
+      "vc:label": "Feature Attribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-selection",
+      "vc:label": "Feature Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:modeling",
+      "vc:label": "modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:partial-dependence-plot",
+      "vc:label": "Partial Dependence Plot"
+    },
+    {
+      "@id": "urn:visionflow:linked:permutation-importance",
+      "vc:label": "Permutation Importance"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap",
+      "vc:label": "SHAP"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "user experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dimensionality-reduction",
+      "vc:label": "Dimensionality Reduction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:global-explanation",
+      "vc:label": "Global Explanation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-interpretability",
+      "vc:label": "Model Interpretability"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d07bf81edbfb"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#FeatureImportance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0303"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Feature Importance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:feature-importance"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:feature-importance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:87f720bd87ae88def56c76139724201930610c0bc1dd3f4196f490d866c7b841@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:feature-importance",
+  "@type": "OntologyClass",
+  "label": "Feature Importance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:explainability",
+      "vc:label": "Explainability"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:87f720bd87ae88def56c76139724201930610c0bc1dd3f4196f490d866c7b841"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:87f720bd87ae88def56c76139724201930610c0bc1dd3f4196f490d866c7b841@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:feature-importance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:87f720bd87ae88def56c76139724201930610c0bc1dd3f4196f490d866c7b841"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Feature Attribution]]",
+      "resolved": "urn:visionflow:linked:feature-attribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Feature Selection]]",
+      "resolved": "urn:visionflow:linked:feature-selection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[modeling]]",
+      "resolved": "urn:visionflow:linked:modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Partial Dependence Plot]]",
+      "resolved": "urn:visionflow:linked:partial-dependence-plot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Permutation Importance]]",
+      "resolved": "urn:visionflow:linked:permutation-importance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHAP]]",
+      "resolved": "urn:visionflow:linked:shap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[user experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dimensionality Reduction]]",
+      "resolved": "urn:visionflow:owl:class:dimensionality-reduction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Global Explanation]]",
+      "resolved": "urn:visionflow:owl:class:global-explanation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Interpretability]]",
+      "resolved": "urn:visionflow:owl:class:model-interpretability",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:87f720bd87ae88def56c76139724201930610c0bc1dd3f4196f490d866c7b841@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.

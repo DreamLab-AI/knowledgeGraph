@@ -1,0 +1,311 @@
+{
+  "id": "urn:visionflow:page:2c9f3d34f1d5cde640d2296f3abd08877c58d29f5e8841bf227829845a44cdce",
+  "title": "AI Model Card",
+  "slug": "ai-model-card",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-model-card",
+  "domain": "artificial-intelligence",
+  "definition": "A structured documentation format that describes an [[AI Model]]'s purpose, [[Performance Metrics]], limitations, [[Ethical Considerations]], and appropriate [[Use Case|use cases]] to promote [[Transparency]] and [[Responsible AI Deployment|responsible deployment]]. In 2025, model cards are required by [[EU AI Act]] for high-risk systems and recommended by [[OECD]] for all AI applications, including [[Bitcoin Trading Bot|trading systems]], [[Blockchain Analytics]], and [[Smart Contract Auditing]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.91,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bias-analysis",
+        "label": "Bias Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:ethical-considerations",
+        "label": "Ethical Considerations"
+      },
+      {
+        "id": "urn:visionflow:linked:limitations-section",
+        "label": "Limitations Section"
+      },
+      {
+        "id": "urn:visionflow:linked:model-details",
+        "label": "Model Details"
+      },
+      {
+        "id": "urn:visionflow:linked:security-considerations",
+        "label": "Security Considerations"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-information",
+        "label": "Training Data Information"
+      },
+      {
+        "id": "urn:visionflow:linked:use-case-descriptions",
+        "label": "Use Case Descriptions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:demographic-performance-analysis",
+        "label": "Demographic Performance Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-testing-results",
+        "label": "Safety Testing Results"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-dataset-metadata",
+        "label": "Training Dataset Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:informed-decision-making",
+        "label": "Informed Decision Making"
+      },
+      {
+        "id": "urn:visionflow:linked:procurement-due-diligence",
+        "label": "Procurement Due Diligence"
+      },
+      {
+        "id": "urn:visionflow:linked:responsible-ai-deployment",
+        "label": "Responsible AI Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:third-party-auditing",
+        "label": "Third-Party Auditing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "ai-documentation-framework",
+      "label": "AI Documentation Framework"
+    },
+    {
+      "slug": "ai-ethics-guidelines",
+      "label": "AI Ethics Guidelines"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "bias-analysis",
+      "label": "Bias Analysis"
+    },
+    {
+      "slug": "bitcoin-trading-bot",
+      "label": "Bitcoin Trading Bot"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "compliance-documentation",
+      "label": "Compliance Documentation"
+    },
+    {
+      "slug": "demographic-performance-analysis",
+      "label": "Demographic Performance Analysis"
+    },
+    {
+      "slug": "ethical-considerations",
+      "label": "Ethical Considerations"
+    },
+    {
+      "slug": "google-model-cards-for-model-reporting",
+      "label": "Google Model Cards for Model Reporting"
+    },
+    {
+      "slug": "industry-best-practices",
+      "label": "Industry Best Practices"
+    },
+    {
+      "slug": "informed-decision-making",
+      "label": "Informed Decision Making"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "limitations-section",
+      "label": "Limitations Section"
+    },
+    {
+      "slug": "mitchell-et-al-2019",
+      "label": "Mitchell et al. 2019"
+    },
+    {
+      "slug": "model-details",
+      "label": "Model Details"
+    },
+    {
+      "slug": "model-governance-system",
+      "label": "Model Governance System"
+    },
+    {
+      "slug": "model-testing-protocols",
+      "label": "Model Testing Protocols"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "procurement-due-diligence",
+      "label": "Procurement Due Diligence"
+    },
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "responsible-ai-deployment",
+      "label": "Responsible AI Deployment"
+    },
+    {
+      "slug": "responsible-ai-deployment",
+      "label": "Responsible AI Deployment"
+    },
+    {
+      "slug": "safety-testing-results",
+      "label": "Safety Testing Results"
+    },
+    {
+      "slug": "security-considerations",
+      "label": "Security Considerations"
+    },
+    {
+      "slug": "smart-contract-auditing",
+      "label": "Smart Contract Auditing"
+    },
+    {
+      "slug": "third-party-auditing",
+      "label": "Third-Party Auditing"
+    },
+    {
+      "slug": "training-data-information",
+      "label": "Training Data Information"
+    },
+    {
+      "slug": "use-case",
+      "label": "Use Case"
+    },
+    {
+      "slug": "use-case-descriptions",
+      "label": "Use Case Descriptions"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "fairness-metrics",
+      "label": "Fairness Metrics"
+    },
+    {
+      "slug": "model-evaluation-results",
+      "label": "Model Evaluation Results"
+    },
+    {
+      "slug": "model-transparency",
+      "label": "Model Transparency"
+    },
+    {
+      "slug": "performance-benchmarks",
+      "label": "Performance Benchmarks"
+    },
+    {
+      "slug": "performance-metrics",
+      "label": "Performance Metrics"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "training-dataset-metadata",
+      "label": "Training Dataset Metadata"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:4a43ea6a999767afeb61ef46a4a5537b787f6fe495801f14e0aea9a8af173c3f",
+  "title": "Digital Twin of the Customer",
+  "slug": "digital-twin-of-the-customer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-of-the-customer",
+  "domain": "spatial-computing",
+  "definition": "[Generated from Gartner emerging tech analysis] bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

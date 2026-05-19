@@ -1,0 +1,624 @@
+{
+  "id": "urn:visionflow:page:274ee9351bc4b8722165f476a5ce2117cb80004febcbe211e10f0a9066369cd3",
+  "title": "Quorum Blockchain",
+  "slug": "quorum-blockchain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quorum-blockchain",
+  "domain": "blockchain",
+  "definition": "An enterprise-grade permissioned [[Ethereum]] fork, initiated by JPMorgan Chase's Blockchain Centre of Excellence in 2016 and open-sourced under Apache 2.0 in 2017, that extends the Ethereum protocol with private transaction envelopes managed by the [[Tessera]] privacy manager (successor to Constellation, implemented via a `privateFor` parameter routing encrypted payloads peer-to-peer only to designated participants whilst the public chain records only a SHA-3 hash pointer), pluggable [[Byzantine Fault Tolerance]] consensus algorithms replacing [[Proof of Work]] \u2014 notably IBFT/QBFT (Istanbul/Quorum BFT, providing deterministic finality with supermajority-vote rounds and 3f+1 validator safety) and Raft (crash-fault-tolerant, leader-election log replication, sub-second block times in trusted consortia) \u2014 and a comprehensive permissioning framework governing node, account, and organisation access at three distinct layers. Acquired by ConsenSys in August 2020, Quorum now ships in two open-source stacks: **GoQuorum** (Go-based, forked from go-ethereum Geth, hosted at github.com/ConsenSys/quorum) and **[[Hyperledger Besu]]** (Java-based, hosted under the Linux Foundation Hyperledger umbr",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "id": "urn:visionflow:owl:class:enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "id": "urn:visionflow:owl:class:permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:clique-consensus",
+        "label": "Clique Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:visionflow:linked:go-quorum",
+        "label": "GoQuorum"
+      },
+      {
+        "id": "urn:visionflow:linked:ibft-consensus",
+        "label": "IBFT Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:permissioning-framework",
+        "label": "Permissioning Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:private-transaction-manager",
+        "label": "Private Transaction Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:qbft-consensus",
+        "label": "QBFT Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:visionflow:linked:tessera",
+        "label": "Tessera"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:enterprise-identity-management",
+        "label": "Enterprise Identity Management"
+      },
+      {
+        "id": "urn:visionflow:linked:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cbdc-infrastructure",
+        "label": "CBDC Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:institutional-settlement",
+        "label": "Institutional Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:private-transactions",
+        "label": "Private Transactions"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenised-assets",
+        "label": "Tokenised Assets"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenised-repo",
+        "label": "Tokenised Repo"
+      },
+      {
+        "id": "urn:visionflow:linked:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:enterprise-ethereum-alliance-specification",
+        "label": "Enterprise Ethereum Alliance Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:erc-20-standard",
+        "label": "ERC-20 Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:erc-721-standard",
+        "label": "ERC-721 Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:istanbul-bft",
+        "label": "Istanbul BFT"
+      },
+      {
+        "id": "urn:visionflow:linked:qbft-protocol",
+        "label": "QBFT Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:raft-consensus",
+        "label": "Raft Consensus"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "alastria-network",
+      "label": "Alastria Network"
+    },
+    {
+      "slug": "apache-license-2-0",
+      "label": "Apache License 2.0"
+    },
+    {
+      "slug": "b-nz-et-al-2018-bulletproofs",
+      "label": "B\u00fcnz et al 2018 Bulletproofs"
+    },
+    {
+      "slug": "bank-of-england-2024-rtgs-renewal-synchronisation-specification",
+      "label": "Bank of England 2024 RTGS Renewal Synchronisation Specification"
+    },
+    {
+      "slug": "bis-2023-project-mariana-cross-cbdc-fx",
+      "label": "BIS 2023 Project Mariana Cross-CBDC FX"
+    },
+    {
+      "slug": "bis-2024-project-agor-unified-ledger",
+      "label": "BIS 2024 Project Agor\u00e1 Unified Ledger"
+    },
+    {
+      "slug": "cambridge-ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "Cambridge CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "castro-liskov-1999-practical-bft",
+      "label": "Castro Liskov 1999 Practical BFT"
+    },
+    {
+      "slug": "cbdc-infrastructure",
+      "label": "CBDC Infrastructure"
+    },
+    {
+      "slug": "clique-consensus",
+      "label": "Clique Consensus"
+    },
+    {
+      "slug": "consen-sys",
+      "label": "ConsenSys"
+    },
+    {
+      "slug": "consen-sys-2025-linea-zk-private-evm-research",
+      "label": "ConsenSys 2025 Linea ZK Private EVM Research"
+    },
+    {
+      "slug": "consen-sys-go-quorum-documentation",
+      "label": "ConsenSys GoQuorum Documentation"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "daml-ledger",
+      "label": "Daml Ledger"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "DigitalAssetDomain"
+    },
+    {
+      "slug": "digital-securities-settlement",
+      "label": "Digital Securities Settlement"
+    },
+    {
+      "slug": "dinh-et-al-2017-blockbench",
+      "label": "Dinh et al 2017 BLOCKBENCH"
+    },
+    {
+      "slug": "distributed-ledger-domain",
+      "label": "DistributedLedgerDomain"
+    },
+    {
+      "slug": "edinburgh-blt-2023-qbft-view-change-attack-analysis",
+      "label": "Edinburgh BLT 2023 QBFT View-Change Attack Analysis"
+    },
+    {
+      "slug": "eip-225-clique",
+      "label": "EIP-225 Clique"
+    },
+    {
+      "slug": "enterprise-ethereum-alliance",
+      "label": "Enterprise Ethereum Alliance"
+    },
+    {
+      "slug": "enterprise-ethereum-alliance-permissioning-specification-v2",
+      "label": "Enterprise Ethereum Alliance Permissioning Specification v2"
+    },
+    {
+      "slug": "enterprise-ethereum-alliance-private-transactions-specification-v3",
+      "label": "Enterprise Ethereum Alliance Private Transactions Specification v3"
+    },
+    {
+      "slug": "enterprise-ethereum-alliance-specification",
+      "label": "Enterprise Ethereum Alliance Specification"
+    },
+    {
+      "slug": "enterprise-finance-domain",
+      "label": "EnterpriseFinanceDomain"
+    },
+    {
+      "slug": "enterprise-identity-management",
+      "label": "Enterprise Identity Management"
+    },
+    {
+      "slug": "erc-20-standard",
+      "label": "ERC-20 Standard"
+    },
+    {
+      "slug": "erc-721-standard",
+      "label": "ERC-721 Standard"
+    },
+    {
+      "slug": "eth-signer",
+      "label": "EthSigner"
+    },
+    {
+      "slug": "ethereum-protocol",
+      "label": "Ethereum Protocol"
+    },
+    {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "fca-2024-digital-securities-sandbox-guidance",
+      "label": "FCA 2024 Digital Securities Sandbox Guidance"
+    },
+    {
+      "slug": "go-ethereum",
+      "label": "go-ethereum"
+    },
+    {
+      "slug": "go-quorum",
+      "label": "GoQuorum"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "hardhat",
+      "label": "Hardhat"
+    },
+    {
+      "slug": "henry-herzberg-kate-2018-blockchain-access-privacy",
+      "label": "Henry Herzberg Kate 2018 Blockchain Access Privacy"
+    },
+    {
+      "slug": "hyperledger-besu-documentation",
+      "label": "Hyperledger Besu Documentation"
+    },
+    {
+      "slug": "ibft-2-0-specification",
+      "label": "IBFT 2.0 Specification"
+    },
+    {
+      "slug": "ibft-consensus",
+      "label": "IBFT Consensus"
+    },
+    {
+      "slug": "imperial-college-ccre-2022-qbft-benchmarking",
+      "label": "Imperial College CCRE 2022 QBFT Benchmarking"
+    },
+    {
+      "slug": "infura",
+      "label": "Infura"
+    },
+    {
+      "slug": "institutional-settlement",
+      "label": "Institutional Settlement"
+    },
+    {
+      "slug": "istanbul-bft",
+      "label": "Istanbul BFT"
+    },
+    {
+      "slug": "jpm-coin",
+      "label": "JPM Coin"
+    },
+    {
+      "slug": "jpmorgan-2023-onyx-annual-update",
+      "label": "JPMorgan 2023 Onyx Annual Update"
+    },
+    {
+      "slug": "jpmorgan-2024-kinexys-rebrand-whitepaper",
+      "label": "JPMorgan 2024 Kinexys Rebrand Whitepaper"
+    },
+    {
+      "slug": "jpmorgan-2025-kinexys-milestone-report",
+      "label": "JPMorgan 2025 Kinexys Milestone Report"
+    },
+    {
+      "slug": "jpmorgan-chase",
+      "label": "JPMorgan Chase"
+    },
+    {
+      "slug": "jpmorgan-quorum-whitepaper-2016",
+      "label": "JPMorgan Quorum Whitepaper 2016"
+    },
+    {
+      "slug": "json-rpc-api",
+      "label": "JSON-RPC API"
+    },
+    {
+      "slug": "kinexys-platform",
+      "label": "Kinexys Platform"
+    },
+    {
+      "slug": "komgo",
+      "label": "Komgo"
+    },
+    {
+      "slug": "komgo-2023-annual-impact-report",
+      "label": "Komgo 2023 Annual Impact Report"
+    },
+    {
+      "slug": "komgo-trade-finance",
+      "label": "Komgo Trade Finance"
+    },
+    {
+      "slug": "law-commission-2023-digital-assets-law-com-412",
+      "label": "Law Commission 2023 Digital Assets Law Com 412"
+    },
+    {
+      "slug": "law-commission-2023-smart-legal-contracts-law-com-401",
+      "label": "Law Commission 2023 Smart Legal Contracts Law Com 401"
+    },
+    {
+      "slug": "manchester-ambs-2023-enterprise-blockchain-adoption-uk-manufacturing",
+      "label": "Manchester AMBS 2023 Enterprise Blockchain Adoption UK Manufacturing"
+    },
+    {
+      "slug": "ongaro-ousterhout-2014-raft-consensus",
+      "label": "Ongaro Ousterhout 2014 Raft Consensus"
+    },
+    {
+      "slug": "onyx-digital-assets",
+      "label": "Onyx Digital Assets"
+    },
+    {
+      "slug": "p2-p-networking",
+      "label": "P2P Networking"
+    },
+    {
+      "slug": "permissioned-ledger",
+      "label": "Permissioned Ledger"
+    },
+    {
+      "slug": "permissioning-framework",
+      "label": "Permissioning Framework"
+    },
+    {
+      "slug": "pongnumkul-et-al-2017-quorum-fabric-benchmark",
+      "label": "Pongnumkul et al 2017 Quorum Fabric Benchmark"
+    },
+    {
+      "slug": "privacy-layer",
+      "label": "PrivacyLayer"
+    },
+    {
+      "slug": "private-transaction-manager",
+      "label": "Private Transaction Manager"
+    },
+    {
+      "slug": "private-transactions",
+      "label": "Private Transactions"
+    },
+    {
+      "slug": "public-ethereum",
+      "label": "Public Ethereum"
+    },
+    {
+      "slug": "qbft-consensus",
+      "label": "QBFT Consensus"
+    },
+    {
+      "slug": "qbft-consensus-protocol-specification",
+      "label": "QBFT Consensus Protocol Specification"
+    },
+    {
+      "slug": "qbft-protocol",
+      "label": "QBFT Protocol"
+    },
+    {
+      "slug": "raft-consensus",
+      "label": "Raft Consensus"
+    },
+    {
+      "slug": "sedlmeir-et-al-2020-blockchain-energy",
+      "label": "Sedlmeir et al 2020 Blockchain Energy"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "tessera",
+      "label": "Tessera"
+    },
+    {
+      "slug": "tessera-privacy-manager",
+      "label": "Tessera Privacy Manager"
+    },
+    {
+      "slug": "tessera-privacy-manager-technical-documentation",
+      "label": "Tessera Privacy Manager Technical Documentation"
+    },
+    {
+      "slug": "tokenised-assets",
+      "label": "Tokenised Assets"
+    },
+    {
+      "slug": "tokenised-repo",
+      "label": "Tokenised Repo"
+    },
+    {
+      "slug": "trade-finance-automation",
+      "label": "Trade Finance Automation"
+    },
+    {
+      "slug": "truffle-framework",
+      "label": "Truffle Framework"
+    },
+    {
+      "slug": "w3-c-did",
+      "label": "W3C DID"
+    },
+    {
+      "slug": "web3j",
+      "label": "Web3j"
+    },
+    {
+      "slug": "wholesale-cbdc",
+      "label": "Wholesale CBDC"
+    },
+    {
+      "slug": "wood-2014-ethereum-yellow-paper",
+      "label": "Wood 2014 Ethereum Yellow Paper"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

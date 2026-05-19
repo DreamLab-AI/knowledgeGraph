@@ -1,21 +1,189 @@
-iri:: http://narrativegoldmine.com/robotics#PneumaticCylinder
-uri:: urn:visionclaw:concept:robotics:pneumatic-cylinder
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:pneumatic-cylinder
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Pneumatic Cylinder
-content-hash:: sha256-12-dcc3b5fabc5c
-legacy-term-id:: RB-0181
-status:: complete
-maturity:: established
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-13T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#PneumaticCylinder
+legacy_uri:: urn:visionclaw:concept:robotics:pneumatic-cylinder
 public:: true
+
+# Pneumatic Cylinder
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0ca028d73f57e6fbb7ffad83e48998e24d3ab5ae345d31812d60384262d2fdd4",
+  "@type": "Page",
+  "vc:slug": "pneumatic-cylinder",
+  "title": "Pneumatic Cylinder",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:pneumatic-actuator",
+      "vc:label": "Pneumatic Actuator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dcc3b5fabc5c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-13T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#PneumaticCylinder"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0181"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Pneumatic Cylinder"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:pneumatic-cylinder"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:pneumatic-cylinder"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0ca028d73f57e6fbb7ffad83e48998e24d3ab5ae345d31812d60384262d2fdd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:pneumatic-cylinder",
+  "@type": "OntologyClass",
+  "label": "Pneumatic Cylinder",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:pneumatic-actuator",
+      "vc:label": "Pneumatic Actuator"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0ca028d73f57e6fbb7ffad83e48998e24d3ab5ae345d31812d60384262d2fdd4"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0ca028d73f57e6fbb7ffad83e48998e24d3ab5ae345d31812d60384262d2fdd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Pneumatic cylinder uses compressed air to produce linear motion.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:pneumatic-cylinder:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0ca028d73f57e6fbb7ffad83e48998e24d3ab5ae345d31812d60384262d2fdd4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Pneumatic Actuator]]",
+      "resolved": "urn:visionflow:owl:class:pneumatic-actuator",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0ca028d73f57e6fbb7ffad83e48998e24d3ab5ae345d31812d60384262d2fdd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Pneumatic cylinder uses compressed air to produce linear motion.

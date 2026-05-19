@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:bee8ff422a3e378e607e13c048f51c14b7f6903574a12d8e49a33da9f892d2b6",
+  "title": "Root Mean Square Error",
+  "slug": "root-mean-square-error",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:root-mean-square-error",
+  "domain": "spatial-computing",
+  "definition": "A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the target variable whilst giving disproportionate weight to larger errors, making it particularly sensitive to outliers and appropriate when large prediction errors are significantly more problematic than small errors.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:mean-absolute-error",
+      "label": "Mean Absolute Error"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bias-variance-trade-off",
+      "label": "Bias-Variance Trade-off"
+    },
+    {
+      "slug": "error-analysis",
+      "label": "Error Analysis"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "outlier",
+      "label": "Outlier"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
+      "slug": "rmsle",
+      "label": "RMSLE"
+    },
+    {
+      "slug": "standard-deviation",
+      "label": "Standard Deviation"
+    },
+    {
+      "slug": "mean-absolute-error",
+      "label": "Mean Absolute Error"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mean-absolute-error",
+      "label": "Mean Absolute Error"
+    }
+  ]
+}

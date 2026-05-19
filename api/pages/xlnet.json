@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:28b14e4ad974bc16c91c0f3510df6be7ee71958394e57c85f8217cd1681e9713",
+  "title": "XLNet",
+  "slug": "xlnet",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xlnet",
+  "domain": "spatial-computing",
+  "definition": "A generalised autoregressive pre-training method that learns bidirectional contexts by maximising expected likelihood over all permutations of the factorisation order, overcoming limitations of BERT's masked language modelling.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

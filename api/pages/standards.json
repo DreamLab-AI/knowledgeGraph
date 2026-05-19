@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:8503151b6ddd55a3649f93fa0022367dbad643f7304fc4768c97e78101f5078d",
+  "title": "Standards",
+  "slug": "standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standards",
+  "domain": "spatial-computing",
+  "definition": "Established tools, protocols, formats, services, and specifications that support the creation, operation, continuous improvement, and common use of metaverse technologies, enabling interoperability between disparate systems, platforms, and applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "standards-compliance",
+      "label": "Standards Compliance"
+    },
+    {
+      "slug": "standards-conformance-testing",
+      "label": "Standards Conformance Testing"
+    },
+    {
+      "slug": "standards-conformance",
+      "label": "Standards Conformance"
+    },
+    {
+      "slug": "standards-documentation",
+      "label": "Standards Documentation"
+    },
+    {
+      "slug": "standards-validation",
+      "label": "Standards Validation"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "user-interface-standard",
+      "label": "User Interface Standard"
+    },
+    {
+      "slug": "verifiable-credential-standard",
+      "label": "Verifiable Credential Standard"
+    },
+    {
+      "slug": "verification-standard",
+      "label": "Verification Standard"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2",
+  "title": "Fairness",
+  "slug": "fairness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fairness",
+  "domain": "artificial-intelligence",
+  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bias-detection",
+        "label": "Bias Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:bias-mitigation",
+        "label": "Bias Mitigation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:equal-treatment",
+        "label": "Equal Treatment"
+      },
+      {
+        "id": "urn:visionflow:linked:non-discrimination",
+        "label": "Non-discrimination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bias-detection",
+      "label": "Bias Detection"
+    },
+    {
+      "slug": "bias-mitigation",
+      "label": "Bias Mitigation"
+    },
+    {
+      "slug": "equal-treatment",
+      "label": "Equal Treatment"
+    },
+    {
+      "slug": "non-discrimination",
+      "label": "Non-discrimination"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "stakeholder",
+      "label": "Stakeholder"
+    }
+  ]
+}

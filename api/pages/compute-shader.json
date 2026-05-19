@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1",
+  "title": "Compute Shader",
+  "slug": "compute-shader",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compute-shader",
+  "domain": "spatial-computing",
+  "definition": "Compute Shader is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpgpu",
+      "label": "GPGPU"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "thread-position-in-grid",
+      "label": "thread_position_in_grid"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    }
+  ]
+}

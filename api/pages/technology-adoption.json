@@ -1,0 +1,203 @@
+{
+  "id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf",
+  "title": "Technology Adoption",
+  "slug": "technology-adoption",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technology-adoption",
+  "domain": "distributed-collaboration",
+  "definition": "The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, evaluation, trial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.93,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:evaluation",
+        "label": "Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:implementation",
+        "label": "Implementation"
+      },
+      {
+        "id": "urn:visionflow:linked:sustained-use",
+        "label": "Sustained Use"
+      },
+      {
+        "id": "urn:visionflow:linked:trial",
+        "label": "Trial"
+      },
+      {
+        "id": "urn:visionflow:owl:class:awareness",
+        "label": "Awareness"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-buy-in",
+        "label": "Stakeholder Buy-In"
+      },
+      {
+        "id": "urn:visionflow:owl:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training",
+        "label": "Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:competitive-advantage",
+        "label": "Competitive Advantage"
+      },
+      {
+        "id": "urn:visionflow:linked:innovation-diffusion",
+        "label": "Innovation Diffusion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "change-management",
+      "label": "Change Management"
+    },
+    {
+      "slug": "competitive-advantage",
+      "label": "Competitive Advantage"
+    },
+    {
+      "slug": "ecosystem-maturity",
+      "label": "Ecosystem Maturity"
+    },
+    {
+      "slug": "evaluation",
+      "label": "Evaluation"
+    },
+    {
+      "slug": "gartner-hype-cycle",
+      "label": "Gartner Hype Cycle"
+    },
+    {
+      "slug": "implementation",
+      "label": "Implementation"
+    },
+    {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "slug": "iso-iec-tr-24030",
+      "label": "ISO/IEC TR 24030"
+    },
+    {
+      "slug": "mc-kinsey",
+      "label": "McKinsey"
+    },
+    {
+      "slug": "rogers-diffusion-of-innovations",
+      "label": "Rogers Diffusion of Innovations"
+    },
+    {
+      "slug": "stakeholder-buy-in",
+      "label": "Stakeholder Buy-In"
+    },
+    {
+      "slug": "sustained-use",
+      "label": "Sustained Use"
+    },
+    {
+      "slug": "trial",
+      "label": "Trial"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "awareness",
+      "label": "Awareness"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    },
+    {
+      "slug": "training",
+      "label": "Training"
+    },
+    {
+      "slug": "user-education",
+      "label": "User Education"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

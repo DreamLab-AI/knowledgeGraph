@@ -1,24 +1,261 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ComputeShader
-uri:: urn:visionclaw:concept:spatial-computing:compute-shader
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:compute-shader
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Compute Shader
-content-hash:: sha256-12-36d19eb70dfc
-legacy-term-id::
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ComputeShader
+legacy_uri:: urn:visionclaw:concept:spatial-computing:compute-shader
 public:: true
+
+# Compute Shader
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1",
+  "@type": "Page",
+  "vc:slug": "compute-shader",
+  "title": "Compute Shader",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:gpgpu",
+      "vc:label": "GPGPU"
+    },
+    {
+      "@id": "urn:visionflow:linked:parallel-computing",
+      "vc:label": "Parallel Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:thread-position-in-grid",
+      "vc:label": "thread_position_in_grid"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physics-simulation",
+      "vc:label": "Physics Simulation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pixel-shader",
+      "vc:label": "Pixel Shader"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vertex-shader",
+      "vc:label": "Vertex Shader"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-36d19eb70dfc"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ComputeShader"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Compute Shader"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:compute-shader"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:compute-shader"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:compute-shader",
+  "@type": "OntologyClass",
+  "label": "Compute Shader",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Compute Shader is a concept within the mv domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:compute-shader:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[GPGPU]]",
+      "resolved": "urn:visionflow:linked:gpgpu",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Parallel Computing]]",
+      "resolved": "urn:visionflow:linked:parallel-computing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[thread_position_in_grid]]",
+      "resolved": "urn:visionflow:linked:thread-position-in-grid",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Physics Simulation]]",
+      "resolved": "urn:visionflow:owl:class:physics-simulation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Pixel Shader]]",
+      "resolved": "urn:visionflow:owl:class:pixel-shader",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Vertex Shader]]",
+      "resolved": "urn:visionflow:owl:class:vertex-shader",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Compute Shader is a concept within the mv domain.

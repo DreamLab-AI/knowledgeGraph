@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:9cc7f346320e9f28ac35b54e28bb5e5340554795037fa23df0074d47d42787f4",
+  "title": "Economic Parameters",
+  "slug": "economic-parameters",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:economic-parameters",
+  "domain": "spatial-computing",
+  "definition": "The configurable variables and constraints that govern virtual economy behaviour in metaverse environments, including token supply mechanisms, transaction fees, inflation rates, and reward structures that shape economic interactions between users and digital assets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "token-bonding-curve",
+      "label": "Token Bonding Curve"
+    }
+  ]
+}

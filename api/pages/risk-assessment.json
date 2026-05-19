@@ -1,0 +1,556 @@
+{
+  "id": "urn:visionflow:page:3ca7a30cdffd0349189c0f3a1331ff9f07ed04a6719308796c4098a534f5492a",
+  "title": "Risk Assessment",
+  "slug": "risk-assessment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:risk-assessment",
+  "domain": "governance",
+  "definition": "[[Risk Assessment]] is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader [[Risk Management]] programmes aligned to [[ISO 31000]] (2018), [[NIST AI Risk Management Framework|NIST AI RMF 1.0]] (2023), the [[NIST AI RMF Generative AI Profile]] (July 2024), and [[EU AI Act]] Article 9 conformity obligations. In AI and blockchain contexts, risk assessment integrates quantitative probability modelling with qualitative expert judgement across four canonical phases: risk identification (hazard enumeration using [[FMEA|Failure Mode and Effects Analysis]], [[Bow-Tie Analysis]], [[STPA|Systems-Theoretic Process Analysis]], and AI-specific threat taxonomies from [[MITRE ATLAS]] and [[OWASP LLM Top 10]]); risk analysis (likelihood-consequence matrices, attack-tree probabilistic quantification, [[Fault Tree Analysis]], Bayesian network propagation); risk evaluation (threshold comparison against appetite statements, residual risk calculation after controls, tolerability determination per ALARP principle); and risk treatment ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:audit",
+      "label": "Audit"
+    },
+    {
+      "id": "urn:visionflow:linked:safety-engineering",
+      "label": "Safety Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:systems-analysis",
+      "label": "Systems Analysis"
+    },
+    {
+      "id": "urn:visionflow:owl:class:compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "id": "urn:visionflow:owl:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:hazard-identification",
+        "label": "Hazard Identification"
+      },
+      {
+        "id": "urn:visionflow:linked:impact-modelling",
+        "label": "Impact Modelling"
+      },
+      {
+        "id": "urn:visionflow:linked:likelihood-estimation",
+        "label": "Likelihood Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:residual-risk-calculation",
+        "label": "Residual Risk Calculation"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-evaluation",
+        "label": "Risk Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-treatment-plan",
+        "label": "Risk Treatment Plan"
+      },
+      {
+        "id": "urn:visionflow:linked:vulnerability-analysis",
+        "label": "Vulnerability Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:visionflow:linked:model-assurance",
+        "label": "Model Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bow-tie-analysis",
+        "label": "Bow-Tie Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:fmea",
+        "label": "FMEA"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "id": "urn:visionflow:linked:mitre-atlas",
+        "label": "MITRE ATLAS"
+      },
+      {
+        "id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:owasp-llm-top-10",
+        "label": "OWASP LLM Top 10"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-incident-database",
+      "label": "AI Incident Database"
+    },
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "aisafety-domain",
+      "label": "AISafetyDomain"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "attack-trees",
+      "label": "Attack Trees"
+    },
+    {
+      "slug": "audit",
+      "label": "Audit"
+    },
+    {
+      "slug": "basel-iii",
+      "label": "Basel III"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "behavioural-science",
+      "label": "Behavioural Science"
+    },
+    {
+      "slug": "bow-tie-analysis",
+      "label": "Bow-Tie Analysis"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "de-fi-risk",
+      "label": "DeFi Risk"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "fault-tree-analysis",
+      "label": "Fault Tree Analysis"
+    },
+    {
+      "slug": "fca-ps21-3",
+      "label": "FCA PS21/3"
+    },
+    {
+      "slug": "financial-regulatory-domain",
+      "label": "FinancialRegulatoryDomain"
+    },
+    {
+      "slug": "financial-stability",
+      "label": "Financial Stability"
+    },
+    {
+      "slug": "fmea",
+      "label": "FMEA"
+    },
+    {
+      "slug": "fmea",
+      "label": "FMEA"
+    },
+    {
+      "slug": "fsb",
+      "label": "FSB"
+    },
+    {
+      "slug": "fsb",
+      "label": "FSB"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "hazard-identification",
+      "label": "Hazard Identification"
+    },
+    {
+      "slug": "helm",
+      "label": "HELM"
+    },
+    {
+      "slug": "helm",
+      "label": "HELM"
+    },
+    {
+      "slug": "impact-modelling",
+      "label": "Impact Modelling"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "iso-31000",
+      "label": "ISO 31000"
+    },
+    {
+      "slug": "likelihood-estimation",
+      "label": "Likelihood Estimation"
+    },
+    {
+      "slug": "mitre-atlas",
+      "label": "MITRE ATLAS"
+    },
+    {
+      "slug": "model-assurance",
+      "label": "Model Assurance"
+    },
+    {
+      "slug": "model-cards",
+      "label": "Model Cards"
+    },
+    {
+      "slug": "monte-carlo-simulation",
+      "label": "Monte Carlo Simulation"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "nist-ai-rmf-generative-ai-profile",
+      "label": "NIST AI RMF Generative AI Profile"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "OperationalLayer"
+    },
+    {
+      "slug": "operational-resilience",
+      "label": "Operational Resilience"
+    },
+    {
+      "slug": "oracle-risk",
+      "label": "Oracle Risk"
+    },
+    {
+      "slug": "owasp-llm-top-10",
+      "label": "OWASP LLM Top 10"
+    },
+    {
+      "slug": "penetration-testing",
+      "label": "Penetration Testing"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "residual-risk-calculation",
+      "label": "Residual Risk Calculation"
+    },
+    {
+      "slug": "risk-evaluation",
+      "label": "Risk Evaluation"
+    },
+    {
+      "slug": "risk-register",
+      "label": "Risk Register"
+    },
+    {
+      "slug": "risk-treatment-plan",
+      "label": "Risk Treatment Plan"
+    },
+    {
+      "slug": "safety-engineering",
+      "label": "Safety Engineering"
+    },
+    {
+      "slug": "scenario-analysis",
+      "label": "Scenario Analysis"
+    },
+    {
+      "slug": "smart-contract-security",
+      "label": "Smart Contract Security"
+    },
+    {
+      "slug": "stakeholder-analysis",
+      "label": "Stakeholder Analysis"
+    },
+    {
+      "slug": "stpa",
+      "label": "STPA"
+    },
+    {
+      "slug": "systems-analysis",
+      "label": "Systems Analysis"
+    },
+    {
+      "slug": "systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "slug": "threat-model",
+      "label": "Threat Model"
+    },
+    {
+      "slug": "vulnerability-analysis",
+      "label": "Vulnerability Analysis"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "systemic-risk",
+      "label": "Systemic Risk"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "social-impact-assessment-sia",
+      "label": "Social Impact Assessment (SIA)"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    },
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

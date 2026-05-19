@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:e6ad1e5697a4c811f34a31ce45d268a0e2ca5bc40ff10a7c9d3d2ce99f0bfd1a",
+  "title": "Animation Retargeting",
+  "slug": "animation-retargeting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:animation-retargeting",
+  "domain": "spatial-computing",
+  "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:animation-technology",
+      "label": "Animation Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:pose-matching",
+        "label": "Pose Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:skeleton-mapping",
+        "label": "Skeleton Mapping"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:character-animation-reuse",
+        "label": "Character Animation Reuse"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-capture-workflows",
+        "label": "Motion Capture Workflows"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "animation-technology",
+      "label": "Animation Technology"
+    },
+    {
+      "slug": "avatar-animation",
+      "label": "Avatar Animation"
+    },
+    {
+      "slug": "character-animation-reuse",
+      "label": "Character Animation Reuse"
+    },
+    {
+      "slug": "motion-capture-workflows",
+      "label": "Motion Capture Workflows"
+    },
+    {
+      "slug": "pose-matching",
+      "label": "Pose Matching"
+    },
+    {
+      "slug": "skeleton-mapping",
+      "label": "Skeleton Mapping"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

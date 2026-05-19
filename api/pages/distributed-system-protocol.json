@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:e7a2b38506766f3667cd7c00b7adcf16ba19c223245f460113c70a81167457d3",
+  "title": "Distributed System Protocol",
+  "slug": "distributed-system-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributed-system-protocol",
+  "domain": "infrastructure",
+  "definition": "DistributedSystemProtocol is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:protocol-layer",
+      "label": "Protocol Layer"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ]
+}

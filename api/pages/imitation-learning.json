@@ -1,0 +1,616 @@
+{
+  "id": "urn:visionflow:page:014bd402a2cc53624a9f232d92d5c175fbd375c79e15caf7ff55b04d3516399e",
+  "title": "Imitation Learning",
+  "slug": "imitation-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:imitation-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Imitation Learning (IL), also termed Learning from Demonstration (LfD) or Programming by Demonstration (PbD), is the sequential-decision-making paradigm in which an autonomous agent acquires a policy \u03c0(a|s) mapping observations to actions by mimicking expert demonstrations rather than by maximising a hand-specified reward function or by trial-and-error exploration, encompassing four canonical algorithmic families\u2014Behavioural Cloning (BC, supervised learning on state-action pairs (s_t, a_t) drawn from N demonstration trajectories \u03c4\u1d62 ~ \u03c0_E originated by Bain & Sammut 1995 robot soccer and Pomerleau 1989 ALVINN neural-network autonomous driving Carnegie Mellon Humvee), Inverse Reinforcement Learning (IRL, recovering a reward function R(s,a) under which the demonstrator \u03c0_E is optimal then solving the induced MDP\u2014Ng & Russell 2000 algorithmic foundations, Abbeel & Ng 2004 apprenticeship learning via feature matching, Ziebart 2008 Maximum-Entropy IRL resolving reward ambiguity via principle of maximum causal entropy), interactive imitation learning (DAgger Dataset Aggregation Ross-Gordon-Bagnell 2011 AISTATS iteratively rolling out the learner policy and querying the expert on encounter",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:learning-from-demonstration",
+      "label": "Learning from Demonstration"
+    },
+    {
+      "id": "urn:visionflow:linked:policy-learning",
+      "label": "Policy Learning"
+    },
+    {
+      "id": "urn:visionflow:linked:sequential-decision-making",
+      "label": "Sequential Decision Making"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:action-decoder",
+        "label": "Action Decoder"
+      },
+      {
+        "id": "urn:visionflow:linked:demonstration-dataset",
+        "label": "Demonstration Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:discriminator",
+        "label": "Discriminator"
+      },
+      {
+        "id": "urn:visionflow:linked:expert-demonstration",
+        "label": "Expert Demonstration"
+      },
+      {
+        "id": "urn:visionflow:linked:observation-encoder",
+        "label": "Observation Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-network",
+        "label": "Policy Network"
+      },
+      {
+        "id": "urn:visionflow:linked:teleoperation-interface",
+        "label": "Teleoperation Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:action-space",
+        "label": "Action Space"
+      },
+      {
+        "id": "urn:visionflow:linked:demonstrator",
+        "label": "Demonstrator"
+      },
+      {
+        "id": "urn:visionflow:linked:expert-trajectories",
+        "label": "Expert Trajectories"
+      },
+      {
+        "id": "urn:visionflow:linked:function-approximator",
+        "label": "Function Approximator"
+      },
+      {
+        "id": "urn:visionflow:linked:observation-space",
+        "label": "Observation Space"
+      },
+      {
+        "id": "urn:visionflow:linked:state-action-pairs",
+        "label": "State Action Pairs"
+      },
+      {
+        "id": "urn:visionflow:owl:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-embodiment-transfer",
+        "label": "Cross-Embodiment Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:generalist-robot-policies",
+        "label": "Generalist Robot Policies"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-task-specification",
+        "label": "Rapid Task Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:reward-free-learning",
+        "label": "Reward-Free Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:sample-efficient-robotics",
+        "label": "Sample-Efficient Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:skill-transfer",
+        "label": "Skill Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:action-chunking-transformer",
+        "label": "Action Chunking Transformer"
+      },
+      {
+        "id": "urn:visionflow:linked:airl",
+        "label": "AIRL"
+      },
+      {
+        "id": "urn:visionflow:linked:behavioural-cloning",
+        "label": "Behavioural Cloning"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-policy",
+        "label": "Diffusion Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:gail",
+        "label": "GAIL"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-conditioned-behaviour-cloning",
+        "label": "Goal Conditioned Behaviour Cloning"
+      },
+      {
+        "id": "urn:visionflow:linked:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dagger",
+        "label": "DAgger"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abbeel-ng-2004-apprenticeship-learning",
+      "label": "Abbeel Ng 2004 Apprenticeship Learning"
+    },
+    {
+      "slug": "action-chunking-transformer",
+      "label": "Action Chunking Transformer"
+    },
+    {
+      "slug": "action-decoder",
+      "label": "Action Decoder"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "airl",
+      "label": "AIRL"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "apprenticeship-learning",
+      "label": "Apprenticeship Learning"
+    },
+    {
+      "slug": "argall-chernova-veloso-browning-2009-lf-d-survey",
+      "label": "Argall Chernova Veloso Browning 2009 LfD Survey"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "bain-sammut-1995-behavioural-cloning",
+      "label": "Bain Sammut 1995 Behavioural Cloning"
+    },
+    {
+      "slug": "behavioural-cloning",
+      "label": "Behavioural Cloning"
+    },
+    {
+      "slug": "brohan-et-al-2022-rt-1",
+      "label": "Brohan et al 2022 RT-1"
+    },
+    {
+      "slug": "brohan-et-al-2023-rt-2",
+      "label": "Brohan et al 2023 RT-2"
+    },
+    {
+      "slug": "calvin",
+      "label": "CALVIN"
+    },
+    {
+      "slug": "chi-et-al-2023-diffusion-policy",
+      "label": "Chi et al 2023 Diffusion Policy"
+    },
+    {
+      "slug": "classical-control",
+      "label": "Classical Control"
+    },
+    {
+      "slug": "control-layer",
+      "label": "ControlLayer"
+    },
+    {
+      "slug": "cross-embodiment-transfer",
+      "label": "Cross-Embodiment Transfer"
+    },
+    {
+      "slug": "demonstration-dataset",
+      "label": "Demonstration Dataset"
+    },
+    {
+      "slug": "demonstrator",
+      "label": "Demonstrator"
+    },
+    {
+      "slug": "dexterous-manipulation",
+      "label": "Dexterous Manipulation"
+    },
+    {
+      "slug": "diffusion-policy",
+      "label": "Diffusion Policy"
+    },
+    {
+      "slug": "discriminator",
+      "label": "Discriminator"
+    },
+    {
+      "slug": "droid-dataset",
+      "label": "DROID Dataset"
+    },
+    {
+      "slug": "drone-acrobatics",
+      "label": "Drone Acrobatics"
+    },
+    {
+      "slug": "expert-demonstration",
+      "label": "Expert Demonstration"
+    },
+    {
+      "slug": "expert-trajectories",
+      "label": "Expert Trajectories"
+    },
+    {
+      "slug": "finn-levine-abbeel-2016-guided-cost-learning",
+      "label": "Finn Levine Abbeel 2016 Guided Cost Learning"
+    },
+    {
+      "slug": "florence-et-al-2021-implicit-bc",
+      "label": "Florence et al 2021 Implicit BC"
+    },
+    {
+      "slug": "fu-luo-levine-2018-airl",
+      "label": "Fu Luo Levine 2018 AIRL"
+    },
+    {
+      "slug": "function-approximator",
+      "label": "Function Approximator"
+    },
+    {
+      "slug": "gail",
+      "label": "GAIL"
+    },
+    {
+      "slug": "garg-et-al-2021-iq-learn",
+      "label": "Garg et al 2021 IQ-Learn"
+    },
+    {
+      "slug": "generalist-robot-policies",
+      "label": "Generalist Robot Policies"
+    },
+    {
+      "slug": "goal-conditioned-behaviour-cloning",
+      "label": "Goal Conditioned Behaviour Cloning"
+    },
+    {
+      "slug": "ho-ermon-2016-gail",
+      "label": "Ho Ermon 2016 GAIL"
+    },
+    {
+      "slug": "humanoid-control",
+      "label": "Humanoid Control"
+    },
+    {
+      "slug": "inverse-dynamics-model",
+      "label": "Inverse Dynamics Model"
+    },
+    {
+      "slug": "inverse-reinforcement-learning",
+      "label": "Inverse Reinforcement Learning"
+    },
+    {
+      "slug": "khazatsky-et-al-2024-droid",
+      "label": "Khazatsky et al 2024 DROID"
+    },
+    {
+      "slug": "kim-et-al-2024-open-vla",
+      "label": "Kim et al 2024 OpenVLA"
+    },
+    {
+      "slug": "kostrikov-nachum-tompson-2020-value-dice",
+      "label": "Kostrikov Nachum Tompson 2020 ValueDICE"
+    },
+    {
+      "slug": "learning-from-demonstration",
+      "label": "Learning from Demonstration"
+    },
+    {
+      "slug": "libero",
+      "label": "LIBERO"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "mandlekar-et-al-2021-robomimic",
+      "label": "Mandlekar et al 2021 Robomimic"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "maximum-entropy-principle",
+      "label": "Maximum Entropy Principle"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "ng-russell-2000-algorithms-for-inverse-reinforcement-learning",
+      "label": "Ng Russell 2000 Algorithms for Inverse Reinforcement Learning"
+    },
+    {
+      "slug": "no-regret-online-learning",
+      "label": "No-Regret Online Learning"
+    },
+    {
+      "slug": "nvidia-gr00-t-n1-2025",
+      "label": "NVIDIA GR00T-N1 2025"
+    },
+    {
+      "slug": "observation-encoder",
+      "label": "Observation Encoder"
+    },
+    {
+      "slug": "observation-space",
+      "label": "Observation Space"
+    },
+    {
+      "slug": "octo-model-team-2024",
+      "label": "Octo Model Team 2024"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
+    },
+    {
+      "slug": "open-x-embodiment",
+      "label": "Open X-Embodiment"
+    },
+    {
+      "slug": "open-x-embodiment-collaboration-2023",
+      "label": "Open X-Embodiment Collaboration 2023"
+    },
+    {
+      "slug": "physical-intelligence-pi0-2024",
+      "label": "Physical Intelligence pi0 2024"
+    },
+    {
+      "slug": "policy-learning",
+      "label": "Policy Learning"
+    },
+    {
+      "slug": "policy-network",
+      "label": "Policy Network"
+    },
+    {
+      "slug": "pomerleau-1989-alvinn",
+      "label": "Pomerleau 1989 ALVINN"
+    },
+    {
+      "slug": "rapid-task-specification",
+      "label": "Rapid Task Specification"
+    },
+    {
+      "slug": "ratliff-bagnell-zinkevich-2006-maximum-margin-planning",
+      "label": "Ratliff Bagnell Zinkevich 2006 Maximum Margin Planning"
+    },
+    {
+      "slug": "reward-free-learning",
+      "label": "Reward-Free Learning"
+    },
+    {
+      "slug": "rlbench",
+      "label": "RLBench"
+    },
+    {
+      "slug": "robomimic-benchmark",
+      "label": "Robomimic Benchmark"
+    },
+    {
+      "slug": "robot-manipulation",
+      "label": "Robot Manipulation"
+    },
+    {
+      "slug": "ross-gordon-bagnell-2011-dagger-aistats",
+      "label": "Ross Gordon Bagnell 2011 DAgger AISTATS"
+    },
+    {
+      "slug": "sample-efficient-robotics",
+      "label": "Sample-Efficient Robotics"
+    },
+    {
+      "slug": "schaal-1997-learning-from-demonstration",
+      "label": "Schaal 1997 Learning from Demonstration"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "sequential-decision-making",
+      "label": "Sequential Decision Making"
+    },
+    {
+      "slug": "sim-to-real-transfer",
+      "label": "Sim-to-Real Transfer"
+    },
+    {
+      "slug": "skill-transfer",
+      "label": "Skill Transfer"
+    },
+    {
+      "slug": "state-action-pairs",
+      "label": "State Action Pairs"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "teleoperation-interface",
+      "label": "Teleoperation Interface"
+    },
+    {
+      "slug": "torabi-warnell-stone-2018-bco",
+      "label": "Torabi Warnell Stone 2018 BCO"
+    },
+    {
+      "slug": "transformer-policies",
+      "label": "Transformer Policies"
+    },
+    {
+      "slug": "vision-language-action-models",
+      "label": "Vision Language Action Models"
+    },
+    {
+      "slug": "vision-language-models",
+      "label": "Vision Language Models"
+    },
+    {
+      "slug": "wayve-gaia-1-2023",
+      "label": "Wayve GAIA-1 2023"
+    },
+    {
+      "slug": "zhao-et-al-2023-aloha-act",
+      "label": "Zhao et al 2023 ALOHA ACT"
+    },
+    {
+      "slug": "ziebart-2008-maximum-entropy-irl",
+      "label": "Ziebart 2008 Maximum Entropy IRL"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "dagger",
+      "label": "DAgger"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

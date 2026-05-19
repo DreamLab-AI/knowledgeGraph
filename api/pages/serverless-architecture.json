@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:01f3fbd687bbb03bb6aa18c899798da98953eb39a1f1c7d76bdfd71753bf322c",
+  "title": "Serverless Architecture",
+  "slug": "serverless-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:serverless-architecture",
+  "domain": "infrastructure",
+  "definition": "ServerlessArchitecture is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

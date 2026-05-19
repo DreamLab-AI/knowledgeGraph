@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:39c5fffee110b00731d5aa97bffa1951b2b4be4f283b7e0a66def052818cbbcd",
+  "title": "Edge Computing Architecture",
+  "slug": "edge-computing-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:edge-computing-architecture",
+  "domain": "spatial-computing",
+  "definition": "A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:low-latency-experiences",
+        "label": "Low-Latency Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "low-latency-experiences",
+      "label": "Low-Latency Experiences"
+    },
+    {
+      "slug": "distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

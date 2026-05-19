@@ -1,24 +1,1938 @@
-iri:: http://narrativegoldmine.com/spatial-computing#MetaverseAndTelecollaboration
-uri:: urn:visionclaw:concept:spatial-computing:metaverse-and-telecollaboration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:metaverse-and-telecollaboration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Metaverse and Telecollaboration
-content-hash:: sha256-12-e5bc5b2056b6
-legacy-term-id::
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#MetaverseAndTelecollaboration
+legacy_uri:: urn:visionclaw:concept:spatial-computing:metaverse-and-telecollaboration
 public:: true
+
+# Metaverse and Telecollaboration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:574a94c8a078b3132ffd158c8d7b826aeca23d1252357fc5769ee39fa99af074",
+  "@type": "Page",
+  "vc:slug": "metaverse-and-telecollaboration",
+  "title": "Metaverse and Telecollaboration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adalgeirsson2010-lee2011-tsui2011-paulos1998-kristoffersson2013",
+      "vc:label": "Adalgeirsson2010; @Lee2011; @Tsui2011; @Paulos1998; @Kristoffersson2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:adamczyk2007",
+      "vc:label": "Adamczyk2007"
+    },
+    {
+      "@id": "urn:visionflow:linked:aiken2020zooming",
+      "vc:label": "aiken2020zooming"
+    },
+    {
+      "@id": "urn:visionflow:linked:aoki2003",
+      "vc:label": "Aoki2003"
+    },
+    {
+      "@id": "urn:visionflow:linked:argyle1965",
+      "vc:label": "Argyle1965"
+    },
+    {
+      "@id": "urn:visionflow:linked:argyle1969",
+      "vc:label": "Argyle1969"
+    },
+    {
+      "@id": "urn:visionflow:linked:argyle1969-argyle1988-cook1977",
+      "vc:label": "Argyle1969; @Argyle1988; @Cook1977"
+    },
+    {
+      "@id": "urn:visionflow:linked:argyle1969-kleinke1986",
+      "vc:label": "Argyle1969; @Kleinke1986"
+    },
+    {
+      "@id": "urn:visionflow:linked:argyle1976",
+      "vc:label": "Argyle1976"
+    },
+    {
+      "@id": "urn:visionflow:linked:argyle1988",
+      "vc:label": "Argyle1988"
+    },
+    {
+      "@id": "urn:visionflow:linked:argyle1988-argyle1976-argyle1965-argyle1976-argyle1969-kendon1967-monk2002",
+      "vc:label": "Argyle1988; @Argyle1976; @Argyle1965; @Argyle1976; @Argyle1969; @Kendon1967; @Monk2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:authentic-volume2022",
+      "vc:label": "authenticVolume2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:bailenson2001",
+      "vc:label": "Bailenson2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:bailenson2002",
+      "vc:label": "Bailenson2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:bandyopadhyay2001",
+      "vc:label": "Bandyopadhyay2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:bardram2012",
+      "vc:label": "Bardram2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:barrero2021working",
+      "vc:label": "barrero2021working"
+    },
+    {
+      "@id": "urn:visionflow:linked:bartneck2007-bartneck2009",
+      "vc:label": "Bartneck2007; @Bartneck2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:bartneck2009",
+      "vc:label": "Bartneck2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:beck2011",
+      "vc:label": "Beck2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:beck2011-schuemie2001",
+      "vc:label": "Beck2011; @Schuemie2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:benjamin2012",
+      "vc:label": "Benjamin2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:bente1998-slessor2008-argyle1988-hofmann2006-pan2008",
+      "vc:label": "Bente1998; @Slessor2008; @Argyle1988; @Hofmann2006; @Pan2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:berger1975",
+      "vc:label": "Berger1975"
+    },
+    {
+      "@id": "urn:visionflow:linked:biener2022quantifying-luong2022demographic",
+      "vc:label": "biener2022quantifying; @luong2022demographic"
+    },
+    {
+      "@id": "urn:visionflow:linked:biocca2003",
+      "vc:label": "Biocca2003"
+    },
+    {
+      "@id": "urn:visionflow:linked:blanche2010-tay2008",
+      "vc:label": "Blanche2010; @Tay2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:blascovich2002",
+      "vc:label": "Blascovich2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:bloom2015",
+      "vc:label": "Bloom2015"
+    },
+    {
+      "@id": "urn:visionflow:linked:bohannon2013",
+      "vc:label": "Bohannon2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:boker2011",
+      "vc:label": "Boker2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:bondareva2004",
+      "vc:label": "Bondareva2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:bondareva2004-jouppi2002",
+      "vc:label": "Bondareva2004; @Jouppi2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:bruno2013",
+      "vc:label": "Bruno2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:bulu2012",
+      "vc:label": "Bulu2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:buxton1992",
+      "vc:label": "Buxton1992"
+    },
+    {
+      "@id": "urn:visionflow:linked:carlston2013",
+      "vc:label": "Carlston2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:chartrand1999",
+      "vc:label": "Chartrand1999"
+    },
+    {
+      "@id": "urn:visionflow:linked:chen2002",
+      "vc:label": "Chen2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:colburn2000",
+      "vc:label": "Colburn2000"
+    },
+    {
+      "@id": "urn:visionflow:linked:cook1977-kleinke1986-fagel2010",
+      "vc:label": "Cook1977; @Kleinke1986; @Fagel2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:criminisi2003-van-eijk2010",
+      "vc:label": "Criminisi2003; @Van_Eijk2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:cuddihy2000",
+      "vc:label": "Cuddihy2000"
+    },
+    {
+      "@id": "urn:visionflow:linked:dalsgaard2011",
+      "vc:label": "Dalsgaard2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:deckers2013-gibson1963",
+      "vc:label": "Deckers2013; @Gibson1963"
+    },
+    {
+      "@id": "urn:visionflow:linked:desai2011",
+      "vc:label": "Desai2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:doerr2018measure",
+      "vc:label": "doerr2018measure"
+    },
+    {
+      "@id": "urn:visionflow:linked:dourish1996",
+      "vc:label": "Dourish1996"
+    },
+    {
+      "@id": "urn:visionflow:linked:drobyshev22-mp",
+      "vc:label": "Drobyshev22MP"
+    },
+    {
+      "@id": "urn:visionflow:linked:edigo1988",
+      "vc:label": "Edigo1988"
+    },
+    {
+      "@id": "urn:visionflow:linked:ekman1993",
+      "vc:label": "Ekman1993"
+    },
+    {
+      "@id": "urn:visionflow:linked:ekman1993-chovil1991",
+      "vc:label": "Ekman1993; @Chovil1991"
+    },
+    {
+      "@id": "urn:visionflow:linked:eldes2013",
+      "vc:label": "Eldes2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:fagel2010",
+      "vc:label": "Fagel2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:fels2000-sellen1992",
+      "vc:label": "Fels2000; @Sellen1992"
+    },
+    {
+      "@id": "urn:visionflow:linked:fox2015neural",
+      "vc:label": "fox2015neural"
+    },
+    {
+      "@id": "urn:visionflow:linked:fuchs2002",
+      "vc:label": "Fuchs2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:fulk1987-haythornthwaite1995",
+      "vc:label": "Fulk1987; @Haythornthwaite1995"
+    },
+    {
+      "@id": "urn:visionflow:linked:garrison1999-beck2011",
+      "vc:label": "Garrison1999; @Beck2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:gemmell2000-kuster2012",
+      "vc:label": "Gemmell2000; @Kuster2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:gibson2019neuromancer",
+      "vc:label": "gibson2019neuromancer"
+    },
+    {
+      "@id": "urn:visionflow:linked:gillies2005",
+      "vc:label": "Gillies2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:goldin-meadow1999",
+      "vc:label": "Goldin-Meadow1999"
+    },
+    {
+      "@id": "urn:visionflow:linked:goodwin2000",
+      "vc:label": "Goodwin2000"
+    },
+    {
+      "@id": "urn:visionflow:linked:gotsch2018",
+      "vc:label": "Gotsch2018"
+    },
+    {
+      "@id": "urn:visionflow:linked:gunawardena1997",
+      "vc:label": "Gunawardena1997"
+    },
+    {
+      "@id": "urn:visionflow:linked:hager1979-argyle1988",
+      "vc:label": "Hager1979; @Argyle1988"
+    },
+    {
+      "@id": "urn:visionflow:linked:hall1969",
+      "vc:label": "Hall1969"
+    },
+    {
+      "@id": "urn:visionflow:linked:hancock2004",
+      "vc:label": "Hancock2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:harms2004",
+      "vc:label": "Harms2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:hauber2005-gunawardena1997",
+      "vc:label": "Hauber2005; @Gunawardena1997"
+    },
+    {
+      "@id": "urn:visionflow:linked:hauber2006",
+      "vc:label": "Hauber2006"
+    },
+    {
+      "@id": "urn:visionflow:linked:hedge1978",
+      "vc:label": "Hedge1978"
+    },
+    {
+      "@id": "urn:visionflow:linked:heeter1992-biocca1997",
+      "vc:label": "Heeter1992; @Biocca1997"
+    },
+    {
+      "@id": "urn:visionflow:linked:heldner2010",
+      "vc:label": "Heldner2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:hennig2022social",
+      "vc:label": "hennig2022social"
+    },
+    {
+      "@id": "urn:visionflow:linked:ho2008",
+      "vc:label": "Ho2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:hofmann2006",
+      "vc:label": "Hofmann2006"
+    },
+    {
+      "@id": "urn:visionflow:linked:holm2010",
+      "vc:label": "Holm2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:ichikawa1995-okada1994",
+      "vc:label": "Ichikawa1995; @Okada1994"
+    },
+    {
+      "@id": "urn:visionflow:linked:ishii1993",
+      "vc:label": "Ishii1993"
+    },
+    {
+      "@id": "urn:visionflow:linked:itoh2005",
+      "vc:label": "Itoh2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:iverson2005",
+      "vc:label": "Iverson2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:jamil2011-jetter2011",
+      "vc:label": "Jamil2011; @Jetter2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:jones1971",
+      "vc:label": "Jones1971"
+    },
+    {
+      "@id": "urn:visionflow:linked:jones2009",
+      "vc:label": "Jones2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:jouppi2002",
+      "vc:label": "Jouppi2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:jouppi2004",
+      "vc:label": "Jouppi2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:katagiri2007aiduti",
+      "vc:label": "katagiri2007aiduti"
+    },
+    {
+      "@id": "urn:visionflow:linked:kauff2002-kauff2002a",
+      "vc:label": "Kauff2002; @Kauff2002a"
+    },
+    {
+      "@id": "urn:visionflow:linked:kendon1967",
+      "vc:label": "Kendon1967"
+    },
+    {
+      "@id": "urn:visionflow:linked:kleinke1986",
+      "vc:label": "Kleinke1986"
+    },
+    {
+      "@id": "urn:visionflow:linked:kleinke1986-nguyen2009",
+      "vc:label": "Kleinke1986; @Nguyen2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:kleinsmith2013",
+      "vc:label": "Kleinsmith2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:kluttz2009",
+      "vc:label": "Kluttz2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:kollock1998",
+      "vc:label": "Kollock1998"
+    },
+    {
+      "@id": "urn:visionflow:linked:krauss1996",
+      "vc:label": "Krauss1996"
+    },
+    {
+      "@id": "urn:visionflow:linked:kristoffersson2011",
+      "vc:label": "Kristoffersson2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:kristoffersson2013",
+      "vc:label": "Kristoffersson2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:kulik2011",
+      "vc:label": "Kulik2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:langton2000",
+      "vc:label": "Langton2000"
+    },
+    {
+      "@id": "urn:visionflow:linked:lee2011-sakamoto2007-tsui2011",
+      "vc:label": "Lee2011; @Sakamoto2007; @Tsui2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:lincoln2009-lincoln2010-raskar2001",
+      "vc:label": "Lincoln2009; @Lincoln2010; @Raskar2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:lincoln2010",
+      "vc:label": "Lincoln2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:loomis2008",
+      "vc:label": "Loomis2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:loomis2008-fullwood2006",
+      "vc:label": "Loomis2008; @Fullwood2006"
+    },
+    {
+      "@id": "urn:visionflow:linked:loomis2012",
+      "vc:label": "Loomis2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:luff2011",
+      "vc:label": "Luff2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:macrae2002",
+      "vc:label": "Macrae2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:maeda2004",
+      "vc:label": "Maeda2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:marti2005",
+      "vc:label": "Marti2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:mclellan1993avatars",
+      "vc:label": "mclellan1993avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:mihoub2015",
+      "vc:label": "Mihoub2015"
+    },
+    {
+      "@id": "urn:visionflow:linked:mitchell2011",
+      "vc:label": "Mitchell2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:monk2002",
+      "vc:label": "Monk2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:mori1970",
+      "vc:label": "Mori1970"
+    },
+    {
+      "@id": "urn:visionflow:linked:moubayed2012",
+      "vc:label": "Moubayed2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:moubayed2012-vishwanath2005-anstis1969-wollaston1824",
+      "vc:label": "Moubayed2012; @Vishwanath2005; @Anstis1969; @Wollaston1824"
+    },
+    {
+      "@id": "urn:visionflow:linked:murray2009",
+      "vc:label": "Murray2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:mystakidis2022metaverse",
+      "vc:label": "mystakidis2022metaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:nagendran2012",
+      "vc:label": "Nagendran2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:nevelsteen2018virtual",
+      "vc:label": "nevelsteen2018virtual"
+    },
+    {
+      "@id": "urn:visionflow:linked:nguyen2005",
+      "vc:label": "Nguyen2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:nguyen2009",
+      "vc:label": "Nguyen2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:norris2013-norris2012",
+      "vc:label": "Norris2013; @Norris2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:novick1996",
+      "vc:label": "Novick1996"
+    },
+    {
+      "@id": "urn:visionflow:linked:nowak2001",
+      "vc:label": "Nowak2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:oeppen2020human",
+      "vc:label": "oeppen2020human"
+    },
+    {
+      "@id": "urn:visionflow:linked:ohba1998",
+      "vc:label": "ohba1998"
+    },
+    {
+      "@id": "urn:visionflow:linked:omalley1996",
+      "vc:label": "OMalley1996"
+    },
+    {
+      "@id": "urn:visionflow:linked:omniverse",
+      "vc:label": "Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:ondrejka2004escaping",
+      "vc:label": "ondrejka2004escaping"
+    },
+    {
+      "@id": "urn:visionflow:linked:otsuka2005",
+      "vc:label": "Otsuka2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:otsuka2013",
+      "vc:label": "Otsuka2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:ou2005",
+      "vc:label": "Ou2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:oyekoya2012-pan2014-pan2012",
+      "vc:label": "Oyekoya2012; @Pan2014; @Pan2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:pan2014",
+      "vc:label": "Pan2014"
+    },
+    {
+      "@id": "urn:visionflow:linked:park2022metaverse",
+      "vc:label": "park2022metaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:parsons1974",
+      "vc:label": "Parsons1974"
+    },
+    {
+      "@id": "urn:visionflow:linked:pejsa2016",
+      "vc:label": "Pejsa2016"
+    },
+    {
+      "@id": "urn:visionflow:linked:porter2008",
+      "vc:label": "Porter2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:prakash2020characteristic",
+      "vc:label": "prakash2020characteristic"
+    },
+    {
+      "@id": "urn:visionflow:linked:raskar1998",
+      "vc:label": "Raskar1998"
+    },
+    {
+      "@id": "urn:visionflow:linked:raskar2001",
+      "vc:label": "Raskar2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:regenbrecht2015",
+      "vc:label": "Regenbrecht2015"
+    },
+    {
+      "@id": "urn:visionflow:linked:rienks2010",
+      "vc:label": "Rienks2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:risko2011",
+      "vc:label": "Risko2011"
+    },
+    {
+      "@id": "urn:visionflow:linked:rivera-gutierrez2012",
+      "vc:label": "Rivera-Gutierrez2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:roberts2013",
+      "vc:label": "Roberts2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:roberts2015",
+      "vc:label": "Roberts2015"
+    },
+    {
+      "@id": "urn:visionflow:linked:roblox",
+      "vc:label": "Roblox"
+    },
+    {
+      "@id": "urn:visionflow:linked:rosenthal1947",
+      "vc:label": "Rosenthal1947"
+    },
+    {
+      "@id": "urn:visionflow:linked:sakamoto2007",
+      "vc:label": "Sakamoto2007"
+    },
+    {
+      "@id": "urn:visionflow:linked:schegloff1998",
+      "vc:label": "Schegloff1998"
+    },
+    {
+      "@id": "urn:visionflow:linked:schiano2004",
+      "vc:label": "schiano2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:schrammel2007",
+      "vc:label": "Schrammel2007"
+    },
+    {
+      "@id": "urn:visionflow:linked:sellen1992",
+      "vc:label": "Sellen1992"
+    },
+    {
+      "@id": "urn:visionflow:linked:sellen1995",
+      "vc:label": "Sellen1995"
+    },
+    {
+      "@id": "urn:visionflow:linked:slater1999",
+      "vc:label": "Slater1999"
+    },
+    {
+      "@id": "urn:visionflow:linked:slater2004",
+      "vc:label": "Slater2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:slessor2008-hofmann2006",
+      "vc:label": "Slessor2008; @Hofmann2006"
+    },
+    {
+      "@id": "urn:visionflow:linked:st-john2001",
+      "vc:label": "St_John2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:steinmeyer2013",
+      "vc:label": "Steinmeyer2013"
+    },
+    {
+      "@id": "urn:visionflow:linked:steptoe2009",
+      "vc:label": "Steptoe2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:steptoe2010",
+      "vc:label": "Steptoe2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:stiefelhagen2001",
+      "vc:label": "Stiefelhagen2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:stiefelhagen2001-stiefelhagen2002",
+      "vc:label": "Stiefelhagen2001; @Stiefelhagen2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:stiefelhagen2002",
+      "vc:label": "Stiefelhagen2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:strait2014",
+      "vc:label": "Strait2014"
+    },
+    {
+      "@id": "urn:visionflow:linked:symons2004",
+      "vc:label": "Symons2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:tang2006",
+      "vc:label": "Tang2006"
+    },
+    {
+      "@id": "urn:visionflow:linked:tang2010",
+      "vc:label": "Tang2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:ting-toomey2012",
+      "vc:label": "Ting-Toomey2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:troje1998",
+      "vc:label": "Troje1998"
+    },
+    {
+      "@id": "urn:visionflow:linked:tse2007",
+      "vc:label": "Tse2007"
+    },
+    {
+      "@id": "urn:visionflow:linked:tsui2012",
+      "vc:label": "Tsui2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:tuddenham2009",
+      "vc:label": "Tuddenham2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:usoh2000",
+      "vc:label": "Usoh2000"
+    },
+    {
+      "@id": "urn:visionflow:linked:van-baren2004-harms2004",
+      "vc:label": "Van_Baren2004; @Harms2004"
+    },
+    {
+      "@id": "urn:visionflow:linked:van-eijk2010-bock2008",
+      "vc:label": "Van_Eijk2010; @Bock2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertegaal1997",
+      "vc:label": "Vertegaal1997"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertegaal2000",
+      "vc:label": "Vertegaal2000"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertegaal2001",
+      "vc:label": "Vertegaal2001"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertegaal2002",
+      "vc:label": "Vertegaal2002"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertegaal2003",
+      "vc:label": "Vertegaal2003"
+    },
+    {
+      "@id": "urn:visionflow:linked:vishwanath2005-anstis1969-wollaston1824",
+      "vc:label": "Vishwanath2005; @Anstis1969; @Wollaston1824"
+    },
+    {
+      "@id": "urn:visionflow:linked:voida2012",
+      "vc:label": "Voida2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:watson1966-argyle1988",
+      "vc:label": "Watson1966; @Argyle1988"
+    },
+    {
+      "@id": "urn:visionflow:linked:williams1977",
+      "vc:label": "Williams1977"
+    },
+    {
+      "@id": "urn:visionflow:linked:wilson2000",
+      "vc:label": "Wilson2000"
+    },
+    {
+      "@id": "urn:visionflow:linked:wolff2008",
+      "vc:label": "Wolff2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:xi2022challenges",
+      "vc:label": "xi2022challenges"
+    },
+    {
+      "@id": "urn:visionflow:linked:yee2007",
+      "vc:label": "Yee2007"
+    },
+    {
+      "@id": "urn:visionflow:linked:yee2007-bailenson2001-bailenson2003",
+      "vc:label": "Yee2007; @Bailenson2001; @Bailenson2003"
+    },
+    {
+      "@id": "urn:visionflow:linked:yendo2010",
+      "vc:label": "Yendo2010"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e5bc5b2056b6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#MetaverseAndTelecollaboration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Metaverse and Telecollaboration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-and-telecollaboration"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-and-telecollaboration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:574a94c8a078b3132ffd158c8d7b826aeca23d1252357fc5769ee39fa99af074@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+  "@type": "OntologyClass",
+  "label": "Metaverse and Telecollaboration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:574a94c8a078b3132ffd158c8d7b826aeca23d1252357fc5769ee39fa99af074"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:574a94c8a078b3132ffd158c8d7b826aeca23d1252357fc5769ee39fa99af074@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Metaverse and Telecollaboration is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-and-telecollaboration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:574a94c8a078b3132ffd158c8d7b826aeca23d1252357fc5769ee39fa99af074"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adalgeirsson2010; @Lee2011; @Tsui2011; @Paulos1998; @Kristoffersson2013]]",
+      "resolved": "urn:visionflow:linked:adalgeirsson2010-lee2011-tsui2011-paulos1998-kristoffersson2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adamczyk2007]]",
+      "resolved": "urn:visionflow:linked:adamczyk2007",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[aiken2020zooming]]",
+      "resolved": "urn:visionflow:linked:aiken2020zooming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aoki2003]]",
+      "resolved": "urn:visionflow:linked:aoki2003",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argyle1965]]",
+      "resolved": "urn:visionflow:linked:argyle1965",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argyle1969]]",
+      "resolved": "urn:visionflow:linked:argyle1969",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argyle1969; @Argyle1988; @Cook1977]]",
+      "resolved": "urn:visionflow:linked:argyle1969-argyle1988-cook1977",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argyle1969; @Kleinke1986]]",
+      "resolved": "urn:visionflow:linked:argyle1969-kleinke1986",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argyle1976]]",
+      "resolved": "urn:visionflow:linked:argyle1976",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argyle1988]]",
+      "resolved": "urn:visionflow:linked:argyle1988",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argyle1988; @Argyle1976; @Argyle1965; @Argyle1976; @Argyle1969; @Kendon1967; @Monk2002]]",
+      "resolved": "urn:visionflow:linked:argyle1988-argyle1976-argyle1965-argyle1976-argyle1969-kendon1967-monk2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[authenticVolume2022]]",
+      "resolved": "urn:visionflow:linked:authentic-volume2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bailenson2001]]",
+      "resolved": "urn:visionflow:linked:bailenson2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bailenson2002]]",
+      "resolved": "urn:visionflow:linked:bailenson2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bandyopadhyay2001]]",
+      "resolved": "urn:visionflow:linked:bandyopadhyay2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bardram2012]]",
+      "resolved": "urn:visionflow:linked:bardram2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[barrero2021working]]",
+      "resolved": "urn:visionflow:linked:barrero2021working",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bartneck2007; @Bartneck2009]]",
+      "resolved": "urn:visionflow:linked:bartneck2007-bartneck2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bartneck2009]]",
+      "resolved": "urn:visionflow:linked:bartneck2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Beck2011]]",
+      "resolved": "urn:visionflow:linked:beck2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Beck2011; @Schuemie2001]]",
+      "resolved": "urn:visionflow:linked:beck2011-schuemie2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Benjamin2012]]",
+      "resolved": "urn:visionflow:linked:benjamin2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bente1998; @Slessor2008; @Argyle1988; @Hofmann2006; @Pan2008]]",
+      "resolved": "urn:visionflow:linked:bente1998-slessor2008-argyle1988-hofmann2006-pan2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Berger1975]]",
+      "resolved": "urn:visionflow:linked:berger1975",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[biener2022quantifying; @luong2022demographic]]",
+      "resolved": "urn:visionflow:linked:biener2022quantifying-luong2022demographic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Biocca2003]]",
+      "resolved": "urn:visionflow:linked:biocca2003",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blanche2010; @Tay2008]]",
+      "resolved": "urn:visionflow:linked:blanche2010-tay2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blascovich2002]]",
+      "resolved": "urn:visionflow:linked:blascovich2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bloom2015]]",
+      "resolved": "urn:visionflow:linked:bloom2015",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bohannon2013]]",
+      "resolved": "urn:visionflow:linked:bohannon2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Boker2011]]",
+      "resolved": "urn:visionflow:linked:boker2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bondareva2004]]",
+      "resolved": "urn:visionflow:linked:bondareva2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bondareva2004; @Jouppi2002]]",
+      "resolved": "urn:visionflow:linked:bondareva2004-jouppi2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bruno2013]]",
+      "resolved": "urn:visionflow:linked:bruno2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bulu2012]]",
+      "resolved": "urn:visionflow:linked:bulu2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Buxton1992]]",
+      "resolved": "urn:visionflow:linked:buxton1992",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Carlston2013]]",
+      "resolved": "urn:visionflow:linked:carlston2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chartrand1999]]",
+      "resolved": "urn:visionflow:linked:chartrand1999",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chen2002]]",
+      "resolved": "urn:visionflow:linked:chen2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Colburn2000]]",
+      "resolved": "urn:visionflow:linked:colburn2000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cook1977; @Kleinke1986; @Fagel2010]]",
+      "resolved": "urn:visionflow:linked:cook1977-kleinke1986-fagel2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Criminisi2003; @Van_Eijk2010]]",
+      "resolved": "urn:visionflow:linked:criminisi2003-van-eijk2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cuddihy2000]]",
+      "resolved": "urn:visionflow:linked:cuddihy2000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dalsgaard2011]]",
+      "resolved": "urn:visionflow:linked:dalsgaard2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deckers2013; @Gibson1963]]",
+      "resolved": "urn:visionflow:linked:deckers2013-gibson1963",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Desai2011]]",
+      "resolved": "urn:visionflow:linked:desai2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[doerr2018measure]]",
+      "resolved": "urn:visionflow:linked:doerr2018measure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dourish1996]]",
+      "resolved": "urn:visionflow:linked:dourish1996",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Drobyshev22MP]]",
+      "resolved": "urn:visionflow:linked:drobyshev22-mp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Edigo1988]]",
+      "resolved": "urn:visionflow:linked:edigo1988",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ekman1993]]",
+      "resolved": "urn:visionflow:linked:ekman1993",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ekman1993; @Chovil1991]]",
+      "resolved": "urn:visionflow:linked:ekman1993-chovil1991",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eldes2013]]",
+      "resolved": "urn:visionflow:linked:eldes2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fagel2010]]",
+      "resolved": "urn:visionflow:linked:fagel2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fels2000; @Sellen1992]]",
+      "resolved": "urn:visionflow:linked:fels2000-sellen1992",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[fox2015neural]]",
+      "resolved": "urn:visionflow:linked:fox2015neural",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fuchs2002]]",
+      "resolved": "urn:visionflow:linked:fuchs2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fulk1987; @Haythornthwaite1995]]",
+      "resolved": "urn:visionflow:linked:fulk1987-haythornthwaite1995",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Garrison1999; @Beck2011]]",
+      "resolved": "urn:visionflow:linked:garrison1999-beck2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gemmell2000; @Kuster2012]]",
+      "resolved": "urn:visionflow:linked:gemmell2000-kuster2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[gibson2019neuromancer]]",
+      "resolved": "urn:visionflow:linked:gibson2019neuromancer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gillies2005]]",
+      "resolved": "urn:visionflow:linked:gillies2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goldin-Meadow1999]]",
+      "resolved": "urn:visionflow:linked:goldin-meadow1999",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goodwin2000]]",
+      "resolved": "urn:visionflow:linked:goodwin2000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gotsch2018]]",
+      "resolved": "urn:visionflow:linked:gotsch2018",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gunawardena1997]]",
+      "resolved": "urn:visionflow:linked:gunawardena1997",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hager1979; @Argyle1988]]",
+      "resolved": "urn:visionflow:linked:hager1979-argyle1988",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hall1969]]",
+      "resolved": "urn:visionflow:linked:hall1969",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hancock2004]]",
+      "resolved": "urn:visionflow:linked:hancock2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Harms2004]]",
+      "resolved": "urn:visionflow:linked:harms2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hauber2005; @Gunawardena1997]]",
+      "resolved": "urn:visionflow:linked:hauber2005-gunawardena1997",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hauber2006]]",
+      "resolved": "urn:visionflow:linked:hauber2006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hedge1978]]",
+      "resolved": "urn:visionflow:linked:hedge1978",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heeter1992; @Biocca1997]]",
+      "resolved": "urn:visionflow:linked:heeter1992-biocca1997",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heldner2010]]",
+      "resolved": "urn:visionflow:linked:heldner2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hennig2022social]]",
+      "resolved": "urn:visionflow:linked:hennig2022social",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ho2008]]",
+      "resolved": "urn:visionflow:linked:ho2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hofmann2006]]",
+      "resolved": "urn:visionflow:linked:hofmann2006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Holm2010]]",
+      "resolved": "urn:visionflow:linked:holm2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ichikawa1995; @Okada1994]]",
+      "resolved": "urn:visionflow:linked:ichikawa1995-okada1994",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ishii1993]]",
+      "resolved": "urn:visionflow:linked:ishii1993",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Itoh2005]]",
+      "resolved": "urn:visionflow:linked:itoh2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Iverson2005]]",
+      "resolved": "urn:visionflow:linked:iverson2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jamil2011; @Jetter2011]]",
+      "resolved": "urn:visionflow:linked:jamil2011-jetter2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jones1971]]",
+      "resolved": "urn:visionflow:linked:jones1971",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jones2009]]",
+      "resolved": "urn:visionflow:linked:jones2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jouppi2002]]",
+      "resolved": "urn:visionflow:linked:jouppi2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jouppi2004]]",
+      "resolved": "urn:visionflow:linked:jouppi2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[katagiri2007aiduti]]",
+      "resolved": "urn:visionflow:linked:katagiri2007aiduti",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kauff2002; @Kauff2002a]]",
+      "resolved": "urn:visionflow:linked:kauff2002-kauff2002a",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kendon1967]]",
+      "resolved": "urn:visionflow:linked:kendon1967",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kleinke1986]]",
+      "resolved": "urn:visionflow:linked:kleinke1986",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kleinke1986; @Nguyen2009]]",
+      "resolved": "urn:visionflow:linked:kleinke1986-nguyen2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kleinsmith2013]]",
+      "resolved": "urn:visionflow:linked:kleinsmith2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kluttz2009]]",
+      "resolved": "urn:visionflow:linked:kluttz2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kollock1998]]",
+      "resolved": "urn:visionflow:linked:kollock1998",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Krauss1996]]",
+      "resolved": "urn:visionflow:linked:krauss1996",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kristoffersson2011]]",
+      "resolved": "urn:visionflow:linked:kristoffersson2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kristoffersson2013]]",
+      "resolved": "urn:visionflow:linked:kristoffersson2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kulik2011]]",
+      "resolved": "urn:visionflow:linked:kulik2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Langton2000]]",
+      "resolved": "urn:visionflow:linked:langton2000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lee2011; @Sakamoto2007; @Tsui2011]]",
+      "resolved": "urn:visionflow:linked:lee2011-sakamoto2007-tsui2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lincoln2009; @Lincoln2010; @Raskar2001]]",
+      "resolved": "urn:visionflow:linked:lincoln2009-lincoln2010-raskar2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lincoln2010]]",
+      "resolved": "urn:visionflow:linked:lincoln2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Loomis2008]]",
+      "resolved": "urn:visionflow:linked:loomis2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Loomis2008; @Fullwood2006]]",
+      "resolved": "urn:visionflow:linked:loomis2008-fullwood2006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Loomis2012]]",
+      "resolved": "urn:visionflow:linked:loomis2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Luff2011]]",
+      "resolved": "urn:visionflow:linked:luff2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Macrae2002]]",
+      "resolved": "urn:visionflow:linked:macrae2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Maeda2004]]",
+      "resolved": "urn:visionflow:linked:maeda2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Marti2005]]",
+      "resolved": "urn:visionflow:linked:marti2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[mclellan1993avatars]]",
+      "resolved": "urn:visionflow:linked:mclellan1993avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mihoub2015]]",
+      "resolved": "urn:visionflow:linked:mihoub2015",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mitchell2011]]",
+      "resolved": "urn:visionflow:linked:mitchell2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monk2002]]",
+      "resolved": "urn:visionflow:linked:monk2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mori1970]]",
+      "resolved": "urn:visionflow:linked:mori1970",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Moubayed2012]]",
+      "resolved": "urn:visionflow:linked:moubayed2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Moubayed2012; @Vishwanath2005; @Anstis1969; @Wollaston1824]]",
+      "resolved": "urn:visionflow:linked:moubayed2012-vishwanath2005-anstis1969-wollaston1824",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Murray2009]]",
+      "resolved": "urn:visionflow:linked:murray2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[mystakidis2022metaverse]]",
+      "resolved": "urn:visionflow:linked:mystakidis2022metaverse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nagendran2012]]",
+      "resolved": "urn:visionflow:linked:nagendran2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[nevelsteen2018virtual]]",
+      "resolved": "urn:visionflow:linked:nevelsteen2018virtual",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nguyen2005]]",
+      "resolved": "urn:visionflow:linked:nguyen2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nguyen2009]]",
+      "resolved": "urn:visionflow:linked:nguyen2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Norris2013; @Norris2012]]",
+      "resolved": "urn:visionflow:linked:norris2013-norris2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Novick1996]]",
+      "resolved": "urn:visionflow:linked:novick1996",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nowak2001]]",
+      "resolved": "urn:visionflow:linked:nowak2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[oeppen2020human]]",
+      "resolved": "urn:visionflow:linked:oeppen2020human",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ohba1998]]",
+      "resolved": "urn:visionflow:linked:ohba1998",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OMalley1996]]",
+      "resolved": "urn:visionflow:linked:omalley1996",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Omniverse]]",
+      "resolved": "urn:visionflow:linked:omniverse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ondrejka2004escaping]]",
+      "resolved": "urn:visionflow:linked:ondrejka2004escaping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Otsuka2005]]",
+      "resolved": "urn:visionflow:linked:otsuka2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Otsuka2013]]",
+      "resolved": "urn:visionflow:linked:otsuka2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ou2005]]",
+      "resolved": "urn:visionflow:linked:ou2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Oyekoya2012; @Pan2014; @Pan2012]]",
+      "resolved": "urn:visionflow:linked:oyekoya2012-pan2014-pan2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pan2014]]",
+      "resolved": "urn:visionflow:linked:pan2014",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[park2022metaverse]]",
+      "resolved": "urn:visionflow:linked:park2022metaverse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Parsons1974]]",
+      "resolved": "urn:visionflow:linked:parsons1974",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pejsa2016]]",
+      "resolved": "urn:visionflow:linked:pejsa2016",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Porter2008]]",
+      "resolved": "urn:visionflow:linked:porter2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[prakash2020characteristic]]",
+      "resolved": "urn:visionflow:linked:prakash2020characteristic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Raskar1998]]",
+      "resolved": "urn:visionflow:linked:raskar1998",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Raskar2001]]",
+      "resolved": "urn:visionflow:linked:raskar2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regenbrecht2015]]",
+      "resolved": "urn:visionflow:linked:regenbrecht2015",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rienks2010]]",
+      "resolved": "urn:visionflow:linked:rienks2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risko2011]]",
+      "resolved": "urn:visionflow:linked:risko2011",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rivera-Gutierrez2012]]",
+      "resolved": "urn:visionflow:linked:rivera-gutierrez2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Roberts2013]]",
+      "resolved": "urn:visionflow:linked:roberts2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Roberts2015]]",
+      "resolved": "urn:visionflow:linked:roberts2015",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Roblox]]",
+      "resolved": "urn:visionflow:linked:roblox",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rosenthal1947]]",
+      "resolved": "urn:visionflow:linked:rosenthal1947",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sakamoto2007]]",
+      "resolved": "urn:visionflow:linked:sakamoto2007",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schegloff1998]]",
+      "resolved": "urn:visionflow:linked:schegloff1998",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[schiano2004]]",
+      "resolved": "urn:visionflow:linked:schiano2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schrammel2007]]",
+      "resolved": "urn:visionflow:linked:schrammel2007",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sellen1992]]",
+      "resolved": "urn:visionflow:linked:sellen1992",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sellen1995]]",
+      "resolved": "urn:visionflow:linked:sellen1995",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Slater1999]]",
+      "resolved": "urn:visionflow:linked:slater1999",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Slater2004]]",
+      "resolved": "urn:visionflow:linked:slater2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Slessor2008; @Hofmann2006]]",
+      "resolved": "urn:visionflow:linked:slessor2008-hofmann2006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[St_John2001]]",
+      "resolved": "urn:visionflow:linked:st-john2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Steinmeyer2013]]",
+      "resolved": "urn:visionflow:linked:steinmeyer2013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Steptoe2009]]",
+      "resolved": "urn:visionflow:linked:steptoe2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Steptoe2010]]",
+      "resolved": "urn:visionflow:linked:steptoe2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stiefelhagen2001]]",
+      "resolved": "urn:visionflow:linked:stiefelhagen2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stiefelhagen2001; @Stiefelhagen2002]]",
+      "resolved": "urn:visionflow:linked:stiefelhagen2001-stiefelhagen2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stiefelhagen2002]]",
+      "resolved": "urn:visionflow:linked:stiefelhagen2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strait2014]]",
+      "resolved": "urn:visionflow:linked:strait2014",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Symons2004]]",
+      "resolved": "urn:visionflow:linked:symons2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tang2006]]",
+      "resolved": "urn:visionflow:linked:tang2006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tang2010]]",
+      "resolved": "urn:visionflow:linked:tang2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ting-Toomey2012]]",
+      "resolved": "urn:visionflow:linked:ting-toomey2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Troje1998]]",
+      "resolved": "urn:visionflow:linked:troje1998",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tse2007]]",
+      "resolved": "urn:visionflow:linked:tse2007",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tsui2012]]",
+      "resolved": "urn:visionflow:linked:tsui2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tuddenham2009]]",
+      "resolved": "urn:visionflow:linked:tuddenham2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Usoh2000]]",
+      "resolved": "urn:visionflow:linked:usoh2000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Van_Baren2004; @Harms2004]]",
+      "resolved": "urn:visionflow:linked:van-baren2004-harms2004",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Van_Eijk2010; @Bock2008]]",
+      "resolved": "urn:visionflow:linked:van-eijk2010-bock2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vertegaal1997]]",
+      "resolved": "urn:visionflow:linked:vertegaal1997",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vertegaal2000]]",
+      "resolved": "urn:visionflow:linked:vertegaal2000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vertegaal2001]]",
+      "resolved": "urn:visionflow:linked:vertegaal2001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vertegaal2002]]",
+      "resolved": "urn:visionflow:linked:vertegaal2002",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vertegaal2003]]",
+      "resolved": "urn:visionflow:linked:vertegaal2003",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vishwanath2005; @Anstis1969; @Wollaston1824]]",
+      "resolved": "urn:visionflow:linked:vishwanath2005-anstis1969-wollaston1824",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Voida2012]]",
+      "resolved": "urn:visionflow:linked:voida2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Watson1966; @Argyle1988]]",
+      "resolved": "urn:visionflow:linked:watson1966-argyle1988",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Williams1977]]",
+      "resolved": "urn:visionflow:linked:williams1977",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wilson2000]]",
+      "resolved": "urn:visionflow:linked:wilson2000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wolff2008]]",
+      "resolved": "urn:visionflow:linked:wolff2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[xi2022challenges]]",
+      "resolved": "urn:visionflow:linked:xi2022challenges",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Yee2007]]",
+      "resolved": "urn:visionflow:linked:yee2007",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Yee2007; @Bailenson2001; @Bailenson2003]]",
+      "resolved": "urn:visionflow:linked:yee2007-bailenson2001-bailenson2003",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Yendo2010]]",
+      "resolved": "urn:visionflow:linked:yendo2010",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:574a94c8a078b3132ffd158c8d7b826aeca23d1252357fc5769ee39fa99af074@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Metaverse and Telecollaboration is a concept within the ngm domain.

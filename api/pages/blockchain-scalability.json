@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:b93bdabea566799526167e092d49b7a1d884dda164ad584ff460e4880de2b336",
+  "title": "Blockchain Scalability",
+  "slug": "blockchain-scalability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-scalability",
+  "domain": "blockchain",
+  "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:protocol-architecture",
+      "label": "Protocol Architecture"
+    },
+    {
+      "id": "urn:visionflow:linked:system-performance",
+      "label": "System Performance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:layer-2-solution",
+        "label": "Layer 2 Solution"
+      },
+      {
+        "id": "urn:visionflow:linked:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:visionflow:linked:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:high-throughput",
+        "label": "High Throughput"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:visionflow:linked:mass-adoption",
+        "label": "Mass Adoption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "high-throughput",
+      "label": "High Throughput"
+    },
+    {
+      "slug": "layer-2-solution",
+      "label": "Layer 2 Solution"
+    },
+    {
+      "slug": "low-latency",
+      "label": "Low Latency"
+    },
+    {
+      "slug": "mass-adoption",
+      "label": "Mass Adoption"
+    },
+    {
+      "slug": "protocol-architecture",
+      "label": "Protocol Architecture"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "rollups",
+      "label": "Rollups"
+    },
+    {
+      "slug": "sharding",
+      "label": "Sharding"
+    },
+    {
+      "slug": "system-performance",
+      "label": "System Performance"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "data-compression",
+      "label": "Data Compression"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    }
+  ]
+}

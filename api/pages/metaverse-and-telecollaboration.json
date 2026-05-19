@@ -1,0 +1,840 @@
+{
+  "id": "urn:visionflow:page:574a94c8a078b3132ffd158c8d7b826aeca23d1252357fc5769ee39fa99af074",
+  "title": "Metaverse and Telecollaboration",
+  "slug": "metaverse-and-telecollaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+  "domain": "spatial-computing",
+  "definition": "Metaverse and Telecollaboration is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adalgeirsson2010-lee2011-tsui2011-paulos1998-kristoffersson2013",
+      "label": "Adalgeirsson2010; @Lee2011; @Tsui2011; @Paulos1998; @Kristoffersson2013"
+    },
+    {
+      "slug": "adamczyk2007",
+      "label": "Adamczyk2007"
+    },
+    {
+      "slug": "aiken2020zooming",
+      "label": "aiken2020zooming"
+    },
+    {
+      "slug": "aoki2003",
+      "label": "Aoki2003"
+    },
+    {
+      "slug": "argyle1965",
+      "label": "Argyle1965"
+    },
+    {
+      "slug": "argyle1969",
+      "label": "Argyle1969"
+    },
+    {
+      "slug": "argyle1969-argyle1988-cook1977",
+      "label": "Argyle1969; @Argyle1988; @Cook1977"
+    },
+    {
+      "slug": "argyle1969-kleinke1986",
+      "label": "Argyle1969; @Kleinke1986"
+    },
+    {
+      "slug": "argyle1976",
+      "label": "Argyle1976"
+    },
+    {
+      "slug": "argyle1988",
+      "label": "Argyle1988"
+    },
+    {
+      "slug": "argyle1988-argyle1976-argyle1965-argyle1976-argyle1969-kendon1967-monk2002",
+      "label": "Argyle1988; @Argyle1976; @Argyle1965; @Argyle1976; @Argyle1969; @Kendon1967; @Monk2002"
+    },
+    {
+      "slug": "authentic-volume2022",
+      "label": "authenticVolume2022"
+    },
+    {
+      "slug": "bailenson2001",
+      "label": "Bailenson2001"
+    },
+    {
+      "slug": "bailenson2002",
+      "label": "Bailenson2002"
+    },
+    {
+      "slug": "bandyopadhyay2001",
+      "label": "Bandyopadhyay2001"
+    },
+    {
+      "slug": "bardram2012",
+      "label": "Bardram2012"
+    },
+    {
+      "slug": "barrero2021working",
+      "label": "barrero2021working"
+    },
+    {
+      "slug": "bartneck2007-bartneck2009",
+      "label": "Bartneck2007; @Bartneck2009"
+    },
+    {
+      "slug": "bartneck2009",
+      "label": "Bartneck2009"
+    },
+    {
+      "slug": "beck2011",
+      "label": "Beck2011"
+    },
+    {
+      "slug": "beck2011-schuemie2001",
+      "label": "Beck2011; @Schuemie2001"
+    },
+    {
+      "slug": "benjamin2012",
+      "label": "Benjamin2012"
+    },
+    {
+      "slug": "bente1998-slessor2008-argyle1988-hofmann2006-pan2008",
+      "label": "Bente1998; @Slessor2008; @Argyle1988; @Hofmann2006; @Pan2008"
+    },
+    {
+      "slug": "berger1975",
+      "label": "Berger1975"
+    },
+    {
+      "slug": "biener2022quantifying-luong2022demographic",
+      "label": "biener2022quantifying; @luong2022demographic"
+    },
+    {
+      "slug": "biocca2003",
+      "label": "Biocca2003"
+    },
+    {
+      "slug": "blanche2010-tay2008",
+      "label": "Blanche2010; @Tay2008"
+    },
+    {
+      "slug": "blascovich2002",
+      "label": "Blascovich2002"
+    },
+    {
+      "slug": "bloom2015",
+      "label": "Bloom2015"
+    },
+    {
+      "slug": "bohannon2013",
+      "label": "Bohannon2013"
+    },
+    {
+      "slug": "boker2011",
+      "label": "Boker2011"
+    },
+    {
+      "slug": "bondareva2004",
+      "label": "Bondareva2004"
+    },
+    {
+      "slug": "bondareva2004-jouppi2002",
+      "label": "Bondareva2004; @Jouppi2002"
+    },
+    {
+      "slug": "bruno2013",
+      "label": "Bruno2013"
+    },
+    {
+      "slug": "bulu2012",
+      "label": "Bulu2012"
+    },
+    {
+      "slug": "buxton1992",
+      "label": "Buxton1992"
+    },
+    {
+      "slug": "carlston2013",
+      "label": "Carlston2013"
+    },
+    {
+      "slug": "chartrand1999",
+      "label": "Chartrand1999"
+    },
+    {
+      "slug": "chen2002",
+      "label": "Chen2002"
+    },
+    {
+      "slug": "colburn2000",
+      "label": "Colburn2000"
+    },
+    {
+      "slug": "cook1977-kleinke1986-fagel2010",
+      "label": "Cook1977; @Kleinke1986; @Fagel2010"
+    },
+    {
+      "slug": "criminisi2003-van-eijk2010",
+      "label": "Criminisi2003; @Van_Eijk2010"
+    },
+    {
+      "slug": "cuddihy2000",
+      "label": "Cuddihy2000"
+    },
+    {
+      "slug": "dalsgaard2011",
+      "label": "Dalsgaard2011"
+    },
+    {
+      "slug": "deckers2013-gibson1963",
+      "label": "Deckers2013; @Gibson1963"
+    },
+    {
+      "slug": "desai2011",
+      "label": "Desai2011"
+    },
+    {
+      "slug": "doerr2018measure",
+      "label": "doerr2018measure"
+    },
+    {
+      "slug": "dourish1996",
+      "label": "Dourish1996"
+    },
+    {
+      "slug": "drobyshev22-mp",
+      "label": "Drobyshev22MP"
+    },
+    {
+      "slug": "edigo1988",
+      "label": "Edigo1988"
+    },
+    {
+      "slug": "ekman1993",
+      "label": "Ekman1993"
+    },
+    {
+      "slug": "ekman1993-chovil1991",
+      "label": "Ekman1993; @Chovil1991"
+    },
+    {
+      "slug": "eldes2013",
+      "label": "Eldes2013"
+    },
+    {
+      "slug": "fagel2010",
+      "label": "Fagel2010"
+    },
+    {
+      "slug": "fels2000-sellen1992",
+      "label": "Fels2000; @Sellen1992"
+    },
+    {
+      "slug": "fox2015neural",
+      "label": "fox2015neural"
+    },
+    {
+      "slug": "fuchs2002",
+      "label": "Fuchs2002"
+    },
+    {
+      "slug": "fulk1987-haythornthwaite1995",
+      "label": "Fulk1987; @Haythornthwaite1995"
+    },
+    {
+      "slug": "garrison1999-beck2011",
+      "label": "Garrison1999; @Beck2011"
+    },
+    {
+      "slug": "gemmell2000-kuster2012",
+      "label": "Gemmell2000; @Kuster2012"
+    },
+    {
+      "slug": "gibson2019neuromancer",
+      "label": "gibson2019neuromancer"
+    },
+    {
+      "slug": "gillies2005",
+      "label": "Gillies2005"
+    },
+    {
+      "slug": "goldin-meadow1999",
+      "label": "Goldin-Meadow1999"
+    },
+    {
+      "slug": "goodwin2000",
+      "label": "Goodwin2000"
+    },
+    {
+      "slug": "gotsch2018",
+      "label": "Gotsch2018"
+    },
+    {
+      "slug": "gunawardena1997",
+      "label": "Gunawardena1997"
+    },
+    {
+      "slug": "hager1979-argyle1988",
+      "label": "Hager1979; @Argyle1988"
+    },
+    {
+      "slug": "hall1969",
+      "label": "Hall1969"
+    },
+    {
+      "slug": "hancock2004",
+      "label": "Hancock2004"
+    },
+    {
+      "slug": "harms2004",
+      "label": "Harms2004"
+    },
+    {
+      "slug": "hauber2005-gunawardena1997",
+      "label": "Hauber2005; @Gunawardena1997"
+    },
+    {
+      "slug": "hauber2006",
+      "label": "Hauber2006"
+    },
+    {
+      "slug": "hedge1978",
+      "label": "Hedge1978"
+    },
+    {
+      "slug": "heeter1992-biocca1997",
+      "label": "Heeter1992; @Biocca1997"
+    },
+    {
+      "slug": "heldner2010",
+      "label": "Heldner2010"
+    },
+    {
+      "slug": "hennig2022social",
+      "label": "hennig2022social"
+    },
+    {
+      "slug": "ho2008",
+      "label": "Ho2008"
+    },
+    {
+      "slug": "hofmann2006",
+      "label": "Hofmann2006"
+    },
+    {
+      "slug": "holm2010",
+      "label": "Holm2010"
+    },
+    {
+      "slug": "ichikawa1995-okada1994",
+      "label": "Ichikawa1995; @Okada1994"
+    },
+    {
+      "slug": "ishii1993",
+      "label": "Ishii1993"
+    },
+    {
+      "slug": "itoh2005",
+      "label": "Itoh2005"
+    },
+    {
+      "slug": "iverson2005",
+      "label": "Iverson2005"
+    },
+    {
+      "slug": "jamil2011-jetter2011",
+      "label": "Jamil2011; @Jetter2011"
+    },
+    {
+      "slug": "jones1971",
+      "label": "Jones1971"
+    },
+    {
+      "slug": "jones2009",
+      "label": "Jones2009"
+    },
+    {
+      "slug": "jouppi2002",
+      "label": "Jouppi2002"
+    },
+    {
+      "slug": "jouppi2004",
+      "label": "Jouppi2004"
+    },
+    {
+      "slug": "katagiri2007aiduti",
+      "label": "katagiri2007aiduti"
+    },
+    {
+      "slug": "kauff2002-kauff2002a",
+      "label": "Kauff2002; @Kauff2002a"
+    },
+    {
+      "slug": "kendon1967",
+      "label": "Kendon1967"
+    },
+    {
+      "slug": "kleinke1986",
+      "label": "Kleinke1986"
+    },
+    {
+      "slug": "kleinke1986-nguyen2009",
+      "label": "Kleinke1986; @Nguyen2009"
+    },
+    {
+      "slug": "kleinsmith2013",
+      "label": "Kleinsmith2013"
+    },
+    {
+      "slug": "kluttz2009",
+      "label": "Kluttz2009"
+    },
+    {
+      "slug": "kollock1998",
+      "label": "Kollock1998"
+    },
+    {
+      "slug": "krauss1996",
+      "label": "Krauss1996"
+    },
+    {
+      "slug": "kristoffersson2011",
+      "label": "Kristoffersson2011"
+    },
+    {
+      "slug": "kristoffersson2013",
+      "label": "Kristoffersson2013"
+    },
+    {
+      "slug": "kulik2011",
+      "label": "Kulik2011"
+    },
+    {
+      "slug": "langton2000",
+      "label": "Langton2000"
+    },
+    {
+      "slug": "lee2011-sakamoto2007-tsui2011",
+      "label": "Lee2011; @Sakamoto2007; @Tsui2011"
+    },
+    {
+      "slug": "lincoln2009-lincoln2010-raskar2001",
+      "label": "Lincoln2009; @Lincoln2010; @Raskar2001"
+    },
+    {
+      "slug": "lincoln2010",
+      "label": "Lincoln2010"
+    },
+    {
+      "slug": "loomis2008",
+      "label": "Loomis2008"
+    },
+    {
+      "slug": "loomis2008-fullwood2006",
+      "label": "Loomis2008; @Fullwood2006"
+    },
+    {
+      "slug": "loomis2012",
+      "label": "Loomis2012"
+    },
+    {
+      "slug": "luff2011",
+      "label": "Luff2011"
+    },
+    {
+      "slug": "macrae2002",
+      "label": "Macrae2002"
+    },
+    {
+      "slug": "maeda2004",
+      "label": "Maeda2004"
+    },
+    {
+      "slug": "marti2005",
+      "label": "Marti2005"
+    },
+    {
+      "slug": "mclellan1993avatars",
+      "label": "mclellan1993avatars"
+    },
+    {
+      "slug": "mihoub2015",
+      "label": "Mihoub2015"
+    },
+    {
+      "slug": "mitchell2011",
+      "label": "Mitchell2011"
+    },
+    {
+      "slug": "monk2002",
+      "label": "Monk2002"
+    },
+    {
+      "slug": "mori1970",
+      "label": "Mori1970"
+    },
+    {
+      "slug": "moubayed2012",
+      "label": "Moubayed2012"
+    },
+    {
+      "slug": "moubayed2012-vishwanath2005-anstis1969-wollaston1824",
+      "label": "Moubayed2012; @Vishwanath2005; @Anstis1969; @Wollaston1824"
+    },
+    {
+      "slug": "murray2009",
+      "label": "Murray2009"
+    },
+    {
+      "slug": "mystakidis2022metaverse",
+      "label": "mystakidis2022metaverse"
+    },
+    {
+      "slug": "nagendran2012",
+      "label": "Nagendran2012"
+    },
+    {
+      "slug": "nevelsteen2018virtual",
+      "label": "nevelsteen2018virtual"
+    },
+    {
+      "slug": "nguyen2005",
+      "label": "Nguyen2005"
+    },
+    {
+      "slug": "nguyen2009",
+      "label": "Nguyen2009"
+    },
+    {
+      "slug": "norris2013-norris2012",
+      "label": "Norris2013; @Norris2012"
+    },
+    {
+      "slug": "novick1996",
+      "label": "Novick1996"
+    },
+    {
+      "slug": "nowak2001",
+      "label": "Nowak2001"
+    },
+    {
+      "slug": "oeppen2020human",
+      "label": "oeppen2020human"
+    },
+    {
+      "slug": "ohba1998",
+      "label": "ohba1998"
+    },
+    {
+      "slug": "omalley1996",
+      "label": "OMalley1996"
+    },
+    {
+      "slug": "omniverse",
+      "label": "Omniverse"
+    },
+    {
+      "slug": "ondrejka2004escaping",
+      "label": "ondrejka2004escaping"
+    },
+    {
+      "slug": "otsuka2005",
+      "label": "Otsuka2005"
+    },
+    {
+      "slug": "otsuka2013",
+      "label": "Otsuka2013"
+    },
+    {
+      "slug": "ou2005",
+      "label": "Ou2005"
+    },
+    {
+      "slug": "oyekoya2012-pan2014-pan2012",
+      "label": "Oyekoya2012; @Pan2014; @Pan2012"
+    },
+    {
+      "slug": "pan2014",
+      "label": "Pan2014"
+    },
+    {
+      "slug": "park2022metaverse",
+      "label": "park2022metaverse"
+    },
+    {
+      "slug": "parsons1974",
+      "label": "Parsons1974"
+    },
+    {
+      "slug": "pejsa2016",
+      "label": "Pejsa2016"
+    },
+    {
+      "slug": "porter2008",
+      "label": "Porter2008"
+    },
+    {
+      "slug": "prakash2020characteristic",
+      "label": "prakash2020characteristic"
+    },
+    {
+      "slug": "raskar1998",
+      "label": "Raskar1998"
+    },
+    {
+      "slug": "raskar2001",
+      "label": "Raskar2001"
+    },
+    {
+      "slug": "regenbrecht2015",
+      "label": "Regenbrecht2015"
+    },
+    {
+      "slug": "rienks2010",
+      "label": "Rienks2010"
+    },
+    {
+      "slug": "risko2011",
+      "label": "Risko2011"
+    },
+    {
+      "slug": "rivera-gutierrez2012",
+      "label": "Rivera-Gutierrez2012"
+    },
+    {
+      "slug": "roberts2013",
+      "label": "Roberts2013"
+    },
+    {
+      "slug": "roberts2015",
+      "label": "Roberts2015"
+    },
+    {
+      "slug": "roblox",
+      "label": "Roblox"
+    },
+    {
+      "slug": "rosenthal1947",
+      "label": "Rosenthal1947"
+    },
+    {
+      "slug": "sakamoto2007",
+      "label": "Sakamoto2007"
+    },
+    {
+      "slug": "schegloff1998",
+      "label": "Schegloff1998"
+    },
+    {
+      "slug": "schiano2004",
+      "label": "schiano2004"
+    },
+    {
+      "slug": "schrammel2007",
+      "label": "Schrammel2007"
+    },
+    {
+      "slug": "sellen1992",
+      "label": "Sellen1992"
+    },
+    {
+      "slug": "sellen1995",
+      "label": "Sellen1995"
+    },
+    {
+      "slug": "slater1999",
+      "label": "Slater1999"
+    },
+    {
+      "slug": "slater2004",
+      "label": "Slater2004"
+    },
+    {
+      "slug": "slessor2008-hofmann2006",
+      "label": "Slessor2008; @Hofmann2006"
+    },
+    {
+      "slug": "st-john2001",
+      "label": "St_John2001"
+    },
+    {
+      "slug": "steinmeyer2013",
+      "label": "Steinmeyer2013"
+    },
+    {
+      "slug": "steptoe2009",
+      "label": "Steptoe2009"
+    },
+    {
+      "slug": "steptoe2010",
+      "label": "Steptoe2010"
+    },
+    {
+      "slug": "stiefelhagen2001",
+      "label": "Stiefelhagen2001"
+    },
+    {
+      "slug": "stiefelhagen2001-stiefelhagen2002",
+      "label": "Stiefelhagen2001; @Stiefelhagen2002"
+    },
+    {
+      "slug": "stiefelhagen2002",
+      "label": "Stiefelhagen2002"
+    },
+    {
+      "slug": "strait2014",
+      "label": "Strait2014"
+    },
+    {
+      "slug": "symons2004",
+      "label": "Symons2004"
+    },
+    {
+      "slug": "tang2006",
+      "label": "Tang2006"
+    },
+    {
+      "slug": "tang2010",
+      "label": "Tang2010"
+    },
+    {
+      "slug": "ting-toomey2012",
+      "label": "Ting-Toomey2012"
+    },
+    {
+      "slug": "troje1998",
+      "label": "Troje1998"
+    },
+    {
+      "slug": "tse2007",
+      "label": "Tse2007"
+    },
+    {
+      "slug": "tsui2012",
+      "label": "Tsui2012"
+    },
+    {
+      "slug": "tuddenham2009",
+      "label": "Tuddenham2009"
+    },
+    {
+      "slug": "usoh2000",
+      "label": "Usoh2000"
+    },
+    {
+      "slug": "van-baren2004-harms2004",
+      "label": "Van_Baren2004; @Harms2004"
+    },
+    {
+      "slug": "van-eijk2010-bock2008",
+      "label": "Van_Eijk2010; @Bock2008"
+    },
+    {
+      "slug": "vertegaal1997",
+      "label": "Vertegaal1997"
+    },
+    {
+      "slug": "vertegaal2000",
+      "label": "Vertegaal2000"
+    },
+    {
+      "slug": "vertegaal2001",
+      "label": "Vertegaal2001"
+    },
+    {
+      "slug": "vertegaal2002",
+      "label": "Vertegaal2002"
+    },
+    {
+      "slug": "vertegaal2003",
+      "label": "Vertegaal2003"
+    },
+    {
+      "slug": "vishwanath2005-anstis1969-wollaston1824",
+      "label": "Vishwanath2005; @Anstis1969; @Wollaston1824"
+    },
+    {
+      "slug": "voida2012",
+      "label": "Voida2012"
+    },
+    {
+      "slug": "watson1966-argyle1988",
+      "label": "Watson1966; @Argyle1988"
+    },
+    {
+      "slug": "williams1977",
+      "label": "Williams1977"
+    },
+    {
+      "slug": "wilson2000",
+      "label": "Wilson2000"
+    },
+    {
+      "slug": "wolff2008",
+      "label": "Wolff2008"
+    },
+    {
+      "slug": "xi2022challenges",
+      "label": "xi2022challenges"
+    },
+    {
+      "slug": "yee2007",
+      "label": "Yee2007"
+    },
+    {
+      "slug": "yee2007-bailenson2001-bailenson2003",
+      "label": "Yee2007; @Bailenson2001; @Bailenson2003"
+    },
+    {
+      "slug": "yendo2010",
+      "label": "Yendo2010"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "well-being",
+      "label": "Well Being"
+    }
+  ]
+}

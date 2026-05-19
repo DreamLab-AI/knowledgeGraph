@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:58068b6dd85995bf23250282a5233f7bb6b3e8aa7d9d6a6d678ef7f6bacb9e1e",
+  "title": "Simulation",
+  "slug": "simulation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:simulation",
+  "domain": "infrastructure",
+  "definition": "Simulation is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    }
+  ]
+}

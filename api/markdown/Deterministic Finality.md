@@ -1,21 +1,283 @@
-iri:: http://narrativegoldmine.com/blockchain#DeterministicFinality
-uri:: urn:visionclaw:concept:blockchain:deterministic-finality
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:deterministic-finality
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Deterministic Finality
-content-hash:: sha256-12-9372123862a4
-legacy-term-id:: BC-8004
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#DeterministicFinality
+legacy_uri:: urn:visionclaw:concept:blockchain:deterministic-finality
 public:: true
+
+# Deterministic Finality
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b",
+  "@type": "Page",
+  "vc:slug": "deterministic-finality",
+  "title": "Deterministic Finality",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:absolute-transaction-guarantee",
+      "vc:label": "Absolute Transaction Guarantee"
+    },
+    {
+      "@id": "urn:visionflow:linked:validator",
+      "vc:label": "Validator"
+    },
+    {
+      "@id": "urn:visionflow:linked:validator-set",
+      "vc:label": "Validator Set"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "vc:label": "Byzantine Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:probabilistic-finality",
+      "vc:label": "Probabilistic Finality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction-finality",
+      "vc:label": "Transaction Finality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9372123862a4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#DeterministicFinality"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8004"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Deterministic Finality"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:deterministic-finality"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:deterministic-finality"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:deterministic-finality",
+  "@type": "OntologyClass",
+  "label": "Deterministic Finality",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted. Requires supermajority validator agreement (typically 2/3+) and delivers instant certainty without probabilistic confirmation waiting.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:validator-set",
+      "vc:label": "Validator Set"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:owl:class:probabilistic-finality",
+      "vc:label": "Probabilistic Finality"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:deterministic-finality:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Absolute Transaction Guarantee]]",
+      "resolved": "urn:visionflow:linked:absolute-transaction-guarantee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Validator]]",
+      "resolved": "urn:visionflow:linked:validator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Validator Set]]",
+      "resolved": "urn:visionflow:linked:validator-set",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Byzantine Fault Tolerance]]",
+      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Probabilistic Finality]]",
+      "resolved": "urn:visionflow:owl:class:probabilistic-finality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction Finality]]",
+      "resolved": "urn:visionflow:owl:class:transaction-finality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Economy]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted. Requires supermajority validator agreement (typically 2/3+) and delivers instant certainty without probabilistic confirmation waiting.

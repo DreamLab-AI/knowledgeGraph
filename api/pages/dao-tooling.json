@@ -1,0 +1,2907 @@
+{
+  "id": "urn:visionflow:page:9df4e7a7b35ab8dc7316605c2fb44782e03c4ae0841cb317ef6947e04c48982f",
+  "title": "DAO Tooling",
+  "slug": "dao-tooling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dao-tooling",
+  "domain": "blockchain",
+  "definition": "DAO Tooling is the integrated software stack of governance platforms, treasury custodians, execution oracles, deliberation forums, identity primitives, analytics layers, and compensation rails that operationalises decentralised autonomous organisations as functioning socio-technical institutions managing capital, coordinating contributors, and binding off-chain deliberation to on-chain execution. The stack comprises governance front-ends ([[Snapshot]] gasless off-chain voting across 20,000+ spaces and 22M+ votes by 2025, [[Tally]] on-chain Governor UI for 100+ protocols, [[Aragon]] OSx modular plugin framework, [[DAOhaus]] Moloch deployments, [[Boardroom]] aggregating governance across 200+ protocols, [[Commonwealth]] discussion+vote unified surface), treasury custody dominated by [[Safe]] (formerly [[Gnosis Safe]]) securing approximately $100B+ of digital assets across 250,000+ deployments and >50% of all DAO treasuries by value circa 2024-2025, with operational layers from [[Den]] (formerly [[Multis]]), [[Coinshift]], [[Karpatkey]] (\u20ac500M+ AUM across [[Gnosis DAO]], [[Balancer]], [[ENS]], [[CoW DAO]]), [[Llama]] / [[LlamaRisk]] (~$1B+ advised across [[Aave]], [[Gitcoin]], [[PoolT",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:coordination-technology",
+      "label": "Coordination Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:governance-infrastructure",
+      "label": "Governance Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:organisational-software",
+      "label": "Organisational Software"
+    },
+    {
+      "id": "urn:visionflow:linked:web3-stack",
+      "label": "Web3 Stack"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:analytics-dashboard",
+        "label": "Analytics Dashboard"
+      },
+      {
+        "id": "urn:visionflow:linked:compensation-system",
+        "label": "Compensation System"
+      },
+      {
+        "id": "urn:visionflow:linked:deliberation-forum",
+        "label": "Deliberation Forum"
+      },
+      {
+        "id": "urn:visionflow:linked:execution-oracle",
+        "label": "Execution Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:funding-platform",
+        "label": "Funding Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:governance-platform",
+        "label": "Governance Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-primitive",
+        "label": "Identity Primitive"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-wrapper",
+        "label": "Legal Wrapper"
+      },
+      {
+        "id": "urn:visionflow:linked:treasury-management-system",
+        "label": "Treasury Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:visionflow:linked:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:optimistic-execution",
+        "label": "Optimistic Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-coordination",
+        "label": "Permissionless Coordination"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-treasury",
+        "label": "Programmable Treasury"
+      },
+      {
+        "id": "urn:visionflow:linked:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:erc-20-votes",
+        "label": "ERC-20 Votes"
+      },
+      {
+        "id": "urn:visionflow:linked:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "id": "urn:visionflow:linked:governor-bravo",
+        "label": "Governor Bravo"
+      },
+      {
+        "id": "urn:visionflow:linked:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "id": "urn:visionflow:linked:reality-eth-oracle",
+        "label": "Reality.eth Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-multi-sig",
+        "label": "Safe Multi-Sig"
+      },
+      {
+        "id": "urn:visionflow:linked:snapshot-off-chain-voting",
+        "label": "Snapshot Off-Chain Voting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "0x-parc",
+      "label": "0xPARC"
+    },
+    {
+      "slug": "1-hive",
+      "label": "1Hive"
+    },
+    {
+      "slug": "a16z",
+      "label": "a16z"
+    },
+    {
+      "slug": "a16z-state-of-crypto-2024",
+      "label": "a16z State of Crypto 2024"
+    },
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "aave-companies",
+      "label": "Aave Companies"
+    },
+    {
+      "slug": "aave-dao",
+      "label": "Aave DAO"
+    },
+    {
+      "slug": "aavegotchi",
+      "label": "Aavegotchi"
+    },
+    {
+      "slug": "aavenomics",
+      "label": "Aavenomics"
+    },
+    {
+      "slug": "admin",
+      "label": "Admin"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "agora",
+      "label": "Agora"
+    },
+    {
+      "slug": "ai16z",
+      "label": "ai16z"
+    },
+    {
+      "slug": "ai16z-dao",
+      "label": "ai16z DAO"
+    },
+    {
+      "slug": "aip-1",
+      "label": "AIP-1"
+    },
+    {
+      "slug": "albert-hirschman",
+      "label": "Albert Hirschman"
+    },
+    {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
+      "slug": "alexei-zamyatin",
+      "label": "Alexei Zamyatin"
+    },
+    {
+      "slug": "allo-protocol",
+      "label": "Allo Protocol"
+    },
+    {
+      "slug": "american-crypto-fed-dao",
+      "label": "American CryptoFed DAO"
+    },
+    {
+      "slug": "analytics-dashboard",
+      "label": "Analytics Dashboard"
+    },
+    {
+      "slug": "andrea-baronchelli",
+      "label": "Andrea Baronchelli"
+    },
+    {
+      "slug": "ant",
+      "label": "ANT"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "ape",
+      "label": "APE"
+    },
+    {
+      "slug": "ape-coin-dao",
+      "label": "ApeCoin DAO"
+    },
+    {
+      "slug": "ape-coin-foundation",
+      "label": "ApeCoin Foundation"
+    },
+    {
+      "slug": "aptos-foundation",
+      "label": "Aptos Foundation"
+    },
+    {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
+      "slug": "aragon-app",
+      "label": "Aragon App"
+    },
+    {
+      "slug": "aragon-foundation",
+      "label": "Aragon Foundation"
+    },
+    {
+      "slug": "aragon-fundraising",
+      "label": "Aragon Fundraising"
+    },
+    {
+      "slug": "aragon-osx",
+      "label": "Aragon OSx"
+    },
+    {
+      "slug": "aragon-osx-documentation",
+      "label": "Aragon OSx Documentation"
+    },
+    {
+      "slug": "aragon-tao-voting",
+      "label": "Aragon Tao Voting"
+    },
+    {
+      "slug": "arb",
+      "label": "ARB"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "arbitrum-dao",
+      "label": "Arbitrum DAO"
+    },
+    {
+      "slug": "arbitrum-foundation",
+      "label": "Arbitrum Foundation"
+    },
+    {
+      "slug": "arbitrum-gaming-catalyst-programme",
+      "label": "Arbitrum Gaming Catalyst Programme"
+    },
+    {
+      "slug": "areta",
+      "label": "Areta"
+    },
+    {
+      "slug": "argo-blockchain",
+      "label": "Argo Blockchain"
+    },
+    {
+      "slug": "assange-dao",
+      "label": "AssangeDAO"
+    },
+    {
+      "slug": "asu-2023-08",
+      "label": "ASU 2023-08"
+    },
+    {
+      "slug": "attestation-station",
+      "label": "Attestation Station"
+    },
+    {
+      "slug": "augmented-bonding-curves",
+      "label": "Augmented Bonding Curves"
+    },
+    {
+      "slug": "autonolas",
+      "label": "Autonolas"
+    },
+    {
+      "slug": "avara",
+      "label": "Avara"
+    },
+    {
+      "slug": "avraham-eisenberg",
+      "label": "Avraham Eisenberg"
+    },
+    {
+      "slug": "axelar",
+      "label": "Axelar"
+    },
+    {
+      "slug": "axelar-its",
+      "label": "Axelar ITS"
+    },
+    {
+      "slug": "axiom-space",
+      "label": "Axiom Space"
+    },
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "balancer",
+      "label": "Balancer"
+    },
+    {
+      "slug": "balancer-dao",
+      "label": "Balancer DAO"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "barry-whitehat",
+      "label": "Barry Whitehat"
+    },
+    {
+      "slug": "base",
+      "label": "Base"
+    },
+    {
+      "slug": "bayern",
+      "label": "Bayern"
+    },
+    {
+      "slug": "bayern-2014-zero-member-llc",
+      "label": "Bayern 2014 Zero-Member LLC"
+    },
+    {
+      "slug": "beanstalk",
+      "label": "Beanstalk"
+    },
+    {
+      "slug": "beps",
+      "label": "BEPS"
+    },
+    {
+      "slug": "biconomy",
+      "label": "Biconomy"
+    },
+    {
+      "slug": "bit-dao",
+      "label": "BitDAO"
+    },
+    {
+      "slug": "black-rock-buidl",
+      "label": "BlackRock BUIDL"
+    },
+    {
+      "slug": "block-rock-buidl",
+      "label": "BlockRock BUIDL"
+    },
+    {
+      "slug": "block-science",
+      "label": "BlockScience"
+    },
+    {
+      "slug": "block-tower",
+      "label": "BlockTower"
+    },
+    {
+      "slug": "blockchain-capital",
+      "label": "Blockchain Capital"
+    },
+    {
+      "slug": "blockchain-technology-laboratory",
+      "label": "Blockchain Technology Laboratory"
+    },
+    {
+      "slug": "blockworks-advisory",
+      "label": "Blockworks Advisory"
+    },
+    {
+      "slug": "blue-origin",
+      "label": "Blue Origin"
+    },
+    {
+      "slug": "boardroom",
+      "label": "Boardroom"
+    },
+    {
+      "slug": "boardroom-ai",
+      "label": "Boardroom AI"
+    },
+    {
+      "slug": "boardroom-portal",
+      "label": "Boardroom Portal"
+    },
+    {
+      "slug": "bob",
+      "label": "BOB"
+    },
+    {
+      "slug": "bonding-curves",
+      "label": "Bonding Curves"
+    },
+    {
+      "slug": "bribe-markets",
+      "label": "Bribe Markets"
+    },
+    {
+      "slug": "bridge-module",
+      "label": "Bridge Module"
+    },
+    {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
+    {
+      "slug": "british-virgin-islands",
+      "label": "British Virgin Islands"
+    },
+    {
+      "slug": "bryan-ford",
+      "label": "Bryan Ford"
+    },
+    {
+      "slug": "bryan-zhang",
+      "label": "Bryan Zhang"
+    },
+    {
+      "slug": "build-finance",
+      "label": "Build Finance"
+    },
+    {
+      "slug": "buterin-2014-ethereum-whitepaper",
+      "label": "Buterin 2014 Ethereum Whitepaper"
+    },
+    {
+      "slug": "buterin-2017-notes-on-blockchain-governance",
+      "label": "Buterin 2017 Notes on Blockchain Governance"
+    },
+    {
+      "slug": "buterin-hitzig-and-weyl",
+      "label": "Buterin, Hitzig & Weyl"
+    },
+    {
+      "slug": "buterin-hitzig-weyl-2019-flexible-design-for-funding-public-goods",
+      "label": "Buterin Hitzig Weyl 2019 Flexible Design for Funding Public Goods"
+    },
+    {
+      "slug": "bvi",
+      "label": "BVI"
+    },
+    {
+      "slug": "cambridge-bitcoin-electricity-consumption-index",
+      "label": "Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
+      "slug": "cambridge-ccaf-benchmarking-study-2024",
+      "label": "Cambridge CCAF Benchmarking Study 2024"
+    },
+    {
+      "slug": "cambridge-cryptoasset-benchmarking-study",
+      "label": "Cambridge Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "cambridge-judge-business-school",
+      "label": "Cambridge Judge Business School"
+    },
+    {
+      "slug": "capital-constrained-liberal-radicalism",
+      "label": "Capital-Constrained Liberal Radicalism"
+    },
+    {
+      "slug": "cardano-foundation",
+      "label": "Cardano Foundation"
+    },
+    {
+      "slug": "casp",
+      "label": "CASP"
+    },
+    {
+      "slug": "catherine-mulligan",
+      "label": "Catherine Mulligan"
+    },
+    {
+      "slug": "cayman",
+      "label": "Cayman"
+    },
+    {
+      "slug": "cayman-foundation",
+      "label": "Cayman Foundation"
+    },
+    {
+      "slug": "cayman-foundation-company",
+      "label": "Cayman Foundation Company"
+    },
+    {
+      "slug": "cc0",
+      "label": "CC0"
+    },
+    {
+      "slug": "celo",
+      "label": "Celo"
+    },
+    {
+      "slug": "centralised-treasury-management",
+      "label": "Centralised Treasury Management"
+    },
+    {
+      "slug": "centre-for-alternative-finance",
+      "label": "Centre for Alternative Finance"
+    },
+    {
+      "slug": "centre-for-blockchain-technologies",
+      "label": "Centre for Blockchain Technologies"
+    },
+    {
+      "slug": "centre-for-cryptocurrency-research-and-engineering",
+      "label": "Centre for Cryptocurrency Research and Engineering"
+    },
+    {
+      "slug": "centre-for-decision-research",
+      "label": "Centre for Decision Research"
+    },
+    {
+      "slug": "centre-for-digital-trust-and-society",
+      "label": "Centre for Digital Trust and Society"
+    },
+    {
+      "slug": "centre-for-financial-technology",
+      "label": "Centre for Financial Technology"
+    },
+    {
+      "slug": "centre-for-financial-technology-and-innovation",
+      "label": "Centre for Financial Technology and Innovation"
+    },
+    {
+      "slug": "centrifuge",
+      "label": "Centrifuge"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
+      "slug": "cftc-v-ooki-dao",
+      "label": "CFTC v Ooki DAO"
+    },
+    {
+      "slug": "cftc-v-ooki-dao-default-judgment-2023",
+      "label": "CFTC v Ooki DAO default judgment 2023"
+    },
+    {
+      "slug": "chain-aegis",
+      "label": "ChainAegis"
+    },
+    {
+      "slug": "chainlink-labs-uk",
+      "label": "Chainlink Labs UK"
+    },
+    {
+      "slug": "chaos-labs",
+      "label": "Chaos Labs"
+    },
+    {
+      "slug": "charitable-trust",
+      "label": "Charitable Trust"
+    },
+    {
+      "slug": "charity-commission",
+      "label": "Charity Commission"
+    },
+    {
+      "slug": "charles-dodgson",
+      "label": "Charles Dodgson"
+    },
+    {
+      "slug": "checks-effects-interactions",
+      "label": "Checks-Effects-Interactions"
+    },
+    {
+      "slug": "citizen",
+      "label": "Citizen"
+    },
+    {
+      "slug": "citizens-house",
+      "label": "Citizens' House"
+    },
+    {
+      "slug": "city-dao",
+      "label": "CityDAO"
+    },
+    {
+      "slug": "clr-fund",
+      "label": "clr.fund"
+    },
+    {
+      "slug": "co-operative",
+      "label": "co-operative"
+    },
+    {
+      "slug": "co-operative-and-community-benefit-societies-act-2014",
+      "label": "Co-operative and Community Benefit Societies Act 2014"
+    },
+    {
+      "slug": "co-operative-governance",
+      "label": "Co-operative Governance"
+    },
+    {
+      "slug": "co-operatives-uk",
+      "label": "Co-operatives UK"
+    },
+    {
+      "slug": "co-w-dao",
+      "label": "CoW DAO"
+    },
+    {
+      "slug": "co-w-swap",
+      "label": "CoW Swap"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "coinbase-wallet",
+      "label": "Coinbase Wallet"
+    },
+    {
+      "slug": "coinshift",
+      "label": "Coinshift"
+    },
+    {
+      "slug": "commons-stack",
+      "label": "Commons Stack"
+    },
+    {
+      "slug": "commonwealth",
+      "label": "Commonwealth"
+    },
+    {
+      "slug": "comp",
+      "label": "COMP"
+    },
+    {
+      "slug": "companies-act-2006",
+      "label": "Companies Act 2006"
+    },
+    {
+      "slug": "compensation-system",
+      "label": "Compensation System"
+    },
+    {
+      "slug": "compound",
+      "label": "Compound"
+    },
+    {
+      "slug": "compound-bravo",
+      "label": "Compound Bravo"
+    },
+    {
+      "slug": "compound-dao",
+      "label": "Compound DAO"
+    },
+    {
+      "slug": "compound-governor-bravo",
+      "label": "Compound Governor Bravo"
+    },
+    {
+      "slug": "compound-governor-bravo-specification",
+      "label": "Compound Governor Bravo Specification"
+    },
+    {
+      "slug": "connext",
+      "label": "Connext"
+    },
+    {
+      "slug": "connext-module",
+      "label": "Connext Module"
+    },
+    {
+      "slug": "constitution-dao",
+      "label": "ConstitutionDAO"
+    },
+    {
+      "slug": "continuous-funding",
+      "label": "Continuous Funding"
+    },
+    {
+      "slug": "contributor-compensation",
+      "label": "Contributor Compensation"
+    },
+    {
+      "slug": "convex",
+      "label": "Convex"
+    },
+    {
+      "slug": "convex-finance",
+      "label": "Convex Finance"
+    },
+    {
+      "slug": "coordinape",
+      "label": "Coordinape"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "CoordinationLayer"
+    },
+    {
+      "slug": "coordination-technology",
+      "label": "Coordination Technology"
+    },
+    {
+      "slug": "copper-co",
+      "label": "Copper.co"
+    },
+    {
+      "slug": "copper-launch",
+      "label": "Copper Launch"
+    },
+    {
+      "slug": "core-units",
+      "label": "Core Units"
+    },
+    {
+      "slug": "corporate-governance",
+      "label": "corporate governance"
+    },
+    {
+      "slug": "corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "cross-chain-governance",
+      "label": "Cross-Chain Governance"
+    },
+    {
+      "slug": "crypto-roadmap",
+      "label": "Crypto Roadmap"
+    },
+    {
+      "slug": "cryptoassets-manual",
+      "label": "Cryptoassets Manual"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "curve",
+      "label": "Curve"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "curve-wars",
+      "label": "Curve Wars"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    },
+    {
+      "slug": "daniel-perez",
+      "label": "Daniel Perez"
+    },
+    {
+      "slug": "dao-consultation-paper",
+      "label": "DAO Consultation Paper"
+    },
+    {
+      "slug": "dao-ecosystem-report",
+      "label": "DAO Ecosystem Report"
+    },
+    {
+      "slug": "dao-scoping-paper",
+      "label": "DAO Scoping Paper"
+    },
+    {
+      "slug": "daohaus",
+      "label": "DAOhaus"
+    },
+    {
+      "slug": "daos-fun",
+      "label": "Daos.fun"
+    },
+    {
+      "slug": "daostack",
+      "label": "DAOstack"
+    },
+    {
+      "slug": "de-bank",
+      "label": "DeBank"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-filippi-and-wright",
+      "label": "De Filippi & Wright"
+    },
+    {
+      "slug": "de-filippi-wright-2018-blockchain-and-the-law",
+      "label": "De Filippi Wright 2018 Blockchain and the Law"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
+      "slug": "deep-dao",
+      "label": "DeepDAO"
+    },
+    {
+      "slug": "deep-dao-ecosystem-report-2024",
+      "label": "DeepDAO Ecosystem Report 2024"
+    },
+    {
+      "slug": "defender-admin",
+      "label": "Defender Admin"
+    },
+    {
+      "slug": "defender-autotasks",
+      "label": "Defender Autotasks"
+    },
+    {
+      "slug": "defender-relay",
+      "label": "Defender Relay"
+    },
+    {
+      "slug": "defender-sentinel",
+      "label": "Defender Sentinel"
+    },
+    {
+      "slug": "defi-llama",
+      "label": "DefiLlama"
+    },
+    {
+      "slug": "delay-module",
+      "label": "Delay Module"
+    },
+    {
+      "slug": "delegate-cartel",
+      "label": "delegate cartel"
+    },
+    {
+      "slug": "delegated-voting",
+      "label": "Delegated Voting"
+    },
+    {
+      "slug": "delegation",
+      "label": "delegation"
+    },
+    {
+      "slug": "delegation-marketplaces",
+      "label": "Delegation Marketplaces"
+    },
+    {
+      "slug": "delegation-programmes",
+      "label": "Delegation Programmes"
+    },
+    {
+      "slug": "deliberation-forum",
+      "label": "Deliberation Forum"
+    },
+    {
+      "slug": "den",
+      "label": "Den"
+    },
+    {
+      "slug": "designated-activities-regime",
+      "label": "Designated Activities Regime"
+    },
+    {
+      "slug": "developer-tooling",
+      "label": "Developer Tooling"
+    },
+    {
+      "slug": "digital-assets-as-property",
+      "label": "Digital Assets as Property"
+    },
+    {
+      "slug": "digital-pound",
+      "label": "Digital Pound"
+    },
+    {
+      "slug": "discord",
+      "label": "Discord"
+    },
+    {
+      "slug": "discourse",
+      "label": "Discourse"
+    },
+    {
+      "slug": "dlt-science-conference",
+      "label": "DLT Science Conference"
+    },
+    {
+      "slug": "dlt-talents",
+      "label": "DLT Talents"
+    },
+    {
+      "slug": "domain-allocators",
+      "label": "Domain Allocators"
+    },
+    {
+      "slug": "dominik-harz",
+      "label": "Dominik Harz"
+    },
+    {
+      "slug": "dune",
+      "label": "Dune"
+    },
+    {
+      "slug": "dune-analytics",
+      "label": "Dune Analytics"
+    },
+    {
+      "slug": "dune-spellbook",
+      "label": "Dune Spellbook"
+    },
+    {
+      "slug": "eas",
+      "label": "EAS"
+    },
+    {
+      "slug": "easy-track",
+      "label": "EasyTrack"
+    },
+    {
+      "slug": "ecosystem",
+      "label": "Ecosystem"
+    },
+    {
+      "slug": "edgeware",
+      "label": "Edgeware"
+    },
+    {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
+      "slug": "eip-1271",
+      "label": "EIP-1271"
+    },
+    {
+      "slug": "eip-4824",
+      "label": "EIP-4824"
+    },
+    {
+      "slug": "eip-5805",
+      "label": "EIP-5805"
+    },
+    {
+      "slug": "eip-6372",
+      "label": "EIP-6372"
+    },
+    {
+      "slug": "eip-712",
+      "label": "EIP-712"
+    },
+    {
+      "slug": "eliza",
+      "label": "Eliza"
+    },
+    {
+      "slug": "eliza-framework",
+      "label": "Eliza Framework"
+    },
+    {
+      "slug": "emergency-dao",
+      "label": "Emergency DAO"
+    },
+    {
+      "slug": "endaoment",
+      "label": "Endaoment"
+    },
+    {
+      "slug": "endgame",
+      "label": "Endgame"
+    },
+    {
+      "slug": "ens",
+      "label": "ENS"
+    },
+    {
+      "slug": "ens-dao",
+      "label": "ENS DAO"
+    },
+    {
+      "slug": "ens-labs",
+      "label": "ENS Labs"
+    },
+    {
+      "slug": "ens-workstreams",
+      "label": "ENS Workstreams"
+    },
+    {
+      "slug": "erc-20-votes",
+      "label": "ERC-20 Votes"
+    },
+    {
+      "slug": "erc-20-votes",
+      "label": "ERC-20Votes"
+    },
+    {
+      "slug": "erc-5805",
+      "label": "ERC-5805"
+    },
+    {
+      "slug": "erc-721-votes",
+      "label": "ERC-721Votes"
+    },
+    {
+      "slug": "erc-7390",
+      "label": "ERC-7390"
+    },
+    {
+      "slug": "esa",
+      "label": "ESA"
+    },
+    {
+      "slug": "eth-staking",
+      "label": "ETH staking"
+    },
+    {
+      "slug": "ethereum-attestation-service",
+      "label": "Ethereum Attestation Service"
+    },
+    {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "ethereum-name-service",
+      "label": "Ethereum Name Service"
+    },
+    {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
+      "slug": "ethereum-whitepaper",
+      "label": "Ethereum Whitepaper"
+    },
+    {
+      "slug": "etherfi",
+      "label": "Etherfi"
+    },
+    {
+      "slug": "eu-mi-ca",
+      "label": "EU MiCA"
+    },
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "execution-oracle",
+      "label": "Execution Oracle"
+    },
+    {
+      "slug": "exit-module",
+      "label": "Exit Module"
+    },
+    {
+      "slug": "family",
+      "label": "Family"
+    },
+    {
+      "slug": "faqir-rhazoui-arroyo-hassan-2021-dao-platform-comparison",
+      "label": "Faqir-Rhazoui Arroyo Hassan 2021 DAO Platform Comparison"
+    },
+    {
+      "slug": "faqir-rhazoui-et-al-2021",
+      "label": "Faqir-Rhazoui et al. 2021"
+    },
+    {
+      "slug": "farcaster",
+      "label": "Farcaster"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "fei-protocol",
+      "label": "Fei Protocol"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "fjord-foundry",
+      "label": "Fjord Foundry"
+    },
+    {
+      "slug": "flash-loan-governance-attack",
+      "label": "flash-loan governance attack"
+    },
+    {
+      "slug": "ford-2002-delegative-democracy",
+      "label": "Ford 2002 Delegative Democracy"
+    },
+    {
+      "slug": "forta",
+      "label": "Forta"
+    },
+    {
+      "slug": "forta-network",
+      "label": "Forta Network"
+    },
+    {
+      "slug": "forta-token",
+      "label": "Forta Token"
+    },
+    {
+      "slug": "franklin-fobxx",
+      "label": "Franklin FOBXX"
+    },
+    {
+      "slug": "frax",
+      "label": "Frax"
+    },
+    {
+      "slug": "fsma-2023",
+      "label": "FSMA 2023"
+    },
+    {
+      "slug": "funding-platform",
+      "label": "Funding Platform"
+    },
+    {
+      "slug": "futarchy",
+      "label": "Futarchy"
+    },
+    {
+      "slug": "future-of-finance-initiative",
+      "label": "Future of Finance Initiative"
+    },
+    {
+      "slug": "galaxy-digital",
+      "label": "Galaxy Digital"
+    },
+    {
+      "slug": "galaxy-research-dao-governance-2024",
+      "label": "Galaxy Research DAO Governance 2024"
+    },
+    {
+      "slug": "gaming",
+      "label": "Gaming"
+    },
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "gauntlet",
+      "label": "Gauntlet"
+    },
+    {
+      "slug": "gho",
+      "label": "GHO"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "gitcoin",
+      "label": "Gitcoin"
+    },
+    {
+      "slug": "gitcoin-grants-stack",
+      "label": "Gitcoin Grants Stack"
+    },
+    {
+      "slug": "gitcoin-passport",
+      "label": "Gitcoin Passport"
+    },
+    {
+      "slug": "glen-weyl",
+      "label": "Glen Weyl"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "gnosis",
+      "label": "Gnosis"
+    },
+    {
+      "slug": "gnosis-chain",
+      "label": "Gnosis Chain"
+    },
+    {
+      "slug": "gnosis-dao",
+      "label": "Gnosis DAO"
+    },
+    {
+      "slug": "gnosis-guild",
+      "label": "Gnosis Guild"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "golden-boys",
+      "label": "Golden Boys"
+    },
+    {
+      "slug": "golem",
+      "label": "Golem"
+    },
+    {
+      "slug": "golem-foundation",
+      "label": "Golem Foundation"
+    },
+    {
+      "slug": "gov-alpha",
+      "label": "GovAlpha"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "governance-infrastructure",
+      "label": "Governance Infrastructure"
+    },
+    {
+      "slug": "governance-platform",
+      "label": "Governance Platform"
+    },
+    {
+      "slug": "governance-security-module",
+      "label": "GovernanceSecurityModule"
+    },
+    {
+      "slug": "governatooorr",
+      "label": "Governatooorr"
+    },
+    {
+      "slug": "governor-bravo",
+      "label": "Governor Bravo"
+    },
+    {
+      "slug": "grant-distribution",
+      "label": "Grant Distribution"
+    },
+    {
+      "slug": "gsm",
+      "label": "GSM"
+    },
+    {
+      "slug": "guardian",
+      "label": "guardian"
+    },
+    {
+      "slug": "guardian",
+      "label": "Guardian"
+    },
+    {
+      "slug": "hal-finney",
+      "label": "Hal Finney"
+    },
+    {
+      "slug": "hanson-2000-futarchy",
+      "label": "Hanson 2000 Futarchy"
+    },
+    {
+      "slug": "hassan-and-de-filippi",
+      "label": "Hassan & De Filippi"
+    },
+    {
+      "slug": "hassan-de-filippi-2021-dao",
+      "label": "Hassan De Filippi 2021 DAO"
+    },
+    {
+      "slug": "hats-protocol",
+      "label": "Hats Protocol"
+    },
+    {
+      "slug": "hedgey",
+      "label": "Hedgey"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
+      "slug": "hm-treasury",
+      "label": "HM Treasury"
+    },
+    {
+      "slug": "hmrc",
+      "label": "HMRC"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "hop-protocol",
+      "label": "Hop Protocol"
+    },
+    {
+      "slug": "hydraulics",
+      "label": "Hydraulics"
+    },
+    {
+      "slug": "hyperlane-isms",
+      "label": "Hyperlane ISMs"
+    },
+    {
+      "slug": "hypernative",
+      "label": "Hypernative"
+    },
+    {
+      "slug": "icon",
+      "label": "ICON"
+    },
+    {
+      "slug": "identity-primitive",
+      "label": "Identity Primitive"
+    },
+    {
+      "slug": "immune-fi",
+      "label": "ImmuneFi"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "indexed-finance",
+      "label": "Indexed Finance"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "institutional economics"
+    },
+    {
+      "slug": "interlay",
+      "label": "Interlay"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "jeff-emmett",
+      "label": "Jeff Emmett"
+    },
+    {
+      "slug": "juicebox",
+      "label": "Juicebox"
+    },
+    {
+      "slug": "kali",
+      "label": "Kali"
+    },
+    {
+      "slug": "karma",
+      "label": "Karma"
+    },
+    {
+      "slug": "karpatkey",
+      "label": "Karpatkey"
+    },
+    {
+      "slug": "karpatkey-reports",
+      "label": "Karpatkey Reports"
+    },
+    {
+      "slug": "karpatkey-treasury-reports-2024",
+      "label": "Karpatkey Treasury Reports 2024"
+    },
+    {
+      "slug": "kcl-centre-for-quantitative-finance",
+      "label": "KCL Centre for Quantitative Finance"
+    },
+    {
+      "slug": "king-s-college-london",
+      "label": "King's College London"
+    },
+    {
+      "slug": "kleros",
+      "label": "Kleros"
+    },
+    {
+      "slug": "l2-beat",
+      "label": "L2BEAT"
+    },
+    {
+      "slug": "l2-beat-governance",
+      "label": "L2BEAT Governance"
+    },
+    {
+      "slug": "lalley-and-weyl",
+      "label": "Lalley & Weyl"
+    },
+    {
+      "slug": "lalley-weyl-2018-quadratic-voting",
+      "label": "Lalley Weyl 2018 Quadratic Voting"
+    },
+    {
+      "slug": "law-commission",
+      "label": "Law Commission"
+    },
+    {
+      "slug": "law-commission-dao-consultation-paper-august-2025",
+      "label": "Law Commission DAO Consultation Paper August 2025"
+    },
+    {
+      "slug": "law-commission-dao-scoping-paper-november-2023",
+      "label": "Law Commission DAO Scoping Paper November 2023"
+    },
+    {
+      "slug": "law-commission-digital-assets-final-report-2024",
+      "label": "Law Commission Digital Assets Final Report 2024"
+    },
+    {
+      "slug": "law-of-chains",
+      "label": "Law of Chains"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
+      "slug": "layer-zero-v2",
+      "label": "LayerZero V2"
+    },
+    {
+      "slug": "lbp",
+      "label": "LBP"
+    },
+    {
+      "slug": "ldo",
+      "label": "LDO"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "leeds-city-region",
+      "label": "Leeds City Region"
+    },
+    {
+      "slug": "legal-wrapper",
+      "label": "Legal Wrapper"
+    },
+    {
+      "slug": "lens-protocol",
+      "label": "Lens Protocol"
+    },
+    {
+      "slug": "lewis-carroll",
+      "label": "Lewis Carroll"
+    },
+    {
+      "slug": "lewis-gudgeon",
+      "label": "Lewis Gudgeon"
+    },
+    {
+      "slug": "lido",
+      "label": "Lido"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
+      "slug": "liquid-democracy",
+      "label": "Liquid Democracy"
+    },
+    {
+      "slug": "liquidity-bootstrapping-pool",
+      "label": "Liquidity Bootstrapping Pool"
+    },
+    {
+      "slug": "llama",
+      "label": "Llama"
+    },
+    {
+      "slug": "llama-account",
+      "label": "Llama Account"
+    },
+    {
+      "slug": "llama-hub",
+      "label": "Llama Hub"
+    },
+    {
+      "slug": "llama-pay",
+      "label": "Llama Pay"
+    },
+    {
+      "slug": "llama-pay",
+      "label": "LlamaPay"
+    },
+    {
+      "slug": "llama-risk",
+      "label": "LlamaRisk"
+    },
+    {
+      "slug": "llama-risk",
+      "label": "Llama Risk"
+    },
+    {
+      "slug": "llama-token",
+      "label": "Llama Token"
+    },
+    {
+      "slug": "llama-treasury-management-review-2024",
+      "label": "Llama Treasury Management Review 2024"
+    },
+    {
+      "slug": "ltipp",
+      "label": "LTIPP"
+    },
+    {
+      "slug": "maci",
+      "label": "MACI"
+    },
+    {
+      "slug": "maker",
+      "label": "Maker"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "maker-rwa-allocator",
+      "label": "Maker RWA Allocator"
+    },
+    {
+      "slug": "maker-wormhole",
+      "label": "Maker Wormhole"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "manchester-business-school",
+      "label": "Manchester Business School"
+    },
+    {
+      "slug": "manchester-digital-trust-hub",
+      "label": "Manchester Digital Trust Hub"
+    },
+    {
+      "slug": "mango-markets",
+      "label": "Mango Markets"
+    },
+    {
+      "slug": "mantle",
+      "label": "Mantle"
+    },
+    {
+      "slug": "maple-finance",
+      "label": "Maple Finance"
+    },
+    {
+      "slug": "marc-aindreessen",
+      "label": "Marc AIndreessen"
+    },
+    {
+      "slug": "marketing-dao",
+      "label": "Marketing DAO"
+    },
+    {
+      "slug": "markulf-kohlweiss",
+      "label": "Markulf Kohlweiss"
+    },
+    {
+      "slug": "marshall-islands-dao-llc",
+      "label": "Marshall Islands DAO LLC"
+    },
+    {
+      "slug": "matan-field",
+      "label": "Matan Field"
+    },
+    {
+      "slug": "mech",
+      "label": "Mech"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "mechanism design"
+    },
+    {
+      "slug": "messari-governor",
+      "label": "Messari Governor"
+    },
+    {
+      "slug": "meta-cartel",
+      "label": "MetaCartel"
+    },
+    {
+      "slug": "meta-dao",
+      "label": "MetaDAO"
+    },
+    {
+      "slug": "meta-gov",
+      "label": "Meta-Gov"
+    },
+    {
+      "slug": "michael-zargham",
+      "label": "Michael Zargham"
+    },
+    {
+      "slug": "michel-rauchs",
+      "label": "Michel Rauchs"
+    },
+    {
+      "slug": "minimal-anti-collusion-infrastructure",
+      "label": "Minimal Anti-Collusion Infrastructure"
+    },
+    {
+      "slug": "mode",
+      "label": "Mode"
+    },
+    {
+      "slug": "mode-network",
+      "label": "Mode Network"
+    },
+    {
+      "slug": "moloch-dao",
+      "label": "Moloch DAO"
+    },
+    {
+      "slug": "moloch-dao",
+      "label": "MolochDAO"
+    },
+    {
+      "slug": "monetalis",
+      "label": "Monetalis"
+    },
+    {
+      "slug": "moon-dao",
+      "label": "MoonDAO"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "multi-agent systems"
+    },
+    {
+      "slug": "multi-signature-approval",
+      "label": "Multi-Signature Approval"
+    },
+    {
+      "slug": "multi-signature-wallet",
+      "label": "Multi-Signature Wallet"
+    },
+    {
+      "slug": "multichain",
+      "label": "Multichain"
+    },
+    {
+      "slug": "multis",
+      "label": "Multis"
+    },
+    {
+      "slug": "multisig",
+      "label": "Multisig"
+    },
+    {
+      "slug": "network-state",
+      "label": "Network State"
+    },
+    {
+      "slug": "newcastle",
+      "label": "Newcastle"
+    },
+    {
+      "slug": "nick-szabo",
+      "label": "Nick Szabo"
+    },
+    {
+      "slug": "nmr",
+      "label": "NMR"
+    },
+    {
+      "slug": "noir",
+      "label": "Noir"
+    },
+    {
+      "slug": "non-transferable",
+      "label": "non-transferable"
+    },
+    {
+      "slug": "notes-on-blockchain-governance",
+      "label": "Notes on Blockchain Governance"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
+    },
+    {
+      "slug": "numerai",
+      "label": "Numerai"
+    },
+    {
+      "slug": "numerai-master-fund",
+      "label": "Numerai Master Fund"
+    },
+    {
+      "slug": "octant",
+      "label": "Octant"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "olas",
+      "label": "Olas"
+    },
+    {
+      "slug": "on-chain-governance",
+      "label": "On-Chain Governance"
+    },
+    {
+      "slug": "ondo-ousg",
+      "label": "Ondo OUSG"
+    },
+    {
+      "slug": "ooki-dao",
+      "label": "Ooki DAO"
+    },
+    {
+      "slug": "open-law",
+      "label": "OpenLaw"
+    },
+    {
+      "slug": "open-zeppelin",
+      "label": "OpenZeppelin"
+    },
+    {
+      "slug": "open-zeppelin-contracts",
+      "label": "OpenZeppelin Contracts"
+    },
+    {
+      "slug": "open-zeppelin-defender",
+      "label": "OpenZeppelin Defender"
+    },
+    {
+      "slug": "open-zeppelin-defender-sentinel",
+      "label": "OpenZeppelin Defender Sentinel"
+    },
+    {
+      "slug": "open-zeppelin-governor",
+      "label": "OpenZeppelin Governor"
+    },
+    {
+      "slug": "open-zeppelin-governor-documentation-v5",
+      "label": "OpenZeppelin Governor Documentation v5"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "optimism-attestation-station",
+      "label": "Optimism Attestation Station"
+    },
+    {
+      "slug": "optimism-citizens-house",
+      "label": "Optimism Citizens' House"
+    },
+    {
+      "slug": "optimism-collective",
+      "label": "Optimism Collective"
+    },
+    {
+      "slug": "optimism-foundation",
+      "label": "Optimism Foundation"
+    },
+    {
+      "slug": "optimism-token-house",
+      "label": "Optimism Token House"
+    },
+    {
+      "slug": "optimistic-execution",
+      "label": "Optimistic Execution"
+    },
+    {
+      "slug": "optimistic-oracle",
+      "label": "Optimistic Oracle"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
+    },
+    {
+      "slug": "optimistic-token-voting",
+      "label": "Optimistic Token Voting"
+    },
+    {
+      "slug": "oracle-network",
+      "label": "Oracle Network"
+    },
+    {
+      "slug": "orb",
+      "label": "Orb"
+    },
+    {
+      "slug": "organisational-domain",
+      "label": "OrganisationalDomain"
+    },
+    {
+      "slug": "organisational-software",
+      "label": "Organisational Software"
+    },
+    {
+      "slug": "osmosis",
+      "label": "Osmosis"
+    },
+    {
+      "slug": "osx-plugin-registry",
+      "label": "OSx Plugin Registry"
+    },
+    {
+      "slug": "otoco",
+      "label": "Otoco"
+    },
+    {
+      "slug": "otterspace",
+      "label": "Otterspace"
+    },
+    {
+      "slug": "ouroboros",
+      "label": "Ouroboros"
+    },
+    {
+      "slug": "oxford-blockchain-strategy-programme",
+      "label": "Oxford Blockchain Strategy Programme"
+    },
+    {
+      "slug": "oxford-internet-institute",
+      "label": "Oxford Internet Institute"
+    },
+    {
+      "slug": "pairwise",
+      "label": "Pairwise"
+    },
+    {
+      "slug": "paladin",
+      "label": "Paladin"
+    },
+    {
+      "slug": "panama",
+      "label": "Panama"
+    },
+    {
+      "slug": "paolo-tasca",
+      "label": "Paolo Tasca"
+    },
+    {
+      "slug": "partnership-act-1890",
+      "label": "Partnership Act 1890"
+    },
+    {
+      "slug": "passport-v2",
+      "label": "Passport v2"
+    },
+    {
+      "slug": "pause-guardian",
+      "label": "Pause Guardian"
+    },
+    {
+      "slug": "pause-proxy",
+      "label": "Pause Proxy"
+    },
+    {
+      "slug": "pcds",
+      "label": "PCDs"
+    },
+    {
+      "slug": "pendle",
+      "label": "Pendle"
+    },
+    {
+      "slug": "permissionless-coordination",
+      "label": "Permissionless Coordination"
+    },
+    {
+      "slug": "pillar-one",
+      "label": "Pillar One"
+    },
+    {
+      "slug": "pillar-two",
+      "label": "Pillar Two"
+    },
+    {
+      "slug": "plurality-labs",
+      "label": "Plurality Labs"
+    },
+    {
+      "slug": "pol",
+      "label": "POL"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "polygon-2-0",
+      "label": "Polygon 2.0"
+    },
+    {
+      "slug": "polygon-community-grants-programme",
+      "label": "Polygon Community Grants Programme"
+    },
+    {
+      "slug": "polygon-foundation",
+      "label": "Polygon Foundation"
+    },
+    {
+      "slug": "polygon-labs-uk",
+      "label": "Polygon Labs UK"
+    },
+    {
+      "slug": "pool-together",
+      "label": "PoolTogether"
+    },
+    {
+      "slug": "pra",
+      "label": "PRA"
+    },
+    {
+      "slug": "predictor",
+      "label": "Predictor"
+    },
+    {
+      "slug": "programmable-treasury",
+      "label": "Programmable Treasury"
+    },
+    {
+      "slug": "proof-of-humanity",
+      "label": "Proof of Humanity"
+    },
+    {
+      "slug": "protocol-governance",
+      "label": "Protocol Governance"
+    },
+    {
+      "slug": "public-choice-theory",
+      "label": "public choice theory"
+    },
+    {
+      "slug": "public-goods",
+      "label": "Public Goods"
+    },
+    {
+      "slug": "public-goods-funding",
+      "label": "Public Goods Funding"
+    },
+    {
+      "slug": "pure-ai-agent-system",
+      "label": "Pure AI Agent System"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "quant-network",
+      "label": "Quant Network"
+    },
+    {
+      "slug": "quest",
+      "label": "Quest"
+    },
+    {
+      "slug": "questbook",
+      "label": "Questbook"
+    },
+    {
+      "slug": "rage-quit",
+      "label": "rage-quit"
+    },
+    {
+      "slug": "raid-guild",
+      "label": "Raid Guild"
+    },
+    {
+      "slug": "rainbow",
+      "label": "Rainbow"
+    },
+    {
+      "slug": "real-time-treasury-reporting",
+      "label": "Real-Time Treasury Reporting"
+    },
+    {
+      "slug": "real-world-finance",
+      "label": "Real-World Finance"
+    },
+    {
+      "slug": "reality-eth",
+      "label": "Reality.eth"
+    },
+    {
+      "slug": "reality-eth-oracle",
+      "label": "Reality.eth Oracle"
+    },
+    {
+      "slug": "reality-module",
+      "label": "Reality Module"
+    },
+    {
+      "slug": "realms",
+      "label": "Realms"
+    },
+    {
+      "slug": "reentrancy-attack",
+      "label": "reentrancy attack"
+    },
+    {
+      "slug": "reputation-weighted-voting",
+      "label": "Reputation-Weighted Voting"
+    },
+    {
+      "slug": "request-finance",
+      "label": "Request Finance"
+    },
+    {
+      "slug": "research",
+      "label": "Research"
+    },
+    {
+      "slug": "retro-funding",
+      "label": "Retro Funding"
+    },
+    {
+      "slug": "retro-pgf",
+      "label": "RetroPGF"
+    },
+    {
+      "slug": "retroactive-public-goods-funding",
+      "label": "Retroactive Public Goods Funding"
+    },
+    {
+      "slug": "ribbon",
+      "label": "Ribbon"
+    },
+    {
+      "slug": "robert-wardrop",
+      "label": "Robert Wardrop"
+    },
+    {
+      "slug": "rochdale-principles",
+      "label": "Rochdale Principles"
+    },
+    {
+      "slug": "roles-module",
+      "label": "Roles Module"
+    },
+    {
+      "slug": "rpow",
+      "label": "RPOW"
+    },
+    {
+      "slug": "sablier",
+      "label": "Sablier"
+    },
+    {
+      "slug": "safe",
+      "label": "Safe"
+    },
+    {
+      "slug": "safe-core-protocol",
+      "label": "Safe{Core} Protocol"
+    },
+    {
+      "slug": "safe-core-protocol-specification",
+      "label": "Safe Core Protocol Specification"
+    },
+    {
+      "slug": "safe-dao",
+      "label": "SafeDAO"
+    },
+    {
+      "slug": "safe-multi-sig",
+      "label": "Safe Multi-Sig"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
+    },
+    {
+      "slug": "safe-token",
+      "label": "Safe Token"
+    },
+    {
+      "slug": "safe-wallet",
+      "label": "Safe{Wallet}"
+    },
+    {
+      "slug": "said-business-school",
+      "label": "Said Business School"
+    },
+    {
+      "slug": "schneider-2021-modular-politics",
+      "label": "Schneider 2021 Modular Politics"
+    },
+    {
+      "slug": "schneider-et-al-2021",
+      "label": "Schneider et al. 2021"
+    },
+    {
+      "slug": "scroll",
+      "label": "Scroll"
+    },
+    {
+      "slug": "securitize",
+      "label": "Securitize"
+    },
+    {
+      "slug": "security-council",
+      "label": "Security Council"
+    },
+    {
+      "slug": "semaphore",
+      "label": "Semaphore"
+    },
+    {
+      "slug": "senate",
+      "label": "Senate"
+    },
+    {
+      "slug": "service-providers",
+      "label": "Service Providers"
+    },
+    {
+      "slug": "shareholder-democracy",
+      "label": "Shareholder Democracy"
+    },
+    {
+      "slug": "shaw",
+      "label": "Shaw"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    },
+    {
+      "slug": "shipyard-software",
+      "label": "Shipyard Software"
+    },
+    {
+      "slug": "sign-in-with-ethereum",
+      "label": "Sign-In With Ethereum"
+    },
+    {
+      "slug": "simulation-api",
+      "label": "Simulation API"
+    },
+    {
+      "slug": "singapore",
+      "label": "Singapore"
+    },
+    {
+      "slug": "siwe",
+      "label": "SIWE"
+    },
+    {
+      "slug": "sky",
+      "label": "Sky"
+    },
+    {
+      "slug": "sky",
+      "label": "SKY"
+    },
+    {
+      "slug": "smart-burn-engine",
+      "label": "Smart Burn Engine"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "snapshot",
+      "label": "snapshot"
+    },
+    {
+      "slug": "snapshot-documentation",
+      "label": "Snapshot Documentation"
+    },
+    {
+      "slug": "snapshot-hub",
+      "label": "Snapshot Hub"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
+    },
+    {
+      "slug": "snapshot-x",
+      "label": "Snapshot X"
+    },
+    {
+      "slug": "social-choice",
+      "label": "social choice"
+    },
+    {
+      "slug": "solana-foundation",
+      "label": "Solana Foundation"
+    },
+    {
+      "slug": "solana-labs-singapore",
+      "label": "Solana Labs Singapore"
+    },
+    {
+      "slug": "sonar",
+      "label": "Sonar"
+    },
+    {
+      "slug": "soulbound",
+      "label": "soulbound"
+    },
+    {
+      "slug": "soulbound-non-transferable-voting",
+      "label": "Soulbound / Non-Transferable Voting"
+    },
+    {
+      "slug": "source-cred",
+      "label": "SourceCred"
+    },
+    {
+      "slug": "spark",
+      "label": "Spark"
+    },
+    {
+      "slug": "spark-dao",
+      "label": "SparkDAO"
+    },
+    {
+      "slug": "spark-protocol",
+      "label": "Spark Protocol"
+    },
+    {
+      "slug": "sporos-dao",
+      "label": "Sporos DAO"
+    },
+    {
+      "slug": "stable-lab",
+      "label": "StableLab"
+    },
+    {
+      "slug": "stake-based",
+      "label": "stake-based"
+    },
+    {
+      "slug": "stamps",
+      "label": "stamps"
+    },
+    {
+      "slug": "stani-kulechov",
+      "label": "Stani Kulechov"
+    },
+    {
+      "slug": "star",
+      "label": "Star"
+    },
+    {
+      "slug": "star-houses",
+      "label": "Star Houses"
+    },
+    {
+      "slug": "stark",
+      "label": "STARK"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
+    },
+    {
+      "slug": "starknet-core",
+      "label": "Starknet Core"
+    },
+    {
+      "slug": "steakhouse",
+      "label": "Steakhouse"
+    },
+    {
+      "slug": "steakhouse-financial",
+      "label": "Steakhouse Financial"
+    },
+    {
+      "slug": "stellar-development-foundation",
+      "label": "Stellar Development Foundation"
+    },
+    {
+      "slug": "stiftung",
+      "label": "Stiftung"
+    },
+    {
+      "slug": "stip",
+      "label": "STIP"
+    },
+    {
+      "slug": "stip-bridge",
+      "label": "STIP-Bridge"
+    },
+    {
+      "slug": "story-protocol",
+      "label": "Story Protocol"
+    },
+    {
+      "slug": "sub-dao-coordination",
+      "label": "Sub-DAO Coordination"
+    },
+    {
+      "slug": "sub-daos",
+      "label": "SubDAOs"
+    },
+    {
+      "slug": "sui-foundation",
+      "label": "Sui Foundation"
+    },
+    {
+      "slug": "superchain",
+      "label": "Superchain"
+    },
+    {
+      "slug": "superfluid",
+      "label": "Superfluid"
+    },
+    {
+      "slug": "sushi",
+      "label": "Sushi"
+    },
+    {
+      "slug": "swiss-finma",
+      "label": "Swiss FINMA"
+    },
+    {
+      "slug": "swiss-stiftung",
+      "label": "Swiss Stiftung"
+    },
+    {
+      "slug": "swiss-verein",
+      "label": "Swiss Verein"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "synthetix",
+      "label": "Synthetix"
+    },
+    {
+      "slug": "tally",
+      "label": "Tally"
+    },
+    {
+      "slug": "tally-ai",
+      "label": "Tally AI"
+    },
+    {
+      "slug": "tally-analytics",
+      "label": "Tally Analytics"
+    },
+    {
+      "slug": "tally-api",
+      "label": "Tally API"
+    },
+    {
+      "slug": "tally-documentation",
+      "label": "Tally Documentation"
+    },
+    {
+      "slug": "telegram",
+      "label": "Telegram"
+    },
+    {
+      "slug": "tellor-module",
+      "label": "Tellor Module"
+    },
+    {
+      "slug": "tenderly",
+      "label": "Tenderly"
+    },
+    {
+      "slug": "tezos-foundation",
+      "label": "Tezos Foundation"
+    },
+    {
+      "slug": "the-dao",
+      "label": "The DAO"
+    },
+    {
+      "slug": "the-graph",
+      "label": "The Graph"
+    },
+    {
+      "slug": "timelock",
+      "label": "Timelock"
+    },
+    {
+      "slug": "timelock-controller",
+      "label": "Timelock Controller"
+    },
+    {
+      "slug": "timelock-controller",
+      "label": "TimelockController"
+    },
+    {
+      "slug": "token-buybacks-and-burns",
+      "label": "Token Buybacks and Burns"
+    },
+    {
+      "slug": "token-house",
+      "label": "Token House"
+    },
+    {
+      "slug": "token-voting",
+      "label": "Token Voting"
+    },
+    {
+      "slug": "token-weighted-voting",
+      "label": "Token-Weighted Voting"
+    },
+    {
+      "slug": "token-weighted-voting",
+      "label": "token-weighted voting"
+    },
+    {
+      "slug": "tokenised-rwa",
+      "label": "tokenised RWA"
+    },
+    {
+      "slug": "tokenised-rwas",
+      "label": "tokenised RWAs"
+    },
+    {
+      "slug": "tornado-cash-dao",
+      "label": "Tornado Cash DAO"
+    },
+    {
+      "slug": "trader",
+      "label": "Trader"
+    },
+    {
+      "slug": "traditional-foundation",
+      "label": "Traditional Foundation"
+    },
+    {
+      "slug": "trail-of-bits",
+      "label": "Trail of Bits"
+    },
+    {
+      "slug": "treasury-diversification",
+      "label": "Treasury Diversification"
+    },
+    {
+      "slug": "treasury-management-system",
+      "label": "Treasury Management System"
+    },
+    {
+      "slug": "true-names-ltd",
+      "label": "True Names Ltd"
+    },
+    {
+      "slug": "trust",
+      "label": "trust"
+    },
+    {
+      "slug": "trust-law",
+      "label": "trust law"
+    },
+    {
+      "slug": "twitter",
+      "label": "Twitter"
+    },
+    {
+      "slug": "uma",
+      "label": "UMA"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "uniswap-dao",
+      "label": "Uniswap DAO"
+    },
+    {
+      "slug": "uniswap-foundation",
+      "label": "Uniswap Foundation"
+    },
+    {
+      "slug": "uniswap-v4",
+      "label": "Uniswap v4"
+    },
+    {
+      "slug": "universal-treasury",
+      "label": "Universal Treasury"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-leeds",
+      "label": "University of Leeds"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usds",
+      "label": "USDS"
+    },
+    {
+      "slug": "ve-bal",
+      "label": "veBAL"
+    },
+    {
+      "slug": "ve-crv",
+      "label": "veCRV"
+    },
+    {
+      "slug": "ve-fxs",
+      "label": "veFXS"
+    },
+    {
+      "slug": "ve-nft",
+      "label": "veNFT"
+    },
+    {
+      "slug": "ve-token",
+      "label": "veToken"
+    },
+    {
+      "slug": "vili-lehdonvirta",
+      "label": "Vili Lehdonvirta"
+    },
+    {
+      "slug": "virtuals-protocol",
+      "label": "Virtuals Protocol"
+    },
+    {
+      "slug": "vitalik-buterin",
+      "label": "Vitalik Buterin"
+    },
+    {
+      "slug": "vote-escrowed",
+      "label": "Vote-Escrowed"
+    },
+    {
+      "slug": "voting-mechanism",
+      "label": "Voting Mechanism"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    },
+    {
+      "slug": "warden",
+      "label": "Warden"
+    },
+    {
+      "slug": "warpcast",
+      "label": "Warpcast"
+    },
+    {
+      "slug": "web3-foundation",
+      "label": "Web3 Foundation"
+    },
+    {
+      "slug": "web3-identity",
+      "label": "Web3 Identity"
+    },
+    {
+      "slug": "web3-stack",
+      "label": "Web3 Stack"
+    },
+    {
+      "slug": "whitelist",
+      "label": "whitelist"
+    },
+    {
+      "slug": "william-knottenbelt",
+      "label": "William Knottenbelt"
+    },
+    {
+      "slug": "working-group",
+      "label": "Working Group"
+    },
+    {
+      "slug": "working-groups",
+      "label": "Working Groups"
+    },
+    {
+      "slug": "world-id",
+      "label": "World ID"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "wormhole",
+      "label": "Wormhole"
+    },
+    {
+      "slug": "wormhole-foundation",
+      "label": "Wormhole Foundation"
+    },
+    {
+      "slug": "wormhole-multigov",
+      "label": "Wormhole Multigov"
+    },
+    {
+      "slug": "wyoming-dao-llc",
+      "label": "Wyoming DAO LLC"
+    },
+    {
+      "slug": "yearn",
+      "label": "Yearn"
+    },
+    {
+      "slug": "zk-ml",
+      "label": "zkML"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "zk-SNARK"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "ZkSync"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "zo-hitzig",
+      "label": "Zo\u00eb Hitzig"
+    },
+    {
+      "slug": "zodiac",
+      "label": "Zodiac"
+    },
+    {
+      "slug": "zodiac-roles",
+      "label": "Zodiac Roles"
+    },
+    {
+      "slug": "zora",
+      "label": "Zora"
+    },
+    {
+      "slug": "zu-pass",
+      "label": "ZuPass"
+    },
+    {
+      "slug": "zupoll",
+      "label": "Zupoll"
+    },
+    {
+      "slug": "zuzalu",
+      "label": "Zuzalu"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "block-height",
+      "label": "block-height"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "cypherpunk",
+      "label": "cypherpunk"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "quadratic voting"
+    },
+    {
+      "slug": "robin-hanson",
+      "label": "Robin Hanson"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "smart contract"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": []
+}

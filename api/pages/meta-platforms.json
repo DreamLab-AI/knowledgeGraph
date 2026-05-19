@@ -1,0 +1,732 @@
+{
+  "id": "urn:visionflow:page:763625a0cd1045a28cfbb0c92c7fb3ba0d516b97c2f98bd4ddba64bbb287754b",
+  "title": "Meta Platforms",
+  "slug": "meta-platforms",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:meta-platforms",
+  "domain": "artificial-intelligence",
+  "definition": "**Meta Platforms Inc** (NASDAQ: META, formerly Facebook Inc 2004-2021) is a Menlo Park-headquartered American multinational technology conglomerate founded 4 February 2004 in a Harvard University dormitory by Mark Zuckerberg with co-founders Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes as TheFacebook.com \u2014 initially a Harvard-only student social directory expanding to Ivy League campuses then US universities (2005), the public internet (September 2006), mobile platforms (Facebook for iPhone 2008, native Android 2010), and ultimately a global communications stack \u2014 rebranded to **Meta Platforms** on 28 October 2021 (Facebook Connect keynote, Zuckerberg \"Founder's Letter\") to signal a strategic pivot toward the **metaverse** (immersive 3D social computing) and decouple the corporate identity from the increasingly contested Facebook product brand following the **Frances Haugen whistleblower disclosures** (September-October 2021 Wall Street Journal \"Facebook Files\" series and US Senate testimony exposing internal research on Instagram teen mental health, XCheck VIP moderation tier, Civic Integrity team dissolution, algorithmic amplification of divisive content), ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:foundation-model-developer",
+      "label": "Foundation Model Developer"
+    },
+    {
+      "id": "urn:visionflow:linked:hyperscaler",
+      "label": "Hyperscaler"
+    },
+    {
+      "id": "urn:visionflow:linked:public-company",
+      "label": "Public Company"
+    },
+    {
+      "id": "urn:visionflow:linked:social-media-platform-operator",
+      "label": "Social Media Platform Operator"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-conglomerate",
+      "label": "Technology Conglomerate"
+    },
+    {
+      "id": "urn:visionflow:linked:vr-ar-hardware-manufacturer",
+      "label": "VR AR Hardware Manufacturer"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:facebook-product",
+        "label": "Facebook Product"
+      },
+      {
+        "id": "urn:visionflow:linked:fair",
+        "label": "FAIR"
+      },
+      {
+        "id": "urn:visionflow:linked:horizon-worlds",
+        "label": "Horizon Worlds"
+      },
+      {
+        "id": "urn:visionflow:linked:instagram",
+        "label": "Instagram"
+      },
+      {
+        "id": "urn:visionflow:linked:llama",
+        "label": "Llama"
+      },
+      {
+        "id": "urn:visionflow:linked:messenger",
+        "label": "Messenger"
+      },
+      {
+        "id": "urn:visionflow:linked:meta-ai-assistant",
+        "label": "Meta AI Assistant"
+      },
+      {
+        "id": "urn:visionflow:linked:meta-hyperion",
+        "label": "Meta Hyperion"
+      },
+      {
+        "id": "urn:visionflow:linked:meta-quest",
+        "label": "Meta Quest"
+      },
+      {
+        "id": "urn:visionflow:linked:mtia",
+        "label": "MTIA"
+      },
+      {
+        "id": "urn:visionflow:linked:project-orion",
+        "label": "Project Orion"
+      },
+      {
+        "id": "urn:visionflow:linked:ray-ban-meta",
+        "label": "Ray-Ban Meta"
+      },
+      {
+        "id": "urn:visionflow:linked:reality-labs",
+        "label": "Reality Labs"
+      },
+      {
+        "id": "urn:visionflow:linked:threads",
+        "label": "Threads"
+      },
+      {
+        "id": "urn:visionflow:linked:whats-app",
+        "label": "WhatsApp"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:advertising-network",
+        "label": "Advertising Network"
+      },
+      {
+        "id": "urn:visionflow:linked:capital-markets-access",
+        "label": "Capital Markets Access"
+      },
+      {
+        "id": "urn:visionflow:linked:datacentre",
+        "label": "Datacentre"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:visionflow:linked:mobile-operating-system",
+        "label": "Mobile Operating System"
+      },
+      {
+        "id": "urn:visionflow:linked:sec-reporting",
+        "label": "SEC Reporting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:consumer-ai-assistants",
+        "label": "Consumer AI Assistants"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-messaging",
+        "label": "Cross-Platform Messaging"
+      },
+      {
+        "id": "urn:visionflow:linked:federated-microblogging",
+        "label": "Federated Microblogging"
+      },
+      {
+        "id": "urn:visionflow:linked:mixed-reality-computing",
+        "label": "Mixed Reality Computing"
+      },
+      {
+        "id": "urn:visionflow:linked:open-weight-ai-research",
+        "label": "Open-Weight AI Research"
+      },
+      {
+        "id": "urn:visionflow:linked:social-networking",
+        "label": "Social Networking"
+      },
+      {
+        "id": "urn:visionflow:linked:targeted-advertising",
+        "label": "Targeted Advertising"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:activity-pub-federation",
+        "label": "ActivityPub Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:algorithmic-newsfeed-ranking",
+        "label": "Algorithmic Newsfeed Ranking"
+      },
+      {
+        "id": "urn:visionflow:linked:behavioural-advertising",
+        "label": "Behavioural Advertising"
+      },
+      {
+        "id": "urn:visionflow:linked:community-notes-moderation",
+        "label": "Community Notes Moderation"
+      },
+      {
+        "id": "urn:visionflow:linked:mixture-of-experts-architecture",
+        "label": "Mixture of Experts Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:open-weight-model-release",
+        "label": "Open-Weight Model Release"
+      },
+      {
+        "id": "urn:visionflow:linked:pass-through-mixed-reality",
+        "label": "Pass-Through Mixed Reality"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-pub",
+      "label": "ActivityPub"
+    },
+    {
+      "slug": "activity-pub-federation",
+      "label": "ActivityPub Federation"
+    },
+    {
+      "slug": "advertising-ecosystem",
+      "label": "Advertising Ecosystem"
+    },
+    {
+      "slug": "advertising-network",
+      "label": "Advertising Network"
+    },
+    {
+      "slug": "algorithmic-newsfeed-ranking",
+      "label": "Algorithmic Newsfeed Ranking"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "assran-et-al-2023-i-jepa",
+      "label": "Assran et al. 2023 I-JEPA"
+    },
+    {
+      "slug": "behavioural-advertising",
+      "label": "Behavioural Advertising"
+    },
+    {
+      "slug": "bluesky",
+      "label": "Bluesky"
+    },
+    {
+      "slug": "byte-dance",
+      "label": "ByteDance"
+    },
+    {
+      "slug": "cambridge-analytica",
+      "label": "Cambridge Analytica"
+    },
+    {
+      "slug": "capital-markets-access",
+      "label": "Capital Markets Access"
+    },
+    {
+      "slug": "capital-markets-domain",
+      "label": "CapitalMarketsDomain"
+    },
+    {
+      "slug": "community-notes-moderation",
+      "label": "Community Notes Moderation"
+    },
+    {
+      "slug": "compute-infrastructure-layer",
+      "label": "ComputeInfrastructureLayer"
+    },
+    {
+      "slug": "consumer-ai-assistants",
+      "label": "Consumer AI Assistants"
+    },
+    {
+      "slug": "cross-platform-messaging",
+      "label": "Cross-Platform Messaging"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "datacentre",
+      "label": "Datacentre"
+    },
+    {
+      "slug": "dma",
+      "label": "DMA"
+    },
+    {
+      "slug": "dsa",
+      "label": "DSA"
+    },
+    {
+      "slug": "dubey-et-al-2024-llama-3-herd",
+      "label": "Dubey et al. 2024 Llama 3 Herd"
+    },
+    {
+      "slug": "electric-grid",
+      "label": "Electric Grid"
+    },
+    {
+      "slug": "european-commission-2023-dma-gatekeepers",
+      "label": "European Commission 2023 DMA Gatekeepers"
+    },
+    {
+      "slug": "facebook-product",
+      "label": "Facebook Product"
+    },
+    {
+      "slug": "fair",
+      "label": "FAIR"
+    },
+    {
+      "slug": "fair-diplomacy-team-2022-cicero-science",
+      "label": "FAIR Diplomacy Team 2022 CICERO Science"
+    },
+    {
+      "slug": "fasb",
+      "label": "FASB"
+    },
+    {
+      "slug": "federated-microblogging",
+      "label": "Federated Microblogging"
+    },
+    {
+      "slug": "foundation-model-developer",
+      "label": "Foundation Model Developer"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "FoundationModelLayer"
+    },
+    {
+      "slug": "frances-haugen",
+      "label": "Frances Haugen"
+    },
+    {
+      "slug": "ftc-v-meta-2020-2024",
+      "label": "FTC v Meta 2020-2024"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "girdhar-et-al-2023-image-bind",
+      "label": "Girdhar et al. 2023 ImageBind"
+    },
+    {
+      "slug": "google-alphabet",
+      "label": "Google Alphabet"
+    },
+    {
+      "slug": "gpu-cluster",
+      "label": "GPU Cluster"
+    },
+    {
+      "slug": "graph-ql",
+      "label": "GraphQL"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "he-et-al-2017-mask-r-cnn",
+      "label": "He et al. 2017 Mask R-CNN"
+    },
+    {
+      "slug": "horizon-worlds",
+      "label": "Horizon Worlds"
+    },
+    {
+      "slug": "horwitz-2023-broken-code",
+      "label": "Horwitz 2023 Broken Code"
+    },
+    {
+      "slug": "hyperscaler",
+      "label": "Hyperscaler"
+    },
+    {
+      "slug": "immersive-computing-domain",
+      "label": "ImmersiveComputingDomain"
+    },
+    {
+      "slug": "inside-out-tracking",
+      "label": "Inside-Out Tracking"
+    },
+    {
+      "slug": "instagram",
+      "label": "Instagram"
+    },
+    {
+      "slug": "internet-backbone",
+      "label": "Internet Backbone"
+    },
+    {
+      "slug": "irish-dpc-2023-meta-gdpr-decision",
+      "label": "Irish DPC 2023 Meta GDPR Decision"
+    },
+    {
+      "slug": "johnson-douze-jegou-2021-faiss",
+      "label": "Johnson Douze Jegou 2021 FAISS"
+    },
+    {
+      "slug": "kirillov-et-al-2023-segment-anything",
+      "label": "Kirillov et al. 2023 Segment Anything"
+    },
+    {
+      "slug": "le-cun-2022-path-towards-autonomous-machine-intelligence",
+      "label": "LeCun 2022 Path Towards Autonomous Machine Intelligence"
+    },
+    {
+      "slug": "le-et-al-2023-voicebox",
+      "label": "Le et al. 2023 Voicebox"
+    },
+    {
+      "slug": "lewis-et-al-2020-bart",
+      "label": "Lewis et al. 2020 BART"
+    },
+    {
+      "slug": "liu-et-al-2019-ro-berta",
+      "label": "Liu et al. 2019 RoBERTa"
+    },
+    {
+      "slug": "llama",
+      "label": "Llama"
+    },
+    {
+      "slug": "llama-ecosystem",
+      "label": "Llama Ecosystem"
+    },
+    {
+      "slug": "mark-zuckerberg",
+      "label": "Mark Zuckerberg"
+    },
+    {
+      "slug": "mastodon",
+      "label": "Mastodon"
+    },
+    {
+      "slug": "messenger",
+      "label": "Messenger"
+    },
+    {
+      "slug": "meta-10-k-fy2023",
+      "label": "Meta 10-K FY2023"
+    },
+    {
+      "slug": "meta-ai-2024-llama-3-2",
+      "label": "Meta AI 2024 Llama 3.2"
+    },
+    {
+      "slug": "meta-ai-2025-llama-4",
+      "label": "Meta AI 2025 Llama 4"
+    },
+    {
+      "slug": "meta-ai-assistant",
+      "label": "Meta AI Assistant"
+    },
+    {
+      "slug": "meta-ai-research-community",
+      "label": "Meta AI Research Community"
+    },
+    {
+      "slug": "meta-earnings-transcripts-2024-2025",
+      "label": "Meta Earnings Transcripts 2024-2025"
+    },
+    {
+      "slug": "meta-hyperion",
+      "label": "Meta Hyperion"
+    },
+    {
+      "slug": "meta-quest",
+      "label": "Meta Quest"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "mixed-reality-computing",
+      "label": "Mixed Reality Computing"
+    },
+    {
+      "slug": "mixture-of-experts-architecture",
+      "label": "Mixture of Experts Architecture"
+    },
+    {
+      "slug": "mobile-operating-system",
+      "label": "Mobile Operating System"
+    },
+    {
+      "slug": "mtia",
+      "label": "MTIA"
+    },
+    {
+      "slug": "nasdaq-listing-rules",
+      "label": "Nasdaq Listing Rules"
+    },
+    {
+      "slug": "nllb-team-2022-no-language-left-behind",
+      "label": "NLLB Team 2022 No Language Left Behind"
+    },
+    {
+      "slug": "nvidia-gpu-supply",
+      "label": "NVIDIA GPU Supply"
+    },
+    {
+      "slug": "oculus-vr",
+      "label": "Oculus VR"
+    },
+    {
+      "slug": "onavo",
+      "label": "Onavo"
+    },
+    {
+      "slug": "online-safety-act-2023",
+      "label": "Online Safety Act 2023"
+    },
+    {
+      "slug": "open-compute-project",
+      "label": "Open Compute Project"
+    },
+    {
+      "slug": "open-source-ecosystem",
+      "label": "Open Source Ecosystem"
+    },
+    {
+      "slug": "open-weight-ai-research",
+      "label": "Open-Weight AI Research"
+    },
+    {
+      "slug": "open-weight-model-release",
+      "label": "Open-Weight Model Release"
+    },
+    {
+      "slug": "oquab-et-al-2024-dinov2",
+      "label": "Oquab et al. 2024 DINOv2"
+    },
+    {
+      "slug": "pancake-lens",
+      "label": "Pancake Lens"
+    },
+    {
+      "slug": "pass-through-mixed-reality",
+      "label": "Pass-Through Mixed Reality"
+    },
+    {
+      "slug": "paszke-et-al-2019-py-torch-neur-ips",
+      "label": "Paszke et al. 2019 PyTorch NeurIPS"
+    },
+    {
+      "slug": "polyak-et-al-2024-meta-movie-gen",
+      "label": "Polyak et al. 2024 Meta MovieGen"
+    },
+    {
+      "slug": "project-orion",
+      "label": "Project Orion"
+    },
+    {
+      "slug": "public-company",
+      "label": "Public Company"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "ravi-et-al-2024-sam-2",
+      "label": "Ravi et al. 2024 SAM 2"
+    },
+    {
+      "slug": "ray-ban-meta",
+      "label": "Ray-Ban Meta"
+    },
+    {
+      "slug": "react",
+      "label": "React"
+    },
+    {
+      "slug": "reality-labs",
+      "label": "Reality Labs"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "seamless-m4-t-team-2023",
+      "label": "SeamlessM4T Team 2023"
+    },
+    {
+      "slug": "sec-form-10-k",
+      "label": "SEC Form 10-K"
+    },
+    {
+      "slug": "sec-reporting",
+      "label": "SEC Reporting"
+    },
+    {
+      "slug": "smartphone-ecosystem",
+      "label": "Smartphone Ecosystem"
+    },
+    {
+      "slug": "snap-inc",
+      "label": "Snap Inc"
+    },
+    {
+      "slug": "social-media-platform-operator",
+      "label": "Social Media Platform Operator"
+    },
+    {
+      "slug": "social-networking",
+      "label": "Social Networking"
+    },
+    {
+      "slug": "social-platform-domain",
+      "label": "SocialPlatformDomain"
+    },
+    {
+      "slug": "subsea-cable-infrastructure",
+      "label": "Subsea Cable Infrastructure"
+    },
+    {
+      "slug": "targeted-advertising",
+      "label": "Targeted Advertising"
+    },
+    {
+      "slug": "technology-conglomerate",
+      "label": "Technology Conglomerate"
+    },
+    {
+      "slug": "threads",
+      "label": "Threads"
+    },
+    {
+      "slug": "touvron-et-al-2023-llama-1",
+      "label": "Touvron et al. 2023 Llama 1"
+    },
+    {
+      "slug": "touvron-et-al-2023-llama-2",
+      "label": "Touvron et al. 2023 Llama 2"
+    },
+    {
+      "slug": "vr-ar-hardware-manufacturer",
+      "label": "VR AR Hardware Manufacturer"
+    },
+    {
+      "slug": "whats-app",
+      "label": "WhatsApp"
+    },
+    {
+      "slug": "wsj-2021-facebook-files",
+      "label": "WSJ 2021 Facebook Files"
+    },
+    {
+      "slug": "x-twitter",
+      "label": "X Twitter"
+    },
+    {
+      "slug": "yann-le-cun",
+      "label": "Yann LeCun"
+    },
+    {
+      "slug": "zhang-et-al-2022-opt-175-b",
+      "label": "Zhang et al. 2022 OPT-175B"
+    },
+    {
+      "slug": "zuckerberg-2021-founders-letter-meta-rebrand",
+      "label": "Zuckerberg 2021 Founders Letter Meta Rebrand"
+    },
+    {
+      "slug": "zuckerberg-2024-open-source-ai-path-forward",
+      "label": "Zuckerberg 2024 Open Source AI Path Forward"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

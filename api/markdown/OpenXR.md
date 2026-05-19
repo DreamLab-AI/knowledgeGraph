@@ -1,24 +1,678 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Openxr
-uri:: urn:visionclaw:concept:spatial-computing:openxr
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:openxr
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: OpenXR
-content-hash:: sha256-12-6c1e4a8d3f9b
-legacy-term-id::
-status:: complete
-maturity:: established
-quality-score:: 0.60
-authority-score:: 0.78
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Openxr
+legacy_uri:: urn:visionclaw:concept:spatial-computing:openxr
 public:: true
+
+# OpenXR
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88",
+  "@type": "Page",
+  "vc:slug": "open-xr",
+  "title": "OpenXR",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:android-platform",
+      "vc:label": "Android Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality-api",
+      "vc:label": "Extended Reality API"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-abstraction-layer",
+      "vc:label": "HardwareAbstractionLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-agnostic-xr-development",
+      "vc:label": "Hardware-Agnostic XR Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:khronos-group-standard",
+      "vc:label": "Khronos Group Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:khronos-open-xr-1-0-specification",
+      "vc:label": "Khronos OpenXR 1.0 Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:khronos-open-xr-1-1-specification",
+      "vc:label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:monado-open-source-runtime",
+      "vc:label": "Monado Open Source Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-gl-es",
+      "vc:label": "OpenGL ES"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-action-system",
+      "vc:label": "OpenXR Action System"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-extension",
+      "vc:label": "OpenXR Extension"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-extension-registry",
+      "vc:label": "OpenXR Extension Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-loader",
+      "vc:label": "OpenXR Loader"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-session",
+      "vc:label": "OpenXR Session"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-space",
+      "vc:label": "OpenXR Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-swapchain",
+      "vc:label": "OpenXR Swapchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:passthrough-ar",
+      "vc:label": "Passthrough AR"
+    },
+    {
+      "@id": "urn:visionflow:linked:unity-open-xr-plugin",
+      "vc:label": "Unity OpenXR Plugin"
+    },
+    {
+      "@id": "urn:visionflow:linked:vulkan-api",
+      "vc:label": "Vulkan API"
+    },
+    {
+      "@id": "urn:visionflow:linked:vulkan-graphics-api",
+      "vc:label": "Vulkan Graphics API"
+    },
+    {
+      "@id": "urn:visionflow:linked:windows-mixed-reality-runtime",
+      "vc:label": "Windows Mixed Reality Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr-hardware-device",
+      "vc:label": "XR Hardware Device"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr-runtime",
+      "vc:label": "XR Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr-technology-stack",
+      "vc:label": "XR Technology Stack"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:auto-ml",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eye-tracking",
+      "vc:label": "Eye Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gazebo-simulator",
+      "vc:label": "Gazebo Simulator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hand-tracking",
+      "vc:label": "Hand Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "vc:label": "Metaverse Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "vc:label": "NGM Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "Robotics Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "vc:label": "Telecollaboration Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-assembly",
+      "vc:label": "WebAssembly"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-rtc",
+      "vc:label": "WebRTC"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.78"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6c1e4a8d3f9b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Openxr"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "OpenXR"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.60"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:openxr"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:openxr"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:open-xr",
+  "@type": "OntologyClass",
+  "label": "OpenXR",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:extended-reality-api",
+      "vc:label": "Extended Reality API"
+    },
+    {
+      "@id": "urn:visionflow:linked:khronos-group-standard",
+      "vc:label": "Khronos Group Standard"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware — encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices — that defines a unified application-to-runtime interface, eliminating the fragmentation previously imposed by proprietary vendor SDKs (Oculus SDK, SteamVR, Windows Mixed Reality), so that an XR application written against OpenXR runs on any conformant runtime without source code changes, and enabling [[VisionClaw Agentic Container]] agents to interact with spatial computing environments through a standardised sensory and actuation surface.",
+  "vc:qualityScore": {
+    "@value": "0.60",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.78",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:xr-technology-stack",
+      "vc:label": "XR Technology Stack"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "vc:label": "Metaverse Infrastructure"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:open-xr-action-system",
+      "vc:label": "OpenXR Action System"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-extension",
+      "vc:label": "OpenXR Extension"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-loader",
+      "vc:label": "OpenXR Loader"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-session",
+      "vc:label": "OpenXR Session"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-space",
+      "vc:label": "OpenXR Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-swapchain",
+      "vc:label": "OpenXR Swapchain"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:open-gl-es",
+      "vc:label": "OpenGL ES"
+    },
+    {
+      "@id": "urn:visionflow:linked:vulkan-api",
+      "vc:label": "Vulkan API"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr-hardware-device",
+      "vc:label": "XR Hardware Device"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr-runtime",
+      "vc:label": "XR Runtime"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:hardware-agnostic-xr-development",
+      "vc:label": "Hardware-Agnostic XR Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:passthrough-ar",
+      "vc:label": "Passthrough AR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eye-tracking",
+      "vc:label": "Eye Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hand-tracking",
+      "vc:label": "Hand Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:khronos-open-xr-1-0-specification",
+      "vc:label": "Khronos OpenXR 1.0 Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-xr-extension-registry",
+      "vc:label": "OpenXR Extension Registry"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:android-platform",
+      "vc:label": "Android Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-gl-es",
+      "vc:label": "OpenGL ES"
+    },
+    {
+      "@id": "urn:visionflow:linked:vulkan-graphics-api",
+      "vc:label": "Vulkan Graphics API"
+    },
+    {
+      "@id": "urn:visionflow:linked:windows-mixed-reality-runtime",
+      "vc:label": "Windows Mixed Reality Runtime"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:gazebo-simulator",
+      "vc:label": "Gazebo Simulator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-assembly",
+      "vc:label": "WebAssembly"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-rtc",
+      "vc:label": "WebRTC"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:open-xr:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Android Platform]]",
+      "resolved": "urn:visionflow:linked:android-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Extended Reality API]]",
+      "resolved": "urn:visionflow:linked:extended-reality-api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HardwareAbstractionLayer]]",
+      "resolved": "urn:visionflow:linked:hardware-abstraction-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hardware-Agnostic XR Development]]",
+      "resolved": "urn:visionflow:linked:hardware-agnostic-xr-development",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Khronos Group Standard]]",
+      "resolved": "urn:visionflow:linked:khronos-group-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Khronos OpenXR 1.0 Specification]]",
+      "resolved": "urn:visionflow:linked:khronos-open-xr-1-0-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Khronos OpenXR 1.1 Specification]]",
+      "resolved": "urn:visionflow:linked:khronos-open-xr-1-1-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monado Open Source Runtime]]",
+      "resolved": "urn:visionflow:linked:monado-open-source-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenGL ES]]",
+      "resolved": "urn:visionflow:linked:open-gl-es",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Action System]]",
+      "resolved": "urn:visionflow:linked:open-xr-action-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Extension]]",
+      "resolved": "urn:visionflow:linked:open-xr-extension",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Extension Registry]]",
+      "resolved": "urn:visionflow:linked:open-xr-extension-registry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Loader]]",
+      "resolved": "urn:visionflow:linked:open-xr-loader",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Session]]",
+      "resolved": "urn:visionflow:linked:open-xr-session",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Space]]",
+      "resolved": "urn:visionflow:linked:open-xr-space",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenXR Swapchain]]",
+      "resolved": "urn:visionflow:linked:open-xr-swapchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Passthrough AR]]",
+      "resolved": "urn:visionflow:linked:passthrough-ar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Unity OpenXR Plugin]]",
+      "resolved": "urn:visionflow:linked:unity-open-xr-plugin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vulkan API]]",
+      "resolved": "urn:visionflow:linked:vulkan-api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vulkan Graphics API]]",
+      "resolved": "urn:visionflow:linked:vulkan-graphics-api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Windows Mixed Reality Runtime]]",
+      "resolved": "urn:visionflow:linked:windows-mixed-reality-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[XR Hardware Device]]",
+      "resolved": "urn:visionflow:linked:xr-hardware-device",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[XR Runtime]]",
+      "resolved": "urn:visionflow:linked:xr-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[XR Technology Stack]]",
+      "resolved": "urn:visionflow:linked:xr-technology-stack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutoML]]",
+      "resolved": "urn:visionflow:owl:class:auto-ml",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Eye Tracking]]",
+      "resolved": "urn:visionflow:owl:class:eye-tracking",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gazebo Simulator]]",
+      "resolved": "urn:visionflow:owl:class:gazebo-simulator",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hand Tracking]]",
+      "resolved": "urn:visionflow:owl:class:hand-tracking",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NGM Domain]]",
+      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Operating System]]",
+      "resolved": "urn:visionflow:owl:class:robot-operating-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics Domain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Computing]]",
+      "resolved": "urn:visionflow:owl:class:spatial-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration Domain]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[WebAssembly]]",
+      "resolved": "urn:visionflow:owl:class:web-assembly",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[WebRTC]]",
+      "resolved": "urn:visionflow:owl:class:web-rtc",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware — encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices — that defines a unified application-to-runtime interface, eliminating the fragmentation previously imposed by proprietary vendor SDKs (Oculus SDK, SteamVR, Windows Mixed Reality), so that an XR application written against OpenXR runs on any conformant runtime without source code changes, and enabling [[VisionClaw Agentic Container]] agents to interact with spatial computing environments through a standardised sensory and actuation surface.

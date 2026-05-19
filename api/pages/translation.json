@@ -1,0 +1,452 @@
+{
+  "id": "urn:visionflow:page:d2207713f4ecfe28854cbf265c4ed0cdcbbd8b682821a443f5393871c9b8c02f",
+  "title": "Translation",
+  "slug": "translation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:translation",
+  "domain": "artificial-intelligence",
+  "definition": "Machine Translation (MT) is the automated conversion of natural language text or speech from a source language into semantically and pragmatically equivalent target language output, evolving from rule-based symbolic approaches (RBMT, 1950s-1990s) through statistical phrase-based models (SMT, Moses decoder, 2000s-2014) to dominant neural sequence-to-sequence architectures (NMT, 2014-present), with large language model translation (LLM-MT, GPT-4o/Claude/Gemini, 2023-present) increasingly surpassing purpose-built commercial MT on high-resource language pairs. The field is defined by its core technical challenge: the many-to-many mapping between language pairs encodes not merely lexical substitution but morphological, syntactic, pragmatic, and cultural transformations that resist direct computational formalisation, requiring models to learn representations across 7,000+ extant natural languages with wildly asymmetric data availability \u2014 English-French corpora exceeding 40 billion sentence pairs whilst 95%+ of languages possess fewer than 100,000 parallel sentences (low-resource MT). Key architectural paradigm shifts include: (1) the encoder-decoder recurrent neural network (Sutskever e",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
+      "id": "urn:visionflow:linked:cross-lingual-transfer",
+      "label": "Cross-Lingual Transfer"
+    },
+    {
+      "id": "urn:visionflow:linked:language-technology",
+      "label": "Language Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:sequence-to-sequence-learning",
+      "label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:visionflow:linked:bpe-vocabulary",
+        "label": "BPE Vocabulary"
+      },
+      {
+        "id": "urn:visionflow:linked:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:parallel-corpus",
+        "label": "Parallel Corpus"
+      },
+      {
+        "id": "urn:visionflow:linked:quality-estimation",
+        "label": "Quality Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:encoder",
+        "label": "Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bilingual-evaluation-data",
+        "label": "Bilingual Evaluation Data"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:language-pair-coverage",
+        "label": "Language Pair Coverage"
+      },
+      {
+        "id": "urn:visionflow:linked:parallel-corpora",
+        "label": "Parallel Corpora"
+      },
+      {
+        "id": "urn:visionflow:linked:subword-segmentation",
+        "label": "Subword Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-lingual-information-retrieval",
+        "label": "Cross-Lingual Information Retrieval"
+      },
+      {
+        "id": "urn:visionflow:linked:global-content-delivery",
+        "label": "Global Content Delivery"
+      },
+      {
+        "id": "urn:visionflow:linked:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:visionflow:linked:low-resource-language-preservation",
+        "label": "Low-Resource Language Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:multilingual-communication",
+        "label": "Multilingual Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-interpretation",
+        "label": "Real-Time Interpretation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:back-translation",
+        "label": "Back-Translation"
+      },
+      {
+        "id": "urn:visionflow:linked:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "bilingual-evaluation-data",
+      "label": "Bilingual Evaluation Data"
+    },
+    {
+      "slug": "bleu-score",
+      "label": "BLEU Score"
+    },
+    {
+      "slug": "bpe-vocabulary",
+      "label": "BPE Vocabulary"
+    },
+    {
+      "slug": "comet-benchmark",
+      "label": "COMET Benchmark"
+    },
+    {
+      "slug": "comet-metric",
+      "label": "COMET Metric"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
+      "slug": "cross-border-commerce",
+      "label": "Cross-Border Commerce"
+    },
+    {
+      "slug": "cross-lingual-information-retrieval",
+      "label": "Cross-Lingual Information Retrieval"
+    },
+    {
+      "slug": "cross-lingual-transfer",
+      "label": "Cross-Lingual Transfer"
+    },
+    {
+      "slug": "dictionary-based-translation",
+      "label": "Dictionary-Based Translation"
+    },
+    {
+      "slug": "diplomatic-communication",
+      "label": "Diplomatic Communication"
+    },
+    {
+      "slug": "flores-200-evaluation-set",
+      "label": "FLORES-200 Evaluation Set"
+    },
+    {
+      "slug": "global-content-delivery",
+      "label": "Global Content Delivery"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "healthcare-communication",
+      "label": "Healthcare Communication"
+    },
+    {
+      "slug": "human-post-editing",
+      "label": "Human Post-Editing"
+    },
+    {
+      "slug": "human-translation",
+      "label": "Human Translation"
+    },
+    {
+      "slug": "interpreting",
+      "label": "Interpreting"
+    },
+    {
+      "slug": "iso-639-language-codes",
+      "label": "ISO 639 Language Codes"
+    },
+    {
+      "slug": "iwslt",
+      "label": "IWSLT"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "language-pair-coverage",
+      "label": "Language Pair Coverage"
+    },
+    {
+      "slug": "language-technology",
+      "label": "Language Technology"
+    },
+    {
+      "slug": "language-technology-domain",
+      "label": "LanguageTechnologyDomain"
+    },
+    {
+      "slug": "linguistic-annotation",
+      "label": "Linguistic Annotation"
+    },
+    {
+      "slug": "localisation",
+      "label": "Localisation"
+    },
+    {
+      "slug": "low-resource-language-preservation",
+      "label": "Low-Resource Language Preservation"
+    },
+    {
+      "slug": "monolingual-data-augmentation",
+      "label": "Monolingual Data Augmentation"
+    },
+    {
+      "slug": "multilingual-communication",
+      "label": "Multilingual Communication"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "parallel-corpora",
+      "label": "Parallel Corpora"
+    },
+    {
+      "slug": "parallel-corpus",
+      "label": "Parallel Corpus"
+    },
+    {
+      "slug": "quality-estimation",
+      "label": "Quality Estimation"
+    },
+    {
+      "slug": "real-time-interpretation",
+      "label": "Real-Time Interpretation"
+    },
+    {
+      "slug": "rule-based-machine-translation",
+      "label": "Rule-Based Machine Translation"
+    },
+    {
+      "slug": "scientific-publishing",
+      "label": "Scientific Publishing"
+    },
+    {
+      "slug": "sequence-to-sequence-learning",
+      "label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "subword-segmentation",
+      "label": "Subword Segmentation"
+    },
+    {
+      "slug": "summarisation",
+      "label": "Summarisation"
+    },
+    {
+      "slug": "tokeniser",
+      "label": "Tokeniser"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "wmt-shared-tasks",
+      "label": "WMT Shared Tasks"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "adapter-modules",
+      "label": "Adapter Modules"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "byte-pair-encoding",
+      "label": "Byte Pair Encoding"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "decoder",
+      "label": "Decoder"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "service-layer",
+      "label": "ServiceLayer"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

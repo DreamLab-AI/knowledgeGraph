@@ -1,21 +1,253 @@
-iri:: http://narrativegoldmine.com/robotics#IoTSensors
-uri:: urn:visionclaw:concept:robotics:io-t-sensors
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:io-t-sensors
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Io T Sensors
-content-hash:: sha256-12-55c593039930
-legacy-term-id:: RB-7002
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#IoTSensors
+legacy_uri:: urn:visionclaw:concept:robotics:io-t-sensors
 public:: true
+
+# Io T Sensors
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982",
+  "@type": "Page",
+  "vc:slug": "io-t-sensors",
+  "title": "Io T Sensors",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:5-g-networks",
+      "vc:label": "5G Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-automation",
+      "vc:label": "Industrial Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-cities",
+      "vc:label": "Smart Cities"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-manufacturing",
+      "vc:label": "Smart Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-55c593039930"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#IoTSensors"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-7002"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Io T Sensors"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:io-t-sensors"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:io-t-sensors"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:io-t-sensors",
+  "@type": "OntologyClass",
+  "label": "Io T Sensors",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis. Modern IoT sensors increasingly incorporate on-device AI/ML accelerators enabling local inference, predictive analytics, and autonomous decision-making without cloud dependency.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:smart-manufacturing",
+      "vc:label": "Smart Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:io-t-sensors:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[5G Networks]]",
+      "resolved": "urn:visionflow:linked:5-g-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Industrial Automation]]",
+      "resolved": "urn:visionflow:linked:industrial-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Internet of Things]]",
+      "resolved": "urn:visionflow:linked:internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Cities]]",
+      "resolved": "urn:visionflow:linked:smart-cities",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Manufacturing]]",
+      "resolved": "urn:visionflow:linked:smart-manufacturing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Edge Computing]]",
+      "resolved": "urn:visionflow:owl:class:edge-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Maintenance]]",
+      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis. Modern IoT sensors increasingly incorporate on-device AI/ML accelerators enabling local inference, predictive analytics, and autonomous decision-making without cloud dependency.

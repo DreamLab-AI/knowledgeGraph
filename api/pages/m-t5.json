@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:2ac242857126b3b3c16ed90991369745cd3ea45d919eb1b08b797b7010ade307",
+  "title": "mT5",
+  "slug": "m-t5",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:m-t5",
+  "domain": "artificial-intelligence",
+  "definition": "Multilingual T5: a massively multilingual variant of T5 pre-trained on the mC4 corpus covering 101 languages, using the same text-to-text framework as T5.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

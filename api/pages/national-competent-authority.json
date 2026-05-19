@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:6631a23a3996415c132471d512dac2a080214be6435a0b664c7665bfaeb92c86",
+  "title": "National Competent Authority",
+  "slug": "national-competent-authority",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:national-competent-authority",
+  "domain": "infrastructure",
+  "definition": "A notifying authority, a market surveillance authority, or any other authority designated by a Member State to supervise the application and implementation of the AI Act, including national data protection authorities where relevant.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    }
+  ]
+}

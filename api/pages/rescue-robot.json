@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:c3b7a4108dbee3bbf37da3f92d7d65a71e716aec3de09004f600d5be9655435f",
+  "title": "Rescue Robot",
+  "slug": "rescue-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rescue-robot",
+  "domain": "robotics",
+  "definition": "**Rescue Robot** - Rescue Robot in robotics systems",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

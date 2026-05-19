@@ -1,0 +1,154 @@
+{
+  "id": "urn:visionflow:page:254562885341db7cb7377e1c3f07d710d491b2aea245788c1e1328c4ffaf09a3",
+  "title": "Spatial Anchor",
+  "slug": "spatial-anchor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-anchor",
+  "domain": "spatial-computing",
+  "definition": "Coordinate reference that binds a virtual object's pose to a stable location in physical space, enabling persistent AR placement and physical-virtual registration.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ar-scene-graph",
+      "label": "AR Scene Graph"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:gps-reference",
+        "label": "GPS Reference"
+      },
+      {
+        "id": "urn:visionflow:linked:pose-data",
+        "label": "Pose Data"
+      },
+      {
+        "id": "urn:visionflow:linked:tracking-features",
+        "label": "Tracking Features"
+      },
+      {
+        "id": "urn:visionflow:owl:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:visual-marker",
+        "label": "Visual Marker"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "id": "urn:visionflow:linked:persistence-layer",
+        "label": "Persistence Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:tracking-system",
+        "label": "Tracking System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:persistent-ar-placement",
+        "label": "Persistent AR Placement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physical-virtual-registration",
+        "label": "Physical-Virtual Registration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:shared-ar-experiences",
+        "label": "Shared AR Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "coordinate-transformation",
+      "label": "Coordinate Transformation"
+    },
+    {
+      "slug": "gps-reference",
+      "label": "GPS Reference"
+    },
+    {
+      "slug": "ieee-p2048-3",
+      "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "persistence-layer",
+      "label": "Persistence Layer"
+    },
+    {
+      "slug": "pose-data",
+      "label": "Pose Data"
+    },
+    {
+      "slug": "tracking-features",
+      "label": "Tracking Features"
+    },
+    {
+      "slug": "tracking-system",
+      "label": "Tracking System"
+    },
+    {
+      "slug": "visual-odometry",
+      "label": "Visual Odometry"
+    },
+    {
+      "slug": "world-coordinate-frame",
+      "label": "World Coordinate Frame"
+    },
+    {
+      "slug": "ar-scene-graph",
+      "label": "AR Scene Graph"
+    },
+    {
+      "slug": "coordinate-system",
+      "label": "Coordinate System"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "persistent-ar-placement",
+      "label": "Persistent AR Placement"
+    },
+    {
+      "slug": "physical-virtual-registration",
+      "label": "Physical-Virtual Registration"
+    },
+    {
+      "slug": "shared-ar-experiences",
+      "label": "Shared AR Experiences"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-computing-system",
+      "label": "Spatial Computing System"
+    },
+    {
+      "slug": "visual-marker",
+      "label": "Visual Marker"
+    }
+  ],
+  "backlinks": []
+}

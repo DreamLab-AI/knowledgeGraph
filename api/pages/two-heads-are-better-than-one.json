@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:a31d15f7bd3681c246b27cc34775dbfa59cdc2fed2615388c26ed96f9929652d",
+  "title": "Two Heads Are Better Than One",
+  "slug": "two-heads-are-better-than-one",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:two-heads-are-better-than-one",
+  "domain": "infrastructure",
+  "definition": "Two Heads Are Better Than One is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

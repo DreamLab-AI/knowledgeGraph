@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0fb217dd19d5e6e1440c22a0e3578a7706f8a4889a4dbd21d2f55a73dd79bdb5",
+  "title": "Temporary Asset Access",
+  "slug": "temporary-asset-access",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:temporary-asset-access",
+  "domain": "spatial-computing",
+  "definition": "A mechanism enabling time-limited usage rights to digital assets in the metaverse without transferring ownership, implemented through smart contracts that separate user roles from owner roles with automatic expiration.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-management",
+      "label": "Digital Asset Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "nft-renting",
+      "label": "NFT Renting"
+    }
+  ]
+}

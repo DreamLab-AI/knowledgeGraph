@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:b817ef7e9f1177a8c1370c6fa4c2669c896ec4a5ba5da76cb0dbd11a04f29e81",
+  "title": "Data Compression",
+  "slug": "data-compression",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-compression",
+  "domain": "artificial-intelligence",
+  "definition": "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information. Techniques include model quantization (reducing numerical precision), pruning (removing redundant parameters), knowledge distillation (training smaller models to mimic larger ones), and neural compression methods (autoencoders, learned compression). Data compression is critical for deploying AI on resource-constrained devices, reducing storage costs, accelerating inference, and minimizing energy consumption. Advanced approaches leverage entropy coding, sparsity exploitation, and learned representations for adaptive compression.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "quantization",
+      "label": "Quantization"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    }
+  ]
+}

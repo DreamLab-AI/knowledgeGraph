@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9d0d02f40c51decd1b3aca829eaf592949ff7d69e99f0348aafdbcbb96528d69",
+  "title": "experiment",
+  "slug": "experiment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:experiment",
+  "domain": "infrastructure",
+  "definition": "experiment is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "back-hashcash-denial-2002",
+      "label": "back_hashcash-denial_2002"
+    }
+  ],
+  "backlinks": []
+}

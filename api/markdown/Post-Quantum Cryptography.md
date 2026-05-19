@@ -1,21 +1,443 @@
-iri:: http://narrativegoldmine.com/infrastructure#PostQuantumCryptography
-uri:: urn:visionclaw:concept:infrastructure:post-quantum-cryptography
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:post-quantum-cryptography
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Post-Quantum Cryptography
-content-hash:: sha256-12-9625cf7d03ca
-legacy-term-id:: 20210
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#PostQuantumCryptography
+legacy_uri:: urn:visionclaw:concept:infrastructure:post-quantum-cryptography
 public:: true
+
+# Post-Quantum Cryptography
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b",
+  "@type": "Page",
+  "vc:slug": "post-quantum-cryptography",
+  "title": "Post-Quantum Cryptography",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:algorithm-implementation",
+      "vc:label": "Algorithm Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-based-cryptography",
+      "vc:label": "Code-Based Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-complexity-theory",
+      "vc:label": "Computational Complexity Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-infrastructure",
+      "vc:label": "Cryptographic Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-based-signatures",
+      "vc:label": "Hash-Based Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:isogeny-based-cryptography",
+      "vc:label": "Isogeny-Based Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:lattice-based-cryptography",
+      "vc:label": "Lattice-Based Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-term-data-protection",
+      "vc:label": "Long-Term Data Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:multivariate-cryptography",
+      "vc:label": "Multivariate Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-pq-standard-2024",
+      "vc:label": "NIST PQ Standard (2024)"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-resistant-encryption",
+      "vc:label": "Quantum-Resistant Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-key-exchange",
+      "vc:label": "Secure Key Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-protocol",
+      "vc:label": "Security Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "Compute Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
+      "vc:label": "Cryptographic Key Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "Data Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signatures",
+      "vc:label": "Digital Signatures"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mathematical-hard-problems",
+      "vc:label": "Mathematical Hard Problems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-layer",
+      "vc:label": "Network Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physical-layer",
+      "vc:label": "Physical Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:random-number-generation",
+      "vc:label": "Random Number Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9625cf7d03ca"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#PostQuantumCryptography"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20210"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Post-Quantum Cryptography"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:post-quantum-cryptography"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:post-quantum-cryptography"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
+  "@type": "OntologyClass",
+  "label": "Post-Quantum Cryptography",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-infrastructure",
+      "vc:label": "Cryptographic Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-protocol",
+      "vc:label": "Security Protocol"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:code-based-cryptography",
+      "vc:label": "Code-Based Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-based-signatures",
+      "vc:label": "Hash-Based Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:isogeny-based-cryptography",
+      "vc:label": "Isogeny-Based Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:lattice-based-cryptography",
+      "vc:label": "Lattice-Based Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:multivariate-cryptography",
+      "vc:label": "Multivariate Cryptography"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:algorithm-implementation",
+      "vc:label": "Algorithm Implementation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
+      "vc:label": "Cryptographic Key Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:random-number-generation",
+      "vc:label": "Random Number Generation"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:long-term-data-protection",
+      "vc:label": "Long-Term Data Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-resistant-encryption",
+      "vc:label": "Quantum-Resistant Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-key-exchange",
+      "vc:label": "Secure Key Exchange"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signatures",
+      "vc:label": "Digital Signatures"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:computational-complexity-theory",
+      "vc:label": "Computational Complexity Theory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mathematical-hard-problems",
+      "vc:label": "Mathematical Hard Problems"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:post-quantum-cryptography:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Algorithm Implementation]]",
+      "resolved": "urn:visionflow:linked:algorithm-implementation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Code-Based Cryptography]]",
+      "resolved": "urn:visionflow:linked:code-based-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Complexity Theory]]",
+      "resolved": "urn:visionflow:linked:computational-complexity-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Infrastructure]]",
+      "resolved": "urn:visionflow:linked:cryptographic-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash-Based Signatures]]",
+      "resolved": "urn:visionflow:linked:hash-based-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Isogeny-Based Cryptography]]",
+      "resolved": "urn:visionflow:linked:isogeny-based-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lattice-Based Cryptography]]",
+      "resolved": "urn:visionflow:linked:lattice-based-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Long-Term Data Protection]]",
+      "resolved": "urn:visionflow:linked:long-term-data-protection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multivariate Cryptography]]",
+      "resolved": "urn:visionflow:linked:multivariate-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST PQ Standard (2024)]]",
+      "resolved": "urn:visionflow:linked:nist-pq-standard-2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum-Resistant Encryption]]",
+      "resolved": "urn:visionflow:linked:quantum-resistant-encryption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Secure Key Exchange]]",
+      "resolved": "urn:visionflow:linked:secure-key-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Security Protocol]]",
+      "resolved": "urn:visionflow:linked:security-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compute Layer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptographic Key Management]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-key-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Layer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signatures]]",
+      "resolved": "urn:visionflow:owl:class:digital-signatures",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mathematical Hard Problems]]",
+      "resolved": "urn:visionflow:owl:class:mathematical-hard-problems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Layer]]",
+      "resolved": "urn:visionflow:owl:class:network-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Physical Layer]]",
+      "resolved": "urn:visionflow:owl:class:physical-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Random Number Generation]]",
+      "resolved": "urn:visionflow:owl:class:random-number-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era.

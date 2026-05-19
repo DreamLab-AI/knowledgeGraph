@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:779debe12e7ecd24d26a99a3a152714779076c50263d376190d533b1a3e9a609",
+  "title": "Conspiracies",
+  "slug": "conspiracies",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:conspiracies",
+  "domain": "infrastructure",
+  "definition": "Conspiracies is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "martin2022dark",
+      "label": "martin2022dark"
+    },
+    {
+      "slug": "va2010neoconservatism",
+      "label": "va2010neoconservatism"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:161b6fdb3fe1beccf8016bd942f46b9a589b69a39aa1c74de31881441fe54d44",
+  "title": "Personal Data Store",
+  "slug": "personal-data-store",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:personal-data-store",
+  "domain": "infrastructure",
+  "definition": "PersonalDataStore is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b79d6cfca1a9e6bf402aa9b1a7c1fa3a3737991ecbd30d426305871c539bb51c",
+  "title": "Ouroboros Consensus",
+  "slug": "ouroboros-consensus",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ouroboros-consensus",
+  "domain": "blockchain",
+  "definition": "A mathematically-verified PoS consensus protocol using slot leaders to validate transactions and add blocks. Divides time into epochs and slots, with stake pools randomly selected as slot leaders.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    }
+  ]
+}

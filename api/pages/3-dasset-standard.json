@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:ac471d565acfa4646419d4e3d02f6084f6cdc9fd070f12d09fdb8312a338536f",
+  "title": "3DAssetStandard",
+  "slug": "3-dasset-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-dasset-standard",
+  "domain": "infrastructure",
+  "definition": "3DAssetStandard is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-iec-14496-16",
+      "label": "ISO/IEC 14496-16"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

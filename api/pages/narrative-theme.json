@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:9eb5f60aca64f96de441bd12478d476946a09f91227150c7504c80e29150c156",
+  "title": "Narrative Theme",
+  "slug": "narrative-theme",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:narrative-theme",
+  "domain": "spatial-computing",
+  "definition": "The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:narrative-structure",
+      "label": "Narrative Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:storytelling",
+        "label": "Storytelling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "narrative-structure",
+      "label": "Narrative Structure"
+    },
+    {
+      "slug": "storytelling",
+      "label": "Storytelling"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "narrative-design-ontology",
+      "label": "Narrative Design Ontology"
+    }
+  ]
+}

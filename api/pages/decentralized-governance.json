@@ -1,0 +1,480 @@
+{
+  "id": "urn:visionflow:page:be6ca92661f74ccbe5ca5a2d8df136d5cabe2ff95ff82365af950d008b55f084",
+  "title": "Decentralized Governance",
+  "slug": "decentralized-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralized-governance",
+  "domain": "blockchain",
+  "definition": "**Decentralized Governance** is a class of collective decision-making systems in which authority, rule-setting, and enforcement mechanisms are distributed across a network of participants rather than concentrated in a single central actor, implemented through formal on-chain voting protocols (token-weighted proposals, time-locks, quorum thresholds), off-chain social coordination mechanisms (Snapshot gasless voting, discourse forums, rough consensus), or hybrid combinations of both, manifesting across three primary institutional substrates: **Decentralized Autonomous Organizations** (DAOs) encoding governance rules as smart-contract bytecode on EVM-compatible chains\u2014Compound Finance DAO (COMP token, 400K COMP quorum, 2-day vote, 2-day timelock, $2.5B TVL governed as of Q1 2026), Uniswap DAO (UNI, 4% quorum of 1B supply = 40M UNI, Governance v3 2023, $9B+ TVL), MakerDAO (MKR, Executive Votes requiring hat majority, Emergency Shutdown Module, transitioning to the Sky Protocol rebrand July 2024 with USDS/SKY token migration and Endgame plan including SubDAO structure), Aave DAO (AAVE/stkAAVE, Guardian committee, V3 cross-chain governance), Gitcoin DAO (GTC, Gitcoin Grants quadratic fun",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:collective-action",
+      "label": "Collective Action"
+    },
+    {
+      "id": "urn:visionflow:linked:common-pool-resources",
+      "label": "Common Pool Resources"
+    },
+    {
+      "id": "urn:visionflow:linked:institutional-economics",
+      "label": "Institutional Economics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "qualityScore": 0.54,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:delegation-system",
+        "label": "Delegation System"
+      },
+      {
+        "id": "urn:visionflow:linked:governance-forum",
+        "label": "Governance Forum"
+      },
+      {
+        "id": "urn:visionflow:linked:quorum-threshold",
+        "label": "Quorum Threshold"
+      },
+      {
+        "id": "urn:visionflow:linked:timelock-contract",
+        "label": "Timelock Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "id": "urn:visionflow:linked:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-systems",
+        "label": "Identity Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:community-ownership",
+        "label": "Community Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:daos",
+        "label": "DAOs"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:parameter-adjustment",
+        "label": "Parameter Adjustment"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-upgrades",
+        "label": "Protocol Upgrades"
+      },
+      {
+        "id": "urn:visionflow:linked:trustless-coordination",
+        "label": "Trustless Coordination"
+      },
+      {
+        "id": "urn:visionflow:owl:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "id": "urn:visionflow:linked:holographic-consensus",
+        "label": "Holographic Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:visionflow:linked:optimistic-governance",
+        "label": "Optimistic Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "benevolent-dictatorship",
+      "label": "Benevolent Dictatorship"
+    },
+    {
+      "slug": "bip-process",
+      "label": "BIP Process"
+    },
+    {
+      "slug": "blockchain-consensus",
+      "label": "Blockchain Consensus"
+    },
+    {
+      "slug": "centralised-governance",
+      "label": "Centralised Governance"
+    },
+    {
+      "slug": "collective-action",
+      "label": "Collective Action"
+    },
+    {
+      "slug": "common-pool-resources",
+      "label": "Common Pool Resources"
+    },
+    {
+      "slug": "community-ownership",
+      "label": "Community Ownership"
+    },
+    {
+      "slug": "community-treasury",
+      "label": "Community Treasury"
+    },
+    {
+      "slug": "compound-finance",
+      "label": "Compound Finance"
+    },
+    {
+      "slug": "compound-governor-bravo",
+      "label": "Compound GovernorBravo"
+    },
+    {
+      "slug": "corporate-board-governance",
+      "label": "Corporate Board Governance"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "cosmos-governance-module",
+      "label": "Cosmos Governance Module"
+    },
+    {
+      "slug": "cryptographic-proofs",
+      "label": "Cryptographic Proofs"
+    },
+    {
+      "slug": "cryptographic-signatures",
+      "label": "Cryptographic Signatures"
+    },
+    {
+      "slug": "daos",
+      "label": "DAOs"
+    },
+    {
+      "slug": "de-fi-protocols",
+      "label": "DeFi Protocols"
+    },
+    {
+      "slug": "decentralized-finance",
+      "label": "Decentralized Finance"
+    },
+    {
+      "slug": "delegation-system",
+      "label": "Delegation System"
+    },
+    {
+      "slug": "discourse-forums",
+      "label": "Discourse Forums"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "eip-process",
+      "label": "EIP Process"
+    },
+    {
+      "slug": "erc-20-tokens",
+      "label": "ERC-20 Tokens"
+    },
+    {
+      "slug": "futarchy",
+      "label": "Futarchy"
+    },
+    {
+      "slug": "gitcoin-grants",
+      "label": "Gitcoin Grants"
+    },
+    {
+      "slug": "governance-forum",
+      "label": "Governance Forum"
+    },
+    {
+      "slug": "governor-contracts",
+      "label": "Governor Contracts"
+    },
+    {
+      "slug": "holographic-consensus",
+      "label": "Holographic Consensus"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "Institutional Economics"
+    },
+    {
+      "slug": "institutional-economics-domain",
+      "label": "InstitutionalEconomicsDomain"
+    },
+    {
+      "slug": "liquid-democracy",
+      "label": "Liquid Democracy"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "multisignature-wallets",
+      "label": "Multisignature Wallets"
+    },
+    {
+      "slug": "off-chain-governance",
+      "label": "Off-Chain Governance"
+    },
+    {
+      "slug": "open-source-governance",
+      "label": "Open Source Governance"
+    },
+    {
+      "slug": "open-zeppelin-governor",
+      "label": "OpenZeppelin Governor"
+    },
+    {
+      "slug": "optimistic-governance",
+      "label": "Optimistic Governance"
+    },
+    {
+      "slug": "parameter-adjustment",
+      "label": "Parameter Adjustment"
+    },
+    {
+      "slug": "political-economy-domain",
+      "label": "PoliticalEconomyDomain"
+    },
+    {
+      "slug": "polycentric-governance",
+      "label": "Polycentric Governance"
+    },
+    {
+      "slug": "protocol-decentralization",
+      "label": "Protocol Decentralization"
+    },
+    {
+      "slug": "protocol-upgrades",
+      "label": "Protocol Upgrades"
+    },
+    {
+      "slug": "public-goods-funding",
+      "label": "Public Goods Funding"
+    },
+    {
+      "slug": "quorum-threshold",
+      "label": "Quorum Threshold"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "SmartContractLayer"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "social-consensus-layer",
+      "label": "SocialConsensusLayer"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "tally",
+      "label": "Tally"
+    },
+    {
+      "slug": "tally-protocol",
+      "label": "Tally Protocol"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
+    },
+    {
+      "slug": "timelock-contract",
+      "label": "Timelock Contract"
+    },
+    {
+      "slug": "timelocks",
+      "label": "Timelocks"
+    },
+    {
+      "slug": "token-distribution",
+      "label": "Token Distribution"
+    },
+    {
+      "slug": "token-standards",
+      "label": "Token Standards"
+    },
+    {
+      "slug": "token-weighted-voting",
+      "label": "Token-Weighted Voting"
+    },
+    {
+      "slug": "trustless-coordination",
+      "label": "Trustless Coordination"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "voting-mechanism",
+      "label": "Voting Mechanism"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "delegated-proof-of-stake",
+      "label": "Delegated Proof of Stake"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "identity-systems",
+      "label": "Identity Systems"
+    },
+    {
+      "slug": "proposal-system",
+      "label": "Proposal System"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    }
+  ]
+}

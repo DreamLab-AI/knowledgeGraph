@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:e6123f64d04b8e0a9e0d40963b3bc95fe0ef7117242806a56c5e5ee4f2d25664",
+  "title": "Stacking",
+  "slug": "stacking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stacking",
+  "domain": "artificial-intelligence",
+  "definition": "Stacking is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ensemble-methods",
+      "label": "Ensemble Methods"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    }
+  ]
+}

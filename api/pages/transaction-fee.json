@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:275e73c4ef86723dc976ce03e91174ba0e8e75801791484c9ddf007a194d4fc8",
+  "title": "Transaction Fee",
+  "slug": "transaction-fee",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transaction-fee",
+  "domain": "blockchain",
+  "definition": "Payment for transaction processing within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:economic-mechanism",
+      "label": "EconomicMechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "economic-layer",
+      "label": "EconomicLayer"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "EconomicMechanism"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "TokenEconomicsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "economic-mechanism",
+      "label": "Economic Mechanism"
+    },
+    {
+      "slug": "gas-optimization",
+      "label": "Gas Optimization"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

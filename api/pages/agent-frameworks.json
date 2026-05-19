@@ -1,0 +1,784 @@
+{
+  "id": "urn:visionflow:page:7f0123fce071966f70bdcc22c2e15772a1cf6c0e894b965ba06f60d6aea6c0d2",
+  "title": "Agent Frameworks",
+  "slug": "agent-frameworks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agent-frameworks",
+  "domain": "artificial-intelligence",
+  "definition": "Agent Frameworks are software libraries, runtimes, and orchestration platforms that compose large language models (LLMs) with tool-use, memory, planning, and inter-agent communication into autonomous or semi-autonomous systems capable of multi-step goal pursuit, encompassing single-agent harnesses (LangChain 97K+ GitHub stars 50K+ production apps, LlamaIndex 38K+ stars document/knowledge agents, Pydantic-AI type-safe Python framework May 2024, Vercel AI SDK streaming UI generation, BAML prompts-as-typed-functions DSL), graph-state runtimes (LangGraph 12.8K+ stars adopted by LinkedIn/Uber/Replit/Klarna/400+ enterprises, Gartner-cited in 34% of agent-framework production architecture documents at 1000+ employee companies, state-machine with conditional routing/checkpointing/human-in-the-loop), multi-agent orchestrators (AutoGen Microsoft Research 42K+ stars v0.4 January 2025 reorganised into autogen-core/autogen-agentchat/autogen-ext, CrewAI 45.9K+ stars $18M Series A powering 60% of Fortune 500 agents via role-playing crews, OpenAI Swarm October 2024 superseded by OpenAI Agents SDK March 2025 with Responses API, Google ADK April 2025 Vertex AI integration, claude-agent-sdk September",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "id": "urn:visionflow:linked:llm-orchestration",
+      "label": "LLM Orchestration"
+    },
+    {
+      "id": "urn:visionflow:linked:software-framework",
+      "label": "Software Framework"
+    },
+    {
+      "id": "urn:visionflow:linked:workflow-engine",
+      "label": "Workflow Engine"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:evaluator-module",
+        "label": "Evaluator Module"
+      },
+      {
+        "id": "urn:visionflow:linked:executor-module",
+        "label": "Executor Module"
+      },
+      {
+        "id": "urn:visionflow:linked:hook-system",
+        "label": "Hook System"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-store",
+        "label": "Memory Store"
+      },
+      {
+        "id": "urn:visionflow:linked:planner-module",
+        "label": "Planner Module"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "id": "urn:visionflow:linked:state-graph",
+        "label": "State Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:trace-logger",
+        "label": "Trace Logger"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:inference-endpoint",
+        "label": "Inference Endpoint"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:observability-stack",
+        "label": "Observability Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:persistence-layer",
+        "label": "Persistence Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "id": "urn:visionflow:linked:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-agent-collaboration",
+        "label": "Multi-Agent Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:chain-of-thought",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "id": "urn:visionflow:linked:hierarchical-topology",
+        "label": "Hierarchical Topology"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-topology",
+        "label": "Mesh Topology"
+      },
+      {
+        "id": "urn:visionflow:linked:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:reflexion-pattern",
+        "label": "Reflexion Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:toolformer-pattern",
+        "label": "Toolformer Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "acp-protocol",
+      "label": "ACP Protocol"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agntcy-collective",
+      "label": "AGNTCY Collective"
+    },
+    {
+      "slug": "agntcy-internet-of-agents",
+      "label": "AGNTCY Internet of Agents"
+    },
+    {
+      "slug": "anthropic-claude-agent-sdk-documentation",
+      "label": "Anthropic claude-agent-sdk Documentation"
+    },
+    {
+      "slug": "anthropic-mcp-code-execution-engineering",
+      "label": "Anthropic MCP Code Execution Engineering"
+    },
+    {
+      "slug": "anthropic-model-context-protocol-announcement",
+      "label": "Anthropic Model Context Protocol Announcement"
+    },
+    {
+      "slug": "autonomous-coding",
+      "label": "Autonomous Coding"
+    },
+    {
+      "slug": "autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "slug": "bpmn-orchestration",
+      "label": "BPMN Orchestration"
+    },
+    {
+      "slug": "browser-automation",
+      "label": "Browser Automation"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain-of-Thought"
+    },
+    {
+      "slug": "chen-et-al-2021-human-eval",
+      "label": "Chen et al 2021 HumanEval"
+    },
+    {
+      "slug": "classical-workflow-engine",
+      "label": "Classical Workflow Engine"
+    },
+    {
+      "slug": "coding-assistant",
+      "label": "Coding Assistant"
+    },
+    {
+      "slug": "computer-use",
+      "label": "Computer Use"
+    },
+    {
+      "slug": "customer-service-agent",
+      "label": "Customer Service Agent"
+    },
+    {
+      "slug": "data-analysis-agent",
+      "label": "Data Analysis Agent"
+    },
+    {
+      "slug": "deterministic-dag-pipeline",
+      "label": "Deterministic DAG Pipeline"
+    },
+    {
+      "slug": "embedding-model",
+      "label": "Embedding Model"
+    },
+    {
+      "slug": "evaluator-module",
+      "label": "Evaluator Module"
+    },
+    {
+      "slug": "executor-module",
+      "label": "Executor Module"
+    },
+    {
+      "slug": "google-a2-a-protocol-announcement",
+      "label": "Google A2A Protocol Announcement"
+    },
+    {
+      "slug": "hierarchical-topology",
+      "label": "Hierarchical Topology"
+    },
+    {
+      "slug": "hong-et-al-2024-meta-gpt",
+      "label": "Hong et al 2024 MetaGPT"
+    },
+    {
+      "slug": "hook-system",
+      "label": "Hook System"
+    },
+    {
+      "slug": "ibm-acp-bee-ai-specification",
+      "label": "IBM ACP BeeAI Specification"
+    },
+    {
+      "slug": "inference-endpoint",
+      "label": "Inference Endpoint"
+    },
+    {
+      "slug": "jimenez-et-al-2024-swe-bench",
+      "label": "Jimenez et al 2024 SWE-bench"
+    },
+    {
+      "slug": "json-rpc",
+      "label": "JSON-RPC"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "lang-chain-lang-graph-documentation",
+      "label": "LangChain LangGraph Documentation"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "liu-et-al-2024-agent-bench",
+      "label": "Liu et al 2024 AgentBench"
+    },
+    {
+      "slug": "llm-evaluation",
+      "label": "LLM Evaluation"
+    },
+    {
+      "slug": "llm-inference",
+      "label": "LLM Inference"
+    },
+    {
+      "slug": "llm-orchestration",
+      "label": "LLM Orchestration"
+    },
+    {
+      "slug": "madaan-et-al-2023-self-refine",
+      "label": "Madaan et al 2023 Self-Refine"
+    },
+    {
+      "slug": "mcp-protocol",
+      "label": "MCP Protocol"
+    },
+    {
+      "slug": "memory-store",
+      "label": "Memory Store"
+    },
+    {
+      "slug": "mesh-topology",
+      "label": "Mesh Topology"
+    },
+    {
+      "slug": "mialon-et-al-2024-gaia",
+      "label": "Mialon et al 2024 GAIA"
+    },
+    {
+      "slug": "microsoft-auto-gen-documentation",
+      "label": "Microsoft AutoGen Documentation"
+    },
+    {
+      "slug": "model-context-protocol-specification",
+      "label": "Model Context Protocol Specification"
+    },
+    {
+      "slug": "multi-agent-collaboration",
+      "label": "Multi-Agent Collaboration"
+    },
+    {
+      "slug": "observability-stack",
+      "label": "Observability Stack"
+    },
+    {
+      "slug": "open-api",
+      "label": "OpenAPI"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "packer-et-al-2023-mem-gpt",
+      "label": "Packer et al 2023 MemGPT"
+    },
+    {
+      "slug": "park-et-al-2023-generative-agents",
+      "label": "Park et al 2023 Generative Agents"
+    },
+    {
+      "slug": "patil-et-al-2024-gorilla",
+      "label": "Patil et al 2024 Gorilla"
+    },
+    {
+      "slug": "persistence-layer",
+      "label": "Persistence Layer"
+    },
+    {
+      "slug": "plan-and-execute-pattern",
+      "label": "Plan-and-Execute Pattern"
+    },
+    {
+      "slug": "planner-module",
+      "label": "Planner Module"
+    },
+    {
+      "slug": "prompt-template",
+      "label": "Prompt Template"
+    },
+    {
+      "slug": "qin-et-al-2024-tool-llm-tool-bench",
+      "label": "Qin et al 2024 ToolLLM ToolBench"
+    },
+    {
+      "slug": "rag-pipeline",
+      "label": "RAG Pipeline"
+    },
+    {
+      "slug": "re-act-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "reflexion-pattern",
+      "label": "Reflexion Pattern"
+    },
+    {
+      "slug": "research-assistant",
+      "label": "Research Assistant"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "rule-based-expert-system",
+      "label": "Rule-Based Expert System"
+    },
+    {
+      "slug": "schick-et-al-2023-toolformer",
+      "label": "Schick et al 2023 Toolformer"
+    },
+    {
+      "slug": "scientific-discovery",
+      "label": "Scientific Discovery"
+    },
+    {
+      "slug": "self-consistency",
+      "label": "Self-Consistency"
+    },
+    {
+      "slug": "server-sent-events",
+      "label": "Server-Sent Events"
+    },
+    {
+      "slug": "shinn-et-al-2023-reflexion",
+      "label": "Shinn et al 2023 Reflexion"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "SoftwareEngineeringDomain"
+    },
+    {
+      "slug": "software-framework",
+      "label": "Software Framework"
+    },
+    {
+      "slug": "state-graph",
+      "label": "State Graph"
+    },
+    {
+      "slug": "structured-output",
+      "label": "Structured Output"
+    },
+    {
+      "slug": "tool-augmented-reasoning",
+      "label": "Tool-Augmented Reasoning"
+    },
+    {
+      "slug": "tool-calling-api",
+      "label": "Tool Calling API"
+    },
+    {
+      "slug": "tool-registry",
+      "label": "Tool Registry"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "toolformer-pattern",
+      "label": "Toolformer Pattern"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "ToolingLayer"
+    },
+    {
+      "slug": "trace-logger",
+      "label": "Trace Logger"
+    },
+    {
+      "slug": "tree-of-thoughts",
+      "label": "Tree of Thoughts"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "wang-et-al-2023-plan-and-solve",
+      "label": "Wang et al 2023 Plan-and-Solve"
+    },
+    {
+      "slug": "wang-et-al-2023-voyager",
+      "label": "Wang et al 2023 Voyager"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "workflow-engine",
+      "label": "Workflow Engine"
+    },
+    {
+      "slug": "wu-et-al-2024-auto-gen",
+      "label": "Wu et al 2024 AutoGen"
+    },
+    {
+      "slug": "xie-et-al-2024-osworld",
+      "label": "Xie et al 2024 OSWorld"
+    },
+    {
+      "slug": "yang-et-al-2024-swe-agent",
+      "label": "Yang et al 2024 SWE-agent"
+    },
+    {
+      "slug": "yao-et-al-2023-re-act",
+      "label": "Yao et al 2023 ReAct"
+    },
+    {
+      "slug": "zhou-et-al-2024-web-arena",
+      "label": "Zhou et al 2024 WebArena"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

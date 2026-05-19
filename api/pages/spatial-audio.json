@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:dd2e5ef1f1bb719b2f158bc8267a21bb5f471765f9c1d7fe7cbe905664ef8c72",
+  "title": "Spatial Audio",
+  "slug": "spatial-audio",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-audio",
+  "domain": "spatial-computing",
+  "definition": "Three-dimensional sound technology that uses head-related transfer functions (HRTF) and object-based mixing to position audio sources in 3D space around the listener, creating immersive auditory experiences that replicate natural sound perception.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:audio-technology",
+      "label": "Audio Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audio-technology",
+      "label": "Audio Technology"
+    },
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

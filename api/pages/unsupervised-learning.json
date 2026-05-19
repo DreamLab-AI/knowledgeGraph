@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928",
+  "title": "Unsupervised Learning",
+  "slug": "unsupervised-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:unsupervised-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autoencoders",
+      "label": "Autoencoders"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

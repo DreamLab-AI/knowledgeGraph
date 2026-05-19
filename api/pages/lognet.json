@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:f11b39f22536a656e33ae8a7644e74f4ccf41d2e6f22823e22072f831bac0648",
+  "title": "lognet",
+  "slug": "lognet",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lognet",
+  "domain": "infrastructure",
+  "definition": "lognet is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

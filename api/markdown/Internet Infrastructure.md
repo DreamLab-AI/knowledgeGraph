@@ -1,21 +1,207 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#InternetInfrastructure
-uri:: urn:visionclaw:concept:artificial-intelligence:internet-infrastructure
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:internet-infrastructure
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Internet Infrastructure
-content-hash:: sha256-12-bf7a1bdc341d
-legacy-term-id:: AI-9018
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#InternetInfrastructure
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:internet-infrastructure
 public:: true
+
+# Internet Infrastructure
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:901a33af0084836fe9b3f7f90145ec7b00980131136eb85db0fb9ef441c738dc",
+  "@type": "Page",
+  "vc:slug": "internet-infrastructure",
+  "title": "Internet Infrastructure",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:5-g-networks",
+      "vc:label": "5G Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-bf7a1bdc341d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#InternetInfrastructure"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-9018"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Internet Infrastructure"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:internet-infrastructure"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:internet-infrastructure"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:901a33af0084836fe9b3f7f90145ec7b00980131136eb85db0fb9ef441c738dc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:internet-infrastructure",
+  "@type": "OntologyClass",
+  "label": "Internet Infrastructure",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "['owl:Thing']"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:901a33af0084836fe9b3f7f90145ec7b00980131136eb85db0fb9ef441c738dc"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:901a33af0084836fe9b3f7f90145ec7b00980131136eb85db0fb9ef441c738dc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services. This includes cloud-native architectures, serverless computing for inference, 5G/6G networks for low-latency AI, edge-cloud continuum for distributed intelligence, and specialized AI hardware deployed at network edges. Modern AI infrastructure leverages containerization (Docker, Kubernetes), service meshes, and API gateways to provide scalable, reliable, and globally distributed AI applications with real-time responsiveness.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:internet-infrastructure:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:901a33af0084836fe9b3f7f90145ec7b00980131136eb85db0fb9ef441c738dc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[5G Networks]]",
+      "resolved": "urn:visionflow:linked:5-g-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cloud Computing]]",
+      "resolved": "urn:visionflow:owl:class:cloud-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Systems]]",
+      "resolved": "urn:visionflow:owl:class:distributed-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Edge Computing]]",
+      "resolved": "urn:visionflow:owl:class:edge-computing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:901a33af0084836fe9b3f7f90145ec7b00980131136eb85db0fb9ef441c738dc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services. This includes cloud-native architectures, serverless computing for inference, 5G/6G networks for low-latency AI, edge-cloud continuum for distributed intelligence, and specialized AI hardware deployed at network edges. Modern AI infrastructure leverages containerization (Docker, Kubernetes), service meshes, and API gateways to provide scalable, reliable, and globally distributed AI applications with real-time responsiveness.

@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e",
+  "title": "Data Augmentation Strategies",
+  "slug": "data-augmentation-strategies",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-augmentation-strategies",
+  "domain": "artificial-intelligence",
+  "definition": "Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "apple-machine-learning-research",
+      "label": "Apple Machine Learning Research"
+    },
+    {
+      "slug": "ar-xiv",
+      "label": "arXiv"
+    },
+    {
+      "slug": "ieee-cvf-international-conference-on-computer-vision",
+      "label": "IEEE/CVF International Conference on Computer Vision"
+    },
+    {
+      "slug": "nature",
+      "label": "Nature"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

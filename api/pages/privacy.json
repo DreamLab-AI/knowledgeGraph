@@ -1,0 +1,252 @@
+{
+  "id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913",
+  "title": "Privacy",
+  "slug": "privacy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy",
+  "domain": "infrastructure",
+  "definition": "The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:privacy-framework",
+      "label": "Privacy Framework"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "back2002hashcash",
+      "label": "back2002hashcash"
+    },
+    {
+      "slug": "bayer2023artificial",
+      "label": "bayer2023artificial"
+    },
+    {
+      "slug": "burnham1983rise-chaum1985security",
+      "label": "burnham1983rise; @chaum1985security"
+    },
+    {
+      "slug": "callas1998openpgp",
+      "label": "callas1998openpgp"
+    },
+    {
+      "slug": "dai1998b",
+      "label": "dai1998b"
+    },
+    {
+      "slug": "dwork1992pricing-jakobsson1999proofs",
+      "label": "dwork1992pricing; @jakobsson1999proofs"
+    },
+    {
+      "slug": "goldenfein-mann-2024",
+      "label": "Goldenfein Mann 2024"
+    },
+    {
+      "slug": "harari2014sapiens",
+      "label": "harari2014sapiens"
+    },
+    {
+      "slug": "lavoie1990prefatory",
+      "label": "lavoie1990prefatory"
+    },
+    {
+      "slug": "nakamoto2008",
+      "label": "Nakamoto2008"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "o2021god",
+      "label": "o2021god"
+    },
+    {
+      "slug": "rosenbergmanipulation",
+      "label": "rosenbergmanipulation"
+    },
+    {
+      "slug": "salin-costs-cypher-punk-mail-list",
+      "label": "salinCosts; @cypherPunkMailList"
+    },
+    {
+      "slug": "swartz2008guerilla",
+      "label": "swartz2008guerilla"
+    },
+    {
+      "slug": "szabo1997formalizing",
+      "label": "szabo1997formalizing"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "cypherpunk",
+      "label": "cypherpunk"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "equity",
+      "label": "Equity"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-web",
+      "label": "Spatial Web"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

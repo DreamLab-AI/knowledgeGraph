@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:83327346da5f36f170082f6b2548c962df55e21841888e7dc6af96edd413dc9f",
+  "title": "Parallel Processing",
+  "slug": "parallel-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:parallel-processing",
+  "domain": "infrastructure",
+  "definition": "ParallelProcessing is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "delta-robot",
+      "label": "Delta Robot"
+    }
+  ]
+}

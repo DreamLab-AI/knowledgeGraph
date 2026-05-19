@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:59716cc9468415a64b4c7688e4ebd1c543c737b0243411dad903e72a3c19144e",
+  "title": "Diversity, Non-Discrimination, and Fairness",
+  "slug": "diversity-non-discrimination-and-fairness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:diversity-non-discrimination-and-fairness",
+  "domain": "artificial-intelligence",
+  "definition": "Diversity Non-Discrimination and Fairness is a trustworthiness dimension ensuring AI systems avoid unfair bias, ensure equitable treatment across demographic groups, implement accessibility and universal design, and enable inclusive stakeholder participation throughout development and deployment. This dimension encompasses three core components: unfair bias avoidance (identifying bias affecting protected characteristics including sex, racial or ethnic origin, religion, disability, age, and sexual orientation per EU Charter Article 21, implementing bias mitigation through pre-processing data corrections, in-processing fairness constraints, and post-processing prediction adjustments, and continuously monitoring fairness metrics including demographic parity requiring equal selection rates across groups, equalized odds ensuring equal true positive and false positive rates, equal opportunity guaranteeing equal true positive rates, and individual fairness treating similar individuals similarly), accessibility and universal design (complying with Web Content Accessibility Guidelines WCAG ensuring perceivable, operable, understandable, and robust interfaces, implementing European Accessibi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-charter-article-21",
+      "label": "EU Charter Article 21"
+    },
+    {
+      "slug": "iso-iec-tr-24027",
+      "label": "ISO/IEC TR 24027"
+    },
+    {
+      "slug": "wcag",
+      "label": "WCAG"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
+  "backlinks": []
+}

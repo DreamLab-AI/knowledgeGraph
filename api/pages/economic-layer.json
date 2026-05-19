@@ -1,0 +1,135 @@
+{
+  "id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4",
+  "title": "Economic Layer",
+  "slug": "economic-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:economic-layer",
+  "domain": "infrastructure",
+  "definition": "The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems. This layer encompasses concrete economic implementations including token emission schedules (Bitcoin's halving schedule, Ethereum's changing issuance policy), fee market implementations (EIP-1559's base fee adjustment mechanism, priority fee auctions), incentive mechanism implementations (mining reward distribution, staking yield calculations, validator reward formulas), penalty mechanisms (slashing implementations specifying exact penalty amounts and conditions), market mechanism implementations (automated market maker formulas, bonding curves, liquidity pool mechanics), resource pricing mechanisms (gas price mechanisms, storage rent, computation pricing), economic security implementations (cost-of-attack calculations, security budget allocations), and game-theoretic mechanism implementations (auction mechanisms, voting systems, coordination games). Unlike ConceptualLayer which addresses abstract economic principles and theorie",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "base-fee",
+      "label": "Base Fee"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "burning-mechanism",
+      "label": "Burning Mechanism"
+    },
+    {
+      "slug": "circulating-supply",
+      "label": "Circulating Supply"
+    },
+    {
+      "slug": "coin",
+      "label": "Coin"
+    },
+    {
+      "slug": "deflationary-token",
+      "label": "Deflationary Token"
+    },
+    {
+      "slug": "economic-security",
+      "label": "Economic Security"
+    },
+    {
+      "slug": "emission-schedule",
+      "label": "Emission Schedule"
+    },
+    {
+      "slug": "fee-market",
+      "label": "Fee Market"
+    },
+    {
+      "slug": "gas-limit",
+      "label": "Gas Limit"
+    },
+    {
+      "slug": "gas-price",
+      "label": "Gas Price"
+    },
+    {
+      "slug": "gas",
+      "label": "Gas"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "incentive-alignment",
+      "label": "Incentive Alignment"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "inflationary-token",
+      "label": "Inflationary Token"
+    },
+    {
+      "slug": "market-capitalization",
+      "label": "Market Capitalization"
+    },
+    {
+      "slug": "minting",
+      "label": "Minting"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "native-token",
+      "label": "Native Token"
+    },
+    {
+      "slug": "priority-fee",
+      "label": "Priority Fee"
+    },
+    {
+      "slug": "supply-cap",
+      "label": "Supply Cap"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "total-supply",
+      "label": "Total Supply"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

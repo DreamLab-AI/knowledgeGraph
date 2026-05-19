@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:8c6e6211bd58499a3c56f172391e30e018c248c212d16de8ea2bd43867b25baa",
+  "title": "Digital Certificate",
+  "slug": "digital-certificate",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-certificate",
+  "domain": "spatial-computing",
+  "definition": "A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations. bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-security",
+      "label": "Digital Security"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-establishment",
+        "label": "Trust Establishment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "secure-communication",
+      "label": "Secure Communication"
+    },
+    {
+      "slug": "trust-establishment",
+      "label": "Trust Establishment"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "digital-security",
+      "label": "Digital Security"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

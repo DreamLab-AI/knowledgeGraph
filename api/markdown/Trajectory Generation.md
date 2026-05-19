@@ -1,22 +1,381 @@
-iri:: http://narrativegoldmine.com/robotics#TrajectoryGeneration
-uri:: urn:visionclaw:concept:robotics:trajectory-generation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:trajectory-generation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Trajectory Generation
-content-hash:: sha256-12-806a2cadbcad
-legacy-term-id:: RB-1007
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.96
-version:: 2.0.0
-created:: 2025-11-24T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-bridges-to:: [[Computer Vision]], [[Digital Twin]]
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#TrajectoryGeneration
+legacy_uri:: urn:visionclaw:concept:robotics:trajectory-generation
 public:: true
+
+# Trajectory Generation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c",
+  "@type": "Page",
+  "vc:slug": "trajectory-generation",
+  "title": "Trajectory Generation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicles",
+      "vc:label": "Autonomous Vehicles"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuity",
+      "vc:label": "Continuity"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-constraints",
+      "vc:label": "Dynamic Constraints"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-configuration",
+      "vc:label": "Goal Configuration"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-automation",
+      "vc:label": "Industrial Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:kinematic-constraints",
+      "vc:label": "Kinematic Constraints"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1003-optimal-control",
+      "vc:label": "RB-1003-optimal-control"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1005-forward-kinematics",
+      "vc:label": "RB-1005-forward-kinematics"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1006-inverse-kinematics",
+      "vc:label": "RB-1006-inverse-kinematics"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1016-path-planning",
+      "vc:label": "RB-1016-path-planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1019-obstacle-avoidance",
+      "vc:label": "RB-1019-obstacle-avoidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:robot-motion",
+      "vc:label": "Robot Motion"
+    },
+    {
+      "@id": "urn:visionflow:linked:smoothness",
+      "vc:label": "Smoothness"
+    },
+    {
+      "@id": "urn:visionflow:linked:start-configuration",
+      "vc:label": "Start Configuration"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-execution",
+      "vc:label": "Task Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:trajectory",
+      "vc:label": "Trajectory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.96"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]], [[Digital Twin]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-806a2cadbcad"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-24T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#TrajectoryGeneration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-1007"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Trajectory Generation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:trajectory-generation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:trajectory-generation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:trajectory-generation",
+  "@type": "OntologyClass",
+  "label": "Trajectory Generation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The process of computing a time-parameterized path that specifies the position, velocity, and acceleration of a robot's joints or end-effector as functions of time, enabling smooth motion from start to goal configurations while respecting kinematic and dynamic constraints.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.96",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:goal-configuration",
+      "vc:label": "Goal Configuration"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1016-path-planning",
+      "vc:label": "RB-1016-path-planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:start-configuration",
+      "vc:label": "Start Configuration"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:robot-motion",
+      "vc:label": "Robot Motion"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-execution",
+      "vc:label": "Task Execution"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:rb-1005-forward-kinematics",
+      "vc:label": "RB-1005-forward-kinematics"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1006-inverse-kinematics",
+      "vc:label": "RB-1006-inverse-kinematics"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:trajectory-generation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Autonomous Vehicles]]",
+      "resolved": "urn:visionflow:linked:autonomous-vehicles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Continuity]]",
+      "resolved": "urn:visionflow:linked:continuity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dynamic Constraints]]",
+      "resolved": "urn:visionflow:linked:dynamic-constraints",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goal Configuration]]",
+      "resolved": "urn:visionflow:linked:goal-configuration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Industrial Automation]]",
+      "resolved": "urn:visionflow:linked:industrial-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kinematic Constraints]]",
+      "resolved": "urn:visionflow:linked:kinematic-constraints",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1003-optimal-control]]",
+      "resolved": "urn:visionflow:linked:rb-1003-optimal-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1005-forward-kinematics]]",
+      "resolved": "urn:visionflow:linked:rb-1005-forward-kinematics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1006-inverse-kinematics]]",
+      "resolved": "urn:visionflow:linked:rb-1006-inverse-kinematics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1016-path-planning]]",
+      "resolved": "urn:visionflow:linked:rb-1016-path-planning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1019-obstacle-avoidance]]",
+      "resolved": "urn:visionflow:linked:rb-1019-obstacle-avoidance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robot Motion]]",
+      "resolved": "urn:visionflow:linked:robot-motion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smoothness]]",
+      "resolved": "urn:visionflow:linked:smoothness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Start Configuration]]",
+      "resolved": "urn:visionflow:linked:start-configuration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Task Execution]]",
+      "resolved": "urn:visionflow:linked:task-execution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trajectory]]",
+      "resolved": "urn:visionflow:linked:trajectory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion Planning]]",
+      "resolved": "urn:visionflow:owl:class:motion-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The process of computing a time-parameterized path that specifies the position, velocity, and acceleration of a robot's joints or end-effector as functions of time, enabling smooth motion from start to goal configurations while respecting kinematic and dynamic constraints.

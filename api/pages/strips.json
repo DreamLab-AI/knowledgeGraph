@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:7f0f0914868763ca46487e48f2dcb90bac3751175c0d4536a8e0b91c4aff52d5",
+  "title": "STRIPS",
+  "slug": "strips",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:strips",
+  "domain": "artificial-intelligence",
+  "definition": "STRIPS is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

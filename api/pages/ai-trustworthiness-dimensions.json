@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:f1001729fc7c6eacb396375ca801b58dd47a22bf536750681205fd3a1b2a6a1b",
+  "title": "AI Trustworthiness Dimensions",
+  "slug": "ai-trustworthiness-dimensions",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-trustworthiness-dimensions",
+  "domain": "artificial-intelligence",
+  "definition": "AI Trustworthiness Dimensions are the seven interdependent assessment criteria that collectively define whether an AI system meets trustworthiness requirements, ensuring ethical, lawful, and robust deployment while protecting fundamental rights and enabling societal benefit. Established by the EU High-Level Expert Group on AI Ethics Guidelines (2019) and integrated into the EU AI Act (2024), these dimensions provide comprehensive evaluation framework covering human agency and oversight (fundamental rights to self-determination and meaningful human control over automated systems), technical robustness and safety (resilience to attacks, fallback mechanisms, accuracy reliability, and general safety controls), privacy and data governance (data minimization, purpose limitation, privacy by design and default, quality assurance, and access controls), transparency and explainability (traceability of development processes, explainability of decisions tailored to stakeholder needs, and communication transparency about AI involvement and capabilities), diversity non-discrimination and fairness (avoidance of unfair bias, accessibility and universal design, and inclusive stakeholder participati",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-charter-of-fundamental-rights",
+      "label": "EU Charter of Fundamental Rights"
+    },
+    {
+      "slug": "eu-hleg-ai",
+      "label": "EU HLEG AI"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": []
+}

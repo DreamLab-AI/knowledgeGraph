@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:6e403c0775309efdf6ef25cfb6810c52207cdf344b78da25db87a518e7108054",
+  "title": "Virtual Society",
+  "slug": "virtual-society",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-society",
+  "domain": "spatial-computing",
+  "definition": "A virtual society component in the Metaverse domain that enables VirtualWorld.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:social-structure",
+      "label": "Social Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "social-structure",
+      "label": "Social Structure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

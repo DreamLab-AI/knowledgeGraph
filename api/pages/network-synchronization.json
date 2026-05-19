@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:54553d4f6329c70d5fa66d6ea3499bc65897447074336872524aee7a3b9988e5",
+  "title": "Network Synchronization",
+  "slug": "network-synchronization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:network-synchronization",
+  "domain": "blockchain",
+  "definition": "Node state alignment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consensus-protocol",
+      "label": "ConsensusProtocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "consensus-domain",
+      "label": "ConsensusDomain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "ConsensusProtocol"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ]
+}

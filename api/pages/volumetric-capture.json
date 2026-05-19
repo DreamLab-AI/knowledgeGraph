@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:ab480d7de6bcc5c0d2f2147ede7107227ee10b2723054876bc8e27984e924371",
+  "title": "Volumetric Capture",
+  "slug": "volumetric-capture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:volumetric-capture",
+  "domain": "spatial-computing",
+  "definition": "VolumetricCapture is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-immersive-reality-capture-crossover",
+      "label": "ETSI Domain Immersive + Reality Capture Crossover"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:28a793ea64a5ec0d9f1c34058d7fbd57547ab769f839e4fb8c63594a4901a9f6",
+  "title": "Hardware Abstraction",
+  "slug": "hardware-abstraction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hardware-abstraction",
+  "domain": "spatial-computing",
+  "definition": "Hardware Abstraction is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "unified-hardware-access",
+      "label": "Unified Hardware Access"
+    }
+  ]
+}

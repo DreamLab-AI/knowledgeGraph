@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:bd2846e0c37520735d8249a87a9f30770f814c2a9f9f3e3ed868d1d910463952",
+  "title": "Text-to-Speech",
+  "slug": "text-to-speech",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:text-to-speech",
+  "domain": "artificial-intelligence",
+  "definition": "Text-to-Speech is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    },
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    }
+  ]
+}

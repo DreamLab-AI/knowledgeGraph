@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:e1d9c35d8d73b6e1c932955613be8b49e5da2afd982b1243f6f8dba73c0966cd",
+  "title": "Merkle Proof",
+  "slug": "merkle-proof",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:merkle-proof",
+  "domain": "blockchain",
+  "definition": "Cryptographic inclusion proof within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "label": "CryptographicPrimitive"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "CryptographicDomain"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "CryptographicPrimitive"
+    },
+    {
+      "slug": "security-layer",
+      "label": "SecurityLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cosmos-ibc",
+      "label": "Cosmos IBC"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    }
+  ]
+}

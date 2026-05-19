@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:578213cb0f2435ad2a6e1d55f09476262b45787bd966cc16be340c17efc8480b",
+  "title": "ETSI Domain AI + Creative Media",
+  "slug": "etsi-domain-ai-creative-media",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
+  "domain": "artificial-intelligence",
+  "definition": "Cross-domain marker for metaverse components that combine artificial intelligence capabilities with creative media applications such as generative content, procedural generation, and AI-assisted authoring.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:generative-content-classification",
+        "label": "Generative Content Classification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-art-categorization",
+        "label": "AI Art Categorization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "generative-content-classification",
+      "label": "Generative Content Classification"
+    },
+    {
+      "slug": "ai-art-categorization",
+      "label": "AI Art Categorization"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    }
+  ]
+}

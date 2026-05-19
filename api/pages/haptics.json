@@ -1,0 +1,155 @@
+{
+  "id": "urn:visionflow:page:e122faa66c0cb3c67082128f04433650ef7eb843bbfe5c9efe80fc023f51a5e9",
+  "title": "Haptics",
+  "slug": "haptics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:haptics",
+  "domain": "spatial-computing",
+  "definition": "Physical hardware systems that simulate tactile sensations and force feedback within virtual environments through actuators and sensors.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:force-feedback-actuators",
+        "label": "Force Feedback Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:piezoelectric-sensors",
+        "label": "Piezoelectric Sensors"
+      },
+      {
+        "id": "urn:visionflow:linked:tactile-actuators",
+        "label": "Tactile Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:vibration-motors",
+        "label": "Vibration Motors"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:signal-processing-unit",
+        "label": "Signal Processing Unit"
+      },
+      {
+        "id": "urn:visionflow:owl:class:driver-software",
+        "label": "Driver Software"
+      },
+      {
+        "id": "urn:visionflow:owl:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:physical-presence",
+        "label": "Physical Presence"
+      },
+      {
+        "id": "urn:visionflow:linked:tactile-feedback",
+        "label": "Tactile Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:texture-simulation",
+        "label": "Texture Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "force-feedback",
+      "label": "Force Feedback"
+    },
+    {
+      "slug": "force-feedback-actuators",
+      "label": "Force Feedback Actuators"
+    },
+    {
+      "slug": "iso-9241-960",
+      "label": "ISO 9241-960"
+    },
+    {
+      "slug": "low-latency-communication",
+      "label": "Low Latency Communication"
+    },
+    {
+      "slug": "physical-presence",
+      "label": "Physical Presence"
+    },
+    {
+      "slug": "piezoelectric-sensors",
+      "label": "Piezoelectric Sensors"
+    },
+    {
+      "slug": "signal-processing-unit",
+      "label": "Signal Processing Unit"
+    },
+    {
+      "slug": "tactile-actuators",
+      "label": "Tactile Actuators"
+    },
+    {
+      "slug": "tactile-feedback",
+      "label": "Tactile Feedback"
+    },
+    {
+      "slug": "texture-simulation",
+      "label": "Texture Simulation"
+    },
+    {
+      "slug": "vibration-motors",
+      "label": "Vibration Motors"
+    },
+    {
+      "slug": "driver-software",
+      "label": "Driver Software"
+    },
+    {
+      "slug": "human-interface-device",
+      "label": "Human Interface Device"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "human-interface-device",
+      "label": "Human Interface Device"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "urn:visionflow:page:23e75bd8dfb0444f82e3251a682f4bbfc8af175633298726c4292dc82405cea1",
+  "title": "Trust Infrastructure",
+  "slug": "trust-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trust-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Foundational systems providing authentication, authorisation, encryption, and trust establishment mechanisms. Enables secure interaction between participants in distributed narrative systems through cryptographic protocols, identity verification, and access control policies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:encryption-service",
+        "label": "Encryption Service"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:visionflow:linked:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "authorisation",
+      "label": "Authorisation"
+    },
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "data-confidentiality",
+      "label": "Data Confidentiality"
+    },
+    {
+      "slug": "encryption-service",
+      "label": "Encryption Service"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "narrative-gold-mine",
+      "label": "Narrative Gold Mine"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    },
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    },
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    },
+    {
+      "slug": "verifiable-credential-vc",
+      "label": "Verifiable Credential (VC)"
+    }
+  ]
+}

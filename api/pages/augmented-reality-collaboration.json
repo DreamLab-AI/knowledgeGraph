@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4",
+  "title": "Augmented Reality Collaboration",
+  "slug": "augmented-reality-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:augmented-reality-collaboration",
+  "domain": "distributed-collaboration",
+  "definition": "\"Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual cooperation through AR headsets or mobile devices.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:tele-150-webrtc",
+        "label": "TELE-150-webrtc"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-design",
+        "label": "CollaborativeDesign"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-design",
+      "label": "CollaborativeDesign"
+    },
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-025-microsoft-hololens",
+      "label": "TELE-025-microsoft-hololens"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "AugmentedReality"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "MixedReality"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "SpatialComputing"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": []
+}

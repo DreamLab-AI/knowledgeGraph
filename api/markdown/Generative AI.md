@@ -1,24 +1,720 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#GenerativeAI
-uri:: urn:visionclaw:concept:artificial-intelligence:generative-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:generative-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Generative AI
-content-hash:: sha256-12-ef0387004a4d
-legacy-term-id:: AI-0860
-status:: complete
-maturity:: mature
-quality-score:: 0.90
-authority-score:: 0.93
-version:: 2.0.0
-created:: 2025-01-15T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#GenerativeAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:generative-ai
 public:: true
 
+# Generative AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07",
+  "@type": "Page",
+  "vc:slug": "generative-ai",
+  "title": "Generative AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-art",
+      "vc:label": "AI Art"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-layer",
+      "vc:label": "AlgorithmicLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:linked:art",
+      "vc:label": "Art"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-design",
+      "vc:label": "Automated Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-synthesis",
+      "vc:label": "Code Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:design",
+      "vc:label": "Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:gan",
+      "vc:label": "GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-scale-datasets",
+      "vc:label": "Large-Scale Datasets"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-training",
+      "vc:label": "Neural Network Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:nft",
+      "vc:label": "NFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-standards",
+      "vc:label": "NIST AI Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:stability-ai",
+      "vc:label": "Stability AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:vaes",
+      "vc:label": "VAEs"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-storage",
+      "vc:label": "Decentralized Storage"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google-deep-mind",
+      "vc:label": "Google DeepMind"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:midjourney",
+      "vc:label": "Midjourney"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-architecture",
+      "vc:label": "Model Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-generation",
+      "vc:label": "Text Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.93"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ef0387004a4d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-01-15T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#GenerativeAI"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0860"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Generative AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.90"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:generative-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:generative-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:generative-ai",
+  "@type": "OntologyClass",
+  "label": "Generative AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "[[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[Generative Adversarial Networks]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].",
+  "vc:qualityScore": {
+    "@value": "0.90",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.93",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:gan",
+      "vc:label": "GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-scale-datasets",
+      "vc:label": "Large-Scale Datasets"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-training",
+      "vc:label": "Neural Network Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-architecture",
+      "vc:label": "Model Architecture"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-art",
+      "vc:label": "AI Art"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-design",
+      "vc:label": "Automated Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-generation",
+      "vc:label": "Text Generation"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:nft",
+      "vc:label": "NFT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-storage",
+      "vc:label": "Decentralized Storage"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:generative-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Art]]",
+      "resolved": "urn:visionflow:linked:ai-art",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AlgorithmicLayer]]",
+      "resolved": "urn:visionflow:linked:algorithmic-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic]]",
+      "resolved": "urn:visionflow:linked:anthropic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Art]]",
+      "resolved": "urn:visionflow:linked:art",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Audio Generation]]",
+      "resolved": "urn:visionflow:linked:audio-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Design]]",
+      "resolved": "urn:visionflow:linked:automated-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Code Synthesis]]",
+      "resolved": "urn:visionflow:linked:code-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Creation]]",
+      "resolved": "urn:visionflow:linked:content-creation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Creative AI]]",
+      "resolved": "urn:visionflow:linked:creative-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Design]]",
+      "resolved": "urn:visionflow:linked:design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GAN]]",
+      "resolved": "urn:visionflow:linked:gan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPU Compute]]",
+      "resolved": "urn:visionflow:linked:gpu-compute",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large-Scale Datasets]]",
+      "resolved": "urn:visionflow:linked:large-scale-datasets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Music Generation]]",
+      "resolved": "urn:visionflow:linked:music-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Network Training]]",
+      "resolved": "urn:visionflow:linked:neural-network-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NFT]]",
+      "resolved": "urn:visionflow:linked:nft",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Standards]]",
+      "resolved": "urn:visionflow:linked:nist-ai-standards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stability AI]]",
+      "resolved": "urn:visionflow:linked:stability-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Synthetic Media]]",
+      "resolved": "urn:visionflow:linked:synthetic-media",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VAE]]",
+      "resolved": "urn:visionflow:linked:vae",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VAEs]]",
+      "resolved": "urn:visionflow:linked:vaes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Video Generation]]",
+      "resolved": "urn:visionflow:linked:video-generation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Code Generation]]",
+      "resolved": "urn:visionflow:owl:class:code-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Storage]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-storage",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diffusion Models]]",
+      "resolved": "urn:visionflow:owl:class:diffusion-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Adversarial Networks]]",
+      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative AI]]",
+      "resolved": "urn:visionflow:owl:class:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google DeepMind]]",
+      "resolved": "urn:visionflow:owl:class:google-deep-mind",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image Generation]]",
+      "resolved": "urn:visionflow:owl:class:image-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Midjourney]]",
+      "resolved": "urn:visionflow:owl:class:midjourney",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Architecture]]",
+      "resolved": "urn:visionflow:owl:class:model-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Text Generation]]",
+      "resolved": "urn:visionflow:owl:class:text-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training Data]]",
+      "resolved": "urn:visionflow:owl:class:training-data",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
 - ### Definition
-  - [[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[GANs]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].
+  - [[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[Generative Adversarial Networks]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GenerativeAI

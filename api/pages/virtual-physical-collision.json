@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b",
+  "title": "Virtual Physical Collision",
+  "slug": "virtual-physical-collision",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-physical-collision",
+  "domain": "spatial-computing",
+  "definition": "The detection and simulation of contact between virtual objects and real-world elements in mixed reality environments, enabling realistic interactions, haptic feedback, and safety boundaries that prevent users from colliding with physical obstacles while immersed in virtual experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    }
+  ]
+}

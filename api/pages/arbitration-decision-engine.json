@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:a2cd5c61fedffce2e2e28f2f115dfe9bfdb5cce7b38636f381ef639f7993a96a",
+  "title": "Arbitration Decision Engine",
+  "slug": "arbitration-decision-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:arbitration-decision-engine",
+  "domain": "spatial-computing",
+  "definition": "Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbitral outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:automated-dispute-resolution",
+      "label": "Automated Dispute Resolution"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-integration",
+        "label": "Blockchain Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:evidence-authentication",
+        "label": "Evidence Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:rule-encoding",
+        "label": "Rule Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralized-arbitration",
+        "label": "Decentralized Arbitration"
+      },
+      {
+        "id": "urn:visionflow:linked:self-enforcing-awards",
+        "label": "Self-Enforcing Awards"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-resolution",
+        "label": "Smart Contract Resolution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-dispute-resolution",
+      "label": "Automated Dispute Resolution"
+    },
+    {
+      "slug": "blockchain-integration",
+      "label": "Blockchain Integration"
+    },
+    {
+      "slug": "decentralized-arbitration",
+      "label": "Decentralized Arbitration"
+    },
+    {
+      "slug": "evidence-authentication",
+      "label": "Evidence Authentication"
+    },
+    {
+      "slug": "rule-encoding",
+      "label": "Rule Encoding"
+    },
+    {
+      "slug": "self-enforcing-awards",
+      "label": "Self-Enforcing Awards"
+    },
+    {
+      "slug": "smart-contract-resolution",
+      "label": "Smart Contract Resolution"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    }
+  ]
+}

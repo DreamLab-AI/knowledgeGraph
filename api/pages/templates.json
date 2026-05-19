@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:ace24cd426e0e5dd4c0aecb21704a8dc77f058f17b8ca3c9c1e81899be2e9d58",
+  "title": "Templates",
+  "slug": "templates",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:templates",
+  "domain": "infrastructure",
+  "definition": "Templates is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

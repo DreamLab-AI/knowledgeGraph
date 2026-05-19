@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:92f920139ce10c4b22adbdce95b5413c6b74cfb3c724ec1e398566ec55c0050d",
+  "title": "Animation Technique",
+  "slug": "animation-technique",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:animation-technique",
+  "domain": "spatial-computing",
+  "definition": "Animation Technique is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "character-rigging",
+      "label": "Character Rigging"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:11eef309133009a5ff77033b25bf34289b4e1f3ab2939fcdf2e213a383b822de",
+  "title": "Collective Intelligence System",
+  "slug": "collective-intelligence-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collective-intelligence-system",
+  "domain": "artificial-intelligence",
+  "definition": "Mechanism enabling groups of humans and agents to solve problems collaboratively using shared data through swarm intelligence and emergent decision-making.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:distributed-decision-network",
+        "label": "Distributed Decision Network"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-pattern-detector",
+        "label": "Emergent Pattern Detector"
+      },
+      {
+        "id": "urn:visionflow:linked:human-ai-interface",
+        "label": "Human-AI Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-aggregation-module",
+        "label": "Knowledge Aggregation Module"
+      },
+      {
+        "id": "urn:visionflow:linked:swarm-coordination-engine",
+        "label": "Swarm Coordination Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-synchronization",
+        "label": "Data Synchronization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:shared-knowledge-base",
+        "label": "Shared Knowledge Base"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-decision-making",
+        "label": "Collaborative Decision-Making"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-problem-solving",
+        "label": "Emergent Problem-Solving"
+      },
+      {
+        "id": "urn:visionflow:linked:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collective-learning",
+        "label": "Collective Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-ai-platform",
+      "label": "Collaborative AI Platform"
+    },
+    {
+      "slug": "collaborative-decision-making",
+      "label": "Collaborative Decision-Making"
+    },
+    {
+      "slug": "data-synchronization",
+      "label": "Data Synchronization"
+    },
+    {
+      "slug": "distributed-decision-network",
+      "label": "Distributed Decision Network"
+    },
+    {
+      "slug": "emergent-pattern-detector",
+      "label": "Emergent Pattern Detector"
+    },
+    {
+      "slug": "emergent-problem-solving",
+      "label": "Emergent Problem-Solving"
+    },
+    {
+      "slug": "human-ai-interface",
+      "label": "Human-AI Interface"
+    },
+    {
+      "slug": "knowledge-aggregation-module",
+      "label": "Knowledge Aggregation Module"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "oecd-ai-collective-intelligence-2025",
+      "label": "OECD AI Collective Intelligence 2025"
+    },
+    {
+      "slug": "swarm-coordination-engine",
+      "label": "Swarm Coordination Engine"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "shared-knowledge-base",
+      "label": "Shared Knowledge Base"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    }
+  ]
+}

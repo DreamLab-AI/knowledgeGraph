@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03",
+  "title": "ETSI_Domain_Infrastructure___Security",
+  "slug": "etsi-domain-infrastructure-security",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-security",
+  "domain": "infrastructure",
+  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications. Infrastructure security integrates NFV architectural frameworks (ETSI NFV v6.1.1), cross-domain authentication standards (ETSI GS PDL 027) promoting multi-party trust models, and decentralised identity systems addressing ultra-edge and terminal-edge deployment requirements. Coordination with 3GPP and ITU-T ensures alignment on metaverse infrastructure security requirements whilst addressing challenges in standardising interoperability across platforms, automating security lifecycle management, and balancing decentralised identity privacy with regulatory compliance under UK and EU data protection frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "quantum-network-node",
+      "label": "Quantum Network Node"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:3d04187f45b4f9d8663ceed027299bf561c3624a50026cb4e2073ce191e3dee5",
+  "title": "Spatial Anchoring",
+  "slug": "spatial-anchoring",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-anchoring",
+  "domain": "spatial-computing",
+  "definition": "A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud-synchronized anchor data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:location-based-ar",
+        "label": "Location Based AR"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "location-based-ar",
+      "label": "Location Based AR"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "ar-overlay",
+      "label": "Ar Overlay"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    }
+  ]
+}

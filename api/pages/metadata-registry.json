@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:c28390e09f329a0015903cd135b284749cd904b3a502b0b9482fc8fb53cbdc9c",
+  "title": "Metadata Registry",
+  "slug": "metadata-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metadata-registry",
+  "domain": "infrastructure",
+  "definition": "Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:enterprise-data-consistency",
+        "label": "Enterprise Data Consistency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "enterprise-data-consistency",
+      "label": "Enterprise Data Consistency"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collective-memory-archive",
+      "label": "Collective Memory Archive"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    }
+  ]
+}

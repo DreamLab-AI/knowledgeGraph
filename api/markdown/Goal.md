@@ -1,20 +1,266 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Goal
-uri:: urn:visionclaw:concept:artificial-intelligence:goal
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:goal
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Goal
-content-hash:: sha256-12-d41676683198
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Goal
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:goal
 public:: true
+
+# Goal
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255",
+  "@type": "Page",
+  "vc:slug": "goal",
+  "title": "Goal",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:action",
+      "vc:label": "Action"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-concept",
+      "vc:label": "Agent Concept"
+    },
+    {
+      "@id": "urn:visionflow:linked:plan",
+      "vc:label": "Plan"
+    },
+    {
+      "@id": "urn:visionflow:linked:state",
+      "vc:label": "State"
+    },
+    {
+      "@id": "urn:visionflow:linked:task",
+      "vc:label": "Task"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent",
+      "vc:label": "Agent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomy-level",
+      "vc:label": "Autonomy Level"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bdi-model",
+      "vc:label": "BDI Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:objective",
+      "vc:label": "Objective"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:value-alignment",
+      "vc:label": "Value Alignment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d41676683198"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Goal"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Goal"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:goal"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:goal"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:goal",
+  "@type": "OntologyClass",
+  "label": "Goal",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:objective",
+      "vc:label": "Objective"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Goal is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:goal:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Action]]",
+      "resolved": "urn:visionflow:linked:action",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Concept]]",
+      "resolved": "urn:visionflow:linked:agent-concept",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Plan]]",
+      "resolved": "urn:visionflow:linked:plan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[State]]",
+      "resolved": "urn:visionflow:linked:state",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Task]]",
+      "resolved": "urn:visionflow:linked:task",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent]]",
+      "resolved": "urn:visionflow:owl:class:agent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomy Level]]",
+      "resolved": "urn:visionflow:owl:class:autonomy-level",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BDI Model]]",
+      "resolved": "urn:visionflow:owl:class:bdi-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Objective]]",
+      "resolved": "urn:visionflow:owl:class:objective",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Value Alignment]]",
+      "resolved": "urn:visionflow:owl:class:value-alignment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Goal is a concept within the ai domain.

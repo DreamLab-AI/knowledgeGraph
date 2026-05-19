@@ -1,0 +1,560 @@
+{
+  "id": "urn:visionflow:page:dc48506db948925ed8baa2e40997c04507f96b0b13d026049a518193aacc00bc",
+  "title": "R3 Corda",
+  "slug": "r3-corda",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:r3-corda",
+  "domain": "blockchain",
+  "definition": "R3 Corda is a purpose-built permissioned distributed ledger platform designed exclusively for regulated financial services, implementing a \"need-to-know\" peer-to-peer architecture in which transaction data is shared solely amongst parties with legitimate business interest, eliminating global state replication in favour of individual cryptographically-assured facts (state objects) whose uniqueness is assured by dedicated [[Notary]] services without exposing transaction contents to the wider network. Corda models [[Smart Contracts]] as legally enforceable agreements between identified parties, expressed in Kotlin or Java running on the JVM, pairing executable contract code with optional Ricardian legal prose to produce agreements that are simultaneously machine-verifiable and court-admissible. The platform implements a UTXO-like state model akin to [[Bitcoin]] but with rich typed states\u2014states carry arbitrary Kotlin/Java objects, carry reference to their governing contract, are consumed atomically in transactions, and are replaced by successor states\u2014providing clear provenance chains for regulatory audit without global ledger visibility. Transaction flows, expressed as coroutines via",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:financial-services-technology",
+      "label": "Financial Services Technology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "id": "urn:visionflow:owl:class:enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "id": "urn:visionflow:owl:class:permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:contract-code",
+        "label": "Contract Code"
+      },
+      {
+        "id": "urn:visionflow:linked:cor-dapp",
+        "label": "CorDapp"
+      },
+      {
+        "id": "urn:visionflow:linked:corda-node",
+        "label": "Corda Node"
+      },
+      {
+        "id": "urn:visionflow:linked:corda-vault",
+        "label": "Corda Vault"
+      },
+      {
+        "id": "urn:visionflow:linked:deterministic-jvm",
+        "label": "Deterministic JVM"
+      },
+      {
+        "id": "urn:visionflow:linked:doorman",
+        "label": "Doorman"
+      },
+      {
+        "id": "urn:visionflow:linked:flow-framework",
+        "label": "Flow Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:network-map-service",
+        "label": "Network Map Service"
+      },
+      {
+        "id": "urn:visionflow:linked:notary",
+        "label": "Notary"
+      },
+      {
+        "id": "urn:visionflow:linked:state-object",
+        "label": "State Object"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:jvm-runtime",
+        "label": "JVM Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:kotlin",
+        "label": "Kotlin"
+      },
+      {
+        "id": "urn:visionflow:linked:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:visionflow:linked:tls-encryption",
+        "label": "TLS Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:x-509-identity",
+        "label": "X.509 Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:visionflow:linked:delivery-versus-payment",
+        "label": "Delivery Versus Payment"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-agreement-automation",
+        "label": "Legal Agreement Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-ledger",
+        "label": "Privacy-Preserving Ledger"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenised-asset-issuance",
+        "label": "Tokenised Asset Issuance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:flow-coroutine",
+        "label": "Flow Coroutine"
+      },
+      {
+        "id": "urn:visionflow:linked:notary-consensus",
+        "label": "Notary Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:point-to-point-messaging",
+        "label": "Point-to-Point Messaging"
+      },
+      {
+        "id": "urn:visionflow:linked:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:ricardian-contract",
+        "label": "Ricardian Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "amqp",
+      "label": "AMQP"
+    },
+    {
+      "slug": "apache-kafka",
+      "label": "Apache Kafka"
+    },
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "atomic-settlement",
+      "label": "Atomic Settlement"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "bis-cpmi",
+      "label": "BIS CPMI"
+    },
+    {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "contract-code",
+      "label": "Contract Code"
+    },
+    {
+      "slug": "cor-dapp",
+      "label": "CorDapp"
+    },
+    {
+      "slug": "corda-node",
+      "label": "Corda Node"
+    },
+    {
+      "slug": "corda-vault",
+      "label": "Corda Vault"
+    },
+    {
+      "slug": "cross-border-payment",
+      "label": "Cross-Border Payment"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "daml-ledger",
+      "label": "DAML Ledger"
+    },
+    {
+      "slug": "database-technology",
+      "label": "Database Technology"
+    },
+    {
+      "slug": "delivery-versus-payment",
+      "label": "Delivery Versus Payment"
+    },
+    {
+      "slug": "deterministic-jvm",
+      "label": "Deterministic JVM"
+    },
+    {
+      "slug": "digital-securities",
+      "label": "Digital Securities"
+    },
+    {
+      "slug": "doorman",
+      "label": "Doorman"
+    },
+    {
+      "slug": "dtcc",
+      "label": "DTCC"
+    },
+    {
+      "slug": "enterprise-distributed-systems-domain",
+      "label": "EnterpriseDistributedSystemsDomain"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "FinancialInfrastructureDomain"
+    },
+    {
+      "slug": "financial-services-technology",
+      "label": "Financial Services Technology"
+    },
+    {
+      "slug": "flow-coroutine",
+      "label": "Flow Coroutine"
+    },
+    {
+      "slug": "flow-framework",
+      "label": "Flow Framework"
+    },
+    {
+      "slug": "fnality",
+      "label": "Fnality"
+    },
+    {
+      "slug": "gradle",
+      "label": "Gradle"
+    },
+    {
+      "slug": "http-rest-api",
+      "label": "HTTP REST API"
+    },
+    {
+      "slug": "insurance-processing",
+      "label": "Insurance Processing"
+    },
+    {
+      "slug": "interbank-reconciliation",
+      "label": "Interbank Reconciliation"
+    },
+    {
+      "slug": "isda",
+      "label": "ISDA"
+    },
+    {
+      "slug": "iso-tc307",
+      "label": "ISO TC307"
+    },
+    {
+      "slug": "jvm-runtime",
+      "label": "JVM Runtime"
+    },
+    {
+      "slug": "kotlin",
+      "label": "Kotlin"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "legal-agreement-automation",
+      "label": "Legal Agreement Automation"
+    },
+    {
+      "slug": "network-map-service",
+      "label": "Network Map Service"
+    },
+    {
+      "slug": "notary",
+      "label": "Notary"
+    },
+    {
+      "slug": "notary-consensus",
+      "label": "Notary Consensus"
+    },
+    {
+      "slug": "oracle-db",
+      "label": "Oracle DB"
+    },
+    {
+      "slug": "point-to-point-messaging",
+      "label": "Point-to-Point Messaging"
+    },
+    {
+      "slug": "postgre-sql",
+      "label": "PostgreSQL"
+    },
+    {
+      "slug": "privacy-preserving-ledger",
+      "label": "Privacy-Preserving Ledger"
+    },
+    {
+      "slug": "raft-consensus",
+      "label": "Raft Consensus"
+    },
+    {
+      "slug": "regulated-liability-network",
+      "label": "Regulated Liability Network"
+    },
+    {
+      "slug": "relational-database",
+      "label": "Relational Database"
+    },
+    {
+      "slug": "ricardian-contract",
+      "label": "Ricardian Contract"
+    },
+    {
+      "slug": "securities-settlement",
+      "label": "Securities Settlement"
+    },
+    {
+      "slug": "sql-server",
+      "label": "SQL Server"
+    },
+    {
+      "slug": "state-object",
+      "label": "State Object"
+    },
+    {
+      "slug": "syndicated-lending",
+      "label": "Syndicated Lending"
+    },
+    {
+      "slug": "tls-encryption",
+      "label": "TLS Encryption"
+    },
+    {
+      "slug": "tokenised-asset-issuance",
+      "label": "Tokenised Asset Issuance"
+    },
+    {
+      "slug": "trade-finance",
+      "label": "Trade Finance"
+    },
+    {
+      "slug": "two-phase-commit",
+      "label": "Two-Phase Commit"
+    },
+    {
+      "slug": "x-509-identity",
+      "label": "X.509 Identity"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

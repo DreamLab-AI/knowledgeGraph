@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56",
+  "title": "Digital Twin Collaboration",
+  "slug": "digital-twin-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-collaboration",
+  "domain": "distributed-collaboration",
+  "definition": "\"The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams, enabling remote collaboration on physical systems.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:cloud-computing",
+        "label": "CloudComputing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-simulation",
+        "label": "CollaborativeSimulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-simulation",
+      "label": "CollaborativeSimulation"
+    },
+    {
+      "slug": "iec-63278",
+      "label": "IEC 63278"
+    },
+    {
+      "slug": "industry-four-point-zero",
+      "label": "IndustryFourPointZero"
+    },
+    {
+      "slug": "io-t",
+      "label": "IoT"
+    },
+    {
+      "slug": "iso-19650",
+      "label": "ISO 19650"
+    },
+    {
+      "slug": "iso-23247",
+      "label": "ISO 23247"
+    },
+    {
+      "slug": "ogc-city-gml",
+      "label": "OGC CityGML"
+    },
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "tele-301-virtual-office-spaces",
+      "label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "slug": "tele-302-shared-whiteboards",
+      "label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "CloudComputing"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "DigitalTwin"
+    }
+  ],
+  "backlinks": []
+}

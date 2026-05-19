@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab",
+  "title": "Cross-Platform Interoperability",
+  "slug": "cross-platform-interoperability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cross-platform-interoperability",
+  "domain": "infrastructure",
+  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. In blockchain, protocols like IBC (Inter-Blockchain Communication) connect 115+ chains enabling trustless cross-chain transactions verified through light client proofs rather than trusted third parties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:next-generation-mobile",
+      "label": "Next Generation Mobile"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:light-client",
+        "label": "Light Client"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "erc-5164",
+      "label": "ERC-5164"
+    },
+    {
+      "slug": "ieee-blockchain-standards",
+      "label": "IEEE blockchain standards"
+    },
+    {
+      "slug": "next-generation-mobile",
+      "label": "Next Generation Mobile"
+    },
+    {
+      "slug": "w3-c-did",
+      "label": "W3C DID"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "layer-0",
+      "label": "Layer 0"
+    },
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    },
+    {
+      "slug": "relayer",
+      "label": "Relayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "asset-archive",
+      "label": "Asset Archive"
+    },
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "distributed-authentication-architecture",
+      "label": "Distributed Authentication Architecture"
+    },
+    {
+      "slug": "interface-standards",
+      "label": "Interface Standards"
+    },
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    }
+  ]
+}

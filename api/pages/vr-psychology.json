@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:d8d44d8f45e4f27592cd6a5c21cde843f70ce90da3d67f22ef0806c01cb8c5e4",
+  "title": "VR Psychology",
+  "slug": "vr-psychology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vr-psychology",
+  "domain": "spatial-computing",
+  "definition": "V R Psychology is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-presence",
+      "label": "Spatial Presence"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b8ffab85b78a1cb8054c7df812f808afa3165369de49eabc346ee69c4c053014",
+  "title": "Real-Time Inference at Edge",
+  "slug": "real-time-inference-at-edge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-inference-at-edge",
+  "domain": "artificial-intelligence",
+  "definition": "Real-Time Inference at Edge delivers deterministic machine learning predictions with strict latency deadlines on edge devices, enabling safety-critical autonomous systems and time-sensitive intelligent applications. Real-time inference guarantees P99 latency below 10-100ms depending on application requirements, supporting 60+ frames-per-second video processing for autonomous vehicle perception or sub-millisecond control loops for robotic systems. The architecture implements hard real-time constraints with priority scheduling, ensuring critical inference tasks always meet timing deadlines regardless of system load or competing workloads. Hardware acceleration through NPUs (Neural Processing Units), FPGAs, or specialized ASICs (Application-Specific Integrated Circuits) enables real-time performance by offloading computation from energy-hungry CPUs. Real-time systems employ overlapping computation and I/O through techniques like CUDA streams, pipelined inference, and speculative execution to maximize throughput while meeting latency bounds. The challenge extends beyond single-inference latency to end-to-end system latency: sensor acquisition, preprocessing, model inference, postproces",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

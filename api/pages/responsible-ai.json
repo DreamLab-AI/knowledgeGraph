@@ -1,0 +1,142 @@
+{
+  "id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c",
+  "title": "Responsible AI",
+  "slug": "responsible-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:responsible-ai",
+  "domain": "artificial-intelligence",
+  "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:risk-management-processes",
+        "label": "risk management processes"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:social-licence-for-ai",
+        "label": "social licence for AI"
+      },
+      {
+        "id": "urn:visionflow:linked:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "risk-management-processes",
+      "label": "risk management processes"
+    },
+    {
+      "slug": "social-licence-for-ai",
+      "label": "social licence for AI"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "ethics-and-law-layer",
+      "label": "Ethics & Law Layer"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

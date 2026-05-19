@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:cd38f36950f19705f6a59c4763393b41ae9d6e60c812369de574814252d05e45",
+  "title": "Spatial Metadata",
+  "slug": "spatial-metadata",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-metadata",
+  "domain": "spatial-computing",
+  "definition": "Descriptive information about geospatial and 3D content documenting location, coordinate system, projection, quality, lineage, and distribution attributes, following standards such as ISO 19115 and FGDC CSDGM to enable discovery, evaluation, and interoperability of spatial data resources.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:geospatial-information",
+      "label": "Geospatial Information"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:spatial-data-discovery",
+        "label": "Spatial Data Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "spatial-data-discovery",
+      "label": "Spatial Data Discovery"
+    },
+    {
+      "slug": "geospatial-information",
+      "label": "Geospatial Information"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:d6e8bc45878db97fbcd7be8e81c6d7c63e27d1282a0cea4c3bce239f367064b7",
+  "title": "Player Two code",
+  "slug": "player-two-code",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:player-two-code",
+  "domain": "infrastructure",
+  "definition": "Player Two code is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "player-two",
+      "label": "Player Two"
+    }
+  ]
+}

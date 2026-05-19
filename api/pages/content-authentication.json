@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:1af355240eab4ef0ec212a41ffade87a7ab17f46885a19290f86b759e6978042",
+  "title": "Content Authentication",
+  "slug": "content-authentication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:content-authentication",
+  "domain": "infrastructure",
+  "definition": "Content Authentication is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "watermarking-service",
+      "label": "Watermarking Service"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:83175b8c4f59a8f1fa08e660c9642916b2dd9b3921cad7878449adb6744e3ad5",
+  "title": "Spatial AI Associate",
+  "slug": "spatial-ai-associate",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-ai-associate",
+  "domain": "artificial-intelligence",
+  "definition": "Spatial AI Associate is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:2526ce5881f9f2c433c59a7cc12a64a6806291aba8fc9cdcd8321c6538073461",
+  "title": "Bitcoin Centralisation Risks",
+  "slug": "bitcoin-centralisation-risks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-centralisation-risks",
+  "domain": "blockchain",
+  "definition": "**Bitcoin Centralisation Risks** refers to the ensemble of systemic vulnerabilities arising from the progressive concentration of economic power, computational control, physical infrastructure, custody arrangements, development authority, and payment routing within Bitcoin's nominally decentralised ecosystem. [[Bitcoin]] was designed \u2014 through Nakamoto's 2008 whitepaper \u2014 to operate without any trusted third party, using a distributed [[Proof of Work]] consensus to prevent any single actor from rewriting the ledger or censoring transactions. Yet, across every major subsystem of the Bitcoin stack, observable concentration trends challenge this foundational guarantee. Centralisation risks in [[Bitcoin]] operate across at least seven distinct attack surfaces, each capable of independently undermining a different aspect of Bitcoin's core security model:",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:blockchain-governance-risk",
+      "label": "Blockchain Governance Risk"
+    },
+    {
+      "id": "urn:visionflow:linked:concentration-risk",
+      "label": "Concentration Risk"
+    },
+    {
+      "id": "urn:visionflow:linked:decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "id": "urn:visionflow:linked:network-security",
+      "label": "Network Security"
+    },
+    {
+      "id": "urn:visionflow:owl:class:systemic-risk",
+      "label": "Systemic Risk"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asic-manufacturer-duopoly",
+        "label": "ASIC Manufacturer Duopoly"
+      },
+      {
+        "id": "urn:visionflow:linked:custodial-concentration",
+        "label": "Custodial Concentration"
+      },
+      {
+        "id": "urn:visionflow:linked:developer-centralisation",
+        "label": "Developer Centralisation"
+      },
+      {
+        "id": "urn:visionflow:linked:geographic-hashrate-concentration",
+        "label": "Geographic Hashrate Concentration"
+      },
+      {
+        "id": "urn:visionflow:linked:institutional-holder-concentration",
+        "label": "Institutional Holder Concentration"
+      },
+      {
+        "id": "urn:visionflow:linked:lightning-network-hub-centralisation",
+        "label": "Lightning Network Hub Centralisation"
+      },
+      {
+        "id": "urn:visionflow:linked:mining-pool-concentration",
+        "label": "Mining Pool Concentration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:protocol-capture",
+        "label": "Protocol Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-capture",
+        "label": "Regulatory Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:supply-chain-attack",
+        "label": "Supply Chain Attack"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-censorship",
+        "label": "Transaction Censorship"
+      },
+      {
+        "id": "urn:visionflow:owl:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:gini-coefficient-analysis",
+        "label": "Gini Coefficient Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:hashrate-distribution-analysis",
+        "label": "Hashrate Distribution Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:herfindahl-hirschman-index",
+        "label": "Herfindahl-Hirschman Index"
+      },
+      {
+        "id": "urn:visionflow:linked:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      },
+      {
+        "id": "urn:visionflow:linked:network-topology-analysis",
+        "label": "Network Topology Analysis"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
+      "slug": "acm-tosem-2024-bitcoin-governance-empirical-study",
+      "label": "ACM TOSEM 2024 Bitcoin Governance Empirical Study"
+    },
+    {
+      "slug": "anchorage-digital",
+      "label": "Anchorage Digital"
+    },
+    {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
+      "slug": "ar-xiv-2025-concentration-within-distribution-bitcoin-network-science",
+      "label": "ArXiv 2025 Concentration Within Distribution Bitcoin Network Science"
+    },
+    {
+      "slug": "argo-blockchain",
+      "label": "Argo Blockchain"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "asic-manufacturer-duopoly",
+      "label": "ASIC Manufacturer Duopoly"
+    },
+    {
+      "slug": "biais-bisiere-bouvard-casamatta-2019-blockchain-folk-theorem",
+      "label": "Biais Bisiere Bouvard Casamatta 2019 Blockchain Folk Theorem"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "bis-2022-prudential-treatment-cryptoassets",
+      "label": "BIS 2022 Prudential Treatment Cryptoassets"
+    },
+    {
+      "slug": "bis-crypto-risk-assessment-framework",
+      "label": "BIS Crypto Risk Assessment Framework"
+    },
+    {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
+    },
+    {
+      "slug": "bitcoin-core",
+      "label": "Bitcoin Core"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bitcoin-security-budget",
+      "label": "Bitcoin Security Budget"
+    },
+    {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "black-rock-ibit-2025-annual-filing",
+      "label": "BlackRock IBIT 2025 Annual Filing"
+    },
+    {
+      "slug": "blockchain-governance-risk",
+      "label": "Blockchain Governance Risk"
+    },
+    {
+      "slug": "bohme-christin-edelman-moore-2015-bitcoin-economics",
+      "label": "Bohme Christin Edelman Moore 2015 Bitcoin Economics"
+    },
+    {
+      "slug": "braidpool",
+      "label": "Braidpool"
+    },
+    {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
+      "slug": "cambridge-ccaf-2025-digital-mining-industry-report",
+      "label": "Cambridge CCAF 2025 Digital Mining Industry Report"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance-mining-reports",
+      "label": "Cambridge Centre for Alternative Finance Mining Reports"
+    },
+    {
+      "slug": "canaan",
+      "label": "Canaan"
+    },
+    {
+      "slug": "ccpress-2026-us-russia-china-hashrate-q4-2025",
+      "label": "CCPress 2026 US Russia China Hashrate Q4 2025"
+    },
+    {
+      "slug": "chain-catcher-2025-bitcoin-core-developers",
+      "label": "ChainCatcher 2025 Bitcoin Core Developers"
+    },
+    {
+      "slug": "cognitive-market-research-2025-asic-market-report",
+      "label": "Cognitive Market Research 2025 ASIC Market Report"
+    },
+    {
+      "slug": "coin-desk-2026-stratum-v2-working-group",
+      "label": "CoinDesk 2026 Stratum V2 Working Group"
+    },
+    {
+      "slug": "coin-telegraph-2025-asic-us-production",
+      "label": "CoinTelegraph 2025 ASIC US Production"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "computer-networks-2025-timechain-ln-modelling",
+      "label": "Computer Networks 2025 Timechain LN Modelling"
+    },
+    {
+      "slug": "concentration-risk",
+      "label": "Concentration Risk"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "crypto-slate-2025-anchorage-ibit-custodian",
+      "label": "CryptoSlate 2025 Anchorage IBIT Custodian"
+    },
+    {
+      "slug": "custodial-concentration",
+      "label": "Custodial Concentration"
+    },
+    {
+      "slug": "custodial-wallet",
+      "label": "Custodial Wallet"
+    },
+    {
+      "slug": "custody-layer",
+      "label": "CustodyLayer"
+    },
+    {
+      "slug": "decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "slug": "decentralisation-monitoring",
+      "label": "Decentralisation Monitoring"
+    },
+    {
+      "slug": "developer-centralisation",
+      "label": "Developer Centralisation"
+    },
+    {
+      "slug": "development-layer",
+      "label": "DevelopmentLayer"
+    },
+    {
+      "slug": "exchange",
+      "label": "Exchange"
+    },
+    {
+      "slug": "eyal-sirer-2014-selfish-mining",
+      "label": "Eyal Sirer 2014 Selfish Mining"
+    },
+    {
+      "slug": "f2-pool",
+      "label": "F2Pool"
+    },
+    {
+      "slug": "fca-2023-cryptoasset-promotions-regime-ps23-6",
+      "label": "FCA 2023 Cryptoasset Promotions Regime PS23-6"
+    },
+    {
+      "slug": "foundry-usa",
+      "label": "Foundry USA"
+    },
+    {
+      "slug": "fsb-2022-assessment-crypto-financial-stability",
+      "label": "FSB 2022 Assessment Crypto Financial Stability"
+    },
+    {
+      "slug": "fsb-crypto-asset-monitoring-framework",
+      "label": "FSB Crypto Asset Monitoring Framework"
+    },
+    {
+      "slug": "gallo-ribaudo-2024-dlt2024-ln-network-analysis",
+      "label": "Gallo Ribaudo 2024 DLT2024 LN Network Analysis"
+    },
+    {
+      "slug": "geographic-hashrate-concentration",
+      "label": "Geographic Hashrate Concentration"
+    },
+    {
+      "slug": "gini-coefficient-analysis",
+      "label": "Gini Coefficient Analysis"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "governance-reform",
+      "label": "Governance Reform"
+    },
+    {
+      "slug": "hash-power",
+      "label": "Hash Power"
+    },
+    {
+      "slug": "hashrate-distribution-analysis",
+      "label": "Hashrate Distribution Analysis"
+    },
+    {
+      "slug": "hasrate-index-2025-q4-heatmap",
+      "label": "Hasrate Index 2025 Q4 Heatmap"
+    },
+    {
+      "slug": "hasrate-index-2026-top-mining-pools",
+      "label": "Hasrate Index 2026 Top Mining Pools"
+    },
+    {
+      "slug": "herfindahl-hirschman-index",
+      "label": "Herfindahl-Hirschman Index"
+    },
+    {
+      "slug": "hmt-2023-future-financial-services-regulatory-regime-cryptoassets",
+      "label": "HMT 2023 Future Financial Services Regulatory Regime Cryptoassets"
+    },
+    {
+      "slug": "institutional-custody",
+      "label": "Institutional Custody"
+    },
+    {
+      "slug": "institutional-holder-concentration",
+      "label": "Institutional Holder Concentration"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "liao-kanjanasirirat-2022-geography-of-bitcoin-mining",
+      "label": "Liao Kanjanasirirat 2022 Geography of Bitcoin Mining"
+    },
+    {
+      "slug": "lightning-channel",
+      "label": "Lightning Channel"
+    },
+    {
+      "slug": "lightning-network-hub-centralisation",
+      "label": "Lightning Network Hub Centralisation"
+    },
+    {
+      "slug": "management-science-2024-lightning-network-economics-topology",
+      "label": "Management Science 2024 Lightning Network Economics Topology"
+    },
+    {
+      "slug": "marathon-digital",
+      "label": "Marathon Digital"
+    },
+    {
+      "slug": "martinazzi-flori-2020-lightning-network-topology-plos-one",
+      "label": "Martinazzi Flori 2020 Lightning Network Topology PLOS ONE"
+    },
+    {
+      "slug": "micro-bt",
+      "label": "MicroBT"
+    },
+    {
+      "slug": "mining-pool-concentration",
+      "label": "Mining Pool Concentration"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "nakamoto-coefficient",
+      "label": "Nakamoto Coefficient"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "network-security-analysis",
+      "label": "Network Security Analysis"
+    },
+    {
+      "slug": "network-security-domain",
+      "label": "NetworkSecurityDomain"
+    },
+    {
+      "slug": "network-topology-analysis",
+      "label": "Network Topology Analysis"
+    },
+    {
+      "slug": "ocean-pool",
+      "label": "Ocean Pool"
+    },
+    {
+      "slug": "ofac",
+      "label": "OFAC"
+    },
+    {
+      "slug": "open-source-development",
+      "label": "Open Source Development"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "outlook-india-2026-systemic-custodian-question",
+      "label": "Outlook India 2026 Systemic Custodian Question"
+    },
+    {
+      "slug": "permissionlessness",
+      "label": "Permissionlessness"
+    },
+    {
+      "slug": "protocol-capture",
+      "label": "Protocol Capture"
+    },
+    {
+      "slug": "regulatory-capture",
+      "label": "Regulatory Capture"
+    },
+    {
+      "slug": "regulatory-risk",
+      "label": "Regulatory Risk"
+    },
+    {
+      "slug": "research-gate-2025-lightning-centralization-quantitative-analysis",
+      "label": "ResearchGate 2025 Lightning Centralization Quantitative Analysis"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "RiskManagementDomain"
+    },
+    {
+      "slug": "robles-gonzalez-barahona-2006-contributor-turnover",
+      "label": "Robles Gonzalez-Barahona 2006 Contributor Turnover"
+    },
+    {
+      "slug": "romiti-judmayer-zamyatin-haslhofer-2019-mining-pool-analysis",
+      "label": "Romiti Judmayer Zamyatin Haslhofer 2019 Mining Pool Analysis"
+    },
+    {
+      "slug": "runes-protocol",
+      "label": "Runes Protocol"
+    },
+    {
+      "slug": "sapirshtein-sompolinsky-zohar-2016-selfish-mining",
+      "label": "Sapirshtein Sompolinsky Zohar 2016 Selfish Mining"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "stratum",
+      "label": "Stratum"
+    },
+    {
+      "slug": "stratum-v2",
+      "label": "Stratum V2"
+    },
+    {
+      "slug": "supply-chain-attack",
+      "label": "Supply Chain Attack"
+    },
+    {
+      "slug": "transaction-censorship",
+      "label": "Transaction Censorship"
+    },
+    {
+      "slug": "transaction-fee-market",
+      "label": "Transaction Fee Market"
+    },
+    {
+      "slug": "trustless-system",
+      "label": "Trustless System"
+    },
+    {
+      "slug": "vinanz-limited",
+      "label": "Vinanz Limited"
+    },
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "eclipse-attack",
+      "label": "Eclipse Attack"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "sybil-attack",
+      "label": "Sybil Attack"
+    },
+    {
+      "slug": "systemic-risk",
+      "label": "Systemic Risk"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    }
+  ]
+}

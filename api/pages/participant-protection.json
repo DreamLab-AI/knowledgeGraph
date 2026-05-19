@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ef67f5d1f92de366cb14d26976372b83b05ecc72fdc5e23f7db35f37b66bf785",
+  "title": "Participant Protection",
+  "slug": "participant-protection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:participant-protection",
+  "domain": "spatial-computing",
+  "definition": "Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-safety",
+      "label": "Digital Safety"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:trust-in-digital-platforms",
+        "label": "Trust in Digital Platforms"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "trust-in-digital-platforms",
+      "label": "Trust in Digital Platforms"
+    },
+    {
+      "slug": "digital-safety",
+      "label": "Digital Safety"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    }
+  ]
+}

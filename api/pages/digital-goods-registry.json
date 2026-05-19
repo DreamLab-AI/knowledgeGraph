@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:071eeb69dc92650ee4a4bf323e708ac435e644ba309b7b20020c7c4c208c21bc",
+  "title": "Digital Goods Registry",
+  "slug": "digital-goods-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-goods-registry",
+  "domain": "spatial-computing",
+  "definition": "Centralised or distributed system for cataloguing, tracking, and managing digital goods and virtual assets across metaverse platforms, providing authoritative records of existence, ownership, and provenance. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-catalog",
+        "label": "Asset Catalog"
+      },
+      {
+        "id": "urn:visionflow:linked:metadata-store",
+        "label": "Metadata Store"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-records",
+        "label": "Ownership Records"
+      },
+      {
+        "id": "urn:visionflow:linked:provenance-tracker",
+        "label": "Provenance Tracker"
+      },
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:search-index",
+        "label": "Search Index"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-discovery",
+        "label": "Asset Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-transfer",
+        "label": "Ownership Transfer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:marketplace-integration",
+        "label": "Marketplace Integration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-catalog",
+      "label": "Asset Catalog"
+    },
+    {
+      "slug": "asset-discovery",
+      "label": "Asset Discovery"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "metadata-store",
+      "label": "Metadata Store"
+    },
+    {
+      "slug": "oma3-media-wg",
+      "label": "OMA3 Media WG"
+    },
+    {
+      "slug": "ownership-records",
+      "label": "Ownership Records"
+    },
+    {
+      "slug": "ownership-transfer",
+      "label": "Ownership Transfer"
+    },
+    {
+      "slug": "provenance-tracker",
+      "label": "Provenance Tracker"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "marketplace-integration",
+      "label": "Marketplace Integration"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "search-index",
+      "label": "Search Index"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

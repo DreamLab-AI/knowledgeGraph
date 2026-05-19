@@ -1,24 +1,306 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ETSIDomainHumanInterface
-uri:: urn:visionclaw:concept:spatial-computing:etsidomainhumaninterface
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:etsidomainhumaninterface
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: ETSI_Domain_Human_Interface
-content-hash:: sha256-12-e12355e34484
-legacy-term-id:: MV-2005
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ETSIDomainHumanInterface
+legacy_uri:: urn:visionclaw:concept:spatial-computing:etsidomainhumaninterface
 public:: true
+
+# ETSI_Domain_Human_Interface
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ab8512059894af301ec1cd9b11503cfb191ed651626f13af9ff09150d03f8f3b",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-human-interface",
+  "title": "ETSI_Domain_Human_Interface",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:etsi",
+      "vc:label": "ETSI"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-007",
+      "vc:label": "ETSI GR ARF 007"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-mec-032",
+      "vc:label": "ETSI GR MEC 032"
+    },
+    {
+      "@id": "urn:visionflow:linked:inclusive-design",
+      "vc:label": "InclusiveDesign"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-design",
+      "vc:label": "InteractionDesign"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-9241",
+      "vc:label": "ISO 9241"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-jtc-1-sc-24",
+      "vc:label": "ISO/IEC JTC 1/SC 24"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "UserExperience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accessibility-standards",
+      "vc:label": "AccessibilityStandards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "VirtualEnvironment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e12355e34484"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ETSIDomainHumanInterface"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2005"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:etsidomainhumaninterface"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:etsidomainhumaninterface"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ab8512059894af301ec1cd9b11503cfb191ed651626f13af9ff09150d03f8f3b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-human-interface",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Human_Interface",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ab8512059894af301ec1cd9b11503cfb191ed651626f13af9ff09150d03f8f3b"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ab8512059894af301ec1cd9b11503cfb191ed651626f13af9ff09150d03f8f3b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An [[ETSI]] governance domain addressing user interaction design, accessibility, and human-computer interfaces within [[VirtualEnvironment|virtual environments]]. This domain encompasses [[UserExperience]], [[AccessibilityStandards]], [[InteractionDesign]], and [[InclusiveDesign]] to ensure metaverse platforms prioritise usable, accessible experiences for diverse user populations.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-human-interface:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ab8512059894af301ec1cd9b11503cfb191ed651626f13af9ff09150d03f8f3b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ETSI]]",
+      "resolved": "urn:visionflow:linked:etsi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 007]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-007",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR MEC 032]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InclusiveDesign]]",
+      "resolved": "urn:visionflow:linked:inclusive-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InteractionDesign]]",
+      "resolved": "urn:visionflow:linked:interaction-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 9241]]",
+      "resolved": "urn:visionflow:linked:iso-9241",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC JTC 1/SC 24]]",
+      "resolved": "urn:visionflow:linked:iso-iec-jtc-1-sc-24",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UserExperience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AccessibilityStandards]]",
+      "resolved": "urn:visionflow:owl:class:accessibility-standards",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEnvironment|virtual environments]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ab8512059894af301ec1cd9b11503cfb191ed651626f13af9ff09150d03f8f3b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An [[ETSI]] governance domain addressing user interaction design, accessibility, and human-computer interfaces within [[VirtualEnvironment|virtual environments]]. This domain encompasses [[UserExperience]], [[AccessibilityStandards]], [[InteractionDesign]], and [[InclusiveDesign]] to ensure metaverse platforms prioritise usable, accessible experiences for diverse user populations.

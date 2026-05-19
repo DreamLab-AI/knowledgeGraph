@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:1ff6a8d0b338c665b522d00fba65e7d604d02402937852192bcab61c8fe8b50b",
+  "title": "Revision List",
+  "slug": "revision-list",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:revision-list",
+  "domain": "infrastructure",
+  "definition": "Revision List is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

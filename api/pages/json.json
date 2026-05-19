@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:ea91b9bc96df05281051ab901705227f7550e6087e4a3c9913e8a399c3ec9b55",
+  "title": "json",
+  "slug": "json",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:json",
+  "domain": "infrastructure",
+  "definition": "json is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    }
+  ]
+}

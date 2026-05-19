@@ -1,21 +1,450 @@
-iri:: http://narrativegoldmine.com/blockchain#WasteManagement
-uri:: urn:visionclaw:concept:blockchain:waste-management
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:waste-management
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Waste Management
-content-hash:: sha256-12-eb9cb8cf4784
-legacy-term-id:: BC-0454
-status:: stub-needs-content
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#WasteManagement
+legacy_uri:: urn:visionclaw:concept:blockchain:waste-management
 public:: true
+
+# Waste Management
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431",
+  "@type": "Page",
+  "vc:slug": "waste-management",
+  "title": "Waste Management",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0188-self-sovereign-identity",
+      "vc:label": "BC-0188-self-sovereign-identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0202-zero-knowledge-proofs",
+      "vc:label": "BC-0202-zero-knowledge-proofs"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0319-micropayments",
+      "vc:label": "BC-0319-micropayments"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0440-blockchain-interoperability",
+      "vc:label": "BC-0440-blockchain-interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0441-supply-chain-traceability",
+      "vc:label": "BC-0441-supply-chain-traceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0442-certification-and-compliance",
+      "vc:label": "BC-0442-certification-and-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0445-conflict-mineral-tracking",
+      "vc:label": "BC-0445-conflict-mineral-tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0453-ethical-sourcing",
+      "vc:label": "BC-0453-ethical-sourcing"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0455-product-recall-management",
+      "vc:label": "BC-0455-product-recall-management"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0464-carbon-credit-tokenisation",
+      "vc:label": "BC-0464-carbon-credit-tokenisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0496-carbon-offset-verification",
+      "vc:label": "BC-0496-carbon-offset-verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0502-renewable-energy-certificates",
+      "vc:label": "BC-0502-renewable-energy-certificates"
+    },
+    {
+      "@id": "urn:visionflow:linked:deposit-return-schemes",
+      "vc:label": "Deposit Return Schemes"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-waste",
+      "vc:label": "E-Waste"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-waste-tracking",
+      "vc:label": "E-WasteTracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-producer-responsibility",
+      "vc:label": "ExtendedProducerResponsibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-producer-responsibility",
+      "vc:label": "Extended Producer Responsibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:hazardous-waste",
+      "vc:label": "HazardousWaste"
+    },
+    {
+      "@id": "urn:visionflow:linked:ocean-plastic",
+      "vc:label": "Ocean Plastic"
+    },
+    {
+      "@id": "urn:visionflow:linked:pay-as-you-throw",
+      "vc:label": "Pay-As-You-Throw"
+    },
+    {
+      "@id": "urn:visionflow:linked:plastic-waste",
+      "vc:label": "Plastic Waste"
+    },
+    {
+      "@id": "urn:visionflow:linked:recycling",
+      "vc:label": "Recycling"
+    },
+    {
+      "@id": "urn:visionflow:linked:recycling-optimization",
+      "vc:label": "RecyclingOptimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:tokenized-incentives",
+      "vc:label": "TokenizedIncentives"
+    },
+    {
+      "@id": "urn:visionflow:linked:waste-to-energy",
+      "vc:label": "Waste-to-Energy"
+    },
+    {
+      "@id": "urn:visionflow:linked:waste-traceability",
+      "vc:label": "WasteTraceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-waste",
+      "vc:label": "Zero Waste"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:circular-economy",
+      "vc:label": "CircularEconomy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:circular-economy",
+      "vc:label": "Circular Economy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-eb9cb8cf4784"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#WasteManagement"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0454"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Waste Management"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:waste-management"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub-needs-content"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:waste-management"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:waste-management",
+  "@type": "OntologyClass",
+  "label": "Waste Management",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub-needs-content",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle. Blockchain-based systems enable [[WasteTraceability|waste traceability]], verify compliance with environmental regulations, incentivise proper disposal through [[TokenizedIncentives|tokenised reward systems]], and facilitate [[ExtendedProducerResponsibility|extended producer responsibility]] by tracking products from manufacturing through end-of-life recovery. Applications include [[E-WasteTracking|electronic waste tracking]], [[HazardousWaste|hazardous material monitoring]], and [[RecyclingOptimization|recycling optimisation]] where transparency and verifiable compliance prevent illegal waste dumping and improve environmental outcomes.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:waste-management:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0188-self-sovereign-identity]]",
+      "resolved": "urn:visionflow:linked:bc-0188-self-sovereign-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0202-zero-knowledge-proofs]]",
+      "resolved": "urn:visionflow:linked:bc-0202-zero-knowledge-proofs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0319-micropayments]]",
+      "resolved": "urn:visionflow:linked:bc-0319-micropayments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0440-blockchain-interoperability]]",
+      "resolved": "urn:visionflow:linked:bc-0440-blockchain-interoperability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0441-supply-chain-traceability]]",
+      "resolved": "urn:visionflow:linked:bc-0441-supply-chain-traceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0442-certification-and-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0442-certification-and-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0445-conflict-mineral-tracking]]",
+      "resolved": "urn:visionflow:linked:bc-0445-conflict-mineral-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0453-ethical-sourcing]]",
+      "resolved": "urn:visionflow:linked:bc-0453-ethical-sourcing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0455-product-recall-management]]",
+      "resolved": "urn:visionflow:linked:bc-0455-product-recall-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0464-carbon-credit-tokenisation]]",
+      "resolved": "urn:visionflow:linked:bc-0464-carbon-credit-tokenisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0496-carbon-offset-verification]]",
+      "resolved": "urn:visionflow:linked:bc-0496-carbon-offset-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0502-renewable-energy-certificates]]",
+      "resolved": "urn:visionflow:linked:bc-0502-renewable-energy-certificates",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deposit Return Schemes]]",
+      "resolved": "urn:visionflow:linked:deposit-return-schemes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[E-Waste]]",
+      "resolved": "urn:visionflow:linked:e-waste",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[E-WasteTracking|electronic waste tracking]]",
+      "resolved": "urn:visionflow:linked:e-waste-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Extended Producer Responsibility]]",
+      "resolved": "urn:visionflow:linked:extended-producer-responsibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ExtendedProducerResponsibility|extended producer responsibility]]",
+      "resolved": "urn:visionflow:linked:extended-producer-responsibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HazardousWaste|hazardous material monitoring]]",
+      "resolved": "urn:visionflow:linked:hazardous-waste",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ocean Plastic]]",
+      "resolved": "urn:visionflow:linked:ocean-plastic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pay-As-You-Throw]]",
+      "resolved": "urn:visionflow:linked:pay-as-you-throw",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Plastic Waste]]",
+      "resolved": "urn:visionflow:linked:plastic-waste",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recycling]]",
+      "resolved": "urn:visionflow:linked:recycling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RecyclingOptimization|recycling optimisation]]",
+      "resolved": "urn:visionflow:linked:recycling-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TokenizedIncentives|tokenised reward systems]]",
+      "resolved": "urn:visionflow:linked:tokenized-incentives",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Waste-to-Energy]]",
+      "resolved": "urn:visionflow:linked:waste-to-energy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WasteTraceability|waste traceability]]",
+      "resolved": "urn:visionflow:linked:waste-traceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zero Waste]]",
+      "resolved": "urn:visionflow:linked:zero-waste",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Circular Economy]]",
+      "resolved": "urn:visionflow:owl:class:circular-economy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CircularEconomy|circular economy]]",
+      "resolved": "urn:visionflow:owl:class:circular-economy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract|smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle. Blockchain-based systems enable [[WasteTraceability|waste traceability]], verify compliance with environmental regulations, incentivise proper disposal through [[TokenizedIncentives|tokenised reward systems]], and facilitate [[ExtendedProducerResponsibility|extended producer responsibility]] by tracking products from manufacturing through end-of-life recovery. Applications include [[E-WasteTracking|electronic waste tracking]], [[HazardousWaste|hazardous material monitoring]], and [[RecyclingOptimization|recycling optimisation]] where transparency and verifiable compliance prevent illegal waste dumping and improve environmental outcomes.

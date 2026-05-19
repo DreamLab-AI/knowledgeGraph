@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:00b4ca7dcf84e926768ef819265267196face8223321bf35cfcb92b8241244e0",
+  "title": "Participatory Policy Making",
+  "slug": "participatory-policy-making",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:participatory-policy-making",
+  "domain": "spatial-computing",
+  "definition": "A governance approach that involves citizens and stakeholders directly in the formulation, design, and evaluation of public policies through mechanisms such as citizen advisory boards, deliberative assemblies, and digital participation platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:democratic-governance",
+      "label": "Democratic Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:policy-legitimacy",
+        "label": "Policy Legitimacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "policy-legitimacy",
+      "label": "Policy Legitimacy"
+    },
+    {
+      "slug": "democratic-governance",
+      "label": "Democratic Governance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    }
+  ]
+}

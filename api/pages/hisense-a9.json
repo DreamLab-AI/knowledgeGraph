@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:5cadb46cf1c6f213c084a6587c8c5a54a43ac9d15c7af3a0e890908707807489",
+  "title": "Hisense A9",
+  "slug": "hisense-a9",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hisense-a9",
+  "domain": "infrastructure",
+  "definition": "Hisense A9 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

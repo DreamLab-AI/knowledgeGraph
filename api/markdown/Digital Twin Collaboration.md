@@ -1,22 +1,328 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#DigitalTwinCollaboration
-uri:: urn:visionclaw:concept:distributed-collaboration:digital-twin-collaboration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:digital-twin-collaboration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Digital Twin Collaboration
-content-hash:: sha256-12-15d38949b8e5
-legacy-term-id:: TC-0300
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#DigitalTwinCollaboration
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:digital-twin-collaboration
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Digital Twin Collaboration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56",
+  "@type": "Page",
+  "vc:slug": "digital-twin-collaboration",
+  "title": "Digital Twin Collaboration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-simulation",
+      "vc:label": "CollaborativeSimulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:iec-63278",
+      "vc:label": "IEC 63278"
+    },
+    {
+      "@id": "urn:visionflow:linked:industry-four-point-zero",
+      "vc:label": "IndustryFourPointZero"
+    },
+    {
+      "@id": "urn:visionflow:linked:io-t",
+      "vc:label": "IoT"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-19650",
+      "vc:label": "ISO 19650"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-23247",
+      "vc:label": "ISO 23247"
+    },
+    {
+      "@id": "urn:visionflow:linked:ogc-city-gml",
+      "vc:label": "OGC CityGML"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "vc:label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "vc:label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "vc:label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-computing",
+      "vc:label": "CloudComputing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "DigitalTwin"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-15d38949b8e5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#DigitalTwinCollaboration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0300"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Twin Collaboration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:digital-twin-collaboration"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:digital-twin-collaboration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-twin-collaboration",
+  "@type": "OntologyClass",
+  "label": "Digital Twin Collaboration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams, enabling remote collaboration on physical systems.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:cloud-computing",
+      "vc:label": "CloudComputing"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-simulation",
+      "vc:label": "CollaborativeSimulation"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-collaboration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[CollaborativeSimulation]]",
+      "resolved": "urn:visionflow:linked:collaborative-simulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEC 63278]]",
+      "resolved": "urn:visionflow:linked:iec-63278",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IndustryFourPointZero]]",
+      "resolved": "urn:visionflow:linked:industry-four-point-zero",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IoT]]",
+      "resolved": "urn:visionflow:linked:io-t",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 19650]]",
+      "resolved": "urn:visionflow:linked:iso-19650",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 23247]]",
+      "resolved": "urn:visionflow:linked:iso-23247",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OGC CityGML]]",
+      "resolved": "urn:visionflow:linked:ogc-city-gml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-002-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-301-virtual-office-spaces]]",
+      "resolved": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-302-shared-whiteboards]]",
+      "resolved": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CloudComputing]]",
+      "resolved": "urn:visionflow:owl:class:cloud-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalTwin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams, enabling remote collaboration on physical systems."

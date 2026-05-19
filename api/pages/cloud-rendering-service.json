@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:4d58793a95b5c046340efd035de1e3d01be60ceca47d3de31ed8a2ec0f61b0d3",
+  "title": "Cloud Rendering Service",
+  "slug": "cloud-rendering-service",
+  "public": true,
+  "wikilinks": [
+    {
+      "slug": "device-agnostic-visualization",
+      "label": "Device-Agnostic Visualization"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "gpu-servers",
+      "label": "GPU Servers"
+    },
+    {
+      "slug": "high-fidelity-graphics",
+      "label": "High-Fidelity Graphics"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "msf-taxonomy",
+      "label": "MSF Taxonomy"
+    },
+    {
+      "slug": "network-bandwidth",
+      "label": "Network Bandwidth"
+    },
+    {
+      "slug": "smpte-st-2119",
+      "label": "SMPTE ST 2119"
+    },
+    {
+      "slug": "streaming-encoder",
+      "label": "Streaming Encoder"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "remote-rendering",
+      "label": "Remote Rendering"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

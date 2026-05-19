@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:0d6e0b190399ae2e7283b092ca002aec75df4de41f77c334d49fe3aafd006bdd",
+  "title": "heatmap",
+  "slug": "heatmap",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:heatmap",
+  "domain": "infrastructure",
+  "definition": "heatmap is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

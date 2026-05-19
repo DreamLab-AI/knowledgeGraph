@@ -1,0 +1,239 @@
+{
+  "id": "urn:visionflow:page:771a939e4497a012d8f7afdcad4d58cbef104d0e0296a2ba60547de40dcc58e6",
+  "title": "Data Protection",
+  "slug": "data-protection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-protection",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive set of processes and technologies that safeguard personal and system data in virtual environments through encryption, access control, privacy preservation, and regulatory compliance mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:security-architecture",
+      "label": "Security Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audit-system",
+        "label": "Audit System"
+      },
+      {
+        "id": "urn:visionflow:linked:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:encryption-service",
+        "label": "Encryption Service"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-policy-engine",
+        "label": "Privacy Policy Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:authorization",
+        "label": "Authorization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:visionflow:linked:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:user-trust",
+        "label": "User Trust"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-data-sharing",
+        "label": "Secure Data Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-system",
+      "label": "Audit System"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "authorization",
+      "label": "Authorization"
+    },
+    {
+      "slug": "compliance-management",
+      "label": "Compliance Management"
+    },
+    {
+      "slug": "data-loss-prevention",
+      "label": "Data Loss Prevention"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "encryption-service",
+      "label": "Encryption Service"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "iso-27701",
+      "label": "ISO 27701"
+    },
+    {
+      "slug": "privacy-engineering",
+      "label": "Privacy Engineering"
+    },
+    {
+      "slug": "privacy-policy-engine",
+      "label": "Privacy Policy Engine"
+    },
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "security-policy",
+      "label": "Security Policy"
+    },
+    {
+      "slug": "user-trust",
+      "label": "User Trust"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "secure-data-sharing",
+      "label": "Secure Data Sharing"
+    },
+    {
+      "slug": "security-framework",
+      "label": "Security Framework"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "compliance-standards",
+      "label": "Compliance Standards"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:b7115e0858b6fba51989623f4279e1a1ae1e65722fd91950de6eb6f4d936961c",
+  "title": "Virtual Collaboration",
+  "slug": "virtual-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-collaboration",
+  "domain": "spatial-computing",
+  "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-workspace",
+      "label": "Virtual Workspace"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-workspace",
+      "label": "Virtual Workspace"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "xr-meeting-space",
+      "label": "XR Meeting Space"
+    }
+  ]
+}

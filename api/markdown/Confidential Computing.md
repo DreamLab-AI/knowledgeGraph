@@ -1,21 +1,244 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ConfidentialComputing
-uri:: urn:visionclaw:concept:artificial-intelligence:confidential-computing
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:confidential-computing
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Confidential Computing
-content-hash:: sha256-12-1e4a8baeee5d
-legacy-term-id:: AI-0424
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ConfidentialComputing
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:confidential-computing
 public:: true
+
+# Confidential Computing
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c",
+  "@type": "Page",
+  "vc:slug": "confidential-computing",
+  "title": "Confidential Computing",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:amd-sev",
+      "vc:label": "AMD SEV"
+    },
+    {
+      "@id": "urn:visionflow:linked:confidential-computing-consortium",
+      "vc:label": "Confidential Computing Consortium"
+    },
+    {
+      "@id": "urn:visionflow:linked:intel-sgx",
+      "vc:label": "Intel SGX"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1e4a8baeee5d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ConfidentialComputing"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0424"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Confidential Computing"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:confidential-computing"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:confidential-computing"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:confidential-computing",
+  "@type": "OntologyClass",
+  "label": "Confidential Computing",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, operating systems, hypervisors, and cloud providers. This approach addresses the three states of data protection by extending encryption beyond data at rest (storage encryption) and data in transit (TLS/network encryption) to data in use (memory encryption during active computation), implementing secure enclaves that are isolated memory regions with hardware-enforced access controls preventing external observation or modification even by ring-0 privileged code. Hardware technologies enabling confidential computing include Intel SGX (Software Guard Extensions) providing application-level enclaves with encrypted memory up to 256MB protected from OS and hypervisor inspection, AMD SEV (Secure Encrypted Virtualization) offering VM-level protection encrypting entire virtual machine memory with VM-specific keys inaccessible to hypervisor, ARM TrustZone partitioning processor into secure and normal w",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:confidential-computing:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AMD SEV]]",
+      "resolved": "urn:visionflow:linked:amd-sev",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Confidential Computing Consortium]]",
+      "resolved": "urn:visionflow:linked:confidential-computing-consortium",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intel SGX]]",
+      "resolved": "urn:visionflow:linked:intel-sgx",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, operating systems, hypervisors, and cloud providers. This approach addresses the three states of data protection by extending encryption beyond data at rest (storage encryption) and data in transit (TLS/network encryption) to data in use (memory encryption during active computation), implementing secure enclaves that are isolated memory regions with hardware-enforced access controls preventing external observation or modification even by ring-0 privileged code. Hardware technologies enabling confidential computing include Intel SGX (Software Guard Extensions) providing application-level enclaves with encrypted memory up to 256MB protected from OS and hypervisor inspection, AMD SEV (Secure Encrypted Virtualization) offering VM-level protection encrypting entire virtual machine memory with VM-specific keys inaccessible to hypervisor, ARM TrustZone partitioning processor into secure and normal worlds with dedicated secure memory and peripherals, IBM Secure Execution (formerly Z15) for mainframe confidential computing, and NVIDIA Confidential Computing for GPU-accelerated workloads. Security properties guaranteed include confidentiality through memory encryption preventing unauthorized data access, integrity via attestation mechanisms allowing verification that correct code executes in genuine TEE, and isolation ensuring malicious privileged software cannot interfere with enclave execution, with remote attestation protocols enabling external parties to cryptographically verify enclave identity, code integrity, and platform trustworthiness before provisioning secrets. AI workload applications include secure model training where proprietary models train on encrypted sensitive data in cloud TEEs without provider access, private inference enabling clients to query AI models without revealing inputs or receiving unencrypted model weights, federated learning with TEE-protected aggregation ensuring coordinator cannot inspect individual participant updates, and multi-party machine learning where competing organizations jointly train models on combined data within TEEs preventing mutual data exposure. The 2024-2025 period witnessed confidential computing mature with major cloud providers offering TEE-enabled instances (Azure Confidential Computing, Google Confidential VMs), Confidential Computing Consortium establishing standards and interoperability, though limitations remained including restricted enclave memory sizes, 5-30% performance overhead from encryption operations, side-channel attack vulnerabilities (Spectre, Foreshadow) requiring ongoing mitigation, and limited ecosystem maturity for development tools and libraries.

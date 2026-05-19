@@ -1,24 +1,455 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalRightsManagementExtended
-uri:: urn:visionclaw:concept:spatial-computing:digital-rights-management-extended
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-rights-management-extended
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Rights Management (Extended)
-content-hash:: sha256-12-9d7f50f97e06
-legacy-term-id:: 20276
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalRightsManagementExtended
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-rights-management-extended
 public:: true
+
+# Digital Rights Management (Extended)
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4705deccd65c23ff08b5ff426cb8f2f3bbb86d4df928c05b2d866f2c1cf9f712",
+  "@type": "Page",
+  "vc:slug": "digital-rights-management-extended",
+  "title": "Digital Rights Management (Extended)",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:access-control-module",
+      "vc:label": "Access Control Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-delivery-network",
+      "vc:label": "Content Delivery Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-encryption-engine",
+      "vc:label": "Content Encryption Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-licensing",
+      "vc:label": "Content Licensing"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-protection-infrastructure",
+      "vc:label": "Content Protection Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-verification-system",
+      "vc:label": "Identity Verification System"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-21000-mpeg-21",
+      "vc:label": "ISO/IEC 21000 MPEG-21"
+    },
+    {
+      "@id": "urn:visionflow:linked:license-management-system",
+      "vc:label": "License Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-gateway",
+      "vc:label": "Payment Gateway"
+    },
+    {
+      "@id": "urn:visionflow:linked:piracy-prevention",
+      "vc:label": "Piracy Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:usage-rights-enforcement",
+      "vc:label": "Usage Rights Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:linked:usage-tracking-system",
+      "vc:label": "Usage Tracking System"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-web-drm",
+      "vc:label": "W3C Web DRM"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
+      "vc:label": "Cryptographic Key Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:revenue-distribution",
+      "vc:label": "Revenue Distribution"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "vc:label": "VirtualEconomyDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:watermarking-service",
+      "vc:label": "Watermarking Service"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9d7f50f97e06"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalRightsManagementExtended"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20276"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Rights Management (Extended)"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-rights-management-extended"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-rights-management-extended"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4705deccd65c23ff08b5ff426cb8f2f3bbb86d4df928c05b2d866f2c1cf9f712@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-rights-management-extended",
+  "@type": "OntologyClass",
+  "label": "Digital Rights Management (Extended)",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "vc:label": "Virtual Economy Domain"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4705deccd65c23ff08b5ff426cb8f2f3bbb86d4df928c05b2d866f2c1cf9f712"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4705deccd65c23ff08b5ff426cb8f2f3bbb86d4df928c05b2d866f2c1cf9f712@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A comprehensive virtual system for protecting, licensing, and enforcing usage rights for digital content through encryption, access control, and automated rights enforcement mechanisms. bridges-to:: [[Blockchain]]",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:content-protection-infrastructure",
+      "vc:label": "Content Protection Infrastructure"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:access-control-module",
+      "vc:label": "Access Control Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-encryption-engine",
+      "vc:label": "Content Encryption Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:license-management-system",
+      "vc:label": "License Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:usage-tracking-system",
+      "vc:label": "Usage Tracking System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:watermarking-service",
+      "vc:label": "Watermarking Service"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:identity-verification-system",
+      "vc:label": "Identity Verification System"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-gateway",
+      "vc:label": "Payment Gateway"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
+      "vc:label": "Cryptographic Key Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:content-licensing",
+      "vc:label": "Content Licensing"
+    },
+    {
+      "@id": "urn:visionflow:linked:piracy-prevention",
+      "vc:label": "Piracy Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:usage-rights-enforcement",
+      "vc:label": "Usage Rights Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:revenue-distribution",
+      "vc:label": "Revenue Distribution"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:content-delivery-network",
+      "vc:label": "Content Delivery Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-rights-management-extended:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4705deccd65c23ff08b5ff426cb8f2f3bbb86d4df928c05b2d866f2c1cf9f712"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Access Control Module]]",
+      "resolved": "urn:visionflow:linked:access-control-module",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Delivery Network]]",
+      "resolved": "urn:visionflow:linked:content-delivery-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Encryption Engine]]",
+      "resolved": "urn:visionflow:linked:content-encryption-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Licensing]]",
+      "resolved": "urn:visionflow:linked:content-licensing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Protection Infrastructure]]",
+      "resolved": "urn:visionflow:linked:content-protection-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Identity Verification System]]",
+      "resolved": "urn:visionflow:linked:identity-verification-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 21000 MPEG-21]]",
+      "resolved": "urn:visionflow:linked:iso-iec-21000-mpeg-21",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[License Management System]]",
+      "resolved": "urn:visionflow:linked:license-management-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Gateway]]",
+      "resolved": "urn:visionflow:linked:payment-gateway",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Piracy Prevention]]",
+      "resolved": "urn:visionflow:linked:piracy-prevention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Usage Rights Enforcement]]",
+      "resolved": "urn:visionflow:linked:usage-rights-enforcement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Usage Tracking System]]",
+      "resolved": "urn:visionflow:linked:usage-tracking-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Web DRM]]",
+      "resolved": "urn:visionflow:linked:w3-c-web-drm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Network]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptographic Key Management]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-key-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Revenue Distribution]]",
+      "resolved": "urn:visionflow:owl:class:revenue-distribution",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEconomyDomain]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Watermarking Service]]",
+      "resolved": "urn:visionflow:owl:class:watermarking-service",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4705deccd65c23ff08b5ff426cb8f2f3bbb86d4df928c05b2d866f2c1cf9f712@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A comprehensive virtual system for protecting, licensing, and enforcing usage rights for digital content through encryption, access control, and automated rights enforcement mechanisms.

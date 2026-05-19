@@ -1,21 +1,236 @@
-iri:: http://narrativegoldmine.com/metaverse#Fairness
-uri:: urn:visionclaw:concept:artificial-intelligence:fairness
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:fairness
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Fairness
-content-hash:: sha256-12-156ae33990a3
-legacy-term-id:: AI-0065
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Fairness
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:fairness
 public:: true
+
+# Fairness
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2",
+  "@type": "Page",
+  "vc:slug": "fairness",
+  "title": "Fairness",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bias-detection",
+      "vc:label": "Bias Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-mitigation",
+      "vc:label": "Bias Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:equal-treatment",
+      "vc:label": "Equal Treatment"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-discrimination",
+      "vc:label": "Non-discrimination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-156ae33990a3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Fairness"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0065"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Fairness"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:fairness"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:fairness"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:fairness",
+  "@type": "OntologyClass",
+  "label": "Fairness",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:bias-detection",
+      "vc:label": "Bias Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-mitigation",
+      "vc:label": "Bias Mitigation"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:equal-treatment",
+      "vc:label": "Equal Treatment"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-discrimination",
+      "vc:label": "Non-discrimination"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:fairness:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Bias Detection]]",
+      "resolved": "urn:visionflow:linked:bias-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bias Mitigation]]",
+      "resolved": "urn:visionflow:linked:bias-mitigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Equal Treatment]]",
+      "resolved": "urn:visionflow:linked:equal-treatment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Non-discrimination]]",
+      "resolved": "urn:visionflow:linked:non-discrimination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.

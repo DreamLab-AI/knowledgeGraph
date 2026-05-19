@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:f7fa50fefa75e38d13b3d5b39953338267e478b96b184235698df402ca861af5",
+  "title": "Safe Immersive Experience",
+  "slug": "safe-immersive-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:safe-immersive-experience",
+  "domain": "spatial-computing",
+  "definition": "Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:user-safety",
+      "label": "User Safety"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:responsible-xr-design",
+        "label": "Responsible XR Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "responsible-xr-design",
+      "label": "Responsible XR Design"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "user-safety",
+      "label": "User Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:ffb0fc274f5f793ade199103c771752cad2a6424062dee25de4b2ed77cf72353",
+  "title": "Awareness",
+  "slug": "awareness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:awareness",
+  "domain": "spatial-computing",
+  "definition": "Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, audio, and haptic cues.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:social-computing",
+      "label": "Social Computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:notification-systems",
+        "label": "Notification Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:presence-detection",
+        "label": "Presence Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-synchronization",
+        "label": "State Synchronization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-presence",
+        "label": "Collaborative Presence"
+      },
+      {
+        "id": "urn:visionflow:linked:situational-understanding",
+        "label": "Situational Understanding"
+      },
+      {
+        "id": "urn:visionflow:linked:social-interaction",
+        "label": "Social Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-presence",
+      "label": "Collaborative Presence"
+    },
+    {
+      "slug": "notification-systems",
+      "label": "Notification Systems"
+    },
+    {
+      "slug": "situational-understanding",
+      "label": "Situational Understanding"
+    },
+    {
+      "slug": "social-computing",
+      "label": "Social Computing"
+    },
+    {
+      "slug": "social-interaction",
+      "label": "Social Interaction"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "presence-detection",
+      "label": "Presence Detection"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ]
+}

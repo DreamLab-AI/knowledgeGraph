@@ -1,0 +1,772 @@
+{
+  "id": "urn:visionflow:page:c64c934494d2b5b3c040727313fe8cb9afb8553d77f581950318c99a80ffbe78",
+  "title": "NVIDIA Omniverse",
+  "slug": "nvidia-omniverse",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nvidia-omniverse",
+  "domain": "spatial-computing",
+  "definition": "NVIDIA Omniverse is a [[USD]]-centric, physically accurate [[simulation]] and [[digital twin]] platform developed by NVIDIA Corporation providing libraries, microservices, cloud APIs, and applications enabling developers, enterprises, and industrial operators to build, simulate, collaborate on, and deploy physically accurate 3D environments, [[robotic AI]] systems, and industrial digital twins at production scale. Announced in beta 2018, commercialised through Omniverse Enterprise 2021, [[Omniverse Cloud APIs]] on [[Microsoft Azure]] (GTC March 2024), and modular Omniverse Libraries (2025), the platform is architecturally unified by [[OpenUSD]] (Universal Scene Description) as its universal 3D data interchange layer \u2014 allowing scene data from over 50 different [[CAD]], PLM, [[BIM]], and [[DCC]] applications to compose into a single coherent scene graph without proprietary conversion. Core technical components: the Omniverse [[Kit SDK]] (modular C++/Python application framework where every capability is a hot-reloadable extension, built on the Carbonite plugin ABI); the [[RTX Renderer]] (multi-mode Hydra render delegate \u2014 RTX-Interactive for real-time viewport, RTX-PathTracer for ph",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-platform",
+      "label": "3D Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:physical-ai",
+      "label": "Physical AI"
+    },
+    {
+      "id": "urn:visionflow:linked:simulation-platform",
+      "label": "Simulation Platform"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "id": "urn:visionflow:owl:class:industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:gr00-t-foundation-model",
+        "label": "GR00T Foundation Model"
+      },
+      {
+        "id": "urn:visionflow:linked:hydra",
+        "label": "Hydra"
+      },
+      {
+        "id": "urn:visionflow:linked:isaac-lab",
+        "label": "Isaac Lab"
+      },
+      {
+        "id": "urn:visionflow:linked:isaac-sim",
+        "label": "Isaac Sim"
+      },
+      {
+        "id": "urn:visionflow:linked:kit-sdk",
+        "label": "Kit SDK"
+      },
+      {
+        "id": "urn:visionflow:linked:nim-microservices",
+        "label": "NIM Microservices"
+      },
+      {
+        "id": "urn:visionflow:linked:nucleus-server",
+        "label": "Nucleus Server"
+      },
+      {
+        "id": "urn:visionflow:linked:omniverse-cloud-apis",
+        "label": "Omniverse Cloud APIs"
+      },
+      {
+        "id": "urn:visionflow:linked:omniverse-connector",
+        "label": "Omniverse Connector"
+      },
+      {
+        "id": "urn:visionflow:linked:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:visionflow:linked:ovx-server",
+        "label": "OVX Server"
+      },
+      {
+        "id": "urn:visionflow:linked:phys-x-5",
+        "label": "PhysX 5"
+      },
+      {
+        "id": "urn:visionflow:linked:rtx-renderer",
+        "label": "RTX Renderer"
+      },
+      {
+        "id": "urn:visionflow:linked:usd-composer",
+        "label": "USD Composer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:visionflow:linked:nvidia-drivers",
+        "label": "NVIDIA Drivers"
+      },
+      {
+        "id": "urn:visionflow:linked:nvidia-rtx-gpu",
+        "label": "NVIDIA RTX GPU"
+      },
+      {
+        "id": "urn:visionflow:linked:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:visionflow:linked:phys-x-sdk",
+        "label": "PhysX SDK"
+      },
+      {
+        "id": "urn:visionflow:linked:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:visionflow:owl:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:visionflow:linked:factory-simulation",
+        "label": "Factory Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:physical-ai",
+        "label": "Physical AI"
+      },
+      {
+        "id": "urn:visionflow:linked:physically-accurate-rendering",
+        "label": "Physically Accurate Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-collaboration",
+        "label": "Real-Time Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-policy-training",
+        "label": "Robot Policy Training"
+      },
+      {
+        "id": "urn:visionflow:linked:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      },
+      {
+        "id": "urn:visionflow:owl:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:flare-alignment",
+        "label": "FLARE Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:gr00-t-n1",
+        "label": "GR00T N1"
+      },
+      {
+        "id": "urn:visionflow:linked:hydra-render-delegate",
+        "label": "Hydra Render Delegate"
+      },
+      {
+        "id": "urn:visionflow:linked:kit-extension-framework",
+        "label": "Kit Extension Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:visionflow:linked:phys-x-5",
+        "label": "PhysX 5"
+      },
+      {
+        "id": "urn:visionflow:linked:rtx-ray-tracing",
+        "label": "RTX Ray Tracing"
+      },
+      {
+        "id": "urn:visionflow:linked:usd-fabric",
+        "label": "USD Fabric"
+      },
+      {
+        "id": "urn:visionflow:linked:usd-schema",
+        "label": "USD Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-language-action-models",
+        "label": "Vision-Language-Action Models"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-platform",
+      "label": "3D Platform"
+    },
+    {
+      "slug": "3-d-tiles",
+      "label": "3D Tiles"
+    },
+    {
+      "slug": "aec-digital-twins",
+      "label": "AEC Digital Twins"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "alliance-for-open-usd",
+      "label": "Alliance for OpenUSD"
+    },
+    {
+      "slug": "autodesk-forma",
+      "label": "Autodesk Forma"
+    },
+    {
+      "slug": "autonomous-vehicle-simulation",
+      "label": "Autonomous Vehicle Simulation"
+    },
+    {
+      "slug": "aws-robo-maker",
+      "label": "AWS RoboMaker"
+    },
+    {
+      "slug": "bim",
+      "label": "BIM"
+    },
+    {
+      "slug": "bmw",
+      "label": "BMW"
+    },
+    {
+      "slug": "bmw-virtual-factory",
+      "label": "BMW Virtual Factory"
+    },
+    {
+      "slug": "c-runtime",
+      "label": "C++ Runtime"
+    },
+    {
+      "slug": "cad",
+      "label": "CAD"
+    },
+    {
+      "slug": "cloud-service-layer",
+      "label": "CloudServiceLayer"
+    },
+    {
+      "slug": "coppelia-sim",
+      "label": "CoppeliaSim"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "dcc",
+      "label": "DCC"
+    },
+    {
+      "slug": "digital-thread",
+      "label": "Digital Thread"
+    },
+    {
+      "slug": "eagle-2-5",
+      "label": "Eagle 2.5"
+    },
+    {
+      "slug": "eagle-2-5-vlm",
+      "label": "Eagle 2.5 VLM"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "factory-simulation",
+      "label": "Factory Simulation"
+    },
+    {
+      "slug": "flare-alignment",
+      "label": "FLARE Alignment"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "foundation model"
+    },
+    {
+      "slug": "gazebo-ros",
+      "label": "Gazebo ROS"
+    },
+    {
+      "slug": "gr00-t",
+      "label": "GR00T"
+    },
+    {
+      "slug": "gr00-t-foundation-model",
+      "label": "GR00T Foundation Model"
+    },
+    {
+      "slug": "gr00-t-n1",
+      "label": "GR00T N1"
+    },
+    {
+      "slug": "humanoid-robotics",
+      "label": "humanoid robotics"
+    },
+    {
+      "slug": "hydra",
+      "label": "Hydra"
+    },
+    {
+      "slug": "hydra-render-delegate",
+      "label": "Hydra Render Delegate"
+    },
+    {
+      "slug": "industrial-aidomain",
+      "label": "IndustrialAIDomain"
+    },
+    {
+      "slug": "industrial-io-t",
+      "label": "Industrial IoT"
+    },
+    {
+      "slug": "isaac-lab",
+      "label": "Isaac Lab"
+    },
+    {
+      "slug": "isaac-sim",
+      "label": "Isaac Sim"
+    },
+    {
+      "slug": "jetson-thor",
+      "label": "Jetson Thor"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "kit-extension-framework",
+      "label": "Kit Extension Framework"
+    },
+    {
+      "slug": "kit-sdk",
+      "label": "Kit SDK"
+    },
+    {
+      "slug": "li-dar",
+      "label": "LiDAR"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
+      "slug": "material-x-standard",
+      "label": "MaterialX Standard"
+    },
+    {
+      "slug": "mercedes-benz",
+      "label": "Mercedes-Benz"
+    },
+    {
+      "slug": "mercedes-benz-digital-twin",
+      "label": "Mercedes-Benz Digital Twin"
+    },
+    {
+      "slug": "microsoft-azure",
+      "label": "Microsoft Azure"
+    },
+    {
+      "slug": "mu-jo-co",
+      "label": "MuJoCo"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "nim-microservices",
+      "label": "NIM Microservices"
+    },
+    {
+      "slug": "nucleus-server",
+      "label": "Nucleus Server"
+    },
+    {
+      "slug": "nvidia-a100",
+      "label": "NVIDIA A100"
+    },
+    {
+      "slug": "nvidia-blackwell",
+      "label": "NVIDIA Blackwell"
+    },
+    {
+      "slug": "nvidia-dgx",
+      "label": "NVIDIA DGX"
+    },
+    {
+      "slug": "nvidia-dlss",
+      "label": "NVIDIA DLSS"
+    },
+    {
+      "slug": "nvidia-drivers",
+      "label": "NVIDIA Drivers"
+    },
+    {
+      "slug": "nvidia-gpu-computing",
+      "label": "NVIDIA GPU Computing"
+    },
+    {
+      "slug": "nvidia-nim",
+      "label": "NVIDIA NIM"
+    },
+    {
+      "slug": "nvidia-ovx-systems",
+      "label": "NVIDIA OVX Systems"
+    },
+    {
+      "slug": "nvidia-rtx-gpu",
+      "label": "NVIDIA RTX GPU"
+    },
+    {
+      "slug": "omniverse-cloud-apis",
+      "label": "Omniverse Cloud APIs"
+    },
+    {
+      "slug": "omniverse-connector",
+      "label": "Omniverse Connector"
+    },
+    {
+      "slug": "open-usd",
+      "label": "OpenUSD"
+    },
+    {
+      "slug": "open-usd-alliance",
+      "label": "OpenUSD Alliance"
+    },
+    {
+      "slug": "opti-x",
+      "label": "OptiX"
+    },
+    {
+      "slug": "ovx-server",
+      "label": "OVX Server"
+    },
+    {
+      "slug": "pepsi-co",
+      "label": "PepsiCo"
+    },
+    {
+      "slug": "perception",
+      "label": "perception"
+    },
+    {
+      "slug": "phys-x-5",
+      "label": "PhysX 5"
+    },
+    {
+      "slug": "phys-x-sdk",
+      "label": "PhysX SDK"
+    },
+    {
+      "slug": "physical-ai",
+      "label": "Physical AI"
+    },
+    {
+      "slug": "physically-accurate-rendering",
+      "label": "Physically Accurate Rendering"
+    },
+    {
+      "slug": "plm",
+      "label": "PLM"
+    },
+    {
+      "slug": "py-bullet",
+      "label": "PyBullet"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "real-time-collaboration",
+      "label": "Real-Time Collaboration"
+    },
+    {
+      "slug": "robot-policy-training",
+      "label": "Robot Policy Training"
+    },
+    {
+      "slug": "robotic-ai",
+      "label": "robotic AI"
+    },
+    {
+      "slug": "robotics-simulation",
+      "label": "robotics simulation"
+    },
+    {
+      "slug": "robotics-simulation-domain",
+      "label": "RoboticsSimulationDomain"
+    },
+    {
+      "slug": "robotics-training",
+      "label": "Robotics Training"
+    },
+    {
+      "slug": "rockwell-automation",
+      "label": "Rockwell Automation"
+    },
+    {
+      "slug": "ros2",
+      "label": "ROS2"
+    },
+    {
+      "slug": "rtx-ray-tracing",
+      "label": "RTX Ray Tracing"
+    },
+    {
+      "slug": "rtx-renderer",
+      "label": "RTX Renderer"
+    },
+    {
+      "slug": "siemens",
+      "label": "Siemens"
+    },
+    {
+      "slug": "siemens-xcelerator",
+      "label": "Siemens Xcelerator"
+    },
+    {
+      "slug": "sim-to-real-transfer",
+      "label": "Sim-to-Real Transfer"
+    },
+    {
+      "slug": "simulation-platform",
+      "label": "Simulation Platform"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "synthetic data"
+    },
+    {
+      "slug": "unity-mars",
+      "label": "Unity MARS"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "usd-composer",
+      "label": "USD Composer"
+    },
+    {
+      "slug": "usd-fabric",
+      "label": "USD Fabric"
+    },
+    {
+      "slug": "usd-schema",
+      "label": "USD Schema"
+    },
+    {
+      "slug": "usd-search-nim",
+      "label": "USD Search NIM"
+    },
+    {
+      "slug": "usd-working-group",
+      "label": "USD Working Group"
+    },
+    {
+      "slug": "vision-language-action-models",
+      "label": "Vision-Language-Action Models"
+    },
+    {
+      "slug": "vulkan",
+      "label": "Vulkan"
+    },
+    {
+      "slug": "warehouse-automation",
+      "label": "Warehouse Automation"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "autonomous vehicle"
+    },
+    {
+      "slug": "camera",
+      "label": "camera"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "computer vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "digital twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "robotics"
+    },
+    {
+      "slug": "simulation",
+      "label": "simulation"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "client-side-dco",
+      "label": "Client side DCO"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "knowhere",
+      "label": "Knowhere"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "parametric",
+      "label": "Parametric"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "rb-0087-safety-standard",
+      "label": "rb 0087 safety standard"
+    }
+  ]
+}

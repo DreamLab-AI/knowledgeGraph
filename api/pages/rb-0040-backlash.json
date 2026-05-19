@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:fb630d81b592f9d7e8e25775841bfad98db95dd8dc8c29f1f435c2ddd35bf39a",
+  "title": "rb 0040 backlash",
+  "slug": "rb-0040-backlash",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0040-backlash",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:backlash",
+      "label": "Backlash"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

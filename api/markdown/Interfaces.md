@@ -1,20 +1,239 @@
-iri:: http://narrativegoldmine.com/infrastructure#Interfaces
-uri:: urn:visionclaw:concept:infrastructure:interfaces
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:interfaces
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Interfaces
-content-hash:: sha256-12-1e522aae38f8
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#Interfaces
+legacy_uri:: urn:visionclaw:concept:infrastructure:interfaces
 public:: true
+
+# Interfaces
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba",
+  "@type": "Page",
+  "vc:slug": "interfaces",
+  "title": "Interfaces",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:langflow",
+      "vc:label": "Langflow"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-and-edge",
+      "vc:label": "Hardware and Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interfaces",
+      "vc:label": "Interfaces"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:node-based-visual-interfaces",
+      "vc:label": "Node based visual interfaces"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1e522aae38f8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#Interfaces"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Interfaces"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interfaces"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interfaces"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:interfaces",
+  "@type": "OntologyClass",
+  "label": "Interfaces",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:user-interface",
+      "vc:label": "User Interface"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Interfaces is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:interfaces:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Langflow]]",
+      "resolved": "urn:visionflow:linked:langflow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hardware and Edge]]",
+      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interfaces]]",
+      "resolved": "urn:visionflow:owl:class:interfaces",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Node based visual interfaces]]",
+      "resolved": "urn:visionflow:owl:class:node-based-visual-interfaces",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Interfaces is a concept within the ngm domain.
@@ -25,9 +244,9 @@ public:: true
   - <!-- No relationships defined -->
 - ### Content
   - # Node based
-  - [Rivet (ironcladapp.com)](https://rivet.ironcladapp.com/) is a [[Interfaces]] for [[Infrastructure]] [[Hardware and Edge]] based [[Agents]] using [[Large language models]]
-  - [[Node based visual interfaces]] is a  [[Interfaces]] for [[Large language models]] which is open source and [locally hosted.](https://github.com/FlowiseAI/Flowise) also see [[Langflow]]
-  - [[Langflow]] [[Interfaces]] for [[Large language models]] builder, with slightly more features than [[Node based visual interfaces]] which is another one I need to try soon from their [github](https://github.com/logspace-ai/langflow)
+  - [Rivet (ironcladapp.com)](https://rivet.ironcladapp.com/) is a [[Interfaces]] for [[Infrastructure]] [[Hardware and Edge]] based [[Agents]] using [[Large Language Models]]
+  - [[Node based visual interfaces]] is a  [[Interfaces]] for [[Large Language Models]] which is open source and [locally hosted.](https://github.com/FlowiseAI/Flowise) also see [[Langflow]]
+  - [[Langflow]] [[Interfaces]] for [[Large Language Models]] builder, with slightly more features than [[Node based visual interfaces]] which is another one I need to try soon from their [github](https://github.com/logspace-ai/langflow)
   - ComfyUI is a [[Interfaces]] for [[Stable Diffusion]]. It allows very high levels of control over Diffusion Models by leveraging open source extensions and a vibrant developer and creator community. The tool's flexibility and efficiency comes from its innovative design philosophy, that prioritizes user customization and interaction.
   - # LLM and multimodal local
 			- **Description:** Web-based UI inspired by ChatGPT, designed for high extensibility.

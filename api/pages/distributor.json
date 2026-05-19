@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:9fdecd24764ba6beef546cdb58d16e3f65ca91dcfb0042586260476afc930966",
+  "title": "Distributor",
+  "slug": "distributor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributor",
+  "domain": "spatial-computing",
+  "definition": "A natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

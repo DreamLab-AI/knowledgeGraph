@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:bf4ff537182ecf513d68f4fd852ae74b288ea58e32a2d78af50189b37cbc02b7",
+  "title": "Financial Infrastructure",
+  "slug": "financial-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:financial-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Financial Infrastructure is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:economic-layer",
+      "label": "Economic Layer"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ]
+}

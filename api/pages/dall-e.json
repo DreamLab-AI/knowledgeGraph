@@ -1,0 +1,588 @@
+{
+  "id": "urn:visionflow:page:351906350ad08c9e822f2525c24b07bd3b6b420129762fad28d6483f562828ca",
+  "title": "DALL\u00b7E",
+  "slug": "dall-e",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dall-e",
+  "domain": "artificial-intelligence",
+  "definition": "**DALL\u00b7E** (canonical typography with U+00B7 middle dot; portmanteau of Salvador Dal\u00ed + Pixar's WALL\u00b7E) is the proprietary text-to-image model family developed by OpenAI from January 2021 onwards, comprising four generations of foundation models that progressively redefined the state-of-the-art for natural-language-conditioned image synthesis: **DALL\u00b7E 1** (Ramesh, Pavlov, Goh, Gray, Voss, Radford, Chen, Sutskever 2021, arXiv:2102.12092) \u2014 a 12-billion-parameter sparse-attention decoder-only transformer trained autoregressively over interleaved text BPE tokens and image tokens emitted by a discrete VAE (dVAE) compressing 256\u00d7256 images into 32\u00d732 grids of indices over an 8,192-entry codebook, demonstrating for the first time at scale that a single autoregressive transformer can generate plausible novel images from arbitrary text prompts including unprecedented compositions (the canonical \"an armchair in the shape of an avocado\") through zero-shot reasoning over a 250-million image-text dataset filtered from Conceptual Captions, YFCC100M and proprietary web crawls, with results released as a research blog post and curated gallery rather than a production API; **DALL\u00b7E 2** (Ramesh, D",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "id": "urn:visionflow:linked:multimodal-model",
+      "label": "Multimodal Model"
+    },
+    {
+      "id": "urn:visionflow:linked:proprietary-model",
+      "label": "Proprietary Model"
+    },
+    {
+      "id": "urn:visionflow:linked:text-to-image-model",
+      "label": "Text-to-Image Model"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:c2-pa-metadata-embedder",
+        "label": "C2PA Metadata Embedder"
+      },
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-decoder",
+        "label": "Diffusion Decoder"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-prior",
+        "label": "Diffusion Prior"
+      },
+      {
+        "id": "urn:visionflow:linked:discrete-vae",
+        "label": "Discrete VAE"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-rewriter",
+        "label": "Prompt Rewriter"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-filter",
+        "label": "Safety Filter"
+      },
+      {
+        "id": "urn:visionflow:linked:super-resolution-cascade",
+        "label": "Super-Resolution Cascade"
+      },
+      {
+        "id": "urn:visionflow:linked:text-encoder",
+        "label": "Text Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:clip-embedding-space",
+        "label": "CLIP Embedding Space"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:massive-image-text-dataset",
+        "label": "Massive Image-Text Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:visionflow:owl:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:concept-art-generation",
+        "label": "Concept Art Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:conversational-image-editing",
+        "label": "Conversational Image Editing"
+      },
+      {
+        "id": "urn:visionflow:linked:image-variations",
+        "label": "Image Variations"
+      },
+      {
+        "id": "urn:visionflow:linked:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-stock-imagery",
+        "label": "Synthetic Stock Imagery"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:autoregressive-image-generation",
+        "label": "Autoregressive Image Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:cascaded-super-resolution",
+        "label": "Cascaded Super-Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-caption-training",
+        "label": "Synthetic Caption Training"
+      },
+      {
+        "id": "urn:visionflow:linked:un-clip-architecture",
+        "label": "unCLIP Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "advertising",
+      "label": "Advertising"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "architectural-visualisation",
+      "label": "Architectural Visualisation"
+    },
+    {
+      "slug": "autoregressive-image-generation",
+      "label": "Autoregressive Image Generation"
+    },
+    {
+      "slug": "betker-et-al-2023-improving-image-generation-with-better-captions",
+      "label": "Betker et al. 2023 Improving Image Generation with Better Captions"
+    },
+    {
+      "slug": "black-forest-labs-2024-flux-1",
+      "label": "Black Forest Labs 2024 Flux.1"
+    },
+    {
+      "slug": "c2-pa-metadata-embedder",
+      "label": "C2PA Metadata Embedder"
+    },
+    {
+      "slug": "c2-pa-specification",
+      "label": "C2PA Specification"
+    },
+    {
+      "slug": "c2-pa-specification-2-1",
+      "label": "C2PA Specification 2.1"
+    },
+    {
+      "slug": "cao-et-al-2024-generative-diffusion-models-survey",
+      "label": "Cao et al. 2024 Generative Diffusion Models Survey"
+    },
+    {
+      "slug": "cascaded-super-resolution",
+      "label": "Cascaded Super-Resolution"
+    },
+    {
+      "slug": "chen-et-al-2023-pix-art-alpha",
+      "label": "Chen et al. 2023 PixArt-Alpha"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-embedding-space",
+      "label": "CLIP Embedding Space"
+    },
+    {
+      "slug": "concept-art-generation",
+      "label": "Concept Art Generation"
+    },
+    {
+      "slug": "conversational-image-editing",
+      "label": "Conversational Image Editing"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "croitoru-et-al-2023-diffusion-models-in-vision-survey",
+      "label": "Croitoru et al. 2023 Diffusion Models in Vision Survey"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "deepfake",
+      "label": "Deepfake"
+    },
+    {
+      "slug": "diffusion-decoder",
+      "label": "Diffusion Decoder"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-prior",
+      "label": "Diffusion Prior"
+    },
+    {
+      "slug": "diffusion-sampling",
+      "label": "Diffusion Sampling"
+    },
+    {
+      "slug": "discrete-vae",
+      "label": "Discrete VAE"
+    },
+    {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
+      "slug": "esser-et-al-2024-sd3-rectified-flow-transformers",
+      "label": "Esser et al. 2024 SD3 Rectified Flow Transformers"
+    },
+    {
+      "slug": "fernandez-et-al-2023-stable-signature",
+      "label": "Fernandez et al. 2023 Stable Signature"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "FoundationModelLayer"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "hessel-et-al-2021-clipscore",
+      "label": "Hessel et al. 2021 CLIPScore"
+    },
+    {
+      "slug": "heusel-et-al-2017-ttur-fid",
+      "label": "Heusel et al. 2017 TTUR FID"
+    },
+    {
+      "slug": "ho-jain-abbeel-2020-ddpm",
+      "label": "Ho Jain Abbeel 2020 DDPM"
+    },
+    {
+      "slug": "ho-salimans-2021-classifier-free-diffusion-guidance",
+      "label": "Ho Salimans 2021 Classifier-Free Diffusion Guidance"
+    },
+    {
+      "slug": "icml",
+      "label": "ICML"
+    },
+    {
+      "slug": "ideogram",
+      "label": "Ideogram"
+    },
+    {
+      "slug": "image-variations",
+      "label": "Image Variations"
+    },
+    {
+      "slug": "imagen",
+      "label": "Imagen"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "marcus-davis-aaronson-2022-dall-e-2-analysis",
+      "label": "Marcus Davis Aaronson 2022 DALL-E 2 Analysis"
+    },
+    {
+      "slug": "marketing",
+      "label": "Marketing"
+    },
+    {
+      "slug": "massive-image-text-dataset",
+      "label": "Massive Image-Text Dataset"
+    },
+    {
+      "slug": "mishkin-et-al-2022-dall-e-2-risks-and-limitations",
+      "label": "Mishkin et al. 2022 DALL-E 2 Risks and Limitations"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "multimodal-aidomain",
+      "label": "MultimodalAIDomain"
+    },
+    {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "nichol-et-al-2022-glide",
+      "label": "Nichol et al. 2022 GLIDE"
+    },
+    {
+      "slug": "nsfw-classifier",
+      "label": "NSFW Classifier"
+    },
+    {
+      "slug": "open-ai-2023-dall-e-3-system-card",
+      "label": "OpenAI 2023 DALL-E 3 System Card"
+    },
+    {
+      "slug": "open-ai-2025-gpt-4o-image-generation-system-card",
+      "label": "OpenAI 2025 GPT-4o Image Generation System Card"
+    },
+    {
+      "slug": "open-ai-usage-policies",
+      "label": "OpenAI Usage Policies"
+    },
+    {
+      "slug": "outpainting",
+      "label": "Outpainting"
+    },
+    {
+      "slug": "podell-et-al-2023-sdxl",
+      "label": "Podell et al. 2023 SDXL"
+    },
+    {
+      "slug": "prompt-rewriter",
+      "label": "Prompt Rewriter"
+    },
+    {
+      "slug": "proprietary-model",
+      "label": "Proprietary Model"
+    },
+    {
+      "slug": "radford-et-al-2021-clip",
+      "label": "Radford et al. 2021 CLIP"
+    },
+    {
+      "slug": "ramesh-et-al-2021-zero-shot-text-to-image-generation",
+      "label": "Ramesh et al. 2021 Zero-Shot Text-to-Image Generation"
+    },
+    {
+      "slug": "ramesh-et-al-2022-hierarchical-text-conditional-image-generation-with-clip-latents",
+      "label": "Ramesh et al. 2022 Hierarchical Text-Conditional Image Generation with CLIP Latents"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-models",
+      "label": "Rombach et al. 2022 Latent Diffusion Models"
+    },
+    {
+      "slug": "safety-filter",
+      "label": "Safety Filter"
+    },
+    {
+      "slug": "saharia-et-al-2022-imagen",
+      "label": "Saharia et al. 2022 Imagen"
+    },
+    {
+      "slug": "super-resolution-cascade",
+      "label": "Super-Resolution Cascade"
+    },
+    {
+      "slug": "synthetic-caption-training",
+      "label": "Synthetic Caption Training"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "synthetic-stock-imagery",
+      "label": "Synthetic Stock Imagery"
+    },
+    {
+      "slug": "text-encoder",
+      "label": "Text Encoder"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "text-to-image-model",
+      "label": "Text-to-Image Model"
+    },
+    {
+      "slug": "tokeniser",
+      "label": "Tokeniser"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "un-clip-architecture",
+      "label": "unCLIP Architecture"
+    },
+    {
+      "slug": "van-den-oord-et-al-2017-vq-vae",
+      "label": "van den Oord et al. 2017 VQ-VAE"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "wen-et-al-2023-tree-ring-watermarks",
+      "label": "Wen et al. 2023 Tree-Ring Watermarks"
+    },
+    {
+      "slug": "yu-et-al-2022-parti",
+      "label": "Yu et al. 2022 Parti"
+    },
+    {
+      "slug": "zhang-et-al-2023-text-to-image-diffusion-models-survey",
+      "label": "Zhang et al. 2023 Text-to-Image Diffusion Models Survey"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning From Human Feedback"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

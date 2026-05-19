@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:db2907bf47d70525a12eff92cab7fa79b4ad3a4c4fd6aaeac817d175f49a8d2b",
+  "title": "Carbon Offset Trading",
+  "slug": "carbon-offset-trading",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-offset-trading",
+  "domain": "spatial-computing",
+  "definition": "The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:environmental-trading",
+      "label": "Environmental Trading"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:market-infrastructure",
+        "label": "Market Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:trading-platform",
+        "label": "Trading Platform"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-registry",
+        "label": "Carbon Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:carbon-price-discovery",
+        "label": "Carbon Price Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:offset-liquidity",
+        "label": "Offset Liquidity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-price-discovery",
+      "label": "Carbon Price Discovery"
+    },
+    {
+      "slug": "climate-finance",
+      "label": "Climate Finance"
+    },
+    {
+      "slug": "market-infrastructure",
+      "label": "Market Infrastructure"
+    },
+    {
+      "slug": "offset-liquidity",
+      "label": "Offset Liquidity"
+    },
+    {
+      "slug": "trading-platform",
+      "label": "Trading Platform"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    },
+    {
+      "slug": "environmental-trading",
+      "label": "Environmental Trading"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0",
+  "title": "Emotional Immersion",
+  "slug": "emotional-immersion",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:emotional-immersion",
+  "domain": "spatial-computing",
+  "definition": "Psychological absorption and empathetic engagement experienced during virtual interaction, characterized by affective resonance with virtual content and reduced awareness of physical surroundings.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:immersion",
+      "label": "Immersion"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:affective-design",
+        "label": "Affective Design"
+      },
+      {
+        "id": "urn:visionflow:linked:sensory-feedback",
+        "label": "Sensory Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:narrative-content",
+        "label": "Narrative Content"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:emotional-resonance",
+        "label": "Emotional Resonance"
+      },
+      {
+        "id": "urn:visionflow:linked:empathetic-connection",
+        "label": "Empathetic Connection"
+      },
+      {
+        "id": "urn:visionflow:linked:story-engagement",
+        "label": "Story Engagement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm",
+      "label": "ACM"
+    },
+    {
+      "slug": "affective-design",
+      "label": "Affective Design"
+    },
+    {
+      "slug": "audio-design",
+      "label": "Audio Design"
+    },
+    {
+      "slug": "emotional-resonance",
+      "label": "Emotional Resonance"
+    },
+    {
+      "slug": "empathetic-connection",
+      "label": "Empathetic Connection"
+    },
+    {
+      "slug": "interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "PresentationLayer"
+    },
+    {
+      "slug": "sensory-feedback",
+      "label": "Sensory Feedback"
+    },
+    {
+      "slug": "story-engagement",
+      "label": "Story Engagement"
+    },
+    {
+      "slug": "user-engagement",
+      "label": "User Engagement"
+    },
+    {
+      "slug": "visual-fidelity",
+      "label": "Visual Fidelity"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "narrative-content",
+      "label": "Narrative Content"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    }
+  ]
+}

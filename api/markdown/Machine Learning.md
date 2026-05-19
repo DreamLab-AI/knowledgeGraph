@@ -1,21 +1,233 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearning
-uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:machine-learning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Machine Learning
-content-hash:: sha256-12-428e0661edb8
-legacy-term-id:: AI-0002
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearning
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning
 public:: true
+
+# Machine Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:411cc8f3aefb1d0684f2a17d9ceb9af18a3cd306df63bdba125acfd948f7ff07",
+  "@type": "Page",
+  "vc:slug": "machine-learning",
+  "title": "Machine Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "decision making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaboration",
+      "vc:label": "collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-space",
+      "vc:label": "latent space"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "machine learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
+      "vc:label": "Overview of Machine Learning Techniques"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telethrone",
+      "vc:label": "Telethrone"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-428e0661edb8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#MachineLearning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0002"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Machine Learning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:machine-learning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:machine-learning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:411cc8f3aefb1d0684f2a17d9ceb9af18a3cd306df63bdba125acfd948f7ff07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:machine-learning",
+  "@type": "OntologyClass",
+  "label": "Machine Learning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:learning-algorithm",
+      "vc:label": "Learning Algorithm"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:411cc8f3aefb1d0684f2a17d9ceb9af18a3cd306df63bdba125acfd948f7ff07"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:411cc8f3aefb1d0684f2a17d9ceb9af18a3cd306df63bdba125acfd948f7ff07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:411cc8f3aefb1d0684f2a17d9ceb9af18a3cd306df63bdba125acfd948f7ff07"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[decision making]]",
+      "resolved": "urn:visionflow:linked:decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[collaboration]]",
+      "resolved": "urn:visionflow:owl:class:collaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[latent space]]",
+      "resolved": "urn:visionflow:owl:class:latent-space",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Overview of Machine Learning Techniques]]",
+      "resolved": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telethrone]]",
+      "resolved": "urn:visionflow:owl:class:telethrone",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:411cc8f3aefb1d0684f2a17d9ceb9af18a3cd306df63bdba125acfd948f7ff07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ### Primary Definition

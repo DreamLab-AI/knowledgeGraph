@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:40d82aa13ba8fa6765dc7fc05465aff283505e13525d5a5398d1cc4d7549cfcb",
+  "title": "Feature Store",
+  "slug": "feature-store",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:feature-store",
+  "domain": "artificial-intelligence",
+  "definition": "Centralized repository for storing, managing, and serving machine learning features, ensuring consistency between training and inference while enabling feature reuse across models.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data-management-ai",
+      "label": "ETSI Domain: Data Management + AI"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

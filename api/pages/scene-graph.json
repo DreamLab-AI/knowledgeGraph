@@ -1,0 +1,231 @@
+{
+  "id": "urn:visionflow:page:67ad4d9f6651fca18d524de8b9ede795e1102f2b0692cd99ce3beaee582da3d3",
+  "title": "Scene Graph",
+  "slug": "scene-graph",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scene-graph",
+  "domain": "spatial-computing",
+  "definition": "A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-node",
+        "label": "Camera Node"
+      },
+      {
+        "id": "urn:visionflow:linked:geometry-node",
+        "label": "Geometry Node"
+      },
+      {
+        "id": "urn:visionflow:linked:group-node",
+        "label": "Group Node"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-node",
+        "label": "Scene Node"
+      },
+      {
+        "id": "urn:visionflow:linked:transform-node",
+        "label": "Transform Node"
+      },
+      {
+        "id": "urn:visionflow:owl:class:light-node",
+        "label": "Light Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "id": "urn:visionflow:linked:transform-matrix",
+        "label": "Transform Matrix"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-index",
+        "label": "Spatial Index"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-rendering",
+        "label": "Scene Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-queries",
+        "label": "Spatial Queries"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "bounding-volume",
+      "label": "Bounding Volume"
+    },
+    {
+      "slug": "camera-node",
+      "label": "Camera Node"
+    },
+    {
+      "slug": "frustum-culling",
+      "label": "Frustum Culling"
+    },
+    {
+      "slug": "geometry-node",
+      "label": "Geometry Node"
+    },
+    {
+      "slug": "group-node",
+      "label": "Group Node"
+    },
+    {
+      "slug": "iso-iec-19775-2",
+      "label": "ISO/IEC 19775-2"
+    },
+    {
+      "slug": "scene-node",
+      "label": "Scene Node"
+    },
+    {
+      "slug": "scene-rendering",
+      "label": "Scene Rendering"
+    },
+    {
+      "slug": "transform-matrix",
+      "label": "Transform Matrix"
+    },
+    {
+      "slug": "transform-node",
+      "label": "Transform Node"
+    },
+    {
+      "slug": "web3-d",
+      "label": "Web3D"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "coordinate-system",
+      "label": "Coordinate System"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "light-node",
+      "label": "Light Node"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    },
+    {
+      "slug": "spatial-queries",
+      "label": "Spatial Queries"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

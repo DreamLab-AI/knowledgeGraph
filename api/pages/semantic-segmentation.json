@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3",
+  "title": "Semantic Segmentation",
+  "slug": "semantic-segmentation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:semantic-segmentation",
+  "domain": "artificial-intelligence",
+  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "costigan2018world",
+      "label": "costigan2018world"
+    },
+    {
+      "slug": "solid-lite",
+      "label": "Solid-Lite"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    },
+    {
+      "slug": "panoptic-segmentation",
+      "label": "Panoptic Segmentation"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "semanticWeb"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "panoptic-segmentation",
+      "label": "Panoptic Segmentation"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

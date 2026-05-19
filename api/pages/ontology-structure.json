@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:f30ae378c8f55bae14721651e5e15a96af9567d3a79e3a3f211a2598d2a514b0",
+  "title": "Ontology Structure",
+  "slug": "ontology-structure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ontology-structure",
+  "domain": "spatial-computing",
+  "definition": "Ontology Structure is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "owl-class-hierarchy",
+      "label": "OWL Class Hierarchy"
+    }
+  ]
+}

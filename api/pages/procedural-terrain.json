@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:6d7ac3da279b99e0f3b5014c3f796c7171a58dbef7e87427208ab51ed5e74567",
+  "title": "Procedural Terrain",
+  "slug": "procedural-terrain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:procedural-terrain",
+  "domain": "spatial-computing",
+  "definition": "ProceduralTerrain is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

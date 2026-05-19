@@ -1,21 +1,335 @@
-iri:: http://narrativegoldmine.com/metaverse#AIOperator
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-operator
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-operator
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Operator
-content-hash:: sha256-12-dd7dc81914d3
-legacy-term-id:: AI-0098
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIOperator
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-operator
 public:: true
+
+# AI Operator
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0",
+  "@type": "Page",
+  "vc:slug": "ai-operator",
+  "title": "AI Operator",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:competence",
+      "vc:label": "Competence"
+    },
+    {
+      "@id": "urn:visionflow:linked:competence-development",
+      "vc:label": "competence development"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:ongoing-support",
+      "vc:label": "ongoing support"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-deployment",
+      "vc:label": "AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-monitoring",
+      "vc:label": "AI Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-provider",
+      "vc:label": "AI Provider"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-user",
+      "vc:label": "AI User"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-in-the-loop",
+      "vc:label": "Human in the Loop"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "Training"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dd7dc81914d3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIOperator"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0098"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Operator"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-operator"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-operator"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-operator",
+  "@type": "OntologyClass",
+  "label": "AI Operator",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-deployment",
+      "vc:label": "AI Deployment"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordinating maintenance, exercising human oversight, and ensuring the AI system operates safely, effectively, and in accordance with established policies, procedures, and regulatory requirements within specific operational contexts.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:competence-development",
+      "vc:label": "competence development"
+    },
+    {
+      "@id": "urn:visionflow:linked:ongoing-support",
+      "vc:label": "ongoing support"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "Training"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-operator:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Competence]]",
+      "resolved": "urn:visionflow:linked:competence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[competence development]]",
+      "resolved": "urn:visionflow:linked:competence-development",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ongoing support]]",
+      "resolved": "urn:visionflow:linked:ongoing-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Deployment]]",
+      "resolved": "urn:visionflow:owl:class:ai-deployment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Monitoring]]",
+      "resolved": "urn:visionflow:owl:class:ai-monitoring",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Provider]]",
+      "resolved": "urn:visionflow:owl:class:ai-provider",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI User]]",
+      "resolved": "urn:visionflow:owl:class:ai-user",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human in the Loop]]",
+      "resolved": "urn:visionflow:owl:class:human-in-the-loop",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Oversight]]",
+      "resolved": "urn:visionflow:owl:class:human-oversight",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training]]",
+      "resolved": "urn:visionflow:owl:class:training",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordinating maintenance, exercising human oversight, and ensuring the AI system operates safely, effectively, and in accordance with established policies, procedures, and regulatory requirements within specific operational contexts.
@@ -251,7 +565,7 @@ public:: true
 		  - [[AI Provider]]
 		  - [[AI User]]
 		  - [[Human Oversight]]
-		  - [[Human-in-the-Loop]]
+		  - [[Human in the Loop]]
 		  - [[AI Governance]]
 		  - [[AI Monitoring]]
 		  - [[AI Deployment]]

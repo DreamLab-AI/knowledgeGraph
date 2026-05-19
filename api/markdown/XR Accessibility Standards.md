@@ -1,0 +1,240 @@
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#XRAccessibilityStandards
+legacy_uri:: urn:visionclaw:concept:spatial-computing:xr-accessibility-standards
+public:: true
+
+# XR Accessibility Standards
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e",
+  "@type": "Page",
+  "vc:slug": "xr-accessibility-standards",
+  "title": "XR Accessibility Standards",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:accessibility",
+      "vc:label": "Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b4a9c587af68"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#XRAccessibilityStandards"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9002"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "XR Accessibility Standards"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:xr-accessibility-standards"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:xr-accessibility-standards"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:xr-accessibility-standards",
+  "@type": "OntologyClass",
+  "label": "XR Accessibility Standards",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:accessibility",
+      "vc:label": "Accessibility"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:xr-accessibility-standards:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Accessibility]]",
+      "resolved": "urn:visionflow:owl:class:accessibility",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:XrAccessibilityStandards
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Accessibility]]
+
+- ### Content
+
+  - ## Overview
+  - XR accessibility standards address the unique challenges of making immersive technologies usable for people with disabilities. The W3C's XR Accessibility User Requirements (XAUR) is published by the Research Questions Task Force and acknowledged by the European Committee for Standardisation as an appropriate starting point. WCAG 3.0 expands to address XR technologies, though mapping traditional WCAG to XR interfaces presents challenges.
+  - ## Technical Details
+  - ### Key Standards
+		- **W3C XAUR**: XR Accessibility User Requirements from APA Working Group
+		- **WCAG 3.0**: Expanded accessibility guidelines including XR
+		- **EN 301 549**: European standard for ICT accessibility
+		- **ISO 9241-171**: Guidance on software accessibility
+  - ### Accessibility Considerations
+		- **Input Flexibility**: Multiple input methods beyond motion controllers
+		- **Physical Position**: Not requiring standing or specific body positions
+		- **Visual Alternatives**: Audio descriptions and haptic feedback
+		- **Cognitive Support**: Safe learning environments for social skills
+  - ### Assistive Technologies
+		- **WalkinVR Driver**: Adapts VR to user motion capabilities
+		- **Screen Readers**: For menu and UI accessibility
+		- **Eye Tracking**: Gaze-based selection alternatives
+		- **Adaptive Controllers**: Support for alternative input devices
+  - ## Applications
+  - Accessible VR game development
+  - Inclusive metaverse platform design
+  - Enterprise XR training accessibility
+  - Therapeutic VR for cognitive disabilities
+  - Educational VR accessibility compliance
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

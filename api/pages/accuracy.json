@@ -1,0 +1,160 @@
+{
+  "id": "urn:visionflow:page:ad90933ecc79efb68a9fc0640d30a6d6ededecf5d8c9edc7295c116862291178",
+  "title": "Accuracy",
+  "slug": "accuracy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accuracy",
+  "domain": "artificial-intelligence",
+  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate measure of overall model correctness but potentially obscuring performance disparities across classes, particularly in datasets with imbalanced class distributions or asymmetric misclassification costs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "balanced-accuracy",
+      "label": "Balanced Accuracy"
+    },
+    {
+      "slug": "documentation",
+      "label": "documentation"
+    },
+    {
+      "slug": "iso-iec-25024",
+      "label": "ISO/IEC 25024"
+    },
+    {
+      "slug": "iso-iec-25059",
+      "label": "ISO/IEC 25059"
+    },
+    {
+      "slug": "modeling",
+      "label": "modeling"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "organisation",
+      "label": "organisation"
+    },
+    {
+      "slug": "performance",
+      "label": "performance"
+    },
+    {
+      "slug": "research",
+      "label": "research"
+    },
+    {
+      "slug": "sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "slug": "specificity",
+      "label": "Specificity"
+    },
+    {
+      "slug": "user-experience",
+      "label": "user experience"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "training",
+      "label": "training"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "boosting",
+      "label": "Boosting"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ]
+}

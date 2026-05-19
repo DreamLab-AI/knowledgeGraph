@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:19078920110dbda15b21b5faa1bc6cb08e7c01d1ebbe888ca50b0c4996b619c5",
+  "title": "Governance Architecture",
+  "slug": "governance-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:governance-architecture",
+  "domain": "artificial-intelligence",
+  "definition": "The structural framework defining decision-making processes, authority distribution, and rule enforcement mechanisms within metaverse platforms, encompassing both centralised corporate governance models and decentralised blockchain-based systems using DAOs and smart contracts for community-driven management.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:platform-governance",
+      "label": "Platform Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-decision-making",
+        "label": "Decentralised Decision Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-decision-making",
+      "label": "Decentralised Decision Making"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "platform-governance",
+      "label": "Platform Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ethics-and-law-layer",
+      "label": "Ethics & Law Layer"
+    },
+    {
+      "slug": "governance-board",
+      "label": "Governance Board"
+    }
+  ]
+}

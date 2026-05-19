@@ -1,0 +1,748 @@
+{
+  "id": "urn:visionflow:page:6e2ff6d04be6800fc11a4d03a1770104e6dfd2c57f5b57dbe5fb4575c0f361d5",
+  "title": "Ethical Sourcing",
+  "slug": "ethical-sourcing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ethical-sourcing",
+  "domain": "blockchain",
+  "definition": "**Ethical Sourcing** is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards \u2014 operationalised through codified frameworks (**[[ISO 20400]]:2017** sustainable procurement, **[[SA8000]]** Social Accountability International, **[[UN Global Compact]]** ten principles, **[[ILO Core Labour Standards]]** eight fundamental Conventions on forced labour, child labour, freedom of association and discrimination, **[[OECD Guidelines for Multinational Enterprises]]**, **[[OECD Due Diligence Guidance for Responsible Mineral Supply Chains]]** five-step framework for 3TG and cobalt), enforced through a rapidly expanding mandatory-disclosure and due-diligence regulatory stack (**[[UK Modern Slavery Act 2015]]** Section 54 transparency statements for \u00a336M+ turnover entities, **[[California SB 657]]** Transparency in Supply Chains Act 2010, **[[Dodd-Frank Section 1502]]** conflict mineral disclosure for SEC filers, **[[EU Conflict Minerals Regulation 2017/821]]** mandatory due diligence for tin/tantalum/tungsten/gold importers sin",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:corporate-social-responsibility",
+      "label": "Corporate Social Responsibility"
+    },
+    {
+      "id": "urn:visionflow:linked:human-rights-due-diligence",
+      "label": "Human Rights Due Diligence"
+    },
+    {
+      "id": "urn:visionflow:linked:responsible-business-conduct",
+      "label": "Responsible Business Conduct"
+    },
+    {
+      "id": "urn:visionflow:linked:supply-chain-governance",
+      "label": "Supply Chain Governance"
+    },
+    {
+      "id": "urn:visionflow:linked:sustainable-procurement",
+      "label": "Sustainable Procurement"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:grievance-mechanism",
+        "label": "Grievance Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:remediation-plan",
+        "label": "Remediation Plan"
+      },
+      {
+        "id": "urn:visionflow:linked:supplier-audit",
+        "label": "Supplier Audit"
+      },
+      {
+        "id": "urn:visionflow:linked:supplier-code-of-conduct",
+        "label": "Supplier Code of Conduct"
+      },
+      {
+        "id": "urn:visionflow:linked:third-party-certification",
+        "label": "Third-Party Certification"
+      },
+      {
+        "id": "urn:visionflow:linked:transparency-statement",
+        "label": "Transparency Statement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:supplier-identification",
+        "label": "Supplier Identification"
+      },
+      {
+        "id": "urn:visionflow:linked:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:visionflow:linked:third-party-audit",
+        "label": "Third-Party Audit"
+      },
+      {
+        "id": "urn:visionflow:linked:worker-voice-mechanism",
+        "label": "Worker Voice Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:child-labour-prevention",
+        "label": "Child Labour Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:conflict-free-minerals",
+        "label": "Conflict-Free Minerals"
+      },
+      {
+        "id": "urn:visionflow:linked:consumer-trust",
+        "label": "Consumer Trust"
+      },
+      {
+        "id": "urn:visionflow:linked:deforestation-free-commodities",
+        "label": "Deforestation-Free Commodities"
+      },
+      {
+        "id": "urn:visionflow:linked:living-wage",
+        "label": "Living Wage"
+      },
+      {
+        "id": "urn:visionflow:linked:modern-slavery-eradication",
+        "label": "Modern Slavery Eradication"
+      },
+      {
+        "id": "urn:visionflow:linked:premium-pricing",
+        "label": "Premium Pricing"
+      },
+      {
+        "id": "urn:visionflow:linked:worker-rights",
+        "label": "Worker Rights"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ilo-core-labour-standards",
+        "label": "ILO Core Labour Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-20400",
+        "label": "ISO 20400"
+      },
+      {
+        "id": "urn:visionflow:linked:oecd-due-diligence-guidance",
+        "label": "OECD Due Diligence Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:sa8000",
+        "label": "SA8000"
+      },
+      {
+        "id": "urn:visionflow:linked:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:visionflow:linked:un-guiding-principles-on-business-and-human-rights",
+        "label": "UN Guiding Principles on Business and Human Rights"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-risk-scoring",
+      "label": "AI Risk Scoring"
+    },
+    {
+      "slug": "amnesty-international-2016-this-is-what-we-die-for-cobalt-drc",
+      "label": "Amnesty International 2016 This Is What We Die For Cobalt DRC"
+    },
+    {
+      "slug": "apple-2024-supplier-responsibility-annual-report-18th-edition",
+      "label": "Apple 2024 Supplier Responsibility Annual Report 18th Edition"
+    },
+    {
+      "slug": "apple-supplier-responsibility",
+      "label": "Apple Supplier Responsibility"
+    },
+    {
+      "slug": "audit-capacity",
+      "label": "Audit Capacity"
+    },
+    {
+      "slug": "australian-modern-slavery-act-2018",
+      "label": "Australian Modern Slavery Act 2018"
+    },
+    {
+      "slug": "bangladesh-accord",
+      "label": "Bangladesh Accord"
+    },
+    {
+      "slug": "barrientos-2019-gender-and-work-in-global-value-chains",
+      "label": "Barrientos 2019 Gender and Work in Global Value Chains"
+    },
+    {
+      "slug": "bhrrc-2024-modern-slavery-statements-review",
+      "label": "BHRRC 2024 Modern Slavery Statements Review"
+    },
+    {
+      "slug": "biodiversity-conservation",
+      "label": "Biodiversity Conservation"
+    },
+    {
+      "slug": "blockchain-provenance",
+      "label": "Blockchain Provenance"
+    },
+    {
+      "slug": "california-sb-657",
+      "label": "California SB 657"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-and-sustainable-finance-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset and Sustainable Finance Benchmarking Study"
+    },
+    {
+      "slug": "certification-infrastructure",
+      "label": "Certification Infrastructure"
+    },
+    {
+      "slug": "certification-layer",
+      "label": "CertificationLayer"
+    },
+    {
+      "slug": "chain-of-custody",
+      "label": "Chain of Custody"
+    },
+    {
+      "slug": "child-labour-prevention",
+      "label": "Child Labour Prevention"
+    },
+    {
+      "slug": "circulor",
+      "label": "Circulor"
+    },
+    {
+      "slug": "civil-society-oversight",
+      "label": "Civil Society Oversight"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "conflict-free-minerals",
+      "label": "Conflict-Free Minerals"
+    },
+    {
+      "slug": "conflict-minerals",
+      "label": "Conflict Minerals"
+    },
+    {
+      "slug": "consumer-trust",
+      "label": "Consumer Trust"
+    },
+    {
+      "slug": "corporate-governance-domain",
+      "label": "CorporateGovernanceDomain"
+    },
+    {
+      "slug": "corporate-philanthropy",
+      "label": "Corporate Philanthropy"
+    },
+    {
+      "slug": "corporate-social-responsibility",
+      "label": "Corporate Social Responsibility"
+    },
+    {
+      "slug": "crane-le-baron-allain-behbahani-2019-governance-gaps",
+      "label": "Crane LeBaron Allain Behbahani 2019 Governance Gaps"
+    },
+    {
+      "slug": "csddd",
+      "label": "CSDDD"
+    },
+    {
+      "slug": "datamaran",
+      "label": "Datamaran"
+    },
+    {
+      "slug": "deforestation-free-commodities",
+      "label": "Deforestation-Free Commodities"
+    },
+    {
+      "slug": "dodd-frank-section-1502",
+      "label": "Dodd-Frank Section 1502"
+    },
+    {
+      "slug": "esg",
+      "label": "ESG"
+    },
+    {
+      "slug": "esg-investing",
+      "label": "ESG Investing"
+    },
+    {
+      "slug": "esgdomain",
+      "label": "ESGDomain"
+    },
+    {
+      "slug": "eti-2024-annual-impact-report",
+      "label": "ETI 2024 Annual Impact Report"
+    },
+    {
+      "slug": "eu-battery-regulation",
+      "label": "EU Battery Regulation"
+    },
+    {
+      "slug": "eu-conflict-minerals-regulation-2017-821",
+      "label": "EU Conflict Minerals Regulation 2017/821"
+    },
+    {
+      "slug": "eu-corporate-sustainability-due-diligence-directive",
+      "label": "EU Corporate Sustainability Due Diligence Directive"
+    },
+    {
+      "slug": "eu-corporate-sustainability-reporting-directive",
+      "label": "EU Corporate Sustainability Reporting Directive"
+    },
+    {
+      "slug": "eu-csddd",
+      "label": "EU CSDDD"
+    },
+    {
+      "slug": "eu-directive-2024-1760-csddd",
+      "label": "EU Directive 2024-1760 CSDDD"
+    },
+    {
+      "slug": "eu-forced-labour-regulation",
+      "label": "EU Forced Labour Regulation"
+    },
+    {
+      "slug": "eu-regulation-2017-821-conflict-minerals",
+      "label": "EU Regulation 2017-821 Conflict Minerals"
+    },
+    {
+      "slug": "eu-regulation-2024-3015-forced-labour-regulation",
+      "label": "EU Regulation 2024-3015 Forced Labour Regulation"
+    },
+    {
+      "slug": "european-commission-2020-study-on-due-diligence-requirements-through-the-supply-chain",
+      "label": "European Commission 2020 Study on Due Diligence Requirements through the Supply Chain"
+    },
+    {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
+      "slug": "fair-trade",
+      "label": "Fair Trade"
+    },
+    {
+      "slug": "fairtrade-foundation",
+      "label": "Fairtrade Foundation"
+    },
+    {
+      "slug": "fairtrade-international",
+      "label": "Fairtrade International"
+    },
+    {
+      "slug": "fiscal-note",
+      "label": "FiscalNote"
+    },
+    {
+      "slug": "forest-stewardship-council",
+      "label": "Forest Stewardship Council"
+    },
+    {
+      "slug": "gereffi-2018-global-value-chains-and-development",
+      "label": "Gereffi 2018 Global Value Chains and Development"
+    },
+    {
+      "slug": "germany-lk-sg",
+      "label": "Germany LkSG"
+    },
+    {
+      "slug": "germany-lk-sg-2021",
+      "label": "Germany LkSG 2021"
+    },
+    {
+      "slug": "global-forest-watch",
+      "label": "Global Forest Watch"
+    },
+    {
+      "slug": "greenwashing",
+      "label": "Greenwashing"
+    },
+    {
+      "slug": "gri-standards",
+      "label": "GRI Standards"
+    },
+    {
+      "slug": "grievance-mechanism",
+      "label": "Grievance Mechanism"
+    },
+    {
+      "slug": "hofmann-schleper-blome-2018-conflict-minerals-and-supply-chain-due-diligence",
+      "label": "Hofmann Schleper Blome 2018 Conflict Minerals and Supply Chain Due Diligence"
+    },
+    {
+      "slug": "human-rights-domain",
+      "label": "HumanRightsDomain"
+    },
+    {
+      "slug": "human-rights-due-diligence",
+      "label": "Human Rights Due Diligence"
+    },
+    {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
+      "slug": "ilo-core-labour-standards",
+      "label": "ILO Core Labour Standards"
+    },
+    {
+      "slug": "ilo-unicef-2021-child-labour-global-estimates-2020",
+      "label": "ILO UNICEF 2021 Child Labour Global Estimates 2020"
+    },
+    {
+      "slug": "ilo-walk-free-2022-global-estimates-of-modern-slavery",
+      "label": "ILO Walk Free 2022 Global Estimates of Modern Slavery"
+    },
+    {
+      "slug": "independent-anti-slavery-commissioner-2024-annual-report",
+      "label": "Independent Anti-Slavery Commissioner 2024 Annual Report"
+    },
+    {
+      "slug": "indigenous-rights",
+      "label": "Indigenous Rights"
+    },
+    {
+      "slug": "iso-20400",
+      "label": "ISO 20400"
+    },
+    {
+      "slug": "just-transition",
+      "label": "Just Transition"
+    },
+    {
+      "slug": "kharon",
+      "label": "Kharon"
+    },
+    {
+      "slug": "kks-advisors",
+      "label": "KKS Advisors"
+    },
+    {
+      "slug": "le-baron-2020-combatting-modern-slavery",
+      "label": "LeBaron 2020 Combatting Modern Slavery"
+    },
+    {
+      "slug": "le-baron-lister-2015-benchmarking-global-supply-chains",
+      "label": "LeBaron Lister 2015 Benchmarking Global Supply Chains"
+    },
+    {
+      "slug": "living-wage",
+      "label": "Living Wage"
+    },
+    {
+      "slug": "living-wage-campaign",
+      "label": "Living Wage Campaign"
+    },
+    {
+      "slug": "locke-qin-brause-2007-does-monitoring-improve-labor-standards",
+      "label": "Locke Qin Brause 2007 Does Monitoring Improve Labor Standards"
+    },
+    {
+      "slug": "marine-stewardship-council",
+      "label": "Marine Stewardship Council"
+    },
+    {
+      "slug": "minespider",
+      "label": "Minespider"
+    },
+    {
+      "slug": "modern-slavery-act-2015",
+      "label": "Modern Slavery Act 2015"
+    },
+    {
+      "slug": "modern-slavery-eradication",
+      "label": "Modern Slavery Eradication"
+    },
+    {
+      "slug": "multi-stakeholder-initiative",
+      "label": "Multi-Stakeholder Initiative"
+    },
+    {
+      "slug": "murphy-elima-2022-in-broad-daylight-uyghur-forced-labour-solar",
+      "label": "Murphy Elima 2022 In Broad Daylight Uyghur Forced Labour Solar"
+    },
+    {
+      "slug": "net-zero-transition",
+      "label": "Net Zero Transition"
+    },
+    {
+      "slug": "nlp-esg-analysis",
+      "label": "NLP ESG Analysis"
+    },
+    {
+      "slug": "norc-2020-cocoa-child-labour-cote-d-ivoire-ghana",
+      "label": "NORC 2020 Cocoa Child Labour Cote dIvoire Ghana"
+    },
+    {
+      "slug": "norway-transparency-act",
+      "label": "Norway Transparency Act"
+    },
+    {
+      "slug": "oecd-2018-due-diligence-guidance-for-responsible-business-conduct",
+      "label": "OECD 2018 Due Diligence Guidance for Responsible Business Conduct"
+    },
+    {
+      "slug": "oecd-2023-due-diligence-guidance-for-responsible-mineral-supply-chains-4th-edition",
+      "label": "OECD 2023 Due Diligence Guidance for Responsible Mineral Supply Chains 4th Edition"
+    },
+    {
+      "slug": "oecd-2023-guidelines-for-multinational-enterprises",
+      "label": "OECD 2023 Guidelines for Multinational Enterprises"
+    },
+    {
+      "slug": "oecd-due-diligence-guidance",
+      "label": "OECD Due Diligence Guidance"
+    },
+    {
+      "slug": "oecd-due-diligence-guidance-for-responsible-business-conduct",
+      "label": "OECD Due Diligence Guidance for Responsible Business Conduct"
+    },
+    {
+      "slug": "oecd-due-diligence-guidance-for-responsible-mineral-supply-chains",
+      "label": "OECD Due Diligence Guidance for Responsible Mineral Supply Chains"
+    },
+    {
+      "slug": "oecd-guidelines-for-multinational-enterprises",
+      "label": "OECD Guidelines for Multinational Enterprises"
+    },
+    {
+      "slug": "open-food-network",
+      "label": "Open Food Network"
+    },
+    {
+      "slug": "planet-labs",
+      "label": "Planet Labs"
+    },
+    {
+      "slug": "premium-pricing",
+      "label": "Premium Pricing"
+    },
+    {
+      "slug": "procurement-layer",
+      "label": "ProcurementLayer"
+    },
+    {
+      "slug": "provenance-ltd",
+      "label": "Provenance Ltd"
+    },
+    {
+      "slug": "qr-code-authentication",
+      "label": "QR Code Authentication"
+    },
+    {
+      "slug": "rainforest-alliance",
+      "label": "Rainforest Alliance"
+    },
+    {
+      "slug": "rana-plaza",
+      "label": "Rana Plaza"
+    },
+    {
+      "slug": "remediation-plan",
+      "label": "Remediation Plan"
+    },
+    {
+      "slug": "responsible-business-alliance",
+      "label": "Responsible Business Alliance"
+    },
+    {
+      "slug": "responsible-business-conduct",
+      "label": "Responsible Business Conduct"
+    },
+    {
+      "slug": "responsible-jewellery-council",
+      "label": "Responsible Jewellery Council"
+    },
+    {
+      "slug": "responsible-minerals-initiative",
+      "label": "Responsible Minerals Initiative"
+    },
+    {
+      "slug": "roundtable-on-sustainable-palm-oil",
+      "label": "Roundtable on Sustainable Palm Oil"
+    },
+    {
+      "slug": "ruggie-2011-un-guiding-principles-on-business-and-human-rights",
+      "label": "Ruggie 2011 UN Guiding Principles on Business and Human Rights"
+    },
+    {
+      "slug": "ruggie-2013-just-business",
+      "label": "Ruggie 2013 Just Business"
+    },
+    {
+      "slug": "sa8000",
+      "label": "SA8000"
+    },
+    {
+      "slug": "satellite-monitoring",
+      "label": "Satellite Monitoring"
+    },
+    {
+      "slug": "sayari-graph",
+      "label": "Sayari Graph"
+    },
+    {
+      "slug": "somo",
+      "label": "SOMO"
+    },
+    {
+      "slug": "stakeholder-engagement",
+      "label": "Stakeholder Engagement"
+    },
+    {
+      "slug": "supplier-audit",
+      "label": "Supplier Audit"
+    },
+    {
+      "slug": "supplier-code-of-conduct",
+      "label": "Supplier Code of Conduct"
+    },
+    {
+      "slug": "supplier-data",
+      "label": "Supplier Data"
+    },
+    {
+      "slug": "supplier-identification",
+      "label": "Supplier Identification"
+    },
+    {
+      "slug": "supply-chain-domain",
+      "label": "SupplyChainDomain"
+    },
+    {
+      "slug": "supply-chain-governance",
+      "label": "Supply Chain Governance"
+    },
+    {
+      "slug": "supply-chain-transparency",
+      "label": "Supply Chain Transparency"
+    },
+    {
+      "slug": "sustainable-development-goals",
+      "label": "Sustainable Development Goals"
+    },
+    {
+      "slug": "sustainable-procurement",
+      "label": "Sustainable Procurement"
+    },
+    {
+      "slug": "third-party-audit",
+      "label": "Third-Party Audit"
+    },
+    {
+      "slug": "third-party-certification",
+      "label": "Third-Party Certification"
+    },
+    {
+      "slug": "tier-1-only-sourcing",
+      "label": "Tier-1-Only Sourcing"
+    },
+    {
+      "slug": "tony-s-chocolonely",
+      "label": "Tony's Chocolonely"
+    },
+    {
+      "slug": "traceability-layer",
+      "label": "TraceabilityLayer"
+    },
+    {
+      "slug": "transparency-statement",
+      "label": "Transparency Statement"
+    },
+    {
+      "slug": "truvalue-labs",
+      "label": "Truvalue Labs"
+    },
+    {
+      "slug": "uk-home-office-2024-modern-slavery-statutory-guidance",
+      "label": "UK Home Office 2024 Modern Slavery Statutory Guidance"
+    },
+    {
+      "slug": "uk-modern-slavery-act-2015",
+      "label": "UK Modern Slavery Act 2015"
+    },
+    {
+      "slug": "un-global-compact",
+      "label": "UN Global Compact"
+    },
+    {
+      "slug": "un-guiding-principles-on-business-and-human-rights",
+      "label": "UN Guiding Principles on Business and Human Rights"
+    },
+    {
+      "slug": "unaudited-self-declaration",
+      "label": "Unaudited Self-Declaration"
+    },
+    {
+      "slug": "uyghur-forced-labour",
+      "label": "Uyghur Forced Labour"
+    },
+    {
+      "slug": "worker-rights",
+      "label": "Worker Rights"
+    },
+    {
+      "slug": "worker-voice-mechanism",
+      "label": "Worker Voice Mechanism"
+    },
+    {
+      "slug": "xu-2020-uyghurs-for-sale-aspi",
+      "label": "Xu 2020 Uyghurs for Sale ASPI"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    }
+  ]
+}

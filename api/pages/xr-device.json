@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:99bb71f66007ec69819e3e9d86ac5320e673778a6aef2318aa4264d65d5f66b5",
+  "title": "XR Device",
+  "slug": "xr-device",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-device",
+  "domain": "spatial-computing",
+  "definition": "Hardware equipment designed to create or enhance extended reality experiences, encompassing virtual reality headsets, augmented reality glasses, mixed reality displays, haptic feedback systems, and motion tracking sensors that enable immersive interaction with digital content.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "health-metaverse-application",
+      "label": "Health Metaverse Application"
+    }
+  ]
+}

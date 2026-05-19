@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0",
+  "title": "Newcastle AI & Health Innovation",
+  "slug": "newcastle-ai-and-health-innovation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:newcastle-ai-and-health-innovation",
+  "domain": "artificial-intelligence",
+  "definition": "Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "established",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "north-england-innovation-corridor",
+      "label": "North England Innovation Corridor"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ],
+  "backlinks": []
+}

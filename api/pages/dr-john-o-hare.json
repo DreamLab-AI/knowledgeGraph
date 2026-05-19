@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9127aa6e0d647e96ab3f42c51f0a931df0a3230c85ca3246d17e4845324928e2",
+  "title": "Dr John O'Hare",
+  "slug": "dr-john-o-hare",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dr-john-o-hare",
+  "domain": "infrastructure",
+  "definition": "Dr John O'Hare is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

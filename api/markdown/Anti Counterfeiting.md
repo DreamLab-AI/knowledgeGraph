@@ -1,21 +1,276 @@
-iri:: http://narrativegoldmine.com/blockchain#AntiCounterfeiting
-uri:: urn:visionclaw:concept:blockchain:anti-counterfeiting
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:anti-counterfeiting
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Anti Counterfeiting
-content-hash:: sha256-12-466974b27195
-legacy-term-id:: BC-0447
-status:: complete
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.88
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#AntiCounterfeiting
+legacy_uri:: urn:visionclaw:concept:blockchain:anti-counterfeiting
 public:: true
+
+# Anti Counterfeiting
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0",
+  "@type": "Page",
+  "vc:slug": "anti-counterfeiting",
+  "title": "Anti Counterfeiting",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "vc:label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "vc:label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "vc:label": "BC-0441-provenance-tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "vc:label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0444-luxury-goods-authentication",
+      "vc:label": "BC-0444-luxury-goods-authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0446-supply-chain-traceability",
+      "vc:label": "BC-0446-supply-chain-traceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
+      "vc:label": "BC-0476-aml-kyc-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-20248",
+      "vc:label": "ISO/IEC 20248"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd",
+      "vc:label": "OECD"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.88"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-466974b27195"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#AntiCounterfeiting"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0447"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Anti Counterfeiting"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:anti-counterfeiting"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:anti-counterfeiting"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:anti-counterfeiting",
+  "@type": "OntologyClass",
+  "label": "Anti Counterfeiting",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:supply-chain-blockchain",
+      "vc:label": "Supply Chain Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.88",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:anti-counterfeiting:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0426-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0432-consortium-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0441-provenance-tracking]]",
+      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0442-pharmaceutical-traceability]]",
+      "resolved": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0444-luxury-goods-authentication]]",
+      "resolved": "urn:visionflow:linked:bc-0444-luxury-goods-authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0446-supply-chain-traceability]]",
+      "resolved": "urn:visionflow:linked:bc-0446-supply-chain-traceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0476-aml-kyc-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 20248]]",
+      "resolved": "urn:visionflow:linked:iso-iec-20248",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD]]",
+      "resolved": "urn:visionflow:linked:oecd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.

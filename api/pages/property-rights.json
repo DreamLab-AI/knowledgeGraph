@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:3fab8cdee250d9e42f6fb7d1c9e39244c73de3d9f6b8b01741a36fc42d727087",
+  "title": "Property Rights",
+  "slug": "property-rights",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:property-rights",
+  "domain": "spatial-computing",
+  "definition": "Property Rights is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ]
+}

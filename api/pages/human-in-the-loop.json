@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:6b3f09998bec25381920cf658d6b30024af2c84ef6ef1e8d8265f9393ee3e0ea",
+  "title": "Human in the Loop",
+  "slug": "human-in-the-loop",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-in-the-loop",
+  "domain": "artificial-intelligence",
+  "definition": "A design pattern and operational approach for artificial intelligence systems in which human judgment, decision-making, or validation is integrated as an essential component of the AI system's decision cycle, requiring active human participation at critical points before AI-generated outputs are finalised or actions are executed, thereby ensuring meaningful human control, accountability, and the application of human values and contextual understanding to consequential AI-assisted decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:error-correction",
+        "label": "error correction"
+      },
+      {
+        "id": "urn:visionflow:linked:ethical-alignment",
+        "label": "ethical alignment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automation-bias",
+      "label": "Automation Bias"
+    },
+    {
+      "slug": "decision-support",
+      "label": "Decision Support"
+    },
+    {
+      "slug": "error-correction",
+      "label": "error correction"
+    },
+    {
+      "slug": "ethical-alignment",
+      "label": "ethical alignment"
+    },
+    {
+      "slug": "human-on-the-loop",
+      "label": "Human-on-the-Loop"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "disruption",
+      "label": "Disruption"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    }
+  ]
+}

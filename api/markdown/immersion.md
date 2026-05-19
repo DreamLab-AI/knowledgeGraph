@@ -1,0 +1,18 @@
+- ### Definition
+  - Subjective experience of psychological engagement and sense of presence within a virtual environment, characterized by reduced awareness of physical surroundings and absorption in virtual context.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Immersion
+  - owl-role:: Process
+  - owl-inferred:: spatial-computing:VirtualProcess
+  - belongs-to-domain:: [[InteractionDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]], [[PresentationLayer]]
+- ### Relationships
+  - has-part:: [[Sensory Immersion]], [[Emotional Immersion]], [[Cognitive Immersion]]
+  - requires:: [[Display Technology]], [[Interaction Mechanism]], [[Content Quality]]
+  - enables:: [[Presence]], [[Flow State]], [[User Engagement]]
+  - depends-on:: [[Visual Fidelity]], [[Audio Spatialization]], [[Haptic Feedback]]
+- ### Content
+  Immersion — content pending enrichment.
+- ### Provenance
+  - sources:: [[ACM]]
+  - migration-date:: 2026-04-26T00:00:00Z

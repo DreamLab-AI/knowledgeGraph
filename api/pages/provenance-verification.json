@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:f9d61e911d37f4dcf82f90a7156a2f76f2568b870e1548817d7b939ec927b87a",
+  "title": "Provenance Verification",
+  "slug": "provenance-verification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:provenance-verification",
+  "domain": "spatial-computing",
+  "definition": "Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:authenticity-checking",
+        "label": "Authenticity Checking"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-custody-tracking",
+        "label": "Chain of Custody Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:ledger-record-verification",
+        "label": "Ledger Record Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:metadata-validation",
+        "label": "Metadata Validation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-authentication",
+        "label": "Asset Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-auditing",
+        "label": "Compliance Auditing"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-validation",
+        "label": "Ownership Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-establishment",
+        "label": "Trust Establishment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-authentication",
+      "label": "Asset Authentication"
+    },
+    {
+      "slug": "authenticity-checking",
+      "label": "Authenticity Checking"
+    },
+    {
+      "slug": "chain-of-custody-tracking",
+      "label": "Chain of Custody Tracking"
+    },
+    {
+      "slug": "compliance-auditing",
+      "label": "Compliance Auditing"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "iso-19115",
+      "label": "ISO 19115"
+    },
+    {
+      "slug": "ledger-record-verification",
+      "label": "Ledger Record Verification"
+    },
+    {
+      "slug": "metadata-validation",
+      "label": "Metadata Validation"
+    },
+    {
+      "slug": "ownership-validation",
+      "label": "Ownership Validation"
+    },
+    {
+      "slug": "timestamp-authority",
+      "label": "Timestamp Authority"
+    },
+    {
+      "slug": "trust-establishment",
+      "label": "Trust Establishment"
+    },
+    {
+      "slug": "w3-c-prov-o",
+      "label": "W3C PROV-O"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptographic-verification",
+      "label": "Cryptographic Verification"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

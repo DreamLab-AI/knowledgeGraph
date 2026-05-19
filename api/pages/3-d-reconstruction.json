@@ -1,0 +1,154 @@
+{
+  "id": "urn:visionflow:page:45c99e53e3a503b2c170936a5b97d46f4c73c5007d0b6eb74d4a0e7a7513bd86",
+  "title": "3D Reconstruction",
+  "slug": "3-d-reconstruction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-d-reconstruction",
+  "domain": "spatial-computing",
+  "definition": "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including [[Computer Vision]], photogrammetry, and Structure-from-Motion (SfM). This technology enables digital capture of real-world objects and environments for [[Digital Twin]] creation and immersive environment mapping.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:environmental-mapping",
+        "label": "Environmental Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-world-digitisation",
+        "label": "Real-world Digitisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "environmental-mapping",
+      "label": "Environmental Mapping"
+    },
+    {
+      "slug": "feature-matching",
+      "label": "Feature Matching"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "slug": "point-cloud-generation",
+      "label": "Point Cloud Generation"
+    },
+    {
+      "slug": "real-world-digitisation",
+      "label": "Real-world Digitisation"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure-from-Motion"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "spatial-mesh",
+      "label": "Spatial Mesh"
+    }
+  ]
+}

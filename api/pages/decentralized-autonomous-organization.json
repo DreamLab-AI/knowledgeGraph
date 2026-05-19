@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:991330d20554dbb3ac80ac05ada362e40c4d844c57e226a9224e6c52e2dbcdb0",
+  "title": "Decentralized Autonomous Organization",
+  "slug": "decentralized-autonomous-organization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralized-autonomous-organization",
+  "domain": "blockchain",
+  "definition": "An organisational entity operating through [[Smart Contracts]], [[Distributed Governance]], and community voting mechanisms without centralised authority or hierarchical control. Decentralised Autonomous Organisations enable transparent resource allocation, democratic decision-making, and distributed treasury management at global scale.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0142-smart-contract",
+      "label": "BC-0142-smart-contract"
+    },
+    {
+      "slug": "bc-0201-decentralization",
+      "label": "BC-0201-decentralization"
+    },
+    {
+      "slug": "bc-0462-on-chain-voting",
+      "label": "BC-0462-on-chain-voting"
+    },
+    {
+      "slug": "bc-0463-governance-token",
+      "label": "BC-0463-governance-token"
+    },
+    {
+      "slug": "bc-0464-treasury-management",
+      "label": "BC-0464-treasury-management"
+    },
+    {
+      "slug": "bc-0465-proposal-system",
+      "label": "BC-0465-proposal-system"
+    },
+    {
+      "slug": "distributed-governance",
+      "label": "Distributed Governance"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

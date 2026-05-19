@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:f30bf90450bbd9e2b9f1a84e9b05bffb74a56d5320fd22677256524cceb1cff5",
+  "title": "FPGA",
+  "slug": "fpga",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fpga",
+  "domain": "artificial-intelligence",
+  "definition": "FPGA is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:inference-hardware",
+      "label": "Inference Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:custom-neural-architectures",
+        "label": "Custom Neural Architectures"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "custom-neural-architectures",
+      "label": "Custom Neural Architectures"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "inference-hardware",
+      "label": "Inference Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

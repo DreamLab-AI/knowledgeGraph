@@ -1,0 +1,215 @@
+{
+  "id": "urn:visionflow:page:1706cba0f698ab95f60e9628454030a6803768a04dc93bed1ed3c23a3e262e4b",
+  "title": "ETSI_Domain_Virtual_Economy",
+  "slug": "etsi-domain-virtual-economy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-virtual-economy",
+  "domain": "spatial-computing",
+  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets]] including [[DigitalGoods]], [[NFT|NFTs]], and [[VirtualAsset|virtual assets]]. Virtual economy infrastructure coordinates [[DecentralizedExchange|decentralised exchanges]], [[CreatorEconomy|creator economy]] mechanisms enabling direct creator-audience relationships, [[CreatorRoyaltyToken|creator royalty tokens]] automating compensation, and emerging [[CarbonCreditToken|carbon credit tokenisation]] for environmental accounting. Standards development addresses [[VirtualEconomy|virtual economy]] integration with traditional finance, regulatory compliance for tokenised assets, taxation frameworks for cross-border virtual transactions, and mechanisms ensuring sustainable economic value creation within persistent virtual worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "carbon-credit-token",
+      "label": "CarbonCreditToken"
+    },
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "CentralBankDigitalCurrency"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "CreatorEconomy"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "CreatorRoyaltyToken"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "CryptoToken"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "DecentralizedExchange"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "DigitalAsset"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "DigitalGoods"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    },
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "nft-renting",
+      "label": "NFT Renting"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "nft-wrapping",
+      "label": "NFT Wrapping"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "royalty-mechanism",
+      "label": "Royalty Mechanism"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    },
+    {
+      "slug": "smart-royalty-contract",
+      "label": "Smart Royalty Contract"
+    },
+    {
+      "slug": "social-token-economy",
+      "label": "Social Token Economy"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "token-bonding-curve",
+      "label": "Token Bonding Curve"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "VirtualAsset"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "VirtualEconomy"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,21 +1,270 @@
-iri:: http://narrativegoldmine.com/blockchain#RandomNumberGeneration
-uri:: urn:visionclaw:concept:blockchain:random-number-generation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:random-number-generation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Random Number Generation
-content-hash:: sha256-12-e7624fcde5f7
-legacy-term-id:: BC-8014
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#RandomNumberGeneration
+legacy_uri:: urn:visionclaw:concept:blockchain:random-number-generation
 public:: true
+
+# Random Number Generation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca",
+  "@type": "Page",
+  "vc:slug": "random-number-generation",
+  "title": "Random Number Generation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:commitment-scheme",
+      "vc:label": "Commitment Scheme"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-random-function",
+      "vc:label": "Verifiable Random Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asymmetric-encryption",
+      "vc:label": "Asymmetric Encryption"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
+      "vc:label": "Cryptographic Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:key-derivation-function",
+      "vc:label": "Key Derivation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "vc:label": "Zero-Knowledge Proof"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e7624fcde5f7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#RandomNumberGeneration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8014"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Random Number Generation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:random-number-generation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:random-number-generation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:random-number-generation",
+  "@type": "OntologyClass",
+  "label": "Random Number Generation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from deterministic algorithms seeded with entropy.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:asymmetric-encryption",
+      "vc:label": "Asymmetric Encryption"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:verifiable-random-function",
+      "vc:label": "Verifiable Random Function"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash Function"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:random-number-generation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Commitment Scheme]]",
+      "resolved": "urn:visionflow:linked:commitment-scheme",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verifiable Random Function]]",
+      "resolved": "urn:visionflow:linked:verifiable-random-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asymmetric Encryption]]",
+      "resolved": "urn:visionflow:owl:class:asymmetric-encryption",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptographic Protocol]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hash Function]]",
+      "resolved": "urn:visionflow:owl:class:hash-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Key Derivation Function]]",
+      "resolved": "urn:visionflow:owl:class:key-derivation-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Zero-Knowledge Proof]]",
+      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from deterministic algorithms seeded with entropy.

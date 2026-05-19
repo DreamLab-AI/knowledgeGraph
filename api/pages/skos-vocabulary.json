@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:e389cdf30dee4a4a1d9475cfd035769d53c2373f744d52417a3e4493f1701743",
+  "title": "Skos Vocabulary",
+  "slug": "skos-vocabulary",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:skos-vocabulary",
+  "domain": "spatial-computing",
+  "definition": "A W3C recommendation providing an RDF-based data model for representing thesauri, taxonomies, classification schemes, and other structured controlled vocabularies, enabling publication and linking of knowledge organization systems on the semantic web through standardized concepts and relationships.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-organization-system",
+      "label": "Knowledge Organization System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:linked-vocabulary-publishing",
+        "label": "Linked Vocabulary Publishing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "linked-vocabulary-publishing",
+      "label": "Linked Vocabulary Publishing"
+    },
+    {
+      "slug": "knowledge-organization-system",
+      "label": "Knowledge Organization System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "glossary-index",
+      "label": "Glossary Index"
+    },
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    }
+  ]
+}

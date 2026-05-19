@@ -1,20 +1,221 @@
-iri:: http://narrativegoldmine.com/infrastructure#PoliticsLawPrivacy
-uri:: urn:visionclaw:concept:infrastructure:politics-law-privacy
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:politics-law-privacy
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Politics, Law, Privacy
-content-hash:: sha256-12-dcca66d121d1
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#PoliticsLawPrivacy
+legacy_uri:: urn:visionclaw:concept:infrastructure:politics-law-privacy
 public:: true
+
+# Politics, Law, Privacy
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3",
+  "@type": "Page",
+  "vc:slug": "politics-law-privacy",
+  "title": "Politics, Law, Privacy",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:pol",
+      "vc:label": "pol"
+    },
+    {
+      "@id": "urn:visionflow:linked:presentation",
+      "vc:label": "presentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:copyright",
+      "vc:label": "copyright"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-safety",
+      "vc:label": "Trust and Safety"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dcca66d121d1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#PoliticsLawPrivacy"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Politics, Law, Privacy"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:politics-law-privacy"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:politics-law-privacy"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:politics-law-privacy",
+  "@type": "OntologyClass",
+  "label": "Politics, Law, Privacy",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Politics, Law, Privacy is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:politics-law-privacy:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[pol]]",
+      "resolved": "urn:visionflow:linked:pol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[presentation]]",
+      "resolved": "urn:visionflow:linked:presentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[copyright]]",
+      "resolved": "urn:visionflow:owl:class:copyright",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust and Safety]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-safety",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Politics, Law, Privacy is a concept within the ngm domain.
@@ -71,7 +272,7 @@ public:: true
   - AI is already starting to be used in crime detection, crime prediction, and the data brokered by these tech behemoths is already making mistakes. [My chilling run-in with secretive facial-recognition app Clearview AI (telegraph.co.uk)](https://www.telegraph.co.uk/books/non-fiction/clearview-ai-facial-recognition-app-chilling/)
   - As AI increasingly bakes in these data points into ever larger scraped datasets it will be impossible to unwind one's personal history.
   - This too will increasingly be done by AI. We are trending toward AI fighting with AI over your data and the minutiae of your history in ever changing local and global political environments
-  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Privacy, Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Privacy, Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
+  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
   - # Global politics
   This currently borrows heavily from [the AI breakdown podcast](https://www.youtube.com/watch?v=5clOHBo8HP8), is an AI generated placeholder, and needs considerably more more.
   The examination of AI's implications on societal structures should undoubtedly receive the necessary attention. Soros's language and perception of reality seem particularly interesting, especially in the era of AI. He emphasizes his belief in reality and its importance in providing moral guidance, a concept that seems increasingly challenged in the age of AI.

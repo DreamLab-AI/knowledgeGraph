@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:aa9f40469a0948163be220c1a7a811a1743619c3681994868796f2b0b894929b",
+  "title": "RB 1016 pathplanning",
+  "slug": "rb-1016-pathplanning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-1016-pathplanning",
+  "domain": "robotics",
+  "definition": "R B 1016 pathplanning is a concept within the robotics domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

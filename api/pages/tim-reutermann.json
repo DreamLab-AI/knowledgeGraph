@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:89bdc6e0521593e355ed99a1e75b36122353aaf541987ffef19fa070b48ba8dc",
+  "title": "Tim Reutermann",
+  "slug": "tim-reutermann",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tim-reutermann",
+  "domain": "infrastructure",
+  "definition": "Tim Reutermann is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

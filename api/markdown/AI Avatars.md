@@ -1,22 +1,328 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#AiAvatars
-uri:: urn:visionclaw:concept:distributed-collaboration:ai-avatars
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:ai-avatars
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: AI Avatars
-content-hash:: sha256-12-325181ccb7d7
-legacy-term-id:: TC-0100
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#AiAvatars
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:ai-avatars
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# AI Avatars
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733",
+  "@type": "Page",
+  "vc:slug": "ai-avatars",
+  "title": "AI Avatars",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "vc:label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "@id": "urn:visionflow:linked:photorealistic-telepresence",
+      "vc:label": "PhotorealisticTelepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-synthesis",
+      "vc:label": "SpeechSynthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-051-3d-gaussian-splatting",
+      "vc:label": "TELE-051-3d-gaussian-splatting"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-052-neural-radiance-fields",
+      "vc:label": "TELE-052-neural-radiance-fields"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-060-instant-ngp",
+      "vc:label": "TELE-060-instant-ngp"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-102-codec-avatars",
+      "vc:label": "TELE-102-codec-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-103-metahuman-creator",
+      "vc:label": "TELE-103-metahuman-creator"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-104-readyplayerme",
+      "vc:label": "TELE-104-readyplayerme"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-114-lip-sync-technology",
+      "vc:label": "TELE-114-lip-sync-technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-116-facial-expression-analysis",
+      "vc:label": "TELE-116-facial-expression-analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:uk-online-safety-act-2024",
+      "vc:label": "UK Online Safety Act (2024)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-325181ccb7d7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#AiAvatars"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0100"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Avatars"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:ai-avatars"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:ai-avatars"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-avatars",
+  "@type": "OntologyClass",
+  "label": "AI Avatars",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-collaboration",
+      "vc:label": "distributed-collaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence without explicit keyframe animation.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:speech-synthesis",
+      "vc:label": "SpeechSynthesis"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:photorealistic-telepresence",
+      "vc:label": "PhotorealisticTelepresence"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-avatars:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[GDPR (General Data Protection Regulation)]]",
+      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PhotorealisticTelepresence]]",
+      "resolved": "urn:visionflow:linked:photorealistic-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SpeechSynthesis]]",
+      "resolved": "urn:visionflow:linked:speech-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-051-3d-gaussian-splatting]]",
+      "resolved": "urn:visionflow:linked:tele-051-3d-gaussian-splatting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-052-neural-radiance-fields]]",
+      "resolved": "urn:visionflow:linked:tele-052-neural-radiance-fields",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-060-instant-ngp]]",
+      "resolved": "urn:visionflow:linked:tele-060-instant-ngp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-102-codec-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-102-codec-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-103-metahuman-creator]]",
+      "resolved": "urn:visionflow:linked:tele-103-metahuman-creator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-104-readyplayerme]]",
+      "resolved": "urn:visionflow:linked:tele-104-readyplayerme",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-114-lip-sync-technology]]",
+      "resolved": "urn:visionflow:linked:tele-114-lip-sync-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-116-facial-expression-analysis]]",
+      "resolved": "urn:visionflow:linked:tele-116-facial-expression-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UK Online Safety Act (2024)]]",
+      "resolved": "urn:visionflow:linked:uk-online-safety-act-2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TELE-001-telepresence]]",
+      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence without explicit keyframe animation."

@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:7a296227bf6d94fea14b3d170d1cb5478dc7e95ddec94ef0c01cc613c49f7a5a",
+  "title": "infrastructure",
+  "slug": "infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrastructure",
+  "domain": "infrastructure",
+  "definition": "infrastructure is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "drug-discovery-ai",
+      "label": "Drug Discovery AI"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "interfaces",
+      "label": "Interfaces"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "label": "State of the art in AI"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

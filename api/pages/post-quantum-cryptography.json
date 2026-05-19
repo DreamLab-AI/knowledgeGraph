@@ -1,0 +1,203 @@
+{
+  "id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b",
+  "title": "Post-Quantum Cryptography",
+  "slug": "post-quantum-cryptography",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:post-quantum-cryptography",
+  "domain": "infrastructure",
+  "definition": "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:code-based-cryptography",
+        "label": "Code-Based Cryptography"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-based-signatures",
+        "label": "Hash-Based Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:isogeny-based-cryptography",
+        "label": "Isogeny-Based Cryptography"
+      },
+      {
+        "id": "urn:visionflow:linked:lattice-based-cryptography",
+        "label": "Lattice-Based Cryptography"
+      },
+      {
+        "id": "urn:visionflow:linked:multivariate-cryptography",
+        "label": "Multivariate Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:algorithm-implementation",
+        "label": "Algorithm Implementation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:long-term-data-protection",
+        "label": "Long-Term Data Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:quantum-resistant-encryption",
+        "label": "Quantum-Resistant Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-key-exchange",
+        "label": "Secure Key Exchange"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signatures",
+        "label": "Digital Signatures"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-implementation",
+      "label": "Algorithm Implementation"
+    },
+    {
+      "slug": "code-based-cryptography",
+      "label": "Code-Based Cryptography"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "cryptographic-infrastructure",
+      "label": "Cryptographic Infrastructure"
+    },
+    {
+      "slug": "hash-based-signatures",
+      "label": "Hash-Based Signatures"
+    },
+    {
+      "slug": "isogeny-based-cryptography",
+      "label": "Isogeny-Based Cryptography"
+    },
+    {
+      "slug": "lattice-based-cryptography",
+      "label": "Lattice-Based Cryptography"
+    },
+    {
+      "slug": "long-term-data-protection",
+      "label": "Long-Term Data Protection"
+    },
+    {
+      "slug": "multivariate-cryptography",
+      "label": "Multivariate Cryptography"
+    },
+    {
+      "slug": "nist-pq-standard-2024",
+      "label": "NIST PQ Standard (2024)"
+    },
+    {
+      "slug": "quantum-resistant-encryption",
+      "label": "Quantum-Resistant Encryption"
+    },
+    {
+      "slug": "secure-key-exchange",
+      "label": "Secure Key Exchange"
+    },
+    {
+      "slug": "security-protocol",
+      "label": "Security Protocol"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "mathematical-hard-problems",
+      "label": "Mathematical Hard Problems"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

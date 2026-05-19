@@ -1,0 +1,215 @@
+{
+  "id": "urn:visionflow:page:074b30d9ecfc0666d27f313a3fffc1aec307211b2814d552fafa8a3a58d006e4",
+  "title": "Real-Time Rendering Pipeline",
+  "slug": "real-time-rendering-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+  "domain": "spatial-computing",
+  "definition": "Sequence of GPU processes converting 3D scene data into visual frames at interactive rates (typically 30-120+ FPS).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:render-pipeline",
+      "label": "Render Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:fragment-shading",
+        "label": "Fragment Shading"
+      },
+      {
+        "id": "urn:visionflow:linked:frame-buffer-operations",
+        "label": "Frame Buffer Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:geometry-processing",
+        "label": "Geometry Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:vertex-processing",
+        "label": "Vertex Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:post-processing",
+        "label": "Post-Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-models",
+        "label": "3D Models"
+      },
+      {
+        "id": "urn:visionflow:linked:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:shaders",
+        "label": "Shaders"
+      },
+      {
+        "id": "urn:visionflow:linked:textures",
+        "label": "Textures"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      },
+      {
+        "id": "urn:visionflow:linked:interactive-3-d-graphics",
+        "label": "Interactive 3D Graphics"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-visualization",
+        "label": "Real-Time Visualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-models",
+      "label": "3D Models"
+    },
+    {
+      "slug": "dynamic-lighting",
+      "label": "Dynamic Lighting"
+    },
+    {
+      "slug": "fragment-shading",
+      "label": "Fragment Shading"
+    },
+    {
+      "slug": "frame-buffer-operations",
+      "label": "Frame Buffer Operations"
+    },
+    {
+      "slug": "geometry-processing",
+      "label": "Geometry Processing"
+    },
+    {
+      "slug": "gpu-driver",
+      "label": "GPU Driver"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "graphics-rendering-system",
+      "label": "Graphics Rendering System"
+    },
+    {
+      "slug": "interactive-3-d-graphics",
+      "label": "Interactive 3D Graphics"
+    },
+    {
+      "slug": "iso-iec-23090-3-mpeg-i",
+      "label": "ISO/IEC 23090-3 (MPEG-I)"
+    },
+    {
+      "slug": "memory-management",
+      "label": "Memory Management"
+    },
+    {
+      "slug": "real-time-visualization",
+      "label": "Real-Time Visualization"
+    },
+    {
+      "slug": "shaders",
+      "label": "Shaders"
+    },
+    {
+      "slug": "textures",
+      "label": "Textures"
+    },
+    {
+      "slug": "vertex-processing",
+      "label": "Vertex Processing"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    },
+    {
+      "slug": "post-processing",
+      "label": "Post-Processing"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

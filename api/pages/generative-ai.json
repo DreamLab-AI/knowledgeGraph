@@ -1,0 +1,564 @@
+{
+  "id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07",
+  "title": "Generative AI",
+  "slug": "generative-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:generative-ai",
+  "domain": "artificial-intelligence",
+  "definition": "[[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[Generative Adversarial Networks]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.9,
+  "authorityScore": 0.93,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:gan",
+        "label": "GAN"
+      },
+      {
+        "id": "urn:visionflow:linked:vae",
+        "label": "VAE"
+      },
+      {
+        "id": "urn:visionflow:owl:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:large-scale-datasets",
+        "label": "Large-Scale Datasets"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-art",
+        "label": "AI Art"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-design",
+        "label": "Automated Design"
+      },
+      {
+        "id": "urn:visionflow:linked:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:text-generation",
+        "label": "Text Generation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-art",
+      "label": "AI Art"
+    },
+    {
+      "slug": "algorithmic-layer",
+      "label": "AlgorithmicLayer"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "art",
+      "label": "Art"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "code-synthesis",
+      "label": "Code Synthesis"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "design",
+      "label": "Design"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "large-scale-datasets",
+      "label": "Large-Scale Datasets"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "neural-network-training",
+      "label": "Neural Network Training"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nist-ai-standards",
+      "label": "NIST AI Standards"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "vaes",
+      "label": "VAEs"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "model-architecture",
+      "label": "Model Architecture"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "adaptive-virtual-world",
+      "label": "Adaptive Virtual World"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "digital-twin-generation",
+      "label": "Digital Twin Generation"
+    },
+    {
+      "slug": "documentation-generation",
+      "label": "Documentation Generation"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "text-to-3-d",
+      "label": "Text-to-3D"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

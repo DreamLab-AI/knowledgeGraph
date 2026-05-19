@@ -1,0 +1,182 @@
+{
+  "id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e",
+  "title": "Cultural Heritage XR Experience",
+  "slug": "cultural-heritage-xr-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cultural-heritage-xr-experience",
+  "domain": "spatial-computing",
+  "definition": "An immersive extended reality application designed to preserve, present, and educate users about cultural heritage through interactive 3D reconstructions, AR overlays, and virtual museum experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cultural-metadata",
+        "label": "Cultural Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:interactive-exhibit",
+        "label": "Interactive Exhibit"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ar-overlay",
+        "label": "AR Overlay"
+      },
+      {
+        "id": "urn:visionflow:owl:class:educational-narrative",
+        "label": "Educational Narrative"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cultural-database",
+        "label": "Cultural Database"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cultural-education",
+        "label": "Cultural Education"
+      },
+      {
+        "id": "urn:visionflow:linked:heritage-tourism",
+        "label": "Heritage Tourism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:archaeological-site-reconstruction",
+        "label": "Archaeological Site Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-museum-tour",
+        "label": "Virtual Museum Tour"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cultural-database",
+      "label": "Cultural Database"
+    },
+    {
+      "slug": "cultural-education",
+      "label": "Cultural Education"
+    },
+    {
+      "slug": "cultural-heritage-preservation-system",
+      "label": "Cultural Heritage Preservation System"
+    },
+    {
+      "slug": "cultural-metadata",
+      "label": "Cultural Metadata"
+    },
+    {
+      "slug": "heritage-documentation",
+      "label": "Heritage Documentation"
+    },
+    {
+      "slug": "heritage-tourism",
+      "label": "Heritage Tourism"
+    },
+    {
+      "slug": "icom-museum-definition",
+      "label": "ICOM Museum Definition"
+    },
+    {
+      "slug": "interactive-exhibit",
+      "label": "Interactive Exhibit"
+    },
+    {
+      "slug": "li-dar-scanning",
+      "label": "LiDAR Scanning"
+    },
+    {
+      "slug": "museum-api",
+      "label": "Museum API"
+    },
+    {
+      "slug": "unesco-world-heritage-convention",
+      "label": "UNESCO World Heritage Convention"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ar-overlay",
+      "label": "AR Overlay"
+    },
+    {
+      "slug": "archaeological-site-reconstruction",
+      "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "educational-narrative",
+      "label": "Educational Narrative"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "spatial-audio-system",
+      "label": "Spatial Audio System"
+    },
+    {
+      "slug": "virtual-museum-tour",
+      "label": "Virtual Museum Tour"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "xr-runtime-environment",
+      "label": "XR Runtime Environment"
+    }
+  ],
+  "backlinks": []
+}

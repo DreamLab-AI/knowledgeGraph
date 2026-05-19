@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:1dc83d058bb3e12b3540fd01dd81160c679ed7355fb11f72d2b0304b6982a9a3",
+  "title": "Model Weights",
+  "slug": "model-weights",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-weights",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    }
+  ]
+}

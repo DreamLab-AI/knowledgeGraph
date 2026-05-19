@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:5ae547043e6fa56d394f48be32ef345f79ad63c5c9aefc67d3a9b2bb525de5db",
+  "title": "Web Standard",
+  "slug": "web-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:web-standard",
+  "domain": "infrastructure",
+  "definition": "WebStandard is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

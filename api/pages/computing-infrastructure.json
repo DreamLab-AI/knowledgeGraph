@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:b02b52d0f017dd97d2cb36a50b6c88a877c3213911d607a31927e7ab665a6cf0",
+  "title": "Computing Infrastructure",
+  "slug": "computing-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computing-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Computing infrastructure encompasses the physical and virtual resources required for building, running, and delivering applications and services, including servers, storage systems, networking equipment, power systems, and cooling facilities housed in data centers. It provides the foundational computing capacity that IT systems require to process, store, and transmit digital data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "data-processing-hardware",
+      "label": "Data Processing Hardware"
+    },
+    {
+      "slug": "digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    },
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "hardware-resources",
+      "label": "Hardware Resources"
+    },
+    {
+      "slug": "machine-learning-infrastructure",
+      "label": "Machine Learning Infrastructure"
+    }
+  ]
+}

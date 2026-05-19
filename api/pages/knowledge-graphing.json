@@ -1,0 +1,772 @@
+{
+  "id": "urn:visionflow:page:b5114fc3b7f9ce07af9f2f6777e0d4d1b47bb8a35eb6da7107111c8d1151c062",
+  "title": "Knowledge Graphing",
+  "slug": "knowledge-graphing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-graphing",
+  "domain": "artificial-intelligence",
+  "definition": "Knowledge Graphing is the discipline and computational framework for constructing, enriching, storing, querying, and reasoning over structured semantic knowledge encoded as a graph of typed entities (nodes) and directed typed relationships (edges), spanning formal [[Semantic Web]] standards (RDF/OWL/SPARQL), property graph databases ([[Neo4j]], TigerGraph, Amazon Neptune), [[Knowledge Graph Embeddings]] models (TransE, ComplEx, RotatE achieving mean reciprocal rank 0.55-0.79 on FB15k-237 and WN18RR benchmarks), [[Graph Neural Network]] completion methods (R-GCN, CompGCN, NBFNet), LLM-augmented hybrid retrieval architectures ([[GraphRAG]], [[LangChain]], [[LlamaIndex]]), and large curated open knowledge bases (Wikidata 112M+ items / 1.6B+ statements, DBpedia 3B+ RDF triples, Freebase legacy, schema.org 600+ types deployed on 45M+ websites), enabling enterprise search (Google Knowledge Graph 500B+ facts, Amazon Product Graph 1B+ item relationships), biomedical discovery (Open Targets 18M+ disease-gene-drug associations, STRING 20B+ protein interactions), financial intelligence (HSBC AML graph 3B+ transaction nodes, FIBO financial industry ontology 100K+ concepts), and scientific lite",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "id": "urn:visionflow:linked:ontology-engineering",
+      "label": "Ontology Engineering"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "id": "urn:visionflow:owl:class:information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:visionflow:owl:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:semantic-web",
+      "label": "Semantic Web"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:dbpedia",
+        "label": "DBpedia"
+      },
+      {
+        "id": "urn:visionflow:linked:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-graph-embeddings",
+        "label": "Knowledge Graph Embeddings"
+      },
+      {
+        "id": "urn:visionflow:linked:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:visionflow:linked:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:visionflow:linked:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:visionflow:linked:property-graph",
+        "label": "Property Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:visionflow:linked:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:visionflow:linked:triple-store",
+        "label": "Triple Store"
+      },
+      {
+        "id": "urn:visionflow:linked:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:visionflow:linked:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "id": "urn:visionflow:linked:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:federated-query",
+        "label": "Federated Query"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-graph-completion",
+        "label": "Knowledge Graph Completion"
+      },
+      {
+        "id": "urn:visionflow:linked:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-hop-reasoning",
+        "label": "Multi-hop Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:visionflow:owl:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:compl-ex",
+        "label": "ComplEx"
+      },
+      {
+        "id": "urn:visionflow:linked:description-logics",
+        "label": "Description Logics"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-embedding",
+        "label": "Graph Embedding"
+      },
+      {
+        "id": "urn:visionflow:linked:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:visionflow:linked:owl-reasoning",
+        "label": "OWL Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "id": "urn:visionflow:linked:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:visionflow:linked:trans-e",
+        "label": "TransE"
+      },
+      {
+        "id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autogen",
+      "label": "Autogen"
+    },
+    {
+      "slug": "biomedical-research",
+      "label": "Biomedical Research"
+    },
+    {
+      "slug": "biomedical-research",
+      "label": "Biomedical Research"
+    },
+    {
+      "slug": "biomedical-research",
+      "label": "Biomedical Research"
+    },
+    {
+      "slug": "columnar-databases",
+      "label": "Columnar Databases"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "compl-ex",
+      "label": "ComplEx"
+    },
+    {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "slug": "database-domain",
+      "label": "DatabaseDomain"
+    },
+    {
+      "slug": "dbpedia",
+      "label": "DBpedia"
+    },
+    {
+      "slug": "description-logics",
+      "label": "Description Logics"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "document-stores",
+      "label": "Document Stores"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "embedding-layer",
+      "label": "EmbeddingLayer"
+    },
+    {
+      "slug": "enterprise-search",
+      "label": "Enterprise Search"
+    },
+    {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
+      "slug": "federated-query",
+      "label": "Federated Query"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "slug": "graph-embedding",
+      "label": "Graph Embedding"
+    },
+    {
+      "slug": "graph-rag",
+      "label": "GraphRAG"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "information-extraction",
+      "label": "Information Extraction"
+    },
+    {
+      "slug": "iso-gql-standard",
+      "label": "ISO GQL Standard"
+    },
+    {
+      "slug": "key-value-stores",
+      "label": "Key-Value Stores"
+    },
+    {
+      "slug": "knowledge-graph-completion",
+      "label": "Knowledge Graph Completion"
+    },
+    {
+      "slug": "knowledge-graph-embeddings",
+      "label": "Knowledge Graph Embeddings"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "KnowledgeRepresentationDomain"
+    },
+    {
+      "slug": "link-prediction",
+      "label": "Link Prediction"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "llama-index",
+      "label": "LlamaIndex"
+    },
+    {
+      "slug": "multi-hop-reasoning",
+      "label": "Multi-hop Reasoning"
+    },
+    {
+      "slug": "neo4j",
+      "label": "Neo4j"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "ontology-engineering",
+      "label": "Ontology Engineering"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "owl",
+      "label": "OWL"
+    },
+    {
+      "slug": "owl-2-w3-c-recommendation",
+      "label": "OWL 2 W3C Recommendation"
+    },
+    {
+      "slug": "owl-reasoning",
+      "label": "OWL Reasoning"
+    },
+    {
+      "slug": "property-graph",
+      "label": "Property Graph"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "relation-extraction",
+      "label": "Relation Extraction"
+    },
+    {
+      "slug": "relational-databases",
+      "label": "Relational Databases"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "schema-org",
+      "label": "Schema.org"
+    },
+    {
+      "slug": "schema-org-vocabulary",
+      "label": "schema.org Vocabulary"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "SemanticWebDomain"
+    },
+    {
+      "slug": "sparql",
+      "label": "SPARQL"
+    },
+    {
+      "slug": "sparql-1-1-w3-c-recommendation",
+      "label": "SPARQL 1.1 W3C Recommendation"
+    },
+    {
+      "slug": "trans-e",
+      "label": "TransE"
+    },
+    {
+      "slug": "triple-store",
+      "label": "Triple Store"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    },
+    {
+      "slug": "w3-c-rdf-standard",
+      "label": "W3C RDF Standard"
+    },
+    {
+      "slug": "wikidata",
+      "label": "Wikidata"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "multi-agent-rag-scrapbook",
+      "label": "Multi Agent RAG scrapbook"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "ollama",
+      "label": "Ollama"
+    },
+    {
+      "slug": "ontology-conversation-with-ais",
+      "label": "Ontology conversation with AIs"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "sparql-endpoint",
+      "label": "SPARQL Endpoint"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "training-for-design-practitioners",
+      "label": "Training for Design Practitioners"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "ollama",
+      "label": "ollama"
+    }
+  ]
+}

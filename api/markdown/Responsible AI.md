@@ -1,21 +1,308 @@
-iri:: http://narrativegoldmine.com/metaverse#ResponsibleAI
-uri:: urn:visionclaw:concept:artificial-intelligence:responsible-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:responsible-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Responsible AI
-content-hash:: sha256-12-dc26a0e63ff1
-legacy-term-id:: AI-0104
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-07T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ResponsibleAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:responsible-ai
 public:: true
+
+# Responsible AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c",
+  "@type": "Page",
+  "vc:slug": "responsible-ai",
+  "title": "Responsible AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:risk-management-processes",
+      "vc:label": "risk management processes"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-licence-for-ai",
+      "vc:label": "social licence for AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:trustworthy-ai",
+      "vc:label": "Trustworthy AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-audit",
+      "vc:label": "AI Audit"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-impact-assessment",
+      "vc:label": "AI Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-risk-management",
+      "vc:label": "AI Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethical-ai",
+      "vc:label": "Ethical AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dc26a0e63ff1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-07T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ResponsibleAI"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0104"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Responsible AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:responsible-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:responsible-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:responsible-ai",
+  "@type": "OntologyClass",
+  "label": "Responsible AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:risk-management-processes",
+      "vc:label": "risk management processes"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-impact-assessment",
+      "vc:label": "AI Impact Assessment"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:social-licence-for-ai",
+      "vc:label": "social licence for AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:trustworthy-ai",
+      "vc:label": "Trustworthy AI"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:responsible-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[risk management processes]]",
+      "resolved": "urn:visionflow:linked:risk-management-processes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[social licence for AI]]",
+      "resolved": "urn:visionflow:linked:social-licence-for-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trustworthy AI]]",
+      "resolved": "urn:visionflow:linked:trustworthy-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Audit]]",
+      "resolved": "urn:visionflow:owl:class:ai-audit",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Impact Assessment]]",
+      "resolved": "urn:visionflow:owl:class:ai-impact-assessment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:ai-risk-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethical AI]]",
+      "resolved": "urn:visionflow:owl:class:ethical-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Oversight]]",
+      "resolved": "urn:visionflow:owl:class:human-oversight",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparency]]",
+      "resolved": "urn:visionflow:owl:class:transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.

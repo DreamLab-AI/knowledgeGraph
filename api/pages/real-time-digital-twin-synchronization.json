@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:6666aa90712324f1fd85de31e66ed4906b86f2e854879bc2b5c02f3679a43d3a",
+  "title": "Real Time Digital Twin Synchronization",
+  "slug": "real-time-digital-twin-synchronization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-digital-twin-synchronization",
+  "domain": "spatial-computing",
+  "definition": "The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin-technology",
+      "label": "Digital Twin Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:virtual-real-interaction",
+        "label": "Virtual Real Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "virtual-real-interaction",
+      "label": "Virtual Real Interaction"
+    },
+    {
+      "slug": "digital-twin-technology",
+      "label": "Digital Twin Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:bfe6912b6e74dac58325b59e0e1c98589eba41a4b45fc67cc774a838350822e1",
+  "title": "Infrastructure Component",
+  "slug": "infrastructure-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrastructure-component",
+  "domain": "artificial-intelligence",
+  "definition": "Infrastructure Component is a concept within the ai domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    }
+  ]
+}

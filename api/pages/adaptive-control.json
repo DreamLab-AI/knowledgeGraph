@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:61e41fe4e081c8ae25981b2c6421bd2c71a7f5e8c49020940ca9ea2250ba7331",
+  "title": "Adaptive Control",
+  "slug": "adaptive-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adaptive-control",
+  "domain": "robotics",
+  "definition": "A control strategy that automatically adjusts its parameters in real-time to maintain desired performance as system dynamics change or uncertainties are encountered. The controller learns and adapts to variations in the system or environment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:parameter-adaptation-mechanism",
+        "label": "Parameter Adaptation Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:self-tuning-systems",
+        "label": "Self-Tuning Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robust-control",
+        "label": "Robust Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-systems",
+      "label": "Adaptive Systems"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "learning",
+      "label": "Learning"
+    },
+    {
+      "slug": "parameter-adaptation-mechanism",
+      "label": "Parameter Adaptation Mechanism"
+    },
+    {
+      "slug": "parameter-estimation",
+      "label": "Parameter Estimation"
+    },
+    {
+      "slug": "rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
+    },
+    {
+      "slug": "rb-1003-optimal-control",
+      "label": "RB-1003-optimal-control"
+    },
+    {
+      "slug": "rb-1011-cobot-safety-levels",
+      "label": "RB-1011-cobot-safety-levels"
+    },
+    {
+      "slug": "self-tuning",
+      "label": "Self-Tuning"
+    },
+    {
+      "slug": "self-tuning-systems",
+      "label": "Self-Tuning Systems"
+    },
+    {
+      "slug": "system-identification",
+      "label": "System Identification"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robust-control",
+      "label": "Robust Control"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "id": "urn:visionflow:page:448fcf503cf3cf8673bdd49f9e36d2796d5e6dc381fd84c5331d8c62e2a2560e",
+  "title": "Training Data",
+  "slug": "training-data",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:training-data",
+  "domain": "artificial-intelligence",
+  "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples \u2014 text, images, audio, video, structured records, code, and synthetic artefacts \u2014 ingested during the learning phase of [[Machine Learning]] and [[Foundation Models]] to optimise model parameters via gradient-descent or equivalent procedures. The quality, scale, diversity, and legal provenance of training data constitutes the single largest determinant of downstream model capability, safety alignment, and societal impact, making training data curation the most consequential engineering decision in modern [[Artificial Intelligence]]. Web-scale corpora now dominate language model training: [[CommonCrawl]] (operating since 2008, petabyte-scale monthly snapshots, backbone of nearly every major LLM) is transformed by specialised derivatives including FineWeb (HuggingFace 2024, 15T token English web corpus outperforming DCLM-Baseline on standard benchmarks per Penedo et al. 2024), FineWeb-Edu (1.3T tokens filtered for educational content via LLM-based classifier scoring using Llama-3-70B with 78% human-judge agreement), Dolma (AI2 Allen Institute, 3T token open-access corpus spanning web, scientific, ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:dataset",
+      "label": "Dataset"
+    },
+    {
+      "id": "urn:visionflow:owl:class:data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:data-management",
+      "label": "Data Management"
+    },
+    {
+      "id": "urn:visionflow:owl:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:annotation",
+        "label": "Annotation"
+      },
+      {
+        "id": "urn:visionflow:linked:code-corpus",
+        "label": "Code Corpus"
+      },
+      {
+        "id": "urn:visionflow:linked:data-cards",
+        "label": "Data Cards"
+      },
+      {
+        "id": "urn:visionflow:linked:data-splits",
+        "label": "Data Splits"
+      },
+      {
+        "id": "urn:visionflow:linked:features",
+        "label": "Features"
+      },
+      {
+        "id": "urn:visionflow:linked:image-dataset",
+        "label": "Image Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:labels",
+        "label": "Labels"
+      },
+      {
+        "id": "urn:visionflow:linked:quality-signals",
+        "label": "Quality Signals"
+      },
+      {
+        "id": "urn:visionflow:linked:text-corpus",
+        "label": "Text Corpus"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:annotation-standards",
+        "label": "Annotation Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:data-deduplication",
+        "label": "Data Deduplication"
+      },
+      {
+        "id": "urn:visionflow:linked:data-quality-assurance",
+        "label": "Data Quality Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "urn:visionflow:linked:web-scraping",
+        "label": "Web Scraping"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:language-identification",
+        "label": "Language Identification"
+      },
+      {
+        "id": "urn:visionflow:linked:locality-sensitive-hashing",
+        "label": "Locality Sensitive Hashing"
+      },
+      {
+        "id": "urn:visionflow:linked:min-hash",
+        "label": "MinHash"
+      },
+      {
+        "id": "urn:visionflow:linked:near-duplicate-removal",
+        "label": "Near Duplicate Removal"
+      },
+      {
+        "id": "urn:visionflow:linked:quality-filtering",
+        "label": "Quality Filtering"
+      },
+      {
+        "id": "urn:visionflow:linked:sem-de-dup",
+        "label": "SemDeDup"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "annotation",
+      "label": "Annotation"
+    },
+    {
+      "slug": "annotation-standards",
+      "label": "Annotation Standards"
+    },
+    {
+      "slug": "cdla",
+      "label": "CDLA"
+    },
+    {
+      "slug": "code-corpus",
+      "label": "Code Corpus"
+    },
+    {
+      "slug": "common-crawl",
+      "label": "CommonCrawl"
+    },
+    {
+      "slug": "creative-commons",
+      "label": "Creative Commons"
+    },
+    {
+      "slug": "data-cards",
+      "label": "Data Cards"
+    },
+    {
+      "slug": "data-deduplication",
+      "label": "Data Deduplication"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "DataGovernanceDomain"
+    },
+    {
+      "slug": "data-quality-assurance",
+      "label": "Data Quality Assurance"
+    },
+    {
+      "slug": "data-splits",
+      "label": "Data Splits"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "dataset-bias",
+      "label": "Dataset Bias"
+    },
+    {
+      "slug": "distribution-shift",
+      "label": "Distribution Shift"
+    },
+    {
+      "slug": "features",
+      "label": "Features"
+    },
+    {
+      "slug": "image-dataset",
+      "label": "Image Dataset"
+    },
+    {
+      "slug": "labels",
+      "label": "Labels"
+    },
+    {
+      "slug": "language-identification",
+      "label": "Language Identification"
+    },
+    {
+      "slug": "licensing",
+      "label": "Licensing"
+    },
+    {
+      "slug": "locality-sensitive-hashing",
+      "label": "Locality Sensitive Hashing"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "memorisation",
+      "label": "Memorisation"
+    },
+    {
+      "slug": "min-hash",
+      "label": "MinHash"
+    },
+    {
+      "slug": "near-duplicate-removal",
+      "label": "Near Duplicate Removal"
+    },
+    {
+      "slug": "nyt-v-open-ai",
+      "label": "NYT v OpenAI"
+    },
+    {
+      "slug": "open-rail",
+      "label": "OpenRAIL"
+    },
+    {
+      "slug": "quality-filtering",
+      "label": "Quality Filtering"
+    },
+    {
+      "slug": "quality-signals",
+      "label": "Quality Signals"
+    },
+    {
+      "slug": "refined-web",
+      "label": "RefinedWeb"
+    },
+    {
+      "slug": "sem-de-dup",
+      "label": "SemDeDup"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "text-corpus",
+      "label": "Text Corpus"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "uk-ipo",
+      "label": "UK IPO"
+    },
+    {
+      "slug": "us-copyright-office",
+      "label": "US Copyright Office"
+    },
+    {
+      "slug": "web-scraping",
+      "label": "Web Scraping"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "ai-machine-learning",
+      "label": "Ai Machine Learning"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "synthetic-data-generator",
+      "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

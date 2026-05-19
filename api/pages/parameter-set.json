@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:c3f3f36a5961fb8b8bcd99e8055fd44e4cbc545ece09b1ce96029b3dfdf51994",
+  "title": "Parameter Set",
+  "slug": "parameter-set",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:parameter-set",
+  "domain": "spatial-computing",
+  "definition": "A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:configuration",
+      "label": "Configuration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "configuration",
+      "label": "Configuration"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "procedural-texture",
+      "label": "Procedural Texture"
+    }
+  ]
+}

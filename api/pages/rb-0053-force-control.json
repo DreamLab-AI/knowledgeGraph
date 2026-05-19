@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:c4341fd22fdf05c75002007772dfc944d34bdd49582193414a062c7080c46c4f",
+  "title": "rb 0053 force control",
+  "slug": "rb-0053-force-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0053-force-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

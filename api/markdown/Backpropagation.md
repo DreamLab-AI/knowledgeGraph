@@ -1,22 +1,216 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Backpropagation
-uri:: urn:visionclaw:concept:artificial-intelligence:backpropagation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:backpropagation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Backpropagation
-content-hash:: sha256-12-b74886e24fb6
-legacy-term-id:: AI-0043
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Backpropagation
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:backpropagation
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Backpropagation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fe9280c216a18f1d4b6f59b0e44a1b9b2f5751ea2a4a5b292cdbf9e4dc92e277",
+  "@type": "Page",
+  "vc:slug": "backpropagation",
+  "title": "Backpropagation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
+      "vc:label": "NIST (National Institute of Standards and Technology)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b74886e24fb6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Backpropagation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0043"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Backpropagation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:backpropagation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:backpropagation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fe9280c216a18f1d4b6f59b0e44a1b9b2f5751ea2a4a5b292cdbf9e4dc92e277@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:backpropagation",
+  "@type": "OntologyClass",
+  "label": "Backpropagation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fe9280c216a18f1d4b6f59b0e44a1b9b2f5751ea2a4a5b292cdbf9e4dc92e277"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fe9280c216a18f1d4b6f59b0e44a1b9b2f5751ea2a4a5b292cdbf9e4dc92e277@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:backpropagation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fe9280c216a18f1d4b6f59b0e44a1b9b2f5751ea2a4a5b292cdbf9e4dc92e277"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST (National Institute of Standards and Technology)]]",
+      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fe9280c216a18f1d4b6f59b0e44a1b9b2f5751ea2a4a5b292cdbf9e4dc92e277@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ### Primary Definition

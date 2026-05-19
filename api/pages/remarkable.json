@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:74e1d28ec12cf8b453d18fef5b786392ffdb30ec45740198054027e99a215888",
+  "title": "Remarkable",
+  "slug": "remarkable",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:remarkable",
+  "domain": "infrastructure",
+  "definition": "Remarkable is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

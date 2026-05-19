@@ -1,0 +1,129 @@
+{
+  "id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47",
+  "title": "AI Lifecycle",
+  "slug": "ai-lifecycle",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-lifecycle",
+  "domain": "artificial-intelligence",
+  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:stakeholder-engagement-throughout",
+        "label": "Stakeholder engagement throughout"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fda-software-as-medical-device",
+      "label": "FDA Software as Medical Device"
+    },
+    {
+      "slug": "iso-iec-23053",
+      "label": "ISO/IEC 23053"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "iso-iec-5338-2023",
+      "label": "ISO/IEC 5338:2023"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "stakeholder-engagement-throughout",
+      "label": "Stakeholder engagement throughout"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    }
+  ]
+}

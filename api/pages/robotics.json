@@ -1,0 +1,799 @@
+{
+  "id": "urn:visionflow:page:27b5317e28ce917af8169a0afd21a7f6fcb5075a1b4bfc2a5ffe486c2cb8acfb",
+  "title": "Robotics",
+  "slug": "robotics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robotics",
+  "domain": "robotics",
+  "definition": "Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems. Modern robotics integrates artificial intelligence, machine vision, advanced sensors, IoT connectivity, and digital twins to create adaptive, flexible, and increasingly autonomous systems capable of operating in unstructured environments alongside humans.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:automation",
+      "label": "Automation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:control-systems",
+        "label": "Control Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:visionflow:linked:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:precision-engineering",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:visionflow:linked:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuators",
+      "label": "Actuators"
+    },
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "autonomous-manufacturing",
+      "label": "Autonomous Manufacturing"
+    },
+    {
+      "slug": "collaborative-robotics",
+      "label": "Collaborative Robotics"
+    },
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "humanoid-robotics",
+      "label": "Humanoid Robotics"
+    },
+    {
+      "slug": "humanoid-robots",
+      "label": "Humanoid Robots"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "industrial-robots",
+      "label": "Industrial Robots"
+    },
+    {
+      "slug": "machine-vision",
+      "label": "Machine Vision"
+    },
+    {
+      "slug": "precision-engineering",
+      "label": "Precision Engineering"
+    },
+    {
+      "slug": "robotic-arm",
+      "label": "Robotic Arm"
+    },
+    {
+      "slug": "sensor-system",
+      "label": "Sensor System"
+    },
+    {
+      "slug": "smart-manufacturing",
+      "label": "Smart Manufacturing"
+    },
+    {
+      "slug": "warehouse-automation",
+      "label": "Warehouse Automation"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "IoT Sensors"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "2-d-li-dar",
+      "label": "2D LiDAR"
+    },
+    {
+      "slug": "3-d-li-dar",
+      "label": "3D LiDAR"
+    },
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "accelerometer",
+      "label": "Accelerometer"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "agricultural-robot",
+      "label": "Agricultural Robot"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "collaborative-operation",
+      "label": "Collaborative Operation"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "cylindrical-robot",
+      "label": "Cylindrical Robot"
+    },
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "delta-robot",
+      "label": "Delta Robot"
+    },
+    {
+      "slug": "derivative-control",
+      "label": "Derivative Control"
+    },
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "digital-fabrication",
+      "label": "Digital Fabrication"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "emc-standard",
+      "label": "EMC Standard"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "electric-linear-actuator",
+      "label": "Electric Linear Actuator"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End Effector"
+    },
+    {
+      "slug": "exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "forward-kinematics",
+      "label": "Forward Kinematics"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "gps",
+      "label": "Gps"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "gyroscope",
+      "label": "Gyroscope"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hydraulic-cylinder",
+      "label": "Hydraulic Cylinder"
+    },
+    {
+      "slug": "hydraulic-motor",
+      "label": "Hydraulic Motor"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "inertia",
+      "label": "Inertia"
+    },
+    {
+      "slug": "inspection-robot",
+      "label": "Inspection Robot"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "lead-screw-actuator",
+      "label": "Lead Screw Actuator"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "linear-encoder",
+      "label": "Linear Encoder"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "lower-limb-exoskeleton",
+      "label": "Lower Limb Exoskeleton"
+    },
+    {
+      "slug": "manipulator-robot",
+      "label": "Manipulator Robot"
+    },
+    {
+      "slug": "manipulator",
+      "label": "Manipulator"
+    },
+    {
+      "slug": "marine-robot",
+      "label": "Marine Robot"
+    },
+    {
+      "slug": "mecanum-wheel-robot",
+      "label": "Mecanum Wheel Robot"
+    },
+    {
+      "slug": "mobile-manipulator",
+      "label": "Mobile Manipulator"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "monocular-camera",
+      "label": "Monocular Camera"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "multirotor-uav",
+      "label": "Multirotor UAV"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "newton-euler-dynamics",
+      "label": "Newton-Euler Dynamics"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "octocopter",
+      "label": "Octocopter"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "omnidirectional-robot",
+      "label": "Omnidirectional Robot"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open-Loop Control"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "parallel-robot",
+      "label": "Parallel Robot"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "pneumatic-cylinder",
+      "label": "Pneumatic Cylinder"
+    },
+    {
+      "slug": "pneumatic-motor",
+      "label": "Pneumatic Motor"
+    },
+    {
+      "slug": "polar-robot",
+      "label": "Polar Robot"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "proportional-control",
+      "label": "Proportional Control"
+    },
+    {
+      "slug": "proxemics",
+      "label": "Proxemics"
+    },
+    {
+      "slug": "quadcopter",
+      "label": "Quadcopter"
+    },
+    {
+      "slug": "quadruped-robot",
+      "label": "Quadruped Robot"
+    },
+    {
+      "slug": "quality-standard",
+      "label": "Quality Standard"
+    },
+    {
+      "slug": "research-summary",
+      "label": "RESEARCH_SUMMARY"
+    },
+    {
+      "slug": "rrt-algorithm",
+      "label": "RRT Algorithm"
+    },
+    {
+      "slug": "rack-and-pinion-actuator",
+      "label": "Rack and Pinion Actuator"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "remotely-operated-vehicle-rov",
+      "label": "Remotely Operated Vehicle (ROV)"
+    },
+    {
+      "slug": "rescue-robot",
+      "label": "Rescue Robot"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-joint",
+      "label": "Robot Joint"
+    },
+    {
+      "slug": "robot-kinematics",
+      "label": "Robot Kinematics"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "robot-safety",
+      "label": "Robot Safety"
+    },
+    {
+      "slug": "robot-sensor",
+      "label": "Robot Sensor"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robot",
+      "label": "Robot"
+    },
+    {
+      "slug": "rotary-encoder",
+      "label": "Rotary Encoder"
+    },
+    {
+      "slug": "scara-robot",
+      "label": "SCARA Robot"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "servo-motor",
+      "label": "Servo Motor"
+    },
+    {
+      "slug": "shape-memory-alloy-actuator",
+      "label": "Shape Memory Alloy Actuator"
+    },
+    {
+      "slug": "social-navigation",
+      "label": "Social Navigation"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "state-space-control",
+      "label": "State Space Control"
+    },
+    {
+      "slug": "stepper-motor",
+      "label": "Stepper Motor"
+    },
+    {
+      "slug": "stereo-camera",
+      "label": "Stereo Camera"
+    },
+    {
+      "slug": "stewart-platform",
+      "label": "Stewart Platform"
+    },
+    {
+      "slug": "stigmergy",
+      "label": "Stigmergy"
+    },
+    {
+      "slug": "surface-marine-robot",
+      "label": "Surface Marine Robot"
+    },
+    {
+      "slug": "tactile-sensor",
+      "label": "Tactile Sensor"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "torque-control",
+      "label": "Torque Control"
+    },
+    {
+      "slug": "torque",
+      "label": "Torque"
+    },
+    {
+      "slug": "tracked-robot",
+      "label": "Tracked Robot"
+    },
+    {
+      "slug": "trajectory-control",
+      "label": "Trajectory Control"
+    },
+    {
+      "slug": "trajectory-generation",
+      "label": "Trajectory Generation"
+    },
+    {
+      "slug": "trajectory-planning",
+      "label": "Trajectory Planning"
+    },
+    {
+      "slug": "variable-impedance-control",
+      "label": "Variable Impedance Control"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "velocity",
+      "label": "Velocity"
+    },
+    {
+      "slug": "wheeled-mobile-robot",
+      "label": "Wheeled Mobile Robot"
+    },
+    {
+      "slug": "based-on",
+      "label": "based on"
+    },
+    {
+      "slug": "rb-0035-accuracy",
+      "label": "rb 0035 accuracy"
+    },
+    {
+      "slug": "rb-0049-motion-planning",
+      "label": "rb 0049 motion planning"
+    },
+    {
+      "slug": "rb-0072-encoder",
+      "label": "rb 0072 encoder"
+    }
+  ]
+}

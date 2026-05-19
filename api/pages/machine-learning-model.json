@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:c5b276955ed0529ffdf31612ce77bf327366b2788ab5034d4ce351728ba6f528",
+  "title": "Machine Learning Model",
+  "slug": "machine-learning-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:machine-learning-model",
+  "domain": "artificial-intelligence",
+  "definition": "Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:intelligent-metaverse-systems",
+        "label": "Intelligent Metaverse Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "intelligent-metaverse-systems",
+      "label": "Intelligent Metaverse Systems"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    },
+    {
+      "slug": "model-property",
+      "label": "Model Property"
+    }
+  ]
+}

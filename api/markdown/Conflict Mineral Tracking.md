@@ -1,22 +1,342 @@
-iri:: http://narrativegoldmine.com/blockchain#ConflictMineralTracking
-uri:: urn:visionclaw:concept:blockchain:conflict-mineral-tracking
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:conflict-mineral-tracking
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Conflict Mineral Tracking
-content-hash:: sha256-12-a20e8131c99f
-legacy-term-id:: BC-0445
-status:: complete
-maturity:: mature
-bridges-to:: [[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)
-quality-score:: 0.50
-authority-score:: 0.89
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#ConflictMineralTracking
+legacy_uri:: urn:visionclaw:concept:blockchain:conflict-mineral-tracking
 public:: true
+
+# Conflict Mineral Tracking
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39",
+  "@type": "Page",
+  "vc:slug": "conflict-mineral-tracking",
+  "title": "Conflict Mineral Tracking",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "vc:label": "BC-0013-smart-contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "vc:label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0044-supply-chain-management",
+      "vc:label": "BC-0044-supply-chain-management"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0066-ethereum",
+      "vc:label": "BC-0066-ethereum"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "vc:label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0214-environmental-sustainability",
+      "vc:label": "BC-0214-environmental-sustainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "vc:label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "vc:label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "vc:label": "BC-0441-provenance-tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:circulor",
+      "vc:label": "Circulor"
+    },
+    {
+      "@id": "urn:visionflow:linked:everledger",
+      "vc:label": "Everledger"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:rcs-global",
+      "vc:label": "RCS Global"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.89"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a20e8131c99f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#ConflictMineralTracking"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0445"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Conflict Mineral Tracking"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:conflict-mineral-tracking"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:conflict-mineral-tracking"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:conflict-mineral-tracking",
+  "@type": "OntologyClass",
+  "label": "Conflict Mineral Tracking",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain applications addressing ethical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions. Over 6,000 companies spend £500 million annually on conflict mineral due diligence under Dodd-Frank Section 1502 and EU Conflict Minerals Regulation, with blockchain implementations by Circulor (Volvo, VW, Tesla), RCS Global Better Sourcing (Apple, Samsung), and Everledger demonstrating 40-60% reductions in due diligence costs through automated verification, immutable custody chains, and cryptographic material fingerprinting that enable 5-15% premium pricing for verified responsible sourcing whilst dramatically reducing human rights abuses.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.89",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:conflict-mineral-tracking:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0013-smart-contracts]]",
+      "resolved": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0029-permissioned-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0044-supply-chain-management]]",
+      "resolved": "urn:visionflow:linked:bc-0044-supply-chain-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0066-ethereum]]",
+      "resolved": "urn:visionflow:linked:bc-0066-ethereum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0067-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0214-environmental-sustainability]]",
+      "resolved": "urn:visionflow:linked:bc-0214-environmental-sustainability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0432-consortium-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0434-blockchain-as-a-service]]",
+      "resolved": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0441-provenance-tracking]]",
+      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Circulor]]",
+      "resolved": "urn:visionflow:linked:circulor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Everledger]]",
+      "resolved": "urn:visionflow:linked:everledger",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Internet of Things]]",
+      "resolved": "urn:visionflow:linked:internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RCS Global]]",
+      "resolved": "urn:visionflow:linked:rcs-global",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain applications addressing ethical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions. Over 6,000 companies spend £500 million annually on conflict mineral due diligence under Dodd-Frank Section 1502 and EU Conflict Minerals Regulation, with blockchain implementations by Circulor (Volvo, VW, Tesla), RCS Global Better Sourcing (Apple, Samsung), and Everledger demonstrating 40-60% reductions in due diligence costs through automated verification, immutable custody chains, and cryptographic material fingerprinting that enable 5-15% premium pricing for verified responsible sourcing whilst dramatically reducing human rights abuses.

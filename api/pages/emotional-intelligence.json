@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:1a79ec08a4d221bdac757d8e54715f47ed66fa1ce47a09983cb4e4f01717e28c",
+  "title": "Emotional Intelligence",
+  "slug": "emotional-intelligence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:emotional-intelligence",
+  "domain": "artificial-intelligence",
+  "definition": "Emotional Intelligence is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

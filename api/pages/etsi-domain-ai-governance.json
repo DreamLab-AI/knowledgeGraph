@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:63876bec8579e23f367a455eba5cb9b70c6a16f500c43f0adbbbe012ba3b64ad",
+  "title": "ETSI Domain AI + Governance",
+  "slug": "etsi-domain-ai-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-ai-governance",
+  "domain": "artificial-intelligence",
+  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ethics, explainability, bias detection, regulatory compliance, and responsible AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-ethics-classification",
+        "label": "AI Ethics Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:explainability-categorization",
+        "label": "Explainability Categorization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-ethics-classification",
+      "label": "AI Ethics Classification"
+    },
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "explainability-categorization",
+      "label": "Explainability Categorization"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    }
+  ]
+}

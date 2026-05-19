@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:72b680895805b41a73d849ff6524c93b15e26499e2d4376fb4705af0814f6040",
+  "title": "3D User Interface",
+  "slug": "3-d-user-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-d-user-interface",
+  "domain": "spatial-computing",
+  "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands. 3DUI design balances [[Accessibility Standard]]s with intuitive spatial affordances appropriate for VR, AR, and metaverse interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "id": "urn:visionflow:owl:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gaze-tracking",
+        "label": "Gaze Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-input",
+        "label": "Voice Input"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accessible-immersion",
+        "label": "Accessible Immersion"
+      },
+      {
+        "id": "urn:visionflow:linked:intuitive-interaction",
+        "label": "Intuitive Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:user-navigation",
+        "label": "User Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessible-immersion",
+      "label": "Accessible Immersion"
+    },
+    {
+      "slug": "gaze-tracking",
+      "label": "Gaze Tracking"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "Gesture Recognition"
+    },
+    {
+      "slug": "interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "slug": "intuitive-interaction",
+      "label": "Intuitive Interaction"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "user-navigation",
+      "label": "User Navigation"
+    },
+    {
+      "slug": "voice-input",
+      "label": "Voice Input"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "spatial-user-interfaces",
+      "label": "Spatial User Interfaces"
+    }
+  ]
+}

@@ -1,21 +1,243 @@
-iri:: http://narrativegoldmine.com/blockchain#RealEstateTokenization
-uri:: urn:visionclaw:concept:blockchain:real-estate-tokenization
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:real-estate-tokenization
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Real Estate Tokenization
-content-hash:: sha256-12-f2857214151e
-legacy-term-id:: BC-0493
-status:: complete
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.87
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#RealEstateTokenization
+legacy_uri:: urn:visionclaw:concept:blockchain:real-estate-tokenization
 public:: true
+
+# Real Estate Tokenization
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157",
+  "@type": "Page",
+  "vc:slug": "real-estate-tokenization",
+  "title": "Real Estate Tokenization",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "vc:label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
+      "vc:label": "BC-0456-self-sovereign-identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0458-verifiable-credentials",
+      "vc:label": "BC-0458-verifiable-credentials"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0463-governance-token",
+      "vc:label": "BC-0463-governance-token"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0478-securities-regulation",
+      "vc:label": "BC-0478-securities-regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0488-licensing-requirements",
+      "vc:label": "BC-0488-licensing-requirements"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0494-property-registry",
+      "vc:label": "BC-0494-property-registry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.87"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f2857214151e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#RealEstateTokenization"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0493"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Real Estate Tokenization"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:real-estate-tokenization"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:real-estate-tokenization"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:real-estate-tokenization",
+  "@type": "OntologyClass",
+  "label": "Real Estate Tokenization",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to £50, and creating 24/7 tradeable markets projected to grow from £2.6-3.5 billion (2024) to £4 trillion (2035) whilst providing regulatory compliance through Regulation D, Regulation A+, and international frameworks.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.87",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:real-estate-tokenization:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0432-consortium-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0456-self-sovereign-identity]]",
+      "resolved": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0458-verifiable-credentials]]",
+      "resolved": "urn:visionflow:linked:bc-0458-verifiable-credentials",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0463-governance-token]]",
+      "resolved": "urn:visionflow:linked:bc-0463-governance-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0478-securities-regulation]]",
+      "resolved": "urn:visionflow:linked:bc-0478-securities-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0488-licensing-requirements]]",
+      "resolved": "urn:visionflow:linked:bc-0488-licensing-requirements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0494-property-registry]]",
+      "resolved": "urn:visionflow:linked:bc-0494-property-registry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to £50, and creating 24/7 tradeable markets projected to grow from £2.6-3.5 billion (2024) to £4 trillion (2035) whilst providing regulatory compliance through Regulation D, Regulation A+, and international frameworks.

@@ -1,24 +1,216 @@
-iri:: http://narrativegoldmine.com/spatial-computing#SpatialAnchors
-uri:: urn:visionclaw:concept:spatial-computing:spatial-anchors
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:spatial-anchors
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Spatial Anchors
-content-hash:: sha256-12-de2849d4e188
-legacy-term-id:: MV-10051
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#SpatialAnchors
+legacy_uri:: urn:visionclaw:concept:spatial-computing:spatial-anchors
 public:: true
+
+# Spatial Anchors
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737",
+  "@type": "Page",
+  "vc:slug": "spatial-anchors",
+  "title": "Spatial Anchors",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:ar-technology",
+      "vc:label": "AR Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:persistent-ar-placement",
+      "vc:label": "Persistent AR Placement"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-de2849d4e188"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#SpatialAnchors"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10051"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Spatial Anchors"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:spatial-anchors"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:spatial-anchors"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:spatial-anchors",
+  "@type": "OntologyClass",
+  "label": "Spatial Anchors",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ar-technology",
+      "vc:label": "AR Technology"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:persistent-ar-placement",
+      "vc:label": "Persistent AR Placement"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:spatial-anchors:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AR Technology]]",
+      "resolved": "urn:visionflow:owl:class:ar-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Persistent AR Placement]]",
+      "resolved": "urn:visionflow:owl:class:persistent-ar-placement",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.

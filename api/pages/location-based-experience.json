@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:dcea335499b329ce3f105ea9485a3a7581bc8650d632c545cc679a5ecfd2a5eb",
+  "title": "Location Based Experience",
+  "slug": "location-based-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:location-based-experience",
+  "domain": "spatial-computing",
+  "definition": "Location Based Experience is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:immersive-experience",
+      "label": "Immersive Experience"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive",
+      "label": "Immersive"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

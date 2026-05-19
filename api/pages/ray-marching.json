@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:b2912f8a2e0cf8ca72da18ea14bfa855484e4435053cd3d6dd979b4b865812e3",
+  "title": "Ray Marching",
+  "slug": "ray-marching",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ray-marching",
+  "domain": "spatial-computing",
+  "definition": "RayMarching is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

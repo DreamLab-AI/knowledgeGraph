@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:3872dac02fea105e4f9c95198594f1af613a05cf1b438de5ca9518e4273725a2",
+  "title": "OWL Class Hierarchy",
+  "slug": "owl-class-hierarchy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:owl-class-hierarchy",
+  "domain": "spatial-computing",
+  "definition": "The taxonomic structure of classes and subclasses defined in the Web Ontology Language (OWL) that organizes concepts into inheritance relationships, enabling automated reasoning, consistency checking, and inference of implicit knowledge in semantic web applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ontology-structure",
+      "label": "Ontology Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "ontology-structure",
+      "label": "Ontology Structure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    }
+  ]
+}

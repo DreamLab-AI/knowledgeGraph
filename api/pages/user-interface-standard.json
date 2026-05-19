@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:2706e26700542d1ddb62ed3028469b83958c4cac4d4de02659d1c63a0aa92d8e",
+  "title": "User Interface Standard",
+  "slug": "user-interface-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-interface-standard",
+  "domain": "spatial-computing",
+  "definition": "Specifications and guidelines that define consistent patterns, components, and interactions for user interfaces in metaverse and XR environments, ensuring usability, accessibility, and cross-platform consistency.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    }
+  ]
+}

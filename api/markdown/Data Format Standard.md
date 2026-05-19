@@ -1,21 +1,331 @@
-iri:: http://narrativegoldmine.com/infrastructure#DataFormatStandard
-uri:: urn:visionclaw:concept:infrastructure:data-format-standard
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:data-format-standard
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Data Format Standard
-content-hash:: sha256-12-d616e58a5a8d
-legacy-term-id:: MV-9838
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DataFormatStandard
+legacy_uri:: urn:visionclaw:concept:infrastructure:data-format-standard
 public:: true
+
+# Data Format Standard
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be",
+  "@type": "Page",
+  "vc:slug": "data-format-standard",
+  "title": "Data Format Standard",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-asset-interoperability",
+      "vc:label": "3D Asset Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-portability",
+      "vc:label": "Content Portability"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-platform-exchange",
+      "vc:label": "Cross-Platform Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:gl-tf",
+      "vc:label": "glTF"
+    },
+    {
+      "@id": "urn:visionflow:linked:implementation-libraries",
+      "vc:label": "Implementation Libraries"
+    },
+    {
+      "@id": "urn:visionflow:linked:khronos-group",
+      "vc:label": "Khronos Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-x",
+      "vc:label": "MaterialX"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-standards-forum",
+      "vc:label": "Metaverse Standards Forum"
+    },
+    {
+      "@id": "urn:visionflow:linked:usd",
+      "vc:label": "USD"
+    },
+    {
+      "@id": "urn:visionflow:linked:validation-tools",
+      "vc:label": "Validation Tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:standards-body",
+      "vc:label": "Standards Body"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-standards",
+      "vc:label": "Technical Standards"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d616e58a5a8d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DataFormatStandard"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9838"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Data Format Standard"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-format-standard"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-format-standard"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:data-format-standard",
+  "@type": "OntologyClass",
+  "label": "Data Format Standard",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technical-standards",
+      "vc:label": "Technical Standards"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:implementation-libraries",
+      "vc:label": "Implementation Libraries"
+    },
+    {
+      "@id": "urn:visionflow:linked:validation-tools",
+      "vc:label": "Validation Tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:standards-body",
+      "vc:label": "Standards Body"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:3-d-asset-interoperability",
+      "vc:label": "3D Asset Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-portability",
+      "vc:label": "Content Portability"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-platform-exchange",
+      "vc:label": "Cross-Platform Exchange"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:data-format-standard:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Asset Interoperability]]",
+      "resolved": "urn:visionflow:linked:3-d-asset-interoperability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Portability]]",
+      "resolved": "urn:visionflow:linked:content-portability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Platform Exchange]]",
+      "resolved": "urn:visionflow:linked:cross-platform-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[glTF]]",
+      "resolved": "urn:visionflow:linked:gl-tf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Implementation Libraries]]",
+      "resolved": "urn:visionflow:linked:implementation-libraries",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Khronos Group]]",
+      "resolved": "urn:visionflow:linked:khronos-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MaterialX]]",
+      "resolved": "urn:visionflow:linked:material-x",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Standards Forum]]",
+      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[USD]]",
+      "resolved": "urn:visionflow:linked:usd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Validation Tools]]",
+      "resolved": "urn:visionflow:linked:validation-tools",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Standards Body]]",
+      "resolved": "urn:visionflow:owl:class:standards-body",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technical Standards]]",
+      "resolved": "urn:visionflow:owl:class:technical-standards",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.

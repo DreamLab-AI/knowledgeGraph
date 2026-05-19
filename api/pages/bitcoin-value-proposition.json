@@ -1,0 +1,812 @@
+{
+  "id": "urn:visionflow:page:7159378bd00ec6046078a6ed3354077b007454d67169097fe3ceefa09bf6f3b8",
+  "title": "Bitcoin Value Proposition",
+  "slug": "bitcoin-value-proposition",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-value-proposition",
+  "domain": "blockchain",
+  "definition": "**Bitcoin Value Proposition** is the aggregate set of economic, monetary, and philosophical arguments that justify holding, using, or building on [[Bitcoin]] as a distinct and superior form of money, property, or network infrastructure. The proposition is not monolithic: analysts, practitioners, and national governments emphasise different facets depending on their temporal horizon, risk tolerance, regulatory context, and theory of money. As of 2026 at least nine distinct but overlapping value frames are actively debated: [[Store of Value]] and [[Digital Gold]]; [[Sound Money]] and [[Austrian Economics]]; [[Censorship Resistance]] and [[Financial Sovereignty]]; [[Inflation Hedge]] against [[Monetary Debasement]]; [[Hyperbitcoinization]] and global monetary transition; [[Network Effects]] and the [[Lindy Effect]]; [[Institutional Adoption]] and ETF legitimisation; [[Financial Inclusion]] and remittances; and [[AI Economy]] machine-to-machine payments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:economic-philosophy",
+      "label": "Economic Philosophy"
+    },
+    {
+      "id": "urn:visionflow:linked:monetary-theory",
+      "label": "Monetary Theory"
+    },
+    {
+      "id": "urn:visionflow:linked:sound-money",
+      "label": "Sound Money"
+    },
+    {
+      "id": "urn:visionflow:linked:store-of-value",
+      "label": "Store of Value"
+    },
+    {
+      "id": "urn:visionflow:owl:class:bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:21-million-supply-cap",
+        "label": "21 Million Supply Cap"
+      },
+      {
+        "id": "urn:visionflow:linked:block-reward-halving",
+        "label": "Block Reward Halving"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-scarcity",
+        "label": "Digital Scarcity"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-sovereignty",
+        "label": "Financial Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:hyperbitcoinization",
+        "label": "Hyperbitcoinization"
+      },
+      {
+        "id": "urn:visionflow:linked:inflation-hedge",
+        "label": "Inflation Hedge"
+      },
+      {
+        "id": "urn:visionflow:linked:lindy-effect",
+        "label": "Lindy Effect"
+      },
+      {
+        "id": "urn:visionflow:linked:network-effects",
+        "label": "Network Effects"
+      },
+      {
+        "id": "urn:visionflow:linked:proof-of-work-security",
+        "label": "Proof of Work Security"
+      },
+      {
+        "id": "urn:visionflow:linked:self-custody",
+        "label": "Self Custody"
+      },
+      {
+        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-miners",
+        "label": "Bitcoin Miners"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:visionflow:linked:full-node-infrastructure",
+        "label": "Full Node Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:open-source-protocol",
+        "label": "Open Source Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-economy-payments",
+        "label": "AI Economy Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:censorship-resistant-payments",
+        "label": "Censorship Resistant Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:corporate-treasury-strategy",
+        "label": "Corporate Treasury Strategy"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-sovereignty",
+        "label": "Financial Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:inflation-hedging",
+        "label": "Inflation Hedging"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-to-machine-payments",
+        "label": "Machine to Machine Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:remittances",
+        "label": "Remittances"
+      },
+      {
+        "id": "urn:visionflow:linked:rural-electrification-subsidy",
+        "label": "Rural Electrification Subsidy"
+      },
+      {
+        "id": "urn:visionflow:linked:self-custody",
+        "label": "Self Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:sovereign-bitcoin-reserve",
+        "label": "Sovereign Bitcoin Reserve"
+      },
+      {
+        "id": "urn:visionflow:linked:store-of-value",
+        "label": "Store of Value"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:austrian-economics",
+        "label": "Austrian Economics"
+      },
+      {
+        "id": "urn:visionflow:linked:gresham-s-law",
+        "label": "Gresham's Law"
+      },
+      {
+        "id": "urn:visionflow:linked:hayek-denationalisation",
+        "label": "Hayek Denationalisation"
+      },
+      {
+        "id": "urn:visionflow:linked:mises-regression-theorem",
+        "label": "Mises Regression Theorem"
+      },
+      {
+        "id": "urn:visionflow:linked:saifedean-ammous-bitcoin-standard",
+        "label": "Saifedean Ammous Bitcoin Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:sound-money-principles",
+        "label": "Sound Money Principles"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "21-million-supply-cap",
+      "label": "21 Million Supply Cap"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI agents"
+    },
+    {
+      "slug": "ai-economy",
+      "label": "AI Economy"
+    },
+    {
+      "slug": "ai-economy-payments",
+      "label": "AI Economy Payments"
+    },
+    {
+      "slug": "ammous-2018-the-bitcoin-standard",
+      "label": "Ammous 2018 The Bitcoin Standard"
+    },
+    {
+      "slug": "argentina",
+      "label": "Argentina"
+    },
+    {
+      "slug": "arxiv-2024-bitcoin-structural-shortcomings-2512-07840",
+      "label": "arxiv 2024 Bitcoin Structural Shortcomings 2512-07840"
+    },
+    {
+      "slug": "asic-mining-hardware",
+      "label": "ASIC Mining Hardware"
+    },
+    {
+      "slug": "austrian-economics",
+      "label": "Austrian Economics"
+    },
+    {
+      "slug": "austrian-economics-layer",
+      "label": "AustrianEconomicsLayer"
+    },
+    {
+      "slug": "batten-2024-bitcoin-sustainable-energy-beest",
+      "label": "Batten 2024 Bitcoin Sustainable Energy BEEST"
+    },
+    {
+      "slug": "ben-hunt",
+      "label": "Ben Hunt"
+    },
+    {
+      "slug": "bitcoin-act-of-2025",
+      "label": "BITCOIN Act of 2025"
+    },
+    {
+      "slug": "bitcoin-improvement-proposals",
+      "label": "Bitcoin Improvement Proposals"
+    },
+    {
+      "slug": "bitcoin-miners",
+      "label": "Bitcoin Miners"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bitcoin-standard-adoption",
+      "label": "Bitcoin Standard Adoption"
+    },
+    {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "black-rock-bitcoin-etf",
+      "label": "BlackRock Bitcoin ETF"
+    },
+    {
+      "slug": "black-rock-ibit-sec-filings-2024-2026",
+      "label": "BlackRock IBIT SEC Filings 2024-2026"
+    },
+    {
+      "slug": "block-reward-halving",
+      "label": "Block Reward Halving"
+    },
+    {
+      "slug": "bohme-christin-edelman-moore-2015-bitcoin-economics",
+      "label": "Bohme Christin Edelman Moore 2015 Bitcoin Economics"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "ccaf-2025-cambridge-digital-mining-industry-report",
+      "label": "CCAF 2025 Cambridge Digital Mining Industry Report"
+    },
+    {
+      "slug": "censorship-resistant-payments",
+      "label": "Censorship Resistant Payments"
+    },
+    {
+      "slug": "chainalysis-2025-geography-of-cryptocurrency-report",
+      "label": "Chainalysis 2025 Geography of Cryptocurrency Report"
+    },
+    {
+      "slug": "cold-storage",
+      "label": "Cold Storage"
+    },
+    {
+      "slug": "corporate-treasury-reserve",
+      "label": "Corporate Treasury Reserve"
+    },
+    {
+      "slug": "corporate-treasury-strategy",
+      "label": "Corporate Treasury Strategy"
+    },
+    {
+      "slug": "cryptocurrency-adoption",
+      "label": "cryptocurrency adoption"
+    },
+    {
+      "slug": "cryptographic-hash-functions",
+      "label": "Cryptographic Hash Functions"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "slug": "demir-2024-corporate-bitcoin-treasury-adoption",
+      "label": "Demir 2024 Corporate Bitcoin Treasury Adoption"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "DigitalAssetDomain"
+    },
+    {
+      "slug": "digital-gold",
+      "label": "Digital Gold"
+    },
+    {
+      "slug": "digital-scarcity",
+      "label": "Digital Scarcity"
+    },
+    {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
+    },
+    {
+      "slug": "economic-philosophy",
+      "label": "Economic Philosophy"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "el-salvador-bitcoin-adoption",
+      "label": "El Salvador Bitcoin Adoption"
+    },
+    {
+      "slug": "fasb-2023-asu-2023-08-crypto-asset-fair-value",
+      "label": "FASB 2023 ASU 2023-08 Crypto Asset Fair Value"
+    },
+    {
+      "slug": "fasb-asu-2023-08",
+      "label": "FASB ASU 2023-08"
+    },
+    {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "fidelity-digital-assets-2022-bitcoin-first",
+      "label": "Fidelity Digital Assets 2022 Bitcoin First"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "financial-nihilism",
+      "label": "Financial Nihilism"
+    },
+    {
+      "slug": "financial-sovereignty",
+      "label": "Financial Sovereignty"
+    },
+    {
+      "slug": "fractional-reserve-banking",
+      "label": "Fractional Reserve Banking"
+    },
+    {
+      "slug": "full-node-infrastructure",
+      "label": "Full Node Infrastructure"
+    },
+    {
+      "slug": "global-internet-infrastructure",
+      "label": "Global Internet Infrastructure"
+    },
+    {
+      "slug": "gresham-s-law",
+      "label": "Gresham's Law"
+    },
+    {
+      "slug": "gridless",
+      "label": "Gridless"
+    },
+    {
+      "slug": "gridless-2024-bitcoin-mining-rural-electrification-africa",
+      "label": "Gridless 2024 Bitcoin Mining Rural Electrification Africa"
+    },
+    {
+      "slug": "hayek-1976-denationalisation-of-money",
+      "label": "Hayek 1976 Denationalisation of Money"
+    },
+    {
+      "slug": "hayek-denationalisation",
+      "label": "Hayek Denationalisation"
+    },
+    {
+      "slug": "human-rights-foundation",
+      "label": "Human Rights Foundation"
+    },
+    {
+      "slug": "human-rights-foundation-2025-q4-bitcoin-development-fund",
+      "label": "Human Rights Foundation 2025 Q4 Bitcoin Development Fund"
+    },
+    {
+      "slug": "human-rights-foundation-bitcoin-fund",
+      "label": "Human Rights Foundation Bitcoin Fund"
+    },
+    {
+      "slug": "hyperbitcoinization",
+      "label": "Hyperbitcoinization"
+    },
+    {
+      "slug": "imf-2025-el-salvador-article-iv-country-report-25-58",
+      "label": "IMF 2025 El Salvador Article IV Country Report 25-58"
+    },
+    {
+      "slug": "imperial-college-2024-bitcoin-treasury-strategies-equity-premia",
+      "label": "Imperial College 2024 Bitcoin Treasury Strategies Equity Premia"
+    },
+    {
+      "slug": "inflation-hedge",
+      "label": "Inflation Hedge"
+    },
+    {
+      "slug": "inflation-hedging",
+      "label": "Inflation Hedging"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    },
+    {
+      "slug": "institutional-allocation-layer",
+      "label": "InstitutionalAllocationLayer"
+    },
+    {
+      "slug": "journal-of-democracy-2025-why-bitcoin-is-freedom-money",
+      "label": "Journal of Democracy 2025 Why Bitcoin Is Freedom Money"
+    },
+    {
+      "slug": "krawisz-2014-hyperbitcoinization",
+      "label": "Krawisz 2014 Hyperbitcoinization"
+    },
+    {
+      "slug": "l402",
+      "label": "L402"
+    },
+    {
+      "slug": "lal-you-zhu-2023-bitcoin-renewable-energy-acs",
+      "label": "Lal You Zhu 2023 Bitcoin Renewable Energy ACS"
+    },
+    {
+      "slug": "lindy-effect",
+      "label": "Lindy Effect"
+    },
+    {
+      "slug": "liu-tsyvinski-2021-risks-and-returns-of-cryptocurrency",
+      "label": "Liu Tsyvinski 2021 Risks and Returns of Cryptocurrency"
+    },
+    {
+      "slug": "machine-to-machine-payments",
+      "label": "Machine to Machine Payments"
+    },
+    {
+      "slug": "metaplanet",
+      "label": "Metaplanet"
+    },
+    {
+      "slug": "methane-mitigation",
+      "label": "Methane Mitigation"
+    },
+    {
+      "slug": "mises-1912-theory-of-money-and-credit",
+      "label": "Mises 1912 Theory of Money and Credit"
+    },
+    {
+      "slug": "mises-regression-theorem",
+      "label": "Mises Regression Theorem"
+    },
+    {
+      "slug": "monetary-debasement",
+      "label": "Monetary Debasement"
+    },
+    {
+      "slug": "monetary-economics-domain",
+      "label": "MonetaryEconomicsDomain"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "monetary-policy-layer",
+      "label": "MonetaryPolicyLayer"
+    },
+    {
+      "slug": "monetary-theory",
+      "label": "Monetary Theory"
+    },
+    {
+      "slug": "mubadala",
+      "label": "Mubadala"
+    },
+    {
+      "slug": "multisignature-wallets",
+      "label": "Multisignature Wallets"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "network-effects",
+      "label": "Network Effects"
+    },
+    {
+      "slug": "network-effects",
+      "label": "Network Effects"
+    },
+    {
+      "slug": "norges-bank-investment-management",
+      "label": "Norges Bank Investment Management"
+    },
+    {
+      "slug": "open-source-protocol",
+      "label": "Open Source Protocol"
+    },
+    {
+      "slug": "philosophy-of-money-domain",
+      "label": "PhilosophyOfMoneyDomain"
+    },
+    {
+      "slug": "power-drill-ai-2025-institutional-cryptocurrency-adoption",
+      "label": "PowerDrill AI 2025 Institutional Cryptocurrency Adoption"
+    },
+    {
+      "slug": "proof-of-work-security",
+      "label": "Proof of Work Security"
+    },
+    {
+      "slug": "regression-theorem",
+      "label": "Regression Theorem"
+    },
+    {
+      "slug": "remittances",
+      "label": "Remittances"
+    },
+    {
+      "slug": "rothbard-1963-what-has-government-done-to-our-money",
+      "label": "Rothbard 1963 What Has Government Done to Our Money"
+    },
+    {
+      "slug": "rudd-porter-2025-bitcoin-supply-demand-equilibrium",
+      "label": "Rudd Porter 2025 Bitcoin Supply Demand Equilibrium"
+    },
+    {
+      "slug": "rural-electrification-subsidy",
+      "label": "Rural Electrification Subsidy"
+    },
+    {
+      "slug": "saifedean-ammous",
+      "label": "Saifedean Ammous"
+    },
+    {
+      "slug": "saifedean-ammous-bitcoin-standard",
+      "label": "Saifedean Ammous Bitcoin Standard"
+    },
+    {
+      "slug": "sec-spot-bitcoin-etf-approval-2024",
+      "label": "SEC Spot Bitcoin ETF Approval 2024"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self Custody"
+    },
+    {
+      "slug": "self-custody-wallets",
+      "label": "Self Custody Wallets"
+    },
+    {
+      "slug": "sound-money",
+      "label": "Sound Money"
+    },
+    {
+      "slug": "sound-money-principles",
+      "label": "Sound Money Principles"
+    },
+    {
+      "slug": "sovereign-bitcoin-reserve",
+      "label": "Sovereign Bitcoin Reserve"
+    },
+    {
+      "slug": "sovereign-reserve-layer",
+      "label": "SovereignReserveLayer"
+    },
+    {
+      "slug": "spot-bitcoin-etfs",
+      "label": "Spot Bitcoin ETFs"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "stock-to-flow-model",
+      "label": "Stock to Flow Model"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "Store of Value"
+    },
+    {
+      "slug": "strategic-bitcoin-reserve",
+      "label": "Strategic Bitcoin Reserve"
+    },
+    {
+      "slug": "sustainable-mining",
+      "label": "Sustainable Mining"
+    },
+    {
+      "slug": "traditional-banking",
+      "label": "Traditional Banking"
+    },
+    {
+      "slug": "united-states-strategic-bitcoin-reserve",
+      "label": "United States Strategic Bitcoin Reserve"
+    },
+    {
+      "slug": "us-congress-2025-bitcoin-act-s954",
+      "label": "US Congress 2025 BITCOIN Act S954"
+    },
+    {
+      "slug": "us-strategic-bitcoin-reserve-executive-order-2025",
+      "label": "US Strategic Bitcoin Reserve Executive Order 2025"
+    },
+    {
+      "slug": "white-house-2025-strategic-bitcoin-reserve-executive-order",
+      "label": "White House 2025 Strategic Bitcoin Reserve Executive Order"
+    },
+    {
+      "slug": "wiki-leaks",
+      "label": "WikiLeaks"
+    },
+    {
+      "slug": "x402",
+      "label": "X402"
+    },
+    {
+      "slug": "yermack",
+      "label": "Yermack"
+    },
+    {
+      "slug": "yermack-2015-is-bitcoin-a-real-currency",
+      "label": "Yermack 2015 Is Bitcoin a Real Currency"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "cryptographic-security",
+      "label": "Cryptographic Security"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:81bc2435eea663b8b335ddea6d101e23c7a28a085e5e70118aa6a7229d25205e",
+  "title": "ZK-STARKs",
+  "slug": "zk-starks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:zk-starks",
+  "domain": "spatial-computing",
+  "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    }
+  ]
+}

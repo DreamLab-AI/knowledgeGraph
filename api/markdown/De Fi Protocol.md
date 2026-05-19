@@ -1,21 +1,280 @@
-iri:: http://narrativegoldmine.com/blockchain#DeFiProtocol
-uri:: urn:visionclaw:concept:blockchain:de-fi-protocol
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:de-fi-protocol
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: De Fi Protocol
-content-hash:: sha256-12-4a7a70a9a0d7
-legacy-term-id:: BC-9984
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#DeFiProtocol
+legacy_uri:: urn:visionclaw:concept:blockchain:de-fi-protocol
 public:: true
+
+# De Fi Protocol
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:018d9e75af1ed22b8715d1538752d051ab97b46ed73f4e0c303747ff3728b076",
+  "@type": "Page",
+  "vc:slug": "de-fi-protocol",
+  "title": "De Fi Protocol",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:asset-swaps",
+      "vc:label": "Asset Swaps"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-market-makers",
+      "vc:label": "Automated Market Makers"
+    },
+    {
+      "@id": "urn:visionflow:linked:borrowing",
+      "vc:label": "Borrowing"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-tokens",
+      "vc:label": "Governance Tokens"
+    },
+    {
+      "@id": "urn:visionflow:linked:lending",
+      "vc:label": "Lending"
+    },
+    {
+      "@id": "urn:visionflow:linked:trading",
+      "vc:label": "Trading"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
+      "vc:label": "Blockchain Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4a7a70a9a0d7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#DeFiProtocol"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-9984"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "De Fi Protocol"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:de-fi-protocol"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:de-fi-protocol"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:018d9e75af1ed22b8715d1538752d051ab97b46ed73f4e0c303747ff3728b076@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:de-fi-protocol",
+  "@type": "OntologyClass",
+  "label": "De Fi Protocol",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:018d9e75af1ed22b8715d1538752d051ab97b46ed73f4e0c303747ff3728b076"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:018d9e75af1ed22b8715d1538752d051ab97b46ed73f4e0c303747ff3728b076@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A blockchain-based financial application providing decentralized financial services via smart contracts.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:de-fi-protocol:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:018d9e75af1ed22b8715d1538752d051ab97b46ed73f4e0c303747ff3728b076"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Asset Swaps]]",
+      "resolved": "urn:visionflow:linked:asset-swaps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Market Makers]]",
+      "resolved": "urn:visionflow:linked:automated-market-makers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Borrowing]]",
+      "resolved": "urn:visionflow:linked:borrowing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance Tokens]]",
+      "resolved": "urn:visionflow:linked:governance-tokens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lending]]",
+      "resolved": "urn:visionflow:linked:lending",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trading]]",
+      "resolved": "urn:visionflow:linked:trading",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Economy]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:018d9e75af1ed22b8715d1538752d051ab97b46ed73f4e0c303747ff3728b076@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A blockchain-based financial application providing decentralized financial services via smart contracts.

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:d8f5155d74e0bb57e1fa9978e5f5bf6aed52fb07de26a955b1290c82d76216ab",
+  "title": "Search Index",
+  "slug": "search-index",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:search-index",
+  "domain": "spatial-computing",
+  "definition": "A data structure that maps terms, embeddings, or attributes to document locations, enabling rapid retrieval of relevant content from large metaverse asset catalogues through inverted indexes, vector indexes, or hybrid approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:fast-query-response",
+        "label": "Fast Query Response"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fast-query-response",
+      "label": "Fast Query Response"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    }
+  ]
+}

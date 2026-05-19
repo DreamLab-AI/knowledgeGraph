@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:aedb340408d0de2f16effda9f5556ed2c788df220ba0aaca1e99c2c51e2c3870",
+  "title": "ETSI Domain Application + Creative",
+  "slug": "etsi-domain-application-creative",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-application-creative",
+  "domain": "spatial-computing",
+  "definition": "Cross-domain marker for metaverse application components focused on creative industries including digital art, music production, animation, film, design tools, and creative collaboration platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaboration-tool-categorization",
+        "label": "Collaboration Tool Categorization"
+      },
+      {
+        "id": "urn:visionflow:linked:creative-application-classification",
+        "label": "Creative Application Classification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaboration-tool-categorization",
+      "label": "Collaboration Tool Categorization"
+    },
+    {
+      "slug": "creative-application-classification",
+      "label": "Creative Application Classification"
+    },
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:31c8dcc56889618ee109d2e27fb0f32d8327d6836e3290e25e9c68b4ce05ea39",
+  "title": "rb 0054 position control",
+  "slug": "rb-0054-position-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0054-position-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-control",
+      "label": "Motion Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

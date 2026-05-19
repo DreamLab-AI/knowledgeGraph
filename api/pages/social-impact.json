@@ -1,0 +1,132 @@
+{
+  "id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6",
+  "title": "Social Impact",
+  "slug": "social-impact",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-impact",
+  "domain": "spatial-computing",
+  "definition": "The effects\u2014positive and negative, intended and unintended\u2014that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
+      "slug": "heiphetz2010training-aldrich2005learning",
+      "label": "heiphetz2010training; @aldrich2005learning"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "torok2017cascading",
+      "label": "torok2017cascading"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "equity",
+      "label": "Equity"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "humans-avatars-character",
+      "label": "Humans, Avatars , Character"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "legacy-media",
+      "label": "legacy media"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ]
+}

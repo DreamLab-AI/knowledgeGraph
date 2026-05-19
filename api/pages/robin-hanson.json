@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ac563f01887867c292c6a942e50c297702a6e2783e40ac9c1190974c4b81bf13",
+  "title": "Robin Hanson",
+  "slug": "robin-hanson",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robin-hanson",
+  "domain": "infrastructure",
+  "definition": "Robin Hanson is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lead-poisoning-hypothesis",
+      "label": "Lead Poisoning Hypothesis"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    }
+  ]
+}

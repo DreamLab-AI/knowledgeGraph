@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:a84994e7b58f7b41038b9bf2110f46cf81ad91b6d770c73afc1e0c030ad67e1a",
+  "title": "Shader Language",
+  "slug": "shader-language",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shader-language",
+  "domain": "spatial-computing",
+  "definition": "ShaderLanguage is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "procedural-texture",
+      "label": "Procedural Texture"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "id": "urn:visionflow:page:7dfcf6199dcc7da89c05a634977a20229a6a0650df1ca3e2dae92b85cd54d072",
+  "title": "Context Engineering",
+  "slug": "context-engineering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:context-engineering",
+  "domain": "artificial-intelligence",
+  "definition": "Context Engineering is the systems-level discipline of designing, curating, compressing, and orchestrating the information delivered into a Large Language Model's context window across a multi-step agentic loop, popularised between mid-2024 and mid-2025 by Walden Yan (Cognition AI's \"Don't Build Multi-Agents\" essay), Shopify CEO Tobi L\u00fctke (\"the art of providing all the context for the task to be plausibly solvable by the LLM\"), Andrej Karpathy (\"the delicate art and science of filling the context window with just the right information for each step\"), and the Anthropic Applied AI team, deliberately superseding the single-turn framing of \"prompt engineering\" with a systems perspective that treats the context window as a managed resource analogous to a CPU's working memory rather than a one-shot instruction string, composing across multiple layers (system prompt and persona, instruction hierarchy following OpenAI's 2024 spec privileging system > developer > user > tool > assistant messages, tool/function-call schema definitions which themselves consume 1-15K tokens for typical agent toolbelts, few-shot exemplars chosen for representativeness rather than mere correctness, retrieval-a",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:agent-engineering",
+      "label": "Agent Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:ai-engineering",
+      "label": "AI Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:llm-application-engineering",
+      "label": "LLM Application Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:systems-engineering-for-ai",
+      "label": "Systems Engineering for AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:context-compaction",
+        "label": "Context Compaction"
+      },
+      {
+        "id": "urn:visionflow:linked:few-shot-examples",
+        "label": "Few-Shot Examples"
+      },
+      {
+        "id": "urn:visionflow:linked:instruction-hierarchy",
+        "label": "Instruction Hierarchy"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-memory",
+        "label": "Persistent Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:prefix-cache",
+        "label": "Prefix Cache"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:scratchpad",
+        "label": "Scratchpad"
+      },
+      {
+        "id": "urn:visionflow:linked:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-schema",
+        "label": "Tool Schema"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-store",
+        "label": "Memory Store"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-system",
+        "label": "Retrieval System"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenizer",
+        "label": "Tokenizer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cost-efficient-inference",
+        "label": "Cost-Efficient Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "id": "urn:visionflow:linked:long-horizon-planning",
+        "label": "Long-Horizon Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-turn-coherence",
+        "label": "Multi-Turn Coherence"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-ai-assistants",
+        "label": "Persistent AI Assistants"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:context-compression",
+        "label": "Context Compression"
+      },
+      {
+        "id": "urn:visionflow:linked:hierarchical-retrieval",
+        "label": "Hierarchical Retrieval"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-block-architecture",
+        "label": "Memory Block Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:recursive-summarisation",
+        "label": "Recursive Summarisation"
+      },
+      {
+        "id": "urn:visionflow:linked:rolling-memory-window",
+        "label": "Rolling Memory Window"
+      },
+      {
+        "id": "urn:visionflow:linked:structured-output-constraints",
+        "label": "Structured Output Constraints"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-engineering",
+      "label": "Agent Engineering"
+    },
+    {
+      "slug": "agent-runtime-layer",
+      "label": "AgentRuntimeLayer"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "ai-engineering",
+      "label": "AI Engineering"
+    },
+    {
+      "slug": "anthropic-2024-contextual-retrieval",
+      "label": "Anthropic 2024 Contextual Retrieval"
+    },
+    {
+      "slug": "anthropic-2024-model-context-protocol-specification",
+      "label": "Anthropic 2024 Model Context Protocol Specification"
+    },
+    {
+      "slug": "anthropic-prompt-engineering-guide",
+      "label": "Anthropic Prompt Engineering Guide"
+    },
+    {
+      "slug": "asai-et-al-2024-self-rag",
+      "label": "Asai et al 2024 Self-RAG"
+    },
+    {
+      "slug": "beltagy-et-al-2020-longformer",
+      "label": "Beltagy et al 2020 Longformer"
+    },
+    {
+      "slug": "breunig-2025-how-long-contexts-fail",
+      "label": "Breunig 2025 How Long Contexts Fail"
+    },
+    {
+      "slug": "browser-agents",
+      "label": "Browser Agents"
+    },
+    {
+      "slug": "chevalier-et-al-2023-auto-compressors",
+      "label": "Chevalier et al 2023 AutoCompressors"
+    },
+    {
+      "slug": "claude-code-claude-md-convention",
+      "label": "Claude Code CLAUDE.md Convention"
+    },
+    {
+      "slug": "coding-agents",
+      "label": "Coding Agents"
+    },
+    {
+      "slug": "context-compaction",
+      "label": "Context Compaction"
+    },
+    {
+      "slug": "context-compression",
+      "label": "Context Compression"
+    },
+    {
+      "slug": "cost-efficient-inference",
+      "label": "Cost-Efficient Inference"
+    },
+    {
+      "slug": "customer-service-agents",
+      "label": "Customer Service Agents"
+    },
+    {
+      "slug": "evaluation-harness",
+      "label": "Evaluation Harness"
+    },
+    {
+      "slug": "few-shot-examples",
+      "label": "Few-Shot Examples"
+    },
+    {
+      "slug": "gao-et-al-2023-rag-survey",
+      "label": "Gao et al 2023 RAG Survey"
+    },
+    {
+      "slug": "greshake-et-al-2023-indirect-prompt-injection",
+      "label": "Greshake et al 2023 Indirect Prompt Injection"
+    },
+    {
+      "slug": "hierarchical-retrieval",
+      "label": "Hierarchical Retrieval"
+    },
+    {
+      "slug": "hines-et-al-2024-spotlighting",
+      "label": "Hines et al 2024 Spotlighting"
+    },
+    {
+      "slug": "hong-et-al-2025-context-rot-chroma",
+      "label": "Hong et al 2025 Context Rot Chroma"
+    },
+    {
+      "slug": "hsieh-et-al-2024-ruler",
+      "label": "Hsieh et al 2024 RULER"
+    },
+    {
+      "slug": "human-layer-ace-2025-advanced-context-engineering-for-coding-agents",
+      "label": "HumanLayer Ace 2025 Advanced Context Engineering for Coding Agents"
+    },
+    {
+      "slug": "instruction-hierarchy",
+      "label": "Instruction Hierarchy"
+    },
+    {
+      "slug": "ji-and-manus-2025-context-engineering-for-ai-agents",
+      "label": "Ji & Manus 2025 Context Engineering for AI Agents"
+    },
+    {
+      "slug": "jiang-et-al-2023-llmlingua",
+      "label": "Jiang et al 2023 LLMLingua"
+    },
+    {
+      "slug": "jiang-et-al-2024-long-llmlingua",
+      "label": "Jiang et al 2024 LongLLMLingua"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "kamradt-2023-needle-in-a-haystack",
+      "label": "Kamradt 2023 Needle in a Haystack"
+    },
+    {
+      "slug": "karpathy-2025-on-context-engineering",
+      "label": "Karpathy 2025 On Context Engineering"
+    },
+    {
+      "slug": "lang-graph-documentation",
+      "label": "LangGraph Documentation"
+    },
+    {
+      "slug": "lang-graph-state-schema",
+      "label": "LangGraph State Schema"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "letta-documentation",
+      "label": "Letta Documentation"
+    },
+    {
+      "slug": "lewis-et-al-2020-rag",
+      "label": "Lewis et al 2020 RAG"
+    },
+    {
+      "slug": "li-2023-selective-context",
+      "label": "Li 2023 Selective Context"
+    },
+    {
+      "slug": "liu-et-al-2024-lost-in-the-middle-tacl",
+      "label": "Liu et al 2024 Lost in the Middle TACL"
+    },
+    {
+      "slug": "llm-agents",
+      "label": "LLM Agents"
+    },
+    {
+      "slug": "llm-application-engineering",
+      "label": "LLM Application Engineering"
+    },
+    {
+      "slug": "long-context-modeling",
+      "label": "Long-Context Modeling"
+    },
+    {
+      "slug": "long-horizon-planning",
+      "label": "Long-Horizon Planning"
+    },
+    {
+      "slug": "lutke-2025-on-context-engineering",
+      "label": "Lutke 2025 On Context Engineering"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "memory-architecture",
+      "label": "Memory Architecture"
+    },
+    {
+      "slug": "memory-block-architecture",
+      "label": "Memory Block Architecture"
+    },
+    {
+      "slug": "memory-store",
+      "label": "Memory Store"
+    },
+    {
+      "slug": "model-pre-training",
+      "label": "Model Pre-Training"
+    },
+    {
+      "slug": "mu-et-al-2023-gist-tokens",
+      "label": "Mu et al 2023 Gist Tokens"
+    },
+    {
+      "slug": "multi-turn-coherence",
+      "label": "Multi-Turn Coherence"
+    },
+    {
+      "slug": "munkhdalai-et-al-2024-infini-attention",
+      "label": "Munkhdalai et al 2024 Infini-Attention"
+    },
+    {
+      "slug": "open-ai-instruction-hierarchy-spec",
+      "label": "OpenAI Instruction Hierarchy Spec"
+    },
+    {
+      "slug": "open-ai-model-spec-2024",
+      "label": "OpenAI Model Spec 2024"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "packer-et-al-2023-mem-gpt",
+      "label": "Packer et al 2023 MemGPT"
+    },
+    {
+      "slug": "park-et-al-2023-generative-agents",
+      "label": "Park et al 2023 Generative Agents"
+    },
+    {
+      "slug": "persistent-ai-assistants",
+      "label": "Persistent AI Assistants"
+    },
+    {
+      "slug": "persistent-memory",
+      "label": "Persistent Memory"
+    },
+    {
+      "slug": "prefix-cache",
+      "label": "Prefix Cache"
+    },
+    {
+      "slug": "press-et-al-2022-ali-bi",
+      "label": "Press et al 2022 ALiBi"
+    },
+    {
+      "slug": "prompt-caching",
+      "label": "Prompt Caching"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "recursive-summarisation",
+      "label": "Recursive Summarisation"
+    },
+    {
+      "slug": "reranking",
+      "label": "Reranking"
+    },
+    {
+      "slug": "research-agents",
+      "label": "Research Agents"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "retrieval-engineering",
+      "label": "Retrieval Engineering"
+    },
+    {
+      "slug": "retrieval-system",
+      "label": "Retrieval System"
+    },
+    {
+      "slug": "rolling-memory-window",
+      "label": "Rolling Memory Window"
+    },
+    {
+      "slug": "scratchpad",
+      "label": "Scratchpad"
+    },
+    {
+      "slug": "shinn-et-al-2023-reflexion",
+      "label": "Shinn et al 2023 Reflexion"
+    },
+    {
+      "slug": "structured-output-constraints",
+      "label": "Structured Output Constraints"
+    },
+    {
+      "slug": "sumers-et-al-2024-cognitive-architectures-for-language-agents",
+      "label": "Sumers et al 2024 Cognitive Architectures for Language Agents"
+    },
+    {
+      "slug": "system-prompt",
+      "label": "System Prompt"
+    },
+    {
+      "slug": "systems-engineering-for-ai",
+      "label": "Systems Engineering for AI"
+    },
+    {
+      "slug": "tokenizer",
+      "label": "Tokenizer"
+    },
+    {
+      "slug": "tool-schema",
+      "label": "Tool Schema"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "vector-embeddings",
+      "label": "Vector Embeddings"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "wallace-et-al-2024-the-instruction-hierarchy",
+      "label": "Wallace et al 2024 The Instruction Hierarchy"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "xml-tags",
+      "label": "XML Tags"
+    },
+    {
+      "slug": "yan-and-cognition-2025-don-t-build-multi-agents",
+      "label": "Yan & Cognition 2025 Don't Build Multi-Agents"
+    },
+    {
+      "slug": "yao-et-al-2022-re-act",
+      "label": "Yao et al 2022 ReAct"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

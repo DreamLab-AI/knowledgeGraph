@@ -1,21 +1,303 @@
-iri:: http://narrativegoldmine.com/blockchain#DistributedDataStructure
-uri:: urn:visionclaw:concept:blockchain:distributed-data-structure
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:distributed-data-structure
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Distributed Data Structure
-content-hash:: sha256-12-cf457d275d86
-legacy-term-id:: PC-0002
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#DistributedDataStructure
+legacy_uri:: urn:visionclaw:concept:blockchain:distributed-data-structure
 public:: true
+
+# Distributed Data Structure
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043",
+  "@type": "Page",
+  "vc:slug": "distributed-data-structure",
+  "title": "Distributed Data Structure",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:block-tree",
+      "vc:label": "Block Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:byzantine-fault-tolerance-papers",
+      "vc:label": "Byzantine Fault Tolerance Papers"
+    },
+    {
+      "@id": "urn:visionflow:linked:cap-theorem",
+      "vc:label": "CAP Theorem"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-hash-table",
+      "vc:label": "Distributed Hash Table"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems-principles-and-paradigms",
+      "vc:label": "Distributed Systems: Principles and Paradigms"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-tree",
+      "vc:label": "State Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:trie",
+      "vc:label": "Trie"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:merkle-tree",
+      "vc:label": "Merkle Tree"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction-pool",
+      "vc:label": "Transaction Pool"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cf457d275d86"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#DistributedDataStructure"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0002"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Distributed Data Structure"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:distributed-data-structure"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:distributed-data-structure"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:distributed-data-structure",
+  "@type": "OntologyClass",
+  "label": "Distributed Data Structure",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination. Unlike traditional data structures that reside in a single memory space or storage system, distributed data structures partition data across a network of independent nodes, employing replication, partitioning, and consensus protocols to maintain consistency and availability. These structures provide the foundational storage architecture for blockchain systems, enabling properties such as fault tolerance, censorship resistance, and scalability through horizontal expansion. Distributed data structures in blockchain contexts must address fundamental challenges including data consistency across asynchronous networks, Byzantine fault tolerance, and conflict resolution without trusted intermediaries. Common implementations include distributed hash tables, Merkle trees, append-only logs, and peer-to-peer storage networks, each optimized for specific trade-offs between consistency, availability, and partition tolerance as defined by the CAP theorem.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:distributed-data-structure:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Block Tree]]",
+      "resolved": "urn:visionflow:linked:block-tree",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Byzantine Fault Tolerance Papers]]",
+      "resolved": "urn:visionflow:linked:byzantine-fault-tolerance-papers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CAP Theorem]]",
+      "resolved": "urn:visionflow:linked:cap-theorem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Hash Table]]",
+      "resolved": "urn:visionflow:linked:distributed-hash-table",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Systems: Principles and Paradigms]]",
+      "resolved": "urn:visionflow:linked:distributed-systems-principles-and-paradigms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[State Tree]]",
+      "resolved": "urn:visionflow:linked:state-tree",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trie]]",
+      "resolved": "urn:visionflow:linked:trie",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Merkle Tree]]",
+      "resolved": "urn:visionflow:owl:class:merkle-tree",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction Pool]]",
+      "resolved": "urn:visionflow:owl:class:transaction-pool",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination. Unlike traditional data structures that reside in a single memory space or storage system, distributed data structures partition data across a network of independent nodes, employing replication, partitioning, and consensus protocols to maintain consistency and availability. These structures provide the foundational storage architecture for blockchain systems, enabling properties such as fault tolerance, censorship resistance, and scalability through horizontal expansion. Distributed data structures in blockchain contexts must address fundamental challenges including data consistency across asynchronous networks, Byzantine fault tolerance, and conflict resolution without trusted intermediaries. Common implementations include distributed hash tables, Merkle trees, append-only logs, and peer-to-peer storage networks, each optimized for specific trade-offs between consistency, availability, and partition tolerance as defined by the CAP theorem.

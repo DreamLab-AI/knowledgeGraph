@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:3ddb9a17214dbb1ec81d3c2cf67614c77156612637faf468d5e1da2b56167e35",
+  "title": "Virtual Training",
+  "slug": "virtual-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-training",
+  "domain": "artificial-intelligence",
+  "definition": "The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:workforce-development",
+      "label": "Workforce Development"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "workforce-development",
+      "label": "Workforce Development"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

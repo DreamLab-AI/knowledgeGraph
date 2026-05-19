@@ -1,24 +1,570 @@
-iri:: http://narrativegoldmine.com/spatial-computing#VirtualNotaryService
-uri:: urn:visionclaw:concept:spatial-computing:virtual-notary-service
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:virtual-notary-service
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Virtual Notary Service
-content-hash:: sha256-12-2da11757f1b4
-legacy-term-id:: 20279
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#VirtualNotaryService
+legacy_uri:: urn:visionclaw:concept:spatial-computing:virtual-notary-service
 public:: true
+
+# Virtual Notary Service
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:48e864f8ea5711b4127f389265d39c2336b4707b5f34eed1bfc62183586bbfe8",
+  "@type": "Page",
+  "vc:slug": "virtual-notary-service",
+  "title": "Virtual Notary Service",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:audit-trail-generator",
+      "vc:label": "Audit Trail Generator"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-anchoring",
+      "vc:label": "Blockchain Anchoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:certificate-authority-interface",
+      "vc:label": "Certificate Authority Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-algorithm",
+      "vc:label": "Cryptographic Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:document-authentication",
+      "vc:label": "Document Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-idas-regulation",
+      "vc:label": "eIDAS Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-ts-119-312",
+      "vc:label": "ETSI TS 119 312"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-function-module",
+      "vc:label": "Hash Function Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-27001",
+      "vc:label": "ISO 27001"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-compliance",
+      "vc:label": "Legal Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-evidence",
+      "vc:label": "Tamper Evidence"
+    },
+    {
+      "@id": "urn:visionflow:linked:timestamp-authority",
+      "vc:label": "Timestamp Authority"
+    },
+    {
+      "@id": "urn:visionflow:linked:timestamping-service",
+      "vc:label": "Timestamping Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:trusted-timestamping",
+      "vc:label": "Trusted Timestamping"
+    },
+    {
+      "@id": "urn:visionflow:linked:verification-protocol",
+      "vc:label": "Verification Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audit-trail",
+      "vc:label": "Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-certificate",
+      "vc:label": "Digital Certificate"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature-verification",
+      "vc:label": "Digital Signature Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-ledger-technology-dlt",
+      "vc:label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:non-repudiation",
+      "vc:label": "Non-Repudiation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-verification",
+      "vc:label": "Provenance Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "vc:label": "Public Key Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "vc:label": "VirtualEconomyDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2da11757f1b4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#VirtualNotaryService"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20279"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Virtual Notary Service"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:virtual-notary-service"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:virtual-notary-service"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:48e864f8ea5711b4127f389265d39c2336b4707b5f34eed1bfc62183586bbfe8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:virtual-notary-service",
+  "@type": "OntologyClass",
+  "label": "Virtual Notary Service",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "vc:label": "Public Key Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:48e864f8ea5711b4127f389265d39c2336b4707b5f34eed1bfc62183586bbfe8"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:48e864f8ea5711b4127f389265d39c2336b4707b5f34eed1bfc62183586bbfe8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Autonomous agent providing cryptographic attestation, timestamping, and verification services for digital documents and transactions through distributed ledger anchoring and automated certification protocols.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:audit-trail-generator",
+      "vc:label": "Audit Trail Generator"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-anchoring",
+      "vc:label": "Blockchain Anchoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:certificate-authority-interface",
+      "vc:label": "Certificate Authority Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-function-module",
+      "vc:label": "Hash Function Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:timestamping-service",
+      "vc:label": "Timestamping Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:verification-protocol",
+      "vc:label": "Verification Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature-verification",
+      "vc:label": "Digital Signature Verification"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:timestamp-authority",
+      "vc:label": "Timestamp Authority"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-ledger-technology-dlt",
+      "vc:label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "vc:label": "Public Key Infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:document-authentication",
+      "vc:label": "Document Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-compliance",
+      "vc:label": "Legal Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-evidence",
+      "vc:label": "Tamper Evidence"
+    },
+    {
+      "@id": "urn:visionflow:linked:trusted-timestamping",
+      "vc:label": "Trusted Timestamping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audit-trail",
+      "vc:label": "Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:non-repudiation",
+      "vc:label": "Non-Repudiation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-verification",
+      "vc:label": "Provenance Verification"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-algorithm",
+      "vc:label": "Cryptographic Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-certificate",
+      "vc:label": "Digital Certificate"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:virtual-notary-service:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:48e864f8ea5711b4127f389265d39c2336b4707b5f34eed1bfc62183586bbfe8"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Audit Trail Generator]]",
+      "resolved": "urn:visionflow:linked:audit-trail-generator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Anchoring]]",
+      "resolved": "urn:visionflow:linked:blockchain-anchoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Certificate Authority Interface]]",
+      "resolved": "urn:visionflow:linked:certificate-authority-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Algorithm]]",
+      "resolved": "urn:visionflow:linked:cryptographic-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Hash Function]]",
+      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Document Authentication]]",
+      "resolved": "urn:visionflow:linked:document-authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[eIDAS Regulation]]",
+      "resolved": "urn:visionflow:linked:e-idas-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI TS 119 312]]",
+      "resolved": "urn:visionflow:linked:etsi-ts-119-312",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash Function Module]]",
+      "resolved": "urn:visionflow:linked:hash-function-module",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 27001]]",
+      "resolved": "urn:visionflow:linked:iso-27001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Legal Compliance]]",
+      "resolved": "urn:visionflow:linked:legal-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tamper Evidence]]",
+      "resolved": "urn:visionflow:linked:tamper-evidence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Timestamp Authority]]",
+      "resolved": "urn:visionflow:linked:timestamp-authority",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Timestamping Service]]",
+      "resolved": "urn:visionflow:linked:timestamping-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trusted Timestamping]]",
+      "resolved": "urn:visionflow:linked:trusted-timestamping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verification Protocol]]",
+      "resolved": "urn:visionflow:linked:verification-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Audit Trail]]",
+      "resolved": "urn:visionflow:owl:class:audit-trail",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Protocol]]",
+      "resolved": "urn:visionflow:owl:class:consensus-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Certificate]]",
+      "resolved": "urn:visionflow:owl:class:digital-certificate",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature Verification]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Ledger Technology (DLT)]]",
+      "resolved": "urn:visionflow:owl:class:distributed-ledger-technology-dlt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Verification]]",
+      "resolved": "urn:visionflow:owl:class:identity-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Non-Repudiation]]",
+      "resolved": "urn:visionflow:owl:class:non-repudiation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Provenance Verification]]",
+      "resolved": "urn:visionflow:owl:class:provenance-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Public Key Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:public-key-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEconomyDomain]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:48e864f8ea5711b4127f389265d39c2336b4707b5f34eed1bfc62183586bbfe8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Autonomous agent providing cryptographic attestation, timestamping, and verification services for digital documents and transactions through distributed ledger anchoring and automated certification protocols.

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:3c238339abe9957ee330a4377b046d40963af6bd64b4857e94a5f8256577677d",
+  "title": "Prohibited AI Practice",
+  "slug": "prohibited-ai-practice",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:prohibited-ai-practice",
+  "domain": "artificial-intelligence",
+  "definition": "AI systems deploying subliminal/manipulative techniques, exploiting vulnerabilities, social scoring, or real-time biometric identification in publicly accessible spaces (with limited law enforcement exceptions).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,155 @@
+{
+  "id": "urn:visionflow:page:435914ce4ca0faa7d55c001959613cd5cc5cf929108fd61f4bcd2fe9e7a1e801",
+  "title": "Cosmos IBC",
+  "slug": "cosmos-ibc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cosmos-ibc",
+  "domain": "blockchain",
+  "definition": "Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cross-chain-communication",
+      "label": "Cross-Chain Communication"
+    },
+    {
+      "id": "urn:visionflow:linked:interoperability-protocol",
+      "label": "Interoperability Protocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:channel-protocol",
+        "label": "Channel Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:connection-protocol",
+        "label": "Connection Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:packet-system",
+        "label": "Packet System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-light-client",
+        "label": "Blockchain Light Client"
+      },
+      {
+        "id": "urn:visionflow:linked:packet-authentication",
+        "label": "Packet Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cosmos-ecosystem",
+        "label": "Cosmos Ecosystem"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-chain-contracts",
+        "label": "Cross-Chain Contracts"
+      },
+      {
+        "id": "urn:visionflow:linked:inter-chain-value-transfer",
+        "label": "Inter-Chain Value Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-light-client",
+      "label": "Blockchain Light Client"
+    },
+    {
+      "slug": "channel-protocol",
+      "label": "Channel Protocol"
+    },
+    {
+      "slug": "connection-protocol",
+      "label": "Connection Protocol"
+    },
+    {
+      "slug": "cosmos-ecosystem",
+      "label": "Cosmos Ecosystem"
+    },
+    {
+      "slug": "cosmos-network",
+      "label": "Cosmos Network"
+    },
+    {
+      "slug": "cross-chain-communication",
+      "label": "Cross-Chain Communication"
+    },
+    {
+      "slug": "cross-chain-contracts",
+      "label": "Cross-Chain Contracts"
+    },
+    {
+      "slug": "ibc-protocol",
+      "label": "IBC Protocol"
+    },
+    {
+      "slug": "inter-chain-value-transfer",
+      "label": "Inter-Chain Value Transfer"
+    },
+    {
+      "slug": "interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "slug": "layer-2-interop",
+      "label": "Layer 2 Interop"
+    },
+    {
+      "slug": "packet-authentication",
+      "label": "Packet Authentication"
+    },
+    {
+      "slug": "packet-system",
+      "label": "Packet System"
+    },
+    {
+      "slug": "polkadot-xcm",
+      "label": "Polkadot XCM"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "merkle-proof",
+      "label": "Merkle Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

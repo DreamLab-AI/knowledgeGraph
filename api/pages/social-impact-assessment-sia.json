@@ -1,0 +1,158 @@
+{
+  "id": "urn:visionflow:page:e2979585c11cba664ae085ffa734ce413a203c5f016e4ba0fc131106b48f5604",
+  "title": "Social Impact Assessment (SIA)",
+  "slug": "social-impact-assessment-sia",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-impact-assessment-sia",
+  "domain": "spatial-computing",
+  "definition": "Systematic evaluation of potential social consequences of metaverse deployment on communities, stakeholder groups, and societal well-being.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:community-consultation",
+        "label": "Community Consultation"
+      },
+      {
+        "id": "urn:visionflow:linked:impact-metrics",
+        "label": "Impact Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:visionflow:linked:impact-indicators",
+        "label": "Impact Indicators"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-mapping",
+        "label": "Stakeholder Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:community-protection",
+        "label": "Community Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-development",
+        "label": "Policy Development"
+      },
+      {
+        "id": "urn:visionflow:linked:responsible-deployment",
+        "label": "Responsible Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-alignment",
+        "label": "Stakeholder Alignment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "community-consultation",
+      "label": "Community Consultation"
+    },
+    {
+      "slug": "community-engagement",
+      "label": "Community Engagement"
+    },
+    {
+      "slug": "community-protection",
+      "label": "Community Protection"
+    },
+    {
+      "slug": "compliance-management",
+      "label": "Compliance Management"
+    },
+    {
+      "slug": "data-collection",
+      "label": "Data Collection"
+    },
+    {
+      "slug": "ethics-framework",
+      "label": "Ethics Framework"
+    },
+    {
+      "slug": "impact-indicators",
+      "label": "Impact Indicators"
+    },
+    {
+      "slug": "impact-metrics",
+      "label": "Impact Metrics"
+    },
+    {
+      "slug": "iso-26000",
+      "label": "ISO 26000"
+    },
+    {
+      "slug": "policy-development",
+      "label": "Policy Development"
+    },
+    {
+      "slug": "responsible-deployment",
+      "label": "Responsible Deployment"
+    },
+    {
+      "slug": "social-responsibility-policy",
+      "label": "Social Responsibility Policy"
+    },
+    {
+      "slug": "stakeholder-alignment",
+      "label": "Stakeholder Alignment"
+    },
+    {
+      "slug": "stakeholder-analysis",
+      "label": "Stakeholder Analysis"
+    },
+    {
+      "slug": "stakeholder-mapping",
+      "label": "Stakeholder Mapping"
+    },
+    {
+      "slug": "un-sdg-toolkit",
+      "label": "UN SDG Toolkit"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

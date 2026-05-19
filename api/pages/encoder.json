@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:f8ef6ff99e202f1935cdfe1d54375499d8f0efb8ac848b3a0eb073b7cc5c6c34",
+  "title": "Encoder",
+  "slug": "encoder",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:encoder",
+  "domain": "artificial-intelligence",
+  "definition": "The component in an encoder-decoder architecture that processes the input sequence and produces contextualised representations, using self-attention and feed-forward layers.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "artificial intelligence"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "linear-encoder",
+      "label": "Linear Encoder"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "rotary-encoder",
+      "label": "Rotary Encoder"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

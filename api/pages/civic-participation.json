@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:dc187a19e10d1bf7958a25b79ecbb27c639254e59780103bba44ccad8bcbda71",
+  "title": "Civic Participation",
+  "slug": "civic-participation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:civic-participation",
+  "domain": "spatial-computing",
+  "definition": "The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:democratic-engagement",
+      "label": "Democratic Engagement"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-platform",
+        "label": "Digital Platform"
+      },
+      {
+        "id": "urn:visionflow:owl:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collective-governance",
+        "label": "Collective Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-democracy",
+        "label": "Digital Democracy"
+      },
+      {
+        "id": "urn:visionflow:linked:public-deliberation",
+        "label": "Public Deliberation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collective-governance",
+      "label": "Collective Governance"
+    },
+    {
+      "slug": "digital-democracy",
+      "label": "Digital Democracy"
+    },
+    {
+      "slug": "public-deliberation",
+      "label": "Public Deliberation"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "democratic-engagement",
+      "label": "Democratic Engagement"
+    },
+    {
+      "slug": "digital-platform",
+      "label": "Digital Platform"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    }
+  ]
+}

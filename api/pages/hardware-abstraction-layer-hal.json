@@ -1,0 +1,131 @@
+{
+  "id": "urn:visionflow:page:b52c36d5510d639535056cd9fb9768390a11f573d62d905f364b8db0c3a2ba0b",
+  "title": "Hardware Abstraction Layer (HAL)",
+  "slug": "hardware-abstraction-layer-hal",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
+  "domain": "spatial-computing",
+  "definition": "Software interface that lets applications interact with hardware without device-specific code, providing a standardized abstraction between software and hardware components.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:abstraction-modules",
+        "label": "Abstraction Modules"
+      },
+      {
+        "id": "urn:visionflow:linked:api-interfaces",
+        "label": "API Interfaces"
+      },
+      {
+        "id": "urn:visionflow:linked:device-drivers",
+        "label": "Device Drivers"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:hardware-resources",
+        "label": "Hardware Resources"
+      },
+      {
+        "id": "urn:visionflow:owl:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:device-portability",
+        "label": "Device Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-independence",
+        "label": "Platform Independence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:unified-hardware-access",
+        "label": "Unified Hardware Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abstraction-modules",
+      "label": "Abstraction Modules"
+    },
+    {
+      "slug": "api-interfaces",
+      "label": "API Interfaces"
+    },
+    {
+      "slug": "device-drivers",
+      "label": "Device Drivers"
+    },
+    {
+      "slug": "device-portability",
+      "label": "Device Portability"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "platform-independence",
+      "label": "Platform Independence"
+    },
+    {
+      "slug": "hardware-resources",
+      "label": "Hardware Resources"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "unified-hardware-access",
+      "label": "Unified Hardware Access"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "human-interface-layer-hil",
+      "label": "Human Interface Layer (HIL)"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    }
+  ]
+}

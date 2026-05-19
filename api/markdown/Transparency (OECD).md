@@ -1,21 +1,221 @@
-iri:: http://narrativegoldmine.com/metaverse#TransparencyOECD
-uri:: urn:visionclaw:concept:artificial-intelligence:transparency-oecd
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:transparency-oecd
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Transparency (OECD)
-content-hash:: sha256-12-7566b316210d
-legacy-term-id:: AI-0161
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#TransparencyOECD
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:transparency-oecd
 public:: true
+
+# Transparency (OECD)
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992",
+  "@type": "Page",
+  "vc:slug": "transparency-oecd",
+  "title": "Transparency (OECD)",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:contestability",
+      "vc:label": "contestability"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-decision-making",
+      "vc:label": "Informed decision-making"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust",
+      "vc:label": "trust"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7566b316210d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#TransparencyOECD"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0161"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Transparency (OECD)"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:transparency-oecd"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:transparency-oecd"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:transparency-oecd",
+  "@type": "OntologyClass",
+  "label": "Transparency (OECD)",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI actors should commit to transparency and responsible disclosure regarding AI systems, providing sufficient information to enable people to understand AI outcomes, challenge decisions and participate meaningfully in AI-influenced processes.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:contestability",
+      "vc:label": "contestability"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-decision-making",
+      "vc:label": "Informed decision-making"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust",
+      "vc:label": "trust"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:transparency-oecd:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[contestability]]",
+      "resolved": "urn:visionflow:linked:contestability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Informed decision-making]]",
+      "resolved": "urn:visionflow:linked:informed-decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[trust]]",
+      "resolved": "urn:visionflow:linked:trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI actors should commit to transparency and responsible disclosure regarding AI systems, providing sufficient information to enable people to understand AI outcomes, challenge decisions and participate meaningfully in AI-influenced processes.

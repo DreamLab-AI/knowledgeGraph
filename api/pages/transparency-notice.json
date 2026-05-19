@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:6327e3399b203c1218da33c0ca4a1631ea14be21efe38ff6e6e95768b32860d3",
+  "title": "Transparency Notice",
+  "slug": "transparency-notice",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transparency-notice",
+  "domain": "artificial-intelligence",
+  "definition": "A formal disclosure document or notification that informs users about data collection practices, processing purposes, privacy policies, and their rights regarding personal information handling in digital platforms and metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:privacy-disclosure",
+      "label": "Privacy Disclosure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "privacy-disclosure",
+      "label": "Privacy Disclosure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    }
+  ]
+}

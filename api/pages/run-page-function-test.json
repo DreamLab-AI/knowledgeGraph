@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:74caaa830f4500ba47544329ff895c723ed871d65bb77821f6eb8bbb4fcfc3a2",
+  "title": "Run Page Function Test",
+  "slug": "run-page-function-test",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:run-page-function-test",
+  "domain": "infrastructure",
+  "definition": "Run Page Function Test is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

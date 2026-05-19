@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:60751b0b70dada97d41620130d34db9031b0dca47c56f85302d01310e70a8edd",
+  "title": "Replication System",
+  "slug": "replication-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:replication-system",
+  "domain": "infrastructure",
+  "definition": "ReplicationSystem is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance-system",
+      "label": "Fault Tolerance System"
+    }
+  ]
+}

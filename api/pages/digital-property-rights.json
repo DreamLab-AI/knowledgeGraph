@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:d7315b1f408a335e36c3d837135d2bcd7a72b3ec67298c3bf45e955836aa2bae",
+  "title": "Digital Property Rights",
+  "slug": "digital-property-rights",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-property-rights",
+  "domain": "spatial-computing",
+  "definition": "Digital Property Rights is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "virtual-land-rights",
+      "label": "Virtual Land Rights"
+    }
+  ]
+}

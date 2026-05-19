@@ -1,21 +1,473 @@
-iri:: http://narrativegoldmine.com/infrastructure#IdentityProviderIdP
-uri:: urn:visionclaw:concept:infrastructure:identity-provider-idp
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:identity-provider-idp
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Identity Provider (IdP)
-content-hash:: sha256-12-e17d0b43bfc4
-legacy-term-id:: 20283
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#IdentityProviderIdP
+legacy_uri:: urn:visionclaw:concept:infrastructure:identity-provider-idp
 public:: true
+
+# Identity Provider (IdP)
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87",
+  "@type": "Page",
+  "vc:slug": "identity-provider-id-p",
+  "title": "Identity Provider (IdP)",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:authentication-protocol",
+      "vc:label": "Authentication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:authentication-server",
+      "vc:label": "Authentication Server"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-schema",
+      "vc:label": "Credential Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-store",
+      "vc:label": "Credential Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-key-store",
+      "vc:label": "Cryptographic Key Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:directory-service",
+      "vc:label": "Directory Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:federation-infrastructure",
+      "vc:label": "Federation Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:ietf-oauth",
+      "vc:label": "IETF OAuth"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-factor-authentication",
+      "vc:label": "Multi-Factor Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:oasis-saml",
+      "vc:label": "OASIS SAML"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-id-foundation",
+      "vc:label": "OpenID Foundation"
+    },
+    {
+      "@id": "urn:visionflow:linked:pki-infrastructure",
+      "vc:label": "PKI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:session-manager",
+      "vc:label": "Session Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-sign-on-sso",
+      "vc:label": "Single Sign-On (SSO)"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-issuer",
+      "vc:label": "Token Issuer"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-database",
+      "vc:label": "User Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-directory",
+      "vc:label": "User Directory"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-provisioning",
+      "vc:label": "User Provisioning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-federation",
+      "vc:label": "Identity Federation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management-system",
+      "vc:label": "Identity Management System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:policy-engine",
+      "vc:label": "Policy Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e17d0b43bfc4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#IdentityProviderIdP"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20283"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Identity Provider (IdP)"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:identity-provider-idp"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:identity-provider-idp"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:identity-provider-id-p",
+  "@type": "OntologyClass",
+  "label": "Identity Provider (IdP)",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:federation-infrastructure",
+      "vc:label": "Federation Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management-system",
+      "vc:label": "Identity Management System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:authentication-server",
+      "vc:label": "Authentication Server"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-store",
+      "vc:label": "Credential Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:session-manager",
+      "vc:label": "Session Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-issuer",
+      "vc:label": "Token Issuer"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-directory",
+      "vc:label": "User Directory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:policy-engine",
+      "vc:label": "Policy Engine"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:authentication-protocol",
+      "vc:label": "Authentication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-key-store",
+      "vc:label": "Cryptographic Key Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-database",
+      "vc:label": "User Database"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:multi-factor-authentication",
+      "vc:label": "Multi-Factor Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-sign-on-sso",
+      "vc:label": "Single Sign-On (SSO)"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-provisioning",
+      "vc:label": "User Provisioning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-federation",
+      "vc:label": "Identity Federation"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:credential-schema",
+      "vc:label": "Credential Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:directory-service",
+      "vc:label": "Directory Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:pki-infrastructure",
+      "vc:label": "PKI Infrastructure"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:identity-provider-id-p:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Authentication Protocol]]",
+      "resolved": "urn:visionflow:linked:authentication-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Authentication Server]]",
+      "resolved": "urn:visionflow:linked:authentication-server",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Schema]]",
+      "resolved": "urn:visionflow:linked:credential-schema",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Store]]",
+      "resolved": "urn:visionflow:linked:credential-store",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Key Store]]",
+      "resolved": "urn:visionflow:linked:cryptographic-key-store",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Directory Service]]",
+      "resolved": "urn:visionflow:linked:directory-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Federation Infrastructure]]",
+      "resolved": "urn:visionflow:linked:federation-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IETF OAuth]]",
+      "resolved": "urn:visionflow:linked:ietf-oauth",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Factor Authentication]]",
+      "resolved": "urn:visionflow:linked:multi-factor-authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OASIS SAML]]",
+      "resolved": "urn:visionflow:linked:oasis-saml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenID Foundation]]",
+      "resolved": "urn:visionflow:linked:open-id-foundation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PKI Infrastructure]]",
+      "resolved": "urn:visionflow:linked:pki-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Session Manager]]",
+      "resolved": "urn:visionflow:linked:session-manager",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Single Sign-On (SSO)]]",
+      "resolved": "urn:visionflow:linked:single-sign-on-sso",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Token Issuer]]",
+      "resolved": "urn:visionflow:linked:token-issuer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Database]]",
+      "resolved": "urn:visionflow:linked:user-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Directory]]",
+      "resolved": "urn:visionflow:linked:user-directory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Provisioning]]",
+      "resolved": "urn:visionflow:linked:user-provisioning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Access Control]]",
+      "resolved": "urn:visionflow:owl:class:access-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Federation]]",
+      "resolved": "urn:visionflow:owl:class:identity-federation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Management System]]",
+      "resolved": "urn:visionflow:owl:class:identity-management-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Policy Engine]]",
+      "resolved": "urn:visionflow:owl:class:policy-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.

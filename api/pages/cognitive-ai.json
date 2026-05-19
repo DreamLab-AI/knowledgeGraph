@@ -1,0 +1,656 @@
+{
+  "id": "urn:visionflow:page:948628ee27addcb517cbc353b4143cfed9a93c077f5fe0da19a9e6961203d863",
+  "title": "Cognitive AI",
+  "slug": "cognitive-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cognitive-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Cognitive AI is the family of artificial-intelligence systems built around cognitively-plausible architectures that explicitly model the components and information-flow of human cognition \u2014 working memory, declarative and procedural long-term memory, perception-action loops, attention, production-rule firing, chunking, goal stacks, metacognitive control \u2014 rather than treating intelligence as an undifferentiated statistical mapping from inputs to outputs, instantiating in classical Unified Theories of Cognition (Newell 1990) realised through symbolic cognitive architectures SOAR (Soar Technology Inc / University of Michigan, originated Carnegie Mellon 1983, ~280 publications, fielded in TacAir-Soar piloting 100+ simulated fighter aircraft in DARPA STOW-97 exercise) and ACT-R (Carnegie Mellon, John Anderson 1993-present, 1,200+ derivative models, ~7,500 citations on ACT-R 5.0 paper), hybrid neuro-symbolic architectures CLARION (Ron Sun, RPI, dual-process implicit/explicit learning, 1997-present), LIDA (Stan Franklin, Memphis, global-workspace consciousness model, 2009-present), Sigma (Paul Rosenbloom, USC ICT, graphical-model unification, 2011-present), Companion cognitive architectu",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "id": "urn:visionflow:linked:cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "id": "urn:visionflow:linked:hybrid-ai",
+      "label": "Hybrid AI"
+    },
+    {
+      "id": "urn:visionflow:linked:neurosymbolic-ai",
+      "label": "Neurosymbolic AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:chunking-mechanism",
+        "label": "Chunking Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:declarative-memory",
+        "label": "Declarative Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-stack",
+        "label": "Goal Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:metacognitive-controller",
+        "label": "Metacognitive Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-module",
+        "label": "Motor Module"
+      },
+      {
+        "id": "urn:visionflow:linked:perception-module",
+        "label": "Perception Module"
+      },
+      {
+        "id": "urn:visionflow:linked:procedural-memory",
+        "label": "Procedural Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:production-rules",
+        "label": "Production Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:working-memory",
+        "label": "Working Memory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-indexing",
+        "label": "Memory Indexing"
+      },
+      {
+        "id": "urn:visionflow:linked:symbol-grounding",
+        "label": "Symbol Grounding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cognitive-modelling",
+        "label": "Cognitive Modelling"
+      },
+      {
+        "id": "urn:visionflow:linked:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-support-system",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:visionflow:linked:explainable-reasoning",
+        "label": "Explainable Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:human-machine-teaming",
+        "label": "Human-Machine Teaming"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:act-r",
+        "label": "ACT-R"
+      },
+      {
+        "id": "urn:visionflow:linked:clarion",
+        "label": "CLARION"
+      },
+      {
+        "id": "urn:visionflow:linked:co-ala",
+        "label": "CoALA"
+      },
+      {
+        "id": "urn:visionflow:linked:companion-cognitive-architecture",
+        "label": "Companion Cognitive Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:lida",
+        "label": "LIDA"
+      },
+      {
+        "id": "urn:visionflow:linked:nars",
+        "label": "NARS"
+      },
+      {
+        "id": "urn:visionflow:linked:sigma-architecture",
+        "label": "Sigma Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:soar",
+        "label": "SOAR"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aaai-cognitive-systems",
+      "label": "AAAI Cognitive Systems"
+    },
+    {
+      "slug": "act-r",
+      "label": "ACT-R"
+    },
+    {
+      "slug": "advances-in-cognitive-systems-journal",
+      "label": "Advances in Cognitive Systems Journal"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "anderson-1993-rules-of-the-mind",
+      "label": "Anderson 1993 Rules of the Mind"
+    },
+    {
+      "slug": "anderson-2004-act-r-integrated-theory-of-the-mind",
+      "label": "Anderson 2004 ACT-R Integrated Theory of the Mind"
+    },
+    {
+      "slug": "architecture-layer",
+      "label": "ArchitectureLayer"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "black-box-machine-learning",
+      "label": "Black-Box Machine Learning"
+    },
+    {
+      "slug": "chunking-mechanism",
+      "label": "Chunking Mechanism"
+    },
+    {
+      "slug": "clarion",
+      "label": "CLARION"
+    },
+    {
+      "slug": "clark-2008-supersizing-the-mind",
+      "label": "Clark 2008 Supersizing the Mind"
+    },
+    {
+      "slug": "clark-2023-the-experience-machine",
+      "label": "Clark 2023 The Experience Machine"
+    },
+    {
+      "slug": "co-ala",
+      "label": "CoALA"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "cognitive-engineering",
+      "label": "Cognitive Engineering"
+    },
+    {
+      "slug": "cognitive-modelling",
+      "label": "Cognitive Modelling"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "CognitiveScienceDomain"
+    },
+    {
+      "slug": "cognitive-science-society",
+      "label": "Cognitive Science Society"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "companion-cognitive-architecture",
+      "label": "Companion Cognitive Architecture"
+    },
+    {
+      "slug": "computational-neuroscience",
+      "label": "Computational Neuroscience"
+    },
+    {
+      "slug": "conflict-resolution",
+      "label": "Conflict Resolution"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "darpa-ai-next-2018",
+      "label": "DARPA AI Next 2018"
+    },
+    {
+      "slug": "darpa-mcs-machine-common-sense-programme",
+      "label": "DARPA MCS Machine Common Sense Programme"
+    },
+    {
+      "slug": "decision-support-system",
+      "label": "Decision Support System"
+    },
+    {
+      "slug": "declarative-memory",
+      "label": "Declarative Memory"
+    },
+    {
+      "slug": "defence-decision-support",
+      "label": "Defence Decision Support"
+    },
+    {
+      "slug": "education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "end-to-end-neural-network",
+      "label": "End-to-End Neural Network"
+    },
+    {
+      "slug": "explainable-reasoning",
+      "label": "Explainable Reasoning"
+    },
+    {
+      "slug": "forbus-2009-companion-cognitive-systems",
+      "label": "Forbus 2009 Companion Cognitive Systems"
+    },
+    {
+      "slug": "franklin-patterson-2006-lida",
+      "label": "Franklin Patterson 2006 LIDA"
+    },
+    {
+      "slug": "friston-2010-free-energy-principle",
+      "label": "Friston 2010 Free Energy Principle"
+    },
+    {
+      "slug": "furber-2014-spi-nnaker-project",
+      "label": "Furber 2014 SpiNNaker Project"
+    },
+    {
+      "slug": "global-workspace-theory",
+      "label": "Global Workspace Theory"
+    },
+    {
+      "slug": "goal-stack",
+      "label": "Goal Stack"
+    },
+    {
+      "slug": "hassabis-2024-nobel-lecture-cognitive-ai",
+      "label": "Hassabis 2024 Nobel Lecture Cognitive AI"
+    },
+    {
+      "slug": "human-machine-teaming",
+      "label": "Human-Machine Teaming"
+    },
+    {
+      "slug": "hybrid-ai",
+      "label": "Hybrid AI"
+    },
+    {
+      "slug": "ibm-granite-cognition-announcement-tech-xchange-2024",
+      "label": "IBM Granite Cognition Announcement TechXchange 2024"
+    },
+    {
+      "slug": "iccm-conference",
+      "label": "ICCM Conference"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "intelligent-tutoring-system",
+      "label": "Intelligent Tutoring System"
+    },
+    {
+      "slug": "jones-et-al-1999-tac-air-soar-stow-97",
+      "label": "Jones et al 1999 TacAir-Soar STOW-97"
+    },
+    {
+      "slug": "koedinger-anderson-1997-cognitive-tutor-algebra",
+      "label": "Koedinger Anderson 1997 Cognitive Tutor Algebra"
+    },
+    {
+      "slug": "laird-2012-soar-cognitive-architecture",
+      "label": "Laird 2012 Soar Cognitive Architecture"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "lida",
+      "label": "LIDA"
+    },
+    {
+      "slug": "memory-indexing",
+      "label": "Memory Indexing"
+    },
+    {
+      "slug": "metacognitive-controller",
+      "label": "Metacognitive Controller"
+    },
+    {
+      "slug": "motor-module",
+      "label": "Motor Module"
+    },
+    {
+      "slug": "nars",
+      "label": "NARS"
+    },
+    {
+      "slug": "neurosymbolic-ai",
+      "label": "Neurosymbolic AI"
+    },
+    {
+      "slug": "newell-1990-unified-theories-of-cognition",
+      "label": "Newell 1990 Unified Theories of Cognition"
+    },
+    {
+      "slug": "newell-simon-1976-physical-symbol-system",
+      "label": "Newell Simon 1976 Physical Symbol System"
+    },
+    {
+      "slug": "pane-et-al-2014-cognitive-tutor-rct",
+      "label": "Pane et al 2014 Cognitive Tutor RCT"
+    },
+    {
+      "slug": "park-et-al-2023-generative-agents",
+      "label": "Park et al 2023 Generative Agents"
+    },
+    {
+      "slug": "perception-module",
+      "label": "Perception Module"
+    },
+    {
+      "slug": "pilot-training",
+      "label": "Pilot Training"
+    },
+    {
+      "slug": "predictive-processing",
+      "label": "Predictive Processing"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
+      "slug": "procedural-memory",
+      "label": "Procedural Memory"
+    },
+    {
+      "slug": "production-rules",
+      "label": "Production Rules"
+    },
+    {
+      "slug": "production-system",
+      "label": "Production System"
+    },
+    {
+      "slug": "pure-symbolic-ai",
+      "label": "Pure Symbolic AI"
+    },
+    {
+      "slug": "rosenbloom-2016-sigma-cognitive-architecture",
+      "label": "Rosenbloom 2016 Sigma Cognitive Architecture"
+    },
+    {
+      "slug": "semantic-network",
+      "label": "Semantic Network"
+    },
+    {
+      "slug": "shanahan-2024-talking-about-large-language-models",
+      "label": "Shanahan 2024 Talking About Large Language Models"
+    },
+    {
+      "slug": "shanahan-et-al-2023-role-play-with-llms",
+      "label": "Shanahan et al 2023 Role Play with LLMs"
+    },
+    {
+      "slug": "sigma-architecture",
+      "label": "Sigma Architecture"
+    },
+    {
+      "slug": "smolensky-1990-tensor-product-variable-binding",
+      "label": "Smolensky 1990 Tensor Product Variable Binding"
+    },
+    {
+      "slug": "soar",
+      "label": "SOAR"
+    },
+    {
+      "slug": "soar-workshop",
+      "label": "Soar Workshop"
+    },
+    {
+      "slug": "spreading-activation",
+      "label": "Spreading Activation"
+    },
+    {
+      "slug": "statistical-nlp",
+      "label": "Statistical NLP"
+    },
+    {
+      "slug": "sumers-et-al-2024-co-ala-cognitive-architectures-for-language-agents",
+      "label": "Sumers et al 2024 CoALA Cognitive Architectures for Language Agents"
+    },
+    {
+      "slug": "sun-2006-clarion",
+      "label": "Sun 2006 CLARION"
+    },
+    {
+      "slug": "symbol-grounding",
+      "label": "Symbol Grounding"
+    },
+    {
+      "slug": "uk-mod-defence-ai-strategy-2022",
+      "label": "UK MOD Defence AI Strategy 2022"
+    },
+    {
+      "slug": "vector-embedding",
+      "label": "Vector Embedding"
+    },
+    {
+      "slug": "wang-2013-non-axiomatic-logic",
+      "label": "Wang 2013 Non-Axiomatic Logic"
+    },
+    {
+      "slug": "wang-et-al-2023-voyager",
+      "label": "Wang et al 2023 Voyager"
+    },
+    {
+      "slug": "working-memory",
+      "label": "Working Memory"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

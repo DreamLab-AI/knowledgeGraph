@@ -1,0 +1,507 @@
+{
+  "id": "urn:visionflow:page:c40b06eae74f3185404664d43c30f07d665f79c6e218d1f8a8dd44a1d6d29d61",
+  "title": "Decentralised file storage",
+  "slug": "decentralised-file-storage",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralised-file-storage",
+  "domain": "infrastructure",
+  "definition": "Decentralised file storage denotes a class of infrastructure protocols and networks that disaggregate object/blob persistence across geographically distributed, mutually untrusting node operators using content-addressing, cryptographic accountability, and (in most implementations) crypto-economic incentives, in contrast to single-operator cloud object stores (S3, GCS, R2) and CDN edges (Cloudflare, Akamai, Fastly), spanning content-addressed peer-to-peer networks ([[IPFS]] launched 2015 by Juan Benet, libp2p transport, CID multi-hash addressing producing self-verifying identifiers like bafybeig..., DHT-based Kademlia content routing across 250K+ public nodes, retrieval bitswap protocol exchanging blocks 4KB-1MB), permanent storage chains ([[Arweave]] mainnet 2018 founded by Sam Williams Sevki Hasirci, \"blockweave\" SPoRA Succinct Proofs of Random Access consensus, single up-front AR-token payment endowing 200-year minimum persistence via 20%/year storage cost decline model, ~150PB stored 2025, permaweb decentralized web served via gateways arweave.net/arweave.dev), incentivized retrieval markets ([[Filecoin]] mainnet October 2020 also by Juan Benet/Protocol Labs as IPFS's incentive ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:content-addressed-storage",
+      "label": "Content-Addressed Storage"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "id": "urn:visionflow:linked:permissionless-protocol",
+      "label": "Permissionless Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:web3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:visionflow:linked:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:visionflow:linked:pinning-service",
+        "label": "Pinning Service"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-market",
+        "label": "Retrieval Market"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-proof",
+        "label": "Storage Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-provider",
+        "label": "Storage Provider"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:visionflow:linked:disk-storage",
+        "label": "Disk Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:nft-metadata-persistence",
+        "label": "NFT Metadata Persistence"
+      },
+      {
+        "id": "urn:visionflow:linked:permaweb",
+        "label": "Permaweb"
+      },
+      {
+        "id": "urn:visionflow:linked:verifiable-storage",
+        "label": "Verifiable Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bitswap-protocol",
+        "label": "Bitswap Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "id": "urn:visionflow:linked:proof-of-replication",
+        "label": "Proof of Replication"
+      },
+      {
+        "id": "urn:visionflow:linked:proof-of-spacetime",
+        "label": "Proof of Spacetime"
+      },
+      {
+        "id": "urn:visionflow:linked:reed-solomon-erasure-coding",
+        "label": "Reed-Solomon Erasure Coding"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-dataset-distribution",
+      "label": "AI Dataset Distribution"
+    },
+    {
+      "slug": "ar-io-permanode-network-documentation",
+      "label": "ar.io Permanode Network Documentation"
+    },
+    {
+      "slug": "arweave",
+      "label": "Arweave"
+    },
+    {
+      "slug": "ateniese-et-al-2007-provable-data-possession",
+      "label": "Ateniese et al 2007 Provable Data Possession"
+    },
+    {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    },
+    {
+      "slug": "benet-2014-ipfs-whitepaper",
+      "label": "Benet 2014 IPFS Whitepaper"
+    },
+    {
+      "slug": "bitswap-protocol",
+      "label": "Bitswap Protocol"
+    },
+    {
+      "slug": "car-file",
+      "label": "CAR File"
+    },
+    {
+      "slug": "car-file-specifications",
+      "label": "CAR File Specifications"
+    },
+    {
+      "slug": "centralised-file-server",
+      "label": "Centralised File Server"
+    },
+    {
+      "slug": "cid",
+      "label": "CID"
+    },
+    {
+      "slug": "cloud-object-storage",
+      "label": "Cloud Object Storage"
+    },
+    {
+      "slug": "content-addressed-storage",
+      "label": "Content-Addressed Storage"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "content-identifier",
+      "label": "Content Identifier"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "decentralized-application",
+      "label": "Decentralized Application"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "decentralized-web",
+      "label": "Decentralized Web"
+    },
+    {
+      "slug": "disk-storage",
+      "label": "Disk Storage"
+    },
+    {
+      "slug": "distributed-hash-table",
+      "label": "Distributed Hash Table"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "eip-4844-blob-transactions",
+      "label": "EIP-4844 Blob Transactions"
+    },
+    {
+      "slug": "electric-capital-developer-report-2024",
+      "label": "Electric Capital Developer Report 2024"
+    },
+    {
+      "slug": "erasure-coding",
+      "label": "Erasure Coding"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "filecoin-foundation-network-statistics",
+      "label": "Filecoin Foundation Network Statistics"
+    },
+    {
+      "slug": "filecoin-specification",
+      "label": "Filecoin Specification"
+    },
+    {
+      "slug": "fisch-2019-tight-proofs-of-space",
+      "label": "Fisch 2019 Tight Proofs of Space"
+    },
+    {
+      "slug": "fisch-et-al-2018-scaling-po-rep",
+      "label": "Fisch et al 2018 Scaling PoRep"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "ipfs-specifications",
+      "label": "IPFS Specifications"
+    },
+    {
+      "slug": "ipld",
+      "label": "IPLD"
+    },
+    {
+      "slug": "ipld-specifications",
+      "label": "IPLD Specifications"
+    },
+    {
+      "slug": "juels-kaliski-2007-pors",
+      "label": "Juels Kaliski 2007 PORs"
+    },
+    {
+      "slug": "kademlia-dht",
+      "label": "Kademlia DHT"
+    },
+    {
+      "slug": "libp2p",
+      "label": "libp2p"
+    },
+    {
+      "slug": "maymounkov-mazieres-2002-kademlia",
+      "label": "Maymounkov Mazieres 2002 Kademlia"
+    },
+    {
+      "slug": "messari-decentralized-storage-report-2025",
+      "label": "Messari Decentralized Storage Report 2025"
+    },
+    {
+      "slug": "miller-et-al-2014-permacoin",
+      "label": "Miller et al 2014 Permacoin"
+    },
+    {
+      "slug": "multiformats",
+      "label": "Multiformats"
+    },
+    {
+      "slug": "multihash",
+      "label": "Multihash"
+    },
+    {
+      "slug": "mysten-labs-2024-walrus-paper",
+      "label": "Mysten Labs 2024 Walrus Paper"
+    },
+    {
+      "slug": "network-attached-storage",
+      "label": "Network Attached Storage"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nft-metadata-persistence",
+      "label": "NFT Metadata Persistence"
+    },
+    {
+      "slug": "permaweb",
+      "label": "Permaweb"
+    },
+    {
+      "slug": "permissionless-protocol",
+      "label": "Permissionless Protocol"
+    },
+    {
+      "slug": "pinning-service",
+      "label": "Pinning Service"
+    },
+    {
+      "slug": "proof-of-replication",
+      "label": "Proof of Replication"
+    },
+    {
+      "slug": "proof-of-spacetime",
+      "label": "Proof of Spacetime"
+    },
+    {
+      "slug": "protocol-labs-2017-filecoin-whitepaper",
+      "label": "Protocol Labs 2017 Filecoin Whitepaper"
+    },
+    {
+      "slug": "rashmi-et-al-2014-hitchhikers-erasure-coding",
+      "label": "Rashmi et al 2014 Hitchhikers Erasure Coding"
+    },
+    {
+      "slug": "reed-solomon-erasure-coding",
+      "label": "Reed-Solomon Erasure Coding"
+    },
+    {
+      "slug": "retrieval-market",
+      "label": "Retrieval Market"
+    },
+    {
+      "slug": "sia",
+      "label": "Sia"
+    },
+    {
+      "slug": "stoica-et-al-2001-chord",
+      "label": "Stoica et al 2001 Chord"
+    },
+    {
+      "slug": "storage-proof",
+      "label": "Storage Proof"
+    },
+    {
+      "slug": "storage-provider",
+      "label": "Storage Provider"
+    },
+    {
+      "slug": "storj",
+      "label": "Storj"
+    },
+    {
+      "slug": "storj-dcs-documentation",
+      "label": "Storj DCS Documentation"
+    },
+    {
+      "slug": "storj-labs-v3-whitepaper",
+      "label": "Storj Labs V3 Whitepaper"
+    },
+    {
+      "slug": "swarm",
+      "label": "Swarm"
+    },
+    {
+      "slug": "tron-2019-book-of-swarm",
+      "label": "Tron 2019 Book of Swarm"
+    },
+    {
+      "slug": "ucan",
+      "label": "UCAN"
+    },
+    {
+      "slug": "ucan-specification",
+      "label": "UCAN Specification"
+    },
+    {
+      "slug": "ucan-working-group",
+      "label": "UCAN Working Group"
+    },
+    {
+      "slug": "verifiable-storage",
+      "label": "Verifiable Storage"
+    },
+    {
+      "slug": "vorick-champine-2014-sia-whitepaper",
+      "label": "Vorick Champine 2014 Sia Whitepaper"
+    },
+    {
+      "slug": "walrus",
+      "label": "Walrus"
+    },
+    {
+      "slug": "web3-domain",
+      "label": "Web3Domain"
+    },
+    {
+      "slug": "web3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "slug": "wilcox-o-hearn-warner-2008-tahoe-lafs",
+      "label": "Wilcox-O'Hearn Warner 2008 Tahoe-LAFS"
+    },
+    {
+      "slug": "williams-diao-2018-arweave-yellow-paper",
+      "label": "Williams Diao 2018 Arweave Yellow Paper"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "zk-SNARK"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "StorageLayer"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "backlinks": []
+}

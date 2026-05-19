@@ -1,24 +1,487 @@
-iri:: http://narrativegoldmine.com/spatial-computing#CulturalHeritageXRExperience
-uri:: urn:visionclaw:concept:spatial-computing:cultural-heritage-xr-experience
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:cultural-heritage-xr-experience
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Cultural Heritage XR Experience
-content-hash:: sha256-12-36dd5e0579fa
-legacy-term-id:: MV-20300
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#CulturalHeritageXRExperience
+legacy_uri:: urn:visionclaw:concept:spatial-computing:cultural-heritage-xr-experience
 public:: true
+
+# Cultural Heritage XR Experience
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e",
+  "@type": "Page",
+  "vc:slug": "cultural-heritage-xr-experience",
+  "title": "Cultural Heritage XR Experience",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cultural-database",
+      "vc:label": "Cultural Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-education",
+      "vc:label": "Cultural Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-preservation-system",
+      "vc:label": "Cultural Heritage Preservation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-metadata",
+      "vc:label": "Cultural Metadata"
+    },
+    {
+      "@id": "urn:visionflow:linked:heritage-documentation",
+      "vc:label": "Heritage Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:heritage-tourism",
+      "vc:label": "Heritage Tourism"
+    },
+    {
+      "@id": "urn:visionflow:linked:icom-museum-definition",
+      "vc:label": "ICOM Museum Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-exhibit",
+      "vc:label": "Interactive Exhibit"
+    },
+    {
+      "@id": "urn:visionflow:linked:li-dar-scanning",
+      "vc:label": "LiDAR Scanning"
+    },
+    {
+      "@id": "urn:visionflow:linked:museum-api",
+      "vc:label": "Museum API"
+    },
+    {
+      "@id": "urn:visionflow:linked:unesco-world-heritage-convention",
+      "vc:label": "UNESCO World Heritage Convention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
+      "vc:label": "3D Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "vc:label": "3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ar-overlay",
+      "vc:label": "AR Overlay"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:archaeological-site-reconstruction",
+      "vc:label": "Archaeological Site Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:educational-narrative",
+      "vc:label": "Educational Narrative"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:photogrammetry",
+      "vc:label": "Photogrammetry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-audio-system",
+      "vc:label": "Spatial Audio System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-museum-tour",
+      "vc:label": "Virtual Museum Tour"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "vc:label": "VirtualSocietyDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-runtime-environment",
+      "vc:label": "XR Runtime Environment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-36dd5e0579fa"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#CulturalHeritageXRExperience"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-20300"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cultural Heritage XR Experience"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:cultural-heritage-xr-experience"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:cultural-heritage-xr-experience"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cultural-heritage-xr-experience",
+  "@type": "OntologyClass",
+  "label": "Cultural Heritage XR Experience",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An immersive extended reality application designed to preserve, present, and educate users about cultural heritage through interactive 3D reconstructions, AR overlays, and virtual museum experiences.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-preservation-system",
+      "vc:label": "Cultural Heritage Preservation System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:cultural-metadata",
+      "vc:label": "Cultural Metadata"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-exhibit",
+      "vc:label": "Interactive Exhibit"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
+      "vc:label": "3D Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ar-overlay",
+      "vc:label": "AR Overlay"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:educational-narrative",
+      "vc:label": "Educational Narrative"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cultural-database",
+      "vc:label": "Cultural Database"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "vc:label": "3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-audio-system",
+      "vc:label": "Spatial Audio System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-runtime-environment",
+      "vc:label": "XR Runtime Environment"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cultural-education",
+      "vc:label": "Cultural Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:heritage-tourism",
+      "vc:label": "Heritage Tourism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:archaeological-site-reconstruction",
+      "vc:label": "Archaeological Site Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-museum-tour",
+      "vc:label": "Virtual Museum Tour"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:heritage-documentation",
+      "vc:label": "Heritage Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:li-dar-scanning",
+      "vc:label": "LiDAR Scanning"
+    },
+    {
+      "@id": "urn:visionflow:linked:museum-api",
+      "vc:label": "Museum API"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:photogrammetry",
+      "vc:label": "Photogrammetry"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cultural-heritage-xr-experience:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cultural Database]]",
+      "resolved": "urn:visionflow:linked:cultural-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cultural Education]]",
+      "resolved": "urn:visionflow:linked:cultural-education",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cultural Heritage Preservation System]]",
+      "resolved": "urn:visionflow:linked:cultural-heritage-preservation-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cultural Metadata]]",
+      "resolved": "urn:visionflow:linked:cultural-metadata",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heritage Documentation]]",
+      "resolved": "urn:visionflow:linked:heritage-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heritage Tourism]]",
+      "resolved": "urn:visionflow:linked:heritage-tourism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICOM Museum Definition]]",
+      "resolved": "urn:visionflow:linked:icom-museum-definition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interactive Exhibit]]",
+      "resolved": "urn:visionflow:linked:interactive-exhibit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LiDAR Scanning]]",
+      "resolved": "urn:visionflow:linked:li-dar-scanning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Museum API]]",
+      "resolved": "urn:visionflow:linked:museum-api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UNESCO World Heritage Convention]]",
+      "resolved": "urn:visionflow:linked:unesco-world-heritage-convention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Reconstruction]]",
+      "resolved": "urn:visionflow:owl:class:3-d-reconstruction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[3D Rendering Engine]]",
+      "resolved": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AR Overlay]]",
+      "resolved": "urn:visionflow:owl:class:ar-overlay",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Archaeological Site Reconstruction]]",
+      "resolved": "urn:visionflow:owl:class:archaeological-site-reconstruction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Educational Narrative]]",
+      "resolved": "urn:visionflow:owl:class:educational-narrative",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Photogrammetry]]",
+      "resolved": "urn:visionflow:owl:class:photogrammetry",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Audio System]]",
+      "resolved": "urn:visionflow:owl:class:spatial-audio-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Museum Tour]]",
+      "resolved": "urn:visionflow:owl:class:virtual-museum-tour",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualSocietyDomain]]",
+      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[XR Runtime Environment]]",
+      "resolved": "urn:visionflow:owl:class:xr-runtime-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An immersive extended reality application designed to preserve, present, and educate users about cultural heritage through interactive 3D reconstructions, AR overlays, and virtual museum experiences.

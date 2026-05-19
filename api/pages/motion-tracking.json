@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:c5eb977950ea4a99f857a08454dbfb7cf477cc113fc85d0333ed191352d81f58",
+  "title": "Motion Tracking",
+  "slug": "motion-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:motion-tracking",
+  "domain": "robotics",
+  "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications. In XR contexts, motion tracking is fundamental to creating embodied presence by translating user movements into avatar animations and enabling natural interaction with virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:xr-input-technologies",
+      "label": "XR Input Technologies"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "active",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:embodied-presence",
+        "label": "Embodied Presence"
+      },
+      {
+        "id": "urn:visionflow:linked:gesture-control",
+        "label": "Gesture Control"
+      },
+      {
+        "id": "urn:visionflow:linked:user-identification",
+        "label": "User Identification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-animation",
+      "label": "Avatar Animation"
+    },
+    {
+      "slug": "embodied-presence",
+      "label": "Embodied Presence"
+    },
+    {
+      "slug": "gesture-control",
+      "label": "Gesture Control"
+    },
+    {
+      "slug": "user-identification",
+      "label": "User Identification"
+    },
+    {
+      "slug": "xr-input-technologies",
+      "label": "XR Input Technologies"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "human-interface-device",
+      "label": "Human Interface Device"
+    },
+    {
+      "slug": "infrared-camera",
+      "label": "Infrared Camera"
+    },
+    {
+      "slug": "spatial-tracking-system",
+      "label": "Spatial Tracking System"
+    },
+    {
+      "slug": "spatial-tracking",
+      "label": "Spatial Tracking"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "urn:visionflow:page:7671efc514c975326ef19499b3ebc0308fdab9c6ec78ee95fc861f030f7332f6",
+  "title": "Access Control",
+  "slug": "access-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:access-control",
+  "domain": "infrastructure",
+  "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:security-mechanism",
+      "label": "Security Mechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:system-security",
+        "label": "System Security"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:visionflow:linked:permission-management",
+        "label": "Permission Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authorisation",
+      "label": "Authorisation"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "permission-management",
+      "label": "Permission Management"
+    },
+    {
+      "slug": "security-mechanism",
+      "label": "Security Mechanism"
+    },
+    {
+      "slug": "system-security",
+      "label": "System Security"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "etsi-domain-data-management-cultural-heritage",
+      "label": "ETSI Domain: Data Management + Cultural Heritage"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "private-channels",
+      "label": "Private Channels"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "label": "User Agreement Compliance"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

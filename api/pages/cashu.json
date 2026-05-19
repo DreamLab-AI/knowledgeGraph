@@ -1,0 +1,792 @@
+{
+  "id": "urn:visionflow:page:bc27c5774a5d87c2cfb8f97399239cf244c51d1feee84f4dfb06b95efcd6ca33",
+  "title": "Cashu",
+  "slug": "cashu",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cashu",
+  "domain": "blockchain",
+  "definition": "**Cashu** is a free and open-source Chaumian ecash protocol designed for Bitcoin and the [[Lightning Network]], first released in October 2022 by the pseudonymous developer Calle (alias @callebtc), a PhD physicist and Bitcoin developer. Cashu implements [[David Chaum]]'s 1982 blind signature scheme \u2014 originally operationalised through [[DigiCash]] in the 1990s \u2014 to provide instant, near-free, and completely anonymous bearer instrument transactions denominated in satoshis. The protocol is defined through a numbered family of specifications called NUTs (Notation, Usage, and Terminology), which govern cryptographic primitives, mint APIs, token serialisation, optional extensions (payment conditions, offline payments, authentication), and inter-operability requirements for wallets and mints. Unlike [[Fedimint]], which federates multiple guardians into a consensus-managed custody arrangement, Cashu operates through single-operator mints: any individual or service may deploy a Cashu mint, accept Lightning deposits, issue ecash tokens, and redeem them \u2014 acting as a non-bank bearer-instrument issuer. The [[Mint]] operator cannot link the act of issuing a token to the later act of redeeming ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:bearer-instrument",
+      "label": "Bearer Instrument"
+    },
+    {
+      "id": "urn:visionflow:linked:bitcoin-layer-2",
+      "label": "Bitcoin Layer 2"
+    },
+    {
+      "id": "urn:visionflow:linked:chaumian-ecash",
+      "label": "Chaumian Ecash"
+    },
+    {
+      "id": "urn:visionflow:linked:digital-cash",
+      "label": "Digital Cash"
+    },
+    {
+      "id": "urn:visionflow:linked:privacy-protocol",
+      "label": "Privacy Protocol"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:blind-signatures",
+        "label": "Blind Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:cashu-mint",
+        "label": "Cashu Mint"
+      },
+      {
+        "id": "urn:visionflow:linked:cashu-nut-specifications",
+        "label": "Cashu NUT Specifications"
+      },
+      {
+        "id": "urn:visionflow:linked:ecash-token",
+        "label": "Ecash Token"
+      },
+      {
+        "id": "urn:visionflow:linked:keyset",
+        "label": "Keyset"
+      },
+      {
+        "id": "urn:visionflow:linked:lightning-invoice",
+        "label": "Lightning Invoice"
+      },
+      {
+        "id": "urn:visionflow:linked:proof",
+        "label": "Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:spent-token-registry",
+        "label": "Spent Token Registry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blind-signature-scheme",
+        "label": "Blind Signature Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-functions",
+        "label": "Hash Functions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anonymous-payments",
+        "label": "Anonymous Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:bearer-token-transfer",
+        "label": "Bearer Token Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-mint-payments",
+        "label": "Multi-Mint Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:offline-transactions",
+        "label": "Offline Transactions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bearer-token-model",
+        "label": "Bearer Token Model"
+      },
+      {
+        "id": "urn:visionflow:linked:chaumian-blind-signature-scheme",
+        "label": "Chaumian Blind Signature Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:dleq-proofs",
+        "label": "DLEQ Proofs"
+      },
+      {
+        "id": "urn:visionflow:linked:nut-protocol-specifications",
+        "label": "NUT Protocol Specifications"
+      },
+      {
+        "id": "urn:visionflow:linked:pay-to-pubkey-spending-conditions",
+        "label": "Pay-To-Pubkey Spending Conditions"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent-payments",
+      "label": "AI Agent Payments"
+    },
+    {
+      "slug": "anonymous-payments",
+      "label": "Anonymous Payments"
+    },
+    {
+      "slug": "ark-protocol",
+      "label": "Ark Protocol"
+    },
+    {
+      "slug": "b-money",
+      "label": "b-money"
+    },
+    {
+      "slug": "bearer-instrument",
+      "label": "Bearer Instrument"
+    },
+    {
+      "slug": "bearer-token-model",
+      "label": "Bearer Token Model"
+    },
+    {
+      "slug": "bearer-token-transfer",
+      "label": "Bearer Token Transfer"
+    },
+    {
+      "slug": "bearer-tokens",
+      "label": "Bearer Tokens"
+    },
+    {
+      "slug": "bis-2023-project-tourbillon",
+      "label": "BIS 2023 Project Tourbillon"
+    },
+    {
+      "slug": "bis-project-tourbillon",
+      "label": "BIS Project Tourbillon"
+    },
+    {
+      "slug": "bitcoin-design",
+      "label": "Bitcoin Design"
+    },
+    {
+      "slug": "bitcoin-improvement-proposals",
+      "label": "Bitcoin Improvement Proposals"
+    },
+    {
+      "slug": "bitcoin-layer-2",
+      "label": "Bitcoin Layer 2"
+    },
+    {
+      "slug": "bitcoin-magazine-2024-cashu-vision",
+      "label": "Bitcoin Magazine 2024 Cashu Vision"
+    },
+    {
+      "slug": "bitcoin-privacy-tools",
+      "label": "BitcoinPrivacyTools"
+    },
+    {
+      "slug": "bitcoin-utxo",
+      "label": "Bitcoin UTXO"
+    },
+    {
+      "slug": "bitfinex-blog-2024-cashu-ecash",
+      "label": "Bitfinex Blog 2024 Cashu Ecash"
+    },
+    {
+      "slug": "blind-signature-scheme",
+      "label": "Blind Signature Scheme"
+    },
+    {
+      "slug": "blind-signatures",
+      "label": "BlindSignatures"
+    },
+    {
+      "slug": "blind-signatures",
+      "label": "Blind Signatures"
+    },
+    {
+      "slug": "bolt11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "bolt12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "bruce-schneier",
+      "label": "Bruce Schneier"
+    },
+    {
+      "slug": "btcpay-server",
+      "label": "BTCPayServer"
+    },
+    {
+      "slug": "btrust-2024-e-cash-for-commerce",
+      "label": "BTrust 2024 E-Cash for Commerce"
+    },
+    {
+      "slug": "calle-2022-cashu-release",
+      "label": "Calle 2022 Cashu Release"
+    },
+    {
+      "slug": "calle-callebtc",
+      "label": "Calle (callebtc)"
+    },
+    {
+      "slug": "calle-cashu-vs-fedimint-stacker-news-2023",
+      "label": "Calle Cashu vs Fedimint Stacker News 2023"
+    },
+    {
+      "slug": "cashu-btc-2024-nip-61-nutzaps",
+      "label": "CashuBTC 2024 NIP-61 Nutzaps"
+    },
+    {
+      "slug": "cashu-development-kit",
+      "label": "Cashu Development Kit"
+    },
+    {
+      "slug": "cashu-highlights-q1-2025",
+      "label": "Cashu Highlights Q1 2025"
+    },
+    {
+      "slug": "cashu-highlights-q2-2025",
+      "label": "Cashu Highlights Q2 2025"
+    },
+    {
+      "slug": "cashu-highlights-q3-2025",
+      "label": "Cashu Highlights Q3 2025"
+    },
+    {
+      "slug": "cashu-mint",
+      "label": "Cashu Mint"
+    },
+    {
+      "slug": "cashu-nut-specifications",
+      "label": "Cashu NUT Specifications"
+    },
+    {
+      "slug": "cashu-v1-protocol-2023",
+      "label": "Cashu v1 Protocol 2023"
+    },
+    {
+      "slug": "cashu-zk-spending-conditions-2025",
+      "label": "Cashu ZK Spending Conditions 2025"
+    },
+    {
+      "slug": "cashubtc-nut-specifications-2022-2026",
+      "label": "cashubtc NUT Specifications 2022-2026"
+    },
+    {
+      "slug": "cdk",
+      "label": "CDK"
+    },
+    {
+      "slug": "chaum-1982-blind-signatures-for-untraceable-payments",
+      "label": "Chaum 1982 Blind Signatures for Untraceable Payments"
+    },
+    {
+      "slug": "chaum-1983-blind-signatures",
+      "label": "Chaum 1983 Blind Signatures"
+    },
+    {
+      "slug": "chaum-1985-security-without-identification",
+      "label": "Chaum 1985 Security Without Identification"
+    },
+    {
+      "slug": "chaum-moser-2022-e-cash-2-0",
+      "label": "Chaum Moser 2022 eCash 2.0"
+    },
+    {
+      "slug": "chaumian-blind-signature-scheme",
+      "label": "Chaumian Blind Signature Scheme"
+    },
+    {
+      "slug": "chaumian-ecash",
+      "label": "ChaumianEcash"
+    },
+    {
+      "slug": "chaumian-ecash",
+      "label": "Chaumian Ecash"
+    },
+    {
+      "slug": "cryptographic-protocol-layer",
+      "label": "CryptographicProtocolLayer"
+    },
+    {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "d4rp4t-2025-btcnut-server",
+      "label": "d4rp4t 2025 BTCNutServer"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
+    },
+    {
+      "slug": "deterministic-secrets",
+      "label": "DeterministicSecrets"
+    },
+    {
+      "slug": "digi-cash",
+      "label": "DigiCash"
+    },
+    {
+      "slug": "digital-cash",
+      "label": "Digital Cash"
+    },
+    {
+      "slug": "dleq-proofs",
+      "label": "DLEQ Proofs"
+    },
+    {
+      "slug": "dleqproofs",
+      "label": "DLEQProofs"
+    },
+    {
+      "slug": "e-nuts",
+      "label": "eNuts"
+    },
+    {
+      "slug": "ecash-token",
+      "label": "Ecash Token"
+    },
+    {
+      "slug": "ecb-digital-euro-ecash-track",
+      "label": "ECB Digital Euro ecash track"
+    },
+    {
+      "slug": "egge",
+      "label": "Egge"
+    },
+    {
+      "slug": "electronic-frontier-foundation",
+      "label": "Electronic Frontier Foundation"
+    },
+    {
+      "slug": "fedimint",
+      "label": "Fedimint"
+    },
+    {
+      "slug": "financial-privacy",
+      "label": "Financial Privacy"
+    },
+    {
+      "slug": "fischlin-2025-gentle-introduction-to-blind-signatures",
+      "label": "Fischlin 2025 Gentle Introduction to Blind Signatures"
+    },
+    {
+      "slug": "gandlaf",
+      "label": "Gandlaf"
+    },
+    {
+      "slug": "hash-functions",
+      "label": "Hash Functions"
+    },
+    {
+      "slug": "hashcash",
+      "label": "Hashcash"
+    },
+    {
+      "slug": "htlc-endorsement",
+      "label": "HTLC Endorsement"
+    },
+    {
+      "slug": "htlcs",
+      "label": "HTLCs"
+    },
+    {
+      "slug": "keyset",
+      "label": "Keyset"
+    },
+    {
+      "slug": "l402",
+      "label": "L402"
+    },
+    {
+      "slug": "lawrence-lessig",
+      "label": "Lawrence Lessig"
+    },
+    {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
+      "slug": "lightning-applications",
+      "label": "LightningApplications"
+    },
+    {
+      "slug": "lightning-invoice",
+      "label": "Lightning Invoice"
+    },
+    {
+      "slug": "lightning-invoices",
+      "label": "Lightning Invoices"
+    },
+    {
+      "slug": "lightning-network-privacy",
+      "label": "Lightning Network Privacy"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "lollerfirst",
+      "label": "lollerfirst"
+    },
+    {
+      "slug": "mcp-model-context-protocol",
+      "label": "MCP (Model Context Protocol)"
+    },
+    {
+      "slug": "merchant-payments",
+      "label": "Merchant Payments"
+    },
+    {
+      "slug": "mimble-wimble",
+      "label": "MimbleWimble"
+    },
+    {
+      "slug": "minibits",
+      "label": "Minibits"
+    },
+    {
+      "slug": "mint",
+      "label": "Mint"
+    },
+    {
+      "slug": "misovan",
+      "label": "Misovan"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "multi-mint-payments",
+      "label": "Multi-Mint Payments"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "nfc-payments",
+      "label": "NFC Payments"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "nostr-improvement-proposals",
+      "label": "Nostr Improvement Proposals"
+    },
+    {
+      "slug": "nut-00-cryptography-and-models",
+      "label": "NUT-00 Cryptography and Models"
+    },
+    {
+      "slug": "nut-01-mint-public-keys",
+      "label": "NUT-01 Mint Public Keys"
+    },
+    {
+      "slug": "nut-02-keysets-and-fees",
+      "label": "NUT-02 Keysets and Fees"
+    },
+    {
+      "slug": "nut-03-swapping-tokens",
+      "label": "NUT-03 Swapping Tokens"
+    },
+    {
+      "slug": "nut-04-minting-tokens",
+      "label": "NUT-04 Minting Tokens"
+    },
+    {
+      "slug": "nut-05-melting-tokens",
+      "label": "NUT-05 Melting Tokens"
+    },
+    {
+      "slug": "nut-protocol-specifications",
+      "label": "NUT Protocol Specifications"
+    },
+    {
+      "slug": "nutshell",
+      "label": "Nutshell"
+    },
+    {
+      "slug": "offline-transactions",
+      "label": "Offline Transactions"
+    },
+    {
+      "slug": "on-chain-bitcoin",
+      "label": "On-Chain Bitcoin"
+    },
+    {
+      "slug": "open-rights-group",
+      "label": "Open Rights Group"
+    },
+    {
+      "slug": "open-sats",
+      "label": "OpenSats"
+    },
+    {
+      "slug": "open-sats-2024-advancements-in-ecash",
+      "label": "OpenSats 2024 Advancements in Ecash"
+    },
+    {
+      "slug": "open-sats-2024-seventh-wave-grants",
+      "label": "OpenSats 2024 Seventh Wave Grants"
+    },
+    {
+      "slug": "open-sats-2024-sixth-wave-grants",
+      "label": "OpenSats 2024 Sixth Wave Grants"
+    },
+    {
+      "slug": "open-sats-2025-year-in-review",
+      "label": "OpenSats 2025 Year in Review"
+    },
+    {
+      "slug": "osuntokun-2023-fedimint-federated-ecash",
+      "label": "Osuntokun 2023 Fedimint Federated Ecash"
+    },
+    {
+      "slug": "pablof7z",
+      "label": "pablof7z"
+    },
+    {
+      "slug": "pablof7z-2024-nip-60-cashu-wallet",
+      "label": "pablof7z 2024 NIP-60 Cashu Wallet"
+    },
+    {
+      "slug": "paul-ohm",
+      "label": "Paul Ohm"
+    },
+    {
+      "slug": "pay-to-pubkey-spending-conditions",
+      "label": "Pay-To-Pubkey Spending Conditions"
+    },
+    {
+      "slug": "pay-to-public-key",
+      "label": "PayToPublicKey"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "PaymentSystemsDomain"
+    },
+    {
+      "slug": "popper-2015-digital-gold",
+      "label": "Popper 2015 Digital Gold"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "PrivacyDomain"
+    },
+    {
+      "slug": "privacy-international",
+      "label": "Privacy International"
+    },
+    {
+      "slug": "privacy-protocol",
+      "label": "Privacy Protocol"
+    },
+    {
+      "slug": "proof",
+      "label": "Proof"
+    },
+    {
+      "slug": "qr-codes",
+      "label": "QR Codes"
+    },
+    {
+      "slug": "secp256k1",
+      "label": "Secp256k1"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "spent-token-registry",
+      "label": "Spent Token Registry"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "swiss-national-bank-ecash-research",
+      "label": "Swiss National Bank ecash research"
+    },
+    {
+      "slug": "thesimplekid-m1sterc001guy",
+      "label": "thesimplekid (m1sterc001guy)"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
+    },
+    {
+      "slug": "vnprc",
+      "label": "vnprc"
+    },
+    {
+      "slug": "vpn",
+      "label": "VPN"
+    },
+    {
+      "slug": "wagner-1999-generalized-birthday-problem",
+      "label": "Wagner 1999 Generalized Birthday Problem"
+    },
+    {
+      "slug": "web-sockets",
+      "label": "WebSockets"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero Knowledge Proofs"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "ecash",
+      "label": "Ecash"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "EllipticCurveCryptography"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

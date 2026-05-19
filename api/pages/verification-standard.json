@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:c9cbf623bfa4f9f832419104fb23305ca4351c4acc59f12b44448fe34e67f0f4",
+  "title": "Verification Standard",
+  "slug": "verification-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:verification-standard",
+  "domain": "spatial-computing",
+  "definition": "Specifications and protocols that define how digital identities, credentials, and claims are validated and authenticated in metaverse environments, ensuring trust and security through cryptographic proofs and standardized verification processes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "carbon-neutrality-verification",
+      "label": "Carbon Neutrality Verification"
+    }
+  ]
+}

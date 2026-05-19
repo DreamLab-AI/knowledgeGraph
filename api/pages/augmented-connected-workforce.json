@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:17947a2e8d7b5b4e4cb4367f4677c1f41cf7c62e045868f087da879d5c25d0b7",
+  "title": "Augmented Connected Workforce",
+  "slug": "augmented-connected-workforce",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:augmented-connected-workforce",
+  "domain": "spatial-computing",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:54f93ad1b428598603c16d35cdf638b3bdc848c15e740e517882233c4cbd878f",
+  "title": "Industry Cloud Platforms",
+  "slug": "industry-cloud-platforms",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:industry-cloud-platforms",
+  "domain": "spatial-computing",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

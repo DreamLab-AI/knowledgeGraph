@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:2e23e4687c7fd0cd4606e636f74494ec1ce2c67335febfacf5c9844c2508f3ea",
+  "title": "Maximum Sequence Length",
+  "slug": "maximum-sequence-length",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:maximum-sequence-length",
+  "domain": "artificial-intelligence",
+  "definition": "The longest sequence of tokens that a model can process in a single forward pass, constrained by positional encoding scheme and computational resources.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

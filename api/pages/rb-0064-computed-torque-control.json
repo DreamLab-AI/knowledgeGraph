@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9708e518dcc138af598723545bf079cc9982d2a06b05177b862b5efebf4d2f35",
+  "title": "rb 0064 computed torque control",
+  "slug": "rb-0064-computed-torque-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0064-computed-torque-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:model-based-control",
+      "label": "Model Based Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

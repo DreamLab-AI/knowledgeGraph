@@ -1,0 +1,980 @@
+{
+  "id": "urn:visionflow:page:f0fbd7b069484a440ce456de630d4bdbe6f918add4c2e89d8a230578dc5e9fb2",
+  "title": "Ethereum",
+  "slug": "ethereum",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ethereum",
+  "domain": "blockchain",
+  "definition": "**Ethereum** is the leading general-purpose, Turing-complete, smart-contract-enabled public blockchain \u2014 conceived by Russian-Canadian programmer **Vitalik Buterin** in a November 2013 whitepaper titled *\"Ethereum: A Next-Generation Smart Contract and Decentralized Application Platform\"* circulated at the Bitcoin \"Crypto Renaissance\" gathering in Toronto, co-founded with Gavin Wood (architect of the Yellow Paper formal specification and the Solidity programming language), Joseph Lubin (founder of ConsenSys), Charles Hoskinson (later founder of Cardano), Anthony Di Iorio, Mihai Alisie, Amir Chetrit and Jeffrey Wilcke, funded through a July-August 2014 crowdsale that distributed ~60M ETH for ~31,500 BTC (~$18.3M at the time), launched as the **Frontier** mainnet on **30 July 2015** and evolved through successive hard-fork upgrades \u2014 Homestead (March 2016), the contentious DAO-hack hard fork (June 2016) that bifurcated the network into Ethereum (ETH, the rolled-back chain) and Ethereum Classic (ETC, the immutable chain), Byzantium and Constantinople (2017-2019), Beacon Chain genesis (1 December 2020), Altair (October 2021), the historic **Merge** on **15 September 2022** transitioning",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-computing-platform",
+      "label": "Decentralised Computing Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:layer-1-blockchain",
+      "label": "Layer 1 Blockchain"
+    },
+    {
+      "id": "urn:visionflow:linked:programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "id": "urn:visionflow:linked:proof-of-stake-network",
+      "label": "Proof of Stake Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:beacon-chain",
+        "label": "Beacon Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:blob-storage",
+        "label": "Blob Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:consensus-client",
+        "label": "Consensus Client"
+      },
+      {
+        "id": "urn:visionflow:linked:eip-1559-fee-market",
+        "label": "EIP-1559 Fee Market"
+      },
+      {
+        "id": "urn:visionflow:linked:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:visionflow:linked:execution-client",
+        "label": "Execution Client"
+      },
+      {
+        "id": "urn:visionflow:linked:gas-mechanism",
+        "label": "Gas Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:state-trie",
+        "label": "State Trie"
+      },
+      {
+        "id": "urn:visionflow:linked:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mempool",
+        "label": "Mempool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:client-diversity",
+        "label": "Client Diversity"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-signatures",
+        "label": "Cryptographic Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:validator-stake",
+        "label": "Validator Stake"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "label": "Peer to Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:non-fungible-token",
+        "label": "Non Fungible Token"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:casper-ffg",
+        "label": "Casper FFG"
+      },
+      {
+        "id": "urn:visionflow:linked:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:visionflow:linked:lmd-ghost",
+        "label": "LMD-GHOST"
+      },
+      {
+        "id": "urn:visionflow:linked:proposer-builder-separation",
+        "label": "Proposer Builder Separation"
+      },
+      {
+        "id": "urn:visionflow:linked:rollup-centric-roadmap",
+        "label": "Rollup-Centric Roadmap"
+      },
+      {
+        "id": "urn:visionflow:owl:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gasper-consensus",
+        "label": "Gasper Consensus"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adams-zinsmeister-robinson-2020-uniswap-v2",
+      "label": "Adams Zinsmeister Robinson 2020 Uniswap v2"
+    },
+    {
+      "slug": "atzei-bartoletti-cimoli-2017-ethereum-smart-contract-attacks",
+      "label": "Atzei Bartoletti Cimoli 2017 Ethereum Smart Contract Attacks"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "beacon-chain",
+      "label": "Beacon Chain"
+    },
+    {
+      "slug": "beacon-chain-specification",
+      "label": "Beacon Chain Specification"
+    },
+    {
+      "slug": "bertoni-2013-keccak-reference",
+      "label": "Bertoni 2013 Keccak Reference"
+    },
+    {
+      "slug": "blob-storage",
+      "label": "Blob Storage"
+    },
+    {
+      "slug": "bls-signatures",
+      "label": "BLS Signatures"
+    },
+    {
+      "slug": "boneh-lynn-shacham-2001-bls-signatures",
+      "label": "Boneh Lynn Shacham 2001 BLS Signatures"
+    },
+    {
+      "slug": "buterin-2013-ethereum-whitepaper",
+      "label": "Buterin 2013 Ethereum Whitepaper"
+    },
+    {
+      "slug": "buterin-2020-rollup-centric-roadmap",
+      "label": "Buterin 2020 Rollup-Centric Roadmap"
+    },
+    {
+      "slug": "buterin-feist-2022-eip-4844-shard-blob-transactions",
+      "label": "Buterin Feist 2022 EIP-4844 Shard Blob Transactions"
+    },
+    {
+      "slug": "buterin-griffith-2017-casper-ffg",
+      "label": "Buterin Griffith 2017 Casper FFG"
+    },
+    {
+      "slug": "buterin-hernandez-drumond-2020-combining-ghost-and-casper",
+      "label": "Buterin Hernandez-Drumond 2020 Combining GHOST and Casper"
+    },
+    {
+      "slug": "buterin-weiss-2021-eip-4337-account-abstraction",
+      "label": "Buterin Weiss 2021 EIP-4337 Account Abstraction"
+    },
+    {
+      "slug": "casper-ffg",
+      "label": "Casper FFG"
+    },
+    {
+      "slug": "ccaf-2022-ethereum-energy-consumption-index",
+      "label": "CCAF 2022 Ethereum Energy Consumption Index"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "chen-pendleton-njilla-xu-2020-ethereum-systems-security-survey",
+      "label": "Chen Pendleton Njilla Xu 2020 Ethereum Systems Security Survey"
+    },
+    {
+      "slug": "client-diversity",
+      "label": "Client Diversity"
+    },
+    {
+      "slug": "client-software-diversity",
+      "label": "Client Software Diversity"
+    },
+    {
+      "slug": "consen-sys",
+      "label": "ConsenSys"
+    },
+    {
+      "slug": "consensus-client",
+      "label": "Consensus Client"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "cryptoeconomic-security",
+      "label": "Cryptoeconomic Security"
+    },
+    {
+      "slug": "cryptoeconomics-domain",
+      "label": "CryptoeconomicsDomain"
+    },
+    {
+      "slug": "cryptographic-signatures",
+      "label": "Cryptographic Signatures"
+    },
+    {
+      "slug": "d-amato-2022-single-slot-finality",
+      "label": "D'Amato 2022 Single Slot Finality"
+    },
+    {
+      "slug": "daian-2019-flash-boys-2-0",
+      "label": "Daian 2019 Flash Boys 2.0"
+    },
+    {
+      "slug": "data-availability-layer",
+      "label": "DataAvailabilityLayer"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-application",
+      "label": "Decentralised Application"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "decentralised-computing-platform",
+      "label": "Decentralised Computing Platform"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "Distributed Consensus"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "ecdsa-secp256k1",
+      "label": "ECDSA secp256k1"
+    },
+    {
+      "slug": "eip-1559",
+      "label": "EIP-1559"
+    },
+    {
+      "slug": "eip-1559-fee-market",
+      "label": "EIP-1559 Fee Market"
+    },
+    {
+      "slug": "eip-4844",
+      "label": "EIP-4844"
+    },
+    {
+      "slug": "eip-7702",
+      "label": "EIP-7702"
+    },
+    {
+      "slug": "entriken-2018-eip-721-nft-standard",
+      "label": "Entriken 2018 EIP-721 NFT Standard"
+    },
+    {
+      "slug": "erc-20",
+      "label": "ERC-20"
+    },
+    {
+      "slug": "erc-20-tokens",
+      "label": "ERC-20 Tokens"
+    },
+    {
+      "slug": "erc-4337",
+      "label": "ERC-4337"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "erc-721-nfts",
+      "label": "ERC-721 NFTs"
+    },
+    {
+      "slug": "erc-standard",
+      "label": "ERC Standard"
+    },
+    {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "ethereum-foundation-2025-developer-documentation",
+      "label": "Ethereum Foundation 2025 Developer Documentation"
+    },
+    {
+      "slug": "ethereum-improvement-proposal",
+      "label": "Ethereum Improvement Proposal"
+    },
+    {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
+      "slug": "execution-client",
+      "label": "Execution Client"
+    },
+    {
+      "slug": "execution-layer",
+      "label": "ExecutionLayer"
+    },
+    {
+      "slug": "gas-mechanism",
+      "label": "Gas Mechanism"
+    },
+    {
+      "slug": "gavin-wood",
+      "label": "Gavin Wood"
+    },
+    {
+      "slug": "joseph-lubin",
+      "label": "Joseph Lubin"
+    },
+    {
+      "slug": "kate-zaverucha-goldberg-2010-kzg-commitments",
+      "label": "Kate Zaverucha Goldberg 2010 KZG Commitments"
+    },
+    {
+      "slug": "klages-mundt-minca-2020-stablecoin-deleveraging",
+      "label": "Klages-Mundt Minca 2020 Stablecoin Deleveraging"
+    },
+    {
+      "slug": "knottenbelt-2021-so-k-layer-two-blockchain-protocols",
+      "label": "Knottenbelt 2021 SoK Layer-Two Blockchain Protocols"
+    },
+    {
+      "slug": "kzg-commitment",
+      "label": "KZG Commitment"
+    },
+    {
+      "slug": "layer-1-blockchain",
+      "label": "Layer 1 Blockchain"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer 2"
+    },
+    {
+      "slug": "layer-2-rollups",
+      "label": "Layer 2 Rollups"
+    },
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
+    },
+    {
+      "slug": "liquid-staking",
+      "label": "Liquid Staking"
+    },
+    {
+      "slug": "lmd-ghost",
+      "label": "LMD-GHOST"
+    },
+    {
+      "slug": "luu-2016-making-smart-contracts-smarter-oyente",
+      "label": "Luu 2016 Making Smart Contracts Smarter Oyente"
+    },
+    {
+      "slug": "monolithic-blockchain",
+      "label": "Monolithic Blockchain"
+    },
+    {
+      "slug": "non-fungible-token",
+      "label": "Non Fungible Token"
+    },
+    {
+      "slug": "obadia-2021-quantifying-mev",
+      "label": "Obadia 2021 Quantifying MEV"
+    },
+    {
+      "slug": "on-chain-governance",
+      "label": "On-Chain Governance"
+    },
+    {
+      "slug": "oracle-network",
+      "label": "Oracle Network"
+    },
+    {
+      "slug": "patricia-merkle-trie",
+      "label": "Patricia Merkle Trie"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "slug": "proof-of-stake-network",
+      "label": "Proof of Stake Network"
+    },
+    {
+      "slug": "proposer-builder-separation",
+      "label": "Proposer Builder Separation"
+    },
+    {
+      "slug": "restaking",
+      "label": "Restaking"
+    },
+    {
+      "slug": "rlp-encoding",
+      "label": "RLP Encoding"
+    },
+    {
+      "slug": "rollup-centric-roadmap",
+      "label": "Rollup-Centric Roadmap"
+    },
+    {
+      "slug": "roughgarden-2020-eip-1559-mechanism-design",
+      "label": "Roughgarden 2020 EIP-1559 Mechanism Design"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "SettlementLayer"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "state-trie",
+      "label": "State Trie"
+    },
+    {
+      "slug": "tasca-liu-hayes-2018-bitcoin-economy-evolution",
+      "label": "Tasca Liu Hayes 2018 Bitcoin Economy Evolution"
+    },
+    {
+      "slug": "validator-operators",
+      "label": "Validator Operators"
+    },
+    {
+      "slug": "validator-set",
+      "label": "Validator Set"
+    },
+    {
+      "slug": "validator-stake",
+      "label": "Validator Stake"
+    },
+    {
+      "slug": "verkle-tree",
+      "label": "Verkle Tree"
+    },
+    {
+      "slug": "vitalik-buterin",
+      "label": "Vitalik Buterin"
+    },
+    {
+      "slug": "vogelsteller-buterin-2015-eip-20-token-standard",
+      "label": "Vogelsteller Buterin 2015 EIP-20 Token Standard"
+    },
+    {
+      "slug": "vyper",
+      "label": "Vyper"
+    },
+    {
+      "slug": "web3-domain",
+      "label": "Web3Domain"
+    },
+    {
+      "slug": "werner-perez-gudgeon-klages-mundt-harz-knottenbelt-2022-so-k-de-fi",
+      "label": "Werner Perez Gudgeon Klages-Mundt Harz Knottenbelt 2022 SoK DeFi"
+    },
+    {
+      "slug": "wood-2014-ethereum-yellow-paper",
+      "label": "Wood 2014 Ethereum Yellow Paper"
+    },
+    {
+      "slug": "yellow-paper",
+      "label": "Yellow Paper"
+    },
+    {
+      "slug": "zamfir-2018-lmd-ghost",
+      "label": "Zamfir 2018 LMD-GHOST"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "gasper-consensus",
+      "label": "Gasper Consensus"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "internet-infrastructure",
+      "label": "Internet Infrastructure"
+    },
+    {
+      "slug": "keccak-256",
+      "label": "Keccak-256"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer to Peer Network"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "conflict-mineral-tracking",
+      "label": "Conflict Mineral Tracking"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "erc20",
+      "label": "ERC20"
+    },
+    {
+      "slug": "erc721",
+      "label": "ERC721"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "luxury-goods-authentication",
+      "label": "Luxury Goods Authentication"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "pharmaceutical-traceability",
+      "label": "Pharmaceutical Traceability"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:1ab5c00e1c836a1a26aa0085149176e0a102e17630bad83ee2f40e3edbdb5721",
+  "title": "Search Discovery",
+  "slug": "search-discovery",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:search-discovery",
+  "domain": "spatial-computing",
+  "definition": "Systems and interfaces that enable users to find relevant content, assets, experiences, and other users within metaverse platforms through keyword search, semantic queries, recommendations, and spatial exploration mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-navigation",
+        "label": "User Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "user-navigation",
+      "label": "User Navigation"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": []
+}

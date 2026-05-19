@@ -1,0 +1,202 @@
+{
+  "id": "urn:visionflow:page:7ab78e9c14d330e328192a4c41ef70f8dffe527a01f565b9d48077216c9e1bfc",
+  "title": "Virtual Securities Offering (VSO)",
+  "slug": "virtual-securities-offering-vso",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-securities-offering-vso",
+  "domain": "spatial-computing",
+  "definition": "A tokenized securities issuance process that leverages blockchain technology to create, distribute, and manage digital representations of traditional securities with embedded regulatory compliance and automated governance mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:compliance-validation-engine",
+        "label": "Compliance Validation Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:distribution-mechanism",
+        "label": "Distribution Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:investor-registry",
+        "label": "Investor Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:token-issuance-contract",
+        "label": "Token Issuance Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secondary-market-integration",
+        "label": "Secondary Market Integration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:custody-solution",
+        "label": "Custody Solution"
+      },
+      {
+        "id": "urn:visionflow:linked:kyc-aml-system",
+        "label": "KYC/AML System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:24-7-trading",
+        "label": "24/7 Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-compliance",
+        "label": "Automated Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:global-capital-access",
+        "label": "Global Capital Access"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-securities",
+        "label": "Programmable Securities"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "24-7-trading",
+      "label": "24/7 Trading"
+    },
+    {
+      "slug": "automated-compliance",
+      "label": "Automated Compliance"
+    },
+    {
+      "slug": "compliance-validation-engine",
+      "label": "Compliance Validation Engine"
+    },
+    {
+      "slug": "custody-solution",
+      "label": "Custody Solution"
+    },
+    {
+      "slug": "distribution-mechanism",
+      "label": "Distribution Mechanism"
+    },
+    {
+      "slug": "finra",
+      "label": "FINRA"
+    },
+    {
+      "slug": "fractional-ownership",
+      "label": "Fractional Ownership"
+    },
+    {
+      "slug": "global-capital-access",
+      "label": "Global Capital Access"
+    },
+    {
+      "slug": "investor-registry",
+      "label": "Investor Registry"
+    },
+    {
+      "slug": "kyc-aml-system",
+      "label": "KYC/AML System"
+    },
+    {
+      "slug": "legal-structure",
+      "label": "Legal Structure"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "programmable-securities",
+      "label": "Programmable Securities"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "securities-law",
+      "label": "Securities Law"
+    },
+    {
+      "slug": "token-issuance-contract",
+      "label": "Token Issuance Contract"
+    },
+    {
+      "slug": "transfer-agent",
+      "label": "Transfer Agent"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "secondary-market-integration",
+      "label": "Secondary Market Integration"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": []
+}

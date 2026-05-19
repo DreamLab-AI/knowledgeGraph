@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:80ce2516023e48629328ce89ddae82e1cbbefb5fb39fbba9523c539056f51874",
+  "title": "Importer",
+  "slug": "importer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:importer",
+  "domain": "spatial-computing",
+  "definition": "A natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established in a third country.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

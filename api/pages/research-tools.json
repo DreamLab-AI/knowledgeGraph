@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:ae633c49662932a44349b31c455ab885b5485ef410418b4565d78b962306359e",
+  "title": "Research Tools",
+  "slug": "research-tools",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:research-tools",
+  "domain": "infrastructure",
+  "definition": "Research Tools is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "untitled",
+      "label": "\ud83e\udd16"
+    },
+    {
+      "slug": "research-tools",
+      "label": "Research Tools"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "harmlessness",
+      "label": "Harmlessness"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "tai-chi",
+      "label": "Tai Chi"
+    }
+  ]
+}

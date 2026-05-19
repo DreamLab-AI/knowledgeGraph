@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1d5dc84ee93458abbae87d636969132d198aad2206b24ad0f2c1f94e5863be97",
+  "title": "rb 0007 collaborative robot",
+  "slug": "rb-0007-collaborative-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0007-collaborative-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

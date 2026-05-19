@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:84662b8012da4e1c560f5eabae3ac336e096d052e81a2b8ae3fb9d2e6c341e5e",
+  "title": "Adapter Modules",
+  "slug": "adapter-modules",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adapter-modules",
+  "domain": "spatial-computing",
+  "definition": "Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:learning-module",
+      "label": "Learning Module"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

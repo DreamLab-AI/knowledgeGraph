@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:564269168f0d93a7b74649ec815d67a215a8600e51c023b3c783c6332e816f65",
+  "title": "Technology Domain",
+  "slug": "technology-domain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technology-domain",
+  "domain": "infrastructure",
+  "definition": "The foundational meta-domain encompassing all technology-related knowledge domains within the Narrative Gold Mine ontology, serving as the top-level classification for artificial intelligence, blockchain, metaverse, robotics, and telecollaboration systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "stable",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "narrative-gold-mine",
+      "label": "Narrative Gold Mine"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "computing-infrastructure",
+      "label": "Computing Infrastructure"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    }
+  ]
+}

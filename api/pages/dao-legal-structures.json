@@ -1,0 +1,840 @@
+{
+  "id": "urn:visionflow:page:1701c8af122ff205bcacb0d64f029f5871410a923f8dd31bed172cded4a5adb2",
+  "title": "DAO Legal Structures",
+  "slug": "dao-legal-structures",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dao-legal-structures",
+  "domain": "blockchain",
+  "definition": "**DAO Legal Structures** are the corpus of statutory wrappers, jurisdictional incorporation regimes, and bespoke entity forms \u2014 spanning US state limited-liability companies, US state unincorporated nonprofit associations, offshore foundation companies, Swiss associations and foundations, Liechtenstein TVTG-registered entities, BVI limited companies, Marshall Islands DAO LLCs, Singapore Variable Capital Companies, Panama private interest foundations and Delaware statutory trusts \u2014 that confer **legal personality, limited liability, tax classification, contractual capacity, and regulatory recognition** on [[Decentralised Autonomous Organisations]] which would otherwise default to a stateless **general partnership** under common law (in which every token holder bears joint-and-several liability for the collective's debts, torts, and regulatory penalties, as the September 2022 **CFTC v. Ooki DAO** default judgment chillingly demonstrated when a US district court entered $643,542 in penalties and a permanent injunction against an unincorporated DAO and its token-holder members, expressly finding the Ooki DAO to be an unincorporated association subject to service via help-chat and a for",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:corporate-forms",
+      "label": "Corporate Forms"
+    },
+    {
+      "id": "urn:visionflow:linked:governance-structures",
+      "label": "Governance Structures"
+    },
+    {
+      "id": "urn:visionflow:linked:legal-entity-wrappers",
+      "label": "Legal Entity Wrappers"
+    },
+    {
+      "id": "urn:visionflow:linked:liability-shield-mechanisms",
+      "label": "Liability Shield Mechanisms"
+    },
+    {
+      "id": "urn:visionflow:linked:regulatory-compliance-frameworks",
+      "label": "Regulatory Compliance Frameworks"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bvi-limited-company",
+        "label": "BVI Limited Company"
+      },
+      {
+        "id": "urn:visionflow:linked:cayman-foundation-company",
+        "label": "Cayman Foundation Company"
+      },
+      {
+        "id": "urn:visionflow:linked:delaware-statutory-trust",
+        "label": "Delaware Statutory Trust"
+      },
+      {
+        "id": "urn:visionflow:linked:liechtenstein-tvtg-entity",
+        "label": "Liechtenstein TVTG Entity"
+      },
+      {
+        "id": "urn:visionflow:linked:marshall-islands-dao-llc",
+        "label": "Marshall Islands DAO LLC"
+      },
+      {
+        "id": "urn:visionflow:linked:panama-private-interest-foundation",
+        "label": "Panama Private Interest Foundation"
+      },
+      {
+        "id": "urn:visionflow:linked:singapore-variable-capital-company",
+        "label": "Singapore Variable Capital Company"
+      },
+      {
+        "id": "urn:visionflow:linked:swiss-stiftung",
+        "label": "Swiss Stiftung"
+      },
+      {
+        "id": "urn:visionflow:linked:swiss-verein",
+        "label": "Swiss Verein"
+      },
+      {
+        "id": "urn:visionflow:linked:tennessee-do",
+        "label": "Tennessee DO"
+      },
+      {
+        "id": "urn:visionflow:linked:utah-dao-llc",
+        "label": "Utah DAO LLC"
+      },
+      {
+        "id": "urn:visionflow:linked:vermont-bbllc",
+        "label": "Vermont BBLLC"
+      },
+      {
+        "id": "urn:visionflow:linked:wyoming-dao-llc",
+        "label": "Wyoming DAO LLC"
+      },
+      {
+        "id": "urn:visionflow:linked:wyoming-duna",
+        "label": "Wyoming DUNA"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:anti-money-laundering-compliance",
+        "label": "Anti-Money Laundering Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:articles-of-organization",
+        "label": "Articles of Organization"
+      },
+      {
+        "id": "urn:visionflow:linked:beneficial-ownership-disclosure",
+        "label": "Beneficial Ownership Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:bylaws",
+        "label": "Bylaws"
+      },
+      {
+        "id": "urn:visionflow:linked:operating-agreement",
+        "label": "Operating Agreement"
+      },
+      {
+        "id": "urn:visionflow:linked:registered-agent",
+        "label": "Registered Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:tax-identification-number",
+        "label": "Tax Identification Number"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bank-account-access",
+        "label": "Bank Account Access"
+      },
+      {
+        "id": "urn:visionflow:linked:contractual-capacity",
+        "label": "Contractual Capacity"
+      },
+      {
+        "id": "urn:visionflow:linked:dispute-resolution-forum",
+        "label": "Dispute Resolution Forum"
+      },
+      {
+        "id": "urn:visionflow:linked:intellectual-property-ownership",
+        "label": "Intellectual Property Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-personality",
+        "label": "Legal Personality"
+      },
+      {
+        "id": "urn:visionflow:linked:liability-protection",
+        "label": "Liability Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-engagement",
+        "label": "Regulatory Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:tax-treatment-clarity",
+        "label": "Tax Treatment Clarity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:algorithmic-management-doctrine",
+        "label": "Algorithmic Management Doctrine"
+      },
+      {
+        "id": "urn:visionflow:linked:dual-entity-structure",
+        "label": "Dual Entity Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:foundation-plus-subsidiary-pattern",
+        "label": "Foundation Plus Subsidiary Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-wrapping-pattern",
+        "label": "Legal Wrapping Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:operating-agreement-supremacy",
+        "label": "Operating Agreement Supremacy"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a16z-crypto-legal",
+      "label": "a16z crypto Legal"
+    },
+    {
+      "slug": "aave-companies",
+      "label": "Aave Companies"
+    },
+    {
+      "slug": "algorithmic-management-doctrine",
+      "label": "Algorithmic Management Doctrine"
+    },
+    {
+      "slug": "allen-and-overy-shearman",
+      "label": "Allen & Overy Shearman"
+    },
+    {
+      "slug": "anti-money-laundering-compliance",
+      "label": "Anti-Money Laundering Compliance"
+    },
+    {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
+      "slug": "articles-of-organization",
+      "label": "Articles of Organization"
+    },
+    {
+      "slug": "astor-v-maker-dao-2024",
+      "label": "Astor v MakerDAO 2024"
+    },
+    {
+      "slug": "b-rgi-n-geli-rechtsanw-lte",
+      "label": "B\u00fcrgi N\u00e4geli Rechtsanw\u00e4lte"
+    },
+    {
+      "slug": "bank-account-access",
+      "label": "Bank Account Access"
+    },
+    {
+      "slug": "beneficial-ownership-disclosure",
+      "label": "Beneficial Ownership Disclosure"
+    },
+    {
+      "slug": "beneficial-ownership-registers",
+      "label": "Beneficial Ownership Registers"
+    },
+    {
+      "slug": "bvi-business-companies-act-2004",
+      "label": "BVI Business Companies Act 2004"
+    },
+    {
+      "slug": "bvi-limited-company",
+      "label": "BVI Limited Company"
+    },
+    {
+      "slug": "bylaws",
+      "label": "Bylaws"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance-ccaf",
+      "label": "Cambridge Centre for Alternative Finance (CCAF)"
+    },
+    {
+      "slug": "cayman-enterprise-city",
+      "label": "Cayman Enterprise City"
+    },
+    {
+      "slug": "cayman-foundation-companies-act-2017",
+      "label": "Cayman Foundation Companies Act 2017"
+    },
+    {
+      "slug": "cayman-foundation-company",
+      "label": "Cayman Foundation Company"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "cftc-v-ooki-dao",
+      "label": "CFTC v Ooki DAO"
+    },
+    {
+      "slug": "cftc-v-ooki-dao-default-judgment-2023",
+      "label": "CFTC v Ooki DAO Default Judgment 2023"
+    },
+    {
+      "slug": "charitable-incorporated-organisation",
+      "label": "Charitable Incorporated Organisation"
+    },
+    {
+      "slug": "clifford-chance",
+      "label": "Clifford Chance"
+    },
+    {
+      "slug": "closed-end-investment-fund",
+      "label": "Closed-End Investment Fund"
+    },
+    {
+      "slug": "coala-model-dao-law",
+      "label": "COALA Model DAO Law"
+    },
+    {
+      "slug": "coala-model-dao-law-v2-v3",
+      "label": "COALA Model DAO Law V2 V3"
+    },
+    {
+      "slug": "coalition-of-automated-legal-applications-coala",
+      "label": "Coalition of Automated Legal Applications (COALA)"
+    },
+    {
+      "slug": "compound-labs-inc",
+      "label": "Compound Labs Inc."
+    },
+    {
+      "slug": "contractual-capacity",
+      "label": "Contractual Capacity"
+    },
+    {
+      "slug": "conyers",
+      "label": "Conyers"
+    },
+    {
+      "slug": "corporate-forms",
+      "label": "Corporate Forms"
+    },
+    {
+      "slug": "corporate-law",
+      "label": "Corporate Law"
+    },
+    {
+      "slug": "corporate-law-domain",
+      "label": "CorporateLawDomain"
+    },
+    {
+      "slug": "cross-border-treasury-operations",
+      "label": "Cross-Border Treasury Operations"
+    },
+    {
+      "slug": "dao-bank-account-opening",
+      "label": "DAO Bank Account Opening"
+    },
+    {
+      "slug": "dao-contributor-payroll",
+      "label": "DAO Contributor Payroll"
+    },
+    {
+      "slug": "dao-grant-programmes",
+      "label": "DAO Grant Programmes"
+    },
+    {
+      "slug": "dao-trademark-registration",
+      "label": "DAO Trademark Registration"
+    },
+    {
+      "slug": "de-filippi-wright-2018-blockchain-and-the-law",
+      "label": "De Filippi Wright 2018 Blockchain and the Law"
+    },
+    {
+      "slug": "decentralised-autonomous-organisations",
+      "label": "Decentralised Autonomous Organisations"
+    },
+    {
+      "slug": "delaware-statutory-trust",
+      "label": "Delaware Statutory Trust"
+    },
+    {
+      "slug": "delaware-statutory-trust-act",
+      "label": "Delaware Statutory Trust Act"
+    },
+    {
+      "slug": "dispute-resolution-forum",
+      "label": "Dispute Resolution Forum"
+    },
+    {
+      "slug": "dual-entity-structure",
+      "label": "Dual Entity Structure"
+    },
+    {
+      "slug": "edinburgh-law-school",
+      "label": "Edinburgh Law School"
+    },
+    {
+      "slug": "ens-foundation",
+      "label": "ENS Foundation"
+    },
+    {
+      "slug": "fca-dp24-4-regulating-cryptoassets",
+      "label": "FCA DP24-4 Regulating Cryptoassets"
+    },
+    {
+      "slug": "fca-ps23-6-cryptoasset-promotions",
+      "label": "FCA PS23-6 Cryptoasset Promotions"
+    },
+    {
+      "slug": "filecoin-foundation-uk",
+      "label": "Filecoin Foundation UK"
+    },
+    {
+      "slug": "foundation-plus-subsidiary-pattern",
+      "label": "Foundation Plus Subsidiary Pattern"
+    },
+    {
+      "slug": "freshfields-bruckhaus-deringer",
+      "label": "Freshfields Bruckhaus Deringer"
+    },
+    {
+      "slug": "fsma-2023",
+      "label": "FSMA 2023"
+    },
+    {
+      "slug": "general-partnership",
+      "label": "General Partnership"
+    },
+    {
+      "slug": "gnosis-safe-safe-wallet",
+      "label": "Gnosis Safe / Safe{Wallet}"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "governance-structures",
+      "label": "Governance Structures"
+    },
+    {
+      "slug": "governance-tokens",
+      "label": "Governance Tokens"
+    },
+    {
+      "slug": "hassan-de-filippi-2021-dao-internet-policy-review",
+      "label": "Hassan De Filippi 2021 DAO Internet Policy Review"
+    },
+    {
+      "slug": "herbert-smith-freehills",
+      "label": "Herbert Smith Freehills"
+    },
+    {
+      "slug": "howey-test",
+      "label": "Howey Test"
+    },
+    {
+      "slug": "icaew-institute-of-chartered-accountants-in-england-and-wales",
+      "label": "ICAEW (Institute of Chartered Accountants in England and Wales)"
+    },
+    {
+      "slug": "imperial-college-business-school-centre-for-digital-finance",
+      "label": "Imperial College Business School Centre for Digital Finance"
+    },
+    {
+      "slug": "intellectual-property-ownership",
+      "label": "Intellectual Property Ownership"
+    },
+    {
+      "slug": "jennings-adlerstein-2022-legal-framework-daos",
+      "label": "Jennings Adlerstein 2022 Legal Framework DAOs"
+    },
+    {
+      "slug": "jennings-adlerstein-2024-duna-oasis",
+      "label": "Jennings Adlerstein 2024 DUNA Oasis"
+    },
+    {
+      "slug": "jurisdictional-recognition",
+      "label": "Jurisdictional Recognition"
+    },
+    {
+      "slug": "king-s-college-london",
+      "label": "King's College London"
+    },
+    {
+      "slug": "law-commission-dao-report",
+      "label": "Law Commission DAO Report"
+    },
+    {
+      "slug": "law-society-of-england-and-wales",
+      "label": "Law Society of England and Wales"
+    },
+    {
+      "slug": "le-xpun-k",
+      "label": "LeXpunK"
+    },
+    {
+      "slug": "legal-compliance-perimeter",
+      "label": "LegalCompliancePerimeter"
+    },
+    {
+      "slug": "legal-entity-wrappers",
+      "label": "Legal Entity Wrappers"
+    },
+    {
+      "slug": "legal-personality",
+      "label": "Legal Personality"
+    },
+    {
+      "slug": "legal-wrapper-service-providers",
+      "label": "Legal Wrapper Service Providers"
+    },
+    {
+      "slug": "legal-wrapping-pattern",
+      "label": "Legal Wrapping Pattern"
+    },
+    {
+      "slug": "lenz-and-staehelin",
+      "label": "Lenz & Staehelin"
+    },
+    {
+      "slug": "lex-dao",
+      "label": "LexDAO"
+    },
+    {
+      "slug": "liability-protection",
+      "label": "Liability Protection"
+    },
+    {
+      "slug": "liability-shield-mechanisms",
+      "label": "Liability Shield Mechanisms"
+    },
+    {
+      "slug": "liechtenstein-tvtg",
+      "label": "Liechtenstein TVTG"
+    },
+    {
+      "slug": "liechtenstein-tvtg-blockchain-act-2020",
+      "label": "Liechtenstein TVTG Blockchain Act 2020"
+    },
+    {
+      "slug": "liechtenstein-tvtg-entity",
+      "label": "Liechtenstein TVTG Entity"
+    },
+    {
+      "slug": "linklaters",
+      "label": "Linklaters"
+    },
+    {
+      "slug": "mahedi-legal",
+      "label": "Mahedi Legal"
+    },
+    {
+      "slug": "maker-foundation",
+      "label": "Maker Foundation"
+    },
+    {
+      "slug": "maples-group",
+      "label": "Maples Group"
+    },
+    {
+      "slug": "marshall-islands-dao-llc",
+      "label": "Marshall Islands DAO LLC"
+    },
+    {
+      "slug": "marshall-islands-non-profit-entities-amendment-act-2022",
+      "label": "Marshall Islands Non-Profit Entities Amendment Act 2022"
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "label": "MiCA Regulation"
+    },
+    {
+      "slug": "mi-ca-regulation-2023-1114",
+      "label": "MiCA Regulation 2023-1114"
+    },
+    {
+      "slug": "midao",
+      "label": "MIDAO"
+    },
+    {
+      "slug": "midao-directory-services",
+      "label": "MIDAO Directory Services"
+    },
+    {
+      "slug": "mme-legal",
+      "label": "MME Legal"
+    },
+    {
+      "slug": "mourant",
+      "label": "Mourant"
+    },
+    {
+      "slug": "mox-legal",
+      "label": "MOX Legal"
+    },
+    {
+      "slug": "multi-signature-wallets",
+      "label": "Multi-Signature Wallets"
+    },
+    {
+      "slug": "off-chain-coordination-layer",
+      "label": "OffChainCoordinationLayer"
+    },
+    {
+      "slug": "off-chain-multisig",
+      "label": "Off-Chain Multisig"
+    },
+    {
+      "slug": "operating-agreement",
+      "label": "Operating Agreement"
+    },
+    {
+      "slug": "operating-agreement-supremacy",
+      "label": "Operating Agreement Supremacy"
+    },
+    {
+      "slug": "optimism-foundation",
+      "label": "Optimism Foundation"
+    },
+    {
+      "slug": "otoco",
+      "label": "Otoco"
+    },
+    {
+      "slug": "otonomos",
+      "label": "Otonomos"
+    },
+    {
+      "slug": "oxford-faculty-of-law",
+      "label": "Oxford Faculty of Law"
+    },
+    {
+      "slug": "panama-law-25-1995-foundations",
+      "label": "Panama Law 25 1995 Foundations"
+    },
+    {
+      "slug": "panama-private-interest-foundation",
+      "label": "Panama Private Interest Foundation"
+    },
+    {
+      "slug": "paradigm-counsel",
+      "label": "Paradigm Counsel"
+    },
+    {
+      "slug": "registered-agent",
+      "label": "Registered Agent"
+    },
+    {
+      "slug": "regulatory-compliance-frameworks",
+      "label": "Regulatory Compliance Frameworks"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "regulatory-engagement",
+      "label": "Regulatory Engagement"
+    },
+    {
+      "slug": "regulatory-negotiation-capacity",
+      "label": "Regulatory Negotiation Capacity"
+    },
+    {
+      "slug": "sarcuni-v-b-zx-dao",
+      "label": "Sarcuni v bZx DAO"
+    },
+    {
+      "slug": "sarcuni-v-b-zx-dao-2023",
+      "label": "Sarcuni v bZx DAO 2023"
+    },
+    {
+      "slug": "sec-v-howey-1946",
+      "label": "SEC v Howey 1946"
+    },
+    {
+      "slug": "shadab-2022-taxation-of-daos",
+      "label": "Shadab 2022 Taxation of DAOs"
+    },
+    {
+      "slug": "singapore-variable-capital-companies-act-2018",
+      "label": "Singapore Variable Capital Companies Act 2018"
+    },
+    {
+      "slug": "singapore-variable-capital-company",
+      "label": "Singapore Variable Capital Company"
+    },
+    {
+      "slug": "slaughter-and-may",
+      "label": "Slaughter and May"
+    },
+    {
+      "slug": "smart-contract-governance",
+      "label": "Smart Contract Governance"
+    },
+    {
+      "slug": "sole-proprietorship",
+      "label": "Sole Proprietorship"
+    },
+    {
+      "slug": "stateless-dao",
+      "label": "Stateless DAO"
+    },
+    {
+      "slug": "statutory-authorisation",
+      "label": "Statutory Authorisation"
+    },
+    {
+      "slug": "step-society-of-trust-and-estate-practitioners",
+      "label": "STEP (Society of Trust and Estate Practitioners)"
+    },
+    {
+      "slug": "swiss-civil-code-articles-60-79",
+      "label": "Swiss Civil Code Articles 60-79"
+    },
+    {
+      "slug": "swiss-stiftung",
+      "label": "Swiss Stiftung"
+    },
+    {
+      "slug": "swiss-verein",
+      "label": "Swiss Verein"
+    },
+    {
+      "slug": "tax-identification-number",
+      "label": "Tax Identification Number"
+    },
+    {
+      "slug": "tax-treatment",
+      "label": "Tax Treatment"
+    },
+    {
+      "slug": "tax-treatment-clarity",
+      "label": "Tax Treatment Clarity"
+    },
+    {
+      "slug": "tennessee-decentralized-organization-act-2022",
+      "label": "Tennessee Decentralized Organization Act 2022"
+    },
+    {
+      "slug": "tennessee-do",
+      "label": "Tennessee DO"
+    },
+    {
+      "slug": "token-weighted-voting",
+      "label": "Token-Weighted Voting"
+    },
+    {
+      "slug": "traditional-limited-liability-company",
+      "label": "Traditional Limited Liability Company"
+    },
+    {
+      "slug": "ucl-centre-for-blockchain-technologies-cbt",
+      "label": "UCL Centre for Blockchain Technologies (CBT)"
+    },
+    {
+      "slug": "uk-law-commission-report-414",
+      "label": "UK Law Commission Report 414"
+    },
+    {
+      "slug": "uk-law-commission-report-414-dao-final-report-2024",
+      "label": "UK Law Commission Report 414 DAO Final Report 2024"
+    },
+    {
+      "slug": "unincorporated-association",
+      "label": "Unincorporated Association"
+    },
+    {
+      "slug": "uniswap-foundation",
+      "label": "Uniswap Foundation"
+    },
+    {
+      "slug": "utah-dao-act-2023",
+      "label": "Utah DAO Act 2023"
+    },
+    {
+      "slug": "utah-dao-llc",
+      "label": "Utah DAO LLC"
+    },
+    {
+      "slug": "van-loon-v-treasury-2024",
+      "label": "Van Loon v Treasury 2024"
+    },
+    {
+      "slug": "vermont-bbllc",
+      "label": "Vermont BBLLC"
+    },
+    {
+      "slug": "vermont-title-11-chapter-25",
+      "label": "Vermont Title 11 Chapter 25"
+    },
+    {
+      "slug": "vermont-title-11-chapter-25-bbllc",
+      "label": "Vermont Title 11 Chapter 25 BBLLC"
+    },
+    {
+      "slug": "walkers",
+      "label": "Walkers"
+    },
+    {
+      "slug": "wenger-vieli",
+      "label": "Wenger Vieli"
+    },
+    {
+      "slug": "wyoming-dao-llc",
+      "label": "Wyoming DAO LLC"
+    },
+    {
+      "slug": "wyoming-duna",
+      "label": "Wyoming DUNA"
+    },
+    {
+      "slug": "wyoming-duna-act-2024",
+      "label": "Wyoming DUNA Act 2024"
+    },
+    {
+      "slug": "wyoming-sf0038",
+      "label": "Wyoming SF0038"
+    },
+    {
+      "slug": "wyoming-sf0038-dao-llc-supplement-2021",
+      "label": "Wyoming SF0038 DAO LLC Supplement 2021"
+    },
+    {
+      "slug": "yarmouth",
+      "label": "Yarmouth"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On-Chain Voting"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

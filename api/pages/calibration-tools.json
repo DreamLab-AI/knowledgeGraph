@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:5e22a70ecee044334c527668764814cb7516dc7bfda4356b7f59e4ac9e10e6c3",
+  "title": "Calibration Tools",
+  "slug": "calibration-tools",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:calibration-tools",
+  "domain": "spatial-computing",
+  "definition": "Calibration Tools is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "resolution-test-chart",
+      "label": "Resolution Test Chart"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e",
+  "title": "XR Accessibility Standards",
+  "slug": "xr-accessibility-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-accessibility-standards",
+  "domain": "spatial-computing",
+  "definition": "Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:accessibility",
+      "label": "Accessibility"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    }
+  ]
+}

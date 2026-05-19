@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:85e6e08bf7f9c2c6749935ecadb15047351d56cc3308bc9db4382de3e9d94a19",
+  "title": "Safety (OECD)",
+  "slug": "safety-oecd",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:safety-oecd",
+  "domain": "spatial-computing",
+  "definition": "AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

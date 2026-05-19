@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:9ff961fa94b0be49d3ddf7e5eaa9d57a0bea9e5c8c4c22d93d20e14ac02016a4",
+  "title": "Scene Graph Format",
+  "slug": "scene-graph-format",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scene-graph-format",
+  "domain": "spatial-computing",
+  "definition": "SceneGraphFormat is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:scene-graph",
+      "label": "Scene Graph"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

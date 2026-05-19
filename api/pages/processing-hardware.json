@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:eb1613395675b182d867cc522517d6c1efa0f82a30293698556a5f4e3e559f89",
+  "title": "Processing Hardware",
+  "slug": "processing-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:processing-hardware",
+  "domain": "spatial-computing",
+  "definition": "Specialized computing components including CPUs, GPUs, and accelerators that execute computational operations for graphics rendering, artificial intelligence workloads, and real-time data processing in immersive digital environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:physical-hardware",
+      "label": "Physical Hardware"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "high-performance-computing",
+      "label": "High Performance Computing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "physical-hardware",
+      "label": "Physical Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    }
+  ]
+}

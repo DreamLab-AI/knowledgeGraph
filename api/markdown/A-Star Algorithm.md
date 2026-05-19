@@ -1,21 +1,709 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AStarAlgorithm
-uri:: urn:visionclaw:concept:artificial-intelligence:a-star-algorithm
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:a-star-algorithm
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: A-Star Algorithm
-content-hash:: sha256-12-14f1085b9cd3
-legacy-term-id:: AI-1004
-status:: mature
-maturity:: production-ready
-quality-score:: 0.50
-authority-score:: 0.94
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AStarAlgorithm
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:a-star-algorithm
 public:: true
+
+# A-Star Algorithm
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cf051881badd4b69866d5bef7737901b07dc1e05ceb9ce4c4934dd9f2d0db6cc",
+  "@type": "Page",
+  "vc:slug": "a-star-algorithm",
+  "title": "A-Star Algorithm",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:admissible-heuristic",
+      "vc:label": "Admissible Heuristic"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-efficiency",
+      "vc:label": "Algorithmic Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-layer",
+      "vc:label": "AlgorithmicLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:best-first-search",
+      "vc:label": "Best-First Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:closed-set",
+      "vc:label": "Closed Set"
+    },
+    {
+      "@id": "urn:visionflow:linked:cormen-introduction-to-algorithms",
+      "vc:label": "Cormen Introduction to Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-function",
+      "vc:label": "Cost Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-structures",
+      "vc:label": "Data Structures"
+    },
+    {
+      "@id": "urn:visionflow:linked:distance-metric",
+      "vc:label": "Distance Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-function",
+      "vc:label": "Evaluation Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-directed-search",
+      "vc:label": "Goal-Directed Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-maps-platform",
+      "vc:label": "Google Maps Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-representation",
+      "vc:label": "Graph Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:hart-nilsson-raphael-1968-formal-basis-for-heuristic-determination",
+      "vc:label": "Hart, Nilsson, Raphael 1968 Formal Basis for Heuristic Determination"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-evaluation",
+      "vc:label": "Heuristic Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-function",
+      "vc:label": "Heuristic Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-search",
+      "vc:label": "Heuristic Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-search-strategy",
+      "vc:label": "Informed Search Strategy"
+    },
+    {
+      "@id": "urn:visionflow:linked:international-planning-competition",
+      "vc:label": "International Planning Competition"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-expansion",
+      "vc:label": "Node Expansion"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-set",
+      "vc:label": "Open Set"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimal-path-discovery",
+      "vc:label": "Optimal Path Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimal-pathfinding",
+      "vc:label": "Optimal Pathfinding"
+    },
+    {
+      "@id": "urn:visionflow:linked:path-reconstruction",
+      "vc:label": "Path Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:linked:pathfinding",
+      "vc:label": "Pathfinding"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue",
+      "vc:label": "Priority Queue"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue-data-structure",
+      "vc:label": "Priority Queue Data Structure"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-industry-association-automation-statistics",
+      "vc:label": "Robotics Industry Association Automation Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros-navigation-stack",
+      "vc:label": "ROS Navigation Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:route-planning",
+      "vc:label": "Route Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:russell-and-norvig-artificial-intelligence-modern-approach",
+      "vc:label": "Russell & Norvig Artificial Intelligence Modern Approach"
+    },
+    {
+      "@id": "urn:visionflow:linked:unity-technologies-nav-mesh-documentation",
+      "vc:label": "Unity Technologies NavMesh Documentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-framework",
+      "vc:label": "AlgorithmicFramework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graph-algorithms",
+      "vc:label": "Graph Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:heuristic-methods",
+      "vc:label": "Heuristic Methods"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:informed-search",
+      "vc:label": "Informed Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:navigation",
+      "vc:label": "Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:optimization-algorithms",
+      "vc:label": "Optimization Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:search-algorithms",
+      "vc:label": "Search Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:wheeled-mobile-robot",
+      "vc:label": "Wheeled Mobile Robot"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.94"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-14f1085b9cd3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AStarAlgorithm"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1004"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "A-Star Algorithm"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:a-star-algorithm"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:a-star-algorithm"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cf051881badd4b69866d5bef7737901b07dc1e05ceb9ce4c4934dd9f2d0db6cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:a-star-algorithm",
+  "@type": "OntologyClass",
+  "label": "A-Star Algorithm",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:search-algorithms",
+      "vc:label": "Search Algorithms"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "mature",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cf051881badd4b69866d5bef7737901b07dc1e05ceb9ce4c4934dd9f2d0db6cc"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cf051881badd4b69866d5bef7737901b07dc1e05ceb9ce4c4934dd9f2d0db6cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A best-first informed search algorithm developed by Peter Hart, Nils Nilsson, and Bertram Raphael in 1968 that finds the optimal path between nodes in a weighted graph by combining actual accumulated cost from the start node (g-score representing precise path cost traversed thus far) with admissible heuristic estimated cost to the goal (h-score providing optimistic lower bound on remaining distance), using evaluation function f(n) = g(n) + h(n) to prioritize exploration through a priority queue ordering nodes by total estimated path cost, guaranteeing optimality and completeness when employing admissible heuristics (never overestimating true cost) whilst remaining optimally efficient by expanding the minimum number of nodes necessary among all optimal algorithms using the same heuristic knowledge, extensively deployed across autonomous vehicle route planning processing 15 billion+ navigation queries daily (Google Maps, Waze, HERE Technologies), video game pathfinding engines (Unity NavMesh serving 1.5 million+ developers, Unreal Engine 5 navigation graphs), robotics motion planning (warehouse automation systems coordinating 500,000+ robots globally including Amazon Robotics 520,000",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.94",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:closed-set",
+      "vc:label": "Closed Set"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-function",
+      "vc:label": "Cost Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-function",
+      "vc:label": "Evaluation Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-function",
+      "vc:label": "Heuristic Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-set",
+      "vc:label": "Open Set"
+    },
+    {
+      "@id": "urn:visionflow:linked:path-reconstruction",
+      "vc:label": "Path Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue",
+      "vc:label": "Priority Queue"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:admissible-heuristic",
+      "vc:label": "Admissible Heuristic"
+    },
+    {
+      "@id": "urn:visionflow:linked:distance-metric",
+      "vc:label": "Distance Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-representation",
+      "vc:label": "Graph Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-expansion",
+      "vc:label": "Node Expansion"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue-data-structure",
+      "vc:label": "Priority Queue Data Structure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:goal-directed-search",
+      "vc:label": "Goal-Directed Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimal-path-discovery",
+      "vc:label": "Optimal Path Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:pathfinding",
+      "vc:label": "Pathfinding"
+    },
+    {
+      "@id": "urn:visionflow:linked:route-planning",
+      "vc:label": "Route Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:navigation",
+      "vc:label": "Navigation"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:best-first-search",
+      "vc:label": "Best-First Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-evaluation",
+      "vc:label": "Heuristic Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-search-strategy",
+      "vc:label": "Informed Search Strategy"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimal-pathfinding",
+      "vc:label": "Optimal Pathfinding"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:algorithmic-efficiency",
+      "vc:label": "Algorithmic Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-structures",
+      "vc:label": "Data Structures"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-search",
+      "vc:label": "Heuristic Search"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:wheeled-mobile-robot",
+      "vc:label": "Wheeled Mobile Robot"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:a-star-algorithm:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cf051881badd4b69866d5bef7737901b07dc1e05ceb9ce4c4934dd9f2d0db6cc"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Admissible Heuristic]]",
+      "resolved": "urn:visionflow:linked:admissible-heuristic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithmic Efficiency]]",
+      "resolved": "urn:visionflow:linked:algorithmic-efficiency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AlgorithmicLayer]]",
+      "resolved": "urn:visionflow:linked:algorithmic-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Best-First Search]]",
+      "resolved": "urn:visionflow:linked:best-first-search",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Closed Set]]",
+      "resolved": "urn:visionflow:linked:closed-set",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cormen Introduction to Algorithms]]",
+      "resolved": "urn:visionflow:linked:cormen-introduction-to-algorithms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cost Function]]",
+      "resolved": "urn:visionflow:linked:cost-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Structures]]",
+      "resolved": "urn:visionflow:linked:data-structures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distance Metric]]",
+      "resolved": "urn:visionflow:linked:distance-metric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Evaluation Function]]",
+      "resolved": "urn:visionflow:linked:evaluation-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goal-Directed Search]]",
+      "resolved": "urn:visionflow:linked:goal-directed-search",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Google Maps Platform]]",
+      "resolved": "urn:visionflow:linked:google-maps-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graph Representation]]",
+      "resolved": "urn:visionflow:linked:graph-representation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graph Theory]]",
+      "resolved": "urn:visionflow:linked:graph-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hart, Nilsson, Raphael 1968 Formal Basis for Heuristic Determination]]",
+      "resolved": "urn:visionflow:linked:hart-nilsson-raphael-1968-formal-basis-for-heuristic-determination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heuristic Evaluation]]",
+      "resolved": "urn:visionflow:linked:heuristic-evaluation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heuristic Function]]",
+      "resolved": "urn:visionflow:linked:heuristic-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heuristic Search]]",
+      "resolved": "urn:visionflow:linked:heuristic-search",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Informed Search Strategy]]",
+      "resolved": "urn:visionflow:linked:informed-search-strategy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[International Planning Competition]]",
+      "resolved": "urn:visionflow:linked:international-planning-competition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Node Expansion]]",
+      "resolved": "urn:visionflow:linked:node-expansion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Open Set]]",
+      "resolved": "urn:visionflow:linked:open-set",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimal Path Discovery]]",
+      "resolved": "urn:visionflow:linked:optimal-path-discovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimal Pathfinding]]",
+      "resolved": "urn:visionflow:linked:optimal-pathfinding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Path Reconstruction]]",
+      "resolved": "urn:visionflow:linked:path-reconstruction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pathfinding]]",
+      "resolved": "urn:visionflow:linked:pathfinding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Priority Queue]]",
+      "resolved": "urn:visionflow:linked:priority-queue",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Priority Queue Data Structure]]",
+      "resolved": "urn:visionflow:linked:priority-queue-data-structure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotics Industry Association Automation Statistics]]",
+      "resolved": "urn:visionflow:linked:robotics-industry-association-automation-statistics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ROS Navigation Stack]]",
+      "resolved": "urn:visionflow:linked:ros-navigation-stack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Route Planning]]",
+      "resolved": "urn:visionflow:linked:route-planning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Russell & Norvig Artificial Intelligence Modern Approach]]",
+      "resolved": "urn:visionflow:linked:russell-and-norvig-artificial-intelligence-modern-approach",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Unity Technologies NavMesh Documentation]]",
+      "resolved": "urn:visionflow:linked:unity-technologies-nav-mesh-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AlgorithmicFramework]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Graph Algorithms]]",
+      "resolved": "urn:visionflow:owl:class:graph-algorithms",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Heuristic Methods]]",
+      "resolved": "urn:visionflow:owl:class:heuristic-methods",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Informed Search]]",
+      "resolved": "urn:visionflow:owl:class:informed-search",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Planning]]",
+      "resolved": "urn:visionflow:owl:class:motion-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Navigation]]",
+      "resolved": "urn:visionflow:owl:class:navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Optimization Algorithms]]",
+      "resolved": "urn:visionflow:owl:class:optimization-algorithms",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Search Algorithms]]",
+      "resolved": "urn:visionflow:owl:class:search-algorithms",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Wheeled Mobile Robot]]",
+      "resolved": "urn:visionflow:owl:class:wheeled-mobile-robot",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cf051881badd4b69866d5bef7737901b07dc1e05ceb9ce4c4934dd9f2d0db6cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A best-first informed search algorithm developed by Peter Hart, Nils Nilsson, and Bertram Raphael in 1968 that finds the optimal path between nodes in a weighted graph by combining actual accumulated cost from the start node (g-score representing precise path cost traversed thus far) with admissible heuristic estimated cost to the goal (h-score providing optimistic lower bound on remaining distance), using evaluation function f(n) = g(n) + h(n) to prioritize exploration through a priority queue ordering nodes by total estimated path cost, guaranteeing optimality and completeness when employing admissible heuristics (never overestimating true cost) whilst remaining optimally efficient by expanding the minimum number of nodes necessary among all optimal algorithms using the same heuristic knowledge, extensively deployed across autonomous vehicle route planning processing 15 billion+ navigation queries daily (Google Maps, Waze, HERE Technologies), video game pathfinding engines (Unity NavMesh serving 1.5 million+ developers, Unreal Engine 5 navigation graphs), robotics motion planning (warehouse automation systems coordinating 500,000+ robots globally including Amazon Robotics 520,000 units, Ocado 3,000+ units per facility, Alibaba Cainiao 700+ automated warehouses), network packet routing optimizing Internet backbone traffic (BGP path selection influencing 900,000+ autonomous systems), puzzle-solving AI (International Planning Competition benchmarks, Rubik's Cube solvers achieving 20-move solutions), logistics optimization (FedEx/UPS route planning 25 million+ daily deliveries), and emergency response coordination (disaster relief path planning, ambulance routing reducing response times 18-27%), with algorithmic variations including weighted A* trading optimality for 30-50% speed gains, bidirectional A* halving search space through simultaneous forward-backward exploration, hierarchical A* enabling continental-scale navigation via multi-resolution graph abstraction, and anytime A* providing progressive solution refinement under time constraints, fundamentally bridging classical graph theory (Dijkstra 1959 uninformed shortest path) with artificial intelligence heuristic search (demonstrating how domain knowledge encoded as admissible heuristics dramatically reduces computational complexity from exhaustive exploration to focused goal-directed search whilst preserving mathematical optimality guarantees).

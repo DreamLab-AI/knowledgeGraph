@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:9244dd4e7632e6d3c2660dfac1f35dc61d05f467ca5170cd86dbc09b72b73914",
+  "title": "Cybersecurity",
+  "slug": "cybersecurity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cybersecurity",
+  "domain": "artificial-intelligence",
+  "definition": "Cybersecurity is a concept within the ai domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-security",
+      "label": "AI Security"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    }
+  ]
+}

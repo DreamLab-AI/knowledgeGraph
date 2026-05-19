@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:e0266ab1ae8c8f59ff4549329c17dff061617916a87c9f6770b2a02d73b94dd4",
+  "title": "glTF (3D File Format)",
+  "slug": "gl-tf-3-d-file-format",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gl-tf-3-d-file-format",
+  "domain": "spatial-computing",
+  "definition": "A royalty-free, open-standard 3D asset transmission format developed by Khronos Group that efficiently specifies scene structure, geometry, materials, animations, and other properties for real-time rendering.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:animation-channels",
+        "label": "Animation Channels"
+      },
+      {
+        "id": "urn:visionflow:linked:material-definition",
+        "label": "Material Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-data",
+        "label": "Mesh Data"
+      },
+      {
+        "id": "urn:visionflow:linked:texture-references",
+        "label": "Texture References"
+      },
+      {
+        "id": "urn:visionflow:owl:class:binary-buffer",
+        "label": "Binary Buffer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:visionflow:owl:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-asset-exchange",
+        "label": "3D Asset Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:content-interoperability",
+        "label": "Content Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      },
+      {
+        "id": "urn:visionflow:linked:runtime-rendering",
+        "label": "Runtime Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-asset-exchange",
+      "label": "3D Asset Exchange"
+    },
+    {
+      "slug": "3-d-content-pipeline",
+      "label": "3D Content Pipeline"
+    },
+    {
+      "slug": "animation-channels",
+      "label": "Animation Channels"
+    },
+    {
+      "slug": "asset-interchange-system",
+      "label": "Asset Interchange System"
+    },
+    {
+      "slug": "base64-encoding",
+      "label": "Base64 Encoding"
+    },
+    {
+      "slug": "content-interoperability",
+      "label": "Content Interoperability"
+    },
+    {
+      "slug": "cross-platform-compatibility",
+      "label": "Cross-Platform Compatibility"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF taxonomy"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "material-definition",
+      "label": "Material Definition"
+    },
+    {
+      "slug": "mesh-data",
+      "label": "Mesh Data"
+    },
+    {
+      "slug": "mime-types",
+      "label": "MIME Types"
+    },
+    {
+      "slug": "runtime-rendering",
+      "label": "Runtime Rendering"
+    },
+    {
+      "slug": "texture-references",
+      "label": "Texture References"
+    },
+    {
+      "slug": "uri-specification",
+      "label": "URI Specification"
+    },
+    {
+      "slug": "binary-buffer",
+      "label": "Binary Buffer"
+    },
+    {
+      "slug": "binary-encoding",
+      "label": "Binary Encoding"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    }
+  ]
+}

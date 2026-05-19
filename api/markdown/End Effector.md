@@ -1,21 +1,336 @@
-iri:: http://narrativegoldmine.com/robotics#EndEffector
-uri:: urn:visionclaw:concept:robotics:end-effector
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:end-effector
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: End Effector
-content-hash:: sha256-12-00c46372f1cb
-legacy-term-id:: RB-0025
-status:: draft
-maturity:: draft
-quality-score:: 0.59
-authority-score:: 0.13
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#EndEffector
+legacy_uri:: urn:visionclaw:concept:robotics:end-effector
 public:: true
+
+# End Effector
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4",
+  "@type": "Page",
+  "vc:slug": "end-effector",
+  "title": "End Effector",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:assembly-operations",
+      "vc:label": "Assembly Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-interface",
+      "vc:label": "Control Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:force-feedback",
+      "vc:label": "Force Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:manipulation-system",
+      "vc:label": "Manipulation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-handling",
+      "vc:label": "Material Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanical-interface",
+      "vc:label": "Mechanical Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-manufacturing",
+      "vc:label": "Precision Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:linked:robot-arm",
+      "vc:label": "Robot Arm"
+    },
+    {
+      "@id": "urn:visionflow:linked:robot-wrist",
+      "vc:label": "Robot Wrist"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mechanical-component",
+      "vc:label": "Mechanical Component"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.13"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-00c46372f1cb"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#EndEffector"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0025"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "End Effector"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.59"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:end-effector"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:end-effector"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:end-effector",
+  "@type": "OntologyClass",
+  "label": "End Effector",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:mechanical-component",
+      "vc:label": "Mechanical Component"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**End Effector** - A task-specific tool or manipulator mounted at the [[Robot Wrist]] that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
+  "vc:qualityScore": {
+    "@value": "0.59",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.13",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:manipulation-system",
+      "vc:label": "Manipulation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:robot-arm",
+      "vc:label": "Robot Arm"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:control-interface",
+      "vc:label": "Control Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:force-feedback",
+      "vc:label": "Force Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanical-interface",
+      "vc:label": "Mechanical Interface"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:assembly-operations",
+      "vc:label": "Assembly Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-handling",
+      "vc:label": "Material Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-manufacturing",
+      "vc:label": "Precision Manufacturing"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:end-effector:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Assembly Operations]]",
+      "resolved": "urn:visionflow:linked:assembly-operations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Control Interface]]",
+      "resolved": "urn:visionflow:linked:control-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Force Feedback]]",
+      "resolved": "urn:visionflow:linked:force-feedback",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manipulation System]]",
+      "resolved": "urn:visionflow:linked:manipulation-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Material Handling]]",
+      "resolved": "urn:visionflow:linked:material-handling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mechanical Interface]]",
+      "resolved": "urn:visionflow:linked:mechanical-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precision Manufacturing]]",
+      "resolved": "urn:visionflow:linked:precision-manufacturing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robot Arm]]",
+      "resolved": "urn:visionflow:linked:robot-arm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robot Wrist]]",
+      "resolved": "urn:visionflow:linked:robot-wrist",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mechanical Component]]",
+      "resolved": "urn:visionflow:owl:class:mechanical-component",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **End Effector** - A task-specific tool or manipulator mounted at the [[Robot Wrist]] that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.

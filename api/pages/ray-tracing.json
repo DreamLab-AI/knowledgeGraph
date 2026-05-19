@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:30f8d803d5a5cf041fe567c9dccd81e1ade6caf39c1cd015b236e9f069eb9a66",
+  "title": "Ray Tracing",
+  "slug": "ray-tracing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ray-tracing",
+  "domain": "graphics-rendering",
+  "definition": "Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surface shading at hit points, and secondary-ray spawning for mirror reflections, refractions through transmissive materials, hard and soft shadows, indirect diffuse bounces, and complex global-illumination phenomena such as caustics and participating-media scattering; the technique is grounded mathematically in the rendering equation introduced by James T. Kajiya (SIGGRAPH 1986): L\u2092(x,\u03c9) = L\u2091(x,\u03c9) + \u222b_\u03a9 f_r(x,\u03c9\u1d62,\u03c9) L\u1d62(x,\u03c9\u1d62) (\u03c9\u1d62\u00b7n\u0302) d\u03c9\u1d62, where L\u2092 is outgoing radiance at surface point x in direction \u03c9, L\u2091 is emitted radiance, f_r the bidirectional reflectance distribution function (BRDF) encoding material appearance, the hemisphere integral \u222b_\u03a9 accumulates incoming radiance L\u1d62 from all directions \u03c9\u1d62 weighted by the BRDF and cosine foreshortening factor (\u03c9\u1d62\u00b7n\u0302), and L\u1d62 is itself the outgoing radiance of whatever surface or medium the incoming ray intersects, making the equation recursive; in prac",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "id": "urn:visionflow:linked:light-transport",
+      "label": "Light Transport"
+    },
+    {
+      "id": "urn:visionflow:linked:monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "id": "urn:visionflow:linked:rendering",
+      "label": "Rendering"
+    },
+    {
+      "id": "urn:visionflow:owl:class:global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "id": "urn:visionflow:owl:class:physically-based-rendering",
+      "label": "Physically-Based Rendering"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:acceleration-structure",
+        "label": "Acceleration Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:brdf",
+        "label": "BRDF"
+      },
+      {
+        "id": "urn:visionflow:linked:bvh-acceleration-structure",
+        "label": "BVH Acceleration Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:denoiser",
+        "label": "Denoiser"
+      },
+      {
+        "id": "urn:visionflow:linked:intersection-test",
+        "label": "Intersection Test"
+      },
+      {
+        "id": "urn:visionflow:linked:primary-ray",
+        "label": "Primary Ray"
+      },
+      {
+        "id": "urn:visionflow:linked:reservoir-sampling",
+        "label": "Reservoir Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:rt-core",
+        "label": "RT Core"
+      },
+      {
+        "id": "urn:visionflow:linked:secondary-ray",
+        "label": "Secondary Ray"
+      },
+      {
+        "id": "urn:visionflow:linked:shading-model",
+        "label": "Shading Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bvh-acceleration-structure",
+        "label": "BVH Acceleration Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:camera-model",
+        "label": "Camera Model"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:light-sources",
+        "label": "Light Sources"
+      },
+      {
+        "id": "urn:visionflow:linked:material-model",
+        "label": "Material Model"
+      },
+      {
+        "id": "urn:visionflow:linked:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:rendering-equation",
+        "label": "Rendering Equation"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-geometry",
+        "label": "Scene Geometry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:visionflow:linked:caustics",
+        "label": "Caustics"
+      },
+      {
+        "id": "urn:visionflow:linked:participating-media-rendering",
+        "label": "Participating Media Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-path-tracing",
+        "label": "Real-Time Path Tracing"
+      },
+      {
+        "id": "urn:visionflow:linked:reflections",
+        "label": "Reflections"
+      },
+      {
+        "id": "urn:visionflow:linked:soft-shadows",
+        "label": "Soft Shadows"
+      },
+      {
+        "id": "urn:visionflow:linked:subsurface-scattering",
+        "label": "Subsurface Scattering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:visionflow:owl:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bidirectional-path-tracing",
+        "label": "Bidirectional Path Tracing"
+      },
+      {
+        "id": "urn:visionflow:linked:metropolis-light-transport",
+        "label": "Metropolis Light Transport"
+      },
+      {
+        "id": "urn:visionflow:linked:multiple-importance-sampling",
+        "label": "Multiple Importance Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "id": "urn:visionflow:linked:photon-mapping",
+        "label": "Photon Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:re-stir",
+        "label": "ReSTIR"
+      },
+      {
+        "id": "urn:visionflow:linked:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:whitted-ray-tracing",
+        "label": "Whitted Ray Tracing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acceleration-structure",
+      "label": "Acceleration Structure"
+    },
+    {
+      "slug": "ai-upscaling",
+      "label": "AI Upscaling"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "ambient-occlusion",
+      "label": "Ambient Occlusion"
+    },
+    {
+      "slug": "ambient-occlusion-maps",
+      "label": "Ambient Occlusion Maps"
+    },
+    {
+      "slug": "architectural-visualisation",
+      "label": "Architectural Visualisation"
+    },
+    {
+      "slug": "baked-lightmaps",
+      "label": "Baked Lightmaps"
+    },
+    {
+      "slug": "bidirectional-path-tracing",
+      "label": "Bidirectional Path Tracing"
+    },
+    {
+      "slug": "bitterli-et-al-2020-re-stir-siggraph-tog",
+      "label": "Bitterli et al. 2020 ReSTIR SIGGRAPH TOG"
+    },
+    {
+      "slug": "brdf",
+      "label": "BRDF"
+    },
+    {
+      "slug": "bvh-acceleration-structure",
+      "label": "BVH Acceleration Structure"
+    },
+    {
+      "slug": "bvh-construction",
+      "label": "BVH Construction"
+    },
+    {
+      "slug": "camera-model",
+      "label": "Camera Model"
+    },
+    {
+      "slug": "caustics",
+      "label": "Caustics"
+    },
+    {
+      "slug": "cd-projekt-red-nvidia-cyberpunk-2077-overdrive-2023",
+      "label": "CD Projekt Red NVIDIA Cyberpunk 2077 Overdrive 2023"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "ComputerGraphicsDomain"
+    },
+    {
+      "slug": "denoiser",
+      "label": "Denoiser"
+    },
+    {
+      "slug": "denoising",
+      "label": "Denoising"
+    },
+    {
+      "slug": "direct-x",
+      "label": "DirectX"
+    },
+    {
+      "slug": "direct-x-raytracing",
+      "label": "DirectX Raytracing"
+    },
+    {
+      "slug": "dlss",
+      "label": "DLSS"
+    },
+    {
+      "slug": "epic-games-lumen-ue5-2022",
+      "label": "Epic Games Lumen UE5 2022"
+    },
+    {
+      "slug": "film-vfx",
+      "label": "Film VFX"
+    },
+    {
+      "slug": "game-rendering",
+      "label": "Game Rendering"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "graphics-rendering-domain",
+      "label": "GraphicsRenderingDomain"
+    },
+    {
+      "slug": "haines-akenine-m-ller-2019-ray-tracing-gems-apress",
+      "label": "Haines Akenine-M\u00f6ller 2019 Ray Tracing Gems Apress"
+    },
+    {
+      "slug": "haines-marrs-2021-ray-tracing-gems-ii-apress",
+      "label": "Haines Marrs 2021 Ray Tracing Gems II Apress"
+    },
+    {
+      "slug": "hardware-acceleration-layer",
+      "label": "HardwareAccelerationLayer"
+    },
+    {
+      "slug": "hardware-ray-tracing-cores",
+      "label": "Hardware Ray Tracing Cores"
+    },
+    {
+      "slug": "imagination-technologies-power-vr-photon-2021",
+      "label": "Imagination Technologies PowerVR Photon 2021"
+    },
+    {
+      "slug": "importance-sampling",
+      "label": "Importance Sampling"
+    },
+    {
+      "slug": "intel-oidn-2-x-2023",
+      "label": "Intel OIDN 2.x 2023"
+    },
+    {
+      "slug": "intersection-test",
+      "label": "Intersection Test"
+    },
+    {
+      "slug": "jakob-et-al-2022-mitsuba-3-siggraph-asia",
+      "label": "Jakob et al. 2022 Mitsuba 3 SIGGRAPH Asia"
+    },
+    {
+      "slug": "jensen-1996-photon-mapping-eurographics",
+      "label": "Jensen 1996 Photon Mapping Eurographics"
+    },
+    {
+      "slug": "kajiya-1986-rendering-equation-siggraph",
+      "label": "Kajiya 1986 Rendering Equation SIGGRAPH"
+    },
+    {
+      "slug": "karras-aila-2013-gpu-bvh-construction-hpg",
+      "label": "Karras Aila 2013 GPU BVH Construction HPG"
+    },
+    {
+      "slug": "khronos-vulkan-khr-ray-tracing",
+      "label": "Khronos Vulkan KHR_ray_tracing"
+    },
+    {
+      "slug": "khronos-vulkan-khr-ray-tracing-pipeline-2021",
+      "label": "Khronos Vulkan KHR_ray_tracing_pipeline 2021"
+    },
+    {
+      "slug": "light-sources",
+      "label": "Light Sources"
+    },
+    {
+      "slug": "light-transport",
+      "label": "Light Transport"
+    },
+    {
+      "slug": "lin-et-al-2022-gris-re-stir-pt-siggraph-tog",
+      "label": "Lin et al. 2022 GRIS ReSTIR PT SIGGRAPH TOG"
+    },
+    {
+      "slug": "lumen",
+      "label": "Lumen"
+    },
+    {
+      "slug": "m-ller-et-al-2021-neural-radiance-caching-siggraph-tog",
+      "label": "M\u00fcller et al. 2021 Neural Radiance Caching SIGGRAPH TOG"
+    },
+    {
+      "slug": "material-model",
+      "label": "Material Model"
+    },
+    {
+      "slug": "metropolis-light-transport",
+      "label": "Metropolis Light Transport"
+    },
+    {
+      "slug": "microsoft-dxr-specification-2018",
+      "label": "Microsoft DXR Specification 2018"
+    },
+    {
+      "slug": "monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "slug": "multiple-importance-sampling",
+      "label": "Multiple Importance Sampling"
+    },
+    {
+      "slug": "neural-denoising",
+      "label": "Neural Denoising"
+    },
+    {
+      "slug": "nvidia-blackwell-rtx-50-series-architecture-2025",
+      "label": "NVIDIA Blackwell RTX 50-series Architecture 2025"
+    },
+    {
+      "slug": "nvidia-dlss-3-5-ray-reconstruction-2023",
+      "label": "NVIDIA DLSS 3.5 Ray Reconstruction 2023"
+    },
+    {
+      "slug": "open-rl",
+      "label": "OpenRL"
+    },
+    {
+      "slug": "opti-x",
+      "label": "OptiX"
+    },
+    {
+      "slug": "opti-x-sdk",
+      "label": "OptiX SDK"
+    },
+    {
+      "slug": "ouyang-et-al-2021-re-stir-gi-hpg",
+      "label": "Ouyang et al. 2021 ReSTIR GI HPG"
+    },
+    {
+      "slug": "participating-media-rendering",
+      "label": "Participating Media Rendering"
+    },
+    {
+      "slug": "path-tracing",
+      "label": "Path Tracing"
+    },
+    {
+      "slug": "pbrt-standard",
+      "label": "PBRT Standard"
+    },
+    {
+      "slug": "pharr-jakob-humphreys-2023-physically-based-rendering-4th-ed-mit-press",
+      "label": "Pharr Jakob Humphreys 2023 Physically Based Rendering 4th ed MIT Press"
+    },
+    {
+      "slug": "photon-mapping",
+      "label": "Photon Mapping"
+    },
+    {
+      "slug": "primary-ray",
+      "label": "Primary Ray"
+    },
+    {
+      "slug": "product-visualisation",
+      "label": "Product Visualisation"
+    },
+    {
+      "slug": "radiosity",
+      "label": "Radiosity"
+    },
+    {
+      "slug": "re-stir",
+      "label": "ReSTIR"
+    },
+    {
+      "slug": "real-time-path-tracing",
+      "label": "Real-Time Path Tracing"
+    },
+    {
+      "slug": "real-time-rendering-domain",
+      "label": "RealTimeRenderingDomain"
+    },
+    {
+      "slug": "reflections",
+      "label": "Reflections"
+    },
+    {
+      "slug": "rendering",
+      "label": "Rendering"
+    },
+    {
+      "slug": "rendering-equation",
+      "label": "Rendering Equation"
+    },
+    {
+      "slug": "reservoir-based-resampling",
+      "label": "Reservoir-Based Resampling"
+    },
+    {
+      "slug": "reservoir-sampling",
+      "label": "Reservoir Sampling"
+    },
+    {
+      "slug": "rt-core",
+      "label": "RT Core"
+    },
+    {
+      "slug": "russian-roulette-termination",
+      "label": "Russian Roulette Termination"
+    },
+    {
+      "slug": "scene-geometry",
+      "label": "Scene Geometry"
+    },
+    {
+      "slug": "schied-et-al-2017-svgf-hpg",
+      "label": "Schied et al. 2017 SVGF HPG"
+    },
+    {
+      "slug": "scientific-visualisation",
+      "label": "Scientific Visualisation"
+    },
+    {
+      "slug": "screen-space-reflections",
+      "label": "Screen Space Reflections"
+    },
+    {
+      "slug": "secondary-ray",
+      "label": "Secondary Ray"
+    },
+    {
+      "slug": "shading-model",
+      "label": "Shading Model"
+    },
+    {
+      "slug": "shadow-maps",
+      "label": "Shadow Maps"
+    },
+    {
+      "slug": "soft-shadows",
+      "label": "Soft Shadows"
+    },
+    {
+      "slug": "spatiotemporal-filtering",
+      "label": "Spatiotemporal Filtering"
+    },
+    {
+      "slug": "subsurface-scattering",
+      "label": "Subsurface Scattering"
+    },
+    {
+      "slug": "veach-1997-ph-d-thesis-stanford",
+      "label": "Veach 1997 PhD Thesis Stanford"
+    },
+    {
+      "slug": "veach-and-guibas-1994-bidirectional-estimators-eurographics",
+      "label": "Veach & Guibas 1994 Bidirectional Estimators Eurographics"
+    },
+    {
+      "slug": "veach-and-guibas-1995-multiple-importance-sampling-siggraph",
+      "label": "Veach & Guibas 1995 Multiple Importance Sampling SIGGRAPH"
+    },
+    {
+      "slug": "veach-and-guibas-1997-metropolis-light-transport-siggraph",
+      "label": "Veach & Guibas 1997 Metropolis Light Transport SIGGRAPH"
+    },
+    {
+      "slug": "volumetric-rendering",
+      "label": "Volumetric Rendering"
+    },
+    {
+      "slug": "voxel-cone-tracing",
+      "label": "Voxel Cone Tracing"
+    },
+    {
+      "slug": "vulkan",
+      "label": "Vulkan"
+    },
+    {
+      "slug": "wald-et-al-2007-dynamic-bvh-tog",
+      "label": "Wald et al. 2007 Dynamic BVH TOG"
+    },
+    {
+      "slug": "whitted-1980-improved-illumination-model-cacm",
+      "label": "Whitted 1980 Improved Illumination Model CACM"
+    },
+    {
+      "slug": "whitted-ray-tracing",
+      "label": "Whitted Ray Tracing"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "photorealistic-rendering",
+      "label": "Photorealistic Rendering"
+    },
+    {
+      "slug": "physically-based-rendering",
+      "label": "Physically-Based Rendering"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:dc9718685a5974c68bbd169931bcf62965230ee53598a66dd58d00747eed3e7c",
+  "title": "Privacy-Enhancing Computation (PEC)",
+  "slug": "privacy-enhancing-computation-pec",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-enhancing-computation-pec",
+  "domain": "spatial-computing",
+  "definition": "Computational techniques that enable data processing and analysis while preserving privacy through cryptographic methods such as homomorphic encryption, secure multi-party computation, and differential privacy.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:visionflow:owl:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:privacy-compliant-processing",
+        "label": "Privacy-Compliant Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-preserving-analytics",
+        "label": "Privacy-Preserving Analytics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-data-sharing",
+        "label": "Secure Data Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-primitives",
+      "label": "Cryptographic Primitives"
+    },
+    {
+      "slug": "enisa-2024",
+      "label": "ENISA 2024"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "iso-27559",
+      "label": "ISO 27559"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "nist-pec-guidelines",
+      "label": "NIST PEC Guidelines"
+    },
+    {
+      "slug": "privacy-compliant-processing",
+      "label": "Privacy-Compliant Processing"
+    },
+    {
+      "slug": "privacy-models",
+      "label": "Privacy Models"
+    },
+    {
+      "slug": "secure-computation-protocols",
+      "label": "Secure Computation Protocols"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "privacy-architecture",
+      "label": "Privacy Architecture"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy-Preserving Analytics"
+    },
+    {
+      "slug": "secure-data-sharing",
+      "label": "Secure Data Sharing"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    },
+    {
+      "slug": "security-framework",
+      "label": "Security Framework"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

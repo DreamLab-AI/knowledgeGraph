@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:489ee90d5e6eb3f00cfb9e6386801e6dd14460607d51831ccabb555fdcea01c8",
+  "title": "Virtual Set Design",
+  "slug": "virtual-set-design",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-set-design",
+  "domain": "spatial-computing",
+  "definition": "The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modeling, game engines, and LED wall technology, enabling dynamic digital sets that can be modified in real-time during filming to replace or augment physical set construction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:production-design",
+      "label": "Production Design"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "production-design",
+      "label": "Production Design"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    }
+  ]
+}

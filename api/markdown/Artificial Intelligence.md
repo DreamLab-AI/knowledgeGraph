@@ -1,22 +1,695 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ArtificialIntelligence
-uri:: urn:visionclaw:concept:artificial-intelligence:artificial-intelligence
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:artificial-intelligence
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Artificial Intelligence
-content-hash:: sha256-12-0af91407f4fd
-legacy-term-id:: AI-0001
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ArtificialIntelligence
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:artificial-intelligence
 public:: true
-bridges-to:: [[Blockchain]]
+
+# Artificial Intelligence
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb",
+  "@type": "Page",
+  "vc:slug": "artificial-intelligence",
+  "title": "Artificial Intelligence",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-infrastructure",
+      "vc:label": "Computational Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-support",
+      "vc:label": "Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-thinking",
+      "vc:label": "design thinking"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-automation",
+      "vc:label": "Intelligent Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-22989-2022",
+      "vc:label": "ISO/IEC 22989:2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23053-2022",
+      "vc:label": "ISO/IEC 23053:2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001-2023",
+      "vc:label": "ISO/IEC 42001:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:mark-zuckerberg",
+      "vc:label": "Mark Zuckerberg"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd",
+      "vc:label": "OECD"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd",
+      "vc:label": "oecd"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalisation",
+      "vc:label": "Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "user experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-risks",
+      "vc:label": "AI Risks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
+      "vc:label": "Artificial General Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
+      "vc:label": "Comparison of GPT4 and Gemini Ultra"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "computer vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "deep learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-and-edge",
+      "vc:label": "Hardware and Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:leopold-aschenbrenner",
+      "vc:label": "Leopold Aschenbrenner"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "machine learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-analytics",
+      "vc:label": "Predictive Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:singularity",
+      "vc:label": "Singularity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Blockchain]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0af91407f4fd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ArtificialIntelligence"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Artificial Intelligence"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:artificial-intelligence"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:artificial-intelligence"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:artificial-intelligence",
+  "@type": "OntologyClass",
+  "label": "Artificial Intelligence",
+  "subClassOf": [
+    {
+      "@id": "owl:Thing",
+      "vc:label": "owl:Thing"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:computational-infrastructure",
+      "vc:label": "Computational Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-support",
+      "vc:label": "Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-automation",
+      "vc:label": "Intelligent Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalisation",
+      "vc:label": "Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-analytics",
+      "vc:label": "Predictive Analytics"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:artificial-intelligence:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Autonomous Systems]]",
+      "resolved": "urn:visionflow:linked:autonomous-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Infrastructure]]",
+      "resolved": "urn:visionflow:linked:computational-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Support]]",
+      "resolved": "urn:visionflow:linked:decision-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[design thinking]]",
+      "resolved": "urn:visionflow:linked:design-thinking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intelligent Automation]]",
+      "resolved": "urn:visionflow:linked:intelligent-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 22989:2022]]",
+      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23053:2022]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23053-2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mark Zuckerberg]]",
+      "resolved": "urn:visionflow:linked:mark-zuckerberg",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI RMF]]",
+      "resolved": "urn:visionflow:linked:nist-ai-rmf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD]]",
+      "resolved": "urn:visionflow:linked:oecd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[oecd]]",
+      "resolved": "urn:visionflow:linked:oecd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Personalisation]]",
+      "resolved": "urn:visionflow:linked:personalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[user experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Risks]]",
+      "resolved": "urn:visionflow:owl:class:ai-risks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Video]]",
+      "resolved": "urn:visionflow:owl:class:ai-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial General Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-general-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[artificial intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Comparison of GPT4 and Gemini Ultra]]",
+      "resolved": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[computer vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[deep learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative AI]]",
+      "resolved": "urn:visionflow:owl:class:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hardware and Edge]]",
+      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Leopold Aschenbrenner]]",
+      "resolved": "urn:visionflow:owl:class:leopold-aschenbrenner",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Analytics]]",
+      "resolved": "urn:visionflow:owl:class:predictive-analytics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning]]",
+      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Singularity]]",
+      "resolved": "urn:visionflow:owl:class:singularity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training Data]]",
+      "resolved": "urn:visionflow:owl:class:training-data",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ### Primary Definition
@@ -525,7 +1198,7 @@ bridges-to:: [[Blockchain]]
 
   - ### [Pinecone](https://www.pinecone.io/)
 		- A vector database for AI applications.
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[Artificial Intelligence]]
 
   - ## Calls for a New Social Contract
@@ -601,7 +1274,7 @@ bridges-to:: [[Blockchain]]
   This currently borrows heavily from [the AI breakdown podcast](https://www.youtube.com/watch?v=5clOHBo8HP8), is an AI generated placeholder, and needs considerably more more.
 
   - ## See Also
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[Artificial Intelligence]]
   - [[Machine Learning]]
   - [[Deep Learning]]
@@ -656,7 +1329,7 @@ bridges-to:: [[Blockchain]]
   This currently borrows heavily from [the AI breakdown podcast](https://www.youtube.com/watch?v=5clOHBo8HP8), is an AI generated placeholder, and needs considerably more more.
 
   - ## See Also
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[Artificial Intelligence]]
   - [[Machine Learning]]
   - [[Deep Learning]]

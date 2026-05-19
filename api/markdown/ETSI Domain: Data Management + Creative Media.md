@@ -1,0 +1,403 @@
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainDataManagementCreativeMedia
+legacy_uri:: urn:visionclaw:concept:infrastructure:etsi-domain-data-management-creative-media
+public:: true
+
+# ETSI Domain: Data Management + Creative Media
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-data-management-creative-media",
+  "title": "ETSI Domain: Data Management + Creative Media",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:asset-database",
+      "vc:label": "Asset Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:asset-version-control",
+      "vc:label": "Asset Version Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-authoring",
+      "vc:label": "Collaborative Authoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-distribution",
+      "vc:label": "Content Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-pipeline",
+      "vc:label": "Content Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-media",
+      "vc:label": "Creative Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-storage",
+      "vc:label": "Distributed Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-mec-032",
+      "vc:label": "ETSI GR MEC 032"
+    },
+    {
+      "@id": "urn:visionflow:linked:version-control",
+      "vc:label": "Version Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-management",
+      "vc:label": "Data Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "vc:label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "vc:label": "InfrastructureDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:media-library",
+      "vc:label": "Media Library"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-management",
+      "vc:label": "Metadata Management"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9de9aaab9bd4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ETSIDomainDataManagementCreativeMedia"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20342"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI Domain: Data Management + Creative Media"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsi-domain-data-management-creative-media"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsi-domain-data-management-creative-media"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-data-management-creative-media",
+  "@type": "OntologyClass",
+  "label": "ETSI Domain: Data Management + Creative Media",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting creative content workflows, asset management, and version control systems.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "vc:label": "ETSI Metaverse Domain Taxonomy"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:asset-database",
+      "vc:label": "Asset Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-pipeline",
+      "vc:label": "Content Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:version-control",
+      "vc:label": "Version Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:media-library",
+      "vc:label": "Media Library"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:creative-media",
+      "vc:label": "Creative Media"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-management",
+      "vc:label": "Data Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:asset-version-control",
+      "vc:label": "Asset Version Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-authoring",
+      "vc:label": "Collaborative Authoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-distribution",
+      "vc:label": "Content Distribution"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:distributed-storage",
+      "vc:label": "Distributed Storage"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-management",
+      "vc:label": "Metadata Management"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-data-management-creative-media:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Asset Database]]",
+      "resolved": "urn:visionflow:linked:asset-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Version Control]]",
+      "resolved": "urn:visionflow:linked:asset-version-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collaborative Authoring]]",
+      "resolved": "urn:visionflow:linked:collaborative-authoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Distribution]]",
+      "resolved": "urn:visionflow:linked:content-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Pipeline]]",
+      "resolved": "urn:visionflow:linked:content-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Creative Media]]",
+      "resolved": "urn:visionflow:linked:creative-media",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Storage]]",
+      "resolved": "urn:visionflow:linked:distributed-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR MEC 032]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Version Control]]",
+      "resolved": "urn:visionflow:linked:version-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Management]]",
+      "resolved": "urn:visionflow:owl:class:data-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ETSI Metaverse Domain Taxonomy]]",
+      "resolved": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureDomain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Media Library]]",
+      "resolved": "urn:visionflow:owl:class:media-library",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Management]]",
+      "resolved": "urn:visionflow:owl:class:metadata-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting creative content workflows, asset management, and version control systems.
+
+- ### Bridge-To
+  - bridges-to:: [[Computer Vision]] (ai)
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:ETSIDomain_DataMgmt_Creative
+  - owl-role:: Object
+  - owl-inferred:: infrastructure:VirtualObject
+  - belongs-to-domain:: [[InfrastructureDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]]
+
+- ### Relationships
+  - has-part:: [[Asset Database]], [[Version Control]], [[Content Pipeline]], [[Media Library]]
+  - is-part-of:: [[ETSI Metaverse Domain Taxonomy]]
+  - requires:: [[Data Management]], [[Creative Media]]
+  - enables:: [[Asset Version Control]], [[Collaborative Authoring]], [[Content Distribution]]
+  - depends-on:: [[Distributed Storage]], [[Metadata Management]]
+
+- ### Content
+  ETSI Domain: Data Management + Creative Media — content pending enrichment.
+
+- ### Provenance
+  - sources:: [[ETSI GR MEC 032]]
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:a28e12a031bdfd549b346c04149be895b495e93b9719f19fbfc9b9f76d5b16d9",
+  "title": "VERIFICATION",
+  "slug": "verification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:verification",
+  "domain": "spatial-computing",
+  "definition": "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through [[CryptographicProofs|cryptographic verification]], [[RuleBaseValidation|rule-based validation]], and [[UserAcceptanceTesting|user acceptance testing]]. Within [[MetaversePlatforms|metaverse]] and blockchain contexts, verification encompasses [[TransactionVerification|transaction authenticity]], [[SmartContractAudit|smart contract correctness]], [[OntologyValidation|ontology schema conformance]], and [[DigitalAssetAuthenticity|digital asset provenance]] through [[BlockchainConsensus|consensus mechanisms]] or [[DigitalSignature|digital signatures]]. Comprehensive verification frameworks establish trust between stakeholders, prevent fraud, and enable secure interaction in decentralised systems lacking centralised authorities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-consensus",
+      "label": "BlockchainConsensus"
+    },
+    {
+      "slug": "cryptographic-proofs",
+      "label": "CryptographicProofs"
+    },
+    {
+      "slug": "digital-asset-authenticity",
+      "label": "DigitalAssetAuthenticity"
+    },
+    {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "ontology-validation",
+      "label": "OntologyValidation"
+    },
+    {
+      "slug": "rule-base-validation",
+      "label": "RuleBaseValidation"
+    },
+    {
+      "slug": "smart-contract-audit",
+      "label": "SmartContractAudit"
+    },
+    {
+      "slug": "transaction-verification",
+      "label": "TransactionVerification"
+    },
+    {
+      "slug": "user-acceptance-testing",
+      "label": "UserAcceptanceTesting"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "DigitalSignature"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

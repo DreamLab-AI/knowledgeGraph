@@ -1,0 +1,432 @@
+{
+  "id": "urn:visionflow:page:a19635cb318202f05e73566491b7ca47e467a4e7d05b78522571273e7b11700b",
+  "title": "Gold",
+  "slug": "gold",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gold",
+  "domain": "economics",
+  "definition": "Gold (chemical symbol Au, atomic number 79, ISO currency code XAU) is a dense, corrosion-resistant transition metal that has served as the pre-eminent monetary commodity for at least 5,000 years and in 2024\u20132026 occupies a unique dual role as both the world's third-largest reserve asset by value (approximately $18\u201322 trillion in aggregate above-ground stock at $2,300\u2013$3,200/oz 2024\u20132026 spot range) and the emerging ontological anchor for a new generation of gold-backed digital tokens, gold-collateralised stablecoins, and tokenised bullion products within the AI-blockchain convergence layer, functioning across five principal markets: (1) the London Bullion Market Association (LBMA) over-the-counter unallocated and allocated spot market centred on London Good Delivery bars (400 troy oz \u00b110%, minimum 99.5% fineness, assayer hallmark, chain-of-custody documentation per LBMA Responsible Gold Guidance 7th Ed. 2023) clearing approximately $35\u201350 billion per day through the London Gold Market Fixing mechanism now replaced by the ICE Benchmark Administration LBMA Gold Price twice-daily auction; (2) COMEX futures and options at the CME Group New York, the world's largest gold derivatives ven",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:commodity",
+      "label": "Commodity"
+    },
+    {
+      "id": "urn:visionflow:linked:hard-money",
+      "label": "Hard Money"
+    },
+    {
+      "id": "urn:visionflow:linked:monetary-metal",
+      "label": "Monetary Metal"
+    },
+    {
+      "id": "urn:visionflow:linked:reserve-asset",
+      "label": "Reserve Asset"
+    },
+    {
+      "id": "urn:visionflow:linked:tangible-asset",
+      "label": "Tangible Asset"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:central-bank-gold-reserve",
+        "label": "Central Bank Gold Reserve"
+      },
+      {
+        "id": "urn:visionflow:linked:comex-gold-futures",
+        "label": "COMEX Gold Futures"
+      },
+      {
+        "id": "urn:visionflow:linked:gold-backed-token",
+        "label": "Gold-Backed Token"
+      },
+      {
+        "id": "urn:visionflow:linked:gold-etf",
+        "label": "Gold ETF"
+      },
+      {
+        "id": "urn:visionflow:linked:gold-recycling-stream",
+        "label": "Gold Recycling Stream"
+      },
+      {
+        "id": "urn:visionflow:linked:gold-refinery",
+        "label": "Gold Refinery"
+      },
+      {
+        "id": "urn:visionflow:linked:lbma-good-delivery-bar",
+        "label": "LBMA Good Delivery Bar"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:allocated-account",
+        "label": "Allocated Account"
+      },
+      {
+        "id": "urn:visionflow:linked:assay-certificate",
+        "label": "Assay Certificate"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:custodian-bank",
+        "label": "Custodian Bank"
+      },
+      {
+        "id": "urn:visionflow:linked:lbma-good-delivery-accreditation",
+        "label": "LBMA Good Delivery Accreditation"
+      },
+      {
+        "id": "urn:visionflow:linked:vault-storage",
+        "label": "Vault Storage"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:currency-diversification",
+        "label": "Currency Diversification"
+      },
+      {
+        "id": "urn:visionflow:linked:gold-backed-stablecoin",
+        "label": "Gold-Backed Stablecoin"
+      },
+      {
+        "id": "urn:visionflow:linked:inflation-hedging",
+        "label": "Inflation Hedging"
+      },
+      {
+        "id": "urn:visionflow:linked:monetary-reserve-diversification",
+        "label": "Monetary Reserve Diversification"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenized-commodity",
+        "label": "Tokenized Commodity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bis-basel-iii-hqla-classification",
+        "label": "BIS Basel III HQLA Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:comex-futures-contract-standard",
+        "label": "COMEX Futures Contract Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:ice-lbma-gold-price-benchmark",
+        "label": "ICE LBMA Gold Price Benchmark"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-4217-xau-currency-code",
+        "label": "ISO 4217 XAU Currency Code"
+      },
+      {
+        "id": "urn:visionflow:linked:lbma-responsible-gold-guidance",
+        "label": "LBMA Responsible Gold Guidance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorand",
+      "label": "Algorand"
+    },
+    {
+      "slug": "allocated-account",
+      "label": "Allocated Account"
+    },
+    {
+      "slug": "assay-certificate",
+      "label": "Assay Certificate"
+    },
+    {
+      "slug": "bis-basel-iii-cre20",
+      "label": "BIS Basel III CRE20"
+    },
+    {
+      "slug": "bis-basel-iii-hqla-classification",
+      "label": "BIS Basel III HQLA Classification"
+    },
+    {
+      "slug": "central-bank-gold-reserve",
+      "label": "Central Bank Gold Reserve"
+    },
+    {
+      "slug": "chain-of-custody",
+      "label": "Chain of Custody"
+    },
+    {
+      "slug": "comex-contract-specifications",
+      "label": "COMEX Contract Specifications"
+    },
+    {
+      "slug": "comex-futures-contract-standard",
+      "label": "COMEX Futures Contract Standard"
+    },
+    {
+      "slug": "comex-gold-futures",
+      "label": "COMEX Gold Futures"
+    },
+    {
+      "slug": "commodity",
+      "label": "Commodity"
+    },
+    {
+      "slug": "commodity-market-domain",
+      "label": "CommodityMarketDomain"
+    },
+    {
+      "slug": "cross-border-settlement",
+      "label": "Cross-Border Settlement"
+    },
+    {
+      "slug": "currency-diversification",
+      "label": "Currency Diversification"
+    },
+    {
+      "slug": "custodian-bank",
+      "label": "Custodian Bank"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "DigitalAssetDomain"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "EconomicsDomain"
+    },
+    {
+      "slug": "erc-20-token-standard",
+      "label": "ERC-20 Token Standard"
+    },
+    {
+      "slug": "fatf-precious-metals-guidance",
+      "label": "FATF Precious Metals Guidance"
+    },
+    {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "global-commodity-market",
+      "label": "Global Commodity Market"
+    },
+    {
+      "slug": "gold-backed-stablecoin",
+      "label": "Gold-Backed Stablecoin"
+    },
+    {
+      "slug": "gold-backed-token",
+      "label": "Gold-Backed Token"
+    },
+    {
+      "slug": "gold-etf",
+      "label": "Gold ETF"
+    },
+    {
+      "slug": "gold-recycling-stream",
+      "label": "Gold Recycling Stream"
+    },
+    {
+      "slug": "gold-refinery",
+      "label": "Gold Refinery"
+    },
+    {
+      "slug": "government-bond",
+      "label": "Government Bond"
+    },
+    {
+      "slug": "hard-money",
+      "label": "Hard Money"
+    },
+    {
+      "slug": "ice-lbma-gold-price-benchmark",
+      "label": "ICE LBMA Gold Price Benchmark"
+    },
+    {
+      "slug": "inflation-hedging",
+      "label": "Inflation Hedging"
+    },
+    {
+      "slug": "iso-4217",
+      "label": "ISO 4217"
+    },
+    {
+      "slug": "iso-4217-xau-currency-code",
+      "label": "ISO 4217 XAU Currency Code"
+    },
+    {
+      "slug": "lbma-good-delivery-accreditation",
+      "label": "LBMA Good Delivery Accreditation"
+    },
+    {
+      "slug": "lbma-good-delivery-bar",
+      "label": "LBMA Good Delivery Bar"
+    },
+    {
+      "slug": "lbma-good-delivery-rules",
+      "label": "LBMA Good Delivery Rules"
+    },
+    {
+      "slug": "lbma-responsible-gold-guidance",
+      "label": "LBMA Responsible Gold Guidance"
+    },
+    {
+      "slug": "mining-production",
+      "label": "Mining Production"
+    },
+    {
+      "slug": "monetary-metal",
+      "label": "Monetary Metal"
+    },
+    {
+      "slug": "monetary-reserve-diversification",
+      "label": "Monetary Reserve Diversification"
+    },
+    {
+      "slug": "physical-asset-layer",
+      "label": "PhysicalAssetLayer"
+    },
+    {
+      "slug": "precious-metal-refining",
+      "label": "Precious Metal Refining"
+    },
+    {
+      "slug": "reserve-asset",
+      "label": "Reserve Asset"
+    },
+    {
+      "slug": "reserve-asset-layer",
+      "label": "ReserveAssetLayer"
+    },
+    {
+      "slug": "sge-trading-rules",
+      "label": "SGE Trading Rules"
+    },
+    {
+      "slug": "silver",
+      "label": "Silver"
+    },
+    {
+      "slug": "sovereign-reserve-policy",
+      "label": "Sovereign Reserve Policy"
+    },
+    {
+      "slug": "stellar-network",
+      "label": "Stellar Network"
+    },
+    {
+      "slug": "tangible-asset",
+      "label": "Tangible Asset"
+    },
+    {
+      "slug": "tokenisation-layer",
+      "label": "TokenisationLayer"
+    },
+    {
+      "slug": "tokenized-commodity",
+      "label": "Tokenized Commodity"
+    },
+    {
+      "slug": "vault-infrastructure",
+      "label": "Vault Infrastructure"
+    },
+    {
+      "slug": "vault-storage",
+      "label": "Vault Storage"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

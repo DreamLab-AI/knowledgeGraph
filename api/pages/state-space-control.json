@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:a6d40b917fe59ed8fd3ee261cfe56132199e2e6d4b57a1f78c1615976ec4aae1",
+  "title": "State Space Control",
+  "slug": "state-space-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:state-space-control",
+  "domain": "robotics",
+  "definition": "State space control uses modern control theory with state feedback.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:feedback-control",
+      "label": "Feedback Control"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

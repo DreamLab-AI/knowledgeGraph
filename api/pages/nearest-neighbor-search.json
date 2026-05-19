@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:6d551477b8f735b41a38d40445d9b264aaedb87f85cdfb1890eff8b17e39f4c6",
+  "title": "Nearest Neighbor Search",
+  "slug": "nearest-neighbor-search",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nearest-neighbor-search",
+  "domain": "spatial-computing",
+  "definition": "An algorithmic technique used in vector databases to find data points most similar to a query vector by computing distance metrics like cosine similarity or Euclidean distance, with approximate methods (ANN) trading minor accuracy for millisecond-scale retrieval from billions of objects.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "rrt-algorithm",
+      "label": "RRT Algorithm"
+    },
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

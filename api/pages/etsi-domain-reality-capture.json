@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504",
+  "title": "ETSI_Domain_Reality_Capture",
+  "slug": "etsi-domain-reality-capture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-reality-capture",
+  "domain": "spatial-computing",
+  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments. Reality capture integrates real-time mesh generation, semantic labelling of captured objects, and [[Human Capture & Recognition|human capture and recognition]] systems enabling accurate representation of physical spaces with precise geometric, textural, and dynamic properties. Technical capabilities span volumetric video coding standards (ISO V3C/V-PCC, V3C/MIV), immersive audio (MPEG-H 3D), and spatial data intelligence enabling seamless physical-to-virtual integration for virtual collaboration, digital preservation, and immersive training across academic and commercial applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-twin",
+      "label": "DigitalTwin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-immersive-reality-capture-crossover",
+      "label": "ETSI Domain Immersive + Reality Capture Crossover"
+    }
+  ]
+}

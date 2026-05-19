@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:dfcc5bb6145bf18434602951c99e37627cbafca04de78bc1a55de2113072ddd4",
+  "title": "Economic Participation",
+  "slug": "economic-participation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:economic-participation",
+  "domain": "spatial-computing",
+  "definition": "The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:play-to-earn",
+        "label": "Play-to-Earn"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "play-to-earn",
+      "label": "Play-to-Earn"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    }
+  ]
+}

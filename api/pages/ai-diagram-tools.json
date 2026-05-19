@@ -1,0 +1,600 @@
+{
+  "id": "urn:visionflow:page:abde9df19b9c1be84471dfd5dd7abb2f22ea8e32f4c86b7fd91712dcc653557b",
+  "title": "AI Diagram Tools",
+  "slug": "ai-diagram-tools",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-diagram-tools",
+  "domain": "artificial-intelligence",
+  "definition": "AI Diagram Tools are a class of generative AI applications that translate natural-language descriptions, source code, screenshots, or structured specifications into machine-renderable diagram artefacts (flowcharts, sequence diagrams, entity-relationship models, class diagrams, mind maps, architecture diagrams, Gantt charts, deployment topologies, network maps, user journey maps), bridging the long-standing gap between informal whiteboard thinking and the formal diagram-as-code ecosystems (Mermaid, PlantUML, Graphviz DOT, D2 by Terrastruct, Structurizr DSL, ELK, draw.io XML) by using large language models (GPT-4/Claude 3.5/Gemini 1.5/Llama 3) as the intermediate compiler from prose to declarative diagram grammars, then handing the resulting source to deterministic layout algorithms (Sugiyama hierarchical layering Eclipse Layout Kernel ELK 4-phase pipeline cycle-breaking/layer-assignment/crossing-minimisation/coordinate-assignment, force-directed Fruchterman-Reingold, orthogonal routing, Kamada-Kawai energy minimisation, dagre.js port of GraphViz dot for browser execution) and rendering engines (SVG via D3/dagre-d3/Mermaid renderer, Canvas via Konva, HTML/CSS via tldraw, native PNG v",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-productivity-tool",
+      "label": "AI Productivity Tool"
+    },
+    {
+      "id": "urn:visionflow:linked:diagram-as-code",
+      "label": "Diagram-as-Code"
+    },
+    {
+      "id": "urn:visionflow:linked:generative-ai-application",
+      "label": "Generative AI Application"
+    },
+    {
+      "id": "urn:visionflow:linked:knowledge-visualisation",
+      "label": "Knowledge Visualisation"
+    },
+    {
+      "id": "urn:visionflow:linked:llm-powered-tool",
+      "label": "LLM-Powered Tool"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:diagram-grammar-compiler",
+        "label": "Diagram Grammar Compiler"
+      },
+      {
+        "id": "urn:visionflow:linked:editor-surface",
+        "label": "Editor Surface"
+      },
+      {
+        "id": "urn:visionflow:linked:export-pipeline",
+        "label": "Export Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:layout-algorithm",
+        "label": "Layout Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:llm-backend",
+        "label": "LLM Backend"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:browser-runtime",
+        "label": "Browser Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:diagram-specification-language",
+        "label": "Diagram Specification Language"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:layout-engine",
+        "label": "Layout Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:mermaid-syntax",
+        "label": "Mermaid Syntax"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adr-generation",
+        "label": "ADR Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:architecture-documentation",
+        "label": "Architecture Documentation"
+      },
+      {
+        "id": "urn:visionflow:linked:onboarding-diagram-production",
+        "label": "Onboarding Diagram Production"
+      },
+      {
+        "id": "urn:visionflow:linked:prd-visualisation",
+        "label": "PRD Visualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-diagramming",
+        "label": "Rapid Diagramming"
+      },
+      {
+        "id": "urn:visionflow:linked:system-design-communication",
+        "label": "System Design Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:code-to-diagram-reverse-engineering",
+        "label": "Code-to-Diagram Reverse Engineering"
+      },
+      {
+        "id": "urn:visionflow:linked:screenshot-to-diagram-conversion",
+        "label": "Screenshot-to-Diagram Conversion"
+      },
+      {
+        "id": "urn:visionflow:linked:sugiyama-hierarchical-layout",
+        "label": "Sugiyama Hierarchical Layout"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-dot-generation",
+        "label": "Text-to-DOT Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-mermaid-generation",
+        "label": "Text-to-Mermaid Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-plant-uml-generation",
+        "label": "Text-to-PlantUML Generation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-generation",
+      "label": "ADR Generation"
+    },
+    {
+      "slug": "ai-productivity-tool",
+      "label": "AI Productivity Tool"
+    },
+    {
+      "slug": "architecture-documentation",
+      "label": "Architecture Documentation"
+    },
+    {
+      "slug": "belouadi-et-al-2024-automa-tik-z",
+      "label": "Belouadi et al 2024 AutomaTikZ"
+    },
+    {
+      "slug": "brown-2018-c4-model",
+      "label": "Brown 2018 C4 Model"
+    },
+    {
+      "slug": "brown-2024-art-of-visualising-software-architecture",
+      "label": "Brown 2024 Art of Visualising Software Architecture"
+    },
+    {
+      "slug": "browser-runtime",
+      "label": "Browser Runtime"
+    },
+    {
+      "slug": "c4-model",
+      "label": "C4 Model"
+    },
+    {
+      "slug": "c4-model-convention",
+      "label": "C4 Model Convention"
+    },
+    {
+      "slug": "claude-3-5",
+      "label": "Claude 3.5"
+    },
+    {
+      "slug": "claude-artifacts",
+      "label": "Claude Artifacts"
+    },
+    {
+      "slug": "code-to-diagram-reverse-engineering",
+      "label": "Code-to-Diagram Reverse Engineering"
+    },
+    {
+      "slug": "d2-diagram-language",
+      "label": "D2 Diagram Language"
+    },
+    {
+      "slug": "d2-language-documentation",
+      "label": "D2 Language Documentation"
+    },
+    {
+      "slug": "diagram-as-code",
+      "label": "Diagram-as-Code"
+    },
+    {
+      "slug": "diagram-driven-development",
+      "label": "Diagram-Driven Development"
+    },
+    {
+      "slug": "diagram-grammar-compiler",
+      "label": "Diagram Grammar Compiler"
+    },
+    {
+      "slug": "diagram-specification-language",
+      "label": "Diagram Specification Language"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "dwyer-marriott-wybrow-2008-constrained-graph-layout",
+      "label": "Dwyer Marriott Wybrow 2008 Constrained Graph Layout"
+    },
+    {
+      "slug": "eclipse-layout-kernel",
+      "label": "Eclipse Layout Kernel"
+    },
+    {
+      "slug": "editor-surface",
+      "label": "Editor Surface"
+    },
+    {
+      "slug": "eraser-diagram-gpt",
+      "label": "Eraser DiagramGPT"
+    },
+    {
+      "slug": "eraser-diagram-gpt-product-documentation",
+      "label": "Eraser DiagramGPT Product Documentation"
+    },
+    {
+      "slug": "excalidraw",
+      "label": "Excalidraw"
+    },
+    {
+      "slug": "export-pipeline",
+      "label": "Export Pipeline"
+    },
+    {
+      "slug": "few-shot-prompting",
+      "label": "Few-Shot Prompting"
+    },
+    {
+      "slug": "force-directed-layout",
+      "label": "Force-Directed Layout"
+    },
+    {
+      "slug": "fruchterman-reingold-1991-force-directed-placement",
+      "label": "Fruchterman Reingold 1991 Force-Directed Placement"
+    },
+    {
+      "slug": "gansner-et-al-1993-drawing-directed-graphs",
+      "label": "Gansner et al 1993 Drawing Directed Graphs"
+    },
+    {
+      "slug": "generative-ai-application",
+      "label": "Generative AI Application"
+    },
+    {
+      "slug": "generative-aidomain",
+      "label": "GenerativeAIDomain"
+    },
+    {
+      "slug": "generative-image-model",
+      "label": "Generative Image Model"
+    },
+    {
+      "slug": "graphviz",
+      "label": "Graphviz"
+    },
+    {
+      "slug": "graphviz-documentation",
+      "label": "Graphviz Documentation"
+    },
+    {
+      "slug": "hand-drawn-whiteboard",
+      "label": "Hand-Drawn Whiteboard"
+    },
+    {
+      "slug": "jet-brains-developer-ecosystem-2024",
+      "label": "JetBrains Developer Ecosystem 2024"
+    },
+    {
+      "slug": "kembhavi-et-al-2016-diagram-worth-dozen-images",
+      "label": "Kembhavi et al 2016 Diagram Worth Dozen Images"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "KnowledgeRepresentationDomain"
+    },
+    {
+      "slug": "knowledge-visualisation",
+      "label": "Knowledge Visualisation"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "larkin-simon-1987-diagram-worth-ten-thousand-words",
+      "label": "Larkin Simon 1987 Diagram Worth Ten Thousand Words"
+    },
+    {
+      "slug": "layout-algorithm",
+      "label": "Layout Algorithm"
+    },
+    {
+      "slug": "layout-engine",
+      "label": "Layout Engine"
+    },
+    {
+      "slug": "lin-et-al-2024-benchmarking-llm-diagram-generation",
+      "label": "Lin et al 2024 Benchmarking LLM Diagram Generation"
+    },
+    {
+      "slug": "llm-backend",
+      "label": "LLM Backend"
+    },
+    {
+      "slug": "llm-powered-tool",
+      "label": "LLM-Powered Tool"
+    },
+    {
+      "slug": "lucidchart-ai",
+      "label": "Lucidchart AI"
+    },
+    {
+      "slug": "lucidchart-ai-press-release-february-2024",
+      "label": "Lucidchart AI Press Release February 2024"
+    },
+    {
+      "slug": "maddock-et-al-2024-sketch2-architecture",
+      "label": "Maddock et al 2024 Sketch2Architecture"
+    },
+    {
+      "slug": "markdown",
+      "label": "Markdown"
+    },
+    {
+      "slug": "mermaid-chart",
+      "label": "Mermaid Chart"
+    },
+    {
+      "slug": "mermaid-js",
+      "label": "Mermaid.js"
+    },
+    {
+      "slug": "mermaid-js-documentation-2024",
+      "label": "Mermaid.js Documentation 2024"
+    },
+    {
+      "slug": "mermaid-specification",
+      "label": "Mermaid Specification"
+    },
+    {
+      "slug": "mermaid-syntax",
+      "label": "Mermaid Syntax"
+    },
+    {
+      "slug": "miro-ai",
+      "label": "Miro AI"
+    },
+    {
+      "slug": "napkin-ai",
+      "label": "Napkin AI"
+    },
+    {
+      "slug": "nygard-2011-documenting-architecture-decisions",
+      "label": "Nygard 2011 Documenting Architecture Decisions"
+    },
+    {
+      "slug": "omg-uml-2-5",
+      "label": "OMG UML 2.5"
+    },
+    {
+      "slug": "omni-graffle",
+      "label": "OmniGraffle"
+    },
+    {
+      "slug": "onboarding-diagram-production",
+      "label": "Onboarding Diagram Production"
+    },
+    {
+      "slug": "plant-uml",
+      "label": "PlantUML"
+    },
+    {
+      "slug": "plant-uml-reference-guide",
+      "label": "PlantUML Reference Guide"
+    },
+    {
+      "slug": "plant-uml-standard",
+      "label": "PlantUML Standard"
+    },
+    {
+      "slug": "prd-visualisation",
+      "label": "PRD Visualisation"
+    },
+    {
+      "slug": "product-management",
+      "label": "Product Management"
+    },
+    {
+      "slug": "prompt-template",
+      "label": "Prompt Template"
+    },
+    {
+      "slug": "rapid-diagramming",
+      "label": "Rapid Diagramming"
+    },
+    {
+      "slug": "rodriguez-et-al-2024-big-docs-7-5-m",
+      "label": "Rodriguez et al 2024 BigDocs-7.5M"
+    },
+    {
+      "slug": "schulze-et-al-2014-eclipse-layout-kernel",
+      "label": "Schulze et al 2014 Eclipse Layout Kernel"
+    },
+    {
+      "slug": "screenshot-to-diagram-conversion",
+      "label": "Screenshot-to-Diagram Conversion"
+    },
+    {
+      "slug": "software-architecture-documentation",
+      "label": "Software Architecture Documentation"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "SoftwareEngineeringDomain"
+    },
+    {
+      "slug": "stack-overflow-developer-survey-2024",
+      "label": "Stack Overflow Developer Survey 2024"
+    },
+    {
+      "slug": "static-diagram-file",
+      "label": "Static Diagram File"
+    },
+    {
+      "slug": "structurizr-dsl",
+      "label": "Structurizr DSL"
+    },
+    {
+      "slug": "structurizr-dsl-reference",
+      "label": "Structurizr DSL Reference"
+    },
+    {
+      "slug": "structurizr-dsl-specification",
+      "label": "Structurizr DSL Specification"
+    },
+    {
+      "slug": "sugiyama-hierarchical-layout",
+      "label": "Sugiyama Hierarchical Layout"
+    },
+    {
+      "slug": "sugiyama-tagawa-toda-1981-hierarchical-system-structures",
+      "label": "Sugiyama Tagawa Toda 1981 Hierarchical System Structures"
+    },
+    {
+      "slug": "svg-rendering",
+      "label": "SVG Rendering"
+    },
+    {
+      "slug": "system-design-communication",
+      "label": "System Design Communication"
+    },
+    {
+      "slug": "system-design-interview-prep",
+      "label": "System Design Interview Prep"
+    },
+    {
+      "slug": "tamassia-1987-orthogonal-embedding",
+      "label": "Tamassia 1987 Orthogonal Embedding"
+    },
+    {
+      "slug": "technical-writing",
+      "label": "Technical Writing"
+    },
+    {
+      "slug": "text-to-dot-generation",
+      "label": "Text-to-DOT Generation"
+    },
+    {
+      "slug": "text-to-mermaid-generation",
+      "label": "Text-to-Mermaid Generation"
+    },
+    {
+      "slug": "text-to-plant-uml-generation",
+      "label": "Text-to-PlantUML Generation"
+    },
+    {
+      "slug": "thought-works-tech-radar-vol-30",
+      "label": "ThoughtWorks Tech Radar Vol 30"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "ToolingLayer"
+    },
+    {
+      "slug": "tree-sitter-parsing",
+      "label": "Tree Sitter Parsing"
+    },
+    {
+      "slug": "tversky-2011-visualizing-thought",
+      "label": "Tversky 2011 Visualizing Thought"
+    },
+    {
+      "slug": "uchitel-2024-llm-behavioural-model-synthesis",
+      "label": "Uchitel 2024 LLM Behavioural Model Synthesis"
+    },
+    {
+      "slug": "visio",
+      "label": "Visio"
+    },
+    {
+      "slug": "visualisation-layer",
+      "label": "VisualisationLayer"
+    },
+    {
+      "slug": "whimsical-ai",
+      "label": "Whimsical AI"
+    },
+    {
+      "slug": "yang-et-al-2023-set-of-mark-prompting",
+      "label": "Yang et al 2023 Set-of-Mark Prompting"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "knowledge-graph-construction",
+      "label": "Knowledge Graph Construction"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

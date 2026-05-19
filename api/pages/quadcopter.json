@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:435750509c95bec998c0bfc45ee42edba69e03ecc77d5b27f900a2ef33311d82",
+  "title": "Quadcopter",
+  "slug": "quadcopter",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quadcopter",
+  "domain": "robotics",
+  "definition": "Quadcopter is a four-rotor VTOL aircraft.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:multirotor-uav",
+      "label": "Multirotor UAV"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "multirotor-uav",
+      "label": "Multirotor UAV"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

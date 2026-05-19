@@ -1,21 +1,312 @@
-iri:: http://narrativegoldmine.com/blockchain#CryptographicSystem
-uri:: urn:visionclaw:concept:blockchain:cryptographic-system
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:cryptographic-system
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Cryptographic System
-content-hash:: sha256-12-1821727e8d49
-legacy-term-id:: PC-0003
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#CryptographicSystem
+legacy_uri:: urn:visionclaw:concept:blockchain:cryptographic-system
 public:: true
+
+# Cryptographic System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d",
+  "@type": "Page",
+  "vc:slug": "cryptographic-system",
+  "title": "Cryptographic System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:fips-140-3-security-requirements",
+      "vc:label": "FIPS 140-3 Security Requirements"
+    },
+    {
+      "@id": "urn:visionflow:linked:homomorphic-encryption",
+      "vc:label": "Homomorphic Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-18033-encryption-algorithms",
+      "vc:label": "ISO/IEC 18033 Encryption Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-cryptographic-standards",
+      "vc:label": "NIST Cryptographic Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-cryptography",
+      "vc:label": "Threshold Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:merkle-tree",
+      "vc:label": "Merkle Tree"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-key-cryptography",
+      "vc:label": "Public Key Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "vc:label": "Zero-Knowledge Proof"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1821727e8d49"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#CryptographicSystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0003"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cryptographic System"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:cryptographic-system"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:cryptographic-system"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cryptographic-system",
+  "@type": "OntologyClass",
+  "label": "Cryptographic System",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity thro",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-system:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cryptographic Hash Function]]",
+      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FIPS 140-3 Security Requirements]]",
+      "resolved": "urn:visionflow:linked:fips-140-3-security-requirements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Homomorphic Encryption]]",
+      "resolved": "urn:visionflow:linked:homomorphic-encryption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 18033 Encryption Algorithms]]",
+      "resolved": "urn:visionflow:linked:iso-iec-18033-encryption-algorithms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST Cryptographic Standards]]",
+      "resolved": "urn:visionflow:linked:nist-cryptographic-standards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Threshold Cryptography]]",
+      "resolved": "urn:visionflow:linked:threshold-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Merkle Tree]]",
+      "resolved": "urn:visionflow:owl:class:merkle-tree",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Public Key Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:public-key-cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Zero-Knowledge Proof]]",
+      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity through cryptographic proofs, all without requiring trust in central authorities.

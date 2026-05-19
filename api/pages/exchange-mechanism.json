@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:7cdd6d8032a34d6123c69ec0585356084062ebb3b3274c89d40c4e4ab4aa9534",
+  "title": "Exchange Mechanism",
+  "slug": "exchange-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:exchange-mechanism",
+  "domain": "spatial-computing",
+  "definition": "Exchange Mechanism is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "barter-system",
+      "label": "Barter System"
+    }
+  ]
+}

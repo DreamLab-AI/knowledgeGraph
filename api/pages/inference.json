@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:54f91e381e8ff1bc1fb43cc856ae5b8c74cc25e68bbfa0db5e18c678f893c295",
+  "title": "Inference",
+  "slug": "inference",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inference",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": []
+}

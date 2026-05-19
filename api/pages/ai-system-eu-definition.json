@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:f4001b0704a2928dc525ea03f4015381076343dcfb21e8d8cebfec4d28c5a7b3",
+  "title": "AI System (EU Definition)",
+  "slug": "ai-system-eu-definition",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-system-eu-definition",
+  "domain": "artificial-intelligence",
+  "definition": "A machine-based system that can operate autonomously and adapt after deployment, generating outputs like predictions or decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

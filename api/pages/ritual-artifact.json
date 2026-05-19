@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:a767ee9904729064d56fc56d8aae132f7aa86adac7c12ffa7ed8f20b23537c9b",
+  "title": "Ritual Artifact",
+  "slug": "ritual-artifact",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ritual-artifact",
+  "domain": "spatial-computing",
+  "definition": "Digital objects within virtual worlds that hold cultural, spiritual, or ceremonial significance, often represented as NFTs enabling communities to preserve and share cultural heritage through blockchain-verified authenticity and ownership.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-heritage",
+      "label": "Digital Heritage"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-cultural-heritage",
+        "label": "Digital Cultural Heritage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-cultural-heritage",
+      "label": "Digital Cultural Heritage"
+    },
+    {
+      "slug": "digital-heritage",
+      "label": "Digital Heritage"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    }
+  ]
+}

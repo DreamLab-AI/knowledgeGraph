@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:73a5f28ab90f4f2ad6cb8361a0d7ec6a2a168698382854e187646b8983d1658b",
+  "title": "Light Curtain",
+  "slug": "light-curtain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:light-curtain",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

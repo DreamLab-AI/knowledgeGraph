@@ -1,0 +1,624 @@
+{
+  "id": "urn:visionflow:page:392612e3be96805a5ab859a5ed4b4d2736f004e28e6ac3d3204ba6ed7b187d80",
+  "title": "Fooocus",
+  "slug": "fooocus",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fooocus",
+  "domain": "artificial-intelligence",
+  "definition": "Fooocus is an open-source desktop image-generation interface for Stable Diffusion XL released in August 2023 by Lvmin Zhang (GitHub handle lllyasviel, originator of ControlNet, IC-Light, Forge, Paints-Undo, FramePack and OmniControl), conceived as a deliberate philosophical and ergonomic reaction to the perceived over-complexity of AUTOMATIC1111 Stable Diffusion WebUI (form-based, 200+ exposed parameters across a dozen tabs) and ComfyUI (node-based directed-acyclic-graph editor requiring users to wire generation pipelines manually), pursuing instead the stated design principle that \"all the local automatic optimization is enabled, hyperparameter tweaking minimised\" \u2014 i.e. the application opaquely chooses sampler, scheduler, refiner activation, FreeU coefficients, LoRA blending weights, prompt-expansion strategies and image-to-image denoise strengths so that the user is presented with a minimal Midjourney-like surface (a single prompt box, a style picker, an aspect-ratio selector and a Generate button) whilst still running entirely on local consumer hardware (8 GB VRAM minimum for SDXL Base 1.0, 4 GB possible with offloading) and shipping all weights, code and presets under permissi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:generative-ai-application",
+      "label": "Generative AI Application"
+    },
+    {
+      "id": "urn:visionflow:linked:gradio-application",
+      "label": "Gradio Application"
+    },
+    {
+      "id": "urn:visionflow:linked:local-image-generation-interface",
+      "label": "Local Image Generation Interface"
+    },
+    {
+      "id": "urn:visionflow:linked:open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "id": "urn:visionflow:linked:stable-diffusion-frontend",
+      "label": "Stable Diffusion Frontend"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:automatic-free-u-module",
+        "label": "Automatic FreeU Module"
+      },
+      {
+        "id": "urn:visionflow:linked:automatic-refiner-scheduler",
+        "label": "Automatic Refiner Scheduler"
+      },
+      {
+        "id": "urn:visionflow:linked:faceswap-module",
+        "label": "Faceswap Module"
+      },
+      {
+        "id": "urn:visionflow:linked:gradio-web-ui",
+        "label": "Gradio Web UI"
+      },
+      {
+        "id": "urn:visionflow:linked:image-prompt-ip-adapter-module",
+        "label": "Image Prompt IP-Adapter Module"
+      },
+      {
+        "id": "urn:visionflow:linked:inpaint-pipeline",
+        "label": "Inpaint Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:lo-ra-blending-module",
+        "label": "LoRA Blending Module"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-expansion-engine",
+        "label": "Prompt Expansion Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:pyra-canny-control-net",
+        "label": "PyraCanny ControlNet"
+      },
+      {
+        "id": "urn:visionflow:linked:style-preset-library",
+        "label": "Style Preset Library"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cuda-toolkit",
+        "label": "CUDA Toolkit"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-with-4-8-gb-vram",
+        "label": "GPU with 4-8GB VRAM"
+      },
+      {
+        "id": "urn:visionflow:linked:gradio-framework",
+        "label": "Gradio Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:visionflow:linked:python-runtime",
+        "label": "Python Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:stable-diffusion-xl",
+        "label": "Stable Diffusion XL"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:faceswap",
+        "label": "Faceswap"
+      },
+      {
+        "id": "urn:visionflow:linked:local-ai-art-creation",
+        "label": "Local AI Art Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-image-generation",
+        "label": "Privacy-Preserving Image Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-image-generation",
+        "label": "Text to Image Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:image-to-image-translation",
+        "label": "Image to Image Translation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:control-net-conditioning",
+        "label": "ControlNet Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:free-u-free-lunch-rebalancing",
+        "label": "FreeU Free-Lunch Rebalancing"
+      },
+      {
+        "id": "urn:visionflow:linked:ip-adapter-image-conditioning",
+        "label": "IP-Adapter Image Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion-sampling",
+        "label": "Latent Diffusion Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-expansion",
+        "label": "Prompt Expansion"
+      },
+      {
+        "id": "urn:visionflow:linked:sdxl-refiner-handoff",
+        "label": "SDXL Refiner Handoff"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm-chi-2024-generative-ai-interfaces-studies",
+      "label": "ACM CHI 2024 Generative AI Interfaces Studies"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "automatic-free-u-module",
+      "label": "Automatic FreeU Module"
+    },
+    {
+      "slug": "automatic-refiner-scheduler",
+      "label": "Automatic Refiner Scheduler"
+    },
+    {
+      "slug": "automatic1111-stable-diffusion-web-ui-repository",
+      "label": "AUTOMATIC1111 Stable Diffusion WebUI Repository"
+    },
+    {
+      "slug": "automatic1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "clip-skip",
+      "label": "CLIP Skip"
+    },
+    {
+      "slug": "clip-text-encoder",
+      "label": "CLIP Text Encoder"
+    },
+    {
+      "slug": "comfy-ui-repository",
+      "label": "ComfyUI Repository"
+    },
+    {
+      "slug": "concept-art-workflows",
+      "label": "Concept Art Workflows"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "creative-ml-open-rail-m-licence",
+      "label": "CreativeML Open RAIL-M Licence"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    },
+    {
+      "slug": "cuda-toolkit",
+      "label": "CUDA Toolkit"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "dpm-plus-plus-2-m-karras-sampler",
+      "label": "DPM Plus Plus 2M Karras Sampler"
+    },
+    {
+      "slug": "educational-ai-demonstrations",
+      "label": "Educational AI Demonstrations"
+    },
+    {
+      "slug": "faceswap",
+      "label": "Faceswap"
+    },
+    {
+      "slug": "faceswap-module",
+      "label": "Faceswap Module"
+    },
+    {
+      "slug": "fooocus-mre",
+      "label": "Fooocus-MRE"
+    },
+    {
+      "slug": "fooocus-mre-repository",
+      "label": "Fooocus-MRE Repository"
+    },
+    {
+      "slug": "forge-web-ui",
+      "label": "Forge WebUI"
+    },
+    {
+      "slug": "forge-web-ui-repository",
+      "label": "Forge WebUI Repository"
+    },
+    {
+      "slug": "frame-pack",
+      "label": "FramePack"
+    },
+    {
+      "slug": "free-u-free-lunch-rebalancing",
+      "label": "FreeU Free-Lunch Rebalancing"
+    },
+    {
+      "slug": "generative-ai-application",
+      "label": "Generative AI Application"
+    },
+    {
+      "slug": "generative-aidomain",
+      "label": "GenerativeAIDomain"
+    },
+    {
+      "slug": "gplv3-licence",
+      "label": "GPLv3 Licence"
+    },
+    {
+      "slug": "gpt-2-prompt-expansion",
+      "label": "GPT-2 Prompt Expansion"
+    },
+    {
+      "slug": "gpu-with-4-8-gb-vram",
+      "label": "GPU with 4-8GB VRAM"
+    },
+    {
+      "slug": "gradio-application",
+      "label": "Gradio Application"
+    },
+    {
+      "slug": "gradio-framework",
+      "label": "Gradio Framework"
+    },
+    {
+      "slug": "gradio-specification",
+      "label": "Gradio Specification"
+    },
+    {
+      "slug": "gradio-web-ui",
+      "label": "Gradio Web UI"
+    },
+    {
+      "slug": "ho-et-al-2020-ddpm",
+      "label": "Ho et al. 2020 DDPM"
+    },
+    {
+      "slug": "hu-et-al-2022-lo-ra",
+      "label": "Hu et al. 2022 LoRA"
+    },
+    {
+      "slug": "hugging-face-diffusers",
+      "label": "Hugging Face Diffusers"
+    },
+    {
+      "slug": "hugging-face-model-hub",
+      "label": "Hugging Face Model Hub"
+    },
+    {
+      "slug": "ic-light",
+      "label": "IC-Light"
+    },
+    {
+      "slug": "image-prompt-ip-adapter-module",
+      "label": "Image Prompt IP-Adapter Module"
+    },
+    {
+      "slug": "indie-game-asset-creation",
+      "label": "Indie Game Asset Creation"
+    },
+    {
+      "slug": "inpaint-pipeline",
+      "label": "Inpaint Pipeline"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
+      "slug": "invoke-ai-repository",
+      "label": "InvokeAI Repository"
+    },
+    {
+      "slug": "ip-adapter-image-conditioning",
+      "label": "IP-Adapter Image Conditioning"
+    },
+    {
+      "slug": "karras-et-al-2022-edm-sampler-design-space",
+      "label": "Karras et al. 2022 EDM Sampler Design Space"
+    },
+    {
+      "slug": "latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "slug": "latent-diffusion-sampling",
+      "label": "Latent Diffusion Sampling"
+    },
+    {
+      "slug": "lcm-sampler",
+      "label": "LCM Sampler"
+    },
+    {
+      "slug": "lightning-sampler",
+      "label": "Lightning Sampler"
+    },
+    {
+      "slug": "lin-yang-2024-sdxl-lightning",
+      "label": "Lin Yang 2024 SDXL-Lightning"
+    },
+    {
+      "slug": "lllyasviel-fooocus-readme",
+      "label": "lllyasviel Fooocus README"
+    },
+    {
+      "slug": "lo-ra-blending-module",
+      "label": "LoRA Blending Module"
+    },
+    {
+      "slug": "local-ai-art-creation",
+      "label": "Local AI Art Creation"
+    },
+    {
+      "slug": "local-image-generation-interface",
+      "label": "Local Image Generation Interface"
+    },
+    {
+      "slug": "local-privacy-workflows",
+      "label": "Local Privacy Workflows"
+    },
+    {
+      "slug": "lu-et-al-2022-dpm-solver-plus-plus",
+      "label": "Lu et al. 2022 DPM-Solver Plus Plus"
+    },
+    {
+      "slug": "luo-et-al-2023-latent-consistency-models",
+      "label": "Luo et al. 2023 Latent Consistency Models"
+    },
+    {
+      "slug": "model-orchestration-layer",
+      "label": "ModelOrchestrationLayer"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "open-source-software-domain",
+      "label": "OpenSourceSoftwareDomain"
+    },
+    {
+      "slug": "outpainting",
+      "label": "Outpainting"
+    },
+    {
+      "slug": "paints-undo",
+      "label": "Paints-Undo"
+    },
+    {
+      "slug": "podell-et-al-2023-sdxl",
+      "label": "Podell et al. 2023 SDXL"
+    },
+    {
+      "slug": "privacy-preserving-image-generation",
+      "label": "Privacy-Preserving Image Generation"
+    },
+    {
+      "slug": "prompt-expansion",
+      "label": "Prompt Expansion"
+    },
+    {
+      "slug": "prompt-expansion-engine",
+      "label": "Prompt Expansion Engine"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "pyra-canny-control-net",
+      "label": "PyraCanny ControlNet"
+    },
+    {
+      "slug": "python-runtime",
+      "label": "Python Runtime"
+    },
+    {
+      "slug": "radford-et-al-2019-gpt-2",
+      "label": "Radford et al. 2019 GPT-2"
+    },
+    {
+      "slug": "radford-et-al-2021-clip",
+      "label": "Radford et al. 2021 CLIP"
+    },
+    {
+      "slug": "ren-et-al-2024-hyper-sd",
+      "label": "Ren et al. 2024 Hyper-SD"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-models",
+      "label": "Rombach et al. 2022 Latent Diffusion Models"
+    },
+    {
+      "slug": "ruined-fooocus",
+      "label": "RuinedFooocus"
+    },
+    {
+      "slug": "ruined-fooocus-repository",
+      "label": "RuinedFooocus Repository"
+    },
+    {
+      "slug": "sauer-et-al-2024-adversarial-diffusion-distillation",
+      "label": "Sauer et al. 2024 Adversarial Diffusion Distillation"
+    },
+    {
+      "slug": "sdxl-refiner-handoff",
+      "label": "SDXL Refiner Handoff"
+    },
+    {
+      "slug": "sdxl-vae-fp16-fix",
+      "label": "SDXL VAE FP16 Fix"
+    },
+    {
+      "slug": "si-et-al-2023-free-u",
+      "label": "Si et al. 2023 FreeU"
+    },
+    {
+      "slug": "simple-sdxl2",
+      "label": "SimpleSDXL2"
+    },
+    {
+      "slug": "simple-sdxl2-repository",
+      "label": "SimpleSDXL2 Repository"
+    },
+    {
+      "slug": "song-et-al-2023-consistency-models",
+      "label": "Song et al. 2023 Consistency Models"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
+    },
+    {
+      "slug": "stability-ai-sdxl-release",
+      "label": "Stability AI SDXL Release"
+    },
+    {
+      "slug": "stable-diffusion-frontend",
+      "label": "Stable Diffusion Frontend"
+    },
+    {
+      "slug": "stable-diffusion-xl",
+      "label": "Stable Diffusion XL"
+    },
+    {
+      "slug": "style-preset-library",
+      "label": "Style Preset Library"
+    },
+    {
+      "slug": "swarm-ui",
+      "label": "SwarmUI"
+    },
+    {
+      "slug": "swarm-ui-repository",
+      "label": "SwarmUI Repository"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text to Image Generation"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "UserExperienceLayer"
+    },
+    {
+      "slug": "user-interface-domain",
+      "label": "UserInterfaceDomain"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "ye-et-al-2023-ip-adapter",
+      "label": "Ye et al. 2023 IP-Adapter"
+    },
+    {
+      "slug": "zhang-2024-frame-pack",
+      "label": "Zhang 2024 FramePack"
+    },
+    {
+      "slug": "zhang-2024-ic-light",
+      "label": "Zhang 2024 IC-Light"
+    },
+    {
+      "slug": "zhang-2024-paints-undo",
+      "label": "Zhang 2024 Paints-Undo"
+    },
+    {
+      "slug": "zhang-rao-agrawala-2023-control-net",
+      "label": "Zhang Rao Agrawala 2023 ControlNet"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "image-to-image-translation",
+      "label": "Image to Image Translation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    }
+  ]
+}

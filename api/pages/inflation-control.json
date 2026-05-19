@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:eadd5d31f9b7d6f06e6a8a9eef8cc6c792dbefeb950996e2feb25910010f3c22",
+  "title": "Inflation Control",
+  "slug": "inflation-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inflation-control",
+  "domain": "spatial-computing",
+  "definition": "Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "game-economics",
+      "label": "Game Economics"
+    },
+    {
+      "slug": "virtual-economics",
+      "label": "Virtual Economics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

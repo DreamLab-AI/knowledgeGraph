@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:69e256596a9f75d58a08e4a7371adadd1eecc5b3924ed92599a7452ac004e548",
+  "title": "Adaptive Virtual World",
+  "slug": "adaptive-virtual-world",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adaptive-virtual-world",
+  "domain": "spatial-computing",
+  "definition": "Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-world-evolution",
+        "label": "Persistent World Evolution"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-environments",
+        "label": "Personalized Environments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "emergent-gameplay",
+      "label": "Emergent Gameplay"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "persistent-world-evolution",
+      "label": "Persistent World Evolution"
+    },
+    {
+      "slug": "personalized-environments",
+      "label": "Personalized Environments"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "Procedural Generation"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    }
+  ]
+}

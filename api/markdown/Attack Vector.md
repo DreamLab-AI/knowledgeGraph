@@ -1,20 +1,254 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AttackVector
-uri:: urn:visionclaw:concept:artificial-intelligence:attack-vector
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:attack-vector
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Attack Vector
-content-hash:: sha256-12-4e47db0b023b
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:12:53Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AttackVector
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:attack-vector
 public:: true
+
+# Attack Vector
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134",
+  "@type": "Page",
+  "vc:slug": "attack-vector",
+  "title": "Attack Vector",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:iso",
+      "vc:label": "ISO"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist",
+      "vc:label": "NIST"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:resilience",
+      "vc:label": "Resilience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk",
+      "vc:label": "Risk"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:security",
+      "vc:label": "Security"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:threat-actor",
+      "vc:label": "Threat Actor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vulnerability",
+      "vc:label": "Vulnerability"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4e47db0b023b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AttackVector"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:12:53Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Attack Vector"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:attack-vector"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:attack-vector"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:attack-vector",
+  "@type": "OntologyClass",
+  "label": "Attack Vector",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Attack Vector is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:attack-vector:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ISO]]",
+      "resolved": "urn:visionflow:linked:iso",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST]]",
+      "resolved": "urn:visionflow:linked:nist",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Resilience]]",
+      "resolved": "urn:visionflow:owl:class:resilience",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk]]",
+      "resolved": "urn:visionflow:owl:class:risk",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Security]]",
+      "resolved": "urn:visionflow:owl:class:security",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Threat Actor]]",
+      "resolved": "urn:visionflow:owl:class:threat-actor",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Vulnerability]]",
+      "resolved": "urn:visionflow:owl:class:vulnerability",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Attack Vector is a concept within the ai domain.

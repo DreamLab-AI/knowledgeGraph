@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:b3b068e8a266a4b200ff54bba02ffcc568dc699f78fdeaeb88f25bc793bcf1d8",
+  "title": "Deployer",
+  "slug": "deployer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:deployer",
+  "domain": "infrastructure",
+  "definition": "A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity. bridges-to:: [[Autonomous Robot]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

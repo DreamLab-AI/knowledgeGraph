@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:9a91056492ebd03e13e76392ca927c7eefa03f601ce46741e5bdd845b8711fe8",
+  "title": "Networkcomponent",
+  "slug": "networkcomponent",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:networkcomponent",
+  "domain": "distributed-collaboration",
+  "definition": "Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet. Core components include switches for local traffic routing, routers for inter-network packet forwarding, and firewalls for security enforcement, forming the foundation of modern digital communications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "configuration-management",
+      "label": "ConfigurationManagement"
+    },
+    {
+      "slug": "core-router",
+      "label": "CoreRouter"
+    },
+    {
+      "slug": "edge-router",
+      "label": "EdgeRouter"
+    },
+    {
+      "slug": "firewall",
+      "label": "Firewall"
+    },
+    {
+      "slug": "gateway",
+      "label": "Gateway"
+    },
+    {
+      "slug": "hub",
+      "label": "Hub"
+    },
+    {
+      "slug": "ipaddressing",
+      "label": "IPAddressing"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "LoadBalancer"
+    },
+    {
+      "slug": "managed-switch",
+      "label": "ManagedSwitch"
+    },
+    {
+      "slug": "network-management",
+      "label": "NetworkManagement"
+    },
+    {
+      "slug": "network-monitoring",
+      "label": "NetworkMonitoring"
+    },
+    {
+      "slug": "osimodel",
+      "label": "OSIModel"
+    },
+    {
+      "slug": "router",
+      "label": "Router"
+    },
+    {
+      "slug": "snmp",
+      "label": "SNMP"
+    },
+    {
+      "slug": "switch",
+      "label": "Switch"
+    },
+    {
+      "slug": "unmanaged-switch",
+      "label": "UnmanagedSwitch"
+    },
+    {
+      "slug": "vlan",
+      "label": "VLAN"
+    },
+    {
+      "slug": "wireless-access-point",
+      "label": "WirelessAccessPoint"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "NetworkInfrastructure"
+    },
+    {
+      "slug": "network-topology",
+      "label": "NetworkTopology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    }
+  ]
+}

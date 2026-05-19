@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:9f2bc4db1a60d3cd05586593b26ff64b8a18464bbd9b8e6f27434e1ceb28c4af",
+  "title": "Metaverse-Telepresence Bridge",
+  "slug": "metaverse-telepresence-bridge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-telepresence-bridge",
+  "domain": "distributed-collaboration",
+  "definition": "\"The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence social presence mechanisms to enable embodied collaboration in shared digital spaces.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.6,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+        "label": "TELE-020-virtual-reality-telepresence"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:embodied-metaverse-collaboration",
+        "label": "EmbodiedMetaverseCollaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embodied-metaverse-collaboration",
+      "label": "EmbodiedMetaverseCollaboration"
+    },
+    {
+      "slug": "tele-003-social-presence-theory",
+      "label": "TELE-003-social-presence-theory"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform"
+    },
+    {
+      "slug": "tele-028-horizon-workrooms",
+      "label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-105-real-time-language-translation",
+      "label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "slug": "tele-250-blockchain-collaboration",
+      "label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "slug": "tele-300-digital-twin-collaboration",
+      "label": "TELE-300-digital-twin-collaboration"
+    },
+    {
+      "slug": "tele-301-virtual-office-spaces",
+      "label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "slug": "tele-302-shared-whiteboards",
+      "label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "slug": "convergence-concept",
+      "label": "ConvergenceConcept"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "SpatialComputing"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    }
+  ]
+}

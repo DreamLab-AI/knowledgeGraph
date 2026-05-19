@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:c8c2679d712c1baa7b792231d41eaff2d6c5d10f18210f923e8a0cea8a62fd7c",
+  "title": "Metaverse Application",
+  "slug": "metaverse-application",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-application",
+  "domain": "distributed-collaboration",
+  "definition": "Metaverse Application is a concept within the telecollaboration domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

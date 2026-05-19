@@ -1,21 +1,366 @@
-iri:: http://narrativegoldmine.com/infrastructure#FederatedLearning
-uri:: urn:visionclaw:concept:infrastructure:federated-learning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:federated-learning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Federated Learning
-content-hash:: sha256-12-7a2317d70d65
-legacy-term-id:: MV-3006
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#FederatedLearning
+legacy_uri:: urn:visionclaw:concept:infrastructure:federated-learning
 public:: true
+
+# Federated Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3",
+  "@type": "Page",
+  "vc:slug": "federated-learning",
+  "title": "Federated Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:coordinated-by",
+      "vc:label": "coordinated By"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-ai",
+      "vc:label": "DecentralizedAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-learning",
+      "vc:label": "DistributedLearning"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-distributed-via",
+      "vc:label": "dt:distributedVia"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-implemented-via",
+      "vc:label": "dt:implementedVia"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-incentivized-by",
+      "vc:label": "dt:incentivizedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-protected-by",
+      "vc:label": "dt:protectedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-secured-by",
+      "vc:label": "dt:securedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:has-participant",
+      "vc:label": "hasParticipant"
+    },
+    {
+      "@id": "urn:visionflow:linked:implements-privacy",
+      "vc:label": "implementsPrivacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:p2-pnetwork",
+      "vc:label": "P2PNetwork"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-preserving-ml",
+      "vc:label": "PrivacyPreservingML"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-aggregation",
+      "vc:label": "SecureAggregation"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-reward",
+      "vc:label": "TokenReward"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-aggregation",
+      "vc:label": "usesAggregation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "BlockchainNetwork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaborative-learning",
+      "vc:label": "CollaborativeLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "vc:label": "ZeroKnowledgeProof"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7a2317d70d65"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#FederatedLearning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3006"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Federated Learning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:federated-learning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:federated-learning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:federated-learning",
+  "@type": "OntologyClass",
+  "label": "Federated Learning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-computing",
+      "vc:label": "Distributed Computing"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information. Model updates are aggregated from local computations whilst raw data remains on-device, preserving [[PrivacyPreservingML]] and enabling [[CollaborativeLearning]] across organizations. Bridges [[DistributedLearning]] with [[SecureAggregation]] mechanisms and [[BlockchainNetwork]] coordination.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus Protocol"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:federated-learning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[coordinated By]]",
+      "resolved": "urn:visionflow:linked:coordinated-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DecentralizedAI]]",
+      "resolved": "urn:visionflow:linked:decentralized-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DistributedLearning]]",
+      "resolved": "urn:visionflow:linked:distributed-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:distributedVia]]",
+      "resolved": "urn:visionflow:linked:dt-distributed-via",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:implementedVia]]",
+      "resolved": "urn:visionflow:linked:dt-implemented-via",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:incentivizedBy]]",
+      "resolved": "urn:visionflow:linked:dt-incentivized-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:protectedBy]]",
+      "resolved": "urn:visionflow:linked:dt-protected-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:securedBy]]",
+      "resolved": "urn:visionflow:linked:dt-secured-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hasParticipant]]",
+      "resolved": "urn:visionflow:linked:has-participant",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[implementsPrivacy]]",
+      "resolved": "urn:visionflow:linked:implements-privacy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[P2PNetwork]]",
+      "resolved": "urn:visionflow:linked:p2-pnetwork",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PrivacyPreservingML]]",
+      "resolved": "urn:visionflow:linked:privacy-preserving-ml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SecureAggregation]]",
+      "resolved": "urn:visionflow:linked:secure-aggregation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TokenReward]]",
+      "resolved": "urn:visionflow:linked:token-reward",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesAggregation]]",
+      "resolved": "urn:visionflow:linked:uses-aggregation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainNetwork]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CollaborativeLearning]]",
+      "resolved": "urn:visionflow:owl:class:collaborative-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Protocol]]",
+      "resolved": "urn:visionflow:owl:class:consensus-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ZeroKnowledgeProof]]",
+      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information. Model updates are aggregated from local computations whilst raw data remains on-device, preserving [[PrivacyPreservingML]] and enabling [[CollaborativeLearning]] across organizations. Bridges [[DistributedLearning]] with [[SecureAggregation]] mechanisms and [[BlockchainNetwork]] coordination.

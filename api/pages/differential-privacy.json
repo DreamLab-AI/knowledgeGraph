@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a",
+  "title": "Differential Privacy",
+  "slug": "differential-privacy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:differential-privacy",
+  "domain": "artificial-intelligence",
+  "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. This technique provides formal privacy protection through the epsilon (\u03b5) parameter quantifying privacy loss, where smaller \u03b5 values indicate stronger privacy guarantees (typically \u03b5 \u2264 1.0 for high-privacy scenarios), with differential privacy satisfied when for all datasets D1 and D2 differing by one record and all possible outputs S, P(M(D1) \u2208 S) \u2264 exp(\u03b5) \u00d7 P(M(D2) \u2208 S). Implementation mechanisms include the Laplace mechanism adding noise proportional to query sensitivity for numeric queries, the Gaussian mechanism suitable for more complex settings with delta (\u03b4) parameter allowing negligible probability of privacy breach, the exponential mechanism for non-numeric outputs selecting results proportional to their utility, and composition theorems tracking cumulative privacy loss across multiple queries (sequential composition where total \u03b5_total = \u03a3\u03b5_i, advanced composition providing tighter bounds). The 2024-2025 ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "apple-differential-privacy",
+      "label": "Apple Differential Privacy"
+    },
+    {
+      "slug": "dwork-et-al-2006",
+      "label": "Dwork et al. (2006)"
+    },
+    {
+      "slug": "u-s-census-2020",
+      "label": "U.S. Census 2020"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    },
+    {
+      "slug": "synthetic-data-generator",
+      "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

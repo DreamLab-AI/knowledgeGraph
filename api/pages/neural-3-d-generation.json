@@ -1,0 +1,283 @@
+{
+  "id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53",
+  "title": "Neural 3D Generation",
+  "slug": "neural-3-d-generation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:neural-3-d-generation",
+  "domain": "artificial-intelligence",
+  "definition": "AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.9,
+  "maturity": "emerging",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:3-d-representation",
+        "label": "3D Representation"
+      },
+      {
+        "id": "urn:visionflow:linked:training-pipeline",
+        "label": "Training Pipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-asset-dataset",
+        "label": "3D Asset Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:owl:class:camera-parameters",
+        "label": "Camera Parameters"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-3-d-modeling",
+        "label": "Automated 3D Modeling"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin-generation",
+        "label": "Digital Twin Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-environment-creation",
+        "label": "Virtual Environment Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:gan",
+        "label": "GAN"
+      },
+      {
+        "id": "urn:visionflow:linked:vae",
+        "label": "VAE"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-asset-dataset",
+      "label": "3D Asset Dataset"
+    },
+    {
+      "slug": "3-d-representation",
+      "label": "3D Representation"
+    },
+    {
+      "slug": "automated-3-d-modeling",
+      "label": "Automated 3D Modeling"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "dream-fusion-google",
+      "label": "DreamFusion (Google)"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "get3-d",
+      "label": "GET3D"
+    },
+    {
+      "slug": "get3-d-nvidia",
+      "label": "GET3D (NVIDIA)"
+    },
+    {
+      "slug": "gl-tf-2-0",
+      "label": "glTF 2.0"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "ne-rf-mildenhall-et-al",
+      "label": "NeRF (Mildenhall et al.)"
+    },
+    {
+      "slug": "open-ai-point-e",
+      "label": "OpenAI Point-E"
+    },
+    {
+      "slug": "rapid-prototyping",
+      "label": "Rapid Prototyping"
+    },
+    {
+      "slug": "shap-e-open-ai",
+      "label": "Shap-E (OpenAI)"
+    },
+    {
+      "slug": "siggraph-ai",
+      "label": "SIGGRAPH AI"
+    },
+    {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin-generation",
+      "label": "Digital Twin Generation"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "virtual-environment-creation",
+      "label": "Virtual Environment Creation"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": []
+}

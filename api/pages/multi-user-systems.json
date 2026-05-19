@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0bd9acf8699f756bab20608115b0463167358bd3821c86a21f0cdebc55a23d4f",
+  "title": "Multi User Systems",
+  "slug": "multi-user-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:multi-user-systems",
+  "domain": "spatial-computing",
+  "definition": "Multi User Systems is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "participant-coordination",
+      "label": "Participant Coordination"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+- ### Definition
+  - Cross-domain marker for metaverse application components focused on education and training including virtual classrooms, immersive learning environments, educational simulations, and collaborative learning platforms.
+- ### Bridge-To
+  - bridges-to:: [[Telecollaboration]] (tc)
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ETSIDomainApplicationEducation
+  - owl-role:: Object
+  - owl-inferred:: spatial-computing:VirtualObject
+  - belongs-to-domain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]]
+- ### Relationships
+  - is-part-of:: [[ETSI Domain Taxonomy]]
+  - enables:: [[Education Application Classification]], [[Learning Platform Categorization]]
+  - depends-on:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]
+- ### Content
+  ETSI Domain Application + Education — content pending enrichment.
+- ### Provenance
+  - sources:: [[ETSI GS MEC]]
+  - migration-date:: 2026-04-26T00:00:00Z

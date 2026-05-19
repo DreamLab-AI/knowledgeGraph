@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d",
+  "title": "Human Interface Device",
+  "slug": "human-interface-device",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-interface-device",
+  "domain": "spatial-computing",
+  "definition": "Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:communication-interface",
+        "label": "Communication Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:input-sensors",
+        "label": "Input Sensors"
+      },
+      {
+        "id": "urn:visionflow:linked:output-actuators",
+        "label": "Output Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:tracking-components",
+        "label": "Tracking Components"
+      },
+      {
+        "id": "urn:visionflow:owl:class:haptics",
+        "label": "Haptics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:device-drivers",
+        "label": "Device Drivers"
+      },
+      {
+        "id": "urn:visionflow:linked:power-management",
+        "label": "Power Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-input",
+        "label": "User Input"
+      },
+      {
+        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bluetooth",
+      "label": "Bluetooth"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "communication-interface",
+      "label": "Communication Interface"
+    },
+    {
+      "slug": "device-drivers",
+      "label": "Device Drivers"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "input-sensors",
+      "label": "Input Sensors"
+    },
+    {
+      "slug": "interaction-system",
+      "label": "Interaction System"
+    },
+    {
+      "slug": "output-actuators",
+      "label": "Output Actuators"
+    },
+    {
+      "slug": "power-management",
+      "label": "Power Management"
+    },
+    {
+      "slug": "tracking-components",
+      "label": "Tracking Components"
+    },
+    {
+      "slug": "usb-protocol",
+      "label": "USB Protocol"
+    },
+    {
+      "slug": "user-input",
+      "label": "User Input"
+    },
+    {
+      "slug": "wireless-communication",
+      "label": "Wireless Communication"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "spatial-interaction",
+      "label": "Spatial Interaction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:130773aa1a85b926eaeaa93cf51cc4b93e0f149d01f5489ae4f91621a9613166",
+  "title": "Infrared Light Source",
+  "slug": "infrared-light-source",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrared-light-source",
+  "domain": "spatial-computing",
+  "definition": "Emission devices providing infrared wavelength light for VR/AR tracking applications, encompassing LEDs, illuminators, and integrated headset components that enable eye tracking, position detection, and hand gesture recognition in extended reality systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tracking-hardware",
+      "label": "Tracking Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "foveated-rendering",
+      "label": "Foveated Rendering"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "tracking-hardware",
+      "label": "Tracking Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

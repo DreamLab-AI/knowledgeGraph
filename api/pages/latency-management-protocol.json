@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:ecde76a0c8416a51ae3633d442cba4fec84455194ddc3691284a3f755de32c89",
+  "title": "Latency Management Protocol",
+  "slug": "latency-management-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:latency-management-protocol",
+  "domain": "spatial-computing",
+  "definition": "A systematic process for monitoring, measuring, and minimizing network delay in interactive metaverse sessions through adaptive techniques including traffic prioritization, predictive buffering, and dynamic routing optimization.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:dynamic-routing",
+        "label": "Dynamic Routing"
+      },
+      {
+        "id": "urn:visionflow:linked:latency-monitoring-system",
+        "label": "Latency Monitoring System"
+      },
+      {
+        "id": "urn:visionflow:linked:predictive-buffering",
+        "label": "Predictive Buffering"
+      },
+      {
+        "id": "urn:visionflow:linked:quality-of-service-manager",
+        "label": "Quality of Service Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:traffic-prioritization-engine",
+        "label": "Traffic Prioritization Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:latency-measurement-tools",
+        "label": "Latency Measurement Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:priority-policies",
+        "label": "Priority Policies"
+      },
+      {
+        "id": "urn:visionflow:linked:routing-algorithms",
+        "label": "Routing Algorithms"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:low-latency-interaction",
+        "label": "Low-Latency Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:predictable-performance",
+        "label": "Predictable Performance"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-responsiveness",
+        "label": "Real-Time Responsiveness"
+      },
+      {
+        "id": "urn:visionflow:linked:smooth-user-experience",
+        "label": "Smooth User Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bandwidth-management",
+      "label": "Bandwidth Management"
+    },
+    {
+      "slug": "congestion-control",
+      "label": "Congestion Control"
+    },
+    {
+      "slug": "dynamic-routing",
+      "label": "Dynamic Routing"
+    },
+    {
+      "slug": "etsi-eni-008",
+      "label": "ETSI ENI 008"
+    },
+    {
+      "slug": "ieee-p2048-7",
+      "label": "IEEE P2048-7"
+    },
+    {
+      "slug": "latency-measurement-tools",
+      "label": "Latency Measurement Tools"
+    },
+    {
+      "slug": "latency-monitoring-system",
+      "label": "Latency Monitoring System"
+    },
+    {
+      "slug": "low-latency-interaction",
+      "label": "Low-Latency Interaction"
+    },
+    {
+      "slug": "network-performance-management",
+      "label": "Network Performance Management"
+    },
+    {
+      "slug": "network-performance-metrics",
+      "label": "Network Performance Metrics"
+    },
+    {
+      "slug": "packet-scheduling",
+      "label": "Packet Scheduling"
+    },
+    {
+      "slug": "predictable-performance",
+      "label": "Predictable Performance"
+    },
+    {
+      "slug": "predictive-buffering",
+      "label": "Predictive Buffering"
+    },
+    {
+      "slug": "priority-policies",
+      "label": "Priority Policies"
+    },
+    {
+      "slug": "quality-of-experience-framework",
+      "label": "Quality of Experience Framework"
+    },
+    {
+      "slug": "quality-of-service-manager",
+      "label": "Quality of Service Manager"
+    },
+    {
+      "slug": "real-time-responsiveness",
+      "label": "Real-Time Responsiveness"
+    },
+    {
+      "slug": "routing-algorithms",
+      "label": "Routing Algorithms"
+    },
+    {
+      "slug": "smooth-user-experience",
+      "label": "Smooth User Experience"
+    },
+    {
+      "slug": "traffic-prioritization-engine",
+      "label": "Traffic Prioritization Engine"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "urn:visionflow:page:2de43065c6969d0e30f800a85f43c370dec5d61cc25b8ee4e492eac704f8a399",
+  "title": "Trust in Automation",
+  "slug": "trust-in-automation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trust-in-automation",
+  "domain": "robotics",
+  "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences. It represents the user's confidence in the system's reliability, competence, and integrity.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:human-factors",
+      "label": "Human Factors"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "automated-system",
+      "label": "Automated System"
+    },
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "automation-psychology",
+      "label": "Automation Psychology"
+    },
+    {
+      "slug": "complacency",
+      "label": "Complacency"
+    },
+    {
+      "slug": "confidence",
+      "label": "Confidence"
+    },
+    {
+      "slug": "expectation",
+      "label": "Expectation"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "slug": "rb-1009-social-robotics",
+      "label": "RB-1009-social-robotics"
+    },
+    {
+      "slug": "rb-1011-cobot-safety-levels",
+      "label": "RB-1011-cobot-safety-levels"
+    },
+    {
+      "slug": "reliance",
+      "label": "Reliance"
+    },
+    {
+      "slug": "situation-awareness",
+      "label": "Situation Awareness"
+    },
+    {
+      "slug": "system-performance",
+      "label": "System Performance"
+    },
+    {
+      "slug": "system-reliability",
+      "label": "System Reliability"
+    },
+    {
+      "slug": "system-usage",
+      "label": "System Usage"
+    },
+    {
+      "slug": "user-acceptance",
+      "label": "User Acceptance"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "user-interface-design",
+      "label": "User Interface Design"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "robot",
+      "label": "Robot"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "vulnerability",
+      "label": "Vulnerability"
+    }
+  ],
+  "backlinks": []
+}

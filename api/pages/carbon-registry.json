@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3",
+  "title": "Carbon Registry",
+  "slug": "carbon-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-registry",
+  "domain": "spatial-computing",
+  "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:environmental-registry",
+      "label": "Environmental Registry"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:database-infrastructure",
+        "label": "Database Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:unique-identifiers",
+        "label": "Unique Identifiers"
+      },
+      {
+        "id": "urn:visionflow:linked:verification-process",
+        "label": "Verification Process"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:credit-tracking",
+        "label": "Credit Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:double-counting-prevention",
+        "label": "Double Counting Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:market-transparency",
+        "label": "Market Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "credit-tracking",
+      "label": "Credit Tracking"
+    },
+    {
+      "slug": "database-infrastructure",
+      "label": "Database Infrastructure"
+    },
+    {
+      "slug": "double-counting-prevention",
+      "label": "Double Counting Prevention"
+    },
+    {
+      "slug": "market-transparency",
+      "label": "Market Transparency"
+    },
+    {
+      "slug": "unique-identifiers",
+      "label": "Unique Identifiers"
+    },
+    {
+      "slug": "verification-process",
+      "label": "Verification Process"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "environmental-registry",
+      "label": "Environmental Registry"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    }
+  ]
+}

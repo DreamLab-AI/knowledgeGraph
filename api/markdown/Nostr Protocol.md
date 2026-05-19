@@ -1,20 +1,716 @@
-iri:: http://narrativegoldmine.com/blockchain#NostrProtocol
-uri:: urn:visionclaw:concept:blockchain:nostr-protocol
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:nostr-protocol
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Nostr Protocol
-content-hash:: sha256-12-7d3e9f2a1b8c
-status:: complete
-maturity:: established
-quality-score:: 0.70
-authority-score:: 0.80
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#NostrProtocol
+legacy_uri:: urn:visionclaw:concept:blockchain:nostr-protocol
 public:: true
+
+# Nostr Protocol
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04",
+  "@type": "Page",
+  "vc:slug": "nostr-protocol",
+  "title": "Nostr Protocol",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-communication",
+      "vc:label": "Agent-to-Agent Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "vc:label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-ecosystem",
+      "vc:label": "Bitcoin Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-lightning-network",
+      "vc:label": "Bitcoin Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:censorship-resistant-messaging",
+      "vc:label": "Censorship-Resistant Messaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-identity-system",
+      "vc:label": "Cryptographic Identity System"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-vending-machine",
+      "vc:label": "Data Vending Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-communication-protocol",
+      "vc:label": "Decentralised Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-social-web",
+      "vc:label": "Decentralised Social Web"
+    },
+    {
+      "@id": "urn:visionflow:linked:did-nostr-did-method",
+      "vc:label": "did:nostr DID Method"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-prosima-fast-dds",
+      "vc:label": "eProsima Fast DDS"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-layer",
+      "vc:label": "IdentityLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-serialisation",
+      "vc:label": "JSON Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-zap-payments",
+      "vc:label": "Lightning Zap Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-01-core-protocol",
+      "vc:label": "NIP-01 Core Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-01-core-specification",
+      "vc:label": "NIP-01 Core Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-05-identity-verification",
+      "vc:label": "NIP-05 Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-47-wallet-connect",
+      "vc:label": "NIP-47 Wallet Connect"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-90-data-vending-machines",
+      "vc:label": "NIP-90 Data Vending Machines"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-architecture",
+      "vc:label": "NIP Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-client",
+      "vc:label": "Nostr Client"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-event",
+      "vc:label": "Nostr Event"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-protocol-git-hub",
+      "vc:label": "Nostr Protocol GitHub"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-relay",
+      "vc:label": "Nostr Relay"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signatures",
+      "vc:label": "Schnorr Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signatures",
+      "vc:label": "Schnorr Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1",
+      "vc:label": "secp256k1"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1-elliptic-curve",
+      "vc:label": "secp256k1 Elliptic Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1-library",
+      "vc:label": "secp256k1 Library"
+    },
+    {
+      "@id": "urn:visionflow:linked:taproot",
+      "vc:label": "Taproot"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-nostr-community-group",
+      "vc:label": "W3C Nostr Community Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-id-profile",
+      "vc:label": "WebID Profile"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-socket-protocol",
+      "vc:label": "WebSocket Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "Blockchain Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "vc:label": "NGM Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:protocol-layer",
+      "vc:label": "ProtocolLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solid-pod",
+      "vc:label": "Solid Pod"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "vc:label": "Telecollaboration Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-rtc",
+      "vc:label": "WebRTC"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.80"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7d3e9f2a1b8c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#NostrProtocol"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Nostr Protocol"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.70"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:nostr-protocol"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:nostr-protocol"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:nostr-protocol",
+  "@type": "OntologyClass",
+  "label": "Nostr Protocol",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-identity-system",
+      "vc:label": "Cryptographic Identity System"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-communication-protocol",
+      "vc:label": "Decentralised Communication Protocol"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with [[Schnorr Signatures|Schnorr signatures]] over the [[secp256k1]] elliptic curve and broadcast them to any number of stateless relay servers, so that no single entity can deplatform a user without their private key being lost; the protocol's NIP (Nostr Implementation Possibility) architecture allows feature extension whilst preserving a small, auditable core that integrates natively with [[Bitcoin Lightning Network]] payments and serves as a decentralised identity and communication layer for [[VisionClaw Agentic Container]] agent-to-agent messaging and [[DID Nostr Identity]] resolution.",
+  "vc:qualityScore": {
+    "@value": "0.70",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.80",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:bitcoin-ecosystem",
+      "vc:label": "Bitcoin Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-social-web",
+      "vc:label": "Decentralised Social Web"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:nip-architecture",
+      "vc:label": "NIP Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-client",
+      "vc:label": "Nostr Client"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-event",
+      "vc:label": "Nostr Event"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-relay",
+      "vc:label": "Nostr Relay"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signatures",
+      "vc:label": "Schnorr Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-id-profile",
+      "vc:label": "WebID Profile"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:json-serialisation",
+      "vc:label": "JSON Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signatures",
+      "vc:label": "Schnorr Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1-elliptic-curve",
+      "vc:label": "secp256k1 Elliptic Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-socket-protocol",
+      "vc:label": "WebSocket Protocol"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-communication",
+      "vc:label": "Agent-to-Agent Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:censorship-resistant-messaging",
+      "vc:label": "Censorship-Resistant Messaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-vending-machine",
+      "vc:label": "Data Vending Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-zap-payments",
+      "vc:label": "Lightning Zap Payments"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:nip-01-core-protocol",
+      "vc:label": "NIP-01 Core Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-05-identity-verification",
+      "vc:label": "NIP-05 Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-47-wallet-connect",
+      "vc:label": "NIP-47 Wallet Connect"
+    },
+    {
+      "@id": "urn:visionflow:linked:nip-90-data-vending-machines",
+      "vc:label": "NIP-90 Data Vending Machines"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:e-prosima-fast-dds",
+      "vc:label": "eProsima Fast DDS"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1-library",
+      "vc:label": "secp256k1 Library"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-socket-protocol",
+      "vc:label": "WebSocket Protocol"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:bitcoin-lightning-network",
+      "vc:label": "Bitcoin Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solid-pod",
+      "vc:label": "Solid Pod"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:nostr-protocol:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Agent-to-Agent Communication]]",
+      "resolved": "urn:visionflow:linked:agent-to-agent-communication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI agent]]",
+      "resolved": "urn:visionflow:linked:ai-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340 Schnorr Keypair|BIP-340]]",
+      "resolved": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Ecosystem]]",
+      "resolved": "urn:visionflow:linked:bitcoin-ecosystem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Lightning Network]]",
+      "resolved": "urn:visionflow:linked:bitcoin-lightning-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Censorship-Resistant Messaging]]",
+      "resolved": "urn:visionflow:linked:censorship-resistant-messaging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Identity System]]",
+      "resolved": "urn:visionflow:linked:cryptographic-identity-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Vending Machine]]",
+      "resolved": "urn:visionflow:linked:data-vending-machine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Communication Protocol]]",
+      "resolved": "urn:visionflow:linked:decentralised-communication-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Social Web]]",
+      "resolved": "urn:visionflow:linked:decentralised-social-web",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[did:nostr DID Method]]",
+      "resolved": "urn:visionflow:linked:did-nostr-did-method",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[eProsima Fast DDS]]",
+      "resolved": "urn:visionflow:linked:e-prosima-fast-dds",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IdentityLayer]]",
+      "resolved": "urn:visionflow:linked:identity-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON Serialisation]]",
+      "resolved": "urn:visionflow:linked:json-serialisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large Language Model]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Zap Payments]]",
+      "resolved": "urn:visionflow:linked:lightning-zap-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIP-01 Core Protocol]]",
+      "resolved": "urn:visionflow:linked:nip-01-core-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIP-01 Core Specification]]",
+      "resolved": "urn:visionflow:linked:nip-01-core-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIP-05 Identity Verification]]",
+      "resolved": "urn:visionflow:linked:nip-05-identity-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIP-47 Wallet Connect]]",
+      "resolved": "urn:visionflow:linked:nip-47-wallet-connect",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIP-90 Data Vending Machines]]",
+      "resolved": "urn:visionflow:linked:nip-90-data-vending-machines",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIP Architecture]]",
+      "resolved": "urn:visionflow:linked:nip-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Client]]",
+      "resolved": "urn:visionflow:linked:nostr-client",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Event]]",
+      "resolved": "urn:visionflow:linked:nostr-event",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Protocol GitHub]]",
+      "resolved": "urn:visionflow:linked:nostr-protocol-git-hub",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Relay]]",
+      "resolved": "urn:visionflow:linked:nostr-relay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr Signatures]]",
+      "resolved": "urn:visionflow:linked:schnorr-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr Signatures|Schnorr signatures]]",
+      "resolved": "urn:visionflow:linked:schnorr-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[secp256k1]]",
+      "resolved": "urn:visionflow:linked:secp256k1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[secp256k1 Elliptic Curve]]",
+      "resolved": "urn:visionflow:linked:secp256k1-elliptic-curve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[secp256k1 Library]]",
+      "resolved": "urn:visionflow:linked:secp256k1-library",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Taproot]]",
+      "resolved": "urn:visionflow:linked:taproot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Nostr Community Group]]",
+      "resolved": "urn:visionflow:linked:w3-c-nostr-community-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WebID Profile]]",
+      "resolved": "urn:visionflow:linked:web-id-profile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WebSocket Protocol]]",
+      "resolved": "urn:visionflow:linked:web-socket-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Domain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NGM Domain]]",
+      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProtocolLayer]]",
+      "resolved": "urn:visionflow:owl:class:protocol-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solid Pod]]",
+      "resolved": "urn:visionflow:owl:class:solid-pod",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration Domain]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[WebRTC]]",
+      "resolved": "urn:visionflow:owl:class:web-rtc",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with [[Schnorr Signatures|Schnorr signatures]] over the [[secp256k1]] elliptic curve and broadcast them to any number of stateless relay servers, so that no single entity can deplatform a user without their private key being lost; the protocol's NIP (Nostr Implementation Possibility) architecture allows feature extension whilst preserving a small, auditable core that integrates natively with [[Bitcoin Lightning Network]] payments and serves as a decentralised identity and communication layer for [[VisionClaw Agentic Container]] agent-to-agent messaging and [[DID Nostr Identity]] resolution.

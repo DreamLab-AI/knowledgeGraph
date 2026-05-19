@@ -1,24 +1,372 @@
-iri:: http://narrativegoldmine.com/spatial-computing#LanguageModeling
-uri:: urn:visionclaw:concept:spatial-computing:language-modeling
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:language-modeling
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Language Modeling
-content-hash:: sha256-12-4369597b9ddb
-legacy-term-id:: AI-0375
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#LanguageModeling
+legacy_uri:: urn:visionclaw:concept:spatial-computing:language-modeling
 public:: true
+
+# Language Modeling
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f",
+  "@type": "Page",
+  "vc:slug": "language-modeling",
+  "title": "Language Modeling",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:omniverse",
+      "vc:label": "Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-usd",
+      "vc:label": "OpenUSD"
+    },
+    {
+      "@id": "urn:visionflow:linked:presentation",
+      "vc:label": "presentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt",
+      "vc:label": "GPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graphing",
+      "vc:label": "Knowledge Graphing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:logseq",
+      "vc:label": "Logseq"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "vc:label": "Metaverse and Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
+      "vc:label": "NVIDIA Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-generative-ai-tools",
+      "vc:label": "Open Generative AI tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-attention",
+      "vc:label": "Self Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-generation",
+      "vc:label": "Text Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4369597b9ddb"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#LanguageModeling"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0375"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Language Modeling"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:language-modeling"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:language-modeling"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:language-modeling",
+  "@type": "OntologyClass",
+  "label": "Language Modeling",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:language-modeling:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Large Language Model]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Omniverse]]",
+      "resolved": "urn:visionflow:linked:omniverse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenUSD]]",
+      "resolved": "urn:visionflow:linked:open-usd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[presentation]]",
+      "resolved": "urn:visionflow:linked:presentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BERT]]",
+      "resolved": "urn:visionflow:owl:class:bert",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diffusion Models]]",
+      "resolved": "urn:visionflow:owl:class:diffusion-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GPT]]",
+      "resolved": "urn:visionflow:owl:class:gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graphing]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Logseq]]",
+      "resolved": "urn:visionflow:owl:class:logseq",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse and Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NVIDIA Omniverse]]",
+      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Open Generative AI tools]]",
+      "resolved": "urn:visionflow:owl:class:open-generative-ai-tools",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Self Attention]]",
+      "resolved": "urn:visionflow:owl:class:self-attention",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Text Generation]]",
+      "resolved": "urn:visionflow:owl:class:text-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
@@ -562,11 +910,11 @@ public:: true
   - Next [[presentation]] slide [[Proprietary Large Language Models]]
 
   - ## See Also
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[Google]]
 
   - ## See Also
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[OpenAI]]
   - [[Google]]
 
@@ -761,14 +1109,14 @@ public:: true
   - [[Text Generation]]
   - [[GPT]]
   - [[BERT]]
-  - [[Self-Attention]]
+  - [[Self Attention]]
 
   #### Current Landscape
   - The AI landscape is currently dominated by a few large technology companies that are developing and deploying powerful large language models (LLMs). These models are being integrated into a wide range of products and services, from search engines to creative tools.
   - [AI Index Report 2024](https://aiindex.stanford.edu/report/)
 
   - ## See Also
-  - [[Large language models]]
+  - [[Large Language Models]]
   - [[OpenAI]]
   - [[Google]]
 
@@ -917,7 +1265,7 @@ public:: true
   - [[Text Generation]]
   - [[GPT]]
   - [[BERT]]
-  - [[Self-Attention]]
+  - [[Self Attention]]
 
 - ### Provenance
   - sources::

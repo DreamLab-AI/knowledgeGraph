@@ -1,0 +1,584 @@
+{
+  "id": "urn:visionflow:page:9d48b9296f1df7d825c9edb311db9423cd1383fdb25cbabc8cdb726d459dddff",
+  "title": "Pika",
+  "slug": "pika",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pika",
+  "domain": "artificial-intelligence",
+  "definition": "**Pika** (operated by **Pika Labs Inc.**) is a San Francisco-based generative artificial intelligence company founded in April 2023 by Stanford computer-science PhD candidates **Demi Guo** (CEO, formerly Harvard mathematics, Stanford CS, alumna of Facebook AI Research, Google Brain, Microsoft Bing, Quora and Hudson River Trading) and **Chenlin Meng** (CTO, Stanford CS PhD, co-author of foundational diffusion-model papers including *Denoising Diffusion Implicit Models* (Song, Meng & Ermon, ICLR 2021) and *Score-Based Generative Modeling through Stochastic Differential Equations* (Song et al., ICLR 2021)), developing a consumer- and prosumer-facing **text-to-video, image-to-video and video-to-video generative platform** built on a proprietary latent video-diffusion architecture (presumed diffusion-transformer / DiT backbone in the 2024+ generations, exact details undisclosed as Pika has published no formal arXiv paper) trained on internet-scale video-text corpora and exposing the model through a Discord-first beta (June-November 2023), a public web app at pika.art (December 2023 onwards), native iOS and Android applications (2024), an Adobe Firefly third-party model integration (Sept",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:creative-ai-tool",
+      "label": "Creative AI Tool"
+    },
+    {
+      "id": "urn:visionflow:linked:generative-ai-product",
+      "label": "Generative AI Product"
+    },
+    {
+      "id": "urn:visionflow:linked:latent-diffusion-system",
+      "label": "Latent Diffusion System"
+    },
+    {
+      "id": "urn:visionflow:linked:text-to-video-generation",
+      "label": "Text-to-Video Generation"
+    },
+    {
+      "id": "urn:visionflow:linked:video-diffusion-model",
+      "label": "Video Diffusion Model"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:discord-bot-interface",
+        "label": "Discord Bot Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:image-conditioning-adapter",
+        "label": "Image Conditioning Adapter"
+      },
+      {
+        "id": "urn:visionflow:linked:sampling-scheduler",
+        "label": "Sampling Scheduler"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-attention",
+        "label": "Temporal Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:visionflow:linked:video-diffusion-u-net",
+        "label": "Video Diffusion U-Net"
+      },
+      {
+        "id": "urn:visionflow:linked:web-frontend",
+        "label": "Web Frontend"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:clip-text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:cloud-inference-infrastructure",
+        "label": "Cloud Inference Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion-backbone",
+        "label": "Latent Diffusion Backbone"
+      },
+      {
+        "id": "urn:visionflow:linked:stochastic-differential-equation-solver",
+        "label": "Stochastic Differential Equation Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:video-text-training-data",
+        "label": "Video-Text Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:advertising-creative",
+        "label": "Advertising Creative"
+      },
+      {
+        "id": "urn:visionflow:linked:image-to-video-animation",
+        "label": "Image-to-Video Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:keyframe-interpolation",
+        "label": "Keyframe Interpolation"
+      },
+      {
+        "id": "urn:visionflow:linked:object-replacement",
+        "label": "Object Replacement"
+      },
+      {
+        "id": "urn:visionflow:linked:social-media-content-creation",
+        "label": "Social Media Content Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-video-synthesis",
+        "label": "Text-to-Video Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:video-editing",
+        "label": "Video Editing"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-effects-generation",
+        "label": "Visual Effects Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:denoising-diffusion-implicit-models",
+        "label": "Denoising Diffusion Implicit Models"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-transformer-architecture",
+        "label": "Diffusion Transformer Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:score-based-generative-modelling",
+        "label": "Score-Based Generative Modelling"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "advertising-creative",
+      "label": "Advertising Creative"
+    },
+    {
+      "slug": "bain-et-al-2021-frozen-in-time-web-vid-10-m",
+      "label": "Bain et al. 2021 Frozen in Time WebVid-10M"
+    },
+    {
+      "slug": "blattmann-et-al-2023-stable-video-diffusion",
+      "label": "Blattmann et al. 2023 Stable Video Diffusion"
+    },
+    {
+      "slug": "brooks-et-al-2024-sora-technical-report-video-generation-world-simulators",
+      "label": "Brooks et al. 2024 Sora Technical Report Video Generation World Simulators"
+    },
+    {
+      "slug": "c2-pa-content-credentials",
+      "label": "C2PA Content Credentials"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-text-encoder",
+      "label": "CLIP Text Encoder"
+    },
+    {
+      "slug": "cloud-inference-infrastructure",
+      "label": "Cloud Inference Infrastructure"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "creative-ai-tool",
+      "label": "Creative AI Tool"
+    },
+    {
+      "slug": "deepfake",
+      "label": "Deepfake"
+    },
+    {
+      "slug": "denoising-diffusion-implicit-models",
+      "label": "Denoising Diffusion Implicit Models"
+    },
+    {
+      "slug": "dhariwal-nichol-2021-diffusion-models-beat-gans",
+      "label": "Dhariwal Nichol 2021 Diffusion Models Beat GANs"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-transformer-architecture",
+      "label": "Diffusion Transformer Architecture"
+    },
+    {
+      "slug": "discord-bot-interface",
+      "label": "Discord Bot Interface"
+    },
+    {
+      "slug": "distillation",
+      "label": "Distillation"
+    },
+    {
+      "slug": "educational-animation",
+      "label": "Educational Animation"
+    },
+    {
+      "slug": "esser-et-al-2024-rectified-flow-transformers-stable-diffusion-3",
+      "label": "Esser et al. 2024 Rectified Flow Transformers Stable Diffusion 3"
+    },
+    {
+      "slug": "eu-ai-act-article-50",
+      "label": "EU AI Act Article 50"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "fortune-2025-pika-tik-tok-like-ai",
+      "label": "Fortune 2025 Pika TikTok-like AI"
+    },
+    {
+      "slug": "generative-ai-product",
+      "label": "Generative AI Product"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "grand-view-research-2025-generative-ai-video-market",
+      "label": "Grand View Research 2025 Generative AI Video Market"
+    },
+    {
+      "slug": "guo-et-al-2023-animate-diff",
+      "label": "Guo et al. 2023 AnimateDiff"
+    },
+    {
+      "slug": "he-et-al-2022-latent-video-diffusion-models-long-video",
+      "label": "He et al. 2022 Latent Video Diffusion Models Long Video"
+    },
+    {
+      "slug": "ho-et-al-2022-imagen-video-google",
+      "label": "Ho et al. 2022 Imagen Video Google"
+    },
+    {
+      "slug": "ho-et-al-2022-video-diffusion-models",
+      "label": "Ho et al. 2022 Video Diffusion Models"
+    },
+    {
+      "slug": "ho-jain-abbeel-2020-denoising-diffusion-probabilistic-models",
+      "label": "Ho Jain Abbeel 2020 Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "slug": "ho-salimans-2022-classifier-free-diffusion-guidance",
+      "label": "Ho Salimans 2022 Classifier-Free Diffusion Guidance"
+    },
+    {
+      "slug": "huang-et-al-2024-vbench",
+      "label": "Huang et al. 2024 VBench"
+    },
+    {
+      "slug": "ico-synthetic-media-guidance",
+      "label": "ICO Synthetic Media Guidance"
+    },
+    {
+      "slug": "image-conditioning-adapter",
+      "label": "Image Conditioning Adapter"
+    },
+    {
+      "slug": "image-to-video-animation",
+      "label": "Image-to-Video Animation"
+    },
+    {
+      "slug": "influencer-marketing",
+      "label": "Influencer Marketing"
+    },
+    {
+      "slug": "keyframe-interpolation",
+      "label": "Keyframe Interpolation"
+    },
+    {
+      "slug": "kling",
+      "label": "Kling"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "latent-diffusion-backbone",
+      "label": "Latent Diffusion Backbone"
+    },
+    {
+      "slug": "latent-diffusion-system",
+      "label": "Latent Diffusion System"
+    },
+    {
+      "slug": "liu-gong-liu-2023-rectified-flow",
+      "label": "Liu Gong Liu 2023 Rectified Flow"
+    },
+    {
+      "slug": "lo-ra-fine-tuning",
+      "label": "LoRA Fine-Tuning"
+    },
+    {
+      "slug": "luma-dream-machine",
+      "label": "Luma Dream Machine"
+    },
+    {
+      "slug": "maginative-2024-pika-80-m-series-b",
+      "label": "Maginative 2024 Pika 80M Series B"
+    },
+    {
+      "slug": "memetic-content",
+      "label": "Memetic Content"
+    },
+    {
+      "slug": "meta-movie-gen",
+      "label": "Meta Movie Gen"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "music-video-generation",
+      "label": "Music Video Generation"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "object-replacement",
+      "label": "Object Replacement"
+    },
+    {
+      "slug": "optimal-transport",
+      "label": "Optimal Transport"
+    },
+    {
+      "slug": "peebles-xie-2023-scalable-diffusion-models-with-transformers-di-t",
+      "label": "Peebles Xie 2023 Scalable Diffusion Models with Transformers DiT"
+    },
+    {
+      "slug": "pitch-reel-production",
+      "label": "Pitch Reel Production"
+    },
+    {
+      "slug": "polyak-et-al-2024-meta-movie-gen",
+      "label": "Polyak et al. 2024 Meta Movie Gen"
+    },
+    {
+      "slug": "rombach-et-al-2022-high-resolution-image-synthesis-latent-diffusion",
+      "label": "Rombach et al. 2022 High-Resolution Image Synthesis Latent Diffusion"
+    },
+    {
+      "slug": "runway-gen-3",
+      "label": "Runway Gen-3"
+    },
+    {
+      "slug": "sampling-scheduler",
+      "label": "Sampling Scheduler"
+    },
+    {
+      "slug": "sauer-et-al-2024-adversarial-diffusion-distillation",
+      "label": "Sauer et al. 2024 Adversarial Diffusion Distillation"
+    },
+    {
+      "slug": "score-based-generative-modelling",
+      "label": "Score-Based Generative Modelling"
+    },
+    {
+      "slug": "sherry-2024-inc-pika-55-m-series-a",
+      "label": "Sherry 2024 Inc Pika 55M Series A"
+    },
+    {
+      "slug": "singer-et-al-2022-make-a-video-meta",
+      "label": "Singer et al. 2022 Make-A-Video Meta"
+    },
+    {
+      "slug": "social-media-content-creation",
+      "label": "Social Media Content Creation"
+    },
+    {
+      "slug": "sohl-dickstein-et-al-2015-deep-unsupervised-learning-nonequilibrium-thermodynamics",
+      "label": "Sohl-Dickstein et al. 2015 Deep Unsupervised Learning Nonequilibrium Thermodynamics"
+    },
+    {
+      "slug": "song-et-al-2021-score-based-generative-modeling-through-sdes",
+      "label": "Song et al. 2021 Score-Based Generative Modeling through SDEs"
+    },
+    {
+      "slug": "song-et-al-2023-consistency-models",
+      "label": "Song et al. 2023 Consistency Models"
+    },
+    {
+      "slug": "song-meng-ermon-2021-denoising-diffusion-implicit-models",
+      "label": "Song Meng Ermon 2021 Denoising Diffusion Implicit Models"
+    },
+    {
+      "slug": "sora",
+      "label": "Sora"
+    },
+    {
+      "slug": "stable-video-diffusion",
+      "label": "Stable Video Diffusion"
+    },
+    {
+      "slug": "stochastic-differential-equation-solver",
+      "label": "Stochastic Differential Equation Solver"
+    },
+    {
+      "slug": "storyboarding",
+      "label": "Storyboarding"
+    },
+    {
+      "slug": "sumsub-2025-identity-fraud-report",
+      "label": "Sumsub 2025 Identity Fraud Report"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "temporal-attention",
+      "label": "Temporal Attention"
+    },
+    {
+      "slug": "text-encoder",
+      "label": "Text Encoder"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "text-to-video-generation",
+      "label": "Text-to-Video Generation"
+    },
+    {
+      "slug": "text-to-video-synthesis",
+      "label": "Text-to-Video Synthesis"
+    },
+    {
+      "slug": "uk-online-safety-act-2023",
+      "label": "UK Online Safety Act 2023"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "veo-3",
+      "label": "Veo 3"
+    },
+    {
+      "slug": "video-diffusion-model",
+      "label": "Video Diffusion Model"
+    },
+    {
+      "slug": "video-diffusion-u-net",
+      "label": "Video Diffusion U-Net"
+    },
+    {
+      "slug": "video-editing",
+      "label": "Video Editing"
+    },
+    {
+      "slug": "video-representation-learning",
+      "label": "Video Representation Learning"
+    },
+    {
+      "slug": "video-text-training-data",
+      "label": "Video-Text Training Data"
+    },
+    {
+      "slug": "visual-effects-generation",
+      "label": "Visual Effects Generation"
+    },
+    {
+      "slug": "wang-et-al-2025-t2-vphys-bench",
+      "label": "Wang et al. 2025 T2VPhysBench"
+    },
+    {
+      "slug": "web-frontend",
+      "label": "Web Frontend"
+    },
+    {
+      "slug": "wiggers-2023-tech-crunch-pika-55-m",
+      "label": "Wiggers 2023 TechCrunch Pika 55M"
+    },
+    {
+      "slug": "zhang-rao-agrawala-2023-control-net",
+      "label": "Zhang Rao Agrawala 2023 ControlNet"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "service-layer",
+      "label": "ServiceLayer"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    }
+  ]
+}

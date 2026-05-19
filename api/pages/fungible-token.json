@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:1aff74057f0e8cb900d9931229477be400855e30c7aa48de90aa474952bc8fd5",
+  "title": "Fungible Token",
+  "slug": "fungible-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fungible-token",
+  "domain": "blockchain",
+  "definition": "A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:token",
+      "label": "Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "erc20-token",
+      "label": "ERC20 Token"
+    },
+    {
+      "slug": "fixed-supply-token",
+      "label": "Fixed Supply Token"
+    },
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "security-token",
+      "label": "Security Token"
+    },
+    {
+      "slug": "stablecoin-token",
+      "label": "Stablecoin Token"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:8512801a3252994bfd398c79bbeb31f9252e899d158941e921aa6e723bad9db5",
+  "title": "Knowledge Organization",
+  "slug": "knowledge-organization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-organization",
+  "domain": "artificial-intelligence",
+  "definition": "Knowledge Organization is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "controlled-vocabularies",
+      "label": "Controlled Vocabularies"
+    }
+  ]
+}

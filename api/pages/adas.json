@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:3cdb5aed544443d8300ee00e1cc07da27cef70df54c460c4e74ec55513d300f9",
+  "title": "ADAS",
+  "slug": "adas",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adas",
+  "domain": "robotics",
+  "definition": "Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance. ADAS represents SAE Level 1-2 automation, providing driver support whilst requiring continuous driver supervision and intervention capability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-26262",
+      "label": "ISO 26262"
+    },
+    {
+      "slug": "sae-j3016",
+      "label": "SAE J3016"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "self-driving-car",
+      "label": "Self Driving Car"
+    }
+  ]
+}

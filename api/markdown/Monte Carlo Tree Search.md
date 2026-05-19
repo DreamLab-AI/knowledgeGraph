@@ -1,21 +1,195 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#MonteCarloTreeSearch
-uri:: urn:visionclaw:concept:artificial-intelligence:monte-carlo-tree-search
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:monte-carlo-tree-search
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Monte Carlo Tree Search
-content-hash:: sha256-12-369a4d7f52f9
-legacy-term-id:: AI-1006
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#MonteCarloTreeSearch
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:monte-carlo-tree-search
 public:: true
+
+# Monte Carlo Tree Search
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd",
+  "@type": "Page",
+  "vc:slug": "monte-carlo-tree-search",
+  "title": "Monte Carlo Tree Search",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:game-playing-ai",
+      "vc:label": "Game Playing AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:search-algorithms",
+      "vc:label": "Search Algorithms"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-369a4d7f52f9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#MonteCarloTreeSearch"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1006"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Monte Carlo Tree Search"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:monte-carlo-tree-search"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:monte-carlo-tree-search"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:monte-carlo-tree-search",
+  "@type": "OntologyClass",
+  "label": "Monte Carlo Tree Search",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:search-algorithms",
+      "vc:label": "Search Algorithms"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Monte Carlo Tree Search is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:game-playing-ai",
+      "vc:label": "Game Playing AI"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:monte-carlo-tree-search:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Game Playing AI]]",
+      "resolved": "urn:visionflow:linked:game-playing-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Search Algorithms]]",
+      "resolved": "urn:visionflow:owl:class:search-algorithms",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Monte Carlo Tree Search is a concept within the ai domain.

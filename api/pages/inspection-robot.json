@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:94f7c737f4f362d575803bf71353e78e942e28a8afcba81e00a5fa5304ecdb6e",
+  "title": "Inspection Robot",
+  "slug": "inspection-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inspection-robot",
+  "domain": "robotics",
+  "definition": "**Inspection Robot** - Inspection Robot in robotics systems",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

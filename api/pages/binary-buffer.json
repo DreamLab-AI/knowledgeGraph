@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:d7fb671a874e3042b3de9332edb5aff9b0518f8cac47a5d0ea0a2d37e9501775",
+  "title": "Binary Buffer",
+  "slug": "binary-buffer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:binary-buffer",
+  "domain": "spatial-computing",
+  "definition": "A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:buffer-management",
+        "label": "Buffer Management"
+      },
+      {
+        "id": "urn:visionflow:linked:data-formatting",
+        "label": "Data Formatting"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-allocation",
+        "label": "Memory Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-transfer",
+        "label": "Data Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:graphics-rendering",
+        "label": "Graphics Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "buffer-management",
+      "label": "Buffer Management"
+    },
+    {
+      "slug": "data-formatting",
+      "label": "Data Formatting"
+    },
+    {
+      "slug": "data-transfer",
+      "label": "Data Transfer"
+    },
+    {
+      "slug": "graphics-rendering",
+      "label": "Graphics Rendering"
+    },
+    {
+      "slug": "memory-allocation",
+      "label": "Memory Allocation"
+    },
+    {
+      "slug": "stream-processing",
+      "label": "Stream Processing"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

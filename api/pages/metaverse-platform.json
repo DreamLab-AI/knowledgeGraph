@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:b1e44fa19f9afeec186e96ce72ea39e98307728fc292b515a66ca31d7126a63b",
+  "title": "Metaverse Platform",
+  "slug": "metaverse-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-platform",
+  "domain": "spatial-computing",
+  "definition": "Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:virtual-social-interaction",
+        "label": "Virtual Social Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "virtual-social-interaction",
+      "label": "Virtual Social Interaction"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    },
+    {
+      "slug": "immersive-technology",
+      "label": "Immersive Technology"
+    },
+    {
+      "slug": "infrastructure-architecture",
+      "label": "Infrastructure Architecture"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

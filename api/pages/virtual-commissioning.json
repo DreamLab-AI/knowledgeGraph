@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:506a0912dbbbb089cfe52e3b7fb751a9e61a359b7f830a4433a4bfe3e9584c62",
+  "title": "Virtual Commissioning",
+  "slug": "virtual-commissioning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-commissioning",
+  "domain": "spatial-computing",
+  "definition": "The simulation and testing of manufacturing systems in a virtual environment before physical implementation, using digital twins and real-time simulation to validate control algorithms, robot motion, and process sequences, reducing commissioning time and costs during development.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

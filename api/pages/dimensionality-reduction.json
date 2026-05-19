@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9",
+  "title": "Dimensionality Reduction",
+  "slug": "dimensionality-reduction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dimensionality-reduction",
+  "domain": "artificial-intelligence",
+  "definition": "Dimensionality Reduction is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:unsupervised-learning",
+      "label": "Unsupervised Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-visualization",
+        "label": "Data Visualization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computational-efficiency",
+      "label": "Computational Efficiency"
+    },
+    {
+      "slug": "curse-of-dimensionality",
+      "label": "Curse of Dimensionality"
+    },
+    {
+      "slug": "data-visualization",
+      "label": "Data Visualization"
+    },
+    {
+      "slug": "feature-selection",
+      "label": "Feature Selection"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

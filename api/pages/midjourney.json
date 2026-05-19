@@ -1,0 +1,668 @@
+{
+  "id": "urn:visionflow:page:c3d5eef913c7ea2e362c54c3a9075545a44b4896c607f6f4f984367a0e242574",
+  "title": "Midjourney",
+  "slug": "midjourney",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:midjourney",
+  "domain": "artificial-intelligence",
+  "definition": "Midjourney is a proprietary text-to-image and text-to-video [[Generative AI]] platform developed by Midjourney Inc. (San Francisco, California, founded 2021, CEO David Holz), operating as a bootstrapped venture-capital-free company that achieved profitability within one month of its July 2022 public beta launch. The platform transforms natural language text prompts \u2014 and optionally image references, style references, and character/object references \u2014 into high-resolution raster images using a proprietary [[Diffusion Models]] architecture described by Holz at V7 launch as \"a totally different architecture\" from predecessor versions, without disclosure of model weights, training data composition beyond LAION-derived acknowledgement, or peer-reviewed technical specifications. Business scale as of 2026: approximately $300M annual recurring revenue (ARR) by January 2024, $500M ARR in 2025, private market valuation estimated at $10.5B, approximately 107\u2013131 employees, revenue-per-employee exceeding $3.8M \u2014 among the highest of any technology company globally.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:creative-ai-tools",
+      "label": "Creative AI Tools"
+    },
+    {
+      "id": "urn:visionflow:linked:text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-video",
+      "label": "AI Video"
+    },
+    {
+      "id": "urn:visionflow:owl:class:diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:discord-bot-framework",
+        "label": "Discord Bot Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:draft-mode",
+        "label": "Draft Mode"
+      },
+      {
+        "id": "urn:visionflow:linked:niji-model",
+        "label": "Niji Model"
+      },
+      {
+        "id": "urn:visionflow:linked:omni-reference",
+        "label": "Omni Reference"
+      },
+      {
+        "id": "urn:visionflow:linked:pan-zoom",
+        "label": "Pan Zoom"
+      },
+      {
+        "id": "urn:visionflow:linked:personalization-system",
+        "label": "Personalization System"
+      },
+      {
+        "id": "urn:visionflow:linked:style-creator",
+        "label": "Style Creator"
+      },
+      {
+        "id": "urn:visionflow:linked:style-reference",
+        "label": "Style Reference"
+      },
+      {
+        "id": "urn:visionflow:linked:upscale-tools",
+        "label": "Upscale Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:vary-region",
+        "label": "Vary Region"
+      },
+      {
+        "id": "urn:visionflow:linked:video-generation",
+        "label": "Video Generation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:clip-embeddings",
+        "label": "CLIP Embeddings"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-model-architecture",
+        "label": "Diffusion Model Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:discord-api",
+        "label": "Discord API"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute-infrastructure",
+        "label": "GPU Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:subscription-system",
+        "label": "Subscription System"
+      },
+      {
+        "id": "urn:visionflow:linked:text-encoder",
+        "label": "Text Encoder"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:advertising-creative",
+        "label": "Advertising Creative"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-art-generation",
+        "label": "AI Art Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:brand-visual-identity",
+        "label": "Brand Visual Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:concept-art-production",
+        "label": "Concept Art Production"
+      },
+      {
+        "id": "urn:visionflow:linked:fashion-design-ideation",
+        "label": "Fashion Design Ideation"
+      },
+      {
+        "id": "urn:visionflow:linked:film-pre-visualisation",
+        "label": "Film Pre-visualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:game-asset-design",
+        "label": "Game Asset Design"
+      },
+      {
+        "id": "urn:visionflow:linked:storyboard-generation",
+        "label": "Storyboard Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:image-outpainting",
+        "label": "Image Outpainting"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:noise-scheduling",
+        "label": "Noise Scheduling"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-generation",
+        "label": "Personalized Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "advertising-creative",
+      "label": "Advertising Creative"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "andersen-v-stability-ai-2023",
+      "label": "Andersen v Stability AI 2023"
+    },
+    {
+      "slug": "architectural-visualisation",
+      "label": "Architectural Visualisation"
+    },
+    {
+      "slug": "architecture-design",
+      "label": "Architecture Design"
+    },
+    {
+      "slug": "black-forest-labs-flux-1-2024",
+      "label": "Black Forest Labs FLUX.1 2024"
+    },
+    {
+      "slug": "brand-visual-identity",
+      "label": "Brand Visual Identity"
+    },
+    {
+      "slug": "c2-pa-provenance-standard",
+      "label": "C2PA Provenance Standard"
+    },
+    {
+      "slug": "cbinsights-midjourney-valuation-2024",
+      "label": "CBInsights Midjourney Valuation 2024"
+    },
+    {
+      "slug": "cho-et-al-2023-dall-eval-iccv",
+      "label": "Cho et al 2023 DALL-EVAL ICCV"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-embeddings",
+      "label": "CLIP Embeddings"
+    },
+    {
+      "slug": "commercial-image-production",
+      "label": "Commercial Image Production"
+    },
+    {
+      "slug": "concept-art-production",
+      "label": "Concept Art Production"
+    },
+    {
+      "slug": "control-net-and-similar",
+      "label": "ControlNet and similar"
+    },
+    {
+      "slug": "copyright-law",
+      "label": "Copyright Law"
+    },
+    {
+      "slug": "creative-ai-tools",
+      "label": "Creative AI Tools"
+    },
+    {
+      "slug": "creative-aitools-domain",
+      "label": "CreativeAIToolsDomain"
+    },
+    {
+      "slug": "deadline-warner-bros-midjourney-2025",
+      "label": "Deadline Warner Bros Midjourney 2025"
+    },
+    {
+      "slug": "demand-sage-midjourney-statistics-2026",
+      "label": "DemandSage Midjourney Statistics 2026"
+    },
+    {
+      "slug": "diffusion-model-architecture",
+      "label": "Diffusion Model Architecture"
+    },
+    {
+      "slug": "discord-api",
+      "label": "Discord API"
+    },
+    {
+      "slug": "discord-bot-framework",
+      "label": "Discord Bot Framework"
+    },
+    {
+      "slug": "disney-nbcuniversal-v-midjourney-2025",
+      "label": "Disney NBCUniversal v Midjourney 2025"
+    },
+    {
+      "slug": "dmca",
+      "label": "DMCA"
+    },
+    {
+      "slug": "draft-mode",
+      "label": "Draft Mode"
+    },
+    {
+      "slug": "educational-content-creation",
+      "label": "Educational Content Creation"
+    },
+    {
+      "slug": "fashion-design-ideation",
+      "label": "Fashion Design Ideation"
+    },
+    {
+      "slug": "fashion-industry",
+      "label": "Fashion Industry"
+    },
+    {
+      "slug": "film-pre-visualisation",
+      "label": "Film Pre-visualisation"
+    },
+    {
+      "slug": "flux",
+      "label": "FLUX"
+    },
+    {
+      "slug": "game-asset-design",
+      "label": "Game Asset Design"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "generative-media-domain",
+      "label": "GenerativeMediaDomain"
+    },
+    {
+      "slug": "georgetown-law-disney-midjourney-2025",
+      "label": "Georgetown Law Disney Midjourney 2025"
+    },
+    {
+      "slug": "gpu-compute-infrastructure",
+      "label": "GPU Compute Infrastructure"
+    },
+    {
+      "slug": "henderson-et-al-2023-foundation-models-fair-use-jmlr",
+      "label": "Henderson et al 2023 Foundation Models Fair Use JMLR"
+    },
+    {
+      "slug": "ho-et-al-2020-ddpm-neur-ips",
+      "label": "Ho et al 2020 DDPM NeurIPS"
+    },
+    {
+      "slug": "ho-salimans-2021-cfg",
+      "label": "Ho Salimans 2021 CFG"
+    },
+    {
+      "slug": "image-outpainting",
+      "label": "Image Outpainting"
+    },
+    {
+      "slug": "imagen-3",
+      "label": "Imagen 3"
+    },
+    {
+      "slug": "laion-dataset",
+      "label": "LAION Dataset"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "midjourney-omni-reference-documentation-2025",
+      "label": "Midjourney Omni Reference Documentation 2025"
+    },
+    {
+      "slug": "midjourney-style-reference-documentation",
+      "label": "Midjourney Style Reference Documentation"
+    },
+    {
+      "slug": "midjourney-v6-1-update-notes-2024",
+      "label": "Midjourney V6.1 Update Notes 2024"
+    },
+    {
+      "slug": "midjourney-v7-default-announcement-2025",
+      "label": "Midjourney V7 Default Announcement 2025"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "motion-picture-pre-production",
+      "label": "Motion Picture Pre-production"
+    },
+    {
+      "slug": "multi-modal-conditioning",
+      "label": "Multi-modal Conditioning"
+    },
+    {
+      "slug": "niji-model",
+      "label": "Niji Model"
+    },
+    {
+      "slug": "niji-v6-launch-january-2024",
+      "label": "Niji V6 Launch January 2024"
+    },
+    {
+      "slug": "niji-v7-launch-january-2026",
+      "label": "Niji V7 Launch January 2026"
+    },
+    {
+      "slug": "noise-scheduling",
+      "label": "Noise Scheduling"
+    },
+    {
+      "slug": "omni-reference",
+      "label": "Omni Reference"
+    },
+    {
+      "slug": "pan-zoom",
+      "label": "Pan Zoom"
+    },
+    {
+      "slug": "personalization-system",
+      "label": "Personalization System"
+    },
+    {
+      "slug": "personalized-generation",
+      "label": "Personalized Generation"
+    },
+    {
+      "slug": "progressive-web-app",
+      "label": "Progressive Web App"
+    },
+    {
+      "slug": "radford-et-al-2021-clip-icml",
+      "label": "Radford et al 2021 CLIP ICML"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-cvpr",
+      "label": "Rombach et al 2022 Latent Diffusion CVPR"
+    },
+    {
+      "slug": "ruiz-et-al-2023-dream-booth-cvpr",
+      "label": "Ruiz et al 2023 DreamBooth CVPR"
+    },
+    {
+      "slug": "saharia-et-al-2022-imagen-neur-ips",
+      "label": "Saharia et al 2022 Imagen NeurIPS"
+    },
+    {
+      "slug": "samuelson-2023-generative-ai-copyright-science",
+      "label": "Samuelson 2023 Generative AI Copyright Science"
+    },
+    {
+      "slug": "schuhmann-et-al-2022-laion-5-b-neur-ips",
+      "label": "Schuhmann et al 2022 LAION-5B NeurIPS"
+    },
+    {
+      "slug": "song-et-al-2021-ddim-iclr",
+      "label": "Song et al 2021 DDIM ICLR"
+    },
+    {
+      "slug": "storyboard-generation",
+      "label": "Storyboard Generation"
+    },
+    {
+      "slug": "style-creator",
+      "label": "Style Creator"
+    },
+    {
+      "slug": "style-reference",
+      "label": "Style Reference"
+    },
+    {
+      "slug": "subscription-system",
+      "label": "Subscription System"
+    },
+    {
+      "slug": "text-encoder",
+      "label": "Text Encoder"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "u-net-architecture",
+      "label": "U-Net Architecture"
+    },
+    {
+      "slug": "uk-cdpa-1988",
+      "label": "UK CDPA 1988"
+    },
+    {
+      "slug": "uk-ipo-ai-ip-consultation-2023",
+      "label": "UK IPO AI IP Consultation 2023"
+    },
+    {
+      "slug": "upscale-tools",
+      "label": "Upscale Tools"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "vary-region",
+      "label": "Vary Region"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "warner-bros-discovery-v-midjourney-2025",
+      "label": "Warner Bros Discovery v Midjourney 2025"
+    },
+    {
+      "slug": "zhang-et-al-2023-control-net-iccv",
+      "label": "Zhang et al 2023 ControlNet ICCV"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL-E"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "label": "Advice for developing GenAI"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

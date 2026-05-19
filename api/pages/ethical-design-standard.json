@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:00ecd3ea842ab96f9c3054711d00223cb665147b54f441115eaa5008b6b8e21c",
+  "title": "Ethical Design Standard",
+  "slug": "ethical-design-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ethical-design-standard",
+  "domain": "spatial-computing",
+  "definition": "Ethical Design Standard is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ieee7000-standard",
+      "label": "Ieee7000 Standard"
+    }
+  ]
+}

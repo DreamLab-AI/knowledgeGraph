@@ -1,21 +1,243 @@
-iri:: http://narrativegoldmine.com/metaverse#InterpretableAI
-uri:: urn:visionclaw:concept:artificial-intelligence:interpretable-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:interpretable-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Interpretable AI
-content-hash:: sha256-12-a55dc6f77488
-legacy-term-id:: AI-0297
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#InterpretableAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:interpretable-ai
 public:: true
+
+# Interpretable AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:445e5d30f9531fcbf05b6a974053617e49730df113dd0fd8461cab44a0439e48",
+  "@type": "Page",
+  "vc:slug": "interpretable-ai",
+  "title": "Interpretable AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:black-box-model",
+      "vc:label": "Black Box Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-tree-approximation",
+      "vc:label": "Decision Tree Approximation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intrinsic-interpretability",
+      "vc:label": "Intrinsic Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-interpretability",
+      "vc:label": "Model Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-transparency",
+      "vc:label": "Model Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a55dc6f77488"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#InterpretableAI"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0297"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Interpretable AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:interpretable-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:interpretable-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:445e5d30f9531fcbf05b6a974053617e49730df113dd0fd8461cab44a0439e48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:interpretable-ai",
+  "@type": "OntologyClass",
+  "label": "Interpretable AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:445e5d30f9531fcbf05b6a974053617e49730df113dd0fd8461cab44a0439e48"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:445e5d30f9531fcbf05b6a974053617e49730df113dd0fd8461cab44a0439e48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:interpretable-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:445e5d30f9531fcbf05b6a974053617e49730df113dd0fd8461cab44a0439e48"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Black Box Model]]",
+      "resolved": "urn:visionflow:linked:black-box-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Tree Approximation]]",
+      "resolved": "urn:visionflow:linked:decision-tree-approximation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Explainable AI]]",
+      "resolved": "urn:visionflow:owl:class:explainable-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Intrinsic Interpretability]]",
+      "resolved": "urn:visionflow:owl:class:intrinsic-interpretability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Interpretability]]",
+      "resolved": "urn:visionflow:owl:class:model-interpretability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Transparency]]",
+      "resolved": "urn:visionflow:owl:class:model-transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:445e5d30f9531fcbf05b6a974053617e49730df113dd0fd8461cab44a0439e48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques.

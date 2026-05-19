@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:90f40c7247da6563b8448537ac11c48d525d0a6dc1330d9720025fc1bb0f566b",
+  "title": "BIM Software",
+  "slug": "bim-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bim-software",
+  "domain": "spatial-computing",
+  "definition": "Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to operations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:design-software",
+      "label": "Design Software"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cad-capabilities",
+        "label": "CAD Capabilities"
+      },
+      {
+        "id": "urn:visionflow:linked:collaboration-tools",
+        "label": "Collaboration Tools"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:construction-coordination",
+        "label": "Construction Coordination"
+      },
+      {
+        "id": "urn:visionflow:linked:facility-management",
+        "label": "Facility Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "label": "3D Modeling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cad-capabilities",
+      "label": "CAD Capabilities"
+    },
+    {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
+      "slug": "construction-coordination",
+      "label": "Construction Coordination"
+    },
+    {
+      "slug": "facility-management",
+      "label": "Facility Management"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "design-software",
+      "label": "Design Software"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bim-virtual-model",
+      "label": "BIM Virtual Model"
+    },
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    }
+  ]
+}

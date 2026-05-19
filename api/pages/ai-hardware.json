@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:d6a2d72f30c3d59db39ddf80de33c6ceaacae66ded9dc47284f9070e4e8ae6f3",
+  "title": "AI Hardware",
+  "slug": "ai-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-hardware",
+  "domain": "artificial-intelligence",
+  "definition": "AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale. These processors feature architectures specifically designed for the matrix operations, parallel processing, and low-precision arithmetic fundamental to modern AI algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "inference-hardware",
+      "label": "Inference Hardware"
+    },
+    {
+      "slug": "npu",
+      "label": "NPU"
+    },
+    {
+      "slug": "neuromorphic-chip",
+      "label": "Neuromorphic Chip"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "tpu",
+      "label": "TPU"
+    }
+  ]
+}

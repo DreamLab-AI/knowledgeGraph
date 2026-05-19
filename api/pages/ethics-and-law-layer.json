@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:ef50d42fe326b2f00a9d1887ba3f89c51ab55fd7a68cbc6607ca71b55ad1f6f2",
+  "title": "Ethics & Law Layer",
+  "slug": "ethics-and-law-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ethics-and-law-layer",
+  "domain": "artificial-intelligence",
+  "definition": "Framework layer defining norms, rights, and regulations for responsible conduct in metaverse environments through compliance mechanisms, ethical AI governance, and legal frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ethical-ai-guidelines",
+        "label": "Ethical AI Guidelines"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-regulation-schema",
+        "label": "Legal Regulation Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-management-system",
+        "label": "Rights Management System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ethical-governance",
+        "label": "Ethical Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-protection",
+        "label": "Rights Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-logging",
+      "label": "Audit Logging"
+    },
+    {
+      "slug": "ethical-ai-guidelines",
+      "label": "Ethical AI Guidelines"
+    },
+    {
+      "slug": "ethical-governance",
+      "label": "Ethical Governance"
+    },
+    {
+      "slug": "ethics-principles",
+      "label": "Ethics Principles"
+    },
+    {
+      "slug": "legal-compliance",
+      "label": "Legal Compliance"
+    },
+    {
+      "slug": "legal-regulation-schema",
+      "label": "Legal Regulation Schema"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "rights-management-system",
+      "label": "Rights Management System"
+    },
+    {
+      "slug": "rights-protection",
+      "label": "Rights Protection"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "governance-architecture",
+      "label": "Governance Architecture"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "regulatory-standards",
+      "label": "Regulatory Standards"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "backlinks": []
+}

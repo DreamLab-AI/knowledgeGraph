@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:10365f15cfb10f09476ed3a082a7a2d71ba9b67ec5b027d0404df9982fe34f6c",
+  "title": "Quaternion Math",
+  "slug": "quaternion-math",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quaternion-math",
+  "domain": "spatial-computing",
+  "definition": "QuaternionMath is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

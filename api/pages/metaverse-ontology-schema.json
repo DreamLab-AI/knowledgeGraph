@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:e9cf98f9ba9e45f80f6d9a7a60679c6a0772a46e5419c4ce5bfee73d8f6cfe52",
+  "title": "Metaverse Ontology Schema",
+  "slug": "metaverse-ontology-schema",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-ontology-schema",
+  "domain": "spatial-computing",
+  "definition": "A formal OWL 2 ontology framework defining the complete taxonomic structure, semantic relationships, axioms, and reasoning rules for metaverse concepts, enabling automated classification, consistency validation, and interoperability across virtual world implementations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:axiom-rules",
+        "label": "Axiom Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-rules",
+        "label": "Inference Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:property-definitions",
+        "label": "Property Definitions"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-constraints",
+        "label": "Validation Constraints"
+      },
+      {
+        "id": "urn:visionflow:owl:class:namespace-declarations",
+        "label": "Namespace Declarations"
+      },
+      {
+        "id": "urn:visionflow:owl:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:owl-2-reasoner",
+        "label": "OWL 2 Reasoner"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-triple-store",
+        "label": "RDF Triple Store"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:ontology-based-data-access",
+        "label": "Ontology-Based Data Access"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "axiom-rules",
+      "label": "Axiom Rules"
+    },
+    {
+      "slug": "inference-rules",
+      "label": "Inference Rules"
+    },
+    {
+      "slug": "iso-iec-21838-top-level-ontology",
+      "label": "ISO IEC 21838 Top Level Ontology"
+    },
+    {
+      "slug": "knowledge-representation-system",
+      "label": "Knowledge Representation System"
+    },
+    {
+      "slug": "ontology-based-data-access",
+      "label": "Ontology-Based Data Access"
+    },
+    {
+      "slug": "owl-2-reasoner",
+      "label": "OWL 2 Reasoner"
+    },
+    {
+      "slug": "property-definitions",
+      "label": "Property Definitions"
+    },
+    {
+      "slug": "rdf-schema",
+      "label": "RDF Schema"
+    },
+    {
+      "slug": "rdf-triple-store",
+      "label": "RDF Triple Store"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "semantic-web-infrastructure",
+      "label": "Semantic Web Infrastructure"
+    },
+    {
+      "slug": "shacl-constraints",
+      "label": "SHACL Constraints"
+    },
+    {
+      "slug": "validation-constraints",
+      "label": "Validation Constraints"
+    },
+    {
+      "slug": "w3-c-owl-2",
+      "label": "W3C OWL 2"
+    },
+    {
+      "slug": "w3-c-rdf-schema",
+      "label": "W3C RDF Schema"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "knowledge-graph-construction",
+      "label": "Knowledge Graph Construction"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "namespace-declarations",
+      "label": "Namespace Declarations"
+    },
+    {
+      "slug": "owl-class-hierarchy",
+      "label": "OWL Class Hierarchy"
+    },
+    {
+      "slug": "skos-vocabulary",
+      "label": "SKOS Vocabulary"
+    },
+    {
+      "slug": "sparql-endpoint",
+      "label": "SPARQL Endpoint"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "glossary-index",
+      "label": "Glossary Index"
+    }
+  ]
+}

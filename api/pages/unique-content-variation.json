@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:e66efe5bbe212b4ee33e20afad3ef5f4b75354fa2599c43c3fd73dc3922fce48",
+  "title": "Unique Content Variation",
+  "slug": "unique-content-variation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:unique-content-variation",
+  "domain": "spatial-computing",
+  "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:generative-content",
+      "label": "Generative Content"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-content",
+      "label": "Generative Content"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ]
+}

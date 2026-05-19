@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a",
+  "title": "Layer Normalisation",
+  "slug": "layer-normalisation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:layer-normalisation",
+  "domain": "artificial-intelligence",
+  "definition": "A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

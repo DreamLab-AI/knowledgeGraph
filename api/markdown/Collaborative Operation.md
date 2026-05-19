@@ -1,22 +1,341 @@
-iri:: http://narrativegoldmine.com/robotics#CollaborativeOperation
-uri:: urn:visionclaw:concept:robotics:collaborative-operation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:collaborative-operation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Collaborative Operation
-content-hash:: sha256-12-57be520000c8
-legacy-term-id:: RB-0948
-status:: draft
-maturity:: draft
-quality-score:: 0.56
-authority-score:: 0.12
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#CollaborativeOperation
+legacy_uri:: urn:visionclaw:concept:robotics:collaborative-operation
 public:: true
-bridges-to:: [[Telecollaboration]]
+
+# Collaborative Operation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668",
+  "@type": "Page",
+  "vc:slug": "collaborative-operation",
+  "title": "Collaborative Operation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:force-feedback",
+      "vc:label": "Force Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "vc:label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-operators",
+      "vc:label": "Human Operators"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:linked:manufacturing-process",
+      "vc:label": "Manufacturing Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:production-flexibility",
+      "vc:label": "Production Flexibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-systems",
+      "vc:label": "Robotic Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-monitoring",
+      "vc:label": "Safety Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:workspace-efficiency",
+      "vc:label": "Workspace Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-robot-interaction",
+      "vc:label": "Human-Robot Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:task-planning",
+      "vc:label": "Task Planning"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.12"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Telecollaboration]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-57be520000c8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#CollaborativeOperation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0948"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Collaborative Operation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.56"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:collaborative-operation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:collaborative-operation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:collaborative-operation",
+  "@type": "OntologyClass",
+  "label": "Collaborative Operation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Collaborative Operation** - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
+  "vc:qualityScore": {
+    "@value": "0.56",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.12",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:manufacturing-process",
+      "vc:label": "Manufacturing Process"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-robot-interaction",
+      "vc:label": "Human-Robot Interaction"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:force-feedback",
+      "vc:label": "Force Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-monitoring",
+      "vc:label": "Safety Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:task-planning",
+      "vc:label": "Task Planning"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:production-flexibility",
+      "vc:label": "Production Flexibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:workspace-efficiency",
+      "vc:label": "Workspace Efficiency"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:collaborative-operation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Force Feedback]]",
+      "resolved": "urn:visionflow:linked:force-feedback",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR (General Data Protection Regulation)]]",
+      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human Operators]]",
+      "resolved": "urn:visionflow:linked:human-operators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manufacturing Process]]",
+      "resolved": "urn:visionflow:linked:manufacturing-process",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Production Flexibility]]",
+      "resolved": "urn:visionflow:linked:production-flexibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotic Systems]]",
+      "resolved": "urn:visionflow:linked:robotic-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Monitoring]]",
+      "resolved": "urn:visionflow:linked:safety-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Workspace Efficiency]]",
+      "resolved": "urn:visionflow:linked:workspace-efficiency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human-Robot Interaction]]",
+      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Task Planning]]",
+      "resolved": "urn:visionflow:owl:class:task-planning",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Collaborative Operation** - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.

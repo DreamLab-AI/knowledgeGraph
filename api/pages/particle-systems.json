@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:69a22fc7923c8a5e2de5752a70cf941c6723f77b4f7fee86696f907f895c2aa5",
+  "title": "Particle Systems",
+  "slug": "particle-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:particle-systems",
+  "domain": "spatial-computing",
+  "definition": "The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:vfx-tools",
+      "label": "VFX Tools"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:real-time-vfx",
+        "label": "Real Time VFX"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "real-time-vfx",
+      "label": "Real Time VFX"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "vfx-tools",
+      "label": "VFX Tools"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    }
+  ]
+}

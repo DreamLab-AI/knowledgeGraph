@@ -1,21 +1,317 @@
-iri:: http://narrativegoldmine.com/blockchain#BlockchainInfrastructure
-uri:: urn:visionclaw:concept:blockchain:blockchain-infrastructure
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:blockchain-infrastructure
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Blockchain Infrastructure
-content-hash:: sha256-12-5c21bf6e0087
-legacy-term-id:: BC-7003
-status:: active
-maturity:: production
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#BlockchainInfrastructure
+legacy_uri:: urn:visionclaw:concept:blockchain:blockchain-infrastructure
 public:: true
+
+# Blockchain Infrastructure
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a",
+  "@type": "Page",
+  "vc:slug": "blockchain-infrastructure",
+  "title": "Blockchain Infrastructure",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-energy-optimisation",
+      "vc:label": "AI Energy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-node",
+      "vc:label": "Blockchain Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems-infrastructure",
+      "vc:label": "Distributed Systems Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2-scaling",
+      "vc:label": "Layer 2 Scaling"
+    },
+    {
+      "@id": "urn:visionflow:linked:web3-infrastructure",
+      "vc:label": "Web3 Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-application",
+      "vc:label": "Blockchain Application"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "vc:label": "Peer-to-Peer Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5c21bf6e0087"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#BlockchainInfrastructure"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-7003"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Blockchain Infrastructure"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-infrastructure"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-infrastructure"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
+  "@type": "OntologyClass",
+  "label": "Blockchain Infrastructure",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:distributed-systems-infrastructure",
+      "vc:label": "Distributed Systems Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "production",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-application",
+      "vc:label": "Blockchain Application"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "vc:label": "Peer-to-Peer Network"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:ai-energy-optimisation",
+      "vc:label": "AI Energy Optimisation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-infrastructure:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Energy Optimisation]]",
+      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Node]]",
+      "resolved": "urn:visionflow:linked:blockchain-node",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Systems Infrastructure]]",
+      "resolved": "urn:visionflow:linked:distributed-systems-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2 Scaling]]",
+      "resolved": "urn:visionflow:linked:layer-2-scaling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Web3 Infrastructure]]",
+      "resolved": "urn:visionflow:linked:web3-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Application]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-application",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross-Chain Bridge]]",
+      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Peer-to-Peer Network]]",
+      "resolved": "urn:visionflow:owl:class:peer-to-peer-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.

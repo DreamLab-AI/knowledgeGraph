@@ -1,21 +1,426 @@
-iri:: http://narrativegoldmine.com/robotics#HumanRobotInteraction
-uri:: urn:visionclaw:concept:robotics:human-robot-interaction
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:human-robot-interaction
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Human Robot Interaction
-content-hash:: sha256-12-7056f5624fd9
-legacy-term-id:: RB-3003
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#HumanRobotInteraction
+legacy_uri:: urn:visionclaw:concept:robotics:human-robot-interaction
 public:: true
+
+# Human Robot Interaction
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87",
+  "@type": "Page",
+  "vc:slug": "human-robot-interaction",
+  "title": "Human Robot Interaction",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:authentication",
+      "vc:label": "Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enhanced-by",
+      "vc:label": "dt:enhancedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-presented-in",
+      "vc:label": "dt:presentedIn"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-secured-by",
+      "vc:label": "dt:securedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-trained-via",
+      "vc:label": "dt:trainedVia"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-uses",
+      "vc:label": "dt:uses"
+    },
+    {
+      "@id": "urn:visionflow:linked:enables-collaboration",
+      "vc:label": "enablesCollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensures-safety",
+      "vc:label": "ensuresSafety"
+    },
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "GestureRecognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:intuitive-interface",
+      "vc:label": "IntuitiveInterface"
+    },
+    {
+      "@id": "urn:visionflow:linked:provides-interface",
+      "vc:label": "providesInterface"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-engineering",
+      "vc:label": "RoboticsEngineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-metrics",
+      "vc:label": "SafetyMetrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-metrics",
+      "vc:label": "SafetyMetrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-protocol",
+      "vc:label": "SafetyProtocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:shared-workspace",
+      "vc:label": "SharedWorkspace"
+    },
+    {
+      "@id": "urn:visionflow:linked:teach-pendant",
+      "vc:label": "TeachPendant"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-modality",
+      "vc:label": "usesModality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaborative-robot",
+      "vc:label": "CollaborativeRobot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptic-feedback",
+      "vc:label": "HapticFeedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "MachineLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:manipulator-arm",
+      "vc:label": "ManipulatorArm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "NaturalLanguageProcessing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-reality",
+      "vc:label": "VirtualReality"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7056f5624fd9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#HumanRobotInteraction"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-3003"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Human Robot Interaction"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:human-robot-interaction"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:human-robot-interaction"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:human-robot-interaction",
+  "@type": "OntologyClass",
+  "label": "Human Robot Interaction",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces. HRI combines [[RoboticsEngineering|robotics]], [[ArtificialIntelligence|AI]], human factors engineering, and psychology to design robots with natural interaction modalities—gesture recognition, [[NaturalLanguageProcessing]], [[HapticFeedback]]—enabling intuitive collaboration. Applications span [[ManipulatorArm|collaborative manipulation]], [[SafetyMetrics|safety-assured]] workspaces, healthcare assistance, and social robotics.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:safety-metrics",
+      "vc:label": "SafetyMetrics"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligence"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:human-robot-interaction:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Authentication]]",
+      "resolved": "urn:visionflow:linked:authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enhancedBy]]",
+      "resolved": "urn:visionflow:linked:dt-enhanced-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:presentedIn]]",
+      "resolved": "urn:visionflow:linked:dt-presented-in",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:securedBy]]",
+      "resolved": "urn:visionflow:linked:dt-secured-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:trainedVia]]",
+      "resolved": "urn:visionflow:linked:dt-trained-via",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:uses]]",
+      "resolved": "urn:visionflow:linked:dt-uses",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[enablesCollaboration]]",
+      "resolved": "urn:visionflow:linked:enables-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ensuresSafety]]",
+      "resolved": "urn:visionflow:linked:ensures-safety",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GestureRecognition]]",
+      "resolved": "urn:visionflow:linked:gesture-recognition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IntuitiveInterface]]",
+      "resolved": "urn:visionflow:linked:intuitive-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[providesInterface]]",
+      "resolved": "urn:visionflow:linked:provides-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RoboticsEngineering|robotics]]",
+      "resolved": "urn:visionflow:linked:robotics-engineering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SafetyMetrics]]",
+      "resolved": "urn:visionflow:linked:safety-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SafetyMetrics|safety-assured]]",
+      "resolved": "urn:visionflow:linked:safety-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SafetyProtocol]]",
+      "resolved": "urn:visionflow:linked:safety-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SharedWorkspace]]",
+      "resolved": "urn:visionflow:linked:shared-workspace",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TeachPendant]]",
+      "resolved": "urn:visionflow:linked:teach-pendant",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesModality]]",
+      "resolved": "urn:visionflow:linked:uses-modality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligence|AI]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CollaborativeRobot]]",
+      "resolved": "urn:visionflow:owl:class:collaborative-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[HapticFeedback]]",
+      "resolved": "urn:visionflow:owl:class:haptic-feedback",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MachineLearning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ManipulatorArm|collaborative manipulation]]",
+      "resolved": "urn:visionflow:owl:class:manipulator-arm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NaturalLanguageProcessing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualReality]]",
+      "resolved": "urn:visionflow:owl:class:virtual-reality",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces. HRI combines [[RoboticsEngineering|robotics]], [[ArtificialIntelligence|AI]], human factors engineering, and psychology to design robots with natural interaction modalities—gesture recognition, [[NaturalLanguageProcessing]], [[HapticFeedback]]—enabling intuitive collaboration. Applications span [[ManipulatorArm|collaborative manipulation]], [[SafetyMetrics|safety-assured]] workspaces, healthcare assistance, and social robotics.

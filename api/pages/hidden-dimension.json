@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:0b42c43ff930cdef89be8fb732f257f08d1c18cb7f187b542deb762751f48392",
+  "title": "Hidden Dimension",
+  "slug": "hidden-dimension",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hidden-dimension",
+  "domain": "spatial-computing",
+  "definition": "The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:hyperparameter",
+      "label": "Hyperparameter"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

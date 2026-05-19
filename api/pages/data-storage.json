@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:8b1d08a9237792138ac13435652682dfc07b6ea113f4c67edc0b20accff5ec7f",
+  "title": "Data Storage",
+  "slug": "data-storage",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-storage",
+  "domain": "infrastructure",
+  "definition": "Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use. It includes various storage types such as file, block, and object storage, along with the hardware and software infrastructure that ensures data persistence, accessibility, availability, and protection against loss or corruption.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure-component",
+      "label": "Infrastructure Component"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:backup-and-recovery",
+        "label": "Backup and Recovery"
+      },
+      {
+        "id": "urn:visionflow:linked:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:data-redundancy",
+        "label": "Data Redundancy"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-architecture",
+        "label": "Storage Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "backup-and-recovery",
+      "label": "Backup and Recovery"
+    },
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "data-persistence",
+      "label": "Data Persistence"
+    },
+    {
+      "slug": "data-redundancy",
+      "label": "Data Redundancy"
+    },
+    {
+      "slug": "storage-architecture",
+      "label": "Storage Architecture"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "infrastructure-component",
+      "label": "Infrastructure Component"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "etsi-domain-data",
+      "label": "ETSI Domain Data"
+    },
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    }
+  ]
+}

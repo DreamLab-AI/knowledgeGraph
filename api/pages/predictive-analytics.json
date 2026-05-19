@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:42a3c046f67c5563f9a001870011b1c35de878a0448c8a857c1bdf27b9a13e1d",
+  "title": "Predictive Analytics",
+  "slug": "predictive-analytics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:predictive-analytics",
+  "domain": "artificial-intelligence",
+  "definition": "PredictiveAnalytics is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "behavioral-learning",
+      "label": "Behavioral Learning"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    },
+    {
+      "slug": "etsi-domain-data",
+      "label": "ETSI Domain Data"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

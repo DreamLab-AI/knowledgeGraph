@@ -1,0 +1,1596 @@
+{
+  "id": "urn:visionflow:page:0a615394edb05999533fc4a6f35f83bbba4c7517f5fd1d6d5b05e3f3c88cde86",
+  "title": "Bitcoin Mining",
+  "slug": "bitcoin-mining",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-mining",
+  "domain": "blockchain",
+  "definition": "**Bitcoin Mining** is the [[proof-of-work]] [[Nakamoto consensus]] process by which the [[Bitcoin]] [[blockchain]] is extended, secured, and monetised through competitive computation of [[SHA-256]] double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-adjusted [[difficulty target]] (currently corresponding to ~10^23 to ~10^24 hashes per block), executed by purpose-built [[ASIC]] (Application-Specific Integrated Circuit) hardware operating at industrial scale in geographically-distributed data centres that as of Q1 2026 collectively dissipate ~700-1000 EH/s (exahashes/second, ~10^21 hashes/second), consume approximately 175-200 TWh/year of electricity (CBECI midpoint), and generate roughly 144 new [[block]]s per day each carrying a [[block subsidy]] of **3.125 BTC** (since the fourth [[halving]] on **20 April 2024** at block 840,000, reduced from the prior 6.25 BTC under the geometric series 50 \u2192 25 \u2192 12.5 \u2192 6.25 \u2192 3.125 \u2192 ... \u2192 0 BTC scheduled to terminate near block 6,930,000 around 2140) plus cumulative [[transaction fees]] from included [[mempool]] entries (a fee market increasingly material with [[Ordinals]]/[[Inscriptions]]/[[Rune",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cryptographic-mining",
+      "label": "Cryptographic Mining"
+    },
+    {
+      "id": "urn:visionflow:linked:industrial-process",
+      "label": "Industrial Process"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:proof-of-work",
+      "label": "Proof-of-Work"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:visionflow:linked:nonce-search",
+        "label": "Nonce Search"
+      },
+      {
+        "id": "urn:visionflow:linked:sha-256-hashing",
+        "label": "SHA-256 Hashing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:visionflow:owl:class:coinbase-transaction",
+        "label": "Coinbase Transaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:difficulty-target",
+        "label": "Difficulty Target"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asic-hardware",
+        "label": "ASIC Hardware"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-full-node",
+        "label": "Bitcoin Full Node"
+      },
+      {
+        "id": "urn:visionflow:linked:cooling-system",
+        "label": "Cooling System"
+      },
+      {
+        "id": "urn:visionflow:linked:electricity",
+        "label": "Electricity"
+      },
+      {
+        "id": "urn:visionflow:linked:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:visionflow:linked:stratum-protocol",
+        "label": "Stratum Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-issuance",
+        "label": "Bitcoin Issuance"
+      },
+      {
+        "id": "urn:visionflow:linked:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:visionflow:linked:demand-response-services",
+        "label": "Demand Response Services"
+      },
+      {
+        "id": "urn:visionflow:linked:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-settlement",
+        "label": "Permissionless Settlement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:coinbase-reward-distribution",
+        "label": "Coinbase Reward Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:difficulty-adjustment-algorithm",
+        "label": "Difficulty Adjustment Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:halving-schedule",
+        "label": "Halving Schedule"
+      },
+      {
+        "id": "urn:visionflow:owl:class:longest-chain-rule",
+        "label": "Longest-Chain Rule"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "2-pic1-pump",
+      "label": "2PIC1Pump"
+    },
+    {
+      "slug": "3nm",
+      "label": "3nm"
+    },
+    {
+      "slug": "4-coincident-peak",
+      "label": "4-Coincident Peak"
+    },
+    {
+      "slug": "5nm",
+      "label": "5nm"
+    },
+    {
+      "slug": "adam-back",
+      "label": "Adam Back"
+    },
+    {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "ai-hpc",
+      "label": "AI HPC"
+    },
+    {
+      "slug": "ai-hpc-pivot",
+      "label": "AI HPC Pivot"
+    },
+    {
+      "slug": "alex-de-vries",
+      "label": "Alex de Vries"
+    },
+    {
+      "slug": "alex-de-vries-digiconomist",
+      "label": "Alex de Vries (Digiconomist)"
+    },
+    {
+      "slug": "andrew-webber",
+      "label": "Andrew Webber"
+    },
+    {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
+      "slug": "application-specific-integrated-circuit",
+      "label": "Application-Specific Integrated Circuit"
+    },
+    {
+      "slug": "argo-blockchain",
+      "label": "Argo Blockchain"
+    },
+    {
+      "slug": "argo-blockchain-plc",
+      "label": "Argo Blockchain plc"
+    },
+    {
+      "slug": "arpu-per-terahash",
+      "label": "ARPU per terahash"
+    },
+    {
+      "slug": "art-forz",
+      "label": "ArtForz"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "asic-hardware",
+      "label": "ASIC Hardware"
+    },
+    {
+      "slug": "asic-manufacturer",
+      "label": "ASIC Manufacturer"
+    },
+    {
+      "slug": "asicboost",
+      "label": "ASICBoost"
+    },
+    {
+      "slug": "auradine",
+      "label": "Auradine"
+    },
+    {
+      "slug": "avalon",
+      "label": "Avalon"
+    },
+    {
+      "slug": "b200",
+      "label": "B200"
+    },
+    {
+      "slug": "back-2002-hashcash",
+      "label": "Back 2002 Hashcash"
+    },
+    {
+      "slug": "bakken",
+      "label": "Bakken"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "bcoin",
+      "label": "Bcoin"
+    },
+    {
+      "slug": "bhutan",
+      "label": "Bhutan"
+    },
+    {
+      "slug": "binance-pool",
+      "label": "Binance Pool"
+    },
+    {
+      "slug": "bip-300-301",
+      "label": "BIP 300/301"
+    },
+    {
+      "slug": "bip-34",
+      "label": "BIP 34"
+    },
+    {
+      "slug": "bip-9",
+      "label": "BIP 9"
+    },
+    {
+      "slug": "bip-91",
+      "label": "BIP 91"
+    },
+    {
+      "slug": "bit-mining",
+      "label": "BIT Mining"
+    },
+    {
+      "slug": "bitaxe",
+      "label": "Bitaxe"
+    },
+    {
+      "slug": "bitcoin-core",
+      "label": "Bitcoin Core"
+    },
+    {
+      "slug": "bitcoin-core-reference-implementation",
+      "label": "Bitcoin Core Reference Implementation"
+    },
+    {
+      "slug": "bitcoin-energy-consumption-index",
+      "label": "Bitcoin Energy Consumption Index"
+    },
+    {
+      "slug": "bitcoin-full-node",
+      "label": "Bitcoin Full Node"
+    },
+    {
+      "slug": "bitcoin-issuance",
+      "label": "Bitcoin Issuance"
+    },
+    {
+      "slug": "bitcoin-knots",
+      "label": "Bitcoin Knots"
+    },
+    {
+      "slug": "bitcoin-network-security",
+      "label": "Bitcoin Network Security"
+    },
+    {
+      "slug": "bitcoin-pizza-day",
+      "label": "Bitcoin Pizza Day"
+    },
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
+      "slug": "bitdeer-technologies",
+      "label": "Bitdeer Technologies"
+    },
+    {
+      "slug": "bitfarms",
+      "label": "Bitfarms"
+    },
+    {
+      "slug": "bitfury",
+      "label": "Bitfury"
+    },
+    {
+      "slug": "bitkey",
+      "label": "Bitkey"
+    },
+    {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "bitmain-2024-antminer-s21-documentation",
+      "label": "Bitmain 2024 Antminer S21 Documentation"
+    },
+    {
+      "slug": "block-subsidy",
+      "label": "block subsidy"
+    },
+    {
+      "slug": "blockchain-security",
+      "label": "Blockchain Security"
+    },
+    {
+      "slug": "bluebird-mining-ventures",
+      "label": "Bluebird Mining Ventures"
+    },
+    {
+      "slug": "bob-mc-elrath",
+      "label": "Bob McElrath"
+    },
+    {
+      "slug": "bonneau-et-al-2015",
+      "label": "Bonneau et al. 2015"
+    },
+    {
+      "slug": "bonneau-et-al-2015-so-k-bitcoin-cryptocurrencies",
+      "label": "Bonneau et al 2015 SoK Bitcoin Cryptocurrencies"
+    },
+    {
+      "slug": "brad-mills",
+      "label": "Brad Mills"
+    },
+    {
+      "slug": "braidpool",
+      "label": "Braidpool"
+    },
+    {
+      "slug": "braiins",
+      "label": "Braiins"
+    },
+    {
+      "slug": "braiins-2018-2024-stratum-v2-specification",
+      "label": "Braiins 2018-2024 Stratum V2 Specification"
+    },
+    {
+      "slug": "braiins-pool",
+      "label": "Braiins Pool"
+    },
+    {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
+      "slug": "bryan-zhang",
+      "label": "Bryan Zhang"
+    },
+    {
+      "slug": "btc-com",
+      "label": "BTC.com"
+    },
+    {
+      "slug": "btcd",
+      "label": "btcd"
+    },
+    {
+      "slug": "budish-2018-economic-limits-of-bitcoin",
+      "label": "Budish 2018 Economic Limits of Bitcoin"
+    },
+    {
+      "slug": "butterfly-labs",
+      "label": "Butterfly Labs"
+    },
+    {
+      "slug": "cambridge-bitcoin-electricity-consumption-index",
+      "label": "Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
+    },
+    {
+      "slug": "cambridge-judge-business-school",
+      "label": "Cambridge Judge Business School"
+    },
+    {
+      "slug": "canaan",
+      "label": "Canaan"
+    },
+    {
+      "slug": "canada",
+      "label": "Canada"
+    },
+    {
+      "slug": "carbon-footprint",
+      "label": "carbon footprint"
+    },
+    {
+      "slug": "carlsten-kalodner-weinberg-narayanan-2016-instability-without-block-reward",
+      "label": "Carlsten Kalodner Weinberg Narayanan 2016 Instability Without Block Reward"
+    },
+    {
+      "slug": "casey-rodarmor",
+      "label": "Casey Rodarmor"
+    },
+    {
+      "slug": "cathedra-bitcoin",
+      "label": "Cathedra Bitcoin"
+    },
+    {
+      "slug": "catherine-mulligan",
+      "label": "Catherine Mulligan"
+    },
+    {
+      "slug": "cbeci",
+      "label": "CBECI"
+    },
+    {
+      "slug": "cbeci-cambridge-bitcoin-electricity-consumption-index",
+      "label": "CBECI Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
+      "slug": "cbeci-methodology",
+      "label": "CBECI Methodology"
+    },
+    {
+      "slug": "ccaf-2023-mining-map-update",
+      "label": "CCAF 2023 Mining Map Update"
+    },
+    {
+      "slug": "ccaf-2024-3rd-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 3rd Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "china",
+      "label": "China"
+    },
+    {
+      "slug": "cipher-mining",
+      "label": "Cipher Mining"
+    },
+    {
+      "slug": "ckpool",
+      "label": "CKpool"
+    },
+    {
+      "slug": "clean-spark",
+      "label": "CleanSpark"
+    },
+    {
+      "slug": "coin-ex",
+      "label": "CoinEx"
+    },
+    {
+      "slug": "coin-shares-2024-bitcoin-mining-report",
+      "label": "CoinShares 2024 Bitcoin Mining Report"
+    },
+    {
+      "slug": "coinbase",
+      "label": "coinbase"
+    },
+    {
+      "slug": "coinbase-reward-distribution",
+      "label": "Coinbase Reward Distribution"
+    },
+    {
+      "slug": "computer-hardware-domain",
+      "label": "ComputerHardwareDomain"
+    },
+    {
+      "slug": "conoco-phillips",
+      "label": "ConocoPhillips"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "cooling-system",
+      "label": "Cooling System"
+    },
+    {
+      "slug": "core-scientific",
+      "label": "Core Scientific"
+    },
+    {
+      "slug": "core-weave",
+      "label": "CoreWeave"
+    },
+    {
+      "slug": "cpu-mining",
+      "label": "CPU mining"
+    },
+    {
+      "slug": "cpu-mining",
+      "label": "CPU Mining"
+    },
+    {
+      "slug": "crusoe-energy",
+      "label": "Crusoe Energy"
+    },
+    {
+      "slug": "cryptographic-mining",
+      "label": "Cryptographic Mining"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "csv",
+      "label": "CSV"
+    },
+    {
+      "slug": "ctv",
+      "label": "CTV"
+    },
+    {
+      "slug": "curtailed-renewables",
+      "label": "Curtailed renewables"
+    },
+    {
+      "slug": "curtailed-renewables",
+      "label": "curtailed renewables"
+    },
+    {
+      "slug": "cynthia-dwork",
+      "label": "Cynthia Dwork"
+    },
+    {
+      "slug": "cyril-monnet",
+      "label": "Cyril Monnet"
+    },
+    {
+      "slug": "cyril-monnet-et-al",
+      "label": "Cyril Monnet et al."
+    },
+    {
+      "slug": "datum",
+      "label": "DATUM"
+    },
+    {
+      "slug": "dcg",
+      "label": "DCG"
+    },
+    {
+      "slug": "de-vries-2018-2021-2022",
+      "label": "de Vries 2018, 2021, 2022"
+    },
+    {
+      "slug": "de-vries-2018-2021-bitcoin-growing-energy-problem",
+      "label": "de Vries 2018 2021 Bitcoin Growing Energy Problem"
+    },
+    {
+      "slug": "decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "slug": "demand",
+      "label": "DEMAND"
+    },
+    {
+      "slug": "demand-pool",
+      "label": "DEMAND Pool"
+    },
+    {
+      "slug": "demand-response",
+      "label": "demand response"
+    },
+    {
+      "slug": "demand-response",
+      "label": "Demand Response"
+    },
+    {
+      "slug": "demand-response-services",
+      "label": "Demand Response Services"
+    },
+    {
+      "slug": "difficulty-adjustment-algorithm",
+      "label": "Difficulty Adjustment Algorithm"
+    },
+    {
+      "slug": "digital-currency-group",
+      "label": "Digital Currency Group"
+    },
+    {
+      "slug": "dmg-blockchain-solutions",
+      "label": "DMG Blockchain Solutions"
+    },
+    {
+      "slug": "double-hashing",
+      "label": "Double Hashing"
+    },
+    {
+      "slug": "double-spend-prevention",
+      "label": "Double-Spend Prevention"
+    },
+    {
+      "slug": "drivechain",
+      "label": "Drivechain"
+    },
+    {
+      "slug": "druk-holdings",
+      "label": "Druk Holdings"
+    },
+    {
+      "slug": "dwork-naor-1992-pricing-via-processing",
+      "label": "Dwork Naor 1992 Pricing via Processing"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "electrical-grid",
+      "label": "Electrical Grid"
+    },
+    {
+      "slug": "electricity",
+      "label": "Electricity"
+    },
+    {
+      "slug": "eligius",
+      "label": "Eligius"
+    },
+    {
+      "slug": "emin-g-n-sirer",
+      "label": "Emin G\u00fcn Sirer"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "energy consumption"
+    },
+    {
+      "slug": "energy-domain",
+      "label": "EnergyDomain"
+    },
+    {
+      "slug": "energy-grid-stability",
+      "label": "Energy Grid Stability"
+    },
+    {
+      "slug": "ercot",
+      "label": "ERCOT"
+    },
+    {
+      "slug": "ercot-2023-2024-bitcoin-mining-load-integration",
+      "label": "ERCOT 2023-2024 Bitcoin Mining Load Integration"
+    },
+    {
+      "slug": "eric-budish",
+      "label": "Eric Budish"
+    },
+    {
+      "slug": "eric-budish-2018-2024-revised",
+      "label": "Eric Budish 2018, 2024 revised"
+    },
+    {
+      "slug": "eric-masanet",
+      "label": "Eric Masanet"
+    },
+    {
+      "slug": "extranonce",
+      "label": "extranonce"
+    },
+    {
+      "slug": "exxon-mobil",
+      "label": "ExxonMobil"
+    },
+    {
+      "slug": "eyal-2015-miners-dilemma",
+      "label": "Eyal 2015 Miners Dilemma"
+    },
+    {
+      "slug": "eyal-sirer-2014-majority-is-not-enough-selfish-mining",
+      "label": "Eyal Sirer 2014 Majority Is Not Enough Selfish Mining"
+    },
+    {
+      "slug": "f2-pool",
+      "label": "F2Pool"
+    },
+    {
+      "slug": "field-programmable-gate-array",
+      "label": "Field-Programmable Gate Array"
+    },
+    {
+      "slug": "flare-gas",
+      "label": "flare gas"
+    },
+    {
+      "slug": "flare-gas",
+      "label": "Flare gas"
+    },
+    {
+      "slug": "forrest-voight",
+      "label": "Forrest Voight"
+    },
+    {
+      "slug": "foundry",
+      "label": "Foundry"
+    },
+    {
+      "slug": "foundry-usa-pool",
+      "label": "Foundry USA Pool"
+    },
+    {
+      "slug": "fpga-mining",
+      "label": "FPGA mining"
+    },
+    {
+      "slug": "galaxy-digital",
+      "label": "Galaxy Digital"
+    },
+    {
+      "slug": "game-theory-domain",
+      "label": "GameTheoryDomain"
+    },
+    {
+      "slug": "geothermal",
+      "label": "Geothermal"
+    },
+    {
+      "slug": "gpu-mining",
+      "label": "GPU mining"
+    },
+    {
+      "slug": "gpu-mining-ethereum",
+      "label": "GPU Mining Ethereum"
+    },
+    {
+      "slug": "great-migration",
+      "label": "Great Migration"
+    },
+    {
+      "slug": "greenhouse-gas-emissions-index",
+      "label": "Greenhouse Gas Emissions Index"
+    },
+    {
+      "slug": "greenidge-generation",
+      "label": "Greenidge Generation"
+    },
+    {
+      "slug": "h200",
+      "label": "H200"
+    },
+    {
+      "slug": "hal-finney",
+      "label": "Hal Finney"
+    },
+    {
+      "slug": "halving-schedule",
+      "label": "Halving Schedule"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "hash-rate",
+      "label": "Hash Rate"
+    },
+    {
+      "slug": "hashboards",
+      "label": "Hashboards"
+    },
+    {
+      "slug": "hashboards",
+      "label": "hashboards"
+    },
+    {
+      "slug": "heatcore",
+      "label": "Heatcore"
+    },
+    {
+      "slug": "hive-digital",
+      "label": "Hive Digital"
+    },
+    {
+      "slug": "hive-digital-technologies",
+      "label": "Hive Digital Technologies"
+    },
+    {
+      "slug": "houy-2014-bitcoin-mining-game",
+      "label": "Houy 2014 Bitcoin Mining Game"
+    },
+    {
+      "slug": "houy-2022",
+      "label": "Houy 2022"
+    },
+    {
+      "slug": "houy-2022-bitcoin-mining-optimal-strategies",
+      "label": "Houy 2022 Bitcoin Mining Optimal Strategies"
+    },
+    {
+      "slug": "hut-8",
+      "label": "Hut 8"
+    },
+    {
+      "slug": "hut-8-mining",
+      "label": "Hut 8 Mining"
+    },
+    {
+      "slug": "iceland",
+      "label": "Iceland"
+    },
+    {
+      "slug": "iea-2024-electricity-analysis-forecast",
+      "label": "IEA 2024 Electricity Analysis Forecast"
+    },
+    {
+      "slug": "immersion-cooling",
+      "label": "Immersion Cooling"
+    },
+    {
+      "slug": "immersion-cooling",
+      "label": "immersion cooling"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "industrial-process",
+      "label": "Industrial Process"
+    },
+    {
+      "slug": "industrial-process",
+      "label": "industrial process"
+    },
+    {
+      "slug": "inscriptions",
+      "label": "Inscriptions"
+    },
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
+      "slug": "intel-bmz2",
+      "label": "Intel BMZ2"
+    },
+    {
+      "slug": "iohk",
+      "label": "IOHK"
+    },
+    {
+      "slug": "iris-energy",
+      "label": "Iris Energy"
+    },
+    {
+      "slug": "issuance-schedule",
+      "label": "issuance schedule"
+    },
+    {
+      "slug": "ittay-eyal",
+      "label": "Ittay Eyal"
+    },
+    {
+      "slug": "ittay-eyal-2015",
+      "label": "Ittay Eyal 2015"
+    },
+    {
+      "slug": "jai-energy",
+      "label": "JAI Energy"
+    },
+    {
+      "slug": "jihan-wu",
+      "label": "Jihan Wu"
+    },
+    {
+      "slug": "joseph-bonneau-et-al-2014",
+      "label": "Joseph Bonneau et al. 2014"
+    },
+    {
+      "slug": "kaspa-mining",
+      "label": "Kaspa Mining"
+    },
+    {
+      "slug": "kazakhstan",
+      "label": "Kazakhstan"
+    },
+    {
+      "slug": "kn-cminer",
+      "label": "KnCMiner"
+    },
+    {
+      "slug": "knots",
+      "label": "Knots"
+    },
+    {
+      "slug": "laszlo-hanyecz",
+      "label": "Laszlo Hanyecz"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "lex-murray-2022",
+      "label": "Lex Murray 2022"
+    },
+    {
+      "slug": "libbitcoin",
+      "label": "libbitcoin"
+    },
+    {
+      "slug": "liu-he",
+      "label": "Liu He"
+    },
+    {
+      "slug": "load-balancing",
+      "label": "load balancing"
+    },
+    {
+      "slug": "longest-chain",
+      "label": "longest-chain"
+    },
+    {
+      "slug": "luke-dashjr",
+      "label": "Luke Dashjr"
+    },
+    {
+      "slug": "luxor-pool",
+      "label": "Luxor Pool"
+    },
+    {
+      "slug": "luxor-technology",
+      "label": "Luxor Technology"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "mara-pool",
+      "label": "MARA Pool"
+    },
+    {
+      "slug": "marathon-digital",
+      "label": "Marathon Digital"
+    },
+    {
+      "slug": "marathon-digital-holdings",
+      "label": "Marathon Digital Holdings"
+    },
+    {
+      "slug": "marek-palatinus",
+      "label": "Marek Palatinus"
+    },
+    {
+      "slug": "masanet-et-al-2019",
+      "label": "Masanet et al. 2019"
+    },
+    {
+      "slug": "masanet-shehabi-2019-implausible-projections-bitcoin",
+      "label": "Masanet Shehabi 2019 Implausible Projections Bitcoin"
+    },
+    {
+      "slug": "masanet-shehabi-et-al-2019",
+      "label": "Masanet, Shehabi, et al. 2019"
+    },
+    {
+      "slug": "merge-mining",
+      "label": "merge mining"
+    },
+    {
+      "slug": "merkle-root-construction",
+      "label": "Merkle Root Construction"
+    },
+    {
+      "slug": "micree-zhan",
+      "label": "Micree Zhan"
+    },
+    {
+      "slug": "micro-bt",
+      "label": "MicroBT"
+    },
+    {
+      "slug": "mining-rig",
+      "label": "mining rig"
+    },
+    {
+      "slug": "mint-green",
+      "label": "MintGreen"
+    },
+    {
+      "slug": "monero-random-x",
+      "label": "Monero RandomX"
+    },
+    {
+      "slug": "moni-naor",
+      "label": "Moni Naor"
+    },
+    {
+      "slug": "mora-et-al-2018",
+      "label": "Mora et al. 2018"
+    },
+    {
+      "slug": "mora-et-al-2018-bitcoin-emissions-2-degrees",
+      "label": "Mora et al 2018 Bitcoin Emissions 2 Degrees"
+    },
+    {
+      "slug": "murray-2022",
+      "label": "Murray 2022"
+    },
+    {
+      "slug": "murray-yu-and-wickes-2022",
+      "label": "Murray, Yu, & Wickes 2022"
+    },
+    {
+      "slug": "murray-yu-wickes-2022-joule-bitcoin-mining-cost",
+      "label": "Murray Yu Wickes 2022 Joule Bitcoin Mining Cost"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "ncc-group",
+      "label": "NCC Group"
+    },
+    {
+      "slug": "ncc-group-2022-2024-cryptocurrency-mining-security",
+      "label": "NCC Group 2022-2024 Cryptocurrency Mining Security"
+    },
+    {
+      "slug": "network-connectivity",
+      "label": "Network Connectivity"
+    },
+    {
+      "slug": "new-york-state",
+      "label": "New York State"
+    },
+    {
+      "slug": "newcastle",
+      "label": "Newcastle"
+    },
+    {
+      "slug": "nicolas-houy",
+      "label": "Nicolas Houy"
+    },
+    {
+      "slug": "nicolas-houy-2014-2022",
+      "label": "Nicolas Houy 2014, 2022"
+    },
+    {
+      "slug": "nonce-search",
+      "label": "Nonce Search"
+    },
+    {
+      "slug": "northern-data",
+      "label": "Northern Data"
+    },
+    {
+      "slug": "northwestern-university",
+      "label": "Northwestern University"
+    },
+    {
+      "slug": "nvidia-h100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "ocean-xyz",
+      "label": "Ocean.xyz"
+    },
+    {
+      "slug": "ofac-compliant-block",
+      "label": "OFAC-compliant block"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "p2-pool",
+      "label": "P2Pool"
+    },
+    {
+      "slug": "palatinus-2012-stratum-v1-specification",
+      "label": "Palatinus 2012 Stratum V1 Specification"
+    },
+    {
+      "slug": "paolo-tasca",
+      "label": "Paolo Tasca"
+    },
+    {
+      "slug": "paraguay",
+      "label": "Paraguay"
+    },
+    {
+      "slug": "people-s-bank-of-china",
+      "label": "People's Bank of China"
+    },
+    {
+      "slug": "permissionless-settlement",
+      "label": "Permissionless Settlement"
+    },
+    {
+      "slug": "power-purchase-agreement",
+      "label": "Power Purchase Agreement"
+    },
+    {
+      "slug": "proof-of-space",
+      "label": "Proof-of-Space"
+    },
+    {
+      "slug": "proto",
+      "label": "Proto"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "renewable energy"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    },
+    {
+      "slug": "riot-platforms",
+      "label": "Riot Platforms"
+    },
+    {
+      "slug": "runes",
+      "label": "Runes"
+    },
+    {
+      "slug": "russia",
+      "label": "Russia"
+    },
+    {
+      "slug": "sapirshtein-sompolinsky-zohar-2017-optimal-selfish-mining",
+      "label": "Sapirshtein Sompolinsky Zohar 2017 Optimal Selfish Mining"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "sbi-crypto",
+      "label": "SBI Crypto"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
+    },
+    {
+      "slug": "semiconductor-fabrication",
+      "label": "Semiconductor Fabrication"
+    },
+    {
+      "slug": "sha-256-hashing",
+      "label": "SHA-256 Hashing"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    },
+    {
+      "slug": "slush-pool",
+      "label": "Slush Pool"
+    },
+    {
+      "slug": "slush-pool",
+      "label": "SlushPool"
+    },
+    {
+      "slug": "soft-fork",
+      "label": "soft-fork"
+    },
+    {
+      "slug": "solo-ckpool",
+      "label": "Solo CKpool"
+    },
+    {
+      "slug": "sound-money",
+      "label": "Sound Money"
+    },
+    {
+      "slug": "sphere-3-d",
+      "label": "Sphere 3D"
+    },
+    {
+      "slug": "spider-pool",
+      "label": "Spider Pool"
+    },
+    {
+      "slug": "spv-wallets",
+      "label": "SPV wallets"
+    },
+    {
+      "slug": "standard-chartered-zodia-custody",
+      "label": "Standard Chartered Zodia Custody"
+    },
+    {
+      "slug": "state-council-financial-stability-and-development-committee",
+      "label": "State Council Financial Stability and Development Committee"
+    },
+    {
+      "slug": "stranded-energy",
+      "label": "stranded energy"
+    },
+    {
+      "slug": "stranded-energy-monetisation",
+      "label": "Stranded Energy Monetisation"
+    },
+    {
+      "slug": "stranded-gas",
+      "label": "Stranded Gas"
+    },
+    {
+      "slug": "stratum-protocol",
+      "label": "Stratum Protocol"
+    },
+    {
+      "slug": "stratum-protocol",
+      "label": "Stratum protocol"
+    },
+    {
+      "slug": "stratum-reference-implementation",
+      "label": "Stratum Reference Implementation"
+    },
+    {
+      "slug": "stratum-v1",
+      "label": "Stratum V1"
+    },
+    {
+      "slug": "stratum-v2",
+      "label": "Stratum V2"
+    },
+    {
+      "slug": "stratum-v2-specification",
+      "label": "Stratum V2 Specification"
+    },
+    {
+      "slug": "stronghold-digital",
+      "label": "Stronghold Digital"
+    },
+    {
+      "slug": "taylor-2013-age-of-bespoke-silicon",
+      "label": "Taylor 2013 Age of Bespoke Silicon"
+    },
+    {
+      "slug": "tera-wulf",
+      "label": "TeraWulf"
+    },
+    {
+      "slug": "texas",
+      "label": "Texas"
+    },
+    {
+      "slug": "transaction-fees",
+      "label": "transaction fees"
+    },
+    {
+      "slug": "ucl-cbt",
+      "label": "UCL CBT"
+    },
+    {
+      "slug": "united-states",
+      "label": "United States"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "upstream-data",
+      "label": "Upstream Data"
+    },
+    {
+      "slug": "us-bitcoin-corp",
+      "label": "US Bitcoin Corp"
+    },
+    {
+      "slug": "via-btc",
+      "label": "ViaBTC"
+    },
+    {
+      "slug": "via-btc-capital",
+      "label": "ViaBTC Capital"
+    },
+    {
+      "slug": "vilim-duwe-kumar-2016-approximate-bitcoin-mining",
+      "label": "Vilim Duwe Kumar 2016 Approximate Bitcoin Mining"
+    },
+    {
+      "slug": "vinanz-limited",
+      "label": "Vinanz Limited"
+    },
+    {
+      "slug": "voight-2011-p2-pool",
+      "label": "Voight 2011 P2Pool"
+    },
+    {
+      "slug": "volcano-bitcoin",
+      "label": "Volcano Bitcoin"
+    },
+    {
+      "slug": "whatsminer",
+      "label": "Whatsminer"
+    },
+    {
+      "slug": "ztex",
+      "label": "ZTEX"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "block",
+      "label": "block"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "block-header",
+      "label": "Block Header"
+    },
+    {
+      "slug": "block-header",
+      "label": "block header"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "censorship-resistance"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "coinbase-transaction",
+      "label": "Coinbase Transaction"
+    },
+    {
+      "slug": "coinbase-transaction",
+      "label": "coinbase transaction"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "consensus mechanism"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "difficulty adjustment"
+    },
+    {
+      "slug": "difficulty-target",
+      "label": "difficulty target"
+    },
+    {
+      "slug": "difficulty-target",
+      "label": "Difficulty Target"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "fee-market",
+      "label": "fee market"
+    },
+    {
+      "slug": "halving",
+      "label": "halving"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "internet-infrastructure",
+      "label": "Internet Infrastructure"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "longest-chain-rule",
+      "label": "Longest-Chain Rule"
+    },
+    {
+      "slug": "mempool",
+      "label": "mempool"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "merkle-root",
+      "label": "Merkle root"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle tree"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "mining pool"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto consensus"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "nonce",
+      "label": "nonce"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "proof-of-authority",
+      "label": "Proof-of-Authority"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "proof-of-work"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "selfish mining"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "transaction-confirmation",
+      "label": "Transaction Confirmation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

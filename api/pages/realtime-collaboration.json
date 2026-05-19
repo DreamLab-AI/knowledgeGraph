@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:287a600710f4c1299eb1b2f6a8db2317a25852189886ee3fa6a5bb0ca8d91aef",
+  "title": "Realtime Collaboration",
+  "slug": "realtime-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:realtime-collaboration",
+  "domain": "infrastructure",
+  "definition": "RealtimeCollaboration is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

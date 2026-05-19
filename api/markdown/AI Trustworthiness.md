@@ -1,21 +1,278 @@
-iri:: http://narrativegoldmine.com/metaverse#AITrustworthiness
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-trustworthiness
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-trustworthiness
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Trustworthiness
-content-hash:: sha256-12-814a55ff45c3
-legacy-term-id:: AI-0061
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AITrustworthiness
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-trustworthiness
 public:: true
+
+# AI Trustworthiness
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d",
+  "@type": "Page",
+  "vc:slug": "ai-trustworthiness",
+  "title": "AI Trustworthiness",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-assurance-ai-0102",
+      "vc:label": "AI Assurance (AI-0102)"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-framework-ai-0035",
+      "vc:label": "Governance Framework (AI-0035)"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-p7009",
+      "vc:label": "IEEE P7009"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai-ai-0033",
+      "vc:label": "Responsible AI (AI-0033)"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management-ai-0062",
+      "vc:label": "Risk Management (AI-0062)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-814a55ff45c3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AITrustworthiness"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0061"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Trustworthiness"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-trustworthiness"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-trustworthiness"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-trustworthiness",
+  "@type": "OntologyClass",
+  "label": "AI Trustworthiness",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:governance-framework-ai-0035",
+      "vc:label": "Governance Framework (AI-0035)"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management-ai-0062",
+      "vc:label": "Risk Management (AI-0062)"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-assurance-ai-0102",
+      "vc:label": "AI Assurance (AI-0102)"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai-ai-0033",
+      "vc:label": "Responsible AI (AI-0033)"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-trustworthiness:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Assurance (AI-0102)]]",
+      "resolved": "urn:visionflow:linked:ai-assurance-ai-0102",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance Framework (AI-0035)]]",
+      "resolved": "urn:visionflow:linked:governance-framework-ai-0035",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE P7009]]",
+      "resolved": "urn:visionflow:linked:ieee-p7009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Responsible AI (AI-0033)]]",
+      "resolved": "urn:visionflow:linked:responsible-ai-ai-0033",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risk Management (AI-0062)]]",
+      "resolved": "urn:visionflow:linked:risk-management-ai-0062",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.

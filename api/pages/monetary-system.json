@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:37e96ced371d2c295791a9808fb3a373ab1d149a03d03ecd2c2ef668959c9c37",
+  "title": "Monetary System",
+  "slug": "monetary-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:monetary-system",
+  "domain": "spatial-computing",
+  "definition": "The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:financial-system",
+      "label": "Financial System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:economic-exchange",
+        "label": "Economic Exchange"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economic-exchange",
+      "label": "Economic Exchange"
+    },
+    {
+      "slug": "financial-system",
+      "label": "Financial System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    }
+  ]
+}

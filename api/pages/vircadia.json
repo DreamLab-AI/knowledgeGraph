@@ -1,0 +1,519 @@
+{
+  "id": "urn:visionflow:page:abadcbc63ee11aa868bbf38b4660fbcc28953a70b654f5bd1320421e9e30222c",
+  "title": "Vircadia",
+  "slug": "vircadia",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vircadia",
+  "domain": "spatial-computing",
+  "definition": "Vircadia is an open-source, community-governed, self-hostable [[Metaverse]] platform forked from [[High Fidelity]]'s codebase in 2020 under the Apache 2.0 licence, providing a federated architecture for persistent, spatially-aware virtual worlds with support for desktop and [[VR Headsets]] clients, positional voice audio, [[Avatar Physics]], domain-level [[Domain Access Control]], and a JavaScript-based [[Scripting Engine]] that enables collaborative experiences spanning [[Social Presence]], [[Virtual Events]], education, and immersive simulation without dependency on centralised commercial infrastructure. Vircadia inherits the technical lineage of [[Philip Rosedale]]'s [[High Fidelity]] Inc., which between 2013 and 2019 built one of the most technically ambitious real-time 3D networking stacks outside commercial gaming engines\u2014featuring distributed simulation across multiple \"assignment clients\" for audio mixing, entity hosting, avatar collision, and scene management\u2014before pivoting away from the general consumer [[Metaverse]] market toward enterprise [[Spatial Audio]] and eventually ceasing public platform operations in 2023. The fork was initiated by Brad Davis and community con",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "id": "urn:visionflow:owl:class:social-vr",
+      "label": "Social VR"
+    },
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:assignment-client",
+        "label": "Assignment Client"
+      },
+      {
+        "id": "urn:visionflow:linked:audio-mixer",
+        "label": "Audio Mixer"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-access-control",
+        "label": "Domain Access Control"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-server",
+        "label": "Domain Server"
+      },
+      {
+        "id": "urn:visionflow:linked:entity-server",
+        "label": "Entity Server"
+      },
+      {
+        "id": "urn:visionflow:linked:java-script-scripting-engine",
+        "label": "JavaScript Scripting Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:octree-spatial-index",
+        "label": "Octree Spatial Index"
+      },
+      {
+        "id": "urn:visionflow:linked:vr-client",
+        "label": "VR Client"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:c-runtime",
+        "label": "C++ Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:open-source-infrastructure",
+        "label": "Open Source Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:qt-framework",
+        "label": "Qt Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:udp-networking",
+        "label": "UDP Networking"
+      },
+      {
+        "id": "urn:visionflow:linked:vr-hardware",
+        "label": "VR Hardware"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:positional-audio",
+        "label": "Positional Audio"
+      },
+      {
+        "id": "urn:visionflow:owl:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:federated-virtual-worlds",
+        "label": "Federated Virtual Worlds"
+      },
+      {
+        "id": "urn:visionflow:linked:immersive-education",
+        "label": "Immersive Education"
+      },
+      {
+        "id": "urn:visionflow:linked:open-metaverse-interoperability",
+        "label": "Open Metaverse Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:self-hosted-metaverse",
+        "label": "Self-Hosted Metaverse"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-events",
+        "label": "Virtual Events"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:apache-2-0-licence",
+        "label": "Apache 2.0 Licence"
+      },
+      {
+        "id": "urn:visionflow:linked:assignment-client-architecture",
+        "label": "Assignment Client Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:avatar-physics",
+        "label": "Avatar Physics"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-federation",
+        "label": "Domain Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:visionflow:linked:octree-spatial-index",
+        "label": "Octree Spatial Index"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
+      "slug": "apache-2-0-licence",
+      "label": "Apache 2.0 Licence"
+    },
+    {
+      "slug": "apple-vision-pro",
+      "label": "Apple Vision Pro"
+    },
+    {
+      "slug": "assignment-client",
+      "label": "Assignment Client"
+    },
+    {
+      "slug": "assignment-client-architecture",
+      "label": "Assignment Client Architecture"
+    },
+    {
+      "slug": "audio-mixer",
+      "label": "Audio Mixer"
+    },
+    {
+      "slug": "avatar-customisation",
+      "label": "Avatar Customisation"
+    },
+    {
+      "slug": "avatar-physics",
+      "label": "Avatar Physics"
+    },
+    {
+      "slug": "bullet-physics",
+      "label": "Bullet Physics"
+    },
+    {
+      "slug": "c-runtime",
+      "label": "C++ Runtime"
+    },
+    {
+      "slug": "cloud-hosting",
+      "label": "Cloud Hosting"
+    },
+    {
+      "slug": "desktop-clients",
+      "label": "Desktop Clients"
+    },
+    {
+      "slug": "domain-access-control",
+      "label": "Domain Access Control"
+    },
+    {
+      "slug": "domain-federation",
+      "label": "Domain Federation"
+    },
+    {
+      "slug": "domain-server",
+      "label": "Domain Server"
+    },
+    {
+      "slug": "entity-server",
+      "label": "Entity Server"
+    },
+    {
+      "slug": "federated-virtual-worlds",
+      "label": "Federated Virtual Worlds"
+    },
+    {
+      "slug": "frustum-culling",
+      "label": "Frustum Culling"
+    },
+    {
+      "slug": "full-body-tracking",
+      "label": "Full-Body Tracking"
+    },
+    {
+      "slug": "gl-tf-format",
+      "label": "glTF Format"
+    },
+    {
+      "slug": "gl-tf-specification",
+      "label": "glTF Specification"
+    },
+    {
+      "slug": "high-fidelity",
+      "label": "High Fidelity"
+    },
+    {
+      "slug": "immersive-education",
+      "label": "Immersive Education"
+    },
+    {
+      "slug": "java-script",
+      "label": "JavaScript"
+    },
+    {
+      "slug": "java-script-scripting",
+      "label": "JavaScript Scripting"
+    },
+    {
+      "slug": "java-script-scripting-engine",
+      "label": "JavaScript Scripting Engine"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "mozilla-hubs",
+      "label": "Mozilla Hubs"
+    },
+    {
+      "slug": "octree-spatial-index",
+      "label": "Octree Spatial Index"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
+      "slug": "open-metaverse-interoperability",
+      "label": "Open Metaverse Interoperability"
+    },
+    {
+      "slug": "open-metaverse-interoperability-group",
+      "label": "Open Metaverse Interoperability Group"
+    },
+    {
+      "slug": "open-simulator",
+      "label": "OpenSimulator"
+    },
+    {
+      "slug": "open-source-infrastructure",
+      "label": "Open Source Infrastructure"
+    },
+    {
+      "slug": "open-source-licensing",
+      "label": "Open Source Licensing"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "open-vr",
+      "label": "OpenVR"
+    },
+    {
+      "slug": "overte",
+      "label": "Overte"
+    },
+    {
+      "slug": "philip-rosedale",
+      "label": "Philip Rosedale"
+    },
+    {
+      "slug": "qt-framework",
+      "label": "Qt Framework"
+    },
+    {
+      "slug": "rec-room",
+      "label": "Rec Room"
+    },
+    {
+      "slug": "scripting-engine",
+      "label": "Scripting Engine"
+    },
+    {
+      "slug": "second-life",
+      "label": "Second Life"
+    },
+    {
+      "slug": "self-hosted-metaverse",
+      "label": "Self-Hosted Metaverse"
+    },
+    {
+      "slug": "three-js",
+      "label": "Three.js"
+    },
+    {
+      "slug": "udp-networking",
+      "label": "UDP Networking"
+    },
+    {
+      "slug": "v8-java-script-engine",
+      "label": "V8 JavaScript Engine"
+    },
+    {
+      "slug": "virtual-events",
+      "label": "Virtual Events"
+    },
+    {
+      "slug": "vr-client",
+      "label": "VR Client"
+    },
+    {
+      "slug": "vr-hardware",
+      "label": "VR Hardware"
+    },
+    {
+      "slug": "vr-headsets",
+      "label": "VR Headsets"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    },
+    {
+      "slug": "web-xr-device-api",
+      "label": "WebXR Device API"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "community-governance",
+      "label": "Community Governance"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "positional-audio",
+      "label": "Positional Audio"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": []
+}

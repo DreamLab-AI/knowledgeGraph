@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:5dcfd4c479b492a190d88f872e96f7fbe94d3a41bb2cbc5bf1da288382057297",
+  "title": "Digital Asset Management",
+  "slug": "digital-asset-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-asset-management",
+  "domain": "spatial-computing",
+  "definition": "The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:investment-management",
+      "label": "Investment Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:analytics-tools",
+        "label": "Analytics Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-systems",
+        "label": "Compliance Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:custody-solutions",
+        "label": "Custody Solutions"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-allocation",
+        "label": "Asset Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:portfolio-optimization",
+        "label": "Portfolio Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analytics-tools",
+      "label": "Analytics Tools"
+    },
+    {
+      "slug": "asset-allocation",
+      "label": "Asset Allocation"
+    },
+    {
+      "slug": "compliance-systems",
+      "label": "Compliance Systems"
+    },
+    {
+      "slug": "custody-solutions",
+      "label": "Custody Solutions"
+    },
+    {
+      "slug": "portfolio-optimization",
+      "label": "Portfolio Optimization"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "investment-management",
+      "label": "Investment Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "erc721",
+      "label": "ERC721"
+    },
+    {
+      "slug": "media-library",
+      "label": "Media Library"
+    },
+    {
+      "slug": "temporary-asset-access",
+      "label": "Temporary Asset Access"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

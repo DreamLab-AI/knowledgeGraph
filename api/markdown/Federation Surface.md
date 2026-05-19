@@ -1,20 +1,560 @@
-iri:: http://narrativegoldmine.com/infrastructure#FederationSurface
-uri:: urn:visionclaw:concept:infrastructure:federation-surface
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:federation-surface
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Federation Surface
-content-hash:: sha256-12-c3d4e5f6a7b8
-status:: complete
-maturity:: established
-quality-score:: 0.86
-authority-score:: 0.89
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#FederationSurface
+legacy_uri:: urn:visionclaw:concept:infrastructure:federation-surface
 public:: true
+
+# Federation Surface
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:50f9c45cee2cedb21d582206eaee30e7c09fc887af9d8217ad54552f020d30e9",
+  "@type": "Page",
+  "vc:slug": "federation-surface",
+  "title": "Federation Surface",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adr-008",
+      "vc:label": "ADR-008"
+    },
+    {
+      "@id": "urn:visionflow:linked:adr-012",
+      "vc:label": "ADR-012"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-bead",
+      "vc:label": "Agent Bead"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:apilayer",
+      "vc:label": "APILayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-monitoring",
+      "vc:label": "Automated Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-oracle-integration",
+      "vc:label": "Blockchain Oracle Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-system-querying",
+      "vc:label": "Cross-System Querying"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-integration-domain",
+      "vc:label": "DataIntegrationDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-portal",
+      "vc:label": "Data Portal"
+    },
+    {
+      "@id": "urn:visionflow:linked:http-endpoint",
+      "vc:label": "HTTP Endpoint"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1-spec",
+      "vc:label": "JSON-LD 1.1 Spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1-standard",
+      "vc:label": "JSON-LD 1.1 Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-context",
+      "vc:label": "JSON-LD Context"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-context",
+      "vc:label": "JSON-LD Context"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph-federation",
+      "vc:label": "Knowledge Graph Federation"
+    },
+    {
+      "@id": "urn:visionflow:linked:linked-data-consumption",
+      "vc:label": "Linked Data Consumption"
+    },
+    {
+      "@id": "urn:visionflow:linked:prd-006",
+      "vc:label": "PRD-006"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web-domain",
+      "vc:label": "SemanticWebDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-pod-storage",
+      "vc:label": "Solid Pod Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "vc:label": "W3C Linked Data Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-vocabulary",
+      "vc:label": "W3C Vocabulary"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-addressing",
+      "vc:label": "Content Addressing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:linked-data-encoder",
+      "vc:label": "Linked Data Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:linked-data-encoder",
+      "vc:label": "Linked Data Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:linked-data-encoder",
+      "vc:label": "Linked Data Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "vc:label": "Verifiable Credential Surface"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.89"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c3d4e5f6a7b8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#FederationSurface"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Federation Surface"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.86"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:federation-surface"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:federation-surface"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:50f9c45cee2cedb21d582206eaee30e7c09fc887af9d8217ad54552f020d30e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:federation-surface",
+  "@type": "OntologyClass",
+  "label": "Federation Surface",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "Middleware Layer"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:50f9c45cee2cedb21d582206eaee30e7c09fc887af9d8217ad54552f020d30e9"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:50f9c45cee2cedb21d582206eaee30e7c09fc887af9d8217ad54552f020d30e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A standardised [[JSON-LD 1.1]] encoding surface (S1–S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge graphs) without agent-specific API adapters.",
+  "vc:qualityScore": {
+    "@value": "0.86",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.89",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:json-ld-context",
+      "vc:label": "JSON-LD Context"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-addressing",
+      "vc:label": "Content Addressing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:linked-data-encoder",
+      "vc:label": "Linked Data Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:http-endpoint",
+      "vc:label": "HTTP Endpoint"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1-standard",
+      "vc:label": "JSON-LD 1.1 Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-vocabulary",
+      "vc:label": "W3C Vocabulary"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:automated-monitoring",
+      "vc:label": "Automated Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-oracle-integration",
+      "vc:label": "Blockchain Oracle Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-system-querying",
+      "vc:label": "Cross-System Querying"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph-federation",
+      "vc:label": "Knowledge Graph Federation"
+    },
+    {
+      "@id": "urn:visionflow:linked:linked-data-consumption",
+      "vc:label": "Linked Data Consumption"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "vc:label": "W3C Linked Data Platform"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:data-portal",
+      "vc:label": "Data Portal"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:federation-surface:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:50f9c45cee2cedb21d582206eaee30e7c09fc887af9d8217ad54552f020d30e9"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ADR-008]]",
+      "resolved": "urn:visionflow:linked:adr-008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ADR-012]]",
+      "resolved": "urn:visionflow:linked:adr-012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Bead|beads]]",
+      "resolved": "urn:visionflow:linked:agent-bead",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[APILayer]]",
+      "resolved": "urn:visionflow:linked:apilayer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Monitoring]]",
+      "resolved": "urn:visionflow:linked:automated-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Oracle Integration]]",
+      "resolved": "urn:visionflow:linked:blockchain-oracle-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-System Querying]]",
+      "resolved": "urn:visionflow:linked:cross-system-querying",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataIntegrationDomain]]",
+      "resolved": "urn:visionflow:linked:data-integration-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Portal]]",
+      "resolved": "urn:visionflow:linked:data-portal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HTTP Endpoint]]",
+      "resolved": "urn:visionflow:linked:http-endpoint",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1 Spec]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1-spec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1 Standard]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD Context]]",
+      "resolved": "urn:visionflow:linked:json-ld-context",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD Context|JSON-LD contexts]]",
+      "resolved": "urn:visionflow:linked:json-ld-context",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Graph Federation]]",
+      "resolved": "urn:visionflow:linked:knowledge-graph-federation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Linked Data Consumption]]",
+      "resolved": "urn:visionflow:linked:linked-data-consumption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PRD-006]]",
+      "resolved": "urn:visionflow:linked:prd-006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SemanticWebDomain]]",
+      "resolved": "urn:visionflow:linked:semantic-web-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Pod Storage|Solid pods]]",
+      "resolved": "urn:visionflow:linked:solid-pod-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Linked Data Platform]]",
+      "resolved": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Vocabulary]]",
+      "resolved": "urn:visionflow:linked:w3-c-vocabulary",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Addressing]]",
+      "resolved": "urn:visionflow:owl:class:content-addressing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity|did:nostr]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graph]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graph",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Linked Data Encoder]]",
+      "resolved": "urn:visionflow:owl:class:linked-data-encoder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Linked Data Encoder|JSON-LD]]",
+      "resolved": "urn:visionflow:owl:class:linked-data-encoder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Linked Data Encoder|a separate encoder]]",
+      "resolved": "urn:visionflow:owl:class:linked-data-encoder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract|Smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser|urn:visionclaw:...]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credential Surface|W3C VC 2.0 credentials]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:50f9c45cee2cedb21d582206eaee30e7c09fc887af9d8217ad54552f020d30e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A standardised [[JSON-LD 1.1]] encoding surface (S1–S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge graphs) without agent-specific API adapters.

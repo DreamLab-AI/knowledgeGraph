@@ -1,0 +1,680 @@
+{
+  "id": "urn:visionflow:page:f39ddaebac990775a28f9a9ce0fd6eaecb9bfa9cb97436ae3203ad95d3a69989",
+  "title": "Cross-Chain Bridge",
+  "slug": "cross-chain-bridge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cross-chain-bridge",
+  "domain": "blockchain",
+  "definition": "A **Cross-Chain Bridge** is a protocol-level interoperability artefact \u2014 comprising on-chain smart contracts on each connected blockchain plus an off-chain attestation, relay, or proving infrastructure \u2014 that enables the trust-minimised transfer of fungible tokens, non-fungible tokens, arbitrary message payloads, and remote contract calls between sovereign blockchain networks with heterogeneous consensus mechanisms, virtual machines, and finality regimes; canonically partitioned by mechanism into **lock-and-mint** (source-chain escrow plus destination-chain canonical or wrapped issuance \u2014 WBTC BitGo $9B 2025 custody, Polygon PoS Bridge, Avalanche Bridge), **burn-and-mint** (canonical-issuer model with destination-side mint authority \u2014 Circle CCTP for USDC since 2023, LayerZero OFT standard, Wormhole Native Token Transfers 2024), **atomic swap** (Hash Time-Locked Contracts enabling trustless peer-to-peer cross-chain exchange \u2014 Bitcoin-Litecoin original 2017, Decred-Bitcoin, COMIT Network, Atomex), **liquidity-pool / liquidity-network** (paired LP pools on each chain with rebalancing \u2014 Hop Protocol AMM exit pools, Synapse nUSD/nETH metapools, Stargate Delta-algorithm unified pools, C",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:asset-transfer-mechanism",
+      "label": "Asset Transfer Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:cross-chain-application",
+      "label": "Cross-Chain Application"
+    },
+    {
+      "id": "urn:visionflow:linked:interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:smart-contract-protocol",
+      "label": "Smart Contract Protocol"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bridge-contract",
+        "label": "Bridge Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-proof-system",
+        "label": "Cryptographic Proof System"
+      },
+      {
+        "id": "urn:visionflow:linked:message-verification-module",
+        "label": "Message Verification Module"
+      },
+      {
+        "id": "urn:visionflow:linked:settlement-contract",
+        "label": "Settlement Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:visionflow:owl:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:relayer",
+        "label": "Relayer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:visionflow:linked:destination-chain-execution",
+        "label": "Destination Chain Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:source-chain-finality",
+        "label": "Source Chain Finality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:chain-abstraction",
+        "label": "Chain Abstraction"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-chain-asset-transfer",
+        "label": "Cross-Chain Asset Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-chain-composability",
+        "label": "Cross-Chain Composability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-chain-swap",
+        "label": "Cross-Chain Swap"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-chain-de-fi",
+        "label": "Multi-Chain DeFi"
+      },
+      {
+        "id": "urn:visionflow:linked:omnichain-application",
+        "label": "Omnichain Application"
+      },
+      {
+        "id": "urn:visionflow:linked:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:burn-and-mint-bridge",
+        "label": "Burn-and-Mint Bridge"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:intent-based-bridge",
+        "label": "Intent-Based Bridge"
+      },
+      {
+        "id": "urn:visionflow:linked:liquidity-pool-bridge",
+        "label": "Liquidity Pool Bridge"
+      },
+      {
+        "id": "urn:visionflow:linked:lock-and-mint-bridge",
+        "label": "Lock-and-Mint Bridge"
+      },
+      {
+        "id": "urn:visionflow:linked:optimistic-verification",
+        "label": "Optimistic Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-knowledge-light-client",
+        "label": "Zero-Knowledge Light Client"
+      },
+      {
+        "id": "urn:visionflow:owl:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "across-protocol",
+      "label": "Across Protocol"
+    },
+    {
+      "slug": "across-protocol-whitepaper-2022",
+      "label": "Across Protocol Whitepaper 2022"
+    },
+    {
+      "slug": "asset-transfer-mechanism",
+      "label": "Asset Transfer Mechanism"
+    },
+    {
+      "slug": "atomic-swap-only-protocol",
+      "label": "Atomic-Swap-Only Protocol"
+    },
+    {
+      "slug": "augusto-et-al-2024-so-k-bridge-security-privacy",
+      "label": "Augusto et al. 2024 SoK Bridge Security Privacy"
+    },
+    {
+      "slug": "axelar",
+      "label": "Axelar"
+    },
+    {
+      "slug": "axelar-whitepaper-2021",
+      "label": "Axelar Whitepaper 2021"
+    },
+    {
+      "slug": "belchior-et-al-2021-blockchain-interoperability-survey",
+      "label": "Belchior et al. 2021 Blockchain Interoperability Survey"
+    },
+    {
+      "slug": "bhuptani-2021-connext-trust-taxonomy",
+      "label": "Bhuptani 2021 Connext Trust Taxonomy"
+    },
+    {
+      "slug": "bridge-contract",
+      "label": "Bridge Contract"
+    },
+    {
+      "slug": "bridged-stablecoin",
+      "label": "Bridged Stablecoin"
+    },
+    {
+      "slug": "burn-and-mint-bridge",
+      "label": "Burn-and-Mint Bridge"
+    },
+    {
+      "slug": "buterin-2016-chain-interoperability",
+      "label": "Buterin 2016 Chain Interoperability"
+    },
+    {
+      "slug": "buterin-2021-cross-chain-applications-critique",
+      "label": "Buterin 2021 Cross-Chain Applications Critique"
+    },
+    {
+      "slug": "cambridge-ccaf-travel-rule-2023",
+      "label": "Cambridge CCAF Travel Rule 2023"
+    },
+    {
+      "slug": "centralised-exchange-bridging",
+      "label": "Centralised Exchange Bridging"
+    },
+    {
+      "slug": "chain-abstraction",
+      "label": "Chain Abstraction"
+    },
+    {
+      "slug": "chain-abstraction-wallet",
+      "label": "Chain Abstraction Wallet"
+    },
+    {
+      "slug": "chain-agnostic-standards-alliance",
+      "label": "Chain Agnostic Standards Alliance"
+    },
+    {
+      "slug": "chainalysis-2024-crypto-crime-report",
+      "label": "Chainalysis 2024 Crypto Crime Report"
+    },
+    {
+      "slug": "chainlink-ccip",
+      "label": "Chainlink CCIP"
+    },
+    {
+      "slug": "chainlink-ccip-whitepaper-2023",
+      "label": "Chainlink CCIP Whitepaper 2023"
+    },
+    {
+      "slug": "connext",
+      "label": "Connext"
+    },
+    {
+      "slug": "cosmos-ibc-whitepaper-2018",
+      "label": "Cosmos IBC Whitepaper 2018"
+    },
+    {
+      "slug": "cross-chain-application",
+      "label": "Cross-Chain Application"
+    },
+    {
+      "slug": "cross-chain-asset-transfer",
+      "label": "Cross-Chain Asset Transfer"
+    },
+    {
+      "slug": "cross-chain-composability",
+      "label": "Cross-Chain Composability"
+    },
+    {
+      "slug": "cross-chain-dex",
+      "label": "Cross-Chain DEX"
+    },
+    {
+      "slug": "cross-chain-governance",
+      "label": "Cross-Chain Governance"
+    },
+    {
+      "slug": "cross-chain-nft",
+      "label": "Cross-Chain NFT"
+    },
+    {
+      "slug": "cross-chain-swap",
+      "label": "Cross-Chain Swap"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "cryptographic-proof-system",
+      "label": "Cryptographic Proof System"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "custodial-asset-transfer",
+      "label": "Custodial Asset Transfer"
+    },
+    {
+      "slug": "de-fi-domain",
+      "label": "DeFiDomain"
+    },
+    {
+      "slug": "decentralised-verifier-network",
+      "label": "Decentralised Verifier Network"
+    },
+    {
+      "slug": "destination-chain-execution",
+      "label": "Destination Chain Execution"
+    },
+    {
+      "slug": "elliptic-state-of-cross-chain-crime-2024",
+      "label": "Elliptic State of Cross-Chain Crime 2024"
+    },
+    {
+      "slug": "erc-7281",
+      "label": "ERC-7281"
+    },
+    {
+      "slug": "erc-7281-x-erc20-sovereign-bridged-tokens",
+      "label": "ERC-7281 xERC20 Sovereign Bridged Tokens"
+    },
+    {
+      "slug": "erc-7683",
+      "label": "ERC-7683"
+    },
+    {
+      "slug": "erc-7683-cross-chain-intents",
+      "label": "ERC-7683 Cross-Chain Intents"
+    },
+    {
+      "slug": "fca-cross-chain-vasp-guidance-2024",
+      "label": "FCA Cross-Chain VASP Guidance 2024"
+    },
+    {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
+      "slug": "halborn-ronin-bridge-postmortem",
+      "label": "Halborn Ronin Bridge Postmortem"
+    },
+    {
+      "slug": "hash-time-locked-contract",
+      "label": "Hash Time-Locked Contract"
+    },
+    {
+      "slug": "herlihy-2018-atomic-cross-chain-swaps",
+      "label": "Herlihy 2018 Atomic Cross-Chain Swaps"
+    },
+    {
+      "slug": "hyperlane",
+      "label": "Hyperlane"
+    },
+    {
+      "slug": "hyperlane-whitepaper-2023",
+      "label": "Hyperlane Whitepaper 2023"
+    },
+    {
+      "slug": "ibc-specification",
+      "label": "IBC Specification"
+    },
+    {
+      "slug": "intent-based-bridge",
+      "label": "Intent-Based Bridge"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "InteroperabilityDomain"
+    },
+    {
+      "slug": "interoperability-layer",
+      "label": "InteroperabilityLayer"
+    },
+    {
+      "slug": "interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    },
+    {
+      "slug": "jumper-exchange",
+      "label": "Jumper Exchange"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
+      "slug": "layer-zero-v2-whitepaper-2024",
+      "label": "LayerZero V2 Whitepaper 2024"
+    },
+    {
+      "slug": "lee-et-al-2023-so-k-bridge-hacks",
+      "label": "Lee et al. 2023 SoK Bridge Hacks"
+    },
+    {
+      "slug": "li-fi",
+      "label": "LI.FI"
+    },
+    {
+      "slug": "liquidity-pool-bridge",
+      "label": "Liquidity Pool Bridge"
+    },
+    {
+      "slug": "lock-and-mint-bridge",
+      "label": "Lock-and-Mint Bridge"
+    },
+    {
+      "slug": "message-passing-layer",
+      "label": "MessagePassingLayer"
+    },
+    {
+      "slug": "message-verification-module",
+      "label": "Message Verification Module"
+    },
+    {
+      "slug": "multi-chain-de-fi",
+      "label": "Multi-Chain DeFi"
+    },
+    {
+      "slug": "multi-chain-lending",
+      "label": "Multi-Chain Lending"
+    },
+    {
+      "slug": "multi-party-computation",
+      "label": "Multi-Party Computation"
+    },
+    {
+      "slug": "multi-signature",
+      "label": "Multi-Signature"
+    },
+    {
+      "slug": "native-rollup-interop",
+      "label": "Native Rollup Interop"
+    },
+    {
+      "slug": "nexus-mutual",
+      "label": "Nexus Mutual"
+    },
+    {
+      "slug": "notary-scheme",
+      "label": "Notary Scheme"
+    },
+    {
+      "slug": "omnichain-application",
+      "label": "Omnichain Application"
+    },
+    {
+      "slug": "open-bridge-standard",
+      "label": "Open Bridge Standard"
+    },
+    {
+      "slug": "optimistic-oracle",
+      "label": "Optimistic Oracle"
+    },
+    {
+      "slug": "optimistic-verification",
+      "label": "Optimistic Verification"
+    },
+    {
+      "slug": "polygon-zk-evm-bridge",
+      "label": "Polygon zkEVM Bridge"
+    },
+    {
+      "slug": "polyhedra-zk-bridge-whitepaper-2024",
+      "label": "Polyhedra zkBridge Whitepaper 2024"
+    },
+    {
+      "slug": "polymer-hub",
+      "label": "Polymer Hub"
+    },
+    {
+      "slug": "restaked-validator",
+      "label": "Restaked Validator"
+    },
+    {
+      "slug": "settlement-contract",
+      "label": "Settlement Contract"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "SettlementLayer"
+    },
+    {
+      "slug": "side-chain",
+      "label": "Side-Chain"
+    },
+    {
+      "slug": "smart-contract-protocol",
+      "label": "Smart Contract Protocol"
+    },
+    {
+      "slug": "solver-network",
+      "label": "Solver Network"
+    },
+    {
+      "slug": "source-chain-finality",
+      "label": "Source Chain Finality"
+    },
+    {
+      "slug": "squid-router",
+      "label": "Squid Router"
+    },
+    {
+      "slug": "stargate",
+      "label": "Stargate"
+    },
+    {
+      "slug": "succinct-sp1-whitepaper-2024",
+      "label": "Succinct SP1 Whitepaper 2024"
+    },
+    {
+      "slug": "synapse-protocol",
+      "label": "Synapse Protocol"
+    },
+    {
+      "slug": "threshold-signature-scheme",
+      "label": "Threshold Signature Scheme"
+    },
+    {
+      "slug": "tokenised-real-world-asset-transfer",
+      "label": "Tokenised Real-World Asset Transfer"
+    },
+    {
+      "slug": "trail-of-bits-wormhole-audit",
+      "label": "Trail of Bits Wormhole Audit"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "validator-set",
+      "label": "Validator Set"
+    },
+    {
+      "slug": "wormhole",
+      "label": "Wormhole"
+    },
+    {
+      "slug": "wormhole-whitepaper-2022",
+      "label": "Wormhole Whitepaper 2022"
+    },
+    {
+      "slug": "wrapped-token",
+      "label": "Wrapped Token"
+    },
+    {
+      "slug": "xie-et-al-2022-zk-bridge",
+      "label": "Xie et al. 2022 zkBridge"
+    },
+    {
+      "slug": "zamyatin-et-al-2019-xclaim",
+      "label": "Zamyatin et al. 2019 XCLAIM"
+    },
+    {
+      "slug": "zamyatin-et-al-2021-so-k-cross-chain-communication",
+      "label": "Zamyatin et al. 2021 SoK Cross-Chain Communication"
+    },
+    {
+      "slug": "zero-knowledge-light-client",
+      "label": "Zero-Knowledge Light Client"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "ZK-SNARK"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "merkle-proof",
+      "label": "Merkle Proof"
+    },
+    {
+      "slug": "relayer",
+      "label": "Relayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "layer-0",
+      "label": "Layer 0"
+    },
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    },
+    {
+      "slug": "lock-and-mint-mechanism",
+      "label": "Lock and Mint Mechanism"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "relayer",
+      "label": "Relayer"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

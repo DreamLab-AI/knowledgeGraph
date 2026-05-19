@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1",
+  "title": "Quantum Network Node",
+  "slug": "quantum-network-node",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quantum-network-node",
+  "domain": "spatial-computing",
+  "definition": "Physical device utilizing quantum mechanics principles to enable quantum key distribution (QKD) or entanglement transmission for ultra-secure communication channels.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:classical-communication-interface",
+        "label": "Classical Communication Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:environmental-isolation-chamber",
+        "label": "Environmental Isolation Chamber"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-switch",
+        "label": "Optical Switch"
+      },
+      {
+        "id": "urn:visionflow:linked:quantum-light-source",
+        "label": "Quantum Light Source"
+      },
+      {
+        "id": "urn:visionflow:linked:quantum-memory-unit",
+        "label": "Quantum Memory Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:single-photon-detector",
+        "label": "Single Photon Detector"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryogenic-cooling",
+        "label": "Cryogenic Cooling"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-fiber-connection",
+        "label": "Optical Fiber Connection"
+      },
+      {
+        "id": "urn:visionflow:linked:vibration-isolation",
+        "label": "Vibration Isolation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:entanglement-distribution",
+        "label": "Entanglement Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:post-quantum-security",
+        "label": "Post-Quantum Security"
+      },
+      {
+        "id": "urn:visionflow:linked:quantum-cryptography",
+        "label": "Quantum Cryptography"
+      },
+      {
+        "id": "urn:visionflow:linked:quantum-key-distribution",
+        "label": "Quantum Key Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:ultra-secure-communication",
+        "label": "Ultra-Secure Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "classical-communication-interface",
+      "label": "Classical Communication Interface"
+    },
+    {
+      "slug": "cryogenic-cooling",
+      "label": "Cryogenic Cooling"
+    },
+    {
+      "slug": "entanglement-distribution",
+      "label": "Entanglement Distribution"
+    },
+    {
+      "slug": "environmental-isolation-chamber",
+      "label": "Environmental Isolation Chamber"
+    },
+    {
+      "slug": "itu-t-qkd-series",
+      "label": "ITU-T QKD Series"
+    },
+    {
+      "slug": "optical-fiber-connection",
+      "label": "Optical Fiber Connection"
+    },
+    {
+      "slug": "optical-switch",
+      "label": "Optical Switch"
+    },
+    {
+      "slug": "post-quantum-security",
+      "label": "Post-Quantum Security"
+    },
+    {
+      "slug": "quantum-communication-network",
+      "label": "Quantum Communication Network"
+    },
+    {
+      "slug": "quantum-cryptography",
+      "label": "Quantum Cryptography"
+    },
+    {
+      "slug": "quantum-key-distribution",
+      "label": "Quantum Key Distribution"
+    },
+    {
+      "slug": "quantum-light-source",
+      "label": "Quantum Light Source"
+    },
+    {
+      "slug": "quantum-memory-unit",
+      "label": "Quantum Memory Unit"
+    },
+    {
+      "slug": "single-photon-detector",
+      "label": "Single Photon Detector"
+    },
+    {
+      "slug": "ultra-secure-communication",
+      "label": "Ultra-Secure Communication"
+    },
+    {
+      "slug": "vibration-isolation",
+      "label": "Vibration Isolation"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-security",
+      "label": "ETSI_Domain_Infrastructure___Security"
+    }
+  ]
+}

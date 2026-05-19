@@ -1,21 +1,1575 @@
-iri:: http://narrativegoldmine.com/infrastructure#Interoperability
-uri:: urn:visionclaw:concept:infrastructure:interoperability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:interoperability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Interoperability
-content-hash:: sha256-12-f4eded57d8a9
-legacy-term-id:: 20321
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#Interoperability
+legacy_uri:: urn:visionclaw:concept:infrastructure:interoperability
 public:: true
+
+# Interoperability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e434e939a1a6351402afbe06ff5ca43cb3422f1609373f8fd45c14a12f39b70d",
+  "@type": "Page",
+  "vc:slug": "interoperability",
+  "title": "Interoperability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:1inch",
+      "vc:label": "1inch"
+    },
+    {
+      "@id": "urn:visionflow:linked:aave",
+      "vc:label": "Aave"
+    },
+    {
+      "@id": "urn:visionflow:linked:acala",
+      "vc:label": "Acala"
+    },
+    {
+      "@id": "urn:visionflow:linked:across-protocol",
+      "vc:label": "Across Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:alameda-research",
+      "vc:label": "Alameda Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:alchemy",
+      "vc:label": "Alchemy"
+    },
+    {
+      "@id": "urn:visionflow:linked:alex",
+      "vc:label": "Alex"
+    },
+    {
+      "@id": "urn:visionflow:linked:anoma",
+      "vc:label": "Anoma"
+    },
+    {
+      "@id": "urn:visionflow:linked:aptos",
+      "vc:label": "Aptos"
+    },
+    {
+      "@id": "urn:visionflow:linked:aptos-bridge",
+      "vc:label": "Aptos Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:arbitrum",
+      "vc:label": "Arbitrum"
+    },
+    {
+      "@id": "urn:visionflow:linked:arkadiko",
+      "vc:label": "Arkadiko"
+    },
+    {
+      "@id": "urn:visionflow:linked:astar",
+      "vc:label": "Astar"
+    },
+    {
+      "@id": "urn:visionflow:linked:astria",
+      "vc:label": "Astria"
+    },
+    {
+      "@id": "urn:visionflow:linked:atomic-swaps",
+      "vc:label": "atomic swaps"
+    },
+    {
+      "@id": "urn:visionflow:linked:atomic-swaps",
+      "vc:label": "Atomic Swaps"
+    },
+    {
+      "@id": "urn:visionflow:linked:avalanche",
+      "vc:label": "Avalanche"
+    },
+    {
+      "@id": "urn:visionflow:linked:axelar",
+      "vc:label": "Axelar"
+    },
+    {
+      "@id": "urn:visionflow:linked:aztec",
+      "vc:label": "Aztec"
+    },
+    {
+      "@id": "urn:visionflow:linked:bank-of-england",
+      "vc:label": "Bank of England"
+    },
+    {
+      "@id": "urn:visionflow:linked:base",
+      "vc:label": "Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:bep-20",
+      "vc:label": "BEP-20"
+    },
+    {
+      "@id": "urn:visionflow:linked:biconomy",
+      "vc:label": "Biconomy"
+    },
+    {
+      "@id": "urn:visionflow:linked:binance",
+      "vc:label": "Binance"
+    },
+    {
+      "@id": "urn:visionflow:linked:binance-bridge",
+      "vc:label": "Binance Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:bit-go",
+      "vc:label": "BitGo"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-com",
+      "vc:label": "Bitcoin.com"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitfinex",
+      "vc:label": "Bitfinex"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockstream",
+      "vc:label": "Blockstream"
+    },
+    {
+      "@id": "urn:visionflow:linked:bnb-chain",
+      "vc:label": "BNB Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:boltz-exchange",
+      "vc:label": "Boltz Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:btse",
+      "vc:label": "BTSE"
+    },
+    {
+      "@id": "urn:visionflow:linked:bungee",
+      "vc:label": "Bungee"
+    },
+    {
+      "@id": "urn:visionflow:linked:cash-app",
+      "vc:label": "Cash App"
+    },
+    {
+      "@id": "urn:visionflow:linked:celer-c-bridge",
+      "vc:label": "Celer cBridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:celestia",
+      "vc:label": "Celestia"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainflip",
+      "vc:label": "Chainflip"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainlink",
+      "vc:label": "Chainlink"
+    },
+    {
+      "@id": "urn:visionflow:linked:clarity",
+      "vc:label": "Clarity"
+    },
+    {
+      "@id": "urn:visionflow:linked:coinbase",
+      "vc:label": "Coinbase"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound",
+      "vc:label": "Compound"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos",
+      "vc:label": "Cosmos"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos-hub",
+      "vc:label": "Cosmos Hub"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos-sdk",
+      "vc:label": "Cosmos SDK"
+    },
+    {
+      "@id": "urn:visionflow:linked:curve-finance",
+      "vc:label": "Curve Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:d-yd-x",
+      "vc:label": "dYdX"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi-kingdoms",
+      "vc:label": "DeFi Kingdoms"
+    },
+    {
+      "@id": "urn:visionflow:linked:decred",
+      "vc:label": "Decred"
+    },
+    {
+      "@id": "urn:visionflow:linked:did",
+      "vc:label": "DID"
+    },
+    {
+      "@id": "urn:visionflow:linked:discreet-log-contracts",
+      "vc:label": "Discreet Log Contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:eigenlayer",
+      "vc:label": "Eigenlayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-1155",
+      "vc:label": "ERC-1155"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-20",
+      "vc:label": "ERC-20"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-4337",
+      "vc:label": "ERC-4337"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-721",
+      "vc:label": "ERC-721"
+    },
+    {
+      "@id": "urn:visionflow:linked:espresso",
+      "vc:label": "Espresso"
+    },
+    {
+      "@id": "urn:visionflow:linked:essential",
+      "vc:label": "Essential"
+    },
+    {
+      "@id": "urn:visionflow:linked:evm",
+      "vc:label": "EVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:fa",
+      "vc:label": "FA"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-conduct-authority",
+      "vc:label": "Financial Conduct Authority"
+    },
+    {
+      "@id": "urn:visionflow:linked:fixed-float",
+      "vc:label": "FixedFloat"
+    },
+    {
+      "@id": "urn:visionflow:linked:harmony",
+      "vc:label": "Harmony"
+    },
+    {
+      "@id": "urn:visionflow:linked:harmony-horizon-bridge",
+      "vc:label": "Harmony Horizon Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-time-locked-contracts",
+      "vc:label": "hash time-locked contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-time-locked-contracts",
+      "vc:label": "Hash Time-Locked Contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:hop-protocol",
+      "vc:label": "Hop Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:injective",
+      "vc:label": "Injective"
+    },
+    {
+      "@id": "urn:visionflow:linked:jump-crypto",
+      "vc:label": "Jump Crypto"
+    },
+    {
+      "@id": "urn:visionflow:linked:jumper-exchange",
+      "vc:label": "Jumper Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:jupiter-aggregator",
+      "vc:label": "Jupiter Aggregator"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyber-network",
+      "vc:label": "Kyber Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2",
+      "vc:label": "Layer 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-zero",
+      "vc:label": "LayerZero"
+    },
+    {
+      "@id": "urn:visionflow:linked:lazarus-group",
+      "vc:label": "Lazarus Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:li-fi",
+      "vc:label": "LI.FI"
+    },
+    {
+      "@id": "urn:visionflow:linked:linea",
+      "vc:label": "Linea"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquid-network",
+      "vc:label": "Liquid Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:loopring",
+      "vc:label": "Loopring"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-mask",
+      "vc:label": "MetaMask"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-mask-portfolio",
+      "vc:label": "MetaMask Portfolio"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-mask-snaps",
+      "vc:label": "MetaMask Snaps"
+    },
+    {
+      "@id": "urn:visionflow:linked:moonbeam",
+      "vc:label": "Moonbeam"
+    },
+    {
+      "@id": "urn:visionflow:linked:move",
+      "vc:label": "Move"
+    },
+    {
+      "@id": "urn:visionflow:linked:near",
+      "vc:label": "Near"
+    },
+    {
+      "@id": "urn:visionflow:linked:near",
+      "vc:label": "NEAR"
+    },
+    {
+      "@id": "urn:visionflow:linked:nexus-mutual",
+      "vc:label": "Nexus Mutual"
+    },
+    {
+      "@id": "urn:visionflow:linked:nomad-bridge",
+      "vc:label": "Nomad Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimism",
+      "vc:label": "Optimism"
+    },
+    {
+      "@id": "urn:visionflow:linked:osmosis",
+      "vc:label": "Osmosis"
+    },
+    {
+      "@id": "urn:visionflow:linked:pancake-swap",
+      "vc:label": "PancakeSwap"
+    },
+    {
+      "@id": "urn:visionflow:linked:parallel-finance",
+      "vc:label": "Parallel Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:particle-network",
+      "vc:label": "Particle Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:phantom",
+      "vc:label": "Phantom"
+    },
+    {
+      "@id": "urn:visionflow:linked:polkadot",
+      "vc:label": "Polkadot"
+    },
+    {
+      "@id": "urn:visionflow:linked:poly-network",
+      "vc:label": "Poly Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:polygon",
+      "vc:label": "Polygon"
+    },
+    {
+      "@id": "urn:visionflow:linked:polymer-labs",
+      "vc:label": "Polymer Labs"
+    },
+    {
+      "@id": "urn:visionflow:linked:portal",
+      "vc:label": "Portal"
+    },
+    {
+      "@id": "urn:visionflow:linked:portal-bridge",
+      "vc:label": "Portal Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:rabby-wallet",
+      "vc:label": "Rabby Wallet"
+    },
+    {
+      "@id": "urn:visionflow:linked:rainbow-bridge",
+      "vc:label": "Rainbow Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:rainbow-wallet",
+      "vc:label": "Rainbow Wallet"
+    },
+    {
+      "@id": "urn:visionflow:linked:rbtc",
+      "vc:label": "RBTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:ren",
+      "vc:label": "Ren"
+    },
+    {
+      "@id": "urn:visionflow:linked:ren-btc",
+      "vc:label": "renBTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:ren-vm",
+      "vc:label": "RenVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:rgb",
+      "vc:label": "RGB"
+    },
+    {
+      "@id": "urn:visionflow:linked:rgb-protocol",
+      "vc:label": "RGB Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:ronin-bridge",
+      "vc:label": "Ronin Bridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:rootstock",
+      "vc:label": "Rootstock"
+    },
+    {
+      "@id": "urn:visionflow:linked:s-btc",
+      "vc:label": "sBTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe",
+      "vc:label": "Safe"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-guards",
+      "vc:label": "Safe Guards"
+    },
+    {
+      "@id": "urn:visionflow:linked:satellite",
+      "vc:label": "Satellite"
+    },
+    {
+      "@id": "urn:visionflow:linked:side-shift",
+      "vc:label": "SideShift"
+    },
+    {
+      "@id": "urn:visionflow:linked:sky-mavis",
+      "vc:label": "Sky Mavis"
+    },
+    {
+      "@id": "urn:visionflow:linked:socket-protocol",
+      "vc:label": "Socket Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:solidity",
+      "vc:label": "Solidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:spl-token",
+      "vc:label": "SPL Token"
+    },
+    {
+      "@id": "urn:visionflow:linked:squid-router",
+      "vc:label": "Squid Router"
+    },
+    {
+      "@id": "urn:visionflow:linked:stacks",
+      "vc:label": "Stacks"
+    },
+    {
+      "@id": "urn:visionflow:linked:stargate-finance",
+      "vc:label": "Stargate Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:strike",
+      "vc:label": "Strike"
+    },
+    {
+      "@id": "urn:visionflow:linked:submarine-swaps",
+      "vc:label": "Submarine Swaps"
+    },
+    {
+      "@id": "urn:visionflow:linked:subnet",
+      "vc:label": "subnet"
+    },
+    {
+      "@id": "urn:visionflow:linked:succinct-labs",
+      "vc:label": "Succinct Labs"
+    },
+    {
+      "@id": "urn:visionflow:linked:sui",
+      "vc:label": "Sui"
+    },
+    {
+      "@id": "urn:visionflow:linked:synapse",
+      "vc:label": "Synapse"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetix",
+      "vc:label": "Synthetix"
+    },
+    {
+      "@id": "urn:visionflow:linked:t-btc",
+      "vc:label": "tBTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:tether",
+      "vc:label": "Tether"
+    },
+    {
+      "@id": "urn:visionflow:linked:thorchain",
+      "vc:label": "THORChain"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-network",
+      "vc:label": "Threshold Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:tornado-cash",
+      "vc:label": "Tornado Cash"
+    },
+    {
+      "@id": "urn:visionflow:linked:uniswap",
+      "vc:label": "Uniswap"
+    },
+    {
+      "@id": "urn:visionflow:linked:unslashed-finance",
+      "vc:label": "Unslashed Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:usdt",
+      "vc:label": "USDt"
+    },
+    {
+      "@id": "urn:visionflow:linked:venus-protocol",
+      "vc:label": "Venus Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:wallet-of-satoshi",
+      "vc:label": "Wallet of Satoshi"
+    },
+    {
+      "@id": "urn:visionflow:linked:wbtc",
+      "vc:label": "WBTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:weth",
+      "vc:label": "WETH"
+    },
+    {
+      "@id": "urn:visionflow:linked:wormhole",
+      "vc:label": "Wormhole"
+    },
+    {
+      "@id": "urn:visionflow:linked:wormhole-connect",
+      "vc:label": "Wormhole Connect"
+    },
+    {
+      "@id": "urn:visionflow:linked:wrapped-bitcoin",
+      "vc:label": "Wrapped Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:zerion",
+      "vc:label": "Zerion"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-dev",
+      "vc:label": "ZeroDev"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-bridge",
+      "vc:label": "zkBridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:zodiac",
+      "vc:label": "Zodiac"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cosmos-ibc",
+      "vc:label": "Cosmos IBC"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solana",
+      "vc:label": "Solana"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web3",
+      "vc:label": "Web3"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f4eded57d8a9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#Interoperability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20321"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Interoperability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e434e939a1a6351402afbe06ff5ca43cb3422f1609373f8fd45c14a12f39b70d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:interoperability",
+  "@type": "OntologyClass",
+  "label": "Interoperability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e434e939a1a6351402afbe06ff5ca43cb3422f1609373f8fd45c14a12f39b70d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e434e939a1a6351402afbe06ff5ca43cb3422f1609373f8fd45c14a12f39b70d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:interoperability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e434e939a1a6351402afbe06ff5ca43cb3422f1609373f8fd45c14a12f39b70d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[1inch]]",
+      "resolved": "urn:visionflow:linked:1inch",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aave]]",
+      "resolved": "urn:visionflow:linked:aave",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Acala]]",
+      "resolved": "urn:visionflow:linked:acala",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Across Protocol]]",
+      "resolved": "urn:visionflow:linked:across-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alameda Research]]",
+      "resolved": "urn:visionflow:linked:alameda-research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alchemy]]",
+      "resolved": "urn:visionflow:linked:alchemy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alex]]",
+      "resolved": "urn:visionflow:linked:alex",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anoma]]",
+      "resolved": "urn:visionflow:linked:anoma",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aptos]]",
+      "resolved": "urn:visionflow:linked:aptos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aptos Bridge]]",
+      "resolved": "urn:visionflow:linked:aptos-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Arbitrum]]",
+      "resolved": "urn:visionflow:linked:arbitrum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Arkadiko]]",
+      "resolved": "urn:visionflow:linked:arkadiko",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Astar]]",
+      "resolved": "urn:visionflow:linked:astar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Astria]]",
+      "resolved": "urn:visionflow:linked:astria",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Atomic Swaps]]",
+      "resolved": "urn:visionflow:linked:atomic-swaps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[atomic swaps]]",
+      "resolved": "urn:visionflow:linked:atomic-swaps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Avalanche]]",
+      "resolved": "urn:visionflow:linked:avalanche",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Axelar]]",
+      "resolved": "urn:visionflow:linked:axelar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aztec]]",
+      "resolved": "urn:visionflow:linked:aztec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bank of England]]",
+      "resolved": "urn:visionflow:linked:bank-of-england",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Base]]",
+      "resolved": "urn:visionflow:linked:base",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BEP-20]]",
+      "resolved": "urn:visionflow:linked:bep-20",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Biconomy]]",
+      "resolved": "urn:visionflow:linked:biconomy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binance]]",
+      "resolved": "urn:visionflow:linked:binance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binance Bridge]]",
+      "resolved": "urn:visionflow:linked:binance-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BitGo]]",
+      "resolved": "urn:visionflow:linked:bit-go",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin.com]]",
+      "resolved": "urn:visionflow:linked:bitcoin-com",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitfinex]]",
+      "resolved": "urn:visionflow:linked:bitfinex",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockstream]]",
+      "resolved": "urn:visionflow:linked:blockstream",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BNB Chain]]",
+      "resolved": "urn:visionflow:linked:bnb-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Boltz Exchange]]",
+      "resolved": "urn:visionflow:linked:boltz-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BTSE]]",
+      "resolved": "urn:visionflow:linked:btse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bungee]]",
+      "resolved": "urn:visionflow:linked:bungee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cash App]]",
+      "resolved": "urn:visionflow:linked:cash-app",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Celer cBridge]]",
+      "resolved": "urn:visionflow:linked:celer-c-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Celestia]]",
+      "resolved": "urn:visionflow:linked:celestia",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainflip]]",
+      "resolved": "urn:visionflow:linked:chainflip",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainlink]]",
+      "resolved": "urn:visionflow:linked:chainlink",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Clarity]]",
+      "resolved": "urn:visionflow:linked:clarity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Coinbase]]",
+      "resolved": "urn:visionflow:linked:coinbase",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compound]]",
+      "resolved": "urn:visionflow:linked:compound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos]]",
+      "resolved": "urn:visionflow:linked:cosmos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos Hub]]",
+      "resolved": "urn:visionflow:linked:cosmos-hub",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos SDK]]",
+      "resolved": "urn:visionflow:linked:cosmos-sdk",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Curve Finance]]",
+      "resolved": "urn:visionflow:linked:curve-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dYdX]]",
+      "resolved": "urn:visionflow:linked:d-yd-x",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi Kingdoms]]",
+      "resolved": "urn:visionflow:linked:de-fi-kingdoms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decred]]",
+      "resolved": "urn:visionflow:linked:decred",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DID]]",
+      "resolved": "urn:visionflow:linked:did",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Discreet Log Contracts]]",
+      "resolved": "urn:visionflow:linked:discreet-log-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eigenlayer]]",
+      "resolved": "urn:visionflow:linked:eigenlayer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-1155]]",
+      "resolved": "urn:visionflow:linked:erc-1155",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-20]]",
+      "resolved": "urn:visionflow:linked:erc-20",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-4337]]",
+      "resolved": "urn:visionflow:linked:erc-4337",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-721]]",
+      "resolved": "urn:visionflow:linked:erc-721",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Espresso]]",
+      "resolved": "urn:visionflow:linked:espresso",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Essential]]",
+      "resolved": "urn:visionflow:linked:essential",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EVM]]",
+      "resolved": "urn:visionflow:linked:evm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FA]]",
+      "resolved": "urn:visionflow:linked:fa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Conduct Authority]]",
+      "resolved": "urn:visionflow:linked:financial-conduct-authority",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FixedFloat]]",
+      "resolved": "urn:visionflow:linked:fixed-float",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Harmony]]",
+      "resolved": "urn:visionflow:linked:harmony",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Harmony Horizon Bridge]]",
+      "resolved": "urn:visionflow:linked:harmony-horizon-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash Time-Locked Contracts]]",
+      "resolved": "urn:visionflow:linked:hash-time-locked-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hash time-locked contracts]]",
+      "resolved": "urn:visionflow:linked:hash-time-locked-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hop Protocol]]",
+      "resolved": "urn:visionflow:linked:hop-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Injective]]",
+      "resolved": "urn:visionflow:linked:injective",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jump Crypto]]",
+      "resolved": "urn:visionflow:linked:jump-crypto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jumper Exchange]]",
+      "resolved": "urn:visionflow:linked:jumper-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jupiter Aggregator]]",
+      "resolved": "urn:visionflow:linked:jupiter-aggregator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kyber Network]]",
+      "resolved": "urn:visionflow:linked:kyber-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2]]",
+      "resolved": "urn:visionflow:linked:layer-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LayerZero]]",
+      "resolved": "urn:visionflow:linked:layer-zero",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lazarus Group]]",
+      "resolved": "urn:visionflow:linked:lazarus-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LI.FI]]",
+      "resolved": "urn:visionflow:linked:li-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Linea]]",
+      "resolved": "urn:visionflow:linked:linea",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquid Network]]",
+      "resolved": "urn:visionflow:linked:liquid-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Loopring]]",
+      "resolved": "urn:visionflow:linked:loopring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaMask]]",
+      "resolved": "urn:visionflow:linked:meta-mask",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaMask Portfolio]]",
+      "resolved": "urn:visionflow:linked:meta-mask-portfolio",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaMask Snaps]]",
+      "resolved": "urn:visionflow:linked:meta-mask-snaps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Moonbeam]]",
+      "resolved": "urn:visionflow:linked:moonbeam",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Move]]",
+      "resolved": "urn:visionflow:linked:move",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NEAR]]",
+      "resolved": "urn:visionflow:linked:near",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Near]]",
+      "resolved": "urn:visionflow:linked:near",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nexus Mutual]]",
+      "resolved": "urn:visionflow:linked:nexus-mutual",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nomad Bridge]]",
+      "resolved": "urn:visionflow:linked:nomad-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimism]]",
+      "resolved": "urn:visionflow:linked:optimism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Osmosis]]",
+      "resolved": "urn:visionflow:linked:osmosis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PancakeSwap]]",
+      "resolved": "urn:visionflow:linked:pancake-swap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Parallel Finance]]",
+      "resolved": "urn:visionflow:linked:parallel-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Particle Network]]",
+      "resolved": "urn:visionflow:linked:particle-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Phantom]]",
+      "resolved": "urn:visionflow:linked:phantom",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polkadot]]",
+      "resolved": "urn:visionflow:linked:polkadot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Poly Network]]",
+      "resolved": "urn:visionflow:linked:poly-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polygon]]",
+      "resolved": "urn:visionflow:linked:polygon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polymer Labs]]",
+      "resolved": "urn:visionflow:linked:polymer-labs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Portal]]",
+      "resolved": "urn:visionflow:linked:portal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Portal Bridge]]",
+      "resolved": "urn:visionflow:linked:portal-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rabby Wallet]]",
+      "resolved": "urn:visionflow:linked:rabby-wallet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rainbow Bridge]]",
+      "resolved": "urn:visionflow:linked:rainbow-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rainbow Wallet]]",
+      "resolved": "urn:visionflow:linked:rainbow-wallet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RBTC]]",
+      "resolved": "urn:visionflow:linked:rbtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ren]]",
+      "resolved": "urn:visionflow:linked:ren",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[renBTC]]",
+      "resolved": "urn:visionflow:linked:ren-btc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RenVM]]",
+      "resolved": "urn:visionflow:linked:ren-vm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RGB]]",
+      "resolved": "urn:visionflow:linked:rgb",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RGB Protocol]]",
+      "resolved": "urn:visionflow:linked:rgb-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ronin Bridge]]",
+      "resolved": "urn:visionflow:linked:ronin-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rootstock]]",
+      "resolved": "urn:visionflow:linked:rootstock",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[sBTC]]",
+      "resolved": "urn:visionflow:linked:s-btc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safe]]",
+      "resolved": "urn:visionflow:linked:safe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safe Guards]]",
+      "resolved": "urn:visionflow:linked:safe-guards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Satellite]]",
+      "resolved": "urn:visionflow:linked:satellite",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SideShift]]",
+      "resolved": "urn:visionflow:linked:side-shift",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sky Mavis]]",
+      "resolved": "urn:visionflow:linked:sky-mavis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Socket Protocol]]",
+      "resolved": "urn:visionflow:linked:socket-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solidity]]",
+      "resolved": "urn:visionflow:linked:solidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SPL Token]]",
+      "resolved": "urn:visionflow:linked:spl-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Squid Router]]",
+      "resolved": "urn:visionflow:linked:squid-router",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stacks]]",
+      "resolved": "urn:visionflow:linked:stacks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stargate Finance]]",
+      "resolved": "urn:visionflow:linked:stargate-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strike]]",
+      "resolved": "urn:visionflow:linked:strike",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Submarine Swaps]]",
+      "resolved": "urn:visionflow:linked:submarine-swaps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[subnet]]",
+      "resolved": "urn:visionflow:linked:subnet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Succinct Labs]]",
+      "resolved": "urn:visionflow:linked:succinct-labs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sui]]",
+      "resolved": "urn:visionflow:linked:sui",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Synapse]]",
+      "resolved": "urn:visionflow:linked:synapse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Synthetix]]",
+      "resolved": "urn:visionflow:linked:synthetix",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[tBTC]]",
+      "resolved": "urn:visionflow:linked:t-btc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tether]]",
+      "resolved": "urn:visionflow:linked:tether",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[THORChain]]",
+      "resolved": "urn:visionflow:linked:thorchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Threshold Network]]",
+      "resolved": "urn:visionflow:linked:threshold-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tornado Cash]]",
+      "resolved": "urn:visionflow:linked:tornado-cash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uniswap]]",
+      "resolved": "urn:visionflow:linked:uniswap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Unslashed Finance]]",
+      "resolved": "urn:visionflow:linked:unslashed-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[USDt]]",
+      "resolved": "urn:visionflow:linked:usdt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Venus Protocol]]",
+      "resolved": "urn:visionflow:linked:venus-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wallet of Satoshi]]",
+      "resolved": "urn:visionflow:linked:wallet-of-satoshi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WBTC]]",
+      "resolved": "urn:visionflow:linked:wbtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WETH]]",
+      "resolved": "urn:visionflow:linked:weth",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wormhole]]",
+      "resolved": "urn:visionflow:linked:wormhole",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wormhole Connect]]",
+      "resolved": "urn:visionflow:linked:wormhole-connect",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wrapped Bitcoin]]",
+      "resolved": "urn:visionflow:linked:wrapped-bitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zerion]]",
+      "resolved": "urn:visionflow:linked:zerion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ZeroDev]]",
+      "resolved": "urn:visionflow:linked:zero-dev",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zkBridge]]",
+      "resolved": "urn:visionflow:linked:zk-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zodiac]]",
+      "resolved": "urn:visionflow:linked:zodiac",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cosmos IBC]]",
+      "resolved": "urn:visionflow:owl:class:cosmos-ibc",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solana]]",
+      "resolved": "urn:visionflow:owl:class:solana",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Web3]]",
+      "resolved": "urn:visionflow:owl:class:web3",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e434e939a1a6351402afbe06ff5ca43cb3422f1609373f8fd45c14a12f39b70d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments.

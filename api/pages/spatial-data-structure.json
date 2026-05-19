@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:55bda02bc46d2a6a1dd13f37825e2e80117d8a7feef7d10a4d9f551882cf4dd2",
+  "title": "Spatial Data Structure",
+  "slug": "spatial-data-structure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-data-structure",
+  "domain": "spatial-computing",
+  "definition": "SpatialDataStructure is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-scene-graph",
+      "label": "Ar Scene Graph"
+    },
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:e48d45aca5bfba3d7e0cf0a973c4984eb9c9716cd90b9c3d796aafda0153990f",
+  "title": "rb 0017 rescue robot",
+  "slug": "rb-0017-rescue-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0017-rescue-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

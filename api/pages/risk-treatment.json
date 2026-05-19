@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:e994edc25a4ade2487441b10fe96c4001cf8f0c8962253e778b3587942e1ba7c",
+  "title": "Risk Treatment",
+  "slug": "risk-treatment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:risk-treatment",
+  "domain": "artificial-intelligence",
+  "definition": "The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organizational risk appetite.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

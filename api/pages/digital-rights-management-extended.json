@@ -1,0 +1,170 @@
+{
+  "id": "urn:visionflow:page:4705deccd65c23ff08b5ff426cb8f2f3bbb86d4df928c05b2d866f2c1cf9f712",
+  "title": "Digital Rights Management (Extended)",
+  "slug": "digital-rights-management-extended",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-rights-management-extended",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive virtual system for protecting, licensing, and enforcing usage rights for digital content through encryption, access control, and automated rights enforcement mechanisms. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "label": "Virtual Economy Domain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:access-control-module",
+        "label": "Access Control Module"
+      },
+      {
+        "id": "urn:visionflow:linked:content-encryption-engine",
+        "label": "Content Encryption Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:license-management-system",
+        "label": "License Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-tracking-system",
+        "label": "Usage Tracking System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:watermarking-service",
+        "label": "Watermarking Service"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:identity-verification-system",
+        "label": "Identity Verification System"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-licensing",
+        "label": "Content Licensing"
+      },
+      {
+        "id": "urn:visionflow:linked:piracy-prevention",
+        "label": "Piracy Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-rights-enforcement",
+        "label": "Usage Rights Enforcement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:revenue-distribution",
+        "label": "Revenue Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control-module",
+      "label": "Access Control Module"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "content-encryption-engine",
+      "label": "Content Encryption Engine"
+    },
+    {
+      "slug": "content-licensing",
+      "label": "Content Licensing"
+    },
+    {
+      "slug": "content-protection-infrastructure",
+      "label": "Content Protection Infrastructure"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "iso-iec-21000-mpeg-21",
+      "label": "ISO/IEC 21000 MPEG-21"
+    },
+    {
+      "slug": "license-management-system",
+      "label": "License Management System"
+    },
+    {
+      "slug": "payment-gateway",
+      "label": "Payment Gateway"
+    },
+    {
+      "slug": "piracy-prevention",
+      "label": "Piracy Prevention"
+    },
+    {
+      "slug": "usage-rights-enforcement",
+      "label": "Usage Rights Enforcement"
+    },
+    {
+      "slug": "usage-tracking-system",
+      "label": "Usage Tracking System"
+    },
+    {
+      "slug": "w3-c-web-drm",
+      "label": "W3C Web DRM"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "revenue-distribution",
+      "label": "Revenue Distribution"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "watermarking-service",
+      "label": "Watermarking Service"
+    }
+  ],
+  "backlinks": []
+}

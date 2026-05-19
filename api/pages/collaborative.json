@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:428b8c2492ddf10af2895951ac2aad0d608fa15c49128a400b4a27b8c3736795",
+  "title": "collaborative",
+  "slug": "collaborative",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collaborative",
+  "domain": "infrastructure",
+  "definition": "collaborative is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:collaboration",
+      "label": "Collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    }
+  ]
+}

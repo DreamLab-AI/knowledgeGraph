@@ -1,0 +1,748 @@
+{
+  "id": "urn:visionflow:page:616c58cd73d424a65afa23eed43afab75ae60d1be8e1e4f0ac79373c5c66bbc6",
+  "title": "Fault Tolerance",
+  "slug": "fault-tolerance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fault-tolerance",
+  "domain": "infrastructure",
+  "definition": "System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbitrary-behaviour), the redundancy-and-replication primitives engineered to mask or recover from such failures (hardware redundancy via Triple Modular Redundancy TMR and N-Modular Redundancy NMR with majority voting (von Neumann 1956), Error-Correcting Code ECC memory with single-bit-correct double-bit-detect Hamming codes, Redundant Array of Independent Disks RAID 1/5/6/10 disk redundancy levels, software redundancy via N-version programming (Avizienis 1985) and recovery blocks (Randell 1975), micro-reboots and crash-only software (Candea & Fox 2003) achieving sub-second recovery), the distributed-consensus algorithms that maintain agreement under partial failures (Paxos (Lamport 1998) with proposer/acceptor/learner roles guaranteeing safety under asynchrony and liveness under partial synchrony, Raft (Ongaro & Ousterhout 2014) decomposing consensus into leader-election/log-replication/safety",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:dependability",
+      "label": "Dependability"
+    },
+    {
+      "id": "urn:visionflow:linked:reliability-engineering",
+      "label": "Reliability Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:system-property",
+      "label": "System Property"
+    },
+    {
+      "id": "urn:visionflow:owl:class:resilience",
+      "label": "Resilience"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:checkpointing",
+        "label": "Checkpointing"
+      },
+      {
+        "id": "urn:visionflow:linked:failure-detector",
+        "label": "Failure Detector"
+      },
+      {
+        "id": "urn:visionflow:linked:health-monitoring",
+        "label": "Health Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:heartbeat",
+        "label": "Heartbeat"
+      },
+      {
+        "id": "urn:visionflow:linked:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:visionflow:linked:recovery-procedure",
+        "label": "Recovery Procedure"
+      },
+      {
+        "id": "urn:visionflow:linked:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:visionflow:linked:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:visionflow:linked:write-ahead-log",
+        "label": "Write Ahead Log"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:failure-model",
+        "label": "Failure Model"
+      },
+      {
+        "id": "urn:visionflow:linked:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:visionflow:linked:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:visionflow:linked:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automatic-recovery",
+        "label": "Automatic Recovery"
+      },
+      {
+        "id": "urn:visionflow:linked:continued-operation",
+        "label": "Continued Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:data-consistency",
+        "label": "Data Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:visionflow:linked:durability",
+        "label": "Durability"
+      },
+      {
+        "id": "urn:visionflow:linked:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-downtime-deployment",
+        "label": "Zero Downtime Deployment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:chain-replication",
+        "label": "Chain Replication"
+      },
+      {
+        "id": "urn:visionflow:linked:hot-stuff",
+        "label": "HotStuff"
+      },
+      {
+        "id": "urn:visionflow:linked:n-version-programming",
+        "label": "N-Version Programming"
+      },
+      {
+        "id": "urn:visionflow:linked:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:visionflow:linked:pbft",
+        "label": "PBFT"
+      },
+      {
+        "id": "urn:visionflow:linked:phi-accrual-detector",
+        "label": "Phi Accrual Detector"
+      },
+      {
+        "id": "urn:visionflow:linked:primary-backup",
+        "label": "Primary-Backup"
+      },
+      {
+        "id": "urn:visionflow:linked:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:visionflow:linked:recovery-blocks",
+        "label": "Recovery Blocks"
+      },
+      {
+        "id": "urn:visionflow:linked:sagas",
+        "label": "Sagas"
+      },
+      {
+        "id": "urn:visionflow:linked:swim",
+        "label": "SWIM"
+      },
+      {
+        "id": "urn:visionflow:linked:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "id": "urn:visionflow:linked:triple-modular-redundancy",
+        "label": "Triple Modular Redundancy"
+      },
+      {
+        "id": "urn:visionflow:linked:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aerospace-avionics",
+      "label": "Aerospace Avionics"
+    },
+    {
+      "slug": "arp4754-a",
+      "label": "ARP4754A"
+    },
+    {
+      "slug": "automatic-recovery",
+      "label": "Automatic Recovery"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "avizienis-laprie-randell-landwehr-2004-dependability-taxonomy",
+      "label": "Avizienis Laprie Randell Landwehr 2004 Dependability Taxonomy"
+    },
+    {
+      "slug": "best-effort-retry",
+      "label": "Best-Effort Retry"
+    },
+    {
+      "slug": "beyer-jones-petoff-murphy-2016-google-sre-book",
+      "label": "Beyer Jones Petoff Murphy 2016 Google SRE Book"
+    },
+    {
+      "slug": "brewer-2000-podc-keynote-cap",
+      "label": "Brewer 2000 PODC Keynote CAP"
+    },
+    {
+      "slug": "buchman-kwon-milosevic-2018-tendermint",
+      "label": "Buchman Kwon Milosevic 2018 Tendermint"
+    },
+    {
+      "slug": "burrows-2006-chubby-osdi",
+      "label": "Burrows 2006 Chubby OSDI"
+    },
+    {
+      "slug": "byzantine-generals-problem",
+      "label": "Byzantine Generals Problem"
+    },
+    {
+      "slug": "candea-fox-2003-crash-only-software-hot-os",
+      "label": "Candea Fox 2003 Crash-Only Software HotOS"
+    },
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "castro-liskov-1999-pbft-osdi",
+      "label": "Castro Liskov 1999 PBFT OSDI"
+    },
+    {
+      "slug": "chain-replication",
+      "label": "Chain Replication"
+    },
+    {
+      "slug": "chandra-toueg-1996-unreliable-failure-detectors",
+      "label": "Chandra Toueg 1996 Unreliable Failure Detectors"
+    },
+    {
+      "slug": "chandy-lamport-1985-distributed-snapshots",
+      "label": "Chandy Lamport 1985 Distributed Snapshots"
+    },
+    {
+      "slug": "chaos-engineering",
+      "label": "Chaos Engineering"
+    },
+    {
+      "slug": "checkpointing",
+      "label": "Checkpointing"
+    },
+    {
+      "slug": "continued-operation",
+      "label": "Continued Operation"
+    },
+    {
+      "slug": "corbett-et-al-2012-spanner-osdi",
+      "label": "Corbett et al 2012 Spanner OSDI"
+    },
+    {
+      "slug": "crash-only-recovery-without-consensus",
+      "label": "Crash-Only Recovery without consensus"
+    },
+    {
+      "slug": "das-gupta-motivala-2002-swim-dsn",
+      "label": "Das Gupta Motivala 2002 SWIM DSN"
+    },
+    {
+      "slug": "data-consistency",
+      "label": "Data Consistency"
+    },
+    {
+      "slug": "de-candia-et-al-2007-dynamo-sosp",
+      "label": "DeCandia et al 2007 Dynamo SOSP"
+    },
+    {
+      "slug": "dependability",
+      "label": "Dependability"
+    },
+    {
+      "slug": "disaster-recovery",
+      "label": "Disaster Recovery"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "Distributed Consensus"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "dixit-et-al-2021-silent-data-corruptions-at-scale",
+      "label": "Dixit et al 2021 Silent Data Corruptions at Scale"
+    },
+    {
+      "slug": "do-178-c",
+      "label": "DO-178C"
+    },
+    {
+      "slug": "durability",
+      "label": "Durability"
+    },
+    {
+      "slug": "erasure-coding",
+      "label": "Erasure Coding"
+    },
+    {
+      "slug": "error-correcting-codes",
+      "label": "Error Correcting Codes"
+    },
+    {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
+    },
+    {
+      "slug": "failure-detector",
+      "label": "Failure Detector"
+    },
+    {
+      "slug": "failure-model",
+      "label": "Failure Model"
+    },
+    {
+      "slug": "financial-trading-systems",
+      "label": "Financial Trading Systems"
+    },
+    {
+      "slug": "fischer-lynch-paterson-1985-flp-impossibility",
+      "label": "Fischer Lynch Paterson 1985 FLP Impossibility"
+    },
+    {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
+    },
+    {
+      "slug": "garcia-molina-salem-1987-sagas-sigmod",
+      "label": "Garcia-Molina Salem 1987 Sagas SIGMOD"
+    },
+    {
+      "slug": "gilbert-lynch-2002-cap-formal-proof",
+      "label": "Gilbert Lynch 2002 CAP Formal Proof"
+    },
+    {
+      "slug": "hamming-codes",
+      "label": "Hamming Codes"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
+    },
+    {
+      "slug": "hawblitzel-et-al-2015-iron-fleet-sosp",
+      "label": "Hawblitzel et al 2015 IronFleet SOSP"
+    },
+    {
+      "slug": "hayashibara-et-al-2004-phi-accrual-srds",
+      "label": "Hayashibara et al 2004 Phi Accrual SRDS"
+    },
+    {
+      "slug": "health-monitoring",
+      "label": "Health Monitoring"
+    },
+    {
+      "slug": "heartbeat",
+      "label": "Heartbeat"
+    },
+    {
+      "slug": "heartbeat-protocol",
+      "label": "Heartbeat Protocol"
+    },
+    {
+      "slug": "high-availability",
+      "label": "High Availability"
+    },
+    {
+      "slug": "high-availability-without-byzantine-resilience",
+      "label": "High Availability without Byzantine resilience"
+    },
+    {
+      "slug": "hochschild-et-al-2021-cores-dont-count-hot-os",
+      "label": "Hochschild et al 2021 Cores Dont Count HotOS"
+    },
+    {
+      "slug": "hot-stuff",
+      "label": "HotStuff"
+    },
+    {
+      "slug": "hunt-et-al-2010-zoo-keeper-usenix-atc",
+      "label": "Hunt et al 2010 ZooKeeper USENIX ATC"
+    },
+    {
+      "slug": "idempotency",
+      "label": "Idempotency"
+    },
+    {
+      "slug": "iec-61508",
+      "label": "IEC 61508"
+    },
+    {
+      "slug": "ieee-1633",
+      "label": "IEEE 1633"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "iso-26262",
+      "label": "ISO 26262"
+    },
+    {
+      "slug": "knight-leveson-1986-n-version-independence",
+      "label": "Knight Leveson 1986 N-Version Independence"
+    },
+    {
+      "slug": "lamport-1998-part-time-parliament-paxos",
+      "label": "Lamport 1998 Part-Time Parliament Paxos"
+    },
+    {
+      "slug": "lamport-2001-paxos-made-simple",
+      "label": "Lamport 2001 Paxos Made Simple"
+    },
+    {
+      "slug": "lamport-clocks",
+      "label": "Lamport Clocks"
+    },
+    {
+      "slug": "lamport-shostak-pease-1982-byzantine-generals",
+      "label": "Lamport Shostak Pease 1982 Byzantine Generals"
+    },
+    {
+      "slug": "linearisability",
+      "label": "Linearisability"
+    },
+    {
+      "slug": "liskov-cowling-2012-viewstamped-replication",
+      "label": "Liskov Cowling 2012 Viewstamped Replication"
+    },
+    {
+      "slug": "llama-team-2024-llama-3-technical-report",
+      "label": "Llama Team 2024 Llama 3 Technical Report"
+    },
+    {
+      "slug": "medical-devices",
+      "label": "Medical Devices"
+    },
+    {
+      "slug": "mohan-et-al-1992-aries-recovery",
+      "label": "Mohan et al 1992 ARIES Recovery"
+    },
+    {
+      "slug": "monitoring-system",
+      "label": "Monitoring System"
+    },
+    {
+      "slug": "n-version-programming",
+      "label": "N-Version Programming"
+    },
+    {
+      "slug": "narrative-gold-mine",
+      "label": "Narrative Gold Mine"
+    },
+    {
+      "slug": "network-protocols",
+      "label": "Network Protocols"
+    },
+    {
+      "slug": "nist-sp-800-160",
+      "label": "NIST SP 800-160"
+    },
+    {
+      "slug": "ongaro-ousterhout-2014-raft-usenix-atc",
+      "label": "Ongaro Ousterhout 2014 Raft USENIX ATC"
+    },
+    {
+      "slug": "operating-system-layer",
+      "label": "Operating System Layer"
+    },
+    {
+      "slug": "patterson-gibson-katz-1988-raid-sigmod",
+      "label": "Patterson Gibson Katz 1988 RAID SIGMOD"
+    },
+    {
+      "slug": "paxos",
+      "label": "Paxos"
+    },
+    {
+      "slug": "pbft",
+      "label": "PBFT"
+    },
+    {
+      "slug": "phi-accrual-detector",
+      "label": "Phi Accrual Detector"
+    },
+    {
+      "slug": "primary-backup",
+      "label": "Primary-Backup"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "raft",
+      "label": "Raft"
+    },
+    {
+      "slug": "randell-1975-system-structure-software-fault-tolerance",
+      "label": "Randell 1975 System Structure Software Fault Tolerance"
+    },
+    {
+      "slug": "recovery-blocks",
+      "label": "Recovery Blocks"
+    },
+    {
+      "slug": "recovery-procedure",
+      "label": "Recovery Procedure"
+    },
+    {
+      "slug": "redundancy",
+      "label": "Redundancy"
+    },
+    {
+      "slug": "reed-solomon-coding",
+      "label": "Reed-Solomon Coding"
+    },
+    {
+      "slug": "reliability-engineering",
+      "label": "Reliability Engineering"
+    },
+    {
+      "slug": "replication",
+      "label": "Replication"
+    },
+    {
+      "slug": "sagas",
+      "label": "Sagas"
+    },
+    {
+      "slug": "schneider-1990-state-machine-replication-tutorial",
+      "label": "Schneider 1990 State Machine Replication Tutorial"
+    },
+    {
+      "slug": "simple-replication",
+      "label": "Simple Replication"
+    },
+    {
+      "slug": "single-point-of-failure",
+      "label": "Single Point of Failure"
+    },
+    {
+      "slug": "site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    },
+    {
+      "slug": "swim",
+      "label": "SWIM"
+    },
+    {
+      "slug": "system-property",
+      "label": "System Property"
+    },
+    {
+      "slug": "tendermint",
+      "label": "Tendermint"
+    },
+    {
+      "slug": "time-synchronisation",
+      "label": "Time Synchronisation"
+    },
+    {
+      "slug": "triple-modular-redundancy",
+      "label": "Triple Modular Redundancy"
+    },
+    {
+      "slug": "two-phase-commit",
+      "label": "Two-Phase Commit"
+    },
+    {
+      "slug": "van-renesse-schneider-2004-chain-replication-osdi",
+      "label": "van Renesse Schneider 2004 Chain Replication OSDI"
+    },
+    {
+      "slug": "vector-clocks",
+      "label": "Vector Clocks"
+    },
+    {
+      "slug": "verbitski-et-al-2017-aurora-sigmod",
+      "label": "Verbitski et al 2017 Aurora SIGMOD"
+    },
+    {
+      "slug": "von-neumann-1956-probabilistic-logics-tmr",
+      "label": "von Neumann 1956 Probabilistic Logics TMR"
+    },
+    {
+      "slug": "write-ahead-log",
+      "label": "Write Ahead Log"
+    },
+    {
+      "slug": "yin-et-al-2019-hot-stuff-podc",
+      "label": "Yin et al 2019 HotStuff PODC"
+    },
+    {
+      "slug": "zero-downtime-deployment",
+      "label": "Zero Downtime Deployment"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience"
+    },
+    {
+      "slug": "state-machine-replication",
+      "label": "State Machine Replication"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "decentralization-layer",
+      "label": "Decentralization Layer"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "edge-mesh-network",
+      "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    }
+  ]
+}

@@ -1,22 +1,214 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#CloudComputing
-uri:: urn:visionclaw:concept:artificial-intelligence:cloud-computing
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:cloud-computing
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Cloud Computing
-content-hash:: sha256-12-645cdbc9b568
-legacy-term-id:: AI-9009
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#CloudComputing
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:cloud-computing
 public:: true
-bridges-to:: [[Virtual Workspace]]
+
+# Cloud Computing
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8a193fa36a2ba3a13b1c2deece1600fc84b24a5bb54993bbcbed0553b396a4fd",
+  "@type": "Page",
+  "vc:slug": "cloud-computing",
+  "title": "Cloud Computing",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:edge-ai",
+      "vc:label": "Edge AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:infrastructure-as-a-service",
+      "vc:label": "Infrastructure as a Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-computing",
+      "vc:label": "Distributed Computing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Virtual Workspace]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-645cdbc9b568"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#CloudComputing"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-9009"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cloud Computing"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:cloud-computing"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:cloud-computing"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a193fa36a2ba3a13b1c2deece1600fc84b24a5bb54993bbcbed0553b396a4fd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cloud-computing",
+  "@type": "OntologyClass",
+  "label": "Cloud Computing",
+  "urn:visionflow:owl:class:distributed-computing","Distributed Computing"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8a193fa36a2ba3a13b1c2deece1600fc84b24a5bb54993bbcbed0553b396a4fd"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a193fa36a2ba3a13b1c2deece1600fc84b24a5bb54993bbcbed0553b396a4fd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Cloud Computing in the AI context refers to the on-demand delivery of computational resources, storage, and AI/ML services over the internet. Cloud platforms (AWS, Azure, Google Cloud, Alibaba Cloud) provide scalable infrastructure for training large-scale models, distributed computing frameworks, pre-trained AI APIs, and managed ML services. Cloud-based AI enables pay-as-you-go pricing, elastic resource allocation, global deployment, and access to specialized hardware (GPUs, TPUs, quantum processors). Key services include SageMaker, Azure ML, Vertex AI, and serverless ML inference platforms.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-workspace",
+      "vc:label": "Virtual Workspace"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cloud-computing:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8a193fa36a2ba3a13b1c2deece1600fc84b24a5bb54993bbcbed0553b396a4fd"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Edge AI]]",
+      "resolved": "urn:visionflow:linked:edge-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Infrastructure as a Service]]",
+      "resolved": "urn:visionflow:linked:infrastructure-as-a-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MLOps]]",
+      "resolved": "urn:visionflow:linked:mlops",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Computing]]",
+      "resolved": "urn:visionflow:owl:class:distributed-computing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a193fa36a2ba3a13b1c2deece1600fc84b24a5bb54993bbcbed0553b396a4fd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Cloud Computing in the AI context refers to the on-demand delivery of computational resources, storage, and AI/ML services over the internet. Cloud platforms (AWS, Azure, Google Cloud, Alibaba Cloud) provide scalable infrastructure for training large-scale models, distributed computing frameworks, pre-trained AI APIs, and managed ML services. Cloud-based AI enables pay-as-you-go pricing, elastic resource allocation, global deployment, and access to specialized hardware (GPUs, TPUs, quantum processors). Key services include SageMaker, Azure ML, Vertex AI, and serverless ML inference platforms.

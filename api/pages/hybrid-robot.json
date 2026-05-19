@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:7a32a284ed5734e13ed5bbf0b395c091e19fe69895dcce8a4987b36b45744088",
+  "title": "Hybrid Robot",
+  "slug": "hybrid-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hybrid-robot",
+  "domain": "robotics",
+  "definition": "Hybrid Robot is a concept within the robotics domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mobile-manipulator",
+      "label": "Mobile Manipulator"
+    }
+  ]
+}

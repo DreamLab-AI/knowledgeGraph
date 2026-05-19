@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86",
+  "title": "Asset Archive",
+  "slug": "asset-archive",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:asset-archive",
+  "domain": "spatial-computing",
+  "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-repository",
+      "label": "Digital Repository"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:standardized-formats",
+        "label": "Standardized Formats"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-preservation",
+        "label": "Asset Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:content-reuse",
+        "label": "Content Reuse"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-preservation",
+      "label": "Asset Preservation"
+    },
+    {
+      "slug": "content-reuse",
+      "label": "Content Reuse"
+    },
+    {
+      "slug": "standardized-formats",
+      "label": "Standardized Formats"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    }
+  ]
+}

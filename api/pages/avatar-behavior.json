@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:99626c93d48c3ba3faa565fc06934712730b59b6c64140dfa980e37f2e7c9b5b",
+  "title": "Avatar Behavior",
+  "slug": "avatar-behavior",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-behavior",
+  "domain": "spatial-computing",
+  "definition": "Behavioral patterns of avatars and NPCs, often driven by AI/ML.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,324 @@
+{
+  "id": "urn:visionflow:page:829bc79fd054759090a8b6969f74e2b998f521dd214c4afc00e2471d63412a36",
+  "title": "Admittance Control",
+  "slug": "admittance-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:admittance-control",
+  "domain": "robotics",
+  "definition": "Force control strategy where robotic systems respond to external forces by producing proportional motion governed by virtual admittance parameters (mass, damping, stiffness), enabling compliant physical interaction with uncertain or variable environments by regulating position/velocity trajectories as functions of measured contact forces rather than directly controlling force magnitudes, widely deployed across collaborative robotics (cobots processing 40,000+ installations annually with <100N contact force thresholds enabling safe human-robot interaction per ISO/TS 15066:2016), surgical systems (da Vinci 7,500+ units worldwide achieving <0.5mm positioning accuracy during soft tissue manipulation via force feedback), manufacturing assembly (electronics 25,000+ units inserting components with 0.1-10N controlled forces, automotive 15,000+ units assembling doors/panels), industrial polishing (aerospace turbine blades achieving Ra <0.2\u03bcm surface finish through 5-50N adaptive force control), rehabilitation exoskeletons (Ekso/ReWalk 10,000+ clinical deployments providing 20-100Nm joint torque assistance adapting to patient effort), and space robotics (ISS Canadarm2 17.6m reaching 116 tonn",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:force-control",
+      "label": "Force Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:interaction-control",
+      "label": "Interaction Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-control",
+      "label": "Robot Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.91,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:admittance-transfer-function",
+        "label": "Admittance Transfer Function"
+      },
+      {
+        "id": "urn:visionflow:linked:force-sensor",
+        "label": "Force Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:parameter-tuning",
+        "label": "Parameter Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:position-controller",
+        "label": "Position Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-mechanical-system",
+        "label": "Virtual Mechanical System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:dynamic-model",
+        "label": "Dynamic Model"
+      },
+      {
+        "id": "urn:visionflow:linked:kinematic-model",
+        "label": "Kinematic Model"
+      },
+      {
+        "id": "urn:visionflow:linked:position-controlled-robot",
+        "label": "Position-Controlled Robot"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-control-loop",
+        "label": "Real-Time Control Loop"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-torque-sensor",
+        "label": "Force/Torque Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-manipulation",
+        "label": "Adaptive Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:compliant-motion",
+        "label": "Compliant Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:contact-based-assembly",
+        "label": "Contact-Based Assembly"
+      },
+      {
+        "id": "urn:visionflow:linked:delicate-handling",
+        "label": "Delicate Handling"
+      },
+      {
+        "id": "urn:visionflow:linked:force-limited-operation",
+        "label": "Force-Limited Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-human-robot-interaction",
+        "label": "Safe Human-Robot Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:compliant-trajectory-generation",
+        "label": "Compliant Trajectory Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:force-to-motion-mapping",
+        "label": "Force-to-Motion Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:second-order-mechanical-system",
+        "label": "Second-Order Mechanical System"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-damper-spring-mass",
+        "label": "Virtual Damper-Spring-Mass"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abb-force-control",
+      "label": "ABB Force Control"
+    },
+    {
+      "slug": "adaptive-manipulation",
+      "label": "Adaptive Manipulation"
+    },
+    {
+      "slug": "admittance-transfer-function",
+      "label": "Admittance Transfer Function"
+    },
+    {
+      "slug": "compliant-motion",
+      "label": "Compliant Motion"
+    },
+    {
+      "slug": "compliant-trajectory-generation",
+      "label": "Compliant Trajectory Generation"
+    },
+    {
+      "slug": "contact-based-assembly",
+      "label": "Contact-Based Assembly"
+    },
+    {
+      "slug": "control-layer",
+      "label": "ControlLayer"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "ControlTheoryDomain"
+    },
+    {
+      "slug": "delicate-handling",
+      "label": "Delicate Handling"
+    },
+    {
+      "slug": "dynamic-model",
+      "label": "Dynamic Model"
+    },
+    {
+      "slug": "dynamic-modeling",
+      "label": "Dynamic Modeling"
+    },
+    {
+      "slug": "force-limited-operation",
+      "label": "Force-Limited Operation"
+    },
+    {
+      "slug": "force-sensor",
+      "label": "Force Sensor"
+    },
+    {
+      "slug": "force-to-motion-mapping",
+      "label": "Force-to-Motion Mapping"
+    },
+    {
+      "slug": "hogan-1985-impedance-control",
+      "label": "Hogan 1985 Impedance Control"
+    },
+    {
+      "slug": "ieee-transactions-on-robotics-control-studies",
+      "label": "IEEE Transactions on Robotics Control Studies"
+    },
+    {
+      "slug": "intuitive-surgical-da-vinci-system",
+      "label": "Intuitive Surgical da Vinci System"
+    },
+    {
+      "slug": "iso-ts-15066-2016-collaborative-robots",
+      "label": "ISO/TS 15066:2016 Collaborative Robots"
+    },
+    {
+      "slug": "kinematic-model",
+      "label": "Kinematic Model"
+    },
+    {
+      "slug": "kuka-sensitive-robotics",
+      "label": "KUKA Sensitive Robotics"
+    },
+    {
+      "slug": "mason-1981-compliance-and-force-control",
+      "label": "Mason 1981 Compliance and Force Control"
+    },
+    {
+      "slug": "nasa-robotics-systems-technology-branch",
+      "label": "NASA Robotics Systems Technology Branch"
+    },
+    {
+      "slug": "parameter-tuning",
+      "label": "Parameter Tuning"
+    },
+    {
+      "slug": "position-controlled-robot",
+      "label": "Position-Controlled Robot"
+    },
+    {
+      "slug": "position-controller",
+      "label": "Position Controller"
+    },
+    {
+      "slug": "real-time-control-loop",
+      "label": "Real-Time Control Loop"
+    },
+    {
+      "slug": "safe-human-robot-interaction",
+      "label": "Safe Human-Robot Interaction"
+    },
+    {
+      "slug": "second-order-mechanical-system",
+      "label": "Second-Order Mechanical System"
+    },
+    {
+      "slug": "springer-handbook-of-robotics",
+      "label": "Springer Handbook of Robotics"
+    },
+    {
+      "slug": "universal-robots-technical-documentation",
+      "label": "Universal Robots Technical Documentation"
+    },
+    {
+      "slug": "virtual-damper-spring-mass",
+      "label": "Virtual Damper-Spring-Mass"
+    },
+    {
+      "slug": "virtual-mechanical-system",
+      "label": "Virtual Mechanical System"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force/Torque Sensor"
+    },
+    {
+      "slug": "interaction-control",
+      "label": "Interaction Control"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:37665a743988f934a148041e1f8154cfd9342f9b098caa0151a1e37d6d3e060f",
+  "title": "Accountability (OECD)",
+  "slug": "accountability-oecd",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accountability-oecd",
+  "domain": "artificial-intelligence",
+  "definition": "Organisations and individuals developing, deploying or operating AI systems should be accountable for their proper functioning in accordance with OECD AI Principles and applicable legal frameworks, based on their roles, context and ability to act.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:continuous-improvement",
+        "label": "continuous improvement"
+      },
+      {
+        "id": "urn:visionflow:linked:effective-governance",
+        "label": "Effective governance"
+      },
+      {
+        "id": "urn:visionflow:linked:redress",
+        "label": "redress"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "continuous-improvement",
+      "label": "continuous improvement"
+    },
+    {
+      "slug": "effective-governance",
+      "label": "Effective governance"
+    },
+    {
+      "slug": "ieee-7000",
+      "label": "IEEE 7000"
+    },
+    {
+      "slug": "iso-31000-2018",
+      "label": "ISO 31000:2018"
+    },
+    {
+      "slug": "iso-37301-2021",
+      "label": "ISO 37301:2021"
+    },
+    {
+      "slug": "iso-42001",
+      "label": "ISO 42001"
+    },
+    {
+      "slug": "iso-iec-27001-2022",
+      "label": "ISO/IEC 27001:2022"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "redress",
+      "label": "redress"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:f43f8617ce96b6bc06916964fc2852afdd4f99db041e630dc83b806e5845eed2",
+  "title": "Machine Learning Technique",
+  "slug": "machine-learning-technique",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:machine-learning-technique",
+  "domain": "artificial-intelligence",
+  "definition": "Machine Learning Technique is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": []
+}

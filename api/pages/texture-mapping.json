@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:84964b88996be70a0991c0ec03813de65af89c4328001b6f251d7fe488934bbb",
+  "title": "Texture Mapping",
+  "slug": "texture-mapping",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:texture-mapping",
+  "domain": "spatial-computing",
+  "definition": "TextureMapping is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "character-model",
+      "label": "Character Model"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    }
+  ]
+}

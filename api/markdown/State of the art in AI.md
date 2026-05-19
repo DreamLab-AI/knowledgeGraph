@@ -1,20 +1,266 @@
-iri:: http://narrativegoldmine.com/ontology#StateOfTheArtInAI
-uri:: urn:visionclaw:concept:artificial-intelligence:state-of-the-art-in-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:state-of-the-art-in-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: State of the art in AI
-content-hash:: sha256-12-80481938eb7c
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#StateOfTheArtInAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:state-of-the-art-in-ai
 public:: true
+
+# State of the art in AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1",
+  "@type": "Page",
+  "vc:slug": "state-of-the-art-in-ai",
+  "title": "State of the art in AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:presentation",
+      "vc:label": "presentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:rework-based-on-gpt",
+      "vc:label": "rework based on gpt"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-and-edge",
+      "vc:label": "Hardware and Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "vc:label": "Social contract and jobs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-safety",
+      "vc:label": "Trust and Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-80481938eb7c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#StateOfTheArtInAI"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "State of the art in AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:state-of-the-art-in-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:state-of-the-art-in-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:state-of-the-art-in-ai",
+  "@type": "OntologyClass",
+  "label": "State of the art in AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "State of the art in AI is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:state-of-the-art-in-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[presentation]]",
+      "resolved": "urn:visionflow:linked:presentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[rework based on gpt]]",
+      "resolved": "urn:visionflow:linked:rework-based-on-gpt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hardware and Edge]]",
+      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social contract and jobs]]",
+      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust and Safety]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-safety",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - State of the art in AI is a concept within the ngm domain.
@@ -61,12 +307,12 @@ public:: true
 		- He talks about something I have similarly been saying:
 			- In the event of a complete breakdown of trust in digital information channels people will simply choose only to trust their priors.
 			- This is a fracturing of the information space, effectively bubbles of one. [[Death of the Internet]] [[Social contract and jobs]]
-		- Every time a phase change of technology has been introduced there has been a fundamental shift in governance structures. These take time to play out. Electronic communication allowed global awareness of corruption, and there is a well documented breakdown of [[Privacy, Trust and Safety]] since. We can perhaps see this in the way that leaders are abandoning the pretence of 'norms' in the West.
+		- Every time a phase change of technology has been introduced there has been a fundamental shift in governance structures. These take time to play out. Electronic communication allowed global awareness of corruption, and there is a well documented breakdown of [[Trust and Safety]] since. We can perhaps see this in the way that leaders are abandoning the pretence of 'norms' in the West.
 		- More agile (emerging?) economies / countries may be able to take far more advantage, if they are allowed to, but make no mistake, the UK is currently well positioned. - 🟢 The UK is systemically well positioned to deal with sudden change, because the vertical integration of ministries allows them to be spun up and down in response to change regardless of the leadership. An agile AND persistent civil service can be effective in times of stress.
 			- [Ian Hogarth to lead UK’s AI Foundation Model Taskforce
 		- he's actually a great choice](https://www.gov.uk/government/news/tech-entrepreneur-ian-hogarth-to-lead-uks-ai-foundation-model-taskforce)
 			- [Welcome to State of AI Report 2023](https://www.stateof.ai/)
-			- America is supportive of UK positioning around [[Privacy, Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
+			- America is supportive of UK positioning around [[Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
 			- This perhaps explains the £2.5B [[Infrastructure]] and training investment plan by Microsoft.
 			- These companies are **as big** as the UK. Beware tech bros bearing gifts?
 			  ![image.png](../assets/image_1704045603470_0.png)

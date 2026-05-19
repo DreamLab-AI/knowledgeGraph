@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:4b2909df1d28d61e415bfcc60536bde215c504cc9a499b10e3cc88d2f86da722",
+  "title": "State Machine Replication",
+  "slug": "state-machine-replication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:state-machine-replication",
+  "domain": "blockchain",
+  "definition": "State Machine Replication is a concept within the blockchain domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "fault-tolerance-system",
+      "label": "Fault Tolerance System"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ]
+}

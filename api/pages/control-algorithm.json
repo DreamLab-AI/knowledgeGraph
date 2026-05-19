@@ -1,0 +1,512 @@
+{
+  "id": "urn:visionflow:page:549171c909e7a080c3fb4c7c2fa668b708a7356659737d583a460c8a06813ba4",
+  "title": "Control Algorithm",
+  "slug": "control-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:control-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "ControlAlgorithm is a formalised mathematical and computational procedure that generates actuator commands to drive a dynamic system from its current state toward a desired target state, exploiting feedback from sensors, an internal model of the plant, or learned approximations of system dynamics, and spanning a hierarchy of algorithmic families: classical proportional\u2013integral\u2013derivative (PID) control achieving steady-state error cancellation via u(t) = K_p\u00b7e(t) + K_i\u00b7\u222be dt + K_d\u00b7(de/dt); Linear Quadratic Regulator (LQR) minimising the infinite-horizon quadratic cost J = \u222b\u2080^\u221e(x^T\u00b7Q\u00b7x + u^T\u00b7R\u00b7u)dt by solving the algebraic Riccati equation P\u00b7A + A^T\u00b7P \u2212 P\u00b7B\u00b7R\u207b\u00b9\u00b7B^T\u00b7P + Q = 0 to obtain optimal gain K* = R\u207b\u00b9\u00b7B^T\u00b7P; Model Predictive Control (MPC) solving a receding-horizon finite-time constrained optimisation min_{u} \u03a3_{k=0}^{N\u22121}[x_k^T\u00b7Q\u00b7x_k + u_k^T\u00b7R\u00b7u_k] + x_N^T\u00b7P_f\u00b7x_N subject to state and input constraint polytopes at each sample step; H-infinity (H\u221e) robust control minimising the L\u2082-induced gain from disturbance w to performance output z (\u2016T_{zw}\u2016_\u221e < \u03b3) via two-Riccati or LMI synthesis; sliding mode control (SMC) driving trajectories onto a switching surface s(x) = 0 in finite t",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "id": "urn:visionflow:linked:dynamical-systems",
+      "label": "Dynamical Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "id": "urn:visionflow:owl:class:feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:optimal-control",
+      "label": "Optimal Control"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:adaptation-law",
+        "label": "Adaptation Law"
+      },
+      {
+        "id": "urn:visionflow:linked:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:visionflow:linked:receding-horizon",
+        "label": "Receding Horizon"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-model",
+        "label": "Reference Model"
+      },
+      {
+        "id": "urn:visionflow:linked:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-constraint",
+        "label": "Safety Constraint"
+      },
+      {
+        "id": "urn:visionflow:linked:state-observer",
+        "label": "State Observer"
+      },
+      {
+        "id": "urn:visionflow:linked:switching-surface",
+        "label": "Switching Surface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pid-controller",
+        "label": "PID Controller"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuator-model",
+        "label": "Actuator Model"
+      },
+      {
+        "id": "urn:visionflow:linked:constraint-specification",
+        "label": "Constraint Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:plant-model",
+        "label": "Plant Model"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-feedback",
+        "label": "Sensor Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:state-space",
+        "label": "State Space"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "id": "urn:visionflow:linked:fault-tolerant-control",
+        "label": "Fault-Tolerant Control"
+      },
+      {
+        "id": "urn:visionflow:linked:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:h-infinity-control",
+        "label": "H-Infinity Control"
+      },
+      {
+        "id": "urn:visionflow:linked:iterative-learning-control",
+        "label": "Iterative Learning Control"
+      },
+      {
+        "id": "urn:visionflow:linked:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:visionflow:linked:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:sliding-mode-control",
+        "label": "Sliding Mode Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator-model",
+      "label": "Actuator Model"
+    },
+    {
+      "slug": "adaptation-law",
+      "label": "Adaptation Law"
+    },
+    {
+      "slug": "aerospace",
+      "label": "Aerospace"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "automation-domain",
+      "label": "AutomationDomain"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "bang-bang-control",
+      "label": "Bang-Bang Control"
+    },
+    {
+      "slug": "chemical-process-control",
+      "label": "Chemical Process Control"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "constraint-specification",
+      "label": "Constraint Specification"
+    },
+    {
+      "slug": "control-engineering-domain",
+      "label": "ControlEngineeringDomain"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "cost-function",
+      "label": "Cost Function"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "do-178-c",
+      "label": "DO-178C"
+    },
+    {
+      "slug": "dynamical-systems",
+      "label": "Dynamical Systems"
+    },
+    {
+      "slug": "dynamics",
+      "label": "Dynamics"
+    },
+    {
+      "slug": "embedded-system-layer",
+      "label": "EmbeddedSystemLayer"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "energy-management",
+      "label": "Energy Management"
+    },
+    {
+      "slug": "fault-tolerant-control",
+      "label": "Fault-Tolerant Control"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "h-infinity-control",
+      "label": "H-Infinity Control"
+    },
+    {
+      "slug": "hardware-in-the-loop-testing",
+      "label": "Hardware-in-the-Loop Testing"
+    },
+    {
+      "slug": "humanoid-robotics",
+      "label": "Humanoid Robotics"
+    },
+    {
+      "slug": "iec-61511",
+      "label": "IEC 61511"
+    },
+    {
+      "slug": "ieee-control-systems-society",
+      "label": "IEEE Control Systems Society"
+    },
+    {
+      "slug": "ifac",
+      "label": "IFAC"
+    },
+    {
+      "slug": "iso-26262",
+      "label": "ISO 26262"
+    },
+    {
+      "slug": "iterative-learning-control",
+      "label": "Iterative Learning Control"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "linear-quadratic-regulator",
+      "label": "Linear Quadratic Regulator"
+    },
+    {
+      "slug": "lyapunov-stability",
+      "label": "Lyapunov Stability"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "plant-model",
+      "label": "Plant Model"
+    },
+    {
+      "slug": "power-systems",
+      "label": "Power Systems"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "process-automation",
+      "label": "Process Automation"
+    },
+    {
+      "slug": "receding-horizon",
+      "label": "Receding Horizon"
+    },
+    {
+      "slug": "reference-model",
+      "label": "Reference Model"
+    },
+    {
+      "slug": "reward-signal",
+      "label": "Reward Signal"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "safety-constraint",
+      "label": "Safety Constraint"
+    },
+    {
+      "slug": "safety-critical-systems",
+      "label": "Safety-Critical Systems"
+    },
+    {
+      "slug": "sensor-feedback",
+      "label": "Sensor Feedback"
+    },
+    {
+      "slug": "sliding-mode-control",
+      "label": "Sliding Mode Control"
+    },
+    {
+      "slug": "stability-analysis",
+      "label": "Stability Analysis"
+    },
+    {
+      "slug": "state-observer",
+      "label": "State Observer"
+    },
+    {
+      "slug": "state-space",
+      "label": "State Space"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "switching-surface",
+      "label": "Switching Surface"
+    },
+    {
+      "slug": "system-identification",
+      "label": "System Identification"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open-Loop Control"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "pid-controller",
+      "label": "PID Controller"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

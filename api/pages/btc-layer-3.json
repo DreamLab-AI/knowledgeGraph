@@ -1,0 +1,960 @@
+{
+  "id": "urn:visionflow:page:82a8dcc2b98513fe83c2fb3e48b8fc38ee669868af676757938acdeeae2c35a7",
+  "title": "BTC Layer 3",
+  "slug": "btc-layer-3",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:btc-layer-3",
+  "domain": "blockchain",
+  "definition": "**BTC Layer 3** (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack \u2014 a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the [[Lightning Network]] and emerging [[rollup]] systems) that provide [[smart contracts]], [[token issuance]], [[DeFi]] primitives, [[NFTs]], and complex financial instruments on Bitcoin without requiring any modification to Bitcoin's base-layer consensus rules. This layered approach preserves the foundational properties of [[censorship resistance]], [[immutability]], and [[decentralization]] that make Bitcoin valuable as a settlement layer whilst dramatically extending its programmable surface area for application developers, achieving a separation of concerns analogous to the Internet's OSI model wherein higher-layer application protocols exploit lower-layer transport without changing the physical layer.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:application-layer-protocol",
+      "label": "Application Layer Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:bitcoin-protocol-stack",
+      "label": "Bitcoin Protocol Stack"
+    },
+    {
+      "id": "urn:visionflow:linked:blockchain-scalability-solution",
+      "label": "Blockchain Scalability Solution"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "qualityScore": 0.54,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:babylon-protocol",
+        "label": "Babylon Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:bit-vm",
+        "label": "BitVM"
+      },
+      {
+        "id": "urn:visionflow:linked:bob-protocol",
+        "label": "BOB Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:brc-20",
+        "label": "BRC-20"
+      },
+      {
+        "id": "urn:visionflow:linked:citrea",
+        "label": "Citrea"
+      },
+      {
+        "id": "urn:visionflow:linked:discreet-log-contracts",
+        "label": "Discreet Log Contracts"
+      },
+      {
+        "id": "urn:visionflow:linked:merlin-chain",
+        "label": "Merlin Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:ordinals",
+        "label": "Ordinals"
+      },
+      {
+        "id": "urn:visionflow:linked:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:rootstock",
+        "label": "Rootstock"
+      },
+      {
+        "id": "urn:visionflow:linked:runes-protocol",
+        "label": "Runes Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:stacks",
+        "label": "Stacks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-commitments",
+        "label": "Cryptographic Commitments"
+      },
+      {
+        "id": "urn:visionflow:linked:seg-wit",
+        "label": "SegWit"
+      },
+      {
+        "id": "urn:visionflow:linked:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-agent-smart-contracts",
+        "label": "AI Agent Smart Contracts"
+      },
+      {
+        "id": "urn:visionflow:linked:atomic-swaps",
+        "label": "Atomic Swaps"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-de-fi",
+        "label": "Bitcoin DeFi"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:visionflow:linked:non-fungible-tokens",
+        "label": "Non-Fungible Tokens"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contracts-on-bitcoin",
+        "label": "Smart Contracts on Bitcoin"
+      },
+      {
+        "id": "urn:visionflow:linked:stablecoins-on-bitcoin",
+        "label": "Stablecoins on Bitcoin"
+      },
+      {
+        "id": "urn:visionflow:linked:token-issuance",
+        "label": "Token Issuance"
+      },
+      {
+        "id": "urn:visionflow:linked:trustless-bridges",
+        "label": "Trustless Bridges"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:fraud-proofs",
+        "label": "Fraud Proofs"
+      },
+      {
+        "id": "urn:visionflow:linked:merged-mining",
+        "label": "Merged Mining"
+      },
+      {
+        "id": "urn:visionflow:linked:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:visionflow:linked:ordinal-theory",
+        "label": "Ordinal Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:proof-of-transfer",
+        "label": "Proof of Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent",
+      "label": "AI agent"
+    },
+    {
+      "slug": "ai-agent-smart-contracts",
+      "label": "AI Agent Smart Contracts"
+    },
+    {
+      "slug": "alpen",
+      "label": "Alpen"
+    },
+    {
+      "slug": "alu-vm",
+      "label": "AluVM"
+    },
+    {
+      "slug": "application-layer-protocol",
+      "label": "Application Layer Protocol"
+    },
+    {
+      "slug": "aptos",
+      "label": "Aptos"
+    },
+    {
+      "slug": "asigna",
+      "label": "Asigna"
+    },
+    {
+      "slug": "atomic-swaps",
+      "label": "Atomic Swaps"
+    },
+    {
+      "slug": "babylon",
+      "label": "Babylon"
+    },
+    {
+      "slug": "babylon-protocol",
+      "label": "Babylon Protocol"
+    },
+    {
+      "slug": "back-2014-enabling-blockchain-innovations-pegged-sidechains",
+      "label": "Back 2014 Enabling Blockchain Innovations Pegged Sidechains"
+    },
+    {
+      "slug": "bifrost",
+      "label": "Bifrost"
+    },
+    {
+      "slug": "bip-341-taproot",
+      "label": "BIP-341 Taproot"
+    },
+    {
+      "slug": "bip-342-tapscript",
+      "label": "BIP-342 Tapscript"
+    },
+    {
+      "slug": "bit-flow",
+      "label": "BitFlow"
+    },
+    {
+      "slug": "bit-vm",
+      "label": "BitVM"
+    },
+    {
+      "slug": "bit-vm-alliance-2025-bit-vm2-bridging-bitcoin-to-second-layers",
+      "label": "BitVM Alliance 2025 BitVM2 Bridging Bitcoin to Second Layers"
+    },
+    {
+      "slug": "bit-vm-bridge",
+      "label": "BitVM Bridge"
+    },
+    {
+      "slug": "bit-vm2",
+      "label": "BitVM2"
+    },
+    {
+      "slug": "bitcoin-de-fi",
+      "label": "Bitcoin DeFi"
+    },
+    {
+      "slug": "bitcoin-improvement-proposals",
+      "label": "Bitcoin Improvement Proposals"
+    },
+    {
+      "slug": "bitcoin-nfts",
+      "label": "Bitcoin NFTs"
+    },
+    {
+      "slug": "bitcoin-optech-2024-discreet-log-contracts",
+      "label": "Bitcoin Optech 2024 Discreet Log Contracts"
+    },
+    {
+      "slug": "bitcoin-protocol-stack",
+      "label": "BitcoinProtocolStack"
+    },
+    {
+      "slug": "bitcoin-protocol-stack",
+      "label": "Bitcoin Protocol Stack"
+    },
+    {
+      "slug": "bitcoin-scalability",
+      "label": "Bitcoin Scalability"
+    },
+    {
+      "slug": "bitcoin-script",
+      "label": "Bitcoin Script"
+    },
+    {
+      "slug": "bitcoin-staking",
+      "label": "Bitcoin Staking"
+    },
+    {
+      "slug": "bitcoin-standard",
+      "label": "Bitcoin Standard"
+    },
+    {
+      "slug": "bitlayer",
+      "label": "Bitlayer"
+    },
+    {
+      "slug": "bitlayer-2025-first-bit-vm-bridge-use-case-bitcoin-mainnet",
+      "label": "Bitlayer 2025 First BitVM Bridge Use Case Bitcoin Mainnet"
+    },
+    {
+      "slug": "blockchain-scalability-solution",
+      "label": "Blockchain Scalability Solution"
+    },
+    {
+      "slug": "bob-protocol",
+      "label": "BOB Protocol"
+    },
+    {
+      "slug": "borrowing",
+      "label": "borrowing"
+    },
+    {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
+      "slug": "cardano-smart-contracts",
+      "label": "Cardano Smart Contracts"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "citrea",
+      "label": "Citrea"
+    },
+    {
+      "slug": "citrea-2026-mainnet-launch-bitcoin-zk-rollup",
+      "label": "Citrea 2026 Mainnet Launch Bitcoin ZK-Rollup"
+    },
+    {
+      "slug": "clarity",
+      "label": "Clarity"
+    },
+    {
+      "slug": "client-side-validation",
+      "label": "Client-Side Validation"
+    },
+    {
+      "slug": "coin-law-2025-layer-3-blockchain-growth-statistics",
+      "label": "CoinLaw 2025 Layer 3 Blockchain Growth Statistics"
+    },
+    {
+      "slug": "confidential-transactions",
+      "label": "Confidential Transactions"
+    },
+    {
+      "slug": "cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    },
+    {
+      "slug": "cryptographic-commitments",
+      "label": "Cryptographic Commitments"
+    },
+    {
+      "slug": "cryptographic-hash-functions",
+      "label": "Cryptographic Hash Functions"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-fi-protocols",
+      "label": "DeFi Protocols"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "DigitalAssetDomain"
+    },
+    {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "dlc",
+      "label": "DLC"
+    },
+    {
+      "slug": "dlc-link",
+      "label": "DLC.Link"
+    },
+    {
+      "slug": "dlcs",
+      "label": "DLCs"
+    },
+    {
+      "slug": "dryja-2018-discreet-log-contracts-mit-dci",
+      "label": "Dryja 2018 Discreet Log Contracts MIT DCI"
+    },
+    {
+      "slug": "ethereum-layer-2",
+      "label": "Ethereum Layer 2"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
+      "slug": "european-union",
+      "label": "European Union"
+    },
+    {
+      "slug": "fairgate-2025-computing-on-bitcoin-bit-vm2-mainnet",
+      "label": "Fairgate 2025 Computing on Bitcoin BitVM2 Mainnet"
+    },
+    {
+      "slug": "financial-privacy",
+      "label": "Financial Privacy"
+    },
+    {
+      "slug": "fournier-2020-one-time-verifiably-encrypted-signatures-dlcs",
+      "label": "Fournier 2020 One-Time Verifiably Encrypted Signatures DLCs"
+    },
+    {
+      "slug": "fraud-proofs",
+      "label": "Fraud Proofs"
+    },
+    {
+      "slug": "fulgur-ventures",
+      "label": "Fulgur Ventures"
+    },
+    {
+      "slug": "global-south",
+      "label": "Global South"
+    },
+    {
+      "slug": "globe-newswire-2025-rgb20-bit-mask-mainnet-tether-bitcoin",
+      "label": "GlobeNewswire 2025 RGB20 BitMask Mainnet Tether Bitcoin"
+    },
+    {
+      "slug": "hash-functions",
+      "label": "hash functions"
+    },
+    {
+      "slug": "hash-time-locked-contracts",
+      "label": "Hash Time-Locked Contracts"
+    },
+    {
+      "slug": "hozk-2026-bitcoin-l2s-reality-check",
+      "label": "hozk 2026 Bitcoin L2s Reality Check"
+    },
+    {
+      "slug": "layer-2-solutions",
+      "label": "Layer 2 Solutions"
+    },
+    {
+      "slug": "lending",
+      "label": "lending"
+    },
+    {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
+      "slug": "lightning-labs-2024-taproot-assets-lightning-global-financial-interoperability",
+      "label": "Lightning Labs 2024 Taproot Assets Lightning Global Financial Interoperability"
+    },
+    {
+      "slug": "lightning-labs-2025-taproot-assets-v0-6-decentralised-fx-network",
+      "label": "Lightning Labs 2025 Taproot Assets v0.6 Decentralised FX Network"
+    },
+    {
+      "slug": "lightning-labs-2025-taproot-assets-v0-7-set-and-forget-asset-layer",
+      "label": "Lightning Labs 2025 Taproot Assets v0.7 Set and Forget Asset Layer"
+    },
+    {
+      "slug": "lightning-network-layer",
+      "label": "LightningNetworkLayer"
+    },
+    {
+      "slug": "lightning-network-specification",
+      "label": "Lightning Network Specification"
+    },
+    {
+      "slug": "linus-2023-bit-vm-compute-anything-on-bitcoin",
+      "label": "Linus 2023 BitVM Compute Anything on Bitcoin"
+    },
+    {
+      "slug": "linus-2025-bit-vm2-iacr-e-print-2025-1158",
+      "label": "Linus 2025 BitVM2 IACR ePrint 2025-1158"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "liquidium",
+      "label": "Liquidium"
+    },
+    {
+      "slug": "lnp-bp-standards-association",
+      "label": "LNP/BP Standards Association"
+    },
+    {
+      "slug": "lnp-bp-standards-association-2024-2025-rgb-protocol-specifications",
+      "label": "LNP/BP Standards Association 2024-2025 RGB Protocol Specifications"
+    },
+    {
+      "slug": "merged-mining",
+      "label": "Merged Mining"
+    },
+    {
+      "slug": "merkle-proofs",
+      "label": "Merkle Proofs"
+    },
+    {
+      "slug": "merkle-trees",
+      "label": "Merkle trees"
+    },
+    {
+      "slug": "merlin-chain",
+      "label": "Merlin Chain"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "nakamoto-upgrade",
+      "label": "Nakamoto upgrade"
+    },
+    {
+      "slug": "nfts",
+      "label": "NFTs"
+    },
+    {
+      "slug": "non-fungible-tokens",
+      "label": "non-fungible tokens"
+    },
+    {
+      "slug": "non-fungible-tokens",
+      "label": "Non-Fungible Tokens"
+    },
+    {
+      "slug": "obeirne-2023-bip-345-op-vault",
+      "label": "OBeirne 2023 BIP-345 OP_VAULT"
+    },
+    {
+      "slug": "odin-fun",
+      "label": "Odin.fun"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "optimistic rollup"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
+    },
+    {
+      "slug": "oracle-networks",
+      "label": "oracle networks"
+    },
+    {
+      "slug": "ordinal",
+      "label": "Ordinal"
+    },
+    {
+      "slug": "ordinal-theory",
+      "label": "Ordinal Theory"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "point-time-locked-contracts",
+      "label": "Point Time-Locked Contracts"
+    },
+    {
+      "slug": "poon-dryja-2016-bitcoin-lightning-network-whitepaper",
+      "label": "Poon Dryja 2016 Bitcoin Lightning Network Whitepaper"
+    },
+    {
+      "slug": "programmable-finance",
+      "label": "Programmable Finance"
+    },
+    {
+      "slug": "proof-of-transfer",
+      "label": "Proof of Transfer"
+    },
+    {
+      "slug": "remittance",
+      "label": "remittance"
+    },
+    {
+      "slug": "rgb-protocol",
+      "label": "RGB Protocol"
+    },
+    {
+      "slug": "rodarmor-2023-ordinal-theory-handbook",
+      "label": "Rodarmor 2023 Ordinal Theory Handbook"
+    },
+    {
+      "slug": "rollup",
+      "label": "rollup"
+    },
+    {
+      "slug": "rollups",
+      "label": "rollups"
+    },
+    {
+      "slug": "rootstock",
+      "label": "Rootstock"
+    },
+    {
+      "slug": "rootstock-foundation-2025-rsk-evm-compatible-bitcoin-sidechain",
+      "label": "Rootstock Foundation 2025 RSK EVM Compatible Bitcoin Sidechain"
+    },
+    {
+      "slug": "rubin-2019-bip-119-checktemplateverify",
+      "label": "Rubin 2019 BIP-119 CHECKTEMPLATEVERIFY"
+    },
+    {
+      "slug": "runes",
+      "label": "Runes"
+    },
+    {
+      "slug": "runes-protocol",
+      "label": "Runes Protocol"
+    },
+    {
+      "slug": "s-btc",
+      "label": "sBTC"
+    },
+    {
+      "slug": "scaling-solutions",
+      "label": "Scaling Solutions"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr signatures"
+    },
+    {
+      "slug": "science-direct-2025-programming-on-bitcoin-survey",
+      "label": "ScienceDirect 2025 Programming on Bitcoin Survey"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
+    },
+    {
+      "slug": "sidechains",
+      "label": "sidechains"
+    },
+    {
+      "slug": "smart-contracts-on-bitcoin",
+      "label": "Smart Contracts on Bitcoin"
+    },
+    {
+      "slug": "solana-programs",
+      "label": "Solana Programs"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "sovryn",
+      "label": "Sovryn"
+    },
+    {
+      "slug": "stablecoin-issuance",
+      "label": "Stablecoin Issuance"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "stablecoins"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "stablecoins-on-bitcoin",
+      "label": "Stablecoins on Bitcoin"
+    },
+    {
+      "slug": "stacks",
+      "label": "Stacks"
+    },
+    {
+      "slug": "stacks-2024-nakamoto-upgrade-s-btc-announcement",
+      "label": "Stacks 2024 Nakamoto Upgrade sBTC Announcement"
+    },
+    {
+      "slug": "state-channels",
+      "label": "State Channels"
+    },
+    {
+      "slug": "state-channels",
+      "label": "state channels"
+    },
+    {
+      "slug": "storm",
+      "label": "Storm"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "taproot-upgrade",
+      "label": "Taproot Upgrade"
+    },
+    {
+      "slug": "taproot-witnesses",
+      "label": "Taproot Witnesses"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "token-issuance",
+      "label": "token issuance"
+    },
+    {
+      "slug": "token-issuance",
+      "label": "Token Issuance"
+    },
+    {
+      "slug": "tron",
+      "label": "Tron"
+    },
+    {
+      "slug": "trustless-bridges",
+      "label": "Trustless Bridges"
+    },
+    {
+      "slug": "utxo-commitments",
+      "label": "UTXO Commitments"
+    },
+    {
+      "slug": "velar",
+      "label": "Velar"
+    },
+    {
+      "slug": "wormhole",
+      "label": "Wormhole"
+    },
+    {
+      "slug": "wuille-2020-bip-340-bip-341-bip-342-taproot-upgrade",
+      "label": "Wuille 2020 BIP-340 BIP-341 BIP-342 Taproot Upgrade"
+    },
+    {
+      "slug": "xverse",
+      "label": "Xverse"
+    },
+    {
+      "slug": "yield-generation",
+      "label": "yield generation"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "zero-knowledge proofs"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "zero-knowledge-rollup",
+      "label": "Zero-Knowledge Rollup"
+    },
+    {
+      "slug": "zest-protocol",
+      "label": "Zest Protocol"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "atomic swap"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "censorship resistance"
+    },
+    {
+      "slug": "cosmos-ibc",
+      "label": "Cosmos IBC"
+    },
+    {
+      "slug": "decentralization",
+      "label": "decentralization"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "immutability",
+      "label": "immutability"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "liquidity provision"
+    },
+    {
+      "slug": "miner",
+      "label": "miner"
+    },
+    {
+      "slug": "polkadot-parachains",
+      "label": "Polkadot Parachains"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "proof-of-stake"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "proof-of-work"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "smart contract"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "smart contracts"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-depth",
+      "label": "Model Depth"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

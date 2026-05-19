@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1",
+  "title": "Robot Learning",
+  "slug": "robot-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-learning",
+  "domain": "robotics",
+  "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforcement learning (policy optimization, reward-based training), and self-supervised learning (representation learning, world models) for perception, control, planning, and human-robot interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.89,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:self-supervised-learning",
+        "label": "SelfSupervisedLearning"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-learning",
+        "label": "TransferLearning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:imitation-learning",
+        "label": "ImitationLearning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "ReinforcementLearning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:compute-resources",
+        "label": "ComputeResources"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-data",
+        "label": "SensorData"
+      },
+      {
+        "id": "urn:visionflow:linked:simulation-environment",
+        "label": "SimulationEnvironment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "TrainingData"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:skill-acquisition",
+        "label": "SkillAcquisition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:adaptive-control",
+        "label": "AdaptiveControl"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "AutonomousNavigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "association-for-the-advancement-of-artificial-intelligence-aaai",
+      "label": "Association for the Advancement of Artificial Intelligence (AAAI)"
+    },
+    {
+      "slug": "compute-resources",
+      "label": "ComputeResources"
+    },
+    {
+      "slug": "conference-on-robot-learning-co-rl",
+      "label": "Conference on Robot Learning (CoRL)"
+    },
+    {
+      "slug": "ieee-robotics-and-automation",
+      "label": "IEEE Robotics and Automation"
+    },
+    {
+      "slug": "international-conference-on-learning-representations-iclr",
+      "label": "International Conference on Learning Representations (ICLR)"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "SelfSupervisedLearning"
+    },
+    {
+      "slug": "sensor-data",
+      "label": "SensorData"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "SimulationEnvironment"
+    },
+    {
+      "slug": "skill-acquisition",
+      "label": "SkillAcquisition"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "TransferLearning"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "AdaptiveControl"
+    },
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "AutonomousNavigation"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "ImitationLearning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "manipulation",
+      "label": "Manipulation"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "ReinforcementLearning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "training-data",
+      "label": "TrainingData"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    }
+  ]
+}

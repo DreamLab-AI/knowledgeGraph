@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:5b730e6a16aa40d8f0a2e099a232455b1a3e215eb93870f3060691594049ff11",
+  "title": "Pid Controller",
+  "slug": "pid-controller",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pid-controller",
+  "domain": "spatial-computing",
+  "definition": "- maturity:: draft",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:rb-0047-feedback-control",
+      "label": "rb 0047 feedback control"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rb-0047-feedback-control",
+      "label": "rb 0047 feedback control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    }
+  ]
+}

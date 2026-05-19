@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:18b645ab184f32fcd1de7bdeaf02eec324fa841e05cad4363412feafb9292cef",
+  "title": "Etsi Metaverse Domain Taxonomy",
+  "slug": "etsi-metaverse-domain-taxonomy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+  "domain": "spatial-computing",
+  "definition": "A hierarchical classification system developed by ETSI organising metaverse concepts, technologies, and services into structured categories, enabling consistent terminology, clear domain boundaries, and interoperable standards development across the telecommunications and immersive technology industries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:taxonomy",
+      "label": "Taxonomy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:standards-interoperability",
+        "label": "Standards Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "standards-interoperability",
+      "label": "Standards Interoperability"
+    },
+    {
+      "slug": "taxonomy",
+      "label": "Taxonomy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "etsi-domain-data-management-ai",
+      "label": "ETSI Domain: Data Management + AI"
+    },
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    },
+    {
+      "slug": "etsi-domain-data-management-cultural-heritage",
+      "label": "ETSI Domain: Data Management + Cultural Heritage"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    },
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "etsi-domain-governance-and-ethics",
+      "label": "ETSI Domain: Governance & Ethics"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "urn:visionflow:page:35f17649597538afaf4da773c729b4e78021771e497792bd1c8792dcff78db96",
+  "title": "Digital Well-Being Index",
+  "slug": "digital-well-being-index",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-well-being-index",
+  "domain": "spatial-computing",
+  "definition": "Composite indicator assessing psychological, social, physical, and temporal impacts of extended virtual engagement, providing quantitative measures of healthy metaverse usage patterns.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cognitive-load-measurements",
+        "label": "Cognitive Load Measurements"
+      },
+      {
+        "id": "urn:visionflow:linked:emotional-wellness-scores",
+        "label": "Emotional Wellness Scores"
+      },
+      {
+        "id": "urn:visionflow:linked:physical-activity-indicators",
+        "label": "Physical Activity Indicators"
+      },
+      {
+        "id": "urn:visionflow:linked:screen-time-metrics",
+        "label": "Screen Time Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:sleep-impact-assessment",
+        "label": "Sleep Impact Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:social-engagement-scores",
+        "label": "Social Engagement Scores"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:behavioral-tracking",
+        "label": "Behavioral Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:health-data-integration",
+        "label": "Health Data Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-analysis-tools",
+        "label": "Temporal Analysis Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-analytics",
+        "label": "Usage Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:healthy-engagement-recommendations",
+        "label": "Healthy Engagement Recommendations"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-health-reports",
+        "label": "Platform Health Reports"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-alerts",
+        "label": "Usage Alerts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:parental-controls",
+        "label": "Parental Controls"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-logging",
+      "label": "Activity Logging"
+    },
+    {
+      "slug": "behavioral-tracking",
+      "label": "Behavioral Tracking"
+    },
+    {
+      "slug": "cognitive-load-measurements",
+      "label": "Cognitive Load Measurements"
+    },
+    {
+      "slug": "emotional-wellness-scores",
+      "label": "Emotional Wellness Scores"
+    },
+    {
+      "slug": "health-data-integration",
+      "label": "Health Data Integration"
+    },
+    {
+      "slug": "healthy-engagement-recommendations",
+      "label": "Healthy Engagement Recommendations"
+    },
+    {
+      "slug": "physical-activity-indicators",
+      "label": "Physical Activity Indicators"
+    },
+    {
+      "slug": "platform-governance-framework",
+      "label": "Platform Governance Framework"
+    },
+    {
+      "slug": "platform-health-reports",
+      "label": "Platform Health Reports"
+    },
+    {
+      "slug": "screen-time-metrics",
+      "label": "Screen Time Metrics"
+    },
+    {
+      "slug": "self-report-surveys",
+      "label": "Self-Report Surveys"
+    },
+    {
+      "slug": "sleep-impact-assessment",
+      "label": "Sleep Impact Assessment"
+    },
+    {
+      "slug": "social-engagement-scores",
+      "label": "Social Engagement Scores"
+    },
+    {
+      "slug": "temporal-analysis-tools",
+      "label": "Temporal Analysis Tools"
+    },
+    {
+      "slug": "usage-alerts",
+      "label": "Usage Alerts"
+    },
+    {
+      "slug": "usage-analytics",
+      "label": "Usage Analytics"
+    },
+    {
+      "slug": "user-health-monitoring-system",
+      "label": "User Health Monitoring System"
+    },
+    {
+      "slug": "who-digital-well-being-metrics",
+      "label": "WHO Digital Well-Being Metrics"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "metaverse-psychology-profile",
+      "label": "Metaverse Psychology Profile"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "parental-controls",
+      "label": "Parental Controls"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "wearable-device-integration",
+      "label": "Wearable Device Integration"
+    }
+  ],
+  "backlinks": []
+}

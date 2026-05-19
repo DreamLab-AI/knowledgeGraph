@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:b99c880fe68d222707158dc902c9f7c5c38d07931d9f1279bc51b790c8d1dbda",
+  "title": "Blockchain Collaboration",
+  "slug": "blockchain-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-collaboration",
+  "domain": "distributed-collaboration",
+  "definition": "\"The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent record-keeping without centralised intermediaries.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "label": "ConsensusProtocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:transparent-decision-making",
+        "label": "TransparentDecisionMaking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "DecentralisedAutonomousOrganisation"
+    },
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-251-smart-contract-coordination",
+      "label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "slug": "tele-253-cryptocurrency-remuneration",
+      "label": "TELE-253-cryptocurrency-remuneration"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "ConsensusProtocol"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "SmartContracts"
+    },
+    {
+      "slug": "transparent-decision-making",
+      "label": "TransparentDecisionMaking"
+    }
+  ],
+  "backlinks": []
+}

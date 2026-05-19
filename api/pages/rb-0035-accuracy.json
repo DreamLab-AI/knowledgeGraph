@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:2ee848e11adaed0543815fecd7fa319ea5cda66c70f1be5d5e2b38e842845ed8",
+  "title": "rb 0035 accuracy",
+  "slug": "rb-0035-accuracy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0035-accuracy",
+  "domain": "robotics",
+  "definition": "**Accuracy** - Difference between commanded and actual position",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

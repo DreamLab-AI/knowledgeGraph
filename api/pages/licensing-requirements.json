@@ -1,0 +1,275 @@
+{
+  "id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253",
+  "title": "Licensing Requirements",
+  "slug": "licensing-requirements",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:licensing-requirements",
+  "domain": "blockchain",
+  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] ($100K-$1M capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and ongoing compliance reporting. Licensing fragmentation creates cost barriers\u2014a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions with diverse requirements\u2014incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity in developed markets (UK, Switzerland, El Salvador) attracts institutional capital.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub-needs-content",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aave-arc",
+      "label": "Aave Arc"
+    },
+    {
+      "slug": "basel-committee",
+      "label": "Basel Committee"
+    },
+    {
+      "slug": "bc-0479-regulatory-compliance",
+      "label": "BC-0479-regulatory-compliance"
+    },
+    {
+      "slug": "bc-0480-kyc-requirements",
+      "label": "BC-0480-kyc-requirements"
+    },
+    {
+      "slug": "bc-0481-anti-money-laundering",
+      "label": "BC-0481-anti-money-laundering"
+    },
+    {
+      "slug": "bc-0484-markets-in-crypto-assets",
+      "label": "BC-0484-markets-in-crypto-assets"
+    },
+    {
+      "slug": "bc-0485-travel-rule",
+      "label": "BC-0485-travel-rule"
+    },
+    {
+      "slug": "bc-0486-regulatory-reporting",
+      "label": "BC-0486-regulatory-reporting"
+    },
+    {
+      "slug": "bc-0487-compliance-monitoring",
+      "label": "BC-0487-compliance-monitoring"
+    },
+    {
+      "slug": "bc-0489-consumer-protection",
+      "label": "BC-0489-consumer-protection"
+    },
+    {
+      "slug": "bc-0490-cross-border-compliance",
+      "label": "BC-0490-cross-border-compliance"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "bit-license",
+      "label": "BitLicense"
+    },
+    {
+      "slug": "bit-trade",
+      "label": "Bit Trade"
+    },
+    {
+      "slug": "bitcoin-suisse",
+      "label": "Bitcoin Suisse"
+    },
+    {
+      "slug": "bitstamp",
+      "label": "Bitstamp"
+    },
+    {
+      "slug": "blockchain-com",
+      "label": "Blockchain.com"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "coincheck",
+      "label": "Coincheck"
+    },
+    {
+      "slug": "coinhako",
+      "label": "Coinhako"
+    },
+    {
+      "slug": "compound-treasury",
+      "label": "Compound Treasury"
+    },
+    {
+      "slug": "copper-co",
+      "label": "Copper.co"
+    },
+    {
+      "slug": "crypto-com",
+      "label": "Crypto.com"
+    },
+    {
+      "slug": "crypto-council-for-innovation",
+      "label": "Crypto Council for Innovation"
+    },
+    {
+      "slug": "cryptocurrency-exchange",
+      "label": "CryptocurrencyExchange"
+    },
+    {
+      "slug": "digital-assets-and-registered-exchanges-act",
+      "label": "Digital Assets and Registered Exchanges Act"
+    },
+    {
+      "slug": "e-toro",
+      "label": "eToro"
+    },
+    {
+      "slug": "earn-programme",
+      "label": "Earn programme"
+    },
+    {
+      "slug": "exchange-platform",
+      "label": "ExchangePlatform"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "finma",
+      "label": "FINMA"
+    },
+    {
+      "slug": "fsa",
+      "label": "FSA"
+    },
+    {
+      "slug": "ftx",
+      "label": "FTX"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "global-digital-finance",
+      "label": "Global Digital Finance"
+    },
+    {
+      "slug": "independent-reserve",
+      "label": "Independent Reserve"
+    },
+    {
+      "slug": "iosco",
+      "label": "IOSCO"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "luno",
+      "label": "Luno"
+    },
+    {
+      "slug": "mas",
+      "label": "MAS"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "money-transmitter-licence",
+      "label": "Money Transmitter Licence"
+    },
+    {
+      "slug": "money-transmitter-license",
+      "label": "MoneyTransmitterLicense"
+    },
+    {
+      "slug": "nydfs",
+      "label": "NYDFS"
+    },
+    {
+      "slug": "paxos",
+      "label": "Paxos"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "revolut",
+      "label": "Revolut"
+    },
+    {
+      "slug": "robinhood-crypto",
+      "label": "Robinhood Crypto"
+    },
+    {
+      "slug": "seba-bank",
+      "label": "SEBA Bank"
+    },
+    {
+      "slug": "sfc",
+      "label": "SFC"
+    },
+    {
+      "slug": "sygnum-bank",
+      "label": "Sygnum Bank"
+    },
+    {
+      "slug": "tsubasa-group",
+      "label": "Tsubasa Group"
+    },
+    {
+      "slug": "uniswap-labs",
+      "label": "Uniswap Labs"
+    },
+    {
+      "slug": "winklevoss",
+      "label": "Winklevoss"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "RegulatoryFramework"
+    }
+  ],
+  "backlinks": []
+}

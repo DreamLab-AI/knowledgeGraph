@@ -1,21 +1,300 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#VirtualRealityTelepresence
-uri:: urn:visionclaw:concept:distributed-collaboration:virtual-reality-telepresence
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:virtual-reality-telepresence
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Virtual Reality Telepresence
-content-hash:: sha256-12-2b91dea23b1f
-legacy-term-id:: TC-4000
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#VirtualRealityTelepresence
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:virtual-reality-telepresence
 public:: true
+
+# Virtual Reality Telepresence
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251",
+  "@type": "Page",
+  "vc:slug": "virtual-reality-telepresence",
+  "title": "Virtual Reality Telepresence",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:remote-design-review",
+      "vc:label": "RemoteDesignReview"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-021-augmented-reality-collaboration",
+      "vc:label": "TELE-021-augmented-reality-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "vc:label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-027-spatial-platform",
+      "vc:label": "TELE-027-spatial-platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "vc:label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-058-foveated-rendering",
+      "vc:label": "TELE-058-foveated-rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-102-codec-avatars",
+      "vc:label": "TELE-102-codec-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-110-spatial-audio-processing",
+      "vc:label": "TELE-110-spatial-audio-processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-154-edge-computing-telepresence",
+      "vc:label": "TELE-154-edge-computing-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-157-predictive-tracking",
+      "vc:label": "TELE-157-predictive-tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2b91dea23b1f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#VirtualRealityTelepresence"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-4000"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Virtual Reality Telepresence"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:virtual-reality-telepresence"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:virtual-reality-telepresence"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:virtual-reality-telepresence",
+  "@type": "OntologyClass",
+  "label": "Virtual Reality Telepresence",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"The use of virtual reality head-mounted displays and immersive 3D environments to enable remote participants to experience shared virtual spaces with stereoscopic vision, spatial audio, head tracking, and avatar embodiment, creating a subjective sense of co-location despite geographical separation.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:tele-110-spatial-audio-processing",
+      "vc:label": "TELE-110-spatial-audio-processing"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:remote-design-review",
+      "vc:label": "RemoteDesignReview"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:virtual-reality-telepresence:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[RemoteDesignReview]]",
+      "resolved": "urn:visionflow:linked:remote-design-review",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-021-augmented-reality-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-021-augmented-reality-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-026-microsoft-mesh]]",
+      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-027-spatial-platform]]",
+      "resolved": "urn:visionflow:linked:tele-027-spatial-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-028-horizon-workrooms]]",
+      "resolved": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-058-foveated-rendering]]",
+      "resolved": "urn:visionflow:linked:tele-058-foveated-rendering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-102-codec-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-102-codec-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-110-spatial-audio-processing]]",
+      "resolved": "urn:visionflow:linked:tele-110-spatial-audio-processing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-154-edge-computing-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-154-edge-computing-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-157-predictive-tracking]]",
+      "resolved": "urn:visionflow:linked:tele-157-predictive-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-001-telepresence]]",
+      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "The use of virtual reality head-mounted displays and immersive 3D environments to enable remote participants to experience shared virtual spaces with stereoscopic vision, spatial audio, head tracking, and avatar embodiment, creating a subjective sense of co-location despite geographical separation."

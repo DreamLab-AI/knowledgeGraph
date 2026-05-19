@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:0459c95e67ddad069af922485b5720db509cce31b36e6cac45c4534f190a1ff1",
+  "title": "Identity Graph",
+  "slug": "identity-graph",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:identity-graph",
+  "domain": "infrastructure",
+  "definition": "A network-based data structure representing entities, their digital identities, and relationships in a graph database optimized for identity resolution, trust scoring, and social network analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:identity-node",
+        "label": "Identity Node"
+      },
+      {
+        "id": "urn:visionflow:linked:relationship-edge",
+        "label": "Relationship Edge"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-attribute",
+        "label": "Trust Attribute"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "did-resolution",
+      "label": "DID Resolution"
+    },
+    {
+      "slug": "dif-universal-resolver",
+      "label": "DIF Universal Resolver"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "identity-node",
+      "label": "Identity Node"
+    },
+    {
+      "slug": "identity-resolution",
+      "label": "Identity Resolution"
+    },
+    {
+      "slug": "relationship-edge",
+      "label": "Relationship Edge"
+    },
+    {
+      "slug": "social-network-analysis",
+      "label": "Social Network Analysis"
+    },
+    {
+      "slug": "trust-attribute",
+      "label": "Trust Attribute"
+    },
+    {
+      "slug": "trust-metrics",
+      "label": "Trust Metrics"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

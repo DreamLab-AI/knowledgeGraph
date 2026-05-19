@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:4bf6d3eb981e74f43211611e8db4397aa5b901410a94c38bddffbe61eb3ff215",
+  "title": "Honesty",
+  "slug": "honesty",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:honesty",
+  "domain": "artificial-intelligence",
+  "definition": "An alignment objective ensuring AI systems provide truthful and accurate information, avoiding false claims and acknowledging uncertainty when appropriate. Honesty (also called truthfulness) represents a critical dimension of trustworthy AI alongside helpfulness and harmlessness.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

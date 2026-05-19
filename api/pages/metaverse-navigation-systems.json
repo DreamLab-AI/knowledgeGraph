@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:cfeebaf368e5c77d1c210a5ad656e5f2efdcd84d978d79863ea7b8639d41de40",
+  "title": "Metaverse Navigation Systems",
+  "slug": "metaverse-navigation-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-navigation-systems",
+  "domain": "spatial-computing",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

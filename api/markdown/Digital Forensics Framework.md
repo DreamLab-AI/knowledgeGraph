@@ -1,24 +1,301 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalForensicsFramework
-uri:: urn:visionclaw:concept:spatial-computing:digital-forensics-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-forensics-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Forensics Framework
-content-hash:: sha256-12-79756c5fa6a0
-legacy-term-id:: MV-9857
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalForensicsFramework
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-forensics-framework
 public:: true
+
+# Digital Forensics Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762",
+  "@type": "Page",
+  "vc:slug": "digital-forensics-framework",
+  "title": "Digital Forensics Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:chain-of-custody",
+      "vc:label": "Chain of Custody"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-integrity",
+      "vc:label": "Data Integrity"
+    },
+    {
+      "@id": "urn:visionflow:linked:evidence-collection",
+      "vc:label": "Evidence Collection"
+    },
+    {
+      "@id": "urn:visionflow:linked:forensic-tools",
+      "vc:label": "Forensic Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-investigation",
+      "vc:label": "Incident Investigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-documentation",
+      "vc:label": "Legal Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-framework",
+      "vc:label": "NIST Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cybersecurity",
+      "vc:label": "Cybersecurity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-79756c5fa6a0"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalForensicsFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9857"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Forensics Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-forensics-framework"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-forensics-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-forensics-framework",
+  "@type": "OntologyClass",
+  "label": "Digital Forensics Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:cybersecurity",
+      "vc:label": "Cybersecurity"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A structured methodology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts. bridges-to:: [[Blockchain]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:chain-of-custody",
+      "vc:label": "Chain of Custody"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-integrity",
+      "vc:label": "Data Integrity"
+    },
+    {
+      "@id": "urn:visionflow:linked:forensic-tools",
+      "vc:label": "Forensic Tools"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:evidence-collection",
+      "vc:label": "Evidence Collection"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-investigation",
+      "vc:label": "Incident Investigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-documentation",
+      "vc:label": "Legal Documentation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-forensics-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Chain of Custody]]",
+      "resolved": "urn:visionflow:linked:chain-of-custody",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Integrity]]",
+      "resolved": "urn:visionflow:linked:data-integrity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Evidence Collection]]",
+      "resolved": "urn:visionflow:linked:evidence-collection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Forensic Tools]]",
+      "resolved": "urn:visionflow:linked:forensic-tools",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Incident Investigation]]",
+      "resolved": "urn:visionflow:linked:incident-investigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Legal Documentation]]",
+      "resolved": "urn:visionflow:linked:legal-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST Framework]]",
+      "resolved": "urn:visionflow:linked:nist-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cybersecurity]]",
+      "resolved": "urn:visionflow:owl:class:cybersecurity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A structured methodology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.

@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:af501677c608956089a479fcbdc5065d786631fc51c007d0642d9975f38612b6",
+  "title": "Calculating Empires",
+  "slug": "calculating-empires",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:calculating-empires",
+  "domain": "infrastructure",
+  "definition": "Calculating Empires is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:f6226966197382190340e961edbe86123341696de3e530ddfc4d2cef1329edf8",
+  "title": "Digital Real Estate",
+  "slug": "digital-real-estate",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-real-estate",
+  "domain": "spatial-computing",
+  "definition": "Tokenised virtual land parcels and property within metaverse worlds that can be owned, developed, monetised, and traded as digital assets. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:development-rights",
+        "label": "Development Rights"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-token",
+        "label": "Ownership Token"
+      },
+      {
+        "id": "urn:visionflow:linked:property-metadata",
+        "label": "Property Metadata"
+      },
+      {
+        "id": "urn:visionflow:owl:class:land-parcel",
+        "label": "Land Parcel"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-coordinates",
+        "label": "Spatial Coordinates"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:advertising-space",
+        "label": "Advertising Space"
+      },
+      {
+        "id": "urn:visionflow:linked:community-building",
+        "label": "Community Building"
+      },
+      {
+        "id": "urn:visionflow:linked:event-hosting",
+        "label": "Event Hosting"
+      },
+      {
+        "id": "urn:visionflow:linked:property-development",
+        "label": "Property Development"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "advertising-space",
+      "label": "Advertising Space"
+    },
+    {
+      "slug": "community-building",
+      "label": "Community Building"
+    },
+    {
+      "slug": "development-rights",
+      "label": "Development Rights"
+    },
+    {
+      "slug": "event-hosting",
+      "label": "Event Hosting"
+    },
+    {
+      "slug": "land-registry",
+      "label": "Land Registry"
+    },
+    {
+      "slug": "metaverse-101",
+      "label": "Metaverse 101"
+    },
+    {
+      "slug": "ownership-token",
+      "label": "Ownership Token"
+    },
+    {
+      "slug": "property-development",
+      "label": "Property Development"
+    },
+    {
+      "slug": "property-metadata",
+      "label": "Property Metadata"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "land-parcel",
+      "label": "Land Parcel"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-standards",
+      "label": "NFT Standards"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-coordinates",
+      "label": "Spatial Coordinates"
+    },
+    {
+      "slug": "virtual-commerce",
+      "label": "Virtual Commerce"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

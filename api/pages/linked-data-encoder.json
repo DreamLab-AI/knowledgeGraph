@@ -1,0 +1,248 @@
+{
+  "id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7",
+  "title": "Linked Data Encoder",
+  "slug": "linked-data-encoder",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:linked-data-encoder",
+  "domain": "infrastructure",
+  "definition": "A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into [[JSON-LD 1.1]] format using pinned, versioned [[JSON-LD Context|W3C JSON-LD contexts]], enabling standardised [[Federation Surface|federation surfaces]] (S1\u2013S11) that are queryable, linkable, and machine-readable without agent-specific API adapters.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-layer",
+      "label": "Data Layer"
+    }
+  ],
+  "qualityScore": 0.87,
+  "authorityScore": 0.91,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:context-pinning",
+        "label": "Context Pinning"
+      },
+      {
+        "id": "urn:visionflow:linked:json-ld-context",
+        "label": "JSON-LD Context"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-mapping",
+        "label": "Semantic Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:uri-resolution",
+        "label": "URI Resolution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:canonical-json",
+        "label": "Canonical JSON"
+      },
+      {
+        "id": "urn:visionflow:linked:json-ld-1-1-standard",
+        "label": "JSON-LD 1.1 Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-vocabulary",
+        "label": "W3C Vocabulary"
+      },
+      {
+        "id": "urn:visionflow:owl:class:uri-canonicaliser",
+        "label": "URI Canonicaliser"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-system-querying",
+        "label": "Cross-System Querying"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-graph-integration",
+        "label": "Knowledge Graph Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:linked-data-consumption",
+        "label": "Linked Data Consumption"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-federation",
+        "label": "Semantic Federation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-semantics",
+        "label": "RDF Semantics"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-linked-data",
+        "label": "W3C Linked Data"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-012",
+      "label": "ADR-012"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "canonical-json",
+      "label": "Canonical JSON"
+    },
+    {
+      "slug": "context-pinning",
+      "label": "Context Pinning"
+    },
+    {
+      "slug": "cross-system-querying",
+      "label": "Cross-System Querying"
+    },
+    {
+      "slug": "data-integration-domain",
+      "label": "DataIntegrationDomain"
+    },
+    {
+      "slug": "encoding-layer",
+      "label": "EncodingLayer"
+    },
+    {
+      "slug": "json-ld-1-1",
+      "label": "JSON-LD 1.1"
+    },
+    {
+      "slug": "json-ld-1-1-spec",
+      "label": "JSON-LD 1.1 Spec"
+    },
+    {
+      "slug": "json-ld-1-1-standard",
+      "label": "JSON-LD 1.1 Standard"
+    },
+    {
+      "slug": "json-ld-context",
+      "label": "JSON-LD Context"
+    },
+    {
+      "slug": "json-ld-context",
+      "label": "JSON-LD Context"
+    },
+    {
+      "slug": "knowledge-graph-integration",
+      "label": "Knowledge Graph Integration"
+    },
+    {
+      "slug": "linked-data-consumption",
+      "label": "Linked Data Consumption"
+    },
+    {
+      "slug": "rdf-semantics",
+      "label": "RDF Semantics"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
+    },
+    {
+      "slug": "rfc-8785-canonical-json",
+      "label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "slug": "semantic-federation",
+      "label": "Semantic Federation"
+    },
+    {
+      "slug": "semantic-mapping",
+      "label": "Semantic Mapping"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "SemanticWebDomain"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "uri-resolution",
+      "label": "URI Resolution"
+    },
+    {
+      "slug": "w3-c-linked-data",
+      "label": "W3C Linked Data"
+    },
+    {
+      "slug": "w3-c-linked-data-platform",
+      "label": "W3C Linked Data Platform"
+    },
+    {
+      "slug": "w3-c-vocabulary",
+      "label": "W3C Vocabulary"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

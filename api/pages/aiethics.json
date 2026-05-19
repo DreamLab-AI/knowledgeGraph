@@ -1,0 +1,132 @@
+{
+  "id": "urn:visionflow:page:cc706241d4b89d5b90e1a2e3239675384861c84f9dceebdbfbf4d605d13db728",
+  "title": "AIEthics",
+  "slug": "aiethics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:aiethics",
+  "domain": "artificial-intelligence",
+  "definition": "A framework of ethical principles and governance structures ensuring responsible development, deployment, and oversight of [[Artificial Intelligence]] systems in compliance with societal values. It addresses concerns including fairness, accountability, transparency, bias mitigation, and alignment with [[Human Values]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "addresses-concern",
+      "label": "addressesConcern"
+    },
+    {
+      "slug": "aigovernance",
+      "label": "AIGovernance"
+    },
+    {
+      "slug": "applies-to",
+      "label": "appliesTo"
+    },
+    {
+      "slug": "bias-and-fairness",
+      "label": "BiasAndFairness"
+    },
+    {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
+    },
+    {
+      "slug": "defines-guideline",
+      "label": "definesGuideline"
+    },
+    {
+      "slug": "digital-systems",
+      "label": "Digital Systems"
+    },
+    {
+      "slug": "discrimination-prevention",
+      "label": "DiscriminationPrevention"
+    },
+    {
+      "slug": "dt-enforced-by",
+      "label": "dt:enforcedBy"
+    },
+    {
+      "slug": "dt-governed-by",
+      "label": "dt:governedBy"
+    },
+    {
+      "slug": "dt-guides",
+      "label": "dt:guides"
+    },
+    {
+      "slug": "dt-tracked-on",
+      "label": "dt:trackedOn"
+    },
+    {
+      "slug": "dt-validates",
+      "label": "dt:validates"
+    },
+    {
+      "slug": "human-values",
+      "label": "Human Values"
+    },
+    {
+      "slug": "requires-compliance",
+      "label": "requiresCompliance"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "AuditTrail"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "AutonomousAgent"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

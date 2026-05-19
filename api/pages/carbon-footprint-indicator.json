@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:66d4319c92e712ea34aad39b648edc4c287c52d75d9a132cf8d01c60aeeed83c",
+  "title": "Carbon Footprint Indicator",
+  "slug": "carbon-footprint-indicator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-footprint-indicator",
+  "domain": "spatial-computing",
+  "definition": "A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:environmental-kpi",
+      "label": "Environmental KPI"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:emissions-data",
+        "label": "Emissions Data"
+      },
+      {
+        "id": "urn:visionflow:linked:measurement-methodology",
+        "label": "Measurement Methodology"
+      },
+      {
+        "id": "urn:visionflow:linked:reporting-framework",
+        "label": "Reporting Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-monitoring",
+        "label": "Performance Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:target-tracking",
+        "label": "Target Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "benchmarking",
+      "label": "Benchmarking"
+    },
+    {
+      "slug": "emissions-data",
+      "label": "Emissions Data"
+    },
+    {
+      "slug": "environmental-kpi",
+      "label": "Environmental KPI"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "measurement-methodology",
+      "label": "Measurement Methodology"
+    },
+    {
+      "slug": "performance-monitoring",
+      "label": "Performance Monitoring"
+    },
+    {
+      "slug": "reporting-framework",
+      "label": "Reporting Framework"
+    },
+    {
+      "slug": "target-tracking",
+      "label": "Target Tracking"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "environmental-impact-metric",
+      "label": "Environmental Impact Metric"
+    }
+  ]
+}

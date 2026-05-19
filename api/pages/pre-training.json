@@ -1,0 +1,220 @@
+{
+  "id": "urn:visionflow:page:4c94794324b9d0ecdc308dbe6c3ffa577e9d8ca0c0dcabf35193c6b6e804679b",
+  "title": "Pre Training",
+  "slug": "pre-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pre-training",
+  "domain": "artificial-intelligence",
+  "definition": "The initial training phase where a model learns general representations from large amounts of unlabelled or weakly labelled data before being adapted to specific tasks. Pre-training establishes foundational knowledge that can be transferred across multiple downstream applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "base-models",
+      "label": "Base models"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "documentation",
+      "label": "documentation"
+    },
+    {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
+      "slug": "few-shot",
+      "label": "few shot"
+    },
+    {
+      "slug": "langchain",
+      "label": "langchain"
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source"
+    },
+    {
+      "slug": "tagging",
+      "label": "tagging"
+    },
+    {
+      "slug": "training-modules",
+      "label": "Training Modules"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-superintelligence",
+      "label": "Artificial Superintelligence"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "courses-and-training",
+      "label": "Courses and Training"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "json",
+      "label": "json"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "natural language processing"
+    },
+    {
+      "slug": "ollama",
+      "label": "Ollama"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "paper-writing",
+      "label": "Paper Writing"
+    },
+    {
+      "slug": "people",
+      "label": "PEOPLE"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "tips-and-tricks",
+      "label": "Tips and Tricks"
+    },
+    {
+      "slug": "training",
+      "label": "training"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

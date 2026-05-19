@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db",
+  "title": "Automated Market Making",
+  "slug": "automated-market-making",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:automated-market-making",
+  "domain": "spatial-computing",
+  "definition": "Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:de-fi-operations",
+      "label": "DeFi Operations"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:price-oracle-integration",
+        "label": "Price Oracle Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-deployment",
+        "label": "Smart Contract Deployment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralized-trading",
+        "label": "Decentralized Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:visionflow:linked:token-accessibility",
+        "label": "Token Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "de-fi-operations",
+      "label": "DeFi Operations"
+    },
+    {
+      "slug": "decentralized-trading",
+      "label": "Decentralized Trading"
+    },
+    {
+      "slug": "liquidity-mining",
+      "label": "Liquidity Mining"
+    },
+    {
+      "slug": "price-oracle-integration",
+      "label": "Price Oracle Integration"
+    },
+    {
+      "slug": "smart-contract-deployment",
+      "label": "Smart Contract Deployment"
+    },
+    {
+      "slug": "token-accessibility",
+      "label": "Token Accessibility"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    }
+  ]
+}

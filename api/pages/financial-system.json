@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:c714b48f5fa637461856abe03de3db9819b8af0fec6dfda78283dfd43779f190",
+  "title": "Financial System",
+  "slug": "financial-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:financial-system",
+  "domain": "spatial-computing",
+  "definition": "Financial System is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "monetary-system",
+      "label": "Monetary System"
+    }
+  ]
+}

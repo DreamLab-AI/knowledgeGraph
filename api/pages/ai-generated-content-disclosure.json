@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:a0caa765933cb1d6aa96d422792caaade40616416fcb6a895a44f2e98aa446ef",
+  "title": "AI-Generated Content Disclosure",
+  "slug": "ai-generated-content-disclosure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-generated-content-disclosure",
+  "domain": "artificial-intelligence",
+  "definition": "Mandatory transparency requirement specifying that content created wholly or partially by AI systems must be explicitly labeled with origin metadata for user awareness and regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-transparency-framework",
+      "label": "AI Transparency Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:content-labeling-metadata",
+        "label": "Content Labeling Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:disclosure-enforcement-mechanism",
+        "label": "Disclosure Enforcement Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-origin-declaration",
+        "label": "AI Origin Declaration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparency-notice",
+        "label": "Transparency Notice"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-building",
+        "label": "Trust Building"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-awareness",
+        "label": "User Awareness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-labeling-metadata",
+      "label": "Content Labeling Metadata"
+    },
+    {
+      "slug": "disclosure-enforcement-mechanism",
+      "label": "Disclosure Enforcement Mechanism"
+    },
+    {
+      "slug": "ieee-7001",
+      "label": "IEEE 7001"
+    },
+    {
+      "slug": "informed-consent",
+      "label": "Informed Consent"
+    },
+    {
+      "slug": "trust-building",
+      "label": "Trust Building"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-origin-declaration",
+      "label": "AI Origin Declaration"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "AI Transparency Framework"
+    },
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    },
+    {
+      "slug": "content-authentication",
+      "label": "Content Authentication"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "transparency-notice",
+      "label": "Transparency Notice"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "user-awareness",
+      "label": "User Awareness"
+    }
+  ],
+  "backlinks": []
+}

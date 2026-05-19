@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:000691b95f6b465c7ee2a97973ccce00b772645aee150a71c8414c651570e322",
+  "title": "Semantic Web Standards",
+  "slug": "semantic-web-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:semantic-web-standards",
+  "domain": "spatial-computing",
+  "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:web-standards",
+      "label": "Web Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-interoperability",
+      "label": "Data Interoperability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "web-standards",
+      "label": "Web Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "namespace-declarations",
+      "label": "Namespace Declarations"
+    },
+    {
+      "slug": "provenance-ontology-prov-o",
+      "label": "Provenance Ontology (PROV-O)"
+    }
+  ]
+}

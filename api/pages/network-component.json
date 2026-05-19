@@ -1,0 +1,132 @@
+{
+  "id": "urn:visionflow:page:efee90aeb001f60c852a64b8fd4c1e0cd4161b4cd06a91e6dfc221257af2ef5b",
+  "title": "Network Component",
+  "slug": "network-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:network-component",
+  "domain": "blockchain",
+  "definition": "Network Component represents the fundamental infrastructure elements that constitute blockchain networks, including different node types, network protocols, and communication layers. These components work together to enable distributed consensus, data replication, and peer-to-peer communication across the blockchain ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "archival-node",
+      "label": "Archival Node"
+    },
+    {
+      "slug": "block-propagation-time",
+      "label": "Block Propagation Time"
+    },
+    {
+      "slug": "bootstrap-node",
+      "label": "Bootstrap Node"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double Spending"
+    },
+    {
+      "slug": "eclipse-attack",
+      "label": "Eclipse Attack"
+    },
+    {
+      "slug": "finality",
+      "label": "Finality"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "immutability",
+      "label": "Immutability"
+    },
+    {
+      "slug": "light-node",
+      "label": "Light Node"
+    },
+    {
+      "slug": "network-latency",
+      "label": "Network Latency"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "node",
+      "label": "Node"
+    },
+    {
+      "slug": "partition-attack",
+      "label": "Partition Attack"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "permissioned-network",
+      "label": "Permissioned Network"
+    },
+    {
+      "slug": "permissionless-network",
+      "label": "Permissionless Network"
+    },
+    {
+      "slug": "pruned-node",
+      "label": "Pruned Node"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
+      "slug": "sybil-attack",
+      "label": "Sybil Attack"
+    },
+    {
+      "slug": "validator-node",
+      "label": "Validator Node"
+    }
+  ]
+}

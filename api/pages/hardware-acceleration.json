@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:1b50d4c8c9f4753b80de9b14b86bbbe8ef2e637a8d902b1a0474490f1600dd6e",
+  "title": "Hardware Acceleration",
+  "slug": "hardware-acceleration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hardware-acceleration",
+  "domain": "spatial-computing",
+  "definition": "The use of specialised hardware components, particularly GPUs and dedicated processors, to offload computationally intensive rendering, physics simulation, and AI workloads from the CPU, enabling real-time performance essential for immersive VR/AR metaverse experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:real-time-vr-performance",
+        "label": "Real-Time VR Performance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "real-time-vr-performance",
+      "label": "Real-Time VR Performance"
+    },
+    {
+      "slug": "computing-infrastructure",
+      "label": "Computing Infrastructure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:46a384e3ee6123075016b164280619f03b56f2cf40b5f41ec22e642eaa3bd35b",
+  "title": "Teleoperation Systems",
+  "slug": "teleoperation-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:teleoperation-systems",
+  "domain": "distributed-collaboration",
+  "definition": "\"Robotic control systems enabling human operators to command and manipulate remote robots through intuitive interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-machine coupling for remote physical interaction.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotic-telepresence",
+      "label": "Robotic Telepresence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "da-vinci",
+      "label": "da Vinci"
+    },
+    {
+      "slug": "tele-200-robotic-telepresence",
+      "label": "TELE-200-robotic-telepresence"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "robotic-telepresence",
+      "label": "Robotic Telepresence"
+    },
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

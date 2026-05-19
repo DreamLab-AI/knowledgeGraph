@@ -1,21 +1,327 @@
-iri:: http://narrativegoldmine.com/robotics#Gps
-uri:: urn:visionclaw:concept:robotics:gps
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:gps
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Gps
-content-hash:: sha256-12-979d660125bd
-legacy-term-id:: RB-0074
-status:: draft
-maturity:: draft
-quality-score:: 0.51
-authority-score:: 0.09
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#Gps
+legacy_uri:: urn:visionclaw:concept:robotics:gps
 public:: true
+
+# Gps
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d",
+  "@type": "Page",
+  "vc:slug": "gps",
+  "title": "Gps",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:antenna-array",
+      "vc:label": "Antenna Array"
+    },
+    {
+      "@id": "urn:visionflow:linked:geofencing",
+      "vc:label": "Geofencing"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-localisation",
+      "vc:label": "Global Localisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-range-navigation",
+      "vc:label": "Long-range Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:map-integration",
+      "vc:label": "Map Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:mission-planning",
+      "vc:label": "Mission Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-robot-coordination",
+      "vc:label": "Multi-robot Coordination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:navigation-system",
+      "vc:label": "Navigation System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.09"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-979d660125bd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#Gps"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0074"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Gps"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.51"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:gps"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:gps"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:gps",
+  "@type": "OntologyClass",
+  "label": "Gps",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:navigation-system",
+      "vc:label": "Navigation System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**GPS** (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 metres.",
+  "vc:qualityScore": {
+    "@value": "0.51",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.09",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:global-localisation",
+      "vc:label": "Global Localisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mission-planning",
+      "vc:label": "Mission Planning"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:antenna-array",
+      "vc:label": "Antenna Array"
+    },
+    {
+      "@id": "urn:visionflow:linked:map-integration",
+      "vc:label": "Map Integration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:signal-processing",
+      "vc:label": "Signal Processing"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:geofencing",
+      "vc:label": "Geofencing"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-range-navigation",
+      "vc:label": "Long-range Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-robot-coordination",
+      "vc:label": "Multi-robot Coordination"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:gps:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Antenna Array]]",
+      "resolved": "urn:visionflow:linked:antenna-array",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Geofencing]]",
+      "resolved": "urn:visionflow:linked:geofencing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Global Localisation]]",
+      "resolved": "urn:visionflow:linked:global-localisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Long-range Navigation]]",
+      "resolved": "urn:visionflow:linked:long-range-navigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Map Integration]]",
+      "resolved": "urn:visionflow:linked:map-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mission Planning]]",
+      "resolved": "urn:visionflow:linked:mission-planning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-robot Coordination]]",
+      "resolved": "urn:visionflow:linked:multi-robot-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Navigation System]]",
+      "resolved": "urn:visionflow:owl:class:navigation-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Signal Processing]]",
+      "resolved": "urn:visionflow:owl:class:signal-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Computing]]",
+      "resolved": "urn:visionflow:owl:class:spatial-computing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **GPS** (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 metres.

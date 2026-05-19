@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:de615359370ef78793ab195b9cec5bcfb2eaee26809d2d118754e23a2ba9e45d",
+  "title": "Data Management",
+  "slug": "data-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-management",
+  "domain": "infrastructure",
+  "definition": "Data Management in metaverse contexts refers to the handling, storage, organisation, and governance of the diverse data types generated within virtual environments. This includes 3D asset data formats, scene graphs, user interaction data, spatial coordinates, and metadata management for interoperable virtual world content.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-technology",
+      "label": "Metaverse Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "bim-software",
+      "label": "BIM Software"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "etsi-domain-data-management-ai",
+      "label": "ETSI Domain: Data Management + AI"
+    },
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    },
+    {
+      "slug": "etsi-domain-data-management-cultural-heritage",
+      "label": "ETSI Domain: Data Management + Cultural Heritage"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "metadata-repository",
+      "label": "Metadata Repository"
+    },
+    {
+      "slug": "schema-registry",
+      "label": "Schema Registry"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    },
+    {
+      "slug": "training-data-repository",
+      "label": "Training Data Repository"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

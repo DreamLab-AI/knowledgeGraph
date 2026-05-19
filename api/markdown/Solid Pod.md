@@ -1,20 +1,695 @@
-iri:: http://narrativegoldmine.com/infrastructure#SolidPod
-uri:: urn:visionclaw:concept:infrastructure:solid-pod
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:solid-pod
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Solid Pod
-content-hash:: sha256-12-2a4c8f1e6b7d
-status:: complete
-maturity:: established
-quality-score:: 0.65
-authority-score:: 0.78
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#SolidPod
+legacy_uri:: urn:visionclaw:concept:infrastructure:solid-pod
 public:: true
+
+# Solid Pod
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740",
+  "@type": "Page",
+  "vc:slug": "solid-pod",
+  "title": "Solid Pod",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:access-control-policy",
+      "vc:label": "Access Control Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:acp-access-control-policy",
+      "vc:label": "ACP Access Control Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-personalisation",
+      "vc:label": "Agent Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:css-community-solid-server",
+      "vc:label": "CSS Community Solid Server"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-sovereignty",
+      "vc:label": "Data Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-identity",
+      "vc:label": "Decentralised Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-web-stack",
+      "vc:label": "Decentralised Web Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:dpo-p",
+      "vc:label": "DPoP"
+    },
+    {
+      "@id": "urn:visionflow:linked:http-protocol",
+      "vc:label": "HTTP Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-layer",
+      "vc:label": "IdentityLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:inrupt-pod-spaces",
+      "vc:label": "Inrupt Pod Spaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperable-personal-data",
+      "vc:label": "Interoperable Personal Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:ldp-container",
+      "vc:label": "LDP Container"
+    },
+    {
+      "@id": "urn:visionflow:linked:linked-data-platform-resource",
+      "vc:label": "Linked Data Platform Resource"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-solid-server",
+      "vc:label": "Node Solid Server"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-data-model",
+      "vc:label": "RDF Data Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-resource",
+      "vc:label": "RDF Resource"
+    },
+    {
+      "@id": "urn:visionflow:linked:ru-vector-memory",
+      "vc:label": "RuVector Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-application-interoperability-specification",
+      "vc:label": "Solid Application Interoperability Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-ecosystem",
+      "vc:label": "Solid Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-oidc",
+      "vc:label": "Solid-OIDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:turtle-serialisation",
+      "vc:label": "Turtle Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did-core",
+      "vc:label": "W3C DID Core"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "vc:label": "W3C Linked Data Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-solid-protocol",
+      "vc:label": "W3C Solid Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-web-access-control",
+      "vc:label": "W3C Web Access Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:wac-access-control-list",
+      "vc:label": "WAC Access Control List"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-access-control",
+      "vc:label": "Web Access Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-id",
+      "vc:label": "WebID"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-id-profile",
+      "vc:label": "WebID Profile"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "Blockchain Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lang-chain",
+      "vc:label": "LangChain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "vc:label": "NGM Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nostr-protocol",
+      "vc:label": "Nostr Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:personal-data-store",
+      "vc:label": "Personal Data Store"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "vc:label": "Telecollaboration Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "vc:label": "Verifiable Credential Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "vc:label": "Verifiable Credential Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "vc:label": "Verifiable Credential Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credentials",
+      "vc:label": "Verifiable Credentials"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.78"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2a4c8f1e6b7d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#SolidPod"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Solid Pod"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.65"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:solid-pod"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:solid-pod"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:solid-pod",
+  "@type": "OntologyClass",
+  "label": "Solid Pod",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:linked-data-platform-resource",
+      "vc:label": "Linked Data Platform Resource"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:personal-data-store",
+      "vc:label": "Personal Data Store"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), so that authorised applications can read and write data without the data ever leaving the owner's pod or being locked into any single application silo. In the [[VisionClaw Agentic Container]] architecture, Solid Pods serve as the personal context store for agent preference profiles, credential histories, and verifiable presentation caches, consumed via the [[Model Context Protocol]] tool surface.",
+  "vc:qualityScore": {
+    "@value": "0.65",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.78",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-web-stack",
+      "vc:label": "Decentralised Web Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-ecosystem",
+      "vc:label": "Solid Ecosystem"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:acp-access-control-policy",
+      "vc:label": "ACP Access Control Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ldp-container",
+      "vc:label": "LDP Container"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-resource",
+      "vc:label": "RDF Resource"
+    },
+    {
+      "@id": "urn:visionflow:linked:wac-access-control-list",
+      "vc:label": "WAC Access Control List"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-id-profile",
+      "vc:label": "WebID Profile"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:http-protocol",
+      "vc:label": "HTTP Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-data-model",
+      "vc:label": "RDF Data Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:turtle-serialisation",
+      "vc:label": "Turtle Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-id",
+      "vc:label": "WebID"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:agent-personalisation",
+      "vc:label": "Agent Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-sovereignty",
+      "vc:label": "Data Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-identity",
+      "vc:label": "Decentralised Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperable-personal-data",
+      "vc:label": "Interoperable Personal Data"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "vc:label": "W3C Linked Data Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-solid-protocol",
+      "vc:label": "W3C Solid Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-web-access-control",
+      "vc:label": "W3C Web Access Control"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:css-community-solid-server",
+      "vc:label": "CSS Community Solid Server"
+    },
+    {
+      "@id": "urn:visionflow:linked:inrupt-pod-spaces",
+      "vc:label": "Inrupt Pod Spaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-solid-server",
+      "vc:label": "Node Solid Server"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nostr-protocol",
+      "vc:label": "Nostr Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "vc:label": "Verifiable Credential Surface"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:solid-pod:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Access Control Policy]]",
+      "resolved": "urn:visionflow:linked:access-control-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ACP Access Control Policy]]",
+      "resolved": "urn:visionflow:linked:acp-access-control-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Personalisation]]",
+      "resolved": "urn:visionflow:linked:agent-personalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CSS Community Solid Server]]",
+      "resolved": "urn:visionflow:linked:css-community-solid-server",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Sovereignty]]",
+      "resolved": "urn:visionflow:linked:data-sovereignty",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Identity]]",
+      "resolved": "urn:visionflow:linked:decentralised-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Web Stack]]",
+      "resolved": "urn:visionflow:linked:decentralised-web-stack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DPoP]]",
+      "resolved": "urn:visionflow:linked:dpo-p",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HTTP Protocol]]",
+      "resolved": "urn:visionflow:linked:http-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IdentityLayer]]",
+      "resolved": "urn:visionflow:linked:identity-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inrupt Pod Spaces]]",
+      "resolved": "urn:visionflow:linked:inrupt-pod-spaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interoperable Personal Data]]",
+      "resolved": "urn:visionflow:linked:interoperable-personal-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LDP Container]]",
+      "resolved": "urn:visionflow:linked:ldp-container",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Linked Data Platform Resource]]",
+      "resolved": "urn:visionflow:linked:linked-data-platform-resource",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Node Solid Server]]",
+      "resolved": "urn:visionflow:linked:node-solid-server",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RDF Data Model]]",
+      "resolved": "urn:visionflow:linked:rdf-data-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RDF Resource]]",
+      "resolved": "urn:visionflow:linked:rdf-resource",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RuVector Memory]]",
+      "resolved": "urn:visionflow:linked:ru-vector-memory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Application Interoperability Specification]]",
+      "resolved": "urn:visionflow:linked:solid-application-interoperability-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Ecosystem]]",
+      "resolved": "urn:visionflow:linked:solid-ecosystem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid-OIDC]]",
+      "resolved": "urn:visionflow:linked:solid-oidc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Turtle Serialisation]]",
+      "resolved": "urn:visionflow:linked:turtle-serialisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C DID Core]]",
+      "resolved": "urn:visionflow:linked:w3-c-did-core",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Linked Data Platform]]",
+      "resolved": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Solid Protocol]]",
+      "resolved": "urn:visionflow:linked:w3-c-solid-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Web Access Control]]",
+      "resolved": "urn:visionflow:linked:w3-c-web-access-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WAC Access Control List]]",
+      "resolved": "urn:visionflow:linked:wac-access-control-list",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Web Access Control]]",
+      "resolved": "urn:visionflow:linked:web-access-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WebID]]",
+      "resolved": "urn:visionflow:linked:web-id",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WebID Profile]]",
+      "resolved": "urn:visionflow:linked:web-id-profile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Domain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LangChain]]",
+      "resolved": "urn:visionflow:owl:class:lang-chain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NGM Domain]]",
+      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Nostr Protocol]]",
+      "resolved": "urn:visionflow:owl:class:nostr-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Personal Data Store]]",
+      "resolved": "urn:visionflow:owl:class:personal-data-store",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration Domain]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credential Surface]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credential Surface|verifiable credential]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credential Surface|verifiable credentials]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credentials]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credentials",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), so that authorised applications can read and write data without the data ever leaving the owner's pod or being locked into any single application silo. In the [[VisionClaw Agentic Container]] architecture, Solid Pods serve as the personal context store for agent preference profiles, credential histories, and verifiable presentation caches, consumed via the [[Model Context Protocol]] tool surface.

@@ -1,21 +1,433 @@
-iri:: http://narrativegoldmine.com/robotics#CylindricalRobot
-uri:: urn:visionclaw:concept:robotics:cylindrical-robot
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:cylindrical-robot
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Cylindrical Robot
-content-hash:: sha256-12-6af8998e3bc5
-legacy-term-id:: RB-0134
-status:: complete
-maturity:: established
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-13T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#CylindricalRobot
+legacy_uri:: urn:visionclaw:concept:robotics:cylindrical-robot
 public:: true
+
+# Cylindrical Robot
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa",
+  "@type": "Page",
+  "vc:slug": "cylindrical-robot",
+  "title": "Cylindrical Robot",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:articulated-robots",
+      "vc:label": "Articulated Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:assembly-automation",
+      "vc:label": "Assembly Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:azimuth-drive",
+      "vc:label": "Azimuth Drive"
+    },
+    {
+      "@id": "urn:visionflow:linked:base-support",
+      "vc:label": "Base Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:component-assembly",
+      "vc:label": "Component Assembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-systems",
+      "vc:label": "Control Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:coordinate-robots",
+      "vc:label": "Coordinate Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:depalletising",
+      "vc:label": "Depalletising"
+    },
+    {
+      "@id": "urn:visionflow:linked:end-effector-mount",
+      "vc:label": "End-Effector Mount"
+    },
+    {
+      "@id": "urn:visionflow:linked:fixed-base-manipulator",
+      "vc:label": "Fixed-Base Manipulator"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-handling",
+      "vc:label": "Material Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:palletising",
+      "vc:label": "Palletising"
+    },
+    {
+      "@id": "urn:visionflow:linked:pick-and-place",
+      "vc:label": "Pick and Place"
+    },
+    {
+      "@id": "urn:visionflow:linked:prismatic-actuators",
+      "vc:label": "Prismatic Actuators"
+    },
+    {
+      "@id": "urn:visionflow:linked:radial-actuator",
+      "vc:label": "Radial Actuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:rotary-joint",
+      "vc:label": "Rotary Joint"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertical-actuator",
+      "vc:label": "Vertical Actuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:wrist",
+      "vc:label": "Wrist"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:force-control",
+      "vc:label": "Force Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:industrial-robot",
+      "vc:label": "Industrial Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6af8998e3bc5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-13T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#CylindricalRobot"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0134"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cylindrical Robot"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:cylindrical-robot"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:cylindrical-robot"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cylindrical-robot",
+  "@type": "OntologyClass",
+  "label": "Cylindrical Robot",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:coordinate-robots",
+      "vc:label": "Coordinate Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:fixed-base-manipulator",
+      "vc:label": "Fixed-Base Manipulator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:industrial-robot",
+      "vc:label": "Industrial Robot"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes. This architecture, simpler and more affordable than six-axis articulated robots, has historically dominated [[Assembly Automation]] and [[Material Handling]] applications where reach and vertical lift are primary requirements.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:azimuth-drive",
+      "vc:label": "Azimuth Drive"
+    },
+    {
+      "@id": "urn:visionflow:linked:end-effector-mount",
+      "vc:label": "End-Effector Mount"
+    },
+    {
+      "@id": "urn:visionflow:linked:radial-actuator",
+      "vc:label": "Radial Actuator"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertical-actuator",
+      "vc:label": "Vertical Actuator"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:base-support",
+      "vc:label": "Base Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:prismatic-actuators",
+      "vc:label": "Prismatic Actuators"
+    },
+    {
+      "@id": "urn:visionflow:linked:rotary-joint",
+      "vc:label": "Rotary Joint"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:component-assembly",
+      "vc:label": "Component Assembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:depalletising",
+      "vc:label": "Depalletising"
+    },
+    {
+      "@id": "urn:visionflow:linked:palletising",
+      "vc:label": "Palletising"
+    },
+    {
+      "@id": "urn:visionflow:linked:pick-and-place",
+      "vc:label": "Pick and Place"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cylindrical-robot:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Articulated Robots]]",
+      "resolved": "urn:visionflow:linked:articulated-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Assembly Automation]]",
+      "resolved": "urn:visionflow:linked:assembly-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Azimuth Drive]]",
+      "resolved": "urn:visionflow:linked:azimuth-drive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Base Support]]",
+      "resolved": "urn:visionflow:linked:base-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Component Assembly]]",
+      "resolved": "urn:visionflow:linked:component-assembly",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Control Systems]]",
+      "resolved": "urn:visionflow:linked:control-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Coordinate Robots]]",
+      "resolved": "urn:visionflow:linked:coordinate-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Depalletising]]",
+      "resolved": "urn:visionflow:linked:depalletising",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[End-Effector Mount]]",
+      "resolved": "urn:visionflow:linked:end-effector-mount",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fixed-Base Manipulator]]",
+      "resolved": "urn:visionflow:linked:fixed-base-manipulator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Material Handling]]",
+      "resolved": "urn:visionflow:linked:material-handling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Palletising]]",
+      "resolved": "urn:visionflow:linked:palletising",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pick and Place]]",
+      "resolved": "urn:visionflow:linked:pick-and-place",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Prismatic Actuators]]",
+      "resolved": "urn:visionflow:linked:prismatic-actuators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Radial Actuator]]",
+      "resolved": "urn:visionflow:linked:radial-actuator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rotary Joint]]",
+      "resolved": "urn:visionflow:linked:rotary-joint",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vertical Actuator]]",
+      "resolved": "urn:visionflow:linked:vertical-actuator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wrist]]",
+      "resolved": "urn:visionflow:linked:wrist",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Force Control]]",
+      "resolved": "urn:visionflow:owl:class:force-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Industrial Robot]]",
+      "resolved": "urn:visionflow:owl:class:industrial-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Computing]]",
+      "resolved": "urn:visionflow:owl:class:spatial-computing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes. This architecture, simpler and more affordable than six-axis articulated robots, has historically dominated [[Assembly Automation]] and [[Material Handling]] applications where reach and vertical lift are primary requirements.

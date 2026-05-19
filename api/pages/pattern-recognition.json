@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:e2db02173f6427fb26711a948f13ab9c939f06659d07e3f2edabbada2e58c469",
+  "title": "Pattern Recognition",
+  "slug": "pattern-recognition",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pattern-recognition",
+  "domain": "artificial-intelligence",
+  "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms. This encompasses supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), and feature extraction techniques. Applications span computer vision (object recognition, face detection), speech recognition, biometric identification, medical diagnosis, and anomaly detection. Modern approaches leverage deep learning for end-to-end feature learning, replacing hand-crafted features with learned representations from raw data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "behavioral-learning",
+      "label": "Behavioral Learning"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "humanity-attestation",
+      "label": "Humanity Attestation"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    }
+  ]
+}

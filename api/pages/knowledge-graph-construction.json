@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:4e8bad03b44e215f04ec551d33e372ebd9fec203adf3f1ac9bf943b90fe661d9",
+  "title": "Knowledge Graph Construction",
+  "slug": "knowledge-graph-construction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-graph-construction",
+  "domain": "artificial-intelligence",
+  "definition": "Knowledge Graph Construction is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    }
+  ]
+}

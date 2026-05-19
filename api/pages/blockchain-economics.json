@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:409c456a3f7b238f2cedfd1f222e9a8b9cf60c71b4194c1e32a18d521fb84a9c",
+  "title": "Blockchain Economics",
+  "slug": "blockchain-economics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-economics",
+  "domain": "blockchain",
+  "definition": "Blockchain Economics is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:token-economics",
+      "label": "Token Economics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gas-fee-market",
+      "label": "Gas Fee Market"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    }
+  ]
+}

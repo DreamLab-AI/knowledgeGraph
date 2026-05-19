@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134",
+  "title": "Attack Vector",
+  "slug": "attack-vector",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:attack-vector",
+  "domain": "artificial-intelligence",
+  "definition": "Attack Vector is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience"
+    },
+    {
+      "slug": "risk",
+      "label": "Risk"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "threat-actor",
+      "label": "Threat Actor"
+    },
+    {
+      "slug": "vulnerability",
+      "label": "Vulnerability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "threat-actor",
+      "label": "Threat Actor"
+    },
+    {
+      "slug": "vulnerability",
+      "label": "Vulnerability"
+    }
+  ]
+}

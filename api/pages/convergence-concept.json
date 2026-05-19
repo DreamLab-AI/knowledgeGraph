@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:47373e74fbde4bb6dfd44c50a9748f21b52689d5b6b426c497440f206da2b1a4",
+  "title": "Convergence Concept",
+  "slug": "convergence-concept",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:convergence-concept",
+  "domain": "infrastructure",
+  "definition": "ConvergenceConcept is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:collaboration",
+      "label": "Collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm-queue",
+      "label": "ACM Queue"
+    },
+    {
+      "slug": "ieee-future-networks",
+      "label": "IEEE Future Networks"
+    },
+    {
+      "slug": "xr-association",
+      "label": "XR Association"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    }
+  ]
+}

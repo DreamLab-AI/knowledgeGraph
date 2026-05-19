@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:1679ba87b522c3d387c02d532c5b0d0ce5b73e9131e7e65febd55d5c78f5e287",
+  "title": "Content Protection",
+  "slug": "content-protection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:content-protection",
+  "domain": "spatial-computing",
+  "definition": "Content Protection is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    }
+  ]
+}

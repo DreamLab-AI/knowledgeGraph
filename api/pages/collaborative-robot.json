@@ -1,0 +1,138 @@
+{
+  "id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf",
+  "title": "Collaborative Robot",
+  "slug": "collaborative-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collaborative-robot",
+  "domain": "robotics",
+  "definition": "**Collaborative Robot** (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable [[Human-Robot Collaboration]] in shared manufacturing and assembly environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.62,
+  "authorityScore": 0.15,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:iso-ts-15066-compliance",
+        "label": "ISO/TS 15066 Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-controller",
+        "label": "Safety Controller"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:flexible-assembly",
+        "label": "Flexible Assembly"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-deployment",
+        "label": "Rapid Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:reduced-labour-costs",
+        "label": "Reduced Labour Costs"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-manufacturing-system",
+      "label": "Collaborative Manufacturing System"
+    },
+    {
+      "slug": "flexible-assembly",
+      "label": "Flexible Assembly"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "iso-ts-15066-compliance",
+      "label": "ISO/TS 15066 Compliance"
+    },
+    {
+      "slug": "rapid-deployment",
+      "label": "Rapid Deployment"
+    },
+    {
+      "slug": "reduced-labour-costs",
+      "label": "Reduced Labour Costs"
+    },
+    {
+      "slug": "safety-controller",
+      "label": "Safety Controller"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    }
+  ]
+}

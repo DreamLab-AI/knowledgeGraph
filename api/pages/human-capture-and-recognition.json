@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:1579ef04176a70af3748903a17827be9ee4cfb6e6d1cff07addbcb2e1a43586c",
+  "title": "Human Capture & Recognition",
+  "slug": "human-capture-and-recognition",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-capture-and-recognition",
+  "domain": "spatial-computing",
+  "definition": "Techniques for digitally acquiring and interpreting human appearance, motion, and biometric data for use in virtual and augmented environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:reality-capture",
+      "label": "Reality Capture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "id": "urn:visionflow:linked:biometric-analysis",
+        "label": "Biometric Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:reality-modeling",
+        "label": "Reality Modeling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:depth-cameras",
+        "label": "Depth Cameras"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-sensors",
+        "label": "Optical Sensors"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning-models",
+        "label": "Machine Learning Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-visualization",
+        "label": "3D Visualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-creation",
+        "label": "Avatar Creation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin-generation",
+        "label": "Digital Twin Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-identity",
+        "label": "Virtual Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-scanning",
+      "label": "3D Scanning"
+    },
+    {
+      "slug": "3-d-visualization",
+      "label": "3D Visualization"
+    },
+    {
+      "slug": "biometric-analysis",
+      "label": "Biometric Analysis"
+    },
+    {
+      "slug": "depth-cameras",
+      "label": "Depth Cameras"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "facial-recognition",
+      "label": "Facial Recognition"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "slug": "optical-sensors",
+      "label": "Optical Sensors"
+    },
+    {
+      "slug": "reality-capture",
+      "label": "Reality Capture"
+    },
+    {
+      "slug": "reality-modeling",
+      "label": "Reality Modeling"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "avatar-creation",
+      "label": "Avatar Creation"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "digital-twin-generation",
+      "label": "Digital Twin Generation"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "virtual-identity",
+      "label": "Virtual Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

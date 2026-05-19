@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:5527ab64db9553639c714062229bbb21668a62c8841c1fe71bc17b831db739b6",
+  "title": "Narrative Arc",
+  "slug": "narrative-arc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:narrative-arc",
+  "domain": "spatial-computing",
+  "definition": "The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:storytelling-structure",
+      "label": "Storytelling Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:non-linear-narrative",
+        "label": "Non Linear Narrative"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "non-linear-narrative",
+      "label": "Non Linear Narrative"
+    },
+    {
+      "slug": "storytelling-structure",
+      "label": "Storytelling Structure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "narrative-design-ontology",
+      "label": "Narrative Design Ontology"
+    }
+  ]
+}

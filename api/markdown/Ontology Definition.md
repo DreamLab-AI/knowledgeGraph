@@ -1,21 +1,225 @@
-iri:: http://narrativegoldmine.com/infrastructure#OntologyDefinition
-uri:: urn:visionclaw:concept:infrastructure:ontology-definition
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:ontology-definition
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Ontology Definition
-content-hash:: sha256-12-82e43d8dbc3e
-legacy-term-id:: MV-3040
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#OntologyDefinition
+legacy_uri:: urn:visionclaw:concept:infrastructure:ontology-definition
 public:: true
+
+# Ontology Definition
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f",
+  "@type": "Page",
+  "vc:slug": "ontology-definition",
+  "title": "Ontology Definition",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:interoperability-protocol",
+      "vc:label": "InteroperabilityProtocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld",
+      "vc:label": "JSON-LD"
+    },
+    {
+      "@id": "urn:visionflow:linked:owl",
+      "vc:label": "OWL"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf",
+      "vc:label": "RDF"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-82e43d8dbc3e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#OntologyDefinition"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3040"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Ontology Definition"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:ontology-definition"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:ontology-definition"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ontology-definition",
+  "@type": "OntologyClass",
+  "label": "Ontology Definition",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms—foundational for governance, identity, and asset management standardisation.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ontology-definition:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[InteroperabilityProtocol|interoperability]]",
+      "resolved": "urn:visionflow:linked:interoperability-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD]]",
+      "resolved": "urn:visionflow:linked:json-ld",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OWL]]",
+      "resolved": "urn:visionflow:linked:owl",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RDF]]",
+      "resolved": "urn:visionflow:linked:rdf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse|metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms—foundational for governance, identity, and asset management standardisation.

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:bd21afd6b47499c69ed60333042df3f05f48cc7c6d12b61d37d4345002d5aadf",
+  "title": "Microservices Architecture",
+  "slug": "microservices-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:microservices-architecture",
+  "domain": "infrastructure",
+  "definition": "A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:scalable-applications",
+        "label": "Scalable Applications"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "scalable-applications",
+      "label": "Scalable Applications"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-system-component",
+      "label": "AI System Component"
+    },
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    }
+  ]
+}

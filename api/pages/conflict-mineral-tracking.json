@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39",
+  "title": "Conflict Mineral Tracking",
+  "slug": "conflict-mineral-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:conflict-mineral-tracking",
+  "domain": "blockchain",
+  "definition": "Blockchain applications addressing ethical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions. Over 6,000 companies spend \u00a3500 million annually on conflict mineral due diligence under Dodd-Frank Section 1502 and EU Conflict Minerals Regulation, with blockchain implementations by Circulor (Volvo, VW, Tesla), RCS Global Better Sourcing (Apple, Samsung), and Everledger demonstrating 40-60% reductions in due diligence costs through automated verification, immutable custody chains, and cryptographic material fingerprinting that enable 5-15% premium pricing for verified responsible sourcing whilst dramatically reducing human rights abuses.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.89,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0013-smart-contracts",
+      "label": "BC-0013-smart-contracts"
+    },
+    {
+      "slug": "bc-0029-permissioned-blockchain",
+      "label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0044-supply-chain-management",
+      "label": "BC-0044-supply-chain-management"
+    },
+    {
+      "slug": "bc-0066-ethereum",
+      "label": "BC-0066-ethereum"
+    },
+    {
+      "slug": "bc-0067-hyperledger-fabric",
+      "label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0214-environmental-sustainability",
+      "label": "BC-0214-environmental-sustainability"
+    },
+    {
+      "slug": "bc-0432-consortium-blockchain",
+      "label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "slug": "bc-0434-blockchain-as-a-service",
+      "label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "slug": "bc-0441-provenance-tracking",
+      "label": "BC-0441-provenance-tracking"
+    },
+    {
+      "slug": "circulor",
+      "label": "Circulor"
+    },
+    {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "rcs-global",
+      "label": "RCS Global"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    }
+  ],
+  "backlinks": []
+}

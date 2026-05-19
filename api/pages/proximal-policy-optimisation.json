@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:21bdcf55cffcb5b4a81c4f1f28f44d290347b71a0924fabeaea9dac29dcefc27",
+  "title": "Proximal Policy Optimisation",
+  "slug": "proximal-policy-optimisation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proximal-policy-optimisation",
+  "domain": "artificial-intelligence",
+  "definition": "A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change, preventing destabilising updates. PPO is the standard RL algorithm used in RLHF for optimising language models based on reward model feedback.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "id": "urn:visionflow:page:c5ca7ebb6bdf9bfb1dd3000e53b194136ae5bd66564516560ddb9a282e52a018",
+  "title": "Proprioceptive Sensor",
+  "slug": "proprioceptive-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proprioceptive-sensor",
+  "domain": "robotics",
+  "definition": "ProprioceptiveSensor is a transducer or sensing system that measures a robot's internal physical state \u2014 encompassing joint angle, angular velocity, linear and angular acceleration, motor torque, drive current, strain, and contact force \u2014 without reference to external landmarks or environmental features, enabling closed-loop servo control, dynamics estimation, balance, fault detection, and safe physical human-robot interaction. The term derives from the Latin proprius (one's own) + capere (to take), by analogy with biological mechanoreceptors in muscle spindles (Ia and II afferents), Golgi tendon organs (Ib afferents), and joint capsule mechanoreceptors that supply the central nervous system with limb-state information independent of vision. In engineering practice the proprioceptive sensor category comprises: (1) rotary position encoders \u2014 incremental quadrature (Renishaw RGH/RGS series, Heidenhain ERN/ECN, US Digital HEDL) producing A/B pulse trains with index at typically 500\u201310,000,000 counts per revolution; absolute single-turn and multi-turn (Renishaw RESOLUTE, Heidenhain ECI/ECN, Sick Stegmann DBS) providing unambiguous angle on power-up, eliminating homing; optical and magn",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:control-feedback-element",
+      "label": "Control Feedback Element"
+    },
+    {
+      "id": "urn:visionflow:linked:mechatronic-component",
+      "label": "Mechatronic Component"
+    },
+    {
+      "id": "urn:visionflow:linked:robotic-subsystem",
+      "label": "Robotic Subsystem"
+    },
+    {
+      "id": "urn:visionflow:linked:state-estimation-component",
+      "label": "State Estimation Component"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:joint-encoder",
+        "label": "Joint Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:resolver",
+        "label": "Resolver"
+      },
+      {
+        "id": "urn:visionflow:linked:strain-gauge",
+        "label": "Strain Gauge"
+      },
+      {
+        "id": "urn:visionflow:linked:tachometer",
+        "label": "Tachometer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:current-sensor",
+        "label": "Current Sensor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-operating-system",
+        "label": "Real Time Operating System"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:analog-to-digital-converter",
+        "label": "Analog to Digital Converter"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-physical-human-robot-interaction",
+        "label": "Safe Physical Human-Robot Interaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:closed-loop-control",
+        "label": "Closed Loop Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:torque-control",
+        "label": "Torque Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:hall-effect-sensing",
+        "label": "Hall Effect Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:mems-gyroscope",
+        "label": "MEMS Gyroscope"
+      },
+      {
+        "id": "urn:visionflow:linked:photometric-stereo",
+        "label": "Photometric Stereo"
+      },
+      {
+        "id": "urn:visionflow:linked:quadrature-encoding",
+        "label": "Quadrature Encoding"
+      },
+      {
+        "id": "urn:visionflow:linked:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:visionflow:linked:wheatstone-bridge-measurement",
+        "label": "Wheatstone Bridge Measurement"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "bi-ss-c-protocol",
+      "label": "BiSS-C Protocol"
+    },
+    {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
+      "slug": "control-feedback-element",
+      "label": "Control Feedback Element"
+    },
+    {
+      "slug": "control-layer",
+      "label": "ControlLayer"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "ControlSystemsDomain"
+    },
+    {
+      "slug": "domain-randomisation",
+      "label": "Domain Randomisation"
+    },
+    {
+      "slug": "ether-cat",
+      "label": "EtherCAT"
+    },
+    {
+      "slug": "exoskeleton-control",
+      "label": "Exoskeleton Control"
+    },
+    {
+      "slug": "hall-effect-sensing",
+      "label": "Hall Effect Sensing"
+    },
+    {
+      "slug": "i2-c",
+      "label": "I2C"
+    },
+    {
+      "slug": "iec-61800-adjustable-speed-drives",
+      "label": "IEC 61800 Adjustable Speed Drives"
+    },
+    {
+      "slug": "ieee-1451-sensor-standard",
+      "label": "IEEE 1451 Sensor Standard"
+    },
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "iso-9283-robot-performance-standard",
+      "label": "ISO 9283 Robot Performance Standard"
+    },
+    {
+      "slug": "joint-encoder",
+      "label": "Joint Encoder"
+    },
+    {
+      "slug": "legged-locomotion",
+      "label": "Legged Locomotion"
+    },
+    {
+      "slug": "li-dar",
+      "label": "LiDAR"
+    },
+    {
+      "slug": "mechatronic-component",
+      "label": "Mechatronic Component"
+    },
+    {
+      "slug": "mechatronics-domain",
+      "label": "MechatronicsDomain"
+    },
+    {
+      "slug": "mems-gyroscope",
+      "label": "MEMS Gyroscope"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "Motor Driver"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "PerceptionLayer"
+    },
+    {
+      "slug": "photometric-stereo",
+      "label": "Photometric Stereo"
+    },
+    {
+      "slug": "quadrature-encoding",
+      "label": "Quadrature Encoding"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real Time Control"
+    },
+    {
+      "slug": "real-time-operating-system",
+      "label": "Real Time Operating System"
+    },
+    {
+      "slug": "reinforcement-learning-for-robotics",
+      "label": "Reinforcement Learning for Robotics"
+    },
+    {
+      "slug": "reinforcement-learning-for-robotics",
+      "label": "Reinforcement Learning for Robotics"
+    },
+    {
+      "slug": "resolver",
+      "label": "Resolver"
+    },
+    {
+      "slug": "robotic-subsystem",
+      "label": "Robotic Subsystem"
+    },
+    {
+      "slug": "safe-physical-human-robot-interaction",
+      "label": "Safe Physical Human-Robot Interaction"
+    },
+    {
+      "slug": "sensor-calibration",
+      "label": "Sensor Calibration"
+    },
+    {
+      "slug": "series-elastic-actuation",
+      "label": "Series Elastic Actuation"
+    },
+    {
+      "slug": "signal-conditioning",
+      "label": "Signal Conditioning"
+    },
+    {
+      "slug": "spi",
+      "label": "SPI"
+    },
+    {
+      "slug": "ssi-protocol",
+      "label": "SSI Protocol"
+    },
+    {
+      "slug": "state-estimation-component",
+      "label": "State Estimation Component"
+    },
+    {
+      "slug": "strain-gauge",
+      "label": "Strain Gauge"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "tachometer",
+      "label": "Tachometer"
+    },
+    {
+      "slug": "wheatstone-bridge-measurement",
+      "label": "Wheatstone Bridge Measurement"
+    },
+    {
+      "slug": "whole-body-control",
+      "label": "Whole Body Control"
+    },
+    {
+      "slug": "analog-to-digital-converter",
+      "label": "Analog to Digital Converter"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed Loop Control"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force-Torque Sensor"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "manipulation",
+      "label": "Manipulation"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "robot-dynamics",
+      "label": "Robot Dynamics"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    },
+    {
+      "slug": "tactile-sensor",
+      "label": "Tactile Sensor"
+    },
+    {
+      "slug": "torque-control",
+      "label": "Torque Control"
+    },
+    {
+      "slug": "ultrasonic-sensor",
+      "label": "Ultrasonic Sensor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

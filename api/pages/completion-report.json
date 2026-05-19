@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b",
+  "title": "COMPLETION_REPORT",
+  "slug": "completion-report",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:completion-report",
+  "domain": "spatial-computing",
+  "definition": "A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed [[Project]] or [[Work Package]]. Completion reports capture [[Deliverables]], [[Quality Metrics]], and [[Sign-off Records]] necessary for [[Project Governance]] and [[Stakeholder Communication]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "deliverables",
+      "label": "Deliverables"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "project",
+      "label": "Project"
+    },
+    {
+      "slug": "project-governance",
+      "label": "Project Governance"
+    },
+    {
+      "slug": "quality-metrics",
+      "label": "Quality Metrics"
+    },
+    {
+      "slug": "sign-off-records",
+      "label": "Sign-off Records"
+    },
+    {
+      "slug": "stakeholder-communication",
+      "label": "Stakeholder Communication"
+    },
+    {
+      "slug": "w3-c-world-wide-web-consortium",
+      "label": "W3C (World Wide Web Consortium)"
+    },
+    {
+      "slug": "work-package",
+      "label": "Work Package"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

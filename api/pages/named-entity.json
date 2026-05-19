@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:817cd53b6d44b4de1cbcd7f1302cac21701b72549e64ff7583cee6057ed40216",
+  "title": "Named Entity",
+  "slug": "named-entity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:named-entity",
+  "domain": "artificial-intelligence",
+  "definition": "Person, organization, location, or other named entity.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

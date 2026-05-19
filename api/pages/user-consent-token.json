@@ -1,0 +1,198 @@
+{
+  "id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56",
+  "title": "User Consent Token",
+  "slug": "user-consent-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-consent-token",
+  "domain": "spatial-computing",
+  "definition": "A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:consent-payload",
+        "label": "Consent Payload"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:revocation-mechanism",
+        "label": "Revocation Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-definition",
+        "label": "Scope Definition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:timestamp",
+        "label": "Timestamp"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:consent-registry",
+        "label": "Consent Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:visionflow:linked:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-privacy-compliance",
+        "label": "Automated Privacy Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:consent-audit-trail",
+        "label": "Consent Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:linked:consent-revocation",
+        "label": "Consent Revocation"
+      },
+      {
+        "id": "urn:visionflow:linked:user-data-sovereignty",
+        "label": "User Data Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:owl:class:granular-consent-control",
+        "label": "Granular Consent Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-privacy-compliance",
+      "label": "Automated Privacy Compliance"
+    },
+    {
+      "slug": "blockchain-ledger",
+      "label": "Blockchain Ledger"
+    },
+    {
+      "slug": "consent-audit-trail",
+      "label": "Consent Audit Trail"
+    },
+    {
+      "slug": "consent-management-framework",
+      "label": "Consent Management Framework"
+    },
+    {
+      "slug": "consent-payload",
+      "label": "Consent Payload"
+    },
+    {
+      "slug": "consent-registry",
+      "label": "Consent Registry"
+    },
+    {
+      "slug": "consent-revocation",
+      "label": "Consent Revocation"
+    },
+    {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "data-schema",
+      "label": "Data Schema"
+    },
+    {
+      "slug": "decentralized-identifier-did",
+      "label": "Decentralized Identifier (DID)"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "iso-29184",
+      "label": "ISO 29184"
+    },
+    {
+      "slug": "privacy-policy",
+      "label": "Privacy Policy"
+    },
+    {
+      "slug": "revocation-mechanism",
+      "label": "Revocation Mechanism"
+    },
+    {
+      "slug": "scope-definition",
+      "label": "Scope Definition"
+    },
+    {
+      "slug": "time-oracle",
+      "label": "Time Oracle"
+    },
+    {
+      "slug": "user-data-sovereignty",
+      "label": "User Data Sovereignty"
+    },
+    {
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "granular-consent-control",
+      "label": "Granular Consent Control"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "timestamp",
+      "label": "Timestamp"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": []
+}

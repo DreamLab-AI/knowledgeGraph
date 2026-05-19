@@ -1,0 +1,200 @@
+{
+  "id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4",
+  "title": "Consensus Algorithm",
+  "slug": "consensus-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:consensus-algorithm",
+  "domain": "blockchain",
+  "definition": "Distributed computational protocol ensuring all participants in a [[Blockchain Network]] agree on the canonical transaction history and current state without centralised authority. [[Consensus Mechanisms]] including [[Proof of Work]], [[Proof of Stake]], and [[Byzantine Fault Tolerance]] enable [[Trustless Coordination]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "achieves-finality",
+      "label": "achievesFinality"
+    },
+    {
+      "slug": "consensus-algorithms",
+      "label": "Consensus Algorithms"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "data-integrity",
+      "label": "Data Integrity"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "DistributedConsensus"
+    },
+    {
+      "slug": "dt-coordinates",
+      "label": "dt:coordinates"
+    },
+    {
+      "slug": "dt-governs",
+      "label": "dt:governs"
+    },
+    {
+      "slug": "dt-secures",
+      "label": "dt:secures"
+    },
+    {
+      "slug": "dt-synchronizes",
+      "label": "dt:synchronizes"
+    },
+    {
+      "slug": "dt-validates",
+      "label": "dt:validates"
+    },
+    {
+      "slug": "implemented-by",
+      "label": "implementedBy"
+    },
+    {
+      "slug": "iso-iec-2382-2025",
+      "label": "ISO/IEC 2382:2025"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "network-security",
+      "label": "NetworkSecurity"
+    },
+    {
+      "slug": "requires-validators",
+      "label": "requiresValidators"
+    },
+    {
+      "slug": "tolerates-faults",
+      "label": "toleratesFaults"
+    },
+    {
+      "slug": "trustless-coordination",
+      "label": "Trustless Coordination"
+    },
+    {
+      "slug": "validator-network",
+      "label": "ValidatorNetwork"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "DigitalAsset"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "DigitalTwin"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "FaultTolerance"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "ProofOfStake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "VirtualWorld"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

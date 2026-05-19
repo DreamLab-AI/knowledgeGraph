@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:6f5e1b4d8df64aae2c011fc0d7fec0327e2b3a0a457107d39497c0acdffb8eea",
+  "title": "Compliance Verification",
+  "slug": "compliance-verification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compliance-verification",
+  "domain": "infrastructure",
+  "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:kyc-aml-requirements",
+        "label": "KYC/AML Requirements"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "kyc-aml-requirements",
+      "label": "KYC/AML Requirements"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    },
+    {
+      "slug": "environmental-sustainability-label",
+      "label": "Environmental Sustainability Label"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    },
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:61137e13cae89a05d083f34cea5b7931e81bb59afab892db877a10ddb454fee1",
+  "title": "Metaverse Infrastructure",
+  "slug": "metaverse-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Technical infrastructure supporting metaverse platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    },
+    {
+      "slug": "global-metaverse-operations",
+      "label": "Global Metaverse Operations"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    }
+  ]
+}

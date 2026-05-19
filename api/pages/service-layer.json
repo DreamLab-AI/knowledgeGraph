@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:e0c64adbd82301edf4e7a3991f2d57053e636cb2fcdf7ec7152bb54f27b045b6",
+  "title": "Service Layer",
+  "slug": "service-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:service-layer",
+  "domain": "spatial-computing",
+  "definition": "Collection of reusable services exposed via APIs for identity, assets, physics, and analytics that enable application functionality and interoperability in virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:analytics-service",
+        "label": "Analytics Service"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-service",
+        "label": "Asset Service"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-service",
+        "label": "Identity Service"
+      },
+      {
+        "id": "urn:visionflow:linked:physics-service",
+        "label": "Physics Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:api-management",
+        "label": "API Management"
+      },
+      {
+        "id": "urn:visionflow:linked:data-models",
+        "label": "Data Models"
+      },
+      {
+        "id": "urn:visionflow:linked:service-orchestration",
+        "label": "Service Orchestration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:service-composition",
+        "label": "Service Composition"
+      },
+      {
+        "id": "urn:visionflow:linked:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:visionflow:owl:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analytics-service",
+      "label": "Analytics Service"
+    },
+    {
+      "slug": "api-integration",
+      "label": "API Integration"
+    },
+    {
+      "slug": "api-management",
+      "label": "API Management"
+    },
+    {
+      "slug": "asset-service",
+      "label": "Asset Service"
+    },
+    {
+      "slug": "data-models",
+      "label": "Data Models"
+    },
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF Taxonomy"
+    },
+    {
+      "slug": "identity-service",
+      "label": "Identity Service"
+    },
+    {
+      "slug": "message-queue",
+      "label": "Message Queue"
+    },
+    {
+      "slug": "physics-service",
+      "label": "Physics Service"
+    },
+    {
+      "slug": "service-composition",
+      "label": "Service Composition"
+    },
+    {
+      "slug": "service-discovery",
+      "label": "Service Discovery"
+    },
+    {
+      "slug": "service-orchestration",
+      "label": "Service Orchestration"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

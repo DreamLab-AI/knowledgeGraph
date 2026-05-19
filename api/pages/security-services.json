@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:7dd2cac3ace9faa03f69b76ab76066d21f75f13bc06aae52626c9d7d7176c9eb",
+  "title": "Security Services",
+  "slug": "security-services",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:security-services",
+  "domain": "spatial-computing",
+  "definition": "Security Services is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "third-party-auditor",
+      "label": "Third Party Auditor"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:576c7577cb5d1a6216a33a9e3680c04e40433e22001e72d119a29e37776461e9",
+  "title": "Immersive Learning",
+  "slug": "immersive-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-learning",
+  "domain": "spatial-computing",
+  "definition": "Educational approaches utilising VR, AR, and metaverse technologies to create engaging, interactive learning environments that enable experiential skill development, realistic scenario simulation, and enhanced knowledge retention through presence-based educational experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:experiential-education",
+        "label": "Experiential Education"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "experiential-education",
+      "label": "Experiential Education"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "educational-narrative",
+      "label": "Educational Narrative"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

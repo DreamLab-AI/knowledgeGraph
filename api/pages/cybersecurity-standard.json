@@ -1,0 +1,182 @@
+{
+  "id": "urn:visionflow:page:c8bfe5c8adf776f08b653a8ec360391015aec4bb7914d350e6fe483bc0fdae42",
+  "title": "Cybersecurity Standard",
+  "slug": "cybersecurity-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cybersecurity-standard",
+  "domain": "robotics",
+  "definition": "Cybersecurity standard addresses digital security threats to robot systems through standardised practices for vulnerability assessment, secure communications, authentication, and incident response. These standards protect robots from remote exploitation, data theft, and malicious control whilst maintaining operational availability in safety-critical deployments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:security-standards",
+      "label": "Security Standards"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-standard",
+      "label": "Robot Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:visionflow:linked:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:encryption-protocol",
+        "label": "Encryption Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:secure-communication-channel",
+        "label": "Secure Communication Channel"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:vulnerability-assessment",
+        "label": "Vulnerability Assessment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compliance-assurance",
+        "label": "Compliance Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:malicious-control-prevention",
+        "label": "Malicious Control Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:protected-data-transmission",
+        "label": "Protected Data Transmission"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-teleoperation",
+        "label": "Secure Teleoperation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-logging",
+      "label": "Audit Logging"
+    },
+    {
+      "slug": "authentication-mechanism",
+      "label": "Authentication Mechanism"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "compliance-assurance",
+      "label": "Compliance Assurance"
+    },
+    {
+      "slug": "cryptographic-infrastructure",
+      "label": "Cryptographic Infrastructure"
+    },
+    {
+      "slug": "device-hardening",
+      "label": "Device Hardening"
+    },
+    {
+      "slug": "encryption-protocol",
+      "label": "Encryption Protocol"
+    },
+    {
+      "slug": "iec-62443",
+      "label": "IEC 62443"
+    },
+    {
+      "slug": "iso-sae-21434",
+      "label": "ISO/SAE 21434"
+    },
+    {
+      "slug": "malicious-control-prevention",
+      "label": "Malicious Control Prevention"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "protected-data-transmission",
+      "label": "Protected Data Transmission"
+    },
+    {
+      "slug": "secure-communication-channel",
+      "label": "Secure Communication Channel"
+    },
+    {
+      "slug": "secure-teleoperation",
+      "label": "Secure Teleoperation"
+    },
+    {
+      "slug": "security-standards",
+      "label": "Security Standards"
+    },
+    {
+      "slug": "threat-detection",
+      "label": "Threat Detection"
+    },
+    {
+      "slug": "vulnerability-assessment",
+      "label": "Vulnerability Assessment"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

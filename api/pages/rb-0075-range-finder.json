@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9b8bb9137e62ea4e888444c01a6af94a61a42a50e20455f5454487de69df5fe8",
+  "title": "rb 0075 range finder",
+  "slug": "rb-0075-range-finder",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0075-range-finder",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

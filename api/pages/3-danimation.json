@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:9026bbd4156f3e6767469ec12fb54e7c8c410d0764859c416c5887315e8358c0",
+  "title": "3DAnimation",
+  "slug": "3-danimation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-danimation",
+  "domain": "spatial-computing",
+  "definition": "3DAnimation is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:animation-technique",
+      "label": "Animation Technique"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-iec-jtc-1-sc-24",
+      "label": "ISO/IEC JTC 1/SC 24"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

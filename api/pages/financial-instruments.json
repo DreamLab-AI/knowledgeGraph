@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:ac571f0cdda20a43470e152e4960840da9aa300b2db93506e1860c0c73ad3a87",
+  "title": "Financial Instruments",
+  "slug": "financial-instruments",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:financial-instruments",
+  "domain": "infrastructure",
+  "definition": "FinancialInstruments is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    }
+  ]
+}

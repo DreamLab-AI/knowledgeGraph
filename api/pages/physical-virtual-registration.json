@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:05f42e95501c23f7ddf8cd9a692a206c5d70ba1df9026e4ff5174d0680434803",
+  "title": "Physical Virtual Registration",
+  "slug": "physical-virtual-registration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:physical-virtual-registration",
+  "domain": "spatial-computing",
+  "definition": "The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accurate-ar-overlay",
+        "label": "Accurate AR Overlay"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accurate-ar-overlay",
+      "label": "Accurate AR Overlay"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:d384c9bf313d068005e16a67deb5ae4f6baadc7b2db5b1063fc019033489a89a",
+  "title": "Secure Data Sharing",
+  "slug": "secure-data-sharing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:secure-data-sharing",
+  "domain": "infrastructure",
+  "definition": "Cryptographic and access control mechanisms that enable controlled exchange of sensitive information between parties in metaverse environments while maintaining confidentiality, integrity, and regulatory compliance through encryption and permissioned access.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-security",
+      "label": "Data Security"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:confidential-collaboration",
+        "label": "Confidential Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "confidential-collaboration",
+      "label": "Confidential Collaboration"
+    },
+    {
+      "slug": "data-security",
+      "label": "Data Security"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    }
+  ]
+}

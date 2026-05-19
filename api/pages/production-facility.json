@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9f1e27bad1e3231d11d4524dd7961b72bf34d1966790bdb3cd6e862fe96ed070",
+  "title": "Production Facility",
+  "slug": "production-facility",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:production-facility",
+  "domain": "infrastructure",
+  "definition": "ProductionFacility is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "virtual-stage",
+      "label": "Virtual Stage"
+    }
+  ]
+}

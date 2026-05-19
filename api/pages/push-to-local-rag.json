@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:19ad8557c018ad97c852e04bb2b5e826cf672fc0cddff4cfa7caca7c022352a2",
+  "title": "Push To Local RAG",
+  "slug": "push-to-local-rag",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:push-to-local-rag",
+  "domain": "artificial-intelligence",
+  "definition": "Push To Local RAG is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "untitled",
+      "label": "..."
+    }
+  ],
+  "backlinks": []
+}

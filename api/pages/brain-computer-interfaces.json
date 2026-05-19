@@ -1,0 +1,756 @@
+{
+  "id": "urn:visionflow:page:623b48021141ca5dd14c9ae9522202a74da509ec0cb5d686988c3d1d333eaf43",
+  "title": "Brain Computer Interfaces",
+  "slug": "brain-computer-interfaces",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:brain-computer-interfaces",
+  "domain": "infrastructure",
+  "definition": "Brain-Computer Interfaces (BCIs), also termed brain-machine interfaces (BMIs) or direct neural interfaces, are biomedical and neurotechnological systems establishing a direct, real-time bidirectional or unidirectional communication channel between the central nervous system (predominantly the cerebral cortex, but also subcortical structures, the spinal cord, and peripheral nerves) and an external computational device, bypassing the conventional efferent pathways of muscles and nerves to translate measured neural activity into control signals (decoding) or to inject information into the nervous system through electrical, optical, magnetic, or ultrasonic stimulation (encoding), spanning a taxonomy of acquisition modalities stratified by invasiveness (fully invasive penetrating microelectrode arrays such as the Blackrock Utah Array \u2014 a 4\u00d74 mm silicon substrate with 96-128 platinum-iridium needles 1.0-1.5 mm long sampling action potentials from individual neurons at 30 kHz with 100-300 \u03bcV signal amplitudes, the Michigan probe family of planar silicon shanks with 16-64 recording sites enabling multi-depth laminar recordings, and the Neuropixels 1.0/2.0 IMEC-Janelia probes integrating 96",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:assistive-technology",
+      "label": "Assistive Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:biomedical-device",
+      "label": "Biomedical Device"
+    },
+    {
+      "id": "urn:visionflow:linked:neural-interface",
+      "label": "Neural Interface"
+    },
+    {
+      "id": "urn:visionflow:linked:neuroprosthetic-system",
+      "label": "Neuroprosthetic System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interface",
+      "label": "Human-Computer Interface"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:battery-or-inductive-power-link",
+        "label": "Battery or Inductive Power Link"
+      },
+      {
+        "id": "urn:visionflow:linked:biocompatible-encapsulation",
+        "label": "Biocompatible Encapsulation"
+      },
+      {
+        "id": "urn:visionflow:linked:microelectrode-array",
+        "label": "Microelectrode Array"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-decoder",
+        "label": "Neural Decoder"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-amplifier",
+        "label": "Signal Amplifier"
+      },
+      {
+        "id": "urn:visionflow:linked:spike-sorter",
+        "label": "Spike Sorter"
+      },
+      {
+        "id": "urn:visionflow:linked:stimulation-driver",
+        "label": "Stimulation Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:wireless-telemetry-module",
+        "label": "Wireless Telemetry Module"
+      },
+      {
+        "id": "urn:visionflow:owl:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Converter"
+      },
+      {
+        "id": "urn:visionflow:owl:class:surgical-robot",
+        "label": "Surgical Robot"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:biocompatible-materials",
+        "label": "Biocompatible Materials"
+      },
+      {
+        "id": "urn:visionflow:linked:clinical-trial-infrastructure",
+        "label": "Clinical Trial Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "id": "urn:visionflow:linked:low-noise-analog-electronics",
+        "label": "Low-Noise Analog Electronics"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-learning-decoder",
+        "label": "Machine Learning Decoder"
+      },
+      {
+        "id": "urn:visionflow:linked:neurosurgical-procedure",
+        "label": "Neurosurgical Procedure"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-approval",
+        "label": "Regulatory Approval"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:closed-loop-neuromodulation",
+        "label": "Closed-Loop Neuromodulation"
+      },
+      {
+        "id": "urn:visionflow:linked:cognitive-augmentation",
+        "label": "Cognitive Augmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:communication-for-locked-in-patients",
+        "label": "Communication for Locked-In Patients"
+      },
+      {
+        "id": "urn:visionflow:linked:direct-neural-control",
+        "label": "Direct Neural Control"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-restoration",
+        "label": "Motor Restoration"
+      },
+      {
+        "id": "urn:visionflow:linked:neurofeedback-therapy",
+        "label": "Neurofeedback Therapy"
+      },
+      {
+        "id": "urn:visionflow:linked:sensory-restoration",
+        "label": "Sensory Restoration"
+      },
+      {
+        "id": "urn:visionflow:linked:speech-restoration",
+        "label": "Speech Restoration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:action-potential-recording",
+        "label": "Action Potential Recording"
+      },
+      {
+        "id": "urn:visionflow:linked:electrocorticography",
+        "label": "Electrocorticography"
+      },
+      {
+        "id": "urn:visionflow:linked:electroencephalography",
+        "label": "Electroencephalography"
+      },
+      {
+        "id": "urn:visionflow:linked:functional-near-infrared-spectroscopy",
+        "label": "Functional Near-Infrared Spectroscopy"
+      },
+      {
+        "id": "urn:visionflow:linked:intracortical-microstimulation",
+        "label": "Intracortical Microstimulation"
+      },
+      {
+        "id": "urn:visionflow:linked:local-field-potential-recording",
+        "label": "Local Field Potential Recording"
+      },
+      {
+        "id": "urn:visionflow:owl:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-domain",
+      "label": "AccessibilityDomain"
+    },
+    {
+      "slug": "action-potential-recording",
+      "label": "Action Potential Recording"
+    },
+    {
+      "slug": "aflalo-et-al-2015-posterior-parietal-cortex-bci",
+      "label": "Aflalo et al. 2015 Posterior Parietal Cortex BCI"
+    },
+    {
+      "slug": "als-communication",
+      "label": "ALS Communication"
+    },
+    {
+      "slug": "assistive-technology",
+      "label": "Assistive Technology"
+    },
+    {
+      "slug": "battery-or-inductive-power-link",
+      "label": "Battery or Inductive Power Link"
+    },
+    {
+      "slug": "bci-society",
+      "label": "BCI Society"
+    },
+    {
+      "slug": "biocompatible-encapsulation",
+      "label": "Biocompatible Encapsulation"
+    },
+    {
+      "slug": "biocompatible-engineering",
+      "label": "Biocompatible Engineering"
+    },
+    {
+      "slug": "biocompatible-materials",
+      "label": "Biocompatible Materials"
+    },
+    {
+      "slug": "biomedical-device",
+      "label": "Biomedical Device"
+    },
+    {
+      "slug": "biomedical-engineering-domain",
+      "label": "BiomedicalEngineeringDomain"
+    },
+    {
+      "slug": "bouton-et-al-2016-neuro-life-restoring-cortical-control",
+      "label": "Bouton et al. 2016 NeuroLife Restoring Cortical Control"
+    },
+    {
+      "slug": "card-et-al-2024-brain-gate-self-paced-nejm",
+      "label": "Card et al. 2024 BrainGate Self-Paced NEJM"
+    },
+    {
+      "slug": "clinical-layer",
+      "label": "ClinicalLayer"
+    },
+    {
+      "slug": "clinical-trial-infrastructure",
+      "label": "Clinical Trial Infrastructure"
+    },
+    {
+      "slug": "closed-loop-neuromodulation",
+      "label": "Closed-Loop Neuromodulation"
+    },
+    {
+      "slug": "cognitive-augmentation",
+      "label": "Cognitive Augmentation"
+    },
+    {
+      "slug": "cognitive-enhancement",
+      "label": "Cognitive Enhancement"
+    },
+    {
+      "slug": "collinger-et-al-2013-pittsburgh-neuroprosthetic-lancet",
+      "label": "Collinger et al. 2013 Pittsburgh Neuroprosthetic Lancet"
+    },
+    {
+      "slug": "common-spatial-patterns",
+      "label": "Common Spatial Patterns"
+    },
+    {
+      "slug": "communication-for-locked-in-patients",
+      "label": "Communication for Locked-In Patients"
+    },
+    {
+      "slug": "computational-neuroscience",
+      "label": "Computational Neuroscience"
+    },
+    {
+      "slug": "cyborg",
+      "label": "Cyborg"
+    },
+    {
+      "slug": "direct-neural-control",
+      "label": "Direct Neural Control"
+    },
+    {
+      "slug": "electrocorticography",
+      "label": "Electrocorticography"
+    },
+    {
+      "slug": "electroencephalography",
+      "label": "Electroencephalography"
+    },
+    {
+      "slug": "electrophysiology",
+      "label": "Electrophysiology"
+    },
+    {
+      "slug": "emg-wristband",
+      "label": "EMG Wristband"
+    },
+    {
+      "slug": "eu-medical-device-regulation",
+      "label": "EU Medical Device Regulation"
+    },
+    {
+      "slug": "farwell-donchin-1988-p300-speller",
+      "label": "Farwell Donchin 1988 P300 Speller"
+    },
+    {
+      "slug": "fda-2021-bci-devices-draft-guidance",
+      "label": "FDA 2021 BCI Devices Draft Guidance"
+    },
+    {
+      "slug": "fda-bci-guidance-2021",
+      "label": "FDA BCI Guidance 2021"
+    },
+    {
+      "slug": "flesher-et-al-2016-intracortical-microstimulation-s1",
+      "label": "Flesher et al. 2016 Intracortical Microstimulation S1"
+    },
+    {
+      "slug": "functional-near-infrared-spectroscopy",
+      "label": "Functional Near-Infrared Spectroscopy"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "hochberg-et-al-2006-brain-gate-nature",
+      "label": "Hochberg et al. 2006 BrainGate Nature"
+    },
+    {
+      "slug": "hochberg-et-al-2012-reach-and-grasp-tetraplegia",
+      "label": "Hochberg et al. 2012 Reach and Grasp Tetraplegia"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "ieee-2731",
+      "label": "IEEE 2731"
+    },
+    {
+      "slug": "ieee-3209",
+      "label": "IEEE 3209"
+    },
+    {
+      "slug": "independent-component-analysis",
+      "label": "Independent Component Analysis"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "informed-consent",
+      "label": "Informed Consent"
+    },
+    {
+      "slug": "intracortical-microstimulation",
+      "label": "Intracortical Microstimulation"
+    },
+    {
+      "slug": "iso-14708-active-implantable-medical-devices",
+      "label": "ISO 14708 Active Implantable Medical Devices"
+    },
+    {
+      "slug": "jun-et-al-2017-neuropixels-nature",
+      "label": "Jun et al. 2017 Neuropixels Nature"
+    },
+    {
+      "slug": "kennedy-et-al-2000-first-chronic-human-implant",
+      "label": "Kennedy et al. 2000 First Chronic Human Implant"
+    },
+    {
+      "slug": "keyboard",
+      "label": "Keyboard"
+    },
+    {
+      "slug": "linear-discriminant-analysis",
+      "label": "Linear Discriminant Analysis"
+    },
+    {
+      "slug": "little-et-al-2013-adaptive-dbs-parkinson",
+      "label": "Little et al. 2013 Adaptive DBS Parkinson"
+    },
+    {
+      "slug": "local-field-potential-recording",
+      "label": "Local Field Potential Recording"
+    },
+    {
+      "slug": "locked-in-syndrome-communication",
+      "label": "Locked-In Syndrome Communication"
+    },
+    {
+      "slug": "low-noise-analog-electronics",
+      "label": "Low-Noise Analog Electronics"
+    },
+    {
+      "slug": "machine-learning-decoder",
+      "label": "Machine Learning Decoder"
+    },
+    {
+      "slug": "mamba-state-space-model",
+      "label": "Mamba State-Space Model"
+    },
+    {
+      "slug": "mayberg-et-al-2005-scg-dbs-depression-neuron",
+      "label": "Mayberg et al. 2005 SCG-DBS Depression Neuron"
+    },
+    {
+      "slug": "maynard-et-al-1997-utah-array",
+      "label": "Maynard et al. 1997 Utah Array"
+    },
+    {
+      "slug": "metzger-et-al-2023-ucsf-ann-avatar-nature",
+      "label": "Metzger et al. 2023 UCSF Ann Avatar Nature"
+    },
+    {
+      "slug": "microelectrode-array",
+      "label": "Microelectrode Array"
+    },
+    {
+      "slug": "mitchell-et-al-2023-switch-jama-neurology",
+      "label": "Mitchell et al. 2023 SWITCH JAMA Neurology"
+    },
+    {
+      "slug": "moses-et-al-2021-ucsf-pancho-nejm",
+      "label": "Moses et al. 2021 UCSF Pancho NEJM"
+    },
+    {
+      "slug": "motor-restoration",
+      "label": "Motor Restoration"
+    },
+    {
+      "slug": "mouse",
+      "label": "Mouse"
+    },
+    {
+      "slug": "musk-neuralink-2019-white-paper-jmir",
+      "label": "Musk Neuralink 2019 White Paper JMIR"
+    },
+    {
+      "slug": "neural-decoder",
+      "label": "Neural Decoder"
+    },
+    {
+      "slug": "neural-interface",
+      "label": "Neural Interface"
+    },
+    {
+      "slug": "neurofeedback-therapy",
+      "label": "Neurofeedback Therapy"
+    },
+    {
+      "slug": "neuromodulation",
+      "label": "Neuromodulation"
+    },
+    {
+      "slug": "neuroprosthetic-system",
+      "label": "Neuroprosthetic System"
+    },
+    {
+      "slug": "neuroprosthetics",
+      "label": "Neuroprosthetics"
+    },
+    {
+      "slug": "neurorights",
+      "label": "Neurorights"
+    },
+    {
+      "slug": "neuroscience",
+      "label": "Neuroscience"
+    },
+    {
+      "slug": "neurosurgical-procedure",
+      "label": "Neurosurgical Procedure"
+    },
+    {
+      "slug": "neurotechnology-domain",
+      "label": "NeurotechnologyDomain"
+    },
+    {
+      "slug": "oxley-et-al-2016-stentrode-nature-biotechnology",
+      "label": "Oxley et al. 2016 Stentrode Nature Biotechnology"
+    },
+    {
+      "slug": "pandarinath-et-al-2018-lfads",
+      "label": "Pandarinath et al. 2018 LFADS"
+    },
+    {
+      "slug": "parkinson-s-disease-treatment",
+      "label": "Parkinson's Disease Treatment"
+    },
+    {
+      "slug": "peripheral-nerve-interface",
+      "label": "Peripheral Nerve Interface"
+    },
+    {
+      "slug": "real-time-computing",
+      "label": "Real-Time Computing"
+    },
+    {
+      "slug": "refractory-epilepsy-treatment",
+      "label": "Refractory Epilepsy Treatment"
+    },
+    {
+      "slug": "regulatory-approval",
+      "label": "Regulatory Approval"
+    },
+    {
+      "slug": "riemannian-geometry",
+      "label": "Riemannian Geometry"
+    },
+    {
+      "slug": "rowald-et-al-2022-activity-dependent-spinal-neuromodulation",
+      "label": "Rowald et al. 2022 Activity-Dependent Spinal Neuromodulation"
+    },
+    {
+      "slug": "sensory-restoration",
+      "label": "Sensory Restoration"
+    },
+    {
+      "slug": "signal-amplifier",
+      "label": "Signal Amplifier"
+    },
+    {
+      "slug": "signal-processing-layer",
+      "label": "SignalProcessingLayer"
+    },
+    {
+      "slug": "speech-restoration",
+      "label": "Speech Restoration"
+    },
+    {
+      "slug": "spike-sorter",
+      "label": "Spike Sorter"
+    },
+    {
+      "slug": "spinal-cord-injury-recovery",
+      "label": "Spinal Cord Injury Recovery"
+    },
+    {
+      "slug": "spinal-cord-stimulator",
+      "label": "Spinal Cord Stimulator"
+    },
+    {
+      "slug": "stimulation-driver",
+      "label": "Stimulation Driver"
+    },
+    {
+      "slug": "stroke-rehabilitation",
+      "label": "Stroke Rehabilitation"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "tetraplegia-rehabilitation",
+      "label": "Tetraplegia Rehabilitation"
+    },
+    {
+      "slug": "treatment-resistant-depression",
+      "label": "Treatment-Resistant Depression"
+    },
+    {
+      "slug": "unesco-2024-neurotech-ethics-recommendation",
+      "label": "UNESCO 2024 Neurotech Ethics Recommendation"
+    },
+    {
+      "slug": "unesco-neurotech-recommendation",
+      "label": "UNESCO Neurotech Recommendation"
+    },
+    {
+      "slug": "vidal-1973-toward-direct-brain-computer-communication",
+      "label": "Vidal 1973 Toward Direct Brain-Computer Communication"
+    },
+    {
+      "slug": "voice-recognition",
+      "label": "Voice Recognition"
+    },
+    {
+      "slug": "wagner-et-al-2018-spinal-cord-neurotechnology-walking-nature",
+      "label": "Wagner et al. 2018 Spinal Cord Neurotechnology Walking Nature"
+    },
+    {
+      "slug": "wandelt-et-al-2024-internal-speech-supramarginal-gyrus",
+      "label": "Wandelt et al. 2024 Internal Speech Supramarginal Gyrus"
+    },
+    {
+      "slug": "wearable-computing",
+      "label": "Wearable Computing"
+    },
+    {
+      "slug": "wiener-filter",
+      "label": "Wiener Filter"
+    },
+    {
+      "slug": "willett-et-al-2021-handwriting-bci-nature",
+      "label": "Willett et al. 2021 Handwriting BCI Nature"
+    },
+    {
+      "slug": "willett-et-al-2023-brain-gate-speech-nature",
+      "label": "Willett et al. 2023 BrainGate Speech Nature"
+    },
+    {
+      "slug": "wireless-telemetry-module",
+      "label": "Wireless Telemetry Module"
+    },
+    {
+      "slug": "wolpaw-et-al-2002-bci-review",
+      "label": "Wolpaw et al. 2002 BCI Review"
+    },
+    {
+      "slug": "wu-et-al-2006-bayesian-kalman-motor-cortex",
+      "label": "Wu et al. 2006 Bayesian Kalman Motor Cortex"
+    },
+    {
+      "slug": "yuste-et-al-2017-four-ethical-priorities-neurotech",
+      "label": "Yuste et al. 2017 Four Ethical Priorities Neurotech"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "analog-to-digital-converter",
+      "label": "Analog-to-Digital Converter"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "human-computer-interface",
+      "label": "Human-Computer Interface"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "surgical-robot",
+      "label": "Surgical Robot"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

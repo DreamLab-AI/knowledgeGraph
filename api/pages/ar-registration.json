@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:fe0142bdd26f779aeeda19879db9da578aa211339b1baa8a37df84e889434cd8",
+  "title": "AR Registration",
+  "slug": "ar-registration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ar-registration",
+  "domain": "spatial-computing",
+  "definition": "AR Registration is the spatial alignment process that anchors virtual content to real-world coordinates through [[Computer Vision]], [[Sensor Input]], and tracking algorithms. Successful registration maintains persistent, geometrically accurate overlay of digital objects on physical environments, critical for functional AR applications spanning [[AR Technology]], industrial guidance, and [[3D User Interface]] interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:spatial-tracking",
+      "label": "Spatial Tracking"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:geometric-accuracy",
+        "label": "Geometric Accuracy"
+      },
+      {
+        "id": "urn:visionflow:linked:interaction-with-physical-objects",
+        "label": "Interaction with Physical Objects"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-content-anchoring",
+        "label": "Persistent Content Anchoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "feature-matching",
+      "label": "Feature Matching"
+    },
+    {
+      "slug": "geometric-accuracy",
+      "label": "Geometric Accuracy"
+    },
+    {
+      "slug": "imu",
+      "label": "IMU"
+    },
+    {
+      "slug": "interaction-with-physical-objects",
+      "label": "Interaction with Physical Objects"
+    },
+    {
+      "slug": "persistent-content-anchoring",
+      "label": "Persistent Content Anchoring"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-anchoring",
+      "label": "Spatial Anchoring"
+    },
+    {
+      "slug": "spatial-tracking",
+      "label": "Spatial Tracking"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "spatial-calibration",
+      "label": "Spatial Calibration"
+    }
+  ]
+}

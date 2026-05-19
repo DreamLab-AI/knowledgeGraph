@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:fcab76dde085d16cf6db6ab338f7d244c3bcb0987d8b6d94d16559fdfbba9d8a",
+  "title": "System Architecture",
+  "slug": "system-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:system-architecture",
+  "domain": "artificial-intelligence",
+  "definition": "System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale. This encompasses distributed training infrastructure, inference servers, data pipelines, model registries, monitoring systems, and edge-cloud coordination. Architectural decisions address latency requirements, throughput targets, fault tolerance, security, and cost optimization. Modern AI systems adopt cloud-native, containerized architectures with orchestration platforms (Kubernetes), enabling elastic scaling, multi-tenancy, and global deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    },
+    {
+      "slug": "enterprise-architecture",
+      "label": "Enterprise Architecture"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event Driven Architecture"
+    },
+    {
+      "slug": "metaverse-architecture",
+      "label": "Metaverse Architecture"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    },
+    {
+      "slug": "model-architecture",
+      "label": "Model Architecture"
+    },
+    {
+      "slug": "privacy-architecture",
+      "label": "Privacy Architecture"
+    },
+    {
+      "slug": "scalable-architecture",
+      "label": "Scalable Architecture"
+    },
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    },
+    {
+      "slug": "user-interface-architecture",
+      "label": "User Interface Architecture"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797",
+  "title": "Metaverse Safety Protocol",
+  "slug": "metaverse-safety-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-safety-protocol",
+  "domain": "spatial-computing",
+  "definition": "Procedures and safeguards ensuring physical and psychological safety of users during immersive metaverse experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:incident-response-protocol",
+        "label": "Incident Response Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-assessment-procedure",
+        "label": "Risk Assessment Procedure"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-guideline",
+        "label": "Safety Guideline"
+      },
+      {
+        "id": "urn:visionflow:linked:user-protection-measure",
+        "label": "User Protection Measure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:safety-assessment",
+        "label": "Safety Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:user-monitoring",
+        "label": "User Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-well-being",
+        "label": "User Well-being"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:safe-immersive-experience",
+        "label": "Safe Immersive Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi-eni-008",
+      "label": "ETSI ENI 008"
+    },
+    {
+      "slug": "ieee-vr-safety",
+      "label": "IEEE VR Safety"
+    },
+    {
+      "slug": "incident-response-protocol",
+      "label": "Incident Response Protocol"
+    },
+    {
+      "slug": "iso-45003",
+      "label": "ISO 45003"
+    },
+    {
+      "slug": "risk-assessment-procedure",
+      "label": "Risk Assessment Procedure"
+    },
+    {
+      "slug": "safety-assessment",
+      "label": "Safety Assessment"
+    },
+    {
+      "slug": "safety-guideline",
+      "label": "Safety Guideline"
+    },
+    {
+      "slug": "safety-standard",
+      "label": "Safety Standard"
+    },
+    {
+      "slug": "user-monitoring",
+      "label": "User Monitoring"
+    },
+    {
+      "slug": "user-protection-measure",
+      "label": "User Protection Measure"
+    },
+    {
+      "slug": "user-well-being",
+      "label": "User Well-being"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "risk-mitigation",
+      "label": "Risk Mitigation"
+    },
+    {
+      "slug": "safe-immersive-experience",
+      "label": "Safe Immersive Experience"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

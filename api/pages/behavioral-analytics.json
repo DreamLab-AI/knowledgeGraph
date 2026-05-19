@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:532329803d885080dbadc4e7ea53495265f6b881e53affe6f2417b2f2ba41af7",
+  "title": "Behavioral Analytics",
+  "slug": "behavioral-analytics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:behavioral-analytics",
+  "domain": "artificial-intelligence",
+  "definition": "Behavioral Analytics is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": []
+}

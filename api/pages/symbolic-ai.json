@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:165d3ae7770f44216740199936f318141ff02ae649cc559b7b5831b2cc063239",
+  "title": "Symbolic AI",
+  "slug": "symbolic-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:symbolic-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Artificial intelligence based on symbolic representations of problems, logic, and search algorithms, also known as Good Old-Fashioned AI (GOFAI).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "academic-ai-research",
+      "label": "Academic AI Research"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "programming-paradigm",
+      "label": "Programming Paradigm"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

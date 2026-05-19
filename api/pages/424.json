@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:658e9421b75e9672d937f5f81b75c11354cbbb43bfb1e901c94f06ae04e64125",
+  "title": "424",
+  "slug": "424",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:424",
+  "domain": "infrastructure",
+  "definition": "424 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

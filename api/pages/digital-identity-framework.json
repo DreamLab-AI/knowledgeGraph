@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:694da137453a1c2489e1b3b80fac909f8d827913d9050a3004266ffabc61724a",
+  "title": "Digital Identity Framework",
+  "slug": "digital-identity-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-identity-framework",
+  "domain": "infrastructure",
+  "definition": "Coordinated set of policies and standards governing creation, management, and use of digital identities in metaverse environments. bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:identity-policies",
+        "label": "Identity Policies"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-controls",
+        "label": "Privacy Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-mechanisms",
+        "label": "Trust Mechanisms"
+      },
+      {
+        "id": "urn:visionflow:owl:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-systems",
+        "label": "Cryptographic Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-frameworks",
+        "label": "Policy Frameworks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:privacy-protection",
+        "label": "Privacy Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-authentication",
+        "label": "Secure Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-systems",
+      "label": "Cryptographic Systems"
+    },
+    {
+      "slug": "e-idas-2-0",
+      "label": "eIDAS 2.0"
+    },
+    {
+      "slug": "identity-policies",
+      "label": "Identity Policies"
+    },
+    {
+      "slug": "iso-iec-24760",
+      "label": "ISO/IEC 24760"
+    },
+    {
+      "slug": "policy-frameworks",
+      "label": "Policy Frameworks"
+    },
+    {
+      "slug": "privacy-controls",
+      "label": "Privacy Controls"
+    },
+    {
+      "slug": "privacy-protection",
+      "label": "Privacy Protection"
+    },
+    {
+      "slug": "secure-authentication",
+      "label": "Secure Authentication"
+    },
+    {
+      "slug": "trust-mechanisms",
+      "label": "Trust Mechanisms"
+    },
+    {
+      "slug": "authentication-standards",
+      "label": "Authentication Standards"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "digital-identity-management",
+      "label": "Digital Identity Management"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "standardization-bodies",
+      "label": "Standardization Bodies"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-architecture",
+      "label": "Trust Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

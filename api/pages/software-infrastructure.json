@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:2f181e4507bbcd2ed8738b505304c44b7866d59fb83afc10056eb64a720b2813",
+  "title": "Software Infrastructure",
+  "slug": "software-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:software-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Software Infrastructure is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "platform-middleware",
+      "label": "Platform Middleware"
+    }
+  ]
+}

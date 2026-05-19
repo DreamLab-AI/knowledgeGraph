@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:b5f3c3997d3d61dfbf815da8315a6e4f7fcd817f1a68a66a4b3e6b797ecc4eea",
+  "title": "Player Two",
+  "slug": "player-two",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:player-two",
+  "domain": "infrastructure",
+  "definition": "PlayerTwo is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:collaboration-platform",
+      "label": "Collaboration Platform"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neocadia",
+      "label": "Neocadia"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "player-two-code",
+      "label": "Player Two code"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "planning-kanban-currently-broken",
+      "label": "Planning Kanban - currently broken"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

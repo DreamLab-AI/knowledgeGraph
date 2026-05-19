@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:ec5c3b85ad68bbbb22ffdc4239354bda27fcf7bc486ed4bd5f6c3cfcefe5fba7",
+  "title": "Tensor Processing Unit",
+  "slug": "tensor-processing-unit",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tensor-processing-unit",
+  "domain": "artificial-intelligence",
+  "definition": "Tensor Processing Unit is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:inference-hardware",
+      "label": "Inference Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inference-hardware",
+      "label": "Inference Hardware"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "groq",
+      "label": "Groq"
+    }
+  ]
+}

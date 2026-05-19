@@ -1,21 +1,409 @@
-iri:: http://narrativegoldmine.com/blockchain#BlockchainApplication
-uri:: urn:visionclaw:concept:blockchain:blockchain-application
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:blockchain-application
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Blockchain Application
-content-hash:: sha256-12-df381b9fa4a5
-legacy-term-id:: BC-7010
-status:: active
-maturity:: production
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#BlockchainApplication
+legacy_uri:: urn:visionclaw:concept:blockchain:blockchain-application
 public:: true
+
+# Blockchain Application
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f3569e2e9cbff510b41aeef45c12e768da0c4c80db77e4b7801e90d7033cd274",
+  "@type": "Page",
+  "vc:slug": "blockchain-application",
+  "title": "Blockchain Application",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aave",
+      "vc:label": "Aave"
+    },
+    {
+      "@id": "urn:visionflow:linked:axie-infinity",
+      "vc:label": "Axie Infinity"
+    },
+    {
+      "@id": "urn:visionflow:linked:blur",
+      "vc:label": "Blur"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainlink",
+      "vc:label": "Chainlink"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound",
+      "vc:label": "Compound"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptocurrency-wallet",
+      "vc:label": "Cryptocurrency Wallet"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentraland",
+      "vc:label": "Decentraland"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-application",
+      "vc:label": "Distributed Application"
+    },
+    {
+      "@id": "urn:visionflow:linked:ens",
+      "vc:label": "ENS"
+    },
+    {
+      "@id": "urn:visionflow:linked:maker-dao",
+      "vc:label": "MakerDAO"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-sea",
+      "vc:label": "OpenSea"
+    },
+    {
+      "@id": "urn:visionflow:linked:rarible",
+      "vc:label": "Rarible"
+    },
+    {
+      "@id": "urn:visionflow:linked:the-graph",
+      "vc:label": "The Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:the-sandbox",
+      "vc:label": "The Sandbox"
+    },
+    {
+      "@id": "urn:visionflow:linked:uniswap",
+      "vc:label": "Uniswap"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
+      "vc:label": "Blockchain Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web3",
+      "vc:label": "Web3"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-df381b9fa4a5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#BlockchainApplication"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-7010"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Blockchain Application"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-application"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:blockchain-application"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f3569e2e9cbff510b41aeef45c12e768da0c4c80db77e4b7801e90d7033cd274@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:blockchain-application",
+  "@type": "OntologyClass",
+  "label": "Blockchain Application",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:distributed-application",
+      "vc:label": "Distributed Application"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "production",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f3569e2e9cbff510b41aeef45c12e768da0c4c80db77e4b7801e90d7033cd274"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f3569e2e9cbff510b41aeef45c12e768da0c4c80db77e4b7801e90d7033cd274@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A decentralized application (dApp) that runs on a blockchain or peer-to-peer network rather than centralized servers, combining smart contract backend logic with frontend interfaces to provide enhanced security, transparency, censorship resistance, and zero downtime through distributed execution.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cryptocurrency-wallet",
+      "vc:label": "Cryptocurrency Wallet"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:web3",
+      "vc:label": "Web3"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
+      "vc:label": "Blockchain Infrastructure"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-application:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f3569e2e9cbff510b41aeef45c12e768da0c4c80db77e4b7801e90d7033cd274"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Aave]]",
+      "resolved": "urn:visionflow:linked:aave",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Axie Infinity]]",
+      "resolved": "urn:visionflow:linked:axie-infinity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blur]]",
+      "resolved": "urn:visionflow:linked:blur",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainlink]]",
+      "resolved": "urn:visionflow:linked:chainlink",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compound]]",
+      "resolved": "urn:visionflow:linked:compound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptocurrency Wallet]]",
+      "resolved": "urn:visionflow:linked:cryptocurrency-wallet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentraland]]",
+      "resolved": "urn:visionflow:linked:decentraland",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Application]]",
+      "resolved": "urn:visionflow:linked:distributed-application",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ENS]]",
+      "resolved": "urn:visionflow:linked:ens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MakerDAO]]",
+      "resolved": "urn:visionflow:linked:maker-dao",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenSea]]",
+      "resolved": "urn:visionflow:linked:open-sea",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rarible]]",
+      "resolved": "urn:visionflow:linked:rarible",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[The Graph]]",
+      "resolved": "urn:visionflow:linked:the-graph",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[The Sandbox]]",
+      "resolved": "urn:visionflow:linked:the-sandbox",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uniswap]]",
+      "resolved": "urn:visionflow:linked:uniswap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Finance (DeFi)]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Web3]]",
+      "resolved": "urn:visionflow:owl:class:web3",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f3569e2e9cbff510b41aeef45c12e768da0c4c80db77e4b7801e90d7033cd274@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A decentralized application (dApp) that runs on a blockchain or peer-to-peer network rather than centralized servers, combining smart contract backend logic with frontend interfaces to provide enhanced security, transparency, censorship resistance, and zero downtime through distributed execution.
@@ -79,7 +467,7 @@ public:: true
   ## Relationships
   - is-subclass-of:: [[Distributed Application]]
   - related-to:: [[Smart Contracts]]
-  - related-to:: [[Decentralized Finance]]
+  - related-to:: [[Decentralized Finance (DeFi)]]
   - uses:: [[Blockchain Infrastructure]]
   - enables:: [[Web3]]
   - requires:: [[Cryptocurrency Wallet]]
@@ -158,7 +546,7 @@ public:: true
 
   #### Related Concepts
   - [[Smart Contracts]]
-  - [[Decentralized Finance]]
+  - [[Decentralized Finance (DeFi)]]
   - [[Web3]]
   - [[Blockchain Infrastructure]]
   - [[Cryptocurrency Wallet]]

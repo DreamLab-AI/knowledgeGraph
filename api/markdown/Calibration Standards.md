@@ -1,25 +1,293 @@
-iri:: http://narrativegoldmine.com/spatial-computing#CalibrationStandards
-uri:: urn:visionclaw:concept:spatial-computing:calibration-standards
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:calibration-standards
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Calibration Standards
-content-hash:: sha256-12-68c955765413
-legacy-term-id:: MV-9804
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#CalibrationStandards
+legacy_uri:: urn:visionclaw:concept:spatial-computing:calibration-standards
 public:: true
-bridges-to:: [[Sensor Input]]
+
+# Calibration Standards
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89",
+  "@type": "Page",
+  "vc:slug": "calibration-standards",
+  "title": "Calibration Standards",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:device-alignment",
+      "vc:label": "Device Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:measurement-accuracy",
+      "vc:label": "Measurement Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:linked:reference-materials",
+      "vc:label": "Reference Materials"
+    },
+    {
+      "@id": "urn:visionflow:linked:traceability-chain",
+      "vc:label": "Traceability Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:validation-procedures",
+      "vc:label": "Validation Procedures"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quality-assurance",
+      "vc:label": "Quality Assurance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Sensor Input]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-68c955765413"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#CalibrationStandards"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9804"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Calibration Standards"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:calibration-standards"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:calibration-standards"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:calibration-standards",
+  "@type": "OntologyClass",
+  "label": "Calibration Standards",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:reference-materials",
+      "vc:label": "Reference Materials"
+    },
+    {
+      "@id": "urn:visionflow:linked:traceability-chain",
+      "vc:label": "Traceability Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:validation-procedures",
+      "vc:label": "Validation Procedures"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:device-alignment",
+      "vc:label": "Device Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:measurement-accuracy",
+      "vc:label": "Measurement Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quality-assurance",
+      "vc:label": "Quality Assurance"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:calibration-standards:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Device Alignment]]",
+      "resolved": "urn:visionflow:linked:device-alignment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Measurement Accuracy]]",
+      "resolved": "urn:visionflow:linked:measurement-accuracy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reference Materials]]",
+      "resolved": "urn:visionflow:linked:reference-materials",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Traceability Chain]]",
+      "resolved": "urn:visionflow:linked:traceability-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Validation Procedures]]",
+      "resolved": "urn:visionflow:linked:validation-procedures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quality Assurance]]",
+      "resolved": "urn:visionflow:owl:class:quality-assurance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technical Standard]]",
+      "resolved": "urn:visionflow:owl:class:technical-standard",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.

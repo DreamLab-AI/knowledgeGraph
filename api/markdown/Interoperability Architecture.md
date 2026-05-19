@@ -1,21 +1,204 @@
-iri:: http://narrativegoldmine.com/infrastructure#InteroperabilityArchitecture
-uri:: urn:visionclaw:concept:infrastructure:interoperability-architecture
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:interoperability-architecture
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Interoperability Architecture
-content-hash:: sha256-12-93778ed36959
-legacy-term-id:: MV-9934
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#InteroperabilityArchitecture
+legacy_uri:: urn:visionclaw:concept:infrastructure:interoperability-architecture
 public:: true
+
+# Interoperability Architecture
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face",
+  "@type": "Page",
+  "vc:slug": "interoperability-architecture",
+  "title": "Interoperability Architecture",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:unified-metaverse",
+      "vc:label": "Unified Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-architecture",
+      "vc:label": "Technical Architecture"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-93778ed36959"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#InteroperabilityArchitecture"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9934"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Interoperability Architecture"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability-architecture"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability-architecture"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:interoperability-architecture",
+  "@type": "OntologyClass",
+  "label": "Interoperability Architecture",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technical-architecture",
+      "vc:label": "Technical Architecture"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:unified-metaverse",
+      "vc:label": "Unified Metaverse"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:interoperability-architecture:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Unified Metaverse]]",
+      "resolved": "urn:visionflow:linked:unified-metaverse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technical Architecture]]",
+      "resolved": "urn:visionflow:owl:class:technical-architecture",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.

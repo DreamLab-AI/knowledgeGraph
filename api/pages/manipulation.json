@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:2416a5bb99cae4645130b012618f59725514c5a2c88d45baa488e69358d68ca2",
+  "title": "Manipulation",
+  "slug": "manipulation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:manipulation",
+  "domain": "robotics",
+  "definition": "Manipulation in robotics refers to the ability of robotic systems to physically interact with and control objects in their environment. This encompasses grasping, object handling, dexterous manipulation, and the end effectors and planning algorithms that enable robots to perform precise physical tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

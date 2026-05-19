@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:7608807c9cccda78ffc6ed09e091989501a4a8de82b2ce551f2249345ae8769d",
+  "title": "Metaverse governance and safeguarding",
+  "slug": "metaverse-governance-and-safeguarding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+  "domain": "spatial-computing",
+  "definition": "Metaverse governance and safeguarding is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

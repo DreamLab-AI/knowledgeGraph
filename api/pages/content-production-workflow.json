@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:fc114484a1dbcd92fd34f6b1b43dd232334b3faca96f16bd5e7e88b688e3aed7",
+  "title": "Content Production Workflow",
+  "slug": "content-production-workflow",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:content-production-workflow",
+  "domain": "spatial-computing",
+  "definition": "Content Production Workflow is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersive-experience-pipeline",
+      "label": "Immersive Experience Pipeline"
+    }
+  ]
+}

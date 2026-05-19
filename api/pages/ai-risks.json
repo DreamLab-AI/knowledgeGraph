@@ -1,0 +1,852 @@
+{
+  "id": "urn:visionflow:page:9036f37dd6912a729af409000bc8e905d53de04ef4617ebd67eadfaa7b99116a",
+  "title": "AI Risks",
+  "slug": "ai-risks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-risks",
+  "domain": "artificial-intelligence",
+  "definition": "AI Risks is the umbrella ontological category denoting the full taxonomy of potential and realised adverse impacts arising from the design, development, deployment, integration, or societal embedding of artificial intelligence systems, spanning four canonical risk-source domains\u2014**misuse** (intentional adversarial use including AI-enabled cyberattack, biological and chemical weapon uplift, mass disinformation, fraud, surveillance, autonomous weapons), **accidents** (specification gaming, reward hacking, distributional shift, scalable-oversight failure, deceptive alignment, mesa-optimisation, emergent unsafe capabilities), **structural** (concentration of compute/capital/power in a small oligopoly of frontier labs, labour-market disruption, epistemic pollution, democratic erosion, geopolitical AI race dynamics), and **systemic socio-technical** (algorithmic bias and discrimination, privacy and data-protection failure, hallucination and confabulation, opacity, environmental cost)\u2014formalised in the MIT AI Risk Repository released August 2024 by Slattery, Saeri, Grundy, Graham, Noetel et al. cataloguing 700+ unique risks across 23 papers and 7 risk taxonomies (700+ rows in the Causal a",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:governance-object",
+      "label": "Governance Object"
+    },
+    {
+      "id": "urn:visionflow:linked:harm-taxonomy",
+      "label": "Harm Taxonomy"
+    },
+    {
+      "id": "urn:visionflow:linked:sociotechnical-risk",
+      "label": "Sociotechnical Risk"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-risk",
+      "label": "Technology Risk"
+    },
+    {
+      "id": "urn:visionflow:owl:class:systemic-risk",
+      "label": "Systemic Risk"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accident-risks",
+        "label": "Accident Risks"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-weapons",
+        "label": "Autonomous Weapons"
+      },
+      {
+        "id": "urn:visionflow:linked:catastrophic-ai-risk",
+        "label": "Catastrophic AI Risk"
+      },
+      {
+        "id": "urn:visionflow:linked:cbrn-uplift-risk",
+        "label": "CBRN Uplift Risk"
+      },
+      {
+        "id": "urn:visionflow:linked:existential-ai-risk",
+        "label": "Existential AI Risk"
+      },
+      {
+        "id": "urn:visionflow:linked:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "id": "urn:visionflow:linked:misuse-risks",
+        "label": "Misuse Risks"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:structural-risks",
+        "label": "Structural Risks"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-poisoning",
+        "label": "Training Data Poisoning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:visionflow:owl:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-inversion",
+        "label": "Model Inversion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:visionflow:linked:capability-evaluations",
+        "label": "Capability Evaluations"
+      },
+      {
+        "id": "urn:visionflow:linked:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-liability-frameworks",
+        "label": "AI Liability Frameworks"
+      },
+      {
+        "id": "urn:visionflow:linked:algorithmic-impact-assessments",
+        "label": "Algorithmic Impact Assessments"
+      },
+      {
+        "id": "urn:visionflow:linked:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-model-regulation",
+        "label": "Frontier Model Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:pre-deployment-evaluation",
+        "label": "Pre-deployment Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:responsible-scaling-policies",
+        "label": "Responsible Scaling Policies"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:defence-in-depth",
+        "label": "Defence in Depth"
+      },
+      {
+        "id": "urn:visionflow:linked:precautionary-principle",
+        "label": "Precautionary Principle"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-based-regulation",
+        "label": "Risk-Based Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:sociotechnical-analysis",
+        "label": "Sociotechnical Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:tiered-capability-thresholds",
+        "label": "Tiered Capability Thresholds"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accident-risks",
+      "label": "Accident Risks"
+    },
+    {
+      "slug": "adversarial-robustness-testing",
+      "label": "Adversarial Robustness Testing"
+    },
+    {
+      "slug": "ai-benefits",
+      "label": "AI Benefits"
+    },
+    {
+      "slug": "ai-capabilities",
+      "label": "AI Capabilities"
+    },
+    {
+      "slug": "ai-for-good",
+      "label": "AI for Good"
+    },
+    {
+      "slug": "ai-liability-frameworks",
+      "label": "AI Liability Frameworks"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "aisafety-domain",
+      "label": "AISafetyDomain"
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "label": "Algorithmic Auditing"
+    },
+    {
+      "slug": "algorithmic-impact-assessments",
+      "label": "Algorithmic Impact Assessments"
+    },
+    {
+      "slug": "angwin-et-al-pro-publica-compas-2016",
+      "label": "Angwin et al ProPublica COMPAS 2016"
+    },
+    {
+      "slug": "anthropic-responsible-scaling-policy-v2-1",
+      "label": "Anthropic Responsible Scaling Policy v2.1"
+    },
+    {
+      "slug": "autonomous-weapons",
+      "label": "Autonomous Weapons"
+    },
+    {
+      "slug": "benchmarks",
+      "label": "Benchmarks"
+    },
+    {
+      "slug": "bender-et-al-stochastic-parrots-2021",
+      "label": "Bender et al Stochastic Parrots 2021"
+    },
+    {
+      "slug": "beneficial-ai",
+      "label": "Beneficial AI"
+    },
+    {
+      "slug": "bletchley-declaration",
+      "label": "Bletchley Declaration"
+    },
+    {
+      "slug": "bletchley-declaration-2023",
+      "label": "Bletchley Declaration 2023"
+    },
+    {
+      "slug": "bostrom-superintelligence-2014",
+      "label": "Bostrom Superintelligence 2014"
+    },
+    {
+      "slug": "brynjolfsson-li-raymond-generative-ai-at-work-nber-2023",
+      "label": "Brynjolfsson Li Raymond Generative AI at Work NBER 2023"
+    },
+    {
+      "slug": "buolamwini-gebru-gender-shades-2018",
+      "label": "Buolamwini Gebru Gender Shades 2018"
+    },
+    {
+      "slug": "cais-statement-on-ai-risk-2023",
+      "label": "CAIS Statement on AI Risk 2023"
+    },
+    {
+      "slug": "capability-elicitation",
+      "label": "Capability Elicitation"
+    },
+    {
+      "slug": "capability-evaluations",
+      "label": "Capability Evaluations"
+    },
+    {
+      "slug": "carlini-et-al-extracting-training-data-usenix-2021",
+      "label": "Carlini et al Extracting Training Data USENIX 2021"
+    },
+    {
+      "slug": "carlini-et-al-poisoning-web-scale-training-datasets-2024",
+      "label": "Carlini et al Poisoning Web-Scale Training Datasets 2024"
+    },
+    {
+      "slug": "catastrophic-ai-risk",
+      "label": "Catastrophic AI Risk"
+    },
+    {
+      "slug": "cbrn-uplift-risk",
+      "label": "CBRN Uplift Risk"
+    },
+    {
+      "slug": "compute-governance",
+      "label": "Compute Governance"
+    },
+    {
+      "slug": "council-of-europe-ai-convention",
+      "label": "Council of Europe AI Convention"
+    },
+    {
+      "slug": "council-of-europe-framework-convention-on-ai-2024",
+      "label": "Council of Europe Framework Convention on AI 2024"
+    },
+    {
+      "slug": "crawford-atlas-of-ai-2021",
+      "label": "Crawford Atlas of AI 2021"
+    },
+    {
+      "slug": "defence-in-depth",
+      "label": "Defence in Depth"
+    },
+    {
+      "slug": "deployment-context",
+      "label": "Deployment Context"
+    },
+    {
+      "slug": "eu-ai-act-regulation-2024-1689",
+      "label": "EU AI Act Regulation 2024/1689"
+    },
+    {
+      "slug": "evaluation-frameworks",
+      "label": "Evaluation Frameworks"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "EvaluationLayer"
+    },
+    {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
+    },
+    {
+      "slug": "existential-risk",
+      "label": "Existential Risk"
+    },
+    {
+      "slug": "frontier-ai-systems",
+      "label": "Frontier AI Systems"
+    },
+    {
+      "slug": "frontier-model-regulation",
+      "label": "Frontier Model Regulation"
+    },
+    {
+      "slug": "google-deep-mind-frontier-safety-framework-v2",
+      "label": "Google DeepMind Frontier Safety Framework v2"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "governance-object",
+      "label": "Governance Object"
+    },
+    {
+      "slug": "greenblatt-et-al-alignment-faking-2024",
+      "label": "Greenblatt et al Alignment Faking 2024"
+    },
+    {
+      "slug": "greshake-et-al-indirect-prompt-injection-2023",
+      "label": "Greshake et al Indirect Prompt Injection 2023"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "harm-taxonomy",
+      "label": "Harm Taxonomy"
+    },
+    {
+      "slug": "hendrycks-mazeika-woodside-overview-of-catastrophic-ai-risks-2023",
+      "label": "Hendrycks Mazeika Woodside Overview of Catastrophic AI Risks 2023"
+    },
+    {
+      "slug": "hubinger-et-al-sleeper-agents-2024",
+      "label": "Hubinger et al Sleeper Agents 2024"
+    },
+    {
+      "slug": "incident-reporting",
+      "label": "Incident Reporting"
+    },
+    {
+      "slug": "insurance-underwriting",
+      "label": "Insurance Underwriting"
+    },
+    {
+      "slug": "international-ai-safety-report-2025-bengio",
+      "label": "International AI Safety Report 2025 Bengio"
+    },
+    {
+      "slug": "international-coordination",
+      "label": "International Coordination"
+    },
+    {
+      "slug": "iso-iec-23894",
+      "label": "ISO/IEC 23894"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "krakovna-et-al-specification-gaming-examples-2020",
+      "label": "Krakovna et al Specification Gaming Examples 2020"
+    },
+    {
+      "slug": "liability-adjudication",
+      "label": "Liability Adjudication"
+    },
+    {
+      "slug": "lin-et-al-truthful-qa-2022",
+      "label": "Lin et al TruthfulQA 2022"
+    },
+    {
+      "slug": "mechanistic-interpretability",
+      "label": "Mechanistic Interpretability"
+    },
+    {
+      "slug": "meinke-et-al-apollo-research-in-context-scheming-2024",
+      "label": "Meinke et al Apollo Research In-context Scheming 2024"
+    },
+    {
+      "slug": "misuse-risks",
+      "label": "Misuse Risks"
+    },
+    {
+      "slug": "mit-ai-risk-repository",
+      "label": "MIT AI Risk Repository"
+    },
+    {
+      "slug": "mit-ai-risk-repository-slattery-et-al-2024",
+      "label": "MIT AI Risk Repository Slattery et al 2024"
+    },
+    {
+      "slug": "ncsc-cisa-guidelines-for-secure-ai-system-development-2023",
+      "label": "NCSC CISA Guidelines for Secure AI System Development 2023"
+    },
+    {
+      "slug": "nist-ai-600-1-generative-ai-profile-july-2024",
+      "label": "NIST AI 600-1 Generative AI Profile July 2024"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "nist-ai-rmf-1-0-january-2023",
+      "label": "NIST AI RMF 1.0 January 2023"
+    },
+    {
+      "slug": "obermeyer-et-al-optum-healthcare-algorithm-science-2019",
+      "label": "Obermeyer et al Optum Healthcare Algorithm Science 2019"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "oecd-ai-principles-2019-2024",
+      "label": "OECD AI Principles 2019/2024"
+    },
+    {
+      "slug": "open-ai-preparedness-framework-v2",
+      "label": "OpenAI Preparedness Framework v2"
+    },
+    {
+      "slug": "ord-the-precipice-2020",
+      "label": "Ord The Precipice 2020"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "pre-deployment-evaluation",
+      "label": "Pre-deployment Evaluation"
+    },
+    {
+      "slug": "precautionary-principle",
+      "label": "Precautionary Principle"
+    },
+    {
+      "slug": "privacy-protection",
+      "label": "Privacy Protection"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "public-awareness",
+      "label": "Public Awareness"
+    },
+    {
+      "slug": "public-interest-technology-domain",
+      "label": "PublicInterestTechnologyDomain"
+    },
+    {
+      "slug": "responsible-scaling-policies",
+      "label": "Responsible Scaling Policies"
+    },
+    {
+      "slug": "risk-and-governance-domain",
+      "label": "RiskAndGovernanceDomain"
+    },
+    {
+      "slug": "risk-assessment-methodology",
+      "label": "Risk Assessment Methodology"
+    },
+    {
+      "slug": "risk-based-regulation",
+      "label": "Risk-Based Regulation"
+    },
+    {
+      "slug": "risk-registers",
+      "label": "Risk Registers"
+    },
+    {
+      "slug": "russell-human-compatible-2019",
+      "label": "Russell Human Compatible 2019"
+    },
+    {
+      "slug": "seoul-declaration",
+      "label": "Seoul Declaration"
+    },
+    {
+      "slug": "seoul-ministerial-statement-2024",
+      "label": "Seoul Ministerial Statement 2024"
+    },
+    {
+      "slug": "sharma-et-al-sycophancy-2023",
+      "label": "Sharma et al Sycophancy 2023"
+    },
+    {
+      "slug": "shumailov-et-al-model-collapse-nature-2024",
+      "label": "Shumailov et al Model Collapse Nature 2024"
+    },
+    {
+      "slug": "sociotechnical-analysis",
+      "label": "Sociotechnical Analysis"
+    },
+    {
+      "slug": "sociotechnical-risk",
+      "label": "Sociotechnical Risk"
+    },
+    {
+      "slug": "sociotechnical-systems-domain",
+      "label": "SociotechnicalSystemsDomain"
+    },
+    {
+      "slug": "stakeholder-consultation",
+      "label": "Stakeholder Consultation"
+    },
+    {
+      "slug": "standards-development",
+      "label": "Standards Development"
+    },
+    {
+      "slug": "structural-risks",
+      "label": "Structural Risks"
+    },
+    {
+      "slug": "surveillance-capitalism",
+      "label": "Surveillance Capitalism"
+    },
+    {
+      "slug": "technology-risk",
+      "label": "Technology Risk"
+    },
+    {
+      "slug": "templeton-et-al-scaling-monosemanticity-2024",
+      "label": "Templeton et al Scaling Monosemanticity 2024"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
+    },
+    {
+      "slug": "threat-modelling",
+      "label": "Threat Modelling"
+    },
+    {
+      "slug": "tiered-capability-thresholds",
+      "label": "Tiered Capability Thresholds"
+    },
+    {
+      "slug": "training-data-poisoning",
+      "label": "Training Data Poisoning"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "uk-ai-security-institute-inspect-framework",
+      "label": "UK AI Security Institute Inspect Framework"
+    },
+    {
+      "slug": "us-ai-safety-institute",
+      "label": "US AI Safety Institute"
+    },
+    {
+      "slug": "wei-et-al-emergent-abilities-2022",
+      "label": "Wei et al Emergent Abilities 2022"
+    },
+    {
+      "slug": "zuboff-surveillance-capitalism-2019",
+      "label": "Zuboff Surveillance Capitalism 2019"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "systemic-risk",
+      "label": "Systemic Risk"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "artificial-superintelligence",
+      "label": "artificial superintelligence"
+    }
+  ]
+}

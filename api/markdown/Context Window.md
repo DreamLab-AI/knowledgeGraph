@@ -1,21 +1,217 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ContextWindow
-uri:: urn:visionclaw:concept:artificial-intelligence:context-window
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:context-window
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Context Window
-content-hash:: sha256-12-72019fa9e56d
-legacy-term-id:: AI-0238
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ContextWindow
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:context-window
 public:: true
+
+# Context Window
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3fe6d77fcced46c6740a33208f468e53967aee8c83d55937c07c97a08dc35c04",
+  "@type": "Page",
+  "vc:slug": "context-window",
+  "title": "Context Window",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-72019fa9e56d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ContextWindow"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0238"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Context Window"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:context-window"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:context-window"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3fe6d77fcced46c6740a33208f468e53967aee8c83d55937c07c97a08dc35c04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:context-window",
+  "@type": "OntologyClass",
+  "label": "Context Window",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3fe6d77fcced46c6740a33208f468e53967aee8c83d55937c07c97a08dc35c04"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3fe6d77fcced46c6740a33208f468e53967aee8c83d55937c07c97a08dc35c04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:context-window:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3fe6d77fcced46c6740a33208f468e53967aee8c83d55937c07c97a08dc35c04"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3fe6d77fcced46c6740a33208f468e53967aee8c83d55937c07c97a08dc35c04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
@@ -52,7 +248,7 @@ public:: true
 
   - ## JSON-LD and Linked-JSON choices
 		- For ease of comprehension I attempted to convert the OWL schema to JSON-LD. This attempt did achieve a result, but it proved difficult to visualise.
-		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large language models]].
+		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large Language Models]].
 		- Because of this the decision was made to switch to [Linked-JSON](https://linkedobjects.org/Linked-JSON), which is a simpler and less expressive subset of JSON-LD. Linked-JSON focusses on `@id` linking. It sacrifices some features provided by JSON-LD 1.1's context definitions, typing, and alignment with RDF concepts.
 			- Scope and Complexity of Linked-JSON vs JSON-LD
 				- Linked-JSON: lightweight subset focused on linking data using `@id`
@@ -126,7 +322,7 @@ public:: true
 
   - ## JSON-LD and Linked-JSON choices
 		- For ease of comprehension I attempted to convert the OWL schema to JSON-LD. This attempt did achieve a result, but it proved difficult to visualise.
-		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large language models]].
+		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large Language Models]].
 		- Because of this the decision was made to switch to [Linked-JSON](https://linkedobjects.org/Linked-JSON), which is a simpler and less expressive subset of JSON-LD. Linked-JSON focusses on `@id` linking. It sacrifices some features provided by JSON-LD 1.1's context definitions, typing, and alignment with RDF concepts.
 			- Scope and Complexity of Linked-JSON vs JSON-LD
 				- Linked-JSON: lightweight subset focused on linking data using `@id`

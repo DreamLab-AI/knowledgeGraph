@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:e17856a629eedf80b89587f854bb6c16079a0513628011a3ae235d402010e095",
+  "title": "Metadata Standards",
+  "slug": "metadata-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metadata-standards",
+  "domain": "spatial-computing",
+  "definition": "Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-standards",
+      "label": "Data Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-system-data-exchange",
+        "label": "Cross-System Data Exchange"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-system-data-exchange",
+      "label": "Cross-System Data Exchange"
+    },
+    {
+      "slug": "data-standards",
+      "label": "Data Standards"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    },
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "controlled-vocabularies",
+      "label": "Controlled Vocabularies"
+    },
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    }
+  ]
+}

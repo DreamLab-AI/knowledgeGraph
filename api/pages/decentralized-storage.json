@@ -1,0 +1,160 @@
+{
+  "id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566",
+  "title": "Decentralized Storage",
+  "slug": "decentralized-storage",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralized-storage",
+  "domain": "infrastructure",
+  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure. [[Decentralised Storage]] networks such as [[IPFS]] and [[Filecoin]] provide [[Censorship Resistance]], [[Data Availability]], and [[User Sovereignty]] guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "arweave",
+      "label": "Arweave"
+    },
+    {
+      "slug": "blockchain-history",
+      "label": "BlockchainHistory"
+    },
+    {
+      "slug": "content-distribution",
+      "label": "ContentDistribution"
+    },
+    {
+      "slug": "data-availability",
+      "label": "Data Availability"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
+      "slug": "digital-art",
+      "label": "DigitalArt"
+    },
+    {
+      "slug": "distributed-file-system",
+      "label": "DistributedFileSystem"
+    },
+    {
+      "slug": "dt-archives",
+      "label": "dt:archives"
+    },
+    {
+      "slug": "dt-enables",
+      "label": "dt:enables"
+    },
+    {
+      "slug": "dt-hosts",
+      "label": "dt:hosts"
+    },
+    {
+      "slug": "dt-preserves",
+      "label": "dt:preserves"
+    },
+    {
+      "slug": "dt-stores",
+      "label": "dt:stores"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "incentivizes",
+      "label": "incentivizes"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "nftmetadata",
+      "label": "NFTMetadata"
+    },
+    {
+      "slug": "persistent-storage",
+      "label": "PersistentStorage"
+    },
+    {
+      "slug": "provides-redundancy",
+      "label": "providesRedundancy"
+    },
+    {
+      "slug": "stores-data",
+      "label": "storesData"
+    },
+    {
+      "slug": "storj",
+      "label": "Storj"
+    },
+    {
+      "slug": "user-sovereignty",
+      "label": "User Sovereignty"
+    },
+    {
+      "slug": "uses-protocol",
+      "label": "usesProtocol"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "ContentAddressing"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "VirtualAsset"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

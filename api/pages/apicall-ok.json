@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:150d8bd708b3c639f39b1784110443953d544529edff9b381a67d06202063050",
+  "title": "apicall-ok",
+  "slug": "apicall-ok",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:apicall-ok",
+  "domain": "infrastructure",
+  "definition": "apicall-ok is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

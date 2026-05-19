@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:59c461be980389af45e1f4a4c28a9a1e047474b9882f9a0b76f705c7408a77f1",
+  "title": "Educational Technology",
+  "slug": "educational-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:educational-technology",
+  "domain": "spatial-computing",
+  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and methodologies for delivering learning experiences in immersive virtual environments. This includes virtual classrooms, simulation-based training, immersive learning experiences, and collaborative educational spaces that leverage spatial computing for enhanced knowledge transfer.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-technology",
+      "label": "Metaverse Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "immersive-learning",
+      "label": "Immersive Learning"
+    },
+    {
+      "slug": "learning-analytics",
+      "label": "Learning Analytics"
+    },
+    {
+      "slug": "learning-component",
+      "label": "Learning Component"
+    },
+    {
+      "slug": "learning-management-system",
+      "label": "Learning Management System"
+    },
+    {
+      "slug": "learning-module",
+      "label": "Learning Module"
+    },
+    {
+      "slug": "learning-resources",
+      "label": "Learning Resources"
+    },
+    {
+      "slug": "virtual-field-trip",
+      "label": "Virtual Field Trip"
+    }
+  ]
+}

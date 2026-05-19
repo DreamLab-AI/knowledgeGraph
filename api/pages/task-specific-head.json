@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:fb02d247e89d95bda3267c7e444555e443292166b834ee8ccc4cd66af3816c4d",
+  "title": "Task Specific Head",
+  "slug": "task-specific-head",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:task-specific-head",
+  "domain": "spatial-computing",
+  "definition": "A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "software engineering"
+    }
+  ],
+  "backlinks": []
+}

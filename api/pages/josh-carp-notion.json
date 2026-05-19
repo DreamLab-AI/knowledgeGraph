@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:6dd26d276dc0b6c6daafbd4564c333cf41fb96a28e06ddc59638a94c37310f25",
+  "title": "Josh Carp Notion",
+  "slug": "josh-carp-notion",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:josh-carp-notion",
+  "domain": "infrastructure",
+  "definition": "Josh Carp Notion is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

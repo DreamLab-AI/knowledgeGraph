@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:da025756fe1183088d6a4e6853f33f8914affbb1343f842d1d27435c81a0d28a",
+  "title": "Trust Framework Policy",
+  "slug": "trust-framework-policy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trust-framework-policy",
+  "domain": "spatial-computing",
+  "definition": "Set of rules and requirements governing participant behavior, accountability, and interoperability in federated digital identity ecosystems within metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accountability-framework",
+        "label": "Accountability Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:certification-criteria",
+        "label": "Certification Criteria"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-rule-set",
+        "label": "Policy Rule Set"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-structure",
+        "label": "Governance Structure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:interoperable-authentication",
+        "label": "Interoperable Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-federation",
+        "label": "Trust Federation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accountability-framework",
+      "label": "Accountability Framework"
+    },
+    {
+      "slug": "audit-mechanism",
+      "label": "Audit Mechanism"
+    },
+    {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
+      "slug": "authorization-framework",
+      "label": "Authorization Framework"
+    },
+    {
+      "slug": "certification-criteria",
+      "label": "Certification Criteria"
+    },
+    {
+      "slug": "eu-e-idas-2-0",
+      "label": "EU eIDAS 2.0"
+    },
+    {
+      "slug": "federated-identity-system",
+      "label": "Federated Identity System"
+    },
+    {
+      "slug": "interoperable-authentication",
+      "label": "Interoperable Authentication"
+    },
+    {
+      "slug": "oecd-ai-governance",
+      "label": "OECD AI Governance"
+    },
+    {
+      "slug": "open-id-foundation",
+      "label": "OpenID Foundation"
+    },
+    {
+      "slug": "policy-rule-set",
+      "label": "Policy Rule Set"
+    },
+    {
+      "slug": "trust-anchor",
+      "label": "Trust Anchor"
+    },
+    {
+      "slug": "trust-federation",
+      "label": "Trust Federation"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-identity-standards",
+      "label": "Digital Identity Standards"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    }
+  ]
+}

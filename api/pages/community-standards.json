@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:f896db608cb6be0c364a8997c67dbb169ca1d2bc5e5d796b4d6da971d2e3313e",
+  "title": "Community Standards",
+  "slug": "community-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:community-standards",
+  "domain": "spatial-computing",
+  "definition": "The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:platform-governance",
+      "label": "Platform Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:moderation-tools",
+        "label": "Moderation Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:reporting-mechanisms",
+        "label": "Reporting Mechanisms"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:trust-building",
+        "label": "Trust Building"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-safety",
+        "label": "User Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "moderation-tools",
+      "label": "Moderation Tools"
+    },
+    {
+      "slug": "reporting-mechanisms",
+      "label": "Reporting Mechanisms"
+    },
+    {
+      "slug": "trust-building",
+      "label": "Trust Building"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "platform-governance",
+      "label": "Platform Governance"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "user-safety",
+      "label": "User Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    }
+  ]
+}

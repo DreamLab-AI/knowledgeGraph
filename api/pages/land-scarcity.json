@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:287dd8c8ddf99d2acd3a7f89de6726887272d0a67ec25aca7936abf48c69a5ea",
+  "title": "Land Scarcity",
+  "slug": "land-scarcity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:land-scarcity",
+  "domain": "spatial-computing",
+  "definition": "Economic principle in virtual worlds where digital land parcels are artificially limited to create value and drive virtual real estate markets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "virtual-economics",
+      "label": "Virtual Economics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

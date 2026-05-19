@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:baa865c974122d3c8bb80561a21600cfb89391547149e9f1a2fcc7c95148c419",
+  "title": "Non Linear Narrative",
+  "slug": "non-linear-narrative",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:non-linear-narrative",
+  "domain": "spatial-computing",
+  "definition": "A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:narrative-structure",
+      "label": "Narrative Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:player-agency",
+        "label": "Player Agency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "player-agency",
+      "label": "Player Agency"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "narrative-structure",
+      "label": "Narrative Structure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "narrative-arc",
+      "label": "Narrative Arc"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    }
+  ]
+}

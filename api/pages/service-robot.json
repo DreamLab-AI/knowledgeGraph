@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:8728a59b88e00cd30292d9c1ca468245ab2a97c6eba5880e45f23dc3ddd6bb96",
+  "title": "Service Robot",
+  "slug": "service-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:service-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agricultural-robot",
+      "label": "Agricultural Robot"
+    }
+  ]
+}

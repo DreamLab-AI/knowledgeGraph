@@ -1,20 +1,230 @@
-iri:: http://narrativegoldmine.com/infrastructure#TrainingForDesignPractitioners
-uri:: urn:visionclaw:concept:infrastructure:training-for-design-practitioners
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:training-for-design-practitioners
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Training for Design Practitioners
-content-hash:: sha256-12-3cfc3b0e1105
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#TrainingForDesignPractitioners
+legacy_uri:: urn:visionclaw:concept:infrastructure:training-for-design-practitioners
 public:: true
+
+# Training for Design Practitioners
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e",
+  "@type": "Page",
+  "vc:slug": "training-for-design-practitioners",
+  "title": "Training for Design Practitioners",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consumer-tools-for-smes",
+      "vc:label": "Consumer Tools for SMEs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graphing",
+      "vc:label": "Knowledge Graphing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "vc:label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-media",
+      "vc:label": "social media"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3cfc3b0e1105"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#TrainingForDesignPractitioners"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Training for Design Practitioners"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:training-for-design-practitioners"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:training-for-design-practitioners"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:training-for-design-practitioners",
+  "@type": "OntologyClass",
+  "label": "Training for Design Practitioners",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Training for Design Practitioners is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:training-for-design-practitioners:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consumer Tools for SMEs]]",
+      "resolved": "urn:visionflow:owl:class:consumer-tools-for-smes",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image Generation]]",
+      "resolved": "urn:visionflow:owl:class:image-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graphing]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Retrieval Augmented Generation - RAG]]",
+      "resolved": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[social media]]",
+      "resolved": "urn:visionflow:owl:class:social-media",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Training for Design Practitioners is a concept within the ngm domain.

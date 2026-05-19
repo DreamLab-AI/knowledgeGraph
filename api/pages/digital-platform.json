@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:3f358c2b4db290d4c254c67b8a48090a8d9a14637eaa32b7d1c52d9ba1b4b37d",
+  "title": "Digital Platform",
+  "slug": "digital-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-platform",
+  "domain": "spatial-computing",
+  "definition": "Digital Platform is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "virtual-world-platform",
+      "label": "Virtual World Platform"
+    }
+  ]
+}

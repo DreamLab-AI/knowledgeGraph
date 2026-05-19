@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:fcfcc82452b9d3a1505aaa87aee546196483fa5f2cbeaf3112821fb0582194d2",
+  "title": "Production Design",
+  "slug": "production-design",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:production-design",
+  "domain": "spatial-computing",
+  "definition": "Production Design is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-set-design",
+      "label": "Virtual Set Design"
+    }
+  ]
+}

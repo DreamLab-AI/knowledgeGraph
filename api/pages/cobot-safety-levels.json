@@ -1,0 +1,129 @@
+{
+  "id": "urn:visionflow:page:6603acf7264abd1764968d5e6ea00f22f1b91dcb3a5d39180ba9eb54b3e063c5",
+  "title": "Cobot Safety Levels",
+  "slug": "cobot-safety-levels",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cobot-safety-levels",
+  "domain": "robotics",
+  "definition": "Standardized safety classifications and requirements for collaborative robots (cobots) operating in shared workspaces with humans, defining protection measures, risk assessments, and operational modes to ensure safe human-robot interaction according to ISO/TS 15066.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:safety-standard",
+      "label": "Safety Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.98,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:safety-certification",
+        "label": "Safety Certification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:force-limiting",
+        "label": "Force Limiting"
+      },
+      {
+        "id": "urn:visionflow:linked:speed-monitoring",
+        "label": "Speed Monitoring"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-robotics",
+      "label": "Collaborative Robotics"
+    },
+    {
+      "slug": "contact-limits",
+      "label": "Contact Limits"
+    },
+    {
+      "slug": "force-limiting",
+      "label": "Force Limiting"
+    },
+    {
+      "slug": "human-safety",
+      "label": "Human Safety"
+    },
+    {
+      "slug": "iso-10218-1",
+      "label": "ISO 10218-1"
+    },
+    {
+      "slug": "iso-10218-2",
+      "label": "ISO 10218-2"
+    },
+    {
+      "slug": "iso-ts-15066",
+      "label": "ISO/TS 15066"
+    },
+    {
+      "slug": "operational-modes",
+      "label": "Operational Modes"
+    },
+    {
+      "slug": "rb-1004-adaptive-control",
+      "label": "RB-1004-adaptive-control"
+    },
+    {
+      "slug": "rb-1012-trust-in-automation",
+      "label": "RB-1012-trust-in-automation"
+    },
+    {
+      "slug": "safety-certification",
+      "label": "Safety Certification"
+    },
+    {
+      "slug": "safety-requirements",
+      "label": "Safety Requirements"
+    },
+    {
+      "slug": "safety-standard",
+      "label": "Safety Standard"
+    },
+    {
+      "slug": "safety-standards",
+      "label": "Safety Standards"
+    },
+    {
+      "slug": "speed-monitoring",
+      "label": "Speed Monitoring"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

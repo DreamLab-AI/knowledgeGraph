@@ -1,0 +1,740 @@
+{
+  "id": "urn:visionflow:page:52191d306bdfb85797b04deb8aa1761cd9039872643707247d545aac431916fc",
+  "title": "CBDC Frameworks",
+  "slug": "cbdc-frameworks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cbdc-frameworks",
+  "domain": "blockchain",
+  "definition": "**CBDC Frameworks** are the integrated bodies of technical specifications, regulatory governance structures, design principles, and interoperability standards that central banks and international monetary institutions use to research, pilot, and deploy Central Bank Digital Currencies \u2014 sovereign digital money issued directly by monetary authorities as legal tender. CBDC frameworks distinguish their subject from [[Cryptocurrency]] (decentralised, permissionless networks), [[Stablecoin]] systems (privately issued reserve-backed tokens), and traditional commercial bank deposits (private-institution liabilities, not central bank liabilities). A framework encompasses the full lifecycle: policy objective-setting, architecture selection (two-tier intermediated versus direct; account-based versus token-based), [[Privacy]] engineering ([[Zero Knowledge Proofs]], tiered anonymity, blind signatures), [[Programmable Money]] capabilities (smart contracts, conditional payments, Tobin-tax-style automatic transaction levies), cross-border interoperability layers (atomic delivery-versus-payment in [[Project mBridge]] and Project Nexus), [[Financial Regulation]] compliance (AML/CFT, KYC tiers, GDPR,",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:central-bank-infrastructure",
+      "label": "Central Bank Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:monetary-policy-framework",
+      "label": "Monetary Policy Framework"
+    },
+    {
+      "id": "urn:visionflow:linked:payment-system-standard",
+      "label": "Payment System Standard"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-money",
+      "label": "Digital Money"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:aml-cft-compliance-layer",
+        "label": "AML CFT Compliance Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:core-ledger",
+        "label": "Core Ledger"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-protocol",
+        "label": "Cross-Border Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:holding-limit-mechanism",
+        "label": "Holding Limit Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:interoperability-layer",
+        "label": "Interoperability Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:kyc-tier-system",
+        "label": "KYC Tier System"
+      },
+      {
+        "id": "urn:visionflow:linked:offline-payment-capability",
+        "label": "Offline Payment Capability"
+      },
+      {
+        "id": "urn:visionflow:linked:programmability-layer",
+        "label": "Programmability Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:two-tier-cbdc-architecture",
+        "label": "Two-Tier CBDC Architecture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:aml-cft-framework",
+        "label": "AML CFT Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:api-standards",
+        "label": "API Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-infrastructure",
+        "label": "Cryptographic Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:data-protection-law",
+        "label": "Data Protection Law"
+      },
+      {
+        "id": "urn:visionflow:linked:dlt",
+        "label": "DLT"
+      },
+      {
+        "id": "urn:visionflow:linked:kyc-compliance",
+        "label": "KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-tender-designation",
+        "label": "Legal Tender Designation"
+      },
+      {
+        "id": "urn:visionflow:linked:operational-resilience-standards",
+        "label": "Operational Resilience Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-authorisation",
+        "label": "Regulatory Authorisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:atomic-delivery-versus-payment",
+        "label": "Atomic Delivery versus Payment"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-payments",
+        "label": "Cross Border Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-to-machine-payments",
+        "label": "Machine to Machine Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-compliance",
+        "label": "Privacy Preserving Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:visionflow:linked:retail-cbdc-issuance",
+        "label": "Retail CBDC Issuance"
+      },
+      {
+        "id": "urn:visionflow:linked:targeted-fiscal-transfers",
+        "label": "Targeted Fiscal Transfers"
+      },
+      {
+        "id": "urn:visionflow:linked:wholesale-cbdc-settlement",
+        "label": "Wholesale CBDC Settlement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bis-cbdc-principles",
+        "label": "BIS CBDC Principles"
+      },
+      {
+        "id": "urn:visionflow:linked:cpmi-cross-border-payment-standards",
+        "label": "CPMI Cross Border Payment Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:fsb-financial-stability-recommendations",
+        "label": "FSB Financial Stability Recommendations"
+      },
+      {
+        "id": "urn:visionflow:linked:g7-public-policy-principles-for-retail-cbdcs",
+        "label": "G7 Public Policy Principles for Retail CBDCs"
+      },
+      {
+        "id": "urn:visionflow:linked:imf-5-p-methodology",
+        "label": "IMF 5P Methodology"
+      },
+      {
+        "id": "urn:visionflow:linked:two-tier-distribution-model",
+        "label": "Two-Tier Distribution Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-by-design",
+        "label": "Privacy by Design"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aml-cft-compliance-layer",
+      "label": "AML CFT Compliance Layer"
+    },
+    {
+      "slug": "aml-cft-framework",
+      "label": "AML CFT Framework"
+    },
+    {
+      "slug": "aml-cft-regulation",
+      "label": "AML CFT Regulation"
+    },
+    {
+      "slug": "andolfatto-2021-economic-journal-cbdc-banking-competition",
+      "label": "Andolfatto 2021 Economic Journal CBDC Banking Competition"
+    },
+    {
+      "slug": "api-standards",
+      "label": "API Standards"
+    },
+    {
+      "slug": "atlantic-council-cbdc-tracker-july-2025",
+      "label": "Atlantic Council CBDC Tracker July 2025"
+    },
+    {
+      "slug": "atomic-delivery-versus-payment",
+      "label": "Atomic Delivery versus Payment"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "bank-of-england-digital-pound-progress-update-2025",
+      "label": "Bank of England Digital Pound Progress Update 2025"
+    },
+    {
+      "slug": "bank-of-england-digital-pound-update-october-2025",
+      "label": "Bank of England Digital Pound Update October 2025"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    },
+    {
+      "slug": "bis-annual-economic-report-2025-unified-ledger-blueprint",
+      "label": "BIS Annual Economic Report 2025 Unified Ledger Blueprint"
+    },
+    {
+      "slug": "bis-cbdc-design-principles-2020",
+      "label": "BIS CBDC Design Principles 2020"
+    },
+    {
+      "slug": "bis-cbdc-principles",
+      "label": "BIS CBDC Principles"
+    },
+    {
+      "slug": "bis-cbdc-system-design-2025-others-88",
+      "label": "BIS CBDC System Design 2025 Others 88"
+    },
+    {
+      "slug": "bis-cbdc-system-design-and-interoperability-2022",
+      "label": "BIS CBDC System Design and Interoperability 2022"
+    },
+    {
+      "slug": "bis-central-bank-digital-currencies-foundational-principles-2020",
+      "label": "BIS Central Bank Digital Currencies Foundational Principles 2020"
+    },
+    {
+      "slug": "bis-m-bridge-mvp-2024",
+      "label": "BIS mBridge MVP 2024"
+    },
+    {
+      "slug": "bis-papers-159-advancing-in-tandem-2024-cbdc-survey",
+      "label": "BIS Papers 159 Advancing in Tandem 2024 CBDC Survey"
+    },
+    {
+      "slug": "bis-project-nexus-blueprint-july-2024",
+      "label": "BIS Project Nexus Blueprint July 2024"
+    },
+    {
+      "slug": "bis-project-tourbillon-privacy-cbdc-2023",
+      "label": "BIS Project Tourbillon Privacy CBDC 2023"
+    },
+    {
+      "slug": "bis-working-paper-1242-privacy-enhancing-technologies-2024",
+      "label": "BIS Working Paper 1242 Privacy Enhancing Technologies 2024"
+    },
+    {
+      "slug": "blind-signatures",
+      "label": "Blind Signatures"
+    },
+    {
+      "slug": "brunnermeier-niepelt-2019-journal-of-monetary-economics-equivalence",
+      "label": "Brunnermeier Niepelt 2019 Journal of Monetary Economics Equivalence"
+    },
+    {
+      "slug": "central-bank",
+      "label": "Central Bank"
+    },
+    {
+      "slug": "central-bank-infrastructure",
+      "label": "Central Bank Infrastructure"
+    },
+    {
+      "slug": "central-bank-infrastructure-layer",
+      "label": "CentralBankInfrastructureLayer"
+    },
+    {
+      "slug": "chaum-1983-blind-signatures-untraceable-payments",
+      "label": "Chaum 1983 Blind Signatures Untraceable Payments"
+    },
+    {
+      "slug": "chiu-2023-journal-of-finance-cbdc-bank-market-power",
+      "label": "Chiu 2023 Journal of Finance CBDC Bank Market Power"
+    },
+    {
+      "slug": "commercial-bank",
+      "label": "Commercial Bank"
+    },
+    {
+      "slug": "core-ledger",
+      "label": "Core Ledger"
+    },
+    {
+      "slug": "correspondent-banking",
+      "label": "Correspondent Banking"
+    },
+    {
+      "slug": "cpmi-cross-border-payment-standards",
+      "label": "CPMI Cross Border Payment Standards"
+    },
+    {
+      "slug": "cpmi-fast-payment-system-standards",
+      "label": "CPMI Fast Payment System Standards"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross Border Payments"
+    },
+    {
+      "slug": "cross-border-protocol",
+      "label": "Cross-Border Protocol"
+    },
+    {
+      "slug": "cross-border-settlement-layer",
+      "label": "CrossBorderSettlementLayer"
+    },
+    {
+      "slug": "cryptographic-infrastructure",
+      "label": "Cryptographic Infrastructure"
+    },
+    {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
+    },
+    {
+      "slug": "digital-euro",
+      "label": "Digital Euro"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "dlt",
+      "label": "DLT"
+    },
+    {
+      "slug": "e-cny",
+      "label": "e-CNY"
+    },
+    {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
+      "slug": "ecb-digital-euro-next-phase-press-release-2025",
+      "label": "ECB Digital Euro Next Phase Press Release 2025"
+    },
+    {
+      "slug": "ecb-digital-euro-preparation-phase-closing-report-2025",
+      "label": "ECB Digital Euro Preparation Phase Closing Report 2025"
+    },
+    {
+      "slug": "ecb-digital-euro-regulation-proposal",
+      "label": "ECB Digital Euro Regulation Proposal"
+    },
+    {
+      "slug": "fast-payment-system",
+      "label": "Fast Payment System"
+    },
+    {
+      "slug": "fatf-aml-cft-standards",
+      "label": "FATF AML CFT Standards"
+    },
+    {
+      "slug": "fernandez-villaverde-2020-nber-26300-cbdc-disintermediation",
+      "label": "Fernandez-Villaverde 2020 NBER 26300 CBDC Disintermediation"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "FinancialRegulationDomain"
+    },
+    {
+      "slug": "financial-stability",
+      "label": "Financial Stability"
+    },
+    {
+      "slug": "fsb-2023-crypto-asset-markets-financial-stability",
+      "label": "FSB 2023 Crypto Asset Markets Financial Stability"
+    },
+    {
+      "slug": "fsb-cbdc-financial-stability-recommendations-2023",
+      "label": "FSB CBDC Financial Stability Recommendations 2023"
+    },
+    {
+      "slug": "fsb-financial-stability-recommendations",
+      "label": "FSB Financial Stability Recommendations"
+    },
+    {
+      "slug": "g7-public-policy-principles-for-retail-cbdcs",
+      "label": "G7 Public Policy Principles for Retail CBDCs"
+    },
+    {
+      "slug": "g7-public-policy-principles-for-retail-cbdcs-2021",
+      "label": "G7 Public Policy Principles for Retail CBDCs 2021"
+    },
+    {
+      "slug": "garratt-van-oordt-2021-bis-wp960-privacy-public-good",
+      "label": "Garratt van Oordt 2021 BIS WP960 Privacy Public Good"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "holding-limit-mechanism",
+      "label": "Holding Limit Mechanism"
+    },
+    {
+      "slug": "imf",
+      "label": "IMF"
+    },
+    {
+      "slug": "imf-5-p-methodology",
+      "label": "IMF 5P Methodology"
+    },
+    {
+      "slug": "imf-cbdc-progress-report-ppea2024052",
+      "label": "IMF CBDC Progress Report PPEA2024052"
+    },
+    {
+      "slug": "imf-cbdc-virtual-handbook",
+      "label": "IMF CBDC Virtual Handbook"
+    },
+    {
+      "slug": "imf-fin-tech-note-2024-005-cbdc-adoption",
+      "label": "IMF FinTech Note 2024-005 CBDC Adoption"
+    },
+    {
+      "slug": "imf-fin-tech-note-2025-002-digital-money-cross-border-flows",
+      "label": "IMF FinTech Note 2025-002 Digital Money Cross-Border Flows"
+    },
+    {
+      "slug": "imf-fin-tech-note-2025-007-cbdc-payments-impact",
+      "label": "IMF FinTech Note 2025-007 CBDC Payments Impact"
+    },
+    {
+      "slug": "intermediary-distribution-layer",
+      "label": "IntermediaryDistributionLayer"
+    },
+    {
+      "slug": "interoperability-layer",
+      "label": "Interoperability Layer"
+    },
+    {
+      "slug": "kyc-compliance",
+      "label": "KYC Compliance"
+    },
+    {
+      "slug": "kyc-tier-system",
+      "label": "KYC Tier System"
+    },
+    {
+      "slug": "legal-tender-designation",
+      "label": "Legal Tender Designation"
+    },
+    {
+      "slug": "machine-to-machine-payments",
+      "label": "Machine to Machine Payments"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "monetary-policy-domain",
+      "label": "MonetaryPolicyDomain"
+    },
+    {
+      "slug": "monetary-policy-framework",
+      "label": "Monetary Policy Framework"
+    },
+    {
+      "slug": "monetary-policy-transmission",
+      "label": "Monetary Policy Transmission"
+    },
+    {
+      "slug": "multi-party-computation",
+      "label": "Multi Party Computation"
+    },
+    {
+      "slug": "near-field-communication",
+      "label": "Near Field Communication"
+    },
+    {
+      "slug": "offline-payment-capability",
+      "label": "Offline Payment Capability"
+    },
+    {
+      "slug": "operational-resilience-standards",
+      "label": "Operational Resilience Standards"
+    },
+    {
+      "slug": "payment-service-provider",
+      "label": "Payment Service Provider"
+    },
+    {
+      "slug": "payment-system-efficiency",
+      "label": "Payment System Efficiency"
+    },
+    {
+      "slug": "payment-system-standard",
+      "label": "Payment System Standard"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "PaymentSystemsDomain"
+    },
+    {
+      "slug": "physical-cash",
+      "label": "Physical Cash"
+    },
+    {
+      "slug": "privacy-engineering-layer",
+      "label": "PrivacyEngineeringLayer"
+    },
+    {
+      "slug": "privacy-preserving-compliance",
+      "label": "Privacy Preserving Compliance"
+    },
+    {
+      "slug": "private-digital-money",
+      "label": "Private Digital Money"
+    },
+    {
+      "slug": "programmability-layer",
+      "label": "Programmability Layer"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "slug": "project-agora",
+      "label": "Project Agora"
+    },
+    {
+      "slug": "project-dunbar",
+      "label": "Project Dunbar"
+    },
+    {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
+    },
+    {
+      "slug": "project-nexus",
+      "label": "Project Nexus"
+    },
+    {
+      "slug": "regulatory-authorisation",
+      "label": "Regulatory Authorisation"
+    },
+    {
+      "slug": "retail-cbdc-issuance",
+      "label": "Retail CBDC Issuance"
+    },
+    {
+      "slug": "swift-messaging",
+      "label": "SWIFT Messaging"
+    },
+    {
+      "slug": "targeted-fiscal-transfers",
+      "label": "Targeted Fiscal Transfers"
+    },
+    {
+      "slug": "two-tier-cbdc-architecture",
+      "label": "Two-Tier CBDC Architecture"
+    },
+    {
+      "slug": "two-tier-distribution-model",
+      "label": "Two-Tier Distribution Model"
+    },
+    {
+      "slug": "wholesale-cbdc-settlement",
+      "label": "Wholesale CBDC Settlement"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero Knowledge Proofs"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "interoperability-standard",
+      "label": "Interoperability Standard"
+    },
+    {
+      "slug": "monetary-sovereignty",
+      "label": "Monetary Sovereignty"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy by Design"
+    },
+    {
+      "slug": "privacy-framework",
+      "label": "Privacy Framework"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

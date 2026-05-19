@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed",
+  "title": "Accelerometer",
+  "slug": "accelerometer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accelerometer",
+  "domain": "robotics",
+  "definition": "**Accelerometer** - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure [[Motion]], [[Orientation]], and [[Vibration]] for real-time feedback control and navigation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.55,
+  "authorityScore": 0.1,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:signal-conditioning",
+        "label": "Signal Conditioning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-detection",
+        "label": "Motion Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gesture-recognition",
+      "label": "Gesture Recognition"
+    },
+    {
+      "slug": "ieee-1451",
+      "label": "IEEE 1451"
+    },
+    {
+      "slug": "ieee-1451-0",
+      "label": "IEEE 1451.0"
+    },
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "iso-16063",
+      "label": "ISO 16063"
+    },
+    {
+      "slug": "iso-16063-1-2023",
+      "label": "ISO 16063-1:2023"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "motion",
+      "label": "Motion"
+    },
+    {
+      "slug": "motion-detection",
+      "label": "Motion Detection"
+    },
+    {
+      "slug": "orientation",
+      "label": "Orientation"
+    },
+    {
+      "slug": "signal-conditioning",
+      "label": "Signal Conditioning"
+    },
+    {
+      "slug": "vibration",
+      "label": "Vibration"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

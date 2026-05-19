@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:3f445960723a4f7e172497ee9e8362aa248bb4a0c4e8dc8336a6237460e7311f",
+  "title": "3DAsset",
+  "slug": "3-dasset",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-dasset",
+  "domain": "spatial-computing",
+  "definition": "3DAsset is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-management",
+      "label": "Digital Asset Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "urn:visionflow:page:19e366f2158f03e1e0ef446b52b5fd51872b21871f09edc121ea319b428e7237",
+  "title": "ETSI Domain: Ethics & Law",
+  "slug": "etsi-domain-ethics-and-law",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-ethics-and-law",
+  "domain": "artificial-intelligence",
+  "definition": "Domain marker for ETSI metaverse categorisation covering ethical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ethical-frameworks",
+        "label": "Ethical Frameworks"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-systems",
+        "label": "Regulatory Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-management",
+        "label": "Rights Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:legal-accountability",
+        "label": "Legal Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:user-protection",
+        "label": "User Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethical-frameworks",
+      "label": "Ethical Frameworks"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "legal-accountability",
+      "label": "Legal Accountability"
+    },
+    {
+      "slug": "legal-compliance",
+      "label": "Legal Compliance"
+    },
+    {
+      "slug": "regulatory-systems",
+      "label": "Regulatory Systems"
+    },
+    {
+      "slug": "rights-management",
+      "label": "Rights Management"
+    },
+    {
+      "slug": "user-protection",
+      "label": "User Protection"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "content-moderation-standards",
+      "label": "Content Moderation Standards"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:997c9988809767c175aee1e612dca3ae38d8a13d1cec50d20eee48f1bd973b99",
+  "title": "Protocol Buffer",
+  "slug": "protocol-buffer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:protocol-buffer",
+  "domain": "infrastructure",
+  "definition": "ProtocolBuffer is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

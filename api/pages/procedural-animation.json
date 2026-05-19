@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:7f20ec896e6ce061320697cd0e1495b56c38aa6c50f7d6d198fe051dea40ba7c",
+  "title": "Procedural Animation",
+  "slug": "procedural-animation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:procedural-animation",
+  "domain": "spatial-computing",
+  "definition": "ProceduralAnimation is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    }
+  ]
+}

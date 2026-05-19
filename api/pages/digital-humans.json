@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:f524c69ac5bcfb66eaa14b382bc8860b96be604fd38b0c2c24240393554efeac",
+  "title": "Digital Humans",
+  "slug": "digital-humans",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-humans",
+  "domain": "spatial-computing",
+  "definition": "[Generated from Gartner emerging tech analysis] bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "intelligent-npc",
+      "label": "Intelligent NPC"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:78789f273c32f20f798aaba3bfd67c9c48083b8861c7b5720d2d253e7ce6fe7d",
+  "title": "Emerging tech stack",
+  "slug": "emerging-tech-stack",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:emerging-tech-stack",
+  "domain": "infrastructure",
+  "definition": "Emerging tech stack is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:d7fe99457fbbe29902c2831968b7f2a955f3397b8f0eb7181e45439bca52239f",
+  "title": "AI Ethics Checklist",
+  "slug": "ai-ethics-checklist",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-ethics-checklist",
+  "domain": "artificial-intelligence",
+  "definition": "Structured verification process evaluating fairness, accountability, transparency, and ethical compliance of AI systems against established governance frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accountability-framework",
+        "label": "Accountability Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:bias-detection-protocol",
+        "label": "Bias Detection Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:fairness-assessment-criteria",
+        "label": "Fairness Assessment Criteria"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparency-metrics",
+        "label": "Transparency Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-system-documentation",
+        "label": "AI System Documentation"
+      },
+      {
+        "id": "urn:visionflow:linked:assessment-methodology",
+        "label": "Assessment Methodology"
+      },
+      {
+        "id": "urn:visionflow:linked:ethical-guidelines",
+        "label": "Ethical Guidelines"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ethical-ai-deployment",
+        "label": "Ethical AI Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accountability-framework",
+      "label": "Accountability Framework"
+    },
+    {
+      "slug": "ai-system-documentation",
+      "label": "AI System Documentation"
+    },
+    {
+      "slug": "assessment-methodology",
+      "label": "Assessment Methodology"
+    },
+    {
+      "slug": "bias-detection-protocol",
+      "label": "Bias Detection Protocol"
+    },
+    {
+      "slug": "ethical-ai-deployment",
+      "label": "Ethical AI Deployment"
+    },
+    {
+      "slug": "ethical-guidelines",
+      "label": "Ethical Guidelines"
+    },
+    {
+      "slug": "fairness-assessment-criteria",
+      "label": "Fairness Assessment Criteria"
+    },
+    {
+      "slug": "ieee-7000",
+      "label": "IEEE 7000"
+    },
+    {
+      "slug": "ieee-7000-standard",
+      "label": "IEEE 7000 Standard"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "stakeholder-trust",
+      "label": "Stakeholder Trust"
+    },
+    {
+      "slug": "unesco-ai-ethics-recommendations",
+      "label": "UNESCO AI Ethics Recommendations"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "transparency-metrics",
+      "label": "Transparency Metrics"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ]
+}

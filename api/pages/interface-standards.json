@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:b7905d4f2dc9c1bea7e01de9abb43f2a3bf52c0de7f66781fe16bd0e7e2d4962",
+  "title": "Interface Standards",
+  "slug": "interface-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:interface-standards",
+  "domain": "spatial-computing",
+  "definition": "Technical specifications and protocols that define how metaverse components, systems, and services communicate and interoperate, encompassing XR device interfaces, data exchange formats, and cross-platform communication requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

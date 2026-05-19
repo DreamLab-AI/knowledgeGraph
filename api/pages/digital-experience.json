@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:98e87483c71f55a44924d797112778d2365b4e91e7c55ae91bc3004974a6213b",
+  "title": "Digital Experience",
+  "slug": "digital-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-experience",
+  "domain": "spatial-computing",
+  "definition": "Digital Experience is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Sensor Input]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:1d22ed8854177e9c909ba4d6fb32a5f57e7c089c34231d1fabd6dc939f480e66",
+  "title": "Reliability",
+  "slug": "reliability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reliability",
+  "domain": "spatial-computing",
+  "definition": "The degree to which an AI system performs its intended function consistently and accurately over time and across repeated operations, producing predictable and dependable results under specified conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:testing",
+        "label": "Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-ai-0095",
+        "label": "Validation (AI-0095)"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "monitoring",
+      "label": "Monitoring"
+    },
+    {
+      "slug": "testing",
+      "label": "Testing"
+    },
+    {
+      "slug": "validation-ai-0095",
+      "label": "Validation (AI-0095)"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

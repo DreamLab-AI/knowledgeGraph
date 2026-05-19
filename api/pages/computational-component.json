@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:d93fa7e1b7bd2114c6bcba74f0802a47ff5a3c1177f63983c104cdedb15eb6e9",
+  "title": "Computational Component",
+  "slug": "computational-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computational-component",
+  "domain": "artificial-intelligence",
+  "definition": "Computational Component is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:component",
+      "label": "Component"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    }
+  ],
+  "backlinks": []
+}

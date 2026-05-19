@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:1a3aa00ebb89fd0092dd6583838215a743f7ce8af2b355cd6dd65571019a4388",
+  "title": "Controlled Vocabularies",
+  "slug": "controlled-vocabularies",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:controlled-vocabularies",
+  "domain": "spatial-computing",
+  "definition": "Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-organization",
+      "label": "Knowledge Organization"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:governance-process",
+        "label": "Governance Process"
+      },
+      {
+        "id": "urn:visionflow:linked:taxonomy-development",
+        "label": "Taxonomy Development"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:consistent-indexing",
+        "label": "Consistent Indexing"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consistent-indexing",
+      "label": "Consistent Indexing"
+    },
+    {
+      "slug": "governance-process",
+      "label": "Governance Process"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "taxonomy-development",
+      "label": "Taxonomy Development"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "knowledge-organization",
+      "label": "Knowledge Organization"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    }
+  ]
+}

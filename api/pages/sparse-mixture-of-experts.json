@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:9cc5bbdd5454ee580f79e90be4ea9b234eea38517327cae1784af3dd7b7256ee",
+  "title": "Sparse Mixture of Experts",
+  "slug": "sparse-mixture-of-experts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sparse-mixture-of-experts",
+  "domain": "artificial-intelligence",
+  "definition": "An MoE variant with a trainable gating network that selects only a sparse combination of experts for each example, dramatically increasing model capacity whilst maintaining computational efficiency. Sparsely-gated MoE enables models with up to 137 billion parameters with manageable inference costs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:model-architecture",
+      "label": "Model Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

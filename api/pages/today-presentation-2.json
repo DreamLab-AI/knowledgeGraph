@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:16cc162304f1a0954a4ee695515e49d8cd6565131518f988a26ca8090e2a60a0",
+  "title": "today presentation 2",
+  "slug": "today-presentation-2",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:today-presentation-2",
+  "domain": "infrastructure",
+  "definition": "today presentation 2 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

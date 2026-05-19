@@ -1,21 +1,216 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#OnDeviceLearning
-uri:: urn:visionclaw:concept:artificial-intelligence:on-device-learning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:on-device-learning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: On-Device Learning
-content-hash:: sha256-12-ae3f7f44910a
-legacy-term-id:: AI-0433
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#OnDeviceLearning
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:on-device-learning
 public:: true
+
+# On-Device Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5",
+  "@type": "Page",
+  "vc:slug": "on-device-learning",
+  "title": "On-Device Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:apple-core-ml",
+      "vc:label": "Apple Core ML"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch-mobile",
+      "vc:label": "PyTorch Mobile"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow-lite",
+      "vc:label": "TensorFlow Lite"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ae3f7f44910a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#OnDeviceLearning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0433"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "On-Device Learning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:on-device-learning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:on-device-learning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:on-device-learning",
+  "@type": "OntologyClass",
+  "label": "On-Device Learning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functionality while addressing challenges of limited computational resources and energy constraints. This approach implements training paradigms including transfer learning where pre-trained base models are fine-tuned on device-specific data adapting final layers to local patterns, few-shot learning enabling rapid adaptation from handful of examples crucial for personalized applications, meta-learning (learning to learn) where models trained to quickly adapt to new tasks with minimal data and computation, and incremental learning continuously updating models as new data arrives without catastrophic forgetting of previous knowledge. Privacy benefits include data localization ensuring sensitive information (health metrics, personal communications, financial transactions) never leaves device eliminating transmission and storage risks, user control maintaining sovereignty over personal data and model ad",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:on-device-learning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Apple Core ML]]",
+      "resolved": "urn:visionflow:linked:apple-core-ml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PyTorch Mobile]]",
+      "resolved": "urn:visionflow:linked:py-torch-mobile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow Lite]]",
+      "resolved": "urn:visionflow:linked:tensor-flow-lite",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functionality while addressing challenges of limited computational resources and energy constraints. This approach implements training paradigms including transfer learning where pre-trained base models are fine-tuned on device-specific data adapting final layers to local patterns, few-shot learning enabling rapid adaptation from handful of examples crucial for personalized applications, meta-learning (learning to learn) where models trained to quickly adapt to new tasks with minimal data and computation, and incremental learning continuously updating models as new data arrives without catastrophic forgetting of previous knowledge. Privacy benefits include data localization ensuring sensitive information (health metrics, personal communications, financial transactions) never leaves device eliminating transmission and storage risks, user control maintaining sovereignty over personal data and model adaptations, compliance facilitation satisfying GDPR's data minimization and purpose limitation principles, and reduced attack surface as centralized servers holding massive datasets present attractive targets while distributed on-device learning disperses risk. Technical implementation strategies span selective layer training freezing most model parameters while updating final classification layers reducing computation and energy, gradient compression quantizing and sparsifying gradients before optional aggregation in federated scenarios, efficient optimizers (SGD variants, Adam) with reduced memory footprints suitable for constrained devices, and model compression applying quantization and pruning to maintain compact representations throughout adaptation process. The 2024-2025 period witnessed Apple's iOS and Google's Android implementing on-device learning for keyboard prediction, photo search, and Siri/Assistant personalization demonstrating commercial viability, TensorFlow Lite and PyTorch Mobile providing frameworks enabling developers to deploy on-device training, and academic research advancing continual learning algorithms preventing catastrophic forgetting while enabling lifelong adaptation on edge devices, though challenges remain including computational overhead where training requires 10-100x more resources than inference limiting update frequency, energy consumption potentially draining batteries necessitating careful scheduling during charging periods, and convergence difficulties as limited local data may be insufficient for robust adaptation requiring careful initialization and regularization to prevent overfitting.

@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:80b2334c7b9eba9543d7210b7fdacd668bb2283ed7c0d98a4e8df33095caac55",
+  "title": "API Standard",
+  "slug": "api-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:api-standard",
+  "domain": "infrastructure",
+  "definition": "Specification defining how independent software components communicate within metaverse systems, establishing protocols and data formats for interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:authentication-schema",
+        "label": "Authentication Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:data-format-specification",
+        "label": "Data Format Specification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:technical-specification-document",
+        "label": "Technical Specification Document"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:component-integration",
+        "label": "Component Integration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:system-interoperability",
+        "label": "System Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication-schema",
+      "label": "Authentication Schema"
+    },
+    {
+      "slug": "component-integration",
+      "label": "Component Integration"
+    },
+    {
+      "slug": "data-format-specification",
+      "label": "Data Format Specification"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "iso-iec-30170",
+      "label": "ISO/IEC 30170"
+    },
+    {
+      "slug": "oma3",
+      "label": "OMA3"
+    },
+    {
+      "slug": "technical-specification-document",
+      "label": "Technical Specification Document"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "system-interoperability",
+      "label": "System Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

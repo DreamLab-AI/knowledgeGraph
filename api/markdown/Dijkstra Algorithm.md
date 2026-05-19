@@ -1,21 +1,390 @@
-iri:: http://narrativegoldmine.com/robotics#DijkstraAlgorithm
-uri:: urn:visionclaw:concept:robotics:dijkstra-algorithm
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:dijkstra-algorithm
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Dijkstra Algorithm
-content-hash:: sha256-12-90ace6a8a1aa
-legacy-term-id:: RB-1018
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.99
-version:: 2.0.0
-created:: 2025-11-24T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#DijkstraAlgorithm
+legacy_uri:: urn:visionclaw:concept:robotics:dijkstra-algorithm
 public:: true
+
+# Dijkstra Algorithm
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e",
+  "@type": "Page",
+  "vc:slug": "dijkstra-algorithm",
+  "title": "Dijkstra Algorithm",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bellman-ford-algorithm",
+      "vc:label": "Bellman-Ford Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:completeness",
+      "vc:label": "Completeness"
+    },
+    {
+      "@id": "urn:visionflow:linked:edsger-dijkstra-1956",
+      "vc:label": "Edsger Dijkstra 1956"
+    },
+    {
+      "@id": "urn:visionflow:linked:gps-systems",
+      "vc:label": "GPS Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-representation",
+      "vc:label": "Graph Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-search-algorithm",
+      "vc:label": "Graph Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-routing",
+      "vc:label": "Network Routing"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-negative-weights",
+      "vc:label": "Non-negative Weights"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimality",
+      "vc:label": "Optimality"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue",
+      "vc:label": "Priority Queue"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1016-path-planning",
+      "vc:label": "RB-1016-path-planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1017-rrt-algorithm",
+      "vc:label": "RB-1017-rrt-algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:shortest-path",
+      "vc:label": "Shortest Path"
+    },
+    {
+      "@id": "urn:visionflow:linked:weighted-graph",
+      "vc:label": "Weighted Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:a-star-algorithm",
+      "vc:label": "A-Star Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graph-search",
+      "vc:label": "Graph Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:navigation",
+      "vc:label": "Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:path-planning",
+      "vc:label": "Path Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.99"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-90ace6a8a1aa"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-24T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#DijkstraAlgorithm"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-1018"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Dijkstra Algorithm"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:dijkstra-algorithm"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:dijkstra-algorithm"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:dijkstra-algorithm",
+  "@type": "OntologyClass",
+  "label": "Dijkstra Algorithm",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:rb-1016-path-planning",
+      "vc:label": "RB-1016-path-planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graph-search",
+      "vc:label": "Graph Search"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A graph search algorithm that finds the shortest path from a source node to all other nodes in a weighted graph with non-negative edge weights. It systematically explores nodes in order of increasing distance from the source, guaranteeing optimal solutions.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.99",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:non-negative-weights",
+      "vc:label": "Non-negative Weights"
+    },
+    {
+      "@id": "urn:visionflow:linked:weighted-graph",
+      "vc:label": "Weighted Graph"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:graph-representation",
+      "vc:label": "Graph Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue",
+      "vc:label": "Priority Queue"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:dijkstra-algorithm:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Bellman-Ford Algorithm]]",
+      "resolved": "urn:visionflow:linked:bellman-ford-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Completeness]]",
+      "resolved": "urn:visionflow:linked:completeness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Edsger Dijkstra 1956]]",
+      "resolved": "urn:visionflow:linked:edsger-dijkstra-1956",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPS Systems]]",
+      "resolved": "urn:visionflow:linked:gps-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graph Representation]]",
+      "resolved": "urn:visionflow:linked:graph-representation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graph Search Algorithm]]",
+      "resolved": "urn:visionflow:linked:graph-search-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graph Theory]]",
+      "resolved": "urn:visionflow:linked:graph-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Network Routing]]",
+      "resolved": "urn:visionflow:linked:network-routing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Non-negative Weights]]",
+      "resolved": "urn:visionflow:linked:non-negative-weights",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimality]]",
+      "resolved": "urn:visionflow:linked:optimality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Priority Queue]]",
+      "resolved": "urn:visionflow:linked:priority-queue",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1016-path-planning]]",
+      "resolved": "urn:visionflow:linked:rb-1016-path-planning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1017-rrt-algorithm]]",
+      "resolved": "urn:visionflow:linked:rb-1017-rrt-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Shortest Path]]",
+      "resolved": "urn:visionflow:linked:shortest-path",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Weighted Graph]]",
+      "resolved": "urn:visionflow:linked:weighted-graph",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[A-Star Algorithm]]",
+      "resolved": "urn:visionflow:owl:class:a-star-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Graph Search]]",
+      "resolved": "urn:visionflow:owl:class:graph-search",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Navigation]]",
+      "resolved": "urn:visionflow:owl:class:navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Path Planning]]",
+      "resolved": "urn:visionflow:owl:class:path-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Computing]]",
+      "resolved": "urn:visionflow:owl:class:spatial-computing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A graph search algorithm that finds the shortest path from a source node to all other nodes in a weighted graph with non-negative edge weights. It systematically explores nodes in order of increasing distance from the source, guaranteeing optimal solutions.

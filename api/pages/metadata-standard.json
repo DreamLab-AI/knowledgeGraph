@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:a2556dd5d9a9d72475e1c68911a6be2cedf90b71e56c00a07a23b4b49c66077e",
+  "title": "Metadata Standard",
+  "slug": "metadata-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metadata-standard",
+  "domain": "spatial-computing",
+  "definition": "A formal specification defining the structure, semantics, format, and rules for describing data about data, ensuring consistent interpretation and interoperability across systems and domains.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-elements",
+        "label": "Data Elements"
+      },
+      {
+        "id": "urn:visionflow:linked:encoding-specification",
+        "label": "Encoding Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:semantics-rules",
+        "label": "Semantics Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-constraints",
+        "label": "Validation Constraints"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:visionflow:linked:namespace-management",
+        "label": "Namespace Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-discovery",
+        "label": "Data Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:information-exchange",
+        "label": "Information Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-description",
+        "label": "Resource Description"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-discovery",
+      "label": "Data Discovery"
+    },
+    {
+      "slug": "data-elements",
+      "label": "Data Elements"
+    },
+    {
+      "slug": "data-management-system",
+      "label": "Data Management System"
+    },
+    {
+      "slug": "data-model",
+      "label": "Data Model"
+    },
+    {
+      "slug": "encoding-specification",
+      "label": "Encoding Specification"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "information-exchange",
+      "label": "Information Exchange"
+    },
+    {
+      "slug": "iso-11179",
+      "label": "ISO 11179"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "namespace-management",
+      "label": "Namespace Management"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "resource-description",
+      "label": "Resource Description"
+    },
+    {
+      "slug": "schema-definition",
+      "label": "Schema Definition"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "semantics-rules",
+      "label": "Semantics Rules"
+    },
+    {
+      "slug": "validation-constraints",
+      "label": "Validation Constraints"
+    },
+    {
+      "slug": "xml-schema",
+      "label": "XML Schema"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    }
+  ]
+}

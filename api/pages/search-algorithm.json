@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:5c9e1c11dec34e3576214bdbb0e50cb0bb51b916601b004893c4adad29b9c790",
+  "title": "Search Algorithm",
+  "slug": "search-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:search-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search). Advanced techniques incorporate heuristics, pruning, bidirectional search, and iterative deepening. Modern AI integrates learning-based search (Monte Carlo Tree Search with neural networks, learned heuristics) and continuous optimization methods. Applications span planning, constraint satisfaction, game playing, and combinatorial optimization.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic Methods"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "nearest-neighbor-search",
+      "label": "Nearest Neighbor Search"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

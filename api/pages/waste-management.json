@@ -1,0 +1,160 @@
+{
+  "id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431",
+  "title": "Waste Management",
+  "slug": "waste-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:waste-management",
+  "domain": "blockchain",
+  "definition": "Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle. Blockchain-based systems enable [[WasteTraceability|waste traceability]], verify compliance with environmental regulations, incentivise proper disposal through [[TokenizedIncentives|tokenised reward systems]], and facilitate [[ExtendedProducerResponsibility|extended producer responsibility]] by tracking products from manufacturing through end-of-life recovery. Applications include [[E-WasteTracking|electronic waste tracking]], [[HazardousWaste|hazardous material monitoring]], and [[RecyclingOptimization|recycling optimisation]] where transparency and verifiable compliance prevent illegal waste dumping and improve environmental outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub-needs-content",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0188-self-sovereign-identity",
+      "label": "BC-0188-self-sovereign-identity"
+    },
+    {
+      "slug": "bc-0202-zero-knowledge-proofs",
+      "label": "BC-0202-zero-knowledge-proofs"
+    },
+    {
+      "slug": "bc-0319-micropayments",
+      "label": "BC-0319-micropayments"
+    },
+    {
+      "slug": "bc-0440-blockchain-interoperability",
+      "label": "BC-0440-blockchain-interoperability"
+    },
+    {
+      "slug": "bc-0441-supply-chain-traceability",
+      "label": "BC-0441-supply-chain-traceability"
+    },
+    {
+      "slug": "bc-0442-certification-and-compliance",
+      "label": "BC-0442-certification-and-compliance"
+    },
+    {
+      "slug": "bc-0445-conflict-mineral-tracking",
+      "label": "BC-0445-conflict-mineral-tracking"
+    },
+    {
+      "slug": "bc-0453-ethical-sourcing",
+      "label": "BC-0453-ethical-sourcing"
+    },
+    {
+      "slug": "bc-0455-product-recall-management",
+      "label": "BC-0455-product-recall-management"
+    },
+    {
+      "slug": "bc-0464-carbon-credit-tokenisation",
+      "label": "BC-0464-carbon-credit-tokenisation"
+    },
+    {
+      "slug": "bc-0496-carbon-offset-verification",
+      "label": "BC-0496-carbon-offset-verification"
+    },
+    {
+      "slug": "bc-0502-renewable-energy-certificates",
+      "label": "BC-0502-renewable-energy-certificates"
+    },
+    {
+      "slug": "deposit-return-schemes",
+      "label": "Deposit Return Schemes"
+    },
+    {
+      "slug": "e-waste",
+      "label": "E-Waste"
+    },
+    {
+      "slug": "e-waste-tracking",
+      "label": "E-WasteTracking"
+    },
+    {
+      "slug": "extended-producer-responsibility",
+      "label": "ExtendedProducerResponsibility"
+    },
+    {
+      "slug": "extended-producer-responsibility",
+      "label": "Extended Producer Responsibility"
+    },
+    {
+      "slug": "hazardous-waste",
+      "label": "HazardousWaste"
+    },
+    {
+      "slug": "ocean-plastic",
+      "label": "Ocean Plastic"
+    },
+    {
+      "slug": "pay-as-you-throw",
+      "label": "Pay-As-You-Throw"
+    },
+    {
+      "slug": "plastic-waste",
+      "label": "Plastic Waste"
+    },
+    {
+      "slug": "recycling",
+      "label": "Recycling"
+    },
+    {
+      "slug": "recycling-optimization",
+      "label": "RecyclingOptimization"
+    },
+    {
+      "slug": "tokenized-incentives",
+      "label": "TokenizedIncentives"
+    },
+    {
+      "slug": "waste-to-energy",
+      "label": "Waste-to-Energy"
+    },
+    {
+      "slug": "waste-traceability",
+      "label": "WasteTraceability"
+    },
+    {
+      "slug": "zero-waste",
+      "label": "Zero Waste"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "CircularEconomy"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

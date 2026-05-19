@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:3b2452c5bd0e7df0a50cdde8d5a71f54cf3ce47c32e8e3d8de113cedafae01e1",
+  "title": "Mobile Robot",
+  "slug": "mobile-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mobile-robot",
+  "domain": "robotics",
+  "definition": "A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.98,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "robot-rb-0001",
+      "label": "Robot (RB-0001)"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "agricultural-robot",
+      "label": "Agricultural Robot"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "marine-robot",
+      "label": "Marine Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:738d0a9073e8b7e14993cdec34bf1432068d7a51f31127f59cfd1fb605f14305",
+  "title": "rb 0027 robot link",
+  "slug": "rb-0027-robot-link",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0027-robot-link",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

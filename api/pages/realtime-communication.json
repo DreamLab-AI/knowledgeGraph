@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:80de40cc7920d626a33acc85c8bae6bc3a4e15d9ff01b12869a36bc2c177e44a",
+  "title": "Realtime Communication",
+  "slug": "realtime-communication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:realtime-communication",
+  "domain": "infrastructure",
+  "definition": "RealtimeCommunication is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

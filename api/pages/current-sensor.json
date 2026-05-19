@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee",
+  "title": "Current Sensor",
+  "slug": "current-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:current-sensor",
+  "domain": "robotics",
+  "definition": "**Current Sensor** - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling [[Motor Torque Estimation]], [[Fault Detection]], and [[Energy Monitoring]] in autonomous robots.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.09,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-conditioning",
+        "label": "Signal Conditioning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:efficiency-monitoring",
+        "label": "Efficiency Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:overload-protection",
+        "label": "Overload Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analogue-to-digital-conversion",
+      "label": "Analogue-to-Digital Conversion"
+    },
+    {
+      "slug": "efficiency-monitoring",
+      "label": "Efficiency Monitoring"
+    },
+    {
+      "slug": "en-60-068",
+      "label": "EN 60 068"
+    },
+    {
+      "slug": "energy-monitoring",
+      "label": "Energy Monitoring"
+    },
+    {
+      "slug": "etsi-ts-132-423",
+      "label": "ETSI TS 132 423"
+    },
+    {
+      "slug": "fault-detection",
+      "label": "Fault Detection"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "motor-control-system",
+      "label": "Motor Control System"
+    },
+    {
+      "slug": "motor-torque-estimation",
+      "label": "Motor Torque Estimation"
+    },
+    {
+      "slug": "overload-protection",
+      "label": "Overload Protection"
+    },
+    {
+      "slug": "power-management",
+      "label": "Power Management"
+    },
+    {
+      "slug": "signal-conditioning",
+      "label": "Signal Conditioning"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

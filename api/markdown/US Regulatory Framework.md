@@ -1,21 +1,495 @@
-iri:: http://narrativegoldmine.com/blockchain#UsRegulatoryFramework
-uri:: urn:visionclaw:concept:blockchain:us-regulatory-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:us-regulatory-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: US Regulatory Framework
-content-hash:: sha256-12-8822fe34d5fd
-legacy-term-id:: BC-0483
-status:: stub-needs-content
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#UsRegulatoryFramework
+legacy_uri:: urn:visionclaw:concept:blockchain:us-regulatory-framework
 public:: true
+
+# US Regulatory Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300",
+  "@type": "Page",
+  "vc:slug": "us-regulatory-framework",
+  "title": "US Regulatory Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aml",
+      "vc:label": "AML"
+    },
+    {
+      "@id": "urn:visionflow:linked:amlkyccompliance",
+      "vc:label": "AMLKYCCompliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bank-secrecy-act",
+      "vc:label": "Bank Secrecy Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0456-virtual-asset-service-providers",
+      "vc:label": "BC-0456-virtual-asset-service-providers"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0457-aml-kyc-compliance",
+      "vc:label": "BC-0457-aml-kyc-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0481-fatf-recommendations",
+      "vc:label": "BC-0481-fatf-recommendations"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0482-eu-mica-regulation",
+      "vc:label": "BC-0482-eu-mica-regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bit-license",
+      "vc:label": "BitLicense"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc",
+      "vc:label": "CBDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:cftc",
+      "vc:label": "CFTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:cftc",
+      "vc:label": "CFTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptocurrency-exchange",
+      "vc:label": "Cryptocurrency Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-finance",
+      "vc:label": "Decentralised Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:etf",
+      "vc:label": "ETF"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf",
+      "vc:label": "FATF"
+    },
+    {
+      "@id": "urn:visionflow:linked:fin-cen",
+      "vc:label": "FinCEN"
+    },
+    {
+      "@id": "urn:visionflow:linked:fin-cen",
+      "vc:label": "FinCEN"
+    },
+    {
+      "@id": "urn:visionflow:linked:howey-test",
+      "vc:label": "Howey Test"
+    },
+    {
+      "@id": "urn:visionflow:linked:initial-coin-offerings",
+      "vc:label": "Initial Coin Offerings"
+    },
+    {
+      "@id": "urn:visionflow:linked:irs",
+      "vc:label": "IRS"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-manipulation",
+      "vc:label": "Market Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mi-ca",
+      "vc:label": "MiCA"
+    },
+    {
+      "@id": "urn:visionflow:linked:money-transmitter",
+      "vc:label": "Money Transmitter"
+    },
+    {
+      "@id": "urn:visionflow:linked:money-transmitter-licenses",
+      "vc:label": "MoneyTransmitterLicenses"
+    },
+    {
+      "@id": "urn:visionflow:linked:occ",
+      "vc:label": "OCC"
+    },
+    {
+      "@id": "urn:visionflow:linked:sec",
+      "vc:label": "SEC"
+    },
+    {
+      "@id": "urn:visionflow:linked:sec",
+      "vc:label": "SEC"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dao",
+      "vc:label": "DAO"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:securities-regulation",
+      "vc:label": "Securities Regulation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stablecoin-regulation",
+      "vc:label": "Stablecoin Regulation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8822fe34d5fd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#UsRegulatoryFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0483"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "US Regulatory Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:us-regulatory-framework"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub-needs-content"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:us-regulatory-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:us-regulatory-framework",
+  "@type": "OntologyClass",
+  "label": "US Regulatory Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub-needs-content",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[OCC|Office of the Comptroller of Currency]] addresses banking relationships, and the [[CFTC|Commodity Futures Trading Commission]] regulates cryptocurrency derivatives. This jurisdictional overlap creates compliance complexity, with inconsistent agency positions leading to regulatory uncertainty regarding token classification and exchange registration requirements, prompting Congressional proposals for comprehensive legislation establishing tailored digital asset frameworks. State-level [[MoneyTransmitterLicenses|money transmitter licenses]], banking charters, and inconsistent interpretations of existing laws further fragment the regulatory landscape, with major protocols and exchanges navigating dozens of jurisdiction-specific compliance requirements.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:us-regulatory-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AML]]",
+      "resolved": "urn:visionflow:linked:aml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AMLKYCCompliance|anti-money laundering]]",
+      "resolved": "urn:visionflow:linked:amlkyccompliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bank Secrecy Act]]",
+      "resolved": "urn:visionflow:linked:bank-secrecy-act",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0456-virtual-asset-service-providers]]",
+      "resolved": "urn:visionflow:linked:bc-0456-virtual-asset-service-providers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0457-aml-kyc-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0457-aml-kyc-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0481-fatf-recommendations]]",
+      "resolved": "urn:visionflow:linked:bc-0481-fatf-recommendations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0482-eu-mica-regulation]]",
+      "resolved": "urn:visionflow:linked:bc-0482-eu-mica-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BitLicense]]",
+      "resolved": "urn:visionflow:linked:bit-license",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC]]",
+      "resolved": "urn:visionflow:linked:cbdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CFTC]]",
+      "resolved": "urn:visionflow:linked:cftc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CFTC|Commodity Futures Trading Commission]]",
+      "resolved": "urn:visionflow:linked:cftc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptocurrency Exchange]]",
+      "resolved": "urn:visionflow:linked:cryptocurrency-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Finance]]",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETF]]",
+      "resolved": "urn:visionflow:linked:etf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF]]",
+      "resolved": "urn:visionflow:linked:fatf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FinCEN]]",
+      "resolved": "urn:visionflow:linked:fin-cen",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FinCEN|Financial Crimes Enforcement Network]]",
+      "resolved": "urn:visionflow:linked:fin-cen",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Howey Test]]",
+      "resolved": "urn:visionflow:linked:howey-test",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Initial Coin Offerings]]",
+      "resolved": "urn:visionflow:linked:initial-coin-offerings",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IRS]]",
+      "resolved": "urn:visionflow:linked:irs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Manipulation]]",
+      "resolved": "urn:visionflow:linked:market-manipulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MiCA]]",
+      "resolved": "urn:visionflow:linked:mi-ca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Money Transmitter]]",
+      "resolved": "urn:visionflow:linked:money-transmitter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MoneyTransmitterLicenses|money transmitter licenses]]",
+      "resolved": "urn:visionflow:linked:money-transmitter-licenses",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OCC|Office of the Comptroller of Currency]]",
+      "resolved": "urn:visionflow:linked:occ",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SEC]]",
+      "resolved": "urn:visionflow:linked:sec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SEC|Securities and Exchange Commission]]",
+      "resolved": "urn:visionflow:linked:sec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DAO]]",
+      "resolved": "urn:visionflow:owl:class:dao",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Asset]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Securities Regulation]]",
+      "resolved": "urn:visionflow:owl:class:securities-regulation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stablecoin Regulation]]",
+      "resolved": "urn:visionflow:owl:class:stablecoin-regulation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[OCC|Office of the Comptroller of Currency]] addresses banking relationships, and the [[CFTC|Commodity Futures Trading Commission]] regulates cryptocurrency derivatives. This jurisdictional overlap creates compliance complexity, with inconsistent agency positions leading to regulatory uncertainty regarding token classification and exchange registration requirements, prompting Congressional proposals for comprehensive legislation establishing tailored digital asset frameworks. State-level [[MoneyTransmitterLicenses|money transmitter licenses]], banking charters, and inconsistent interpretations of existing laws further fragment the regulatory landscape, with major protocols and exchanges navigating dozens of jurisdiction-specific compliance requirements.

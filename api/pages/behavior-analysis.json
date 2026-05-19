@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:f9a79b97c045912ca0f219c798fcd111d624782ac5699146de819c08adf5110f",
+  "title": "Behavior Analysis",
+  "slug": "behavior-analysis",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:behavior-analysis",
+  "domain": "artificial-intelligence",
+  "definition": "Behavior Analysis is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "behavioural-feedback-loop",
+      "label": "Behavioural Feedback Loop"
+    }
+  ]
+}

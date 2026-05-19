@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:b4e73b6916284387dadb8e9a0b89a82b0c65d39c9e91e33ea1d61e35d7f0b127",
+  "title": "Immersive Interface",
+  "slug": "immersive-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-interface",
+  "domain": "spatial-computing",
+  "definition": "User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input methods that enable natural, intuitive engagement with virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interface",
+      "label": "Human-Computer Interface"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:natural-vr-interaction",
+        "label": "Natural VR Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "natural-vr-interaction",
+      "label": "Natural VR Interaction"
+    },
+    {
+      "slug": "human-computer-interface",
+      "label": "Human-Computer Interface"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    }
+  ]
+}

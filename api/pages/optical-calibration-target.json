@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:a3862e9998f0e78f264c86ff2e1dc495d5138662ea21d6e7bd9fc7d44183b163",
+  "title": "Optical Calibration Target",
+  "slug": "optical-calibration-target",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:optical-calibration-target",
+  "domain": "spatial-computing",
+  "definition": "A precision test pattern used for camera and imaging system calibration, including color charts, resolution targets, and geometric patterns that enable accurate measurement of color reproduction, distortion, magnification, and spatial frequency response in optical systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:calibration-equipment",
+      "label": "Calibration Equipment"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:optical-system-accuracy",
+        "label": "Optical System Accuracy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "optical-system-accuracy",
+      "label": "Optical System Accuracy"
+    },
+    {
+      "slug": "calibration-equipment",
+      "label": "Calibration Equipment"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    }
+  ]
+}

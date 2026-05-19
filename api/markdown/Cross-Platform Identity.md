@@ -1,21 +1,273 @@
-iri:: http://narrativegoldmine.com/infrastructure#CrossPlatformIdentity
-uri:: urn:visionclaw:concept:infrastructure:cross-platform-identity
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:cross-platform-identity
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Cross-Platform Identity
-content-hash:: sha256-12-4f310156d9b1
-legacy-term-id:: NGM-7020
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#CrossPlatformIdentity
+legacy_uri:: urn:visionclaw:concept:infrastructure:cross-platform-identity
 public:: true
+
+# Cross-Platform Identity
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee",
+  "@type": "Page",
+  "vc:slug": "cross-platform-identity",
+  "title": "Cross-Platform Identity",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:core-technology",
+      "vc:label": "Core Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-access",
+      "vc:label": "Federated Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-sign-on",
+      "vc:label": "Single Sign-On"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust-relationships",
+      "vc:label": "Trust Relationships"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "User Experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-federation",
+      "vc:label": "Identity Federation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4f310156d9b1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#CrossPlatformIdentity"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7020"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cross-Platform Identity"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cross-platform-identity"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cross-platform-identity"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cross-platform-identity",
+  "@type": "OntologyClass",
+  "label": "Cross-Platform Identity",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "Identity Management"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries. It enables seamless authentication and authorisation across heterogeneous environments through federated identity management, allowing users to access resources across domains without maintaining separate credentials for each system.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:federated-access",
+      "vc:label": "Federated Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-sign-on",
+      "vc:label": "Single Sign-On"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "User Experience"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:trust-relationships",
+      "vc:label": "Trust Relationships"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-federation",
+      "vc:label": "Identity Federation"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cross-platform-identity:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Core Technology]]",
+      "resolved": "urn:visionflow:linked:core-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Federated Access]]",
+      "resolved": "urn:visionflow:linked:federated-access",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Single Sign-On]]",
+      "resolved": "urn:visionflow:linked:single-sign-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trust Relationships]]",
+      "resolved": "urn:visionflow:linked:trust-relationships",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Federation]]",
+      "resolved": "urn:visionflow:owl:class:identity-federation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Management]]",
+      "resolved": "urn:visionflow:owl:class:identity-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries. It enables seamless authentication and authorisation across heterogeneous environments through federated identity management, allowing users to access resources across domains without maintaining separate credentials for each system.

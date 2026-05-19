@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:92484044f37f0553fb731b4611301193e56a0e5531db09a6f03b3e00ffd45f37",
+  "title": "rb 0092 protective stop",
+  "slug": "rb-0092-protective-stop",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0092-protective-stop",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-safety",
+      "label": "Robot Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

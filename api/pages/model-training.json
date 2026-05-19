@@ -1,0 +1,656 @@
+{
+  "id": "urn:visionflow:page:5d574c3bfa965ffe3b7cdc1171fb6bdec91855b9e03fc52dd641f120e692fc7c",
+  "title": "Model Training",
+  "slug": "model-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-training",
+  "domain": "artificial-intelligence",
+  "definition": "Model Training is the end-to-end computational process by which a neural network's parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies suitable for deployment. For contemporary foundation models \u2014 autoregressive transformer decoders ranging from 1B to 671B parameters \u2014 the process is stratified into four principal phases: (1) pre-training on self-supervised objectives across 8T\u201315T tokens of curated web, code, and document data using the causal language modelling (CLM) loss L = \u2212(1/T) \u03a3\u209c log P_\u03b8(x\u209c|x\u2081,...,x\u209c\u208b\u2081); (2) supervised fine-tuning (SFT) on 10K\u20131M high-quality instruction\u2013response pairs applying the CLM loss only over response tokens; (3) preference alignment via reinforcement learning from human feedback (RLHF) with proximal policy optimisation (PPO) maximising a scalar reward model while penalising KL-divergence from the SFT reference policy J(\u03b8) = E[R_\u03c6(x,y)] \u2212 \u03b2\u00b7KL(\u03c0_\u03b8\u2016\u03c0_ref), or via the simpler direct preference optimisation (DPO, Rafailov et al. 2023) which elides the explicit reward model by re-parameterising t",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "id": "urn:visionflow:linked:optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-curation",
+        "label": "Data Curation"
+      },
+      {
+        "id": "urn:visionflow:linked:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "id": "urn:visionflow:linked:kto",
+        "label": "KTO"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pre-training",
+        "label": "Pre-training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-clusters",
+        "label": "GPU Clusters"
+      },
+      {
+        "id": "urn:visionflow:linked:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:visionflow:linked:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:adam-w",
+        "label": "AdamW"
+      },
+      {
+        "id": "urn:visionflow:linked:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "id": "urn:visionflow:linked:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:visionflow:linked:ze-ro-optimisation",
+        "label": "ZeRO Optimisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adam-w",
+      "label": "AdamW"
+    },
+    {
+      "slug": "aisi-2024-approach-to-evaluations",
+      "label": "AISI 2024 Approach to Evaluations"
+    },
+    {
+      "slug": "aisi-frontier-ai-safety-framework",
+      "label": "AISI Frontier AI Safety Framework"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "alignment-layer",
+      "label": "AlignmentLayer"
+    },
+    {
+      "slug": "bai-et-al-2022-anthropic-rlhf-helpful-harmless",
+      "label": "Bai et al. 2022 Anthropic RLHF Helpful Harmless"
+    },
+    {
+      "slug": "bai-et-al-2022-constitutional-ai-rlaif",
+      "label": "Bai et al. 2022 Constitutional AI RLAIF"
+    },
+    {
+      "slug": "bommasani-et-al-2021-foundation-models-opportunities-and-risks",
+      "label": "Bommasani et al. 2021 Foundation Models Opportunities and Risks"
+    },
+    {
+      "slug": "brown-et-al-2020-gpt-3-few-shot-learners",
+      "label": "Brown et al. 2020 GPT-3 Few-Shot Learners"
+    },
+    {
+      "slug": "causal-language-modelling",
+      "label": "Causal Language Modelling"
+    },
+    {
+      "slug": "chinchilla-scaling-laws",
+      "label": "Chinchilla Scaling Laws"
+    },
+    {
+      "slug": "dao-2023-flash-attention-2",
+      "label": "Dao 2023 FlashAttention-2"
+    },
+    {
+      "slug": "dao-et-al-2022-flash-attention-io-aware",
+      "label": "Dao et al. 2022 FlashAttention IO-Aware"
+    },
+    {
+      "slug": "data-curation",
+      "label": "Data Curation"
+    },
+    {
+      "slug": "deep-seek-ai-2024-deep-seek-v3-technical-report",
+      "label": "DeepSeek-AI 2024 DeepSeek-V3 Technical Report"
+    },
+    {
+      "slug": "deep-speed",
+      "label": "DeepSpeed"
+    },
+    {
+      "slug": "dettmers-et-al-2024-qlo-ra",
+      "label": "Dettmers et al. 2024 QLoRA"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "emergent-capabilities",
+      "label": "Emergent Capabilities"
+    },
+    {
+      "slug": "ethayarajh-et-al-2024-kto-prospect-theoretic-optimisation",
+      "label": "Ethayarajh et al. 2024 KTO Prospect Theoretic Optimisation"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "gpu-clusters",
+      "label": "GPU Clusters"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
+    },
+    {
+      "slug": "hoffmann-et-al-2022-chinchilla-compute-optimal-training",
+      "label": "Hoffmann et al. 2022 Chinchilla Compute-Optimal Training"
+    },
+    {
+      "slug": "hu-et-al-2022-lo-ra-low-rank-adaptation",
+      "label": "Hu et al. 2022 LoRA Low-Rank Adaptation"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "instruction-following",
+      "label": "Instruction Following"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "kaplan-et-al-2020-scaling-laws-for-neural-language-models",
+      "label": "Kaplan et al. 2020 Scaling Laws for Neural Language Models"
+    },
+    {
+      "slug": "kirkpatrick-et-al-2017-ewc-overcoming-catastrophic-forgetting",
+      "label": "Kirkpatrick et al. 2017 EWC Overcoming Catastrophic Forgetting"
+    },
+    {
+      "slug": "kto",
+      "label": "KTO"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "liu-et-al-2024-do-ra-weight-decomposed-low-rank-adaptation",
+      "label": "Liu et al. 2024 DoRA Weight-Decomposed Low-Rank Adaptation"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "megatron-lm",
+      "label": "Megatron-LM"
+    },
+    {
+      "slug": "meta-ai-2024-llama-3-herd-of-models",
+      "label": "Meta AI 2024 Llama 3 Herd of Models"
+    },
+    {
+      "slug": "narayanan-et-al-2021-efficient-large-scale-lm-training-3-d-parallelism",
+      "label": "Narayanan et al. 2021 Efficient Large-Scale LM Training 3D Parallelism"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "numerical-computation",
+      "label": "Numerical Computation"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "ouyang-et-al-2022-instruct-gpt-rlhf",
+      "label": "Ouyang et al. 2022 InstructGPT RLHF"
+    },
+    {
+      "slug": "penedo-et-al-2024-fine-web",
+      "label": "Penedo et al. 2024 FineWeb"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    },
+    {
+      "slug": "policy-optimisation",
+      "label": "Policy Optimisation"
+    },
+    {
+      "slug": "probabilistic-graphical-models",
+      "label": "Probabilistic Graphical Models"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "rafailov-et-al-2023-dpo-direct-preference-optimisation",
+      "label": "Rafailov et al. 2023 DPO Direct Preference Optimisation"
+    },
+    {
+      "slug": "rajbhandari-et-al-2020-ze-ro-deep-speed",
+      "label": "Rajbhandari et al. 2020 ZeRO DeepSpeed"
+    },
+    {
+      "slug": "responsible-scaling-policies",
+      "label": "Responsible Scaling Policies"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "schwarz-et-al-2018-ewc-progress-and-compress",
+      "label": "Schwarz et al. 2018 EWC++ Progress and Compress"
+    },
+    {
+      "slug": "shoeybi-et-al-2019-megatron-lm-tensor-parallelism",
+      "label": "Shoeybi et al. 2019 Megatron-LM Tensor Parallelism"
+    },
+    {
+      "slug": "soldaini-et-al-2024-dolma",
+      "label": "Soldaini et al. 2024 Dolma"
+    },
+    {
+      "slug": "stiennon-et-al-2020-learning-to-summarise-with-human-feedback",
+      "label": "Stiennon et al. 2020 Learning to Summarise with Human Feedback"
+    },
+    {
+      "slug": "tensor-parallelism",
+      "label": "Tensor Parallelism"
+    },
+    {
+      "slug": "together-ai-2023-red-pajama",
+      "label": "Together AI 2023 RedPajama"
+    },
+    {
+      "slug": "tokeniser",
+      "label": "Tokeniser"
+    },
+    {
+      "slug": "vaswani-et-al-2017-attention-is-all-you-need",
+      "label": "Vaswani et al. 2017 Attention is All You Need"
+    },
+    {
+      "slug": "ze-ro-optimisation",
+      "label": "ZeRO Optimisation"
+    },
+    {
+      "slug": "zhao-et-al-2023-py-torch-fsdp",
+      "label": "Zhao et al. 2023 PyTorch FSDP"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "optimiser",
+      "label": "Optimiser"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre-training"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "synthetic-data-generator",
+      "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

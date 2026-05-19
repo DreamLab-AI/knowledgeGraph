@@ -1,0 +1,252 @@
+{
+  "id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4",
+  "title": "Adapter Slot",
+  "slug": "adapter-slot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adapter-slot",
+  "domain": "infrastructure",
+  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Events (telemetry)]], [[Agent Bead|Beads (work units)]], and [[Orchestration Interface|Orchestrator (control)]], each replaceable at runtime without modifying agent code.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.89,
+  "authorityScore": 0.91,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bead-adapter",
+        "label": "Bead Adapter"
+      },
+      {
+        "id": "urn:visionflow:linked:event-adapter",
+        "label": "Event Adapter"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-adapter",
+        "label": "Memory Adapter"
+      },
+      {
+        "id": "urn:visionflow:linked:orchestrator-adapter",
+        "label": "Orchestrator Adapter"
+      },
+      {
+        "id": "urn:visionflow:linked:pod-adapter",
+        "label": "Pod Adapter"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:interface-specification",
+        "label": "Interface Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:manifest-declaration",
+        "label": "Manifest Declaration"
+      },
+      {
+        "id": "urn:visionflow:linked:runtime-initialization",
+        "label": "Runtime Initialization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:deployment-flexibility",
+        "label": "Deployment Flexibility"
+      },
+      {
+        "id": "urn:visionflow:linked:pluggable-memory",
+        "label": "Pluggable Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:pluggable-storage",
+        "label": "Pluggable Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:pluggable-telemetry",
+        "label": "Pluggable Telemetry"
+      },
+      {
+        "id": "urn:visionflow:linked:pluggable-work-distribution",
+        "label": "Pluggable Work Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:adapter-pattern",
+        "label": "Adapter Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:dependency-injection",
+        "label": "Dependency Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:strategy-pattern",
+        "label": "Strategy Pattern"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adapter-layer",
+      "label": "AdapterLayer"
+    },
+    {
+      "slug": "adapter-pattern",
+      "label": "Adapter Pattern"
+    },
+    {
+      "slug": "adr-005",
+      "label": "ADR-005"
+    },
+    {
+      "slug": "agent-bead",
+      "label": "Agent Bead"
+    },
+    {
+      "slug": "agent-bead",
+      "label": "Agent Bead"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "architecture-domain",
+      "label": "ArchitectureDomain"
+    },
+    {
+      "slug": "bead-adapter",
+      "label": "Bead Adapter"
+    },
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "dependency-injection",
+      "label": "Dependency Injection"
+    },
+    {
+      "slug": "dependency-injection-principles",
+      "label": "Dependency Injection Principles"
+    },
+    {
+      "slug": "deployment-flexibility",
+      "label": "Deployment Flexibility"
+    },
+    {
+      "slug": "design-patterns-gang-of-four",
+      "label": "Design Patterns - Gang of Four"
+    },
+    {
+      "slug": "event-adapter",
+      "label": "Event Adapter"
+    },
+    {
+      "slug": "interface-specification",
+      "label": "Interface Specification"
+    },
+    {
+      "slug": "manifest-declaration",
+      "label": "Manifest Declaration"
+    },
+    {
+      "slug": "memory-adapter",
+      "label": "Memory Adapter"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "orchestration-interface",
+      "label": "Orchestration Interface"
+    },
+    {
+      "slug": "orchestrator-adapter",
+      "label": "Orchestrator Adapter"
+    },
+    {
+      "slug": "pluggable-memory",
+      "label": "Pluggable Memory"
+    },
+    {
+      "slug": "pluggable-storage",
+      "label": "Pluggable Storage"
+    },
+    {
+      "slug": "pluggable-telemetry",
+      "label": "Pluggable Telemetry"
+    },
+    {
+      "slug": "pluggable-work-distribution",
+      "label": "Pluggable Work Distribution"
+    },
+    {
+      "slug": "pod-adapter",
+      "label": "Pod Adapter"
+    },
+    {
+      "slug": "runtime-initialization",
+      "label": "Runtime Initialization"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "strategy-pattern",
+      "label": "Strategy Pattern"
+    },
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

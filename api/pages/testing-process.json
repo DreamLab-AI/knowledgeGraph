@@ -1,0 +1,166 @@
+{
+  "id": "urn:visionflow:page:8b50b981291109209c41fa523c5002985630408cbe1650fdadb30afc900595c5",
+  "title": "Testing Process",
+  "slug": "testing-process",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:testing-process",
+  "domain": "spatial-computing",
+  "definition": "Systematic execution of verification and validation operations to detect faults, verify functionality, and ensure quality standards in metaverse systems and applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:quality-assurance",
+      "label": "Quality Assurance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:integration-testing",
+        "label": "Integration Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-testing",
+        "label": "Performance Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:security-testing",
+        "label": "Security Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:user-acceptance-testing",
+        "label": "User Acceptance Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:defect-tracking-system",
+        "label": "Defect Tracking System"
+      },
+      {
+        "id": "urn:visionflow:linked:test-automation-framework",
+        "label": "Test Automation Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:test-data-management",
+        "label": "Test Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:quality-validation",
+        "label": "Quality Validation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "defect-tracking-system",
+      "label": "Defect Tracking System"
+    },
+    {
+      "slug": "development-workflow",
+      "label": "Development Workflow"
+    },
+    {
+      "slug": "integration-testing",
+      "label": "Integration Testing"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "performance-testing",
+      "label": "Performance Testing"
+    },
+    {
+      "slug": "quality-validation",
+      "label": "Quality Validation"
+    },
+    {
+      "slug": "security-testing",
+      "label": "Security Testing"
+    },
+    {
+      "slug": "test-automation-framework",
+      "label": "Test Automation Framework"
+    },
+    {
+      "slug": "test-data-management",
+      "label": "Test Data Management"
+    },
+    {
+      "slug": "unit-testing",
+      "label": "Unit Testing"
+    },
+    {
+      "slug": "user-acceptance-testing",
+      "label": "User Acceptance Testing"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "risk-mitigation",
+      "label": "Risk Mitigation"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    }
+  ],
+  "backlinks": []
+}

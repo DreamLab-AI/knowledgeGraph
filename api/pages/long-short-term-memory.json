@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:1409a3e32f67afbcf258e5c25e1120e7b0695e50a9591b2c20f674c538879b84",
+  "title": "Long Short Term Memory",
+  "slug": "long-short-term-memory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:long-short-term-memory",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

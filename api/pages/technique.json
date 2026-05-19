@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1731f31e88ca8bc95af32d9d740fe6a9052dac31eeda094221fec2c8a172d71d",
+  "title": "Technique",
+  "slug": "technique",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technique",
+  "domain": "artificial-intelligence",
+  "definition": "Technique is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

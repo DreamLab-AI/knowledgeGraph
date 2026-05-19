@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:f17c102a32ce672a0c4eeb4b8b92ed59316a263672d1d6d27c5096262f677a91",
+  "title": "Standards Conformance",
+  "slug": "standards-conformance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standards-conformance",
+  "domain": "spatial-computing",
+  "definition": "The state or process of meeting the requirements specified in a technical standard, specification, or guideline, ensuring that a product, process, or system aligns with internal or industry-specific standards for interoperability, quality, and compatibility.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1bdd3a954c6aeab7363bd38d4a8cb24b6c13517346a5b4fab1380ce3decfdedd",
+  "title": "rb 0012 wheeled mobile robot",
+  "slug": "rb-0012-wheeled-mobile-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0012-wheeled-mobile-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

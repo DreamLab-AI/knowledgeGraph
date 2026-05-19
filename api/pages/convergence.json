@@ -1,0 +1,480 @@
+{
+  "id": "urn:visionflow:page:3c1b11b47cbd2c9936c2d5865e6c7c56d4bd847a635e34f3d31e02d7de2e36f9",
+  "title": "Convergence",
+  "slug": "convergence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:convergence",
+  "domain": "artificial-intelligence",
+  "definition": "Technological Convergence is the macro-level process by which previously distinct technologies, disciplines, and sociotechnical systems merge, overlap, and mutually reinforce to produce qualitatively new capabilities, applications, and social configurations that none of the converging components could have achieved independently. First systematically theorised in the 2002 US National Science Foundation / Department of Commerce report \"Converging Technologies for Improving Human Performance\" (Roco & Bainbridge), the concept formalises an observation implicit in the history of technology since the Industrial Revolution: that breakthrough innovation almost always arises at disciplinary boundaries rather than within established fields. The canonical [[NBIC Convergence]] framework (Nano-Bio-Info-Cogno) identified four mutually reinforcing S&T waves whose intersection was expected to drive capability discontinuities across health, productivity, security, and human cognition over the period 2002\u20132030; 2026 empirical evidence validates most directional predictions while substantially accelerating timelines.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:general-purpose-technology",
+      "label": "General Purpose Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:innovation-systems",
+      "label": "Innovation Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:sociotechnical-systems",
+      "label": "Sociotechnical Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-management",
+      "label": "Technology Management"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-transformation",
+      "label": "Digital Transformation"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-and-blockchain",
+        "label": "AI and Blockchain"
+      },
+      {
+        "id": "urn:visionflow:linked:biocomputing",
+        "label": "Biocomputing"
+      },
+      {
+        "id": "urn:visionflow:linked:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:visionflow:linked:nbic-convergence",
+        "label": "NBIC Convergence"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cross-domain-research-infrastructure",
+        "label": "Cross-Domain Research Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:interoperability-protocols",
+        "label": "Interoperability Protocols"
+      },
+      {
+        "id": "urn:visionflow:linked:moore-s-law",
+        "label": "Moore's Law"
+      },
+      {
+        "id": "urn:visionflow:linked:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-coordination",
+        "label": "Regulatory Coordination"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:visionflow:linked:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-cities",
+        "label": "Smart Cities"
+      },
+      {
+        "id": "urn:visionflow:linked:technological-singularity",
+        "label": "Technological Singularity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:precision-medicine",
+        "label": "Precision Medicine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:general-purpose-technology-theory",
+        "label": "General Purpose Technology Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:visionflow:linked:schumpeterian-innovation",
+        "label": "Schumpeterian Innovation"
+      },
+      {
+        "id": "urn:visionflow:linked:systems-of-systems-design",
+        "label": "Systems of Systems Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-and-blockchain",
+      "label": "AI and Blockchain"
+    },
+    {
+      "slug": "ai-and-blockchain",
+      "label": "AI and Blockchain"
+    },
+    {
+      "slug": "ai-and-blockchain",
+      "label": "AI and Blockchain"
+    },
+    {
+      "slug": "ai-and-blockchain",
+      "label": "AI and Blockchain"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "biocomputing",
+      "label": "Biocomputing"
+    },
+    {
+      "slug": "biocomputing",
+      "label": "Biocomputing"
+    },
+    {
+      "slug": "cross-domain-research-infrastructure",
+      "label": "Cross-Domain Research Infrastructure"
+    },
+    {
+      "slug": "cyber-physical-systems",
+      "label": "Cyber Physical Systems"
+    },
+    {
+      "slug": "digital-divide",
+      "label": "Digital Divide"
+    },
+    {
+      "slug": "disruptive-innovation",
+      "label": "Disruptive Innovation"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "emerging-technologies",
+      "label": "Emerging Technologies"
+    },
+    {
+      "slug": "general-purpose-technology",
+      "label": "General Purpose Technology"
+    },
+    {
+      "slug": "general-purpose-technology-theory",
+      "label": "General Purpose Technology Theory"
+    },
+    {
+      "slug": "ieee-standards-association",
+      "label": "IEEE Standards Association"
+    },
+    {
+      "slug": "industry-4-0",
+      "label": "Industry 4.0"
+    },
+    {
+      "slug": "innovation-systems",
+      "label": "Innovation Systems"
+    },
+    {
+      "slug": "innovation-systems-domain",
+      "label": "InnovationSystemsDomain"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "interoperability-protocols",
+      "label": "Interoperability Protocols"
+    },
+    {
+      "slug": "iso-iec-jtc-1",
+      "label": "ISO/IEC JTC 1"
+    },
+    {
+      "slug": "moore-s-law",
+      "label": "Moore's Law"
+    },
+    {
+      "slug": "nbic-convergence",
+      "label": "NBIC Convergence"
+    },
+    {
+      "slug": "network-effects",
+      "label": "Network Effects"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "oecd-sti-directorate",
+      "label": "OECD STI Directorate"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "physical-ai",
+      "label": "Physical AI"
+    },
+    {
+      "slug": "platform-economy",
+      "label": "Platform Economy"
+    },
+    {
+      "slug": "platform-economy",
+      "label": "Platform Economy"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "quantum-mechanics",
+      "label": "Quantum Mechanics"
+    },
+    {
+      "slug": "regulatory-coordination",
+      "label": "Regulatory Coordination"
+    },
+    {
+      "slug": "schumpeterian-innovation",
+      "label": "Schumpeterian Innovation"
+    },
+    {
+      "slug": "semiconductor-technology",
+      "label": "Semiconductor Technology"
+    },
+    {
+      "slug": "silo-innovation",
+      "label": "Silo Innovation"
+    },
+    {
+      "slug": "smart-cities",
+      "label": "Smart Cities"
+    },
+    {
+      "slug": "sociotechnical-layer",
+      "label": "SociotechnicalLayer"
+    },
+    {
+      "slug": "sociotechnical-systems",
+      "label": "Sociotechnical Systems"
+    },
+    {
+      "slug": "synthetic-biology",
+      "label": "Synthetic Biology"
+    },
+    {
+      "slug": "systems-of-systems-design",
+      "label": "Systems of Systems Design"
+    },
+    {
+      "slug": "technological-singularity",
+      "label": "Technological Singularity"
+    },
+    {
+      "slug": "technology-lock-in",
+      "label": "Technology Lock-In"
+    },
+    {
+      "slug": "technology-management",
+      "label": "Technology Management"
+    },
+    {
+      "slug": "technology-management-domain",
+      "label": "TechnologyManagementDomain"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "precision-medicine",
+      "label": "Precision Medicine"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "money-from-digi-soc",
+      "label": "Money from DigiSoc"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

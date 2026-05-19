@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b",
+  "title": "Deterministic Finality",
+  "slug": "deterministic-finality",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:deterministic-finality",
+  "domain": "blockchain",
+  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted. Requires supermajority validator agreement (typically 2/3+) and delivers instant certainty without probabilistic confirmation waiting.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:validator-set",
+        "label": "Validator Set"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "absolute-transaction-guarantee",
+      "label": "Absolute Transaction Guarantee"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
+    },
+    {
+      "slug": "validator-set",
+      "label": "Validator Set"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    }
+  ]
+}

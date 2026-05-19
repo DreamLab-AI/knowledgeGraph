@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:9de32aec9fdff86684ae277f4652d8e2c062f9bcb5512a70231d493044fe60be",
+  "title": "rb 0008 autonomous robot",
+  "slug": "rb-0008-autonomous-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0008-autonomous-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

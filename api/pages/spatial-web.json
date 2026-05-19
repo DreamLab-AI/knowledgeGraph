@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:cb6abc1bbdf211b0294e17fc7b5950f479e9cbfbeda69cf2dcc1a31e6edf49f3",
+  "title": "Spatial Web",
+  "slug": "spatial-web",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-web",
+  "domain": "spatial-computing",
+  "definition": "Spatial Web is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

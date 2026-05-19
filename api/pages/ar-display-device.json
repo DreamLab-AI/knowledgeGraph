@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:9d97c22fcb5899dd7ecfcce514acc3190c278910cf7420e25582ec1b44a8b7e9",
+  "title": "Ar Display Device",
+  "slug": "ar-display-device",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ar-display-device",
+  "domain": "spatial-computing",
+  "definition": "AR Display Device encompasses hardware systems including smart glasses, headsets, and head-mounted displays that superimpose computer-generated imagery onto the user's view of the real world through optical technologies such as waveguides, birdbath optics, holographic displays, and metasurfaces.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:display-hardware",
+      "label": "Display Hardware"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-systems",
+        "label": "Optical Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:pose-tracking",
+        "label": "Pose Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:augmented-reality-experiences",
+        "label": "Augmented Reality Experiences"
+      },
+      {
+        "id": "urn:visionflow:linked:mixed-reality-interaction",
+        "label": "Mixed Reality Interaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "augmented-reality-experiences",
+      "label": "Augmented Reality Experiences"
+    },
+    {
+      "slug": "display-technology",
+      "label": "Display Technology"
+    },
+    {
+      "slug": "mixed-reality-interaction",
+      "label": "Mixed Reality Interaction"
+    },
+    {
+      "slug": "optical-systems",
+      "label": "Optical Systems"
+    },
+    {
+      "slug": "pose-tracking",
+      "label": "Pose Tracking"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    }
+  ]
+}

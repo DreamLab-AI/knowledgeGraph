@@ -1,0 +1,207 @@
+{
+  "id": "urn:visionflow:page:02e21880f0e92b8fcf72879da229d9ec17fbdd3936013dbb38a5b329bd31f021",
+  "title": "Renewable Energy Certificates",
+  "slug": "renewable-energy-certificates",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:renewable-energy-certificates",
+  "domain": "blockchain",
+  "definition": "Digital or blockchain-tokenized instruments that certify the generation of one megawatt-hour (MWh) of electricity from renewable energy sources, providing transparent, immutable proof of renewable energy consumption for carbon accounting, sustainability reporting, and regulatory compliance, with blockchain implementations enabling automated tracking, fractional ownership, peer-to-peer trading, and integration with smart contracts for renewable energy procurement, grid management, and carbon offset markets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:carbon-credit",
+      "label": "CarbonCredit"
+    },
+    {
+      "id": "urn:visionflow:linked:environmental-commodity",
+      "label": "EnvironmentalCommodity"
+    },
+    {
+      "id": "urn:visionflow:linked:sustainability-instrument",
+      "label": "SustainabilityInstrument"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "DigitalAsset"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:certificate-metadata",
+        "label": "CertificateMetadata"
+      },
+      {
+        "id": "urn:visionflow:linked:generation-data",
+        "label": "GenerationData"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-record",
+        "label": "OwnershipRecord"
+      },
+      {
+        "id": "urn:visionflow:linked:retirement-proof",
+        "label": "RetirementProof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:metering-data",
+        "label": "MeteringData"
+      },
+      {
+        "id": "urn:visionflow:linked:registry-infrastructure",
+        "label": "RegistryInfrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:renewable-energy-generation",
+        "label": "RenewableEnergyGeneration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:peer-to-peer-energy-trading",
+        "label": "PeerToPeerEnergyTrading"
+      },
+      {
+        "id": "urn:visionflow:linked:renewable-energy-tracking",
+        "label": "RenewableEnergyTracking"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-accounting",
+        "label": "CarbonAccounting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-credit",
+      "label": "CarbonCredit"
+    },
+    {
+      "slug": "carbon-markets",
+      "label": "CarbonMarkets"
+    },
+    {
+      "slug": "center-for-resource-solutions",
+      "label": "Center for Resource Solutions"
+    },
+    {
+      "slug": "certificate-metadata",
+      "label": "CertificateMetadata"
+    },
+    {
+      "slug": "energy-sector",
+      "label": "EnergySector"
+    },
+    {
+      "slug": "environmental-commodity",
+      "label": "EnvironmentalCommodity"
+    },
+    {
+      "slug": "european-energy-certificate-system-eecs",
+      "label": "European Energy Certificate System (EECS)"
+    },
+    {
+      "slug": "generation-data",
+      "label": "GenerationData"
+    },
+    {
+      "slug": "green-e-energy",
+      "label": "Green-e Energy"
+    },
+    {
+      "slug": "iea-renewable-energy-markets",
+      "label": "IEA Renewable Energy Markets"
+    },
+    {
+      "slug": "international-rec-standard-i-rec",
+      "label": "International REC Standard (I-REC)"
+    },
+    {
+      "slug": "metering-data",
+      "label": "MeteringData"
+    },
+    {
+      "slug": "ownership-record",
+      "label": "OwnershipRecord"
+    },
+    {
+      "slug": "peer-to-peer-energy-trading",
+      "label": "PeerToPeerEnergyTrading"
+    },
+    {
+      "slug": "registry-infrastructure",
+      "label": "RegistryInfrastructure"
+    },
+    {
+      "slug": "renewable-energy-generation",
+      "label": "RenewableEnergyGeneration"
+    },
+    {
+      "slug": "renewable-energy-tracking",
+      "label": "RenewableEnergyTracking"
+    },
+    {
+      "slug": "retirement-proof",
+      "label": "RetirementProof"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "SustainabilityDomain"
+    },
+    {
+      "slug": "sustainability-instrument",
+      "label": "SustainabilityInstrument"
+    },
+    {
+      "slug": "sustainability-reporting",
+      "label": "SustainabilityReporting"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "CarbonAccounting"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "DigitalAsset"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

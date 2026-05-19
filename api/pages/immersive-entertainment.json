@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:04fa85370a2cbff9176a5ed15ce27d68b6a06e0909480caf4c5f292dc4241f89",
+  "title": "Immersive Entertainment",
+  "slug": "immersive-entertainment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-entertainment",
+  "domain": "spatial-computing",
+  "definition": "Entertainment experiences leveraging VR, AR, and mixed reality technologies to create interactive, participatory content that transforms audiences from passive spectators into active participants within gaming, theme parks, live events, and digital experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-entertainment",
+      "label": "Digital Entertainment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:interactive-storytelling",
+        "label": "Interactive Storytelling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-entertainment",
+      "label": "Digital Entertainment"
+    },
+    {
+      "slug": "interactive-storytelling",
+      "label": "Interactive Storytelling"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

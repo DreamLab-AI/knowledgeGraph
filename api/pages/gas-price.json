@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:3425eaab98b977e46d7a19a817d7d245bf4efdc34b1bfe838d99f27d33bf74c5",
+  "title": "Gas Price",
+  "slug": "gas-price",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gas-price",
+  "domain": "blockchain",
+  "definition": "Cost per gas unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:economic-mechanism",
+      "label": "EconomicMechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "economic-layer",
+      "label": "EconomicLayer"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "EconomicMechanism"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "TokenEconomicsDomain"
+    }
+  ],
+  "backlinks": []
+}

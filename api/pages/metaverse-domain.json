@@ -1,0 +1,1344 @@
+{
+  "id": "urn:visionflow:page:46eb2ab69e33c4328aa9798d07f88f06f4bcefd49957a3c3b6ba71502e2cfd93",
+  "title": "Metaverse Domain",
+  "slug": "metaverse-domain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-domain",
+  "domain": "spatial-computing",
+  "definition": "The Metaverse Domain provides an ontological framework for interconnected digital platforms leveraging augmented, extended, and virtual realities to create immersive user experiences through multidimensional interactions. It encompasses virtual environments, avatar embodiment, spatial computing, digital economies, and the convergence of physical and virtual worlds where millions can simultaneously inhabit and interact in real-time regardless of physical distance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-systems",
+      "label": "AvatarSystems"
+    },
+    {
+      "slug": "blockchain-technology",
+      "label": "BlockchainTechnology"
+    },
+    {
+      "slug": "decentralized-technologies",
+      "label": "DecentralizedTechnologies"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "ExtendedReality"
+    },
+    {
+      "slug": "virtual-economies",
+      "label": "VirtualEconomies"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "AugmentedReality"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "CloudComputing"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "DigitalTwin"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "ExtendedRealityXR"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "HapticFeedback"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "SpatialComputing"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "TechnologyDomain"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "VirtualReality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adas",
+      "label": "ADAS"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-board",
+      "label": "AI Board"
+    },
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-incident",
+      "label": "AI Incident"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-office",
+      "label": "AI Office"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ai-system-eu-definition",
+      "label": "AI System (EU Definition)"
+    },
+    {
+      "slug": "ai-tri-sm",
+      "label": "AI TRiSM"
+    },
+    {
+      "slug": "ai-trust-risk-and-security-management",
+      "label": "AI Trust Risk and Security Management"
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "label": "AI Trustworthiness"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "albert",
+      "label": "ALBERT"
+    },
+    {
+      "slug": "auc",
+      "label": "AUC"
+    },
+    {
+      "slug": "accountability-oecd",
+      "label": "Accountability (OECD)"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "adapter-modules",
+      "label": "Adapter Modules"
+    },
+    {
+      "slug": "adversarial-attack",
+      "label": "Adversarial Attack"
+    },
+    {
+      "slug": "adversarial-robustness",
+      "label": "Adversarial Robustness"
+    },
+    {
+      "slug": "adversarial-testing",
+      "label": "Adversarial Testing"
+    },
+    {
+      "slug": "augmented-connected-workforce",
+      "label": "Augmented Connected Workforce"
+    },
+    {
+      "slug": "authorised-representative",
+      "label": "Authorised Representative"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "autonomous-ai-agents",
+      "label": "Autonomous AI Agents"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "bart",
+      "label": "BART"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "backdoor-attack",
+      "label": "Backdoor Attack"
+    },
+    {
+      "slug": "byte-pair-encoding",
+      "label": "Byte Pair Encoding"
+    },
+    {
+      "slug": "complete-ontology-index",
+      "label": "COMPLETE ONTOLOGY INDEX"
+    },
+    {
+      "slug": "complete-hri-terms-reference",
+      "label": "COMPLETE_HRI_TERMS_REFERENCE"
+    },
+    {
+      "slug": "completion-report",
+      "label": "COMPLETION_REPORT"
+    },
+    {
+      "slug": "causal-attention",
+      "label": "Causal Attention"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "cloud-native-applications",
+      "label": "Cloud-Native Applications"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "composite-ai",
+      "label": "Composite AI"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "continued-pre-training",
+      "label": "Continued Pre Training"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "cut-mix",
+      "label": "Cut Mix"
+    },
+    {
+      "slug": "data-augmentation-strategies",
+      "label": "Data Augmentation Strategies"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "de-ber-ta",
+      "label": "De BER Ta"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "decoder",
+      "label": "Decoder"
+    },
+    {
+      "slug": "democratic-values",
+      "label": "Democratic Values"
+    },
+    {
+      "slug": "deployer",
+      "label": "Deployer"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "digital-humans",
+      "label": "Digital Humans"
+    },
+    {
+      "slug": "digital-twin-of-the-customer",
+      "label": "Digital Twin of the Customer"
+    },
+    {
+      "slug": "direct-preference-optimisation",
+      "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "distributor",
+      "label": "Distributor"
+    },
+    {
+      "slug": "drug-discovery-ai",
+      "label": "Drug Discovery AI"
+    },
+    {
+      "slug": "electra",
+      "label": "ELECTRA"
+    },
+    {
+      "slug": "etsi-domain-identity-and-trust",
+      "label": "ETSI Domain Identity and Trust"
+    },
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    },
+    {
+      "slug": "etsidomain-classification",
+      "label": "ETSIDomainClassification"
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "label": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    },
+    {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "etsi-domain-governance-ethics",
+      "label": "ETSI_Domain_Governance___Ethics"
+    },
+    {
+      "slug": "etsi-domain-governance-society",
+      "label": "ETSI_Domain_Governance___Society"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "etsi-domain-immersive-experiences",
+      "label": "ETSI_Domain_Immersive_Experiences"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-data",
+      "label": "ETSI_Domain_Infrastructure_Data"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-governance",
+      "label": "ETSI_Domain_Infrastructure___Governance"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-interop",
+      "label": "ETSI_Domain_Infrastructure___Interop"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-security",
+      "label": "ETSI_Domain_Infrastructure___Security"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "etsi-domain-interoperability-creative",
+      "label": "ETSI_Domain_Interoperability___Creative"
+    },
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "etsi-domain-reality-capture-creative",
+      "label": "ETSI_Domain_Reality_Capture___Creative"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "early-stopping",
+      "label": "Early Stopping"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "environmental-sustainability",
+      "label": "Environmental Sustainability"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "explainability-oecd",
+      "label": "Explainability (OECD)"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "fairness-oecd",
+      "label": "Fairness (OECD)"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "fluid-simulation",
+      "label": "Fluid Simulation"
+    },
+    {
+      "slug": "full-fine-tuning",
+      "label": "Full Fine Tuning"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "general-purpose-ai-model",
+      "label": "General Purpose AI Model"
+    },
+    {
+      "slug": "generative-ai-engineering",
+      "label": "Generative AI Engineering"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "hardware-platform-agnostic",
+      "label": "Hardware Platform Agnostic"
+    },
+    {
+      "slug": "harmful-bias",
+      "label": "Harmful Bias"
+    },
+    {
+      "slug": "harmlessness",
+      "label": "Harmlessness"
+    },
+    {
+      "slug": "healthcare-analytics",
+      "label": "Healthcare Analytics"
+    },
+    {
+      "slug": "helpfulness",
+      "label": "Helpfulness"
+    },
+    {
+      "slug": "hidden-dimension",
+      "label": "Hidden Dimension"
+    },
+    {
+      "slug": "hidden-state",
+      "label": "Hidden State"
+    },
+    {
+      "slug": "high-risk-ai-system",
+      "label": "High Risk AI System"
+    },
+    {
+      "slug": "honesty",
+      "label": "Honesty"
+    },
+    {
+      "slug": "human-centred-values",
+      "label": "Human Centred Values"
+    },
+    {
+      "slug": "human-feedback",
+      "label": "Human Feedback"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-to-image-translation",
+      "label": "Image to Image Translation"
+    },
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    },
+    {
+      "slug": "immersive-workspaces",
+      "label": "Immersive Workspaces"
+    },
+    {
+      "slug": "importer",
+      "label": "Importer"
+    },
+    {
+      "slug": "inclusive-growth",
+      "label": "Inclusive Growth"
+    },
+    {
+      "slug": "industry-cloud-platforms",
+      "label": "Industry Cloud Platforms"
+    },
+    {
+      "slug": "inflation-control",
+      "label": "Inflation Control"
+    },
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "Interaction Domain"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "interpretable-ai",
+      "label": "Interpretable AI"
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "label": "Intrinsic Interpretability"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "lla-ma",
+      "label": "LLaMA"
+    },
+    {
+      "slug": "label-smoothing",
+      "label": "Label Smoothing"
+    },
+    {
+      "slug": "land-scarcity",
+      "label": "Land Scarcity"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "layer2-scaling",
+      "label": "Layer2Scaling"
+    },
+    {
+      "slug": "learning-rate-schedule",
+      "label": "Learning Rate Schedule"
+    },
+    {
+      "slug": "limited-risk-ai",
+      "label": "Limited Risk AI"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "Lo RA"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "long-short-term-memory",
+      "label": "Long Short Term Memory"
+    },
+    {
+      "slug": "making-available",
+      "label": "Making Available"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    },
+    {
+      "slug": "market-surveillance-authority",
+      "label": "Market Surveillance Authority"
+    },
+    {
+      "slug": "maximum-sequence-length",
+      "label": "Maximum Sequence Length"
+    },
+    {
+      "slug": "mean-absolute-error",
+      "label": "Mean Absolute Error"
+    },
+    {
+      "slug": "medical-diagnosis-ai",
+      "label": "Medical Diagnosis AI"
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "membership-inference",
+      "label": "Membership Inference"
+    },
+    {
+      "slug": "metaverse-navigation-systems",
+      "label": "Metaverse Navigation Systems"
+    },
+    {
+      "slug": "minimal-risk-ai",
+      "label": "Minimal Risk AI"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "mixtral",
+      "label": "Mixtral"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "mixup",
+      "label": "Mixup"
+    },
+    {
+      "slug": "momentum-contrast",
+      "label": "Momentum Contrast"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "multi-task-learning",
+      "label": "Multi Task Learning"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "national-competent-authority",
+      "label": "National Competent Authority"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "notified-body",
+      "label": "Notified Body"
+    },
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "ontology-definition",
+      "label": "Ontology Definition"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "optimiser",
+      "label": "Optimiser"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "ownership-freedom-distributed",
+      "label": "Ownership Freedom distributed"
+    },
+    {
+      "slug": "ownership-and-freedom-distributed",
+      "label": "Ownership and Freedom Distributed"
+    },
+    {
+      "slug": "pegasus",
+      "label": "PEGASUS"
+    },
+    {
+      "slug": "panoptic-segmentation",
+      "label": "Panoptic Segmentation"
+    },
+    {
+      "slug": "parameter-count",
+      "label": "Parameter Count"
+    },
+    {
+      "slug": "pathology-ai",
+      "label": "Pathology AI"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "placing-on-the-market",
+      "label": "Placing on the Market"
+    },
+    {
+      "slug": "platform-engineering",
+      "label": "Platform Engineering"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "postquantum-cryptography",
+      "label": "Postquantum Cryptography"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "precision-medicine",
+      "label": "Precision Medicine"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "preference-learning",
+      "label": "Preference Learning"
+    },
+    {
+      "slug": "prefix-tuning",
+      "label": "Prefix Tuning"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "prohibited-ai-practice",
+      "label": "Prohibited AI Practice"
+    },
+    {
+      "slug": "provider",
+      "label": "Provider"
+    },
+    {
+      "slug": "proximal-policy-optimisation",
+      "label": "Proximal Policy Optimisation"
+    },
+    {
+      "slug": "public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "slug": "qlo-ra",
+      "label": "QLoRA"
+    },
+    {
+      "slug": "quantum-ai",
+      "label": "Quantum AI"
+    },
+    {
+      "slug": "query-key-value",
+      "label": "Query Key Value"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "research-summary",
+      "label": "RESEARCH_SUMMARY"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "radiology-ai",
+      "label": "Radiology AI"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "reliability",
+      "label": "Reliability"
+    },
+    {
+      "slug": "residual-connection",
+      "label": "Residual Connection"
+    },
+    {
+      "slug": "residual-network",
+      "label": "Residual Network"
+    },
+    {
+      "slug": "resilience-metric",
+      "label": "Resilience Metric"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "risk-mitigation",
+      "label": "Risk Mitigation"
+    },
+    {
+      "slug": "risk-treatment",
+      "label": "Risk Treatment"
+    },
+    {
+      "slug": "ro-berta",
+      "label": "RoBERTa"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robustness-oecd",
+      "label": "Robustness (OECD)"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "root-mean-square-error",
+      "label": "Root Mean Square Error"
+    },
+    {
+      "slug": "rule-of-law",
+      "label": "Rule of Law"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "sparql-examples",
+      "label": "SPARQL EXAMPLES"
+    },
+    {
+      "slug": "summary",
+      "label": "SUMMARY"
+    },
+    {
+      "slug": "safety-oecd",
+      "label": "Safety (OECD)"
+    },
+    {
+      "slug": "safety-fine-tuning",
+      "label": "Safety Fine Tuning"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "scaled-dot-product-attention",
+      "label": "Scaled Dot Product Attention"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "self-driving-car",
+      "label": "Self Driving Car"
+    },
+    {
+      "slug": "self-training",
+      "label": "Self Training"
+    },
+    {
+      "slug": "sentence-piece",
+      "label": "SentencePiece"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "serious-incident",
+      "label": "Serious Incident"
+    },
+    {
+      "slug": "sim-clr",
+      "label": "SimCLR"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "soft-body-dynamics",
+      "label": "Soft Body Dynamics"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "sparse-mixture-of-experts",
+      "label": "Sparse Mixture of Experts"
+    },
+    {
+      "slug": "stakeholder",
+      "label": "Stakeholder"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "subword-tokenisation",
+      "label": "Subword Tokenisation"
+    },
+    {
+      "slug": "super-resolution",
+      "label": "Super Resolution"
+    },
+    {
+      "slug": "sustainable-development",
+      "label": "Sustainable Development"
+    },
+    {
+      "slug": "sustainable-technology",
+      "label": "Sustainable Technology"
+    },
+    {
+      "slug": "systemic-risk",
+      "label": "Systemic Risk"
+    },
+    {
+      "slug": "t5",
+      "label": "T5"
+    },
+    {
+      "slug": "term-index",
+      "label": "TERM INDEX"
+    },
+    {
+      "slug": "task-specific-head",
+      "label": "Task Specific Head"
+    },
+    {
+      "slug": "teacher-student-training",
+      "label": "Teacher Student Training"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "training",
+      "label": "Training"
+    },
+    {
+      "slug": "transparency-oecd",
+      "label": "Transparency (OECD)"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "treatment-planning-ai",
+      "label": "Treatment Planning AI"
+    },
+    {
+      "slug": "trojan-attack",
+      "label": "Trojan Attack"
+    },
+    {
+      "slug": "underfitting",
+      "label": "Underfitting"
+    },
+    {
+      "slug": "validation-report",
+      "label": "VALIDATION_REPORT"
+    },
+    {
+      "slug": "verification-report",
+      "label": "VERIFICATION REPORT"
+    },
+    {
+      "slug": "verification",
+      "label": "VERIFICATION"
+    },
+    {
+      "slug": "value-alignment",
+      "label": "Value Alignment"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "virtual-machine",
+      "label": "Virtual Machine"
+    },
+    {
+      "slug": "visioning-lab-property-crosswalk",
+      "label": "VisioningLab-Property-Crosswalk"
+    },
+    {
+      "slug": "vocabulary",
+      "label": "Vocabulary"
+    },
+    {
+      "slug": "warmup",
+      "label": "Warmup"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "web-xr-api",
+      "label": "WebXR API"
+    },
+    {
+      "slug": "well-being",
+      "label": "Well Being"
+    },
+    {
+      "slug": "wireless-value-realization",
+      "label": "Wireless Value Realization"
+    },
+    {
+      "slug": "word-piece",
+      "label": "WordPiece"
+    },
+    {
+      "slug": "world-instance",
+      "label": "World Instance"
+    },
+    {
+      "slug": "xlnet",
+      "label": "XLNet"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    },
+    {
+      "slug": "implementation-examples",
+      "label": "implementation examples"
+    },
+    {
+      "slug": "m-bert",
+      "label": "mBERT"
+    },
+    {
+      "slug": "m-t5",
+      "label": "mT5"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "security-audit-guide",
+      "label": "security audit guide"
+    }
+  ]
+}

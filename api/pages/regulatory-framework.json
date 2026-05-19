@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4",
+  "title": "Regulatory Framework",
+  "slug": "regulatory-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:regulatory-framework",
+  "domain": "infrastructure",
+  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets. These frameworks address consumer protection, market integrity, anti-money laundering (AML) compliance, and financial stability whilst balancing innovation enablement with risk mitigation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:market-integrity",
+        "label": "Market Integrity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "market-integrity",
+      "label": "Market Integrity"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "compliance-standards",
+      "label": "Compliance Standards"
+    },
+    {
+      "slug": "digital-jurisdiction",
+      "label": "Digital Jurisdiction"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "metaverse-liability-model",
+      "label": "Metaverse Liability Model"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    }
+  ]
+}

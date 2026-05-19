@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:52c1729e19ee61425d01c6bde48fc52a9fe72978bddb88b874f7e40ae85da0f1",
+  "title": "Metadata Schema",
+  "slug": "metadata-schema",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metadata-schema",
+  "domain": "infrastructure",
+  "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:data-standard",
+      "label": "Data Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-discovery",
+        "label": "Data Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:fair-data-principles",
+        "label": "FAIR Data Principles"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "id": "urn:visionflow:linked:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-org",
+        "label": "Schema.org"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-discovery",
+      "label": "Data Discovery"
+    },
+    {
+      "slug": "data-standard",
+      "label": "Data Standard"
+    },
+    {
+      "slug": "dublin-core",
+      "label": "Dublin Core"
+    },
+    {
+      "slug": "fair-data-principles",
+      "label": "FAIR Data Principles"
+    },
+    {
+      "slug": "json-ld",
+      "label": "JSON-LD"
+    },
+    {
+      "slug": "schema-org",
+      "label": "Schema.org"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-interoperability",
+      "label": "Data Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

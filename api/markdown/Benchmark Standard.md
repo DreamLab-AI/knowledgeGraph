@@ -1,22 +1,281 @@
-iri:: http://narrativegoldmine.com/metaverse#BenchmarkStandard
-uri:: urn:visionclaw:concept:artificial-intelligence:benchmark-standard
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:benchmark-standard
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Benchmark Standard
-content-hash:: sha256-12-3b1d4d8e332d
-legacy-term-id:: MV-9796
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#BenchmarkStandard
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:benchmark-standard
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Benchmark Standard
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352",
+  "@type": "Page",
+  "vc:slug": "benchmark-standard",
+  "title": "Benchmark Standard",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:measurement-methodology",
+      "vc:label": "Measurement Methodology"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-comparison",
+      "vc:label": "Performance Comparison"
+    },
+    {
+      "@id": "urn:visionflow:linked:reference-implementation",
+      "vc:label": "Reference Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-evaluation",
+      "vc:label": "System Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quality-assurance",
+      "vc:label": "Quality Assurance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:validation-process",
+      "vc:label": "Validation Process"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3b1d4d8e332d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#BenchmarkStandard"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9796"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Benchmark Standard"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:benchmark-standard"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:benchmark-standard"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:benchmark-standard",
+  "@type": "OntologyClass",
+  "label": "Benchmark Standard",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:technical-standard",
+      "vc:label": "Technical Standard"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:measurement-methodology",
+      "vc:label": "Measurement Methodology"
+    },
+    {
+      "@id": "urn:visionflow:linked:reference-implementation",
+      "vc:label": "Reference Implementation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:validation-process",
+      "vc:label": "Validation Process"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:performance-comparison",
+      "vc:label": "Performance Comparison"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-evaluation",
+      "vc:label": "System Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quality-assurance",
+      "vc:label": "Quality Assurance"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:benchmark-standard:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Measurement Methodology]]",
+      "resolved": "urn:visionflow:linked:measurement-methodology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Performance Comparison]]",
+      "resolved": "urn:visionflow:linked:performance-comparison",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reference Implementation]]",
+      "resolved": "urn:visionflow:linked:reference-implementation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[System Evaluation]]",
+      "resolved": "urn:visionflow:linked:system-evaluation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quality Assurance]]",
+      "resolved": "urn:visionflow:owl:class:quality-assurance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technical Standard]]",
+      "resolved": "urn:visionflow:owl:class:technical-standard",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Validation Process]]",
+      "resolved": "urn:visionflow:owl:class:validation-process",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.

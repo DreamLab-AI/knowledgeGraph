@@ -1,0 +1,848 @@
+{
+  "id": "urn:visionflow:page:113ebd415ce78710525effdc28ce86fb5109d5ce2625028fd0b7f30d6c0082e4",
+  "title": "Cryptography Security and Privacy",
+  "slug": "cryptography-security-and-privacy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cryptography-security-and-privacy",
+  "domain": "infrastructure",
+  "definition": "Cryptography Security and Privacy denotes the cross-disciplinary infrastructure layer combining mathematical primitives (symmetric encryption AES-GCM/ChaCha20-Poly1305/ASCON-128 NIST lightweight finalist February 2023, hash functions SHA-2/SHA-3 Keccak/BLAKE3 throughput 6.8 GB/s single-thread, password hashing Argon2id RFC 9106/bcrypt/scrypt RFC 7914, asymmetric RSA-2048/4096, elliptic-curve ECDH X25519/NIST P-256/P-384/P-521, digital signatures EdDSA Ed25519 RFC 8032/Schnorr BIP-340, post-quantum NIST FIPS 203 ML-KEM CRYSTALS-Kyber August 2024/FIPS 204 ML-DSA CRYSTALS-Dilithium/FIPS 205 SLH-DSA SPHINCS+/FIPS 206 FN-DSA Falcon draft 2025), advanced protocols (zero-knowledge proofs zk-SNARKs Groth16/PLONK/Halo2 recursive composition, zk-STARKs StarkWare transparent quantum-resistant 100K-1M constraints/second, Bulletproofs range proofs without trusted setup, fully homomorphic encryption FHE Microsoft SEAL/IBM HELib/OpenFHE/Zama Concrete/fhEVM Aleo Penumbra 2024 bootstrapping 10ms-1s per gate, secure multi-party computation SPDZ active security/MASCOT OT-based/AGMPC garbled circuits/Inpher Sepior threshold signing 2-of-3 to n-of-n), trusted execution environments (Intel SGX deprecate",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "id": "urn:visionflow:linked:computer-science",
+      "label": "Computer Science"
+    },
+    {
+      "id": "urn:visionflow:linked:privacy-engineering",
+      "label": "Privacy Engineering"
+    },
+    {
+      "id": "urn:visionflow:linked:trusted-computing",
+      "label": "Trusted Computing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:information-security",
+      "label": "Information Security"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:visionflow:linked:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-library",
+        "label": "Cryptographic Library"
+      },
+      {
+        "id": "urn:visionflow:linked:entropy-source",
+        "label": "Entropy Source"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:linked:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:visionflow:linked:random-oracle-model",
+        "label": "Random Oracle Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standards-compliance",
+        "label": "Standards Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anonymous-communication",
+        "label": "Anonymous Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:confidentiality",
+        "label": "Confidentiality"
+      },
+      {
+        "id": "urn:visionflow:linked:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:verifiable-computation",
+        "label": "Verifiable Computation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:aes-gcm",
+        "label": "AES-GCM"
+      },
+      {
+        "id": "urn:visionflow:linked:argon2",
+        "label": "Argon2"
+      },
+      {
+        "id": "urn:visionflow:linked:blake3",
+        "label": "BLAKE3"
+      },
+      {
+        "id": "urn:visionflow:linked:cha-cha20-poly1305",
+        "label": "ChaCha20-Poly1305"
+      },
+      {
+        "id": "urn:visionflow:linked:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "id": "urn:visionflow:linked:ml-dsa",
+        "label": "ML-DSA"
+      },
+      {
+        "id": "urn:visionflow:linked:ml-kem",
+        "label": "ML-KEM"
+      },
+      {
+        "id": "urn:visionflow:linked:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:sha-3",
+        "label": "SHA-3"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-protocol",
+        "label": "Signal Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:slh-dsa",
+        "label": "SLH-DSA"
+      },
+      {
+        "id": "urn:visionflow:linked:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "id": "urn:visionflow:linked:x25519",
+        "label": "X25519"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aes-gcm",
+      "label": "AES-GCM"
+    },
+    {
+      "slug": "anderson-security-engineering-3rd-edition",
+      "label": "Anderson Security Engineering 3rd Edition"
+    },
+    {
+      "slug": "anonymous-communication",
+      "label": "Anonymous Communication"
+    },
+    {
+      "slug": "anssi-france",
+      "label": "ANSSI France"
+    },
+    {
+      "slug": "anssi-rgs",
+      "label": "ANSSI RGS"
+    },
+    {
+      "slug": "apple-private-cloud-compute-2024",
+      "label": "Apple Private Cloud Compute 2024"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "argon2",
+      "label": "Argon2"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "bip-340-schnorr-bitcoin-taproot",
+      "label": "BIP-340 Schnorr Bitcoin Taproot"
+    },
+    {
+      "slug": "blake3",
+      "label": "BLAKE3"
+    },
+    {
+      "slug": "boneh-and-shoup-graduate-course-in-applied-cryptography",
+      "label": "Boneh & Shoup Graduate Course in Applied Cryptography"
+    },
+    {
+      "slug": "bsi-germany",
+      "label": "BSI Germany"
+    },
+    {
+      "slug": "bsi-tr-02102-cryptographic-mechanisms",
+      "label": "BSI TR-02102 Cryptographic Mechanisms"
+    },
+    {
+      "slug": "bulletproofs-bunz-et-al-2018",
+      "label": "Bulletproofs Bunz et al 2018"
+    },
+    {
+      "slug": "cambridge-anderson-murdoch-chip-and-pin",
+      "label": "Cambridge Anderson Murdoch Chip and PIN"
+    },
+    {
+      "slug": "cha-cha20-poly1305",
+      "label": "ChaCha20-Poly1305"
+    },
+    {
+      "slug": "cisa-post-quantum-cryptography-initiative",
+      "label": "CISA Post-Quantum Cryptography Initiative"
+    },
+    {
+      "slug": "ckks-cheon-kim-kim-song",
+      "label": "CKKS Cheon Kim Kim Song"
+    },
+    {
+      "slug": "classical-surveillance-systems",
+      "label": "Classical Surveillance Systems"
+    },
+    {
+      "slug": "complexity-theory",
+      "label": "Complexity Theory"
+    },
+    {
+      "slug": "computational-hardness-assumption",
+      "label": "Computational Hardness Assumption"
+    },
+    {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    },
+    {
+      "slug": "confidential-ai",
+      "label": "Confidential AI"
+    },
+    {
+      "slug": "confidentiality",
+      "label": "Confidentiality"
+    },
+    {
+      "slug": "constant-time-programming",
+      "label": "Constant-Time Programming"
+    },
+    {
+      "slug": "cryptographic-library",
+      "label": "Cryptographic Library"
+    },
+    {
+      "slug": "data-integrity",
+      "label": "Data Integrity"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "digital-forensics",
+      "label": "Digital Forensics"
+    },
+    {
+      "slug": "downfall-moghimi-2023",
+      "label": "Downfall Moghimi 2023"
+    },
+    {
+      "slug": "dwork-mc-sherry-nissim-smith-differential-privacy",
+      "label": "Dwork McSherry Nissim Smith Differential Privacy"
+    },
+    {
+      "slug": "ed25519",
+      "label": "Ed25519"
+    },
+    {
+      "slug": "edinburgh-blockchain-lab-ouroboros-kiayias",
+      "label": "Edinburgh Blockchain Lab Ouroboros Kiayias"
+    },
+    {
+      "slug": "elliptic-curve-theory",
+      "label": "Elliptic Curve Theory"
+    },
+    {
+      "slug": "end-to-end-encryption",
+      "label": "End-to-End Encryption"
+    },
+    {
+      "slug": "entropy-source",
+      "label": "Entropy Source"
+    },
+    {
+      "slug": "etsi-quantum-safe-cryptography",
+      "label": "ETSI Quantum-Safe Cryptography"
+    },
+    {
+      "slug": "etsi-ts-103-744-qsc",
+      "label": "ETSI TS 103 744 QSC"
+    },
+    {
+      "slug": "finite-field-arithmetic",
+      "label": "Finite Field Arithmetic"
+    },
+    {
+      "slug": "fips-140-3",
+      "label": "FIPS 140-3"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "gentry-fhe-2009",
+      "label": "Gentry FHE 2009"
+    },
+    {
+      "slug": "gpu-zip-hot-pixels-2023-2024",
+      "label": "GPU.zip Hot Pixels 2023-2024"
+    },
+    {
+      "slug": "groth16-zk-snark",
+      "label": "Groth16 zk-SNARK"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "hardware-security",
+      "label": "Hardware Security"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "i-message-pq3-february-2024",
+      "label": "iMessage PQ3 February 2024"
+    },
+    {
+      "slug": "ietf-cfrg",
+      "label": "IETF CFRG"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "InformationSecurityDomain"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "irtf",
+      "label": "IRTF"
+    },
+    {
+      "slug": "iso-iec-jtc-1-sc-27",
+      "label": "ISO IEC JTC 1 SC 27"
+    },
+    {
+      "slug": "katz-and-lindell-introduction-to-modern-cryptography-3rd",
+      "label": "Katz & Lindell Introduction to Modern Cryptography 3rd"
+    },
+    {
+      "slug": "key-exchange",
+      "label": "Key Exchange"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
+      "slug": "mathematical-foundations",
+      "label": "Mathematical Foundations"
+    },
+    {
+      "slug": "meltdown-lipp-et-al-2018",
+      "label": "Meltdown Lipp et al 2018"
+    },
+    {
+      "slug": "message-authentication-code",
+      "label": "Message Authentication Code"
+    },
+    {
+      "slug": "ml-dsa",
+      "label": "ML-DSA"
+    },
+    {
+      "slug": "ml-kem",
+      "label": "ML-KEM"
+    },
+    {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "ncsc-uk",
+      "label": "NCSC UK"
+    },
+    {
+      "slug": "ncsc-uk-pqc-migration-guidance-2024",
+      "label": "NCSC UK PQC Migration Guidance 2024"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "nist-fips-186-5-digital-signature-standard",
+      "label": "NIST FIPS 186-5 Digital Signature Standard"
+    },
+    {
+      "slug": "nist-fips-197-aes",
+      "label": "NIST FIPS 197 AES"
+    },
+    {
+      "slug": "nist-fips-202-sha-3",
+      "label": "NIST FIPS 202 SHA-3"
+    },
+    {
+      "slug": "nist-fips-203-ml-kem-august-2024",
+      "label": "NIST FIPS 203 ML-KEM August 2024"
+    },
+    {
+      "slug": "nist-fips-204-ml-dsa-august-2024",
+      "label": "NIST FIPS 204 ML-DSA August 2024"
+    },
+    {
+      "slug": "nist-fips-205-slh-dsa-august-2024",
+      "label": "NIST FIPS 205 SLH-DSA August 2024"
+    },
+    {
+      "slug": "nist-ir-8547-pqc-migration-playbook",
+      "label": "NIST IR 8547 PQC Migration Playbook"
+    },
+    {
+      "slug": "nsa-cnsa-2-0-suite",
+      "label": "NSA CNSA 2.0 Suite"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "obfuscation-only-defence",
+      "label": "Obfuscation-Only Defence"
+    },
+    {
+      "slug": "open-quantum-safe-liboqs",
+      "label": "Open Quantum Safe liboqs"
+    },
+    {
+      "slug": "plaintext-communication",
+      "label": "Plaintext Communication"
+    },
+    {
+      "slug": "plonk-gabizon-williamson-ciobotaru",
+      "label": "PLONK Gabizon Williamson Ciobotaru"
+    },
+    {
+      "slug": "polynomial-commitments",
+      "label": "Polynomial Commitments"
+    },
+    {
+      "slug": "pqshield-oxford",
+      "label": "PQShield Oxford"
+    },
+    {
+      "slug": "privacy-engineering",
+      "label": "Privacy Engineering"
+    },
+    {
+      "slug": "privacy-engineering-domain",
+      "label": "PrivacyEngineeringDomain"
+    },
+    {
+      "slug": "privacy-preserving-computation",
+      "label": "Privacy-Preserving Computation"
+    },
+    {
+      "slug": "privacy-preserving-machine-learning",
+      "label": "Privacy-Preserving Machine Learning"
+    },
+    {
+      "slug": "quantum-computing-threat-model",
+      "label": "Quantum Computing Threat Model"
+    },
+    {
+      "slug": "quantum-cryptography",
+      "label": "Quantum Cryptography"
+    },
+    {
+      "slug": "random-oracle-model",
+      "label": "Random Oracle Model"
+    },
+    {
+      "slug": "rfc-7748-x25519-x448",
+      "label": "RFC 7748 X25519 X448"
+    },
+    {
+      "slug": "rfc-8032-ed-dsa-ed25519",
+      "label": "RFC 8032 EdDSA Ed25519"
+    },
+    {
+      "slug": "rfc-8439-cha-cha20-poly1305",
+      "label": "RFC 8439 ChaCha20-Poly1305"
+    },
+    {
+      "slug": "rfc-8446-tls-1-3",
+      "label": "RFC 8446 TLS 1.3"
+    },
+    {
+      "slug": "rfc-9106-argon2",
+      "label": "RFC 9106 Argon2"
+    },
+    {
+      "slug": "royal-holloway-isg",
+      "label": "Royal Holloway ISG"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "secure-enclave",
+      "label": "Secure Enclave"
+    },
+    {
+      "slug": "secure-messaging",
+      "label": "Secure Messaging"
+    },
+    {
+      "slug": "security-through-obscurity",
+      "label": "Security Through Obscurity"
+    },
+    {
+      "slug": "sha-3",
+      "label": "SHA-3"
+    },
+    {
+      "slug": "side-channel-attack",
+      "label": "Side-Channel Attack"
+    },
+    {
+      "slug": "signal-pqxdh-may-2024",
+      "label": "Signal PQXDH May 2024"
+    },
+    {
+      "slug": "signal-protocol",
+      "label": "Signal Protocol"
+    },
+    {
+      "slug": "slh-dsa",
+      "label": "SLH-DSA"
+    },
+    {
+      "slug": "spdz-damgard-pastro-smart-zakarias",
+      "label": "SPDZ Damgard Pastro Smart Zakarias"
+    },
+    {
+      "slug": "spectre-kocher-et-al-2019",
+      "label": "Spectre Kocher et al 2019"
+    },
+    {
+      "slug": "steganography",
+      "label": "Steganography"
+    },
+    {
+      "slug": "threat-modelling",
+      "label": "Threat Modelling"
+    },
+    {
+      "slug": "tiktag-arm-mte-2024",
+      "label": "TIKTAG ARM MTE 2024"
+    },
+    {
+      "slug": "tls-1-3",
+      "label": "TLS 1.3"
+    },
+    {
+      "slug": "trusted-computing",
+      "label": "Trusted Computing"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "unauthenticated-systems",
+      "label": "Unauthenticated Systems"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
+    },
+    {
+      "slug": "x25519",
+      "label": "X25519"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "zk-starks-ben-sasson-bentov-horesh-riabzev",
+      "label": "zk-STARKs Ben-Sasson Bentov Horesh Riabzev"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    },
+    {
+      "slug": "standards-compliance",
+      "label": "Standards Compliance"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

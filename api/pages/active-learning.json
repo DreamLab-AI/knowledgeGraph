@@ -1,0 +1,404 @@
+{
+  "id": "urn:visionflow:page:f7bc70d86543bf99fe83fc9cdc6633fafbaa0bd5a87c64a84f6cb34812641b96",
+  "title": "Active Learning",
+  "slug": "active-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:active-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident predictions, query-by-committee maximizing ensemble disagreement, expected model change targeting highest gradient impact, expected error reduction minimizing generalization loss, variance reduction lowering prediction uncertainty, density-weighted methods balancing informativeness with representativeness to avoid outliers) applied across learning scenarios (pool-based batch selection from large unlabeled repositories 10K-1M+ examples prevalent in computer vision/NLP, stream-based sequential binary accept/reject decisions for real-time applications, query synthesis generating artificial examples rarely used due to unnaturalness), achieving 50-99% labeling cost reduction by requiring 10-100\u00d7 less labeled data for equivalent performance compared to passive random sampling particularly critical in domains with expensive expert annotation (medical imaging radiologists $200-$500/hour annotating 10",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-efficient-learning",
+      "label": "Data-Efficient Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-in-the-loop-learning",
+      "label": "Human-in-the-Loop Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:interactive-learning",
+      "label": "Interactive Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.88,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "id": "urn:visionflow:linked:diversity-measure",
+        "label": "Diversity Measure"
+      },
+      {
+        "id": "urn:visionflow:linked:label-budget",
+        "label": "Label Budget"
+      },
+      {
+        "id": "urn:visionflow:linked:query-strategy",
+        "label": "Query Strategy"
+      },
+      {
+        "id": "urn:visionflow:linked:stopping-criterion",
+        "label": "Stopping Criterion"
+      },
+      {
+        "id": "urn:visionflow:linked:unlabeled-data-pool",
+        "label": "Unlabeled Data Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:base-learner",
+        "label": "Base Learner"
+      },
+      {
+        "id": "urn:visionflow:linked:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:visionflow:linked:human-oracle",
+        "label": "Human Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:query-selection-algorithm",
+        "label": "Query Selection Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:unlabeled-data",
+        "label": "Unlabeled Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cost-effective-annotation",
+        "label": "Cost-Effective Annotation"
+      },
+      {
+        "id": "urn:visionflow:linked:expert-knowledge-elicitation",
+        "label": "Expert Knowledge Elicitation"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-model-development",
+        "label": "Rapid Model Development"
+      },
+      {
+        "id": "urn:visionflow:linked:sample-complexity-reduction",
+        "label": "Sample Complexity Reduction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-efficient-learning",
+        "label": "Data-Efficient Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:density-weighted-methods",
+        "label": "Density-Weighted Methods"
+      },
+      {
+        "id": "urn:visionflow:linked:expected-error-reduction",
+        "label": "Expected Error Reduction"
+      },
+      {
+        "id": "urn:visionflow:linked:expected-model-change",
+        "label": "Expected Model Change"
+      },
+      {
+        "id": "urn:visionflow:linked:query-by-committee",
+        "label": "Query-by-Committee"
+      },
+      {
+        "id": "urn:visionflow:linked:uncertainty-sampling",
+        "label": "Uncertainty Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:variance-reduction",
+        "label": "Variance Reduction"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "ash-et-al-2020-deep-batch-active-learning",
+      "label": "Ash et al. 2020 Deep Batch Active Learning"
+    },
+    {
+      "slug": "base-learner",
+      "label": "Base Learner"
+    },
+    {
+      "slug": "cohn-et-al-1996-improving-generalization-with-active-learning",
+      "label": "Cohn et al. 1996 Improving Generalization with Active Learning"
+    },
+    {
+      "slug": "cost-effective-annotation",
+      "label": "Cost-Effective Annotation"
+    },
+    {
+      "slug": "dasgupta-2011-two-faces-of-active-learning",
+      "label": "Dasgupta 2011 Two Faces of Active Learning"
+    },
+    {
+      "slug": "density-weighted-methods",
+      "label": "Density-Weighted Methods"
+    },
+    {
+      "slug": "diversity-measure",
+      "label": "Diversity Measure"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "expected-error-reduction",
+      "label": "Expected Error Reduction"
+    },
+    {
+      "slug": "expected-model-change",
+      "label": "Expected Model Change"
+    },
+    {
+      "slug": "expert-knowledge-elicitation",
+      "label": "Expert Knowledge Elicitation"
+    },
+    {
+      "slug": "freund-et-al-1997-selective-sampling",
+      "label": "Freund et al. 1997 Selective Sampling"
+    },
+    {
+      "slug": "gal-et-al-2017-deep-bayesian-active-learning",
+      "label": "Gal et al. 2017 Deep Bayesian Active Learning"
+    },
+    {
+      "slug": "google-research-active-learning",
+      "label": "Google Research Active Learning"
+    },
+    {
+      "slug": "haussler-et-al-1994-decision-theoretic-generalization-pac",
+      "label": "Haussler et al. 1994 Decision Theoretic Generalization PAC"
+    },
+    {
+      "slug": "human-oracle",
+      "label": "Human Oracle"
+    },
+    {
+      "slug": "icml-interactive-learning-track",
+      "label": "ICML Interactive Learning Track"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "jmlr-active-learning-special-issue",
+      "label": "JMLR Active Learning Special Issue"
+    },
+    {
+      "slug": "label-budget",
+      "label": "Label Budget"
+    },
+    {
+      "slug": "lewis-and-gale-1994-sequential-algorithm",
+      "label": "Lewis & Gale 1994 Sequential Algorithm"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "mod-al-python-library",
+      "label": "modAL Python Library"
+    },
+    {
+      "slug": "neur-ips-active-learning-workshop",
+      "label": "NeurIPS Active Learning Workshop"
+    },
+    {
+      "slug": "pac-learning-theory",
+      "label": "PAC Learning Theory"
+    },
+    {
+      "slug": "query-by-committee",
+      "label": "Query-by-Committee"
+    },
+    {
+      "slug": "query-selection-algorithm",
+      "label": "Query Selection Algorithm"
+    },
+    {
+      "slug": "query-strategy",
+      "label": "Query Strategy"
+    },
+    {
+      "slug": "rapid-model-development",
+      "label": "Rapid Model Development"
+    },
+    {
+      "slug": "sample-complexity-reduction",
+      "label": "Sample Complexity Reduction"
+    },
+    {
+      "slug": "scikit-learn-documentation",
+      "label": "scikit-learn Documentation"
+    },
+    {
+      "slug": "sener-and-savarese-2018-core-set-selection",
+      "label": "Sener & Savarese 2018 Core-Set Selection"
+    },
+    {
+      "slug": "settles-2009-active-learning-literature-survey",
+      "label": "Settles 2009 Active Learning Literature Survey"
+    },
+    {
+      "slug": "settles-and-craven-2008-multiple-instance-active-learning",
+      "label": "Settles & Craven 2008 Multiple-Instance Active Learning"
+    },
+    {
+      "slug": "seung-et-al-1992-query-by-committee",
+      "label": "Seung et al. 1992 Query by Committee"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "stopping-criterion",
+      "label": "Stopping Criterion"
+    },
+    {
+      "slug": "tong-and-koller-2001-svm-active-learning",
+      "label": "Tong & Koller 2001 SVM Active Learning"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "uncertainty-sampling",
+      "label": "Uncertainty Sampling"
+    },
+    {
+      "slug": "unlabeled-data",
+      "label": "Unlabeled Data"
+    },
+    {
+      "slug": "unlabeled-data-pool",
+      "label": "Unlabeled Data Pool"
+    },
+    {
+      "slug": "variance-reduction",
+      "label": "Variance Reduction"
+    },
+    {
+      "slug": "version-space-learning",
+      "label": "Version Space Learning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "data-efficient-learning",
+      "label": "Data-Efficient Learning"
+    },
+    {
+      "slug": "human-in-the-loop-learning",
+      "label": "Human-in-the-Loop Learning"
+    },
+    {
+      "slug": "interactive-learning",
+      "label": "Interactive Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "human-in-the-loop-learning",
+      "label": "Human-in-the- Loop Learning"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

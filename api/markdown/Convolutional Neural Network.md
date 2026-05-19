@@ -1,22 +1,252 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ConvolutionalNeuralNetwork
-uri:: urn:visionclaw:concept:artificial-intelligence:convolutional-neural-network
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:convolutional-neural-network
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Convolutional Neural Network
-content-hash:: sha256-12-5c6826c79ea5
-legacy-term-id:: AI-0032
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ConvolutionalNeuralNetwork
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:convolutional-neural-network
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Convolutional Neural Network
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248",
+  "@type": "Page",
+  "vc:slug": "convolutional-neural-network",
+  "title": "Convolutional Neural Network",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:iso-iec-22989-2022",
+      "vc:label": "ISO/IEC 22989:2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23053-2022",
+      "vc:label": "ISO/IEC 23053:2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-100-3",
+      "vc:label": "NIST AI 100-3"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles",
+      "vc:label": "OECD AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5c6826c79ea5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ConvolutionalNeuralNetwork"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0032"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Convolutional Neural Network"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:convolutional-neural-network"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:convolutional-neural-network"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+  "@type": "OntologyClass",
+  "label": "Convolutional Neural Network",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:convolutional-neural-network:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ISO/IEC 22989:2022]]",
+      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23053:2022]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23053-2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI 100-3]]",
+      "resolved": "urn:visionflow:linked:nist-ai-100-3",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI RMF]]",
+      "resolved": "urn:visionflow:linked:nist-ai-rmf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD AI Principles]]",
+      "resolved": "urn:visionflow:linked:oecd-ai-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ### Primary Definition

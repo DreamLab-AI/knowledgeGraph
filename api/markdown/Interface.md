@@ -1,20 +1,221 @@
-iri:: http://narrativegoldmine.com/blockchain#Interface
-uri:: urn:visionclaw:concept:blockchain:interface
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:interface
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Interface
-content-hash:: sha256-12-6927112ab2d0
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Interface
+legacy_uri:: urn:visionclaw:concept:blockchain:interface
 public:: true
+
+# Interface
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097",
+  "@type": "Page",
+  "vc:slug": "interface",
+  "title": "Interface",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:abstraction",
+      "vc:label": "Abstraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:adapter",
+      "vc:label": "Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:api",
+      "vc:label": "API"
+    },
+    {
+      "@id": "urn:visionflow:linked:contract",
+      "vc:label": "Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol",
+      "vc:label": "Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6927112ab2d0"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Interface"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Interface"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:interface"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:interface"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:interface",
+  "@type": "OntologyClass",
+  "label": "Interface",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Interface is a concept within the bc domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:interface:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Abstraction]]",
+      "resolved": "urn:visionflow:linked:abstraction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adapter]]",
+      "resolved": "urn:visionflow:linked:adapter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[API]]",
+      "resolved": "urn:visionflow:linked:api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Contract]]",
+      "resolved": "urn:visionflow:linked:contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Protocol]]",
+      "resolved": "urn:visionflow:linked:protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Interface is a concept within the bc domain.

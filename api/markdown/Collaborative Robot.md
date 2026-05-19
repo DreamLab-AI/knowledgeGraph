@@ -1,21 +1,341 @@
-iri:: http://narrativegoldmine.com/robotics#CollaborativeRobot
-uri:: urn:visionclaw:concept:robotics:collaborative-robot
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:collaborative-robot
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Collaborative Robot
-content-hash:: sha256-12-c3251318bcaa
-legacy-term-id:: RB-0856
-status:: draft
-maturity:: draft
-quality-score:: 0.62
-authority-score:: 0.15
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#CollaborativeRobot
+legacy_uri:: urn:visionclaw:concept:robotics:collaborative-robot
 public:: true
+
+# Collaborative Robot
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf",
+  "@type": "Page",
+  "vc:slug": "collaborative-robot",
+  "title": "Collaborative Robot",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-manufacturing-system",
+      "vc:label": "Collaborative Manufacturing System"
+    },
+    {
+      "@id": "urn:visionflow:linked:flexible-assembly",
+      "vc:label": "Flexible Assembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-robot-collaboration",
+      "vc:label": "Human-Robot Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-ts-15066-compliance",
+      "vc:label": "ISO/TS 15066 Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:rapid-deployment",
+      "vc:label": "Rapid Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:reduced-labour-costs",
+      "vc:label": "Reduced Labour Costs"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-controller",
+      "vc:label": "Safety Controller"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:force-torque-sensor",
+      "vc:label": "Force Torque Sensor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:industrial-robot",
+      "vc:label": "Industrial Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.15"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c3251318bcaa"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#CollaborativeRobot"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0856"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Collaborative Robot"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.62"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:collaborative-robot"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:collaborative-robot"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:collaborative-robot",
+  "@type": "OntologyClass",
+  "label": "Collaborative Robot",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:industrial-robot",
+      "vc:label": "Industrial Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Collaborative Robot** (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable [[Human-Robot Collaboration]] in shared manufacturing and assembly environments.",
+  "vc:qualityScore": {
+    "@value": "0.62",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.15",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-manufacturing-system",
+      "vc:label": "Collaborative Manufacturing System"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:iso-ts-15066-compliance",
+      "vc:label": "ISO/TS 15066 Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-controller",
+      "vc:label": "Safety Controller"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:force-torque-sensor",
+      "vc:label": "Force Torque Sensor"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:flexible-assembly",
+      "vc:label": "Flexible Assembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:rapid-deployment",
+      "vc:label": "Rapid Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:reduced-labour-costs",
+      "vc:label": "Reduced Labour Costs"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:collaborative-robot:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Collaborative Manufacturing System]]",
+      "resolved": "urn:visionflow:linked:collaborative-manufacturing-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Flexible Assembly]]",
+      "resolved": "urn:visionflow:linked:flexible-assembly",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human-Robot Collaboration]]",
+      "resolved": "urn:visionflow:linked:human-robot-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/TS 15066 Compliance]]",
+      "resolved": "urn:visionflow:linked:iso-ts-15066-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rapid Deployment]]",
+      "resolved": "urn:visionflow:linked:rapid-deployment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reduced Labour Costs]]",
+      "resolved": "urn:visionflow:linked:reduced-labour-costs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Controller]]",
+      "resolved": "urn:visionflow:linked:safety-controller",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Force Torque Sensor]]",
+      "resolved": "urn:visionflow:owl:class:force-torque-sensor",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Industrial Robot]]",
+      "resolved": "urn:visionflow:owl:class:industrial-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Collaborative Robot** (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable [[Human-Robot Collaboration]] in shared manufacturing and assembly environments.

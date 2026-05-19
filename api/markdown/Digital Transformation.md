@@ -1,24 +1,292 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalTransformation
-uri:: urn:visionclaw:concept:spatial-computing:digital-transformation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-transformation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Transformation
-content-hash:: sha256-12-2a9d0d7bb0c0
-legacy-term-id:: MV-9873
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalTransformation
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-transformation
 public:: true
+
+# Digital Transformation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810",
+  "@type": "Page",
+  "vc:slug": "digital-transformation",
+  "title": "Digital Transformation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:business-innovation",
+      "vc:label": "Business Innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:change-management",
+      "vc:label": "Change Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-experience",
+      "vc:label": "Customer Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:operational-efficiency",
+      "vc:label": "Operational Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-analytics",
+      "vc:label": "Data Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:organizational-change",
+      "vc:label": "Organizational Change"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2a9d0d7bb0c0"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalTransformation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9873"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Transformation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-transformation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-transformation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-transformation",
+  "@type": "OntologyClass",
+  "label": "Digital Transformation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:organizational-change",
+      "vc:label": "Organizational Change"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse. bridges-to:: [[Computer Vision]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:change-management",
+      "vc:label": "Change Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-analytics",
+      "vc:label": "Data Analytics"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:business-innovation",
+      "vc:label": "Business Innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-experience",
+      "vc:label": "Customer Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:operational-efficiency",
+      "vc:label": "Operational Efficiency"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-transformation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Business Innovation]]",
+      "resolved": "urn:visionflow:linked:business-innovation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Change Management]]",
+      "resolved": "urn:visionflow:linked:change-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Customer Experience]]",
+      "resolved": "urn:visionflow:linked:customer-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Operational Efficiency]]",
+      "resolved": "urn:visionflow:linked:operational-efficiency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cloud Computing]]",
+      "resolved": "urn:visionflow:owl:class:cloud-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Analytics]]",
+      "resolved": "urn:visionflow:owl:class:data-analytics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Organizational Change]]",
+      "resolved": "urn:visionflow:owl:class:organizational-change",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.

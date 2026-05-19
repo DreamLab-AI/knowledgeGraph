@@ -1,0 +1,600 @@
+{
+  "id": "urn:visionflow:page:4580539daaf585361d0eb78dffdfa3f4050bac3688a44e451b4f659e84e59f48",
+  "title": "fast.ai",
+  "slug": "fast-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fast-ai",
+  "domain": "artificial-intelligence",
+  "definition": "**fast.ai** is a research lab, online course series, and open-source Python deep learning library founded in 2016 by Jeremy Howard (former president and chief scientist of Kaggle, founder of FastMail and Optimal Decisions Group) and Rachel Thomas (UCSF / University of San Francisco data ethics researcher), built on top of [[PyTorch]] (PyTorch 1.0 for fastai v1 in 2018, fully refactored for the v2 release accompanied by the Howard-Gugger 2020 *Information* journal paper \"fastai: A Layered API for Deep Learning\") to make state-of-the-art deep learning practically accessible to working coders without requiring graduate-level mathematics prerequisites; the project comprises three intertwined deliverables: (1) **the fastai software library** providing a layered API over PyTorch with a high-level `Learner` abstraction handling training loops, callbacks, mixed-precision, distributed training and model export, a `DataBlock` API for declarative data pipeline construction across vision/text/tabular/collaborative-filtering domains, a Callback system implementing the 1cycle learning-rate scheduler (Smith 2018), discriminative learning rates (different learning rates for different layer groups)",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:applied-ai-research-lab",
+      "label": "Applied AI Research Lab"
+    },
+    {
+      "id": "urn:visionflow:linked:deep-learning-library",
+      "label": "Deep Learning Library"
+    },
+    {
+      "id": "urn:visionflow:linked:educational-platform",
+      "label": "Educational Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:open-source-ml-framework",
+      "label": "Open Source ML Framework"
+    },
+    {
+      "id": "urn:visionflow:linked:py-torch-ecosystem-project",
+      "label": "PyTorch Ecosystem Project"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:answer-ai",
+        "label": "Answer.AI"
+      },
+      {
+        "id": "urn:visionflow:linked:callback-system",
+        "label": "Callback System"
+      },
+      {
+        "id": "urn:visionflow:linked:data-block-api",
+        "label": "DataBlock API"
+      },
+      {
+        "id": "urn:visionflow:linked:fastai-library",
+        "label": "fastai Library"
+      },
+      {
+        "id": "urn:visionflow:linked:learner-abstraction",
+        "label": "Learner Abstraction"
+      },
+      {
+        "id": "urn:visionflow:linked:nbdev",
+        "label": "nbdev"
+      },
+      {
+        "id": "urn:visionflow:linked:practical-deep-learning-for-coders-course",
+        "label": "Practical Deep Learning for Coders Course"
+      },
+      {
+        "id": "urn:visionflow:linked:ulmfi-t",
+        "label": "ULMFiT"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cuda-gpu",
+        "label": "CUDA GPU"
+      },
+      {
+        "id": "urn:visionflow:linked:jupyter-notebook",
+        "label": "Jupyter Notebook"
+      },
+      {
+        "id": "urn:visionflow:linked:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:visionflow:linked:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:beginner-friendly-deep-learning",
+        "label": "Beginner-Friendly Deep Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:code-first-education",
+        "label": "Code-First Education"
+      },
+      {
+        "id": "urn:visionflow:linked:democratised-deep-learning",
+        "label": "Democratised Deep Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:production-ready-defaults",
+        "label": "Production-Ready Defaults"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-learning-workflows",
+        "label": "Transfer Learning Workflows"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:1cycle-learning-rate-schedule",
+        "label": "1cycle Learning Rate Schedule"
+      },
+      {
+        "id": "urn:visionflow:linked:discriminative-learning-rates",
+        "label": "Discriminative Learning Rates"
+      },
+      {
+        "id": "urn:visionflow:linked:frozen-unfrozen-fine-tuning",
+        "label": "Frozen-Unfrozen Fine-Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:layered-api-design",
+        "label": "Layered API Design"
+      },
+      {
+        "id": "urn:visionflow:linked:mixup-augmentation",
+        "label": "Mixup Augmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:test-time-augmentation",
+        "label": "Test-Time Augmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:label-smoothing",
+        "label": "Label Smoothing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "1cycle-learning-rate-schedule",
+      "label": "1cycle Learning Rate Schedule"
+    },
+    {
+      "slug": "acl",
+      "label": "ACL"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer.AI"
+    },
+    {
+      "slug": "answer-ai-website",
+      "label": "Answer.AI Website"
+    },
+    {
+      "slug": "applied-ai-research-lab",
+      "label": "Applied AI Research Lab"
+    },
+    {
+      "slug": "audio-classification",
+      "label": "Audio Classification"
+    },
+    {
+      "slug": "beginner-friendly-deep-learning",
+      "label": "Beginner-Friendly Deep Learning"
+    },
+    {
+      "slug": "brown-et-al-2020-gpt-3",
+      "label": "Brown et al. 2020 GPT-3"
+    },
+    {
+      "slug": "callback-system",
+      "label": "Callback System"
+    },
+    {
+      "slug": "claudette",
+      "label": "Claudette"
+    },
+    {
+      "slug": "code-first-education",
+      "label": "Code-First Education"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "cosine-annealing",
+      "label": "Cosine Annealing"
+    },
+    {
+      "slug": "cuda-gpu",
+      "label": "CUDA GPU"
+    },
+    {
+      "slug": "data-block-api",
+      "label": "DataBlock API"
+    },
+    {
+      "slug": "deep-learning-library",
+      "label": "Deep Learning Library"
+    },
+    {
+      "slug": "democratised-deep-learning",
+      "label": "Democratised Deep Learning"
+    },
+    {
+      "slug": "dettmers-belkada-howard-2024-fsdp-qlo-ra",
+      "label": "Dettmers Belkada Howard 2024 FSDP-QLoRA"
+    },
+    {
+      "slug": "dettmers-et-al-2023-qlo-ra",
+      "label": "Dettmers et al. 2023 QLoRA"
+    },
+    {
+      "slug": "devlin-et-al-2019-bert",
+      "label": "Devlin et al. 2019 BERT"
+    },
+    {
+      "slug": "discriminative-learning-rates",
+      "label": "Discriminative Learning Rates"
+    },
+    {
+      "slug": "education-domain",
+      "label": "EducationDomain"
+    },
+    {
+      "slug": "education-layer",
+      "label": "EducationLayer"
+    },
+    {
+      "slug": "educational-platform",
+      "label": "Educational Platform"
+    },
+    {
+      "slug": "falcon-2019-py-torch-lightning",
+      "label": "Falcon 2019 PyTorch Lightning"
+    },
+    {
+      "slug": "fast-html",
+      "label": "FastHTML"
+    },
+    {
+      "slug": "fastai-documentation-v2-7",
+      "label": "fastai Documentation v2.7"
+    },
+    {
+      "slug": "fastai-library",
+      "label": "fastai Library"
+    },
+    {
+      "slug": "fastcore",
+      "label": "fastcore"
+    },
+    {
+      "slug": "fastcore-documentation",
+      "label": "fastcore Documentation"
+    },
+    {
+      "slug": "fastprogress",
+      "label": "fastprogress"
+    },
+    {
+      "slug": "framework-layer",
+      "label": "FrameworkLayer"
+    },
+    {
+      "slug": "frozen-unfrozen-fine-tuning",
+      "label": "Frozen-Unfrozen Fine-Tuning"
+    },
+    {
+      "slug": "fsdp-qlo-ra",
+      "label": "FSDP-QLoRA"
+    },
+    {
+      "slug": "howard-2018-ulmfi-t-blog-announcement",
+      "label": "Howard 2018 ULMFiT Blog Announcement"
+    },
+    {
+      "slug": "howard-2024-claudette-answer-ai",
+      "label": "Howard 2024 Claudette Answer.AI"
+    },
+    {
+      "slug": "howard-2024-fast-html",
+      "label": "Howard 2024 FastHTML"
+    },
+    {
+      "slug": "howard-and-gugger-2020-deep-learning-for-coders-book",
+      "label": "Howard & Gugger 2020 Deep Learning for Coders Book"
+    },
+    {
+      "slug": "howard-and-gugger-2020-fastai-layered-api",
+      "label": "Howard & Gugger 2020 fastai Layered API"
+    },
+    {
+      "slug": "howard-and-ruder-2018-ulmfi-t",
+      "label": "Howard & Ruder 2018 ULMFiT"
+    },
+    {
+      "slug": "hugging-face-accelerate",
+      "label": "Hugging Face Accelerate"
+    },
+    {
+      "slug": "hugging-face-transformers",
+      "label": "Hugging Face Transformers"
+    },
+    {
+      "slug": "iclr",
+      "label": "ICLR"
+    },
+    {
+      "slug": "jupyter-notebook",
+      "label": "Jupyter Notebook"
+    },
+    {
+      "slug": "keras",
+      "label": "Keras"
+    },
+    {
+      "slug": "layered-api-design",
+      "label": "Layered API Design"
+    },
+    {
+      "slug": "learner-abstraction",
+      "label": "Learner Abstraction"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "matplotlib",
+      "label": "Matplotlib"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "mixup-augmentation",
+      "label": "Mixup Augmentation"
+    },
+    {
+      "slug": "mxnet",
+      "label": "MXNet"
+    },
+    {
+      "slug": "nbdev",
+      "label": "nbdev"
+    },
+    {
+      "slug": "nbdev-documentation",
+      "label": "nbdev Documentation"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "nlp",
+      "label": "NLP"
+    },
+    {
+      "slug": "num-py",
+      "label": "NumPy"
+    },
+    {
+      "slug": "open-source-ml-framework",
+      "label": "Open Source ML Framework"
+    },
+    {
+      "slug": "pandas",
+      "label": "Pandas"
+    },
+    {
+      "slug": "paszke-et-al-2019-py-torch-neur-ips",
+      "label": "Paszke et al. 2019 PyTorch NeurIPS"
+    },
+    {
+      "slug": "pep-8",
+      "label": "PEP 8"
+    },
+    {
+      "slug": "peters-et-al-2018-elmo",
+      "label": "Peters et al. 2018 ELMo"
+    },
+    {
+      "slug": "pillow",
+      "label": "Pillow"
+    },
+    {
+      "slug": "practical-deep-learning-for-coders-2022",
+      "label": "Practical Deep Learning for Coders 2022"
+    },
+    {
+      "slug": "practical-deep-learning-for-coders-course",
+      "label": "Practical Deep Learning for Coders Course"
+    },
+    {
+      "slug": "pratt-1993-discriminability-based-transfer",
+      "label": "Pratt 1993 Discriminability-Based Transfer"
+    },
+    {
+      "slug": "production-ready-defaults",
+      "label": "Production-Ready Defaults"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "py-torch-ecosystem-project",
+      "label": "PyTorch Ecosystem Project"
+    },
+    {
+      "slug": "py-torch-lightning",
+      "label": "PyTorch Lightning"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "radford-et-al-2018-gpt-1",
+      "label": "Radford et al. 2018 GPT-1"
+    },
+    {
+      "slug": "rajbhandari-et-al-2020-ze-ro",
+      "label": "Rajbhandari et al. 2020 ZeRO"
+    },
+    {
+      "slug": "rapid-prototyping",
+      "label": "Rapid Prototyping"
+    },
+    {
+      "slug": "raw-py-torch",
+      "label": "Raw PyTorch"
+    },
+    {
+      "slug": "re-lu-activation",
+      "label": "ReLU Activation"
+    },
+    {
+      "slug": "res-net",
+      "label": "ResNet"
+    },
+    {
+      "slug": "ruder-2019-ph-d-thesis-neural-transfer-learning",
+      "label": "Ruder 2019 PhD Thesis Neural Transfer Learning"
+    },
+    {
+      "slug": "semantic-versioning",
+      "label": "Semantic Versioning"
+    },
+    {
+      "slug": "smith-2017-cyclical-learning-rates",
+      "label": "Smith 2017 Cyclical Learning Rates"
+    },
+    {
+      "slug": "smith-2018-disciplined-approach-hyperparameters",
+      "label": "Smith 2018 Disciplined Approach Hyperparameters"
+    },
+    {
+      "slug": "spa-cy",
+      "label": "spaCy"
+    },
+    {
+      "slug": "szegedy-et-al-2016-label-smoothing",
+      "label": "Szegedy et al. 2016 Label Smoothing"
+    },
+    {
+      "slug": "tabular-learning",
+      "label": "Tabular Learning"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "test-time-augmentation",
+      "label": "Test-Time Augmentation"
+    },
+    {
+      "slug": "thomas-2017-computational-linear-algebra",
+      "label": "Thomas 2017 Computational Linear Algebra"
+    },
+    {
+      "slug": "thomas-2019-bias-in-word-embeddings",
+      "label": "Thomas 2019 Bias in Word Embeddings"
+    },
+    {
+      "slug": "thomas-2020-practical-data-ethics",
+      "label": "Thomas 2020 Practical Data Ethics"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "transfer-learning-workflows",
+      "label": "Transfer Learning Workflows"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "ulmfi-t",
+      "label": "ULMFiT"
+    },
+    {
+      "slug": "wolf-et-al-2020-hugging-face-transformers",
+      "label": "Wolf et al. 2020 Hugging Face Transformers"
+    },
+    {
+      "slug": "zhang-et-al-2018-mixup",
+      "label": "Zhang et al. 2018 Mixup"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "label-smoothing",
+      "label": "Label Smoothing"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    }
+  ]
+}

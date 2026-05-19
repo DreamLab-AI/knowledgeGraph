@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:e23aa4ef06842a9141edbacaf2b528836620075279e8f665e5c11f608a05ee0b",
+  "title": "Virtual Factory",
+  "slug": "virtual-factory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-factory",
+  "domain": "spatial-computing",
+  "definition": "A physically accurate digital twin representation of a manufacturing facility that enables modeling, simulation, analysis, and optimization of production processes, resources, and operations without requiring physical prototypes or pilot plants.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    }
+  ]
+}

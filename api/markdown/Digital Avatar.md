@@ -1,24 +1,417 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalAvatar
-uri:: urn:visionclaw:concept:spatial-computing:digital-avatar
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-avatar
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Avatar
-content-hash:: sha256-12-60a1fa27fa05
-legacy-term-id:: MV-3008
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalAvatar
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-avatar
 public:: true
+
+# Digital Avatar
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18",
+  "@type": "Page",
+  "vc:slug": "digital-avatar",
+  "title": "Digital Avatar",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:behavioural-agency",
+      "vc:label": "Behavioural Agency"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-fashion",
+      "vc:label": "DigitalFashion"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-animated-by",
+      "vc:label": "dt:animatedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-authenticated-by",
+      "vc:label": "dt:authenticatedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enhanced-by",
+      "vc:label": "dt:enhancedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-owned-via",
+      "vc:label": "dt:ownedVia"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-traded-on",
+      "vc:label": "dt:tradedOn"
+    },
+    {
+      "@id": "urn:visionflow:linked:embodied-presence",
+      "vc:label": "Embodied Presence"
+    },
+    {
+      "@id": "urn:visionflow:linked:has-appearance",
+      "vc:label": "hasAppearance"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-standards-forum",
+      "vc:label": "Metaverse Standards Forum"
+    },
+    {
+      "@id": "urn:visionflow:linked:nft",
+      "vc:label": "NFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:nftmarketplace",
+      "vc:label": "NFTMarketplace"
+    },
+    {
+      "@id": "urn:visionflow:linked:performs-action",
+      "vc:label": "performsAction"
+    },
+    {
+      "@id": "urn:visionflow:linked:represents-user",
+      "vc:label": "representsUser"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-environments",
+      "vc:label": "Virtual Environments"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-customisation",
+      "vc:label": "Visual Customisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:wears-item",
+      "vc:label": "wearsItem"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-customization",
+      "vc:label": "AvatarCustomization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-identity",
+      "vc:label": "DigitalIdentity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "GenerativeAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-capture",
+      "vc:label": "MotionCapture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-presence",
+      "vc:label": "SocialPresence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-identity",
+      "vc:label": "VirtualIdentity"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-60a1fa27fa05"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalAvatar"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3008"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Avatar"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-avatar"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-avatar"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-avatar",
+  "@type": "OntologyClass",
+  "label": "Digital Avatar",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-representation",
+      "vc:label": "Virtual Representation"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]]. Digital avatars enable social presence, facilitate user interaction, and serve as persistent identity anchors within [[Metaverse]] platforms and immersive applications. bridges-to:: [[DID Nostr Identity]]",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-avatar:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Behavioural Agency]]",
+      "resolved": "urn:visionflow:linked:behavioural-agency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DigitalFashion]]",
+      "resolved": "urn:visionflow:linked:digital-fashion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:animatedBy]]",
+      "resolved": "urn:visionflow:linked:dt-animated-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:authenticatedBy]]",
+      "resolved": "urn:visionflow:linked:dt-authenticated-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enhancedBy]]",
+      "resolved": "urn:visionflow:linked:dt-enhanced-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:ownedVia]]",
+      "resolved": "urn:visionflow:linked:dt-owned-via",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:tradedOn]]",
+      "resolved": "urn:visionflow:linked:dt-traded-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Embodied Presence]]",
+      "resolved": "urn:visionflow:linked:embodied-presence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hasAppearance]]",
+      "resolved": "urn:visionflow:linked:has-appearance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Standards Forum]]",
+      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NFT]]",
+      "resolved": "urn:visionflow:linked:nft",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NFTMarketplace]]",
+      "resolved": "urn:visionflow:linked:nftmarketplace",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[performsAction]]",
+      "resolved": "urn:visionflow:linked:performs-action",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[representsUser]]",
+      "resolved": "urn:visionflow:linked:represents-user",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Environments]]",
+      "resolved": "urn:visionflow:linked:virtual-environments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Visual Customisation]]",
+      "resolved": "urn:visionflow:linked:visual-customisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[wearsItem]]",
+      "resolved": "urn:visionflow:linked:wears-item",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AvatarCustomization]]",
+      "resolved": "urn:visionflow:owl:class:avatar-customization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalIdentity]]",
+      "resolved": "urn:visionflow:owl:class:digital-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GenerativeAI]]",
+      "resolved": "urn:visionflow:owl:class:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MotionCapture]]",
+      "resolved": "urn:visionflow:owl:class:motion-capture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SocialPresence]]",
+      "resolved": "urn:visionflow:owl:class:social-presence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualIdentity]]",
+      "resolved": "urn:visionflow:owl:class:virtual-identity",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]]. Digital avatars enable social presence, facilitate user interaction, and serve as persistent identity anchors within [[Metaverse]] platforms and immersive applications.

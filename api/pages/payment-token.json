@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:13c6309bef5c65db10a643065774635dad921ad82e7029a06a8b8474de7ff10f",
+  "title": "Payment Token",
+  "slug": "payment-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:payment-token",
+  "domain": "blockchain",
+  "definition": "Tokens used for payments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "smart-royalty-contract",
+      "label": "Smart Royalty Contract"
+    }
+  ]
+}

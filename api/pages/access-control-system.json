@@ -1,0 +1,848 @@
+{
+  "id": "urn:visionflow:page:02e32028ffc08aac2e8ecedcfc7e25b88d72127b7df8f02aacfbf564f462af64",
+  "title": "Access Control System",
+  "slug": "access-control-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:access-control-system",
+  "domain": "security",
+  "definition": "An [[Access Control System]] is the assemblage of policies, decision engines, enforcement points, identity providers, attribute sources, audit pipelines, and cryptographic primitives that determines whether a subject (human user, service account, autonomous agent, device) is permitted to perform a requested operation (read, write, execute, delegate, administer) against a protected resource (file, record, API endpoint, kernel object, physical door, network flow), evaluated through a formal authorisation model spanning Discretionary Access Control (DAC, owner-driven ACLs as in POSIX/NTFS), Mandatory Access Control (MAC, lattice-based confidentiality enforced by [[Bell-LaPadula Model]] no-read-up/no-write-down, integrity by [[Biba Model]] no-read-down/no-write-up, conflict-of-interest by [[Brewer-Nash Model]] Chinese Wall, transaction integrity by [[Clark-Wilson Model]] well-formed transactions and separation of duty), Role-Based Access Control (RBAC, ANSI INCITS 359-2012 four-level RBAC0-RBAC3 with role hierarchies, constraints, sessions, deployed in 78%+ enterprise IAM stacks via Active Directory security groups, Okta groups, AWS IAM roles), Attribute-Based Access Control (ABAC, NIS",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:authorisation-mechanism",
+      "label": "Authorisation Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:governance-control",
+      "label": "Governance Control"
+    },
+    {
+      "id": "urn:visionflow:linked:information-security-system",
+      "label": "Information Security System"
+    },
+    {
+      "id": "urn:visionflow:linked:security-control",
+      "label": "Security Control"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:attribute-evaluation",
+        "label": "Attribute Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-store",
+        "label": "Identity Store"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-decision-point",
+        "label": "Policy Decision Point"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-information-point",
+        "label": "Policy Information Point"
+      },
+      {
+        "id": "urn:visionflow:linked:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:token-service",
+        "label": "Token Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:visionflow:linked:trusted-time-source",
+        "label": "Trusted Time Source"
+      },
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:auditability",
+        "label": "Auditability"
+      },
+      {
+        "id": "urn:visionflow:linked:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "id": "urn:visionflow:linked:separation-of-duties",
+        "label": "Separation of Duties"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:abac",
+        "label": "ABAC"
+      },
+      {
+        "id": "urn:visionflow:linked:capability-based-security",
+        "label": "Capability-Based Security"
+      },
+      {
+        "id": "urn:visionflow:linked:dac",
+        "label": "DAC"
+      },
+      {
+        "id": "urn:visionflow:linked:mac",
+        "label": "MAC"
+      },
+      {
+        "id": "urn:visionflow:linked:pbac",
+        "label": "PBAC"
+      },
+      {
+        "id": "urn:visionflow:linked:rbac",
+        "label": "RBAC"
+      },
+      {
+        "id": "urn:visionflow:linked:re-bac",
+        "label": "ReBAC"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abac",
+      "label": "ABAC"
+    },
+    {
+      "slug": "active-directory",
+      "label": "Active Directory"
+    },
+    {
+      "slug": "anderson-2020-security-engineering-third-edition",
+      "label": "Anderson 2020 Security Engineering Third Edition"
+    },
+    {
+      "slug": "ansi-incits-359",
+      "label": "ANSI INCITS 359"
+    },
+    {
+      "slug": "ansi-incits-359-2012-rbac-standard",
+      "label": "ANSI INCITS 359-2012 RBAC Standard"
+    },
+    {
+      "slug": "attribute-evaluation",
+      "label": "Attribute Evaluation"
+    },
+    {
+      "slug": "audit-log",
+      "label": "Audit Log"
+    },
+    {
+      "slug": "auditability",
+      "label": "Auditability"
+    },
+    {
+      "slug": "auth0",
+      "label": "Auth0"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "authorisation-mechanism",
+      "label": "Authorisation Mechanism"
+    },
+    {
+      "slug": "aws-iam",
+      "label": "AWS IAM"
+    },
+    {
+      "slug": "aws-iam-identity-center",
+      "label": "AWS IAM Identity Center"
+    },
+    {
+      "slug": "azure-rbac",
+      "label": "Azure RBAC"
+    },
+    {
+      "slug": "backes-et-al-2018-zelkova-smt-aws-access-policies",
+      "label": "Backes et al 2018 Zelkova SMT AWS Access Policies"
+    },
+    {
+      "slug": "bell-la-padula-1973-secure-computer-systems-mathematical-foundations",
+      "label": "Bell-LaPadula 1973 Secure Computer Systems Mathematical Foundations"
+    },
+    {
+      "slug": "bell-la-padula-model",
+      "label": "Bell-LaPadula Model"
+    },
+    {
+      "slug": "biba-1977-integrity-considerations",
+      "label": "Biba 1977 Integrity Considerations"
+    },
+    {
+      "slug": "biba-model",
+      "label": "Biba Model"
+    },
+    {
+      "slug": "blue-diamond",
+      "label": "BlueDiamond"
+    },
+    {
+      "slug": "brewer-nash-1989-chinese-wall-security-policy",
+      "label": "Brewer-Nash 1989 Chinese Wall Security Policy"
+    },
+    {
+      "slug": "brewer-nash-model",
+      "label": "Brewer-Nash Model"
+    },
+    {
+      "slug": "capability-based-security",
+      "label": "Capability-Based Security"
+    },
+    {
+      "slug": "carminati-et-al-2009-semantic-web-framework-social-network-access-control",
+      "label": "Carminati et al 2009 Semantic Web Framework Social Network Access Control"
+    },
+    {
+      "slug": "cedar",
+      "label": "Cedar"
+    },
+    {
+      "slug": "cerbos",
+      "label": "Cerbos"
+    },
+    {
+      "slug": "cisa-zero-trust-maturity-model-v2-0",
+      "label": "CISA Zero Trust Maturity Model v2.0"
+    },
+    {
+      "slug": "clark-wilson-1987-commercial-and-military-security-policies",
+      "label": "Clark-Wilson 1987 Commercial and Military Security Policies"
+    },
+    {
+      "slug": "clark-wilson-model",
+      "label": "Clark-Wilson Model"
+    },
+    {
+      "slug": "cryptographic-primitives",
+      "label": "Cryptographic Primitives"
+    },
+    {
+      "slug": "customer-identity-and-access-management",
+      "label": "Customer Identity and Access Management"
+    },
+    {
+      "slug": "dac",
+      "label": "DAC"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "dennis-van-horn-1966-programming-semantics-for-multiprogrammed-computations",
+      "label": "Dennis Van Horn 1966 Programming Semantics for Multiprogrammed Computations"
+    },
+    {
+      "slug": "directory-service",
+      "label": "Directory Service"
+    },
+    {
+      "slug": "fido-alliance-passkey-adoption-metrics-2026",
+      "label": "FIDO Alliance Passkey Adoption Metrics 2026"
+    },
+    {
+      "slug": "forensic-investigation",
+      "label": "Forensic Investigation"
+    },
+    {
+      "slug": "forge-rock",
+      "label": "ForgeRock"
+    },
+    {
+      "slug": "gartner-2025-magic-quadrant-access-management",
+      "label": "Gartner 2025 Magic Quadrant Access Management"
+    },
+    {
+      "slug": "gcp-iam",
+      "label": "GCP IAM"
+    },
+    {
+      "slug": "genode",
+      "label": "Genode"
+    },
+    {
+      "slug": "governance-control",
+      "label": "Governance Control"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "hardy-1988-confused-deputy",
+      "label": "Hardy 1988 Confused Deputy"
+    },
+    {
+      "slug": "harrison-ruzzo-ullman-1976-protection-in-operating-systems",
+      "label": "Harrison Ruzzo Ullman 1976 Protection in Operating Systems"
+    },
+    {
+      "slug": "iam-access-analyzer",
+      "label": "IAM Access Analyzer"
+    },
+    {
+      "slug": "identity-store",
+      "label": "Identity Store"
+    },
+    {
+      "slug": "ietf-rfc-4120",
+      "label": "IETF RFC 4120"
+    },
+    {
+      "slug": "ietf-rfc-4120-kerberos-v5",
+      "label": "IETF RFC 4120 Kerberos v5"
+    },
+    {
+      "slug": "ietf-rfc-6749",
+      "label": "IETF RFC 6749"
+    },
+    {
+      "slug": "ietf-rfc-6749-oauth-2-0",
+      "label": "IETF RFC 6749 OAuth 2.0"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "indie-auth",
+      "label": "IndieAuth"
+    },
+    {
+      "slug": "information-security-system",
+      "label": "Information Security System"
+    },
+    {
+      "slug": "iso-iec-27002",
+      "label": "ISO IEC 27002"
+    },
+    {
+      "slug": "iso-iec-27002-2022",
+      "label": "ISO IEC 27002 2022"
+    },
+    {
+      "slug": "istio",
+      "label": "Istio"
+    },
+    {
+      "slug": "jump-cloud",
+      "label": "JumpCloud"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "kubernetes-rbac",
+      "label": "Kubernetes RBAC"
+    },
+    {
+      "slug": "lampson-1971-protection-matrix",
+      "label": "Lampson 1971 Protection Matrix"
+    },
+    {
+      "slug": "ldap",
+      "label": "LDAP"
+    },
+    {
+      "slug": "least-privilege",
+      "label": "Least Privilege"
+    },
+    {
+      "slug": "linkerd",
+      "label": "Linkerd"
+    },
+    {
+      "slug": "mac",
+      "label": "MAC"
+    },
+    {
+      "slug": "mcp",
+      "label": "MCP"
+    },
+    {
+      "slug": "microsoft-entra-id",
+      "label": "Microsoft Entra ID"
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    },
+    {
+      "slug": "nist-sp-800-162",
+      "label": "NIST SP 800-162"
+    },
+    {
+      "slug": "nist-sp-800-162-abac-guide",
+      "label": "NIST SP 800-162 ABAC Guide"
+    },
+    {
+      "slug": "nist-sp-800-207",
+      "label": "NIST SP 800-207"
+    },
+    {
+      "slug": "nist-sp-800-207-zero-trust-architecture",
+      "label": "NIST SP 800-207 Zero Trust Architecture"
+    },
+    {
+      "slug": "oasis-saml-2-0",
+      "label": "OASIS SAML 2.0"
+    },
+    {
+      "slug": "oasis-xacml",
+      "label": "OASIS XACML"
+    },
+    {
+      "slug": "oasis-xacml-3-0",
+      "label": "OASIS XACML 3.0"
+    },
+    {
+      "slug": "oauth-2-0",
+      "label": "OAuth 2.0"
+    },
+    {
+      "slug": "okta",
+      "label": "Okta"
+    },
+    {
+      "slug": "opa-gatekeeper",
+      "label": "OPA Gatekeeper"
+    },
+    {
+      "slug": "open-fga",
+      "label": "OpenFGA"
+    },
+    {
+      "slug": "open-id-connect",
+      "label": "OpenID Connect"
+    },
+    {
+      "slug": "open-policy-agent",
+      "label": "Open Policy Agent"
+    },
+    {
+      "slug": "pang-et-al-2019-zanzibar-google-consistent-global-authorization",
+      "label": "Pang et al 2019 Zanzibar Google Consistent Global Authorization"
+    },
+    {
+      "slug": "passkey",
+      "label": "Passkey"
+    },
+    {
+      "slug": "passwordless-authentication",
+      "label": "Passwordless Authentication"
+    },
+    {
+      "slug": "pbac",
+      "label": "PBAC"
+    },
+    {
+      "slug": "ping-identity",
+      "label": "Ping Identity"
+    },
+    {
+      "slug": "policy-administration-point",
+      "label": "Policy Administration Point"
+    },
+    {
+      "slug": "policy-decision-point",
+      "label": "Policy Decision Point"
+    },
+    {
+      "slug": "policy-enforcement-point",
+      "label": "Policy Enforcement Point"
+    },
+    {
+      "slug": "policy-information-point",
+      "label": "Policy Information Point"
+    },
+    {
+      "slug": "privileged-access-management",
+      "label": "Privileged Access Management"
+    },
+    {
+      "slug": "radius",
+      "label": "RADIUS"
+    },
+    {
+      "slug": "rbac",
+      "label": "RBAC"
+    },
+    {
+      "slug": "re-bac",
+      "label": "ReBAC"
+    },
+    {
+      "slug": "saltzer-and-schroeder-1975-protection-of-information-in-computer-systems",
+      "label": "Saltzer & Schroeder 1975 Protection of Information in Computer Systems"
+    },
+    {
+      "slug": "saml",
+      "label": "SAML"
+    },
+    {
+      "slug": "saml-2-0",
+      "label": "SAML 2.0"
+    },
+    {
+      "slug": "sandhu-coyne-feinstein-youman-1996-rbac-models",
+      "label": "Sandhu Coyne Feinstein Youman 1996 RBAC Models"
+    },
+    {
+      "slug": "secrets-management",
+      "label": "Secrets Management"
+    },
+    {
+      "slug": "secure-logging",
+      "label": "Secure Logging"
+    },
+    {
+      "slug": "security-control",
+      "label": "Security Control"
+    },
+    {
+      "slug": "security-domain",
+      "label": "SecurityDomain"
+    },
+    {
+      "slug": "separation-of-duties",
+      "label": "Separation of Duties"
+    },
+    {
+      "slug": "session-manager",
+      "label": "Session Manager"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "spice-db",
+      "label": "SpiceDB"
+    },
+    {
+      "slug": "time-synchronisation",
+      "label": "Time Synchronisation"
+    },
+    {
+      "slug": "token-service",
+      "label": "Token Service"
+    },
+    {
+      "slug": "topaz",
+      "label": "Topaz"
+    },
+    {
+      "slug": "trusted-time-source",
+      "label": "Trusted Time Source"
+    },
+    {
+      "slug": "uk-ncsc-cloud-security-principles",
+      "label": "UK NCSC Cloud Security Principles"
+    },
+    {
+      "slug": "uk-ncsc-zero-trust-architecture-design-principles",
+      "label": "UK NCSC Zero Trust Architecture Design Principles"
+    },
+    {
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
+    },
+    {
+      "slug": "w3-c-web-authn",
+      "label": "W3C WebAuthn"
+    },
+    {
+      "slug": "w3-c-web-authn-level-3",
+      "label": "W3C WebAuthn Level 3"
+    },
+    {
+      "slug": "ward-beyer-2014-beyond-corp",
+      "label": "Ward Beyer 2014 BeyondCorp"
+    },
+    {
+      "slug": "warrant",
+      "label": "Warrant"
+    },
+    {
+      "slug": "web-authn",
+      "label": "WebAuthn"
+    },
+    {
+      "slug": "xacml",
+      "label": "XACML"
+    },
+    {
+      "slug": "zanzibar",
+      "label": "Zanzibar"
+    },
+    {
+      "slug": "zelkova",
+      "label": "Zelkova"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "collective-memory-archive",
+      "label": "Collective Memory Archive"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

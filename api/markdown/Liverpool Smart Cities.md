@@ -1,21 +1,198 @@
-iri:: http://narrativegoldmine.com/infrastructure#LiverpoolSmartCities
-uri:: urn:visionclaw:concept:infrastructure:liverpool-smart-cities
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:liverpool-smart-cities
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Liverpool Smart Cities
-content-hash:: sha256-12-62a2c1e95fc0
-legacy-term-id:: NGM-1003
-status:: active
-maturity:: established
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#LiverpoolSmartCities
+legacy_uri:: urn:visionclaw:concept:infrastructure:liverpool-smart-cities
 public:: true
+
+# Liverpool Smart Cities
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885",
+  "@type": "Page",
+  "vc:slug": "liverpool-smart-cities",
+  "title": "Liverpool Smart Cities",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:northern-powerhouse",
+      "vc:label": "Northern Powerhouse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:north-england-innovation-corridor",
+      "vc:label": "North England Innovation Corridor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uk-tech-ecosystem",
+      "vc:label": "UK Tech Ecosystem"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-62a2c1e95fc0"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#LiverpoolSmartCities"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-1003"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Liverpool Smart Cities"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:liverpool-smart-cities"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:liverpool-smart-cities"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:liverpool-smart-cities",
+  "@type": "OntologyClass",
+  "label": "Liverpool Smart Cities",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:liverpool-smart-cities:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Northern Powerhouse]]",
+      "resolved": "urn:visionflow:linked:northern-powerhouse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[North England Innovation Corridor]]",
+      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[UK Tech Ecosystem]]",
+      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.
@@ -23,7 +200,7 @@ public:: true
 - ### Semantic Classification
   - owl-class:: infrastructure:LiverpoolSmartCities
   - owl-role:: RegionalEcosystem
-  - belongs-to-domain:: [[UKTechEcosystem]]
+  - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
   - <!-- No relationships defined -->

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82",
+  "title": "DAO Governance for Telecollaboration",
+  "slug": "dao-governance-for-telecollaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dao-governance-for-telecollaboration",
+  "domain": "distributed-collaboration",
+  "definition": "\"The application of decentralised autonomous organisation (DAO) governance mechanisms\u2014token-weighted voting, proposal systems, treasury management\u2014to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:blockchain-technology",
+      "label": "Blockchain Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "DecentralisedAutonomousOrganisation"
+    },
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-250-blockchain-collaboration",
+      "label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "slug": "tele-251-smart-contract-coordination",
+      "label": "TELE-251-smart-contract-coordination"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    }
+  ]
+}

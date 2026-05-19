@@ -1,21 +1,230 @@
-iri:: http://narrativegoldmine.com/infrastructure#Process
-uri:: urn:visionclaw:concept:infrastructure:process
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:process
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Process
-content-hash:: sha256-12-c6478412bb8d
-legacy-term-id:: NGM-8004
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#Process
+legacy_uri:: urn:visionclaw:concept:infrastructure:process
 public:: true
+
+# Process
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7",
+  "@type": "Page",
+  "vc:slug": "process",
+  "title": "Process",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:automation",
+      "vc:label": "Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:business-process-management",
+      "vc:label": "Business Process Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:systems-theory",
+      "vc:label": "Systems Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-entity",
+      "vc:label": "Temporal Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:orchestration",
+      "vc:label": "Orchestration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c6478412bb8d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#Process"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-8004"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Process"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:process"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:process"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:process",
+  "@type": "OntologyClass",
+  "label": "Process",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:temporal-entity",
+      "vc:label": "Temporal Entity"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome. Processes represent structured temporal progressions involving multiple agents, systems, or components working in coordination, with defined control flow, duration, and observable states.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:automation",
+      "vc:label": "Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:business-process-management",
+      "vc:label": "Business Process Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:orchestration",
+      "vc:label": "Orchestration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:process:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Automation]]",
+      "resolved": "urn:visionflow:linked:automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Business Process Management]]",
+      "resolved": "urn:visionflow:linked:business-process-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Systems Theory]]",
+      "resolved": "urn:visionflow:linked:systems-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Temporal Entity]]",
+      "resolved": "urn:visionflow:linked:temporal-entity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Orchestration]]",
+      "resolved": "urn:visionflow:owl:class:orchestration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome. Processes represent structured temporal progressions involving multiple agents, systems, or components working in coordination, with defined control flow, duration, and observable states.

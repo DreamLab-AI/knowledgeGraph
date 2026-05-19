@@ -1,0 +1,149 @@
+{
+  "id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac",
+  "title": "Permissioned Blockchain",
+  "slug": "permissioned-blockchain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:permissioned-blockchain",
+  "domain": "blockchain",
+  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable [[Consensus Mechanism|consensus mechanisms]], enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintaining regulatory compliance and business confidentiality. Permissioned blockchains implement access control at multiple layers\u2014node permissioning restricting which organisations participate, account permissioning controlling transaction submission, and [[PrivateChannels]] enabling confidential subsets of participants to conduct transactions invisibly to others\u2014deployed extensively in enterprise contexts including [[Hyperledger Fabric]], [[Quorum Blockchain]], and [[R3 Corda]] supporting supply chain, trade finance, healthcare, and financial services applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bc-0120-consensus-mechanism",
+        "label": "BC-0120-consensus-mechanism"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0001-blockchain",
+      "label": "BC-0001-blockchain"
+    },
+    {
+      "slug": "bc-0120-consensus-mechanism",
+      "label": "BC-0120-consensus-mechanism"
+    },
+    {
+      "slug": "bc-0245-proof-of-authority",
+      "label": "BC-0245-proof-of-authority"
+    },
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0427-hyperledger-besu",
+      "label": "BC-0427-hyperledger-besu"
+    },
+    {
+      "slug": "bc-0428-enterprise-blockchain-architecture",
+      "label": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "slug": "bc-0430-private-channels",
+      "label": "BC-0430-private-channels"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "HyperledgerFabric"
+    },
+    {
+      "slug": "private-channels",
+      "label": "PrivateChannels"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "QuorumBlockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3Corda"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "private-channels",
+      "label": "Private Channels"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

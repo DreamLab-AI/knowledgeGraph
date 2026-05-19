@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:9d1fc2f06f54cbf3eff9ee92ba894b11f2bded276180ecc2ec2a700a6fbadaad",
+  "title": "Virtual Environment Specification",
+  "slug": "virtual-environment-specification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-environment-specification",
+  "domain": "spatial-computing",
+  "definition": "Technical standards and requirements documents that define the parameters, capabilities, and constraints of virtual environments, including rendering requirements, interaction models, physics simulation rules, and interoperability protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    }
+  ]
+}

@@ -1,21 +1,972 @@
-iri:: http://narrativegoldmine.com/blockchain#PrivateBlockchain
-uri:: urn:visionclaw:concept:blockchain:private-blockchain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:private-blockchain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Private Blockchain
-content-hash:: sha256-12-27992ded9d1a
-legacy-term-id:: BC-3050
-status:: active
-maturity:: production-ready
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#PrivateBlockchain
+legacy_uri:: urn:visionclaw:concept:blockchain:private-blockchain
 public:: true
+
+# Private Blockchain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ec09c996eeb174615ce100a3893997e71126243691b909b863ffcd70f0e7258c",
+  "@type": "Page",
+  "vc:slug": "private-blockchain",
+  "title": "Private Blockchain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aml",
+      "vc:label": "AML"
+    },
+    {
+      "@id": "urn:visionflow:linked:australian-securities-exchange",
+      "vc:label": "AustralianSecuritiesExchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc",
+      "vc:label": "CBDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainlink",
+      "vc:label": "Chainlink"
+    },
+    {
+      "@id": "urn:visionflow:linked:clique",
+      "vc:label": "Clique"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos",
+      "vc:label": "Cosmos"
+    },
+    {
+      "@id": "urn:visionflow:linked:dapp",
+      "vc:label": "DApp"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized",
+      "vc:label": "Decentralized"
+    },
+    {
+      "@id": "urn:visionflow:linked:deutsche-bank",
+      "vc:label": "DeutscheBank"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-pound",
+      "vc:label": "DigitalPound"
+    },
+    {
+      "@id": "urn:visionflow:linked:ecb",
+      "vc:label": "ECB"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-trading",
+      "vc:label": "EnergyTrading"
+    },
+    {
+      "@id": "urn:visionflow:linked:evm",
+      "vc:label": "EVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:fca",
+      "vc:label": "FCA"
+    },
+    {
+      "@id": "urn:visionflow:linked:fda",
+      "vc:label": "FDA"
+    },
+    {
+      "@id": "urn:visionflow:linked:gas-fee",
+      "vc:label": "GasFee"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-time-lock",
+      "vc:label": "HashTimeLock"
+    },
+    {
+      "@id": "urn:visionflow:linked:hipaa",
+      "vc:label": "HIPAA"
+    },
+    {
+      "@id": "urn:visionflow:linked:hsbc",
+      "vc:label": "HSBC"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm",
+      "vc:label": "IBM"
+    },
+    {
+      "@id": "urn:visionflow:linked:ico",
+      "vc:label": "ICO"
+    },
+    {
+      "@id": "urn:visionflow:linked:io-t",
+      "vc:label": "IoT"
+    },
+    {
+      "@id": "urn:visionflow:linked:jpmorgan",
+      "vc:label": "JPMorgan"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyc",
+      "vc:label": "KYC"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquid-network",
+      "vc:label": "LiquidNetwork"
+    },
+    {
+      "@id": "urn:visionflow:linked:maersk",
+      "vc:label": "Maersk"
+    },
+    {
+      "@id": "urn:visionflow:linked:msp",
+      "vc:label": "MSP"
+    },
+    {
+      "@id": "urn:visionflow:linked:onion-routing",
+      "vc:label": "OnionRouting"
+    },
+    {
+      "@id": "urn:visionflow:linked:pbft",
+      "vc:label": "PBFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:plasma-chain",
+      "vc:label": "PlasmaChain"
+    },
+    {
+      "@id": "urn:visionflow:linked:poanetwork",
+      "vc:label": "POANetwork"
+    },
+    {
+      "@id": "urn:visionflow:linked:polkadot",
+      "vc:label": "Polkadot"
+    },
+    {
+      "@id": "urn:visionflow:linked:polygon",
+      "vc:label": "Polygon"
+    },
+    {
+      "@id": "urn:visionflow:linked:private-data-collection",
+      "vc:label": "PrivateDataCollection"
+    },
+    {
+      "@id": "urn:visionflow:linked:pseudonymous",
+      "vc:label": "Pseudonymous"
+    },
+    {
+      "@id": "urn:visionflow:linked:qbft",
+      "vc:label": "QBFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:quorum",
+      "vc:label": "Quorum"
+    },
+    {
+      "@id": "urn:visionflow:linked:r3",
+      "vc:label": "R3"
+    },
+    {
+      "@id": "urn:visionflow:linked:raft",
+      "vc:label": "RAFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:rollup",
+      "vc:label": "Rollup"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability",
+      "vc:label": "Scalability"
+    },
+    {
+      "@id": "urn:visionflow:linked:solidity",
+      "vc:label": "Solidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:swift",
+      "vc:label": "SWIFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:tendermint",
+      "vc:label": "Tendermint"
+    },
+    {
+      "@id": "urn:visionflow:linked:trade-fi",
+      "vc:label": "TradeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:transactions-per-second",
+      "vc:label": "TransactionsPerSecond"
+    },
+    {
+      "@id": "urn:visionflow:linked:ve-chain",
+      "vc:label": "VeChain"
+    },
+    {
+      "@id": "urn:visionflow:linked:walmart",
+      "vc:label": "Walmart"
+    },
+    {
+      "@id": "urn:visionflow:linked:x-dai",
+      "vc:label": "xDai"
+    },
+    {
+      "@id": "urn:visionflow:linked:zilliqa",
+      "vc:label": "Zilliqa"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "AccessControl"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:atomic-swap",
+      "vc:label": "AtomicSwap"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "vc:label": "Byzantine Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cardano",
+      "vc:label": "Cardano"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-algorithm",
+      "vc:label": "ConsensusAlgorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consortium-blockchain",
+      "vc:label": "ConsortiumBlockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:delegated-proof-of-stake",
+      "vc:label": "DelegatedProofOfStake"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-certificate",
+      "vc:label": "DigitalCertificate"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-identity",
+      "vc:label": "DigitalIdentity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-ledger",
+      "vc:label": "distributed ledger"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-systems",
+      "vc:label": "DistributedSystems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:docker",
+      "vc:label": "Docker"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-besu",
+      "vc:label": "Hyperledger Besu"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-management",
+      "vc:label": "IdentityManagement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mining",
+      "vc:label": "Mining"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-authority",
+      "vc:label": "ProofOfAuthority"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-stake",
+      "vc:label": "ProofOfStake"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "ProofOfWork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-blockchain",
+      "vc:label": "PublicBlockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "vc:label": "PublicKeyInfrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quantum-computing",
+      "vc:label": "QuantumComputing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:r3-corda",
+      "vc:label": "R3Corda"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "RegulatoryCompliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solana",
+      "vc:label": "Solana"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stablecoin",
+      "vc:label": "Stablecoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "vc:label": "ZeroKnowledgeProof"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-27992ded9d1a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#PrivateBlockchain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-3050"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Private Blockchain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:private-blockchain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:private-blockchain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ec09c996eeb174615ce100a3893997e71126243691b909b863ffcd70f0e7258c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:private-blockchain",
+  "@type": "OntologyClass",
+  "label": "Private Blockchain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ec09c996eeb174615ce100a3893997e71126243691b909b863ffcd70f0e7258c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ec09c996eeb174615ce100a3893997e71126243691b909b863ffcd70f0e7258c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A permissioned [[Blockchain]] network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:private-blockchain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ec09c996eeb174615ce100a3893997e71126243691b909b863ffcd70f0e7258c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AML]]",
+      "resolved": "urn:visionflow:linked:aml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AustralianSecuritiesExchange]]",
+      "resolved": "urn:visionflow:linked:australian-securities-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC]]",
+      "resolved": "urn:visionflow:linked:cbdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainlink]]",
+      "resolved": "urn:visionflow:linked:chainlink",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Clique]]",
+      "resolved": "urn:visionflow:linked:clique",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos]]",
+      "resolved": "urn:visionflow:linked:cosmos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DApp]]",
+      "resolved": "urn:visionflow:linked:dapp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized]]",
+      "resolved": "urn:visionflow:linked:decentralized",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeutscheBank]]",
+      "resolved": "urn:visionflow:linked:deutsche-bank",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DigitalPound]]",
+      "resolved": "urn:visionflow:linked:digital-pound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ECB]]",
+      "resolved": "urn:visionflow:linked:ecb",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EnergyTrading]]",
+      "resolved": "urn:visionflow:linked:energy-trading",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EVM]]",
+      "resolved": "urn:visionflow:linked:evm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FCA]]",
+      "resolved": "urn:visionflow:linked:fca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FDA]]",
+      "resolved": "urn:visionflow:linked:fda",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GasFee]]",
+      "resolved": "urn:visionflow:linked:gas-fee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HashTimeLock]]",
+      "resolved": "urn:visionflow:linked:hash-time-lock",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HIPAA]]",
+      "resolved": "urn:visionflow:linked:hipaa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HSBC]]",
+      "resolved": "urn:visionflow:linked:hsbc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM]]",
+      "resolved": "urn:visionflow:linked:ibm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICO]]",
+      "resolved": "urn:visionflow:linked:ico",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IoT]]",
+      "resolved": "urn:visionflow:linked:io-t",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JPMorgan]]",
+      "resolved": "urn:visionflow:linked:jpmorgan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kubernetes]]",
+      "resolved": "urn:visionflow:linked:kubernetes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KYC]]",
+      "resolved": "urn:visionflow:linked:kyc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LiquidNetwork]]",
+      "resolved": "urn:visionflow:linked:liquid-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Maersk]]",
+      "resolved": "urn:visionflow:linked:maersk",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MSP]]",
+      "resolved": "urn:visionflow:linked:msp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OnionRouting]]",
+      "resolved": "urn:visionflow:linked:onion-routing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PBFT]]",
+      "resolved": "urn:visionflow:linked:pbft",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PlasmaChain]]",
+      "resolved": "urn:visionflow:linked:plasma-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[POANetwork]]",
+      "resolved": "urn:visionflow:linked:poanetwork",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polkadot]]",
+      "resolved": "urn:visionflow:linked:polkadot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polygon]]",
+      "resolved": "urn:visionflow:linked:polygon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PrivateDataCollection]]",
+      "resolved": "urn:visionflow:linked:private-data-collection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pseudonymous]]",
+      "resolved": "urn:visionflow:linked:pseudonymous",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[QBFT]]",
+      "resolved": "urn:visionflow:linked:qbft",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quorum]]",
+      "resolved": "urn:visionflow:linked:quorum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[R3]]",
+      "resolved": "urn:visionflow:linked:r3",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RAFT]]",
+      "resolved": "urn:visionflow:linked:raft",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rollup]]",
+      "resolved": "urn:visionflow:linked:rollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scalability]]",
+      "resolved": "urn:visionflow:linked:scalability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solidity]]",
+      "resolved": "urn:visionflow:linked:solidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SWIFT]]",
+      "resolved": "urn:visionflow:linked:swift",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tendermint]]",
+      "resolved": "urn:visionflow:linked:tendermint",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TradeFi]]",
+      "resolved": "urn:visionflow:linked:trade-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TransactionsPerSecond]]",
+      "resolved": "urn:visionflow:linked:transactions-per-second",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VeChain]]",
+      "resolved": "urn:visionflow:linked:ve-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Walmart]]",
+      "resolved": "urn:visionflow:linked:walmart",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[xDai]]",
+      "resolved": "urn:visionflow:linked:x-dai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zilliqa]]",
+      "resolved": "urn:visionflow:linked:zilliqa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AccessControl]]",
+      "resolved": "urn:visionflow:owl:class:access-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AtomicSwap]]",
+      "resolved": "urn:visionflow:owl:class:atomic-swap",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Byzantine Fault Tolerance]]",
+      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cardano]]",
+      "resolved": "urn:visionflow:owl:class:cardano",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConsensusAlgorithm]]",
+      "resolved": "urn:visionflow:owl:class:consensus-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConsortiumBlockchain]]",
+      "resolved": "urn:visionflow:owl:class:consortium-blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DelegatedProofOfStake]]",
+      "resolved": "urn:visionflow:owl:class:delegated-proof-of-stake",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalCertificate]]",
+      "resolved": "urn:visionflow:owl:class:digital-certificate",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalIdentity]]",
+      "resolved": "urn:visionflow:owl:class:digital-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[distributed ledger]]",
+      "resolved": "urn:visionflow:owl:class:distributed-ledger",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DistributedSystems]]",
+      "resolved": "urn:visionflow:owl:class:distributed-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Docker]]",
+      "resolved": "urn:visionflow:owl:class:docker",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Besu]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-besu",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric|Hyperledger]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[IdentityManagement]]",
+      "resolved": "urn:visionflow:owl:class:identity-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mining]]",
+      "resolved": "urn:visionflow:owl:class:mining",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProofOfAuthority]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-authority",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProofOfStake]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-stake",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProofOfWork]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PublicBlockchain]]",
+      "resolved": "urn:visionflow:owl:class:public-blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PublicKeyInfrastructure]]",
+      "resolved": "urn:visionflow:owl:class:public-key-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[QuantumComputing]]",
+      "resolved": "urn:visionflow:owl:class:quantum-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[R3Corda]]",
+      "resolved": "urn:visionflow:owl:class:r3-corda",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RegulatoryCompliance]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solana]]",
+      "resolved": "urn:visionflow:owl:class:solana",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stablecoin]]",
+      "resolved": "urn:visionflow:owl:class:stablecoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ZeroKnowledgeProof]]",
+      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ec09c996eeb174615ce100a3893997e71126243691b909b863ffcd70f0e7258c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A permissioned [[Blockchain]] network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.

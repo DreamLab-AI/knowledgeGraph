@@ -1,21 +1,303 @@
-iri:: http://narrativegoldmine.com/blockchain#DistributedProtocol
-uri:: urn:visionclaw:concept:blockchain:distributed-protocol
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:distributed-protocol
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Distributed Protocol
-content-hash:: sha256-12-4858d873c42d
-legacy-term-id:: PC-0006
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#DistributedProtocol
+legacy_uri:: urn:visionclaw:concept:blockchain:distributed-protocol
 public:: true
+
+# Distributed Protocol
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9fa0b99bd2d36744fb6372907bf72229544b7178a54ee8e604ce9306b65f2c0b",
+  "@type": "Page",
+  "vc:slug": "distributed-protocol",
+  "title": "Distributed Protocol",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:block-propagation-protocol",
+      "vc:label": "Block Propagation Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:byzantine-agreement-protocols",
+      "vc:label": "Byzantine Agreement Protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems-concepts-and-design",
+      "vc:label": "Distributed Systems: Concepts and Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-discovery-protocol",
+      "vc:label": "Peer Discovery Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-to-peer-networks",
+      "vc:label": "Peer-to-Peer Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-synchronization-protocol",
+      "vc:label": "State Synchronization Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-broadcast-protocol",
+      "vc:label": "Transaction Broadcast Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agreement-protocol",
+      "vc:label": "Agreement Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gossip-protocol",
+      "vc:label": "Gossip Protocol"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4858d873c42d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#DistributedProtocol"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0006"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Distributed Protocol"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:distributed-protocol"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:distributed-protocol"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fa0b99bd2d36744fb6372907bf72229544b7178a54ee8e604ce9306b65f2c0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:distributed-protocol",
+  "@type": "OntologyClass",
+  "label": "Distributed Protocol",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9fa0b99bd2d36744fb6372907bf72229544b7178a54ee8e604ce9306b65f2c0b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fa0b99bd2d36744fb6372907bf72229544b7178a54ee8e604ce9306b65f2c0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Distributed Protocol is a formally specified set of rules, message formats, and procedures governing communication, coordination, and state synchronization among independent nodes in a distributed network without centralized control. Unlike centralized protocols where a single authoritative server coordinates client interactions, distributed protocols enable peer-to-peer coordination where participants jointly implement the protocol logic to achieve system-wide objectives. These protocols must address fundamental distributed systems challenges including asynchronous message delivery, network partitions, Byzantine failures (where nodes may behave arbitrarily or maliciously), and the impossibility of perfectly coordinating clocks across geographic distances. Blockchain distributed protocols encompass consensus protocols for agreeing on transaction ordering, gossip protocols for information dissemination, peer discovery protocols for network topology management, and state synchronization protocols for new node bootstrapping. Effective distributed protocols must specify normal operation (how honest nodes behave), failure handling (how to detect and recover from node failures), and at",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:distributed-protocol:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9fa0b99bd2d36744fb6372907bf72229544b7178a54ee8e604ce9306b65f2c0b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Block Propagation Protocol]]",
+      "resolved": "urn:visionflow:linked:block-propagation-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Byzantine Agreement Protocols]]",
+      "resolved": "urn:visionflow:linked:byzantine-agreement-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Systems: Concepts and Design]]",
+      "resolved": "urn:visionflow:linked:distributed-systems-concepts-and-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peer Discovery Protocol]]",
+      "resolved": "urn:visionflow:linked:peer-discovery-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peer-to-Peer Networks]]",
+      "resolved": "urn:visionflow:linked:peer-to-peer-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[State Synchronization Protocol]]",
+      "resolved": "urn:visionflow:linked:state-synchronization-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transaction Broadcast Protocol]]",
+      "resolved": "urn:visionflow:linked:transaction-broadcast-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agreement Protocol]]",
+      "resolved": "urn:visionflow:owl:class:agreement-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gossip Protocol]]",
+      "resolved": "urn:visionflow:owl:class:gossip-protocol",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fa0b99bd2d36744fb6372907bf72229544b7178a54ee8e604ce9306b65f2c0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Distributed Protocol is a formally specified set of rules, message formats, and procedures governing communication, coordination, and state synchronization among independent nodes in a distributed network without centralized control. Unlike centralized protocols where a single authoritative server coordinates client interactions, distributed protocols enable peer-to-peer coordination where participants jointly implement the protocol logic to achieve system-wide objectives. These protocols must address fundamental distributed systems challenges including asynchronous message delivery, network partitions, Byzantine failures (where nodes may behave arbitrarily or maliciously), and the impossibility of perfectly coordinating clocks across geographic distances. Blockchain distributed protocols encompass consensus protocols for agreeing on transaction ordering, gossip protocols for information dissemination, peer discovery protocols for network topology management, and state synchronization protocols for new node bootstrapping. Effective distributed protocols must specify normal operation (how honest nodes behave), failure handling (how to detect and recover from node failures), and attack resistance (how to maintain correctness despite adversarial participants), all while minimizing communication complexity and latency.

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:327893e98fdef23dc4614baa940fd72ae5af65f84ca1524134926d09006b53cf",
+  "title": "Rule of Law",
+  "slug": "rule-of-law",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rule-of-law",
+  "domain": "infrastructure",
+  "definition": "The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    }
+  ]
+}

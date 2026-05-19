@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:61fadcf454437549a70c482820f53575d98f1a3c536e01e49304a27b2c26fead",
+  "title": "Network Infrastructure",
+  "slug": "network-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:network-infrastructure",
+  "domain": "infrastructure",
+  "definition": "NetworkInfrastructure is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "communication-software",
+      "label": "Communication Software"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "context-awareness-system",
+      "label": "Context Awareness System"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "decentralization-layer",
+      "label": "Decentralization Layer"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "edge-network",
+      "label": "Edge Network"
+    },
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "health-metaverse-application",
+      "label": "Health Metaverse Application"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "latency-management-protocol",
+      "label": "Latency Management Protocol"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "mesh-routing-software",
+      "label": "Mesh Routing Software"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "networkcomponent",
+      "label": "Networkcomponent"
+    },
+    {
+      "slug": "physical-network-hardware",
+      "label": "Physical Network Hardware"
+    },
+    {
+      "slug": "quantum-network-node",
+      "label": "Quantum Network Node"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "virtual-environment-connectivity",
+      "label": "Virtual Environment Connectivity"
+    },
+    {
+      "slug": "virtual-network",
+      "label": "Virtual Network"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    },
+    {
+      "slug": "virtual-production-volume",
+      "label": "Virtual Production Volume"
+    }
+  ]
+}

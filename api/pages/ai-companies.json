@@ -1,0 +1,740 @@
+{
+  "id": "urn:visionflow:page:2851fac3932ad2e5d0dccde01a247e5307ec23f76403434e1957631462ad9ebc",
+  "title": "AI Companies",
+  "slug": "ai-companies",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-companies",
+  "domain": "artificial-intelligence",
+  "definition": "AI Companies is the population-level concept comprising commercial and non-profit organisations whose principal economic activity is the research, development, productisation, deployment, distribution, or infrastructure-provision of artificial intelligence technologies\u2014spanning the 2024-2026 industry stratified into five primary structural tiers: (1) **foundation model laboratories** building general-purpose pre-trained models at frontier scale ($1B+ training budgets, $50B-$300B valuations)\u2014[[OpenAI]] ($157B post-money October 2024, $300B+ March 2025 SoftBank-led round, ChatGPT 200M+ weekly active users, GPT-4o/o1/o3/o4-mini/GPT-5 family), [[Anthropic]] ($61.5B January 2025 Lightspeed-led, $183B March 2025 reported, Claude 3.5 Sonnet/Claude 3.7 Sonnet/Claude Opus 4/Claude 4.5/Claude Opus 4.7 family with constitutional AI alignment), [[Google DeepMind]] (Alphabet subsidiary post-2023 merger, Gemini 1.5/2.0/2.5 Pro and Flash, Gemini Ultra, Veo 2 video, Imagen 3, AlphaFold 3 protein structure, Project Astra agentic assistant), [[Meta AI]] (FAIR + GenAI, Llama 3.1 405B/Llama 3.2/Llama 3.3/Llama 4 open-weight family, ~$40B 2025 capex on AI infrastructure), [[xAI]] ($50B November 2024, $",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:commercial-enterprise",
+      "label": "Commercial Enterprise"
+    },
+    {
+      "id": "urn:visionflow:linked:industry-sector",
+      "label": "Industry Sector"
+    },
+    {
+      "id": "urn:visionflow:linked:research-organisation",
+      "label": "Research Organisation"
+    },
+    {
+      "id": "urn:visionflow:linked:software-vendor",
+      "label": "Software Vendor"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-company",
+      "label": "Technology Company"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-infrastructure-providers",
+        "label": "AI Infrastructure Providers"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-research-laboratory",
+        "label": "AI Research Laboratory"
+      },
+      {
+        "id": "urn:visionflow:linked:application-ai-companies",
+        "label": "Application AI Companies"
+      },
+      {
+        "id": "urn:visionflow:linked:capital-base",
+        "label": "Capital Base"
+      },
+      {
+        "id": "urn:visionflow:linked:foundation-model-labs",
+        "label": "Foundation Model Labs"
+      },
+      {
+        "id": "urn:visionflow:linked:founding-team",
+        "label": "Founding Team"
+      },
+      {
+        "id": "urn:visionflow:linked:open-source-ai-platforms",
+        "label": "Open Source AI Platforms"
+      },
+      {
+        "id": "urn:visionflow:linked:vertical-ai-specialists",
+        "label": "Vertical AI Specialists"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:capital-investment",
+        "label": "Capital Investment"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-license",
+        "label": "Regulatory License"
+      },
+      {
+        "id": "urn:visionflow:linked:talent-pool",
+        "label": "Talent Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-apis",
+        "label": "AI APIs"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      },
+      {
+        "id": "urn:visionflow:linked:foundation-model-licensing",
+        "label": "Foundation Model Licensing"
+      },
+      {
+        "id": "urn:visionflow:linked:generative-ai-products",
+        "label": "Generative AI Products"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-media-creation",
+        "label": "Synthetic Media Creation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:commercial-productisation",
+        "label": "Commercial Productisation"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-model-training",
+        "label": "Frontier Model Training"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-serving",
+        "label": "Inference Serving"
+      },
+      {
+        "id": "urn:visionflow:linked:model-distribution",
+        "label": "Model Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf-alignment",
+        "label": "RLHF Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-research-programmes",
+        "label": "Safety Research Programmes"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a16z-generative-ai-top-50-2024",
+      "label": "a16z Generative AI Top 50 2024"
+    },
+    {
+      "slug": "academic-ai-labs",
+      "label": "Academic AI Labs"
+    },
+    {
+      "slug": "academic-research-pipeline",
+      "label": "Academic Research Pipeline"
+    },
+    {
+      "slug": "agi-race",
+      "label": "AGI Race"
+    },
+    {
+      "slug": "ahmed-wahed-2020-de-democratization-of-ai",
+      "label": "Ahmed Wahed 2020 De-democratization of AI"
+    },
+    {
+      "slug": "ai-acquisitions-and-m-and-a",
+      "label": "AI Acquisitions and M&A"
+    },
+    {
+      "slug": "ai-apis",
+      "label": "AI APIs"
+    },
+    {
+      "slug": "ai-funding-landscape",
+      "label": "AI Funding Landscape"
+    },
+    {
+      "slug": "ai-infrastructure-providers",
+      "label": "AI Infrastructure Providers"
+    },
+    {
+      "slug": "ai-research-laboratory",
+      "label": "AI Research Laboratory"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai21-labs",
+      "label": "AI21 Labs"
+    },
+    {
+      "slug": "amazon",
+      "label": "Amazon"
+    },
+    {
+      "slug": "amd",
+      "label": "AMD"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "anthropic-core-views-on-ai-safety-2023",
+      "label": "Anthropic Core Views on AI Safety 2023"
+    },
+    {
+      "slug": "application-ai-companies",
+      "label": "Application AI Companies"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "bender-gebru-et-al-2021-stochastic-parrots",
+      "label": "Bender Gebru et al. 2021 Stochastic Parrots"
+    },
+    {
+      "slug": "bommasani-et-al-2021-foundation-models",
+      "label": "Bommasani et al. 2021 Foundation Models"
+    },
+    {
+      "slug": "capital-allocation-layer",
+      "label": "CapitalAllocationLayer"
+    },
+    {
+      "slug": "capital-base",
+      "label": "Capital Base"
+    },
+    {
+      "slug": "capital-investment",
+      "label": "Capital Investment"
+    },
+    {
+      "slug": "cb-insights-state-of-ai-q4-2024",
+      "label": "CB Insights State of AI Q4 2024"
+    },
+    {
+      "slug": "cerebras",
+      "label": "Cerebras"
+    },
+    {
+      "slug": "cerebras-systems",
+      "label": "Cerebras Systems"
+    },
+    {
+      "slug": "chain-of-thought-reasoning",
+      "label": "Chain of Thought Reasoning"
+    },
+    {
+      "slug": "cma-microsoft-open-ai-phase-1-decision-2024",
+      "label": "CMA Microsoft OpenAI Phase 1 Decision 2024"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "commercial-aidomain",
+      "label": "CommercialAIDomain"
+    },
+    {
+      "slug": "commercial-enterprise",
+      "label": "Commercial Enterprise"
+    },
+    {
+      "slug": "commercial-productisation",
+      "label": "Commercial Productisation"
+    },
+    {
+      "slug": "compute-cluster",
+      "label": "Compute Cluster"
+    },
+    {
+      "slug": "core-weave-s-1-2025",
+      "label": "CoreWeave S-1 2025"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "Crew AI"
+    },
+    {
+      "slug": "deep-seek",
+      "label": "DeepSeek"
+    },
+    {
+      "slug": "deep-seek-r1-technical-report-2025",
+      "label": "DeepSeek-R1 Technical Report 2025"
+    },
+    {
+      "slug": "deep-seek-v3-technical-report-2024",
+      "label": "DeepSeek-V3 Technical Report 2024"
+    },
+    {
+      "slug": "defence-and-security-ai",
+      "label": "Defence and Security AI"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "ec-dg-competition-generative-ai-call-2024",
+      "label": "EC DG Competition Generative AI Call 2024"
+    },
+    {
+      "slug": "education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "slug": "enterprise-ai-adoption",
+      "label": "Enterprise AI Adoption"
+    },
+    {
+      "slug": "enterprise-automation",
+      "label": "Enterprise Automation"
+    },
+    {
+      "slug": "eu-ai-act-regulation-2024-1689",
+      "label": "EU AI Act Regulation 2024/1689"
+    },
+    {
+      "slug": "executive-order-14110",
+      "label": "Executive Order 14110"
+    },
+    {
+      "slug": "foundation-model-labs",
+      "label": "Foundation Model Labs"
+    },
+    {
+      "slug": "foundation-model-licensing",
+      "label": "Foundation Model Licensing"
+    },
+    {
+      "slug": "founding-team",
+      "label": "Founding Team"
+    },
+    {
+      "slug": "frontier-model-forum",
+      "label": "Frontier Model Forum"
+    },
+    {
+      "slug": "frontier-model-training",
+      "label": "Frontier Model Training"
+    },
+    {
+      "slug": "ftc-generative-ai-6b-study-2025",
+      "label": "FTC Generative AI 6b Study 2025"
+    },
+    {
+      "slug": "generative-ai-products",
+      "label": "Generative AI Products"
+    },
+    {
+      "slug": "goldman-sachs-gen-ai-too-much-spend-too-little-benefit-2024",
+      "label": "Goldman Sachs Gen AI Too Much Spend Too Little Benefit 2024"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "graphcore",
+      "label": "Graphcore"
+    },
+    {
+      "slug": "healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "hyperscaler-cloud",
+      "label": "Hyperscaler Cloud"
+    },
+    {
+      "slug": "industry-sector",
+      "label": "Industry Sector"
+    },
+    {
+      "slug": "industry-structure-domain",
+      "label": "IndustryStructureDomain"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "international-ai-safety-report-2025-bengio",
+      "label": "International AI Safety Report 2025 Bengio"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO IEC 42001"
+    },
+    {
+      "slug": "iso-iec-42001-ai-management-system",
+      "label": "ISO IEC 42001 AI Management System"
+    },
+    {
+      "slug": "legal-tech",
+      "label": "Legal Tech"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "market-structure-layer",
+      "label": "MarketStructureLayer"
+    },
+    {
+      "slug": "mc-kinsey-global-institute-state-of-ai-2024",
+      "label": "McKinsey Global Institute State of AI 2024"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "microsoft-10-q-q2-fy2025",
+      "label": "Microsoft 10-Q Q2 FY2025"
+    },
+    {
+      "slug": "mistral-ai",
+      "label": "Mistral AI"
+    },
+    {
+      "slug": "model-distribution",
+      "label": "Model Distribution"
+    },
+    {
+      "slug": "national-ai-strategy",
+      "label": "National AI Strategy"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework-1-0",
+      "label": "NIST AI Risk Management Framework 1.0"
+    },
+    {
+      "slug": "nvidia-10-k-fy2025",
+      "label": "NVIDIA 10-K FY2025"
+    },
+    {
+      "slug": "nvidia-gpus",
+      "label": "NVIDIA GPUs"
+    },
+    {
+      "slug": "open-ai-gpt-4-technical-report-2023",
+      "label": "OpenAI GPT-4 Technical Report 2023"
+    },
+    {
+      "slug": "open-source-ai-platforms",
+      "label": "Open Source AI Platforms"
+    },
+    {
+      "slug": "open-source-communities",
+      "label": "Open Source Communities"
+    },
+    {
+      "slug": "organisation-layer",
+      "label": "OrganisationLayer"
+    },
+    {
+      "slug": "partnership-on-ai",
+      "label": "Partnership on AI"
+    },
+    {
+      "slug": "pitch-book-q1-2025-ai-report",
+      "label": "PitchBook Q1 2025 AI Report"
+    },
+    {
+      "slug": "power-grid-capacity",
+      "label": "Power Grid Capacity"
+    },
+    {
+      "slug": "pure-play-saa-s-companies",
+      "label": "Pure-Play SaaS Companies"
+    },
+    {
+      "slug": "qwen",
+      "label": "Qwen"
+    },
+    {
+      "slug": "regulatory-license",
+      "label": "Regulatory License"
+    },
+    {
+      "slug": "research-organisation",
+      "label": "Research Organisation"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "rlhf-alignment",
+      "label": "RLHF Alignment"
+    },
+    {
+      "slug": "safety-research-programmes",
+      "label": "Safety Research Programmes"
+    },
+    {
+      "slug": "scientific-research",
+      "label": "Scientific Research"
+    },
+    {
+      "slug": "semiconductor-supply-chain",
+      "label": "Semiconductor Supply Chain"
+    },
+    {
+      "slug": "sequoia-capital-ai-600-b-question-cahn",
+      "label": "Sequoia Capital AI 600B Question Cahn"
+    },
+    {
+      "slug": "software-vendor",
+      "label": "Software Vendor"
+    },
+    {
+      "slug": "sovereign-ai",
+      "label": "Sovereign AI"
+    },
+    {
+      "slug": "sovereign-wealth-investment",
+      "label": "Sovereign Wealth Investment"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
+    },
+    {
+      "slug": "stanford-hai-ai-index-report-2025",
+      "label": "Stanford HAI AI Index Report 2025"
+    },
+    {
+      "slug": "state-of-ai-report-2024-benaich",
+      "label": "State of AI Report 2024 Benaich"
+    },
+    {
+      "slug": "synthetic-media-creation",
+      "label": "Synthetic Media Creation"
+    },
+    {
+      "slug": "talent-pool",
+      "label": "Talent Pool"
+    },
+    {
+      "slug": "technology-company",
+      "label": "Technology Company"
+    },
+    {
+      "slug": "technology-economics-domain",
+      "label": "TechnologyEconomicsDomain"
+    },
+    {
+      "slug": "tenstorrent",
+      "label": "Tenstorrent"
+    },
+    {
+      "slug": "touvron-et-al-2023-lla-ma",
+      "label": "Touvron et al. 2023 LLaMA"
+    },
+    {
+      "slug": "traditional-software-vendors",
+      "label": "Traditional Software Vendors"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan-2025-clifford",
+      "label": "UK AI Opportunities Action Plan 2025 Clifford"
+    },
+    {
+      "slug": "uk-ai-security-institute",
+      "label": "UK AI Security Institute"
+    },
+    {
+      "slug": "venture-capital",
+      "label": "Venture Capital"
+    },
+    {
+      "slug": "vertical-ai-specialists",
+      "label": "Vertical AI Specialists"
+    },
+    {
+      "slug": "white-house-voluntary-ai-commitments",
+      "label": "White House Voluntary AI Commitments"
+    },
+    {
+      "slug": "x-ai",
+      "label": "xAI"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "groq",
+      "label": "Groq"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    }
+  ]
+}

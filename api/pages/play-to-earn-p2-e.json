@@ -1,0 +1,207 @@
+{
+  "id": "urn:visionflow:page:174d3cf50cd857a43af13fd66d3a40b77ae7f8c56eaa0e78d2ce37bd29babf98",
+  "title": "Play-to-Earn (P2E)",
+  "slug": "play-to-earn-p2-e",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:play-to-earn-p2-e",
+  "domain": "spatial-computing",
+  "definition": "Economic model and gameplay process where users gain real-world value through virtual participation, task completion, and reward distribution mechanisms that convert in-game achievements into tradeable assets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-generation",
+        "label": "Asset Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:gameplay-mechanics",
+        "label": "Gameplay Mechanics"
+      },
+      {
+        "id": "urn:visionflow:linked:task-completion-system",
+        "label": "Task Completion System"
+      },
+      {
+        "id": "urn:visionflow:linked:value-conversion",
+        "label": "Value Conversion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reward-distribution",
+        "label": "Reward Distribution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-ownership",
+        "label": "Asset Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:community-growth",
+        "label": "Community Growth"
+      },
+      {
+        "id": "urn:visionflow:linked:income-generation",
+        "label": "Income Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:player-engagement",
+        "label": "Player Engagement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:economic-participation",
+        "label": "Economic Participation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-generation",
+      "label": "Asset Generation"
+    },
+    {
+      "slug": "asset-ownership",
+      "label": "Asset Ownership"
+    },
+    {
+      "slug": "community-growth",
+      "label": "Community Growth"
+    },
+    {
+      "slug": "game-fi",
+      "label": "GameFi"
+    },
+    {
+      "slug": "gameplay-mechanics",
+      "label": "Gameplay Mechanics"
+    },
+    {
+      "slug": "income-generation",
+      "label": "Income Generation"
+    },
+    {
+      "slug": "metaverse-101",
+      "label": "Metaverse 101"
+    },
+    {
+      "slug": "nft-non-fungible-token",
+      "label": "NFT (Non-Fungible Token)"
+    },
+    {
+      "slug": "player-engagement",
+      "label": "Player Engagement"
+    },
+    {
+      "slug": "player-identity",
+      "label": "Player Identity"
+    },
+    {
+      "slug": "task-completion-system",
+      "label": "Task Completion System"
+    },
+    {
+      "slug": "value-conversion",
+      "label": "Value Conversion"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "economic-participation",
+      "label": "Economic Participation"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "reward-distribution",
+      "label": "Reward Distribution"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    }
+  ]
+}

@@ -1,21 +1,286 @@
-iri:: http://narrativegoldmine.com/metaverse#CollectiveLearning
-uri:: urn:visionclaw:concept:artificial-intelligence:collective-learning
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:collective-learning
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Collective Learning
-content-hash:: sha256-12-a5fa35491698
-legacy-term-id:: MV-9823
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#CollectiveLearning
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:collective-learning
 public:: true
+
+# Collective Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65",
+  "@type": "Page",
+  "vc:slug": "collective-learning",
+  "title": "Collective Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:communication-tools",
+      "vc:label": "Communication Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-collaboration",
+      "vc:label": "Global Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-co-construction",
+      "vc:label": "Knowledge Co-Construction"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-learning",
+      "vc:label": "Peer Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:educational-methodology",
+      "vc:label": "Educational Methodology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-management-system",
+      "vc:label": "Learning Management System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "Virtual Environment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a5fa35491698"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#CollectiveLearning"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9823"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Collective Learning"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:collective-learning"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:collective-learning"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:collective-learning",
+  "@type": "OntologyClass",
+  "label": "Collective Learning",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:educational-methodology",
+      "vc:label": "Educational Methodology"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work together to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR technologies that enable global participation without physical co-location.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:communication-tools",
+      "vc:label": "Communication Tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-management-system",
+      "vc:label": "Learning Management System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "Virtual Environment"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:global-collaboration",
+      "vc:label": "Global Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-co-construction",
+      "vc:label": "Knowledge Co-Construction"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-learning",
+      "vc:label": "Peer Learning"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:collective-learning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Communication Tools]]",
+      "resolved": "urn:visionflow:linked:communication-tools",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Global Collaboration]]",
+      "resolved": "urn:visionflow:linked:global-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Co-Construction]]",
+      "resolved": "urn:visionflow:linked:knowledge-co-construction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peer Learning]]",
+      "resolved": "urn:visionflow:linked:peer-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Educational Methodology]]",
+      "resolved": "urn:visionflow:owl:class:educational-methodology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Learning Management System]]",
+      "resolved": "urn:visionflow:owl:class:learning-management-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Environment]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work together to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR technologies that enable global participation without physical co-location.

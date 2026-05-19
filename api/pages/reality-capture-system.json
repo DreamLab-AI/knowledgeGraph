@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:7edecf6d42caf2e06b68950c00b60e9937b71ae853cc62cb93d802a806173312",
+  "title": "Reality Capture System",
+  "slug": "reality-capture-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reality-capture-system",
+  "domain": "spatial-computing",
+  "definition": "Physical hardware system comprising 3D scanners, LIDAR sensors, photogrammetry cameras, and associated equipment for acquiring spatial and visual data from real-world environments to create digital representations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:3-d-scanner",
+        "label": "3D Scanner"
+      },
+      {
+        "id": "urn:visionflow:linked:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:lidar-sensor",
+        "label": "LIDAR Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:photogrammetry-camera",
+        "label": "Photogrammetry Camera"
+      },
+      {
+        "id": "urn:visionflow:linked:point-cloud-processor",
+        "label": "Point Cloud Processor"
+      },
+      {
+        "id": "urn:visionflow:linked:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:data-processing-hardware",
+        "label": "Data Processing Hardware"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-calibration",
+        "label": "Spatial Calibration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-model-generation",
+        "label": "3D Model Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:environment-reconstruction",
+        "label": "Environment Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-representation",
+        "label": "Visual Representation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-model-generation",
+      "label": "3D Model Generation"
+    },
+    {
+      "slug": "3-d-scanner",
+      "label": "3D Scanner"
+    },
+    {
+      "slug": "depth-sensor",
+      "label": "Depth Sensor"
+    },
+    {
+      "slug": "environment-reconstruction",
+      "label": "Environment Reconstruction"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "iso-iec-17820",
+      "label": "ISO/IEC 17820"
+    },
+    {
+      "slug": "lidar-sensor",
+      "label": "LIDAR Sensor"
+    },
+    {
+      "slug": "photogrammetry-camera",
+      "label": "Photogrammetry Camera"
+    },
+    {
+      "slug": "point-cloud-processing",
+      "label": "Point Cloud Processing"
+    },
+    {
+      "slug": "point-cloud-processor",
+      "label": "Point Cloud Processor"
+    },
+    {
+      "slug": "tracking-system",
+      "label": "Tracking System"
+    },
+    {
+      "slug": "visual-representation",
+      "label": "Visual Representation"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-processing-hardware",
+      "label": "Data Processing Hardware"
+    },
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    },
+    {
+      "slug": "digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "spatial-calibration",
+      "label": "Spatial Calibration"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "virtual-production-workflow",
+      "label": "Virtual Production Workflow"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    }
+  ]
+}

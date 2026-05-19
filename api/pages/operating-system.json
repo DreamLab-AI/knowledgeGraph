@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:2fcf3b0adb44e313b5568b2064d35088581137c792604ec7f1fd5af17556207b",
+  "title": "Operating System",
+  "slug": "operating-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:operating-system",
+  "domain": "infrastructure",
+  "definition": "OperatingSystem is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:2d2869d69e8d1ccecff9339b41396b4b35bfb3b77596895d21b457671e630587",
+  "title": "Virtual Clinic",
+  "slug": "virtual-clinic",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-clinic",
+  "domain": "spatial-computing",
+  "definition": "A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "health-metaverse-application",
+      "label": "Health Metaverse Application"
+    }
+  ]
+}

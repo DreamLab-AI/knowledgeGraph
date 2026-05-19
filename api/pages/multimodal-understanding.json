@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:761577cb799592c94e2bcaec3aafea7a38a85976dd9131d28bfac5a86b5fbc3c",
+  "title": "Multimodal Understanding",
+  "slug": "multimodal-understanding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:multimodal-understanding",
+  "domain": "artificial-intelligence",
+  "definition": "Multimodal Understanding is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572",
+  "title": "Derivative Control",
+  "slug": "derivative-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:derivative-control",
+  "domain": "robotics",
+  "definition": "Derivative control responds to the rate of change of system error, providing damping that opposes oscillations and improves transient response. When combined with [[Proportional Control]] and [[Integral Control]] in [[PID Control]], the derivative term enhances stability and enables faster, less overshoot-prone convergence to setpoints in robotic [[Control Systems]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:control-actions",
+      "label": "Control Actions"
+    },
+    {
+      "id": "urn:visionflow:linked:pid-control-component",
+      "label": "PID Control Component"
+    },
+    {
+      "id": "urn:visionflow:owl:class:feedback-control",
+      "label": "Feedback Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:damping-action",
+        "label": "Damping Action"
+      },
+      {
+        "id": "urn:visionflow:linked:derivative-gain",
+        "label": "Derivative Gain"
+      },
+      {
+        "id": "urn:visionflow:linked:error-rate-measurement",
+        "label": "Error Rate Measurement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:error-signal",
+        "label": "Error Signal"
+      },
+      {
+        "id": "urn:visionflow:linked:gain-tuning",
+        "label": "Gain Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:low-pass-filtering",
+        "label": "Low-Pass Filtering"
+      },
+      {
+        "id": "urn:visionflow:linked:time-derivative",
+        "label": "Time Derivative"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:faster-convergence",
+        "label": "Faster Convergence"
+      },
+      {
+        "id": "urn:visionflow:linked:oscillation-damping",
+        "label": "Oscillation Damping"
+      },
+      {
+        "id": "urn:visionflow:linked:reduced-overshoot",
+        "label": "Reduced Overshoot"
+      },
+      {
+        "id": "urn:visionflow:linked:stability-improvement",
+        "label": "Stability Improvement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "control-actions",
+      "label": "Control Actions"
+    },
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "damping-action",
+      "label": "Damping Action"
+    },
+    {
+      "slug": "derivative-gain",
+      "label": "Derivative Gain"
+    },
+    {
+      "slug": "error-rate-measurement",
+      "label": "Error Rate Measurement"
+    },
+    {
+      "slug": "error-signal",
+      "label": "Error Signal"
+    },
+    {
+      "slug": "faster-convergence",
+      "label": "Faster Convergence"
+    },
+    {
+      "slug": "gain-tuning",
+      "label": "Gain Tuning"
+    },
+    {
+      "slug": "integral-control",
+      "label": "Integral Control"
+    },
+    {
+      "slug": "kalman-filters",
+      "label": "Kalman Filters"
+    },
+    {
+      "slug": "learning-based-controllers",
+      "label": "Learning-Based Controllers"
+    },
+    {
+      "slug": "low-pass-filtering",
+      "label": "Low-Pass Filtering"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "oscillation-damping",
+      "label": "Oscillation Damping"
+    },
+    {
+      "slug": "pid-control",
+      "label": "PID Control"
+    },
+    {
+      "slug": "pid-control-component",
+      "label": "PID Control Component"
+    },
+    {
+      "slug": "reduced-overshoot",
+      "label": "Reduced Overshoot"
+    },
+    {
+      "slug": "robotic-joint",
+      "label": "Robotic Joint"
+    },
+    {
+      "slug": "stability-improvement",
+      "label": "Stability Improvement"
+    },
+    {
+      "slug": "time-derivative",
+      "label": "Time Derivative"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "proportional-control",
+      "label": "Proportional Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

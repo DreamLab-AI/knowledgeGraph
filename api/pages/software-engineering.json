@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:f8b13be5d5b0a194e3f972d83b363720a7e00582ad68a6107a7a7d40290312fa",
+  "title": "Software Engineering",
+  "slug": "software-engineering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:software-engineering",
+  "domain": "infrastructure",
+  "definition": "SoftwareEngineering is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "programming-paradigm",
+      "label": "Programming Paradigm"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "task-specific-head",
+      "label": "Task Specific Head"
+    }
+  ]
+}

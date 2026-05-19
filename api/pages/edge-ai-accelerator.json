@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:67f6511682212da0e7446ccefefd95082c80e303153cebf04eeb50b2364e6fd0",
+  "title": "Edge AI Accelerator",
+  "slug": "edge-ai-accelerator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:edge-ai-accelerator",
+  "domain": "artificial-intelligence",
+  "definition": "Specialized hardware designed to run AI inference workloads locally on edge devices, optimized for low power consumption and real-time performance without cloud connectivity.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ]
+}

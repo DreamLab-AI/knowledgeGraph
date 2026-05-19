@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:9a29c54b14a471d9bea485258e4a9fbecdbb3da355508b7e3a5bc6bc8168996e",
+  "title": "Transparent Decision Making",
+  "slug": "transparent-decision-making",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transparent-decision-making",
+  "domain": "spatial-computing",
+  "definition": "Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-collaboration",
+      "label": "Blockchain Collaboration"
+    }
+  ]
+}

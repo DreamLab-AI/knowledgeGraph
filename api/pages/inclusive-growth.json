@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:b1bbae439f956036e5510a5fe856e1ed6f58b334d8e15cb1aacf533c6ffc4d14",
+  "title": "Inclusive Growth",
+  "slug": "inclusive-growth",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inclusive-growth",
+  "domain": "infrastructure",
+  "definition": "AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

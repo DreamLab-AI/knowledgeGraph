@@ -1,20 +1,203 @@
-iri:: http://narrativegoldmine.com/ontology#Multimodal
-uri:: urn:visionclaw:concept:artificial-intelligence:multimodal
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:multimodal
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: multimodal
-content-hash:: sha256-12-a21406b955b1
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#Multimodal
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:multimodal
 public:: true
+
+# multimodal
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b",
+  "@type": "Page",
+  "vc:slug": "multimodal",
+  "title": "multimodal",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:apple",
+      "vc:label": "Apple"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal",
+      "vc:label": "Multimodal"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:variational-autoencoders",
+      "vc:label": "Variational Autoencoders"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a21406b955b1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#Multimodal"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "multimodal"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:multimodal"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:multimodal"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:multimodal",
+  "@type": "OntologyClass",
+  "label": "multimodal",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "multimodal is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:multimodal:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Apple]]",
+      "resolved": "urn:visionflow:owl:class:apple",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Multimodal]]",
+      "resolved": "urn:visionflow:owl:class:multimodal",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Variational Autoencoders]]",
+      "resolved": "urn:visionflow:owl:class:variational-autoencoders",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - multimodal is a concept within the ngm domain.
@@ -40,7 +223,7 @@ public:: true
   - Gemini is a multimodal LLM capable of inputting and outputting text, understanding images, and generating images.
   - While specific architecture details are scarce, it represents a leap in LLMs interacting with multiple data types.
   - **Introduction:**
-		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+		- [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 		- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
   - **Core Concepts:**
 		- **LLMs for Text:**
@@ -77,7 +260,7 @@ public:: true
   - ### Multi-Modal Large Language Models (LLMs)
   ```
   - Some random links
-  - Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+  - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
   - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
   - [moondream
 		- a tiny vision language model](https://moondream.ai/)

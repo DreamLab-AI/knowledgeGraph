@@ -1,0 +1,251 @@
+{
+  "id": "urn:visionflow:page:85f783f3c7423837477061b6c08670acba6b511b8925a5014c67b6d9f83269e3",
+  "title": "Metaverse Content Pipeline",
+  "slug": "metaverse-content-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-content-pipeline",
+  "domain": "spatial-computing",
+  "definition": "End-to-end workflow connecting asset creation, optimization, storage, distribution, and real-time rendering for metaverse experiences across platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:content-production-workflow",
+      "label": "Content Production Workflow"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-creation",
+        "label": "Asset Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-optimization",
+        "label": "Asset Optimization"
+      },
+      {
+        "id": "urn:visionflow:linked:cdn-distribution",
+        "label": "CDN Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:content-storage",
+        "label": "Content Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:lod-generation",
+        "label": "LOD Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:runtime-loading",
+        "label": "Runtime Loading"
+      },
+      {
+        "id": "urn:visionflow:linked:texture-baking",
+        "label": "Texture Baking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-authoring-tools",
+        "label": "3D Authoring Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-compression",
+        "label": "Asset Compression"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:visionflow:linked:format-conversion",
+        "label": "Format Conversion"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-rendering-engine",
+        "label": "Real-Time Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-interoperability",
+        "label": "Content Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-content",
+        "label": "Cross-Platform Content"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-asset-loading",
+        "label": "Dynamic Asset Loading"
+      },
+      {
+        "id": "urn:visionflow:linked:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-authoring-tools",
+      "label": "3D Authoring Tools"
+    },
+    {
+      "slug": "asset-compression",
+      "label": "Asset Compression"
+    },
+    {
+      "slug": "asset-creation",
+      "label": "Asset Creation"
+    },
+    {
+      "slug": "asset-management-system",
+      "label": "Asset Management System"
+    },
+    {
+      "slug": "asset-optimization",
+      "label": "Asset Optimization"
+    },
+    {
+      "slug": "cdn-distribution",
+      "label": "CDN Distribution"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "content-interoperability",
+      "label": "Content Interoperability"
+    },
+    {
+      "slug": "content-storage",
+      "label": "Content Storage"
+    },
+    {
+      "slug": "cross-platform-content",
+      "label": "Cross-Platform Content"
+    },
+    {
+      "slug": "dynamic-asset-loading",
+      "label": "Dynamic Asset Loading"
+    },
+    {
+      "slug": "format-conversion",
+      "label": "Format Conversion"
+    },
+    {
+      "slug": "gl-tf-standard",
+      "label": "glTF Standard"
+    },
+    {
+      "slug": "lod-generation",
+      "label": "LOD Generation"
+    },
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "oma3-content-wg",
+      "label": "OMA3 Content WG"
+    },
+    {
+      "slug": "real-time-rendering-engine",
+      "label": "Real-Time Rendering Engine"
+    },
+    {
+      "slug": "runtime-loading",
+      "label": "Runtime Loading"
+    },
+    {
+      "slug": "shader-pipeline",
+      "label": "Shader Pipeline"
+    },
+    {
+      "slug": "smpte-st-2128",
+      "label": "SMPTE ST 2128"
+    },
+    {
+      "slug": "texture-baking",
+      "label": "Texture Baking"
+    },
+    {
+      "slug": "usd-format",
+      "label": "USD Format"
+    },
+    {
+      "slug": "user-generated-content",
+      "label": "User-Generated Content"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "Procedural Generation"
+    },
+    {
+      "slug": "render-pipeline",
+      "label": "Render Pipeline"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "etsi-domain-interoperability-creative",
+      "label": "ETSI_Domain_Interoperability___Creative"
+    }
+  ]
+}

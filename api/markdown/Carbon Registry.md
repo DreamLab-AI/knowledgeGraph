@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#CarbonRegistry
-uri:: urn:visionclaw:concept:spatial-computing:carbon-registry
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:carbon-registry
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Carbon Registry
-content-hash:: sha256-12-0daad976c3cf
-legacy-term-id:: MV-9815
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#CarbonRegistry
+legacy_uri:: urn:visionclaw:concept:spatial-computing:carbon-registry
 public:: true
+
+# Carbon Registry
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3",
+  "@type": "Page",
+  "vc:slug": "carbon-registry",
+  "title": "Carbon Registry",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:credit-tracking",
+      "vc:label": "Credit Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:database-infrastructure",
+      "vc:label": "Database Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:double-counting-prevention",
+      "vc:label": "Double Counting Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-transparency",
+      "vc:label": "Market Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:unique-identifiers",
+      "vc:label": "Unique Identifiers"
+    },
+    {
+      "@id": "urn:visionflow:linked:verification-process",
+      "vc:label": "Verification Process"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:environmental-registry",
+      "vc:label": "Environmental Registry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0daad976c3cf"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#CarbonRegistry"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9815"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Carbon Registry"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:carbon-registry"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:carbon-registry"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:carbon-registry",
+  "@type": "OntologyClass",
+  "label": "Carbon Registry",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:environmental-registry",
+      "vc:label": "Environmental Registry"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:database-infrastructure",
+      "vc:label": "Database Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:unique-identifiers",
+      "vc:label": "Unique Identifiers"
+    },
+    {
+      "@id": "urn:visionflow:linked:verification-process",
+      "vc:label": "Verification Process"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:credit-tracking",
+      "vc:label": "Credit Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:double-counting-prevention",
+      "vc:label": "Double Counting Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-transparency",
+      "vc:label": "Market Transparency"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:carbon-registry:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Credit Tracking]]",
+      "resolved": "urn:visionflow:linked:credit-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Database Infrastructure]]",
+      "resolved": "urn:visionflow:linked:database-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Double Counting Prevention]]",
+      "resolved": "urn:visionflow:linked:double-counting-prevention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Transparency]]",
+      "resolved": "urn:visionflow:linked:market-transparency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Unique Identifiers]]",
+      "resolved": "urn:visionflow:linked:unique-identifiers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verification Process]]",
+      "resolved": "urn:visionflow:linked:verification-process",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Environmental Registry]]",
+      "resolved": "urn:visionflow:owl:class:environmental-registry",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.

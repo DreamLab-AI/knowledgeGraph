@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:0a18c7afae13585b0ad72f27525541441aec2c9d7288066732dbb927cd8ad734",
+  "title": "Pneumatic Motor",
+  "slug": "pneumatic-motor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pneumatic-motor",
+  "domain": "robotics",
+  "definition": "Pneumatic motor converts compressed air to rotational motion.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

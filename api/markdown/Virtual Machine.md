@@ -1,24 +1,255 @@
-iri:: http://narrativegoldmine.com/spatial-computing#VirtualMachine
-uri:: urn:visionclaw:concept:spatial-computing:virtual-machine
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:virtual-machine
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Virtual Machine
-content-hash:: sha256-12-b68663c1e455
-legacy-term-id:: MV-3042
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#VirtualMachine
+legacy_uri:: urn:visionclaw:concept:spatial-computing:virtual-machine
 public:: true
+
+# Virtual Machine
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b82f3c99fcb792e20f0350a58b8527b84b90fd44d91bdfa1ec838c4eb92226e1",
+  "@type": "Page",
+  "vc:slug": "virtual-machine",
+  "title": "Virtual Machine",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cairo-vm",
+      "vc:label": "CairoVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:evm",
+      "vc:label": "EVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:move-vm",
+      "vc:label": "MoveVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:solana-svm",
+      "vc:label": "SolanaSVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:solidity",
+      "vc:label": "Solidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm",
+      "vc:label": "WASM"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b68663c1e455"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#VirtualMachine"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3042"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Virtual Machine"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:virtual-machine"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:virtual-machine"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b82f3c99fcb792e20f0350a58b8527b84b90fd44d91bdfa1ec838c4eb92226e1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:virtual-machine",
+  "@type": "OntologyClass",
+  "label": "Virtual Machine",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:computing-infrastructure",
+      "vc:label": "Computing Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b82f3c99fcb792e20f0350a58b8527b84b90fd44d91bdfa1ec838c4eb92226e1"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b82f3c99fcb792e20f0350a58b8527b84b90fd44d91bdfa1ec838c4eb92226e1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A virtual machine in blockchain contexts is a runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications. The [[EVM|Ethereum Virtual Machine]] dominates as the reference implementation, executing [[Solidity|Solidity]] bytecode across thousands of nodes globally, with alternatives including [[WASM|WebAssembly]]-based [[SolanaSVM|Solana's Sealevel VM]], [[MoveVM|Move VM]], and [[CairoVM|Cairo VM]] providing specialised optimisations for specific use cases. Deterministic execution is paramount—identical contract invocations across decentralised networks must produce identical results, enabling consensus formation without relying on centralised authorities.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:virtual-machine:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b82f3c99fcb792e20f0350a58b8527b84b90fd44d91bdfa1ec838c4eb92226e1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[CairoVM|Cairo VM]]",
+      "resolved": "urn:visionflow:linked:cairo-vm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EVM|Ethereum Virtual Machine]]",
+      "resolved": "urn:visionflow:linked:evm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MoveVM|Move VM]]",
+      "resolved": "urn:visionflow:linked:move-vm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SolanaSVM|Solana's Sealevel VM]]",
+      "resolved": "urn:visionflow:linked:solana-svm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solidity|Solidity]]",
+      "resolved": "urn:visionflow:linked:solidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WASM|WebAssembly]]",
+      "resolved": "urn:visionflow:linked:wasm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract|smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b82f3c99fcb792e20f0350a58b8527b84b90fd44d91bdfa1ec838c4eb92226e1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A virtual machine in blockchain contexts is a runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications. The [[EVM|Ethereum Virtual Machine]] dominates as the reference implementation, executing [[Solidity|Solidity]] bytecode across thousands of nodes globally, with alternatives including [[WASM|WebAssembly]]-based [[SolanaSVM|Solana's Sealevel VM]], [[MoveVM|Move VM]], and [[CairoVM|Cairo VM]] providing specialised optimisations for specific use cases. Deterministic execution is paramount—identical contract invocations across decentralised networks must produce identical results, enabling consensus formation without relying on centralised authorities.

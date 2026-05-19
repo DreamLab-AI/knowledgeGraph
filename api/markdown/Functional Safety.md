@@ -1,21 +1,327 @@
-iri:: http://narrativegoldmine.com/robotics#FunctionalSafety
-uri:: urn:visionclaw:concept:robotics:functional-safety
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:functional-safety
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Functional Safety
-content-hash:: sha256-12-6f3ce6140dec
-legacy-term-id:: RB-0102
-status:: draft
-maturity:: draft
-quality-score:: 0.64
-authority-score:: 0.18
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#FunctionalSafety
+legacy_uri:: urn:visionclaw:concept:robotics:functional-safety
 public:: true
+
+# Functional Safety
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662",
+  "@type": "Page",
+  "vc:slug": "functional-safety",
+  "title": "Functional Safety",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:fault-tree-analysis",
+      "vc:label": "Fault Tree Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:hazard-analysis",
+      "vc:label": "Hazard Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-robot-safety",
+      "vc:label": "Human-Robot Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:liability-mitigation",
+      "vc:label": "Liability Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-operation-certification",
+      "vc:label": "Safe Operation Certification"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-engineering",
+      "vc:label": "Safety Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:testing-and-validation",
+      "vc:label": "Testing & Validation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.18"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6f3ce6140dec"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#FunctionalSafety"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0102"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Functional Safety"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.64"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:functional-safety"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:functional-safety"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:functional-safety",
+  "@type": "OntologyClass",
+  "label": "Functional Safety",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:safety-engineering",
+      "vc:label": "Safety Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Functional Safety** - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
+  "vc:qualityScore": {
+    "@value": "0.64",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.18",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:fault-tree-analysis",
+      "vc:label": "Fault Tree Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:hazard-analysis",
+      "vc:label": "Hazard Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:testing-and-validation",
+      "vc:label": "Testing & Validation"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:human-robot-safety",
+      "vc:label": "Human-Robot Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:liability-mitigation",
+      "vc:label": "Liability Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-operation-certification",
+      "vc:label": "Safe Operation Certification"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:functional-safety:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Fault Tree Analysis]]",
+      "resolved": "urn:visionflow:linked:fault-tree-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hazard Analysis]]",
+      "resolved": "urn:visionflow:linked:hazard-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human-Robot Safety]]",
+      "resolved": "urn:visionflow:linked:human-robot-safety",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liability Mitigation]]",
+      "resolved": "urn:visionflow:linked:liability-mitigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safe Operation Certification]]",
+      "resolved": "urn:visionflow:linked:safe-operation-certification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safety Engineering]]",
+      "resolved": "urn:visionflow:linked:safety-engineering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Testing & Validation]]",
+      "resolved": "urn:visionflow:linked:testing-and-validation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Compliance]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:risk-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Functional Safety** - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.

@@ -1,0 +1,147 @@
+{
+  "id": "urn:visionflow:page:a85f6c583fa404cf1a3f5b338897af102076a0355c158404f288e12cbe7baf36",
+  "title": "ETSI Domain: Data Management",
+  "slug": "etsi-domain-data-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-data-management",
+  "domain": "infrastructure",
+  "definition": "Domain marker for ETSI metaverse categorisation covering data storage, processing, synchronisation, and lifecycle management for distributed virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-lifecycle",
+        "label": "Data Lifecycle"
+      },
+      {
+        "id": "urn:visionflow:linked:data-synchronization",
+        "label": "Data Synchronization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:caching-infrastructure",
+        "label": "Caching Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:database-systems",
+        "label": "Database Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:replication-mechanisms",
+        "label": "Replication Mechanisms"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-synchronization",
+        "label": "Cross-Platform Synchronization"
+      },
+      {
+        "id": "urn:visionflow:linked:state-persistence",
+        "label": "State Persistence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "caching-infrastructure",
+      "label": "Caching Infrastructure"
+    },
+    {
+      "slug": "consistency-protocols",
+      "label": "Consistency Protocols"
+    },
+    {
+      "slug": "cross-platform-synchronization",
+      "label": "Cross-Platform Synchronization"
+    },
+    {
+      "slug": "data-lifecycle",
+      "label": "Data Lifecycle"
+    },
+    {
+      "slug": "data-synchronization",
+      "label": "Data Synchronization"
+    },
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "replication-mechanisms",
+      "label": "Replication Mechanisms"
+    },
+    {
+      "slug": "state-persistence",
+      "label": "State Persistence"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    }
+  ]
+}

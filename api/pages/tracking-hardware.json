@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:8a2e757b38b088b54fb2adb9caf07ef934214f7b020bc58ee7565306e1b3e62c",
+  "title": "Tracking Hardware",
+  "slug": "tracking-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tracking-hardware",
+  "domain": "spatial-computing",
+  "definition": "Tracking Hardware is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tracking-technology",
+      "label": "Tracking Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "infrared-camera",
+      "label": "Infrared Camera"
+    },
+    {
+      "slug": "infrared-illuminator",
+      "label": "Infrared Illuminator"
+    },
+    {
+      "slug": "infrared-light-source",
+      "label": "Infrared Light Source"
+    }
+  ]
+}

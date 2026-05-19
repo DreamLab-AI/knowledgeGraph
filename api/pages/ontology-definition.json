@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f",
+  "title": "Ontology Definition",
+  "slug": "ontology-definition",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ontology-definition",
+  "domain": "infrastructure",
+  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms\u2014foundational for governance, identity, and asset management standardisation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interoperability-protocol",
+      "label": "InteroperabilityProtocol"
+    },
+    {
+      "slug": "json-ld",
+      "label": "JSON-LD"
+    },
+    {
+      "slug": "owl",
+      "label": "OWL"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:fa2811a86652e94aa758f8d1cf9409f7613def1625f8f5bb73a26b146b26d486",
+  "title": "Reference Architecture",
+  "slug": "reference-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reference-architecture",
+  "domain": "spatial-computing",
+  "definition": "A standardized architectural template that provides proven structural frameworks and design patterns for building scalable, resilient enterprise applications, establishing shared vocabulary and best practices across development teams.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:scalable-systems",
+        "label": "Scalable Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "scalable-systems",
+      "label": "Scalable Systems"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin-framework",
+      "label": "Digital Twin Framework"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    }
+  ]
+}

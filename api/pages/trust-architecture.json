@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:e07c3b29742627c21d8f3d394bc50aafb7cd2f1b661f56b8193433e015c79a64",
+  "title": "Trust Architecture",
+  "slug": "trust-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trust-architecture",
+  "domain": "spatial-computing",
+  "definition": "The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:security-architecture",
+      "label": "Security Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:41424a99a4cf5c1b8497d75205281ba3b13a7075d3a711315a2b0f8fdaf21d40",
+  "title": "Mixed Reality",
+  "slug": "mixed-reality",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mixed-reality",
+  "domain": "spatial-computing",
+  "definition": "Mixed reality (MR) is the perceptual and computational regime occupying the central span of the Milgram-Kishino Reality-Virtuality Continuum (1994, IEICE Transactions on Information Systems E77-D:12, 1321-1329), wherein real-world physical objects and digitally synthesised content coexist, interact, and exhibit bidirectional occlusion in real time within a unified perceptual field, distinguished from pure augmented reality (AR) by physics-consistent anchoring and real-time scene-geometry coupling, and from pure virtual reality (VR) by persistent visual coupling to the physical environment through either optically see-through waveguide combiners or video pass-through camera pipelines rendering at 72-120 Hz refresh with motion-to-photon latency below 20 ms to suppress perceptual conflict and simulator sickness. The decisive technical property separating MR from simpler AR is that virtual objects in MR are not mere overlays \u2014 they participate in the geometric model of the physical environment: a holographic robot arm is occluded when a user's real hand passes in front of it; a digital information panel is anchored to a physical wall and persists sub-centimetre accurate across session ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "id": "urn:visionflow:linked:immersive-computing",
+      "label": "Immersive Computing"
+    },
+    {
+      "id": "urn:visionflow:linked:perceptual-computing",
+      "label": "Perceptual Computing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    },
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:visionflow:linked:holographic-rendering",
+        "label": "Holographic Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:visionflow:linked:occlusion-rendering",
+        "label": "Occlusion Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:pass-through-video",
+        "label": "Pass-Through Video"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-inertial-odometry",
+        "label": "Visual Inertial Odometry"
+      },
+      {
+        "id": "urn:visionflow:linked:world-anchor",
+        "label": "World Anchor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:6-do-f-tracking",
+        "label": "6DoF Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:compute-so-c",
+        "label": "Compute SoC"
+      },
+      {
+        "id": "urn:visionflow:linked:display-calibration",
+        "label": "Display Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:inside-out-tracking",
+        "label": "Inside-Out Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:latency-budget",
+        "label": "Latency Budget"
+      },
+      {
+        "id": "urn:visionflow:linked:scene-reconstruction",
+        "label": "Scene Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-inertial-odometry",
+        "label": "Visual Inertial Odometry"
+      },
+      {
+        "id": "urn:visionflow:linked:waveguide-optics",
+        "label": "Waveguide Optics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-mesh",
+        "label": "Spatial Mesh"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:avatar-presence",
+        "label": "Avatar Presence"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-twin-overlay",
+        "label": "Digital Twin Overlay"
+      },
+      {
+        "id": "urn:visionflow:linked:holographic-training",
+        "label": "Holographic Training"
+      },
+      {
+        "id": "urn:visionflow:linked:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-inspection",
+        "label": "Industrial Inspection"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-assistance",
+        "label": "Remote Assistance"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-audio-experience",
+        "label": "Spatial Audio Experience"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-data-visualisation",
+        "label": "Spatial Data Visualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:surgical-navigation",
+        "label": "Surgical Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:milgram-kishino-continuum",
+        "label": "Milgram-Kishino Continuum"
+      },
+      {
+        "id": "urn:visionflow:linked:occlusion-rendering",
+        "label": "Occlusion Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:physics-coherent-holography",
+        "label": "Physics Coherent Holography"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-scene-understanding",
+        "label": "Semantic Scene Understanding"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-anchor-services",
+        "label": "Spatial Anchor Services"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reality-virtuality-continuum",
+        "label": "Reality-Virtuality Continuum"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "6-do-f-tracking",
+      "label": "6DoF Tracking"
+    },
+    {
+      "slug": "ambient-computing",
+      "label": "Ambient Computing"
+    },
+    {
+      "slug": "architectural-visualisation",
+      "label": "Architectural Visualisation"
+    },
+    {
+      "slug": "avatar-presence",
+      "label": "Avatar Presence"
+    },
+    {
+      "slug": "azure-spatial-anchors",
+      "label": "Azure Spatial Anchors"
+    },
+    {
+      "slug": "cloud-anchor-infrastructure",
+      "label": "Cloud Anchor Infrastructure"
+    },
+    {
+      "slug": "compute-so-c",
+      "label": "Compute SoC"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "depth-sensor",
+      "label": "Depth Sensor"
+    },
+    {
+      "slug": "device-layer",
+      "label": "DeviceLayer"
+    },
+    {
+      "slug": "diffractive-waveguide",
+      "label": "Diffractive Waveguide"
+    },
+    {
+      "slug": "digital-twin-overlay",
+      "label": "Digital Twin Overlay"
+    },
+    {
+      "slug": "display-calibration",
+      "label": "Display Calibration"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "flat-screen-computing",
+      "label": "Flat Screen Computing"
+    },
+    {
+      "slug": "foveated-rendering",
+      "label": "Foveated Rendering"
+    },
+    {
+      "slug": "head-mounted-display",
+      "label": "Head-Mounted Display"
+    },
+    {
+      "slug": "holographic-rendering",
+      "label": "Holographic Rendering"
+    },
+    {
+      "slug": "holographic-training",
+      "label": "Holographic Training"
+    },
+    {
+      "slug": "holography",
+      "label": "Holography"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "ieee-vr",
+      "label": "IEEE VR"
+    },
+    {
+      "slug": "immersive-collaboration",
+      "label": "Immersive Collaboration"
+    },
+    {
+      "slug": "immersive-computing",
+      "label": "Immersive Computing"
+    },
+    {
+      "slug": "imu",
+      "label": "IMU"
+    },
+    {
+      "slug": "industrial-inspection",
+      "label": "Industrial Inspection"
+    },
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "inside-out-tracking",
+      "label": "Inside-Out Tracking"
+    },
+    {
+      "slug": "iso-tc-159-ergonomics",
+      "label": "ISO TC 159 Ergonomics"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "latency-budget",
+      "label": "Latency Budget"
+    },
+    {
+      "slug": "li-dar-scanner",
+      "label": "LiDAR Scanner"
+    },
+    {
+      "slug": "meta-spatial-anchors",
+      "label": "Meta Spatial Anchors"
+    },
+    {
+      "slug": "micro-oled-display",
+      "label": "Micro-OLED Display"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
+      "slug": "milgram-kishino-continuum",
+      "label": "Milgram-Kishino Continuum"
+    },
+    {
+      "slug": "non-spatial-computing",
+      "label": "Non-Spatial Computing"
+    },
+    {
+      "slug": "occlusion-rendering",
+      "label": "Occlusion Rendering"
+    },
+    {
+      "slug": "open-xr-scene-understanding-extension",
+      "label": "OpenXR Scene Understanding Extension"
+    },
+    {
+      "slug": "open-xr-standard",
+      "label": "OpenXR Standard"
+    },
+    {
+      "slug": "pancake-lens",
+      "label": "Pancake Lens"
+    },
+    {
+      "slug": "pass-through-video",
+      "label": "Pass-Through Video"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "PerceptionLayer"
+    },
+    {
+      "slug": "perceptual-computing",
+      "label": "Perceptual Computing"
+    },
+    {
+      "slug": "perceptual-computing-domain",
+      "label": "PerceptualComputingDomain"
+    },
+    {
+      "slug": "physics-coherent-holography",
+      "label": "Physics Coherent Holography"
+    },
+    {
+      "slug": "remote-assistance",
+      "label": "Remote Assistance"
+    },
+    {
+      "slug": "scene-reconstruction",
+      "label": "Scene Reconstruction"
+    },
+    {
+      "slug": "screen-based-collaboration",
+      "label": "Screen-Based Collaboration"
+    },
+    {
+      "slug": "semantic-scene-understanding",
+      "label": "Semantic Scene Understanding"
+    },
+    {
+      "slug": "silicon-carbide-waveguide",
+      "label": "Silicon Carbide Waveguide"
+    },
+    {
+      "slug": "slam-algorithms",
+      "label": "SLAM Algorithms"
+    },
+    {
+      "slug": "spatial-anchor-services",
+      "label": "Spatial Anchor Services"
+    },
+    {
+      "slug": "spatial-audio-experience",
+      "label": "Spatial Audio Experience"
+    },
+    {
+      "slug": "spatial-audio-processing",
+      "label": "Spatial Audio Processing"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "spatial-data-visualisation",
+      "label": "Spatial Data Visualisation"
+    },
+    {
+      "slug": "surgical-navigation",
+      "label": "Surgical Navigation"
+    },
+    {
+      "slug": "time-of-flight-sensor",
+      "label": "Time-of-Flight Sensor"
+    },
+    {
+      "slug": "traditional-2-d-interface",
+      "label": "Traditional 2D Interface"
+    },
+    {
+      "slug": "transformer-vision-model",
+      "label": "Transformer Vision Model"
+    },
+    {
+      "slug": "unity-xri",
+      "label": "Unity XRI"
+    },
+    {
+      "slug": "unreal-engine-xr",
+      "label": "Unreal Engine XR"
+    },
+    {
+      "slug": "usd-aousd",
+      "label": "USD AOUSD"
+    },
+    {
+      "slug": "vision-os",
+      "label": "visionOS"
+    },
+    {
+      "slug": "visual-inertial-odometry",
+      "label": "Visual Inertial Odometry"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
+    },
+    {
+      "slug": "w3-c-web-xr-device-api",
+      "label": "W3C WebXR Device API"
+    },
+    {
+      "slug": "waveguide-optics",
+      "label": "Waveguide Optics"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    },
+    {
+      "slug": "world-anchor",
+      "label": "World Anchor"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI Companions"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human Computer Interaction"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "reality-virtuality-continuum",
+      "label": "Reality-Virtuality Continuum"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-mapping",
+      "label": "Spatial Mapping"
+    },
+    {
+      "slug": "spatial-mesh",
+      "label": "Spatial Mesh"
+    },
+    {
+      "slug": "spatial-web",
+      "label": "Spatial Web"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "augmented-reality-collaboration",
+      "label": "Augmented Reality Collaboration"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

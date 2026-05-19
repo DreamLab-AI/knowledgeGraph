@@ -1,21 +1,340 @@
-iri:: http://narrativegoldmine.com/metaverse#AILifecycle
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-lifecycle
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-lifecycle
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Lifecycle
-content-hash:: sha256-12-2b5cdb9ad0a6
-legacy-term-id:: AI-0092
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AILifecycle
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-lifecycle
 public:: true
+
+# AI Lifecycle
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47",
+  "@type": "Page",
+  "vc:slug": "ai-lifecycle",
+  "title": "AI Lifecycle",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:fda-software-as-medical-device",
+      "vc:label": "FDA Software as Medical Device"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23053",
+      "vc:label": "ISO/IEC 23053"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001-2023",
+      "vc:label": "ISO/IEC 42001:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-5338-2023",
+      "vc:label": "ISO/IEC 5338:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:stakeholder-engagement-throughout",
+      "vc:label": "Stakeholder engagement throughout"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-deployment",
+      "vc:label": "AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-development",
+      "vc:label": "AI Development"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-impact-assessment",
+      "vc:label": "AI Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-monitoring",
+      "vc:label": "AI Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2b5cdb9ad0a6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AILifecycle"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0092"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Lifecycle"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-lifecycle"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-lifecycle"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-lifecycle",
+  "@type": "OntologyClass",
+  "label": "AI Lifecycle",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:stakeholder-engagement-throughout",
+      "vc:label": "Stakeholder engagement throughout"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-lifecycle:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[FDA Software as Medical Device]]",
+      "resolved": "urn:visionflow:linked:fda-software-as-medical-device",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23053]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23053",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 5338:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-5338-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stakeholder engagement throughout]]",
+      "resolved": "urn:visionflow:linked:stakeholder-engagement-throughout",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Deployment]]",
+      "resolved": "urn:visionflow:owl:class:ai-deployment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Development]]",
+      "resolved": "urn:visionflow:owl:class:ai-development",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Impact Assessment]]",
+      "resolved": "urn:visionflow:owl:class:ai-impact-assessment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Monitoring]]",
+      "resolved": "urn:visionflow:owl:class:ai-monitoring",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Oversight]]",
+      "resolved": "urn:visionflow:owl:class:human-oversight",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:risk-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.

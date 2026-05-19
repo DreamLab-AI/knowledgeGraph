@@ -1,0 +1,169 @@
+{
+  "id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88",
+  "title": "AI Impact Assessment",
+  "slug": "ai-impact-assessment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-impact-assessment",
+  "domain": "artificial-intelligence",
+  "definition": "A systematic process for identifying, analysing, evaluating, and documenting the potential positive and negative effects of an artificial intelligence system on individuals, groups, organisations, society, and the environment across multiple dimensions including fundamental rights, ethical principles, safety, fairness, privacy, environmental sustainability, and socioeconomic impacts, conducted prior to deployment and periodically thereafter to inform design decisions, risk mitigation strategies, governance arrangements, and stakeholder communication regarding AI system consequences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:informed-decision-making",
+        "label": "Informed decision-making"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparency",
+        "label": "transparency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dpia",
+      "label": "DPIA"
+    },
+    {
+      "slug": "eu-ai-act-article-27",
+      "label": "EU AI Act Article 27"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "informed-decision-making",
+      "label": "Informed decision-making"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "iso-iec-24368",
+      "label": "ISO/IEC 24368"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "un-guiding-principles-on-business-and-human-rights",
+      "label": "UN Guiding Principles on Business and Human Rights"
+    },
+    {
+      "slug": "accountability",
+      "label": "accountability"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stakeholder",
+      "label": "Stakeholder"
+    },
+    {
+      "slug": "transparency",
+      "label": "transparency"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "stakeholder",
+      "label": "Stakeholder"
+    }
+  ]
+}

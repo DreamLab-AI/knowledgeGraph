@@ -1,0 +1,536 @@
+{
+  "id": "urn:visionflow:page:4b098d935b6429a80bc28a867810b83990a70d80d3cd80d2d5d71e9ba03441f3",
+  "title": "Proprietary Large Language Models",
+  "slug": "proprietary-large-language-models",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proprietary-large-language-models",
+  "domain": "artificial-intelligence",
+  "definition": "Proprietary Large Language Models (PLLMs) are closed-weight, commercially deployed [[Foundation Models]] trained on multi-trillion-token corpora by well-resourced AI laboratories, where model weights, training data composition, and architectural specifics are withheld from the public under commercial licence agreements, distinguishing them from [[Open Source AI]] counterparts and defining a distinct commercialisation strategy within the broader [[Generative AI]] ecosystem. The five defining characteristics of PLLMs are: (1) **weight non-disclosure** \u2014 inference is provided exclusively via API endpoints, web products, or enterprise deployments, preventing local fine-tuning, weight inspection, mechanistic interpretability analysis, or redistribution; practitioners interact with models as black-box services rather than artefacts under their direct control; (2) **frontier-scale training** \u2014 parameter counts range from tens of billions in efficiency variants (GPT-4o Mini, Gemini 2.0 Flash, Claude Haiku) to estimated hundreds of billions or above for flagship models (GPT-4 ~1.7T total MoE, Claude 3 Opus ~450B dense equivalent, Gemini Ultra ~1.5T MoE, Grok 3 ~314B dense), trained on 2T\u201315",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenizer",
+        "label": "Tokenizer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:human-feedback-data",
+        "label": "Human Feedback Data"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-infrastructure",
+        "label": "Inference Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:large-scale-compute",
+        "label": "Large Scale Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-testing",
+        "label": "Safety Testing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:visionflow:owl:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multimodal",
+        "label": "Multimodal"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "commercial-aidomain",
+      "label": "CommercialAIDomain"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "enterprise-integration-layer",
+      "label": "EnterpriseIntegrationLayer"
+    },
+    {
+      "slug": "foundation-model-domain",
+      "label": "FoundationModelDomain"
+    },
+    {
+      "slug": "human-feedback-data",
+      "label": "Human Feedback Data"
+    },
+    {
+      "slug": "inference-apilayer",
+      "label": "InferenceAPILayer"
+    },
+    {
+      "slug": "inference-infrastructure",
+      "label": "Inference Infrastructure"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO IEC 42001"
+    },
+    {
+      "slug": "large-scale-compute",
+      "label": "Large Scale Compute"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "product-layer",
+      "label": "ProductLayer"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "safety-evaluation",
+      "label": "Safety Evaluation"
+    },
+    {
+      "slug": "safety-testing",
+      "label": "Safety Testing"
+    },
+    {
+      "slug": "self-hosted-ai",
+      "label": "Self Hosted AI"
+    },
+    {
+      "slug": "system-prompt",
+      "label": "System Prompt"
+    },
+    {
+      "slug": "tokenizer",
+      "label": "Tokenizer"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-superintelligence",
+      "label": "Artificial Superintelligence"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "multimodal",
+      "label": "Multimodal"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "host-january-17th-presentation",
+      "label": "HOST January 17th Presentation"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "overview-of-machine-learning-techniques",
+      "label": "Overview of Machine Learning Techniques"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "label": "State of the art in AI"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

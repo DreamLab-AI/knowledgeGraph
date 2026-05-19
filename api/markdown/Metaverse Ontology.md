@@ -1,24 +1,300 @@
-iri:: http://narrativegoldmine.com/spatial-computing#MetaverseOntology
-uri:: urn:visionclaw:concept:spatial-computing:metaverse-ontology
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:metaverse-ontology
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Metaverse Ontology
-content-hash:: sha256-12-6dc0c1fe11f4
-legacy-term-id::
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#MetaverseOntology
+legacy_uri:: urn:visionclaw:concept:spatial-computing:metaverse-ontology
 public:: true
+
+# Metaverse Ontology
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9fef0d0ddfa8c54d5ac8febe8f71eb789cb8df7b8270cefbd5ccabcdbd92bfd3",
+  "@type": "Page",
+  "vc:slug": "metaverse-ontology",
+  "title": "Metaverse Ontology",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:agentic-mycelia",
+      "vc:label": "Agentic Mycelia"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cashu",
+      "vc:label": "Cashu"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graphing",
+      "vc:label": "Knowledge Graphing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "vc:label": "Lightning and Similar L2"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:logseq",
+      "vc:label": "Logseq"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ontology-conversation-with-ais",
+      "vc:label": "Ontology conversation with AIs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rgb-and-client-side-validation",
+      "vc:label": "RGB and Client Side Validation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:some-legacy-linked-json",
+      "vc:label": "Some legacy Linked-JSON"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6dc0c1fe11f4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#MetaverseOntology"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Metaverse Ontology"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-ontology"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-ontology"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fef0d0ddfa8c54d5ac8febe8f71eb789cb8df7b8270cefbd5ccabcdbd92bfd3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:metaverse-ontology",
+  "@type": "OntologyClass",
+  "label": "Metaverse Ontology",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9fef0d0ddfa8c54d5ac8febe8f71eb789cb8df7b8270cefbd5ccabcdbd92bfd3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fef0d0ddfa8c54d5ac8febe8f71eb789cb8df7b8270cefbd5ccabcdbd92bfd3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Metaverse Ontology is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-ontology:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9fef0d0ddfa8c54d5ac8febe8f71eb789cb8df7b8270cefbd5ccabcdbd92bfd3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Agentic Mycelia]]",
+      "resolved": "urn:visionflow:owl:class:agentic-mycelia",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Anthropic Claude]]",
+      "resolved": "urn:visionflow:owl:class:anthropic-claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cashu]]",
+      "resolved": "urn:visionflow:owl:class:cashu",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graphing]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning and Similar L2]]",
+      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Logseq]]",
+      "resolved": "urn:visionflow:owl:class:logseq",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ontology conversation with AIs]]",
+      "resolved": "urn:visionflow:owl:class:ontology-conversation-with-ais",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RGB and Client Side Validation]]",
+      "resolved": "urn:visionflow:owl:class:rgb-and-client-side-validation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Some legacy Linked-JSON]]",
+      "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fef0d0ddfa8c54d5ac8febe8f71eb789cb8df7b8270cefbd5ccabcdbd92bfd3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Metaverse Ontology is a concept within the ngm domain.
@@ -45,7 +321,7 @@ public:: true
 				- [FormalMetaverseBTC.owl](../assets/FormalMetaverseBTC_1712344339842_0.owl)
 			- ![metaverse.png](../assets/metaverse_1712344788144_0.png){:height 439, :width 818}
 		- For ease of comprehension I attempted to convert the OWL schema to JSON-LD. This attempt did achieve a result, but it proved difficult to visualise.
-		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large language models]].
+		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large Language Models]].
 		- Because of this the decision was made to switch to [Linked-JSON](https://linkedobjects.org/Linked-JSON), which is a simpler and less expressive subset of JSON-LD. Linked-JSON focusses on `@id` linking. It sacrifices some features provided by JSON-LD 1.1's context definitions, typing, and alignment with RDF concepts.
 			- Scope and Complexity of Linked-JSON vs JSON-LD
 				- Linked-JSON: lightweight subset focused on linking data using `@id`

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:629787a82bc138a8f2ab16e5cc04694f0e986197ab338626e92db1e0e07beab6",
+  "title": "Mecanum Wheel Robot",
+  "slug": "mecanum-wheel-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mecanum-wheel-robot",
+  "domain": "robotics",
+  "definition": "Mecanum robot uses four mecanum wheels with angled rollers enabling true omnidirectional movement.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:omnidirectional-robot",
+      "label": "Omnidirectional Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "omnidirectional-robot",
+      "label": "Omnidirectional Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

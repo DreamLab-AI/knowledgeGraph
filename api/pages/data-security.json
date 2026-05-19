@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:48f1a61fedb25651c5d54b327adffe18b940995a6e38a66d7d68be08e1b5f61e",
+  "title": "Data Security",
+  "slug": "data-security",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-security",
+  "domain": "spatial-computing",
+  "definition": "Data Security is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "secure-data-sharing",
+      "label": "Secure Data Sharing"
+    }
+  ]
+}

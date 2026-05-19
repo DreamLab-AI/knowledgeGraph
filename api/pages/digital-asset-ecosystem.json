@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:82fcc4e5f4fb5aac912c8c8084df38bb4f0488edb555fd6077f725c7bafb9696",
+  "title": "Digital Asset Ecosystem",
+  "slug": "digital-asset-ecosystem",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-asset-ecosystem",
+  "domain": "spatial-computing",
+  "definition": "The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralized infrastructure. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:exchange-platforms",
+        "label": "Exchange Platforms"
+      },
+      {
+        "id": "urn:visionflow:linked:wallet-infrastructure",
+        "label": "Wallet Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:de-fi-services",
+        "label": "DeFi Services"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "exchange-platforms",
+      "label": "Exchange Platforms"
+    },
+    {
+      "slug": "wallet-infrastructure",
+      "label": "Wallet Infrastructure"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "de-fi-services",
+      "label": "DeFi Services"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:0414245b4de78fd9f7aeaad400a9a4e8d34ab8e462d03cb3f913063c5d9d6f4d",
+  "title": "Documentation Standards",
+  "slug": "documentation-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:documentation-standards",
+  "domain": "spatial-computing",
+  "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2048-101-2023",
+      "label": "IEEE 2048.101-2023"
+    },
+    {
+      "slug": "ieee-3079-2020",
+      "label": "IEEE 3079-2020"
+    },
+    {
+      "slug": "ieee-7014-2024",
+      "label": "IEEE 7014-2024"
+    },
+    {
+      "slug": "ieee-p2048",
+      "label": "IEEE P2048"
+    },
+    {
+      "slug": "ieee-p7016",
+      "label": "IEEE P7016"
+    },
+    {
+      "slug": "iso-iec-18039-2019",
+      "label": "ISO/IEC 18039:2019"
+    },
+    {
+      "slug": "itu",
+      "label": "ITU"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    }
+  ]
+}

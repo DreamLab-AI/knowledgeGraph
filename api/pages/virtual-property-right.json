@@ -1,0 +1,186 @@
+{
+  "id": "urn:visionflow:page:8c2580748dd25e5f68db64b0d5751504ef17eaf9b59c5bc465543b4efac9c1f7",
+  "title": "Virtual Property Right",
+  "slug": "virtual-property-right",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-property-right",
+  "domain": "spatial-computing",
+  "definition": "A legally recognized claim to ownership, use, transfer, or exclusion rights over digital assets, virtual goods, or intangible resources within virtual environments, enforced through technical mechanisms, platform policies, or legal frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:enforcement-system",
+        "label": "Enforcement System"
+      },
+      {
+        "id": "urn:visionflow:linked:exclusion-right",
+        "label": "Exclusion Right"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-claim",
+        "label": "Ownership Claim"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-mechanism",
+        "label": "Transfer Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-permission",
+        "label": "Usage Permission"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-recognition",
+        "label": "Legal Recognition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ip-protection",
+        "label": "IP Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-asset-trading",
+        "label": "Virtual Asset Trading"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-land-rights",
+        "label": "Virtual Land Rights"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication-mechanism",
+      "label": "Authentication Mechanism"
+    },
+    {
+      "slug": "enforcement-system",
+      "label": "Enforcement System"
+    },
+    {
+      "slug": "exclusion-right",
+      "label": "Exclusion Right"
+    },
+    {
+      "slug": "ip-protection",
+      "label": "IP Protection"
+    },
+    {
+      "slug": "legal-entity",
+      "label": "Legal Entity"
+    },
+    {
+      "slug": "legal-recognition",
+      "label": "Legal Recognition"
+    },
+    {
+      "slug": "legal-system",
+      "label": "Legal System"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "ownership-claim",
+      "label": "Ownership Claim"
+    },
+    {
+      "slug": "property-law-framework",
+      "label": "Property Law Framework"
+    },
+    {
+      "slug": "transfer-mechanism",
+      "label": "Transfer Mechanism"
+    },
+    {
+      "slug": "uniform-commercial-code-ucc-article-12",
+      "label": "Uniform Commercial Code (UCC) Article 12"
+    },
+    {
+      "slug": "usage-permission",
+      "label": "Usage Permission"
+    },
+    {
+      "slug": "world-intellectual-property-organization-wipo",
+      "label": "World Intellectual Property Organization (WIPO)"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-asset-trading",
+      "label": "Virtual Asset Trading"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "virtual-land-rights",
+      "label": "Virtual Land Rights"
+    }
+  ],
+  "backlinks": []
+}

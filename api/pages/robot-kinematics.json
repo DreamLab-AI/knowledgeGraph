@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:e07f66c16ade10a059b7fafd6a0117a5c3cfe78176aa77259f4825bea47d685d",
+  "title": "Robot Kinematics",
+  "slug": "robot-kinematics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-kinematics",
+  "domain": "robotics",
+  "definition": "**Robot Kinematics** - Study of robot motion without considering forces",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:b35f2098ca1a89a0012a7e5bf5e26c2dbc8bf3dbc141cf25133bdc2f32dce358",
+  "title": "Dynamic Character Animation",
+  "slug": "dynamic-character-animation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dynamic-character-animation",
+  "domain": "spatial-computing",
+  "definition": "Real-time procedural animation techniques that enable 3D avatars and characters to move, express, and respond dynamically to user input and environmental stimuli in metaverse environments, utilising motion capture, rigging systems, and AI-driven motion synthesis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-animation",
+      "label": "3D Animation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-animation",
+      "label": "3D Animation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

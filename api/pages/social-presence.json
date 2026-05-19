@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:9e72c244193228052525cf78f2adbdbc525b04fe80c47a1cb4df5a71bf4f3cce",
+  "title": "Social Presence",
+  "slug": "social-presence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-presence",
+  "domain": "distributed-collaboration",
+  "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:presence",
+      "label": "Presence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "presence-research",
+      "label": "Presence Research"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "TelecollaborationDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "proteus-effect",
+      "label": "Proteus Effect"
+    },
+    {
+      "slug": "synchronous-collaboration",
+      "label": "Synchronous Collaboration"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-group-dynamics",
+      "label": "Virtual Group Dynamics"
+    }
+  ]
+}

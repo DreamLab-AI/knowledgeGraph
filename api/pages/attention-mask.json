@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:c52a4e909ce5d45353c4991b39be71ced1ce239e43d1d2a915cb20c775d50e0a",
+  "title": "Attention Mask",
+  "slug": "attention-mask",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:attention-mask",
+  "domain": "artificial-intelligence",
+  "definition": "A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d7d8ef0d874fe056981f805578f8f9fee404c5b09783b825ffad6a879261e69c",
+  "title": "VR Rendering Engine",
+  "slug": "vr-rendering-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vr-rendering-engine",
+  "domain": "spatial-computing",
+  "definition": "Specialized real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimizing frame rates, latency, and visual fidelity while managing the unique requirements of immersive display including foveated rendering, reprojection, and lens distortion correction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:game-engine",
+      "label": "Game Engine"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

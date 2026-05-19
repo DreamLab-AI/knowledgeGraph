@@ -1,0 +1,186 @@
+{
+  "id": "urn:visionflow:page:a04e88f0a6c5216e53b9d503aac690f292f382f6a94a0df1483a8ca3b0078b21",
+  "title": "Construction Digital Twin",
+  "slug": "construction-digital-twin",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:construction-digital-twin",
+  "domain": "spatial-computing",
+  "definition": "An integrated 3D model of built assets synchronized with real-time construction, operational, and maintenance data, enabling lifecycle management from design through decommissioning.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-database",
+        "label": "Asset Database"
+      },
+      {
+        "id": "urn:visionflow:linked:bim-model",
+        "label": "BIM Model"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-management-system",
+        "label": "Energy Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:maintenance-schedule",
+        "label": "Maintenance Schedule"
+      },
+      {
+        "id": "urn:visionflow:owl:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-synchronization",
+        "label": "Real-time Synchronization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bim-software",
+        "label": "BIM Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:energy-optimization",
+        "label": "Energy Optimization"
+      },
+      {
+        "id": "urn:visionflow:linked:lifecycle-management",
+        "label": "Lifecycle Management"
+      },
+      {
+        "id": "urn:visionflow:linked:space-planning",
+        "label": "Space Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-database",
+      "label": "Asset Database"
+    },
+    {
+      "slug": "bim-model",
+      "label": "BIM Model"
+    },
+    {
+      "slug": "bsi-digital-built-britain",
+      "label": "BSI Digital Built Britain"
+    },
+    {
+      "slug": "building-information-modeling",
+      "label": "Building Information Modeling"
+    },
+    {
+      "slug": "cloud-platform",
+      "label": "Cloud Platform"
+    },
+    {
+      "slug": "construction-data",
+      "label": "Construction Data"
+    },
+    {
+      "slug": "energy-management-system",
+      "label": "Energy Management System"
+    },
+    {
+      "slug": "energy-optimization",
+      "label": "Energy Optimization"
+    },
+    {
+      "slug": "facility-management-system",
+      "label": "Facility Management System"
+    },
+    {
+      "slug": "io-t-infrastructure",
+      "label": "IoT Infrastructure"
+    },
+    {
+      "slug": "iso-23247",
+      "label": "ISO 23247"
+    },
+    {
+      "slug": "lifecycle-management",
+      "label": "Lifecycle Management"
+    },
+    {
+      "slug": "maintenance-schedule",
+      "label": "Maintenance Schedule"
+    },
+    {
+      "slug": "real-time-synchronization",
+      "label": "Real-time Synchronization"
+    },
+    {
+      "slug": "smart-building-ecosystem",
+      "label": "Smart Building Ecosystem"
+    },
+    {
+      "slug": "space-planning",
+      "label": "Space Planning"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "bim-software",
+      "label": "BIM Software"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    }
+  ],
+  "backlinks": []
+}

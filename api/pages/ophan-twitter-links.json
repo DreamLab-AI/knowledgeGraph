@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:e49c9b7782bec0f9be89b653e1e95c977dfdb6611db04705e74da9e4c8e9a039",
+  "title": "Ophan Twitter Links",
+  "slug": "ophan-twitter-links",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ophan-twitter-links",
+  "domain": "infrastructure",
+  "definition": "Ophan Twitter Links is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

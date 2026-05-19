@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:78eeca1f0accf201d69082051d7abb3798abe16789572a5ad2a64e42c844db84",
+  "title": "Training Methods",
+  "slug": "training-methods",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:training-methods",
+  "domain": "artificial-intelligence",
+  "definition": "Training Methods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data. These methods include supervised learning, unsupervised learning, reinforcement learning, transfer learning, fine-tuning, and curriculum learning approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:a75ad0064cb5ed94f648776a82081d34838694b2ce13b99ade11d4641ec42262",
+  "title": "rb 0069 lidar",
+  "slug": "rb-0069-lidar",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0069-lidar",
+  "domain": "robotics",
+  "definition": "A remote sensing technology that measures distances by emitting laser pulses and calculating time-of-flight to generate precise three-dimensional point clouds of the surrounding environment, enabling robots and autonomous vehicles to perceive and navigate physical space with centimetre-level accuracy.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:lidar",
+      "label": "Lidar"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-mapping",
+        "label": "3D Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:obstacle-detection",
+        "label": "Obstacle Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-mapping",
+      "label": "3D Mapping"
+    },
+    {
+      "slug": "camera-sensor",
+      "label": "Camera Sensor"
+    },
+    {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
+    },
+    {
+      "slug": "icra-2023",
+      "label": "ICRA 2023"
+    },
+    {
+      "slug": "imu",
+      "label": "IMU"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "obstacle-detection",
+      "label": "Obstacle Detection"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
+      "slug": "robotics-ontology-working-group",
+      "label": "Robotics Ontology Working Group"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ],
+  "backlinks": []
+}

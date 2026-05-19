@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:1b39ad9f1bbceb3d430760d3f3995b5aacbf1fff128b9b207b2385fcabfd9bed",
+  "title": "Royalty Distribution",
+  "slug": "royalty-distribution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:royalty-distribution",
+  "domain": "blockchain",
+  "definition": "Automated royalty payments via smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    }
+  ]
+}

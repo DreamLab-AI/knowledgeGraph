@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:36761d5aab972caa47e7de8a7c87530fe74020d19e91c073babb975c0483f65e",
+  "title": "3DReconstruction",
+  "slug": "3-dreconstruction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:3-dreconstruction",
+  "domain": "infrastructure",
+  "definition": "3DReconstruction is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-vr-conference",
+      "label": "IEEE VR Conference"
+    },
+    {
+      "slug": "iso-iec-23090",
+      "label": "ISO/IEC 23090"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "camera",
+      "label": "Camera"
+    }
+  ]
+}

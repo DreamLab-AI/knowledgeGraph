@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:78e1366eb3a868eafb37ef10eb23038093c592284ff102170d00d4f6f0247c55",
+  "title": "Scaled Dot Product Attention",
+  "slug": "scaled-dot-product-attention",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scaled-dot-product-attention",
+  "domain": "artificial-intelligence",
+  "definition": "An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:attention-mechanism",
+      "label": "Attention Mechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

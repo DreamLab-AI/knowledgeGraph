@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:7475b60ad99555d142b4a05b08e6dabe7faa71c988975a49d9f9a3fabb10c81d",
+  "title": "ETSI_Domain_Governance___Economy",
+  "slug": "etsi-domain-governance-economy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-governance-economy",
+  "domain": "artificial-intelligence",
+  "definition": "ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These [[Governance Frameworks]] integrate [[Monetary Policy]], [[Market Supervision]], and [[Economic Oversight]] to ensure stable financial operations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economic-oversight",
+      "label": "Economic Oversight"
+    },
+    {
+      "slug": "economic-policy",
+      "label": "Economic Policy"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "etsi-gr-pdl-030",
+      "label": "ETSI GR PDL 030"
+    },
+    {
+      "slug": "etsi-gr-pdl-034",
+      "label": "ETSI GR PDL 034"
+    },
+    {
+      "slug": "financial-governance",
+      "label": "Financial Governance"
+    },
+    {
+      "slug": "governance-frameworks",
+      "label": "Governance Frameworks"
+    },
+    {
+      "slug": "iso-23257",
+      "label": "ISO 23257"
+    },
+    {
+      "slug": "market-supervision",
+      "label": "Market Supervision"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

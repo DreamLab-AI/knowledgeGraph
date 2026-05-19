@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:233247b7aa699ee61669c353d1302aa0917a7d8061ad902c84aa85cde52f77cc",
+  "title": "Melvin Carvalho",
+  "slug": "melvin-carvalho",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:melvin-carvalho",
+  "domain": "infrastructure",
+  "definition": "Melvin Carvalho is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-alliance",
+      "label": "Agentic Alliance"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "runes-and-glyphs",
+      "label": "Runes and Glyphs"
+    }
+  ]
+}

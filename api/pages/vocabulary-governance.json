@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b",
+  "title": "Vocabulary Governance",
+  "slug": "vocabulary-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vocabulary-governance",
+  "domain": "artificial-intelligence",
+  "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-management",
+      "label": "Knowledge Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    }
+  ]
+}

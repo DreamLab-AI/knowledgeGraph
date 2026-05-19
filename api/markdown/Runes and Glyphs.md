@@ -1,20 +1,203 @@
-iri:: http://narrativegoldmine.com/infrastructure#RunesAndGlyphs
-uri:: urn:visionclaw:concept:infrastructure:runes-and-glyphs
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:runes-and-glyphs
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Runes and Glyphs
-content-hash:: sha256-12-a6d90482b6b6
-status:: stub
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#RunesAndGlyphs
+legacy_uri:: urn:visionclaw:concept:infrastructure:runes-and-glyphs
 public:: true
+
+# Runes and Glyphs
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d",
+  "@type": "Page",
+  "vc:slug": "runes-and-glyphs",
+  "title": "Runes and Glyphs",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-objects",
+      "vc:label": "Digital Objects"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:melvin-carvalho",
+      "vc:label": "Melvin Carvalho"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:runes-and-glyphs",
+      "vc:label": "Runes and Glyphs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:testnet",
+      "vc:label": "Testnet"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a6d90482b6b6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#RunesAndGlyphs"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Runes and Glyphs"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:runes-and-glyphs"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:runes-and-glyphs"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:runes-and-glyphs",
+  "@type": "OntologyClass",
+  "label": "Runes and Glyphs",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Runes and Glyphs is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:runes-and-glyphs:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Digital Objects]]",
+      "resolved": "urn:visionflow:owl:class:digital-objects",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Melvin Carvalho]]",
+      "resolved": "urn:visionflow:owl:class:melvin-carvalho",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Runes and Glyphs]]",
+      "resolved": "urn:visionflow:owl:class:runes-and-glyphs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Testnet]]",
+      "resolved": "urn:visionflow:owl:class:testnet",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Runes and Glyphs is a concept within the ngm domain.

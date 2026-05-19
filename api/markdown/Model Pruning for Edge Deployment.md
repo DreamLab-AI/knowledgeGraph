@@ -1,21 +1,189 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ModelPruningForEdgeDeployment
-uri:: urn:visionclaw:concept:artificial-intelligence:model-pruning-for-edge-deployment
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:model-pruning-for-edge-deployment
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Model Pruning for Edge Deployment
-content-hash:: sha256-12-287cce6399f1
-legacy-term-id:: AI-0442
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ModelPruningForEdgeDeployment
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:model-pruning-for-edge-deployment
 public:: true
+
+# Model Pruning for Edge Deployment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10",
+  "@type": "Page",
+  "vc:slug": "model-pruning-for-edge-deployment",
+  "title": "Model Pruning for Edge Deployment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-287cce6399f1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ModelPruningForEdgeDeployment"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0442"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Model Pruning for Edge Deployment"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-pruning-for-edge-deployment"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-pruning-for-edge-deployment"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:model-pruning-for-edge-deployment",
+  "@type": "OntologyClass",
+  "label": "Model Pruning for Edge Deployment",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Model Pruning for Edge Deployment systematically removes redundant weights and neurons from neural networks, reducing model size and computational requirements while maintaining sufficient accuracy for edge inference. Pruning achieves 10-100x compression ratios by exploiting the observation that large trained networks contain significant redundancy; many weights contribute negligibly to predictions. Structured pruning removes entire filters, channels, or layers, naturally reducing memory and compute requirements on hardware lacking specialized sparse matrix support. Unstructured pruning removes individual weights, achieving higher sparsity (90%+ of weights eliminated) but requiring specialized hardware or software support for sparse tensor operations. Channel pruning identifies and removes underutilized convolutional channels, reducing both parameter count and computation. Magnitude pruning removes weights below learned thresholds; lottery ticket hypothesis pruning identifies critical subnetworks that achieve comparable accuracy with far fewer parameters. Fine-tuning after pruning recovers accuracy degradation, typically losing only 1-3% accuracy while reducing model size by 10x. I",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:model-pruning-for-edge-deployment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Model Pruning for Edge Deployment systematically removes redundant weights and neurons from neural networks, reducing model size and computational requirements while maintaining sufficient accuracy for edge inference. Pruning achieves 10-100x compression ratios by exploiting the observation that large trained networks contain significant redundancy; many weights contribute negligibly to predictions. Structured pruning removes entire filters, channels, or layers, naturally reducing memory and compute requirements on hardware lacking specialized sparse matrix support. Unstructured pruning removes individual weights, achieving higher sparsity (90%+ of weights eliminated) but requiring specialized hardware or software support for sparse tensor operations. Channel pruning identifies and removes underutilized convolutional channels, reducing both parameter count and computation. Magnitude pruning removes weights below learned thresholds; lottery ticket hypothesis pruning identifies critical subnetworks that achieve comparable accuracy with far fewer parameters. Fine-tuning after pruning recovers accuracy degradation, typically losing only 1-3% accuracy while reducing model size by 10x. Iterative pruning gradually increases sparsity while monitoring accuracy, balancing compression against performance. Pruned models occupy 10-100KB instead of multi-megabyte original sizes, fitting mobile devices and embedded systems with limited storage and memory. MobileNetV3 and EfficientNet architectures employ depthwise separable convolutions and pruning for resource-efficient inference. Deployment on edge accelerators requires structured pruning supporting fixed-format sparse tensors. Model pruning represents the practical sweet spot between uncompressed accuracy and severely quantized approximations, enabling accurate on-device intelligence without specialized accelerators.

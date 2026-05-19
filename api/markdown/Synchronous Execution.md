@@ -1,21 +1,243 @@
-iri:: http://narrativegoldmine.com/blockchain#SynchronousExecution
-uri:: urn:visionclaw:concept:blockchain:synchronous-execution
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:synchronous-execution
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Synchronous Execution
-content-hash:: sha256-12-12c42ca6f4b8
-legacy-term-id:: BC-8019
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#SynchronousExecution
+legacy_uri:: urn:visionclaw:concept:blockchain:synchronous-execution
 public:: true
+
+# Synchronous Execution
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249",
+  "@type": "Page",
+  "vc:slug": "synchronous-execution",
+  "title": "Synchronous Execution",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:api-request-response",
+      "vc:label": "API Request-Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:blocking-operation",
+      "vc:label": "Blocking Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:database-operations",
+      "vc:label": "Database Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:execution-model",
+      "vc:label": "Execution Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:thread-management",
+      "vc:label": "Thread Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asynchronous-execution",
+      "vc:label": "Asynchronous Execution"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction-processing",
+      "vc:label": "Transaction Processing"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-12c42ca6f4b8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#SynchronousExecution"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8019"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Synchronous Execution"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:synchronous-execution"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:synchronous-execution"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:synchronous-execution",
+  "@type": "OntologyClass",
+  "label": "Synchronous Execution",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:execution-model",
+      "vc:label": "Execution Model"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins. The caller waits for the result before proceeding, establishing a direct temporal dependency between operations and enabling predictable, deterministic execution flow.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:synchronous-execution:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[API Request-Response]]",
+      "resolved": "urn:visionflow:linked:api-request-response",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blocking Operation]]",
+      "resolved": "urn:visionflow:linked:blocking-operation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Database Operations]]",
+      "resolved": "urn:visionflow:linked:database-operations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Execution Model]]",
+      "resolved": "urn:visionflow:linked:execution-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Thread Management]]",
+      "resolved": "urn:visionflow:linked:thread-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asynchronous Execution]]",
+      "resolved": "urn:visionflow:owl:class:asynchronous-execution",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Systems]]",
+      "resolved": "urn:visionflow:owl:class:distributed-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction Processing]]",
+      "resolved": "urn:visionflow:owl:class:transaction-processing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins. The caller waits for the result before proceeding, establishing a direct temporal dependency between operations and enabling predictable, deterministic execution flow.

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:411a49ebb03deaccbcc9a6f5bcebdbcc2e34aeecbff4af2beaaa0170e21f8843",
+  "title": "Web Dev and Consumer Tooling",
+  "slug": "web-dev-and-consumer-tooling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:web-dev-and-consumer-tooling",
+  "domain": "infrastructure",
+  "definition": "WebDev and Consumer Tooling is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "should",
+      "label": "SHOULD"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    }
+  ]
+}

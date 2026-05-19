@@ -1,24 +1,444 @@
-iri:: http://narrativegoldmine.com/spatial-computing#SLAM
-uri:: urn:visionclaw:concept:spatial-computing:slam
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:slam
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: SLAM
-content-hash:: sha256-12-0b5f55181f25
-legacy-term-id:: MV-3049
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#SLAM
+legacy_uri:: urn:visionclaw:concept:spatial-computing:slam
 public:: true
+
+# SLAM
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03",
+  "@type": "Page",
+  "vc:slug": "slam",
+  "title": "SLAM",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicles",
+      "vc:label": "AutonomousVehicles"
+    },
+    {
+      "@id": "urn:visionflow:linked:builds-map",
+      "vc:label": "buildsMap"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enables-for",
+      "vc:label": "dt:enablesFor"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enhanced-by",
+      "vc:label": "dt:enhancedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-optimized-by",
+      "vc:label": "dt:optimizedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-used-in",
+      "vc:label": "dt:usedIn"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-validated-in",
+      "vc:label": "dt:validatedIn"
+    },
+    {
+      "@id": "urn:visionflow:linked:estimates-state",
+      "vc:label": "estimatesState"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-optimization",
+      "vc:label": "GraphOptimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:implements-algorithm",
+      "vc:label": "implementsAlgorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:li-dar",
+      "vc:label": "LiDAR"
+    },
+    {
+      "@id": "urn:visionflow:linked:localization-technique",
+      "vc:label": "LocalizationTechnique"
+    },
+    {
+      "@id": "urn:visionflow:linked:loop-closure",
+      "vc:label": "LoopClosure"
+    },
+    {
+      "@id": "urn:visionflow:linked:map-construction",
+      "vc:label": "MapConstruction"
+    },
+    {
+      "@id": "urn:visionflow:linked:mapping",
+      "vc:label": "Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:occupancy-grid",
+      "vc:label": "OccupancyGrid"
+    },
+    {
+      "@id": "urn:visionflow:linked:rgbdcamera",
+      "vc:label": "RGBDCamera"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-sensor",
+      "vc:label": "usesSensor"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-odometry",
+      "vc:label": "VisualOdometry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:augmented-reality",
+      "vc:label": "AugmentedReality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:augmented-reality",
+      "vc:label": "AugmentedReality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "AutonomousNavigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "AutonomousRobot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "DeepLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "DeepLearning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:localization",
+      "vc:label": "Localization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pose-estimation",
+      "vc:label": "PoseEstimation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "VirtualEnvironment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0b5f55181f25"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#SLAM"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3049"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "SLAM"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:slam"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:slam"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:slam",
+  "@type": "OntologyClass",
+  "label": "SLAM",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-mapping",
+      "vc:label": "Spatial Mapping"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining [[LocalizationTechnique|localisation]] and [[MapConstruction|map construction]] in real-time. Essential for [[AutonomousNavigation|autonomous navigation]], [[AugmentedReality|AR/VR systems]], and [[AutonomousVehicles|autonomous vehicles]], SLAM processes sensor data from [[LiDAR]], [[RGBDCamera|RGB-D cameras]], and [[VisualOdometry|visual odometry]] to estimate robot pose and build spatial representations. Modern implementations integrate [[DeepLearning|neural networks]] for improved robustness and performance in dynamic environments.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:slam:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AutonomousVehicles|autonomous vehicles]]",
+      "resolved": "urn:visionflow:linked:autonomous-vehicles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[buildsMap]]",
+      "resolved": "urn:visionflow:linked:builds-map",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enablesFor]]",
+      "resolved": "urn:visionflow:linked:dt-enables-for",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enhancedBy]]",
+      "resolved": "urn:visionflow:linked:dt-enhanced-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:optimizedBy]]",
+      "resolved": "urn:visionflow:linked:dt-optimized-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:usedIn]]",
+      "resolved": "urn:visionflow:linked:dt-used-in",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:validatedIn]]",
+      "resolved": "urn:visionflow:linked:dt-validated-in",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[estimatesState]]",
+      "resolved": "urn:visionflow:linked:estimates-state",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GraphOptimization]]",
+      "resolved": "urn:visionflow:linked:graph-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[implementsAlgorithm]]",
+      "resolved": "urn:visionflow:linked:implements-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LiDAR]]",
+      "resolved": "urn:visionflow:linked:li-dar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LocalizationTechnique|localisation]]",
+      "resolved": "urn:visionflow:linked:localization-technique",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LoopClosure]]",
+      "resolved": "urn:visionflow:linked:loop-closure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MapConstruction|map construction]]",
+      "resolved": "urn:visionflow:linked:map-construction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mapping]]",
+      "resolved": "urn:visionflow:linked:mapping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OccupancyGrid]]",
+      "resolved": "urn:visionflow:linked:occupancy-grid",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RGBDCamera|RGB-D cameras]]",
+      "resolved": "urn:visionflow:linked:rgbdcamera",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesSensor]]",
+      "resolved": "urn:visionflow:linked:uses-sensor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VisualOdometry|visual odometry]]",
+      "resolved": "urn:visionflow:linked:visual-odometry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AugmentedReality]]",
+      "resolved": "urn:visionflow:owl:class:augmented-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AugmentedReality|AR/VR systems]]",
+      "resolved": "urn:visionflow:owl:class:augmented-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutonomousNavigation|autonomous navigation]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutonomousRobot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DeepLearning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DeepLearning|neural networks]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Localization]]",
+      "resolved": "urn:visionflow:owl:class:localization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PoseEstimation]]",
+      "resolved": "urn:visionflow:owl:class:pose-estimation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEnvironment]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining [[LocalizationTechnique|localisation]] and [[MapConstruction|map construction]] in real-time. Essential for [[AutonomousNavigation|autonomous navigation]], [[AugmentedReality|AR/VR systems]], and [[AutonomousVehicles|autonomous vehicles]], SLAM processes sensor data from [[LiDAR]], [[RGBDCamera|RGB-D cameras]], and [[VisualOdometry|visual odometry]] to estimate robot pose and build spatial representations. Modern implementations integrate [[DeepLearning|neural networks]] for improved robustness and performance in dynamic environments.

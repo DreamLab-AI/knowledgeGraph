@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d",
+  "title": "Healthcare Records",
+  "slug": "healthcare-records",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:healthcare-records",
+  "domain": "blockchain",
+  "definition": "Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.9,
+  "maturity": "draft",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0456-self-sovereign-identity",
+      "label": "BC-0456-self-sovereign-identity"
+    },
+    {
+      "slug": "bc-0457-decentralized-identifiers",
+      "label": "BC-0457-decentralized-identifiers"
+    },
+    {
+      "slug": "bc-0458-verifiable-credentials",
+      "label": "BC-0458-verifiable-credentials"
+    },
+    {
+      "slug": "bc-0459-digital-identity-wallet",
+      "label": "BC-0459-digital-identity-wallet"
+    },
+    {
+      "slug": "bc-0476-aml-kyc-compliance",
+      "label": "BC-0476-aml-kyc-compliance"
+    },
+    {
+      "slug": "bc-0492-clinical-trials",
+      "label": "BC-0492-clinical-trials"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    }
+  ]
+}

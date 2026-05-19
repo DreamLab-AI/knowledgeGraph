@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:1001207f4ea76f7c3328b261c4e69e384d26710acd8a737a25ed5f76cee1b458",
+  "title": "AI Metadata",
+  "slug": "ai-metadata",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-metadata",
+  "domain": "artificial-intelligence",
+  "definition": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts. This includes model cards documenting architecture details, training procedures, performance metrics, intended use cases, ethical considerations, and known limitations. Dataset metadata captures information about data sources, collection methods, preprocessing steps, labeling procedures, and potential biases. Comprehensive AI metadata enables reproducibility, transparency, regulatory compliance, and responsible AI deployment across the machine learning lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ml-reproducibility",
+      "label": "ML Reproducibility"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    }
+  ],
+  "backlinks": []
+}

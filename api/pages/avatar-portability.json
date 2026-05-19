@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:f9b900d1f22554de8a4edcf5196b2c0cca2dc7e128a05291048c0ee82aede7ab",
+  "title": "Avatar Portability",
+  "slug": "avatar-portability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-portability",
+  "domain": "spatial-computing",
+  "definition": "Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-asset-portability",
+      "label": "Digital Asset Portability"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:platform-integration",
+        "label": "Platform Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:standardized-formats",
+        "label": "Standardized Formats"
+      },
+      {
+        "id": "urn:visionflow:linked:translation-frameworks",
+        "label": "Translation Frameworks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-continuity",
+        "label": "Asset Continuity"
+      },
+      {
+        "id": "urn:visionflow:linked:seamless-world-transitions",
+        "label": "Seamless World Transitions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-continuity",
+      "label": "Asset Continuity"
+    },
+    {
+      "slug": "digital-asset-portability",
+      "label": "Digital Asset Portability"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "platform-integration",
+      "label": "Platform Integration"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
+    },
+    {
+      "slug": "seamless-world-transitions",
+      "label": "Seamless World Transitions"
+    },
+    {
+      "slug": "standardized-formats",
+      "label": "Standardized Formats"
+    },
+    {
+      "slug": "translation-frameworks",
+      "label": "Translation Frameworks"
+    },
+    {
+      "slug": "vrm-consortium",
+      "label": "VRM Consortium"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "vrm-format",
+      "label": "VRM Format"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

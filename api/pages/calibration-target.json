@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:c3f34c826744c596be63019f2ac87bbb6e0e487cd2c093220c32107ce762c71c",
+  "title": "Calibration Target",
+  "slug": "calibration-target",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:calibration-target",
+  "domain": "spatial-computing",
+  "definition": "A physical or displayed reference pattern with precisely known geometric, photometric, or colorimetric properties used to determine camera intrinsic and extrinsic parameters, enabling accurate lens distortion correction, spatial measurement, and color reproduction in imaging systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:reference-standard",
+      "label": "Reference Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:flatness-control",
+        "label": "Flatness Control"
+      },
+      {
+        "id": "urn:visionflow:linked:pattern-definition",
+        "label": "Pattern Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:color-accuracy",
+        "label": "Color Accuracy"
+      },
+      {
+        "id": "urn:visionflow:linked:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "color-accuracy",
+      "label": "Color Accuracy"
+    },
+    {
+      "slug": "flatness-control",
+      "label": "Flatness Control"
+    },
+    {
+      "slug": "lens-distortion-correction",
+      "label": "Lens Distortion Correction"
+    },
+    {
+      "slug": "pattern-definition",
+      "label": "Pattern Definition"
+    },
+    {
+      "slug": "precision-manufacturing",
+      "label": "Precision Manufacturing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "reference-standard",
+      "label": "Reference Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    }
+  ]
+}

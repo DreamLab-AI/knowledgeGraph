@@ -1,0 +1,22 @@
+- ### Definition
+  - ProfileManagement is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:ProfileManagement
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  # ProfileManagement
+  ProfileManagement represents a key component in Metaverse infrastructure and technology. Research: ProfileManagement - user profiles, avatar customization, preference settings
+  - https://www.khronos.org/ - Industry standards
+  - https://www.w3.org/TR/ - Web standards
+  - https://developer.mozilla.org/ - Technical documentation
+
+  ## Sources
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,186 @@
+{
+  "id": "urn:visionflow:page:bbf389691576cdd3333cdf8aebd78cac872dc0cdf38f27dfefc4a02cb11dffa8",
+  "title": "EMC Standard",
+  "slug": "emc-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:emc-standard",
+  "domain": "robotics",
+  "definition": "EMC standard ensures robots neither emit electromagnetic interference that disrupts other equipment nor experience susceptibility to external electromagnetic noise that degrades performance. These standards, including [[IEC 61000]] series and equivalents, define measurement procedures and immunity limits enabling robots to operate reliably alongside other industrial equipment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:electromagnetic-compatibility",
+      "label": "Electromagnetic Compatibility"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-standard",
+      "label": "Robot Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:compliance-criteria",
+        "label": "Compliance Criteria"
+      },
+      {
+        "id": "urn:visionflow:linked:emissions-limit",
+        "label": "Emissions Limit"
+      },
+      {
+        "id": "urn:visionflow:linked:immunity-requirement",
+        "label": "Immunity Requirement"
+      },
+      {
+        "id": "urn:visionflow:linked:test-procedure",
+        "label": "Test Procedure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:filter-implementation",
+        "label": "Filter Implementation"
+      },
+      {
+        "id": "urn:visionflow:linked:grounding-practice",
+        "label": "Grounding Practice"
+      },
+      {
+        "id": "urn:visionflow:linked:shielding-design",
+        "label": "Shielding Design"
+      },
+      {
+        "id": "urn:visionflow:linked:test-facility",
+        "label": "Test Facility"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:electrical-safety",
+        "label": "Electrical Safety"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-deployment",
+        "label": "Industrial Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:reliable-operation",
+        "label": "Reliable Operation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance-criteria",
+      "label": "Compliance Criteria"
+    },
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "electrical-safety",
+      "label": "Electrical Safety"
+    },
+    {
+      "slug": "electromagnetic-compatibility",
+      "label": "Electromagnetic Compatibility"
+    },
+    {
+      "slug": "electromagnetic-theory",
+      "label": "Electromagnetic Theory"
+    },
+    {
+      "slug": "emissions-limit",
+      "label": "Emissions Limit"
+    },
+    {
+      "slug": "fibre-optic-isolation",
+      "label": "Fibre Optic Isolation"
+    },
+    {
+      "slug": "filter-implementation",
+      "label": "Filter Implementation"
+    },
+    {
+      "slug": "grounding-practice",
+      "label": "Grounding Practice"
+    },
+    {
+      "slug": "iec-61000",
+      "label": "IEC 61000"
+    },
+    {
+      "slug": "immunity-requirement",
+      "label": "Immunity Requirement"
+    },
+    {
+      "slug": "industrial-deployment",
+      "label": "Industrial Deployment"
+    },
+    {
+      "slug": "measurement-equipment",
+      "label": "Measurement Equipment"
+    },
+    {
+      "slug": "pcb-layout",
+      "label": "PCB Layout"
+    },
+    {
+      "slug": "reliable-operation",
+      "label": "Reliable Operation"
+    },
+    {
+      "slug": "shielding-design",
+      "label": "Shielding Design"
+    },
+    {
+      "slug": "test-facility",
+      "label": "Test Facility"
+    },
+    {
+      "slug": "test-procedure",
+      "label": "Test Procedure"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:4de1962d9b3801669d62d451fc90bc2ddac7e2266d695d0e229fba6ccaa00f1e",
+  "title": "Supply Chain Blockchain",
+  "slug": "supply-chain-blockchain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:supply-chain-blockchain",
+  "domain": "blockchain",
+  "definition": "Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers. Blockchain provides an immutable, shared record of transactions enabling real-time visibility, authentication of origin, quality verification, and automated compliance through smart contracts, addressing challenges of counterfeiting, fraud, and supply chain opacity.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:product-traceability",
+        "label": "Product Traceability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "product-traceability",
+      "label": "Product Traceability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1a9a5e8caadace78071e1ffa5037d57ec6068c761194f52859731a6a7f332171",
+  "title": "Vocabulary",
+  "slug": "vocabulary",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vocabulary",
+  "domain": "spatial-computing",
+  "definition": "The number of unique tokens in a model's tokenisation scheme, balancing expressiveness with computational efficiency, typically ranging from 30,000 to 250,000 tokens in modern language models.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

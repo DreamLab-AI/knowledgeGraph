@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:e4ca09740e7dd1217624da5b054df1b0dcf336eacd3483bfbf221cd3f3c2ec62",
+  "title": "Banodoco",
+  "slug": "banodoco",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:banodoco",
+  "domain": "spatial-computing",
+  "definition": "Banodoco is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ],
+  "backlinks": []
+}

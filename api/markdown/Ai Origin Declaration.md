@@ -1,21 +1,295 @@
-iri:: http://narrativegoldmine.com/metaverse#AiOriginDeclaration
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-origin-declaration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-origin-declaration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Ai Origin Declaration
-content-hash:: sha256-12-343691023220
-legacy-term-id:: MV-9763
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AiOriginDeclaration
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-origin-declaration
 public:: true
+
+# Ai Origin Declaration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e",
+  "@type": "Page",
+  "vc:slug": "ai-origin-declaration",
+  "title": "Ai Origin Declaration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:content-authenticity",
+      "vc:label": "Content Authenticity"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-verification",
+      "vc:label": "Content Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-signing",
+      "vc:label": "Cryptographic Signing"
+    },
+    {
+      "@id": "urn:visionflow:linked:deepfake-detection",
+      "vc:label": "Deepfake Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-watermarking",
+      "vc:label": "Digital Watermarking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-standards",
+      "vc:label": "Metadata Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-infrastructure",
+      "vc:label": "Trust Infrastructure"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-343691023220"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AiOriginDeclaration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9763"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Ai Origin Declaration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-origin-declaration"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-origin-declaration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-origin-declaration",
+  "@type": "OntologyClass",
+  "label": "Ai Origin Declaration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:content-authenticity",
+      "vc:label": "Content Authenticity"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of content authenticity and origin.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-signing",
+      "vc:label": "Cryptographic Signing"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-watermarking",
+      "vc:label": "Digital Watermarking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-standards",
+      "vc:label": "Metadata Standards"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:content-verification",
+      "vc:label": "Content Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:deepfake-detection",
+      "vc:label": "Deepfake Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-infrastructure",
+      "vc:label": "Trust Infrastructure"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-origin-declaration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Content Authenticity]]",
+      "resolved": "urn:visionflow:linked:content-authenticity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Verification]]",
+      "resolved": "urn:visionflow:linked:content-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Signing]]",
+      "resolved": "urn:visionflow:linked:cryptographic-signing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deepfake Detection]]",
+      "resolved": "urn:visionflow:linked:deepfake-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Watermarking]]",
+      "resolved": "urn:visionflow:linked:digital-watermarking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Standards]]",
+      "resolved": "urn:visionflow:owl:class:metadata-standards",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:trust-infrastructure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of content authenticity and origin.

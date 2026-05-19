@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810",
+  "title": "Digital Transformation",
+  "slug": "digital-transformation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-transformation",
+  "domain": "spatial-computing",
+  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:organizational-change",
+      "label": "Organizational Change"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:business-innovation",
+        "label": "Business Innovation"
+      },
+      {
+        "id": "urn:visionflow:linked:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "id": "urn:visionflow:linked:operational-efficiency",
+        "label": "Operational Efficiency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "business-innovation",
+      "label": "Business Innovation"
+    },
+    {
+      "slug": "change-management",
+      "label": "Change Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "operational-efficiency",
+      "label": "Operational Efficiency"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "organizational-change",
+      "label": "Organizational Change"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ]
+}

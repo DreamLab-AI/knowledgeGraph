@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:07287a57fd407f18f570b27b30ed73df41bc71f68dd87099fc7b43058c6bbf03",
+  "title": "ETSI Domain Immersive + Reality Capture Crossover",
+  "slug": "etsi-domain-immersive-reality-capture-crossover",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-immersive-reality-capture-crossover",
+  "domain": "spatial-computing",
+  "definition": "Domain categorization marker indicating metaverse systems operating at the intersection of immersive interaction capabilities and reality capture technologies for photorealistic virtual environment creation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
+      "label": "Etsi Metaverse Domain Model"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:etsi-domain-immersive",
+        "label": "ETSI Domain Immersive"
+      },
+      {
+        "id": "urn:visionflow:owl:class:etsi-domain-reality-capture",
+        "label": "ETSI Domain Reality Capture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:photorealistic-immersion",
+        "label": "Photorealistic Immersion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "iso-23257",
+      "label": "ISO 23257"
+    },
+    {
+      "slug": "photorealistic-immersion",
+      "label": "Photorealistic Immersion"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "etsi-domain-immersive",
+      "label": "ETSI Domain Immersive"
+    },
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI Domain Reality Capture"
+    },
+    {
+      "slug": "etsi-metaverse-domain-model",
+      "label": "ETSI Metaverse Domain Model"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "spatial-interaction",
+      "label": "Spatial Interaction"
+    },
+    {
+      "slug": "volumetric-capture",
+      "label": "Volumetric Capture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

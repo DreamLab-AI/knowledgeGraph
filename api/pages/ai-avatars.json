@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733",
+  "title": "AI Avatars",
+  "slug": "ai-avatars",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-avatars",
+  "domain": "distributed-collaboration",
+  "definition": "\"Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence without explicit keyframe animation.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:speech-synthesis",
+        "label": "SpeechSynthesis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:photorealistic-telepresence",
+        "label": "PhotorealisticTelepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "photorealistic-telepresence",
+      "label": "PhotorealisticTelepresence"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "SpeechSynthesis"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-051-3d-gaussian-splatting",
+      "label": "TELE-051-3d-gaussian-splatting"
+    },
+    {
+      "slug": "tele-052-neural-radiance-fields",
+      "label": "TELE-052-neural-radiance-fields"
+    },
+    {
+      "slug": "tele-060-instant-ngp",
+      "label": "TELE-060-instant-ngp"
+    },
+    {
+      "slug": "tele-102-codec-avatars",
+      "label": "TELE-102-codec-avatars"
+    },
+    {
+      "slug": "tele-103-metahuman-creator",
+      "label": "TELE-103-metahuman-creator"
+    },
+    {
+      "slug": "tele-104-readyplayerme",
+      "label": "TELE-104-readyplayerme"
+    },
+    {
+      "slug": "tele-114-lip-sync-technology",
+      "label": "TELE-114-lip-sync-technology"
+    },
+    {
+      "slug": "tele-116-facial-expression-analysis",
+      "label": "TELE-116-facial-expression-analysis"
+    },
+    {
+      "slug": "uk-online-safety-act-2024",
+      "label": "UK Online Safety Act (2024)"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

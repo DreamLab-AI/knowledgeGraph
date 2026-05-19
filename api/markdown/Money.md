@@ -1,22 +1,1041 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#Money
-uri:: urn:visionclaw:concept:distributed-collaboration:money
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:money
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Money
-content-hash:: sha256-12-47c6b6e5f59a
-legacy-term-id:: DT-0002
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 1.0
-version:: 2.0.0
-created:: 2025-11-14T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#Money
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:money
 public:: true
-bridges-to:: [[Lightning Network]]
+
+# Money
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3",
+  "@type": "Page",
+  "vc:slug": "money",
+  "title": "Money",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:acceptance-network",
+      "vc:label": "Acceptance Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:alden2023",
+      "vc:label": "Alden2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:arbitrum",
+      "vc:label": "Arbitrum"
+    },
+    {
+      "@id": "urn:visionflow:linked:bank-of-england",
+      "vc:label": "Bank of England"
+    },
+    {
+      "@id": "urn:visionflow:linked:banking-system",
+      "vc:label": "Banking System"
+    },
+    {
+      "@id": "urn:visionflow:linked:barsky1987fisher",
+      "vc:label": "barsky1987fisher"
+    },
+    {
+      "@id": "urn:visionflow:linked:bertomeu2023uncle",
+      "vc:label": "bertomeu2023uncle"
+    },
+    {
+      "@id": "urn:visionflow:linked:bis",
+      "vc:label": "BIS"
+    },
+    {
+      "@id": "urn:visionflow:linked:borio2017fx",
+      "vc:label": "borio2017fx"
+    },
+    {
+      "@id": "urn:visionflow:linked:btc-usd",
+      "vc:label": "BTC/USD"
+    },
+    {
+      "@id": "urn:visionflow:linked:caballero2008financial-spiro2019hidden",
+      "vc:label": "caballero2008financial; @spiro2019hidden"
+    },
+    {
+      "@id": "urn:visionflow:linked:cantillon1756essai-bordo1983some",
+      "vc:label": "cantillon1756essai; @bordo1983some"
+    },
+    {
+      "@id": "urn:visionflow:linked:carney2019growing-piffaretti2009reshaping",
+      "vc:label": "carney2019growing; @piffaretti2009reshaping"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc",
+      "vc:label": "CBDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc-tracker",
+      "vc:label": "CBDC Tracker"
+    },
+    {
+      "@id": "urn:visionflow:linked:chinese-yuan",
+      "vc:label": "Chinese Yuan"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-border-payments",
+      "vc:label": "Cross-Border Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:davies2010history",
+      "vc:label": "davies2010history"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:debt",
+      "vc:label": "Debt"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-finance-domain",
+      "vc:label": "DigitalFinanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:ecb",
+      "vc:label": "ECB"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-exchange",
+      "vc:label": "Economic Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-system-domain",
+      "vc:label": "EconomicSystemDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:eichengreen2023",
+      "vc:label": "Eichengreen2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-4337",
+      "vc:label": "ERC-4337"
+    },
+    {
+      "@id": "urn:visionflow:linked:eur",
+      "vc:label": "EUR"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf",
+      "vc:label": "FATF"
+    },
+    {
+      "@id": "urn:visionflow:linked:federal-reserve",
+      "vc:label": "Federal Reserve"
+    },
+    {
+      "@id": "urn:visionflow:linked:fiat-currency",
+      "vc:label": "Fiat Currency"
+    },
+    {
+      "@id": "urn:visionflow:linked:filardo2012central",
+      "vc:label": "filardo2012central"
+    },
+    {
+      "@id": "urn:visionflow:linked:fin-tech-layer",
+      "vc:label": "FinTechLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-inclusion",
+      "vc:label": "Financial Inclusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:gainsford2017salt-goldberg2005famous",
+      "vc:label": "gainsford2017salt; @goldberg2005famous"
+    },
+    {
+      "@id": "urn:visionflow:linked:genius-act",
+      "vc:label": "GENIUS Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:giancarlo2021cryptodad",
+      "vc:label": "giancarlo2021cryptodad"
+    },
+    {
+      "@id": "urn:visionflow:linked:grewal2020struggling",
+      "vc:label": "grewal2020struggling"
+    },
+    {
+      "@id": "urn:visionflow:linked:hall2009inflation",
+      "vc:label": "hall2009inflation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hendrickson2021value-ferranti2022hedging",
+      "vc:label": "hendrickson2021value; @ferranti2022hedging"
+    },
+    {
+      "@id": "urn:visionflow:linked:homer1996history",
+      "vc:label": "homer1996history"
+    },
+    {
+      "@id": "urn:visionflow:linked:huang2016understanding",
+      "vc:label": "huang2016understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:hudson2021destiny",
+      "vc:label": "hudson2021destiny"
+    },
+    {
+      "@id": "urn:visionflow:linked:imf",
+      "vc:label": "IMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-4217",
+      "vc:label": "ISO 4217"
+    },
+    {
+      "@id": "urn:visionflow:linked:issuing-authority",
+      "vc:label": "Issuing Authority"
+    },
+    {
+      "@id": "urn:visionflow:linked:jpy",
+      "vc:label": "JPY"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2",
+      "vc:label": "Layer-2"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity",
+      "vc:label": "Liquidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:litecoin",
+      "vc:label": "Litecoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:mathews2018china",
+      "vc:label": "mathews2018china"
+    },
+    {
+      "@id": "urn:visionflow:linked:mi-ca",
+      "vc:label": "MiCA"
+    },
+    {
+      "@id": "urn:visionflow:linked:monetary-policy",
+      "vc:label": "Monetary Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimism",
+      "vc:label": "Optimism"
+    },
+    {
+      "@id": "urn:visionflow:linked:prasad2021future",
+      "vc:label": "prasad2021future"
+    },
+    {
+      "@id": "urn:visionflow:linked:programmable-money",
+      "vc:label": "programmable money"
+    },
+    {
+      "@id": "urn:visionflow:linked:project-m-bridge",
+      "vc:label": "Project mBridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:project-rosalind",
+      "vc:label": "Project Rosalind"
+    },
+    {
+      "@id": "urn:visionflow:linked:savings",
+      "vc:label": "Savings"
+    },
+    {
+      "@id": "urn:visionflow:linked:selgin1996defense",
+      "vc:label": "selgin1996defense"
+    },
+    {
+      "@id": "urn:visionflow:linked:stoeferle2018gold",
+      "vc:label": "stoeferle2018gold"
+    },
+    {
+      "@id": "urn:visionflow:linked:stroukal2018can",
+      "vc:label": "stroukal2018can"
+    },
+    {
+      "@id": "urn:visionflow:linked:szabo2002shelling",
+      "vc:label": "szabo2002shelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:tomlinson2003third",
+      "vc:label": "tomlinson2003third"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust",
+      "vc:label": "Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:usd",
+      "vc:label": "USD"
+    },
+    {
+      "@id": "urn:visionflow:linked:usdc",
+      "vc:label": "USDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:usdt",
+      "vc:label": "USDT"
+    },
+    {
+      "@id": "urn:visionflow:linked:wang2021central",
+      "vc:label": "wang2021central"
+    },
+    {
+      "@id": "urn:visionflow:linked:white1914fiat",
+      "vc:label": "white1914fiat"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
+      "vc:label": "Central Bank Digital Currency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-money",
+      "vc:label": "Digital Money"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:economic-layer",
+      "vc:label": "EconomicLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:payment-system",
+      "vc:label": "Payment System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:price-discovery",
+      "vc:label": "Price Discovery"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-stake",
+      "vc:label": "Proof-of-Stake"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quantum-computing",
+      "vc:label": "Quantum computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "smart contracts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stablecoin",
+      "vc:label": "Stablecoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:token",
+      "vc:label": "Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:value-transfer",
+      "vc:label": "Value Transfer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "1.0"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Lightning Network]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-47c6b6e5f59a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-14T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#Money"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "DT-0002"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Money"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:money"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:money"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:money",
+  "@type": "OntologyClass",
+  "label": "Money",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "1.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:value-transfer",
+      "vc:label": "Value Transfer"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:fiat-currency",
+      "vc:label": "Fiat Currency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
+      "vc:label": "Central Bank Digital Currency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-money",
+      "vc:label": "Digital Money"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stablecoin",
+      "vc:label": "Stablecoin"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:acceptance-network",
+      "vc:label": "Acceptance Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:issuing-authority",
+      "vc:label": "Issuing Authority"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity",
+      "vc:label": "Liquidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust",
+      "vc:label": "Trust"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-border-payments",
+      "vc:label": "Cross-Border Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:debt",
+      "vc:label": "Debt"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-exchange",
+      "vc:label": "Economic Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:savings",
+      "vc:label": "Savings"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:price-discovery",
+      "vc:label": "Price Discovery"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:money:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Acceptance Network]]",
+      "resolved": "urn:visionflow:linked:acceptance-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alden2023]]",
+      "resolved": "urn:visionflow:linked:alden2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Arbitrum]]",
+      "resolved": "urn:visionflow:linked:arbitrum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bank of England]]",
+      "resolved": "urn:visionflow:linked:bank-of-england",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Banking System]]",
+      "resolved": "urn:visionflow:linked:banking-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[barsky1987fisher]]",
+      "resolved": "urn:visionflow:linked:barsky1987fisher",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[bertomeu2023uncle]]",
+      "resolved": "urn:visionflow:linked:bertomeu2023uncle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIS]]",
+      "resolved": "urn:visionflow:linked:bis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[borio2017fx]]",
+      "resolved": "urn:visionflow:linked:borio2017fx",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BTC/USD]]",
+      "resolved": "urn:visionflow:linked:btc-usd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[caballero2008financial; @spiro2019hidden]]",
+      "resolved": "urn:visionflow:linked:caballero2008financial-spiro2019hidden",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[cantillon1756essai; @bordo1983some]]",
+      "resolved": "urn:visionflow:linked:cantillon1756essai-bordo1983some",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[carney2019growing; @piffaretti2009reshaping]]",
+      "resolved": "urn:visionflow:linked:carney2019growing-piffaretti2009reshaping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC]]",
+      "resolved": "urn:visionflow:linked:cbdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC Tracker]]",
+      "resolved": "urn:visionflow:linked:cbdc-tracker",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chinese Yuan]]",
+      "resolved": "urn:visionflow:linked:chinese-yuan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Border Payments]]",
+      "resolved": "urn:visionflow:linked:cross-border-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[davies2010history]]",
+      "resolved": "urn:visionflow:linked:davies2010history",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Debt]]",
+      "resolved": "urn:visionflow:linked:debt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DigitalFinanceDomain]]",
+      "resolved": "urn:visionflow:linked:digital-finance-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ECB]]",
+      "resolved": "urn:visionflow:linked:ecb",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Economic Exchange]]",
+      "resolved": "urn:visionflow:linked:economic-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EconomicSystemDomain]]",
+      "resolved": "urn:visionflow:linked:economic-system-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eichengreen2023]]",
+      "resolved": "urn:visionflow:linked:eichengreen2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-4337]]",
+      "resolved": "urn:visionflow:linked:erc-4337",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EUR]]",
+      "resolved": "urn:visionflow:linked:eur",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF]]",
+      "resolved": "urn:visionflow:linked:fatf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Federal Reserve]]",
+      "resolved": "urn:visionflow:linked:federal-reserve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fiat Currency]]",
+      "resolved": "urn:visionflow:linked:fiat-currency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[filardo2012central]]",
+      "resolved": "urn:visionflow:linked:filardo2012central",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FinTechLayer]]",
+      "resolved": "urn:visionflow:linked:fin-tech-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Inclusion]]",
+      "resolved": "urn:visionflow:linked:financial-inclusion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[gainsford2017salt; @goldberg2005famous]]",
+      "resolved": "urn:visionflow:linked:gainsford2017salt-goldberg2005famous",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GENIUS Act]]",
+      "resolved": "urn:visionflow:linked:genius-act",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[giancarlo2021cryptodad]]",
+      "resolved": "urn:visionflow:linked:giancarlo2021cryptodad",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[grewal2020struggling]]",
+      "resolved": "urn:visionflow:linked:grewal2020struggling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hall2009inflation]]",
+      "resolved": "urn:visionflow:linked:hall2009inflation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hendrickson2021value; @ferranti2022hedging]]",
+      "resolved": "urn:visionflow:linked:hendrickson2021value-ferranti2022hedging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[homer1996history]]",
+      "resolved": "urn:visionflow:linked:homer1996history",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[huang2016understanding]]",
+      "resolved": "urn:visionflow:linked:huang2016understanding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hudson2021destiny]]",
+      "resolved": "urn:visionflow:linked:hudson2021destiny",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IMF]]",
+      "resolved": "urn:visionflow:linked:imf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 4217]]",
+      "resolved": "urn:visionflow:linked:iso-4217",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Issuing Authority]]",
+      "resolved": "urn:visionflow:linked:issuing-authority",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JPY]]",
+      "resolved": "urn:visionflow:linked:jpy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer-2]]",
+      "resolved": "urn:visionflow:linked:layer-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquidity]]",
+      "resolved": "urn:visionflow:linked:liquidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Litecoin]]",
+      "resolved": "urn:visionflow:linked:litecoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[mathews2018china]]",
+      "resolved": "urn:visionflow:linked:mathews2018china",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MiCA]]",
+      "resolved": "urn:visionflow:linked:mi-ca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monetary Policy]]",
+      "resolved": "urn:visionflow:linked:monetary-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimism]]",
+      "resolved": "urn:visionflow:linked:optimism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[prasad2021future]]",
+      "resolved": "urn:visionflow:linked:prasad2021future",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[programmable money]]",
+      "resolved": "urn:visionflow:linked:programmable-money",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Project mBridge]]",
+      "resolved": "urn:visionflow:linked:project-m-bridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Project Rosalind]]",
+      "resolved": "urn:visionflow:linked:project-rosalind",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Savings]]",
+      "resolved": "urn:visionflow:linked:savings",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[selgin1996defense]]",
+      "resolved": "urn:visionflow:linked:selgin1996defense",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[stoeferle2018gold]]",
+      "resolved": "urn:visionflow:linked:stoeferle2018gold",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[stroukal2018can]]",
+      "resolved": "urn:visionflow:linked:stroukal2018can",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[szabo2002shelling]]",
+      "resolved": "urn:visionflow:linked:szabo2002shelling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[tomlinson2003third]]",
+      "resolved": "urn:visionflow:linked:tomlinson2003third",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trust]]",
+      "resolved": "urn:visionflow:linked:trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[USD]]",
+      "resolved": "urn:visionflow:linked:usd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[USDC]]",
+      "resolved": "urn:visionflow:linked:usdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[USDT]]",
+      "resolved": "urn:visionflow:linked:usdt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[wang2021central]]",
+      "resolved": "urn:visionflow:linked:wang2021central",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[white1914fiat]]",
+      "resolved": "urn:visionflow:linked:white1914fiat",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Central Bank Digital Currency]]",
+      "resolved": "urn:visionflow:owl:class:central-bank-digital-currency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Money]]",
+      "resolved": "urn:visionflow:owl:class:digital-money",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EconomicLayer]]",
+      "resolved": "urn:visionflow:owl:class:economic-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Payment System]]",
+      "resolved": "urn:visionflow:owl:class:payment-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Price Discovery]]",
+      "resolved": "urn:visionflow:owl:class:price-discovery",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof-of-Stake]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-stake",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quantum computing]]",
+      "resolved": "urn:visionflow:owl:class:quantum-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stablecoin]]",
+      "resolved": "urn:visionflow:owl:class:stablecoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Token]]",
+      "resolved": "urn:visionflow:owl:class:token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Value Transfer]]",
+      "resolved": "urn:visionflow:owl:class:value-transfer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Economy]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.

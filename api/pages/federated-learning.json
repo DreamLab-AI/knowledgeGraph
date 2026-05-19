@@ -1,0 +1,188 @@
+{
+  "id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3",
+  "title": "Federated Learning",
+  "slug": "federated-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:federated-learning",
+  "domain": "infrastructure",
+  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information. Model updates are aggregated from local computations whilst raw data remains on-device, preserving [[PrivacyPreservingML]] and enabling [[CollaborativeLearning]] across organizations. Bridges [[DistributedLearning]] with [[SecureAggregation]] mechanisms and [[BlockchainNetwork]] coordination.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "coordinated-by",
+      "label": "coordinated By"
+    },
+    {
+      "slug": "decentralized-ai",
+      "label": "DecentralizedAI"
+    },
+    {
+      "slug": "distributed-learning",
+      "label": "DistributedLearning"
+    },
+    {
+      "slug": "dt-distributed-via",
+      "label": "dt:distributedVia"
+    },
+    {
+      "slug": "dt-implemented-via",
+      "label": "dt:implementedVia"
+    },
+    {
+      "slug": "dt-incentivized-by",
+      "label": "dt:incentivizedBy"
+    },
+    {
+      "slug": "dt-protected-by",
+      "label": "dt:protectedBy"
+    },
+    {
+      "slug": "dt-secured-by",
+      "label": "dt:securedBy"
+    },
+    {
+      "slug": "has-participant",
+      "label": "hasParticipant"
+    },
+    {
+      "slug": "implements-privacy",
+      "label": "implementsPrivacy"
+    },
+    {
+      "slug": "p2-pnetwork",
+      "label": "P2PNetwork"
+    },
+    {
+      "slug": "privacy-preserving-ml",
+      "label": "PrivacyPreservingML"
+    },
+    {
+      "slug": "secure-aggregation",
+      "label": "SecureAggregation"
+    },
+    {
+      "slug": "token-reward",
+      "label": "TokenReward"
+    },
+    {
+      "slug": "uses-aggregation",
+      "label": "usesAggregation"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "BlockchainNetwork"
+    },
+    {
+      "slug": "collaborative-learning",
+      "label": "CollaborativeLearning"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "ZeroKnowledgeProof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

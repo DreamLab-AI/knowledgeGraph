@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:58dcc0d0b6eb4863b5c1c0c4aeea59f00a24ad527e25dc09b9970ebc163cf089",
+  "title": "Risk Mitigation",
+  "slug": "risk-mitigation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:risk-mitigation",
+  "domain": "artificial-intelligence",
+  "definition": "Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    },
+    {
+      "slug": "privacy-impact-assessment-pia",
+      "label": "Privacy Impact Assessment (PIA)"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "label": "User Agreement Compliance"
+    }
+  ]
+}

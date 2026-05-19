@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:0f21abf55c6f0a06b63efe2c82f44b7cbf0e0c0f27ba733c0321dabca25e72f2",
+  "title": "Marker Based Tracking",
+  "slug": "marker-based-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:marker-based-tracking",
+  "domain": "spatial-computing",
+  "definition": "AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-tracking-technology",
+      "label": "Spatial Tracking Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ar-content-positioning",
+        "label": "AR Content Positioning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ar-content-positioning",
+      "label": "AR Content Positioning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-tracking-technology",
+      "label": "Spatial Tracking Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

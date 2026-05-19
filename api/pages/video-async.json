@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:7a738e5607ca235ad6e98117c7ffa4e3cb5a34720af620cbc06d844bc5606782",
+  "title": "Video Async",
+  "slug": "video-async",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:video-async",
+  "domain": "distributed-collaboration",
+  "definition": "Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
+      "slug": "loom",
+      "label": "Loom"
+    },
+    {
+      "slug": "asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "TelecollaborationDomain"
+    }
+  ],
+  "backlinks": []
+}

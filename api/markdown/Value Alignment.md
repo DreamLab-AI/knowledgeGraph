@@ -1,21 +1,315 @@
-iri:: http://narrativegoldmine.com/metaverse#ValueAlignment
-uri:: urn:visionclaw:concept:artificial-intelligence:value-alignment
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:value-alignment
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Value Alignment
-content-hash:: sha256-12-3ba7d82db558
-legacy-term-id:: AI-0269
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ValueAlignment
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:value-alignment
 public:: true
+
+# Value Alignment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91",
+  "@type": "Page",
+  "vc:slug": "value-alignment",
+  "title": "Value Alignment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:barsky1987fisher",
+      "vc:label": "barsky1987fisher"
+    },
+    {
+      "@id": "urn:visionflow:linked:bhatia2021",
+      "vc:label": "Bhatia2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:borio2017fx",
+      "vc:label": "borio2017fx"
+    },
+    {
+      "@id": "urn:visionflow:linked:cagan1958demand",
+      "vc:label": "cagan1958demand"
+    },
+    {
+      "@id": "urn:visionflow:linked:davies2010history",
+      "vc:label": "davies2010history"
+    },
+    {
+      "@id": "urn:visionflow:linked:hall2009inflation",
+      "vc:label": "hall2009inflation"
+    },
+    {
+      "@id": "urn:visionflow:linked:homer1996history",
+      "vc:label": "homer1996history"
+    },
+    {
+      "@id": "urn:visionflow:linked:maurel2012keynesian",
+      "vc:label": "maurel2012keynesian"
+    },
+    {
+      "@id": "urn:visionflow:linked:ponzi2021alden",
+      "vc:label": "ponzi2021alden"
+    },
+    {
+      "@id": "urn:visionflow:linked:selgin1996defense",
+      "vc:label": "selgin1996defense"
+    },
+    {
+      "@id": "urn:visionflow:linked:stroukal2018can",
+      "vc:label": "stroukal2018can"
+    },
+    {
+      "@id": "urn:visionflow:linked:szabo2002shelling",
+      "vc:label": "szabo2002shelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:white1914fiat",
+      "vc:label": "white1914fiat"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin-as-money",
+      "vc:label": "Bitcoin As Money"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:money",
+      "vc:label": "Money"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3ba7d82db558"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ValueAlignment"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0269"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Value Alignment"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:value-alignment"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:value-alignment"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:value-alignment",
+  "@type": "OntologyClass",
+  "label": "Value Alignment",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:value-alignment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[barsky1987fisher]]",
+      "resolved": "urn:visionflow:linked:barsky1987fisher",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bhatia2021]]",
+      "resolved": "urn:visionflow:linked:bhatia2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[borio2017fx]]",
+      "resolved": "urn:visionflow:linked:borio2017fx",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[cagan1958demand]]",
+      "resolved": "urn:visionflow:linked:cagan1958demand",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[davies2010history]]",
+      "resolved": "urn:visionflow:linked:davies2010history",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hall2009inflation]]",
+      "resolved": "urn:visionflow:linked:hall2009inflation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[homer1996history]]",
+      "resolved": "urn:visionflow:linked:homer1996history",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[maurel2012keynesian]]",
+      "resolved": "urn:visionflow:linked:maurel2012keynesian",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ponzi2021alden]]",
+      "resolved": "urn:visionflow:linked:ponzi2021alden",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[selgin1996defense]]",
+      "resolved": "urn:visionflow:linked:selgin1996defense",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[stroukal2018can]]",
+      "resolved": "urn:visionflow:linked:stroukal2018can",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[szabo2002shelling]]",
+      "resolved": "urn:visionflow:linked:szabo2002shelling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[white1914fiat]]",
+      "resolved": "urn:visionflow:linked:white1914fiat",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin As Money]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin-as-money",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Money]]",
+      "resolved": "urn:visionflow:owl:class:money",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.

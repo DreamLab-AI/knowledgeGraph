@@ -1,0 +1,166 @@
+{
+  "id": "urn:visionflow:page:3b31024e6293c027bd1f1846a813b40c2fa513e89843af9d76be114b39923ecc",
+  "title": "User Agreement Compliance",
+  "slug": "user-agreement-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-agreement-compliance",
+  "domain": "artificial-intelligence",
+  "definition": "Process ensuring user actions within a metaverse platform adhere to declared policies, terms of service, and acceptable use guidelines.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:remediation-process",
+        "label": "Remediation Process"
+      },
+      {
+        "id": "urn:visionflow:linked:user-monitoring",
+        "label": "User Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:violation-detection",
+        "label": "Violation Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:enforcement-mechanisms",
+        "label": "Enforcement Mechanisms"
+      },
+      {
+        "id": "urn:visionflow:linked:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:visionflow:linked:user-agreement",
+        "label": "User Agreement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:platform-safety",
+        "label": "Platform Safety"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-adherence",
+        "label": "Policy Adherence"
+      },
+      {
+        "id": "urn:visionflow:linked:user-accountability",
+        "label": "User Accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "behavior-analytics",
+      "label": "Behavior Analytics"
+    },
+    {
+      "slug": "enforcement-mechanisms",
+      "label": "Enforcement Mechanisms"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "monitoring-system",
+      "label": "Monitoring System"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "platform-management",
+      "label": "Platform Management"
+    },
+    {
+      "slug": "platform-safety",
+      "label": "Platform Safety"
+    },
+    {
+      "slug": "policy-adherence",
+      "label": "Policy Adherence"
+    },
+    {
+      "slug": "remediation-process",
+      "label": "Remediation Process"
+    },
+    {
+      "slug": "user-accountability",
+      "label": "User Accountability"
+    },
+    {
+      "slug": "user-agreement",
+      "label": "User Agreement"
+    },
+    {
+      "slug": "user-monitoring",
+      "label": "User Monitoring"
+    },
+    {
+      "slug": "violation-detection",
+      "label": "Violation Detection"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "risk-mitigation",
+      "label": "Risk Mitigation"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

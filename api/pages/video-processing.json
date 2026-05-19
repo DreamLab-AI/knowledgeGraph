@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:1fa226bfa2604df9341062676470e0d4b8fc7fdcd281a1efd6f3632b6c92eb8b",
+  "title": "Video Processing",
+  "slug": "video-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:video-processing",
+  "domain": "artificial-intelligence",
+  "definition": "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques. Core tasks include object detection and tracking, action recognition, video segmentation, temporal modeling, scene understanding, and video generation. Modern approaches leverage 3D convolutional networks, recurrent architectures, transformers for temporal reasoning, and self-supervised learning on large video datasets. Applications span surveillance, autonomous driving, content moderation, sports analytics, medical imaging, and video editing automation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "temporal-modeling",
+      "label": "Temporal Modeling"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    }
+  ]
+}

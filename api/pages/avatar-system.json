@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:087ef4a9334471dc730502af4210868687b8f887ec144814440ff993f66e32db",
+  "title": "Avatar System",
+  "slug": "avatar-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-system",
+  "domain": "spatial-computing",
+  "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:virtual-character-system",
+      "label": "Virtual Character System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:input-processing",
+        "label": "Input Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:embodied-presence",
+        "label": "Embodied Presence"
+      },
+      {
+        "id": "urn:visionflow:linked:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:user-representation",
+        "label": "User Representation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "animation-controller",
+      "label": "Animation Controller"
+    },
+    {
+      "slug": "embodied-presence",
+      "label": "Embodied Presence"
+    },
+    {
+      "slug": "input-processing",
+      "label": "Input Processing"
+    },
+    {
+      "slug": "social-interaction",
+      "label": "Social Interaction"
+    },
+    {
+      "slug": "user-representation",
+      "label": "User Representation"
+    },
+    {
+      "slug": "virtual-character-system",
+      "label": "Virtual Character System"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    },
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    }
+  ]
+}

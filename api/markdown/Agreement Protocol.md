@@ -1,21 +1,312 @@
-iri:: http://narrativegoldmine.com/blockchain#AgreementProtocol
-uri:: urn:visionclaw:concept:blockchain:agreement-protocol
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:agreement-protocol
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Agreement Protocol
-content-hash:: sha256-12-3003dd059c18
-legacy-term-id:: PC-0007
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#AgreementProtocol
+legacy_uri:: urn:visionclaw:concept:blockchain:agreement-protocol
 public:: true
+
+# Agreement Protocol
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1",
+  "@type": "Page",
+  "vc:slug": "agreement-protocol",
+  "title": "Agreement Protocol",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bft-consensus",
+      "vc:label": "BFT Consensus"
+    },
+    {
+      "@id": "urn:visionflow:linked:byzantine-agreement",
+      "vc:label": "Byzantine Agreement"
+    },
+    {
+      "@id": "urn:visionflow:linked:byzantine-agreement-papers",
+      "vc:label": "Byzantine Agreement Papers"
+    },
+    {
+      "@id": "urn:visionflow:linked:crash-fault-tolerant-agreement",
+      "vc:label": "Crash Fault Tolerant Agreement"
+    },
+    {
+      "@id": "urn:visionflow:linked:flp-impossibility",
+      "vc:label": "FLP Impossibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:paxos",
+      "vc:label": "Paxos"
+    },
+    {
+      "@id": "urn:visionflow:linked:paxos-and-raft-consensus",
+      "vc:label": "Paxos and Raft Consensus"
+    },
+    {
+      "@id": "urn:visionflow:linked:pbft",
+      "vc:label": "PBFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:pbft-algorithm",
+      "vc:label": "PBFT Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-protocol",
+      "vc:label": "Distributed Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nakamoto-consensus",
+      "vc:label": "Nakamoto Consensus"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3003dd059c18"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#AgreementProtocol"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0007"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Agreement Protocol"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:agreement-protocol"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:agreement-protocol"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:agreement-protocol",
+  "@type": "OntologyClass",
+  "label": "Agreement Protocol",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-protocol",
+      "vc:label": "Distributed Protocol"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement—all honest nodes agree on the same value), liveness (also called termination—the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomi",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:agreement-protocol:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BFT Consensus]]",
+      "resolved": "urn:visionflow:linked:bft-consensus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Byzantine Agreement]]",
+      "resolved": "urn:visionflow:linked:byzantine-agreement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Byzantine Agreement Papers]]",
+      "resolved": "urn:visionflow:linked:byzantine-agreement-papers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crash Fault Tolerant Agreement]]",
+      "resolved": "urn:visionflow:linked:crash-fault-tolerant-agreement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FLP Impossibility]]",
+      "resolved": "urn:visionflow:linked:flp-impossibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paxos]]",
+      "resolved": "urn:visionflow:linked:paxos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paxos and Raft Consensus]]",
+      "resolved": "urn:visionflow:linked:paxos-and-raft-consensus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PBFT]]",
+      "resolved": "urn:visionflow:linked:pbft",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PBFT Algorithm]]",
+      "resolved": "urn:visionflow:linked:pbft-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Protocol]]",
+      "resolved": "urn:visionflow:owl:class:distributed-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Nakamoto Consensus]]",
+      "resolved": "urn:visionflow:owl:class:nakamoto-consensus",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement—all honest nodes agree on the same value), liveness (also called termination—the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomization, synchrony assumptions, economic incentives, and probabilistic finality.

@@ -1,21 +1,384 @@
-iri:: http://narrativegoldmine.com/infrastructure#InteroperabilityFramework
-uri:: urn:visionclaw:concept:infrastructure:interoperability-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:interoperability-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Interoperability Framework
-content-hash:: sha256-12-d0e1a197c5f8
-legacy-term-id:: 20184
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#InteroperabilityFramework
+legacy_uri:: urn:visionclaw:concept:infrastructure:interoperability-framework
 public:: true
+
+# Interoperability Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4",
+  "@type": "Page",
+  "vc:slug": "interoperability-framework",
+  "title": "Interoperability Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:api-specifications",
+      "vc:label": "API Specifications"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-platform-integration",
+      "vc:label": "Cross-Platform Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-formats",
+      "vc:label": "Data Formats"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:msf",
+      "vc:label": "MSF"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol-definitions",
+      "vc:label": "Protocol Definitions"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-documentation",
+      "vc:label": "Technical Documentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-integration-interface",
+      "vc:label": "Data Integration Interface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "vc:label": "InfrastructureDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-standard",
+      "vc:label": "Metadata Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-architecture",
+      "vc:label": "Metaverse Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:scalable-architecture",
+      "vc:label": "Scalable Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:standardization-bodies",
+      "vc:label": "Standardization Bodies"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:system-interoperability",
+      "vc:label": "System Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-standards",
+      "vc:label": "Technical Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:universal-manifest",
+      "vc:label": "Universal Manifest"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d0e1a197c5f8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#InteroperabilityFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20184"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Interoperability Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability-framework"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:interoperability-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:interoperability-framework",
+  "@type": "OntologyClass",
+  "label": "Interoperability Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-architecture",
+      "vc:label": "Metaverse Architecture"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-architecture",
+      "vc:label": "Metaverse Architecture"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:api-specifications",
+      "vc:label": "API Specifications"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-formats",
+      "vc:label": "Data Formats"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol-definitions",
+      "vc:label": "Protocol Definitions"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-integration-interface",
+      "vc:label": "Data Integration Interface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-standard",
+      "vc:label": "Metadata Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:technical-standards",
+      "vc:label": "Technical Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:universal-manifest",
+      "vc:label": "Universal Manifest"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:technical-documentation",
+      "vc:label": "Technical Documentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:standardization-bodies",
+      "vc:label": "Standardization Bodies"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-platform-integration",
+      "vc:label": "Cross-Platform Integration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:scalable-architecture",
+      "vc:label": "Scalable Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:system-interoperability",
+      "vc:label": "System Interoperability"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:interoperability-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[API Specifications]]",
+      "resolved": "urn:visionflow:linked:api-specifications",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Platform Integration]]",
+      "resolved": "urn:visionflow:linked:cross-platform-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Formats]]",
+      "resolved": "urn:visionflow:linked:data-formats",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MSF]]",
+      "resolved": "urn:visionflow:linked:msf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Protocol Definitions]]",
+      "resolved": "urn:visionflow:linked:protocol-definitions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Technical Documentation]]",
+      "resolved": "urn:visionflow:linked:technical-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Integration Interface]]",
+      "resolved": "urn:visionflow:owl:class:data-integration-interface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureDomain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Standard]]",
+      "resolved": "urn:visionflow:owl:class:metadata-standard",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Architecture]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Scalable Architecture]]",
+      "resolved": "urn:visionflow:owl:class:scalable-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Standardization Bodies]]",
+      "resolved": "urn:visionflow:owl:class:standardization-bodies",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[System Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:system-interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technical Standards]]",
+      "resolved": "urn:visionflow:owl:class:technical-standards",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Universal Manifest]]",
+      "resolved": "urn:visionflow:owl:class:universal-manifest",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.

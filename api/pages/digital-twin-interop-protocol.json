@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:b7e59ba6ba2a35e7d3b5cec12263d5becf9b6a90d3cd370db03fd1b5d5a9ddf7",
+  "title": "Digital Twin Interop Protocol",
+  "slug": "digital-twin-interop-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-interop-protocol",
+  "domain": "spatial-computing",
+  "definition": "Standardised API and communication framework enabling exchange of state, simulation data, and behaviour models between heterogeneous digital twin systems across platforms. bridges-to:: [[Autonomous Robot]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:api-specification",
+        "label": "API Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:authentication-layer",
+        "label": "Authentication Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:data-exchange-format",
+        "label": "Data Exchange Format"
+      },
+      {
+        "id": "urn:visionflow:linked:query-interface",
+        "label": "Query Interface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:visionflow:owl:class:state-synchronization",
+        "label": "State Synchronization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-serialization",
+        "label": "Data Serialization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:federated-simulation",
+        "label": "Federated Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-state-sync",
+        "label": "Real-Time State Sync"
+      },
+      {
+        "id": "urn:visionflow:linked:twin-composition",
+        "label": "Twin Composition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-digital-twins",
+        "label": "Cross-Platform Digital Twins"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "api-specification",
+      "label": "API Specification"
+    },
+    {
+      "slug": "authentication-layer",
+      "label": "Authentication Layer"
+    },
+    {
+      "slug": "data-exchange-format",
+      "label": "Data Exchange Format"
+    },
+    {
+      "slug": "data-serialization",
+      "label": "Data Serialization"
+    },
+    {
+      "slug": "federated-simulation",
+      "label": "Federated Simulation"
+    },
+    {
+      "slug": "graph-ql",
+      "label": "GraphQL"
+    },
+    {
+      "slug": "iso-iec-23247",
+      "label": "ISO/IEC 23247"
+    },
+    {
+      "slug": "mqtt",
+      "label": "MQTT"
+    },
+    {
+      "slug": "opc-ua",
+      "label": "OPC UA"
+    },
+    {
+      "slug": "query-interface",
+      "label": "Query Interface"
+    },
+    {
+      "slug": "real-time-state-sync",
+      "label": "Real-Time State Sync"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "twin-composition",
+      "label": "Twin Composition"
+    },
+    {
+      "slug": "web-socket",
+      "label": "WebSocket"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross-Platform Digital Twins"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-twin-framework",
+      "label": "Digital Twin Framework"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interoperability-architecture",
+      "label": "Interoperability Architecture"
+    },
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "schema-registry",
+      "label": "Schema Registry"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:e12d1287c45fb678de872ac1c08c52206c8acdebb6a171894877156c9c4f6547",
+  "title": "Proof of History",
+  "slug": "proof-of-history",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proof-of-history",
+  "domain": "blockchain",
+  "definition": "A cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. Creates verifiable passage of time between events without requiring nodes to trust each other.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:proof-based-consensus",
+      "label": "Proof-Based Consensus"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "proof-based-consensus",
+      "label": "Proof-Based Consensus"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

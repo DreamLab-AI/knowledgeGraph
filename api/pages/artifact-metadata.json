@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:fc27e5e567e248eb2a3757b7c93b0fa6ab4220a1ef02829991e243ecb80a163b",
+  "title": "Artifact Metadata",
+  "slug": "artifact-metadata",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:artifact-metadata",
+  "domain": "spatial-computing",
+  "definition": "Artifact Metadata refers to structured descriptive, administrative, and provenance information associated with digital assets and cultural objects, particularly in NFT and blockchain contexts, documenting ownership history, authenticity, cultural significance, and preservation status for verification and long-term accessibility.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-metadata",
+      "label": "Digital Metadata"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-recording",
+        "label": "Blockchain Recording"
+      },
+      {
+        "id": "urn:visionflow:linked:documentation-practices",
+        "label": "Documentation Practices"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:authenticity-tracking",
+        "label": "Authenticity Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:cultural-preservation",
+        "label": "Cultural Preservation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authenticity-tracking",
+      "label": "Authenticity Tracking"
+    },
+    {
+      "slug": "blockchain-recording",
+      "label": "Blockchain Recording"
+    },
+    {
+      "slug": "cultural-preservation",
+      "label": "Cultural Preservation"
+    },
+    {
+      "slug": "digital-metadata",
+      "label": "Digital Metadata"
+    },
+    {
+      "slug": "documentation-practices",
+      "label": "Documentation Practices"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    }
+  ]
+}

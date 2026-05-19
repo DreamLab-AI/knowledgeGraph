@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:0e038799d8f2154881cb6f14dc8e8f29e72ab42fe15dd58359971f2d8a10795b",
+  "title": "Safety Measure",
+  "slug": "safety-measure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:safety-measure",
+  "domain": "artificial-intelligence",
+  "definition": "Safety Measure is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "Ai Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance",
+      "label": "Ai Governance"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

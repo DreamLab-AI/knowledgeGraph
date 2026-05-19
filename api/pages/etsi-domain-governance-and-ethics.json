@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:c7d2d5c3b0daa6076457b740d139914e9dfa168ee9e2cd0d68311837d12726dc",
+  "title": "ETSI Domain: Governance & Ethics",
+  "slug": "etsi-domain-governance-and-ethics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-governance-and-ethics",
+  "domain": "infrastructure",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing ethical governance frameworks, responsible decision-making processes, and value-aligned organisational structures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ethics-committee",
+        "label": "Ethics Committee"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:value-framework",
+        "label": "Value Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-board",
+        "label": "Governance Board"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ethics-and-law",
+        "label": "Ethics & Law"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ethical-decision-making",
+        "label": "Ethical Decision-Making"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-accountability",
+        "label": "Stakeholder Accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethical-decision-making",
+      "label": "Ethical Decision-Making"
+    },
+    {
+      "slug": "ethical-principles",
+      "label": "Ethical Principles"
+    },
+    {
+      "slug": "ethics-and-law",
+      "label": "Ethics & Law"
+    },
+    {
+      "slug": "ethics-committee",
+      "label": "Ethics Committee"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "governance-models",
+      "label": "Governance Models"
+    },
+    {
+      "slug": "stakeholder-accountability",
+      "label": "Stakeholder Accountability"
+    },
+    {
+      "slug": "stakeholder-engagement",
+      "label": "Stakeholder Engagement"
+    },
+    {
+      "slug": "value-framework",
+      "label": "Value Framework"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "governance-board",
+      "label": "Governance Board"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "value-alignment",
+      "label": "Value Alignment"
+    }
+  ],
+  "backlinks": []
+}

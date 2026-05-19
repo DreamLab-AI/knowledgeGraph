@@ -1,0 +1,504 @@
+{
+  "id": "urn:visionflow:page:185e370082082ff31326faecf3113db8bb54a8e82bfbfd7112941c13e8b28190",
+  "title": "Trust Framework",
+  "slug": "trust-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trust-framework",
+  "domain": "identity-governance",
+  "definition": "Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ecosystem. A trust framework specifies what constitutes acceptable identity evidence, which credential types are recognised, which assurance levels are required for given transaction risk profiles, how accreditation of service providers is achieved, and which revocation and audit obligations apply. Trust frameworks operate simultaneously as governance instruments (defining legal and contractual obligations), technical specifications (defining interoperable protocols and data formats), and certification schemes (mandating conformity assessment by accredited bodies). Modern trust frameworks address identity assurance across the full digital identity lifecycle \u2014 identity proofing (binding a claimed identity to a real-world person or entity), authenticator management (controlling the authentication mechanisms used subsequently), and federation (communicating verified identity assertions across or",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:certification-scheme",
+      "label": "Certification Scheme"
+    },
+    {
+      "id": "urn:visionflow:linked:framework",
+      "label": "Framework"
+    },
+    {
+      "id": "urn:visionflow:linked:policy-framework",
+      "label": "Policy Framework"
+    },
+    {
+      "id": "urn:visionflow:owl:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accreditation-body",
+        "label": "Accreditation Body"
+      },
+      {
+        "id": "urn:visionflow:linked:assurance-level",
+        "label": "Assurance Level"
+      },
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:conformity-assessment-body",
+        "label": "Conformity Assessment Body"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-issuer",
+        "label": "Credential Issuer"
+      },
+      {
+        "id": "urn:visionflow:linked:federation",
+        "label": "Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-proofing",
+        "label": "Identity Proofing"
+      },
+      {
+        "id": "urn:visionflow:linked:relying-party",
+        "label": "Relying Party"
+      },
+      {
+        "id": "urn:visionflow:linked:revocation-mechanism",
+        "label": "Revocation Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-list",
+        "label": "Trust List"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-mark",
+        "label": "Trust Mark"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-credentials",
+        "label": "Digital Credentials"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:credential-portability",
+        "label": "Credential Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-authentication",
+        "label": "Cross-Border Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-based-authentication",
+        "label": "Risk-Based Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-transitivity",
+        "label": "Trust Transitivity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:e-idas-2",
+        "label": "eIDAS 2"
+      },
+      {
+        "id": "urn:visionflow:linked:nist-sp-800-63",
+        "label": "NIST SP 800-63"
+      },
+      {
+        "id": "urn:visionflow:linked:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:visionflow:linked:open-id-federation",
+        "label": "OpenID Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-over-ip",
+        "label": "Trust over IP"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accreditation-body",
+      "label": "Accreditation Body"
+    },
+    {
+      "slug": "ad-hoc-identity",
+      "label": "Ad Hoc Identity"
+    },
+    {
+      "slug": "assurance-level",
+      "label": "Assurance Level"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "certification-layer",
+      "label": "CertificationLayer"
+    },
+    {
+      "slug": "certification-scheme",
+      "label": "Certification Scheme"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "conformity-assessment-body",
+      "label": "Conformity Assessment Body"
+    },
+    {
+      "slug": "credential-issuer",
+      "label": "Credential Issuer"
+    },
+    {
+      "slug": "credential-portability",
+      "label": "Credential Portability"
+    },
+    {
+      "slug": "cross-border-authentication",
+      "label": "Cross-Border Authentication"
+    },
+    {
+      "slug": "cryptographic-proof",
+      "label": "Cryptographic Proof"
+    },
+    {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
+    },
+    {
+      "slug": "decentralised-identifiers",
+      "label": "Decentralised Identifiers"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "digital-credentials",
+      "label": "Digital Credentials"
+    },
+    {
+      "slug": "digital-trust-domain",
+      "label": "DigitalTrustDomain"
+    },
+    {
+      "slug": "dsit",
+      "label": "DSIT"
+    },
+    {
+      "slug": "e-idas-2",
+      "label": "eIDAS 2"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "european-commission",
+      "label": "European Commission"
+    },
+    {
+      "slug": "federation",
+      "label": "Federation"
+    },
+    {
+      "slug": "framework",
+      "label": "Framework"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "identity-and-access-management",
+      "label": "Identity and Access Management"
+    },
+    {
+      "slug": "identity-governance",
+      "label": "Identity Governance"
+    },
+    {
+      "slug": "identity-governance-domain",
+      "label": "IdentityGovernanceDomain"
+    },
+    {
+      "slug": "identity-proofing",
+      "label": "Identity Proofing"
+    },
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "iso-iec-17065",
+      "label": "ISO/IEC 17065"
+    },
+    {
+      "slug": "iso-iec-27001",
+      "label": "ISO/IEC 27001"
+    },
+    {
+      "slug": "json-web-token",
+      "label": "JSON Web Token"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "nist-sp-800-63",
+      "label": "NIST SP 800-63"
+    },
+    {
+      "slug": "open-id-connect",
+      "label": "OpenID Connect"
+    },
+    {
+      "slug": "open-id-federation",
+      "label": "OpenID Federation"
+    },
+    {
+      "slug": "policy-enforcement-point",
+      "label": "Policy Enforcement Point"
+    },
+    {
+      "slug": "policy-framework",
+      "label": "Policy Framework"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "RegulatoryComplianceDomain"
+    },
+    {
+      "slug": "relying-party",
+      "label": "Relying Party"
+    },
+    {
+      "slug": "revocation-mechanism",
+      "label": "Revocation Mechanism"
+    },
+    {
+      "slug": "risk-based-authentication",
+      "label": "Risk-Based Authentication"
+    },
+    {
+      "slug": "sd-jwt",
+      "label": "SD-JWT"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "Selective Disclosure"
+    },
+    {
+      "slug": "siloed-identity",
+      "label": "Siloed Identity"
+    },
+    {
+      "slug": "standards-layer",
+      "label": "StandardsLayer"
+    },
+    {
+      "slug": "trust-anchor",
+      "label": "Trust Anchor"
+    },
+    {
+      "slug": "trust-list",
+      "label": "Trust List"
+    },
+    {
+      "slug": "trust-mark",
+      "label": "Trust Mark"
+    },
+    {
+      "slug": "trust-over-ip",
+      "label": "Trust over IP"
+    },
+    {
+      "slug": "trust-transitivity",
+      "label": "Trust Transitivity"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "web-of-trust",
+      "label": "Web of Trust"
+    },
+    {
+      "slug": "x-509-certificate",
+      "label": "X.509 Certificate"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "ethics-and-law-layer",
+      "label": "Ethics & Law Layer"
+    },
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

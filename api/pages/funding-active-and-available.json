@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:17e19198290af530c5036c549a8935e62e963684deae466e64a0e553bc84b316",
+  "title": "Funding (active and available)",
+  "slug": "funding-active-and-available",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:funding-active-and-available",
+  "domain": "infrastructure",
+  "definition": "Funding (active and available) is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:resource-management",
+      "label": "Resource Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "must",
+      "label": "MUST"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:e150b3bd2e8b0cf69098ad169e8d6503040807e1f3f9f3328d421f53f4745342",
+  "title": "rb 0047 feedback control",
+  "slug": "rb-0047-feedback-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0047-feedback-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:closed-loop-control",
+      "label": "Closed-Loop Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "pid-controller",
+      "label": "Pid Controller"
+    }
+  ]
+}

@@ -1,0 +1,571 @@
+{
+  "id": "urn:visionflow:page:ead33d47c0925547ebacab40e7b7056db98d540e99e1763ba9caad7e4fd392f1",
+  "title": "Bitcoin related links",
+  "slug": "bitcoin-related-links",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-related-links",
+  "domain": "blockchain",
+  "definition": "Bitcoin related links is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "address-distribution",
+      "label": "Address Distribution"
+    },
+    {
+      "slug": "africa",
+      "label": "Africa"
+    },
+    {
+      "slug": "african-bitcoin",
+      "label": "African Bitcoin"
+    },
+    {
+      "slug": "alex-gladstein",
+      "label": "Alex Gladstein"
+    },
+    {
+      "slug": "argentina",
+      "label": "Argentina"
+    },
+    {
+      "slug": "asic-mining",
+      "label": "ASIC Mining"
+    },
+    {
+      "slug": "asset-class",
+      "label": "Asset Class"
+    },
+    {
+      "slug": "asset-recovery",
+      "label": "Asset Recovery"
+    },
+    {
+      "slug": "bip85",
+      "label": "BIP85"
+    },
+    {
+      "slug": "bitcoin-adoption",
+      "label": "Bitcoin Adoption"
+    },
+    {
+      "slug": "bitcoin-bonds",
+      "label": "Bitcoin Bonds"
+    },
+    {
+      "slug": "bitcoin-culture",
+      "label": "Bitcoin Culture"
+    },
+    {
+      "slug": "bitcoin-legal-status",
+      "label": "Bitcoin Legal Status"
+    },
+    {
+      "slug": "bitcoin-price-prediction",
+      "label": "Bitcoin Price Prediction"
+    },
+    {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "cbdc-competition",
+      "label": "CBDC Competition"
+    },
+    {
+      "slug": "central-banks",
+      "label": "Central Banks"
+    },
+    {
+      "slug": "charles-edwards",
+      "label": "Charles Edwards"
+    },
+    {
+      "slug": "china-mining-ban",
+      "label": "China Mining Ban"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "corporate-strategy",
+      "label": "Corporate Strategy"
+    },
+    {
+      "slug": "corporate-treasury",
+      "label": "Corporate Treasury"
+    },
+    {
+      "slug": "crypto-assets",
+      "label": "Crypto Assets"
+    },
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
+      "slug": "dan-held",
+      "label": "Dan Held"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "did",
+      "label": "DID"
+    },
+    {
+      "slug": "dollar-cost-averaging",
+      "label": "Dollar Cost Averaging"
+    },
+    {
+      "slug": "eastern-europe",
+      "label": "Eastern Europe"
+    },
+    {
+      "slug": "economic-sanctions",
+      "label": "Economic Sanctions"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "el-salvador-case-study",
+      "label": "El Salvador Case Study"
+    },
+    {
+      "slug": "elon-musk",
+      "label": "Elon Musk"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
+      "slug": "energy-solutions",
+      "label": "Energy Solutions"
+    },
+    {
+      "slug": "environmental-impact",
+      "label": "Environmental Impact"
+    },
+    {
+      "slug": "etf",
+      "label": "ETF"
+    },
+    {
+      "slug": "european-regulation",
+      "label": "European Regulation"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "financial-products",
+      "label": "Financial Products"
+    },
+    {
+      "slug": "fund-management",
+      "label": "Fund Management"
+    },
+    {
+      "slug": "geopolitical-finance",
+      "label": "Geopolitical Finance"
+    },
+    {
+      "slug": "geopolitics",
+      "label": "Geopolitics"
+    },
+    {
+      "slug": "gift-cards",
+      "label": "Gift Cards"
+    },
+    {
+      "slug": "gig-economy",
+      "label": "Gig Economy"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "india-crypto",
+      "label": "India Crypto"
+    },
+    {
+      "slug": "inflation-hedge",
+      "label": "Inflation Hedge"
+    },
+    {
+      "slug": "institutional-bitcoin-investment",
+      "label": "Institutional Bitcoin Investment"
+    },
+    {
+      "slug": "institutional-investment",
+      "label": "Institutional Investment"
+    },
+    {
+      "slug": "insurance-companies",
+      "label": "Insurance Companies"
+    },
+    {
+      "slug": "international-payments",
+      "label": "International Payments"
+    },
+    {
+      "slug": "investment-risk",
+      "label": "Investment Risk"
+    },
+    {
+      "slug": "jack-dorsey",
+      "label": "Jack Dorsey"
+    },
+    {
+      "slug": "jack-mallers",
+      "label": "Jack Mallers"
+    },
+    {
+      "slug": "jeff-booth",
+      "label": "Jeff Booth"
+    },
+    {
+      "slug": "jurisdictional-adoption",
+      "label": "Jurisdictional Adoption"
+    },
+    {
+      "slug": "kyc-aml",
+      "label": "KYC/AML"
+    },
+    {
+      "slug": "kyc-requirements",
+      "label": "KYC Requirements"
+    },
+    {
+      "slug": "law-enforcement",
+      "label": "Law Enforcement"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "layer-2-solutions",
+      "label": "Layer 2 Solutions"
+    },
+    {
+      "slug": "legal-tender",
+      "label": "Legal Tender"
+    },
+    {
+      "slug": "legal-tender-status",
+      "label": "Legal Tender Status"
+    },
+    {
+      "slug": "lightning-integration",
+      "label": "Lightning Integration"
+    },
+    {
+      "slug": "lightning-payments",
+      "label": "Lightning Payments"
+    },
+    {
+      "slug": "lyn-alden",
+      "label": "Lyn Alden"
+    },
+    {
+      "slug": "m-and-a-activity",
+      "label": "M&A Activity"
+    },
+    {
+      "slug": "market-cycles",
+      "label": "Market Cycles"
+    },
+    {
+      "slug": "market-inefficiencies",
+      "label": "Market Inefficiencies"
+    },
+    {
+      "slug": "marty-bent",
+      "label": "Marty Bent"
+    },
+    {
+      "slug": "max-keidun",
+      "label": "Max Keidun"
+    },
+    {
+      "slug": "michael-saylor",
+      "label": "Michael Saylor"
+    },
+    {
+      "slug": "mining-regulations",
+      "label": "Mining Regulations"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "multisig",
+      "label": "Multisig"
+    },
+    {
+      "slug": "multisig-wallets",
+      "label": "Multisig Wallets"
+    },
+    {
+      "slug": "nuclear-energy",
+      "label": "Nuclear Energy"
+    },
+    {
+      "slug": "on-chain-analysis",
+      "label": "On-chain Analysis"
+    },
+    {
+      "slug": "on-chain-analytics",
+      "label": "On-Chain Analytics"
+    },
+    {
+      "slug": "on-chain-metrics",
+      "label": "On-Chain Metrics"
+    },
+    {
+      "slug": "p2-p-finance",
+      "label": "P2P Finance"
+    },
+    {
+      "slug": "philosophy",
+      "label": "Philosophy"
+    },
+    {
+      "slug": "political-opposition",
+      "label": "Political Opposition"
+    },
+    {
+      "slug": "political-representation",
+      "label": "Political Representation"
+    },
+    {
+      "slug": "president-bukele",
+      "label": "President Bukele"
+    },
+    {
+      "slug": "raoul-pal",
+      "label": "Raoul Pal"
+    },
+    {
+      "slug": "regulatory-approval",
+      "label": "Regulatory Approval"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
+      "slug": "regulatory-evasion",
+      "label": "Regulatory Evasion"
+    },
+    {
+      "slug": "regulatory-scrutiny",
+      "label": "Regulatory Scrutiny"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    },
+    {
+      "slug": "retail-commerce",
+      "label": "Retail Commerce"
+    },
+    {
+      "slug": "ryan-gentry",
+      "label": "Ryan Gentry"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "sec-regulation",
+      "label": "SEC Regulation"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "social-integration",
+      "label": "Social Integration"
+    },
+    {
+      "slug": "social-justice",
+      "label": "Social Justice"
+    },
+    {
+      "slug": "sports-industry",
+      "label": "Sports Industry"
+    },
+    {
+      "slug": "spot-bitcoin-etf",
+      "label": "Spot Bitcoin ETF"
+    },
+    {
+      "slug": "spot-etf",
+      "label": "Spot ETF"
+    },
+    {
+      "slug": "square-cash",
+      "label": "Square Cash"
+    },
+    {
+      "slug": "stock-to-flow-model",
+      "label": "Stock-to-Flow Model"
+    },
+    {
+      "slug": "sustainable-mining",
+      "label": "Sustainable Mining"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "tax-policy",
+      "label": "Tax Policy"
+    },
+    {
+      "slug": "taxation",
+      "label": "Taxation"
+    },
+    {
+      "slug": "technical-analysis",
+      "label": "Technical Analysis"
+    },
+    {
+      "slug": "technology-upgrade",
+      "label": "Technology Upgrade"
+    },
+    {
+      "slug": "tesla",
+      "label": "Tesla"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
+    },
+    {
+      "slug": "treasury-reserve",
+      "label": "Treasury Reserve"
+    },
+    {
+      "slug": "tuur-demeester",
+      "label": "Tuur Demeester"
+    },
+    {
+      "slug": "ukraine",
+      "label": "Ukraine"
+    },
+    {
+      "slug": "valuation-models",
+      "label": "Valuation Models"
+    },
+    {
+      "slug": "whale-watching",
+      "label": "Whale Watching"
+    },
+    {
+      "slug": "wozniak",
+      "label": "Wozniak"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": []
+}

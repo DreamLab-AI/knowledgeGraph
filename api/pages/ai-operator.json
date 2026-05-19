@@ -1,0 +1,137 @@
+{
+  "id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0",
+  "title": "AI Operator",
+  "slug": "ai-operator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-operator",
+  "domain": "artificial-intelligence",
+  "definition": "An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordinating maintenance, exercising human oversight, and ensuring the AI system operates safely, effectively, and in accordance with established policies, procedures, and regulatory requirements within specific operational contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-deployment",
+      "label": "AI Deployment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:competence-development",
+        "label": "competence development"
+      },
+      {
+        "id": "urn:visionflow:linked:ongoing-support",
+        "label": "ongoing support"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training",
+        "label": "Training"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "competence",
+      "label": "Competence"
+    },
+    {
+      "slug": "competence-development",
+      "label": "competence development"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "ongoing-support",
+      "label": "ongoing support"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "training",
+      "label": "Training"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "stakeholder",
+      "label": "Stakeholder"
+    }
+  ]
+}

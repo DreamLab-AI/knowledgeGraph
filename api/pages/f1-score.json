@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:50de845878c1b7ef94ae20214f998cea2e0845f98d72a11f73e53fb64af0b0a5",
+  "title": "F1 Score",
+  "slug": "f1-score",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:f1-score",
+  "domain": "spatial-computing",
+  "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst penalising extreme imbalances, particularly useful for comparing models or setting decision thresholds when both prediction reliability and completeness are important and when class distributions are imbalanced.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "f-beta-score",
+      "label": "F-beta Score"
+    },
+    {
+      "slug": "macro-f1",
+      "label": "Macro F1"
+    },
+    {
+      "slug": "micro-f1",
+      "label": "Micro F1"
+    },
+    {
+      "slug": "precision-recall-curve",
+      "label": "Precision-Recall Curve"
+    },
+    {
+      "slug": "roc-auc",
+      "label": "ROC-AUC"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ]
+}

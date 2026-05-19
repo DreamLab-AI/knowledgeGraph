@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:e6bcf27c688e16b6d9ad502905433d020416890323e407d5de9e328fdeb042fc",
+  "title": "Behavioral Learning",
+  "slug": "behavioral-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:behavioral-learning",
+  "domain": "spatial-computing",
+  "definition": "An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning-models",
+        "label": "Machine Learning Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:personalization",
+        "label": "Personalization"
+      },
+      {
+        "id": "urn:visionflow:linked:user-experience-optimization",
+        "label": "User Experience Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-collection",
+      "label": "Data Collection"
+    },
+    {
+      "slug": "personalization",
+      "label": "Personalization"
+    },
+    {
+      "slug": "user-experience-optimization",
+      "label": "User Experience Optimization"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "predictive-analytics",
+      "label": "Predictive Analytics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "behavioural-feedback-loop",
+      "label": "Behavioural Feedback Loop"
+    }
+  ]
+}

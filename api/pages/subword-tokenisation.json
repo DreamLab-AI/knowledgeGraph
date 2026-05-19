@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:320499c4bafb4978048e77b43f7b8f58bceabf3144611925ab1b2952dc46c123",
+  "title": "Subword Tokenisation",
+  "slug": "subword-tokenisation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:subword-tokenisation",
+  "domain": "spatial-computing",
+  "definition": "A tokenisation approach that breaks words into smaller meaningful units, balancing vocabulary size with the ability to represent rare words and novel compositions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    }
+  ]
+}

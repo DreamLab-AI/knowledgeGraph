@@ -1,0 +1,472 @@
+{
+  "id": "urn:visionflow:page:c8b97f9b090602bb18572ba2950d23bcc21cd803e0a016d6eaaac83792507b16",
+  "title": "Fashion",
+  "slug": "fashion",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fashion",
+  "domain": "application",
+  "definition": "Fashion, as an AI-application domain, encompasses the convergence of machine learning, computer vision, generative models, and blockchain supply-chain infrastructure with the global apparel, luxury, and textile industries, valued at approximately USD 1.7 trillion in 2024 and forecast to reach USD 2.1 trillion by 2030 (Euromonitor International). The domain transforms every phase of the fashion value chain \u2014 from creative conception through digital prototyping, production scheduling, personalised retail, virtual try-on, post-sale authentication, and end-of-life sustainability accounting \u2014 into a data-driven, AI-augmented operation. Generative AI systems, principally diffusion models including Stable Diffusion XL (SDXL 1.0, Stability AI 2023), Midjourney v6, and Adobe Firefly (Firefly Image 3, May 2024), enable designers to produce photorealistic moodboards, textile pattern variants, and entire lookbook spreads in hours rather than weeks; research by McKinsey and Company (State of Fashion 2025) estimates AI-assisted design tooling compresses the concept-to-sample cycle by 40\u201360%, with LVMH reporting internally that its AI design assistant reduced first-sample iteration time from four",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "id": "urn:visionflow:linked:retail-technology",
+      "label": "Retail Technology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-styling",
+        "label": "AI Styling"
+      },
+      {
+        "id": "urn:visionflow:linked:aura-blockchain",
+        "label": "Aura Blockchain"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-fashion",
+        "label": "Digital Fashion"
+      },
+      {
+        "id": "urn:visionflow:linked:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "id": "urn:visionflow:linked:on-demand-manufacturing",
+        "label": "On-Demand Manufacturing"
+      },
+      {
+        "id": "urn:visionflow:linked:product-passport",
+        "label": "Product Passport"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-metrics",
+        "label": "Sustainability Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:trend-forecasting",
+        "label": "Trend Forecasting"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-try-on",
+        "label": "Virtual Try-On"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:body-estimation-networks",
+        "label": "Body Estimation Networks"
+      },
+      {
+        "id": "urn:visionflow:linked:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:visionflow:linked:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:diffusion-models",
+        "label": "Diffusion Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:mass-customisation",
+        "label": "Mass Customisation"
+      },
+      {
+        "id": "urn:visionflow:linked:personalised-retail",
+        "label": "Personalised Retail"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainable-production",
+        "label": "Sustainable Production"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:collaborative-filtering",
+        "label": "Collaborative Filtering"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-garment-warping",
+        "label": "Neural Garment Warping"
+      },
+      {
+        "id": "urn:visionflow:linked:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-styling",
+      "label": "AI Styling"
+    },
+    {
+      "slug": "application-domain",
+      "label": "ApplicationDomain"
+    },
+    {
+      "slug": "aura-blockchain",
+      "label": "Aura Blockchain"
+    },
+    {
+      "slug": "body-estimation-networks",
+      "label": "Body Estimation Networks"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "creative-industries-domain",
+      "label": "CreativeIndustriesDomain"
+    },
+    {
+      "slug": "digital-fashion",
+      "label": "Digital Fashion"
+    },
+    {
+      "slug": "eu-digital-product-passport",
+      "label": "EU Digital Product Passport"
+    },
+    {
+      "slug": "fast-fashion",
+      "label": "Fast Fashion"
+    },
+    {
+      "slug": "generative-design",
+      "label": "Generative Design"
+    },
+    {
+      "slug": "gots-organic-textile-standard",
+      "label": "GOTS Organic Textile Standard"
+    },
+    {
+      "slug": "gri-sustainability-standards",
+      "label": "GRI Sustainability Standards"
+    },
+    {
+      "slug": "iso-14040-lca",
+      "label": "ISO 14040 LCA"
+    },
+    {
+      "slug": "manual-trend-analysis",
+      "label": "Manual Trend Analysis"
+    },
+    {
+      "slug": "mass-customisation",
+      "label": "Mass Customisation"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "neural-garment-warping",
+      "label": "Neural Garment Warping"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "on-demand-manufacturing",
+      "label": "On-Demand Manufacturing"
+    },
+    {
+      "slug": "personalised-retail",
+      "label": "Personalised Retail"
+    },
+    {
+      "slug": "physical-only-design",
+      "label": "Physical-Only Design"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "PresentationLayer"
+    },
+    {
+      "slug": "product-passport",
+      "label": "Product Passport"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "retail-technology",
+      "label": "Retail Technology"
+    },
+    {
+      "slug": "retail-technology-domain",
+      "label": "RetailTechnologyDomain"
+    },
+    {
+      "slug": "sa8000-labour-standard",
+      "label": "SA8000 Labour Standard"
+    },
+    {
+      "slug": "sustainability-metrics",
+      "label": "Sustainability Metrics"
+    },
+    {
+      "slug": "sustainable-production",
+      "label": "Sustainable Production"
+    },
+    {
+      "slug": "traditional-retail",
+      "label": "Traditional Retail"
+    },
+    {
+      "slug": "trend-forecasting",
+      "label": "Trend Forecasting"
+    },
+    {
+      "slug": "virtual-try-on",
+      "label": "Virtual Try-On"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-metaverse-for-global-creatives",
+      "label": "Agentic Metaverse for Global Creatives"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "multi-agent-rag-scrapbook",
+      "label": "Multi Agent RAG scrapbook"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "supply-chain-management",
+      "label": "Supply Chain Management"
+    },
+    {
+      "slug": "supply-chain-traceability",
+      "label": "Supply Chain Traceability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

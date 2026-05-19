@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:a9c39f8ebc7180ea3830cd3ff035e0cc9e69f1bed68d630c89b88ee6e5b8bbb7",
+  "title": "Calculation Parameters",
+  "slug": "calculation-parameters",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:calculation-parameters",
+  "domain": "spatial-computing",
+  "definition": "Configurable variables and settings that control the behavior, accuracy, and performance of computational simulations and models, including solver options, convergence criteria, time steps, and optimization constraints that fine-tune simulation outputs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:configuration-setting",
+      "label": "Configuration Setting"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:parameter-definition",
+        "label": "Parameter Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-rules",
+        "label": "Validation Rules"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:model-calibration",
+        "label": "Model Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-tuning",
+        "label": "Performance Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:simulation-control",
+        "label": "Simulation Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "model-calibration",
+      "label": "Model Calibration"
+    },
+    {
+      "slug": "parameter-definition",
+      "label": "Parameter Definition"
+    },
+    {
+      "slug": "performance-tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "slug": "sensitivity-analysis",
+      "label": "Sensitivity Analysis"
+    },
+    {
+      "slug": "simulation-control",
+      "label": "Simulation Control"
+    },
+    {
+      "slug": "validation-rules",
+      "label": "Validation Rules"
+    },
+    {
+      "slug": "configuration-setting",
+      "label": "Configuration Setting"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    }
+  ]
+}

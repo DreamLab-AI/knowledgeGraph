@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ab16e2471ee57a5c27a5bc8324e113849e4da6cb94f62dd7ea3e2b5c97084722",
+  "title": "Computer Vision Task",
+  "slug": "computer-vision-task",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computer-vision-task",
+  "domain": "artificial-intelligence",
+  "definition": "Computer vision tasks are specific computational problems that machines solve using visual data, including image classification (assigning labels to images), object detection (locating and identifying objects with bounding boxes), semantic segmentation (pixel-wise classification), and instance segmentation (distinguishing individual objects of the same class). These tasks form the foundation for downstream applications such as image captioning, object tracking, and visual question answering.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "ComputerVision"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

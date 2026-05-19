@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:f01f9ea97cf3f59002d6661383b7211175fd8f31caa9106972f2edc82e0a6f02",
+  "title": "ETSI Domain Application + Health",
+  "slug": "etsi-domain-application-health",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-application-health",
+  "domain": "spatial-computing",
+  "definition": "Cross-domain marker for metaverse application components focused on healthcare and wellness including telemedicine platforms, medical training simulations, therapeutic VR applications, and health monitoring systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:medical-platform-categorization",
+        "label": "Medical Platform Categorization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:healthcare-application-classification",
+        "label": "Healthcare Application Classification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "medical-platform-categorization",
+      "label": "Medical Platform Categorization"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "healthcare-application-classification",
+      "label": "Healthcare Application Classification"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": []
+}

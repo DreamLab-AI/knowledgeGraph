@@ -1,21 +1,189 @@
-iri:: http://narrativegoldmine.com/metaverse#VocabularyGovernance
-uri:: urn:visionclaw:concept:artificial-intelligence:vocabulary-governance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:vocabulary-governance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Vocabulary Governance
-content-hash:: sha256-12-28d24be6d2c9
-legacy-term-id:: MV-10160
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#VocabularyGovernance
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:vocabulary-governance
 public:: true
+
+# Vocabulary Governance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b",
+  "@type": "Page",
+  "vc:slug": "vocabulary-governance",
+  "title": "Vocabulary Governance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-management",
+      "vc:label": "Knowledge Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-28d24be6d2c9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#VocabularyGovernance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10160"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Vocabulary Governance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:vocabulary-governance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:vocabulary-governance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:vocabulary-governance",
+  "@type": "OntologyClass",
+  "label": "Vocabulary Governance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-management",
+      "vc:label": "Knowledge Management"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:vocabulary-governance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Knowledge Management]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.

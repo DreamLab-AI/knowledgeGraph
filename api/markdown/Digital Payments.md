@@ -1,24 +1,292 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalPayments
-uri:: urn:visionclaw:concept:spatial-computing:digital-payments
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-payments
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Payments
-content-hash:: sha256-12-bab2a72b855b
-legacy-term-id:: MV-9865
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalPayments
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-payments
 public:: true
+
+# Digital Payments
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0",
+  "@type": "Page",
+  "vc:slug": "digital-payments",
+  "title": "Digital Payments",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cross-border-transfer",
+      "vc:label": "Cross-Border Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-processor",
+      "vc:label": "Payment Processor"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-purchases",
+      "vc:label": "Virtual Purchases"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-wallet",
+      "vc:label": "Digital Wallet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:e-commerce",
+      "vc:label": "E-Commerce"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:financial-transactions",
+      "vc:label": "Financial Transactions"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-bab2a72b855b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalPayments"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9865"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Payments"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-payments"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-payments"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-payments",
+  "@type": "OntologyClass",
+  "label": "Digital Payments",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:financial-transactions",
+      "vc:label": "Financial Transactions"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems. bridges-to:: [[Blockchain]]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:payment-processor",
+      "vc:label": "Payment Processor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-wallet",
+      "vc:label": "Digital Wallet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-border-transfer",
+      "vc:label": "Cross-Border Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-purchases",
+      "vc:label": "Virtual Purchases"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:e-commerce",
+      "vc:label": "E-Commerce"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-payments:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cross-Border Transfer]]",
+      "resolved": "urn:visionflow:linked:cross-border-transfer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Processor]]",
+      "resolved": "urn:visionflow:linked:payment-processor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Purchases]]",
+      "resolved": "urn:visionflow:linked:virtual-purchases",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Wallet]]",
+      "resolved": "urn:visionflow:owl:class:digital-wallet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[E-Commerce]]",
+      "resolved": "urn:visionflow:owl:class:e-commerce",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Financial Transactions]]",
+      "resolved": "urn:visionflow:owl:class:financial-transactions",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:network-infrastructure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.

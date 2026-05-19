@@ -1,0 +1,184 @@
+{
+  "id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33",
+  "title": "Haptic Feedback",
+  "slug": "haptic-feedback",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:haptic-feedback",
+  "domain": "spatial-computing",
+  "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dt-calibrated-by",
+      "label": "dt:calibratedBy"
+    },
+    {
+      "slug": "dt-controlled-by",
+      "label": "dt:controlledBy"
+    },
+    {
+      "slug": "dt-enhances",
+      "label": "dt:enhances"
+    },
+    {
+      "slug": "dt-integrated-with",
+      "label": "dt:integratedWith"
+    },
+    {
+      "slug": "dt-optimized-by",
+      "label": "dt:optimizedBy"
+    },
+    {
+      "slug": "enhances-experience",
+      "label": "enhancesExperience"
+    },
+    {
+      "slug": "force-feedback",
+      "label": "ForceFeedback"
+    },
+    {
+      "slug": "integrats-with",
+      "label": "integratsWith"
+    },
+    {
+      "slug": "sensory-immersion",
+      "label": "SensoryImmersion"
+    },
+    {
+      "slug": "simulates-sensation",
+      "label": "simulatesSensation"
+    },
+    {
+      "slug": "tactile-actuator",
+      "label": "TactileActuator"
+    },
+    {
+      "slug": "tactile-actuator",
+      "label": "TactileActuator"
+    },
+    {
+      "slug": "touch-simulation",
+      "label": "TouchSimulation"
+    },
+    {
+      "slug": "uses-actuator",
+      "label": "usesActuator"
+    },
+    {
+      "slug": "wearable-haptics",
+      "label": "WearableHaptics"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "AugmentedReality"
+    },
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "robotic-system",
+      "label": "RoboticSystem"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "SensorFusion"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "VirtualReality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "human-interface-device",
+      "label": "Human Interface Device"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:6f318ab576601f68becf3ec3735ed47e157b3966ae2edd910795a6f84bef1fb2",
+  "title": "Monitoring Dashboard",
+  "slug": "monitoring-dashboard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:monitoring-dashboard",
+  "domain": "artificial-intelligence",
+  "definition": "Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-visualisation",
+      "label": "Data Visualisation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:operational-intelligence",
+        "label": "Operational Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "operational-intelligence",
+      "label": "Operational Intelligence"
+    },
+    {
+      "slug": "data-visualisation",
+      "label": "Data Visualisation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    }
+  ]
+}

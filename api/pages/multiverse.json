@@ -1,0 +1,247 @@
+{
+  "id": "urn:visionflow:page:1fa2a598ecc71960d90bf07c7380a092ec9e3566353907ba45de54b76ca36b13",
+  "title": "Multiverse",
+  "slug": "multiverse",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:multiverse",
+  "domain": "spatial-computing",
+  "definition": "A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-web",
+      "label": "Spatial Web"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-translation-layer",
+        "label": "Asset Translation Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-world-governance",
+        "label": "Multi-World Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:universal-inventory",
+        "label": "Universal Inventory"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:visionflow:owl:class:portal-system",
+        "label": "Portal System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asset-bridging",
+        "label": "Asset Bridging"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-authentication",
+        "label": "Cross-Platform Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-governance",
+        "label": "Distributed Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-translation",
+        "label": "Protocol Translation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standard-format-support",
+        "label": "Standard Format Support"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-world-travel",
+        "label": "Cross-World Travel"
+      },
+      {
+        "id": "urn:visionflow:linked:federated-social-networks",
+        "label": "Federated Social Networks"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-platform-gaming",
+        "label": "Multi-Platform Gaming"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-metaverse-commerce",
+        "label": "Cross-Metaverse Commerce"
+      },
+      {
+        "id": "urn:visionflow:owl:class:universal-avatar",
+        "label": "Universal Avatar"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-bridging",
+      "label": "Asset Bridging"
+    },
+    {
+      "slug": "asset-portability",
+      "label": "Asset Portability"
+    },
+    {
+      "slug": "asset-translation-layer",
+      "label": "Asset Translation Layer"
+    },
+    {
+      "slug": "cross-platform-authentication",
+      "label": "Cross-Platform Authentication"
+    },
+    {
+      "slug": "cross-world-travel",
+      "label": "Cross-World Travel"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "distributed-governance",
+      "label": "Distributed Governance"
+    },
+    {
+      "slug": "federated-identity",
+      "label": "Federated Identity"
+    },
+    {
+      "slug": "federated-social-networks",
+      "label": "Federated Social Networks"
+    },
+    {
+      "slug": "interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "multi-platform-gaming",
+      "label": "Multi-Platform Gaming"
+    },
+    {
+      "slug": "multi-world-governance",
+      "label": "Multi-World Governance"
+    },
+    {
+      "slug": "oma3",
+      "label": "OMA3"
+    },
+    {
+      "slug": "protocol-translation",
+      "label": "Protocol Translation"
+    },
+    {
+      "slug": "universal-inventory",
+      "label": "Universal Inventory"
+    },
+    {
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cross-metaverse-commerce",
+      "label": "Cross-Metaverse Commerce"
+    },
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interoperability-standard",
+      "label": "Interoperability Standard"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "portal-system",
+      "label": "Portal System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "spatial-web",
+      "label": "Spatial Web"
+    },
+    {
+      "slug": "standard-format-support",
+      "label": "Standard Format Support"
+    },
+    {
+      "slug": "universal-avatar",
+      "label": "Universal Avatar"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ]
+}

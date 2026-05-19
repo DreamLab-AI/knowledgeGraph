@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:b2010acfb51c63731d7c4bb9cd82b841522a883601db9d7fcfc708c81934331e",
+  "title": "Temperature Sensor",
+  "slug": "temperature-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:temperature-sensor",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

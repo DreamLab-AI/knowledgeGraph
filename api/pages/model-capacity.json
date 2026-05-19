@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:94881e4a663d8d7a5fd8a1dc5b004c2ecbd0706ca566d60d89f86eadb8623ae7",
+  "title": "Model Capacity",
+  "slug": "model-capacity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-capacity",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": []
+}

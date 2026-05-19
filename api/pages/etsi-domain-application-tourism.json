@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:262ae10c3c336f616f4749e17fc4b5c732b6693885a54d0f1a3725b5de3193e0",
+  "title": "ETSI Domain Application + Tourism",
+  "slug": "etsi-domain-application-tourism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-application-tourism",
+  "domain": "spatial-computing",
+  "definition": "Cross-domain marker for metaverse application components focused on tourism and hospitality including virtual tours, destination previews, cultural heritage experiences, and travel planning platforms in immersive environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "label": "Etsi Metaverse Domain Taxonomy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cultural-experience-categorization",
+        "label": "Cultural Experience Categorization"
+      },
+      {
+        "id": "urn:visionflow:linked:tourism-application-classification",
+        "label": "Tourism Application Classification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cultural-experience-categorization",
+      "label": "Cultural Experience Categorization"
+    },
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "tourism-application-classification",
+      "label": "Tourism Application Classification"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": []
+}

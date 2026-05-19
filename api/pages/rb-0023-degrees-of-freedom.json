@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:4d070ecdd94c26204303ac19fdebbd3c27ad1c74ac98f2742b556e7023b249a7",
+  "title": "rb 0023 degrees of freedom",
+  "slug": "rb-0023-degrees-of-freedom",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0023-degrees-of-freedom",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

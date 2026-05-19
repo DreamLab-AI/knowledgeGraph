@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:5a4db087da25c2a8c81ca4e9481bf4ea842598728bd41115c8a417da36e93553",
+  "title": "Teacher Student Training",
+  "slug": "teacher-student-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:teacher-student-training",
+  "domain": "artificial-intelligence",
+  "definition": "A training paradigm where a larger, more capable \"teacher\" model guides the training of a smaller \"student\" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:training-method",
+      "label": "Training Method"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

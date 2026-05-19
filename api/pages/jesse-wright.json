@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:1b2bb9de5bb13539f48b51a293c20ba0a211aab91c518cc7478c3eeb677336a1",
+  "title": "Jesse Wright",
+  "slug": "jesse-wright",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:jesse-wright",
+  "domain": "infrastructure",
+  "definition": "Jesse Wright is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

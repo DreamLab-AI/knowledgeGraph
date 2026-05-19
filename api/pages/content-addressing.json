@@ -1,0 +1,272 @@
+{
+  "id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f",
+  "title": "Content Addressing",
+  "slug": "content-addressing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:content-addressing",
+  "domain": "blockchain",
+  "definition": "The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its [[Content Hash|cryptographic content hash]] (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling [[VisionClaw Agentic Container|VisionClaw]] artefacts (credentials, receipts, events, pods, activities) to be referenced by their content rather than by location or opaque identifiers.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-layer",
+      "label": "Data Layer"
+    }
+  ],
+  "qualityScore": 0.92,
+  "authorityScore": 0.96,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:content-hash",
+        "label": "Content Hash"
+      },
+      {
+        "id": "urn:visionflow:linked:deterministic-serialisation",
+        "label": "Deterministic Serialisation"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-minting",
+        "label": "Hash Minting"
+      },
+      {
+        "id": "urn:visionflow:linked:sha-256-hashing",
+        "label": "SHA-256 Hashing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:canonical-json",
+        "label": "Canonical JSON"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:visionflow:linked:deterministic-encoding",
+        "label": "Deterministic Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "id": "urn:visionflow:linked:permanent-referenceability",
+        "label": "Permanent Referenceability"
+      },
+      {
+        "id": "urn:visionflow:linked:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:content-addressed-storage-principles",
+        "label": "Content-Addressed Storage Principles"
+      },
+      {
+        "id": "urn:visionflow:linked:git-object-addressing",
+        "label": "Git Object Addressing"
+      },
+      {
+        "id": "urn:visionflow:linked:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-013",
+      "label": "ADR-013"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "blockchain-hash-functions",
+      "label": "Blockchain Hash Functions"
+    },
+    {
+      "slug": "canonical-json",
+      "label": "Canonical JSON"
+    },
+    {
+      "slug": "content-addressed-storage-principles",
+      "label": "Content-Addressed Storage Principles"
+    },
+    {
+      "slug": "content-hash",
+      "label": "Content Hash"
+    },
+    {
+      "slug": "content-hash",
+      "label": "Content Hash"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "data-integritydomain",
+      "label": "DataIntegritydomain"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
+      "slug": "deduplication",
+      "label": "Deduplication"
+    },
+    {
+      "slug": "deterministic-encoding",
+      "label": "Deterministic Encoding"
+    },
+    {
+      "slug": "deterministic-serialisation",
+      "label": "Deterministic Serialisation"
+    },
+    {
+      "slug": "distributed-hash-table",
+      "label": "Distributed Hash Table"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "git-object-addressing",
+      "label": "Git Object Addressing"
+    },
+    {
+      "slug": "git-objects",
+      "label": "Git Objects"
+    },
+    {
+      "slug": "hash-minting",
+      "label": "Hash Minting"
+    },
+    {
+      "slug": "identifier-layer",
+      "label": "IdentifierLayer"
+    },
+    {
+      "slug": "ipfs-content-addressing",
+      "label": "IPFS Content Addressing"
+    },
+    {
+      "slug": "merkle-dags",
+      "label": "Merkle DAGs"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "permanent-referenceability",
+      "label": "Permanent Referenceability"
+    },
+    {
+      "slug": "rfc-8785",
+      "label": "RFC 8785"
+    },
+    {
+      "slug": "rfc-8785-canonical-json",
+      "label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "slug": "sha-256-hashing",
+      "label": "SHA-256 Hashing"
+    },
+    {
+      "slug": "sha-256-standard",
+      "label": "SHA-256 Standard"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "tamper-detection",
+      "label": "Tamper Detection"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "immutability",
+      "label": "Immutability"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

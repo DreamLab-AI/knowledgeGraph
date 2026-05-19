@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1921fdf89adaed47eb0dc0300b4a4c31536cabf97acf218a396fb469847b4345",
+  "title": "Radicle",
+  "slug": "radicle",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:radicle",
+  "domain": "blockchain",
+  "definition": "Radicle is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "untitled",
+      "label": "\ud83e\udd16"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,692 @@
+{
+  "id": "urn:visionflow:page:7b4570bd6a2ca28b7516f8ef2b442af7fcb1c74127a9cfce7e261f4cf7e20d53",
+  "title": "Depth Estimation",
+  "slug": "depth-estimation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:depth-estimation",
+  "domain": "artificial-intelligence",
+  "definition": "Depth Estimation is the computer vision task of recovering per-pixel distance from a camera (or a virtual viewpoint) to the surfaces of a 3D scene, producing a depth map D(u,v) \u2208 \u211d\u207a aligned to an image I(u,v) that encodes scene geometry needed for 3D reconstruction, robotic perception, augmented-reality occlusion, autonomous-vehicle obstacle avoidance, and view synthesis, addressed through three classical paradigms \u2014 passive multi-view stereo correspondence solving the disparity inverse-depth relation d = fB/Z under epipolar geometry (block matching, Semi-Global Matching SGM via Hirschm\u00fcller 2005-2008 still dominant in embedded ADAS, learned PSMNet/AANet/RAFT-Stereo end-to-end disparity networks achieving sub-pixel D1-all error <2% on KITTI 2015), structure-from-motion (SfM) bundle adjustment recovering sparse 3D points and camera poses from feature tracks (COLMAP de-facto open-source pipeline, OpenMVG, Bundler, Theia powering Google Street View, photogrammetry, Apple Object Capture), and monocular depth estimation learning a single-image depth prior from data \u2014 split between supervised regression on RGB-D ground truth (Eigen 2014 first CNN multi-scale, DORN ordinal regression CVPR",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-perception",
+      "label": "3D Perception"
+    },
+    {
+      "id": "urn:visionflow:linked:dense-prediction",
+      "label": "Dense Prediction"
+    },
+    {
+      "id": "urn:visionflow:linked:geometric-vision",
+      "label": "Geometric Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:scene-understanding",
+      "label": "Scene Understanding"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-extrinsics",
+        "label": "Camera Extrinsics"
+      },
+      {
+        "id": "urn:visionflow:linked:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:visionflow:linked:cost-volume",
+        "label": "Cost Volume"
+      },
+      {
+        "id": "urn:visionflow:linked:depth-map",
+        "label": "Depth Map"
+      },
+      {
+        "id": "urn:visionflow:linked:disparity-map",
+        "label": "Disparity Map"
+      },
+      {
+        "id": "urn:visionflow:linked:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:visionflow:linked:photometric-loss",
+        "label": "Photometric Loss"
+      },
+      {
+        "id": "urn:visionflow:owl:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:image-pair",
+        "label": "Image Pair"
+      },
+      {
+        "id": "urn:visionflow:linked:optimization",
+        "label": "Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ar-occlusion",
+        "label": "AR Occlusion"
+      },
+      {
+        "id": "urn:visionflow:linked:bokeh-rendering",
+        "label": "Bokeh Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:free-space-estimation",
+        "label": "Free-Space Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-slam",
+        "label": "Visual SLAM"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:block-matching",
+        "label": "Block Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:depth-anything",
+        "label": "Depth Anything"
+      },
+      {
+        "id": "urn:visionflow:linked:dpt",
+        "label": "DPT"
+      },
+      {
+        "id": "urn:visionflow:linked:marigold",
+        "label": "Marigold"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-da-s",
+        "label": "MiDaS"
+      },
+      {
+        "id": "urn:visionflow:linked:mono-depth",
+        "label": "MonoDepth"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
+        "id": "urn:visionflow:linked:psmnet",
+        "label": "PSMNet"
+      },
+      {
+        "id": "urn:visionflow:linked:raft-stereo",
+        "label": "RAFT-Stereo"
+      },
+      {
+        "id": "urn:visionflow:linked:semi-global-matching",
+        "label": "Semi-Global Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:zoe-depth",
+        "label": "ZoeDepth"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-perception",
+      "label": "3D Perception"
+    },
+    {
+      "slug": "3-dreconstruction-domain",
+      "label": "3DReconstructionDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "ar-occlusion",
+      "label": "AR Occlusion"
+    },
+    {
+      "slug": "arcore",
+      "label": "ARCore"
+    },
+    {
+      "slug": "arcore-depth-api-documentation",
+      "label": "ARCore Depth API Documentation"
+    },
+    {
+      "slug": "arkit",
+      "label": "ARKit"
+    },
+    {
+      "slug": "arkit-depth-api-documentation",
+      "label": "ARKit Depth API Documentation"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "bhat-et-al-2023-zoe-depth",
+      "label": "Bhat et al. 2023 ZoeDepth"
+    },
+    {
+      "slug": "block-matching",
+      "label": "Block Matching"
+    },
+    {
+      "slug": "bokeh-rendering",
+      "label": "Bokeh Rendering"
+    },
+    {
+      "slug": "bundle-adjustment",
+      "label": "Bundle Adjustment"
+    },
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "camera-extrinsics",
+      "label": "Camera Extrinsics"
+    },
+    {
+      "slug": "camera-intrinsics",
+      "label": "Camera Intrinsics"
+    },
+    {
+      "slug": "chang-and-chen-2018-psmnet",
+      "label": "Chang & Chen 2018 PSMNet"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "cost-volume",
+      "label": "Cost Volume"
+    },
+    {
+      "slug": "da-2-k",
+      "label": "DA-2K"
+    },
+    {
+      "slug": "dai-et-al-2017-scan-net",
+      "label": "Dai et al. 2017 ScanNet"
+    },
+    {
+      "slug": "davison-et-al-2007-mono-slam",
+      "label": "Davison et al. 2007 MonoSLAM"
+    },
+    {
+      "slug": "dense-prediction",
+      "label": "Dense Prediction"
+    },
+    {
+      "slug": "depth-anything",
+      "label": "Depth Anything"
+    },
+    {
+      "slug": "depth-completion",
+      "label": "Depth Completion"
+    },
+    {
+      "slug": "depth-map",
+      "label": "Depth Map"
+    },
+    {
+      "slug": "disparity-map",
+      "label": "Disparity Map"
+    },
+    {
+      "slug": "dpt",
+      "label": "DPT"
+    },
+    {
+      "slug": "eigen-et-al-2014-multi-scale-depth-cnn",
+      "label": "Eigen et al. 2014 Multi-Scale Depth CNN"
+    },
+    {
+      "slug": "epipolar-geometry",
+      "label": "Epipolar Geometry"
+    },
+    {
+      "slug": "eth3-d",
+      "label": "ETH3D"
+    },
+    {
+      "slug": "feature-matching",
+      "label": "Feature Matching"
+    },
+    {
+      "slug": "free-space-estimation",
+      "label": "Free-Space Estimation"
+    },
+    {
+      "slug": "geiger-et-al-2012-kitti-benchmark",
+      "label": "Geiger et al. 2012 KITTI Benchmark"
+    },
+    {
+      "slug": "geometric-vision",
+      "label": "Geometric Vision"
+    },
+    {
+      "slug": "godard-et-al-2017-mono-depth-left-right-consistency",
+      "label": "Godard et al. 2017 MonoDepth Left-Right Consistency"
+    },
+    {
+      "slug": "godard-et-al-2019-mono-depth2",
+      "label": "Godard et al. 2019 MonoDepth2"
+    },
+    {
+      "slug": "grasp-planning",
+      "label": "Grasp Planning"
+    },
+    {
+      "slug": "hartley-and-zisserman-2003-multiple-view-geometry",
+      "label": "Hartley & Zisserman 2003 Multiple View Geometry"
+    },
+    {
+      "slug": "hirschm-ller-2008-semi-global-matching",
+      "label": "Hirschm\u00fcller 2008 Semi-Global Matching"
+    },
+    {
+      "slug": "image-pair",
+      "label": "Image Pair"
+    },
+    {
+      "slug": "ke-et-al-2024-marigold",
+      "label": "Ke et al. 2024 Marigold"
+    },
+    {
+      "slug": "kerbl-et-al-2023-3-d-gaussian-splatting",
+      "label": "Kerbl et al. 2023 3D Gaussian Splatting"
+    },
+    {
+      "slug": "kinect",
+      "label": "Kinect"
+    },
+    {
+      "slug": "kitti-benchmark",
+      "label": "KITTI Benchmark"
+    },
+    {
+      "slug": "laga-et-al-2022-stereo-survey",
+      "label": "Laga et al. 2022 Stereo Survey"
+    },
+    {
+      "slug": "li-dar",
+      "label": "LiDAR"
+    },
+    {
+      "slug": "lipson-et-al-2021-raft-stereo",
+      "label": "Lipson et al. 2021 RAFT-Stereo"
+    },
+    {
+      "slug": "marigold",
+      "label": "Marigold"
+    },
+    {
+      "slug": "mayer-et-al-2016-disp-net-scene-flow",
+      "label": "Mayer et al. 2016 DispNet SceneFlow"
+    },
+    {
+      "slug": "mi-da-s",
+      "label": "MiDaS"
+    },
+    {
+      "slug": "middlebury-stereo",
+      "label": "Middlebury Stereo"
+    },
+    {
+      "slug": "mildenhall-et-al-2020-ne-rf",
+      "label": "Mildenhall et al. 2020 NeRF"
+    },
+    {
+      "slug": "mono-depth",
+      "label": "MonoDepth"
+    },
+    {
+      "slug": "monocular-3-d-object-detection",
+      "label": "Monocular 3D Object Detection"
+    },
+    {
+      "slug": "multi-view-stereo",
+      "label": "Multi-View Stereo"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "newcombe-et-al-2011-kinect-fusion",
+      "label": "Newcombe et al. 2011 KinectFusion"
+    },
+    {
+      "slug": "novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "slug": "nyu-depth-v2",
+      "label": "NYU Depth v2"
+    },
+    {
+      "slug": "optical-flow",
+      "label": "Optical Flow"
+    },
+    {
+      "slug": "optimization",
+      "label": "Optimization"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "PerceptionLayer"
+    },
+    {
+      "slug": "photometric-consistency",
+      "label": "Photometric Consistency"
+    },
+    {
+      "slug": "photometric-loss",
+      "label": "Photometric Loss"
+    },
+    {
+      "slug": "piccinelli-et-al-2024-uni-depth",
+      "label": "Piccinelli et al. 2024 UniDepth"
+    },
+    {
+      "slug": "psmnet",
+      "label": "PSMNet"
+    },
+    {
+      "slug": "raft-stereo",
+      "label": "RAFT-Stereo"
+    },
+    {
+      "slug": "ranftl-et-al-2021-dpt",
+      "label": "Ranftl et al. 2021 DPT"
+    },
+    {
+      "slug": "ranftl-et-al-2022-mi-da-s",
+      "label": "Ranftl et al. 2022 MiDaS"
+    },
+    {
+      "slug": "real-sense",
+      "label": "RealSense"
+    },
+    {
+      "slug": "rgb-d-camera",
+      "label": "RGB-D Camera"
+    },
+    {
+      "slug": "robotic-manipulation",
+      "label": "Robotic Manipulation"
+    },
+    {
+      "slug": "robotic-perception-domain",
+      "label": "RoboticPerceptionDomain"
+    },
+    {
+      "slug": "scan-net",
+      "label": "ScanNet"
+    },
+    {
+      "slug": "sch-nberger-and-frahm-2016-colmap",
+      "label": "Sch\u00f6nberger & Frahm 2016 COLMAP"
+    },
+    {
+      "slug": "scharstein-and-szeliski-2002-stereo-taxonomy",
+      "label": "Scharstein & Szeliski 2002 Stereo Taxonomy"
+    },
+    {
+      "slug": "semi-global-matching",
+      "label": "Semi-Global Matching"
+    },
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "SensorFusionLayer"
+    },
+    {
+      "slug": "silberman-et-al-2012-nyu-depth-v2",
+      "label": "Silberman et al. 2012 NYU Depth v2"
+    },
+    {
+      "slug": "sintel",
+      "label": "Sintel"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure-from-Motion"
+    },
+    {
+      "slug": "structured-light",
+      "label": "Structured Light"
+    },
+    {
+      "slug": "surface-normal-estimation",
+      "label": "Surface Normal Estimation"
+    },
+    {
+      "slug": "time-of-flight-camera",
+      "label": "Time-of-Flight Camera"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "visual-odometry",
+      "label": "Visual Odometry"
+    },
+    {
+      "slug": "visual-slam",
+      "label": "Visual SLAM"
+    },
+    {
+      "slug": "wang-et-al-2021-neu-s",
+      "label": "Wang et al. 2021 NeuS"
+    },
+    {
+      "slug": "yang-et-al-2024-depth-anything",
+      "label": "Yang et al. 2024 Depth Anything"
+    },
+    {
+      "slug": "yang-et-al-2024-depth-anything-v2-da-2-k",
+      "label": "Yang et al. 2024 Depth Anything V2 DA-2K"
+    },
+    {
+      "slug": "yin-et-al-2024-metric3-d-v2",
+      "label": "Yin et al. 2024 Metric3D v2"
+    },
+    {
+      "slug": "zhao-et-al-2020-monocular-depth-survey",
+      "label": "Zhao et al. 2020 Monocular Depth Survey"
+    },
+    {
+      "slug": "zhou-et-al-2017-sf-mlearner",
+      "label": "Zhou et al. 2017 SfMLearner"
+    },
+    {
+      "slug": "zoe-depth",
+      "label": "ZoeDepth"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "stereo-camera",
+      "label": "Stereo Camera"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ]
+}

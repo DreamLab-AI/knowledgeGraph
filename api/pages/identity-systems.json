@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:1f809e67fa99348ba7ab7f186712ff35a2c610a158b3e4dffefe49cb8f146f05",
+  "title": "Identity Systems",
+  "slug": "identity-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:identity-systems",
+  "domain": "infrastructure",
+  "definition": "Identity Systems is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "digital-identity-management",
+      "label": "Digital Identity Management"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    }
+  ]
+}

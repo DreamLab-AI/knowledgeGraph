@@ -1,0 +1,203 @@
+{
+  "id": "urn:visionflow:page:4fee0d81ad86f0e01d5d57b9d1d2915585a3c059eb7af724ee001b51fa757c63",
+  "title": "Data Provenance",
+  "slug": "data-provenance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-provenance",
+  "domain": "infrastructure",
+  "definition": "A continuous process of recording and tracking the origin, lineage, and transformation history of data objects, enabling traceability, validation of data quality, and verification of authenticity throughout the data lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:lineage-tracker",
+        "label": "Lineage Tracker"
+      },
+      {
+        "id": "urn:visionflow:linked:provenance-recorder",
+        "label": "Provenance Recorder"
+      },
+      {
+        "id": "urn:visionflow:linked:signature-validator",
+        "label": "Signature Validator"
+      },
+      {
+        "id": "urn:visionflow:linked:timestamp-service",
+        "label": "Timestamp Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:attribution",
+        "label": "Attribution"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-audit",
+        "label": "Compliance Audit"
+      },
+      {
+        "id": "urn:visionflow:linked:data-quality-assessment",
+        "label": "Data Quality Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "attribution",
+      "label": "Attribution"
+    },
+    {
+      "slug": "compliance-audit",
+      "label": "Compliance Audit"
+    },
+    {
+      "slug": "data-quality-assessment",
+      "label": "Data Quality Assessment"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "event-logging",
+      "label": "Event Logging"
+    },
+    {
+      "slug": "lineage-tracker",
+      "label": "Lineage Tracker"
+    },
+    {
+      "slug": "metadata",
+      "label": "Metadata"
+    },
+    {
+      "slug": "provenance-recorder",
+      "label": "Provenance Recorder"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "signature-validator",
+      "label": "Signature Validator"
+    },
+    {
+      "slug": "timestamp-authority",
+      "label": "Timestamp Authority"
+    },
+    {
+      "slug": "timestamp-service",
+      "label": "Timestamp Service"
+    },
+    {
+      "slug": "w3-c-prov-o",
+      "label": "W3C PROV-O"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-metadata",
+      "label": "AI Metadata"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:b4095a742e5eb110354c1883c2ddc7b3c5102e4ea3f6bcf6f3f92b987ae281a2",
+  "title": "Mean Absolute Error",
+  "slug": "mean-absolute-error",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mean-absolute-error",
+  "domain": "artificial-intelligence",
+  "definition": "A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "error-analysis",
+      "label": "Error Analysis"
+    },
+    {
+      "slug": "mape",
+      "label": "MAPE"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "median-absolute-error",
+      "label": "Median Absolute Error"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "outlier",
+      "label": "Outlier"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "root-mean-square-error",
+      "label": "Root Mean Square Error"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "root-mean-square-error",
+      "label": "Root Mean Square Error"
+    }
+  ]
+}

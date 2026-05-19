@@ -1,0 +1,468 @@
+{
+  "id": "urn:visionflow:page:d390b2d6494bff4cbb5707033bfa4f9b5fd6d69f7c951d423d49bd3455e2e09a",
+  "title": "Mobile Robot Platform",
+  "slug": "mobile-robot-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mobile-robot-platform",
+  "domain": "robotics",
+  "definition": "A Mobile Robot Platform is an integrated mechatronic base that provides locomotion, power, computing, and sensor-mounting infrastructure upon which higher-level autonomy stacks\u2014perception, planning, and control\u2014are deployed. Platforms are classified by locomotion modality: differential-drive wheeled bases (TurtleBot 4, Clearpath Jackal) achieving 1-2 m/s on smooth floors with <1 cm heading error under wheel-odometry plus IMU fusion; skid-steer all-terrain wheeled bases (Clearpath Husky, Boxer) operating across gravel, grass, and mud at 1 m/s with 150 kg payload; tracked bases for extreme terrain (Clearpath Grizzly, QinetiQ Titan); quadrupedal legged platforms (Boston Dynamics Spot v3 at 1.6 m/s, 14 kg payload, 90-minute endurance; Unitree Go2 Air at 3.5 m/s, 5 kg payload, 4 kg mass with $1,600 USD commercial price 2024; Unitree B2 industrial quad at 20 kg payload, 5 h endurance, IP67, launched Q2 2024; MIT Mini Cheetah open-source 3-DOF per leg at 3 m/s running); humanoid bipedal platforms (Unitree H1 humanoid 1.8 m, 47 kg, 1.5 m/s walking, up to 10 kg manipulated load, launched Q4 2024; Unitree G1 bipedal 127 cm, 35 kg, dexterous seven-DOF arms, launched Q2 2025); wheeled-legged h",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "id": "urn:visionflow:linked:cyber-physical-system",
+      "label": "Cyber Physical System"
+    },
+    {
+      "id": "urn:visionflow:linked:embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "id": "urn:visionflow:linked:unmanned-ground-vehicle",
+      "label": "Unmanned Ground Vehicle"
+    },
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:chassis-frame",
+        "label": "Chassis Frame"
+      },
+      {
+        "id": "urn:visionflow:linked:communication-interface",
+        "label": "Communication Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:locomotion-system",
+        "label": "Locomotion System"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-controller",
+        "label": "Motor Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:onboard-computer",
+        "label": "Onboard Computer"
+      },
+      {
+        "id": "urn:visionflow:linked:payload-bay",
+        "label": "Payload Bay"
+      },
+      {
+        "id": "urn:visionflow:linked:power-system",
+        "label": "Power System"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-suite",
+        "label": "Sensor Suite"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:nav2",
+        "label": "Nav2"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:inspection-robotics",
+        "label": "Inspection Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:behaviour-tree-control",
+        "label": "Behaviour Tree Control"
+      },
+      {
+        "id": "urn:visionflow:linked:differential-drive-kinematics",
+        "label": "Differential Drive Kinematics"
+      },
+      {
+        "id": "urn:visionflow:linked:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:visionflow:owl:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agricultural-robotics",
+      "label": "Agricultural Robotics"
+    },
+    {
+      "slug": "autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "AutonomousSystemsDomain"
+    },
+    {
+      "slug": "battery-management-system",
+      "label": "Battery Management System"
+    },
+    {
+      "slug": "behaviour-tree",
+      "label": "Behaviour Tree"
+    },
+    {
+      "slug": "behaviour-tree-control",
+      "label": "Behaviour Tree Control"
+    },
+    {
+      "slug": "chassis-frame",
+      "label": "Chassis Frame"
+    },
+    {
+      "slug": "communication-interface",
+      "label": "Communication Interface"
+    },
+    {
+      "slug": "cyber-physical-system",
+      "label": "Cyber Physical System"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "CyberPhysicalSystemsDomain"
+    },
+    {
+      "slug": "dds-middleware",
+      "label": "DDS Middleware"
+    },
+    {
+      "slug": "deployment-cost",
+      "label": "Deployment Cost"
+    },
+    {
+      "slug": "depth-camera",
+      "label": "Depth Camera"
+    },
+    {
+      "slug": "differential-drive-kinematics",
+      "label": "Differential Drive Kinematics"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "environment-mapping",
+      "label": "Environment Mapping"
+    },
+    {
+      "slug": "fast-dds",
+      "label": "FastDDS"
+    },
+    {
+      "slug": "fixed-robot-manipulator",
+      "label": "Fixed Robot Manipulator"
+    },
+    {
+      "slug": "fleet-management",
+      "label": "Fleet Management"
+    },
+    {
+      "slug": "gazebo",
+      "label": "Gazebo"
+    },
+    {
+      "slug": "hardware-development-time",
+      "label": "Hardware Development Time"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "human-exposure-to-hazard",
+      "label": "Human Exposure to Hazard"
+    },
+    {
+      "slug": "imu",
+      "label": "IMU"
+    },
+    {
+      "slug": "inspection-downtime",
+      "label": "Inspection Downtime"
+    },
+    {
+      "slug": "inspection-robotics",
+      "label": "Inspection Robotics"
+    },
+    {
+      "slug": "iso-13482",
+      "label": "ISO 13482"
+    },
+    {
+      "slug": "legged-locomotion",
+      "label": "Legged Locomotion"
+    },
+    {
+      "slug": "locomotion-system",
+      "label": "Locomotion System"
+    },
+    {
+      "slug": "logistics-automation",
+      "label": "Logistics Automation"
+    },
+    {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
+      "slug": "motor-controller",
+      "label": "Motor Controller"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "Motor Driver"
+    },
+    {
+      "slug": "move-it-2",
+      "label": "MoveIt 2"
+    },
+    {
+      "slug": "multi-robot-systems",
+      "label": "Multi-Robot Systems"
+    },
+    {
+      "slug": "nav2",
+      "label": "Nav2"
+    },
+    {
+      "slug": "nvidia-isaac-sim",
+      "label": "NVIDIA Isaac Sim"
+    },
+    {
+      "slug": "nvidia-jetson",
+      "label": "NVIDIA Jetson"
+    },
+    {
+      "slug": "onboard-computer",
+      "label": "Onboard Computer"
+    },
+    {
+      "slug": "payload-bay",
+      "label": "Payload Bay"
+    },
+    {
+      "slug": "point-cloud-library",
+      "label": "PointCloud Library"
+    },
+    {
+      "slug": "power-system",
+      "label": "Power System"
+    },
+    {
+      "slug": "rep-103",
+      "label": "REP 103"
+    },
+    {
+      "slug": "rep-105",
+      "label": "REP 105"
+    },
+    {
+      "slug": "robot-operating-system-2",
+      "label": "Robot Operating System 2"
+    },
+    {
+      "slug": "robotics-grounded-domain",
+      "label": "Robotics-GroundedDomain"
+    },
+    {
+      "slug": "ros-2",
+      "label": "ROS 2"
+    },
+    {
+      "slug": "ros-2-humble",
+      "label": "ROS 2 Humble"
+    },
+    {
+      "slug": "ros-2-iron",
+      "label": "ROS 2 Iron"
+    },
+    {
+      "slug": "roscon",
+      "label": "ROSCon"
+    },
+    {
+      "slug": "sensor-suite",
+      "label": "Sensor Suite"
+    },
+    {
+      "slug": "sim2-real-transfer",
+      "label": "Sim2Real Transfer"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "slam-toolbox",
+      "label": "SLAM Toolbox"
+    },
+    {
+      "slug": "stationary-automation-platform",
+      "label": "Stationary Automation Platform"
+    },
+    {
+      "slug": "turtle-bot-4",
+      "label": "TurtleBot 4"
+    },
+    {
+      "slug": "unmanned-ground-vehicle",
+      "label": "Unmanned Ground Vehicle"
+    },
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "lidar",
+      "label": "LIDAR"
+    },
+    {
+      "slug": "marine-robot",
+      "label": "Marine Robot"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

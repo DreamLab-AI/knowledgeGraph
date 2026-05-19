@@ -1,22 +1,205 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#Bagging
-uri:: urn:visionclaw:concept:artificial-intelligence:bagging
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:bagging
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Bagging
-content-hash:: sha256-12-d80d097688e9
-legacy-term-id:: AI-1016
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Bagging
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:bagging
 public:: true
-bridges-to:: [[Digital Asset]]
+
+# Bagging
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce",
+  "@type": "Page",
+  "vc:slug": "bagging",
+  "title": "Bagging",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:parallel-training",
+      "vc:label": "Parallel Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Digital Asset]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d80d097688e9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Bagging"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1016"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Bagging"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:bagging"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:bagging"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:bagging",
+  "@type": "OntologyClass",
+  "label": "Bagging",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Bagging is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:parallel-training",
+      "vc:label": "Parallel Training"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:bagging:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Parallel Training]]",
+      "resolved": "urn:visionflow:linked:parallel-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ensemble Methods]]",
+      "resolved": "urn:visionflow:owl:class:ensemble-methods",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Bagging is a concept within the ai domain.

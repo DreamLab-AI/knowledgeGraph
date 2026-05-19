@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691",
+  "title": "Resilience Metric",
+  "slug": "resilience-metric",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:resilience-metric",
+  "domain": "spatial-computing",
+  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that determine operational continuity. These metrics enable proactive [[IncidentResponse|incident management]] and [[SLAVerification|SLA compliance verification]] across [[CloudInfrastructure|cloud platforms]], [[MetaversePlatforms|metaverse services]], and [[BlockchainNetworks|blockchain networks]]. Effective resilience measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality during adverse conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-networks",
+      "label": "BlockchainNetworks"
+    },
+    {
+      "slug": "incident-response",
+      "label": "IncidentResponse"
+    },
+    {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "recovery-time-objective",
+      "label": "RecoveryTimeObjective"
+    },
+    {
+      "slug": "slaverification",
+      "label": "SLAVerification"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "CloudInfrastructure"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-governance",
+      "label": "ETSI_Domain_Infrastructure___Governance"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:9968599a1163b1e5344046261008633d619e3724cf9761304bfb98c73826cdd3",
+  "title": "SCARA Robot",
+  "slug": "scara-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:scara-robot",
+  "domain": "robotics",
+  "definition": "SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

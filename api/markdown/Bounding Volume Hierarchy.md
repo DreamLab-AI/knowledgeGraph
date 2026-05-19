@@ -1,25 +1,293 @@
-iri:: http://narrativegoldmine.com/spatial-computing#BoundingVolumeHierarchy
-uri:: urn:visionclaw:concept:spatial-computing:bounding-volume-hierarchy
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:bounding-volume-hierarchy
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Bounding Volume Hierarchy
-content-hash:: sha256-12-de086f721f51
-legacy-term-id:: MV-9801
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#BoundingVolumeHierarchy
+legacy_uri:: urn:visionclaw:concept:spatial-computing:bounding-volume-hierarchy
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Bounding Volume Hierarchy
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c",
+  "@type": "Page",
+  "vc:slug": "bounding-volume-hierarchy",
+  "title": "Bounding Volume Hierarchy",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bounding-volume",
+      "vc:label": "Bounding Volume"
+    },
+    {
+      "@id": "urn:visionflow:linked:frustum-culling",
+      "vc:label": "Frustum Culling"
+    },
+    {
+      "@id": "urn:visionflow:linked:traversal-algorithm",
+      "vc:label": "Traversal Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:tree-construction",
+      "vc:label": "Tree Construction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collision-detection",
+      "vc:label": "Collision Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ray-tracing",
+      "vc:label": "Ray Tracing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-data-structure",
+      "vc:label": "Spatial Data Structure"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-de086f721f51"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#BoundingVolumeHierarchy"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9801"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Bounding Volume Hierarchy"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:bounding-volume-hierarchy"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:bounding-volume-hierarchy"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:bounding-volume-hierarchy",
+  "@type": "OntologyClass",
+  "label": "Bounding Volume Hierarchy",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-data-structure",
+      "vc:label": "Spatial Data Structure"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:bounding-volume",
+      "vc:label": "Bounding Volume"
+    },
+    {
+      "@id": "urn:visionflow:linked:traversal-algorithm",
+      "vc:label": "Traversal Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:tree-construction",
+      "vc:label": "Tree Construction"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:frustum-culling",
+      "vc:label": "Frustum Culling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collision-detection",
+      "vc:label": "Collision Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ray-tracing",
+      "vc:label": "Ray Tracing"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:bounding-volume-hierarchy:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Bounding Volume]]",
+      "resolved": "urn:visionflow:linked:bounding-volume",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Frustum Culling]]",
+      "resolved": "urn:visionflow:linked:frustum-culling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Traversal Algorithm]]",
+      "resolved": "urn:visionflow:linked:traversal-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tree Construction]]",
+      "resolved": "urn:visionflow:linked:tree-construction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collision Detection]]",
+      "resolved": "urn:visionflow:owl:class:collision-detection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ray Tracing]]",
+      "resolved": "urn:visionflow:owl:class:ray-tracing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Data Structure]]",
+      "resolved": "urn:visionflow:owl:class:spatial-data-structure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.

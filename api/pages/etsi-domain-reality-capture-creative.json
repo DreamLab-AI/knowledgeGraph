@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9",
+  "title": "ETSI_Domain_Reality_Capture___Creative",
+  "slug": "etsi-domain-reality-capture-creative",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-reality-capture-creative",
+  "domain": "spatial-computing",
+  "definition": "ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences. Reality capture creative systems integrate motion capture technologies, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis transforming physical performances into high-fidelity digital representations suitable for virtual worlds. Applications span virtual performance events, digital actor creation, interactive entertainment, and remote collaboration with emphasis on maintaining creative authenticity and performer expressivity through sophisticated sensor systems and real-time processing pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-performance-capture",
+      "label": "Digital Performance Capture"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

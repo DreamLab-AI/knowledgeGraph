@@ -1,21 +1,410 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AIImpactAssessment
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-impact-assessment
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-impact-assessment
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Impact Assessment
-content-hash:: sha256-12-86001e3b5bb5
-legacy-term-id:: AI-0102
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIImpactAssessment
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-impact-assessment
 public:: true
+
+# AI Impact Assessment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88",
+  "@type": "Page",
+  "vc:slug": "ai-impact-assessment",
+  "title": "AI Impact Assessment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:dpia",
+      "vc:label": "DPIA"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act-article-27",
+      "vc:label": "EU AI Act Article 27"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-decision-making",
+      "vc:label": "Informed decision-making"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-24368",
+      "vc:label": "ISO/IEC 24368"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001-2023",
+      "vc:label": "ISO/IEC 42001:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:un-guiding-principles-on-business-and-human-rights",
+      "vc:label": "UN Guiding Principles on Business and Human Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-audit",
+      "vc:label": "AI Audit"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-rights",
+      "vc:label": "Human Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stakeholder",
+      "vc:label": "Stakeholder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "transparency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-86001e3b5bb5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIImpactAssessment"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0102"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Impact Assessment"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-impact-assessment"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-impact-assessment"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-impact-assessment",
+  "@type": "OntologyClass",
+  "label": "AI Impact Assessment",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A systematic process for identifying, analysing, evaluating, and documenting the potential positive and negative effects of an artificial intelligence system on individuals, groups, organisations, society, and the environment across multiple dimensions including fundamental rights, ethical principles, safety, fairness, privacy, environmental sustainability, and socioeconomic impacts, conducted prior to deployment and periodically thereafter to inform design decisions, risk mitigation strategies, governance arrangements, and stakeholder communication regarding AI system consequences.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:informed-decision-making",
+      "vc:label": "Informed decision-making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "transparency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-impact-assessment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[DPIA]]",
+      "resolved": "urn:visionflow:linked:dpia",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EU AI Act Article 27]]",
+      "resolved": "urn:visionflow:linked:eu-ai-act-article-27",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Informed decision-making]]",
+      "resolved": "urn:visionflow:linked:informed-decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 24368]]",
+      "resolved": "urn:visionflow:linked:iso-iec-24368",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UN Guiding Principles on Business and Human Rights]]",
+      "resolved": "urn:visionflow:linked:un-guiding-principles-on-business-and-human-rights",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Audit]]",
+      "resolved": "urn:visionflow:owl:class:ai-audit",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Lifecycle]]",
+      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Rights]]",
+      "resolved": "urn:visionflow:owl:class:human-rights",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:risk-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stakeholder]]",
+      "resolved": "urn:visionflow:owl:class:stakeholder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparency]]",
+      "resolved": "urn:visionflow:owl:class:transparency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[transparency]]",
+      "resolved": "urn:visionflow:owl:class:transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A systematic process for identifying, analysing, evaluating, and documenting the potential positive and negative effects of an artificial intelligence system on individuals, groups, organisations, society, and the environment across multiple dimensions including fundamental rights, ethical principles, safety, fairness, privacy, environmental sustainability, and socioeconomic impacts, conducted prior to deployment and periodically thereafter to inform design decisions, risk mitigation strategies, governance arrangements, and stakeholder communication regarding AI system consequences.

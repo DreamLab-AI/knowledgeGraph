@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:b9a2d554ce04f39075ab979b74365e4525de747f80113e605413015d13c76d3d",
+  "title": "Decentralized Exchange (DEX)",
+  "slug": "decentralized-exchange-dex",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralized-exchange-dex",
+  "domain": "blockchain",
+  "definition": "Peer-to-peer marketplace enabling direct token swaps and digital asset trading through smart contracts without centralized intermediaries or custodial control.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:trading-interface",
+        "label": "Trading Interface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralized-trading",
+        "label": "Decentralized Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:token-swapping",
+        "label": "Token Swapping"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "de-fi-wg",
+      "label": "DeFi WG"
+    },
+    {
+      "slug": "decentralized-trading",
+      "label": "Decentralized Trading"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "token-swapping",
+      "label": "Token Swapping"
+    },
+    {
+      "slug": "trading-interface",
+      "label": "Trading Interface"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    }
+  ]
+}

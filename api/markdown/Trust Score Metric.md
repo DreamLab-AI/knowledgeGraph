@@ -1,24 +1,428 @@
-iri:: http://narrativegoldmine.com/spatial-computing#TrustScoreMetric
-uri:: urn:visionclaw:concept:spatial-computing:trust-score-metric
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:trust-score-metric
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Trust Score Metric
-content-hash:: sha256-12-b34e6d1dd36d
-legacy-term-id:: MV-20289
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#TrustScoreMetric
+legacy_uri:: urn:visionclaw:concept:spatial-computing:trust-score-metric
 public:: true
+
+# Trust Score Metric
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2",
+  "@type": "Page",
+  "vc:slug": "trust-score-metric",
+  "title": "Trust Score Metric",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:access-control-decisions",
+      "vc:label": "Access Control Decisions"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioral-data",
+      "vc:label": "Behavioral Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:calculation-timestamp",
+      "vc:label": "Calculation Timestamp"
+    },
+    {
+      "@id": "urn:visionflow:linked:confidence-interval",
+      "vc:label": "Confidence Interval"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-quality-metrics",
+      "vc:label": "Data Quality Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gs-mec",
+      "vc:label": "ETSI GS MEC"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-value",
+      "vc:label": "Score Value"
+    },
+    {
+      "@id": "urn:visionflow:linked:scoring-methodology-reference",
+      "vc:label": "Scoring Methodology Reference"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-models",
+      "vc:label": "Statistical Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-approval",
+      "vc:label": "Transaction Approval"
+    },
+    {
+      "@id": "urn:visionflow:linked:validation-rules",
+      "vc:label": "Validation Rules"
+    },
+    {
+      "@id": "urn:visionflow:linked:validity-period",
+      "vc:label": "Validity Period"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:calculation-parameters",
+      "vc:label": "Calculation Parameters"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reputation-scoring-model",
+      "vc:label": "Reputation Scoring Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-assessment",
+      "vc:label": "Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-infrastructure",
+      "vc:label": "Trust Infrastructure"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b34e6d1dd36d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#TrustScoreMetric"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-20289"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Trust Score Metric"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:trust-score-metric"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:trust-score-metric"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:trust-score-metric",
+  "@type": "OntologyClass",
+  "label": "Trust Score Metric",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:trust-infrastructure",
+      "vc:label": "Trust Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to inform authorization decisions, transaction approvals, and access control policies.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:trust-infrastructure",
+      "vc:label": "Trust Infrastructure"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:calculation-timestamp",
+      "vc:label": "Calculation Timestamp"
+    },
+    {
+      "@id": "urn:visionflow:linked:confidence-interval",
+      "vc:label": "Confidence Interval"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-value",
+      "vc:label": "Score Value"
+    },
+    {
+      "@id": "urn:visionflow:linked:scoring-methodology-reference",
+      "vc:label": "Scoring Methodology Reference"
+    },
+    {
+      "@id": "urn:visionflow:linked:validity-period",
+      "vc:label": "Validity Period"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:behavioral-data",
+      "vc:label": "Behavioral Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:calculation-parameters",
+      "vc:label": "Calculation Parameters"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reputation-scoring-model",
+      "vc:label": "Reputation Scoring Model"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:access-control-decisions",
+      "vc:label": "Access Control Decisions"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-approval",
+      "vc:label": "Transaction Approval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-assessment",
+      "vc:label": "Risk Assessment"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:data-quality-metrics",
+      "vc:label": "Data Quality Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-models",
+      "vc:label": "Statistical Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:validation-rules",
+      "vc:label": "Validation Rules"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:trust-score-metric:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Access Control Decisions]]",
+      "resolved": "urn:visionflow:linked:access-control-decisions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Behavioral Data]]",
+      "resolved": "urn:visionflow:linked:behavioral-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Calculation Timestamp]]",
+      "resolved": "urn:visionflow:linked:calculation-timestamp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Confidence Interval]]",
+      "resolved": "urn:visionflow:linked:confidence-interval",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Quality Metrics]]",
+      "resolved": "urn:visionflow:linked:data-quality-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GS MEC]]",
+      "resolved": "urn:visionflow:linked:etsi-gs-mec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Score Value]]",
+      "resolved": "urn:visionflow:linked:score-value",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scoring Methodology Reference]]",
+      "resolved": "urn:visionflow:linked:scoring-methodology-reference",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Statistical Models]]",
+      "resolved": "urn:visionflow:linked:statistical-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transaction Approval]]",
+      "resolved": "urn:visionflow:linked:transaction-approval",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Validation Rules]]",
+      "resolved": "urn:visionflow:linked:validation-rules",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Validity Period]]",
+      "resolved": "urn:visionflow:linked:validity-period",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Calculation Parameters]]",
+      "resolved": "urn:visionflow:owl:class:calculation-parameters",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Verification]]",
+      "resolved": "urn:visionflow:owl:class:identity-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reputation Scoring Model]]",
+      "resolved": "urn:visionflow:owl:class:reputation-scoring-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Assessment]]",
+      "resolved": "urn:visionflow:owl:class:risk-assessment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:trust-infrastructure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to inform authorization decisions, transaction approvals, and access control policies.

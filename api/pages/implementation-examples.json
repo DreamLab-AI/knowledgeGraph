@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:c54e8d62e6c192f7eccf1f296b7b19bcb05a34a0642a42894b5a1342440a597b",
+  "title": "implementation examples",
+  "slug": "implementation-examples",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:implementation-examples",
+  "domain": "spatial-computing",
+  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including [[SmartContractExamples|smart contract implementations]], [[NFTContracts|NFT contract patterns]], and [[MetaversePlatformAPIs|metaverse platform integrations]]. These examples span [[DeFiProtocols|DeFi protocol]] mechanics, [[DAOGovernance|DAO governance]] implementation, [[CrossChainBridging|cross-chain communication]], and [[PrivacyPreservingProtocols|privacy-preserving techniques]], serving as reference designs for developers and educational resources for researchers. Well-documented implementation examples with security audits, gas optimisation techniques, and [[BestPractices|best practices]] guidance accelerate adoption and reduce deployment risks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "best-practices",
+      "label": "BestPractices"
+    },
+    {
+      "slug": "cross-chain-bridging",
+      "label": "CrossChainBridging"
+    },
+    {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
+    },
+    {
+      "slug": "de-fi-protocols",
+      "label": "DeFiProtocols"
+    },
+    {
+      "slug": "metaverse-platform-apis",
+      "label": "MetaversePlatformAPIs"
+    },
+    {
+      "slug": "nftcontracts",
+      "label": "NFTContracts"
+    },
+    {
+      "slug": "privacy-preserving-protocols",
+      "label": "PrivacyPreservingProtocols"
+    },
+    {
+      "slug": "smart-contract-examples",
+      "label": "SmartContractExamples"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

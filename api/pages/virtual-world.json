@@ -1,0 +1,283 @@
+{
+  "id": "urn:visionflow:page:2b1744cbd5f15f80edf95b3f906b315e2edd5b3ce4fb2a083174f0dfae98545a",
+  "title": "Virtual World",
+  "slug": "virtual-world",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-world",
+  "domain": "spatial-computing",
+  "definition": "A self-contained digital environment with persistent state, spatial properties, user interaction capabilities, and internal rules that simulate physical or fantastical worlds, providing a shared space for multiple users to interact with each other and digital objects.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:economic-system",
+        "label": "Economic System"
+      },
+      {
+        "id": "urn:visionflow:linked:object-persistence",
+        "label": "Object Persistence"
+      },
+      {
+        "id": "urn:visionflow:linked:social-system",
+        "label": "Social System"
+      },
+      {
+        "id": "urn:visionflow:linked:user-representation",
+        "label": "User Representation"
+      },
+      {
+        "id": "urn:visionflow:linked:world-space",
+        "label": "World Space"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-real-estate",
+        "label": "Digital Real Estate"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tourism-metaverse",
+        "label": "Tourism Metaverse"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-work",
+        "label": "Collaborative Work"
+      },
+      {
+        "id": "urn:visionflow:linked:creative-expression",
+        "label": "Creative Expression"
+      },
+      {
+        "id": "urn:visionflow:linked:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-society",
+        "label": "Virtual Society"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "client-application",
+      "label": "Client Application"
+    },
+    {
+      "slug": "collaborative-work",
+      "label": "Collaborative Work"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "creative-expression",
+      "label": "Creative Expression"
+    },
+    {
+      "slug": "economic-system",
+      "label": "Economic System"
+    },
+    {
+      "slug": "ieee-vr-standards",
+      "label": "IEEE VR Standards"
+    },
+    {
+      "slug": "iso-iec-23005",
+      "label": "ISO/IEC 23005"
+    },
+    {
+      "slug": "object-persistence",
+      "label": "Object Persistence"
+    },
+    {
+      "slug": "server-infrastructure",
+      "label": "Server Infrastructure"
+    },
+    {
+      "slug": "social-interaction",
+      "label": "Social Interaction"
+    },
+    {
+      "slug": "social-system",
+      "label": "Social System"
+    },
+    {
+      "slug": "user-representation",
+      "label": "User Representation"
+    },
+    {
+      "slug": "world-space",
+      "label": "World Space"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "virtual-society",
+      "label": "Virtual Society"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adaptive-virtual-world",
+      "label": "Adaptive Virtual World"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "urn:visionflow:page:64e216942c5b6da9bf3d68aea5c1a2776949267e488efd668f0d8abba6dd7a81",
+  "title": "Social VR",
+  "slug": "social-vr",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-vr",
+  "domain": "spatial-computing",
+  "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]], [[VRChat]], and [[AltspaceVR]] enable diverse social activities from casual hangouts and professional meetings to educational workshops and entertainment events, with spatial audio and gesture recognition enhancing social presence. Integration with [[DecentralizedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] creates interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
+      "slug": "avatar-interaction",
+      "label": "AvatarInteraction"
+    },
+    {
+      "slug": "blockchain-ledger",
+      "label": "BlockchainLedger"
+    },
+    {
+      "slug": "collaborative-space",
+      "label": "CollaborativeSpace"
+    },
+    {
+      "slug": "community-dao",
+      "label": "CommunityDAO"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "DecentralisedIdentity"
+    },
+    {
+      "slug": "decentralized-id",
+      "label": "DecentralizedID"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "DecentralizedIdentity"
+    },
+    {
+      "slug": "dt-authenticated-by",
+      "label": "dt:authenticatedBy"
+    },
+    {
+      "slug": "dt-enhanced-by",
+      "label": "dt:enhancedBy"
+    },
+    {
+      "slug": "dt-governed-by",
+      "label": "dt:governedBy"
+    },
+    {
+      "slug": "dt-monetized-via",
+      "label": "dt:monetizedVia"
+    },
+    {
+      "slug": "dt-recorded-on",
+      "label": "dt:recordedOn"
+    },
+    {
+      "slug": "enables-interaction",
+      "label": "enablesInteraction"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "GestureRecognition"
+    },
+    {
+      "slug": "hosts-session",
+      "label": "hostsSession"
+    },
+    {
+      "slug": "meta-horizon-worlds",
+      "label": "MetaHorizonWorlds"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "provides-space",
+      "label": "providesSpace"
+    },
+    {
+      "slug": "supports-activity",
+      "label": "supportsActivity"
+    },
+    {
+      "slug": "voice-chat",
+      "label": "VoiceChat"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "SpatialAudio"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "VirtualCurrency"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "VirtualEconomy"
+    },
+    {
+      "slug": "virtual-meeting",
+      "label": "VirtualMeeting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    }
+  ]
+}

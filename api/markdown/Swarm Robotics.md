@@ -1,21 +1,396 @@
-iri:: http://narrativegoldmine.com/robotics#SwarmRobotics
-uri:: urn:visionclaw:concept:robotics:swarm-robotics
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:swarm-robotics
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Swarm Robotics
-content-hash:: sha256-12-1199dfab2fb8
-legacy-term-id:: RB-3001
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#SwarmRobotics
+legacy_uri:: urn:visionclaw:concept:robotics:swarm-robotics
 public:: true
+
+# Swarm Robotics
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8eac5623679584d44b833c267c3cd520e1dbc8bb42d22ccc144f4d502816e310",
+  "@type": "Page",
+  "vc:slug": "swarm-robotics",
+  "title": "Swarm Robotics",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bio-inspired-robotics",
+      "vc:label": "BioInspiredRobotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-intelligence",
+      "vc:label": "CollectiveIntelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:communicates-via",
+      "vc:label": "communicatesVia"
+    },
+    {
+      "@id": "urn:visionflow:linked:consists-of-robots",
+      "vc:label": "consistsOfRobots"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-control",
+      "vc:label": "DecentralisedControl"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-control",
+      "vc:label": "DecentralizedControl"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-control",
+      "vc:label": "DecentralizedControl"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-coordinated-by",
+      "vc:label": "dt:coordinatedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-governed-by",
+      "vc:label": "dt:governedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-optimized-via",
+      "vc:label": "dt:optimizedVia"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-simulated-in",
+      "vc:label": "dt:simulatedIn"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-tracked-on",
+      "vc:label": "dt:trackedOn"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-behavior",
+      "vc:label": "EmergentBehavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-behavior",
+      "vc:label": "EmergentBehavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-algorithm",
+      "vc:label": "EvolutionaryAlgorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:exhibits-behavior",
+      "vc:label": "exhibitsBehavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "MultiAgentSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-and-rescue",
+      "vc:label": "SearchAndRescue"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-organization",
+      "vc:label": "SelfOrganization"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-coordination",
+      "vc:label": "usesCoordination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "BlockchainNetwork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-algorithm",
+      "vc:label": "ConsensusAlgorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fault-tolerance",
+      "vc:label": "FaultTolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "VirtualEnvironment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1199dfab2fb8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#SwarmRobotics"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-3001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Swarm Robotics"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:swarm-robotics"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:swarm-robotics"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8eac5623679584d44b833c267c3cd520e1dbc8bb42d22ccc144f4d502816e310@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:swarm-robotics",
+  "@type": "OntologyClass",
+  "label": "Swarm Robotics",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8eac5623679584d44b833c267c3cd520e1dbc8bb42d22ccc144f4d502816e310"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8eac5623679584d44b833c267c3cd520e1dbc8bb42d22ccc144f4d502816e310@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and [[DecentralizedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating [[EmergentBehavior|emergent]] system-level intelligence enabling tasks like coordinated navigation, object transport, and environmental sensing that exceed individual capabilities. Applications span [[SearchAndRescue|search and rescue]], agricultural monitoring, warehouse logistics, and construction automation, with resilience from [[FaultTolerance|fault tolerance]] and scalability enabling deployment of thousands of autonomous agents.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:swarm-robotics:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8eac5623679584d44b833c267c3cd520e1dbc8bb42d22ccc144f4d502816e310"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BioInspiredRobotics]]",
+      "resolved": "urn:visionflow:linked:bio-inspired-robotics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CollectiveIntelligence]]",
+      "resolved": "urn:visionflow:linked:collective-intelligence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[communicatesVia]]",
+      "resolved": "urn:visionflow:linked:communicates-via",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[consistsOfRobots]]",
+      "resolved": "urn:visionflow:linked:consists-of-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DecentralisedControl|decentralised control]]",
+      "resolved": "urn:visionflow:linked:decentralised-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DecentralizedControl]]",
+      "resolved": "urn:visionflow:linked:decentralized-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DecentralizedControl|decentralised control]]",
+      "resolved": "urn:visionflow:linked:decentralized-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:coordinatedBy]]",
+      "resolved": "urn:visionflow:linked:dt-coordinated-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:governedBy]]",
+      "resolved": "urn:visionflow:linked:dt-governed-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:optimizedVia]]",
+      "resolved": "urn:visionflow:linked:dt-optimized-via",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:simulatedIn]]",
+      "resolved": "urn:visionflow:linked:dt-simulated-in",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:trackedOn]]",
+      "resolved": "urn:visionflow:linked:dt-tracked-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EmergentBehavior]]",
+      "resolved": "urn:visionflow:linked:emergent-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EmergentBehavior|emergent]]",
+      "resolved": "urn:visionflow:linked:emergent-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EvolutionaryAlgorithm]]",
+      "resolved": "urn:visionflow:linked:evolutionary-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[exhibitsBehavior]]",
+      "resolved": "urn:visionflow:linked:exhibits-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MultiAgentSystem]]",
+      "resolved": "urn:visionflow:linked:multi-agent-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SearchAndRescue|search and rescue]]",
+      "resolved": "urn:visionflow:linked:search-and-rescue",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SelfOrganization]]",
+      "resolved": "urn:visionflow:linked:self-organization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesCoordination]]",
+      "resolved": "urn:visionflow:linked:uses-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainNetwork]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConsensusAlgorithm]]",
+      "resolved": "urn:visionflow:owl:class:consensus-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[FaultTolerance|fault tolerance]]",
+      "resolved": "urn:visionflow:owl:class:fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEnvironment]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8eac5623679584d44b833c267c3cd520e1dbc8bb42d22ccc144f4d502816e310@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and [[DecentralizedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating [[EmergentBehavior|emergent]] system-level intelligence enabling tasks like coordinated navigation, object transport, and environmental sensing that exceed individual capabilities. Applications span [[SearchAndRescue|search and rescue]], agricultural monitoring, warehouse logistics, and construction automation, with resilience from [[FaultTolerance|fault tolerance]] and scalability enabling deployment of thousands of autonomous agents.

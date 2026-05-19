@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643",
+  "title": "Democratic Values",
+  "slug": "democratic-values",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:democratic-values",
+  "domain": "infrastructure",
+  "definition": "Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine. bridges-to:: [[Telecollaboration]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "council-of-europe",
+      "label": "Council of Europe"
+    },
+    {
+      "slug": "oecd-ai-principles-2024",
+      "label": "OECD AI Principles 2024"
+    },
+    {
+      "slug": "unesco",
+      "label": "UNESCO"
+    },
+    {
+      "slug": "venice-commission",
+      "label": "Venice Commission"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d",
+  "title": "Gps",
+  "slug": "gps",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gps",
+  "domain": "robotics",
+  "definition": "**GPS** (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 metres.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:navigation-system",
+      "label": "Navigation System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.51,
+  "authorityScore": 0.09,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:antenna-array",
+        "label": "Antenna Array"
+      },
+      {
+        "id": "urn:visionflow:linked:map-integration",
+        "label": "Map Integration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:geofencing",
+        "label": "Geofencing"
+      },
+      {
+        "id": "urn:visionflow:linked:long-range-navigation",
+        "label": "Long-range Navigation"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-robot-coordination",
+        "label": "Multi-robot Coordination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "antenna-array",
+      "label": "Antenna Array"
+    },
+    {
+      "slug": "geofencing",
+      "label": "Geofencing"
+    },
+    {
+      "slug": "global-localisation",
+      "label": "Global Localisation"
+    },
+    {
+      "slug": "long-range-navigation",
+      "label": "Long-range Navigation"
+    },
+    {
+      "slug": "map-integration",
+      "label": "Map Integration"
+    },
+    {
+      "slug": "mission-planning",
+      "label": "Mission Planning"
+    },
+    {
+      "slug": "multi-robot-coordination",
+      "label": "Multi-robot Coordination"
+    },
+    {
+      "slug": "navigation-system",
+      "label": "Navigation System"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    }
+  ]
+}

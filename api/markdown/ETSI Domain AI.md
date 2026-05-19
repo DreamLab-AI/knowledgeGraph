@@ -1,0 +1,339 @@
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ETSIDomainAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:etsi-domain-ai
+public:: true
+
+# ETSI Domain AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-ai",
+  "title": "ETSI Domain AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-service-classification",
+      "vc:label": "AI Service Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
+      "vc:label": "ETSI Domain Taxonomy"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gs-mec",
+      "vc:label": "ETSI GS MEC"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligence-layer-categorization",
+      "vc:label": "Intelligence Layer Categorization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
+      "vc:label": "ETSI Domain AI Creative Media"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
+      "vc:label": "ETSI Domain AI Data Mgmt"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-governance",
+      "vc:label": "ETSI Domain AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
+      "vc:label": "ETSI Domain AI Human Interface"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2a20d8471483"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ETSIDomainAI"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20330"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI Domain AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsi-domain-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsi-domain-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-ai",
+  "@type": "OntologyClass",
+  "label": "ETSI Domain AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Domain marker concept for categorising metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
+      "vc:label": "ETSI Domain Taxonomy"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
+      "vc:label": "ETSI Domain AI Creative Media"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
+      "vc:label": "ETSI Domain AI Data Mgmt"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-governance",
+      "vc:label": "ETSI Domain AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
+      "vc:label": "ETSI Domain AI Human Interface"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-service-classification",
+      "vc:label": "AI Service Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligence-layer-categorization",
+      "vc:label": "Intelligence Layer Categorization"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Service Classification]]",
+      "resolved": "urn:visionflow:linked:ai-service-classification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI Domain Taxonomy]]",
+      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GS MEC]]",
+      "resolved": "urn:visionflow:linked:etsi-gs-mec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intelligence Layer Categorization]]",
+      "resolved": "urn:visionflow:linked:intelligence-layer-categorization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ETSI Domain AI Creative Media]]",
+      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ETSI Domain AI Data Mgmt]]",
+      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ETSI Domain AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ETSI Domain AI Human Interface]]",
+      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Domain marker concept for categorising metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.
+
+- ### Bridge-To
+  - bridges-to:: [[Computer Vision]] (ai)
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ETSIDomainAI
+  - owl-role:: Object
+  - owl-inferred:: mv:VirtualObject
+  - belongs-to-domain:: [[ComputationAndIntelligenceDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]]
+
+- ### Relationships
+  - has-part:: [[ETSI Domain AI Creative Media]], [[ETSI Domain AI Data Mgmt]], [[ETSI Domain AI Governance]], [[ETSI Domain AI Human Interface]]
+  - is-part-of:: [[ETSI Domain Taxonomy]]
+  - enables:: [[AI Service Classification]], [[Intelligence Layer Categorization]]
+  - depends-on:: [[ComputationAndIntelligenceDomain]]
+
+- ### Content
+  ETSI Domain AI — content pending enrichment.
+
+- ### Provenance
+  - sources:: [[ETSI GS MEC]]
+  - migration-date:: 2026-04-26T00:00:00Z

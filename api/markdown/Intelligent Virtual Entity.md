@@ -1,24 +1,524 @@
-iri:: http://narrativegoldmine.com/spatial-computing#IntelligentVirtualEntity
-uri:: urn:visionclaw:concept:spatial-computing:intelligent-virtual-entity
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:intelligent-virtual-entity
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Intelligent Virtual Entity
-content-hash:: sha256-12-422922b257fc
-legacy-term-id:: 20232
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#IntelligentVirtualEntity
+legacy_uri:: urn:visionclaw:concept:spatial-computing:intelligent-virtual-entity
 public:: true
+
+# Intelligent Virtual Entity
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5a1e0630d85a2cb3573f947e43321adb0060472d6a1dd7f05df8c95dd4c678c0",
+  "@type": "Page",
+  "vc:slug": "intelligent-virtual-entity",
+  "title": "Intelligent Virtual Entity",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-interaction",
+      "vc:label": "Adaptive Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ecosystem",
+      "vc:label": "AI Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavior-controller",
+      "vc:label": "Behavior Controller"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-resources",
+      "vc:label": "Computational Resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-storytelling",
+      "vc:label": "Dynamic Storytelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-assistance",
+      "vc:label": "Intelligent Assistance"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-environment",
+      "vc:label": "Intelligent Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-manager",
+      "vc:label": "Interaction Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalized-experience",
+      "vc:label": "Personalized Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning-engine",
+      "vc:label": "Reasoning Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adaptive-virtual-world",
+      "vc:label": "Adaptive Virtual World"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-framework",
+      "vc:label": "AI Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:context-aware-response",
+      "vc:label": "Context-Aware Response"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "vc:label": "InteractionDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-module",
+      "vc:label": "Learning Module"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-platform",
+      "vc:label": "Machine Learning Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-422922b257fc"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#IntelligentVirtualEntity"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20232"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Intelligent Virtual Entity"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:intelligent-virtual-entity"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:intelligent-virtual-entity"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5a1e0630d85a2cb3573f947e43321adb0060472d6a1dd7f05df8c95dd4c678c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+  "@type": "OntologyClass",
+  "label": "Intelligent Virtual Entity",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5a1e0630d85a2cb3573f947e43321adb0060472d6a1dd7f05df8c95dd4c678c0"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5a1e0630d85a2cb3573f947e43321adb0060472d6a1dd7f05df8c95dd4c678c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI-driven representation within a virtual world that responds adaptively to users and context, combining perception, reasoning, learning, and interaction capabilities to create sophisticated virtual presences.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:ai-ecosystem",
+      "vc:label": "AI Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-environment",
+      "vc:label": "Intelligent Environment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adaptive-virtual-world",
+      "vc:label": "Adaptive Virtual World"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:behavior-controller",
+      "vc:label": "Behavior Controller"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-manager",
+      "vc:label": "Interaction Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning-engine",
+      "vc:label": "Reasoning Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-module",
+      "vc:label": "Learning Module"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perception-system",
+      "vc:label": "Perception System"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:computational-resources",
+      "vc:label": "Computational Resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-framework",
+      "vc:label": "AI Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-interaction",
+      "vc:label": "Adaptive Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-storytelling",
+      "vc:label": "Dynamic Storytelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-assistance",
+      "vc:label": "Intelligent Assistance"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalized-experience",
+      "vc:label": "Personalized Experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:context-aware-response",
+      "vc:label": "Context-Aware Response"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-platform",
+      "vc:label": "Machine Learning Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:intelligent-virtual-entity:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5a1e0630d85a2cb3573f947e43321adb0060472d6a1dd7f05df8c95dd4c678c0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adaptive Interaction]]",
+      "resolved": "urn:visionflow:linked:adaptive-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Ecosystem]]",
+      "resolved": "urn:visionflow:linked:ai-ecosystem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Behavior Controller]]",
+      "resolved": "urn:visionflow:linked:behavior-controller",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Resources]]",
+      "resolved": "urn:visionflow:linked:computational-resources",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dynamic Storytelling]]",
+      "resolved": "urn:visionflow:linked:dynamic-storytelling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intelligent Assistance]]",
+      "resolved": "urn:visionflow:linked:intelligent-assistance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intelligent Environment]]",
+      "resolved": "urn:visionflow:linked:intelligent-environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interaction Manager]]",
+      "resolved": "urn:visionflow:linked:interaction-manager",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Base]]",
+      "resolved": "urn:visionflow:linked:knowledge-base",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Personalized Experience]]",
+      "resolved": "urn:visionflow:linked:personalized-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reasoning Engine]]",
+      "resolved": "urn:visionflow:linked:reasoning-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Input]]",
+      "resolved": "urn:visionflow:linked:sensor-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adaptive Virtual World]]",
+      "resolved": "urn:visionflow:owl:class:adaptive-virtual-world",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Framework]]",
+      "resolved": "urn:visionflow:owl:class:ai-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Context-Aware Response]]",
+      "resolved": "urn:visionflow:owl:class:context-aware-response",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InteractionDomain]]",
+      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Representation]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-representation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Learning Module]]",
+      "resolved": "urn:visionflow:owl:class:learning-module",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Platform]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning-platform",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Perception System]]",
+      "resolved": "urn:visionflow:owl:class:perception-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training Data]]",
+      "resolved": "urn:visionflow:owl:class:training-data",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5a1e0630d85a2cb3573f947e43321adb0060472d6a1dd7f05df8c95dd4c678c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI-driven representation within a virtual world that responds adaptively to users and context, combining perception, reasoning, learning, and interaction capabilities to create sophisticated virtual presences.

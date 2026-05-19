@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:a4a65e213aaa09900b211096fc7856bede3e17467412f9e7a04b2e59b36f5c25",
+  "title": "Machine Learning Framework",
+  "slug": "machine-learning-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:machine-learning-framework",
+  "domain": "artificial-intelligence",
+  "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-development-tools",
+      "label": "AI Development Tools"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-model-development",
+        "label": "AI Model Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-development-tools",
+      "label": "AI Development Tools"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "synthetic-data-generator",
+      "label": "Synthetic Data Generator"
+    }
+  ]
+}

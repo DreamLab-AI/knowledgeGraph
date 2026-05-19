@@ -1,0 +1,186 @@
+{
+  "id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209",
+  "title": "Cultural Provenance Record",
+  "slug": "cultural-provenance-record",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cultural-provenance-record",
+  "domain": "spatial-computing",
+  "definition": "A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:authentication-record",
+        "label": "Authentication Record"
+      },
+      {
+        "id": "urn:visionflow:linked:condition-report",
+        "label": "Condition Report"
+      },
+      {
+        "id": "urn:visionflow:linked:cultural-context",
+        "label": "Cultural Context"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-chain",
+        "label": "Ownership Chain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "id": "urn:visionflow:linked:conservation-database",
+        "label": "Conservation Database"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:authenticity-certification",
+        "label": "Authenticity Certification"
+      },
+      {
+        "id": "urn:visionflow:linked:cultural-heritage-tracking",
+        "label": "Cultural Heritage Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-transfer",
+        "label": "Ownership Transfer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication-record",
+      "label": "Authentication Record"
+    },
+    {
+      "slug": "authenticity-certification",
+      "label": "Authenticity Certification"
+    },
+    {
+      "slug": "blockchain-ledger",
+      "label": "Blockchain Ledger"
+    },
+    {
+      "slug": "cidoc-crm",
+      "label": "CIDOC-CRM"
+    },
+    {
+      "slug": "condition-report",
+      "label": "Condition Report"
+    },
+    {
+      "slug": "conservation-database",
+      "label": "Conservation Database"
+    },
+    {
+      "slug": "cultural-context",
+      "label": "Cultural Context"
+    },
+    {
+      "slug": "cultural-heritage-management-system",
+      "label": "Cultural Heritage Management System"
+    },
+    {
+      "slug": "cultural-heritage-tracking",
+      "label": "Cultural Heritage Tracking"
+    },
+    {
+      "slug": "heritage-registry",
+      "label": "Heritage Registry"
+    },
+    {
+      "slug": "museum-collection-system",
+      "label": "Museum Collection System"
+    },
+    {
+      "slug": "museum-information-system",
+      "label": "Museum Information System"
+    },
+    {
+      "slug": "ownership-chain",
+      "label": "Ownership Chain"
+    },
+    {
+      "slug": "ownership-transfer",
+      "label": "Ownership Transfer"
+    },
+    {
+      "slug": "spectrum-museum-standard",
+      "label": "SPECTRUM Museum Standard"
+    },
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,147 @@
+{
+  "id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c",
+  "title": "Pharmaceutical Traceability",
+  "slug": "pharmaceutical-traceability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pharmaceutical-traceability",
+  "domain": "blockchain",
+  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the \u00a3200 billion counterfeit medicine market causing over 1 million deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network's 150+ million verification transactions (Pfizer, McKesson, AmerisourceBergen), and delivering 40-60% verification cost reductions whilst providing cold chain monitoring, clinical trial supply management, and controlled substance tracking.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.92,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accenture",
+      "label": "Accenture"
+    },
+    {
+      "slug": "bc-0013-smart-contracts",
+      "label": "BC-0013-smart-contracts"
+    },
+    {
+      "slug": "bc-0023-zero-knowledge-proofs",
+      "label": "BC-0023-zero-knowledge-proofs"
+    },
+    {
+      "slug": "bc-0029-permissioned-blockchain",
+      "label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0044-supply-chain-management",
+      "label": "BC-0044-supply-chain-management"
+    },
+    {
+      "slug": "bc-0067-hyperledger-fabric",
+      "label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0432-consortium-blockchain",
+      "label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "slug": "bc-0434-blockchain-as-a-service",
+      "label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "slug": "bc-0441-provenance-tracking",
+      "label": "BC-0441-provenance-tracking"
+    },
+    {
+      "slug": "bc-0443-food-safety-blockchain",
+      "label": "BC-0443-food-safety-blockchain"
+    },
+    {
+      "slug": "chronicled",
+      "label": "Chronicled"
+    },
+    {
+      "slug": "corda",
+      "label": "Corda"
+    },
+    {
+      "slug": "dhl",
+      "label": "DHL"
+    },
+    {
+      "slug": "ethereum-enterprise-alliance",
+      "label": "Ethereum Enterprise Alliance"
+    },
+    {
+      "slug": "farma-trust",
+      "label": "FarmaTrust"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "modum",
+      "label": "Modum"
+    },
+    {
+      "slug": "pharmaceutical-commerce-association",
+      "label": "Pharmaceutical Commerce Association"
+    },
+    {
+      "slug": "pill-pack",
+      "label": "PillPack"
+    },
+    {
+      "slug": "rf-xcel",
+      "label": "rfXcel"
+    },
+    {
+      "slug": "sap-information-collaboration-hub-for-life-sciences",
+      "label": "SAP Information Collaboration Hub for Life Sciences"
+    },
+    {
+      "slug": "trace-link",
+      "label": "TraceLink"
+    },
+    {
+      "slug": "trace-link-opus-platform",
+      "label": "TraceLink Opus Platform"
+    },
+    {
+      "slug": "triall",
+      "label": "Triall"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": []
+}

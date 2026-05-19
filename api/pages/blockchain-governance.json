@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:0b37e85cf2f59dae0dcfe4ea61c068bbabd8108924fe9bb4feedd91072e04536",
+  "title": "Blockchain Governance",
+  "slug": "blockchain-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-governance",
+  "domain": "blockchain",
+  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This includes on-chain voting systems, decentralised autonomous organisations (DAOs), and community-driven decision-making frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralized-organization",
+      "label": "Decentralized Organization"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:dao-structure",
+        "label": "DAO Structure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proposal-system",
+        "label": "Proposal System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:token-based-representation",
+        "label": "Token-Based Representation"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:community-alignment",
+        "label": "Community Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralized-decision-making",
+        "label": "Decentralized Decision-Making"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-evolution",
+        "label": "Protocol Evolution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "collective-intelligence",
+      "label": "Collective Intelligence"
+    },
+    {
+      "slug": "community-alignment",
+      "label": "Community Alignment"
+    },
+    {
+      "slug": "dao-structure",
+      "label": "DAO Structure"
+    },
+    {
+      "slug": "decentralized-decision-making",
+      "label": "Decentralized Decision-Making"
+    },
+    {
+      "slug": "decentralized-organization",
+      "label": "Decentralized Organization"
+    },
+    {
+      "slug": "protocol-evolution",
+      "label": "Protocol Evolution"
+    },
+    {
+      "slug": "token-based-representation",
+      "label": "Token-Based Representation"
+    },
+    {
+      "slug": "voting-mechanism",
+      "label": "Voting Mechanism"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On-Chain Voting"
+    },
+    {
+      "slug": "proposal-system",
+      "label": "Proposal System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

@@ -1,0 +1,915 @@
+{
+  "id": "urn:visionflow:page:b31972e1527f28f33dc15576703ea3c4878a54d0fa596ca0a2d77760f5c3e9bd",
+  "title": "Owl Thing",
+  "slug": "owl-thing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:owl-thing",
+  "domain": "infrastructure",
+  "definition": "OwlThing is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-concept",
+      "label": "AI Concept"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "animation-standard",
+      "label": "Animation Standard"
+    },
+    {
+      "slug": "animation-technique",
+      "label": "Animation Technique"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "audio-processing-system",
+      "label": "Audio Processing System"
+    },
+    {
+      "slug": "audio-system",
+      "label": "Audio System"
+    },
+    {
+      "slug": "audio-technology",
+      "label": "Audio Technology"
+    },
+    {
+      "slug": "automated-modeling",
+      "label": "Automated Modeling"
+    },
+    {
+      "slug": "blockchain-economics",
+      "label": "Blockchain Economics"
+    },
+    {
+      "slug": "blockchain-gaming",
+      "label": "Blockchain Gaming"
+    },
+    {
+      "slug": "calibration-equipment",
+      "label": "Calibration Equipment"
+    },
+    {
+      "slug": "calibration-tools",
+      "label": "Calibration Tools"
+    },
+    {
+      "slug": "collaboration-technology",
+      "label": "Collaboration Technology"
+    },
+    {
+      "slug": "community-governance",
+      "label": "Community Governance"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "computer-vision-system",
+      "label": "Computer Vision System"
+    },
+    {
+      "slug": "computing-hardware",
+      "label": "Computing Hardware"
+    },
+    {
+      "slug": "computing-platform",
+      "label": "Computing Platform"
+    },
+    {
+      "slug": "configuration-setting",
+      "label": "Configuration Setting"
+    },
+    {
+      "slug": "configuration",
+      "label": "Configuration"
+    },
+    {
+      "slug": "content-authentication",
+      "label": "Content Authentication"
+    },
+    {
+      "slug": "content-production-workflow",
+      "label": "Content Production Workflow"
+    },
+    {
+      "slug": "content-protection",
+      "label": "Content Protection"
+    },
+    {
+      "slug": "context-aware-computing",
+      "label": "Context Aware Computing"
+    },
+    {
+      "slug": "coordinate-system",
+      "label": "Coordinate System"
+    },
+    {
+      "slug": "creative-software",
+      "label": "Creative Software"
+    },
+    {
+      "slug": "cryptographic-security",
+      "label": "Cryptographic Security"
+    },
+    {
+      "slug": "cryptographic-verification",
+      "label": "Cryptographic Verification"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "data-access-interface",
+      "label": "Data Access Interface"
+    },
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "data-efficient-learning",
+      "label": "Data Efficient Learning"
+    },
+    {
+      "slug": "data-format",
+      "label": "Data Format"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-interoperability",
+      "label": "Data Interoperability"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "data-protection-regulation",
+      "label": "Data Protection Regulation"
+    },
+    {
+      "slug": "data-registry",
+      "label": "Data Registry"
+    },
+    {
+      "slug": "data-security",
+      "label": "Data Security"
+    },
+    {
+      "slug": "data-sharing",
+      "label": "Data Sharing"
+    },
+    {
+      "slug": "data-standards",
+      "label": "Data Standards"
+    },
+    {
+      "slug": "data-visualisation",
+      "label": "Data Visualisation"
+    },
+    {
+      "slug": "database-query",
+      "label": "Database Query"
+    },
+    {
+      "slug": "de-fi-services",
+      "label": "De Fi Services"
+    },
+    {
+      "slug": "democratic-engagement",
+      "label": "Democratic Engagement"
+    },
+    {
+      "slug": "democratic-governance",
+      "label": "Democratic Governance"
+    },
+    {
+      "slug": "depth-sensing",
+      "label": "Depth Sensing"
+    },
+    {
+      "slug": "design-software",
+      "label": "Design Software"
+    },
+    {
+      "slug": "development-platform",
+      "label": "Development Platform"
+    },
+    {
+      "slug": "digital-asset-market",
+      "label": "Digital Asset Market"
+    },
+    {
+      "slug": "digital-asset-standards",
+      "label": "Digital Asset Standards"
+    },
+    {
+      "slug": "digital-commerce",
+      "label": "Digital Commerce"
+    },
+    {
+      "slug": "digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "slug": "digital-content",
+      "label": "Digital Content"
+    },
+    {
+      "slug": "digital-entertainment",
+      "label": "Digital Entertainment"
+    },
+    {
+      "slug": "digital-experience",
+      "label": "Digital Experience"
+    },
+    {
+      "slug": "digital-gaming",
+      "label": "Digital Gaming"
+    },
+    {
+      "slug": "digital-governance",
+      "label": "Digital Governance"
+    },
+    {
+      "slug": "digital-heritage",
+      "label": "Digital Heritage"
+    },
+    {
+      "slug": "digital-human-technology",
+      "label": "Digital Human Technology"
+    },
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "digital-model",
+      "label": "Digital Model"
+    },
+    {
+      "slug": "digital-modeling",
+      "label": "Digital Modeling"
+    },
+    {
+      "slug": "digital-platform",
+      "label": "Digital Platform"
+    },
+    {
+      "slug": "digital-preservation",
+      "label": "Digital Preservation"
+    },
+    {
+      "slug": "digital-property-rights",
+      "label": "Digital Property Rights"
+    },
+    {
+      "slug": "digital-regulation",
+      "label": "Digital Regulation"
+    },
+    {
+      "slug": "digital-safety",
+      "label": "Digital Safety"
+    },
+    {
+      "slug": "digital-security",
+      "label": "Digital Security"
+    },
+    {
+      "slug": "digital-society",
+      "label": "Digital Society"
+    },
+    {
+      "slug": "digital-technology",
+      "label": "Digital Technology"
+    },
+    {
+      "slug": "digital-twin-technology",
+      "label": "Digital Twin Technology"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "economic-governance",
+      "label": "Economic Governance"
+    },
+    {
+      "slug": "economic-systems",
+      "label": "Economic Systems"
+    },
+    {
+      "slug": "educational-methodology",
+      "label": "Educational Methodology"
+    },
+    {
+      "slug": "environmental-accounting",
+      "label": "Environmental Accounting"
+    },
+    {
+      "slug": "environmental-assessment",
+      "label": "Environmental Assessment"
+    },
+    {
+      "slug": "environmental-certificate",
+      "label": "Environmental Certificate"
+    },
+    {
+      "slug": "environmental-k-p-i",
+      "label": "Environmental K P I"
+    },
+    {
+      "slug": "environmental-registry",
+      "label": "Environmental Registry"
+    },
+    {
+      "slug": "environmental-trading",
+      "label": "Environmental Trading"
+    },
+    {
+      "slug": "environmental-verification",
+      "label": "Environmental Verification"
+    },
+    {
+      "slug": "ethical-design-standard",
+      "label": "Ethical Design Standard"
+    },
+    {
+      "slug": "event-management",
+      "label": "Event Management"
+    },
+    {
+      "slug": "exchange-mechanism",
+      "label": "Exchange Mechanism"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "financial-infrastructure",
+      "label": "Financial Infrastructure"
+    },
+    {
+      "slug": "financial-system",
+      "label": "Financial System"
+    },
+    {
+      "slug": "financial-technology",
+      "label": "Financial Technology"
+    },
+    {
+      "slug": "financial-trading",
+      "label": "Financial Trading"
+    },
+    {
+      "slug": "financial-transactions",
+      "label": "Financial Transactions"
+    },
+    {
+      "slug": "game-mechanics",
+      "label": "Game Mechanics"
+    },
+    {
+      "slug": "generative-content",
+      "label": "Generative Content"
+    },
+    {
+      "slug": "geospatial-information",
+      "label": "Geospatial Information"
+    },
+    {
+      "slug": "geospatial-technology",
+      "label": "Geospatial Technology"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "graph-algorithms",
+      "label": "Graph Algorithms"
+    },
+    {
+      "slug": "graphics-library",
+      "label": "Graphics Library"
+    },
+    {
+      "slug": "hardware-abstraction",
+      "label": "Hardware Abstraction"
+    },
+    {
+      "slug": "hardware-component",
+      "label": "Hardware Component"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "healthcare-technology",
+      "label": "Healthcare Technology"
+    },
+    {
+      "slug": "human-computer-interface",
+      "label": "Human Computer Interface"
+    },
+    {
+      "slug": "humaninthe-loop-learning",
+      "label": "Humaninthe Loop Learning"
+    },
+    {
+      "slug": "hybrid-robot",
+      "label": "Hybrid Robot"
+    },
+    {
+      "slug": "identity-standards",
+      "label": "Identity Standards"
+    },
+    {
+      "slug": "identity-systems",
+      "label": "Identity Systems"
+    },
+    {
+      "slug": "identity",
+      "label": "Identity"
+    },
+    {
+      "slug": "imaging-parameters",
+      "label": "Imaging Parameters"
+    },
+    {
+      "slug": "immersive-audio-technology",
+      "label": "Immersive Audio Technology"
+    },
+    {
+      "slug": "information-architecture",
+      "label": "Information Architecture"
+    },
+    {
+      "slug": "information-protection",
+      "label": "Information Protection"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "informed-search",
+      "label": "Informed Search"
+    },
+    {
+      "slug": "infrastructure-component",
+      "label": "Infrastructure Component"
+    },
+    {
+      "slug": "intelligent-systems",
+      "label": "Intelligent Systems"
+    },
+    {
+      "slug": "interaction-control",
+      "label": "Interaction Control"
+    },
+    {
+      "slug": "interactive-learning",
+      "label": "Interactive Learning"
+    },
+    {
+      "slug": "interactive-storytelling",
+      "label": "Interactive Storytelling"
+    },
+    {
+      "slug": "interchange-protocol",
+      "label": "Interchange Protocol"
+    },
+    {
+      "slug": "investment-management",
+      "label": "Investment Management"
+    },
+    {
+      "slug": "kinematic-element",
+      "label": "Kinematic Element"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "knowledge-management-system",
+      "label": "Knowledge Management System"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "knowledge-organization-system",
+      "label": "Knowledge Organization System"
+    },
+    {
+      "slug": "knowledge-organization",
+      "label": "Knowledge Organization"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "language-translation",
+      "label": "Language Translation"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "loyalty-programs",
+      "label": "Loyalty Programs"
+    },
+    {
+      "slug": "mathematical-science",
+      "label": "Mathematical Science"
+    },
+    {
+      "slug": "media-theory",
+      "label": "Media Theory"
+    },
+    {
+      "slug": "metaverse-application",
+      "label": "Metaverse Application"
+    },
+    {
+      "slug": "metaverse-classification",
+      "label": "Metaverse Classification"
+    },
+    {
+      "slug": "mixed-reality-platform",
+      "label": "Mixed Reality Platform"
+    },
+    {
+      "slug": "motion-capture-technology",
+      "label": "Motion Capture Technology"
+    },
+    {
+      "slug": "multi-user-systems",
+      "label": "Multi User Systems"
+    },
+    {
+      "slug": "narrative-structure",
+      "label": "Narrative Structure"
+    },
+    {
+      "slug": "network-quality-metric",
+      "label": "Network Quality Metric"
+    },
+    {
+      "slug": "neural-network-layer",
+      "label": "Neural Network Layer"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "ontology-structure",
+      "label": "Ontology Structure"
+    },
+    {
+      "slug": "organisational-theory",
+      "label": "Organisational Theory"
+    },
+    {
+      "slug": "peerto-peer-protocol",
+      "label": "Peerto Peer Protocol"
+    },
+    {
+      "slug": "perceptual-experience",
+      "label": "Perceptual Experience"
+    },
+    {
+      "slug": "performing-arts",
+      "label": "Performing Arts"
+    },
+    {
+      "slug": "pre-production",
+      "label": "Pre Production"
+    },
+    {
+      "slug": "privacy-disclosure",
+      "label": "Privacy Disclosure"
+    },
+    {
+      "slug": "privacy-mechanism",
+      "label": "Privacy Mechanism"
+    },
+    {
+      "slug": "production-design",
+      "label": "Production Design"
+    },
+    {
+      "slug": "production-pipeline",
+      "label": "Production Pipeline"
+    },
+    {
+      "slug": "programming-paradigm",
+      "label": "Programming Paradigm"
+    },
+    {
+      "slug": "property-rights",
+      "label": "Property Rights"
+    },
+    {
+      "slug": "rb-1002-closedloopcontrol",
+      "label": "RB 1002 closedloopcontrol"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB 1013 localization"
+    },
+    {
+      "slug": "rb-1016-pathplanning",
+      "label": "RB 1016 pathplanning"
+    },
+    {
+      "slug": "reactive-control",
+      "label": "Reactive Control"
+    },
+    {
+      "slug": "record-keeping-system",
+      "label": "Record Keeping System"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "slug": "reinforcement-learning-algorithm",
+      "label": "Reinforcement Learning Algorithm"
+    },
+    {
+      "slug": "remote-communication",
+      "label": "Remote Communication"
+    },
+    {
+      "slug": "rendering-technology",
+      "label": "Rendering Technology"
+    },
+    {
+      "slug": "research-methods",
+      "label": "Research Methods"
+    },
+    {
+      "slug": "revenue-distribution",
+      "label": "Revenue Distribution"
+    },
+    {
+      "slug": "rigid-body",
+      "label": "Rigid Body"
+    },
+    {
+      "slug": "robot-actuator",
+      "label": "Robot Actuator"
+    },
+    {
+      "slug": "robotic-system",
+      "label": "Robotic System"
+    },
+    {
+      "slug": "search-technology",
+      "label": "Search Technology"
+    },
+    {
+      "slug": "security-services",
+      "label": "Security Services"
+    },
+    {
+      "slug": "security-technology",
+      "label": "Security Technology"
+    },
+    {
+      "slug": "security-token-offering",
+      "label": "Security Token Offering"
+    },
+    {
+      "slug": "servo-control",
+      "label": "Servo Control"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "simulation-software",
+      "label": "Simulation Software"
+    },
+    {
+      "slug": "social-network-graph",
+      "label": "Social Network Graph"
+    },
+    {
+      "slug": "software-infrastructure",
+      "label": "Software Infrastructure"
+    },
+    {
+      "slug": "software-testing",
+      "label": "Software Testing"
+    },
+    {
+      "slug": "spatial-mapping-technology",
+      "label": "Spatial Mapping Technology"
+    },
+    {
+      "slug": "spatial-tracking-technology",
+      "label": "Spatial Tracking Technology"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "standards-based-taxonomy",
+      "label": "Standards Based Taxonomy"
+    },
+    {
+      "slug": "standards-organization",
+      "label": "Standards Organization"
+    },
+    {
+      "slug": "state-machine-replication",
+      "label": "State Machine Replication"
+    },
+    {
+      "slug": "storytelling-structure",
+      "label": "Storytelling Structure"
+    },
+    {
+      "slug": "storytelling",
+      "label": "Storytelling"
+    },
+    {
+      "slug": "strategic-planning",
+      "label": "Strategic Planning"
+    },
+    {
+      "slug": "structural-member",
+      "label": "Structural Member"
+    },
+    {
+      "slug": "system-software",
+      "label": "System Software"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE 001 telepresence"
+    },
+    {
+      "slug": "tele-050-neuralrenderingtelepresence",
+      "label": "TELE 050 neuralrenderingtelepresence"
+    },
+    {
+      "slug": "taxonomic-framework",
+      "label": "Taxonomic Framework"
+    },
+    {
+      "slug": "technical-architecture-framework",
+      "label": "Technical Architecture Framework"
+    },
+    {
+      "slug": "technical-architecture",
+      "label": "Technical Architecture"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    },
+    {
+      "slug": "technology-infrastructure",
+      "label": "Technology Infrastructure"
+    },
+    {
+      "slug": "technology-stack",
+      "label": "Technology Stack"
+    },
+    {
+      "slug": "testing-infrastructure",
+      "label": "Testing Infrastructure"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "tourism-industry",
+      "label": "Tourism Industry"
+    },
+    {
+      "slug": "tracking-hardware",
+      "label": "Tracking Hardware"
+    },
+    {
+      "slug": "transferable-right",
+      "label": "Transferable Right"
+    },
+    {
+      "slug": "user-education",
+      "label": "User Education"
+    },
+    {
+      "slug": "user-safety",
+      "label": "User Safety"
+    },
+    {
+      "slug": "vfx-tools",
+      "label": "VFX Tools"
+    },
+    {
+      "slug": "vr-psychology",
+      "label": "VR Psychology"
+    },
+    {
+      "slug": "virtual-event",
+      "label": "Virtual Event"
+    },
+    {
+      "slug": "virtual-experience",
+      "label": "Virtual Experience"
+    },
+    {
+      "slug": "virtual-reality-applications",
+      "label": "Virtual Reality Applications"
+    },
+    {
+      "slug": "virtual-reality-platform",
+      "label": "Virtual Reality Platform"
+    },
+    {
+      "slug": "virtual-workspace",
+      "label": "Virtual Workspace"
+    },
+    {
+      "slug": "web-standards",
+      "label": "Web Standards"
+    },
+    {
+      "slug": "wheeled-robot",
+      "label": "Wheeled Robot"
+    },
+    {
+      "slug": "workforce-development",
+      "label": "Workforce Development"
+    },
+    {
+      "slug": "xr-framework",
+      "label": "XR Framework"
+    },
+    {
+      "slug": "xr-hardware",
+      "label": "XR Hardware"
+    },
+    {
+      "slug": "xr-technical-standard",
+      "label": "XR Technical Standard"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "urn:visionflow:page:7767ffd060ba565dd0e035b6abec2fa9877babaa6d94cf45e0a0bb1ea07ecdc2",
+  "title": "Visualization Layer",
+  "slug": "visualization-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:visualization-layer",
+  "domain": "spatial-computing",
+  "definition": "Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:display-manager",
+        "label": "Display Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:shader-system",
+        "label": "Shader System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "id": "urn:visionflow:owl:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-interface-rendering",
+        "label": "User Interface Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-output",
+        "label": "Visual Output"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-scene-graph",
+      "label": "3D Scene Graph"
+    },
+    {
+      "slug": "display-manager",
+      "label": "Display Manager"
+    },
+    {
+      "slug": "gpu-resources",
+      "label": "GPU Resources"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "lighting-system",
+      "label": "Lighting System"
+    },
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "presentation-infrastructure",
+      "label": "Presentation Infrastructure"
+    },
+    {
+      "slug": "shader-system",
+      "label": "Shader System"
+    },
+    {
+      "slug": "user-interface-rendering",
+      "label": "User Interface Rendering"
+    },
+    {
+      "slug": "visual-output",
+      "label": "Visual Output"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    }
+  ]
+}

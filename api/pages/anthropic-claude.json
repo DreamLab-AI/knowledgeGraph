@@ -1,0 +1,836 @@
+{
+  "id": "urn:visionflow:page:241aa7fd5446cab16bdebc2e5530a0ffb4b8feaf3d0fd1c3540c7342c96e3b66",
+  "title": "Anthropic Claude",
+  "slug": "anthropic-claude",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:anthropic-claude",
+  "domain": "artificial-intelligence",
+  "definition": "**Anthropic** is an American artificial-intelligence safety and research company incorporated in Delaware as a **Public Benefit Corporation (PBC)** and headquartered in San Francisco, founded in **2021** by **Dario Amodei** (CEO, former VP of Research at OpenAI), his sister **Daniela Amodei** (President), and seven additional ex-OpenAI researchers (Tom Brown, Sam McCandlish, Jared Kaplan, Jack Clark, Jaspher Sastry, Chris Olah, Catherine Olsson, Tom Henighan) who departed OpenAI together in late 2020 over disagreements regarding the commercial direction of the GPT-3 era and the relative weight placed on AI-safety research versus product velocity. **Claude** is Anthropic's flagship family of large language models, named in honour of **Claude Shannon** (the founder of information theory), encompassing a rapidly-evolving model lineage that includes **Claude 1** (closed beta 2022, public March 2023), **Claude Instant** (lightweight tier 2023), **Claude 2** (July 2023, 100K-token context), **Claude 2.1** (November 2023, 200K-token context), the **Claude 3 family** (Haiku, Sonnet, Opus, March 2024), **Claude 3.5 Sonnet** (June 2024, Computer Use beta October 2024), **Claude 3.5 Haiku** (",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-safety-organization",
+      "label": "AI Safety Organization"
+    },
+    {
+      "id": "urn:visionflow:linked:foundation-model-provider",
+      "label": "Foundation Model Provider"
+    },
+    {
+      "id": "urn:visionflow:linked:frontier-ai-lab",
+      "label": "Frontier AI Lab"
+    },
+    {
+      "id": "urn:visionflow:linked:large-language-model-family",
+      "label": "Large Language Model Family"
+    },
+    {
+      "id": "urn:visionflow:linked:public-benefit-corporation",
+      "label": "Public Benefit Corporation"
+    }
+  ],
+  "qualityScore": 0.54,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:anthropic-api",
+        "label": "Anthropic API"
+      },
+      {
+        "id": "urn:visionflow:linked:anthropic-circuits-team",
+        "label": "Anthropic Circuits Team"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-3-5-sonnet",
+        "label": "Claude 3.5 Sonnet"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-3-7-sonnet",
+        "label": "Claude 3.7 Sonnet"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-3-family",
+        "label": "Claude 3 Family"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-4-family",
+        "label": "Claude 4 Family"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-agent-sdk",
+        "label": "claude-agent-sdk"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-code",
+        "label": "Claude Code"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-desktop",
+        "label": "Claude Desktop"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-opus-4-5",
+        "label": "Claude Opus 4.5"
+      },
+      {
+        "id": "urn:visionflow:linked:claude-opus-4-7",
+        "label": "Claude Opus 4.7"
+      },
+      {
+        "id": "urn:visionflow:linked:long-term-benefit-trust",
+        "label": "Long-Term Benefit Trust"
+      },
+      {
+        "id": "urn:visionflow:linked:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:capital-markets-access",
+        "label": "Capital Markets Access"
+      },
+      {
+        "id": "urn:visionflow:linked:constitutional-ai-training",
+        "label": "Constitutional AI Training"
+      },
+      {
+        "id": "urn:visionflow:linked:large-scale-gpu-cluster",
+        "label": "Large-Scale GPU Cluster"
+      },
+      {
+        "id": "urn:visionflow:linked:pretraining-corpus",
+        "label": "Pretraining Corpus"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf-pipeline",
+        "label": "RLHF Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-evaluation-infrastructure",
+        "label": "Safety Evaluation Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:trainium-cluster",
+        "label": "Trainium Cluster"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agentic-coding",
+        "label": "Agentic Coding"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-augmented-research",
+        "label": "AI-Augmented Research"
+      },
+      {
+        "id": "urn:visionflow:linked:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "id": "urn:visionflow:linked:enterprise-ai-deployment",
+        "label": "Enterprise AI Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:extended-thinking",
+        "label": "Extended Thinking"
+      },
+      {
+        "id": "urn:visionflow:linked:long-context-reasoning",
+        "label": "Long-Context Reasoning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:frontier-risk-evaluation",
+        "label": "Frontier Risk Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:helpful-honest-harmless-framework",
+        "label": "Helpful Honest Harmless Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanistic-interpretability-research-programme",
+        "label": "Mechanistic Interpretability Research Programme"
+      },
+      {
+        "id": "urn:visionflow:linked:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:rlaif",
+        "label": "RLAIF"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agentic-coding",
+      "label": "Agentic Coding"
+    },
+    {
+      "slug": "ai-augmented-research",
+      "label": "AI-Augmented Research"
+    },
+    {
+      "slug": "ai-platform-layer",
+      "label": "AI Platform Layer"
+    },
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
+      "slug": "ai-safety-organization",
+      "label": "AI Safety Organization"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "amodei-2024-machines-of-loving-grace-essay",
+      "label": "Amodei 2024 Machines of Loving Grace Essay"
+    },
+    {
+      "slug": "anderljung-barnhart-2023-frontier-ai-regulation-public-safety",
+      "label": "Anderljung Barnhart 2023 Frontier AI Regulation Public Safety"
+    },
+    {
+      "slug": "anthropic-2021-founding-announcement",
+      "label": "Anthropic 2021 Founding Announcement"
+    },
+    {
+      "slug": "anthropic-2023-responsible-scaling-policy",
+      "label": "Anthropic 2023 Responsible Scaling Policy"
+    },
+    {
+      "slug": "anthropic-2023-towards-monosemanticity-dictionary-learning",
+      "label": "Anthropic 2023 Towards Monosemanticity Dictionary Learning"
+    },
+    {
+      "slug": "anthropic-2024-claude-3-5-sonnet-model-card",
+      "label": "Anthropic 2024 Claude 3.5 Sonnet Model Card"
+    },
+    {
+      "slug": "anthropic-2024-claude-3-model-family-card",
+      "label": "Anthropic 2024 Claude 3 Model Family Card"
+    },
+    {
+      "slug": "anthropic-2024-core-views-on-ai-safety",
+      "label": "Anthropic 2024 Core Views on AI Safety"
+    },
+    {
+      "slug": "anthropic-2024-model-context-protocol-specification",
+      "label": "Anthropic 2024 Model Context Protocol Specification"
+    },
+    {
+      "slug": "anthropic-2025-claude-3-7-sonnet-system-card",
+      "label": "Anthropic 2025 Claude 3.7 Sonnet System Card"
+    },
+    {
+      "slug": "anthropic-2025-claude-4-system-card",
+      "label": "Anthropic 2025 Claude 4 System Card"
+    },
+    {
+      "slug": "anthropic-api",
+      "label": "Anthropic API"
+    },
+    {
+      "slug": "anthropic-circuits-team",
+      "label": "Anthropic Circuits Team"
+    },
+    {
+      "slug": "askell-bai-2021-general-language-assistant-as-laboratory-for-alignment",
+      "label": "Askell Bai 2021 General Language Assistant as Laboratory for Alignment"
+    },
+    {
+      "slug": "aws-bedrock",
+      "label": "AWS Bedrock"
+    },
+    {
+      "slug": "aws-trainium",
+      "label": "AWS Trainium"
+    },
+    {
+      "slug": "bai-jones-ndousse-2022-training-helpful-harmless-assistant-rlhf",
+      "label": "Bai Jones Ndousse 2022 Training Helpful Harmless Assistant RLHF"
+    },
+    {
+      "slug": "bai-kadavath-kundu-askell-2022-constitutional-ai-harmlessness-from-ai-feedback",
+      "label": "Bai Kadavath Kundu Askell 2022 Constitutional AI Harmlessness from AI Feedback"
+    },
+    {
+      "slug": "batch-api",
+      "label": "Batch API"
+    },
+    {
+      "slug": "bletchley-declaration",
+      "label": "Bletchley Declaration"
+    },
+    {
+      "slug": "bommasani-hudson-adeli-2021-stanford-crfm-foundation-models",
+      "label": "Bommasani Hudson Adeli 2021 Stanford CRFM Foundation Models"
+    },
+    {
+      "slug": "brown-mann-ryder-2020-gpt-3-language-models-few-shot-learners",
+      "label": "Brown Mann Ryder 2020 GPT-3 Language Models Few-Shot Learners"
+    },
+    {
+      "slug": "capital-markets-access",
+      "label": "Capital Markets Access"
+    },
+    {
+      "slug": "claude-3-5-sonnet",
+      "label": "Claude 3.5 Sonnet"
+    },
+    {
+      "slug": "claude-3-7-sonnet",
+      "label": "Claude 3.7 Sonnet"
+    },
+    {
+      "slug": "claude-3-family",
+      "label": "Claude 3 Family"
+    },
+    {
+      "slug": "claude-4-family",
+      "label": "Claude 4 Family"
+    },
+    {
+      "slug": "claude-agent-sdk",
+      "label": "claude-agent-sdk"
+    },
+    {
+      "slug": "claude-code",
+      "label": "Claude Code"
+    },
+    {
+      "slug": "claude-desktop",
+      "label": "Claude Desktop"
+    },
+    {
+      "slug": "claude-opus-4-5",
+      "label": "Claude Opus 4.5"
+    },
+    {
+      "slug": "claude-opus-4-7",
+      "label": "Claude Opus 4.7"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "computer-use",
+      "label": "Computer Use"
+    },
+    {
+      "slug": "constitutional-ai-method",
+      "label": "Constitutional AI Method"
+    },
+    {
+      "slug": "constitutional-ai-training",
+      "label": "Constitutional AI Training"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
+      "slug": "deep-seek",
+      "label": "DeepSeek"
+    },
+    {
+      "slug": "developer-tooling-layer",
+      "label": "Developer Tooling Layer"
+    },
+    {
+      "slug": "elhage-hume-olsson-2022-toy-models-of-superposition",
+      "label": "Elhage Hume Olsson 2022 Toy Models of Superposition"
+    },
+    {
+      "slug": "enterprise-ai-deployment",
+      "label": "Enterprise AI Deployment"
+    },
+    {
+      "slug": "eu-ai-act-general-purpose-ai-code-of-practice",
+      "label": "EU AI Act General-Purpose AI Code of Practice"
+    },
+    {
+      "slug": "eu-ai-office-2025-general-purpose-ai-code-of-practice-final",
+      "label": "EU AI Office 2025 General Purpose AI Code of Practice Final"
+    },
+    {
+      "slug": "extended-thinking",
+      "label": "Extended Thinking"
+    },
+    {
+      "slug": "extended-thinking-mode",
+      "label": "Extended Thinking Mode"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "Foundation Model Layer"
+    },
+    {
+      "slug": "foundation-model-provider",
+      "label": "Foundation Model Provider"
+    },
+    {
+      "slug": "frontier-ai-lab",
+      "label": "Frontier AI Lab"
+    },
+    {
+      "slug": "frontier-model-forum",
+      "label": "Frontier Model Forum"
+    },
+    {
+      "slug": "frontier-risk-evaluation",
+      "label": "Frontier Risk Evaluation"
+    },
+    {
+      "slug": "ganguli-lovitt-2022-red-teaming-language-models-to-reduce-harms",
+      "label": "Ganguli Lovitt 2022 Red Teaming Language Models to Reduce Harms"
+    },
+    {
+      "slug": "gcp-vertex-ai",
+      "label": "GCP Vertex AI"
+    },
+    {
+      "slug": "google-gemini",
+      "label": "Google Gemini"
+    },
+    {
+      "slug": "google-tpu",
+      "label": "Google TPU"
+    },
+    {
+      "slug": "gpu-cluster-compute",
+      "label": "GPU Cluster Compute"
+    },
+    {
+      "slug": "greenblatt-denison-wright-2024-alignment-faking-large-language-models",
+      "label": "Greenblatt Denison Wright 2024 Alignment Faking Large Language Models"
+    },
+    {
+      "slug": "helpful-honest-harmless-framework",
+      "label": "Helpful Honest Harmless Framework"
+    },
+    {
+      "slug": "hoffmann-borgeaud-2022-training-compute-optimal-llms-chinchilla",
+      "label": "Hoffmann Borgeaud 2022 Training Compute-Optimal LLMs Chinchilla"
+    },
+    {
+      "slug": "hubinger-denison-mu-2024-sleeper-agents-deceptive-llms-persist-safety-training",
+      "label": "Hubinger Denison Mu 2024 Sleeper Agents Deceptive LLMs Persist Safety Training"
+    },
+    {
+      "slug": "inflection-ai",
+      "label": "Inflection AI"
+    },
+    {
+      "slug": "interpretability-research",
+      "label": "Interpretability Research"
+    },
+    {
+      "slug": "iso-iec-42001-aims",
+      "label": "ISO/IEC 42001 AIMS"
+    },
+    {
+      "slug": "kaplan-mc-candlish-henighan-2020-scaling-laws-neural-language-models",
+      "label": "Kaplan McCandlish Henighan 2020 Scaling Laws Neural Language Models"
+    },
+    {
+      "slug": "large-language-model-family",
+      "label": "Large Language Model Family"
+    },
+    {
+      "slug": "large-scale-gpu-cluster",
+      "label": "Large-Scale GPU Cluster"
+    },
+    {
+      "slug": "lindsey-templeton-2025-tracing-thoughts-large-language-model",
+      "label": "Lindsey Templeton 2025 Tracing Thoughts Large Language Model"
+    },
+    {
+      "slug": "long-context-reasoning",
+      "label": "Long-Context Reasoning"
+    },
+    {
+      "slug": "long-term-benefit-trust",
+      "label": "Long-Term Benefit Trust"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "mechanistic-interpretability",
+      "label": "Mechanistic Interpretability"
+    },
+    {
+      "slug": "mechanistic-interpretability-research-programme",
+      "label": "Mechanistic Interpretability Research Programme"
+    },
+    {
+      "slug": "meta-llama",
+      "label": "Meta Llama"
+    },
+    {
+      "slug": "mistral-ai",
+      "label": "Mistral AI"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
+      "slug": "nist-2023-ai-risk-management-framework",
+      "label": "NIST 2023 AI Risk Management Framework"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "open-ai-gpt",
+      "label": "OpenAI GPT"
+    },
+    {
+      "slug": "perez-ringer-2022-discovering-language-model-behaviors-model-written-evaluations",
+      "label": "Perez Ringer 2022 Discovering Language Model Behaviors Model-Written Evaluations"
+    },
+    {
+      "slug": "pretraining-corpus",
+      "label": "Pretraining Corpus"
+    },
+    {
+      "slug": "pretraining-data",
+      "label": "Pretraining Data"
+    },
+    {
+      "slug": "prompt-caching",
+      "label": "Prompt Caching"
+    },
+    {
+      "slug": "public-benefit-corporation",
+      "label": "Public Benefit Corporation"
+    },
+    {
+      "slug": "responsible-scaling-policy",
+      "label": "Responsible Scaling Policy"
+    },
+    {
+      "slug": "rlaif",
+      "label": "RLAIF"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "rlhf-pipeline",
+      "label": "RLHF Pipeline"
+    },
+    {
+      "slug": "safety-evaluation-infrastructure",
+      "label": "Safety Evaluation Infrastructure"
+    },
+    {
+      "slug": "safety-research-methodology",
+      "label": "Safety Research Methodology"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "seoul-ai-summit",
+      "label": "Seoul AI Summit"
+    },
+    {
+      "slug": "seoul-frontier-ai-safety-commitments",
+      "label": "Seoul Frontier AI Safety Commitments"
+    },
+    {
+      "slug": "shevlane-farquhar-garfinkel-2023-model-evaluation-extreme-risks",
+      "label": "Shevlane Farquhar Garfinkel 2023 Model Evaluation Extreme Risks"
+    },
+    {
+      "slug": "sparse-autoencoders",
+      "label": "Sparse Autoencoders"
+    },
+    {
+      "slug": "templeton-conerly-marcus-2024-scaling-monosemanticity-claude-3-sonnet",
+      "label": "Templeton Conerly Marcus 2024 Scaling Monosemanticity Claude 3 Sonnet"
+    },
+    {
+      "slug": "tool-use-api",
+      "label": "Tool Use API"
+    },
+    {
+      "slug": "trainium-cluster",
+      "label": "Trainium Cluster"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "uk-aisi-2024-pre-deployment-evaluation-claude-3-5-sonnet",
+      "label": "UK AISI 2024 Pre-Deployment Evaluation Claude 3.5 Sonnet"
+    },
+    {
+      "slug": "uk-aisi-pre-deployment-testing-mou",
+      "label": "UK AISI Pre-Deployment Testing MOU"
+    },
+    {
+      "slug": "us-ai-safety-institute",
+      "label": "US AI Safety Institute"
+    },
+    {
+      "slug": "vision-capability",
+      "label": "Vision Capability"
+    },
+    {
+      "slug": "x-ai-grok",
+      "label": "xAI Grok"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:63a21da8434fccf69feed030def62d05d90c54afa5418a6c4114bc4a150189fa",
+  "title": "Embedded AI Frameworks",
+  "slug": "embedded-ai-frameworks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:embedded-ai-frameworks",
+  "domain": "artificial-intelligence",
+  "definition": "Embedded AI Frameworks provide software infrastructure and tooling optimized for deploying and running machine learning models on resource-constrained embedded systems and edge devices. These frameworks target footprints of 100KB-10MB runtime size, supporting inference with minimal RAM (50-500MB), tailored for microcontrollers, mobile processors, and single-board computers. TensorFlow Lite achieves <500KB core runtime, enabling models on 1MB-RAM Arduino boards; ONNX Runtime provides hardware-agnostic model execution with optimized paths for mobile and embedded targets; OpenVINO targets edge deployment across Intel and ARM processors with automated optimization pipelines. Embedded frameworks provide model quantization (INT8/FP16), pruning integration, hardware acceleration abstraction supporting NPUs/FPGAs/DSPs, and optimized inference kernels. They eliminate unnecessary functionality from full TensorFlow/PyTorch: no graph construction, limited dynamic operations, streamlined memory allocation avoiding heap fragmentation on embedded systems. Frameworks support model format conversion (ONNX, SavedModel) ensuring compatibility across platforms. Delegation APIs abstract hardware accele",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

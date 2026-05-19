@@ -1,0 +1,596 @@
+{
+  "id": "urn:visionflow:page:dcdc8eb3887e2d82dfc29d544da7168437f4b2ad82203ae91884a443b7ac9f99",
+  "title": "Adoption of Convergent Technologies",
+  "slug": "adoption-of-convergent-technologies",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adoption-of-convergent-technologies",
+  "domain": "ethics-society",
+  "definition": "**Adoption of Convergent Technologies** is the socio-technical process by which enterprises, governments, consumers and communities progressively integrate interoperating stacks of mutually reinforcing deep-technology families \u2014 artificial intelligence (including foundation models, generative AI and agentic AI), distributed ledger / blockchain infrastructure, extended-reality (XR) platforms (AR, VR, MR), Internet of Things (IoT) sensor-actuator networks, and biotechnology / synthetic biology \u2014 into workflows, products, services and governance structures in ways that create multiplicative rather than additive capability gains, constituting a phenomenon distinct from single-technology adoption and demanding theoretical frameworks capable of modelling the interdependencies, complementarities and co-evolutionary dynamics that characterise multi-technology convergence.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "id": "urn:visionflow:linked:socio-technical-transition",
+      "label": "Socio-Technical Transition"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-policy",
+      "label": "Technology Policy"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:biotech-commercialisation",
+        "label": "Biotech Commercialisation"
+      },
+      {
+        "id": "urn:visionflow:linked:convergence-readiness-assessment",
+        "label": "Convergence Readiness Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:io-t-adoption",
+        "label": "IoT Adoption"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      },
+      {
+        "id": "urn:visionflow:linked:skills-transition-programme",
+        "label": "Skills Transition Programme"
+      },
+      {
+        "id": "urn:visionflow:linked:technology-stack-integration",
+        "label": "Technology Stack Integration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "id": "urn:visionflow:linked:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:visionflow:linked:data-governance-framework",
+        "label": "Data Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:executive-sponsorship",
+        "label": "Executive Sponsorship"
+      },
+      {
+        "id": "urn:visionflow:linked:interoperability-standards",
+        "label": "Interoperability Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:investment-capital",
+        "label": "Investment Capital"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-clarity",
+        "label": "Regulatory Clarity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-systems-deployment",
+        "label": "Autonomous Systems Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-application-ecosystems",
+        "label": "Decentralised Application Ecosystems"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-physical-integration",
+        "label": "Digital-Physical Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:immersive-enterprise-collaboration",
+        "label": "Immersive Enterprise Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:visionflow:linked:productivity-multiplier-effects",
+        "label": "Productivity Multiplier Effects"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:precision-medicine",
+        "label": "Precision Medicine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:diffusion-of-innovations-theory",
+        "label": "Diffusion of Innovations Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:gartner-hype-cycle",
+        "label": "Gartner Hype Cycle"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-level-perspective",
+        "label": "Multi-Level Perspective"
+      },
+      {
+        "id": "urn:visionflow:linked:nbic-convergence-framework",
+        "label": "NBIC Convergence Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:technology-acceptance-model",
+        "label": "Technology Acceptance Model"
+      },
+      {
+        "id": "urn:visionflow:linked:toe-framework",
+        "label": "TOE Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:utaut",
+        "label": "UTAUT"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "5-g-networks",
+      "label": "5G Networks"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "arm-ecosystem",
+      "label": "ARM Ecosystem"
+    },
+    {
+      "slug": "autonomous-systems-deployment",
+      "label": "Autonomous Systems Deployment"
+    },
+    {
+      "slug": "biotech-commercialisation",
+      "label": "Biotech Commercialisation"
+    },
+    {
+      "slug": "change-management",
+      "label": "Change Management"
+    },
+    {
+      "slug": "climate-tech-deployment",
+      "label": "Climate Tech Deployment"
+    },
+    {
+      "slug": "convergence-readiness-assessment",
+      "label": "Convergence Readiness Assessment"
+    },
+    {
+      "slug": "data-governance-framework",
+      "label": "Data Governance Framework"
+    },
+    {
+      "slug": "decentralised-application-ecosystems",
+      "label": "Decentralised Application Ecosystems"
+    },
+    {
+      "slug": "diffusion-of-innovations-theory",
+      "label": "Diffusion of Innovations Theory"
+    },
+    {
+      "slug": "digital-physical-integration",
+      "label": "Digital-Physical Integration"
+    },
+    {
+      "slug": "digital-sovereignty",
+      "label": "Digital Sovereignty"
+    },
+    {
+      "slug": "digital-transformation-domain",
+      "label": "DigitalTransformationDomain"
+    },
+    {
+      "slug": "dora",
+      "label": "DORA"
+    },
+    {
+      "slug": "economic-growth",
+      "label": "Economic Growth"
+    },
+    {
+      "slug": "enterprise-layer",
+      "label": "EnterpriseLayer"
+    },
+    {
+      "slug": "ethics-society-domain",
+      "label": "EthicsSocietyDomain"
+    },
+    {
+      "slug": "executive-sponsorship",
+      "label": "Executive Sponsorship"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "fourth-industrial-revolution",
+      "label": "Fourth Industrial Revolution"
+    },
+    {
+      "slug": "future-of-work-transition",
+      "label": "Future of Work Transition"
+    },
+    {
+      "slug": "gartner-hype-cycle",
+      "label": "Gartner Hype Cycle"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "global-economy-layer",
+      "label": "GlobalEconomyLayer"
+    },
+    {
+      "slug": "hl7-fhir",
+      "label": "HL7 FHIR"
+    },
+    {
+      "slug": "ieee-p2510",
+      "label": "IEEE P2510"
+    },
+    {
+      "slug": "immersive-enterprise-collaboration",
+      "label": "Immersive Enterprise Collaboration"
+    },
+    {
+      "slug": "industry-4-0",
+      "label": "Industry 4.0"
+    },
+    {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "slug": "innovation-economics-domain",
+      "label": "InnovationEconomicsDomain"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "interoperability-standards",
+      "label": "Interoperability Standards"
+    },
+    {
+      "slug": "investment-capital",
+      "label": "Investment Capital"
+    },
+    {
+      "slug": "io-t-adoption",
+      "label": "IoT Adoption"
+    },
+    {
+      "slug": "iso-iec-42001-ai-management",
+      "label": "ISO/IEC 42001 AI Management"
+    },
+    {
+      "slug": "legacy-systems-modernisation",
+      "label": "Legacy Systems Modernisation"
+    },
+    {
+      "slug": "llama-index",
+      "label": "LlamaIndex"
+    },
+    {
+      "slug": "matter-standard",
+      "label": "Matter Standard"
+    },
+    {
+      "slug": "multi-level-perspective",
+      "label": "Multi-Level Perspective"
+    },
+    {
+      "slug": "national-competitiveness",
+      "label": "National Competitiveness"
+    },
+    {
+      "slug": "national-economy-layer",
+      "label": "NationalEconomyLayer"
+    },
+    {
+      "slug": "nbic-convergence-framework",
+      "label": "NBIC Convergence Framework"
+    },
+    {
+      "slug": "open-standards-ecosystems",
+      "label": "Open Standards Ecosystems"
+    },
+    {
+      "slug": "platform-economy",
+      "label": "Platform Economy"
+    },
+    {
+      "slug": "pre-digital-transformation",
+      "label": "Pre-Digital Transformation"
+    },
+    {
+      "slug": "productivity-multiplier-effects",
+      "label": "Productivity Multiplier Effects"
+    },
+    {
+      "slug": "public-research-funding",
+      "label": "Public Research Funding"
+    },
+    {
+      "slug": "public-sector-modernisation",
+      "label": "Public Sector Modernisation"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
+      "slug": "regulatory-sandbox",
+      "label": "Regulatory Sandbox"
+    },
+    {
+      "slug": "regulatory-sandboxes",
+      "label": "Regulatory Sandboxes"
+    },
+    {
+      "slug": "sector-layer",
+      "label": "SectorLayer"
+    },
+    {
+      "slug": "sequential-technology-rollout",
+      "label": "Sequential Technology Rollout"
+    },
+    {
+      "slug": "siloed-technology-adoption",
+      "label": "Siloed Technology Adoption"
+    },
+    {
+      "slug": "skills-gap",
+      "label": "Skills Gap"
+    },
+    {
+      "slug": "skills-transition-programme",
+      "label": "Skills Transition Programme"
+    },
+    {
+      "slug": "smart-city-infrastructure",
+      "label": "Smart City Infrastructure"
+    },
+    {
+      "slug": "socio-technical-transition",
+      "label": "Socio-Technical Transition"
+    },
+    {
+      "slug": "sustainable-development-goals",
+      "label": "Sustainable Development Goals"
+    },
+    {
+      "slug": "synthetic-biology",
+      "label": "Synthetic Biology"
+    },
+    {
+      "slug": "technology-acceptance-model",
+      "label": "Technology Acceptance Model"
+    },
+    {
+      "slug": "technology-governance",
+      "label": "Technology Governance"
+    },
+    {
+      "slug": "technology-lock-in",
+      "label": "Technology Lock-In"
+    },
+    {
+      "slug": "technology-policy",
+      "label": "Technology Policy"
+    },
+    {
+      "slug": "technology-policy-domain",
+      "label": "TechnologyPolicyDomain"
+    },
+    {
+      "slug": "technology-stack-integration",
+      "label": "Technology Stack Integration"
+    },
+    {
+      "slug": "toe-framework",
+      "label": "TOE Framework"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan",
+      "label": "UK AI Opportunities Action Plan"
+    },
+    {
+      "slug": "utaut",
+      "label": "UTAUT"
+    },
+    {
+      "slug": "venture-capital-markets",
+      "label": "Venture Capital Markets"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "precision-medicine",
+      "label": "Precision Medicine"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

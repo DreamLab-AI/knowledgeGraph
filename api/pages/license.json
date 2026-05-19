@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:7b5543ec3bd2d4e471bee2690f7282159bbd125fd5dc45773a77c8fe7dafaef4",
+  "title": "license",
+  "slug": "license",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:license",
+  "domain": "infrastructure",
+  "definition": "license is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

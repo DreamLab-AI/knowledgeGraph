@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:5ca3048e87b3827e894cbdbf229e810570c8a4093d51f468762a3389b81afd82",
+  "title": "Key Vector",
+  "slug": "key-vector",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:key-vector",
+  "domain": "artificial-intelligence",
+  "definition": "Key Vector is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

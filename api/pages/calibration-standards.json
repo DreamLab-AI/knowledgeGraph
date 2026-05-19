@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89",
+  "title": "Calibration Standards",
+  "slug": "calibration-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:calibration-standards",
+  "domain": "spatial-computing",
+  "definition": "Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:reference-materials",
+        "label": "Reference Materials"
+      },
+      {
+        "id": "urn:visionflow:linked:traceability-chain",
+        "label": "Traceability Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-procedures",
+        "label": "Validation Procedures"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:device-alignment",
+        "label": "Device Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:measurement-accuracy",
+        "label": "Measurement Accuracy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "device-alignment",
+      "label": "Device Alignment"
+    },
+    {
+      "slug": "measurement-accuracy",
+      "label": "Measurement Accuracy"
+    },
+    {
+      "slug": "reference-materials",
+      "label": "Reference Materials"
+    },
+    {
+      "slug": "traceability-chain",
+      "label": "Traceability Chain"
+    },
+    {
+      "slug": "validation-procedures",
+      "label": "Validation Procedures"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    }
+  ]
+}

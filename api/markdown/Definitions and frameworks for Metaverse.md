@@ -1,24 +1,404 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DefinitionsAndFrameworksForMetaverse
-uri:: urn:visionclaw:concept:spatial-computing:definitions-and-frameworks-for-metaverse
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:definitions-and-frameworks-for-metaverse
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Definitions and frameworks for Metaverse
-content-hash:: sha256-12-f8566f20e63f
-legacy-term-id::
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DefinitionsAndFrameworksForMetaverse
+legacy_uri:: urn:visionclaw:concept:spatial-computing:definitions-and-frameworks-for-metaverse
 public:: true
+
+# Definitions and frameworks for Metaverse
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:53b06e9ab976561f64c53d6be34214d66a2be5f42280e072f7815c3c5a653dc3",
+  "@type": "Page",
+  "vc:slug": "definitions-and-frameworks-for-metaverse",
+  "title": "Definitions and frameworks for Metaverse",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aoki2003",
+      "vc:label": "Aoki2003"
+    },
+    {
+      "@id": "urn:visionflow:linked:chen2011leet",
+      "vc:label": "chen2011leet"
+    },
+    {
+      "@id": "urn:visionflow:linked:cole2013call",
+      "vc:label": "cole2013call"
+    },
+    {
+      "@id": "urn:visionflow:linked:cook1977-kleinke1986-fagel2010",
+      "vc:label": "Cook1977; @Kleinke1986; @Fagel2010"
+    },
+    {
+      "@id": "urn:visionflow:linked:gadekallu2022blockchain",
+      "vc:label": "gadekallu2022blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:glas2013battlefields",
+      "vc:label": "glas2013battlefields"
+    },
+    {
+      "@id": "urn:visionflow:linked:heiphetz2010training-aldrich2005learning",
+      "vc:label": "heiphetz2010training; @aldrich2005learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:iser1993fictive",
+      "vc:label": "iser1993fictive"
+    },
+    {
+      "@id": "urn:visionflow:linked:kendon1967",
+      "vc:label": "Kendon1967"
+    },
+    {
+      "@id": "urn:visionflow:linked:kleinke1986-nguyen2009",
+      "vc:label": "Kleinke1986; @Nguyen2009"
+    },
+    {
+      "@id": "urn:visionflow:linked:kraus2022facebook",
+      "vc:label": "kraus2022facebook"
+    },
+    {
+      "@id": "urn:visionflow:linked:otsuka2005",
+      "vc:label": "Otsuka2005"
+    },
+    {
+      "@id": "urn:visionflow:linked:park2022metaverse",
+      "vc:label": "park2022metaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:serapis2008coming",
+      "vc:label": "serapis2008coming"
+    },
+    {
+      "@id": "urn:visionflow:linked:siyaev2021towards",
+      "vc:label": "siyaev2021towards"
+    },
+    {
+      "@id": "urn:visionflow:linked:taylor2009play",
+      "vc:label": "taylor2009play"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:apple",
+      "vc:label": "Apple"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-ontology",
+      "vc:label": "Metaverse Ontology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-pro",
+      "vc:label": "Vision Pro"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f8566f20e63f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DefinitionsAndFrameworksForMetaverse"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Definitions and frameworks for Metaverse"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:definitions-and-frameworks-for-metaverse"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:definitions-and-frameworks-for-metaverse"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:53b06e9ab976561f64c53d6be34214d66a2be5f42280e072f7815c3c5a653dc3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:definitions-and-frameworks-for-metaverse",
+  "@type": "OntologyClass",
+  "label": "Definitions and frameworks for Metaverse",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-ontology",
+      "vc:label": "Metaverse Ontology"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:53b06e9ab976561f64c53d6be34214d66a2be5f42280e072f7815c3c5a653dc3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:53b06e9ab976561f64c53d6be34214d66a2be5f42280e072f7815c3c5a653dc3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Definitions and frameworks for Metaverse is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:definitions-and-frameworks-for-metaverse:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:53b06e9ab976561f64c53d6be34214d66a2be5f42280e072f7815c3c5a653dc3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Aoki2003]]",
+      "resolved": "urn:visionflow:linked:aoki2003",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[chen2011leet]]",
+      "resolved": "urn:visionflow:linked:chen2011leet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[cole2013call]]",
+      "resolved": "urn:visionflow:linked:cole2013call",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cook1977; @Kleinke1986; @Fagel2010]]",
+      "resolved": "urn:visionflow:linked:cook1977-kleinke1986-fagel2010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[gadekallu2022blockchain]]",
+      "resolved": "urn:visionflow:linked:gadekallu2022blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[glas2013battlefields]]",
+      "resolved": "urn:visionflow:linked:glas2013battlefields",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[heiphetz2010training; @aldrich2005learning]]",
+      "resolved": "urn:visionflow:linked:heiphetz2010training-aldrich2005learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[iser1993fictive]]",
+      "resolved": "urn:visionflow:linked:iser1993fictive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kendon1967]]",
+      "resolved": "urn:visionflow:linked:kendon1967",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kleinke1986; @Nguyen2009]]",
+      "resolved": "urn:visionflow:linked:kleinke1986-nguyen2009",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[kraus2022facebook]]",
+      "resolved": "urn:visionflow:linked:kraus2022facebook",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Otsuka2005]]",
+      "resolved": "urn:visionflow:linked:otsuka2005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[park2022metaverse]]",
+      "resolved": "urn:visionflow:linked:park2022metaverse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[serapis2008coming]]",
+      "resolved": "urn:visionflow:linked:serapis2008coming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[siyaev2021towards]]",
+      "resolved": "urn:visionflow:linked:siyaev2021towards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[taylor2009play]]",
+      "resolved": "urn:visionflow:linked:taylor2009play",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Apple]]",
+      "resolved": "urn:visionflow:owl:class:apple",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Ontology]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-ontology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Vision Pro]]",
+      "resolved": "urn:visionflow:owl:class:vision-pro",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:53b06e9ab976561f64c53d6be34214d66a2be5f42280e072f7815c3c5a653dc3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Definitions and frameworks for Metaverse is a concept within the ngm domain.

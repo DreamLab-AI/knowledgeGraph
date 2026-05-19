@@ -1,0 +1,512 @@
+{
+  "id": "urn:visionflow:page:58ff4879e744df4cc627608735dd48bd230ddc38c0ca0d57a6c4d5249ae775fa",
+  "title": "Model Optimisation and Performance",
+  "slug": "model-optimisation-and-performance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-optimisation-and-performance",
+  "domain": "artificial-intelligence",
+  "definition": "Model Optimisation and Performance is the body of post-training techniques, inference-time systems, and hardware-aware transformations that reduce the computational cost, memory footprint, and latency of neural networks\u2014particularly large language models (LLMs)\u2014without unacceptable degradation of task quality, encompassing quantisation (converting FP32/BF16 weights and activations to INT8, INT4, or 1-bit representations via uniform symmetric/asymmetric mapping, per-channel or per-group affine scaling, and block-wise calibration, with post-training quantisation (PTQ) variants including GPTQ Frantar et al. NeurIPS 2022 applying optimal brain quantisation column-wise Hessian approximation achieving 3-4-bit LLaMA-65B with <1% perplexity increase, AWQ Lin et al. 2023 protecting 0.1% salient weights scaling activations to minimise quantisation error without data backpropagation, AQLM Egiazarian et al. 2024 additive quantisation with residual vector codebooks at 2-bit enabling 2\u00d7 VRAM reduction vs INT4, and GGUF format Georgi Gerganov 2023 extending GGML binary with per-tensor quantisation metadata, typed tensors and versioned magic bytes enabling llama.cpp deployment across CPU and mobil",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:computational-efficiency",
+      "label": "Computational Efficiency"
+    },
+    {
+      "id": "urn:visionflow:linked:mlops",
+      "label": "MLOps"
+    },
+    {
+      "id": "urn:visionflow:linked:neural-network-compression",
+      "label": "Neural Network Compression"
+    },
+    {
+      "id": "urn:visionflow:linked:systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:flash-attention",
+        "label": "FlashAttention"
+      },
+      {
+        "id": "urn:visionflow:linked:gguf-format",
+        "label": "GGUF Format"
+      },
+      {
+        "id": "urn:visionflow:linked:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:visionflow:linked:paged-attention",
+        "label": "PagedAttention"
+      },
+      {
+        "id": "urn:visionflow:linked:pruning",
+        "label": "Pruning"
+      },
+      {
+        "id": "urn:visionflow:linked:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:visionflow:linked:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:calibration-dataset",
+        "label": "Calibration Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:cuda-runtime",
+        "label": "CUDA Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:floating-point-arithmetic",
+        "label": "Floating Point Arithmetic"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cost-effective-llm-serving",
+        "label": "Cost-Effective LLM Serving"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-deployment",
+        "label": "Edge Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-apis",
+        "label": "Low-Latency APIs"
+      },
+      {
+        "id": "urn:visionflow:linked:mobile-ai",
+        "label": "Mobile AI"
+      },
+      {
+        "id": "urn:visionflow:linked:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-ai",
+        "label": "Real-Time AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:attention-tiling",
+        "label": "Attention Tiling"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-optimisation",
+        "label": "Graph Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:kernel-fusion",
+        "label": "Kernel Fusion"
+      },
+      {
+        "id": "urn:visionflow:linked:post-training-quantisation",
+        "label": "Post-Training Quantisation"
+      },
+      {
+        "id": "urn:visionflow:linked:structured-sparsity",
+        "label": "Structured Sparsity"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-memory-management",
+        "label": "Virtual Memory Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "attention-tiling",
+      "label": "Attention Tiling"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "bfloat16",
+      "label": "BFLOAT16"
+    },
+    {
+      "slug": "calibration-dataset",
+      "label": "Calibration Dataset"
+    },
+    {
+      "slug": "compiler-theory",
+      "label": "Compiler Theory"
+    },
+    {
+      "slug": "computational-efficiency",
+      "label": "Computational Efficiency"
+    },
+    {
+      "slug": "computer-architecture",
+      "label": "Computer Architecture"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
+      "slug": "cost-effective-llm-serving",
+      "label": "Cost-Effective LLM Serving"
+    },
+    {
+      "slug": "cuda-programming-model",
+      "label": "CUDA Programming Model"
+    },
+    {
+      "slug": "cuda-runtime",
+      "label": "CUDA Runtime"
+    },
+    {
+      "slug": "dense-inference",
+      "label": "Dense Inference"
+    },
+    {
+      "slug": "eager-execution",
+      "label": "Eager Execution"
+    },
+    {
+      "slug": "edge-deployment",
+      "label": "Edge Deployment"
+    },
+    {
+      "slug": "efficient-transformers",
+      "label": "Efficient Transformers"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "FlashAttention"
+    },
+    {
+      "slug": "floating-point-arithmetic",
+      "label": "Floating Point Arithmetic"
+    },
+    {
+      "slug": "full-precision-training",
+      "label": "Full-Precision Training"
+    },
+    {
+      "slug": "gguf-format",
+      "label": "GGUF Format"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "graph-optimisation",
+      "label": "Graph Optimisation"
+    },
+    {
+      "slug": "hardware-architecture",
+      "label": "Hardware Architecture"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "int8-arithmetic",
+      "label": "INT8 Arithmetic"
+    },
+    {
+      "slug": "kernel-fusion",
+      "label": "Kernel Fusion"
+    },
+    {
+      "slug": "khronos-nnapi",
+      "label": "Khronos NNAPI"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "low-latency-apis",
+      "label": "Low-Latency APIs"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "memory-hierarchy",
+      "label": "Memory Hierarchy"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "mlperf-inference",
+      "label": "MLPerf Inference"
+    },
+    {
+      "slug": "mobile-ai",
+      "label": "Mobile AI"
+    },
+    {
+      "slug": "neon-simd",
+      "label": "NEON SIMD"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "neural-network-compression",
+      "label": "Neural Network Compression"
+    },
+    {
+      "slug": "numerical-linear-algebra",
+      "label": "Numerical Linear Algebra"
+    },
+    {
+      "slug": "numerical-precision",
+      "label": "Numerical Precision"
+    },
+    {
+      "slug": "on-device-inference",
+      "label": "On-Device Inference"
+    },
+    {
+      "slug": "onnx-graph",
+      "label": "ONNX Graph"
+    },
+    {
+      "slug": "onnx-standard",
+      "label": "ONNX Standard"
+    },
+    {
+      "slug": "open-xla",
+      "label": "OpenXLA"
+    },
+    {
+      "slug": "operating-systems",
+      "label": "Operating Systems"
+    },
+    {
+      "slug": "paged-attention",
+      "label": "PagedAttention"
+    },
+    {
+      "slug": "post-training-quantisation",
+      "label": "Post-Training Quantisation"
+    },
+    {
+      "slug": "pruning",
+      "label": "Pruning"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "real-time-ai",
+      "label": "Real-Time AI"
+    },
+    {
+      "slug": "simd",
+      "label": "SIMD"
+    },
+    {
+      "slug": "single-request-batching",
+      "label": "Single-Request Batching"
+    },
+    {
+      "slug": "sme2",
+      "label": "SME2"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "structured-sparsity",
+      "label": "Structured Sparsity"
+    },
+    {
+      "slug": "systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "slug": "systems-engineering-domain",
+      "label": "SystemsEngineeringDomain"
+    },
+    {
+      "slug": "tensor-cores",
+      "label": "Tensor Cores"
+    },
+    {
+      "slug": "transformer-attention-mechanism",
+      "label": "Transformer Attention Mechanism"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
+    },
+    {
+      "slug": "virtual-memory-management",
+      "label": "Virtual Memory Management"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI applications"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "scaled-dot-product-attention",
+      "label": "Scaled Dot Product Attention"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

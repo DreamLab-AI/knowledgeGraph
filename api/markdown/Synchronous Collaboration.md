@@ -1,21 +1,309 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#SynchronousCollaboration
-uri:: urn:visionclaw:concept:distributed-collaboration:synchronous-collaboration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:synchronous-collaboration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Synchronous Collaboration
-content-hash:: sha256-12-25fc417280ec
-legacy-term-id:: TC-0010
-status:: active
-maturity:: mature
-quality-score:: 0.55
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#SynchronousCollaboration
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:synchronous-collaboration
 public:: true
+
+# Synchronous Collaboration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff",
+  "@type": "Page",
+  "vc:slug": "synchronous-collaboration",
+  "title": "Synchronous Collaboration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "vc:label": "TC-0001-telecollaboration-domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0011-video-conferencing",
+      "vc:label": "TC-0011-Video-Conferencing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0020-asynchronous-collaboration",
+      "vc:label": "TC-0020-Asynchronous-Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0040-communication-protocols",
+      "vc:label": "TC-0040-Communication-Protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0080-team-coordination",
+      "vc:label": "TC-0080-Team-Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "vc:label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "vc:label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "vc:label": "TELE-153-5g-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "vc:label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "vc:label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "vc:label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-presence",
+      "vc:label": "Social Presence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-25fc417280ec"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#SynchronousCollaboration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0010"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Synchronous Collaboration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.55"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:synchronous-collaboration"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:synchronous-collaboration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:synchronous-collaboration",
+  "@type": "OntologyClass",
+  "label": "Synchronous Collaboration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "vc:label": "TC-0001-telecollaboration-domain"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork.\"",
+  "vc:qualityScore": {
+    "@value": "0.55",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:tc-0040-communication-protocols",
+      "vc:label": "TC-0040-Communication-Protocols"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:social-presence",
+      "vc:label": "Social Presence"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:synchronous-collaboration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[TC-0001-telecollaboration-domain]]",
+      "resolved": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0011-Video-Conferencing]]",
+      "resolved": "urn:visionflow:linked:tc-0011-video-conferencing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0020-Asynchronous-Collaboration]]",
+      "resolved": "urn:visionflow:linked:tc-0020-asynchronous-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0040-Communication-Protocols]]",
+      "resolved": "urn:visionflow:linked:tc-0040-communication-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0080-Team-Coordination]]",
+      "resolved": "urn:visionflow:linked:tc-0080-team-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-028-horizon-workrooms]]",
+      "resolved": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-105-real-time-language-translation]]",
+      "resolved": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-153-5g-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-251-smart-contract-coordination]]",
+      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-252-dao-governance-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-301-virtual-office-spaces]]",
+      "resolved": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Social Presence]]",
+      "resolved": "urn:visionflow:owl:class:social-presence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork."

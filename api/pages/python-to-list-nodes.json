@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:557fa44843510c8a1347f39cc0d676791016c0af649ae68ebfc8990bbedd9c81",
+  "title": "Python to list nodes",
+  "slug": "python-to-list-nodes",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:python-to-list-nodes",
+  "domain": "infrastructure",
+  "definition": "Python to list nodes is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee",
+  "title": "Cross-Platform Identity",
+  "slug": "cross-platform-identity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cross-platform-identity",
+  "domain": "infrastructure",
+  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries. It enables seamless authentication and authorisation across heterogeneous environments through federated identity management, allowing users to access resources across domains without maintaining separate credentials for each system.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:federated-access",
+        "label": "Federated Access"
+      },
+      {
+        "id": "urn:visionflow:linked:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:visionflow:linked:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:trust-relationships",
+        "label": "Trust Relationships"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "federated-access",
+      "label": "Federated Access"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "trust-relationships",
+      "label": "Trust Relationships"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attribute-sharing",
+      "label": "Attribute Sharing"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "digital-identity-management",
+      "label": "Digital Identity Management"
+    },
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

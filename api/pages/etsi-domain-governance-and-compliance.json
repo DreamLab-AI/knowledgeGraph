@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:bf1f457a2e4207c1ba4971498eec8c65b631d6bbc40436fbf942ffc0f18d7052",
+  "title": "ETSI Domain: Governance & Compliance",
+  "slug": "etsi-domain-governance-and-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-governance-and-compliance",
+  "domain": "artificial-intelligence",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing organisational governance structures, compliance verification systems, and regulatory adherence mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audit-systems",
+        "label": "Audit Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:reporting-tools",
+        "label": "Reporting Tools"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:governance-frameworks",
+        "label": "Governance Frameworks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-standards",
+        "label": "Regulatory Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:audit-trails",
+        "label": "Audit Trails"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-compliance",
+        "label": "Automated Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-systems",
+      "label": "Audit Systems"
+    },
+    {
+      "slug": "audit-trails",
+      "label": "Audit Trails"
+    },
+    {
+      "slug": "automated-compliance",
+      "label": "Automated Compliance"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "governance-frameworks",
+      "label": "Governance Frameworks"
+    },
+    {
+      "slug": "industry-regulations",
+      "label": "Industry Regulations"
+    },
+    {
+      "slug": "reporting-tools",
+      "label": "Reporting Tools"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "iso-standards",
+      "label": "ISO Standards"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "regulatory-standards",
+      "label": "Regulatory Standards"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "backlinks": []
+}

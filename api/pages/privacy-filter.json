@@ -1,0 +1,252 @@
+{
+  "id": "urn:visionflow:page:ceffb0b23fae2badbd2c6c03cfd7a893d8551b267c85e428a2c9f8734f1bb3b5",
+  "title": "Privacy Filter",
+  "slug": "privacy-filter",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-filter",
+  "domain": "infrastructure",
+  "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and leaving a tamper-evident audit trail of redactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:security-layer",
+      "label": "Security Layer"
+    }
+  ],
+  "qualityScore": 0.87,
+  "authorityScore": 0.9,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:pattern-matching",
+        "label": "Pattern Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:pii-detection",
+        "label": "PII Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:redaction-engine",
+        "label": "Redaction Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:classification-rules",
+        "label": "Classification Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-learning-optional",
+        "label": "Machine Learning (optional)"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:regular-expressions",
+        "label": "Regular Expressions"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compliance-with-ccpa",
+        "label": "Compliance with CCPA"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-with-gdpr",
+        "label": "Compliance with GDPR"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preservation",
+        "label": "Privacy Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:data-anonymisation",
+        "label": "Data Anonymisation"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-data-emission",
+        "label": "Privacy-Preserving Data Emission"
+      },
+      {
+        "id": "urn:visionflow:linked:redaction-policies",
+        "label": "Redaction Policies"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adr-008",
+      "label": "ADR-008"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "ccpa-regulation",
+      "label": "CCPA Regulation"
+    },
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
+      "slug": "compliance-with-ccpa",
+      "label": "Compliance with CCPA"
+    },
+    {
+      "slug": "compliance-with-gdpr",
+      "label": "Compliance with GDPR"
+    },
+    {
+      "slug": "data-anonymisation",
+      "label": "Data Anonymisation"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "DataGovernanceDomain"
+    },
+    {
+      "slug": "filtering-layer",
+      "label": "FilteringLayer"
+    },
+    {
+      "slug": "gdpr-regulation",
+      "label": "GDPR Regulation"
+    },
+    {
+      "slug": "hipaa-regulation",
+      "label": "HIPAA Regulation"
+    },
+    {
+      "slug": "machine-learning-optional",
+      "label": "Machine Learning (optional)"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "nostr-relay",
+      "label": "Nostr Relay"
+    },
+    {
+      "slug": "pattern-matching",
+      "label": "Pattern Matching"
+    },
+    {
+      "slug": "pii-detection",
+      "label": "PII Detection"
+    },
+    {
+      "slug": "pii-detection-best-practices",
+      "label": "PII Detection Best Practices"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "PrivacyDomain"
+    },
+    {
+      "slug": "privacy-policy",
+      "label": "Privacy Policy"
+    },
+    {
+      "slug": "privacy-preservation",
+      "label": "Privacy Preservation"
+    },
+    {
+      "slug": "privacy-preserving-data-emission",
+      "label": "Privacy-Preserving Data Emission"
+    },
+    {
+      "slug": "redaction-engine",
+      "label": "Redaction Engine"
+    },
+    {
+      "slug": "redaction-policies",
+      "label": "Redaction Policies"
+    },
+    {
+      "slug": "regular-expressions",
+      "label": "Regular Expressions"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "Selective Disclosure"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "security-layer",
+      "label": "SecurityLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

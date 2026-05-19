@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:9a07c4e53859c816dd0b59df20d1ab977cd74eeedfde9888651fa11932d39705",
+  "title": "Sparql Query Engine",
+  "slug": "sparql-query-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sparql-query-engine",
+  "domain": "spatial-computing",
+  "definition": "A processor implementing the SPARQL Protocol and RDF Query Language (W3C standard) for retrieving, manipulating, and joining data stored in Resource Description Framework graphs, enabling semantic web queries through pattern matching of subject-predicate-object triples with support for filtering, aggregation, and federated queries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:query-processor",
+      "label": "Query Processor"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:semantic-data-retrieval",
+        "label": "Semantic Data Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "semantic-data-retrieval",
+      "label": "Semantic Data Retrieval"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "query-processor",
+      "label": "Query Processor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ]
+}

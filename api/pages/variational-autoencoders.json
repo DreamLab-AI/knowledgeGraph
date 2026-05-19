@@ -1,0 +1,1380 @@
+{
+  "id": "urn:visionflow:page:fa328785412652ab98a5ac08e5f3a7779e397ce2cf01845ad31e5508798b5cda",
+  "title": "Variational Autoencoders",
+  "slug": "variational-autoencoders",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:variational-autoencoders",
+  "domain": "artificial-intelligence",
+  "definition": "Generative neural network architecture combining autoencoders with variational inference for probabilistic latent space modeling and data generation",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.93,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-convolutional-network",
+      "label": "3D Convolutional Network"
+    },
+    {
+      "slug": "active-units",
+      "label": "Active Units"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
+      "slug": "adam-w",
+      "label": "AdamW"
+    },
+    {
+      "slug": "adversarial-autoencoder",
+      "label": "Adversarial Autoencoder"
+    },
+    {
+      "slug": "alireza-makhzani",
+      "label": "Alireza Makhzani"
+    },
+    {
+      "slug": "alpha-fold",
+      "label": "AlphaFold"
+    },
+    {
+      "slug": "alpha-fold2",
+      "label": "AlphaFold2"
+    },
+    {
+      "slug": "amortized-inference",
+      "label": "Amortized Inference"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "ar",
+      "label": "AR"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "autonomous-robots",
+      "label": "Autonomous Robots"
+    },
+    {
+      "slug": "autoregressive",
+      "label": "Autoregressive"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "batch-normalization",
+      "label": "Batch Normalization"
+    },
+    {
+      "slug": "bayesian-optimization",
+      "label": "Bayesian Optimization"
+    },
+    {
+      "slug": "berkeley",
+      "label": "Berkeley"
+    },
+    {
+      "slug": "beta-vae",
+      "label": "Beta-VAE"
+    },
+    {
+      "slug": "bi-directional-lstm",
+      "label": "Bi-directional LSTM"
+    },
+    {
+      "slug": "binance-smart-chain",
+      "label": "Binance Smart Chain"
+    },
+    {
+      "slug": "binary-cross-entropy",
+      "label": "Binary Cross-Entropy"
+    },
+    {
+      "slug": "binding-affinity",
+      "label": "Binding Affinity"
+    },
+    {
+      "slug": "black-box-variational-inference",
+      "label": "Black Box Variational Inference"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "brain-scale-s",
+      "label": "BrainScaleS"
+    },
+    {
+      "slug": "celeb-a",
+      "label": "CelebA"
+    },
+    {
+      "slug": "ch-embl",
+      "label": "ChEMBL"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "chem-vae",
+      "label": "ChemVAE"
+    },
+    {
+      "slug": "cifar-10",
+      "label": "CIFAR-10"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "climate-modeling",
+      "label": "Climate Modeling"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "code-bert",
+      "label": "CodeBERT"
+    },
+    {
+      "slug": "code2-vec",
+      "label": "Code2Vec"
+    },
+    {
+      "slug": "conditional-vae",
+      "label": "Conditional VAE"
+    },
+    {
+      "slug": "context-free-grammar",
+      "label": "Context-Free Grammar"
+    },
+    {
+      "slug": "controller",
+      "label": "Controller"
+    },
+    {
+      "slug": "daan-wierstra",
+      "label": "Daan Wierstra"
+    },
+    {
+      "slug": "dall-e-2",
+      "label": "DALL-E 2"
+    },
+    {
+      "slug": "danilo-rezende",
+      "label": "Danilo Rezende"
+    },
+    {
+      "slug": "data-generation",
+      "label": "Data Generation"
+    },
+    {
+      "slug": "david-ha",
+      "label": "David Ha"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-novo-drug-design",
+      "label": "De Novo Drug Design"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "deep-chem",
+      "label": "DeepChem"
+    },
+    {
+      "slug": "deep-generative-models",
+      "label": "Deep Generative Models"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
+      "slug": "denoising-autoencoder",
+      "label": "Denoising Autoencoder"
+    },
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "slug": "diederik-p-kingma",
+      "label": "Diederik P. Kingma"
+    },
+    {
+      "slug": "diffusion-policy",
+      "label": "Diffusion Policy"
+    },
+    {
+      "slug": "disentangled-representation",
+      "label": "Disentangled Representation"
+    },
+    {
+      "slug": "disentangled-representations",
+      "label": "Disentangled Representations"
+    },
+    {
+      "slug": "downstream-tasks",
+      "label": "Downstream Tasks"
+    },
+    {
+      "slug": "dreamer",
+      "label": "Dreamer"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "efficient-net",
+      "label": "EfficientNet"
+    },
+    {
+      "slug": "electronic-health-record",
+      "label": "Electronic Health Record"
+    },
+    {
+      "slug": "elliptic",
+      "label": "Elliptic"
+    },
+    {
+      "slug": "encoder-network",
+      "label": "Encoder Network"
+    },
+    {
+      "slug": "euclidean-space",
+      "label": "Euclidean Space"
+    },
+    {
+      "slug": "event-camera",
+      "label": "Event Camera"
+    },
+    {
+      "slug": "evidence-lower-bound",
+      "label": "Evidence Lower Bound"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "face-generation",
+      "label": "Face Generation"
+    },
+    {
+      "slug": "fed-avg",
+      "label": "FedAvg"
+    },
+    {
+      "slug": "fed-prox",
+      "label": "FedProx"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "flash-loan",
+      "label": "Flash Loan"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "frechet-inception-distance",
+      "label": "Frechet Inception Distance"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "generative-query-network",
+      "label": "Generative Query Network"
+    },
+    {
+      "slug": "genetic-algorithms",
+      "label": "Genetic Algorithms"
+    },
+    {
+      "slug": "genomics",
+      "label": "Genomics"
+    },
+    {
+      "slug": "google-cirq",
+      "label": "Google Cirq"
+    },
+    {
+      "slug": "google-magenta",
+      "label": "Google Magenta"
+    },
+    {
+      "slug": "grammar-vae",
+      "label": "Grammar VAE"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "gretel-ai",
+      "label": "Gretel.ai"
+    },
+    {
+      "slug": "gru",
+      "label": "GRU"
+    },
+    {
+      "slug": "gumbel-softmax",
+      "label": "Gumbel-Softmax"
+    },
+    {
+      "slug": "hamiltonian-monte-carlo",
+      "label": "Hamiltonian Monte Carlo"
+    },
+    {
+      "slug": "handwritten-digit-generation",
+      "label": "Handwritten Digit Generation"
+    },
+    {
+      "slug": "hierarchical-vae",
+      "label": "Hierarchical VAE"
+    },
+    {
+      "slug": "hierarchical-vae",
+      "label": "Hierarchical VAE"
+    },
+    {
+      "slug": "hindsight-experience-replay",
+      "label": "Hindsight Experience Replay"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "ibm-qiskit",
+      "label": "IBM Qiskit"
+    },
+    {
+      "slug": "ibm-synthetic-data-generator",
+      "label": "IBM Synthetic Data Generator"
+    },
+    {
+      "slug": "ibm-true-north",
+      "label": "IBM TrueNorth"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
+      "slug": "implicit-neural-representation",
+      "label": "Implicit Neural Representation"
+    },
+    {
+      "slug": "importance-weighted-autoencoders",
+      "label": "Importance Weighted Autoencoders"
+    },
+    {
+      "slug": "inception-score",
+      "label": "Inception Score"
+    },
+    {
+      "slug": "inference-network",
+      "label": "Inference Network"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "intel-loihi",
+      "label": "Intel Loihi"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "intrinsic-motivation",
+      "label": "Intrinsic Motivation"
+    },
+    {
+      "slug": "intro-vae",
+      "label": "IntroVAE"
+    },
+    {
+      "slug": "io-t",
+      "label": "IoT"
+    },
+    {
+      "slug": "iron",
+      "label": "Iron"
+    },
+    {
+      "slug": "j-rgen-schmidhuber",
+      "label": "J\u00fcrgen Schmidhuber"
+    },
+    {
+      "slug": "jensen-s-inequality",
+      "label": "Jensen's Inequality"
+    },
+    {
+      "slug": "junction-tree-vae",
+      "label": "Junction Tree VAE"
+    },
+    {
+      "slug": "keras",
+      "label": "Keras"
+    },
+    {
+      "slug": "kl-annealing",
+      "label": "KL Annealing"
+    },
+    {
+      "slug": "kl-divergence",
+      "label": "KL Divergence"
+    },
+    {
+      "slug": "kullback-leibler-divergence",
+      "label": "Kullback-Leibler Divergence"
+    },
+    {
+      "slug": "ladder-vae",
+      "label": "Ladder VAE"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "latent-representation",
+      "label": "Latent Representation"
+    },
+    {
+      "slug": "latent-representations",
+      "label": "Latent Representations"
+    },
+    {
+      "slug": "latent-space-interpolation",
+      "label": "Latent Space Interpolation"
+    },
+    {
+      "slug": "latent-traversal",
+      "label": "Latent Traversal"
+    },
+    {
+      "slug": "latent-variable-collapse",
+      "label": "Latent Variable Collapse"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer 2"
+    },
+    {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
+    },
+    {
+      "slug": "leaky-integrate-and-fire",
+      "label": "Leaky Integrate-and-Fire"
+    },
+    {
+      "slug": "learning-rate-scheduling",
+      "label": "Learning Rate Scheduling"
+    },
+    {
+      "slug": "light-clients",
+      "label": "Light Clients"
+    },
+    {
+      "slug": "likelihood-model",
+      "label": "Likelihood Model"
+    },
+    {
+      "slug": "lipinski-s-rule-of-five",
+      "label": "Lipinski's Rule of Five"
+    },
+    {
+      "slug": "log-likelihood",
+      "label": "Log-Likelihood"
+    },
+    {
+      "slug": "lpips",
+      "label": "LPIPS"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
+      "slug": "manufacturing-defect-detection",
+      "label": "Manufacturing Defect Detection"
+    },
+    {
+      "slug": "masked-attention",
+      "label": "Masked Attention"
+    },
+    {
+      "slug": "materials-science",
+      "label": "Materials Science"
+    },
+    {
+      "slug": "matplotlib",
+      "label": "Matplotlib"
+    },
+    {
+      "slug": "max-welling",
+      "label": "Max Welling"
+    },
+    {
+      "slug": "mean-field-approximation",
+      "label": "Mean-Field Approximation"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "medical-diagnosis",
+      "label": "Medical Diagnosis"
+    },
+    {
+      "slug": "medical-image-synthesis",
+      "label": "Medical Image Synthesis"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "mode-collapse",
+      "label": "Mode Collapse"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "mol-gan",
+      "label": "MolGAN"
+    },
+    {
+      "slug": "molecular-optimization",
+      "label": "Molecular Optimization"
+    },
+    {
+      "slug": "molecular-property-prediction",
+      "label": "Molecular Property Prediction"
+    },
+    {
+      "slug": "monte-carlo",
+      "label": "Monte Carlo"
+    },
+    {
+      "slug": "monte-carlo-estimation",
+      "label": "Monte Carlo Estimation"
+    },
+    {
+      "slug": "moses",
+      "label": "Moses"
+    },
+    {
+      "slug": "mostly-ai",
+      "label": "Mostly AI"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "multi-objective-optimization",
+      "label": "Multi-Objective Optimization"
+    },
+    {
+      "slug": "multimodal-learning",
+      "label": "Multimodal Learning"
+    },
+    {
+      "slug": "multiple-importance-sampling",
+      "label": "Multiple Importance Sampling"
+    },
+    {
+      "slug": "music-vae",
+      "label": "Music VAE"
+    },
+    {
+      "slug": "music-vae",
+      "label": "MusicVAE"
+    },
+    {
+      "slug": "network-intrusion-detection",
+      "label": "Network Intrusion Detection"
+    },
+    {
+      "slug": "neural-machine-translation",
+      "label": "Neural Machine Translation"
+    },
+    {
+      "slug": "noisy-intermediate-scale-quantum",
+      "label": "Noisy Intermediate-Scale Quantum"
+    },
+    {
+      "slug": "normal-distribution",
+      "label": "Normal Distribution"
+    },
+    {
+      "slug": "normalizing-flows",
+      "label": "Normalizing Flows"
+    },
+    {
+      "slug": "nvae",
+      "label": "NVAE"
+    },
+    {
+      "slug": "nvidia-jetson",
+      "label": "NVIDIA Jetson"
+    },
+    {
+      "slug": "occupancy-networks",
+      "label": "Occupancy Networks"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
+    },
+    {
+      "slug": "on-chain-metrics",
+      "label": "On-Chain Metrics"
+    },
+    {
+      "slug": "onnx-runtime",
+      "label": "ONNX Runtime"
+    },
+    {
+      "slug": "open-ai-robotics",
+      "label": "OpenAI Robotics"
+    },
+    {
+      "slug": "options-framework",
+      "label": "Options Framework"
+    },
+    {
+      "slug": "outlier-detection",
+      "label": "Outlier Detection"
+    },
+    {
+      "slug": "paragraph-vae",
+      "label": "Paragraph VAE"
+    },
+    {
+      "slug": "parameter-shift-rule",
+      "label": "Parameter Shift Rule"
+    },
+    {
+      "slug": "parameterized-quantum-circuit",
+      "label": "Parameterized Quantum Circuit"
+    },
+    {
+      "slug": "pca",
+      "label": "PCA"
+    },
+    {
+      "slug": "penny-lane",
+      "label": "PennyLane"
+    },
+    {
+      "slug": "perceptual-path-length",
+      "label": "Perceptual Path Length"
+    },
+    {
+      "slug": "pla-net",
+      "label": "PlaNet"
+    },
+    {
+      "slug": "point-cloud-network",
+      "label": "Point Cloud Network"
+    },
+    {
+      "slug": "policy-search",
+      "label": "Policy Search"
+    },
+    {
+      "slug": "pooling-layers",
+      "label": "Pooling Layers"
+    },
+    {
+      "slug": "portfolio-management",
+      "label": "Portfolio Management"
+    },
+    {
+      "slug": "posterior-collapse",
+      "label": "Posterior Collapse"
+    },
+    {
+      "slug": "privacy-preserving",
+      "label": "Privacy-Preserving"
+    },
+    {
+      "slug": "probabilistic-modeling",
+      "label": "Probabilistic Modeling"
+    },
+    {
+      "slug": "probability-distribution",
+      "label": "Probability Distribution"
+    },
+    {
+      "slug": "progressive-growing",
+      "label": "Progressive Growing"
+    },
+    {
+      "slug": "pub-chem",
+      "label": "PubChem"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "quantum-circuit",
+      "label": "Quantum Circuit"
+    },
+    {
+      "slug": "quantum-error-correction",
+      "label": "Quantum Error Correction"
+    },
+    {
+      "slug": "quantum-gradient-estimation",
+      "label": "Quantum Gradient Estimation"
+    },
+    {
+      "slug": "qvae",
+      "label": "QVAE"
+    },
+    {
+      "slug": "random-network-distillation",
+      "label": "Random Network Distillation"
+    },
+    {
+      "slug": "ransomware",
+      "label": "Ransomware"
+    },
+    {
+      "slug": "raspberry-pi",
+      "label": "Raspberry Pi"
+    },
+    {
+      "slug": "rdkit",
+      "label": "RDKit"
+    },
+    {
+      "slug": "recognition-model",
+      "label": "Recognition Model"
+    },
+    {
+      "slug": "reentrancy-attack",
+      "label": "Reentrancy Attack"
+    },
+    {
+      "slug": "regularization",
+      "label": "Regularization"
+    },
+    {
+      "slug": "reparameterization-trick",
+      "label": "Reparameterization Trick"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "res-net",
+      "label": "ResNet"
+    },
+    {
+      "slug": "rnn",
+      "label": "RNN"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "ros2",
+      "label": "ROS2"
+    },
+    {
+      "slug": "ros2-humble",
+      "label": "ROS2 Humble"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "self-referenc-ing-embedded-strings",
+      "label": "SELF-referencIng Embedded Strings"
+    },
+    {
+      "slug": "selfies-vae",
+      "label": "SELFIES-VAE"
+    },
+    {
+      "slug": "semi-supervised-vae",
+      "label": "Semi-Supervised VAE"
+    },
+    {
+      "slug": "sentence-vae",
+      "label": "Sentence VAE"
+    },
+    {
+      "slug": "shakir-mohamed",
+      "label": "Shakir Mohamed"
+    },
+    {
+      "slug": "sigmoid",
+      "label": "Sigmoid"
+    },
+    {
+      "slug": "signed-distance-function",
+      "label": "Signed Distance Function"
+    },
+    {
+      "slug": "skip-connections",
+      "label": "Skip Connections"
+    },
+    {
+      "slug": "slac",
+      "label": "SLAC"
+    },
+    {
+      "slug": "smiles",
+      "label": "SMILES"
+    },
+    {
+      "slug": "snn-vae",
+      "label": "SNN-VAE"
+    },
+    {
+      "slug": "soft-intro-vae",
+      "label": "Soft-IntroVAE"
+    },
+    {
+      "slug": "softplus",
+      "label": "Softplus"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "solubility",
+      "label": "Solubility"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "spherical-interpolation",
+      "label": "Spherical Interpolation"
+    },
+    {
+      "slug": "spi-nnaker",
+      "label": "SpiNNaker"
+    },
+    {
+      "slug": "spike-timing-dependent-plasticity",
+      "label": "Spike-Timing-Dependent Plasticity"
+    },
+    {
+      "slug": "split-learning",
+      "label": "Split Learning"
+    },
+    {
+      "slug": "straight-through-estimator",
+      "label": "Straight-Through Estimator"
+    },
+    {
+      "slug": "style-gan",
+      "label": "StyleGAN"
+    },
+    {
+      "slug": "surrogate-gradient-learning",
+      "label": "Surrogate Gradient Learning"
+    },
+    {
+      "slug": "symbolic-execution",
+      "label": "Symbolic Execution"
+    },
+    {
+      "slug": "t-sne",
+      "label": "t-SNE"
+    },
+    {
+      "slug": "tanh",
+      "label": "Tanh"
+    },
+    {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "tensor-flow-quantum",
+      "label": "TensorFlow Quantum"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
+    },
+    {
+      "slug": "text-style-transfer",
+      "label": "Text Style Transfer"
+    },
+    {
+      "slug": "text-to-image-synthesis",
+      "label": "Text-to-Image Synthesis"
+    },
+    {
+      "slug": "texture-synthesis",
+      "label": "Texture Synthesis"
+    },
+    {
+      "slug": "toxicity",
+      "label": "Toxicity"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "transformer-decoders",
+      "label": "Transformer Decoders"
+    },
+    {
+      "slug": "transformer-models",
+      "label": "Transformer Models"
+    },
+    {
+      "slug": "transposed-convolution",
+      "label": "Transposed Convolution"
+    },
+    {
+      "slug": "upsampling",
+      "label": "Upsampling"
+    },
+    {
+      "slug": "vae-gan",
+      "label": "VAE-GAN"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "vector-quantization",
+      "label": "Vector Quantization"
+    },
+    {
+      "slug": "very-deep-vae",
+      "label": "Very Deep VAE"
+    },
+    {
+      "slug": "vgg-network",
+      "label": "VGG Network"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "virtual-try-on",
+      "label": "Virtual Try-On"
+    },
+    {
+      "slug": "vision-language-models",
+      "label": "Vision-Language Models"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "visual-servoing",
+      "label": "Visual Servoing"
+    },
+    {
+      "slug": "von-mises-fisher-distribution",
+      "label": "Von Mises-Fisher Distribution"
+    },
+    {
+      "slug": "vq-vae",
+      "label": "VQ-VAE"
+    },
+    {
+      "slug": "vqc",
+      "label": "VQC"
+    },
+    {
+      "slug": "vr",
+      "label": "VR"
+    },
+    {
+      "slug": "wasserstein-distance",
+      "label": "Wasserstein Distance"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
+    },
+    {
+      "slug": "xr",
+      "label": "XR"
+    },
+    {
+      "slug": "zinc",
+      "label": "ZINC"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "ZK-SNARK"
+    },
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL-E"
+    },
+    {
+      "slug": "decoder",
+      "label": "Decoder"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "gradient-clipping",
+      "label": "Gradient Clipping"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-to-image-translation",
+      "label": "Image to Image Translation"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "latent-space",
+      "label": "latent space"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "label": "Semi-Supervised Learning"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "multimodal",
+      "label": "multimodal"
+    }
+  ]
+}

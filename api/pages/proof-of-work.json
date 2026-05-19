@@ -1,0 +1,764 @@
+{
+  "id": "urn:visionflow:page:d225ad7c394ee571f6c78f1f8208027af3783705dbc70032fed6866e3c256a08",
+  "title": "Proof Of Work",
+  "slug": "proof-of-work",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proof-of-work",
+  "domain": "blockchain",
+  "definition": "[[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consensus-protocol",
+      "label": "ConsensusProtocol"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "51-attacks",
+      "label": "51% attacks"
+    },
+    {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "back-a-2002",
+      "label": "Back, A. (2002)"
+    },
+    {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
+    },
+    {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "block-hash",
+      "label": "block hash"
+    },
+    {
+      "slug": "block-reward-mining-incentive",
+      "label": "Block Reward (Mining Incentive)"
+    },
+    {
+      "slug": "block-reward-mining-incentive",
+      "label": "Block Reward (Mining Incentive)"
+    },
+    {
+      "slug": "block-reward-mining-incentive",
+      "label": "Block Reward (Mining Incentive)"
+    },
+    {
+      "slug": "block-size-limits",
+      "label": "Block size limits"
+    },
+    {
+      "slug": "blockchain-technology-laboratory",
+      "label": "Blockchain Technology Laboratory"
+    },
+    {
+      "slug": "bonneau-j-miller-a-clark-j-narayanan-a-kroll-j-a-and-felten-e-w-2015",
+      "label": "Bonneau, J., Miller, A., Clark, J., Narayanan, A., Kroll, J. A., & Felten, E. W. (2015)"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance-2019-2025",
+      "label": "Cambridge Centre for Alternative Finance (2019-2025)"
+    },
+    {
+      "slug": "canaan",
+      "label": "Canaan"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "carbon credits"
+    },
+    {
+      "slug": "chain-split",
+      "label": "chain split"
+    },
+    {
+      "slug": "chia",
+      "label": "Chia"
+    },
+    {
+      "slug": "clean-spark",
+      "label": "CleanSpark"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "computational-puzzle",
+      "label": "Computational puzzle"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "consensus mechanisms"
+    },
+    {
+      "slug": "cryptographic-puzzles",
+      "label": "cryptographic puzzles"
+    },
+    {
+      "slug": "cynthia-dwork",
+      "label": "Cynthia Dwork"
+    },
+    {
+      "slug": "dame-tax",
+      "label": "DAME tax"
+    },
+    {
+      "slug": "de-vries-a-2018-2025",
+      "label": "de Vries, A. (2018-2025)"
+    },
+    {
+      "slug": "decentralized-trust",
+      "label": "decentralized trust"
+    },
+    {
+      "slug": "deflationary-tokenomics",
+      "label": "Deflationary tokenomics"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "distributed consensus"
+    },
+    {
+      "slug": "distributed-ledger-technologies",
+      "label": "distributed ledger technologies"
+    },
+    {
+      "slug": "dwork-c-and-naor-m-1993",
+      "label": "Dwork, C., & Naor, M. (1993)"
+    },
+    {
+      "slug": "eip-1559",
+      "label": "EIP-1559"
+    },
+    {
+      "slug": "electricity",
+      "label": "electricity"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "energy consumption"
+    },
+    {
+      "slug": "energy-requirements",
+      "label": "energy requirements"
+    },
+    {
+      "slug": "environmental-impact",
+      "label": "Environmental impact"
+    },
+    {
+      "slug": "ethash",
+      "label": "Ethash"
+    },
+    {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "evaporative-cooling",
+      "label": "Evaporative cooling"
+    },
+    {
+      "slug": "eyal-i-and-sirer-e-g-2014",
+      "label": "Eyal, I., & Sirer, E. G. (2014)"
+    },
+    {
+      "slug": "f2-pool",
+      "label": "F2Pool"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "financial-conduct-authority-fca",
+      "label": "Financial Conduct Authority (FCA)"
+    },
+    {
+      "slug": "fossil-fuel-peaker-plants",
+      "label": "fossil fuel peaker plants"
+    },
+    {
+      "slug": "foundry-usa",
+      "label": "Foundry USA"
+    },
+    {
+      "slug": "gallersd-rfer-u-klaa-en-l-and-stoll-c-2020",
+      "label": "Gallersd\u00f6rfer, U., Klaa\u00dfen, L., & Stoll, C. (2020)"
+    },
+    {
+      "slug": "geographic-centralization",
+      "label": "Geographic centralization"
+    },
+    {
+      "slug": "geographic-distribution",
+      "label": "geographic distribution"
+    },
+    {
+      "slug": "gervais-a-et-al-2016",
+      "label": "Gervais, A., et al. (2016)"
+    },
+    {
+      "slug": "halving-events",
+      "label": "halving events"
+    },
+    {
+      "slug": "hardware-costs",
+      "label": "hardware costs"
+    },
+    {
+      "slug": "hashcash",
+      "label": "Hashcash"
+    },
+    {
+      "slug": "hashprice",
+      "label": "hashprice"
+    },
+    {
+      "slug": "hut-8-mining",
+      "label": "Hut 8 Mining"
+    },
+    {
+      "slug": "hybrid-consensus-mechanisms",
+      "label": "hybrid consensus mechanisms"
+    },
+    {
+      "slug": "hydroelectric-power",
+      "label": "Hydroelectric power"
+    },
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "immersion-cooling",
+      "label": "Immersion cooling"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "internet-connectivity",
+      "label": "internet connectivity"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "lido",
+      "label": "Lido"
+    },
+    {
+      "slug": "lindy-effect",
+      "label": "Lindy effect"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "marathon-digital-holdings",
+      "label": "Marathon Digital Holdings"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "micro-bt",
+      "label": "MicroBT"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "moni-naor",
+      "label": "Moni Naor"
+    },
+    {
+      "slug": "nakamoto-s-2008",
+      "label": "Nakamoto, S. (2008)"
+    },
+    {
+      "slug": "network-security",
+      "label": "network security"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "opportunity-cost-of-capital",
+      "label": "Opportunity cost of capital"
+    },
+    {
+      "slug": "pm2-5-pollution",
+      "label": "PM2.5 pollution"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "proof-of-spacetime",
+      "label": "Proof-of-spacetime"
+    },
+    {
+      "slug": "proof-of-useful-work",
+      "label": "Proof-of-useful-work"
+    },
+    {
+      "slug": "random-x",
+      "label": "RandomX"
+    },
+    {
+      "slug": "riot-platforms",
+      "label": "Riot Platforms"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "scrypt",
+      "label": "Scrypt"
+    },
+    {
+      "slug": "slashing-risk",
+      "label": "slashing risk"
+    },
+    {
+      "slug": "sleep-deprivation",
+      "label": "Sleep deprivation"
+    },
+    {
+      "slug": "solar-power",
+      "label": "solar power"
+    },
+    {
+      "slug": "the-merge",
+      "label": "The Merge"
+    },
+    {
+      "slug": "thermodynamic-security",
+      "label": "Thermodynamic security"
+    },
+    {
+      "slug": "transaction-fees",
+      "label": "transaction fees"
+    },
+    {
+      "slug": "transaction-history",
+      "label": "transaction history"
+    },
+    {
+      "slug": "transaction-throughput",
+      "label": "transaction throughput"
+    },
+    {
+      "slug": "transactions",
+      "label": "transactions"
+    },
+    {
+      "slug": "university-college-london-ucl",
+      "label": "University College London (UCL)"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "via-btc",
+      "label": "ViaBTC"
+    },
+    {
+      "slug": "wind-energy",
+      "label": "wind energy"
+    },
+    {
+      "slug": "51-attack",
+      "label": "51% attack"
+    },
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "block-time",
+      "label": "block time"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain-scalability",
+      "label": "blockchain scalability"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine fault tolerance"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "consensus mechanism"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "ConsensusProtocol"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "CryptographicHash"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "CryptographicHash"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "CryptographicHash"
+    },
+    {
+      "slug": "decentralization",
+      "label": "decentralization"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "difficulty adjustment"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "Difficulty Adjustment"
+    },
+    {
+      "slug": "difficulty-target",
+      "label": "difficulty target"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "distributed ledger"
+    },
+    {
+      "slug": "double-spending",
+      "label": "double-spending"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double Spending"
+    },
+    {
+      "slug": "economic-security",
+      "label": "Economic security"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "halving",
+      "label": "halving"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "immutability",
+      "label": "immutability"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "network-hash-rate",
+      "label": "Network Hash Rate"
+    },
+    {
+      "slug": "network-hash-rate",
+      "label": "Network Hash Rate"
+    },
+    {
+      "slug": "network-hash-rate",
+      "label": "Network Hash Rate"
+    },
+    {
+      "slug": "nonce",
+      "label": "nonce"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum computing"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "security",
+      "label": "security"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-sustainability",
+      "label": "Blockchain Sustainability"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

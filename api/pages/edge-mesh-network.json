@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:36c457fdb4f403f42b7cdd31f97a53577d2b29bea1a908b4ee27c85422a4771e",
+  "title": "Edge Mesh Network",
+  "slug": "edge-mesh-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:edge-mesh-network",
+  "domain": "spatial-computing",
+  "definition": "Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:failover-mechanism",
+        "label": "Failover Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-router",
+        "label": "Mesh Router"
+      },
+      {
+        "id": "urn:visionflow:linked:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:distributed-coordination-protocol",
+        "label": "Distributed Coordination Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:visionflow:linked:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralized-computation",
+        "label": "Decentralized Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-load-balancing",
+        "label": "Dynamic Load Balancing"
+      },
+      {
+        "id": "urn:visionflow:linked:redundant-processing",
+        "label": "Redundant Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralized-computation",
+      "label": "Decentralized Computation"
+    },
+    {
+      "slug": "distributed-coordination-protocol",
+      "label": "Distributed Coordination Protocol"
+    },
+    {
+      "slug": "dynamic-load-balancing",
+      "label": "Dynamic Load Balancing"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "failover-mechanism",
+      "label": "Failover Mechanism"
+    },
+    {
+      "slug": "ieee-p2048-3",
+      "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "mesh-router",
+      "label": "Mesh Router"
+    },
+    {
+      "slug": "network-connectivity",
+      "label": "Network Connectivity"
+    },
+    {
+      "slug": "redundant-processing",
+      "label": "Redundant Processing"
+    },
+    {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
+    },
+    {
+      "slug": "service-discovery",
+      "label": "Service Discovery"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    }
+  ]
+}

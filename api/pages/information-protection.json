@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:ad5aaea27b4c37cd6070dc1dbcba36736e4c7a29ba5b4feab22defd957e69bd8",
+  "title": "Information Protection",
+  "slug": "information-protection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:information-protection",
+  "domain": "blockchain",
+  "definition": "Information Protection is a concept within the blockchain domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

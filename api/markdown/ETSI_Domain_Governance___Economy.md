@@ -1,21 +1,312 @@
-iri:: http://narrativegoldmine.com/metaverse#ETSIDomainGovernanceEconomy
-uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernanceeconomy
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernanceeconomy
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: ETSI_Domain_Governance___Economy
-content-hash:: sha256-12-f671173d9cd1
-legacy-term-id:: MV-3057
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ETSIDomainGovernanceEconomy
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernanceeconomy
 public:: true
+
+# ETSI_Domain_Governance___Economy
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7475b60ad99555d142b4a05b08e6dabe7faa71c988975a49d9f9a3fabb10c81d",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-governance-economy",
+  "title": "ETSI_Domain_Governance___Economy",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:economic-oversight",
+      "vc:label": "Economic Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-policy",
+      "vc:label": "Economic Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi",
+      "vc:label": "ETSI"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-mec-032",
+      "vc:label": "ETSI GR MEC 032"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-pdl-030",
+      "vc:label": "ETSI GR PDL 030"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-pdl-034",
+      "vc:label": "ETSI GR PDL 034"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-governance",
+      "vc:label": "Financial Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-frameworks",
+      "vc:label": "Governance Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-23257",
+      "vc:label": "ISO 23257"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-supervision",
+      "vc:label": "Market Supervision"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-standards-forum",
+      "vc:label": "Metaverse Standards Forum"
+    },
+    {
+      "@id": "urn:visionflow:linked:monetary-policy",
+      "vc:label": "Monetary Policy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asset-management",
+      "vc:label": "Asset Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f671173d9cd1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ETSIDomainGovernanceEconomy"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3057"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaingovernanceeconomy"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaingovernanceeconomy"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7475b60ad99555d142b4a05b08e6dabe7faa71c988975a49d9f9a3fabb10c81d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-governance-economy",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Governance___Economy",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7475b60ad99555d142b4a05b08e6dabe7faa71c988975a49d9f9a3fabb10c81d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7475b60ad99555d142b4a05b08e6dabe7faa71c988975a49d9f9a3fabb10c81d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These [[Governance Frameworks]] integrate [[Monetary Policy]], [[Market Supervision]], and [[Economic Oversight]] to ensure stable financial operations.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-governance-economy:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7475b60ad99555d142b4a05b08e6dabe7faa71c988975a49d9f9a3fabb10c81d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Economic Oversight]]",
+      "resolved": "urn:visionflow:linked:economic-oversight",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Economic Policy]]",
+      "resolved": "urn:visionflow:linked:economic-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI]]",
+      "resolved": "urn:visionflow:linked:etsi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR MEC 032]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR PDL 030]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-pdl-030",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR PDL 034]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-pdl-034",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Governance]]",
+      "resolved": "urn:visionflow:linked:financial-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance Frameworks]]",
+      "resolved": "urn:visionflow:linked:governance-frameworks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 23257]]",
+      "resolved": "urn:visionflow:linked:iso-23257",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Supervision]]",
+      "resolved": "urn:visionflow:linked:market-supervision",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Standards Forum]]",
+      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monetary Policy]]",
+      "resolved": "urn:visionflow:linked:monetary-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Management]]",
+      "resolved": "urn:visionflow:owl:class:asset-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7475b60ad99555d142b4a05b08e6dabe7faa71c988975a49d9f9a3fabb10c81d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These [[Governance Frameworks]] integrate [[Monetary Policy]], [[Market Supervision]], and [[Economic Oversight]] to ensure stable financial operations.

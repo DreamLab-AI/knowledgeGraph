@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:d68ba4d2686b2d134dde964f730166f862995b69c6caca446377d3b030d3c75a",
+  "title": "Helpfulness",
+  "slug": "helpfulness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:helpfulness",
+  "domain": "artificial-intelligence",
+  "definition": "An alignment objective ensuring AI systems provide useful, relevant, and informative responses to user queries. Helpfulness represents a key dimension of AI utility that must be balanced against harmlessness and honesty.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "must",
+      "label": "MUST"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

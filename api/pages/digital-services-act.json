@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:68d0f276b1ef06088ebec87ec36a8b808717e5bc814579ee91224d23f5573082",
+  "title": "Digital Services Act",
+  "slug": "digital-services-act",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-services-act",
+  "domain": "artificial-intelligence",
+  "definition": "A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and virtual world governance. bridges-to:: [[Telecollaboration]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-regulation",
+      "label": "Digital Regulation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:compliance-systems",
+        "label": "Compliance Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:moderation-infrastructure",
+        "label": "Moderation Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:reporting-mechanisms",
+        "label": "Reporting Mechanisms"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-transparency",
+        "label": "Content Transparency"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-accountability",
+        "label": "Platform Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:user-protection",
+        "label": "User Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance-systems",
+      "label": "Compliance Systems"
+    },
+    {
+      "slug": "content-transparency",
+      "label": "Content Transparency"
+    },
+    {
+      "slug": "moderation-infrastructure",
+      "label": "Moderation Infrastructure"
+    },
+    {
+      "slug": "platform-accountability",
+      "label": "Platform Accountability"
+    },
+    {
+      "slug": "reporting-mechanisms",
+      "label": "Reporting Mechanisms"
+    },
+    {
+      "slug": "user-protection",
+      "label": "User Protection"
+    },
+    {
+      "slug": "digital-regulation",
+      "label": "Digital Regulation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

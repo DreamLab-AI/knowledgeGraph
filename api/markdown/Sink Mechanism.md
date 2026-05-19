@@ -1,20 +1,221 @@
-iri:: http://narrativegoldmine.com/blockchain#SinkMechanism
-uri:: urn:visionclaw:concept:blockchain:sink-mechanism
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:sink-mechanism
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Sink Mechanism
-content-hash:: sha256-12-ef640a3861f2
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#SinkMechanism
+legacy_uri:: urn:visionclaw:concept:blockchain:sink-mechanism
 public:: true
+
+# Sink Mechanism
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03",
+  "@type": "Page",
+  "vc:slug": "sink-mechanism",
+  "title": "Sink Mechanism",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:economic-balance",
+      "vc:label": "Economic Balance"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-economy",
+      "vc:label": "Game Economy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tokenomics",
+      "vc:label": "Tokenomics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-currency",
+      "vc:label": "Virtual Currency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ef640a3861f2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#SinkMechanism"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Sink Mechanism"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:sink-mechanism"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:sink-mechanism"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:sink-mechanism",
+  "@type": "OntologyClass",
+  "label": "Sink Mechanism",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Sink Mechanism is a concept within the bc domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:sink-mechanism:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Economic Balance]]",
+      "resolved": "urn:visionflow:linked:economic-balance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Game Economy]]",
+      "resolved": "urn:visionflow:linked:game-economy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Tokenomics]]",
+      "resolved": "urn:visionflow:owl:class:tokenomics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Currency]]",
+      "resolved": "urn:visionflow:owl:class:virtual-currency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Economy]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Sink Mechanism is a concept within the bc domain.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:f3e40ba2adf87227c3fa7099214a718653e80dd15a6a600d6f6aecb093cf214d",
+  "title": "Nominated Proof of Stake",
+  "slug": "nominated-proof-of-stake",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nominated-proof-of-stake",
+  "domain": "blockchain",
+  "definition": "A PoS variant where token holders nominate validators for block creation, with elected validators producing blocks while nominators share rewards and slashing risks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:2a4952a718e74f04a4128d99a9caf30608d355a33113e02f7c9e490176a42971",
+  "title": "Smart Contract Coordination",
+  "slug": "smart-contract-coordination",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:smart-contract-coordination",
+  "domain": "distributed-collaboration",
+  "definition": "\"The use of blockchain smart contracts\u2014self-executing programs stored on distributed ledgers\u2014to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-250-blockchain-collaboration",
+      "label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "slug": "tele-253-cryptocurrency-remuneration",
+      "label": "TELE-253-cryptocurrency-remuneration"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "SmartContracts"
+    }
+  ],
+  "backlinks": []
+}

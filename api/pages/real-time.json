@@ -1,0 +1,576 @@
+{
+  "id": "urn:visionflow:page:860f9c277088b13df8dd9cde238b20d361cfaca439c5520d69baa95a3906e36a",
+  "title": "Real Time",
+  "slug": "real-time",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time",
+  "domain": "computer-science",
+  "definition": "Real-Time Computing is the discipline of designing computing systems, operating environments, and algorithmic frameworks in which program correctness depends not only on the logical result of computation but also on the time at which those results are produced, enforcing temporal constraints \u2014 deadlines, periods, jitter bounds \u2014 as first-class correctness conditions alongside functional specifications. A real-time system fails not merely when it produces wrong output but equally when it produces correct output too late: deadline violations in a cardiac pacemaker controller, engine control unit, fly-by-wire flight surface actuator, or nuclear plant safety monitor are catastrophic, making temporal determinism as safety-critical as logical correctness. The field partitions constraints into three canonical tiers established by Buttazzo (1st ed. 1997, 4th ed. 2024): hard real-time where any deadline miss constitutes total system failure (utility function drops discontinuously to \u2212\u221e at deadline d; aeroengine FADEC, autonomous-vehicle AEB), firm real-time where late results have zero value but do not cause system failure (multimedia frame rendering, industrial batch reporting), and soft r",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:cyber-physical-systems",
+      "label": "Cyber Physical Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:operating-systems",
+      "label": "Operating Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:safety-critical-systems",
+      "label": "Safety Critical Systems"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:deadline",
+        "label": "Deadline"
+      },
+      {
+        "id": "urn:visionflow:linked:interrupt-handler",
+        "label": "Interrupt Handler"
+      },
+      {
+        "id": "urn:visionflow:linked:priority-ceiling-protocol",
+        "label": "Priority Ceiling Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:rtos",
+        "label": "RTOS"
+      },
+      {
+        "id": "urn:visionflow:linked:scheduler",
+        "label": "Scheduler"
+      },
+      {
+        "id": "urn:visionflow:linked:task",
+        "label": "Task"
+      },
+      {
+        "id": "urn:visionflow:linked:timer",
+        "label": "Timer"
+      },
+      {
+        "id": "urn:visionflow:linked:wcet-analysis",
+        "label": "WCET Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:determinism",
+        "label": "Determinism"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:priority-inheritance",
+        "label": "Priority Inheritance"
+      },
+      {
+        "id": "urn:visionflow:linked:schedulability-analysis",
+        "label": "Schedulability Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-correctness",
+        "label": "Temporal Correctness"
+      },
+      {
+        "id": "urn:visionflow:linked:wcet-bound",
+        "label": "WCET Bound"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automotive-control",
+        "label": "Automotive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:avionics",
+        "label": "Avionics"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-real-time",
+        "label": "Distributed Real-Time"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-critical-computing",
+        "label": "Safety Critical Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:constant-bandwidth-server",
+        "label": "Constant Bandwidth Server"
+      },
+      {
+        "id": "urn:visionflow:linked:earliest-deadline-first",
+        "label": "Earliest Deadline First"
+      },
+      {
+        "id": "urn:visionflow:linked:hierarchical-scheduling",
+        "label": "Hierarchical Scheduling"
+      },
+      {
+        "id": "urn:visionflow:linked:priority-ceiling-protocol",
+        "label": "Priority Ceiling Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:priority-inheritance-protocol",
+        "label": "Priority Inheritance Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:rate-monotonic-algorithm",
+        "label": "Rate Monotonic Algorithm"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abeni-and-buttazzo-1998-constant-bandwidth-server",
+      "label": "Abeni and Buttazzo 1998 Constant Bandwidth Server"
+    },
+    {
+      "slug": "audsley-et-al-1993-static-priority-scheduling",
+      "label": "Audsley et al 1993 Static Priority Scheduling"
+    },
+    {
+      "slug": "automotive-control",
+      "label": "Automotive Control"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "avionics",
+      "label": "Avionics"
+    },
+    {
+      "slug": "baker-1991-stack-resource-policy",
+      "label": "Baker 1991 Stack Resource Policy"
+    },
+    {
+      "slug": "baruah-et-al-2012-multiprocessor-schedulability",
+      "label": "Baruah et al 2012 Multiprocessor Schedulability"
+    },
+    {
+      "slug": "best-effort-networking",
+      "label": "Best Effort Networking"
+    },
+    {
+      "slug": "burns-and-davis-2022-mixed-criticality-survey-acm",
+      "label": "Burns and Davis 2022 Mixed Criticality Survey ACM"
+    },
+    {
+      "slug": "burns-and-wellings-2022-real-time-systems-5th-ed",
+      "label": "Burns and Wellings 2022 Real-Time Systems 5th ed"
+    },
+    {
+      "slug": "buttazzo-2024-hard-real-time-computing-systems-4th-ed",
+      "label": "Buttazzo 2024 Hard Real-Time Computing Systems 4th ed"
+    },
+    {
+      "slug": "computer-science-domain",
+      "label": "ComputerScienceDomain"
+    },
+    {
+      "slug": "constant-bandwidth-server",
+      "label": "Constant Bandwidth Server"
+    },
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "corbet-et-al-2024-preempt-rt-linux-6-12",
+      "label": "Corbet et al 2024 PREEMPT_RT Linux 6.12"
+    },
+    {
+      "slug": "cyber-physical-systems",
+      "label": "Cyber Physical Systems"
+    },
+    {
+      "slug": "davis-and-burns-2011-multiprocessor-real-time-survey-acm",
+      "label": "Davis and Burns 2011 Multiprocessor Real-Time Survey ACM"
+    },
+    {
+      "slug": "davis-and-cucu-grosjean-2019-probabilistic-timing-analysis",
+      "label": "Davis and Cucu-Grosjean 2019 Probabilistic Timing Analysis"
+    },
+    {
+      "slug": "dds",
+      "label": "DDS"
+    },
+    {
+      "slug": "deadline",
+      "label": "Deadline"
+    },
+    {
+      "slug": "determinism",
+      "label": "Determinism"
+    },
+    {
+      "slug": "distributed-real-time",
+      "label": "Distributed Real-Time"
+    },
+    {
+      "slug": "do-178-c",
+      "label": "DO-178C"
+    },
+    {
+      "slug": "earliest-deadline-first",
+      "label": "Earliest Deadline First"
+    },
+    {
+      "slug": "elisa-project-safety-preempt-rt-linux-2024",
+      "label": "ELISA Project Safety PREEMPT_RT Linux 2024"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "EmbeddedSystemsDomain"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "free-rtos",
+      "label": "FreeRTOS"
+    },
+    {
+      "slug": "free-rtos-reference-manual-v11-0-aws-2024",
+      "label": "FreeRTOS Reference Manual v11.0 AWS 2024"
+    },
+    {
+      "slug": "garbage-collected-runtimes",
+      "label": "Garbage Collected Runtimes"
+    },
+    {
+      "slug": "general-purpose-operating-systems",
+      "label": "General Purpose Operating Systems"
+    },
+    {
+      "slug": "hardware-abstraction-layer",
+      "label": "Hardware Abstraction Layer"
+    },
+    {
+      "slug": "hardware-timing-models",
+      "label": "Hardware Timing Models"
+    },
+    {
+      "slug": "heckmann-et-al-2003-processor-architecture-wcet-ieee",
+      "label": "Heckmann et al 2003 Processor Architecture WCET IEEE"
+    },
+    {
+      "slug": "hierarchical-scheduling",
+      "label": "Hierarchical Scheduling"
+    },
+    {
+      "slug": "iec-61508",
+      "label": "IEC 61508"
+    },
+    {
+      "slug": "iec-ieee-60802-2024-tsn-industrial-automation",
+      "label": "IEC IEEE 60802 2024 TSN Industrial Automation"
+    },
+    {
+      "slug": "ieee-1588",
+      "label": "IEEE 1588"
+    },
+    {
+      "slug": "ieee-1588-2019-precision-time-protocol",
+      "label": "IEEE 1588-2019 Precision Time Protocol"
+    },
+    {
+      "slug": "ieee-1588-ptp",
+      "label": "IEEE 1588 PTP"
+    },
+    {
+      "slug": "ieee-802-1-qbv-2015-time-aware-shaper",
+      "label": "IEEE 802.1Qbv-2015 Time-Aware Shaper"
+    },
+    {
+      "slug": "ieee-802-1-tsn",
+      "label": "IEEE 802.1 TSN"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "industrial-io-t",
+      "label": "Industrial IoT"
+    },
+    {
+      "slug": "interrupt-handler",
+      "label": "Interrupt Handler"
+    },
+    {
+      "slug": "iso-26262",
+      "label": "ISO 26262"
+    },
+    {
+      "slug": "joseph-and-pandya-1986-response-times",
+      "label": "Joseph and Pandya 1986 Response Times"
+    },
+    {
+      "slug": "leung-and-whitehead-1982-deadline-monotonic",
+      "label": "Leung and Whitehead 1982 Deadline Monotonic"
+    },
+    {
+      "slug": "liu-and-layland-1973-scheduling-algorithms-jacm",
+      "label": "Liu and Layland 1973 Scheduling Algorithms JACM"
+    },
+    {
+      "slug": "luk-et-al-2024-fpga-neural-inference-fpl-imperial",
+      "label": "Luk et al 2024 FPGA Neural Inference FPL Imperial"
+    },
+    {
+      "slug": "macenski-et-al-2022-ros-2-science-robotics",
+      "label": "Macenski et al 2022 ROS 2 Science Robotics"
+    },
+    {
+      "slug": "medical-devices",
+      "label": "Medical Devices"
+    },
+    {
+      "slug": "omg-dds-specification",
+      "label": "OMG DDS Specification"
+    },
+    {
+      "slug": "omg-dds-specification-v1-4",
+      "label": "OMG DDS Specification v1.4"
+    },
+    {
+      "slug": "operating-system-layer",
+      "label": "OperatingSystemLayer"
+    },
+    {
+      "slug": "operating-systems",
+      "label": "Operating Systems"
+    },
+    {
+      "slug": "posix",
+      "label": "POSIX"
+    },
+    {
+      "slug": "posix-1003-1b",
+      "label": "POSIX 1003.1b"
+    },
+    {
+      "slug": "priority-ceiling-protocol",
+      "label": "Priority Ceiling Protocol"
+    },
+    {
+      "slug": "priority-inheritance",
+      "label": "Priority Inheritance"
+    },
+    {
+      "slug": "priority-inheritance-protocol",
+      "label": "Priority Inheritance Protocol"
+    },
+    {
+      "slug": "qnx",
+      "label": "QNX"
+    },
+    {
+      "slug": "rate-monotonic-algorithm",
+      "label": "Rate Monotonic Algorithm"
+    },
+    {
+      "slug": "real-time-ai-inference",
+      "label": "Real-Time AI Inference"
+    },
+    {
+      "slug": "ros-2",
+      "label": "ROS 2"
+    },
+    {
+      "slug": "ros-2-jazzy-real-time-programming-guide-2024",
+      "label": "ROS 2 Jazzy Real-Time Programming Guide 2024"
+    },
+    {
+      "slug": "rtos",
+      "label": "RTOS"
+    },
+    {
+      "slug": "safety-critical-computing",
+      "label": "Safety Critical Computing"
+    },
+    {
+      "slug": "safety-critical-domain",
+      "label": "SafetyCriticalDomain"
+    },
+    {
+      "slug": "safety-critical-systems",
+      "label": "Safety Critical Systems"
+    },
+    {
+      "slug": "schedulability-analysis",
+      "label": "Schedulability Analysis"
+    },
+    {
+      "slug": "scheduler",
+      "label": "Scheduler"
+    },
+    {
+      "slug": "scheduling-theory",
+      "label": "Scheduling Theory"
+    },
+    {
+      "slug": "sha-rajkumar-lehoczky-1990-priority-inheritance-protocols",
+      "label": "Sha Rajkumar Lehoczky 1990 Priority Inheritance Protocols"
+    },
+    {
+      "slug": "task",
+      "label": "Task"
+    },
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "slug": "temporal-correctness",
+      "label": "Temporal Correctness"
+    },
+    {
+      "slug": "time-sensitive-networking",
+      "label": "Time-Sensitive Networking"
+    },
+    {
+      "slug": "timer",
+      "label": "Timer"
+    },
+    {
+      "slug": "tsn",
+      "label": "TSN"
+    },
+    {
+      "slug": "vestal-2007-mixed-criticality-systems",
+      "label": "Vestal 2007 Mixed Criticality Systems"
+    },
+    {
+      "slug": "vx-works",
+      "label": "VxWorks"
+    },
+    {
+      "slug": "vx-works-24-03-product-brief-wind-river",
+      "label": "VxWorks 24.03 Product Brief Wind River"
+    },
+    {
+      "slug": "wcet-analysis",
+      "label": "WCET Analysis"
+    },
+    {
+      "slug": "wcet-bound",
+      "label": "WCET Bound"
+    },
+    {
+      "slug": "wilhelm-et-al-2008-wcet-overview-acm-tecs",
+      "label": "Wilhelm et al 2008 WCET Overview ACM TECS"
+    },
+    {
+      "slug": "zephyr",
+      "label": "Zephyr"
+    },
+    {
+      "slug": "zephyr-rtos-documentation-v3-7-linux-foundation-2024",
+      "label": "Zephyr RTOS Documentation v3.7 Linux Foundation 2024"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "batch-processing",
+      "label": "Batch Processing"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "fpga",
+      "label": "FPGA"
+    },
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "NetworkingLayer"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ]
+}

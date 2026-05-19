@@ -1,0 +1,257 @@
+{
+  "id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87",
+  "title": "Human Robot Interaction",
+  "slug": "human-robot-interaction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-robot-interaction",
+  "domain": "robotics",
+  "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces. HRI combines [[RoboticsEngineering|robotics]], [[ArtificialIntelligence|AI]], human factors engineering, and psychology to design robots with natural interaction modalities\u2014gesture recognition, [[NaturalLanguageProcessing]], [[HapticFeedback]]\u2014enabling intuitive collaboration. Applications span [[ManipulatorArm|collaborative manipulation]], [[SafetyMetrics|safety-assured]] workspaces, healthcare assistance, and social robotics.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:safety-metrics",
+        "label": "SafetyMetrics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "dt-enhanced-by",
+      "label": "dt:enhancedBy"
+    },
+    {
+      "slug": "dt-presented-in",
+      "label": "dt:presentedIn"
+    },
+    {
+      "slug": "dt-secured-by",
+      "label": "dt:securedBy"
+    },
+    {
+      "slug": "dt-trained-via",
+      "label": "dt:trainedVia"
+    },
+    {
+      "slug": "dt-uses",
+      "label": "dt:uses"
+    },
+    {
+      "slug": "enables-collaboration",
+      "label": "enablesCollaboration"
+    },
+    {
+      "slug": "ensures-safety",
+      "label": "ensuresSafety"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "GestureRecognition"
+    },
+    {
+      "slug": "intuitive-interface",
+      "label": "IntuitiveInterface"
+    },
+    {
+      "slug": "provides-interface",
+      "label": "providesInterface"
+    },
+    {
+      "slug": "robotics-engineering",
+      "label": "RoboticsEngineering"
+    },
+    {
+      "slug": "safety-metrics",
+      "label": "SafetyMetrics"
+    },
+    {
+      "slug": "safety-metrics",
+      "label": "SafetyMetrics"
+    },
+    {
+      "slug": "safety-protocol",
+      "label": "SafetyProtocol"
+    },
+    {
+      "slug": "shared-workspace",
+      "label": "SharedWorkspace"
+    },
+    {
+      "slug": "teach-pendant",
+      "label": "TeachPendant"
+    },
+    {
+      "slug": "uses-modality",
+      "label": "usesModality"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "CollaborativeRobot"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "HapticFeedback"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "ManipulatorArm"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "NaturalLanguageProcessing"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "VirtualReality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "complete-hri-terms-reference",
+      "label": "COMPLETE_HRI_TERMS_REFERENCE"
+    },
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "collaborative-operation",
+      "label": "Collaborative Operation"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robotic-telepresence",
+      "label": "Robotic Telepresence"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

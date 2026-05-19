@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:3b0ee20f3c050e0849108a9aa314df4a2339344875b9041db7df4f9446d5e4c8",
+  "title": "ETSI Domain: Data Management + Security",
+  "slug": "etsi-domain-data-management-security",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-data-management-security",
+  "domain": "infrastructure",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing secure data storage, encrypted databases, access control systems, and data protection mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:encrypted-storage",
+        "label": "Encrypted Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:linked:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:security-and-privacy",
+        "label": "Security & Privacy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:access-control-enforcement",
+        "label": "Access Control Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:data-at-rest-protection",
+        "label": "Data-at-Rest Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control-enforcement",
+      "label": "Access Control Enforcement"
+    },
+    {
+      "slug": "authentication-systems",
+      "label": "Authentication Systems"
+    },
+    {
+      "slug": "data-at-rest-protection",
+      "label": "Data-at-Rest Protection"
+    },
+    {
+      "slug": "encrypted-storage",
+      "label": "Encrypted Storage"
+    },
+    {
+      "slug": "encryption-algorithms",
+      "label": "Encryption Algorithms"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "security-and-privacy",
+      "label": "Security & Privacy"
+    },
+    {
+      "slug": "security-audit",
+      "label": "Security Audit"
+    },
+    {
+      "slug": "threat-detection",
+      "label": "Threat Detection"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:781293ba31f41536907a8222a1893928fb48fdfc878c06920c83f1b65ec86297",
+  "title": "Democratic Governance",
+  "slug": "democratic-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:democratic-governance",
+  "domain": "infrastructure",
+  "definition": "Democratic Governance is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "participatory-policy-making",
+      "label": "Participatory Policy Making"
+    },
+    {
+      "slug": "social-contract",
+      "label": "Social Contract"
+    }
+  ]
+}

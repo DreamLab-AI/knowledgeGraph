@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#CrossPlatformDigitalTwins
-uri:: urn:visionclaw:concept:spatial-computing:cross-platform-digital-twins
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:cross-platform-digital-twins
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Cross Platform Digital Twins
-content-hash:: sha256-12-5f096d2848d4
-legacy-term-id:: MV-9836
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#CrossPlatformDigitalTwins
+legacy_uri:: urn:visionclaw:concept:spatial-computing:cross-platform-digital-twins
 public:: true
+
+# Cross Platform Digital Twins
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04",
+  "@type": "Page",
+  "vc:slug": "cross-platform-digital-twins",
+  "title": "Cross Platform Digital Twins",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-simulation",
+      "vc:label": "Collaborative Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability-standards",
+      "vc:label": "Interoperability Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-vendor-ecosystems",
+      "vc:label": "Multi-Vendor Ecosystems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-integration",
+      "vc:label": "Data Integration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin-technology",
+      "vc:label": "Digital Twin Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:universal-scene-description",
+      "vc:label": "Universal Scene Description"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5f096d2848d4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#CrossPlatformDigitalTwins"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9836"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cross Platform Digital Twins"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:cross-platform-digital-twins"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:cross-platform-digital-twins"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cross-platform-digital-twins",
+  "@type": "OntologyClass",
+  "label": "Cross Platform Digital Twins",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin-technology",
+      "vc:label": "Digital Twin Technology"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability-standards",
+      "vc:label": "Interoperability Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:universal-scene-description",
+      "vc:label": "Universal Scene Description"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-simulation",
+      "vc:label": "Collaborative Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-vendor-ecosystems",
+      "vc:label": "Multi-Vendor Ecosystems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-integration",
+      "vc:label": "Data Integration"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cross-platform-digital-twins:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[API Integration]]",
+      "resolved": "urn:visionflow:linked:api-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collaborative Simulation]]",
+      "resolved": "urn:visionflow:linked:collaborative-simulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interoperability Standards]]",
+      "resolved": "urn:visionflow:linked:interoperability-standards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Vendor Ecosystems]]",
+      "resolved": "urn:visionflow:linked:multi-vendor-ecosystems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Integration]]",
+      "resolved": "urn:visionflow:owl:class:data-integration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin Technology]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Universal Scene Description]]",
+      "resolved": "urn:visionflow:owl:class:universal-scene-description",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.

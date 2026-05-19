@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:2715a1a7bb63038b1b83e58daececceb7f0431a12a5f88542bcbb2fb5b26d04c",
+  "title": "Ai Transparency Framework",
+  "slug": "ai-transparency-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-transparency-framework",
+  "domain": "artificial-intelligence",
+  "definition": "AI Transparency Framework encompasses governance structures, technical standards, and regulatory requirements that ensure artificial intelligence systems are explainable, interpretable, and accountable, enabling stakeholders to understand AI decision-making processes, limitations, and potential impacts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audit-mechanisms",
+        "label": "Audit Mechanisms"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-communication",
+        "label": "Stakeholder Communication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-mechanisms",
+      "label": "Audit Mechanisms"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "stakeholder-communication",
+      "label": "Stakeholder Communication"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    }
+  ]
+}

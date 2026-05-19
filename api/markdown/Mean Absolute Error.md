@@ -1,24 +1,288 @@
-iri:: http://narrativegoldmine.com/spatial-computing#MeanAbsoluteError
-uri:: urn:visionclaw:concept:spatial-computing:mean-absolute-error
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:mean-absolute-error
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Mean Absolute Error
-content-hash:: sha256-12-a0560d87585d
-legacy-term-id:: AI-0114
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#MeanAbsoluteError
+legacy_uri:: urn:visionclaw:concept:spatial-computing:mean-absolute-error
 public:: true
+
+# Mean Absolute Error
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b4095a742e5eb110354c1883c2ddc7b3c5102e4ea3f6bcf6f3f92b987ae281a2",
+  "@type": "Page",
+  "vc:slug": "mean-absolute-error",
+  "title": "Mean Absolute Error",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:error-analysis",
+      "vc:label": "Error Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:mape",
+      "vc:label": "MAPE"
+    },
+    {
+      "@id": "urn:visionflow:linked:mean-squared-error",
+      "vc:label": "Mean Squared Error"
+    },
+    {
+      "@id": "urn:visionflow:linked:median-absolute-error",
+      "vc:label": "Median Absolute Error"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:outlier",
+      "vc:label": "Outlier"
+    },
+    {
+      "@id": "urn:visionflow:linked:regression",
+      "vc:label": "Regression"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:root-mean-square-error",
+      "vc:label": "Root Mean Square Error"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a0560d87585d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#MeanAbsoluteError"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0114"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Mean Absolute Error"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:mean-absolute-error"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:mean-absolute-error"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b4095a742e5eb110354c1883c2ddc7b3c5102e4ea3f6bcf6f3f92b987ae281a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:mean-absolute-error",
+  "@type": "OntologyClass",
+  "label": "Mean Absolute Error",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b4095a742e5eb110354c1883c2ddc7b3c5102e4ea3f6bcf6f3f92b987ae281a2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b4095a742e5eb110354c1883c2ddc7b3c5102e4ea3f6bcf6f3f92b987ae281a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:mean-absolute-error:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b4095a742e5eb110354c1883c2ddc7b3c5102e4ea3f6bcf6f3f92b987ae281a2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Error Analysis]]",
+      "resolved": "urn:visionflow:linked:error-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MAPE]]",
+      "resolved": "urn:visionflow:linked:mape",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mean Squared Error]]",
+      "resolved": "urn:visionflow:linked:mean-squared-error",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Median Absolute Error]]",
+      "resolved": "urn:visionflow:linked:median-absolute-error",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Evaluation]]",
+      "resolved": "urn:visionflow:linked:model-evaluation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Outlier]]",
+      "resolved": "urn:visionflow:linked:outlier",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regression]]",
+      "resolved": "urn:visionflow:linked:regression",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Root Mean Square Error]]",
+      "resolved": "urn:visionflow:owl:class:root-mean-square-error",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b4095a742e5eb110354c1883c2ddc7b3c5102e4ea3f6bcf6f3f92b987ae281a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.

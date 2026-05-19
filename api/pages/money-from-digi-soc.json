@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:f0f60a4222e003014e53f2b4269812a7ee9d0a5d6ac5dcb4b4d039fab5192a4e",
+  "title": "Money from DigiSoc",
+  "slug": "money-from-digi-soc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:money-from-digi-soc",
+  "domain": "infrastructure",
+  "definition": "Money from DigiSoc is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:2f05bc1e5bd9db89212c7b11ea4f4e4ef6fbe469cbea71bcecb8127d1284bfc1",
+  "title": "Physically Based Rendering",
+  "slug": "physically-based-rendering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:physically-based-rendering",
+  "domain": "infrastructure",
+  "definition": "PhysicallyBasedRendering is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "slug": "physics-material",
+      "label": "Physics Material"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

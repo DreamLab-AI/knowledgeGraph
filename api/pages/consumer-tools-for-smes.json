@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:7f3f4a99cb1df13a135ffc0f211dbe93d05049029a09a26123cc6f1dbac3972b",
+  "title": "Consumer Tools for SMEs",
+  "slug": "consumer-tools-for-smes",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:consumer-tools-for-smes",
+  "domain": "infrastructure",
+  "definition": "Consumer Tools for SMEs is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "training-for-design-practitioners",
+      "label": "Training for Design Practitioners"
+    }
+  ]
+}

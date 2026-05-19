@@ -1,22 +1,398 @@
-iri:: http://narrativegoldmine.com/robotics#AerialRobot
-uri:: urn:visionclaw:concept:robotics:aerial-robot
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:aerial-robot
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Aerial Robot
-content-hash:: sha256-12-c7e24df0d544
-legacy-term-id:: RB-0010
-status:: draft
-maturity:: draft
-quality-score:: 0.60
-authority-score:: 0.14
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#AerialRobot
+legacy_uri:: urn:visionclaw:concept:robotics:aerial-robot
 public:: true
-bridges-to:: [[Spatial Computing]]
+
+# Aerial Robot
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0",
+  "@type": "Page",
+  "vc:slug": "aerial-robot",
+  "title": "Aerial Robot",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:actuators",
+      "vc:label": "Actuators"
+    },
+    {
+      "@id": "urn:visionflow:linked:aerial-vehicle",
+      "vc:label": "Aerial Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-delivery",
+      "vc:label": "Automated Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-monitoring",
+      "vc:label": "Environmental Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:flight-control-system",
+      "vc:label": "Flight Control System"
+    },
+    {
+      "@id": "urn:visionflow:linked:gps-navigation",
+      "vc:label": "GPS Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:infrastructure-inspection",
+      "vc:label": "Infrastructure Inspection"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-21384",
+      "vc:label": "ISO 21384"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-21384",
+      "vc:label": "ISO 21384:"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-21384-1-2019",
+      "vc:label": "ISO 21384-1:2019"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-8373-2021",
+      "vc:label": "ISO 8373:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:navigation-systems",
+      "vc:label": "Navigation Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-management",
+      "vc:label": "Power Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensors",
+      "vc:label": "Sensors"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mobile-robot",
+      "vc:label": "Mobile Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:obstacle-avoidance",
+      "vc:label": "Obstacle Avoidance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.14"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Spatial Computing]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c7e24df0d544"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#AerialRobot"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0010"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Aerial Robot"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.60"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:aerial-robot"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:aerial-robot"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:aerial-robot",
+  "@type": "OntologyClass",
+  "label": "Aerial Robot",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:mobile-robot",
+      "vc:label": "Mobile Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Aerial Robot** - An autonomous or remotely operated aircraft equipped with [[Sensors]], [[Actuators]], and [[Navigation Systems]] for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
+  "vc:qualityScore": {
+    "@value": "0.60",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.14",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:aerial-vehicle",
+      "vc:label": "Aerial Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:flight-control-system",
+      "vc:label": "Flight Control System"
+    },
+    {
+      "@id": "urn:visionflow:linked:gps-navigation",
+      "vc:label": "GPS Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-management",
+      "vc:label": "Power Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:obstacle-avoidance",
+      "vc:label": "Obstacle Avoidance"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:automated-delivery",
+      "vc:label": "Automated Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-monitoring",
+      "vc:label": "Environmental Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:infrastructure-inspection",
+      "vc:label": "Infrastructure Inspection"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:aerial-robot:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Actuators]]",
+      "resolved": "urn:visionflow:linked:actuators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aerial Vehicle]]",
+      "resolved": "urn:visionflow:linked:aerial-vehicle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Delivery]]",
+      "resolved": "urn:visionflow:linked:automated-delivery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous System]]",
+      "resolved": "urn:visionflow:linked:autonomous-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environmental Monitoring]]",
+      "resolved": "urn:visionflow:linked:environmental-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Flight Control System]]",
+      "resolved": "urn:visionflow:linked:flight-control-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPS Navigation]]",
+      "resolved": "urn:visionflow:linked:gps-navigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Infrastructure Inspection]]",
+      "resolved": "urn:visionflow:linked:infrastructure-inspection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 21384:]]",
+      "resolved": "urn:visionflow:linked:iso-21384",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 21384]]",
+      "resolved": "urn:visionflow:linked:iso-21384",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 21384-1:2019]]",
+      "resolved": "urn:visionflow:linked:iso-21384-1-2019",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 8373:2021]]",
+      "resolved": "urn:visionflow:linked:iso-8373-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Navigation Systems]]",
+      "resolved": "urn:visionflow:linked:navigation-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Power Management]]",
+      "resolved": "urn:visionflow:linked:power-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensors]]",
+      "resolved": "urn:visionflow:linked:sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mobile Robot]]",
+      "resolved": "urn:visionflow:owl:class:mobile-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Obstacle Avoidance]]",
+      "resolved": "urn:visionflow:owl:class:obstacle-avoidance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Aerial Robot** - An autonomous or remotely operated aircraft equipped with [[Sensors]], [[Actuators]], and [[Navigation Systems]] for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.

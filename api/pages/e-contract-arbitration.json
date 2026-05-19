@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:ad03551fa209da4c057a30bf8db24eb7ca80dee36b5a12df201f13b606586457",
+  "title": "E-Contract Arbitration",
+  "slug": "e-contract-arbitration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:e-contract-arbitration",
+  "domain": "spatial-computing",
+  "definition": "Online dispute resolution process specifically designed for resolving conflicts arising from smart contract execution, code interpretation, or automated transaction failures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:code-interpretation-service",
+        "label": "Code Interpretation Service"
+      },
+      {
+        "id": "urn:visionflow:linked:contract-analysis-process",
+        "label": "Contract Analysis Process"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-evidence-verification",
+        "label": "On-Chain Evidence Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-transaction-log",
+        "label": "Blockchain Transaction Log"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-code",
+        "label": "Smart Contract Code"
+      },
+      {
+        "id": "urn:visionflow:owl:class:arbitrator-expertise",
+        "label": "Arbitrator Expertise"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automated-dispute-resolution",
+        "label": "Automated Dispute Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:contract-enforcement",
+        "label": "Contract Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:fair-adjudication",
+        "label": "Fair Adjudication"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-reversal",
+        "label": "Transaction Reversal"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-dispute-resolution",
+      "label": "Automated Dispute Resolution"
+    },
+    {
+      "slug": "blockchain-transaction-log",
+      "label": "Blockchain Transaction Log"
+    },
+    {
+      "slug": "code-interpretation-service",
+      "label": "Code Interpretation Service"
+    },
+    {
+      "slug": "contract-analysis-process",
+      "label": "Contract Analysis Process"
+    },
+    {
+      "slug": "contract-enforcement",
+      "label": "Contract Enforcement"
+    },
+    {
+      "slug": "fair-adjudication",
+      "label": "Fair Adjudication"
+    },
+    {
+      "slug": "on-chain-evidence-verification",
+      "label": "On-Chain Evidence Verification"
+    },
+    {
+      "slug": "smart-contract-code",
+      "label": "Smart Contract Code"
+    },
+    {
+      "slug": "smart-contract-governance",
+      "label": "Smart Contract Governance"
+    },
+    {
+      "slug": "smart-contract-standards",
+      "label": "Smart Contract Standards"
+    },
+    {
+      "slug": "transaction-reversal",
+      "label": "Transaction Reversal"
+    },
+    {
+      "slug": "uncitral-odr-model",
+      "label": "UNCITRAL ODR Model"
+    },
+    {
+      "slug": "arbitration-decision-engine",
+      "label": "Arbitration Decision Engine"
+    },
+    {
+      "slug": "arbitrator-expertise",
+      "label": "Arbitrator Expertise"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    }
+  ]
+}

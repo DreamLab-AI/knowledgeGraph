@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9",
+  "title": "Data Replication",
+  "slug": "data-replication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-replication",
+  "domain": "infrastructure",
+  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:storage-systems",
+        "label": "Storage Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:consistency-guarantees",
+        "label": "Consistency Guarantees"
+      },
+      {
+        "id": "urn:visionflow:linked:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consistency-guarantees",
+      "label": "Consistency Guarantees"
+    },
+    {
+      "slug": "data-availability",
+      "label": "Data Availability"
+    },
+    {
+      "slug": "storage-systems",
+      "label": "Storage Systems"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

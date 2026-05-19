@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:4a5ef6e0097c95a471b09a8260e8525effbed9df04f657189219338efb9a7ef0",
+  "title": "Cryptographic Key Management",
+  "slug": "cryptographic-key-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cryptographic-key-management",
+  "domain": "blockchain",
+  "definition": "The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise. Governed by standards such as NIST SP 800-57.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fips-140-3",
+      "label": "FIPS 140-3"
+    },
+    {
+      "slug": "nist-sp-800-130",
+      "label": "NIST SP 800-130"
+    },
+    {
+      "slug": "nist-sp-800-57",
+      "label": "NIST SP 800-57"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    },
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "id": "urn:visionflow:page:1914525945606b91a888f77d41248574631c08640bec3282b27fc7852a0c9595",
+  "title": "Chatbots",
+  "slug": "chatbots",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:chatbots",
+  "domain": "artificial-intelligence",
+  "definition": "Software systems designed to simulate conversation with human users through text or voice interfaces, spanning an architectural spectrum from rule-based pattern-matching programs (ELIZA, 1966; ALICE/AIML, 1995) through retrieval-based and intent-classification pipelines to modern [[Large Language Models|LLM]]-powered agents capable of open-domain, multi-turn, multimodal dialogue; operationally defined by three core functional layers: (1) Natural Language Understanding (NLU) parsing raw user utterances into machine-interpretable representations via [[Intent Recognition]], [[Slot Filling]], and sentiment detection; (2) [[Dialogue State Tracking]] (DST) tracking conversation state across turns, resolving co-references and ellipsis; (3) Natural Language Generation (NLG) producing contextually appropriate responses through template-fill, retrieval, or auto-regressive decoding from a generative language model; deployed across a global market valued at $9.57 billion in 2025 (projected $26+ billion by 2030, CAGR ~23%), handling 65% of enterprise customer support interactions without human escalation (up from 30% in 2022), achieving average ROI of $3.50 per $1 invested, reducing per-interac",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:persona",
+        "label": "Persona"
+      },
+      {
+        "id": "urn:visionflow:linked:response-selection",
+        "label": "Response Selection"
+      },
+      {
+        "id": "urn:visionflow:linked:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:visionflow:linked:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "id": "urn:visionflow:linked:lead-generation",
+        "label": "Lead Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:task-automation",
+        "label": "Task Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-assistants",
+        "label": "Virtual Assistants"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-interfaces",
+        "label": "Voice Interfaces"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-turn-dialogue",
+        "label": "Multi-turn Dialogue"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "api-integration",
+      "label": "API Integration"
+    },
+    {
+      "slug": "bertscore",
+      "label": "BERTScore"
+    },
+    {
+      "slug": "bleu",
+      "label": "BLEU"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "slug": "dialogue-state-tracking",
+      "label": "Dialogue State Tracking"
+    },
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "slug": "education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "slug": "embedding-models",
+      "label": "Embedding Models"
+    },
+    {
+      "slug": "enterprise-search",
+      "label": "Enterprise Search"
+    },
+    {
+      "slug": "form-based-interfaces",
+      "label": "Form-Based Interfaces"
+    },
+    {
+      "slug": "healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "human-evaluation",
+      "label": "Human Evaluation"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "intent-classification",
+      "label": "Intent Classification"
+    },
+    {
+      "slug": "intent-recognition",
+      "label": "Intent Recognition"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "InterfaceLayer"
+    },
+    {
+      "slug": "iso-30401",
+      "label": "ISO 30401"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "knowledge-retrieval",
+      "label": "Knowledge Retrieval"
+    },
+    {
+      "slug": "lead-generation",
+      "label": "Lead Generation"
+    },
+    {
+      "slug": "model-context-protocol-specification",
+      "label": "Model Context Protocol Specification"
+    },
+    {
+      "slug": "multi-turn-dialogue",
+      "label": "Multi-turn Dialogue"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "persona",
+      "label": "Persona"
+    },
+    {
+      "slug": "response-selection",
+      "label": "Response Selection"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "search-engines",
+      "label": "Search Engines"
+    },
+    {
+      "slug": "slot-filling",
+      "label": "Slot Filling"
+    },
+    {
+      "slug": "task-automation",
+      "label": "Task Automation"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    },
+    {
+      "slug": "virtual-assistants",
+      "label": "Virtual Assistants"
+    },
+    {
+      "slug": "voice-interfaces",
+      "label": "Voice Interfaces"
+    },
+    {
+      "slug": "w3-c-voice-browser-working-group",
+      "label": "W3C Voice Browser Working Group"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-commerce"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "service-layer",
+      "label": "ServiceLayer"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

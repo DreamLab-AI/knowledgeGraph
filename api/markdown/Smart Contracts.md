@@ -1,21 +1,290 @@
-iri:: http://narrativegoldmine.com/blockchain#SmartContracts
-uri:: urn:visionclaw:concept:blockchain:smart-contracts
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:smart-contracts
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Smart Contracts
-content-hash:: sha256-12-831a253295f6
-legacy-term-id:: BC-7013
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#SmartContracts
+legacy_uri:: urn:visionclaw:concept:blockchain:smart-contracts
 public:: true
+
+# Smart Contracts
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8a8d4d3b9bad3b0bb1284782384f1acd98017a1a51175374b1aae766ac01675d",
+  "@type": "Page",
+  "vc:slug": "smart-contracts",
+  "title": "Smart Contracts",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-application",
+      "vc:label": "Decentralized Application"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:automated-market-maker",
+      "vc:label": "Automated Market Maker"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-computing",
+      "vc:label": "Distributed Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tokenization",
+      "vc:label": "Tokenization"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-831a253295f6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#SmartContracts"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-7013"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Smart Contracts"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:smart-contracts"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:smart-contracts"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a8d4d3b9bad3b0bb1284782384f1acd98017a1a51175374b1aae766ac01675d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:smart-contracts",
+  "@type": "OntologyClass",
+  "label": "Smart Contracts",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-computing",
+      "vc:label": "Distributed Computing"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8a8d4d3b9bad3b0bb1284782384f1acd98017a1a51175374b1aae766ac01675d"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a8d4d3b9bad3b0bb1284782384f1acd98017a1a51175374b1aae766ac01675d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation. Smart contracts encode business logic in deterministic code that runs identically across all network nodes, ensuring consensus on execution outcomes.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:decentralized-application",
+      "vc:label": "Decentralized Application"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:automated-market-maker",
+      "vc:label": "Automated Market Maker"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tokenization",
+      "vc:label": "Tokenization"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:smart-contracts:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8a8d4d3b9bad3b0bb1284782384f1acd98017a1a51175374b1aae766ac01675d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cryptographic Hash Function]]",
+      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Application]]",
+      "resolved": "urn:visionflow:linked:decentralized-application",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Market Maker]]",
+      "resolved": "urn:visionflow:owl:class:automated-market-maker",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Finance (DeFi)]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Computing]]",
+      "resolved": "urn:visionflow:owl:class:distributed-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Tokenization]]",
+      "resolved": "urn:visionflow:owl:class:tokenization",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8a8d4d3b9bad3b0bb1284782384f1acd98017a1a51175374b1aae766ac01675d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation. Smart contracts encode business logic in deterministic code that runs identically across all network nodes, ensuring consensus on execution outcomes.
@@ -23,7 +292,7 @@ public:: true
 - ### Semantic Classification
   - owl-class:: blockchain:SmartContracts
   - owl-role:: Process
-  - belongs-to-domain:: [[Decentralized Finance]]
+  - belongs-to-domain:: [[Decentralized Finance (DeFi)]]
 
 - ### Relationships
   - is-subclass-of:: [[Distributed Computing]]
@@ -89,7 +358,7 @@ public:: true
   ## Relationships
   - is-subclass-of:: [[Blockchain]]
   - is-subclass-of:: [[Distributed Computing]]
-  - related-to:: [[Decentralized Finance]]
+  - related-to:: [[Decentralized Finance (DeFi)]]
   - related-to:: [[Ethereum]]
   - uses:: [[Cryptographic Hash Function]]
   - uses:: [[Digital Signature]]

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:5da1dc28900eae2ce9cb6edcd58c938e487fea56f20477a807e8d51eb3b77d00",
+  "title": "Inertia",
+  "slug": "inertia",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inertia",
+  "domain": "robotics",
+  "definition": "**Inertia** - Resistance to changes in motion state",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

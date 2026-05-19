@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:13acdde9fab08106dd371191d43c05e490633fbd29f7e5a813a173957757204f",
+  "title": "Neural Network Architecture",
+  "slug": "neural-network-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:neural-network-architecture",
+  "domain": "artificial-intelligence",
+  "definition": "Neural network architecture defines the structural organization of artificial neurons into layers and the connectivity patterns between them, determining how the network processes and transforms input data through weighted connections and activation functions. Core architecture types include feedforward networks (unidirectional flow), CNNs (convolutional layers with filters for spatial features), RNNs (recurrent connections for sequential dependencies with variants like LSTM and GRU), and transformers (self-attention mechanisms enabling parallel processing).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "model-architecture",
+      "label": "ModelArchitecture"
+    }
+  ],
+  "backlinks": []
+}

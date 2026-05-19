@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:b9c063e4340126876cf1c990e285298cd7906b7e697d83a7b82cb38664f79969",
+  "title": "Wireless Value Realization",
+  "slug": "wireless-value-realization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:wireless-value-realization",
+  "domain": "spatial-computing",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

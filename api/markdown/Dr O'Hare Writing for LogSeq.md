@@ -1,20 +1,230 @@
-iri:: http://narrativegoldmine.com/infrastructure#DrOHareWritingForLogSeq
-uri:: urn:visionclaw:concept:infrastructure:dr-ohare-writing-for-logseq
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:dr-ohare-writing-for-logseq
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Dr O'Hare Writing for LogSeq
-content-hash:: sha256-12-7a1d3d97d8d6
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DrOHareWritingForLogSeq
+legacy_uri:: urn:visionclaw:concept:infrastructure:dr-ohare-writing-for-logseq
 public:: true
+
+# Dr O'Hare Writing for LogSeq
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72",
+  "@type": "Page",
+  "vc:slug": "dr-o-hare-writing-for-log-seq",
+  "title": "Dr O'Hare Writing for LogSeq",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:author-year",
+      "vc:label": "Author YEAR"
+    },
+    {
+      "@id": "urn:visionflow:linked:hulsmann2008ethics",
+      "vc:label": "hulsmann2008ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:nakamoto-2008",
+      "vc:label": "Nakamoto 2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:wiki-link",
+      "vc:label": "WikiLink"
+    },
+    {
+      "@id": "urn:visionflow:linked:wiki-links",
+      "vc:label": "WikiLinks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cypherpunk",
+      "vc:label": "cypherpunk"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset-risks",
+      "vc:label": "Digital Asset Risks"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7a1d3d97d8d6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DrOHareWritingForLogSeq"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Dr O'Hare Writing for LogSeq"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:dr-ohare-writing-for-logseq"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:dr-ohare-writing-for-logseq"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:dr-o-hare-writing-for-log-seq",
+  "@type": "OntologyClass",
+  "label": "Dr O'Hare Writing for LogSeq",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Dr O'Hare Writing for LogSeq is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:dr-o-hare-writing-for-log-seq:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Author YEAR]]",
+      "resolved": "urn:visionflow:linked:author-year",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hulsmann2008ethics]]",
+      "resolved": "urn:visionflow:linked:hulsmann2008ethics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nakamoto 2008]]",
+      "resolved": "urn:visionflow:linked:nakamoto-2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WikiLink]]",
+      "resolved": "urn:visionflow:linked:wiki-link",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WikiLinks]]",
+      "resolved": "urn:visionflow:linked:wiki-links",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[cypherpunk]]",
+      "resolved": "urn:visionflow:owl:class:cypherpunk",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Asset Risks]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset-risks",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Dr O'Hare Writing for LogSeq is a concept within the ngm domain.

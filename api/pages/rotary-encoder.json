@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:9fce82dfd057a5d3d16b826e8f8b9122535d68906fac816c12657929eca6c408",
+  "title": "Rotary Encoder",
+  "slug": "rotary-encoder",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rotary-encoder",
+  "domain": "robotics",
+  "definition": "Rotary encoder measures shaft angle and direction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:encoder",
+      "label": "Encoder"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,21 +1,286 @@
-iri:: http://narrativegoldmine.com/metaverse#ComplianceDashboard
-uri:: urn:visionclaw:concept:artificial-intelligence:compliance-dashboard
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:compliance-dashboard
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Compliance Dashboard
-content-hash:: sha256-12-b3634ad50d8a
-legacy-term-id:: MV-9827
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ComplianceDashboard
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:compliance-dashboard
 public:: true
+
+# Compliance Dashboard
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea",
+  "@type": "Page",
+  "vc:slug": "compliance-dashboard",
+  "title": "Compliance Dashboard",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:analytics-engine",
+      "vc:label": "Analytics Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-monitoring",
+      "vc:label": "Real-Time Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-visualization",
+      "vc:label": "Risk Visualization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-integration",
+      "vc:label": "Data Integration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-reporting",
+      "vc:label": "Regulatory Reporting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-technology",
+      "vc:label": "Regulatory Technology"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b3634ad50d8a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ComplianceDashboard"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9827"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Compliance Dashboard"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:compliance-dashboard"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:compliance-dashboard"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:compliance-dashboard",
+  "@type": "OntologyClass",
+  "label": "Compliance Dashboard",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-technology",
+      "vc:label": "Regulatory Technology"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compliance to regulators through transparent reporting.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:analytics-engine",
+      "vc:label": "Analytics Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-integration",
+      "vc:label": "Data Integration"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:real-time-monitoring",
+      "vc:label": "Real-Time Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-visualization",
+      "vc:label": "Risk Visualization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-reporting",
+      "vc:label": "Regulatory Reporting"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:compliance-dashboard:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Analytics Engine]]",
+      "resolved": "urn:visionflow:linked:analytics-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Monitoring]]",
+      "resolved": "urn:visionflow:linked:real-time-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risk Visualization]]",
+      "resolved": "urn:visionflow:linked:risk-visualization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Network]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Integration]]",
+      "resolved": "urn:visionflow:owl:class:data-integration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Reporting]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-reporting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Technology]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-technology",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compliance to regulators through transparent reporting.

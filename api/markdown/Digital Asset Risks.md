@@ -1,20 +1,1100 @@
-iri:: http://narrativegoldmine.com/ontology#DigitalAssetRisks
-uri:: urn:visionclaw:concept:blockchain:digital-asset-risks
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:digital-asset-risks
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Digital Asset Risks
-content-hash:: sha256-12-62b2ec208882
-status:: Active, Evolving (2025)
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#DigitalAssetRisks
+legacy_uri:: urn:visionclaw:concept:blockchain:digital-asset-risks
 public:: true
+
+# Digital Asset Risks
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c2f3f7c8d5993d02c75b82a3d3817c40375181a8306c4103de7bb5c2ae7ebc48",
+  "@type": "Page",
+  "vc:slug": "digital-asset-risks",
+  "title": "Digital Asset Risks",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:agustin-carstens",
+      "vc:label": "Agustin Carstens"
+    },
+    {
+      "@id": "urn:visionflow:linked:alameda-research",
+      "vc:label": "Alameda Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:aml",
+      "vc:label": "AML"
+    },
+    {
+      "@id": "urn:visionflow:linked:anderson2002free",
+      "vc:label": "anderson2002free"
+    },
+    {
+      "@id": "urn:visionflow:linked:apostolaki2016hijacking-apostolaki2017hijacking-johnson2014game-stinner2022proof",
+      "vc:label": "apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof"
+    },
+    {
+      "@id": "urn:visionflow:linked:apostolaki2017hijacking",
+      "vc:label": "apostolaki2017hijacking"
+    },
+    {
+      "@id": "urn:visionflow:linked:balaji-srinivasan",
+      "vc:label": "Balaji Srinivasan"
+    },
+    {
+      "@id": "urn:visionflow:linked:bank-of-international-settlement",
+      "vc:label": "Bank of International Settlement"
+    },
+    {
+      "@id": "urn:visionflow:linked:basel-committee-on-banking-supervision",
+      "vc:label": "Basel Committee on Banking Supervision"
+    },
+    {
+      "@id": "urn:visionflow:linked:biden",
+      "vc:label": "Biden"
+    },
+    {
+      "@id": "urn:visionflow:linked:bis",
+      "vc:label": "BIS"
+    },
+    {
+      "@id": "urn:visionflow:linked:black-rock",
+      "vc:label": "BlackRock"
+    },
+    {
+      "@id": "urn:visionflow:linked:black-swan",
+      "vc:label": "Black Swan"
+    },
+    {
+      "@id": "urn:visionflow:linked:booth2022bitcoin",
+      "vc:label": "booth2022bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:budish2018economic",
+      "vc:label": "budish2018economic"
+    },
+    {
+      "@id": "urn:visionflow:linked:carlsten2016instability",
+      "vc:label": "carlsten2016instability"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc",
+      "vc:label": "CBDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:cboe",
+      "vc:label": "CBOE"
+    },
+    {
+      "@id": "urn:visionflow:linked:central-bank-digital-currencies",
+      "vc:label": "central bank digital currencies"
+    },
+    {
+      "@id": "urn:visionflow:linked:cftc",
+      "vc:label": "CFTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainalysis",
+      "vc:label": "Chainalysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:chicago-mercantile-exchange",
+      "vc:label": "Chicago Mercantile Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:circle",
+      "vc:label": "Circle"
+    },
+    {
+      "@id": "urn:visionflow:linked:cme",
+      "vc:label": "CME"
+    },
+    {
+      "@id": "urn:visionflow:linked:cory-doctorow",
+      "vc:label": "Cory Doctorow"
+    },
+    {
+      "@id": "urn:visionflow:linked:dccpa",
+      "vc:label": "DCCPA"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:dymydiuk2020rubicon",
+      "vc:label": "dymydiuk2020rubicon"
+    },
+    {
+      "@id": "urn:visionflow:linked:el-salvador",
+      "vc:label": "El Salvador"
+    },
+    {
+      "@id": "urn:visionflow:linked:executive-order",
+      "vc:label": "Executive Order"
+    },
+    {
+      "@id": "urn:visionflow:linked:executive-order-14067",
+      "vc:label": "Executive Order 14067"
+    },
+    {
+      "@id": "urn:visionflow:linked:fibre",
+      "vc:label": "FIBRE"
+    },
+    {
+      "@id": "urn:visionflow:linked:fidelity",
+      "vc:label": "Fidelity"
+    },
+    {
+      "@id": "urn:visionflow:linked:fractional-reserve",
+      "vc:label": "Fractional Reserve"
+    },
+    {
+      "@id": "urn:visionflow:linked:ftx",
+      "vc:label": "FTX"
+    },
+    {
+      "@id": "urn:visionflow:linked:fuchsbauer2019aggregate",
+      "vc:label": "fuchsbauer2019aggregate"
+    },
+    {
+      "@id": "urn:visionflow:linked:goldman-sachs",
+      "vc:label": "Goldman Sachs"
+    },
+    {
+      "@id": "urn:visionflow:linked:grayscale",
+      "vc:label": "Grayscale"
+    },
+    {
+      "@id": "urn:visionflow:linked:hard-fork",
+      "vc:label": "Hard Fork"
+    },
+    {
+      "@id": "urn:visionflow:linked:https-doi-org-10-48550-arxiv-2208-01908",
+      "vc:label": "https://doi.org/10.48550/arxiv.2208.01908"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperbitcoinization",
+      "vc:label": "Hyperbitcoinization"
+    },
+    {
+      "@id": "urn:visionflow:linked:imf",
+      "vc:label": "IMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:iran",
+      "vc:label": "Iran"
+    },
+    {
+      "@id": "urn:visionflow:linked:jurisdictional-arbitrage",
+      "vc:label": "Jurisdictional Arbitrage"
+    },
+    {
+      "@id": "urn:visionflow:linked:krawisz2014hyperbitcoinization",
+      "vc:label": "krawisz2014hyperbitcoinization"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyc",
+      "vc:label": "KYC"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity-crisis",
+      "vc:label": "Liquidity Crisis"
+    },
+    {
+      "@id": "urn:visionflow:linked:litecoin",
+      "vc:label": "Litecoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:lowery2023",
+      "vc:label": "Lowery2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:malherbe2019cryptocurrencies",
+      "vc:label": "malherbe2019cryptocurrencies"
+    },
+    {
+      "@id": "urn:visionflow:linked:mastercard",
+      "vc:label": "Mastercard"
+    },
+    {
+      "@id": "urn:visionflow:linked:monetary-policy",
+      "vc:label": "Monetary Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:moser2013inquiry",
+      "vc:label": "moser2013inquiry"
+    },
+    {
+      "@id": "urn:visionflow:linked:nassim-taleb",
+      "vc:label": "Nassim Taleb"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-state",
+      "vc:label": "Network State"
+    },
+    {
+      "@id": "urn:visionflow:linked:paper-bitcoin",
+      "vc:label": "Paper Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:pay-pal",
+      "vc:label": "PayPal"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-org-attack",
+      "vc:label": "Re-org Attack"
+    },
+    {
+      "@id": "urn:visionflow:linked:rehypothecation",
+      "vc:label": "Rehypothecation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sam-bankman-fried",
+      "vc:label": "Sam Bankman-Fried"
+    },
+    {
+      "@id": "urn:visionflow:linked:sanctions",
+      "vc:label": "Sanctions"
+    },
+    {
+      "@id": "urn:visionflow:linked:satoshi-nakamoto",
+      "vc:label": "Satoshi Nakamoto"
+    },
+    {
+      "@id": "urn:visionflow:linked:sec",
+      "vc:label": "SEC"
+    },
+    {
+      "@id": "urn:visionflow:linked:securities-and-exchange-commission",
+      "vc:label": "Securities and Exchange Commission"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-custody",
+      "vc:label": "Self-Custody"
+    },
+    {
+      "@id": "urn:visionflow:linked:srinivasan2022",
+      "vc:label": "Srinivasan2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:stablecoins",
+      "vc:label": "Stablecoins"
+    },
+    {
+      "@id": "urn:visionflow:linked:stratum-v2",
+      "vc:label": "Stratum V2"
+    },
+    {
+      "@id": "urn:visionflow:linked:swift",
+      "vc:label": "SWIFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:taleb2012antifragile",
+      "vc:label": "taleb2012antifragile"
+    },
+    {
+      "@id": "urn:visionflow:linked:tether",
+      "vc:label": "Tether"
+    },
+    {
+      "@id": "urn:visionflow:linked:tor",
+      "vc:label": "Tor"
+    },
+    {
+      "@id": "urn:visionflow:linked:tornado-cash",
+      "vc:label": "Tornado Cash"
+    },
+    {
+      "@id": "urn:visionflow:linked:trump",
+      "vc:label": "Trump"
+    },
+    {
+      "@id": "urn:visionflow:linked:unctad",
+      "vc:label": "UNCTAD"
+    },
+    {
+      "@id": "urn:visionflow:linked:united-nations",
+      "vc:label": "United Nations"
+    },
+    {
+      "@id": "urn:visionflow:linked:us-treasury",
+      "vc:label": "US Treasury"
+    },
+    {
+      "@id": "urn:visionflow:linked:usdc",
+      "vc:label": "USDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:utxo",
+      "vc:label": "UTXO"
+    },
+    {
+      "@id": "urn:visionflow:linked:utxos",
+      "vc:label": "UTXOs"
+    },
+    {
+      "@id": "urn:visionflow:linked:visa",
+      "vc:label": "VISA"
+    },
+    {
+      "@id": "urn:visionflow:linked:warren2023bitcoin",
+      "vc:label": "warren2023bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:western-union",
+      "vc:label": "Western Union"
+    },
+    {
+      "@id": "urn:visionflow:linked:wouters2022",
+      "vc:label": "Wouters2022"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin-etf",
+      "vc:label": "Bitcoin ETF"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:block-reward",
+      "vc:label": "Block Reward"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cbdcs",
+      "vc:label": "CBDCs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
+      "vc:label": "central bank digital currency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:double-spending",
+      "vc:label": "Double-Spending"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:halving",
+      "vc:label": "Halving"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "vc:label": "Lightning and Similar L2"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mining",
+      "vc:label": "Mining"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "Proof of Work"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quantum-computing",
+      "vc:label": "Quantum Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stablecoin",
+      "vc:label": "Stablecoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-62b2ec208882"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#DigitalAssetRisks"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Asset Risks"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:digital-asset-risks"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "Active, Evolving (2025)"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:digital-asset-risks"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c2f3f7c8d5993d02c75b82a3d3817c40375181a8306c4103de7bb5c2ae7ebc48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-asset-risks",
+  "@type": "OntologyClass",
+  "label": "Digital Asset Risks",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "Active, Evolving (2025)",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c2f3f7c8d5993d02c75b82a3d3817c40375181a8306c4103de7bb5c2ae7ebc48"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c2f3f7c8d5993d02c75b82a3d3817c40375181a8306c4103de7bb5c2ae7ebc48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Comprehensive analysis of risks associated with digital assets, particularly [[Bitcoin]], encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-asset-risks:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c2f3f7c8d5993d02c75b82a3d3817c40375181a8306c4103de7bb5c2ae7ebc48"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Agustin Carstens]]",
+      "resolved": "urn:visionflow:linked:agustin-carstens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alameda Research]]",
+      "resolved": "urn:visionflow:linked:alameda-research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AML]]",
+      "resolved": "urn:visionflow:linked:aml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[anderson2002free]]",
+      "resolved": "urn:visionflow:linked:anderson2002free",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof]]",
+      "resolved": "urn:visionflow:linked:apostolaki2016hijacking-apostolaki2017hijacking-johnson2014game-stinner2022proof",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[apostolaki2017hijacking]]",
+      "resolved": "urn:visionflow:linked:apostolaki2017hijacking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Balaji Srinivasan]]",
+      "resolved": "urn:visionflow:linked:balaji-srinivasan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bank of International Settlement]]",
+      "resolved": "urn:visionflow:linked:bank-of-international-settlement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Basel Committee on Banking Supervision]]",
+      "resolved": "urn:visionflow:linked:basel-committee-on-banking-supervision",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Biden]]",
+      "resolved": "urn:visionflow:linked:biden",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIS]]",
+      "resolved": "urn:visionflow:linked:bis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlackRock]]",
+      "resolved": "urn:visionflow:linked:black-rock",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Black Swan]]",
+      "resolved": "urn:visionflow:linked:black-swan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[booth2022bitcoin]]",
+      "resolved": "urn:visionflow:linked:booth2022bitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[budish2018economic]]",
+      "resolved": "urn:visionflow:linked:budish2018economic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[carlsten2016instability]]",
+      "resolved": "urn:visionflow:linked:carlsten2016instability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC]]",
+      "resolved": "urn:visionflow:linked:cbdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBOE]]",
+      "resolved": "urn:visionflow:linked:cboe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[central bank digital currencies]]",
+      "resolved": "urn:visionflow:linked:central-bank-digital-currencies",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CFTC]]",
+      "resolved": "urn:visionflow:linked:cftc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainalysis]]",
+      "resolved": "urn:visionflow:linked:chainalysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chicago Mercantile Exchange]]",
+      "resolved": "urn:visionflow:linked:chicago-mercantile-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Circle]]",
+      "resolved": "urn:visionflow:linked:circle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CME]]",
+      "resolved": "urn:visionflow:linked:cme",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cory Doctorow]]",
+      "resolved": "urn:visionflow:linked:cory-doctorow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DCCPA]]",
+      "resolved": "urn:visionflow:linked:dccpa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dymydiuk2020rubicon]]",
+      "resolved": "urn:visionflow:linked:dymydiuk2020rubicon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[El Salvador]]",
+      "resolved": "urn:visionflow:linked:el-salvador",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Executive Order]]",
+      "resolved": "urn:visionflow:linked:executive-order",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Executive Order 14067]]",
+      "resolved": "urn:visionflow:linked:executive-order-14067",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FIBRE]]",
+      "resolved": "urn:visionflow:linked:fibre",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fidelity]]",
+      "resolved": "urn:visionflow:linked:fidelity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fractional Reserve]]",
+      "resolved": "urn:visionflow:linked:fractional-reserve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FTX]]",
+      "resolved": "urn:visionflow:linked:ftx",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[fuchsbauer2019aggregate]]",
+      "resolved": "urn:visionflow:linked:fuchsbauer2019aggregate",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goldman Sachs]]",
+      "resolved": "urn:visionflow:linked:goldman-sachs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Grayscale]]",
+      "resolved": "urn:visionflow:linked:grayscale",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hard Fork]]",
+      "resolved": "urn:visionflow:linked:hard-fork",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[https://doi.org/10.48550/arxiv.2208.01908]]",
+      "resolved": "urn:visionflow:linked:https-doi-org-10-48550-arxiv-2208-01908",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hyperbitcoinization]]",
+      "resolved": "urn:visionflow:linked:hyperbitcoinization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IMF]]",
+      "resolved": "urn:visionflow:linked:imf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Iran]]",
+      "resolved": "urn:visionflow:linked:iran",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jurisdictional Arbitrage]]",
+      "resolved": "urn:visionflow:linked:jurisdictional-arbitrage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[krawisz2014hyperbitcoinization]]",
+      "resolved": "urn:visionflow:linked:krawisz2014hyperbitcoinization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KYC]]",
+      "resolved": "urn:visionflow:linked:kyc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquidity Crisis]]",
+      "resolved": "urn:visionflow:linked:liquidity-crisis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Litecoin]]",
+      "resolved": "urn:visionflow:linked:litecoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lowery2023]]",
+      "resolved": "urn:visionflow:linked:lowery2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[malherbe2019cryptocurrencies]]",
+      "resolved": "urn:visionflow:linked:malherbe2019cryptocurrencies",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mastercard]]",
+      "resolved": "urn:visionflow:linked:mastercard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monetary Policy]]",
+      "resolved": "urn:visionflow:linked:monetary-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[moser2013inquiry]]",
+      "resolved": "urn:visionflow:linked:moser2013inquiry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nassim Taleb]]",
+      "resolved": "urn:visionflow:linked:nassim-taleb",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Network State]]",
+      "resolved": "urn:visionflow:linked:network-state",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paper Bitcoin]]",
+      "resolved": "urn:visionflow:linked:paper-bitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PayPal]]",
+      "resolved": "urn:visionflow:linked:pay-pal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Re-org Attack]]",
+      "resolved": "urn:visionflow:linked:re-org-attack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rehypothecation]]",
+      "resolved": "urn:visionflow:linked:rehypothecation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sam Bankman-Fried]]",
+      "resolved": "urn:visionflow:linked:sam-bankman-fried",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sanctions]]",
+      "resolved": "urn:visionflow:linked:sanctions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Satoshi Nakamoto]]",
+      "resolved": "urn:visionflow:linked:satoshi-nakamoto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SEC]]",
+      "resolved": "urn:visionflow:linked:sec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Securities and Exchange Commission]]",
+      "resolved": "urn:visionflow:linked:securities-and-exchange-commission",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Self-Custody]]",
+      "resolved": "urn:visionflow:linked:self-custody",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Srinivasan2022]]",
+      "resolved": "urn:visionflow:linked:srinivasan2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stablecoins]]",
+      "resolved": "urn:visionflow:linked:stablecoins",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stratum V2]]",
+      "resolved": "urn:visionflow:linked:stratum-v2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SWIFT]]",
+      "resolved": "urn:visionflow:linked:swift",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[taleb2012antifragile]]",
+      "resolved": "urn:visionflow:linked:taleb2012antifragile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tether]]",
+      "resolved": "urn:visionflow:linked:tether",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tor]]",
+      "resolved": "urn:visionflow:linked:tor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tornado Cash]]",
+      "resolved": "urn:visionflow:linked:tornado-cash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trump]]",
+      "resolved": "urn:visionflow:linked:trump",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UNCTAD]]",
+      "resolved": "urn:visionflow:linked:unctad",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[United Nations]]",
+      "resolved": "urn:visionflow:linked:united-nations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[US Treasury]]",
+      "resolved": "urn:visionflow:linked:us-treasury",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[USDC]]",
+      "resolved": "urn:visionflow:linked:usdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UTXO]]",
+      "resolved": "urn:visionflow:linked:utxo",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UTXOs]]",
+      "resolved": "urn:visionflow:linked:utxos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VISA]]",
+      "resolved": "urn:visionflow:linked:visa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[warren2023bitcoin]]",
+      "resolved": "urn:visionflow:linked:warren2023bitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Western Union]]",
+      "resolved": "urn:visionflow:linked:western-union",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wouters2022]]",
+      "resolved": "urn:visionflow:linked:wouters2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin ETF]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin-etf",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Block Reward]]",
+      "resolved": "urn:visionflow:owl:class:block-reward",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CBDCs]]",
+      "resolved": "urn:visionflow:owl:class:cbdcs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[central bank digital currency]]",
+      "resolved": "urn:visionflow:owl:class:central-bank-digital-currency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Finance (DeFi)]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Double-Spending]]",
+      "resolved": "urn:visionflow:owl:class:double-spending",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Halving]]",
+      "resolved": "urn:visionflow:owl:class:halving",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning and Similar L2]]",
+      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mining]]",
+      "resolved": "urn:visionflow:owl:class:mining",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof of Work]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quantum Computing]]",
+      "resolved": "urn:visionflow:owl:class:quantum-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stablecoin]]",
+      "resolved": "urn:visionflow:owl:class:stablecoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c2f3f7c8d5993d02c75b82a3d3817c40375181a8306c4103de7bb5c2ae7ebc48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Comprehensive analysis of risks associated with digital assets, particularly [[Bitcoin]], encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems
@@ -110,7 +1190,7 @@ public:: true
 					- Ensuring comprehensive financial regulation, through the following actions:
 					- Require the mandatory registration of crypto-exchanges and digital wallets and make the use of cryptocurrencies less attractive, for example by charging entry fees for crypto-exchanges and digital wallets and/or imposing financial transaction taxes on cryptocurrency trading;
 					- Ban regulated financial institutions from holding [[Stablecoins]] and cryptocurrencies or offering related products to clients;
-					- Regulate [[Decentralized Finance]] ([[DeFi]]) (such finance may, in fact, not be fully decentralized, given its central management and ownership, which form an entry point for regulation);
+					- Regulate [[Decentralized Finance (DeFi)]] ([[DeFi]]) (such finance may, in fact, not be fully decentralized, given its central management and ownership, which form an entry point for regulation);
 					- Restricting or prohibiting the advertisement of crypto-exchanges and digital wallets in public spaces and on social media. This new type of virtual, and often disguised, advertisement requires policymakers to expand the scope of regulation beyond traditional media. This is an urgent need in terms of consumer protection in countries with low levels of financial literacy, as even limited exposure to cryptocurrencies may lead to significant losses;
 					- Creating a public payment system to serve as a public good, such as a [[central bank digital currency]] ([[CBDC]]). In the light of the regulatory and technological complexity of [[central bank digital currencies]] and the urgent need to provide safe, reliable and affordable payment systems, authorities could also examine other possibilities, including fast retail payment systems.
 			- This is tough talk. We have seen that the [[IMF]] is willing to make their loans contingent on such regulation, and are increasingly [talking about banning](https://www.imf.org/en/News/Articles/2023/02/23/pr2351-imf-executive-board-discusses-elements-of-effective-policies-for-crypto-assets) the technology. This global response to the technology is a significant headwind, but like the internet itself, it's very hard to actually stop these products being used.

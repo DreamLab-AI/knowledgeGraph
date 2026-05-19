@@ -1,0 +1,704 @@
+{
+  "id": "urn:visionflow:page:82819bb6377f05b617c4981c8546781a430d4bbb884d7a20dd58aaaf5283572b",
+  "title": "AI Adoption",
+  "slug": "ai-adoption",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-adoption",
+  "domain": "artificial-intelligence",
+  "definition": "**AI Adoption** is the multi-dimensional socio-technical process by which organisations, sectors, national economies and individual workers progressively integrate artificial-intelligence systems \u2014 classical machine learning, deep learning, foundation models, generative AI and agentic AI \u2014 into productive workflows, decision-making pipelines, products, services and governance structures, measured through complementary lenses of **diffusion** (share of organisations using AI in at least one business function, which rose from 55% in 2023 to 78% in 2024 to 88% in 2025 according to the McKinsey *State of AI* survey series and corroborated by the Stanford HAI *AI Index Report 2025*), **depth** (number of business functions using AI per organisation, with two-thirds of adopters now deploying across multiple functions and half across three or more by late 2025), **modality mix** (the rapid shift from narrow predictive ML through 2022 to generative AI dominating new deployments 2023-2025 with 72% generative AI adoption by 2025 up >65% year-on-year, and a 2025-2026 transition toward agentic AI with 17% enterprise deployment and 60%+ planning within 24 months per the 2026 Gartner CIO Survey)",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "id": "urn:visionflow:linked:organisational-change",
+      "label": "Organisational Change"
+    },
+    {
+      "id": "urn:visionflow:linked:socio-technical-process",
+      "label": "Socio-Technical Process"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-strategy",
+        "label": "AI Strategy"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-talent-capacity",
+        "label": "AI Talent Capacity"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-use-case-portfolio",
+        "label": "AI Use Case Portfolio"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-vendor-stack",
+        "label": "AI Vendor Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:change-management-programme",
+        "label": "Change Management Programme"
+      },
+      {
+        "id": "urn:visionflow:linked:data-foundation",
+        "label": "Data Foundation"
+      },
+      {
+        "id": "urn:visionflow:linked:mlops-infrastructure",
+        "label": "MLOps Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "id": "urn:visionflow:linked:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:visionflow:linked:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:executive-sponsorship",
+        "label": "Executive Sponsorship"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cost-reduction",
+        "label": "Cost Reduction"
+      },
+      {
+        "id": "urn:visionflow:linked:customer-experience-enhancement",
+        "label": "Customer Experience Enhancement"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-augmentation",
+        "label": "Decision Augmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:innovation-velocity",
+        "label": "Innovation Velocity"
+      },
+      {
+        "id": "urn:visionflow:linked:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:productivity-improvement",
+        "label": "Productivity Improvement"
+      },
+      {
+        "id": "urn:visionflow:linked:revenue-growth",
+        "label": "Revenue Growth"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:diffusion-of-innovations-theory",
+        "label": "Diffusion of Innovations Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:stage-gate-adoption-process",
+        "label": "Stage-Gate Adoption Process"
+      },
+      {
+        "id": "urn:visionflow:linked:technology-acceptance-model",
+        "label": "Technology Acceptance Model"
+      },
+      {
+        "id": "urn:visionflow:linked:toe-framework",
+        "label": "TOE Framework"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acemoglu-restrepo-2024-simple-macroeconomics-of-ai-nber",
+      "label": "Acemoglu Restrepo 2024 Simple Macroeconomics of AI NBER"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "ai-investment-cycle",
+      "label": "AI Investment Cycle"
+    },
+    {
+      "slug": "ai-productivity-paradox",
+      "label": "AI Productivity Paradox"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "ai-rejection",
+      "label": "AI Rejection"
+    },
+    {
+      "slug": "ai-strategy",
+      "label": "AI Strategy"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "ai-talent-capacity",
+      "label": "AI Talent Capacity"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-use-case-portfolio",
+      "label": "AI Use Case Portfolio"
+    },
+    {
+      "slug": "ai-vendor-stack",
+      "label": "AI Vendor Stack"
+    },
+    {
+      "slug": "bcg-where-is-the-value-in-ai-2024",
+      "label": "BCG Where Is the Value in AI 2024"
+    },
+    {
+      "slug": "brynjolfsson-li-raymond-2023-generative-ai-at-work-nber-31161",
+      "label": "Brynjolfsson Li Raymond 2023 Generative AI at Work NBER 31161"
+    },
+    {
+      "slug": "brynjolfsson-mc-afee-2014-second-machine-age",
+      "label": "Brynjolfsson McAfee 2014 Second Machine Age"
+    },
+    {
+      "slug": "brynjolfsson-rock-syverson-2021-productivity-j-curve",
+      "label": "Brynjolfsson Rock Syverson 2021 Productivity J-Curve"
+    },
+    {
+      "slug": "build-internally-only-posture",
+      "label": "Build-Internally-Only Posture"
+    },
+    {
+      "slug": "change-management",
+      "label": "Change Management"
+    },
+    {
+      "slug": "change-management-programme",
+      "label": "Change Management Programme"
+    },
+    {
+      "slug": "copilot-systems",
+      "label": "Copilot Systems"
+    },
+    {
+      "slug": "cost-reduction",
+      "label": "Cost Reduction"
+    },
+    {
+      "slug": "customer-experience-enhancement",
+      "label": "Customer Experience Enhancement"
+    },
+    {
+      "slug": "data-foundation",
+      "label": "Data Foundation"
+    },
+    {
+      "slug": "data-infrastructure",
+      "label": "Data Infrastructure"
+    },
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
+      "slug": "davis-1989-technology-acceptance-model",
+      "label": "Davis 1989 Technology Acceptance Model"
+    },
+    {
+      "slug": "decision-augmentation",
+      "label": "Decision Augmentation"
+    },
+    {
+      "slug": "di-maggio-powell-1983-institutional-isomorphism",
+      "label": "DiMaggio Powell 1983 Institutional Isomorphism"
+    },
+    {
+      "slug": "diffusion-of-innovations-theory",
+      "label": "Diffusion of Innovations Theory"
+    },
+    {
+      "slug": "digital-transformation-domain",
+      "label": "DigitalTransformationDomain"
+    },
+    {
+      "slug": "dora-2024-ai-in-software-development",
+      "label": "DORA 2024 AI in Software Development"
+    },
+    {
+      "slug": "economic-growth",
+      "label": "Economic Growth"
+    },
+    {
+      "slug": "enterprise-strategy-domain",
+      "label": "EnterpriseStrategyDomain"
+    },
+    {
+      "slug": "eu-regulation-2024-1689-ai-act",
+      "label": "EU Regulation 2024-1689 AI Act"
+    },
+    {
+      "slug": "executive-sponsorship",
+      "label": "Executive Sponsorship"
+    },
+    {
+      "slug": "foundation-model-availability",
+      "label": "Foundation Model Availability"
+    },
+    {
+      "slug": "foundation-model-race",
+      "label": "Foundation Model Race"
+    },
+    {
+      "slug": "gartner-hype-cycle-for-agentic-ai-2026",
+      "label": "Gartner Hype Cycle for Agentic AI 2026"
+    },
+    {
+      "slug": "gartner-strategic-predictions-for-2026",
+      "label": "Gartner Strategic Predictions for 2026"
+    },
+    {
+      "slug": "generative-ai-boom",
+      "label": "Generative AI Boom"
+    },
+    {
+      "slug": "global-economy-layer",
+      "label": "GlobalEconomyLayer"
+    },
+    {
+      "slug": "goldin-katz-2008-race-between-education-and-technology",
+      "label": "Goldin Katz 2008 Race Between Education and Technology"
+    },
+    {
+      "slug": "ibm-global-ai-adoption-index-2024",
+      "label": "IBM Global AI Adoption Index 2024"
+    },
+    {
+      "slug": "idc-worldwide-ai-spending-guide-2025",
+      "label": "IDC Worldwide AI Spending Guide 2025"
+    },
+    {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "slug": "innovation-economics-domain",
+      "label": "InnovationEconomicsDomain"
+    },
+    {
+      "slug": "innovation-velocity",
+      "label": "Innovation Velocity"
+    },
+    {
+      "slug": "investor-capital",
+      "label": "Investor Capital"
+    },
+    {
+      "slug": "iso-iec-42001-ai-management-system",
+      "label": "ISO/IEC 42001 AI Management System"
+    },
+    {
+      "slug": "manual-operation",
+      "label": "Manual Operation"
+    },
+    {
+      "slug": "mc-kinsey-state-of-ai-2025-report",
+      "label": "McKinsey State of AI 2025 Report"
+    },
+    {
+      "slug": "mc-kinsey-state-of-ai-november-2025-update",
+      "label": "McKinsey State of AI November 2025 Update"
+    },
+    {
+      "slug": "mlops-infrastructure",
+      "label": "MLOps Infrastructure"
+    },
+    {
+      "slug": "moore-1991-crossing-the-chasm",
+      "label": "Moore 1991 Crossing the Chasm"
+    },
+    {
+      "slug": "national-competitiveness",
+      "label": "National Competitiveness"
+    },
+    {
+      "slug": "national-economy-layer",
+      "label": "NationalEconomyLayer"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "noy-zhang-2023-gen-ai-productivity-science",
+      "label": "Noy Zhang 2023 GenAI Productivity Science"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "oecd-ai-principles-updated-2025",
+      "label": "OECD AI Principles Updated 2025"
+    },
+    {
+      "slug": "open-ai-state-of-enterprise-ai-2025",
+      "label": "OpenAI State of Enterprise AI 2025"
+    },
+    {
+      "slug": "organisational-change",
+      "label": "Organisational Change"
+    },
+    {
+      "slug": "organisational-layer",
+      "label": "OrganisationalLayer"
+    },
+    {
+      "slug": "organisational-learning",
+      "label": "Organisational Learning"
+    },
+    {
+      "slug": "outsourcing-strategy",
+      "label": "Outsourcing Strategy"
+    },
+    {
+      "slug": "pre-ai-digital-transformation",
+      "label": "Pre-AI Digital Transformation"
+    },
+    {
+      "slug": "process-automation",
+      "label": "Process Automation"
+    },
+    {
+      "slug": "productivity-improvement",
+      "label": "Productivity Improvement"
+    },
+    {
+      "slug": "public-service-modernisation",
+      "label": "Public Service Modernisation"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
+      "slug": "revenue-growth",
+      "label": "Revenue Growth"
+    },
+    {
+      "slug": "risk-management-framework",
+      "label": "Risk Management Framework"
+    },
+    {
+      "slug": "rogers-1962-diffusion-of-innovations",
+      "label": "Rogers 1962 Diffusion of Innovations"
+    },
+    {
+      "slug": "sector-layer",
+      "label": "SectorLayer"
+    },
+    {
+      "slug": "sectoral-productivity",
+      "label": "Sectoral Productivity"
+    },
+    {
+      "slug": "skilled-workforce",
+      "label": "Skilled Workforce"
+    },
+    {
+      "slug": "socio-technical-process",
+      "label": "Socio-Technical Process"
+    },
+    {
+      "slug": "stage-gate-adoption-process",
+      "label": "Stage-Gate Adoption Process"
+    },
+    {
+      "slug": "stanford-hai-ai-index-report-2025",
+      "label": "Stanford HAI AI Index Report 2025"
+    },
+    {
+      "slug": "stanford-hai-ai-index-report-2026",
+      "label": "Stanford HAI AI Index Report 2026"
+    },
+    {
+      "slug": "technology-acceptance-model",
+      "label": "Technology Acceptance Model"
+    },
+    {
+      "slug": "toe-framework",
+      "label": "TOE Framework"
+    },
+    {
+      "slug": "tornatzky-fleischer-1990-toe-framework",
+      "label": "Tornatzky Fleischer 1990 TOE Framework"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan",
+      "label": "UK AI Opportunities Action Plan"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan-january-2025-cp-1241",
+      "label": "UK AI Opportunities Action Plan January 2025 CP 1241"
+    },
+    {
+      "slug": "uk-aisi-frontier-ai-trends-report-2025",
+      "label": "UK AISI Frontier AI Trends Report 2025"
+    },
+    {
+      "slug": "us-ai-action-plan-2025",
+      "label": "US AI Action Plan 2025"
+    },
+    {
+      "slug": "venkatesh-2003-utaut",
+      "label": "Venkatesh 2003 UTAUT"
+    },
+    {
+      "slug": "wef-future-of-jobs-report-2025",
+      "label": "WEF Future of Jobs Report 2025"
+    },
+    {
+      "slug": "white-house-americas-ai-action-plan-july-2025",
+      "label": "White House Americas AI Action Plan July 2025"
+    },
+    {
+      "slug": "workforce-transformation",
+      "label": "Workforce Transformation"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "predictive-analytics",
+      "label": "Predictive Analytics"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

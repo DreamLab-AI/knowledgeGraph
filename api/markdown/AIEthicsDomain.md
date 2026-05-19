@@ -1,20 +1,191 @@
-iri:: http://narrativegoldmine.com/ontology#AIEthicsDomain
-uri:: urn:visionclaw:concept:artificial-intelligence:aiethicsdomain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:aiethicsdomain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AIEthicsDomain
-content-hash:: sha256-12-e13fcea0cff9
-status:: stub
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#AIEthicsDomain
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:aiethicsdomain
 public:: true
+
+# AIEthicsDomain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e",
+  "@type": "Page",
+  "vc:slug": "aiethics-domain",
+  "title": "AIEthicsDomain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e13fcea0cff9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#AIEthicsDomain"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AIEthicsDomain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aiethicsdomain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aiethicsdomain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:aiethics-domain",
+  "@type": "OntologyClass",
+  "label": "AIEthicsDomain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The AIEthicsDomain represents the comprehensive knowledge domain of ethical considerations, fairness principles, governance frameworks, and accountability mechanisms in artificial intelligence systems. This domain encompasses the theoretical foundations and practical methodologies for ensuring AI systems are developed, deployed, and operated in ways that are fair, transparent, accountable, and aligned with human values. It includes fairness metrics and definitions, bias detection and mitigation techniques, algorithmic accountability frameworks, transparency and explainability methods, AI governance structures, ethical decision-making frameworks, impact assessment methodologies, and responsible AI development practices. The domain spans from fundamental fairness concepts and mathematical formulations to organizational governance structures and regulatory compliance frameworks. It addresses critical challenges including algorithmic discrimination, disparate impact, group vs individual fairness tradeoffs, intersectional fairness considerations, fairness-accuracy tradeoffs, and the social implications of AI deployment across diverse contexts and populations.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:aiethics-domain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The AIEthicsDomain represents the comprehensive knowledge domain of ethical considerations, fairness principles, governance frameworks, and accountability mechanisms in artificial intelligence systems. This domain encompasses the theoretical foundations and practical methodologies for ensuring AI systems are developed, deployed, and operated in ways that are fair, transparent, accountable, and aligned with human values. It includes fairness metrics and definitions, bias detection and mitigation techniques, algorithmic accountability frameworks, transparency and explainability methods, AI governance structures, ethical decision-making frameworks, impact assessment methodologies, and responsible AI development practices. The domain spans from fundamental fairness concepts and mathematical formulations to organizational governance structures and regulatory compliance frameworks. It addresses critical challenges including algorithmic discrimination, disparate impact, group vs individual fairness tradeoffs, intersectional fairness considerations, fairness-accuracy tradeoffs, and the social implications of AI deployment across diverse contexts and populations.

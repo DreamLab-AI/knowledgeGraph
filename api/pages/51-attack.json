@@ -1,0 +1,264 @@
+{
+  "id": "urn:visionflow:page:61986621941769792830c59c2be66e9fd4019ea25ed77ea19408e21d59fa621e",
+  "title": "51% Attack",
+  "slug": "51-attack",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:51-attack",
+  "domain": "blockchain",
+  "definition": "51% Attack is a concept within the bc domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "altcoins",
+      "label": "altcoins"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "bitcoin-gold",
+      "label": "Bitcoin Gold"
+    },
+    {
+      "slug": "blockchain-reorganization",
+      "label": "blockchain reorganization"
+    },
+    {
+      "slug": "blockchain-reorganization",
+      "label": "Blockchain Reorganization"
+    },
+    {
+      "slug": "blockchain-security",
+      "label": "blockchain security"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "consensus",
+      "label": "consensus"
+    },
+    {
+      "slug": "consensus-attack",
+      "label": "Consensus Attack"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "consensus mechanisms"
+    },
+    {
+      "slug": "cryptocurrencies",
+      "label": "cryptocurrencies"
+    },
+    {
+      "slug": "cryptographic",
+      "label": "cryptographic"
+    },
+    {
+      "slug": "ddo-s-attack",
+      "label": "DDoS attack"
+    },
+    {
+      "slug": "decred",
+      "label": "Decred"
+    },
+    {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "hash-rate",
+      "label": "hash rate"
+    },
+    {
+      "slug": "hash-rate",
+      "label": "Hash Rate"
+    },
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "majority-attack",
+      "label": "Majority attack"
+    },
+    {
+      "slug": "mining-hardware",
+      "label": "mining hardware"
+    },
+    {
+      "slug": "mining-pools",
+      "label": "mining pools"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "nice-hash",
+      "label": "NiceHash"
+    },
+    {
+      "slug": "nist-cybersecurity-framework",
+      "label": "NIST Cybersecurity Framework"
+    },
+    {
+      "slug": "nist-nistir-8202",
+      "label": "NIST NISTIR 8202"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "private-keys",
+      "label": "private keys"
+    },
+    {
+      "slug": "quantum-resistant",
+      "label": "quantum-resistant"
+    },
+    {
+      "slug": "qubic",
+      "label": "Qubic"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "transaction-censorship",
+      "label": "transaction censorship"
+    },
+    {
+      "slug": "transactions",
+      "label": "transactions"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "cryptocurrency"
+    },
+    {
+      "slug": "double-spending",
+      "label": "double-spending"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double-spending"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double-Spending"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "finality",
+      "label": "Finality"
+    },
+    {
+      "slug": "mining",
+      "label": "mining"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "mining pool"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
+      "slug": "transaction",
+      "label": "transaction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

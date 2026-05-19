@@ -1,0 +1,246 @@
+{
+  "id": "urn:visionflow:page:dfb20f4f2ed140dc7b20a523c3514b8d3377140f29ffd70bf901923512ea674b",
+  "title": "Open World",
+  "slug": "open-world",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:open-world",
+  "domain": "spatial-computing",
+  "definition": "A game design paradigm featuring large-scale virtual environments with non-linear progression, extensive player freedom, emergent gameplay, and exploratory mechanics that allow users to interact with the world in diverse ways beyond predetermined narrative paths.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:dynamic-world",
+        "label": "Dynamic World"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      },
+      {
+        "id": "urn:visionflow:linked:exploration-system",
+        "label": "Exploration System"
+      },
+      {
+        "id": "urn:visionflow:linked:free-roaming",
+        "label": "Free Roaming"
+      },
+      {
+        "id": "urn:visionflow:linked:multiple-objectives",
+        "label": "Multiple Objectives"
+      },
+      {
+        "id": "urn:visionflow:linked:player-agency",
+        "label": "Player Agency"
+      },
+      {
+        "id": "urn:visionflow:linked:quest-system",
+        "label": "Quest System"
+      },
+      {
+        "id": "urn:visionflow:linked:sandbox-mechanics",
+        "label": "Sandbox Mechanics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-linear-narrative",
+        "label": "Non-Linear Narrative"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-system",
+        "label": "AI System"
+      },
+      {
+        "id": "urn:visionflow:linked:state-management",
+        "label": "State Management"
+      },
+      {
+        "id": "urn:visionflow:linked:streaming-technology",
+        "label": "Streaming Technology"
+      },
+      {
+        "id": "urn:visionflow:owl:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:creative-expression",
+        "label": "Creative Expression"
+      },
+      {
+        "id": "urn:visionflow:linked:emergent-behavior",
+        "label": "Emergent Behavior"
+      },
+      {
+        "id": "urn:visionflow:linked:exploration",
+        "label": "Exploration"
+      },
+      {
+        "id": "urn:visionflow:linked:player-choice",
+        "label": "Player Choice"
+      },
+      {
+        "id": "urn:visionflow:linked:sandbox-creation",
+        "label": "Sandbox Creation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-linear-storytelling",
+        "label": "Non-Linear Storytelling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-rendering",
+      "label": "3D Rendering"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "content-creation-tools",
+      "label": "Content Creation Tools"
+    },
+    {
+      "slug": "creative-expression",
+      "label": "Creative Expression"
+    },
+    {
+      "slug": "dynamic-world",
+      "label": "Dynamic World"
+    },
+    {
+      "slug": "emergent-behavior",
+      "label": "Emergent Behavior"
+    },
+    {
+      "slug": "emergent-gameplay",
+      "label": "Emergent Gameplay"
+    },
+    {
+      "slug": "exploration",
+      "label": "Exploration"
+    },
+    {
+      "slug": "exploration-system",
+      "label": "Exploration System"
+    },
+    {
+      "slug": "free-roaming",
+      "label": "Free Roaming"
+    },
+    {
+      "slug": "game-design-patterns",
+      "label": "Game Design Patterns"
+    },
+    {
+      "slug": "gdc",
+      "label": "GDC"
+    },
+    {
+      "slug": "level-design",
+      "label": "Level Design"
+    },
+    {
+      "slug": "multiple-objectives",
+      "label": "Multiple Objectives"
+    },
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
+    },
+    {
+      "slug": "player-agency",
+      "label": "Player Agency"
+    },
+    {
+      "slug": "player-choice",
+      "label": "Player Choice"
+    },
+    {
+      "slug": "quest-system",
+      "label": "Quest System"
+    },
+    {
+      "slug": "sandbox-creation",
+      "label": "Sandbox Creation"
+    },
+    {
+      "slug": "sandbox-mechanics",
+      "label": "Sandbox Mechanics"
+    },
+    {
+      "slug": "state-management",
+      "label": "State Management"
+    },
+    {
+      "slug": "streaming-technology",
+      "label": "Streaming Technology"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "non-linear-narrative",
+      "label": "Non-Linear Narrative"
+    },
+    {
+      "slug": "non-linear-storytelling",
+      "label": "Non-Linear Storytelling"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "Procedural Generation"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": []
+}

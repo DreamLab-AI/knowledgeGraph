@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:8aa0f12996379ea27dd838c5a344717720027c0e1b91350822e56e626c7d372f",
+  "title": "Diffusion Models",
+  "slug": "diffusion-models",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:diffusion-models",
+  "domain": "artificial-intelligence",
+  "definition": "Diffusion Models are a class of deep generative models that learn the data distribution p_data(x) by reversing a fixed forward Markov noising process q(x_t | x_{t-1}) that progressively corrupts data x_0 with Gaussian noise across T timesteps until x_T \u2248 N(0,I), then training a neural denoiser \u03b5_\u03b8(x_t, t) (or equivalently a score network s_\u03b8(x_t, t) \u2248 \u2207_{x_t} log p_t(x_t)) to predict the noise (or score) at each level so that ancestral sampling from x_T back to x_0 produces samples from p_data \u2014 introduced in nascent form by Sohl-Dickstein, Weiss, Maheswaranathan and Ganguli at Stanford and Janelia in their 2015 ICML paper \"Deep Unsupervised Learning using Nonequilibrium Thermodynamics\" connecting variational inference with non-equilibrium statistical physics, made practically viable for high-fidelity image synthesis by Ho, Jain and Abbeel (UC Berkeley) in their 2020 NeurIPS paper \"Denoising Diffusion Probabilistic Models\" (DDPM) which simplified the variational training objective to a weighted noise-prediction MSE L_simple = E_{t,x_0,\u03b5}[\u2016\u03b5 \u2212 \u03b5_\u03b8(\u221a(\u1fb1_t)x_0 + \u221a(1\u2212\u1fb1_t)\u03b5, t)\u2016\u00b2] under a cosine or linear \u03b2-schedule with T=1000 steps, paralleled by Song and Ermon (Stanford) whose 2019 Ne",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "id": "urn:visionflow:linked:latent-variable-model",
+      "label": "Latent Variable Model"
+    },
+    {
+      "id": "urn:visionflow:linked:markov-chain-model",
+      "label": "Markov Chain Model"
+    },
+    {
+      "id": "urn:visionflow:linked:score-based-model",
+      "label": "Score-Based Model"
+    },
+    {
+      "id": "urn:visionflow:owl:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:forward-noising-process",
+        "label": "Forward Noising Process"
+      },
+      {
+        "id": "urn:visionflow:linked:noise-schedule",
+        "label": "Noise Schedule"
+      },
+      {
+        "id": "urn:visionflow:linked:reverse-denoising-process",
+        "label": "Reverse Denoising Process"
+      },
+      {
+        "id": "urn:visionflow:linked:sampler",
+        "label": "Sampler"
+      },
+      {
+        "id": "urn:visionflow:linked:score-network",
+        "label": "Score Network"
+      },
+      {
+        "id": "urn:visionflow:linked:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-lower-bound",
+        "label": "Variational Lower Bound"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-distribution",
+        "label": "Training Data Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "id": "urn:visionflow:linked:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:video-synthesis",
+        "label": "Video Synthesis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:super-resolution",
+        "label": "Super Resolution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:denoising-score-matching",
+        "label": "Denoising Score Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:rectified-flow",
+        "label": "Rectified Flow"
+      },
+      {
+        "id": "urn:visionflow:linked:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-lower-bound-maximisation",
+        "label": "Variational Lower Bound Maximisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "abramson-et-al-2024-alpha-fold-3",
+      "label": "Abramson et al. 2024 AlphaFold 3"
+    },
+    {
+      "slug": "albergo-and-vanden-eijnden-2023-stochastic-interpolants",
+      "label": "Albergo & Vanden-Eijnden 2023 Stochastic Interpolants"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "blattmann-et-al-2023-stable-video-diffusion",
+      "label": "Blattmann et al. 2023 Stable Video Diffusion"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clip-encoder",
+      "label": "CLIP Encoder"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    },
+    {
+      "slug": "croitoru-et-al-2023-diffusion-models-vision-survey",
+      "label": "Croitoru et al. 2023 Diffusion Models Vision Survey"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "denoising-score-matching",
+      "label": "Denoising Score Matching"
+    },
+    {
+      "slug": "dhariwal-and-nichol-2021-diffusion-beats-gans",
+      "label": "Dhariwal & Nichol 2021 Diffusion Beats GANs"
+    },
+    {
+      "slug": "differentiable-architecture",
+      "label": "Differentiable Architecture"
+    },
+    {
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "energy-based-model",
+      "label": "Energy-Based Model"
+    },
+    {
+      "slug": "esser-et-al-2024-sd3-mmdi-t-rectified-flow",
+      "label": "Esser et al. 2024 SD3 MMDiT Rectified Flow"
+    },
+    {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "forward-noising-process",
+      "label": "Forward Noising Process"
+    },
+    {
+      "slug": "game-asset-generation",
+      "label": "Game Asset Generation"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "ho-and-salimans-2022-classifier-free-guidance",
+      "label": "Ho & Salimans 2022 Classifier-Free Guidance"
+    },
+    {
+      "slug": "ho-et-al-2020-ddpm",
+      "label": "Ho et al. 2020 DDPM"
+    },
+    {
+      "slug": "ho-et-al-2022-video-diffusion-models",
+      "label": "Ho et al. 2022 Video Diffusion Models"
+    },
+    {
+      "slug": "iclr",
+      "label": "ICLR"
+    },
+    {
+      "slug": "icml",
+      "label": "ICML"
+    },
+    {
+      "slug": "image-editing",
+      "label": "Image Editing"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "karras-et-al-2022-edm",
+      "label": "Karras et al. 2022 EDM"
+    },
+    {
+      "slug": "latent-variable-model",
+      "label": "Latent Variable Model"
+    },
+    {
+      "slug": "lipman-et-al-2023-flow-matching",
+      "label": "Lipman et al. 2023 Flow Matching"
+    },
+    {
+      "slug": "liu-et-al-2022-rectified-flow",
+      "label": "Liu et al. 2022 Rectified Flow"
+    },
+    {
+      "slug": "lu-et-al-2022-dpm-solver",
+      "label": "Lu et al. 2022 DPM-Solver"
+    },
+    {
+      "slug": "luo-et-al-2023-lcm",
+      "label": "Luo et al. 2023 LCM"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "markov-chain-model",
+      "label": "Markov Chain Model"
+    },
+    {
+      "slug": "medical-image-synthesis",
+      "label": "Medical Image Synthesis"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "nichol-and-dhariwal-2021-improved-ddpm",
+      "label": "Nichol & Dhariwal 2021 Improved DDPM"
+    },
+    {
+      "slug": "noise-schedule",
+      "label": "Noise Schedule"
+    },
+    {
+      "slug": "nonequilibrium-thermodynamics",
+      "label": "Nonequilibrium Thermodynamics"
+    },
+    {
+      "slug": "normalising-flow",
+      "label": "Normalising Flow"
+    },
+    {
+      "slug": "peebles-and-xie-2023-di-t",
+      "label": "Peebles & Xie 2023 DiT"
+    },
+    {
+      "slug": "podell-et-al-2023-sdxl",
+      "label": "Podell et al. 2023 SDXL"
+    },
+    {
+      "slug": "poole-et-al-2022-dream-fusion",
+      "label": "Poole et al. 2022 DreamFusion"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "ramesh-et-al-2022-dall-e-2-un-clip",
+      "label": "Ramesh et al. 2022 DALL-E 2 unCLIP"
+    },
+    {
+      "slug": "rectified-flow",
+      "label": "Rectified Flow"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "reverse-denoising-process",
+      "label": "Reverse Denoising Process"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-stable-diffusion",
+      "label": "Rombach et al. 2022 Latent Diffusion Stable Diffusion"
+    },
+    {
+      "slug": "saharia-et-al-2022-imagen",
+      "label": "Saharia et al. 2022 Imagen"
+    },
+    {
+      "slug": "sampler",
+      "label": "Sampler"
+    },
+    {
+      "slug": "sauer-et-al-2024-adversarial-diffusion-distillation",
+      "label": "Sauer et al. 2024 Adversarial Diffusion Distillation"
+    },
+    {
+      "slug": "score-based-model",
+      "label": "Score-Based Model"
+    },
+    {
+      "slug": "score-network",
+      "label": "Score Network"
+    },
+    {
+      "slug": "sohl-dickstein-et-al-2015-deep-unsupervised-learning-nonequilibrium-thermodynamics",
+      "label": "Sohl-Dickstein et al. 2015 Deep Unsupervised Learning Nonequilibrium Thermodynamics"
+    },
+    {
+      "slug": "song-and-ermon-2019-ncsn",
+      "label": "Song & Ermon 2019 NCSN"
+    },
+    {
+      "slug": "song-et-al-2021-score-based-sde",
+      "label": "Song et al. 2021 Score-Based SDE"
+    },
+    {
+      "slug": "song-et-al-2023-consistency-models",
+      "label": "Song et al. 2023 Consistency Models"
+    },
+    {
+      "slug": "song-meng-ermon-2021-ddim",
+      "label": "Song Meng Ermon 2021 DDIM"
+    },
+    {
+      "slug": "stochastic-calculus",
+      "label": "Stochastic Calculus"
+    },
+    {
+      "slug": "stochastic-differential-equation",
+      "label": "Stochastic Differential Equation"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "t5-encoder",
+      "label": "T5 Encoder"
+    },
+    {
+      "slug": "text-encoder",
+      "label": "Text Encoder"
+    },
+    {
+      "slug": "text-to-video",
+      "label": "Text-to-Video"
+    },
+    {
+      "slug": "training-data-distribution",
+      "label": "Training Data Distribution"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "variational-lower-bound",
+      "label": "Variational Lower Bound"
+    },
+    {
+      "slug": "variational-lower-bound-maximisation",
+      "label": "Variational Lower Bound Maximisation"
+    },
+    {
+      "slug": "video-synthesis",
+      "label": "Video Synthesis"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
+    },
+    {
+      "slug": "yang-et-al-2023-diffusion-models-survey",
+      "label": "Yang et al. 2023 Diffusion Models Survey"
+    },
+    {
+      "slug": "ye-et-al-2023-ip-adapter",
+      "label": "Ye et al. 2023 IP-Adapter"
+    },
+    {
+      "slug": "zhang-et-al-2023-control-net",
+      "label": "Zhang et al. 2023 ControlNet"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "super-resolution",
+      "label": "Super Resolution"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "overview-of-machine-learning-techniques",
+      "label": "Overview of Machine Learning Techniques"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

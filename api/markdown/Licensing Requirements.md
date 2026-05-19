@@ -1,21 +1,720 @@
-iri:: http://narrativegoldmine.com/blockchain#LicensingRequirements
-uri:: urn:visionclaw:concept:blockchain:licensing-requirements
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:licensing-requirements
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Licensing Requirements
-content-hash:: sha256-12-a8ac66cf2138
-legacy-term-id:: BC-0488
-status:: stub-needs-content
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#LicensingRequirements
+legacy_uri:: urn:visionclaw:concept:blockchain:licensing-requirements
 public:: true
+
+# Licensing Requirements
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253",
+  "@type": "Page",
+  "vc:slug": "licensing-requirements",
+  "title": "Licensing Requirements",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aave-arc",
+      "vc:label": "Aave Arc"
+    },
+    {
+      "@id": "urn:visionflow:linked:basel-committee",
+      "vc:label": "Basel Committee"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0479-regulatory-compliance",
+      "vc:label": "BC-0479-regulatory-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0480-kyc-requirements",
+      "vc:label": "BC-0480-kyc-requirements"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0481-anti-money-laundering",
+      "vc:label": "BC-0481-anti-money-laundering"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0484-markets-in-crypto-assets",
+      "vc:label": "BC-0484-markets-in-crypto-assets"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0485-travel-rule",
+      "vc:label": "BC-0485-travel-rule"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0486-regulatory-reporting",
+      "vc:label": "BC-0486-regulatory-reporting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0487-compliance-monitoring",
+      "vc:label": "BC-0487-compliance-monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0489-consumer-protection",
+      "vc:label": "BC-0489-consumer-protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0490-cross-border-compliance",
+      "vc:label": "BC-0490-cross-border-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:binance",
+      "vc:label": "Binance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bit-license",
+      "vc:label": "BitLicense"
+    },
+    {
+      "@id": "urn:visionflow:linked:bit-trade",
+      "vc:label": "Bit Trade"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-suisse",
+      "vc:label": "Bitcoin Suisse"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitstamp",
+      "vc:label": "Bitstamp"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-com",
+      "vc:label": "Blockchain.com"
+    },
+    {
+      "@id": "urn:visionflow:linked:chainalysis",
+      "vc:label": "Chainalysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:circle",
+      "vc:label": "Circle"
+    },
+    {
+      "@id": "urn:visionflow:linked:coinbase",
+      "vc:label": "Coinbase"
+    },
+    {
+      "@id": "urn:visionflow:linked:coincheck",
+      "vc:label": "Coincheck"
+    },
+    {
+      "@id": "urn:visionflow:linked:coinhako",
+      "vc:label": "Coinhako"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound-treasury",
+      "vc:label": "Compound Treasury"
+    },
+    {
+      "@id": "urn:visionflow:linked:copper-co",
+      "vc:label": "Copper.co"
+    },
+    {
+      "@id": "urn:visionflow:linked:crypto-com",
+      "vc:label": "Crypto.com"
+    },
+    {
+      "@id": "urn:visionflow:linked:crypto-council-for-innovation",
+      "vc:label": "Crypto Council for Innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptocurrency-exchange",
+      "vc:label": "CryptocurrencyExchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-assets-and-registered-exchanges-act",
+      "vc:label": "Digital Assets and Registered Exchanges Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-toro",
+      "vc:label": "eToro"
+    },
+    {
+      "@id": "urn:visionflow:linked:earn-programme",
+      "vc:label": "Earn programme"
+    },
+    {
+      "@id": "urn:visionflow:linked:exchange-platform",
+      "vc:label": "ExchangePlatform"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf",
+      "vc:label": "FATF"
+    },
+    {
+      "@id": "urn:visionflow:linked:fca",
+      "vc:label": "FCA"
+    },
+    {
+      "@id": "urn:visionflow:linked:finma",
+      "vc:label": "FINMA"
+    },
+    {
+      "@id": "urn:visionflow:linked:fsa",
+      "vc:label": "FSA"
+    },
+    {
+      "@id": "urn:visionflow:linked:ftx",
+      "vc:label": "FTX"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-digital-finance",
+      "vc:label": "Global Digital Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:independent-reserve",
+      "vc:label": "Independent Reserve"
+    },
+    {
+      "@id": "urn:visionflow:linked:iosco",
+      "vc:label": "IOSCO"
+    },
+    {
+      "@id": "urn:visionflow:linked:kraken",
+      "vc:label": "Kraken"
+    },
+    {
+      "@id": "urn:visionflow:linked:luno",
+      "vc:label": "Luno"
+    },
+    {
+      "@id": "urn:visionflow:linked:mas",
+      "vc:label": "MAS"
+    },
+    {
+      "@id": "urn:visionflow:linked:monero",
+      "vc:label": "Monero"
+    },
+    {
+      "@id": "urn:visionflow:linked:money-transmitter-licence",
+      "vc:label": "Money Transmitter Licence"
+    },
+    {
+      "@id": "urn:visionflow:linked:money-transmitter-license",
+      "vc:label": "MoneyTransmitterLicense"
+    },
+    {
+      "@id": "urn:visionflow:linked:nydfs",
+      "vc:label": "NYDFS"
+    },
+    {
+      "@id": "urn:visionflow:linked:paxos",
+      "vc:label": "Paxos"
+    },
+    {
+      "@id": "urn:visionflow:linked:pay-pal",
+      "vc:label": "PayPal"
+    },
+    {
+      "@id": "urn:visionflow:linked:revolut",
+      "vc:label": "Revolut"
+    },
+    {
+      "@id": "urn:visionflow:linked:robinhood-crypto",
+      "vc:label": "Robinhood Crypto"
+    },
+    {
+      "@id": "urn:visionflow:linked:seba-bank",
+      "vc:label": "SEBA Bank"
+    },
+    {
+      "@id": "urn:visionflow:linked:sfc",
+      "vc:label": "SFC"
+    },
+    {
+      "@id": "urn:visionflow:linked:sygnum-bank",
+      "vc:label": "Sygnum Bank"
+    },
+    {
+      "@id": "urn:visionflow:linked:tsubasa-group",
+      "vc:label": "Tsubasa Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:uniswap-labs",
+      "vc:label": "Uniswap Labs"
+    },
+    {
+      "@id": "urn:visionflow:linked:winklevoss",
+      "vc:label": "Winklevoss"
+    },
+    {
+      "@id": "urn:visionflow:linked:zcash",
+      "vc:label": "Zcash"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-framework",
+      "vc:label": "RegulatoryFramework"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a8ac66cf2138"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#LicensingRequirements"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0488"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Licensing Requirements"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:licensing-requirements"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub-needs-content"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:licensing-requirements"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:licensing-requirements",
+  "@type": "OntologyClass",
+  "label": "Licensing Requirements",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub-needs-content",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] ($100K-$1M capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and ongoing compliance reporting. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions with diverse requirements—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity in developed markets (UK, Switzerland, El Salvador) attracts institutional capital.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:licensing-requirements:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Aave Arc]]",
+      "resolved": "urn:visionflow:linked:aave-arc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Basel Committee]]",
+      "resolved": "urn:visionflow:linked:basel-committee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0479-regulatory-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0479-regulatory-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0480-kyc-requirements]]",
+      "resolved": "urn:visionflow:linked:bc-0480-kyc-requirements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0481-anti-money-laundering]]",
+      "resolved": "urn:visionflow:linked:bc-0481-anti-money-laundering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0484-markets-in-crypto-assets]]",
+      "resolved": "urn:visionflow:linked:bc-0484-markets-in-crypto-assets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0485-travel-rule]]",
+      "resolved": "urn:visionflow:linked:bc-0485-travel-rule",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0486-regulatory-reporting]]",
+      "resolved": "urn:visionflow:linked:bc-0486-regulatory-reporting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0487-compliance-monitoring]]",
+      "resolved": "urn:visionflow:linked:bc-0487-compliance-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0489-consumer-protection]]",
+      "resolved": "urn:visionflow:linked:bc-0489-consumer-protection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0490-cross-border-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0490-cross-border-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binance]]",
+      "resolved": "urn:visionflow:linked:binance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BitLicense]]",
+      "resolved": "urn:visionflow:linked:bit-license",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bit Trade]]",
+      "resolved": "urn:visionflow:linked:bit-trade",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Suisse]]",
+      "resolved": "urn:visionflow:linked:bitcoin-suisse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitstamp]]",
+      "resolved": "urn:visionflow:linked:bitstamp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain.com]]",
+      "resolved": "urn:visionflow:linked:blockchain-com",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chainalysis]]",
+      "resolved": "urn:visionflow:linked:chainalysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Circle]]",
+      "resolved": "urn:visionflow:linked:circle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Coinbase]]",
+      "resolved": "urn:visionflow:linked:coinbase",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Coincheck]]",
+      "resolved": "urn:visionflow:linked:coincheck",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Coinhako]]",
+      "resolved": "urn:visionflow:linked:coinhako",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compound Treasury]]",
+      "resolved": "urn:visionflow:linked:compound-treasury",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Copper.co]]",
+      "resolved": "urn:visionflow:linked:copper-co",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crypto.com]]",
+      "resolved": "urn:visionflow:linked:crypto-com",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crypto Council for Innovation]]",
+      "resolved": "urn:visionflow:linked:crypto-council-for-innovation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CryptocurrencyExchange]]",
+      "resolved": "urn:visionflow:linked:cryptocurrency-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Assets and Registered Exchanges Act]]",
+      "resolved": "urn:visionflow:linked:digital-assets-and-registered-exchanges-act",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[eToro]]",
+      "resolved": "urn:visionflow:linked:e-toro",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Earn programme]]",
+      "resolved": "urn:visionflow:linked:earn-programme",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ExchangePlatform|exchange]]",
+      "resolved": "urn:visionflow:linked:exchange-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF]]",
+      "resolved": "urn:visionflow:linked:fatf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FCA]]",
+      "resolved": "urn:visionflow:linked:fca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FINMA]]",
+      "resolved": "urn:visionflow:linked:finma",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FSA]]",
+      "resolved": "urn:visionflow:linked:fsa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FTX]]",
+      "resolved": "urn:visionflow:linked:ftx",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Global Digital Finance]]",
+      "resolved": "urn:visionflow:linked:global-digital-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Independent Reserve]]",
+      "resolved": "urn:visionflow:linked:independent-reserve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IOSCO]]",
+      "resolved": "urn:visionflow:linked:iosco",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kraken]]",
+      "resolved": "urn:visionflow:linked:kraken",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Luno]]",
+      "resolved": "urn:visionflow:linked:luno",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MAS]]",
+      "resolved": "urn:visionflow:linked:mas",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monero]]",
+      "resolved": "urn:visionflow:linked:monero",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Money Transmitter Licence]]",
+      "resolved": "urn:visionflow:linked:money-transmitter-licence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MoneyTransmitterLicense|money transmitter licences]]",
+      "resolved": "urn:visionflow:linked:money-transmitter-license",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NYDFS]]",
+      "resolved": "urn:visionflow:linked:nydfs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paxos]]",
+      "resolved": "urn:visionflow:linked:paxos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PayPal]]",
+      "resolved": "urn:visionflow:linked:pay-pal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Revolut]]",
+      "resolved": "urn:visionflow:linked:revolut",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robinhood Crypto]]",
+      "resolved": "urn:visionflow:linked:robinhood-crypto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SEBA Bank]]",
+      "resolved": "urn:visionflow:linked:seba-bank",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SFC]]",
+      "resolved": "urn:visionflow:linked:sfc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sygnum Bank]]",
+      "resolved": "urn:visionflow:linked:sygnum-bank",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tsubasa Group]]",
+      "resolved": "urn:visionflow:linked:tsubasa-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uniswap Labs]]",
+      "resolved": "urn:visionflow:linked:uniswap-labs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Winklevoss]]",
+      "resolved": "urn:visionflow:linked:winklevoss",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zcash]]",
+      "resolved": "urn:visionflow:linked:zcash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RegulatoryFramework]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-framework",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] ($100K-$1M capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and ongoing compliance reporting. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions with diverse requirements—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity in developed markets (UK, Switzerland, El Salvador) attracts institutional capital.

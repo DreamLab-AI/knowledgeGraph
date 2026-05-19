@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982",
+  "title": "Io T Sensors",
+  "slug": "io-t-sensors",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:io-t-sensors",
+  "domain": "robotics",
+  "definition": "IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis. Modern IoT sensors increasingly incorporate on-device AI/ML accelerators enabling local inference, predictive analytics, and autonomous decision-making without cloud dependency.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:internet-of-things",
+      "label": "Internet of Things"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "5-g-networks",
+      "label": "5G Networks"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "smart-cities",
+      "label": "Smart Cities"
+    },
+    {
+      "slug": "smart-manufacturing",
+      "label": "Smart Manufacturing"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "context-awareness-system",
+      "label": "Context Awareness System"
+    },
+    {
+      "slug": "digital-twin-construction",
+      "label": "Digital Twin Construction"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

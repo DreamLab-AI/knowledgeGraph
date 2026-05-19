@@ -1,0 +1,500 @@
+{
+  "id": "urn:visionflow:page:998e5610815223ff89906f9c974a998d0017212ab2e2d63c4ace5f2491187632",
+  "title": "Stablecoin Regulation",
+  "slug": "stablecoin-regulation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stablecoin-regulation",
+  "domain": "blockchain",
+  "definition": "Stablecoin regulation is the corpus of statutory, administrative, and supervisory rules that national and supranational authorities apply to [[Cryptocurrency|cryptocurrency tokens]] designed to maintain stable value relative to fiat currencies, commodities, or baskets of assets, spanning five concurrent regulatory strata: (1) prudential rules governing capital adequacy, reserve composition, and liquidity\u2014covering the full stack from narrow-bank equivalents through to systemic-designation under [[Financial Stability Board|Financial Stability Board]] frameworks, requiring 100% backing in high-quality liquid assets such as sovereign securities (US Treasuries \u226493-day maturity under the US GENIUS Act, G10 government bonds \u22643-month maturity under Singapore MAS SCS, cash deposits and sovereign bonds under MiCA Title III/IV), monthly independent attestations from registered public accounting firms, and annual comprehensive audits under frameworks including the GENIUS Act (Grant Thornton for USDC, BDO for USDT on quarterly schedules) and MAS SCS; (2) payment-system oversight addressing [[Payments|real-time settlement]] interoperability, access conditions, clearing and finality rules, and op",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:electronic-money-regulation",
+      "label": "Electronic Money Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:monetary-law",
+      "label": "Monetary Law"
+    },
+    {
+      "id": "urn:visionflow:linked:payment-systems-regulation",
+      "label": "Payment Systems Regulation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:consumer-protection",
+      "label": "Consumer Protection"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:attestation-regime",
+        "label": "Attestation Regime"
+      },
+      {
+        "id": "urn:visionflow:linked:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:visionflow:linked:disclosure-standard",
+        "label": "Disclosure Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:licensing-regime",
+        "label": "Licensing Regime"
+      },
+      {
+        "id": "urn:visionflow:linked:recovery-plan",
+        "label": "Recovery Plan"
+      },
+      {
+        "id": "urn:visionflow:linked:redemption-right",
+        "label": "Redemption Right"
+      },
+      {
+        "id": "urn:visionflow:linked:reserve-requirement",
+        "label": "Reserve Requirement"
+      },
+      {
+        "id": "urn:visionflow:linked:systemic-designation",
+        "label": "Systemic Designation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:visionflow:linked:independent-attestation",
+        "label": "Independent Attestation"
+      },
+      {
+        "id": "urn:visionflow:linked:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:visionflow:linked:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-licence",
+        "label": "Regulatory Licence"
+      },
+      {
+        "id": "urn:visionflow:linked:reserve-asset-segregation",
+        "label": "Reserve Asset Segregation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:visionflow:linked:de-fi-integration",
+        "label": "DeFi Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-stablecoin-issuance",
+        "label": "Payment Stablecoin Issuance"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-clarity",
+        "label": "Regulatory Clarity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:fca-regulatory-regime",
+        "label": "FCA Regulatory Regime"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:visionflow:linked:genius-act",
+        "label": "GENIUS Act"
+      },
+      {
+        "id": "urn:visionflow:linked:mas-scs-framework",
+        "label": "MAS SCS Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "attestation-regime",
+      "label": "Attestation Regime"
+    },
+    {
+      "slug": "bank-deposit",
+      "label": "Bank Deposit"
+    },
+    {
+      "slug": "banking-law",
+      "label": "Banking Law"
+    },
+    {
+      "slug": "capital-adequacy",
+      "label": "Capital Adequacy"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "cross-border-payment",
+      "label": "Cross-Border Payment"
+    },
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-fi-integration",
+      "label": "DeFi Integration"
+    },
+    {
+      "slug": "disclosure-standard",
+      "label": "Disclosure Standard"
+    },
+    {
+      "slug": "eba",
+      "label": "EBA"
+    },
+    {
+      "slug": "electronic-money-regulation",
+      "label": "Electronic Money Regulation"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "fca-regulatory-regime",
+      "label": "FCA Regulatory Regime"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "FinancialRegulationDomain"
+    },
+    {
+      "slug": "financial-stability",
+      "label": "Financial Stability"
+    },
+    {
+      "slug": "financial-stability-board",
+      "label": "Financial Stability Board"
+    },
+    {
+      "slug": "financial-stability-board",
+      "label": "Financial Stability Board"
+    },
+    {
+      "slug": "financial-stability-board",
+      "label": "Financial Stability Board"
+    },
+    {
+      "slug": "genius-act",
+      "label": "GENIUS Act"
+    },
+    {
+      "slug": "hkma",
+      "label": "HKMA"
+    },
+    {
+      "slug": "independent-attestation",
+      "label": "Independent Attestation"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "InstitutionalLayer"
+    },
+    {
+      "slug": "iosco",
+      "label": "IOSCO"
+    },
+    {
+      "slug": "licensing-regime",
+      "label": "Licensing Regime"
+    },
+    {
+      "slug": "mas",
+      "label": "MAS"
+    },
+    {
+      "slug": "mas-scs-framework",
+      "label": "MAS SCS Framework"
+    },
+    {
+      "slug": "monetary-law",
+      "label": "Monetary Law"
+    },
+    {
+      "slug": "occ",
+      "label": "OCC"
+    },
+    {
+      "slug": "operational-resilience",
+      "label": "Operational Resilience"
+    },
+    {
+      "slug": "payment-services-regulation",
+      "label": "Payment Services Regulation"
+    },
+    {
+      "slug": "payment-stablecoin-issuance",
+      "label": "Payment Stablecoin Issuance"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "PaymentSystemsDomain"
+    },
+    {
+      "slug": "payment-systems-regulation",
+      "label": "Payment Systems Regulation"
+    },
+    {
+      "slug": "payments",
+      "label": "Payments"
+    },
+    {
+      "slug": "recovery-plan",
+      "label": "Recovery Plan"
+    },
+    {
+      "slug": "redemption-mechanism",
+      "label": "Redemption Mechanism"
+    },
+    {
+      "slug": "redemption-right",
+      "label": "Redemption Right"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "RegulatoryLayer"
+    },
+    {
+      "slug": "regulatory-licence",
+      "label": "Regulatory Licence"
+    },
+    {
+      "slug": "reserve-asset",
+      "label": "Reserve Asset"
+    },
+    {
+      "slug": "reserve-asset-segregation",
+      "label": "Reserve Asset Segregation"
+    },
+    {
+      "slug": "reserve-requirement",
+      "label": "Reserve Requirement"
+    },
+    {
+      "slug": "securities-law",
+      "label": "Securities Law"
+    },
+    {
+      "slug": "systemic-designation",
+      "label": "Systemic Designation"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "unregulated-crypto",
+      "label": "Unregulated Crypto"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

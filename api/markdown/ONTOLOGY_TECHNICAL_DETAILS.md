@@ -1,20 +1,417 @@
-iri:: http://narrativegoldmine.com/infrastructure#ONTOLOGYTECHNICALDETAILS
-uri:: urn:visionclaw:concept:infrastructure:ontologytechnicaldetails
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:ontologytechnicaldetails
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: ONTOLOGY_TECHNICAL_DETAILS
-content-hash:: sha256-12-fa5e5984ef80
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ONTOLOGYTECHNICALDETAILS
+legacy_uri:: urn:visionclaw:concept:infrastructure:ontologytechnicaldetails
 public:: true
+
+# ONTOLOGY_TECHNICAL_DETAILS
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808",
+  "@type": "Page",
+  "vc:slug": "ontology-technical-details",
+  "title": "ONTOLOGY_TECHNICAL_DETAILS",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "vc:label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0427-hyperledger-besu",
+      "vc:label": "BC-0427-hyperledger-besu"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0428-enterprise-blockchain-architecture",
+      "vc:label": "BC-0428-enterprise-blockchain-architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0429-permissioned-blockchain",
+      "vc:label": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0430-private-channels",
+      "vc:label": "BC-0430-private-channels"
+    },
+    {
+      "@id": "urn:visionflow:linked:untitled",
+      "vc:label": "..."
+    },
+    {
+      "@id": "urn:visionflow:owl:class:block",
+      "vc:label": "Block"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-system",
+      "vc:label": "Cryptographic System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-structure",
+      "vc:label": "Data Structure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-data-structure",
+      "vc:label": "DistributedDataStructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-data-structure",
+      "vc:label": "Distributed Data Structure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-ledger",
+      "vc:label": "Distributed Ledger"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-protocol",
+      "vc:label": "Distributed Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-system",
+      "vc:label": "Distributed System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:enterprise-blockchain-architecture",
+      "vc:label": "Enterprise Blockchain Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-besu",
+      "vc:label": "Hyperledger Besu"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mathematical-science",
+      "vc:label": "Mathematical Science"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:node",
+      "vc:label": "Node"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "vc:label": "Peer-to-Peer Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
+      "vc:label": "Permissioned Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:private-channels",
+      "vc:label": "Private Channels"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:record-keeping-system",
+      "vc:label": "Record-Keeping System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction",
+      "vc:label": "Transaction"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-fa5e5984ef80"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ONTOLOGYTECHNICALDETAILS"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:ontologytechnicaldetails"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:ontologytechnicaldetails"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ontology-technical-details",
+  "@type": "OntologyClass",
+  "label": "ONTOLOGY_TECHNICAL_DETAILS",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-structure",
+      "vc:label": "Data Structure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-data-structure",
+      "vc:label": "DistributedDataStructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-system",
+      "vc:label": "Distributed System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:record-keeping-system",
+      "vc:label": "Record-Keeping System"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ontology-technical-details:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0426-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0427-hyperledger-besu]]",
+      "resolved": "urn:visionflow:linked:bc-0427-hyperledger-besu",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0428-enterprise-blockchain-architecture]]",
+      "resolved": "urn:visionflow:linked:bc-0428-enterprise-blockchain-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0429-permissioned-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0429-permissioned-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0430-private-channels]]",
+      "resolved": "urn:visionflow:linked:bc-0430-private-channels",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[...]]",
+      "resolved": "urn:visionflow:linked:untitled",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Block]]",
+      "resolved": "urn:visionflow:owl:class:block",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptographic System]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Structure]]",
+      "resolved": "urn:visionflow:owl:class:data-structure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Data Structure]]",
+      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DistributedDataStructure]]",
+      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Ledger]]",
+      "resolved": "urn:visionflow:owl:class:distributed-ledger",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Protocol]]",
+      "resolved": "urn:visionflow:owl:class:distributed-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed System]]",
+      "resolved": "urn:visionflow:owl:class:distributed-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Enterprise Blockchain Architecture]]",
+      "resolved": "urn:visionflow:owl:class:enterprise-blockchain-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Besu]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-besu",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mathematical Science]]",
+      "resolved": "urn:visionflow:owl:class:mathematical-science",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Node]]",
+      "resolved": "urn:visionflow:owl:class:node",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Peer-to-Peer Network]]",
+      "resolved": "urn:visionflow:owl:class:peer-to-peer-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Permissioned Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:permissioned-blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Private Channels]]",
+      "resolved": "urn:visionflow:owl:class:private-channels",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Record-Keeping System]]",
+      "resolved": "urn:visionflow:owl:class:record-keeping-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction]]",
+      "resolved": "urn:visionflow:owl:class:transaction",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ONTOLOGY_TECHNICAL_DETAILS is a concept within the ngm domain.

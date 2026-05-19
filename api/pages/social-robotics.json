@@ -1,0 +1,154 @@
+{
+  "id": "urn:visionflow:page:509177e676bd09f8ae568ef667d89424f50a7f9b84136a6747492a09d9135013",
+  "title": "Social Robotics",
+  "slug": "social-robotics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-robotics",
+  "domain": "robotics",
+  "definition": "A field of robotics focused on designing robots capable of interacting and communicating with humans and other autonomous agents in a socially acceptable manner, following social rules, norms, and expectations of human interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.92,
+  "maturity": "emerging",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:communication-capabilities",
+        "label": "Communication Capabilities"
+      },
+      {
+        "id": "urn:visionflow:linked:social-intelligence",
+        "label": "Social Intelligence"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "assistive-robotics",
+      "label": "Assistive Robotics"
+    },
+    {
+      "slug": "communication-capabilities",
+      "label": "Communication Capabilities"
+    },
+    {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
+      "slug": "emotional-expression",
+      "label": "Emotional Expression"
+    },
+    {
+      "slug": "healthcare",
+      "label": "Healthcare"
+    },
+    {
+      "slug": "human",
+      "label": "Human"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "slug": "rb-1010-telepresence",
+      "label": "RB-1010-telepresence"
+    },
+    {
+      "slug": "rb-1012-trust-in-automation",
+      "label": "RB-1012-trust-in-automation"
+    },
+    {
+      "slug": "service-industry",
+      "label": "Service Industry"
+    },
+    {
+      "slug": "social-agent",
+      "label": "Social Agent"
+    },
+    {
+      "slug": "social-awareness",
+      "label": "Social Awareness"
+    },
+    {
+      "slug": "social-behavior",
+      "label": "Social Behavior"
+    },
+    {
+      "slug": "social-intelligence",
+      "label": "Social Intelligence"
+    },
+    {
+      "slug": "social-sciences",
+      "label": "Social Sciences"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "proxemics",
+      "label": "Proxemics"
+    }
+  ]
+}

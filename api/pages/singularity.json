@@ -1,0 +1,364 @@
+{
+  "id": "urn:visionflow:page:1bd764fee52e624753c21e15291cb77779dd2f19a2464f304605c5b0b6e078fb",
+  "title": "Singularity",
+  "slug": "singularity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:singularity",
+  "domain": "artificial-intelligence",
+  "definition": "The Technological Singularity is a hypothesised future point at which artificial intelligence surpasses human cognitive capacity in all economically and strategically relevant domains, triggering a phase transition in civilisational development so rapid and so structurally discontinuous that extrapolation from prior history becomes unreliable. The concept synthesises three distinct but mutually reinforcing intellectual traditions: (1) Vernor Vinge's 1993 essay \"The Coming Technological Singularity,\" which introduced the modern framing by analogy to a mathematical singularity \u2014 a point at which the value of a function diverges beyond finite bound \u2014 arguing that the creation of entities smarter than human beings would constitute \"the last invention that man need ever make,\" after which human history as a comprehensible narrative would end; (2) I. J. Good's 1965 \"Speculations Concerning the First Ultraintelligent Machine,\" which formalised the notion of an intelligence explosion: if an ultraintelligent machine can design machines smarter than itself, then by induction the smartest machine ever built would rapidly become incomprehensibly superior to humanity, with the survival of the s",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:existential-risk",
+      "label": "Existential Risk"
+    },
+    {
+      "id": "urn:visionflow:linked:futures-studies",
+      "label": "Futures Studies"
+    },
+    {
+      "id": "urn:visionflow:linked:philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
+      "id": "urn:visionflow:linked:transhumanism",
+      "label": "Transhumanism"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:agi-timelines",
+        "label": "AGI Timelines"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligence-amplification",
+        "label": "Intelligence Amplification"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligence-explosion",
+        "label": "Intelligence Explosion"
+      },
+      {
+        "id": "urn:visionflow:linked:mind-uploading",
+        "label": "Mind Uploading"
+      },
+      {
+        "id": "urn:visionflow:linked:recursive-self-improvement",
+        "label": "Recursive Self-Improvement"
+      },
+      {
+        "id": "urn:visionflow:linked:superintelligence",
+        "label": "Superintelligence"
+      },
+      {
+        "id": "urn:visionflow:linked:takeoff-scenarios",
+        "label": "Takeoff Scenarios"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:recursive-self-improvement",
+        "label": "Recursive Self-Improvement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:intelligence-amplification",
+        "label": "Intelligence Amplification"
+      },
+      {
+        "id": "urn:visionflow:linked:mind-uploading",
+        "label": "Mind Uploading"
+      },
+      {
+        "id": "urn:visionflow:linked:post-scarcity-economics",
+        "label": "Post-Scarcity Economics"
+      },
+      {
+        "id": "urn:visionflow:linked:superintelligence",
+        "label": "Superintelligence"
+      },
+      {
+        "id": "urn:visionflow:linked:technological-acceleration",
+        "label": "Technological Acceleration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:exponential-growth-models",
+        "label": "Exponential Growth Models"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligence-explosion",
+        "label": "Intelligence Explosion"
+      },
+      {
+        "id": "urn:visionflow:linked:kurzweil-law-of-accelerating-returns",
+        "label": "Kurzweil Law of Accelerating Returns"
+      },
+      {
+        "id": "urn:visionflow:linked:recursive-self-improvement",
+        "label": "Recursive Self-Improvement"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-impacts-surveys",
+      "label": "AI Impacts Surveys"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "ai-winter",
+      "label": "AI Winter"
+    },
+    {
+      "slug": "bayesian-forecasting",
+      "label": "Bayesian Forecasting"
+    },
+    {
+      "slug": "cambridge-cser",
+      "label": "Cambridge CSER"
+    },
+    {
+      "slug": "compute-scaling",
+      "label": "Compute Scaling"
+    },
+    {
+      "slug": "existential-risk",
+      "label": "Existential Risk"
+    },
+    {
+      "slug": "exponential-growth-models",
+      "label": "Exponential Growth Models"
+    },
+    {
+      "slug": "future-of-humanity-institute",
+      "label": "Future of Humanity Institute"
+    },
+    {
+      "slug": "futures-studies",
+      "label": "Futures Studies"
+    },
+    {
+      "slug": "futures-studies-domain",
+      "label": "FuturesStudiesDomain"
+    },
+    {
+      "slug": "intelligence-amplification",
+      "label": "Intelligence Amplification"
+    },
+    {
+      "slug": "intelligence-explosion",
+      "label": "Intelligence Explosion"
+    },
+    {
+      "slug": "kurzweil-law-of-accelerating-returns",
+      "label": "Kurzweil Law of Accelerating Returns"
+    },
+    {
+      "slug": "longtermism",
+      "label": "Longtermism"
+    },
+    {
+      "slug": "machine-intelligence-research-institute",
+      "label": "Machine Intelligence Research Institute"
+    },
+    {
+      "slug": "metaculus",
+      "label": "Metaculus"
+    },
+    {
+      "slug": "mind-uploading",
+      "label": "Mind Uploading"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
+      "slug": "oxford-gov-ai",
+      "label": "Oxford GovAI"
+    },
+    {
+      "slug": "philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
+      "slug": "philosophy-of-mind-domain",
+      "label": "PhilosophyOfMindDomain"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "post-scarcity-economics",
+      "label": "Post-Scarcity Economics"
+    },
+    {
+      "slug": "recursive-self-improvement",
+      "label": "Recursive Self-Improvement"
+    },
+    {
+      "slug": "research-layer",
+      "label": "ResearchLayer"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "safety-domain",
+      "label": "SafetyDomain"
+    },
+    {
+      "slug": "stochastic-parrots-critique",
+      "label": "Stochastic Parrots Critique"
+    },
+    {
+      "slug": "superintelligence",
+      "label": "Superintelligence"
+    },
+    {
+      "slug": "takeoff-scenarios",
+      "label": "Takeoff Scenarios"
+    },
+    {
+      "slug": "technological-acceleration",
+      "label": "Technological Acceleration"
+    },
+    {
+      "slug": "transhumanism",
+      "label": "Transhumanism"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and Alignment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "introduction-to-me",
+      "label": "introduction-to-me"
+    },
+    {
+      "slug": "artificial-superintelligence",
+      "label": "artificial superintelligence"
+    },
+    {
+      "slug": "rb-0031-singularity",
+      "label": "rb 0031 singularity"
+    }
+  ]
+}

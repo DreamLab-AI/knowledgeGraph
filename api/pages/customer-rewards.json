@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:7cf088535ca93ef161913fe37bf56ed23f8f4c58f1cb939f9e39d3d1a939d92a",
+  "title": "Customer Rewards",
+  "slug": "customer-rewards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:customer-rewards",
+  "domain": "spatial-computing",
+  "definition": "Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:loyalty-programs",
+      "label": "Loyalty Programs"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-rewards",
+        "label": "Cross-Platform Rewards"
+      },
+      {
+        "id": "urn:visionflow:linked:customer-retention",
+        "label": "Customer Retention"
+      },
+      {
+        "id": "urn:visionflow:linked:token-trading",
+        "label": "Token Trading"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-platform-rewards",
+      "label": "Cross-Platform Rewards"
+    },
+    {
+      "slug": "customer-retention",
+      "label": "Customer Retention"
+    },
+    {
+      "slug": "token-trading",
+      "label": "Token Trading"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "loyalty-programs",
+      "label": "Loyalty Programs"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    }
+  ]
+}

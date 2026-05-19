@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:9eaa0f8f2c16e6f69bc70e5f2e42a5758735b3e1ab1afc26c98bfa3b75d07552",
+  "title": "Immersion",
+  "slug": "immersion",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersion",
+  "domain": "spatial-computing",
+  "definition": "Subjective experience of psychological engagement and sense of presence within a virtual environment, characterized by reduced awareness of physical surroundings and absorption in virtual context.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cognitive-immersion",
+        "label": "Cognitive Immersion"
+      },
+      {
+        "id": "urn:visionflow:linked:sensory-immersion",
+        "label": "Sensory Immersion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-quality",
+        "label": "Content Quality"
+      },
+      {
+        "id": "urn:visionflow:linked:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:visionflow:linked:interaction-mechanism",
+        "label": "Interaction Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:flow-state",
+        "label": "Flow State"
+      },
+      {
+        "id": "urn:visionflow:linked:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm",
+      "label": "ACM"
+    },
+    {
+      "slug": "cognitive-immersion",
+      "label": "Cognitive Immersion"
+    },
+    {
+      "slug": "content-quality",
+      "label": "Content Quality"
+    },
+    {
+      "slug": "display-technology",
+      "label": "Display Technology"
+    },
+    {
+      "slug": "flow-state",
+      "label": "Flow State"
+    },
+    {
+      "slug": "interaction-mechanism",
+      "label": "Interaction Mechanism"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "PresentationLayer"
+    },
+    {
+      "slug": "sensory-immersion",
+      "label": "Sensory Immersion"
+    },
+    {
+      "slug": "user-engagement",
+      "label": "User Engagement"
+    },
+    {
+      "slug": "visual-fidelity",
+      "label": "Visual Fidelity"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "audio-spatialization",
+      "label": "Audio Spatialization"
+    },
+    {
+      "slug": "emotional-immersion",
+      "label": "Emotional Immersion"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "emotional-immersion",
+      "label": "Emotional Immersion"
+    }
+  ]
+}

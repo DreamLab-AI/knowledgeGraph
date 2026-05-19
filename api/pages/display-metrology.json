@@ -1,0 +1,158 @@
+{
+  "id": "urn:visionflow:page:5e96c9328022741c3e9040b15f72a9d6ea5d376ee40925f5af6d7b456c00141b",
+  "title": "Display Metrology",
+  "slug": "display-metrology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:display-metrology",
+  "domain": "spatial-computing",
+  "definition": "Standardized measurement equipment and instruments for assessing visual performance parameters of XR displays, including colorimeters, photometers, and specialised testing hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:xr-testing-infrastructure",
+      "label": "XR Testing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:colorimeter",
+        "label": "Colorimeter"
+      },
+      {
+        "id": "urn:visionflow:linked:contrast-ratio-meter",
+        "label": "Contrast Ratio Meter"
+      },
+      {
+        "id": "urn:visionflow:linked:luminance-meter",
+        "label": "Luminance Meter"
+      },
+      {
+        "id": "urn:visionflow:linked:photometer",
+        "label": "Photometer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:resolution-test-chart",
+        "label": "Resolution Test Chart"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:environmental-control",
+        "label": "Environmental Control"
+      },
+      {
+        "id": "urn:visionflow:linked:measurement-protocols",
+        "label": "Measurement Protocols"
+      },
+      {
+        "id": "urn:visionflow:owl:class:calibration-standards",
+        "label": "Calibration Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compliance-testing",
+        "label": "Compliance Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:display-calibration",
+        "label": "Display Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-validation",
+        "label": "Performance Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-quality-assessment",
+        "label": "Visual Quality Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "colorimeter",
+      "label": "Colorimeter"
+    },
+    {
+      "slug": "compliance-testing",
+      "label": "Compliance Testing"
+    },
+    {
+      "slug": "contrast-ratio-meter",
+      "label": "Contrast Ratio Meter"
+    },
+    {
+      "slug": "display-calibration",
+      "label": "Display Calibration"
+    },
+    {
+      "slug": "environmental-control",
+      "label": "Environmental Control"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "iso-9241-303",
+      "label": "ISO 9241-303"
+    },
+    {
+      "slug": "luminance-meter",
+      "label": "Luminance Meter"
+    },
+    {
+      "slug": "measurement-protocols",
+      "label": "Measurement Protocols"
+    },
+    {
+      "slug": "performance-validation",
+      "label": "Performance Validation"
+    },
+    {
+      "slug": "photometer",
+      "label": "Photometer"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "visual-quality-assessment",
+      "label": "Visual Quality Assessment"
+    },
+    {
+      "slug": "calibration-standards",
+      "label": "Calibration Standards"
+    },
+    {
+      "slug": "ieee-p2733-standards",
+      "label": "IEEE P2733 Standards"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "resolution-test-chart",
+      "label": "Resolution Test Chart"
+    },
+    {
+      "slug": "xr-testing-infrastructure",
+      "label": "XR Testing Infrastructure"
+    }
+  ],
+  "backlinks": []
+}

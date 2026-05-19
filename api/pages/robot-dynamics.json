@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:066b9d6e7e7e09d1ec001edcbd0581bbadca55b32a398b72233e2cb9449231e9",
+  "title": "Robot Dynamics",
+  "slug": "robot-dynamics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-dynamics",
+  "domain": "robotics",
+  "definition": "- maturity:: draft",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:robot-mechanics",
+      "label": "RobotMechanics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robot-mechanics",
+      "label": "RobotMechanics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "friction",
+      "label": "Friction"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "newton-euler-dynamics",
+      "label": "Newton-Euler Dynamics"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:373ee02de64ace0d2596b5e0ad353da78b3dc743f3e8ffa061927a3915159b06",
+  "title": "Parametric",
+  "slug": "parametric",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:parametric",
+  "domain": "infrastructure",
+  "definition": "Parametric is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "landvault-create",
+      "label": "Landvault Create"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    }
+  ],
+  "backlinks": []
+}

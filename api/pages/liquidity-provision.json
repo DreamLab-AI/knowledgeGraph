@@ -1,0 +1,528 @@
+{
+  "id": "urn:visionflow:page:55e0f3d53f4711d0a25e2a91f768933b0c1fb5e582409871286199229d4fee25",
+  "title": "Liquidity Provision",
+  "slug": "liquidity-provision",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:liquidity-provision",
+  "domain": "blockchain",
+  "definition": "**Liquidity Provision** is the decentralised financial mechanism whereby cryptocurrency holders deposit paired or single-asset collateral into [[Automated Market Maker]] smart-contract pools to enable continuous permissionless [[Token Swap]] without traditional counterparties or order books, earning transaction fee revenue proportional to pool share in exchange for bearing [[Impermanent Loss]] risk arising from price divergence between held assets. The practice encompasses a spectrum of algorithmic pricing architectures beginning with Uniswap V2's constant-product invariant x\u00b7y = k (where x and y denote pool reserves of two [[ERC-20 Token]]s, the product k remains constant absent fee accrual, and marginal price equals -y/x\u00b2), advancing through Uniswap V3 concentrated liquidity (Adams, Zinsmeister et al. 2021) enabling providers to specify tick-bounded price ranges [p_a, p_b] and contribute virtual reserves x_virtual = L/\u221ap_b \u2212 L/\u221ap and y_virtual = L(\u221ap \u2212 \u221ap_a) where L denotes liquidity depth, achieving up to 4,000\u00d7 capital efficiency on stable pairs versus V2, and culminating in [[Uniswap]] V4 launched January 2025 introducing singleton architecture with programmable hooks (arbitra",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:capital-deployment",
+      "label": "Capital Deployment"
+    },
+    {
+      "id": "urn:visionflow:linked:financial-mechanism",
+      "label": "Financial Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:market-making",
+      "label": "Market Making"
+    },
+    {
+      "id": "urn:visionflow:linked:yield-generation",
+      "label": "Yield Generation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:fee-tier",
+        "label": "Fee Tier"
+      },
+      {
+        "id": "urn:visionflow:linked:gauge-weight",
+        "label": "Gauge Weight"
+      },
+      {
+        "id": "urn:visionflow:linked:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:visionflow:linked:liquidity-mining-reward",
+        "label": "Liquidity Mining Reward"
+      },
+      {
+        "id": "urn:visionflow:linked:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "id": "urn:visionflow:linked:price-range",
+        "label": "Price Range"
+      },
+      {
+        "id": "urn:visionflow:linked:tick",
+        "label": "Tick"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:erc-20-token",
+        "label": "ERC-20 Token"
+      },
+      {
+        "id": "urn:visionflow:linked:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:capital-efficiency",
+        "label": "Capital Efficiency"
+      },
+      {
+        "id": "urn:visionflow:linked:mev-extraction",
+        "label": "MEV Extraction"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-revenue",
+        "label": "Protocol Revenue"
+      },
+      {
+        "id": "urn:visionflow:linked:token-swap",
+        "label": "Token Swap"
+      },
+      {
+        "id": "urn:visionflow:linked:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "id": "urn:visionflow:linked:constant-product-formula",
+        "label": "Constant Product Formula"
+      },
+      {
+        "id": "urn:visionflow:linked:hooks-architecture",
+        "label": "Hooks Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:stable-swap-invariant",
+        "label": "StableSwap Invariant"
+      },
+      {
+        "id": "urn:visionflow:linked:weighted-pool-invariant",
+        "label": "Weighted Pool Invariant"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "aave-protocol-whitepaper",
+      "label": "Aave Protocol Whitepaper"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "balancer",
+      "label": "Balancer"
+    },
+    {
+      "slug": "balancer-whitepaper",
+      "label": "Balancer Whitepaper"
+    },
+    {
+      "slug": "block-proposer",
+      "label": "Block Proposer"
+    },
+    {
+      "slug": "capital-deployment",
+      "label": "Capital Deployment"
+    },
+    {
+      "slug": "capital-efficiency",
+      "label": "Capital Efficiency"
+    },
+    {
+      "slug": "centralised-exchange",
+      "label": "Centralised Exchange"
+    },
+    {
+      "slug": "chainlink-oracle",
+      "label": "Chainlink Oracle"
+    },
+    {
+      "slug": "compound",
+      "label": "Compound"
+    },
+    {
+      "slug": "compound-finance-whitepaper",
+      "label": "Compound Finance Whitepaper"
+    },
+    {
+      "slug": "concentrated-liquidity",
+      "label": "Concentrated Liquidity"
+    },
+    {
+      "slug": "constant-product-formula",
+      "label": "Constant Product Formula"
+    },
+    {
+      "slug": "convex-finance",
+      "label": "Convex Finance"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "curve-finance-stable-swap-paper",
+      "label": "Curve Finance StableSwap Paper"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "DecentralisedFinanceDomain"
+    },
+    {
+      "slug": "decentralised-lending",
+      "label": "Decentralised Lending"
+    },
+    {
+      "slug": "eip-1559",
+      "label": "EIP-1559"
+    },
+    {
+      "slug": "erc-20-token",
+      "label": "ERC-20 Token"
+    },
+    {
+      "slug": "erc-20-token-standard",
+      "label": "ERC-20 Token Standard"
+    },
+    {
+      "slug": "fatf-de-fi-guidance",
+      "label": "FATF DeFi Guidance"
+    },
+    {
+      "slug": "fee-tier",
+      "label": "Fee Tier"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "FinancialMarketsDomain"
+    },
+    {
+      "slug": "financial-mechanism",
+      "label": "Financial Mechanism"
+    },
+    {
+      "slug": "flash-boys-2-0",
+      "label": "Flash Boys 2.0"
+    },
+    {
+      "slug": "flash-loan",
+      "label": "Flash Loan"
+    },
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "gauge-weight",
+      "label": "Gauge Weight"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "gsr",
+      "label": "GSR"
+    },
+    {
+      "slug": "hooks-architecture",
+      "label": "Hooks Architecture"
+    },
+    {
+      "slug": "hyperliquid",
+      "label": "Hyperliquid"
+    },
+    {
+      "slug": "impermanent-loss",
+      "label": "Impermanent Loss"
+    },
+    {
+      "slug": "incentive-layer",
+      "label": "IncentiveLayer"
+    },
+    {
+      "slug": "jit-liquidity",
+      "label": "JIT Liquidity"
+    },
+    {
+      "slug": "jump-crypto",
+      "label": "Jump Crypto"
+    },
+    {
+      "slug": "limit-order-protocol",
+      "label": "Limit Order Protocol"
+    },
+    {
+      "slug": "liquid-staking",
+      "label": "Liquid Staking"
+    },
+    {
+      "slug": "liquidity-mining",
+      "label": "Liquidity Mining"
+    },
+    {
+      "slug": "liquidity-mining-reward",
+      "label": "Liquidity Mining Reward"
+    },
+    {
+      "slug": "lp-token",
+      "label": "LP Token"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
+      "slug": "mev-boost",
+      "label": "MEV-Boost"
+    },
+    {
+      "slug": "mev-extraction",
+      "label": "MEV Extraction"
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "label": "MiCA Regulation"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "order-book-exchange",
+      "label": "Order Book Exchange"
+    },
+    {
+      "slug": "permissionless-trading",
+      "label": "Permissionless Trading"
+    },
+    {
+      "slug": "perpetual-dex",
+      "label": "Perpetual DEX"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "price-range",
+      "label": "Price Range"
+    },
+    {
+      "slug": "protocol-revenue",
+      "label": "Protocol Revenue"
+    },
+    {
+      "slug": "protocol-treasury",
+      "label": "Protocol Treasury"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "SmartContractLayer"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "stable-swap-invariant",
+      "label": "StableSwap Invariant"
+    },
+    {
+      "slug": "stablecoin-peg",
+      "label": "Stablecoin Peg"
+    },
+    {
+      "slug": "tick",
+      "label": "Tick"
+    },
+    {
+      "slug": "token-swap",
+      "label": "Token Swap"
+    },
+    {
+      "slug": "traditional-market-maker",
+      "label": "Traditional Market Maker"
+    },
+    {
+      "slug": "twap-oracle",
+      "label": "TWAP Oracle"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "uniswap-foundation-v4-specification",
+      "label": "Uniswap Foundation V4 Specification"
+    },
+    {
+      "slug": "uniswap-v3-core-whitepaper",
+      "label": "Uniswap V3 Core Whitepaper"
+    },
+    {
+      "slug": "vote-escrowed-token",
+      "label": "Vote-Escrowed Token"
+    },
+    {
+      "slug": "weighted-pool-invariant",
+      "label": "Weighted Pool Invariant"
+    },
+    {
+      "slug": "wintermute",
+      "label": "Wintermute"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "yield-generation",
+      "label": "Yield Generation"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "automated-market-making",
+      "label": "Automated Market Making"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    },
+    {
+      "slug": "digital-asset-trading",
+      "label": "Digital Asset Trading"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    }
+  ]
+}

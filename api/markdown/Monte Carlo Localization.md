@@ -1,21 +1,398 @@
-iri:: http://narrativegoldmine.com/robotics#MonteCarloLocalization
-uri:: urn:visionclaw:concept:robotics:monte-carlo-localization
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:monte-carlo-localization
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Monte Carlo Localization
-content-hash:: sha256-12-5405eb43cae4
-legacy-term-id:: RB-1014
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.96
-version:: 2.0.0
-created:: 2025-11-24T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#MonteCarloLocalization
+legacy_uri:: urn:visionclaw:concept:robotics:monte-carlo-localization
 public:: true
+
+# Monte Carlo Localization
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca",
+  "@type": "Page",
+  "vc:slug": "monte-carlo-localization",
+  "title": "Monte Carlo Localization",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:global-localization",
+      "vc:label": "Global Localization"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-localization-capability",
+      "vc:label": "Global Localization Capability"
+    },
+    {
+      "@id": "urn:visionflow:linked:importance-sampling",
+      "vc:label": "Importance Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:kidnapped-robot-problem",
+      "vc:label": "Kidnapped Robot Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:map",
+      "vc:label": "Map"
+    },
+    {
+      "@id": "urn:visionflow:linked:mobile-robots",
+      "vc:label": "Mobile Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-model",
+      "vc:label": "Motion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-parametric",
+      "vc:label": "Non-Parametric"
+    },
+    {
+      "@id": "urn:visionflow:linked:particle-filter-theory",
+      "vc:label": "Particle Filter Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-methods",
+      "vc:label": "Probabilistic Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-robotics",
+      "vc:label": "Probabilistic Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1008-odometry",
+      "vc:label": "RB-1008-odometry"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1015-kalman-filter",
+      "vc:label": "RB-1015-kalman-filter"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-measurements",
+      "vc:label": "Sensor Measurements"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bayes-filter",
+      "vc:label": "Bayes Filter"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:localization",
+      "vc:label": "Localization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:particle-filter",
+      "vc:label": "Particle Filter"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rb-1013-localization",
+      "vc:label": "RB-1013-localization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:slam",
+      "vc:label": "SLAM"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.96"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5405eb43cae4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-24T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#MonteCarloLocalization"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-1014"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Monte Carlo Localization"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:monte-carlo-localization"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:monte-carlo-localization"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:monte-carlo-localization",
+  "@type": "OntologyClass",
+  "label": "Monte Carlo Localization",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:rb-1013-localization",
+      "vc:label": "RB-1013-localization"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A probabilistic localization algorithm that represents the robot's belief about its position using a set of weighted particles (samples), where each particle represents a hypothesis of the robot's pose. It implements a particle filter to recursively estimate the robot's pose distribution.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.96",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:map",
+      "vc:label": "Map"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-model",
+      "vc:label": "Motion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-measurements",
+      "vc:label": "Sensor Measurements"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:global-localization",
+      "vc:label": "Global Localization"
+    },
+    {
+      "@id": "urn:visionflow:linked:kidnapped-robot-problem",
+      "vc:label": "Kidnapped Robot Problem"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:importance-sampling",
+      "vc:label": "Importance Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1008-odometry",
+      "vc:label": "RB-1008-odometry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:monte-carlo-localization:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Global Localization]]",
+      "resolved": "urn:visionflow:linked:global-localization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Global Localization Capability]]",
+      "resolved": "urn:visionflow:linked:global-localization-capability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Importance Sampling]]",
+      "resolved": "urn:visionflow:linked:importance-sampling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kidnapped Robot Problem]]",
+      "resolved": "urn:visionflow:linked:kidnapped-robot-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Map]]",
+      "resolved": "urn:visionflow:linked:map",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mobile Robots]]",
+      "resolved": "urn:visionflow:linked:mobile-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion Model]]",
+      "resolved": "urn:visionflow:linked:motion-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Non-Parametric]]",
+      "resolved": "urn:visionflow:linked:non-parametric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Particle Filter Theory]]",
+      "resolved": "urn:visionflow:linked:particle-filter-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Probabilistic Methods]]",
+      "resolved": "urn:visionflow:linked:probabilistic-methods",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Probabilistic Robotics]]",
+      "resolved": "urn:visionflow:linked:probabilistic-robotics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1008-odometry]]",
+      "resolved": "urn:visionflow:linked:rb-1008-odometry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1015-kalman-filter]]",
+      "resolved": "urn:visionflow:linked:rb-1015-kalman-filter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Measurements]]",
+      "resolved": "urn:visionflow:linked:sensor-measurements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bayes Filter]]",
+      "resolved": "urn:visionflow:owl:class:bayes-filter",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Localization]]",
+      "resolved": "urn:visionflow:owl:class:localization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Particle Filter]]",
+      "resolved": "urn:visionflow:owl:class:particle-filter",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RB-1013-localization]]",
+      "resolved": "urn:visionflow:owl:class:rb-1013-localization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor Fusion]]",
+      "resolved": "urn:visionflow:owl:class:sensor-fusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SLAM]]",
+      "resolved": "urn:visionflow:owl:class:slam",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A probabilistic localization algorithm that represents the robot's belief about its position using a set of weighted particles (samples), where each particle represents a hypothesis of the robot's pose. It implements a particle filter to recursively estimate the robot's pose distribution.

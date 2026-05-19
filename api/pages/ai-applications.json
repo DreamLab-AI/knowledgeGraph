@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:6f0588bcbda39d526a60583dc1791133eb2b95038c0b8504861c72850144f9d3",
+  "title": "AI Applications",
+  "slug": "ai-applications",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-applications",
+  "domain": "artificial-intelligence",
+  "definition": "AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases. This category encompasses practical deployments of AI in healthcare, autonomous vehicles, personal assistants, industrial automation, financial services, and other sectors where AI delivers tangible value.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

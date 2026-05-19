@@ -1,0 +1,844 @@
+{
+  "id": "urn:visionflow:page:776feb9cde0267f8a89094a64e1932b884a8a7c2ed43b9af98d52b198c1721e7",
+  "title": "Agents",
+  "slug": "agents",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agents",
+  "domain": "artificial-intelligence",
+  "definition": "**Agents** are autonomous or semi-autonomous computational systems that perceive an environment through sensors (text inputs, vision encoders, structured tool responses, multimodal streams), reason or plan over an internal model of that environment, and act upon it through actuators (function calls, API requests, browser/operating-system actions, robotic effectors) in pursuit of designated goals, performance measures or instructions, encompassing classical AI architectures formalised by Russell & Norvig in *Artificial Intelligence: A Modern Approach* (1995, 4th edition 2020, \"anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators\") with the PEAS task-environment specification (Performance measure, Environment, Actuators, Sensors) and five canonical agent types (simple reflex agents using condition-action rules without state, model-based reflex agents maintaining internal world models, goal-based agents incorporating explicit future-state targets, utility-based agents optimising expected utility under uncertainty, learning agents containing performance/critic/learning/problem-generator components updating behaviou",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "id": "urn:visionflow:linked:cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "id": "urn:visionflow:linked:intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "id": "urn:visionflow:linked:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:observation-buffer",
+        "label": "Observation Buffer"
+      },
+      {
+        "id": "urn:visionflow:linked:planning-module",
+        "label": "Planning Module"
+      },
+      {
+        "id": "urn:visionflow:linked:reasoning-trace",
+        "label": "Reasoning Trace"
+      },
+      {
+        "id": "urn:visionflow:linked:reflection-loop",
+        "label": "Reflection Loop"
+      },
+      {
+        "id": "urn:visionflow:linked:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-compute",
+        "label": "Inference Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-software-engineering",
+        "label": "AI Software Engineering"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "id": "urn:visionflow:linked:deep-research",
+        "label": "Deep Research"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bdi-architecture",
+        "label": "BDI Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:plan-and-execute",
+        "label": "Plan-and-Execute"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:visionflow:linked:reflexion",
+        "label": "Reflexion"
+      },
+      {
+        "id": "urn:visionflow:linked:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:subsumption-architecture",
+        "label": "Subsumption Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agent2-agent-protocol",
+      "label": "Agent2Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "ai-software-engineering",
+      "label": "AI Software Engineering"
+    },
+    {
+      "slug": "anthropic-claude-computer-use-oct-2024",
+      "label": "Anthropic Claude Computer Use Oct 2024"
+    },
+    {
+      "slug": "anthropic-model-context-protocol-nov-2024",
+      "label": "Anthropic Model Context Protocol Nov 2024"
+    },
+    {
+      "slug": "apollo-research-2024-scheming-ais",
+      "label": "Apollo Research 2024 Scheming AIs"
+    },
+    {
+      "slug": "auto-gpt-significant-gravitas-2023",
+      "label": "AutoGPT Significant Gravitas 2023"
+    },
+    {
+      "slug": "autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "AutonomousSystemsDomain"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "baby-agi-nakajima-2023",
+      "label": "BabyAGI Nakajima 2023"
+    },
+    {
+      "slug": "bdi-architecture",
+      "label": "BDI Architecture"
+    },
+    {
+      "slug": "bratman-1987-intention-plans-and-practical-reason",
+      "label": "Bratman 1987 Intention Plans and Practical Reason"
+    },
+    {
+      "slug": "brooks-1986-subsumption-architecture",
+      "label": "Brooks 1986 Subsumption Architecture"
+    },
+    {
+      "slug": "brooks-1991-intelligence-without-representation",
+      "label": "Brooks 1991 Intelligence Without Representation"
+    },
+    {
+      "slug": "browser-automation",
+      "label": "Browser Automation"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "cognition-labs-devin-mar-2024",
+      "label": "Cognition Labs Devin Mar 2024"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "cognitive-architecture-layer",
+      "label": "CognitiveArchitectureLayer"
+    },
+    {
+      "slug": "computer-use",
+      "label": "Computer Use"
+    },
+    {
+      "slug": "contract-net-protocol",
+      "label": "Contract Net Protocol"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "slug": "deep-research",
+      "label": "Deep Research"
+    },
+    {
+      "slug": "digital-assistant-siri-alexa",
+      "label": "Digital Assistant (Siri/Alexa)"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "embedding-search",
+      "label": "Embedding Search"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "enterprise-workflow",
+      "label": "Enterprise Workflow"
+    },
+    {
+      "slug": "finin-et-al-1994-kqml",
+      "label": "Finin et al 1994 KQML"
+    },
+    {
+      "slug": "fipa-acl",
+      "label": "FIPA-ACL"
+    },
+    {
+      "slug": "fipa-acl-2002",
+      "label": "FIPA-ACL (2002)"
+    },
+    {
+      "slug": "fipa-acl-specification-2002",
+      "label": "FIPA-ACL Specification 2002"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "function-calling-api",
+      "label": "Function Calling API"
+    },
+    {
+      "slug": "function-schemas",
+      "label": "Function Schemas"
+    },
+    {
+      "slug": "google-adk-and-a2-a-apr-2025",
+      "label": "Google ADK and A2A Apr 2025"
+    },
+    {
+      "slug": "greshake-et-al-2023-indirect-prompt-injection",
+      "label": "Greshake et al 2023 Indirect Prompt Injection"
+    },
+    {
+      "slug": "hong-et-al-2023-meta-gpt",
+      "label": "Hong et al 2023 MetaGPT"
+    },
+    {
+      "slug": "inference-compute",
+      "label": "Inference Compute"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "slug": "jimenez-et-al-2024-swe-bench",
+      "label": "Jimenez et al 2024 SWE-bench"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "liu-et-al-2023-agent-bench",
+      "label": "Liu et al 2023 AgentBench"
+    },
+    {
+      "slug": "manus-ai-monica-mar-2025",
+      "label": "Manus AI Monica Mar 2025"
+    },
+    {
+      "slug": "mialon-et-al-2023-gaia-benchmark",
+      "label": "Mialon et al 2023 GAIA Benchmark"
+    },
+    {
+      "slug": "model-context-protocol-anthropic-2024",
+      "label": "Model Context Protocol (Anthropic 2024)"
+    },
+    {
+      "slug": "multi-agent-orchestration",
+      "label": "Multi-Agent Orchestration"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "observation-buffer",
+      "label": "Observation Buffer"
+    },
+    {
+      "slug": "open-ai-agents-sdk-mar-2025",
+      "label": "OpenAI Agents SDK Mar 2025"
+    },
+    {
+      "slug": "open-ai-operator-jan-2025",
+      "label": "OpenAI Operator Jan 2025"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "owasp-llm-top-10-2025",
+      "label": "OWASP LLM Top 10 (2025)"
+    },
+    {
+      "slug": "owasp-llm-top-10-2025",
+      "label": "OWASP LLM Top 10 2025"
+    },
+    {
+      "slug": "park-et-al-2023-generative-agents",
+      "label": "Park et al 2023 Generative Agents"
+    },
+    {
+      "slug": "personal-assistance",
+      "label": "Personal Assistance"
+    },
+    {
+      "slug": "plan-and-execute",
+      "label": "Plan-and-Execute"
+    },
+    {
+      "slug": "planning-module",
+      "label": "Planning Module"
+    },
+    {
+      "slug": "rao-and-georgeff-1995-bdi-agents-theory-to-practice",
+      "label": "Rao & Georgeff 1995 BDI Agents Theory to Practice"
+    },
+    {
+      "slug": "re-act",
+      "label": "ReAct"
+    },
+    {
+      "slug": "reasoning-trace",
+      "label": "Reasoning Trace"
+    },
+    {
+      "slug": "reflection-loop",
+      "label": "Reflection Loop"
+    },
+    {
+      "slug": "reflexion",
+      "label": "Reflexion"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "russell-and-norvig-aima-1995-2020",
+      "label": "Russell & Norvig AIMA 1995/2020"
+    },
+    {
+      "slug": "schick-et-al-2023-toolformer",
+      "label": "Schick et al 2023 Toolformer"
+    },
+    {
+      "slug": "scientific-research",
+      "label": "Scientific Research"
+    },
+    {
+      "slug": "self-consistency",
+      "label": "Self-Consistency"
+    },
+    {
+      "slug": "shinn-et-al-2023-reflexion",
+      "label": "Shinn et al 2023 Reflexion"
+    },
+    {
+      "slug": "shoham-and-leyton-brown-2008-multiagent-systems",
+      "label": "Shoham & Leyton-Brown 2008 Multiagent Systems"
+    },
+    {
+      "slug": "smith-1980-contract-net-protocol",
+      "label": "Smith 1980 Contract Net Protocol"
+    },
+    {
+      "slug": "software-development-automation",
+      "label": "Software Development Automation"
+    },
+    {
+      "slug": "static-inference-pipeline",
+      "label": "Static Inference Pipeline"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "system-prompt",
+      "label": "System Prompt"
+    },
+    {
+      "slug": "tool-augmented-llm",
+      "label": "Tool-Augmented LLM"
+    },
+    {
+      "slug": "tool-definition",
+      "label": "Tool Definition"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "tree-of-thoughts",
+      "label": "Tree of Thoughts"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan-jan-2025",
+      "label": "UK AI Opportunities Action Plan Jan 2025"
+    },
+    {
+      "slug": "uk-ai-security-institute-2025",
+      "label": "UK AI Security Institute 2025"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "w3-c-cognitive-ai-community-group",
+      "label": "W3C Cognitive AI Community Group"
+    },
+    {
+      "slug": "wang-et-al-2023-voyager",
+      "label": "Wang et al 2023 Voyager"
+    },
+    {
+      "slug": "wooldridge-2002-introduction-to-multi-agent-systems",
+      "label": "Wooldridge 2002 Introduction to MultiAgent Systems"
+    },
+    {
+      "slug": "wooldridge-and-jennings-1995-intelligent-agents-theory-and-practice",
+      "label": "Wooldridge & Jennings 1995 Intelligent Agents Theory and Practice"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "wu-et-al-2023-auto-gen",
+      "label": "Wu et al 2023 AutoGen"
+    },
+    {
+      "slug": "xie-et-al-2024-osworld",
+      "label": "Xie et al 2024 OSWorld"
+    },
+    {
+      "slug": "yao-et-al-2023-re-act",
+      "label": "Yao et al 2023 ReAct"
+    },
+    {
+      "slug": "yao-et-al-2023-tree-of-thoughts",
+      "label": "Yao et al 2023 Tree of Thoughts"
+    },
+    {
+      "slug": "zhou-et-al-2023-web-arena",
+      "label": "Zhou et al 2023 WebArena"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "robotics-control",
+      "label": "Robotics Control"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "agentic-alliance",
+      "label": "Agentic Alliance"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "interfaces",
+      "label": "Interfaces"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "project-bro-bots",
+      "label": "Project BroBots"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "todo",
+      "label": "TODO"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "ollama",
+      "label": "ollama"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

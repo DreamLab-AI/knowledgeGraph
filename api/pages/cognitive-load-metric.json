@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:c67f13e449fec2ca87a9d3f685c1d3fff66b9b609bfa869e25a7460280fde2df",
+  "title": "Cognitive Load Metric",
+  "slug": "cognitive-load-metric",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cognitive-load-metric",
+  "domain": "spatial-computing",
+  "definition": "Quantitative measure of mental effort required during virtual interaction tasks, typically assessed using standardized scales like NASA-TLX.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:measurement-framework",
+        "label": "Measurement Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:psychometric-scale",
+        "label": "Psychometric Scale"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:interface-design-validation",
+        "label": "Interface Design Validation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interface-design-validation",
+      "label": "Interface Design Validation"
+    },
+    {
+      "slug": "iso-9241-112",
+      "label": "ISO 9241-112"
+    },
+    {
+      "slug": "measurement-framework",
+      "label": "Measurement Framework"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "PresentationLayer"
+    },
+    {
+      "slug": "psychometric-scale",
+      "label": "Psychometric Scale"
+    },
+    {
+      "slug": "task-complexity-analysis",
+      "label": "Task Complexity Analysis"
+    },
+    {
+      "slug": "usability-testing",
+      "label": "Usability Testing"
+    },
+    {
+      "slug": "user-experience-assessment",
+      "label": "User Experience Assessment"
+    },
+    {
+      "slug": "user-feedback",
+      "label": "User Feedback"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

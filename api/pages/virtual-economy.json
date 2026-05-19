@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:a2d42b7909721ea721053c108c0304bb124ef6332d5d8d16f4faf1b622c519c7",
+  "title": "Virtual Economy",
+  "slug": "virtual-economy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-economy",
+  "domain": "blockchain",
+  "definition": "VirtualEconomy is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "barter-system",
+      "label": "Barter System"
+    },
+    {
+      "slug": "base-fee",
+      "label": "Base Fee"
+    },
+    {
+      "slug": "block-reward",
+      "label": "Block Reward"
+    },
+    {
+      "slug": "burning-mechanism",
+      "label": "Burning Mechanism"
+    },
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "cross-metaverse-commerce",
+      "label": "Cross Metaverse Commerce"
+    },
+    {
+      "slug": "de-fi-protocol",
+      "label": "De Fi Protocol"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "deflationary-token",
+      "label": "Deflationary Token"
+    },
+    {
+      "slug": "delegated-proof-of-stake",
+      "label": "Delegated Proof of Stake"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "economic-parameters",
+      "label": "Economic Parameters"
+    },
+    {
+      "slug": "economic-participation",
+      "label": "Economic Participation"
+    },
+    {
+      "slug": "inter-world-remittance",
+      "label": "Inter-world Remittance"
+    },
+    {
+      "slug": "land-economics",
+      "label": "Land Economics"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "sink-mechanism",
+      "label": "Sink Mechanism"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-asset-trading",
+      "label": "Virtual Asset Trading"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "virtual-commerce",
+      "label": "Virtual Commerce"
+    },
+    {
+      "slug": "virtual-economy-infrastructure",
+      "label": "Virtual Economy Infrastructure"
+    },
+    {
+      "slug": "virtual-labor",
+      "label": "Virtual Labor"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    }
+  ]
+}

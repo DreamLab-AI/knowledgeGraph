@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:8cf00a254498d68ddf48450c31f016ec211c197803798ef73657bd15e105f8fa",
+  "title": "Local Explanation",
+  "slug": "local-explanation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:local-explanation",
+  "domain": "spatial-computing",
+  "definition": "Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "counterfactual-explanation",
+      "label": "Counterfactual Explanation"
+    },
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "instance-level-analysis",
+      "label": "Instance-Level Analysis"
+    },
+    {
+      "slug": "integrated-gradients",
+      "label": "Integrated Gradients"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ]
+}

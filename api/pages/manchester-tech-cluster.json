@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:f561b7802c40e10b26f0d2ae02eba6c4c4fd2f60f8dd43e188626c2fe875ab02",
+  "title": "Manchester Tech Cluster",
+  "slug": "manchester-tech-cluster",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:manchester-tech-cluster",
+  "domain": "infrastructure",
+  "definition": "Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "established",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "north-england-innovation-corridor",
+      "label": "North England Innovation Corridor"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ],
+  "backlinks": []
+}

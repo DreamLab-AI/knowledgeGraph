@@ -1,0 +1,160 @@
+{
+  "id": "urn:visionflow:page:718bc4fbf92cebcdff9af35bb272f02464056d74ad7e2443df516fb669ef8d6d",
+  "title": "ETSI_Domain_Infrastructure",
+  "slug": "etsi-domain-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure",
+  "domain": "infrastructure",
+  "definition": "An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale. This domain encompasses [[NetworkInfrastructure]], [[CloudComputing]], [[EdgeComputing]], [[DataCenter|data centers]], [[NetworkSecurity]], and [[SystemResilience]] to provide reliable, performant, secure technical foundations. owl-class:: infrastructure:ETSI_Domain_Infrastructure owl-role:: Concept belongs-to-domain:: [[MetaverseDomain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-center",
+      "label": "DataCenter"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "network-security",
+      "label": "NetworkSecurity"
+    },
+    {
+      "slug": "system-resilience",
+      "label": "SystemResilience"
+    },
+    {
+      "slug": "6-g-network-slice",
+      "label": "6G Network Slice"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "CloudComputing"
+    },
+    {
+      "slug": "cloud-rendering-service",
+      "label": "Cloud Rendering Service"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "EdgeComputing"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "edge-mesh-network",
+      "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "edge-network",
+      "label": "Edge Network"
+    },
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "latency-management-protocol",
+      "label": "Latency Management Protocol"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "NetworkInfrastructure"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    },
+    {
+      "slug": "visualization-layer",
+      "label": "Visualization Layer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    }
+  ]
+}

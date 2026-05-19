@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:a2b959248362ed922f17ac195093530022c5b6c99c17fbc03d87c289c797069c",
+  "title": "Disruptive Technology",
+  "slug": "disruptive-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:disruptive-technology",
+  "domain": "infrastructure",
+  "definition": "Disruptive Technology refers to innovations that create new markets and value networks by initially targeting simple applications at the bottom of the market with more accessible and affordable solutions, then relentlessly moving upmarket to eventually displace established market-leading firms, products, and alliances. Unlike sustaining technologies that make incremental improvements, disruptive technologies enable business models that fundamentally shift market paradigms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "affordability",
+      "label": "Affordability"
+    },
+    {
+      "slug": "christensen-theory",
+      "label": "ChristensenTheory"
+    },
+    {
+      "slug": "digital-photography",
+      "label": "DigitalPhotography"
+    },
+    {
+      "slug": "disruptive-innovation",
+      "label": "DisruptiveInnovation"
+    },
+    {
+      "slug": "electric-vehicles",
+      "label": "ElectricVehicles"
+    },
+    {
+      "slug": "innovation-domain",
+      "label": "InnovationDomain"
+    },
+    {
+      "slug": "innovators-dislemma",
+      "label": "InnovatorsDislemma"
+    },
+    {
+      "slug": "innovators-solution",
+      "label": "InnovatorsSolution"
+    },
+    {
+      "slug": "market-creation",
+      "label": "MarketCreation"
+    },
+    {
+      "slug": "paradigm-shift",
+      "label": "ParadigmShift"
+    },
+    {
+      "slug": "personal-computer",
+      "label": "PersonalComputer"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "simplicity",
+      "label": "Simplicity"
+    },
+    {
+      "slug": "smartphones",
+      "label": "Smartphones"
+    },
+    {
+      "slug": "streaming-services",
+      "label": "StreamingServices"
+    },
+    {
+      "slug": "sustaining-technology",
+      "label": "SustainingTechnology"
+    },
+    {
+      "slug": "value-network",
+      "label": "ValueNetwork"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

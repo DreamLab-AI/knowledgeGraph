@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:8cf9b6758ca95b2b4c52a8b90edac409cec25ebe89a26095efc976e9ad356cbd",
+  "title": "Character Rigging",
+  "slug": "character-rigging",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:character-rigging",
+  "domain": "spatial-computing",
+  "definition": "The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:animation-technique",
+      "label": "Animation Technique"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:skinning",
+        "label": "Skinning"
+      },
+      {
+        "id": "urn:visionflow:linked:weight-painting",
+        "label": "Weight Painting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:character-model",
+        "label": "Character Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-capture-retargeting",
+        "label": "Motion Capture Retargeting"
+      },
+      {
+        "id": "urn:visionflow:linked:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "character-animation",
+      "label": "Character Animation"
+    },
+    {
+      "slug": "motion-capture-retargeting",
+      "label": "Motion Capture Retargeting"
+    },
+    {
+      "slug": "skeletal-animation",
+      "label": "Skeletal Animation"
+    },
+    {
+      "slug": "skinning",
+      "label": "Skinning"
+    },
+    {
+      "slug": "weight-painting",
+      "label": "Weight Painting"
+    },
+    {
+      "slug": "animation-technique",
+      "label": "Animation Technique"
+    },
+    {
+      "slug": "character-model",
+      "label": "Character Model"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

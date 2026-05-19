@@ -1,0 +1,156 @@
+{
+  "id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f",
+  "title": "Zero Knowledge",
+  "slug": "zero-knowledge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:zero-knowledge",
+  "domain": "spatial-computing",
+  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactive proofs]]. [[ZKProofSystems|ZK proof systems]] like [[zkSNARK|zk-SNARKs]] and [[zkSTARK|zk-STARKs]] enable privacy-preserving authentication, [[PrivacyCoin|confidential transactions]], and [[ZKRollup|zkRollups]] that compress on-chain computation whilst maintaining verifiable correctness, critical for balancing transparency requirements against user privacy. Practical applications span [[BlockchainScalability|blockchain scalability]], [[VerifiableComputation|verifiable computation]], and [[SelectiveDisclosure|selective disclosure]] systems enabling users to prove attributes (age, creditworthiness, citizenship) without revealing underlying personal data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aimodel",
+      "label": "AIModel"
+    },
+    {
+      "slug": "cryptographic-proof",
+      "label": "CryptographicProof"
+    },
+    {
+      "slug": "dt-enables",
+      "label": "dt:enables"
+    },
+    {
+      "slug": "dt-protects",
+      "label": "dt:protects"
+    },
+    {
+      "slug": "dt-secures",
+      "label": "dt:secures"
+    },
+    {
+      "slug": "dt-validates",
+      "label": "dt:validates"
+    },
+    {
+      "slug": "dt-verifies",
+      "label": "dt:verifies"
+    },
+    {
+      "slug": "interactive-protocol",
+      "label": "InteractiveProtocol"
+    },
+    {
+      "slug": "nizkproof",
+      "label": "NIZKProof"
+    },
+    {
+      "slug": "preserves-privacy",
+      "label": "preservesPrivacy"
+    },
+    {
+      "slug": "privacy-coin",
+      "label": "PrivacyCoin"
+    },
+    {
+      "slug": "privacy-preserving",
+      "label": "PrivacyPreserving"
+    },
+    {
+      "slug": "privacy-protocol",
+      "label": "PrivacyProtocol"
+    },
+    {
+      "slug": "private-transaction",
+      "label": "PrivateTransaction"
+    },
+    {
+      "slug": "proves-statement",
+      "label": "provesStatement"
+    },
+    {
+      "slug": "scalable-rollup",
+      "label": "ScalableRollup"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "SelectiveDisclosure"
+    },
+    {
+      "slug": "used-in",
+      "label": "usedIn"
+    },
+    {
+      "slug": "user-data",
+      "label": "UserData"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "VerifiableComputation"
+    },
+    {
+      "slug": "verified-by",
+      "label": "verifiedBy"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "zkSNARK"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "zkSNARK"
+    },
+    {
+      "slug": "zk-stark",
+      "label": "zkSTARK"
+    },
+    {
+      "slug": "zk-stark",
+      "label": "zkSTARK"
+    },
+    {
+      "slug": "zkproof-systems",
+      "label": "ZKProofSystems"
+    },
+    {
+      "slug": "zkrollup",
+      "label": "ZKRollup"
+    },
+    {
+      "slug": "blockchain-scalability",
+      "label": "BlockchainScalability"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "DigitalIdentity"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

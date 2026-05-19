@@ -1,0 +1,428 @@
+{
+  "id": "urn:visionflow:page:d5fde4e02a5a7c15dffec26554bc5f361cf5a867877fb1d3734eed9d46ddd4ba",
+  "title": "Stable Diffusion Training",
+  "slug": "stable-diffusion-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stable-diffusion-training",
+  "domain": "artificial-intelligence",
+  "definition": "Stable Diffusion Training encompasses the corpus of methods for adapting pre-trained latent diffusion models\u2014primarily the Stable Diffusion (SD 1.x, SDXL, SD3, FLUX.1) family\u2014to new subjects, styles, concepts, or task domains through fine-tuning, parameter-efficient adaptation, and embedding optimisation, deploying three canonical paradigms: (1) DreamBooth (Ruiz et al. 2023, CVPR), which performs full or partial UNet fine-tuning on 3-30 subject images using a rare-token binding strategy and prior preservation loss L_prior = E[\u2016\u03b5\u0302(x_t, P*) \u2212 \u03b5\u0302(x_t, P)\u2016\u00b2] that backpropagates through class-image regularisation batches to prevent language drift and catastrophic forgetting of the base model's prior distribution, achieving personalised synthesis at the cost of 8-20GB VRAM and 30-90 minutes training on A100 hardware per subject; (2) Textual Inversion (Gal et al. 2022, ICLR 2023), which freezes all UNet and CLIP text-encoder weights and exclusively optimises a new pseudo-word embedding vector v* \u2208 \u211d^768 (SD 1.x) or \u211d^1280 (SDXL/FLUX) in the text-encoder token space by minimising the standard diffusion denoising objective E_{t,x,\u03b5}[\u2016\u03b5 \u2212 \u03b5_\u03b8(x_t, \u03c4(v*,P))\u2016\u00b2] over 3,000-10,000 gradient steps",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "id": "urn:visionflow:linked:transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "label": "Parameter Efficient Fine-Tuning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:caption-dataset",
+        "label": "Caption Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:checkpoint-merging",
+        "label": "Checkpoint Merging"
+      },
+      {
+        "id": "urn:visionflow:linked:dream-booth",
+        "label": "DreamBooth"
+      },
+      {
+        "id": "urn:visionflow:linked:prior-preservation-loss",
+        "label": "Prior Preservation Loss"
+      },
+      {
+        "id": "urn:visionflow:linked:regularisation-images",
+        "label": "Regularisation Images"
+      },
+      {
+        "id": "urn:visionflow:linked:resolution-bucketing",
+        "label": "Resolution Bucketing"
+      },
+      {
+        "id": "urn:visionflow:linked:textual-inversion",
+        "label": "Textual Inversion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:visionflow:owl:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:clip-text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:pre-trained-diffusion-model",
+        "label": "Pre-Trained Diffusion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:text-image-caption-pairs",
+        "label": "Text-Image Caption Pairs"
+      },
+      {
+        "id": "urn:visionflow:linked:training-images",
+        "label": "Training Images"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:checkpoint-merging",
+        "label": "Checkpoint Merging"
+      },
+      {
+        "id": "urn:visionflow:linked:concept-binding",
+        "label": "Concept Binding"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:visionflow:linked:model-specialisation",
+        "label": "Model Specialisation"
+      },
+      {
+        "id": "urn:visionflow:linked:nsfw-content-filtering",
+        "label": "NSFW Content Filtering"
+      },
+      {
+        "id": "urn:visionflow:linked:subject-personalisation",
+        "label": "Subject Personalisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:adaptive-optimisation",
+        "label": "Adaptive Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:cosine-annealing",
+        "label": "Cosine Annealing"
+      },
+      {
+        "id": "urn:visionflow:linked:low-rank-decomposition",
+        "label": "Low-Rank Decomposition"
+      },
+      {
+        "id": "urn:visionflow:linked:noise-prediction-loss",
+        "label": "Noise Prediction Loss"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ada-factor",
+      "label": "AdaFactor"
+    },
+    {
+      "slug": "adam-w-optimiser",
+      "label": "AdamW Optimiser"
+    },
+    {
+      "slug": "adaptive-optimisation",
+      "label": "Adaptive Optimisation"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "art-style-replication",
+      "label": "Art Style Replication"
+    },
+    {
+      "slug": "blip-2-captioning",
+      "label": "BLIP-2 Captioning"
+    },
+    {
+      "slug": "caption-dataset",
+      "label": "Caption Dataset"
+    },
+    {
+      "slug": "character-consistency",
+      "label": "Character Consistency"
+    },
+    {
+      "slug": "checkpoint-merging",
+      "label": "Checkpoint Merging"
+    },
+    {
+      "slug": "civitai",
+      "label": "Civitai"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-text-encoder",
+      "label": "CLIP Text Encoder"
+    },
+    {
+      "slug": "concept-binding",
+      "label": "Concept Binding"
+    },
+    {
+      "slug": "control-net-training",
+      "label": "ControlNet Training"
+    },
+    {
+      "slug": "cosine-annealing",
+      "label": "Cosine Annealing"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "slug": "dream-booth",
+      "label": "DreamBooth"
+    },
+    {
+      "slug": "flux",
+      "label": "FLUX"
+    },
+    {
+      "slug": "full-model-pre-training",
+      "label": "Full Model Pre-Training"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "hugging-face-diffusers-api",
+      "label": "HuggingFace Diffusers API"
+    },
+    {
+      "slug": "hugging-face-hub",
+      "label": "HuggingFace Hub"
+    },
+    {
+      "slug": "hypernetworks",
+      "label": "Hypernetworks"
+    },
+    {
+      "slug": "iclr",
+      "label": "ICLR"
+    },
+    {
+      "slug": "kohya-ss",
+      "label": "kohya_ss"
+    },
+    {
+      "slug": "low-rank-decomposition",
+      "label": "Low-Rank Decomposition"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "model-specialisation",
+      "label": "Model Specialisation"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "noise-prediction-loss",
+      "label": "Noise Prediction Loss"
+    },
+    {
+      "slug": "nsfw-content-filtering",
+      "label": "NSFW Content Filtering"
+    },
+    {
+      "slug": "portrait-synthesis",
+      "label": "Portrait Synthesis"
+    },
+    {
+      "slug": "pre-trained-diffusion-model",
+      "label": "Pre-Trained Diffusion Model"
+    },
+    {
+      "slug": "prior-preservation-loss",
+      "label": "Prior Preservation Loss"
+    },
+    {
+      "slug": "prodigy-optimiser",
+      "label": "Prodigy Optimiser"
+    },
+    {
+      "slug": "product-visualisation",
+      "label": "Product Visualisation"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "regularisation-images",
+      "label": "Regularisation Images"
+    },
+    {
+      "slug": "resolution-bucketing",
+      "label": "Resolution Bucketing"
+    },
+    {
+      "slug": "subject-personalisation",
+      "label": "Subject Personalisation"
+    },
+    {
+      "slug": "text-image-caption-pairs",
+      "label": "Text-Image Caption Pairs"
+    },
+    {
+      "slug": "textual-inversion",
+      "label": "Textual Inversion"
+    },
+    {
+      "slug": "training-images",
+      "label": "Training Images"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "unet-architecture",
+      "label": "UNet Architecture"
+    },
+    {
+      "slug": "wd14-tagger",
+      "label": "WD14 Tagger"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "optimiser",
+      "label": "Optimiser"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter Efficient Fine-Tuning"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

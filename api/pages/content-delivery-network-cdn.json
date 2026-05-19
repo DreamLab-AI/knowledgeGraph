@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:ff5effa6442e4ed2ba51af2bc9215b3ca9a8dc0474a7aa787378736a2d5f0d4a",
+  "title": "Content Delivery Network (CDN)",
+  "slug": "content-delivery-network-cdn",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:content-delivery-network-cdn",
+  "domain": "infrastructure",
+  "definition": "A geographically distributed network of proxy servers and data centers designed to provide high availability, high performance, and low latency content delivery by caching content closer to end-users.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cache-system",
+        "label": "Cache System"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-server",
+        "label": "Edge Server"
+      },
+      {
+        "id": "urn:visionflow:linked:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:visionflow:linked:origin-server",
+        "label": "Origin Server"
+      },
+      {
+        "id": "urn:visionflow:linked:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:dns-service",
+        "label": "DNS Service"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-system",
+        "label": "Storage System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ddo-s-protection",
+        "label": "DDoS Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:geographic-redundancy",
+        "label": "Geographic Redundancy"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-content-delivery",
+        "label": "Low-Latency Content Delivery"
+      },
+      {
+        "id": "urn:visionflow:linked:scalable-distribution",
+        "label": "Scalable Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cache-system",
+      "label": "Cache System"
+    },
+    {
+      "slug": "data-center",
+      "label": "Data Center"
+    },
+    {
+      "slug": "ddo-s-protection",
+      "label": "DDoS Protection"
+    },
+    {
+      "slug": "dns-service",
+      "label": "DNS Service"
+    },
+    {
+      "slug": "edge-server",
+      "label": "Edge Server"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF taxonomy"
+    },
+    {
+      "slug": "geographic-redundancy",
+      "label": "Geographic Redundancy"
+    },
+    {
+      "slug": "internet-service-provider",
+      "label": "Internet Service Provider"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "low-latency-content-delivery",
+      "label": "Low-Latency Content Delivery"
+    },
+    {
+      "slug": "origin-server",
+      "label": "Origin Server"
+    },
+    {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
+    },
+    {
+      "slug": "scalable-distribution",
+      "label": "Scalable Distribution"
+    },
+    {
+      "slug": "storage-system",
+      "label": "Storage System"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    }
+  ]
+}

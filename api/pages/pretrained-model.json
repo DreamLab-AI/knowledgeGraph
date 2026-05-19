@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:4463ad8f7c6f1ccf8454e8b170276c8c7d7f014beedee9f429c953d18b24d072",
+  "title": "Pretrained Model",
+  "slug": "pretrained-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pretrained-model",
+  "domain": "artificial-intelligence",
+  "definition": "Pretrained Model is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:model",
+      "label": "Model"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "model",
+      "label": "Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    }
+  ]
+}

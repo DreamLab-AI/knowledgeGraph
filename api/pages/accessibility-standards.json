@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:98ed5585fea6e2c105139f6b22f065d291a581c1d27282b74455e67c279aa880",
+  "title": "Accessibility Standards",
+  "slug": "accessibility-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accessibility-standards",
+  "domain": "spatial-computing",
+  "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, and neurological impairments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:design-standards",
+      "label": "Design Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-modal-interfaces",
+        "label": "Multi-Modal Interfaces"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:inclusive-virtual-experiences",
+        "label": "Inclusive Virtual Experiences"
+      },
+      {
+        "id": "urn:visionflow:linked:universal-design",
+        "label": "Universal Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
+      "slug": "design-standards",
+      "label": "Design Standards"
+    },
+    {
+      "slug": "inclusive-virtual-experiences",
+      "label": "Inclusive Virtual Experiences"
+    },
+    {
+      "slug": "multi-modal-interfaces",
+      "label": "Multi-Modal Interfaces"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "etsi-domain-governance-society",
+      "label": "ETSI_Domain_Governance___Society"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

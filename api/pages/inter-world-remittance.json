@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:aebc2b884c7343eca8e6463899afc78af971b200fa4da89b88d1432258820801",
+  "title": "Inter-world Remittance",
+  "slug": "inter-world-remittance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inter-world-remittance",
+  "domain": "blockchain",
+  "definition": "Inter-world Remittance is a concept within the bc domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "Virtual Currency"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:50b88bbf648387a74637cee56f61f40fd1964da41e1b6baeda4d5ca0430fec76",
+  "title": "Algorithmic Transparency Reports",
+  "slug": "algorithmic-transparency-reports",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:algorithmic-transparency-reports",
+  "domain": "artificial-intelligence",
+  "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-making. These reports provide standardized transparency information accessible to non-technical audiences, enabling external scrutiny, regulatory compliance verification, and informed public discourse about AI systems affecting individuals and communities. Key report sections include system descriptions (purpose, functionality, deployment scale, affected populations), performance metrics (accuracy, precision, recall, fairness metrics disaggregated by protected groups), fairness and bias analysis (disparate impact assessments, bias mitigation measures, ongoing monitoring), governance and oversight (responsible parties, ethics board reviews, audit procedures), data practices (data sources, collection methods, retention policies, privacy protections), explainability provisions (how decisions are made, contestation mechanisms, human review availability), incidents and remediation (system failure",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-now-institute",
+      "label": "AI Now Institute"
+    },
+    {
+      "slug": "platform-to-business-regulation",
+      "label": "Platform-to-Business Regulation"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ]
+}

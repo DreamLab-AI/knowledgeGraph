@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:5586ce89f21bd9888d067adba2416cec3ae733ea252be0d977817fd0c5e19591",
+  "title": "Authentication Standards",
+  "slug": "authentication-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:authentication-standards",
+  "domain": "infrastructure",
+  "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to metaverse platforms and blockchain applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:security-standards",
+      "label": "Security Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:client-implementation",
+        "label": "Client Implementation"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-authenticators",
+        "label": "Hardware Authenticators"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:phishing-resistance",
+        "label": "Phishing Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-platform-access",
+        "label": "Secure Platform Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "client-implementation",
+      "label": "Client Implementation"
+    },
+    {
+      "slug": "hardware-authenticators",
+      "label": "Hardware Authenticators"
+    },
+    {
+      "slug": "passwordless-authentication",
+      "label": "Passwordless Authentication"
+    },
+    {
+      "slug": "phishing-resistance",
+      "label": "Phishing Resistance"
+    },
+    {
+      "slug": "secure-platform-access",
+      "label": "Secure Platform Access"
+    },
+    {
+      "slug": "security-standards",
+      "label": "Security Standards"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

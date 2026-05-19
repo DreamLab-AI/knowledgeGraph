@@ -1,24 +1,300 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Gemini
-uri:: urn:visionclaw:concept:spatial-computing:gemini
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:gemini
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Gemini
-content-hash:: sha256-12-ff878c99c775
-legacy-term-id:: AI-0229
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Gemini
+legacy_uri:: urn:visionclaw:concept:spatial-computing:gemini
 public:: true
+
+# Gemini
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d6a3356304e0a3b92f57afec67bd6f2ef970fef94e95d7e9d64b35bbfde28704",
+  "@type": "Page",
+  "vc:slug": "gemini",
+  "title": "Gemini",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
+      "vc:label": "Comparison of GPT4 and Gemini Ultra"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:contracts-and-jobs",
+      "vc:label": "Contracts and jobs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diagrams-as-code",
+      "vc:label": "Diagrams as Code"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal",
+      "vc:label": "Multimodal"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "vc:label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:should",
+      "vc:label": "SHOULD"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ff878c99c775"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Gemini"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0229"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Gemini"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:gemini"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:gemini"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d6a3356304e0a3b92f57afec67bd6f2ef970fef94e95d7e9d64b35bbfde28704@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:gemini",
+  "@type": "OntologyClass",
+  "label": "Gemini",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d6a3356304e0a3b92f57afec67bd6f2ef970fef94e95d7e9d64b35bbfde28704"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d6a3356304e0a3b92f57afec67bd6f2ef970fef94e95d7e9d64b35bbfde28704@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A family of multimodal AI models developed by Google DeepMind that natively process text, images, audio, and video, designed for efficiency across different scales from mobile devices to data centres.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:gemini:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d6a3356304e0a3b92f57afec67bd6f2ef970fef94e95d7e9d64b35bbfde28704"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Chain of Thought]]",
+      "resolved": "urn:visionflow:linked:chain-of-thought",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Comparison of GPT4 and Gemini Ultra]]",
+      "resolved": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Contracts and jobs]]",
+      "resolved": "urn:visionflow:owl:class:contracts-and-jobs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diagrams as Code]]",
+      "resolved": "urn:visionflow:owl:class:diagrams-as-code",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Multimodal]]",
+      "resolved": "urn:visionflow:owl:class:multimodal",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Prompt Engineering]]",
+      "resolved": "urn:visionflow:owl:class:prompt-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Retrieval Augmented Generation - RAG]]",
+      "resolved": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SHOULD]]",
+      "resolved": "urn:visionflow:owl:class:should",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d6a3356304e0a3b92f57afec67bd6f2ef970fef94e95d7e9d64b35bbfde28704@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A family of multimodal AI models developed by Google DeepMind that natively process text, images, audio, and video, designed for efficiency across different scales from mobile devices to data centres.
@@ -786,7 +1062,7 @@ public:: true
   - [[Google]] [[Gemini]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
   - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
   - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
-		- I build [[Chain of Thought]] scaffolds in [[Large language models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
+		- I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
 			- Current large language models benefit greatly from being asked to create diagrams as code, in a guided manner.
 			- These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
 			- Human comprehension is radically increased during the co-creations.

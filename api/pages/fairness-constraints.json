@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:4c44e64c482c158e3c33e90fb395229049753f0feffddd28956a93891274149b",
+  "title": "Fairness Constraints",
+  "slug": "fairness-constraints",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:fairness-constraints",
+  "domain": "artificial-intelligence",
+  "definition": "Fairness Constraints are mathematical formalizations of equitable treatment in AI systems, expressed as conditions that predictions must satisfy relative to protected attributes. These constraints are categorized into three fundamental types based on independence criteria: Independence (demographic parity) requires predictions to be independent of protected attributes (\u0176 \u22a5 A), meaning P(\u0176|A=0) = P(\u0176|A=1); Separation (equalized odds) requires predictions to be independent of protected attributes conditional on true labels (\u0176 \u22a5 A | Y), ensuring equal true positive and false positive rates across groups; and Sufficiency (predictive parity) requires true labels to be independent of protected attributes conditional on predictions (Y \u22a5 A | \u0176), ensuring equal precision and calibration across groups. These constraints formalize fairness concepts like demographic parity, equalized odds, equal opportunity (separation for positive class only), and calibration into optimization problems during model training. However, impossibility theorems (Chouldechova 2017, Kleinberg et al. 2017) prove that when base rates differ between groups, certain combinations of fairness constraints cannot be simulta",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "barocas-et-al-2019",
+      "label": "Barocas et al. (2019)"
+    },
+    {
+      "slug": "chouldechova-2017",
+      "label": "Chouldechova (2017)"
+    },
+    {
+      "slug": "hardt-et-al-2016",
+      "label": "Hardt et al. (2016)"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": []
+}

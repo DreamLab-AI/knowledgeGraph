@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:a2d6cb90e05406c7bc5336c298b6d52f8205bf804f5da1ecbe525b68667966fe",
+  "title": "Digital Signal Processing",
+  "slug": "digital-signal-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-signal-processing",
+  "domain": "spatial-computing",
+  "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences. bridges-to:: [[Sensor Input]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:algorithms",
+        "label": "Algorithms"
+      },
+      {
+        "id": "urn:visionflow:linked:dsp-hardware",
+        "label": "DSP Hardware"
+      },
+      {
+        "id": "urn:visionflow:linked:sensors",
+        "label": "Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:audio-enhancement",
+        "label": "Audio Enhancement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:visionflow:owl:class:video-processing",
+        "label": "Video Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithms",
+      "label": "Algorithms"
+    },
+    {
+      "slug": "audio-enhancement",
+      "label": "Audio Enhancement"
+    },
+    {
+      "slug": "dsp-hardware",
+      "label": "DSP Hardware"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "video-processing",
+      "label": "Video Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "procedural-audio-generator",
+      "label": "Procedural Audio Generator"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

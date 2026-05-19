@@ -1,0 +1,1228 @@
+{
+  "id": "urn:visionflow:page:2867fa2ef3c67ae491bf29b068c5024bc4dbb8b4bcc43bb48b8085e561eae093",
+  "title": "Wallet",
+  "slug": "wallet",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:wallet",
+  "domain": "blockchain",
+  "definition": "A software or hardware interface that stores cryptographic private keys and enables users to manage cryptocurrency assets, sign transactions, and interact with blockchain networks securely.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "production",
+  "status": "production",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "12-word-seed-phrase",
+      "label": "12-word seed phrase"
+    },
+    {
+      "slug": "2-fa",
+      "label": "2FA"
+    },
+    {
+      "slug": "2-of-2-multisig",
+      "label": "2-of-2 multisig"
+    },
+    {
+      "slug": "2-of-3-multisig",
+      "label": "2-of-3 multisig"
+    },
+    {
+      "slug": "24-word-seed-phrase",
+      "label": "24-word seed phrase"
+    },
+    {
+      "slug": "3-of-5-multisig",
+      "label": "3-of-5 multisig"
+    },
+    {
+      "slug": "5-of-7-multisig",
+      "label": "5-of-7 multisig"
+    },
+    {
+      "slug": "account",
+      "label": "Account"
+    },
+    {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
+      "slug": "address-index",
+      "label": "address index"
+    },
+    {
+      "slug": "address-poisoning",
+      "label": "address poisoning"
+    },
+    {
+      "slug": "address-reuse",
+      "label": "address reuse"
+    },
+    {
+      "slug": "address-verification",
+      "label": "Address verification"
+    },
+    {
+      "slug": "air-gapped",
+      "label": "air-gapped"
+    },
+    {
+      "slug": "air-gapped",
+      "label": "Air-gapped"
+    },
+    {
+      "slug": "atomic-finance",
+      "label": "Atomic Finance"
+    },
+    {
+      "slug": "authenticator-apps",
+      "label": "authenticator apps"
+    },
+    {
+      "slug": "avalanche-noise-source",
+      "label": "avalanche noise source"
+    },
+    {
+      "slug": "backup-redundancy",
+      "label": "Backup redundancy"
+    },
+    {
+      "slug": "bech32",
+      "label": "bech32"
+    },
+    {
+      "slug": "bech32-addresses",
+      "label": "Bech32 addresses"
+    },
+    {
+      "slug": "bech32m",
+      "label": "bech32m"
+    },
+    {
+      "slug": "bech32m-addresses",
+      "label": "Bech32m addresses"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "bip-32",
+      "label": "BIP-32"
+    },
+    {
+      "slug": "bip-39",
+      "label": "BIP-39"
+    },
+    {
+      "slug": "bip-44",
+      "label": "BIP-44"
+    },
+    {
+      "slug": "bip-49",
+      "label": "BIP-49"
+    },
+    {
+      "slug": "bip-84",
+      "label": "BIP-84"
+    },
+    {
+      "slug": "bip-85",
+      "label": "BIP-85"
+    },
+    {
+      "slug": "bip-86",
+      "label": "BIP-86"
+    },
+    {
+      "slug": "bit-box-app",
+      "label": "BitBoxApp"
+    },
+    {
+      "slug": "bit-box02",
+      "label": "BitBox02"
+    },
+    {
+      "slug": "bitcoin-core",
+      "label": "Bitcoin Core"
+    },
+    {
+      "slug": "bitcoin-maximalists",
+      "label": "Bitcoin maximalists"
+    },
+    {
+      "slug": "bitcoin-multisig",
+      "label": "Bitcoin multisig"
+    },
+    {
+      "slug": "bitcoin-only",
+      "label": "Bitcoin-only"
+    },
+    {
+      "slug": "bitcoin-power-users",
+      "label": "Bitcoin power users"
+    },
+    {
+      "slug": "blixt-wallet",
+      "label": "Blixt Wallet"
+    },
+    {
+      "slug": "blockchain-com-wallet",
+      "label": "Blockchain.com Wallet"
+    },
+    {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
+      "slug": "blue-wallet",
+      "label": "BlueWallet"
+    },
+    {
+      "slug": "bluetooth",
+      "label": "Bluetooth"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
+      "slug": "brick-me-pin",
+      "label": "brick me PIN"
+    },
+    {
+      "slug": "browser-extension-wallets",
+      "label": "Browser Extension Wallets"
+    },
+    {
+      "slug": "browser-extensions",
+      "label": "browser extensions"
+    },
+    {
+      "slug": "bsc",
+      "label": "BSC"
+    },
+    {
+      "slug": "casa",
+      "label": "Casa"
+    },
+    {
+      "slug": "change",
+      "label": "change"
+    },
+    {
+      "slug": "channel-management",
+      "label": "channel management"
+    },
+    {
+      "slug": "channel-opening",
+      "label": "channel opening"
+    },
+    {
+      "slug": "child-pays-for-parent",
+      "label": "Child-Pays-For-Parent"
+    },
+    {
+      "slug": "client-side-validation",
+      "label": "client-side validation"
+    },
+    {
+      "slug": "clipboard-malware",
+      "label": "Clipboard malware"
+    },
+    {
+      "slug": "coin-control",
+      "label": "coin control"
+    },
+    {
+      "slug": "coin-control",
+      "label": "Coin control"
+    },
+    {
+      "slug": "coin-type",
+      "label": "Coin type"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "coinbase-prime",
+      "label": "Coinbase Prime"
+    },
+    {
+      "slug": "coinbase-wallet",
+      "label": "Coinbase Wallet"
+    },
+    {
+      "slug": "coinjoin",
+      "label": "Coinjoin"
+    },
+    {
+      "slug": "coinkite",
+      "label": "Coinkite"
+    },
+    {
+      "slug": "cold-storage",
+      "label": "cold storage"
+    },
+    {
+      "slug": "cold-wallets",
+      "label": "Cold Wallets"
+    },
+    {
+      "slug": "coldcard",
+      "label": "Coldcard"
+    },
+    {
+      "slug": "conditional-payments",
+      "label": "conditional payments"
+    },
+    {
+      "slug": "core-lightning",
+      "label": "Core Lightning"
+    },
+    {
+      "slug": "corporate-treasury",
+      "label": "Corporate treasury"
+    },
+    {
+      "slug": "counterparty-risk",
+      "label": "counterparty risk"
+    },
+    {
+      "slug": "cpfp",
+      "label": "CPFP"
+    },
+    {
+      "slug": "custodial-wallets",
+      "label": "Custodial Wallets"
+    },
+    {
+      "slug": "dapp",
+      "label": "DApp"
+    },
+    {
+      "slug": "dapp-browser",
+      "label": "DApp browser"
+    },
+    {
+      "slug": "dapps",
+      "label": "DApps"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "derivatives",
+      "label": "derivatives"
+    },
+    {
+      "slug": "desktop-wallets",
+      "label": "Desktop Wallets"
+    },
+    {
+      "slug": "dlc-wallets",
+      "label": "DLC wallets"
+    },
+    {
+      "slug": "dojo",
+      "label": "Dojo"
+    },
+    {
+      "slug": "dual-chip-architecture",
+      "label": "dual-chip architecture"
+    },
+    {
+      "slug": "duress-pins",
+      "label": "duress PINs"
+    },
+    {
+      "slug": "dust-outputs",
+      "label": "dust outputs"
+    },
+    {
+      "slug": "dusting-attacks",
+      "label": "Dusting attacks"
+    },
+    {
+      "slug": "eclair",
+      "label": "Eclair"
+    },
+    {
+      "slug": "eip-4337",
+      "label": "EIP-4337"
+    },
+    {
+      "slug": "electrum",
+      "label": "Electrum"
+    },
+    {
+      "slug": "electrum-4-0",
+      "label": "Electrum 4.0+"
+    },
+    {
+      "slug": "ens",
+      "label": "ENS"
+    },
+    {
+      "slug": "escrow-services",
+      "label": "Escrow services"
+    },
+    {
+      "slug": "evm-compatible",
+      "label": "EVM-compatible"
+    },
+    {
+      "slug": "exchange",
+      "label": "exchange"
+    },
+    {
+      "slug": "exchange-wallets",
+      "label": "exchange wallets"
+    },
+    {
+      "slug": "exodus",
+      "label": "Exodus"
+    },
+    {
+      "slug": "extended-keys",
+      "label": "extended keys"
+    },
+    {
+      "slug": "fee-estimation",
+      "label": "Fee estimation"
+    },
+    {
+      "slug": "fee-estimator",
+      "label": "fee estimator"
+    },
+    {
+      "slug": "fee-optimization",
+      "label": "fee optimization"
+    },
+    {
+      "slug": "financial-sovereignty",
+      "label": "financial sovereignty"
+    },
+    {
+      "slug": "fireblocks",
+      "label": "Fireblocks"
+    },
+    {
+      "slug": "firmware",
+      "label": "firmware"
+    },
+    {
+      "slug": "firmware-verification",
+      "label": "Firmware verification"
+    },
+    {
+      "slug": "foundation-passport",
+      "label": "Foundation Passport"
+    },
+    {
+      "slug": "frost",
+      "label": "FROST"
+    },
+    {
+      "slug": "ftx-collapse",
+      "label": "FTX collapse"
+    },
+    {
+      "slug": "gasless-transactions",
+      "label": "gasless transactions"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "gpg-signatures",
+      "label": "GPG signatures"
+    },
+    {
+      "slug": "green-wallet",
+      "label": "Green Wallet"
+    },
+    {
+      "slug": "hardware-isolation",
+      "label": "Hardware isolation"
+    },
+    {
+      "slug": "hardware-wallet",
+      "label": "hardware wallet"
+    },
+    {
+      "slug": "hardware-wallets",
+      "label": "hardware wallets"
+    },
+    {
+      "slug": "hd-wallet",
+      "label": "HD wallet"
+    },
+    {
+      "slug": "hot-wallets",
+      "label": "Hot Wallets"
+    },
+    {
+      "slug": "inheritance-planning",
+      "label": "inheritance planning"
+    },
+    {
+      "slug": "inheritance-planning",
+      "label": "Inheritance planning"
+    },
+    {
+      "slug": "joinmarket",
+      "label": "Joinmarket"
+    },
+    {
+      "slug": "key-derivation",
+      "label": "key derivation"
+    },
+    {
+      "slug": "key-management",
+      "label": "key management"
+    },
+    {
+      "slug": "key-sharding",
+      "label": "key sharding"
+    },
+    {
+      "slug": "key-storage",
+      "label": "key storage"
+    },
+    {
+      "slug": "keysend",
+      "label": "keysend"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer 2"
+    },
+    {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
+      "slug": "ledger-live",
+      "label": "Ledger Live"
+    },
+    {
+      "slug": "ledger-nano-s-plus",
+      "label": "Ledger Nano S Plus"
+    },
+    {
+      "slug": "ledger-nano-x",
+      "label": "Ledger Nano X"
+    },
+    {
+      "slug": "ledger-recover",
+      "label": "Ledger Recover"
+    },
+    {
+      "slug": "legacy-addresses",
+      "label": "Legacy addresses"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "lightning-address",
+      "label": "Lightning Address"
+    },
+    {
+      "slug": "lightning-network-daemon",
+      "label": "Lightning Network Daemon"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "lnd",
+      "label": "LND"
+    },
+    {
+      "slug": "lnurl",
+      "label": "LNURL"
+    },
+    {
+      "slug": "malicious-browser-extensions",
+      "label": "malicious browser extensions"
+    },
+    {
+      "slug": "malicious-updates",
+      "label": "Malicious updates"
+    },
+    {
+      "slug": "mast",
+      "label": "MAST"
+    },
+    {
+      "slug": "master-seed",
+      "label": "master seed"
+    },
+    {
+      "slug": "meta-mask",
+      "label": "MetaMask"
+    },
+    {
+      "slug": "meta-mask-snaps",
+      "label": "MetaMask Snaps"
+    },
+    {
+      "slug": "metal-backups",
+      "label": "metal backups"
+    },
+    {
+      "slug": "micro-sd",
+      "label": "microSD"
+    },
+    {
+      "slug": "microchip-atecc608-b",
+      "label": "Microchip ATECC608B"
+    },
+    {
+      "slug": "miniscript",
+      "label": "Miniscript"
+    },
+    {
+      "slug": "mnemonic",
+      "label": "mnemonic"
+    },
+    {
+      "slug": "mobile-wallets",
+      "label": "mobile wallets"
+    },
+    {
+      "slug": "mobile-wallets",
+      "label": "Mobile Wallets"
+    },
+    {
+      "slug": "mpc-wallets",
+      "label": "MPC wallets"
+    },
+    {
+      "slug": "mu-sig",
+      "label": "MuSig"
+    },
+    {
+      "slug": "mu-sig2",
+      "label": "MuSig2"
+    },
+    {
+      "slug": "multi-account-hierarchy",
+      "label": "multi-account hierarchy"
+    },
+    {
+      "slug": "multi-coin",
+      "label": "multi-coin"
+    },
+    {
+      "slug": "multisig",
+      "label": "multisig"
+    },
+    {
+      "slug": "multisig",
+      "label": "Multisig"
+    },
+    {
+      "slug": "multisig-coordination",
+      "label": "multisig coordination"
+    },
+    {
+      "slug": "multisig-security",
+      "label": "multisig security"
+    },
+    {
+      "slug": "muun",
+      "label": "Muun"
+    },
+    {
+      "slug": "muun-wallet",
+      "label": "Muun Wallet"
+    },
+    {
+      "slug": "my-ether-wallet",
+      "label": "MyEtherWallet"
+    },
+    {
+      "slug": "native-seg-wit",
+      "label": "native SegWit"
+    },
+    {
+      "slug": "neutrino",
+      "label": "Neutrino"
+    },
+    {
+      "slug": "never-share-seed-phrases",
+      "label": "Never share seed phrases"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nfts",
+      "label": "NFTs"
+    },
+    {
+      "slug": "non-custodial-wallets",
+      "label": "Non-Custodial Wallets"
+    },
+    {
+      "slug": "not-your-keys-not-your-coins",
+      "label": "not your keys not your coins"
+    },
+    {
+      "slug": "on-chain",
+      "label": "on-chain"
+    },
+    {
+      "slug": "open-source",
+      "label": "open source"
+    },
+    {
+      "slug": "oracle",
+      "label": "oracle"
+    },
+    {
+      "slug": "p2-sh",
+      "label": "P2SH"
+    },
+    {
+      "slug": "p2-sh-addresses",
+      "label": "P2SH addresses"
+    },
+    {
+      "slug": "p2-tr",
+      "label": "P2TR"
+    },
+    {
+      "slug": "p2-wpkh-nested-in-p2-sh",
+      "label": "P2WPKH-nested-in-P2SH"
+    },
+    {
+      "slug": "p2-wsh",
+      "label": "P2WSH"
+    },
+    {
+      "slug": "paper-wallets",
+      "label": "paper wallets"
+    },
+    {
+      "slug": "passphrase",
+      "label": "Passphrase"
+    },
+    {
+      "slug": "pay-nym",
+      "label": "PayNym"
+    },
+    {
+      "slug": "personal-security",
+      "label": "Personal security"
+    },
+    {
+      "slug": "phantom",
+      "label": "Phantom"
+    },
+    {
+      "slug": "phishing",
+      "label": "phishing"
+    },
+    {
+      "slug": "phishing-attacks",
+      "label": "Phishing attacks"
+    },
+    {
+      "slug": "phoenix-wallet",
+      "label": "Phoenix Wallet"
+    },
+    {
+      "slug": "plausible-deniability",
+      "label": "plausible deniability"
+    },
+    {
+      "slug": "podcast",
+      "label": "podcast"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "privacy-features",
+      "label": "privacy features"
+    },
+    {
+      "slug": "private-keys",
+      "label": "private keys"
+    },
+    {
+      "slug": "psbt",
+      "label": "PSBT"
+    },
+    {
+      "slug": "qr-code",
+      "label": "QR code"
+    },
+    {
+      "slug": "rabby",
+      "label": "Rabby"
+    },
+    {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
+    },
+    {
+      "slug": "rbf",
+      "label": "RBF"
+    },
+    {
+      "slug": "receiving-addresses",
+      "label": "receiving addresses"
+    },
+    {
+      "slug": "replace-by-fee",
+      "label": "Replace-By-Fee"
+    },
+    {
+      "slug": "rgb",
+      "label": "RGB"
+    },
+    {
+      "slug": "rgb-20",
+      "label": "RGB-20"
+    },
+    {
+      "slug": "rgb-21",
+      "label": "RGB-21"
+    },
+    {
+      "slug": "rgb-compatible-wallets",
+      "label": "RGB-compatible wallets"
+    },
+    {
+      "slug": "rgb-enabled-lightning-wallets",
+      "label": "RGB-enabled Lightning wallets"
+    },
+    {
+      "slug": "ricochet",
+      "label": "Ricochet"
+    },
+    {
+      "slug": "samourai",
+      "label": "Samourai"
+    },
+    {
+      "slug": "samourai-wallet",
+      "label": "Samourai Wallet"
+    },
+    {
+      "slug": "satoshi-labs",
+      "label": "SatoshiLabs"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr signatures"
+    },
+    {
+      "slug": "secure-element",
+      "label": "secure element"
+    },
+    {
+      "slug": "secure-element",
+      "label": "Secure element"
+    },
+    {
+      "slug": "security-model",
+      "label": "security model"
+    },
+    {
+      "slug": "seed-phrase",
+      "label": "seed phrase"
+    },
+    {
+      "slug": "seed-phrase",
+      "label": "Seed phrase"
+    },
+    {
+      "slug": "seed-phrase-attack-vectors",
+      "label": "Seed phrase attack vectors"
+    },
+    {
+      "slug": "seed-phrase-backup",
+      "label": "Seed phrase backup"
+    },
+    {
+      "slug": "seed-phrase-backups",
+      "label": "seed phrase backups"
+    },
+    {
+      "slug": "seed-phrases",
+      "label": "seed phrases"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
+    },
+    {
+      "slug": "self-custody",
+      "label": "self-custody"
+    },
+    {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
+      "slug": "shift-crypto",
+      "label": "Shift Crypto"
+    },
+    {
+      "slug": "shoulder-surfing",
+      "label": "shoulder surfing"
+    },
+    {
+      "slug": "silent-payments",
+      "label": "Silent payments"
+    },
+    {
+      "slug": "sim-pin",
+      "label": "SIM PIN"
+    },
+    {
+      "slug": "sim-swap-attacks",
+      "label": "SIM swap attacks"
+    },
+    {
+      "slug": "smart-contract-wallets",
+      "label": "smart contract wallets"
+    },
+    {
+      "slug": "social-recovery",
+      "label": "social recovery"
+    },
+    {
+      "slug": "software-wallets",
+      "label": "software wallets"
+    },
+    {
+      "slug": "sparrow",
+      "label": "Sparrow"
+    },
+    {
+      "slug": "sparrow-wallet",
+      "label": "Sparrow Wallet"
+    },
+    {
+      "slug": "specter-desktop",
+      "label": "Specter Desktop"
+    },
+    {
+      "slug": "spv",
+      "label": "SPV"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "stablecoins"
+    },
+    {
+      "slug": "staking",
+      "label": "staking"
+    },
+    {
+      "slug": "stonewall",
+      "label": "Stonewall"
+    },
+    {
+      "slug": "stowaway",
+      "label": "Stowaway"
+    },
+    {
+      "slug": "streaming-sats",
+      "label": "streaming sats"
+    },
+    {
+      "slug": "submarine-swaps",
+      "label": "submarine swaps"
+    },
+    {
+      "slug": "supply-chain-attacks",
+      "label": "supply chain attacks"
+    },
+    {
+      "slug": "supply-chain-attacks",
+      "label": "Supply chain attacks"
+    },
+    {
+      "slug": "swap",
+      "label": "swap"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "taproot-wallets",
+      "label": "Taproot wallets"
+    },
+    {
+      "slug": "test-transactions",
+      "label": "Test transactions"
+    },
+    {
+      "slug": "threshold-signatures",
+      "label": "Threshold signatures"
+    },
+    {
+      "slug": "token-swaps",
+      "label": "token swaps"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
+      "slug": "touchscreen",
+      "label": "touchscreen"
+    },
+    {
+      "slug": "trampoline-routing",
+      "label": "Trampoline routing"
+    },
+    {
+      "slug": "transaction-batching",
+      "label": "transaction batching"
+    },
+    {
+      "slug": "transaction-preview",
+      "label": "Transaction preview"
+    },
+    {
+      "slug": "transaction-verification",
+      "label": "transaction verification"
+    },
+    {
+      "slug": "transactions",
+      "label": "transactions"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
+    },
+    {
+      "slug": "trezor-model-one",
+      "label": "Trezor Model One"
+    },
+    {
+      "slug": "trezor-model-t",
+      "label": "Trezor Model T"
+    },
+    {
+      "slug": "trezor-suite",
+      "label": "Trezor Suite"
+    },
+    {
+      "slug": "trust-wallet",
+      "label": "Trust Wallet"
+    },
+    {
+      "slug": "unchained-capital",
+      "label": "Unchained Capital"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "utxo-management",
+      "label": "UTXO management"
+    },
+    {
+      "slug": "utxo-privacy",
+      "label": "UTXO privacy"
+    },
+    {
+      "slug": "utxos",
+      "label": "UTXOs"
+    },
+    {
+      "slug": "wabi-sabi",
+      "label": "WabiSabi"
+    },
+    {
+      "slug": "wallet-connect",
+      "label": "WalletConnect"
+    },
+    {
+      "slug": "wasabi-wallet",
+      "label": "Wasabi Wallet"
+    },
+    {
+      "slug": "wasabi-wallet-2-0",
+      "label": "Wasabi Wallet 2.0"
+    },
+    {
+      "slug": "watch-only",
+      "label": "watch-only"
+    },
+    {
+      "slug": "web-wallets",
+      "label": "web wallets"
+    },
+    {
+      "slug": "web-wallets",
+      "label": "Web Wallets"
+    },
+    {
+      "slug": "web3-modal",
+      "label": "Web3 Modal"
+    },
+    {
+      "slug": "whirlpool",
+      "label": "Whirlpool"
+    },
+    {
+      "slug": "whirlpool-coinjoin",
+      "label": "Whirlpool Coinjoin"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "zero-knowledge proofs"
+    },
+    {
+      "slug": "zeus",
+      "label": "Zeus"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "cryptocurrency"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "mempool",
+      "label": "mempool"
+    },
+    {
+      "slug": "privacy",
+      "label": "privacy"
+    },
+    {
+      "slug": "script",
+      "label": "script"
+    },
+    {
+      "slug": "security",
+      "label": "security"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "smart contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "smart contracts"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "token",
+      "label": "token"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

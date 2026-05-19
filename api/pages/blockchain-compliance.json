@@ -1,0 +1,142 @@
+{
+  "id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa",
+  "title": "Blockchain Compliance",
+  "slug": "blockchain-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-compliance",
+  "domain": "blockchain",
+  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency and security.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "production",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:institutional-adoption",
+        "label": "Institutional Adoption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "6-amld-directive-2015-849",
+      "label": "6AMLD (Directive 2015/849)"
+    },
+    {
+      "slug": "aml-anti-money-laundering",
+      "label": "AML (Anti-Money Laundering)"
+    },
+    {
+      "slug": "amla-eu-aml-authority",
+      "label": "AMLA (EU AML Authority)"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "ccpa-california-consumer-privacy-act",
+      "label": "CCPA (California Consumer Privacy Act)"
+    },
+    {
+      "slug": "cta-corporate-transparency-act",
+      "label": "CTA (Corporate Transparency Act)"
+    },
+    {
+      "slug": "ctf-counter-terrorist-financing",
+      "label": "CTF (Counter-Terrorist Financing)"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "fin-cen-financial-crimes-enforcement-network",
+      "label": "FinCEN (Financial Crimes Enforcement Network)"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "genius-act-2025",
+      "label": "GENIUS Act (2025)"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "slug": "kyc-know-your-customer",
+      "label": "KYC (Know Your Customer)"
+    },
+    {
+      "slug": "mi-ca-markets-in-crypto-assets",
+      "label": "MiCA (Markets in Crypto-Assets)"
+    },
+    {
+      "slug": "sec-securities-and-exchange-commission",
+      "label": "SEC (Securities and Exchange Commission)"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

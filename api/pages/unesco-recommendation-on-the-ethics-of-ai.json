@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:311e0e36507571093bc8d0a8e8bab19b28ccc4b194f5384e8061d96fbec54535",
+  "title": "UNESCO Recommendation on the Ethics of AI",
+  "slug": "unesco-recommendation-on-the-ethics-of-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:unesco-recommendation-on-the-ethics-of-ai",
+  "domain": "artificial-intelligence",
+  "definition": "The UNESCO Recommendation on the Ethics of Artificial Intelligence is the first global normative framework establishing ethical principles and policy actions for responsible AI development and deployment, adopted by UNESCO's 193 Member States in November 2021. This comprehensive instrument provides shared values, principles, and actionable policy recommendations to ensure AI technologies respect human rights, protect human dignity, promote diversity and inclusion, and contribute to peaceful and just societies living in harmony with the environment. The Recommendation establishes four core values (human rights and dignity, living in peaceful just and interconnected societies, ensuring diversity and inclusiveness, environment and ecosystem flourishing) and ten foundational principles including proportionality, safety and security, fairness and non-discrimination, sustainability, right to privacy and data protection, human oversight and determination, transparency and explainability, responsibility and accountability, awareness and literacy, and multi-stakeholder and adaptive governance. Unlike legally binding treaties, UNESCO Recommendations establish normative standards that guide n",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.98,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "unesco-recommendation-on-the-ethics-of-ai-2021",
+      "label": "UNESCO Recommendation on the Ethics of AI (2021)"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": []
+}

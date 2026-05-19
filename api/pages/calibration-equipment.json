@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:993fcbbe81d9f3cb96265e5ad14fa60e2446fba53e1ec147642f245377c0423a",
+  "title": "Calibration Equipment",
+  "slug": "calibration-equipment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:calibration-equipment",
+  "domain": "spatial-computing",
+  "definition": "Calibration Equipment is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-calibration-target",
+      "label": "Optical Calibration Target"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:95aaa543560c9f8762346df81c33152e63f444921d9a41fe5a950b79b33c865e",
+  "title": "Polkadot Parachains",
+  "slug": "polkadot-parachains",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:polkadot-parachains",
+  "domain": "blockchain",
+  "definition": "Application-specific blockchains that connect to and are secured by the Polkadot Relay Chain, enabling interoperability and shared security across heterogeneous blockchain networks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "web3-foundation",
+      "label": "Web3 Foundation"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    }
+  ]
+}

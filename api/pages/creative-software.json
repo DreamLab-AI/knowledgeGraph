@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:390238c6f7a9859126fea3e38058abd5949ce1ff3f8226a3f983a12b52c94cc3",
+  "title": "Creative Software",
+  "slug": "creative-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:creative-software",
+  "domain": "spatial-computing",
+  "definition": "Creative Software is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "digital-art-application",
+      "label": "Digital Art Application"
+    }
+  ]
+}

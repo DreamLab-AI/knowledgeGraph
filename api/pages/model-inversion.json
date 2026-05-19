@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:b9d9773099f892dd0eec4a98c52c61a3614ef8465bf539a1c1fbc9fa2fdb7cb7",
+  "title": "Model Inversion",
+  "slug": "model-inversion",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-inversion",
+  "domain": "artificial-intelligence",
+  "definition": "An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rgb",
+      "label": "RGB"
+    },
+    {
+      "slug": "agents",
+      "label": "agents"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "model-extraction",
+      "label": "Model Extraction"
+    }
+  ]
+}

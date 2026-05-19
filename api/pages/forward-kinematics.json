@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:89e9123bbea5508cd472dd2a5289f3e4c28368141bea5b2050d46c0fe0bdabd8",
+  "title": "Forward Kinematics",
+  "slug": "forward-kinematics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:forward-kinematics",
+  "domain": "robotics",
+  "definition": "The process of determining the position and orientation of a robot's end-effector in Cartesian space given the joint parameters (angles or displacements). It maps from joint space to task space using geometric and trigonometric relationships.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:kinematics",
+      "label": "Kinematics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.98,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:joint-parameters",
+        "label": "Joint Parameters"
+      },
+      {
+        "id": "urn:visionflow:linked:kinematic-model",
+        "label": "Kinematic Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:motion-visualization",
+        "label": "Motion Visualization"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-simulation",
+        "label": "Robot Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computability",
+      "label": "Computability"
+    },
+    {
+      "slug": "denavit-hartenberg-parameters",
+      "label": "Denavit-Hartenberg Parameters"
+    },
+    {
+      "slug": "end-effector-pose",
+      "label": "End-Effector Pose"
+    },
+    {
+      "slug": "homogeneous-coordinates",
+      "label": "Homogeneous Coordinates"
+    },
+    {
+      "slug": "joint-parameters",
+      "label": "Joint Parameters"
+    },
+    {
+      "slug": "kinematic-model",
+      "label": "Kinematic Model"
+    },
+    {
+      "slug": "motion-visualization",
+      "label": "Motion Visualization"
+    },
+    {
+      "slug": "rb-0003-manipulator",
+      "label": "RB-0003-manipulator"
+    },
+    {
+      "slug": "rb-1006-inverse-kinematics",
+      "label": "RB-1006-inverse-kinematics"
+    },
+    {
+      "slug": "robot-simulation",
+      "label": "Robot Simulation"
+    },
+    {
+      "slug": "transformation-matrix",
+      "label": "Transformation Matrix"
+    },
+    {
+      "slug": "uniqueness",
+      "label": "Uniqueness"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open-Loop Control"
+    }
+  ]
+}

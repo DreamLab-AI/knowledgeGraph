@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:699159fc8acc24a521cafef8b3aaf53c7a6c1e1fa75578839fd75cb1972ad823",
+  "title": "Recall",
+  "slug": "recall",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:recall",
+  "domain": "spatial-computing",
+  "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in detecting positive cases, particularly critical in applications where missing positive instances (false negatives) carries significant cost or consequences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "false-negative",
+      "label": "False Negative"
+    },
+    {
+      "slug": "precision-recall-curve",
+      "label": "Precision-Recall Curve"
+    },
+    {
+      "slug": "sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "slug": "specificity",
+      "label": "Specificity"
+    },
+    {
+      "slug": "true-positive-rate",
+      "label": "True Positive Rate"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:fcfe4bf3a0a2d7fb013bb7568feeb5a3b005f8051053bd400666b69f262dd3e9",
+  "title": "Explanation",
+  "slug": "explanation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:explanation",
+  "domain": "artificial-intelligence",
+  "definition": "Explanation of AI system behavior or decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": []
+}

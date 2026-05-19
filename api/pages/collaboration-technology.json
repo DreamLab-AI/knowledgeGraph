@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:d666ea058f87dffd95e9c40b4bb29f7e0db4275e59f6c91f0c1fe163c6549025",
+  "title": "Collaboration Technology",
+  "slug": "collaboration-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collaboration-technology",
+  "domain": "spatial-computing",
+  "definition": "Collaboration Technology is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "communication-software",
+      "label": "Communication Software"
+    }
+  ]
+}

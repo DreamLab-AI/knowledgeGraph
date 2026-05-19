@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:daafb2e1e94607dff95762b6f63e6c5cf498c36058f7ed2498a392e07af39956",
+  "title": "SPARQL Endpoint",
+  "slug": "sparql-endpoint",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sparql-endpoint",
+  "domain": "spatial-computing",
+  "definition": "A sparql endpoint component in the Metaverse domain that required by ProvenanceOntologyProvO.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-access-interface",
+      "label": "Data Access Interface"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-access-interface",
+      "label": "Data Access Interface"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    },
+    {
+      "slug": "provenance-ontology-prov-o",
+      "label": "Provenance Ontology (PROV-O)"
+    }
+  ]
+}

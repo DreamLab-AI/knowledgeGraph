@@ -1,0 +1,1288 @@
+{
+  "id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e",
+  "title": "AI Agent System",
+  "slug": "ai-agent-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-agent-system",
+  "domain": "artificial-intelligence",
+  "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    }
+  ],
+  "qualityScore": 0.92,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-engine",
+        "label": "Decision Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-planner",
+        "label": "Goal Planner"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-system",
+        "label": "Memory System"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use-system",
+        "label": "Tool Use System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:learning-module",
+        "label": "Learning Module"
+      },
+      {
+        "id": "urn:visionflow:owl:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:action-space",
+        "label": "Action Space"
+      },
+      {
+        "id": "urn:visionflow:linked:api-access",
+        "label": "API Access"
+      },
+      {
+        "id": "urn:visionflow:linked:authentication-system",
+        "label": "Authentication System"
+      },
+      {
+        "id": "urn:visionflow:linked:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-budget",
+        "label": "Resource Budget"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-behavior",
+        "label": "Adaptive Behavior"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-operation",
+        "label": "Autonomous Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:database-interaction",
+        "label": "Database Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:file-system-access",
+        "label": "File System Access"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-achievement",
+        "label": "Goal Achievement"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "id": "urn:visionflow:linked:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:planning-algorithm",
+        "label": "Planning Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a-swe",
+      "label": "A-SWE"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "adaptive-behavior",
+      "label": "Adaptive Behavior"
+    },
+    {
+      "slug": "adaptive-behavior",
+      "label": "Adaptive Behavior"
+    },
+    {
+      "slug": "address-clustering",
+      "label": "Address Clustering"
+    },
+    {
+      "slug": "agent-autonomy",
+      "label": "Agent Autonomy"
+    },
+    {
+      "slug": "agentic-system",
+      "label": "Agentic System"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-techniques",
+      "label": "AI Techniques"
+    },
+    {
+      "slug": "alexa",
+      "label": "Alexa"
+    },
+    {
+      "slug": "algorithmic-trading",
+      "label": "Algorithmic Trading"
+    },
+    {
+      "slug": "alpha-go",
+      "label": "AlphaGo"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "anthropic-computer-use",
+      "label": "Anthropic Computer Use"
+    },
+    {
+      "slug": "anthropic-computer-use-documentation",
+      "label": "Anthropic Computer Use Documentation"
+    },
+    {
+      "slug": "api-access",
+      "label": "API Access"
+    },
+    {
+      "slug": "api-integration",
+      "label": "API Integration"
+    },
+    {
+      "slug": "api-integration",
+      "label": "API Integration"
+    },
+    {
+      "slug": "arbitrage",
+      "label": "Arbitrage"
+    },
+    {
+      "slug": "authentication-system",
+      "label": "Authentication System"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    },
+    {
+      "slug": "automated-software-engineering",
+      "label": "Automated Software Engineering"
+    },
+    {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-drone",
+      "label": "Autonomous Drone"
+    },
+    {
+      "slug": "autonomous-economic-agent",
+      "label": "Autonomous Economic Agent"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "baby-agi",
+      "label": "BabyAGI"
+    },
+    {
+      "slug": "beta-capability",
+      "label": "Beta Capability"
+    },
+    {
+      "slug": "bitcoin-node",
+      "label": "Bitcoin Node"
+    },
+    {
+      "slug": "bitcoin-trading-bot",
+      "label": "Bitcoin Trading Bot"
+    },
+    {
+      "slug": "bitcoin-trading-bot",
+      "label": "Bitcoin Trading Bot"
+    },
+    {
+      "slug": "blockchain-agent",
+      "label": "Blockchain Agent"
+    },
+    {
+      "slug": "blockchain-data-analysis",
+      "label": "Blockchain Data Analysis"
+    },
+    {
+      "slug": "blockchain-integration",
+      "label": "Blockchain Integration"
+    },
+    {
+      "slug": "browser-automation",
+      "label": "Browser Automation"
+    },
+    {
+      "slug": "browser-workflow",
+      "label": "Browser Workflow"
+    },
+    {
+      "slug": "bug-detection",
+      "label": "Bug Detection"
+    },
+    {
+      "slug": "business-workflow",
+      "label": "Business Workflow"
+    },
+    {
+      "slug": "channel-management-agent",
+      "label": "Channel Management Agent"
+    },
+    {
+      "slug": "chess-engine",
+      "label": "Chess Engine"
+    },
+    {
+      "slug": "claude-3-5-sonnet",
+      "label": "Claude 3.5 Sonnet"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "code-review",
+      "label": "Code Review"
+    },
+    {
+      "slug": "comfort-optimization",
+      "label": "Comfort Optimization"
+    },
+    {
+      "slug": "conversational-agent",
+      "label": "Conversational Agent"
+    },
+    {
+      "slug": "conversational-agent",
+      "label": "Conversational Agent"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "dao-agent",
+      "label": "DAO Agent"
+    },
+    {
+      "slug": "data-collection",
+      "label": "Data Collection"
+    },
+    {
+      "slug": "database-interaction",
+      "label": "Database Interaction"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-fi-agent",
+      "label": "DeFi Agent"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "deep-research",
+      "label": "Deep Research"
+    },
+    {
+      "slug": "developer-tool",
+      "label": "Developer Tool"
+    },
+    {
+      "slug": "digital-task-automation",
+      "label": "Digital Task Automation"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "energy-management",
+      "label": "Energy Management"
+    },
+    {
+      "slug": "environment",
+      "label": "Environment"
+    },
+    {
+      "slug": "environment-model",
+      "label": "Environment Model"
+    },
+    {
+      "slug": "environmental-change",
+      "label": "Environmental Change"
+    },
+    {
+      "slug": "error-profile",
+      "label": "Error Profile"
+    },
+    {
+      "slug": "experiment-design",
+      "label": "Experiment Design"
+    },
+    {
+      "slug": "external-data",
+      "label": "External Data"
+    },
+    {
+      "slug": "file-system-access",
+      "label": "File System Access"
+    },
+    {
+      "slug": "financial-market",
+      "label": "Financial Market"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "goal-achievement",
+      "label": "Goal Achievement"
+    },
+    {
+      "slug": "goal-planner",
+      "label": "Goal Planner"
+    },
+    {
+      "slug": "google-assistant",
+      "label": "Google Assistant"
+    },
+    {
+      "slug": "gpt-4-5",
+      "label": "GPT-4.5"
+    },
+    {
+      "slug": "hash-rate",
+      "label": "Hash Rate"
+    },
+    {
+      "slug": "high-frequency-trading",
+      "label": "High-Frequency Trading"
+    },
+    {
+      "slug": "human-intervention",
+      "label": "Human Intervention"
+    },
+    {
+      "slug": "ieee-p7009",
+      "label": "IEEE P7009"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "slug": "interface-manipulation",
+      "label": "Interface Manipulation"
+    },
+    {
+      "slug": "intrusion-detection",
+      "label": "Intrusion Detection"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "lightning-network-agent",
+      "label": "Lightning Network Agent"
+    },
+    {
+      "slug": "lightning-network-node",
+      "label": "Lightning Network Node"
+    },
+    {
+      "slug": "literature-review",
+      "label": "Literature Review"
+    },
+    {
+      "slug": "malware-analysis",
+      "label": "Malware Analysis"
+    },
+    {
+      "slug": "market-condition",
+      "label": "Market Condition"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "memory-system",
+      "label": "Memory System"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "multi-agent-systems-wooldridge",
+      "label": "Multi-Agent Systems (Wooldridge)"
+    },
+    {
+      "slug": "node-management-agent",
+      "label": "Node Management Agent"
+    },
+    {
+      "slug": "o3-mini",
+      "label": "o3-mini"
+    },
+    {
+      "slug": "open-ai-agent-research",
+      "label": "OpenAI Agent Research"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "oracle-agent",
+      "label": "Oracle Agent"
+    },
+    {
+      "slug": "paper-summarization",
+      "label": "Paper Summarization"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "payment-channel-management",
+      "label": "Payment Channel Management"
+    },
+    {
+      "slug": "perception-action-cycle",
+      "label": "Perception-Action Cycle"
+    },
+    {
+      "slug": "personalized-recommendation",
+      "label": "Personalized Recommendation"
+    },
+    {
+      "slug": "planning-algorithm",
+      "label": "Planning Algorithm"
+    },
+    {
+      "slug": "poker-bot",
+      "label": "Poker Bot"
+    },
+    {
+      "slug": "pool-selection",
+      "label": "Pool Selection"
+    },
+    {
+      "slug": "protein-folding",
+      "label": "Protein Folding"
+    },
+    {
+      "slug": "protocol-interaction",
+      "label": "Protocol Interaction"
+    },
+    {
+      "slug": "reasoning-model",
+      "label": "Reasoning Model"
+    },
+    {
+      "slug": "reinforcement-learning-an-introduction-sutton-and-barto",
+      "label": "Reinforcement Learning: An Introduction (Sutton & Barto)"
+    },
+    {
+      "slug": "research-agent",
+      "label": "Research Agent"
+    },
+    {
+      "slug": "research-preview",
+      "label": "Research Preview"
+    },
+    {
+      "slug": "resource-budget",
+      "label": "Resource Budget"
+    },
+    {
+      "slug": "routing-strategy",
+      "label": "Routing Strategy"
+    },
+    {
+      "slug": "russell-and-norvig-ai-a-modern-approach",
+      "label": "Russell & Norvig AI: A Modern Approach"
+    },
+    {
+      "slug": "safety-guardrail",
+      "label": "Safety Guardrail"
+    },
+    {
+      "slug": "security-system",
+      "label": "Security System"
+    },
+    {
+      "slug": "security-threat",
+      "label": "Security Threat"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "siri",
+      "label": "Siri"
+    },
+    {
+      "slug": "smart-contract-agent",
+      "label": "Smart Contract Agent"
+    },
+    {
+      "slug": "smart-contract-auditing",
+      "label": "Smart Contract Auditing"
+    },
+    {
+      "slug": "smart-contract-deployment",
+      "label": "Smart Contract Deployment"
+    },
+    {
+      "slug": "software-agent",
+      "label": "Software Agent"
+    },
+    {
+      "slug": "star-craft-ai",
+      "label": "StarCraft AI"
+    },
+    {
+      "slug": "swarm-framework",
+      "label": "Swarm Framework"
+    },
+    {
+      "slug": "test-generation",
+      "label": "Test Generation"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "tool-use-system",
+      "label": "Tool Use System"
+    },
+    {
+      "slug": "trading-bot",
+      "label": "Trading Bot"
+    },
+    {
+      "slug": "trading-system",
+      "label": "Trading System"
+    },
+    {
+      "slug": "transaction-analysis",
+      "label": "Transaction Analysis"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "virtual-assistant",
+      "label": "Virtual Assistant"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "learning-module",
+      "label": "Learning Module"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    },
+    {
+      "slug": "robotic-system",
+      "label": "Robotic System"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "self-driving-car",
+      "label": "Self Driving Car"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-board",
+      "label": "AI Board"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-incident",
+      "label": "AI Incident"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-office",
+      "label": "AI Office"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ai-system-eu-definition",
+      "label": "AI System (EU Definition)"
+    },
+    {
+      "slug": "ai-tri-sm",
+      "label": "AI TRiSM"
+    },
+    {
+      "slug": "ai-trust-risk-and-security-management",
+      "label": "AI Trust Risk and Security Management"
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "label": "AI Trustworthiness"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "ai-as-a-step-function",
+      "label": "AI as a step function"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "aicafev6",
+      "label": "AICafev6"
+    },
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "albert",
+      "label": "ALBERT"
+    },
+    {
+      "slug": "api-standard",
+      "label": "API Standard"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "auc",
+      "label": "AUC"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "account-model",
+      "label": "Account Model"
+    },
+    {
+      "slug": "accountability-oecd",
+      "label": "Accountability (OECD)"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "label": "Advice for developing GenAI"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "agentic-workshop",
+      "label": "Agentic Workshop"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "consensus-rule",
+      "label": "Consensus Rule"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "cross-chain-messaging",
+      "label": "Cross-Chain Messaging"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "de-fi-protocol",
+      "label": "De Fi Protocol"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "deep-decks",
+      "label": "deep-decks"
+    },
+    {
+      "slug": "deflationary-token",
+      "label": "Deflationary Token"
+    },
+    {
+      "slug": "delegated-proof-of-stake",
+      "label": "Delegated Proof of Stake"
+    },
+    {
+      "slug": "delivery-planning",
+      "label": "Delivery Planning"
+    },
+    {
+      "slug": "derivative-control",
+      "label": "Derivative Control"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "Difficulty Adjustment"
+    },
+    {
+      "slug": "difficulty-target",
+      "label": "Difficulty Target"
+    },
+    {
+      "slug": "difficulty",
+      "label": "Difficulty"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "Distributed Data Structure"
+    },
+    {
+      "slug": "distributed-protocol",
+      "label": "Distributed Protocol"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double Spending"
+    },
+    {
+      "slug": "emc-standard",
+      "label": "EMC Standard"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "friction",
+      "label": "Friction"
+    },
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "gyroscope",
+      "label": "Gyroscope"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "ideas",
+      "label": "Ideas"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

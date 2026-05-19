@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:7017fba0728405b4708d4c4c21fb869e821e4caa8e4c63b07e6884cc0990d64b",
+  "title": "Human Computer Interaction",
+  "slug": "human-computer-interaction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-computer-interaction",
+  "domain": "artificial-intelligence",
+  "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, evaluation, and implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces. Key areas include conversational AI (chatbots, voice assistants), explainable AI interfaces, mixed-initiative systems, and adaptive user interfaces that personalize based on user behavior. HCI for AI emphasizes transparency, user control, trust calibration, and the ethical implications of algorithmic decision-making on human users.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "human-ai-collaboration",
+      "label": "Human-AI Collaboration"
+    },
+    {
+      "slug": "user-experience-design",
+      "label": "User Experience Design"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention-aware-interaction",
+      "label": "Attention Aware Interaction"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "emotion-aware-interaction",
+      "label": "Emotion Aware Interaction"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "Interaction Domain"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "spatial-interaction",
+      "label": "Spatial Interaction"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

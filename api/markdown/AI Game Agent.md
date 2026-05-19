@@ -1,21 +1,478 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AIGameAgent
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-game-agent
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-game-agent
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Game Agent
-content-hash:: sha256-12-886347ff4bc4
-legacy-term-id:: AI-0800
-status:: complete
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.92
-version:: 2.0.0
-created:: 2025-11-05T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIGameAgent
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-game-agent
 public:: true
+
+# AI Game Agent
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1c1e455fe8135c2929cd7de794a76c88dd24f2f398cfef3483f853db68a4376b",
+  "@type": "Page",
+  "vc:slug": "ai-game-agent",
+  "title": "AI Game Agent",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-challenge",
+      "vc:label": "Adaptive Challenge"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-difficulty",
+      "vc:label": "Adaptive Difficulty"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavior-tree",
+      "vc:label": "Behavior Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-gameplay",
+      "vc:label": "Dynamic Gameplay"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-behavior",
+      "vc:label": "Emergent Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai-pro",
+      "vc:label": "Game AI Pro"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-state",
+      "vc:label": "Game State"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-cig",
+      "vc:label": "IEEE CIG"
+    },
+    {
+      "@id": "urn:visionflow:linked:navigation-mesh",
+      "vc:label": "Navigation Mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:pathfinding-system",
+      "vc:label": "Pathfinding System"
+    },
+    {
+      "@id": "urn:visionflow:linked:player-engagement",
+      "vc:label": "Player Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-behavior",
+      "vc:label": "Procedural Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:unity-ml-agents",
+      "vc:label": "Unity ML-Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience-layer",
+      "vc:label": "UserExperienceLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:game-engine",
+      "vc:label": "Game Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "vc:label": "InteractionDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-machine",
+      "vc:label": "State Machine"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.92"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-886347ff4bc4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-05T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIGameAgent"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0800"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Game Agent"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-game-agent"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-game-agent"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1c1e455fe8135c2929cd7de794a76c88dd24f2f398cfef3483f853db68a4376b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-game-agent",
+  "@type": "OntologyClass",
+  "label": "AI Game Agent",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:1c1e455fe8135c2929cd7de794a76c88dd24f2f398cfef3483f853db68a4376b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1c1e455fe8135c2929cd7de794a76c88dd24f2f398cfef3483f853db68a4376b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An intelligent autonomous entity within a video game or virtual environment that exhibits goal-directed behavior, adapts to player actions, and creates engaging interactive experiences through AI techniques including behavior trees, reinforcement learning, and procedural generation.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.92",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:behavior-tree",
+      "vc:label": "Behavior Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:pathfinding-system",
+      "vc:label": "Pathfinding System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-machine",
+      "vc:label": "State Machine"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:game-state",
+      "vc:label": "Game State"
+    },
+    {
+      "@id": "urn:visionflow:linked:navigation-mesh",
+      "vc:label": "Navigation Mesh"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:game-engine",
+      "vc:label": "Game Engine"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-challenge",
+      "vc:label": "Adaptive Challenge"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-gameplay",
+      "vc:label": "Dynamic Gameplay"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-behavior",
+      "vc:label": "Emergent Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:player-engagement",
+      "vc:label": "Player Engagement"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-difficulty",
+      "vc:label": "Adaptive Difficulty"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-behavior",
+      "vc:label": "Procedural Behavior"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:game-engine",
+      "vc:label": "Game Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-game-agent:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1c1e455fe8135c2929cd7de794a76c88dd24f2f398cfef3483f853db68a4376b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adaptive Challenge]]",
+      "resolved": "urn:visionflow:linked:adaptive-challenge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adaptive Difficulty]]",
+      "resolved": "urn:visionflow:linked:adaptive-difficulty",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Behavior Tree]]",
+      "resolved": "urn:visionflow:linked:behavior-tree",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Engine]]",
+      "resolved": "urn:visionflow:linked:decision-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dynamic Gameplay]]",
+      "resolved": "urn:visionflow:linked:dynamic-gameplay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Emergent Behavior]]",
+      "resolved": "urn:visionflow:linked:emergent-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Game AI Pro]]",
+      "resolved": "urn:visionflow:linked:game-ai-pro",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Game State]]",
+      "resolved": "urn:visionflow:linked:game-state",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE CIG]]",
+      "resolved": "urn:visionflow:linked:ieee-cig",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Navigation Mesh]]",
+      "resolved": "urn:visionflow:linked:navigation-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pathfinding System]]",
+      "resolved": "urn:visionflow:linked:pathfinding-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Player Engagement]]",
+      "resolved": "urn:visionflow:linked:player-engagement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Procedural Behavior]]",
+      "resolved": "urn:visionflow:linked:procedural-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Unity ML-Agents]]",
+      "resolved": "urn:visionflow:linked:unity-ml-agents",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UserExperienceLayer]]",
+      "resolved": "urn:visionflow:linked:user-experience-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Game Engine]]",
+      "resolved": "urn:visionflow:owl:class:game-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Intelligent Virtual Entity]]",
+      "resolved": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InteractionDomain]]",
+      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Procedural Content Generation]]",
+      "resolved": "urn:visionflow:owl:class:procedural-content-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning]]",
+      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[State Machine]]",
+      "resolved": "urn:visionflow:owl:class:state-machine",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:1c1e455fe8135c2929cd7de794a76c88dd24f2f398cfef3483f853db68a4376b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An intelligent autonomous entity within a video game or virtual environment that exhibits goal-directed behavior, adapts to player actions, and creates engaging interactive experiences through AI techniques including behavior trees, reinforcement learning, and procedural generation.

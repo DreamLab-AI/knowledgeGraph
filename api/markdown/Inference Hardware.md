@@ -1,21 +1,195 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#InferenceHardware
-uri:: urn:visionclaw:concept:artificial-intelligence:inference-hardware
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:inference-hardware
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Inference Hardware
-content-hash:: sha256-12-82c61de404bb
-legacy-term-id:: AI-1023
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#InferenceHardware
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:inference-hardware
 public:: true
+
+# Inference Hardware
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855",
+  "@type": "Page",
+  "vc:slug": "inference-hardware",
+  "title": "Inference Hardware",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:real-time-ai",
+      "vc:label": "Real-Time AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-hardware",
+      "vc:label": "AI Hardware"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-82c61de404bb"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#InferenceHardware"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1023"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Inference Hardware"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:inference-hardware"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:inference-hardware"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:inference-hardware",
+  "@type": "OntologyClass",
+  "label": "Inference Hardware",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-hardware",
+      "vc:label": "AI Hardware"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Inference Hardware is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:real-time-ai",
+      "vc:label": "Real-Time AI"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:inference-hardware:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Real-Time AI]]",
+      "resolved": "urn:visionflow:linked:real-time-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Hardware]]",
+      "resolved": "urn:visionflow:owl:class:ai-hardware",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Inference Hardware is a concept within the ai domain.

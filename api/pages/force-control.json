@@ -1,0 +1,628 @@
+{
+  "id": "urn:visionflow:page:0f48ef132b5280982a589dd84a1e39fb60eb048ff0f2ae08aa18dc25ece4c40c",
+  "title": "Force Control",
+  "slug": "force-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:force-control",
+  "domain": "robotics",
+  "definition": "**Force Control** is the family of robotic control paradigms that regulate the contact force and/or torque exerted by a manipulator, end-effector, joint or whole-body system on its environment rather than (or in addition to) regulating Cartesian or joint position, formalised through a closed-loop relationship between a desired wrench reference F_d \u2208 \u211d\u2076 (three forces F_x, F_y, F_z and three moments \u03c4_x, \u03c4_y, \u03c4_z resolved in a task frame) and either a measured wrench F_m obtained from a six-axis force/torque sensor (ATI Mini40/Gamma/Theta, Robotiq FT-300, OnRobot HEX, Bota Systems Rokubi, ME-Systeme K6D) mounted at the wrist or tool tip, an estimated wrench reconstructed from joint torque sensors integrated in collaborative arms (ABB IRB14000 YuMi, KUKA LBR iiwa/Med, Franka Emika Panda/FR3, Universal Robots e-Series, Kinova Gen3) via the manipulator Jacobian J(q) under \u03c4 = J\u1d40(q) F_ext, or a virtual force derived from motor current/elastic deflection in Series Elastic Actuators (Pratt & Williamson 1995 MIT Leg Lab; Boston Dynamics Atlas hydraulic-then-electric SEA; NASA Robonaut 2; Open Source Leg) and Variable Stiffness Actuators (Vanderborght et al. 2013 IEEE RAM survey; DLR David h",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cyber-physical-control",
+      "label": "Cyber-Physical Control"
+    },
+    {
+      "id": "urn:visionflow:linked:robotic-control",
+      "label": "Robotic Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:closed-loop-control",
+      "label": "Closed Loop Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:interaction-control",
+      "label": "Interaction Control"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:compliance-frame",
+        "label": "Compliance Frame"
+      },
+      {
+        "id": "urn:visionflow:linked:control-law",
+        "label": "Control Law"
+      },
+      {
+        "id": "urn:visionflow:linked:joint-torque-sensor",
+        "label": "Joint Torque Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:manipulator-jacobian",
+        "label": "Manipulator Jacobian"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-wrench",
+        "label": "Reference Wrench"
+      },
+      {
+        "id": "urn:visionflow:owl:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:anti-windup",
+        "label": "Anti-Windup"
+      },
+      {
+        "id": "urn:visionflow:linked:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "id": "urn:visionflow:linked:force-measurement",
+        "label": "Force Measurement"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-computation",
+        "label": "Real-time Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-dynamics-model",
+        "label": "Robot Dynamics Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bipedal-balance",
+        "label": "Bipedal Balance"
+      },
+      {
+        "id": "urn:visionflow:linked:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:deburring",
+        "label": "Deburring"
+      },
+      {
+        "id": "urn:visionflow:linked:peg-in-hole-assembly",
+        "label": "Peg-in-Hole Assembly"
+      },
+      {
+        "id": "urn:visionflow:linked:polishing",
+        "label": "Polishing"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-human-robot-interaction",
+        "label": "Safe Human-Robot Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:surgical-suturing",
+        "label": "Surgical Suturing"
+      },
+      {
+        "id": "urn:visionflow:linked:tactile-exploration",
+        "label": "Tactile Exploration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:computed-torque-control",
+        "label": "Computed Torque Control"
+      },
+      {
+        "id": "urn:visionflow:linked:explicit-force-control",
+        "label": "Explicit Force Control"
+      },
+      {
+        "id": "urn:visionflow:linked:hybrid-position-force-control",
+        "label": "Hybrid Position-Force Control"
+      },
+      {
+        "id": "urn:visionflow:linked:implicit-force-control",
+        "label": "Implicit Force Control"
+      },
+      {
+        "id": "urn:visionflow:linked:operational-space-control",
+        "label": "Operational Space Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuation-layer",
+      "label": "ActuationLayer"
+    },
+    {
+      "slug": "albu-sch-ffer-ott-hirzinger-2007-passivity-flexible-joint",
+      "label": "Albu-Sch\u00e4ffer Ott Hirzinger 2007 Passivity Flexible Joint"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "anti-windup",
+      "label": "Anti-Windup"
+    },
+    {
+      "slug": "archive-market-research-2025-integrated-force-controller",
+      "label": "Archive Market Research 2025 Integrated Force Controller"
+    },
+    {
+      "slug": "bipedal-balance",
+      "label": "Bipedal Balance"
+    },
+    {
+      "slug": "brohan-et-al-2023-rt-2-vision-language-action",
+      "label": "Brohan et al. 2023 RT-2 Vision Language Action"
+    },
+    {
+      "slug": "carpentier-et-al-2019-pinocchio-c-library",
+      "label": "Carpentier et al. 2019 Pinocchio C++ Library"
+    },
+    {
+      "slug": "chi-et-al-2023-diffusion-policy",
+      "label": "Chi et al. 2023 Diffusion Policy"
+    },
+    {
+      "slug": "collaborative-robotics",
+      "label": "Collaborative Robotics"
+    },
+    {
+      "slug": "compliance-frame",
+      "label": "Compliance Frame"
+    },
+    {
+      "slug": "compliant-manipulation",
+      "label": "Compliant Manipulation"
+    },
+    {
+      "slug": "computed-torque-control",
+      "label": "Computed Torque Control"
+    },
+    {
+      "slug": "control-law",
+      "label": "Control Law"
+    },
+    {
+      "slug": "control-layer",
+      "label": "ControlLayer"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "ControlSystemsDomain"
+    },
+    {
+      "slug": "coordinate-transformation",
+      "label": "Coordinate Transformation"
+    },
+    {
+      "slug": "cyber-physical-control",
+      "label": "Cyber-Physical Control"
+    },
+    {
+      "slug": "deburring",
+      "label": "Deburring"
+    },
+    {
+      "slug": "differential-dynamic-programming",
+      "label": "Differential Dynamic Programming"
+    },
+    {
+      "slug": "explicit-force-control",
+      "label": "Explicit Force Control"
+    },
+    {
+      "slug": "force-measurement",
+      "label": "Force Measurement"
+    },
+    {
+      "slug": "hogan-1985-impedance-control-parts-i-iii",
+      "label": "Hogan 1985 Impedance Control Parts I-III"
+    },
+    {
+      "slug": "human-robot-interaction-domain",
+      "label": "HumanRobotInteractionDomain"
+    },
+    {
+      "slug": "humanoid-locomotion",
+      "label": "Humanoid Locomotion"
+    },
+    {
+      "slug": "humanoids-conference",
+      "label": "Humanoids Conference"
+    },
+    {
+      "slug": "hybrid-position-force-control",
+      "label": "Hybrid Position-Force Control"
+    },
+    {
+      "slug": "icra",
+      "label": "ICRA"
+    },
+    {
+      "slug": "ieee-ras",
+      "label": "IEEE RAS"
+    },
+    {
+      "slug": "ifr-world-robotics-2024",
+      "label": "IFR World Robotics 2024"
+    },
+    {
+      "slug": "implicit-force-control",
+      "label": "Implicit Force Control"
+    },
+    {
+      "slug": "industrial-assembly",
+      "label": "Industrial Assembly"
+    },
+    {
+      "slug": "intuitive-surgical-2024-da-vinci-5-force-feedback",
+      "label": "Intuitive Surgical 2024 Da Vinci 5 Force Feedback"
+    },
+    {
+      "slug": "iros",
+      "label": "IROS"
+    },
+    {
+      "slug": "iso-10218",
+      "label": "ISO 10218"
+    },
+    {
+      "slug": "iso-10218-1-2025-industrial-robot-safety",
+      "label": "ISO 10218-1 2025 Industrial Robot Safety"
+    },
+    {
+      "slug": "iso-ts-15066",
+      "label": "ISO TS 15066"
+    },
+    {
+      "slug": "iso-ts-15066-2016-collaborative-robots",
+      "label": "ISO TS 15066 2016 Collaborative Robots"
+    },
+    {
+      "slug": "johannink-et-al-2018-residual-reinforcement-learning",
+      "label": "Johannink et al. 2018 Residual Reinforcement Learning"
+    },
+    {
+      "slug": "joint-torque-sensor",
+      "label": "Joint Torque Sensor"
+    },
+    {
+      "slug": "khatib-1987-operational-space-formulation",
+      "label": "Khatib 1987 Operational Space Formulation"
+    },
+    {
+      "slug": "lagrangian-mechanics",
+      "label": "Lagrangian Mechanics"
+    },
+    {
+      "slug": "lambeta-et-al-2020-meta-digit-tactile-sensor",
+      "label": "Lambeta et al. 2020 Meta DIGIT Tactile Sensor"
+    },
+    {
+      "slug": "lepora-2021-tac-tip-soft-biomimetic-review",
+      "label": "Lepora 2021 TacTip Soft Biomimetic Review"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "manipulation-domain",
+      "label": "ManipulationDomain"
+    },
+    {
+      "slug": "manipulator-jacobian",
+      "label": "Manipulator Jacobian"
+    },
+    {
+      "slug": "mason-1981-compliance-and-force-control",
+      "label": "Mason 1981 Compliance and Force Control"
+    },
+    {
+      "slug": "mastalli-et-al-2020-crocoddyl-multi-contact-optimal-control",
+      "label": "Mastalli et al. 2020 Crocoddyl Multi-Contact Optimal Control"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "newton-euler-recursion",
+      "label": "Newton-Euler Recursion"
+    },
+    {
+      "slug": "open-loop-trajectory-execution",
+      "label": "Open Loop Trajectory Execution"
+    },
+    {
+      "slug": "operational-space-control",
+      "label": "Operational Space Control"
+    },
+    {
+      "slug": "peg-in-hole-assembly",
+      "label": "Peg-in-Hole Assembly"
+    },
+    {
+      "slug": "polishing",
+      "label": "Polishing"
+    },
+    {
+      "slug": "pratt-and-williamson-1995-series-elastic-actuators",
+      "label": "Pratt & Williamson 1995 Series Elastic Actuators"
+    },
+    {
+      "slug": "pratt-et-al-2006-capture-point-humanoid-push-recovery",
+      "label": "Pratt et al. 2006 Capture Point Humanoid Push Recovery"
+    },
+    {
+      "slug": "pure-position-control",
+      "label": "Pure Position Control"
+    },
+    {
+      "slug": "quadratic-programming",
+      "label": "Quadratic Programming"
+    },
+    {
+      "slug": "raibert-and-craig-1981-hybrid-position-force-control",
+      "label": "Raibert & Craig 1981 Hybrid Position Force Control"
+    },
+    {
+      "slug": "real-time-computation",
+      "label": "Real-time Computation"
+    },
+    {
+      "slug": "reference-wrench",
+      "label": "Reference Wrench"
+    },
+    {
+      "slug": "rehabilitation-robotics",
+      "label": "Rehabilitation Robotics"
+    },
+    {
+      "slug": "reinforcement-learning-for-robotics",
+      "label": "Reinforcement Learning for Robotics"
+    },
+    {
+      "slug": "remote-centre-of-compliance",
+      "label": "Remote Centre of Compliance"
+    },
+    {
+      "slug": "robot-dynamics-model",
+      "label": "Robot Dynamics Model"
+    },
+    {
+      "slug": "robotic-control",
+      "label": "Robotic Control"
+    },
+    {
+      "slug": "robotic-polishing",
+      "label": "Robotic Polishing"
+    },
+    {
+      "slug": "rss",
+      "label": "RSS"
+    },
+    {
+      "slug": "saeidi-et-al-2022-star-autonomous-laparoscopic-anastomosis",
+      "label": "Saeidi et al. 2022 STAR Autonomous Laparoscopic Anastomosis"
+    },
+    {
+      "slug": "safe-human-robot-interaction",
+      "label": "Safe Human-Robot Interaction"
+    },
+    {
+      "slug": "salisbury-1980-active-stiffness-control-cartesian",
+      "label": "Salisbury 1980 Active Stiffness Control Cartesian"
+    },
+    {
+      "slug": "sensing-layer",
+      "label": "SensingLayer"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "six-axis-force-torque-sensor",
+      "label": "Six-Axis Force Torque Sensor"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "surgical-suturing",
+      "label": "Surgical Suturing"
+    },
+    {
+      "slug": "tactile-exploration",
+      "label": "Tactile Exploration"
+    },
+    {
+      "slug": "tactile-sensing",
+      "label": "Tactile Sensing"
+    },
+    {
+      "slug": "tassa-erez-todorov-2014-i-lqr-online-trajectory-optimization",
+      "label": "Tassa Erez Todorov 2014 iLQR Online Trajectory Optimization"
+    },
+    {
+      "slug": "telerobotics",
+      "label": "Telerobotics"
+    },
+    {
+      "slug": "torque-only-control",
+      "label": "Torque-Only Control"
+    },
+    {
+      "slug": "vanderborght-et-al-2013-variable-impedance-actuators-review",
+      "label": "Vanderborght et al. 2013 Variable Impedance Actuators Review"
+    },
+    {
+      "slug": "variable-stiffness-actuator",
+      "label": "Variable Stiffness Actuator"
+    },
+    {
+      "slug": "vukobratovi-and-stepanenko-1972-zmp",
+      "label": "Vukobratovi\u0107 & Stepanenko 1972 ZMP"
+    },
+    {
+      "slug": "ward-cherrier-et-al-2018-tac-tip-family-bristol",
+      "label": "Ward-Cherrier et al. 2018 TacTip Family Bristol"
+    },
+    {
+      "slug": "whitney-1977-force-feedback-control-of-manipulator-fine-motions",
+      "label": "Whitney 1977 Force Feedback Control of Manipulator Fine Motions"
+    },
+    {
+      "slug": "whole-body-controller",
+      "label": "Whole-Body Controller"
+    },
+    {
+      "slug": "yuan-dong-adelson-2017-gel-sight",
+      "label": "Yuan Dong Adelson 2017 GelSight"
+    },
+    {
+      "slug": "zhao-et-al-2023-aloha-bimanual-manipulation",
+      "label": "Zhao et al. 2023 ALOHA Bimanual Manipulation"
+    },
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed Loop Control"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End Effector"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "interaction-control",
+      "label": "Interaction Control"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "rigid-body-dynamics",
+      "label": "Rigid Body Dynamics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "cylindrical-robot",
+      "label": "Cylindrical Robot"
+    },
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

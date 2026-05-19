@@ -1,0 +1,496 @@
+{
+  "id": "urn:visionflow:page:14ce7b7d32ee170c3b9548a2d63047d438a39a3412869b364fe69c7892a36ff1",
+  "title": "Competition in AI",
+  "slug": "competition-in-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:competition-in-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Competition in AI is the multi-dimensional race dynamics \u2014 geopolitical, corporate, research, and regulatory \u2014 through which nation-states, hyperscaler enterprises, independent laboratories, open-source collectives, and frontier-model providers compete for technological leadership in artificial intelligence, operating across six interlocking battlegrounds: (1) frontier-model capability \u2014 benchmark supremacy on reasoning, coding, multimodality, and long-context tasks where as of Q1 2026 Anthropic (Arena Elo 1,503), xAI (1,495), Google (1,494), OpenAI (1,481), Alibaba (1,449), and DeepSeek (1,424) occupy the top tier within 79 Elo points of each other, with the Stanford AI Index 2026 recording only a 2.7% capability gap between the best US and best Chinese frontier models; (2) compute and supply-chain dominance \u2014 NVIDIA holds ~80% of the AI accelerator market and secured over 70% of TSMC's CoWoS-L advanced-packaging capacity for 2025\u20132026, SK Hynix confirmed all 2026 HBM3E supply sold out, and the $500 billion Stargate initiative secured 10 GW of US AI compute capacity ahead of its original 2029 target; (3) capital formation \u2014 global corporate AI investment reached $581 billion in 20",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:geopolitics",
+      "label": "Geopolitics"
+    },
+    {
+      "id": "urn:visionflow:linked:industrial-competition",
+      "label": "Industrial Competition"
+    },
+    {
+      "id": "urn:visionflow:linked:innovation-economics",
+      "label": "Innovation Economics"
+    },
+    {
+      "id": "urn:visionflow:linked:technology-race",
+      "label": "Technology Race"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-investment",
+        "label": "AI Investment"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:compute-access",
+        "label": "Compute Access"
+      },
+      {
+        "id": "urn:visionflow:linked:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:visionflow:linked:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "id": "urn:visionflow:linked:talent-concentration",
+        "label": "Talent Concentration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-research-talent",
+        "label": "AI Research Talent"
+      },
+      {
+        "id": "urn:visionflow:linked:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-supply-chain",
+        "label": "GPU Supply Chain"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-sovereignty",
+        "label": "AI Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:economic-competitiveness",
+        "label": "Economic Competitiveness"
+      },
+      {
+        "id": "urn:visionflow:linked:national-security-advantage",
+        "label": "National Security Advantage"
+      },
+      {
+        "id": "urn:visionflow:linked:technological-leadership",
+        "label": "Technological Leadership"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:antitrust-oversight",
+        "label": "Antitrust Oversight"
+      },
+      {
+        "id": "urn:visionflow:linked:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:open-model-licensing",
+        "label": "Open Model Licensing"
+      },
+      {
+        "id": "urn:visionflow:linked:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agentic-ai-systems",
+      "label": "Agentic AI Systems"
+    },
+    {
+      "slug": "ai-chips",
+      "label": "AI Chips"
+    },
+    {
+      "slug": "ai-cooperation",
+      "label": "AI Cooperation"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "ai-research-talent",
+      "label": "AI Research Talent"
+    },
+    {
+      "slug": "ai-sovereignty",
+      "label": "AI Sovereignty"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "antitrust-oversight",
+      "label": "Antitrust Oversight"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "capital-markets",
+      "label": "Capital Markets"
+    },
+    {
+      "slug": "compute-access",
+      "label": "Compute Access"
+    },
+    {
+      "slug": "compute-governance",
+      "label": "Compute Governance"
+    },
+    {
+      "slug": "economic-competitiveness",
+      "label": "Economic Competitiveness"
+    },
+    {
+      "slug": "export-controls",
+      "label": "Export Controls"
+    },
+    {
+      "slug": "frontier-models",
+      "label": "Frontier Models"
+    },
+    {
+      "slug": "geopolitics",
+      "label": "Geopolitics"
+    },
+    {
+      "slug": "geopolitics-domain",
+      "label": "GeopoliticsDomain"
+    },
+    {
+      "slug": "gpu-supply-chain",
+      "label": "GPU Supply Chain"
+    },
+    {
+      "slug": "ieee-standards-association",
+      "label": "IEEE Standards Association"
+    },
+    {
+      "slug": "industrial-competition",
+      "label": "Industrial Competition"
+    },
+    {
+      "slug": "industrial-organization-domain",
+      "label": "IndustrialOrganizationDomain"
+    },
+    {
+      "slug": "inference-optimisation",
+      "label": "Inference Optimisation"
+    },
+    {
+      "slug": "innovation-economics",
+      "label": "Innovation Economics"
+    },
+    {
+      "slug": "innovation-ecosystems",
+      "label": "Innovation Ecosystems"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "InstitutionalLayer"
+    },
+    {
+      "slug": "iso-iec-jtc-1-sc-42",
+      "label": "ISO/IEC JTC 1/SC 42"
+    },
+    {
+      "slug": "market-layer",
+      "label": "MarketLayer"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "mistral-ai",
+      "label": "Mistral AI"
+    },
+    {
+      "slug": "national-ai-strategies",
+      "label": "National AI Strategies"
+    },
+    {
+      "slug": "national-security-advantage",
+      "label": "National Security Advantage"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "open-model-licensing",
+      "label": "Open Model Licensing"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "research-layer",
+      "label": "ResearchLayer"
+    },
+    {
+      "slug": "responsible-scaling-policy",
+      "label": "Responsible Scaling Policy"
+    },
+    {
+      "slug": "semiconductor-industry",
+      "label": "Semiconductor Industry"
+    },
+    {
+      "slug": "talent-concentration",
+      "label": "Talent Concentration"
+    },
+    {
+      "slug": "technological-leadership",
+      "label": "Technological Leadership"
+    },
+    {
+      "slug": "technology-race",
+      "label": "Technology Race"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

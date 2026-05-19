@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:369cac2e0505638baa9a9b39b2c1eafcc6aaf411768098d200264c988e3e8ec4",
+  "title": "Objective",
+  "slug": "objective",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:objective",
+  "domain": "artificial-intelligence",
+  "definition": "Objective is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "goal",
+      "label": "Goal"
+    }
+  ]
+}

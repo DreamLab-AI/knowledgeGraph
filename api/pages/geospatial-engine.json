@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:f4a319a9a383b7e9d58c1df9af652f11280d96e7e07d961a19d87d89bfa243c5",
+  "title": "Geospatial Engine",
+  "slug": "geospatial-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:geospatial-engine",
+  "domain": "spatial-computing",
+  "definition": "Software platforms that stream, render, and process large volumes of geographic and 3D spatial data in real-time for metaverse applications, enabling digital twins of real-world locations, location-based experiences, and integration between physical geography and virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:geospatially-accurate-metaverse",
+        "label": "Geospatially-Accurate Metaverse"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "geospatially-accurate-metaverse",
+      "label": "Geospatially-Accurate Metaverse"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

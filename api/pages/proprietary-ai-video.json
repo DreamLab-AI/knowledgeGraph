@@ -1,0 +1,428 @@
+{
+  "id": "urn:visionflow:page:8717a0b9181ac4a1574a693ab8b946cbd0cce8b284c0692133874fc5b7f88376",
+  "title": "Proprietary AI Video",
+  "slug": "proprietary-ai-video",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proprietary-ai-video",
+  "domain": "artificial-intelligence",
+  "definition": "Proprietary AI Video denotes the class of closed-source, commercially operated [[Generative AI]] systems that synthesise temporally-coherent moving imagery conditioned on text prompts, reference images, existing video clips, audio signals, or structured control inputs (depth maps, pose skeletons, motion vectors), developed and served by corporations retaining exclusive access to model weights, training data compositions, and inference infrastructure, encompassing five dominant commercial families \u2014 (1) foundation text-to-video generators with physics-aware spatiotemporal modelling (OpenAI Sora Feb 2024 preview / Dec 2024 Turbo launch / Sep 2025 Sora 2 with synchronised audio, [[Google DeepMind]] Veo 2 Dec 2024 / Veo 3 May 2025 with native joint audio, Kuaishou Kling 1.0 Jun 2024 / 2.0 Apr 2025 120-second clips / 2.1 Aug 2025 multi-shot consistency, [[Runway]] Gen-3 Alpha Jun 2024 / Gen-3 Alpha Turbo Jul 2024 $0.05/sec / Gen-4 Mar 2025 character consistency); (2) prosumer creative tools optimised for short-form social content (Pika 1.5 Oct 2024 Pikaffects / 2.0 Dec 2024 Scene Ingredients / 2.2 Feb 2025 Pikaframes-Pikaswaps-Pikadditions, Luma Dream Machine Jun 2024 / Ray2 Jan 2025, M",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-video",
+      "label": "AI Video"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:model-training",
+      "label": "Model Training"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-video-generation",
+        "label": "Text-to-Video Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:visionflow:owl:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:visionflow:owl:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:visionflow:owl:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "id": "urn:visionflow:owl:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "advertising-and-marketing",
+      "label": "Advertising and Marketing"
+    },
+    {
+      "slug": "apiservice-layer",
+      "label": "APIServiceLayer"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier Free Guidance"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "creative-aidomain",
+      "label": "CreativeAIDomain"
+    },
+    {
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "FoundationModelLayer"
+    },
+    {
+      "slug": "generative-aidomain",
+      "label": "GenerativeAIDomain"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "runway",
+      "label": "Runway"
+    },
+    {
+      "slug": "text-to-video-generation",
+      "label": "Text-to-Video Generation"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "social-media",
+      "label": "Social Media"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

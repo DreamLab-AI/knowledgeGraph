@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:daf28f311a132ddf2bb7e10bcb5445b76d207caf93f4138f7242b6e403870571",
+  "title": "Non Genesis Block",
+  "slug": "non-genesis-block",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:non-genesis-block",
+  "domain": "blockchain",
+  "definition": "Non Genesis Block is a concept within the bc domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:block",
+      "label": "Block"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

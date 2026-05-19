@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:29c47909c0678b009a54e73c35fef049f938f2bccdfcee96aac9bbb7b3e87d91",
+  "title": "Property",
+  "slug": "property",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:property",
+  "domain": "artificial-intelligence",
+  "definition": "Property is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    }
+  ]
+}

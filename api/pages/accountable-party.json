@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20",
+  "title": "Accountable Party",
+  "slug": "accountable-party",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accountable-party",
+  "domain": "artificial-intelligence",
+  "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability in AI contexts addresses the critical question: when AI systems cause harm or produce unfair outcomes, who bears responsibility and what obligations do they have to prevent, detect, and remediate problems? Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties\u2014it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems crea",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-governance-principle",
+      "label": "AI Governance Principle"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance-principle",
+      "label": "AI Governance Principle"
+    },
+    {
+      "slug": "algorithmic-accountability-principles",
+      "label": "Algorithmic Accountability Principles"
+    },
+    {
+      "slug": "algorithmic-auditor",
+      "label": "Algorithmic Auditor"
+    },
+    {
+      "slug": "chief-ai-officer",
+      "label": "Chief AI Officer"
+    },
+    {
+      "slug": "data-provider",
+      "label": "Data Provider"
+    },
+    {
+      "slug": "deploying-organization",
+      "label": "Deploying Organization"
+    },
+    {
+      "slug": "governance-body",
+      "label": "Governance Body"
+    },
+    {
+      "slug": "ieee-7000-model-process",
+      "label": "IEEE 7000 Model Process"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "model-developer",
+      "label": "Model Developer"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "system-operator",
+      "label": "System Operator"
+    },
+    {
+      "slug": "ai-ethics-board",
+      "label": "AI Ethics Board"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": []
+}

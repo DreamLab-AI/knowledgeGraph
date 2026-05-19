@@ -1,0 +1,440 @@
+{
+  "id": "urn:visionflow:page:f9f333c93219c9179a94fae77c9c3af36f1fe16c14df3db905dcc897f27e3d8a",
+  "title": "Llama 3",
+  "slug": "llama-3",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:llama-3",
+  "domain": "artificial-intelligence",
+  "definition": "Llama 3 is Meta AI's third-generation open-weight large language model family, launched in April 2024, constituting a multi-version herd of decoder-only transformer architectures spanning eight model sizes from 1B to 405B parameters that collectively established open-weight models as credible competitors to closed frontier systems across reasoning, coding, instruction-following, and multimodal tasks, trained on up to 15.6 trillion tokens of multilingual text using grouped query attention (GQA), rotary positional embeddings (RoPE) with extended base frequency \u03b8=500,000, SwiGLU activation, RMSNorm pre-normalization, and a 128,256-token byte-pair encoding vocabulary, refined through a multi-stage post-training pipeline combining supervised fine-tuning (SFT) on 10M+ instruction pairs, rejection sampling (RS) using reward model-filtered candidates, direct preference optimisation (DPO) on 2M+ preference pairs, and proximal policy optimisation (PPO) for safety-critical capability alignment, with the full herd encompassing five major release cohorts: Llama 3 8B/70B (April 2024, MMLU 79.5% / HumanEval 81.7% for 70B), Llama 3.1 8B/70B/405B (July 2024, first open-weight frontier model surpass",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decoder-only-models",
+      "label": "Decoder-Only Models"
+    },
+    {
+      "id": "urn:visionflow:linked:open-source",
+      "label": "Open Source"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:llama-guard-3",
+        "label": "Llama Guard 3"
+      },
+      {
+        "id": "urn:visionflow:linked:llama-stack",
+        "label": "Llama Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:rotary-position-embeddings",
+        "label": "Rotary Position Embeddings"
+      },
+      {
+        "id": "urn:visionflow:linked:swi-glu-activation",
+        "label": "SwiGLU Activation"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenizer",
+        "label": "Tokenizer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:visionflow:linked:rejection-sampling",
+        "label": "Rejection Sampling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:visionflow:linked:local-ai-inference",
+        "label": "Local AI Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:open-source-ai-development",
+        "label": "Open Source AI Development"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:rmsnorm",
+        "label": "RMSNorm"
+      },
+      {
+        "id": "urn:visionflow:linked:rotary-position-embeddings",
+        "label": "Rotary Position Embeddings"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "decoder-only-models",
+      "label": "Decoder-Only Models"
+    },
+    {
+      "slug": "deep-seek",
+      "label": "DeepSeek"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "foundation-model-domain",
+      "label": "FoundationModelDomain"
+    },
+    {
+      "slug": "gpu-cluster",
+      "label": "GPU Cluster"
+    },
+    {
+      "slug": "grouped-query-attention",
+      "label": "Grouped Query Attention"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "llama-cpp",
+      "label": "llama.cpp"
+    },
+    {
+      "slug": "llama-guard-3",
+      "label": "Llama Guard 3"
+    },
+    {
+      "slug": "llama-index",
+      "label": "LlamaIndex"
+    },
+    {
+      "slug": "llama-stack",
+      "label": "Llama Stack"
+    },
+    {
+      "slug": "local-ai-inference",
+      "label": "Local AI Inference"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "mistral-ai",
+      "label": "Mistral AI"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source"
+    },
+    {
+      "slug": "open-source-ai-development",
+      "label": "Open Source AI Development"
+    },
+    {
+      "slug": "rejection-sampling",
+      "label": "Rejection Sampling"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rmsnorm",
+      "label": "RMSNorm"
+    },
+    {
+      "slug": "rotary-position-embeddings",
+      "label": "Rotary Position Embeddings"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "swi-glu-activation",
+      "label": "SwiGLU Activation"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "tokenizer",
+      "label": "Tokenizer"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "byte-pair-encoding",
+      "label": "Byte Pair Encoding"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "direct-preference-optimisation",
+      "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "human-feedback",
+      "label": "Human Feedback"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "ollama",
+      "label": "Ollama"
+    },
+    {
+      "slug": "proximal-policy-optimisation",
+      "label": "Proximal Policy Optimisation"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f",
+  "title": "Technical History (extended CV)",
+  "slug": "technical-history-extended-cv",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technical-history-extended-cv",
+  "domain": "infrastructure",
+  "definition": "Technical History (extended CV) is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "flossverse",
+      "label": "flossverse"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "knowhere",
+      "label": "Knowhere"
+    },
+    {
+      "slug": "location-based-experience",
+      "label": "Location Based Experience"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "national-industrial-centre-for-virtual-environments",
+      "label": "National Industrial Centre for Virtual Environments"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ],
+  "backlinks": []
+}

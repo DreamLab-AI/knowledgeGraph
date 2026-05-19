@@ -1,0 +1,174 @@
+{
+  "id": "urn:visionflow:page:6d5ef87c5d56ac45dc8329c1f456441c3cf2df113774b72ae1e7848dc1588a96",
+  "title": "Obstacle Avoidance",
+  "slug": "obstacle-avoidance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:obstacle-avoidance",
+  "domain": "robotics",
+  "definition": "The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:reactive-control",
+      "label": "Reactive Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.96,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:proximity-sensors",
+        "label": "Proximity Sensors"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collision-free-motion",
+        "label": "Collision-Free Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-navigation",
+        "label": "Safe Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "avoidance-maneuver",
+      "label": "Avoidance Maneuver"
+    },
+    {
+      "slug": "collision-free-motion",
+      "label": "Collision-Free Motion"
+    },
+    {
+      "slug": "drones",
+      "label": "Drones"
+    },
+    {
+      "slug": "mobile-robotics",
+      "label": "Mobile Robotics"
+    },
+    {
+      "slug": "mobile-robots",
+      "label": "Mobile Robots"
+    },
+    {
+      "slug": "obstacles",
+      "label": "Obstacles"
+    },
+    {
+      "slug": "proximity-sensors",
+      "label": "Proximity Sensors"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
+      "slug": "rb-1007-trajectory-generation",
+      "label": "RB-1007-trajectory-generation"
+    },
+    {
+      "slug": "rb-1011-cobot-safety-levels",
+      "label": "RB-1011-cobot-safety-levels"
+    },
+    {
+      "slug": "rb-1016-path-planning",
+      "label": "RB-1016-path-planning"
+    },
+    {
+      "slug": "reactivity",
+      "label": "Reactivity"
+    },
+    {
+      "slug": "safe-navigation",
+      "label": "Safe Navigation"
+    },
+    {
+      "slug": "safety-systems",
+      "label": "Safety Systems"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "lidar",
+      "label": "LIDAR"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB-1013-localization"
+    },
+    {
+      "slug": "reactive-control",
+      "label": "Reactive Control"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real-Time"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-Time Processing"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "ultrasonic-sensor",
+      "label": "Ultrasonic Sensor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:be1c0f24e042f1943d2c3ee3b4fb733c173a6481fcf8aa1a12e7b68f59dae44d",
+  "title": "Data Standards",
+  "slug": "data-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-standards",
+  "domain": "spatial-computing",
+  "definition": "Data Standards is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin-ecosystem",
+      "label": "Digital Twin Ecosystem"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

@@ -1,24 +1,453 @@
-iri:: http://narrativegoldmine.com/spatial-computing#TextSummarisation
-uri:: urn:visionclaw:concept:spatial-computing:text-summarisation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:text-summarisation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Text Summarisation
-content-hash:: sha256-12-2f1ec8b477fc
-legacy-term-id:: AI-0370
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#TextSummarisation
+legacy_uri:: urn:visionclaw:concept:spatial-computing:text-summarisation
 public:: true
+
+# Text Summarisation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c",
+  "@type": "Page",
+  "vc:slug": "text-summarisation",
+  "title": "Text Summarisation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:chen2011leet",
+      "vc:label": "chen2011leet"
+    },
+    {
+      "@id": "urn:visionflow:linked:cole2013call",
+      "vc:label": "cole2013call"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-work-flows",
+      "vc:label": "ComfyWorkFlows"
+    },
+    {
+      "@id": "urn:visionflow:linked:flux",
+      "vc:label": "flux"
+    },
+    {
+      "@id": "urn:visionflow:linked:glas2013battlefields",
+      "vc:label": "glas2013battlefields"
+    },
+    {
+      "@id": "urn:visionflow:linked:iser1993fictive",
+      "vc:label": "iser1993fictive"
+    },
+    {
+      "@id": "urn:visionflow:linked:serapis2008coming",
+      "vc:label": "serapis2008coming"
+    },
+    {
+      "@id": "urn:visionflow:linked:taylor2009play",
+      "vc:label": "taylor2009play"
+    },
+    {
+      "@id": "urn:visionflow:linked:visionflow",
+      "vc:label": "visionflow"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bart",
+      "vc:label": "BART"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+      "vc:label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:face-swap",
+      "vc:label": "Face Swap"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:flux-1",
+      "vc:label": "Flux.1"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
+      "vc:label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:layoff-tracker-and-threatened-roles",
+      "vc:label": "Layoff tracker and threatened roles"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lo-ra",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "vc:label": "LoRA DoRA etc"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-optimisation-and-performance",
+      "vc:label": "Model Optimisation and Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-webui-and-pipelines",
+      "vc:label": "Open Webui and Pipelines"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:segmentation-and-identification",
+      "vc:label": "Segmentation and Identification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:style-transfer",
+      "vc:label": "style transfer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-generation",
+      "vc:label": "Text Generation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2f1ec8b477fc"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#TextSummarisation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0370"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Text Summarisation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:text-summarisation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:text-summarisation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:text-summarisation",
+  "@type": "OntologyClass",
+  "label": "Text Summarisation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections. Summarisation systems employ extractive methods (selecting key sentences) or abstractive methods (generating new summary text) using transformer models to enable applications in news aggregation, document analysis, and information retrieval.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:text-summarisation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[chen2011leet]]",
+      "resolved": "urn:visionflow:linked:chen2011leet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[cole2013call]]",
+      "resolved": "urn:visionflow:linked:cole2013call",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ComfyWorkFlows]]",
+      "resolved": "urn:visionflow:linked:comfy-work-flows",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[flux]]",
+      "resolved": "urn:visionflow:linked:flux",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[glas2013battlefields]]",
+      "resolved": "urn:visionflow:linked:glas2013battlefields",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[iser1993fictive]]",
+      "resolved": "urn:visionflow:linked:iser1993fictive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[serapis2008coming]]",
+      "resolved": "urn:visionflow:linked:serapis2008coming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[taylor2009play]]",
+      "resolved": "urn:visionflow:linked:taylor2009play",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[visionflow]]",
+      "resolved": "urn:visionflow:linked:visionflow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Video]]",
+      "resolved": "urn:visionflow:owl:class:ai-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BART]]",
+      "resolved": "urn:visionflow:owl:class:bart",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ControlNet and Similar Spatial Conditioning Systems]]",
+      "resolved": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Face Swap]]",
+      "resolved": "urn:visionflow:owl:class:face-swap",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Flux.1]]",
+      "resolved": "urn:visionflow:owl:class:flux-1",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[KOHYA Dreambooth and similar]]",
+      "resolved": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Layoff tracker and threatened roles]]",
+      "resolved": "urn:visionflow:owl:class:layoff-tracker-and-threatened-roles",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LoRA]]",
+      "resolved": "urn:visionflow:owl:class:lo-ra",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LoRA DoRA etc]]",
+      "resolved": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Optimisation and Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-optimisation-and-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Open Webui and Pipelines]]",
+      "resolved": "urn:visionflow:owl:class:open-webui-and-pipelines",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Prompt Engineering]]",
+      "resolved": "urn:visionflow:owl:class:prompt-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Segmentation and Identification]]",
+      "resolved": "urn:visionflow:owl:class:segmentation-and-identification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[style transfer]]",
+      "resolved": "urn:visionflow:owl:class:style-transfer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Text Generation]]",
+      "resolved": "urn:visionflow:owl:class:text-generation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections. Summarisation systems employ extractive methods (selecting key sentences) or abstractive methods (generating new summary text) using transformer models to enable applications in news aggregation, document analysis, and information retrieval.
@@ -169,22 +598,22 @@ public:: true
   - ## Resources
   - [(2047) Discord | #💡-announcement | XLabs AI](https://discord.com/channels/1271080914692341801/1271086905743638591)
   - whatever this mad thing is [[FLUX] Diagram of UNET / DiT and exotic merging methods (v8.01) | Civitai](https://civitai.com/articles/3409/flux-diagram-of-unet-dit-and-exotic-merging-methods-v7)
-  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux]] [[ComfyUI]]
-  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux]] [[Stable Diffusion]] [[Controlnet and similar]]
-  - https://huggingface.co/kudzueye/boreal-flux-dev-v2 [[Flux]] [[LoRA DoRA etc]]
+  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux.1]] [[ComfyUI]]
+  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion]] [[ControlNet and Similar Spatial Conditioning Systems]]
+  - https://huggingface.co/kudzueye/boreal-flux-dev-v2 [[Flux.1]] [[LoRA DoRA etc]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]] [[ComfyWorkFlows]]
   - [Text Guided Flux Inpainting - a Hugging Face Space by Gradio-Community](https://huggingface.co/spaces/Gradio-Community/Text-guided-Flux-Inpainting) [[Segmentation and Identification]]
-  - [(17) Post | Feed | LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7230251219888316417/) [[KOHYA Dreambooth and similar]] [[Flux]]
-  - https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha [[Controlnet and similar]] [[Flux]]
-  - https://github.com/cocktailpeanut/fluxgym [[Flux]]
-  - https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
-  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux]] [[ComfyUI]] [[Open Webui and Pipelines]]
+  - [(17) Post | Feed | LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7230251219888316417/) [[KOHYA Dreambooth and similar]] [[Flux.1]]
+  - https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha [[ControlNet and Similar Spatial Conditioning Systems]] [[Flux.1]]
+  - https://github.com/cocktailpeanut/fluxgym [[Flux.1]]
+  - https://civitai.com/models/731324 [[Flux.1]] Social Media Image Generator [[Death of the Internet]]
+  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[ComfyUI]] [[Open Webui and Pipelines]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]]
-  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[ComfyUI]] [[Model Optimisation and Performance]] [[Flux]]
+  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[ComfyUI]] [[Model Optimisation and Performance]] [[Flux.1]]
 		- [Excuse me? GGUF quants are possible on Flux now! : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1eslcg0/excuse_me_gguf_quants_are_possible_on_flux_now/)
-  - https://github.com/comfyanonymous/ComfyUI/commit/d0b7ab88ba0f1cb4ab16e0425f5229e60c934536 [[Flux]] [[Model Optimisation and Performance]]
-  - https://medium.com/@furkangozukara/ultimate-flux-lora-training-tutorial-windows-and-cloud-deployment-abb72f21cbf8 [[Flux]] [[LoRA]]
-  - https://github.com/ToTheBeginning/PuLID [[Face Swap]] [[Flux]] [[style transfer]]
+  - https://github.com/comfyanonymous/ComfyUI/commit/d0b7ab88ba0f1cb4ab16e0425f5229e60c934536 [[Flux.1]] [[Model Optimisation and Performance]]
+  - https://medium.com/@furkangozukara/ultimate-flux-lora-training-tutorial-windows-and-cloud-deployment-abb72f21cbf8 [[Flux.1]] [[LoRA]]
+  - https://github.com/ToTheBeginning/PuLID [[Face Swap]] [[Flux.1]] [[style transfer]]
 		- https://huggingface.co/spaces/yanze/PuLID-FLUX
 		- ![image.png](assets/image_1726490585592_0.png)
   - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
@@ -224,22 +653,22 @@ public:: true
   - ## Resources
   - [(2047) Discord | #💡-announcement | XLabs AI](https://discord.com/channels/1271080914692341801/1271086905743638591)
   - whatever this mad thing is [[FLUX] Diagram of UNET / DiT and exotic merging methods (v8.01) | Civitai](https://civitai.com/articles/3409/flux-diagram-of-unet-dit-and-exotic-merging-methods-v7)
-  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux]] [[ComfyUI]]
-  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux]] [[Stable Diffusion]] [[Controlnet and similar]]
-  - https://huggingface.co/kudzueye/boreal-flux-dev-v2 [[Flux]] [[LoRA DoRA etc]]
+  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux.1]] [[ComfyUI]]
+  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion]] [[ControlNet and Similar Spatial Conditioning Systems]]
+  - https://huggingface.co/kudzueye/boreal-flux-dev-v2 [[Flux.1]] [[LoRA DoRA etc]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]] [[ComfyWorkFlows]]
   - [Text Guided Flux Inpainting - a Hugging Face Space by Gradio-Community](https://huggingface.co/spaces/Gradio-Community/Text-guided-Flux-Inpainting) [[Segmentation and Identification]]
-  - [(17) Post | Feed | LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7230251219888316417/) [[KOHYA Dreambooth and similar]] [[Flux]]
-  - https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha [[Controlnet and similar]] [[Flux]]
-  - https://github.com/cocktailpeanut/fluxgym [[Flux]]
-  - https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
-  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux]] [[ComfyUI]] [[Open Webui and Pipelines]]
+  - [(17) Post | Feed | LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7230251219888316417/) [[KOHYA Dreambooth and similar]] [[Flux.1]]
+  - https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha [[ControlNet and Similar Spatial Conditioning Systems]] [[Flux.1]]
+  - https://github.com/cocktailpeanut/fluxgym [[Flux.1]]
+  - https://civitai.com/models/731324 [[Flux.1]] Social Media Image Generator [[Death of the Internet]]
+  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[ComfyUI]] [[Open Webui and Pipelines]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]]
-  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[ComfyUI]] [[Model Optimisation and Performance]] [[Flux]]
+  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[ComfyUI]] [[Model Optimisation and Performance]] [[Flux.1]]
 		- [Excuse me? GGUF quants are possible on Flux now! : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1eslcg0/excuse_me_gguf_quants_are_possible_on_flux_now/)
-  - https://github.com/comfyanonymous/ComfyUI/commit/d0b7ab88ba0f1cb4ab16e0425f5229e60c934536 [[Flux]] [[Model Optimisation and Performance]]
-  - https://medium.com/@furkangozukara/ultimate-flux-lora-training-tutorial-windows-and-cloud-deployment-abb72f21cbf8 [[Flux]] [[LoRA]]
-  - https://github.com/ToTheBeginning/PuLID [[Face Swap]] [[Flux]] [[style transfer]]
+  - https://github.com/comfyanonymous/ComfyUI/commit/d0b7ab88ba0f1cb4ab16e0425f5229e60c934536 [[Flux.1]] [[Model Optimisation and Performance]]
+  - https://medium.com/@furkangozukara/ultimate-flux-lora-training-tutorial-windows-and-cloud-deployment-abb72f21cbf8 [[Flux.1]] [[LoRA]]
+  - https://github.com/ToTheBeginning/PuLID [[Face Swap]] [[Flux.1]] [[style transfer]]
 		- https://huggingface.co/spaces/yanze/PuLID-FLUX
 		- ![image.png](assets/image_1726490585592_0.png)
   - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/

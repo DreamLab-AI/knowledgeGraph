@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:c475e017a595c153ea5c03c3a835ff3190c53d9fa57544d4176f5b5ae3f6e234",
+  "title": "Ensemble Methods",
+  "slug": "ensemble-methods",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ensemble-methods",
+  "domain": "artificial-intelligence",
+  "definition": "Ensemble Methods is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:model-combination",
+        "label": "Model Combination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generalization",
+      "label": "Generalization"
+    },
+    {
+      "slug": "gradient-boosting",
+      "label": "Gradient Boosting"
+    },
+    {
+      "slug": "model-combination",
+      "label": "Model Combination"
+    },
+    {
+      "slug": "random-forest",
+      "label": "Random Forest"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bagging",
+      "label": "Bagging"
+    },
+    {
+      "slug": "boosting",
+      "label": "Boosting"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "stacking",
+      "label": "Stacking"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

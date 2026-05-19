@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:429c166ad7b9bbbeb3595005e176be13b33d7f3a78aa3e8ecc726caf8359781d",
+  "title": "Future Bernard",
+  "slug": "future-bernard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:future-bernard",
+  "domain": "infrastructure",
+  "definition": "Future Bernard is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

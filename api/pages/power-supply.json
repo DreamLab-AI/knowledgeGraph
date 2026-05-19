@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:7debf069170b6cd342dc80a492a5bffdc0087116fd6bcced7511b7aa7455526a",
+  "title": "Power Supply",
+  "slug": "power-supply",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:power-supply",
+  "domain": "infrastructure",
+  "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices. In data center contexts, power supply systems include redundant PSUs, uninterruptible power supplies (UPS), and power distribution units (PDUs).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:continuous-operation",
+        "label": "Continuous Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:system-reliability",
+        "label": "System Reliability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "continuous-operation",
+      "label": "Continuous Operation"
+    },
+    {
+      "slug": "system-reliability",
+      "label": "System Reliability"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "emc-standard",
+      "label": "EMC Standard"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "quantum-network-node",
+      "label": "Quantum Network Node"
+    }
+  ]
+}

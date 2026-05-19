@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b",
+  "title": "Backlash",
+  "slug": "backlash",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:backlash",
+  "domain": "robotics",
+  "definition": "**Backlash** - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-dynamics",
+      "label": "Robot Dynamics"
+    }
+  ],
+  "qualityScore": 0.48,
+  "authorityScore": 0.08,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:control-algorithm-tuning",
+        "label": "Control Algorithm Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanical-compensation",
+        "label": "Mechanical Compensation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:backlash-measurement",
+        "label": "Backlash Measurement"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-degradation-detection",
+        "label": "Performance Degradation Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "backlash-measurement",
+      "label": "Backlash Measurement"
+    },
+    {
+      "slug": "control-algorithm-tuning",
+      "label": "Control Algorithm Tuning"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "joint-mechanics",
+      "label": "Joint Mechanics"
+    },
+    {
+      "slug": "mechanical-compensation",
+      "label": "Mechanical Compensation"
+    },
+    {
+      "slug": "performance-degradation-detection",
+      "label": "Performance Degradation Detection"
+    },
+    {
+      "slug": "repeatability",
+      "label": "Repeatability"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "robot-dynamics",
+      "label": "Robot Dynamics"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

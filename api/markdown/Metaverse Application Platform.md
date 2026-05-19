@@ -1,24 +1,216 @@
-iri:: http://narrativegoldmine.com/spatial-computing#MetaverseApplicationPlatform
-uri:: urn:visionclaw:concept:spatial-computing:metaverse-application-platform
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:metaverse-application-platform
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Metaverse Application Platform
-content-hash:: sha256-12-b410230ed4d4
-legacy-term-id:: MV-9963
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#MetaverseApplicationPlatform
+legacy_uri:: urn:visionclaw:concept:spatial-computing:metaverse-application-platform
 public:: true
+
+# Metaverse Application Platform
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215",
+  "@type": "Page",
+  "vc:slug": "metaverse-application-platform",
+  "title": "Metaverse Application Platform",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:metaverse-content-creation",
+      "vc:label": "Metaverse Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:development-platform",
+      "vc:label": "Development Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b410230ed4d4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#MetaverseApplicationPlatform"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9963"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Metaverse Application Platform"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-application-platform"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:metaverse-application-platform"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:metaverse-application-platform",
+  "@type": "OntologyClass",
+  "label": "Metaverse Application Platform",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:development-platform",
+      "vc:label": "Development Platform"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:metaverse-content-creation",
+      "vc:label": "Metaverse Content Creation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-application-platform:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Metaverse Content Creation]]",
+      "resolved": "urn:visionflow:linked:metaverse-content-creation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Development Platform]]",
+      "resolved": "urn:visionflow:owl:class:development-platform",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.

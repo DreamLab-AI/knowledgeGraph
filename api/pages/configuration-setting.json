@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:4764799b1a8e2815faf26532fd9c03c1b18e44ea58ea20e1c8f8623730c30fe2",
+  "title": "Configuration Setting",
+  "slug": "configuration-setting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:configuration-setting",
+  "domain": "spatial-computing",
+  "definition": "Configuration Setting is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "calculation-parameters",
+      "label": "Calculation Parameters"
+    }
+  ]
+}

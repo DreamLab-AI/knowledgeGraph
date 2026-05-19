@@ -1,24 +1,237 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ProteusEffect
-uri:: urn:visionclaw:concept:spatial-computing:proteus-effect
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:proteus-effect
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Proteus Effect
-content-hash:: sha256-12-52a4c1ce946a
-legacy-term-id::
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ProteusEffect
+legacy_uri:: urn:visionclaw:concept:spatial-computing:proteus-effect
 public:: true
+
+# Proteus Effect
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80",
+  "@type": "Page",
+  "vc:slug": "proteus-effect",
+  "title": "Proteus Effect",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:avatar-identity",
+      "vc:label": "Avatar Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-embodiment",
+      "vc:label": "Digital Embodiment"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-psychology",
+      "vc:label": "Virtual Psychology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-presence",
+      "vc:label": "Social Presence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-group-dynamics",
+      "vc:label": "Virtual Group Dynamics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-52a4c1ce946a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ProteusEffect"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Proteus Effect"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:proteus-effect"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:proteus-effect"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:proteus-effect",
+  "@type": "OntologyClass",
+  "label": "Proteus Effect",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Proteus Effect is a concept within the mv domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:proteus-effect:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Avatar Identity]]",
+      "resolved": "urn:visionflow:linked:avatar-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Embodiment]]",
+      "resolved": "urn:visionflow:linked:digital-embodiment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Psychology]]",
+      "resolved": "urn:visionflow:linked:virtual-psychology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social Presence]]",
+      "resolved": "urn:visionflow:owl:class:social-presence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Group Dynamics]]",
+      "resolved": "urn:visionflow:owl:class:virtual-group-dynamics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Proteus Effect is a concept within the mv domain.

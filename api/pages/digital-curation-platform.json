@@ -1,0 +1,194 @@
+{
+  "id": "urn:visionflow:page:438e4fa10dbf8630bd5c5ed5d2dfe3567508ac7d50311286004486befb794987",
+  "title": "Digital Curation Platform",
+  "slug": "digital-curation-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-curation-platform",
+  "domain": "spatial-computing",
+  "definition": "Integrated system for organising, preserving, managing, and providing long-term access to digital cultural artifacts, collections, and heritage materials in metaverse environments. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-management",
+      "label": "Digital Asset Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:content-repository",
+        "label": "Content Repository"
+      },
+      {
+        "id": "urn:visionflow:linked:metadata-manager",
+        "label": "Metadata Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:preservation-engine",
+        "label": "Preservation Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:versioning-system",
+        "label": "Versioning System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:search-interface",
+        "label": "Search Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:preservation-policy",
+        "label": "Preservation Policy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collection-management",
+        "label": "Collection Management"
+      },
+      {
+        "id": "urn:visionflow:linked:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:public-access",
+        "label": "Public Access"
+      },
+      {
+        "id": "urn:visionflow:owl:class:long-term-archival",
+        "label": "Long-Term Archival"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collection-management",
+      "label": "Collection Management"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "content-repository",
+      "label": "Content Repository"
+    },
+    {
+      "slug": "cultural-heritage-preservation",
+      "label": "Cultural Heritage Preservation"
+    },
+    {
+      "slug": "iso-21127",
+      "label": "ISO 21127"
+    },
+    {
+      "slug": "metadata-manager",
+      "label": "Metadata Manager"
+    },
+    {
+      "slug": "preservation-engine",
+      "label": "Preservation Engine"
+    },
+    {
+      "slug": "preservation-policy",
+      "label": "Preservation Policy"
+    },
+    {
+      "slug": "public-access",
+      "label": "Public Access"
+    },
+    {
+      "slug": "unesco-digital-heritage",
+      "label": "UNESCO Digital Heritage"
+    },
+    {
+      "slug": "versioning-system",
+      "label": "Versioning System"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "long-term-archival",
+      "label": "Long-Term Archival"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "search-interface",
+      "label": "Search Interface"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": []
+}

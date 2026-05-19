@@ -1,0 +1,207 @@
+{
+  "id": "urn:visionflow:page:044dab9c352ab95ed2d1ed7e6228e574b71fd6798e462789d6f709b6a1cb3787",
+  "title": "Metaverse Psychology Profile",
+  "slug": "metaverse-psychology-profile",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-psychology-profile",
+  "domain": "spatial-computing",
+  "definition": "Comprehensive dataset describing behavioral, emotional, cognitive, and social traits derived from virtual interactions, enabling personalized experiences and psychological research in metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:psychological-research",
+      "label": "Psychological Research"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:affective-response-logs",
+        "label": "Affective Response Logs"
+      },
+      {
+        "id": "urn:visionflow:linked:behavioral-pattern-data",
+        "label": "Behavioral Pattern Data"
+      },
+      {
+        "id": "urn:visionflow:linked:cognitive-trait-indicators",
+        "label": "Cognitive Trait Indicators"
+      },
+      {
+        "id": "urn:visionflow:linked:emotional-state-metrics",
+        "label": "Emotional State Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:preference-mapping",
+        "label": "Preference Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:social-interaction-analytics",
+        "label": "Social Interaction Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:behavioral-tracking-system",
+        "label": "Behavioral Tracking System"
+      },
+      {
+        "id": "urn:visionflow:linked:data-analytics-engine",
+        "label": "Data Analytics Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:user-consent-management",
+        "label": "User Consent Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-content-delivery",
+        "label": "Adaptive Content Delivery"
+      },
+      {
+        "id": "urn:visionflow:linked:mental-health-monitoring",
+        "label": "Mental Health Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:social-compatibility-matching",
+        "label": "Social Compatibility Matching"
+      },
+      {
+        "id": "urn:visionflow:owl:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      },
+      {
+        "id": "urn:visionflow:owl:class:psychological-research",
+        "label": "Psychological Research"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-content-delivery",
+      "label": "Adaptive Content Delivery"
+    },
+    {
+      "slug": "affective-response-logs",
+      "label": "Affective Response Logs"
+    },
+    {
+      "slug": "apa-virtual-psychology-guidelines-2025",
+      "label": "APA Virtual Psychology Guidelines 2025"
+    },
+    {
+      "slug": "behavioral-pattern-data",
+      "label": "Behavioral Pattern Data"
+    },
+    {
+      "slug": "behavioral-tracking-system",
+      "label": "Behavioral Tracking System"
+    },
+    {
+      "slug": "cognitive-trait-indicators",
+      "label": "Cognitive Trait Indicators"
+    },
+    {
+      "slug": "data-analytics-engine",
+      "label": "Data Analytics Engine"
+    },
+    {
+      "slug": "emotional-state-metrics",
+      "label": "Emotional State Metrics"
+    },
+    {
+      "slug": "ethical-data-governance",
+      "label": "Ethical Data Governance"
+    },
+    {
+      "slug": "mental-health-monitoring",
+      "label": "Mental Health Monitoring"
+    },
+    {
+      "slug": "personalization-framework",
+      "label": "Personalization Framework"
+    },
+    {
+      "slug": "preference-mapping",
+      "label": "Preference Mapping"
+    },
+    {
+      "slug": "psychometric-assessment-tools",
+      "label": "Psychometric Assessment Tools"
+    },
+    {
+      "slug": "social-compatibility-matching",
+      "label": "Social Compatibility Matching"
+    },
+    {
+      "slug": "social-interaction-analytics",
+      "label": "Social Interaction Analytics"
+    },
+    {
+      "slug": "user-consent-management",
+      "label": "User Consent Management"
+    },
+    {
+      "slug": "user-profile-system",
+      "label": "User Profile System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "personalized-virtual-experiences",
+      "label": "Personalized Virtual Experiences"
+    },
+    {
+      "slug": "privacy-framework",
+      "label": "Privacy Framework"
+    },
+    {
+      "slug": "psychological-research",
+      "label": "Psychological Research"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-interaction-logging",
+      "label": "Virtual Interaction Logging"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-well-being-index",
+      "label": "Digital Well-Being Index"
+    },
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:c8e802b60edc1f609fbf63a8a30a293504bb4c867c6c270f8cf193476cb613c1",
+  "title": "Online Identity",
+  "slug": "online-identity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:online-identity",
+  "domain": "infrastructure",
+  "definition": "OnlineIdentity is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:f166915e2fdacae869ea464d4c6d46c134346e702d0c6e809c5f661fb31f6863",
+  "title": "Shared Ownership Model",
+  "slug": "shared-ownership-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shared-ownership-model",
+  "domain": "spatial-computing",
+  "definition": "A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:asset-tokenization",
+      "label": "Asset Tokenization"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:democratized-investment",
+        "label": "Democratized Investment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "democratized-investment",
+      "label": "Democratized Investment"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    }
+  ]
+}

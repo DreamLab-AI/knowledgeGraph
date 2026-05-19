@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:7406c7e648a5c68ee3132b7914015a88a4dc746dd785d11f3a4bb0d71413c9c2",
+  "title": "ETSI Domain: Creative Media",
+  "slug": "etsi-domain-creative-media",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-creative-media",
+  "domain": "spatial-computing",
+  "definition": "Domain marker for ETSI metaverse categorisation covering creative content production, 3D modelling, rendering, and multimedia authoring for virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:multimedia-authoring",
+        "label": "Multimedia Authoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:creative-tools",
+        "label": "Creative Tools"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:scene-design",
+        "label": "Scene Design"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-world-building",
+        "label": "Virtual World Building"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-content-creation",
+      "label": "3D Content Creation"
+    },
+    {
+      "slug": "content-pipeline",
+      "label": "Content Pipeline"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "slug": "multimedia-authoring",
+      "label": "Multimedia Authoring"
+    },
+    {
+      "slug": "scene-design",
+      "label": "Scene Design"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "avatar-customization",
+      "label": "Avatar Customization"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "virtual-world-building",
+      "label": "Virtual World Building"
+    }
+  ],
+  "backlinks": []
+}

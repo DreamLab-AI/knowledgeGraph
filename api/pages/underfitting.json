@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:b3e74df993762a7ec48a0f6cf82e22090968dd3f7f8a9d6d630b26d34dd328a8",
+  "title": "Underfitting",
+  "slug": "underfitting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:underfitting",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    }
+  ]
+}

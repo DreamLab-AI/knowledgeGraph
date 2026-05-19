@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:2e6c3e5023e5ae312ec715d0b4f64de216f215f0a9029eb930d27f1c14f5347c",
+  "title": "Audio Spatialization",
+  "slug": "audio-spatialization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:audio-spatialization",
+  "domain": "spatial-computing",
+  "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:spatial-audio-technology",
+      "label": "Spatial Audio Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:binaural-rendering",
+        "label": "Binaural Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:head-tracking",
+        "label": "Head Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:hrtf-filters",
+        "label": "HRTF Filters"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-sound-perception",
+        "label": "3D Sound Perception"
+      },
+      {
+        "id": "urn:visionflow:linked:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "id": "urn:visionflow:linked:sound-localization",
+        "label": "Sound Localization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-sound-perception",
+      "label": "3D Sound Perception"
+    },
+    {
+      "slug": "binaural-rendering",
+      "label": "Binaural Rendering"
+    },
+    {
+      "slug": "head-tracking",
+      "label": "Head Tracking"
+    },
+    {
+      "slug": "hrtf-filters",
+      "label": "HRTF Filters"
+    },
+    {
+      "slug": "immersive-audio",
+      "label": "Immersive Audio"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "sound-localization",
+      "label": "Sound Localization"
+    },
+    {
+      "slug": "spatial-audio-technology",
+      "label": "Spatial Audio Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    }
+  ]
+}

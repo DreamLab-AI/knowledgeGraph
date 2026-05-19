@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:f476716cd0ac81b467ebf57a24960093940d0ac59fd7bd19d546f5002587ad38",
+  "title": "Microsoft Work Trends Impact 2024",
+  "slug": "microsoft-work-trends-impact-2024",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:microsoft-work-trends-impact-2024",
+  "domain": "infrastructure",
+  "definition": "Microsoft Work Trends Impact 2024 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

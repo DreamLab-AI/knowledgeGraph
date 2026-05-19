@@ -1,21 +1,249 @@
-iri:: http://narrativegoldmine.com/blockchain#LockAndMintMechanism
-uri:: urn:visionclaw:concept:blockchain:lock-and-mint-mechanism
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:lock-and-mint-mechanism
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Lock and Mint Mechanism
-content-hash:: sha256-12-ed47af57230c
-legacy-term-id:: BC-8011
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#LockAndMintMechanism
+legacy_uri:: urn:visionclaw:concept:blockchain:lock-and-mint-mechanism
 public:: true
+
+# Lock and Mint Mechanism
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601",
+  "@type": "Page",
+  "vc:slug": "lock-and-mint-mechanism",
+  "title": "Lock and Mint Mechanism",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:wrapped-token",
+      "vc:label": "Wrapped Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:atomic-swap",
+      "vc:label": "Atomic Swap"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-oracle",
+      "vc:label": "Blockchain Oracle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ed47af57230c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#LockAndMintMechanism"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8011"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Lock and Mint Mechanism"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:lock-and-mint-mechanism"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:lock-and-mint-mechanism"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:lock-and-mint-mechanism",
+  "@type": "OntologyClass",
+  "label": "Lock and Mint Mechanism",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:de-fi-protocol",
+      "vc:label": "De Fi Protocol"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Cross-chain asset transfer protocol where tokens are locked in a smart contract on the source chain and equivalent wrapped tokens are minted on the destination chain, maintaining a 1:1 backing ratio. Enables asset portability across heterogeneous blockchain ecosystems while preserving value equivalence.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-oracle",
+      "vc:label": "Blockchain Oracle"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:wrapped-token",
+      "vc:label": "Wrapped Token"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:lock-and-mint-mechanism:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Wrapped Token]]",
+      "resolved": "urn:visionflow:linked:wrapped-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Atomic Swap]]",
+      "resolved": "urn:visionflow:owl:class:atomic-swap",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Oracle]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-oracle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross-Chain Bridge]]",
+      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Cross-chain asset transfer protocol where tokens are locked in a smart contract on the source chain and equivalent wrapped tokens are minted on the destination chain, maintaining a 1:1 backing ratio. Enables asset portability across heterogeneous blockchain ecosystems while preserving value equivalence.
@@ -27,7 +255,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
-  - requires:: [[Oracle]] (in most designs)
+  - requires:: [[Blockchain Oracle]] (in most designs)
   - enables:: [[Wrapped Token]]
   - implements:: [[Cross-Chain Bridge]]
 
@@ -90,7 +318,7 @@ public:: true
   - uses:: [[Smart Contract]]
   - enables:: [[Wrapped Token]]
   - alternative-to:: [[Atomic Swap]]
-  - requires:: [[Oracle]] (in most designs)
+  - requires:: [[Blockchain Oracle]] (in most designs)
 
   ## Security Considerations
   - Custodian key management and access control
@@ -144,7 +372,7 @@ public:: true
   #### Related Concepts
   - [[Cross-Chain Bridge]]
   - [[Wrapped Token]]
-  - [[Oracle]]
+  - [[Blockchain Oracle]]
   - [[Smart Contract]]
 
   #blockchain #interoperability #lock-and-mint #cross-chain

@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4",
+  "title": "Interoperability Framework",
+  "slug": "interoperability-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:interoperability-framework",
+  "domain": "infrastructure",
+  "definition": "Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-architecture",
+      "label": "Metaverse Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:api-specifications",
+        "label": "API Specifications"
+      },
+      {
+        "id": "urn:visionflow:linked:data-formats",
+        "label": "Data Formats"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-definitions",
+        "label": "Protocol Definitions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-integration-interface",
+        "label": "Data Integration Interface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:visionflow:owl:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:universal-manifest",
+        "label": "Universal Manifest"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:technical-documentation",
+        "label": "Technical Documentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-integration",
+        "label": "Cross-Platform Integration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scalable-architecture",
+        "label": "Scalable Architecture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:system-interoperability",
+        "label": "System Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "api-specifications",
+      "label": "API Specifications"
+    },
+    {
+      "slug": "cross-platform-integration",
+      "label": "Cross-Platform Integration"
+    },
+    {
+      "slug": "data-formats",
+      "label": "Data Formats"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "msf",
+      "label": "MSF"
+    },
+    {
+      "slug": "protocol-definitions",
+      "label": "Protocol Definitions"
+    },
+    {
+      "slug": "technical-documentation",
+      "label": "Technical Documentation"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "metaverse-architecture",
+      "label": "Metaverse Architecture"
+    },
+    {
+      "slug": "scalable-architecture",
+      "label": "Scalable Architecture"
+    },
+    {
+      "slug": "standardization-bodies",
+      "label": "Standardization Bodies"
+    },
+    {
+      "slug": "system-interoperability",
+      "label": "System Interoperability"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

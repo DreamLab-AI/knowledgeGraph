@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:477b274454ea8b68ebb6a9642cf79c4e4f88ce685f056e46495a17ce43341426",
+  "title": "Automated Modeling",
+  "slug": "automated-modeling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:automated-modeling",
+  "domain": "spatial-computing",
+  "definition": "Automated Modeling is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin-generation",
+      "label": "Digital Twin Generation"
+    }
+  ]
+}

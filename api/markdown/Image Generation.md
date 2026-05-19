@@ -1,24 +1,696 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ImageGeneration
-uri:: urn:visionclaw:concept:spatial-computing:image-generation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:image-generation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Image Generation
-content-hash:: sha256-12-88957f90a47f
-legacy-term-id:: AI-0362
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ImageGeneration
+legacy_uri:: urn:visionclaw:concept:spatial-computing:image-generation
 public:: true
+
+# Image Generation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078",
+  "@type": "Page",
+  "vc:slug": "image-generation",
+  "title": "Image Generation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:automation",
+      "vc:label": "automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bib-te-x",
+      "vc:label": "BibTeX"
+    },
+    {
+      "@id": "urn:visionflow:linked:code",
+      "vc:label": "Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:community",
+      "vc:label": "community"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation",
+      "vc:label": "documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:llama",
+      "vc:label": "Llama"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-director",
+      "vc:label": "MotionDirector"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "neural networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimization",
+      "vc:label": "optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:paper",
+      "vc:label": "Paper"
+    },
+    {
+      "@id": "urn:visionflow:linked:research",
+      "vc:label": "research"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-video-diffusion",
+      "vc:label": "Stable Video Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:troubleshooting",
+      "vc:label": "troubleshooting"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "user experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:visionflow",
+      "vc:label": "visionflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-management",
+      "vc:label": "workflow management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adoption-of-convergent-technologies",
+      "vc:label": "Adoption of Convergent Technologies"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:apple",
+      "vc:label": "Apple"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "computer vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+      "vc:label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:copyright",
+      "vc:label": "Copyright"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:copyright",
+      "vc:label": "copyright"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-management",
+      "vc:label": "data management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-identity",
+      "vc:label": "Distributed Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:flux-1",
+      "vc:label": "Flux.1"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:global-inequality",
+      "vc:label": "Global Inequality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graphing",
+      "vc:label": "Knowledge Graphing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "machine learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal",
+      "vc:label": "Multimodal"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "natural language processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ollama",
+      "vc:label": "Ollama"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-generative-ai-tools",
+      "vc:label": "Open Generative AI tools"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-webui-and-pipelines",
+      "vc:label": "Open Webui and Pipelines"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
+      "vc:label": "Overview of Machine Learning Techniques"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-image-generation",
+      "vc:label": "Proprietary Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-video",
+      "vc:label": "Proprietary Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:python-and-py-torch",
+      "vc:label": "Python and PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:software-engineering",
+      "vc:label": "software engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:soon-next-later-ai-futurology",
+      "vc:label": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-of-the-art-in-ai",
+      "vc:label": "State of the art in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:variational-autoencoders",
+      "vc:label": "Variational Autoencoders"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-88957f90a47f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ImageGeneration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0362"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Image Generation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:image-generation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:image-generation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:image-generation",
+  "@type": "OntologyClass",
+  "label": "Image Generation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:image-generation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[automation]]",
+      "resolved": "urn:visionflow:linked:automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BibTeX]]",
+      "resolved": "urn:visionflow:linked:bib-te-x",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Code]]",
+      "resolved": "urn:visionflow:linked:code",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[community]]",
+      "resolved": "urn:visionflow:linked:community",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Diffusion Model]]",
+      "resolved": "urn:visionflow:linked:diffusion-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[documentation]]",
+      "resolved": "urn:visionflow:linked:documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Llama]]",
+      "resolved": "urn:visionflow:linked:llama",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MotionDirector]]",
+      "resolved": "urn:visionflow:linked:motion-director",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[neural networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[optimization]]",
+      "resolved": "urn:visionflow:linked:optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paper]]",
+      "resolved": "urn:visionflow:linked:paper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[research]]",
+      "resolved": "urn:visionflow:linked:research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stable Video Diffusion]]",
+      "resolved": "urn:visionflow:linked:stable-video-diffusion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[troubleshooting]]",
+      "resolved": "urn:visionflow:linked:troubleshooting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[user experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[visionflow]]",
+      "resolved": "urn:visionflow:linked:visionflow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[workflow management]]",
+      "resolved": "urn:visionflow:linked:workflow-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adoption of Convergent Technologies]]",
+      "resolved": "urn:visionflow:owl:class:adoption-of-convergent-technologies",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Video]]",
+      "resolved": "urn:visionflow:owl:class:ai-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Apple]]",
+      "resolved": "urn:visionflow:owl:class:apple",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[artificial intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComfyUI]]",
+      "resolved": "urn:visionflow:owl:class:comfy-ui",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[computer vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ControlNet and Similar Spatial Conditioning Systems]]",
+      "resolved": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Copyright]]",
+      "resolved": "urn:visionflow:owl:class:copyright",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[copyright]]",
+      "resolved": "urn:visionflow:owl:class:copyright",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[data management]]",
+      "resolved": "urn:visionflow:owl:class:data-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Identity]]",
+      "resolved": "urn:visionflow:owl:class:distributed-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Flux.1]]",
+      "resolved": "urn:visionflow:owl:class:flux-1",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Function Calling]]",
+      "resolved": "urn:visionflow:owl:class:function-calling",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Adversarial Network]]",
+      "resolved": "urn:visionflow:owl:class:generative-adversarial-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Global Inequality]]",
+      "resolved": "urn:visionflow:owl:class:global-inequality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graphing]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Multimodal]]",
+      "resolved": "urn:visionflow:owl:class:multimodal",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[natural language processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ollama]]",
+      "resolved": "urn:visionflow:owl:class:ollama",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Open Generative AI tools]]",
+      "resolved": "urn:visionflow:owl:class:open-generative-ai-tools",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Open Webui and Pipelines]]",
+      "resolved": "urn:visionflow:owl:class:open-webui-and-pipelines",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Overview of Machine Learning Techniques]]",
+      "resolved": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Prompt Engineering]]",
+      "resolved": "urn:visionflow:owl:class:prompt-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Image Generation]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-image-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Video]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Python and PyTorch]]",
+      "resolved": "urn:visionflow:owl:class:python-and-py-torch",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[software engineering]]",
+      "resolved": "urn:visionflow:owl:class:software-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Soon-Next-Later (AI futurology)]]",
+      "resolved": "urn:visionflow:owl:class:soon-next-later-ai-futurology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[State of the art in AI]]",
+      "resolved": "urn:visionflow:owl:class:state-of-the-art-in-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Text-to-Image]]",
+      "resolved": "urn:visionflow:owl:class:text-to-image",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[training]]",
+      "resolved": "urn:visionflow:owl:class:training",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Variational Autoencoders]]",
+      "resolved": "urn:visionflow:owl:class:variational-autoencoders",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.
@@ -337,7 +1009,7 @@ public:: true
 			- [https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced)
 			- [https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22)
 			- [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion]]
-			- [[Controlnet and similar]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
+			- [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
 			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
 			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
@@ -710,7 +1382,7 @@ public:: true
 			- [https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced)
 			- [https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22)
 			- [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion]]
-			- [[Controlnet and similar]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
+			- [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
 			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
 			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
@@ -1003,8 +1675,8 @@ public:: true
 		- [segment anything training](https://github.com/NielsRogge/Transformers-Tutorials/tree/master/SAM)
 
   - ## Controlnet
-  - https://huggingface.co/XLabs-AI/flux-controlnet-collections [[Controlnet and similar]]
-  - https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
+  - https://huggingface.co/XLabs-AI/flux-controlnet-collections [[ControlNet and Similar Spatial Conditioning Systems]]
+  - https://civitai.com/models/731324 [[Flux.1]] Social Media Image Generator [[Death of the Internet]]
   - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
   - https://www.reddit.com/r/FluxAI/comments/1f1uhnm/new_flux_controlnet_union_model_just_dropped/
   - https://www.reddit.com/r/comfyui/comments/1es8r9o/flux_controlnet_depth_canny_comfyui/?utm_source=diffusiondigest.beehiiv.com&utm_medium=referral&utm_campaign=trump-ai-pics-procreate-says-human-only-this-week-in-ai-art
@@ -1018,8 +1690,8 @@ public:: true
   - [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
 
   - ## Controlnet
-  - https://huggingface.co/XLabs-AI/flux-controlnet-collections [[Controlnet and similar]]
-  - https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
+  - https://huggingface.co/XLabs-AI/flux-controlnet-collections [[ControlNet and Similar Spatial Conditioning Systems]]
+  - https://civitai.com/models/731324 [[Flux.1]] Social Media Image Generator [[Death of the Internet]]
   - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
   - https://www.reddit.com/r/FluxAI/comments/1f1uhnm/new_flux_controlnet_union_model_just_dropped/
   - https://www.reddit.com/r/comfyui/comments/1es8r9o/flux_controlnet_depth_canny_comfyui/?utm_source=diffusiondigest.beehiiv.com&utm_medium=referral&utm_campaign=trump-ai-pics-procreate-says-human-only-this-week-in-ai-art
@@ -1036,7 +1708,7 @@ public:: true
 
   - ### Multi-Modal Large Language Models (LLMs)
   - **Introduction:**
-		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+		- [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 		- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
   - **Core Concepts:**
 		- **LLMs for Text:**
@@ -1062,7 +1734,7 @@ public:: true
 
   - ### Multi-Modal Large Language Models (LLMs)
   - **Introduction:**
-		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+		- [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 		- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
   - **Core Concepts:**
 		- **LLMs for Text:**
@@ -1097,7 +1769,7 @@ public:: true
   F -->|Decoded| G[Output Image & Text]
   ```
   - Some random links
-  - Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+  - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
   - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
   - [moondream
 		- a tiny vision language model](https://moondream.ai/)
@@ -1166,7 +1838,7 @@ public:: true
 
   - ### Multi-Modal Large Language Models (LLMs)
   - **Introduction:**
-		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+		- [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 		- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
   - **Core Concepts:**
 		- **LLMs for Text:**
@@ -1201,7 +1873,7 @@ public:: true
   F -->|Decoded| G[Output Image & Text]
   ```
   - Some random links
-  - Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+  - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
   - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
   - [moondream
 		- a tiny vision language model](https://moondream.ai/)

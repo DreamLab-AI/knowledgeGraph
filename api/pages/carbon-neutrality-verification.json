@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:055541416ec7511179a1b726f0267a3dad36ae2a6dcb94f5b1384aa903e4923d",
+  "title": "Carbon Neutrality Verification",
+  "slug": "carbon-neutrality-verification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-neutrality-verification",
+  "domain": "spatial-computing",
+  "definition": "The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:environmental-verification",
+      "label": "Environmental Verification"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:documentation-package",
+        "label": "Documentation Package"
+      },
+      {
+        "id": "urn:visionflow:owl:class:third-party-auditor",
+        "label": "Third Party Auditor"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verification-standard",
+        "label": "Verification Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:credibility-assurance",
+        "label": "Credibility Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:greenwashing-prevention",
+        "label": "Greenwashing Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "credibility-assurance",
+      "label": "Credibility Assurance"
+    },
+    {
+      "slug": "documentation-package",
+      "label": "Documentation Package"
+    },
+    {
+      "slug": "greenwashing-prevention",
+      "label": "Greenwashing Prevention"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "stakeholder-trust",
+      "label": "Stakeholder Trust"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "environmental-verification",
+      "label": "Environmental Verification"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "third-party-auditor",
+      "label": "Third Party Auditor"
+    },
+    {
+      "slug": "verification-standard",
+      "label": "Verification Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "environmental-sustainability-label",
+      "label": "Environmental Sustainability Label"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67",
+  "title": "Path Planning",
+  "slug": "path-planning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:path-planning",
+  "domain": "robotics",
+  "definition": "The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.97,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-configuration",
+        "label": "Goal Configuration"
+      },
+      {
+        "id": "urn:visionflow:linked:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:start-configuration",
+        "label": "Start Configuration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rb-1013-localization",
+        "label": "RB-1013-localization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+        "label": "RB-1007-trajectory-generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "environment-model",
+      "label": "Environment Model"
+    },
+    {
+      "slug": "feasibility",
+      "label": "Feasibility"
+    },
+    {
+      "slug": "goal-configuration",
+      "label": "Goal Configuration"
+    },
+    {
+      "slug": "manipulators",
+      "label": "Manipulators"
+    },
+    {
+      "slug": "mapping",
+      "label": "Mapping"
+    },
+    {
+      "slug": "mobile-robots",
+      "label": "Mobile Robots"
+    },
+    {
+      "slug": "obstacles",
+      "label": "Obstacles"
+    },
+    {
+      "slug": "optimality",
+      "label": "Optimality"
+    },
+    {
+      "slug": "path",
+      "label": "Path"
+    },
+    {
+      "slug": "rb-1003-optimal-control",
+      "label": "RB-1003-optimal-control"
+    },
+    {
+      "slug": "rb-1007-trajectory-generation",
+      "label": "RB-1007-trajectory-generation"
+    },
+    {
+      "slug": "rb-1017-rrt-algorithm",
+      "label": "RB-1017-rrt-algorithm"
+    },
+    {
+      "slug": "rb-1018-dijkstra-algorithm",
+      "label": "RB-1018-dijkstra-algorithm"
+    },
+    {
+      "slug": "rb-1019-obstacle-avoidance",
+      "label": "RB-1019-obstacle-avoidance"
+    },
+    {
+      "slug": "start-configuration",
+      "label": "Start Configuration"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB-1013-localization"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "rrt-algorithm",
+      "label": "RRT Algorithm"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d",
+  "title": "Cryptographic System",
+  "slug": "cryptographic-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cryptographic-system",
+  "domain": "blockchain",
+  "definition": "A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity thro",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "fips-140-3-security-requirements",
+      "label": "FIPS 140-3 Security Requirements"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "iso-iec-18033-encryption-algorithms",
+      "label": "ISO/IEC 18033 Encryption Algorithms"
+    },
+    {
+      "slug": "nist-cryptographic-standards",
+      "label": "NIST Cryptographic Standards"
+    },
+    {
+      "slug": "threshold-cryptography",
+      "label": "Threshold Cryptography"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    }
+  ]
+}

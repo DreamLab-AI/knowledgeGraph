@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:69fcc9c8d5b5e69c617234cf8d39fc96e083b58a5b08e91ff8afcefefe049e87",
+  "title": "Causal Attention",
+  "slug": "causal-attention",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:causal-attention",
+  "domain": "artificial-intelligence",
+  "definition": "An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:attention-mechanism",
+      "label": "Attention Mechanism"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,21 +1,285 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#BDIModel
-uri:: urn:visionclaw:concept:artificial-intelligence:bdi-model
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:bdi-model
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: BDI Model
-content-hash:: sha256-12-9c752fa2f666
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#BDIModel
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:bdi-model
 public:: true
-bridges-to:: [[Autonomous Robot]]
+
+# BDI Model
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6",
+  "@type": "Page",
+  "vc:slug": "bdi-model",
+  "title": "BDI Model",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:agent-architecture",
+      "vc:label": "Agent Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:deliberative-architecture",
+      "vc:label": "Deliberative Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-architecture",
+      "vc:label": "Hybrid Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:plan",
+      "vc:label": "Plan"
+    },
+    {
+      "@id": "urn:visionflow:linked:practical-reasoning",
+      "vc:label": "Practical Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reactive-architecture",
+      "vc:label": "Reactive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:subsumption-architecture",
+      "vc:label": "Subsumption Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent",
+      "vc:label": "Agent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomy-level",
+      "vc:label": "Autonomy Level"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:goal",
+      "vc:label": "Goal"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Autonomous Robot]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9c752fa2f666"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#BDIModel"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "BDI Model"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:bdi-model"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:bdi-model"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:bdi-model",
+  "@type": "OntologyClass",
+  "label": "BDI Model",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "BDI Model is a concept within the ai domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:bdi-model:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Agent Architecture]]",
+      "resolved": "urn:visionflow:linked:agent-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deliberative Architecture]]",
+      "resolved": "urn:visionflow:linked:deliberative-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hybrid Architecture]]",
+      "resolved": "urn:visionflow:linked:hybrid-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent System]]",
+      "resolved": "urn:visionflow:linked:multi-agent-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Plan]]",
+      "resolved": "urn:visionflow:linked:plan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Practical Reasoning]]",
+      "resolved": "urn:visionflow:linked:practical-reasoning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reactive Architecture]]",
+      "resolved": "urn:visionflow:linked:reactive-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Subsumption Architecture]]",
+      "resolved": "urn:visionflow:linked:subsumption-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent]]",
+      "resolved": "urn:visionflow:owl:class:agent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomy Level]]",
+      "resolved": "urn:visionflow:owl:class:autonomy-level",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Goal]]",
+      "resolved": "urn:visionflow:owl:class:goal",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - BDI Model is a concept within the ai domain.

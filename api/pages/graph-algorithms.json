@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:bf9fe3eecc4e73de9489f578e1e72d94317155520ecefd513f9db6449a689ab3",
+  "title": "Graph Algorithms",
+  "slug": "graph-algorithms",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:graph-algorithms",
+  "domain": "artificial-intelligence",
+  "definition": "Graph Algorithms is a concept within the ai domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    }
+  ]
+}

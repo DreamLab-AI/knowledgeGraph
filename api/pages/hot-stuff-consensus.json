@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:8448023241f68214216e622836f0cd0bdefabddfc769e97fd25fa2e14c415d2a",
+  "title": "HotStuff Consensus",
+  "slug": "hot-stuff-consensus",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hot-stuff-consensus",
+  "domain": "blockchain",
+  "definition": "The first state machine replication protocol with linear view transformation complexity and optimistic responsiveness, simplifying PBFT for better performance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    }
+  ],
+  "backlinks": []
+}

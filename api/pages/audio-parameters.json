@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:69ddb7ee97e3944de48e6cc910ed428ad78c4654534c66ad4a50464372736ab4",
+  "title": "Audio Parameters",
+  "slug": "audio-parameters",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:audio-parameters",
+  "domain": "spatial-computing",
+  "definition": "Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:audio-configuration",
+      "label": "Audio Configuration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:environmental-modeling",
+        "label": "Environmental Modeling"
+      },
+      {
+        "id": "urn:visionflow:linked:hrtf-data",
+        "label": "HRTF Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-sound-rendering",
+        "label": "Spatial Sound Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audio-configuration",
+      "label": "Audio Configuration"
+    },
+    {
+      "slug": "audio-engine",
+      "label": "Audio Engine"
+    },
+    {
+      "slug": "environmental-modeling",
+      "label": "Environmental Modeling"
+    },
+    {
+      "slug": "hrtf-data",
+      "label": "HRTF Data"
+    },
+    {
+      "slug": "immersive-audio",
+      "label": "Immersive Audio"
+    },
+    {
+      "slug": "spatial-sound-rendering",
+      "label": "Spatial Sound Rendering"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "procedural-audio-generator",
+      "label": "Procedural Audio Generator"
+    }
+  ]
+}

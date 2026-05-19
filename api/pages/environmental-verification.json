@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:2cfc270aac5628f448cc69cc4e8459e23108db8cdd585de389a9d1fc7c20c0e3",
+  "title": "Environmental Verification",
+  "slug": "environmental-verification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-verification",
+  "domain": "spatial-computing",
+  "definition": "Environmental Verification is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-neutrality-verification",
+      "label": "Carbon Neutrality Verification"
+    }
+  ]
+}

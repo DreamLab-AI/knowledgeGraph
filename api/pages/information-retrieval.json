@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:24b0ca57068c6d211a0340e85ad7636e44bec857eefd505b23f52b2e987518fb",
+  "title": "Information Retrieval",
+  "slug": "information-retrieval",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:information-retrieval",
+  "domain": "spatial-computing",
+  "definition": "Information Retrieval is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "controlled-vocabularies",
+      "label": "Controlled Vocabularies"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "search-discovery",
+      "label": "Search Discovery"
+    },
+    {
+      "slug": "search-engine",
+      "label": "Search Engine"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

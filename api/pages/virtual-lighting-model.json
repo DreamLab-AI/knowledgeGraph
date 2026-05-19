@@ -1,0 +1,170 @@
+{
+  "id": "urn:visionflow:page:d57ba634e9ec31b4e4ae0a24558da0187471682cd8a571a3609a10366248cd5b",
+  "title": "Virtual Lighting Model",
+  "slug": "virtual-lighting-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-lighting-model",
+  "domain": "spatial-computing",
+  "definition": "Mathematical description of light behavior for rendering realistic illumination in 3D scenes, simulating light emission, transport, and surface interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:photorealistic-rendering",
+      "label": "Photorealistic Rendering"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:visionflow:linked:brdf-function",
+        "label": "BRDF Function"
+      },
+      {
+        "id": "urn:visionflow:linked:light-source-model",
+        "label": "Light Source Model"
+      },
+      {
+        "id": "urn:visionflow:linked:shadow-computation",
+        "label": "Shadow Computation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:material-properties",
+        "label": "Material Properties"
+      },
+      {
+        "id": "urn:visionflow:linked:shader-program",
+        "label": "Shader Program"
+      },
+      {
+        "id": "urn:visionflow:linked:surface-normals",
+        "label": "Surface Normals"
+      },
+      {
+        "id": "urn:visionflow:owl:class:light-parameters",
+        "label": "Light Parameters"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      },
+      {
+        "id": "urn:visionflow:linked:mood-and-atmosphere",
+        "label": "Mood and Atmosphere"
+      },
+      {
+        "id": "urn:visionflow:linked:realistic-illumination",
+        "label": "Realistic Illumination"
+      },
+      {
+        "id": "urn:visionflow:owl:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ambient-occlusion",
+      "label": "Ambient Occlusion"
+    },
+    {
+      "slug": "brdf-function",
+      "label": "BRDF Function"
+    },
+    {
+      "slug": "dynamic-lighting",
+      "label": "Dynamic Lighting"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "light-source-model",
+      "label": "Light Source Model"
+    },
+    {
+      "slug": "material-properties",
+      "label": "Material Properties"
+    },
+    {
+      "slug": "mood-and-atmosphere",
+      "label": "Mood and Atmosphere"
+    },
+    {
+      "slug": "realistic-illumination",
+      "label": "Realistic Illumination"
+    },
+    {
+      "slug": "shader-program",
+      "label": "Shader Program"
+    },
+    {
+      "slug": "shading-system",
+      "label": "Shading System"
+    },
+    {
+      "slug": "shadow-computation",
+      "label": "Shadow Computation"
+    },
+    {
+      "slug": "siggraph-standards",
+      "label": "SIGGRAPH Standards"
+    },
+    {
+      "slug": "surface-normals",
+      "label": "Surface Normals"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "slug": "light-parameters",
+      "label": "Light Parameters"
+    },
+    {
+      "slug": "photorealistic-rendering",
+      "label": "Photorealistic Rendering"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ],
+  "backlinks": []
+}

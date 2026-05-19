@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3",
+  "title": "Politics, Law, Privacy",
+  "slug": "politics-law-privacy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:politics-law-privacy",
+  "domain": "infrastructure",
+  "definition": "Politics, Law, Privacy is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "pol",
+      "label": "pol"
+    },
+    {
+      "slug": "presentation",
+      "label": "presentation"
+    },
+    {
+      "slug": "copyright",
+      "label": "copyright"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "calculating-empires",
+      "label": "Calculating Empires"
+    },
+    {
+      "slug": "client-side-dco",
+      "label": "Client side DCO"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "conspiracies",
+      "label": "Conspiracies"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "label": "leopold-aschenbrenner"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "product-and-risk-management",
+      "label": "Product and Risk Management"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "label": "State of the art in AI"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

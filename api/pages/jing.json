@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:6dd42a0309486c6382499214531f09993b0ea1f882e6865123fd8f8aa3afcb81",
+  "title": "jing",
+  "slug": "jing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:jing",
+  "domain": "infrastructure",
+  "definition": "jing is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

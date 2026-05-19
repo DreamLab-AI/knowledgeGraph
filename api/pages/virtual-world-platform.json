@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:18b652c1ed7d37f619ee19b9f091267814f6e1b2690e5603bad9431ea488415b",
+  "title": "Virtual World Platform",
+  "slug": "virtual-world-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-world-platform",
+  "domain": "spatial-computing",
+  "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital assets and governance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-platform",
+      "label": "Digital Platform"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-platform",
+      "label": "Digital Platform"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    },
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    }
+  ]
+}

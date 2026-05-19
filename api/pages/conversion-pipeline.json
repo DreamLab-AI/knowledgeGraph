@@ -1,0 +1,186 @@
+{
+  "id": "urn:visionflow:page:8b41fd0f8dda313bf61ba63344f6c4b29245b9f621a29a3140cd9a1e47fb4818",
+  "title": "Conversion Pipeline",
+  "slug": "conversion-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:conversion-pipeline",
+  "domain": "spatial-computing",
+  "definition": "An automated workflow process that transforms digital data or assets from one format, schema, or representation to another, enabling interoperability and compatibility across heterogeneous systems and platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-processing",
+      "label": "Data Processing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:error-handler",
+        "label": "Error Handler"
+      },
+      {
+        "id": "urn:visionflow:linked:output-generator",
+        "label": "Output Generator"
+      },
+      {
+        "id": "urn:visionflow:linked:transformation-engine",
+        "label": "Transformation Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-module",
+        "label": "Validation Module"
+      },
+      {
+        "id": "urn:visionflow:owl:class:format-parser",
+        "label": "Format Parser"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asset-metadata",
+        "label": "Asset Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:conversion-rules",
+        "label": "Conversion Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:format-specification",
+        "label": "Format Specification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-optimization",
+        "label": "Asset Optimization"
+      },
+      {
+        "id": "urn:visionflow:linked:data-harmonization",
+        "label": "Data Harmonization"
+      },
+      {
+        "id": "urn:visionflow:linked:format-migration",
+        "label": "Format Migration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-metadata",
+      "label": "Asset Metadata"
+    },
+    {
+      "slug": "asset-optimization",
+      "label": "Asset Optimization"
+    },
+    {
+      "slug": "asset-pipeline",
+      "label": "Asset Pipeline"
+    },
+    {
+      "slug": "conversion-rules",
+      "label": "Conversion Rules"
+    },
+    {
+      "slug": "data-harmonization",
+      "label": "Data Harmonization"
+    },
+    {
+      "slug": "data-schema",
+      "label": "Data Schema"
+    },
+    {
+      "slug": "data-validation",
+      "label": "Data Validation"
+    },
+    {
+      "slug": "error-handler",
+      "label": "Error Handler"
+    },
+    {
+      "slug": "format-migration",
+      "label": "Format Migration"
+    },
+    {
+      "slug": "format-specification",
+      "label": "Format Specification"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "output-generator",
+      "label": "Output Generator"
+    },
+    {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
+    },
+    {
+      "slug": "transformation-engine",
+      "label": "Transformation Engine"
+    },
+    {
+      "slug": "validation-module",
+      "label": "Validation Module"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "Computation And Intelligence Domain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "format-parser",
+      "label": "Format Parser"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "schema-registry",
+      "label": "Schema Registry"
+    }
+  ],
+  "backlinks": []
+}

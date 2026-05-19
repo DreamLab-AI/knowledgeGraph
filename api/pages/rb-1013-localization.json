@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:bc395d3d6a26821a7b36c0913acb30d0b726f55540c2bd649cc8f2ea9f06c55d",
+  "title": "RB 1013 localization",
+  "slug": "rb-1013-localization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-1013-localization",
+  "domain": "robotics",
+  "definition": "R B 1013 localization is a concept within the robotics domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    }
+  ]
+}

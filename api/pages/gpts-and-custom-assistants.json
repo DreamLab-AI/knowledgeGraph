@@ -1,0 +1,540 @@
+{
+  "id": "urn:visionflow:page:075ef6a0a0c8ab6e935d1dc758ad3b9940cae4c9e428693d5ead9e79688dab55",
+  "title": "GPTs and Custom Assistants",
+  "slug": "gpts-and-custom-assistants",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gpts-and-custom-assistants",
+  "domain": "artificial-intelligence",
+  "definition": "GPTs and Custom Assistants are a family of user-configured task-specific applications built on top of foundation large language models in which a vendor exposes a no-code or low-code authoring surface that lets a user, an enterprise administrator, or a third-party developer compose a persistent assistant by combining a natural-language system prompt (the assistant's persona, scope, refusal rules, output format and chain-of-thought directives), a small uploaded knowledge base (typically 1-20 files totalling 50-500MB ingested into a managed vector store such as OpenAI's File Search index, Anthropic's project knowledge index, or Microsoft Graph), an optional set of callable tools described by an OpenAPI 3.0 schema or vendor-specific function-calling JSON schema (web browsing, code execution, image generation, Zapier/Make integrations, bespoke REST endpoints authenticated by API key or OAuth 2.0), and runtime configuration (model choice e.g. GPT-4 Turbo / GPT-5 / Claude Sonnet 4 / Gemini 2.5 Pro, temperature, response length, conversation starters, visibility scope private/link/public/enterprise) without retraining or modifying any model weights, distinguishing this scaffolding-based p",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-productivity-tool",
+      "label": "AI Productivity Tool"
+    },
+    {
+      "id": "urn:visionflow:linked:conversational-ai-system",
+      "label": "Conversational AI System"
+    },
+    {
+      "id": "urn:visionflow:linked:llm-application",
+      "label": "LLM Application"
+    },
+    {
+      "id": "urn:visionflow:linked:no-code-platform",
+      "label": "No-Code Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:retrieval-augmented-generation-system",
+      "label": "Retrieval-Augmented Generation System"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conversation-starter",
+        "label": "Conversation Starter"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:visionflow:linked:model-configuration",
+        "label": "Model Configuration"
+      },
+      {
+        "id": "urn:visionflow:linked:open-api-schema",
+        "label": "OpenAPI Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:vector-store",
+        "label": "Vector Store"
+      },
+      {
+        "id": "urn:visionflow:linked:visibility-setting",
+        "label": "Visibility Setting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:visionflow:linked:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bot-marketplaces",
+        "label": "Bot Marketplaces"
+      },
+      {
+        "id": "urn:visionflow:linked:document-q-and-a",
+        "label": "Document Q&A"
+      },
+      {
+        "id": "urn:visionflow:linked:enterprise-knowledge-surfacing",
+        "label": "Enterprise Knowledge Surfacing"
+      },
+      {
+        "id": "urn:visionflow:linked:personalised-ai",
+        "label": "Personalised AI"
+      },
+      {
+        "id": "urn:visionflow:linked:task-specific-assistant",
+        "label": "Task-Specific Assistant"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:conversation-memory",
+        "label": "Conversation Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:hybrid-search",
+        "label": "Hybrid Search"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-productivity-tool",
+      "label": "AI Productivity Tool"
+    },
+    {
+      "slug": "anthropic-agent-skills-october-2025",
+      "label": "Anthropic Agent Skills October 2025"
+    },
+    {
+      "slug": "anthropic-agent-skills-open-standard",
+      "label": "Anthropic Agent Skills Open Standard"
+    },
+    {
+      "slug": "anthropic-claude-projects-june-2024",
+      "label": "Anthropic Claude Projects June 2024"
+    },
+    {
+      "slug": "application-layer-domain",
+      "label": "ApplicationLayerDomain"
+    },
+    {
+      "slug": "asai-et-al-2023-self-rag",
+      "label": "Asai et al. 2023 Self-RAG"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "bot-marketplaces",
+      "label": "Bot Marketplaces"
+    },
+    {
+      "slug": "chunking",
+      "label": "Chunking"
+    },
+    {
+      "slug": "conversation-memory",
+      "label": "Conversation Memory"
+    },
+    {
+      "slug": "conversation-starter",
+      "label": "Conversation Starter"
+    },
+    {
+      "slug": "conversational-ai-system",
+      "label": "Conversational AI System"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "document-q-and-a",
+      "label": "Document Q&A"
+    },
+    {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
+      "slug": "embedding-model",
+      "label": "Embedding Model"
+    },
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "enterprise-knowledge-surfacing",
+      "label": "Enterprise Knowledge Surfacing"
+    },
+    {
+      "slug": "fine-tuned-models",
+      "label": "Fine-Tuned Models"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "google-gemini",
+      "label": "Google Gemini"
+    },
+    {
+      "slug": "google-gemini-gems-august-2024",
+      "label": "Google Gemini Gems August 2024"
+    },
+    {
+      "slug": "gpt-5",
+      "label": "GPT-5"
+    },
+    {
+      "slug": "greshake-et-al-2023-indirect-prompt-injection",
+      "label": "Greshake et al. 2023 Indirect Prompt Injection"
+    },
+    {
+      "slug": "guu-et-al-2020-realm",
+      "label": "Guu et al. 2020 REALM"
+    },
+    {
+      "slug": "healthcare-triage",
+      "label": "Healthcare Triage"
+    },
+    {
+      "slug": "hsieh-et-al-2024-ruler-long-context-evaluation",
+      "label": "Hsieh et al. 2024 RULER Long-Context Evaluation"
+    },
+    {
+      "slug": "hybrid-search",
+      "label": "Hybrid Search"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "InterfaceLayer"
+    },
+    {
+      "slug": "izacard-and-grave-2021-fusion-in-decoder",
+      "label": "Izacard & Grave 2021 Fusion-in-Decoder"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "karpukhin-et-al-2020-dense-passage-retrieval",
+      "label": "Karpukhin et al. 2020 Dense Passage Retrieval"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "legal-research",
+      "label": "Legal Research"
+    },
+    {
+      "slug": "lewis-et-al-2020-retrieval-augmented-generation",
+      "label": "Lewis et al. 2020 Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "liu-et-al-2023-agent-bench",
+      "label": "Liu et al. 2023 AgentBench"
+    },
+    {
+      "slug": "liu-et-al-2023-lost-in-the-middle",
+      "label": "Liu et al. 2023 Lost in the Middle"
+    },
+    {
+      "slug": "liu-et-al-2024-prompt-injection-against-llm-applications",
+      "label": "Liu et al. 2024 Prompt Injection against LLM Applications"
+    },
+    {
+      "slug": "llm-application",
+      "label": "LLM Application"
+    },
+    {
+      "slug": "mialon-et-al-2023-gaia-benchmark",
+      "label": "Mialon et al. 2023 GAIA Benchmark"
+    },
+    {
+      "slug": "microsoft-copilot-studio-build-2024",
+      "label": "Microsoft Copilot Studio Build 2024"
+    },
+    {
+      "slug": "model-configuration",
+      "label": "Model Configuration"
+    },
+    {
+      "slug": "newsroom-workflows",
+      "label": "Newsroom Workflows"
+    },
+    {
+      "slug": "no-code-platform",
+      "label": "No-Code Platform"
+    },
+    {
+      "slug": "oauth-2-0",
+      "label": "OAuth 2.0"
+    },
+    {
+      "slug": "open-ai-apps-sdk-october-2025",
+      "label": "OpenAI Apps SDK October 2025"
+    },
+    {
+      "slug": "open-ai-assistants-api-v2-april-2024",
+      "label": "OpenAI Assistants API v2 April 2024"
+    },
+    {
+      "slug": "open-ai-chat-gpt-app-directory-december-2025",
+      "label": "OpenAI ChatGPT App Directory December 2025"
+    },
+    {
+      "slug": "open-ai-introducing-gpts-dev-day-2023",
+      "label": "OpenAI Introducing GPTs DevDay 2023"
+    },
+    {
+      "slug": "open-api-3-0",
+      "label": "OpenAPI 3.0"
+    },
+    {
+      "slug": "open-api-schema",
+      "label": "OpenAPI Schema"
+    },
+    {
+      "slug": "open-api-specification",
+      "label": "OpenAPI Specification"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "patil-et-al-2023-gorilla",
+      "label": "Patil et al. 2023 Gorilla"
+    },
+    {
+      "slug": "perez-and-ribeiro-2022-ignore-previous-prompt",
+      "label": "Perez & Ribeiro 2022 Ignore Previous Prompt"
+    },
+    {
+      "slug": "personalised-ai",
+      "label": "Personalised AI"
+    },
+    {
+      "slug": "plugins",
+      "label": "Plugins"
+    },
+    {
+      "slug": "productivity-domain",
+      "label": "ProductivityDomain"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "qin-et-al-2023-tool-llm",
+      "label": "Qin et al. 2023 ToolLLM"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "retrieval-augmented-generation-system",
+      "label": "Retrieval-Augmented Generation System"
+    },
+    {
+      "slug": "rule-based-chatbots",
+      "label": "Rule-Based Chatbots"
+    },
+    {
+      "slug": "schick-et-al-2023-toolformer",
+      "label": "Schick et al. 2023 Toolformer"
+    },
+    {
+      "slug": "system-prompt",
+      "label": "System Prompt"
+    },
+    {
+      "slug": "task-specific-assistant",
+      "label": "Task-Specific Assistant"
+    },
+    {
+      "slug": "tool-definition",
+      "label": "Tool Definition"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "vector-store",
+      "label": "Vector Store"
+    },
+    {
+      "slug": "visibility-setting",
+      "label": "Visibility Setting"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "yao-et-al-2022-re-act",
+      "label": "Yao et al. 2022 ReAct"
+    },
+    {
+      "slug": "yu-et-al-2024-prompt-injection-risks-in-custom-gpts",
+      "label": "Yu et al. 2024 Prompt Injection Risks in Custom GPTs"
+    },
+    {
+      "slug": "zamfirescu-pereira-et-al-2023-why-johnny-can-t-prompt",
+      "label": "Zamfirescu-Pereira et al. 2023 Why Johnny Can't Prompt"
+    },
+    {
+      "slug": "zheng-et-al-2023-mt-bench-chatbot-arena",
+      "label": "Zheng et al. 2023 MT-Bench Chatbot Arena"
+    },
+    {
+      "slug": "zou-et-al-2023-universal-adversarial-attacks-on-aligned-llms",
+      "label": "Zou et al. 2023 Universal Adversarial Attacks on Aligned LLMs"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    }
+  ]
+}

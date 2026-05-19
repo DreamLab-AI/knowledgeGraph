@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:168775027f6f38a99d911cb7fb3249da33eaac1e80665a931a9a53c2e688b714",
+  "title": "Robustness",
+  "slug": "robustness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robustness",
+  "domain": "artificial-intelligence",
+  "definition": "The ability of an AI system to maintain consistent, correct, and safe performance across diverse operating conditions, including unexpected inputs, environmental variations, and adversarial perturbations, without catastrophic failure or significant degradation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    }
+  ]
+}

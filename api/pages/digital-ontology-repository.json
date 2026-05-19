@@ -1,0 +1,194 @@
+{
+  "id": "urn:visionflow:page:7a5ecfebc642c25feea4fb1d5d5e5f6d49af7f29d87e56f83e0b237e3fe49173",
+  "title": "Digital Ontology Repository",
+  "slug": "digital-ontology-repository",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-ontology-repository",
+  "domain": "spatial-computing",
+  "definition": "A structured collection system that stores, versions, and manages formal ontologies and semantic models to enable interoperability and shared understanding across metaverse domains. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metadata-repository",
+      "label": "Metadata Repository"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ontology-storage-system",
+        "label": "Ontology Storage System"
+      },
+      {
+        "id": "urn:visionflow:linked:query-interface",
+        "label": "Query Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-engine",
+        "label": "Validation Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-registry",
+        "label": "Metadata Registry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-reasoning-engine",
+        "label": "Semantic Reasoning Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:uri-resolution-service",
+        "label": "URI Resolution Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-domain-integration",
+        "label": "Cross-Domain Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:ontology-reuse",
+        "label": "Ontology Reuse"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:vocabulary-governance",
+        "label": "Vocabulary Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-domain-integration",
+      "label": "Cross-Domain Integration"
+    },
+    {
+      "slug": "database-management-system",
+      "label": "Database Management System"
+    },
+    {
+      "slug": "iso-iec-11179",
+      "label": "ISO/IEC 11179"
+    },
+    {
+      "slug": "msf-register-wg",
+      "label": "MSF Register WG"
+    },
+    {
+      "slug": "ontology-reuse",
+      "label": "Ontology Reuse"
+    },
+    {
+      "slug": "ontology-storage-system",
+      "label": "Ontology Storage System"
+    },
+    {
+      "slug": "query-interface",
+      "label": "Query Interface"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
+      "slug": "uri-resolution-service",
+      "label": "URI Resolution Service"
+    },
+    {
+      "slug": "validation-engine",
+      "label": "Validation Engine"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "knowledge-sharing",
+      "label": "Knowledge Sharing"
+    },
+    {
+      "slug": "metadata-registry",
+      "label": "Metadata Registry"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "vocabulary-governance",
+      "label": "Vocabulary Governance"
+    }
+  ],
+  "backlinks": []
+}

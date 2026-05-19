@@ -1,24 +1,453 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ZeroKnowledge
-uri:: urn:visionclaw:concept:spatial-computing:zero-knowledge
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:zero-knowledge
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Zero Knowledge
-content-hash:: sha256-12-6aacfea07ab6
-legacy-term-id:: MV-3041
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ZeroKnowledge
+legacy_uri:: urn:visionclaw:concept:spatial-computing:zero-knowledge
 public:: true
+
+# Zero Knowledge
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f",
+  "@type": "Page",
+  "vc:slug": "zero-knowledge",
+  "title": "Zero Knowledge",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aimodel",
+      "vc:label": "AIModel"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-proof",
+      "vc:label": "CryptographicProof"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enables",
+      "vc:label": "dt:enables"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-protects",
+      "vc:label": "dt:protects"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-secures",
+      "vc:label": "dt:secures"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-validates",
+      "vc:label": "dt:validates"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-verifies",
+      "vc:label": "dt:verifies"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-protocol",
+      "vc:label": "InteractiveProtocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:nizkproof",
+      "vc:label": "NIZKProof"
+    },
+    {
+      "@id": "urn:visionflow:linked:preserves-privacy",
+      "vc:label": "preservesPrivacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-coin",
+      "vc:label": "PrivacyCoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-preserving",
+      "vc:label": "PrivacyPreserving"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-protocol",
+      "vc:label": "PrivacyProtocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:private-transaction",
+      "vc:label": "PrivateTransaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:proves-statement",
+      "vc:label": "provesStatement"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalable-rollup",
+      "vc:label": "ScalableRollup"
+    },
+    {
+      "@id": "urn:visionflow:linked:selective-disclosure",
+      "vc:label": "SelectiveDisclosure"
+    },
+    {
+      "@id": "urn:visionflow:linked:used-in",
+      "vc:label": "usedIn"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-data",
+      "vc:label": "UserData"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-computation",
+      "vc:label": "VerifiableComputation"
+    },
+    {
+      "@id": "urn:visionflow:linked:verified-by",
+      "vc:label": "verifiedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-snark",
+      "vc:label": "zkSNARK"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-snark",
+      "vc:label": "zkSNARK"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-stark",
+      "vc:label": "zkSTARK"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-stark",
+      "vc:label": "zkSTARK"
+    },
+    {
+      "@id": "urn:visionflow:linked:zkproof-systems",
+      "vc:label": "ZKProofSystems"
+    },
+    {
+      "@id": "urn:visionflow:linked:zkrollup",
+      "vc:label": "ZKRollup"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-scalability",
+      "vc:label": "BlockchainScalability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-identity",
+      "vc:label": "DigitalIdentity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6aacfea07ab6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ZeroKnowledge"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3041"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Zero Knowledge"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:zero-knowledge"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:zero-knowledge"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:zero-knowledge",
+  "@type": "OntologyClass",
+  "label": "Zero Knowledge",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:privacy-enhancing-computation-pec",
+      "vc:label": "Privacy-Enhancing Computation (PEC)"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactive proofs]]. [[ZKProofSystems|ZK proof systems]] like [[zkSNARK|zk-SNARKs]] and [[zkSTARK|zk-STARKs]] enable privacy-preserving authentication, [[PrivacyCoin|confidential transactions]], and [[ZKRollup|zkRollups]] that compress on-chain computation whilst maintaining verifiable correctness, critical for balancing transparency requirements against user privacy. Practical applications span [[BlockchainScalability|blockchain scalability]], [[VerifiableComputation|verifiable computation]], and [[SelectiveDisclosure|selective disclosure]] systems enabling users to prove attributes (age, creditworthiness, citizenship) without revealing underlying personal data.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:zero-knowledge:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AIModel]]",
+      "resolved": "urn:visionflow:linked:aimodel",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CryptographicProof]]",
+      "resolved": "urn:visionflow:linked:cryptographic-proof",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enables]]",
+      "resolved": "urn:visionflow:linked:dt-enables",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:protects]]",
+      "resolved": "urn:visionflow:linked:dt-protects",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:secures]]",
+      "resolved": "urn:visionflow:linked:dt-secures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:validates]]",
+      "resolved": "urn:visionflow:linked:dt-validates",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:verifies]]",
+      "resolved": "urn:visionflow:linked:dt-verifies",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InteractiveProtocol|interactive protocols]]",
+      "resolved": "urn:visionflow:linked:interactive-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIZKProof|non-interactive proofs]]",
+      "resolved": "urn:visionflow:linked:nizkproof",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[preservesPrivacy]]",
+      "resolved": "urn:visionflow:linked:preserves-privacy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PrivacyCoin|confidential transactions]]",
+      "resolved": "urn:visionflow:linked:privacy-coin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PrivacyPreserving]]",
+      "resolved": "urn:visionflow:linked:privacy-preserving",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PrivacyProtocol]]",
+      "resolved": "urn:visionflow:linked:privacy-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PrivateTransaction]]",
+      "resolved": "urn:visionflow:linked:private-transaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[provesStatement]]",
+      "resolved": "urn:visionflow:linked:proves-statement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ScalableRollup]]",
+      "resolved": "urn:visionflow:linked:scalable-rollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SelectiveDisclosure|selective disclosure]]",
+      "resolved": "urn:visionflow:linked:selective-disclosure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usedIn]]",
+      "resolved": "urn:visionflow:linked:used-in",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UserData]]",
+      "resolved": "urn:visionflow:linked:user-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VerifiableComputation|verifiable computation]]",
+      "resolved": "urn:visionflow:linked:verifiable-computation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[verifiedBy]]",
+      "resolved": "urn:visionflow:linked:verified-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zkSNARK]]",
+      "resolved": "urn:visionflow:linked:zk-snark",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zkSNARK|zk-SNARKs]]",
+      "resolved": "urn:visionflow:linked:zk-snark",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zkSTARK]]",
+      "resolved": "urn:visionflow:linked:zk-stark",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zkSTARK|zk-STARKs]]",
+      "resolved": "urn:visionflow:linked:zk-stark",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ZKProofSystems|ZK proof systems]]",
+      "resolved": "urn:visionflow:linked:zkproof-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ZKRollup|zkRollups]]",
+      "resolved": "urn:visionflow:linked:zkrollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainScalability|blockchain scalability]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-scalability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalIdentity]]",
+      "resolved": "urn:visionflow:owl:class:digital-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactive proofs]]. [[ZKProofSystems|ZK proof systems]] like [[zkSNARK|zk-SNARKs]] and [[zkSTARK|zk-STARKs]] enable privacy-preserving authentication, [[PrivacyCoin|confidential transactions]], and [[ZKRollup|zkRollups]] that compress on-chain computation whilst maintaining verifiable correctness, critical for balancing transparency requirements against user privacy. Practical applications span [[BlockchainScalability|blockchain scalability]], [[VerifiableComputation|verifiable computation]], and [[SelectiveDisclosure|selective disclosure]] systems enabling users to prove attributes (age, creditworthiness, citizenship) without revealing underlying personal data.

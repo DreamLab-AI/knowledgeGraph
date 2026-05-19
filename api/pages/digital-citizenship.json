@@ -1,0 +1,203 @@
+{
+  "id": "urn:visionflow:page:735e70f50cf9ae863c3c1bf389a9322a93a16fb07f7a80ae8a5143ccea74f537",
+  "title": "Digital Citizenship",
+  "slug": "digital-citizenship",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-citizenship",
+  "domain": "spatial-computing",
+  "definition": "A framework defining the rights, responsibilities, and civic participation mechanisms for individuals within virtual societies, metaverse communities, and digital platforms, establishing the basis for membership and belonging in virtual spaces. bridges-to:: [[Telecollaboration]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-society",
+      "label": "Virtual Society"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:access-controls",
+        "label": "Access Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:civic-duties",
+        "label": "Civic Duties"
+      },
+      {
+        "id": "urn:visionflow:linked:community-membership",
+        "label": "Community Membership"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:participation-framework",
+        "label": "Participation Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:access-to-services",
+        "label": "Access to Services"
+      },
+      {
+        "id": "urn:visionflow:linked:community-voting",
+        "label": "Community Voting"
+      },
+      {
+        "id": "urn:visionflow:linked:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:civic-participation",
+        "label": "Civic Participation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-controls",
+      "label": "Access Controls"
+    },
+    {
+      "slug": "access-to-services",
+      "label": "Access to Services"
+    },
+    {
+      "slug": "civic-duties",
+      "label": "Civic Duties"
+    },
+    {
+      "slug": "community-membership",
+      "label": "Community Membership"
+    },
+    {
+      "slug": "community-voting",
+      "label": "Community Voting"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "ieee-digital-identity-standards",
+      "label": "IEEE Digital Identity Standards"
+    },
+    {
+      "slug": "privacy-protection",
+      "label": "Privacy Protection"
+    },
+    {
+      "slug": "social-interaction",
+      "label": "Social Interaction"
+    },
+    {
+      "slug": "un-digital-rights-framework",
+      "label": "UN Digital Rights Framework"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "participation-framework",
+      "label": "Participation Framework"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-society",
+      "label": "Virtual Society"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    }
+  ]
+}

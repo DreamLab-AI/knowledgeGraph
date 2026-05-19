@@ -1,21 +1,297 @@
-iri:: http://narrativegoldmine.com/blockchain#Layer3
-uri:: urn:visionclaw:concept:blockchain:layer-3
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:layer-3
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Layer 3
-content-hash:: sha256-12-2a6e348922f5
-legacy-term-id:: BC-8009
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Layer3
+legacy_uri:: urn:visionclaw:concept:blockchain:layer-3
 public:: true
+
+# Layer 3
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b",
+  "@type": "Page",
+  "vc:slug": "layer-3",
+  "title": "Layer 3",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:application-specific-blockchain",
+      "vc:label": "Application-Specific Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:arbitrum-orbit",
+      "vc:label": "Arbitrum Orbit"
+    },
+    {
+      "@id": "urn:visionflow:linked:custom-execution-environment",
+      "vc:label": "Custom Execution Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:d-yd-x-v4",
+      "vc:label": "dYdX v4"
+    },
+    {
+      "@id": "urn:visionflow:linked:general-purpose-smart-contract-platform",
+      "vc:label": "General-Purpose Smart Contract Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:immutable-x",
+      "vc:label": "Immutable X"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-1",
+      "vc:label": "Layer 1"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2",
+      "vc:label": "Layer 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:rollup",
+      "vc:label": "Rollup"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability-solutions",
+      "vc:label": "Scalability Solutions"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-channel",
+      "vc:label": "State Channel"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2a6e348922f5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Layer3"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8009"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Layer 3"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:layer-3"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:layer-3"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:layer-3",
+  "@type": "OntologyClass",
+  "label": "Layer 3",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications. Layer 3 inherits security from L2 while enabling hyperscalability through domain-specific transaction processing and optimized state management.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:application-specific-blockchain",
+      "vc:label": "Application-Specific Blockchain"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:custom-execution-environment",
+      "vc:label": "Custom Execution Environment"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:linked:general-purpose-smart-contract-platform",
+      "vc:label": "General-Purpose Smart Contract Platform"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:layer-3:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Application-Specific Blockchain]]",
+      "resolved": "urn:visionflow:linked:application-specific-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Arbitrum Orbit]]",
+      "resolved": "urn:visionflow:linked:arbitrum-orbit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Custom Execution Environment]]",
+      "resolved": "urn:visionflow:linked:custom-execution-environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dYdX v4]]",
+      "resolved": "urn:visionflow:linked:d-yd-x-v4",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[General-Purpose Smart Contract Platform]]",
+      "resolved": "urn:visionflow:linked:general-purpose-smart-contract-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Immutable X]]",
+      "resolved": "urn:visionflow:linked:immutable-x",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 1]]",
+      "resolved": "urn:visionflow:linked:layer-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2]]",
+      "resolved": "urn:visionflow:linked:layer-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rollup]]",
+      "resolved": "urn:visionflow:linked:rollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scalability Solutions]]",
+      "resolved": "urn:visionflow:linked:scalability-solutions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[State Channel]]",
+      "resolved": "urn:visionflow:owl:class:state-channel",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications. Layer 3 inherits security from L2 while enabling hyperscalability through domain-specific transaction processing and optimized state management.

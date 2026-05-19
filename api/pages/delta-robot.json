@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:9f216b5a22d30d0ef41865b63f474be265c3b57d8f77a607d4c9bd86839c3069",
+  "title": "Delta Robot",
+  "slug": "delta-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:delta-robot",
+  "domain": "robotics",
+  "definition": "Delta robot employs parallel kinematics where three or more kinematic chains connect actuators to an end-effector platform, constraining motion through parallelogram linkages to pure translation. This architecture enables extremely high speed and acceleration, positioning delta robots as the preferred design for [[Pick and Place]] operations and applications demanding rapid, precise point-to-point motion.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:parallel-robots",
+      "label": "Parallel Robots"
+    },
+    {
+      "id": "urn:visionflow:owl:class:industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:actuator-motors",
+        "label": "Actuator Motors"
+      },
+      {
+        "id": "urn:visionflow:linked:end-effector-platform",
+        "label": "End-Effector Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:kinematic-chains",
+        "label": "Kinematic Chains"
+      },
+      {
+        "id": "urn:visionflow:linked:parallelogram-linkages",
+        "label": "Parallelogram Linkages"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:coordinated-control",
+        "label": "Coordinated Control"
+      },
+      {
+        "id": "urn:visionflow:linked:high-performance-actuators",
+        "label": "High-Performance Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:stiff-support-structure",
+        "label": "Stiff Support Structure"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:high-speed-picking",
+        "label": "High-Speed Picking"
+      },
+      {
+        "id": "urn:visionflow:linked:rapid-sorting",
+        "label": "Rapid Sorting"
+      },
+      {
+        "id": "urn:visionflow:linked:ultra-fast-placement",
+        "label": "Ultra-Fast Placement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator-motors",
+      "label": "Actuator Motors"
+    },
+    {
+      "slug": "coordinated-control",
+      "label": "Coordinated Control"
+    },
+    {
+      "slug": "electronics-assembly",
+      "label": "Electronics Assembly"
+    },
+    {
+      "slug": "end-effector-platform",
+      "label": "End-Effector Platform"
+    },
+    {
+      "slug": "food-processing",
+      "label": "Food Processing"
+    },
+    {
+      "slug": "high-performance-actuators",
+      "label": "High-Performance Actuators"
+    },
+    {
+      "slug": "high-speed-picking",
+      "label": "High-Speed Picking"
+    },
+    {
+      "slug": "inverse-kinematics-computation",
+      "label": "Inverse Kinematics Computation"
+    },
+    {
+      "slug": "kinematic-chains",
+      "label": "Kinematic Chains"
+    },
+    {
+      "slug": "parallel-robots",
+      "label": "Parallel Robots"
+    },
+    {
+      "slug": "parallelogram-linkages",
+      "label": "Parallelogram Linkages"
+    },
+    {
+      "slug": "pick-and-place",
+      "label": "Pick and Place"
+    },
+    {
+      "slug": "rapid-sorting",
+      "label": "Rapid Sorting"
+    },
+    {
+      "slug": "small-parts-handling",
+      "label": "Small Parts Handling"
+    },
+    {
+      "slug": "stiff-support-structure",
+      "label": "Stiff Support Structure"
+    },
+    {
+      "slug": "synchronisation",
+      "label": "Synchronisation"
+    },
+    {
+      "slug": "ultra-fast-placement",
+      "label": "Ultra-Fast Placement"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End-Effector"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "parallel-processing",
+      "label": "Parallel Processing"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trajectory-planning",
+      "label": "Trajectory Planning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:cd95b946e3d59c711a97526389d9db5600a1da5249aa1cd4592e8f86b2fc3f01",
+  "title": "Queries",
+  "slug": "queries",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:queries",
+  "domain": "infrastructure",
+  "definition": "Queries is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

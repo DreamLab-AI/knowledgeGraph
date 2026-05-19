@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:a89d3413e153d633c81eee335dc4038201cd88b0f6e91a43bdc6c116b8bfd717",
+  "title": "Constraint Based Design",
+  "slug": "constraint-based-design",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:constraint-based-design",
+  "domain": "artificial-intelligence",
+  "definition": "A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-system-component",
+      "label": "AI System Component"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-system-component",
+      "label": "AI System Component"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    }
+  ]
+}

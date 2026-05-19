@@ -1,21 +1,321 @@
-iri:: http://narrativegoldmine.com/metaverse#ETSIDomainGovernanceCompliance
-uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancecompliance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancecompliance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: ETSI_Domain_Governance_Compliance
-content-hash:: sha256-12-4beadcf13113
-legacy-term-id:: MV-3021
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ETSIDomainGovernanceCompliance
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancecompliance
 public:: true
+
+# ETSI_Domain_Governance_Compliance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f9773e9e03dfbe317c740399917d2e42ad26323bd68bc12722a63a5456d04726",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-governance-compliance",
+  "title": "ETSI_Domain_Governance_Compliance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cobit",
+      "vc:label": "COBIT"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-audits",
+      "vc:label": "Compliance Audits"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-oversight",
+      "vc:label": "Compliance Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi",
+      "vc:label": "ETSI"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-mec-032",
+      "vc:label": "ETSI GR MEC 032"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-tr-104-077-series",
+      "vc:label": "ETSI TR 104 077 series"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-enforcement",
+      "vc:label": "Governance Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-structures",
+      "vc:label": "Governance Structures"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-23257",
+      "vc:label": "ISO 23257"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-38500",
+      "vc:label": "ISO/IEC 38500"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-cybersecurity-framework",
+      "vc:label": "NIST Cybersecurity Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:oversight-mechanisms",
+      "vc:label": "Oversight Mechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-requirements",
+      "vc:label": "Regulatory Requirements"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4beadcf13113"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ETSIDomainGovernanceCompliance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3021"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancecompliance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancecompliance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f9773e9e03dfbe317c740399917d2e42ad26323bd68bc12722a63a5456d04726@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-governance-compliance",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Governance_Compliance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f9773e9e03dfbe317c740399917d2e42ad26323bd68bc12722a63a5456d04726"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f9773e9e03dfbe317c740399917d2e42ad26323bd68bc12722a63a5456d04726@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ETSI domain categorisation encompassing governance and regulatory compliance mechanisms, addressing frameworks for regulatory adherence, compliance oversight, and governance enforcement within metaverse infrastructure. These [[Governance Structures]] integrate [[Regulatory Requirements]], [[Compliance Audits]], and [[Oversight Mechanisms]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-governance-compliance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f9773e9e03dfbe317c740399917d2e42ad26323bd68bc12722a63a5456d04726"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[COBIT]]",
+      "resolved": "urn:visionflow:linked:cobit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compliance Audits]]",
+      "resolved": "urn:visionflow:linked:compliance-audits",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compliance Oversight]]",
+      "resolved": "urn:visionflow:linked:compliance-oversight",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI]]",
+      "resolved": "urn:visionflow:linked:etsi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR MEC 032]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI TR 104 077 series]]",
+      "resolved": "urn:visionflow:linked:etsi-tr-104-077-series",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance Enforcement]]",
+      "resolved": "urn:visionflow:linked:governance-enforcement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance Structures]]",
+      "resolved": "urn:visionflow:linked:governance-structures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 23257]]",
+      "resolved": "urn:visionflow:linked:iso-23257",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 38500]]",
+      "resolved": "urn:visionflow:linked:iso-iec-38500",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST Cybersecurity Framework]]",
+      "resolved": "urn:visionflow:linked:nist-cybersecurity-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Oversight Mechanisms]]",
+      "resolved": "urn:visionflow:linked:oversight-mechanisms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regulatory Requirements]]",
+      "resolved": "urn:visionflow:linked:regulatory-requirements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f9773e9e03dfbe317c740399917d2e42ad26323bd68bc12722a63a5456d04726@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ETSI domain categorisation encompassing governance and regulatory compliance mechanisms, addressing frameworks for regulatory adherence, compliance oversight, and governance enforcement within metaverse infrastructure. These [[Governance Structures]] integrate [[Regulatory Requirements]], [[Compliance Audits]], and [[Oversight Mechanisms]].

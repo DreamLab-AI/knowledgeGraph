@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:c344f4d9ccfec498006d4a58686bfd15ed7d0cb2e16da0977f351a6dec79ce6f",
+  "title": "Animation Standard",
+  "slug": "animation-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:animation-standard",
+  "domain": "spatial-computing",
+  "definition": "Animation Standard is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hanim-standard",
+      "label": "Hanim Standard"
+    }
+  ]
+}

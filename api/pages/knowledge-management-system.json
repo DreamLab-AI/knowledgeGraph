@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:09bef2106ac4fc3043b770e0accc7711abfd68f1839333bb5db095c3ab406657",
+  "title": "Knowledge Management System",
+  "slug": "knowledge-management-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-management-system",
+  "domain": "spatial-computing",
+  "definition": "Knowledge Management System is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "shared-knowledge-base",
+      "label": "Shared Knowledge Base"
+    }
+  ]
+}

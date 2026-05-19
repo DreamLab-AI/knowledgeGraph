@@ -1,0 +1,636 @@
+{
+  "id": "urn:visionflow:page:002fac67297e4dcaaba5e18a9a793b684c8eb6534dfa6033d4c420b0ff4e1a25",
+  "title": "Multi Sig Governance",
+  "slug": "multi-sig-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:multi-sig-governance",
+  "domain": "blockchain",
+  "definition": "**Multi-signature (multi-sig) governance** is a cryptographic threshold-signature scheme requiring m-of-n authorised keyholders to co-sign a transaction or message before it executes, eliminating single points of failure in digital-asset control and enabling graduated, committee-based decision-making across the full blockchain governance spectrum. The fundamental security claim is mathematical rather than policy-based: no fewer than m valid signatures can generate an accepted transaction, regardless of attacker sophistication, insider threat, or legal coercion applied to fewer than m keyholders simultaneously. This property distinguishes multi-sig from conventional access control systems, where determined insiders can often circumvent policy through administrative override or system compromise \u2014 cryptographic enforcement at the signature-verification layer is mathematically non-negotiable, running identically on thousands of independent network nodes without any single operator capable of making exceptions. The m-of-n model spans a complete family of cryptographic constructions: Bitcoin native Pay-to-Script-Hash (P2SH, BIP-16 2012) revealing the signer set at spend time; Pay-to-Tap",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:committee-governance",
+      "label": "Committee Governance"
+    },
+    {
+      "id": "urn:visionflow:linked:threshold-cryptography",
+      "label": "Threshold Cryptography"
+    },
+    {
+      "id": "urn:visionflow:owl:class:access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "id": "urn:visionflow:owl:class:hash-function",
+      "label": "Hash Function"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:guardian-set",
+        "label": "Guardian Set"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "id": "urn:visionflow:linked:mpc-key-share",
+        "label": "MPC Key Share"
+      },
+      {
+        "id": "urn:visionflow:linked:nonce-commitment",
+        "label": "Nonce Commitment"
+      },
+      {
+        "id": "urn:visionflow:linked:redeem-script",
+        "label": "Redeem Script"
+      },
+      {
+        "id": "urn:visionflow:linked:signer-ceremony",
+        "label": "Signer Ceremony"
+      },
+      {
+        "id": "urn:visionflow:linked:signer-quorum",
+        "label": "Signer Quorum"
+      },
+      {
+        "id": "urn:visionflow:linked:signing-key",
+        "label": "Signing Key"
+      },
+      {
+        "id": "urn:visionflow:linked:threshold-parameter",
+        "label": "Threshold Parameter"
+      },
+      {
+        "id": "urn:visionflow:linked:timelock-module",
+        "label": "Timelock Module"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-queue",
+        "label": "Transaction Queue"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:distributed-key-generation",
+        "label": "Distributed Key Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:visionflow:linked:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-key-storage",
+        "label": "Secure Key Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:signer-coordination-protocol",
+        "label": "Signer Coordination Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-etf-custody",
+        "label": "Bitcoin ETF Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-chain-bridge-security",
+        "label": "Cross-Chain Bridge Security"
+      },
+      {
+        "id": "urn:visionflow:linked:emergency-response-governance",
+        "label": "Emergency Response Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:layer-2-security-council",
+        "label": "Layer 2 Security Council"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-upgrade-control",
+        "label": "Protocol Upgrade Control"
+      },
+      {
+        "id": "urn:visionflow:linked:social-recovery",
+        "label": "Social Recovery"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bip-16",
+        "label": "BIP-16"
+      },
+      {
+        "id": "urn:visionflow:linked:cggmp21-protocol",
+        "label": "CGGMP21 Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:erc-4337-account-abstraction",
+        "label": "ERC-4337 Account Abstraction"
+      },
+      {
+        "id": "urn:visionflow:linked:frost-threshold-signatures",
+        "label": "FROST Threshold Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:gg20-protocol",
+        "label": "GG20 Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:mpc-wallet",
+        "label": "MPC Wallet"
+      },
+      {
+        "id": "urn:visionflow:linked:mu-sig2",
+        "label": "MuSig2"
+      },
+      {
+        "id": "urn:visionflow:linked:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "id": "urn:visionflow:linked:roast-protocol",
+        "label": "ROAST Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-smart-account",
+        "label": "Safe Smart Account"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "argent-account",
+      "label": "Argent Account"
+    },
+    {
+      "slug": "bip-11",
+      "label": "BIP-11"
+    },
+    {
+      "slug": "bip-16",
+      "label": "BIP-16"
+    },
+    {
+      "slug": "bip-327",
+      "label": "BIP-327"
+    },
+    {
+      "slug": "bip-340",
+      "label": "BIP-340"
+    },
+    {
+      "slug": "bip-341",
+      "label": "BIP-341"
+    },
+    {
+      "slug": "bip-373",
+      "label": "BIP-373"
+    },
+    {
+      "slug": "bit-go-wallet",
+      "label": "BitGo Wallet"
+    },
+    {
+      "slug": "bitcoin-etf-custody",
+      "label": "Bitcoin ETF Custody"
+    },
+    {
+      "slug": "bitcoin-script",
+      "label": "Bitcoin Script"
+    },
+    {
+      "slug": "cggmp21-protocol",
+      "label": "CGGMP21 Protocol"
+    },
+    {
+      "slug": "committee-governance",
+      "label": "Committee Governance"
+    },
+    {
+      "slug": "copper-mpc",
+      "label": "Copper MPC"
+    },
+    {
+      "slug": "cross-chain-bridge-security",
+      "label": "Cross-Chain Bridge Security"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "custody-layer",
+      "label": "CustodyLayer"
+    },
+    {
+      "slug": "de-fi-protocol-security",
+      "label": "DeFi Protocol Security"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "DigitalAssetDomain"
+    },
+    {
+      "slug": "distributed-key-generation",
+      "label": "Distributed Key Generation"
+    },
+    {
+      "slug": "ed-dsa",
+      "label": "EdDSA"
+    },
+    {
+      "slug": "eip-1271",
+      "label": "EIP-1271"
+    },
+    {
+      "slug": "eip-4337",
+      "label": "EIP-4337"
+    },
+    {
+      "slug": "eip-7702",
+      "label": "EIP-7702"
+    },
+    {
+      "slug": "elliptic-curve-discrete-logarithm-problem",
+      "label": "Elliptic Curve Discrete Logarithm Problem"
+    },
+    {
+      "slug": "emergency-response-governance",
+      "label": "Emergency Response Governance"
+    },
+    {
+      "slug": "erc-4337-account-abstraction",
+      "label": "ERC-4337 Account Abstraction"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "fireblocks-mpc",
+      "label": "Fireblocks MPC"
+    },
+    {
+      "slug": "frost-threshold-signatures",
+      "label": "FROST Threshold Signatures"
+    },
+    {
+      "slug": "gg20-protocol",
+      "label": "GG20 Protocol"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "guardian-set",
+      "label": "Guardian Set"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    },
+    {
+      "slug": "hardware-wallet",
+      "label": "Hardware Wallet"
+    },
+    {
+      "slug": "institutional-custody",
+      "label": "Institutional Custody"
+    },
+    {
+      "slug": "institutional-custody-domain",
+      "label": "InstitutionalCustodyDomain"
+    },
+    {
+      "slug": "institutional-digital-asset-custody",
+      "label": "Institutional Digital Asset Custody"
+    },
+    {
+      "slug": "institutional-infrastructure-layer",
+      "label": "InstitutionalInfrastructureLayer"
+    },
+    {
+      "slug": "layer-2-security-council",
+      "label": "Layer 2 Security Council"
+    },
+    {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
+      "slug": "mpc-key-share",
+      "label": "MPC Key Share"
+    },
+    {
+      "slug": "mpc-wallet",
+      "label": "MPC Wallet"
+    },
+    {
+      "slug": "mu-sig2",
+      "label": "MuSig2"
+    },
+    {
+      "slug": "nist-ir-8214-b",
+      "label": "NIST IR 8214B"
+    },
+    {
+      "slug": "nonce-commitment",
+      "label": "Nonce Commitment"
+    },
+    {
+      "slug": "paillier-cryptosystem",
+      "label": "Paillier Cryptosystem"
+    },
+    {
+      "slug": "pay-to-script-hash",
+      "label": "Pay-to-Script-Hash"
+    },
+    {
+      "slug": "protocol-upgrade-control",
+      "label": "Protocol Upgrade Control"
+    },
+    {
+      "slug": "redeem-script",
+      "label": "Redeem Script"
+    },
+    {
+      "slug": "regulatory-compliance-custody",
+      "label": "Regulatory Compliance Custody"
+    },
+    {
+      "slug": "rfc-9591",
+      "label": "RFC 9591"
+    },
+    {
+      "slug": "roast-protocol",
+      "label": "ROAST Protocol"
+    },
+    {
+      "slug": "safe-smart-account",
+      "label": "Safe Smart Account"
+    },
+    {
+      "slug": "safe-wallet",
+      "label": "Safe Wallet"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "secp256k1",
+      "label": "Secp256k1"
+    },
+    {
+      "slug": "secure-key-storage",
+      "label": "Secure Key Storage"
+    },
+    {
+      "slug": "signer-ceremony",
+      "label": "Signer Ceremony"
+    },
+    {
+      "slug": "signer-coordination-protocol",
+      "label": "Signer Coordination Protocol"
+    },
+    {
+      "slug": "signer-quorum",
+      "label": "Signer Quorum"
+    },
+    {
+      "slug": "signing-key",
+      "label": "Signing Key"
+    },
+    {
+      "slug": "single-key-wallet",
+      "label": "Single-Key Wallet"
+    },
+    {
+      "slug": "social-recovery",
+      "label": "Social Recovery"
+    },
+    {
+      "slug": "squads-protocol",
+      "label": "Squads Protocol"
+    },
+    {
+      "slug": "threshold-cryptography",
+      "label": "Threshold Cryptography"
+    },
+    {
+      "slug": "threshold-parameter",
+      "label": "Threshold Parameter"
+    },
+    {
+      "slug": "timelock-contract",
+      "label": "Timelock Contract"
+    },
+    {
+      "slug": "timelock-module",
+      "label": "Timelock Module"
+    },
+    {
+      "slug": "transaction-queue",
+      "label": "Transaction Queue"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
+    },
+    {
+      "slug": "wholesale-payment-system",
+      "label": "Wholesale Payment System"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On-Chain Voting"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "security-layer",
+      "label": "SecurityLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

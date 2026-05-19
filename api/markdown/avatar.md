@@ -1,0 +1,18 @@
+- ### Definition
+  - Digital representation of a person or agent used to interact within a virtual environment.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Avatar
+  - owl-role:: Agent
+  - owl-inferred:: spatial-computing:VirtualAgent
+  - belongs-to-domain:: [[InteractionDomain]]
+  - implemented-in-layer:: [[UserExperienceLayer]]
+- ### Relationships
+  - has-part:: [[Visual Mesh]], [[Animation Rig]]
+  - is-part-of:: [[Metaverse]]
+  - requires:: [[3D Rendering Engine]]
+  - enables:: [[User Embodiment]], [[Social Presence]]
+- ### Content
+  Avatar — content pending enrichment.
+- ### Provenance
+  - sources:: [[ACM + Web3D HAnim]]
+  - migration-date:: 2026-04-26T00:00:00Z

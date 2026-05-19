@@ -1,0 +1,704 @@
+{
+  "id": "urn:visionflow:page:7cb9ccff9d45892e0881a881dc746c0b0fa6121230c3076ba2f421a3480ddede",
+  "title": "Lightning and Similar L2",
+  "slug": "lightning-and-similar-l2",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lightning-and-similar-l2",
+  "domain": "blockchain",
+  "definition": "Lightning and Similar L2 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:layer2",
+      "label": "Layer2"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
+      "slug": "adam-back",
+      "label": "Adam Back"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "ai-driven-routing-optimization",
+      "label": "AI-Driven Routing Optimization"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "antonopoulos2021mastering",
+      "label": "antonopoulos2021mastering"
+    },
+    {
+      "slug": "ark",
+      "label": "Ark"
+    },
+    {
+      "slug": "ark2023spec",
+      "label": "ark2023spec"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "basis-of-lightning-technology",
+      "label": "Basis of Lightning Technology"
+    },
+    {
+      "slug": "bitcoin-bonds",
+      "label": "Bitcoin Bonds"
+    },
+    {
+      "slug": "bitcoin-domain",
+      "label": "Bitcoin Domain"
+    },
+    {
+      "slug": "bitcoin-wallet",
+      "label": "Bitcoin Wallet"
+    },
+    {
+      "slug": "bitcoinai2025",
+      "label": "bitcoinai2025"
+    },
+    {
+      "slug": "bitcoinvisuals2025",
+      "label": "bitcoinvisuals2025"
+    },
+    {
+      "slug": "blind-signatures",
+      "label": "Blind Signatures"
+    },
+    {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
+      "slug": "blockstream2023liquid",
+      "label": "blockstream2023liquid"
+    },
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "bolt11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "bolt12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
+      "slug": "btc",
+      "label": "BTC"
+    },
+    {
+      "slug": "cash-app",
+      "label": "Cash App"
+    },
+    {
+      "slug": "cashu2024spec",
+      "label": "cashu2024spec"
+    },
+    {
+      "slug": "chaum1985security",
+      "label": "chaum1985security"
+    },
+    {
+      "slug": "chaumian-e-cash",
+      "label": "Chaumian e-cash"
+    },
+    {
+      "slug": "confidential-transactions",
+      "label": "Confidential Transactions"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "core-lightning",
+      "label": "Core Lightning"
+    },
+    {
+      "slug": "cryptographic",
+      "label": "Cryptographic"
+    },
+    {
+      "slug": "daric",
+      "label": "Daric"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
+    },
+    {
+      "slug": "divakaruni2022lightning",
+      "label": "divakaruni2022lightning"
+    },
+    {
+      "slug": "double-spend",
+      "label": "Double-Spend"
+    },
+    {
+      "slug": "double-spend",
+      "label": "Double-Spend"
+    },
+    {
+      "slug": "e-cash",
+      "label": "E-cash"
+    },
+    {
+      "slug": "eclair",
+      "label": "Eclair"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "elsalvador2024bonds",
+      "label": "elsalvador2024bonds"
+    },
+    {
+      "slug": "federation",
+      "label": "Federation"
+    },
+    {
+      "slug": "fedimint",
+      "label": "Fedimint"
+    },
+    {
+      "slug": "green-wallet",
+      "label": "Green Wallet"
+    },
+    {
+      "slug": "greenlight",
+      "label": "Greenlight"
+    },
+    {
+      "slug": "hash-time-locked-contract",
+      "label": "Hash Time Locked Contract"
+    },
+    {
+      "slug": "hashcash",
+      "label": "Hashcash"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "http-402",
+      "label": "HTTP 402"
+    },
+    {
+      "slug": "http-402-payment-required",
+      "label": "HTTP 402 Payment Required"
+    },
+    {
+      "slug": "inbound-liquidity",
+      "label": "Inbound Liquidity"
+    },
+    {
+      "slug": "invoice",
+      "label": "Invoice"
+    },
+    {
+      "slug": "invoice",
+      "label": "Invoice"
+    },
+    {
+      "slug": "joseph-poon",
+      "label": "Joseph Poon"
+    },
+    {
+      "slug": "l402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "l402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer 2"
+    },
+    {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
+      "slug": "lightning-node",
+      "label": "Lightning Node"
+    },
+    {
+      "slug": "lightning-node",
+      "label": "Lightning Node"
+    },
+    {
+      "slug": "lightning-node",
+      "label": "Lightning Node"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "llm",
+      "label": "LLM"
+    },
+    {
+      "slug": "lnbits",
+      "label": "LNBits"
+    },
+    {
+      "slug": "lnd",
+      "label": "LND"
+    },
+    {
+      "slug": "macaroon",
+      "label": "Macaroon"
+    },
+    {
+      "slug": "macaroon",
+      "label": "Macaroon"
+    },
+    {
+      "slug": "mirzaei2022daric",
+      "label": "mirzaei2022daric"
+    },
+    {
+      "slug": "multi-signature",
+      "label": "Multi-signature"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "nwosu2022fedimint",
+      "label": "nwosu2022fedimint"
+    },
+    {
+      "slug": "obi-nwosu",
+      "label": "Obi Nwosu"
+    },
+    {
+      "slug": "off-chain",
+      "label": "Off-chain"
+    },
+    {
+      "slug": "on-chain",
+      "label": "On-chain"
+    },
+    {
+      "slug": "onion-routing",
+      "label": "Onion Routing"
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source"
+    },
+    {
+      "slug": "osuntokun2020l402",
+      "label": "osuntokun2020l402"
+    },
+    {
+      "slug": "pay-per-use",
+      "label": "Pay-per-use"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
+      "slug": "payment-protocols",
+      "label": "Payment Protocols"
+    },
+    {
+      "slug": "peer-to-peer",
+      "label": "Peer-to-Peer"
+    },
+    {
+      "slug": "peer-to-peer",
+      "label": "Peer-to-Peer"
+    },
+    {
+      "slug": "peg-out",
+      "label": "Peg-out"
+    },
+    {
+      "slug": "peter-todd",
+      "label": "Peter Todd"
+    },
+    {
+      "slug": "pickhardt2021optimized",
+      "label": "pickhardt2021optimized"
+    },
+    {
+      "slug": "poon2016bitcoin",
+      "label": "poon2016bitcoin"
+    },
+    {
+      "slug": "pubky",
+      "label": "Pubky"
+    },
+    {
+      "slug": "qr-code",
+      "label": "QR Code"
+    },
+    {
+      "slug": "qr-code",
+      "label": "QR Code"
+    },
+    {
+      "slug": "recurring-payments",
+      "label": "Recurring Payments"
+    },
+    {
+      "slug": "recurring-payments",
+      "label": "Recurring Payments"
+    },
+    {
+      "slug": "rohrer2019discharged",
+      "label": "rohrer2019discharged"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "routing",
+      "label": "Routing"
+    },
+    {
+      "slug": "satoshi",
+      "label": "Satoshi"
+    },
+    {
+      "slug": "scaling-solutions",
+      "label": "Scaling Solutions"
+    },
+    {
+      "slug": "scaling-solutions",
+      "label": "Scaling Solutions"
+    },
+    {
+      "slug": "security-tokens",
+      "label": "Security Tokens"
+    },
+    {
+      "slug": "seed-phrase",
+      "label": "Seed Phrase"
+    },
+    {
+      "slug": "soft-fork",
+      "label": "Soft Fork"
+    },
+    {
+      "slug": "spotify",
+      "label": "Spotify"
+    },
+    {
+      "slug": "streaming-payments",
+      "label": "Streaming Payments"
+    },
+    {
+      "slug": "streaming-payments",
+      "label": "Streaming Payments"
+    },
+    {
+      "slug": "streaming-payments",
+      "label": "Streaming Payments"
+    },
+    {
+      "slug": "streaming-payments",
+      "label": "Streaming Payments"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
+    },
+    {
+      "slug": "strike2023global",
+      "label": "strike2023global"
+    },
+    {
+      "slug": "telegram",
+      "label": "Telegram"
+    },
+    {
+      "slug": "thaddeus-dryja",
+      "label": "Thaddeus Dryja"
+    },
+    {
+      "slug": "transactions-per-second",
+      "label": "Transactions Per Second"
+    },
+    {
+      "slug": "two-way-peg",
+      "label": "Two-way Peg"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "validity-rollups",
+      "label": "Validity Rollups"
+    },
+    {
+      "slug": "visa",
+      "label": "VISA"
+    },
+    {
+      "slug": "watchtower",
+      "label": "Watchtower"
+    },
+    {
+      "slug": "x402-protocol",
+      "label": "X402 Protocol"
+    },
+    {
+      "slug": "x402-protocol",
+      "label": "X402 Protocol"
+    },
+    {
+      "slug": "x402spec2024",
+      "label": "x402spec2024"
+    },
+    {
+      "slug": "zabka2022short",
+      "label": "zabka2022short"
+    },
+    {
+      "slug": "zaps",
+      "label": "Zaps"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cypherpunk",
+      "label": "Cypherpunk"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double-Spending"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-depth",
+      "label": "Model Depth"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ]
+}

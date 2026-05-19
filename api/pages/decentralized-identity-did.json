@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:64812304a0cb52ad329a73633d0b791a1254bf509de49b6432e4dfba4f29f3a2",
+  "title": "Decentralized Identity (DID)",
+  "slug": "decentralized-identity-did",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:decentralized-identity-did",
+  "domain": "infrastructure",
+  "definition": "A W3C standard for self-sovereign digital identities that are globally unique, cryptographically verifiable, and controlled by the identity subject without requiring centralized authorities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:visionflow:linked:did-method",
+        "label": "DID Method"
+      },
+      {
+        "id": "urn:visionflow:linked:did-resolver",
+        "label": "DID Resolver"
+      },
+      {
+        "id": "urn:visionflow:linked:did-uri",
+        "label": "DID URI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-domain-identity",
+        "label": "Cross-Domain Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralized-authentication",
+        "label": "Decentralized Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-credential-vc",
+        "label": "Verifiable Credential (VC)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "cross-domain-identity",
+      "label": "Cross-Domain Identity"
+    },
+    {
+      "slug": "decentralized-authentication",
+      "label": "Decentralized Authentication"
+    },
+    {
+      "slug": "did-document",
+      "label": "DID Document"
+    },
+    {
+      "slug": "did-method",
+      "label": "DID Method"
+    },
+    {
+      "slug": "did-resolver",
+      "label": "DID Resolver"
+    },
+    {
+      "slug": "did-uri",
+      "label": "DID URI"
+    },
+    {
+      "slug": "json-ld",
+      "label": "JSON-LD"
+    },
+    {
+      "slug": "privacy-preserving-identity",
+      "label": "Privacy-Preserving Identity"
+    },
+    {
+      "slug": "self-sovereign-identity-ssi",
+      "label": "Self-Sovereign Identity (SSI)"
+    },
+    {
+      "slug": "w3-c-did-core-specification",
+      "label": "W3C DID Core Specification"
+    },
+    {
+      "slug": "w3-c-did-specification",
+      "label": "W3C DID Specification"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "verifiable-credential-vc",
+      "label": "Verifiable Credential (VC)"
+    },
+    {
+      "slug": "verifiable-data-registry",
+      "label": "Verifiable Data Registry"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "verifiable-credential-vc",
+      "label": "Verifiable Credential (VC)"
+    }
+  ]
+}

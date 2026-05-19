@@ -1,0 +1,182 @@
+{
+  "id": "urn:visionflow:page:d71e1e9d1ad5717e9ccb13095096de6e2721e591badb8a9db23e911454699387",
+  "title": "Differential Kinematics",
+  "slug": "differential-kinematics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:differential-kinematics",
+  "domain": "robotics",
+  "definition": "Differential kinematics maps velocities between [[Robot Joint]] space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators. The Jacobian provides the linear relationship between joint angular velocities and end-effector Cartesian velocities, forming the foundation for [[VelocityControl]], [[Singularity Analysis]], and [[Numerical Inverse Kinematics]] algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:motion-mathematics",
+      "label": "Motion Mathematics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot-kinematics",
+      "label": "Robot Kinematics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "id": "urn:visionflow:linked:singularity-condition",
+        "label": "Singularity Condition"
+      },
+      {
+        "id": "urn:visionflow:linked:velocity-transformation",
+        "label": "Velocity Transformation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:joint-configuration",
+        "label": "Joint Configuration"
+      },
+      {
+        "id": "urn:visionflow:linked:position-kinematics",
+        "label": "Position Kinematics"
+      },
+      {
+        "id": "urn:visionflow:linked:velocity-inputs",
+        "label": "Velocity Inputs"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:end-effector-velocity-control",
+        "label": "End-Effector Velocity Control"
+      },
+      {
+        "id": "urn:visionflow:linked:force-torque-transformation",
+        "label": "Force/Torque Transformation"
+      },
+      {
+        "id": "urn:visionflow:linked:singularity-detection",
+        "label": "Singularity Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "end-effector-velocity-control",
+      "label": "End-Effector Velocity Control"
+    },
+    {
+      "slug": "force-torque-transformation",
+      "label": "Force/Torque Transformation"
+    },
+    {
+      "slug": "geometric-relationships",
+      "label": "Geometric Relationships"
+    },
+    {
+      "slug": "jacobian-matrix",
+      "label": "Jacobian Matrix"
+    },
+    {
+      "slug": "joint-configuration",
+      "label": "Joint Configuration"
+    },
+    {
+      "slug": "learning-based-control",
+      "label": "Learning-Based Control"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "motion-mathematics",
+      "label": "Motion Mathematics"
+    },
+    {
+      "slug": "numerical-inverse-kinematics",
+      "label": "Numerical Inverse Kinematics"
+    },
+    {
+      "slug": "pid",
+      "label": "PID"
+    },
+    {
+      "slug": "position-kinematics",
+      "label": "Position Kinematics"
+    },
+    {
+      "slug": "singularity-analysis",
+      "label": "Singularity Analysis"
+    },
+    {
+      "slug": "singularity-avoidance",
+      "label": "Singularity Avoidance"
+    },
+    {
+      "slug": "singularity-condition",
+      "label": "Singularity Condition"
+    },
+    {
+      "slug": "singularity-detection",
+      "label": "Singularity Detection"
+    },
+    {
+      "slug": "velocity-inputs",
+      "label": "Velocity Inputs"
+    },
+    {
+      "slug": "velocity-transformation",
+      "label": "Velocity Transformation"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "forward-kinematics",
+      "label": "Forward Kinematics"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "robot-joint",
+      "label": "Robot Joint"
+    },
+    {
+      "slug": "robot-kinematics",
+      "label": "Robot Kinematics"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ],
+  "backlinks": []
+}

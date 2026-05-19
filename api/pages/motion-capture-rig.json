@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:47dbde0456cd70a28e2232664894745feae87f08f153f8560bbab0a67192c9e3",
+  "title": "Motion Capture Rig",
+  "slug": "motion-capture-rig",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:motion-capture-rig",
+  "domain": "spatial-computing",
+  "definition": "Physical hardware or software system capturing human motion for animation or simulation through cameras, markers, sensors, and tracking infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-processing-unit",
+        "label": "Data Processing Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:imu-sensors",
+        "label": "IMU Sensors"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-cameras",
+        "label": "Optical Cameras"
+      },
+      {
+        "id": "urn:visionflow:linked:tracking-volume",
+        "label": "Tracking Volume"
+      },
+      {
+        "id": "urn:visionflow:owl:class:calibration-target",
+        "label": "Calibration Target"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-markers",
+        "label": "Motion Markers"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:high-speed-networking",
+        "label": "High-Speed Networking"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronized-timing",
+        "label": "Synchronized Timing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-solver-software",
+        "label": "Motion Solver Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:biomechanical-analysis",
+        "label": "Biomechanical Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-capture",
+        "label": "Performance Capture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "biomechanical-analysis",
+      "label": "Biomechanical Analysis"
+    },
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "data-fusion",
+      "label": "Data Fusion"
+    },
+    {
+      "slug": "data-processing-unit",
+      "label": "Data Processing Unit"
+    },
+    {
+      "slug": "high-speed-networking",
+      "label": "High-Speed Networking"
+    },
+    {
+      "slug": "imu-sensors",
+      "label": "IMU Sensors"
+    },
+    {
+      "slug": "iso-iec-17820",
+      "label": "ISO/IEC 17820"
+    },
+    {
+      "slug": "optical-cameras",
+      "label": "Optical Cameras"
+    },
+    {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "skeletal-tracking",
+      "label": "Skeletal Tracking"
+    },
+    {
+      "slug": "synchronized-timing",
+      "label": "Synchronized Timing"
+    },
+    {
+      "slug": "tracking-volume",
+      "label": "Tracking Volume"
+    },
+    {
+      "slug": "animation-retargeting",
+      "label": "Animation Retargeting"
+    },
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "motion-markers",
+      "label": "Motion Markers"
+    },
+    {
+      "slug": "motion-solver-software",
+      "label": "Motion Solver Software"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

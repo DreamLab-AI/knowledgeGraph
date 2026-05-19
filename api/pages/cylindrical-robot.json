@@ -1,0 +1,174 @@
+{
+  "id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa",
+  "title": "Cylindrical Robot",
+  "slug": "cylindrical-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cylindrical-robot",
+  "domain": "robotics",
+  "definition": "Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes. This architecture, simpler and more affordable than six-axis articulated robots, has historically dominated [[Assembly Automation]] and [[Material Handling]] applications where reach and vertical lift are primary requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:coordinate-robots",
+      "label": "Coordinate Robots"
+    },
+    {
+      "id": "urn:visionflow:linked:fixed-base-manipulator",
+      "label": "Fixed-Base Manipulator"
+    },
+    {
+      "id": "urn:visionflow:owl:class:industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:azimuth-drive",
+        "label": "Azimuth Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:end-effector-mount",
+        "label": "End-Effector Mount"
+      },
+      {
+        "id": "urn:visionflow:linked:radial-actuator",
+        "label": "Radial Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:vertical-actuator",
+        "label": "Vertical Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:base-support",
+        "label": "Base Support"
+      },
+      {
+        "id": "urn:visionflow:linked:prismatic-actuators",
+        "label": "Prismatic Actuators"
+      },
+      {
+        "id": "urn:visionflow:linked:rotary-joint",
+        "label": "Rotary Joint"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:component-assembly",
+        "label": "Component Assembly"
+      },
+      {
+        "id": "urn:visionflow:linked:depalletising",
+        "label": "Depalletising"
+      },
+      {
+        "id": "urn:visionflow:linked:palletising",
+        "label": "Palletising"
+      },
+      {
+        "id": "urn:visionflow:linked:pick-and-place",
+        "label": "Pick and Place"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "articulated-robots",
+      "label": "Articulated Robots"
+    },
+    {
+      "slug": "assembly-automation",
+      "label": "Assembly Automation"
+    },
+    {
+      "slug": "azimuth-drive",
+      "label": "Azimuth Drive"
+    },
+    {
+      "slug": "base-support",
+      "label": "Base Support"
+    },
+    {
+      "slug": "component-assembly",
+      "label": "Component Assembly"
+    },
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "coordinate-robots",
+      "label": "Coordinate Robots"
+    },
+    {
+      "slug": "depalletising",
+      "label": "Depalletising"
+    },
+    {
+      "slug": "end-effector-mount",
+      "label": "End-Effector Mount"
+    },
+    {
+      "slug": "fixed-base-manipulator",
+      "label": "Fixed-Base Manipulator"
+    },
+    {
+      "slug": "material-handling",
+      "label": "Material Handling"
+    },
+    {
+      "slug": "palletising",
+      "label": "Palletising"
+    },
+    {
+      "slug": "pick-and-place",
+      "label": "Pick and Place"
+    },
+    {
+      "slug": "prismatic-actuators",
+      "label": "Prismatic Actuators"
+    },
+    {
+      "slug": "radial-actuator",
+      "label": "Radial Actuator"
+    },
+    {
+      "slug": "rotary-joint",
+      "label": "Rotary Joint"
+    },
+    {
+      "slug": "vertical-actuator",
+      "label": "Vertical Actuator"
+    },
+    {
+      "slug": "wrist",
+      "label": "Wrist"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": []
+}

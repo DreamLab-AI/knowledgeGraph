@@ -1,0 +1,979 @@
+{
+  "id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb",
+  "title": "Artificial Intelligence",
+  "slug": "artificial-intelligence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:artificial-intelligence",
+  "domain": "artificial-intelligence",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "computational-infrastructure",
+      "label": "Computational Infrastructure"
+    },
+    {
+      "slug": "decision-support",
+      "label": "Decision Support"
+    },
+    {
+      "slug": "design-thinking",
+      "label": "design thinking"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "intelligent-automation",
+      "label": "Intelligent Automation"
+    },
+    {
+      "slug": "iso-iec-22989-2022",
+      "label": "ISO/IEC 22989:2022"
+    },
+    {
+      "slug": "iso-iec-23053-2022",
+      "label": "ISO/IEC 23053:2022"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "mark-zuckerberg",
+      "label": "Mark Zuckerberg"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "oecd",
+      "label": "oecd"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    },
+    {
+      "slug": "user-experience",
+      "label": "user experience"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "artificial intelligence"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "comparison-of-gpt4-and-gemini-ultra",
+      "label": "Comparison of GPT4 and Gemini Ultra"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "computer vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "deep learning"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "label": "Leopold Aschenbrenner"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "machine learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "predictive-analytics",
+      "label": "Predictive Analytics"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-avatars",
+      "label": "AI Avatars"
+    },
+    {
+      "slug": "ai-concept",
+      "label": "AI Concept"
+    },
+    {
+      "slug": "ai-fairness",
+      "label": "AI Fairness"
+    },
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-security",
+      "label": "AI Security"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "ai-augmented-software-engineering",
+      "label": "AI-Augmented Software Engineering"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "aiapplications",
+      "label": "AIApplications"
+    },
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "aiops",
+      "label": "AIOps"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-machine-learning",
+      "label": "Ai Machine Learning"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "attack-vector",
+      "label": "Attack Vector"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
+      "slug": "automated-summarization",
+      "label": "Automated Summarization"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "bdi-model",
+      "label": "BDI Model"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "behavior-analysis",
+      "label": "Behavior Analysis"
+    },
+    {
+      "slug": "behavioral-analytics",
+      "label": "Behavioral Analytics"
+    },
+    {
+      "slug": "behavioral-modeling",
+      "label": "Behavioral Modeling"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "calculating-empires",
+      "label": "Calculating Empires"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "Computation And Intelligence Domain"
+    },
+    {
+      "slug": "computational-component",
+      "label": "Computational Component"
+    },
+    {
+      "slug": "computer-vision-task",
+      "label": "Computer Vision Task"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "conditional-random-field",
+      "label": "Conditional Random Field"
+    },
+    {
+      "slug": "constitutional-principle",
+      "label": "Constitutional Principle"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
+      "slug": "context-aware-response",
+      "label": "Context Aware Response"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
+      "slug": "data-lake",
+      "label": "Data Lake"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "documentation-generation",
+      "label": "Documentation Generation"
+    },
+    {
+      "slug": "etl-pipeline",
+      "label": "ETL Pipeline"
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "emotional-intelligence",
+      "label": "Emotional Intelligence"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "explanation",
+      "label": "Explanation"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "fuzzy-logic",
+      "label": "Fuzzy Logic"
+    },
+    {
+      "slug": "gartner-prediction",
+      "label": "Gartner Prediction"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "goal",
+      "label": "Goal"
+    },
+    {
+      "slug": "human-preference",
+      "label": "Human Preference"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "humaninthe-loop-learning",
+      "label": "Humaninthe Loop Learning"
+    },
+    {
+      "slug": "identification-system",
+      "label": "Identification System"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "key-vector",
+      "label": "Key Vector"
+    },
+    {
+      "slug": "knowledge-graph-construction",
+      "label": "Knowledge Graph Construction"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "label": "leopold-aschenbrenner"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "machine-learning-technique",
+      "label": "Machine Learning Technique"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "meeting-transcription",
+      "label": "Meeting Transcription"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "model-parameters",
+      "label": "Model Parameters"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "model-property",
+      "label": "Model Property"
+    },
+    {
+      "slug": "model",
+      "label": "Model"
+    },
+    {
+      "slug": "model-ops",
+      "label": "ModelOps"
+    },
+    {
+      "slug": "module",
+      "label": "Module"
+    },
+    {
+      "slug": "multimodal-understanding",
+      "label": "Multimodal Understanding"
+    },
+    {
+      "slug": "nlptask",
+      "label": "NLPTask"
+    },
+    {
+      "slug": "npu",
+      "label": "NPU"
+    },
+    {
+      "slug": "named-entity",
+      "label": "Named Entity"
+    },
+    {
+      "slug": "neural-network-architecture",
+      "label": "Neural Network Architecture"
+    },
+    {
+      "slug": "neural-network-component",
+      "label": "Neural Network Component"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "neuromorphic-chip",
+      "label": "Neuromorphic Chip"
+    },
+    {
+      "slug": "objective",
+      "label": "Objective"
+    },
+    {
+      "slug": "open-ai",
+      "label": "Open AI"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "parameter",
+      "label": "Parameter"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "pathfinding-algorithm",
+      "label": "Pathfinding Algorithm"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "policy-update-magnitude",
+      "label": "Policy Update Magnitude"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "predictive-personalization",
+      "label": "Predictive Personalization"
+    },
+    {
+      "slug": "pretrained-model",
+      "label": "Pretrained Model"
+    },
+    {
+      "slug": "pretrained-weights",
+      "label": "Pretrained Weights"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "property",
+      "label": "Property"
+    },
+    {
+      "slug": "query-vector",
+      "label": "Query Vector"
+    },
+    {
+      "slug": "research-summary",
+      "label": "RESEARCH_SUMMARY"
+    },
+    {
+      "slug": "rapid-ai-deployment",
+      "label": "Rapid AI Deployment"
+    },
+    {
+      "slug": "real-time-language-translation",
+      "label": "Real-Time Language Translation"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "risk",
+      "label": "Risk"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "runtime-inspection",
+      "label": "Runtime Inspection"
+    },
+    {
+      "slug": "safety-measure",
+      "label": "Safety Measure"
+    },
+    {
+      "slug": "safety-vulnerability",
+      "label": "Safety Vulnerability"
+    },
+    {
+      "slug": "search-algorithms",
+      "label": "Search Algorithms"
+    },
+    {
+      "slug": "self-improvement",
+      "label": "Self Improvement"
+    },
+    {
+      "slug": "social-contract",
+      "label": "Social Contract"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "soft-prompt-embedding",
+      "label": "Soft Prompt Embedding"
+    },
+    {
+      "slug": "spatial-ai",
+      "label": "Spatial AI"
+    },
+    {
+      "slug": "state-change",
+      "label": "State Change"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "symbolic-reasoning",
+      "label": "Symbolic Reasoning"
+    },
+    {
+      "slug": "system",
+      "label": "System"
+    },
+    {
+      "slug": "tpu",
+      "label": "TPU"
+    },
+    {
+      "slug": "task-adaptation",
+      "label": "Task Adaptation"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "technique",
+      "label": "Technique"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-to-3-d",
+      "label": "Text-to-3D"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "third-party-vulnerability",
+      "label": "Third-Party Vulnerability"
+    },
+    {
+      "slug": "toxicity-detection",
+      "label": "Toxicity Detection"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-instability",
+      "label": "Training Instability"
+    },
+    {
+      "slug": "training-method",
+      "label": "Training Method"
+    },
+    {
+      "slug": "training-methods",
+      "label": "Training Methods"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "value-vector",
+      "label": "Value Vector"
+    },
+    {
+      "slug": "value",
+      "label": "Value"
+    },
+    {
+      "slug": "workforce-augmentation",
+      "label": "Workforce Augmentation"
+    },
+    {
+      "slug": "artificial-superintelligence",
+      "label": "artificial superintelligence"
+    }
+  ]
+}

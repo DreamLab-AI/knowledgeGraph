@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:ffa8dd97782644ea48bb53741853976a6f6a470c45cd4f40e00804e586fde101",
+  "title": "ETSI_Domain_Interoperability",
+  "slug": "etsi-domain-interoperability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-interoperability",
+  "domain": "infrastructure",
+  "definition": "ETSI domain interoperability standards enabling different systems and organisations to work together effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols. Interoperability frameworks implement [[NGSI-LD]] and [[SAREF]] (Smart Applications Reference Ontology) enabling connected infrastructures to exchange and interpret data across platforms, with infrastructure quality metrics assessing trustworthiness through completeness, accuracy, bias, integrity, and reliability\u2014particularly critical in AI-driven contexts. Regulatory alignment through EU Data Act Article 35 mandates interoperable specifications and centralised standards repositories, whilst accessibility standards (ETSI ES 204 009) ensure inclusive communication combining voice, real-time text, and sign language video compliance with European Accessibility Act requirements across diverse platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ngsi-ld",
+      "label": "NGSI-LD"
+    },
+    {
+      "slug": "saref",
+      "label": "SAREF"
+    },
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "api-standard",
+      "label": "API Standard"
+    },
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    },
+    {
+      "slug": "web-xr-api",
+      "label": "WebXR API"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    }
+  ]
+}

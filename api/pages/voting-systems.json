@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:a9234967b7807ea1053986b8f45c2c27a17b5b66e9d6e864fc85c3a109fbf1a1",
+  "title": "Voting Systems",
+  "slug": "voting-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:voting-systems",
+  "domain": "blockchain",
+  "definition": "Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus of \"nearly universal\" agreement that no technology can adequately secure online public elections, and real-world implementations spanning Voatz (80,000+ votes across 50+ elections), Estonia (50%+ votes cast online), and Moscow (65,000 voters) demonstrating both potential cost reductions from $7-25 to under $0.50 per vote and significant security concerns.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-governance",
+      "label": "Blockchain Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.82,
+  "maturity": "draft",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0142-smart-contract",
+      "label": "BC-0142-smart-contract"
+    },
+    {
+      "slug": "bc-0456-self-sovereign-identity",
+      "label": "BC-0456-self-sovereign-identity"
+    },
+    {
+      "slug": "bc-0457-decentralized-identifiers",
+      "label": "BC-0457-decentralized-identifiers"
+    },
+    {
+      "slug": "bc-0458-verifiable-credentials",
+      "label": "BC-0458-verifiable-credentials"
+    },
+    {
+      "slug": "bc-0462-on-chain-voting",
+      "label": "BC-0462-on-chain-voting"
+    },
+    {
+      "slug": "bc-0463-governance-token",
+      "label": "BC-0463-governance-token"
+    },
+    {
+      "slug": "bc-0470-dao-legal-structures",
+      "label": "BC-0470-dao-legal-structures"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "democratic-participation",
+      "label": "Democratic Participation"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

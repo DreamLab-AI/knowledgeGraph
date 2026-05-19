@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:eece5ec84af5ed25aec0f96874f198aeedb5a9d5900f3f835018d3c872e0d77a",
+  "title": "Digital Signature Verification",
+  "slug": "digital-signature-verification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-signature-verification",
+  "domain": "spatial-computing",
+  "definition": "The cryptographic process of validating the authenticity and integrity of digitally signed data by applying the signer's public key to confirm that the signature was created by the corresponding private key and that the signed content has not been modified. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-verification",
+      "label": "Cryptographic Verification"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:hash-algorithm",
+        "label": "Hash Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:signature-algorithm",
+        "label": "Signature Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:document-integrity",
+        "label": "Document Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-authentication",
+        "label": "Transaction Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "document-integrity",
+      "label": "Document Integrity"
+    },
+    {
+      "slug": "hash-algorithm",
+      "label": "Hash Algorithm"
+    },
+    {
+      "slug": "signature-algorithm",
+      "label": "Signature Algorithm"
+    },
+    {
+      "slug": "transaction-authentication",
+      "label": "Transaction Authentication"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptographic-verification",
+      "label": "Cryptographic Verification"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "public-key",
+      "label": "Public Key"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

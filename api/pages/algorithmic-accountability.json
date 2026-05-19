@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:6d6f62a9aa2c1180e26ab2916c6bf86ec69d065a01d4e27c379a07a1e81b138f",
+  "title": "Algorithmic Accountability",
+  "slug": "algorithmic-accountability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:algorithmic-accountability",
+  "domain": "artificial-intelligence",
+  "definition": "Algorithmic Accountability is a responsibility framework that ensures AI systems and their developers are answerable for the decisions, outcomes, and impacts produced by algorithmic processes, including mechanisms for redress, transparency, and oversight.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:aigovernance-principle",
+      "label": "AIGovernancePrinciple"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ethical-framework",
+      "label": "EthicalFramework"
+    },
+    {
+      "id": "urn:visionflow:owl:class:regulatory-compliance",
+      "label": "RegulatoryCompliance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aigovernance-principle",
+      "label": "AIGovernancePrinciple"
+    },
+    {
+      "slug": "ieee-p2863",
+      "label": "IEEE P2863"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "EthicalFramework"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "RegulatoryCompliance"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

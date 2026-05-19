@@ -1,0 +1,368 @@
+{
+  "id": "urn:visionflow:page:b1662b457e205a89f317f241aead01ad308fe8dc3e234b33c3511837a2da1138",
+  "title": "Jailbreaking",
+  "slug": "jailbreaking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:jailbreaking",
+  "domain": "artificial-intelligence",
+  "definition": "Jailbreaking of large language models (LLMs) is the practice of crafting inputs\u2014prompts, instruction sequences, encoded payloads, or multi-turn conversational strategies\u2014that cause a model to produce outputs that circumvent its safety training, content policies, or alignment objectives. Unlike classical software exploitation (which targets memory corruption or privilege escalation), LLM jailbreaking exploits the generative and instruction-following nature of transformer-based models: the same capacity for flexible, context-sensitive language production that makes LLMs useful also creates a vast, high-dimensional input space that safety training cannot exhaustively cover. The adversarial surface encompasses single-turn prompt injection, persona adoption (e.g. \"Do Anything Now\" / DAN), low-resource language transfer, multi-turn incremental manipulation (Crescendo), ASCII art obfuscation, many-shot in-context learning, best-of-n sampling pressure, and compound attacks combining multiple vectors. Defences range from input/output classifiers (Llama Guard 3, Guardrails AI), Constitutional AI and reinforcement learning from human feedback (RLHF) alignment procedures, Constitutional Classi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "id": "urn:visionflow:owl:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ascii-art-attack",
+        "label": "ASCII Art Attack"
+      },
+      {
+        "id": "urn:visionflow:linked:best-of-n-jailbreaking",
+        "label": "Best-of-N Jailbreaking"
+      },
+      {
+        "id": "urn:visionflow:linked:crescendo-attack",
+        "label": "Crescendo Attack"
+      },
+      {
+        "id": "urn:visionflow:linked:low-resource-language-attack",
+        "label": "Low-Resource Language Attack"
+      },
+      {
+        "id": "urn:visionflow:linked:many-shot-jailbreaking",
+        "label": "Many-Shot Jailbreaking"
+      },
+      {
+        "id": "urn:visionflow:linked:persona-attack",
+        "label": "Persona Attack"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:skeleton-key-attack",
+        "label": "Skeleton Key Attack"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:safety-training",
+        "label": "Safety Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adversarial-evaluation",
+        "label": "Adversarial Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:harmful-content-generation",
+        "label": "Harmful Content Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-circumvention",
+        "label": "Policy Circumvention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:constitutional-classifiers",
+        "label": "Constitutional Classifiers"
+      },
+      {
+        "id": "urn:visionflow:linked:guardrails-ai",
+        "label": "Guardrails AI"
+      },
+      {
+        "id": "urn:visionflow:linked:llama-guard",
+        "label": "Llama Guard"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adversarial-evaluation",
+      "label": "Adversarial Evaluation"
+    },
+    {
+      "slug": "adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "slug": "adversarial-mldomain",
+      "label": "AdversarialMLDomain"
+    },
+    {
+      "slug": "ai-red-teaming",
+      "label": "AI Red Teaming"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
+      "slug": "aisi",
+      "label": "AISI"
+    },
+    {
+      "slug": "ascii-art-attack",
+      "label": "ASCII Art Attack"
+    },
+    {
+      "slug": "attack-layer",
+      "label": "AttackLayer"
+    },
+    {
+      "slug": "best-of-n-jailbreaking",
+      "label": "Best-of-N Jailbreaking"
+    },
+    {
+      "slug": "chain-of-thought-reasoning",
+      "label": "Chain-of-Thought Reasoning"
+    },
+    {
+      "slug": "classifier-models",
+      "label": "Classifier Models"
+    },
+    {
+      "slug": "constitutional-classifiers",
+      "label": "Constitutional Classifiers"
+    },
+    {
+      "slug": "crescendo-attack",
+      "label": "Crescendo Attack"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "EvaluationLayer"
+    },
+    {
+      "slug": "guardrails-ai",
+      "label": "Guardrails AI"
+    },
+    {
+      "slug": "harmful-content-generation",
+      "label": "Harmful Content Generation"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "llama-guard",
+      "label": "Llama Guard"
+    },
+    {
+      "slug": "low-resource-language-attack",
+      "label": "Low-Resource Language Attack"
+    },
+    {
+      "slug": "many-shot-jailbreaking",
+      "label": "Many-Shot Jailbreaking"
+    },
+    {
+      "slug": "mitre-atlas",
+      "label": "MITRE ATLAS"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "nlpsecurity-domain",
+      "label": "NLPSecurityDomain"
+    },
+    {
+      "slug": "persona-attack",
+      "label": "Persona Attack"
+    },
+    {
+      "slug": "policy-circumvention",
+      "label": "Policy Circumvention"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "safety-training",
+      "label": "Safety Training"
+    },
+    {
+      "slug": "skeleton-key-attack",
+      "label": "Skeleton Key Attack"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

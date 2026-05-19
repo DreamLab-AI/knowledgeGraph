@@ -1,0 +1,215 @@
+{
+  "id": "urn:visionflow:page:5a1e0630d85a2cb3573f947e43321adb0060472d6a1dd7f05df8c95dd4c678c0",
+  "title": "Intelligent Virtual Entity",
+  "slug": "intelligent-virtual-entity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:intelligent-virtual-entity",
+  "domain": "spatial-computing",
+  "definition": "AI-driven representation within a virtual world that responds adaptively to users and context, combining perception, reasoning, learning, and interaction capabilities to create sophisticated virtual presences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:behavior-controller",
+        "label": "Behavior Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:interaction-manager",
+        "label": "Interaction Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:reasoning-engine",
+        "label": "Reasoning Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:learning-module",
+        "label": "Learning Module"
+      },
+      {
+        "id": "urn:visionflow:owl:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-framework",
+        "label": "AI Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-interaction",
+        "label": "Adaptive Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-storytelling",
+        "label": "Dynamic Storytelling"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligent-assistance",
+        "label": "Intelligent Assistance"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-experience",
+        "label": "Personalized Experience"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-aware-response",
+        "label": "Context-Aware Response"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-interaction",
+      "label": "Adaptive Interaction"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "behavior-controller",
+      "label": "Behavior Controller"
+    },
+    {
+      "slug": "computational-resources",
+      "label": "Computational Resources"
+    },
+    {
+      "slug": "dynamic-storytelling",
+      "label": "Dynamic Storytelling"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "intelligent-assistance",
+      "label": "Intelligent Assistance"
+    },
+    {
+      "slug": "intelligent-environment",
+      "label": "Intelligent Environment"
+    },
+    {
+      "slug": "interaction-manager",
+      "label": "Interaction Manager"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "personalized-experience",
+      "label": "Personalized Experience"
+    },
+    {
+      "slug": "reasoning-engine",
+      "label": "Reasoning Engine"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "adaptive-virtual-world",
+      "label": "Adaptive Virtual World"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "context-aware-response",
+      "label": "Context-Aware Response"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "learning-module",
+      "label": "Learning Module"
+    },
+    {
+      "slug": "machine-learning-platform",
+      "label": "Machine Learning Platform"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    }
+  ]
+}

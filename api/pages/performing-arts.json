@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:0068a5a6188d27e254e418b9d615c283839f735b2353f186441c2cec3902f190",
+  "title": "Performing Arts",
+  "slug": "performing-arts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:performing-arts",
+  "domain": "spatial-computing",
+  "definition": "Performing Arts is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-theater",
+      "label": "Virtual Theater"
+    }
+  ]
+}

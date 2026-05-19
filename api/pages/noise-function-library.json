@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:775e8f19d7ccb93cf536d8598f1e5fe2cc362a8b7c9fb6d14e12a7c78ad78ae0",
+  "title": "Noise Function Library",
+  "slug": "noise-function-library",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:noise-function-library",
+  "domain": "spatial-computing",
+  "definition": "A software library providing coherent noise generation algorithms like Perlin, simplex, value, and Voronoi noise for procedural content generation in computer graphics, enabling the creation of natural-looking textures, terrain, and visual effects without manual authoring.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:graphics-library",
+      "label": "Graphics Library"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:procedural-content",
+        "label": "Procedural Content"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "graphics-library",
+      "label": "Graphics Library"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "procedural-content",
+      "label": "Procedural Content"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ]
+}

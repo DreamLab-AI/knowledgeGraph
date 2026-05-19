@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b952b27f69ec68687d19210c7882b4d48a09331ffcc76b85c09f5d7a30118676",
+  "title": "Virtual Land Rights",
+  "slug": "virtual-land-rights",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-land-rights",
+  "domain": "spatial-computing",
+  "definition": "Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-property-rights",
+      "label": "Digital Property Rights"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-property-rights",
+      "label": "Digital Property Rights"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    }
+  ]
+}

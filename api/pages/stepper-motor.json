@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ce2146ff09ae30783fb4a4c7728e9b5b83614222a80b2727e66ce32c94c4c22d",
+  "title": "Stepper Motor",
+  "slug": "stepper-motor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stepper-motor",
+  "domain": "robotics",
+  "definition": "Stepper motor divides full rotation into discrete steps for open-loop position control.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:electric-motor",
+      "label": "Electric Motor"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

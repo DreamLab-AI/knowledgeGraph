@@ -1,0 +1,524 @@
+{
+  "id": "urn:visionflow:page:805b911d900aeb1575c8efd93bc9fa9f572cb77f7dc3db8f6289925f9764fbde",
+  "title": "Stable Coins",
+  "slug": "stable-coins",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stable-coins",
+  "domain": "blockchain",
+  "definition": "**Stable Coins** (stablecoins) are blockchain-native digital tokens engineered to maintain stable value relative to an external reference asset \u2014 most commonly the US dollar at 1:1 parity \u2014 through one of four primary stabilisation mechanisms: (i) **fiat-collateralised custody**, where off-chain reserves of cash, short-dated US Treasury bills, money-market funds, or other approved high-quality liquid assets held by regulated custodians underwrite each token (USDT, USDC, PYUSD, FDUSD, GUSD, USDP); (ii) **crypto-overcollateralisation**, where smart-contract-enforced vault positions in on-chain assets \u2014 primarily [[Ethereum]], wrapped [[Bitcoin Technical Overview|Bitcoin]], and liquid staking tokens \u2014 back stablecoin issuance at collateral ratios of typically 150-200%, with automated liquidation bots triggering when ratios fall below minimum thresholds (DAI/USDS from MakerDAO/Sky Protocol, Liquity LUSD, Aave GHO, Curve crvUSD); (iii) **algorithmic or seigniorage-share stabilisation**, where a dual-token arbitrage mechanism attempts to hold the dollar peg without direct collateral backing \u2014 a model comprehensively discredited in May 2022 when TerraUSD depegged and approximately $50 bil",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:financial-instrument",
+      "label": "Financial Instrument"
+    },
+    {
+      "id": "urn:visionflow:linked:payments-infrastructure",
+      "label": "Payments Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:tokenised-asset",
+      "label": "Tokenised Asset"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:attestation-report",
+        "label": "Attestation Report"
+      },
+      {
+        "id": "urn:visionflow:linked:liquidation-engine",
+        "label": "Liquidation Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:mint-burn-mechanism",
+        "label": "Mint Burn Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:visionflow:linked:reserve-assets",
+        "label": "Reserve Assets"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-vault",
+        "label": "Smart Contract Vault"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:custodian",
+        "label": "Custodian"
+      },
+      {
+        "id": "urn:visionflow:linked:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-licence",
+        "label": "Regulatory Licence"
+      },
+      {
+        "id": "urn:visionflow:linked:reserve-audit",
+        "label": "Reserve Audit"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-infrastructure",
+        "label": "Smart Contract Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:corporate-treasury-management",
+        "label": "Corporate Treasury Management"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-remittances",
+        "label": "Cross-Border Remittances"
+      },
+      {
+        "id": "urn:visionflow:linked:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:payments-infrastructure",
+        "label": "Payments Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:yield-generation",
+        "label": "Yield Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:algorithmic-stabilisation",
+        "label": "Algorithmic Stabilisation"
+      },
+      {
+        "id": "urn:visionflow:linked:dollar-peg-mechanism",
+        "label": "Dollar Peg Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:fractional-reserve-model",
+        "label": "Fractional Reserve Model"
+      },
+      {
+        "id": "urn:visionflow:linked:overcollateralisation",
+        "label": "Overcollateralisation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithmic-stabilisation",
+      "label": "Algorithmic Stabilisation"
+    },
+    {
+      "slug": "attestation-report",
+      "label": "Attestation Report"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "base-network",
+      "label": "Base Network"
+    },
+    {
+      "slug": "basel-iii-crypto-exposure-rules",
+      "label": "Basel III Crypto Exposure Rules"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "central-bank-policy",
+      "label": "Central Bank Policy"
+    },
+    {
+      "slug": "commercial-bank-money",
+      "label": "Commercial Bank Money"
+    },
+    {
+      "slug": "corporate-treasury-management",
+      "label": "Corporate Treasury Management"
+    },
+    {
+      "slug": "cross-border-remittances",
+      "label": "Cross-Border Remittances"
+    },
+    {
+      "slug": "cross-border-remittances",
+      "label": "Cross-Border Remittances"
+    },
+    {
+      "slug": "custodian",
+      "label": "Custodian"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "dollar-peg-mechanism",
+      "label": "Dollar Peg Mechanism"
+    },
+    {
+      "slug": "electronic-money",
+      "label": "Electronic Money"
+    },
+    {
+      "slug": "emerging-market-finance",
+      "label": "Emerging Market Finance"
+    },
+    {
+      "slug": "eurodollar",
+      "label": "Eurodollar"
+    },
+    {
+      "slug": "fasb-asc-350-60",
+      "label": "FASB ASC 350-60"
+    },
+    {
+      "slug": "fca-stablecoin-rules",
+      "label": "FCA Stablecoin Rules"
+    },
+    {
+      "slug": "financial-instrument",
+      "label": "Financial Instrument"
+    },
+    {
+      "slug": "financial-services-domain",
+      "label": "FinancialServicesDomain"
+    },
+    {
+      "slug": "fractional-reserve-model",
+      "label": "Fractional Reserve Model"
+    },
+    {
+      "slug": "genius-act-2025",
+      "label": "GENIUS Act 2025"
+    },
+    {
+      "slug": "interest-rate-environment",
+      "label": "Interest Rate Environment"
+    },
+    {
+      "slug": "liquidation-engine",
+      "label": "Liquidation Engine"
+    },
+    {
+      "slug": "metaverse-payments",
+      "label": "Metaverse Payments"
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "label": "MiCA Regulation"
+    },
+    {
+      "slug": "mint-burn-mechanism",
+      "label": "Mint Burn Mechanism"
+    },
+    {
+      "slug": "multi-party-computation-custody",
+      "label": "Multi-Party Computation Custody"
+    },
+    {
+      "slug": "on-chain-settlement",
+      "label": "On-Chain Settlement"
+    },
+    {
+      "slug": "oracle-network",
+      "label": "Oracle Network"
+    },
+    {
+      "slug": "oracle-network",
+      "label": "Oracle Network"
+    },
+    {
+      "slug": "overcollateralisation",
+      "label": "Overcollateralisation"
+    },
+    {
+      "slug": "payments-domain",
+      "label": "PaymentsDomain"
+    },
+    {
+      "slug": "payments-infrastructure",
+      "label": "Payments Infrastructure"
+    },
+    {
+      "slug": "payments-infrastructure",
+      "label": "Payments Infrastructure"
+    },
+    {
+      "slug": "payments-infrastructure",
+      "label": "Payments Infrastructure"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "real-world-asset-tokenisation",
+      "label": "Real-World Asset Tokenisation"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "regulatory-licence",
+      "label": "Regulatory Licence"
+    },
+    {
+      "slug": "reserve-assets",
+      "label": "Reserve Assets"
+    },
+    {
+      "slug": "reserve-audit",
+      "label": "Reserve Audit"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "SettlementLayer"
+    },
+    {
+      "slug": "smart-contract-infrastructure",
+      "label": "Smart Contract Infrastructure"
+    },
+    {
+      "slug": "smart-contract-vault",
+      "label": "Smart Contract Vault"
+    },
+    {
+      "slug": "tokenised-asset",
+      "label": "Tokenised Asset"
+    },
+    {
+      "slug": "trade-finance",
+      "label": "Trade Finance"
+    },
+    {
+      "slug": "traditional-bank-deposits",
+      "label": "Traditional Bank Deposits"
+    },
+    {
+      "slug": "tron-network",
+      "label": "Tron Network"
+    },
+    {
+      "slug": "tron-network",
+      "label": "Tron Network"
+    },
+    {
+      "slug": "yield-generation",
+      "label": "Yield Generation"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

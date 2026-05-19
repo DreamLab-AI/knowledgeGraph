@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:73fa4625a39e8aac9d3371aa1d53019a5cce40defda5b2afd4bb5f8fcef18234",
+  "title": "Data Efficient Learning",
+  "slug": "data-efficient-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-efficient-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Data Efficient Learning is a concept within the ai domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "label": "Semi-Supervised Learning"
+    }
+  ]
+}

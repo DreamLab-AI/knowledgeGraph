@@ -1,0 +1,368 @@
+{
+  "id": "urn:visionflow:page:bb178a7fb918c06d1e2cedc906f414032064e9212d56c87d79a0b4289ba3da04",
+  "title": "WebRTC",
+  "slug": "web-rtc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:web-rtc",
+  "domain": "distributed-collaboration",
+  "definition": "WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (`getUserMedia`, `RTCPeerConnection`, `RTCDataChannel`), combining [[ICE Protocol|Interactive Connectivity Establishment]] for NAT traversal, [[DTLS-SRTP]] for mandatory end-to-end encryption, and adaptive codec negotiation (VP8/VP9/AV1, Opus) to deliver sub-100 ms real-time communication without plugins, forming the foundational transport layer for modern telecollaboration platforms, [[OpenXR]] collaborative XR experiences, and agent-to-agent audio-visual communication channels within [[VisionClaw Agentic Container]] deployments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:peer-to-peer-network-protocol",
+      "label": "Peer-to-Peer Network Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:real-time-communication-protocol",
+      "label": "Real-Time Communication Protocol"
+    }
+  ],
+  "qualityScore": 0.6,
+  "authorityScore": 0.88,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:get-user-media-api",
+        "label": "getUserMedia API"
+      },
+      {
+        "id": "urn:visionflow:linked:ice-protocol",
+        "label": "ICE Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:rtcdata-channel",
+        "label": "RTCDataChannel"
+      },
+      {
+        "id": "urn:visionflow:linked:rtcpeer-connection",
+        "label": "RTCPeerConnection"
+      },
+      {
+        "id": "urn:visionflow:linked:sdp-offer-answer",
+        "label": "SDP Offer-Answer"
+      },
+      {
+        "id": "urn:visionflow:linked:stun-server",
+        "label": "STUN Server"
+      },
+      {
+        "id": "urn:visionflow:linked:turn-server",
+        "label": "TURN Server"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:dtls-srtp-encryption",
+        "label": "DTLS-SRTP Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:ice-protocol",
+        "label": "ICE Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:sdp-session-description",
+        "label": "SDP Session Description"
+      },
+      {
+        "id": "urn:visionflow:linked:web-socket-signalling",
+        "label": "WebSocket Signalling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-xr",
+        "label": "Collaborative XR"
+      },
+      {
+        "id": "urn:visionflow:linked:peer-to-peer-video-conferencing",
+        "label": "Peer-to-Peer Video Conferencing"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-data-transfer",
+        "label": "Real-Time Data Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-install-communication",
+        "label": "Zero-Install Communication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:dtls-srtp-rfc-5764",
+        "label": "DTLS-SRTP RFC 5764"
+      },
+      {
+        "id": "urn:visionflow:linked:ietf-rtcweb-standards",
+        "label": "IETF RTCWEB Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-web-rtc-1-0-specification",
+        "label": "W3C WebRTC 1.0 Specification"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-xr",
+      "label": "Collaborative XR"
+    },
+    {
+      "slug": "dtls-srtp",
+      "label": "DTLS-SRTP"
+    },
+    {
+      "slug": "dtls-srtp-encryption",
+      "label": "DTLS-SRTP Encryption"
+    },
+    {
+      "slug": "dtls-srtp-rfc-5764",
+      "label": "DTLS-SRTP RFC 5764"
+    },
+    {
+      "slug": "get-user-media-api",
+      "label": "getUserMedia API"
+    },
+    {
+      "slug": "ice-protocol",
+      "label": "ICE Protocol"
+    },
+    {
+      "slug": "ice-protocol",
+      "label": "ICE Protocol"
+    },
+    {
+      "slug": "ietf-rfc-7478-rtcweb-overview",
+      "label": "IETF RFC 7478 RTCWEB Overview"
+    },
+    {
+      "slug": "ietf-rtcweb-standards",
+      "label": "IETF RTCWEB Standards"
+    },
+    {
+      "slug": "libwebrtc-library",
+      "label": "libwebrtc Library"
+    },
+    {
+      "slug": "o-reilly-web-rtc-book",
+      "label": "O'Reilly WebRTC Book"
+    },
+    {
+      "slug": "opus-audio-codec",
+      "label": "Opus Audio Codec"
+    },
+    {
+      "slug": "peer-to-peer-network-protocol",
+      "label": "Peer-to-Peer Network Protocol"
+    },
+    {
+      "slug": "peer-to-peer-video-conferencing",
+      "label": "Peer-to-Peer Video Conferencing"
+    },
+    {
+      "slug": "real-time-communication-protocol",
+      "label": "Real-Time Communication Protocol"
+    },
+    {
+      "slug": "real-time-data-transfer",
+      "label": "Real-Time Data Transfer"
+    },
+    {
+      "slug": "rtcdata-channel",
+      "label": "RTCDataChannel"
+    },
+    {
+      "slug": "rtcpeer-connection",
+      "label": "RTCPeerConnection"
+    },
+    {
+      "slug": "sdp-offer-answer",
+      "label": "SDP Offer-Answer"
+    },
+    {
+      "slug": "sdp-session-description",
+      "label": "SDP Session Description"
+    },
+    {
+      "slug": "stun-rfc-5389",
+      "label": "STUN RFC 5389"
+    },
+    {
+      "slug": "stun-server",
+      "label": "STUN Server"
+    },
+    {
+      "slug": "telecollaboration-stack",
+      "label": "Telecollaboration Stack"
+    },
+    {
+      "slug": "turn-rfc-5766",
+      "label": "TURN RFC 5766"
+    },
+    {
+      "slug": "turn-server",
+      "label": "TURN Server"
+    },
+    {
+      "slug": "video-conferencing-platform",
+      "label": "Video Conferencing Platform"
+    },
+    {
+      "slug": "vp8-video-codec",
+      "label": "VP8 Video Codec"
+    },
+    {
+      "slug": "w3-c-web-rtc-1-0-specification",
+      "label": "W3C WebRTC 1.0 Specification"
+    },
+    {
+      "slug": "w3-c-web-rtc-working-group",
+      "label": "W3C WebRTC Working Group"
+    },
+    {
+      "slug": "web-socket-signalling",
+      "label": "WebSocket Signalling"
+    },
+    {
+      "slug": "zero-install-communication",
+      "label": "Zero-Install Communication"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

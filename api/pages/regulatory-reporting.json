@@ -1,0 +1,484 @@
+{
+  "id": "urn:visionflow:page:35fa912beb75564757d104ea139817edd2a1a0a0c91ec6b126dd48b8fa4df698",
+  "title": "Regulatory Reporting",
+  "slug": "regulatory-reporting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:regulatory-reporting",
+  "domain": "regulation",
+  "definition": "**Regulatory Reporting** is the structured, machine-readable submission of financial transaction data, prudential metrics, operational incidents, and suspicious-activity indicators to supervisory authorities under legally mandated frameworks, spanning the full spectrum from trade-level derivatives reporting under **EMIR Refit 2024** (Commission Delegated Regulation (EU) 2022/1855, effective 29 April 2024, redesigning 203 reportable fields, introducing the ISO 20022 XML message standard for collateral and margin data, mandating LEI-based UTI (Unique Trade Identifier) generation at trade level and mandating reconciliation logic through DTCC Derivatives Repository, REGIS-TR, and Bloomberg Trade Repository), to market-abuse-targeted **MiFID II RTS 22 transaction reporting** (Commission Delegated Regulation (EU) 2017/590, amended by ESMA MiFIR Review proposals CP 2023, requiring T+1 submission of 65 data fields including ISINs, trading-venue MIC codes, counterparty LEIs, execution timestamps to millisecond precision, quantity, price, and decision-maker reference data to ARM/APAs via FIX 5.0/FIXML, XML Schema or CSV protocols), to prudential capital adequacy submissions under **CRR III C",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:financial-services",
+      "label": "Financial Services"
+    },
+    {
+      "id": "urn:visionflow:linked:supervisory-technology",
+      "label": "Supervisory Technology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:regulatory-technology",
+      "label": "Regulatory Technology"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:lei-system",
+        "label": "LEI System"
+      },
+      {
+        "id": "urn:visionflow:linked:prudential-reporting",
+        "label": "Prudential Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-data-model",
+        "label": "Regulatory Data Model"
+      },
+      {
+        "id": "urn:visionflow:linked:suspicious-activity-reports",
+        "label": "Suspicious Activity Reports"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-reporting",
+        "label": "Transaction Reporting"
+      },
+      {
+        "id": "urn:visionflow:linked:xbrl-taxonomy",
+        "label": "XBRL Taxonomy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-entity-identifier",
+        "label": "Legal Entity Identifier"
+      },
+      {
+        "id": "urn:visionflow:linked:trade-repository",
+        "label": "Trade Repository"
+      },
+      {
+        "id": "urn:visionflow:linked:xbrl",
+        "label": "XBRL"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-data-sharing",
+        "label": "Cross-Border Data Sharing"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-crime-detection",
+        "label": "Financial Crime Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:market-abuse-detection",
+        "label": "Market Abuse Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:prudential-capital-oversight",
+        "label": "Prudential Capital Oversight"
+      },
+      {
+        "id": "urn:visionflow:linked:supervisory-analytics",
+        "label": "Supervisory Analytics"
+      },
+      {
+        "id": "urn:visionflow:linked:systemic-risk-monitoring",
+        "label": "Systemic Risk Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:basel-iv",
+        "label": "Basel IV"
+      },
+      {
+        "id": "urn:visionflow:linked:dora",
+        "label": "DORA"
+      },
+      {
+        "id": "urn:visionflow:linked:emir-refit",
+        "label": "EMIR Refit"
+      },
+      {
+        "id": "urn:visionflow:linked:fatf-recommendations",
+        "label": "FATF Recommendations"
+      },
+      {
+        "id": "urn:visionflow:linked:mi-fid-ii",
+        "label": "MiFID II"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "basel-iv",
+      "label": "Basel IV"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "capital-adequacy",
+      "label": "Capital Adequacy"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "cross-border-data-sharing",
+      "label": "Cross-Border Data Sharing"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "DataGovernanceDomain"
+    },
+    {
+      "slug": "data-quality-management",
+      "label": "Data Quality Management"
+    },
+    {
+      "slug": "dora",
+      "label": "DORA"
+    },
+    {
+      "slug": "eba",
+      "label": "EBA"
+    },
+    {
+      "slug": "emir-refit",
+      "label": "EMIR Refit"
+    },
+    {
+      "slug": "esma",
+      "label": "ESMA"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "financial-crime-detection",
+      "label": "Financial Crime Detection"
+    },
+    {
+      "slug": "financial-market-infrastructure",
+      "label": "Financial Market Infrastructure"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    },
+    {
+      "slug": "financial-services-domain",
+      "label": "FinancialServicesDomain"
+    },
+    {
+      "slug": "financial-stability",
+      "label": "Financial Stability"
+    },
+    {
+      "slug": "fix-protocol",
+      "label": "FIX Protocol"
+    },
+    {
+      "slug": "gleif",
+      "label": "GLEIF"
+    },
+    {
+      "slug": "incident-reporting",
+      "label": "Incident Reporting"
+    },
+    {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "iosco",
+      "label": "IOSCO"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    },
+    {
+      "slug": "legal-entity-identifier",
+      "label": "Legal Entity Identifier"
+    },
+    {
+      "slug": "lei-system",
+      "label": "LEI System"
+    },
+    {
+      "slug": "market-abuse-detection",
+      "label": "Market Abuse Detection"
+    },
+    {
+      "slug": "market-integrity",
+      "label": "Market Integrity"
+    },
+    {
+      "slug": "mas",
+      "label": "MAS"
+    },
+    {
+      "slug": "mi-fid-ii",
+      "label": "MiFID II"
+    },
+    {
+      "slug": "operational-resilience",
+      "label": "Operational Resilience"
+    },
+    {
+      "slug": "principles-based-regulation",
+      "label": "Principles-Based Regulation"
+    },
+    {
+      "slug": "prudential-capital-oversight",
+      "label": "Prudential Capital Oversight"
+    },
+    {
+      "slug": "prudential-reporting",
+      "label": "Prudential Reporting"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "RegulationDomain"
+    },
+    {
+      "slug": "regulatory-data-model",
+      "label": "Regulatory Data Model"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
+    },
+    {
+      "slug": "sftp",
+      "label": "SFTP"
+    },
+    {
+      "slug": "supervisory-analytics",
+      "label": "Supervisory Analytics"
+    },
+    {
+      "slug": "supervisory-technology",
+      "label": "Supervisory Technology"
+    },
+    {
+      "slug": "suspicious-activity-reports",
+      "label": "Suspicious Activity Reports"
+    },
+    {
+      "slug": "systemic-risk-monitoring",
+      "label": "Systemic Risk Monitoring"
+    },
+    {
+      "slug": "trade-repository",
+      "label": "Trade Repository"
+    },
+    {
+      "slug": "transaction-reporting",
+      "label": "Transaction Reporting"
+    },
+    {
+      "slug": "voluntary-disclosure",
+      "label": "Voluntary Disclosure"
+    },
+    {
+      "slug": "xbrl",
+      "label": "XBRL"
+    },
+    {
+      "slug": "xbrl-taxonomy",
+      "label": "XBRL Taxonomy"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "data-standards",
+      "label": "Data Standards"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

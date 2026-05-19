@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:915431e8835894eb154595d8a83a7889bba5eab7409bcb2180c67ebd0820d1fb",
+  "title": "Hardware Platform Agnostic",
+  "slug": "hardware-platform-agnostic",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hardware-platform-agnostic",
+  "domain": "spatial-computing",
+  "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-/Platform-Agnostic systems achieve portability through abstraction layers that decouple functionality from underlying physical or operating system constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-interop",
+      "label": "ETSI_Domain_Infrastructure___Interop"
+    }
+  ]
+}

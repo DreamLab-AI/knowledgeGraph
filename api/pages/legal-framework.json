@@ -1,0 +1,138 @@
+{
+  "id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859",
+  "title": "Legal Framework",
+  "slug": "legal-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:legal-framework",
+  "domain": "infrastructure",
+  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-protection",
+        "label": "Rights Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "id": "urn:visionflow:linked:security-obligations",
+        "label": "Security Obligations"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "legal-compliance",
+      "label": "Legal Compliance"
+    },
+    {
+      "slug": "privacy-requirements",
+      "label": "Privacy Requirements"
+    },
+    {
+      "slug": "rights-protection",
+      "label": "Rights Protection"
+    },
+    {
+      "slug": "security-obligations",
+      "label": "Security Obligations"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    },
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "jurisdictional-boundary",
+      "label": "Jurisdictional Boundary"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "privacy-impact-assessment-pia",
+      "label": "Privacy Impact Assessment (PIA)"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    }
+  ]
+}

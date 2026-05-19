@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:c822fbf21e2345e07dab0f4ce849681fa325aa0aea1ef77adcd5cd0afd9d0860",
+  "title": "Data Format",
+  "slug": "data-format",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-format",
+  "domain": "infrastructure",
+  "definition": "Data Format is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-standards",
+      "label": "Data Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "binary-encoding",
+      "label": "Binary Encoding"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    }
+  ]
+}

@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#AssetArchive
-uri:: urn:visionclaw:concept:spatial-computing:asset-archive
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:asset-archive
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Asset Archive
-content-hash:: sha256-12-a6df40530961
-legacy-term-id:: MV-9779
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#AssetArchive
+legacy_uri:: urn:visionclaw:concept:spatial-computing:asset-archive
 public:: true
+
+# Asset Archive
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86",
+  "@type": "Page",
+  "vc:slug": "asset-archive",
+  "title": "Asset Archive",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:asset-preservation",
+      "vc:label": "Asset Preservation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-reuse",
+      "vc:label": "Content Reuse"
+    },
+    {
+      "@id": "urn:visionflow:linked:standardized-formats",
+      "vc:label": "Standardized Formats"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
+      "vc:label": "Cross-Platform Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-repository",
+      "vc:label": "Digital Repository"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-management",
+      "vc:label": "Metadata Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:storage-infrastructure",
+      "vc:label": "Storage Infrastructure"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a6df40530961"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#AssetArchive"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9779"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Asset Archive"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:asset-archive"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:asset-archive"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:asset-archive",
+  "@type": "OntologyClass",
+  "label": "Asset Archive",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-repository",
+      "vc:label": "Digital Repository"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:standardized-formats",
+      "vc:label": "Standardized Formats"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-management",
+      "vc:label": "Metadata Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:storage-infrastructure",
+      "vc:label": "Storage Infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:asset-preservation",
+      "vc:label": "Asset Preservation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-reuse",
+      "vc:label": "Content Reuse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
+      "vc:label": "Cross-Platform Interoperability"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:asset-archive:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Asset Preservation]]",
+      "resolved": "urn:visionflow:linked:asset-preservation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Reuse]]",
+      "resolved": "urn:visionflow:linked:content-reuse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Standardized Formats]]",
+      "resolved": "urn:visionflow:linked:standardized-formats",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross-Platform Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:cross-platform-interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Repository]]",
+      "resolved": "urn:visionflow:owl:class:digital-repository",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Management]]",
+      "resolved": "urn:visionflow:owl:class:metadata-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Storage Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:storage-infrastructure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.

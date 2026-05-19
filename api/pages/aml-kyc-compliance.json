@@ -1,0 +1,1072 @@
+{
+  "id": "urn:visionflow:page:018b086c48daa21b2f4fbed51aff49982df4199f3e0869b18580825ad2b3708d",
+  "title": "AML KYC Compliance",
+  "slug": "aml-kyc-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:aml-kyc-compliance",
+  "domain": "blockchain",
+  "definition": "**AML KYC Compliance** is the composite regulatory and operational discipline by which obligated entities \u2014 banks, payment institutions, e-money issuers, brokers, insurers, accountants, lawyers, art dealers, casinos, real-estate agents, virtual-asset service providers (VASPs / crypto-asset service providers CASPs) and an expanding perimeter of \"gatekeepers\" \u2014 implement statutory **Anti-Money Laundering** (AML), **Countering the Financing of Terrorism** (CFT), **Counter-Proliferation Financing** (CPF) and **Know Your Customer** (KYC) controls to identify their customers and ultimate beneficial owners, assess and risk-rate the relationship, monitor transactional behaviour continuously, screen against sanctions and politically-exposed-person (PEP) lists, file suspicious activity / transaction reports (SARs / STRs) with national Financial Intelligence Units (FIUs), and preserve auditable records for a minimum of five years; the regime descends institutionally from the **Bank Secrecy Act 1970** (US Public Law 91-508 establishing Currency Transaction Reports CTRs above $10,000 and the predecessor to FinCEN), the **Financial Action Task Force** (FATF, established at the 1989 G7 Arche Summ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:anti-financial-crime-regime",
+      "label": "Anti-Financial Crime Regime"
+    },
+    {
+      "id": "urn:visionflow:linked:customer-onboarding-discipline",
+      "label": "Customer Onboarding Discipline"
+    },
+    {
+      "id": "urn:visionflow:linked:financial-crime-compliance",
+      "label": "Financial Crime Compliance"
+    },
+    {
+      "id": "urn:visionflow:linked:risk-management-framework",
+      "label": "Risk Management Framework"
+    },
+    {
+      "id": "urn:visionflow:owl:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:adverse-media-screening",
+        "label": "Adverse Media Screening"
+      },
+      {
+        "id": "urn:visionflow:linked:beneficial-ownership-disclosure",
+        "label": "Beneficial Ownership Disclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      },
+      {
+        "id": "urn:visionflow:linked:customer-identification-programme",
+        "label": "Customer Identification Programme"
+      },
+      {
+        "id": "urn:visionflow:linked:enhanced-due-diligence",
+        "label": "Enhanced Due Diligence"
+      },
+      {
+        "id": "urn:visionflow:linked:pep-screening",
+        "label": "PEP Screening"
+      },
+      {
+        "id": "urn:visionflow:linked:record-keeping",
+        "label": "Record Keeping"
+      },
+      {
+        "id": "urn:visionflow:linked:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:visionflow:linked:simplified-due-diligence",
+        "label": "Simplified Due Diligence"
+      },
+      {
+        "id": "urn:visionflow:linked:source-of-funds-verification",
+        "label": "Source of Funds Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:source-of-wealth-verification",
+        "label": "Source of Wealth Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:suspicious-activity-report",
+        "label": "Suspicious Activity Report"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:travel-rule-compliance",
+        "label": "Travel Rule Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:board-level-oversight",
+        "label": "Board-Level Oversight"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-officer",
+        "label": "Compliance Officer"
+      },
+      {
+        "id": "urn:visionflow:linked:customer-identification-documentation",
+        "label": "Customer Identification Documentation"
+      },
+      {
+        "id": "urn:visionflow:linked:fiu-reporting-channel",
+        "label": "FIU Reporting Channel"
+      },
+      {
+        "id": "urn:visionflow:linked:independent-audit-function",
+        "label": "Independent Audit Function"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-based-approach",
+        "label": "Risk-Based Approach"
+      },
+      {
+        "id": "urn:visionflow:linked:sanctions-list-feed",
+        "label": "Sanctions List Feed"
+      },
+      {
+        "id": "urn:visionflow:linked:staff-training-programme",
+        "label": "Staff Training Programme"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:banking-correspondent-relationships",
+        "label": "Banking Correspondent Relationships"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-payment-compliance",
+        "label": "Cross-Border Payment Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-system-integrity",
+        "label": "Financial System Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:proceeds-of-crime-recovery",
+        "label": "Proceeds of Crime Recovery"
+      },
+      {
+        "id": "urn:visionflow:linked:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:tax-evasion-detection",
+        "label": "Tax Evasion Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:terrorist-financing-disruption",
+        "label": "Terrorist Financing Disruption"
+      },
+      {
+        "id": "urn:visionflow:linked:vasp-market-access",
+        "label": "VASP Market Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bank-secrecy-act",
+        "label": "Bank Secrecy Act"
+      },
+      {
+        "id": "urn:visionflow:linked:eu-amlr-single-rulebook",
+        "label": "EU AMLR Single Rulebook"
+      },
+      {
+        "id": "urn:visionflow:linked:fatf-40-recommendations",
+        "label": "FATF 40 Recommendations"
+      },
+      {
+        "id": "urn:visionflow:linked:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:visionflow:linked:proceeds-of-crime-act-2002",
+        "label": "Proceeds of Crime Act 2002"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-based-approach-methodology",
+        "label": "Risk-Based Approach Methodology"
+      },
+      {
+        "id": "urn:visionflow:linked:sanctions-and-anti-money-laundering-act-2018",
+        "label": "Sanctions and Anti-Money Laundering Act 2018"
+      },
+      {
+        "id": "urn:visionflow:linked:uk-mlr-2017",
+        "label": "UK MLR 2017"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adverse-media-screening",
+      "label": "Adverse Media Screening"
+    },
+    {
+      "slug": "adyen",
+      "label": "Adyen"
+    },
+    {
+      "slug": "allen-2016-path-to-self-sovereign-identity",
+      "label": "Allen 2016 Path to Self-Sovereign Identity"
+    },
+    {
+      "slug": "amla",
+      "label": "AMLA"
+    },
+    {
+      "slug": "anonymous-cryptocurrency",
+      "label": "Anonymous Cryptocurrency"
+    },
+    {
+      "slug": "anti-financial-crime-regime",
+      "label": "Anti-Financial Crime Regime"
+    },
+    {
+      "slug": "arner-barberis-buckley-2017-fin-tech-reg-tech",
+      "label": "Arner Barberis Buckley 2017 FinTech RegTech"
+    },
+    {
+      "slug": "austrac",
+      "label": "AUSTRAC"
+    },
+    {
+      "slug": "australia-aml-ctf-act-2006-tranche-2-reform-2024",
+      "label": "Australia AML CTF Act 2006 Tranche 2 Reform 2024"
+    },
+    {
+      "slug": "bains-sugimoto-wilson-2022-imf-reg-tech",
+      "label": "Bains Sugimoto Wilson 2022 IMF RegTech"
+    },
+    {
+      "slug": "bank-secrecy-act",
+      "label": "Bank Secrecy Act"
+    },
+    {
+      "slug": "bank-secrecy-act-1970",
+      "label": "Bank Secrecy Act 1970"
+    },
+    {
+      "slug": "banking-correspondent-relationships",
+      "label": "Banking Correspondent Relationships"
+    },
+    {
+      "slug": "beneficial-ownership",
+      "label": "Beneficial Ownership"
+    },
+    {
+      "slug": "beneficial-ownership-disclosure",
+      "label": "Beneficial Ownership Disclosure"
+    },
+    {
+      "slug": "beneficial-ownership-registers",
+      "label": "Beneficial Ownership Registers"
+    },
+    {
+      "slug": "binance-settlement-2023",
+      "label": "Binance Settlement 2023"
+    },
+    {
+      "slug": "biometric-liveness-detection",
+      "label": "Biometric Liveness Detection"
+    },
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "blockchain-analytics-platform",
+      "label": "Blockchain Analytics Platform"
+    },
+    {
+      "slug": "board-level-oversight",
+      "label": "Board-Level Oversight"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-regulatory-landscape",
+      "label": "CCAF 2024 Global Cryptoasset Regulatory Landscape"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "checkout-com",
+      "label": "Checkout.com"
+    },
+    {
+      "slug": "cipher-trace",
+      "label": "CipherTrace"
+    },
+    {
+      "slug": "coinfirm",
+      "label": "Coinfirm"
+    },
+    {
+      "slug": "companies-house-psc-register",
+      "label": "Companies House PSC Register"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "compliance-officer",
+      "label": "Compliance Officer"
+    },
+    {
+      "slug": "comply-advantage",
+      "label": "ComplyAdvantage"
+    },
+    {
+      "slug": "correspondent-banking",
+      "label": "Correspondent Banking"
+    },
+    {
+      "slug": "cross-border-payment-compliance",
+      "label": "Cross-Border Payment Compliance"
+    },
+    {
+      "slug": "crystal-blockchain",
+      "label": "Crystal Blockchain"
+    },
+    {
+      "slug": "customer-due-diligence",
+      "label": "Customer Due Diligence"
+    },
+    {
+      "slug": "customer-identification-documentation",
+      "label": "Customer Identification Documentation"
+    },
+    {
+      "slug": "customer-identification-programme",
+      "label": "Customer Identification Programme"
+    },
+    {
+      "slug": "customer-onboarding-discipline",
+      "label": "Customer Onboarding Discipline"
+    },
+    {
+      "slug": "cypherpunk-pseudonymity",
+      "label": "Cypherpunk Pseudonymity"
+    },
+    {
+      "slug": "de-risking-avoidance",
+      "label": "De-Risking Avoidance"
+    },
+    {
+      "slug": "decentralised-finance-anonymity",
+      "label": "Decentralised Finance Anonymity"
+    },
+    {
+      "slug": "digital-identity-domain",
+      "label": "DigitalIdentityDomain"
+    },
+    {
+      "slug": "document-authentication-ocr",
+      "label": "Document Authentication OCR"
+    },
+    {
+      "slug": "dow-jones-risk-and-compliance",
+      "label": "Dow Jones Risk & Compliance"
+    },
+    {
+      "slug": "e-idas-2-0",
+      "label": "eIDAS 2.0"
+    },
+    {
+      "slug": "eccta-2023",
+      "label": "ECCTA 2023"
+    },
+    {
+      "slug": "economic-crime-and-corporate-transparency-act-2023",
+      "label": "Economic Crime and Corporate Transparency Act 2023"
+    },
+    {
+      "slug": "egmont-group-information-sharing",
+      "label": "Egmont Group Information Sharing"
+    },
+    {
+      "slug": "electronic-identity-verification",
+      "label": "Electronic Identity Verification"
+    },
+    {
+      "slug": "elliptic",
+      "label": "Elliptic"
+    },
+    {
+      "slug": "enhanced-due-diligence",
+      "label": "Enhanced Due Diligence"
+    },
+    {
+      "slug": "eu-6-amld-2018-1673",
+      "label": "EU 6AMLD 2018/1673"
+    },
+    {
+      "slug": "eu-amla-regulation-2024-1620",
+      "label": "EU AMLA Regulation 2024/1620"
+    },
+    {
+      "slug": "eu-amld6-2024-1640",
+      "label": "EU AMLD6 2024/1640"
+    },
+    {
+      "slug": "eu-amlr-2024-1624",
+      "label": "EU AMLR 2024/1624"
+    },
+    {
+      "slug": "eu-amlr-2024-1624-single-rulebook",
+      "label": "EU AMLR 2024/1624 Single Rulebook"
+    },
+    {
+      "slug": "eu-amlr-single-rulebook",
+      "label": "EU AMLR Single Rulebook"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fatf-40-recommendations",
+      "label": "FATF 40 Recommendations"
+    },
+    {
+      "slug": "fatf-recommendation-15",
+      "label": "FATF Recommendation 15"
+    },
+    {
+      "slug": "fatf-recommendation-15-virtual-assets",
+      "label": "FATF Recommendation 15 Virtual Assets"
+    },
+    {
+      "slug": "fatf-recommendation-16-travel-rule",
+      "label": "FATF Recommendation 16 Travel Rule"
+    },
+    {
+      "slug": "fatf-travel-rule",
+      "label": "FATF Travel Rule"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "fca-cryptoasset-registration",
+      "label": "FCA Cryptoasset Registration"
+    },
+    {
+      "slug": "featurespace-aric",
+      "label": "Featurespace ARIC"
+    },
+    {
+      "slug": "fin-cen",
+      "label": "FinCEN"
+    },
+    {
+      "slug": "financial-crime-compliance",
+      "label": "Financial Crime Compliance"
+    },
+    {
+      "slug": "financial-crime-domain",
+      "label": "FinancialCrimeDomain"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "financial-intelligence-unit",
+      "label": "Financial Intelligence Unit"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "FinancialRegulationDomain"
+    },
+    {
+      "slug": "financial-system-integrity",
+      "label": "Financial System Integrity"
+    },
+    {
+      "slug": "findley-nielson-sharman-2014-global-shell-games",
+      "label": "Findley Nielson Sharman 2014 Global Shell Games"
+    },
+    {
+      "slug": "fis-aml-manager",
+      "label": "FIS AML Manager"
+    },
+    {
+      "slug": "fiserv-aml-manager",
+      "label": "Fiserv AML Manager"
+    },
+    {
+      "slug": "fiu-reporting-channel",
+      "label": "FIU Reporting Channel"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "government-issued-identity-documents",
+      "label": "Government-Issued Identity Documents"
+    },
+    {
+      "slug": "halliday-levi-reuter-2014-global-surveillance-dirty-money",
+      "label": "Halliday Levi Reuter 2014 Global Surveillance Dirty Money"
+    },
+    {
+      "slug": "hawk-ai",
+      "label": "Hawk AI"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
+    },
+    {
+      "slug": "idnow",
+      "label": "IDnow"
+    },
+    {
+      "slug": "independent-audit-function",
+      "label": "Independent Audit Function"
+    },
+    {
+      "slug": "iso-20022-payment-messaging",
+      "label": "ISO 20022 Payment Messaging"
+    },
+    {
+      "slug": "iso-iec-30107-3-pad",
+      "label": "ISO/IEC 30107-3 PAD"
+    },
+    {
+      "slug": "jmlsg-2023-uk-aml-guidance",
+      "label": "JMLSG 2023 UK AML Guidance"
+    },
+    {
+      "slug": "jumio",
+      "label": "Jumio"
+    },
+    {
+      "slug": "levi-reuter-2006-money-laundering",
+      "label": "Levi Reuter 2006 Money Laundering"
+    },
+    {
+      "slug": "lexis-nexis-2024-true-cost-of-financial-crime-compliance",
+      "label": "LexisNexis 2024 True Cost of Financial Crime Compliance"
+    },
+    {
+      "slug": "lexis-nexis-bridger-insight-xg-world-compliance",
+      "label": "LexisNexis Bridger Insight XG / WorldCompliance"
+    },
+    {
+      "slug": "listed-company-compliance",
+      "label": "Listed Company Compliance"
+    },
+    {
+      "slug": "lucinity",
+      "label": "Lucinity"
+    },
+    {
+      "slug": "machine-learning-risk-scoring",
+      "label": "Machine Learning Risk Scoring"
+    },
+    {
+      "slug": "mas",
+      "label": "MAS"
+    },
+    {
+      "slug": "merkle-science",
+      "label": "Merkle Science"
+    },
+    {
+      "slug": "mi-ca-authorisation",
+      "label": "MiCA Authorisation"
+    },
+    {
+      "slug": "mitek",
+      "label": "Mitek"
+    },
+    {
+      "slug": "monitoring-layer",
+      "label": "MonitoringLayer"
+    },
+    {
+      "slug": "moody-s-orbis-bureau-van-dijk",
+      "label": "Moody's Orbis / Bureau van Dijk"
+    },
+    {
+      "slug": "napier-ai",
+      "label": "Napier AI"
+    },
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    },
+    {
+      "slug": "nfc-chip-reading",
+      "label": "NFC Chip Reading"
+    },
+    {
+      "slug": "nice-actimize",
+      "label": "NICE Actimize"
+    },
+    {
+      "slug": "notabene",
+      "label": "Notabene"
+    },
+    {
+      "slug": "ofac",
+      "label": "OFAC"
+    },
+    {
+      "slug": "onboarding-layer",
+      "label": "OnboardingLayer"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    },
+    {
+      "slug": "open-ownership-2024-state-of-beneficial-ownership-data",
+      "label": "Open Ownership 2024 State of Beneficial Ownership Data"
+    },
+    {
+      "slug": "open-vasp",
+      "label": "OpenVASP"
+    },
+    {
+      "slug": "oracle-financial-crime-and-compliance-management",
+      "label": "Oracle Financial Crime and Compliance Management"
+    },
+    {
+      "slug": "pep-databases",
+      "label": "PEP Databases"
+    },
+    {
+      "slug": "pep-screening",
+      "label": "PEP Screening"
+    },
+    {
+      "slug": "pol-2020-aml-world-s-least-effective-policy-experiment",
+      "label": "Pol 2020 AML World's Least Effective Policy Experiment"
+    },
+    {
+      "slug": "privacy-coin-architecture",
+      "label": "Privacy Coin Architecture"
+    },
+    {
+      "slug": "privacy-preserving-identity",
+      "label": "Privacy-Preserving Identity"
+    },
+    {
+      "slug": "proceeds-of-crime-act-2002",
+      "label": "Proceeds of Crime Act 2002"
+    },
+    {
+      "slug": "proceeds-of-crime-recovery",
+      "label": "Proceeds of Crime Recovery"
+    },
+    {
+      "slug": "quantexa",
+      "label": "Quantexa"
+    },
+    {
+      "slug": "record-keeping",
+      "label": "Record Keeping"
+    },
+    {
+      "slug": "refinitiv-world-check",
+      "label": "Refinitiv World-Check"
+    },
+    {
+      "slug": "reporting-layer",
+      "label": "ReportingLayer"
+    },
+    {
+      "slug": "revolut",
+      "label": "Revolut"
+    },
+    {
+      "slug": "risk-based-approach",
+      "label": "Risk-Based Approach"
+    },
+    {
+      "slug": "risk-based-approach-methodology",
+      "label": "Risk-Based Approach Methodology"
+    },
+    {
+      "slug": "risk-management-framework",
+      "label": "Risk Management Framework"
+    },
+    {
+      "slug": "sanctions-and-anti-money-laundering-act-2018",
+      "label": "Sanctions and Anti-Money Laundering Act 2018"
+    },
+    {
+      "slug": "sanctions-enforcement",
+      "label": "Sanctions Enforcement"
+    },
+    {
+      "slug": "sanctions-list-feed",
+      "label": "Sanctions List Feed"
+    },
+    {
+      "slug": "sanctions-lists",
+      "label": "Sanctions Lists"
+    },
+    {
+      "slug": "sanctions-screening",
+      "label": "Sanctions Screening"
+    },
+    {
+      "slug": "sanctions-screening-engine",
+      "label": "Sanctions Screening Engine"
+    },
+    {
+      "slug": "sas-aml",
+      "label": "SAS AML"
+    },
+    {
+      "slug": "sas-anti-money-laundering",
+      "label": "SAS Anti-Money Laundering"
+    },
+    {
+      "slug": "sharman-2017-despot-s-guide-to-wealth-management",
+      "label": "Sharman 2017 Despot's Guide to Wealth Management"
+    },
+    {
+      "slug": "shyft-network",
+      "label": "Shyft Network"
+    },
+    {
+      "slug": "simplified-due-diligence",
+      "label": "Simplified Due Diligence"
+    },
+    {
+      "slug": "singapore-payment-services-act-2019-mas-notice-psn02",
+      "label": "Singapore Payment Services Act 2019 MAS Notice PSN02"
+    },
+    {
+      "slug": "source-of-funds-verification",
+      "label": "Source of Funds Verification"
+    },
+    {
+      "slug": "source-of-wealth-verification",
+      "label": "Source of Wealth Verification"
+    },
+    {
+      "slug": "square-block",
+      "label": "Square / Block"
+    },
+    {
+      "slug": "staff-training-programme",
+      "label": "Staff Training Programme"
+    },
+    {
+      "slug": "stripe",
+      "label": "Stripe"
+    },
+    {
+      "slug": "sumsub",
+      "label": "Sumsub"
+    },
+    {
+      "slug": "suspicious-activity-report",
+      "label": "Suspicious Activity Report"
+    },
+    {
+      "slug": "sygna-bridge",
+      "label": "Sygna Bridge"
+    },
+    {
+      "slug": "takats-2011-crying-wolf-money-laundering-enforcement",
+      "label": "Takats 2011 Crying Wolf Money Laundering Enforcement"
+    },
+    {
+      "slug": "tax-evasion-detection",
+      "label": "Tax Evasion Detection"
+    },
+    {
+      "slug": "tax-justice-network-2024-financial-secrecy-index",
+      "label": "Tax Justice Network 2024 Financial Secrecy Index"
+    },
+    {
+      "slug": "td-bank-aml-settlement",
+      "label": "TD Bank AML Settlement"
+    },
+    {
+      "slug": "terrorist-financing-disruption",
+      "label": "Terrorist Financing Disruption"
+    },
+    {
+      "slug": "theta-ray",
+      "label": "ThetaRay"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "transaction-monitoring",
+      "label": "Transaction Monitoring"
+    },
+    {
+      "slug": "travel-rule-compliance",
+      "label": "Travel Rule Compliance"
+    },
+    {
+      "slug": "travel-rule-protocol",
+      "label": "Travel Rule Protocol"
+    },
+    {
+      "slug": "trm-labs",
+      "label": "TRM Labs"
+    },
+    {
+      "slug": "trp",
+      "label": "TRP"
+    },
+    {
+      "slug": "trulioo",
+      "label": "Trulioo"
+    },
+    {
+      "slug": "trust",
+      "label": "TRUST"
+    },
+    {
+      "slug": "uk-mlr-2017",
+      "label": "UK MLR 2017"
+    },
+    {
+      "slug": "uk-mlr-2017-si-2017-692",
+      "label": "UK MLR 2017 SI 2017-692"
+    },
+    {
+      "slug": "unhosted-wallet",
+      "label": "Unhosted Wallet"
+    },
+    {
+      "slug": "usa-patriot-act-2001",
+      "label": "USA PATRIOT Act 2001"
+    },
+    {
+      "slug": "vasp-licensing",
+      "label": "VASP Licensing"
+    },
+    {
+      "slug": "vasp-market-access",
+      "label": "VASP Market Access"
+    },
+    {
+      "slug": "veriff",
+      "label": "Veriff"
+    },
+    {
+      "slug": "verify-vasp",
+      "label": "VerifyVASP"
+    },
+    {
+      "slug": "veriscope",
+      "label": "Veriscope"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials-data-model-v2-0",
+      "label": "W3C Verifiable Credentials Data Model v2.0"
+    },
+    {
+      "slug": "wise",
+      "label": "Wise"
+    },
+    {
+      "slug": "worldpay",
+      "label": "Worldpay"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
+    },
+    {
+      "slug": "zero-knowledge-kyc",
+      "label": "Zero-Knowledge KYC"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

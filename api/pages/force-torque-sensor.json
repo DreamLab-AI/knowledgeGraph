@@ -1,0 +1,154 @@
+{
+  "id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13",
+  "title": "Force Torque Sensor",
+  "slug": "force-torque-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:force-torque-sensor",
+  "domain": "robotics",
+  "definition": "**Force-Torque Sensor** - A multi-axis transducer mounted on the [[Robot Wrist]] that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling [[Force Feedback]], [[Contact Detection]], and [[Compliance Control]] in precision manipulation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "qualityScore": 0.63,
+  "authorityScore": 0.17,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-amplification",
+        "label": "Signal Amplification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-processing",
+        "label": "Data Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:precision-assembly",
+        "label": "Precision Assembly"
+      },
+      {
+        "id": "urn:visionflow:linked:soft-robotic-grasping",
+        "label": "Soft Robotic Grasping"
+      },
+      {
+        "id": "urn:visionflow:owl:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "contact-detection",
+      "label": "Contact Detection"
+    },
+    {
+      "slug": "force-feedback",
+      "label": "Force Feedback"
+    },
+    {
+      "slug": "haptic-feedback-system",
+      "label": "Haptic Feedback System"
+    },
+    {
+      "slug": "precision-assembly",
+      "label": "Precision Assembly"
+    },
+    {
+      "slug": "robot-wrist",
+      "label": "Robot Wrist"
+    },
+    {
+      "slug": "signal-amplification",
+      "label": "Signal Amplification"
+    },
+    {
+      "slug": "soft-robotic-grasping",
+      "label": "Soft Robotic Grasping"
+    },
+    {
+      "slug": "wrist-assembly",
+      "label": "Wrist Assembly"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

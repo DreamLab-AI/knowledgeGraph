@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:a4c563bbff1744fb2c273d440bc030cc16042c18d99f8e3d7b0a1a487f7540c2",
+  "title": "Format Parser",
+  "slug": "format-parser",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:format-parser",
+  "domain": "spatial-computing",
+  "definition": "Software components that interpret and convert various 3D asset file formats (glTF, USD, FBX, OBJ) into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-processing",
+      "label": "Data Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-content",
+        "label": "Cross-Platform Content"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-platform-content",
+      "label": "Cross-Platform Content"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    }
+  ]
+}

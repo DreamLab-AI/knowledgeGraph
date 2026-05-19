@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:7b3e07f5f27ec5ff34803ee69574486da86a4459f04f9d5d287893dd9eaf28f2",
+  "title": "Data Sharing",
+  "slug": "data-sharing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-sharing",
+  "domain": "infrastructure",
+  "definition": "Data Sharing is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "privacy-preserving-data-sharing",
+      "label": "Privacy Preserving Data Sharing"
+    },
+    {
+      "slug": "system-interoperability",
+      "label": "System Interoperability"
+    }
+  ]
+}

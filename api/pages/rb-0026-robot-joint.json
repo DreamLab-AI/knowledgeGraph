@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:8d93237da892c88899720aae860c063774418e6af4accaeba546eb98516a81ca",
+  "title": "rb 0026 robot joint",
+  "slug": "rb-0026-robot-joint",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0026-robot-joint",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

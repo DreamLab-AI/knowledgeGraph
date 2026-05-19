@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2",
+  "title": "Shared Whiteboards",
+  "slug": "shared-whiteboards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shared-whiteboards",
+  "domain": "distributed-collaboration",
+  "definition": "\"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-028-horizon-workrooms",
+      "label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "slug": "tele-301-virtual-office-spaces",
+      "label": "TELE-301-virtual-office-spaces"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

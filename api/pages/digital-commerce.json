@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:a9febedee20316975749acbdc148100f270ad4ed89ce99385b1d414fd531e389",
+  "title": "Digital Commerce",
+  "slug": "digital-commerce",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-commerce",
+  "domain": "spatial-computing",
+  "definition": "Digital Commerce is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "marketplace-integration",
+      "label": "Marketplace Integration"
+    }
+  ]
+}

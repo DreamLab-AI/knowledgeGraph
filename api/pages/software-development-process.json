@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:a5e2a47e89cbd6fc993dbb5e81edfefa02e0011ef61643e724caf4601bc1e77d",
+  "title": "Software Development Process",
+  "slug": "software-development-process",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:software-development-process",
+  "domain": "artificial-intelligence",
+  "definition": "Software Development Process for AI encompasses methodologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI development, data-centric workflows, experiment tracking, model validation protocols, and MLOps practices. Key activities span problem formulation, data collection and labeling, exploratory data analysis, model prototyping, hyperparameter tuning, production deployment, monitoring, and continuous improvement. Modern processes emphasize cross-functional collaboration, reproducibility, version control (code, data, models), and ethical considerations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agile-development",
+      "label": "Agile Development"
+    },
+    {
+      "slug": "dev-ops",
+      "label": "DevOps"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    }
+  ],
+  "backlinks": []
+}

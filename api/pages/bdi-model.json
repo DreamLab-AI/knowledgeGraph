@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6",
+  "title": "BDI Model",
+  "slug": "bdi-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bdi-model",
+  "domain": "artificial-intelligence",
+  "definition": "BDI Model is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-architecture",
+      "label": "Agent Architecture"
+    },
+    {
+      "slug": "deliberative-architecture",
+      "label": "Deliberative Architecture"
+    },
+    {
+      "slug": "hybrid-architecture",
+      "label": "Hybrid Architecture"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "plan",
+      "label": "Plan"
+    },
+    {
+      "slug": "practical-reasoning",
+      "label": "Practical Reasoning"
+    },
+    {
+      "slug": "reactive-architecture",
+      "label": "Reactive Architecture"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "goal",
+      "label": "Goal"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "goal",
+      "label": "Goal"
+    }
+  ]
+}

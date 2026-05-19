@@ -1,21 +1,280 @@
-iri:: http://narrativegoldmine.com/blockchain#DecentralizedAutonomousOrganization
-uri:: urn:visionclaw:concept:blockchain:decentralized-autonomous-organization
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:decentralized-autonomous-organization
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Decentralized Autonomous Organization
-content-hash:: sha256-12-3412cf501d1a
-legacy-term-id:: BC-0461
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#DecentralizedAutonomousOrganization
+legacy_uri:: urn:visionclaw:concept:blockchain:decentralized-autonomous-organization
 public:: true
+
+# Decentralized Autonomous Organization
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:991330d20554dbb3ac80ac05ada362e40c4d844c57e226a9224e6c52e2dbcdb0",
+  "@type": "Page",
+  "vc:slug": "decentralized-autonomous-organization",
+  "title": "Decentralized Autonomous Organization",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bc-0142-smart-contract",
+      "vc:label": "BC-0142-smart-contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0201-decentralization",
+      "vc:label": "BC-0201-decentralization"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0462-on-chain-voting",
+      "vc:label": "BC-0462-on-chain-voting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0463-governance-token",
+      "vc:label": "BC-0463-governance-token"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0464-treasury-management",
+      "vc:label": "BC-0464-treasury-management"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0465-proposal-system",
+      "vc:label": "BC-0465-proposal-system"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-governance",
+      "vc:label": "Distributed Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3412cf501d1a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#DecentralizedAutonomousOrganization"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0461"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Decentralized Autonomous Organization"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:decentralized-autonomous-organization"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:decentralized-autonomous-organization"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:991330d20554dbb3ac80ac05ada362e40c4d844c57e226a9224e6c52e2dbcdb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:decentralized-autonomous-organization",
+  "@type": "OntologyClass",
+  "label": "Decentralized Autonomous Organization",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:991330d20554dbb3ac80ac05ada362e40c4d844c57e226a9224e6c52e2dbcdb0"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:991330d20554dbb3ac80ac05ada362e40c4d844c57e226a9224e6c52e2dbcdb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An organisational entity operating through [[Smart Contracts]], [[Distributed Governance]], and community voting mechanisms without centralised authority or hierarchical control. Decentralised Autonomous Organisations enable transparent resource allocation, democratic decision-making, and distributed treasury management at global scale.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:decentralized-autonomous-organization:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:991330d20554dbb3ac80ac05ada362e40c4d844c57e226a9224e6c52e2dbcdb0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BC-0142-smart-contract]]",
+      "resolved": "urn:visionflow:linked:bc-0142-smart-contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0201-decentralization]]",
+      "resolved": "urn:visionflow:linked:bc-0201-decentralization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0462-on-chain-voting]]",
+      "resolved": "urn:visionflow:linked:bc-0462-on-chain-voting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0463-governance-token]]",
+      "resolved": "urn:visionflow:linked:bc-0463-governance-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0464-treasury-management]]",
+      "resolved": "urn:visionflow:linked:bc-0464-treasury-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0465-proposal-system]]",
+      "resolved": "urn:visionflow:linked:bc-0465-proposal-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Governance]]",
+      "resolved": "urn:visionflow:linked:distributed-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Economy]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:991330d20554dbb3ac80ac05ada362e40c4d844c57e226a9224e6c52e2dbcdb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An organisational entity operating through [[Smart Contracts]], [[Distributed Governance]], and community voting mechanisms without centralised authority or hierarchical control. Decentralised Autonomous Organisations enable transparent resource allocation, democratic decision-making, and distributed treasury management at global scale.

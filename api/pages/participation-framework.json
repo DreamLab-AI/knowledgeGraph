@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8",
+  "title": "Participation Framework",
+  "slug": "participation-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:participation-framework",
+  "domain": "spatial-computing",
+  "definition": "A structured approach to designing stakeholder engagement processes that establish goals, principles, methods, and mechanisms for involving citizens, communities, or users in decision-making, governance, and collaborative activities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:inclusive-decision-making",
+        "label": "Inclusive Decision Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inclusive-decision-making",
+      "label": "Inclusive Decision Making"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    }
+  ]
+}

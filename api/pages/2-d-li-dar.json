@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:e3b06892a21a4e08f73d6d8b0e4f4ac671f722e441ab83cc96061dfb8b2d0469",
+  "title": "2D LiDAR",
+  "slug": "2-d-li-dar",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:2-d-li-dar",
+  "domain": "robotics",
+  "definition": "2D LiDAR scans single horizontal or vertical plane for obstacle detection.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:lidar",
+      "label": "Lidar"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

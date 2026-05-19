@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11",
+  "title": "Food Safety Blockchain",
+  "slug": "food-safety-blockchain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:food-safety-blockchain",
+  "domain": "blockchain",
+  "definition": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers. Major implementations including IBM Food Trust (500+ participants including Walmart, Carrefour, Dole, Nestl\u00e9) and VeChain's Walmart China deployment demonstrate transformative impact on the \u00a355 billion annual foodborne illness problem affecting 48 million Americans, with 50-70% reductions in trace-back time and 30% sales increases for blockchain-tracked products through enhanced consumer trust.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.91,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0013-smart-contracts",
+      "label": "BC-0013-smart-contracts"
+    },
+    {
+      "slug": "bc-0029-permissioned-blockchain",
+      "label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0044-supply-chain-management",
+      "label": "BC-0044-supply-chain-management"
+    },
+    {
+      "slug": "bc-0067-hyperledger-fabric",
+      "label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0214-environmental-sustainability",
+      "label": "BC-0214-environmental-sustainability"
+    },
+    {
+      "slug": "bc-0432-consortium-blockchain",
+      "label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "slug": "bc-0434-blockchain-as-a-service",
+      "label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "slug": "bc-0441-provenance-tracking",
+      "label": "BC-0441-provenance-tracking"
+    },
+    {
+      "slug": "bc-0442-pharmaceutical-traceability",
+      "label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "grass-roots-farmers-cooperative",
+      "label": "Grass Roots Farmers' Cooperative"
+    },
+    {
+      "slug": "gs1",
+      "label": "GS1"
+    },
+    {
+      "slug": "gs1-blockchain-working-group",
+      "label": "GS1 Blockchain Working Group"
+    },
+    {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "origin-trail",
+      "label": "OriginTrail"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "ripe-io",
+      "label": "Ripe.io"
+    },
+    {
+      "slug": "safe-traces",
+      "label": "SafeTraces"
+    },
+    {
+      "slug": "te-food",
+      "label": "TE-FOOD"
+    },
+    {
+      "slug": "too-good-to-go",
+      "label": "Too Good To Go"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    },
+    {
+      "slug": "winnow",
+      "label": "Winnow"
+    },
+    {
+      "slug": "zest-labs",
+      "label": "Zest Labs"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": []
+}

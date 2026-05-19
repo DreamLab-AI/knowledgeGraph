@@ -1,20 +1,564 @@
-iri:: http://narrativegoldmine.com/ontology#ContentAddressing
-uri:: urn:visionclaw:concept:blockchain:content-addressing
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:content-addressing
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Content Addressing
-content-hash:: sha256-12-a2b3c4d5e6f7
-status:: complete
-maturity:: established
-quality-score:: 0.92
-authority-score:: 0.96
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#ContentAddressing
+legacy_uri:: urn:visionclaw:concept:blockchain:content-addressing
 public:: true
+
+# Content Addressing
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f",
+  "@type": "Page",
+  "vc:slug": "content-addressing",
+  "title": "Content Addressing",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adr-013",
+      "vc:label": "ADR-013"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-hash-functions",
+      "vc:label": "Blockchain Hash Functions"
+    },
+    {
+      "@id": "urn:visionflow:linked:canonical-json",
+      "vc:label": "Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-addressed-storage-principles",
+      "vc:label": "Content-Addressed Storage Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-hash",
+      "vc:label": "Content Hash"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-hash",
+      "vc:label": "Content Hash"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-integritydomain",
+      "vc:label": "DataIntegritydomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-storage",
+      "vc:label": "Decentralised Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:deduplication",
+      "vc:label": "Deduplication"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-encoding",
+      "vc:label": "Deterministic Encoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-serialisation",
+      "vc:label": "Deterministic Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-hash-table",
+      "vc:label": "Distributed Hash Table"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "vc:label": "DistributedSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:git-object-addressing",
+      "vc:label": "Git Object Addressing"
+    },
+    {
+      "@id": "urn:visionflow:linked:git-objects",
+      "vc:label": "Git Objects"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-minting",
+      "vc:label": "Hash Minting"
+    },
+    {
+      "@id": "urn:visionflow:linked:identifier-layer",
+      "vc:label": "IdentifierLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:ipfs-content-addressing",
+      "vc:label": "IPFS Content Addressing"
+    },
+    {
+      "@id": "urn:visionflow:linked:merkle-dags",
+      "vc:label": "Merkle DAGs"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-relay",
+      "vc:label": "Nostr Relay"
+    },
+    {
+      "@id": "urn:visionflow:linked:permanent-referenceability",
+      "vc:label": "Permanent Referenceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8785",
+      "vc:label": "RFC 8785"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8785-canonical-json",
+      "vc:label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:sha-256-hashing",
+      "vc:label": "SHA-256 Hashing"
+    },
+    {
+      "@id": "urn:visionflow:linked:sha-256-standard",
+      "vc:label": "SHA-256 Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-pod-storage",
+      "vc:label": "Solid Pod Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-detection",
+      "vc:label": "Tamper Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immutability",
+      "vc:label": "Immutability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:merkle-tree",
+      "vc:label": "Merkle Tree"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:privacy-filter",
+      "vc:label": "Privacy Filter"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.96"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a2b3c4d5e6f7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#ContentAddressing"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Content Addressing"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.92"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:content-addressing"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:content-addressing"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:content-addressing",
+  "@type": "OntologyClass",
+  "label": "Content Addressing",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "Data Layer"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its [[Content Hash|cryptographic content hash]] (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling [[VisionClaw Agentic Container|VisionClaw]] artefacts (credentials, receipts, events, pods, activities) to be referenced by their content rather than by location or opaque identifiers.",
+  "vc:qualityScore": {
+    "@value": "0.92",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.96",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:content-hash",
+      "vc:label": "Content Hash"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-serialisation",
+      "vc:label": "Deterministic Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-minting",
+      "vc:label": "Hash Minting"
+    },
+    {
+      "@id": "urn:visionflow:linked:sha-256-hashing",
+      "vc:label": "SHA-256 Hashing"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:canonical-json",
+      "vc:label": "Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash-function",
+      "vc:label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-encoding",
+      "vc:label": "Deterministic Encoding"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:decentralised-storage",
+      "vc:label": "Decentralised Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:deduplication",
+      "vc:label": "Deduplication"
+    },
+    {
+      "@id": "urn:visionflow:linked:permanent-referenceability",
+      "vc:label": "Permanent Referenceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-detection",
+      "vc:label": "Tamper Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immutability",
+      "vc:label": "Immutability"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:content-addressed-storage-principles",
+      "vc:label": "Content-Addressed Storage Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:git-object-addressing",
+      "vc:label": "Git Object Addressing"
+    },
+    {
+      "@id": "urn:visionflow:linked:ipfs-content-addressing",
+      "vc:label": "IPFS Content Addressing"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-hash-functions",
+      "vc:label": "Blockchain Hash Functions"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-hash-table",
+      "vc:label": "Distributed Hash Table"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:merkle-tree",
+      "vc:label": "Merkle Tree"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:content-addressing:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ADR-013]]",
+      "resolved": "urn:visionflow:linked:adr-013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Hash Functions]]",
+      "resolved": "urn:visionflow:linked:blockchain-hash-functions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Canonical JSON]]",
+      "resolved": "urn:visionflow:linked:canonical-json",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content-Addressed Storage Principles]]",
+      "resolved": "urn:visionflow:linked:content-addressed-storage-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Hash]]",
+      "resolved": "urn:visionflow:linked:content-hash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Hash|cryptographic content hash]]",
+      "resolved": "urn:visionflow:linked:content-hash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Hash Function]]",
+      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataIntegritydomain]]",
+      "resolved": "urn:visionflow:linked:data-integritydomain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Storage]]",
+      "resolved": "urn:visionflow:linked:decentralised-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deduplication]]",
+      "resolved": "urn:visionflow:linked:deduplication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deterministic Encoding]]",
+      "resolved": "urn:visionflow:linked:deterministic-encoding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deterministic Serialisation]]",
+      "resolved": "urn:visionflow:linked:deterministic-serialisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Hash Table]]",
+      "resolved": "urn:visionflow:linked:distributed-hash-table",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DistributedSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Git Object Addressing]]",
+      "resolved": "urn:visionflow:linked:git-object-addressing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Git Objects]]",
+      "resolved": "urn:visionflow:linked:git-objects",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash Minting]]",
+      "resolved": "urn:visionflow:linked:hash-minting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IdentifierLayer]]",
+      "resolved": "urn:visionflow:linked:identifier-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IPFS Content Addressing]]",
+      "resolved": "urn:visionflow:linked:ipfs-content-addressing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Merkle DAGs]]",
+      "resolved": "urn:visionflow:linked:merkle-dags",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Relay|Nostr relay]]",
+      "resolved": "urn:visionflow:linked:nostr-relay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Permanent Referenceability]]",
+      "resolved": "urn:visionflow:linked:permanent-referenceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 8785]]",
+      "resolved": "urn:visionflow:linked:rfc-8785",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 8785 Canonical JSON]]",
+      "resolved": "urn:visionflow:linked:rfc-8785-canonical-json",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHA-256 Hashing]]",
+      "resolved": "urn:visionflow:linked:sha-256-hashing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHA-256 Standard]]",
+      "resolved": "urn:visionflow:linked:sha-256-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Pod Storage|Solid pod]]",
+      "resolved": "urn:visionflow:linked:solid-pod-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tamper Detection]]",
+      "resolved": "urn:visionflow:linked:tamper-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Immutability]]",
+      "resolved": "urn:visionflow:owl:class:immutability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Merkle Tree]]",
+      "resolved": "urn:visionflow:owl:class:merkle-tree",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Privacy Filter|privacy-preserving hashing]]",
+      "resolved": "urn:visionflow:owl:class:privacy-filter",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser|VisionClaw URI grammar]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container|VisionClaw]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its [[Content Hash|cryptographic content hash]] (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling [[VisionClaw Agentic Container|VisionClaw]] artefacts (credentials, receipts, events, pods, activities) to be referenced by their content rather than by location or opaque identifiers.

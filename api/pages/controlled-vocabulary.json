@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:998223d0181c56e2f1503bf76e43d9755ecf80345aa4e184355f35e19a80570a",
+  "title": "Controlled Vocabulary",
+  "slug": "controlled-vocabulary",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:controlled-vocabulary",
+  "domain": "spatial-computing",
+  "definition": "A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:information-architecture",
+      "label": "Information Architecture"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:domain-expertise",
+        "label": "Domain Expertise"
+      },
+      {
+        "id": "urn:visionflow:linked:maintenance-process",
+        "label": "Maintenance Process"
+      },
+      {
+        "id": "urn:visionflow:linked:term-governance",
+        "label": "Term Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accurate-retrieval",
+        "label": "Accurate Retrieval"
+      },
+      {
+        "id": "urn:visionflow:linked:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:visionflow:linked:data-standardization",
+        "label": "Data Standardization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accurate-retrieval",
+      "label": "Accurate Retrieval"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "data-standardization",
+      "label": "Data Standardization"
+    },
+    {
+      "slug": "domain-expertise",
+      "label": "Domain Expertise"
+    },
+    {
+      "slug": "maintenance-process",
+      "label": "Maintenance Process"
+    },
+    {
+      "slug": "term-governance",
+      "label": "Term Governance"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "information-architecture",
+      "label": "Information Architecture"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "glossary-index",
+      "label": "Glossary Index"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    }
+  ]
+}

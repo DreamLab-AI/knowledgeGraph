@@ -1,21 +1,279 @@
-iri:: http://narrativegoldmine.com/metaverse#ExplainableAI
-uri:: urn:visionclaw:concept:artificial-intelligence:explainable-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:explainable-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Explainable AI
-content-hash:: sha256-12-1cb77c907da0
-legacy-term-id:: AI-0296
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ExplainableAI
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:explainable-ai
 public:: true
+
+# Explainable AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e2346582c4b057f3c38d8b0caafe19a92f37fc554806d5d14f70bc73f3ef0f10",
+  "@type": "Page",
+  "vc:slug": "explainable-ai",
+  "title": "Explainable AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:algorithmic-transparency",
+      "vc:label": "Algorithmic Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-p2976-xai",
+      "vc:label": "IEEE P2976 (XAI)"
+    },
+    {
+      "@id": "urn:visionflow:linked:lime",
+      "vc:label": "LIME"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap",
+      "vc:label": "SHAP"
+    },
+    {
+      "@id": "urn:visionflow:linked:xai-methods",
+      "vc:label": "XAI Methods"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interpretable-ai",
+      "vc:label": "Interpretable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intrinsic-interpretability",
+      "vc:label": "Intrinsic Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-interpretability",
+      "vc:label": "Model Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:post-hoc-explanation",
+      "vc:label": "Post Hoc Explanation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1cb77c907da0"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ExplainableAI"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0296"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Explainable AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:explainable-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:explainable-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e2346582c4b057f3c38d8b0caafe19a92f37fc554806d5d14f70bc73f3ef0f10@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:explainable-ai",
+  "@type": "OntologyClass",
+  "label": "Explainable AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e2346582c4b057f3c38d8b0caafe19a92f37fc554806d5d14f70bc73f3ef0f10"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e2346582c4b057f3c38d8b0caafe19a92f37fc554806d5d14f70bc73f3ef0f10@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI systems designed to provide clear, understandable explanations of their decision-making processes, enabling stakeholders to comprehend how and why specific outputs are generated.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:explainable-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e2346582c4b057f3c38d8b0caafe19a92f37fc554806d5d14f70bc73f3ef0f10"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Algorithmic Transparency]]",
+      "resolved": "urn:visionflow:linked:algorithmic-transparency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE P2976 (XAI)]]",
+      "resolved": "urn:visionflow:linked:ieee-p2976-xai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LIME]]",
+      "resolved": "urn:visionflow:linked:lime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHAP]]",
+      "resolved": "urn:visionflow:linked:shap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[XAI Methods]]",
+      "resolved": "urn:visionflow:linked:xai-methods",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interpretable AI]]",
+      "resolved": "urn:visionflow:owl:class:interpretable-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Intrinsic Interpretability]]",
+      "resolved": "urn:visionflow:owl:class:intrinsic-interpretability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Interpretability]]",
+      "resolved": "urn:visionflow:owl:class:model-interpretability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Post Hoc Explanation]]",
+      "resolved": "urn:visionflow:owl:class:post-hoc-explanation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e2346582c4b057f3c38d8b0caafe19a92f37fc554806d5d14f70bc73f3ef0f10@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI systems designed to provide clear, understandable explanations of their decision-making processes, enabling stakeholders to comprehend how and why specific outputs are generated.
@@ -97,7 +355,7 @@ public:: true
   ## Related Terms
 
   - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
-  - **Narrower**: [[Interpretable AI]], [[Post-Hoc Explanation]], [[Intrinsic Interpretability]]
+  - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
   - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 
   ## Formal Specification
@@ -240,7 +498,7 @@ public:: true
   ## Related Terms
 
   - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
-  - **Narrower**: [[Interpretable AI]], [[Post-Hoc Explanation]], [[Intrinsic Interpretability]]
+  - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
   - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 
   ## Formal Specification
@@ -421,7 +679,7 @@ public:: true
 		  ## Related Terms
 
 		  - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
-		  - **Narrower**: [[Interpretable AI]], [[Post-Hoc Explanation]], [[Intrinsic Interpretability]]
+		  - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
 		  - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 
 		  ## Formal Specification

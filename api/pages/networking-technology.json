@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:bd78f37f5de175acfe64e91963e3bd081b868db5b8be26835e0ef561bb63ce61",
+  "title": "Networking Technology",
+  "slug": "networking-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:networking-technology",
+  "domain": "infrastructure",
+  "definition": "NetworkingTechnology is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

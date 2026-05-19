@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:3571ef3520d3dcea85f8b6e116945957ea6667b1dc87fe9b720043fc139c16dc",
+  "title": "Environmental K P I",
+  "slug": "environmental-k-p-i",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-k-p-i",
+  "domain": "spatial-computing",
+  "definition": "Environmental K P I is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

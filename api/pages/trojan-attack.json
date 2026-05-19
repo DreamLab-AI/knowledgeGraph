@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:0923bd24644926dcd4d67fbffc1c3aea1a65ba4f09bdeef2eecf2c8904e9b47f",
+  "title": "Trojan Attack",
+  "slug": "trojan-attack",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trojan-attack",
+  "domain": "spatial-computing",
+  "definition": "A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific attacker-defined behaviors when activated, while maintaining normal performance otherwise.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

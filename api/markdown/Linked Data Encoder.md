@@ -1,20 +1,528 @@
-iri:: http://narrativegoldmine.com/infrastructure#LinkedDataEncoder
-uri:: urn:visionclaw:concept:infrastructure:linked-data-encoder
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:linked-data-encoder
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Linked Data Encoder
-content-hash:: sha256-12-f6a7b8c9dae0
-status:: complete
-maturity:: established
-quality-score:: 0.87
-authority-score:: 0.91
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#LinkedDataEncoder
+legacy_uri:: urn:visionclaw:concept:infrastructure:linked-data-encoder
 public:: true
+
+# Linked Data Encoder
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7",
+  "@type": "Page",
+  "vc:slug": "linked-data-encoder",
+  "title": "Linked Data Encoder",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adr-012",
+      "vc:label": "ADR-012"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:canonical-json",
+      "vc:label": "Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-pinning",
+      "vc:label": "Context Pinning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-system-querying",
+      "vc:label": "Cross-System Querying"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-integration-domain",
+      "vc:label": "DataIntegrationDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoding-layer",
+      "vc:label": "EncodingLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1-spec",
+      "vc:label": "JSON-LD 1.1 Spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1-standard",
+      "vc:label": "JSON-LD 1.1 Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-context",
+      "vc:label": "JSON-LD Context"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-context",
+      "vc:label": "JSON-LD Context"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph-integration",
+      "vc:label": "Knowledge Graph Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:linked-data-consumption",
+      "vc:label": "Linked Data Consumption"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-semantics",
+      "vc:label": "RDF Semantics"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-store",
+      "vc:label": "RDF Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8785-canonical-json",
+      "vc:label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-federation",
+      "vc:label": "Semantic Federation"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-mapping",
+      "vc:label": "Semantic Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web-domain",
+      "vc:label": "SemanticWebDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-pod-storage",
+      "vc:label": "Solid Pod Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:uri-resolution",
+      "vc:label": "URI Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-linked-data",
+      "vc:label": "W3C Linked Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "vc:label": "W3C Linked Data Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-vocabulary",
+      "vc:label": "W3C Vocabulary"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:federation-surface",
+      "vc:label": "Federation Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-web",
+      "vc:label": "Semantic Web"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.91"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f6a7b8c9dae0"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#LinkedDataEncoder"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Linked Data Encoder"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.87"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:linked-data-encoder"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:linked-data-encoder"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:linked-data-encoder",
+  "@type": "OntologyClass",
+  "label": "Linked Data Encoder",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "Data Layer"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into [[JSON-LD 1.1]] format using pinned, versioned [[JSON-LD Context|W3C JSON-LD contexts]], enabling standardised [[Federation Surface|federation surfaces]] (S1–S11) that are queryable, linkable, and machine-readable without agent-specific API adapters.",
+  "vc:qualityScore": {
+    "@value": "0.87",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.91",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:context-pinning",
+      "vc:label": "Context Pinning"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-context",
+      "vc:label": "JSON-LD Context"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-mapping",
+      "vc:label": "Semantic Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:uri-resolution",
+      "vc:label": "URI Resolution"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:canonical-json",
+      "vc:label": "Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1-standard",
+      "vc:label": "JSON-LD 1.1 Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-vocabulary",
+      "vc:label": "W3C Vocabulary"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-system-querying",
+      "vc:label": "Cross-System Querying"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph-integration",
+      "vc:label": "Knowledge Graph Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:linked-data-consumption",
+      "vc:label": "Linked Data Consumption"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-federation",
+      "vc:label": "Semantic Federation"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf-semantics",
+      "vc:label": "RDF Semantics"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-linked-data",
+      "vc:label": "W3C Linked Data"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:rdf-store",
+      "vc:label": "RDF Store"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-web",
+      "vc:label": "Semantic Web"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:linked-data-encoder:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ADR-012]]",
+      "resolved": "urn:visionflow:linked:adr-012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Canonical JSON]]",
+      "resolved": "urn:visionflow:linked:canonical-json",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Context Pinning]]",
+      "resolved": "urn:visionflow:linked:context-pinning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-System Querying]]",
+      "resolved": "urn:visionflow:linked:cross-system-querying",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataIntegrationDomain]]",
+      "resolved": "urn:visionflow:linked:data-integration-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EncodingLayer]]",
+      "resolved": "urn:visionflow:linked:encoding-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1 Spec]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1-spec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1 Standard]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD Context]]",
+      "resolved": "urn:visionflow:linked:json-ld-context",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD Context|W3C JSON-LD contexts]]",
+      "resolved": "urn:visionflow:linked:json-ld-context",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Graph Integration]]",
+      "resolved": "urn:visionflow:linked:knowledge-graph-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Linked Data Consumption]]",
+      "resolved": "urn:visionflow:linked:linked-data-consumption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RDF Semantics]]",
+      "resolved": "urn:visionflow:linked:rdf-semantics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RDF Store]]",
+      "resolved": "urn:visionflow:linked:rdf-store",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 8785 Canonical JSON]]",
+      "resolved": "urn:visionflow:linked:rfc-8785-canonical-json",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Semantic Federation]]",
+      "resolved": "urn:visionflow:linked:semantic-federation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Semantic Mapping]]",
+      "resolved": "urn:visionflow:linked:semantic-mapping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SemanticWebDomain]]",
+      "resolved": "urn:visionflow:linked:semantic-web-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Pod Storage|Solid pods]]",
+      "resolved": "urn:visionflow:linked:solid-pod-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[URI Resolution]]",
+      "resolved": "urn:visionflow:linked:uri-resolution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Linked Data]]",
+      "resolved": "urn:visionflow:linked:w3-c-linked-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Linked Data Platform]]",
+      "resolved": "urn:visionflow:linked:w3-c-linked-data-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Vocabulary]]",
+      "resolved": "urn:visionflow:linked:w3-c-vocabulary",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Federation Surface|federation surfaces]]",
+      "resolved": "urn:visionflow:owl:class:federation-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Graph]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graph",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Semantic Web]]",
+      "resolved": "urn:visionflow:owl:class:semantic-web",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser|URI Canonicaliser]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into [[JSON-LD 1.1]] format using pinned, versioned [[JSON-LD Context|W3C JSON-LD contexts]], enabling standardised [[Federation Surface|federation surfaces]] (S1–S11) that are queryable, linkable, and machine-readable without agent-specific API adapters.

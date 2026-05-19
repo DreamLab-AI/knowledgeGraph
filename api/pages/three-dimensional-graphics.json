@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:6e17913d5db83e833ad994160def9b8102adc15601a2e3c1f1dc54a7d4083746",
+  "title": "Three Dimensional Graphics",
+  "slug": "three-dimensional-graphics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:three-dimensional-graphics",
+  "domain": "infrastructure",
+  "definition": "ThreeDimensionalGraphics is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:662132f30a866ee427fd48bac446488f1ad5e047c17f79efb64675beccfd5dcd",
+  "title": "AI Ethics Board",
+  "slug": "ai-ethics-board",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-ethics-board",
+  "domain": "artificial-intelligence",
+  "definition": "AI Ethics Board is a multidisciplinary oversight committee comprising technical experts, ethicists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ethical reviews of AI systems, providing guidance on ethical dilemmas, and exercising veto authority over AI deployments that violate ethical principles or organizational values. This governance body evaluates proposed AI systems against ethical frameworks, assesses potential harms and benefits, reviews fairness and bias implications, examines privacy and data protection compliance, and ensures alignment with responsible AI principles. The board operates through structured ethical review processes including proposal submission and screening, expert deliberation and assessment, stakeholder consultation and impact evaluation, ethical decision-making with documented rationale, and ongoing monitoring of deployed systems. Authority and scope typically include power to approve, conditionally approve with modifications, defer for additional information, or reject AI projects, mandate ethical impact assessments and fairness audits, require mitigation measures for identified risks, and escalat",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-hleg-ai",
+      "label": "EU HLEG AI"
+    },
+    {
+      "slug": "ieee-p7000",
+      "label": "IEEE P7000"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accountable-party",
+      "label": "Accountable Party"
+    }
+  ]
+}

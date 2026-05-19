@@ -1,0 +1,444 @@
+{
+  "id": "urn:visionflow:page:4834ea9bf67b50c52c55fcb437981e438db7b681b3d13e4889b9c399471bf1b0",
+  "title": "Kinematics Model",
+  "slug": "kinematics-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:kinematics-model",
+  "domain": "robotics",
+  "definition": "KinematicsModel is a mathematical representation of the geometric relationships between a robot's joint configuration space and its end-effector pose in Cartesian workspace coordinates, abstracting away forces and inertial effects to describe pure motion geometry. A kinematics model encodes the chain of rigid-body transformations connecting a robot's base frame to its tool centre point through a sequence of joints (revolute, prismatic, spherical, helical) and links, enabling bidirectional mapping: forward kinematics (FK) computes end-effector position and orientation T \u2208 SE(3) from joint angles q \u2208 \u211d\u207f via the composed homogeneous transformation T = T\u2081(q\u2081) \u00b7 T\u2082(q\u2082) \u00b7 \u00b7\u00b7\u00b7 \u00b7 T\u2099(q\u2099), while inverse kinematics (IK) inverts this map to recover joint configurations achieving a desired Cartesian pose, a generally nonlinear problem admitting closed-form solutions only for special kinematic architectures and otherwise requiring iterative or learning-based solvers. Differential kinematics extends the picture to velocities: the Jacobian matrix J(q) \u2208 \u211d\u2076\u02e3\u207f linearly maps joint velocities q\u0307 to end-effector twist \u1e8b = J(q)q\u0307, forming the basis for velocity-level control, force control, and singular",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:geometric-model",
+      "label": "Geometric Model"
+    },
+    {
+      "id": "urn:visionflow:linked:mathematical-model",
+      "label": "Mathematical Model"
+    },
+    {
+      "id": "urn:visionflow:linked:motion-model",
+      "label": "Motion Model"
+    },
+    {
+      "id": "urn:visionflow:linked:rigid-body-mechanics",
+      "label": "Rigid Body Mechanics"
+    },
+    {
+      "id": "urn:visionflow:linked:robot-model",
+      "label": "Robot Model"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cartesian-space",
+        "label": "Cartesian Space"
+      },
+      {
+        "id": "urn:visionflow:linked:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "id": "urn:visionflow:linked:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "id": "urn:visionflow:linked:joint-space",
+        "label": "Joint Space"
+      },
+      {
+        "id": "urn:visionflow:linked:redundancy-resolution",
+        "label": "Redundancy Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:screw-theory",
+        "label": "Screw Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:singularity-analysis",
+        "label": "Singularity Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:homogeneous-transformation",
+        "label": "Homogeneous Transformation"
+      },
+      {
+        "id": "urn:visionflow:linked:joint-configuration",
+        "label": "Joint Configuration"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-frames",
+        "label": "Reference Frames"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-description-format",
+        "label": "Robot Description Format"
+      },
+      {
+        "id": "urn:visionflow:linked:se-3-lie-group",
+        "label": "SE(3) Lie Group"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cartesian-impedance-control",
+        "label": "Cartesian Impedance Control"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-calibration",
+        "label": "Robot Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-servoing",
+        "label": "Visual Servoing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:closed-form-ik",
+        "label": "Closed-Form IK"
+      },
+      {
+        "id": "urn:visionflow:linked:dh-convention",
+        "label": "DH Convention"
+      },
+      {
+        "id": "urn:visionflow:linked:iterative-jacobian-solver",
+        "label": "Iterative Jacobian Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-inverse-kinematics",
+        "label": "Neural Inverse Kinematics"
+      },
+      {
+        "id": "urn:visionflow:linked:product-of-exponentials",
+        "label": "Product of Exponentials"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "autonomous-mobile-robots",
+      "label": "Autonomous Mobile Robots"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "cartesian-impedance-control",
+      "label": "Cartesian Impedance Control"
+    },
+    {
+      "slug": "cartesian-space",
+      "label": "Cartesian Space"
+    },
+    {
+      "slug": "closed-form-ik",
+      "label": "Closed-Form IK"
+    },
+    {
+      "slug": "computational-geometry-domain",
+      "label": "ComputationalGeometryDomain"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "ControlSystemsDomain"
+    },
+    {
+      "slug": "deformable-body-model",
+      "label": "Deformable Body Model"
+    },
+    {
+      "slug": "denavit-hartenberg-parameters",
+      "label": "Denavit-Hartenberg Parameters"
+    },
+    {
+      "slug": "dh-convention",
+      "label": "DH Convention"
+    },
+    {
+      "slug": "differential-geometry",
+      "label": "Differential Geometry"
+    },
+    {
+      "slug": "diffusion-policy",
+      "label": "Diffusion Policy"
+    },
+    {
+      "slug": "drake",
+      "label": "Drake"
+    },
+    {
+      "slug": "dynamics-model",
+      "label": "Dynamics Model"
+    },
+    {
+      "slug": "exoskeleton-control",
+      "label": "Exoskeleton Control"
+    },
+    {
+      "slug": "gazebo",
+      "label": "Gazebo"
+    },
+    {
+      "slug": "geometric-model",
+      "label": "Geometric Model"
+    },
+    {
+      "slug": "hardware-abstraction-layer",
+      "label": "HardwareAbstractionLayer"
+    },
+    {
+      "slug": "homogeneous-transformation",
+      "label": "Homogeneous Transformation"
+    },
+    {
+      "slug": "ieee-robotics-and-automation-society",
+      "label": "IEEE Robotics and Automation Society"
+    },
+    {
+      "slug": "industrial-manipulation",
+      "label": "Industrial Manipulation"
+    },
+    {
+      "slug": "iterative-jacobian-solver",
+      "label": "Iterative Jacobian Solver"
+    },
+    {
+      "slug": "jacobian-matrix",
+      "label": "Jacobian Matrix"
+    },
+    {
+      "slug": "joint-configuration",
+      "label": "Joint Configuration"
+    },
+    {
+      "slug": "joint-space",
+      "label": "Joint Space"
+    },
+    {
+      "slug": "kinetics-model",
+      "label": "Kinetics Model"
+    },
+    {
+      "slug": "legged-locomotion",
+      "label": "Legged Locomotion"
+    },
+    {
+      "slug": "lie-group-theory",
+      "label": "Lie Group Theory"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "manipulability-ellipsoid",
+      "label": "Manipulability Ellipsoid"
+    },
+    {
+      "slug": "mathematical-model",
+      "label": "Mathematical Model"
+    },
+    {
+      "slug": "mechanical-engineering-domain",
+      "label": "MechanicalEngineeringDomain"
+    },
+    {
+      "slug": "motion-model",
+      "label": "Motion Model"
+    },
+    {
+      "slug": "mu-jo-co",
+      "label": "MuJoCo"
+    },
+    {
+      "slug": "neural-inverse-kinematics",
+      "label": "Neural Inverse Kinematics"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "pinocchio-library",
+      "label": "Pinocchio Library"
+    },
+    {
+      "slug": "product-of-exponentials",
+      "label": "Product of Exponentials"
+    },
+    {
+      "slug": "redundancy-resolution",
+      "label": "Redundancy Resolution"
+    },
+    {
+      "slug": "reference-frames",
+      "label": "Reference Frames"
+    },
+    {
+      "slug": "rigid-body-mechanics",
+      "label": "Rigid Body Mechanics"
+    },
+    {
+      "slug": "robot-calibration",
+      "label": "Robot Calibration"
+    },
+    {
+      "slug": "robot-description-format",
+      "label": "Robot Description Format"
+    },
+    {
+      "slug": "robot-model",
+      "label": "Robot Model"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
+      "slug": "ros-industrial-consortium",
+      "label": "ROS Industrial Consortium"
+    },
+    {
+      "slug": "screw-theory",
+      "label": "Screw Theory"
+    },
+    {
+      "slug": "sdf",
+      "label": "SDF"
+    },
+    {
+      "slug": "se-3-lie-group",
+      "label": "SE(3) Lie Group"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "SimulationLayer"
+    },
+    {
+      "slug": "singularity-analysis",
+      "label": "Singularity Analysis"
+    },
+    {
+      "slug": "space-robotics",
+      "label": "Space Robotics"
+    },
+    {
+      "slug": "surgical-robotics",
+      "label": "Surgical Robotics"
+    },
+    {
+      "slug": "task-space-control",
+      "label": "Task Space Control"
+    },
+    {
+      "slug": "urdf",
+      "label": "URDF"
+    },
+    {
+      "slug": "urdf-specification",
+      "label": "URDF Specification"
+    },
+    {
+      "slug": "visual-servoing",
+      "label": "Visual Servoing"
+    },
+    {
+      "slug": "workspace-analysis",
+      "label": "Workspace Analysis"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "forward-kinematics",
+      "label": "Forward Kinematics"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "trajectory-generation",
+      "label": "Trajectory Generation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

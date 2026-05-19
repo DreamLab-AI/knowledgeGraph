@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:2c00f717e8db8f5557984d16622f20b6312b6d20eaf74c8dbbb00bdbd4850e05",
+  "title": "Text-to-3D",
+  "slug": "text-to-3-d",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:text-to-3-d",
+  "domain": "artificial-intelligence",
+  "definition": "Text-to-3D is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative Ai"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative Ai"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

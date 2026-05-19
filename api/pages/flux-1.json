@@ -1,0 +1,860 @@
+{
+  "id": "urn:visionflow:page:1baf3cc1aab2c0865f4839071dfff49c758b4ab5b6d4bb7d6cc9569c9b24019a",
+  "title": "Flux.1",
+  "slug": "flux-1",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:flux-1",
+  "domain": "artificial-intelligence",
+  "definition": "**Flux.1** (stylised **FLUX.1**) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Robin Rombach, Andreas Blattmann, Patrick Esser, Dominik Lorenz, Tim Dockhorn, Sumith Kulal and colleagues, most departing [[Stability AI]] in mid-2024 to establish BFL in Freiburg im Breisgau, Germany), comprising a tiered model lineup distinguished by licence and intended deployment surface\u2014**FLUX.1 [pro]** (closed-weights flagship accessed solely through the BFL API and partner endpoints fal.ai/Replicate/Together AI/AWS Bedrock with the highest measured quality), **FLUX.1 [dev]** (12-billion-parameter open-weights variant distributed under the bespoke FLUX.1 [dev] Non-Commercial Licence permitting research/personal/non-revenue use whilst requiring a separate commercial licence agreement for monetisation, distilled from pro via guidance distillation, accumulating 2M+ Hugging Face downloads within thirty days of release establishing it as the dominant open-weights image baseline by Q",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "id": "urn:visionflow:linked:foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "id": "urn:visionflow:linked:latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "id": "urn:visionflow:linked:multimodal-diffusion-transformer",
+      "label": "Multimodal Diffusion Transformer"
+    },
+    {
+      "id": "urn:visionflow:linked:rectified-flow-model",
+      "label": "Rectified Flow Model"
+    },
+    {
+      "id": "urn:visionflow:linked:text-to-image-model",
+      "label": "Text-to-Image Model"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:clip-l-encoder",
+        "label": "CLIP-L Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:distilled-classifier-free-guidance",
+        "label": "Distilled Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:flow-matching-objective",
+        "label": "Flow Matching Objective"
+      },
+      {
+        "id": "urn:visionflow:linked:multimodal-diffusion-transformer",
+        "label": "Multimodal Diffusion Transformer"
+      },
+      {
+        "id": "urn:visionflow:linked:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      },
+      {
+        "id": "urn:visionflow:linked:t5-xxl",
+        "label": "T5-XXL"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-distribution",
+        "label": "Training Data Distribution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:canny-conditioned-generation",
+        "label": "Canny-Conditioned Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:depth-conditioned-generation",
+        "label": "Depth-Conditioned Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-preserving-generation",
+        "label": "Identity-Preserving Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "id": "urn:visionflow:linked:image-variation",
+        "label": "Image Variation"
+      },
+      {
+        "id": "urn:visionflow:linked:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-image-synthesis",
+        "label": "Text-to-Image Synthesis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:adversarial-diffusion-distillation",
+        "label": "Adversarial Diffusion Distillation"
+      },
+      {
+        "id": "urn:visionflow:linked:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:guidance-distillation",
+        "label": "Guidance Distillation"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:rectified-flow",
+        "label": "Rectified Flow"
+      },
+      {
+        "id": "urn:visionflow:linked:timestep-distillation",
+        "label": "Timestep Distillation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a1111-forge",
+      "label": "A1111 Forge"
+    },
+    {
+      "slug": "adobe",
+      "label": "Adobe"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "adversarial-diffusion-distillation",
+      "label": "Adversarial Diffusion Distillation"
+    },
+    {
+      "slug": "ai-toolkit",
+      "label": "ai-toolkit"
+    },
+    {
+      "slug": "alimama-creative",
+      "label": "alimama-creative"
+    },
+    {
+      "slug": "aws-bedrock",
+      "label": "AWS Bedrock"
+    },
+    {
+      "slug": "banana",
+      "label": "Banana"
+    },
+    {
+      "slug": "bbc-r-and-d",
+      "label": "BBC R&D"
+    },
+    {
+      "slug": "black-forest-labs",
+      "label": "Black Forest Labs"
+    },
+    {
+      "slug": "black-forest-labs-2024-announcing-black-forest-labs",
+      "label": "Black Forest Labs 2024 Announcing Black Forest Labs"
+    },
+    {
+      "slug": "black-forest-labs-2024-flux-1-1-pro-and-bfl-api",
+      "label": "Black Forest Labs 2024 FLUX.1.1 pro and BFL API"
+    },
+    {
+      "slug": "black-forest-labs-2024-flux-1-tools-fill-depth-canny-redux",
+      "label": "Black Forest Labs 2024 FLUX.1 Tools Fill Depth Canny Redux"
+    },
+    {
+      "slug": "black-forest-labs-2025-flux-1-kontext",
+      "label": "Black Forest Labs 2025 FLUX.1 Kontext"
+    },
+    {
+      "slug": "brooks-et-al-2024-sora-technical-report",
+      "label": "Brooks et al. 2024 Sora Technical Report"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "canny-conditioned-generation",
+      "label": "Canny-Conditioned Generation"
+    },
+    {
+      "slug": "city96",
+      "label": "city96"
+    },
+    {
+      "slug": "civitai",
+      "label": "Civitai"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "clip-l-encoder",
+      "label": "CLIP-L Encoder"
+    },
+    {
+      "slug": "comfy-ui-flux-trainer",
+      "label": "ComfyUI-FluxTrainer"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "creative-ml-open-rail-m",
+      "label": "CreativeML Open RAIL-M"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
+      "slug": "depth-conditioned-generation",
+      "label": "Depth-Conditioned Generation"
+    },
+    {
+      "slug": "di-t",
+      "label": "DiT"
+    },
+    {
+      "slug": "differentiable-architecture",
+      "label": "Differentiable Architecture"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "distilled-classifier-free-guidance",
+      "label": "Distilled Classifier-Free Guidance"
+    },
+    {
+      "slug": "dpm-sampler",
+      "label": "DPM++ Sampler"
+    },
+    {
+      "slug": "esser-rombach-et-al-2024-stable-diffusion-3-rectified-flow-transformers",
+      "label": "Esser Rombach et al. 2024 Stable Diffusion 3 Rectified Flow Transformers"
+    },
+    {
+      "slug": "euler-sampler",
+      "label": "Euler Sampler"
+    },
+    {
+      "slug": "faculty-ai",
+      "label": "Faculty AI"
+    },
+    {
+      "slug": "fal-ai",
+      "label": "fal.ai"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "flow-matching-objective",
+      "label": "Flow Matching Objective"
+    },
+    {
+      "slug": "flux-1-redux",
+      "label": "FLUX.1 Redux"
+    },
+    {
+      "slug": "fluxgym",
+      "label": "fluxgym"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "fp8-quantisation",
+      "label": "fp8 quantisation"
+    },
+    {
+      "slug": "fp8-quantisation",
+      "label": "fp8 Quantisation"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gguf-quantisation",
+      "label": "GGUF quantisation"
+    },
+    {
+      "slug": "gguf-quantisation",
+      "label": "GGUF Quantisation"
+    },
+    {
+      "slug": "ghosh-hajishirzi-schmidt-2023-gen-eval",
+      "label": "Ghosh Hajishirzi Schmidt 2023 GenEval"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "guidance-distillation",
+      "label": "Guidance Distillation"
+    },
+    {
+      "slug": "guo-et-al-2023-animate-diff",
+      "label": "Guo et al. 2023 AnimateDiff"
+    },
+    {
+      "slug": "guo-et-al-2024-pu-lid-identity-customization",
+      "label": "Guo et al. 2024 PuLID Identity Customization"
+    },
+    {
+      "slug": "ho-jain-abbeel-2020-ddpm",
+      "label": "Ho Jain Abbeel 2020 DDPM"
+    },
+    {
+      "slug": "ho-salimans-2022-classifier-free-diffusion-guidance",
+      "label": "Ho Salimans 2022 Classifier-Free Diffusion Guidance"
+    },
+    {
+      "slug": "hu-et-al-2021-lo-ra-low-rank-adaptation",
+      "label": "Hu et al. 2021 LoRA Low-Rank Adaptation"
+    },
+    {
+      "slug": "huang-et-al-2024-vbench",
+      "label": "Huang et al. 2024 VBench"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "hugging-face-diffusers",
+      "label": "Hugging Face Diffusers"
+    },
+    {
+      "slug": "hugging-face-flux-1-dev-model-card",
+      "label": "Hugging Face FLUX.1-dev Model Card"
+    },
+    {
+      "slug": "hugging-face-flux-pipeline-diffusers-documentation",
+      "label": "Hugging Face FluxPipeline Diffusers Documentation"
+    },
+    {
+      "slug": "hugging-face-model-card-spec",
+      "label": "Hugging Face Model Card Spec"
+    },
+    {
+      "slug": "iclr",
+      "label": "ICLR"
+    },
+    {
+      "slug": "icml",
+      "label": "ICML"
+    },
+    {
+      "slug": "identity-preserving-generation",
+      "label": "Identity-Preserving Generation"
+    },
+    {
+      "slug": "ideogram",
+      "label": "Ideogram"
+    },
+    {
+      "slug": "image-editing",
+      "label": "Image Editing"
+    },
+    {
+      "slug": "image-variation",
+      "label": "Image Variation"
+    },
+    {
+      "slug": "imagen-3",
+      "label": "Imagen 3"
+    },
+    {
+      "slug": "imagen-3-4",
+      "label": "Imagen 3/4"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "instant-id",
+      "label": "InstantID"
+    },
+    {
+      "slug": "instant-x",
+      "label": "InstantX"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
+      "slug": "karras-et-al-2022-edm-elucidating-design-space",
+      "label": "Karras et al. 2022 EDM Elucidating Design Space"
+    },
+    {
+      "slug": "kling-2",
+      "label": "Kling 2"
+    },
+    {
+      "slug": "kohya-sd-scripts",
+      "label": "Kohya sd-scripts"
+    },
+    {
+      "slug": "krea-ai",
+      "label": "Krea AI"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "slug": "lipman-et-al-2022-flow-matching-for-generative-modeling",
+      "label": "Lipman et al. 2022 Flow Matching for Generative Modeling"
+    },
+    {
+      "slug": "liu-gong-liu-2022-flow-straight-and-fast-rectified-flow",
+      "label": "Liu Gong Liu 2022 Flow Straight and Fast Rectified Flow"
+    },
+    {
+      "slug": "lo-ra-fine-tuning",
+      "label": "LoRA Fine-Tuning"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "magnific-ai",
+      "label": "Magnific AI"
+    },
+    {
+      "slug": "microsoft-azure-ai-foundry",
+      "label": "Microsoft Azure AI Foundry"
+    },
+    {
+      "slug": "mixed-precision",
+      "label": "Mixed Precision"
+    },
+    {
+      "slug": "modal",
+      "label": "Modal"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "movie-gen",
+      "label": "Movie Gen"
+    },
+    {
+      "slug": "multimodal-diffusion-transformer",
+      "label": "Multimodal Diffusion Transformer"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "nf4-quantisation",
+      "label": "NF4 Quantisation"
+    },
+    {
+      "slug": "online-safety-act-2023",
+      "label": "Online Safety Act 2023"
+    },
+    {
+      "slug": "outpainting",
+      "label": "Outpainting"
+    },
+    {
+      "slug": "peebles-xie-2023-di-t-diffusion-transformer",
+      "label": "Peebles Xie 2023 DiT Diffusion Transformer"
+    },
+    {
+      "slug": "pu-lid-flux",
+      "label": "PuLID-FLUX"
+    },
+    {
+      "slug": "radford-et-al-2021-clip",
+      "label": "Radford et al. 2021 CLIP"
+    },
+    {
+      "slug": "raffel-et-al-2020-t5",
+      "label": "Raffel et al. 2020 T5"
+    },
+    {
+      "slug": "rectified-flow",
+      "label": "Rectified Flow"
+    },
+    {
+      "slug": "rectified-flow-model",
+      "label": "Rectified Flow Model"
+    },
+    {
+      "slug": "replicate",
+      "label": "Replicate"
+    },
+    {
+      "slug": "rombach-et-al-2022-latent-diffusion-models",
+      "label": "Rombach et al. 2022 Latent Diffusion Models"
+    },
+    {
+      "slug": "rotary-position-embedding",
+      "label": "Rotary Position Embedding"
+    },
+    {
+      "slug": "run-pod",
+      "label": "RunPod"
+    },
+    {
+      "slug": "runway",
+      "label": "Runway"
+    },
+    {
+      "slug": "runway-gen-4",
+      "label": "Runway Gen-4"
+    },
+    {
+      "slug": "salimans-ho-2022-progressive-distillation",
+      "label": "Salimans Ho 2022 Progressive Distillation"
+    },
+    {
+      "slug": "sauer-lorenz-blattmann-rombach-2024-adversarial-diffusion-distillation",
+      "label": "Sauer Lorenz Blattmann Rombach 2024 Adversarial Diffusion Distillation"
+    },
+    {
+      "slug": "sdxl-turbo",
+      "label": "SDXL Turbo"
+    },
+    {
+      "slug": "simple-tuner",
+      "label": "SimpleTuner"
+    },
+    {
+      "slug": "song-et-al-2023-consistency-models",
+      "label": "Song et al. 2023 Consistency Models"
+    },
+    {
+      "slug": "song-meng-ermon-2021-ddim",
+      "label": "Song Meng Ermon 2021 DDIM"
+    },
+    {
+      "slug": "sora-2",
+      "label": "Sora 2"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
+    },
+    {
+      "slug": "stable-diffusion-3",
+      "label": "Stable Diffusion 3"
+    },
+    {
+      "slug": "stable-diffusion-3-medium",
+      "label": "Stable Diffusion 3-Medium"
+    },
+    {
+      "slug": "stable-diffusion-forge",
+      "label": "Stable Diffusion Forge"
+    },
+    {
+      "slug": "stable-diffusion-xl",
+      "label": "Stable Diffusion XL"
+    },
+    {
+      "slug": "su-et-al-2024-ro-former-rotary-position-embedding",
+      "label": "Su et al. 2024 RoFormer Rotary Position Embedding"
+    },
+    {
+      "slug": "swarm-ui",
+      "label": "SwarmUI"
+    },
+    {
+      "slug": "synthesia",
+      "label": "Synthesia"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "t5-language-model",
+      "label": "T5 Language Model"
+    },
+    {
+      "slug": "t5-xxl",
+      "label": "T5-XXL"
+    },
+    {
+      "slug": "text-encoder",
+      "label": "Text Encoder"
+    },
+    {
+      "slug": "text-to-image-model",
+      "label": "Text-to-Image Model"
+    },
+    {
+      "slug": "text-to-image-synthesis",
+      "label": "Text-to-Image Synthesis"
+    },
+    {
+      "slug": "timestep-distillation",
+      "label": "Timestep Distillation"
+    },
+    {
+      "slug": "together-ai",
+      "label": "Together AI"
+    },
+    {
+      "slug": "training-data-distribution",
+      "label": "Training Data Distribution"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "veo-3",
+      "label": "Veo 3"
+    },
+    {
+      "slug": "wan-2-1",
+      "label": "Wan 2.1"
+    },
+    {
+      "slug": "x-ai-grok",
+      "label": "xAI Grok"
+    },
+    {
+      "slug": "xlabs-ai",
+      "label": "XLabs-AI"
+    },
+    {
+      "slug": "zhang-rao-agrawala-2023-control-net",
+      "label": "Zhang Rao Agrawala 2023 ControlNet"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "groq",
+      "label": "Groq"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "HunyuanVideo"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

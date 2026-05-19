@@ -1,0 +1,408 @@
+{
+  "id": "urn:visionflow:page:88ea43b7477d6259f3e33b5f49539016a05c5eb41da74d30e91007b6e181fab8",
+  "title": "Cortex Agent",
+  "slug": "cortex-agent",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cortex-agent",
+  "domain": "artificial-intelligence",
+  "definition": "Cortex Agent is a class of enterprise agentic AI system that orchestrates multi-step reasoning and action across both structured and unstructured data sources within a governed cloud data platform, with Snowflake Cortex Agents (General Availability November 4, 2025) as the dominant production instantiation \u2014 a framework that receives natural-language user queries, plans multi-step execution strategies using a frontier LLM orchestrator, invokes a registered toolkit (Cortex Analyst translating NL to SQL for structured warehoused data via YAML semantic models or native Semantic Views with full RBAC; Cortex Search executing hybrid BM25-plus-vector retrieval over unstructured document collections managed within Snowflake; custom stored procedures and user-defined functions for domain computation; and Brave-API web search for real-time external information), executes a four-stage cognitive cycle of planning, tool use, reflection, and monitoring, and synthesises grounded natural-language responses with optional data citations \u2014 all without data leaving the Snowflake account perimeter, ensuring governance and data sovereignty across financial services, healthcare, life sciences, retail, an",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "id": "urn:visionflow:owl:class:agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "id": "urn:visionflow:owl:class:agents",
+      "label": "Agents"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "id": "urn:visionflow:owl:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gpts-and-custom-assistants",
+        "label": "GPTs and Custom Assistants"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "anderson-1983-architecture-of-cognition",
+      "label": "Anderson 1983 Architecture of Cognition"
+    },
+    {
+      "slug": "anderson-lebiere-1998-atomic-components-of-thought",
+      "label": "Anderson Lebiere 1998 Atomic Components of Thought"
+    },
+    {
+      "slug": "anthropic-snowflake-partnership-2024-2025",
+      "label": "Anthropic Snowflake Partnership 2024 2025"
+    },
+    {
+      "slug": "bratman-1987-intention-plans-practical-reason",
+      "label": "Bratman 1987 Intention Plans Practical Reason"
+    },
+    {
+      "slug": "cortex-aisql-ga-2025",
+      "label": "Cortex AISQL GA 2025"
+    },
+    {
+      "slug": "cortex-analyst-semantic-model-spec-2025",
+      "label": "Cortex Analyst Semantic Model Spec 2025"
+    },
+    {
+      "slug": "cortex-search-overview-2025",
+      "label": "Cortex Search Overview 2025"
+    },
+    {
+      "slug": "enterprise-aidomain",
+      "label": "EnterpriseAIDomain"
+    },
+    {
+      "slug": "franklin-graesser-1996-agent-taxonomy",
+      "label": "Franklin Graesser 1996 Agent Taxonomy"
+    },
+    {
+      "slug": "hawkins-blakeslee-2004-on-intelligence",
+      "label": "Hawkins Blakeslee 2004 On Intelligence"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "interface-media-2026-uk-ai-survey",
+      "label": "Interface Media 2026 UK AI Survey"
+    },
+    {
+      "slug": "kahneman-2011-thinking-fast-and-slow",
+      "label": "Kahneman 2011 Thinking Fast and Slow"
+    },
+    {
+      "slug": "laird-2012-soar-cognitive-architecture",
+      "label": "Laird 2012 Soar Cognitive Architecture"
+    },
+    {
+      "slug": "laird-newell-rosenbloom-1987-soar",
+      "label": "Laird Newell Rosenbloom 1987 Soar"
+    },
+    {
+      "slug": "minsky-1986-society-of-mind",
+      "label": "Minsky 1986 Society of Mind"
+    },
+    {
+      "slug": "newell-1990-unified-theories-of-cognition",
+      "label": "Newell 1990 Unified Theories of Cognition"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "rao-georgeff-1991-bdi-architecture",
+      "label": "Rao Georgeff 1991 BDI Architecture"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "schick-et-al-2023-toolformer",
+      "label": "Schick et al 2023 Toolformer"
+    },
+    {
+      "slug": "snowflake-arctic-engineering-blog-2024",
+      "label": "Snowflake Arctic Engineering Blog 2024"
+    },
+    {
+      "slug": "snowflake-cortex-agents-documentation-2025",
+      "label": "Snowflake Cortex Agents Documentation 2025"
+    },
+    {
+      "slug": "snowflake-data-ai-predictions-2026",
+      "label": "Snowflake Data AI Predictions 2026"
+    },
+    {
+      "slug": "snowflake-intelligence-launch-2025",
+      "label": "Snowflake Intelligence Launch 2025"
+    },
+    {
+      "slug": "snowflake-summit-2025-highlights",
+      "label": "Snowflake Summit 2025 Highlights"
+    },
+    {
+      "slug": "venture-beat-2024-arctic-launch",
+      "label": "VentureBeat 2024 Arctic Launch"
+    },
+    {
+      "slug": "yang-et-al-2018-hotpot-qa",
+      "label": "Yang et al 2018 HotpotQA"
+    },
+    {
+      "slug": "yao-et-al-2022-re-act",
+      "label": "Yao et al 2022 ReAct"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    }
+  ]
+}

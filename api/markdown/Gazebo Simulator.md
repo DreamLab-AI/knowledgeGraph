@@ -1,20 +1,622 @@
-iri:: http://narrativegoldmine.com/robotics#GazeboSimulator
-uri:: urn:visionclaw:concept:robotics:gazebo-simulator
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:gazebo-simulator
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Gazebo Simulator
-content-hash:: sha256-12-9e3a7c5f2b1d
-status:: complete
-maturity:: established
-quality-score:: 0.55
-authority-score:: 0.70
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#GazeboSimulator
+legacy_uri:: urn:visionclaw:concept:robotics:gazebo-simulator
 public:: true
+
+# Gazebo Simulator
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:33dc7c19f25f90013e85de95aa757d75a89e2eb1c4b1bd44e10c59751747939b",
+  "@type": "Page",
+  "vc:slug": "gazebo-simulator",
+  "title": "Gazebo Simulator",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:colcon-build-system",
+      "vc:label": "colcon Build System"
+    },
+    {
+      "@id": "urn:visionflow:linked:gazebo-plugin-api",
+      "vc:label": "Gazebo Plugin API"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-physics-plugin",
+      "vc:label": "Gz Physics Plugin"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-rendering",
+      "vc:label": "Gz Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-sensors",
+      "vc:label": "Gz Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-sim-documentation",
+      "vc:label": "Gz Sim Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-transport",
+      "vc:label": "Gz Transport"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-transport-message-protocol",
+      "vc:label": "gz-transport Message Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-in-the-loop-testing",
+      "vc:label": "Hardware-in-the-Loop Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:ignition-fuel-model-database",
+      "vc:label": "Ignition Fuel Model Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:iros-2004-gazebo-paper",
+      "vc:label": "IROS 2004 Gazebo Paper"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-robot-simulation",
+      "vc:label": "Multi-Robot Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ogre3-d-rendering-engine",
+      "vc:label": "OGRE3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-simulator",
+      "vc:label": "Physics Simulator"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-training",
+      "vc:label": "Reinforcement Learning Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-development-tool",
+      "vc:label": "Robotics Development Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros2-control-hardware-interface",
+      "vc:label": "ros2_control Hardware Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdf-robot-description",
+      "vc:label": "SDF Robot Description"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdf-world-model",
+      "vc:label": "SDF World Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdformat-specification",
+      "vc:label": "SDFormat Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-simulation",
+      "vc:label": "Sensor Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sim-to-real-transfer-workflow",
+      "vc:label": "Sim-to-Real Transfer Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation-layer",
+      "vc:label": "SimulationLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:urdf-robot-model",
+      "vc:label": "URDF Robot Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "vc:label": "3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:auto-ml",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-layer",
+      "vc:label": "InfrastructureLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "vc:label": "NGM Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-xr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physics-engine",
+      "vc:label": "Physics Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "Robotics Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-assembly",
+      "vc:label": "WebAssembly"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.70"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9e3a7c5f2b1d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#GazeboSimulator"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Gazebo Simulator"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.55"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:gazebo-simulator"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:gazebo-simulator"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:33dc7c19f25f90013e85de95aa757d75a89e2eb1c4b1bd44e10c59751747939b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:gazebo-simulator",
+  "@type": "OntologyClass",
+  "label": "Gazebo Simulator",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:physics-simulator",
+      "vc:label": "Physics Simulator"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-development-tool",
+      "vc:label": "Robotics Development Tool"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:33dc7c19f25f90013e85de95aa757d75a89e2eb1c4b1bd44e10c59751747939b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:33dc7c19f25f90013e85de95aa757d75a89e2eb1c4b1bd44e10c59751747939b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Gazebo Simulator (now branded Gz Sim following the Open Robotics / Intrinsic rebranding) is an open-source, physics-accurate 3D robotics simulator providing rigid-body dynamics (via ODE, Bullet, DART, or Simbody), sensor simulation (cameras, LiDAR, IMU, GPS), and a plugin architecture for custom actuators and environments, enabling hardware-in-the-loop (HIL) development, [[Robot Operating System]] integration testing, and reinforcement learning training environments without requiring physical hardware, making it the de facto simulation substrate for [[Robot Operating System]] development pipelines and a key component in sim-to-real transfer workflows.",
+  "vc:qualityScore": {
+    "@value": "0.55",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.70",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:sim-to-real-transfer-workflow",
+      "vc:label": "Sim-to-Real Transfer Workflow"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:gazebo-plugin-api",
+      "vc:label": "Gazebo Plugin API"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-physics-plugin",
+      "vc:label": "Gz Physics Plugin"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-rendering",
+      "vc:label": "Gz Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-sensors",
+      "vc:label": "Gz Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:gz-transport",
+      "vc:label": "Gz Transport"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdf-world-model",
+      "vc:label": "SDF World Model"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:sdf-robot-description",
+      "vc:label": "SDF Robot Description"
+    },
+    {
+      "@id": "urn:visionflow:linked:urdf-robot-model",
+      "vc:label": "URDF Robot Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "vc:label": "3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physics-engine",
+      "vc:label": "Physics Engine"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:hardware-in-the-loop-testing",
+      "vc:label": "Hardware-in-the-Loop Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-robot-simulation",
+      "vc:label": "Multi-Robot Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-training",
+      "vc:label": "Reinforcement Learning Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-simulation",
+      "vc:label": "Sensor Simulation"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:gz-transport-message-protocol",
+      "vc:label": "gz-transport Message Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros2-control-hardware-interface",
+      "vc:label": "ros2_control Hardware Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdformat-specification",
+      "vc:label": "SDFormat Specification"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:colcon-build-system",
+      "vc:label": "colcon Build System"
+    },
+    {
+      "@id": "urn:visionflow:linked:ignition-fuel-model-database",
+      "vc:label": "Ignition Fuel Model Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:ogre3-d-rendering-engine",
+      "vc:label": "OGRE3D Rendering Engine"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:auto-ml",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-xr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-assembly",
+      "vc:label": "WebAssembly"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:gazebo-simulator:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:33dc7c19f25f90013e85de95aa757d75a89e2eb1c4b1bd44e10c59751747939b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[colcon Build System]]",
+      "resolved": "urn:visionflow:linked:colcon-build-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gazebo Plugin API]]",
+      "resolved": "urn:visionflow:linked:gazebo-plugin-api",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gz Physics Plugin]]",
+      "resolved": "urn:visionflow:linked:gz-physics-plugin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gz Rendering]]",
+      "resolved": "urn:visionflow:linked:gz-rendering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gz Sensors]]",
+      "resolved": "urn:visionflow:linked:gz-sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gz Sim Documentation]]",
+      "resolved": "urn:visionflow:linked:gz-sim-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gz Transport]]",
+      "resolved": "urn:visionflow:linked:gz-transport",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[gz-transport Message Protocol]]",
+      "resolved": "urn:visionflow:linked:gz-transport-message-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hardware-in-the-Loop Testing]]",
+      "resolved": "urn:visionflow:linked:hardware-in-the-loop-testing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ignition Fuel Model Database]]",
+      "resolved": "urn:visionflow:linked:ignition-fuel-model-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IROS 2004 Gazebo Paper]]",
+      "resolved": "urn:visionflow:linked:iros-2004-gazebo-paper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Robot Simulation]]",
+      "resolved": "urn:visionflow:linked:multi-robot-simulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OGRE3D Rendering Engine]]",
+      "resolved": "urn:visionflow:linked:ogre3-d-rendering-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Physics Simulator]]",
+      "resolved": "urn:visionflow:linked:physics-simulator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning Training]]",
+      "resolved": "urn:visionflow:linked:reinforcement-learning-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotics Development Tool]]",
+      "resolved": "urn:visionflow:linked:robotics-development-tool",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ros2_control Hardware Interface]]",
+      "resolved": "urn:visionflow:linked:ros2-control-hardware-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SDF Robot Description]]",
+      "resolved": "urn:visionflow:linked:sdf-robot-description",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SDF World Model]]",
+      "resolved": "urn:visionflow:linked:sdf-world-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SDFormat Specification]]",
+      "resolved": "urn:visionflow:linked:sdformat-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Simulation]]",
+      "resolved": "urn:visionflow:linked:sensor-simulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sim-to-Real Transfer Workflow]]",
+      "resolved": "urn:visionflow:linked:sim-to-real-transfer-workflow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SimulationLayer]]",
+      "resolved": "urn:visionflow:linked:simulation-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[URDF Robot Model]]",
+      "resolved": "urn:visionflow:linked:urdf-robot-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Rendering Engine]]",
+      "resolved": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutoML]]",
+      "resolved": "urn:visionflow:owl:class:auto-ml",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureLayer]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NGM Domain]]",
+      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenXR]]",
+      "resolved": "urn:visionflow:owl:class:open-xr",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Physics Engine]]",
+      "resolved": "urn:visionflow:owl:class:physics-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Operating System]]",
+      "resolved": "urn:visionflow:owl:class:robot-operating-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Operating System|ROS 2 Jazzy]]",
+      "resolved": "urn:visionflow:owl:class:robot-operating-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics Domain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[WebAssembly]]",
+      "resolved": "urn:visionflow:owl:class:web-assembly",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:33dc7c19f25f90013e85de95aa757d75a89e2eb1c4b1bd44e10c59751747939b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Gazebo Simulator (now branded Gz Sim following the Open Robotics / Intrinsic rebranding) is an open-source, physics-accurate 3D robotics simulator providing rigid-body dynamics (via ODE, Bullet, DART, or Simbody), sensor simulation (cameras, LiDAR, IMU, GPS), and a plugin architecture for custom actuators and environments, enabling hardware-in-the-loop (HIL) development, [[Robot Operating System]] integration testing, and reinforcement learning training environments without requiring physical hardware, making it the de facto simulation substrate for [[Robot Operating System]] development pipelines and a key component in sim-to-real transfer workflows.

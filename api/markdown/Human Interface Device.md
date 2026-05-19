@@ -1,24 +1,428 @@
-iri:: http://narrativegoldmine.com/spatial-computing#HumanInterfaceDevice
-uri:: urn:visionclaw:concept:spatial-computing:human-interface-device
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:human-interface-device
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Human Interface Device
-content-hash:: sha256-12-ac8235e975e9
-legacy-term-id:: 20154
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#HumanInterfaceDevice
+legacy_uri:: urn:visionclaw:concept:spatial-computing:human-interface-device
 public:: true
+
+# Human Interface Device
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d",
+  "@type": "Page",
+  "vc:slug": "human-interface-device",
+  "title": "Human Interface Device",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:bluetooth",
+      "vc:label": "Bluetooth"
+    },
+    {
+      "@id": "urn:visionflow:linked:calibration",
+      "vc:label": "Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:communication-interface",
+      "vc:label": "Communication Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:device-drivers",
+      "vc:label": "Device Drivers"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:input-sensors",
+      "vc:label": "Input Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-system",
+      "vc:label": "Interaction System"
+    },
+    {
+      "@id": "urn:visionflow:linked:output-actuators",
+      "vc:label": "Output Actuators"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-management",
+      "vc:label": "Power Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:tracking-components",
+      "vc:label": "Tracking Components"
+    },
+    {
+      "@id": "urn:visionflow:linked:usb-protocol",
+      "vc:label": "USB Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-input",
+      "vc:label": "User Input"
+    },
+    {
+      "@id": "urn:visionflow:linked:wireless-communication",
+      "vc:label": "Wireless Communication"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptic-feedback",
+      "vc:label": "Haptic Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptics",
+      "vc:label": "Haptics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "vc:label": "InteractionDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-tracking",
+      "vc:label": "Motion Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physical-layer",
+      "vc:label": "PhysicalLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-interaction",
+      "vc:label": "Spatial Interaction"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ac8235e975e9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#HumanInterfaceDevice"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20154"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Human Interface Device"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:human-interface-device"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:human-interface-device"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:human-interface-device",
+  "@type": "OntologyClass",
+  "label": "Human Interface Device",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:interaction-system",
+      "vc:label": "Interaction System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:communication-interface",
+      "vc:label": "Communication Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:input-sensors",
+      "vc:label": "Input Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:output-actuators",
+      "vc:label": "Output Actuators"
+    },
+    {
+      "@id": "urn:visionflow:linked:tracking-components",
+      "vc:label": "Tracking Components"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptics",
+      "vc:label": "Haptics"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:calibration",
+      "vc:label": "Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:device-drivers",
+      "vc:label": "Device Drivers"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-management",
+      "vc:label": "Power Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:user-input",
+      "vc:label": "User Input"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptic-feedback",
+      "vc:label": "Haptic Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-tracking",
+      "vc:label": "Motion Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-interaction",
+      "vc:label": "Spatial Interaction"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:bluetooth",
+      "vc:label": "Bluetooth"
+    },
+    {
+      "@id": "urn:visionflow:linked:usb-protocol",
+      "vc:label": "USB Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:wireless-communication",
+      "vc:label": "Wireless Communication"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:human-interface-device:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Bluetooth]]",
+      "resolved": "urn:visionflow:linked:bluetooth",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Calibration]]",
+      "resolved": "urn:visionflow:linked:calibration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Communication Interface]]",
+      "resolved": "urn:visionflow:linked:communication-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Device Drivers]]",
+      "resolved": "urn:visionflow:linked:device-drivers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Input Sensors]]",
+      "resolved": "urn:visionflow:linked:input-sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interaction System]]",
+      "resolved": "urn:visionflow:linked:interaction-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Output Actuators]]",
+      "resolved": "urn:visionflow:linked:output-actuators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Power Management]]",
+      "resolved": "urn:visionflow:linked:power-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tracking Components]]",
+      "resolved": "urn:visionflow:linked:tracking-components",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[USB Protocol]]",
+      "resolved": "urn:visionflow:linked:usb-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Input]]",
+      "resolved": "urn:visionflow:linked:user-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wireless Communication]]",
+      "resolved": "urn:visionflow:linked:wireless-communication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Haptic Feedback]]",
+      "resolved": "urn:visionflow:owl:class:haptic-feedback",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Haptics]]",
+      "resolved": "urn:visionflow:owl:class:haptics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InteractionDomain]]",
+      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Tracking]]",
+      "resolved": "urn:visionflow:owl:class:motion-tracking",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PhysicalLayer]]",
+      "resolved": "urn:visionflow:owl:class:physical-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Interaction]]",
+      "resolved": "urn:visionflow:owl:class:spatial-interaction",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.

@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:3da8b0326d9428525dff9ee721b3ad10999ca53972a0230c0c0a9cee65e60cf2",
+  "title": "AI Concept",
+  "slug": "ai-concept",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-concept",
+  "domain": "artificial-intelligence",
+  "definition": "AI Concept represents the fundamental theoretical constructs and abstract principles that underpin artificial intelligence systems. This includes core notions such as intelligence representation, learning paradigms, reasoning mechanisms, and cognitive architectures. AI concepts encompass both symbolic AI approaches (knowledge representation, logic-based reasoning) and subsymbolic methods (connectionist networks, distributed representations). These foundational concepts serve as the theoretical basis for designing, implementing, and evaluating intelligent systems across various domains.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-property",
+      "label": "Model Property"
+    }
+  ]
+}

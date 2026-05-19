@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d",
+  "title": "Feedback Control",
+  "slug": "feedback-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:feedback-control",
+  "domain": "robotics",
+  "definition": "**Feedback Control** - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.61,
+  "authorityScore": 0.16,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuator-response",
+        "label": "Actuator Response"
+      },
+      {
+        "id": "urn:visionflow:linked:error-measurement",
+        "label": "Error Measurement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      },
+      {
+        "id": "urn:visionflow:linked:robust-operation",
+        "label": "Robust Operation"
+      },
+      {
+        "id": "urn:visionflow:linked:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator-response",
+      "label": "Actuator Response"
+    },
+    {
+      "slug": "disturbance-rejection",
+      "label": "Disturbance Rejection"
+    },
+    {
+      "slug": "error-measurement",
+      "label": "Error Measurement"
+    },
+    {
+      "slug": "motion-control-system",
+      "label": "Motion Control System"
+    },
+    {
+      "slug": "robot-behaviour",
+      "label": "Robot Behaviour"
+    },
+    {
+      "slug": "robust-operation",
+      "label": "Robust Operation"
+    },
+    {
+      "slug": "setpoints",
+      "label": "Setpoints"
+    },
+    {
+      "slug": "stabilisation-architecture",
+      "label": "Stabilisation Architecture"
+    },
+    {
+      "slug": "trajectory-tracking",
+      "label": "Trajectory Tracking"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "derivative-control",
+      "label": "Derivative Control"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "proportional-control",
+      "label": "Proportional Control"
+    },
+    {
+      "slug": "state-space-control",
+      "label": "State Space Control"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

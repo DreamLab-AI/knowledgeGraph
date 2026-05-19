@@ -1,21 +1,330 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#AccountableParty
-uri:: urn:visionclaw:concept:artificial-intelligence:accountable-party
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:accountable-party
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Accountable Party
-content-hash:: sha256-12-d0506df58109
-legacy-term-id:: PC-0015
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AccountableParty
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:accountable-party
 public:: true
+
+# Accountable Party
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20",
+  "@type": "Page",
+  "vc:slug": "accountable-party",
+  "title": "Accountable Party",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-governance-principle",
+      "vc:label": "AI Governance Principle"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-accountability-principles",
+      "vc:label": "Algorithmic Accountability Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-auditor",
+      "vc:label": "Algorithmic Auditor"
+    },
+    {
+      "@id": "urn:visionflow:linked:chief-ai-officer",
+      "vc:label": "Chief AI Officer"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-provider",
+      "vc:label": "Data Provider"
+    },
+    {
+      "@id": "urn:visionflow:linked:deploying-organization",
+      "vc:label": "Deploying Organization"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-body",
+      "vc:label": "Governance Body"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000-model-process",
+      "vc:label": "IEEE 7000 Model Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-developer",
+      "vc:label": "Model Developer"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles",
+      "vc:label": "OECD AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-operator",
+      "vc:label": "System Operator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics-board",
+      "vc:label": "AI Ethics Board"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d0506df58109"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AccountableParty"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0015"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Accountable Party"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accountable-party"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:accountable-party"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:accountable-party",
+  "@type": "OntologyClass",
+  "label": "Accountable Party",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:ai-governance-principle",
+      "vc:label": "AI Governance Principle"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability in AI contexts addresses the critical question: when AI systems cause harm or produce unfair outcomes, who bears responsibility and what obligations do they have to prevent, detect, and remediate problems? Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties—it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems crea",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:accountable-party:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Governance Principle]]",
+      "resolved": "urn:visionflow:linked:ai-governance-principle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithmic Accountability Principles]]",
+      "resolved": "urn:visionflow:linked:algorithmic-accountability-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithmic Auditor]]",
+      "resolved": "urn:visionflow:linked:algorithmic-auditor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chief AI Officer]]",
+      "resolved": "urn:visionflow:linked:chief-ai-officer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Provider]]",
+      "resolved": "urn:visionflow:linked:data-provider",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deploying Organization]]",
+      "resolved": "urn:visionflow:linked:deploying-organization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance Body]]",
+      "resolved": "urn:visionflow:linked:governance-body",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 7000 Model Process]]",
+      "resolved": "urn:visionflow:linked:ieee-7000-model-process",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Developer]]",
+      "resolved": "urn:visionflow:linked:model-developer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD AI Principles]]",
+      "resolved": "urn:visionflow:linked:oecd-ai-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[System Operator]]",
+      "resolved": "urn:visionflow:linked:system-operator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Ethics Board]]",
+      "resolved": "urn:visionflow:owl:class:ai-ethics-board",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability in AI contexts addresses the critical question: when AI systems cause harm or produce unfair outcomes, who bears responsibility and what obligations do they have to prevent, detect, and remediate problems? Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties—it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems creates accountability challenges: distributed development involving multiple organizations, automated decision-making obscuring human responsibility, emergent behaviors not explicitly programmed, and temporal gaps between development and deployment. Effective accountability frameworks must navigate these challenges while ensuring individuals and organizations cannot evade responsibility through complexity or distributed authorship.

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:0ccef13f497c7b0786c74a7ef4c269bc9a8c1d106115b93caa222124ee23230d",
+  "title": "Treatment Planning AI",
+  "slug": "treatment-planning-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:treatment-planning-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:medical-ai",
+      "label": "Medical AI"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "radiation-therapy",
+      "label": "Radiation Therapy"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "medical-diagnosis-ai",
+      "label": "Medical Diagnosis AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "medical-diagnosis-ai",
+      "label": "Medical Diagnosis AI"
+    }
+  ]
+}

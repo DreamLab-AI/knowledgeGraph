@@ -1,0 +1,303 @@
+{
+  "id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008",
+  "title": "Audit Trail",
+  "slug": "audit-trail",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:audit-trail",
+  "domain": "artificial-intelligence",
+  "definition": "A chronological, tamper-evident record of system activities, transactions, and events that enables reconstruction and verification of sequences of operations for compliance, security, and forensic analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:access-logs",
+        "label": "Access Logs"
+      },
+      {
+        "id": "urn:visionflow:linked:event-logs",
+        "label": "Event Logs"
+      },
+      {
+        "id": "urn:visionflow:linked:system-state-snapshots",
+        "label": "System State Snapshots"
+      },
+      {
+        "id": "urn:visionflow:linked:timestamp-records",
+        "label": "Timestamp Records"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-records",
+        "label": "Transaction Records"
+      },
+      {
+        "id": "urn:visionflow:linked:user-activity-logs",
+        "label": "User Activity Logs"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-integrity-protection",
+        "label": "Cryptographic Integrity Protection"
+      },
+      {
+        "id": "urn:visionflow:linked:logging-infrastructure",
+        "label": "Logging Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-storage",
+        "label": "Secure Storage"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:forensic-analysis",
+        "label": "Forensic Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:incident-investigation",
+        "label": "Incident Investigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-logs",
+      "label": "Access Logs"
+    },
+    {
+      "slug": "clock-synchronization",
+      "label": "Clock Synchronization"
+    },
+    {
+      "slug": "cryptographic-integrity-protection",
+      "label": "Cryptographic Integrity Protection"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "event-logs",
+      "label": "Event Logs"
+    },
+    {
+      "slug": "event-schema",
+      "label": "Event Schema"
+    },
+    {
+      "slug": "forensic-analysis",
+      "label": "Forensic Analysis"
+    },
+    {
+      "slug": "governance-system",
+      "label": "Governance System"
+    },
+    {
+      "slug": "incident-investigation",
+      "label": "Incident Investigation"
+    },
+    {
+      "slug": "logging-infrastructure",
+      "label": "Logging Infrastructure"
+    },
+    {
+      "slug": "logging-protocol",
+      "label": "Logging Protocol"
+    },
+    {
+      "slug": "secure-storage",
+      "label": "Secure Storage"
+    },
+    {
+      "slug": "security-infrastructure",
+      "label": "Security Infrastructure"
+    },
+    {
+      "slug": "system-state-snapshots",
+      "label": "System State Snapshots"
+    },
+    {
+      "slug": "time-synchronization-service",
+      "label": "Time Synchronization Service"
+    },
+    {
+      "slug": "timestamp-records",
+      "label": "Timestamp Records"
+    },
+    {
+      "slug": "transaction-records",
+      "label": "Transaction Records"
+    },
+    {
+      "slug": "user-activity-logs",
+      "label": "User Activity Logs"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "provenance-standard",
+      "label": "Provenance Standard"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to Be Forgotten"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust and Governance Domain"
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "label": "User Agreement Compliance"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    }
+  ]
+}

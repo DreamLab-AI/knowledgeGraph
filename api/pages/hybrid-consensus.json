@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ba7c84a4e6ce3eb766fbeb8ba87c345c5720eec84acdbbeca00549940bd09ca9",
+  "title": "Hybrid Consensus",
+  "slug": "hybrid-consensus",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hybrid-consensus",
+  "domain": "blockchain",
+  "definition": "Consensus mechanisms combining multiple approaches, typically merging proof-based methods with BFT finality or mixing PoW and PoS elements.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gasper-consensus",
+      "label": "Gasper Consensus"
+    }
+  ]
+}

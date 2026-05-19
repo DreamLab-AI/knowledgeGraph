@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:94ff7db92bcd3ceb16a1e50027c29c4ee331025b7794617995cd84c4cc3ede2f",
+  "title": "Voice Memo",
+  "slug": "voice-memo",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:voice-memo",
+  "domain": "distributed-collaboration",
+  "definition": "Asynchronous audio communication allowing users to record and share voice messages, providing richer context than text while maintaining time flexibility.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
+      "slug": "asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "TelecollaborationDomain"
+    }
+  ],
+  "backlinks": []
+}

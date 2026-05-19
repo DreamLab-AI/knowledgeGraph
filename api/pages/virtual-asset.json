@@ -1,0 +1,172 @@
+{
+  "id": "urn:visionflow:page:3afdf1da69f9aab966630fbc2de315c584d8684b9297acc4328f04d69945be63",
+  "title": "Virtual Asset",
+  "slug": "virtual-asset",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-asset",
+  "domain": "spatial-computing",
+  "definition": "Virtual assets are digital items with economic value within [[MetaversePlatforms|metaverse environments]], spanning [[NFT|non-fungible tokens]] representing unique digital collectibles, [[Avatar|avatars]] and avatar customisations, [[VirtualRealEstate|virtual real estate]], and [[InGameItems|in-game items]] with market-tradeable value. Ownership and transfer of virtual assets rely on [[BlockchainTechnology|blockchain]] smart contracts or centralised platform ledgers, with [[Interoperability|interoperability standards]] enabling asset portability across platforms and markets. Economic significance of virtual assets spans consumer entertainment (gaming, social worlds) to investment speculation, with regulatory frameworks increasingly addressing [[VirtualAssetTaxation|taxation]] and classification under securities laws.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "BlockchainTechnology"
+    },
+    {
+      "slug": "collectible",
+      "label": "Collectible"
+    },
+    {
+      "slug": "created-by",
+      "label": "createdBy"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
+    },
+    {
+      "slug": "dt-generated-by",
+      "label": "dt:generatedBy"
+    },
+    {
+      "slug": "dt-stored-on",
+      "label": "dt:storedOn"
+    },
+    {
+      "slug": "dt-tokenized-as",
+      "label": "dt:tokenizedAs"
+    },
+    {
+      "slug": "dt-traded-on",
+      "label": "dt:tradedOn"
+    },
+    {
+      "slug": "dt-verified-by",
+      "label": "dt:verifiedBy"
+    },
+    {
+      "slug": "has-metadata",
+      "label": "hasMetadata"
+    },
+    {
+      "slug": "has-owner",
+      "label": "hasOwner"
+    },
+    {
+      "slug": "in-game-items",
+      "label": "InGameItems"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "used-in-world",
+      "label": "usedInWorld"
+    },
+    {
+      "slug": "virtual-asset-taxation",
+      "label": "VirtualAssetTaxation"
+    },
+    {
+      "slug": "virtual-real-estate",
+      "label": "VirtualRealEstate"
+    },
+    {
+      "slug": "virtual-real-estate",
+      "label": "VirtualRealEstate"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "DigitalOwnership"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "ProceduralGeneration"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "VirtualEconomy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "land-parcel",
+      "label": "Land Parcel"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    }
+  ]
+}

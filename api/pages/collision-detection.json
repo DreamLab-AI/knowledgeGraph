@@ -1,0 +1,848 @@
+{
+  "id": "urn:visionflow:page:3dd8825ddcb58b3a389f25616e74d31c240713ee9d542850c31bc6a76d36f643",
+  "title": "Collision Detection",
+  "slug": "collision-detection",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collision-detection",
+  "domain": "spatial-computing",
+  "definition": "**Collision Detection** is the computational discipline of determining when two or more geometric primitives, rigid bodies, deformable meshes, articulated kinematic chains, or volumetric fields occupy overlapping regions of a shared spatial domain, decomposed canonically into a **broad phase** that rapidly culls non-overlapping pairs from O(n\u00b2) candidate combinatorics down to near-linear expected work using spatial-acceleration structures (axis-aligned bounding-box / AABB trees, oriented bounding-box / OBB trees, bounding-sphere hierarchies, k-DOP discrete-oriented polytopes, [[Bounding Volume Hierarchy|BVH]] with surface-area-heuristic top-down construction or linear-LBVH bottom-up Morton-code parallel construction on GPU, [[Sweep and Prune]] incremental sorted-projection algorithm exploiting temporal coherence between frames, [[Spatial Hashing]] uniform-grid hash tables for unbounded scenes, [[BSP Tree|binary space partitioning]] trees for static level geometry, octrees / kd-trees for ray-coherent queries, BVH refitting which updates internal nodes from updated leaf AABBs in O(n) without full rebuild) and a **narrow phase** that performs exact or near-exact geometric tests on sur",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:broad-phase-detection",
+        "label": "Broad-Phase Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:contact-manifold",
+        "label": "Contact Manifold"
+      },
+      {
+        "id": "urn:visionflow:linked:contact-resolution",
+        "label": "Contact Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:narrow-phase-detection",
+        "label": "Narrow-Phase Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:penetration-depth",
+        "label": "Penetration Depth"
+      },
+      {
+        "id": "urn:visionflow:linked:separating-axis-theorem",
+        "label": "Separating Axis Theorem"
+      },
+      {
+        "id": "urn:visionflow:linked:time-of-impact",
+        "label": "Time of Impact"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:coordinate-frame",
+        "label": "Coordinate Frame"
+      },
+      {
+        "id": "urn:visionflow:linked:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      },
+      {
+        "id": "urn:visionflow:linked:geometric-primitive",
+        "label": "Geometric Primitive"
+      },
+      {
+        "id": "urn:visionflow:linked:numerical-robustness",
+        "label": "Numerical Robustness"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-partitioning",
+        "label": "Spatial Partitioning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cloth-simulation",
+        "label": "Cloth Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:ragdoll-animation",
+        "label": "Ragdoll Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-certification",
+        "label": "Safety Certification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bsp-tree",
+        "label": "BSP Tree"
+      },
+      {
+        "id": "urn:visionflow:linked:conservative-advancement",
+        "label": "Conservative Advancement"
+      },
+      {
+        "id": "urn:visionflow:linked:continuous-collision-detection",
+        "label": "Continuous Collision Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:epa-algorithm",
+        "label": "EPA Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:gjk-algorithm",
+        "label": "GJK Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:signed-distance-field",
+        "label": "Signed Distance Field"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-hashing",
+        "label": "Spatial Hashing"
+      },
+      {
+        "id": "urn:visionflow:linked:sweep-and-prune",
+        "label": "Sweep and Prune"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "1-x-neo",
+      "label": "1X NEO"
+    },
+    {
+      "slug": "aabb",
+      "label": "AABB"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "animation",
+      "label": "Animation"
+    },
+    {
+      "slug": "apollo-baidu",
+      "label": "Apollo (Baidu)"
+    },
+    {
+      "slug": "apple-vision-pro",
+      "label": "Apple Vision Pro"
+    },
+    {
+      "slug": "apple-vision-pro",
+      "label": "Apple Vision Pro"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "box2-d",
+      "label": "Box2D"
+    },
+    {
+      "slug": "brax",
+      "label": "Brax"
+    },
+    {
+      "slug": "bridson-fedkiw-anderson-2002-cloth-collisions",
+      "label": "Bridson Fedkiw Anderson 2002 Cloth Collisions"
+    },
+    {
+      "slug": "broad-phase-detection",
+      "label": "Broad-Phase Detection"
+    },
+    {
+      "slug": "bsp-tree",
+      "label": "BSP Tree"
+    },
+    {
+      "slug": "bsp-tree",
+      "label": "BSP Tree"
+    },
+    {
+      "slug": "bullet-physics",
+      "label": "Bullet Physics"
+    },
+    {
+      "slug": "bullet-physics",
+      "label": "Bullet Physics"
+    },
+    {
+      "slug": "cad-software",
+      "label": "CAD Software"
+    },
+    {
+      "slug": "catia",
+      "label": "CATIA"
+    },
+    {
+      "slug": "catto-2007-box2-d",
+      "label": "Catto 2007 Box2D"
+    },
+    {
+      "slug": "cloth-simulation",
+      "label": "Cloth Simulation"
+    },
+    {
+      "slug": "cohen-lin-manocha-ponamgi-1995-i-collide",
+      "label": "Cohen Lin Manocha Ponamgi 1995 I-COLLIDE"
+    },
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "computational-geometry-domain",
+      "label": "ComputationalGeometryDomain"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "ComputerGraphicsDomain"
+    },
+    {
+      "slug": "conservative-advancement",
+      "label": "Conservative Advancement"
+    },
+    {
+      "slug": "contact-manifold",
+      "label": "Contact Manifold"
+    },
+    {
+      "slug": "contact-resolution",
+      "label": "Contact Resolution"
+    },
+    {
+      "slug": "continuous-collision-detection",
+      "label": "Continuous Collision Detection"
+    },
+    {
+      "slug": "convex-optimization",
+      "label": "Convex Optimization"
+    },
+    {
+      "slug": "coordinate-frame",
+      "label": "Coordinate Frame"
+    },
+    {
+      "slug": "coppelia-sim",
+      "label": "Coppelia Sim"
+    },
+    {
+      "slug": "coumans-2015-bullet-physics",
+      "label": "Coumans 2015 Bullet Physics"
+    },
+    {
+      "slug": "crash-simulation",
+      "label": "Crash Simulation"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
+      "slug": "deep-sdf",
+      "label": "DeepSDF"
+    },
+    {
+      "slug": "drake",
+      "label": "Drake"
+    },
+    {
+      "slug": "drake",
+      "label": "Drake"
+    },
+    {
+      "slug": "epa-algorithm",
+      "label": "EPA Algorithm"
+    },
+    {
+      "slug": "epa-algorithm",
+      "label": "EPA Algorithm"
+    },
+    {
+      "slug": "ericson-2004-real-time-collision-detection",
+      "label": "Ericson 2004 Real-Time Collision Detection"
+    },
+    {
+      "slug": "fcl",
+      "label": "FCL"
+    },
+    {
+      "slug": "fcl",
+      "label": "FCL"
+    },
+    {
+      "slug": "figure-02",
+      "label": "Figure 02"
+    },
+    {
+      "slug": "floating-point-arithmetic",
+      "label": "Floating-Point Arithmetic"
+    },
+    {
+      "slug": "freeman-et-al-2021-brax",
+      "label": "Freeman et al 2021 Brax"
+    },
+    {
+      "slug": "frustum-culling",
+      "label": "Frustum Culling"
+    },
+    {
+      "slug": "geometric-algorithm",
+      "label": "Geometric Algorithm"
+    },
+    {
+      "slug": "geometric-primitive",
+      "label": "Geometric Primitive"
+    },
+    {
+      "slug": "gilbert-johnson-keerthi-1988-gjk",
+      "label": "Gilbert Johnson Keerthi 1988 GJK"
+    },
+    {
+      "slug": "gjk-algorithm",
+      "label": "GJK Algorithm"
+    },
+    {
+      "slug": "gjk-algorithm",
+      "label": "GJK Algorithm"
+    },
+    {
+      "slug": "gottschalk-lin-manocha-1996-obbtree",
+      "label": "Gottschalk Lin Manocha 1996 OBBTree"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "havok-physics",
+      "label": "Havok Physics"
+    },
+    {
+      "slug": "howell-et-al-2022-dojo",
+      "label": "Howell et al 2022 Dojo"
+    },
+    {
+      "slug": "iso-iec-18039",
+      "label": "ISO/IEC 18039"
+    },
+    {
+      "slug": "jimenez-thomas-torras-2001-3-d-cd-survey",
+      "label": "Jimenez Thomas Torras 2001 3D CD Survey"
+    },
+    {
+      "slug": "jolt-physics",
+      "label": "Jolt Physics"
+    },
+    {
+      "slug": "karras-2012-lbvh",
+      "label": "Karras 2012 LBVH"
+    },
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
+      "slug": "klosowski-et-al-1998-k-dops",
+      "label": "Klosowski et al 1998 k-DOPs"
+    },
+    {
+      "slug": "lin-canny-1991-distance-calculation",
+      "label": "Lin Canny 1991 Distance Calculation"
+    },
+    {
+      "slug": "lin-gottschalk-1998-cd-survey",
+      "label": "Lin Gottschalk 1998 CD Survey"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "macklin-2022-nvidia-warp",
+      "label": "Macklin 2022 NVIDIA Warp"
+    },
+    {
+      "slug": "macklin-et-al-2014-unified-particles-flex",
+      "label": "Macklin et al 2014 Unified Particles Flex"
+    },
+    {
+      "slug": "macklin-muller-chentanez-2016-xpbd",
+      "label": "Macklin Muller Chentanez 2016 XPBD"
+    },
+    {
+      "slug": "minkowski-sum",
+      "label": "Minkowski Sum"
+    },
+    {
+      "slug": "mirtich-1996-conservative-advancement",
+      "label": "Mirtich 1996 Conservative Advancement"
+    },
+    {
+      "slug": "mjcf",
+      "label": "MJCF"
+    },
+    {
+      "slug": "moller-1997-triangle-triangle-intersection",
+      "label": "Moller 1997 Triangle-Triangle Intersection"
+    },
+    {
+      "slug": "move-it",
+      "label": "MoveIt"
+    },
+    {
+      "slug": "mu-jo-co",
+      "label": "MuJoCo"
+    },
+    {
+      "slug": "narrow-phase-detection",
+      "label": "Narrow-Phase Detection"
+    },
+    {
+      "slug": "neural-implicit-surface",
+      "label": "Neural Implicit Surface"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "numerical-robustness",
+      "label": "Numerical Robustness"
+    },
+    {
+      "slug": "nvidia-flex",
+      "label": "NVIDIA Flex"
+    },
+    {
+      "slug": "nvidia-isaac-sim",
+      "label": "NVIDIA Isaac Sim"
+    },
+    {
+      "slug": "nvidia-phys-x",
+      "label": "NVIDIA PhysX"
+    },
+    {
+      "slug": "nvidia-warp",
+      "label": "NVIDIA Warp"
+    },
+    {
+      "slug": "obb",
+      "label": "OBB"
+    },
+    {
+      "slug": "ompl",
+      "label": "OMPL"
+    },
+    {
+      "slug": "open-dynamics-engine",
+      "label": "Open Dynamics Engine"
+    },
+    {
+      "slug": "open-dynamics-engine",
+      "label": "Open Dynamics Engine"
+    },
+    {
+      "slug": "open-rave",
+      "label": "OpenRAVE"
+    },
+    {
+      "slug": "pan-chitta-manocha-2012-fcl",
+      "label": "Pan Chitta Manocha 2012 FCL"
+    },
+    {
+      "slug": "park-florence-straub-newcombe-lovegrove-2019-deep-sdf",
+      "label": "Park Florence Straub Newcombe Lovegrove 2019 DeepSDF"
+    },
+    {
+      "slug": "penetration-depth",
+      "label": "Penetration Depth"
+    },
+    {
+      "slug": "physics-simulation-domain",
+      "label": "PhysicsSimulationDomain"
+    },
+    {
+      "slug": "pinocchio",
+      "label": "Pinocchio"
+    },
+    {
+      "slug": "provot-1997-cloth-self-collision",
+      "label": "Provot 1997 Cloth Self-Collision"
+    },
+    {
+      "slug": "quaternion-mathematics",
+      "label": "Quaternion Mathematics"
+    },
+    {
+      "slug": "ragdoll-animation",
+      "label": "Ragdoll Animation"
+    },
+    {
+      "slug": "rapier-physics",
+      "label": "Rapier Physics"
+    },
+    {
+      "slug": "rapier-physics",
+      "label": "Rapier Physics"
+    },
+    {
+      "slug": "ray-casting",
+      "label": "Ray Casting"
+    },
+    {
+      "slug": "real-time-algorithm",
+      "label": "Real-Time Algorithm"
+    },
+    {
+      "slug": "ros-industrial",
+      "label": "ROS-Industrial"
+    },
+    {
+      "slug": "ros-rep",
+      "label": "ROS REP"
+    },
+    {
+      "slug": "safety-certification",
+      "label": "Safety Certification"
+    },
+    {
+      "slug": "separating-axis-theorem",
+      "label": "Separating Axis Theorem"
+    },
+    {
+      "slug": "separating-axis-theorem",
+      "label": "Separating Axis Theorem"
+    },
+    {
+      "slug": "siemens-nx",
+      "label": "Siemens NX"
+    },
+    {
+      "slug": "signed-distance-field",
+      "label": "Signed Distance Field"
+    },
+    {
+      "slug": "signed-distance-field",
+      "label": "Signed Distance Field"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "SimulationLayer"
+    },
+    {
+      "slug": "smith-2005-ode",
+      "label": "Smith 2005 ODE"
+    },
+    {
+      "slug": "solid-works",
+      "label": "SolidWorks"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "spatial-hashing",
+      "label": "Spatial Hashing"
+    },
+    {
+      "slug": "spatial-partitioning",
+      "label": "Spatial Partitioning"
+    },
+    {
+      "slug": "sucan-chitta-2013-move-it",
+      "label": "Sucan Chitta 2013 MoveIt"
+    },
+    {
+      "slug": "surgical-simulation",
+      "label": "Surgical Simulation"
+    },
+    {
+      "slug": "sweep-and-prune",
+      "label": "Sweep and Prune"
+    },
+    {
+      "slug": "tang-et-al-2018-i-cloth",
+      "label": "Tang et al 2018 I-Cloth"
+    },
+    {
+      "slug": "teschner-et-al-2005-deformable-cd",
+      "label": "Teschner et al 2005 Deformable CD"
+    },
+    {
+      "slug": "tesla-optimus",
+      "label": "Tesla Optimus"
+    },
+    {
+      "slug": "tesla-optimus",
+      "label": "Tesla Optimus"
+    },
+    {
+      "slug": "time-of-impact",
+      "label": "Time of Impact"
+    },
+    {
+      "slug": "todorov-erez-tassa-2012-mu-jo-co",
+      "label": "Todorov Erez Tassa 2012 MuJoCo"
+    },
+    {
+      "slug": "unitree-h1",
+      "label": "Unitree H1"
+    },
+    {
+      "slug": "urdf",
+      "label": "URDF"
+    },
+    {
+      "slug": "usd-physics-schema",
+      "label": "USD Physics Schema"
+    },
+    {
+      "slug": "van-den-bergen-1999-gjk-implementation",
+      "label": "van den Bergen 1999 GJK Implementation"
+    },
+    {
+      "slug": "van-den-bergen-2001-epa-penetration-depth",
+      "label": "van den Bergen 2001 EPA Penetration Depth"
+    },
+    {
+      "slug": "video-games",
+      "label": "Video Games"
+    },
+    {
+      "slug": "video-games",
+      "label": "Video Games"
+    },
+    {
+      "slug": "visibility-determination",
+      "label": "Visibility Determination"
+    },
+    {
+      "slug": "vr-ar",
+      "label": "VR/AR"
+    },
+    {
+      "slug": "vr-ar",
+      "label": "VR/AR"
+    },
+    {
+      "slug": "w3-c-web-xr",
+      "label": "W3C WebXR"
+    },
+    {
+      "slug": "waymo-driver",
+      "label": "Waymo Driver"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
+    },
+    {
+      "slug": "werling-et-al-2021-differentiable-physics",
+      "label": "Werling et al 2021 Differentiable Physics"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "fluid-simulation",
+      "label": "Fluid Simulation"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "occlusion-culling",
+      "label": "Occlusion Culling"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "rigid-body-dynamics",
+      "label": "Rigid Body Dynamics"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "soft-body-dynamics",
+      "label": "Soft Body Dynamics"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "physics-material",
+      "label": "Physics Material"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "rrt-algorithm",
+      "label": "RRT Algorithm"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

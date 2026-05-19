@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:4ba643dbe185b863492c9690cf7badb5fac0b0fc9ddee61bb0322110421be6ea",
+  "title": "Cross Domain Bridge",
+  "slug": "cross-domain-bridge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cross-domain-bridge",
+  "domain": "infrastructure",
+  "definition": "CrossDomainBridge is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-p2874",
+      "label": "IEEE P2874"
+    },
+    {
+      "slug": "ietf-oauth",
+      "label": "IETF OAUTH"
+    },
+    {
+      "slug": "omg",
+      "label": "OMG"
+    },
+    {
+      "slug": "w3-c-federated-identity-working-group",
+      "label": "W3C Federated Identity Working Group"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    }
+  ],
+  "backlinks": []
+}

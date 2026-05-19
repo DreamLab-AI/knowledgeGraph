@@ -1,0 +1,308 @@
+{
+  "id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740",
+  "title": "Solid Pod",
+  "slug": "solid-pod",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:solid-pod",
+  "domain": "infrastructure",
+  "definition": "A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), so that authorised applications can read and write data without the data ever leaving the owner's pod or being locked into any single application silo. In the [[VisionClaw Agentic Container]] architecture, Solid Pods serve as the personal context store for agent preference profiles, credential histories, and verifiable presentation caches, consumed via the [[Model Context Protocol]] tool surface.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:linked-data-platform-resource",
+      "label": "Linked Data Platform Resource"
+    },
+    {
+      "id": "urn:visionflow:owl:class:personal-data-store",
+      "label": "Personal Data Store"
+    }
+  ],
+  "qualityScore": 0.65,
+  "authorityScore": 0.78,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:acp-access-control-policy",
+        "label": "ACP Access Control Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:ldp-container",
+        "label": "LDP Container"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-resource",
+        "label": "RDF Resource"
+      },
+      {
+        "id": "urn:visionflow:linked:wac-access-control-list",
+        "label": "WAC Access Control List"
+      },
+      {
+        "id": "urn:visionflow:linked:web-id-profile",
+        "label": "WebID Profile"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:rdf-data-model",
+        "label": "RDF Data Model"
+      },
+      {
+        "id": "urn:visionflow:linked:turtle-serialisation",
+        "label": "Turtle Serialisation"
+      },
+      {
+        "id": "urn:visionflow:linked:web-id",
+        "label": "WebID"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agent-personalisation",
+        "label": "Agent Personalisation"
+      },
+      {
+        "id": "urn:visionflow:linked:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:interoperable-personal-data",
+        "label": "Interoperable Personal Data"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:w3-c-linked-data-platform",
+        "label": "W3C Linked Data Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-solid-protocol",
+        "label": "W3C Solid Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-web-access-control",
+        "label": "W3C Web Access Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control-policy",
+      "label": "Access Control Policy"
+    },
+    {
+      "slug": "acp-access-control-policy",
+      "label": "ACP Access Control Policy"
+    },
+    {
+      "slug": "agent-personalisation",
+      "label": "Agent Personalisation"
+    },
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "css-community-solid-server",
+      "label": "CSS Community Solid Server"
+    },
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "decentralised-web-stack",
+      "label": "Decentralised Web Stack"
+    },
+    {
+      "slug": "dpo-p",
+      "label": "DPoP"
+    },
+    {
+      "slug": "http-protocol",
+      "label": "HTTP Protocol"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "IdentityLayer"
+    },
+    {
+      "slug": "inrupt-pod-spaces",
+      "label": "Inrupt Pod Spaces"
+    },
+    {
+      "slug": "interoperable-personal-data",
+      "label": "Interoperable Personal Data"
+    },
+    {
+      "slug": "ldp-container",
+      "label": "LDP Container"
+    },
+    {
+      "slug": "linked-data-platform-resource",
+      "label": "Linked Data Platform Resource"
+    },
+    {
+      "slug": "node-solid-server",
+      "label": "Node Solid Server"
+    },
+    {
+      "slug": "rdf-data-model",
+      "label": "RDF Data Model"
+    },
+    {
+      "slug": "rdf-resource",
+      "label": "RDF Resource"
+    },
+    {
+      "slug": "ru-vector-memory",
+      "label": "RuVector Memory"
+    },
+    {
+      "slug": "solid-application-interoperability-specification",
+      "label": "Solid Application Interoperability Specification"
+    },
+    {
+      "slug": "solid-ecosystem",
+      "label": "Solid Ecosystem"
+    },
+    {
+      "slug": "solid-oidc",
+      "label": "Solid-OIDC"
+    },
+    {
+      "slug": "turtle-serialisation",
+      "label": "Turtle Serialisation"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "w3-c-linked-data-platform",
+      "label": "W3C Linked Data Platform"
+    },
+    {
+      "slug": "w3-c-solid-protocol",
+      "label": "W3C Solid Protocol"
+    },
+    {
+      "slug": "w3-c-web-access-control",
+      "label": "W3C Web Access Control"
+    },
+    {
+      "slug": "wac-access-control-list",
+      "label": "WAC Access Control List"
+    },
+    {
+      "slug": "web-access-control",
+      "label": "Web Access Control"
+    },
+    {
+      "slug": "web-id",
+      "label": "WebID"
+    },
+    {
+      "slug": "web-id-profile",
+      "label": "WebID Profile"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "personal-data-store",
+      "label": "Personal Data Store"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

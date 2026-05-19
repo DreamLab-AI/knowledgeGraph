@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:e2c0e0b56558c32c1583db0b39e32a72e2467187ec45bdb4571621bcba73eca9",
+  "title": "Loyalty Token",
+  "slug": "loyalty-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:loyalty-token",
+  "domain": "spatial-computing",
+  "definition": "A digital token granting repeat-use or membership rewards within a metaverse ecosystem, enabling customer engagement, brand loyalty programs, and tokenized incentive mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:loyalty-programs",
+      "label": "Loyalty Programs"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:brand-engagement",
+        "label": "Brand Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:membership-program",
+        "label": "Membership Program"
+      },
+      {
+        "id": "urn:visionflow:owl:class:customer-rewards",
+        "label": "Customer Rewards"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "brand-engagement",
+      "label": "Brand Engagement"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "incentive-mechanism",
+      "label": "Incentive Mechanism"
+    },
+    {
+      "slug": "membership-program",
+      "label": "Membership Program"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "customer-rewards",
+      "label": "Customer Rewards"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

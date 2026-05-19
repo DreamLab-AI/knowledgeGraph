@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:1f747bd8911b9ae3f0f27e47954b96209666ba98214b4adc9cb5dd817aa73f15",
+  "title": "Search Engine",
+  "slug": "search-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:search-engine",
+  "domain": "spatial-computing",
+  "definition": "Software systems that crawl, index, and retrieve digital content based on user queries, using algorithms for relevance ranking, natural language processing, and increasingly semantic understanding to connect users with metaverse assets and experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-discovery",
+        "label": "Content Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "collective-memory-archive",
+      "label": "Collective Memory Archive"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:3f26e20e0d1b799f0fcba34531d43a4c659ee4f34ebc8c83bb5a40d4dd000a7b",
+  "title": "Display Hardware",
+  "slug": "display-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:display-hardware",
+  "domain": "spatial-computing",
+  "definition": "The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:visionflow:linked:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-systems",
+        "label": "Optical Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-visualization",
+        "label": "Immersive Visualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "display-technology",
+      "label": "Display Technology"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "slug": "immersive-visualization",
+      "label": "Immersive Visualization"
+    },
+    {
+      "slug": "optical-systems",
+      "label": "Optical Systems"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-display-device",
+      "label": "Ar Display Device"
+    },
+    {
+      "slug": "digital-content-overlay",
+      "label": "Digital Content Overlay"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "visualization-layer",
+      "label": "Visualization Layer"
+    }
+  ]
+}

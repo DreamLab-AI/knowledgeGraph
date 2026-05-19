@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:9c777ed59faf6babc91f58d1c7fb6edace508e08fb686177a45e23e7bcbc9a99",
+  "title": "Resilience",
+  "slug": "resilience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:resilience",
+  "domain": "blockchain",
+  "definition": "Resilience is a concept within the bc domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attack-vector",
+      "label": "Attack Vector"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "threat-actor",
+      "label": "Threat Actor"
+    },
+    {
+      "slug": "vulnerability",
+      "label": "Vulnerability"
+    }
+  ]
+}

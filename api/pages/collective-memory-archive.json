@@ -1,0 +1,166 @@
+{
+  "id": "urn:visionflow:page:5b9dee77784e7db89b727317f5a7b89594bab1275897f7ad26c1170f8ff5b980",
+  "title": "Collective Memory Archive",
+  "slug": "collective-memory-archive",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collective-memory-archive",
+  "domain": "spatial-computing",
+  "definition": "A community-maintained repository that preserves shared cultural memories, historical events, and collective experiences for long-term access and cultural heritage preservation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:community-contributions",
+        "label": "Community Contributions"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-records",
+        "label": "Memory Records"
+      },
+      {
+        "id": "urn:visionflow:linked:preservation-metadata",
+        "label": "Preservation Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-index",
+        "label": "Temporal Index"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-repository",
+        "label": "Digital Repository"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-registry",
+        "label": "Metadata Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:community-storytelling",
+        "label": "Community Storytelling"
+      },
+      {
+        "id": "urn:visionflow:linked:cultural-preservation",
+        "label": "Cultural Preservation"
+      },
+      {
+        "id": "urn:visionflow:linked:heritage-access",
+        "label": "Heritage Access"
+      },
+      {
+        "id": "urn:visionflow:linked:historical-documentation",
+        "label": "Historical Documentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "community-contributions",
+      "label": "Community Contributions"
+    },
+    {
+      "slug": "community-knowledge-systems",
+      "label": "Community Knowledge Systems"
+    },
+    {
+      "slug": "community-storytelling",
+      "label": "Community Storytelling"
+    },
+    {
+      "slug": "cultural-preservation",
+      "label": "Cultural Preservation"
+    },
+    {
+      "slug": "digital-preservation-standards",
+      "label": "Digital Preservation Standards"
+    },
+    {
+      "slug": "heritage-access",
+      "label": "Heritage Access"
+    },
+    {
+      "slug": "historical-documentation",
+      "label": "Historical Documentation"
+    },
+    {
+      "slug": "memory-records",
+      "label": "Memory Records"
+    },
+    {
+      "slug": "preservation-metadata",
+      "label": "Preservation Metadata"
+    },
+    {
+      "slug": "preservation-policies",
+      "label": "Preservation Policies"
+    },
+    {
+      "slug": "temporal-index",
+      "label": "Temporal Index"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "metadata-registry",
+      "label": "Metadata Registry"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "search-engine",
+      "label": "Search Engine"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": []
+}

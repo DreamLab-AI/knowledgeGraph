@@ -1,0 +1,372 @@
+{
+  "id": "urn:visionflow:page:c7f8bc217b6c371324d1c4c0d651fdf58adf35f353d1313a0bce77d73c3ccf7c",
+  "title": "Robot Operating System",
+  "slug": "robot-operating-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-operating-system",
+  "domain": "robotics",
+  "definition": "The Robot Operating System (ROS / ROS 2) is an open-source middleware framework providing a structured communication layer, tool ecosystem, and package repository for robotic software development, enabling modular composition of perception, planning, and actuation subsystems through a publish-subscribe and service-call graph. ROS 2, built on the [[Data Distribution Service]] (DDS) transport, adds real-time guarantees, multi-platform support, and security (SROS2) absent from the original ROS 1, making it the de-facto integration substrate for both research robots and production autonomous systems, and a bridging target for [[VisionClaw Agentic Container]] agent skills interacting with physical hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:publish-subscribe-framework",
+      "label": "Publish-Subscribe Framework"
+    },
+    {
+      "id": "urn:visionflow:linked:robotic-middleware",
+      "label": "Robotic Middleware"
+    }
+  ],
+  "qualityScore": 0.7,
+  "authorityScore": 0.85,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:colcon-build-system",
+        "label": "colcon Build System"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-action",
+        "label": "ROS Action"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-node",
+        "label": "ROS Node"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-package",
+        "label": "ROS Package"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-service",
+        "label": "ROS Service"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-topic",
+        "label": "ROS Topic"
+      },
+      {
+        "id": "urn:visionflow:linked:urdf-robot-model",
+        "label": "URDF Robot Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cmake-build-system",
+        "label": "CMake Build System"
+      },
+      {
+        "id": "urn:visionflow:linked:data-distribution-service",
+        "label": "Data Distribution Service"
+      },
+      {
+        "id": "urn:visionflow:linked:python-3",
+        "label": "Python 3"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:robot-simulation",
+        "label": "Robot Simulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:dds-rtps-protocol",
+        "label": "DDS RTPS Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:rep-standards",
+        "label": "REP Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:sros2-security",
+        "label": "SROS2 Security"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "autonomous-systems-platform",
+      "label": "Autonomous Systems Platform"
+    },
+    {
+      "slug": "c-rclcpp",
+      "label": "C++ rclcpp"
+    },
+    {
+      "slug": "cmake-build-system",
+      "label": "CMake Build System"
+    },
+    {
+      "slug": "colcon",
+      "label": "colcon"
+    },
+    {
+      "slug": "colcon-build-system",
+      "label": "colcon Build System"
+    },
+    {
+      "slug": "communication-layer",
+      "label": "CommunicationLayer"
+    },
+    {
+      "slug": "cyclone-dds",
+      "label": "CycloneDDS"
+    },
+    {
+      "slug": "data-distribution-service",
+      "label": "Data Distribution Service"
+    },
+    {
+      "slug": "dds-rtps-protocol",
+      "label": "DDS RTPS Protocol"
+    },
+    {
+      "slug": "e-prosima-fast-dds",
+      "label": "eProsima Fast DDS"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
+    },
+    {
+      "slug": "micro-ros-project",
+      "label": "micro-ROS Project"
+    },
+    {
+      "slug": "omg-dds-specification",
+      "label": "OMG DDS Specification"
+    },
+    {
+      "slug": "onnx-runtime",
+      "label": "ONNX Runtime"
+    },
+    {
+      "slug": "open-cv-dnn",
+      "label": "OpenCV DNN"
+    },
+    {
+      "slug": "publish-subscribe-framework",
+      "label": "Publish-Subscribe Framework"
+    },
+    {
+      "slug": "python-3",
+      "label": "Python 3"
+    },
+    {
+      "slug": "python-rclpy",
+      "label": "Python rclpy"
+    },
+    {
+      "slug": "rep-standards",
+      "label": "REP Standards"
+    },
+    {
+      "slug": "robot-simulation",
+      "label": "Robot Simulation"
+    },
+    {
+      "slug": "robotic-middleware",
+      "label": "Robotic Middleware"
+    },
+    {
+      "slug": "robotic-software-stack",
+      "label": "Robotic Software Stack"
+    },
+    {
+      "slug": "ros-2-documentation",
+      "label": "ROS 2 Documentation"
+    },
+    {
+      "slug": "ros-action",
+      "label": "ROS Action"
+    },
+    {
+      "slug": "ros-node",
+      "label": "ROS Node"
+    },
+    {
+      "slug": "ros-package",
+      "label": "ROS Package"
+    },
+    {
+      "slug": "ros-service",
+      "label": "ROS Service"
+    },
+    {
+      "slug": "ros-topic",
+      "label": "ROS Topic"
+    },
+    {
+      "slug": "ros2-control",
+      "label": "ros2_control"
+    },
+    {
+      "slug": "science-robotics-2022-ros-2-paper",
+      "label": "Science Robotics 2022 ROS 2 Paper"
+    },
+    {
+      "slug": "sros2-security",
+      "label": "SROS2 Security"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
+    },
+    {
+      "slug": "urdf-robot-model",
+      "label": "URDF Robot Model"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "hardware-abstraction",
+      "label": "Hardware Abstraction"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ]
+}

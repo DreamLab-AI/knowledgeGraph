@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:990a3110f71b466b998ee251ccd77179cb17888477943c505dbd53b6c0f617d5",
+  "title": "AR Technology",
+  "slug": "ar-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ar-technology",
+  "domain": "spatial-computing",
+  "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments. Core components include [[AR Registration]], [[Computer Vision]], [[3D Rendering Engine]]s, and [[Sensor Input]] fusion, spanning applications from mobile filters to enterprise industrial systems requiring precise spatial anchoring and persistent content management.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:extended-reality",
+      "label": "Extended Reality"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ar-registration",
+        "label": "AR Registration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:industrial-guidance",
+        "label": "Industrial Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-assistance",
+        "label": "Remote Assistance"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-computing-applications",
+        "label": "Spatial Computing Applications"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "display-technology",
+      "label": "Display Technology"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "industrial-guidance",
+      "label": "Industrial Guidance"
+    },
+    {
+      "slug": "remote-assistance",
+      "label": "Remote Assistance"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "spatial-computing-applications",
+      "label": "Spatial Computing Applications"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial Anchors"
+    },
+    {
+      "slug": "visual-marker",
+      "label": "Visual Marker"
+    }
+  ]
+}

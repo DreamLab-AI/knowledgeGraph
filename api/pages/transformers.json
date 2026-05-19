@@ -1,0 +1,628 @@
+{
+  "id": "urn:visionflow:page:029281f23e5fa581ae488c94dec3228740012f53ffb85e767f533d9af35ac7a1",
+  "title": "Transformers",
+  "slug": "transformers",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transformers",
+  "domain": "artificial-intelligence",
+  "definition": "Neural network architecture introduced by Vaswani et al. in \"Attention Is All You Need\" (NeurIPS 2017) that replaces recurrent and convolutional layers with stacked multi-head scaled dot-product self-attention and position-wise feed-forward networks, enabling fully parallel sequence processing and direct O(1)-path modelling of arbitrary-distance token dependencies; the architecture consists of encoder and/or decoder stacks, each comprising multi-head attention sub-layers, FFN sub-layers, residual connections, and layer normalisation, parameterised by model dimension d_model, number of heads h, and FFN expansion ratio (typically 4\u00d7), with sinusoidal or learned positional encodings injecting sequential order information; modern variants extend the baseline through rotary position embedding (RoPE, Su et al. 2021) eliminating absolute position tables, attention with linear biases (ALiBi, Press et al. 2021) biasing attention scores by distance, YaRN (Peng et al. 2023) and LongRoPE dynamically extending context beyond training length, grouped-query attention (GQA, Ainslie et al. 2023) sharing key-value heads across query groups to reduce KV-cache memory by up to 8\u00d7, multi-query attention",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:sequence-modelling",
+      "label": "Sequence Modelling"
+    },
+    {
+      "id": "urn:visionflow:owl:class:attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:visionflow:linked:layer-normalization",
+        "label": "Layer Normalization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:self-attention",
+        "label": "Self Attention"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:embedding-layer",
+        "label": "Embedding Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:owl:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:multimodal-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:text-generation",
+        "label": "Text Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:rmsnorm",
+        "label": "RMSNorm"
+      },
+      {
+        "id": "urn:visionflow:linked:ro-pe",
+        "label": "RoPE"
+      },
+      {
+        "id": "urn:visionflow:linked:swi-glu",
+        "label": "SwiGLU"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scaled-dot-product-attention",
+        "label": "Scaled Dot Product Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sparse-mixture-of-experts",
+        "label": "Sparse Mixture of Experts"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
+      "slug": "aiarchitecture-domain",
+      "label": "AIArchitectureDomain"
+    },
+    {
+      "slug": "alpha-fold",
+      "label": "AlphaFold"
+    },
+    {
+      "slug": "alpha-fold-2",
+      "label": "AlphaFold 2"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "bloom",
+      "label": "BLOOM"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "de-berta",
+      "label": "DeBERTa"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "DeepLearningDomain"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "embedding-layer",
+      "label": "Embedding Layer"
+    },
+    {
+      "slug": "falcon",
+      "label": "Falcon"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "gemma",
+      "label": "Gemma"
+    },
+    {
+      "slug": "google-brain",
+      "label": "Google Brain"
+    },
+    {
+      "slug": "gpt-neo-x",
+      "label": "GPT-NeoX"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "grouped-query-attention",
+      "label": "Grouped Query Attention"
+    },
+    {
+      "slug": "hugging-face-transformers",
+      "label": "Hugging Face Transformers"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "lla-ma-2",
+      "label": "LLaMA 2"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
+      "slug": "mamba",
+      "label": "Mamba"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "multimodal-learning",
+      "label": "Multimodal Learning"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "onnx",
+      "label": "ONNX"
+    },
+    {
+      "slug": "pa-lm",
+      "label": "PaLM"
+    },
+    {
+      "slug": "pa-lm-2",
+      "label": "PaLM 2"
+    },
+    {
+      "slug": "phi",
+      "label": "Phi"
+    },
+    {
+      "slug": "protein-structure-prediction",
+      "label": "Protein Structure Prediction"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "qwen",
+      "label": "Qwen"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rmsnorm",
+      "label": "RMSNorm"
+    },
+    {
+      "slug": "ro-pe",
+      "label": "RoPE"
+    },
+    {
+      "slug": "rwkv",
+      "label": "RWKV"
+    },
+    {
+      "slug": "sequence-modelling",
+      "label": "Sequence Modelling"
+    },
+    {
+      "slug": "softmax",
+      "label": "Softmax"
+    },
+    {
+      "slug": "state-space-models",
+      "label": "State Space Models"
+    },
+    {
+      "slug": "swi-glu",
+      "label": "SwiGLU"
+    },
+    {
+      "slug": "training-infrastructure-layer",
+      "label": "TrainingInfrastructureLayer"
+    },
+    {
+      "slug": "transformer-training-infrastructure",
+      "label": "Transformer Training Infrastructure"
+    },
+    {
+      "slug": "vi-t",
+      "label": "ViT"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "bart",
+      "label": "BART"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL-E"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed-Forward Network"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "gpt-3",
+      "label": "GPT 3"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "lla-ma",
+      "label": "LLaMA"
+    },
+    {
+      "slug": "m-t5",
+      "label": "mT5"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "mixtral",
+      "label": "Mixtral"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "residual-connection",
+      "label": "Residual Connection"
+    },
+    {
+      "slug": "ro-berta",
+      "label": "RoBERTa"
+    },
+    {
+      "slug": "scaled-dot-product-attention",
+      "label": "Scaled Dot Product Attention"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "sparse-mixture-of-experts",
+      "label": "Sparse Mixture of Experts"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "t5",
+      "label": "T5"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "network-architecture",
+      "label": "Network Architecture"
+    },
+    {
+      "slug": "overview-of-machine-learning-techniques",
+      "label": "Overview of Machine Learning Techniques"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

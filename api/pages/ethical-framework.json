@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6",
+  "title": "Ethical Framework",
+  "slug": "ethical-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ethical-framework",
+  "domain": "artificial-intelligence",
+  "definition": "An Ethical Framework is a structured set of moral principles, values, and reasoning methods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm. Ethical frameworks for AI translate philosophical traditions and moral reasoning into practical guidelines addressing unique challenges posed by algorithmic decision-making: how to ensure fairness when training data reflects historical discrimination, how to balance accuracy with transparency when complex models resist interpretation, how to assign responsibility when autonomous systems cause harm, and how to preserve human agency when AI systems make consequential recommendations. These frameworks draw from multiple ethical traditions including consequentialism (evaluating AI systems by their outcomes and impacts), deontology (establishing duties and rules AI systems must follow regardless of consequences), virtue ethics (cultivating organizational practices promoting responsible AI development), and care ethics (emphasizing relationships and contextual understanding). Ethical frameworks provide structured approaches for identifying, analyzing, and resolvin",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-governance-principle",
+      "label": "AI Governance Principle"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm-code-of-ethics",
+      "label": "ACM Code of Ethics"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "AI Governance Principle"
+    },
+    {
+      "slug": "asilomar-ai-principles",
+      "label": "Asilomar AI Principles"
+    },
+    {
+      "slug": "autonomy",
+      "label": "Autonomy"
+    },
+    {
+      "slug": "beneficence",
+      "label": "Beneficence"
+    },
+    {
+      "slug": "human-dignity",
+      "label": "Human Dignity"
+    },
+    {
+      "slug": "ieee-ethically-aligned-design",
+      "label": "IEEE Ethically Aligned Design"
+    },
+    {
+      "slug": "justice",
+      "label": "Justice"
+    },
+    {
+      "slug": "montreal-declaration-for-responsible-ai",
+      "label": "Montreal Declaration for Responsible AI"
+    },
+    {
+      "slug": "non-maleficence",
+      "label": "Non-maleficence"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    }
+  ]
+}

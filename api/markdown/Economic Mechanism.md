@@ -1,21 +1,297 @@
-iri:: http://narrativegoldmine.com/blockchain#EconomicMechanism
-uri:: urn:visionclaw:concept:blockchain:economic-mechanism
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:economic-mechanism
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Economic Mechanism
-content-hash:: sha256-12-0fbb482e15b4
-legacy-term-id:: PC-0005
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#EconomicMechanism
+legacy_uri:: urn:visionclaw:concept:blockchain:economic-mechanism
 public:: true
+
+# Economic Mechanism
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c",
+  "@type": "Page",
+  "vc:slug": "economic-mechanism",
+  "title": "Economic Mechanism",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:fee-burning",
+      "vc:label": "Fee Burning"
+    },
+    {
+      "@id": "urn:visionflow:linked:gas-mechanism",
+      "vc:label": "Gas Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity-mining",
+      "vc:label": "Liquidity Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanism-design-theory",
+      "vc:label": "Mechanism Design Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:slashing",
+      "vc:label": "Slashing"
+    },
+    {
+      "@id": "urn:visionflow:linked:staking-reward",
+      "vc:label": "Staking Reward"
+    },
+    {
+      "@id": "urn:visionflow:linked:tokenomics-research",
+      "vc:label": "Tokenomics Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-fee-economics",
+      "vc:label": "Transaction Fee Economics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:block-reward",
+      "vc:label": "Block Reward"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:token",
+      "vc:label": "Token"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction-fee",
+      "vc:label": "Transaction Fee"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0fbb482e15b4"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#EconomicMechanism"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0005"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Economic Mechanism"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:economic-mechanism"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:economic-mechanism"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:economic-mechanism",
+  "@type": "OntologyClass",
+  "label": "Economic Mechanism",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems. Drawing from mechanism design theory in economics, blockchain economic mechanisms create game-theoretic environments where rational self-interested actors produce collectively beneficial outcomes without central coordination. These mechanisms encompass token economics (tokenomics) including supply schedules, distribution models, and utility functions; transaction fee markets that allocate limited block space to highest-value transactions; mining or staking rewards that incentivize honest participation in consensus; slashing penalties that discourage malicious behavior; and automated market makers that enable decentralized exchange. Effective economic mechanisms must balance multiple objectives: incentive compatibility (honest behavior should be profitable), budget balance (rewards don't exceed available resources), individual rationality (participants benefit from participation), and resistance to collusion or Sybil attacks. The design space includes considerations of inflation vs. deflati",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:economic-mechanism:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Fee Burning]]",
+      "resolved": "urn:visionflow:linked:fee-burning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gas Mechanism]]",
+      "resolved": "urn:visionflow:linked:gas-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquidity Mining]]",
+      "resolved": "urn:visionflow:linked:liquidity-mining",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mechanism Design Theory]]",
+      "resolved": "urn:visionflow:linked:mechanism-design-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Slashing]]",
+      "resolved": "urn:visionflow:linked:slashing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Staking Reward]]",
+      "resolved": "urn:visionflow:linked:staking-reward",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tokenomics Research]]",
+      "resolved": "urn:visionflow:linked:tokenomics-research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transaction Fee Economics]]",
+      "resolved": "urn:visionflow:linked:transaction-fee-economics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Block Reward]]",
+      "resolved": "urn:visionflow:owl:class:block-reward",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Token]]",
+      "resolved": "urn:visionflow:owl:class:token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction Fee]]",
+      "resolved": "urn:visionflow:owl:class:transaction-fee",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems. Drawing from mechanism design theory in economics, blockchain economic mechanisms create game-theoretic environments where rational self-interested actors produce collectively beneficial outcomes without central coordination. These mechanisms encompass token economics (tokenomics) including supply schedules, distribution models, and utility functions; transaction fee markets that allocate limited block space to highest-value transactions; mining or staking rewards that incentivize honest participation in consensus; slashing penalties that discourage malicious behavior; and automated market makers that enable decentralized exchange. Effective economic mechanisms must balance multiple objectives: incentive compatibility (honest behavior should be profitable), budget balance (rewards don't exceed available resources), individual rationality (participants benefit from participation), and resistance to collusion or Sybil attacks. The design space includes considerations of inflation vs. deflation, fee burning vs. redistribution, and wealth concentration vs. broad distribution, each with implications for network security, sustainability, and decentralization.

@@ -1,21 +1,1440 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#PerceptionSystem
-uri:: urn:visionclaw:concept:artificial-intelligence:perception-system
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:perception-system
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Perception System
-content-hash:: sha256-12-2a2fbedb35f2
-legacy-term-id:: AI-0349
-status:: production
-maturity:: production
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#PerceptionSystem
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:perception-system
 public:: true
+
+# Perception System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00",
+  "@type": "Page",
+  "vc:slug": "perception-system",
+  "title": "Perception System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-vision",
+      "vc:label": "3D Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:4-d-perception",
+      "vc:label": "4D Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:4-d-radar",
+      "vc:label": "4D Radar"
+    },
+    {
+      "@id": "urn:visionflow:linked:adverse-weather",
+      "vc:label": "Adverse Weather"
+    },
+    {
+      "@id": "urn:visionflow:linked:agricultural-robots",
+      "vc:label": "Agricultural Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai",
+      "vc:label": "AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:amazon-robotics",
+      "vc:label": "Amazon Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:apollo-auto",
+      "vc:label": "Apollo Auto"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanisms",
+      "vc:label": "Attention Mechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:automotive-edge-computing-consortium",
+      "vc:label": "Automotive Edge Computing Consortium"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-decision-making",
+      "vc:label": "Autonomous Decision-Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-mobile-robots",
+      "vc:label": "Autonomous Mobile Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-mobility",
+      "vc:label": "Autonomous Mobility"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicles",
+      "vc:label": "Autonomous Vehicles"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoware",
+      "vc:label": "Autoware"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-deep-learning",
+      "vc:label": "Bayesian Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:boston-dynamics-spot",
+      "vc:label": "Boston Dynamics Spot"
+    },
+    {
+      "@id": "urn:visionflow:linked:carla",
+      "vc:label": "CARLA"
+    },
+    {
+      "@id": "urn:visionflow:linked:carmaker",
+      "vc:label": "Carmaker"
+    },
+    {
+      "@id": "urn:visionflow:linked:causal-reasoning",
+      "vc:label": "Causal Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:classification",
+      "vc:label": "Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:cnn",
+      "vc:label": "CNN"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-cost",
+      "vc:label": "Computational Cost"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:coursera-computer-vision-specialization",
+      "vc:label": "Coursera Computer Vision Specialization"
+    },
+    {
+      "@id": "urn:visionflow:linked:cruise-origin",
+      "vc:label": "Cruise Origin"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographically-verified",
+      "vc:label": "Cryptographically Verified"
+    },
+    {
+      "@id": "urn:visionflow:linked:cvpr",
+      "vc:label": "CVPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-anonymization",
+      "vc:label": "Data Anonymization"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-ai",
+      "vc:label": "Decentralized AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-perception-networks",
+      "vc:label": "Decentralized Perception Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-systems",
+      "vc:label": "Decentralized Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:detectron2",
+      "vc:label": "Detectron2"
+    },
+    {
+      "@id": "urn:visionflow:linked:detr",
+      "vc:label": "DETR"
+    },
+    {
+      "@id": "urn:visionflow:linked:dinov2",
+      "vc:label": "DINOv2"
+    },
+    {
+      "@id": "urn:visionflow:linked:dji-enterprise",
+      "vc:label": "DJI Enterprise"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-environments",
+      "vc:label": "Dynamic Environments"
+    },
+    {
+      "@id": "urn:visionflow:linked:eccv",
+      "vc:label": "ECCV"
+    },
+    {
+      "@id": "urn:visionflow:linked:end-to-end-learning",
+      "vc:label": "End-to-End Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-mapping",
+      "vc:label": "Environmental Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethical-guidelines",
+      "vc:label": "Ethical Guidelines"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-based-vision",
+      "vc:label": "Event-Based Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-perception",
+      "vc:label": "Explainable Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:few-shot-detection",
+      "vc:label": "Few-Shot Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr-compliance",
+      "vc:label": "GDPR Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:gm-ultra-cruise",
+      "vc:label": "GM Ultra Cruise"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-in-the-loop",
+      "vc:label": "Hardware-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:hdr-cameras",
+      "vc:label": "HDR Cameras"
+    },
+    {
+      "@id": "urn:visionflow:linked:hil",
+      "vc:label": "HIL"
+    },
+    {
+      "@id": "urn:visionflow:linked:iccv",
+      "vc:label": "ICCV"
+    },
+    {
+      "@id": "urn:visionflow:linked:icra",
+      "vc:label": "ICRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-intelligent-transportation-systems-society",
+      "vc:label": "IEEE Intelligent Transportation Systems Society"
+    },
+    {
+      "@id": "urn:visionflow:linked:iros",
+      "vc:label": "IROS"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-21448",
+      "vc:label": "ISO 21448"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-26262",
+      "vc:label": "ISO 26262"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-pas-21448",
+      "vc:label": "ISO/PAS 21448"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-tc-204",
+      "vc:label": "ISO TC 204"
+    },
+    {
+      "@id": "urn:visionflow:linked:lgsvl",
+      "vc:label": "LGSVL"
+    },
+    {
+      "@id": "urn:visionflow:linked:li-dar",
+      "vc:label": "LiDAR"
+    },
+    {
+      "@id": "urn:visionflow:linked:li-dar-slam",
+      "vc:label": "LiDAR SLAM"
+    },
+    {
+      "@id": "urn:visionflow:linked:lighting-variations",
+      "vc:label": "Lighting Variations"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-tail-events",
+      "vc:label": "Long-Tail Events"
+    },
+    {
+      "@id": "urn:visionflow:linked:maps",
+      "vc:label": "Maps"
+    },
+    {
+      "@id": "urn:visionflow:linked:mercedes-benz-drive-pilot",
+      "vc:label": "Mercedes-Benz Drive Pilot"
+    },
+    {
+      "@id": "urn:visionflow:linked:mit-6-s094-deep-learning-for-self-driving-cars",
+      "vc:label": "MIT 6.S094: Deep Learning for Self-Driving Cars"
+    },
+    {
+      "@id": "urn:visionflow:linked:mmdetection",
+      "vc:label": "MMDetection"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-perception",
+      "vc:label": "Multi-Agent Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-modal-data",
+      "vc:label": "Multi-Modal Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:multispectral-cameras",
+      "vc:label": "Multispectral Cameras"
+    },
+    {
+      "@id": "urn:visionflow:linked:ne-rf",
+      "vc:label": "NeRF"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips",
+      "vc:label": "NeurIPS"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuromorphic-cameras",
+      "vc:label": "Neuromorphic Cameras"
+    },
+    {
+      "@id": "urn:visionflow:linked:nvidia-developer-program",
+      "vc:label": "NVIDIA Developer Program"
+    },
+    {
+      "@id": "urn:visionflow:linked:object-recognition",
+      "vc:label": "Object Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:occlusion-handling",
+      "vc:label": "Occlusion Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:occupancy-networks",
+      "vc:label": "Occupancy Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-road-testing",
+      "vc:label": "On-Road Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-cv",
+      "vc:label": "OpenCV"
+    },
+    {
+      "@id": "urn:visionflow:linked:perception-systems",
+      "vc:label": "Perception Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:physical-adversarial-attacks",
+      "vc:label": "Physical Adversarial Attacks"
+    },
+    {
+      "@id": "urn:visionflow:linked:point-cloud-library",
+      "vc:label": "Point Cloud Library"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-preserving",
+      "vc:label": "Privacy-Preserving"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-tracking",
+      "vc:label": "Probabilistic Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:radar",
+      "vc:label": "Radar"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotaxi",
+      "vc:label": "Robotaxi"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros",
+      "vc:label": "ROS"
+    },
+    {
+      "@id": "urn:visionflow:linked:sae-international",
+      "vc:label": "SAE International"
+    },
+    {
+      "@id": "urn:visionflow:linked:sae-j3016",
+      "vc:label": "SAE J3016"
+    },
+    {
+      "@id": "urn:visionflow:linked:saliency-maps",
+      "vc:label": "Saliency Maps"
+    },
+    {
+      "@id": "urn:visionflow:linked:sam-2",
+      "vc:label": "SAM 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:scenario-based-testing",
+      "vc:label": "Scenario-Based Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-data",
+      "vc:label": "Sensor Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-modalities",
+      "vc:label": "Sensor Modalities"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-to-action",
+      "vc:label": "Sensor-to-Action"
+    },
+    {
+      "@id": "urn:visionflow:linked:sim-to-real-gap",
+      "vc:label": "Sim-to-Real Gap"
+    },
+    {
+      "@id": "urn:visionflow:linked:situational-awareness",
+      "vc:label": "Situational Awareness"
+    },
+    {
+      "@id": "urn:visionflow:linked:skydio",
+      "vc:label": "Skydio"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-cities",
+      "vc:label": "Smart Cities"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-state-li-dar",
+      "vc:label": "Solid-State LiDAR"
+    },
+    {
+      "@id": "urn:visionflow:linked:tesla-autopilot-fsd",
+      "vc:label": "Tesla Autopilot/FSD"
+    },
+    {
+      "@id": "urn:visionflow:linked:tracking",
+      "vc:label": "Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-based-architectures",
+      "vc:label": "Transformer-Based Architectures"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-based-perception",
+      "vc:label": "Transformer-Based Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:udacity-self-driving-car-nanodegree",
+      "vc:label": "Udacity Self-Driving Car Nanodegree"
+    },
+    {
+      "@id": "urn:visionflow:linked:ultrasonic-sensors",
+      "vc:label": "Ultrasonic Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:linked:vehicle-to-vehicle",
+      "vc:label": "Vehicle-to-Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-testing",
+      "vc:label": "Virtual Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-transformers",
+      "vc:label": "Vision Transformers"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-slam",
+      "vc:label": "Visual SLAM"
+    },
+    {
+      "@id": "urn:visionflow:linked:waymo-driver",
+      "vc:label": "Waymo Driver"
+    },
+    {
+      "@id": "urn:visionflow:linked:yolov12",
+      "vc:label": "YOLOv12"
+    },
+    {
+      "@id": "urn:visionflow:linked:zipline",
+      "vc:label": "Zipline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+      "vc:label": "3D Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adversarial-robustness",
+      "vc:label": "Adversarial Robustness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "Autonomous Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:camera",
+      "vc:label": "Camera"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:localization",
+      "vc:label": "Localization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:micropayment",
+      "vc:label": "Micropayment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-rendering",
+      "vc:label": "Neural Rendering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-systems",
+      "vc:label": "Robotics Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:scene-understanding",
+      "vc:label": "Scene Understanding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2a2fbedb35f2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#PerceptionSystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0349"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Perception System"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:perception-system"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "production"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:perception-system"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:perception-system",
+  "@type": "OntologyClass",
+  "label": "Perception System",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "production",
+  "vc:maturity": "production",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localization]], and [[Scene Understanding]]. Perception systems fuse data from multiple [[Sensor Modalities]] ([[Camera]], [[LiDAR]], [[Radar]], [[Ultrasonic Sensors]]) to create robust environmental models for [[Autonomous Decision-Making]]. [Updated 2025]",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-systems",
+      "vc:label": "Robotics Systems"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:environmental-mapping",
+      "vc:label": "Environmental Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:object-recognition",
+      "vc:label": "Object Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:situational-awareness",
+      "vc:label": "Situational Awareness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-navigation",
+      "vc:label": "Autonomous Navigation"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:perception-system:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Vision]]",
+      "resolved": "urn:visionflow:linked:3-d-vision",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[4D Perception]]",
+      "resolved": "urn:visionflow:linked:4-d-perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[4D Radar]]",
+      "resolved": "urn:visionflow:linked:4-d-radar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adverse Weather]]",
+      "resolved": "urn:visionflow:linked:adverse-weather",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agricultural Robots]]",
+      "resolved": "urn:visionflow:linked:agricultural-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI]]",
+      "resolved": "urn:visionflow:linked:ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Amazon Robotics]]",
+      "resolved": "urn:visionflow:linked:amazon-robotics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Apollo Auto]]",
+      "resolved": "urn:visionflow:linked:apollo-auto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Attention Mechanisms]]",
+      "resolved": "urn:visionflow:linked:attention-mechanisms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automotive Edge Computing Consortium]]",
+      "resolved": "urn:visionflow:linked:automotive-edge-computing-consortium",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Decision-Making]]",
+      "resolved": "urn:visionflow:linked:autonomous-decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Mobile Robots]]",
+      "resolved": "urn:visionflow:linked:autonomous-mobile-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Mobility]]",
+      "resolved": "urn:visionflow:linked:autonomous-mobility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Systems]]",
+      "resolved": "urn:visionflow:linked:autonomous-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Vehicles]]",
+      "resolved": "urn:visionflow:linked:autonomous-vehicles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autoware]]",
+      "resolved": "urn:visionflow:linked:autoware",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bayesian Deep Learning]]",
+      "resolved": "urn:visionflow:linked:bayesian-deep-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Boston Dynamics Spot]]",
+      "resolved": "urn:visionflow:linked:boston-dynamics-spot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CARLA]]",
+      "resolved": "urn:visionflow:linked:carla",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Carmaker]]",
+      "resolved": "urn:visionflow:linked:carmaker",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Causal Reasoning]]",
+      "resolved": "urn:visionflow:linked:causal-reasoning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Classification]]",
+      "resolved": "urn:visionflow:linked:classification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CLIP]]",
+      "resolved": "urn:visionflow:linked:clip",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CNN]]",
+      "resolved": "urn:visionflow:linked:cnn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Cost]]",
+      "resolved": "urn:visionflow:linked:computational-cost",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Continual Learning]]",
+      "resolved": "urn:visionflow:linked:continual-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Coursera Computer Vision Specialization]]",
+      "resolved": "urn:visionflow:linked:coursera-computer-vision-specialization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cruise Origin]]",
+      "resolved": "urn:visionflow:linked:cruise-origin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographically Verified]]",
+      "resolved": "urn:visionflow:linked:cryptographically-verified",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CVPR]]",
+      "resolved": "urn:visionflow:linked:cvpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Anonymization]]",
+      "resolved": "urn:visionflow:linked:data-anonymization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized AI]]",
+      "resolved": "urn:visionflow:linked:decentralized-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Perception Networks]]",
+      "resolved": "urn:visionflow:linked:decentralized-perception-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Systems]]",
+      "resolved": "urn:visionflow:linked:decentralized-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Detectron2]]",
+      "resolved": "urn:visionflow:linked:detectron2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DETR]]",
+      "resolved": "urn:visionflow:linked:detr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DINOv2]]",
+      "resolved": "urn:visionflow:linked:dinov2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DJI Enterprise]]",
+      "resolved": "urn:visionflow:linked:dji-enterprise",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dynamic Environments]]",
+      "resolved": "urn:visionflow:linked:dynamic-environments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ECCV]]",
+      "resolved": "urn:visionflow:linked:eccv",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[End-to-End Learning]]",
+      "resolved": "urn:visionflow:linked:end-to-end-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environmental Mapping]]",
+      "resolved": "urn:visionflow:linked:environmental-mapping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethical Guidelines]]",
+      "resolved": "urn:visionflow:linked:ethical-guidelines",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event-Based Vision]]",
+      "resolved": "urn:visionflow:linked:event-based-vision",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Explainable Perception]]",
+      "resolved": "urn:visionflow:linked:explainable-perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Few-Shot Detection]]",
+      "resolved": "urn:visionflow:linked:few-shot-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR Compliance]]",
+      "resolved": "urn:visionflow:linked:gdpr-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GM Ultra Cruise]]",
+      "resolved": "urn:visionflow:linked:gm-ultra-cruise",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hardware-in-the-Loop]]",
+      "resolved": "urn:visionflow:linked:hardware-in-the-loop",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HDR Cameras]]",
+      "resolved": "urn:visionflow:linked:hdr-cameras",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HIL]]",
+      "resolved": "urn:visionflow:linked:hil",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICCV]]",
+      "resolved": "urn:visionflow:linked:iccv",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICRA]]",
+      "resolved": "urn:visionflow:linked:icra",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE Intelligent Transportation Systems Society]]",
+      "resolved": "urn:visionflow:linked:ieee-intelligent-transportation-systems-society",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IROS]]",
+      "resolved": "urn:visionflow:linked:iros",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 21448]]",
+      "resolved": "urn:visionflow:linked:iso-21448",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 26262]]",
+      "resolved": "urn:visionflow:linked:iso-26262",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/PAS 21448]]",
+      "resolved": "urn:visionflow:linked:iso-pas-21448",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO TC 204]]",
+      "resolved": "urn:visionflow:linked:iso-tc-204",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LGSVL]]",
+      "resolved": "urn:visionflow:linked:lgsvl",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LiDAR]]",
+      "resolved": "urn:visionflow:linked:li-dar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LiDAR SLAM]]",
+      "resolved": "urn:visionflow:linked:li-dar-slam",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lighting Variations]]",
+      "resolved": "urn:visionflow:linked:lighting-variations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Long-Tail Events]]",
+      "resolved": "urn:visionflow:linked:long-tail-events",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Maps]]",
+      "resolved": "urn:visionflow:linked:maps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mercedes-Benz Drive Pilot]]",
+      "resolved": "urn:visionflow:linked:mercedes-benz-drive-pilot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MIT 6.S094: Deep Learning for Self-Driving Cars]]",
+      "resolved": "urn:visionflow:linked:mit-6-s094-deep-learning-for-self-driving-cars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MMDetection]]",
+      "resolved": "urn:visionflow:linked:mmdetection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent Perception]]",
+      "resolved": "urn:visionflow:linked:multi-agent-perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Modal Data]]",
+      "resolved": "urn:visionflow:linked:multi-modal-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multispectral Cameras]]",
+      "resolved": "urn:visionflow:linked:multispectral-cameras",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NeRF]]",
+      "resolved": "urn:visionflow:linked:ne-rf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NeurIPS]]",
+      "resolved": "urn:visionflow:linked:neur-ips",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neuromorphic Cameras]]",
+      "resolved": "urn:visionflow:linked:neuromorphic-cameras",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NVIDIA Developer Program]]",
+      "resolved": "urn:visionflow:linked:nvidia-developer-program",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Object Recognition]]",
+      "resolved": "urn:visionflow:linked:object-recognition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Occlusion Handling]]",
+      "resolved": "urn:visionflow:linked:occlusion-handling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Occupancy Networks]]",
+      "resolved": "urn:visionflow:linked:occupancy-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[On-Road Testing]]",
+      "resolved": "urn:visionflow:linked:on-road-testing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenCV]]",
+      "resolved": "urn:visionflow:linked:open-cv",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Perception Systems]]",
+      "resolved": "urn:visionflow:linked:perception-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Physical Adversarial Attacks]]",
+      "resolved": "urn:visionflow:linked:physical-adversarial-attacks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Point Cloud Library]]",
+      "resolved": "urn:visionflow:linked:point-cloud-library",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy-Preserving]]",
+      "resolved": "urn:visionflow:linked:privacy-preserving",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Probabilistic Tracking]]",
+      "resolved": "urn:visionflow:linked:probabilistic-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Radar]]",
+      "resolved": "urn:visionflow:linked:radar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotaxi]]",
+      "resolved": "urn:visionflow:linked:robotaxi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ROS]]",
+      "resolved": "urn:visionflow:linked:ros",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SAE International]]",
+      "resolved": "urn:visionflow:linked:sae-international",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SAE J3016]]",
+      "resolved": "urn:visionflow:linked:sae-j3016",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Saliency Maps]]",
+      "resolved": "urn:visionflow:linked:saliency-maps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SAM 2]]",
+      "resolved": "urn:visionflow:linked:sam-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scenario-Based Testing]]",
+      "resolved": "urn:visionflow:linked:scenario-based-testing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Data]]",
+      "resolved": "urn:visionflow:linked:sensor-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Modalities]]",
+      "resolved": "urn:visionflow:linked:sensor-modalities",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor-to-Action]]",
+      "resolved": "urn:visionflow:linked:sensor-to-action",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sim-to-Real Gap]]",
+      "resolved": "urn:visionflow:linked:sim-to-real-gap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Situational Awareness]]",
+      "resolved": "urn:visionflow:linked:situational-awareness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Skydio]]",
+      "resolved": "urn:visionflow:linked:skydio",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Cities]]",
+      "resolved": "urn:visionflow:linked:smart-cities",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid-State LiDAR]]",
+      "resolved": "urn:visionflow:linked:solid-state-li-dar",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tesla Autopilot/FSD]]",
+      "resolved": "urn:visionflow:linked:tesla-autopilot-fsd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tracking]]",
+      "resolved": "urn:visionflow:linked:tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transfer Learning]]",
+      "resolved": "urn:visionflow:linked:transfer-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transformer-Based Architectures]]",
+      "resolved": "urn:visionflow:linked:transformer-based-architectures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transformer-Based Perception]]",
+      "resolved": "urn:visionflow:linked:transformer-based-perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Udacity Self-Driving Car Nanodegree]]",
+      "resolved": "urn:visionflow:linked:udacity-self-driving-car-nanodegree",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ultrasonic Sensors]]",
+      "resolved": "urn:visionflow:linked:ultrasonic-sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uncertainty Quantification]]",
+      "resolved": "urn:visionflow:linked:uncertainty-quantification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vehicle-to-Vehicle]]",
+      "resolved": "urn:visionflow:linked:vehicle-to-vehicle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Testing]]",
+      "resolved": "urn:visionflow:linked:virtual-testing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vision Transformers]]",
+      "resolved": "urn:visionflow:linked:vision-transformers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Visual SLAM]]",
+      "resolved": "urn:visionflow:linked:visual-slam",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Waymo Driver]]",
+      "resolved": "urn:visionflow:linked:waymo-driver",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[YOLOv12]]",
+      "resolved": "urn:visionflow:linked:yolov12",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zipline]]",
+      "resolved": "urn:visionflow:linked:zipline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Gaussian Splatting]]",
+      "resolved": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Adversarial Robustness]]",
+      "resolved": "urn:visionflow:owl:class:adversarial-robustness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Navigation]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Camera]]",
+      "resolved": "urn:visionflow:owl:class:camera",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Foundation Models]]",
+      "resolved": "urn:visionflow:owl:class:foundation-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Intelligent Virtual Entity]]",
+      "resolved": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Localization]]",
+      "resolved": "urn:visionflow:owl:class:localization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Micropayment]]",
+      "resolved": "urn:visionflow:owl:class:micropayment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Rendering]]",
+      "resolved": "urn:visionflow:owl:class:neural-rendering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Object Detection]]",
+      "resolved": "urn:visionflow:owl:class:object-detection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics Systems]]",
+      "resolved": "urn:visionflow:owl:class:robotics-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Scene Understanding]]",
+      "resolved": "urn:visionflow:owl:class:scene-understanding",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor Fusion]]",
+      "resolved": "urn:visionflow:owl:class:sensor-fusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training Data]]",
+      "resolved": "urn:visionflow:owl:class:training-data",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localization]], and [[Scene Understanding]]. Perception systems fuse data from multiple [[Sensor Modalities]] ([[Camera]], [[LiDAR]], [[Radar]], [[Ultrasonic Sensors]]) to create robust environmental models for [[Autonomous Decision-Making]]. [Updated 2025]

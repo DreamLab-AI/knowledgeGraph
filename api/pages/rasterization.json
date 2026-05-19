@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:ebc51ffefb9a045d44a3077ee3d25ef345b02df92a7bc08d0a4fe7d894546776",
+  "title": "Rasterization",
+  "slug": "rasterization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rasterization",
+  "domain": "spatial-computing",
+  "definition": "Rasterization is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-rendering",
+      "label": "3D Rendering"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    }
+  ]
+}

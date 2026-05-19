@@ -1,21 +1,291 @@
-iri:: http://narrativegoldmine.com/infrastructure#CrossPlatformInteroperability
-uri:: urn:visionclaw:concept:infrastructure:cross-platform-interoperability
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:cross-platform-interoperability
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Cross-Platform Interoperability
-content-hash:: sha256-12-2261f9cb3753
-legacy-term-id:: NGM-7015
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#CrossPlatformInteroperability
+legacy_uri:: urn:visionclaw:concept:infrastructure:cross-platform-interoperability
 public:: true
+
+# Cross-Platform Interoperability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab",
+  "@type": "Page",
+  "vc:slug": "cross-platform-interoperability",
+  "title": "Cross-Platform Interoperability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-5164",
+      "vc:label": "ERC-5164"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-blockchain-standards",
+      "vc:label": "IEEE blockchain standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:next-generation-mobile",
+      "vc:label": "Next Generation Mobile"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did",
+      "vc:label": "W3C DID"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:layer-0",
+      "vc:label": "Layer 0"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:light-client",
+      "vc:label": "Light Client"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:relayer",
+      "vc:label": "Relayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-2261f9cb3753"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#CrossPlatformInteroperability"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7015"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cross-Platform Interoperability"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cross-platform-interoperability"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:cross-platform-interoperability"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
+  "@type": "OntologyClass",
+  "label": "Cross-Platform Interoperability",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:next-generation-mobile",
+      "vc:label": "Next Generation Mobile"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. In blockchain, protocols like IBC (Inter-Blockchain Communication) connect 115+ chains enabling trustless cross-chain transactions verified through light client proofs rather than trusted third parties.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
+      "vc:label": "Cross-Chain Bridge"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:owl:class:light-client",
+      "vc:label": "Light Client"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:relayer",
+      "vc:label": "Relayer"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:owl:class:layer-0",
+      "vc:label": "Layer 0"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cross-platform-interoperability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-5164]]",
+      "resolved": "urn:visionflow:linked:erc-5164",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE blockchain standards]]",
+      "resolved": "urn:visionflow:linked:ieee-blockchain-standards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Next Generation Mobile]]",
+      "resolved": "urn:visionflow:linked:next-generation-mobile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C DID]]",
+      "resolved": "urn:visionflow:linked:w3-c-did",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cross-Chain Bridge]]",
+      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Layer 0]]",
+      "resolved": "urn:visionflow:owl:class:layer-0",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Light Client]]",
+      "resolved": "urn:visionflow:owl:class:light-client",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Relayer]]",
+      "resolved": "urn:visionflow:owl:class:relayer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. In blockchain, protocols like IBC (Inter-Blockchain Communication) connect 115+ chains enabling trustless cross-chain transactions verified through light client proofs rather than trusted third parties.

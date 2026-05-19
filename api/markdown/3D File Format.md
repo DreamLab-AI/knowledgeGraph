@@ -1,24 +1,324 @@
-iri:: http://narrativegoldmine.com/spatial-computing#3dFileFormat
-uri:: urn:visionclaw:concept:spatial-computing:3d-file-format
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:3d-file-format
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: 3D File Format
-content-hash:: sha256-12-998d6c33672d
-legacy-term-id:: MV-9502
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:30:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#3dFileFormat
+legacy_uri:: urn:visionclaw:concept:spatial-computing:3d-file-format
 public:: true
+
+# 3D File Format
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43",
+  "@type": "Page",
+  "vc:slug": "3-d-file-format",
+  "title": "3D File Format",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-rendering",
+      "vc:label": "3D Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:animation-keyframes",
+      "vc:label": "Animation Keyframes"
+    },
+    {
+      "@id": "urn:visionflow:linked:asset-pipeline",
+      "vc:label": "Asset Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-platform-asset-exchange",
+      "vc:label": "Cross-Platform Asset Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:gl-tf",
+      "vc:label": "glTF"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-definition",
+      "vc:label": "Material Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:mesh-data",
+      "vc:label": "Mesh Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-model",
+      "vc:label": "3D Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-format-standard",
+      "vc:label": "Data Format Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset-management",
+      "vc:label": "Digital Asset Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-998d6c33672d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#3dFileFormat"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9502"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:30:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "3D File Format"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-file-format"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-file-format"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:3-d-file-format",
+  "@type": "OntologyClass",
+  "label": "3D File Format",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:data-format-standard",
+      "vc:label": "Data Format Standard"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata. Common formats include [[glTF]] (GL Transmission Format), FBX, OBJ, and USD, each optimised for specific use cases such as real-time rendering, interoperability, or archival preservation in spatial computing environments.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:animation-keyframes",
+      "vc:label": "Animation Keyframes"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-definition",
+      "vc:label": "Material Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:mesh-data",
+      "vc:label": "Mesh Data"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:3-d-rendering",
+      "vc:label": "3D Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-platform-asset-exchange",
+      "vc:label": "Cross-Platform Asset Exchange"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset-management",
+      "vc:label": "Digital Asset Management"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:asset-pipeline",
+      "vc:label": "Asset Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-model",
+      "vc:label": "3D Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-file-format:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Rendering]]",
+      "resolved": "urn:visionflow:linked:3-d-rendering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Animation Keyframes]]",
+      "resolved": "urn:visionflow:linked:animation-keyframes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Pipeline]]",
+      "resolved": "urn:visionflow:linked:asset-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Platform Asset Exchange]]",
+      "resolved": "urn:visionflow:linked:cross-platform-asset-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[glTF]]",
+      "resolved": "urn:visionflow:linked:gl-tf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Material Definition]]",
+      "resolved": "urn:visionflow:linked:material-definition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mesh Data]]",
+      "resolved": "urn:visionflow:linked:mesh-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Model]]",
+      "resolved": "urn:visionflow:owl:class:3-d-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Format Standard]]",
+      "resolved": "urn:visionflow:owl:class:data-format-standard",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Asset Management]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:interoperability",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - 3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata. Common formats include [[glTF]] (GL Transmission Format), FBX, OBJ, and USD, each optimised for specific use cases such as real-time rendering, interoperability, or archival preservation in spatial computing environments.

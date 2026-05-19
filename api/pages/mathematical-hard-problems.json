@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:edaec4264e03172e45dacdf09756c42df6d97b08ff23fd811f571c56847fe595",
+  "title": "Mathematical Hard Problems",
+  "slug": "mathematical-hard-problems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mathematical-hard-problems",
+  "domain": "spatial-computing",
+  "definition": "Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-security",
+      "label": "Cryptographic Security"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:secure-digital-systems",
+        "label": "Secure Digital Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "secure-digital-systems",
+      "label": "Secure Digital Systems"
+    },
+    {
+      "slug": "cryptographic-security",
+      "label": "Cryptographic Security"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    }
+  ]
+}

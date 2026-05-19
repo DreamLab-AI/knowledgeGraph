@@ -1,0 +1,324 @@
+{
+  "id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88",
+  "title": "OpenXR",
+  "slug": "open-xr",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:open-xr",
+  "domain": "spatial-computing",
+  "definition": "OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware \u2014 encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices \u2014 that defines a unified application-to-runtime interface, eliminating the fragmentation previously imposed by proprietary vendor SDKs (Oculus SDK, SteamVR, Windows Mixed Reality), so that an XR application written against OpenXR runs on any conformant runtime without source code changes, and enabling [[VisionClaw Agentic Container]] agents to interact with spatial computing environments through a standardised sensory and actuation surface.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:extended-reality-api",
+      "label": "Extended Reality API"
+    },
+    {
+      "id": "urn:visionflow:linked:khronos-group-standard",
+      "label": "Khronos Group Standard"
+    }
+  ],
+  "qualityScore": 0.6,
+  "authorityScore": 0.78,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:open-xr-action-system",
+        "label": "OpenXR Action System"
+      },
+      {
+        "id": "urn:visionflow:linked:open-xr-extension",
+        "label": "OpenXR Extension"
+      },
+      {
+        "id": "urn:visionflow:linked:open-xr-loader",
+        "label": "OpenXR Loader"
+      },
+      {
+        "id": "urn:visionflow:linked:open-xr-session",
+        "label": "OpenXR Session"
+      },
+      {
+        "id": "urn:visionflow:linked:open-xr-space",
+        "label": "OpenXR Space"
+      },
+      {
+        "id": "urn:visionflow:linked:open-xr-swapchain",
+        "label": "OpenXR Swapchain"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:open-gl-es",
+        "label": "OpenGL ES"
+      },
+      {
+        "id": "urn:visionflow:linked:vulkan-api",
+        "label": "Vulkan API"
+      },
+      {
+        "id": "urn:visionflow:linked:xr-hardware-device",
+        "label": "XR Hardware Device"
+      },
+      {
+        "id": "urn:visionflow:linked:xr-runtime",
+        "label": "XR Runtime"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:hardware-agnostic-xr-development",
+        "label": "Hardware-Agnostic XR Development"
+      },
+      {
+        "id": "urn:visionflow:linked:passthrough-ar",
+        "label": "Passthrough AR"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:khronos-open-xr-1-0-specification",
+        "label": "Khronos OpenXR 1.0 Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:open-xr-extension-registry",
+        "label": "OpenXR Extension Registry"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "android-platform",
+      "label": "Android Platform"
+    },
+    {
+      "slug": "extended-reality-api",
+      "label": "Extended Reality API"
+    },
+    {
+      "slug": "hardware-abstraction-layer",
+      "label": "HardwareAbstractionLayer"
+    },
+    {
+      "slug": "hardware-agnostic-xr-development",
+      "label": "Hardware-Agnostic XR Development"
+    },
+    {
+      "slug": "khronos-group-standard",
+      "label": "Khronos Group Standard"
+    },
+    {
+      "slug": "khronos-open-xr-1-0-specification",
+      "label": "Khronos OpenXR 1.0 Specification"
+    },
+    {
+      "slug": "khronos-open-xr-1-1-specification",
+      "label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "slug": "monado-open-source-runtime",
+      "label": "Monado Open Source Runtime"
+    },
+    {
+      "slug": "open-gl-es",
+      "label": "OpenGL ES"
+    },
+    {
+      "slug": "open-xr-action-system",
+      "label": "OpenXR Action System"
+    },
+    {
+      "slug": "open-xr-extension",
+      "label": "OpenXR Extension"
+    },
+    {
+      "slug": "open-xr-extension-registry",
+      "label": "OpenXR Extension Registry"
+    },
+    {
+      "slug": "open-xr-loader",
+      "label": "OpenXR Loader"
+    },
+    {
+      "slug": "open-xr-session",
+      "label": "OpenXR Session"
+    },
+    {
+      "slug": "open-xr-space",
+      "label": "OpenXR Space"
+    },
+    {
+      "slug": "open-xr-swapchain",
+      "label": "OpenXR Swapchain"
+    },
+    {
+      "slug": "passthrough-ar",
+      "label": "Passthrough AR"
+    },
+    {
+      "slug": "unity-open-xr-plugin",
+      "label": "Unity OpenXR Plugin"
+    },
+    {
+      "slug": "vulkan-api",
+      "label": "Vulkan API"
+    },
+    {
+      "slug": "vulkan-graphics-api",
+      "label": "Vulkan Graphics API"
+    },
+    {
+      "slug": "windows-mixed-reality-runtime",
+      "label": "Windows Mixed Reality Runtime"
+    },
+    {
+      "slug": "xr-hardware-device",
+      "label": "XR Hardware Device"
+    },
+    {
+      "slug": "xr-runtime",
+      "label": "XR Runtime"
+    },
+    {
+      "slug": "xr-technology-stack",
+      "label": "XR Technology Stack"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "cross-domain-bridge",
+      "label": "Cross Domain Bridge"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ]
+}

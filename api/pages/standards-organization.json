@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:dd97a5c39f0ce46fe314d21fa0f7636a10198d9734fa68cf952b93f3d90a7bbd",
+  "title": "Standards Organization",
+  "slug": "standards-organization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standards-organization",
+  "domain": "artificial-intelligence",
+  "definition": "Standards Organization is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "standardization-bodies",
+      "label": "Standardization Bodies"
+    }
+  ]
+}

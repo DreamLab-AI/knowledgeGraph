@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:a6e76761322adc85fed465a262d3998bd8e25e65cba9aeb5742d03ed0bed9063",
+  "title": "arpana",
+  "slug": "arpana",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:arpana",
+  "domain": "infrastructure",
+  "definition": "arpana is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "crime-uk",
+      "label": "crime uk"
+    },
+    {
+      "slug": "law",
+      "label": "law"
+    }
+  ],
+  "backlinks": []
+}

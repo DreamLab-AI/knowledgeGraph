@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:fed78abb62f00f0c8fd0b2b1a7b18ef8e1e6a157a2c3b35a9a2fb978373d23b5",
+  "title": "Virtual Museum Tour",
+  "slug": "virtual-museum-tour",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-museum-tour",
+  "domain": "spatial-computing",
+  "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-tour",
+      "label": "Virtual Tour"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-tour",
+      "label": "Virtual Tour"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    }
+  ]
+}

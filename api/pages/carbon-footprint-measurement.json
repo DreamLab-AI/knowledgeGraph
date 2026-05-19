@@ -1,0 +1,472 @@
+{
+  "id": "urn:visionflow:page:b3d5d7a5c19bcc3c4520260b740ab7da6f86b9f3c2c4789372d2367eb003e988",
+  "title": "Carbon Footprint Measurement",
+  "slug": "carbon-footprint-measurement",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-footprint-measurement",
+  "domain": "infrastructure",
+  "definition": "Systematic quantitative methodology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO\u2082e), applying IPCC Sixth Assessment Report (AR6, 2021) global warming potentials (GWP\u2081\u2080\u2080): CO\u2082 = 1, CH\u2084 = 27.9, N\u2082O = 273, HFC-134a = 1,526, SF\u2086 = 25,200, NF\u2083 = 17,400. [[Carbon Footprint Measurement]] integrates the [[GHG Protocol]] three-scope framework (Scope 1 direct combustion/process/fugitive, Scope 2 purchased energy location-based and market-based, Scope 3 fifteen value-chain categories) with [[ISO 14064]] organisational accounting principles, [[ISO 14067]] product carbon footprint (PCF) methodology, and [[Lifecycle Assessment]] (LCA) per ISO 14040/14044.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:climate-risk-management",
+      "label": "Climate Risk Management"
+    },
+    {
+      "id": "urn:visionflow:linked:corporate-disclosure",
+      "label": "Corporate Disclosure"
+    },
+    {
+      "id": "urn:visionflow:linked:measurement-frameworks",
+      "label": "Measurement Frameworks"
+    },
+    {
+      "id": "urn:visionflow:linked:sustainability-reporting",
+      "label": "Sustainability Reporting"
+    },
+    {
+      "id": "urn:visionflow:owl:class:environmental-accounting",
+      "label": "Environmental Accounting"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:boundary-setting",
+        "label": "Boundary Setting"
+      },
+      {
+        "id": "urn:visionflow:linked:carbon-accounting-software",
+        "label": "Carbon Accounting Software"
+      },
+      {
+        "id": "urn:visionflow:linked:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "id": "urn:visionflow:linked:emission-inventory",
+        "label": "Emission Inventory"
+      },
+      {
+        "id": "urn:visionflow:linked:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:satellite-monitoring",
+        "label": "Satellite Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-classification",
+        "label": "Scope Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:verification-and-assurance",
+        "label": "Verification and Assurance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:activity-data",
+        "label": "Activity Data"
+      },
+      {
+        "id": "urn:visionflow:linked:emission-factor-databases",
+        "label": "Emission Factor Databases"
+      },
+      {
+        "id": "urn:visionflow:linked:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-14067",
+        "label": "ISO 14067"
+      },
+      {
+        "id": "urn:visionflow:linked:organisational-boundary-definition",
+        "label": "Organisational Boundary Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:supply-chain-data",
+        "label": "Supply Chain Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:visionflow:linked:csrd-compliance",
+        "label": "CSRD Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:decarbonisation-strategy",
+        "label": "Decarbonisation Strategy"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:visionflow:linked:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:visionflow:linked:net-zero-target-setting",
+        "label": "Net Zero Target Setting"
+      },
+      {
+        "id": "urn:visionflow:linked:science-based-targets",
+        "label": "Science-Based Targets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:location-based-accounting",
+        "label": "Location-Based Accounting"
+      },
+      {
+        "id": "urn:visionflow:linked:market-based-accounting",
+        "label": "Market-Based Accounting"
+      },
+      {
+        "id": "urn:visionflow:linked:product-carbon-footprint",
+        "label": "Product Carbon Footprint"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "boundary-setting",
+      "label": "Boundary Setting"
+    },
+    {
+      "slug": "carbon-accounting-software",
+      "label": "Carbon Accounting Software"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    },
+    {
+      "slug": "carbon-offsetting",
+      "label": "Carbon Offsetting"
+    },
+    {
+      "slug": "climate-risk-management",
+      "label": "Climate Risk Management"
+    },
+    {
+      "slug": "climate-tech",
+      "label": "Climate Tech"
+    },
+    {
+      "slug": "corporate-disclosure",
+      "label": "Corporate Disclosure"
+    },
+    {
+      "slug": "corporate-sustainability-reporting-directive",
+      "label": "Corporate Sustainability Reporting Directive"
+    },
+    {
+      "slug": "csrd-compliance",
+      "label": "CSRD Compliance"
+    },
+    {
+      "slug": "decarbonisation-strategy",
+      "label": "Decarbonisation Strategy"
+    },
+    {
+      "slug": "digital-product-passport",
+      "label": "Digital Product Passport"
+    },
+    {
+      "slug": "emission-factor-databases",
+      "label": "Emission Factor Databases"
+    },
+    {
+      "slug": "emission-factors",
+      "label": "Emission Factors"
+    },
+    {
+      "slug": "emission-inventory",
+      "label": "Emission Inventory"
+    },
+    {
+      "slug": "erp-systems",
+      "label": "ERP Systems"
+    },
+    {
+      "slug": "esg-investing",
+      "label": "ESG Investing"
+    },
+    {
+      "slug": "esrs-e1",
+      "label": "ESRS E1"
+    },
+    {
+      "slug": "ghg-protocol",
+      "label": "GHG Protocol"
+    },
+    {
+      "slug": "greenwashing",
+      "label": "Greenwashing"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "iso-14040",
+      "label": "ISO 14040"
+    },
+    {
+      "slug": "iso-14064",
+      "label": "ISO 14064"
+    },
+    {
+      "slug": "iso-14067",
+      "label": "ISO 14067"
+    },
+    {
+      "slug": "lifecycle-assessment",
+      "label": "Lifecycle Assessment"
+    },
+    {
+      "slug": "location-based-accounting",
+      "label": "Location-Based Accounting"
+    },
+    {
+      "slug": "market-based-accounting",
+      "label": "Market-Based Accounting"
+    },
+    {
+      "slug": "measurement-frameworks",
+      "label": "Measurement Frameworks"
+    },
+    {
+      "slug": "methane-sat",
+      "label": "MethaneSAT"
+    },
+    {
+      "slug": "net-zero-target-setting",
+      "label": "Net Zero Target Setting"
+    },
+    {
+      "slug": "organisational-boundary-definition",
+      "label": "Organisational Boundary Definition"
+    },
+    {
+      "slug": "persefoni",
+      "label": "Persefoni"
+    },
+    {
+      "slug": "product-carbon-footprint",
+      "label": "Product Carbon Footprint"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "remote-sensing",
+      "label": "Remote Sensing"
+    },
+    {
+      "slug": "satellite-data",
+      "label": "Satellite Data"
+    },
+    {
+      "slug": "satellite-monitoring",
+      "label": "Satellite Monitoring"
+    },
+    {
+      "slug": "science-based-targets",
+      "label": "Science-Based Targets"
+    },
+    {
+      "slug": "science-based-targets-initiative",
+      "label": "Science-Based Targets initiative"
+    },
+    {
+      "slug": "scope-1-emissions",
+      "label": "Scope 1 Emissions"
+    },
+    {
+      "slug": "scope-2-emissions",
+      "label": "Scope 2 Emissions"
+    },
+    {
+      "slug": "scope-3-emissions",
+      "label": "Scope 3 Emissions"
+    },
+    {
+      "slug": "scope-classification",
+      "label": "Scope Classification"
+    },
+    {
+      "slug": "standardisation-layer",
+      "label": "StandardisationLayer"
+    },
+    {
+      "slug": "streamlined-energy-and-carbon-reporting",
+      "label": "Streamlined Energy and Carbon Reporting"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "supply-chain-data",
+      "label": "Supply Chain Data"
+    },
+    {
+      "slug": "supply-chain-transparency",
+      "label": "Supply Chain Transparency"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "SustainabilityDomain"
+    },
+    {
+      "slug": "sustainability-reporting",
+      "label": "Sustainability Reporting"
+    },
+    {
+      "slug": "tcfd",
+      "label": "TCFD"
+    },
+    {
+      "slug": "verification-and-assurance",
+      "label": "Verification and Assurance"
+    },
+    {
+      "slug": "voluntary-carbon-markets",
+      "label": "Voluntary Carbon Markets"
+    },
+    {
+      "slug": "watershed",
+      "label": "Watershed"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "environmental-accounting",
+      "label": "Environmental Accounting"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

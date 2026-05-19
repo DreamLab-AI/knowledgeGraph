@@ -1,0 +1,931 @@
+{
+  "id": "urn:visionflow:page:88eee08f9e6364fa7c3272c861c433ea02ea6ecd650e450be4aa3de300fe532f",
+  "title": "Value Transfer",
+  "slug": "value-transfer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:value-transfer",
+  "domain": "blockchain",
+  "definition": "The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 1.0,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:resource-allocation",
+        "label": "Resource Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-transfer",
+        "label": "Rights Transfer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:barter-system",
+        "label": "Barter System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:money",
+        "label": "Money"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token",
+        "label": "Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:transfer-protocol",
+        "label": "Transfer Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-mechanism",
+        "label": "Trust Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:value-representation",
+        "label": "Value Representation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:commerce",
+        "label": "Commerce"
+      },
+      {
+        "id": "urn:visionflow:linked:economic-exchange",
+        "label": "Economic Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:payment",
+        "label": "Payment"
+      },
+      {
+        "id": "urn:visionflow:linked:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:trade",
+        "label": "Trade"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "1inch",
+      "label": "1inch"
+    },
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "acm-digital-library",
+      "label": "ACM Digital Library"
+    },
+    {
+      "slug": "ai-agent-economic-interaction",
+      "label": "AI Agent Economic Interaction"
+    },
+    {
+      "slug": "aptos",
+      "label": "Aptos"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "argent",
+      "label": "Argent"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "axelar",
+      "label": "Axelar"
+    },
+    {
+      "slug": "axie-infinity",
+      "label": "Axie Infinity"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "balancer",
+      "label": "Balancer"
+    },
+    {
+      "slug": "bancor",
+      "label": "Bancor"
+    },
+    {
+      "slug": "barclays",
+      "label": "Barclays"
+    },
+    {
+      "slug": "base",
+      "label": "Base"
+    },
+    {
+      "slug": "bbs-signatures",
+      "label": "BBS+ Signatures"
+    },
+    {
+      "slug": "binance-smart-chain",
+      "label": "Binance Smart Chain"
+    },
+    {
+      "slug": "bip-341",
+      "label": "BIP-341"
+    },
+    {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
+      "slug": "bis-publications",
+      "label": "BIS Publications"
+    },
+    {
+      "slug": "bit-go",
+      "label": "BitGo"
+    },
+    {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
+      "slug": "bitstamp",
+      "label": "Bitstamp"
+    },
+    {
+      "slug": "bittensor",
+      "label": "Bittensor"
+    },
+    {
+      "slug": "blockchain-com",
+      "label": "Blockchain.com"
+    },
+    {
+      "slug": "blur",
+      "label": "Blur"
+    },
+    {
+      "slug": "bo-e-publications",
+      "label": "BoE Publications"
+    },
+    {
+      "slug": "bolt-11",
+      "label": "BOLT-11"
+    },
+    {
+      "slug": "boston-dynamics",
+      "label": "Boston Dynamics"
+    },
+    {
+      "slug": "cbdc-tracker",
+      "label": "CBDC Tracker"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "chainlink-ccip",
+      "label": "Chainlink CCIP"
+    },
+    {
+      "slug": "checkout-com",
+      "label": "Checkout.com"
+    },
+    {
+      "slug": "circle-research",
+      "label": "Circle Research"
+    },
+    {
+      "slug": "clarity-act",
+      "label": "CLARITY Act"
+    },
+    {
+      "slug": "coin-gecko",
+      "label": "CoinGecko"
+    },
+    {
+      "slug": "coinbase-commerce",
+      "label": "Coinbase Commerce"
+    },
+    {
+      "slug": "coinbase-custody",
+      "label": "Coinbase Custody"
+    },
+    {
+      "slug": "commerce",
+      "label": "Commerce"
+    },
+    {
+      "slug": "congress-gov",
+      "label": "Congress.gov"
+    },
+    {
+      "slug": "connext",
+      "label": "Connext"
+    },
+    {
+      "slug": "consen-sys",
+      "label": "ConsenSys"
+    },
+    {
+      "slug": "copper-co",
+      "label": "Copper.co"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "counterfactual",
+      "label": "Counterfactual"
+    },
+    {
+      "slug": "crypto-compare",
+      "label": "CryptoCompare"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    },
+    {
+      "slug": "dai",
+      "label": "DAI"
+    },
+    {
+      "slug": "de-fi-llama",
+      "label": "DeFi Llama"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "digital-dollar",
+      "label": "Digital Dollar"
+    },
+    {
+      "slug": "digital-euro",
+      "label": "Digital Euro"
+    },
+    {
+      "slug": "digital-pound",
+      "label": "Digital Pound"
+    },
+    {
+      "slug": "dilithium",
+      "label": "Dilithium"
+    },
+    {
+      "slug": "dune-analytics",
+      "label": "Dune Analytics"
+    },
+    {
+      "slug": "e-cny",
+      "label": "e-CNY"
+    },
+    {
+      "slug": "e-naira",
+      "label": "eNaira"
+    },
+    {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
+      "slug": "economic-exchange",
+      "label": "Economic Exchange"
+    },
+    {
+      "slug": "economic-system-domain",
+      "label": "EconomicSystemDomain"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "electron",
+      "label": "Electron"
+    },
+    {
+      "slug": "erc-20",
+      "label": "ERC-20"
+    },
+    {
+      "slug": "erc-3525",
+      "label": "ERC-3525"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "eu-official-journal",
+      "label": "EU Official Journal"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "fetch-ai",
+      "label": "Fetch.ai"
+    },
+    {
+      "slug": "financial-conduct-authority-fca",
+      "label": "Financial Conduct Authority (FCA)"
+    },
+    {
+      "slug": "financial-services-and-markets-act-2023",
+      "label": "Financial Services and Markets Act 2023"
+    },
+    {
+      "slug": "fireblocks",
+      "label": "Fireblocks"
+    },
+    {
+      "slug": "fsb",
+      "label": "FSB"
+    },
+    {
+      "slug": "fsb-reports",
+      "label": "FSB Reports"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "glassnode",
+      "label": "Glassnode"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "hivemind",
+      "label": "Hivemind"
+    },
+    {
+      "slug": "hmrc",
+      "label": "HMRC"
+    },
+    {
+      "slug": "hsbc",
+      "label": "HSBC"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
+    },
+    {
+      "slug": "iosco",
+      "label": "IOSCO"
+    },
+    {
+      "slug": "iota-foundation",
+      "label": "IOTA Foundation"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "jam-dex",
+      "label": "JAM-DEX"
+    },
+    {
+      "slug": "jpmorgan",
+      "label": "JPMorgan"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
+      "slug": "m-pesa",
+      "label": "M-Pesa"
+    },
+    {
+      "slug": "magic-eden",
+      "label": "Magic Eden"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "mastercard",
+      "label": "Mastercard"
+    },
+    {
+      "slug": "messari",
+      "label": "Messari"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "microsoft-ion",
+      "label": "Microsoft ION"
+    },
+    {
+      "slug": "mode-global",
+      "label": "Mode Global"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "nat-west",
+      "label": "NatWest"
+    },
+    {
+      "slug": "nber",
+      "label": "NBER"
+    },
+    {
+      "slug": "ocean-protocol",
+      "label": "Ocean Protocol"
+    },
+    {
+      "slug": "open-sea",
+      "label": "OpenSea"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "osmosis",
+      "label": "Osmosis"
+    },
+    {
+      "slug": "otherside",
+      "label": "Otherside"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "pay-pal-uk",
+      "label": "PayPal UK"
+    },
+    {
+      "slug": "payment",
+      "label": "Payment"
+    },
+    {
+      "slug": "payment-services-act",
+      "label": "Payment Services Act"
+    },
+    {
+      "slug": "payment-services-regulations",
+      "label": "Payment Services Regulations"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "polkadot-xcmp",
+      "label": "Polkadot XCMP"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "polygon-id",
+      "label": "Polygon ID"
+    },
+    {
+      "slug": "project-aurum",
+      "label": "Project Aurum"
+    },
+    {
+      "slug": "project-dunbar",
+      "label": "Project Dunbar"
+    },
+    {
+      "slug": "project-guardian",
+      "label": "Project Guardian"
+    },
+    {
+      "slug": "project-helvetia",
+      "label": "Project Helvetia"
+    },
+    {
+      "slug": "project-jura",
+      "label": "Project Jura"
+    },
+    {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
+    },
+    {
+      "slug": "raiden-network",
+      "label": "Raiden Network"
+    },
+    {
+      "slug": "railgun",
+      "label": "Railgun"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
+    },
+    {
+      "slug": "regulation-a",
+      "label": "Regulation A+"
+    },
+    {
+      "slug": "regulation-d",
+      "label": "Regulation D"
+    },
+    {
+      "slug": "resource-allocation",
+      "label": "Resource Allocation"
+    },
+    {
+      "slug": "revolut",
+      "label": "Revolut"
+    },
+    {
+      "slug": "rights-transfer",
+      "label": "Rights Transfer"
+    },
+    {
+      "slug": "ripple",
+      "label": "Ripple"
+    },
+    {
+      "slug": "robot-to-robot-commerce",
+      "label": "Robot-to-Robot Commerce"
+    },
+    {
+      "slug": "rtfkt",
+      "label": "RTFKT"
+    },
+    {
+      "slug": "safe",
+      "label": "Safe"
+    },
+    {
+      "slug": "sand-dollar",
+      "label": "Sand Dollar"
+    },
+    {
+      "slug": "securitize",
+      "label": "Securitize"
+    },
+    {
+      "slug": "setl",
+      "label": "SETL"
+    },
+    {
+      "slug": "settlement",
+      "label": "Settlement"
+    },
+    {
+      "slug": "sfc",
+      "label": "SFC"
+    },
+    {
+      "slug": "sharding",
+      "label": "Sharding"
+    },
+    {
+      "slug": "sovrin",
+      "label": "Sovrin"
+    },
+    {
+      "slug": "sphincs",
+      "label": "SPHINCS+"
+    },
+    {
+      "slug": "standard-chartered",
+      "label": "Standard Chartered"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
+    },
+    {
+      "slug": "starship-technologies",
+      "label": "Starship Technologies"
+    },
+    {
+      "slug": "stellar",
+      "label": "Stellar"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
+    },
+    {
+      "slug": "stripe",
+      "label": "Stripe"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "t-zero",
+      "label": "tZERO"
+    },
+    {
+      "slug": "tesla",
+      "label": "Tesla"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "trade",
+      "label": "Trade"
+    },
+    {
+      "slug": "transfer-protocol",
+      "label": "Transfer Protocol"
+    },
+    {
+      "slug": "trust-mechanism",
+      "label": "Trust Mechanism"
+    },
+    {
+      "slug": "u-port",
+      "label": "uPort"
+    },
+    {
+      "slug": "uk-legislation",
+      "label": "UK Legislation"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "value-representation",
+      "label": "Value Representation"
+    },
+    {
+      "slug": "visa",
+      "label": "Visa"
+    },
+    {
+      "slug": "vrm",
+      "label": "VRM"
+    },
+    {
+      "slug": "w3-c-did",
+      "label": "W3C DID"
+    },
+    {
+      "slug": "w3-c-web-payments",
+      "label": "W3C Web Payments"
+    },
+    {
+      "slug": "western-union",
+      "label": "Western Union"
+    },
+    {
+      "slug": "wormhole",
+      "label": "Wormhole"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zero-dev",
+      "label": "ZeroDev"
+    },
+    {
+      "slug": "zk-bob",
+      "label": "zkBob"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "barter-system",
+      "label": "Barter System"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-transaction",
+      "label": "Blockchain Transaction"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "cosmos-ibc",
+      "label": "Cosmos IBC"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "economic-layer",
+      "label": "EconomicLayer"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "proof-of-authority",
+      "label": "Proof-of-Authority"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ]
+}

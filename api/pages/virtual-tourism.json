@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:dd7f6c90cb1b124090598e0689dd3fa83655bd82180697c64f926bdedf1cd7f8",
+  "title": "Virtual Tourism",
+  "slug": "virtual-tourism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-tourism",
+  "domain": "spatial-computing",
+  "definition": "The use of VR, AR, and metaverse technologies to explore travel destinations remotely, enabling users to experience locations, hotels, and attractions virtually before booking or as an alternative to physical travel, particularly for those with physical, economic, or accessibility constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tourism-industry",
+      "label": "Tourism Industry"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "tourism-industry",
+      "label": "Tourism Industry"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "archaeological-site-reconstruction",
+      "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:f4f89d310f40b47bca3e36212795c1023a839ab29fcf623c422a8448ec632113",
+  "title": "hls__DreamLabCumbria_1759151307438_0",
+  "slug": "hls-dream-lab-cumbria-1759151307438-0",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hls-dream-lab-cumbria-1759151307438-0",
+  "domain": "infrastructure",
+  "definition": "hls__DreamLabCumbria_1759151307438_0 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

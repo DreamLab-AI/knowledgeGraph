@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:dd2cb3bce9adf52bfa8a7cb040c06b84e155e0ab86b89038fadcb2684070cb65",
+  "title": "AI Security",
+  "slug": "ai-security",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-security",
+  "domain": "artificial-intelligence",
+  "definition": "AI Security is the field of protecting artificial intelligence systems and their components from security threats and vulnerabilities, including adversarial attacks, data poisoning, model theft, and unauthorized access to ensure systems perform as intended. It encompasses defending AI models, algorithms, training data, and infrastructure from manipulation, misuse, and exploitation throughout the AI lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:secure-ai-deployment",
+        "label": "Secure AI Deployment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "secure-ai-deployment",
+      "label": "Secure AI Deployment"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    }
+  ]
+}

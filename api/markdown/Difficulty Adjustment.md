@@ -1,21 +1,253 @@
-iri:: http://narrativegoldmine.com/blockchain#DifficultyAdjustment
-uri:: urn:visionclaw:concept:blockchain:difficulty-adjustment
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:difficulty-adjustment
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Difficulty Adjustment
-content-hash:: sha256-12-de44f0fc7c6f
-legacy-term-id:: BC-0056
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-28T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#DifficultyAdjustment
+legacy_uri:: urn:visionclaw:concept:blockchain:difficulty-adjustment
 public:: true
+
+# Difficulty Adjustment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aed02701e79b868f24074e6d2f43623d82716b0bd0cbecafb47372f128e69e2c",
+  "@type": "Page",
+  "vc:slug": "difficulty-adjustment",
+  "title": "Difficulty Adjustment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ieee-2418-1",
+      "vc:label": "IEEE 2418.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23257-2021",
+      "vc:label": "ISO/IEC 23257:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-nistir",
+      "vc:label": "NIST NISTIR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-domain",
+      "vc:label": "ConsensusDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "ConsensusProtocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:protocol-layer",
+      "vc:label": "ProtocolLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-de44f0fc7c6f"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-28T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#DifficultyAdjustment"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0056"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Difficulty Adjustment"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:difficulty-adjustment"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:difficulty-adjustment"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aed02701e79b868f24074e6d2f43623d82716b0bd0cbecafb47372f128e69e2c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:difficulty-adjustment",
+  "@type": "OntologyClass",
+  "label": "Difficulty Adjustment",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "ConsensusProtocol"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aed02701e79b868f24074e6d2f43623d82716b0bd0cbecafb47372f128e69e2c"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aed02701e79b868f24074e6d2f43623d82716b0bd0cbecafb47372f128e69e2c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Mining difficulty recalibration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:difficulty-adjustment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aed02701e79b868f24074e6d2f43623d82716b0bd0cbecafb47372f128e69e2c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[IEEE 2418.1]]",
+      "resolved": "urn:visionflow:linked:ieee-2418-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23257:2021]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST NISTIR]]",
+      "resolved": "urn:visionflow:linked:nist-nistir",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConsensusDomain]]",
+      "resolved": "urn:visionflow:owl:class:consensus-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConsensusProtocol]]",
+      "resolved": "urn:visionflow:owl:class:consensus-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProtocolLayer]]",
+      "resolved": "urn:visionflow:owl:class:protocol-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aed02701e79b868f24074e6d2f43623d82716b0bd0cbecafb47372f128e69e2c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Mining difficulty recalibration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

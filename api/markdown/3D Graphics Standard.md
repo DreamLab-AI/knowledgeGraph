@@ -1,24 +1,360 @@
-iri:: http://narrativegoldmine.com/spatial-computing#3dGraphicsStandard
-uri:: urn:visionclaw:concept:spatial-computing:3d-graphics-standard
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:3d-graphics-standard
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: 3D Graphics Standard
-content-hash:: sha256-12-4f178eade606
-legacy-term-id:: MV-9503
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:30:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#3dGraphicsStandard
+legacy_uri:: urn:visionclaw:concept:spatial-computing:3d-graphics-standard
 public:: true
+
+# 3D Graphics Standard
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78",
+  "@type": "Page",
+  "vc:slug": "3-d-graphics-standard",
+  "title": "3D Graphics Standard",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:cross-platform-compatibility",
+      "vc:label": "Cross-Platform Compatibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:direct-x",
+      "vc:label": "DirectX"
+    },
+    {
+      "@id": "urn:visionflow:linked:driver-implementation",
+      "vc:label": "Driver Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-architecture",
+      "vc:label": "GPU Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-support",
+      "vc:label": "GPU Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-gl",
+      "vc:label": "OpenGL"
+    },
+    {
+      "@id": "urn:visionflow:linked:rendering-standard",
+      "vc:label": "Rendering Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-specification",
+      "vc:label": "Technical Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:vulkan",
+      "vc:label": "Vulkan"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "vc:label": "3D Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-acceleration",
+      "vc:label": "Hardware Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time-rendering",
+      "vc:label": "Real-time Rendering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rendering-pipeline",
+      "vc:label": "Rendering Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:shader-language",
+      "vc:label": "Shader Language"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4f178eade606"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#3dGraphicsStandard"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9503"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:30:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "3D Graphics Standard"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-graphics-standard"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-graphics-standard"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:3-d-graphics-standard",
+  "@type": "OntologyClass",
+  "label": "3D Graphics Standard",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:rendering-standard",
+      "vc:label": "Rendering Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-specification",
+      "vc:label": "Technical Specification"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions. These standards ensure consistency in visual output across platforms and enable developers to create graphics pipelines compatible with diverse hardware architectures.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:driver-implementation",
+      "vc:label": "Driver Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-support",
+      "vc:label": "GPU Support"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-platform-compatibility",
+      "vc:label": "Cross-Platform Compatibility"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-acceleration",
+      "vc:label": "Hardware Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time-rendering",
+      "vc:label": "Real-time Rendering"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:gpu-architecture",
+      "vc:label": "GPU Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:shader-language",
+      "vc:label": "Shader Language"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-graphics-standard:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Cross-Platform Compatibility]]",
+      "resolved": "urn:visionflow:linked:cross-platform-compatibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DirectX]]",
+      "resolved": "urn:visionflow:linked:direct-x",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Driver Implementation]]",
+      "resolved": "urn:visionflow:linked:driver-implementation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPU Architecture]]",
+      "resolved": "urn:visionflow:linked:gpu-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GPU Support]]",
+      "resolved": "urn:visionflow:linked:gpu-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OpenGL]]",
+      "resolved": "urn:visionflow:linked:open-gl",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rendering Standard]]",
+      "resolved": "urn:visionflow:linked:rendering-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Technical Specification]]",
+      "resolved": "urn:visionflow:linked:technical-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vulkan]]",
+      "resolved": "urn:visionflow:linked:vulkan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Rendering Engine]]",
+      "resolved": "urn:visionflow:owl:class:3-d-rendering-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hardware Acceleration]]",
+      "resolved": "urn:visionflow:owl:class:hardware-acceleration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Real-time Rendering]]",
+      "resolved": "urn:visionflow:owl:class:real-time-rendering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Rendering Pipeline]]",
+      "resolved": "urn:visionflow:owl:class:rendering-pipeline",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Shader Language]]",
+      "resolved": "urn:visionflow:owl:class:shader-language",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - 3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions. These standards ensure consistency in visual output across platforms and enable developers to create graphics pipelines compatible with diverse hardware architectures.

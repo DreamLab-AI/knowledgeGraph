@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:6d51ef904b264b4bd2ca9467205370e8a72b122eb225a3cd4ea339ddfd58dec6",
+  "title": "Voice Interaction",
+  "slug": "voice-interaction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:voice-interaction",
+  "domain": "spatial-computing",
+  "definition": "Communication method enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:interaction-domain",
+      "label": "Interaction Domain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-commands",
+        "label": "Voice Commands"
+      },
+      {
+        "id": "urn:visionflow:owl:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:microphone",
+        "label": "Microphone"
+      },
+      {
+        "id": "urn:visionflow:linked:speech-synthesis",
+        "label": "Speech Synthesis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:hands-free-control",
+        "label": "Hands-Free Control"
+      },
+      {
+        "id": "urn:visionflow:linked:natural-communication",
+        "label": "Natural Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "id": "urn:visionflow:owl:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm-etsi",
+      "label": "ACM + ETSI"
+    },
+    {
+      "slug": "acoustic-environment",
+      "label": "Acoustic Environment"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "hands-free-control",
+      "label": "Hands-Free Control"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "language-support",
+      "label": "Language Support"
+    },
+    {
+      "slug": "microphone",
+      "label": "Microphone"
+    },
+    {
+      "slug": "multimodal-interaction",
+      "label": "Multimodal Interaction"
+    },
+    {
+      "slug": "natural-communication",
+      "label": "Natural Communication"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
+    },
+    {
+      "slug": "voice-commands",
+      "label": "Voice Commands"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "network-latency",
+      "label": "Network Latency"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interaction-domain",
+      "label": "Interaction Domain"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:2c4db8f86b49f037c9b65d007ca6c63a0731047866cabb0f954e48c5d5739685",
+  "title": "State Estimation",
+  "slug": "state-estimation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:state-estimation",
+  "domain": "robotics",
+  "definition": "State Estimation encompasses the algorithms and techniques used to infer the internal state of a robotic system from noisy sensor measurements. Key approaches include Kalman filtering, particle filters, and Bayesian estimation methods that enable robots to maintain accurate representations of position, velocity, and other dynamic state variables.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

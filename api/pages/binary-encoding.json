@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665",
+  "title": "Binary Encoding",
+  "slug": "binary-encoding",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:binary-encoding",
+  "domain": "spatial-computing",
+  "definition": "A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:encoding-rules",
+        "label": "Encoding Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:parser-implementation",
+        "label": "Parser Implementation"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-definition",
+        "label": "Schema Definition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-serialization",
+        "label": "Data Serialization"
+      },
+      {
+        "id": "urn:visionflow:linked:efficient-storage",
+        "label": "Efficient Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:network-transmission",
+        "label": "Network Transmission"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-serialization",
+      "label": "Data Serialization"
+    },
+    {
+      "slug": "efficient-storage",
+      "label": "Efficient Storage"
+    },
+    {
+      "slug": "encoding-rules",
+      "label": "Encoding Rules"
+    },
+    {
+      "slug": "network-transmission",
+      "label": "Network Transmission"
+    },
+    {
+      "slug": "parser-implementation",
+      "label": "Parser Implementation"
+    },
+    {
+      "slug": "schema-definition",
+      "label": "Schema Definition"
+    },
+    {
+      "slug": "data-format",
+      "label": "Data Format"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

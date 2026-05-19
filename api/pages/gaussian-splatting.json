@@ -1,0 +1,492 @@
+{
+  "id": "urn:visionflow:page:74df3bf514976ff652742ef4cda63e2e350d637b343dd0cb6cfae4927bf4338d",
+  "title": "Gaussian Splatting",
+  "slug": "gaussian-splatting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gaussian-splatting",
+  "domain": "spatial-computing",
+  "definition": "Novel view synthesis and 3D scene representation technique introduced by Kerbl, Kopanas, Leimk\u00fchler and Drettakis at SIGGRAPH 2023 (INRIA Sophia Antipolis), representing scenes as explicit collections of millions of anisotropic 3D Gaussian primitives \u2014 each defined by a 3D mean position \u03bc \u2208 \u211d\u00b3, a 3\u00d73 covariance matrix \u03a3 encoding ellipsoidal shape and orientation, a set of spherical harmonic coefficients for view-dependent colour (up to degree 3, 48 coefficients per Gaussian), and a learned opacity \u03b1 \u2208 [0,1] \u2014 which are rendered onto an image plane through differentiable rasterisation (\"splatting\": projecting each 3D Gaussian to a 2D Gaussian footprint, depth-sorting, and alpha-compositing front-to-back via GPU tile-based rasteriser), trained by gradient descent from 50\u2013200 calibrated photographs initialised from a sparse Structure-from-Motion (SfM / COLMAP) point cloud using an adaptive densification strategy that splits under-reconstructed regions (gradient magnitude threshold) and prunes transparent or oversized Gaussians, achieving photorealistic quality (PSNR 30\u201335 dB on standard benchmarks: Tanks and Temples, Mip-NeRF 360, Deep Blending) at rendering speeds of 100\u2013300 FPS at 1",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-scene-reconstruction",
+      "label": "3D Scene Reconstruction"
+    },
+    {
+      "id": "urn:visionflow:linked:differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "id": "urn:visionflow:linked:novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:neural-rendering",
+      "label": "Neural Rendering"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:adaptive-densification",
+        "label": "Adaptive Densification"
+      },
+      {
+        "id": "urn:visionflow:linked:alpha-compositing",
+        "label": "Alpha Compositing"
+      },
+      {
+        "id": "urn:visionflow:linked:depth-sorting",
+        "label": "Depth Sorting"
+      },
+      {
+        "id": "urn:visionflow:linked:differentiable-rasterizer",
+        "label": "Differentiable Rasterizer"
+      },
+      {
+        "id": "urn:visionflow:linked:gaussian-primitive",
+        "label": "Gaussian Primitive"
+      },
+      {
+        "id": "urn:visionflow:linked:sf-m-point-cloud",
+        "label": "SfM Point Cloud"
+      },
+      {
+        "id": "urn:visionflow:linked:spherical-harmonics",
+        "label": "Spherical Harmonics"
+      },
+      {
+        "id": "urn:visionflow:linked:tile-based-renderer",
+        "label": "Tile-Based Renderer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:colmap",
+        "label": "COLMAP"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-view-photography",
+        "label": "Multi-View Photography"
+      },
+      {
+        "id": "urn:visionflow:linked:ssim-loss",
+        "label": "SSIM Loss"
+      },
+      {
+        "id": "urn:visionflow:linked:structure-from-motion",
+        "label": "Structure from Motion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:alpha-blending",
+        "label": "Alpha Blending"
+      },
+      {
+        "id": "urn:visionflow:linked:covariance-decomposition",
+        "label": "Covariance Decomposition"
+      },
+      {
+        "id": "urn:visionflow:linked:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:ewa-splatting",
+        "label": "EWA Splatting"
+      },
+      {
+        "id": "urn:visionflow:linked:spherical-harmonics",
+        "label": "Spherical Harmonics"
+      },
+      {
+        "id": "urn:visionflow:linked:tile-rasterisation",
+        "label": "Tile Rasterisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-scene-reconstruction",
+      "label": "3D Scene Reconstruction"
+    },
+    {
+      "slug": "acm-siggraph",
+      "label": "ACM SIGGRAPH"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "adaptive-densification",
+      "label": "Adaptive Densification"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "alpha-blending",
+      "label": "Alpha Blending"
+    },
+    {
+      "slug": "alpha-compositing",
+      "label": "Alpha Compositing"
+    },
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "colmap",
+      "label": "COLMAP"
+    },
+    {
+      "slug": "covariance-decomposition",
+      "label": "Covariance Decomposition"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "depth-sorting",
+      "label": "Depth Sorting"
+    },
+    {
+      "slug": "differentiable-rasterizer",
+      "label": "Differentiable Rasterizer"
+    },
+    {
+      "slug": "differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "slug": "ewa-splatting",
+      "label": "EWA Splatting"
+    },
+    {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
+      "slug": "gaussian-primitive",
+      "label": "Gaussian Primitive"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "ieee-cvpr",
+      "label": "IEEE CVPR"
+    },
+    {
+      "slug": "ieee-iccv",
+      "label": "IEEE ICCV"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "mesh-based-rendering",
+      "label": "Mesh-Based Rendering"
+    },
+    {
+      "slug": "meta",
+      "label": "Meta"
+    },
+    {
+      "slug": "multi-view-photography",
+      "label": "Multi-View Photography"
+    },
+    {
+      "slug": "novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "slug": "sf-m-point-cloud",
+      "label": "SfM Point Cloud"
+    },
+    {
+      "slug": "spherical-harmonics",
+      "label": "Spherical Harmonics"
+    },
+    {
+      "slug": "ssim-loss",
+      "label": "SSIM Loss"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure from Motion"
+    },
+    {
+      "slug": "tile-based-renderer",
+      "label": "Tile-Based Renderer"
+    },
+    {
+      "slug": "tile-rasterisation",
+      "label": "Tile Rasterisation"
+    },
+    {
+      "slug": "voxel-grid-representation",
+      "label": "Voxel Grid Representation"
+    },
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "archaeological-site-reconstruction",
+      "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "avatar-creation",
+      "label": "Avatar Creation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "photorealistic-rendering",
+      "label": "Photorealistic Rendering"
+    },
+    {
+      "slug": "physically-based-rendering",
+      "label": "Physically Based Rendering"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-computing-system",
+      "label": "Spatial Computing System"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    },
+    {
+      "slug": "volumetric-capture",
+      "label": "Volumetric Capture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "early-stopping",
+      "label": "Early Stopping"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

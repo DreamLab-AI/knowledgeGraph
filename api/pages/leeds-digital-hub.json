@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:c6e8aa63119600258d4a95efd3eebe8377685e8667737d95debb6341ffcbc270",
+  "title": "Leeds Digital Hub",
+  "slug": "leeds-digital-hub",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:leeds-digital-hub",
+  "domain": "infrastructure",
+  "definition": "Leeds' digital technology sector focusing on health technology innovation, financial services technology, and digital creative industries.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "established",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "north-england-innovation-corridor",
+      "label": "North England Innovation Corridor"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ],
+  "backlinks": []
+}

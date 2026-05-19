@@ -1,0 +1,18 @@
+- ### Definition
+  - Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Latency
+  - owl-role:: Object
+  - owl-inferred:: spatial-computing:VirtualObject
+  - belongs-to-domain:: [[InfrastructureDomain]]
+  - implemented-in-layer:: [[Physical Layer]], [[Network Layer]]
+- ### Relationships
+  - is-part-of:: [[Network Performance Metrics]], [[Quality of Service]]
+  - requires:: [[Measurement Tools]], [[Monitoring System]], [[Timestamp Synchronization]]
+  - enables:: [[Performance Optimization]], [[Quality Assessment]], [[SLA Monitoring]], [[User Experience Tuning]]
+  - depends-on:: [[Network Infrastructure]], [[Routing Protocol]], [[Bandwidth]], [[Processing Delay]], [[Propagation Delay]]
+- ### Content
+  Latency — content pending enrichment.
+- ### Provenance
+  - sources:: [[ETSI ARF 010]]
+  - migration-date:: 2026-04-26T00:00:00Z

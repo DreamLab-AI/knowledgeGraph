@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:c66305c015ce39ef7d97d12791a9f0bd394ee5357f96c87290d4fb67a587bb2a",
+  "title": "rb 0051 trajectory planning",
+  "slug": "rb-0051-trajectory-planning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0051-trajectory-planning",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

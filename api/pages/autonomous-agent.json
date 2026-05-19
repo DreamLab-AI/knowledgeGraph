@@ -1,0 +1,215 @@
+{
+  "id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8",
+  "title": "Autonomous Agent",
+  "slug": "autonomous-agent",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:autonomous-agent",
+  "domain": "spatial-computing",
+  "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-engine",
+        "label": "Decision Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-system",
+        "label": "Goal System"
+      },
+      {
+        "id": "urn:visionflow:linked:perception-module",
+        "label": "Perception Module"
+      },
+      {
+        "id": "urn:visionflow:owl:class:learning-component",
+        "label": "Learning Component"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "id": "urn:visionflow:linked:goal-specification",
+        "label": "Goal Specification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:visionflow:linked:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:npc-interaction",
+        "label": "NPC Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "slug": "computational-resources",
+      "label": "Computational Resources"
+    },
+    {
+      "slug": "data-source",
+      "label": "Data Source"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-support",
+      "label": "Decision Support"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "goal-specification",
+      "label": "Goal Specification"
+    },
+    {
+      "slug": "goal-system",
+      "label": "Goal System"
+    },
+    {
+      "slug": "intelligent-environment",
+      "label": "Intelligent Environment"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "perception-module",
+      "label": "Perception Module"
+    },
+    {
+      "slug": "process-automation",
+      "label": "Process Automation"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "learning-component",
+      "label": "Learning Component"
+    },
+    {
+      "slug": "npc-interaction",
+      "label": "NPC Interaction"
+    },
+    {
+      "slug": "runtime-environment",
+      "label": "Runtime Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "robot",
+      "label": "Robot"
+    }
+  ]
+}

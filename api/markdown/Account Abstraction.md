@@ -1,21 +1,647 @@
-iri:: http://narrativegoldmine.com/blockchain#AccountAbstraction
-uri:: urn:visionclaw:concept:blockchain:account-abstraction
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:account-abstraction
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Account Abstraction
-content-hash:: sha256-12-cf45febadced
-legacy-term-id:: BC-0038-EXT
-status:: mature
-maturity:: production-ready
-quality-score:: 0.50
-authority-score:: 0.87
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#AccountAbstraction
+legacy_uri:: urn:visionclaw:concept:blockchain:account-abstraction
 public:: true
+
+# Account Abstraction
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660",
+  "@type": "Page",
+  "vc:slug": "account-abstraction",
+  "title": "Account Abstraction",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:account-factory",
+      "vc:label": "Account Factory"
+    },
+    {
+      "@id": "urn:visionflow:linked:account-recovery",
+      "vc:label": "Account Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:alchemy-account-kit",
+      "vc:label": "Alchemy Account Kit"
+    },
+    {
+      "@id": "urn:visionflow:linked:argent-wallet-architecture",
+      "vc:label": "Argent Wallet Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-operations",
+      "vc:label": "Batch Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:biconomy-sdk",
+      "vc:label": "Biconomy SDK"
+    },
+    {
+      "@id": "urn:visionflow:linked:bundler",
+      "vc:label": "Bundler"
+    },
+    {
+      "@id": "urn:visionflow:linked:bundler-network",
+      "vc:label": "Bundler Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:bundler-network-statistics",
+      "vc:label": "Bundler Network Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:entry-point-contract",
+      "vc:label": "EntryPoint Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:entry-point-singleton",
+      "vc:label": "EntryPoint Singleton"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-4337",
+      "vc:label": "ERC-4337"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-4337-ethereum-improvement-proposal-march-2023",
+      "vc:label": "ERC-4337 Ethereum Improvement Proposal March 2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethereum-foundation-account-abstraction-documentation",
+      "vc:label": "Ethereum Foundation Account Abstraction Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:evm",
+      "vc:label": "EVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:gas-abstraction",
+      "vc:label": "Gas Abstraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:gas-sponsorship",
+      "vc:label": "Gas Sponsorship"
+    },
+    {
+      "@id": "urn:visionflow:linked:gasless-transactions",
+      "vc:label": "Gasless Transactions"
+    },
+    {
+      "@id": "urn:visionflow:linked:paymaster-contract",
+      "vc:label": "Paymaster Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:paymaster-infrastructure",
+      "vc:label": "Paymaster Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:programmable-validation",
+      "vc:label": "Programmable Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-wallet-documentation",
+      "vc:label": "Safe Wallet Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:session-keys",
+      "vc:label": "Session Keys"
+    },
+    {
+      "@id": "urn:visionflow:linked:signature-aggregator",
+      "vc:label": "Signature Aggregator"
+    },
+    {
+      "@id": "urn:visionflow:linked:signature-verification",
+      "vc:label": "Signature Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-domain",
+      "vc:label": "SmartContractDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-recovery",
+      "vc:label": "Social Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:stackup-analytics",
+      "vc:label": "Stackup Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-operation",
+      "vc:label": "UserOperation"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-operation-mempool",
+      "vc:label": "UserOperation Mempool"
+    },
+    {
+      "@id": "urn:visionflow:linked:vitalik-buterin-account-abstraction-roadmap",
+      "vc:label": "Vitalik Buterin Account Abstraction Roadmap"
+    },
+    {
+      "@id": "urn:visionflow:linked:web3-domain",
+      "vc:label": "Web3Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-dev-documentation",
+      "vc:label": "ZeroDev Documentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:account-model",
+      "vc:label": "Account Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:protocol-layer",
+      "vc:label": "ProtocolLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.87"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cf45febadced"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#AccountAbstraction"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0038-EXT"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Account Abstraction"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:account-abstraction"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:account-abstraction"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:account-abstraction",
+  "@type": "OntologyClass",
+  "label": "Account Abstraction",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "mature",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A paradigm shift in Ethereum account architecture standardized through ERC-4337 (March 2023) enabling smart contract wallets with programmable transaction validation logic, decoupled gas payment mechanisms, and flexible account recovery, eliminating the distinction between externally owned accounts (EOAs controlled by private keys) and contract accounts through a novel UserOperation mempool architecture where bundlers aggregate operations into single transactions, paymaster contracts sponsor gas fees enabling gasless user experiences, and EntryPoint singleton contract (deployed at 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789 across 30+ EVM chains as of January 2025) validates signatures and executes operations, supporting 2.4 million accounts managing $840 million in assets with 18,000+ daily active wallets, enabling innovations including social recovery through guardian networks (threshold m-of-n approval patterns reducing single-point-of-failure private key loss), session keys for limited-scope permissions (game applications granting temporary transaction authority without full account control), batch transactions reducing 5-8 separate operations into single atomic execution saving",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.87",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:account-factory",
+      "vc:label": "Account Factory"
+    },
+    {
+      "@id": "urn:visionflow:linked:bundler",
+      "vc:label": "Bundler"
+    },
+    {
+      "@id": "urn:visionflow:linked:entry-point-contract",
+      "vc:label": "EntryPoint Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:paymaster-contract",
+      "vc:label": "Paymaster Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:signature-aggregator",
+      "vc:label": "Signature Aggregator"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-operation",
+      "vc:label": "UserOperation"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:evm",
+      "vc:label": "EVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:gas-abstraction",
+      "vc:label": "Gas Abstraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:signature-verification",
+      "vc:label": "Signature Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:account-recovery",
+      "vc:label": "Account Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-operations",
+      "vc:label": "Batch Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:gasless-transactions",
+      "vc:label": "Gasless Transactions"
+    },
+    {
+      "@id": "urn:visionflow:linked:programmable-validation",
+      "vc:label": "Programmable Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:session-keys",
+      "vc:label": "Session Keys"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-recovery",
+      "vc:label": "Social Recovery"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:erc-4337",
+      "vc:label": "ERC-4337"
+    },
+    {
+      "@id": "urn:visionflow:linked:gas-sponsorship",
+      "vc:label": "Gas Sponsorship"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-operation-mempool",
+      "vc:label": "UserOperation Mempool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:account-model",
+      "vc:label": "Account Model"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:bundler-network",
+      "vc:label": "Bundler Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:entry-point-singleton",
+      "vc:label": "EntryPoint Singleton"
+    },
+    {
+      "@id": "urn:visionflow:linked:erc-4337",
+      "vc:label": "ERC-4337"
+    },
+    {
+      "@id": "urn:visionflow:linked:paymaster-infrastructure",
+      "vc:label": "Paymaster Infrastructure"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:account-abstraction:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Account Factory]]",
+      "resolved": "urn:visionflow:linked:account-factory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Account Recovery]]",
+      "resolved": "urn:visionflow:linked:account-recovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alchemy Account Kit]]",
+      "resolved": "urn:visionflow:linked:alchemy-account-kit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argent Wallet Architecture]]",
+      "resolved": "urn:visionflow:linked:argent-wallet-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Batch Operations]]",
+      "resolved": "urn:visionflow:linked:batch-operations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Biconomy SDK]]",
+      "resolved": "urn:visionflow:linked:biconomy-sdk",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bundler]]",
+      "resolved": "urn:visionflow:linked:bundler",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bundler Network]]",
+      "resolved": "urn:visionflow:linked:bundler-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bundler Network Statistics]]",
+      "resolved": "urn:visionflow:linked:bundler-network-statistics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EntryPoint Contract]]",
+      "resolved": "urn:visionflow:linked:entry-point-contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EntryPoint Singleton]]",
+      "resolved": "urn:visionflow:linked:entry-point-singleton",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-4337]]",
+      "resolved": "urn:visionflow:linked:erc-4337",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ERC-4337 Ethereum Improvement Proposal March 2023]]",
+      "resolved": "urn:visionflow:linked:erc-4337-ethereum-improvement-proposal-march-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethereum Foundation Account Abstraction Documentation]]",
+      "resolved": "urn:visionflow:linked:ethereum-foundation-account-abstraction-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EVM]]",
+      "resolved": "urn:visionflow:linked:evm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gas Abstraction]]",
+      "resolved": "urn:visionflow:linked:gas-abstraction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gas Sponsorship]]",
+      "resolved": "urn:visionflow:linked:gas-sponsorship",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gasless Transactions]]",
+      "resolved": "urn:visionflow:linked:gasless-transactions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paymaster Contract]]",
+      "resolved": "urn:visionflow:linked:paymaster-contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Paymaster Infrastructure]]",
+      "resolved": "urn:visionflow:linked:paymaster-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Programmable Validation]]",
+      "resolved": "urn:visionflow:linked:programmable-validation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Safe Wallet Documentation]]",
+      "resolved": "urn:visionflow:linked:safe-wallet-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Session Keys]]",
+      "resolved": "urn:visionflow:linked:session-keys",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Signature Aggregator]]",
+      "resolved": "urn:visionflow:linked:signature-aggregator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Signature Verification]]",
+      "resolved": "urn:visionflow:linked:signature-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SmartContractDomain]]",
+      "resolved": "urn:visionflow:linked:smart-contract-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Social Recovery]]",
+      "resolved": "urn:visionflow:linked:social-recovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stackup Analytics]]",
+      "resolved": "urn:visionflow:linked:stackup-analytics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UserOperation]]",
+      "resolved": "urn:visionflow:linked:user-operation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UserOperation Mempool]]",
+      "resolved": "urn:visionflow:linked:user-operation-mempool",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vitalik Buterin Account Abstraction Roadmap]]",
+      "resolved": "urn:visionflow:linked:vitalik-buterin-account-abstraction-roadmap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Web3Domain]]",
+      "resolved": "urn:visionflow:linked:web3-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ZeroDev Documentation]]",
+      "resolved": "urn:visionflow:linked:zero-dev-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Account Model]]",
+      "resolved": "urn:visionflow:owl:class:account-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProtocolLayer]]",
+      "resolved": "urn:visionflow:owl:class:protocol-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A paradigm shift in Ethereum account architecture standardized through ERC-4337 (March 2023) enabling smart contract wallets with programmable transaction validation logic, decoupled gas payment mechanisms, and flexible account recovery, eliminating the distinction between externally owned accounts (EOAs controlled by private keys) and contract accounts through a novel UserOperation mempool architecture where bundlers aggregate operations into single transactions, paymaster contracts sponsor gas fees enabling gasless user experiences, and EntryPoint singleton contract (deployed at 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789 across 30+ EVM chains as of January 2025) validates signatures and executes operations, supporting 2.4 million accounts managing $840 million in assets with 18,000+ daily active wallets, enabling innovations including social recovery through guardian networks (threshold m-of-n approval patterns reducing single-point-of-failure private key loss), session keys for limited-scope permissions (game applications granting temporary transaction authority without full account control), batch transactions reducing 5-8 separate operations into single atomic execution saving 40-60% gas costs, scheduled transactions for automation, and hardware wallet integration preserving security while enhancing usability, implemented by major wallet providers (Argent 500,000+ users, Safe multi-signature 120 billion+ secured, Candide 200,000+ users, Biconomy SDK 40,000+ developers) with Layer-2 adoption leading deployment (Polygon zkEVM 800,000+ accounts, Arbitrum One 600,000+ accounts, Optimism 400,000+ accounts) as infrastructure matures toward mainstream accessibility reducing blockchain complexity barriers through programmable account logic that maintains Ethereum's security guarantees while enabling Web2-like user experiences including email/social login (Privy, Magic, Web3Auth converting familiar authentication into on-chain accounts), fiat on-ramps directly to smart wallets bypassing EOA intermediaries, and automated security policies (spending limits, transaction whitelists, time-locked operations) protecting users from phishing attacks and contract vulnerabilities.

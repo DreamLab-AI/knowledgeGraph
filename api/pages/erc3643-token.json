@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:6505177b1599aa97ab6165f36116e2e64eb1ab53d49ca950eeca8f5c7a243504",
+  "title": "ERC3643 Token",
+  "slug": "erc3643-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc3643-token",
+  "domain": "blockchain",
+  "definition": "A permissioned token standard for security tokens with on-chain identity verification and compliance rules, enabling compliant transfer restrictions based on investor identity and jurisdiction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:security-token",
+      "label": "Security Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "security-token",
+      "label": "Security Token"
+    }
+  ],
+  "backlinks": []
+}

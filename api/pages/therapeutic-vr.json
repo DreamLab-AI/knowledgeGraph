@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:e18b9d21d5591fad0fa567d074fc8a6c2087c9abb89d66246cc03aced2f5fbdf",
+  "title": "Therapeutic VR",
+  "slug": "therapeutic-vr",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:therapeutic-vr",
+  "domain": "spatial-computing",
+  "definition": "The application of virtual reality technology for clinical therapeutic purposes, including treatment of mental health conditions, pain management, rehabilitation, and behavioral health interventions through immersive, interactive digital environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-reality-applications",
+      "label": "Virtual Reality Applications"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-reality-applications",
+      "label": "Virtual Reality Applications"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adaptive-virtual-experience",
+      "label": "Adaptive Virtual Experience"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:1ca57b1e37c172831ba36236c722acab3192f5cec356b457de662092b5d7db39",
+  "title": "Geospatial Information",
+  "slug": "geospatial-information",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:geospatial-information",
+  "domain": "spatial-computing",
+  "definition": "Geospatial Information is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-metadata",
+      "label": "Spatial Metadata"
+    }
+  ]
+}

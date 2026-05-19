@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:508f14ad3f03ac4f1d294fa70a80657e5f8bfaec4a29913e9be340fc2a717498",
+  "title": "Robotics Control",
+  "slug": "robotics-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robotics-control",
+  "domain": "artificial-intelligence",
+  "definition": "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution. AI-driven control employs reinforcement learning for policy optimization, computer vision for perception, motion planning algorithms, and sensor fusion. Key challenges include real-time decision-making, handling uncertainty, sim-to-real transfer, and safety assurance. Modern approaches leverage deep learning for visuomotor control, imitation learning from demonstrations, and meta-learning for rapid adaptation to new tasks and environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    }
+  ]
+}

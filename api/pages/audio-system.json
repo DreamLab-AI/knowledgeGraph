@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:ca349f287085981cd693bf6d30770d52d0ba8fc2c512f45d572267b32652faf9",
+  "title": "Audio System",
+  "slug": "audio-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:audio-system",
+  "domain": "spatial-computing",
+  "definition": "Audio System is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "parameter-modulation-system",
+      "label": "Parameter Modulation System"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    }
+  ]
+}

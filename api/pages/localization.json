@@ -1,0 +1,142 @@
+{
+  "id": "urn:visionflow:page:81be4debf253d6d69b31dd806f0434d062e8a8bd5cfb876f19625ae27809d4d2",
+  "title": "Localization",
+  "slug": "localization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:localization",
+  "domain": "robotics",
+  "definition": "The process of determining a mobile robot's position and orientation (pose) within a known or unknown environment using sensor measurements and a map or environmental model. It answers the question \"Where am I?\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.97,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:sensor-system",
+        "label": "Sensor System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:rb-1016-path-planning",
+        "label": "RB-1016-path-planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "environmental-model",
+      "label": "Environmental Model"
+    },
+    {
+      "slug": "map",
+      "label": "Map"
+    },
+    {
+      "slug": "mobile-robotics",
+      "label": "Mobile Robotics"
+    },
+    {
+      "slug": "mobile-robots",
+      "label": "Mobile Robots"
+    },
+    {
+      "slug": "probabilistic-methods",
+      "label": "Probabilistic Methods"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "rb-1008-odometry",
+      "label": "RB-1008-odometry"
+    },
+    {
+      "slug": "rb-1014-monte-carlo-localization",
+      "label": "RB-1014-monte-carlo-localization"
+    },
+    {
+      "slug": "rb-1015-kalman-filter",
+      "label": "RB-1015-kalman-filter"
+    },
+    {
+      "slug": "rb-1016-path-planning",
+      "label": "RB-1016-path-planning"
+    },
+    {
+      "slug": "recursive-estimation",
+      "label": "Recursive Estimation"
+    },
+    {
+      "slug": "robot-pose",
+      "label": "Robot Pose"
+    },
+    {
+      "slug": "sensor-system",
+      "label": "Sensor System"
+    },
+    {
+      "slug": "uncertainty",
+      "label": "Uncertainty"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ]
+}

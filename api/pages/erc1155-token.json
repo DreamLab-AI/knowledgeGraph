@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:195a330b7a502361b814aa6df64e5b7fe9c2d0fa017e0ba7fd614d6f91ae4607",
+  "title": "ERC1155 Token",
+  "slug": "erc1155-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc1155-token",
+  "domain": "blockchain",
+  "definition": "A multi-token standard offering semi-fungibility where tokens represent classes of interchangeable assets. Bundles multiple assets (fungible and non-fungible) in one smart contract for efficient gas usage and reduced network congestion.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:semi-fungible-token",
+      "label": "Semi-Fungible Token"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "semi-fungible-token",
+      "label": "Semi-Fungible Token"
+    }
+  ],
+  "backlinks": []
+}

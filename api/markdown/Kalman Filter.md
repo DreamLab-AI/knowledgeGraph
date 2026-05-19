@@ -1,21 +1,402 @@
-iri:: http://narrativegoldmine.com/robotics#KalmanFilter
-uri:: urn:visionclaw:concept:robotics:kalman-filter
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:kalman-filter
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Kalman Filter
-content-hash:: sha256-12-62ba72c5c04d
-legacy-term-id:: RB-1015
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.98
-version:: 2.0.0
-created:: 2025-11-24T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#KalmanFilter
+legacy_uri:: urn:visionclaw:concept:robotics:kalman-filter
 public:: true
+
+# Kalman Filter
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2",
+  "@type": "Page",
+  "vc:slug": "kalman-filter",
+  "title": "Kalman Filter",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:extended-kalman-filter",
+      "vc:label": "Extended Kalman Filter"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-noise-assumption",
+      "vc:label": "Gaussian Noise Assumption"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-system-model",
+      "vc:label": "Linear System Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:mean-squared-error",
+      "vc:label": "Mean Squared Error"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimality",
+      "vc:label": "Optimality"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-robotics",
+      "vc:label": "Probabilistic Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1002-closed-loop-control",
+      "vc:label": "RB-1002-closed-loop-control"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1008-odometry",
+      "vc:label": "RB-1008-odometry"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1014-monte-carlo-localization",
+      "vc:label": "RB-1014-monte-carlo-localization"
+    },
+    {
+      "@id": "urn:visionflow:linked:recursive-estimator",
+      "vc:label": "Recursive Estimator"
+    },
+    {
+      "@id": "urn:visionflow:linked:recursiveness",
+      "vc:label": "Recursiveness"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-state",
+      "vc:label": "System State"
+    },
+    {
+      "@id": "urn:visionflow:linked:tracking",
+      "vc:label": "Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:unscented-kalman-filter",
+      "vc:label": "Unscented Kalman Filter"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bayes-filter",
+      "vc:label": "Bayes Filter"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:navigation",
+      "vc:label": "Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rb-1013-localization",
+      "vc:label": "RB-1013-localization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:slam",
+      "vc:label": "SLAM"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-estimation",
+      "vc:label": "State Estimation"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.98"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-62ba72c5c04d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-24T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#KalmanFilter"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-1015"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Kalman Filter"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:kalman-filter"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:kalman-filter"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:kalman-filter",
+  "@type": "OntologyClass",
+  "label": "Kalman Filter",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:bayes-filter",
+      "vc:label": "Bayes Filter"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-estimation",
+      "vc:label": "State Estimation"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.98",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:gaussian-noise-assumption",
+      "vc:label": "Gaussian Noise Assumption"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-system-model",
+      "vc:label": "Linear System Model"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:linked:rb-1008-odometry",
+      "vc:label": "RB-1008-odometry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:kalman-filter:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Extended Kalman Filter]]",
+      "resolved": "urn:visionflow:linked:extended-kalman-filter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gaussian Noise Assumption]]",
+      "resolved": "urn:visionflow:linked:gaussian-noise-assumption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Linear System Model]]",
+      "resolved": "urn:visionflow:linked:linear-system-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mean Squared Error]]",
+      "resolved": "urn:visionflow:linked:mean-squared-error",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimality]]",
+      "resolved": "urn:visionflow:linked:optimality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Probabilistic Robotics]]",
+      "resolved": "urn:visionflow:linked:probabilistic-robotics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1002-closed-loop-control]]",
+      "resolved": "urn:visionflow:linked:rb-1002-closed-loop-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1008-odometry]]",
+      "resolved": "urn:visionflow:linked:rb-1008-odometry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1014-monte-carlo-localization]]",
+      "resolved": "urn:visionflow:linked:rb-1014-monte-carlo-localization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recursive Estimator]]",
+      "resolved": "urn:visionflow:linked:recursive-estimator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recursiveness]]",
+      "resolved": "urn:visionflow:linked:recursiveness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[System State]]",
+      "resolved": "urn:visionflow:linked:system-state",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tracking]]",
+      "resolved": "urn:visionflow:linked:tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Unscented Kalman Filter]]",
+      "resolved": "urn:visionflow:linked:unscented-kalman-filter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bayes Filter]]",
+      "resolved": "urn:visionflow:owl:class:bayes-filter",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Control Theory]]",
+      "resolved": "urn:visionflow:owl:class:control-theory",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Navigation]]",
+      "resolved": "urn:visionflow:owl:class:navigation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RB-1013-localization]]",
+      "resolved": "urn:visionflow:owl:class:rb-1013-localization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor Fusion]]",
+      "resolved": "urn:visionflow:owl:class:sensor-fusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Signal Processing]]",
+      "resolved": "urn:visionflow:owl:class:signal-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SLAM]]",
+      "resolved": "urn:visionflow:owl:class:slam",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[State Estimation]]",
+      "resolved": "urn:visionflow:owl:class:state-estimation",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.

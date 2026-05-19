@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:470f932ca1a43910b34b8de3f2c77f30352f2d10200e3bfabbe8c52f4cc06a5f",
+  "title": "Shared Ar Experiences",
+  "slug": "shared-ar-experiences",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shared-ar-experiences",
+  "domain": "spatial-computing",
+  "definition": "Collaborative augmented reality interactions enabling multiple users to simultaneously view and interact with digital content overlaid on shared physical environments, supporting real-time synchronization of virtual objects across devices for social connection and joint activities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:augmented-reality",
+      "label": "Augmented Reality"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:social-ar-interaction",
+        "label": "Social AR Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "social-ar-interaction",
+      "label": "Social AR Interaction"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "persistent-ar-placement",
+      "label": "Persistent AR Placement"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    }
+  ]
+}

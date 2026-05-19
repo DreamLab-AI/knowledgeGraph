@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b67bc7ec8bba453093d8d35f566e17ef60670e9077e7f3ca41381e08ad3cc501",
+  "title": "Virtual Community Practice",
+  "slug": "virtual-community-practice",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-community-practice",
+  "domain": "spatial-computing",
+  "definition": "The methodologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:community-governance",
+      "label": "Community Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "community-governance",
+      "label": "Community Governance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    }
+  ]
+}

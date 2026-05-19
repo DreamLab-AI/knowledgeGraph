@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:eea30aea3b130a7496d33fcfcac71fed8cd9337d910e74a412a05e3bd1751002",
+  "title": "Economic Systems",
+  "slug": "economic-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:economic-systems",
+  "domain": "spatial-computing",
+  "definition": "Economic Systems is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    }
+  ]
+}

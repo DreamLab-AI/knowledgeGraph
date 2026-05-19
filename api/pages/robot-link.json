@@ -1,0 +1,198 @@
+{
+  "id": "urn:visionflow:page:cdae20b6599c30f6c00e1ac9dfd54bccbb0446bc1abecf11a3441332f9a274c5",
+  "title": "RobotLink",
+  "slug": "robot-link",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-link",
+  "domain": "robotics",
+  "definition": "A rigid mechanical structural component in a robotic manipulator or kinematic chain that connects two consecutive joints and transmits motion and forces between them, characterized by fixed geometric and inertial properties including length, mass, center of mass location, and inertia tensor, described mathematically using Denavit-Hartenberg parameters (link length a, link twist \u03b1, link offset d, joint angle \u03b8) that define the relative transformation between adjacent joint coordinate frames, manufactured from materials such as aluminum alloys (density 2.7 g/cm\u00b3, yield strength 200-600 MPa for 6061-T6/7075-T6), carbon fiber composites (specific stiffness up to 5\u00d7 steel, achieving 40-60% mass reduction in collaborative robot arms), or structural steel (density 7.85 g/cm\u00b3, Young's modulus 200 GPa) depending on payload capacity (0.5-2000 kg) and speed requirements (up to 10 m/s for delta robot links), with applications spanning serial manipulators (6-DOF articulated arms with 6 links connecting base to end-effector), parallel manipulators (Stewart platform with 6 links forming closed kinematic loops), mobile robot chassis (differential drive platform with rigid frame linking wheels and ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.89,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:inertial-frame",
+        "label": "InertialFrame"
+      },
+      {
+        "id": "urn:visionflow:linked:link-geometry",
+        "label": "LinkGeometry"
+      },
+      {
+        "id": "urn:visionflow:linked:mass-properties",
+        "label": "MassProperties"
+      },
+      {
+        "id": "urn:visionflow:linked:material-composition",
+        "label": "MaterialComposition"
+      },
+      {
+        "id": "urn:visionflow:linked:mounting-interface",
+        "label": "MountingInterface"
+      },
+      {
+        "id": "urn:visionflow:linked:surface-finish",
+        "label": "SurfaceFinish"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:dynamic-balancing",
+        "label": "DynamicBalancing"
+      },
+      {
+        "id": "urn:visionflow:linked:material-selection",
+        "label": "MaterialSelection"
+      },
+      {
+        "id": "urn:visionflow:linked:structural-analysis",
+        "label": "StructuralAnalysis"
+      },
+      {
+        "id": "urn:visionflow:linked:thermal-management",
+        "label": "ThermalManagement"
+      },
+      {
+        "id": "urn:visionflow:linked:vibration-damping",
+        "label": "VibrationDamping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:force-transmission",
+        "label": "ForceTransmission"
+      },
+      {
+        "id": "urn:visionflow:linked:kinematic-chain",
+        "label": "KinematicChain"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-propagation",
+        "label": "MotionPropagation"
+      },
+      {
+        "id": "urn:visionflow:linked:payload-support",
+        "label": "PayloadSupport"
+      },
+      {
+        "id": "urn:visionflow:linked:workspace-reach",
+        "label": "WorkspaceReach"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "craig-j-j-introduction-to-robotics-2005",
+      "label": "Craig, J.J. Introduction to Robotics (2005)"
+    },
+    {
+      "slug": "denavit-and-hartenberg-1955-kinematic-notation",
+      "label": "Denavit & Hartenberg (1955) Kinematic Notation"
+    },
+    {
+      "slug": "dynamic-balancing",
+      "label": "DynamicBalancing"
+    },
+    {
+      "slug": "force-transmission",
+      "label": "ForceTransmission"
+    },
+    {
+      "slug": "inertial-frame",
+      "label": "InertialFrame"
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "label": "ISO 8373 Robotics Vocabulary"
+    },
+    {
+      "slug": "iso-9283-manipulating-industrial-robots-performance-criteria",
+      "label": "ISO 9283 Manipulating Industrial Robots Performance Criteria"
+    },
+    {
+      "slug": "kinematic-chain",
+      "label": "KinematicChain"
+    },
+    {
+      "slug": "link-geometry",
+      "label": "LinkGeometry"
+    },
+    {
+      "slug": "mass-properties",
+      "label": "MassProperties"
+    },
+    {
+      "slug": "material-composition",
+      "label": "MaterialComposition"
+    },
+    {
+      "slug": "material-selection",
+      "label": "MaterialSelection"
+    },
+    {
+      "slug": "motion-propagation",
+      "label": "MotionPropagation"
+    },
+    {
+      "slug": "mounting-interface",
+      "label": "MountingInterface"
+    },
+    {
+      "slug": "payload-support",
+      "label": "PayloadSupport"
+    },
+    {
+      "slug": "shabana-a-a-dynamics-of-multibody-systems-2013",
+      "label": "Shabana, A.A. Dynamics of Multibody Systems (2013)"
+    },
+    {
+      "slug": "structural-analysis",
+      "label": "StructuralAnalysis"
+    },
+    {
+      "slug": "surface-finish",
+      "label": "SurfaceFinish"
+    },
+    {
+      "slug": "thermal-management",
+      "label": "ThermalManagement"
+    },
+    {
+      "slug": "vibration-damping",
+      "label": "VibrationDamping"
+    },
+    {
+      "slug": "workspace-reach",
+      "label": "WorkspaceReach"
+    },
+    {
+      "slug": "kinematic-element",
+      "label": "KinematicElement"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "MechanicalComponent"
+    },
+    {
+      "slug": "rigid-body",
+      "label": "RigidBody"
+    },
+    {
+      "slug": "structural-member",
+      "label": "StructuralMember"
+    }
+  ],
+  "backlinks": []
+}

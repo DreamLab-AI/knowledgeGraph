@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:35008e78258e1b6b342ec3bc1f2292346ffcd12a7a2ff1bd9a94153863736744",
+  "title": "Private Channels",
+  "slug": "private-channels",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:private-channels",
+  "domain": "blockchain",
+  "definition": "Confidential transaction subsets in [[PermissionedBlockchain|permissioned blockchains]] where designated participants conduct transactions invisibly to other network members, implementing [[Encryption|encryption]] and [[AccessControl|access control]] to segregate sensitive business data whilst maintaining [[Immutability|immutability]] and [[SmartContract]] functionality. Private channels enable consortia members to conduct confidential transactions on shared infrastructure without exposing proprietary information, deployed extensively in [[HyperledgerFabric]] for trade finance, supply chain, and healthcare where some parties require visibility exclusion. Channels combine cryptographic isolation with shared ledger infrastructure enabling efficient [[ConsensusProtocol|consensus]] and settlement.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0315-zero-knowledge-proof",
+      "label": "BC-0315-zero-knowledge-proof"
+    },
+    {
+      "slug": "bc-0316-secure-multi-party-computation",
+      "label": "BC-0316-secure-multi-party-computation"
+    },
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0427-hyperledger-besu",
+      "label": "BC-0427-hyperledger-besu"
+    },
+    {
+      "slug": "bc-0429-permissioned-blockchain",
+      "label": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0431-privacy-preserving-blockchain",
+      "label": "BC-0431-privacy-preserving-blockchain"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "access-control",
+      "label": "AccessControl"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "ConsensusProtocol"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "HyperledgerFabric"
+    },
+    {
+      "slug": "immutability",
+      "label": "Immutability"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "PermissionedBlockchain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

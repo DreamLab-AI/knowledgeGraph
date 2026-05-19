@@ -1,21 +1,439 @@
-iri:: http://narrativegoldmine.com/metaverse#AIMonitoring
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-monitoring
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-monitoring
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Monitoring
-content-hash:: sha256-12-4b39bf65d77c
-legacy-term-id:: AI-0095
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIMonitoring
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-monitoring
 public:: true
+
+# AI Monitoring
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779",
+  "@type": "Page",
+  "vc:slug": "ai-monitoring",
+  "title": "AI Monitoring",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-maintenance",
+      "vc:label": "AI Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:linked:alert-thresholds",
+      "vc:label": "alert thresholds"
+    },
+    {
+      "@id": "urn:visionflow:linked:baseline-metrics",
+      "vc:label": "baseline metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-improvement",
+      "vc:label": "continuous improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-drift",
+      "vc:label": "Data Drift"
+    },
+    {
+      "@id": "urn:visionflow:linked:fda-post-market-surveillance",
+      "vc:label": "FDA Post-Market Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25024",
+      "vc:label": "ISO/IEC 25024"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25059",
+      "vc:label": "ISO/IEC 25059"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001-2023",
+      "vc:label": "ISO/IEC 42001:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-updating",
+      "vc:label": "model updating"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitoring-infrastructure",
+      "vc:label": "Monitoring infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-audit",
+      "vc:label": "AI Audit"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-deployment",
+      "vc:label": "AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-operator",
+      "vc:label": "AI Operator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias",
+      "vc:label": "Bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-4b39bf65d77c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIMonitoring"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0095"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Monitoring"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-monitoring"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-monitoring"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-monitoring",
+  "@type": "OntologyClass",
+  "label": "AI Monitoring",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended consequences, enabling timely intervention, maintenance, and continuous improvement whilst ensuring accountability and compliance with governance requirements.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:alert-thresholds",
+      "vc:label": "alert thresholds"
+    },
+    {
+      "@id": "urn:visionflow:linked:baseline-metrics",
+      "vc:label": "baseline metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitoring-infrastructure",
+      "vc:label": "Monitoring infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-maintenance",
+      "vc:label": "AI Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-improvement",
+      "vc:label": "continuous improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-updating",
+      "vc:label": "model updating"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-monitoring:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Maintenance]]",
+      "resolved": "urn:visionflow:linked:ai-maintenance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[alert thresholds]]",
+      "resolved": "urn:visionflow:linked:alert-thresholds",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[baseline metrics]]",
+      "resolved": "urn:visionflow:linked:baseline-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[continuous improvement]]",
+      "resolved": "urn:visionflow:linked:continuous-improvement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Drift]]",
+      "resolved": "urn:visionflow:linked:data-drift",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FDA Post-Market Surveillance]]",
+      "resolved": "urn:visionflow:linked:fda-post-market-surveillance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25024]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25059]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25059",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[model updating]]",
+      "resolved": "urn:visionflow:linked:model-updating",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monitoring infrastructure]]",
+      "resolved": "urn:visionflow:linked:monitoring-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Audit]]",
+      "resolved": "urn:visionflow:owl:class:ai-audit",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Deployment]]",
+      "resolved": "urn:visionflow:owl:class:ai-deployment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Lifecycle]]",
+      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Operator]]",
+      "resolved": "urn:visionflow:owl:class:ai-operator",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bias]]",
+      "resolved": "urn:visionflow:owl:class:bias",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Oversight]]",
+      "resolved": "urn:visionflow:owl:class:human-oversight",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:risk-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended consequences, enabling timely intervention, maintenance, and continuous improvement whilst ensuring accountability and compliance with governance requirements.

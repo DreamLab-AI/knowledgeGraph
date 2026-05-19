@@ -1,0 +1,251 @@
+{
+  "id": "urn:visionflow:page:6c4cd42f1e6ab437462996034a7e9be906a02d8d7b4dbe6d3fb6094ee92848e2",
+  "title": "Creator Economy",
+  "slug": "creator-economy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:creator-economy",
+  "domain": "spatial-computing",
+  "definition": "Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:content-distribution-platform",
+        "label": "Content Distribution Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:monetization-system",
+        "label": "Monetization System"
+      },
+      {
+        "id": "urn:visionflow:linked:token-economy",
+        "label": "Token Economy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset-workflow",
+        "label": "Digital Asset Workflow"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-goods",
+        "label": "Digital Goods"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:payment-processing",
+        "label": "Payment Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-distribution-platform",
+      "label": "Content Distribution Platform"
+    },
+    {
+      "slug": "content-licensing",
+      "label": "Content Licensing"
+    },
+    {
+      "slug": "creator-monetization",
+      "label": "Creator Monetization"
+    },
+    {
+      "slug": "monetization-system",
+      "label": "Monetization System"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "payment-processing",
+      "label": "Payment Processing"
+    },
+    {
+      "slug": "token-economy",
+      "label": "Token Economy"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "digital-asset-trading",
+      "label": "Digital Asset Trading"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "digital-marketplace",
+      "label": "Digital Marketplace"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "royalty-distribution",
+      "label": "Royalty Distribution"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "Virtual Currency"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "digital-marketplace",
+      "label": "Digital Marketplace"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "multi-party-royalties",
+      "label": "Multi Party Royalties"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "revenue-sharing",
+      "label": "Revenue Sharing"
+    }
+  ]
+}

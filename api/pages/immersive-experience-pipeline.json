@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:45319ef00213cd8de93695d3781e53616a2411bb82ee64474054870d037bada2",
+  "title": "Immersive Experience Pipeline",
+  "slug": "immersive-experience-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:immersive-experience-pipeline",
+  "domain": "spatial-computing",
+  "definition": "The end-to-end workflow for creating, processing, and delivering XR content, encompassing concept design, 3D asset creation, game engine integration, optimisation, platform deployment, and cloud streaming to produce immersive virtual experiences for metaverse applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:content-production-workflow",
+      "label": "Content Production Workflow"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:xr-content-delivery",
+        "label": "XR Content Delivery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "xr-content-delivery",
+      "label": "XR Content Delivery"
+    },
+    {
+      "slug": "content-production-workflow",
+      "label": "Content Production Workflow"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

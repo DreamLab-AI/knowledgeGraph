@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3",
+  "title": "ETSI_Domain_Infrastructure___Interop",
+  "slug": "etsi-domain-infrastructure-interop",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-interop",
+  "domain": "infrastructure",
+  "definition": "ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL). Infrastructure interoperability addresses systematic integration challenges through [[NGSI-LD]] interfaces supporting cross-domain data integration, intent-based management systems integrating network capabilities with application functions, and spectrum sharing frameworks (evolved Licensed Shared Access, CBRS) enabling technical interoperability for local private networks. Standards including the European Interoperability Framework (EIF) and EU Data Act Article 35 mandate interoperable specifications whilst addressing accessibility through ETSI ES 204 009 specifying total conversation services combining voice, real-time text, and sign language video.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ngsi-ld",
+      "label": "NGSI-LD"
+    },
+    {
+      "slug": "hardware-platform-agnostic",
+      "label": "Hardware-/Platform-Agnostic"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

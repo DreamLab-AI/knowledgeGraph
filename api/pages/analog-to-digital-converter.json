@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:c7b12eb8de5fbd09a39b5ad524aaa50416048be230302b2027a4689d2385031b",
+  "title": "Analog To Digital Converter",
+  "slug": "analog-to-digital-converter",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:analog-to-digital-converter",
+  "domain": "spatial-computing",
+  "definition": "Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:signal-processing-hardware",
+      "label": "Signal Processing Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:resolution-bits",
+        "label": "Resolution Bits"
+      },
+      {
+        "id": "urn:visionflow:linked:sampling-rate",
+        "label": "Sampling Rate"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-conditioning",
+        "label": "Signal Conditioning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-audio-recording",
+        "label": "Digital Audio Recording"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-imaging",
+        "label": "Digital Imaging"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-data-processing",
+        "label": "Sensor Data Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-audio-recording",
+      "label": "Digital Audio Recording"
+    },
+    {
+      "slug": "digital-imaging",
+      "label": "Digital Imaging"
+    },
+    {
+      "slug": "resolution-bits",
+      "label": "Resolution Bits"
+    },
+    {
+      "slug": "sampling-rate",
+      "label": "Sampling Rate"
+    },
+    {
+      "slug": "sensor-data-processing",
+      "label": "Sensor Data Processing"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "signal-conditioning",
+      "label": "Signal Conditioning"
+    },
+    {
+      "slug": "signal-processing-hardware",
+      "label": "Signal Processing Hardware"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

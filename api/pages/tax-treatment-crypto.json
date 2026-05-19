@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:6f3018d8ecd79b210d02b49f6012f2e08fce736f514edb7e28e09ad4dec8c117",
+  "title": "Tax Treatment Crypto",
+  "slug": "tax-treatment-crypto",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tax-treatment-crypto",
+  "domain": "blockchain",
+  "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation (wherein cryptocurrency dispositions generate capital gains or losses calculated as fair market value at disposition minus cost basis, with long-term holdings exceeding 12 months taxed at preferential rates 0-20% in the United States compared to ordinary income rates up to 37% for short-term holdings), income taxation (treating cryptocurrency received through mining as ordinary income at fair market value when successfully mined with miners potentially subject to self-employment tax at 15.3%, staking rewards as income when received, airdrops as ordinary income when dominion and control is established per IRS Revenue Ruling 2019-24, and payment for services as compensation), value-added tax and goods-and-services tax treatment (with the European Court of Justice in Skatteverket v. David Hedqvist C-264/14 2015 establishing VAT exemption for cryptocurrency-to-fiat exchanges as exempt financial services under Council Directive 2006/112/EC Article 135(1)(e), whilst purchases of goods usi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-compliance",
+      "label": "Blockchain Compliance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.89,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "26-usc-internal-revenue-code",
+      "label": "26 USC Internal Revenue Code"
+    },
+    {
+      "slug": "council-directive-2006-112-ec-vat",
+      "label": "Council Directive 2006/112/EC VAT"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "ecj-skatteverket-v-hedqvist-c-264-14",
+      "label": "ECJ Skatteverket v Hedqvist C-264/14"
+    },
+    {
+      "slug": "eu-dac8-directive",
+      "label": "EU DAC8 Directive"
+    },
+    {
+      "slug": "hmrc",
+      "label": "HMRC"
+    },
+    {
+      "slug": "hmrc-cryptoassets-manual",
+      "label": "HMRC Cryptoassets Manual"
+    },
+    {
+      "slug": "infrastructure-investment-and-jobs-act-2021",
+      "label": "Infrastructure Investment and Jobs Act 2021"
+    },
+    {
+      "slug": "internal-revenue-service",
+      "label": "Internal Revenue Service"
+    },
+    {
+      "slug": "irs-notice-2014-21",
+      "label": "IRS Notice 2014-21"
+    },
+    {
+      "slug": "irs-revenue-ruling-2019-24",
+      "label": "IRS Revenue Ruling 2019-24"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "oecd-crypto-asset-reporting-framework-carf",
+      "label": "OECD Crypto-Asset Reporting Framework CARF"
+    },
+    {
+      "slug": "tcga-1992-uk-taxation-of-chargeable-gains-act",
+      "label": "TCGA 1992 UK Taxation of Chargeable Gains Act"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "backlinks": []
+}

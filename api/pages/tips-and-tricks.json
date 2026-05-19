@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:b590b1fefbfa0cded68293de994113172d1bdb0595bd86c8436e1fa6577c436f",
+  "title": "Tips and Tricks",
+  "slug": "tips-and-tricks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tips-and-tricks",
+  "domain": "infrastructure",
+  "definition": "Tips and Tricks is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "github",
+      "label": "github"
+    },
+    {
+      "slug": "la-te-x",
+      "label": "LaTeX"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    }
+  ]
+}

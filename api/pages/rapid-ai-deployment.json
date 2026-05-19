@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:76f5a817674f18187159f4a17447e9e341060ec5fd9e13cbbdf641ff90d87620",
+  "title": "Rapid AI Deployment",
+  "slug": "rapid-ai-deployment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rapid-ai-deployment",
+  "domain": "artificial-intelligence",
+  "definition": "Rapid AI Deployment is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

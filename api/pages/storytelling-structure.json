@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:4a0971dd84319dca304b31d59631cabf6d01a3347c623a14016b6aacab0d58fb",
+  "title": "Storytelling Structure",
+  "slug": "storytelling-structure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:storytelling-structure",
+  "domain": "spatial-computing",
+  "definition": "Storytelling Structure is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "narrative-arc",
+      "label": "Narrative Arc"
+    }
+  ]
+}

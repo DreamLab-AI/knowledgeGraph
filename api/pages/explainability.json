@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:bc7ff207e9a4b732bf19d750233e8d1cb714a9497a00a7e3603a733fb5cb085f",
+  "title": "Explainability",
+  "slug": "explainability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:explainability",
+  "domain": "artificial-intelligence",
+  "definition": "The extent to which an AI system's decision-making processes, outputs, and behaviors can be understood and articulated in human-comprehensible terms, enabling stakeholders to grasp how and why specific outcomes were produced.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accountability-ai-0068",
+        "label": "Accountability (AI-0068)"
+      },
+      {
+        "id": "urn:visionflow:linked:contestability-ai-0043",
+        "label": "Contestability (AI-0043)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "contestability-ai-0043",
+      "label": "Contestability (AI-0043)"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

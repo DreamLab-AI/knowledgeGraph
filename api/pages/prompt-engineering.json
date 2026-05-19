@@ -1,0 +1,636 @@
+{
+  "id": "urn:visionflow:page:367be6addad9ba59f12e52022d4d80693381610ca5dd92096b7fc68db6045d6f",
+  "title": "Prompt Engineering",
+  "slug": "prompt-engineering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:prompt-engineering",
+  "domain": "artificial-intelligence",
+  "definition": "Prompt Engineering is the systematic discipline of designing, structuring, and optimising natural language or structured inputs (prompts) to elicit desired behaviours, outputs, and reasoning traces from large language models (LLMs) and other generative AI systems, spanning a hierarchy of techniques from zero-shot instruction following through few-shot in-context learning (ICL) where 1-16 demonstration examples are embedded in context improving task accuracy by 10-40% across classification, translation, and reasoning benchmarks, to chain-of-thought (CoT) prompting (Wei et al. 2022 NeurIPS) where explicit step-by-step reasoning elicitation through the phrase \"Let's think step by step\" improved GPT-3 performance on GSM8K arithmetic from 17.9% to 48.7% and on MATH from 5% to 40%+, self-consistency decoding (Wang et al. 2022) sampling 40+ diverse reasoning chains and majority-voting the final answer to gain 17.9% on GSM8K over greedy CoT, tree-of-thoughts (ToT) (Yao et al. 2023 NeurIPS) decomposing problems into intermediate thought nodes explored via breadth-first or depth-first search with LLM-based evaluation raising Game of 24 success from 4% (CoT) to 74%, ReAct (Yao et al. 2022) in",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:applied-artificial-intelligence",
+      "label": "Applied Artificial Intelligence"
+    },
+    {
+      "id": "urn:visionflow:linked:in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "id": "urn:visionflow:linked:instruction-following",
+      "label": "Instruction Following"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:automatic-prompt-optimisation",
+        "label": "Automatic Prompt Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:visionflow:linked:dspy",
+        "label": "DSPy"
+      },
+      {
+        "id": "urn:visionflow:linked:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-injection-defence",
+        "label": "Prompt Injection Defence"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-templates",
+        "label": "Prompt Templates"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:visionflow:linked:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:visionflow:linked:structured-output",
+        "label": "Structured Output"
+      },
+      {
+        "id": "urn:visionflow:linked:system-prompts",
+        "label": "System Prompts"
+      },
+      {
+        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:structured-output",
+        "label": "Structured Output"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:visionflow:owl:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:automatic-prompt-optimisation",
+        "label": "Automatic Prompt Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:visionflow:linked:dspy",
+        "label": "DSPy"
+      },
+      {
+        "id": "urn:visionflow:linked:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:visionflow:linked:self-consistency",
+        "label": "Self-Consistency"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "anthropic-prompt-engineering-documentation-2024",
+      "label": "Anthropic Prompt Engineering Documentation 2024"
+    },
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "applied-artificial-intelligence",
+      "label": "Applied Artificial Intelligence"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
+      "slug": "bai-et-al-2022-constitutional-ai",
+      "label": "Bai et al. 2022 Constitutional AI"
+    },
+    {
+      "slug": "brown-et-al-2020-gpt-3-few-shot-learning",
+      "label": "Brown et al. 2020 GPT-3 Few-Shot Learning"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
+      "slug": "fernando-et-al-2023-prompt-breeder",
+      "label": "Fernando et al. 2023 PromptBreeder"
+    },
+    {
+      "slug": "few-shot-prompting",
+      "label": "Few-Shot Prompting"
+    },
+    {
+      "slug": "greshake-et-al-2023-prompt-injection",
+      "label": "Greshake et al. 2023 Prompt Injection"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "instruction-following",
+      "label": "Instruction Following"
+    },
+    {
+      "slug": "khattab-et-al-2024-dspy",
+      "label": "Khattab et al. 2024 DSPy"
+    },
+    {
+      "slug": "kojima-et-al-2022-zero-shot-reasoners",
+      "label": "Kojima et al. 2022 Zero-Shot Reasoners"
+    },
+    {
+      "slug": "lu-et-al-2022-fantastically-ordered-prompts",
+      "label": "Lu et al. 2022 Fantastically Ordered Prompts"
+    },
+    {
+      "slug": "min-et-al-2022-icl-role-of-demonstrations",
+      "label": "Min et al. 2022 ICL Role of Demonstrations"
+    },
+    {
+      "slug": "ncsc-uk-ai-security-guidelines-2024",
+      "label": "NCSC UK AI Security Guidelines 2024"
+    },
+    {
+      "slug": "nlpdomain",
+      "label": "NLPDomain"
+    },
+    {
+      "slug": "open-ai-prompt-engineering-guide-2024",
+      "label": "OpenAI Prompt Engineering Guide 2024"
+    },
+    {
+      "slug": "ouyang-et-al-2022-instruct-gpt",
+      "label": "Ouyang et al. 2022 InstructGPT"
+    },
+    {
+      "slug": "prompt-injection-defence",
+      "label": "Prompt Injection Defence"
+    },
+    {
+      "slug": "prompt-templates",
+      "label": "Prompt Templates"
+    },
+    {
+      "slug": "re-act",
+      "label": "ReAct"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "schulhoff-et-al-2024-prompt-report-survey",
+      "label": "Schulhoff et al. 2024 Prompt Report Survey"
+    },
+    {
+      "slug": "self-consistency",
+      "label": "Self-Consistency"
+    },
+    {
+      "slug": "structured-output",
+      "label": "Structured Output"
+    },
+    {
+      "slug": "system-prompts",
+      "label": "System Prompts"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "tree-of-thoughts",
+      "label": "Tree of Thoughts"
+    },
+    {
+      "slug": "wang-et-al-2022-self-consistency",
+      "label": "Wang et al. 2022 Self-Consistency"
+    },
+    {
+      "slug": "wang-et-al-2023-plan-and-solve",
+      "label": "Wang et al. 2023 Plan-and-Solve"
+    },
+    {
+      "slug": "wei-et-al-2022-chain-of-thought-prompting",
+      "label": "Wei et al. 2022 Chain-of-Thought Prompting"
+    },
+    {
+      "slug": "xie-et-al-2022-bayesian-icl-theory",
+      "label": "Xie et al. 2022 Bayesian ICL Theory"
+    },
+    {
+      "slug": "yao-et-al-2022-re-act",
+      "label": "Yao et al. 2022 ReAct"
+    },
+    {
+      "slug": "yao-et-al-2023-tree-of-thoughts",
+      "label": "Yao et al. 2023 Tree of Thoughts"
+    },
+    {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
+    },
+    {
+      "slug": "zhou-et-al-2022-ape",
+      "label": "Zhou et al. 2022 APE"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "courses-and-training",
+      "label": "Courses and Training"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "ollama",
+      "label": "ollama"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1e7480b0292a741283bf7ce99f00bcf103828f70325cda623a7a63912732f169",
+  "title": "rb 0101 performance level",
+  "slug": "rb-0101-performance-level",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0101-performance-level",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

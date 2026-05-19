@@ -1,22 +1,301 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#AugmentedRealityCollaboration
-uri:: urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Augmented Reality Collaboration
-content-hash:: sha256-12-73721de2f65e
-legacy-term-id:: TC-0021
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#AugmentedRealityCollaboration
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Augmented Reality Collaboration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4",
+  "@type": "Page",
+  "vc:slug": "augmented-reality-collaboration",
+  "title": "Augmented Reality Collaboration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-design",
+      "vc:label": "CollaborativeDesign"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-025-microsoft-hololens",
+      "vc:label": "TELE-025-microsoft-hololens"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "vc:label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "vc:label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:augmented-reality",
+      "vc:label": "AugmentedReality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mixed-reality",
+      "vc:label": "MixedReality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "SpatialComputing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-73721de2f65e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#AugmentedRealityCollaboration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0021"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Augmented Reality Collaboration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:augmented-reality-collaboration",
+  "@type": "OntologyClass",
+  "label": "Augmented Reality Collaboration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "vc:label": "TELE-002-telecollaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual cooperation through AR headsets or mobile devices.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-design",
+      "vc:label": "CollaborativeDesign"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:augmented-reality-collaboration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[CollaborativeDesign]]",
+      "resolved": "urn:visionflow:linked:collaborative-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-002-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-025-microsoft-hololens]]",
+      "resolved": "urn:visionflow:linked:tele-025-microsoft-hololens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-026-microsoft-mesh]]",
+      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AugmentedReality]]",
+      "resolved": "urn:visionflow:owl:class:augmented-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MixedReality]]",
+      "resolved": "urn:visionflow:owl:class:mixed-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SpatialComputing]]",
+      "resolved": "urn:visionflow:owl:class:spatial-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TELE-001-telepresence]]",
+      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual cooperation through AR headsets or mobile devices."

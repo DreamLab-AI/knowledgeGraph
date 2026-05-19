@@ -1,0 +1,424 @@
+{
+  "id": "urn:visionflow:page:ac175f370a9e20c39348a6b57ac53a8ea387f387fc120f3efd7e7558c2374cae",
+  "title": "Sampling",
+  "slug": "sampling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sampling",
+  "domain": "artificial-intelligence",
+  "definition": "Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions \u2014 ranging from classical Markov chain Monte Carlo methods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential methods (Sequential Monte Carlo, particle filters) through information-geometric approaches (importance sampling, rejection sampling, nested sampling, quasi-Monte Carlo via Sobol sequences, Latin Hypercube sampling) to the domain-specific decoding strategies used in autoregressive language models (temperature scaling, top-k truncation, nucleus/top-p filtering, min-p dynamic thresholding, mirostat adaptive entropy control, eta sampling) and diffusion model schedulers (DDIM deterministic inversion, DPM-Solver fast ODE integrators, Euler/Euler-a, Heun second-order corrector, Karras EDM Restart sampler).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "id": "urn:visionflow:linked:numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "id": "urn:visionflow:linked:statistical-computing",
+      "label": "Statistical Computing"
+    },
+    {
+      "id": "urn:visionflow:linked:stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "id": "urn:visionflow:owl:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:autoregressive-sampling",
+        "label": "Autoregressive Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:visionflow:linked:nested-sampling",
+        "label": "Nested Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:quasi-monte-carlo",
+        "label": "Quasi-Monte Carlo"
+      },
+      {
+        "id": "urn:visionflow:linked:rejection-sampling",
+        "label": "Rejection Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      },
+      {
+        "id": "urn:visionflow:owl:class:diffusion-models",
+        "label": "Diffusion Models"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:convergence-criterion",
+        "label": "Convergence Criterion"
+      },
+      {
+        "id": "urn:visionflow:linked:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:proposal-distribution",
+        "label": "Proposal Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:random-number-generator",
+        "label": "Random Number Generator"
+      },
+      {
+        "id": "urn:visionflow:linked:target-density",
+        "label": "Target Density"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ddim",
+        "label": "DDIM"
+      },
+      {
+        "id": "urn:visionflow:linked:dpm-solver",
+        "label": "DPM-Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:gibbs-sampling",
+        "label": "Gibbs Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "id": "urn:visionflow:linked:metropolis-hastings-algorithm",
+        "label": "Metropolis-Hastings Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:nucleus-sampling",
+        "label": "Nucleus Sampling"
+      },
+      {
+        "id": "urn:visionflow:linked:nuts",
+        "label": "NUTS"
+      },
+      {
+        "id": "urn:visionflow:linked:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "autoregressive-sampling",
+      "label": "Autoregressive Sampling"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "bayesian-neural-networks",
+      "label": "Bayesian Neural Networks"
+    },
+    {
+      "slug": "convergence-criterion",
+      "label": "Convergence Criterion"
+    },
+    {
+      "slug": "ddim",
+      "label": "DDIM"
+    },
+    {
+      "slug": "deterministic-integration",
+      "label": "Deterministic Integration"
+    },
+    {
+      "slug": "dpm-solver",
+      "label": "DPM-Solver"
+    },
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
+      "slug": "ergodic-theory",
+      "label": "Ergodic Theory"
+    },
+    {
+      "slug": "generation-layer",
+      "label": "GenerationLayer"
+    },
+    {
+      "slug": "gibbs-sampling",
+      "label": "Gibbs Sampling"
+    },
+    {
+      "slug": "gradient-information",
+      "label": "Gradient Information"
+    },
+    {
+      "slug": "grid-approximation",
+      "label": "Grid Approximation"
+    },
+    {
+      "slug": "hamiltonian-monte-carlo",
+      "label": "Hamiltonian Monte Carlo"
+    },
+    {
+      "slug": "hugging-face-diffusers",
+      "label": "Hugging Face Diffusers"
+    },
+    {
+      "slug": "importance-sampling",
+      "label": "Importance Sampling"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "kullback-leibler-divergence",
+      "label": "Kullback-Leibler Divergence"
+    },
+    {
+      "slug": "laplace-approximation",
+      "label": "Laplace Approximation"
+    },
+    {
+      "slug": "markov-chain-monte-carlo",
+      "label": "Markov Chain Monte Carlo"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "metropolis-hastings-algorithm",
+      "label": "Metropolis-Hastings Algorithm"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "slug": "nested-sampling",
+      "label": "Nested Sampling"
+    },
+    {
+      "slug": "noise-schedule",
+      "label": "Noise Schedule"
+    },
+    {
+      "slug": "nucleus-sampling",
+      "label": "Nucleus Sampling"
+    },
+    {
+      "slug": "num-pyro",
+      "label": "NumPyro"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "nuts",
+      "label": "NUTS"
+    },
+    {
+      "slug": "probabilistic-modelling-domain",
+      "label": "ProbabilisticModellingDomain"
+    },
+    {
+      "slug": "probability-distribution",
+      "label": "Probability Distribution"
+    },
+    {
+      "slug": "proposal-distribution",
+      "label": "Proposal Distribution"
+    },
+    {
+      "slug": "py-mc",
+      "label": "PyMC"
+    },
+    {
+      "slug": "quasi-monte-carlo",
+      "label": "Quasi-Monte Carlo"
+    },
+    {
+      "slug": "random-number-generator",
+      "label": "Random Number Generator"
+    },
+    {
+      "slug": "rejection-sampling",
+      "label": "Rejection Sampling"
+    },
+    {
+      "slug": "robert-casella-monte-carlo-statistical-methods",
+      "label": "Robert-Casella Monte Carlo Statistical Methods"
+    },
+    {
+      "slug": "score-function",
+      "label": "Score Function"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
+    },
+    {
+      "slug": "simulation-based-inference",
+      "label": "Simulation-Based Inference"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "stan-probabilistic-programming",
+      "label": "Stan Probabilistic Programming"
+    },
+    {
+      "slug": "statistical-computing",
+      "label": "Statistical Computing"
+    },
+    {
+      "slug": "statistical-computing-domain",
+      "label": "StatisticalComputingDomain"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "slug": "target-density",
+      "label": "Target Density"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

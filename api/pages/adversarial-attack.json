@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:10ff4637da4920d9608471aa8739a69e657121255a6ca9e8e7fe164bcfde910e",
+  "title": "Adversarial Attack",
+  "slug": "adversarial-attack",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adversarial-attack",
+  "domain": "artificial-intelligence",
+  "definition": "A deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert the system's intended behavior.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso-iec-tr-24029-1-2021",
+      "label": "ISO/IEC TR 24029-1:2021"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:17950b9394938d4b045fda193fdb0ace5bbea8c5898773d0f4949d774cdf8c57",
+  "title": "Cryptocurrency Token",
+  "slug": "cryptocurrency-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cryptocurrency-token",
+  "domain": "blockchain",
+  "definition": "CryptocurrencyToken is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.7,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "payment-token",
+      "label": "Payment Token"
+    },
+    {
+      "slug": "utility-token",
+      "label": "Utility Token"
+    }
+  ]
+}

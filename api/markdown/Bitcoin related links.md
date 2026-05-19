@@ -1,20 +1,1388 @@
-iri:: http://narrativegoldmine.com/ontology#BitcoinRelatedLinks
-uri:: urn:visionclaw:concept:blockchain:bitcoin-related-links
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:bitcoin-related-links
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Bitcoin related links
-content-hash:: sha256-12-7d7d7678a583
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#BitcoinRelatedLinks
+legacy_uri:: urn:visionclaw:concept:blockchain:bitcoin-related-links
 public:: true
+
+# Bitcoin related links
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ead33d47c0925547ebacab40e7b7056db98d540e99e1763ba9caad7e4fd392f1",
+  "@type": "Page",
+  "vc:slug": "bitcoin-related-links",
+  "title": "Bitcoin related links",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:address-distribution",
+      "vc:label": "Address Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:africa",
+      "vc:label": "Africa"
+    },
+    {
+      "@id": "urn:visionflow:linked:african-bitcoin",
+      "vc:label": "African Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:alex-gladstein",
+      "vc:label": "Alex Gladstein"
+    },
+    {
+      "@id": "urn:visionflow:linked:argentina",
+      "vc:label": "Argentina"
+    },
+    {
+      "@id": "urn:visionflow:linked:asic-mining",
+      "vc:label": "ASIC Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:asset-class",
+      "vc:label": "Asset Class"
+    },
+    {
+      "@id": "urn:visionflow:linked:asset-recovery",
+      "vc:label": "Asset Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip85",
+      "vc:label": "BIP85"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-adoption",
+      "vc:label": "Bitcoin Adoption"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-bonds",
+      "vc:label": "Bitcoin Bonds"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-culture",
+      "vc:label": "Bitcoin Culture"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-legal-status",
+      "vc:label": "Bitcoin Legal Status"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-price-prediction",
+      "vc:label": "Bitcoin Price Prediction"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-whitepaper",
+      "vc:label": "Bitcoin Whitepaper"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockstream",
+      "vc:label": "Blockstream"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc",
+      "vc:label": "CBDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc-competition",
+      "vc:label": "CBDC Competition"
+    },
+    {
+      "@id": "urn:visionflow:linked:central-banks",
+      "vc:label": "Central Banks"
+    },
+    {
+      "@id": "urn:visionflow:linked:charles-edwards",
+      "vc:label": "Charles Edwards"
+    },
+    {
+      "@id": "urn:visionflow:linked:china-mining-ban",
+      "vc:label": "China Mining Ban"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance",
+      "vc:label": "Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:corporate-strategy",
+      "vc:label": "Corporate Strategy"
+    },
+    {
+      "@id": "urn:visionflow:linked:corporate-treasury",
+      "vc:label": "Corporate Treasury"
+    },
+    {
+      "@id": "urn:visionflow:linked:crypto-assets",
+      "vc:label": "Crypto Assets"
+    },
+    {
+      "@id": "urn:visionflow:linked:crypto-regulation",
+      "vc:label": "Crypto Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:custody",
+      "vc:label": "Custody"
+    },
+    {
+      "@id": "urn:visionflow:linked:dan-held",
+      "vc:label": "Dan Held"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:did",
+      "vc:label": "DID"
+    },
+    {
+      "@id": "urn:visionflow:linked:dollar-cost-averaging",
+      "vc:label": "Dollar Cost Averaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:eastern-europe",
+      "vc:label": "Eastern Europe"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-sanctions",
+      "vc:label": "Economic Sanctions"
+    },
+    {
+      "@id": "urn:visionflow:linked:el-salvador",
+      "vc:label": "El Salvador"
+    },
+    {
+      "@id": "urn:visionflow:linked:el-salvador-case-study",
+      "vc:label": "El Salvador Case Study"
+    },
+    {
+      "@id": "urn:visionflow:linked:elon-musk",
+      "vc:label": "Elon Musk"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-consumption",
+      "vc:label": "Energy Consumption"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-solutions",
+      "vc:label": "Energy Solutions"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-impact",
+      "vc:label": "Environmental Impact"
+    },
+    {
+      "@id": "urn:visionflow:linked:etf",
+      "vc:label": "ETF"
+    },
+    {
+      "@id": "urn:visionflow:linked:european-regulation",
+      "vc:label": "European Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-inclusion",
+      "vc:label": "Financial Inclusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-products",
+      "vc:label": "Financial Products"
+    },
+    {
+      "@id": "urn:visionflow:linked:fund-management",
+      "vc:label": "Fund Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:geopolitical-finance",
+      "vc:label": "Geopolitical Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:geopolitics",
+      "vc:label": "Geopolitics"
+    },
+    {
+      "@id": "urn:visionflow:linked:gift-cards",
+      "vc:label": "Gift Cards"
+    },
+    {
+      "@id": "urn:visionflow:linked:gig-economy",
+      "vc:label": "Gig Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:hong-kong",
+      "vc:label": "Hong Kong"
+    },
+    {
+      "@id": "urn:visionflow:linked:india-crypto",
+      "vc:label": "India Crypto"
+    },
+    {
+      "@id": "urn:visionflow:linked:inflation-hedge",
+      "vc:label": "Inflation Hedge"
+    },
+    {
+      "@id": "urn:visionflow:linked:institutional-bitcoin-investment",
+      "vc:label": "Institutional Bitcoin Investment"
+    },
+    {
+      "@id": "urn:visionflow:linked:institutional-investment",
+      "vc:label": "Institutional Investment"
+    },
+    {
+      "@id": "urn:visionflow:linked:insurance-companies",
+      "vc:label": "Insurance Companies"
+    },
+    {
+      "@id": "urn:visionflow:linked:international-payments",
+      "vc:label": "International Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:investment-risk",
+      "vc:label": "Investment Risk"
+    },
+    {
+      "@id": "urn:visionflow:linked:jack-dorsey",
+      "vc:label": "Jack Dorsey"
+    },
+    {
+      "@id": "urn:visionflow:linked:jack-mallers",
+      "vc:label": "Jack Mallers"
+    },
+    {
+      "@id": "urn:visionflow:linked:jeff-booth",
+      "vc:label": "Jeff Booth"
+    },
+    {
+      "@id": "urn:visionflow:linked:jurisdictional-adoption",
+      "vc:label": "Jurisdictional Adoption"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyc-aml",
+      "vc:label": "KYC/AML"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyc-requirements",
+      "vc:label": "KYC Requirements"
+    },
+    {
+      "@id": "urn:visionflow:linked:law-enforcement",
+      "vc:label": "Law Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2-scaling",
+      "vc:label": "Layer 2 Scaling"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2-solutions",
+      "vc:label": "Layer 2 Solutions"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-tender",
+      "vc:label": "Legal Tender"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-tender-status",
+      "vc:label": "Legal Tender Status"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-integration",
+      "vc:label": "Lightning Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-payments",
+      "vc:label": "Lightning Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:lyn-alden",
+      "vc:label": "Lyn Alden"
+    },
+    {
+      "@id": "urn:visionflow:linked:m-and-a-activity",
+      "vc:label": "M&A Activity"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-cycles",
+      "vc:label": "Market Cycles"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-inefficiencies",
+      "vc:label": "Market Inefficiencies"
+    },
+    {
+      "@id": "urn:visionflow:linked:marty-bent",
+      "vc:label": "Marty Bent"
+    },
+    {
+      "@id": "urn:visionflow:linked:max-keidun",
+      "vc:label": "Max Keidun"
+    },
+    {
+      "@id": "urn:visionflow:linked:michael-saylor",
+      "vc:label": "Michael Saylor"
+    },
+    {
+      "@id": "urn:visionflow:linked:mining-regulations",
+      "vc:label": "Mining Regulations"
+    },
+    {
+      "@id": "urn:visionflow:linked:monetary-policy",
+      "vc:label": "Monetary Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:multisig",
+      "vc:label": "Multisig"
+    },
+    {
+      "@id": "urn:visionflow:linked:multisig-wallets",
+      "vc:label": "Multisig Wallets"
+    },
+    {
+      "@id": "urn:visionflow:linked:nuclear-energy",
+      "vc:label": "Nuclear Energy"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-chain-analysis",
+      "vc:label": "On-chain Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-chain-analytics",
+      "vc:label": "On-Chain Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-chain-metrics",
+      "vc:label": "On-Chain Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:p2-p-finance",
+      "vc:label": "P2P Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:philosophy",
+      "vc:label": "Philosophy"
+    },
+    {
+      "@id": "urn:visionflow:linked:political-opposition",
+      "vc:label": "Political Opposition"
+    },
+    {
+      "@id": "urn:visionflow:linked:political-representation",
+      "vc:label": "Political Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:president-bukele",
+      "vc:label": "President Bukele"
+    },
+    {
+      "@id": "urn:visionflow:linked:raoul-pal",
+      "vc:label": "Raoul Pal"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-approval",
+      "vc:label": "Regulatory Approval"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-clarity",
+      "vc:label": "Regulatory Clarity"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-evasion",
+      "vc:label": "Regulatory Evasion"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-scrutiny",
+      "vc:label": "Regulatory Scrutiny"
+    },
+    {
+      "@id": "urn:visionflow:linked:renewable-energy",
+      "vc:label": "Renewable Energy"
+    },
+    {
+      "@id": "urn:visionflow:linked:retail-commerce",
+      "vc:label": "Retail Commerce"
+    },
+    {
+      "@id": "urn:visionflow:linked:ryan-gentry",
+      "vc:label": "Ryan Gentry"
+    },
+    {
+      "@id": "urn:visionflow:linked:satoshi-nakamoto",
+      "vc:label": "Satoshi Nakamoto"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signatures",
+      "vc:label": "Schnorr Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:sec-regulation",
+      "vc:label": "SEC Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-custody",
+      "vc:label": "Self-Custody"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-integration",
+      "vc:label": "Social Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-justice",
+      "vc:label": "Social Justice"
+    },
+    {
+      "@id": "urn:visionflow:linked:sports-industry",
+      "vc:label": "Sports Industry"
+    },
+    {
+      "@id": "urn:visionflow:linked:spot-bitcoin-etf",
+      "vc:label": "Spot Bitcoin ETF"
+    },
+    {
+      "@id": "urn:visionflow:linked:spot-etf",
+      "vc:label": "Spot ETF"
+    },
+    {
+      "@id": "urn:visionflow:linked:square-cash",
+      "vc:label": "Square Cash"
+    },
+    {
+      "@id": "urn:visionflow:linked:stock-to-flow-model",
+      "vc:label": "Stock-to-Flow Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:sustainable-mining",
+      "vc:label": "Sustainable Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:taproot",
+      "vc:label": "Taproot"
+    },
+    {
+      "@id": "urn:visionflow:linked:tax-policy",
+      "vc:label": "Tax Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:taxation",
+      "vc:label": "Taxation"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-analysis",
+      "vc:label": "Technical Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:technology-upgrade",
+      "vc:label": "Technology Upgrade"
+    },
+    {
+      "@id": "urn:visionflow:linked:tesla",
+      "vc:label": "Tesla"
+    },
+    {
+      "@id": "urn:visionflow:linked:traditional-finance",
+      "vc:label": "Traditional Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:treasury-reserve",
+      "vc:label": "Treasury Reserve"
+    },
+    {
+      "@id": "urn:visionflow:linked:tuur-demeester",
+      "vc:label": "Tuur Demeester"
+    },
+    {
+      "@id": "urn:visionflow:linked:ukraine",
+      "vc:label": "Ukraine"
+    },
+    {
+      "@id": "urn:visionflow:linked:valuation-models",
+      "vc:label": "Valuation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:whale-watching",
+      "vc:label": "Whale Watching"
+    },
+    {
+      "@id": "urn:visionflow:linked:wozniak",
+      "vc:label": "Wozniak"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
+      "vc:label": "Zero-Knowledge Proofs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin-mining",
+      "vc:label": "Bitcoin Mining"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consumer-protection",
+      "vc:label": "Consumer Protection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-rights",
+      "vc:label": "Human Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-framework",
+      "vc:label": "Regulatory Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7d7d7678a583"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#BitcoinRelatedLinks"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Bitcoin related links"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:bitcoin-related-links"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:bitcoin-related-links"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ead33d47c0925547ebacab40e7b7056db98d540e99e1763ba9caad7e4fd392f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:bitcoin-related-links",
+  "@type": "OntologyClass",
+  "label": "Bitcoin related links",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ead33d47c0925547ebacab40e7b7056db98d540e99e1763ba9caad7e4fd392f1"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ead33d47c0925547ebacab40e7b7056db98d540e99e1763ba9caad7e4fd392f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Bitcoin related links is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:bitcoin-related-links:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ead33d47c0925547ebacab40e7b7056db98d540e99e1763ba9caad7e4fd392f1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Address Distribution]]",
+      "resolved": "urn:visionflow:linked:address-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Africa]]",
+      "resolved": "urn:visionflow:linked:africa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[African Bitcoin]]",
+      "resolved": "urn:visionflow:linked:african-bitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Alex Gladstein]]",
+      "resolved": "urn:visionflow:linked:alex-gladstein",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Argentina]]",
+      "resolved": "urn:visionflow:linked:argentina",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ASIC Mining]]",
+      "resolved": "urn:visionflow:linked:asic-mining",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Class]]",
+      "resolved": "urn:visionflow:linked:asset-class",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Recovery]]",
+      "resolved": "urn:visionflow:linked:asset-recovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP85]]",
+      "resolved": "urn:visionflow:linked:bip85",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Adoption]]",
+      "resolved": "urn:visionflow:linked:bitcoin-adoption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Bonds]]",
+      "resolved": "urn:visionflow:linked:bitcoin-bonds",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Culture]]",
+      "resolved": "urn:visionflow:linked:bitcoin-culture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Legal Status]]",
+      "resolved": "urn:visionflow:linked:bitcoin-legal-status",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Price Prediction]]",
+      "resolved": "urn:visionflow:linked:bitcoin-price-prediction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Whitepaper]]",
+      "resolved": "urn:visionflow:linked:bitcoin-whitepaper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockstream]]",
+      "resolved": "urn:visionflow:linked:blockstream",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC]]",
+      "resolved": "urn:visionflow:linked:cbdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC Competition]]",
+      "resolved": "urn:visionflow:linked:cbdc-competition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Central Banks]]",
+      "resolved": "urn:visionflow:linked:central-banks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Charles Edwards]]",
+      "resolved": "urn:visionflow:linked:charles-edwards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[China Mining Ban]]",
+      "resolved": "urn:visionflow:linked:china-mining-ban",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compliance]]",
+      "resolved": "urn:visionflow:linked:compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Corporate Strategy]]",
+      "resolved": "urn:visionflow:linked:corporate-strategy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Corporate Treasury]]",
+      "resolved": "urn:visionflow:linked:corporate-treasury",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crypto Assets]]",
+      "resolved": "urn:visionflow:linked:crypto-assets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crypto Regulation]]",
+      "resolved": "urn:visionflow:linked:crypto-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Custody]]",
+      "resolved": "urn:visionflow:linked:custody",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dan Held]]",
+      "resolved": "urn:visionflow:linked:dan-held",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DID]]",
+      "resolved": "urn:visionflow:linked:did",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dollar Cost Averaging]]",
+      "resolved": "urn:visionflow:linked:dollar-cost-averaging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eastern Europe]]",
+      "resolved": "urn:visionflow:linked:eastern-europe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Economic Sanctions]]",
+      "resolved": "urn:visionflow:linked:economic-sanctions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[El Salvador]]",
+      "resolved": "urn:visionflow:linked:el-salvador",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[El Salvador Case Study]]",
+      "resolved": "urn:visionflow:linked:el-salvador-case-study",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Elon Musk]]",
+      "resolved": "urn:visionflow:linked:elon-musk",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Energy Consumption]]",
+      "resolved": "urn:visionflow:linked:energy-consumption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Energy Solutions]]",
+      "resolved": "urn:visionflow:linked:energy-solutions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environmental Impact]]",
+      "resolved": "urn:visionflow:linked:environmental-impact",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETF]]",
+      "resolved": "urn:visionflow:linked:etf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[European Regulation]]",
+      "resolved": "urn:visionflow:linked:european-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Inclusion]]",
+      "resolved": "urn:visionflow:linked:financial-inclusion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Products]]",
+      "resolved": "urn:visionflow:linked:financial-products",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fund Management]]",
+      "resolved": "urn:visionflow:linked:fund-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Geopolitical Finance]]",
+      "resolved": "urn:visionflow:linked:geopolitical-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Geopolitics]]",
+      "resolved": "urn:visionflow:linked:geopolitics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gift Cards]]",
+      "resolved": "urn:visionflow:linked:gift-cards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gig Economy]]",
+      "resolved": "urn:visionflow:linked:gig-economy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hong Kong]]",
+      "resolved": "urn:visionflow:linked:hong-kong",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[India Crypto]]",
+      "resolved": "urn:visionflow:linked:india-crypto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inflation Hedge]]",
+      "resolved": "urn:visionflow:linked:inflation-hedge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Institutional Bitcoin Investment]]",
+      "resolved": "urn:visionflow:linked:institutional-bitcoin-investment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Institutional Investment]]",
+      "resolved": "urn:visionflow:linked:institutional-investment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Insurance Companies]]",
+      "resolved": "urn:visionflow:linked:insurance-companies",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[International Payments]]",
+      "resolved": "urn:visionflow:linked:international-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Investment Risk]]",
+      "resolved": "urn:visionflow:linked:investment-risk",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jack Dorsey]]",
+      "resolved": "urn:visionflow:linked:jack-dorsey",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jack Mallers]]",
+      "resolved": "urn:visionflow:linked:jack-mallers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jeff Booth]]",
+      "resolved": "urn:visionflow:linked:jeff-booth",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jurisdictional Adoption]]",
+      "resolved": "urn:visionflow:linked:jurisdictional-adoption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KYC/AML]]",
+      "resolved": "urn:visionflow:linked:kyc-aml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KYC Requirements]]",
+      "resolved": "urn:visionflow:linked:kyc-requirements",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Law Enforcement]]",
+      "resolved": "urn:visionflow:linked:law-enforcement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2 Scaling]]",
+      "resolved": "urn:visionflow:linked:layer-2-scaling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2 Solutions]]",
+      "resolved": "urn:visionflow:linked:layer-2-solutions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Legal Tender]]",
+      "resolved": "urn:visionflow:linked:legal-tender",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Legal Tender Status]]",
+      "resolved": "urn:visionflow:linked:legal-tender-status",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Integration]]",
+      "resolved": "urn:visionflow:linked:lightning-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Payments]]",
+      "resolved": "urn:visionflow:linked:lightning-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lyn Alden]]",
+      "resolved": "urn:visionflow:linked:lyn-alden",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[M&A Activity]]",
+      "resolved": "urn:visionflow:linked:m-and-a-activity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Cycles]]",
+      "resolved": "urn:visionflow:linked:market-cycles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Inefficiencies]]",
+      "resolved": "urn:visionflow:linked:market-inefficiencies",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Marty Bent]]",
+      "resolved": "urn:visionflow:linked:marty-bent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Max Keidun]]",
+      "resolved": "urn:visionflow:linked:max-keidun",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Michael Saylor]]",
+      "resolved": "urn:visionflow:linked:michael-saylor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mining Regulations]]",
+      "resolved": "urn:visionflow:linked:mining-regulations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monetary Policy]]",
+      "resolved": "urn:visionflow:linked:monetary-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multisig]]",
+      "resolved": "urn:visionflow:linked:multisig",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multisig Wallets]]",
+      "resolved": "urn:visionflow:linked:multisig-wallets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nuclear Energy]]",
+      "resolved": "urn:visionflow:linked:nuclear-energy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[On-chain Analysis]]",
+      "resolved": "urn:visionflow:linked:on-chain-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[On-Chain Analytics]]",
+      "resolved": "urn:visionflow:linked:on-chain-analytics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[On-Chain Metrics]]",
+      "resolved": "urn:visionflow:linked:on-chain-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[P2P Finance]]",
+      "resolved": "urn:visionflow:linked:p2-p-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Philosophy]]",
+      "resolved": "urn:visionflow:linked:philosophy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Political Opposition]]",
+      "resolved": "urn:visionflow:linked:political-opposition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Political Representation]]",
+      "resolved": "urn:visionflow:linked:political-representation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[President Bukele]]",
+      "resolved": "urn:visionflow:linked:president-bukele",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Raoul Pal]]",
+      "resolved": "urn:visionflow:linked:raoul-pal",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regulatory Approval]]",
+      "resolved": "urn:visionflow:linked:regulatory-approval",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regulatory Clarity]]",
+      "resolved": "urn:visionflow:linked:regulatory-clarity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regulatory Evasion]]",
+      "resolved": "urn:visionflow:linked:regulatory-evasion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regulatory Scrutiny]]",
+      "resolved": "urn:visionflow:linked:regulatory-scrutiny",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Renewable Energy]]",
+      "resolved": "urn:visionflow:linked:renewable-energy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Retail Commerce]]",
+      "resolved": "urn:visionflow:linked:retail-commerce",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ryan Gentry]]",
+      "resolved": "urn:visionflow:linked:ryan-gentry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Satoshi Nakamoto]]",
+      "resolved": "urn:visionflow:linked:satoshi-nakamoto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr Signatures]]",
+      "resolved": "urn:visionflow:linked:schnorr-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SEC Regulation]]",
+      "resolved": "urn:visionflow:linked:sec-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Self-Custody]]",
+      "resolved": "urn:visionflow:linked:self-custody",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Social Integration]]",
+      "resolved": "urn:visionflow:linked:social-integration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Social Justice]]",
+      "resolved": "urn:visionflow:linked:social-justice",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sports Industry]]",
+      "resolved": "urn:visionflow:linked:sports-industry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Spot Bitcoin ETF]]",
+      "resolved": "urn:visionflow:linked:spot-bitcoin-etf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Spot ETF]]",
+      "resolved": "urn:visionflow:linked:spot-etf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Square Cash]]",
+      "resolved": "urn:visionflow:linked:square-cash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stock-to-Flow Model]]",
+      "resolved": "urn:visionflow:linked:stock-to-flow-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sustainable Mining]]",
+      "resolved": "urn:visionflow:linked:sustainable-mining",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Taproot]]",
+      "resolved": "urn:visionflow:linked:taproot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tax Policy]]",
+      "resolved": "urn:visionflow:linked:tax-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Taxation]]",
+      "resolved": "urn:visionflow:linked:taxation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Technical Analysis]]",
+      "resolved": "urn:visionflow:linked:technical-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Technology Upgrade]]",
+      "resolved": "urn:visionflow:linked:technology-upgrade",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tesla]]",
+      "resolved": "urn:visionflow:linked:tesla",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Traditional Finance]]",
+      "resolved": "urn:visionflow:linked:traditional-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Treasury Reserve]]",
+      "resolved": "urn:visionflow:linked:treasury-reserve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tuur Demeester]]",
+      "resolved": "urn:visionflow:linked:tuur-demeester",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ukraine]]",
+      "resolved": "urn:visionflow:linked:ukraine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Valuation Models]]",
+      "resolved": "urn:visionflow:linked:valuation-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Whale Watching]]",
+      "resolved": "urn:visionflow:linked:whale-watching",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wozniak]]",
+      "resolved": "urn:visionflow:linked:wozniak",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zero-Knowledge Proofs]]",
+      "resolved": "urn:visionflow:linked:zero-knowledge-proofs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin Mining]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin-mining",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consumer Protection]]",
+      "resolved": "urn:visionflow:owl:class:consumer-protection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Rights]]",
+      "resolved": "urn:visionflow:owl:class:human-rights",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Privacy]]",
+      "resolved": "urn:visionflow:owl:class:privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Compliance]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Framework]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ead33d47c0925547ebacab40e7b7056db98d540e99e1763ba9caad7e4fd392f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Bitcoin related links is a concept within the ngm domain.

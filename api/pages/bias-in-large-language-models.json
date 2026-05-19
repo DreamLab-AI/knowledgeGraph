@@ -1,0 +1,672 @@
+{
+  "id": "urn:visionflow:page:3a50184ea727ae1e00baa0cca475c4888317c077028190047968698e265ad081",
+  "title": "Bias in Large Language Models",
+  "slug": "bias-in-large-language-models",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bias-in-large-language-models",
+  "domain": "artificial-intelligence",
+  "definition": "Bias in Large Language Models is the systematic skew in the outputs, representations, and decisions of transformer-based foundation models (GPT-4o/4.5, Claude 3.5/4 Sonnet/Opus, Gemini 1.5/2.0 Pro, Llama 3/4, Mistral Large, Qwen 2.5, DeepSeek-V3) toward particular social groups, viewpoints, languages, cultures, or value systems, manifesting as **representational harm** (stereotyping, demeaning portrayal, under-representation or erasure of demographic groups in generated text and images) and **allocational harm** (unequal allocation of resources, opportunities, or treatment when LLMs are deployed in hiring, lending, healthcare triage, content moderation, education or criminal justice), arising from the compounded effects of training-data composition (Common Crawl Western/Anglophone/male/young-skilled internet-user dominance with ~46% English content despite English being native to ~5% of humanity, GitHub code corpora reflecting Silicon Valley demographics, books3/PG-19 historical-literature canon embedding 19th-20th century prejudices, Reddit/4chan/Twitter conversation corpora amplifying online toxicity baselines), pretraining objective (next-token cross-entropy faithfully reproduci",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:representational-harm",
+      "label": "Representational Harm"
+    },
+    {
+      "id": "urn:visionflow:linked:sociotechnical-harm",
+      "label": "Sociotechnical Harm"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "id": "urn:visionflow:owl:class:algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "id": "urn:visionflow:owl:class:harmful-bias",
+      "label": "Harmful Bias"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:age-bias",
+        "label": "Age Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:allocational-bias",
+        "label": "Allocational Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:disability-bias",
+        "label": "Disability Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:gender-bias",
+        "label": "Gender Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:linguistic-bias",
+        "label": "Linguistic Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:political-bias",
+        "label": "Political Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:racial-bias",
+        "label": "Racial Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:religious-bias",
+        "label": "Religious Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:representational-bias",
+        "label": "Representational Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:socioeconomic-bias",
+        "label": "Socioeconomic Bias"
+      },
+      {
+        "id": "urn:visionflow:linked:sycophancy-bias",
+        "label": "Sycophancy Bias"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:human-rater-pool",
+        "label": "Human Rater Pool"
+      },
+      {
+        "id": "urn:visionflow:linked:instruction-tuning-dataset",
+        "label": "Instruction Tuning Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:pretraining-corpus",
+        "label": "Pretraining Corpus"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf-pipeline",
+        "label": "RLHF Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-composition",
+        "label": "Training Data Composition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cultural-homogenization",
+        "label": "Cultural Homogenization"
+      },
+      {
+        "id": "urn:visionflow:linked:discriminatory-decision-making",
+        "label": "Discriminatory Decision Making"
+      },
+      {
+        "id": "urn:visionflow:linked:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:visionflow:linked:stereotype-propagation",
+        "label": "Stereotype Propagation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:distributional-representation-learning",
+        "label": "Distributional Representation Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:implicit-association-encoding",
+        "label": "Implicit Association Encoding"
+      },
+      {
+        "id": "urn:visionflow:linked:preference-aggregation",
+        "label": "Preference Aggregation"
+      },
+      {
+        "id": "urn:visionflow:linked:statistical-pattern-reproduction",
+        "label": "Statistical Pattern Reproduction"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abid-et-al-2021-anti-muslim-bias",
+      "label": "Abid et al. 2021 Anti-Muslim Bias"
+    },
+    {
+      "slug": "acl",
+      "label": "ACL"
+    },
+    {
+      "slug": "age-bias",
+      "label": "Age Bias"
+    },
+    {
+      "slug": "aies",
+      "label": "AIES"
+    },
+    {
+      "slug": "allocational-bias",
+      "label": "Allocational Bias"
+    },
+    {
+      "slug": "bai-et-al-2022-constitutional-ai",
+      "label": "Bai et al. 2022 Constitutional AI"
+    },
+    {
+      "slug": "barocas-et-al-2017-allocative-vs-representational-harm",
+      "label": "Barocas et al. 2017 Allocative vs Representational Harm"
+    },
+    {
+      "slug": "bbq-benchmark",
+      "label": "BBQ Benchmark"
+    },
+    {
+      "slug": "bender-et-al-2021-stochastic-parrots",
+      "label": "Bender et al. 2021 Stochastic Parrots"
+    },
+    {
+      "slug": "bias-auditing",
+      "label": "Bias Auditing"
+    },
+    {
+      "slug": "blodgett-et-al-2020-language-technology-is-power",
+      "label": "Blodgett et al. 2020 Language Technology is Power"
+    },
+    {
+      "slug": "bold-benchmark",
+      "label": "BOLD Benchmark"
+    },
+    {
+      "slug": "bolukbasi-et-al-2016-debiasing-word-embeddings",
+      "label": "Bolukbasi et al. 2016 Debiasing Word Embeddings"
+    },
+    {
+      "slug": "caliskan-et-al-2017-weat-science",
+      "label": "Caliskan et al. 2017 WEAT Science"
+    },
+    {
+      "slug": "cao-et-al-2023-cross-cultural-alignment-chat-gpt",
+      "label": "Cao et al. 2023 Cross-Cultural Alignment ChatGPT"
+    },
+    {
+      "slug": "casper-et-al-2023-open-problems-rlhf",
+      "label": "Casper et al. 2023 Open Problems RLHF"
+    },
+    {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "confirmation-bias",
+      "label": "Confirmation Bias"
+    },
+    {
+      "slug": "crow-s-pairs",
+      "label": "CrowS-Pairs"
+    },
+    {
+      "slug": "cultural-homogenization",
+      "label": "Cultural Homogenization"
+    },
+    {
+      "slug": "dhamala-et-al-2021-bold",
+      "label": "Dhamala et al. 2021 BOLD"
+    },
+    {
+      "slug": "disability-bias",
+      "label": "Disability Bias"
+    },
+    {
+      "slug": "discriminatory-decision-making",
+      "label": "Discriminatory Decision Making"
+    },
+    {
+      "slug": "distributional-representation-learning",
+      "label": "Distributional Representation Learning"
+    },
+    {
+      "slug": "eu-ai-act-article-10",
+      "label": "EU AI Act Article 10"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "EvaluationLayer"
+    },
+    {
+      "slug": "facc-t",
+      "label": "FAccT"
+    },
+    {
+      "slug": "fairness-domain",
+      "label": "FairnessDomain"
+    },
+    {
+      "slug": "fairness-in-ai",
+      "label": "Fairness in AI"
+    },
+    {
+      "slug": "felkner-et-al-2023-wino-queer",
+      "label": "Felkner et al. 2023 WinoQueer"
+    },
+    {
+      "slug": "gallegos-et-al-2024-bias-fairness-llms-survey",
+      "label": "Gallegos et al. 2024 Bias Fairness LLMs Survey"
+    },
+    {
+      "slug": "gehman-et-al-2020-real-toxicity-prompts",
+      "label": "Gehman et al. 2020 RealToxicityPrompts"
+    },
+    {
+      "slug": "gender-bias",
+      "label": "Gender Bias"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "hofmann-et-al-2024-covert-racism-dialect-nature",
+      "label": "Hofmann et al. 2024 Covert Racism Dialect Nature"
+    },
+    {
+      "slug": "honest-benchmark",
+      "label": "HONEST Benchmark"
+    },
+    {
+      "slug": "human-rater-pool",
+      "label": "Human Rater Pool"
+    },
+    {
+      "slug": "ico-guidance-on-ai",
+      "label": "ICO Guidance on AI"
+    },
+    {
+      "slug": "implicit-association-encoding",
+      "label": "Implicit Association Encoding"
+    },
+    {
+      "slug": "inductive-bias",
+      "label": "Inductive Bias"
+    },
+    {
+      "slug": "information-asymmetry",
+      "label": "Information Asymmetry"
+    },
+    {
+      "slug": "instruction-tuning-dataset",
+      "label": "Instruction Tuning Dataset"
+    },
+    {
+      "slug": "iso-iec-tr-24027",
+      "label": "ISO/IEC TR 24027"
+    },
+    {
+      "slug": "kim-et-al-2022-prosocial-dialog",
+      "label": "Kim et al. 2022 ProsocialDialog"
+    },
+    {
+      "slug": "kotek-et-al-2023-gender-bias-llms",
+      "label": "Kotek et al. 2023 Gender Bias LLMs"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "linguistic-bias",
+      "label": "Linguistic Bias"
+    },
+    {
+      "slug": "lu-et-al-2020-counterfactual-data-augmentation",
+      "label": "Lu et al. 2020 Counterfactual Data Augmentation"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "motoki-et-al-2024-chat-gpt-political-bias-public-choice",
+      "label": "Motoki et al. 2024 ChatGPT Political Bias Public Choice"
+    },
+    {
+      "slug": "nadeem-et-al-2021-stereo-set",
+      "label": "Nadeem et al. 2021 StereoSet"
+    },
+    {
+      "slug": "nangia-et-al-2020-crow-s-pairs",
+      "label": "Nangia et al. 2020 CrowS-Pairs"
+    },
+    {
+      "slug": "naous-et-al-2024-cultural-bias-llms-acl",
+      "label": "Naous et al. 2024 Cultural Bias LLMs ACL"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "nozza-et-al-2021-honest",
+      "label": "Nozza et al. 2021 HONEST"
+    },
+    {
+      "slug": "parrish-et-al-2022-bbq-benchmark",
+      "label": "Parrish et al. 2022 BBQ Benchmark"
+    },
+    {
+      "slug": "political-bias",
+      "label": "Political Bias"
+    },
+    {
+      "slug": "preference-aggregation",
+      "label": "Preference Aggregation"
+    },
+    {
+      "slug": "pretraining-corpus",
+      "label": "Pretraining Corpus"
+    },
+    {
+      "slug": "racial-bias",
+      "label": "Racial Bias"
+    },
+    {
+      "slug": "real-toxicity-prompts",
+      "label": "RealToxicityPrompts"
+    },
+    {
+      "slug": "reddit-corpus",
+      "label": "Reddit Corpus"
+    },
+    {
+      "slug": "religious-bias",
+      "label": "Religious Bias"
+    },
+    {
+      "slug": "representational-bias",
+      "label": "Representational Bias"
+    },
+    {
+      "slug": "representational-harm",
+      "label": "Representational Harm"
+    },
+    {
+      "slug": "responsible-ai-reporting",
+      "label": "Responsible AI Reporting"
+    },
+    {
+      "slug": "rlhf-pipeline",
+      "label": "RLHF Pipeline"
+    },
+    {
+      "slug": "rozado-2023-chat-gpt-political-biases",
+      "label": "Rozado 2023 ChatGPT Political Biases"
+    },
+    {
+      "slug": "rozado-2024-political-preferences-of-llms-plos",
+      "label": "Rozado 2024 Political Preferences of LLMs PLOS"
+    },
+    {
+      "slug": "schick-et-al-2021-self-diagnosis-self-debiasing-tacl",
+      "label": "Schick et al. 2021 Self-Diagnosis Self-Debiasing TACL"
+    },
+    {
+      "slug": "selection-bias",
+      "label": "Selection Bias"
+    },
+    {
+      "slug": "sharma-et-al-2023-sycophancy-in-language-models",
+      "label": "Sharma et al. 2023 Sycophancy in Language Models"
+    },
+    {
+      "slug": "sheng-et-al-2019-bias-in-language-generation",
+      "label": "Sheng et al. 2019 Bias in Language Generation"
+    },
+    {
+      "slug": "smith-et-al-2022-holistic-bias",
+      "label": "Smith et al. 2022 HolisticBias"
+    },
+    {
+      "slug": "socioeconomic-bias",
+      "label": "Socioeconomic Bias"
+    },
+    {
+      "slug": "sociotechnical-harm",
+      "label": "Sociotechnical Harm"
+    },
+    {
+      "slug": "statistical-pattern-reproduction",
+      "label": "Statistical Pattern Reproduction"
+    },
+    {
+      "slug": "stereo-set",
+      "label": "StereoSet"
+    },
+    {
+      "slug": "stereotype-propagation",
+      "label": "Stereotype Propagation"
+    },
+    {
+      "slug": "sycophancy-bias",
+      "label": "Sycophancy Bias"
+    },
+    {
+      "slug": "tokeniser",
+      "label": "Tokeniser"
+    },
+    {
+      "slug": "training-data-composition",
+      "label": "Training Data Composition"
+    },
+    {
+      "slug": "wino-bias",
+      "label": "WinoBias"
+    },
+    {
+      "slug": "wino-queer",
+      "label": "WinoQueer"
+    },
+    {
+      "slug": "word-embedding-association-test",
+      "label": "Word Embedding Association Test"
+    },
+    {
+      "slug": "zhao-et-al-2018-wino-bias",
+      "label": "Zhao et al. 2018 WinoBias"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bias-detection-methods",
+      "label": "Bias Detection Methods"
+    },
+    {
+      "slug": "bias-mitigation-techniques",
+      "label": "Bias Mitigation Techniques"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "harmful-bias",
+      "label": "Harmful Bias"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

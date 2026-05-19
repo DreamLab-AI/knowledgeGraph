@@ -1,21 +1,486 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#TechnologyAdoption
-uri:: urn:visionclaw:concept:distributed-collaboration:technology-adoption
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:technology-adoption
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Technology Adoption
-content-hash:: sha256-12-e1dfbab9f99b
-legacy-term-id:: DT-0003
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.93
-version:: 2.0.0
-created:: 2025-11-05T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#TechnologyAdoption
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:technology-adoption
 public:: true
+
+# Technology Adoption
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf",
+  "@type": "Page",
+  "vc:slug": "technology-adoption",
+  "title": "Technology Adoption",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:change-management",
+      "vc:label": "Change Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:competitive-advantage",
+      "vc:label": "Competitive Advantage"
+    },
+    {
+      "@id": "urn:visionflow:linked:ecosystem-maturity",
+      "vc:label": "Ecosystem Maturity"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation",
+      "vc:label": "Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gartner-hype-cycle",
+      "vc:label": "Gartner Hype Cycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:implementation",
+      "vc:label": "Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:innovation-diffusion",
+      "vc:label": "Innovation Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-tr-24030",
+      "vc:label": "ISO/IEC TR 24030"
+    },
+    {
+      "@id": "urn:visionflow:linked:mc-kinsey",
+      "vc:label": "McKinsey"
+    },
+    {
+      "@id": "urn:visionflow:linked:rogers-diffusion-of-innovations",
+      "vc:label": "Rogers Diffusion of Innovations"
+    },
+    {
+      "@id": "urn:visionflow:linked:stakeholder-buy-in",
+      "vc:label": "Stakeholder Buy-In"
+    },
+    {
+      "@id": "urn:visionflow:linked:sustained-use",
+      "vc:label": "Sustained Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:trial",
+      "vc:label": "Trial"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:awareness",
+      "vc:label": "Awareness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-transformation",
+      "vc:label": "Digital Transformation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-impact",
+      "vc:label": "Social Impact"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:standards",
+      "vc:label": "Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:user-education",
+      "vc:label": "User Education"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.93"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e1dfbab9f99b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-05T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#TechnologyAdoption"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "DT-0003"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Technology Adoption"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:technology-adoption"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:technology-adoption"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:technology-adoption",
+  "@type": "OntologyClass",
+  "label": "Technology Adoption",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-collaboration",
+      "vc:label": "distributed-collaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, evaluation, trial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.93",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:evaluation",
+      "vc:label": "Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:implementation",
+      "vc:label": "Implementation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sustained-use",
+      "vc:label": "Sustained Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:trial",
+      "vc:label": "Trial"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:awareness",
+      "vc:label": "Awareness"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:change-management",
+      "vc:label": "Change Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:stakeholder-buy-in",
+      "vc:label": "Stakeholder Buy-In"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training",
+      "vc:label": "Training"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:competitive-advantage",
+      "vc:label": "Competitive Advantage"
+    },
+    {
+      "@id": "urn:visionflow:linked:innovation-diffusion",
+      "vc:label": "Innovation Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-transformation",
+      "vc:label": "Digital Transformation"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:ecosystem-maturity",
+      "vc:label": "Ecosystem Maturity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:standards",
+      "vc:label": "Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:user-education",
+      "vc:label": "User Education"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:technology-adoption:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Change Management]]",
+      "resolved": "urn:visionflow:linked:change-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Competitive Advantage]]",
+      "resolved": "urn:visionflow:linked:competitive-advantage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ecosystem Maturity]]",
+      "resolved": "urn:visionflow:linked:ecosystem-maturity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Evaluation]]",
+      "resolved": "urn:visionflow:linked:evaluation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gartner Hype Cycle]]",
+      "resolved": "urn:visionflow:linked:gartner-hype-cycle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Implementation]]",
+      "resolved": "urn:visionflow:linked:implementation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Innovation Diffusion]]",
+      "resolved": "urn:visionflow:linked:innovation-diffusion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC TR 24030]]",
+      "resolved": "urn:visionflow:linked:iso-iec-tr-24030",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[McKinsey]]",
+      "resolved": "urn:visionflow:linked:mc-kinsey",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rogers Diffusion of Innovations]]",
+      "resolved": "urn:visionflow:linked:rogers-diffusion-of-innovations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stakeholder Buy-In]]",
+      "resolved": "urn:visionflow:linked:stakeholder-buy-in",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sustained Use]]",
+      "resolved": "urn:visionflow:linked:sustained-use",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trial]]",
+      "resolved": "urn:visionflow:linked:trial",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Awareness]]",
+      "resolved": "urn:visionflow:owl:class:awareness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Transformation]]",
+      "resolved": "urn:visionflow:owl:class:digital-transformation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interoperability]]",
+      "resolved": "urn:visionflow:owl:class:interoperability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social Impact]]",
+      "resolved": "urn:visionflow:owl:class:social-impact",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Standards]]",
+      "resolved": "urn:visionflow:owl:class:standards",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training]]",
+      "resolved": "urn:visionflow:owl:class:training",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[User Education]]",
+      "resolved": "urn:visionflow:owl:class:user-education",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, evaluation, trial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.

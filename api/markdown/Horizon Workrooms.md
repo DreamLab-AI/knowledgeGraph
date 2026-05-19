@@ -1,22 +1,301 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#HorizonWorkrooms
-uri:: urn:visionclaw:concept:distributed-collaboration:horizon-workrooms
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:horizon-workrooms
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Horizon Workrooms
-content-hash:: sha256-12-74d2303fd035
-legacy-term-id:: TC-0028
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#HorizonWorkrooms
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:horizon-workrooms
 public:: true
-bridges-to:: [[Virtual Workspace]]
+
+# Horizon Workrooms
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b",
+  "@type": "Page",
+  "vc:slug": "horizon-workrooms",
+  "title": "Horizon Workrooms",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "vc:label": "TELE-026-microsoft-mesh\\"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "vc:label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-027-spatial-platform",
+      "vc:label": "TELE-027-spatial-platform\\"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "vc:label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "vc:label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "vc:label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "vc:label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-whiteboarding",
+      "vc:label": "VirtualWhiteboarding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-telepresence-bridge",
+      "vc:label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Virtual Workspace]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-74d2303fd035"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#HorizonWorkrooms"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0028"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Horizon Workrooms"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:horizon-workrooms"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:horizon-workrooms"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:horizon-workrooms",
+  "@type": "OntologyClass",
+  "label": "Horizon Workrooms",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:virtual-whiteboarding",
+      "vc:label": "VirtualWhiteboarding"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-workspace",
+      "vc:label": "Virtual Workspace"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:horizon-workrooms:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-026-microsoft-mesh\\|Microsoft Mesh]]",
+      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-026-microsoft-mesh]]",
+      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-027-spatial-platform\\|Spatial]]",
+      "resolved": "urn:visionflow:linked:tele-027-spatial-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-105-real-time-language-translation]]",
+      "resolved": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-107-ai-meeting-assistants]]",
+      "resolved": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-302-shared-whiteboards]]",
+      "resolved": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VirtualWhiteboarding]]",
+      "resolved": "urn:visionflow:linked:virtual-whiteboarding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse-Telepresence Bridge]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-telepresence-bridge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TELE-001-telepresence]]",
+      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration."
@@ -36,7 +315,7 @@ bridges-to:: [[Virtual Workspace]]
 
   **Horizon Workrooms** is Meta's flagship enterprise virtual reality collaboration platform, launched in 2021 and continuously enhanced through 2025, enabling distributed teams to meet as photorealistic or stylised avatars in immersive 3D meeting rooms. Running on Meta Quest headsets (Quest 2, Quest 3, Quest Pro), Workrooms provides spatial audio, shared virtual whiteboards, screen sharing from physical computers, and keyboard passthrough (typing on physical keyboard whilst in VR), creating a professional telepresence environment that combines the social presence of face-to-face meetings with the flexibility of remote work.
 
-  The platform represents Meta's bet on the "metaverse of work" ([[TELE-CONV-001-metaverse-telepresence-bridge]]), offering free access to up to 16 simultaneous VR participants (plus 50 video call participants) in customisable virtual conference rooms. Users create persistent avatars with customised appearance, join scheduled meetings via web links, and collaborate using hand tracking or controllers to manipulate 3D objects, write on whiteboards, and gesture naturally. Integration with productivity tools (Zoom, Google Meet, Slack) provides hybrid meeting capabilities where VR users appear alongside traditional video conference participants.
+  The platform represents Meta's bet on the "metaverse of work" ([[Metaverse-Telepresence Bridge]]), offering free access to up to 16 simultaneous VR participants (plus 50 video call participants) in customisable virtual conference rooms. Users create persistent avatars with customised appearance, join scheduled meetings via web links, and collaborate using hand tracking or controllers to manipulate 3D objects, write on whiteboards, and gesture naturally. Integration with productivity tools (Zoom, Google Meet, Slack) provides hybrid meeting capabilities where VR users appear alongside traditional video conference participants.
 
   #### Current Landscape
   Horizon Workrooms has evolved from experimental prototype to viable enterprise platform, with 4.7 million monthly active users globally and adoption by 38% of UK enterprises using VR collaboration (Meta Business Report, 2025).
@@ -181,7 +460,7 @@ bridges-to:: [[Virtual Workspace]]
   - [[TELE-026-microsoft-mesh]]
   - [[TELE-100-ai-avatars]]
   - [[TELE-302-shared-whiteboards]]
-  - [[TELE-CONV-001-metaverse-telepresence-bridge]]
+  - [[Metaverse-Telepresence Bridge]]
 
   #### References
   1. Meta. (2025). *Horizon Workrooms Product Documentation*. https://www.oculus.com/workrooms

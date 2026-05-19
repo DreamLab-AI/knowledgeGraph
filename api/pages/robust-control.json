@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:3928ba10ff9cc9926ba8599e6dd7a8d45331b29c888321505b92c4964eb340b7",
+  "title": "Robust Control",
+  "slug": "robust-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robust-control",
+  "domain": "spatial-computing",
+  "definition": "- maturity:: draft",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:control-algorithms",
+      "label": "ControlAlgorithms"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "control-algorithms",
+      "label": "ControlAlgorithms"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

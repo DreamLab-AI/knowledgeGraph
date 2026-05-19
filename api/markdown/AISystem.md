@@ -1,21 +1,420 @@
-iri:: http://narrativegoldmine.com/metaverse#AISystem
-uri:: urn:visionclaw:concept:artificial-intelligence:aisystem
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:aisystem
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AISystem
-content-hash:: sha256-12-6a3da7ec4db2
-legacy-term-id:: MV-3010
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AISystem
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:aisystem
 public:: true
+
+# AISystem
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fd611b6664d49e21f0f5ce7f20bbe35bb0cb8af649f2eda53c8be8dd68022d6c",
+  "@type": "Page",
+  "vc:slug": "aisystem",
+  "title": "AISystem",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-systems",
+      "vc:label": "AI Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:aigovernance",
+      "vc:label": "AIGovernance"
+    },
+    {
+      "@id": "urn:visionflow:linked:deployed-on",
+      "vc:label": "deployedOn"
+    },
+    {
+      "@id": "urn:visionflow:linked:deployment-pattern",
+      "vc:label": "DeploymentPattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-controls",
+      "vc:label": "dt:controls"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enhances",
+      "vc:label": "dt:enhances"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-implemented-on",
+      "vc:label": "dt:implementedOn"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-secured-by",
+      "vc:label": "dt:securedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-uses",
+      "vc:label": "dt:uses"
+    },
+    {
+      "@id": "urn:visionflow:linked:has-model",
+      "vc:label": "hasModel"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000",
+      "vc:label": "IEEE 7000"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitors-performance",
+      "vc:label": "monitorsPerformance"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:organisational-contexts",
+      "vc:label": "Organisational Contexts"
+    },
+    {
+      "@id": "urn:visionflow:linked:uses-dataset",
+      "vc:label": "usesDataset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics",
+      "vc:label": "AIEthics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "AutonomousRobot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "BlockchainNetwork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-ledger",
+      "vc:label": "DistributedLedger"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-model",
+      "vc:label": "MachineLearningModel"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-models",
+      "vc:label": "Machine Learning Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "NeuralNetwork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-environment",
+      "vc:label": "VirtualEnvironment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6a3da7ec4db2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AISystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3010"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AISystem"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aisystem"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aisystem"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd611b6664d49e21f0f5ce7f20bbe35bb0cb8af649f2eda53c8be8dd68022d6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:aisystem",
+  "@type": "OntologyClass",
+  "label": "AISystem",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fd611b6664d49e21f0f5ce7f20bbe35bb0cb8af649f2eda53c8be8dd68022d6c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd611b6664d49e21f0f5ce7f20bbe35bb0cb8af649f2eda53c8be8dd68022d6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation. [[AI Systems]] integrate [[Neural Networks]], training frameworks, and monitoring components to operate within [[Organisational Contexts]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:aisystem:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fd611b6664d49e21f0f5ce7f20bbe35bb0cb8af649f2eda53c8be8dd68022d6c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Systems]]",
+      "resolved": "urn:visionflow:linked:ai-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIGovernance]]",
+      "resolved": "urn:visionflow:linked:aigovernance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[deployedOn]]",
+      "resolved": "urn:visionflow:linked:deployed-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeploymentPattern]]",
+      "resolved": "urn:visionflow:linked:deployment-pattern",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:controls]]",
+      "resolved": "urn:visionflow:linked:dt-controls",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enhances]]",
+      "resolved": "urn:visionflow:linked:dt-enhances",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:implementedOn]]",
+      "resolved": "urn:visionflow:linked:dt-implemented-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:securedBy]]",
+      "resolved": "urn:visionflow:linked:dt-secured-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:uses]]",
+      "resolved": "urn:visionflow:linked:dt-uses",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hasModel]]",
+      "resolved": "urn:visionflow:linked:has-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 7000]]",
+      "resolved": "urn:visionflow:linked:ieee-7000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[monitorsPerformance]]",
+      "resolved": "urn:visionflow:linked:monitors-performance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Organisational Contexts]]",
+      "resolved": "urn:visionflow:linked:organisational-contexts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[usesDataset]]",
+      "resolved": "urn:visionflow:linked:uses-dataset",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AIEthics]]",
+      "resolved": "urn:visionflow:owl:class:aiethics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutonomousRobot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainNetwork]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DistributedLedger]]",
+      "resolved": "urn:visionflow:owl:class:distributed-ledger",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MachineLearningModel]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Models]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NeuralNetwork]]",
+      "resolved": "urn:visionflow:owl:class:neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEnvironment]]",
+      "resolved": "urn:visionflow:owl:class:virtual-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fd611b6664d49e21f0f5ce7f20bbe35bb0cb8af649f2eda53c8be8dd68022d6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation. [[AI Systems]] integrate [[Neural Networks]], training frameworks, and monitoring components to operate within [[Organisational Contexts]].

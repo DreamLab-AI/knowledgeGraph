@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:cf53124527754f85da5d92a4092d3c58f6986e8066f7260ef21462fd0604ab12",
+  "title": "Model Transparency",
+  "slug": "model-transparency",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-transparency",
+  "domain": "artificial-intelligence",
+  "definition": "The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:trustworthy-ai-systems",
+        "label": "Trustworthy AI Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "trustworthy-ai-systems",
+      "label": "Trustworthy AI Systems"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "interpretable-ai",
+      "label": "Interpretable AI"
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "label": "Intrinsic Interpretability"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ]
+}

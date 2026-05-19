@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:5a9b766f1ce6a36ad52724fe2889fb18ca2d46f4a83b42680065b89d76e00694",
+  "title": "User Awareness",
+  "slug": "user-awareness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-awareness",
+  "domain": "spatial-computing",
+  "definition": "The understanding and knowledge that users possess about digital systems, privacy practices, security risks, and their rights when interacting with metaverse platforms and virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:user-education",
+      "label": "User Education"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "user-education",
+      "label": "User Education"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    }
+  ]
+}

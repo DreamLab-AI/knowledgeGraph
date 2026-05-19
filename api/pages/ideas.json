@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:ecab5fecf41145d7ce507c01ab7936ff2e88b4a4eef5c0238aa9ca12cf49e369",
+  "title": "Ideas",
+  "slug": "ideas",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ideas",
+  "domain": "infrastructure",
+  "definition": "Ideas is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "backlinks": []
+}

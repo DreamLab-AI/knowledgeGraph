@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:b29e0fb70e30134a257a915277655202fabbaa94e0223d108736bcd872cb35db",
+  "title": "ERC20 Standard",
+  "slug": "erc20-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc20-standard",
+  "domain": "blockchain",
+  "definition": "Technical standard for fungible tokens on Ethereum, defining required methods and events for token contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

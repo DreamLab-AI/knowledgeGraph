@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00",
+  "title": "Token Economics",
+  "slug": "token-economics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:token-economics",
+  "domain": "blockchain",
+  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-economics",
+      "label": "Blockchain Economics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:network-incentives",
+        "label": "Network Incentives"
+      },
+      {
+        "id": "urn:visionflow:linked:value-capture",
+        "label": "Value Capture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "network-incentives",
+      "label": "Network Incentives"
+    },
+    {
+      "slug": "staking",
+      "label": "Staking"
+    },
+    {
+      "slug": "value-capture",
+      "label": "Value Capture"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-economics",
+      "label": "Blockchain Economics"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "groq",
+      "label": "Groq"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    }
+  ]
+}

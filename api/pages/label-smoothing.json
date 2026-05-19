@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:9a82d88ec7de1bc54eb9cc6e782439a4c56f28e7a5db460ea193c5ef2b9687af",
+  "title": "Label Smoothing",
+  "slug": "label-smoothing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:label-smoothing",
+  "domain": "spatial-computing",
+  "definition": "A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

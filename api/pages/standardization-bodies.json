@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:96adef1d715288d4832933ead250a252bfff94f976a3916eff4e0cf219e5794d",
+  "title": "Standardization Bodies",
+  "slug": "standardization-bodies",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standardization-bodies",
+  "domain": "spatial-computing",
+  "definition": "Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating 1,800 member organizations for interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:technology-interoperability",
+        "label": "Technology Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technology-interoperability",
+      "label": "Technology Interoperability"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    }
+  ]
+}

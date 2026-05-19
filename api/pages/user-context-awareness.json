@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0e86cfc449d345e9b2b42057999acf911de17a01c78489d71bc81e12e8e86f2d",
+  "title": "User Context Awareness",
+  "slug": "user-context-awareness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-context-awareness",
+  "domain": "spatial-computing",
+  "definition": "The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:context-aware-computing",
+      "label": "Context-Aware Computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "context-aware-computing",
+      "label": "Context-Aware Computing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    }
+  ]
+}

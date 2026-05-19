@@ -1,21 +1,216 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ModelCompressionForEdge
-uri:: urn:visionclaw:concept:artificial-intelligence:model-compression-for-edge
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:model-compression-for-edge
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Model Compression for Edge
-content-hash:: sha256-12-dbdbbb4d1eb3
-legacy-term-id:: AI-0434
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ModelCompressionForEdge
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:model-compression-for-edge
 public:: true
+
+# Model Compression for Edge
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498",
+  "@type": "Page",
+  "vc:slug": "model-compression-for-edge",
+  "title": "Model Compression for Edge",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:onnx-runtime",
+      "vc:label": "ONNX Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch-mobile",
+      "vc:label": "PyTorch Mobile"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow-model-optimization",
+      "vc:label": "TensorFlow Model Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dbdbbb4d1eb3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ModelCompressionForEdge"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0434"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Model Compression for Edge"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-compression-for-edge"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:model-compression-for-edge"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:model-compression-for-edge",
+  "@type": "OntologyClass",
+  "label": "Model Compression for Edge",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, knowledge distillation, and architectural optimization. This approach addresses deployment constraints including model size limitations where edge devices typically support models under 5-50MB compared to gigabyte-scale cloud models, memory bandwidth restrictions as edge processors have limited cache and DRAM bandwidth constraining data movement, computational capacity measured in GFLOPS or TOPS rather than TFLOPS of cloud GPUs, energy budgets requiring inference within milliwatt to watt power envelopes for battery-powered or thermally-constrained devices, and latency requirements demanding real-time inference under 20-100ms for interactive applications. Core techniques span quantization reducing numerical precision from FP32 to INT8 (4x compression) or even INT4/binary (8-32x compression) with minimal accuracy loss through quantization-aware training, pruning removing redundant weights thr",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:model-compression-for-edge:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ONNX Runtime]]",
+      "resolved": "urn:visionflow:linked:onnx-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PyTorch Mobile]]",
+      "resolved": "urn:visionflow:linked:py-torch-mobile",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow Model Optimization]]",
+      "resolved": "urn:visionflow:linked:tensor-flow-model-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, knowledge distillation, and architectural optimization. This approach addresses deployment constraints including model size limitations where edge devices typically support models under 5-50MB compared to gigabyte-scale cloud models, memory bandwidth restrictions as edge processors have limited cache and DRAM bandwidth constraining data movement, computational capacity measured in GFLOPS or TOPS rather than TFLOPS of cloud GPUs, energy budgets requiring inference within milliwatt to watt power envelopes for battery-powered or thermally-constrained devices, and latency requirements demanding real-time inference under 20-100ms for interactive applications. Core techniques span quantization reducing numerical precision from FP32 to INT8 (4x compression) or even INT4/binary (8-32x compression) with minimal accuracy loss through quantization-aware training, pruning removing redundant weights through magnitude-based pruning eliminating smallest weights, structured pruning removing entire filters or channels, and iterative pruning gradually increasing sparsity while retraining, knowledge distillation training compact student models to mimic larger teacher models through soft target training and intermediate layer matching, and neural architecture search automatically discovering efficient architectures balancing accuracy and resource consumption through techniques like MobileNet (depthwise separable convolutions), EfficientNet (compound scaling), and hardware-aware NAS. Implementation pipelines typically combine multiple techniques achieving 4-10x compression with under 1% accuracy degradation measured through metrics including compression ratio (original/compressed size), speedup factor (inference time improvement), accuracy delta (performance degradation), and energy per inference (mJ/inference for battery life projections), with frameworks like TensorFlow Model Optimization Toolkit, ONNX Runtime, PyTorch Mobile, and Neural Network Compression Framework (NNCF) providing integrated workflows from training through deployment supporting various compression strategies and target hardware platforms including ARM Cortex-A/M, Qualcomm Hexagon DSP, Apple Neural Engine, and Google Edge TPU.

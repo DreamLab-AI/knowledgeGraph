@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:f6df47df10f80d5671b8696582ec51cb75e380ec96ce0835dc287e3a2b8552c5",
+  "title": "rb 0022 robot dynamics",
+  "slug": "rb-0022-robot-dynamics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0022-robot-dynamics",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-dynamics",
+      "label": "Robot Dynamics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

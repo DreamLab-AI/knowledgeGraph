@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:acf6bc89960ff4cf9cc7f2200648f23089ba4db404511200c7093081166706b8",
+  "title": "User Interface Architecture",
+  "slug": "user-interface-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-interface-architecture",
+  "domain": "spatial-computing",
+  "definition": "The structural design and organization of user interface components, interaction patterns, and navigation systems that enable users to interact with metaverse platforms and virtual environments across different devices and modalities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    }
+  ]
+}

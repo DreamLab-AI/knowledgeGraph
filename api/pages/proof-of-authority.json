@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:abe569049b761e062c28926c645338c96df6d28c8cb92b6fba05367a894925d4",
+  "title": "Proof of Authority",
+  "slug": "proof-of-authority",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proof-of-authority",
+  "domain": "blockchain",
+  "definition": "A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:proof-based-consensus",
+      "label": "Proof-Based Consensus"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "proof-based-consensus",
+      "label": "Proof-Based Consensus"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

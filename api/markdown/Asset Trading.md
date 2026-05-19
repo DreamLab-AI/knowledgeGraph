@@ -1,21 +1,290 @@
-iri:: http://narrativegoldmine.com/ontology#AssetTrading
-uri:: urn:visionclaw:concept:blockchain:asset-trading
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:asset-trading
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Asset Trading
-content-hash:: sha256-12-cd1d7fd91482
-legacy-term-id:: NGM-7030
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#AssetTrading
+legacy_uri:: urn:visionclaw:concept:blockchain:asset-trading
 public:: true
+
+# Asset Trading
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e",
+  "@type": "Page",
+  "vc:slug": "asset-trading",
+  "title": "Asset Trading",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:financial-services",
+      "vc:label": "Financial Services"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-making",
+      "vc:label": "Market Making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asset-management",
+      "vc:label": "Asset Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-exchange",
+      "vc:label": "Decentralized Exchange"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "vc:label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-pool",
+      "vc:label": "Liquidity Pool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:price-discovery",
+      "vc:label": "Price Discovery"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cd1d7fd91482"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#AssetTrading"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7030"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Asset Trading"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:asset-trading"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:asset-trading"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:asset-trading",
+  "@type": "OntologyClass",
+  "label": "Asset Trading",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:financial-services",
+      "vc:label": "Financial Services"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-exchange",
+      "vc:label": "Decentralized Exchange"
+    }
+  ],
+  "vc:supports": [
+    {
+      "@id": "urn:visionflow:owl:class:price-discovery",
+      "vc:label": "Price Discovery"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-pool",
+      "vc:label": "Liquidity Pool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:linked:market-making",
+      "vc:label": "Market Making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asset-management",
+      "vc:label": "Asset Management"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:asset-trading:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Financial Services]]",
+      "resolved": "urn:visionflow:linked:financial-services",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Making]]",
+      "resolved": "urn:visionflow:linked:market-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asset Management]]",
+      "resolved": "urn:visionflow:owl:class:asset-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Exchange]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-exchange",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralized Finance (DeFi)]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Liquidity Pool]]",
+      "resolved": "urn:visionflow:owl:class:liquidity-pool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Price Discovery]]",
+      "resolved": "urn:visionflow:owl:class:price-discovery",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.
@@ -23,7 +292,7 @@ public:: true
 - ### Semantic Classification
   - owl-class:: blockchain:AssetTrading
   - owl-role:: Concept
-  - belongs-to-domain:: [[Decentralized Finance]]
+  - belongs-to-domain:: [[Decentralized Finance (DeFi)]]
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]

@@ -1,20 +1,165 @@
-iri:: http://narrativegoldmine.com/infrastructure#EconomicLayer
-uri:: urn:visionclaw:concept:infrastructure:economic-layer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:economic-layer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Economic Layer
-content-hash:: sha256-12-8a35c9af6d00
-status:: stub
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#EconomicLayer
+legacy_uri:: urn:visionclaw:concept:infrastructure:economic-layer
 public:: true
+
+# Economic Layer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4",
+  "@type": "Page",
+  "vc:slug": "economic-layer",
+  "title": "Economic Layer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8a35c9af6d00"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#EconomicLayer"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Economic Layer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:economic-layer"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:economic-layer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:economic-layer",
+  "@type": "OntologyClass",
+  "label": "Economic Layer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems. This layer encompasses concrete economic implementations including token emission schedules (Bitcoin's halving schedule, Ethereum's changing issuance policy), fee market implementations (EIP-1559's base fee adjustment mechanism, priority fee auctions), incentive mechanism implementations (mining reward distribution, staking yield calculations, validator reward formulas), penalty mechanisms (slashing implementations specifying exact penalty amounts and conditions), market mechanism implementations (automated market maker formulas, bonding curves, liquidity pool mechanics), resource pricing mechanisms (gas price mechanisms, storage rent, computation pricing), economic security implementations (cost-of-attack calculations, security budget allocations), and game-theoretic mechanism implementations (auction mechanisms, voting systems, coordination games). Unlike ConceptualLayer which addresses abstract economic principles and theorie",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:economic-layer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4"
+  },
+  "vc:resolutions": [],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems. This layer encompasses concrete economic implementations including token emission schedules (Bitcoin's halving schedule, Ethereum's changing issuance policy), fee market implementations (EIP-1559's base fee adjustment mechanism, priority fee auctions), incentive mechanism implementations (mining reward distribution, staking yield calculations, validator reward formulas), penalty mechanisms (slashing implementations specifying exact penalty amounts and conditions), market mechanism implementations (automated market maker formulas, bonding curves, liquidity pool mechanics), resource pricing mechanisms (gas price mechanisms, storage rent, computation pricing), economic security implementations (cost-of-attack calculations, security budget allocations), and game-theoretic mechanism implementations (auction mechanisms, voting systems, coordination games). Unlike ConceptualLayer which addresses abstract economic principles and theories, EconomicLayer focuses on concrete economic mechanism implementations with specific parameters, formulas, and behaviors. Unlike ProtocolLayer which addresses protocol mechanics broadly, EconomicLayer emphasizes economic aspects: incentive compatibility, market efficiency, resource allocation, and economic security.

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807",
+  "title": "Model Property",
+  "slug": "model-property",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-property",
+  "domain": "artificial-intelligence",
+  "definition": "A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-concept",
+      "label": "AI Concept"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "stable",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "benchmark",
+      "label": "Benchmark"
+    },
+    {
+      "slug": "model-comparison",
+      "label": "Model Comparison"
+    },
+    {
+      "slug": "ai-concept",
+      "label": "AI Concept"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    }
+  ],
+  "backlinks": []
+}

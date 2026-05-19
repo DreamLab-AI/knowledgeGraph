@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:3b3753aa1bdd7b54aa9cc963165ca9f1792a7a9834f85c728229c06a6016e62a",
+  "title": "ETSI_Domain_Immersive_Experiences",
+  "slug": "etsi-domain-immersive-experiences",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-immersive-experiences",
+  "domain": "spatial-computing",
+  "definition": "An [[ETSI]] governance domain encompassing technologies, standards, and practices for creating immersive digital experiences including [[VirtualReality]], [[AugmentedReality]], [[ExtendedReality]], and [[SpatialComputing]]. This domain addresses [[ContentRendering]], [[RealTimeInteraction]], [[SensoryFeedback]], and [[EnvironmentalSimulation]] to deliver seamless, engaging immersive experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-rendering",
+      "label": "ContentRendering"
+    },
+    {
+      "slug": "environmental-simulation",
+      "label": "EnvironmentalSimulation"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "ExtendedReality"
+    },
+    {
+      "slug": "real-time-interaction",
+      "label": "RealTimeInteraction"
+    },
+    {
+      "slug": "sensory-feedback",
+      "label": "SensoryFeedback"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "AugmentedReality"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "SpatialComputing"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "VirtualReality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    }
+  ]
+}

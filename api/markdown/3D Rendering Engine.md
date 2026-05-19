@@ -1,25 +1,252 @@
-iri:: http://narrativegoldmine.com/spatial-computing#3DRenderingEngine
-uri:: urn:visionclaw:concept:spatial-computing:3d-rendering-engine
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:3d-rendering-engine
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: 3D Rendering Engine
-content-hash:: sha256-12-1e2a42d6e979
-legacy-term-id:: NGM-7009
-status:: active
-maturity:: active
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#3DRenderingEngine
+legacy_uri:: urn:visionclaw:concept:spatial-computing:3d-rendering-engine
 public:: true
-bridges-to:: [[Digital Twin]]
+
+# 3D Rendering Engine
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6",
+  "@type": "Page",
+  "vc:slug": "3-d-rendering-engine",
+  "title": "3D Rendering Engine",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:computer-graphics",
+      "vc:label": "Computer Graphics"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-visualisation",
+      "vc:label": "Real-time Visualisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr-applications",
+      "vc:label": "XR Applications"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-experiences",
+      "vc:label": "Immersive Experiences"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Digital Twin]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1e2a42d6e979"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#3DRenderingEngine"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7009"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "3D Rendering Engine"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-rendering-engine"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-rendering-engine"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
+  "@type": "OntologyClass",
+  "label": "3D Rendering Engine",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:computer-graphics",
+      "vc:label": "Computer Graphics"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "active",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation. In the context of metaverse and XR technologies, rendering engines power real-time visualisation of immersive virtual environments, enabling stereoscopic displays, spatial audio integration, and motion-to-photon latency optimisation essential for presence and embodiment in virtual spaces.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:real-time-visualisation",
+      "vc:label": "Real-time Visualisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:xr-applications",
+      "vc:label": "XR Applications"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-experiences",
+      "vc:label": "Immersive Experiences"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-rendering-engine:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Computer Graphics]]",
+      "resolved": "urn:visionflow:linked:computer-graphics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-time Visualisation]]",
+      "resolved": "urn:visionflow:linked:real-time-visualisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[XR Applications]]",
+      "resolved": "urn:visionflow:linked:xr-applications",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Immersive Experiences]]",
+      "resolved": "urn:visionflow:owl:class:immersive-experiences",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation. In the context of metaverse and XR technologies, rendering engines power real-time visualisation of immersive virtual environments, enabling stereoscopic displays, spatial audio integration, and motion-to-photon latency optimisation essential for presence and embodiment in virtual spaces.

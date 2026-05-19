@@ -1,24 +1,476 @@
-iri:: http://narrativegoldmine.com/spatial-computing#EmotionalAnalyticsEngine
-uri:: urn:visionclaw:concept:spatial-computing:emotional-analytics-engine
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:emotional-analytics-engine
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Emotional Analytics Engine
-content-hash:: sha256-12-53fa970f3fdf
-legacy-term-id:: 20235
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#EmotionalAnalyticsEngine
+legacy_uri:: urn:visionclaw:concept:spatial-computing:emotional-analytics-engine
 public:: true
+
+# Emotional Analytics Engine
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1",
+  "@type": "Page",
+  "vc:slug": "emotional-analytics-engine",
+  "title": "Emotional Analytics Engine",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-user-interface",
+      "vc:label": "Adaptive User Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:affective-computing-system",
+      "vc:label": "Affective Computing System"
+    },
+    {
+      "@id": "urn:visionflow:linked:affective-state-predictor",
+      "vc:label": "Affective State Predictor"
+    },
+    {
+      "@id": "urn:visionflow:linked:biometric-sensors",
+      "vc:label": "Biometric Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:facial-expression-analyzer",
+      "vc:label": "Facial Expression Analyzer"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-affective-computing-2023",
+      "vc:label": "IEEE Affective Computing 2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:mental-health-monitoring",
+      "vc:label": "Mental Health Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:physiological-sensor-processor",
+      "vc:label": "Physiological Sensor Processor"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-protection",
+      "vc:label": "Privacy Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-data-stream",
+      "vc:label": "Sensor Data Stream"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-classification-model",
+      "vc:label": "Sentiment Classification Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-processing",
+      "vc:label": "Speech Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience-analytics-platform",
+      "vc:label": "User Experience Analytics Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:voice-emotion-detector",
+      "vc:label": "Voice Emotion Detector"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:emotion-aware-interaction",
+      "vc:label": "Emotion-Aware Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-model",
+      "vc:label": "Machine Learning Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-layer",
+      "vc:label": "NetworkLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time-processing",
+      "vc:label": "Real-Time Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-53fa970f3fdf"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#EmotionalAnalyticsEngine"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20235"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Emotional Analytics Engine"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:emotional-analytics-engine"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:emotional-analytics-engine"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:emotional-analytics-engine",
+  "@type": "OntologyClass",
+  "label": "Emotional Analytics Engine",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:affective-computing-system",
+      "vc:label": "Affective Computing System"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience-analytics-platform",
+      "vc:label": "User Experience Analytics Platform"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:affective-state-predictor",
+      "vc:label": "Affective State Predictor"
+    },
+    {
+      "@id": "urn:visionflow:linked:facial-expression-analyzer",
+      "vc:label": "Facial Expression Analyzer"
+    },
+    {
+      "@id": "urn:visionflow:linked:physiological-sensor-processor",
+      "vc:label": "Physiological Sensor Processor"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-classification-model",
+      "vc:label": "Sentiment Classification Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:voice-emotion-detector",
+      "vc:label": "Voice Emotion Detector"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:privacy-protection",
+      "vc:label": "Privacy Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-data-stream",
+      "vc:label": "Sensor Data Stream"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-model",
+      "vc:label": "Machine Learning Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time-processing",
+      "vc:label": "Real-Time Processing"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:adaptive-user-interface",
+      "vc:label": "Adaptive User Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:mental-health-monitoring",
+      "vc:label": "Mental Health Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:emotion-aware-interaction",
+      "vc:label": "Emotion-Aware Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:biometric-sensors",
+      "vc:label": "Biometric Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-processing",
+      "vc:label": "Speech Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:emotional-analytics-engine:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Adaptive User Interface]]",
+      "resolved": "urn:visionflow:linked:adaptive-user-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Affective Computing System]]",
+      "resolved": "urn:visionflow:linked:affective-computing-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Affective State Predictor]]",
+      "resolved": "urn:visionflow:linked:affective-state-predictor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Biometric Sensors]]",
+      "resolved": "urn:visionflow:linked:biometric-sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Facial Expression Analyzer]]",
+      "resolved": "urn:visionflow:linked:facial-expression-analyzer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE Affective Computing 2023]]",
+      "resolved": "urn:visionflow:linked:ieee-affective-computing-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mental Health Monitoring]]",
+      "resolved": "urn:visionflow:linked:mental-health-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Physiological Sensor Processor]]",
+      "resolved": "urn:visionflow:linked:physiological-sensor-processor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy Protection]]",
+      "resolved": "urn:visionflow:linked:privacy-protection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Data Stream]]",
+      "resolved": "urn:visionflow:linked:sensor-data-stream",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sentiment Classification Model]]",
+      "resolved": "urn:visionflow:linked:sentiment-classification-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Speech Processing]]",
+      "resolved": "urn:visionflow:linked:speech-processing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Experience Analytics Platform]]",
+      "resolved": "urn:visionflow:linked:user-experience-analytics-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Voice Emotion Detector]]",
+      "resolved": "urn:visionflow:linked:voice-emotion-detector",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Emotion-Aware Interaction]]",
+      "resolved": "urn:visionflow:owl:class:emotion-aware-interaction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Model]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NetworkLayer]]",
+      "resolved": "urn:visionflow:owl:class:network-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Real-Time Processing]]",
+      "resolved": "urn:visionflow:owl:class:real-time-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sentiment Analysis]]",
+      "resolved": "urn:visionflow:owl:class:sentiment-analysis",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.

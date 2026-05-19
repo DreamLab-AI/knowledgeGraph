@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:f7894d96e93c7725e6a95045aa27aa41a63a4f6d72475bf1a9ca46778e89e083",
+  "title": "Group vs Individual Fairness",
+  "slug": "group-vs-individual-fairness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:group-vs-individual-fairness",
+  "domain": "artificial-intelligence",
+  "definition": "Group vs Individual Fairness represents two distinct paradigms for conceptualizing and operationalizing algorithmic fairness with fundamentally different units of analysis and philosophical foundations. Group Fairness operates at the aggregate level, requiring statistical parity across protected demographic groups such that prediction distributions, error rates, or outcome rates are similar across groups, formalized as P(\u0176|A=a) being approximately equal for all protected group values a. This paradigm underlies metrics like demographic parity, equalized odds, and predictive parity, and aligns with legal frameworks focused on disparate impact and anti-discrimination compliance. In contrast, Individual Fairness operates at the person level, requiring that similar individuals receive similar predictions regardless of group membership, formalized through a fairness metric d(x\u2081,x\u2082) \u2192 d(f(x\u2081),f(f\u2082)) where the distance between predictions is bounded by the distance between individuals in a task-relevant similarity space. Group fairness is operationally straightforward requiring only protected attribute labels but may permit unfairness to individuals within groups, while individual fairness",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "barocas-et-al-2019",
+      "label": "Barocas et al. (2019)"
+    },
+    {
+      "slug": "dwork-et-al-2012",
+      "label": "Dwork et al. (2012)"
+    },
+    {
+      "slug": "hardt-et-al-2016",
+      "label": "Hardt et al. (2016)"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": []
+}

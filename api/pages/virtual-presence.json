@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:c8b0a9d349becd1d6bb23e28bdeb6ef4827518a9fb34436618ddb07ac481bfd0",
+  "title": "Virtual Presence",
+  "slug": "virtual-presence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-presence",
+  "domain": "spatial-computing",
+  "definition": "The psychological experience of being there within a virtual place or situation, encompassing spatial presence (sense of location), social presence (connection with others), and self-presence (embodiment in virtual form), achieved through telepresence technologies and immersive environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

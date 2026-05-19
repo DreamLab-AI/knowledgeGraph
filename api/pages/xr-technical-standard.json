@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:6add54f20dc0d35f830b89ab1ae1491896a33f3a717499fffde0d559825179c0",
+  "title": "XR Technical Standard",
+  "slug": "xr-technical-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-technical-standard",
+  "domain": "spatial-computing",
+  "definition": "X R Technical Standard is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ieee-p2733-standards",
+      "label": "Ieee P2733 Standards"
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "id": "urn:visionflow:page:7afff42b15a42d5b319e8f5cd819291734bd12732df442b701c823e9eee8de73",
+  "title": "Evaluation benchmarks and leaderboards",
+  "slug": "evaluation-benchmarks-and-leaderboards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+  "domain": "artificial-intelligence",
+  "definition": "Evaluation benchmarks and leaderboards constitute the standardised measurement infrastructure of contemporary artificial intelligence, comprising curated test datasets, scoring protocols, and publicly comparable scoreboards that quantify model capability, safety, robustness, and alignment across narrowly scoped tasks ranging from classical natural language understanding (GLUE 2018 nine sentence-pair tasks, SuperGLUE 2019 harder follow-on, MMLU 2020 fifty-seven-subject multiple-choice exam, MMLU-Pro 2024 ten-option harder variant), mathematical reasoning (GSM8K 2021 grade-school word problems 8.5K examples, MATH 2021 competition problems 12.5K, AIME 2024-2025 American Invitational Mathematics Examination grading, FrontierMath Epoch AI November 2024 expert-level research mathematics with under 2% solve rate for top models at release), program synthesis (HumanEval 2021 Codex 164 hand-written Python problems pass@1/pass@10/pass@100, MBPP Mostly Basic Python Problems 974 entry-level tasks, BigCodeBench 2024 1140 fine-grained tool-use tasks, LiveCodeBench rolling contamination-resistant CodeForces/LeetCode/AtCoder 2023-onward, MultiPL-E translating HumanEval/MBPP into 18 programming lang",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
+      "id": "urn:visionflow:linked:capability-assessment",
+      "label": "Capability Assessment"
+    },
+    {
+      "id": "urn:visionflow:linked:empirical-methodology",
+      "label": "Empirical Methodology"
+    },
+    {
+      "id": "urn:visionflow:linked:measurement",
+      "label": "Measurement"
+    },
+    {
+      "id": "urn:visionflow:linked:standardised-testing",
+      "label": "Standardised Testing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:elo-rating-system",
+        "label": "Elo Rating System"
+      },
+      {
+        "id": "urn:visionflow:linked:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "id": "urn:visionflow:linked:grader",
+        "label": "Grader"
+      },
+      {
+        "id": "urn:visionflow:linked:held-out-set",
+        "label": "Held-out Set"
+      },
+      {
+        "id": "urn:visionflow:linked:leaderboard",
+        "label": "Leaderboard"
+      },
+      {
+        "id": "urn:visionflow:linked:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "id": "urn:visionflow:linked:scoring-protocol",
+        "label": "Scoring Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:submission-pipeline",
+        "label": "Submission Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:test-dataset",
+        "label": "Test Dataset"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:curated-dataset",
+        "label": "Curated Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-model",
+        "label": "Reference Model"
+      },
+      {
+        "id": "urn:visionflow:linked:reproducible-protocol",
+        "label": "Reproducible Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:statistical-significance-testing",
+        "label": "Statistical Significance Testing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "id": "urn:visionflow:linked:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "id": "urn:visionflow:linked:pre-deployment-assessment",
+        "label": "Pre-Deployment Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:procurement-decisions",
+        "label": "Procurement Decisions"
+      },
+      {
+        "id": "urn:visionflow:linked:progress-measurement",
+        "label": "Progress Measurement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bradley-terry-aggregation",
+        "label": "Bradley-Terry Aggregation"
+      },
+      {
+        "id": "urn:visionflow:linked:contamination-detection",
+        "label": "Contamination Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:elo-rating-update",
+        "label": "Elo Rating Update"
+      },
+      {
+        "id": "urn:visionflow:linked:exact-match-scoring",
+        "label": "Exact Match Scoring"
+      },
+      {
+        "id": "urn:visionflow:linked:pass-at-k-metric",
+        "label": "Pass at k Metric"
+      },
+      {
+        "id": "urn:visionflow:linked:win-rate-calculation",
+        "label": "Win Rate Calculation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "a-b-testing",
+      "label": "A/B Testing"
+    },
+    {
+      "slug": "academic-peer-review",
+      "label": "Academic Peer Review"
+    },
+    {
+      "slug": "adversarial-generation",
+      "label": "Adversarial Generation"
+    },
+    {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
+      "slug": "ai-procurement",
+      "label": "AI Procurement"
+    },
+    {
+      "slug": "aisafety-domain",
+      "label": "AISafetyDomain"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "austin-et-al-2021-mbpp",
+      "label": "Austin et al. 2021 MBPP"
+    },
+    {
+      "slug": "bradley-terry-aggregation",
+      "label": "Bradley-Terry Aggregation"
+    },
+    {
+      "slug": "capability-assessment",
+      "label": "Capability Assessment"
+    },
+    {
+      "slug": "capability-elicitation",
+      "label": "Capability Elicitation"
+    },
+    {
+      "slug": "capability-forecasting",
+      "label": "Capability Forecasting"
+    },
+    {
+      "slug": "capital-allocation",
+      "label": "Capital Allocation"
+    },
+    {
+      "slug": "chen-et-al-2021-human-eval-codex",
+      "label": "Chen et al. 2021 HumanEval Codex"
+    },
+    {
+      "slug": "chiang-et-al-2024-chatbot-arena",
+      "label": "Chiang et al. 2024 Chatbot Arena"
+    },
+    {
+      "slug": "chollet-2019-arc-agi",
+      "label": "Chollet 2019 ARC-AGI"
+    },
+    {
+      "slug": "cobbe-et-al-2021-gsm8-k",
+      "label": "Cobbe et al. 2021 GSM8K"
+    },
+    {
+      "slug": "construct-validity",
+      "label": "Construct Validity"
+    },
+    {
+      "slug": "contamination-detection",
+      "label": "Contamination Detection"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "crowdsourcing",
+      "label": "Crowdsourcing"
+    },
+    {
+      "slug": "curated-dataset",
+      "label": "Curated Dataset"
+    },
+    {
+      "slug": "datasheets-for-datasets",
+      "label": "Datasheets for Datasets"
+    },
+    {
+      "slug": "eleuther-ai-lm-evaluation-harness",
+      "label": "EleutherAI lm-evaluation-harness"
+    },
+    {
+      "slug": "elo-rating-system",
+      "label": "Elo Rating System"
+    },
+    {
+      "slug": "elo-rating-update",
+      "label": "Elo Rating Update"
+    },
+    {
+      "slug": "empirical-methodology",
+      "label": "Empirical Methodology"
+    },
+    {
+      "slug": "evaluation-harness",
+      "label": "Evaluation Harness"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "EvaluationLayer"
+    },
+    {
+      "slug": "exact-match-scoring",
+      "label": "Exact Match Scoring"
+    },
+    {
+      "slug": "expert-annotation",
+      "label": "Expert Annotation"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "frontier-safety-framework",
+      "label": "Frontier Safety Framework"
+    },
+    {
+      "slug": "glazer-et-al-2024-frontier-math",
+      "label": "Glazer et al. 2024 FrontierMath"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "grader",
+      "label": "Grader"
+    },
+    {
+      "slug": "ground-truth-labels",
+      "label": "Ground Truth Labels"
+    },
+    {
+      "slug": "held-out-set",
+      "label": "Held-out Set"
+    },
+    {
+      "slug": "hendrycks-et-al-2020-mmlu",
+      "label": "Hendrycks et al. 2020 MMLU"
+    },
+    {
+      "slug": "hendrycks-et-al-2021-math",
+      "label": "Hendrycks et al. 2021 MATH"
+    },
+    {
+      "slug": "hsieh-et-al-2024-ruler",
+      "label": "Hsieh et al. 2024 RULER"
+    },
+    {
+      "slug": "human-annotation",
+      "label": "Human Annotation"
+    },
+    {
+      "slug": "iso-iec-23053",
+      "label": "ISO IEC 23053"
+    },
+    {
+      "slug": "jain-et-al-2024-live-code-bench",
+      "label": "Jain et al. 2024 LiveCodeBench"
+    },
+    {
+      "slug": "jimenez-et-al-2023-swe-bench",
+      "label": "Jimenez et al. 2023 SWE-bench"
+    },
+    {
+      "slug": "kinniment-et-al-2024-metr-autonomy",
+      "label": "Kinniment et al. 2024 METR Autonomy"
+    },
+    {
+      "slug": "leaderboard",
+      "label": "Leaderboard"
+    },
+    {
+      "slug": "liang-et-al-2022-helm",
+      "label": "Liang et al. 2022 HELM"
+    },
+    {
+      "slug": "lin-et-al-2021-truthful-qa",
+      "label": "Lin et al. 2021 TruthfulQA"
+    },
+    {
+      "slug": "lu-et-al-2024-math-vista",
+      "label": "Lu et al. 2024 MathVista"
+    },
+    {
+      "slug": "mazeika-et-al-2024-harm-bench",
+      "label": "Mazeika et al. 2024 HarmBench"
+    },
+    {
+      "slug": "measurement",
+      "label": "Measurement"
+    },
+    {
+      "slug": "measurement-and-standards-domain",
+      "label": "MeasurementAndStandardsDomain"
+    },
+    {
+      "slug": "meinke-et-al-2024-apollo-scheming",
+      "label": "Meinke et al. 2024 Apollo Scheming"
+    },
+    {
+      "slug": "mialon-et-al-2023-gaia",
+      "label": "Mialon et al. 2023 GAIA"
+    },
+    {
+      "slug": "mlcommons",
+      "label": "MLCommons"
+    },
+    {
+      "slug": "mlcommons-ailuminate-v1-0",
+      "label": "MLCommons AILuminate v1.0"
+    },
+    {
+      "slug": "model-cards",
+      "label": "Model Cards"
+    },
+    {
+      "slug": "model-comparison",
+      "label": "Model Comparison"
+    },
+    {
+      "slug": "multimodal-models",
+      "label": "Multimodal Models"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "pass-at-k-metric",
+      "label": "Pass at k Metric"
+    },
+    {
+      "slug": "phan-et-al-2025-humanity-s-last-exam",
+      "label": "Phan et al. 2025 Humanity's Last Exam"
+    },
+    {
+      "slug": "pre-deployment-assessment",
+      "label": "Pre-Deployment Assessment"
+    },
+    {
+      "slug": "preparedness-framework",
+      "label": "Preparedness Framework"
+    },
+    {
+      "slug": "procurement-decisions",
+      "label": "Procurement Decisions"
+    },
+    {
+      "slug": "progress-measurement",
+      "label": "Progress Measurement"
+    },
+    {
+      "slug": "prompt-template",
+      "label": "Prompt Template"
+    },
+    {
+      "slug": "real-world-deployment-evaluation",
+      "label": "Real-World Deployment Evaluation"
+    },
+    {
+      "slug": "reference-model",
+      "label": "Reference Model"
+    },
+    {
+      "slug": "rein-et-al-2023-gpqa",
+      "label": "Rein et al. 2023 GPQA"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "reproducible-protocol",
+      "label": "Reproducible Protocol"
+    },
+    {
+      "slug": "research-prioritisation",
+      "label": "Research Prioritisation"
+    },
+    {
+      "slug": "responsible-scaling-policy",
+      "label": "Responsible Scaling Policy"
+    },
+    {
+      "slug": "scoring-protocol",
+      "label": "Scoring Protocol"
+    },
+    {
+      "slug": "srivastava-et-al-2022-big-bench",
+      "label": "Srivastava et al. 2022 BIG-bench"
+    },
+    {
+      "slug": "standardised-testing",
+      "label": "Standardised Testing"
+    },
+    {
+      "slug": "stanford-crfm-helm",
+      "label": "Stanford CRFM HELM"
+    },
+    {
+      "slug": "statistical-inference",
+      "label": "Statistical Inference"
+    },
+    {
+      "slug": "statistical-significance-testing",
+      "label": "Statistical Significance Testing"
+    },
+    {
+      "slug": "submission-pipeline",
+      "label": "Submission Pipeline"
+    },
+    {
+      "slug": "sun-et-al-2024-trust-llm",
+      "label": "Sun et al. 2024 TrustLLM"
+    },
+    {
+      "slug": "test-dataset",
+      "label": "Test Dataset"
+    },
+    {
+      "slug": "test-train-separation",
+      "label": "Test-Train Separation"
+    },
+    {
+      "slug": "third-party-audit",
+      "label": "Third-Party Audit"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "uk-ai-safety-institute-inspect-framework",
+      "label": "UK AI Safety Institute Inspect Framework"
+    },
+    {
+      "slug": "uk-ai-security-institute-2025-year-in-review",
+      "label": "UK AI Security Institute 2025 Year in Review"
+    },
+    {
+      "slug": "vision-language-models",
+      "label": "Vision-Language Models"
+    },
+    {
+      "slug": "wang-et-al-2018-glue",
+      "label": "Wang et al. 2018 GLUE"
+    },
+    {
+      "slug": "wang-et-al-2019-super-glue",
+      "label": "Wang et al. 2019 SuperGLUE"
+    },
+    {
+      "slug": "wang-et-al-2024-mmlu-pro",
+      "label": "Wang et al. 2024 MMLU-Pro"
+    },
+    {
+      "slug": "wei-et-al-2025-browse-comp",
+      "label": "Wei et al. 2025 BrowseComp"
+    },
+    {
+      "slug": "win-rate-calculation",
+      "label": "Win Rate Calculation"
+    },
+    {
+      "slug": "xie-et-al-2024-osworld",
+      "label": "Xie et al. 2024 OSWorld"
+    },
+    {
+      "slug": "yue-et-al-2024-mmmu",
+      "label": "Yue et al. 2024 MMMU"
+    },
+    {
+      "slug": "zeng-et-al-2024-air-bench",
+      "label": "Zeng et al. 2024 AIR-Bench"
+    },
+    {
+      "slug": "zheng-et-al-2023-mt-bench-chatbot-arena",
+      "label": "Zheng et al. 2023 MT-Bench Chatbot Arena"
+    },
+    {
+      "slug": "zhou-et-al-2024-web-arena",
+      "label": "Zhou et al. 2024 WebArena"
+    },
+    {
+      "slug": "zhuo-et-al-2024-big-code-bench",
+      "label": "Zhuo et al. 2024 BigCodeBench"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red-Teaming"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

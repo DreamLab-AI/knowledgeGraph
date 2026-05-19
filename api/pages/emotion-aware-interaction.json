@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:27f23d8f8de169a2e790acdf14f1c69e825b4bd89f14d5ba58b667208585f280",
+  "title": "Emotion Aware Interaction",
+  "slug": "emotion-aware-interaction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:emotion-aware-interaction",
+  "domain": "spatial-computing",
+  "definition": "Affective computing technologies integrated into metaverse systems that identify users emotional cues through facial expressions, body language, and voice tones, enabling context-aware, meaningful interactions that enhance genuine human-like experiences in virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:emotionally-intelligent-metaverse",
+        "label": "Emotionally Intelligent Metaverse"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "emotionally-intelligent-metaverse",
+      "label": "Emotionally Intelligent Metaverse"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    }
+  ]
+}

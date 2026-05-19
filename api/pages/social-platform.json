@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:806571c040f358693c3e6eba4fd7edbaed22502a5cb863822bfa447f63a22ea7",
+  "title": "Social Platform",
+  "slug": "social-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-platform",
+  "domain": "infrastructure",
+  "definition": "SocialPlatform is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

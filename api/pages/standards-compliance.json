@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:d1e389140e49ff0ddfa9a6e4778965bb7a931b807a6609f6467dee39fac413a2",
+  "title": "Standards Compliance",
+  "slug": "standards-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standards-compliance",
+  "domain": "artificial-intelligence",
+  "definition": "The process of ensuring that systems, processes, products, or services meet the requirements of established technical standards, industry specifications, regulatory frameworks, and governance policies applicable to metaverse and virtual world technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-twin-framework",
+      "label": "Digital Twin Framework"
+    }
+  ]
+}

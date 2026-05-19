@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff",
+  "title": "Adversarial Attacks",
+  "slug": "adversarial-attacks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adversarial-attacks",
+  "domain": "artificial-intelligence",
+  "definition": "Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significant to AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-security-threats",
+      "label": "AI Security Threats"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:crafted-perturbations",
+        "label": "Crafted Perturbations"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-of-target-model",
+        "label": "Knowledge of Target Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:model-evasion",
+        "label": "Model Evasion"
+      },
+      {
+        "id": "urn:visionflow:linked:system-manipulation",
+        "label": "System Manipulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-security-threats",
+      "label": "AI Security Threats"
+    },
+    {
+      "slug": "crafted-perturbations",
+      "label": "Crafted Perturbations"
+    },
+    {
+      "slug": "knowledge-of-target-model",
+      "label": "Knowledge of Target Model"
+    },
+    {
+      "slug": "model-evasion",
+      "label": "Model Evasion"
+    },
+    {
+      "slug": "nist-ai-100-2",
+      "label": "NIST AI 100-2"
+    },
+    {
+      "slug": "nist-taxonomy",
+      "label": "NIST Taxonomy"
+    },
+    {
+      "slug": "system-manipulation",
+      "label": "System Manipulation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-extraction",
+      "label": "Model Extraction"
+    }
+  ]
+}

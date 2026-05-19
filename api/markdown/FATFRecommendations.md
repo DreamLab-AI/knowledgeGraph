@@ -1,21 +1,612 @@
-iri:: http://narrativegoldmine.com/blockchain#Fatfrecommendations
-uri:: urn:visionclaw:concept:blockchain:fatfrecommendations
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:fatfrecommendations
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: FATFRecommendations
-content-hash:: sha256-12-c820b2eb01a1
-legacy-term-id:: BC-0481
-status:: mature
-maturity:: production-ready
-quality-score:: 0.50
-authority-score:: 0.91
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Fatfrecommendations
+legacy_uri:: urn:visionclaw:concept:blockchain:fatfrecommendations
 public:: true
+
+# FATFRecommendations
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a",
+  "@type": "Page",
+  "vc:slug": "fatfrecommendations",
+  "title": "FATFRecommendations",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:anti-money-laundering",
+      "vc:label": "Anti-Money Laundering"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0456-virtual-asset-service-providers",
+      "vc:label": "BC-0456-virtual-asset-service-providers"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0457-aml-kyc-compliance",
+      "vc:label": "BC-0457-aml-kyc-compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0482-eu-mica-regulation",
+      "vc:label": "BC-0482-eu-mica-regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0483-us-regulatory-framework",
+      "vc:label": "BC-0483-us-regulatory-framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:binance",
+      "vc:label": "Binance"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-analytics",
+      "vc:label": "Blockchain Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:cbdc",
+      "vc:label": "CBDC"
+    },
+    {
+      "@id": "urn:visionflow:linked:coinbase",
+      "vc:label": "Coinbase"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-domain",
+      "vc:label": "ComplianceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:counter-terrorist-financing",
+      "vc:label": "Counter-Terrorist Financing"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-chain-bridges",
+      "vc:label": "Cross-Chain Bridges"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptocurrency-exchange",
+      "vc:label": "Cryptocurrency Exchange"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptocurrency-wallets",
+      "vc:label": "Cryptocurrency Wallets"
+    },
+    {
+      "@id": "urn:visionflow:linked:dash",
+      "vc:label": "Dash"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-fi",
+      "vc:label": "DeFi"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-finance",
+      "vc:label": "Decentralised Finance"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-transfer-of-funds-regulation-june-2023",
+      "vc:label": "EU Transfer of Funds Regulation June 2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf",
+      "vc:label": "FATF"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf-40-recommendations-february-2012",
+      "vc:label": "FATF 40 Recommendations February 2012"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf-interpretive-note-to-recommendation-15-june-2019",
+      "vc:label": "FATF Interpretive Note to Recommendation 15 June 2019"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf-revised-guidance-on-risk-based-approach-to-virtual-assets-march-2021",
+      "vc:label": "FATF Revised Guidance on Risk-Based Approach to Virtual Assets March 2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:fatf-updated-guidance-on-virtual-assets-october-2021",
+      "vc:label": "FATF Updated Guidance on Virtual Assets October 2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:fin-cen-proposed-rulemaking-december-2020",
+      "vc:label": "FinCEN Proposed Rulemaking December 2020"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-intelligence-unit",
+      "vc:label": "Financial Intelligence Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:g7-summit-paris-july-1989",
+      "vc:label": "G7 Summit Paris July 1989"
+    },
+    {
+      "@id": "urn:visionflow:linked:ico",
+      "vc:label": "ICO"
+    },
+    {
+      "@id": "urn:visionflow:linked:know-your-customer",
+      "vc:label": "Know Your Customer"
+    },
+    {
+      "@id": "urn:visionflow:linked:kraken",
+      "vc:label": "Kraken"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixing-services",
+      "vc:label": "Mixing Services"
+    },
+    {
+      "@id": "urn:visionflow:linked:monero",
+      "vc:label": "Monero"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-fungible-token",
+      "vc:label": "Non-Fungible Token"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-fungible-tokens",
+      "vc:label": "Non-Fungible Tokens"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-domain",
+      "vc:label": "RegulatoryDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:sanctions-compliance",
+      "vc:label": "Sanctions Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-hosted-wallets",
+      "vc:label": "Self-Hosted Wallets"
+    },
+    {
+      "@id": "urn:visionflow:linked:swift",
+      "vc:label": "SWIFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:united-nations-security-council",
+      "vc:label": "United Nations Security Council"
+    },
+    {
+      "@id": "urn:visionflow:linked:us-bank-secrecy-act-31-usc-5311",
+      "vc:label": "US Bank Secrecy Act 31 USC 5311"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-assets",
+      "vc:label": "Virtual Assets"
+    },
+    {
+      "@id": "urn:visionflow:linked:zcash",
+      "vc:label": "Zcash"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
+      "vc:label": "Zero-Knowledge Proofs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptocurrency",
+      "vc:label": "Cryptocurrency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dao",
+      "vc:label": "DAO"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:travel-rule",
+      "vc:label": "Travel Rule"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-asset",
+      "vc:label": "Virtual Asset"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.91"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c820b2eb01a1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Fatfrecommendations"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0481"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "FATFRecommendations"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:fatfrecommendations"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:fatfrecommendations"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:fatfrecommendations",
+  "@type": "OntologyClass",
+  "label": "FATFRecommendations",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
+      "vc:label": "AML KYC Compliance"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "mature",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)—an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs) covering over 200 jurisdictions globally—for combating money laundering, terrorist financing, and financing of proliferation of weapons of mass destruction, encompassing 40 Recommendations (consolidated from original 40 plus 9 Special Recommendations on terrorist financing through comprehensive 2012 revision) that apply to both money laundering and counter-terrorist financing with requirements for customer due diligence per Recommendation 10 (identifying and verifying customer identity using reliable independent source documents, identifying beneficial owners controlling 25% or greater ownership or exercising control, understanding nature and purpose of business relationship), record-keeping per Recommendation 11 (retaining transaction records and customer identification information for minimum 5 years following transaction completion or relationship termination), suspicious transaction r",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.91",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:fatfrecommendations:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Anti-Money Laundering]]",
+      "resolved": "urn:visionflow:linked:anti-money-laundering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0456-virtual-asset-service-providers]]",
+      "resolved": "urn:visionflow:linked:bc-0456-virtual-asset-service-providers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0457-aml-kyc-compliance]]",
+      "resolved": "urn:visionflow:linked:bc-0457-aml-kyc-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0482-eu-mica-regulation]]",
+      "resolved": "urn:visionflow:linked:bc-0482-eu-mica-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0483-us-regulatory-framework]]",
+      "resolved": "urn:visionflow:linked:bc-0483-us-regulatory-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binance]]",
+      "resolved": "urn:visionflow:linked:binance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Analytics]]",
+      "resolved": "urn:visionflow:linked:blockchain-analytics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CBDC]]",
+      "resolved": "urn:visionflow:linked:cbdc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Coinbase]]",
+      "resolved": "urn:visionflow:linked:coinbase",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ComplianceDomain]]",
+      "resolved": "urn:visionflow:linked:compliance-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Counter-Terrorist Financing]]",
+      "resolved": "urn:visionflow:linked:counter-terrorist-financing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Chain Bridges]]",
+      "resolved": "urn:visionflow:linked:cross-chain-bridges",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptocurrency Exchange]]",
+      "resolved": "urn:visionflow:linked:cryptocurrency-exchange",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptocurrency Wallets]]",
+      "resolved": "urn:visionflow:linked:cryptocurrency-wallets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dash]]",
+      "resolved": "urn:visionflow:linked:dash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DeFi]]",
+      "resolved": "urn:visionflow:linked:de-fi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Finance]]",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EU Transfer of Funds Regulation June 2023]]",
+      "resolved": "urn:visionflow:linked:eu-transfer-of-funds-regulation-june-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF]]",
+      "resolved": "urn:visionflow:linked:fatf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF 40 Recommendations February 2012]]",
+      "resolved": "urn:visionflow:linked:fatf-40-recommendations-february-2012",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF Interpretive Note to Recommendation 15 June 2019]]",
+      "resolved": "urn:visionflow:linked:fatf-interpretive-note-to-recommendation-15-june-2019",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF Revised Guidance on Risk-Based Approach to Virtual Assets March 2021]]",
+      "resolved": "urn:visionflow:linked:fatf-revised-guidance-on-risk-based-approach-to-virtual-assets-march-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FATF Updated Guidance on Virtual Assets October 2021]]",
+      "resolved": "urn:visionflow:linked:fatf-updated-guidance-on-virtual-assets-october-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FinCEN Proposed Rulemaking December 2020]]",
+      "resolved": "urn:visionflow:linked:fin-cen-proposed-rulemaking-december-2020",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Intelligence Unit]]",
+      "resolved": "urn:visionflow:linked:financial-intelligence-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[G7 Summit Paris July 1989]]",
+      "resolved": "urn:visionflow:linked:g7-summit-paris-july-1989",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICO]]",
+      "resolved": "urn:visionflow:linked:ico",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Know Your Customer]]",
+      "resolved": "urn:visionflow:linked:know-your-customer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kraken]]",
+      "resolved": "urn:visionflow:linked:kraken",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mixing Services]]",
+      "resolved": "urn:visionflow:linked:mixing-services",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monero]]",
+      "resolved": "urn:visionflow:linked:monero",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Non-Fungible Token]]",
+      "resolved": "urn:visionflow:linked:non-fungible-token",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Non-Fungible Tokens]]",
+      "resolved": "urn:visionflow:linked:non-fungible-tokens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RegulatoryDomain]]",
+      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sanctions Compliance]]",
+      "resolved": "urn:visionflow:linked:sanctions-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Self-Hosted Wallets]]",
+      "resolved": "urn:visionflow:linked:self-hosted-wallets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SWIFT]]",
+      "resolved": "urn:visionflow:linked:swift",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[United Nations Security Council]]",
+      "resolved": "urn:visionflow:linked:united-nations-security-council",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[US Bank Secrecy Act 31 USC 5311]]",
+      "resolved": "urn:visionflow:linked:us-bank-secrecy-act-31-usc-5311",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Assets]]",
+      "resolved": "urn:visionflow:linked:virtual-assets",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zcash]]",
+      "resolved": "urn:visionflow:linked:zcash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zero-Knowledge Proofs]]",
+      "resolved": "urn:visionflow:linked:zero-knowledge-proofs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptocurrency]]",
+      "resolved": "urn:visionflow:owl:class:cryptocurrency",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DAO]]",
+      "resolved": "urn:visionflow:owl:class:dao",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Travel Rule]]",
+      "resolved": "urn:visionflow:owl:class:travel-rule",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Asset]]",
+      "resolved": "urn:visionflow:owl:class:virtual-asset",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The comprehensive international standards established by the Financial Action Task Force (FATF)—an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs) covering over 200 jurisdictions globally—for combating money laundering, terrorist financing, and financing of proliferation of weapons of mass destruction, encompassing 40 Recommendations (consolidated from original 40 plus 9 Special Recommendations on terrorist financing through comprehensive 2012 revision) that apply to both money laundering and counter-terrorist financing with requirements for customer due diligence per Recommendation 10 (identifying and verifying customer identity using reliable independent source documents, identifying beneficial owners controlling 25% or greater ownership or exercising control, understanding nature and purpose of business relationship), record-keeping per Recommendation 11 (retaining transaction records and customer identification information for minimum 5 years following transaction completion or relationship termination), suspicious transaction reporting per Recommendation 20 (filing reports with Financial Intelligence Units when suspecting proceeds of criminal activity or terrorist financing connections with tipping-off prohibitions preventing customer disclosure), regulation and supervision of financial institutions per Recommendations 26-28 (licensing requirements, supervisory powers including inspections and information compulsion, enforcement authorities), and critically for blockchain and cryptocurrency ecosystems the October 2018 amendments that explicitly defined "virtual assets" as digital representations of value capable of being digitally traded or transferred and usable for payment or investment purposes excluding digital representations of fiat currencies, whilst defining "Virtual Asset Service Providers" (VASPs) as entities conducting exchange between virtual assets and fiat currencies, exchange between forms of virtual assets, transfer of virtual assets (including custody wallet services facilitating transfers), safekeeping or administration of virtual assets or instruments enabling control, and participation in and provision of financial services related to issuers' offers or sales of virtual assets, thereby subjecting cryptocurrency exchanges (Coinbase processing $462 billion trading volume 2024, Binance $2.3 trillion volume, Kraken $180 billion volume), custody services (Fidelity Digital Assets securing $15 billion client cryptocurrency holdings, Gemini custody $30 billion assets), and certain decentralized finance protocols to FATF compliance obligations including the June 2019 Interpretive Note to Recommendation 15 introducing the travel rule requiring VASPs to obtain and hold required originator information (name, account number or unique transaction reference, physical address or national identity number or customer identification number or date and place of birth) and beneficiary information (name and account number) for transfers exceeding 1,000 USD/EUR thresholds (though some jurisdictions including European Union through June 2023 Transfer of Funds Regulation implement zero thresholds requiring information collection for all transactions), immediately and securely submit this information to beneficiary VASPs utilizing standardized messaging protocols (Travel Rule Information Sharing Architecture TRISA supporting 340 VASPs processing 2.4 million compliant transfers 2024, InterVASP Messaging Standard IVMS101 adopted by 67% implementing jurisdictions, OpenVASP protocol with 180 participants), and make information available to appropriate authorities upon request, with FATF standards enforced through mutual evaluation peer review processes conducted approximately every 10 years assessing technical compliance with Recommendations' letter and effectiveness of implementation in practice, jurisdictions failing to make sufficient progress facing public identification in grey lists (jurisdictions under increased monitoring requiring action plans and enhanced reporting—as of December 2024 including Bulgaria, Burkina Faso, Cameroon, Croatia, Democratic Republic of Congo, Haiti, Jamaica, Jordan, Mali, Morocco, Mozambique, Nigeria, Philippines, Senegal, South Africa, South Sudan, Syria, Tanzania, Turkey, Uganda, United Arab Emirates, Vietnam, Yemen totaling 27 jurisdictions) or black lists (high-risk jurisdictions subject to calls for action triggering countermeasures—as of December 2024 including Democratic People's Republic of Korea, Iran, Myanmar) with listing consequences including financial isolation as institutions worldwide reduce or terminate correspondent banking relationships avoiding perceived regulatory risks, whilst cryptocurrency industry compliance with FATF standards generates substantial costs evidenced by Binance's November 2023 $4.3 billion settlement with US Department of Justice, Treasury, and CFTC for violations including operating unlicensed money transmitting business and failing to implement adequate AML programmes, Coinbase's May 2022 $100 million civil money penalty from New York Department of Financial Services for AML programme deficiencies during 2018-2021, BitMEX's September 2020 $100 million settlement for operating unregistered trading platform and violating Bank Secrecy Act, and BTC-e's July 2017 $110 million fine for facilitating over $4 billion illicit transactions without adequate AML controls, whilst technical implementation challenges persist as blockchain transactions execute peer-to-peer without inherent messaging layers unlike traditional wire transfers utilizing SWIFT infrastructure requiring VASPs to deploy parallel communication systems (blockchain analytics platforms from Chainalysis tracking $28 billion illicit cryptocurrency volume 2024 representing 0.34% of total $8.2 trillion transaction volume, Elliptic monitoring 98% of global cryptocurrency value identifying $12.4 billion sanctions violations and $3.7 billion ransomware payments, TRM Labs analyzing 125 blockchains covering $6.9 trillion cumulative value), and treatment of decentralized finance protocols through October 2021 updated guidance focusing on entities maintaining "control or sufficient influence" over DeFi arrangements potentially capturing developers, governance token holders with voting power exceeding 25%, or interface operators facilitating 47% of DeFi protocol interactions whilst self-hosted wallet regulations generate controversy through European Union Transfer of Funds Regulation requiring VASPs to collect and verify customer information for all transfers to self-hosted wallets regardless of amount creating zero-threshold complete audit trails and United States Financial Crimes Enforcement Network December 2020 proposed rules requiring reporting for transactions exceeding $10,000 with self-hosted wallets ultimately withdrawn following industry opposition documenting 4,800 comment letters during compressed 15-day comment period, thereby establishing FATF Recommendations as the preeminent global regulatory framework compelling cryptocurrency industry transformation from pseudonymous peer-to-peer value transfer toward identity-verified compliant financial services infrastructure whilst generating ongoing tensions between surveillance obligations and technological capabilities of decentralized systems, privacy preservation, financial inclusion objectives, and innovation dynamics particularly affecting smaller VASPs (67% of exchanges processing <$10 million monthly volume exited markets 2020-2024 due to compliance costs averaging $4.7 million annually) and emerging market adoption where cryptocurrency offers financial access alternatives but regulatory capacity remains limited.

@@ -1,0 +1,211 @@
+{
+  "id": "urn:visionflow:page:ccf50b678310feddb32aafc818f3823009d7c29415970854bfaad5db50acce0b",
+  "title": "Virtual Production (VP)",
+  "slug": "virtual-production-vp",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-production-vp",
+  "domain": "spatial-computing",
+  "definition": "Production technique blending real and virtual scenes using XR and real-time rendering for film, broadcast, and immersive content creation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-tracking",
+        "label": "Camera Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:compositing-pipeline",
+        "label": "Compositing Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:led-volume",
+        "label": "LED Volume"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-camera",
+        "label": "Virtual Camera"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-tracking-system",
+        "label": "Camera Tracking System"
+      },
+      {
+        "id": "urn:visionflow:linked:led-display-system",
+        "label": "LED Display System"
+      },
+      {
+        "id": "urn:visionflow:linked:render-engine",
+        "label": "Render Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:in-camera-vfx",
+        "label": "In-Camera VFX"
+      },
+      {
+        "id": "urn:visionflow:linked:interactive-filmmaking",
+        "label": "Interactive Filmmaking"
+      },
+      {
+        "id": "urn:visionflow:linked:live-compositing",
+        "label": "Live Compositing"
+      },
+      {
+        "id": "urn:visionflow:linked:previsualization",
+        "label": "Previsualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-scouting",
+        "label": "Virtual Scouting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "broadcast-production",
+      "label": "Broadcast Production"
+    },
+    {
+      "slug": "camera-tracking",
+      "label": "Camera Tracking"
+    },
+    {
+      "slug": "camera-tracking-system",
+      "label": "Camera Tracking System"
+    },
+    {
+      "slug": "color-grading",
+      "label": "Color Grading"
+    },
+    {
+      "slug": "compositing-pipeline",
+      "label": "Compositing Pipeline"
+    },
+    {
+      "slug": "film-production-workflow",
+      "label": "Film Production Workflow"
+    },
+    {
+      "slug": "in-camera-vfx",
+      "label": "In-Camera VFX"
+    },
+    {
+      "slug": "interactive-filmmaking",
+      "label": "Interactive Filmmaking"
+    },
+    {
+      "slug": "led-display-system",
+      "label": "LED Display System"
+    },
+    {
+      "slug": "led-volume",
+      "label": "LED Volume"
+    },
+    {
+      "slug": "live-compositing",
+      "label": "Live Compositing"
+    },
+    {
+      "slug": "previsualization",
+      "label": "Previsualization"
+    },
+    {
+      "slug": "real-time-graphics",
+      "label": "Real-Time Graphics"
+    },
+    {
+      "slug": "render-engine",
+      "label": "Render Engine"
+    },
+    {
+      "slug": "siggraph-production-wg",
+      "label": "SIGGRAPH Production WG"
+    },
+    {
+      "slug": "smpte-st-2119",
+      "label": "SMPTE ST 2119"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "photorealistic-rendering",
+      "label": "Photorealistic Rendering"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "virtual-camera",
+      "label": "Virtual Camera"
+    },
+    {
+      "slug": "virtual-scouting",
+      "label": "Virtual Scouting"
+    },
+    {
+      "slug": "virtual-set-design",
+      "label": "Virtual Set Design"
+    },
+    {
+      "slug": "xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

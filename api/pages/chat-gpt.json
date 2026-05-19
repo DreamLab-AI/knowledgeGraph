@@ -1,0 +1,708 @@
+{
+  "id": "urn:visionflow:page:c0feef8964b42541a3938b8974f0896d940f925184627c24dede3e3be207dcb0",
+  "title": "ChatGPT",
+  "slug": "chat-gpt",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:chat-gpt",
+  "domain": "artificial-intelligence",
+  "definition": "ChatGPT is a conversational AI assistant developed by [[OpenAI]] and publicly launched on 30 November 2022, representing the first large-scale deployment of instruction-tuned [[Large Language Models]] accessible to general consumers via a web interface, achieving 100 million monthly active users within 60 days \u2014 the fastest product adoption in technology history at that time \u2014 and reaching 200 million weekly active users by August 2024 and over 900 million weekly active users by early 2026, built on a lineage of successively more capable [[Generative Pre-trained Transformers]] (GPT-3.5-turbo at launch, [[GPT 4]] in March 2023, GPT-4 Turbo in November 2023, GPT-4o in May 2024, o1 reasoning model in September 2024, GPT-5 in August 2025), trained using [[Reinforcement Learning from Human Feedback]] ([[RLHF]]) via a three-phase pipeline: (1) supervised fine-tuning (SFT) on human-written demonstration data, (2) reward model (RM) training from comparative human preference rankings, and (3) proximal policy optimisation (PPO) maximising the reward signal subject to a KL divergence penalty preventing excessive drift from the SFT policy \u2014 transforming a base completion model into an agent ca",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-assistants",
+      "label": "AI Assistants"
+    },
+    {
+      "id": "urn:visionflow:linked:instruction-following",
+      "label": "Instruction Following"
+    },
+    {
+      "id": "urn:visionflow:linked:natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:advanced-voice-mode",
+        "label": "Advanced Voice Mode"
+      },
+      {
+        "id": "urn:visionflow:linked:canvas",
+        "label": "Canvas"
+      },
+      {
+        "id": "urn:visionflow:linked:chat-gpt-plugins",
+        "label": "ChatGPT Plugins"
+      },
+      {
+        "id": "urn:visionflow:linked:code-interpreter",
+        "label": "Code Interpreter"
+      },
+      {
+        "id": "urn:visionflow:linked:custom-gpts",
+        "label": "Custom GPTs"
+      },
+      {
+        "id": "urn:visionflow:linked:gpt-store",
+        "label": "GPT Store"
+      },
+      {
+        "id": "urn:visionflow:linked:memory",
+        "label": "Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:system-prompts",
+        "label": "System Prompts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dall-e",
+        "label": "DALL-E"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gpt-4",
+        "label": "GPT 4"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-assisted-writing",
+        "label": "AI-Assisted Writing"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "id": "urn:visionflow:linked:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-technology",
+      "label": "Accessibility Technology"
+    },
+    {
+      "slug": "advanced-voice-mode",
+      "label": "Advanced Voice Mode"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "ai-assistants",
+      "label": "AI Assistants"
+    },
+    {
+      "slug": "ai-assisted-writing",
+      "label": "AI-Assisted Writing"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "canvas",
+      "label": "Canvas"
+    },
+    {
+      "slug": "chain-of-thought-reasoning",
+      "label": "Chain-of-Thought Reasoning"
+    },
+    {
+      "slug": "chat-bots",
+      "label": "ChatBots"
+    },
+    {
+      "slug": "chat-completions-api",
+      "label": "Chat Completions API"
+    },
+    {
+      "slug": "chat-gpt-plugins",
+      "label": "ChatGPT Plugins"
+    },
+    {
+      "slug": "code-interpreter",
+      "label": "Code Interpreter"
+    },
+    {
+      "slug": "copilot",
+      "label": "Copilot"
+    },
+    {
+      "slug": "custom-gpts",
+      "label": "Custom GPTs"
+    },
+    {
+      "slug": "customer-service-ai",
+      "label": "Customer Service AI"
+    },
+    {
+      "slug": "deep-seek",
+      "label": "DeepSeek"
+    },
+    {
+      "slug": "education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "slug": "enterprise-ai",
+      "label": "Enterprise AI"
+    },
+    {
+      "slug": "ernie-bot",
+      "label": "Ernie Bot"
+    },
+    {
+      "slug": "generative-aidomain",
+      "label": "GenerativeAIDomain"
+    },
+    {
+      "slug": "generative-pre-trained-transformers",
+      "label": "Generative Pre-trained Transformers"
+    },
+    {
+      "slug": "gpt-store",
+      "label": "GPT Store"
+    },
+    {
+      "slug": "healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "slug": "instruct-gpt",
+      "label": "InstructGPT"
+    },
+    {
+      "slug": "instruction-following",
+      "label": "Instruction Following"
+    },
+    {
+      "slug": "memory",
+      "label": "Memory"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "open-ai-api",
+      "label": "OpenAI API"
+    },
+    {
+      "slug": "open-ai-usage-policies",
+      "label": "OpenAI Usage Policies"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "scientific-discovery",
+      "label": "Scientific Discovery"
+    },
+    {
+      "slug": "scientific-research",
+      "label": "Scientific Research"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "system-prompts",
+      "label": "System Prompts"
+    },
+    {
+      "slug": "temperature-sampling",
+      "label": "Temperature Sampling"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "vector-embeddings",
+      "label": "Vector Embeddings"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "byte-pair-encoding",
+      "label": "Byte Pair Encoding"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL-E"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "human-feedback",
+      "label": "Human Feedback"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "lla-ma",
+      "label": "LLaMA"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proximal-policy-optimisation",
+      "label": "Proximal Policy Optimisation"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "host-january-17th-presentation",
+      "label": "HOST January 17th Presentation"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "training-for-design-practitioners",
+      "label": "Training for Design Practitioners"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

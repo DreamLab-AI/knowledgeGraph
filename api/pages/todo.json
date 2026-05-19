@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:2701f8fe86370b913f5be45e79623982298ef6da4f129522fb97e9ec26a74adf",
+  "title": "TODO",
+  "slug": "todo",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:todo",
+  "domain": "infrastructure",
+  "definition": "TODO is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autogen",
+      "label": "Autogen"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    }
+  ],
+  "backlinks": []
+}

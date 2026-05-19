@@ -1,0 +1,580 @@
+{
+  "id": "urn:visionflow:page:a8aff177330a866db55cfed2df1dc42bb347f362f56553ac2cfd09ac0d5127e2",
+  "title": "Digital Workplace Platform",
+  "slug": "digital-workplace-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-workplace-platform",
+  "domain": "distributed-collaboration",
+  "definition": "**Digital Workplace Platform** (DWP) is an integrated software environment \u2014 combining communication, collaboration, content management, workflow automation, and people analytics into a unified, identity-governed ecosystem \u2014 that serves as the primary operational substrate for distributed knowledge-work organisations, consolidating formerly siloed toolchains (email, calendar, file storage, instant messaging, video conferencing, intranet, task management, low-code automation) under a single vendor umbrella or composable federated architecture, enabling employees to access all resources they need to perform their roles from any device and location without context-switching penalties. The Gartner Magic Quadrant for Digital Workplace formally defined DWPs as \"integrated technology that enables employees to perform their job in a digital environment,\" distinguishing them from simple productivity suites by their emphasis on employee experience (EX), people analytics, workflow orchestration, and governance. Leading platforms include Microsoft 365 (Teams 300M+ monthly active users 2024, SharePoint 200M+ users, OneDrive, Exchange Online, Viva suite, M365 Copilot AI layer launched November 2",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cloud-platform",
+      "label": "Cloud Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-collaboration-technology",
+      "label": "Distributed Collaboration Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:employee-experience-system",
+      "label": "Employee Experience System"
+    },
+    {
+      "id": "urn:visionflow:linked:enterprise-software-infrastructure",
+      "label": "Enterprise Software Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:intranet-evolution",
+      "label": "Intranet Evolution"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-copilot-layer",
+        "label": "AI Copilot Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:collaborative-document-editing",
+        "label": "Collaborative Document Editing"
+      },
+      {
+        "id": "urn:visionflow:linked:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:visionflow:linked:integration-apis",
+        "label": "Integration APIs"
+      },
+      {
+        "id": "urn:visionflow:linked:intranet-portal",
+        "label": "Intranet Portal"
+      },
+      {
+        "id": "urn:visionflow:linked:mobile-client",
+        "label": "Mobile Client"
+      },
+      {
+        "id": "urn:visionflow:linked:people-analytics-dashboard",
+        "label": "People Analytics Dashboard"
+      },
+      {
+        "id": "urn:visionflow:linked:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:visionflow:linked:unified-messaging",
+        "label": "Unified Messaging"
+      },
+      {
+        "id": "urn:visionflow:linked:workflow-automation-engine",
+        "label": "Workflow Automation Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-residency-controls",
+        "label": "Data Residency Controls"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:visionflow:linked:mobile-and-desktop-clients",
+        "label": "Mobile and Desktop Clients"
+      },
+      {
+        "id": "urn:visionflow:linked:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:visionflow:linked:security-and-compliance-framework",
+        "label": "Security and Compliance Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asynchronous-workflows",
+        "label": "Asynchronous Workflows"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-functional-collaboration",
+        "label": "Cross-Functional Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-onboarding",
+        "label": "Digital Onboarding"
+      },
+      {
+        "id": "urn:visionflow:linked:employee-self-service",
+        "label": "Employee Self-Service"
+      },
+      {
+        "id": "urn:visionflow:linked:global-team-coordination",
+        "label": "Global Team Coordination"
+      },
+      {
+        "id": "urn:visionflow:linked:hybrid-work-models",
+        "label": "Hybrid Work Models"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:low-code-workflow-orchestration",
+        "label": "Low-Code Workflow Orchestration"
+      },
+      {
+        "id": "urn:visionflow:linked:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:visionflow:linked:rest-api-integration",
+        "label": "REST API Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:visionflow:linked:saml-2-0-federation",
+        "label": "SAML 2.0 Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:webhook-automation",
+        "label": "Webhook Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-trust-architecture",
+        "label": "Zero-Trust Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-copilot-layer",
+      "label": "AI Copilot Layer"
+    },
+    {
+      "slug": "asynchronous-workflows",
+      "label": "Asynchronous Workflows"
+    },
+    {
+      "slug": "cloud-platform",
+      "label": "Cloud Platform"
+    },
+    {
+      "slug": "cloud-storage",
+      "label": "Cloud Storage"
+    },
+    {
+      "slug": "collaborative-document-editing",
+      "label": "Collaborative Document Editing"
+    },
+    {
+      "slug": "confluence",
+      "label": "Confluence"
+    },
+    {
+      "slug": "consumer-messaging-apps",
+      "label": "Consumer Messaging Apps"
+    },
+    {
+      "slug": "cross-functional-collaboration",
+      "label": "Cross-Functional Collaboration"
+    },
+    {
+      "slug": "data-encryption-standards",
+      "label": "Data Encryption Standards"
+    },
+    {
+      "slug": "data-residency-controls",
+      "label": "Data Residency Controls"
+    },
+    {
+      "slug": "dei-analytics",
+      "label": "DEI Analytics"
+    },
+    {
+      "slug": "digital-employee-experience",
+      "label": "Digital Employee Experience"
+    },
+    {
+      "slug": "digital-onboarding",
+      "label": "Digital Onboarding"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "DistributedCollaborationDomain"
+    },
+    {
+      "slug": "distributed-collaboration-technology",
+      "label": "Distributed Collaboration Technology"
+    },
+    {
+      "slug": "employee-engagement",
+      "label": "Employee Engagement"
+    },
+    {
+      "slug": "employee-experience-domain",
+      "label": "EmployeeExperienceDomain"
+    },
+    {
+      "slug": "employee-experience-system",
+      "label": "Employee Experience System"
+    },
+    {
+      "slug": "employee-self-service",
+      "label": "Employee Self-Service"
+    },
+    {
+      "slug": "employee-wellbeing",
+      "label": "Employee Wellbeing"
+    },
+    {
+      "slug": "enterprise-content-management",
+      "label": "Enterprise Content Management"
+    },
+    {
+      "slug": "enterprise-search",
+      "label": "Enterprise Search"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "EnterpriseSoftwareDomain"
+    },
+    {
+      "slug": "enterprise-software-infrastructure",
+      "label": "Enterprise Software Infrastructure"
+    },
+    {
+      "slug": "future-of-work",
+      "label": "Future of Work"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-compliance-framework",
+      "label": "GDPR Compliance Framework"
+    },
+    {
+      "slug": "gemini-for-workspace",
+      "label": "Gemini for Workspace"
+    },
+    {
+      "slug": "global-team-coordination",
+      "label": "Global Team Coordination"
+    },
+    {
+      "slug": "google-drive",
+      "label": "Google Drive"
+    },
+    {
+      "slug": "google-meet",
+      "label": "Google Meet"
+    },
+    {
+      "slug": "hybrid-work-domain",
+      "label": "HybridWorkDomain"
+    },
+    {
+      "slug": "hybrid-work-models",
+      "label": "Hybrid Work Models"
+    },
+    {
+      "slug": "identity-and-access-management",
+      "label": "Identity and Access Management"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "IdentityLayer"
+    },
+    {
+      "slug": "integration-apis",
+      "label": "Integration APIs"
+    },
+    {
+      "slug": "intranet-evolution",
+      "label": "Intranet Evolution"
+    },
+    {
+      "slug": "intranet-portal",
+      "label": "Intranet Portal"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "jira",
+      "label": "Jira"
+    },
+    {
+      "slug": "knowledge-management-systems",
+      "label": "Knowledge Management Systems"
+    },
+    {
+      "slug": "low-code-workflow-orchestration",
+      "label": "Low-Code Workflow Orchestration"
+    },
+    {
+      "slug": "microsoft-teams",
+      "label": "Microsoft Teams"
+    },
+    {
+      "slug": "mobile-and-desktop-clients",
+      "label": "Mobile and Desktop Clients"
+    },
+    {
+      "slug": "mobile-client",
+      "label": "Mobile Client"
+    },
+    {
+      "slug": "network-connectivity",
+      "label": "Network Connectivity"
+    },
+    {
+      "slug": "notion",
+      "label": "Notion"
+    },
+    {
+      "slug": "one-drive",
+      "label": "OneDrive"
+    },
+    {
+      "slug": "open-ai-gpt-4",
+      "label": "OpenAI GPT-4"
+    },
+    {
+      "slug": "open-id-connect",
+      "label": "OpenID Connect"
+    },
+    {
+      "slug": "open-id-connect-1-0",
+      "label": "OpenID Connect 1.0"
+    },
+    {
+      "slug": "owasp-application-security",
+      "label": "OWASP Application Security"
+    },
+    {
+      "slug": "people-analytics-dashboard",
+      "label": "People Analytics Dashboard"
+    },
+    {
+      "slug": "physical-office",
+      "label": "Physical Office"
+    },
+    {
+      "slug": "point-solution-toolchain",
+      "label": "Point-Solution Toolchain"
+    },
+    {
+      "slug": "project-management",
+      "label": "Project Management"
+    },
+    {
+      "slug": "remote-work",
+      "label": "Remote Work"
+    },
+    {
+      "slug": "rest-api-integration",
+      "label": "REST API Integration"
+    },
+    {
+      "slug": "role-based-access-control",
+      "label": "Role-Based Access Control"
+    },
+    {
+      "slug": "saml-2-0",
+      "label": "SAML 2.0"
+    },
+    {
+      "slug": "saml-2-0-federation",
+      "label": "SAML 2.0 Federation"
+    },
+    {
+      "slug": "security-and-compliance-framework",
+      "label": "Security and Compliance Framework"
+    },
+    {
+      "slug": "share-point",
+      "label": "SharePoint"
+    },
+    {
+      "slug": "siloed-productivity-tools",
+      "label": "Siloed Productivity Tools"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "slack",
+      "label": "Slack"
+    },
+    {
+      "slug": "soc-2-type-ii",
+      "label": "SOC 2 Type II"
+    },
+    {
+      "slug": "talent-retention",
+      "label": "Talent Retention"
+    },
+    {
+      "slug": "traditional-intranet",
+      "label": "Traditional Intranet"
+    },
+    {
+      "slug": "unified-communications",
+      "label": "Unified Communications"
+    },
+    {
+      "slug": "unified-messaging",
+      "label": "Unified Messaging"
+    },
+    {
+      "slug": "viva-insights",
+      "label": "Viva Insights"
+    },
+    {
+      "slug": "wcag-2-2-accessibility",
+      "label": "WCAG 2.2 Accessibility"
+    },
+    {
+      "slug": "webhook-automation",
+      "label": "Webhook Automation"
+    },
+    {
+      "slug": "workflow-automation-engine",
+      "label": "Workflow Automation Engine"
+    },
+    {
+      "slug": "workflow-orchestration-layer",
+      "label": "WorkflowOrchestrationLayer"
+    },
+    {
+      "slug": "workplace-analytics",
+      "label": "Workplace Analytics"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero-Trust Architecture"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "internet-infrastructure",
+      "label": "Internet Infrastructure"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

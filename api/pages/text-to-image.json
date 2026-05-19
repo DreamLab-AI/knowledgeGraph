@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:4e6536cf6477af99ffb0e9cd30a2abda8d80bb847aea01039e51175ec5515388",
+  "title": "Text-to-Image",
+  "slug": "text-to-image",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:text-to-image",
+  "domain": "artificial-intelligence",
+  "definition": "Text-to-Image is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative Ai"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative Ai"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

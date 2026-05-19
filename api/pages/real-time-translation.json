@@ -1,0 +1,616 @@
+{
+  "id": "urn:visionflow:page:1e7abd245d86be271372a545817727b221a169da2f87c69f585380cf42eadf17",
+  "title": "Real-time Translation",
+  "slug": "real-time-translation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-translation",
+  "domain": "distributed-collaboration",
+  "definition": "Real-time translation is the automatic conversion of spoken or written language content into one or more target languages with latency low enough to sustain live human communication, defined operationally as end-to-end processing delay below 2,000 milliseconds for speech-to-speech pipelines and below 500 milliseconds for text-to-text pathways in synchronous collaboration contexts, achieved through a tightly integrated processing chain that serialises [[Automatic Speech Recognition]] (ASR), [[Neural Machine Translation]] (NMT), and [[Text-to-Speech Synthesis]] (TTS) into sub-second micro-batches and applies continuous [[Language Detection]], [[Speaker Diarisation]], domain-adaptive [[Language Model]] rescoring, and confidence-gated output streaming to maintain intelligibility under the constraint that each output token must arrive within the perceptual window of the preceding sentence. The technical architecture frames real-time translation as a streaming inference problem governed by three competing objectives: latency (minimising the processing lag between source utterance onset and target audio playback or caption render), quality (maximising [[BLEU Score]], [[chrF]], or human ad",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:accessibility-tools",
+      "label": "Accessibility Tools"
+    },
+    {
+      "id": "urn:visionflow:linked:communication-infrastructure",
+      "label": "Communication Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-collaboration-enablers",
+      "label": "Distributed Collaboration Enablers"
+    },
+    {
+      "id": "urn:visionflow:linked:speech-technology",
+      "label": "Speech Technology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audio-buffering",
+        "label": "Audio Buffering"
+      },
+      {
+        "id": "urn:visionflow:linked:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:confidence-scoring",
+        "label": "Confidence Scoring"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:visionflow:linked:language-detection",
+        "label": "Language Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "id": "urn:visionflow:linked:simultaneous-machine-translation",
+        "label": "Simultaneous Machine Translation"
+      },
+      {
+        "id": "urn:visionflow:linked:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:visionflow:linked:streaming-asr",
+        "label": "Streaming ASR"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-speech-synthesis",
+        "label": "Text-to-Speech Synthesis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audio-capture",
+        "label": "Audio Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-inference-hardware",
+        "label": "GPU Inference Hardware"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-ml-pipeline",
+        "label": "Low-latency ML Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-language-model",
+        "label": "Multi-language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:visionflow:linked:parallel-corpus",
+        "label": "Parallel Corpus"
+      },
+      {
+        "id": "urn:visionflow:linked:streaming-inference",
+        "label": "Streaming Inference"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accessible-communication",
+        "label": "Accessible Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-language-collaboration",
+        "label": "Cross-language Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:equitable-global-meetings",
+        "label": "Equitable Global Meetings"
+      },
+      {
+        "id": "urn:visionflow:linked:global-workforce-integration",
+        "label": "Global Workforce Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:inclusive-remote-work",
+        "label": "Inclusive Remote Work"
+      },
+      {
+        "id": "urn:visionflow:linked:market-expansion",
+        "label": "Market Expansion"
+      },
+      {
+        "id": "urn:visionflow:linked:multilingual-video-conferencing",
+        "label": "Multilingual Video Conferencing"
+      },
+      {
+        "id": "urn:visionflow:linked:reduced-code-switching",
+        "label": "Reduced Code-switching"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      },
+      {
+        "id": "urn:visionflow:linked:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-sequence-transduction",
+        "label": "Neural Sequence Transduction"
+      },
+      {
+        "id": "urn:visionflow:linked:wait-k-policy",
+        "label": "Wait-k Policy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accent-adaptation",
+      "label": "Accent Adaptation"
+    },
+    {
+      "slug": "accessibility-domain",
+      "label": "AccessibilityDomain"
+    },
+    {
+      "slug": "accessibility-tools",
+      "label": "Accessibility Tools"
+    },
+    {
+      "slug": "accessible-communication",
+      "label": "Accessible Communication"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "audio-buffering",
+      "label": "Audio Buffering"
+    },
+    {
+      "slug": "audio-capture",
+      "label": "Audio Capture"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "average-lagging-metric",
+      "label": "Average Lagging Metric"
+    },
+    {
+      "slug": "batch-machine-translation",
+      "label": "Batch Machine Translation"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "bleu-score",
+      "label": "BLEU Score"
+    },
+    {
+      "slug": "bleurt",
+      "label": "BLEURT"
+    },
+    {
+      "slug": "ccaligned-dataset",
+      "label": "CCAligned Dataset"
+    },
+    {
+      "slug": "chr-f",
+      "label": "chrF"
+    },
+    {
+      "slug": "code-switching",
+      "label": "Code-switching"
+    },
+    {
+      "slug": "comet",
+      "label": "COMET"
+    },
+    {
+      "slug": "comet-metric",
+      "label": "COMET Metric"
+    },
+    {
+      "slug": "communication-infrastructure",
+      "label": "Communication Infrastructure"
+    },
+    {
+      "slug": "conference-interpreting",
+      "label": "Conference Interpreting"
+    },
+    {
+      "slug": "confidence-scoring",
+      "label": "Confidence Scoring"
+    },
+    {
+      "slug": "connectionist-temporal-classification",
+      "label": "Connectionist Temporal Classification"
+    },
+    {
+      "slug": "consecutive-interpretation",
+      "label": "Consecutive Interpretation"
+    },
+    {
+      "slug": "cross-language-collaboration",
+      "label": "Cross-language Collaboration"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "slug": "distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "DistributedCollaborationDomain"
+    },
+    {
+      "slug": "distributed-collaboration-enablers",
+      "label": "Distributed Collaboration Enablers"
+    },
+    {
+      "slug": "domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "slug": "equitable-global-meetings",
+      "label": "Equitable Global Meetings"
+    },
+    {
+      "slug": "flores-200",
+      "label": "FLORES-200"
+    },
+    {
+      "slug": "flow-based-tts",
+      "label": "Flow-based TTS"
+    },
+    {
+      "slug": "global-workforce-integration",
+      "label": "Global Workforce Integration"
+    },
+    {
+      "slug": "google-cloud-translation-api",
+      "label": "Google Cloud Translation API"
+    },
+    {
+      "slug": "gpu-inference-hardware",
+      "label": "GPU Inference Hardware"
+    },
+    {
+      "slug": "ietf-bcp-47",
+      "label": "IETF BCP 47"
+    },
+    {
+      "slug": "inclusive-remote-work",
+      "label": "Inclusive Remote Work"
+    },
+    {
+      "slug": "institute-for-language-cognition-and-computation",
+      "label": "Institute for Language, Cognition and Computation"
+    },
+    {
+      "slug": "international-diplomacy",
+      "label": "International Diplomacy"
+    },
+    {
+      "slug": "iso-639-language-codes",
+      "label": "ISO 639 Language Codes"
+    },
+    {
+      "slug": "itu-t-g-711-audio-codec",
+      "label": "ITU-T G.711 Audio Codec"
+    },
+    {
+      "slug": "language-detection",
+      "label": "Language Detection"
+    },
+    {
+      "slug": "language-line",
+      "label": "Language Line"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "language-technology-lab",
+      "label": "Language Technology Lab"
+    },
+    {
+      "slug": "large-scale-parallel-corpora",
+      "label": "Large-scale Parallel Corpora"
+    },
+    {
+      "slug": "legal-proceedings",
+      "label": "Legal Proceedings"
+    },
+    {
+      "slug": "low-latency-ml-pipeline",
+      "label": "Low-latency ML Pipeline"
+    },
+    {
+      "slug": "low-resource-nlp",
+      "label": "Low-resource NLP"
+    },
+    {
+      "slug": "market-expansion",
+      "label": "Market Expansion"
+    },
+    {
+      "slug": "microsoft-azure-cognitive-services",
+      "label": "Microsoft Azure Cognitive Services"
+    },
+    {
+      "slug": "multi-language-model",
+      "label": "Multi-language Model"
+    },
+    {
+      "slug": "multilingual-models",
+      "label": "Multilingual Models"
+    },
+    {
+      "slug": "multilingual-teams",
+      "label": "Multilingual Teams"
+    },
+    {
+      "slug": "multilingual-video-conferencing",
+      "label": "Multilingual Video Conferencing"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "NaturalLanguageProcessingDomain"
+    },
+    {
+      "slug": "natural-language-processing-group",
+      "label": "Natural Language Processing Group"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "network-connectivity",
+      "label": "Network Connectivity"
+    },
+    {
+      "slug": "neural-machine-translation",
+      "label": "Neural Machine Translation"
+    },
+    {
+      "slug": "neural-sequence-transduction",
+      "label": "Neural Sequence Transduction"
+    },
+    {
+      "slug": "opus-corpus",
+      "label": "OPUS Corpus"
+    },
+    {
+      "slug": "parallel-corpus",
+      "label": "Parallel Corpus"
+    },
+    {
+      "slug": "post-editing-machine-translation",
+      "label": "Post-editing Machine Translation"
+    },
+    {
+      "slug": "professional-human-interpretation",
+      "label": "Professional Human Interpretation"
+    },
+    {
+      "slug": "qure-ai",
+      "label": "Qure.ai"
+    },
+    {
+      "slug": "reduced-code-switching",
+      "label": "Reduced Code-switching"
+    },
+    {
+      "slug": "remote-work",
+      "label": "Remote Work"
+    },
+    {
+      "slug": "sequence-to-sequence-learning",
+      "label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "slug": "sign-language-interpretation",
+      "label": "Sign Language Interpretation"
+    },
+    {
+      "slug": "simultaneous-machine-translation",
+      "label": "Simultaneous Machine Translation"
+    },
+    {
+      "slug": "speaker-diarisation",
+      "label": "Speaker Diarisation"
+    },
+    {
+      "slug": "speech-technology",
+      "label": "Speech Technology"
+    },
+    {
+      "slug": "statistical-natural-language-processing-group",
+      "label": "Statistical Natural Language Processing Group"
+    },
+    {
+      "slug": "streaming-asr",
+      "label": "Streaming ASR"
+    },
+    {
+      "slug": "streaming-inference",
+      "label": "Streaming Inference"
+    },
+    {
+      "slug": "team-psychological-safety",
+      "label": "Team Psychological Safety"
+    },
+    {
+      "slug": "telemedicine",
+      "label": "Telemedicine"
+    },
+    {
+      "slug": "text-to-speech-synthesis",
+      "label": "Text-to-Speech Synthesis"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "vits",
+      "label": "VITS"
+    },
+    {
+      "slug": "w3-c-web-speech-api",
+      "label": "W3C WebSpeech API"
+    },
+    {
+      "slug": "wait-k-policy",
+      "label": "Wait-k Policy"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
+    },
+    {
+      "slug": "wmt-benchmark",
+      "label": "WMT Benchmark"
+    },
+    {
+      "slug": "you-tube",
+      "label": "YouTube"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "byte-pair-encoding",
+      "label": "Byte Pair Encoding"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "service-layer",
+      "label": "ServiceLayer"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "subword-tokenisation",
+      "label": "Subword Tokenisation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

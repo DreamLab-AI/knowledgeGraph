@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:6d283c8e166041f907a7aa5d1e8da9bb0d98030216edc49ed5818b22cd417e90",
+  "title": "Transaction Standard",
+  "slug": "transaction-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transaction-standard",
+  "domain": "spatial-computing",
+  "definition": "A protocol defining secure exchange of digital assets and services within virtual economies, specifying message formats, authentication mechanisms, settlement procedures, and integrity guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:integrity-verification",
+        "label": "Integrity Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:message-format",
+        "label": "Message Format"
+      },
+      {
+        "id": "urn:visionflow:linked:settlement-protocol",
+        "label": "Settlement Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-ledger",
+        "label": "Transaction Ledger"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:atomic-swaps",
+        "label": "Atomic Swaps"
+      },
+      {
+        "id": "urn:visionflow:linked:economic-interoperability",
+        "label": "Economic Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:secure-asset-transfer",
+        "label": "Secure Asset Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-auditability",
+        "label": "Transaction Auditability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multi-party-transactions",
+        "label": "Multi-Party Transactions"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "atomic-swaps",
+      "label": "Atomic Swaps"
+    },
+    {
+      "slug": "authentication-mechanism",
+      "label": "Authentication Mechanism"
+    },
+    {
+      "slug": "data-persistence",
+      "label": "Data Persistence"
+    },
+    {
+      "slug": "economic-interoperability",
+      "label": "Economic Interoperability"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "integrity-verification",
+      "label": "Integrity Verification"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    },
+    {
+      "slug": "message-format",
+      "label": "Message Format"
+    },
+    {
+      "slug": "secure-asset-transfer",
+      "label": "Secure Asset Transfer"
+    },
+    {
+      "slug": "settlement-protocol",
+      "label": "Settlement Protocol"
+    },
+    {
+      "slug": "transaction-auditability",
+      "label": "Transaction Auditability"
+    },
+    {
+      "slug": "transaction-ledger",
+      "label": "Transaction Ledger"
+    },
+    {
+      "slug": "wallet-system",
+      "label": "Wallet System"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "multi-party-transactions",
+      "label": "Multi-Party Transactions"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "Virtual Economy Domain"
+    },
+    {
+      "slug": "virtual-economy-infrastructure",
+      "label": "Virtual Economy Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:018b5355546ca4a0dfc0d49df7d08a368de09744a2a20f6d11d5742b511c44e3",
+  "title": "RuV Agents",
+  "slug": "ru-v-agents",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ru-v-agents",
+  "domain": "infrastructure",
+  "definition": "RuV Agents is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

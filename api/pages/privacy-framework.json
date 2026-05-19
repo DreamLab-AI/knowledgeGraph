@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:948828a12bd41ef306a39647ceeb7777e804abec9f2da7703abb51c4ebe3fa31",
+  "title": "Privacy Framework",
+  "slug": "privacy-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-framework",
+  "domain": "infrastructure",
+  "definition": "PrivacyFramework is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "granular-consent-control",
+      "label": "Granular Consent Control"
+    },
+    {
+      "slug": "metaverse-psychology-profile",
+      "label": "Metaverse Psychology Profile"
+    }
+  ]
+}

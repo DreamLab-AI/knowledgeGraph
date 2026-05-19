@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:5ee467f02bf29785e4712ae456530a62b012435f8599c8a00394286575a86f86",
+  "title": "Robot Sensor",
+  "slug": "robot-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-sensor",
+  "domain": "robotics",
+  "definition": "**Robot Sensor** - Robot Sensor in robotics systems",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ]
+}

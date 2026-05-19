@@ -1,21 +1,553 @@
-iri:: http://narrativegoldmine.com/metaverse#AuditTrail
-uri:: urn:visionclaw:concept:artificial-intelligence:audit-trail
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:audit-trail
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Audit Trail
-content-hash:: sha256-12-363cf32b5b91
-legacy-term-id:: 20121
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AuditTrail
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:audit-trail
 public:: true
+
+# Audit Trail
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008",
+  "@type": "Page",
+  "vc:slug": "audit-trail",
+  "title": "Audit Trail",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:access-logs",
+      "vc:label": "Access Logs"
+    },
+    {
+      "@id": "urn:visionflow:linked:clock-synchronization",
+      "vc:label": "Clock Synchronization"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-integrity-protection",
+      "vc:label": "Cryptographic Integrity Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-logs",
+      "vc:label": "Event Logs"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-schema",
+      "vc:label": "Event Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:forensic-analysis",
+      "vc:label": "Forensic Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-system",
+      "vc:label": "Governance System"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-investigation",
+      "vc:label": "Incident Investigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:logging-infrastructure",
+      "vc:label": "Logging Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:logging-protocol",
+      "vc:label": "Logging Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-storage",
+      "vc:label": "Secure Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-infrastructure",
+      "vc:label": "Security Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-state-snapshots",
+      "vc:label": "System State Snapshots"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-synchronization-service",
+      "vc:label": "Time Synchronization Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:timestamp-records",
+      "vc:label": "Timestamp Records"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-records",
+      "vc:label": "Transaction Records"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-activity-logs",
+      "vc:label": "User Activity Logs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-transparency-index",
+      "vc:label": "Algorithmic Transparency Index"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-framework",
+      "vc:label": "Compliance Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-verification",
+      "vc:label": "Compliance Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "Data Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-provenance",
+      "vc:label": "Data Provenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "Middleware Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:non-repudiation",
+      "vc:label": "Non-Repudiation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-standard",
+      "vc:label": "Provenance Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-363cf32b5b91"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AuditTrail"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20121"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Audit Trail"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:audit-trail"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:audit-trail"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:audit-trail",
+  "@type": "OntologyClass",
+  "label": "Audit Trail",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A chronological, tamper-evident record of system activities, transactions, and events that enables reconstruction and verification of sequences of operations for compliance, security, and forensic analysis.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:governance-system",
+      "vc:label": "Governance System"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-infrastructure",
+      "vc:label": "Security Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-transparency-index",
+      "vc:label": "Algorithmic Transparency Index"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-framework",
+      "vc:label": "Compliance Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-provenance",
+      "vc:label": "Data Provenance"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:access-logs",
+      "vc:label": "Access Logs"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-logs",
+      "vc:label": "Event Logs"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-state-snapshots",
+      "vc:label": "System State Snapshots"
+    },
+    {
+      "@id": "urn:visionflow:linked:timestamp-records",
+      "vc:label": "Timestamp Records"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-records",
+      "vc:label": "Transaction Records"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-activity-logs",
+      "vc:label": "User Activity Logs"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:clock-synchronization",
+      "vc:label": "Clock Synchronization"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-integrity-protection",
+      "vc:label": "Cryptographic Integrity Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:logging-infrastructure",
+      "vc:label": "Logging Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-storage",
+      "vc:label": "Secure Storage"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:forensic-analysis",
+      "vc:label": "Forensic Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-investigation",
+      "vc:label": "Incident Investigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-verification",
+      "vc:label": "Compliance Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:non-repudiation",
+      "vc:label": "Non-Repudiation"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:event-schema",
+      "vc:label": "Event Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:logging-protocol",
+      "vc:label": "Logging Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-synchronization-service",
+      "vc:label": "Time Synchronization Service"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-standard",
+      "vc:label": "Provenance Standard"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:audit-trail:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Access Logs]]",
+      "resolved": "urn:visionflow:linked:access-logs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Clock Synchronization]]",
+      "resolved": "urn:visionflow:linked:clock-synchronization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Integrity Protection]]",
+      "resolved": "urn:visionflow:linked:cryptographic-integrity-protection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Logs]]",
+      "resolved": "urn:visionflow:linked:event-logs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Schema]]",
+      "resolved": "urn:visionflow:linked:event-schema",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Forensic Analysis]]",
+      "resolved": "urn:visionflow:linked:forensic-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Governance System]]",
+      "resolved": "urn:visionflow:linked:governance-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Incident Investigation]]",
+      "resolved": "urn:visionflow:linked:incident-investigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Logging Infrastructure]]",
+      "resolved": "urn:visionflow:linked:logging-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Logging Protocol]]",
+      "resolved": "urn:visionflow:linked:logging-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Secure Storage]]",
+      "resolved": "urn:visionflow:linked:secure-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Security Infrastructure]]",
+      "resolved": "urn:visionflow:linked:security-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[System State Snapshots]]",
+      "resolved": "urn:visionflow:linked:system-state-snapshots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Time Synchronization Service]]",
+      "resolved": "urn:visionflow:linked:time-synchronization-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Timestamp Records]]",
+      "resolved": "urn:visionflow:linked:timestamp-records",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transaction Records]]",
+      "resolved": "urn:visionflow:linked:transaction-records",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Activity Logs]]",
+      "resolved": "urn:visionflow:linked:user-activity-logs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Algorithmic Transparency Index]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-transparency-index",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Compliance Framework]]",
+      "resolved": "urn:visionflow:owl:class:compliance-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Compliance Verification]]",
+      "resolved": "urn:visionflow:owl:class:compliance-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Layer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Provenance]]",
+      "resolved": "urn:visionflow:owl:class:data-provenance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Middleware Layer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Non-Repudiation]]",
+      "resolved": "urn:visionflow:owl:class:non-repudiation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Provenance Standard]]",
+      "resolved": "urn:visionflow:owl:class:provenance-standard",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A chronological, tamper-evident record of system activities, transactions, and events that enables reconstruction and verification of sequences of operations for compliance, security, and forensic analysis.

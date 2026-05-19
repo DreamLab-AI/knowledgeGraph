@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:d1dcd384e45623806bebd3300c74912eef53c2fc440dc5feb0da3e2eb41521be",
+  "title": "Iso Standards",
+  "slug": "iso-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:iso-standards",
+  "domain": "spatial-computing",
+  "definition": "International Organization for Standardization specifications applicable to metaverse, VR, and AR technologies, including health and safety guidelines, 3D representation standards, avatar specifications, and mixed reality frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    }
+  ]
+}

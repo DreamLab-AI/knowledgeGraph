@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577",
+  "title": "Learning Analytics",
+  "slug": "learning-analytics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:learning-analytics",
+  "domain": "spatial-computing",
+  "definition": "The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    }
+  ]
+}

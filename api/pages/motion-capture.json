@@ -1,0 +1,496 @@
+{
+  "id": "urn:visionflow:page:2922b8452583ba0cb6b4b3c51521cd87070a3a436cb8c6e2ef96b6d439087054",
+  "title": "Motion Capture",
+  "slug": "motion-capture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:motion-capture",
+  "domain": "creative-tools",
+  "definition": "Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time \u2014 translating real-world kinematic data into digital skeletal or surface representations that animate characters, avatars, [[Digital Human]] entities, and objects in film, television, [[Games]], virtual reality, biomechanical research, sports science, and robotics. The field spans four primary capture modalities: optical marker-based systems ([[OptiTrack]], [[Vicon]], [[Qualisys]]) deploying retroreflective markers tracked by infrared camera arrays at 100\u20132,000 frames per second achieving sub-millimetre positional accuracy; markerless video-based systems ([[DeepLabCut]], [[MediaPipe]], Move.ai, Plask) applying deep convolutional neural networks and multi-view geometry to extract pose estimates from ordinary RGB footage without physical markers; inertial measurement unit (IMU) suits ([[Xsens]] MVN Animate, [[Rokoko]] Smartsuit Pro II, Movella) embedding accelerometers, gyroscopes, and magnetometers directly on the performer's body ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:animation",
+      "label": "Animation"
+    },
+    {
+      "id": "urn:visionflow:linked:biomechanics",
+      "label": "Biomechanics"
+    },
+    {
+      "id": "urn:visionflow:linked:performance-capture",
+      "label": "Performance Capture"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:blendshape-rig",
+        "label": "Blendshape Rig"
+      },
+      {
+        "id": "urn:visionflow:linked:facial-capture-system",
+        "label": "Facial Capture System"
+      },
+      {
+        "id": "urn:visionflow:linked:imu-suit",
+        "label": "IMU Suit"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-tracking-system",
+        "label": "Optical Tracking System"
+      },
+      {
+        "id": "urn:visionflow:linked:retargeting-solver",
+        "label": "Retargeting Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:body-rig",
+        "label": "Body Rig"
+      },
+      {
+        "id": "urn:visionflow:linked:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:camera-array",
+        "label": "Camera Array"
+      },
+      {
+        "id": "urn:visionflow:linked:infrared-lighting",
+        "label": "Infrared Lighting"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-filtering",
+        "label": "Temporal Filtering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-human",
+        "label": "Digital Human"
+      },
+      {
+        "id": "urn:visionflow:linked:film-vfx",
+        "label": "Film VFX"
+      },
+      {
+        "id": "urn:visionflow:linked:games",
+        "label": "Games"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-animation",
+        "label": "Real-Time Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:robotics-training-data",
+        "label": "Robotics Training Data"
+      },
+      {
+        "id": "urn:visionflow:linked:sports-analytics",
+        "label": "Sports Analytics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:action-unit-encoding",
+        "label": "Action Unit Encoding"
+      },
+      {
+        "id": "urn:visionflow:linked:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:visionflow:linked:smpl-body-model",
+        "label": "SMPL Body Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action-unit-encoding",
+      "label": "Action Unit Encoding"
+    },
+    {
+      "slug": "ai-body-pose-estimation",
+      "label": "AI Body Pose Estimation"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "animation",
+      "label": "Animation"
+    },
+    {
+      "slug": "apple-arkit",
+      "label": "Apple ARKit"
+    },
+    {
+      "slug": "biomechanics",
+      "label": "Biomechanics"
+    },
+    {
+      "slug": "blendshape-rig",
+      "label": "Blendshape Rig"
+    },
+    {
+      "slug": "body-rig",
+      "label": "Body Rig"
+    },
+    {
+      "slug": "bundle-adjustment",
+      "label": "Bundle Adjustment"
+    },
+    {
+      "slug": "bvh-format",
+      "label": "BVH Format"
+    },
+    {
+      "slug": "c3-d-format",
+      "label": "C3D Format"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "camera-array",
+      "label": "Camera Array"
+    },
+    {
+      "slug": "cinematics",
+      "label": "Cinematics"
+    },
+    {
+      "slug": "cloth-simulation",
+      "label": "Cloth Simulation"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "creative-tools-domain",
+      "label": "CreativeToolsDomain"
+    },
+    {
+      "slug": "deep-lab-cut",
+      "label": "DeepLabCut"
+    },
+    {
+      "slug": "digital-human",
+      "label": "Digital Human"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "faceware",
+      "label": "Faceware"
+    },
+    {
+      "slug": "facial-animation",
+      "label": "Facial Animation"
+    },
+    {
+      "slug": "facial-capture-system",
+      "label": "Facial Capture System"
+    },
+    {
+      "slug": "fbx-format",
+      "label": "FBX Format"
+    },
+    {
+      "slug": "film-vfx",
+      "label": "Film VFX"
+    },
+    {
+      "slug": "games",
+      "label": "Games"
+    },
+    {
+      "slug": "geometric-algebra",
+      "label": "Geometric Algebra"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "imu-sensor-fusion",
+      "label": "IMU Sensor Fusion"
+    },
+    {
+      "slug": "imu-suit",
+      "label": "IMU Suit"
+    },
+    {
+      "slug": "infrared-lighting",
+      "label": "Infrared Lighting"
+    },
+    {
+      "slug": "keyframe-animation",
+      "label": "Keyframe Animation"
+    },
+    {
+      "slug": "media-pipe",
+      "label": "MediaPipe"
+    },
+    {
+      "slug": "medical-simulation",
+      "label": "Medical Simulation"
+    },
+    {
+      "slug": "opti-track",
+      "label": "OptiTrack"
+    },
+    {
+      "slug": "optical-flow",
+      "label": "Optical Flow"
+    },
+    {
+      "slug": "optical-tracking-system",
+      "label": "Optical Tracking System"
+    },
+    {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
+      "slug": "pipeline-layer",
+      "label": "PipelineLayer"
+    },
+    {
+      "slug": "qualisys",
+      "label": "Qualisys"
+    },
+    {
+      "slug": "real-time-animation",
+      "label": "Real-Time Animation"
+    },
+    {
+      "slug": "retargeting-solver",
+      "label": "Retargeting Solver"
+    },
+    {
+      "slug": "robotics-training-data",
+      "label": "Robotics Training Data"
+    },
+    {
+      "slug": "rokoko",
+      "label": "Rokoko"
+    },
+    {
+      "slug": "skeletal-animation",
+      "label": "Skeletal Animation"
+    },
+    {
+      "slug": "smpl-body-model",
+      "label": "SMPL Body Model"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "sports-analytics",
+      "label": "Sports Analytics"
+    },
+    {
+      "slug": "temporal-filtering",
+      "label": "Temporal Filtering"
+    },
+    {
+      "slug": "unity",
+      "label": "Unity"
+    },
+    {
+      "slug": "usd-pipeline",
+      "label": "USD Pipeline"
+    },
+    {
+      "slug": "vicon",
+      "label": "Vicon"
+    },
+    {
+      "slug": "video-rotoscoping",
+      "label": "Video Rotoscoping"
+    },
+    {
+      "slug": "xsens",
+      "label": "Xsens"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "procedural-animation",
+      "label": "Procedural Animation"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "volumetric-capture",
+      "label": "Volumetric Capture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "digital-actor-creation",
+      "label": "Digital Actor Creation"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

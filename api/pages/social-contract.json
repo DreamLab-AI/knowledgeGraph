@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:7838501f5cd34701a814d470651761ba3e48cabd08e2306e3725aa8290d0fe99",
+  "title": "Social Contract",
+  "slug": "social-contract",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:social-contract",
+  "domain": "infrastructure",
+  "definition": "A philosophical and political theory positing that individuals consent, either explicitly or tacitly, to surrender certain freedoms and submit to authority in exchange for protection of their remaining rights and maintenance of social order. The concept establishes that legitimate political authority derives from agreement among rational individuals rather than divine right or natural hierarchy.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:civil-society",
+        "label": "Civil Society"
+      },
+      {
+        "id": "urn:visionflow:linked:constitutional-law",
+        "label": "Constitutional Law"
+      },
+      {
+        "id": "urn:visionflow:owl:class:democratic-governance",
+        "label": "Democratic Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "civil-society",
+      "label": "Civil Society"
+    },
+    {
+      "slug": "constitutional-law",
+      "label": "Constitutional Law"
+    },
+    {
+      "slug": "political-philosophy",
+      "label": "Political Philosophy"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "democratic-governance",
+      "label": "Democratic Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    }
+  ]
+}

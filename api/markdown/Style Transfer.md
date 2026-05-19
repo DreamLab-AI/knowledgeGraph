@@ -1,24 +1,300 @@
-iri:: http://narrativegoldmine.com/spatial-computing#StyleTransfer
-uri:: urn:visionclaw:concept:spatial-computing:style-transfer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:style-transfer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Style Transfer
-content-hash:: sha256-12-9470c51e67a1
-legacy-term-id:: AI-0364
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#StyleTransfer
+legacy_uri:: urn:visionclaw:concept:spatial-computing:style-transfer
 public:: true
+
+# Style Transfer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6aa76778ec45f8da0e33c87c6073ab8116b5ef37d9388f7a34354dec52b6f2cd",
+  "@type": "Page",
+  "vc:slug": "style-transfer",
+  "title": "Style Transfer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:presentation",
+      "vc:label": "presentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:rework-based-on-gpt",
+      "vc:label": "rework based on gpt"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cyber-security-and-military",
+      "vc:label": "Cyber Security and Military"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
+      "vc:label": "Digital Society Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-to-image-translation",
+      "vc:label": "Image to Image Translation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microsoft-copilot",
+      "vc:label": "Microsoft Copilot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:style-transfer",
+      "vc:label": "style transfer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9470c51e67a1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#StyleTransfer"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0364"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Style Transfer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:style-transfer"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:style-transfer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6aa76778ec45f8da0e33c87c6073ab8116b5ef37d9388f7a34354dec52b6f2cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:style-transfer",
+  "@type": "OntologyClass",
+  "label": "Style Transfer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:image-to-image-translation",
+      "vc:label": "Image to Image Translation"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6aa76778ec45f8da0e33c87c6073ab8116b5ef37d9388f7a34354dec52b6f2cd"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6aa76778ec45f8da0e33c87c6073ab8116b5ef37d9388f7a34354dec52b6f2cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another. Neural style transfer employs convolutional neural networks to separate and recombine content and style representations, enabling artistic rendering, photo enhancement, and creative visual effects.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:style-transfer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6aa76778ec45f8da0e33c87c6073ab8116b5ef37d9388f7a34354dec52b6f2cd"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[presentation]]",
+      "resolved": "urn:visionflow:linked:presentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[rework based on gpt]]",
+      "resolved": "urn:visionflow:linked:rework-based-on-gpt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cyber Security and Military]]",
+      "resolved": "urn:visionflow:owl:class:cyber-security-and-military",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Society Surveillance]]",
+      "resolved": "urn:visionflow:owl:class:digital-society-surveillance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image Generation]]",
+      "resolved": "urn:visionflow:owl:class:image-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image to Image Translation]]",
+      "resolved": "urn:visionflow:owl:class:image-to-image-translation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microsoft Copilot]]",
+      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[style transfer]]",
+      "resolved": "urn:visionflow:owl:class:style-transfer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6aa76778ec45f8da0e33c87c6073ab8116b5ef37d9388f7a34354dec52b6f2cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another. Neural style transfer employs convolutional neural networks to separate and recombine content and style representations, enabling artistic rendering, photo enhancement, and creative visual effects.
@@ -282,7 +558,7 @@ public:: true
   - They are billing this as the most radical uplift to Windows ever.
   - <iframe src="https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/" style="width: 100%; height: 600px"></iframe>
   - Features for workspaces [GitHub Copilot just got exponentially smarter YouTube](https://www.youtube.com/watch?v=SZVCJRUADc4)
-  - [[Microsoft CoPilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
+  - [[Microsoft Copilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
 
   - ## Audio as an essential intimate modality
   - <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/44yEyYZV2TJf4cvVumysC5?utm_source=generator&t=62107" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -291,7 +567,7 @@ public:: true
   - They are billing this as the most radical uplift to Windows ever.
   - <iframe src="https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/" style="width: 100%; height: 600px"></iframe>
   - Features for workspaces [GitHub Copilot just got exponentially smarter YouTube](https://www.youtube.com/watch?v=SZVCJRUADc4)
-  - [[Microsoft CoPilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
+  - [[Microsoft Copilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
 
   - ## Dreamlab
   - I'm associate director, and the Spatial AI Lead for an emerging media innovation lab, supporting human storytelling with immersive and AI tech.
@@ -319,7 +595,7 @@ public:: true
   - They are billing this as the most radical uplift to Windows ever.
   - <iframe src="https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/" style="width: 100%; height: 600px"></iframe>
   - Features for workspaces [GitHub Copilot just got exponentially smarter YouTube](https://www.youtube.com/watch?v=SZVCJRUADc4)
-  - [[Microsoft CoPilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
+  - [[Microsoft Copilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
 
   - ## Dreamlab
   - I'm associate director, and the Spatial AI Lead for an emerging media innovation lab, supporting human storytelling with immersive and AI tech.
@@ -364,7 +640,7 @@ public:: true
   ## See Also
 
   - [[Image Generation]]
-  - [[Image-to-Image Translation]]
+  - [[Image to Image Translation]]
   - [[Convolutional Neural Network]]
 
   ## Core Characteristics
@@ -391,7 +667,7 @@ public:: true
   ## See Also
 
   - [[Image Generation]]
-  - [[Image-to-Image Translation]]
+  - [[Image to Image Translation]]
   - [[Convolutional Neural Network]]
 
 - ### Provenance

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:d442c028a064e55bb8f6834c82d517ecf10de46c24a468576a19e7cefbace2e2",
+  "title": "Data Processing Hardware",
+  "slug": "data-processing-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-processing-hardware",
+  "domain": "infrastructure",
+  "definition": "The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and distributed computing.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cooling-systems",
+        "label": "Cooling Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:power-infrastructure",
+        "label": "Power Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-processing",
+        "label": "AI Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-processing",
+      "label": "AI Processing"
+    },
+    {
+      "slug": "cooling-systems",
+      "label": "Cooling Systems"
+    },
+    {
+      "slug": "high-bandwidth-memory",
+      "label": "High-Bandwidth Memory"
+    },
+    {
+      "slug": "immersive-computing",
+      "label": "Immersive Computing"
+    },
+    {
+      "slug": "power-infrastructure",
+      "label": "Power Infrastructure"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "computing-infrastructure",
+      "label": "Computing Infrastructure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    }
+  ]
+}

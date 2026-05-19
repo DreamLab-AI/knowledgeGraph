@@ -1,0 +1,551 @@
+{
+  "id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824",
+  "title": "Telecollaboration",
+  "slug": "telecollaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:telecollaboration",
+  "domain": "distributed-collaboration",
+  "definition": "\"The process of individuals or groups working together towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-located teamwork.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-workspaces",
+        "label": "Virtual Workspaces"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:coordination-mechanisms",
+        "label": "CoordinationMechanisms"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-protocols",
+        "label": "Real-Time Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-cultural-teamwork",
+        "label": "Cross-Cultural Teamwork"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-knowledge-work",
+        "label": "Distributed Knowledge Work"
+      },
+      {
+        "id": "urn:visionflow:linked:global-research-collaboration",
+        "label": "Global Research Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-team-productivity",
+        "label": "Remote Team Productivity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-object-manipulation",
+      "label": "3D Object Manipulation"
+    },
+    {
+      "slug": "communication-infrastructure",
+      "label": "Communication Infrastructure"
+    },
+    {
+      "slug": "coordination-mechanisms",
+      "label": "CoordinationMechanisms"
+    },
+    {
+      "slug": "cross-cultural-teamwork",
+      "label": "Cross-Cultural Teamwork"
+    },
+    {
+      "slug": "distributed-knowledge-work",
+      "label": "Distributed Knowledge Work"
+    },
+    {
+      "slug": "global-research-collaboration",
+      "label": "Global Research Collaboration"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "slug": "real-time-protocols",
+      "label": "Real-Time Protocols"
+    },
+    {
+      "slug": "remote-team-productivity",
+      "label": "Remote Team Productivity"
+    },
+    {
+      "slug": "tele-003-social-presence-theory",
+      "label": "TELE-003-social-presence-theory"
+    },
+    {
+      "slug": "tele-005-common-ground-theory",
+      "label": "TELE-005-common-ground-theory"
+    },
+    {
+      "slug": "tele-010-synchronous-collaboration",
+      "label": "TELE-010-synchronous-collaboration"
+    },
+    {
+      "slug": "tele-011-asynchronous-collaboration",
+      "label": "TELE-011-asynchronous-collaboration"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform"
+    },
+    {
+      "slug": "tele-028-horizon-workrooms",
+      "label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-105-real-time-language-translation",
+      "label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "slug": "tele-107-ai-meeting-assistants",
+      "label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-151-real-time-protocols",
+      "label": "TELE-151-real-time-protocols"
+    },
+    {
+      "slug": "tele-153-5g-telepresence",
+      "label": "TELE-153-5g-telepresence"
+    },
+    {
+      "slug": "tele-251-smart-contract-coordination",
+      "label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "slug": "tele-301-virtual-office-spaces",
+      "label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "slug": "tele-302-shared-whiteboards",
+      "label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "slug": "virtual-workspaces",
+      "label": "Virtual Workspaces"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "distributed-work",
+      "label": "DistributedWork"
+    },
+    {
+      "slug": "synchronous-collaboration",
+      "label": "Synchronous Collaboration"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aidomain",
+      "label": "AIDomain"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "accessibility-standards",
+      "label": "Accessibility Standards"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "agreement-protocol",
+      "label": "Agreement Protocol"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "attention-mask",
+      "label": "Attention Mask"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
+      "slug": "augmented-connected-workforce",
+      "label": "Augmented Connected Workforce"
+    },
+    {
+      "slug": "automated-summarization",
+      "label": "Automated Summarization"
+    },
+    {
+      "slug": "avatar-wearable",
+      "label": "Avatar Wearable"
+    },
+    {
+      "slug": "barton-road-changes",
+      "label": "barton-road-changes"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "character-relationship-graph",
+      "label": "Character Relationship Graph"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "cognitive-load-metric",
+      "label": "Cognitive Load Metric"
+    },
+    {
+      "slug": "collaboration-technology",
+      "label": "Collaboration Technology"
+    },
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    },
+    {
+      "slug": "communication-software",
+      "label": "Communication Software"
+    },
+    {
+      "slug": "communication-theory",
+      "label": "Communication Theory"
+    },
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "content-moderation-standards",
+      "label": "Content Moderation Standards"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "controlled-vocabularies",
+      "label": "Controlled Vocabularies"
+    },
+    {
+      "slug": "cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "decentralization",
+      "label": "Decentralization"
+    },
+    {
+      "slug": "definitions-and-frameworks-for-metaverse",
+      "label": "Definitions and frameworks for Metaverse"
+    },
+    {
+      "slug": "democratic-engagement",
+      "label": "Democratic Engagement"
+    },
+    {
+      "slug": "democratic-values",
+      "label": "Democratic Values"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-dualism",
+      "label": "Digital Dualism"
+    },
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    },
+    {
+      "slug": "digital-safety",
+      "label": "Digital Safety"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    },
+    {
+      "slug": "digital-society",
+      "label": "Digital Society"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "digital-well-being-index",
+      "label": "Digital Well-Being Index"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "etsi-domain-ai-human-interface",
+      "label": "ETSI Domain AI + Human Interface"
+    },
+    {
+      "slug": "etsi-domain-application-education",
+      "label": "ETSI Domain Application + Education"
+    },
+    {
+      "slug": "etsi-domain-application-health",
+      "label": "ETSI Domain Application + Health"
+    },
+    {
+      "slug": "etsi-domain-application-tourism",
+      "label": "ETSI Domain Application + Tourism"
+    },
+    {
+      "slug": "etsi-domain-data-management-cultural-heritage",
+      "label": "ETSI Domain: Data Management + Cultural Heritage"
+    },
+    {
+      "slug": "etsi-domain-governance-society",
+      "label": "ETSI_Domain_Governance___Society"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "immersive-communication",
+      "label": "Immersive Communication"
+    },
+    {
+      "slug": "immersive-entertainment",
+      "label": "Immersive Entertainment"
+    },
+    {
+      "slug": "inclusive-xr-experience",
+      "label": "Inclusive Xr Experience"
+    },
+    {
+      "slug": "metaverse-navigation-systems",
+      "label": "Metaverse Navigation Systems"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "non-linear-storytelling",
+      "label": "Non Linear Storytelling"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "shared-spatial-anchors",
+      "label": "Shared Spatial Anchors"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    },
+    {
+      "slug": "virtual-meeting",
+      "label": "Virtual Meeting"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

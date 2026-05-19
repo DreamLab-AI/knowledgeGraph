@@ -1,0 +1,219 @@
+{
+  "id": "urn:visionflow:page:04a364eacf6f3ef8d27eeb37f6974ac64cfab30dcc0cef5af57e8c87c9b13169",
+  "title": "Context Awareness",
+  "slug": "context-awareness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:context-awareness",
+  "domain": "spatial-computing",
+  "definition": "The capability of computing systems to sense, interpret, and respond to environmental conditions, user state, situational factors, and contextual information to dynamically adapt behavior and deliver personalized experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:behavioral-adaptation",
+        "label": "Behavioral Adaptation"
+      },
+      {
+        "id": "urn:visionflow:linked:context-modeling",
+        "label": "Context Modeling"
+      },
+      {
+        "id": "urn:visionflow:linked:environmental-sensing",
+        "label": "Environmental Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:situational-inference",
+        "label": "Situational Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:user-state-detection",
+        "label": "User State Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:decision-logic",
+        "label": "Decision Logic"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-interfaces",
+        "label": "Adaptive Interfaces"
+      },
+      {
+        "id": "urn:visionflow:linked:ambient-intelligence",
+        "label": "Ambient Intelligence"
+      },
+      {
+        "id": "urn:visionflow:linked:personalized-experiences",
+        "label": "Personalized Experiences"
+      },
+      {
+        "id": "urn:visionflow:linked:proactive-services",
+        "label": "Proactive Services"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-environments",
+        "label": "Smart Environments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-computing",
+      "label": "Adaptive Computing"
+    },
+    {
+      "slug": "adaptive-interfaces",
+      "label": "Adaptive Interfaces"
+    },
+    {
+      "slug": "ambient-intelligence",
+      "label": "Ambient Intelligence"
+    },
+    {
+      "slug": "behavioral-adaptation",
+      "label": "Behavioral Adaptation"
+    },
+    {
+      "slug": "context-modeling",
+      "label": "Context Modeling"
+    },
+    {
+      "slug": "decision-logic",
+      "label": "Decision Logic"
+    },
+    {
+      "slug": "environmental-sensing",
+      "label": "Environmental Sensing"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF Taxonomy"
+    },
+    {
+      "slug": "ieee-p2048-3",
+      "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "io-t-infrastructure",
+      "label": "IoT Infrastructure"
+    },
+    {
+      "slug": "iso-iec-30141",
+      "label": "ISO/IEC 30141"
+    },
+    {
+      "slug": "personalized-experiences",
+      "label": "Personalized Experiences"
+    },
+    {
+      "slug": "pervasive-computing",
+      "label": "Pervasive Computing"
+    },
+    {
+      "slug": "proactive-services",
+      "label": "Proactive Services"
+    },
+    {
+      "slug": "real-time-analytics",
+      "label": "Real-Time Analytics"
+    },
+    {
+      "slug": "semantic-reasoning",
+      "label": "Semantic Reasoning"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "situational-inference",
+      "label": "Situational Inference"
+    },
+    {
+      "slug": "smart-environments",
+      "label": "Smart Environments"
+    },
+    {
+      "slug": "user-state-detection",
+      "label": "User State Detection"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "intelligent-systems",
+      "label": "Intelligent Systems"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    }
+  ]
+}

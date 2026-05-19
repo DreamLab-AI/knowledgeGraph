@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:1ead2bcc227f5802f2aab44314744ccce166183fc43796824c49d979ab8f304c",
+  "title": "E-Commerce",
+  "slug": "e-commerce",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:e-commerce",
+  "domain": "spatial-computing",
+  "definition": "E Commerce is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "digital-marketplace",
+      "label": "Digital Marketplace"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

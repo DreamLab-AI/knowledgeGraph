@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:21c3bc462095579d3e9e1feb7d1093cbfc23ac4dea58c7e0faab3bb7da294833",
+  "title": "Carbon Offset Certificate",
+  "slug": "carbon-offset-certificate",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-offset-certificate",
+  "domain": "spatial-computing",
+  "definition": "A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:environmental-certificate",
+      "label": "Environmental Certificate"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:project-verification",
+        "label": "Project Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:registry-issuance",
+        "label": "Registry Issuance"
+      },
+      {
+        "id": "urn:visionflow:linked:third-party-validation",
+        "label": "Third Party Validation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:visionflow:linked:climate-investment",
+        "label": "Climate Investment"
+      },
+      {
+        "id": "urn:visionflow:linked:emissions-compensation",
+        "label": "Emissions Compensation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-neutrality",
+      "label": "Carbon Neutrality"
+    },
+    {
+      "slug": "climate-investment",
+      "label": "Climate Investment"
+    },
+    {
+      "slug": "emissions-compensation",
+      "label": "Emissions Compensation"
+    },
+    {
+      "slug": "project-verification",
+      "label": "Project Verification"
+    },
+    {
+      "slug": "registry-issuance",
+      "label": "Registry Issuance"
+    },
+    {
+      "slug": "third-party-validation",
+      "label": "Third Party Validation"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "environmental-certificate",
+      "label": "Environmental Certificate"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    }
+  ]
+}

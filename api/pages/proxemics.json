@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:31e1f3bc8ed97c0da74e74840a69a48e03efab41c51a4d114054c7236dfa0448",
+  "title": "Proxemics",
+  "slug": "proxemics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proxemics",
+  "domain": "robotics",
+  "definition": "Study and application of spatial relationships between humans and robots, including personal space, social distance, and comfort zones for effective human-robot interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hri",
+      "label": "HRI"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,504 @@
+{
+  "id": "urn:visionflow:page:d29a7910d3326991675304cebc76f2ef09523d7100a9a028f01168dc48df6958",
+  "title": "Segmentation and Identification",
+  "slug": "segmentation-and-identification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:segmentation-and-identification",
+  "domain": "computer-vision",
+  "definition": "Segmentation and Identification is a foundational computer vision subdomain encompassing the computational processes of partitioning digital images and video frames into semantically meaningful regions and assigning categorical or instance-level identities to those regions. It spans four classical problem formulations \u2014 semantic segmentation (assigning a class label to every pixel without distinguishing object instances), instance segmentation (delineating each individual object occurrence with a unique mask), panoptic segmentation (unifying semantic and instance pipelines to produce a comprehensive scene parse where every pixel is assigned both a class and optionally an instance identity), and promptable/interactive segmentation (producing masks on demand from sparse user cues such as points, boxes, or free-form text) \u2014 as well as the emerging open-vocabulary paradigm in which arbitrary user-specified categories replace fixed taxonomies at inference time. Modern segmentation architectures exploit transformer-based masked-attention mechanisms (Mask2Former CVPR 2022, SegFormer NeurIPS 2021), convolutional encoder-decoder backbones (DeepLab V3+, U-Net), region-proposal networks (Mask",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:image-analysis",
+      "label": "Image Analysis"
+    },
+    {
+      "id": "urn:visionflow:linked:object-recognition",
+      "label": "Object Recognition"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:scene-understanding",
+      "label": "Scene Understanding"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:mask-decoder",
+        "label": "Mask Decoder"
+      },
+      {
+        "id": "urn:visionflow:linked:medical-segmentation",
+        "label": "Medical Segmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:open-vocabulary-segmentation",
+        "label": "Open-Vocabulary Segmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:pixel-classification-head",
+        "label": "Pixel Classification Head"
+      },
+      {
+        "id": "urn:visionflow:linked:promptable-segmentation",
+        "label": "Promptable Segmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:video-object-segmentation",
+        "label": "Video Object Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:annotated-training-data",
+        "label": "Annotated Training Data"
+      },
+      {
+        "id": "urn:visionflow:linked:backbone-network",
+        "label": "Backbone Network"
+      },
+      {
+        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ar-content-removal",
+        "label": "AR Content Removal"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-quality-control",
+        "label": "Industrial Quality Control"
+      },
+      {
+        "id": "urn:visionflow:linked:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:satellite-earth-observation",
+        "label": "Satellite Earth Observation"
+      },
+      {
+        "id": "urn:visionflow:linked:surgical-robotics-vision",
+        "label": "Surgical Robotics Vision"
+      },
+      {
+        "id": "urn:visionflow:linked:video-editing-automation",
+        "label": "Video Editing Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:deep-lab",
+        "label": "DeepLab"
+      },
+      {
+        "id": "urn:visionflow:linked:detr",
+        "label": "DETR"
+      },
+      {
+        "id": "urn:visionflow:linked:grounded-sam",
+        "label": "Grounded SAM"
+      },
+      {
+        "id": "urn:visionflow:linked:mask-r-cnn",
+        "label": "Mask R-CNN"
+      },
+      {
+        "id": "urn:visionflow:linked:mask2-former",
+        "label": "Mask2Former"
+      },
+      {
+        "id": "urn:visionflow:linked:med-sam",
+        "label": "MedSAM"
+      },
+      {
+        "id": "urn:visionflow:linked:nn-unet",
+        "label": "nnUNet"
+      },
+      {
+        "id": "urn:visionflow:linked:owlv2",
+        "label": "OWLv2"
+      },
+      {
+        "id": "urn:visionflow:linked:panoptic-fpn",
+        "label": "Panoptic FPN"
+      },
+      {
+        "id": "urn:visionflow:linked:sam-2",
+        "label": "SAM 2"
+      },
+      {
+        "id": "urn:visionflow:linked:seg-former",
+        "label": "SegFormer"
+      },
+      {
+        "id": "urn:visionflow:linked:segment-anything-model",
+        "label": "Segment Anything Model"
+      },
+      {
+        "id": "urn:visionflow:linked:x-decoder",
+        "label": "X-Decoder"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "aiperception-domain",
+      "label": "AIPerceptionDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "annotated-training-data",
+      "label": "Annotated Training Data"
+    },
+    {
+      "slug": "ar-content-removal",
+      "label": "AR Content Removal"
+    },
+    {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "backbone-network",
+      "label": "Backbone Network"
+    },
+    {
+      "slug": "bdd100-k",
+      "label": "BDD100K"
+    },
+    {
+      "slug": "cityscapes-benchmark",
+      "label": "Cityscapes Benchmark"
+    },
+    {
+      "slug": "cityscapes-evaluation",
+      "label": "Cityscapes Evaluation"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "coco-benchmark",
+      "label": "COCO Benchmark"
+    },
+    {
+      "slug": "coco-dataset",
+      "label": "COCO Dataset"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "deep-lab",
+      "label": "DeepLab"
+    },
+    {
+      "slug": "detr",
+      "label": "DETR"
+    },
+    {
+      "slug": "dice-loss",
+      "label": "Dice Loss"
+    },
+    {
+      "slug": "feature-pyramid-network",
+      "label": "Feature Pyramid Network"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "grounded-sam",
+      "label": "Grounded SAM"
+    },
+    {
+      "slug": "hungarian-matching",
+      "label": "Hungarian Matching"
+    },
+    {
+      "slug": "image-analysis",
+      "label": "Image Analysis"
+    },
+    {
+      "slug": "image-embeddings",
+      "label": "Image Embeddings"
+    },
+    {
+      "slug": "industrial-quality-control",
+      "label": "Industrial Quality Control"
+    },
+    {
+      "slug": "io-u-metric",
+      "label": "IoU Metric"
+    },
+    {
+      "slug": "mask-decoder",
+      "label": "Mask Decoder"
+    },
+    {
+      "slug": "mask-r-cnn",
+      "label": "Mask R-CNN"
+    },
+    {
+      "slug": "mask2-former",
+      "label": "Mask2Former"
+    },
+    {
+      "slug": "mean-average-precision",
+      "label": "Mean Average Precision"
+    },
+    {
+      "slug": "med-sam",
+      "label": "MedSAM"
+    },
+    {
+      "slug": "medical-image-analysis",
+      "label": "Medical Image Analysis"
+    },
+    {
+      "slug": "medical-imaging-domain",
+      "label": "MedicalImagingDomain"
+    },
+    {
+      "slug": "medical-segmentation",
+      "label": "Medical Segmentation"
+    },
+    {
+      "slug": "medical-segmentation-decathlon",
+      "label": "Medical Segmentation Decathlon"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "nn-unet",
+      "label": "nnUNet"
+    },
+    {
+      "slug": "nu-scenes",
+      "label": "nuScenes"
+    },
+    {
+      "slug": "object-recognition",
+      "label": "Object Recognition"
+    },
+    {
+      "slug": "open-vocabulary-segmentation",
+      "label": "Open-Vocabulary Segmentation"
+    },
+    {
+      "slug": "optical-flow",
+      "label": "Optical Flow"
+    },
+    {
+      "slug": "owlv2",
+      "label": "OWLv2"
+    },
+    {
+      "slug": "panoptic-fpn",
+      "label": "Panoptic FPN"
+    },
+    {
+      "slug": "panoptic-quality-metric",
+      "label": "Panoptic Quality Metric"
+    },
+    {
+      "slug": "pascal-voc-protocol",
+      "label": "Pascal VOC Protocol"
+    },
+    {
+      "slug": "pixel-classification-head",
+      "label": "Pixel Classification Head"
+    },
+    {
+      "slug": "promptable-segmentation",
+      "label": "Promptable Segmentation"
+    },
+    {
+      "slug": "sam-2",
+      "label": "SAM 2"
+    },
+    {
+      "slug": "satellite-earth-observation",
+      "label": "Satellite Earth Observation"
+    },
+    {
+      "slug": "seg-former",
+      "label": "SegFormer"
+    },
+    {
+      "slug": "segment-anything-model",
+      "label": "Segment Anything Model"
+    },
+    {
+      "slug": "surgical-robotics-vision",
+      "label": "Surgical Robotics Vision"
+    },
+    {
+      "slug": "video-editing-automation",
+      "label": "Video Editing Automation"
+    },
+    {
+      "slug": "video-object-segmentation",
+      "label": "Video Object Segmentation"
+    },
+    {
+      "slug": "visual-foundation-models",
+      "label": "Visual Foundation Models"
+    },
+    {
+      "slug": "x-decoder",
+      "label": "X-Decoder"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "human-tracking-and-slam-capture",
+      "label": "Human tracking and SLAM capture"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "panoptic-segmentation",
+      "label": "Panoptic Segmentation"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "knowhere",
+      "label": "Knowhere"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

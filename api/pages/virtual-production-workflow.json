@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:13190b890fc8aa05792d6e1e01667c4cc0bda3412a8eb8cc9840348319965ad0",
+  "title": "Virtual Production Workflow",
+  "slug": "virtual-production-workflow",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-production-workflow",
+  "domain": "spatial-computing",
+  "definition": "The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualization, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work begins in pre-production rather than post-production.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:production-pipeline",
+      "label": "Production Pipeline"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "production-pipeline",
+      "label": "Production Pipeline"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

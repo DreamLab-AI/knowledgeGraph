@@ -1,21 +1,189 @@
-iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureSecurity
-uri:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructuresecurity
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructuresecurity
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: ETSI_Domain_Infrastructure___Security
-content-hash:: sha256-12-734307b2241c
-legacy-term-id:: MV-2014
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureSecurity
+legacy_uri:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructuresecurity
 public:: true
+
+# ETSI_Domain_Infrastructure___Security
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-infrastructure-security",
+  "title": "ETSI_Domain_Infrastructure___Security",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quantum-network-node",
+      "vc:label": "Quantum Network Node"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-734307b2241c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureSecurity"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2014"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Infrastructure___Security"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsidomaininfrastructuresecurity"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsidomaininfrastructuresecurity"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure-security",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Infrastructure___Security",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications. Infrastructure security integrates NFV architectural frameworks (ETSI NFV v6.1.1), cross-domain authentication standards (ETSI GS PDL 027) promoting multi-party trust models, and decentralised identity systems addressing ultra-edge and terminal-edge deployment requirements. Coordination with 3GPP and ITU-T ensures alignment on metaverse infrastructure security requirements whilst addressing challenges in standardising interoperability across platforms, automating security lifecycle management, and balancing decentralised identity privacy with regulatory compliance under UK and EU data protection frameworks.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-security:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quantum Network Node]]",
+      "resolved": "urn:visionflow:owl:class:quantum-network-node",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications. Infrastructure security integrates NFV architectural frameworks (ETSI NFV v6.1.1), cross-domain authentication standards (ETSI GS PDL 027) promoting multi-party trust models, and decentralised identity systems addressing ultra-edge and terminal-edge deployment requirements. Coordination with 3GPP and ITU-T ensures alignment on metaverse infrastructure security requirements whilst addressing challenges in standardising interoperability across platforms, automating security lifecycle management, and balancing decentralised identity privacy with regulatory compliance under UK and EU data protection frameworks.

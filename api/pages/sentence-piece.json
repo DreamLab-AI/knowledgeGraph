@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:a028837713d6b63b3fab97ccd87c49afdd8facfea2a4dad27b1a747c3e6dfdf2",
+  "title": "SentencePiece",
+  "slug": "sentence-piece",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sentence-piece",
+  "domain": "artificial-intelligence",
+  "definition": "A language-independent tokenisation library that treats input as a raw stream and learns subword units directly from raw text without pre-tokenisation, enabling purely end-to-end systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tokenisation",
+      "label": "Tokenisation"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

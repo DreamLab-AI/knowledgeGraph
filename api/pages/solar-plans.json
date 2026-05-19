@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:cdcf9625d9bc4bcfa7d3742a96bb4f1db89058e4e0271e5bc88d9cba7332ddcb",
+  "title": "solar plans",
+  "slug": "solar-plans",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:solar-plans",
+  "domain": "infrastructure",
+  "definition": "solar plans is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "house",
+      "label": "house"
+    }
+  ]
+}

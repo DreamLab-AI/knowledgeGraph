@@ -1,0 +1,560 @@
+{
+  "id": "urn:visionflow:page:b5e0d0fade3b8147c5fcebfb8792530d9ba53347f51ab6ee3ce3f05eec0b3196",
+  "title": "Identity Provider",
+  "slug": "identity-provider",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:identity-provider",
+  "domain": "security",
+  "definition": "An [[Identity Provider]] (IdP) is a specialised security system that authenticates principals \u2014 humans, service accounts, devices, and workloads \u2014 and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, operating within trust frameworks governed by open federation protocols ([[SAML]] 2.0, [[OAuth]] 2.0, [[OpenID Connect]] 1.0/FAPI 2.0, [[SCIM]] 2.0) and implementing credential lifecycle management (registration, provisioning, [[Multi-Factor Authentication|multi-factor authentication]], session management, credential rotation, revocation) across B2E (business-to-employee) workforce environments, B2C (business-to-consumer) customer-facing deployments, B2B federation spanning organisational boundaries, and M2M (machine-to-machine) workload identity. The commercial IdP market is dominated by Okta (22,000+ customers, $2.25B FY2026 revenue), Microsoft Entra ID (formerly Azure Active Directory, 700M+ tenants, 1.3B monthly active users), Auth0 (acquired by Okta 2021, $6.5B, developer-focused), Ping Identity (acquired by Thales 2023, $2.8B, enterprise), ForgeRock (acquired by Ping Identity/Thales 2023,",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:security-infrastructure",
+      "label": "Security Infrastructure"
+    },
+    {
+      "id": "urn:visionflow:linked:trust-service",
+      "label": "Trust Service"
+    },
+    {
+      "id": "urn:visionflow:owl:class:access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "id": "urn:visionflow:owl:class:identity-management-system",
+      "label": "Identity Management System"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:visionflow:linked:authentication-engine",
+        "label": "Authentication Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-store",
+        "label": "Credential Store"
+      },
+      {
+        "id": "urn:visionflow:linked:federation-gateway",
+        "label": "Federation Gateway"
+      },
+      {
+        "id": "urn:visionflow:linked:mfa-module",
+        "label": "MFA Module"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-engine",
+        "label": "Risk Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:token-issuance-service",
+        "label": "Token Issuance Service"
+      },
+      {
+        "id": "urn:visionflow:linked:user-directory",
+        "label": "User Directory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:directory-service",
+        "label": "Directory Service"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:visionflow:linked:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:continuous-authentication",
+        "label": "Continuous Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:delegated-authorization",
+        "label": "Delegated Authorization"
+      },
+      {
+        "id": "urn:visionflow:linked:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-governance",
+        "label": "Identity Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:passkey-authentication",
+        "label": "Passkey Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:visionflow:linked:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:visionflow:linked:kerberos",
+        "label": "Kerberos"
+      },
+      {
+        "id": "urn:visionflow:linked:ldap",
+        "label": "LDAP"
+      },
+      {
+        "id": "urn:visionflow:linked:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:visionflow:linked:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:visionflow:linked:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:visionflow:linked:scim",
+        "label": "SCIM"
+      },
+      {
+        "id": "urn:visionflow:linked:web-authn",
+        "label": "WebAuthn"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-log",
+      "label": "Audit Log"
+    },
+    {
+      "slug": "authentication-engine",
+      "label": "Authentication Engine"
+    },
+    {
+      "slug": "b2-c-identity",
+      "label": "B2C Identity"
+    },
+    {
+      "slug": "b2-e-identity",
+      "label": "B2E Identity"
+    },
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    },
+    {
+      "slug": "continuous-authentication",
+      "label": "Continuous Authentication"
+    },
+    {
+      "slug": "credential-store",
+      "label": "Credential Store"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "delegated-authorization",
+      "label": "Delegated Authorization"
+    },
+    {
+      "slug": "directory-service",
+      "label": "Directory Service"
+    },
+    {
+      "slug": "federated-identity",
+      "label": "Federated Identity"
+    },
+    {
+      "slug": "federation-gateway",
+      "label": "Federation Gateway"
+    },
+    {
+      "slug": "fido-alliance",
+      "label": "FIDO Alliance"
+    },
+    {
+      "slug": "fido2",
+      "label": "FIDO2"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    },
+    {
+      "slug": "identity-and-access-management-domain",
+      "label": "IdentityAndAccessManagementDomain"
+    },
+    {
+      "slug": "identity-governance",
+      "label": "Identity Governance"
+    },
+    {
+      "slug": "identity-governance",
+      "label": "Identity Governance"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "json-web-signature",
+      "label": "JSON Web Signature"
+    },
+    {
+      "slug": "json-web-token",
+      "label": "JSON Web Token"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "ldap",
+      "label": "LDAP"
+    },
+    {
+      "slug": "mfa-module",
+      "label": "MFA Module"
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "oasis",
+      "label": "OASIS"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
+      "slug": "open-id-connect",
+      "label": "OpenID Connect"
+    },
+    {
+      "slug": "open-id-foundation",
+      "label": "OpenID Foundation"
+    },
+    {
+      "slug": "passkey-authentication",
+      "label": "Passkey Authentication"
+    },
+    {
+      "slug": "passwordless-authentication",
+      "label": "Passwordless Authentication"
+    },
+    {
+      "slug": "pkce",
+      "label": "PKCE"
+    },
+    {
+      "slug": "privileged-access-management",
+      "label": "Privileged Access Management"
+    },
+    {
+      "slug": "push-notification",
+      "label": "Push Notification"
+    },
+    {
+      "slug": "risk-based-authentication",
+      "label": "Risk-Based Authentication"
+    },
+    {
+      "slug": "risk-engine",
+      "label": "Risk Engine"
+    },
+    {
+      "slug": "saml",
+      "label": "SAML"
+    },
+    {
+      "slug": "scim",
+      "label": "SCIM"
+    },
+    {
+      "slug": "security-domain",
+      "label": "SecurityDomain"
+    },
+    {
+      "slug": "security-infrastructure",
+      "label": "Security Infrastructure"
+    },
+    {
+      "slug": "session-manager",
+      "label": "Session Manager"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "social-login",
+      "label": "Social Login"
+    },
+    {
+      "slug": "token-issuance-service",
+      "label": "Token Issuance Service"
+    },
+    {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
+      "slug": "trust-service",
+      "label": "Trust Service"
+    },
+    {
+      "slug": "user-directory",
+      "label": "User Directory"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "web-authn",
+      "label": "WebAuthn"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "zero-trust-domain",
+      "label": "ZeroTrustDomain"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    },
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "digital-identity-standards",
+      "label": "Digital Identity Standards"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-authentication-architecture",
+      "label": "Distributed Authentication Architecture"
+    },
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

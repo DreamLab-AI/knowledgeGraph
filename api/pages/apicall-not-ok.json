@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:02ca394bcdef990d1740dc557a48f67f686038619c0f719cbdaf5147b575a77a",
+  "title": "apicall-not-ok",
+  "slug": "apicall-not-ok",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:apicall-not-ok",
+  "domain": "infrastructure",
+  "definition": "apicall-not-ok is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-tests-status",
+      "label": "api-tests-status"
+    }
+  ]
+}

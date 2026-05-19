@@ -1,22 +1,256 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#3dGaussianSplatting
-uri:: urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: 3D Gaussian Splatting
-content-hash:: sha256-12-961d0e7e912b
-legacy-term-id:: TC-0051
-status:: active
-maturity:: developing
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#3dGaussianSplatting
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# 3D Gaussian Splatting
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7",
+  "@type": "Page",
+  "vc:slug": "3-d-gaussian-splatting",
+  "title": "3D Gaussian Splatting",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:differentiable-rendering",
+      "vc:label": "DifferentiableRendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:photorealistic-telepresence",
+      "vc:label": "PhotorealisticTelepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "vc:label": "TELE-050-neural-rendering-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-052-neural-radiance-fields",
+      "vc:label": "TELE-052-neural-radiance-fields"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
+      "vc:label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-060-instant-ngp",
+      "vc:label": "TELE-060-instant-ngp"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-961d0e7e912b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#3dGaussianSplatting"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0051"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "3D Gaussian Splatting"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+  "@type": "OntologyClass",
+  "label": "3D Gaussian Splatting",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "vc:label": "TELE-050-neural-rendering-telepresence"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"A neural rendering technique that represents 3D scenes as collections of millions of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepresence and immersive collaboration with unprecedented visual fidelity.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:differentiable-rendering",
+      "vc:label": "DifferentiableRendering"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:photorealistic-telepresence",
+      "vc:label": "PhotorealisticTelepresence"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-gaussian-splatting:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[DifferentiableRendering]]",
+      "resolved": "urn:visionflow:linked:differentiable-rendering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PhotorealisticTelepresence]]",
+      "resolved": "urn:visionflow:linked:photorealistic-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-050-neural-rendering-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-052-neural-radiance-fields]]",
+      "resolved": "urn:visionflow:linked:tele-052-neural-radiance-fields",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-053-volumetric-video-conferencing]]",
+      "resolved": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-060-instant-ngp]]",
+      "resolved": "urn:visionflow:linked:tele-060-instant-ngp",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "A neural rendering technique that represents 3D scenes as collections of millions of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepresence and immersive collaboration with unprecedented visual fidelity."

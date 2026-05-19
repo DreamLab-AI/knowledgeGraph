@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:9686491391056aefc8952b1080a34c19c825e84b45126748f47372ca4bc996fd",
+  "title": "Proportional Control",
+  "slug": "proportional-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proportional-control",
+  "domain": "robotics",
+  "definition": "Proportional control applies gain to current error signal.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:feedback-control",
+      "label": "Feedback Control"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "derivative-control",
+      "label": "Derivative Control"
+    }
+  ]
+}

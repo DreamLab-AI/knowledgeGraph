@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:b461d9a1db035b22ef89fbbe345b3530c1ad2c992947cd021596800d91e323cb",
+  "title": "User Research",
+  "slug": "user-research",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-research",
+  "domain": "spatial-computing",
+  "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative methods to inform design decisions and improve virtual world experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:research-methods",
+      "label": "Research Methods"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "research-methods",
+      "label": "Research Methods"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ]
+}

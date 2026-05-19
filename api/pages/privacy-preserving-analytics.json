@@ -1,0 +1,564 @@
+{
+  "id": "urn:visionflow:page:9a6957db4250757a81fdf1515a888fa12a729691a069261aaa44a032fdfeab1b",
+  "title": "Privacy Preserving Analytics",
+  "slug": "privacy-preserving-analytics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-preserving-analytics",
+  "domain": "artificial-intelligence",
+  "definition": "Privacy Preserving Analytics (PPA) is a cross-disciplinary field at the intersection of cryptography, statistics, and data engineering concerned with enabling quantitative analysis of datasets containing sensitive personal or proprietary information without exposing the underlying individual-level records to analysts, adversaries, or unintended recipients. The field formalises the fundamental tension between **data utility**\u2014the degree to which analytical queries yield accurate, actionable insights\u2014and **privacy**, defined as the inability of any party to learn anything about a specific individual beyond what they already knew before the computation. PPA operationalises this tension through a portfolio of complementary techniques, each offering distinct privacy-utility trade-offs and computational overheads.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:data-analysis",
+      "label": "Data Analysis"
+    },
+    {
+      "id": "urn:visionflow:linked:privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies"
+    },
+    {
+      "id": "urn:visionflow:linked:statistical-computing",
+      "label": "Statistical Computing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:information-security",
+      "label": "Information Security"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:k-anonymity",
+        "label": "k-Anonymity"
+      },
+      {
+        "id": "urn:visionflow:linked:l-diversity",
+        "label": "l-Diversity"
+      },
+      {
+        "id": "urn:visionflow:linked:noise-mechanism",
+        "label": "Noise Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-budget",
+        "label": "Privacy Budget"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:visionflow:linked:t-closeness",
+        "label": "t-Closeness"
+      },
+      {
+        "id": "urn:visionflow:owl:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:visionflow:linked:data-governance-framework",
+        "label": "Data Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:noise-calibration",
+        "label": "Noise Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-model-training-on-sensitive-data",
+        "label": "AI Model Training on Sensitive Data"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-institutional-data-collaboration",
+        "label": "Cross-Institutional Data Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-safe-harbour",
+        "label": "Regulatory Safe Harbour"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-by-design",
+        "label": "Privacy-by-Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bfv-scheme",
+        "label": "BFV Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:ckks-scheme",
+        "label": "CKKS Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:fed-avg-algorithm",
+        "label": "FedAvg Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:garbled-circuits",
+        "label": "Garbled Circuits"
+      },
+      {
+        "id": "urn:visionflow:linked:gaussian-mechanism",
+        "label": "Gaussian Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:laplace-mechanism",
+        "label": "Laplace Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:randomised-response",
+        "label": "Randomised Response"
+      },
+      {
+        "id": "urn:visionflow:linked:secret-sharing",
+        "label": "Secret Sharing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abadi-et-al-2016-deep-learning-with-differential-privacy",
+      "label": "Abadi et al 2016 Deep Learning with Differential Privacy"
+    },
+    {
+      "slug": "abowd-2018-us-census-differential-privacy",
+      "label": "Abowd 2018 US Census Differential Privacy"
+    },
+    {
+      "slug": "ai-model-training-on-sensitive-data",
+      "label": "AI Model Training on Sensitive Data"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    },
+    {
+      "slug": "bfv-scheme",
+      "label": "BFV Scheme"
+    },
+    {
+      "slug": "carlini-et-al-2021-llm-training-data-extraction",
+      "label": "Carlini et al 2021 LLM Training Data Extraction"
+    },
+    {
+      "slug": "ckks-scheme",
+      "label": "CKKS Scheme"
+    },
+    {
+      "slug": "clinical-trial-data-sharing",
+      "label": "Clinical Trial Data Sharing"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "corrigan-gibbs-and-boneh-2017-prio-protocol",
+      "label": "Corrigan-Gibbs & Boneh 2017 PRIO Protocol"
+    },
+    {
+      "slug": "cross-institutional-data-collaboration",
+      "label": "Cross-Institutional Data Collaboration"
+    },
+    {
+      "slug": "cryptographic-primitives",
+      "label": "Cryptographic Primitives"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "data-analysis",
+      "label": "Data Analysis"
+    },
+    {
+      "slug": "data-governance-framework",
+      "label": "Data Governance Framework"
+    },
+    {
+      "slug": "data-science-domain",
+      "label": "DataScienceDomain"
+    },
+    {
+      "slug": "dwork-and-roth-2014-algorithmic-foundations-of-differential-privacy",
+      "label": "Dwork & Roth 2014 Algorithmic Foundations of Differential Privacy"
+    },
+    {
+      "slug": "erlingsson-et-al-2014-rappor-google-chrome-ldp",
+      "label": "Erlingsson et al 2014 RAPPOR Google Chrome LDP"
+    },
+    {
+      "slug": "fed-avg-algorithm",
+      "label": "FedAvg Algorithm"
+    },
+    {
+      "slug": "financial-crime-detection",
+      "label": "Financial Crime Detection"
+    },
+    {
+      "slug": "formal-privacy-models",
+      "label": "Formal Privacy Models"
+    },
+    {
+      "slug": "fredrikson-et-al-2015-model-inversion",
+      "label": "Fredrikson et al 2015 Model Inversion"
+    },
+    {
+      "slug": "garbled-circuits",
+      "label": "Garbled Circuits"
+    },
+    {
+      "slug": "gaussian-mechanism",
+      "label": "Gaussian Mechanism"
+    },
+    {
+      "slug": "gdpr-article-89",
+      "label": "GDPR Article 89"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "gentry-2009-fully-homomorphic-encryption",
+      "label": "Gentry 2009 Fully Homomorphic Encryption"
+    },
+    {
+      "slug": "goldreich-micali-wigderson-1987-smpc",
+      "label": "Goldreich Micali Wigderson 1987 SMPC"
+    },
+    {
+      "slug": "gradient-compression",
+      "label": "Gradient Compression"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "ibm-helib",
+      "label": "IBM HElib"
+    },
+    {
+      "slug": "ico-2023-anonymisation-pets-guidance",
+      "label": "ICO 2023 Anonymisation PETs Guidance"
+    },
+    {
+      "slug": "ietf-prio-protocol",
+      "label": "IETF PRIO Protocol"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "iso-iec-27701",
+      "label": "ISO/IEC 27701"
+    },
+    {
+      "slug": "jordon-et-al-2019-pategan-synthetic-data",
+      "label": "Jordon et al 2019 PATEGAN Synthetic Data"
+    },
+    {
+      "slug": "k-anonymity",
+      "label": "k-Anonymity"
+    },
+    {
+      "slug": "kairouz-et-al-2021-federated-learning-advances",
+      "label": "Kairouz et al 2021 Federated Learning Advances"
+    },
+    {
+      "slug": "l-diversity",
+      "label": "l-Diversity"
+    },
+    {
+      "slug": "laplace-mechanism",
+      "label": "Laplace Mechanism"
+    },
+    {
+      "slug": "li-et-al-2022-dp-llm-fine-tuning",
+      "label": "Li et al 2022 DP LLM Fine-Tuning"
+    },
+    {
+      "slug": "machanavajjhala-et-al-2007-l-diversity",
+      "label": "Machanavajjhala et al 2007 l-Diversity"
+    },
+    {
+      "slug": "mc-mahan-et-al-2017-fed-avg-federated-learning",
+      "label": "McMahan et al 2017 FedAvg Federated Learning"
+    },
+    {
+      "slug": "membership-inference-attack",
+      "label": "Membership Inference Attack"
+    },
+    {
+      "slug": "microsoft-seal",
+      "label": "Microsoft SEAL"
+    },
+    {
+      "slug": "mironov-2017-renyi-differential-privacy",
+      "label": "Mironov 2017 Renyi Differential Privacy"
+    },
+    {
+      "slug": "narayanan-and-shmatikoff-2008-netflix-re-identification",
+      "label": "Narayanan & Shmatikoff 2008 Netflix Re-identification"
+    },
+    {
+      "slug": "national-statistics",
+      "label": "National Statistics"
+    },
+    {
+      "slug": "nist-privacy-framework",
+      "label": "NIST Privacy Framework"
+    },
+    {
+      "slug": "noise-calibration",
+      "label": "Noise Calibration"
+    },
+    {
+      "slug": "noise-mechanism",
+      "label": "Noise Mechanism"
+    },
+    {
+      "slug": "oblivious-ram",
+      "label": "Oblivious RAM"
+    },
+    {
+      "slug": "open-dp-library-harvard-nist",
+      "label": "OpenDP Library Harvard NIST"
+    },
+    {
+      "slug": "privacy-budget",
+      "label": "Privacy Budget"
+    },
+    {
+      "slug": "privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies"
+    },
+    {
+      "slug": "py-syft-open-mined",
+      "label": "PySyft OpenMined"
+    },
+    {
+      "slug": "py-torch-opacus-meta",
+      "label": "PyTorch Opacus Meta"
+    },
+    {
+      "slug": "random-noise-injection",
+      "label": "Random Noise Injection"
+    },
+    {
+      "slug": "randomised-response",
+      "label": "Randomised Response"
+    },
+    {
+      "slug": "raw-data-centralisation",
+      "label": "Raw Data Centralisation"
+    },
+    {
+      "slug": "re-identification-attack",
+      "label": "Re-identification Attack"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "RegulatoryComplianceDomain"
+    },
+    {
+      "slug": "regulatory-safe-harbour",
+      "label": "Regulatory Safe Harbour"
+    },
+    {
+      "slug": "samarati-and-sweeney-1998-k-anonymity",
+      "label": "Samarati & Sweeney 1998 k-Anonymity"
+    },
+    {
+      "slug": "secret-sharing",
+      "label": "Secret Sharing"
+    },
+    {
+      "slug": "secure-aggregation",
+      "label": "Secure Aggregation"
+    },
+    {
+      "slug": "sensitivity-analysis",
+      "label": "Sensitivity Analysis"
+    },
+    {
+      "slug": "shokri-et-al-2017-membership-inference-attacks",
+      "label": "Shokri et al 2017 Membership Inference Attacks"
+    },
+    {
+      "slug": "statistical-computing",
+      "label": "Statistical Computing"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "t-closeness",
+      "label": "t-Closeness"
+    },
+    {
+      "slug": "tensor-flow-privacy-google",
+      "label": "TensorFlow Privacy Google"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "uk-us-pets-prize-challenge-2023",
+      "label": "UK-US PETs Prize Challenge 2023"
+    },
+    {
+      "slug": "w3-c-data-privacy-vocabulary",
+      "label": "W3C Data Privacy Vocabulary"
+    },
+    {
+      "slug": "zama-tfhe-concrete",
+      "label": "Zama TFHE Concrete"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "healthcare-analytics",
+      "label": "Healthcare Analytics"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy-by-Design"
+    },
+    {
+      "slug": "pseudonymisation",
+      "label": "Pseudonymisation"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    }
+  ]
+}

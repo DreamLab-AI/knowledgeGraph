@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:756bf8a83980b969721be9117236c987bd8c53337890bed3a8ab5d2e62472a58",
+  "title": "VisionFlow and Junkie Jarvis",
+  "slug": "vision-flow-and-junkie-jarvis",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vision-flow-and-junkie-jarvis",
+  "domain": "infrastructure",
+  "definition": "VisionFlow and Junkie Jarvis is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "vision-flow-client",
+      "label": "VisionFlow Client"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aicafev6",
+      "label": "AICafev6"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:59127f1a3315446241a9d4024033d7197427f71b16df633f7a042f7e1f7d2fb3",
+  "title": "Ethical Review Process",
+  "slug": "ethical-review-process",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ethical-review-process",
+  "domain": "artificial-intelligence",
+  "definition": "Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ethically responsible AI development and deployment. This process applies established ethical frameworks (consequentialist, deontological, virtue ethics, care ethics, justice frameworks) to assess AI systems, identifying potential harms, benefits, rights violations, and value conflicts. The review process typically follows defined stages: proposal submission with system description and ethical self-assessment, initial screening to determine review level (exempt, expedited, full review) based on risk classification, expert deliberation by AI ethics board or review committee analyzing ethical implications across fairness, privacy, autonomy, safety, and accountability dimensions, stakeholder consultation soliciting affected community perspectives, ethical decision-making producing approval, conditional approval, deferral, or rejection with documented rationale, and ongoing monitoring of deployed systems with periodic re-review. Review criteria",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-p7000",
+      "label": "IEEE P7000"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,207 @@
+{
+  "id": "urn:visionflow:page:0547110ca23ee07f9ca6cb7731e44854169b2b1d578431af88e13adf3f9b2c1c",
+  "title": "Algorithmic Transparency Index",
+  "slug": "algorithmic-transparency-index",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:algorithmic-transparency-index",
+  "domain": "artificial-intelligence",
+  "definition": "A structured metrics framework for measuring and evaluating the explainability, documentation, and disclosure levels of AI algorithms and automated decision-making systems across multiple transparency dimensions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bias-detection-metrics",
+        "label": "Bias Detection Metrics"
+      },
+      {
+        "id": "urn:visionflow:linked:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "id": "urn:visionflow:linked:explainability-metrics",
+        "label": "Explainability Metrics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:documentation-standards",
+        "label": "Documentation Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audit-mechanism",
+        "label": "Audit Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:decision-logging",
+        "label": "Decision Logging"
+      },
+      {
+        "id": "urn:visionflow:linked:model-documentation",
+        "label": "Model Documentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "id": "urn:visionflow:linked:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:visionflow:linked:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "algorithmic-accountability-system",
+      "label": "Algorithmic Accountability System"
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "label": "Algorithmic Auditing"
+    },
+    {
+      "slug": "audit-mechanism",
+      "label": "Audit Mechanism"
+    },
+    {
+      "slug": "automated-decision-system",
+      "label": "Automated Decision System"
+    },
+    {
+      "slug": "bias-detection-metrics",
+      "label": "Bias Detection Metrics"
+    },
+    {
+      "slug": "content-moderation-system",
+      "label": "Content Moderation System"
+    },
+    {
+      "slug": "decision-logging",
+      "label": "Decision Logging"
+    },
+    {
+      "slug": "disclosure-requirements",
+      "label": "Disclosure Requirements"
+    },
+    {
+      "slug": "explainability-metrics",
+      "label": "Explainability Metrics"
+    },
+    {
+      "slug": "ieee-7001-2021",
+      "label": "IEEE 7001-2021"
+    },
+    {
+      "slug": "model-documentation",
+      "label": "Model Documentation"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    },
+    {
+      "slug": "stakeholder-trust",
+      "label": "Stakeholder Trust"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "performance-metrics",
+      "label": "Performance Metrics"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    }
+  ]
+}

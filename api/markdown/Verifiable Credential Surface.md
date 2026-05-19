@@ -1,20 +1,621 @@
-iri:: http://narrativegoldmine.com/ontology#VerifiableCredentialSurface
-uri:: urn:visionclaw:concept:blockchain:verifiable-credential-surface
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:verifiable-credential-surface
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Verifiable Credential Surface
-content-hash:: sha256-12-c9dae0f1a2b3
-status:: complete
-maturity:: established
-quality-score:: 0.90
-authority-score:: 0.94
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#VerifiableCredentialSurface
+legacy_uri:: urn:visionclaw:concept:blockchain:verifiable-credential-surface
 public:: true
+
+# Verifiable Credential Surface
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d34021da6bf96307395c1b0fd0a3e1666c2efdb3aacd5fce984bc57336e5d4d1",
+  "@type": "Page",
+  "vc:slug": "verifiable-credential-surface",
+  "title": "Verifiable Credential Surface",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340",
+      "vc:label": "BIP-340"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-verification",
+      "vc:label": "Blockchain Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-attestation",
+      "vc:label": "Capability Attestation"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-audit",
+      "vc:label": "Compliance Audit"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-indexing",
+      "vc:label": "Credential Indexing"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-issuance",
+      "vc:label": "Credential Issuance"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-verification",
+      "vc:label": "Credential Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:credentials-domain",
+      "vc:label": "CredentialsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:credentials-layer",
+      "vc:label": "CredentialsLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-trust",
+      "vc:label": "Decentralised Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:did-resolution",
+      "vc:label": "DID Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:jcs-canonicalisation",
+      "vc:label": "JCS Canonicalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:jcs-canonicalisation",
+      "vc:label": "JCS Canonicalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:jcs-canonicalisation",
+      "vc:label": "JCS Canonicalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:prd-006",
+      "vc:label": "PRD-006"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8785",
+      "vc:label": "RFC 8785"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc-8785-canonical-json",
+      "vc:label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-proof",
+      "vc:label": "Schnorr Proof"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signature-scheme",
+      "vc:label": "Schnorr Signature Scheme"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signatures",
+      "vc:label": "Schnorr Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:sha-256-hashing",
+      "vc:label": "SHA-256 Hashing"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-verification",
+      "vc:label": "Smart Contract Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-pod-storage",
+      "vc:label": "Solid Pod Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust-domain",
+      "vc:label": "TrustDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-claims",
+      "vc:label": "Verifiable Claims"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-proof-types",
+      "vc:label": "W3C Proof Types"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-vc-2-0-spec",
+      "vc:label": "W3C VC 2.0 Spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-vc-2-0-standard",
+      "vc:label": "W3C VC 2.0 Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-verifiable-credentials-2-0",
+      "vc:label": "W3C Verifiable Credentials 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-verifiable-credentials-2-0",
+      "vc:label": "W3C Verifiable Credentials 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:work-completion-proof",
+      "vc:label": "Work Completion Proof"
+    },
+    {
+      "@id": "urn:visionflow:linked:x-509-certificate",
+      "vc:label": "X.509 Certificate"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-oracle",
+      "vc:label": "Blockchain Oracle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:federation-surface",
+      "vc:label": "Federation Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:schnorr-signature",
+      "vc:label": "Schnorr Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.94"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c9dae0f1a2b3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#VerifiableCredentialSurface"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Verifiable Credential Surface"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.90"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:verifiable-credential-surface"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:verifiable-credential-surface"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d34021da6bf96307395c1b0fd0a3e1666c2efdb3aacd5fce984bc57336e5d4d1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+  "@type": "OntologyClass",
+  "label": "Verifiable Credential Surface",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d34021da6bf96307395c1b0fd0a3e1666c2efdb3aacd5fce984bc57336e5d4d1"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d34021da6bf96307395c1b0fd0a3e1666c2efdb3aacd5fce984bc57336e5d4d1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A standardised [[JSON-LD 1.1]] surface (S3) for issuing and storing [[W3C Verifiable Credentials 2.0|W3C VC 2.0]] credentials signed by agents' [[DID Nostr Identity|did:nostr]] DIDs using [[Schnorr Signature|Schnorr signatures]] over [[JCS Canonicalisation|JCS-canonicalised]] payloads, enabling verifiable attestations of agent capabilities, work completions, and claims that are independently auditable without central authorities.",
+  "vc:qualityScore": {
+    "@value": "0.90",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.94",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:credential-indexing",
+      "vc:label": "Credential Indexing"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-issuance",
+      "vc:label": "Credential Issuance"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-verification",
+      "vc:label": "Credential Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:jcs-canonicalisation",
+      "vc:label": "JCS Canonicalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-proof",
+      "vc:label": "Schnorr Proof"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:did-resolution",
+      "vc:label": "DID Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signatures",
+      "vc:label": "Schnorr Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:sha-256-hashing",
+      "vc:label": "SHA-256 Hashing"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-vc-2-0-standard",
+      "vc:label": "W3C VC 2.0 Standard"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-verification",
+      "vc:label": "Blockchain Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-attestation",
+      "vc:label": "Capability Attestation"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-trust",
+      "vc:label": "Decentralised Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-claims",
+      "vc:label": "Verifiable Claims"
+    },
+    {
+      "@id": "urn:visionflow:linked:work-completion-proof",
+      "vc:label": "Work Completion Proof"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:rfc-8785-canonical-json",
+      "vc:label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-proof-types",
+      "vc:label": "W3C Proof Types"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-verifiable-credentials-2-0",
+      "vc:label": "W3C Verifiable Credentials 2.0"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:compliance-audit",
+      "vc:label": "Compliance Audit"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract-verification",
+      "vc:label": "Smart Contract Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-oracle",
+      "vc:label": "Blockchain Oracle"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:verifiable-credential-surface:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d34021da6bf96307395c1b0fd0a3e1666c2efdb3aacd5fce984bc57336e5d4d1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340]]",
+      "resolved": "urn:visionflow:linked:bip-340",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Verification]]",
+      "resolved": "urn:visionflow:linked:blockchain-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Capability Attestation]]",
+      "resolved": "urn:visionflow:linked:capability-attestation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Compliance Audit]]",
+      "resolved": "urn:visionflow:linked:compliance-audit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Indexing]]",
+      "resolved": "urn:visionflow:linked:credential-indexing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Issuance]]",
+      "resolved": "urn:visionflow:linked:credential-issuance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Verification]]",
+      "resolved": "urn:visionflow:linked:credential-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CredentialsDomain]]",
+      "resolved": "urn:visionflow:linked:credentials-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CredentialsLayer]]",
+      "resolved": "urn:visionflow:linked:credentials-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Trust]]",
+      "resolved": "urn:visionflow:linked:decentralised-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DID Resolution]]",
+      "resolved": "urn:visionflow:linked:did-resolution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JCS Canonicalisation]]",
+      "resolved": "urn:visionflow:linked:jcs-canonicalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JCS Canonicalisation|JCS-canonicalised]]",
+      "resolved": "urn:visionflow:linked:jcs-canonicalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JCS Canonicalisation|canonical JSON]]",
+      "resolved": "urn:visionflow:linked:jcs-canonicalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PRD-006]]",
+      "resolved": "urn:visionflow:linked:prd-006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 8785]]",
+      "resolved": "urn:visionflow:linked:rfc-8785",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC 8785 Canonical JSON]]",
+      "resolved": "urn:visionflow:linked:rfc-8785-canonical-json",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr Proof]]",
+      "resolved": "urn:visionflow:linked:schnorr-proof",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr Signature Scheme]]",
+      "resolved": "urn:visionflow:linked:schnorr-signature-scheme",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr Signatures]]",
+      "resolved": "urn:visionflow:linked:schnorr-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHA-256 Hashing]]",
+      "resolved": "urn:visionflow:linked:sha-256-hashing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Smart Contract Verification]]",
+      "resolved": "urn:visionflow:linked:smart-contract-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Pod Storage|Solid pod]]",
+      "resolved": "urn:visionflow:linked:solid-pod-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TrustDomain]]",
+      "resolved": "urn:visionflow:linked:trust-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verifiable Claims]]",
+      "resolved": "urn:visionflow:linked:verifiable-claims",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Proof Types]]",
+      "resolved": "urn:visionflow:linked:w3-c-proof-types",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C VC 2.0 Spec]]",
+      "resolved": "urn:visionflow:linked:w3-c-vc-2-0-spec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C VC 2.0 Standard]]",
+      "resolved": "urn:visionflow:linked:w3-c-vc-2-0-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Verifiable Credentials 2.0]]",
+      "resolved": "urn:visionflow:linked:w3-c-verifiable-credentials-2-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Verifiable Credentials 2.0|W3C VC 2.0]]",
+      "resolved": "urn:visionflow:linked:w3-c-verifiable-credentials-2-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Work Completion Proof]]",
+      "resolved": "urn:visionflow:linked:work-completion-proof",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[X.509 Certificate|X.509 certificates]]",
+      "resolved": "urn:visionflow:linked:x-509-certificate",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Oracle]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-oracle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity|did:nostr]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Federation Surface|federation surface]]",
+      "resolved": "urn:visionflow:owl:class:federation-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Schnorr Signature|Schnorr signatures]]",
+      "resolved": "urn:visionflow:owl:class:schnorr-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser|urn:visionclaw: URI]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d34021da6bf96307395c1b0fd0a3e1666c2efdb3aacd5fce984bc57336e5d4d1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A standardised [[JSON-LD 1.1]] surface (S3) for issuing and storing [[W3C Verifiable Credentials 2.0|W3C VC 2.0]] credentials signed by agents' [[DID Nostr Identity|did:nostr]] DIDs using [[Schnorr Signature|Schnorr signatures]] over [[JCS Canonicalisation|JCS-canonicalised]] payloads, enabling verifiable attestations of agent capabilities, work completions, and claims that are independently auditable without central authorities.

@@ -1,24 +1,458 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ExperienceLayer
-uri:: urn:visionclaw:concept:spatial-computing:experience-layer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:experience-layer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Experience Layer
-content-hash:: sha256-12-dd918a3045b5
-legacy-term-id:: 20166
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ExperienceLayer
+legacy_uri:: urn:visionclaw:concept:spatial-computing:experience-layer
 public:: true
+
+# Experience Layer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6",
+  "@type": "Page",
+  "vc:slug": "experience-layer",
+  "title": "Experience Layer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:content-delivery",
+      "vc:label": "Content Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:display-technology",
+      "vc:label": "Display Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:graphics-pipeline",
+      "vc:label": "Graphics Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:input-system",
+      "vc:label": "Input System"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-manager",
+      "vc:label": "Interaction Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:msf-taxonomy-2025",
+      "vc:label": "MSF Taxonomy 2025"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-interaction",
+      "vc:label": "Natural Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:presence-system",
+      "vc:label": "Presence System"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-engagement",
+      "vc:label": "User Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:ux-framework",
+      "vc:label": "UX Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audio-system",
+      "vc:label": "Audio System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-system",
+      "vc:label": "Avatar System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "Compute Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptic-feedback",
+      "vc:label": "Haptic Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-experience",
+      "vc:label": "Immersive Experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-interface",
+      "vc:label": "Immersive Interface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "vc:label": "InteractionDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:presence",
+      "vc:label": "Presence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rendering-engine",
+      "vc:label": "Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:user-interface-architecture",
+      "vc:label": "User Interface Architecture"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-dd918a3045b5"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ExperienceLayer"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20166"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Experience Layer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:experience-layer"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:experience-layer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:experience-layer",
+  "@type": "OntologyClass",
+  "label": "Experience Layer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "Compute Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:user-interface-architecture",
+      "vc:label": "User Interface Architecture"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:interaction-manager",
+      "vc:label": "Interaction Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:presence-system",
+      "vc:label": "Presence System"
+    },
+    {
+      "@id": "urn:visionflow:linked:ux-framework",
+      "vc:label": "UX Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-interface",
+      "vc:label": "Immersive Interface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rendering-engine",
+      "vc:label": "Rendering Engine"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:graphics-pipeline",
+      "vc:label": "Graphics Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:input-system",
+      "vc:label": "Input System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audio-system",
+      "vc:label": "Audio System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:haptic-feedback",
+      "vc:label": "Haptic Feedback"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:natural-interaction",
+      "vc:label": "Natural Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-engagement",
+      "vc:label": "User Engagement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:immersive-experience",
+      "vc:label": "Immersive Experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:presence",
+      "vc:label": "Presence"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:content-delivery",
+      "vc:label": "Content Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:display-technology",
+      "vc:label": "Display Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:avatar-system",
+      "vc:label": "Avatar System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:experience-layer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Content Delivery]]",
+      "resolved": "urn:visionflow:linked:content-delivery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Display Technology]]",
+      "resolved": "urn:visionflow:linked:display-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graphics Pipeline]]",
+      "resolved": "urn:visionflow:linked:graphics-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Input System]]",
+      "resolved": "urn:visionflow:linked:input-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interaction Manager]]",
+      "resolved": "urn:visionflow:linked:interaction-manager",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MSF Taxonomy 2025]]",
+      "resolved": "urn:visionflow:linked:msf-taxonomy-2025",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Natural Interaction]]",
+      "resolved": "urn:visionflow:linked:natural-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Presence System]]",
+      "resolved": "urn:visionflow:linked:presence-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Engagement]]",
+      "resolved": "urn:visionflow:linked:user-engagement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UX Framework]]",
+      "resolved": "urn:visionflow:linked:ux-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Audio System]]",
+      "resolved": "urn:visionflow:owl:class:audio-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Avatar System]]",
+      "resolved": "urn:visionflow:owl:class:avatar-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Compute Layer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Haptic Feedback]]",
+      "resolved": "urn:visionflow:owl:class:haptic-feedback",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Immersive Experience]]",
+      "resolved": "urn:visionflow:owl:class:immersive-experience",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Immersive Interface]]",
+      "resolved": "urn:visionflow:owl:class:immersive-interface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InteractionDomain]]",
+      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Presence]]",
+      "resolved": "urn:visionflow:owl:class:presence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Rendering Engine]]",
+      "resolved": "urn:visionflow:owl:class:rendering-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Computing]]",
+      "resolved": "urn:visionflow:owl:class:spatial-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[User Interface Architecture]]",
+      "resolved": "urn:visionflow:owl:class:user-interface-architecture",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.

@@ -1,24 +1,289 @@
-iri:: http://narrativegoldmine.com/spatial-computing#AvatarCreation
-uri:: urn:visionclaw:concept:spatial-computing:avatar-creation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:avatar-creation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Avatar Creation
-content-hash:: sha256-12-e39b3369ae8e
-legacy-term-id:: MV-9788
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#AvatarCreation
+legacy_uri:: urn:visionclaw:concept:spatial-computing:avatar-creation
 public:: true
+
+# Avatar Creation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468",
+  "@type": "Page",
+  "vc:slug": "avatar-creation",
+  "title": "Avatar Creation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-modeling-tools",
+      "vc:label": "3D Modeling Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-generation-systems",
+      "vc:label": "AI Generation Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:customization-interfaces",
+      "vc:label": "Customization Interfaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-identity-creation",
+      "vc:label": "Digital Identity Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-persona-management",
+      "vc:label": "Digital Persona Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-participation",
+      "vc:label": "Metaverse Participation"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-self-expression",
+      "vc:label": "Virtual Self-Expression"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e39b3369ae8e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#AvatarCreation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9788"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Avatar Creation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:avatar-creation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:avatar-creation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:avatar-creation",
+  "@type": "OntologyClass",
+  "label": "Avatar Creation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:digital-identity-creation",
+      "vc:label": "Digital Identity Creation"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:3-d-modeling-tools",
+      "vc:label": "3D Modeling Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-generation-systems",
+      "vc:label": "AI Generation Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:customization-interfaces",
+      "vc:label": "Customization Interfaces"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:digital-persona-management",
+      "vc:label": "Digital Persona Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-participation",
+      "vc:label": "Metaverse Participation"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-self-expression",
+      "vc:label": "Virtual Self-Expression"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:avatar-creation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Modeling Tools]]",
+      "resolved": "urn:visionflow:linked:3-d-modeling-tools",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Generation Systems]]",
+      "resolved": "urn:visionflow:linked:ai-generation-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Customization Interfaces]]",
+      "resolved": "urn:visionflow:linked:customization-interfaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Identity Creation]]",
+      "resolved": "urn:visionflow:linked:digital-identity-creation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Persona Management]]",
+      "resolved": "urn:visionflow:linked:digital-persona-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Participation]]",
+      "resolved": "urn:visionflow:linked:metaverse-participation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Self-Expression]]",
+      "resolved": "urn:visionflow:linked:virtual-self-expression",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.

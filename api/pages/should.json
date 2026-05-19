@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:09a43a5bbcef12d5e3fce0ed0f42d387663fe70792d769c11f7b6f0dbba39a25",
+  "title": "SHOULD",
+  "slug": "should",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:should",
+  "domain": "infrastructure",
+  "definition": "SHOULD is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "web-dev-and-consumer-tooling",
+      "label": "Web Dev and Consumer Tooling"
+    }
+  ]
+}

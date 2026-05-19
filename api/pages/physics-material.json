@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:df544180e70bf586a4c9488dc00fcb05daeb0809658a8b69bcd976185fce9480",
+  "title": "Physics Material",
+  "slug": "physics-material",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:physics-material",
+  "domain": "spatial-computing",
+  "definition": "Physics Material is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "physically-based-rendering",
+      "label": "Physically-Based Rendering"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "rigid-body-dynamics",
+      "label": "Rigid Body Dynamics"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,628 @@
+{
+  "id": "urn:visionflow:page:62876666b2d4b0ffd4475b1bc1cbc6eb2f8a86538c4a0cf68ad57b899e6083be",
+  "title": "Cyber Security and Military",
+  "slug": "cyber-security-and-military",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cyber-security-and-military",
+  "domain": "security",
+  "definition": "Cyber Security and Military denotes the doctrinal, organisational, technical and operational fusion of cyberspace as a recognised warfighting domain alongside land, sea, air and space \u2014 codified by NATO at the 2016 Warsaw Summit declaration that cyberspace is \"a domain of operations in which NATO must defend itself as effectively as it does in the air, on land, and at sea\" and reaffirmed by the 2022 Strategic Concept and 2023 Vilnius Communiqu\u00e9 endorsement of the Virtual Cyber Incident Support Capability (VCISC) \u2014 encompassing the spectrum of state-level activities (defensive cyberspace operations DCO, offensive cyberspace operations OCO, intelligence preparation of the cyber environment, computer network exploitation CNE, information operations IO, electromagnetic spectrum operations) conducted by uniformed military commands (US Cyber Command USCYBERCOM elevated to unified combatant command 2018 with 133-team Cyber Mission Force CMF reaching full operational capability 2018 and authorised end strength ~6,200 personnel growing to 14,000 by 2028 under CYBERCOM 2.0; UK National Cyber Force NCF stood up 2020 as a partnership between GCHQ/MOD/SIS/Dstl with permanent HQ at Samlesbury La",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cyber-operations",
+      "label": "Cyber Operations"
+    },
+    {
+      "id": "urn:visionflow:linked:defence-capability",
+      "label": "Defence Capability"
+    },
+    {
+      "id": "urn:visionflow:linked:national-security-capability",
+      "label": "National Security Capability"
+    },
+    {
+      "id": "urn:visionflow:linked:state-sponsored-activity",
+      "label": "State-Sponsored Activity"
+    },
+    {
+      "id": "urn:visionflow:linked:warfighting-domain",
+      "label": "Warfighting Domain"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:computer-network-exploitation",
+        "label": "Computer Network Exploitation"
+      },
+      {
+        "id": "urn:visionflow:linked:cyber-intelligence",
+        "label": "Cyber Intelligence"
+      },
+      {
+        "id": "urn:visionflow:linked:cyber-mission-force",
+        "label": "Cyber Mission Force"
+      },
+      {
+        "id": "urn:visionflow:linked:defensive-cyber-operations",
+        "label": "Defensive Cyber Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:electromagnetic-spectrum-operations",
+        "label": "Electromagnetic Spectrum Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:information-operations",
+        "label": "Information Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:national-cyber-force",
+        "label": "National Cyber Force"
+      },
+      {
+        "id": "urn:visionflow:linked:offensive-cyber-operations",
+        "label": "Offensive Cyber Operations"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:attribution-capability",
+        "label": "Attribution Capability"
+      },
+      {
+        "id": "urn:visionflow:linked:classified-compute-infrastructure",
+        "label": "Classified Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:cyber-doctrine",
+        "label": "Cyber Doctrine"
+      },
+      {
+        "id": "urn:visionflow:linked:signals-intelligence",
+        "label": "Signals Intelligence"
+      },
+      {
+        "id": "urn:visionflow:linked:sovereign-authority",
+        "label": "Sovereign Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:trained-cyber-operators",
+        "label": "Trained Cyber Operators"
+      },
+      {
+        "id": "urn:visionflow:linked:vulnerability-research",
+        "label": "Vulnerability Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adversary-intelligence-collection",
+        "label": "Adversary Intelligence Collection"
+      },
+      {
+        "id": "urn:visionflow:linked:battle-damage-assessment",
+        "label": "Battle Damage Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:critical-infrastructure-disruption",
+        "label": "Critical Infrastructure Disruption"
+      },
+      {
+        "id": "urn:visionflow:linked:cyber-deterrence",
+        "label": "Cyber Deterrence"
+      },
+      {
+        "id": "urn:visionflow:linked:hybrid-warfare",
+        "label": "Hybrid Warfare"
+      },
+      {
+        "id": "urn:visionflow:linked:joint-all-domain-operations",
+        "label": "Joint All-Domain Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:strategic-coercion",
+        "label": "Strategic Coercion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:computer-network-operations-doctrine",
+        "label": "Computer Network Operations Doctrine"
+      },
+      {
+        "id": "urn:visionflow:linked:defend-forward",
+        "label": "Defend Forward"
+      },
+      {
+        "id": "urn:visionflow:linked:f3-ead-targeting",
+        "label": "F3EAD Targeting"
+      },
+      {
+        "id": "urn:visionflow:linked:joint-targeting-cycle",
+        "label": "Joint Targeting Cycle"
+      },
+      {
+        "id": "urn:visionflow:linked:law-of-armed-conflict",
+        "label": "Law of Armed Conflict"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-engagement",
+        "label": "Persistent Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:tallinn-manual-rules",
+        "label": "Tallinn Manual Rules"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adversary-intelligence-collection",
+      "label": "Adversary Intelligence Collection"
+    },
+    {
+      "slug": "allied-coalition-operations",
+      "label": "Allied Coalition Operations"
+    },
+    {
+      "slug": "attribution-capability",
+      "label": "Attribution Capability"
+    },
+    {
+      "slug": "battle-damage-assessment",
+      "label": "Battle Damage Assessment"
+    },
+    {
+      "slug": "buchanan-the-hacker-and-the-state-2020",
+      "label": "Buchanan The Hacker and the State 2020"
+    },
+    {
+      "slug": "cisa-fbi-nsa-volt-typhoon-joint-advisory-aa23-144a-aa24-038a",
+      "label": "CISA FBI NSA Volt Typhoon Joint Advisory AA23-144a AA24-038a"
+    },
+    {
+      "slug": "civilian-cybersecurity",
+      "label": "Civilian Cybersecurity"
+    },
+    {
+      "slug": "classified-compute-infrastructure",
+      "label": "Classified Compute Infrastructure"
+    },
+    {
+      "slug": "command-and-control-infrastructure",
+      "label": "Command and Control Infrastructure"
+    },
+    {
+      "slug": "computer-network-exploitation",
+      "label": "Computer Network Exploitation"
+    },
+    {
+      "slug": "computer-network-operations-doctrine",
+      "label": "Computer Network Operations Doctrine"
+    },
+    {
+      "slug": "computer-networks",
+      "label": "Computer Networks"
+    },
+    {
+      "slug": "corporate-information-security",
+      "label": "Corporate Information Security"
+    },
+    {
+      "slug": "counter-intelligence",
+      "label": "Counter-Intelligence"
+    },
+    {
+      "slug": "counter-proliferation",
+      "label": "Counter-Proliferation"
+    },
+    {
+      "slug": "counter-terrorism",
+      "label": "Counter-Terrorism"
+    },
+    {
+      "slug": "critical-infrastructure",
+      "label": "Critical Infrastructure"
+    },
+    {
+      "slug": "critical-infrastructure-disruption",
+      "label": "Critical Infrastructure Disruption"
+    },
+    {
+      "slug": "critical-infrastructure-domain",
+      "label": "CriticalInfrastructureDomain"
+    },
+    {
+      "slug": "cyber-deterrence",
+      "label": "Cyber Deterrence"
+    },
+    {
+      "slug": "cyber-doctrine",
+      "label": "Cyber Doctrine"
+    },
+    {
+      "slug": "cyber-intelligence",
+      "label": "Cyber Intelligence"
+    },
+    {
+      "slug": "cyber-mission-force",
+      "label": "Cyber Mission Force"
+    },
+    {
+      "slug": "cyber-operations",
+      "label": "Cyber Operations"
+    },
+    {
+      "slug": "cybercrime",
+      "label": "Cybercrime"
+    },
+    {
+      "slug": "defence-capability",
+      "label": "Defence Capability"
+    },
+    {
+      "slug": "defence-domain",
+      "label": "DefenceDomain"
+    },
+    {
+      "slug": "defend-forward",
+      "label": "Defend Forward"
+    },
+    {
+      "slug": "defensive-cyber-operations",
+      "label": "Defensive Cyber Operations"
+    },
+    {
+      "slug": "doctrinal-layer",
+      "label": "DoctrinalLayer"
+    },
+    {
+      "slug": "drone-warfare",
+      "label": "Drone Warfare"
+    },
+    {
+      "slug": "electromagnetic-spectrum-operations",
+      "label": "Electromagnetic Spectrum Operations"
+    },
+    {
+      "slug": "electronic-warfare",
+      "label": "Electronic Warfare"
+    },
+    {
+      "slug": "f3-ead-targeting",
+      "label": "F3EAD Targeting"
+    },
+    {
+      "slug": "five-eyes-intelligence",
+      "label": "Five Eyes Intelligence"
+    },
+    {
+      "slug": "geopolitics-domain",
+      "label": "GeopoliticsDomain"
+    },
+    {
+      "slug": "greenberg-sandworm-2019",
+      "label": "Greenberg Sandworm 2019"
+    },
+    {
+      "slug": "hacktivism",
+      "label": "Hacktivism"
+    },
+    {
+      "slug": "healey-a-fierce-domain-2013",
+      "label": "Healey A Fierce Domain 2013"
+    },
+    {
+      "slug": "hmg-national-cyber-strategy-2022",
+      "label": "HMG National Cyber Strategy 2022"
+    },
+    {
+      "slug": "hybrid-warfare",
+      "label": "Hybrid Warfare"
+    },
+    {
+      "slug": "implants",
+      "label": "Implants"
+    },
+    {
+      "slug": "information-operations",
+      "label": "Information Operations"
+    },
+    {
+      "slug": "information-warfare",
+      "label": "Information Warfare"
+    },
+    {
+      "slug": "initial-access-brokers",
+      "label": "Initial Access Brokers"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "joint-all-domain-operations",
+      "label": "Joint All-Domain Operations"
+    },
+    {
+      "slug": "joint-targeting-cycle",
+      "label": "Joint Targeting Cycle"
+    },
+    {
+      "slug": "kello-the-virtual-weapon-2017",
+      "label": "Kello The Virtual Weapon 2017"
+    },
+    {
+      "slug": "langner-to-kill-a-centrifuge-2013",
+      "label": "Langner To Kill a Centrifuge 2013"
+    },
+    {
+      "slug": "law-enforcement-cyber",
+      "label": "Law Enforcement Cyber"
+    },
+    {
+      "slug": "law-of-armed-conflict",
+      "label": "Law of Armed Conflict"
+    },
+    {
+      "slug": "living-off-the-land-techniques",
+      "label": "Living-Off-The-Land Techniques"
+    },
+    {
+      "slug": "malware",
+      "label": "Malware"
+    },
+    {
+      "slug": "mandiant-m-trends-2025",
+      "label": "Mandiant M-Trends 2025"
+    },
+    {
+      "slug": "maschmeyer-subversion-2024",
+      "label": "Maschmeyer Subversion 2024"
+    },
+    {
+      "slug": "mitre-att-and-ck",
+      "label": "MITRE ATT&CK"
+    },
+    {
+      "slug": "mitre-att-and-ck-enterprise-v15-2024",
+      "label": "MITRE ATT&CK Enterprise v15 2024"
+    },
+    {
+      "slug": "national-cyber-force",
+      "label": "National Cyber Force"
+    },
+    {
+      "slug": "national-defence",
+      "label": "National Defence"
+    },
+    {
+      "slug": "national-security-capability",
+      "label": "National Security Capability"
+    },
+    {
+      "slug": "national-security-domain",
+      "label": "NationalSecurityDomain"
+    },
+    {
+      "slug": "nato-article-5",
+      "label": "NATO Article 5"
+    },
+    {
+      "slug": "nato-ccdcoe",
+      "label": "NATO CCDCOE"
+    },
+    {
+      "slug": "nato-ccdcoe-tallinn-manual-2-0-2017",
+      "label": "NATO CCDCOE Tallinn Manual 2.0 2017"
+    },
+    {
+      "slug": "nato-ccdcoe-tallinn-manual-3-0-project-2021-2026",
+      "label": "NATO CCDCOE Tallinn Manual 3.0 Project 2021-2026"
+    },
+    {
+      "slug": "ncsc-cisa-asd-cccs-ncsc-nz-lotl-joint-advisory-feb-2024",
+      "label": "NCSC CISA ASD CCCS NCSC-NZ LOTL Joint Advisory Feb 2024"
+    },
+    {
+      "slug": "nist-cybersecurity-framework",
+      "label": "NIST Cybersecurity Framework"
+    },
+    {
+      "slug": "offensive-cyber-operations",
+      "label": "Offensive Cyber Operations"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "OperationalLayer"
+    },
+    {
+      "slug": "persistent-engagement",
+      "label": "Persistent Engagement"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "rashid-et-al-cy-bok-v1-1-2021",
+      "label": "Rashid et al CyBOK v1.1 2021"
+    },
+    {
+      "slug": "rid-cyber-war-will-not-take-place-2013",
+      "label": "Rid Cyber War Will Not Take Place 2013"
+    },
+    {
+      "slug": "sanctions-enforcement",
+      "label": "Sanctions Enforcement"
+    },
+    {
+      "slug": "sanger-confront-and-conceal-2012",
+      "label": "Sanger Confront and Conceal 2012"
+    },
+    {
+      "slug": "sanger-the-perfect-weapon-2018",
+      "label": "Sanger The Perfect Weapon 2018"
+    },
+    {
+      "slug": "schmitt-tallinn-manual-1-0-2013",
+      "label": "Schmitt Tallinn Manual 1.0 2013"
+    },
+    {
+      "slug": "security-domain",
+      "label": "SecurityDomain"
+    },
+    {
+      "slug": "sentinel-labs-mandiant-acid-rain-viasat-2022",
+      "label": "SentinelLabs Mandiant AcidRain Viasat 2022"
+    },
+    {
+      "slug": "signals-intelligence",
+      "label": "Signals Intelligence"
+    },
+    {
+      "slug": "singer-friedman-cybersecurity-and-cyberwar-2014",
+      "label": "Singer Friedman Cybersecurity and Cyberwar 2014"
+    },
+    {
+      "slug": "smart-cryptography-made-simple-2016",
+      "label": "Smart Cryptography Made Simple 2016"
+    },
+    {
+      "slug": "sovereign-authority",
+      "label": "Sovereign Authority"
+    },
+    {
+      "slug": "space-operations",
+      "label": "Space Operations"
+    },
+    {
+      "slug": "state-sponsored-activity",
+      "label": "State-Sponsored Activity"
+    },
+    {
+      "slug": "stix-taxii",
+      "label": "STIX/TAXII"
+    },
+    {
+      "slug": "strategic-coercion",
+      "label": "Strategic Coercion"
+    },
+    {
+      "slug": "strategic-communication",
+      "label": "Strategic Communication"
+    },
+    {
+      "slug": "strategic-layer",
+      "label": "StrategicLayer"
+    },
+    {
+      "slug": "supply-chain-compromise",
+      "label": "Supply Chain Compromise"
+    },
+    {
+      "slug": "tallinn-manual",
+      "label": "Tallinn Manual"
+    },
+    {
+      "slug": "tallinn-manual-rules",
+      "label": "Tallinn Manual Rules"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
+    },
+    {
+      "slug": "trained-cyber-operators",
+      "label": "Trained Cyber Operators"
+    },
+    {
+      "slug": "uk-mod-defence-cyber-strategy-2022",
+      "label": "UK MOD Defence Cyber Strategy 2022"
+    },
+    {
+      "slug": "uk-nao-wanna-cry-nhs-investigation-hc414-2017",
+      "label": "UK NAO WannaCry NHS Investigation HC414 2017"
+    },
+    {
+      "slug": "uk-ncsc-us-cisa-fbi-nsa-not-petya-attribution-feb-2018",
+      "label": "UK NCSC US CISA FBI NSA NotPetya Attribution Feb 2018"
+    },
+    {
+      "slug": "un-gge",
+      "label": "UN GGE"
+    },
+    {
+      "slug": "un-gge-2015-report-a-70-174",
+      "label": "UN GGE 2015 Report A/70/174"
+    },
+    {
+      "slug": "un-gge-2021-final-report-a-76-135",
+      "label": "UN GGE 2021 Final Report A/76/135"
+    },
+    {
+      "slug": "us-do-d-joint-publication-3-12-cyberspace-operations-2022",
+      "label": "US DoD Joint Publication 3-12 Cyberspace Operations 2022"
+    },
+    {
+      "slug": "us-do-d-manual-5240-01-2020",
+      "label": "US DoD Manual 5240.01 2020"
+    },
+    {
+      "slug": "us-do-dd-3600-01-information-operations-2024",
+      "label": "US DoDD 3600.01 Information Operations 2024"
+    },
+    {
+      "slug": "vulnerability-research",
+      "label": "Vulnerability Research"
+    },
+    {
+      "slug": "warfighting-domain",
+      "label": "Warfighting Domain"
+    },
+    {
+      "slug": "wiper-malware",
+      "label": "Wiper Malware"
+    },
+    {
+      "slug": "zero-day-exploits",
+      "label": "Zero-Day Exploits"
+    },
+    {
+      "slug": "zetter-countdown-to-zero-day-2014",
+      "label": "Zetter Countdown to Zero Day 2014"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "calculating-empires",
+      "label": "Calculating Empires"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    }
+  ]
+}

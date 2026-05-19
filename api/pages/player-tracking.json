@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:8cbc5d07f9340f9a4a6ea59a7c33e347277deea6c8d661eb10f8730d26b203e7",
+  "title": "Player Tracking",
+  "slug": "player-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:player-tracking",
+  "domain": "infrastructure",
+  "definition": "PlayerTracking is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

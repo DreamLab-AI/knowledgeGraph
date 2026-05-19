@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:2164c4c18cf2b522f8e76a40c470354d381e58c697abd64745382ceb0ce9e3ed",
+  "title": "Simulation Engine",
+  "slug": "simulation-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:simulation-engine",
+  "domain": "infrastructure",
+  "definition": "SimulationEngine is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:2b7f42c8f1d7e6533993424d0d42d1b6b22d7c231f21d951ba605ec92a8f49f2",
+  "title": "Run Another Page Function Test",
+  "slug": "run-another-page-function-test",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:run-another-page-function-test",
+  "domain": "infrastructure",
+  "definition": "Run Another Page Function Test is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

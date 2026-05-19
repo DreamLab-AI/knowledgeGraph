@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:4fbd05c9a4c87d0e79fd5017ef03593804ef9baa0884758859874e752e718530",
+  "title": "Well Being",
+  "slug": "well-being",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:well-being",
+  "domain": "spatial-computing",
+  "definition": "AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cook1977-kleinke1986-fagel2010",
+      "label": "Cook1977; @Kleinke1986; @Fagel2010"
+    },
+    {
+      "slug": "kendon1967",
+      "label": "Kendon1967"
+    },
+    {
+      "slug": "kleinke1986-nguyen2009",
+      "label": "Kleinke1986; @Nguyen2009"
+    },
+    {
+      "slug": "otsuka2005",
+      "label": "Otsuka2005"
+    },
+    {
+      "slug": "torok2017cascading",
+      "label": "torok2017cascading"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,21 +1,554 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#Telecollaboration
-uri:: urn:visionclaw:concept:distributed-collaboration:telecollaboration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:telecollaboration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Telecollaboration
-content-hash:: sha256-12-db36f5e43013
-legacy-term-id:: TC-0189
-status:: active
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#Telecollaboration
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:telecollaboration
 public:: true
+
+# Telecollaboration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824",
+  "@type": "Page",
+  "vc:slug": "telecollaboration",
+  "title": "Telecollaboration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-object-manipulation",
+      "vc:label": "3D Object Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:communication-infrastructure",
+      "vc:label": "Communication Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:coordination-mechanisms",
+      "vc:label": "CoordinationMechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-cultural-teamwork",
+      "vc:label": "Cross-Cultural Teamwork"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-knowledge-work",
+      "vc:label": "Distributed Knowledge Work"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-research-collaboration",
+      "vc:label": "Global Research Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-communication",
+      "vc:label": "Real-Time Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-protocols",
+      "vc:label": "Real-Time Protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-team-productivity",
+      "vc:label": "Remote Team Productivity"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-003-social-presence-theory",
+      "vc:label": "TELE-003-social-presence-theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-005-common-ground-theory",
+      "vc:label": "TELE-005-common-ground-theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-010-synchronous-collaboration",
+      "vc:label": "TELE-010-synchronous-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-011-asynchronous-collaboration",
+      "vc:label": "TELE-011-asynchronous-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "vc:label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-027-spatial-platform",
+      "vc:label": "TELE-027-spatial-platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "vc:label": "TELE-028-horizon-workrooms"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "vc:label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "vc:label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-151-real-time-protocols",
+      "vc:label": "TELE-151-real-time-protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "vc:label": "TELE-153-5g-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "vc:label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "vc:label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "vc:label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "vc:label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-workspaces",
+      "vc:label": "Virtual Workspaces"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asynchronous-collaboration",
+      "vc:label": "Asynchronous Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-work",
+      "vc:label": "DistributedWork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:synchronous-collaboration",
+      "vc:label": "Synchronous Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "vc:label": "TELE-001-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telepresence",
+      "vc:label": "Telepresence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-db36f5e43013"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#Telecollaboration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0189"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Telecollaboration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:telecollaboration"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:telecollaboration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:telecollaboration",
+  "@type": "OntologyClass",
+  "label": "Telecollaboration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-collaboration",
+      "vc:label": "distributed-collaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"The process of individuals or groups working together towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-located teamwork.\"",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:real-time-communication",
+      "vc:label": "Real-Time Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-workspaces",
+      "vc:label": "Virtual Workspaces"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asynchronous-collaboration",
+      "vc:label": "Asynchronous Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:synchronous-collaboration",
+      "vc:label": "Synchronous Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telepresence",
+      "vc:label": "Telepresence"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:communication-infrastructure",
+      "vc:label": "Communication Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:coordination-mechanisms",
+      "vc:label": "CoordinationMechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-protocols",
+      "vc:label": "Real-Time Protocols"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-cultural-teamwork",
+      "vc:label": "Cross-Cultural Teamwork"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-knowledge-work",
+      "vc:label": "Distributed Knowledge Work"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-research-collaboration",
+      "vc:label": "Global Research Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-team-productivity",
+      "vc:label": "Remote Team Productivity"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:telecollaboration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Object Manipulation]]",
+      "resolved": "urn:visionflow:linked:3-d-object-manipulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Communication Infrastructure]]",
+      "resolved": "urn:visionflow:linked:communication-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CoordinationMechanisms]]",
+      "resolved": "urn:visionflow:linked:coordination-mechanisms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Cultural Teamwork]]",
+      "resolved": "urn:visionflow:linked:cross-cultural-teamwork",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Knowledge Work]]",
+      "resolved": "urn:visionflow:linked:distributed-knowledge-work",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Global Research Collaboration]]",
+      "resolved": "urn:visionflow:linked:global-research-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Communication]]",
+      "resolved": "urn:visionflow:linked:real-time-communication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Protocols]]",
+      "resolved": "urn:visionflow:linked:real-time-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Remote Team Productivity]]",
+      "resolved": "urn:visionflow:linked:remote-team-productivity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-003-social-presence-theory]]",
+      "resolved": "urn:visionflow:linked:tele-003-social-presence-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-005-common-ground-theory]]",
+      "resolved": "urn:visionflow:linked:tele-005-common-ground-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-010-synchronous-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-010-synchronous-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-011-asynchronous-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-011-asynchronous-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-026-microsoft-mesh]]",
+      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-027-spatial-platform]]",
+      "resolved": "urn:visionflow:linked:tele-027-spatial-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-028-horizon-workrooms]]",
+      "resolved": "urn:visionflow:linked:tele-028-horizon-workrooms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-105-real-time-language-translation]]",
+      "resolved": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-107-ai-meeting-assistants]]",
+      "resolved": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-151-real-time-protocols]]",
+      "resolved": "urn:visionflow:linked:tele-151-real-time-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-153-5g-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-251-smart-contract-coordination]]",
+      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-252-dao-governance-telecollaboration]]",
+      "resolved": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-301-virtual-office-spaces]]",
+      "resolved": "urn:visionflow:linked:tele-301-virtual-office-spaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-302-shared-whiteboards]]",
+      "resolved": "urn:visionflow:linked:tele-302-shared-whiteboards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Workspaces]]",
+      "resolved": "urn:visionflow:linked:virtual-workspaces",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Asynchronous Collaboration]]",
+      "resolved": "urn:visionflow:owl:class:asynchronous-collaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DistributedWork]]",
+      "resolved": "urn:visionflow:owl:class:distributed-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Synchronous Collaboration]]",
+      "resolved": "urn:visionflow:owl:class:synchronous-collaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TELE-001-telepresence]]",
+      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telepresence]]",
+      "resolved": "urn:visionflow:owl:class:telepresence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "The process of individuals or groups working together towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-located teamwork."

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:7b17413ebdc7cdc5c4b72a05521f996f365ef54ee55416895c0b607f19ff4eca",
+  "title": "Spatial Tracking Technology",
+  "slug": "spatial-tracking-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-tracking-technology",
+  "domain": "spatial-computing",
+  "definition": "Spatial Tracking Technology is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "marker-based-tracking",
+      "label": "Marker Based Tracking"
+    }
+  ]
+}

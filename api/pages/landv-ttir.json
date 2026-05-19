@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:059fbd52b577e134507b5407080bc343848b4f2b09fbfc306589099c2df57ca7",
+  "title": "Landv\u00e6ttir",
+  "slug": "landv-ttir",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:landv-ttir",
+  "domain": "infrastructure",
+  "definition": "Landv\u00e6ttir is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "people",
+      "label": "PEOPLE"
+    }
+  ],
+  "backlinks": []
+}

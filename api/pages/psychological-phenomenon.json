@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:6f92eba96474d65891129f09513871dd93385e162d0059e43ecc4e197d2b396c",
+  "title": "Psychological Phenomenon",
+  "slug": "psychological-phenomenon",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:psychological-phenomenon",
+  "domain": "infrastructure",
+  "definition": "PsychologicalPhenomenon is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:humans-avatars-character",
+      "label": "Humans, Avatars , Character"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

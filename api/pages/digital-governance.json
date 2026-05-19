@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:c2ee5ce9e68a322d72545650ba2750df93dd5bb4e2e8616ccbab622913059dbc",
+  "title": "Digital Governance",
+  "slug": "digital-governance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-governance",
+  "domain": "artificial-intelligence",
+  "definition": "Digital Governance is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "democratic-participation",
+      "label": "Democratic Participation"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "virtual-nation-state",
+      "label": "Virtual Nation State"
+    },
+    {
+      "slug": "virtual-society-regulations",
+      "label": "Virtual Society Regulations"
+    }
+  ]
+}

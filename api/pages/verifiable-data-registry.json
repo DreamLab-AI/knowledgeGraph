@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:17a86a6c77e245855b102e70e6d93214ae4266727a2e664829e49acade190833",
+  "title": "Verifiable Data Registry",
+  "slug": "verifiable-data-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:verifiable-data-registry",
+  "domain": "infrastructure",
+  "definition": "A system that mediates the creation, verification, and resolution of decentralized identifiers and verifiable credentials, typically implemented as a blockchain, distributed ledger, or decentralized network for storing public key and revocation information.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-registry",
+      "label": "Data Registry"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-registry",
+      "label": "Data Registry"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

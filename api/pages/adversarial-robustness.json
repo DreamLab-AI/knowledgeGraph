@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a",
+  "title": "Adversarial Robustness",
+  "slug": "adversarial-robustness",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:adversarial-robustness",
+  "domain": "artificial-intelligence",
+  "definition": "The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples\u2014inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fca",
+      "label": "FCA"
+    },
+    {
+      "slug": "iso-iec-tr-24029-1-2021",
+      "label": "ISO/IEC TR 24029-1:2021"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    }
+  ]
+}

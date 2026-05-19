@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:d8d3bdc61f3d8c7e3a9ae010e7072b79e254d9c4621ee4e7a0bd12752750f58b",
+  "title": "Ar Experiences",
+  "slug": "ar-experiences",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ar-experiences",
+  "domain": "spatial-computing",
+  "definition": "AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:immersive-technology-applications",
+      "label": "Immersive Technology Applications"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ar-display-devices",
+        "label": "AR Display Devices"
+      },
+      {
+        "id": "urn:visionflow:owl:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:contextual-information",
+        "label": "Contextual Information"
+      },
+      {
+        "id": "urn:visionflow:linked:enhanced-visualization",
+        "label": "Enhanced Visualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:interactive-learning",
+        "label": "Interactive Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ar-display-devices",
+      "label": "AR Display Devices"
+    },
+    {
+      "slug": "contextual-information",
+      "label": "Contextual Information"
+    },
+    {
+      "slug": "enhanced-visualization",
+      "label": "Enhanced Visualization"
+    },
+    {
+      "slug": "immersive-technology-applications",
+      "label": "Immersive Technology Applications"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "interactive-learning",
+      "label": "Interactive Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-mapping",
+      "label": "Spatial Mapping"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    }
+  ]
+}

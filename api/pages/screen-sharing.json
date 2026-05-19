@@ -1,0 +1,468 @@
+{
+  "id": "urn:visionflow:page:98ec8bcee86d678662c35f7dd5798af1776427039e25397bc2ec7b6f894198c3",
+  "title": "Screen Sharing",
+  "slug": "screen-sharing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:screen-sharing",
+  "domain": "distributed-collaboration",
+  "definition": "Screen sharing is the real-time capture and transmission of a computing device's visual display output \u2014 encompassing full-desktop, application-window, browser-tab, and mobile-device viewports \u2014 to one or more remote participants over a network, enabling synchronous visual communication of interfaces, live code execution, design artefacts, data dashboards, and instructional demonstrations without requiring physical co-location or asynchronous file exchange. The technology operates through a pipeline of display capture, frame encoding, network packetisation, decoding, and rendering, spanning four dominant protocol stacks \u2014 [[WebRTC]] getDisplayMedia API (browser-native, peer-to-peer), [[Remote Desktop Protocol]] (RDP; Microsoft, TCP/UDP 3389), VNC/[[RFB Protocol]] (Remote Framebuffer, port 5900), and [[Network Device Interface]] (NDI, broadcast-grade LAN/WAN) \u2014 each making different trade-offs across latency, fidelity, interactivity, and deployment complexity. Codec selection is the primary quality lever: H.264 Screen Content Coding (SCC, ISO/IEC 14496-10 Annex N) adds palette tables and intra-block-copy (IBC) tools that exploit the large flat-colour regions and sharp text edges pre",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "id": "urn:visionflow:linked:real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "id": "urn:visionflow:linked:remote-desktop-technology",
+      "label": "Remote Desktop Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:synchronous-collaboration-tools",
+      "label": "Synchronous Collaboration Tools"
+    },
+    {
+      "id": "urn:visionflow:linked:visual-communication",
+      "label": "Visual Communication"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:annotation-overlay",
+        "label": "Annotation Overlay"
+      },
+      {
+        "id": "urn:visionflow:linked:application-window-capture",
+        "label": "Application Window Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:clipboard-synchronisation",
+        "label": "Clipboard Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:display-capture",
+        "label": "Display Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:intraframe-refresh",
+        "label": "Intraframe Refresh"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-control",
+        "label": "Remote Control"
+      },
+      {
+        "id": "urn:visionflow:linked:tab-capture",
+        "label": "Tab Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:video-encoding",
+        "label": "Video Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:network-device-interface",
+        "label": "Network Device Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:operating-system-capture-apis",
+        "label": "Operating System Capture APIs"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-transport-protocol",
+        "label": "Real-time Transport Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:session-signalling",
+        "label": "Session Signalling"
+      },
+      {
+        "id": "urn:visionflow:linked:video-bandwidth",
+        "label": "Video Bandwidth"
+      },
+      {
+        "id": "urn:visionflow:linked:video-codec",
+        "label": "Video Codec"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ar-screen-projection",
+        "label": "AR Screen Projection"
+      },
+      {
+        "id": "urn:visionflow:linked:live-code-demonstration",
+        "label": "Live Code Demonstration"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-technical-support",
+        "label": "Remote Technical Support"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-design-review",
+        "label": "Visual Design Review"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:visionflow:owl:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-classroom",
+        "label": "Virtual Classroom"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:av1-codec",
+        "label": "AV1 Codec"
+      },
+      {
+        "id": "urn:visionflow:linked:h-264-screen-content-coding",
+        "label": "H.264 Screen Content Coding"
+      },
+      {
+        "id": "urn:visionflow:linked:ndi-protocol",
+        "label": "NDI Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-desktop-protocol",
+        "label": "Remote Desktop Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:rfb-protocol",
+        "label": "RFB Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:vp9-codec",
+        "label": "VP9 Codec"
+      },
+      {
+        "id": "urn:visionflow:owl:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "alliance-for-open-media-av1",
+      "label": "Alliance for Open Media AV1"
+    },
+    {
+      "slug": "annotation-overlay",
+      "label": "Annotation Overlay"
+    },
+    {
+      "slug": "application-window-capture",
+      "label": "Application Window Capture"
+    },
+    {
+      "slug": "ar-screen-projection",
+      "label": "AR Screen Projection"
+    },
+    {
+      "slug": "av1-codec",
+      "label": "AV1 Codec"
+    },
+    {
+      "slug": "clipboard-synchronisation",
+      "label": "Clipboard Synchronisation"
+    },
+    {
+      "slug": "design-collaboration",
+      "label": "Design Collaboration"
+    },
+    {
+      "slug": "display-capture",
+      "label": "Display Capture"
+    },
+    {
+      "slug": "distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "DistributedCollaborationDomain"
+    },
+    {
+      "slug": "gpu-hardware-encoding",
+      "label": "GPU Hardware Encoding"
+    },
+    {
+      "slug": "h-264",
+      "label": "H.264"
+    },
+    {
+      "slug": "h-264-screen-content-coding",
+      "label": "H.264 Screen Content Coding"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "hybrid-working",
+      "label": "Hybrid Working"
+    },
+    {
+      "slug": "ietf-web-rtc",
+      "label": "IETF WebRTC"
+    },
+    {
+      "slug": "intraframe-refresh",
+      "label": "Intraframe Refresh"
+    },
+    {
+      "slug": "itu-t-h-264",
+      "label": "ITU-T H.264"
+    },
+    {
+      "slug": "live-code-demonstration",
+      "label": "Live Code Demonstration"
+    },
+    {
+      "slug": "ndi-protocol",
+      "label": "NDI Protocol"
+    },
+    {
+      "slug": "network-address-translation-traversal",
+      "label": "Network Address Translation Traversal"
+    },
+    {
+      "slug": "network-communication-domain",
+      "label": "NetworkCommunicationDomain"
+    },
+    {
+      "slug": "network-device-interface",
+      "label": "Network Device Interface"
+    },
+    {
+      "slug": "operating-system-capture-apis",
+      "label": "Operating System Capture APIs"
+    },
+    {
+      "slug": "operating-system-graphics-apis",
+      "label": "Operating System Graphics APIs"
+    },
+    {
+      "slug": "peer-to-peer-networking",
+      "label": "Peer-to-Peer Networking"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "PresentationLayer"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "slug": "real-time-transport-protocol",
+      "label": "Real-time Transport Protocol"
+    },
+    {
+      "slug": "remote-control",
+      "label": "Remote Control"
+    },
+    {
+      "slug": "remote-desktop-protocol",
+      "label": "Remote Desktop Protocol"
+    },
+    {
+      "slug": "remote-desktop-technology",
+      "label": "Remote Desktop Technology"
+    },
+    {
+      "slug": "remote-technical-support",
+      "label": "Remote Technical Support"
+    },
+    {
+      "slug": "rfb-protocol",
+      "label": "RFB Protocol"
+    },
+    {
+      "slug": "screen-capture-api",
+      "label": "Screen Capture API"
+    },
+    {
+      "slug": "session-signalling",
+      "label": "Session Signalling"
+    },
+    {
+      "slug": "smpte-ndi-standard",
+      "label": "SMPTE NDI Standard"
+    },
+    {
+      "slug": "stun-turn-servers",
+      "label": "STUN TURN Servers"
+    },
+    {
+      "slug": "synchronous-collaboration-tools",
+      "label": "Synchronous Collaboration Tools"
+    },
+    {
+      "slug": "tab-capture",
+      "label": "Tab Capture"
+    },
+    {
+      "slug": "technical-support-workflows",
+      "label": "Technical Support Workflows"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "TransportLayer"
+    },
+    {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
+      "slug": "video-bandwidth",
+      "label": "Video Bandwidth"
+    },
+    {
+      "slug": "video-codec",
+      "label": "Video Codec"
+    },
+    {
+      "slug": "video-encoding",
+      "label": "Video Encoding"
+    },
+    {
+      "slug": "virtual-desktop-infrastructure",
+      "label": "Virtual Desktop Infrastructure"
+    },
+    {
+      "slug": "visual-communication",
+      "label": "Visual Communication"
+    },
+    {
+      "slug": "visual-design-review",
+      "label": "Visual Design Review"
+    },
+    {
+      "slug": "vp9-codec",
+      "label": "VP9 Codec"
+    },
+    {
+      "slug": "w3-c-screen-capture-api",
+      "label": "W3C Screen Capture API"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI multi agent systems"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed reality"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    },
+    {
+      "slug": "virtual-classroom",
+      "label": "Virtual Classroom"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ]
+}

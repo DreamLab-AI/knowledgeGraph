@@ -1,0 +1,880 @@
+{
+  "id": "urn:visionflow:page:41429f88d32357fd807516683babacf879581c8bb489793d3fe085b106605583",
+  "title": "API Gateway",
+  "slug": "api-gateway",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:api-gateway",
+  "domain": "infrastructure",
+  "definition": "Infrastructure component serving as the unified northbound entry point for client requests into a [[Distributed System|distributed]] or [[Microservices|microservices]] backend, providing cross-cutting policy enforcement (request routing across hundreds-to-thousands of upstream services, authentication via [[OAuth 2.0]]/[[OIDC]]/[[JWT]] validation against [[Identity Provider|identity providers]], authorisation via [[Access Control System|attribute-based]]/[[Role-Based Access Control|role-based]] policies, rate limiting and quota enforcement protecting backends from 10K-1M+ RPS bursts, request/response transformation including [[Protocol Buffers]]\u2194JSON transcoding gRPC\u2194REST, schema validation against [[OpenAPI Specification|OpenAPI]] contracts, body encryption/decryption, header manipulation, [[Web Application Firewall|WAF]] inspection for [[OWASP API Top 10]] threats, distributed tracing context propagation via [[W3C Trace Context]] headers, structured access logging, response caching at edge), terminating [[TLS]]/[[mTLS]] connections (typically [[HTTP/2]] and increasingly [[HTTP/3]] over [[QUIC]] inbound, with connection pooling and multiplexing onto persistent upstream connections",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cloud-native-component",
+      "label": "Cloud Native Component"
+    },
+    {
+      "id": "urn:visionflow:linked:policy-enforcement-point",
+      "label": "Policy Enforcement Point"
+    },
+    {
+      "id": "urn:visionflow:linked:reverse-proxy",
+      "label": "Reverse Proxy"
+    },
+    {
+      "id": "urn:visionflow:owl:class:middleware",
+      "label": "Middleware"
+    },
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:access-log-emitter",
+        "label": "Access Log Emitter"
+      },
+      {
+        "id": "urn:visionflow:linked:authentication-handler",
+        "label": "Authentication Handler"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-tracing-collector",
+        "label": "Distributed Tracing Collector"
+      },
+      {
+        "id": "urn:visionflow:linked:health-checker",
+        "label": "Health Checker"
+      },
+      {
+        "id": "urn:visionflow:linked:plugin-runtime",
+        "label": "Plugin Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:rate-limiter",
+        "label": "Rate Limiter"
+      },
+      {
+        "id": "urn:visionflow:linked:request-router",
+        "label": "Request Router"
+      },
+      {
+        "id": "urn:visionflow:linked:request-transformer",
+        "label": "Request Transformer"
+      },
+      {
+        "id": "urn:visionflow:linked:response-cache",
+        "label": "Response Cache"
+      },
+      {
+        "id": "urn:visionflow:linked:tls-terminator",
+        "label": "TLS Terminator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:configuration-store",
+        "label": "Configuration Store"
+      },
+      {
+        "id": "urn:visionflow:linked:observability-pipeline",
+        "label": "Observability Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:api-lifecycle-management",
+        "label": "API Lifecycle Management"
+      },
+      {
+        "id": "urn:visionflow:linked:backend-for-frontend",
+        "label": "Backend-for-Frontend"
+      },
+      {
+        "id": "urn:visionflow:linked:graph-ql-federation",
+        "label": "GraphQL Federation"
+      },
+      {
+        "id": "urn:visionflow:linked:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "id": "urn:visionflow:linked:strangler-fig-pattern",
+        "label": "Strangler Fig Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bulkhead-pattern",
+        "label": "Bulkhead Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:circuit-breaker",
+        "label": "Circuit Breaker"
+      },
+      {
+        "id": "urn:visionflow:linked:jwt",
+        "label": "JWT"
+      },
+      {
+        "id": "urn:visionflow:linked:m-tls",
+        "label": "mTLS"
+      },
+      {
+        "id": "urn:visionflow:linked:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:visionflow:linked:oidc",
+        "label": "OIDC"
+      },
+      {
+        "id": "urn:visionflow:linked:rate-limiting",
+        "label": "Rate Limiting"
+      },
+      {
+        "id": "urn:visionflow:linked:retry-pattern",
+        "label": "Retry Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:token-bucket-algorithm",
+        "label": "Token Bucket Algorithm"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-log-emitter",
+      "label": "Access Log Emitter"
+    },
+    {
+      "slug": "ai-gateway",
+      "label": "AI Gateway"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "anthropic-2024-model-context-protocol-specification",
+      "label": "Anthropic 2024 Model Context Protocol Specification"
+    },
+    {
+      "slug": "apache-apisix",
+      "label": "Apache APISIX"
+    },
+    {
+      "slug": "api-composition",
+      "label": "API Composition"
+    },
+    {
+      "slug": "api-lifecycle-management",
+      "label": "API Lifecycle Management"
+    },
+    {
+      "slug": "api-management",
+      "label": "API Management"
+    },
+    {
+      "slug": "apigee",
+      "label": "Apigee"
+    },
+    {
+      "slug": "apollo-federation-2-specification",
+      "label": "Apollo Federation 2 Specification"
+    },
+    {
+      "slug": "async-api",
+      "label": "AsyncAPI"
+    },
+    {
+      "slug": "authentication-handler",
+      "label": "Authentication Handler"
+    },
+    {
+      "slug": "aws-api-gateway",
+      "label": "AWS API Gateway"
+    },
+    {
+      "slug": "aws-app-sync",
+      "label": "AWS AppSync"
+    },
+    {
+      "slug": "azure-api-management",
+      "label": "Azure API Management"
+    },
+    {
+      "slug": "backend-for-frontend",
+      "label": "Backend-for-Frontend"
+    },
+    {
+      "slug": "banks-and-porcello-2018-learning-graph-ql",
+      "label": "Banks & Porcello 2018 Learning GraphQL"
+    },
+    {
+      "slug": "bulkhead-pattern",
+      "label": "Bulkhead Pattern"
+    },
+    {
+      "slug": "burns-beda-hightower-reznik-2022-kubernetes-up-and-running",
+      "label": "Burns Beda Hightower Reznik 2022 Kubernetes Up and Running"
+    },
+    {
+      "slug": "calcote-and-butcher-2019-istio-up-and-running",
+      "label": "Calcote & Butcher 2019 Istio Up and Running"
+    },
+    {
+      "slug": "cdn",
+      "label": "CDN"
+    },
+    {
+      "slug": "cedar",
+      "label": "Cedar"
+    },
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "cilium",
+      "label": "Cilium"
+    },
+    {
+      "slug": "circuit-breaker",
+      "label": "Circuit Breaker"
+    },
+    {
+      "slug": "cloud-native-component",
+      "label": "Cloud Native Component"
+    },
+    {
+      "slug": "cloud-native-computing-foundation",
+      "label": "Cloud Native Computing Foundation"
+    },
+    {
+      "slug": "cloud-native-domain",
+      "label": "CloudNativeDomain"
+    },
+    {
+      "slug": "cloudflare-ai-gateway",
+      "label": "Cloudflare AI Gateway"
+    },
+    {
+      "slug": "cloudflare-api-shield",
+      "label": "Cloudflare API Shield"
+    },
+    {
+      "slug": "cncf",
+      "label": "CNCF"
+    },
+    {
+      "slug": "configuration-store",
+      "label": "Configuration Store"
+    },
+    {
+      "slug": "control-plane-layer",
+      "label": "ControlPlaneLayer"
+    },
+    {
+      "slug": "distributed-tracing-collector",
+      "label": "Distributed Tracing Collector"
+    },
+    {
+      "slug": "dns",
+      "label": "DNS"
+    },
+    {
+      "slug": "e-bpf",
+      "label": "eBPF"
+    },
+    {
+      "slug": "enterprise-service-bus",
+      "label": "Enterprise Service Bus"
+    },
+    {
+      "slug": "enterprise-service-bus",
+      "label": "Enterprise Service Bus"
+    },
+    {
+      "slug": "envoy",
+      "label": "Envoy"
+    },
+    {
+      "slug": "fowler-2004-strangler-fig-application",
+      "label": "Fowler 2004 StranglerFigApplication"
+    },
+    {
+      "slug": "fowler-and-lewis-2014-microservices",
+      "label": "Fowler & Lewis 2014 Microservices"
+    },
+    {
+      "slug": "g-rpc",
+      "label": "gRPC"
+    },
+    {
+      "slug": "gamma",
+      "label": "GAMMA"
+    },
+    {
+      "slug": "graph-ql",
+      "label": "GraphQL"
+    },
+    {
+      "slug": "graph-ql-federation",
+      "label": "GraphQL Federation"
+    },
+    {
+      "slug": "gravitee",
+      "label": "Gravitee"
+    },
+    {
+      "slug": "health-checker",
+      "label": "Health Checker"
+    },
+    {
+      "slug": "helicone",
+      "label": "Helicone"
+    },
+    {
+      "slug": "hohpe-and-woolf-2003-enterprise-integration-patterns",
+      "label": "Hohpe & Woolf 2003 Enterprise Integration Patterns"
+    },
+    {
+      "slug": "http-2",
+      "label": "HTTP/2"
+    },
+    {
+      "slug": "http-3",
+      "label": "HTTP/3"
+    },
+    {
+      "slug": "identity-aware-proxy",
+      "label": "Identity-Aware Proxy"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "indrasiri-and-kuruppu-2020-g-rpc-up-and-running",
+      "label": "Indrasiri & Kuruppu 2020 gRPC Up and Running"
+    },
+    {
+      "slug": "ingress",
+      "label": "Ingress"
+    },
+    {
+      "slug": "ingress-controller",
+      "label": "Ingress Controller"
+    },
+    {
+      "slug": "istio",
+      "label": "Istio"
+    },
+    {
+      "slug": "jwt",
+      "label": "JWT"
+    },
+    {
+      "slug": "klein-2017-service-mesh-data-plane-vs-control-plane",
+      "label": "Klein 2017 Service Mesh Data Plane vs Control Plane"
+    },
+    {
+      "slug": "kong-gateway",
+      "label": "Kong Gateway"
+    },
+    {
+      "slug": "kraken-d",
+      "label": "KrakenD"
+    },
+    {
+      "slug": "kubernetes-gateway-api",
+      "label": "Kubernetes Gateway API"
+    },
+    {
+      "slug": "kubernetes-gateway-api-v1-0-specification",
+      "label": "Kubernetes Gateway API v1.0 Specification"
+    },
+    {
+      "slug": "l7-network-layer",
+      "label": "L7-NetworkLayer"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "let-s-encrypt",
+      "label": "Let's Encrypt"
+    },
+    {
+      "slug": "linkerd",
+      "label": "Linkerd"
+    },
+    {
+      "slug": "linkerd-book-2-14",
+      "label": "Linkerd Book 2.14"
+    },
+    {
+      "slug": "lite-llm",
+      "label": "LiteLLM"
+    },
+    {
+      "slug": "lite-llm-documentation",
+      "label": "LiteLLM Documentation"
+    },
+    {
+      "slug": "llm",
+      "label": "LLM"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "m-tls",
+      "label": "mTLS"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "mqtt",
+      "label": "MQTT"
+    },
+    {
+      "slug": "multi-tenancy",
+      "label": "Multi-Tenancy"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "NetworkingDomain"
+    },
+    {
+      "slug": "newman-2019-monolith-to-microservices",
+      "label": "Newman 2019 Monolith to Microservices"
+    },
+    {
+      "slug": "newman-2021-building-microservices-2nd",
+      "label": "Newman 2021 Building Microservices 2nd"
+    },
+    {
+      "slug": "nginx",
+      "label": "NGINX"
+    },
+    {
+      "slug": "oauth-2-0",
+      "label": "OAuth 2.0"
+    },
+    {
+      "slug": "observability-pipeline",
+      "label": "Observability Pipeline"
+    },
+    {
+      "slug": "oidc",
+      "label": "OIDC"
+    },
+    {
+      "slug": "open-api-initiative",
+      "label": "OpenAPI Initiative"
+    },
+    {
+      "slug": "open-api-specification",
+      "label": "OpenAPI Specification"
+    },
+    {
+      "slug": "open-api-specification",
+      "label": "OpenAPI Specification"
+    },
+    {
+      "slug": "open-id-connect-core-1-0",
+      "label": "OpenID Connect Core 1.0"
+    },
+    {
+      "slug": "open-policy-agent",
+      "label": "Open Policy Agent"
+    },
+    {
+      "slug": "open-telemetry",
+      "label": "OpenTelemetry"
+    },
+    {
+      "slug": "open-telemetry-gen-ai-semantic-conventions",
+      "label": "OpenTelemetry GenAI Semantic Conventions"
+    },
+    {
+      "slug": "owasp-api-security-top-10-2023",
+      "label": "OWASP API Security Top 10 2023"
+    },
+    {
+      "slug": "owasp-api-top-10",
+      "label": "OWASP API Top 10"
+    },
+    {
+      "slug": "plugin-runtime",
+      "label": "Plugin Runtime"
+    },
+    {
+      "slug": "policy-decision-point",
+      "label": "Policy Decision Point"
+    },
+    {
+      "slug": "policy-enforcement-point",
+      "label": "Policy Enforcement Point"
+    },
+    {
+      "slug": "portkey",
+      "label": "Portkey"
+    },
+    {
+      "slug": "portkey-open-source-ai-gateway",
+      "label": "Portkey Open Source AI Gateway"
+    },
+    {
+      "slug": "prometheus",
+      "label": "Prometheus"
+    },
+    {
+      "slug": "protocol-buffers",
+      "label": "Protocol Buffers"
+    },
+    {
+      "slug": "quic",
+      "label": "QUIC"
+    },
+    {
+      "slug": "rate-limiter",
+      "label": "Rate Limiter"
+    },
+    {
+      "slug": "rate-limiting",
+      "label": "Rate Limiting"
+    },
+    {
+      "slug": "request-router",
+      "label": "Request Router"
+    },
+    {
+      "slug": "request-transformer",
+      "label": "Request Transformer"
+    },
+    {
+      "slug": "response-cache",
+      "label": "Response Cache"
+    },
+    {
+      "slug": "rest",
+      "label": "REST"
+    },
+    {
+      "slug": "retry-pattern",
+      "label": "Retry Pattern"
+    },
+    {
+      "slug": "reverse-proxy",
+      "label": "Reverse Proxy"
+    },
+    {
+      "slug": "reverse-proxy",
+      "label": "Reverse Proxy"
+    },
+    {
+      "slug": "rfc-6749-oauth-2-0",
+      "label": "RFC 6749 OAuth 2.0"
+    },
+    {
+      "slug": "rfc-7519-jwt",
+      "label": "RFC 7519 JWT"
+    },
+    {
+      "slug": "rfc-7540-http-2",
+      "label": "RFC 7540 HTTP 2"
+    },
+    {
+      "slug": "rfc-8705-oauth-m-tls-client-auth",
+      "label": "RFC 8705 OAuth mTLS Client Auth"
+    },
+    {
+      "slug": "rfc-9000-quic",
+      "label": "RFC 9000 QUIC"
+    },
+    {
+      "slug": "rfc-9114-http-3",
+      "label": "RFC 9114 HTTP 3"
+    },
+    {
+      "slug": "richardson-2018-microservices-patterns",
+      "label": "Richardson 2018 Microservices Patterns"
+    },
+    {
+      "slug": "role-based-access-control",
+      "label": "Role-Based Access Control"
+    },
+    {
+      "slug": "security-domain",
+      "label": "SecurityDomain"
+    },
+    {
+      "slug": "server-name-indication",
+      "label": "Server Name Indication"
+    },
+    {
+      "slug": "server-sent-events",
+      "label": "Server-Sent Events"
+    },
+    {
+      "slug": "service-discovery",
+      "label": "Service Discovery"
+    },
+    {
+      "slug": "service-mesh",
+      "label": "Service Mesh"
+    },
+    {
+      "slug": "spiffe",
+      "label": "SPIFFE"
+    },
+    {
+      "slug": "spire",
+      "label": "SPIRE"
+    },
+    {
+      "slug": "sridharan-2018-distributed-systems-observability",
+      "label": "Sridharan 2018 Distributed Systems Observability"
+    },
+    {
+      "slug": "stenberg-2022-http-3-explained",
+      "label": "Stenberg 2022 HTTP 3 Explained"
+    },
+    {
+      "slug": "strangler-fig-pattern",
+      "label": "Strangler Fig Pattern"
+    },
+    {
+      "slug": "tcp-ip",
+      "label": "TCP/IP"
+    },
+    {
+      "slug": "tls",
+      "label": "TLS"
+    },
+    {
+      "slug": "tls-terminator",
+      "label": "TLS Terminator"
+    },
+    {
+      "slug": "token-bucket-algorithm",
+      "label": "Token Bucket Algorithm"
+    },
+    {
+      "slug": "traefik",
+      "label": "Traefik"
+    },
+    {
+      "slug": "tyk",
+      "label": "Tyk"
+    },
+    {
+      "slug": "w3-c-trace-context",
+      "label": "W3C Trace Context"
+    },
+    {
+      "slug": "web-application-firewall",
+      "label": "Web Application Firewall"
+    },
+    {
+      "slug": "web-application-firewall",
+      "label": "Web Application Firewall"
+    },
+    {
+      "slug": "web-socket",
+      "label": "WebSocket"
+    },
+    {
+      "slug": "webhook",
+      "label": "Webhook"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    }
+  ]
+}

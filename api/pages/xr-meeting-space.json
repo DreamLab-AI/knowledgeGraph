@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:9008da8242ef488ef3806f0b253382b3dc6722755448e9117c05ba875a46d9c8",
+  "title": "XR Meeting Space",
+  "slug": "xr-meeting-space",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-meeting-space",
+  "domain": "spatial-computing",
+  "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based communication.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-collaboration",
+      "label": "Virtual Collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-collaboration",
+      "label": "Virtual Collaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    }
+  ]
+}

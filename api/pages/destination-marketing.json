@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:0bd8f84f5ce1112c50826407fa2c53632e47d7ac1bd71896d2a8bf937115c5a8",
+  "title": "Destination Marketing",
+  "slug": "destination-marketing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:destination-marketing",
+  "domain": "spatial-computing",
+  "definition": "The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-marketing",
+      "label": "Digital Marketing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:vr-experiences",
+        "label": "VR Experiences"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-advertising",
+        "label": "Immersive Advertising"
+      },
+      {
+        "id": "urn:visionflow:linked:location-promotion",
+        "label": "Location Promotion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-content-creation",
+      "label": "3D Content Creation"
+    },
+    {
+      "slug": "immersive-advertising",
+      "label": "Immersive Advertising"
+    },
+    {
+      "slug": "location-promotion",
+      "label": "Location Promotion"
+    },
+    {
+      "slug": "vr-experiences",
+      "label": "VR Experiences"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-tourism",
+      "label": "Virtual Tourism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    }
+  ]
+}

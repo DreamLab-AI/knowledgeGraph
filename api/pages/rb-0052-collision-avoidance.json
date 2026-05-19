@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:52ca013a90c85fdca7226af898db0d5fd2158eb8055581dbad06f356506ea874",
+  "title": "rb 0052 collision avoidance",
+  "slug": "rb-0052-collision-avoidance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0052-collision-avoidance",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

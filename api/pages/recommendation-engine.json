@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:d830b978ebc7323fca9445e4c60529e93c976affde316f61d5d1a7ab36c17473",
+  "title": "Recommendation Engine",
+  "slug": "recommendation-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:recommendation-engine",
+  "domain": "infrastructure",
+  "definition": "RecommendationEngine is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

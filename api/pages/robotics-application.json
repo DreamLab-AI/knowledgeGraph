@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:0551142b12d6a92a6381508e4e602fe131c1d53c8e04a79f2c3f2a9b0d5d2bd2",
+  "title": "Robotics Application",
+  "slug": "robotics-application",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robotics-application",
+  "domain": "robotics",
+  "definition": "RoboticsApplication is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

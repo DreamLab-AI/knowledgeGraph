@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:1d647f7915d3b82a2b270e9ff6e4b68398c6386109750c1bdf19cf0f36d369fc",
+  "title": "Octocopter",
+  "slug": "octocopter",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:octocopter",
+  "domain": "robotics",
+  "definition": "Octocopter is an eight-rotor VTOL aircraft for heavy payloads.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:multirotor-uav",
+      "label": "Multirotor UAV"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "multirotor-uav",
+      "label": "Multirotor UAV"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

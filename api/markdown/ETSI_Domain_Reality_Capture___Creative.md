@@ -1,24 +1,201 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ETSIDomainRealityCaptureCreative
-uri:: urn:visionclaw:concept:spatial-computing:etsidomainrealitycapturecreative
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:etsidomainrealitycapturecreative
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: ETSI_Domain_Reality_Capture___Creative
-content-hash:: sha256-12-3f52b3cdca3c
-legacy-term-id:: MV-2003
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ETSIDomainRealityCaptureCreative
+legacy_uri:: urn:visionclaw:concept:spatial-computing:etsidomainrealitycapturecreative
 public:: true
+
+# ETSI_Domain_Reality_Capture___Creative
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-reality-capture-creative",
+  "title": "ETSI_Domain_Reality_Capture___Creative",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-performance-capture",
+      "vc:label": "Digital Performance Capture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3f52b3cdca3c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ETSIDomainRealityCaptureCreative"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2003"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Reality_Capture___Creative"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:etsidomainrealitycapturecreative"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:etsidomainrealitycapturecreative"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-reality-capture-creative",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Reality_Capture___Creative",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-performance-capture",
+      "vc:label": "Digital Performance Capture"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences. Reality capture creative systems integrate motion capture technologies, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis transforming physical performances into high-fidelity digital representations suitable for virtual worlds. Applications span virtual performance events, digital actor creation, interactive entertainment, and remote collaboration with emphasis on maintaining creative authenticity and performer expressivity through sophisticated sensor systems and real-time processing pipelines.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-reality-capture-creative:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Digital Performance Capture]]",
+      "resolved": "urn:visionflow:owl:class:digital-performance-capture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences. Reality capture creative systems integrate motion capture technologies, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis transforming physical performances into high-fidelity digital representations suitable for virtual worlds. Applications span virtual performance events, digital actor creation, interactive entertainment, and remote collaboration with emphasis on maintaining creative authenticity and performer expressivity through sophisticated sensor systems and real-time processing pipelines.

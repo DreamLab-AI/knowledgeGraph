@@ -1,0 +1,243 @@
+{
+  "id": "urn:visionflow:page:339cd24c96194c7ba4deac3138299e9d8e99a9ee41beadc2797a7b2b43b50224",
+  "title": "Tokenization",
+  "slug": "tokenization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tokenization",
+  "domain": "artificial-intelligence",
+  "definition": "Process of representing real-world or virtual assets as digital tokens on a blockchain through cryptographic mechanisms and smart contract protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-metadata",
+        "label": "Asset Metadata"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:token-standard-protocol",
+        "label": "Token Standard Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-transfer",
+        "label": "Ownership Transfer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-metadata",
+      "label": "Asset Metadata"
+    },
+    {
+      "slug": "blockchain-economy",
+      "label": "Blockchain Economy"
+    },
+    {
+      "slug": "erc-1155",
+      "label": "ERC-1155"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "fractional-ownership",
+      "label": "Fractional Ownership"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "oma3-media-working-group",
+      "label": "OMA3 Media Working Group"
+    },
+    {
+      "slug": "ownership-transfer",
+      "label": "Ownership Transfer"
+    },
+    {
+      "slug": "reed-smith-legal-framework",
+      "label": "Reed Smith Legal Framework"
+    },
+    {
+      "slug": "reed-smith-oma3",
+      "label": "Reed Smith + OMA3"
+    },
+    {
+      "slug": "token-standard-protocol",
+      "label": "Token Standard Protocol"
+    },
+    {
+      "slug": "virtual-process",
+      "label": "VirtualProcess"
+    },
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-transaction",
+      "label": "Blockchain Transaction"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "nft-renting",
+      "label": "NFT Renting"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

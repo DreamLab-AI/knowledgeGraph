@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:1000f2da1f833b9029b5303e2d7cf5d6215fa756021d405bfed9ab842e6ea1af",
+  "title": "Digital Asset Market",
+  "slug": "digital-asset-market",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-asset-market",
+  "domain": "spatial-computing",
+  "definition": "Digital Asset Market is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "environmental-asset-market",
+      "label": "Environmental Asset Market"
+    }
+  ]
+}

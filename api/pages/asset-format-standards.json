@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:f695055c925f918e17c644feececdf1515f6d56fab29472d6225b1a47af0bff1",
+  "title": "Asset Format Standards",
+  "slug": "asset-format-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:asset-format-standards",
+  "domain": "spatial-computing",
+  "definition": "Asset Format Standards are technical specifications defining file formats, data structures, and interchange protocols for 3D models, textures, animations, and scene descriptions, enabling interoperability between content creation tools, game engines, and metaverse platforms through standards like glTF, USD, and FBX.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:conversion-tools",
+        "label": "Conversion Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:format-compliance",
+        "label": "Format Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-systems",
+        "label": "Validation Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-portability",
+        "label": "Content Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-assets",
+        "label": "Cross-Platform Assets"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-interoperability",
+        "label": "Tool Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-portability",
+      "label": "Content Portability"
+    },
+    {
+      "slug": "conversion-tools",
+      "label": "Conversion Tools"
+    },
+    {
+      "slug": "cross-platform-assets",
+      "label": "Cross-Platform Assets"
+    },
+    {
+      "slug": "fbx",
+      "label": "FBX"
+    },
+    {
+      "slug": "format-compliance",
+      "label": "Format Compliance"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "open-usd",
+      "label": "OpenUSD"
+    },
+    {
+      "slug": "pixar-usd",
+      "label": "Pixar USD"
+    },
+    {
+      "slug": "tool-interoperability",
+      "label": "Tool Interoperability"
+    },
+    {
+      "slug": "validation-systems",
+      "label": "Validation Systems"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    }
+  ]
+}

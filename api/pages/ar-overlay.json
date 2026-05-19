@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:93e1dfa6756cf66e03c051e17c61fe397a222a28a89502d2075bebe9f7bf58a2",
+  "title": "Ar Overlay",
+  "slug": "ar-overlay",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ar-overlay",
+  "domain": "spatial-computing",
+  "definition": "AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-display-layer",
+      "label": "Digital Display Layer"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:environmental-understanding",
+        "label": "Environmental Understanding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:information-augmentation",
+        "label": "Information Augmentation"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-annotation",
+        "label": "Spatial Annotation"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-object-placement",
+        "label": "Virtual Object Placement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-display-layer",
+      "label": "Digital Display Layer"
+    },
+    {
+      "slug": "environmental-understanding",
+      "label": "Environmental Understanding"
+    },
+    {
+      "slug": "information-augmentation",
+      "label": "Information Augmentation"
+    },
+    {
+      "slug": "spatial-annotation",
+      "label": "Spatial Annotation"
+    },
+    {
+      "slug": "virtual-object-placement",
+      "label": "Virtual Object Placement"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "spatial-anchoring",
+      "label": "Spatial Anchoring"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    }
+  ]
+}

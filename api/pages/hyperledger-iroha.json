@@ -1,0 +1,644 @@
+{
+  "id": "urn:visionflow:page:322f3784529d03474c3cee060176cac3dd0f74a4b7523250e3a0251b3956d745",
+  "title": "Hyperledger Iroha",
+  "slug": "hyperledger-iroha",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hyperledger-iroha",
+  "domain": "blockchain",
+  "definition": "**Hyperledger Iroha** is a general-purpose permissioned Byzantine-fault-tolerant [[Distributed Ledger]] framework originally designed by Soramitsu (Tokyo, Japan) in collaboration with Hitachi, NTT Data and Colu, contributed to the [[Hyperledger]] Foundation (now Linux Foundation Decentralised Trust) on 17 October 2017 as the third top-level Hyperledger project after [[Hyperledger Fabric]] and Sawtooth, distinguished from its sibling frameworks by a radical commitment to operational simplicity, a built-in domain model of accounts/assets/permissions/signatories/peers rather than general-purpose smart contracts, and an explicit optimisation for mobile, IoT and bank-grade transaction processing \u2014 currently maintained in two production lineages: **Iroha 1.x** (C++17 implementation, YAC \"Yet Another Consensus\" voting BFT, command-query separation with pre-defined commands such as `CreateAccount`, `TransferAsset`, `AddAssetQuantity`, `AppendRole`, `GrantPermission`, PostgreSQL-backed world-state, gRPC + WebSocket Torii API, multi-signature transactions and atomic batches as first-class primitives, client SDKs for Java/Kotlin, Python, JavaScript/TypeScript, iOS Swift, Android, C++ and .NET",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "label": "Byzantine Fault Tolerant System"
+    },
+    {
+      "id": "urn:visionflow:linked:enterprise-blockchain-framework",
+      "label": "Enterprise Blockchain Framework"
+    },
+    {
+      "id": "urn:visionflow:linked:hyperledger-project",
+      "label": "Hyperledger Project"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "id": "urn:visionflow:owl:class:permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:iroha-executor",
+        "label": "Iroha Executor"
+      },
+      {
+        "id": "urn:visionflow:linked:iroha-special-instructions",
+        "label": "Iroha Special Instructions"
+      },
+      {
+        "id": "urn:visionflow:linked:iroha-trigger",
+        "label": "Iroha Trigger"
+      },
+      {
+        "id": "urn:visionflow:linked:iroha-wasm-runtime",
+        "label": "Iroha WASM Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:kura-block-store",
+        "label": "Kura Block Store"
+      },
+      {
+        "id": "urn:visionflow:linked:sumeragi-block-producer",
+        "label": "Sumeragi Block Producer"
+      },
+      {
+        "id": "urn:visionflow:linked:sumeragi-consensus",
+        "label": "Sumeragi Consensus"
+      },
+      {
+        "id": "urn:visionflow:linked:torii-api",
+        "label": "Torii API"
+      },
+      {
+        "id": "urn:visionflow:linked:yac-consensus",
+        "label": "YAC Consensus"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blake2b-hashing",
+        "label": "BLAKE2b Hashing"
+      },
+      {
+        "id": "urn:visionflow:linked:ed25519-signatures",
+        "label": "Ed25519 Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:g-rpc-transport",
+        "label": "gRPC Transport"
+      },
+      {
+        "id": "urn:visionflow:linked:permissioned-validator-set",
+        "label": "Permissioned Validator Set"
+      },
+      {
+        "id": "urn:visionflow:linked:rust-runtime",
+        "label": "Rust Runtime"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:visionflow:linked:atomic-multi-asset-transfer",
+        "label": "Atomic Multi-Asset Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-retail-payment",
+        "label": "Cross-Border Retail Payment"
+      },
+      {
+        "id": "urn:visionflow:linked:national-payment-system",
+        "label": "National Payment System"
+      },
+      {
+        "id": "urn:visionflow:linked:permissioned-smart-contracts",
+        "label": "Permissioned Smart Contracts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:atomic-batch-transactions",
+        "label": "Atomic Batch Transactions"
+      },
+      {
+        "id": "urn:visionflow:linked:command-query-separation",
+        "label": "Command Query Separation"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-signature-transactions",
+        "label": "Multi-Signature Transactions"
+      },
+      {
+        "id": "urn:visionflow:linked:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:visionflow:linked:sumeragi-bft",
+        "label": "Sumeragi BFT"
+      },
+      {
+        "id": "urn:visionflow:linked:web-assembly-smart-contracts",
+        "label": "WebAssembly Smart Contracts"
+      },
+      {
+        "id": "urn:visionflow:linked:yet-another-consensus",
+        "label": "Yet Another Consensus"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
+      "slug": "androulaki-et-al-2018-hyperledger-fabric-euro-sys",
+      "label": "Androulaki et al 2018 Hyperledger Fabric EuroSys"
+    },
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "atlantic-council-cbdc-tracker-cambodia",
+      "label": "Atlantic Council CBDC Tracker Cambodia"
+    },
+    {
+      "slug": "atomic-batch-transactions",
+      "label": "Atomic Batch Transactions"
+    },
+    {
+      "slug": "atomic-multi-asset-transfer",
+      "label": "Atomic Multi-Asset Transfer"
+    },
+    {
+      "slug": "aumasson-2013-blake2-acns",
+      "label": "Aumasson 2013 BLAKE2 ACNS"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "bakong",
+      "label": "Bakong"
+    },
+    {
+      "slug": "bernstein-et-al-2011-ed25519-high-speed-signatures",
+      "label": "Bernstein et al 2011 Ed25519 High-speed Signatures"
+    },
+    {
+      "slug": "bis-2021-2024-cbdc-country-briefs-cambodia-bakong",
+      "label": "BIS 2021-2024 CBDC Country Briefs Cambodia Bakong"
+    },
+    {
+      "slug": "bis-2024-project-agora",
+      "label": "BIS 2024 Project Agora"
+    },
+    {
+      "slug": "bis-innovation-hub-2022-2024-project-m-bridge",
+      "label": "BIS Innovation Hub 2022-2024 Project mBridge"
+    },
+    {
+      "slug": "blake2b",
+      "label": "BLAKE2b"
+    },
+    {
+      "slug": "blake2b-hashing",
+      "label": "BLAKE2b Hashing"
+    },
+    {
+      "slug": "bo-e-bis-innovation-hub-2023-project-rosalind",
+      "label": "BoE BIS Innovation Hub 2023 Project Rosalind"
+    },
+    {
+      "slug": "bokolo-cash",
+      "label": "Bokolo Cash"
+    },
+    {
+      "slug": "brown-2018-corda-platform-r3-white-paper",
+      "label": "Brown 2018 Corda Platform R3 White Paper"
+    },
+    {
+      "slug": "bsi-pas-19668",
+      "label": "BSI PAS 19668"
+    },
+    {
+      "slug": "buchman-2016-tendermint-msc-thesis",
+      "label": "Buchman 2016 Tendermint MSc Thesis"
+    },
+    {
+      "slug": "byzantine-fault-tolerant-system",
+      "label": "Byzantine Fault Tolerant System"
+    },
+    {
+      "slug": "cambridge-ccaf-2024-bakong-retrospective-study",
+      "label": "Cambridge CCAF 2024 Bakong Retrospective Study"
+    },
+    {
+      "slug": "cambridge-ccaf-global-cryptoasset-benchmarking-study-annual",
+      "label": "Cambridge CCAF Global Cryptoasset Benchmarking Study Annual"
+    },
+    {
+      "slug": "castro-liskov-1999-practical-byzantine-fault-tolerance",
+      "label": "Castro Liskov 1999 Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "central-bank-digital-currency-domain",
+      "label": "CentralBankDigitalCurrencyDomain"
+    },
+    {
+      "slug": "command-query-separation",
+      "label": "Command Query Separation"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
+      "slug": "cross-border-retail-payment",
+      "label": "Cross-Border Retail Payment"
+    },
+    {
+      "slug": "ed25519",
+      "label": "Ed25519"
+    },
+    {
+      "slug": "ed25519-signatures",
+      "label": "Ed25519 Signatures"
+    },
+    {
+      "slug": "enterprise-blockchain-framework",
+      "label": "Enterprise Blockchain Framework"
+    },
+    {
+      "slug": "enterprise-distributed-ledger-domain",
+      "label": "EnterpriseDistributedLedgerDomain"
+    },
+    {
+      "slug": "fraud-intelligence",
+      "label": "Fraud Intelligence"
+    },
+    {
+      "slug": "fraud-intelligence-limited",
+      "label": "Fraud Intelligence Limited"
+    },
+    {
+      "slug": "g-rpc",
+      "label": "gRPC"
+    },
+    {
+      "slug": "g-rpc-transport",
+      "label": "gRPC Transport"
+    },
+    {
+      "slug": "hyperledger",
+      "label": "Hyperledger"
+    },
+    {
+      "slug": "hyperledger-anon-creds",
+      "label": "Hyperledger AnonCreds"
+    },
+    {
+      "slug": "hyperledger-foundation",
+      "label": "Hyperledger Foundation"
+    },
+    {
+      "slug": "hyperledger-foundation-2017-iroha-project-proposal",
+      "label": "Hyperledger Foundation 2017 Iroha Project Proposal"
+    },
+    {
+      "slug": "hyperledger-foundation-2024-linux-foundation-decentralised-trust-transition",
+      "label": "Hyperledger Foundation 2024 Linux Foundation Decentralised Trust Transition"
+    },
+    {
+      "slug": "hyperledger-iroha-2-documentation-hyperledger-github-io-iroha-2-docs",
+      "label": "Hyperledger Iroha 2 Documentation hyperledger.github.io iroha-2-docs"
+    },
+    {
+      "slug": "hyperledger-iroha-documentation-iroha-readthedocs-io",
+      "label": "Hyperledger Iroha Documentation iroha.readthedocs.io"
+    },
+    {
+      "slug": "hyperledger-project",
+      "label": "Hyperledger Project"
+    },
+    {
+      "slug": "hyperledger-sawtooth",
+      "label": "Hyperledger Sawtooth"
+    },
+    {
+      "slug": "hyperledger-tsc",
+      "label": "Hyperledger TSC"
+    },
+    {
+      "slug": "hyperledger-tsc-2024-iroha-2-ga-approval-vote",
+      "label": "Hyperledger TSC 2024 Iroha 2 GA Approval Vote"
+    },
+    {
+      "slug": "imf-2022-asia-pacific-cbdc-pilot-cambodia",
+      "label": "IMF 2022 Asia-Pacific CBDC Pilot Cambodia"
+    },
+    {
+      "slug": "imperial-ic3-permissioned-bft-performance-working-papers",
+      "label": "Imperial IC3 Permissioned BFT Performance Working Papers"
+    },
+    {
+      "slug": "iroha-executor",
+      "label": "Iroha Executor"
+    },
+    {
+      "slug": "iroha-special-instructions",
+      "label": "Iroha Special Instructions"
+    },
+    {
+      "slug": "iroha-trigger",
+      "label": "Iroha Trigger"
+    },
+    {
+      "slug": "iroha-wasm-runtime",
+      "label": "Iroha WASM Runtime"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    },
+    {
+      "slug": "iso-22739",
+      "label": "ISO 22739"
+    },
+    {
+      "slug": "kagome-polkadot-host",
+      "label": "Kagome Polkadot Host"
+    },
+    {
+      "slug": "klaytn",
+      "label": "Klaytn"
+    },
+    {
+      "slug": "kura-block-store",
+      "label": "Kura Block Store"
+    },
+    {
+      "slug": "linux-foundation-decentralised-trust",
+      "label": "Linux Foundation Decentralised Trust"
+    },
+    {
+      "slug": "m-bridge",
+      "label": "mBridge"
+    },
+    {
+      "slug": "mufg-coin",
+      "label": "MUFG Coin"
+    },
+    {
+      "slug": "multi-signature-transactions",
+      "label": "Multi-Signature Transactions"
+    },
+    {
+      "slug": "muratov-2018-yac-bft-consensus-algorithm",
+      "label": "Muratov 2018 YAC BFT Consensus Algorithm"
+    },
+    {
+      "slug": "national-bank-of-cambodia-bakong-annual-reports-2020-2024",
+      "label": "National Bank of Cambodia Bakong Annual Reports 2020-2024"
+    },
+    {
+      "slug": "national-payment-system",
+      "label": "National Payment System"
+    },
+    {
+      "slug": "nbc-bank-of-thailand-2023-bakong-prompt-pay-joint-release",
+      "label": "NBC Bank of Thailand 2023 Bakong PromptPay Joint Release"
+    },
+    {
+      "slug": "permissioned-smart-contracts",
+      "label": "Permissioned Smart Contracts"
+    },
+    {
+      "slug": "permissioned-validator-set",
+      "label": "Permissioned Validator Set"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "polkaswap",
+      "label": "Polkaswap"
+    },
+    {
+      "slug": "postgre-sql",
+      "label": "PostgreSQL"
+    },
+    {
+      "slug": "project-agora",
+      "label": "Project Agora"
+    },
+    {
+      "slug": "protocol-buffers",
+      "label": "Protocol Buffers"
+    },
+    {
+      "slug": "rfc-8032-ed-dsa-2017",
+      "label": "RFC 8032 EdDSA 2017"
+    },
+    {
+      "slug": "rocks-db",
+      "label": "RocksDB"
+    },
+    {
+      "slug": "role-based-access-control",
+      "label": "Role-Based Access Control"
+    },
+    {
+      "slug": "russian-federal-cadastre",
+      "label": "Russian Federal Cadastre"
+    },
+    {
+      "slug": "rust-programming-language",
+      "label": "Rust Programming Language"
+    },
+    {
+      "slug": "rust-runtime",
+      "label": "Rust Runtime"
+    },
+    {
+      "slug": "sora-network",
+      "label": "SORA Network"
+    },
+    {
+      "slug": "soramitsu",
+      "label": "Soramitsu"
+    },
+    {
+      "slug": "soramitsu-2023-sora-network-v3-documentation",
+      "label": "Soramitsu 2023 SORA Network v3 Documentation"
+    },
+    {
+      "slug": "soramitsu-2024-iroha-2-ga-stable-release-notes",
+      "label": "Soramitsu 2024 Iroha 2 GA Stable Release Notes"
+    },
+    {
+      "slug": "state-layer",
+      "label": "StateLayer"
+    },
+    {
+      "slug": "stellar",
+      "label": "Stellar"
+    },
+    {
+      "slug": "sumeragi-bft",
+      "label": "Sumeragi BFT"
+    },
+    {
+      "slug": "sumeragi-block-producer",
+      "label": "Sumeragi Block Producer"
+    },
+    {
+      "slug": "sumeragi-consensus",
+      "label": "Sumeragi Consensus"
+    },
+    {
+      "slug": "takemiya-vanieiev-2018-sora-identity",
+      "label": "Takemiya Vanieiev 2018 Sora Identity"
+    },
+    {
+      "slug": "tendermint",
+      "label": "Tendermint"
+    },
+    {
+      "slug": "tokio",
+      "label": "Tokio"
+    },
+    {
+      "slug": "tokio-async-runtime",
+      "label": "Tokio Async Runtime"
+    },
+    {
+      "slug": "torii-api",
+      "label": "Torii API"
+    },
+    {
+      "slug": "ucl-cbt-2024-national-cbdc-implementations-comparative-analysis",
+      "label": "UCL CBT 2024 National CBDC Implementations Comparative Analysis"
+    },
+    {
+      "slug": "web-assembly-2-0-specification",
+      "label": "WebAssembly 2.0 Specification"
+    },
+    {
+      "slug": "web-assembly-smart-contracts",
+      "label": "WebAssembly Smart Contracts"
+    },
+    {
+      "slug": "yac-consensus",
+      "label": "YAC Consensus"
+    },
+    {
+      "slug": "yet-another-consensus",
+      "label": "Yet Another Consensus"
+    },
+    {
+      "slug": "yin-et-al-2019-hot-stuff-podc",
+      "label": "Yin et al 2019 HotStuff PODC"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "NetworkingLayer"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

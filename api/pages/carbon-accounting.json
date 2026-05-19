@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:5aba8cc2ca3b9d23b361b3fb3376fc94067c3ce7d34305b0f963d9a71d189a95",
+  "title": "Carbon Accounting",
+  "slug": "carbon-accounting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-accounting",
+  "domain": "spatial-computing",
+  "definition": "The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:environmental-accounting",
+      "label": "Environmental Accounting"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:visionflow:linked:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "id": "urn:visionflow:linked:verification-process",
+        "label": "Verification Process"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:climate-action-planning",
+        "label": "Climate Action Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:emissions-reporting",
+        "label": "Emissions Reporting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "climate-action-planning",
+      "label": "Climate Action Planning"
+    },
+    {
+      "slug": "data-collection",
+      "label": "Data Collection"
+    },
+    {
+      "slug": "emission-factors",
+      "label": "Emission Factors"
+    },
+    {
+      "slug": "emissions-reporting",
+      "label": "Emissions Reporting"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "sec-securities-and-exchange-commission",
+      "label": "SEC (Securities and Exchange Commission)"
+    },
+    {
+      "slug": "verification-process",
+      "label": "Verification Process"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "environmental-accounting",
+      "label": "Environmental Accounting"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "environmental-sustainability-label",
+      "label": "Environmental Sustainability Label"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "id": "urn:visionflow:page:339b18a02cc0ab280585e388358b92148b36200a8a6b4be8ec35155a3cf51eb6",
+  "title": "InfraredSensor",
+  "slug": "infrared-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrared-sensor",
+  "domain": "robotics",
+  "definition": "An optoelectronic sensor device that detects electromagnetic radiation in the infrared spectrum (wavelengths approximately 700 nanometers to 1 millimeter) to measure heat emission, enable proximity detection, support autonomous navigation, or facilitate object recognition in robotic systems, employing either passive detection of ambient thermal radiation (PIR sensors responding to temperature differentials in the environment) or active emission-reflection measurement (IR emitters paired with receivers for distance ranging and obstacle avoidance), with applications spanning mobile robot navigation, industrial automation, human-robot interaction (gesture recognition, presence detection), thermal imaging for inspection tasks, and line-following robots, and characterized by technical parameters including spectral response range (near-infrared 0.7-1.4 \u03bcm, short-wave 1.4-3 \u03bcm, mid-wave 3-8 \u03bcm, long-wave 8-15 \u03bcm, far-infrared 15-1000 \u03bcm), detection range (typically 2 cm to 10 meters for proximity sensors, up to 100 meters for long-range thermal cameras), response time (microseconds to milliseconds), field of view (narrow-beam 5-15\u00b0 for range-finding, wide-angle 90-120\u00b0 for motion detectio",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:optoelectronic-device",
+      "label": "OptoelectronicDevice"
+    },
+    {
+      "id": "urn:visionflow:linked:thermal-imager",
+      "label": "ThermalImager"
+    },
+    {
+      "id": "urn:visionflow:owl:class:exteroceptive-sensor",
+      "label": "ExteroceptiveSensor"
+    },
+    {
+      "id": "urn:visionflow:owl:class:proximity-sensor",
+      "label": "ProximitySensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.88,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:analog-digital-converter",
+        "label": "AnalogDigitalConverter"
+      },
+      {
+        "id": "urn:visionflow:linked:iremitter",
+        "label": "IREmitter"
+      },
+      {
+        "id": "urn:visionflow:linked:irreceiver",
+        "label": "IRReceiver"
+      },
+      {
+        "id": "urn:visionflow:linked:lens-assembly",
+        "label": "LensAssembly"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-filter",
+        "label": "OpticalFilter"
+      },
+      {
+        "id": "urn:visionflow:linked:signal-amplifier",
+        "label": "SignalAmplifier"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:optical-alignment",
+        "label": "OpticalAlignment"
+      },
+      {
+        "id": "urn:visionflow:linked:temperature-compensation",
+        "label": "TemperatureCompensation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:power-supply",
+        "label": "PowerSupply"
+      },
+      {
+        "id": "urn:visionflow:owl:class:signal-processing",
+        "label": "SignalProcessing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:gesture-recognition",
+        "label": "GestureRecognition"
+      },
+      {
+        "id": "urn:visionflow:linked:line-following",
+        "label": "LineFollowing"
+      },
+      {
+        "id": "urn:visionflow:linked:navigation-control",
+        "label": "NavigationControl"
+      },
+      {
+        "id": "urn:visionflow:linked:thermal-inspection",
+        "label": "ThermalInspection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "label": "ObstacleAvoidance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:presence-detection",
+        "label": "PresenceDetection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analog-digital-converter",
+      "label": "AnalogDigitalConverter"
+    },
+    {
+      "slug": "autonomous-navigation-domain",
+      "label": "AutonomousNavigationDomain"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "GestureRecognition"
+    },
+    {
+      "slug": "iec-60825-safety-of-laser-products",
+      "label": "IEC 60825 Safety of Laser Products"
+    },
+    {
+      "slug": "ieee-std-1855-fuzzy-markup-language",
+      "label": "IEEE Std 1855 Fuzzy Markup Language"
+    },
+    {
+      "slug": "international-society-for-optics-and-photonics-spie",
+      "label": "International Society for Optics and Photonics (SPIE)"
+    },
+    {
+      "slug": "iremitter",
+      "label": "IREmitter"
+    },
+    {
+      "slug": "irreceiver",
+      "label": "IRReceiver"
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "label": "ISO 8373 Robotics Vocabulary"
+    },
+    {
+      "slug": "lens-assembly",
+      "label": "LensAssembly"
+    },
+    {
+      "slug": "line-following",
+      "label": "LineFollowing"
+    },
+    {
+      "slug": "navigation-control",
+      "label": "NavigationControl"
+    },
+    {
+      "slug": "optical-alignment",
+      "label": "OpticalAlignment"
+    },
+    {
+      "slug": "optical-filter",
+      "label": "OpticalFilter"
+    },
+    {
+      "slug": "optoelectronic-device",
+      "label": "OptoelectronicDevice"
+    },
+    {
+      "slug": "robot-operating-system-ros-sensor-standards",
+      "label": "Robot Operating System (ROS) Sensor Standards"
+    },
+    {
+      "slug": "sensor-technology-domain",
+      "label": "SensorTechnologyDomain"
+    },
+    {
+      "slug": "signal-amplifier",
+      "label": "SignalAmplifier"
+    },
+    {
+      "slug": "temperature-compensation",
+      "label": "TemperatureCompensation"
+    },
+    {
+      "slug": "thermal-imager",
+      "label": "ThermalImager"
+    },
+    {
+      "slug": "thermal-inspection",
+      "label": "ThermalInspection"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "ExteroceptiveSensor"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "ObstacleAvoidance"
+    },
+    {
+      "slug": "power-supply",
+      "label": "PowerSupply"
+    },
+    {
+      "slug": "presence-detection",
+      "label": "PresenceDetection"
+    },
+    {
+      "slug": "proximity-sensor",
+      "label": "ProximitySensor"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "SignalProcessing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

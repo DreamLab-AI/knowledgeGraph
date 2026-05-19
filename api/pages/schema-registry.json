@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:8c7a6dacdcfae343414c5fbf7b4c9e8c25aa2064d081b19da74b0265d2a0ccd6",
+  "title": "Schema Registry",
+  "slug": "schema-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:schema-registry",
+  "domain": "spatial-computing",
+  "definition": "A centralized service that stores, validates, and manages data schemas for event streaming and API contracts, ensuring compatibility and evolution of data formats across distributed metaverse systems and microservices.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:schema-evolution",
+        "label": "Schema Evolution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "schema-evolution",
+      "label": "Schema Evolution"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    }
+  ]
+}

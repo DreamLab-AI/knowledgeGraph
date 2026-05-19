@@ -1,21 +1,286 @@
-iri:: http://narrativegoldmine.com/infrastructure#DataReplication
-uri:: urn:visionclaw:concept:infrastructure:data-replication
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:data-replication
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Data Replication
-content-hash:: sha256-12-364ca4aa14cc
-legacy-term-id:: MV-9840
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DataReplication
+legacy_uri:: urn:visionclaw:concept:infrastructure:data-replication
 public:: true
+
+# Data Replication
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9",
+  "@type": "Page",
+  "vc:slug": "data-replication",
+  "title": "Data Replication",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:consistency-guarantees",
+      "vc:label": "Consistency Guarantees"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-availability",
+      "vc:label": "Data Availability"
+    },
+    {
+      "@id": "urn:visionflow:linked:storage-systems",
+      "vc:label": "Storage Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-algorithm",
+      "vc:label": "Consensus Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fault-tolerance",
+      "vc:label": "Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-364ca4aa14cc"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DataReplication"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9840"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Data Replication"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-replication"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-replication"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:data-replication",
+  "@type": "OntologyClass",
+  "label": "Data Replication",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:distributed-systems",
+      "vc:label": "Distributed Systems"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:storage-systems",
+      "vc:label": "Storage Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-algorithm",
+      "vc:label": "Consensus Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:consistency-guarantees",
+      "vc:label": "Consistency Guarantees"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-availability",
+      "vc:label": "Data Availability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fault-tolerance",
+      "vc:label": "Fault Tolerance"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:data-replication:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Consistency Guarantees]]",
+      "resolved": "urn:visionflow:linked:consistency-guarantees",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Availability]]",
+      "resolved": "urn:visionflow:linked:data-availability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Storage Systems]]",
+      "resolved": "urn:visionflow:linked:storage-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consensus Algorithm]]",
+      "resolved": "urn:visionflow:owl:class:consensus-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Systems]]",
+      "resolved": "urn:visionflow:owl:class:distributed-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fault Tolerance]]",
+      "resolved": "urn:visionflow:owl:class:fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:network-infrastructure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.

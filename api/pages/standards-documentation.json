@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:32ea975bf90f185e46c0a25afbda9f164bbd24b0cbb9d52a3644ef63fab4758e",
+  "title": "Standards Documentation",
+  "slug": "standards-documentation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:standards-documentation",
+  "domain": "spatial-computing",
+  "definition": "Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery methods, and presentation to ensure consistency, clarity, and accuracy across all content.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    },
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    }
+  ]
+}

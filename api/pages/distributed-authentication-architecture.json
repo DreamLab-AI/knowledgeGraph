@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de",
+  "title": "Distributed Authentication Architecture",
+  "slug": "distributed-authentication-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributed-authentication-architecture",
+  "domain": "infrastructure",
+  "definition": "A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

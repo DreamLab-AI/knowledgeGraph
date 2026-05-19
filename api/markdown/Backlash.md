@@ -1,22 +1,328 @@
-iri:: http://narrativegoldmine.com/robotics#Backlash
-uri:: urn:visionclaw:concept:robotics:backlash
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:backlash
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Backlash
-content-hash:: sha256-12-79e2bdb6aba3
-legacy-term-id:: RB-0887
-status:: draft
-maturity:: draft
-quality-score:: 0.48
-authority-score:: 0.08
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:13:07Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#Backlash
+legacy_uri:: urn:visionclaw:concept:robotics:backlash
 public:: true
-bridges-to:: [[Control System]]
+
+# Backlash
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b",
+  "@type": "Page",
+  "vc:slug": "backlash",
+  "title": "Backlash",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:backlash-measurement",
+      "vc:label": "Backlash Measurement"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-algorithm-tuning",
+      "vc:label": "Control Algorithm Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-8373-2021",
+      "vc:label": "ISO 8373:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:joint-mechanics",
+      "vc:label": "Joint Mechanics"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanical-compensation",
+      "vc:label": "Mechanical Compensation"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-degradation-detection",
+      "vc:label": "Performance Degradation Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:repeatability",
+      "vc:label": "Repeatability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accuracy",
+      "vc:label": "Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:precision",
+      "vc:label": "Precision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-dynamics",
+      "vc:label": "Robot Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.08"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Control System]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-79e2bdb6aba3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#Backlash"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0887"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:13:07Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Backlash"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.48"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:backlash"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:backlash"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:backlash",
+  "@type": "OntologyClass",
+  "label": "Backlash",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robot-dynamics",
+      "vc:label": "Robot Dynamics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Backlash** - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.",
+  "vc:qualityScore": {
+    "@value": "0.48",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.08",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:joint-mechanics",
+      "vc:label": "Joint Mechanics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-dynamics",
+      "vc:label": "Robot Dynamics"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:control-algorithm-tuning",
+      "vc:label": "Control Algorithm Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanical-compensation",
+      "vc:label": "Mechanical Compensation"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:backlash-measurement",
+      "vc:label": "Backlash Measurement"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-degradation-detection",
+      "vc:label": "Performance Degradation Detection"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:control-system",
+      "vc:label": "Control System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:backlash:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Backlash Measurement]]",
+      "resolved": "urn:visionflow:linked:backlash-measurement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Control Algorithm Tuning]]",
+      "resolved": "urn:visionflow:linked:control-algorithm-tuning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 8373:2021]]",
+      "resolved": "urn:visionflow:linked:iso-8373-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Joint Mechanics]]",
+      "resolved": "urn:visionflow:linked:joint-mechanics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mechanical Compensation]]",
+      "resolved": "urn:visionflow:linked:mechanical-compensation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Performance Degradation Detection]]",
+      "resolved": "urn:visionflow:linked:performance-degradation-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Repeatability]]",
+      "resolved": "urn:visionflow:linked:repeatability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accuracy]]",
+      "resolved": "urn:visionflow:owl:class:accuracy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Precision]]",
+      "resolved": "urn:visionflow:owl:class:precision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Dynamics]]",
+      "resolved": "urn:visionflow:owl:class:robot-dynamics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Backlash** - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.

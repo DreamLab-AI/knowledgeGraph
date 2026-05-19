@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:4120c45e560e6ae9d2b072597ecda7a029d061a03d8cf282026ab84f94970d1c",
+  "title": "Parental Controls",
+  "slug": "parental-controls",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:parental-controls",
+  "domain": "spatial-computing",
+  "definition": "Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-safety",
+      "label": "Digital Safety"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:safe-online-environment",
+        "label": "Safe Online Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "safe-online-environment",
+      "label": "Safe Online Environment"
+    },
+    {
+      "slug": "digital-safety",
+      "label": "Digital Safety"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-well-being-index",
+      "label": "Digital Well-Being Index"
+    }
+  ]
+}

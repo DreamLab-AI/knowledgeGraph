@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:43f991ee426d55c10d36f4dde29fb8b1d30f2c60500250d159afd4fa4407cf19",
+  "title": "Virtual Production Volume",
+  "slug": "virtual-production-volume",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-production-volume",
+  "domain": "spatial-computing",
+  "definition": "Large-scale physical LED wall or projection stage environment that merges live-action footage with real-time rendered 3D backgrounds, including LED panels, tracking systems, camera infrastructure, and stage hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-production-pipeline",
+      "label": "Virtual Production Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-tracking-system",
+        "label": "Camera Tracking System"
+      },
+      {
+        "id": "urn:visionflow:linked:display-processor",
+        "label": "Display Processor"
+      },
+      {
+        "id": "urn:visionflow:linked:led-wall",
+        "label": "LED Wall"
+      },
+      {
+        "id": "urn:visionflow:linked:lighting-rig",
+        "label": "Lighting Rig"
+      },
+      {
+        "id": "urn:visionflow:linked:physical-stage",
+        "label": "Physical Stage"
+      },
+      {
+        "id": "urn:visionflow:linked:rendering-cluster",
+        "label": "Rendering Cluster"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:camera-tracking",
+        "label": "Camera Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:color-management-system",
+        "label": "Color Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-rendering-engine",
+        "label": "Real-time Rendering Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:in-camera-vfx",
+        "label": "In-Camera VFX"
+      },
+      {
+        "id": "urn:visionflow:linked:interactive-filmmaking",
+        "label": "Interactive Filmmaking"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-background-rendering",
+        "label": "Real-time Background Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-location",
+        "label": "Virtual Location"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "camera-tracking",
+      "label": "Camera Tracking"
+    },
+    {
+      "slug": "camera-tracking-system",
+      "label": "Camera Tracking System"
+    },
+    {
+      "slug": "color-management-system",
+      "label": "Color Management System"
+    },
+    {
+      "slug": "display-processor",
+      "label": "Display Processor"
+    },
+    {
+      "slug": "film-production-studio",
+      "label": "Film Production Studio"
+    },
+    {
+      "slug": "in-camera-vfx",
+      "label": "In-Camera VFX"
+    },
+    {
+      "slug": "interactive-filmmaking",
+      "label": "Interactive Filmmaking"
+    },
+    {
+      "slug": "iso-iec-23090-3",
+      "label": "ISO/IEC 23090-3"
+    },
+    {
+      "slug": "led-wall",
+      "label": "LED Wall"
+    },
+    {
+      "slug": "lighting-rig",
+      "label": "Lighting Rig"
+    },
+    {
+      "slug": "physical-stage",
+      "label": "Physical Stage"
+    },
+    {
+      "slug": "real-time-background-rendering",
+      "label": "Real-time Background Rendering"
+    },
+    {
+      "slug": "real-time-rendering-engine",
+      "label": "Real-time Rendering Engine"
+    },
+    {
+      "slug": "rendering-cluster",
+      "label": "Rendering Cluster"
+    },
+    {
+      "slug": "smpte-st-2117",
+      "label": "SMPTE ST 2117"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "virtual-location",
+      "label": "Virtual Location"
+    },
+    {
+      "slug": "virtual-production-pipeline",
+      "label": "Virtual Production Pipeline"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

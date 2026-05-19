@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e",
+  "title": "Gyroscope",
+  "slug": "gyroscope",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:gyroscope",
+  "domain": "robotics",
+  "definition": "**Gyroscope** - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:inertial-sensor",
+      "label": "Inertial Sensor"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.56,
+  "authorityScore": 0.11,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bias-compensation",
+        "label": "Bias Compensation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:balance-control",
+        "label": "Balance Control"
+      },
+      {
+        "id": "urn:visionflow:linked:drone-stabilisation",
+        "label": "Drone Stabilisation"
+      },
+      {
+        "id": "urn:visionflow:linked:orientation-reference",
+        "label": "Orientation Reference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "attitude-determination",
+      "label": "Attitude Determination"
+    },
+    {
+      "slug": "attitude-estimation",
+      "label": "Attitude Estimation"
+    },
+    {
+      "slug": "balance-control",
+      "label": "Balance Control"
+    },
+    {
+      "slug": "bias-compensation",
+      "label": "Bias Compensation"
+    },
+    {
+      "slug": "drone-stabilisation",
+      "label": "Drone Stabilisation"
+    },
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "inertial-navigation",
+      "label": "Inertial Navigation"
+    },
+    {
+      "slug": "inertial-sensor",
+      "label": "Inertial Sensor"
+    },
+    {
+      "slug": "orientation-reference",
+      "label": "Orientation Reference"
+    },
+    {
+      "slug": "orientation-tracking",
+      "label": "Orientation Tracking"
+    },
+    {
+      "slug": "roll-pitch-yaw-measurement",
+      "label": "Roll/Pitch/Yaw Measurement"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    }
+  ]
+}

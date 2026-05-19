@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:995a1fada28b25e1cecc88ad6ed79fa0b820a93d87c98c97770478311473a9cc",
+  "title": "Learning Rate Schedule",
+  "slug": "learning-rate-schedule",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:learning-rate-schedule",
+  "domain": "spatial-computing",
+  "definition": "A strategy for adjusting the learning rate during training according to a predefined or adaptive schedule. Learning rate schedules improve convergence and final performance by using higher rates early for rapid progress and lower rates later for fine-tuning.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    }
+  ]
+}

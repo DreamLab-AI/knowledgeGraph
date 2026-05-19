@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:14068595c93b2ab0d810ccfcd80d2b8eeaa6f90cb72151f3846076a111ba4b42",
+  "title": "Blockchain Process",
+  "slug": "blockchain-process",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-process",
+  "domain": "blockchain",
+  "definition": "BlockchainProcess is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    }
+  ]
+}

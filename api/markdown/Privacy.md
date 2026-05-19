@@ -1,24 +1,534 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Privacy
-uri:: urn:visionclaw:concept:spatial-computing:privacy
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:privacy
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Privacy
-content-hash:: sha256-12-39f55fddefc3
-legacy-term-id:: AI-0072
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Privacy
+legacy_uri:: urn:visionclaw:concept:spatial-computing:privacy
 public:: true
+
+# Privacy
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913",
+  "@type": "Page",
+  "vc:slug": "privacy",
+  "title": "Privacy",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:back2002hashcash",
+      "vc:label": "back2002hashcash"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayer2023artificial",
+      "vc:label": "bayer2023artificial"
+    },
+    {
+      "@id": "urn:visionflow:linked:burnham1983rise-chaum1985security",
+      "vc:label": "burnham1983rise; @chaum1985security"
+    },
+    {
+      "@id": "urn:visionflow:linked:callas1998openpgp",
+      "vc:label": "callas1998openpgp"
+    },
+    {
+      "@id": "urn:visionflow:linked:dai1998b",
+      "vc:label": "dai1998b"
+    },
+    {
+      "@id": "urn:visionflow:linked:dwork1992pricing-jakobsson1999proofs",
+      "vc:label": "dwork1992pricing; @jakobsson1999proofs"
+    },
+    {
+      "@id": "urn:visionflow:linked:goldenfein-mann-2024",
+      "vc:label": "Goldenfein Mann 2024"
+    },
+    {
+      "@id": "urn:visionflow:linked:harari2014sapiens",
+      "vc:label": "harari2014sapiens"
+    },
+    {
+      "@id": "urn:visionflow:linked:lavoie1990prefatory",
+      "vc:label": "lavoie1990prefatory"
+    },
+    {
+      "@id": "urn:visionflow:linked:nakamoto2008",
+      "vc:label": "Nakamoto2008"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr",
+      "vc:label": "Nostr"
+    },
+    {
+      "@id": "urn:visionflow:linked:o2021god",
+      "vc:label": "o2021god"
+    },
+    {
+      "@id": "urn:visionflow:linked:rosenbergmanipulation",
+      "vc:label": "rosenbergmanipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:salin-costs-cypher-punk-mail-list",
+      "vc:label": "salinCosts; @cypherPunkMailList"
+    },
+    {
+      "@id": "urn:visionflow:linked:swartz2008guerilla",
+      "vc:label": "swartz2008guerilla"
+    },
+    {
+      "@id": "urn:visionflow:linked:szabo1997formalizing",
+      "vc:label": "szabo1997formalizing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cyber-security-and-military",
+      "vc:label": "Cyber Security and Military"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cypherpunk",
+      "vc:label": "cypherpunk"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralised-web",
+      "vc:label": "Decentralised Web"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
+      "vc:label": "Digital Society Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:equity",
+      "vc:label": "Equity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:global-inequality",
+      "vc:label": "Global Inequality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyper-personalisation",
+      "vc:label": "Hyper personalisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:money",
+      "vc:label": "Money"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-web",
+      "vc:label": "Semantic Web"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "vc:label": "Social contract and jobs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-web",
+      "vc:label": "Spatial Web"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-safety",
+      "vc:label": "Trust and Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:update-cycle",
+      "vc:label": "Update Cycle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-reality",
+      "vc:label": "Virtual Reality"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-39f55fddefc3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Privacy"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0072"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Privacy"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:privacy"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:privacy"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:privacy",
+  "@type": "OntologyClass",
+  "label": "Privacy",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:privacy-framework",
+      "vc:label": "Privacy Framework"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:privacy:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[back2002hashcash]]",
+      "resolved": "urn:visionflow:linked:back2002hashcash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[bayer2023artificial]]",
+      "resolved": "urn:visionflow:linked:bayer2023artificial",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[burnham1983rise; @chaum1985security]]",
+      "resolved": "urn:visionflow:linked:burnham1983rise-chaum1985security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[callas1998openpgp]]",
+      "resolved": "urn:visionflow:linked:callas1998openpgp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dai1998b]]",
+      "resolved": "urn:visionflow:linked:dai1998b",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dwork1992pricing; @jakobsson1999proofs]]",
+      "resolved": "urn:visionflow:linked:dwork1992pricing-jakobsson1999proofs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goldenfein Mann 2024]]",
+      "resolved": "urn:visionflow:linked:goldenfein-mann-2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[harari2014sapiens]]",
+      "resolved": "urn:visionflow:linked:harari2014sapiens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[lavoie1990prefatory]]",
+      "resolved": "urn:visionflow:linked:lavoie1990prefatory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nakamoto2008]]",
+      "resolved": "urn:visionflow:linked:nakamoto2008",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr]]",
+      "resolved": "urn:visionflow:linked:nostr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[o2021god]]",
+      "resolved": "urn:visionflow:linked:o2021god",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[rosenbergmanipulation]]",
+      "resolved": "urn:visionflow:linked:rosenbergmanipulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[salinCosts; @cypherPunkMailList]]",
+      "resolved": "urn:visionflow:linked:salin-costs-cypher-punk-mail-list",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[swartz2008guerilla]]",
+      "resolved": "urn:visionflow:linked:swartz2008guerilla",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[szabo1997formalizing]]",
+      "resolved": "urn:visionflow:linked:szabo1997formalizing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cyber Security and Military]]",
+      "resolved": "urn:visionflow:owl:class:cyber-security-and-military",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[cypherpunk]]",
+      "resolved": "urn:visionflow:owl:class:cypherpunk",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralised Web]]",
+      "resolved": "urn:visionflow:owl:class:decentralised-web",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Society Surveillance]]",
+      "resolved": "urn:visionflow:owl:class:digital-society-surveillance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Equity]]",
+      "resolved": "urn:visionflow:owl:class:equity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Global Inequality]]",
+      "resolved": "urn:visionflow:owl:class:global-inequality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyper personalisation]]",
+      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Money]]",
+      "resolved": "urn:visionflow:owl:class:money",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Semantic Web]]",
+      "resolved": "urn:visionflow:owl:class:semantic-web",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social contract and jobs]]",
+      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Computing]]",
+      "resolved": "urn:visionflow:owl:class:spatial-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Spatial Web]]",
+      "resolved": "urn:visionflow:owl:class:spatial-web",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust and Safety]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-safety",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Update Cycle]]",
+      "resolved": "urn:visionflow:owl:class:update-cycle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Reality]]",
+      "resolved": "urn:visionflow:owl:class:virtual-reality",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.
@@ -1427,7 +1937,7 @@ public:: true
 			- People who can act within the context of a "bubble of one" with their AI agents will likely prosper, even within the context of employment contracts in larger corporate structures.
   - Microsoft working trends, technical debt through loss to communication systems [[Social contract and jobs]]
   - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Social contract and jobs]]
-  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Privacy, Trust and Safety]] [[Social contract and jobs]]
+  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Social contract and jobs]]
   - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Social contract and jobs]] [[Equity]]
   - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Social contract and jobs]]
 		- [The impact of artificial intelligence on employment: the role of virtual agglomeration | Humanities and Social Sciences Communications (nature.com)](https://www.nature.com/articles/s41599-024-02647-9)
@@ -1464,7 +1974,7 @@ public:: true
 			- In the event of a complete breakdown of trust in digital information channels people will simply choose only to trust their priors.
 		- he's actually a great choice](https://www.gov.uk/government/news/tech-entrepreneur-ian-hogarth-to-lead-uks-ai-foundation-model-taskforce)
 			- [Welcome to State of AI Report 2023](https://www.stateof.ai/)
-			- America is supportive of UK positioning around [[Privacy, Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
+			- America is supportive of UK positioning around [[Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
 			- This perhaps explains the £2.5B [[Infrastructure]] and training investment plan by Microsoft.
 			- These companies are **as big** as the UK. Beware tech bros bearing gifts?
   - ### Web things
@@ -1480,7 +1990,7 @@ public:: true
   - ### Privacy and Surveillance
 		- **The development of more powerful and general-purpose AI systems.**
 		- **The increasing integration of AI into our daily lives.**
-  - [[Large language models]]
+  - [[Large Language Models]]
   - ## Title: The Advantages of Bitcoin
   - **Open Source**: The open-source nature of Bitcoin fosters transparency and collective development.
   - **Anonymity and Privacy**: Bitcoin provides a degree of anonymity in transactions.
@@ -1634,7 +2144,7 @@ public:: true
   - AI is already starting to be used in crime detection, crime prediction, and the data brokered by these tech behemoths is already making mistakes. [My chilling run-in with secretive facial-recognition app Clearview AI (telegraph.co.uk)](https://www.telegraph.co.uk/books/non-fiction/clearview-ai-facial-recognition-app-chilling/)
   - As AI increasingly bakes in these data points into ever larger scraped datasets it will be impossible to unwind one's personal history.
   - This too will increasingly be done by AI. We are trending toward AI fighting with AI over your data and the minutiae of your history in ever changing local and global political environments
-  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Privacy, Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Privacy, Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
+  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
   Furthermore, the issue of worker surveillance, especially with the rise of remote work regimes, has garnered the attention of various entities, including the White House. This is due to concerns over automated systems that employers are using to monitor their remote workers, highlighting a less benign context of surveillance.
   - ### Legal Framework, International Agreements, and Concerns
   - **Minimal Legal Barriers**: The acquisition of commercial data by governments faces scant legal opposition, attributed to the classification of such data as "publicly available." This status exempts it from the stringent privacy protections applicable to more confidential data.
@@ -1673,7 +2183,7 @@ public:: true
   - AI is already starting to be used in crime detection, crime prediction, and the data brokered by these tech behemoths is already making mistakes. [My chilling run-in with secretive facial-recognition app Clearview AI (telegraph.co.uk)](https://www.telegraph.co.uk/books/non-fiction/clearview-ai-facial-recognition-app-chilling/)
   - As AI increasingly bakes in these data points into ever larger scraped datasets it will be impossible to unwind one's personal history.
   - This too will increasingly be done by AI. We are trending toward AI fighting with AI over your data and the minutiae of your history in ever changing local and global political environments
-  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Privacy, Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Privacy, Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
+  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
   - ## [[Politics, Law, Privacy]]
   - EU AI act is it'll be near impossible now for small disruptive companies to train foundation models because of the administration overhead. Win for America.
   - Governments can now use real-time biometric surveillance in public spaces in prevention of genuine, present, or foreseeable threats, and searches for people suspected of the most serious crimes, so basically everything.
@@ -1750,7 +2260,7 @@ public:: true
   - AI is already starting to be used in crime detection, crime prediction, and the data brokered by these tech behemoths is already making mistakes. [My chilling run-in with secretive facial-recognition app Clearview AI (telegraph.co.uk)](https://www.telegraph.co.uk/books/non-fiction/clearview-ai-facial-recognition-app-chilling/)
   - As AI increasingly bakes in these data points into ever larger scraped datasets it will be impossible to unwind one's personal history.
   - This too will increasingly be done by AI. We are trending toward AI fighting with AI over your data and the minutiae of your history in ever changing local and global political environments
-  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Privacy, Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Privacy, Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
+  - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
   - ## [[Politics, Law, Privacy]]
   - EU AI act is it'll be near impossible now for small disruptive companies to train foundation models because of the administration overhead. Win for America.
   - Governments can now use real-time biometric surveillance in public spaces in prevention of genuine, present, or foreseeable threats, and searches for people suspected of the most serious crimes, so basically everything.

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face",
+  "title": "Interoperability Architecture",
+  "slug": "interoperability-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:interoperability-architecture",
+  "domain": "infrastructure",
+  "definition": "Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-architecture",
+      "label": "Technical Architecture"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:unified-metaverse",
+        "label": "Unified Metaverse"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "unified-metaverse",
+      "label": "Unified Metaverse"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technical-architecture",
+      "label": "Technical Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    }
+  ]
+}

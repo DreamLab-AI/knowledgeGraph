@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:2a610ae94dd2ced6e799527bb9e6c3e7221d3bc5b55a081658c19faa5f165329",
+  "title": "Infrared Camera",
+  "slug": "infrared-camera",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrared-camera",
+  "domain": "spatial-computing",
+  "definition": "Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tracking-hardware",
+      "label": "Tracking Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    },
+    {
+      "slug": "tracking-hardware",
+      "label": "Tracking Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

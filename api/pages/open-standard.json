@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:f476fc0bb512e412522d806433b47fffae8610cf9418c3e818c1155d5a43cd22",
+  "title": "Open Standard",
+  "slug": "open-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:open-standard",
+  "domain": "infrastructure",
+  "definition": "OpenStandard is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:83eb4634ac30dc414d01000d07cc8af5c27dc5a4fa1de1a2877a6ce148c49920",
+  "title": "ETSI Domain Identity and Trust",
+  "slug": "etsi-domain-identity-and-trust",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-identity-and-trust",
+  "domain": "infrastructure",
+  "definition": "An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]]. This domain integrates [[DigitalIdentity]], [[VerifiableCredentials]], [[ZeroTrustArchitecture]], [[BiometricAuthentication]], and [[DecentralisedIdentity]] to enable secure, privacy-respecting identity assurance across distributed metaverse platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "biometric-authentication",
+      "label": "BiometricAuthentication"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "DecentralisedIdentity"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "iso-iec-24760",
+      "label": "ISO/IEC 24760"
+    },
+    {
+      "slug": "w3-c-did-core",
+      "label": "W3C DID Core"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "ZeroTrustArchitecture"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "DigitalIdentity"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "VerifiableCredentials"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "VirtualEnvironment"
+    }
+  ],
+  "backlinks": []
+}

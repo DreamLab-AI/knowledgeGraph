@@ -1,0 +1,672 @@
+{
+  "id": "urn:visionflow:page:4c688f9fa901907c97eb780341ac552d2a19072de630c4594d9e7d00793ec0aa",
+  "title": "Home Assistant",
+  "slug": "home-assistant",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:home-assistant",
+  "domain": "infrastructure",
+  "definition": "Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including [[Zigbee Protocol]], [[Z-Wave Protocol]], [[Matter Protocol]], [[Thread Protocol]], [[Bluetooth LE]], [[Wi-Fi]], and EnOcean \u2014 operating without mandatory cloud dependency, governed since April 2024 by the [[Open Home Foundation]] (OHF), a Swiss non-profit that owns the source code and brand to ensure perpetual open-source status. Created by Paulus Schoutsen in September 2013 and first publicly released on GitHub in November 2013, Home Assistant has grown from a single-developer weekend project into the most contributor-active open-source project on GitHub (21,000+ unique contributors in 2024) with over 2 million active installations as of April 2025, supported by 56 full-time staff spanning core platform, [[ESPHome]] firmware, [[Z-Wave JS]], Zigpy, [[Matter Server]], voice technology, mobile apps, and infrastructure. The platform's core value proposition rests on three principles enshrined in the Open Home Foundation charter: Privacy (data pro",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:home-automation",
+      "label": "Home Automation"
+    },
+    {
+      "id": "urn:visionflow:linked:io-t-platform",
+      "label": "IoT Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "id": "urn:visionflow:linked:smart-home",
+      "label": "Smart Home"
+    },
+    {
+      "id": "urn:visionflow:owl:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-task-integration",
+        "label": "AI Task Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:assist-voice-pipeline",
+        "label": "Assist Voice Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:automation-engine",
+        "label": "Automation Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-dashboard",
+        "label": "Energy Dashboard"
+      },
+      {
+        "id": "urn:visionflow:linked:esphome",
+        "label": "ESPHome"
+      },
+      {
+        "id": "urn:visionflow:linked:hacs",
+        "label": "HACS"
+      },
+      {
+        "id": "urn:visionflow:linked:home-assistant-cloud",
+        "label": "Home Assistant Cloud"
+      },
+      {
+        "id": "urn:visionflow:linked:lovelace-dashboard",
+        "label": "Lovelace Dashboard"
+      },
+      {
+        "id": "urn:visionflow:linked:matter-server",
+        "label": "Matter Server"
+      },
+      {
+        "id": "urn:visionflow:linked:nabu-casa",
+        "label": "Nabu Casa"
+      },
+      {
+        "id": "urn:visionflow:linked:ollama-integration",
+        "label": "Ollama Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:open-home-foundation",
+        "label": "Open Home Foundation"
+      },
+      {
+        "id": "urn:visionflow:linked:wyoming-protocol",
+        "label": "Wyoming Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:z-wave-js",
+        "label": "Z-Wave JS"
+      },
+      {
+        "id": "urn:visionflow:linked:z-wave-js-ui",
+        "label": "Z-Wave JS UI"
+      },
+      {
+        "id": "urn:visionflow:linked:zigbee-home-automation",
+        "label": "Zigbee Home Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:zigbee2-mqtt",
+        "label": "Zigbee2MQTT"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:local-network-infrastructure",
+        "label": "Local Network Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:mqtt-broker",
+        "label": "MQTT Broker"
+      },
+      {
+        "id": "urn:visionflow:linked:python-runtime",
+        "label": "Python Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:raspberry-pi",
+        "label": "Raspberry Pi"
+      },
+      {
+        "id": "urn:visionflow:linked:sqlite",
+        "label": "SQLite"
+      },
+      {
+        "id": "urn:visionflow:linked:wake-word-engine",
+        "label": "Wake Word Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:zigbee-radio-dongle",
+        "label": "Zigbee Radio Dongle"
+      },
+      {
+        "id": "urn:visionflow:owl:class:docker",
+        "label": "Docker"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:demand-side-response",
+        "label": "Demand Side Response"
+      },
+      {
+        "id": "urn:visionflow:linked:device-interoperability",
+        "label": "Device Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "id": "urn:visionflow:linked:llm-controlled-devices",
+        "label": "LLM-Controlled Devices"
+      },
+      {
+        "id": "urn:visionflow:linked:local-voice-control",
+        "label": "Local Voice Control"
+      },
+      {
+        "id": "urn:visionflow:linked:matter-commissioning",
+        "label": "Matter Commissioning"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-protocol-integration",
+        "label": "Multi-Protocol Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-io-t",
+        "label": "Privacy-Preserving IoT"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-grid-integration",
+        "label": "Smart Grid Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-home-automation",
+        "label": "Smart Home Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bluetooth-le",
+        "label": "Bluetooth LE"
+      },
+      {
+        "id": "urn:visionflow:linked:co-ap",
+        "label": "CoAP"
+      },
+      {
+        "id": "urn:visionflow:linked:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:visionflow:linked:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:visionflow:linked:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:visionflow:linked:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:web-socket-api",
+        "label": "WebSocket API"
+      },
+      {
+        "id": "urn:visionflow:linked:wyoming-protocol",
+        "label": "Wyoming Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:z-wave-protocol",
+        "label": "Z-Wave Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:zigbee-protocol",
+        "label": "Zigbee Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-task-integration",
+      "label": "AI Task Integration"
+    },
+    {
+      "slug": "amazon-alexa",
+      "label": "Amazon Alexa"
+    },
+    {
+      "slug": "app-daemon",
+      "label": "AppDaemon"
+    },
+    {
+      "slug": "apple-home-kit",
+      "label": "Apple HomeKit"
+    },
+    {
+      "slug": "arm64-linux",
+      "label": "ARM64 Linux"
+    },
+    {
+      "slug": "assist-voice-pipeline",
+      "label": "Assist Voice Pipeline"
+    },
+    {
+      "slug": "automation-engine",
+      "label": "Automation Engine"
+    },
+    {
+      "slug": "bluetooth-le",
+      "label": "Bluetooth LE"
+    },
+    {
+      "slug": "building-automation",
+      "label": "Building Automation"
+    },
+    {
+      "slug": "buildroot",
+      "label": "Buildroot"
+    },
+    {
+      "slug": "co-ap",
+      "label": "CoAP"
+    },
+    {
+      "slug": "csa-matter-specification",
+      "label": "CSA Matter Specification"
+    },
+    {
+      "slug": "demand-side-response",
+      "label": "Demand Side Response"
+    },
+    {
+      "slug": "device-interoperability",
+      "label": "Device Interoperability"
+    },
+    {
+      "slug": "domoticz",
+      "label": "Domoticz"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "EdgeComputingLayer"
+    },
+    {
+      "slug": "energy-dashboard",
+      "label": "Energy Dashboard"
+    },
+    {
+      "slug": "energy-management",
+      "label": "Energy Management"
+    },
+    {
+      "slug": "esphome",
+      "label": "ESPHome"
+    },
+    {
+      "slug": "fhem",
+      "label": "FHEM"
+    },
+    {
+      "slug": "frigate-nvr",
+      "label": "Frigate NVR"
+    },
+    {
+      "slug": "google-home",
+      "label": "Google Home"
+    },
+    {
+      "slug": "hacs",
+      "label": "HACS"
+    },
+    {
+      "slug": "haos-linux",
+      "label": "HAOS Linux"
+    },
+    {
+      "slug": "home-assistant-cloud",
+      "label": "Home Assistant Cloud"
+    },
+    {
+      "slug": "home-assistant-green",
+      "label": "Home Assistant Green"
+    },
+    {
+      "slug": "home-assistant-voice-preview-edition",
+      "label": "Home Assistant Voice Preview Edition"
+    },
+    {
+      "slug": "home-assistant-yellow",
+      "label": "Home Assistant Yellow"
+    },
+    {
+      "slug": "home-automation",
+      "label": "Home Automation"
+    },
+    {
+      "slug": "home-automation-domain",
+      "label": "HomeAutomationDomain"
+    },
+    {
+      "slug": "hubitat",
+      "label": "Hubitat"
+    },
+    {
+      "slug": "ietf-co-ap-working-group",
+      "label": "IETF CoAP Working Group"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "IntegrationLayer"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "io-t-platform",
+      "label": "IoT Platform"
+    },
+    {
+      "slug": "io-tdomain",
+      "label": "IoTDomain"
+    },
+    {
+      "slug": "llm-controlled-devices",
+      "label": "LLM-Controlled Devices"
+    },
+    {
+      "slug": "local-ai",
+      "label": "Local AI"
+    },
+    {
+      "slug": "local-network-infrastructure",
+      "label": "Local Network Infrastructure"
+    },
+    {
+      "slug": "local-voice-control",
+      "label": "Local Voice Control"
+    },
+    {
+      "slug": "lovelace-dashboard",
+      "label": "Lovelace Dashboard"
+    },
+    {
+      "slug": "matter-commissioning",
+      "label": "Matter Commissioning"
+    },
+    {
+      "slug": "matter-protocol",
+      "label": "Matter Protocol"
+    },
+    {
+      "slug": "matter-server",
+      "label": "Matter Server"
+    },
+    {
+      "slug": "micro-wake-word",
+      "label": "microWakeWord"
+    },
+    {
+      "slug": "mqtt",
+      "label": "MQTT"
+    },
+    {
+      "slug": "mqtt-broker",
+      "label": "MQTT Broker"
+    },
+    {
+      "slug": "multi-protocol-integration",
+      "label": "Multi-Protocol Integration"
+    },
+    {
+      "slug": "nabu-casa",
+      "label": "Nabu Casa"
+    },
+    {
+      "slug": "nilm",
+      "label": "NILM"
+    },
+    {
+      "slug": "node-red",
+      "label": "Node-RED"
+    },
+    {
+      "slug": "oauth-2-0",
+      "label": "OAuth 2.0"
+    },
+    {
+      "slug": "odroid-n2",
+      "label": "Odroid-N2"
+    },
+    {
+      "slug": "ollama-integration",
+      "label": "Ollama Integration"
+    },
+    {
+      "slug": "open-ai-api",
+      "label": "OpenAI API"
+    },
+    {
+      "slug": "open-hab",
+      "label": "openHAB"
+    },
+    {
+      "slug": "open-home-foundation",
+      "label": "Open Home Foundation"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "open-wake-word",
+      "label": "openWakeWord"
+    },
+    {
+      "slug": "orange-pi",
+      "label": "Orange Pi"
+    },
+    {
+      "slug": "piper-tts",
+      "label": "Piper TTS"
+    },
+    {
+      "slug": "postgre-sql",
+      "label": "PostgreSQL"
+    },
+    {
+      "slug": "privacy-preserving-io-t",
+      "label": "Privacy-Preserving IoT"
+    },
+    {
+      "slug": "proxmox",
+      "label": "Proxmox"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "python-runtime",
+      "label": "Python Runtime"
+    },
+    {
+      "slug": "qemu-kvm",
+      "label": "QEMU/KVM"
+    },
+    {
+      "slug": "raspberry-pi",
+      "label": "Raspberry Pi"
+    },
+    {
+      "slug": "redis",
+      "label": "Redis"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "samsung-smart-things",
+      "label": "Samsung SmartThings"
+    },
+    {
+      "slug": "smart-grid",
+      "label": "Smart Grid"
+    },
+    {
+      "slug": "smart-grid-integration",
+      "label": "Smart Grid Integration"
+    },
+    {
+      "slug": "smart-home",
+      "label": "Smart Home"
+    },
+    {
+      "slug": "smart-home-automation",
+      "label": "Smart Home Automation"
+    },
+    {
+      "slug": "sqlite",
+      "label": "SQLite"
+    },
+    {
+      "slug": "supervisor-api",
+      "label": "Supervisor API"
+    },
+    {
+      "slug": "thread-group",
+      "label": "Thread Group"
+    },
+    {
+      "slug": "thread-protocol",
+      "label": "Thread Protocol"
+    },
+    {
+      "slug": "type-script",
+      "label": "TypeScript"
+    },
+    {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
+    },
+    {
+      "slug": "wake-word-engine",
+      "label": "Wake Word Engine"
+    },
+    {
+      "slug": "web-socket-api",
+      "label": "WebSocket API"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
+    },
+    {
+      "slug": "whisper-stt",
+      "label": "Whisper STT"
+    },
+    {
+      "slug": "wi-fi",
+      "label": "Wi-Fi"
+    },
+    {
+      "slug": "wi-fi-alliance",
+      "label": "Wi-Fi Alliance"
+    },
+    {
+      "slug": "wyoming-protocol",
+      "label": "Wyoming Protocol"
+    },
+    {
+      "slug": "x86-64-linux",
+      "label": "x86-64 Linux"
+    },
+    {
+      "slug": "z-wave-alliance",
+      "label": "Z-Wave Alliance"
+    },
+    {
+      "slug": "z-wave-js",
+      "label": "Z-Wave JS"
+    },
+    {
+      "slug": "z-wave-js-ui",
+      "label": "Z-Wave JS UI"
+    },
+    {
+      "slug": "z-wave-protocol",
+      "label": "Z-Wave Protocol"
+    },
+    {
+      "slug": "zigbee-alliance",
+      "label": "Zigbee Alliance"
+    },
+    {
+      "slug": "zigbee-home-automation",
+      "label": "Zigbee Home Automation"
+    },
+    {
+      "slug": "zigbee-protocol",
+      "label": "Zigbee Protocol"
+    },
+    {
+      "slug": "zigbee-radio-dongle",
+      "label": "Zigbee Radio Dongle"
+    },
+    {
+      "slug": "zigbee2-mqtt",
+      "label": "Zigbee2MQTT"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "ollama",
+      "label": "Ollama"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    }
+  ]
+}

@@ -1,21 +1,198 @@
-iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureData
-uri:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructuredata
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructuredata
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: ETSI_Domain_Infrastructure_Data
-content-hash:: sha256-12-5a41e3e391f3
-legacy-term-id:: MV-2007
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureData
+legacy_uri:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructuredata
 public:: true
+
+# ETSI_Domain_Infrastructure_Data
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-infrastructure-data",
+  "title": "ETSI_Domain_Infrastructure_Data",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ngsi-ld",
+      "vc:label": "NGSI-LD"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:storage-layer",
+      "vc:label": "Storage Layer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5a41e3e391f3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureData"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2007"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Infrastructure_Data"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsidomaininfrastructuredata"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsidomaininfrastructuredata"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure-data",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Infrastructure_Data",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards. Infrastructure data coordination operates via Trustworthy Data Spaces architecture (ETSI GR PDL 034), International Data Spaces framework, and [[NGSI-LD]] APIs enabling context-aware data exchange with Policy Enforcement Points and Federated Catalogs, supported by F5G standards (ETSI GR F5G 019) providing low-latency backbone connectivity and multi-access edge computing use cases (ETSI GR MEC 043), addressing data sovereignty, security, and real-to-virtual integration challenges across distributed networks.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-data:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[NGSI-LD]]",
+      "resolved": "urn:visionflow:linked:ngsi-ld",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Storage Layer]]",
+      "resolved": "urn:visionflow:owl:class:storage-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards. Infrastructure data coordination operates via Trustworthy Data Spaces architecture (ETSI GR PDL 034), International Data Spaces framework, and [[NGSI-LD]] APIs enabling context-aware data exchange with Policy Enforcement Points and Federated Catalogs, supported by F5G standards (ETSI GR F5G 019) providing low-latency backbone connectivity and multi-access edge computing use cases (ETSI GR MEC 043), addressing data sovereignty, security, and real-to-virtual integration challenges across distributed networks.

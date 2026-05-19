@@ -1,20 +1,821 @@
-iri:: http://narrativegoldmine.com/blockchain#CryptographicDomain
-uri:: urn:visionclaw:concept:blockchain:cryptographic-domain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:cryptographic-domain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Cryptographic Domain
-content-hash:: sha256-12-9163c50d940c
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#CryptographicDomain
+legacy_uri:: urn:visionclaw:concept:blockchain:cryptographic-domain
 public:: true
+
+# Cryptographic Domain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08",
+  "@type": "Page",
+  "vc:slug": "cryptographic-domain",
+  "title": "Cryptographic Domain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:attribute-based-encryption-abe",
+      "vc:label": "Attribute-Based Encryption (ABE)"
+    },
+    {
+      "@id": "urn:visionflow:linked:aztec-network",
+      "vc:label": "Aztec Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:bank-of-england",
+      "vc:label": "Bank of England"
+    },
+    {
+      "@id": "urn:visionflow:linked:bank-of-england-digital-pound",
+      "vc:label": "Bank of England Digital Pound"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip",
+      "vc:label": "BIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-bitcoin-improvement-proposals",
+      "vc:label": "BIP (Bitcoin Improvement Proposals)"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-multisig",
+      "vc:label": "Bitcoin multisig"
+    },
+    {
+      "@id": "urn:visionflow:linked:blake2b",
+      "vc:label": "BLAKE2b"
+    },
+    {
+      "@id": "urn:visionflow:linked:bls-signatures",
+      "vc:label": "BLS signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:bulletproofs",
+      "vc:label": "Bulletproofs"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-hardness-assumptions",
+      "vc:label": "Computational Hardness Assumptions"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-consensus",
+      "vc:label": "Decentralized Consensus"
+    },
+    {
+      "@id": "urn:visionflow:linked:discrete-logarithm-problem",
+      "vc:label": "Discrete Logarithm Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-key-generation-dkg",
+      "vc:label": "Distributed Key Generation (DKG)"
+    },
+    {
+      "@id": "urn:visionflow:linked:ed25519",
+      "vc:label": "Ed25519"
+    },
+    {
+      "@id": "urn:visionflow:linked:eip",
+      "vc:label": "EIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:eip-ethereum-improvement-proposals",
+      "vc:label": "EIP (Ethereum Improvement Proposals)"
+    },
+    {
+      "@id": "urn:visionflow:linked:elliptic-curve-mathematics",
+      "vc:label": "Elliptic Curve Mathematics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethereum-2-0",
+      "vc:label": "Ethereum 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:falcon",
+      "vc:label": "Falcon"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-conduct-authority-fca",
+      "vc:label": "Financial Conduct Authority (FCA)"
+    },
+    {
+      "@id": "urn:visionflow:linked:fips-180",
+      "vc:label": "FIPS 180"
+    },
+    {
+      "@id": "urn:visionflow:linked:fips-186",
+      "vc:label": "FIPS 186"
+    },
+    {
+      "@id": "urn:visionflow:linked:fips-202",
+      "vc:label": "FIPS 202"
+    },
+    {
+      "@id": "urn:visionflow:linked:fully-homomorphic-encryption-fhe",
+      "vc:label": "Fully Homomorphic Encryption (FHE)"
+    },
+    {
+      "@id": "urn:visionflow:linked:homomorphic-encryption",
+      "vc:label": "Homomorphic Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-based-encryption-ibe",
+      "vc:label": "Identity-Based Encryption (IBE)"
+    },
+    {
+      "@id": "urn:visionflow:linked:imperial-college-london",
+      "vc:label": "Imperial College London"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-14888",
+      "vc:label": "ISO/IEC 14888"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-18033",
+      "vc:label": "ISO/IEC 18033"
+    },
+    {
+      "@id": "urn:visionflow:linked:kes-key-evolving-signature",
+      "vc:label": "KES (Key Evolving Signature)"
+    },
+    {
+      "@id": "urn:visionflow:linked:leeds-innovation-arc",
+      "vc:label": "Leeds Innovation Arc"
+    },
+    {
+      "@id": "urn:visionflow:linked:lms",
+      "vc:label": "LMS"
+    },
+    {
+      "@id": "urn:visionflow:linked:mimblewimble",
+      "vc:label": "Mimblewimble"
+    },
+    {
+      "@id": "urn:visionflow:linked:mina-protocol",
+      "vc:label": "Mina Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:monero",
+      "vc:label": "Monero"
+    },
+    {
+      "@id": "urn:visionflow:linked:mpc-multi-party-computation",
+      "vc:label": "MPC (Multi-Party Computation)"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-cyber-security-centre-ncsc",
+      "vc:label": "National Cyber Security Centre (NCSC)"
+    },
+    {
+      "@id": "urn:visionflow:linked:ncsc-cryptography-guidance",
+      "vc:label": "NCSC Cryptography Guidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-cryptographic-standards",
+      "vc:label": "NIST Cryptographic Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:np-completeness",
+      "vc:label": "NP-completeness"
+    },
+    {
+      "@id": "urn:visionflow:linked:polygon-zk-evm",
+      "vc:label": "Polygon zkEVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:ripemd-160",
+      "vc:label": "RIPEMD-160"
+    },
+    {
+      "@id": "urn:visionflow:linked:satoshi-nakamoto",
+      "vc:label": "Satoshi Nakamoto"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-threshold-signatures",
+      "vc:label": "Schnorr threshold signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:shamir-secret-sharing",
+      "vc:label": "Shamir Secret Sharing"
+    },
+    {
+      "@id": "urn:visionflow:linked:shor-s-algorithm",
+      "vc:label": "Shor's Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:stark-net",
+      "vc:label": "StarkNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-cryptography",
+      "vc:label": "Threshold Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:university-of-cambridge",
+      "vc:label": "University of Cambridge"
+    },
+    {
+      "@id": "urn:visionflow:linked:university-of-edinburgh",
+      "vc:label": "University of Edinburgh"
+    },
+    {
+      "@id": "urn:visionflow:linked:university-of-manchester",
+      "vc:label": "University of Manchester"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-computation",
+      "vc:label": "Verifiable Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-delay-functions-vdfs",
+      "vc:label": "Verifiable Delay Functions (VDFs)"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-secret-sharing-vss",
+      "vc:label": "Verifiable Secret Sharing (VSS)"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-decentralized-identifiers-dids",
+      "vc:label": "W3C Decentralized Identifiers (DIDs)"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-dids",
+      "vc:label": "W3C DIDs"
+    },
+    {
+      "@id": "urn:visionflow:linked:xmss",
+      "vc:label": "XMSS"
+    },
+    {
+      "@id": "urn:visionflow:linked:zcash",
+      "vc:label": "Zcash"
+    },
+    {
+      "@id": "urn:visionflow:linked:zk-sync",
+      "vc:label": "zkSync"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cardano",
+      "vc:label": "Cardano"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ecdsa",
+      "vc:label": "ECDSA"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:keccak-256",
+      "vc:label": "Keccak-256"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "Proof-of-Work"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sha-256",
+      "vc:label": "SHA-256"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solana",
+      "vc:label": "Solana"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credentials",
+      "vc:label": "Verifiable Credentials"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zk-snarks",
+      "vc:label": "zk-SNARKs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zk-starks",
+      "vc:label": "zk-STARKs"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9163c50d940c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#CryptographicDomain"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cryptographic Domain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:cryptographic-domain"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:cryptographic-domain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cryptographic-domain",
+  "@type": "OntologyClass",
+  "label": "Cryptographic Domain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "vc:label": "Public Key Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems. This domain includes cryptographic hash functions (SHA-256, Keccak-256, RIPEMD-160), digital signature schemes (ECDSA, EdDSA, Schnorr signatures), public-key cryptography, Merkle tree structures, cryptographic accumulators, commitment schemes, zero-knowledge proof systems (zk-SNARKs, zk-STARKs, Bulletproofs), threshold cryptography, multi-signature schemes, and other cryptographic building blocks that provide security, integrity, and verifiability in blockchain systems. These cryptographic mechanisms enable fundamental blockchain properties including immutability (through hash linking), authenticity (through digital signatures), privacy (through encryption and zero-knowledge proofs), and verifiability (through Merkle proofs and cryptographic commitments). The domain focuses specifically on cryptographic techniques as applied in blockchain contexts, distinguishing it from general cryptography by emphasizing distributed system requirements, performance considerations for decentralized",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-domain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Attribute-Based Encryption (ABE)]]",
+      "resolved": "urn:visionflow:linked:attribute-based-encryption-abe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Aztec Network]]",
+      "resolved": "urn:visionflow:linked:aztec-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bank of England]]",
+      "resolved": "urn:visionflow:linked:bank-of-england",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bank of England Digital Pound]]",
+      "resolved": "urn:visionflow:linked:bank-of-england-digital-pound",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP]]",
+      "resolved": "urn:visionflow:linked:bip",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP (Bitcoin Improvement Proposals)]]",
+      "resolved": "urn:visionflow:linked:bip-bitcoin-improvement-proposals",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin multisig]]",
+      "resolved": "urn:visionflow:linked:bitcoin-multisig",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BLAKE2b]]",
+      "resolved": "urn:visionflow:linked:blake2b",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BLS signatures]]",
+      "resolved": "urn:visionflow:linked:bls-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bulletproofs]]",
+      "resolved": "urn:visionflow:linked:bulletproofs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Hardness Assumptions]]",
+      "resolved": "urn:visionflow:linked:computational-hardness-assumptions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Consensus]]",
+      "resolved": "urn:visionflow:linked:decentralized-consensus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Discrete Logarithm Problem]]",
+      "resolved": "urn:visionflow:linked:discrete-logarithm-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Key Generation (DKG)]]",
+      "resolved": "urn:visionflow:linked:distributed-key-generation-dkg",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ed25519]]",
+      "resolved": "urn:visionflow:linked:ed25519",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EIP]]",
+      "resolved": "urn:visionflow:linked:eip",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EIP (Ethereum Improvement Proposals)]]",
+      "resolved": "urn:visionflow:linked:eip-ethereum-improvement-proposals",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Elliptic Curve Mathematics]]",
+      "resolved": "urn:visionflow:linked:elliptic-curve-mathematics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethereum 2.0]]",
+      "resolved": "urn:visionflow:linked:ethereum-2-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Falcon]]",
+      "resolved": "urn:visionflow:linked:falcon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Conduct Authority (FCA)]]",
+      "resolved": "urn:visionflow:linked:financial-conduct-authority-fca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FIPS 180]]",
+      "resolved": "urn:visionflow:linked:fips-180",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FIPS 186]]",
+      "resolved": "urn:visionflow:linked:fips-186",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FIPS 202]]",
+      "resolved": "urn:visionflow:linked:fips-202",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fully Homomorphic Encryption (FHE)]]",
+      "resolved": "urn:visionflow:linked:fully-homomorphic-encryption-fhe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Homomorphic Encryption]]",
+      "resolved": "urn:visionflow:linked:homomorphic-encryption",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Identity-Based Encryption (IBE)]]",
+      "resolved": "urn:visionflow:linked:identity-based-encryption-ibe",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Imperial College London]]",
+      "resolved": "urn:visionflow:linked:imperial-college-london",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 14888]]",
+      "resolved": "urn:visionflow:linked:iso-iec-14888",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 18033]]",
+      "resolved": "urn:visionflow:linked:iso-iec-18033",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KES (Key Evolving Signature)]]",
+      "resolved": "urn:visionflow:linked:kes-key-evolving-signature",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Leeds Innovation Arc]]",
+      "resolved": "urn:visionflow:linked:leeds-innovation-arc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LMS]]",
+      "resolved": "urn:visionflow:linked:lms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mimblewimble]]",
+      "resolved": "urn:visionflow:linked:mimblewimble",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mina Protocol]]",
+      "resolved": "urn:visionflow:linked:mina-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monero]]",
+      "resolved": "urn:visionflow:linked:monero",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MPC (Multi-Party Computation)]]",
+      "resolved": "urn:visionflow:linked:mpc-multi-party-computation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[National Cyber Security Centre (NCSC)]]",
+      "resolved": "urn:visionflow:linked:national-cyber-security-centre-ncsc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NCSC Cryptography Guidance]]",
+      "resolved": "urn:visionflow:linked:ncsc-cryptography-guidance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST Cryptographic Standards]]",
+      "resolved": "urn:visionflow:linked:nist-cryptographic-standards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NP-completeness]]",
+      "resolved": "urn:visionflow:linked:np-completeness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polygon zkEVM]]",
+      "resolved": "urn:visionflow:linked:polygon-zk-evm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RIPEMD-160]]",
+      "resolved": "urn:visionflow:linked:ripemd-160",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Satoshi Nakamoto]]",
+      "resolved": "urn:visionflow:linked:satoshi-nakamoto",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr threshold signatures]]",
+      "resolved": "urn:visionflow:linked:schnorr-threshold-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Shamir Secret Sharing]]",
+      "resolved": "urn:visionflow:linked:shamir-secret-sharing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Shor's Algorithm]]",
+      "resolved": "urn:visionflow:linked:shor-s-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[StarkNet]]",
+      "resolved": "urn:visionflow:linked:stark-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Threshold Cryptography]]",
+      "resolved": "urn:visionflow:linked:threshold-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[University of Cambridge]]",
+      "resolved": "urn:visionflow:linked:university-of-cambridge",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[University of Edinburgh]]",
+      "resolved": "urn:visionflow:linked:university-of-edinburgh",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[University of Manchester]]",
+      "resolved": "urn:visionflow:linked:university-of-manchester",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verifiable Computation]]",
+      "resolved": "urn:visionflow:linked:verifiable-computation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verifiable Delay Functions (VDFs)]]",
+      "resolved": "urn:visionflow:linked:verifiable-delay-functions-vdfs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verifiable Secret Sharing (VSS)]]",
+      "resolved": "urn:visionflow:linked:verifiable-secret-sharing-vss",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Decentralized Identifiers (DIDs)]]",
+      "resolved": "urn:visionflow:linked:w3-c-decentralized-identifiers-dids",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C DIDs]]",
+      "resolved": "urn:visionflow:linked:w3-c-dids",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[XMSS]]",
+      "resolved": "urn:visionflow:linked:xmss",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zcash]]",
+      "resolved": "urn:visionflow:linked:zcash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zkSync]]",
+      "resolved": "urn:visionflow:linked:zk-sync",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cardano]]",
+      "resolved": "urn:visionflow:owl:class:cardano",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ECDSA]]",
+      "resolved": "urn:visionflow:owl:class:ecdsa",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Keccak-256]]",
+      "resolved": "urn:visionflow:owl:class:keccak-256",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof-of-Work]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SHA-256]]",
+      "resolved": "urn:visionflow:owl:class:sha-256",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solana]]",
+      "resolved": "urn:visionflow:owl:class:solana",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credentials]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credentials",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[zk-SNARKs]]",
+      "resolved": "urn:visionflow:owl:class:zk-snarks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[zk-STARKs]]",
+      "resolved": "urn:visionflow:owl:class:zk-starks",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems. This domain includes cryptographic hash functions (SHA-256, Keccak-256, RIPEMD-160), digital signature schemes (ECDSA, EdDSA, Schnorr signatures), public-key cryptography, Merkle tree structures, cryptographic accumulators, commitment schemes, zero-knowledge proof systems (zk-SNARKs, zk-STARKs, Bulletproofs), threshold cryptography, multi-signature schemes, and other cryptographic building blocks that provide security, integrity, and verifiability in blockchain systems. These cryptographic mechanisms enable fundamental blockchain properties including immutability (through hash linking), authenticity (through digital signatures), privacy (through encryption and zero-knowledge proofs), and verifiability (through Merkle proofs and cryptographic commitments). The domain focuses specifically on cryptographic techniques as applied in blockchain contexts, distinguishing it from general cryptography by emphasizing distributed system requirements, performance considerations for decentralized verification, and economic security models.

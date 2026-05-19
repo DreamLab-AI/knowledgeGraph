@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1db32b56a557d5e9d00a21dd7d04ad7f1355edbae10963bc23ce2b7e9b72dae7",
+  "title": "Valsoft",
+  "slug": "valsoft",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:valsoft",
+  "domain": "infrastructure",
+  "definition": "Valsoft is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "contracts-and-jobs",
+      "label": "Contracts and jobs"
+    }
+  ],
+  "backlinks": []
+}

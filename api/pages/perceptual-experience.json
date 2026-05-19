@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:3cf622bfd0826f51b72b527e9f033b4266fb8703ccf630c0f22d1bc0a1e9b501",
+  "title": "Perceptual Experience",
+  "slug": "perceptual-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:perceptual-experience",
+  "domain": "distributed-collaboration",
+  "definition": "Perceptual Experience is a concept within the telecollaboration domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

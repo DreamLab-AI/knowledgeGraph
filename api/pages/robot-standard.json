@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:d0c3da0c5e9a4ae59d135908dfb2f62fb2ac2da4497d22fb4682b392b1dcc867",
+  "title": "Robot Standard",
+  "slug": "robot-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-standard",
+  "domain": "robotics",
+  "definition": "RobotStandard is a normative technical instrument \u2014 a specification, guideline, or regulation \u2014 issued by a recognised standards development organisation (SDO) or regulatory body to define mandatory or voluntary safety requirements, performance criteria, interoperability protocols, and terminology for the design, manufacture, integration, and operation of robotic systems across industrial, collaborative, personal-care, service, and autonomous-vehicle domains. The global regime is structured around ISO Technical Committee 299 (six active working groups covering vocabulary, industrial safety, service robots, collaborative robots, mobile service robots, and AI in robotics), the IEEE Robotics and Automation Society standards programme (IEEE 1872 CORA ontology), the Robotic Industries Association framework (RIA R15.06, R15.08), the OPC Foundation's robotics companion specification (OPC UA Part 17 Robotics, Release 1.1.0, 2023), and \u2014 from 14 January 2027 \u2014 the EU Machinery Regulation 2023/1230, which replaces Machinery Directive 2006/42/EC with direct-effect essential health and safety requirements (EHSRs) addressing AI-controlled and autonomously behaving robotic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:industrial-safety",
+      "label": "Industrial Safety"
+    },
+    {
+      "id": "urn:visionflow:linked:normative-framework",
+      "label": "Normative Framework"
+    },
+    {
+      "id": "urn:visionflow:linked:product-regulation",
+      "label": "Product Regulation"
+    },
+    {
+      "id": "urn:visionflow:linked:safety-regulation",
+      "label": "Safety Regulation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:ieee-1872",
+        "label": "IEEE 1872"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-3691-4",
+        "label": "ISO 3691-4"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:visionflow:linked:normative-annex",
+        "label": "Normative Annex"
+      },
+      {
+        "id": "urn:visionflow:linked:opc-ua-robotics",
+        "label": "OPC UA Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-criterion",
+        "label": "Performance Criterion"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-function",
+        "label": "Safety Function"
+      },
+      {
+        "id": "urn:visionflow:linked:test-method",
+        "label": "Test Method"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:visionflow:linked:conformity-assessment-body",
+        "label": "Conformity Assessment Body"
+      },
+      {
+        "id": "urn:visionflow:linked:declaration-of-conformity",
+        "label": "Declaration of Conformity"
+      },
+      {
+        "id": "urn:visionflow:linked:harmonised-standard",
+        "label": "Harmonised Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:protective-measure",
+        "label": "Protective Measure"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-function",
+        "label": "Safety Function"
+      },
+      {
+        "id": "urn:visionflow:linked:technical-documentation",
+        "label": "Technical Documentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-mobile-robot-safety",
+        "label": "Autonomous Mobile Robot Safety"
+      },
+      {
+        "id": "urn:visionflow:linked:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:visionflow:linked:cobot-deployment",
+        "label": "Cobot Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:visionflow:linked:iio-t-integration",
+        "label": "IIoT Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:market-access",
+        "label": "Market Access"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-interoperability",
+        "label": "Robot Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:robot-skill-transfer",
+        "label": "Robot Skill Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:safe-human-robot-collaboration",
+        "label": "Safe Human-Robot Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:ehsr-framework",
+        "label": "EHSR Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:eu-machinery-regulation",
+        "label": "EU Machinery Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-tc-299",
+        "label": "ISO TC 299"
+      },
+      {
+        "id": "urn:visionflow:linked:opc-ua-node-set",
+        "label": "OPC UA NodeSet"
+      },
+      {
+        "id": "urn:visionflow:linked:owl-ontology",
+        "label": "OWL Ontology"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-level-method",
+        "label": "Performance Level Method"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "id": "urn:visionflow:linked:speed-and-separation-monitoring",
+        "label": "Speed and Separation Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "amrc",
+      "label": "AMRC"
+    },
+    {
+      "slug": "ansi",
+      "label": "ANSI"
+    },
+    {
+      "slug": "autonomous-mobile-robot-safety",
+      "label": "Autonomous Mobile Robot Safety"
+    },
+    {
+      "slug": "autonomous-mobile-robots",
+      "label": "Autonomous Mobile Robots"
+    },
+    {
+      "slug": "bara",
+      "label": "BARA"
+    },
+    {
+      "slug": "bsi",
+      "label": "BSI"
+    },
+    {
+      "slug": "ce-marking",
+      "label": "CE Marking"
+    },
+    {
+      "slug": "cobot-deployment",
+      "label": "Cobot Deployment"
+    },
+    {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "conformity-assessment-body",
+      "label": "Conformity Assessment Body"
+    },
+    {
+      "slug": "de-facto-standard",
+      "label": "De Facto Standard"
+    },
+    {
+      "slug": "declaration-of-conformity",
+      "label": "Declaration of Conformity"
+    },
+    {
+      "slug": "digital-product-passport",
+      "label": "Digital Product Passport"
+    },
+    {
+      "slug": "din",
+      "label": "DIN"
+    },
+    {
+      "slug": "domain-specific-framework",
+      "label": "Domain-Specific Framework"
+    },
+    {
+      "slug": "driverless-industrial-trucks",
+      "label": "Driverless Industrial Trucks"
+    },
+    {
+      "slug": "ehsr-framework",
+      "label": "EHSR Framework"
+    },
+    {
+      "slug": "eu-machinery-regulation",
+      "label": "EU Machinery Regulation"
+    },
+    {
+      "slug": "european-commission",
+      "label": "European Commission"
+    },
+    {
+      "slug": "exoskeletons",
+      "label": "Exoskeletons"
+    },
+    {
+      "slug": "force-torque-sensing",
+      "label": "Force Torque Sensing"
+    },
+    {
+      "slug": "harmonised-standard",
+      "label": "Harmonised Standard"
+    },
+    {
+      "slug": "iec-61508",
+      "label": "IEC 61508"
+    },
+    {
+      "slug": "iec-62061",
+      "label": "IEC 62061"
+    },
+    {
+      "slug": "iec-62443",
+      "label": "IEC 62443"
+    },
+    {
+      "slug": "iec-80601-2-78",
+      "label": "IEC 80601-2-78"
+    },
+    {
+      "slug": "ieee-1872",
+      "label": "IEEE 1872"
+    },
+    {
+      "slug": "ieee-robotics-and-automation-society",
+      "label": "IEEE Robotics and Automation Society"
+    },
+    {
+      "slug": "iio-t-integration",
+      "label": "IIoT Integration"
+    },
+    {
+      "slug": "industrial-robots",
+      "label": "Industrial Robots"
+    },
+    {
+      "slug": "industrial-safety",
+      "label": "Industrial Safety"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "IntegrationLayer"
+    },
+    {
+      "slug": "iso-10218",
+      "label": "ISO 10218"
+    },
+    {
+      "slug": "iso-12100",
+      "label": "ISO 12100"
+    },
+    {
+      "slug": "iso-13482",
+      "label": "ISO 13482"
+    },
+    {
+      "slug": "iso-13849",
+      "label": "ISO 13849"
+    },
+    {
+      "slug": "iso-13855",
+      "label": "ISO 13855"
+    },
+    {
+      "slug": "iso-22166",
+      "label": "ISO 22166"
+    },
+    {
+      "slug": "iso-25132",
+      "label": "ISO 25132"
+    },
+    {
+      "slug": "iso-3691-4",
+      "label": "ISO 3691-4"
+    },
+    {
+      "slug": "iso-8373",
+      "label": "ISO 8373"
+    },
+    {
+      "slug": "iso-9283",
+      "label": "ISO 9283"
+    },
+    {
+      "slug": "iso-sae-21434",
+      "label": "ISO SAE 21434"
+    },
+    {
+      "slug": "iso-tc-299",
+      "label": "ISO TC 299"
+    },
+    {
+      "slug": "iso-ts-15066",
+      "label": "ISO TS 15066"
+    },
+    {
+      "slug": "machinery-directive",
+      "label": "Machinery Directive"
+    },
+    {
+      "slug": "machinery-regulation",
+      "label": "Machinery Regulation"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "ManufacturingDomain"
+    },
+    {
+      "slug": "manufacturing-layer",
+      "label": "ManufacturingLayer"
+    },
+    {
+      "slug": "market-access",
+      "label": "Market Access"
+    },
+    {
+      "slug": "modular-robots",
+      "label": "Modular Robots"
+    },
+    {
+      "slug": "mtc",
+      "label": "MTC"
+    },
+    {
+      "slug": "niosh",
+      "label": "NIOSH"
+    },
+    {
+      "slug": "niosh-guidelines",
+      "label": "NIOSH Guidelines"
+    },
+    {
+      "slug": "nis2-directive",
+      "label": "NIS2 Directive"
+    },
+    {
+      "slug": "normative-annex",
+      "label": "Normative Annex"
+    },
+    {
+      "slug": "normative-framework",
+      "label": "Normative Framework"
+    },
+    {
+      "slug": "npl",
+      "label": "NPL"
+    },
+    {
+      "slug": "ontology-engineering",
+      "label": "Ontology Engineering"
+    },
+    {
+      "slug": "ontology-layer",
+      "label": "OntologyLayer"
+    },
+    {
+      "slug": "opc-foundation",
+      "label": "OPC Foundation"
+    },
+    {
+      "slug": "opc-ua",
+      "label": "OPC UA"
+    },
+    {
+      "slug": "opc-ua-node-set",
+      "label": "OPC UA NodeSet"
+    },
+    {
+      "slug": "opc-ua-robotics",
+      "label": "OPC UA Robotics"
+    },
+    {
+      "slug": "open-source-middleware",
+      "label": "Open Source Middleware"
+    },
+    {
+      "slug": "owl-2-dl",
+      "label": "OWL 2 DL"
+    },
+    {
+      "slug": "owl-ontology",
+      "label": "OWL Ontology"
+    },
+    {
+      "slug": "performance-criterion",
+      "label": "Performance Criterion"
+    },
+    {
+      "slug": "performance-level",
+      "label": "Performance Level"
+    },
+    {
+      "slug": "performance-level-method",
+      "label": "Performance Level Method"
+    },
+    {
+      "slug": "personal-care-robots",
+      "label": "Personal Care Robots"
+    },
+    {
+      "slug": "product-liability",
+      "label": "Product Liability"
+    },
+    {
+      "slug": "product-regulation",
+      "label": "Product Regulation"
+    },
+    {
+      "slug": "protective-measure",
+      "label": "Protective Measure"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "RegulatoryComplianceDomain"
+    },
+    {
+      "slug": "ria",
+      "label": "RIA"
+    },
+    {
+      "slug": "risk-graph-method",
+      "label": "Risk Graph Method"
+    },
+    {
+      "slug": "robot-interoperability",
+      "label": "Robot Interoperability"
+    },
+    {
+      "slug": "robot-skill-transfer",
+      "label": "Robot Skill Transfer"
+    },
+    {
+      "slug": "robotics-grounded-domain",
+      "label": "RoboticsGroundedDomain"
+    },
+    {
+      "slug": "ros-industrial",
+      "label": "ROS Industrial"
+    },
+    {
+      "slug": "safe-human-robot-collaboration",
+      "label": "Safe Human-Robot Collaboration"
+    },
+    {
+      "slug": "safety-engineering-domain",
+      "label": "SafetyEngineeringDomain"
+    },
+    {
+      "slug": "safety-function",
+      "label": "Safety Function"
+    },
+    {
+      "slug": "safety-integrity-level",
+      "label": "Safety Integrity Level"
+    },
+    {
+      "slug": "safety-regulation",
+      "label": "Safety Regulation"
+    },
+    {
+      "slug": "self-certification",
+      "label": "Self-Certification"
+    },
+    {
+      "slug": "slam-navigation",
+      "label": "SLAM Navigation"
+    },
+    {
+      "slug": "speed-and-separation-monitoring",
+      "label": "Speed and Separation Monitoring"
+    },
+    {
+      "slug": "surgical-robots",
+      "label": "Surgical Robots"
+    },
+    {
+      "slug": "system-design-layer",
+      "label": "SystemDesignLayer"
+    },
+    {
+      "slug": "technical-documentation",
+      "label": "Technical Documentation"
+    },
+    {
+      "slug": "test-method",
+      "label": "Test Method"
+    },
+    {
+      "slug": "time-sensitive-networking",
+      "label": "Time-Sensitive Networking"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "voluntary-guideline",
+      "label": "Voluntary Guideline"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "laser-scanner",
+      "label": "Laser Scanner"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "emc-standard",
+      "label": "EMC Standard"
+    },
+    {
+      "slug": "quality-standard",
+      "label": "Quality Standard"
+    }
+  ]
+}

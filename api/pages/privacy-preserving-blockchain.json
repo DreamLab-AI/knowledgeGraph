@@ -1,0 +1,864 @@
+{
+  "id": "urn:visionflow:page:8dfb59e6989e1d00c7b818b251604bf7492914e9a1e2291f31a3afb8d2ef5a90",
+  "title": "Privacy Preserving Blockchain",
+  "slug": "privacy-preserving-blockchain",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-preserving-blockchain",
+  "domain": "blockchain",
+  "definition": "Blockchain architectures and cryptographic protocol suites that conceal transaction metadata \u2014 sender identity, recipient identity, transferred amounts, and smart contract state \u2014 whilst preserving network verifiability, immutability, and auditability for authorised parties through an ensemble of techniques including [[Zero-Knowledge Proofs]] (zk-SNARKs via [[Groth16]] and [[Halo 2]], zk-STARKs via [[FRI]] polynomial commitment), [[Ring Signatures]] with decoy mixing sets ([[Monero]] RingCT + [[Bulletproofs+]]), [[Stealth Addresses]] generating one-time ephemeral recipient keys, [[Pedersen Commitments]] binding amounts cryptographically whilst supporting homomorphic addition, [[Confidential Transactions]] (CT) hiding values with blinding factors, [[Homomorphic Encryption]] enabling ciphertext arithmetic, [[Secure Multi-Party Computation]] (SMPC) for threshold key management, and [[Trusted Execution Environments]] (TEE/SGX) for confidential smart contract execution, deployed across a spectrum from pure privacy-by-default chains ([[Monero]] XMR, [[Zcash]] ZEC shielded pool, [[Grin]] MimbleWimble, [[Beam]] MimbleWimble-MW) through programmable privacy layers ([[Aztec Protocol]] Noir-c",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:privacy-technology",
+      "label": "Privacy Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:zero-knowledge-system",
+      "label": "Zero-Knowledge System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bulletproofs",
+        "label": "Bulletproofs"
+      },
+      {
+        "id": "urn:visionflow:linked:merkle-tree-accumulator",
+        "label": "Merkle Tree Accumulator"
+      },
+      {
+        "id": "urn:visionflow:linked:nullifier-set",
+        "label": "Nullifier Set"
+      },
+      {
+        "id": "urn:visionflow:linked:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "id": "urn:visionflow:linked:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:shielded-pool",
+        "label": "Shielded Pool"
+      },
+      {
+        "id": "urn:visionflow:linked:spend-key",
+        "label": "Spend Key"
+      },
+      {
+        "id": "urn:visionflow:linked:stealth-address",
+        "label": "Stealth Address"
+      },
+      {
+        "id": "urn:visionflow:linked:viewing-key",
+        "label": "Viewing Key"
+      },
+      {
+        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-hardness-assumption",
+        "label": "Cryptographic Hardness Assumption"
+      },
+      {
+        "id": "urn:visionflow:linked:proof-system",
+        "label": "Proof System"
+      },
+      {
+        "id": "urn:visionflow:linked:trusted-setup-ceremony",
+        "label": "Trusted Setup Ceremony"
+      },
+      {
+        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anonymous-transactions",
+        "label": "Anonymous Transactions"
+      },
+      {
+        "id": "urn:visionflow:linked:compliance-proofs",
+        "label": "Compliance Proofs"
+      },
+      {
+        "id": "urn:visionflow:linked:confidential-de-fi",
+        "label": "Confidential DeFi"
+      },
+      {
+        "id": "urn:visionflow:linked:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "id": "urn:visionflow:linked:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bulletproofs-range-proof",
+        "label": "Bulletproofs Range Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:groth16-zk-snark",
+        "label": "Groth16 zk-SNARK"
+      },
+      {
+        "id": "urn:visionflow:linked:halo-2-recursive-proof",
+        "label": "Halo 2 Recursive Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:mimble-wimble-protocol",
+        "label": "MimbleWimble Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:pedersen-commitment-scheme",
+        "label": "Pedersen Commitment Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:plonk-proof-system",
+        "label": "PLONK Proof System"
+      },
+      {
+        "id": "urn:visionflow:linked:ring-ct-protocol",
+        "label": "RingCT Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "action-spending-authority",
+      "label": "Action Spending Authority"
+    },
+    {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
+      "slug": "anoma",
+      "label": "Anoma"
+    },
+    {
+      "slug": "anonymous-transactions",
+      "label": "Anonymous Transactions"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "ariel-gabizon",
+      "label": "Ariel Gabizon"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "bae-systems-applied-intelligence",
+      "label": "BAE Systems Applied Intelligence"
+    },
+    {
+      "slug": "baseline-protocol",
+      "label": "Baseline Protocol"
+    },
+    {
+      "slug": "beam",
+      "label": "Beam"
+    },
+    {
+      "slug": "bisq",
+      "label": "Bisq"
+    },
+    {
+      "slug": "blake3",
+      "label": "BLAKE3"
+    },
+    {
+      "slug": "blockchain-technology-laboratory",
+      "label": "Blockchain Technology Laboratory"
+    },
+    {
+      "slug": "brakedown",
+      "label": "Brakedown"
+    },
+    {
+      "slug": "bulletproofs",
+      "label": "Bulletproofs+"
+    },
+    {
+      "slug": "bulletproofs",
+      "label": "Bulletproofs"
+    },
+    {
+      "slug": "bulletproofs-range-proof",
+      "label": "Bulletproofs Range Proof"
+    },
+    {
+      "slug": "celestia",
+      "label": "Celestia"
+    },
+    {
+      "slug": "centre-for-cryptocurrency-research-and-engineering",
+      "label": "Centre for Cryptocurrency Research and Engineering"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "chainanalysis",
+      "label": "Chainanalysis"
+    },
+    {
+      "slug": "cipher-trace",
+      "label": "CipherTrace"
+    },
+    {
+      "slug": "comit",
+      "label": "COMIT"
+    },
+    {
+      "slug": "commitment-scheme",
+      "label": "Commitment Scheme"
+    },
+    {
+      "slug": "compliance-proofs",
+      "label": "Compliance Proofs"
+    },
+    {
+      "slug": "confidential-assets",
+      "label": "Confidential Assets"
+    },
+    {
+      "slug": "confidential-de-fi",
+      "label": "Confidential DeFi"
+    },
+    {
+      "slug": "confidential-transactions",
+      "label": "Confidential Transactions"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "cryptographic-hardness-assumption",
+      "label": "Cryptographic Hardness Assumption"
+    },
+    {
+      "slug": "cryptographic-layer",
+      "label": "CryptographicLayer"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "crystal-dilithium",
+      "label": "CRYSTAL-Dilithium"
+    },
+    {
+      "slug": "dan-boneh",
+      "label": "Dan Boneh"
+    },
+    {
+      "slug": "dash",
+      "label": "Dash"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "decoy-outputs",
+      "label": "Decoy Outputs"
+    },
+    {
+      "slug": "digital-institute",
+      "label": "Digital Institute"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "Distributed Consensus"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "eae-tor-integration",
+      "label": "EAE-Tor integration"
+    },
+    {
+      "slug": "eli-ben-sasson",
+      "label": "Eli Ben-Sasson"
+    },
+    {
+      "slug": "elliptic",
+      "label": "Elliptic"
+    },
+    {
+      "slug": "elliptic-curve-discrete-logarithm-problem",
+      "label": "Elliptic Curve Discrete Logarithm Problem"
+    },
+    {
+      "slug": "ernst-and-young",
+      "label": "Ernst & Young"
+    },
+    {
+      "slug": "eu-ebsi",
+      "label": "EU EBSI"
+    },
+    {
+      "slug": "european-blockchain-services-infrastructure",
+      "label": "European Blockchain Services Infrastructure"
+    },
+    {
+      "slug": "european-central-bank",
+      "label": "European Central Bank"
+    },
+    {
+      "slug": "ezkl",
+      "label": "EZKL"
+    },
+    {
+      "slug": "fatf-travel-rule",
+      "label": "FATF Travel Rule"
+    },
+    {
+      "slug": "financial-privacy",
+      "label": "Financial Privacy"
+    },
+    {
+      "slug": "fri",
+      "label": "FRI"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "grin",
+      "label": "Grin"
+    },
+    {
+      "slug": "groth16",
+      "label": "Groth16"
+    },
+    {
+      "slug": "groth16-zk-snark",
+      "label": "Groth16 zk-SNARK"
+    },
+    {
+      "slug": "halo-2",
+      "label": "Halo 2"
+    },
+    {
+      "slug": "halo-2-recursive-proof",
+      "label": "Halo 2 Recursive Proof"
+    },
+    {
+      "slug": "haveno-dex",
+      "label": "Haveno DEX"
+    },
+    {
+      "slug": "healthcare-data-privacy",
+      "label": "Healthcare Data Privacy"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
+    },
+    {
+      "slug": "hmrc",
+      "label": "HMRC"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "ieee-p2418-1",
+      "label": "IEEE P2418.1"
+    },
+    {
+      "slug": "information-security-research-group",
+      "label": "Information Security Research Group"
+    },
+    {
+      "slug": "input-output",
+      "label": "Input Output"
+    },
+    {
+      "slug": "iron-fish",
+      "label": "Iron Fish"
+    },
+    {
+      "slug": "ivan-damg-rd",
+      "label": "Ivan Damg\u00e5rd"
+    },
+    {
+      "slug": "jens-groth",
+      "label": "Jens Groth"
+    },
+    {
+      "slug": "jpmorgan",
+      "label": "JPMorgan"
+    },
+    {
+      "slug": "knowledge-of-exponent-assumption",
+      "label": "Knowledge-of-Exponent Assumption"
+    },
+    {
+      "slug": "local-monero",
+      "label": "LocalMonero"
+    },
+    {
+      "slug": "lwe",
+      "label": "LWE"
+    },
+    {
+      "slug": "manchester-city-council",
+      "label": "Manchester City Council"
+    },
+    {
+      "slug": "merkle",
+      "label": "Merkle"
+    },
+    {
+      "slug": "merkle-tree-accumulator",
+      "label": "Merkle Tree Accumulator"
+    },
+    {
+      "slug": "mimble-wimble",
+      "label": "MimbleWimble"
+    },
+    {
+      "slug": "mimble-wimble-protocol",
+      "label": "MimbleWimble Protocol"
+    },
+    {
+      "slug": "mina-protocol",
+      "label": "Mina Protocol"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "mpc-wallets",
+      "label": "MPC Wallets"
+    },
+    {
+      "slug": "mweb",
+      "label": "MWEB"
+    },
+    {
+      "slug": "namada",
+      "label": "Namada"
+    },
+    {
+      "slug": "nightfall",
+      "label": "Nightfall"
+    },
+    {
+      "slug": "nist-post-quantum-standards",
+      "label": "NIST Post-Quantum Standards"
+    },
+    {
+      "slug": "noir",
+      "label": "Noir"
+    },
+    {
+      "slug": "northern-powerhouse-partnership",
+      "label": "Northern Powerhouse Partnership"
+    },
+    {
+      "slug": "ntru",
+      "label": "NTRU"
+    },
+    {
+      "slug": "nu-cypher",
+      "label": "NuCypher"
+    },
+    {
+      "slug": "nullifier-set",
+      "label": "Nullifier Set"
+    },
+    {
+      "slug": "oasis-network",
+      "label": "Oasis Network"
+    },
+    {
+      "slug": "ofac-sdn-designations",
+      "label": "OFAC SDN Designations"
+    },
+    {
+      "slug": "office-of-foreign-assets-control",
+      "label": "Office of Foreign Assets Control"
+    },
+    {
+      "slug": "onyx",
+      "label": "Onyx"
+    },
+    {
+      "slug": "osmosis",
+      "label": "Osmosis"
+    },
+    {
+      "slug": "ouroboros",
+      "label": "Ouroboros"
+    },
+    {
+      "slug": "pedersen",
+      "label": "Pedersen"
+    },
+    {
+      "slug": "pedersen-commitment",
+      "label": "Pedersen Commitment"
+    },
+    {
+      "slug": "pedersen-commitment-scheme",
+      "label": "Pedersen Commitment Scheme"
+    },
+    {
+      "slug": "pedersen-commitments",
+      "label": "Pedersen Commitments"
+    },
+    {
+      "slug": "penumbra",
+      "label": "Penumbra"
+    },
+    {
+      "slug": "permissioned-blockchain-without-privacy",
+      "label": "Permissioned Blockchain Without Privacy"
+    },
+    {
+      "slug": "plonk-proof-system",
+      "label": "PLONK Proof System"
+    },
+    {
+      "slug": "privacy-engineering-domain",
+      "label": "PrivacyEngineeringDomain"
+    },
+    {
+      "slug": "privacy-technology",
+      "label": "Privacy Technology"
+    },
+    {
+      "slug": "proof-system",
+      "label": "Proof System"
+    },
+    {
+      "slug": "public-transparent-blockchain",
+      "label": "Public Transparent Blockchain"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "railgun",
+      "label": "Railgun"
+    },
+    {
+      "slug": "random-oracle-model",
+      "label": "Random Oracle Model"
+    },
+    {
+      "slug": "range-proofs",
+      "label": "Range Proofs"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "RegulatoryComplianceDomain"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "RegulatoryLayer"
+    },
+    {
+      "slug": "ring-ct-protocol",
+      "label": "RingCT Protocol"
+    },
+    {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
+      "slug": "ring-signatures",
+      "label": "Ring Signatures"
+    },
+    {
+      "slug": "sean-bowe",
+      "label": "Sean Bowe"
+    },
+    {
+      "slug": "secret-network",
+      "label": "Secret Network"
+    },
+    {
+      "slug": "secure-enclaves",
+      "label": "Secure Enclaves"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "Selective Disclosure"
+    },
+    {
+      "slug": "seraphis",
+      "label": "Seraphis"
+    },
+    {
+      "slug": "shielded-pool",
+      "label": "Shielded Pool"
+    },
+    {
+      "slug": "spend-key",
+      "label": "Spend Key"
+    },
+    {
+      "slug": "ssi",
+      "label": "SSI"
+    },
+    {
+      "slug": "stark-ware",
+      "label": "StarkWare"
+    },
+    {
+      "slug": "stealth-address",
+      "label": "Stealth Address"
+    },
+    {
+      "slug": "stealth-addresses",
+      "label": "Stealth Addresses"
+    },
+    {
+      "slug": "supply-chain-confidentiality",
+      "label": "Supply Chain Confidentiality"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "triptych",
+      "label": "Triptych"
+    },
+    {
+      "slug": "trm-labs",
+      "label": "TRM Labs"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "trusted-execution-environments",
+      "label": "Trusted Execution Environments"
+    },
+    {
+      "slug": "trusted-setup-ceremony",
+      "label": "Trusted Setup Ceremony"
+    },
+    {
+      "slug": "universal-composability",
+      "label": "Universal Composability"
+    },
+    {
+      "slug": "viewing-key",
+      "label": "Viewing Key"
+    },
+    {
+      "slug": "viewing-keys",
+      "label": "Viewing Keys"
+    },
+    {
+      "slug": "w3-c-did",
+      "label": "W3C DID"
+    },
+    {
+      "slug": "w3-c-did-specification",
+      "label": "W3C DID Specification"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zcash-community-grants",
+      "label": "Zcash Community Grants"
+    },
+    {
+      "slug": "zcashd",
+      "label": "zcashd"
+    },
+    {
+      "slug": "zebrad",
+      "label": "zebrad"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-Knowledge Proofs"
+    },
+    {
+      "slug": "zero-knowledge-system",
+      "label": "Zero-Knowledge System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "zk-snarks",
+      "label": "zk-SNARKs"
+    },
+    {
+      "slug": "zk-starks",
+      "label": "zk-STARKs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

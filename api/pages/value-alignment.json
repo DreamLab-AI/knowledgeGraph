@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91",
+  "title": "Value Alignment",
+  "slug": "value-alignment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:value-alignment",
+  "domain": "artificial-intelligence",
+  "definition": "The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "barsky1987fisher",
+      "label": "barsky1987fisher"
+    },
+    {
+      "slug": "bhatia2021",
+      "label": "Bhatia2021"
+    },
+    {
+      "slug": "borio2017fx",
+      "label": "borio2017fx"
+    },
+    {
+      "slug": "cagan1958demand",
+      "label": "cagan1958demand"
+    },
+    {
+      "slug": "davies2010history",
+      "label": "davies2010history"
+    },
+    {
+      "slug": "hall2009inflation",
+      "label": "hall2009inflation"
+    },
+    {
+      "slug": "homer1996history",
+      "label": "homer1996history"
+    },
+    {
+      "slug": "maurel2012keynesian",
+      "label": "maurel2012keynesian"
+    },
+    {
+      "slug": "ponzi2021alden",
+      "label": "ponzi2021alden"
+    },
+    {
+      "slug": "selgin1996defense",
+      "label": "selgin1996defense"
+    },
+    {
+      "slug": "stroukal2018can",
+      "label": "stroukal2018can"
+    },
+    {
+      "slug": "szabo2002shelling",
+      "label": "szabo2002shelling"
+    },
+    {
+      "slug": "white1914fiat",
+      "label": "white1914fiat"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-governance-and-ethics",
+      "label": "ETSI Domain: Governance & Ethics"
+    },
+    {
+      "slug": "goal",
+      "label": "Goal"
+    }
+  ]
+}

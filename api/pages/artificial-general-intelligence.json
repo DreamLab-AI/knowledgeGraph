@@ -1,0 +1,704 @@
+{
+  "id": "urn:visionflow:page:013e25447b1eb6bb2ffb577c9b30cbf5ed7007e6ddd46084b7065aa085abfb69",
+  "title": "Artificial General Intelligence",
+  "slug": "artificial-general-intelligence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:artificial-general-intelligence",
+  "domain": "artificial-intelligence",
+  "definition": "Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow \u2014 capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than excelling only on a single domain \u2014 encompassing definitions ranging from Goertzel & Wang's (2007 *Artificial General Intelligence* Springer volume) operational characterisation of an agent that \"generalises its learning across multiple domains under insufficient knowledge and resources\" (Wang's NARS framework), through OpenAI's Charter (2018) formulation as \"highly autonomous systems that outperform humans at most economically valuable work\", DeepMind's (Morris et al. 2024 arXiv:2311.02462) ordered six-level *Levels of AGI* matrix (Level 0 No AI / Level 1 Emerging matching or somewhat better than an unskilled adult / Level 2 Competent \u226550th percentile of skilled adults / Level 3 Expert \u226590th percentile / Level 4 Virtuoso \u226599th percentile / Level 5 Superhuman outperforming 100% of humans) crossed orthogonally with a Narrow \u2194 General axis and qualified by Autonomy levels 0-5 from no-AI through ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:foundation-model-capability",
+      "label": "Foundation Model Capability"
+    },
+    {
+      "id": "urn:visionflow:linked:frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "id": "urn:visionflow:linked:general-intelligence",
+      "label": "General Intelligence"
+    },
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:autonomous-reasoning",
+        "label": "Autonomous Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-domain-transfer",
+        "label": "Cross-Domain Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:generalisation-capability",
+        "label": "Generalisation Capability"
+      },
+      {
+        "id": "urn:visionflow:linked:long-horizon-planning",
+        "label": "Long-Horizon Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:open-ended-learning",
+        "label": "Open-Ended Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use-capability",
+        "label": "Tool Use Capability"
+      },
+      {
+        "id": "urn:visionflow:linked:world-model",
+        "label": "World Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:alignment-techniques",
+        "label": "Alignment Techniques"
+      },
+      {
+        "id": "urn:visionflow:linked:evaluation-infrastructure",
+        "label": "Evaluation Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-training-data",
+        "label": "Frontier Training Data"
+      },
+      {
+        "id": "urn:visionflow:linked:large-scale-compute",
+        "label": "Large-Scale Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-agents",
+        "label": "Autonomous Agents"
+      },
+      {
+        "id": "urn:visionflow:linked:economic-automation",
+        "label": "Economic Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:recursive-self-improvement",
+        "label": "Recursive Self-Improvement"
+      },
+      {
+        "id": "urn:visionflow:linked:scientific-discovery-acceleration",
+        "label": "Scientific Discovery Acceleration"
+      },
+      {
+        "id": "urn:visionflow:linked:transformative-ai",
+        "label": "Transformative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:multimodal-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:scaling-hypothesis",
+        "label": "Scaling Hypothesis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "alignment-research",
+      "label": "Alignment Research"
+    },
+    {
+      "slug": "alignment-techniques",
+      "label": "Alignment Techniques"
+    },
+    {
+      "slug": "alpha-proof-alpha-geometry-2-imo-2024",
+      "label": "AlphaProof AlphaGeometry 2 IMO 2024"
+    },
+    {
+      "slug": "amodei-2024-machines-of-loving-grace",
+      "label": "Amodei 2024 Machines of Loving Grace"
+    },
+    {
+      "slug": "anthropic-claude-computer-use-2024",
+      "label": "Anthropic Claude Computer Use 2024"
+    },
+    {
+      "slug": "anthropic-core-views-on-ai-safety-2023",
+      "label": "Anthropic Core Views on AI Safety 2023"
+    },
+    {
+      "slug": "apollo-research-2024-in-context-scheming",
+      "label": "Apollo Research 2024 In-Context Scheming"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "arc-prize-2024-technical-report",
+      "label": "ARC Prize 2024 Technical Report"
+    },
+    {
+      "slug": "aria-safeguarded-ai-programme",
+      "label": "ARIA Safeguarded AI Programme"
+    },
+    {
+      "slug": "aschenbrenner-2024-situational-awareness",
+      "label": "Aschenbrenner 2024 Situational Awareness"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "autonomous-reasoning",
+      "label": "Autonomous Reasoning"
+    },
+    {
+      "slug": "bai-et-al-2022-constitutional-ai",
+      "label": "Bai et al 2022 Constitutional AI"
+    },
+    {
+      "slug": "benchmarks",
+      "label": "Benchmarks"
+    },
+    {
+      "slug": "bengio-et-al-2025-international-ai-safety-report",
+      "label": "Bengio et al 2025 International AI Safety Report"
+    },
+    {
+      "slug": "bitter-lesson",
+      "label": "Bitter Lesson"
+    },
+    {
+      "slug": "bletchley-declaration-2023",
+      "label": "Bletchley Declaration 2023"
+    },
+    {
+      "slug": "bostrom-2014-superintelligence",
+      "label": "Bostrom 2014 Superintelligence"
+    },
+    {
+      "slug": "cais-statement-on-ai-risk-2023",
+      "label": "CAIS Statement on AI Risk 2023"
+    },
+    {
+      "slug": "chain-of-thought-reasoning",
+      "label": "Chain-of-Thought Reasoning"
+    },
+    {
+      "slug": "chen-et-al-2021-human-eval",
+      "label": "Chen et al 2021 HumanEval"
+    },
+    {
+      "slug": "chollet-2019-on-the-measure-of-intelligence",
+      "label": "Chollet 2019 On the Measure of Intelligence"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "CognitiveScienceDomain"
+    },
+    {
+      "slug": "compute-trends",
+      "label": "Compute Trends"
+    },
+    {
+      "slug": "cotra-2020-biological-anchors",
+      "label": "Cotra 2020 Biological Anchors"
+    },
+    {
+      "slug": "cross-domain-transfer",
+      "label": "Cross-Domain Transfer"
+    },
+    {
+      "slug": "deep-mind-levels-of-agi-framework",
+      "label": "DeepMind Levels of AGI Framework"
+    },
+    {
+      "slug": "deep-seek-r1-2025",
+      "label": "DeepSeek-R1 2025"
+    },
+    {
+      "slug": "domain-specific-ai",
+      "label": "Domain-Specific AI"
+    },
+    {
+      "slug": "economic-automation",
+      "label": "Economic Automation"
+    },
+    {
+      "slug": "epoch-ai-trends-in-machine-learning",
+      "label": "Epoch AI Trends in Machine Learning"
+    },
+    {
+      "slug": "eu-ai-act-2024",
+      "label": "EU AI Act 2024"
+    },
+    {
+      "slug": "evaluation-infrastructure",
+      "label": "Evaluation Infrastructure"
+    },
+    {
+      "slug": "existential-risk",
+      "label": "Existential Risk"
+    },
+    {
+      "slug": "existential-risk-studies",
+      "label": "Existential Risk Studies"
+    },
+    {
+      "slug": "expert-system",
+      "label": "Expert System"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "foundation-model-capability",
+      "label": "Foundation Model Capability"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "FoundationModelLayer"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "frontier-math",
+      "label": "FrontierMath"
+    },
+    {
+      "slug": "frontier-training-data",
+      "label": "Frontier Training Data"
+    },
+    {
+      "slug": "general-intelligence",
+      "label": "General Intelligence"
+    },
+    {
+      "slug": "generalisation-capability",
+      "label": "Generalisation Capability"
+    },
+    {
+      "slug": "glazer-et-al-2024-frontier-math-epoch-ai",
+      "label": "Glazer et al 2024 FrontierMath Epoch AI"
+    },
+    {
+      "slug": "goertzel-and-pennachin-2007-artificial-general-intelligence",
+      "label": "Goertzel & Pennachin 2007 Artificial General Intelligence"
+    },
+    {
+      "slug": "good-1965-speculations-concerning-the-first-ultraintelligent-machine",
+      "label": "Good 1965 Speculations Concerning the First Ultraintelligent Machine"
+    },
+    {
+      "slug": "gpqa",
+      "label": "GPQA"
+    },
+    {
+      "slug": "grace-et-al-2024-espai-survey",
+      "label": "Grace et al 2024 ESPAI Survey"
+    },
+    {
+      "slug": "hendrycks-et-al-2021-mmlu",
+      "label": "Hendrycks et al 2021 MMLU"
+    },
+    {
+      "slug": "hoffmann-et-al-2022-chinchilla",
+      "label": "Hoffmann et al 2022 Chinchilla"
+    },
+    {
+      "slug": "hubinger-et-al-2019-risks-from-learned-optimization",
+      "label": "Hubinger et al 2019 Risks from Learned Optimization"
+    },
+    {
+      "slug": "humanity-s-last-exam",
+      "label": "Humanity's Last Exam"
+    },
+    {
+      "slug": "inference-time-compute",
+      "label": "Inference-Time Compute"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO IEC 42001"
+    },
+    {
+      "slug": "jimenez-et-al-2023-swe-bench",
+      "label": "Jimenez et al 2023 SWE-bench"
+    },
+    {
+      "slug": "kaplan-et-al-2020-scaling-laws",
+      "label": "Kaplan et al 2020 Scaling Laws"
+    },
+    {
+      "slug": "karnofsky-2016-transformative-ai",
+      "label": "Karnofsky 2016 Transformative AI"
+    },
+    {
+      "slug": "large-scale-compute",
+      "label": "Large-Scale Compute"
+    },
+    {
+      "slug": "legg-and-hutter-2007-universal-intelligence",
+      "label": "Legg & Hutter 2007 Universal Intelligence"
+    },
+    {
+      "slug": "long-horizon-planning",
+      "label": "Long-Horizon Planning"
+    },
+    {
+      "slug": "metr-2025-measuring-ai-ability-to-complete-long-tasks",
+      "label": "METR 2025 Measuring AI Ability to Complete Long Tasks"
+    },
+    {
+      "slug": "metr-evaluations",
+      "label": "METR Evaluations"
+    },
+    {
+      "slug": "mmlu",
+      "label": "MMLU"
+    },
+    {
+      "slug": "morris-et-al-2024-levels-of-agi-deep-mind",
+      "label": "Morris et al 2024 Levels of AGI DeepMind"
+    },
+    {
+      "slug": "multimodal-learning",
+      "label": "Multimodal Learning"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "open-ai-charter",
+      "label": "OpenAI Charter"
+    },
+    {
+      "slug": "open-ai-charter-2018",
+      "label": "OpenAI Charter 2018"
+    },
+    {
+      "slug": "open-ai-o1-system-card-2024",
+      "label": "OpenAI o1 System Card 2024"
+    },
+    {
+      "slug": "open-ended-learning",
+      "label": "Open-Ended Learning"
+    },
+    {
+      "slug": "ouyang-et-al-2022-instruct-gpt-rlhf",
+      "label": "Ouyang et al 2022 InstructGPT RLHF"
+    },
+    {
+      "slug": "phan-et-al-2025-humanity-s-last-exam",
+      "label": "Phan et al 2025 Humanity's Last Exam"
+    },
+    {
+      "slug": "philosophy-of-mind-domain",
+      "label": "PhilosophyOfMindDomain"
+    },
+    {
+      "slug": "power-et-al-2022-grokking",
+      "label": "Power et al 2022 Grokking"
+    },
+    {
+      "slug": "pretraining",
+      "label": "Pretraining"
+    },
+    {
+      "slug": "recursive-self-improvement",
+      "label": "Recursive Self-Improvement"
+    },
+    {
+      "slug": "rein-et-al-2023-gpqa",
+      "label": "Rein et al 2023 GPQA"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "russell-2019-human-compatible",
+      "label": "Russell 2019 Human Compatible"
+    },
+    {
+      "slug": "scaling-hypothesis",
+      "label": "Scaling Hypothesis"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "schaeffer-miranda-koyejo-2023-emergence-mirage",
+      "label": "Schaeffer Miranda Koyejo 2023 Emergence Mirage"
+    },
+    {
+      "slug": "scientific-discovery-acceleration",
+      "label": "Scientific Discovery Acceleration"
+    },
+    {
+      "slug": "searle-1980-minds-brains-and-programs",
+      "label": "Searle 1980 Minds Brains and Programs"
+    },
+    {
+      "slug": "superintelligence",
+      "label": "Superintelligence"
+    },
+    {
+      "slug": "sutton-2019-the-bitter-lesson",
+      "label": "Sutton 2019 The Bitter Lesson"
+    },
+    {
+      "slug": "swe-bench",
+      "label": "SWE-bench"
+    },
+    {
+      "slug": "tool-use-capability",
+      "label": "Tool Use Capability"
+    },
+    {
+      "slug": "transformative-ai",
+      "label": "Transformative AI"
+    },
+    {
+      "slug": "turing-1950-computing-machinery-and-intelligence",
+      "label": "Turing 1950 Computing Machinery and Intelligence"
+    },
+    {
+      "slug": "uk-ai-safety-institute-aisi",
+      "label": "UK AI Safety Institute AISI"
+    },
+    {
+      "slug": "wang-2006-rigid-flexibility",
+      "label": "Wang 2006 Rigid Flexibility"
+    },
+    {
+      "slug": "weak-ai",
+      "label": "Weak AI"
+    },
+    {
+      "slug": "wei-et-al-2022-emergent-abilities",
+      "label": "Wei et al 2022 Emergent Abilities"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

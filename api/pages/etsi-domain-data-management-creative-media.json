@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422",
+  "title": "ETSI Domain: Data Management + Creative Media",
+  "slug": "etsi-domain-data-management-creative-media",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-data-management-creative-media",
+  "domain": "infrastructure",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting creative content workflows, asset management, and version control systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-database",
+        "label": "Asset Database"
+      },
+      {
+        "id": "urn:visionflow:linked:content-pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:media-library",
+        "label": "Media Library"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:creative-media",
+        "label": "Creative Media"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-version-control",
+        "label": "Asset Version Control"
+      },
+      {
+        "id": "urn:visionflow:linked:collaborative-authoring",
+        "label": "Collaborative Authoring"
+      },
+      {
+        "id": "urn:visionflow:linked:content-distribution",
+        "label": "Content Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-database",
+      "label": "Asset Database"
+    },
+    {
+      "slug": "asset-version-control",
+      "label": "Asset Version Control"
+    },
+    {
+      "slug": "collaborative-authoring",
+      "label": "Collaborative Authoring"
+    },
+    {
+      "slug": "content-distribution",
+      "label": "Content Distribution"
+    },
+    {
+      "slug": "content-pipeline",
+      "label": "Content Pipeline"
+    },
+    {
+      "slug": "creative-media",
+      "label": "Creative Media"
+    },
+    {
+      "slug": "distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "media-library",
+      "label": "Media Library"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ],
+  "backlinks": []
+}

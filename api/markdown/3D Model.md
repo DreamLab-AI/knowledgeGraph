@@ -1,24 +1,342 @@
-iri:: http://narrativegoldmine.com/spatial-computing#3dModel
-uri:: urn:visionclaw:concept:spatial-computing:3d-model
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:3d-model
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: 3D Model
-content-hash:: sha256-12-826a55d1d856
-legacy-term-id:: MV-9504
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:30:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#3dModel
+legacy_uri:: urn:visionclaw:concept:spatial-computing:3d-model
 public:: true
+
+# 3D Model
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6",
+  "@type": "Page",
+  "vc:slug": "3-d-model",
+  "title": "3D Model",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-rendering",
+      "vc:label": "3D Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-visualization",
+      "vc:label": "Interactive Visualization"
+    },
+    {
+      "@id": "urn:visionflow:linked:material-definition",
+      "vc:label": "Material Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:mesh-data",
+      "vc:label": "Mesh Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-environment-design",
+      "vc:label": "Virtual Environment Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-development",
+      "vc:label": "3D Development"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-file-format",
+      "vc:label": "3D File Format"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-modeling",
+      "vc:label": "3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:animation-retargeting",
+      "vc:label": "Animation Retargeting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:texture-mapping",
+      "vc:label": "Texture Mapping"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-826a55d1d856"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#3dModel"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9504"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:30:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "3D Model"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-model"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-model"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:3-d-model",
+  "@type": "OntologyClass",
+  "label": "3D Model",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "Digital Asset"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]]. Models serve as foundational assets in [[3D Development]], enabling visualisation, simulation, and interaction within virtual spaces, games, and [[Metaverse]] applications.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:material-definition",
+      "vc:label": "Material Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:mesh-data",
+      "vc:label": "Mesh Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:texture-mapping",
+      "vc:label": "Texture Mapping"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:3-d-rendering",
+      "vc:label": "3D Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-visualization",
+      "vc:label": "Interactive Visualization"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-environment-design",
+      "vc:label": "Virtual Environment Design"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:3-d-modeling",
+      "vc:label": "3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:animation-retargeting",
+      "vc:label": "Animation Retargeting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-model:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Rendering]]",
+      "resolved": "urn:visionflow:linked:3-d-rendering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interactive Visualization]]",
+      "resolved": "urn:visionflow:linked:interactive-visualization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Material Definition]]",
+      "resolved": "urn:visionflow:linked:material-definition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mesh Data]]",
+      "resolved": "urn:visionflow:linked:mesh-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Virtual Environment Design]]",
+      "resolved": "urn:visionflow:linked:virtual-environment-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Development]]",
+      "resolved": "urn:visionflow:owl:class:3-d-development",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[3D File Format]]",
+      "resolved": "urn:visionflow:owl:class:3-d-file-format",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[3D Modeling]]",
+      "resolved": "urn:visionflow:owl:class:3-d-modeling",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Animation Retargeting]]",
+      "resolved": "urn:visionflow:owl:class:animation-retargeting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Asset]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Texture Mapping]]",
+      "resolved": "urn:visionflow:owl:class:texture-mapping",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]]. Models serve as foundational assets in [[3D Development]], enabling visualisation, simulation, and interaction within virtual spaces, games, and [[Metaverse]] applications.

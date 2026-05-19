@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:3a67b6249fbf7b58fb3ed263275af3f1a91636b6e081e18d608b7b4eadd73b6b",
+  "title": "Jupyter like behaviour within a page",
+  "slug": "jupyter-like-behaviour-within-a-page",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:jupyter-like-behaviour-within-a-page",
+  "domain": "infrastructure",
+  "definition": "Jupyter like behaviour within a page is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

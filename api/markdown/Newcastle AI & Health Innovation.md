@@ -1,21 +1,198 @@
-iri:: http://narrativegoldmine.com/ontology#NewcastleAIHealthInnovation
-uri:: urn:visionclaw:concept:artificial-intelligence:newcastle-ai-health-innovation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:newcastle-ai-health-innovation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Newcastle AI & Health Innovation
-content-hash:: sha256-12-991a4b4c37e8
-legacy-term-id:: NGM-1004
-status:: active
-maturity:: established
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#NewcastleAIHealthInnovation
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:newcastle-ai-health-innovation
 public:: true
+
+# Newcastle AI & Health Innovation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0",
+  "@type": "Page",
+  "vc:slug": "newcastle-ai-and-health-innovation",
+  "title": "Newcastle AI & Health Innovation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:northern-powerhouse",
+      "vc:label": "Northern Powerhouse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:north-england-innovation-corridor",
+      "vc:label": "North England Innovation Corridor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uk-tech-ecosystem",
+      "vc:label": "UK Tech Ecosystem"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-991a4b4c37e8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#NewcastleAIHealthInnovation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-1004"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Newcastle AI & Health Innovation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:newcastle-ai-health-innovation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:newcastle-ai-health-innovation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:newcastle-ai-and-health-innovation",
+  "@type": "OntologyClass",
+  "label": "Newcastle AI & Health Innovation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:newcastle-ai-and-health-innovation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Northern Powerhouse]]",
+      "resolved": "urn:visionflow:linked:northern-powerhouse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[North England Innovation Corridor]]",
+      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[UK Tech Ecosystem]]",
+      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.
@@ -23,7 +200,7 @@ public:: true
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:NewcastleAIAndHealthInnovation
   - owl-role:: RegionalEcosystem
-  - belongs-to-domain:: [[UKTechEcosystem]]
+  - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
   - <!-- No relationships defined -->

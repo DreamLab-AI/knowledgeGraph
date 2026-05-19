@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:61f5f3dd2ccd06d76292a08db642d79c566e9dc379f0e544c61c78ee65c174f4",
+  "title": "Metaverse Classification",
+  "slug": "metaverse-classification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-classification",
+  "domain": "spatial-computing",
+  "definition": "Metaverse Classification is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "label": "Etsi Metaverse Domain Taxonomy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "learning-platform-categorization",
+      "label": "Learning Platform Categorization"
+    }
+  ]
+}

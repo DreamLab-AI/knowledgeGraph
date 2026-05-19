@@ -1,0 +1,956 @@
+{
+  "id": "urn:visionflow:page:a52c481103c8d5f7aedd02f1bbad34763c132b2e628f91594dac8e991cb78df0",
+  "title": "Consensus Mechanism",
+  "slug": "consensus-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:consensus-mechanism",
+  "domain": "blockchain",
+  "definition": "A [[Consensus Mechanism]] is a [[Distributed Algorithm]] enabling a population of independent, potentially adversarial nodes communicating over an unreliable network to agree on a single, totally-ordered sequence of state transitions (a replicated log) such that all honest participants eventually converge on the same value (agreement / safety), every honest proposal is eventually decided (termination / liveness), and the decided value was proposed by at least one participant (validity / integrity), formalised within the Fischer-Lynch-Paterson (FLP) impossibility result establishing that no deterministic asynchronous protocol can guarantee all three properties simultaneously with even one faulty process, navigated in practice by relaxing one assumption \u2014 partial synchrony (Dwork-Lynch-Stockmeyer 1988) used by [[PBFT]] (Castro-Liskov 1999), [[Tendermint]] (Buchman 2016), [[HotStuff]] (Yin et al. 2018), [[Narwhal]]-[[Bullshark]] (Spiegelman et al. 2022) and [[Mysticeti]] (Sui 2024); randomisation under asynchrony used by [[Algorand]] (Chen-Micali 2016) verifiable random function (VRF) committee lottery and [[Avalanche]] (Rocket et al. 2018) repeated subsampling; or eventual probabilis",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:atomic-broadcast",
+      "label": "Atomic Broadcast"
+    },
+    {
+      "id": "urn:visionflow:linked:coordination-protocol",
+      "label": "Coordination Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:distributed-algorithm",
+      "label": "Distributed Algorithm"
+    },
+    {
+      "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:state-machine-replication",
+      "label": "State Machine Replication"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:block-proposal",
+        "label": "Block Proposal"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:visionflow:linked:finality-gadget",
+        "label": "Finality Gadget"
+      },
+      {
+        "id": "urn:visionflow:linked:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:visionflow:linked:quorum-certificate",
+        "label": "Quorum Certificate"
+      },
+      {
+        "id": "urn:visionflow:linked:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "id": "urn:visionflow:linked:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:visionflow:linked:view-change",
+        "label": "View Change"
+      },
+      {
+        "id": "urn:visionflow:linked:voting-round",
+        "label": "Voting Round"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:economic-incentive",
+        "label": "Economic Incentive"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronised-clock",
+        "label": "Synchronised Clock"
+      },
+      {
+        "id": "urn:visionflow:linked:validator-registry",
+        "label": "Validator Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:visionflow:linked:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "id": "urn:visionflow:linked:state-synchronisation",
+        "label": "State Synchronisation"
+      },
+      {
+        "id": "urn:visionflow:linked:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:trustless-settlement",
+        "label": "Trustless Settlement"
+      },
+      {
+        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:avalanche",
+        "label": "Avalanche"
+      },
+      {
+        "id": "urn:visionflow:linked:hashgraph",
+        "label": "Hashgraph"
+      },
+      {
+        "id": "urn:visionflow:linked:hot-stuff",
+        "label": "HotStuff"
+      },
+      {
+        "id": "urn:visionflow:linked:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:visionflow:linked:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:visionflow:linked:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:visionflow:owl:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-authority",
+        "label": "Proof-of-Authority"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-history",
+        "label": "Proof-of-History"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "label": "Proof-of-Stake"
+      },
+      {
+        "id": "urn:visionflow:owl:class:proof-of-work",
+        "label": "Proof-of-Work"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aleph-zero",
+      "label": "Aleph Zero"
+    },
+    {
+      "slug": "algorand",
+      "label": "Algorand"
+    },
+    {
+      "slug": "aptos-bft",
+      "label": "AptosBFT"
+    },
+    {
+      "slug": "atomic-broadcast",
+      "label": "Atomic Broadcast"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "babe",
+      "label": "BABE"
+    },
+    {
+      "slug": "babel-et-al-2024-mysticeti",
+      "label": "Babel et al 2024 Mysticeti"
+    },
+    {
+      "slug": "baird-2016-hashgraph-swirlds",
+      "label": "Baird 2016 Hashgraph Swirlds"
+    },
+    {
+      "slug": "bft",
+      "label": "BFT"
+    },
+    {
+      "slug": "bitcoin-bips",
+      "label": "Bitcoin BIPs"
+    },
+    {
+      "slug": "block-proposal",
+      "label": "Block Proposal"
+    },
+    {
+      "slug": "blockchain-security",
+      "label": "Blockchain Security"
+    },
+    {
+      "slug": "bls-signature",
+      "label": "BLS Signature"
+    },
+    {
+      "slug": "buchman-kwon-milosevic-2018-tendermint",
+      "label": "Buchman Kwon Milosevic 2018 Tendermint"
+    },
+    {
+      "slug": "bullshark",
+      "label": "Bullshark"
+    },
+    {
+      "slug": "buterin-griffith-2017-casper-ffg",
+      "label": "Buterin Griffith 2017 Casper FFG"
+    },
+    {
+      "slug": "byzantine-quorum-without-total-order",
+      "label": "Byzantine Quorum Without Total Order"
+    },
+    {
+      "slug": "cambridge-computer-laboratory-distributed-systems",
+      "label": "Cambridge Computer Laboratory Distributed Systems"
+    },
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "carnot",
+      "label": "Carnot"
+    },
+    {
+      "slug": "casper-ffg",
+      "label": "Casper FFG"
+    },
+    {
+      "slug": "castro-liskov-1999-pbft",
+      "label": "Castro Liskov 1999 PBFT"
+    },
+    {
+      "slug": "centralised-consensus",
+      "label": "Centralised Consensus"
+    },
+    {
+      "slug": "cft",
+      "label": "CFT"
+    },
+    {
+      "slug": "conflict-free-replicated-data-type",
+      "label": "Conflict-free Replicated Data Type"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "ConsensusLayer"
+    },
+    {
+      "slug": "coordination-domain",
+      "label": "CoordinationDomain"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "CoordinationLayer"
+    },
+    {
+      "slug": "coordination-protocol",
+      "label": "Coordination Protocol"
+    },
+    {
+      "slug": "coordinator-based-tangle",
+      "label": "Coordinator-Based Tangle"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "cosmos-ics-standards",
+      "label": "Cosmos ICS Standards"
+    },
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "data-availability",
+      "label": "Data Availability"
+    },
+    {
+      "slug": "decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "slug": "diem-bft",
+      "label": "DiemBFT"
+    },
+    {
+      "slug": "distributed-algorithm",
+      "label": "Distributed Algorithm"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "DistributedSystemsDomain"
+    },
+    {
+      "slug": "double-spend-prevention",
+      "label": "Double-Spend Prevention"
+    },
+    {
+      "slug": "dwork-lynch-stockmeyer-1988-partial-synchrony",
+      "label": "Dwork Lynch Stockmeyer 1988 Partial Synchrony"
+    },
+    {
+      "slug": "economic-incentive",
+      "label": "Economic Incentive"
+    },
+    {
+      "slug": "edinburgh-blockchain-technology-laboratory",
+      "label": "Edinburgh Blockchain Technology Laboratory"
+    },
+    {
+      "slug": "epaxos",
+      "label": "EPaxos"
+    },
+    {
+      "slug": "erasure-coding",
+      "label": "Erasure Coding"
+    },
+    {
+      "slug": "ethereum-eips",
+      "label": "Ethereum EIPs"
+    },
+    {
+      "slug": "eventually-consistent-system",
+      "label": "Eventually Consistent System"
+    },
+    {
+      "slug": "finality-gadget",
+      "label": "Finality Gadget"
+    },
+    {
+      "slug": "fischer-lynch-paterson-1985-flp-impossibility",
+      "label": "Fischer Lynch Paterson 1985 FLP Impossibility"
+    },
+    {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "ghost",
+      "label": "GHOST"
+    },
+    {
+      "slug": "ghost-dag",
+      "label": "GhostDAG"
+    },
+    {
+      "slug": "gilad-et-al-2017-algorand-sosp",
+      "label": "Gilad et al 2017 Algorand SOSP"
+    },
+    {
+      "slug": "grandpa",
+      "label": "GRANDPA"
+    },
+    {
+      "slug": "hashgraph",
+      "label": "Hashgraph"
+    },
+    {
+      "slug": "hot-stuff",
+      "label": "HotStuff"
+    },
+    {
+      "slug": "hot-stuff-2",
+      "label": "HotStuff-2"
+    },
+    {
+      "slug": "ietf-rfc-7574-bit-torrent-like-gossip",
+      "label": "IETF RFC 7574 BitTorrent-like Gossip"
+    },
+    {
+      "slug": "iohk-cardano-research",
+      "label": "IOHK Cardano Research"
+    },
+    {
+      "slug": "iota-2-0",
+      "label": "IOTA 2.0"
+    },
+    {
+      "slug": "iso-tc-307-blockchain",
+      "label": "ISO TC 307 Blockchain"
+    },
+    {
+      "slug": "junqueira-reed-serafini-2011-zab",
+      "label": "Junqueira Reed Serafini 2011 Zab"
+    },
+    {
+      "slug": "kiayias-et-al-2017-ouroboros-crypto",
+      "label": "Kiayias et al 2017 Ouroboros CRYPTO"
+    },
+    {
+      "slug": "lamport-1978-time-clocks-ordering-of-events",
+      "label": "Lamport 1978 Time Clocks Ordering of Events"
+    },
+    {
+      "slug": "lamport-1998-part-time-parliament-paxos",
+      "label": "Lamport 1998 Part-Time Parliament Paxos"
+    },
+    {
+      "slug": "lamport-shostak-pease-1982-byzantine-generals",
+      "label": "Lamport Shostak Pease 1982 Byzantine Generals"
+    },
+    {
+      "slug": "layer-2-rollups",
+      "label": "Layer 2 Rollups"
+    },
+    {
+      "slug": "leader-election",
+      "label": "Leader Election"
+    },
+    {
+      "slug": "malkhi-naor-wong-2023-hot-stuff-2",
+      "label": "Malkhi Naor Wong 2023 HotStuff-2"
+    },
+    {
+      "slug": "moraru-andersen-kaminsky-2013-epaxos",
+      "label": "Moraru Andersen Kaminsky 2013 EPaxos"
+    },
+    {
+      "slug": "multi-paxos",
+      "label": "Multi-Paxos"
+    },
+    {
+      "slug": "mysticeti",
+      "label": "Mysticeti"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "narwhal",
+      "label": "Narwhal"
+    },
+    {
+      "slug": "network-synchrony-model",
+      "label": "Network Synchrony Model"
+    },
+    {
+      "slug": "nist-fips-204-crystals-dilithium-2024",
+      "label": "NIST FIPS 204 CRYSTALS-Dilithium 2024"
+    },
+    {
+      "slug": "nist-fips-204-post-quantum",
+      "label": "NIST FIPS 204 Post-Quantum"
+    },
+    {
+      "slug": "oki-liskov-1988-viewstamped-replication",
+      "label": "Oki Liskov 1988 Viewstamped Replication"
+    },
+    {
+      "slug": "ongaro-ousterhout-2014-raft",
+      "label": "Ongaro Ousterhout 2014 Raft"
+    },
+    {
+      "slug": "ouroboros",
+      "label": "Ouroboros"
+    },
+    {
+      "slug": "paxos",
+      "label": "Paxos"
+    },
+    {
+      "slug": "pbft",
+      "label": "PBFT"
+    },
+    {
+      "slug": "pease-shostak-lamport-1980-reaching-agreement-faults",
+      "label": "Pease Shostak Lamport 1980 Reaching Agreement Faults"
+    },
+    {
+      "slug": "permissionless-participation",
+      "label": "Permissionless Participation"
+    },
+    {
+      "slug": "quorum-certificate",
+      "label": "Quorum Certificate"
+    },
+    {
+      "slug": "quorum-intersection",
+      "label": "Quorum Intersection"
+    },
+    {
+      "slug": "raft",
+      "label": "Raft"
+    },
+    {
+      "slug": "rocket-et-al-2019-avalanche-snow",
+      "label": "Rocket et al 2019 Avalanche Snow"
+    },
+    {
+      "slug": "single-source-of-truth-database",
+      "label": "Single-Source-of-Truth Database"
+    },
+    {
+      "slug": "slashing",
+      "label": "Slashing"
+    },
+    {
+      "slug": "slashing-condition",
+      "label": "Slashing Condition"
+    },
+    {
+      "slug": "smart-contract-execution",
+      "label": "Smart Contract Execution"
+    },
+    {
+      "slug": "sompolinsky-lewenberg-zohar-2021-ghost-dag-phantom",
+      "label": "Sompolinsky Lewenberg Zohar 2021 GhostDAG PHANTOM"
+    },
+    {
+      "slug": "sompolinsky-zohar-2015-ghost",
+      "label": "Sompolinsky Zohar 2015 GHOST"
+    },
+    {
+      "slug": "spiegelman-et-al-2022-bullshark-narwhal",
+      "label": "Spiegelman et al 2022 Bullshark Narwhal"
+    },
+    {
+      "slug": "state-synchronisation",
+      "label": "State Synchronisation"
+    },
+    {
+      "slug": "sui",
+      "label": "Sui"
+    },
+    {
+      "slug": "sybil",
+      "label": "Sybil"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "synchronised-clock",
+      "label": "Synchronised Clock"
+    },
+    {
+      "slug": "tendermint",
+      "label": "Tendermint"
+    },
+    {
+      "slug": "threshold-cryptography",
+      "label": "Threshold Cryptography"
+    },
+    {
+      "slug": "threshold-signature",
+      "label": "Threshold Signature"
+    },
+    {
+      "slug": "throughput-scalability",
+      "label": "Throughput Scalability"
+    },
+    {
+      "slug": "trustless-settlement",
+      "label": "Trustless Settlement"
+    },
+    {
+      "slug": "validator-economics",
+      "label": "Validator Economics"
+    },
+    {
+      "slug": "validator-registry",
+      "label": "Validator Registry"
+    },
+    {
+      "slug": "validator-set",
+      "label": "Validator Set"
+    },
+    {
+      "slug": "verifiable-random-function",
+      "label": "Verifiable Random Function"
+    },
+    {
+      "slug": "view-change",
+      "label": "View Change"
+    },
+    {
+      "slug": "viewstamped-replication",
+      "label": "Viewstamped Replication"
+    },
+    {
+      "slug": "voting-round",
+      "label": "Voting Round"
+    },
+    {
+      "slug": "yin-et-al-2019-hot-stuff-podc",
+      "label": "Yin et al 2019 HotStuff PODC"
+    },
+    {
+      "slug": "zab",
+      "label": "Zab"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "finality",
+      "label": "Finality"
+    },
+    {
+      "slug": "fork-choice-rule",
+      "label": "Fork Choice Rule"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "proof-of-authority",
+      "label": "Proof-of-Authority"
+    },
+    {
+      "slug": "proof-of-history",
+      "label": "Proof-of-History"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "state-machine-replication",
+      "label": "State Machine Replication"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agreement-protocol",
+      "label": "Agreement Protocol"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "distributed-protocol",
+      "label": "Distributed Protocol"
+    },
+    {
+      "slug": "enterprise-blockchain-architecture",
+      "label": "Enterprise Blockchain Architecture"
+    },
+    {
+      "slug": "fault-tolerance-system",
+      "label": "Fault Tolerance System"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "hybrid-consensus",
+      "label": "Hybrid Consensus"
+    },
+    {
+      "slug": "layer-0",
+      "label": "Layer 0"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "probabilistic-finality",
+      "label": "Probabilistic Finality"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "proof-based-consensus",
+      "label": "Proof-Based Consensus"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

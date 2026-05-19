@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:c5a87065f14f82af889f69dc75b8a3b0046f51d20be634532d45691cec7cf9a4",
+  "title": "World Instance",
+  "slug": "world-instance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:world-instance",
+  "domain": "spatial-computing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

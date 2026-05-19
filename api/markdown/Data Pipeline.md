@@ -1,21 +1,456 @@
-iri:: http://narrativegoldmine.com/infrastructure#DataPipeline
-uri:: urn:visionclaw:concept:infrastructure:data-pipeline
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:data-pipeline
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Data Pipeline
-content-hash:: sha256-12-00f9ff14bdbd
-legacy-term-id:: MV-3014
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#DataPipeline
+legacy_uri:: urn:visionclaw:concept:infrastructure:data-pipeline
 public:: true
+
+# Data Pipeline
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:83c4eb333c98eea037188be5b455795a7855a6736e0543fedeae088d6a59028a",
+  "@type": "Page",
+  "vc:slug": "data-pipeline",
+  "title": "Data Pipeline",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:applies-transformation",
+      "vc:label": "appliesTransformation"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-pipeline",
+      "vc:label": "AutomatedPipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:availability",
+      "vc:label": "Availability"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-delivery",
+      "vc:label": "Data Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-ingestion",
+      "vc:label": "Data Ingestion"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-preprocessing",
+      "vc:label": "DataPreprocessing"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-quality",
+      "vc:label": "DataQuality"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-reliability",
+      "vc:label": "Data Reliability"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-transformation",
+      "vc:label": "Data Transformation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-transformation",
+      "vc:label": "DataTransformation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-validation",
+      "vc:label": "Data Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-storage",
+      "vc:label": "DistributedStorage"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-coordinated-by",
+      "vc:label": "dt:coordinatedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-feeds",
+      "vc:label": "dt:feeds"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-stored-on",
+      "vc:label": "dt:storedOn"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-tracked-on",
+      "vc:label": "dt:trackedOn"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-validated-by",
+      "vc:label": "dt:validatedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-handling",
+      "vc:label": "Error Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:etl-patterns",
+      "vc:label": "ETL Patterns"
+    },
+    {
+      "@id": "urn:visionflow:linked:ingests-from",
+      "vc:label": "ingestsFrom"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitoring",
+      "vc:label": "Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:oracle-service",
+      "vc:label": "OracleService"
+    },
+    {
+      "@id": "urn:visionflow:linked:outputs-to",
+      "vc:label": "outputsTo"
+    },
+    {
+      "@id": "urn:visionflow:linked:validates-against",
+      "vc:label": "validatesAgainst"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aisystem",
+      "vc:label": "AISystem"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audit-trail",
+      "vc:label": "AuditTrail"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-engineering",
+      "vc:label": "FeatureEngineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:quality-assurance",
+      "vc:label": "Quality Assurance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-00f9ff14bdbd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#DataPipeline"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3014"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Data Pipeline"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-pipeline"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:data-pipeline"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:83c4eb333c98eea037188be5b455795a7855a6736e0543fedeae088d6a59028a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:data-pipeline",
+  "@type": "OntologyClass",
+  "label": "Data Pipeline",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:83c4eb333c98eea037188be5b455795a7855a6736e0543fedeae088d6a59028a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:83c4eb333c98eea037188be5b455795a7855a6736e0543fedeae088d6a59028a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs. Data pipelines implement [[ETL Patterns]], [[Data Validation]], [[Error Handling]], and [[Monitoring]] to ensure [[Data Reliability]] and [[Availability]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:data-pipeline:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:83c4eb333c98eea037188be5b455795a7855a6736e0543fedeae088d6a59028a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[appliesTransformation]]",
+      "resolved": "urn:visionflow:linked:applies-transformation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AutomatedPipeline]]",
+      "resolved": "urn:visionflow:linked:automated-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Availability]]",
+      "resolved": "urn:visionflow:linked:availability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Delivery]]",
+      "resolved": "urn:visionflow:linked:data-delivery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Ingestion]]",
+      "resolved": "urn:visionflow:linked:data-ingestion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataPreprocessing]]",
+      "resolved": "urn:visionflow:linked:data-preprocessing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataQuality]]",
+      "resolved": "urn:visionflow:linked:data-quality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Reliability]]",
+      "resolved": "urn:visionflow:linked:data-reliability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Transformation]]",
+      "resolved": "urn:visionflow:linked:data-transformation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataTransformation]]",
+      "resolved": "urn:visionflow:linked:data-transformation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Validation]]",
+      "resolved": "urn:visionflow:linked:data-validation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DistributedStorage]]",
+      "resolved": "urn:visionflow:linked:distributed-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:coordinatedBy]]",
+      "resolved": "urn:visionflow:linked:dt-coordinated-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:feeds]]",
+      "resolved": "urn:visionflow:linked:dt-feeds",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:storedOn]]",
+      "resolved": "urn:visionflow:linked:dt-stored-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:trackedOn]]",
+      "resolved": "urn:visionflow:linked:dt-tracked-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:validatedBy]]",
+      "resolved": "urn:visionflow:linked:dt-validated-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Error Handling]]",
+      "resolved": "urn:visionflow:linked:error-handling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETL Patterns]]",
+      "resolved": "urn:visionflow:linked:etl-patterns",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ingestsFrom]]",
+      "resolved": "urn:visionflow:linked:ingests-from",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monitoring]]",
+      "resolved": "urn:visionflow:linked:monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OracleService]]",
+      "resolved": "urn:visionflow:linked:oracle-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[outputsTo]]",
+      "resolved": "urn:visionflow:linked:outputs-to",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[validatesAgainst]]",
+      "resolved": "urn:visionflow:linked:validates-against",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AISystem]]",
+      "resolved": "urn:visionflow:owl:class:aisystem",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AuditTrail]]",
+      "resolved": "urn:visionflow:owl:class:audit-trail",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[FeatureEngineering]]",
+      "resolved": "urn:visionflow:owl:class:feature-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Quality Assurance]]",
+      "resolved": "urn:visionflow:owl:class:quality-assurance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:83c4eb333c98eea037188be5b455795a7855a6736e0543fedeae088d6a59028a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs. Data pipelines implement [[ETL Patterns]], [[Data Validation]], [[Error Handling]], and [[Monitoring]] to ensure [[Data Reliability]] and [[Availability]].

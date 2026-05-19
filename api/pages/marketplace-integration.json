@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529",
+  "title": "Marketplace Integration",
+  "slug": "marketplace-integration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:marketplace-integration",
+  "domain": "spatial-computing",
+  "definition": "Systems and APIs that connect metaverse platforms with NFT marketplaces, e-commerce platforms, and digital asset trading systems, enabling seamless buying, selling, and trading of virtual goods, real estate, and collectibles.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-commerce",
+      "label": "Digital Commerce"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:metaverse-commerce",
+        "label": "Metaverse Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-commerce",
+      "label": "Metaverse Commerce"
+    },
+    {
+      "slug": "digital-commerce",
+      "label": "Digital Commerce"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "royalty-mechanism",
+      "label": "Royalty Mechanism"
+    }
+  ]
+}

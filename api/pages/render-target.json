@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:404967b77b4dfdbe9db75a289128e4f68b185af8e22c3583b9823b4f8e21db27",
+  "title": "Render Target",
+  "slug": "render-target",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:render-target",
+  "domain": "spatial-computing",
+  "definition": "RenderTarget is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:render-pipeline",
+      "label": "Render Pipeline"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

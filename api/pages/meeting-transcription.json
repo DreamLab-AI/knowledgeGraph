@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:5baf144f59dcc0a200c0e60ba4cb1b0feea49fc817d8c37200b1c0b29a47dcac",
+  "title": "Meeting Transcription",
+  "slug": "meeting-transcription",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:meeting-transcription",
+  "domain": "artificial-intelligence",
+  "definition": "Meeting Transcription is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

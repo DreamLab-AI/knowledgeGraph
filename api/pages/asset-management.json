@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:6c653f59ec06a4c3adffaa332ee1b04b7e039c49816978f716670ddd1be990b7",
+  "title": "Asset Management",
+  "slug": "asset-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:asset-management",
+  "domain": "infrastructure",
+  "definition": "The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization. In the context of fintech and DeFi, asset management encompasses crypto portfolio management, tokenized securities, yield optimization, and institutional-grade custody solutions that enable investors to navigate volatile digital markets while maximizing risk-adjusted returns.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:portfolio-management",
+        "label": "Portfolio Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    },
+    {
+      "slug": "institutional-investment",
+      "label": "Institutional Investment"
+    },
+    {
+      "slug": "portfolio-management",
+      "label": "Portfolio Management"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "digital-content-layer",
+      "label": "Digital Content Layer"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "standardized-asset-classification",
+      "label": "Standardized Asset Classification"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

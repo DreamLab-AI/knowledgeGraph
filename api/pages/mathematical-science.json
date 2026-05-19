@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:d20b69530d51e0c2daa612e93088958eeb32662c8febd1db859296d7c1eecc14",
+  "title": "Mathematical Science",
+  "slug": "mathematical-science",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mathematical-science",
+  "domain": "artificial-intelligence",
+  "definition": "Mathematical Science is a concept within the blockchain domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    }
+  ]
+}

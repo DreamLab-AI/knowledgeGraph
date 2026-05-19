@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:9e3cc05a9ffba26d69b190865bea6e9f9bebe30c0934c4f9fe69de62366fe5db",
+  "title": "Libertarian thesis",
+  "slug": "libertarian-thesis",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:libertarian-thesis",
+  "domain": "infrastructure",
+  "definition": "Libertarian thesis is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

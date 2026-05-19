@@ -1,21 +1,253 @@
-iri:: http://narrativegoldmine.com/blockchain#Difficulty
-uri:: urn:visionclaw:concept:blockchain:difficulty
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:difficulty
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Difficulty
-content-hash:: sha256-12-8aaa8dc68c23
-legacy-term-id:: BC-0035
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-28T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Difficulty
+legacy_uri:: urn:visionclaw:concept:blockchain:difficulty
 public:: true
+
+# Difficulty
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:56e0f20648eb8644e3e054b62f0e595fe65c73230a7f7f593dbe139ee10edc7b",
+  "@type": "Page",
+  "vc:slug": "difficulty",
+  "title": "Difficulty",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ieee-2418-1",
+      "vc:label": "IEEE 2418.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23257-2021",
+      "vc:label": "ISO/IEC 23257:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-nistir",
+      "vc:label": "NIST NISTIR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-domain",
+      "vc:label": "CryptographicDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "vc:label": "CryptographicPrimitive"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:security-layer",
+      "vc:label": "SecurityLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-8aaa8dc68c23"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-28T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Difficulty"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0035"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Difficulty"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:difficulty"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:difficulty"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:56e0f20648eb8644e3e054b62f0e595fe65c73230a7f7f593dbe139ee10edc7b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:difficulty",
+  "@type": "OntologyClass",
+  "label": "Difficulty",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-entity",
+      "vc:label": "Blockchain Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "vc:label": "CryptographicPrimitive"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:56e0f20648eb8644e3e054b62f0e595fe65c73230a7f7f593dbe139ee10edc7b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:56e0f20648eb8644e3e054b62f0e595fe65c73230a7f7f593dbe139ee10edc7b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Mining computational requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:difficulty:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:56e0f20648eb8644e3e054b62f0e595fe65c73230a7f7f593dbe139ee10edc7b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[IEEE 2418.1]]",
+      "resolved": "urn:visionflow:linked:ieee-2418-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23257:2021]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST NISTIR]]",
+      "resolved": "urn:visionflow:linked:nist-nistir",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Entity]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-entity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CryptographicDomain]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CryptographicPrimitive]]",
+      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SecurityLayer]]",
+      "resolved": "urn:visionflow:owl:class:security-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:56e0f20648eb8644e3e054b62f0e595fe65c73230a7f7f593dbe139ee10edc7b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Mining computational requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

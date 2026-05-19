@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:d3ba19071e3570b014adca88794fbcae5a50c4f164ae6e64c80be0568fe6c5be",
+  "title": "ERC3643 Standard",
+  "slug": "erc3643-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:erc3643-standard",
+  "domain": "blockchain",
+  "definition": "Permissioned token standard with on-chain identity verification for regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

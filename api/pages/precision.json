@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:0831dc4ef9ad114d3206f40d232ec0f6e234b1024aa2017e9c8ff9ef0de96909",
+  "title": "Precision",
+  "slug": "precision",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:precision",
+  "domain": "artificial-intelligence",
+  "definition": "A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct, calculated as the ratio of true positives to all positive predictions (true positives plus false positives), measuring the model's ability to avoid false alarms and providing critical insight into prediction reliability, particularly important in applications where the cost or consequence of false positive errors is significant.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "false-positive",
+      "label": "False Positive"
+    },
+    {
+      "slug": "positive-predictive-value",
+      "label": "Positive Predictive Value"
+    },
+    {
+      "slug": "precision-recall-curve",
+      "label": "Precision-Recall Curve"
+    },
+    {
+      "slug": "specificity",
+      "label": "Specificity"
+    },
+    {
+      "slug": "true-positive",
+      "label": "True Positive"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ]
+}

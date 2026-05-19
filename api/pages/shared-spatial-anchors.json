@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:d8536fbcd46c9dc4cc0031c82b91bab55be9571e6a6663e9b4049a9e4a9c9f01",
+  "title": "Shared Spatial Anchors",
+  "slug": "shared-spatial-anchors",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shared-spatial-anchors",
+  "domain": "spatial-computing",
+  "definition": "Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-ar-experiences",
+        "label": "Collaborative AR Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-ar-experiences",
+      "label": "Collaborative AR Experiences"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    }
+  ]
+}

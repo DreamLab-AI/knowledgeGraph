@@ -1,0 +1,520 @@
+{
+  "id": "urn:visionflow:page:d10e928e97f3f82dcaea6e78b753d43d3adc09169626dd6588e72e92195ec332",
+  "title": "Hardware and Edge",
+  "slug": "hardware-and-edge",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hardware-and-edge",
+  "domain": "infrastructure",
+  "definition": "Hardware and Edge refers to the integrated class of specialised silicon architectures, embedded compute platforms, and distributed inference runtimes designed to execute artificial intelligence workloads at or near the point of data generation, without mandatory dependence on centralised cloud data centres. The concept spans dedicated neural processing units (NPUs) fabricated in high-volume consumer silicon (smartphones, laptops, wearables), purpose-built edge AI accelerators for industrial and robotics applications (NVIDIA Jetson Orin/Thor, Google Coral Edge TPU, Hailo-8/10, Qualcomm Cloud AI 100), the runtime ecosystems that compile, quantise, and deploy models to heterogeneous endpoints (ONNX Runtime, TensorFlow Lite, Apache TVM, ExecuTorch), and the federated learning frameworks that allow multiple edge nodes to jointly improve model quality without centralising raw data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-accelerator",
+      "label": "AI Accelerator"
+    },
+    {
+      "id": "urn:visionflow:linked:embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:neural-processing-unit",
+      "label": "Neural Processing Unit"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "id": "urn:visionflow:owl:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:apple-neural-engine",
+        "label": "Apple Neural Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:arm-ethos-npu",
+        "label": "ARM Ethos NPU"
+      },
+      {
+        "id": "urn:visionflow:linked:google-coral-edge-tpu",
+        "label": "Google Coral Edge TPU"
+      },
+      {
+        "id": "urn:visionflow:linked:hailo-accelerator",
+        "label": "Hailo Accelerator"
+      },
+      {
+        "id": "urn:visionflow:linked:intel-movidius",
+        "label": "Intel Movidius"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:nvidia-jetson",
+        "label": "NVIDIA Jetson"
+      },
+      {
+        "id": "urn:visionflow:linked:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:qualcomm-ai-engine",
+        "label": "Qualcomm AI Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-flow-lite",
+        "label": "TensorFlow Lite"
+      },
+      {
+        "id": "urn:visionflow:owl:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "id": "urn:visionflow:linked:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:visionflow:linked:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:visionflow:linked:thermal-design-power",
+        "label": "Thermal Design Power"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-preserving-ml",
+        "label": "Privacy-Preserving ML"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "id": "urn:visionflow:linked:wearable-ai",
+        "label": "Wearable AI"
+      },
+      {
+        "id": "urn:visionflow:owl:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:apache-tvm",
+        "label": "Apache TVM"
+      },
+      {
+        "id": "urn:visionflow:linked:execu-torch",
+        "label": "ExecuTorch"
+      },
+      {
+        "id": "urn:visionflow:linked:mlir",
+        "label": "MLIR"
+      },
+      {
+        "id": "urn:visionflow:linked:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:open-vino",
+        "label": "OpenVINO"
+      },
+      {
+        "id": "urn:visionflow:linked:tensor-flow-lite",
+        "label": "TensorFlow Lite"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-accelerator",
+      "label": "AI Accelerator"
+    },
+    {
+      "slug": "aideployment-domain",
+      "label": "AIDeploymentDomain"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "apache-tvm",
+      "label": "Apache TVM"
+    },
+    {
+      "slug": "apple-neural-engine",
+      "label": "Apple Neural Engine"
+    },
+    {
+      "slug": "arm-architecture",
+      "label": "ARM Architecture"
+    },
+    {
+      "slug": "arm-ethos-npu",
+      "label": "ARM Ethos NPU"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "centralised-inference",
+      "label": "Centralised Inference"
+    },
+    {
+      "slug": "compute-hardware-domain",
+      "label": "ComputeHardwareDomain"
+    },
+    {
+      "slug": "cpu-only-inference",
+      "label": "CPU-Only Inference"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "data-centre-gpu",
+      "label": "Data Centre GPU"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "etsi-mec",
+      "label": "ETSI MEC"
+    },
+    {
+      "slug": "execu-torch",
+      "label": "ExecuTorch"
+    },
+    {
+      "slug": "firmware-layer",
+      "label": "FirmwareLayer"
+    },
+    {
+      "slug": "google-coral-edge-tpu",
+      "label": "Google Coral Edge TPU"
+    },
+    {
+      "slug": "hailo-accelerator",
+      "label": "Hailo Accelerator"
+    },
+    {
+      "slug": "hardware-abstraction-layer",
+      "label": "Hardware Abstraction Layer"
+    },
+    {
+      "slug": "ieee-p2941",
+      "label": "IEEE P2941"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "intel-movidius",
+      "label": "Intel Movidius"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "khronos-open-cl",
+      "label": "Khronos OpenCL"
+    },
+    {
+      "slug": "memory-bandwidth",
+      "label": "Memory Bandwidth"
+    },
+    {
+      "slug": "mlcommons-mlperf",
+      "label": "MLCommons MLPerf"
+    },
+    {
+      "slug": "mlir",
+      "label": "MLIR"
+    },
+    {
+      "slug": "model-pruning",
+      "label": "Model Pruning"
+    },
+    {
+      "slug": "model-quantisation",
+      "label": "Model Quantisation"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "neural-processing-unit",
+      "label": "Neural Processing Unit"
+    },
+    {
+      "slug": "nvidia-jetson",
+      "label": "NVIDIA Jetson"
+    },
+    {
+      "slug": "on-device-inference",
+      "label": "On-Device Inference"
+    },
+    {
+      "slug": "onnx-runtime",
+      "label": "ONNX Runtime"
+    },
+    {
+      "slug": "onnx-standard",
+      "label": "ONNX Standard"
+    },
+    {
+      "slug": "open-vino",
+      "label": "OpenVINO"
+    },
+    {
+      "slug": "power-management",
+      "label": "Power Management"
+    },
+    {
+      "slug": "privacy-preserving-ml",
+      "label": "Privacy-Preserving ML"
+    },
+    {
+      "slug": "qualcomm-ai-engine",
+      "label": "Qualcomm AI Engine"
+    },
+    {
+      "slug": "quantisation-aware-training",
+      "label": "Quantisation Aware Training"
+    },
+    {
+      "slug": "real-time-ai",
+      "label": "Real-Time AI"
+    },
+    {
+      "slug": "risc-v",
+      "label": "RISC-V"
+    },
+    {
+      "slug": "runtime-layer",
+      "label": "RuntimeLayer"
+    },
+    {
+      "slug": "semiconductor-fabrication",
+      "label": "Semiconductor Fabrication"
+    },
+    {
+      "slug": "silicon-layer",
+      "label": "SiliconLayer"
+    },
+    {
+      "slug": "tensor-decomposition",
+      "label": "Tensor Decomposition"
+    },
+    {
+      "slug": "tensor-flow-lite",
+      "label": "TensorFlow Lite"
+    },
+    {
+      "slug": "thermal-design-power",
+      "label": "Thermal Design Power"
+    },
+    {
+      "slug": "tsmc-n3-e-process",
+      "label": "TSMC N3E Process"
+    },
+    {
+      "slug": "wearable-ai",
+      "label": "Wearable AI"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "client-side-dco",
+      "label": "Client side DCO"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "interfaces",
+      "label": "Interfaces"
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "label": "leopold-aschenbrenner"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "octave-multi-model-laboratory",
+      "label": "Octave Multi Model Laboratory"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "recent-projects",
+      "label": "Recent Projects"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "label": "State of the art in AI"
+    },
+    {
+      "slug": "task-specific-head",
+      "label": "Task Specific Head"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:3c3e4baf691a5ed00fdeca87fb9975e95b7e0bf3b322326460b0019a147cb342",
+  "title": "Cross-Border Data Transfer Rule",
+  "slug": "cross-border-data-transfer-rule",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cross-border-data-transfer-rule",
+  "domain": "infrastructure",
+  "definition": "Regulatory framework governing international movement of personal and sensitive data across jurisdictions, ensuring privacy protection through adequacy assessments and safeguarding mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:privacy-framework",
+      "label": "Privacy Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:adequacy-decision-framework",
+        "label": "Adequacy Decision Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:binding-corporate-rules",
+        "label": "Binding Corporate Rules"
+      },
+      {
+        "id": "urn:visionflow:linked:standard-contractual-clauses",
+        "label": "Standard Contractual Clauses"
+      },
+      {
+        "id": "urn:visionflow:linked:transfer-impact-assessment",
+        "label": "Transfer Impact Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-protection-authority-notification",
+        "label": "Data Protection Authority Notification"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-basis-determination",
+        "label": "Legal Basis Determination"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:international-data-flows",
+        "label": "International Data Flows"
+      },
+      {
+        "id": "urn:visionflow:linked:user-privacy-protection",
+        "label": "User Privacy Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:global-metaverse-operations",
+        "label": "Global Metaverse Operations"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adequacy-decision-framework",
+      "label": "Adequacy Decision Framework"
+    },
+    {
+      "slug": "apec-cbpr",
+      "label": "APEC CBPR"
+    },
+    {
+      "slug": "binding-corporate-rules",
+      "label": "Binding Corporate Rules"
+    },
+    {
+      "slug": "data-privacy-governance-framework",
+      "label": "Data Privacy Governance Framework"
+    },
+    {
+      "slug": "data-protection-authority-notification",
+      "label": "Data Protection Authority Notification"
+    },
+    {
+      "slug": "eu-us-data-privacy-framework",
+      "label": "EU-US Data Privacy Framework"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-article-45",
+      "label": "GDPR Article 45"
+    },
+    {
+      "slug": "international-data-flows",
+      "label": "International Data Flows"
+    },
+    {
+      "slug": "legal-basis-determination",
+      "label": "Legal Basis Determination"
+    },
+    {
+      "slug": "oecd-privacy-framework",
+      "label": "OECD Privacy Framework"
+    },
+    {
+      "slug": "standard-contractual-clauses",
+      "label": "Standard Contractual Clauses"
+    },
+    {
+      "slug": "transfer-impact-assessment",
+      "label": "Transfer Impact Assessment"
+    },
+    {
+      "slug": "user-privacy-protection",
+      "label": "User Privacy Protection"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "global-metaverse-operations",
+      "label": "Global Metaverse Operations"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "privacy-impact-assessment",
+      "label": "Privacy Impact Assessment"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    }
+  ]
+}

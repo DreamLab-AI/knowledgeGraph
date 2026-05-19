@@ -1,24 +1,257 @@
-iri:: http://narrativegoldmine.com/spatial-computing#CreativeMediaDomain
-uri:: urn:visionclaw:concept:spatial-computing:creative-media-domain
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:creative-media-domain
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Creative Media Domain
-content-hash:: sha256-12-62fd9fa458e1
-legacy-term-id:: AI-7009
-status:: active
-maturity:: stable
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#CreativeMediaDomain
+legacy_uri:: urn:visionclaw:concept:spatial-computing:creative-media-domain
 public:: true
+
+# Creative Media Domain
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1",
+  "@type": "Page",
+  "vc:slug": "creative-media-domain",
+  "title": "Creative Media Domain",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-augmented-creativity",
+      "vc:label": "AI-Augmented Creativity"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-media",
+      "vc:label": "Digital Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:entertainment-industry",
+      "vc:label": "Entertainment Industry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-technology",
+      "vc:label": "Metaverse Technology"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-62fd9fa458e1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#CreativeMediaDomain"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-7009"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "stable"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Creative Media Domain"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:creative-media-domain"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:creative-media-domain"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:creative-media-domain",
+  "@type": "OntologyClass",
+  "label": "Creative Media Domain",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "stable",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-augmented-creativity",
+      "vc:label": "AI-Augmented Creativity"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:digital-media",
+      "vc:label": "Digital Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:entertainment-industry",
+      "vc:label": "Entertainment Industry"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-technology",
+      "vc:label": "Metaverse Technology"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:creative-media-domain:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI-Augmented Creativity]]",
+      "resolved": "urn:visionflow:linked:ai-augmented-creativity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Media]]",
+      "resolved": "urn:visionflow:linked:digital-media",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Entertainment Industry]]",
+      "resolved": "urn:visionflow:linked:entertainment-industry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Technology]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-technology",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.

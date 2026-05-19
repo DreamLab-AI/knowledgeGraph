@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:71fb4203a01b177dd909585623bcde669f32a85be721144ddbb2379e864cd0be",
+  "title": "Tourism Metaverse",
+  "slug": "tourism-metaverse",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tourism-metaverse",
+  "domain": "spatial-computing",
+  "definition": "A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cultural-exhibit",
+        "label": "Cultural Exhibit"
+      },
+      {
+        "id": "urn:visionflow:linked:tour-guide-system",
+        "label": "Tour Guide System"
+      },
+      {
+        "id": "urn:visionflow:linked:travel-planner",
+        "label": "Travel Planner"
+      },
+      {
+        "id": "urn:visionflow:owl:class:geospatial-engine",
+        "label": "Geospatial Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-destination",
+        "label": "Virtual Destination"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:content-management-system",
+        "label": "Content Management System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accessibility-enhancement",
+        "label": "Accessibility Enhancement"
+      },
+      {
+        "id": "urn:visionflow:linked:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:destination-marketing",
+        "label": "Destination Marketing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "360-video",
+      "label": "360 Video"
+    },
+    {
+      "slug": "accessibility-enhancement",
+      "label": "Accessibility Enhancement"
+    },
+    {
+      "slug": "content-management-system",
+      "label": "Content Management System"
+    },
+    {
+      "slug": "cultural-exhibit",
+      "label": "Cultural Exhibit"
+    },
+    {
+      "slug": "cultural-heritage-preservation",
+      "label": "Cultural Heritage Preservation"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "geographic-information-system",
+      "label": "Geographic Information System"
+    },
+    {
+      "slug": "tour-guide-system",
+      "label": "Tour Guide System"
+    },
+    {
+      "slug": "translation-service",
+      "label": "Translation Service"
+    },
+    {
+      "slug": "travel-planner",
+      "label": "Travel Planner"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    },
+    {
+      "slug": "geospatial-engine",
+      "label": "Geospatial Engine"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "virtual-destination",
+      "label": "Virtual Destination"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "virtual-tourism",
+      "label": "Virtual Tourism"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

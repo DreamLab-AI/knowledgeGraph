@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:6b0e1da21fcf1f592effbae40a4245786c188014e00fe0da660597a2b91bb5ec",
+  "title": "Sovereign AI bid",
+  "slug": "sovereign-ai-bid",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sovereign-ai-bid",
+  "domain": "artificial-intelligence",
+  "definition": "Sovereign AI bid is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "visionflow",
+      "label": "Visionflow"
+    }
+  ],
+  "backlinks": []
+}

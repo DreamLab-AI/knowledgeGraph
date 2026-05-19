@@ -1,22 +1,493 @@
-iri:: http://narrativegoldmine.com/blockchain#ClimateActionDao
-uri:: urn:visionclaw:concept:blockchain:climate-action-dao
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:climate-action-dao
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Climate Action DAO
-content-hash:: sha256-12-ba0cc9a8ad57
-legacy-term-id:: BC-0502
-status:: mature
-maturity:: production-ready
-bridges-to:: [[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)
-quality-score:: 0.50
-authority-score:: 0.85
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#ClimateActionDao
+legacy_uri:: urn:visionclaw:concept:blockchain:climate-action-dao
 public:: true
+
+# Climate Action DAO
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4",
+  "@type": "Page",
+  "vc:slug": "climate-action-dao",
+  "title": "Climate Action DAO",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:carbon-credit-retirement",
+      "vc:label": "CarbonCreditRetirement"
+    },
+    {
+      "@id": "urn:visionflow:linked:celo-climate-collective",
+      "vc:label": "Celo Climate Collective"
+    },
+    {
+      "@id": "urn:visionflow:linked:climate-finance",
+      "vc:label": "ClimateFinance"
+    },
+    {
+      "@id": "urn:visionflow:linked:climate-project-funding",
+      "vc:label": "ClimateProjectFunding"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-governance",
+      "vc:label": "CollectiveGovernance"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-coordination",
+      "vc:label": "CommunityCoordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-participation",
+      "vc:label": "CommunityParticipation"
+    },
+    {
+      "@id": "urn:visionflow:linked:daogovernance",
+      "vc:label": "DAOGovernance"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-domain",
+      "vc:label": "EnvironmentalDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:gitcoin",
+      "vc:label": "Gitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:impact-investment",
+      "vc:label": "ImpactInvestment"
+    },
+    {
+      "@id": "urn:visionflow:linked:impact-metrics",
+      "vc:label": "ImpactMetrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:impact-verification",
+      "vc:label": "ImpactVerification"
+    },
+    {
+      "@id": "urn:visionflow:linked:klima-dao",
+      "vc:label": "KlimaDAO"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-fi-dao",
+      "vc:label": "ReFi DAO"
+    },
+    {
+      "@id": "urn:visionflow:linked:regen-network",
+      "vc:label": "Regen Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:regenerative-finance",
+      "vc:label": "RegenerativeFinance"
+    },
+    {
+      "@id": "urn:visionflow:linked:voting-mechanism",
+      "vc:label": "VotingMechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-autonomous-organization",
+      "vc:label": "DecentralizedAutonomousOrganization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-token",
+      "vc:label": "GovernanceToken"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proposal-system",
+      "vc:label": "ProposalSystem"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "SmartContracts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:token-economics",
+      "vc:label": "TokenEconomics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparent-governance",
+      "vc:label": "TransparentGovernance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:treasury-management",
+      "vc:label": "TreasuryManagement"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.85"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ba0cc9a8ad57"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#ClimateActionDao"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0502"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Climate Action DAO"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:climate-action-dao"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:climate-action-dao"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:climate-action-dao",
+  "@type": "OntologyClass",
+  "label": "Climate Action DAO",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:climate-finance",
+      "vc:label": "ClimateFinance"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-governance",
+      "vc:label": "CollectiveGovernance"
+    },
+    {
+      "@id": "urn:visionflow:linked:impact-investment",
+      "vc:label": "ImpactInvestment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralized-autonomous-organization",
+      "vc:label": "DecentralizedAutonomousOrganization"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "mature",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate projects, purchasing and retiring carbon credits, managing regenerative finance (ReFi) portfolios, and distributing climate impact rewards, with notable examples including KlimaDAO (carbon market liquidity), Gitcoin Climate Solutions ($10M+ distributed), and Regen Network (ecological data marketplace).",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.85",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:impact-metrics",
+      "vc:label": "ImpactMetrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:voting-mechanism",
+      "vc:label": "VotingMechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance-token",
+      "vc:label": "GovernanceToken"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proposal-system",
+      "vc:label": "ProposalSystem"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:treasury-management",
+      "vc:label": "TreasuryManagement"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:community-participation",
+      "vc:label": "CommunityParticipation"
+    },
+    {
+      "@id": "urn:visionflow:linked:impact-verification",
+      "vc:label": "ImpactVerification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "SmartContracts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:token-economics",
+      "vc:label": "TokenEconomics"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:carbon-credit-retirement",
+      "vc:label": "CarbonCreditRetirement"
+    },
+    {
+      "@id": "urn:visionflow:linked:climate-project-funding",
+      "vc:label": "ClimateProjectFunding"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-coordination",
+      "vc:label": "CommunityCoordination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparent-governance",
+      "vc:label": "TransparentGovernance"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:climate-action-dao:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[CarbonCreditRetirement]]",
+      "resolved": "urn:visionflow:linked:carbon-credit-retirement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Celo Climate Collective]]",
+      "resolved": "urn:visionflow:linked:celo-climate-collective",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ClimateFinance]]",
+      "resolved": "urn:visionflow:linked:climate-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ClimateProjectFunding]]",
+      "resolved": "urn:visionflow:linked:climate-project-funding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CollectiveGovernance]]",
+      "resolved": "urn:visionflow:linked:collective-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CommunityCoordination]]",
+      "resolved": "urn:visionflow:linked:community-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CommunityParticipation]]",
+      "resolved": "urn:visionflow:linked:community-participation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DAOGovernance]]",
+      "resolved": "urn:visionflow:linked:daogovernance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EnvironmentalDomain]]",
+      "resolved": "urn:visionflow:linked:environmental-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gitcoin]]",
+      "resolved": "urn:visionflow:linked:gitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ImpactInvestment]]",
+      "resolved": "urn:visionflow:linked:impact-investment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ImpactMetrics]]",
+      "resolved": "urn:visionflow:linked:impact-metrics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ImpactVerification]]",
+      "resolved": "urn:visionflow:linked:impact-verification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KlimaDAO]]",
+      "resolved": "urn:visionflow:linked:klima-dao",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ReFi DAO]]",
+      "resolved": "urn:visionflow:linked:re-fi-dao",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Regen Network]]",
+      "resolved": "urn:visionflow:linked:regen-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RegenerativeFinance]]",
+      "resolved": "urn:visionflow:linked:regenerative-finance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VotingMechanism]]",
+      "resolved": "urn:visionflow:linked:voting-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DecentralizedAutonomousOrganization]]",
+      "resolved": "urn:visionflow:owl:class:decentralized-autonomous-organization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GovernanceToken]]",
+      "resolved": "urn:visionflow:owl:class:governance-token",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProposalSystem]]",
+      "resolved": "urn:visionflow:owl:class:proposal-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TokenEconomics]]",
+      "resolved": "urn:visionflow:owl:class:token-economics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TransparentGovernance]]",
+      "resolved": "urn:visionflow:owl:class:transparent-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TreasuryManagement]]",
+      "resolved": "urn:visionflow:owl:class:treasury-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate projects, purchasing and retiring carbon credits, managing regenerative finance (ReFi) portfolios, and distributing climate impact rewards, with notable examples including KlimaDAO (carbon market liquidity), Gitcoin Climate Solutions ($10M+ distributed), and Regen Network (ecological data marketplace).

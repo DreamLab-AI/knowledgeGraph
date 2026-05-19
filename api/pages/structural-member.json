@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:9377279cabafa2dfbe458c25c152dc90b8ab0d8446b6e57fee6b4b1c3b15b1e5",
+  "title": "Structural Member",
+  "slug": "structural-member",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:structural-member",
+  "domain": "robotics",
+  "definition": "Structural Member is a concept within the robotics domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robot-link",
+      "label": "RobotLink"
+    }
+  ]
+}

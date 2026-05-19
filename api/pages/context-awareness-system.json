@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c",
+  "title": "Context Awareness System",
+  "slug": "context-awareness-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:context-awareness-system",
+  "domain": "spatial-computing",
+  "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:intelligent-systems",
+      "label": "Intelligent Systems"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-services",
+        "label": "Adaptive Services"
+      },
+      {
+        "id": "urn:visionflow:linked:location-based-services",
+        "label": "Location Based Services"
+      },
+      {
+        "id": "urn:visionflow:linked:situational-awareness",
+        "label": "Situational Awareness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-services",
+      "label": "Adaptive Services"
+    },
+    {
+      "slug": "location-based-services",
+      "label": "Location Based Services"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "intelligent-systems",
+      "label": "Intelligent Systems"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "IoT Sensors"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "context-aware-response",
+      "label": "Context Aware Response"
+    },
+    {
+      "slug": "procedural-audio-generator",
+      "label": "Procedural Audio Generator"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:c52ce19217be2cb5780b86c85a2236d99aa5030c77d4ec30137fc8807b4255fb",
+  "title": "Model Evaluation Results",
+  "slug": "model-evaluation-results",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-evaluation-results",
+  "domain": "artificial-intelligence",
+  "definition": "A model evaluation results component in the Artificial Intelligence domain that required by AiModelCard.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "model-architecture",
+      "label": "ModelArchitecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    }
+  ]
+}

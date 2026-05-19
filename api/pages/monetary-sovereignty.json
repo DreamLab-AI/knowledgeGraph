@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:659e3478d30efcf9663bec53844964d6a917f550b4cae67a3fd965d5e01cd684",
+  "title": "Monetary Sovereignty",
+  "slug": "monetary-sovereignty",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:monetary-sovereignty",
+  "domain": "spatial-computing",
+  "definition": "A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:economic-governance",
+      "label": "Economic Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:national-financial-control",
+        "label": "National Financial Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "national-financial-control",
+      "label": "National Financial Control"
+    },
+    {
+      "slug": "economic-governance",
+      "label": "Economic Governance"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    }
+  ]
+}

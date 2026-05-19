@@ -1,0 +1,732 @@
+{
+  "id": "urn:visionflow:page:e8317bd13a40c1982541a7e60c5a8a9262cab5e288c5ceca4781edf66ae17969",
+  "title": "Computer Use and Browser Agents",
+  "slug": "computer-use-and-browser-agents",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computer-use-and-browser-agents",
+  "domain": "artificial-intelligence",
+  "definition": "**Computer Use and Browser Agents** are a class of agentic AI systems that operate graphical user interfaces, web browsers, and operating systems by perceiving the screen through vision-language models (VLMs), planning actions in natural language, and emitting low-level input events (mouse coordinates, keystrokes, scrolls, clicks, drags, OS shortcuts) through a controlled execution layer (Playwright / Selenium / Puppeteer / Chrome DevTools Protocol / xdotool / PyAutoGUI / OS-native automation APIs), thereby driving software designed for humans rather than relying on programmatic APIs, and distinguished both from earlier passive browser plugins and rule-based Robotic Process Automation (RPA, UiPath / Automation Anywhere / Blue Prism) by their capacity to handle previously-unseen interfaces through visual generalisation rather than recorded scripts, originating with Adept's **ACT-1** (Action Transformer, September 2022, the first commercial agent trained end-to-end to map natural-language instructions to UI actions in a Chrome extension demo-environment), elaborated through a 2023-2024 academic generation of multimodal web agents (Microsoft Research's **WebArena**-targeting agents an",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "id": "urn:visionflow:linked:cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "id": "urn:visionflow:linked:intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "id": "urn:visionflow:owl:class:agents",
+      "label": "Agents"
+    },
+    {
+      "id": "urn:visionflow:owl:class:multimodal-ai",
+      "label": "Multimodal AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accessibility-tree",
+        "label": "Accessibility Tree"
+      },
+      {
+        "id": "urn:visionflow:linked:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "id": "urn:visionflow:linked:planning-module",
+        "label": "Planning Module"
+      },
+      {
+        "id": "urn:visionflow:linked:reasoning-trace",
+        "label": "Reasoning Trace"
+      },
+      {
+        "id": "urn:visionflow:linked:reflection-loop",
+        "label": "Reflection Loop"
+      },
+      {
+        "id": "urn:visionflow:linked:screen-capture",
+        "label": "Screen Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:set-of-mark-prompting",
+        "label": "Set of Mark Prompting"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-machine-sandbox",
+        "label": "Virtual Machine Sandbox"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-language-model",
+        "label": "Vision Language Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:browser-engine",
+        "label": "Browser Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:display-server",
+        "label": "Display Server"
+      },
+      {
+        "id": "urn:visionflow:linked:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:visionflow:linked:inference-compute",
+        "label": "Inference Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:visionflow:owl:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "id": "urn:visionflow:linked:end-to-end-ui-testing",
+        "label": "End-to-End UI Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:form-filling-automation",
+        "label": "Form Filling Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-web-research",
+        "label": "Visual Web Research"
+      },
+      {
+        "id": "urn:visionflow:linked:web-navigation",
+        "label": "Web Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:visionflow:linked:plan-and-execute",
+        "label": "Plan-and-Execute"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:visionflow:linked:reflexion",
+        "label": "Reflexion"
+      },
+      {
+        "id": "urn:visionflow:linked:screen2-tree-parsing",
+        "label": "Screen2Tree Parsing"
+      },
+      {
+        "id": "urn:visionflow:linked:set-of-mark-prompting",
+        "label": "Set of Mark Prompting"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-grounding",
+        "label": "Visual Grounding"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "adept-act-1-sep-2022",
+      "label": "Adept ACT-1 Sep 2022"
+    },
+    {
+      "slug": "agent2-agent-protocol",
+      "label": "Agent2Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "anthropic-claude-computer-use-oct-2024",
+      "label": "Anthropic Claude Computer Use Oct 2024"
+    },
+    {
+      "slug": "anthropic-model-context-protocol-nov-2024",
+      "label": "Anthropic Model Context Protocol Nov 2024"
+    },
+    {
+      "slug": "api-only-agent",
+      "label": "API-Only Agent"
+    },
+    {
+      "slug": "apollo-research-2024-scheming-ais",
+      "label": "Apollo Research 2024 Scheming AIs"
+    },
+    {
+      "slug": "autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "AutonomousSystemsDomain"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "bonatti-et-al-2024-windows-agent-arena",
+      "label": "Bonatti et al 2024 Windows Agent Arena"
+    },
+    {
+      "slug": "brave-leo",
+      "label": "Brave Leo"
+    },
+    {
+      "slug": "browser-automation",
+      "label": "Browser Automation"
+    },
+    {
+      "slug": "browser-engine",
+      "label": "Browser Engine"
+    },
+    {
+      "slug": "browser-plugin",
+      "label": "Browser Plugin"
+    },
+    {
+      "slug": "browser-use-library-2024",
+      "label": "Browser-Use Library 2024"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "cheng-et-al-2024-see-click",
+      "label": "Cheng et al 2024 SeeClick"
+    },
+    {
+      "slug": "chrome-dev-tools-protocol",
+      "label": "Chrome DevTools Protocol"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "comet-perplexity-browser-jan-2025",
+      "label": "Comet Perplexity Browser Jan 2025"
+    },
+    {
+      "slug": "computer-use",
+      "label": "Computer Use"
+    },
+    {
+      "slug": "cua-computer-use-framework",
+      "label": "Cua Computer-Use Framework"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "slug": "deep-research",
+      "label": "Deep Research"
+    },
+    {
+      "slug": "deng-et-al-2023-mind2-web",
+      "label": "Deng et al 2023 Mind2Web"
+    },
+    {
+      "slug": "dia-by-the-browser-company",
+      "label": "Dia by The Browser Company"
+    },
+    {
+      "slug": "digital-assistant-siri-alexa",
+      "label": "Digital Assistant (Siri/Alexa)"
+    },
+    {
+      "slug": "display-server",
+      "label": "Display Server"
+    },
+    {
+      "slug": "drouin-et-al-2024-work-arena",
+      "label": "Drouin et al 2024 WorkArena"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "end-to-end-ui-testing",
+      "label": "End-to-End UI Testing"
+    },
+    {
+      "slug": "enterprise-workflow",
+      "label": "Enterprise Workflow"
+    },
+    {
+      "slug": "eu-ai-act-article-50",
+      "label": "EU AI Act Article 50"
+    },
+    {
+      "slug": "eu-ai-act-article-50-2024",
+      "label": "EU AI Act Article 50 (2024)"
+    },
+    {
+      "slug": "form-filling-automation",
+      "label": "Form Filling Automation"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "function-schemas",
+      "label": "Function Schemas"
+    },
+    {
+      "slug": "google-adk-and-a2-a-apr-2025",
+      "label": "Google ADK and A2A Apr 2025"
+    },
+    {
+      "slug": "google-project-mariner-dec-2024",
+      "label": "Google Project Mariner Dec 2024"
+    },
+    {
+      "slug": "greshake-et-al-2023-indirect-prompt-injection",
+      "label": "Greshake et al 2023 Indirect Prompt Injection"
+    },
+    {
+      "slug": "he-et-al-2024-web-voyager",
+      "label": "He et al 2024 WebVoyager"
+    },
+    {
+      "slug": "hong-et-al-2024-cog-agent",
+      "label": "Hong et al 2024 CogAgent"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "inference-compute",
+      "label": "Inference Compute"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "slug": "koh-et-al-2024-visual-web-arena",
+      "label": "Koh et al 2024 VisualWebArena"
+    },
+    {
+      "slug": "liu-et-al-2023-agent-bench",
+      "label": "Liu et al 2023 AgentBench"
+    },
+    {
+      "slug": "manus-ai-mar-2025",
+      "label": "Manus AI Mar 2025"
+    },
+    {
+      "slug": "microsoft-auto-gen-v0-4-oct-2024",
+      "label": "Microsoft AutoGen v0.4 Oct 2024"
+    },
+    {
+      "slug": "microsoft-magentic-one-nov-2024",
+      "label": "Microsoft Magentic-One Nov 2024"
+    },
+    {
+      "slug": "model-context-protocol-anthropic-2024",
+      "label": "Model Context Protocol (Anthropic 2024)"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "multimodal-foundation-model",
+      "label": "Multimodal Foundation Model"
+    },
+    {
+      "slug": "ocr",
+      "label": "OCR"
+    },
+    {
+      "slug": "open-ai-agents-sdk-mar-2025",
+      "label": "OpenAI Agents SDK Mar 2025"
+    },
+    {
+      "slug": "open-ai-operator-jan-2025",
+      "label": "OpenAI Operator Jan 2025"
+    },
+    {
+      "slug": "open-cv",
+      "label": "OpenCV"
+    },
+    {
+      "slug": "open-interpreter-01",
+      "label": "Open Interpreter 01"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "owasp-llm-top-10-2025",
+      "label": "OWASP LLM Top 10 (2025)"
+    },
+    {
+      "slug": "owasp-llm-top-10-2025",
+      "label": "OWASP LLM Top 10 2025"
+    },
+    {
+      "slug": "perception-action-layer",
+      "label": "PerceptionActionLayer"
+    },
+    {
+      "slug": "personal-assistance",
+      "label": "Personal Assistance"
+    },
+    {
+      "slug": "plan-and-execute",
+      "label": "Plan-and-Execute"
+    },
+    {
+      "slug": "planning-module",
+      "label": "Planning Module"
+    },
+    {
+      "slug": "playwright",
+      "label": "Playwright"
+    },
+    {
+      "slug": "playwright-microsoft",
+      "label": "Playwright Microsoft"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "quality-assurance-testing",
+      "label": "Quality Assurance Testing"
+    },
+    {
+      "slug": "rawles-et-al-2023-android-in-the-wild",
+      "label": "Rawles et al 2023 Android In The Wild"
+    },
+    {
+      "slug": "re-act",
+      "label": "ReAct"
+    },
+    {
+      "slug": "reasoning-trace",
+      "label": "Reasoning Trace"
+    },
+    {
+      "slug": "reflection-loop",
+      "label": "Reflection Loop"
+    },
+    {
+      "slug": "reflexion",
+      "label": "Reflexion"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "russell-and-norvig-aima-1995-2020",
+      "label": "Russell & Norvig AIMA 1995/2020"
+    },
+    {
+      "slug": "schick-et-al-2023-toolformer",
+      "label": "Schick et al 2023 Toolformer"
+    },
+    {
+      "slug": "screen-capture",
+      "label": "Screen Capture"
+    },
+    {
+      "slug": "screen2-tree-parsing",
+      "label": "Screen2Tree Parsing"
+    },
+    {
+      "slug": "screenshot",
+      "label": "Screenshot"
+    },
+    {
+      "slug": "selenium",
+      "label": "Selenium"
+    },
+    {
+      "slug": "set-of-mark-prompting",
+      "label": "Set of Mark Prompting"
+    },
+    {
+      "slug": "shaw-et-al-2023-pix2-act",
+      "label": "Shaw et al 2023 Pix2Act"
+    },
+    {
+      "slug": "shinn-et-al-2023-reflexion",
+      "label": "Shinn et al 2023 Reflexion"
+    },
+    {
+      "slug": "skyvern-yc-w24",
+      "label": "Skyvern YC W24"
+    },
+    {
+      "slug": "software-development-automation",
+      "label": "Software Development Automation"
+    },
+    {
+      "slug": "stagehand-browserbase-2024",
+      "label": "Stagehand Browserbase 2024"
+    },
+    {
+      "slug": "static-inference-pipeline",
+      "label": "Static Inference Pipeline"
+    },
+    {
+      "slug": "tool-augmented-llm",
+      "label": "Tool-Augmented LLM"
+    },
+    {
+      "slug": "tool-definition",
+      "label": "Tool Definition"
+    },
+    {
+      "slug": "tool-schema",
+      "label": "Tool Schema"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan-jan-2025",
+      "label": "UK AI Opportunities Action Plan Jan 2025"
+    },
+    {
+      "slug": "uk-ai-security-institute-inspect-framework",
+      "label": "UK AI Security Institute Inspect Framework"
+    },
+    {
+      "slug": "virtual-machine-sandbox",
+      "label": "Virtual Machine Sandbox"
+    },
+    {
+      "slug": "vision-language-model",
+      "label": "Vision Language Model"
+    },
+    {
+      "slug": "visual-grounding",
+      "label": "Visual Grounding"
+    },
+    {
+      "slug": "visual-web-research",
+      "label": "Visual Web Research"
+    },
+    {
+      "slug": "w3-c-cognitive-ai-community-group",
+      "label": "W3C Cognitive AI Community Group"
+    },
+    {
+      "slug": "web-driver-bi-di",
+      "label": "WebDriver BiDi"
+    },
+    {
+      "slug": "web-driver-bi-di-w3-c-2024",
+      "label": "WebDriver BiDi (W3C 2024)"
+    },
+    {
+      "slug": "web-driver-bi-di-w3-c-2024",
+      "label": "WebDriver BiDi W3C 2024"
+    },
+    {
+      "slug": "web-navigation",
+      "label": "Web Navigation"
+    },
+    {
+      "slug": "web-scraping",
+      "label": "Web Scraping"
+    },
+    {
+      "slug": "wooldridge-2002-introduction-to-multi-agent-systems",
+      "label": "Wooldridge 2002 Introduction to MultiAgent Systems"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "xie-et-al-2024-osworld",
+      "label": "Xie et al 2024 OSWorld"
+    },
+    {
+      "slug": "yang-et-al-2023-set-of-mark-prompting",
+      "label": "Yang et al 2023 Set-of-Mark Prompting"
+    },
+    {
+      "slug": "yao-et-al-2022-web-shop",
+      "label": "Yao et al 2022 WebShop"
+    },
+    {
+      "slug": "yao-et-al-2023-re-act",
+      "label": "Yao et al 2023 ReAct"
+    },
+    {
+      "slug": "you-et-al-2024-ferret-ui",
+      "label": "You et al 2024 Ferret-UI"
+    },
+    {
+      "slug": "zheng-et-al-2024-see-act",
+      "label": "Zheng et al 2024 SeeAct"
+    },
+    {
+      "slug": "zhou-et-al-2023-web-arena",
+      "label": "Zhou et al 2023 WebArena"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    }
+  ]
+}

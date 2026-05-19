@@ -1,0 +1,436 @@
+{
+  "id": "urn:visionflow:page:dd443208770d5e1a3fd308ca9acd5b0c342c3cacca38f85532eb682c882fa57c",
+  "title": "Reputation System",
+  "slug": "reputation-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reputation-system",
+  "domain": "blockchain",
+  "definition": "A [[Reputation System]] is a decentralised computational infrastructure for aggregating verifiable behavioural signals about network participants into quantified trust scores that enable social coordination in trustless [[Blockchain]] environments, spanning algorithmic trust propagation architectures (EigenTrust iterative convergence on peer-to-peer trust graphs, PageRank-style trust diffusion across weighted directed graphs, Bayesian reputation aggregation modelling prior beliefs updated by observed interactions), on-chain attestation frameworks ([[Ethereum Attestation Service]] EAS enabling arbitrary claim schemas referenced by UID, Verax shared attestation registry on Optimism/Linea/Polygon, Sign Protocol omnichain attestation), [[Sybil Resistance]] mechanisms (proof-of-humanity biometric verification, [[Gitcoin Passport]] composite stamp scoring aggregating 30+ credential types across OAuth/ENS/POAP sources, [[Worldcoin]] World ID iris biometric ZK-proof uniqueness, [[Gitcoin]] quadratic funding Sybil mitigation), Web3-native credential aggregation protocols ([[Karma3 Labs]] OpenRank EigenTrust-based social graph ranking for Farcaster/Lens 2023-2026, [[ENS]] reverse resolution ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "id": "urn:visionflow:linked:feedback-system",
+      "label": "Feedback System"
+    },
+    {
+      "id": "urn:visionflow:linked:social-coordination",
+      "label": "Social Coordination"
+    },
+    {
+      "id": "urn:visionflow:linked:trust-networks",
+      "label": "Trust Networks"
+    },
+    {
+      "id": "urn:visionflow:owl:class:identity-systems",
+      "label": "Identity Systems"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:aggregation-algorithm",
+        "label": "Aggregation Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:attestation-service",
+        "label": "Attestation Service"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-registry",
+        "label": "Credential Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:score-oracle",
+        "label": "Score Oracle"
+      },
+      {
+        "id": "urn:visionflow:linked:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-graph",
+        "label": "Trust Graph"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:attestation-schema",
+        "label": "Attestation Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-identity",
+        "label": "On-Chain Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-history",
+        "label": "Transaction History"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:peer-selection",
+        "label": "Peer Selection"
+      },
+      {
+        "id": "urn:visionflow:linked:permissionless-trust",
+        "label": "Permissionless Trust"
+      },
+      {
+        "id": "urn:visionflow:linked:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:reputation-gated-access",
+        "label": "Reputation-Gated Access"
+      },
+      {
+        "id": "urn:visionflow:linked:social-graph-analysis",
+        "label": "Social Graph Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:eigen-trust-algorithm",
+        "label": "EigenTrust Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:page-rank-trust-diffusion",
+        "label": "PageRank Trust Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aggregation-algorithm",
+      "label": "Aggregation Algorithm"
+    },
+    {
+      "slug": "attestation-schema",
+      "label": "Attestation Schema"
+    },
+    {
+      "slug": "attestation-service",
+      "label": "Attestation Service"
+    },
+    {
+      "slug": "centralised-rating-systems",
+      "label": "Centralised Rating Systems"
+    },
+    {
+      "slug": "credential-registry",
+      "label": "Credential Registry"
+    },
+    {
+      "slug": "credit-scoring",
+      "label": "Credit Scoring"
+    },
+    {
+      "slug": "cryptographic-proof",
+      "label": "Cryptographic Proof"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "decentralised-identifiers",
+      "label": "Decentralised Identifiers"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "eigen-trust-algorithm",
+      "label": "EigenTrust Algorithm"
+    },
+    {
+      "slug": "eip-4804",
+      "label": "EIP-4804"
+    },
+    {
+      "slug": "ens",
+      "label": "ENS"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "ethereum-attestation-service",
+      "label": "Ethereum Attestation Service"
+    },
+    {
+      "slug": "farcaster",
+      "label": "Farcaster"
+    },
+    {
+      "slug": "feedback-system",
+      "label": "Feedback System"
+    },
+    {
+      "slug": "gitcoin",
+      "label": "Gitcoin"
+    },
+    {
+      "slug": "gitcoin-passport",
+      "label": "Gitcoin Passport"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "GovernanceDomain"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "IdentityDomain"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "karma3-labs",
+      "label": "Karma3 Labs"
+    },
+    {
+      "slug": "kyc-compliance",
+      "label": "KYC Compliance"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "lens-protocol",
+      "label": "Lens Protocol"
+    },
+    {
+      "slug": "on-chain-identity",
+      "label": "On-Chain Identity"
+    },
+    {
+      "slug": "page-rank-trust-diffusion",
+      "label": "PageRank Trust Diffusion"
+    },
+    {
+      "slug": "peer-selection",
+      "label": "Peer Selection"
+    },
+    {
+      "slug": "permissionless-trust",
+      "label": "Permissionless Trust"
+    },
+    {
+      "slug": "platform-reputation",
+      "label": "Platform Reputation"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "reputation-gated-access",
+      "label": "Reputation-Gated Access"
+    },
+    {
+      "slug": "score-oracle",
+      "label": "Score Oracle"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "Selective Disclosure"
+    },
+    {
+      "slug": "social-coordination",
+      "label": "Social Coordination"
+    },
+    {
+      "slug": "social-coordination-domain",
+      "label": "SocialCoordinationDomain"
+    },
+    {
+      "slug": "social-graph-analysis",
+      "label": "Social Graph Analysis"
+    },
+    {
+      "slug": "social-layer",
+      "label": "SocialLayer"
+    },
+    {
+      "slug": "soulbound-tokens",
+      "label": "Soulbound Tokens"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "transaction-history",
+      "label": "Transaction History"
+    },
+    {
+      "slug": "trust-anchor",
+      "label": "Trust Anchor"
+    },
+    {
+      "slug": "trust-graph",
+      "label": "Trust Graph"
+    },
+    {
+      "slug": "trust-networks",
+      "label": "Trust Networks"
+    },
+    {
+      "slug": "w3-c-did-working-group",
+      "label": "W3C DID Working Group"
+    },
+    {
+      "slug": "w3-c-vc-working-group",
+      "label": "W3C VC Working Group"
+    },
+    {
+      "slug": "web3-social",
+      "label": "Web3 Social"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "identity-systems",
+      "label": "Identity Systems"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "social-token-economy",
+      "label": "Social Token Economy"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

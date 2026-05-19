@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:944ee1ed0248e99352025b624634ec01852548554a804016b225b231188f3c43",
+  "title": "Linear Encoder",
+  "slug": "linear-encoder",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:linear-encoder",
+  "domain": "robotics",
+  "definition": "Linear encoder measures linear displacement.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:encoder",
+      "label": "Encoder"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

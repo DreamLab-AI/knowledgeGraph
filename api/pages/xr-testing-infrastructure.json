@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:7ed3bee47af05bac3ab36517c3f1b91844e448762dab2742ea35769b2ba7a67e",
+  "title": "XR Testing Infrastructure",
+  "slug": "xr-testing-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-testing-infrastructure",
+  "domain": "infrastructure",
+  "definition": "The hardware, software, and methodological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:testing-infrastructure",
+      "label": "Testing Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "testing-infrastructure",
+      "label": "Testing Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    }
+  ]
+}

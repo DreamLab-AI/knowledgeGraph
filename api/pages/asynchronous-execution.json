@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702",
+  "title": "Asynchronous Execution",
+  "slug": "asynchronous-execution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:asynchronous-execution",
+  "domain": "artificial-intelligence",
+  "definition": "Asynchronous Execution is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:execution-model",
+      "label": "Execution Model"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "execution-model",
+      "label": "Execution Model"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "synchronous-execution",
+      "label": "Synchronous Execution"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "id": "urn:visionflow:page:1eb4a99a80ff425f8769ade5493c234788cecb0c4409177116de1aeaf13a9462",
+  "title": "Robot Control",
+  "slug": "robot-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robot-control",
+  "domain": "robotics",
+  "definition": "Robot Control - The systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics-application",
+      "label": "Robotics Application"
+    }
+  ],
+  "qualityScore": 0.92,
+  "authorityScore": 0.0,
+  "maturity": "production",
+  "status": "corrected",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuation",
+      "label": "actuation"
+    },
+    {
+      "slug": "actuation-systems",
+      "label": "Actuation Systems"
+    },
+    {
+      "slug": "adaptive-control-algorithms",
+      "label": "Adaptive Control Algorithms"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "behavior-trees",
+      "label": "behavior trees"
+    },
+    {
+      "slug": "control-algorithms",
+      "label": "control algorithms"
+    },
+    {
+      "slug": "control-algorithms",
+      "label": "Control Algorithms"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "iec-61508",
+      "label": "IEC 61508"
+    },
+    {
+      "slug": "ieee-1872",
+      "label": "IEEE 1872"
+    },
+    {
+      "slug": "iso-10218",
+      "label": "ISO 10218"
+    },
+    {
+      "slug": "iso-13849",
+      "label": "ISO 13849"
+    },
+    {
+      "slug": "iso-8373",
+      "label": "ISO 8373"
+    },
+    {
+      "slug": "machine-vision",
+      "label": "Machine Vision"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "model predictive control"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "multi-agent-robotics",
+      "label": "Multi-Agent Robotics"
+    },
+    {
+      "slug": "neural-control",
+      "label": "neural control"
+    },
+    {
+      "slug": "neural-control-methods",
+      "label": "Neural Control Methods"
+    },
+    {
+      "slug": "neural-jacobian-fields",
+      "label": "Neural Jacobian Fields"
+    },
+    {
+      "slug": "path-optimization",
+      "label": "path optimization"
+    },
+    {
+      "slug": "perception-systems",
+      "label": "Perception Systems"
+    },
+    {
+      "slug": "pid-control",
+      "label": "PID control"
+    },
+    {
+      "slug": "pneumatic-actuators",
+      "label": "pneumatic actuators"
+    },
+    {
+      "slug": "proprioception",
+      "label": "proprioception"
+    },
+    {
+      "slug": "robotic-systems",
+      "label": "robotic systems"
+    },
+    {
+      "slug": "ros-2",
+      "label": "ROS 2"
+    },
+    {
+      "slug": "servo-motors",
+      "label": "servo motors"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "tactile-sensing",
+      "label": "tactile sensing"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "vision-based-control",
+      "label": "Vision-based control"
+    },
+    {
+      "slug": "vision-based-control-systems",
+      "label": "Vision-Based Control Systems"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "adaptive control"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "collision avoidance"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-twin-technology",
+      "label": "Digital Twin Technology"
+    },
+    {
+      "slug": "lidar",
+      "label": "LIDAR"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "motion planning"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "optimal control"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "reinforcement learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "robust-control",
+      "label": "Robust Control"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "sensor fusion"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "soft robotics"
+    },
+    {
+      "slug": "trajectory-generation",
+      "label": "trajectory generation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ]
+}

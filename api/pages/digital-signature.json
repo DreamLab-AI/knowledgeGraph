@@ -1,0 +1,944 @@
+{
+  "id": "urn:visionflow:page:d006dd86b8222ab315a6d31c1a3de89330671b1338ad77dd222de92a2cf2e507",
+  "title": "Digital Signature",
+  "slug": "digital-signature",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-signature",
+  "domain": "blockchain",
+  "definition": "A [[Digital Signature]] is a cryptographic primitive consisting of three probabilistic polynomial-time algorithms (KeyGen, Sign, Verify) operating over an asymmetric keypair (sk, pk) such that, for any message m drawn from the message space M, Sign(sk, m) produces a signature \u03c3 that Verify(pk, m, \u03c3) accepts with overwhelming probability while no efficient adversary lacking sk can produce a forgery (m*, \u03c3*) satisfying Verify(pk, m*, \u03c3*) = 1 except with negligible probability under the standard security notion of existential unforgeability under adaptive chosen-message attack (EUF-CMA, Goldwasser, Micali & Rivest 1988), providing the three foundational guarantees of authentication (only the holder of sk could have produced \u03c3), integrity (any modification to m invalidates Verify), and [[Non-Repudiation]] (sk-holders cannot plausibly deny having signed) \u2014 distinct from [[Message Authentication Code]]s which use symmetric keys and provide no non-repudiation, from [[Hash Function]]s alone which lack origin authentication, and from physical signatures which lack mathematical binding to content \u2014 instantiated across a deep algorithmic family beginning with the [[Diffie-Hellman Key Exchange",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:asymmetric-cryptography",
+      "label": "Asymmetric Cryptography"
+    },
+    {
+      "id": "urn:visionflow:linked:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:public-key-cryptosystem",
+      "label": "Public-Key Cryptosystem"
+    },
+    {
+      "id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:key-generation-algorithm",
+        "label": "Key Generation Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:random-nonce",
+        "label": "Random Nonce"
+      },
+      {
+        "id": "urn:visionflow:linked:signature-value",
+        "label": "Signature Value"
+      },
+      {
+        "id": "urn:visionflow:linked:signing-algorithm",
+        "label": "Signing Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:verification-algorithm",
+        "label": "Verification Algorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographically-secure-random-number-generator",
+        "label": "Cryptographically Secure Random Number Generator"
+      },
+      {
+        "id": "urn:visionflow:linked:trusted-key-distribution",
+        "label": "Trusted Key Distribution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:visionflow:linked:document-signing",
+        "label": "Document Signing"
+      },
+      {
+        "id": "urn:visionflow:linked:software-supply-chain-integrity",
+        "label": "Software Supply Chain Integrity"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-authorisation",
+        "label": "Transaction Authorisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "id": "urn:visionflow:linked:euf-cma-security",
+        "label": "EUF-CMA Security"
+      },
+      {
+        "id": "urn:visionflow:linked:existential-unforgeability",
+        "label": "Existential Unforgeability"
+      },
+      {
+        "id": "urn:visionflow:linked:fiat-shamir-heuristic",
+        "label": "Fiat-Shamir Heuristic"
+      },
+      {
+        "id": "urn:visionflow:linked:integer-factorisation-problem",
+        "label": "Integer Factorisation Problem"
+      },
+      {
+        "id": "urn:visionflow:linked:lattice-trapdoor",
+        "label": "Lattice Trapdoor"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acme",
+      "label": "ACME"
+    },
+    {
+      "slug": "adobe-sign",
+      "label": "Adobe Sign"
+    },
+    {
+      "slug": "anderson-2020-security-engineering-3rd-edition",
+      "label": "Anderson 2020 Security Engineering 3rd Edition"
+    },
+    {
+      "slug": "ansi-x9",
+      "label": "ANSI X9"
+    },
+    {
+      "slug": "ansi-x9-62-ecdsa",
+      "label": "ANSI X9.62 ECDSA"
+    },
+    {
+      "slug": "asymmetric-cryptography",
+      "label": "Asymmetric Cryptography"
+    },
+    {
+      "slug": "authentication-mechanism",
+      "label": "Authentication Mechanism"
+    },
+    {
+      "slug": "base58-encoding",
+      "label": "Base58 Encoding"
+    },
+    {
+      "slug": "bernstein-2006-curve25519",
+      "label": "Bernstein 2006 Curve25519"
+    },
+    {
+      "slug": "bernstein-duif-lange-schwabe-yang-2012-ed25519",
+      "label": "Bernstein Duif Lange Schwabe Yang 2012 Ed25519"
+    },
+    {
+      "slug": "bip-340",
+      "label": "BIP-340"
+    },
+    {
+      "slug": "bip-340-schnorr-signatures-secp256k1",
+      "label": "BIP-340 Schnorr Signatures secp256k1"
+    },
+    {
+      "slug": "bip-341",
+      "label": "BIP-341"
+    },
+    {
+      "slug": "bip-342",
+      "label": "BIP-342"
+    },
+    {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
+    },
+    {
+      "slug": "blake3",
+      "label": "BLAKE3"
+    },
+    {
+      "slug": "bls-signature",
+      "label": "BLS Signature"
+    },
+    {
+      "slug": "boneh-lynn-shacham-2001-short-signatures-from-weil-pairing",
+      "label": "Boneh Lynn Shacham 2001 Short Signatures from Weil Pairing"
+    },
+    {
+      "slug": "cad-es",
+      "label": "CAdES"
+    },
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "certificate-transparency",
+      "label": "Certificate Transparency"
+    },
+    {
+      "slug": "code-signing",
+      "label": "Code Signing"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "computational-hardness-assumption",
+      "label": "Computational Hardness Assumption"
+    },
+    {
+      "slug": "cryptographic-layer",
+      "label": "CryptographicLayer"
+    },
+    {
+      "slug": "cryptographically-secure-random-number-generator",
+      "label": "Cryptographically Secure Random Number Generator"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "curve25519",
+      "label": "Curve25519"
+    },
+    {
+      "slug": "der-encoding",
+      "label": "DER Encoding"
+    },
+    {
+      "slug": "diffie-and-hellman-1976-new-directions-in-cryptography",
+      "label": "Diffie & Hellman 1976 New Directions in Cryptography"
+    },
+    {
+      "slug": "diffie-hellman-key-exchange",
+      "label": "Diffie-Hellman Key Exchange"
+    },
+    {
+      "slug": "discrete-logarithm-problem",
+      "label": "Discrete Logarithm Problem"
+    },
+    {
+      "slug": "docu-sign",
+      "label": "DocuSign"
+    },
+    {
+      "slug": "document-signing",
+      "label": "Document Signing"
+    },
+    {
+      "slug": "e-idas-2-0",
+      "label": "eIDAS 2.0"
+    },
+    {
+      "slug": "e-idas-qes",
+      "label": "eIDAS QES"
+    },
+    {
+      "slug": "ed-dsa",
+      "label": "EdDSA"
+    },
+    {
+      "slug": "ed25519",
+      "label": "Ed25519"
+    },
+    {
+      "slug": "el-gamal-1985-signature-scheme",
+      "label": "ElGamal 1985 Signature Scheme"
+    },
+    {
+      "slug": "el-gamal-signature",
+      "label": "ElGamal Signature"
+    },
+    {
+      "slug": "elliptic-curve-theory",
+      "label": "Elliptic Curve Theory"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "eu-regulation-2024-1183-e-idas-2-0",
+      "label": "EU Regulation 2024/1183 eIDAS 2.0"
+    },
+    {
+      "slug": "euf-cma-security",
+      "label": "EUF-CMA Security"
+    },
+    {
+      "slug": "existential-unforgeability",
+      "label": "Existential Unforgeability"
+    },
+    {
+      "slug": "fiat-and-shamir-1986-how-to-prove-yourself",
+      "label": "Fiat & Shamir 1986 How To Prove Yourself"
+    },
+    {
+      "slug": "fiat-shamir-heuristic",
+      "label": "Fiat-Shamir Heuristic"
+    },
+    {
+      "slug": "fips-186-5",
+      "label": "FIPS 186-5"
+    },
+    {
+      "slug": "fips-204",
+      "label": "FIPS 204"
+    },
+    {
+      "slug": "fips-205",
+      "label": "FIPS 205"
+    },
+    {
+      "slug": "fips-206",
+      "label": "FIPS 206"
+    },
+    {
+      "slug": "fn-dsa",
+      "label": "FN-DSA"
+    },
+    {
+      "slug": "goldwasser-micali-rivest-1988-euf-cma",
+      "label": "Goldwasser Micali Rivest 1988 EUF-CMA"
+    },
+    {
+      "slug": "hash-based-commitment",
+      "label": "Hash-Based Commitment"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "in-toto",
+      "label": "in-toto"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "InformationSecurityDomain"
+    },
+    {
+      "slug": "integer-factorisation-problem",
+      "label": "Integer Factorisation Problem"
+    },
+    {
+      "slug": "iso-iec",
+      "label": "ISO/IEC"
+    },
+    {
+      "slug": "itu-t",
+      "label": "ITU-T"
+    },
+    {
+      "slug": "katz-and-lindell-2020-introduction-to-modern-cryptography",
+      "label": "Katz & Lindell 2020 Introduction to Modern Cryptography"
+    },
+    {
+      "slug": "key-generation-algorithm",
+      "label": "Key Generation Algorithm"
+    },
+    {
+      "slug": "koblitz-1987-elliptic-curve-cryptosystems",
+      "label": "Koblitz 1987 Elliptic Curve Cryptosystems"
+    },
+    {
+      "slug": "komlo-and-goldberg-2020-frost",
+      "label": "Komlo & Goldberg 2020 FROST"
+    },
+    {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
+      "slug": "lattice-trapdoor",
+      "label": "Lattice Trapdoor"
+    },
+    {
+      "slug": "let-s-encrypt",
+      "label": "Let's Encrypt"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "lms",
+      "label": "LMS"
+    },
+    {
+      "slug": "lyubashevsky-2012-lattice-signatures-without-trapdoors",
+      "label": "Lyubashevsky 2012 Lattice Signatures Without Trapdoors"
+    },
+    {
+      "slug": "message-authentication-code",
+      "label": "Message Authentication Code"
+    },
+    {
+      "slug": "miller-1985-use-of-elliptic-curves-in-cryptography",
+      "label": "Miller 1985 Use of Elliptic Curves in Cryptography"
+    },
+    {
+      "slug": "ml-dsa",
+      "label": "ML-DSA"
+    },
+    {
+      "slug": "multi-signature",
+      "label": "Multi-Signature"
+    },
+    {
+      "slug": "ncsc",
+      "label": "NCSC"
+    },
+    {
+      "slug": "nick-ruffing-seurin-2021-mu-sig2",
+      "label": "Nick Ruffing Seurin 2021 MuSig2"
+    },
+    {
+      "slug": "nip-01",
+      "label": "NIP-01"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "nist-fips-186",
+      "label": "NIST FIPS 186"
+    },
+    {
+      "slug": "nist-fips-204",
+      "label": "NIST FIPS 204"
+    },
+    {
+      "slug": "nist-fips-204-ml-dsa-dilithium",
+      "label": "NIST FIPS 204 ML-DSA Dilithium"
+    },
+    {
+      "slug": "nist-fips-205",
+      "label": "NIST FIPS 205"
+    },
+    {
+      "slug": "nist-fips-205-slh-dsa-sphincs",
+      "label": "NIST FIPS 205 SLH-DSA SPHINCS+"
+    },
+    {
+      "slug": "nist-fips-206",
+      "label": "NIST FIPS 206"
+    },
+    {
+      "slug": "nist-fips-206-fn-dsa-falcon",
+      "label": "NIST FIPS 206 FN-DSA Falcon"
+    },
+    {
+      "slug": "nist-sp-800-208-stateful-hash-based-signatures",
+      "label": "NIST SP 800-208 Stateful Hash-Based Signatures"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "open-pgp",
+      "label": "OpenPGP"
+    },
+    {
+      "slug": "pad-es",
+      "label": "PAdES"
+    },
+    {
+      "slug": "pkcs-1",
+      "label": "PKCS#1"
+    },
+    {
+      "slug": "pornin-2013-rfc-6979-deterministic-ecdsa",
+      "label": "Pornin 2013 RFC 6979 Deterministic ECDSA"
+    },
+    {
+      "slug": "public-key-cryptosystem",
+      "label": "Public-Key Cryptosystem"
+    },
+    {
+      "slug": "random-nonce",
+      "label": "Random Nonce"
+    },
+    {
+      "slug": "random-oracle-model",
+      "label": "Random Oracle Model"
+    },
+    {
+      "slug": "rfc-5280",
+      "label": "RFC 5280"
+    },
+    {
+      "slug": "rfc-5280-x-509-certificate-profile",
+      "label": "RFC 5280 X.509 Certificate Profile"
+    },
+    {
+      "slug": "rfc-8017-pkcs-1-rsa",
+      "label": "RFC 8017 PKCS#1 RSA"
+    },
+    {
+      "slug": "rfc-8032",
+      "label": "RFC 8032"
+    },
+    {
+      "slug": "rfc-8032-ed-dsa",
+      "label": "RFC 8032 EdDSA"
+    },
+    {
+      "slug": "rfc-8391-xmss",
+      "label": "RFC 8391 XMSS"
+    },
+    {
+      "slug": "rfc-8554-lms-leighton-micali",
+      "label": "RFC 8554 LMS Leighton-Micali"
+    },
+    {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
+      "slug": "rivest-shamir-adleman-1978-rsa",
+      "label": "Rivest Shamir Adleman 1978 RSA"
+    },
+    {
+      "slug": "rsa",
+      "label": "RSA"
+    },
+    {
+      "slug": "schnorr-1989-efficient-identification",
+      "label": "Schnorr 1989 Efficient Identification"
+    },
+    {
+      "slug": "secp256k1",
+      "label": "secp256k1"
+    },
+    {
+      "slug": "sha-3",
+      "label": "SHA-3"
+    },
+    {
+      "slug": "shor-1997-polynomial-time-factorization-discrete-logarithms",
+      "label": "Shor 1997 Polynomial-time Factorization Discrete Logarithms"
+    },
+    {
+      "slug": "shor-s-algorithm",
+      "label": "Shor's Algorithm"
+    },
+    {
+      "slug": "signature-value",
+      "label": "Signature Value"
+    },
+    {
+      "slug": "signing-algorithm",
+      "label": "Signing Algorithm"
+    },
+    {
+      "slug": "sigstore",
+      "label": "Sigstore"
+    },
+    {
+      "slug": "slh-dsa",
+      "label": "SLH-DSA"
+    },
+    {
+      "slug": "slsa",
+      "label": "SLSA"
+    },
+    {
+      "slug": "smart-contract-authorisation",
+      "label": "Smart Contract Authorisation"
+    },
+    {
+      "slug": "software-supply-chain-integrity",
+      "label": "Software Supply Chain Integrity"
+    },
+    {
+      "slug": "symmetric-authenticator",
+      "label": "Symmetric Authenticator"
+    },
+    {
+      "slug": "threshold-signature",
+      "label": "Threshold Signature"
+    },
+    {
+      "slug": "tls",
+      "label": "TLS"
+    },
+    {
+      "slug": "transaction-authorisation",
+      "label": "Transaction Authorisation"
+    },
+    {
+      "slug": "trust-infrastructure-domain",
+      "label": "TrustInfrastructureDomain"
+    },
+    {
+      "slug": "trusted-key-distribution",
+      "label": "Trusted Key Distribution"
+    },
+    {
+      "slug": "verifiable-random-function",
+      "label": "Verifiable Random Function"
+    },
+    {
+      "slug": "verification-algorithm",
+      "label": "Verification Algorithm"
+    },
+    {
+      "slug": "web-authn",
+      "label": "WebAuthn"
+    },
+    {
+      "slug": "wet-signature",
+      "label": "Wet Signature"
+    },
+    {
+      "slug": "x-509",
+      "label": "X.509"
+    },
+    {
+      "slug": "xad-es",
+      "label": "XAdES"
+    },
+    {
+      "slug": "xmss",
+      "label": "XMSS"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-transaction",
+      "label": "Blockchain Transaction"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "public-key",
+      "label": "Public Key"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "asymmetric-encryption",
+      "label": "Asymmetric Encryption"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "cryptographic-keys",
+      "label": "Cryptographic Keys"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "verification",
+      "label": "VERIFICATION"
+    },
+    {
+      "slug": "verifiable-credential-vc",
+      "label": "Verifiable Credential (VC)"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    },
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

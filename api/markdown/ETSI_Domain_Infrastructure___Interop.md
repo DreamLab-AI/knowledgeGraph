@@ -1,21 +1,198 @@
-iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureInterop
-uri:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructureinterop
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructureinterop
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: ETSI_Domain_Infrastructure___Interop
-content-hash:: sha256-12-d7b86a24b0f9
-legacy-term-id:: MV-2009
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureInterop
+legacy_uri:: urn:visionclaw:concept:infrastructure:etsidomaininfrastructureinterop
 public:: true
+
+# ETSI_Domain_Infrastructure___Interop
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-infrastructure-interop",
+  "title": "ETSI_Domain_Infrastructure___Interop",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ngsi-ld",
+      "vc:label": "NGSI-LD"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-platform-agnostic",
+      "vc:label": "Hardware-/Platform-Agnostic"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d7b86a24b0f9"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ETSIDomainInfrastructureInterop"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2009"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Infrastructure___Interop"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsidomaininfrastructureinterop"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:etsidomaininfrastructureinterop"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure-interop",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Infrastructure___Interop",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL). Infrastructure interoperability addresses systematic integration challenges through [[NGSI-LD]] interfaces supporting cross-domain data integration, intent-based management systems integrating network capabilities with application functions, and spectrum sharing frameworks (evolved Licensed Shared Access, CBRS) enabling technical interoperability for local private networks. Standards including the European Interoperability Framework (EIF) and EU Data Act Article 35 mandate interoperable specifications whilst addressing accessibility through ETSI ES 204 009 specifying total conversation services combining voice, real-time text, and sign language video.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-interop:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[NGSI-LD]]",
+      "resolved": "urn:visionflow:linked:ngsi-ld",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hardware-/Platform-Agnostic]]",
+      "resolved": "urn:visionflow:owl:class:hardware-platform-agnostic",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL). Infrastructure interoperability addresses systematic integration challenges through [[NGSI-LD]] interfaces supporting cross-domain data integration, intent-based management systems integrating network capabilities with application functions, and spectrum sharing frameworks (evolved Licensed Shared Access, CBRS) enabling technical interoperability for local private networks. Standards including the European Interoperability Framework (EIF) and EU Data Act Article 35 mandate interoperable specifications whilst addressing accessibility through ETSI ES 204 009 specifying total conversation services combining voice, real-time text, and sign language video.

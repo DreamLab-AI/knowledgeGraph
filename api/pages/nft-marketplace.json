@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:02574053f23436eeab43ed7461cd8265b724bd99e55fe919a9651752e5ed6d91",
+  "title": "NFT Marketplace",
+  "slug": "nft-marketplace",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nft-marketplace",
+  "domain": "blockchain",
+  "definition": "Platform for trading NFTs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "nft-renting",
+      "label": "NFT Renting"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

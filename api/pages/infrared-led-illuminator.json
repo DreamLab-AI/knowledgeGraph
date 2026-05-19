@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:017c7f1c76ec1e3c3c686b0a14e5a39cb472f5cb0e118c5561b1b7954f95b79f",
+  "title": "Infrared Led Illuminator",
+  "slug": "infrared-led-illuminator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:infrared-led-illuminator",
+  "domain": "spatial-computing",
+  "definition": "LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrared-illuminator",
+      "label": "Infrared Illuminator"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:hand-tracking-enhancement",
+        "label": "Hand Tracking Enhancement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hand-tracking-enhancement",
+      "label": "Hand Tracking Enhancement"
+    },
+    {
+      "slug": "infrared-illuminator",
+      "label": "Infrared Illuminator"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

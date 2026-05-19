@@ -1,0 +1,499 @@
+{
+  "id": "urn:visionflow:page:84f034a55b86bd622c58144f5c3b58919f471042beb0129d90c38dd7b477251f",
+  "title": "Procedural and Hybrid 4D",
+  "slug": "procedural-and-hybrid-4-d",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:procedural-and-hybrid-4-d",
+  "domain": "graphics-creative-tools",
+  "definition": "Procedural and Hybrid 4D is a compound domain in graphics and creative tooling that unifies two convergent paradigms: (1) procedural generation \u2014 the algorithmic, rule-driven construction of geometry, materials, animation, simulation, and environment data using mathematical operations rather than hand-crafted assets; and (2) the fourth-dimensional extension of 3D representations into the temporal axis, producing time-varying volumetric content (4D = 3D spatial + 1D time) applicable to dynamic scene reconstruction, physics simulation, generative animation, and real-time interactive worlds. In practice these paradigms are inseparable: modern production pipelines (Houdini SideFX with Mantra/Karma/Solaris USD, Blender Geometry Nodes, Unreal Engine PCG, Unity Muse) apply procedural rules that inherently encode temporal variation \u2014 cloth simulations, fluid solvers, crowd systems, and growing botanical structures are all procedural functions of time. The field spans commercial DCC tools (digital content creation), open-source research frameworks (Infinigen, instant-ngp, OpenUSD), academic neural representations (NeRF, 3D Gaussian Splatting, 4DGS, SDF hybrid models), and AI-driven hybrid p",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-modelling",
+      "label": "3D Modelling"
+    },
+    {
+      "id": "urn:visionflow:linked:computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:simulation",
+      "label": "Simulation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:visual-effects",
+      "label": "Visual Effects"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:4-d-gaussian-splatting",
+        "label": "4D Gaussian Splatting"
+      },
+      {
+        "id": "urn:visionflow:linked:blender-geometry-nodes",
+        "label": "Blender Geometry Nodes"
+      },
+      {
+        "id": "urn:visionflow:linked:cascadeur",
+        "label": "Cascadeur"
+      },
+      {
+        "id": "urn:visionflow:linked:ember-gen",
+        "label": "EmberGen"
+      },
+      {
+        "id": "urn:visionflow:linked:houdini-side-fx",
+        "label": "Houdini SideFX"
+      },
+      {
+        "id": "urn:visionflow:linked:infinigen",
+        "label": "Infinigen"
+      },
+      {
+        "id": "urn:visionflow:linked:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "id": "urn:visionflow:linked:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:visionflow:linked:sdf-hybrid-models",
+        "label": "SDF Hybrid Models"
+      },
+      {
+        "id": "urn:visionflow:linked:unreal-pcg",
+        "label": "Unreal PCG"
+      },
+      {
+        "id": "urn:visionflow:linked:wonder-studio",
+        "label": "Wonder Studio"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:physics-solver",
+        "label": "Physics Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:shader-pipeline",
+        "label": "Shader Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-sampling",
+        "label": "Temporal Sampling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:4-d-content-creation",
+        "label": "4D Content Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-animation",
+        "label": "AI Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-scene-reconstruction",
+        "label": "Dynamic Scene Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:linked:photorealistic-synthesis",
+        "label": "Photorealistic Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:procedural-world-building",
+        "label": "Procedural World Building"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-vfx",
+        "label": "Real-Time VFX"
+      },
+      {
+        "id": "urn:visionflow:owl:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:deformation-field",
+        "label": "Deformation Field"
+      },
+      {
+        "id": "urn:visionflow:linked:flip-solver",
+        "label": "FLIP Solver"
+      },
+      {
+        "id": "urn:visionflow:linked:hydra-rendering",
+        "label": "Hydra Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:karman-vortex-simulation",
+        "label": "Karman Vortex Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:material-point-method",
+        "label": "Material Point Method"
+      },
+      {
+        "id": "urn:visionflow:linked:signed-distance-function",
+        "label": "Signed Distance Function"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-modelling",
+      "label": "3D Modelling"
+    },
+    {
+      "slug": "4-d-content-creation",
+      "label": "4D Content Creation"
+    },
+    {
+      "slug": "4-d-gaussian-splatting",
+      "label": "4D Gaussian Splatting"
+    },
+    {
+      "slug": "academy-software-foundation",
+      "label": "Academy Software Foundation"
+    },
+    {
+      "slug": "ai-animation",
+      "label": "AI Animation"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "blender-geometry-nodes",
+      "label": "Blender Geometry Nodes"
+    },
+    {
+      "slug": "cascadeur",
+      "label": "Cascadeur"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "ComputerGraphicsDomain"
+    },
+    {
+      "slug": "computer-vision-training-data",
+      "label": "Computer Vision Training Data"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "deformation-field",
+      "label": "Deformation Field"
+    },
+    {
+      "slug": "differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "dynamic-scene-reconstruction",
+      "label": "Dynamic Scene Reconstruction"
+    },
+    {
+      "slug": "ember-gen",
+      "label": "EmberGen"
+    },
+    {
+      "slug": "film-vfx-production",
+      "label": "Film VFX Production"
+    },
+    {
+      "slug": "flip-solver",
+      "label": "FLIP Solver"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "geometry-nodes-graph",
+      "label": "Geometry Nodes Graph"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "graphics-and-creative-tools-domain",
+      "label": "GraphicsAndCreativeToolsDomain"
+    },
+    {
+      "slug": "houdini-side-fx",
+      "label": "Houdini SideFX"
+    },
+    {
+      "slug": "hydra-rendering",
+      "label": "Hydra Rendering"
+    },
+    {
+      "slug": "infinigen",
+      "label": "Infinigen"
+    },
+    {
+      "slug": "karman-vortex-simulation",
+      "label": "Karman Vortex Simulation"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "manual-keyframe-animation",
+      "label": "Manual Keyframe Animation"
+    },
+    {
+      "slug": "material-point-method",
+      "label": "Material Point Method"
+    },
+    {
+      "slug": "metal",
+      "label": "Metal"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "neural-mlp",
+      "label": "Neural MLP"
+    },
+    {
+      "slug": "open-usd",
+      "label": "OpenUSD"
+    },
+    {
+      "slug": "open-usd-alliance",
+      "label": "OpenUSD Alliance"
+    },
+    {
+      "slug": "pcg-graph",
+      "label": "PCG Graph"
+    },
+    {
+      "slug": "photorealistic-synthesis",
+      "label": "Photorealistic Synthesis"
+    },
+    {
+      "slug": "physics-solver",
+      "label": "Physics Solver"
+    },
+    {
+      "slug": "procedural-world-building",
+      "label": "Procedural World Building"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "real-time-vfx",
+      "label": "Real-Time VFX"
+    },
+    {
+      "slug": "research-layer",
+      "label": "ResearchLayer"
+    },
+    {
+      "slug": "robotics-simulation",
+      "label": "Robotics Simulation"
+    },
+    {
+      "slug": "scan-based-assets",
+      "label": "Scan-based Assets"
+    },
+    {
+      "slug": "sdf-hybrid-models",
+      "label": "SDF Hybrid Models"
+    },
+    {
+      "slug": "shader-pipeline",
+      "label": "Shader Pipeline"
+    },
+    {
+      "slug": "siggraph",
+      "label": "SIGGRAPH"
+    },
+    {
+      "slug": "signed-distance-function",
+      "label": "Signed Distance Function"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "temporal-sampling",
+      "label": "Temporal Sampling"
+    },
+    {
+      "slug": "tool-layer",
+      "label": "ToolLayer"
+    },
+    {
+      "slug": "traditional-rasterisation",
+      "label": "Traditional Rasterisation"
+    },
+    {
+      "slug": "unreal-pcg",
+      "label": "Unreal PCG"
+    },
+    {
+      "slug": "usd-pipeline",
+      "label": "USD Pipeline"
+    },
+    {
+      "slug": "vex-scripting",
+      "label": "VEX Scripting"
+    },
+    {
+      "slug": "vulkan",
+      "label": "Vulkan"
+    },
+    {
+      "slug": "wonder-studio",
+      "label": "Wonder Studio"
+    },
+    {
+      "slug": "xr-content",
+      "label": "XR Content"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "visual-effects",
+      "label": "Visual Effects"
+    }
+  ],
+  "backlinks": []
+}

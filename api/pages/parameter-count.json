@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:bf8a1b40ceb09c79291a85a516b577723eca2b1932df349e56c7cd87eb9430f6",
+  "title": "Parameter Count",
+  "slug": "parameter-count",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:parameter-count",
+  "domain": "spatial-computing",
+  "definition": "The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

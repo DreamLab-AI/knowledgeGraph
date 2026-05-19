@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:9464006aad671bd5e52b18bcfbbe59b11ea32596c0982488a000aa79cc69ab9a",
+  "title": "Sensor Technology",
+  "slug": "sensor-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sensor-technology",
+  "domain": "robotics",
+  "definition": "SensorTechnology is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

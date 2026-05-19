@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:f8900b62e736c3a6e983d4d86be49baf149dec397f489cb7fcb248a54c168d23",
+  "title": "Data Annotation",
+  "slug": "data-annotation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-annotation",
+  "domain": "artificial-intelligence",
+  "definition": "Data Annotation is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cohen-s-kappa",
+      "label": "Cohen's Kappa"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
+    },
+    {
+      "slug": "snorkel",
+      "label": "Snorkel"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-in-the-loop-learning",
+      "label": "Human-in-the- Loop Learning"
+    }
+  ]
+}

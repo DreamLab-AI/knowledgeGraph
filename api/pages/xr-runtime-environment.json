@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:5fb2d21bb62ca44c1a5d8d150a51721c6fc2cd74358f8bc37477fe774527487a",
+  "title": "XR Runtime Environment",
+  "slug": "xr-runtime-environment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:xr-runtime-environment",
+  "domain": "spatial-computing",
+  "definition": "The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:runtime-environment",
+      "label": "Runtime Environment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "runtime-environment",
+      "label": "Runtime Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    }
+  ]
+}

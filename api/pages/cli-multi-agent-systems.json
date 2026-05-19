@@ -1,0 +1,496 @@
+{
+  "id": "urn:visionflow:page:9941fc18e8ae0f9df1c13ae4237aca16ddd280b41f865fcd6346b68a0b3831f9",
+  "title": "CLI Multi-Agent Systems",
+  "slug": "cli-multi-agent-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cli-multi-agent-systems",
+  "domain": "artificial-intelligence",
+  "definition": "CLI multi-agent systems are software architectures in which networks of autonomous AI agents operate natively within command-line and terminal environments, coordinating to decompose, plan, and execute complex long-horizon tasks through tool invocation, sandboxed code execution, inter-agent messaging, and shared or structured state \u2014 distinct from graphical or web-based agent deployments in their emphasis on shell-native operation, scriptability, composability with UNIX pipelines, fire-and-forget batch semantics, and tight integration with developer workflows such as version control, CI/CD pipelines, and headless server automation. The paradigm is defined by five interlocking properties: (1) terminal-native execution, where agents invoke bash, Python, or REPL interpreters directly within the shell, reading stdout/stderr and acting on exit codes; (2) tool use and function calling, where LLM-driven agents select from a catalogue of registered tools (file editors, web search, code executors, API clients) described via structured schemas (JSON, YAML, OpenAPI) and dispatched at inference time; (3) orchestrated multi-agent topologies, where a planner or supervisor agent decomposes a goal",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "id": "urn:visionflow:linked:autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "id": "urn:visionflow:linked:llm-agents",
+      "label": "LLM Agents"
+    },
+    {
+      "id": "urn:visionflow:linked:multi-agent-systems",
+      "label": "Multi Agent Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:tool-use",
+      "label": "Tool Use"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "id": "urn:visionflow:linked:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:planning-agent",
+        "label": "Planning Agent"
+      },
+      {
+        "id": "urn:visionflow:linked:sandbox-environment",
+        "label": "Sandbox Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:state-management",
+        "label": "State Management"
+      },
+      {
+        "id": "urn:visionflow:linked:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-catalogue",
+        "label": "Tool Catalogue"
+      },
+      {
+        "id": "urn:visionflow:linked:worker-agent",
+        "label": "Worker Agent"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:orchestration-protocol",
+        "label": "Orchestration Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:sandboxed-code-execution",
+        "label": "Sandboxed Code Execution"
+      },
+      {
+        "id": "urn:visionflow:linked:shell-environment",
+        "label": "Shell Environment"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "id": "urn:visionflow:owl:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-code-review",
+        "label": "Automated Code Review"
+      },
+      {
+        "id": "urn:visionflow:linked:autonomous-debugging",
+        "label": "Autonomous Debugging"
+      },
+      {
+        "id": "urn:visionflow:linked:ci-cd-automation",
+        "label": "CI/CD Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:dev-sec-ops",
+        "label": "DevSecOps"
+      },
+      {
+        "id": "urn:visionflow:linked:repository-scale-refactoring",
+        "label": "Repository-Scale Refactoring"
+      },
+      {
+        "id": "urn:visionflow:linked:software-engineering-agents",
+        "label": "Software Engineering Agents"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:auto-gen",
+        "label": "AutoGen"
+      },
+      {
+        "id": "urn:visionflow:linked:code-act",
+        "label": "CodeAct"
+      },
+      {
+        "id": "urn:visionflow:linked:crew-ai",
+        "label": "CrewAI"
+      },
+      {
+        "id": "urn:visionflow:linked:lang-graph",
+        "label": "LangGraph"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-systems-domain",
+      "label": "AgentSystemsDomain"
+    },
+    {
+      "slug": "agent2-agent-protocol",
+      "label": "Agent2Agent Protocol"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "automated-code-review",
+      "label": "Automated Code Review"
+    },
+    {
+      "slug": "automated-testing",
+      "label": "Automated Testing"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "autonomous-debugging",
+      "label": "Autonomous Debugging"
+    },
+    {
+      "slug": "bash",
+      "label": "Bash"
+    },
+    {
+      "slug": "ci-cd-automation",
+      "label": "CI/CD Automation"
+    },
+    {
+      "slug": "code-act",
+      "label": "CodeAct"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "dev-sec-ops",
+      "label": "DevSecOps"
+    },
+    {
+      "slug": "firecracker",
+      "label": "Firecracker"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "inter-agent-communication",
+      "label": "Inter-Agent Communication"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "llm-agents",
+      "label": "LLM Agents"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi Agent Systems"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "open-hands",
+      "label": "OpenHands"
+    },
+    {
+      "slug": "open-telemetry",
+      "label": "OpenTelemetry"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "orchestration-protocol",
+      "label": "Orchestration Protocol"
+    },
+    {
+      "slug": "planning-agent",
+      "label": "Planning Agent"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "re-act",
+      "label": "ReAct"
+    },
+    {
+      "slug": "repository-scale-refactoring",
+      "label": "Repository-Scale Refactoring"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "sandbox-environment",
+      "label": "Sandbox Environment"
+    },
+    {
+      "slug": "sandboxed-code-execution",
+      "label": "Sandboxed Code Execution"
+    },
+    {
+      "slug": "shell-environment",
+      "label": "Shell Environment"
+    },
+    {
+      "slug": "single-agent-system",
+      "label": "Single-Agent System"
+    },
+    {
+      "slug": "software-engineering-agents",
+      "label": "Software Engineering Agents"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "SoftwareEngineeringDomain"
+    },
+    {
+      "slug": "state-management",
+      "label": "State Management"
+    },
+    {
+      "slug": "static-analysis",
+      "label": "Static Analysis"
+    },
+    {
+      "slug": "swe-agent",
+      "label": "SWE-agent"
+    },
+    {
+      "slug": "task-decomposition",
+      "label": "Task Decomposition"
+    },
+    {
+      "slug": "tool-catalogue",
+      "label": "Tool Catalogue"
+    },
+    {
+      "slug": "tool-schema",
+      "label": "Tool Schema"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "traditional-ci-cd",
+      "label": "Traditional CI/CD"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "worker-agent",
+      "label": "Worker Agent"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "human-in-the-loop-learning",
+      "label": "Human-in-the-Loop Learning"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

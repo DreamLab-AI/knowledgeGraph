@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:b41fc0c7924f15cd4160647e7e4ae8e689ef20ce02a7b14220d819f219fd39df",
+  "title": "Machine Learning Platform",
+  "slug": "machine-learning-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:machine-learning-platform",
+  "domain": "artificial-intelligence",
+  "definition": "Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "enterprise-ai-adoption",
+      "label": "Enterprise AI Adoption"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    }
+  ]
+}

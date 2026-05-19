@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:e1a27a107e7d3a9c9bc6873413de447c8089b0d3573c9ca1a5bcdfbbe23c79fa",
+  "title": "Federated Byzantine Fault Tolerance",
+  "slug": "federated-byzantine-fault-tolerance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:federated-byzantine-fault-tolerance",
+  "domain": "blockchain",
+  "definition": "A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    }
+  ],
+  "backlinks": []
+}

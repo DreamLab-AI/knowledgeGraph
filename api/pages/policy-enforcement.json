@@ -1,0 +1,352 @@
+{
+  "id": "urn:visionflow:page:63b2da1ccbc192bc761d93d0af2cc9d88cd238a72a2eb33fce66546545cda49e",
+  "title": "Policy Enforcement",
+  "slug": "policy-enforcement",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:policy-enforcement",
+  "domain": "infrastructure",
+  "definition": "Mechanisms, architectures, and toolchains that translate declarative security and governance rules into runtime decisions\u2014permitting, denying, mutating, or auditing operations across compute, data, network, and AI systems. Policy enforcement separates rule authorship (Policy Administration Point, PAP), rule evaluation (Policy Decision Point, PDP), and rule application (Policy Enforcement Point, PEP) into loosely coupled tiers; a fifth actor\u2014the Policy Information Point (PIP)\u2014enriches evaluation requests with live attribute data. Modern enforcement spans four paradigms: Role-Based Access Control (RBAC) granting permissions via static role assignments and suited to organisations with bounded permission variance; Attribute-Based Access Control (ABAC) evaluating dynamic subject, resource, action, and environment attributes and suited to fine-grained contextual decisions; Relationship-Based Access Control (ReBAC) traversing entity-relationship graphs (e.g., a user who is an owner of a folder inherits owner rights on all nested files) and suited to collaborative document and object stores; and Policy-Based Access Control (PBAC) composing rules across RBAC/ABAC/ReBAC into a single declara",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:access-control",
+      "label": "Access Control"
+    },
+    {
+      "id": "urn:visionflow:owl:class:compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "id": "urn:visionflow:owl:class:governance",
+      "label": "Governance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:security-services",
+      "label": "Security Services"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-trust-risk-and-security-management",
+        "label": "AI Trust Risk and Security Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gdpr-article-22-compliance",
+        "label": "GDPR Article 22 Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "narrative-gold-mine",
+      "label": "Narrative Gold Mine"
+    },
+    {
+      "slug": "security-domain",
+      "label": "SecurityDomain"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-trust-risk-and-security-management",
+      "label": "AI Trust Risk and Security Management"
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "label": "AI Trustworthiness"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "authentication-standards",
+      "label": "Authentication Standards"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "cloud-native-applications",
+      "label": "Cloud-Native Applications"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "compliance-standards",
+      "label": "Compliance Standards"
+    },
+    {
+      "slug": "compliance-verification",
+      "label": "Compliance Verification"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cryptographic-security",
+      "label": "Cryptographic Security"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "data-protection-regulation",
+      "label": "Data Protection Regulation"
+    },
+    {
+      "slug": "digital-identity-management",
+      "label": "Digital Identity Management"
+    },
+    {
+      "slug": "digital-regulation",
+      "label": "Digital Regulation"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "gdpr-article-22-compliance",
+      "label": "GDPR Article 22 Compliance"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "security-services",
+      "label": "Security Services"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "service-oriented-architecture",
+      "label": "Service Oriented Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "label": "User Agreement Compliance"
+    }
+  ]
+}

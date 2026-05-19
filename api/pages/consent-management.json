@@ -1,0 +1,211 @@
+{
+  "id": "urn:visionflow:page:161ab31a75af7dd932667d9eb8cd0cea11a1286da888a53c288c923dff9d7325",
+  "title": "Consent Management",
+  "slug": "consent-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:consent-management",
+  "domain": "infrastructure",
+  "definition": "System for recording and enforcing user permissions for data collection, processing, and sharing across metaverse platforms, ensuring compliance with privacy regulations and user autonomy.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audit-logger",
+        "label": "Audit Logger"
+      },
+      {
+        "id": "urn:visionflow:linked:consent-registry",
+        "label": "Consent Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:permission-controller",
+        "label": "Permission Controller"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-governance-framework",
+        "label": "Data Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:user-authentication",
+        "label": "User Authentication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:visionflow:linked:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:user-control",
+        "label": "User Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:right-to-be-forgotten",
+        "label": "Right to be Forgotten"
+      },
+      {
+        "id": "urn:visionflow:owl:class:right-to-be-forgotten",
+        "label": "Right to Be Forgotten"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-logger",
+      "label": "Audit Logger"
+    },
+    {
+      "slug": "consent-registry",
+      "label": "Consent Registry"
+    },
+    {
+      "slug": "data-governance-framework",
+      "label": "Data Governance Framework"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "enisa",
+      "label": "ENISA"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "iso-29184",
+      "label": "ISO 29184"
+    },
+    {
+      "slug": "permission-controller",
+      "label": "Permission Controller"
+    },
+    {
+      "slug": "privacy-policy",
+      "label": "Privacy Policy"
+    },
+    {
+      "slug": "user-authentication",
+      "label": "User Authentication"
+    },
+    {
+      "slug": "user-control",
+      "label": "User Control"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to be Forgotten"
+    },
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to Be Forgotten"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to Be Forgotten"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

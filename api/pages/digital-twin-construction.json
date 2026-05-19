@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d",
+  "title": "Digital Twin Construction",
+  "slug": "digital-twin-construction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-construction",
+  "domain": "spatial-computing",
+  "definition": "The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bim",
+        "label": "BIM"
+      },
+      {
+        "id": "urn:visionflow:linked:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:visionflow:owl:class:io-t-sensors",
+        "label": "IoT Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:building-lifecycle-management",
+        "label": "Building Lifecycle Management"
+      },
+      {
+        "id": "urn:visionflow:linked:construction-optimization",
+        "label": "Construction Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bim",
+      "label": "BIM"
+    },
+    {
+      "slug": "building-lifecycle-management",
+      "label": "Building Lifecycle Management"
+    },
+    {
+      "slug": "cloud-platform",
+      "label": "Cloud Platform"
+    },
+    {
+      "slug": "construction-optimization",
+      "label": "Construction Optimization"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "IoT Sensors"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ]
+}

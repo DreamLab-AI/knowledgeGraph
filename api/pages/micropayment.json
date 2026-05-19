@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:45f63be9b7468ef858d38f7c3184636a5c665d2ccf7ec652a23acc67111ae228",
+  "title": "Micropayment",
+  "slug": "micropayment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:micropayment",
+  "domain": "blockchain",
+  "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:fee-calculation",
+        "label": "Fee Calculation"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-protocol",
+        "label": "Payment Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:settlement-mechanism",
+        "label": "Settlement Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-authentication",
+        "label": "Cryptographic Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:instant-settlements",
+        "label": "Instant Settlements"
+      },
+      {
+        "id": "urn:visionflow:linked:microtransactions",
+        "label": "Microtransactions"
+      },
+      {
+        "id": "urn:visionflow:linked:pay-per-use-models",
+        "label": "Pay-Per-Use Models"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-authentication",
+      "label": "Cryptographic Authentication"
+    },
+    {
+      "slug": "fee-calculation",
+      "label": "Fee Calculation"
+    },
+    {
+      "slug": "instant-settlements",
+      "label": "Instant Settlements"
+    },
+    {
+      "slug": "microtransactions",
+      "label": "Microtransactions"
+    },
+    {
+      "slug": "oma3",
+      "label": "OMA3"
+    },
+    {
+      "slug": "pay-per-use-models",
+      "label": "Pay-Per-Use Models"
+    },
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "payment-protocol",
+      "label": "Payment Protocol"
+    },
+    {
+      "slug": "reed-smith",
+      "label": "Reed Smith"
+    },
+    {
+      "slug": "settlement-mechanism",
+      "label": "Settlement Mechanism"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

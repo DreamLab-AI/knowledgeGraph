@@ -1,22 +1,394 @@
-iri:: http://narrativegoldmine.com/robotics#RrtAlgorithm
-uri:: urn:visionclaw:concept:robotics:rrt-algorithm
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:rrt-algorithm
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: RRT Algorithm
-content-hash:: sha256-12-c2b4d9bf7284
-legacy-term-id:: RB-1017
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.96
-version:: 2.0.0
-created:: 2025-11-24T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-bridges-to:: [[AI Agent System]], [[Computer Vision]]
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#RrtAlgorithm
+legacy_uri:: urn:visionclaw:concept:robotics:rrt-algorithm
 public:: true
+
+# RRT Algorithm
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:41520d5a4901d011aa562d2e9d0badc324ae984269908d98624333d035e4387f",
+  "@type": "Page",
+  "vc:slug": "rrt-algorithm",
+  "title": "RRT Algorithm",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicles",
+      "vc:label": "Autonomous Vehicles"
+    },
+    {
+      "@id": "urn:visionflow:linked:collision-checker",
+      "vc:label": "Collision Checker"
+    },
+    {
+      "@id": "urn:visionflow:linked:configuration-space",
+      "vc:label": "Configuration Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-rrt-star",
+      "vc:label": "Informed RRT-Star"
+    },
+    {
+      "@id": "urn:visionflow:linked:manipulators",
+      "vc:label": "Manipulators"
+    },
+    {
+      "@id": "urn:visionflow:linked:mobile-robots",
+      "vc:label": "Mobile Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-completeness",
+      "vc:label": "Probabilistic Completeness"
+    },
+    {
+      "@id": "urn:visionflow:linked:randomization",
+      "vc:label": "Randomization"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1016-path-planning",
+      "vc:label": "RB-1016-path-planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:rb-1018-dijkstra-algorithm",
+      "vc:label": "RB-1018-dijkstra-algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:rrt-connect",
+      "vc:label": "RRT-Connect"
+    },
+    {
+      "@id": "urn:visionflow:linked:rrt-star",
+      "vc:label": "RRT-Star"
+    },
+    {
+      "@id": "urn:visionflow:linked:sampling-based-method",
+      "vc:label": "Sampling-Based Method"
+    },
+    {
+      "@id": "urn:visionflow:linked:steven-la-valle-1998",
+      "vc:label": "Steven LaValle 1998"
+    },
+    {
+      "@id": "urn:visionflow:linked:tree-structure",
+      "vc:label": "Tree Structure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:a-star-algorithm",
+      "vc:label": "A-Star Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collision-detection",
+      "vc:label": "Collision Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nearest-neighbor-search",
+      "vc:label": "Nearest Neighbor Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:path-planning",
+      "vc:label": "Path Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.96"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[AI Agent System]], [[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c2b4d9bf7284"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-24T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#RrtAlgorithm"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-1017"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "RRT Algorithm"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:rrt-algorithm"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:rrt-algorithm"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:41520d5a4901d011aa562d2e9d0badc324ae984269908d98624333d035e4387f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:rrt-algorithm",
+  "@type": "OntologyClass",
+  "label": "RRT Algorithm",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:rb-1016-path-planning",
+      "vc:label": "RB-1016-path-planning"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:41520d5a4901d011aa562d2e9d0badc324ae984269908d98624333d035e4387f"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:41520d5a4901d011aa562d2e9d0badc324ae984269908d98624333d035e4387f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A sampling-based path planning algorithm that incrementally builds a tree of collision-free configurations by randomly sampling the configuration space and connecting samples to the nearest existing tree node. It efficiently explores high-dimensional spaces and is probabilistically complete.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.96",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:collision-checker",
+      "vc:label": "Collision Checker"
+    },
+    {
+      "@id": "urn:visionflow:linked:configuration-space",
+      "vc:label": "Configuration Space"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:collision-detection",
+      "vc:label": "Collision Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nearest-neighbor-search",
+      "vc:label": "Nearest Neighbor Search"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:rrt-algorithm:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:41520d5a4901d011aa562d2e9d0badc324ae984269908d98624333d035e4387f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Autonomous Vehicles]]",
+      "resolved": "urn:visionflow:linked:autonomous-vehicles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collision Checker]]",
+      "resolved": "urn:visionflow:linked:collision-checker",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Configuration Space]]",
+      "resolved": "urn:visionflow:linked:configuration-space",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Informed RRT-Star]]",
+      "resolved": "urn:visionflow:linked:informed-rrt-star",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manipulators]]",
+      "resolved": "urn:visionflow:linked:manipulators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mobile Robots]]",
+      "resolved": "urn:visionflow:linked:mobile-robots",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Probabilistic Completeness]]",
+      "resolved": "urn:visionflow:linked:probabilistic-completeness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Randomization]]",
+      "resolved": "urn:visionflow:linked:randomization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1016-path-planning]]",
+      "resolved": "urn:visionflow:linked:rb-1016-path-planning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RB-1018-dijkstra-algorithm]]",
+      "resolved": "urn:visionflow:linked:rb-1018-dijkstra-algorithm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RRT-Connect]]",
+      "resolved": "urn:visionflow:linked:rrt-connect",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RRT-Star]]",
+      "resolved": "urn:visionflow:linked:rrt-star",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sampling-Based Method]]",
+      "resolved": "urn:visionflow:linked:sampling-based-method",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Steven LaValle 1998]]",
+      "resolved": "urn:visionflow:linked:steven-la-valle-1998",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tree Structure]]",
+      "resolved": "urn:visionflow:linked:tree-structure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[A-Star Algorithm]]",
+      "resolved": "urn:visionflow:owl:class:a-star-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Collision Detection]]",
+      "resolved": "urn:visionflow:owl:class:collision-detection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Planning]]",
+      "resolved": "urn:visionflow:owl:class:motion-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Nearest Neighbor Search]]",
+      "resolved": "urn:visionflow:owl:class:nearest-neighbor-search",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Path Planning]]",
+      "resolved": "urn:visionflow:owl:class:path-planning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:41520d5a4901d011aa562d2e9d0badc324ae984269908d98624333d035e4387f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A sampling-based path planning algorithm that incrementally builds a tree of collision-free configurations by randomly sampling the configuration space and connecting samples to the nearest existing tree node. It efficiently explores high-dimensional spaces and is probabilistically complete.

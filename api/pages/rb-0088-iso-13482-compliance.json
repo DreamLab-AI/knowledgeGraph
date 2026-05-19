@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:56dcdb1a4e2bc61d11899d783603b21db7854e1dbc407b70cb43222b1f056a40",
+  "title": "rb 0088 iso 13482 compliance",
+  "slug": "rb-0088-iso-13482-compliance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0088-iso-13482-compliance",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:functional-safety",
+      "label": "Functional Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,24 +1,345 @@
-iri:: http://narrativegoldmine.com/spatial-computing#GlobalExplanation
-uri:: urn:visionclaw:concept:spatial-computing:global-explanation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:global-explanation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Global Explanation
-content-hash:: sha256-12-3cadee238e24
-legacy-term-id:: AI-0302
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#GlobalExplanation
+legacy_uri:: urn:visionclaw:concept:spatial-computing:global-explanation
 public:: true
+
+# Global Explanation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a",
+  "@type": "Page",
+  "vc:slug": "global-explanation",
+  "title": "Global Explanation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:caballero2008financial-spiro2019hidden",
+      "vc:label": "caballero2008financial; @spiro2019hidden"
+    },
+    {
+      "@id": "urn:visionflow:linked:carney2019growing-piffaretti2009reshaping",
+      "vc:label": "carney2019growing; @piffaretti2009reshaping"
+    },
+    {
+      "@id": "urn:visionflow:linked:grewal2020struggling",
+      "vc:label": "grewal2020struggling"
+    },
+    {
+      "@id": "urn:visionflow:linked:individual-conditional-expectation",
+      "vc:label": "Individual Conditional Expectation"
+    },
+    {
+      "@id": "urn:visionflow:linked:partial-dependence-plot",
+      "vc:label": "Partial Dependence Plot"
+    },
+    {
+      "@id": "urn:visionflow:linked:permutation-importance",
+      "vc:label": "Permutation Importance"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap",
+      "vc:label": "SHAP"
+    },
+    {
+      "@id": "urn:visionflow:linked:srinivasan2022",
+      "vc:label": "Srinivasan2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:stoeferle2018gold",
+      "vc:label": "stoeferle2018gold"
+    },
+    {
+      "@id": "urn:visionflow:linked:surrogate-models",
+      "vc:label": "Surrogate Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:tomlinson2003third",
+      "vc:label": "tomlinson2003third"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-importance",
+      "vc:label": "Feature Importance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:local-explanation",
+      "vc:label": "Local Explanation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-interpretability",
+      "vc:label": "Model Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-transparency",
+      "vc:label": "Model Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3cadee238e24"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#GlobalExplanation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0302"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Global Explanation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:global-explanation"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:global-explanation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:global-explanation",
+  "@type": "OntologyClass",
+  "label": "Global Explanation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:explainability",
+      "vc:label": "Explainability"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:global-explanation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[caballero2008financial; @spiro2019hidden]]",
+      "resolved": "urn:visionflow:linked:caballero2008financial-spiro2019hidden",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[carney2019growing; @piffaretti2009reshaping]]",
+      "resolved": "urn:visionflow:linked:carney2019growing-piffaretti2009reshaping",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[grewal2020struggling]]",
+      "resolved": "urn:visionflow:linked:grewal2020struggling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Individual Conditional Expectation]]",
+      "resolved": "urn:visionflow:linked:individual-conditional-expectation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Partial Dependence Plot]]",
+      "resolved": "urn:visionflow:linked:partial-dependence-plot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Permutation Importance]]",
+      "resolved": "urn:visionflow:linked:permutation-importance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHAP]]",
+      "resolved": "urn:visionflow:linked:shap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Srinivasan2022]]",
+      "resolved": "urn:visionflow:linked:srinivasan2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[stoeferle2018gold]]",
+      "resolved": "urn:visionflow:linked:stoeferle2018gold",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Surrogate Models]]",
+      "resolved": "urn:visionflow:linked:surrogate-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[tomlinson2003third]]",
+      "resolved": "urn:visionflow:linked:tomlinson2003third",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Explainable AI]]",
+      "resolved": "urn:visionflow:owl:class:explainable-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feature Importance]]",
+      "resolved": "urn:visionflow:owl:class:feature-importance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Local Explanation]]",
+      "resolved": "urn:visionflow:owl:class:local-explanation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Interpretability]]",
+      "resolved": "urn:visionflow:owl:class:model-interpretability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Transparency]]",
+      "resolved": "urn:visionflow:owl:class:model-transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.

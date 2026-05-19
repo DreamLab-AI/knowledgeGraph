@@ -1,22 +1,271 @@
-iri:: http://narrativegoldmine.com/robotics#COMPLETEHRITERMSREFERENCE
-uri:: urn:visionclaw:concept:robotics:completehritermsreference
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:completehritermsreference
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: COMPLETE_HRI_TERMS_REFERENCE
-content-hash:: sha256-12-511d4f94428e
-legacy-term-id:: MV-3071
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T17:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#COMPLETEHRITERMSREFERENCE
+legacy_uri:: urn:visionclaw:concept:robotics:completehritermsreference
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# COMPLETE_HRI_TERMS_REFERENCE
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af",
+  "@type": "Page",
+  "vc:slug": "complete-hri-terms-reference",
+  "title": "COMPLETE_HRI_TERMS_REFERENCE",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:behavioural-patterns",
+      "vc:label": "Behavioural Patterns"
+    },
+    {
+      "@id": "urn:visionflow:linked:ccpa-california-consumer-privacy-act",
+      "vc:label": "CCPA (California Consumer Privacy Act)"
+    },
+    {
+      "@id": "urn:visionflow:linked:communication-protocols",
+      "vc:label": "Communication Protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:engagement-modalities",
+      "vc:label": "Engagement Modalities"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "vc:label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "vc:label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "vc:label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-robot-interaction",
+      "vc:label": "Human-Robot Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-511d4f94428e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#COMPLETEHRITERMSREFERENCE"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3071"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T17:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "COMPLETE_HRI_TERMS_REFERENCE"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:completehritermsreference"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:completehritermsreference"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:complete-hri-terms-reference",
+  "@type": "OntologyClass",
+  "label": "COMPLETE_HRI_TERMS_REFERENCE",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]]. This reference enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:complete-hri-terms-reference:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Behavioural Patterns]]",
+      "resolved": "urn:visionflow:linked:behavioural-patterns",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CCPA (California Consumer Privacy Act)]]",
+      "resolved": "urn:visionflow:linked:ccpa-california-consumer-privacy-act",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Communication Protocols]]",
+      "resolved": "urn:visionflow:linked:communication-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Engagement Modalities]]",
+      "resolved": "urn:visionflow:linked:engagement-modalities",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR (General Data Protection Regulation)]]",
+      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
+      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO (International Organization for Standardization)]]",
+      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human-Robot Interaction]]",
+      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]]. This reference enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems.

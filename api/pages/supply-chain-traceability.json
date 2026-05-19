@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a",
+  "title": "Supply Chain Traceability",
+  "slug": "supply-chain-traceability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:supply-chain-traceability",
+  "domain": "blockchain",
+  "definition": "Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each stage. Systems like [[HyperledgerFabric|Hyperledger Fabric]] implementations track product provenance, environmental conditions (via [[ColdChainMonitoring|cold chain monitoring]]), and regulatory certifications, providing consumers and businesses with cryptographic proof of authenticity and preventing [[Counterfeiting|counterfeiting]]. Applications extend across food safety, pharmaceutical verification, luxury goods authentication, and [[CircularEconomy|circular economy]] initiatives where blockchain records enable product take-back, refurbishment, and responsible resource recovery.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-application",
+      "label": "Blockchain Application"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0142-smart-contract",
+      "label": "BC-0142-smart-contract"
+    },
+    {
+      "slug": "bc-0245-internet-of-things",
+      "label": "BC-0245-internet-of-things"
+    },
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0447-anti-counterfeiting",
+      "label": "BC-0447-anti-counterfeiting"
+    },
+    {
+      "slug": "bc-0448-cold-chain-monitoring",
+      "label": "BC-0448-cold-chain-monitoring"
+    },
+    {
+      "slug": "bc-0449-circular-economy",
+      "label": "BC-0449-circular-economy"
+    },
+    {
+      "slug": "blockchain-technology",
+      "label": "BlockchainTechnology"
+    },
+    {
+      "slug": "counterfeiting",
+      "label": "Counterfeiting"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "CircularEconomy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "ColdChainMonitoring"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "HyperledgerFabric"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

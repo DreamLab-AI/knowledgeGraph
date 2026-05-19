@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:aadf2b37d49663223e408f59f7b8301da7c5632cb116229578e5c9297a52ffc3",
+  "title": "Privacy Disclosure",
+  "slug": "privacy-disclosure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-disclosure",
+  "domain": "spatial-computing",
+  "definition": "Privacy Disclosure is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "transparency-notice",
+      "label": "Transparency Notice"
+    }
+  ]
+}

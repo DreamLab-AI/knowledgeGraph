@@ -1,21 +1,225 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#NeuralRadianceFields
-uri:: urn:visionclaw:concept:distributed-collaboration:neural-radiance-fields
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:neural-radiance-fields
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Neural Radiance Fields
-content-hash:: sha256-12-f3826273dd2c
-legacy-term-id:: TC-0052
-status:: active
-maturity:: developing
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#NeuralRadianceFields
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:neural-radiance-fields
 public:: true
+
+# Neural Radiance Fields
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5",
+  "@type": "Page",
+  "vc:slug": "neural-radiance-fields",
+  "title": "Neural Radiance Fields",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "vc:label": "TELE-050-neural-rendering-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-051-3d-gaussian-splatting",
+      "vc:label": "TELE-051-3d-gaussian-splatting"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
+      "vc:label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-060-instant-ngp",
+      "vc:label": "TELE-060-instant-ngp"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+      "vc:label": "Real-Time Rendering Pipeline"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f3826273dd2c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#NeuralRadianceFields"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0052"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "developing"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Neural Radiance Fields"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:neural-radiance-fields"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:neural-radiance-fields"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:neural-radiance-fields",
+  "@type": "OntologyClass",
+  "label": "Neural Radiance Fields",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+      "vc:label": "Real-Time Rendering Pipeline"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "developing",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetric ray marching and gradient-based optimisation.\"",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:neural-radiance-fields:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-050-neural-rendering-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-051-3d-gaussian-splatting]]",
+      "resolved": "urn:visionflow:linked:tele-051-3d-gaussian-splatting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-053-volumetric-video-conferencing]]",
+      "resolved": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-060-instant-ngp]]",
+      "resolved": "urn:visionflow:linked:tele-060-instant-ngp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Rendering Pipeline]]",
+      "resolved": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetric ray marching and gradient-based optimisation."

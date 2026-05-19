@@ -1,0 +1,568 @@
+{
+  "id": "urn:visionflow:page:cc165016e130000637d7e1c11ba92d9c0c187289d1e08f463d12bc6aac421157",
+  "title": "Taproot Assets",
+  "slug": "taproot-assets",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:taproot-assets",
+  "domain": "blockchain",
+  "definition": "**Taproot Assets** (formerly **Taro**, renamed mid-2022) is a Bitcoin-native asset-issuance and transfer protocol developed by [[Lightning Labs]], formally specified in BIPs 327-330, that enables arbitrary fungible tokens, non-fungible tokens, and stablecoins to be issued on the Bitcoin base layer using the cryptographic machinery of BIP-341/BIP-342 ([[Taproot Upgrade]]) and transferred off-chain at Lightning speed. The protocol encodes asset state into Bitcoin UTXOs through a Merkle Sum Sparse Merkle Tree (MS-SMT) commitment scheme: each asset carries a 32-byte genesis-derived `asset_id = sha256(genesis_outpoint \u2225 asset_tag \u2225 asset_meta)` embedded in a [[Taproot]] script-path leaf, while asset balances and lineage are tracked via [[Sparse Merkle Tree]] structures that make inflation cryptographically impossible \u2014 any attempt to create assets ex nihilo leaves a detectable Merkle inconsistency. Validity proofs (asset witnesses) are stored off-chain in a peer-to-peer **Universe** registry network, keeping Bitcoin block-space consumption minimal whilst preserving auditability. Assets deposited into [[Lightning Network]] channels become instantly transferable across existing routing in",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:asset-issuance-protocol",
+      "label": "Asset Issuance Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:client-side-validation",
+      "label": "Client-Side Validation"
+    },
+    {
+      "id": "urn:visionflow:linked:cryptographic-commitment-scheme",
+      "label": "Cryptographic Commitment Scheme"
+    },
+    {
+      "id": "urn:visionflow:linked:lightning-network-extension",
+      "label": "Lightning Network Extension"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-group-key",
+        "label": "Asset Group Key"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-witness-proof",
+        "label": "Asset Witness Proof"
+      },
+      {
+        "id": "urn:visionflow:linked:lightning-asset-channel",
+        "label": "Lightning Asset Channel"
+      },
+      {
+        "id": "urn:visionflow:linked:merkle-sum-sparse-merkle-tree",
+        "label": "Merkle Sum Sparse Merkle Tree"
+      },
+      {
+        "id": "urn:visionflow:linked:rfq-market",
+        "label": "RFQ Market"
+      },
+      {
+        "id": "urn:visionflow:linked:tapd-daemon",
+        "label": "tapd Daemon"
+      },
+      {
+        "id": "urn:visionflow:linked:taproot-script-leaf",
+        "label": "Taproot Script Leaf"
+      },
+      {
+        "id": "urn:visionflow:linked:universe-registry",
+        "label": "Universe Registry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bip-341",
+        "label": "BIP-341"
+      },
+      {
+        "id": "urn:visionflow:linked:bip-342",
+        "label": "BIP-342"
+      },
+      {
+        "id": "urn:visionflow:linked:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:visionflow:linked:taproot-upgrade",
+        "label": "Taproot Upgrade"
+      },
+      {
+        "id": "urn:visionflow:linked:tlv-encoding",
+        "label": "TLV Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:atomic-cross-asset-swaps",
+        "label": "Atomic Cross-Asset Swaps"
+      },
+      {
+        "id": "urn:visionflow:linked:bitcoin-native-stablecoins",
+        "label": "Bitcoin-Native Stablecoins"
+      },
+      {
+        "id": "urn:visionflow:linked:machine-to-machine-payments",
+        "label": "Machine-to-Machine Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-asset-lightning-payments",
+        "label": "Multi-Asset Lightning Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:nfts-on-bitcoin",
+        "label": "NFTs on Bitcoin"
+      },
+      {
+        "id": "urn:visionflow:linked:tokenised-securities-on-bitcoin",
+        "label": "Tokenised Securities on Bitcoin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bip-327",
+        "label": "BIP-327"
+      },
+      {
+        "id": "urn:visionflow:linked:bip-328",
+        "label": "BIP-328"
+      },
+      {
+        "id": "urn:visionflow:linked:bip-329",
+        "label": "BIP-329"
+      },
+      {
+        "id": "urn:visionflow:linked:bip-330",
+        "label": "BIP-330"
+      },
+      {
+        "id": "urn:visionflow:linked:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:ms-smt-commitment-scheme",
+        "label": "MS-SMT Commitment Scheme"
+      },
+      {
+        "id": "urn:visionflow:linked:rfq-multi-asset-routing",
+        "label": "RFQ Multi-Asset Routing"
+      },
+      {
+        "id": "urn:visionflow:linked:universe-gossip-protocol",
+        "label": "Universe Gossip Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent-economies",
+      "label": "AI Agent Economies"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI agents"
+    },
+    {
+      "slug": "amboss",
+      "label": "Amboss"
+    },
+    {
+      "slug": "asset-group-key",
+      "label": "Asset Group Key"
+    },
+    {
+      "slug": "asset-issuance-protocol",
+      "label": "Asset Issuance Protocol"
+    },
+    {
+      "slug": "asset-witness-proof",
+      "label": "Asset Witness Proof"
+    },
+    {
+      "slug": "atomic-cross-asset-swaps",
+      "label": "Atomic Cross-Asset Swaps"
+    },
+    {
+      "slug": "atomic-swaps",
+      "label": "Atomic Swaps"
+    },
+    {
+      "slug": "bip-327",
+      "label": "BIP-327"
+    },
+    {
+      "slug": "bip-328",
+      "label": "BIP-328"
+    },
+    {
+      "slug": "bip-329",
+      "label": "BIP-329"
+    },
+    {
+      "slug": "bip-330",
+      "label": "BIP-330"
+    },
+    {
+      "slug": "bip-341",
+      "label": "BIP-341"
+    },
+    {
+      "slug": "bip-342",
+      "label": "BIP-342"
+    },
+    {
+      "slug": "bip39-io",
+      "label": "Bip39.io"
+    },
+    {
+      "slug": "bitcoin-base-layer",
+      "label": "BitcoinBaseLayer"
+    },
+    {
+      "slug": "bitcoin-native-stablecoins",
+      "label": "Bitcoin-Native Stablecoins"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
+      "slug": "bitfinex",
+      "label": "Bitfinex"
+    },
+    {
+      "slug": "blink-wallet",
+      "label": "Blink Wallet"
+    },
+    {
+      "slug": "brc-20-tokens",
+      "label": "BRC-20 Tokens"
+    },
+    {
+      "slug": "client-side-validation",
+      "label": "Client-Side Validation"
+    },
+    {
+      "slug": "coinbase-prime",
+      "label": "Coinbase Prime"
+    },
+    {
+      "slug": "colored-coins",
+      "label": "Colored Coins"
+    },
+    {
+      "slug": "copper-technologies",
+      "label": "Copper Technologies"
+    },
+    {
+      "slug": "cryptographic-commitment-scheme",
+      "label": "Cryptographic Commitment Scheme"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "CryptographyDomain"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "DigitalAssetDomain"
+    },
+    {
+      "slug": "ethereum-erc-20",
+      "label": "Ethereum ERC-20"
+    },
+    {
+      "slug": "fireblocks",
+      "label": "Fireblocks"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "joltz-wallet",
+      "label": "Joltz Wallet"
+    },
+    {
+      "slug": "kaleido-swap",
+      "label": "KaleidoSwap"
+    },
+    {
+      "slug": "l402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "lightning-asset-channel",
+      "label": "Lightning Asset Channel"
+    },
+    {
+      "slug": "lightning-channels",
+      "label": "Lightning Channels"
+    },
+    {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
+      "slug": "lightning-network-extension",
+      "label": "Lightning Network Extension"
+    },
+    {
+      "slug": "lightning-network-layer",
+      "label": "LightningNetworkLayer"
+    },
+    {
+      "slug": "lightning-network-specification",
+      "label": "Lightning Network Specification"
+    },
+    {
+      "slug": "lightning-terminal",
+      "label": "Lightning Terminal"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "lnp-bp-association",
+      "label": "LNP/BP Association"
+    },
+    {
+      "slug": "machine-to-machine-payments",
+      "label": "Machine-to-Machine Payments"
+    },
+    {
+      "slug": "mast",
+      "label": "MAST"
+    },
+    {
+      "slug": "maxim-orlovsky",
+      "label": "Maxim Orlovsky"
+    },
+    {
+      "slug": "merkle-sum-sparse-merkle-tree",
+      "label": "Merkle Sum Sparse Merkle Tree"
+    },
+    {
+      "slug": "merkle-sum-tree",
+      "label": "Merkle-Sum Tree"
+    },
+    {
+      "slug": "ms-smt-commitment-scheme",
+      "label": "MS-SMT Commitment Scheme"
+    },
+    {
+      "slug": "multi-asset-lightning-payments",
+      "label": "Multi-Asset Lightning Payments"
+    },
+    {
+      "slug": "nfts-on-bitcoin",
+      "label": "NFTs on Bitcoin"
+    },
+    {
+      "slug": "omni-layer",
+      "label": "Omni Layer"
+    },
+    {
+      "slug": "ordinals-protocol",
+      "label": "Ordinals Protocol"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "PaymentSystemsDomain"
+    },
+    {
+      "slug": "peter-todd",
+      "label": "Peter Todd"
+    },
+    {
+      "slug": "phoenix-wallet",
+      "label": "Phoenix Wallet"
+    },
+    {
+      "slug": "programmable-assets",
+      "label": "Programmable Assets"
+    },
+    {
+      "slug": "rfq-market",
+      "label": "RFQ Market"
+    },
+    {
+      "slug": "rfq-multi-asset-routing",
+      "label": "RFQ Multi-Asset Routing"
+    },
+    {
+      "slug": "rgb-protocol",
+      "label": "RGB Protocol"
+    },
+    {
+      "slug": "runes-protocol",
+      "label": "Runes Protocol"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "sparse-merkle-tree",
+      "label": "Sparse Merkle Tree"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "stablecoins-on-bitcoin",
+      "label": "Stablecoins on Bitcoin"
+    },
+    {
+      "slug": "stablesats",
+      "label": "Stablesats"
+    },
+    {
+      "slug": "tapd-daemon",
+      "label": "tapd Daemon"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "taproot-script-leaf",
+      "label": "Taproot Script Leaf"
+    },
+    {
+      "slug": "taproot-transactions",
+      "label": "Taproot Transactions"
+    },
+    {
+      "slug": "taproot-upgrade",
+      "label": "Taproot Upgrade"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "tether-usdt",
+      "label": "Tether USDt"
+    },
+    {
+      "slug": "tether-usdt-on-lightning",
+      "label": "Tether USDt on Lightning"
+    },
+    {
+      "slug": "tlv-encoding",
+      "label": "TLV Encoding"
+    },
+    {
+      "slug": "tlv-encoding",
+      "label": "TLV Encoding"
+    },
+    {
+      "slug": "tokenised-securities-on-bitcoin",
+      "label": "Tokenised Securities on Bitcoin"
+    },
+    {
+      "slug": "universe-gossip-protocol",
+      "label": "Universe Gossip Protocol"
+    },
+    {
+      "slug": "universe-registry",
+      "label": "Universe Registry"
+    },
+    {
+      "slug": "universe-servers",
+      "label": "Universe Servers"
+    },
+    {
+      "slug": "voltage",
+      "label": "Voltage"
+    },
+    {
+      "slug": "x402-protocol",
+      "label": "X402 Protocol"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

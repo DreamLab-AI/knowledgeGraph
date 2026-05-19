@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:cb93a86dee83bbb931e520c8da35db04fc759525ab48ce7543f1e2392531a0b0",
+  "title": "Query Processor",
+  "slug": "query-processor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:query-processor",
+  "domain": "infrastructure",
+  "definition": "QueryProcessor is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "sparql-query-engine",
+      "label": "Sparql Query Engine"
+    }
+  ]
+}

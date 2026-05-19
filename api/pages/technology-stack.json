@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:1a440cd5aaf16575d44c5e879289297f3fe24cddb1237acbb5cfd7b4912535d5",
+  "title": "Technology Stack",
+  "slug": "technology-stack",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technology-stack",
+  "domain": "spatial-computing",
+  "definition": "Technology Stack is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-stack",
+      "label": "Metaverse Stack"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:8ca7b2b852d4cb492bb9467a15aae9d8398c9e9a635c89e88025f3261a08c30b",
+  "title": "Record Keeping System",
+  "slug": "record-keeping-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:record-keeping-system",
+  "domain": "blockchain",
+  "definition": "Record Keeping System is a concept within the blockchain domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    }
+  ]
+}

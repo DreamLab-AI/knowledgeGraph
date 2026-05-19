@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:e8f64ef37623e4b2d25c53455b67475fa3bcd9ca6004161fa4e9a8bc4730152e",
+  "title": "Etsi Metaverse Domain Model",
+  "slug": "etsi-metaverse-domain-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
+  "domain": "spatial-computing",
+  "definition": "A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:domain-model",
+      "label": "Domain Model"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "domain-model",
+      "label": "Domain Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data",
+      "label": "ETSI Domain Data"
+    },
+    {
+      "slug": "etsi-domain-immersive-reality-capture-crossover",
+      "label": "ETSI Domain Immersive + Reality Capture Crossover"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:6cdce7065911b709c5f3ad4a3f4d089a804b3813ccd3ec393c6ddab787b3a766",
+  "title": "User Interface",
+  "slug": "user-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:user-interface",
+  "domain": "infrastructure",
+  "definition": "UserInterface is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "communication-software",
+      "label": "Communication Software"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "digital-art-application",
+      "label": "Digital Art Application"
+    },
+    {
+      "slug": "search-interface",
+      "label": "Search Interface"
+    }
+  ]
+}

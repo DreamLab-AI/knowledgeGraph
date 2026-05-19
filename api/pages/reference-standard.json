@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:31d24181db28218e9ab41c1efebcd0940de60ce0e87e3103010cc2cebc7c1908",
+  "title": "Reference Standard",
+  "slug": "reference-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reference-standard",
+  "domain": "infrastructure",
+  "definition": "ReferenceStandard is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    }
+  ]
+}

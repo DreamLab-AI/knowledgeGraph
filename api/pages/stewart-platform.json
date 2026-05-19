@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:3059f4e86025e17bd60606cd9289a12d792641b836bb891080cce942adad31d1",
+  "title": "Stewart Platform",
+  "slug": "stewart-platform",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:stewart-platform",
+  "domain": "robotics",
+  "definition": "Stewart platform uses six prismatic actuators attached in pairs to baseplate and top plate via universal joints.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:parallel-robot",
+      "label": "Parallel Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "parallel-robot",
+      "label": "Parallel Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

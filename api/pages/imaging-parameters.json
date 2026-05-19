@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0cd495a4bda28dc20de04bcb01cd3926fbcc4963da3eddb3a24e8ec0b0b59667",
+  "title": "Imaging Parameters",
+  "slug": "imaging-parameters",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:imaging-parameters",
+  "domain": "spatial-computing",
+  "definition": "Imaging Parameters is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

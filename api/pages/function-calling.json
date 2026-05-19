@@ -1,0 +1,644 @@
+{
+  "id": "urn:visionflow:page:e5028bdaec825468a7a0a441f74082d95db50d80d7f6d830fa1cff4040c85b7e",
+  "title": "Function Calling",
+  "slug": "function-calling",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:function-calling",
+  "domain": "artificial-intelligence",
+  "definition": "Function Calling (also termed tool use or tool invocation) is the capability of large language models to emit structured requests selecting and parameterising external functions described to them via JSON-Schema tool definitions, with the application layer executing the selected tools and returning results that the model incorporates into subsequent reasoning steps, transforming LLMs from pure text generators into agents that bridge natural language to deterministic computation (databases, REST APIs, code execution sandboxes, retrieval indices, web browsers, filesystems, vector stores), introduced commercially through OpenAI ChatGPT Plugins (March 2023 closed alpha), formalised as a first-class API capability with gpt-3.5-turbo-0613 and gpt-4-0613 (13 June 2023 release introducing the `functions` parameter and `function_call` response field), extended by Anthropic to the Claude 3 family (Opus, Sonnet, Haiku) with tool-use general availability May 2024 returning `tool_use` content blocks within message stop reasons, adopted by Google Gemini (function calling December 2023 in Gemini Pro 1.0 with declarative `FunctionDeclaration` schemas), Mistral (tool use September 2023 in Mistral 7",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:agentic-capability",
+      "label": "Agentic Capability"
+    },
+    {
+      "id": "urn:visionflow:linked:language-model-augmentation",
+      "label": "Language Model Augmentation"
+    },
+    {
+      "id": "urn:visionflow:linked:llm-capability",
+      "label": "LLM Capability"
+    },
+    {
+      "id": "urn:visionflow:linked:structured-output-generation",
+      "label": "Structured Output Generation"
+    },
+    {
+      "id": "urn:visionflow:linked:tool-use",
+      "label": "Tool Use"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:argument-validator",
+        "label": "Argument Validator"
+      },
+      {
+        "id": "urn:visionflow:linked:conversation-loop",
+        "label": "Conversation Loop"
+      },
+      {
+        "id": "urn:visionflow:linked:function-registry",
+        "label": "Function Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-choice-parameter",
+        "label": "Tool Choice Parameter"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-executor",
+        "label": "Tool Executor"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-result-block",
+        "label": "Tool Result Block"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use-block",
+        "label": "Tool Use Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:application-runtime",
+        "label": "Application Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:argument-parser",
+        "label": "Argument Parser"
+      },
+      {
+        "id": "urn:visionflow:linked:conversation-context",
+        "label": "Conversation Context"
+      },
+      {
+        "id": "urn:visionflow:linked:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-implementation",
+        "label": "Tool Implementation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:visionflow:linked:browser-automation-by-llms",
+        "label": "Browser Automation by LLMs"
+      },
+      {
+        "id": "urn:visionflow:linked:code-execution-by-llms",
+        "label": "Code Execution by LLMs"
+      },
+      {
+        "id": "urn:visionflow:linked:computer-use-agents",
+        "label": "Computer Use Agents"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:parallel-tool-calls",
+        "label": "Parallel Tool Calls"
+      },
+      {
+        "id": "urn:visionflow:linked:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:visionflow:linked:streaming-tool-calls",
+        "label": "Streaming Tool Calls"
+      },
+      {
+        "id": "urn:visionflow:linked:structured-outputs-strict-mode",
+        "label": "Structured Outputs Strict Mode"
+      },
+      {
+        "id": "urn:visionflow:linked:toolformer-paradigm",
+        "label": "Toolformer Paradigm"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agentic-capability",
+      "label": "Agentic Capability"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "anthropic-2024-model-context-protocol-specification",
+      "label": "Anthropic 2024 Model Context Protocol Specification"
+    },
+    {
+      "slug": "anthropic-2024-tool-use-documentation",
+      "label": "Anthropic 2024 Tool Use Documentation"
+    },
+    {
+      "slug": "anthropic-tool-use-api",
+      "label": "Anthropic Tool Use API"
+    },
+    {
+      "slug": "application-runtime",
+      "label": "Application Runtime"
+    },
+    {
+      "slug": "argument-parser",
+      "label": "Argument Parser"
+    },
+    {
+      "slug": "argument-validator",
+      "label": "Argument Validator"
+    },
+    {
+      "slug": "beurer-kellner-et-al-2024-lmql",
+      "label": "Beurer-Kellner et al 2024 LMQL"
+    },
+    {
+      "slug": "browser-automation-by-llms",
+      "label": "Browser Automation by LLMs"
+    },
+    {
+      "slug": "chain-of-thought-prompting",
+      "label": "Chain-of-Thought Prompting"
+    },
+    {
+      "slug": "code-execution-by-llms",
+      "label": "Code Execution by LLMs"
+    },
+    {
+      "slug": "code-generation-agents",
+      "label": "Code Generation Agents"
+    },
+    {
+      "slug": "code-interpreter",
+      "label": "Code Interpreter"
+    },
+    {
+      "slug": "computer-use-agents",
+      "label": "Computer Use Agents"
+    },
+    {
+      "slug": "constrained-decoding",
+      "label": "Constrained Decoding"
+    },
+    {
+      "slug": "conversation-context",
+      "label": "Conversation Context"
+    },
+    {
+      "slug": "conversation-loop",
+      "label": "Conversation Loop"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "data-analysis-agents",
+      "label": "Data Analysis Agents"
+    },
+    {
+      "slug": "deep-seek-ai-2024-deep-seek-v3",
+      "label": "DeepSeek-AI 2024 DeepSeek-V3"
+    },
+    {
+      "slug": "direct-api-integration",
+      "label": "Direct API Integration"
+    },
+    {
+      "slug": "function-registry",
+      "label": "Function Registry"
+    },
+    {
+      "slug": "gartner-october-2025-agentic-ai-market-forecast",
+      "label": "Gartner October 2025 Agentic AI Market Forecast"
+    },
+    {
+      "slug": "geng-et-al-2023-grammar-constrained-decoding",
+      "label": "Geng et al 2023 Grammar-Constrained Decoding"
+    },
+    {
+      "slug": "google-2023-gemini-function-calling",
+      "label": "Google 2023 Gemini Function Calling"
+    },
+    {
+      "slug": "google-2025-agent-to-agent-protocol",
+      "label": "Google 2025 Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "google-gemini-function-declarations",
+      "label": "Google Gemini Function Declarations"
+    },
+    {
+      "slug": "greshake-et-al-2023-indirect-prompt-injection",
+      "label": "Greshake et al 2023 Indirect Prompt Injection"
+    },
+    {
+      "slug": "hard-coded-workflow-automation",
+      "label": "Hard-Coded Workflow Automation"
+    },
+    {
+      "slug": "instructor-library-liu-2023",
+      "label": "instructor Library Liu 2023"
+    },
+    {
+      "slug": "json-rpc-2-0",
+      "label": "JSON-RPC 2.0"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "json-schema-draft-2020-12",
+      "label": "JSON Schema Draft 2020-12"
+    },
+    {
+      "slug": "json-schema-specification",
+      "label": "JSON Schema Specification"
+    },
+    {
+      "slug": "lang-chain-documentation",
+      "label": "LangChain Documentation"
+    },
+    {
+      "slug": "language-model-augmentation",
+      "label": "Language Model Augmentation"
+    },
+    {
+      "slug": "language-model-domain",
+      "label": "LanguageModelDomain"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "li-et-al-2023-api-bank",
+      "label": "Li et al 2023 API-Bank"
+    },
+    {
+      "slug": "llama-index",
+      "label": "LlamaIndex"
+    },
+    {
+      "slug": "llm-capability",
+      "label": "LLM Capability"
+    },
+    {
+      "slug": "model-interface-layer",
+      "label": "ModelInterfaceLayer"
+    },
+    {
+      "slug": "multi-step-reasoning",
+      "label": "Multi-Step Reasoning"
+    },
+    {
+      "slug": "open-ai-2023-function-calling-documentation",
+      "label": "OpenAI 2023 Function Calling Documentation"
+    },
+    {
+      "slug": "open-ai-august-2024-structured-outputs-strict-mode",
+      "label": "OpenAI August 2024 Structured Outputs Strict Mode"
+    },
+    {
+      "slug": "open-ai-function-calling-api",
+      "label": "OpenAI Function Calling API"
+    },
+    {
+      "slug": "open-api-3-1",
+      "label": "OpenAPI 3.1"
+    },
+    {
+      "slug": "open-api-specification",
+      "label": "OpenAPI Specification"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "OrchestrationLayer"
+    },
+    {
+      "slug": "owasp-2025-llm-top-10",
+      "label": "OWASP 2025 LLM Top 10"
+    },
+    {
+      "slug": "parallel-tool-calls",
+      "label": "Parallel Tool Calls"
+    },
+    {
+      "slug": "patil-et-al-2023-gorilla",
+      "label": "Patil et al 2023 Gorilla"
+    },
+    {
+      "slug": "perez-ribeiro-2022-ignore-previous-prompt",
+      "label": "Perez Ribeiro 2022 Ignore Previous Prompt"
+    },
+    {
+      "slug": "personal-ai-assistants",
+      "label": "Personal AI Assistants"
+    },
+    {
+      "slug": "plan-and-execute-pattern",
+      "label": "Plan-and-Execute Pattern"
+    },
+    {
+      "slug": "pure-text-completion",
+      "label": "Pure Text Completion"
+    },
+    {
+      "slug": "pydantic-ai-colvin-2024",
+      "label": "Pydantic-AI Colvin 2024"
+    },
+    {
+      "slug": "pydantic-models",
+      "label": "Pydantic Models"
+    },
+    {
+      "slug": "qin-et-al-2023-tool-llm-tool-bench",
+      "label": "Qin et al 2023 ToolLLM ToolBench"
+    },
+    {
+      "slug": "re-act-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "salesforce-2024-x-lam",
+      "label": "Salesforce 2024 xLAM"
+    },
+    {
+      "slug": "schick-et-al-2023-toolformer",
+      "label": "Schick et al 2023 Toolformer"
+    },
+    {
+      "slug": "scientific-discovery-agents",
+      "label": "Scientific Discovery Agents"
+    },
+    {
+      "slug": "server-sent-events",
+      "label": "Server-Sent Events"
+    },
+    {
+      "slug": "shen-et-al-2023-hugging-gpt",
+      "label": "Shen et al 2023 HuggingGPT"
+    },
+    {
+      "slug": "shinn-et-al-2023-reflexion",
+      "label": "Shinn et al 2023 Reflexion"
+    },
+    {
+      "slug": "special-tokens",
+      "label": "Special Tokens"
+    },
+    {
+      "slug": "streaming-tool-calls",
+      "label": "Streaming Tool Calls"
+    },
+    {
+      "slug": "structured-output-generation",
+      "label": "Structured Output Generation"
+    },
+    {
+      "slug": "structured-outputs-strict-mode",
+      "label": "Structured Outputs Strict Mode"
+    },
+    {
+      "slug": "tokenizer-special-tokens",
+      "label": "Tokenizer Special Tokens"
+    },
+    {
+      "slug": "tool-augmented-reasoning",
+      "label": "Tool-Augmented Reasoning"
+    },
+    {
+      "slug": "tool-choice-parameter",
+      "label": "Tool Choice Parameter"
+    },
+    {
+      "slug": "tool-definition",
+      "label": "Tool Definition"
+    },
+    {
+      "slug": "tool-executor",
+      "label": "Tool Executor"
+    },
+    {
+      "slug": "tool-implementation",
+      "label": "Tool Implementation"
+    },
+    {
+      "slug": "tool-result-block",
+      "label": "Tool Result Block"
+    },
+    {
+      "slug": "tool-schema",
+      "label": "Tool Schema"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "tool-use-block",
+      "label": "Tool Use Block"
+    },
+    {
+      "slug": "toolformer-paradigm",
+      "label": "Toolformer Paradigm"
+    },
+    {
+      "slug": "wang-et-al-2024-llm-autonomous-agents-survey",
+      "label": "Wang et al 2024 LLM Autonomous Agents Survey"
+    },
+    {
+      "slug": "willard-louf-2023-outlines-fsm-constrained-decoding",
+      "label": "Willard Louf 2023 Outlines FSM Constrained Decoding"
+    },
+    {
+      "slug": "workflow-orchestration",
+      "label": "Workflow Orchestration"
+    },
+    {
+      "slug": "yan-et-al-2024-berkeley-function-calling-leaderboard",
+      "label": "Yan et al 2024 Berkeley Function-Calling Leaderboard"
+    },
+    {
+      "slug": "yao-et-al-2022-re-act",
+      "label": "Yao et al 2022 ReAct"
+    },
+    {
+      "slug": "yao-et-al-2023-tree-of-thoughts",
+      "label": "Yao et al 2023 Tree of Thoughts"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "ollama",
+      "label": "ollama"
+    }
+  ]
+}

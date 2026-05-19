@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:3c745ef582fddf653bb99e59e9578b71d769e2e75a824947482927c6f7db309a",
+  "title": "Digital Asset Infrastructure",
+  "slug": "digital-asset-infrastructure",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-asset-infrastructure",
+  "domain": "infrastructure",
+  "definition": "The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-systems",
+        "label": "Cryptographic Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:node-network",
+        "label": "Node Network"
+      },
+      {
+        "id": "urn:visionflow:linked:storage-solutions",
+        "label": "Storage Solutions"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-custody",
+        "label": "Asset Custody"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transaction-processing",
+        "label": "Transaction Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-custody",
+      "label": "Asset Custody"
+    },
+    {
+      "slug": "cryptographic-systems",
+      "label": "Cryptographic Systems"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "node-network",
+      "label": "Node Network"
+    },
+    {
+      "slug": "storage-solutions",
+      "label": "Storage Solutions"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "transaction-processing",
+      "label": "Transaction Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    }
+  ]
+}

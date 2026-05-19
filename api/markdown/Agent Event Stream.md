@@ -1,20 +1,536 @@
-iri:: http://narrativegoldmine.com/ontology#AgentEventStream
-uri:: urn:visionclaw:concept:artificial-intelligence:agent-event-stream
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:agent-event-stream
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Agent Event Stream
-content-hash:: sha256-12-f1a2b3c4d5e6
-status:: complete
-maturity:: established
-quality-score:: 0.85
-authority-score:: 0.88
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#AgentEventStream
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:agent-event-stream
 public:: true
+
+# Agent Event Stream
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:9fcb3f1ffa363edc96704b3380b680782c37c446da066d747b5db5e163759645",
+  "@type": "Page",
+  "vc:slug": "agent-event-stream",
+  "title": "Agent Event Stream",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:activity-stream",
+      "vc:label": "ActivityStream"
+    },
+    {
+      "@id": "urn:visionflow:linked:activity-streams-2-0",
+      "vc:label": "ActivityStreams 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:activity-streams-2-0-spec",
+      "vc:label": "ActivityStreams 2.0 Spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:activity-streams-vocabulary",
+      "vc:label": "ActivityStreams Vocabulary"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-alerting",
+      "vc:label": "Automated Alerting"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-analytics-platform",
+      "vc:label": "Data Analytics Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-emission",
+      "vc:label": "Event Emission"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-filtering",
+      "vc:label": "Event Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-indexing",
+      "vc:label": "Event Indexing"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-schemas",
+      "vc:label": "Event Schemas"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-subscription",
+      "vc:label": "Event Subscription"
+    },
+    {
+      "@id": "urn:visionflow:linked:fleet-observability",
+      "vc:label": "Fleet Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitoring-system",
+      "vc:label": "Monitoring System"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability-domain",
+      "vc:label": "ObservabilityDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration-system",
+      "vc:label": "Orchestration System"
+    },
+    {
+      "@id": "urn:visionflow:linked:prd-006",
+      "vc:label": "PRD-006"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-monitoring",
+      "vc:label": "Real-Time Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-streaming",
+      "vc:label": "Real-Time Streaming"
+    },
+    {
+      "@id": "urn:visionflow:linked:telemetry-domain",
+      "vc:label": "TelemetryDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:telemetry-layer",
+      "vc:label": "TelemetryLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-event-streams",
+      "vc:label": "W3C Event Streams"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-socket-protocol",
+      "vc:label": "WebSocket Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-socket-support",
+      "vc:label": "WebSocket Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:work-tracking",
+      "vc:label": "Work Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent-event-stream",
+      "vc:label": "Agent Event Stream"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sovereign-mesh",
+      "vc:label": "Sovereign Mesh"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.88"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f1a2b3c4d5e6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#AgentEventStream"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Agent Event Stream"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.85"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:agent-event-stream"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:agent-event-stream"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fcb3f1ffa363edc96704b3380b680782c37c446da066d747b5db5e163759645@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:agent-event-stream",
+  "@type": "OntologyClass",
+  "label": "Agent Event Stream",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:9fcb3f1ffa363edc96704b3380b680782c37c446da066d747b5db5e163759645"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fcb3f1ffa363edc96704b3380b680782c37c446da066d747b5db5e163759645@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A real-time telemetry stream (surface S6) that emits [[ActivityStream|ActivityStreams]]-based JSON-LD events for agent lifecycle events (birth, startup, activity, completion, error, termination) via WebSocket, Nostr relay, or message queue, enabling external monitoring systems, dashboards, and orchestrators to track agent fleet health and work progress in real-time without polling.",
+  "vc:qualityScore": {
+    "@value": "0.85",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.88",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:event-emission",
+      "vc:label": "Event Emission"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-filtering",
+      "vc:label": "Event Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-indexing",
+      "vc:label": "Event Indexing"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-subscription",
+      "vc:label": "Event Subscription"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-streaming",
+      "vc:label": "Real-Time Streaming"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:activity-streams-vocabulary",
+      "vc:label": "ActivityStreams Vocabulary"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-schemas",
+      "vc:label": "Event Schemas"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-socket-support",
+      "vc:label": "WebSocket Support"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-alerting",
+      "vc:label": "Automated Alerting"
+    },
+    {
+      "@id": "urn:visionflow:linked:fleet-observability",
+      "vc:label": "Fleet Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-monitoring",
+      "vc:label": "Real-Time Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:work-tracking",
+      "vc:label": "Work Tracking"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:activity-streams-2-0",
+      "vc:label": "ActivityStreams 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld-1-1",
+      "vc:label": "JSON-LD 1.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-event-streams",
+      "vc:label": "W3C Event Streams"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:data-analytics-platform",
+      "vc:label": "Data Analytics Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitoring-system",
+      "vc:label": "Monitoring System"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration-system",
+      "vc:label": "Orchestration System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:agent-event-stream:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:9fcb3f1ffa363edc96704b3380b680782c37c446da066d747b5db5e163759645"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ActivityStream|ActivityStreams]]",
+      "resolved": "urn:visionflow:linked:activity-stream",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ActivityStreams 2.0]]",
+      "resolved": "urn:visionflow:linked:activity-streams-2-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ActivityStreams 2.0 Spec]]",
+      "resolved": "urn:visionflow:linked:activity-streams-2-0-spec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ActivityStreams Vocabulary]]",
+      "resolved": "urn:visionflow:linked:activity-streams-vocabulary",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anomaly Detection]]",
+      "resolved": "urn:visionflow:linked:anomaly-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Alerting]]",
+      "resolved": "urn:visionflow:linked:automated-alerting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Analytics Platform]]",
+      "resolved": "urn:visionflow:linked:data-analytics-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Emission]]",
+      "resolved": "urn:visionflow:linked:event-emission",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Filtering]]",
+      "resolved": "urn:visionflow:linked:event-filtering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Indexing]]",
+      "resolved": "urn:visionflow:linked:event-indexing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Schemas]]",
+      "resolved": "urn:visionflow:linked:event-schemas",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Subscription]]",
+      "resolved": "urn:visionflow:linked:event-subscription",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fleet Observability]]",
+      "resolved": "urn:visionflow:linked:fleet-observability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JSON-LD 1.1]]",
+      "resolved": "urn:visionflow:linked:json-ld-1-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Monitoring System]]",
+      "resolved": "urn:visionflow:linked:monitoring-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ObservabilityDomain]]",
+      "resolved": "urn:visionflow:linked:observability-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Orchestration System]]",
+      "resolved": "urn:visionflow:linked:orchestration-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PRD-006]]",
+      "resolved": "urn:visionflow:linked:prd-006",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Monitoring]]",
+      "resolved": "urn:visionflow:linked:real-time-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Streaming]]",
+      "resolved": "urn:visionflow:linked:real-time-streaming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TelemetryDomain]]",
+      "resolved": "urn:visionflow:linked:telemetry-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TelemetryLayer]]",
+      "resolved": "urn:visionflow:linked:telemetry-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C Event Streams]]",
+      "resolved": "urn:visionflow:linked:w3-c-event-streams",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WebSocket Protocol]]",
+      "resolved": "urn:visionflow:linked:web-socket-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WebSocket Support]]",
+      "resolved": "urn:visionflow:linked:web-socket-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Work Tracking]]",
+      "resolved": "urn:visionflow:linked:work-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Event Stream|Event Adapter]]",
+      "resolved": "urn:visionflow:owl:class:agent-event-stream",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sovereign Mesh|mesh-based coordination]]",
+      "resolved": "urn:visionflow:owl:class:sovereign-mesh",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser|urn:visionclaw: URI]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:9fcb3f1ffa363edc96704b3380b680782c37c446da066d747b5db5e163759645@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A real-time telemetry stream (surface S6) that emits [[ActivityStream|ActivityStreams]]-based JSON-LD events for agent lifecycle events (birth, startup, activity, completion, error, termination) via WebSocket, Nostr relay, or message queue, enabling external monitoring systems, dashboards, and orchestrators to track agent fleet health and work progress in real-time without polling.

@@ -1,0 +1,146 @@
+{
+  "id": "urn:visionflow:page:45da067e9908a6c8df3b6bfc85866aca5b0acbb9c4ad081214871d3d830b0a32",
+  "title": "Human Interface Layer (HIL)",
+  "slug": "human-interface-layer-hil",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:human-interface-layer-hil",
+  "domain": "spatial-computing",
+  "definition": "Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:interaction-domain",
+      "label": "Interaction Domain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:haptic-systems",
+        "label": "Haptic Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:input-devices",
+        "label": "Input Devices"
+      },
+      {
+        "id": "urn:visionflow:linked:interaction-models",
+        "label": "Interaction Models"
+      },
+      {
+        "id": "urn:visionflow:linked:output-devices",
+        "label": "Output Devices"
+      },
+      {
+        "id": "urn:visionflow:linked:tracking-systems",
+        "label": "Tracking Systems"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
+        "label": "Hardware Abstraction Layer (HAL)"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:multimodal-feedback",
+        "label": "Multimodal Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:user-immersion",
+        "label": "User Immersion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "haptic-systems",
+      "label": "Haptic Systems"
+    },
+    {
+      "slug": "input-devices",
+      "label": "Input Devices"
+    },
+    {
+      "slug": "interaction-models",
+      "label": "Interaction Models"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "multimodal-feedback",
+      "label": "Multimodal Feedback"
+    },
+    {
+      "slug": "natural-interaction",
+      "label": "Natural Interaction"
+    },
+    {
+      "slug": "output-devices",
+      "label": "Output Devices"
+    },
+    {
+      "slug": "tracking-system",
+      "label": "Tracking System"
+    },
+    {
+      "slug": "tracking-systems",
+      "label": "Tracking Systems"
+    },
+    {
+      "slug": "user-immersion",
+      "label": "User Immersion"
+    },
+    {
+      "slug": "hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "Interaction Domain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    }
+  ],
+  "backlinks": []
+}

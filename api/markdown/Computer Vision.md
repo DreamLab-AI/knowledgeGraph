@@ -1,21 +1,522 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#ComputerVision
-uri:: urn:visionclaw:concept:artificial-intelligence:computer-vision
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:computer-vision
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Computer Vision
-content-hash:: sha256-12-f0a42485a784
-legacy-term-id:: AI-0356
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ComputerVision
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:computer-vision
 public:: true
+
+# Computer Vision
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6",
+  "@type": "Page",
+  "vc:slug": "computer-vision",
+  "title": "Computer Vision",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicle-navigation",
+      "vc:label": "Autonomous Vehicle Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:boring2009scroll",
+      "vc:label": "boring2009scroll"
+    },
+    {
+      "@id": "urn:visionflow:linked:hansberger2017dispelling",
+      "vc:label": "hansberger2017dispelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-processing",
+      "vc:label": "Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:kno-where",
+      "vc:label": "KnoWhere"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:quality-control",
+      "vc:label": "Quality Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-perception",
+      "vc:label": "Robotics Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:surveillance-systems",
+      "vc:label": "Surveillance Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
+      "vc:label": "3D Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:apple",
+      "vc:label": "Apple"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "computer vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "deep learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-classification",
+      "vc:label": "Image Classification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensors",
+      "vc:label": "IoT Sensors"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:medical-imaging-ai",
+      "vc:label": "Medical Imaging AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-tracking",
+      "vc:label": "Motion Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-segmentation",
+      "vc:label": "Semantic Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-pro",
+      "vc:label": "Vision Pro"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f0a42485a784"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ComputerVision"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0356"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Computer Vision"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:computer-vision"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:computer-vision"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:computer-vision",
+  "@type": "OntologyClass",
+  "label": "Computer Vision",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:vision-processing",
+      "vc:label": "Vision Processing"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities. Computer vision encompasses image classification, object detection, segmentation, tracking, 3D reconstruction, and visual reasoning using deep learning architectures, particularly convolutional neural networks, to extract meaningful information from digital images and video.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
+      "vc:label": "3D Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-classification",
+      "vc:label": "Image Classification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-tracking",
+      "vc:label": "Motion Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-segmentation",
+      "vc:label": "Semantic Segmentation"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:image-processing",
+      "vc:label": "Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicle-navigation",
+      "vc:label": "Autonomous Vehicle Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:quality-control",
+      "vc:label": "Quality Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-perception",
+      "vc:label": "Robotics Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:surveillance-systems",
+      "vc:label": "Surveillance Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:medical-imaging-ai",
+      "vc:label": "Medical Imaging AI"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:io-t-sensors",
+      "vc:label": "IoT Sensors"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:computer-vision:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Autonomous Vehicle Navigation]]",
+      "resolved": "urn:visionflow:linked:autonomous-vehicle-navigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[boring2009scroll]]",
+      "resolved": "urn:visionflow:linked:boring2009scroll",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[hansberger2017dispelling]]",
+      "resolved": "urn:visionflow:linked:hansberger2017dispelling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Image Processing]]",
+      "resolved": "urn:visionflow:linked:image-processing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[KnoWhere]]",
+      "resolved": "urn:visionflow:linked:kno-where",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quality Control]]",
+      "resolved": "urn:visionflow:linked:quality-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotics Perception]]",
+      "resolved": "urn:visionflow:linked:robotics-perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Surveillance Systems]]",
+      "resolved": "urn:visionflow:linked:surveillance-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Reconstruction]]",
+      "resolved": "urn:visionflow:owl:class:3-d-reconstruction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Apple]]",
+      "resolved": "urn:visionflow:owl:class:apple",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[computer vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[deep learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feature Extraction]]",
+      "resolved": "urn:visionflow:owl:class:feature-extraction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Image Classification]]",
+      "resolved": "urn:visionflow:owl:class:image-classification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[IoT Sensors]]",
+      "resolved": "urn:visionflow:owl:class:io-t-sensors",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Medical Imaging AI]]",
+      "resolved": "urn:visionflow:owl:class:medical-imaging-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Tracking]]",
+      "resolved": "urn:visionflow:owl:class:motion-tracking",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Object Detection]]",
+      "resolved": "urn:visionflow:owl:class:object-detection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Pattern Recognition]]",
+      "resolved": "urn:visionflow:owl:class:pattern-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Semantic Segmentation]]",
+      "resolved": "urn:visionflow:owl:class:semantic-segmentation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stable Diffusion]]",
+      "resolved": "urn:visionflow:owl:class:stable-diffusion",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Vision Pro]]",
+      "resolved": "urn:visionflow:owl:class:vision-pro",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities. Computer vision encompasses image classification, object detection, segmentation, tracking, 3D reconstruction, and visual reasoning using deep learning architectures, particularly convolutional neural networks, to extract meaningful information from digital images and video.

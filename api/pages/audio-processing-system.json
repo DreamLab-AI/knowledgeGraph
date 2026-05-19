@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:f995224ff2d09997c818bbbb524a0d7367285e5c2605d6016403f48910bc5b99",
+  "title": "Audio Processing System",
+  "slug": "audio-processing-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:audio-processing-system",
+  "domain": "spatial-computing",
+  "definition": "Audio Processing System is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-audio-processor",
+      "label": "Spatial Audio Processor"
+    }
+  ]
+}

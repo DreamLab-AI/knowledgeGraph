@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:5163e231edf5d5258c8dd8052504ef6191e022a0d17f397db601e936ac83e9fb",
+  "title": "relighting",
+  "slug": "relighting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:relighting",
+  "domain": "infrastructure",
+  "definition": "relighting is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "global-lighting",
+      "label": "Global lighting"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "relighting",
+      "label": "relighting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:9107e4859d2c61e25c205494e12ca35a748777c0bef473443ab5975ef6b89927",
+  "title": "System",
+  "slug": "system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:system",
+  "domain": "artificial-intelligence",
+  "definition": "System is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identification-system",
+      "label": "Identification System"
+    }
+  ]
+}

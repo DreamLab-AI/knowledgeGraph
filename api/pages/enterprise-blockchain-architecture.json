@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:bdb12fd3730c7ae2d3237a8f2128b4fdec557356139cf7a799957188f554b8cd",
+  "title": "Enterprise Blockchain Architecture",
+  "slug": "enterprise-blockchain-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:enterprise-blockchain-architecture",
+  "domain": "blockchain",
+  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing [[Consensus Mechanism|consensus mechanisms]], [[Smart Contract|smart contracts]], and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance\u2014exemplified by [[Hyperledger Fabric]], [[Hyperledger Besu]], and [[Corda]].",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bc-0120-consensus-mechanism",
+        "label": "BC-0120-consensus-mechanism"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bc-0001-blockchain",
+      "label": "BC-0001-blockchain"
+    },
+    {
+      "slug": "bc-0120-consensus-mechanism",
+      "label": "BC-0120-consensus-mechanism"
+    },
+    {
+      "slug": "bc-0142-smart-contract",
+      "label": "BC-0142-smart-contract"
+    },
+    {
+      "slug": "bc-0426-hyperledger-fabric",
+      "label": "BC-0426-hyperledger-fabric"
+    },
+    {
+      "slug": "bc-0427-hyperledger-besu",
+      "label": "BC-0427-hyperledger-besu"
+    },
+    {
+      "slug": "bc-0429-permissioned-blockchain",
+      "label": "BC-0429-permissioned-blockchain"
+    },
+    {
+      "slug": "bc-0430-private-channels",
+      "label": "BC-0430-private-channels"
+    },
+    {
+      "slug": "corda",
+      "label": "Corda"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ontology-technical-details",
+      "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    }
+  ]
+}

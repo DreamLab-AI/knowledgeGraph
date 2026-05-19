@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:5aa46440031c85c27ad0d52f31cd478533c4db9f7852ab5be73428766afe2cf2",
+  "title": "Real-time Processing",
+  "slug": "real-time-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:real-time-processing",
+  "domain": "artificial-intelligence",
+  "definition": "Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output. Systems respond to events within strict time constraints (typically milliseconds to seconds), enabling immediate decision-making through continuous stream-oriented processing rather than batch operations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:visionflow:owl:class:data-processing",
+      "label": "Data Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "stream-processing",
+      "label": "Stream Processing"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "batch-processing",
+      "label": "Batch Processing"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event-Driven Architecture"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "behavioural-feedback-loop",
+      "label": "Behavioural Feedback Loop"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    },
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

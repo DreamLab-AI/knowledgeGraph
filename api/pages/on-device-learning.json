@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5",
+  "title": "On-Device Learning",
+  "slug": "on-device-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:on-device-learning",
+  "domain": "artificial-intelligence",
+  "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functionality while addressing challenges of limited computational resources and energy constraints. This approach implements training paradigms including transfer learning where pre-trained base models are fine-tuned on device-specific data adapting final layers to local patterns, few-shot learning enabling rapid adaptation from handful of examples crucial for personalized applications, meta-learning (learning to learn) where models trained to quickly adapt to new tasks with minimal data and computation, and incremental learning continuously updating models as new data arrives without catastrophic forgetting of previous knowledge. Privacy benefits include data localization ensuring sensitive information (health metrics, personal communications, financial transactions) never leaves device eliminating transmission and storage risks, user control maintaining sovereignty over personal data and model ad",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "apple-core-ml",
+      "label": "Apple Core ML"
+    },
+    {
+      "slug": "py-torch-mobile",
+      "label": "PyTorch Mobile"
+    },
+    {
+      "slug": "tensor-flow-lite",
+      "label": "TensorFlow Lite"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

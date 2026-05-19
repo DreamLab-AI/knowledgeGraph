@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:b516230dfd9580847240cb15799ba742d6bc57fa355e866a6e414cc942221219",
+  "title": "Lead Poisoning Hypothesis",
+  "slug": "lead-poisoning-hypothesis",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lead-poisoning-hypothesis",
+  "domain": "infrastructure",
+  "definition": "Lead Poisoning Hypothesis is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "robin-hanson",
+      "label": "Robin Hanson"
+    }
+  ]
+}

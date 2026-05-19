@@ -1,0 +1,214 @@
+{
+  "id": "urn:visionflow:page:07937043b7cd7a99170bc6524cb02fbb48d31e0f358f7c23e15966772d3c1a9b",
+  "title": "Data Fabric Architecture",
+  "slug": "data-fabric-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-fabric-architecture",
+  "domain": "infrastructure",
+  "definition": "An integrated data-management architecture that provides unified access, governance, security, and orchestration across distributed and heterogeneous data sources through active metadata management, automated data integration, and policy-driven controls.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:access-control-layer",
+        "label": "Access Control Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "id": "urn:visionflow:linked:data-integration-service",
+        "label": "Data Integration Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-virtualization",
+        "label": "Data Virtualization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-repository",
+        "label": "Metadata Repository"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-domain-governance",
+        "label": "Cross-Domain Governance"
+      },
+      {
+        "id": "urn:visionflow:linked:data-lineage-tracking",
+        "label": "Data Lineage Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:federated-queries",
+        "label": "Federated Queries"
+      },
+      {
+        "id": "urn:visionflow:linked:self-service-analytics",
+        "label": "Self-Service Analytics"
+      },
+      {
+        "id": "urn:visionflow:linked:unified-data-access",
+        "label": "Unified Data Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control-layer",
+      "label": "Access Control Layer"
+    },
+    {
+      "slug": "cross-domain-governance",
+      "label": "Cross-Domain Governance"
+    },
+    {
+      "slug": "data-catalog",
+      "label": "Data Catalog"
+    },
+    {
+      "slug": "data-integration-service",
+      "label": "Data Integration Service"
+    },
+    {
+      "slug": "data-lineage-tracking",
+      "label": "Data Lineage Tracking"
+    },
+    {
+      "slug": "data-schema",
+      "label": "Data Schema"
+    },
+    {
+      "slug": "distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "slug": "fair-do",
+      "label": "FAIR DO"
+    },
+    {
+      "slug": "federated-queries",
+      "label": "Federated Queries"
+    },
+    {
+      "slug": "gartner-data-fabric-research",
+      "label": "Gartner Data Fabric Research"
+    },
+    {
+      "slug": "self-service-analytics",
+      "label": "Self-Service Analytics"
+    },
+    {
+      "slug": "semantic-layer",
+      "label": "Semantic Layer"
+    },
+    {
+      "slug": "unified-data-access",
+      "label": "Unified Data Access"
+    },
+    {
+      "slug": "w3-c-data-fabric-bp",
+      "label": "W3C Data Fabric BP"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "Computation And Intelligence Domain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "data-virtualization",
+      "label": "Data Virtualization"
+    },
+    {
+      "slug": "enterprise-architecture",
+      "label": "Enterprise Architecture"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metadata-repository",
+      "label": "Metadata Repository"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust And Governance Domain"
+    }
+  ],
+  "backlinks": []
+}

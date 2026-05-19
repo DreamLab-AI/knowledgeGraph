@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:da1d143293bd3581d65d8f77d8d577443fa66a375feee126e308318bb80c8443",
+  "title": "RoBERTa",
+  "slug": "ro-berta",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ro-berta",
+  "domain": "artificial-intelligence",
+  "definition": "Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

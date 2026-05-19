@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:7efedaed93deeab1b920fcc394afaa95af832b26dc945710fa3d16308192f561",
+  "title": "rb 0062 model predictive control",
+  "slug": "rb-0062-model-predictive-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0062-model-predictive-control",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:optimal-control",
+      "label": "Optimal Control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:b5d952c00390f4dce83c1f3fd9fb4c8652fc3d3913947a7c15e92ceb02a670b4",
+  "title": "Warmup",
+  "slug": "warmup",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:warmup",
+  "domain": "spatial-computing",
+  "definition": "A training technique where the learning rate starts small and gradually increases at the beginning of training to stabilise optimisation. Warmup is standard practice for training large transformer models, preventing instability from large gradients early in training.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c",
+  "title": "Sheffield Advanced Manufacturing",
+  "slug": "sheffield-advanced-manufacturing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:sheffield-advanced-manufacturing",
+  "domain": "infrastructure",
+  "definition": "Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "established",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "north-england-innovation-corridor",
+      "label": "North England Innovation Corridor"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ],
+  "backlinks": []
+}

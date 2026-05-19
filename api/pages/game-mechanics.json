@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:f6660a5d7b0417d27b33cbb67745dedef4edcd81841ddb136e0be966e583eb6b",
+  "title": "Game Mechanics",
+  "slug": "game-mechanics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:game-mechanics",
+  "domain": "spatial-computing",
+  "definition": "Game Mechanics is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "npc-interaction",
+      "label": "NPC Interaction"
+    }
+  ]
+}

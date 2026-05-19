@@ -1,0 +1,1296 @@
+{
+  "id": "urn:visionflow:page:d0423c812dc4db39064d3921e957634c01b72e1701279353abac183ac0fbb9ba",
+  "title": "Asia Pacific Regulation",
+  "slug": "asia-pacific-regulation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:asia-pacific-regulation",
+  "domain": "artificial-intelligence",
+  "definition": "**Asia Pacific Regulation** denotes the polycentric, jurisdictionally heterogeneous body of AI, generative-AI, algorithmic, and digital-technology law operating across the Asia-Pacific region between 2023 and 2026, comprising statutory regimes, administrative measures, soft-law guidance, supervisory standards, export controls, and bilateral / multilateral instruments that collectively govern the development, deployment, and cross-border movement of artificial-intelligence systems, foundation models, training data, AI-generated content, semiconductor compute, and personal information across [[China]], [[Japan]], [[South Korea]], [[Singapore]], [[Australia]], [[India]], [[Hong Kong]], [[Taiwan]], the [[ASEAN]] member states, and the [[Asia-Pacific Economic Cooperation]] forum, instantiated by lead instruments including China's [[Interim Measures for Generative AI Services]] (August 2023, jointly issued by [[Cyberspace Administration of China]] with six agencies, 24 articles requiring algorithm filing, security assessments, content labelling, and training-data legality), the [[Provisions on Deep Synthesis of Internet Information Services]] (January 2023) and the [[Measures for Labelli",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cross-border-ai-law",
+      "label": "Cross-Border AI Law"
+    },
+    {
+      "id": "urn:visionflow:linked:digital-technology-policy",
+      "label": "Digital Technology Policy"
+    },
+    {
+      "id": "urn:visionflow:linked:regional-ai-regulation",
+      "label": "Regional AI Regulation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:ai-framework-act",
+        "label": "AI Framework Act"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-verify",
+        "label": "AI Verify"
+      },
+      {
+        "id": "urn:visionflow:linked:asean-ai-governance-guide",
+        "label": "ASEAN AI Governance Guide"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-personal-data-protection-act-2023",
+        "label": "Digital Personal Data Protection Act 2023"
+      },
+      {
+        "id": "urn:visionflow:linked:india-ai-mission",
+        "label": "IndiaAI Mission"
+      },
+      {
+        "id": "urn:visionflow:linked:interim-measures-for-generative-ai-services",
+        "label": "Interim Measures for Generative AI Services"
+      },
+      {
+        "id": "urn:visionflow:linked:meti-ai-guidelines-for-business",
+        "label": "METI AI Guidelines for Business"
+      },
+      {
+        "id": "urn:visionflow:linked:model-ai-governance-framework",
+        "label": "Model AI Governance Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:pcpd-ai-model-personal-data-protection-framework",
+        "label": "PCPD AI Model Personal Data Protection Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:voluntary-ai-safety-standard",
+        "label": "Voluntary AI Safety Standard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:algorithm-filing",
+        "label": "Algorithm Filing"
+      },
+      {
+        "id": "urn:visionflow:linked:content-labelling",
+        "label": "Content Labelling"
+      },
+      {
+        "id": "urn:visionflow:linked:data-localisation",
+        "label": "Data Localisation"
+      },
+      {
+        "id": "urn:visionflow:linked:personal-information-protection-law",
+        "label": "Personal Information Protection Law"
+      },
+      {
+        "id": "urn:visionflow:linked:security-assessment",
+        "label": "Security Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:transparency-obligation",
+        "label": "Transparency Obligation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-compliance",
+        "label": "AI Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-risk-mitigation",
+        "label": "AI Risk Mitigation"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-safety-testing",
+        "label": "AI Safety Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-ai-cooperation",
+        "label": "Cross-Border AI Cooperation"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-model-evaluation",
+        "label": "Frontier Model Evaluation"
+      },
+      {
+        "id": "urn:visionflow:linked:generative-ai-labelling",
+        "label": "Generative AI Labelling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:visionflow:linked:frontier-ai-safety-commitments",
+        "label": "Frontier AI Safety Commitments"
+      },
+      {
+        "id": "urn:visionflow:linked:g20-ai-principles",
+        "label": "G20 AI Principles"
+      },
+      {
+        "id": "urn:visionflow:linked:hiroshima-ai-code-of-conduct",
+        "label": "Hiroshima AI Code of Conduct"
+      },
+      {
+        "id": "urn:visionflow:linked:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:visionflow:linked:seoul-declaration",
+        "label": "Seoul Declaration"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-now-asia-pacific",
+      "label": "Access Now Asia-Pacific"
+    },
+    {
+      "slug": "ada-lovelace-institute",
+      "label": "Ada Lovelace Institute"
+    },
+    {
+      "slug": "agency-for-cultural-affairs",
+      "label": "Agency for Cultural Affairs"
+    },
+    {
+      "slug": "ai-action-plan",
+      "label": "AI Action Plan"
+    },
+    {
+      "slug": "ai-action-summit-paris",
+      "label": "AI Action Summit Paris"
+    },
+    {
+      "slug": "ai-basic-act",
+      "label": "AI Basic Act"
+    },
+    {
+      "slug": "ai-bill",
+      "label": "AI Bill"
+    },
+    {
+      "slug": "ai-compliance",
+      "label": "AI Compliance"
+    },
+    {
+      "slug": "ai-framework-act",
+      "label": "AI Framework Act"
+    },
+    {
+      "slug": "ai-governance-guidelines",
+      "label": "AI Governance Guidelines"
+    },
+    {
+      "slug": "ai-law-china",
+      "label": "AI Law (China)"
+    },
+    {
+      "slug": "ai-promotion-bill",
+      "label": "AI Promotion Bill"
+    },
+    {
+      "slug": "ai-risk-assessment-framework",
+      "label": "AI Risk Assessment Framework"
+    },
+    {
+      "slug": "ai-risk-mitigation",
+      "label": "AI Risk Mitigation"
+    },
+    {
+      "slug": "ai-safety-institute-japan",
+      "label": "AI Safety Institute Japan"
+    },
+    {
+      "slug": "ai-safety-institute-network",
+      "label": "AI Safety Institute Network"
+    },
+    {
+      "slug": "ai-safety-summit",
+      "label": "AI Safety Summit"
+    },
+    {
+      "slug": "ai-safety-testing",
+      "label": "AI Safety Testing"
+    },
+    {
+      "slug": "ai-security-institute",
+      "label": "AI Security Institute"
+    },
+    {
+      "slug": "ai-seoul-summit",
+      "label": "AI Seoul Summit"
+    },
+    {
+      "slug": "ai-strategy-council",
+      "label": "AI Strategy Council"
+    },
+    {
+      "slug": "ai-verify",
+      "label": "AI Verify"
+    },
+    {
+      "slug": "ai-verify-foundation",
+      "label": "AI Verify Foundation"
+    },
+    {
+      "slug": "aigovernance-domain",
+      "label": "AIGovernanceDomain"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "algorithm-filing",
+      "label": "Algorithm Filing"
+    },
+    {
+      "slug": "algorithm-registry",
+      "label": "Algorithm Registry"
+    },
+    {
+      "slug": "algorithmic-transparency",
+      "label": "Algorithmic Transparency"
+    },
+    {
+      "slug": "andrew-buchanan",
+      "label": "Andrew Buchanan"
+    },
+    {
+      "slug": "angela-huyue-zhang",
+      "label": "Angela Huyue Zhang"
+    },
+    {
+      "slug": "anu",
+      "label": "ANU"
+    },
+    {
+      "slug": "apec-ai-initiative",
+      "label": "APEC AI Initiative"
+    },
+    {
+      "slug": "apec-cross-border-privacy-rules",
+      "label": "APEC Cross-Border Privacy Rules"
+    },
+    {
+      "slug": "arm",
+      "label": "ARM"
+    },
+    {
+      "slug": "article-19",
+      "label": "Article 19"
+    },
+    {
+      "slug": "article-30-4-copyright-act-japan",
+      "label": "Article 30-4 Copyright Act (Japan)"
+    },
+    {
+      "slug": "asean",
+      "label": "ASEAN"
+    },
+    {
+      "slug": "asean-ai-governance-guide",
+      "label": "ASEAN AI Governance Guide"
+    },
+    {
+      "slug": "asean-digital-economy-framework-agreement",
+      "label": "ASEAN Digital Economy Framework Agreement"
+    },
+    {
+      "slug": "asean-digital-ministers-meeting",
+      "label": "ASEAN Digital Ministers Meeting"
+    },
+    {
+      "slug": "asean-oecd-ai-policy-observatory",
+      "label": "ASEAN-OECD-AI Policy Observatory"
+    },
+    {
+      "slug": "asia-pacific-economic-cooperation",
+      "label": "Asia-Pacific Economic Cooperation"
+    },
+    {
+      "slug": "australia",
+      "label": "Australia"
+    },
+    {
+      "slug": "australian-federal-police-facial-recognition",
+      "label": "Australian Federal Police facial recognition"
+    },
+    {
+      "slug": "australian-human-rights-commission",
+      "label": "Australian Human Rights Commission"
+    },
+    {
+      "slug": "australian-human-rights-commission-ai-guidance",
+      "label": "Australian Human Rights Commission AI Guidance"
+    },
+    {
+      "slug": "benevolent-ai",
+      "label": "BenevolentAI"
+    },
+    {
+      "slug": "bharat-ai-mission",
+      "label": "Bharat AI Mission"
+    },
+    {
+      "slug": "bis-export-controls",
+      "label": "BIS Export Controls"
+    },
+    {
+      "slug": "bletchley-declaration",
+      "label": "Bletchley Declaration"
+    },
+    {
+      "slug": "brazil-ai-bill-pl-2338",
+      "label": "Brazil AI Bill PL 2338"
+    },
+    {
+      "slug": "brookings-center-for-east-asia-policy-studies",
+      "label": "Brookings Center for East Asia Policy Studies"
+    },
+    {
+      "slug": "bunnings",
+      "label": "Bunnings"
+    },
+    {
+      "slug": "cabinet-secretariat-ai-strategy-2022",
+      "label": "Cabinet Secretariat AI Strategy 2022"
+    },
+    {
+      "slug": "canada-aida",
+      "label": "Canada AIDA"
+    },
+    {
+      "slug": "carnegie-endowment-asia-programme",
+      "label": "Carnegie Endowment Asia Programme"
+    },
+    {
+      "slug": "carnegie-endowment-china-ai-regulations",
+      "label": "Carnegie Endowment China AI Regulations"
+    },
+    {
+      "slug": "centre-for-ai-in-government-and-society",
+      "label": "Centre for AI in Government and Society"
+    },
+    {
+      "slug": "centre-for-the-study-of-existential-risk",
+      "label": "Centre for the Study of Existential Risk"
+    },
+    {
+      "slug": "china",
+      "label": "China"
+    },
+    {
+      "slug": "china-negative-list",
+      "label": "China Negative List"
+    },
+    {
+      "slug": "clearview-ai",
+      "label": "Clearview AI"
+    },
+    {
+      "slug": "consent-manager",
+      "label": "Consent Manager"
+    },
+    {
+      "slug": "content-labelling",
+      "label": "Content Labelling"
+    },
+    {
+      "slug": "contract-guidelines-on-ai",
+      "label": "Contract Guidelines on AI"
+    },
+    {
+      "slug": "cosmic-ray-benchmark",
+      "label": "Cosmic Ray Benchmark"
+    },
+    {
+      "slug": "cptpp",
+      "label": "CPTPP"
+    },
+    {
+      "slug": "cross-border-ai-cooperation",
+      "label": "Cross-Border AI Cooperation"
+    },
+    {
+      "slug": "cross-border-ai-law",
+      "label": "Cross-Border AI Law"
+    },
+    {
+      "slug": "cross-border-data-transfer",
+      "label": "Cross-Border Data Transfer"
+    },
+    {
+      "slug": "cross-border-data-transfer-guidance",
+      "label": "Cross-Border Data Transfer Guidance"
+    },
+    {
+      "slug": "cross-border-privacy-enforcement-arrangement",
+      "label": "Cross-Border Privacy Enforcement Arrangement"
+    },
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "cybersecurity-review-office",
+      "label": "Cybersecurity Review Office"
+    },
+    {
+      "slug": "cyberspace-administration-of-china",
+      "label": "Cyberspace Administration of China"
+    },
+    {
+      "slug": "data-localisation",
+      "label": "Data Localisation"
+    },
+    {
+      "slug": "data-privacy-act-2012",
+      "label": "Data Privacy Act 2012"
+    },
+    {
+      "slug": "data-security-law",
+      "label": "Data Security Law"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
+      "slug": "department-for-business-and-trade",
+      "label": "Department for Business and Trade"
+    },
+    {
+      "slug": "department-of-industry-science-and-resources",
+      "label": "Department of Industry Science and Resources"
+    },
+    {
+      "slug": "department-of-industry-science-and-resources",
+      "label": "Department of Industry, Science and Resources"
+    },
+    {
+      "slug": "deployment-considerations",
+      "label": "Deployment Considerations"
+    },
+    {
+      "slug": "digital-asia-hub",
+      "label": "Digital Asia Hub"
+    },
+    {
+      "slug": "digital-personal-data-protection-act-2023",
+      "label": "Digital Personal Data Protection Act 2023"
+    },
+    {
+      "slug": "digital-personal-data-protection-rules",
+      "label": "Digital Personal Data Protection Rules"
+    },
+    {
+      "slug": "digital-policy-domain",
+      "label": "DigitalPolicyDomain"
+    },
+    {
+      "slug": "digital-technology-policy",
+      "label": "Digital Technology Policy"
+    },
+    {
+      "slug": "etda-ai-ethics-guidelines",
+      "label": "ETDA AI Ethics Guidelines"
+    },
+    {
+      "slug": "european-union",
+      "label": "European Union"
+    },
+    {
+      "slug": "executive-order-14110",
+      "label": "Executive Order 14110"
+    },
+    {
+      "slug": "executive-order-14179",
+      "label": "Executive Order 14179"
+    },
+    {
+      "slug": "financial-services-agency-ai-guidelines",
+      "label": "Financial Services Agency AI Guidelines"
+    },
+    {
+      "slug": "financial-services-commission",
+      "label": "Financial Services Commission"
+    },
+    {
+      "slug": "foreign-commonwealth-and-development-office",
+      "label": "Foreign, Commonwealth and Development Office"
+    },
+    {
+      "slug": "foundation-model-governance",
+      "label": "Foundation Model Governance"
+    },
+    {
+      "slug": "frank-pasquale",
+      "label": "Frank Pasquale"
+    },
+    {
+      "slug": "frontier-ai-safety-commitments",
+      "label": "Frontier AI Safety Commitments"
+    },
+    {
+      "slug": "frontier-model-evaluation",
+      "label": "Frontier Model Evaluation"
+    },
+    {
+      "slug": "g20-ai-principles",
+      "label": "G20 AI Principles"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-adequacy-decision",
+      "label": "GDPR Adequacy Decision"
+    },
+    {
+      "slug": "generative-ai-evaluation-sandbox",
+      "label": "Generative AI Evaluation Sandbox"
+    },
+    {
+      "slug": "generative-ai-labelling",
+      "label": "Generative AI Labelling"
+    },
+    {
+      "slug": "global-cbpr-forum",
+      "label": "Global CBPR Forum"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "greater-bay-area",
+      "label": "Greater Bay Area"
+    },
+    {
+      "slug": "helen-toner",
+      "label": "Helen Toner"
+    },
+    {
+      "slug": "hiroshima-ai-code-of-conduct",
+      "label": "Hiroshima AI Code of Conduct"
+    },
+    {
+      "slug": "hiroshima-ai-process",
+      "label": "Hiroshima AI Process"
+    },
+    {
+      "slug": "hiroshima-ai-process-friends-group",
+      "label": "Hiroshima AI Process Friends Group"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "hong-kong-health-authority",
+      "label": "Hong Kong Health Authority"
+    },
+    {
+      "slug": "hong-kong-mainland-standard-contract",
+      "label": "Hong Kong-Mainland Standard Contract"
+    },
+    {
+      "slug": "hong-kong-sfc",
+      "label": "Hong Kong SFC"
+    },
+    {
+      "slug": "iiit-hyderabad",
+      "label": "IIIT Hyderabad"
+    },
+    {
+      "slug": "iit-delhi",
+      "label": "IIT Delhi"
+    },
+    {
+      "slug": "imda",
+      "label": "IMDA"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "india",
+      "label": "India"
+    },
+    {
+      "slug": "india-ai-compute",
+      "label": "IndiaAI Compute"
+    },
+    {
+      "slug": "india-ai-datasets-platform",
+      "label": "IndiaAI Datasets Platform"
+    },
+    {
+      "slug": "india-ai-mission",
+      "label": "IndiaAI Mission"
+    },
+    {
+      "slug": "indo-pacific-economic-framework",
+      "label": "Indo-Pacific Economic Framework"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "InstitutionalLayer"
+    },
+    {
+      "slug": "interim-measures-for-generative-ai-services",
+      "label": "Interim Measures for Generative AI Services"
+    },
+    {
+      "slug": "internal-governance-framework",
+      "label": "Internal Governance Framework"
+    },
+    {
+      "slug": "international-ai-safety-report",
+      "label": "International AI Safety Report"
+    },
+    {
+      "slug": "international-guiding-principles",
+      "label": "International Guiding Principles"
+    },
+    {
+      "slug": "internet-freedom-foundation",
+      "label": "Internet Freedom Foundation"
+    },
+    {
+      "slug": "iruda-2-0",
+      "label": "Iruda 2.0"
+    },
+    {
+      "slug": "isms-ai-certification",
+      "label": "ISMS-AI certification"
+    },
+    {
+      "slug": "iso-iec-jtc-1-sc-42",
+      "label": "ISO/IEC JTC 1/SC 42"
+    },
+    {
+      "slug": "january-2025-bis-framework-for-ai-diffusion",
+      "label": "January 2025 BIS Framework for AI Diffusion"
+    },
+    {
+      "slug": "japan",
+      "label": "Japan"
+    },
+    {
+      "slug": "japan-ai-safety-institute",
+      "label": "Japan AI Safety Institute"
+    },
+    {
+      "slug": "japan-fair-trade-commission",
+      "label": "Japan Fair Trade Commission"
+    },
+    {
+      "slug": "japan-fsa",
+      "label": "Japan FSA"
+    },
+    {
+      "slug": "japan-us-aisi-mou",
+      "label": "Japan-US AISI MOU"
+    },
+    {
+      "slug": "jftc-report-on-competition-in-generative-ai",
+      "label": "JFTC Report on Competition in Generative AI"
+    },
+    {
+      "slug": "joshua-goldstein",
+      "label": "Joshua Goldstein"
+    },
+    {
+      "slug": "kaist",
+      "label": "KAIST"
+    },
+    {
+      "slug": "kominfo-generative-ai-circular",
+      "label": "KOMINFO Generative AI Circular"
+    },
+    {
+      "slug": "korea-ai-safety-institute",
+      "label": "Korea AI Safety Institute"
+    },
+    {
+      "slug": "korea-internet-and-security-agency",
+      "label": "Korea Internet & Security Agency"
+    },
+    {
+      "slug": "korea-us-aisi-mou",
+      "label": "Korea-US AISI MOU"
+    },
+    {
+      "slug": "kyoto-university",
+      "label": "Kyoto University"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "leverhulme-centre-for-the-future-of-intelligence",
+      "label": "Leverhulme Centre for the Future of Intelligence"
+    },
+    {
+      "slug": "liverpool",
+      "label": "Liverpool"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "mandatory-ai-guardrails",
+      "label": "Mandatory AI Guardrails"
+    },
+    {
+      "slug": "mandatory-ai-guardrails-proposals-paper",
+      "label": "Mandatory AI Guardrails Proposals Paper"
+    },
+    {
+      "slug": "mark-findlay",
+      "label": "Mark Findlay"
+    },
+    {
+      "slug": "mas-feat-principles",
+      "label": "MAS FEAT Principles"
+    },
+    {
+      "slug": "matt-sheehan",
+      "label": "Matt Sheehan"
+    },
+    {
+      "slug": "measures-for-labelling-ai-generated-content",
+      "label": "Measures for Labelling AI-Generated Content"
+    },
+    {
+      "slug": "measures-for-labelling-of-ai-generated-synthetic-content",
+      "label": "Measures for Labelling of AI-Generated Synthetic Content"
+    },
+    {
+      "slug": "meit-y",
+      "label": "MeitY"
+    },
+    {
+      "slug": "meit-y-ai-advisory-march-2024",
+      "label": "MeitY AI Advisory March 2024"
+    },
+    {
+      "slug": "meti",
+      "label": "METI"
+    },
+    {
+      "slug": "meti-ai-guidelines-for-business",
+      "label": "METI AI Guidelines for Business"
+    },
+    {
+      "slug": "ministry-of-education",
+      "label": "Ministry of Education"
+    },
+    {
+      "slug": "ministry-of-electronics-and-information-technology",
+      "label": "Ministry of Electronics and Information Technology"
+    },
+    {
+      "slug": "ministry-of-food-and-drug-safety",
+      "label": "Ministry of Food and Drug Safety"
+    },
+    {
+      "slug": "ministry-of-health-labour-and-welfare",
+      "label": "Ministry of Health, Labour and Welfare"
+    },
+    {
+      "slug": "ministry-of-internal-affairs-and-communications",
+      "label": "Ministry of Internal Affairs and Communications"
+    },
+    {
+      "slug": "model-ai-governance-framework",
+      "label": "Model AI Governance Framework"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
+      "slug": "monetary-authority-of-singapore",
+      "label": "Monetary Authority of Singapore"
+    },
+    {
+      "slug": "nanyang-technological-university",
+      "label": "Nanyang Technological University"
+    },
+    {
+      "slug": "national-ai-roadmap-2021-2025",
+      "label": "National AI Roadmap 2021-2025"
+    },
+    {
+      "slug": "national-ai-strategy",
+      "label": "National AI Strategy"
+    },
+    {
+      "slug": "national-people-s-congress",
+      "label": "National People's Congress"
+    },
+    {
+      "slug": "national-science-and-technology-council-taiwan",
+      "label": "National Science and Technology Council Taiwan"
+    },
+    {
+      "slug": "national-strategy-on-r-and-d-and-application-of-ai",
+      "label": "National Strategy on R&D and Application of AI"
+    },
+    {
+      "slug": "national-university-of-singapore",
+      "label": "National University of Singapore"
+    },
+    {
+      "slug": "national-validated-end-user",
+      "label": "National Validated End User"
+    },
+    {
+      "slug": "naver-hyper-clova-x",
+      "label": "Naver HyperCLOVA X"
+    },
+    {
+      "slug": "newcastle",
+      "label": "Newcastle"
+    },
+    {
+      "slug": "niti-aayog-national-strategy-for-ai",
+      "label": "NITI Aayog National Strategy for AI"
+    },
+    {
+      "slug": "nvidia-h20",
+      "label": "Nvidia H20"
+    },
+    {
+      "slug": "october-2022-bis-interim-final-rule",
+      "label": "October 2022 BIS Interim Final Rule"
+    },
+    {
+      "slug": "october-2023-bis-updated-rules",
+      "label": "October 2023 BIS Updated Rules"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "office-of-the-privacy-commissioner-for-personal-data",
+      "label": "Office of the Privacy Commissioner for Personal Data"
+    },
+    {
+      "slug": "office-of-the-privacy-commissioner-hong-kong",
+      "label": "Office of the Privacy Commissioner Hong Kong"
+    },
+    {
+      "slug": "online-safety-act-2021",
+      "label": "Online Safety Act 2021"
+    },
+    {
+      "slug": "online-safety-amendment-social-media-minimum-age-act-2024",
+      "label": "Online Safety Amendment (Social Media Minimum Age) Act 2024"
+    },
+    {
+      "slug": "open-ai-japan",
+      "label": "OpenAI Japan"
+    },
+    {
+      "slug": "open-ai-korea",
+      "label": "OpenAI Korea"
+    },
+    {
+      "slug": "oxford-internet-institute",
+      "label": "Oxford Internet Institute"
+    },
+    {
+      "slug": "pcpd-ai-model-personal-data-protection-framework",
+      "label": "PCPD AI Model Personal Data Protection Framework"
+    },
+    {
+      "slug": "pdpa",
+      "label": "PDPA"
+    },
+    {
+      "slug": "pdpa-amendment-2024",
+      "label": "PDPA Amendment 2024"
+    },
+    {
+      "slug": "performance-density",
+      "label": "Performance Density"
+    },
+    {
+      "slug": "personal-data-privacy-ordinance",
+      "label": "Personal Data (Privacy) Ordinance"
+    },
+    {
+      "slug": "personal-data-protection-law-2022",
+      "label": "Personal Data Protection Law 2022"
+    },
+    {
+      "slug": "personal-information-protection-act",
+      "label": "Personal Information Protection Act"
+    },
+    {
+      "slug": "personal-information-protection-commission",
+      "label": "Personal Information Protection Commission"
+    },
+    {
+      "slug": "personal-information-protection-commission-japan",
+      "label": "Personal Information Protection Commission (Japan)"
+    },
+    {
+      "slug": "personal-information-protection-commission-korea",
+      "label": "Personal Information Protection Commission (Korea)"
+    },
+    {
+      "slug": "personal-information-protection-law",
+      "label": "Personal Information Protection Law"
+    },
+    {
+      "slug": "peter-cihon",
+      "label": "Peter Cihon"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "privacy-and-other-legislation-amendment-act-2024",
+      "label": "Privacy and Other Legislation Amendment Act 2024"
+    },
+    {
+      "slug": "project-moonshot",
+      "label": "Project Moonshot"
+    },
+    {
+      "slug": "provisions-on-deep-synthesis-of-internet-information-services",
+      "label": "Provisions on Deep Synthesis of Internet Information Services"
+    },
+    {
+      "slug": "provisions-on-promotion-and-standardisation-of-cross-border-data-flows",
+      "label": "Provisions on Promotion and Standardisation of Cross-Border Data Flows"
+    },
+    {
+      "slug": "provisions-on-recommendation-algorithms",
+      "label": "Provisions on Recommendation Algorithms"
+    },
+    {
+      "slug": "provisions-on-security-assessment-of-internet-information-services-with-public-opinion-attributes-or-social-mobilisation-capabilities",
+      "label": "Provisions on Security Assessment of Internet Information Services with Public Opinion Attributes or Social Mobilisation Capabilities"
+    },
+    {
+      "slug": "quantexa",
+      "label": "Quantexa"
+    },
+    {
+      "slug": "regional-ai-regulation",
+      "label": "Regional AI Regulation"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "RegulatoryDomain"
+    },
+    {
+      "slug": "regulatory-sandbox",
+      "label": "Regulatory Sandbox"
+    },
+    {
+      "slug": "securities-and-exchange-board-of-india",
+      "label": "Securities and Exchange Board of India"
+    },
+    {
+      "slug": "security-assessment",
+      "label": "Security Assessment"
+    },
+    {
+      "slug": "self-regulatory-organisation",
+      "label": "Self-Regulatory Organisation"
+    },
+    {
+      "slug": "seoul-declaration",
+      "label": "Seoul Declaration"
+    },
+    {
+      "slug": "seoul-national-university",
+      "label": "Seoul National University"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    },
+    {
+      "slug": "significant-data-fiduciary",
+      "label": "Significant Data Fiduciary"
+    },
+    {
+      "slug": "singapore",
+      "label": "Singapore"
+    },
+    {
+      "slug": "singapore-trade-pacts",
+      "label": "Singapore Trade Pacts"
+    },
+    {
+      "slug": "smic",
+      "label": "SMIC"
+    },
+    {
+      "slug": "smriti-parsheera",
+      "label": "Smriti Parsheera"
+    },
+    {
+      "slug": "south-korea",
+      "label": "South Korea"
+    },
+    {
+      "slug": "special-action-against-ai-generated-pornographic-content",
+      "label": "Special Action against AI-Generated Pornographic Content"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
+    },
+    {
+      "slug": "stakeholder-interaction",
+      "label": "Stakeholder Interaction"
+    },
+    {
+      "slug": "standard-contract-clauses",
+      "label": "Standard Contract Clauses"
+    },
+    {
+      "slug": "stanford-hai-2024-ai-index",
+      "label": "Stanford HAI 2024 AI Index"
+    },
+    {
+      "slug": "stanford-hai-ai-index-2024",
+      "label": "Stanford HAI AI Index 2024"
+    },
+    {
+      "slug": "sungmin-choi",
+      "label": "Sungmin Choi"
+    },
+    {
+      "slug": "synthesia",
+      "label": "Synthesia"
+    },
+    {
+      "slug": "taiwan",
+      "label": "Taiwan"
+    },
+    {
+      "slug": "telecom-regulatory-authority-of-india",
+      "label": "Telecom Regulatory Authority of India"
+    },
+    {
+      "slug": "therapeutic-goods-administration",
+      "label": "Therapeutic Goods Administration"
+    },
+    {
+      "slug": "tony-blair-institute",
+      "label": "Tony Blair Institute"
+    },
+    {
+      "slug": "transparency-obligation",
+      "label": "Transparency Obligation"
+    },
+    {
+      "slug": "uk-ai-regulation-white-paper",
+      "label": "UK AI Regulation White Paper"
+    },
+    {
+      "slug": "uk-korea-ai-cooperation",
+      "label": "UK-Korea AI Cooperation"
+    },
+    {
+      "slug": "uk-singapore-ai-cooperation-mou",
+      "label": "UK-Singapore AI Cooperation MOU"
+    },
+    {
+      "slug": "uk-singapore-digital-economy-agreement",
+      "label": "UK-Singapore Digital Economy Agreement"
+    },
+    {
+      "slug": "un-special-rapporteur-on-freedom-of-opinion-and-expression",
+      "label": "UN Special Rapporteur on Freedom of Opinion and Expression"
+    },
+    {
+      "slug": "united-states",
+      "label": "United States"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-hong-kong",
+      "label": "University of Hong Kong"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "university-of-sydney",
+      "label": "University of Sydney"
+    },
+    {
+      "slug": "university-of-tokyo",
+      "label": "University of Tokyo"
+    },
+    {
+      "slug": "us-ai-safety-institute",
+      "label": "US AI Safety Institute"
+    },
+    {
+      "slug": "us-bis-export-controls",
+      "label": "US BIS Export Controls"
+    },
+    {
+      "slug": "us-bureau-of-industry-and-security",
+      "label": "US Bureau of Industry and Security"
+    },
+    {
+      "slug": "us-executive-action-on-ai",
+      "label": "US Executive Action on AI"
+    },
+    {
+      "slug": "validated-end-user",
+      "label": "Validated End User"
+    },
+    {
+      "slug": "vasp-regulation",
+      "label": "VASP Regulation"
+    },
+    {
+      "slug": "veritas-initiative",
+      "label": "Veritas Initiative"
+    },
+    {
+      "slug": "voluntary-ai-safety-standard",
+      "label": "Voluntary AI Safety Standard"
+    },
+    {
+      "slug": "watermarking",
+      "label": "Watermarking"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
+    },
+    {
+      "slug": "wto",
+      "label": "WTO"
+    },
+    {
+      "slug": "yoonkyo-oh",
+      "label": "Yoonkyo Oh"
+    },
+    {
+      "slug": "yuriko-haga",
+      "label": "Yuriko Haga"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-office",
+      "label": "AI Office"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

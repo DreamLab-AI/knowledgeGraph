@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:465ac8a91e0d124833f008965565e5f46f8686117b49aa168245075929766f66",
+  "title": "Virscapes",
+  "slug": "virscapes",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virscapes",
+  "domain": "infrastructure",
+  "definition": "Virscapes is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

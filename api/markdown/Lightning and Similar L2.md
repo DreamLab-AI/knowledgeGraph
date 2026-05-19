@@ -1,20 +1,1598 @@
-iri:: http://narrativegoldmine.com/ontology#LightningAndSimilarL2
-uri:: urn:visionclaw:concept:blockchain:lightning-and-similar-l2
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:lightning-and-similar-l2
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Lightning and Similar L2
-content-hash:: sha256-12-18e4ab171071
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#LightningAndSimilarL2
+legacy_uri:: urn:visionclaw:concept:blockchain:lightning-and-similar-l2
 public:: true
+
+# Lightning and Similar L2
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7cb9ccff9d45892e0881a881dc746c0b0fa6121230c3076ba2f421a3480ddede",
+  "@type": "Page",
+  "vc:slug": "lightning-and-similar-l2",
+  "title": "Lightning and Similar L2",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:acinq",
+      "vc:label": "ACINQ"
+    },
+    {
+      "@id": "urn:visionflow:linked:adam-back",
+      "vc:label": "Adam Back"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai",
+      "vc:label": "AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agents",
+      "vc:label": "AI Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agents",
+      "vc:label": "AI Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agents",
+      "vc:label": "AI Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-driven-routing-optimization",
+      "vc:label": "AI-Driven Routing Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:linked:antonopoulos2021mastering",
+      "vc:label": "antonopoulos2021mastering"
+    },
+    {
+      "@id": "urn:visionflow:linked:ark",
+      "vc:label": "Ark"
+    },
+    {
+      "@id": "urn:visionflow:linked:ark2023spec",
+      "vc:label": "ark2023spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agents",
+      "vc:label": "Autonomous Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:basis-of-lightning-technology",
+      "vc:label": "Basis of Lightning Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-bonds",
+      "vc:label": "Bitcoin Bonds"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-domain",
+      "vc:label": "Bitcoin Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin-wallet",
+      "vc:label": "Bitcoin Wallet"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoinai2025",
+      "vc:label": "bitcoinai2025"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoinvisuals2025",
+      "vc:label": "bitcoinvisuals2025"
+    },
+    {
+      "@id": "urn:visionflow:linked:blind-signatures",
+      "vc:label": "Blind Signatures"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockstream",
+      "vc:label": "Blockstream"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockstream2023liquid",
+      "vc:label": "blockstream2023liquid"
+    },
+    {
+      "@id": "urn:visionflow:linked:bolt",
+      "vc:label": "BOLT"
+    },
+    {
+      "@id": "urn:visionflow:linked:bolt11",
+      "vc:label": "BOLT11"
+    },
+    {
+      "@id": "urn:visionflow:linked:bolt12",
+      "vc:label": "BOLT12"
+    },
+    {
+      "@id": "urn:visionflow:linked:breez",
+      "vc:label": "Breez"
+    },
+    {
+      "@id": "urn:visionflow:linked:btc",
+      "vc:label": "BTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:cash-app",
+      "vc:label": "Cash App"
+    },
+    {
+      "@id": "urn:visionflow:linked:cashu2024spec",
+      "vc:label": "cashu2024spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:chaum1985security",
+      "vc:label": "chaum1985security"
+    },
+    {
+      "@id": "urn:visionflow:linked:chaumian-e-cash",
+      "vc:label": "Chaumian e-cash"
+    },
+    {
+      "@id": "urn:visionflow:linked:confidential-transactions",
+      "vc:label": "Confidential Transactions"
+    },
+    {
+      "@id": "urn:visionflow:linked:consensus",
+      "vc:label": "Consensus"
+    },
+    {
+      "@id": "urn:visionflow:linked:core-lightning",
+      "vc:label": "Core Lightning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic",
+      "vc:label": "Cryptographic"
+    },
+    {
+      "@id": "urn:visionflow:linked:daric",
+      "vc:label": "Daric"
+    },
+    {
+      "@id": "urn:visionflow:linked:david-chaum",
+      "vc:label": "David Chaum"
+    },
+    {
+      "@id": "urn:visionflow:linked:divakaruni2022lightning",
+      "vc:label": "divakaruni2022lightning"
+    },
+    {
+      "@id": "urn:visionflow:linked:double-spend",
+      "vc:label": "Double-Spend"
+    },
+    {
+      "@id": "urn:visionflow:linked:double-spend",
+      "vc:label": "Double-Spend"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-cash",
+      "vc:label": "E-cash"
+    },
+    {
+      "@id": "urn:visionflow:linked:eclair",
+      "vc:label": "Eclair"
+    },
+    {
+      "@id": "urn:visionflow:linked:el-salvador",
+      "vc:label": "El Salvador"
+    },
+    {
+      "@id": "urn:visionflow:linked:elsalvador2024bonds",
+      "vc:label": "elsalvador2024bonds"
+    },
+    {
+      "@id": "urn:visionflow:linked:federation",
+      "vc:label": "Federation"
+    },
+    {
+      "@id": "urn:visionflow:linked:fedimint",
+      "vc:label": "Fedimint"
+    },
+    {
+      "@id": "urn:visionflow:linked:green-wallet",
+      "vc:label": "Green Wallet"
+    },
+    {
+      "@id": "urn:visionflow:linked:greenlight",
+      "vc:label": "Greenlight"
+    },
+    {
+      "@id": "urn:visionflow:linked:hash-time-locked-contract",
+      "vc:label": "Hash Time Locked Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:hashcash",
+      "vc:label": "Hashcash"
+    },
+    {
+      "@id": "urn:visionflow:linked:htlc",
+      "vc:label": "HTLC"
+    },
+    {
+      "@id": "urn:visionflow:linked:htlc",
+      "vc:label": "HTLC"
+    },
+    {
+      "@id": "urn:visionflow:linked:http-402",
+      "vc:label": "HTTP 402"
+    },
+    {
+      "@id": "urn:visionflow:linked:http-402-payment-required",
+      "vc:label": "HTTP 402 Payment Required"
+    },
+    {
+      "@id": "urn:visionflow:linked:inbound-liquidity",
+      "vc:label": "Inbound Liquidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:invoice",
+      "vc:label": "Invoice"
+    },
+    {
+      "@id": "urn:visionflow:linked:invoice",
+      "vc:label": "Invoice"
+    },
+    {
+      "@id": "urn:visionflow:linked:joseph-poon",
+      "vc:label": "Joseph Poon"
+    },
+    {
+      "@id": "urn:visionflow:linked:l402-protocol",
+      "vc:label": "L402 Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:l402-protocol",
+      "vc:label": "L402 Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-1",
+      "vc:label": "Layer 1"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-2",
+      "vc:label": "Layer 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-labs",
+      "vc:label": "Lightning Labs"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-node",
+      "vc:label": "Lightning Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-node",
+      "vc:label": "Lightning Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-node",
+      "vc:label": "Lightning Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-service-provider",
+      "vc:label": "Lightning Service Provider"
+    },
+    {
+      "@id": "urn:visionflow:linked:lightning-service-provider",
+      "vc:label": "Lightning Service Provider"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquid-network",
+      "vc:label": "Liquid Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquid-network",
+      "vc:label": "Liquid Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity",
+      "vc:label": "Liquidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm",
+      "vc:label": "LLM"
+    },
+    {
+      "@id": "urn:visionflow:linked:lnbits",
+      "vc:label": "LNBits"
+    },
+    {
+      "@id": "urn:visionflow:linked:lnd",
+      "vc:label": "LND"
+    },
+    {
+      "@id": "urn:visionflow:linked:macaroon",
+      "vc:label": "Macaroon"
+    },
+    {
+      "@id": "urn:visionflow:linked:macaroon",
+      "vc:label": "Macaroon"
+    },
+    {
+      "@id": "urn:visionflow:linked:mirzaei2022daric",
+      "vc:label": "mirzaei2022daric"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-signature",
+      "vc:label": "Multi-signature"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr",
+      "vc:label": "Nostr"
+    },
+    {
+      "@id": "urn:visionflow:linked:nwosu2022fedimint",
+      "vc:label": "nwosu2022fedimint"
+    },
+    {
+      "@id": "urn:visionflow:linked:obi-nwosu",
+      "vc:label": "Obi Nwosu"
+    },
+    {
+      "@id": "urn:visionflow:linked:off-chain",
+      "vc:label": "Off-chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-chain",
+      "vc:label": "On-chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:onion-routing",
+      "vc:label": "Onion Routing"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source",
+      "vc:label": "Open Source"
+    },
+    {
+      "@id": "urn:visionflow:linked:osuntokun2020l402",
+      "vc:label": "osuntokun2020l402"
+    },
+    {
+      "@id": "urn:visionflow:linked:pay-per-use",
+      "vc:label": "Pay-per-use"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-channels",
+      "vc:label": "Payment Channels"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-channels",
+      "vc:label": "Payment Channels"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-channels",
+      "vc:label": "Payment Channels"
+    },
+    {
+      "@id": "urn:visionflow:linked:payment-protocols",
+      "vc:label": "Payment Protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-to-peer",
+      "vc:label": "Peer-to-Peer"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-to-peer",
+      "vc:label": "Peer-to-Peer"
+    },
+    {
+      "@id": "urn:visionflow:linked:peg-out",
+      "vc:label": "Peg-out"
+    },
+    {
+      "@id": "urn:visionflow:linked:peter-todd",
+      "vc:label": "Peter Todd"
+    },
+    {
+      "@id": "urn:visionflow:linked:pickhardt2021optimized",
+      "vc:label": "pickhardt2021optimized"
+    },
+    {
+      "@id": "urn:visionflow:linked:poon2016bitcoin",
+      "vc:label": "poon2016bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:linked:pubky",
+      "vc:label": "Pubky"
+    },
+    {
+      "@id": "urn:visionflow:linked:qr-code",
+      "vc:label": "QR Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:qr-code",
+      "vc:label": "QR Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurring-payments",
+      "vc:label": "Recurring Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurring-payments",
+      "vc:label": "Recurring Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:rohrer2019discharged",
+      "vc:label": "rohrer2019discharged"
+    },
+    {
+      "@id": "urn:visionflow:linked:rollup",
+      "vc:label": "Rollup"
+    },
+    {
+      "@id": "urn:visionflow:linked:routing",
+      "vc:label": "Routing"
+    },
+    {
+      "@id": "urn:visionflow:linked:satoshi",
+      "vc:label": "Satoshi"
+    },
+    {
+      "@id": "urn:visionflow:linked:scaling-solutions",
+      "vc:label": "Scaling Solutions"
+    },
+    {
+      "@id": "urn:visionflow:linked:scaling-solutions",
+      "vc:label": "Scaling Solutions"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-tokens",
+      "vc:label": "Security Tokens"
+    },
+    {
+      "@id": "urn:visionflow:linked:seed-phrase",
+      "vc:label": "Seed Phrase"
+    },
+    {
+      "@id": "urn:visionflow:linked:soft-fork",
+      "vc:label": "Soft Fork"
+    },
+    {
+      "@id": "urn:visionflow:linked:spotify",
+      "vc:label": "Spotify"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-payments",
+      "vc:label": "Streaming Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-payments",
+      "vc:label": "Streaming Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-payments",
+      "vc:label": "Streaming Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-payments",
+      "vc:label": "Streaming Payments"
+    },
+    {
+      "@id": "urn:visionflow:linked:strike",
+      "vc:label": "Strike"
+    },
+    {
+      "@id": "urn:visionflow:linked:strike2023global",
+      "vc:label": "strike2023global"
+    },
+    {
+      "@id": "urn:visionflow:linked:telegram",
+      "vc:label": "Telegram"
+    },
+    {
+      "@id": "urn:visionflow:linked:thaddeus-dryja",
+      "vc:label": "Thaddeus Dryja"
+    },
+    {
+      "@id": "urn:visionflow:linked:transactions-per-second",
+      "vc:label": "Transactions Per Second"
+    },
+    {
+      "@id": "urn:visionflow:linked:two-way-peg",
+      "vc:label": "Two-way Peg"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "User Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "User Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:utxo",
+      "vc:label": "UTXO"
+    },
+    {
+      "@id": "urn:visionflow:linked:validity-rollups",
+      "vc:label": "Validity Rollups"
+    },
+    {
+      "@id": "urn:visionflow:linked:visa",
+      "vc:label": "VISA"
+    },
+    {
+      "@id": "urn:visionflow:linked:watchtower",
+      "vc:label": "Watchtower"
+    },
+    {
+      "@id": "urn:visionflow:linked:x402-protocol",
+      "vc:label": "X402 Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:x402-protocol",
+      "vc:label": "X402 Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:x402spec2024",
+      "vc:label": "x402spec2024"
+    },
+    {
+      "@id": "urn:visionflow:linked:zabka2022short",
+      "vc:label": "zabka2022short"
+    },
+    {
+      "@id": "urn:visionflow:linked:zaps",
+      "vc:label": "Zaps"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "vc:label": "Byzantine Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cashu",
+      "vc:label": "Cashu"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cypherpunk",
+      "vc:label": "Cypherpunk"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:double-spending",
+      "vc:label": "Double-Spending"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:full-node",
+      "vc:label": "Full Node"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:full-node",
+      "vc:label": "Full Node"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-network",
+      "vc:label": "Lightning Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:liquidity-pool",
+      "vc:label": "Liquidity Pool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mempool",
+      "vc:label": "Mempool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:micropayment",
+      "vc:label": "Micropayment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:micropayments",
+      "vc:label": "Micropayments"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:micropayments",
+      "vc:label": "Micropayments"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "Proof of Work"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sidechain",
+      "vc:label": "Sidechain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stablecoin",
+      "vc:label": "Stablecoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transaction",
+      "vc:label": "Transaction"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-18e4ab171071"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#LightningAndSimilarL2"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Lightning and Similar L2"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:lightning-and-similar-l2"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:lightning-and-similar-l2"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7cb9ccff9d45892e0881a881dc746c0b0fa6121230c3076ba2f421a3480ddede@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+  "@type": "OntologyClass",
+  "label": "Lightning and Similar L2",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:layer2",
+      "vc:label": "Layer2"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7cb9ccff9d45892e0881a881dc746c0b0fa6121230c3076ba2f421a3480ddede"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7cb9ccff9d45892e0881a881dc746c0b0fa6121230c3076ba2f421a3480ddede@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Lightning and Similar L2 is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:lightning-and-similar-l2:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7cb9ccff9d45892e0881a881dc746c0b0fa6121230c3076ba2f421a3480ddede"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ACINQ]]",
+      "resolved": "urn:visionflow:linked:acinq",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adam Back]]",
+      "resolved": "urn:visionflow:linked:adam-back",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI]]",
+      "resolved": "urn:visionflow:linked:ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent]]",
+      "resolved": "urn:visionflow:linked:ai-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent|AI agent]]",
+      "resolved": "urn:visionflow:linked:ai-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agents]]",
+      "resolved": "urn:visionflow:linked:ai-agents",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agents|AI actors]]",
+      "resolved": "urn:visionflow:linked:ai-agents",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agents|AI agents]]",
+      "resolved": "urn:visionflow:linked:ai-agents",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI-Driven Routing Optimization]]",
+      "resolved": "urn:visionflow:linked:ai-driven-routing-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anthropic]]",
+      "resolved": "urn:visionflow:linked:anthropic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[antonopoulos2021mastering]]",
+      "resolved": "urn:visionflow:linked:antonopoulos2021mastering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ark]]",
+      "resolved": "urn:visionflow:linked:ark",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ark2023spec]]",
+      "resolved": "urn:visionflow:linked:ark2023spec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Agents|Autonomous AI agents]]",
+      "resolved": "urn:visionflow:linked:autonomous-agents",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Basis of Lightning Technology]]",
+      "resolved": "urn:visionflow:linked:basis-of-lightning-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Bonds]]",
+      "resolved": "urn:visionflow:linked:bitcoin-bonds",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Domain]]",
+      "resolved": "urn:visionflow:linked:bitcoin-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin Wallet|Bitcoin wallets]]",
+      "resolved": "urn:visionflow:linked:bitcoin-wallet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[bitcoinai2025]]",
+      "resolved": "urn:visionflow:linked:bitcoinai2025",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[bitcoinvisuals2025]]",
+      "resolved": "urn:visionflow:linked:bitcoinvisuals2025",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blind Signatures]]",
+      "resolved": "urn:visionflow:linked:blind-signatures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockstream]]",
+      "resolved": "urn:visionflow:linked:blockstream",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[blockstream2023liquid]]",
+      "resolved": "urn:visionflow:linked:blockstream2023liquid",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BOLT]]",
+      "resolved": "urn:visionflow:linked:bolt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BOLT11]]",
+      "resolved": "urn:visionflow:linked:bolt11",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BOLT12]]",
+      "resolved": "urn:visionflow:linked:bolt12",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Breez]]",
+      "resolved": "urn:visionflow:linked:breez",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BTC]]",
+      "resolved": "urn:visionflow:linked:btc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cash App]]",
+      "resolved": "urn:visionflow:linked:cash-app",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[cashu2024spec]]",
+      "resolved": "urn:visionflow:linked:cashu2024spec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[chaum1985security]]",
+      "resolved": "urn:visionflow:linked:chaum1985security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Chaumian e-cash]]",
+      "resolved": "urn:visionflow:linked:chaumian-e-cash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Confidential Transactions]]",
+      "resolved": "urn:visionflow:linked:confidential-transactions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consensus]]",
+      "resolved": "urn:visionflow:linked:consensus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Core Lightning]]",
+      "resolved": "urn:visionflow:linked:core-lightning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic]]",
+      "resolved": "urn:visionflow:linked:cryptographic",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Daric]]",
+      "resolved": "urn:visionflow:linked:daric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[David Chaum]]",
+      "resolved": "urn:visionflow:linked:david-chaum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[divakaruni2022lightning]]",
+      "resolved": "urn:visionflow:linked:divakaruni2022lightning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Double-Spend|double-spend]]",
+      "resolved": "urn:visionflow:linked:double-spend",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Double-Spend|double-spends]]",
+      "resolved": "urn:visionflow:linked:double-spend",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[E-cash]]",
+      "resolved": "urn:visionflow:linked:e-cash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Eclair]]",
+      "resolved": "urn:visionflow:linked:eclair",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[El Salvador]]",
+      "resolved": "urn:visionflow:linked:el-salvador",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[elsalvador2024bonds]]",
+      "resolved": "urn:visionflow:linked:elsalvador2024bonds",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Federation]]",
+      "resolved": "urn:visionflow:linked:federation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fedimint]]",
+      "resolved": "urn:visionflow:linked:fedimint",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Green Wallet]]",
+      "resolved": "urn:visionflow:linked:green-wallet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Greenlight]]",
+      "resolved": "urn:visionflow:linked:greenlight",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hash Time Locked Contract]]",
+      "resolved": "urn:visionflow:linked:hash-time-locked-contract",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hashcash]]",
+      "resolved": "urn:visionflow:linked:hashcash",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HTLC]]",
+      "resolved": "urn:visionflow:linked:htlc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HTLC|HTLCs]]",
+      "resolved": "urn:visionflow:linked:htlc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HTTP 402]]",
+      "resolved": "urn:visionflow:linked:http-402",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[HTTP 402 Payment Required]]",
+      "resolved": "urn:visionflow:linked:http-402-payment-required",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inbound Liquidity]]",
+      "resolved": "urn:visionflow:linked:inbound-liquidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Invoice]]",
+      "resolved": "urn:visionflow:linked:invoice",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Invoice|invoices]]",
+      "resolved": "urn:visionflow:linked:invoice",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Joseph Poon]]",
+      "resolved": "urn:visionflow:linked:joseph-poon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[L402 Protocol]]",
+      "resolved": "urn:visionflow:linked:l402-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[L402 Protocol|L402]]",
+      "resolved": "urn:visionflow:linked:l402-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large Language Model|LLM]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 1]]",
+      "resolved": "urn:visionflow:linked:layer-1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer 2]]",
+      "resolved": "urn:visionflow:linked:layer-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Labs]]",
+      "resolved": "urn:visionflow:linked:lightning-labs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Node|Lightning nodes]]",
+      "resolved": "urn:visionflow:linked:lightning-node",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Node|Node]]",
+      "resolved": "urn:visionflow:linked:lightning-node",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Node|nodes]]",
+      "resolved": "urn:visionflow:linked:lightning-node",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Service Provider|LSP]]",
+      "resolved": "urn:visionflow:linked:lightning-service-provider",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lightning Service Provider|LSPs]]",
+      "resolved": "urn:visionflow:linked:lightning-service-provider",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquid Network]]",
+      "resolved": "urn:visionflow:linked:liquid-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquid Network|Liquid]]",
+      "resolved": "urn:visionflow:linked:liquid-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquidity]]",
+      "resolved": "urn:visionflow:linked:liquidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LLM]]",
+      "resolved": "urn:visionflow:linked:llm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LNBits]]",
+      "resolved": "urn:visionflow:linked:lnbits",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LND]]",
+      "resolved": "urn:visionflow:linked:lnd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Macaroon]]",
+      "resolved": "urn:visionflow:linked:macaroon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Macaroon|macaroons]]",
+      "resolved": "urn:visionflow:linked:macaroon",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[mirzaei2022daric]]",
+      "resolved": "urn:visionflow:linked:mirzaei2022daric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-signature|multi-sig]]",
+      "resolved": "urn:visionflow:linked:multi-signature",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr]]",
+      "resolved": "urn:visionflow:linked:nostr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[nwosu2022fedimint]]",
+      "resolved": "urn:visionflow:linked:nwosu2022fedimint",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Obi Nwosu]]",
+      "resolved": "urn:visionflow:linked:obi-nwosu",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Off-chain]]",
+      "resolved": "urn:visionflow:linked:off-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[On-chain]]",
+      "resolved": "urn:visionflow:linked:on-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Onion Routing]]",
+      "resolved": "urn:visionflow:linked:onion-routing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Open Source]]",
+      "resolved": "urn:visionflow:linked:open-source",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[osuntokun2020l402]]",
+      "resolved": "urn:visionflow:linked:osuntokun2020l402",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pay-per-use]]",
+      "resolved": "urn:visionflow:linked:pay-per-use",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Channels]]",
+      "resolved": "urn:visionflow:linked:payment-channels",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Channels|Payment Channel]]",
+      "resolved": "urn:visionflow:linked:payment-channels",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Channels|payment channel]]",
+      "resolved": "urn:visionflow:linked:payment-channels",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Payment Protocols]]",
+      "resolved": "urn:visionflow:linked:payment-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peer-to-Peer]]",
+      "resolved": "urn:visionflow:linked:peer-to-peer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peer-to-Peer|p2p]]",
+      "resolved": "urn:visionflow:linked:peer-to-peer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peg-out]]",
+      "resolved": "urn:visionflow:linked:peg-out",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peter Todd]]",
+      "resolved": "urn:visionflow:linked:peter-todd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[pickhardt2021optimized]]",
+      "resolved": "urn:visionflow:linked:pickhardt2021optimized",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[poon2016bitcoin]]",
+      "resolved": "urn:visionflow:linked:poon2016bitcoin",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pubky]]",
+      "resolved": "urn:visionflow:linked:pubky",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[QR Code]]",
+      "resolved": "urn:visionflow:linked:qr-code",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[QR Code|QR codes]]",
+      "resolved": "urn:visionflow:linked:qr-code",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recurring Payments|recurring payment]]",
+      "resolved": "urn:visionflow:linked:recurring-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recurring Payments|recurring payments]]",
+      "resolved": "urn:visionflow:linked:recurring-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[rohrer2019discharged]]",
+      "resolved": "urn:visionflow:linked:rohrer2019discharged",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rollup]]",
+      "resolved": "urn:visionflow:linked:rollup",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Routing]]",
+      "resolved": "urn:visionflow:linked:routing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Satoshi|satoshis]]",
+      "resolved": "urn:visionflow:linked:satoshi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scaling Solutions]]",
+      "resolved": "urn:visionflow:linked:scaling-solutions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scaling Solutions|scaling]]",
+      "resolved": "urn:visionflow:linked:scaling-solutions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Security Tokens|security tokens]]",
+      "resolved": "urn:visionflow:linked:security-tokens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Seed Phrase]]",
+      "resolved": "urn:visionflow:linked:seed-phrase",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Soft Fork]]",
+      "resolved": "urn:visionflow:linked:soft-fork",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Spotify]]",
+      "resolved": "urn:visionflow:linked:spotify",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Streaming Payments]]",
+      "resolved": "urn:visionflow:linked:streaming-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Streaming Payments|streaming micropayments]]",
+      "resolved": "urn:visionflow:linked:streaming-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Streaming Payments|streaming payments]]",
+      "resolved": "urn:visionflow:linked:streaming-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Streaming Payments|streaming services]]",
+      "resolved": "urn:visionflow:linked:streaming-payments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strike]]",
+      "resolved": "urn:visionflow:linked:strike",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[strike2023global]]",
+      "resolved": "urn:visionflow:linked:strike2023global",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Telegram]]",
+      "resolved": "urn:visionflow:linked:telegram",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Thaddeus Dryja]]",
+      "resolved": "urn:visionflow:linked:thaddeus-dryja",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transactions Per Second|transactions per second]]",
+      "resolved": "urn:visionflow:linked:transactions-per-second",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Two-way Peg]]",
+      "resolved": "urn:visionflow:linked:two-way-peg",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Experience|UX]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UTXO|UTXOs]]",
+      "resolved": "urn:visionflow:linked:utxo",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Validity Rollups]]",
+      "resolved": "urn:visionflow:linked:validity-rollups",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VISA]]",
+      "resolved": "urn:visionflow:linked:visa",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Watchtower]]",
+      "resolved": "urn:visionflow:linked:watchtower",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[X402 Protocol]]",
+      "resolved": "urn:visionflow:linked:x402-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[X402 Protocol|X402]]",
+      "resolved": "urn:visionflow:linked:x402-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[x402spec2024]]",
+      "resolved": "urn:visionflow:linked:x402spec2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[zabka2022short]]",
+      "resolved": "urn:visionflow:linked:zabka2022short",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Zaps]]",
+      "resolved": "urn:visionflow:linked:zaps",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence|AI]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Byzantine Fault Tolerance|byzantine fault tolerant]]",
+      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cashu]]",
+      "resolved": "urn:visionflow:owl:class:cashu",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cypherpunk|cypherpunks]]",
+      "resolved": "urn:visionflow:owl:class:cypherpunk",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Double-Spending]]",
+      "resolved": "urn:visionflow:owl:class:double-spending",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Full Node]]",
+      "resolved": "urn:visionflow:owl:class:full-node",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Full Node|full nodes]]",
+      "resolved": "urn:visionflow:owl:class:full-node",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning Network|Lightning]]",
+      "resolved": "urn:visionflow:owl:class:lightning-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Liquidity Pool]]",
+      "resolved": "urn:visionflow:owl:class:liquidity-pool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mempool]]",
+      "resolved": "urn:visionflow:owl:class:mempool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Micropayment]]",
+      "resolved": "urn:visionflow:owl:class:micropayment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Micropayments]]",
+      "resolved": "urn:visionflow:owl:class:micropayments",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Micropayments|micropayment]]",
+      "resolved": "urn:visionflow:owl:class:micropayments",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Privacy]]",
+      "resolved": "urn:visionflow:owl:class:privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof of Work]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sidechain]]",
+      "resolved": "urn:visionflow:owl:class:sidechain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract|Smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stablecoin|stablecoins]]",
+      "resolved": "urn:visionflow:owl:class:stablecoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transaction|tx]]",
+      "resolved": "urn:visionflow:owl:class:transaction",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7cb9ccff9d45892e0881a881dc746c0b0fa6121230c3076ba2f421a3480ddede@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Lightning and Similar L2 is a concept within the ngm domain.

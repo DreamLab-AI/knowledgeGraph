@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:9bb62210defb05ebc38d5b2cf277289cb733a738b996347ee26de572d7430e9d",
+  "title": "Digital Marketplace",
+  "slug": "digital-marketplace",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-marketplace",
+  "domain": "spatial-computing",
+  "definition": "A virtual platform enabling the discovery, purchase, sale, and exchange of digital assets, NFTs, virtual goods, and services within metaverse environments, utilising blockchain technology for transparent transactions, ownership verification, and decentralised commerce. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:e-commerce",
+      "label": "E-Commerce"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:digital-wallets",
+        "label": "Digital Wallets"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:nft-trading",
+        "label": "NFT Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-asset-exchange",
+        "label": "Virtual Asset Exchange"
+      },
+      {
+        "id": "urn:visionflow:owl:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-wallets",
+      "label": "Digital Wallets"
+    },
+    {
+      "slug": "nft-trading",
+      "label": "NFT Trading"
+    },
+    {
+      "slug": "virtual-asset-exchange",
+      "label": "Virtual Asset Exchange"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    }
+  ]
+}

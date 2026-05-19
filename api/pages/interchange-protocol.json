@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:a76a51013d8adc9c01df7d066c8f3227c7de41c3850e445f2914f506a9c2cc4e",
+  "title": "Interchange Protocol",
+  "slug": "interchange-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:interchange-protocol",
+  "domain": "spatial-computing",
+  "definition": "Interchange Protocol is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    }
+  ]
+}

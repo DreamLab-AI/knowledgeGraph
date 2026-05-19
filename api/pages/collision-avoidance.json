@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673",
+  "title": "Collision Avoidance",
+  "slug": "collision-avoidance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:collision-avoidance",
+  "domain": "robotics",
+  "definition": "**Collision Avoidance** - An active safety mechanism using [[Sensors]] (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify [[Robot Trajectories]] to prevent unintended contact with people, equipment, or structures.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.58,
+  "authorityScore": 0.11,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:emergency-stop",
+        "label": "Emergency Stop"
+      },
+      {
+        "id": "urn:visionflow:owl:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:safe-human-robot-proximity",
+        "label": "Safe Human-Robot Proximity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "emergency-stop",
+      "label": "Emergency Stop"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    },
+    {
+      "slug": "robot-trajectories",
+      "label": "Robot Trajectories"
+    },
+    {
+      "slug": "safe-human-robot-proximity",
+      "label": "Safe Human-Robot Proximity"
+    },
+    {
+      "slug": "safety-system",
+      "label": "Safety System"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

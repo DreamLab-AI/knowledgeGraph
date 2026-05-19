@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e",
+  "title": "Advice for developing GenAI",
+  "slug": "advice-for-developing-gen-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:advice-for-developing-gen-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Advice for developing GenAI is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "q-lo-ra",
+      "label": "qLoRA"
+    },
+    {
+      "slug": "runway",
+      "label": "Runway"
+    },
+    {
+      "slug": "vercel",
+      "label": "Vercel"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "OpenAI Whisper"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:10c7f9373938c2f02722e28963e6bf990d0c2d81f5e8ab25e682275758d51bda",
+  "title": "Watermarking Service",
+  "slug": "watermarking-service",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:watermarking-service",
+  "domain": "spatial-computing",
+  "definition": "Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:content-authentication",
+      "label": "Content Authentication"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-authentication",
+      "label": "Content Authentication"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    }
+  ]
+}

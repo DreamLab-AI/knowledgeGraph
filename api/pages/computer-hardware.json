@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:aee970ae249a4bfe789bd23d743b60e3566888391bb33388c4b5e45060d4ca46",
+  "title": "Computer Hardware",
+  "slug": "computer-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:computer-hardware",
+  "domain": "artificial-intelligence",
+  "definition": "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Processing Units (GPUs), Tensor Processing Units (TPUs), Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and neuromorphic chips. Modern AI hardware emphasizes parallel processing, high memory bandwidth, low-precision arithmetic (FP16, INT8), and energy efficiency. Specialized accelerators like NVIDIA A100/H100, Google TPU v4/v5, and Intel Gaudi enable training of billion-parameter models and real-time inference at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-accelerator",
+      "label": "AI Accelerator"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "neuromorphic-hardware",
+      "label": "Neuromorphic Hardware"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    }
+  ]
+}

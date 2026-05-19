@@ -1,0 +1,160 @@
+{
+  "id": "urn:visionflow:page:8eac5623679584d44b833c267c3cd520e1dbc8bb42d22ccc144f4d502816e310",
+  "title": "Swarm Robotics",
+  "slug": "swarm-robotics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:swarm-robotics",
+  "domain": "robotics",
+  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and [[DecentralizedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating [[EmergentBehavior|emergent]] system-level intelligence enabling tasks like coordinated navigation, object transport, and environmental sensing that exceed individual capabilities. Applications span [[SearchAndRescue|search and rescue]], agricultural monitoring, warehouse logistics, and construction automation, with resilience from [[FaultTolerance|fault tolerance]] and scalability enabling deployment of thousands of autonomous agents.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bio-inspired-robotics",
+      "label": "BioInspiredRobotics"
+    },
+    {
+      "slug": "collective-intelligence",
+      "label": "CollectiveIntelligence"
+    },
+    {
+      "slug": "communicates-via",
+      "label": "communicatesVia"
+    },
+    {
+      "slug": "consists-of-robots",
+      "label": "consistsOfRobots"
+    },
+    {
+      "slug": "decentralised-control",
+      "label": "DecentralisedControl"
+    },
+    {
+      "slug": "decentralized-control",
+      "label": "DecentralizedControl"
+    },
+    {
+      "slug": "decentralized-control",
+      "label": "DecentralizedControl"
+    },
+    {
+      "slug": "dt-coordinated-by",
+      "label": "dt:coordinatedBy"
+    },
+    {
+      "slug": "dt-governed-by",
+      "label": "dt:governedBy"
+    },
+    {
+      "slug": "dt-optimized-via",
+      "label": "dt:optimizedVia"
+    },
+    {
+      "slug": "dt-simulated-in",
+      "label": "dt:simulatedIn"
+    },
+    {
+      "slug": "dt-tracked-on",
+      "label": "dt:trackedOn"
+    },
+    {
+      "slug": "emergent-behavior",
+      "label": "EmergentBehavior"
+    },
+    {
+      "slug": "emergent-behavior",
+      "label": "EmergentBehavior"
+    },
+    {
+      "slug": "evolutionary-algorithm",
+      "label": "EvolutionaryAlgorithm"
+    },
+    {
+      "slug": "exhibits-behavior",
+      "label": "exhibitsBehavior"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "search-and-rescue",
+      "label": "SearchAndRescue"
+    },
+    {
+      "slug": "self-organization",
+      "label": "SelfOrganization"
+    },
+    {
+      "slug": "uses-coordination",
+      "label": "usesCoordination"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "BlockchainNetwork"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "ConsensusAlgorithm"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "FaultTolerance"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "VirtualEnvironment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    }
+  ]
+}

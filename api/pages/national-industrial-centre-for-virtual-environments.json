@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:de79604daa429e64f4fd4d07e7e293ec88f59c81de448f0dfda240790b65cd40",
+  "title": "National Industrial Centre for Virtual Environments",
+  "slug": "national-industrial-centre-for-virtual-environments",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:national-industrial-centre-for-virtual-environments",
+  "domain": "spatial-computing",
+  "definition": "National Industrial Centre for Virtual Environments is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "octave-multi-model-laboratory",
+      "label": "Octave Multi Model Laboratory"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

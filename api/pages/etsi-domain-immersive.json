@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:733f6157fffd812f58493fb16cf608d07e3535adfaba61c9b9426e38f6b776f4",
+  "title": "Etsi Domain Immersive",
+  "slug": "etsi-domain-immersive",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-immersive",
+  "domain": "spatial-computing",
+  "definition": "The ETSI (European Telecommunications Standards Institute) technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:etsi-standards",
+      "label": "ETSI Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi-standards",
+      "label": "ETSI Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-immersive-reality-capture-crossover",
+      "label": "ETSI Domain Immersive + Reality Capture Crossover"
+    }
+  ]
+}

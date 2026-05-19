@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:051fc1df18f9e85e1be4cfe563ec2d01e52310388c524b240f371504bc8cd070",
+  "title": "Search Technology",
+  "slug": "search-technology",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:search-technology",
+  "domain": "artificial-intelligence",
+  "definition": "Search Technology is a concept within the ai domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

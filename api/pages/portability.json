@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:31ef4014be14247fcbb59f7f1df7f0dd4af6da43a774484d3462f0fdc1dac112",
+  "title": "Portability",
+  "slug": "portability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:portability",
+  "domain": "spatial-computing",
+  "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[USD]]), metadata schemas, and blockchain bridges\u2014enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemplified by [[Ready Player Me]] cross-platform avatars and [[Decentraland]] NFT portability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "ReadyPlayerMe"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

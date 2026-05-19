@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:acef20737e818fe9de04804f56d13a8dc8b1475296daacecff236bd92ff1482e",
+  "title": "Technical Standards",
+  "slug": "technical-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technical-standards",
+  "domain": "spatial-computing",
+  "definition": "Formal specifications, protocols, and guidelines that define how metaverse technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "compatibility-standards",
+      "label": "Compatibility Standards"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "digital-identity-standards",
+      "label": "Digital Identity Standards"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "environmental-standards",
+      "label": "Environmental Standards"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "network-standards",
+      "label": "Network Standards"
+    },
+    {
+      "slug": "virtual-environment-specification",
+      "label": "Virtual Environment Specification"
+    }
+  ]
+}

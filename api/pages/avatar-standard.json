@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2",
+  "title": "Avatar Standard",
+  "slug": "avatar-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-standard",
+  "domain": "spatial-computing",
+  "definition": "Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:format-compliance",
+        "label": "Format Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:metadata-specification",
+        "label": "Metadata Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:skeleton-configuration",
+        "label": "Skeleton Configuration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:platform-independent-identities",
+        "label": "Platform-Independent Identities"
+      },
+      {
+        "id": "urn:visionflow:linked:standardized-rigging",
+        "label": "Standardized Rigging"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "format-compliance",
+      "label": "Format Compliance"
+    },
+    {
+      "slug": "gl-tf-2-0",
+      "label": "glTF 2.0"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "metadata-specification",
+      "label": "Metadata Specification"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "platform-independent-identities",
+      "label": "Platform-Independent Identities"
+    },
+    {
+      "slug": "skeleton-configuration",
+      "label": "Skeleton Configuration"
+    },
+    {
+      "slug": "standardized-rigging",
+      "label": "Standardized Rigging"
+    },
+    {
+      "slug": "vrm-1-0",
+      "label": "VRM 1.0"
+    },
+    {
+      "slug": "vrm-consortium",
+      "label": "VRM Consortium"
+    },
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    }
+  ]
+}

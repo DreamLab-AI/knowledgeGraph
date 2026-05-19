@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:01e31db3bfe151505d7e98bd5bb912de874ca4cd164dc403ea50d58d536d3de1",
+  "title": "Reward Function",
+  "slug": "reward-function",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reward-function",
+  "domain": "spatial-computing",
+  "definition": "A mathematical formulation in reinforcement learning that maps state-action pairs to scalar values, guiding AI agent behaviour toward desired outcomes in game environments, virtual worlds, and autonomous systems through feedback signals.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-agent-learning",
+        "label": "Autonomous Agent Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-agent-learning",
+      "label": "Autonomous Agent Learning"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ]
+}

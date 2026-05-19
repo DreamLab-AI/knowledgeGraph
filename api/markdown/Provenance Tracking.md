@@ -1,21 +1,495 @@
-iri:: http://narrativegoldmine.com/blockchain#ProvenanceTracking
-uri:: urn:visionclaw:concept:blockchain:provenance-tracking
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:provenance-tracking
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Provenance Tracking
-content-hash:: sha256-12-30c42bcc58f3
-legacy-term-id:: BC-0441
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.89
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#ProvenanceTracking
+legacy_uri:: urn:visionclaw:concept:blockchain:provenance-tracking
 public:: true
+
+# Provenance Tracking
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2",
+  "@type": "Page",
+  "vc:slug": "provenance-tracking",
+  "title": "Provenance Tracking",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:arianee",
+      "vc:label": "Arianee"
+    },
+    {
+      "@id": "urn:visionflow:linked:artory",
+      "vc:label": "Artory"
+    },
+    {
+      "@id": "urn:visionflow:linked:aws-managed-blockchain",
+      "vc:label": "AWS Managed Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:azure-blockchain-service",
+      "vc:label": "Azure Blockchain Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "vc:label": "BC-0013-smart-contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "vc:label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "vc:label": "BC-0067-hyperledger-fabric"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "vc:label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "vc:label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "vc:label": "BC-0442-pharmaceutical-traceability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0443-food-safety-blockchain",
+      "vc:label": "BC-0443-food-safety-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0444-luxury-goods-authentication",
+      "vc:label": "BC-0444-luxury-goods-authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0445-conflict-mineral-tracking",
+      "vc:label": "BC-0445-conflict-mineral-tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-in-transport-alliance",
+      "vc:label": "Blockchain in Transport Alliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:corda",
+      "vc:label": "Corda"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosmos",
+      "vc:label": "Cosmos"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-ledger-technology",
+      "vc:label": "Distributed Ledger Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:everledger",
+      "vc:label": "Everledger"
+    },
+    {
+      "@id": "urn:visionflow:linked:gs1",
+      "vc:label": "GS1"
+    },
+    {
+      "@id": "urn:visionflow:linked:gs1-blockchain-working-group",
+      "vc:label": "GS1 Blockchain Working Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm-blockchain-platform",
+      "vc:label": "IBM Blockchain Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm-food-trust",
+      "vc:label": "IBM Food Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:oracle-blockchain-platform",
+      "vc:label": "Oracle Blockchain Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:polkadot",
+      "vc:label": "Polkadot"
+    },
+    {
+      "@id": "urn:visionflow:linked:quorum",
+      "vc:label": "Quorum"
+    },
+    {
+      "@id": "urn:visionflow:linked:sap-blockchain",
+      "vc:label": "SAP Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:trusted-io-t-alliance",
+      "vc:label": "Trusted IoT Alliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ve-chain",
+      "vc:label": "VeChain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consortium-blockchain",
+      "vc:label": "Consortium Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
+      "vc:label": "Hyperledger Fabric"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
+      "vc:label": "Permissioned Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "Smart Contracts"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.89"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-30c42bcc58f3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#ProvenanceTracking"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0441"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Provenance Tracking"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:provenance-tracking"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:provenance-tracking"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:provenance-tracking",
+  "@type": "OntologyClass",
+  "label": "Provenance Tracking",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling 99.97% reduction in tracing time (7 days to 2.2 seconds), combating £30 billion counterfeit markets, and supporting applications across food safety (Walmart, IBM Food Trust), luxury goods (De Beers Tracr), pharmaceuticals, and ethical sourcing verification.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.89",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:provenance-tracking:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Arianee]]",
+      "resolved": "urn:visionflow:linked:arianee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artory]]",
+      "resolved": "urn:visionflow:linked:artory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AWS Managed Blockchain]]",
+      "resolved": "urn:visionflow:linked:aws-managed-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Azure Blockchain Service]]",
+      "resolved": "urn:visionflow:linked:azure-blockchain-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0013-smart-contracts]]",
+      "resolved": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0029-permissioned-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0067-hyperledger-fabric]]",
+      "resolved": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0432-consortium-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0434-blockchain-as-a-service]]",
+      "resolved": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0442-pharmaceutical-traceability]]",
+      "resolved": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0443-food-safety-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0443-food-safety-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0444-luxury-goods-authentication]]",
+      "resolved": "urn:visionflow:linked:bc-0444-luxury-goods-authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0445-conflict-mineral-tracking]]",
+      "resolved": "urn:visionflow:linked:bc-0445-conflict-mineral-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain in Transport Alliance]]",
+      "resolved": "urn:visionflow:linked:blockchain-in-transport-alliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Corda]]",
+      "resolved": "urn:visionflow:linked:corda",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cosmos]]",
+      "resolved": "urn:visionflow:linked:cosmos",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Ledger Technology]]",
+      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Everledger]]",
+      "resolved": "urn:visionflow:linked:everledger",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GS1]]",
+      "resolved": "urn:visionflow:linked:gs1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GS1 Blockchain Working Group]]",
+      "resolved": "urn:visionflow:linked:gs1-blockchain-working-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM Blockchain Platform]]",
+      "resolved": "urn:visionflow:linked:ibm-blockchain-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM Food Trust]]",
+      "resolved": "urn:visionflow:linked:ibm-food-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Internet of Things]]",
+      "resolved": "urn:visionflow:linked:internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Oracle Blockchain Platform]]",
+      "resolved": "urn:visionflow:linked:oracle-blockchain-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Polkadot]]",
+      "resolved": "urn:visionflow:linked:polkadot",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quorum]]",
+      "resolved": "urn:visionflow:linked:quorum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SAP Blockchain]]",
+      "resolved": "urn:visionflow:linked:sap-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trusted IoT Alliance]]",
+      "resolved": "urn:visionflow:linked:trusted-io-t-alliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VeChain]]",
+      "resolved": "urn:visionflow:linked:ve-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Consortium Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:consortium-blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyperledger Fabric]]",
+      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Permissioned Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:permissioned-blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling 99.97% reduction in tracing time (7 days to 2.2 seconds), combating £30 billion counterfeit markets, and supporting applications across food safety (Walmart, IBM Food Trust), luxury goods (De Beers Tracr), pharmaceuticals, and ethical sourcing verification.

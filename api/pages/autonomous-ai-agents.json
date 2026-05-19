@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:e5e8b2729311afd305cb1c6d27a27920b0598961900c9a01cf70c263655ba756",
+  "title": "Autonomous AI Agents",
+  "slug": "autonomous-ai-agents",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:autonomous-ai-agents",
+  "domain": "artificial-intelligence",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

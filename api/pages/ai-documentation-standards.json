@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:df2916f682f73afa86cc420193328ddb65ca3144592d1897ca0ac4e952ed7c4f",
+  "title": "AI Documentation Standards",
+  "slug": "ai-documentation-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-documentation-standards",
+  "domain": "artificial-intelligence",
+  "definition": "AI Documentation Standards are structured frameworks and templates for comprehensively documenting AI systems, datasets, and models to ensure transparency, accountability, reproducibility, and informed stakeholder decision-making throughout the AI lifecycle. These standards specify required information about system characteristics, development processes, performance metrics, limitations, intended uses, and governance practices, enabling auditing, compliance verification, and risk assessment. Key documentation artifacts include Model Cards (introduced by Mitchell et al. 2019) documenting model details, intended use, performance metrics across demographic groups, ethical considerations, and caveats; Datasheets for Datasets (Gebru et al. 2018) describing data composition, collection processes, preprocessing steps, labeling procedures, intended uses, and limitations; System Cards documenting end-to-end AI systems including architecture, training procedures, deployment context, monitoring approaches, and governance structures; and FactSheets (IBM) providing comprehensive transparency information for AI services. Documentation standards address critical transparency needs including algor",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "datasheets-gebru-et-al",
+      "label": "Datasheets (Gebru et al.)"
+    },
+    {
+      "slug": "iso-iec-23053",
+      "label": "ISO/IEC 23053"
+    },
+    {
+      "slug": "model-cards-mitchell-et-al",
+      "label": "Model Cards (Mitchell et al.)"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": []
+}

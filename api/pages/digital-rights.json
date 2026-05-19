@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:ed43f9be32cf7a4e5dcc00050d7148583a21534b550b1c6d96060c95892e4e9b",
+  "title": "Digital Rights",
+  "slug": "digital-rights",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-rights",
+  "domain": "spatial-computing",
+  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and national legislation. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:human-rights",
+      "label": "Human Rights"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:enforcement-mechanisms",
+        "label": "Enforcement Mechanisms"
+      },
+      {
+        "id": "urn:visionflow:linked:technical-safeguards",
+        "label": "Technical Safeguards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-freedom",
+        "label": "Digital Freedom"
+      },
+      {
+        "id": "urn:visionflow:linked:privacy-protection",
+        "label": "Privacy Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "digital-freedom",
+      "label": "Digital Freedom"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
+    },
+    {
+      "slug": "enforcement-mechanisms",
+      "label": "Enforcement Mechanisms"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "privacy-protection",
+      "label": "Privacy Protection"
+    },
+    {
+      "slug": "technical-safeguards",
+      "label": "Technical Safeguards"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    }
+  ]
+}

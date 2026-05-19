@@ -1,0 +1,404 @@
+{
+  "id": "urn:visionflow:page:88715f5388a8210ba534cb7813aa2308693792e18cb47b5e4c5b3232decc80e9",
+  "title": "Meeting Recording",
+  "slug": "meeting-recording",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:meeting-recording",
+  "domain": "distributed-collaboration",
+  "definition": "Persistent capture and archival of synchronous virtual or physical meetings\u2014comprising video, audio, screen share, and transcript streams\u2014stored in cloud platforms or on-premises repositories for asynchronous playback, compliance audit, onboarding, and AI-mediated analysis. Meeting recording bridges synchronous real-time participation and asynchronous access by preserving full session context (video/audio encoded typically as MP4 or WebM, auto-generated transcripts via automatic speech recognition, participant metadata, chat logs, shared artefacts) across enterprise platforms including Zoom cloud recording, Microsoft Teams recording stored to OneDrive/SharePoint, Google Meet recording to Google Drive, Loom screen-capture video, and Otter.ai transcription services. Legal validity of recordings is jurisdiction-dependent: the UK operates under a one-party consent model with ICO guidance requiring participant notification under GDPR Article 6 lawful basis; EU GDPR Articles 5\u20136 impose data minimisation, purpose limitation, and right-to-erasure obligations; US federal wiretapping law (18 U.S.C. \u00a7 2511) permits one-party consent whereas twelve US states (including California, Florida, Ill",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:asynchronous-communication",
+      "label": "Asynchronous Communication"
+    },
+    {
+      "id": "urn:visionflow:linked:meeting-documentation",
+      "label": "Meeting Documentation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "id": "urn:visionflow:owl:class:knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:automatic-transcription",
+        "label": "Automatic Transcription"
+      },
+      {
+        "id": "urn:visionflow:linked:chapter-detection",
+        "label": "Chapter Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:cloud-storage-infrastructure",
+        "label": "Cloud Storage Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:full-text-search-index",
+        "label": "Full-text Search Index"
+      },
+      {
+        "id": "urn:visionflow:linked:participant-consent",
+        "label": "Participant Consent"
+      },
+      {
+        "id": "urn:visionflow:linked:screen-recording",
+        "label": "Screen Recording"
+      },
+      {
+        "id": "urn:visionflow:linked:speaker-attribution",
+        "label": "Speaker Attribution"
+      },
+      {
+        "id": "urn:visionflow:linked:video-encoding",
+        "label": "Video Encoding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:cloud-storage-infrastructure",
+        "label": "Cloud Storage Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:network-bandwidth",
+        "label": "Network Bandwidth"
+      },
+      {
+        "id": "urn:visionflow:linked:participant-consent",
+        "label": "Participant Consent"
+      },
+      {
+        "id": "urn:visionflow:linked:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:distributed-learning-archive",
+        "label": "Distributed Learning Archive"
+      },
+      {
+        "id": "urn:visionflow:linked:onboarding",
+        "label": "Onboarding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:mp4-encoding",
+        "label": "MP4 Encoding"
+      },
+      {
+        "id": "urn:visionflow:linked:retention-policy",
+        "label": "Retention Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:visionflow:linked:web-m-encoding",
+        "label": "WebM Encoding"
+      },
+      {
+        "id": "urn:visionflow:linked:whisper-asr",
+        "label": "Whisper ASR"
+      },
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asynchronous-communication",
+      "label": "Asynchronous Communication"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "automatic-transcription",
+      "label": "Automatic Transcription"
+    },
+    {
+      "slug": "chapter-detection",
+      "label": "Chapter Detection"
+    },
+    {
+      "slug": "cloud-storage-infrastructure",
+      "label": "Cloud Storage Infrastructure"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "ComplianceDomain"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "DistributedCollaborationDomain"
+    },
+    {
+      "slug": "distributed-learning-archive",
+      "label": "Distributed Learning Archive"
+    },
+    {
+      "slug": "dpo",
+      "label": "DPO"
+    },
+    {
+      "slug": "fca-sysc-10-a",
+      "label": "FCA SYSC 10A"
+    },
+    {
+      "slug": "finra-rule-17a-4",
+      "label": "FINRA Rule 17a-4"
+    },
+    {
+      "slug": "full-text-search-index",
+      "label": "Full-text Search Index"
+    },
+    {
+      "slug": "gdpr-article-6",
+      "label": "GDPR Article 6"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "knowledge-management-domain",
+      "label": "KnowledgeManagementDomain"
+    },
+    {
+      "slug": "meeting-documentation",
+      "label": "Meeting Documentation"
+    },
+    {
+      "slug": "mp4-encoding",
+      "label": "MP4 Encoding"
+    },
+    {
+      "slug": "network-bandwidth",
+      "label": "Network Bandwidth"
+    },
+    {
+      "slug": "onboarding",
+      "label": "Onboarding"
+    },
+    {
+      "slug": "participant-consent",
+      "label": "Participant Consent"
+    },
+    {
+      "slug": "retention-policy",
+      "label": "Retention Policy"
+    },
+    {
+      "slug": "screen-recording",
+      "label": "Screen Recording"
+    },
+    {
+      "slug": "speaker-attribution",
+      "label": "Speaker Attribution"
+    },
+    {
+      "slug": "speaker-diarisation",
+      "label": "Speaker Diarisation"
+    },
+    {
+      "slug": "transcription-layer",
+      "label": "TranscriptionLayer"
+    },
+    {
+      "slug": "uk-ico-guidance",
+      "label": "UK ICO Guidance"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "us-state-wiretapping-laws",
+      "label": "US State Wiretapping Laws"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "video-encoding",
+      "label": "Video Encoding"
+    },
+    {
+      "slug": "web-m-encoding",
+      "label": "WebM Encoding"
+    },
+    {
+      "slug": "whisper-asr",
+      "label": "Whisper ASR"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "StorageInfrastructure"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:326226d737da2081e5cff55ed514c366ac54f74a44c105e3180aea9c65549749",
+  "title": "Conceptual Hierarchy",
+  "slug": "conceptual-hierarchy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:conceptual-hierarchy",
+  "domain": "infrastructure",
+  "definition": "ConceptualHierarchy is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-ras-ontology",
+      "label": "IEEE RAS Ontology"
+    },
+    {
+      "slug": "ieee-rsj-iros",
+      "label": "IEEE/RSJ IROS"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    }
+  ]
+}

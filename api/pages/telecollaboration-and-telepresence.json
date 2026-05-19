@@ -1,0 +1,4367 @@
+{
+  "id": "urn:visionflow:page:beddee1ea4a4aa3016d73a02aab67ed4db4761ec02aa857f176f1452208703e7",
+  "title": "Telecollaboration and Telepresence",
+  "slug": "telecollaboration-and-telepresence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:telecollaboration-and-telepresence",
+  "domain": "spatial-computing",
+  "definition": "Telecollaboration and Telepresence is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "1099-generation",
+      "label": "1099 Generation"
+    },
+    {
+      "slug": "2-d-websites",
+      "label": "2D Websites"
+    },
+    {
+      "slug": "201-inch-virtual-display",
+      "label": "201-inch Virtual Display"
+    },
+    {
+      "slug": "3-d-asset-import",
+      "label": "3D Asset Import"
+    },
+    {
+      "slug": "3-d-audio-rendering",
+      "label": "3D Audio Rendering"
+    },
+    {
+      "slug": "3-d-models",
+      "label": "3D Models"
+    },
+    {
+      "slug": "3-d-object-manipulation",
+      "label": "3D Object Manipulation"
+    },
+    {
+      "slug": "3-d-rendering",
+      "label": "3D Rendering"
+    },
+    {
+      "slug": "4-k",
+      "label": "4K"
+    },
+    {
+      "slug": "5-d-input",
+      "label": "5D Input"
+    },
+    {
+      "slug": "5-g",
+      "label": "5G"
+    },
+    {
+      "slug": "5-g-mm-wave",
+      "label": "5G mmWave"
+    },
+    {
+      "slug": "5-g-network-slicing",
+      "label": "5G Network Slicing"
+    },
+    {
+      "slug": "5-g-networks",
+      "label": "5G Networks"
+    },
+    {
+      "slug": "5-g-remote-surgery",
+      "label": "5G Remote Surgery"
+    },
+    {
+      "slug": "5-k",
+      "label": "5K"
+    },
+    {
+      "slug": "6-g",
+      "label": "6G"
+    },
+    {
+      "slug": "6-g-research",
+      "label": "6G Research"
+    },
+    {
+      "slug": "6-g-wireless",
+      "label": "6G Wireless"
+    },
+    {
+      "slug": "70-fov",
+      "label": "70\u00b0 FOV"
+    },
+    {
+      "slug": "8-k",
+      "label": "8K"
+    },
+    {
+      "slug": "abb-robots",
+      "label": "ABB Robots"
+    },
+    {
+      "slug": "abstractive",
+      "label": "Abstractive"
+    },
+    {
+      "slug": "accessibility-barriers",
+      "label": "Accessibility Barriers"
+    },
+    {
+      "slug": "accord-project",
+      "label": "Accord Project"
+    },
+    {
+      "slug": "accumulator",
+      "label": "Accumulator"
+    },
+    {
+      "slug": "action-item-extraction",
+      "label": "Action Item Extraction"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
+      "slug": "adaptive-bitrate",
+      "label": "Adaptive Bitrate"
+    },
+    {
+      "slug": "adaptive-bitrate-streaming",
+      "label": "Adaptive Bitrate Streaming"
+    },
+    {
+      "slug": "adaptive-media-delivery",
+      "label": "Adaptive Media Delivery"
+    },
+    {
+      "slug": "adaptive-quality",
+      "label": "Adaptive Quality"
+    },
+    {
+      "slug": "aes-encryption",
+      "label": "AES Encryption"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "age-verification",
+      "label": "Age Verification"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agility-robotics-digit",
+      "label": "Agility Robotics Digit"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "ai-augmented-collaboration",
+      "label": "AI-Augmented Collaboration"
+    },
+    {
+      "slug": "ai-codec",
+      "label": "AI Codec"
+    },
+    {
+      "slug": "ai-companion",
+      "label": "AI Companion"
+    },
+    {
+      "slug": "ai-editing",
+      "label": "AI Editing"
+    },
+    {
+      "slug": "ai-enhanced-3-d-audio",
+      "label": "AI-Enhanced 3D Audio"
+    },
+    {
+      "slug": "ai-features",
+      "label": "AI Features"
+    },
+    {
+      "slug": "ai-generated-avatars",
+      "label": "AI-Generated Avatars"
+    },
+    {
+      "slug": "ai-generated-faces",
+      "label": "AI-Generated Faces"
+    },
+    {
+      "slug": "ai-native-networks",
+      "label": "AI-Native Networks"
+    },
+    {
+      "slug": "ai-safety-in-virtual-spaces",
+      "label": "AI Safety in Virtual Spaces"
+    },
+    {
+      "slug": "ai-stethoscope",
+      "label": "AI Stethoscope"
+    },
+    {
+      "slug": "akamai",
+      "label": "Akamai"
+    },
+    {
+      "slug": "algorand",
+      "label": "Algorand"
+    },
+    {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
+      "slug": "amazon-chime",
+      "label": "Amazon Chime"
+    },
+    {
+      "slug": "amazon-cloud-front",
+      "label": "Amazon CloudFront"
+    },
+    {
+      "slug": "amazon-eks",
+      "label": "Amazon EKS"
+    },
+    {
+      "slug": "ambient-computing",
+      "label": "Ambient Computing"
+    },
+    {
+      "slug": "ambisonics",
+      "label": "Ambisonics"
+    },
+    {
+      "slug": "amd-sev",
+      "label": "AMD SEV"
+    },
+    {
+      "slug": "amm",
+      "label": "AMM"
+    },
+    {
+      "slug": "analytics",
+      "label": "Analytics"
+    },
+    {
+      "slug": "ant",
+      "label": "ANT"
+    },
+    {
+      "slug": "anthos",
+      "label": "Anthos"
+    },
+    {
+      "slug": "aperture",
+      "label": "Aperture"
+    },
+    {
+      "slug": "api-metering",
+      "label": "API Metering"
+    },
+    {
+      "slug": "apple-spatial-audio",
+      "label": "Apple Spatial Audio"
+    },
+    {
+      "slug": "apple-translate",
+      "label": "Apple Translate"
+    },
+    {
+      "slug": "apple-vision-pro",
+      "label": "Apple Vision Pro"
+    },
+    {
+      "slug": "ar",
+      "label": "AR"
+    },
+    {
+      "slug": "ar-annotations",
+      "label": "AR Annotations"
+    },
+    {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
+      "slug": "aragon-court",
+      "label": "Aragon Court"
+    },
+    {
+      "slug": "aragon-os",
+      "label": "AragonOS"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "arbitrum-nova",
+      "label": "Arbitrum Nova"
+    },
+    {
+      "slug": "arpanet",
+      "label": "ARPANET"
+    },
+    {
+      "slug": "arthur",
+      "label": "Arthur"
+    },
+    {
+      "slug": "arweave",
+      "label": "Arweave"
+    },
+    {
+      "slug": "asana",
+      "label": "Asana"
+    },
+    {
+      "slug": "aspect-based",
+      "label": "Aspect-Based"
+    },
+    {
+      "slug": "asr",
+      "label": "ASR"
+    },
+    {
+      "slug": "assistive-technologies",
+      "label": "Assistive Technologies"
+    },
+    {
+      "slug": "asynchronous-spacewarp",
+      "label": "Asynchronous Spacewarp"
+    },
+    {
+      "slug": "asynchronous-timewarp",
+      "label": "Asynchronous Timewarp"
+    },
+    {
+      "slug": "attention-economy",
+      "label": "Attention Economy"
+    },
+    {
+      "slug": "attestation",
+      "label": "Attestation"
+    },
+    {
+      "slug": "audio-zones",
+      "label": "Audio Zones"
+    },
+    {
+      "slug": "audiomovers-listen-to",
+      "label": "Audiomovers ListenTo"
+    },
+    {
+      "slug": "audit-logs",
+      "label": "Audit Logs"
+    },
+    {
+      "slug": "auto-cad",
+      "label": "AutoCAD"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "automatic-withholding",
+      "label": "Automatic Withholding"
+    },
+    {
+      "slug": "autonomous-economic-agents",
+      "label": "Autonomous Economic Agents"
+    },
+    {
+      "slug": "av1",
+      "label": "AV1"
+    },
+    {
+      "slug": "ava-robotics",
+      "label": "Ava Robotics"
+    },
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "avatar-cloud-engine",
+      "label": "Avatar Cloud Engine"
+    },
+    {
+      "slug": "avatar-expressions",
+      "label": "Avatar Expressions"
+    },
+    {
+      "slug": "avatars",
+      "label": "Avatars"
+    },
+    {
+      "slug": "aws-fargate",
+      "label": "AWS Fargate"
+    },
+    {
+      "slug": "aws-media-services",
+      "label": "AWS Media Services"
+    },
+    {
+      "slug": "aws-wavelength",
+      "label": "AWS Wavelength"
+    },
+    {
+      "slug": "axon-vr",
+      "label": "Axon VR"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "azure",
+      "label": "Azure"
+    },
+    {
+      "slug": "azure-cognitive-services",
+      "label": "Azure Cognitive Services"
+    },
+    {
+      "slug": "azure-digital-twins",
+      "label": "Azure Digital Twins"
+    },
+    {
+      "slug": "azure-edge-zones",
+      "label": "Azure Edge Zones"
+    },
+    {
+      "slug": "azure-express-route",
+      "label": "Azure ExpressRoute"
+    },
+    {
+      "slug": "azure-spatial-anchors",
+      "label": "Azure Spatial Anchors"
+    },
+    {
+      "slug": "b-haptics-tact-glove",
+      "label": "bHaptics TactGlove"
+    },
+    {
+      "slug": "baby-agi",
+      "label": "BabyAGI"
+    },
+    {
+      "slug": "band-lab",
+      "label": "BandLab"
+    },
+    {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    },
+    {
+      "slug": "bandwidth-optimization",
+      "label": "Bandwidth Optimization"
+    },
+    {
+      "slug": "bandwidth-variability",
+      "label": "Bandwidth Variability"
+    },
+    {
+      "slug": "base",
+      "label": "Base"
+    },
+    {
+      "slug": "bbr",
+      "label": "BBR"
+    },
+    {
+      "slug": "beacon-chain",
+      "label": "Beacon Chain"
+    },
+    {
+      "slug": "beamforming",
+      "label": "Beamforming"
+    },
+    {
+      "slug": "beat-dataset",
+      "label": "BEAT Dataset"
+    },
+    {
+      "slug": "beha-vr",
+      "label": "BehaVR"
+    },
+    {
+      "slug": "big-blue-button",
+      "label": "BigBlueButton"
+    },
+    {
+      "slug": "bim-integration",
+      "label": "BIM Integration"
+    },
+    {
+      "slug": "bim-model",
+      "label": "BIM Model"
+    },
+    {
+      "slug": "binaural-audio",
+      "label": "Binaural Audio"
+    },
+    {
+      "slug": "biometric-privacy",
+      "label": "Biometric Privacy"
+    },
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
+      "slug": "bitcoin-paid-robot-services",
+      "label": "Bitcoin-Paid Robot Services"
+    },
+    {
+      "slug": "blockchain-audit-log",
+      "label": "Blockchain Audit Log"
+    },
+    {
+      "slug": "blockchain-audit-logs",
+      "label": "Blockchain Audit Logs"
+    },
+    {
+      "slug": "blockchain-based-coordination",
+      "label": "Blockchain-Based Coordination"
+    },
+    {
+      "slug": "blockchain-employment",
+      "label": "Blockchain Employment"
+    },
+    {
+      "slug": "bluetooth",
+      "label": "Bluetooth"
+    },
+    {
+      "slug": "body-language",
+      "label": "Body Language"
+    },
+    {
+      "slug": "boostograms",
+      "label": "Boostograms"
+    },
+    {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
+      "slug": "braintrust",
+      "label": "Braintrust"
+    },
+    {
+      "slug": "breakout-rooms",
+      "label": "Breakout Rooms"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
+      "slug": "bridges",
+      "label": "Bridges"
+    },
+    {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
+    {
+      "slug": "btc",
+      "label": "BTC"
+    },
+    {
+      "slug": "btrst-token",
+      "label": "BTRST Token"
+    },
+    {
+      "slug": "building-information-model",
+      "label": "Building Information Model"
+    },
+    {
+      "slug": "bulletproof",
+      "label": "Bulletproof"
+    },
+    {
+      "slug": "byte-dance",
+      "label": "ByteDance"
+    },
+    {
+      "slug": "cairo",
+      "label": "Cairo"
+    },
+    {
+      "slug": "calendar",
+      "label": "Calendar"
+    },
+    {
+      "slug": "canvas",
+      "label": "Canvas"
+    },
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "slug": "cash-app",
+      "label": "Cash App"
+    },
+    {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
+      "slug": "cdn",
+      "label": "CDN"
+    },
+    {
+      "slug": "ceremony",
+      "label": "Ceremony"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "challenges",
+      "label": "Challenges"
+    },
+    {
+      "slug": "cicero",
+      "label": "Cicero"
+    },
+    {
+      "slug": "cid",
+      "label": "CID"
+    },
+    {
+      "slug": "circom",
+      "label": "Circom"
+    },
+    {
+      "slug": "cisco-tele-presence",
+      "label": "Cisco TelePresence"
+    },
+    {
+      "slug": "cisco-webex",
+      "label": "Cisco Webex"
+    },
+    {
+      "slug": "civic",
+      "label": "Civic"
+    },
+    {
+      "slug": "client-side-prediction",
+      "label": "Client-Side Prediction"
+    },
+    {
+      "slug": "closed-captions",
+      "label": "Closed Captions"
+    },
+    {
+      "slug": "cloud-front",
+      "label": "CloudFront"
+    },
+    {
+      "slug": "cloud-gaming",
+      "label": "Cloud Gaming"
+    },
+    {
+      "slug": "cloudflare",
+      "label": "Cloudflare"
+    },
+    {
+      "slug": "cloudflare-r2",
+      "label": "Cloudflare R2"
+    },
+    {
+      "slug": "cloudflare-workers",
+      "label": "Cloudflare Workers"
+    },
+    {
+      "slug": "co-speech-gesture-generation",
+      "label": "Co-Speech Gesture Generation"
+    },
+    {
+      "slug": "codec-avatars",
+      "label": "Codec Avatars"
+    },
+    {
+      "slug": "coin-tracker",
+      "label": "CoinTracker"
+    },
+    {
+      "slug": "colmap",
+      "label": "COLMAP"
+    },
+    {
+      "slug": "colony",
+      "label": "Colony"
+    },
+    {
+      "slug": "committee",
+      "label": "Committee"
+    },
+    {
+      "slug": "common-accord",
+      "label": "CommonAccord"
+    },
+    {
+      "slug": "common-ground-theory",
+      "label": "Common Ground Theory"
+    },
+    {
+      "slug": "completion-tracking",
+      "label": "Completion Tracking"
+    },
+    {
+      "slug": "concealment",
+      "label": "Concealment"
+    },
+    {
+      "slug": "confidential-containers",
+      "label": "Confidential Containers"
+    },
+    {
+      "slug": "congestion-control",
+      "label": "Congestion Control"
+    },
+    {
+      "slug": "consent",
+      "label": "Consent"
+    },
+    {
+      "slug": "context-windows",
+      "label": "Context Windows"
+    },
+    {
+      "slug": "coordinape",
+      "label": "Coordinape"
+    },
+    {
+      "slug": "copilot",
+      "label": "Copilot"
+    },
+    {
+      "slug": "coppa",
+      "label": "COPPA"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "covid-19",
+      "label": "COVID-19"
+    },
+    {
+      "slug": "cpu-load",
+      "label": "CPU Load"
+    },
+    {
+      "slug": "cross-chain",
+      "label": "Cross-Chain"
+    },
+    {
+      "slug": "crs",
+      "label": "CRS"
+    },
+    {
+      "slug": "crypto-asset-reporting-framework",
+      "label": "Crypto-Asset Reporting Framework"
+    },
+    {
+      "slug": "cryptovoxels",
+      "label": "Cryptovoxels"
+    },
+    {
+      "slug": "cultural-translation",
+      "label": "Cultural Translation"
+    },
+    {
+      "slug": "custom-servers",
+      "label": "Custom Servers"
+    },
+    {
+      "slug": "cybersickness",
+      "label": "Cybersickness"
+    },
+    {
+      "slug": "cycles",
+      "label": "Cycles"
+    },
+    {
+      "slug": "d-ne-rf",
+      "label": "D-NeRF"
+    },
+    {
+      "slug": "d-ssim",
+      "label": "D-SSIM"
+    },
+    {
+      "slug": "da-vinci-surgical-robot",
+      "label": "da Vinci Surgical Robot"
+    },
+    {
+      "slug": "da-vinci-surgical-system",
+      "label": "da Vinci Surgical System"
+    },
+    {
+      "slug": "dai",
+      "label": "DAI"
+    },
+    {
+      "slug": "dante-audio-networking",
+      "label": "Dante Audio Networking"
+    },
+    {
+      "slug": "dao-structures-for-remote-teams",
+      "label": "DAO Structures for Remote Teams"
+    },
+    {
+      "slug": "daohaus",
+      "label": "DAOhaus"
+    },
+    {
+      "slug": "daos",
+      "label": "DAOs"
+    },
+    {
+      "slug": "dapp",
+      "label": "DApp"
+    },
+    {
+      "slug": "dash",
+      "label": "DASH"
+    },
+    {
+      "slug": "data-availability",
+      "label": "Data Availability"
+    },
+    {
+      "slug": "data-localization-law",
+      "label": "Data Localization Law"
+    },
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "databases",
+      "label": "Databases"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "dead-reckoning",
+      "label": "Dead Reckoning"
+    },
+    {
+      "slug": "decentralized-autonomous-organizations",
+      "label": "Decentralized Autonomous Organizations"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "decision-points",
+      "label": "Decision Points"
+    },
+    {
+      "slug": "deep-appearance-models",
+      "label": "Deep Appearance Models"
+    },
+    {
+      "slug": "deepfake-detection",
+      "label": "Deepfake Detection"
+    },
+    {
+      "slug": "deepfake-threats",
+      "label": "Deepfake Threats"
+    },
+    {
+      "slug": "demucs",
+      "label": "Demucs"
+    },
+    {
+      "slug": "dependency-parsing",
+      "label": "Dependency Parsing"
+    },
+    {
+      "slug": "desktop",
+      "label": "Desktop"
+    },
+    {
+      "slug": "desktop-streaming",
+      "label": "Desktop Streaming"
+    },
+    {
+      "slug": "developer-dao",
+      "label": "Developer DAO"
+    },
+    {
+      "slug": "device-power-consumption",
+      "label": "Device Power Consumption"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
+    },
+    {
+      "slug": "differentiable-rasterization",
+      "label": "Differentiable Rasterization"
+    },
+    {
+      "slug": "differentiable-ray-marching",
+      "label": "Differentiable Ray Marching"
+    },
+    {
+      "slug": "digital-divide",
+      "label": "Digital Divide"
+    },
+    {
+      "slug": "digital-scent-technology",
+      "label": "Digital Scent Technology"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "dimming-technology",
+      "label": "Dimming Technology"
+    },
+    {
+      "slug": "discord",
+      "label": "Discord"
+    },
+    {
+      "slug": "display-port",
+      "label": "DisplayPort"
+    },
+    {
+      "slug": "docs",
+      "label": "Docs"
+    },
+    {
+      "slug": "dolby-atmos",
+      "label": "Dolby Atmos"
+    },
+    {
+      "slug": "dolby-io",
+      "label": "Dolby.io"
+    },
+    {
+      "slug": "domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "slug": "double-3",
+      "label": "Double 3"
+    },
+    {
+      "slug": "double-robotics",
+      "label": "Double Robotics"
+    },
+    {
+      "slug": "double-spend",
+      "label": "Double Spend"
+    },
+    {
+      "slug": "draco-compression",
+      "label": "Draco Compression"
+    },
+    {
+      "slug": "drive",
+      "label": "Drive"
+    },
+    {
+      "slug": "dropbox",
+      "label": "Dropbox"
+    },
+    {
+      "slug": "dtdl",
+      "label": "DTDL"
+    },
+    {
+      "slug": "durable-objects",
+      "label": "Durable Objects"
+    },
+    {
+      "slug": "dvgo",
+      "label": "DVGO"
+    },
+    {
+      "slug": "dynamic-head-tracking",
+      "label": "Dynamic Head Tracking"
+    },
+    {
+      "slug": "dynamics-365",
+      "label": "Dynamics 365"
+    },
+    {
+      "slug": "dynamics-365-guides",
+      "label": "Dynamics 365 Guides"
+    },
+    {
+      "slug": "dynamics-365-remote-assist",
+      "label": "Dynamics 365 Remote Assist"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
+    },
+    {
+      "slug": "e-waste-reduction",
+      "label": "E-Waste Reduction"
+    },
+    {
+      "slug": "e2-e-encryption",
+      "label": "E2E Encryption"
+    },
+    {
+      "slug": "edge-computing-integration",
+      "label": "Edge Computing Integration"
+    },
+    {
+      "slug": "edge-servers",
+      "label": "Edge Servers"
+    },
+    {
+      "slug": "ekso-bionics",
+      "label": "Ekso Bionics"
+    },
+    {
+      "slug": "element",
+      "label": "Element"
+    },
+    {
+      "slug": "eleven-labs",
+      "label": "ElevenLabs"
+    },
+    {
+      "slug": "elliptic",
+      "label": "Elliptic"
+    },
+    {
+      "slug": "emotion-ai",
+      "label": "Emotion AI"
+    },
+    {
+      "slug": "emotion-detection",
+      "label": "Emotion Detection"
+    },
+    {
+      "slug": "empathic-avatars",
+      "label": "Empathic Avatars"
+    },
+    {
+      "slug": "enclave-cc",
+      "label": "Enclave-CC"
+    },
+    {
+      "slug": "enclaves",
+      "label": "Enclaves"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "end-to-end-encryption",
+      "label": "End-to-End Encryption"
+    },
+    {
+      "slug": "endo-wrist",
+      "label": "EndoWrist"
+    },
+    {
+      "slug": "enhanced-mobile-broadband",
+      "label": "Enhanced Mobile Broadband"
+    },
+    {
+      "slug": "enscape",
+      "label": "Enscape"
+    },
+    {
+      "slug": "enterprise-focus",
+      "label": "Enterprise Focus"
+    },
+    {
+      "slug": "environmental-justice",
+      "label": "Environmental Justice"
+    },
+    {
+      "slug": "erasure-coding",
+      "label": "Erasure Coding"
+    },
+    {
+      "slug": "erc-1155",
+      "label": "ERC-1155"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "ericsson-industry-connect",
+      "label": "Ericsson Industry Connect"
+    },
+    {
+      "slug": "escrow-contracts",
+      "label": "Escrow Contracts"
+    },
+    {
+      "slug": "eth",
+      "label": "ETH"
+    },
+    {
+      "slug": "ethereum-robot-reputation",
+      "label": "Ethereum Robot Reputation"
+    },
+    {
+      "slug": "ethereum-ros-bridge",
+      "label": "Ethereum-ROS Bridge"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "event-hosting",
+      "label": "Event Hosting"
+    },
+    {
+      "slug": "events",
+      "label": "Events"
+    },
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "exoskeletons",
+      "label": "Exoskeletons"
+    },
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "extractive",
+      "label": "Extractive"
+    },
+    {
+      "slug": "eye-contact",
+      "label": "Eye Contact"
+    },
+    {
+      "slug": "eye-sight",
+      "label": "EyeSight"
+    },
+    {
+      "slug": "eye-strain",
+      "label": "Eye Strain"
+    },
+    {
+      "slug": "face-tracking",
+      "label": "Face Tracking"
+    },
+    {
+      "slug": "facial-expression-analysis",
+      "label": "Facial Expression Analysis"
+    },
+    {
+      "slug": "facial-expressions",
+      "label": "Facial Expressions"
+    },
+    {
+      "slug": "facilities-maintenance",
+      "label": "Facilities Maintenance"
+    },
+    {
+      "slug": "fft",
+      "label": "FFT"
+    },
+    {
+      "slug": "fiat-shamir",
+      "label": "Fiat-Shamir"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "fips-140-2",
+      "label": "FIPS 140-2"
+    },
+    {
+      "slug": "fireflies-ai",
+      "label": "Fireflies.ai"
+    },
+    {
+      "slug": "firewall-traversal",
+      "label": "Firewall Traversal"
+    },
+    {
+      "slug": "force-feedback",
+      "label": "Force Feedback"
+    },
+    {
+      "slug": "force-feedback-devices",
+      "label": "Force-Feedback Devices"
+    },
+    {
+      "slug": "fork",
+      "label": "Fork"
+    },
+    {
+      "slug": "forward-error-correction",
+      "label": "Forward Error Correction"
+    },
+    {
+      "slug": "foundation",
+      "label": "Foundation"
+    },
+    {
+      "slug": "fountain",
+      "label": "Fountain"
+    },
+    {
+      "slug": "fourier-features",
+      "label": "Fourier Features"
+    },
+    {
+      "slug": "foveated-rendering",
+      "label": "Foveated Rendering"
+    },
+    {
+      "slug": "frame",
+      "label": "Frame"
+    },
+    {
+      "slug": "frame-rate-requirements",
+      "label": "Frame Rate Requirements"
+    },
+    {
+      "slug": "freemium-model",
+      "label": "Freemium Model"
+    },
+    {
+      "slug": "front-running",
+      "label": "Front Running"
+    },
+    {
+      "slug": "full-body-tracking",
+      "label": "Full-Body Tracking"
+    },
+    {
+      "slug": "fundamental-surgery",
+      "label": "Fundamental Surgery"
+    },
+    {
+      "slug": "fwb",
+      "label": "FWB"
+    },
+    {
+      "slug": "gas-fee",
+      "label": "Gas Fee"
+    },
+    {
+      "slug": "gaussian-primitives",
+      "label": "Gaussian Primitives"
+    },
+    {
+      "slug": "gaussian-splat",
+      "label": "Gaussian Splat"
+    },
+    {
+      "slug": "gaussian-splatting-implementations",
+      "label": "Gaussian Splatting Implementations"
+    },
+    {
+      "slug": "gaussian-splatting-ne-rf",
+      "label": "Gaussian Splatting + NeRF"
+    },
+    {
+      "slug": "gaze-based-interaction",
+      "label": "Gaze-Based Interaction"
+    },
+    {
+      "slug": "gaze-patterns",
+      "label": "Gaze Patterns"
+    },
+    {
+      "slug": "gaze-tracking",
+      "label": "Gaze Tracking"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "gdpr-article-9",
+      "label": "GDPR Article 9"
+    },
+    {
+      "slug": "gdpr-compliance",
+      "label": "GDPR Compliance"
+    },
+    {
+      "slug": "gemini-ultra",
+      "label": "Gemini Ultra"
+    },
+    {
+      "slug": "gesticulator",
+      "label": "Gesticulator"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "Gesture Recognition"
+    },
+    {
+      "slug": "gesture-synthesis",
+      "label": "Gesture Synthesis"
+    },
+    {
+      "slug": "get-user-media",
+      "label": "getUserMedia"
+    },
+    {
+      "slug": "git-hub-integration",
+      "label": "GitHub Integration"
+    },
+    {
+      "slug": "gitcoin",
+      "label": "Gitcoin"
+    },
+    {
+      "slug": "glb",
+      "label": "GLB"
+    },
+    {
+      "slug": "gltf",
+      "label": "GLTF"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "google-cloud-cdn",
+      "label": "Google Cloud CDN"
+    },
+    {
+      "slug": "google-congestion-control",
+      "label": "Google Congestion Control"
+    },
+    {
+      "slug": "google-distributed-cloud",
+      "label": "Google Distributed Cloud"
+    },
+    {
+      "slug": "google-draco",
+      "label": "Google Draco"
+    },
+    {
+      "slug": "google-expeditions",
+      "label": "Google Expeditions"
+    },
+    {
+      "slug": "google-glass-enterprise-3",
+      "label": "Google Glass Enterprise 3"
+    },
+    {
+      "slug": "google-meet",
+      "label": "Google Meet"
+    },
+    {
+      "slug": "google-stadia",
+      "label": "Google Stadia"
+    },
+    {
+      "slug": "google-translate",
+      "label": "Google Translate"
+    },
+    {
+      "slug": "google-workspace",
+      "label": "Google Workspace"
+    },
+    {
+      "slug": "gps-timekeeping",
+      "label": "GPS Timekeeping"
+    },
+    {
+      "slug": "gpt-4-v",
+      "label": "GPT-4V"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "gravity-sketch",
+      "label": "Gravity Sketch"
+    },
+    {
+      "slug": "great-firewall",
+      "label": "Great Firewall"
+    },
+    {
+      "slug": "green-protocols",
+      "label": "Green Protocols"
+    },
+    {
+      "slug": "green-screen",
+      "label": "Green Screen"
+    },
+    {
+      "slug": "greenlight",
+      "label": "Greenlight"
+    },
+    {
+      "slug": "groth16",
+      "label": "Groth16"
+    },
+    {
+      "slug": "h-264",
+      "label": "H.264"
+    },
+    {
+      "slug": "h-265",
+      "label": "H.265"
+    },
+    {
+      "slug": "h-266",
+      "label": "H.266"
+    },
+    {
+      "slug": "h-323",
+      "label": "H.323"
+    },
+    {
+      "slug": "haivision",
+      "label": "Haivision"
+    },
+    {
+      "slug": "halo2",
+      "label": "Halo2"
+    },
+    {
+      "slug": "hapt-x",
+      "label": "HaptX"
+    },
+    {
+      "slug": "hapt-x-gloves",
+      "label": "HaptX Gloves"
+    },
+    {
+      "slug": "hapt-x-gloves-g1",
+      "label": "HaptX Gloves G1"
+    },
+    {
+      "slug": "haptic-cues",
+      "label": "Haptic Cues"
+    },
+    {
+      "slug": "haptic-gloves",
+      "label": "Haptic Gloves"
+    },
+    {
+      "slug": "haption-virtuose",
+      "label": "Haption Virtuose"
+    },
+    {
+      "slug": "harassment-detection",
+      "label": "Harassment Detection"
+    },
+    {
+      "slug": "hard-fork",
+      "label": "Hard Fork"
+    },
+    {
+      "slug": "hash-based-encoding",
+      "label": "Hash-Based Encoding"
+    },
+    {
+      "slug": "hd",
+      "label": "HD"
+    },
+    {
+      "slug": "head-of-line-blocking",
+      "label": "Head-of-Line Blocking"
+    },
+    {
+      "slug": "head-tracking",
+      "label": "Head Tracking"
+    },
+    {
+      "slug": "heatmaps",
+      "label": "Heatmaps"
+    },
+    {
+      "slug": "high-fidelity",
+      "label": "High-Fidelity"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
+    },
+    {
+      "slug": "historical-preservation",
+      "label": "Historical Preservation"
+    },
+    {
+      "slug": "hive-moderation",
+      "label": "Hive Moderation"
+    },
+    {
+      "slug": "hls",
+      "label": "HLS"
+    },
+    {
+      "slug": "holo-lens",
+      "label": "HoloLens"
+    },
+    {
+      "slug": "holo-suit",
+      "label": "HoloSuit"
+    },
+    {
+      "slug": "hologram",
+      "label": "Hologram"
+    },
+    {
+      "slug": "holographic-beamforming",
+      "label": "Holographic Beamforming"
+    },
+    {
+      "slug": "holographic-calls",
+      "label": "Holographic Calls"
+    },
+    {
+      "slug": "holographic-communications",
+      "label": "Holographic Communications"
+    },
+    {
+      "slug": "holographic-displays",
+      "label": "Holographic Displays"
+    },
+    {
+      "slug": "holographic-telepresence",
+      "label": "Holographic Telepresence"
+    },
+    {
+      "slug": "holography",
+      "label": "Holography"
+    },
+    {
+      "slug": "holoportation",
+      "label": "Holoportation"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "hpb",
+      "label": "HPB"
+    },
+    {
+      "slug": "hrtf",
+      "label": "HRTF"
+    },
+    {
+      "slug": "hrtf-personalization",
+      "label": "HRTF Personalization"
+    },
+    {
+      "slug": "htc-vive-xr-elite",
+      "label": "HTC Vive XR Elite"
+    },
+    {
+      "slug": "http-3",
+      "label": "HTTP/3"
+    },
+    {
+      "slug": "hyper-ne-rf",
+      "label": "HyperNeRF"
+    },
+    {
+      "slug": "i-pad",
+      "label": "iPad"
+    },
+    {
+      "slug": "ian-grigg",
+      "label": "Ian Grigg"
+    },
+    {
+      "slug": "ibm-true-north",
+      "label": "IBM TrueNorth"
+    },
+    {
+      "slug": "ice",
+      "label": "ICE"
+    },
+    {
+      "slug": "idc",
+      "label": "IDC"
+    },
+    {
+      "slug": "ikea-place",
+      "label": "IKEA Place"
+    },
+    {
+      "slug": "illinois-bipa",
+      "label": "Illinois BIPA"
+    },
+    {
+      "slug": "image-and-video-manager",
+      "label": "Image & Video Manager"
+    },
+    {
+      "slug": "immersive-telepresence",
+      "label": "Immersive Telepresence"
+    },
+    {
+      "slug": "immersive-view",
+      "label": "Immersive View"
+    },
+    {
+      "slug": "inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "slug": "industrial-ar",
+      "label": "Industrial AR"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "infinite-canvas",
+      "label": "Infinite Canvas"
+    },
+    {
+      "slug": "inner-product-argument",
+      "label": "Inner Product Argument"
+    },
+    {
+      "slug": "insertable-streams",
+      "label": "Insertable Streams"
+    },
+    {
+      "slug": "instant-ngp",
+      "label": "Instant-NGP"
+    },
+    {
+      "slug": "integrated-sensing",
+      "label": "Integrated Sensing"
+    },
+    {
+      "slug": "integrated-sensing-and-communication",
+      "label": "Integrated Sensing and Communication"
+    },
+    {
+      "slug": "integrations",
+      "label": "Integrations"
+    },
+    {
+      "slug": "intel-fake-catcher",
+      "label": "Intel FakeCatcher"
+    },
+    {
+      "slug": "intel-loihi",
+      "label": "Intel Loihi"
+    },
+    {
+      "slug": "intel-quick-sync",
+      "label": "Intel Quick Sync"
+    },
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "interest-management",
+      "label": "Interest Management"
+    },
+    {
+      "slug": "international",
+      "label": "International"
+    },
+    {
+      "slug": "intrinsically-safe",
+      "label": "Intrinsically Safe"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
+      "slug": "io-t",
+      "label": "IoT"
+    },
+    {
+      "slug": "io-t-hub",
+      "label": "IoT Hub"
+    },
+    {
+      "slug": "io-t-sensor-data",
+      "label": "IoT Sensor Data"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "isdn",
+      "label": "ISDN"
+    },
+    {
+      "slug": "jams",
+      "label": "JAMS"
+    },
+    {
+      "slug": "jibri",
+      "label": "Jibri"
+    },
+    {
+      "slug": "jira",
+      "label": "Jira"
+    },
+    {
+      "slug": "jitsi",
+      "label": "Jitsi"
+    },
+    {
+      "slug": "jitsi-integration",
+      "label": "Jitsi Integration"
+    },
+    {
+      "slug": "jitsi-meet",
+      "label": "Jitsi Meet"
+    },
+    {
+      "slug": "jitter",
+      "label": "Jitter"
+    },
+    {
+      "slug": "jitter-buffering",
+      "label": "Jitter Buffering"
+    },
+    {
+      "slug": "jumio",
+      "label": "Jumio"
+    },
+    {
+      "slug": "jurisdictional-ambiguity",
+      "label": "Jurisdictional Ambiguity"
+    },
+    {
+      "slug": "kalman-filters",
+      "label": "Kalman Filters"
+    },
+    {
+      "slug": "kata-containers",
+      "label": "Kata Containers"
+    },
+    {
+      "slug": "kleros",
+      "label": "Kleros"
+    },
+    {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "koinly",
+      "label": "Koinly"
+    },
+    {
+      "slug": "krisp",
+      "label": "Krisp"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "kzg-commitment",
+      "label": "KZG Commitment"
+    },
+    {
+      "slug": "l1-loss",
+      "label": "L1 Loss"
+    },
+    {
+      "slug": "l402",
+      "label": "L402"
+    },
+    {
+      "slug": "l402-micropayments",
+      "label": "L402 Micropayments"
+    },
+    {
+      "slug": "l402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "labor-x",
+      "label": "LaborX"
+    },
+    {
+      "slug": "lagrange",
+      "label": "Lagrange"
+    },
+    {
+      "slug": "lambda",
+      "label": "Lambda"
+    },
+    {
+      "slug": "lambda-edge",
+      "label": "Lambda@Edge"
+    },
+    {
+      "slug": "laser-communication",
+      "label": "Laser Communication"
+    },
+    {
+      "slug": "latency-budgets",
+      "label": "Latency Budgets"
+    },
+    {
+      "slug": "latency-compensation-techniques",
+      "label": "Latency Compensation Techniques"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer 2"
+    },
+    {
+      "slug": "led-volumes",
+      "label": "LED Volumes"
+    },
+    {
+      "slug": "ledbat",
+      "label": "LEDBAT"
+    },
+    {
+      "slug": "legal-validity",
+      "label": "Legal Validity"
+    },
+    {
+      "slug": "lex-rank",
+      "label": "LexRank"
+    },
+    {
+      "slug": "li-dar",
+      "label": "LiDAR"
+    },
+    {
+      "slug": "li-dar-scanning",
+      "label": "LiDAR Scanning"
+    },
+    {
+      "slug": "lightning-micropayments",
+      "label": "Lightning Micropayments"
+    },
+    {
+      "slug": "limbix",
+      "label": "Limbix"
+    },
+    {
+      "slug": "linear",
+      "label": "Linear"
+    },
+    {
+      "slug": "lip-sync",
+      "label": "Lip-Sync"
+    },
+    {
+      "slug": "live-captions",
+      "label": "Live Captions"
+    },
+    {
+      "slug": "ll-dash",
+      "label": "LL-DASH"
+    },
+    {
+      "slug": "ll-hls",
+      "label": "LL-HLS"
+    },
+    {
+      "slug": "lla-va",
+      "label": "LLaVA"
+    },
+    {
+      "slug": "llm",
+      "label": "LLM"
+    },
+    {
+      "slug": "lnproxy",
+      "label": "lnproxy"
+    },
+    {
+      "slug": "looking-glass-portrait",
+      "label": "Looking Glass Portrait"
+    },
+    {
+      "slug": "loom",
+      "label": "Loom"
+    },
+    {
+      "slug": "low-earth-orbit",
+      "label": "Low Earth Orbit"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
+      "slug": "luma-api",
+      "label": "Luma API"
+    },
+    {
+      "slug": "m2",
+      "label": "M2"
+    },
+    {
+      "slug": "machine-to-machine-payments",
+      "label": "Machine-to-Machine Payments"
+    },
+    {
+      "slug": "magic-leap-2",
+      "label": "Magic Leap 2"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "manufacturing-assembly",
+      "label": "Manufacturing Assembly"
+    },
+    {
+      "slug": "marvin-minsky",
+      "label": "Marvin Minsky"
+    },
+    {
+      "slug": "massive-machine-type-communication",
+      "label": "Massive Machine-Type Communication"
+    },
+    {
+      "slug": "matrix-protocol",
+      "label": "Matrix Protocol"
+    },
+    {
+      "slug": "matterport",
+      "label": "Matterport"
+    },
+    {
+      "slug": "maya",
+      "label": "Maya"
+    },
+    {
+      "slug": "mec",
+      "label": "MEC"
+    },
+    {
+      "slug": "media-live",
+      "label": "MediaLive"
+    },
+    {
+      "slug": "media-package",
+      "label": "MediaPackage"
+    },
+    {
+      "slug": "media-stream",
+      "label": "MediaStream"
+    },
+    {
+      "slug": "meeting-assistants",
+      "label": "Meeting Assistants"
+    },
+    {
+      "slug": "megolm",
+      "label": "Megolm"
+    },
+    {
+      "slug": "melody-vr",
+      "label": "MelodyVR"
+    },
+    {
+      "slug": "mental-health-monitoring",
+      "label": "Mental Health Monitoring"
+    },
+    {
+      "slug": "mesh-avatars",
+      "label": "Mesh Avatars"
+    },
+    {
+      "slug": "mesh-for-teams",
+      "label": "Mesh for Teams"
+    },
+    {
+      "slug": "mesh-spaces",
+      "label": "Mesh Spaces"
+    },
+    {
+      "slug": "mesh-streaming",
+      "label": "Mesh Streaming"
+    },
+    {
+      "slug": "meshcapade",
+      "label": "Meshcapade"
+    },
+    {
+      "slug": "meta",
+      "label": "Meta"
+    },
+    {
+      "slug": "meta-avatars-sdk",
+      "label": "Meta Avatars SDK"
+    },
+    {
+      "slug": "meta-butterscotch",
+      "label": "Meta Butterscotch"
+    },
+    {
+      "slug": "meta-horizon-workrooms",
+      "label": "Meta Horizon Workrooms"
+    },
+    {
+      "slug": "meta-human-creator",
+      "label": "MetaHuman Creator"
+    },
+    {
+      "slug": "meta-quest-3",
+      "label": "Meta Quest 3"
+    },
+    {
+      "slug": "meta-ray-ban-2",
+      "label": "Meta Ray-Ban 2"
+    },
+    {
+      "slug": "meta-s-seamless-m4-t",
+      "label": "Meta's SeamlessM4T"
+    },
+    {
+      "slug": "metadata-leakage",
+      "label": "Metadata Leakage"
+    },
+    {
+      "slug": "metadata-resistant-systems",
+      "label": "Metadata-Resistant Systems"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "microsoft-365",
+      "label": "Microsoft 365"
+    },
+    {
+      "slug": "microsoft-365-copilot",
+      "label": "Microsoft 365 Copilot"
+    },
+    {
+      "slug": "microsoft-azure-content-moderator",
+      "label": "Microsoft Azure Content Moderator"
+    },
+    {
+      "slug": "microsoft-azure-holoportation",
+      "label": "Microsoft Azure Holoportation"
+    },
+    {
+      "slug": "microsoft-entra-verified-id",
+      "label": "Microsoft Entra Verified ID"
+    },
+    {
+      "slug": "microsoft-holo-lens-2",
+      "label": "Microsoft HoloLens 2"
+    },
+    {
+      "slug": "microsoft-loop",
+      "label": "Microsoft Loop"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
+      "slug": "microsoft-spatial-sound",
+      "label": "Microsoft Spatial Sound"
+    },
+    {
+      "slug": "microsoft-teams",
+      "label": "Microsoft Teams"
+    },
+    {
+      "slug": "microsoft-translator",
+      "label": "Microsoft Translator"
+    },
+    {
+      "slug": "microsoft-video-authenticator",
+      "label": "Microsoft Video Authenticator"
+    },
+    {
+      "slug": "microsoft-whiteboard",
+      "label": "Microsoft Whiteboard"
+    },
+    {
+      "slug": "milestone-based-payments",
+      "label": "Milestone-Based Payments"
+    },
+    {
+      "slug": "milvus",
+      "label": "Milvus"
+    },
+    {
+      "slug": "mina-protocol",
+      "label": "Mina Protocol"
+    },
+    {
+      "slug": "mind-sphere",
+      "label": "MindSphere"
+    },
+    {
+      "slug": "miro",
+      "label": "Miro"
+    },
+    {
+      "slug": "miroverse",
+      "label": "Miroverse"
+    },
+    {
+      "slug": "mixed-reality-mode",
+      "label": "Mixed Reality Mode"
+    },
+    {
+      "slug": "mm-wave",
+      "label": "mmWave"
+    },
+    {
+      "slug": "mm-wave-propagation",
+      "label": "mmWave Propagation"
+    },
+    {
+      "slug": "mobile-edge-computing",
+      "label": "Mobile Edge Computing"
+    },
+    {
+      "slug": "mobile-ne-rf",
+      "label": "MobileNeRF"
+    },
+    {
+      "slug": "mobile-telepresence",
+      "label": "Mobile Telepresence"
+    },
+    {
+      "slug": "mobile-vr-streaming",
+      "label": "Mobile VR Streaming"
+    },
+    {
+      "slug": "moloch-dao",
+      "label": "Moloch DAO"
+    },
+    {
+      "slug": "monday-com",
+      "label": "Monday.com"
+    },
+    {
+      "slug": "moodle",
+      "label": "Moodle"
+    },
+    {
+      "slug": "motion-cap",
+      "label": "MotionCap"
+    },
+    {
+      "slug": "motion-prediction",
+      "label": "Motion Prediction"
+    },
+    {
+      "slug": "motion-sickness",
+      "label": "Motion Sickness"
+    },
+    {
+      "slug": "motion-to-photon",
+      "label": "Motion-to-Photon"
+    },
+    {
+      "slug": "mozilla-hubs",
+      "label": "Mozilla Hubs"
+    },
+    {
+      "slug": "mpeg-pcc",
+      "label": "MPEG PCC"
+    },
+    {
+      "slug": "mr",
+      "label": "MR"
+    },
+    {
+      "slug": "msm",
+      "label": "MSM"
+    },
+    {
+      "slug": "multi-layer-perceptrons",
+      "label": "Multi-Layer Perceptrons"
+    },
+    {
+      "slug": "multimodal-models",
+      "label": "Multimodal Models"
+    },
+    {
+      "slug": "multiplexed-streams",
+      "label": "Multiplexed Streams"
+    },
+    {
+      "slug": "multiview-capture",
+      "label": "Multiview Capture"
+    },
+    {
+      "slug": "mural",
+      "label": "Mural"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "ne-rf-capture",
+      "label": "NeRF Capture"
+    },
+    {
+      "slug": "nebula",
+      "label": "Nebula"
+    },
+    {
+      "slug": "neo4j",
+      "label": "Neo4j"
+    },
+    {
+      "slug": "nerfstudio",
+      "label": "Nerfstudio"
+    },
+    {
+      "slug": "network-slicing",
+      "label": "Network Slicing"
+    },
+    {
+      "slug": "neural-compression",
+      "label": "Neural Compression"
+    },
+    {
+      "slug": "neural-scene-representations",
+      "label": "Neural Scene Representations"
+    },
+    {
+      "slug": "neuralink",
+      "label": "Neuralink"
+    },
+    {
+      "slug": "nextcloud-hub",
+      "label": "Nextcloud Hub"
+    },
+    {
+      "slug": "nextcloud-talk",
+      "label": "Nextcloud Talk"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nft-album-drops",
+      "label": "NFT Album Drops"
+    },
+    {
+      "slug": "nft-galleries",
+      "label": "NFT Galleries"
+    },
+    {
+      "slug": "nft-integration",
+      "label": "NFT Integration"
+    },
+    {
+      "slug": "nft-tickets",
+      "label": "NFT Tickets"
+    },
+    {
+      "slug": "nfts",
+      "label": "NFTs"
+    },
+    {
+      "slug": "niantic-lightship",
+      "label": "Niantic Lightship"
+    },
+    {
+      "slug": "nlp-models",
+      "label": "NLP Models"
+    },
+    {
+      "slug": "noir",
+      "label": "Noir"
+    },
+    {
+      "slug": "noise-cancellation",
+      "label": "Noise Cancellation"
+    },
+    {
+      "slug": "nokia-digital-automation-cloud",
+      "label": "Nokia Digital Automation Cloud"
+    },
+    {
+      "slug": "non-compete-clauses",
+      "label": "Non-Compete Clauses"
+    },
+    {
+      "slug": "notifications",
+      "label": "Notifications"
+    },
+    {
+      "slug": "notion",
+      "label": "Notion"
+    },
+    {
+      "slug": "novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "slug": "novint-falcon",
+      "label": "Novint Falcon"
+    },
+    {
+      "slug": "nreal-air",
+      "label": "Nreal Air"
+    },
+    {
+      "slug": "ntp",
+      "label": "NTP"
+    },
+    {
+      "slug": "nucleus",
+      "label": "Nucleus"
+    },
+    {
+      "slug": "nvidia-ace",
+      "label": "Nvidia ACE"
+    },
+    {
+      "slug": "nvidia-audio2-face",
+      "label": "Nvidia Audio2Face"
+    },
+    {
+      "slug": "nvidia-ge-force-now",
+      "label": "NVIDIA GeForce Now"
+    },
+    {
+      "slug": "nvidia-nvenc",
+      "label": "NVIDIA NVENC"
+    },
+    {
+      "slug": "nvidia-rtx-voice",
+      "label": "NVIDIA RTX Voice"
+    },
+    {
+      "slug": "nym-mixnet",
+      "label": "Nym Mixnet"
+    },
+    {
+      "slug": "oasis-network",
+      "label": "Oasis Network"
+    },
+    {
+      "slug": "obj",
+      "label": "OBJ"
+    },
+    {
+      "slug": "obs",
+      "label": "OBS"
+    },
+    {
+      "slug": "ohmni-labs",
+      "label": "OhmniLabs"
+    },
+    {
+      "slug": "ohmni-supercam",
+      "label": "Ohmni Supercam"
+    },
+    {
+      "slug": "ohmni-telepresence-robot",
+      "label": "Ohmni Telepresence Robot"
+    },
+    {
+      "slug": "olm",
+      "label": "Olm"
+    },
+    {
+      "slug": "omniverse",
+      "label": "Omniverse"
+    },
+    {
+      "slug": "one-drive",
+      "label": "OneDrive"
+    },
+    {
+      "slug": "op-stack",
+      "label": "OP Stack"
+    },
+    {
+      "slug": "open-campus",
+      "label": "Open Campus"
+    },
+    {
+      "slug": "open-sea",
+      "label": "OpenSea"
+    },
+    {
+      "slug": "open-source",
+      "label": "Open-Source"
+    },
+    {
+      "slug": "open-zeppelin",
+      "label": "OpenZeppelin"
+    },
+    {
+      "slug": "opolis",
+      "label": "Opolis"
+    },
+    {
+      "slug": "optical-see-through",
+      "label": "Optical See-Through"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
+    },
+    {
+      "slug": "optimization",
+      "label": "Optimization"
+    },
+    {
+      "slug": "opus",
+      "label": "Opus"
+    },
+    {
+      "slug": "osso-vr",
+      "label": "Osso VR"
+    },
+    {
+      "slug": "otter-ai",
+      "label": "Otter.ai"
+    },
+    {
+      "slug": "outlook",
+      "label": "Outlook"
+    },
+    {
+      "slug": "packet-loss",
+      "label": "Packet Loss"
+    },
+    {
+      "slug": "packet-loss-recovery",
+      "label": "Packet Loss Recovery"
+    },
+    {
+      "slug": "pancake-lenses",
+      "label": "Pancake Lenses"
+    },
+    {
+      "slug": "parcel",
+      "label": "Parcel"
+    },
+    {
+      "slug": "patricia-trie",
+      "label": "Patricia Trie"
+    },
+    {
+      "slug": "pay-per-minute-telepresence",
+      "label": "Pay-Per-Minute Telepresence"
+    },
+    {
+      "slug": "pcma",
+      "label": "PCMA"
+    },
+    {
+      "slug": "pcmu",
+      "label": "PCMU"
+    },
+    {
+      "slug": "pcvr",
+      "label": "PCVR"
+    },
+    {
+      "slug": "pedersen-commitment",
+      "label": "Pedersen Commitment"
+    },
+    {
+      "slug": "performance-bonuses",
+      "label": "Performance Bonuses"
+    },
+    {
+      "slug": "persistent-ar-clouds",
+      "label": "Persistent AR Clouds"
+    },
+    {
+      "slug": "persistent-memory",
+      "label": "Persistent Memory"
+    },
+    {
+      "slug": "persistent-virtual-spaces",
+      "label": "Persistent Virtual Spaces"
+    },
+    {
+      "slug": "persistent-worlds",
+      "label": "Persistent Worlds"
+    },
+    {
+      "slug": "personal-boundary",
+      "label": "Personal Boundary"
+    },
+    {
+      "slug": "personal-boundary-systems",
+      "label": "Personal Boundary Systems"
+    },
+    {
+      "slug": "personas",
+      "label": "Personas"
+    },
+    {
+      "slug": "phala-network",
+      "label": "Phala Network"
+    },
+    {
+      "slug": "phantom-omni",
+      "label": "Phantom Omni"
+    },
+    {
+      "slug": "phys-x",
+      "label": "PhysX"
+    },
+    {
+      "slug": "pico-4-enterprise",
+      "label": "Pico 4 Enterprise"
+    },
+    {
+      "slug": "pico-connect",
+      "label": "Pico Connect"
+    },
+    {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
+      "slug": "pixel-density",
+      "label": "Pixel Density"
+    },
+    {
+      "slug": "plasma",
+      "label": "Plasma"
+    },
+    {
+      "slug": "platforms",
+      "label": "Platforms"
+    },
+    {
+      "slug": "plenoxels",
+      "label": "Plenoxels"
+    },
+    {
+      "slug": "plonk",
+      "label": "PLONK"
+    },
+    {
+      "slug": "podcasting-2-0",
+      "label": "Podcasting 2.0"
+    },
+    {
+      "slug": "podverse",
+      "label": "Podverse"
+    },
+    {
+      "slug": "point-cloud-streaming",
+      "label": "Point Cloud Streaming"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "poly",
+      "label": "Poly"
+    },
+    {
+      "slug": "poly-cam",
+      "label": "PolyCam"
+    },
+    {
+      "slug": "poly-cam-spaces",
+      "label": "PolyCam Spaces"
+    },
+    {
+      "slug": "polycom",
+      "label": "Polycom"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "polygon-bridge",
+      "label": "Polygon Bridge"
+    },
+    {
+      "slug": "polygon-id",
+      "label": "Polygon ID"
+    },
+    {
+      "slug": "polynomial-commitment",
+      "label": "Polynomial Commitment"
+    },
+    {
+      "slug": "portl-hologram",
+      "label": "PORTL Hologram"
+    },
+    {
+      "slug": "portrait-lighting",
+      "label": "Portrait Lighting"
+    },
+    {
+      "slug": "power-point-live",
+      "label": "PowerPoint Live"
+    },
+    {
+      "slug": "predictive-algorithms",
+      "label": "Predictive Algorithms"
+    },
+    {
+      "slug": "predictive-tracking",
+      "label": "Predictive Tracking"
+    },
+    {
+      "slug": "presence-paradox",
+      "label": "Presence Paradox"
+    },
+    {
+      "slug": "private-5-g-networks",
+      "label": "Private 5G Networks"
+    },
+    {
+      "slug": "product-demonstrations",
+      "label": "Product Demonstrations"
+    },
+    {
+      "slug": "progressive-meshes",
+      "label": "Progressive Meshes"
+    },
+    {
+      "slug": "prover",
+      "label": "Prover"
+    },
+    {
+      "slug": "proximity-bubbles",
+      "label": "Proximity Bubbles"
+    },
+    {
+      "slug": "psious",
+      "label": "Psious"
+    },
+    {
+      "slug": "ptp",
+      "label": "PTP"
+    },
+    {
+      "slug": "pw-c-study",
+      "label": "PwC Study"
+    },
+    {
+      "slug": "pyusd",
+      "label": "PYUSD"
+    },
+    {
+      "slug": "qkd",
+      "label": "QKD"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "quantum-internet",
+      "label": "Quantum Internet"
+    },
+    {
+      "slug": "quantum-key-distribution",
+      "label": "Quantum Key Distribution"
+    },
+    {
+      "slug": "quantum-networking",
+      "label": "Quantum Networking"
+    },
+    {
+      "slug": "quest",
+      "label": "Quest"
+    },
+    {
+      "slug": "quic",
+      "label": "QUIC"
+    },
+    {
+      "slug": "r1",
+      "label": "R1"
+    },
+    {
+      "slug": "r2-storage",
+      "label": "R2 Storage"
+    },
+    {
+      "slug": "radix-tree",
+      "label": "Radix Tree"
+    },
+    {
+      "slug": "random-oracle",
+      "label": "Random Oracle"
+    },
+    {
+      "slug": "range-proof",
+      "label": "Range Proof"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "ReadyPlayerMe"
+    },
+    {
+      "slug": "real-time-animation",
+      "label": "Real-Time Animation"
+    },
+    {
+      "slug": "real-time-neural-rendering",
+      "label": "Real-Time Neural Rendering"
+    },
+    {
+      "slug": "real-wear-navigator-520",
+      "label": "RealWear Navigator 520"
+    },
+    {
+      "slug": "recording",
+      "label": "Recording"
+    },
+    {
+      "slug": "recycling-programs",
+      "label": "Recycling Programs"
+    },
+    {
+      "slug": "reed-solomon",
+      "label": "Reed-Solomon"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "remote-mentoring",
+      "label": "Remote Mentoring"
+    },
+    {
+      "slug": "remote-surgery",
+      "label": "Remote Surgery"
+    },
+    {
+      "slug": "remote-work",
+      "label": "Remote Work"
+    },
+    {
+      "slug": "rendering-optimizations",
+      "label": "Rendering Optimizations"
+    },
+    {
+      "slug": "replica-studios",
+      "label": "Replica Studios"
+    },
+    {
+      "slug": "reprojection",
+      "label": "Reprojection"
+    },
+    {
+      "slug": "request-network",
+      "label": "Request Network"
+    },
+    {
+      "slug": "resemble-ai",
+      "label": "Resemble.ai"
+    },
+    {
+      "slug": "resolution-limitations",
+      "label": "Resolution Limitations"
+    },
+    {
+      "slug": "resonance-audio",
+      "label": "Resonance Audio"
+    },
+    {
+      "slug": "retransmission",
+      "label": "Retransmission"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "retroactive-public-goods-funding",
+      "label": "Retroactive Public Goods Funding"
+    },
+    {
+      "slug": "revit",
+      "label": "Revit"
+    },
+    {
+      "slug": "rfid",
+      "label": "RFID"
+    },
+    {
+      "slug": "ribera-hospital",
+      "label": "Ribera Hospital"
+    },
+    {
+      "slug": "ricardian-contract",
+      "label": "Ricardian Contract"
+    },
+    {
+      "slug": "ricardian-contracts",
+      "label": "Ricardian Contracts"
+    },
+    {
+      "slug": "right-to-erasure",
+      "label": "Right to Erasure"
+    },
+    {
+      "slug": "right-to-repair",
+      "label": "Right to Repair"
+    },
+    {
+      "slug": "river-financial",
+      "label": "River Financial"
+    },
+    {
+      "slug": "rnnoise",
+      "label": "RNNoise"
+    },
+    {
+      "slug": "robot-chain",
+      "label": "RobotChain"
+    },
+    {
+      "slug": "robot-studio",
+      "label": "RobotStudio"
+    },
+    {
+      "slug": "robotic-surgery-systems",
+      "label": "Robotic Surgery Systems"
+    },
+    {
+      "slug": "rokoko",
+      "label": "Rokoko"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "ros-integration",
+      "label": "ROS Integration"
+    },
+    {
+      "slug": "roschain",
+      "label": "ROSchain"
+    },
+    {
+      "slug": "rtcdata-channel",
+      "label": "RTCDataChannel"
+    },
+    {
+      "slug": "rtcpeer-connection",
+      "label": "RTCPeerConnection"
+    },
+    {
+      "slug": "rtmp",
+      "label": "RTMP"
+    },
+    {
+      "slug": "rtx",
+      "label": "RTX"
+    },
+    {
+      "slug": "rtx-4090",
+      "label": "RTX 4090"
+    },
+    {
+      "slug": "rtx-renderer",
+      "label": "RTX Renderer"
+    },
+    {
+      "slug": "sablier",
+      "label": "Sablier"
+    },
+    {
+      "slug": "sakai",
+      "label": "Sakai"
+    },
+    {
+      "slug": "sandwich-attack",
+      "label": "Sandwich Attack"
+    },
+    {
+      "slug": "satellite-internet",
+      "label": "Satellite Internet"
+    },
+    {
+      "slug": "schwartz-zippel",
+      "label": "Schwartz-Zippel"
+    },
+    {
+      "slug": "screen-door-effect",
+      "label": "Screen Door Effect"
+    },
+    {
+      "slug": "sdp",
+      "label": "SDP"
+    },
+    {
+      "slug": "secret-network",
+      "label": "Secret Network"
+    },
+    {
+      "slug": "secure-enclave",
+      "label": "Secure Enclave"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
+    },
+    {
+      "slug": "segmented-dimming",
+      "label": "Segmented Dimming"
+    },
+    {
+      "slug": "senhance",
+      "label": "Senhance"
+    },
+    {
+      "slug": "sense-glove",
+      "label": "SenseGlove"
+    },
+    {
+      "slug": "sense-glove-nova",
+      "label": "SenseGlove Nova"
+    },
+    {
+      "slug": "sensor-networks",
+      "label": "Sensor Networks"
+    },
+    {
+      "slug": "sensory-conflict",
+      "label": "Sensory Conflict"
+    },
+    {
+      "slug": "server-side-prediction",
+      "label": "Server-Side Prediction"
+    },
+    {
+      "slug": "serverless",
+      "label": "Serverless"
+    },
+    {
+      "slug": "session-recording",
+      "label": "Session Recording"
+    },
+    {
+      "slug": "sev-snp",
+      "label": "SEV-SNP"
+    },
+    {
+      "slug": "sfu",
+      "label": "SFU"
+    },
+    {
+      "slug": "shard",
+      "label": "Shard"
+    },
+    {
+      "slug": "share-play",
+      "label": "SharePlay"
+    },
+    {
+      "slug": "share-point",
+      "label": "SharePoint"
+    },
+    {
+      "slug": "siemens-plm",
+      "label": "Siemens PLM"
+    },
+    {
+      "slug": "signal-sealed-sender",
+      "label": "Signal Sealed Sender"
+    },
+    {
+      "slug": "sk-telecom",
+      "label": "SK Telecom"
+    },
+    {
+      "slug": "sketchfab",
+      "label": "Sketchfab"
+    },
+    {
+      "slug": "slashing",
+      "label": "Slashing"
+    },
+    {
+      "slug": "slime-vr",
+      "label": "SlimeVR"
+    },
+    {
+      "slug": "slot",
+      "label": "Slot"
+    },
+    {
+      "slug": "smart-contract-withholding",
+      "label": "Smart Contract Withholding"
+    },
+    {
+      "slug": "smart-contracts-for-robotics",
+      "label": "Smart Contracts for Robotics"
+    },
+    {
+      "slug": "smart-glasses",
+      "label": "Smart Glasses"
+    },
+    {
+      "slug": "smart-legal-contract",
+      "label": "Smart Legal Contract"
+    },
+    {
+      "slug": "smart-legal-contracts",
+      "label": "Smart Legal Contracts"
+    },
+    {
+      "slug": "smart-meetings",
+      "label": "Smart Meetings"
+    },
+    {
+      "slug": "smart-royalties",
+      "label": "Smart Royalties"
+    },
+    {
+      "slug": "smpl",
+      "label": "SMPL"
+    },
+    {
+      "slug": "snapchat-spectacles",
+      "label": "Snapchat Spectacles"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "snark",
+      "label": "SNARK"
+    },
+    {
+      "slug": "social-awkwardness",
+      "label": "Social Awkwardness"
+    },
+    {
+      "slug": "soft-fork",
+      "label": "Soft Fork"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "soulbound-tokens",
+      "label": "Soulbound Tokens"
+    },
+    {
+      "slug": "soundtrap",
+      "label": "Soundtrap"
+    },
+    {
+      "slug": "source-separation",
+      "label": "Source Separation"
+    },
+    {
+      "slug": "spatial",
+      "label": "Spatial"
+    },
+    {
+      "slug": "spatial-audio-rendering",
+      "label": "Spatial Audio Rendering"
+    },
+    {
+      "slug": "spatial-creator-toolkit",
+      "label": "Spatial Creator Toolkit"
+    },
+    {
+      "slug": "spatial-web-browser",
+      "label": "Spatial Web Browser"
+    },
+    {
+      "slug": "spectral-subtraction",
+      "label": "Spectral Subtraction"
+    },
+    {
+      "slug": "spectrum-labs",
+      "label": "Spectrum Labs"
+    },
+    {
+      "slug": "speech-to-speech-translation",
+      "label": "Speech-to-Speech Translation"
+    },
+    {
+      "slug": "splatfacto",
+      "label": "Splatfacto"
+    },
+    {
+      "slug": "spleeter",
+      "label": "Spleeter"
+    },
+    {
+      "slug": "spoke",
+      "label": "Spoke"
+    },
+    {
+      "slug": "srs",
+      "label": "SRS"
+    },
+    {
+      "slug": "srt",
+      "label": "SRT"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "staking",
+      "label": "Staking"
+    },
+    {
+      "slug": "stanford",
+      "label": "Stanford"
+    },
+    {
+      "slug": "stark",
+      "label": "STARK"
+    },
+    {
+      "slug": "starlink",
+      "label": "Starlink"
+    },
+    {
+      "slug": "steam-audio",
+      "label": "Steam Audio"
+    },
+    {
+      "slug": "steam-vr",
+      "label": "SteamVR"
+    },
+    {
+      "slug": "stream",
+      "label": "Stream"
+    },
+    {
+      "slug": "streaming",
+      "label": "Streaming"
+    },
+    {
+      "slug": "streaming-satoshis",
+      "label": "Streaming Satoshis"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure-from-Motion"
+    },
+    {
+      "slug": "stun",
+      "label": "STUN"
+    },
+    {
+      "slug": "style-gan3",
+      "label": "StyleGAN3"
+    },
+    {
+      "slug": "suit-x",
+      "label": "SuitX"
+    },
+    {
+      "slug": "suitable-technologies-beam",
+      "label": "Suitable Technologies Beam"
+    },
+    {
+      "slug": "summarization",
+      "label": "Summarization"
+    },
+    {
+      "slug": "superfluid",
+      "label": "Superfluid"
+    },
+    {
+      "slug": "surgical-robots",
+      "label": "Surgical Robots"
+    },
+    {
+      "slug": "surgical-telepresence",
+      "label": "Surgical Telepresence"
+    },
+    {
+      "slug": "sustainable-telepresence",
+      "label": "Sustainable Telepresence"
+    },
+    {
+      "slug": "sync-net",
+      "label": "SyncNet"
+    },
+    {
+      "slug": "synced-databases",
+      "label": "Synced Databases"
+    },
+    {
+      "slug": "tactile-displays",
+      "label": "Tactile Displays"
+    },
+    {
+      "slug": "tally",
+      "label": "Tally"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "tax-bit",
+      "label": "TaxBit"
+    },
+    {
+      "slug": "teamcenter",
+      "label": "Teamcenter"
+    },
+    {
+      "slug": "teams",
+      "label": "Teams"
+    },
+    {
+      "slug": "tee",
+      "label": "TEE"
+    },
+    {
+      "slug": "teleoperation-interfaces",
+      "label": "Teleoperation Interfaces"
+    },
+    {
+      "slug": "teleportation",
+      "label": "Teleportation"
+    },
+    {
+      "slug": "telesurgery",
+      "label": "Telesurgery"
+    },
+    {
+      "slug": "temi-robot",
+      "label": "Temi Robot"
+    },
+    {
+      "slug": "tenso-rf",
+      "label": "TensoRF"
+    },
+    {
+      "slug": "tensor-decomposition",
+      "label": "Tensor Decomposition"
+    },
+    {
+      "slug": "terahertz",
+      "label": "Terahertz"
+    },
+    {
+      "slug": "teslasuit",
+      "label": "Teslasuit"
+    },
+    {
+      "slug": "text-rank",
+      "label": "TextRank"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
+    },
+    {
+      "slug": "thermal-feedback",
+      "label": "Thermal Feedback"
+    },
+    {
+      "slug": "three-js",
+      "label": "Three.js"
+    },
+    {
+      "slug": "tilt-brush",
+      "label": "Tilt Brush"
+    },
+    {
+      "slug": "time-series-insights",
+      "label": "Time Series Insights"
+    },
+    {
+      "slug": "time-synchronization",
+      "label": "Time Synchronization"
+    },
+    {
+      "slug": "timelooper",
+      "label": "Timelooper"
+    },
+    {
+      "slug": "tls",
+      "label": "TLS"
+    },
+    {
+      "slug": "together-mode",
+      "label": "Together Mode"
+    },
+    {
+      "slug": "token-tax",
+      "label": "TokenTax"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "traffic-analysis",
+      "label": "Traffic Analysis"
+    },
+    {
+      "slug": "training-simulations",
+      "label": "Training Simulations"
+    },
+    {
+      "slug": "transcription",
+      "label": "Transcription"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "trusted-setup",
+      "label": "Trusted Setup"
+    },
+    {
+      "slug": "turn",
+      "label": "TURN"
+    },
+    {
+      "slug": "twitch",
+      "label": "Twitch"
+    },
+    {
+      "slug": "uc-davis",
+      "label": "UC Davis"
+    },
+    {
+      "slug": "udon",
+      "label": "Udon"
+    },
+    {
+      "slug": "ueta",
+      "label": "UETA"
+    },
+    {
+      "slug": "ultra-reliable-low-latency-communication",
+      "label": "Ultra-Reliable Low-Latency Communication"
+    },
+    {
+      "slug": "uncanny-valley",
+      "label": "Uncanny Valley"
+    },
+    {
+      "slug": "unimersiv",
+      "label": "Unimersiv"
+    },
+    {
+      "slug": "unity",
+      "label": "Unity"
+    },
+    {
+      "slug": "universal-robots",
+      "label": "Universal Robots"
+    },
+    {
+      "slug": "unreal-engine-5-3",
+      "label": "Unreal Engine 5.3+"
+    },
+    {
+      "slug": "upwork",
+      "label": "Upwork"
+    },
+    {
+      "slug": "ur-polyscope",
+      "label": "UR Polyscope"
+    },
+    {
+      "slug": "ur10e",
+      "label": "UR10e"
+    },
+    {
+      "slug": "ur5e",
+      "label": "UR5e"
+    },
+    {
+      "slug": "urllc",
+      "label": "URLLC"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "uwb",
+      "label": "UWB"
+    },
+    {
+      "slug": "v8-isolates",
+      "label": "V8 Isolates"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
+    },
+    {
+      "slug": "validator-set",
+      "label": "Validator Set"
+    },
+    {
+      "slug": "value-4-value",
+      "label": "Value-4-Value"
+    },
+    {
+      "slug": "value-embedded-workflows",
+      "label": "Value-Embedded Workflows"
+    },
+    {
+      "slug": "varifocal-displays",
+      "label": "Varifocal Displays"
+    },
+    {
+      "slug": "vector-commitment",
+      "label": "Vector Commitment"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    },
+    {
+      "slug": "vergence-accommodation-conflict",
+      "label": "Vergence-Accommodation Conflict"
+    },
+    {
+      "slug": "verifier",
+      "label": "Verifier"
+    },
+    {
+      "slug": "verkle-tree",
+      "label": "Verkle Tree"
+    },
+    {
+      "slug": "versius",
+      "label": "Versius"
+    },
+    {
+      "slug": "vesting-schedules",
+      "label": "Vesting Schedules"
+    },
+    {
+      "slug": "videoconferencing",
+      "label": "Videoconferencing"
+    },
+    {
+      "slug": "virbela",
+      "label": "Virbela"
+    },
+    {
+      "slug": "virtual-assistants",
+      "label": "Virtual Assistants"
+    },
+    {
+      "slug": "virtual-backgrounds",
+      "label": "Virtual Backgrounds"
+    },
+    {
+      "slug": "virtual-campus",
+      "label": "Virtual Campus"
+    },
+    {
+      "slug": "virtual-desk",
+      "label": "Virtual Desk"
+    },
+    {
+      "slug": "virtual-site-visits",
+      "label": "Virtual Site Visits"
+    },
+    {
+      "slug": "visemes",
+      "label": "Visemes"
+    },
+    {
+      "slug": "vision-os",
+      "label": "visionOS"
+    },
+    {
+      "slug": "visual-fatigue",
+      "label": "Visual Fatigue"
+    },
+    {
+      "slug": "vive-business",
+      "label": "Vive Business"
+    },
+    {
+      "slug": "vive-trackers",
+      "label": "Vive Trackers"
+    },
+    {
+      "slug": "vo-ip",
+      "label": "VoIP"
+    },
+    {
+      "slug": "voice-activity-detection",
+      "label": "Voice Activity Detection"
+    },
+    {
+      "slug": "voice-cloning",
+      "label": "Voice Cloning"
+    },
+    {
+      "slug": "voice-control",
+      "label": "Voice Control"
+    },
+    {
+      "slug": "voice-proximity-chat",
+      "label": "Voice Proximity Chat"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    },
+    {
+      "slug": "volumetric-functions",
+      "label": "Volumetric Functions"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
+    },
+    {
+      "slug": "volumetric-video-conferencing",
+      "label": "Volumetric Video Conferencing"
+    },
+    {
+      "slug": "vp8",
+      "label": "VP8"
+    },
+    {
+      "slug": "vp9",
+      "label": "VP9"
+    },
+    {
+      "slug": "vr",
+      "label": "VR"
+    },
+    {
+      "slug": "vr-headset",
+      "label": "VR Headset"
+    },
+    {
+      "slug": "vr-headsets",
+      "label": "VR Headsets"
+    },
+    {
+      "slug": "vr-meeting",
+      "label": "VR Meeting"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
+    },
+    {
+      "slug": "vrm",
+      "label": "VRM"
+    },
+    {
+      "slug": "vvc",
+      "label": "VVC"
+    },
+    {
+      "slug": "vyper",
+      "label": "Vyper"
+    },
+    {
+      "slug": "w3-c-did-standard",
+      "label": "W3C DID Standard"
+    },
+    {
+      "slug": "w3-c-standard",
+      "label": "W3C Standard"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "watermarking",
+      "label": "Watermarking"
+    },
+    {
+      "slug": "wav2-lip",
+      "label": "Wav2Lip"
+    },
+    {
+      "slug": "wave",
+      "label": "Wave"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
+    },
+    {
+      "slug": "web-gl-gaussian-splat-viewer",
+      "label": "WebGL Gaussian Splat Viewer"
+    },
+    {
+      "slug": "web-rtc-signaling",
+      "label": "WebRTC Signaling"
+    },
+    {
+      "slug": "web-transport",
+      "label": "WebTransport"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    },
+    {
+      "slug": "webex-assistant",
+      "label": "Webex Assistant"
+    },
+    {
+      "slug": "wi-fi-6-e",
+      "label": "WiFi 6E"
+    },
+    {
+      "slug": "wiener-filtering",
+      "label": "Wiener Filtering"
+    },
+    {
+      "slug": "wiki",
+      "label": "Wiki"
+    },
+    {
+      "slug": "windows-sonic",
+      "label": "Windows Sonic"
+    },
+    {
+      "slug": "wireless",
+      "label": "Wireless"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "wyoming-dao-law",
+      "label": "Wyoming DAO Law"
+    },
+    {
+      "slug": "xbox-cloud-gaming",
+      "label": "Xbox Cloud Gaming"
+    },
+    {
+      "slug": "xr",
+      "label": "XR"
+    },
+    {
+      "slug": "xr-collaboration",
+      "label": "XR Collaboration"
+    },
+    {
+      "slug": "xreal-air",
+      "label": "XREAL Air"
+    },
+    {
+      "slug": "xsens",
+      "label": "Xsens"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
+    },
+    {
+      "slug": "you-tube",
+      "label": "YouTube"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zero-knowledge-rollup",
+      "label": "Zero-Knowledge Rollup"
+    },
+    {
+      "slug": "zk-evm",
+      "label": "zkEVM"
+    },
+    {
+      "slug": "zk-rollup",
+      "label": "ZK Rollup"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "zk-sync-era",
+      "label": "zkSync Era"
+    },
+    {
+      "slug": "zk-vm",
+      "label": "zkVM"
+    },
+    {
+      "slug": "zo-krates",
+      "label": "ZoKrates"
+    },
+    {
+      "slug": "zoom",
+      "label": "Zoom"
+    },
+    {
+      "slug": "zoom-ai-companion",
+      "label": "Zoom AI Companion"
+    },
+    {
+      "slug": "zoom-apps",
+      "label": "Zoom Apps"
+    },
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "account-model",
+      "label": "Account Model"
+    },
+    {
+      "slug": "ai-avatars",
+      "label": "AI Avatars"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "android",
+      "label": "Android"
+    },
+    {
+      "slug": "asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "avatar-customization",
+      "label": "Avatar Customization"
+    },
+    {
+      "slug": "bart",
+      "label": "BART"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "block-reward",
+      "label": "Block Reward"
+    },
+    {
+      "slug": "block-size",
+      "label": "Block Size"
+    },
+    {
+      "slug": "block-time",
+      "label": "Block Time"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain-Computer Interfaces"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "delegated-proof-of-stake",
+      "label": "Delegated Proof of Stake"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "eclipse-attack",
+      "label": "Eclipse Attack"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "epoch",
+      "label": "Epoch"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "finality",
+      "label": "Finality"
+    },
+    {
+      "slug": "gas-limit",
+      "label": "Gas Limit"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "immersive-technology",
+      "label": "Immersive Technology"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "IoT Sensors"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "media-richness-theory",
+      "label": "Media Richness Theory"
+    },
+    {
+      "slug": "meeting-transcription",
+      "label": "Meeting Transcription"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "nonce",
+      "label": "Nonce"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "OpenAI Whisper"
+    },
+    {
+      "slug": "orphan-block",
+      "label": "Orphan Block"
+    },
+    {
+      "slug": "pegasus",
+      "label": "PEGASUS"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "quality-of-service",
+      "label": "Quality of Service"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real-Time"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-Time Translation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "shared-whiteboards",
+      "label": "Shared Whiteboards"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "social-presence-theory",
+      "label": "Social Presence Theory"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial Anchors"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "sybil-attack",
+      "label": "Sybil Attack"
+    },
+    {
+      "slug": "synchronous-collaboration",
+      "label": "Synchronous Collaboration"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "slug": "templates",
+      "label": "Templates"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "volumetric-capture",
+      "label": "Volumetric Capture"
+    },
+    {
+      "slug": "vr-controllers",
+      "label": "VR Controllers"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "zk-snarks",
+      "label": "zk-SNARKs"
+    }
+  ],
+  "backlinks": []
+}

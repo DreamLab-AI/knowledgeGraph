@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31",
+  "title": "Prompt Tuning",
+  "slug": "prompt-tuning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:prompt-tuning",
+  "domain": "artificial-intelligence",
+  "definition": "A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dec-19th-2023",
+      "label": "Dec 19th, 2023"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
+      "slug": "optimization",
+      "label": "optimization"
+    },
+    {
+      "slug": "organisation",
+      "label": "organisation"
+    },
+    {
+      "slug": "productivity",
+      "label": "productivity"
+    },
+    {
+      "slug": "project-management",
+      "label": "project management"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "cloud computing"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "knowledge management"
+    },
+    {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

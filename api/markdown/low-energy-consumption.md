@@ -1,0 +1,17 @@
+- ### Definition
+  - Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99% less than PoW).
+
+- ### Semantic Classification
+  - owl-class:: blockchain:LowEnergyConsumption
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  Low Energy Consumption — content pending enrichment.
+
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

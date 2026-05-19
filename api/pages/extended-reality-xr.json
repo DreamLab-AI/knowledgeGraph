@@ -1,0 +1,207 @@
+{
+  "id": "urn:visionflow:page:08ae9efbfe769ccabbe07d6d96955d9b8dd6a607b3e1f947921d5e6f02f6c42a",
+  "title": "Extended Reality (XR)",
+  "slug": "extended-reality-xr",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:extended-reality-xr",
+  "domain": "spatial-computing",
+  "definition": "Umbrella term encompassing all immersive technologies including Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), representing the full spectrum from entirely physical to entirely virtual environments and all hybrid states between.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:immersive-technology",
+      "label": "Immersive Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixed-reality-mr",
+        "label": "Mixed Reality (MR)"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reality-virtuality-continuum",
+        "label": "Reality-Virtuality Continuum"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-reality-vr",
+        "label": "Virtual Reality (VR)"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:visionflow:linked:input-device",
+        "label": "Input Device"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-reality-transitions",
+        "label": "Cross-Reality Transitions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      },
+      {
+        "id": "urn:visionflow:owl:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm-glossary",
+      "label": "ACM Glossary"
+    },
+    {
+      "slug": "cross-reality-transitions",
+      "label": "Cross-Reality Transitions"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "slug": "head-mounted-display",
+      "label": "Head-Mounted Display"
+    },
+    {
+      "slug": "input-device",
+      "label": "Input Device"
+    },
+    {
+      "slug": "iso-9241-940",
+      "label": "ISO 9241-940"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    },
+    {
+      "slug": "immersive-technology",
+      "label": "Immersive Technology"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "reality-virtuality-continuum",
+      "label": "Reality-Virtuality Continuum"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-interaction",
+      "label": "Spatial Interaction"
+    },
+    {
+      "slug": "spatial-tracking",
+      "label": "Spatial Tracking"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "driver-software",
+      "label": "Driver Software"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

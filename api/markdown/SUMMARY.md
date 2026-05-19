@@ -1,24 +1,246 @@
-iri:: http://narrativegoldmine.com/spatial-computing#SUMMARY
-uri:: urn:visionclaw:concept:spatial-computing:summary
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:summary
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: SUMMARY
-content-hash:: sha256-12-a07fe757bd49
-legacy-term-id:: MV-3068
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#SUMMARY
+legacy_uri:: urn:visionclaw:concept:spatial-computing:summary
 public:: true
+
+# SUMMARY
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e",
+  "@type": "Page",
+  "vc:slug": "summary",
+  "title": "SUMMARY",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "BlockchainTechnology"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identity",
+      "vc:label": "DecentralizedIdentity"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "ExtendedReality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:augmented-reality",
+      "vc:label": "AugmentedReality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contracts",
+      "vc:label": "SmartContracts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-reality",
+      "vc:label": "VirtualReality"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a07fe757bd49"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#SUMMARY"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3068"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "SUMMARY"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:summary"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:summary"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:summary",
+  "@type": "OntologyClass",
+  "label": "SUMMARY",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and social collaboration. This digital infrastructure integrates [[BlockchainTechnology|blockchain-based assets]], [[SmartContracts|smart contracts]], and [[DecentralizedIdentity|decentralised identity]] systems to support genuine digital ownership, interoperability, and governance across platforms. Contemporary metaverse implementations span gaming worlds, social platforms, professional collaboration environments, and virtual economies representing hundreds of billions in user-generated value.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:summary:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[BlockchainTechnology|blockchain-based assets]]",
+      "resolved": "urn:visionflow:linked:blockchain-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DecentralizedIdentity|decentralised identity]]",
+      "resolved": "urn:visionflow:linked:decentralized-identity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ExtendedReality|extended reality]]",
+      "resolved": "urn:visionflow:linked:extended-reality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AugmentedReality|augmented reality]]",
+      "resolved": "urn:visionflow:owl:class:augmented-reality",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContracts|smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contracts",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualReality|virtual reality]]",
+      "resolved": "urn:visionflow:owl:class:virtual-reality",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and social collaboration. This digital infrastructure integrates [[BlockchainTechnology|blockchain-based assets]], [[SmartContracts|smart contracts]], and [[DecentralizedIdentity|decentralised identity]] systems to support genuine digital ownership, interoperability, and governance across platforms. Contemporary metaverse implementations span gaming worlds, social platforms, professional collaboration environments, and virtual economies representing hundreds of billions in user-generated value.

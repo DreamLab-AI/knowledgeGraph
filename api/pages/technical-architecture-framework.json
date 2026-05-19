@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:beb34c79cc579d1ad8c933aace2288fabb854c5f950642a82a9ea50154c1b63e",
+  "title": "Technical Architecture Framework",
+  "slug": "technical-architecture-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technical-architecture-framework",
+  "domain": "spatial-computing",
+  "definition": "Technical Architecture Framework is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:definitions-and-frameworks-for-metaverse",
+      "label": "Definitions and frameworks for Metaverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    }
+  ]
+}

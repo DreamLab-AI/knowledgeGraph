@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:31152ea43a6cbf190ccad2e254b36e1051181dd97bf830ad8768dde0ff04bf71",
+  "title": "Performance Benchmarks",
+  "slug": "performance-benchmarks",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:performance-benchmarks",
+  "domain": "artificial-intelligence",
+  "definition": "Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:bacf138026c65b839da35da9a6e3e2c8a00e94398d042f1da1da4f82c7b835f0",
+  "title": "Portal System",
+  "slug": "portal-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:portal-system",
+  "domain": "spatial-computing",
+  "definition": "PortalSystem is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    }
+  ]
+}

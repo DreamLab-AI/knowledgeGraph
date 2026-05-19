@@ -1,20 +1,308 @@
-iri:: http://narrativegoldmine.com/blockchain#Agent
-uri:: urn:visionclaw:concept:blockchain:agent
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:agent
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Agent
-content-hash:: sha256-12-bfe6bf71124b
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#Agent
+legacy_uri:: urn:visionclaw:concept:blockchain:agent
 public:: true
+
+# Agent
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0c6faf428a7dd79f79159cfc69134bf109aad83de0e588395d8c5f44a10ee2c7",
+  "@type": "Page",
+  "vc:slug": "agent",
+  "title": "Agent",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:action",
+      "vc:label": "Action"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment",
+      "vc:label": "Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-agent",
+      "vc:label": "Hybrid Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning",
+      "vc:label": "Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:perception",
+      "vc:label": "Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:physical-agent",
+      "vc:label": "Physical Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-agent",
+      "vc:label": "Software Agent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomy-level",
+      "vc:label": "Autonomy Level"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bdi-model",
+      "vc:label": "BDI Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:goal",
+      "vc:label": "Goal"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:objective",
+      "vc:label": "Objective"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-bfe6bf71124b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#Agent"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Agent"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:agent"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:agent"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c6faf428a7dd79f79159cfc69134bf109aad83de0e588395d8c5f44a10ee2c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:agent",
+  "@type": "OntologyClass",
+  "label": "Agent",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0c6faf428a7dd79f79159cfc69134bf109aad83de0e588395d8c5f44a10ee2c7"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c6faf428a7dd79f79159cfc69134bf109aad83de0e588395d8c5f44a10ee2c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Agent is a concept within the bc domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:agent:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0c6faf428a7dd79f79159cfc69134bf109aad83de0e588395d8c5f44a10ee2c7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Action]]",
+      "resolved": "urn:visionflow:linked:action",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous System]]",
+      "resolved": "urn:visionflow:linked:autonomous-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environment]]",
+      "resolved": "urn:visionflow:linked:environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hybrid Agent]]",
+      "resolved": "urn:visionflow:linked:hybrid-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Learning]]",
+      "resolved": "urn:visionflow:linked:learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent System]]",
+      "resolved": "urn:visionflow:linked:multi-agent-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Perception]]",
+      "resolved": "urn:visionflow:linked:perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Physical Agent]]",
+      "resolved": "urn:visionflow:linked:physical-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Software Agent]]",
+      "resolved": "urn:visionflow:linked:software-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomy Level]]",
+      "resolved": "urn:visionflow:owl:class:autonomy-level",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BDI Model]]",
+      "resolved": "urn:visionflow:owl:class:bdi-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Goal]]",
+      "resolved": "urn:visionflow:owl:class:goal",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Objective]]",
+      "resolved": "urn:visionflow:owl:class:objective",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0c6faf428a7dd79f79159cfc69134bf109aad83de0e588395d8c5f44a10ee2c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Agent is a concept within the bc domain.

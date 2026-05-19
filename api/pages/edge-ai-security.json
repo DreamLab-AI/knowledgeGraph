@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:b84396eb89cd770de65806648c4e903a0d1174d4de162e448015a1e6d01569a6",
+  "title": "Edge AI Security",
+  "slug": "edge-ai-security",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:edge-ai-security",
+  "domain": "artificial-intelligence",
+  "definition": "Edge AI Security protects machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, and unauthorized access while respecting resource constraints of embedded environments. Edge security differs from cloud security by prioritizing offline operation, physical accessibility threats, and extreme resource scarcity. Trusted Execution Environments (TEEs) like ARM TrustZone isolate sensitive AI operations in hardware-protected secure enclaves, preventing unauthorized model inspection or parameter access even by device operating systems. Model encryption protects intellectual property; weights are decrypted only within TEEs during inference. Secure bootstrap chains verify device firmware integrity before executing AI models, preventing compromised code from manipulating inference. Defense mechanisms against adversarial attacks include input validation, anomaly detection, and certified robustness techniques tolerating small input perturbations. Model extraction attacks steal intellectual property by querying inference endpoints; edge systems mitigate this through rate limiting, access control, and covert deployment of detection me",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": []
+}

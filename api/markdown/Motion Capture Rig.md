@@ -1,24 +1,469 @@
-iri:: http://narrativegoldmine.com/spatial-computing#MotionCaptureRig
-uri:: urn:visionclaw:concept:spatial-computing:motion-capture-rig
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:motion-capture-rig
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Motion Capture Rig
-content-hash:: sha256-12-d06cea75b501
-legacy-term-id:: 20155
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#MotionCaptureRig
+legacy_uri:: urn:visionclaw:concept:spatial-computing:motion-capture-rig
 public:: true
+
+# Motion Capture Rig
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:47dbde0456cd70a28e2232664894745feae87f08f153f8560bbab0a67192c9e3",
+  "@type": "Page",
+  "vc:slug": "motion-capture-rig",
+  "title": "Motion Capture Rig",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:biomechanical-analysis",
+      "vc:label": "Biomechanical Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:camera-calibration",
+      "vc:label": "Camera Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-fusion",
+      "vc:label": "Data Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-processing-unit",
+      "vc:label": "Data Processing Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:high-speed-networking",
+      "vc:label": "High-Speed Networking"
+    },
+    {
+      "@id": "urn:visionflow:linked:imu-sensors",
+      "vc:label": "IMU Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-17820",
+      "vc:label": "ISO/IEC 17820"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-cameras",
+      "vc:label": "Optical Cameras"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-capture",
+      "vc:label": "Performance Capture"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:linked:skeletal-tracking",
+      "vc:label": "Skeletal Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:synchronized-timing",
+      "vc:label": "Synchronized Timing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tracking-volume",
+      "vc:label": "Tracking Volume"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:animation-retargeting",
+      "vc:label": "Animation Retargeting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:calibration-target",
+      "vc:label": "Calibration Target"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-markers",
+      "vc:label": "Motion Markers"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-solver-software",
+      "vc:label": "Motion Solver Software"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physical-layer",
+      "vc:label": "PhysicalLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reality-capture-system",
+      "vc:label": "Reality Capture System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-production",
+      "vc:label": "Virtual Production"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d06cea75b501"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#MotionCaptureRig"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20155"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Motion Capture Rig"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:motion-capture-rig"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:motion-capture-rig"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:47dbde0456cd70a28e2232664894745feae87f08f153f8560bbab0a67192c9e3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:motion-capture-rig",
+  "@type": "OntologyClass",
+  "label": "Motion Capture Rig",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:47dbde0456cd70a28e2232664894745feae87f08f153f8560bbab0a67192c9e3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:47dbde0456cd70a28e2232664894745feae87f08f153f8560bbab0a67192c9e3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Physical hardware or software system capturing human motion for animation or simulation through cameras, markers, sensors, and tracking infrastructure.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:owl:class:reality-capture-system",
+      "vc:label": "Reality Capture System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:data-processing-unit",
+      "vc:label": "Data Processing Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:imu-sensors",
+      "vc:label": "IMU Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-cameras",
+      "vc:label": "Optical Cameras"
+    },
+    {
+      "@id": "urn:visionflow:linked:tracking-volume",
+      "vc:label": "Tracking Volume"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:calibration-target",
+      "vc:label": "Calibration Target"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-markers",
+      "vc:label": "Motion Markers"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:camera-calibration",
+      "vc:label": "Camera Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:high-speed-networking",
+      "vc:label": "High-Speed Networking"
+    },
+    {
+      "@id": "urn:visionflow:linked:synchronized-timing",
+      "vc:label": "Synchronized Timing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-solver-software",
+      "vc:label": "Motion Solver Software"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:biomechanical-analysis",
+      "vc:label": "Biomechanical Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-capture",
+      "vc:label": "Performance Capture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:animation-retargeting",
+      "vc:label": "Animation Retargeting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-production",
+      "vc:label": "Virtual Production"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:data-fusion",
+      "vc:label": "Data Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:skeletal-tracking",
+      "vc:label": "Skeletal Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:motion-capture-rig:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:47dbde0456cd70a28e2232664894745feae87f08f153f8560bbab0a67192c9e3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Biomechanical Analysis]]",
+      "resolved": "urn:visionflow:linked:biomechanical-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Camera Calibration]]",
+      "resolved": "urn:visionflow:linked:camera-calibration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Fusion]]",
+      "resolved": "urn:visionflow:linked:data-fusion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Processing Unit]]",
+      "resolved": "urn:visionflow:linked:data-processing-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[High-Speed Networking]]",
+      "resolved": "urn:visionflow:linked:high-speed-networking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IMU Sensors]]",
+      "resolved": "urn:visionflow:linked:imu-sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 17820]]",
+      "resolved": "urn:visionflow:linked:iso-iec-17820",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optical Cameras]]",
+      "resolved": "urn:visionflow:linked:optical-cameras",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Performance Capture]]",
+      "resolved": "urn:visionflow:linked:performance-capture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Input]]",
+      "resolved": "urn:visionflow:linked:sensor-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Skeletal Tracking]]",
+      "resolved": "urn:visionflow:linked:skeletal-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Synchronized Timing]]",
+      "resolved": "urn:visionflow:linked:synchronized-timing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Tracking Volume]]",
+      "resolved": "urn:visionflow:linked:tracking-volume",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Animation Retargeting]]",
+      "resolved": "urn:visionflow:owl:class:animation-retargeting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Calibration Target]]",
+      "resolved": "urn:visionflow:owl:class:calibration-target",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Markers]]",
+      "resolved": "urn:visionflow:owl:class:motion-markers",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Motion Solver Software]]",
+      "resolved": "urn:visionflow:owl:class:motion-solver-software",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[PhysicalLayer]]",
+      "resolved": "urn:visionflow:owl:class:physical-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reality Capture System]]",
+      "resolved": "urn:visionflow:owl:class:reality-capture-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Production]]",
+      "resolved": "urn:visionflow:owl:class:virtual-production",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:47dbde0456cd70a28e2232664894745feae87f08f153f8560bbab0a67192c9e3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Physical hardware or software system capturing human motion for animation or simulation through cameras, markers, sensors, and tracking infrastructure.

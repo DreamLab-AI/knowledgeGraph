@@ -1,24 +1,314 @@
-iri:: http://narrativegoldmine.com/spatial-computing#HumanOversight
-uri:: urn:visionclaw:concept:spatial-computing:human-oversight
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:human-oversight
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Human Oversight
-content-hash:: sha256-12-c1c48fecc76e
-legacy-term-id:: AI-0096
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#HumanOversight
+legacy_uri:: urn:visionclaw:concept:spatial-computing:human-oversight
 public:: true
+
+# Human Oversight
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea",
+  "@type": "Page",
+  "vc:slug": "human-oversight",
+  "title": "Human Oversight",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:automation-bias",
+      "vc:label": "Automation Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-improvement",
+      "vc:label": "continuous improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-correction",
+      "vc:label": "error correction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-audit",
+      "vc:label": "AI Audit"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-operator",
+      "vc:label": "AI Operator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-in-the-loop",
+      "vc:label": "Human in the Loop"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c1c48fecc76e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#HumanOversight"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0096"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Human Oversight"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:human-oversight"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:human-oversight"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:human-oversight",
+  "@type": "OntologyClass",
+  "label": "Human Oversight",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "vc:label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human values, ethical principles, legal requirements, and intended purposes, with particular emphasis on preventing, detecting, and correcting harmful or inappropriate AI behaviours through informed human decision-making authority.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:continuous-improvement",
+      "vc:label": "continuous improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-correction",
+      "vc:label": "error correction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:human-oversight:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Automation Bias]]",
+      "resolved": "urn:visionflow:linked:automation-bias",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[continuous improvement]]",
+      "resolved": "urn:visionflow:linked:continuous-improvement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[error correction]]",
+      "resolved": "urn:visionflow:linked:error-correction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Audit]]",
+      "resolved": "urn:visionflow:owl:class:ai-audit",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Operator]]",
+      "resolved": "urn:visionflow:owl:class:ai-operator",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Explainability]]",
+      "resolved": "urn:visionflow:owl:class:explainability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human in the Loop]]",
+      "resolved": "urn:visionflow:owl:class:human-in-the-loop",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Responsible AI]]",
+      "resolved": "urn:visionflow:owl:class:responsible-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:risk-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparency]]",
+      "resolved": "urn:visionflow:owl:class:transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human values, ethical principles, legal requirements, and intended purposes, with particular emphasis on preventing, detecting, and correcting harmful or inappropriate AI behaviours through informed human decision-making authority.
@@ -391,7 +681,7 @@ public:: true
 		  ## See Also
 
 		  - [[AI Governance]]
-		  - [[Human-in-the-Loop]]
+		  - [[Human in the Loop]]
 		  - [[AI Operator]]
 		  - [[Accountability]]
 		  - [[Explainability]]

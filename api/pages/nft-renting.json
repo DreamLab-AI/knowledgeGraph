@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:c573708c6930c295ab1fede09871a31cff509384317fa6985e2d9c3606ae66dd",
+  "title": "NFT Renting",
+  "slug": "nft-renting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:nft-renting",
+  "domain": "spatial-computing",
+  "definition": "Process of temporarily assigning usage rights for a non-fungible token without transferring ownership, enforced through smart contract time-bound licensing mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:rental-agreement-terms",
+        "label": "Rental Agreement Terms"
+      },
+      {
+        "id": "urn:visionflow:linked:rental-smart-contract",
+        "label": "Rental Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:time-lock-mechanism",
+        "label": "Time Lock Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-rights-token",
+        "label": "Usage Rights Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:nft-ownership-verification",
+        "label": "NFT Ownership Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-utilization",
+        "label": "Asset Utilization"
+      },
+      {
+        "id": "urn:visionflow:linked:collateral-management",
+        "label": "Collateral Management"
+      },
+      {
+        "id": "urn:visionflow:linked:revenue-generation",
+        "label": "Revenue Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:temporary-asset-access",
+        "label": "Temporary Asset Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-utilization",
+      "label": "Asset Utilization"
+    },
+    {
+      "slug": "collateral-management",
+      "label": "Collateral Management"
+    },
+    {
+      "slug": "escrow-mechanism",
+      "label": "Escrow Mechanism"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "nft-ownership-verification",
+      "label": "NFT Ownership Verification"
+    },
+    {
+      "slug": "rental-agreement-terms",
+      "label": "Rental Agreement Terms"
+    },
+    {
+      "slug": "rental-smart-contract",
+      "label": "Rental Smart Contract"
+    },
+    {
+      "slug": "revenue-generation",
+      "label": "Revenue Generation"
+    },
+    {
+      "slug": "smart-contract-execution",
+      "label": "Smart Contract Execution"
+    },
+    {
+      "slug": "time-lock-mechanism",
+      "label": "Time Lock Mechanism"
+    },
+    {
+      "slug": "time-oracle",
+      "label": "Time Oracle"
+    },
+    {
+      "slug": "usage-rights-token",
+      "label": "Usage Rights Token"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-marketplace",
+      "label": "NFT Marketplace"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "temporary-asset-access",
+      "label": "Temporary Asset Access"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    }
+  ]
+}

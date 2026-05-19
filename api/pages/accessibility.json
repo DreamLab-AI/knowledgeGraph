@@ -1,0 +1,628 @@
+{
+  "id": "urn:visionflow:page:7ad0ec25e96f3333a038762e1b3db2adbecbd213320296335bde9deacf636cb8",
+  "title": "Accessibility",
+  "slug": "accessibility",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accessibility",
+  "domain": "human-computer-interaction",
+  "definition": "Accessibility is the systematic property of digital products, services, environments and information systems being perceivable, operable, understandable and robust (POUR) for the widest possible range of users including those with permanent disabilities (blindness, low vision, deafness/hard-of-hearing, motor impairments such as paralysis/tremor/limb difference, cognitive/learning disabilities, neurodiversity, speech impairments, photosensitive epilepsy), temporary impairments (broken arm, post-surgery recovery, eye dilation, ear infection, migraine, concussion), and situational limitations (bright sunlight reducing screen contrast, noisy environments masking audio cues, one-handed use whilst carrying objects, limited bandwidth/older hardware, non-native language proficiency), implemented through a stack of normative standards (W3C Web Content Accessibility Guidelines WCAG 2.0/2.1/2.2 published October 2023 introducing nine new success criteria including 2.4.11 Focus Not Obscured, 2.5.7 Dragging Movements, 2.5.8 Target Size Minimum 24\u00d724 CSS pixels, 3.2.6 Consistent Help, 3.3.7 Redundant Entry, 3.3.8/3.3.9 Accessible Authentication; WCAG 3.0 Silver draft introducing outcome-based sc",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:design-principle",
+      "label": "Design Principle"
+    },
+    {
+      "id": "urn:visionflow:linked:inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "id": "urn:visionflow:linked:non-functional-requirement",
+      "label": "Non-Functional Requirement"
+    },
+    {
+      "id": "urn:visionflow:linked:quality-attribute",
+      "label": "Quality Attribute"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-factors",
+      "label": "Human Factors"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accessibility-statement",
+        "label": "Accessibility Statement"
+      },
+      {
+        "id": "urn:visionflow:linked:accessible-name-computation",
+        "label": "Accessible Name Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:alternative-text",
+        "label": "Alternative Text"
+      },
+      {
+        "id": "urn:visionflow:linked:audio-description",
+        "label": "Audio Description"
+      },
+      {
+        "id": "urn:visionflow:linked:captions",
+        "label": "Captions"
+      },
+      {
+        "id": "urn:visionflow:linked:focus-management",
+        "label": "Focus Management"
+      },
+      {
+        "id": "urn:visionflow:linked:keyboard-navigation",
+        "label": "Keyboard Navigation"
+      },
+      {
+        "id": "urn:visionflow:linked:operability",
+        "label": "Operability"
+      },
+      {
+        "id": "urn:visionflow:linked:perceivability",
+        "label": "Perceivability"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "id": "urn:visionflow:linked:understandability",
+        "label": "Understandability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robustness",
+        "label": "Robustness"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:assistive-technology-compatibility",
+        "label": "Assistive Technology Compatibility"
+      },
+      {
+        "id": "urn:visionflow:linked:colour-contrast",
+        "label": "Colour Contrast"
+      },
+      {
+        "id": "urn:visionflow:linked:keyboard-operability",
+        "label": "Keyboard Operability"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "id": "urn:visionflow:linked:user-research-with-disabled-users",
+        "label": "User Research with Disabled Users"
+      },
+      {
+        "id": "urn:visionflow:linked:wai-aria",
+        "label": "WAI-ARIA"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:disability-inclusion",
+        "label": "Disability Inclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:equitable-access",
+        "label": "Equitable Access"
+      },
+      {
+        "id": "urn:visionflow:linked:independent-living",
+        "label": "Independent Living"
+      },
+      {
+        "id": "urn:visionflow:linked:market-expansion",
+        "label": "Market Expansion"
+      },
+      {
+        "id": "urn:visionflow:linked:universal-usability",
+        "label": "Universal Usability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:atag-2-0",
+        "label": "ATAG 2.0"
+      },
+      {
+        "id": "urn:visionflow:linked:en-301-549",
+        "label": "EN 301 549"
+      },
+      {
+        "id": "urn:visionflow:linked:pour-principles",
+        "label": "POUR Principles"
+      },
+      {
+        "id": "urn:visionflow:linked:section-508",
+        "label": "Section 508"
+      },
+      {
+        "id": "urn:visionflow:linked:wai-aria-1-2",
+        "label": "WAI-ARIA 1.2"
+      },
+      {
+        "id": "urn:visionflow:linked:wcag-2-2",
+        "label": "WCAG 2.2"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-statement",
+      "label": "Accessibility Statement"
+    },
+    {
+      "slug": "accessible-name-computation",
+      "label": "Accessible Name Computation"
+    },
+    {
+      "slug": "alternative-text",
+      "label": "Alternative Text"
+    },
+    {
+      "slug": "assistive-technology-compatibility",
+      "label": "Assistive Technology Compatibility"
+    },
+    {
+      "slug": "assistive-technology-ecosystem",
+      "label": "Assistive Technology Ecosystem"
+    },
+    {
+      "slug": "atag-2-0",
+      "label": "ATAG 2.0"
+    },
+    {
+      "slug": "audio-description",
+      "label": "Audio Description"
+    },
+    {
+      "slug": "axe-core",
+      "label": "axe-core"
+    },
+    {
+      "slug": "bigham-2010-viz-wiz",
+      "label": "Bigham 2010 VizWiz"
+    },
+    {
+      "slug": "bs-8878",
+      "label": "BS 8878"
+    },
+    {
+      "slug": "captioning-users",
+      "label": "Captioning Users"
+    },
+    {
+      "slug": "captions",
+      "label": "Captions"
+    },
+    {
+      "slug": "cognitively-diverse-users",
+      "label": "Cognitively Diverse Users"
+    },
+    {
+      "slug": "colour-contrast",
+      "label": "Colour Contrast"
+    },
+    {
+      "slug": "content-layer",
+      "label": "ContentLayer"
+    },
+    {
+      "slug": "design-domain",
+      "label": "DesignDomain"
+    },
+    {
+      "slug": "design-principle",
+      "label": "Design Principle"
+    },
+    {
+      "slug": "disability-inclusion",
+      "label": "Disability Inclusion"
+    },
+    {
+      "slug": "disability-rights",
+      "label": "Disability Rights"
+    },
+    {
+      "slug": "disability-studies",
+      "label": "Disability Studies"
+    },
+    {
+      "slug": "en-301-549",
+      "label": "EN 301 549"
+    },
+    {
+      "slug": "equitable-access",
+      "label": "Equitable Access"
+    },
+    {
+      "slug": "eu-web-accessibility-directive-2016-2102",
+      "label": "EU Web Accessibility Directive 2016/2102"
+    },
+    {
+      "slug": "european-accessibility-act-2019-882",
+      "label": "European Accessibility Act 2019/882"
+    },
+    {
+      "slug": "eye-tracking-users",
+      "label": "Eye-Tracking Users"
+    },
+    {
+      "slug": "focus-management",
+      "label": "Focus Management"
+    },
+    {
+      "slug": "grand-view-research-accessibility-technology-market-2024",
+      "label": "Grand View Research Accessibility Technology Market 2024"
+    },
+    {
+      "slug": "gurari-2018-viz-wiz-grand-challenge",
+      "label": "Gurari 2018 VizWiz Grand Challenge"
+    },
+    {
+      "slug": "holmes-2018-mismatch",
+      "label": "Holmes 2018 Mismatch"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "human-factors-research",
+      "label": "Human Factors Research"
+    },
+    {
+      "slug": "inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "slug": "independent-living",
+      "label": "Independent Living"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "InterfaceLayer"
+    },
+    {
+      "slug": "internationalisation",
+      "label": "Internationalisation"
+    },
+    {
+      "slug": "iso-30071-1-2019",
+      "label": "ISO 30071-1:2019"
+    },
+    {
+      "slug": "iso-iec-40500",
+      "label": "ISO/IEC 40500"
+    },
+    {
+      "slug": "jaws",
+      "label": "JAWS"
+    },
+    {
+      "slug": "keyboard-navigation",
+      "label": "Keyboard Navigation"
+    },
+    {
+      "slug": "keyboard-only-users",
+      "label": "Keyboard-Only Users"
+    },
+    {
+      "slug": "keyboard-operability",
+      "label": "Keyboard Operability"
+    },
+    {
+      "slug": "koenecke-2020-asr-racial-disparities",
+      "label": "Koenecke 2020 ASR Racial Disparities"
+    },
+    {
+      "slug": "lazar-goldstein-taylor-2015-ensuring-digital-accessibility",
+      "label": "Lazar Goldstein Taylor 2015 Ensuring Digital Accessibility"
+    },
+    {
+      "slug": "lighthouse",
+      "label": "Lighthouse"
+    },
+    {
+      "slug": "localisation",
+      "label": "Localisation"
+    },
+    {
+      "slug": "mace-1985-universal-design",
+      "label": "Mace 1985 Universal Design"
+    },
+    {
+      "slug": "market-expansion",
+      "label": "Market Expansion"
+    },
+    {
+      "slug": "microsoft-inclusive-design-toolkit-2016",
+      "label": "Microsoft Inclusive Design Toolkit 2016"
+    },
+    {
+      "slug": "mott-2020-vr-accessibility",
+      "label": "Mott 2020 VR Accessibility"
+    },
+    {
+      "slug": "non-functional-requirement",
+      "label": "Non-Functional Requirement"
+    },
+    {
+      "slug": "nvda",
+      "label": "NVDA"
+    },
+    {
+      "slug": "oliver-1983-social-model-of-disability",
+      "label": "Oliver 1983 Social Model of Disability"
+    },
+    {
+      "slug": "operability",
+      "label": "Operability"
+    },
+    {
+      "slug": "operating-system-accessibility-apis",
+      "label": "Operating System Accessibility APIs"
+    },
+    {
+      "slug": "pa11y",
+      "label": "Pa11y"
+    },
+    {
+      "slug": "perceivability",
+      "label": "Perceivability"
+    },
+    {
+      "slug": "pour-principles",
+      "label": "POUR Principles"
+    },
+    {
+      "slug": "quality-attribute",
+      "label": "Quality Attribute"
+    },
+    {
+      "slug": "reasonable-accommodation",
+      "label": "Reasonable Accommodation"
+    },
+    {
+      "slug": "screen-reader-users",
+      "label": "Screen Reader Users"
+    },
+    {
+      "slug": "section-508",
+      "label": "Section 508"
+    },
+    {
+      "slug": "section-508-refresh-2018",
+      "label": "Section 508 Refresh 2018"
+    },
+    {
+      "slug": "semantic-html",
+      "label": "Semantic HTML"
+    },
+    {
+      "slug": "standards-and-regulation-domain",
+      "label": "StandardsAndRegulationDomain"
+    },
+    {
+      "slug": "switch-users",
+      "label": "Switch Users"
+    },
+    {
+      "slug": "talk-back",
+      "label": "TalkBack"
+    },
+    {
+      "slug": "uk-equality-act-2010",
+      "label": "UK Equality Act 2010"
+    },
+    {
+      "slug": "uk-public-sector-bodies-accessibility-regulations-2018",
+      "label": "UK Public Sector Bodies Accessibility Regulations 2018"
+    },
+    {
+      "slug": "understandability",
+      "label": "Understandability"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    },
+    {
+      "slug": "universal-usability",
+      "label": "Universal Usability"
+    },
+    {
+      "slug": "usability",
+      "label": "Usability"
+    },
+    {
+      "slug": "usable-net-2024-lawsuit-report",
+      "label": "UsableNet 2024 Lawsuit Report"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "user-research-with-disabled-users",
+      "label": "User Research with Disabled Users"
+    },
+    {
+      "slug": "voice-control-users",
+      "label": "Voice-Control Users"
+    },
+    {
+      "slug": "voice-over",
+      "label": "VoiceOver"
+    },
+    {
+      "slug": "w3-c-cognitive-accessibility-task-force-coga",
+      "label": "W3C Cognitive Accessibility Task Force COGA"
+    },
+    {
+      "slug": "w3-c-wai",
+      "label": "W3C WAI"
+    },
+    {
+      "slug": "w3-c-web-accessibility-initiative",
+      "label": "W3C Web Accessibility Initiative"
+    },
+    {
+      "slug": "w3-c-xr-accessibility-user-requirements-xaur",
+      "label": "W3C XR Accessibility User Requirements XAUR"
+    },
+    {
+      "slug": "wai-aria",
+      "label": "WAI-ARIA"
+    },
+    {
+      "slug": "wai-aria-1-2",
+      "label": "WAI-ARIA 1.2"
+    },
+    {
+      "slug": "wave",
+      "label": "WAVE"
+    },
+    {
+      "slug": "wcag-2-2",
+      "label": "WCAG 2.2"
+    },
+    {
+      "slug": "wcag-3-0-working-draft",
+      "label": "WCAG 3.0 Working Draft"
+    },
+    {
+      "slug": "web-aim-million-2024",
+      "label": "WebAIM Million 2024"
+    },
+    {
+      "slug": "web-aim-screen-reader-user-survey-10",
+      "label": "WebAIM Screen Reader User Survey 10"
+    },
+    {
+      "slug": "who-global-report-on-health-equity-for-persons-with-disabilities-2022",
+      "label": "WHO Global Report on Health Equity for Persons with Disabilities 2022"
+    },
+    {
+      "slug": "wobbrock-2011-ability-based-design",
+      "label": "Wobbrock 2011 Ability-Based Design"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "web-standards",
+      "label": "Web Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "disruptive-technology",
+      "label": "Disruptive Technology"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    },
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    },
+    {
+      "slug": "xr-accessibility-standards",
+      "label": "XR Accessibility Standards"
+    }
+  ]
+}

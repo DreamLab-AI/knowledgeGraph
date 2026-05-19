@@ -1,0 +1,540 @@
+{
+  "id": "urn:visionflow:page:8dea837d3bb6f8f758884a6d408bd6362a01717a6ec0c557310875b611f0635b",
+  "title": "IoT Sensor Network",
+  "slug": "io-t-sensor-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:io-t-sensor-network",
+  "domain": "infrastructure",
+  "definition": "A distributed system of spatially separated, resource-constrained sensing devices\u2014each comprising a sensor element, microcontroller, radio transceiver, and power source\u2014interconnected through heterogeneous wireless protocols to collect, process, and transmit physical-world measurements toward gateway nodes and cloud platforms, enabling large-scale real-time observation of environmental, industrial, and biological phenomena across spatial scales from single rooms to continental sensor arrays. IoT sensor networks inherit foundational architecture from academic wireless sensor network (WSN) research initiated by Akyildiz et al. (2002) and subsequently industrialised through the IEEE 802.15.4 physical and MAC layer standard (2003, revised 2020), which defines the radio characteristics underpinning Zigbee, Thread, 6LoWPAN, and WirelessHART\u2014the dominant low-power mesh protocols deployed in over 15 billion active IoT nodes globally by 2026. The canonical network architecture separates four tiers: sensing nodes (motes) performing raw data acquisition from one or more transducers (temperature, pressure, humidity, accelerometer, LIDAR, camera, gas sensor, soil moisture, water quality probe),",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cyber-physical-systems",
+      "label": "Cyber-Physical Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:networked-embedded-systems",
+      "label": "Networked Embedded Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:pervasive-computing",
+      "label": "Pervasive Computing"
+    },
+    {
+      "id": "urn:visionflow:linked:wireless-sensor-network",
+      "label": "Wireless Sensor Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cloud-io-t-platform",
+        "label": "Cloud IoT Platform"
+      },
+      {
+        "id": "urn:visionflow:linked:data-aggregation-layer",
+        "label": "Data Aggregation Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-gateway",
+        "label": "Edge Gateway"
+      },
+      {
+        "id": "urn:visionflow:linked:power-management-unit",
+        "label": "Power Management Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:security-module",
+        "label": "Security Module"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-node",
+        "label": "Sensor Node"
+      },
+      {
+        "id": "urn:visionflow:linked:time-synchronisation-protocol",
+        "label": "Time Synchronisation Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:co-ap",
+        "label": "CoAP"
+      },
+      {
+        "id": "urn:visionflow:linked:device-identity",
+        "label": "Device Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      },
+      {
+        "id": "urn:visionflow:linked:ipv6-networking",
+        "label": "IPv6 Networking"
+      },
+      {
+        "id": "urn:visionflow:linked:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:visionflow:linked:power-source",
+        "label": "Power Source"
+      },
+      {
+        "id": "urn:visionflow:linked:radio-transceiver",
+        "label": "Radio Transceiver"
+      },
+      {
+        "id": "urn:visionflow:linked:time-synchronisation",
+        "label": "Time Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:healthcare-monitoring",
+        "label": "Healthcare Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:visionflow:linked:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-buildings",
+        "label": "Smart Buildings"
+      },
+      {
+        "id": "urn:visionflow:linked:smart-cities",
+        "label": "Smart Cities"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:6-lo-wpan",
+        "label": "6LoWPAN"
+      },
+      {
+        "id": "urn:visionflow:linked:ble-mesh",
+        "label": "BLE Mesh"
+      },
+      {
+        "id": "urn:visionflow:linked:lo-ra-wan",
+        "label": "LoRaWAN"
+      },
+      {
+        "id": "urn:visionflow:linked:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:nb-io-t",
+        "label": "NB-IoT"
+      },
+      {
+        "id": "urn:visionflow:linked:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:wireless-hart",
+        "label": "WirelessHART"
+      },
+      {
+        "id": "urn:visionflow:linked:z-wave",
+        "label": "Z-Wave"
+      },
+      {
+        "id": "urn:visionflow:linked:zigbee",
+        "label": "Zigbee"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-gpp-nb-io-t",
+      "label": "3GPP NB-IoT"
+    },
+    {
+      "slug": "5-g-networks",
+      "label": "5G Networks"
+    },
+    {
+      "slug": "6-lo-wpan",
+      "label": "6LoWPAN"
+    },
+    {
+      "slug": "asset-tracking",
+      "label": "Asset Tracking"
+    },
+    {
+      "slug": "ble-mesh",
+      "label": "BLE Mesh"
+    },
+    {
+      "slug": "building-automation",
+      "label": "Building Automation"
+    },
+    {
+      "slug": "cbor",
+      "label": "CBOR"
+    },
+    {
+      "slug": "cellular-m2-m",
+      "label": "Cellular M2M"
+    },
+    {
+      "slug": "centralised-sensing",
+      "label": "Centralised Sensing"
+    },
+    {
+      "slug": "cloud-io-t-platform",
+      "label": "Cloud IoT Platform"
+    },
+    {
+      "slug": "co-ap",
+      "label": "CoAP"
+    },
+    {
+      "slug": "cyber-physical-systems",
+      "label": "Cyber-Physical Systems"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "CyberPhysicalSystemsDomain"
+    },
+    {
+      "slug": "data-aggregation-layer",
+      "label": "Data Aggregation Layer"
+    },
+    {
+      "slug": "device-identity",
+      "label": "Device Identity"
+    },
+    {
+      "slug": "distributed-computing-domain",
+      "label": "DistributedComputingDomain"
+    },
+    {
+      "slug": "dtls",
+      "label": "DTLS"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "EdgeComputingLayer"
+    },
+    {
+      "slug": "edge-gateway",
+      "label": "Edge Gateway"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "EmbeddedSystemsDomain"
+    },
+    {
+      "slug": "energy-management",
+      "label": "Energy Management"
+    },
+    {
+      "slug": "environmental-monitoring",
+      "label": "Environmental Monitoring"
+    },
+    {
+      "slug": "etsi-en-303-645",
+      "label": "ETSI EN 303 645"
+    },
+    {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    },
+    {
+      "slug": "fog-computing",
+      "label": "Fog Computing"
+    },
+    {
+      "slug": "healthcare-monitoring",
+      "label": "Healthcare Monitoring"
+    },
+    {
+      "slug": "iec-62591-wireless-hart",
+      "label": "IEC 62591 WirelessHART"
+    },
+    {
+      "slug": "ieee-802-15-4",
+      "label": "IEEE 802.15.4"
+    },
+    {
+      "slug": "ietf-rfc-1883",
+      "label": "IETF RFC 1883"
+    },
+    {
+      "slug": "ietf-rfc-7252",
+      "label": "IETF RFC 7252"
+    },
+    {
+      "slug": "industrial-io-t",
+      "label": "Industrial IoT"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "ipv6-networking",
+      "label": "IPv6 Networking"
+    },
+    {
+      "slug": "lo-ra-alliance",
+      "label": "LoRa Alliance"
+    },
+    {
+      "slug": "lo-ra-wan",
+      "label": "LoRaWAN"
+    },
+    {
+      "slug": "lpwan",
+      "label": "LPWAN"
+    },
+    {
+      "slug": "matter-csa",
+      "label": "Matter CSA"
+    },
+    {
+      "slug": "matter-protocol",
+      "label": "Matter Protocol"
+    },
+    {
+      "slug": "mqtt",
+      "label": "MQTT"
+    },
+    {
+      "slug": "nb-io-t",
+      "label": "NB-IoT"
+    },
+    {
+      "slug": "networked-embedded-systems",
+      "label": "Networked Embedded Systems"
+    },
+    {
+      "slug": "ota-firmware-update",
+      "label": "OTA Firmware Update"
+    },
+    {
+      "slug": "pervasive-computing",
+      "label": "Pervasive Computing"
+    },
+    {
+      "slug": "power-management-unit",
+      "label": "Power Management Unit"
+    },
+    {
+      "slug": "power-source",
+      "label": "Power Source"
+    },
+    {
+      "slug": "precision-agriculture",
+      "label": "Precision Agriculture"
+    },
+    {
+      "slug": "radio-transceiver",
+      "label": "Radio Transceiver"
+    },
+    {
+      "slug": "security-module",
+      "label": "Security Module"
+    },
+    {
+      "slug": "sensor-node",
+      "label": "Sensor Node"
+    },
+    {
+      "slug": "smart-buildings",
+      "label": "Smart Buildings"
+    },
+    {
+      "slug": "smart-cities",
+      "label": "Smart Cities"
+    },
+    {
+      "slug": "smart-grid",
+      "label": "Smart Grid"
+    },
+    {
+      "slug": "supply-chain-visibility",
+      "label": "Supply Chain Visibility"
+    },
+    {
+      "slug": "telematics",
+      "label": "Telematics"
+    },
+    {
+      "slug": "thread-protocol",
+      "label": "Thread Protocol"
+    },
+    {
+      "slug": "time-synchronisation",
+      "label": "Time Synchronisation"
+    },
+    {
+      "slug": "time-synchronisation-protocol",
+      "label": "Time Synchronisation Protocol"
+    },
+    {
+      "slug": "tls",
+      "label": "TLS"
+    },
+    {
+      "slug": "traditional-scada",
+      "label": "Traditional SCADA"
+    },
+    {
+      "slug": "wired-sensor-network",
+      "label": "Wired Sensor Network"
+    },
+    {
+      "slug": "wireless-hart",
+      "label": "WirelessHART"
+    },
+    {
+      "slug": "wireless-sensor-network",
+      "label": "Wireless Sensor Network"
+    },
+    {
+      "slug": "x-509-certificates",
+      "label": "X.509 Certificates"
+    },
+    {
+      "slug": "z-wave",
+      "label": "Z-Wave"
+    },
+    {
+      "slug": "zigbee",
+      "label": "Zigbee"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "PhysicalLayer"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "tiny-ml",
+      "label": "TinyML"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

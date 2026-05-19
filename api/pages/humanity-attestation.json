@@ -1,0 +1,158 @@
+{
+  "id": "urn:visionflow:page:4e6a31a7089d7d766e1569d5dfd2973250a25fe448a6a526e9469e54992c4a19",
+  "title": "Humanity Attestation",
+  "slug": "humanity-attestation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:humanity-attestation",
+  "domain": "spatial-computing",
+  "definition": "Verification process that confirms a digital identity represents a human rather than an automated agent, bot, or AI system.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:behavioral-analysis",
+        "label": "Behavioral Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:captcha",
+        "label": "CAPTCHA"
+      },
+      {
+        "id": "urn:visionflow:linked:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:challenge-protocol",
+        "label": "Challenge Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:verification-mechanism",
+        "label": "Verification Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:account-security",
+        "label": "Account Security"
+      },
+      {
+        "id": "urn:visionflow:linked:bot-prevention",
+        "label": "Bot Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:fraud-prevention",
+        "label": "Fraud Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-establishment",
+        "label": "Trust Establishment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "account-security",
+      "label": "Account Security"
+    },
+    {
+      "slug": "authentication-system",
+      "label": "Authentication System"
+    },
+    {
+      "slug": "behavioral-analysis",
+      "label": "Behavioral Analysis"
+    },
+    {
+      "slug": "biometric-verification",
+      "label": "Biometric Verification"
+    },
+    {
+      "slug": "bot-prevention",
+      "label": "Bot Prevention"
+    },
+    {
+      "slug": "captcha",
+      "label": "CAPTCHA"
+    },
+    {
+      "slug": "challenge-protocol",
+      "label": "Challenge Protocol"
+    },
+    {
+      "slug": "challenge-response-protocol",
+      "label": "Challenge-Response Protocol"
+    },
+    {
+      "slug": "cryptographic-proof",
+      "label": "Cryptographic Proof"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "fraud-prevention",
+      "label": "Fraud Prevention"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "trust-establishment",
+      "label": "Trust Establishment"
+    },
+    {
+      "slug": "verification-mechanism",
+      "label": "Verification Mechanism"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "backlinks": []
+}

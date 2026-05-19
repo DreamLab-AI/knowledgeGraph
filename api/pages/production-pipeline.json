@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:ca5264bd1d387eb6eadca714b9e83bce7bb79ff7a387f5c115fee7015ff756ea",
+  "title": "Production Pipeline",
+  "slug": "production-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:production-pipeline",
+  "domain": "spatial-computing",
+  "definition": "Production Pipeline is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-production-workflow",
+      "label": "Virtual Production Workflow"
+    }
+  ]
+}

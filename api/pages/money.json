@@ -1,0 +1,471 @@
+{
+  "id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3",
+  "title": "Money",
+  "slug": "money",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:money",
+  "domain": "blockchain",
+  "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 1.0,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-money",
+        "label": "Digital Money"
+      },
+      {
+        "id": "urn:visionflow:owl:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:acceptance-network",
+        "label": "Acceptance Network"
+      },
+      {
+        "id": "urn:visionflow:linked:issuing-authority",
+        "label": "Issuing Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:visionflow:linked:trust",
+        "label": "Trust"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:visionflow:linked:debt",
+        "label": "Debt"
+      },
+      {
+        "id": "urn:visionflow:linked:economic-exchange",
+        "label": "Economic Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:savings",
+        "label": "Savings"
+      },
+      {
+        "id": "urn:visionflow:owl:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acceptance-network",
+      "label": "Acceptance Network"
+    },
+    {
+      "slug": "alden2023",
+      "label": "Alden2023"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "banking-system",
+      "label": "Banking System"
+    },
+    {
+      "slug": "barsky1987fisher",
+      "label": "barsky1987fisher"
+    },
+    {
+      "slug": "bertomeu2023uncle",
+      "label": "bertomeu2023uncle"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    },
+    {
+      "slug": "borio2017fx",
+      "label": "borio2017fx"
+    },
+    {
+      "slug": "btc-usd",
+      "label": "BTC/USD"
+    },
+    {
+      "slug": "caballero2008financial-spiro2019hidden",
+      "label": "caballero2008financial; @spiro2019hidden"
+    },
+    {
+      "slug": "cantillon1756essai-bordo1983some",
+      "label": "cantillon1756essai; @bordo1983some"
+    },
+    {
+      "slug": "carney2019growing-piffaretti2009reshaping",
+      "label": "carney2019growing; @piffaretti2009reshaping"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "cbdc-tracker",
+      "label": "CBDC Tracker"
+    },
+    {
+      "slug": "chinese-yuan",
+      "label": "Chinese Yuan"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "davies2010history",
+      "label": "davies2010history"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "debt",
+      "label": "Debt"
+    },
+    {
+      "slug": "digital-finance-domain",
+      "label": "DigitalFinanceDomain"
+    },
+    {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
+      "slug": "economic-exchange",
+      "label": "Economic Exchange"
+    },
+    {
+      "slug": "economic-system-domain",
+      "label": "EconomicSystemDomain"
+    },
+    {
+      "slug": "eichengreen2023",
+      "label": "Eichengreen2023"
+    },
+    {
+      "slug": "erc-4337",
+      "label": "ERC-4337"
+    },
+    {
+      "slug": "eur",
+      "label": "EUR"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "federal-reserve",
+      "label": "Federal Reserve"
+    },
+    {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "filardo2012central",
+      "label": "filardo2012central"
+    },
+    {
+      "slug": "fin-tech-layer",
+      "label": "FinTechLayer"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "gainsford2017salt-goldberg2005famous",
+      "label": "gainsford2017salt; @goldberg2005famous"
+    },
+    {
+      "slug": "genius-act",
+      "label": "GENIUS Act"
+    },
+    {
+      "slug": "giancarlo2021cryptodad",
+      "label": "giancarlo2021cryptodad"
+    },
+    {
+      "slug": "grewal2020struggling",
+      "label": "grewal2020struggling"
+    },
+    {
+      "slug": "hall2009inflation",
+      "label": "hall2009inflation"
+    },
+    {
+      "slug": "hendrickson2021value-ferranti2022hedging",
+      "label": "hendrickson2021value; @ferranti2022hedging"
+    },
+    {
+      "slug": "homer1996history",
+      "label": "homer1996history"
+    },
+    {
+      "slug": "huang2016understanding",
+      "label": "huang2016understanding"
+    },
+    {
+      "slug": "hudson2021destiny",
+      "label": "hudson2021destiny"
+    },
+    {
+      "slug": "imf",
+      "label": "IMF"
+    },
+    {
+      "slug": "iso-4217",
+      "label": "ISO 4217"
+    },
+    {
+      "slug": "issuing-authority",
+      "label": "Issuing Authority"
+    },
+    {
+      "slug": "jpy",
+      "label": "JPY"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer-2"
+    },
+    {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "mathews2018china",
+      "label": "mathews2018china"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "prasad2021future",
+      "label": "prasad2021future"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "programmable money"
+    },
+    {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
+    },
+    {
+      "slug": "project-rosalind",
+      "label": "Project Rosalind"
+    },
+    {
+      "slug": "savings",
+      "label": "Savings"
+    },
+    {
+      "slug": "selgin1996defense",
+      "label": "selgin1996defense"
+    },
+    {
+      "slug": "stoeferle2018gold",
+      "label": "stoeferle2018gold"
+    },
+    {
+      "slug": "stroukal2018can",
+      "label": "stroukal2018can"
+    },
+    {
+      "slug": "szabo2002shelling",
+      "label": "szabo2002shelling"
+    },
+    {
+      "slug": "tomlinson2003third",
+      "label": "tomlinson2003third"
+    },
+    {
+      "slug": "trust",
+      "label": "Trust"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "wang2021central",
+      "label": "wang2021central"
+    },
+    {
+      "slug": "white1914fiat",
+      "label": "white1914fiat"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "economic-layer",
+      "label": "EconomicLayer"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum computing"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "smart contracts"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "value-alignment",
+      "label": "Value Alignment"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

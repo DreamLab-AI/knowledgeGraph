@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be",
+  "title": "Data Format Standard",
+  "slug": "data-format-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-format-standard",
+  "domain": "infrastructure",
+  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:implementation-libraries",
+        "label": "Implementation Libraries"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-tools",
+        "label": "Validation Tools"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-asset-interoperability",
+        "label": "3D Asset Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:content-portability",
+        "label": "Content Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-exchange",
+        "label": "Cross-Platform Exchange"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-asset-interoperability",
+      "label": "3D Asset Interoperability"
+    },
+    {
+      "slug": "content-portability",
+      "label": "Content Portability"
+    },
+    {
+      "slug": "cross-platform-exchange",
+      "label": "Cross-Platform Exchange"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "implementation-libraries",
+      "label": "Implementation Libraries"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "validation-tools",
+      "label": "Validation Tools"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

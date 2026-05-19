@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:d4c2e7003781285ca0b242e0cce8d8212aaaa1e32bcb79b58d0c65c2943fa3e9",
+  "title": "Automated Market Maker",
+  "slug": "automated-market-maker",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:automated-market-maker",
+  "domain": "spatial-computing",
+  "definition": "Automated Market Maker (AMM) is a decentralized exchange protocol that uses algorithmic pricing mechanisms and liquidity pools instead of traditional order books, enabling permissionless token swaps where prices adjust automatically based on supply and demand within smart contract-managed reserves.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:liquidity-pools",
+        "label": "Liquidity Pools"
+      },
+      {
+        "id": "urn:visionflow:linked:pricing-algorithms",
+        "label": "Pricing Algorithms"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:token-swaps",
+        "label": "Token Swaps"
+      },
+      {
+        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "liquidity-pools",
+      "label": "Liquidity Pools"
+    },
+    {
+      "slug": "permissionless-trading",
+      "label": "Permissionless Trading"
+    },
+    {
+      "slug": "pricing-algorithms",
+      "label": "Pricing Algorithms"
+    },
+    {
+      "slug": "token-swaps",
+      "label": "Token Swaps"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "de-fi-protocol",
+      "label": "DeFi Protocol"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "token-bonding-curve",
+      "label": "Token Bonding Curve"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

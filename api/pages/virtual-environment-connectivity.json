@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:479162bf490617578a6e3394fe06a1930adf148fb981e6827303407da9d54360",
+  "title": "Virtual Environment Connectivity",
+  "slug": "virtual-environment-connectivity",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-environment-connectivity",
+  "domain": "spatial-computing",
+  "definition": "The networking technologies and protocols that enable seamless communication, data synchronization, and user interaction across distributed virtual environments, including real-time streaming, peer-to-peer networks, and cross-platform interoperability systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "backlinks": []
+}

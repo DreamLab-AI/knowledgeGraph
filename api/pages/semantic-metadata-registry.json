@@ -1,0 +1,170 @@
+{
+  "id": "urn:visionflow:page:dea8c1a622ac2b5d24f2787454667487ab617861a53f35f6d5344030d21b16d4",
+  "title": "Semantic Metadata Registry",
+  "slug": "semantic-metadata-registry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:semantic-metadata-registry",
+  "domain": "infrastructure",
+  "definition": "A centralized catalog managing structured metadata schemas, controlled vocabularies, and semantic relationships to enable consistent asset description, cross-platform interoperability, and intelligent discovery.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metadata-registry",
+      "label": "Metadata Registry"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:metadata-schemas",
+        "label": "Metadata Schemas"
+      },
+      {
+        "id": "urn:visionflow:linked:namespace-management",
+        "label": "Namespace Management"
+      },
+      {
+        "id": "urn:visionflow:linked:relationship-mappings",
+        "label": "Relationship Mappings"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-versioning",
+        "label": "Schema Versioning"
+      },
+      {
+        "id": "urn:visionflow:linked:term-definitions",
+        "label": "Term Definitions"
+      },
+      {
+        "id": "urn:visionflow:owl:class:controlled-vocabularies",
+        "label": "Controlled Vocabularies"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:rdf-store",
+        "label": "RDF Store"
+      },
+      {
+        "id": "urn:visionflow:linked:schema-validator",
+        "label": "Schema Validator"
+      },
+      {
+        "id": "urn:visionflow:owl:class:vocabulary-services",
+        "label": "Vocabulary Services"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-cataloging",
+        "label": "Asset Cataloging"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-cataloging",
+      "label": "Asset Cataloging"
+    },
+    {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
+      "slug": "metadata-management-infrastructure",
+      "label": "Metadata Management Infrastructure"
+    },
+    {
+      "slug": "metadata-schemas",
+      "label": "Metadata Schemas"
+    },
+    {
+      "slug": "namespace-management",
+      "label": "Namespace Management"
+    },
+    {
+      "slug": "ontology-repository",
+      "label": "Ontology Repository"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
+    },
+    {
+      "slug": "relationship-mappings",
+      "label": "Relationship Mappings"
+    },
+    {
+      "slug": "schema-validator",
+      "label": "Schema Validator"
+    },
+    {
+      "slug": "schema-versioning",
+      "label": "Schema Versioning"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
+      "slug": "term-definitions",
+      "label": "Term Definitions"
+    },
+    {
+      "slug": "w3-c-semantic-web-standards",
+      "label": "W3C Semantic Web Standards"
+    },
+    {
+      "slug": "controlled-vocabularies",
+      "label": "Controlled Vocabularies"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "vocabulary-services",
+      "label": "Vocabulary Services"
+    }
+  ],
+  "backlinks": []
+}

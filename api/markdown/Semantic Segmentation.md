@@ -1,21 +1,261 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#SemanticSegmentation
-uri:: urn:visionclaw:concept:artificial-intelligence:semantic-segmentation
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:semantic-segmentation
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Semantic Segmentation
-content-hash:: sha256-12-f02f934ac3ab
-legacy-term-id:: AI-0359
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#SemanticSegmentation
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:semantic-segmentation
 public:: true
+
+# Semantic Segmentation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3",
+  "@type": "Page",
+  "vc:slug": "semantic-segmentation",
+  "title": "Semantic Segmentation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:costigan2018world",
+      "vc:label": "costigan2018world"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-lite",
+      "vc:label": "Solid-Lite"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:instance-segmentation",
+      "vc:label": "Instance Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nostr-protocol",
+      "vc:label": "Nostr protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:panoptic-segmentation",
+      "vc:label": "Panoptic Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-web",
+      "vc:label": "Semantic Web"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-web",
+      "vc:label": "semanticWeb"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solid",
+      "vc:label": "Solid"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f02f934ac3ab"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#SemanticSegmentation"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0359"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Semantic Segmentation"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:semantic-segmentation"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:semantic-segmentation"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:semantic-segmentation",
+  "@type": "OntologyClass",
+  "label": "Semantic Segmentation",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:semantic-segmentation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[costigan2018world]]",
+      "resolved": "urn:visionflow:linked:costigan2018world",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid-Lite]]",
+      "resolved": "urn:visionflow:linked:solid-lite",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Instance Segmentation]]",
+      "resolved": "urn:visionflow:owl:class:instance-segmentation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Nostr protocol]]",
+      "resolved": "urn:visionflow:owl:class:nostr-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Panoptic Segmentation]]",
+      "resolved": "urn:visionflow:owl:class:panoptic-segmentation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Semantic Web]]",
+      "resolved": "urn:visionflow:owl:class:semantic-web",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[semanticWeb]]",
+      "resolved": "urn:visionflow:owl:class:semantic-web",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solid]]",
+      "resolved": "urn:visionflow:owl:class:solid",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.

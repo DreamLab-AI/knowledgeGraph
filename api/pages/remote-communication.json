@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:27eeddef6a8f9289971fc00f299c72200e35dfb9eaa1c5c85b2c860eaed96f19",
+  "title": "Remote Communication",
+  "slug": "remote-communication",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:remote-communication",
+  "domain": "distributed-collaboration",
+  "definition": "Remote Communication is a concept within the telecollaboration domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "label": "distributed-collaboration"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "communication-software",
+      "label": "Communication Software"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:3ec492bf0500a7676e5fe26aa83e8c5fc4de98be9e982444f5dd36021161ece2",
+  "title": "Revenue Sharing",
+  "slug": "revenue-sharing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:revenue-sharing",
+  "domain": "spatial-computing",
+  "definition": "Blockchain-enabled distribution mechanisms that automatically allocate earnings between creators, platforms, and stakeholders through smart contracts, with NFT royalties providing perpetual income streams for digital asset creators in metaverse economies.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:creator-economy",
+      "label": "Creator Economy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:creator-monetization",
+        "label": "Creator Monetization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "creator-monetization",
+      "label": "Creator Monetization"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "multi-party-royalties",
+      "label": "Multi Party Royalties"
+    }
+  ]
+}

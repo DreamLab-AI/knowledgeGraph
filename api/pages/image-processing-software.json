@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:bfe2ec6f900ab71626792a6862a66419344ba7ed732729402ee65ecbbb7dd0b2",
+  "title": "Image Processing Software",
+  "slug": "image-processing-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:image-processing-software",
+  "domain": "spatial-computing",
+  "definition": "Software systems that acquire, process, analyse, and visualise digital images for metaverse applications, employing computer vision algorithms for user tracking, environment creation, gesture recognition, 3D reconstruction, and real-time visual enhancement in virtual and augmented reality environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:computer-vision-system",
+      "label": "Computer Vision System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:visual-metaverse-interaction",
+        "label": "Visual Metaverse Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "visual-metaverse-interaction",
+      "label": "Visual Metaverse Interaction"
+    },
+    {
+      "slug": "computer-vision-system",
+      "label": "Computer Vision System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ]
+}

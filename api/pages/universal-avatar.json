@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:7002ab79e5074394f497f1b1ee49bde8ec2d43601b8f27f86eee122ad58a4f80",
+  "title": "Universal Avatar",
+  "slug": "universal-avatar",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:universal-avatar",
+  "domain": "spatial-computing",
+  "definition": "A cross-platform digital representation of a user that maintains consistent identity, appearance, and customizations across multiple metaverse applications, games, and virtual environments through interoperability standards and shared formats.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:avatar",
+      "label": "Avatar"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    }
+  ]
+}

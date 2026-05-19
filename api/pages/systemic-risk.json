@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:a51a53b679380d831352713b49acb389ce91f3dd5546281fbb53ac3c02d6a0a7",
+  "title": "Systemic Risk",
+  "slug": "systemic-risk",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:systemic-risk",
+  "domain": "artificial-intelligence",
+  "definition": "Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ]
+}

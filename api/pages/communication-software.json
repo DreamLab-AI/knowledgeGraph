@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:a4041eae290f22e267fe8963c7d24579ea8c18f5b25f645bc9f4ad532a6e1d6e",
+  "title": "Communication Software",
+  "slug": "communication-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:communication-software",
+  "domain": "spatial-computing",
+  "definition": "Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services that bridge physical and digital worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:collaboration-technology",
+      "label": "Collaboration Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:audio-visual-systems",
+        "label": "Audio Visual Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:real-time-collaboration",
+        "label": "Real-Time Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-meetings",
+        "label": "Virtual Meetings"
+      },
+      {
+        "id": "urn:visionflow:owl:class:remote-communication",
+        "label": "Remote Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audio-visual-systems",
+      "label": "Audio Visual Systems"
+    },
+    {
+      "slug": "real-time-collaboration",
+      "label": "Real-Time Collaboration"
+    },
+    {
+      "slug": "virtual-meetings",
+      "label": "Virtual Meetings"
+    },
+    {
+      "slug": "collaboration-technology",
+      "label": "Collaboration Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "remote-communication",
+      "label": "Remote Communication"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    }
+  ]
+}

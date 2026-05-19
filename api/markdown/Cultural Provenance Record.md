@@ -1,24 +1,500 @@
-iri:: http://narrativegoldmine.com/spatial-computing#CulturalProvenanceRecord
-uri:: urn:visionclaw:concept:spatial-computing:cultural-provenance-record
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:cultural-provenance-record
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Cultural Provenance Record
-content-hash:: sha256-12-c916d75ceb16
-legacy-term-id:: 20301
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#CulturalProvenanceRecord
+legacy_uri:: urn:visionclaw:concept:spatial-computing:cultural-provenance-record
 public:: true
+
+# Cultural Provenance Record
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209",
+  "@type": "Page",
+  "vc:slug": "cultural-provenance-record",
+  "title": "Cultural Provenance Record",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:authentication-record",
+      "vc:label": "Authentication Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:authenticity-certification",
+      "vc:label": "Authenticity Certification"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-ledger",
+      "vc:label": "Blockchain Ledger"
+    },
+    {
+      "@id": "urn:visionflow:linked:cidoc-crm",
+      "vc:label": "CIDOC-CRM"
+    },
+    {
+      "@id": "urn:visionflow:linked:condition-report",
+      "vc:label": "Condition Report"
+    },
+    {
+      "@id": "urn:visionflow:linked:conservation-database",
+      "vc:label": "Conservation Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-context",
+      "vc:label": "Cultural Context"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-management-system",
+      "vc:label": "Cultural Heritage Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-tracking",
+      "vc:label": "Cultural Heritage Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:heritage-registry",
+      "vc:label": "Heritage Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:museum-collection-system",
+      "vc:label": "Museum Collection System"
+    },
+    {
+      "@id": "urn:visionflow:linked:museum-information-system",
+      "vc:label": "Museum Information System"
+    },
+    {
+      "@id": "urn:visionflow:linked:ownership-chain",
+      "vc:label": "Ownership Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:ownership-transfer",
+      "vc:label": "Ownership Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:spectrum-museum-standard",
+      "vc:label": "SPECTRUM Museum Standard"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artifact-metadata",
+      "vc:label": "Artifact Metadata"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:authentication-service",
+      "vc:label": "Authentication Service"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-archive",
+      "vc:label": "Digital Archive"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-schema",
+      "vc:label": "Metadata Schema"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-verification",
+      "vc:label": "Provenance Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c916d75ceb16"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#CulturalProvenanceRecord"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20301"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cultural Provenance Record"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:cultural-provenance-record"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:cultural-provenance-record"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:cultural-provenance-record",
+  "@type": "OntologyClass",
+  "label": "Cultural Provenance Record",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-management-system",
+      "vc:label": "Cultural Heritage Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:museum-information-system",
+      "vc:label": "Museum Information System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:authentication-record",
+      "vc:label": "Authentication Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:condition-report",
+      "vc:label": "Condition Report"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-context",
+      "vc:label": "Cultural Context"
+    },
+    {
+      "@id": "urn:visionflow:linked:ownership-chain",
+      "vc:label": "Ownership Chain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artifact-metadata",
+      "vc:label": "Artifact Metadata"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-ledger",
+      "vc:label": "Blockchain Ledger"
+    },
+    {
+      "@id": "urn:visionflow:linked:conservation-database",
+      "vc:label": "Conservation Database"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metadata-schema",
+      "vc:label": "Metadata Schema"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:authenticity-certification",
+      "vc:label": "Authenticity Certification"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage-tracking",
+      "vc:label": "Cultural Heritage Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:ownership-transfer",
+      "vc:label": "Ownership Transfer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:provenance-verification",
+      "vc:label": "Provenance Verification"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:heritage-registry",
+      "vc:label": "Heritage Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:museum-collection-system",
+      "vc:label": "Museum Collection System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:authentication-service",
+      "vc:label": "Authentication Service"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-archive",
+      "vc:label": "Digital Archive"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cultural-provenance-record:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Authentication Record]]",
+      "resolved": "urn:visionflow:linked:authentication-record",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Authenticity Certification]]",
+      "resolved": "urn:visionflow:linked:authenticity-certification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Ledger]]",
+      "resolved": "urn:visionflow:linked:blockchain-ledger",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CIDOC-CRM]]",
+      "resolved": "urn:visionflow:linked:cidoc-crm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Condition Report]]",
+      "resolved": "urn:visionflow:linked:condition-report",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conservation Database]]",
+      "resolved": "urn:visionflow:linked:conservation-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cultural Context]]",
+      "resolved": "urn:visionflow:linked:cultural-context",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cultural Heritage Management System]]",
+      "resolved": "urn:visionflow:linked:cultural-heritage-management-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cultural Heritage Tracking]]",
+      "resolved": "urn:visionflow:linked:cultural-heritage-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Heritage Registry]]",
+      "resolved": "urn:visionflow:linked:heritage-registry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Museum Collection System]]",
+      "resolved": "urn:visionflow:linked:museum-collection-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Museum Information System]]",
+      "resolved": "urn:visionflow:linked:museum-information-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ownership Chain]]",
+      "resolved": "urn:visionflow:linked:ownership-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ownership Transfer]]",
+      "resolved": "urn:visionflow:linked:ownership-transfer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SPECTRUM Museum Standard]]",
+      "resolved": "urn:visionflow:linked:spectrum-museum-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artifact Metadata]]",
+      "resolved": "urn:visionflow:owl:class:artifact-metadata",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Authentication Service]]",
+      "resolved": "urn:visionflow:owl:class:authentication-service",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Archive]]",
+      "resolved": "urn:visionflow:owl:class:digital-archive",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Signature]]",
+      "resolved": "urn:visionflow:owl:class:digital-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metadata Schema]]",
+      "resolved": "urn:visionflow:owl:class:metadata-schema",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Provenance Verification]]",
+      "resolved": "urn:visionflow:owl:class:provenance-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.

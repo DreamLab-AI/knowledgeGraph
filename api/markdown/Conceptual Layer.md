@@ -1,21 +1,183 @@
-iri:: http://narrativegoldmine.com/infrastructure#ConceptualLayer
-uri:: urn:visionclaw:concept:infrastructure:conceptual-layer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:conceptual-layer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Conceptual Layer
-content-hash:: sha256-12-5cf1ee8f9348
-status:: stub
-maturity:: draft
-bridges-to:: [[Blockchain]] (bc), [[AI Agent System]] (ai), or [[Digital Twin]] (mv)
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#ConceptualLayer
+legacy_uri:: urn:visionclaw:concept:infrastructure:conceptual-layer
 public:: true
+
+# Conceptual Layer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db",
+  "@type": "Page",
+  "vc:slug": "conceptual-layer",
+  "title": "Conceptual Layer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Blockchain]] (bc), [[AI Agent System]] (ai), or [[Digital Twin]] (mv)"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-5cf1ee8f9348"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#ConceptualLayer"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Conceptual Layer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:conceptual-layer"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:conceptual-layer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:conceptual-layer",
+  "@type": "OntologyClass",
+  "label": "Conceptual Layer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations. This layer encompasses abstract definitions, conceptual frameworks, theoretical foundations, design principles, and logical models that describe what things are and what they should do, without specifying how they are implemented. Concepts in this layer are implementation-agnostic: they can be realized through various technical approaches, protocols, or systems while maintaining their essential conceptual properties. The ConceptualLayer includes abstract data structures (the concept of a blockchain as an ordered chain of blocks, independent of specific blockchain implementations), theoretical protocols (abstract consensus models, independent of specific consensus algorithms), design patterns (decentralization as a principle, independent of specific decentralization mechanisms), foundational principles (immutability, transparency, trustlessness as properties), and logical frameworks (fairness definitions, security properties, correctness criteria). This layer serves as the foundation for",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:conceptual-layer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db"
+  },
+  "vc:resolutions": [],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations. This layer encompasses abstract definitions, conceptual frameworks, theoretical foundations, design principles, and logical models that describe what things are and what they should do, without specifying how they are implemented. Concepts in this layer are implementation-agnostic: they can be realized through various technical approaches, protocols, or systems while maintaining their essential conceptual properties. The ConceptualLayer includes abstract data structures (the concept of a blockchain as an ordered chain of blocks, independent of specific blockchain implementations), theoretical protocols (abstract consensus models, independent of specific consensus algorithms), design patterns (decentralization as a principle, independent of specific decentralization mechanisms), foundational principles (immutability, transparency, trustlessness as properties), and logical frameworks (fairness definitions, security properties, correctness criteria). This layer serves as the foundation for understanding domain concepts at their most abstract level, enabling reasoning about properties, relationships, and tradeoffs without getting entangled in implementation details.

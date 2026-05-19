@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:76768eff07286846ad8d74934c391075acf755286ffcaff4bfb8a87d21e8ab32",
+  "title": "Secure Multi-Party Computation",
+  "slug": "secure-multi-party-computation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:secure-multi-party-computation",
+  "domain": "infrastructure",
+  "definition": "Secure Multi-Party Computation is a cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual inputs to other participants or trusted third parties, ensuring that only the final output is disclosed while intermediate computations remain confidential. This technique provides privacy guarantees through mathematical protocols where each party holds secret input x_i, parties execute cryptographic protocol computing function f(x_1, x_2, ..., x_n), and only the result is revealed while intermediate values remain hidden, with security models including semi-honest (honest-but-curious) adversaries following protocol but attempting to infer extra information, and malicious adversaries arbitrarily deviating from protocol requiring verification mechanisms. Implementation techniques span secret sharing methods where values are split into shares distributed across parties enabling computation through share manipulation (Shamir secret sharing for n parties with threshold t, replicated secret sharing for 3-party protocols), garbled circuits where one party creates encrypted circuit and another evaluates it without ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "mp-spdz",
+      "label": "MP-SPDZ"
+    },
+    {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
+      "slug": "yao-s-garbled-circuits",
+      "label": "Yao's Garbled Circuits"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

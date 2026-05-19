@@ -1,0 +1,415 @@
+{
+  "id": "urn:visionflow:page:6beb241657e57b2620bfb7eeeb128eb0a4c8115217fbc2261167880c7bccbd3f",
+  "title": "Bitcoin Distribution",
+  "slug": "bitcoin-distribution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bitcoin-distribution",
+  "domain": "blockchain",
+  "definition": "Bitcoin Distribution is the sub-field of [[Blockchain]] economics that measures, models, and interprets the allocation of Bitcoin's circulating supply across identifiable holder categories \u2014 individuals, corporations, governments, miners, exchanges, custodians, and the permanently lost or provably dormant cohort \u2014 through on-chain address analysis, [[UTXO Model|UTXO]] age-band decomposition ([[HODL Waves]]), [[Blockchain Analysis|entity clustering]], and off-chain data sources including ETF 13-F regulatory filings and corporate treasury disclosures. The field combines [[Blockchain Analysis|cryptographic ledger analysis]] with macroeconomic inequality metrics ([[GINI Coefficient]], Lorenz curve, [[Nakamoto Coefficient]], Herfindahl-Hirschman Index) to characterise [[Bitcoin Centralisation Risks|concentration risk]], market liquidity, and the structural evolution of [[Bitcoin As Money|Bitcoin as a monetary asset]] across successive market cycles.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-halving",
+        "label": "Bitcoin Halving"
+      },
+      {
+        "id": "urn:visionflow:linked:dormant-supply",
+        "label": "Dormant Supply"
+      },
+      {
+        "id": "urn:visionflow:linked:gini-coefficient",
+        "label": "GINI Coefficient"
+      },
+      {
+        "id": "urn:visionflow:linked:hodl-waves",
+        "label": "HODL Waves"
+      },
+      {
+        "id": "urn:visionflow:linked:long-term-holders",
+        "label": "Long-Term Holders"
+      },
+      {
+        "id": "urn:visionflow:linked:lost-coins",
+        "label": "Lost Coins"
+      },
+      {
+        "id": "urn:visionflow:linked:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      },
+      {
+        "id": "urn:visionflow:linked:satoshi-nakamoto",
+        "label": "Satoshi Nakamoto"
+      },
+      {
+        "id": "urn:visionflow:linked:short-term-holders",
+        "label": "Short-Term Holders"
+      },
+      {
+        "id": "urn:visionflow:linked:whale-addresses",
+        "label": "Whale Addresses"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:blockchain-analysis",
+        "label": "Blockchain Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:cryptographic-addresses",
+        "label": "Cryptographic Addresses"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-data",
+        "label": "On-Chain Data"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:visionflow:owl:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-scarcity",
+        "label": "Bitcoin Scarcity"
+      },
+      {
+        "id": "urn:visionflow:linked:strategic-bitcoin-reserve",
+        "label": "Strategic Bitcoin Reserve"
+      },
+      {
+        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-centralisation-risks",
+        "label": "Bitcoin Centralisation Risks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:micro-strategy",
+        "label": "MicroStrategy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bitcoin-halving",
+        "label": "Bitcoin Halving"
+      },
+      {
+        "id": "urn:visionflow:linked:blockchain-analysis",
+        "label": "Blockchain Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:gini-coefficient",
+        "label": "GINI Coefficient"
+      },
+      {
+        "id": "urn:visionflow:linked:hodl-waves",
+        "label": "HODL Waves"
+      },
+      {
+        "id": "urn:visionflow:linked:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analytics-layer",
+      "label": "AnalyticsLayer"
+    },
+    {
+      "slug": "bit-info-charts",
+      "label": "BitInfoCharts"
+    },
+    {
+      "slug": "bitcoin-halving",
+      "label": "Bitcoin Halving"
+    },
+    {
+      "slug": "bitcoin-halving",
+      "label": "Bitcoin Halving"
+    },
+    {
+      "slug": "bitcoin-scarcity",
+      "label": "Bitcoin Scarcity"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "blockchain-analysis",
+      "label": "Blockchain Analysis"
+    },
+    {
+      "slug": "blockchain-analysis",
+      "label": "Blockchain Analysis"
+    },
+    {
+      "slug": "blockchain-analysis",
+      "label": "Blockchain Analysis"
+    },
+    {
+      "slug": "blockchain-analysis",
+      "label": "Blockchain Analysis"
+    },
+    {
+      "slug": "blockchain-analysis",
+      "label": "Blockchain Analysis"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "crypto-quant",
+      "label": "CryptoQuant"
+    },
+    {
+      "slug": "cryptoeconomics-domain",
+      "label": "CryptoeconomicsDomain"
+    },
+    {
+      "slug": "cryptographic-addresses",
+      "label": "Cryptographic Addresses"
+    },
+    {
+      "slug": "dormant-supply",
+      "label": "Dormant Supply"
+    },
+    {
+      "slug": "financial-economics-domain",
+      "label": "FinancialEconomicsDomain"
+    },
+    {
+      "slug": "gini-coefficient",
+      "label": "GINI Coefficient"
+    },
+    {
+      "slug": "glassnode",
+      "label": "Glassnode"
+    },
+    {
+      "slug": "hodl-waves",
+      "label": "HODL Waves"
+    },
+    {
+      "slug": "long-term-holders",
+      "label": "Long-Term Holders"
+    },
+    {
+      "slug": "lost-coins",
+      "label": "Lost Coins"
+    },
+    {
+      "slug": "nakamoto-coefficient",
+      "label": "Nakamoto Coefficient"
+    },
+    {
+      "slug": "on-chain-data",
+      "label": "On-Chain Data"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "short-term-holders",
+      "label": "Short-Term Holders"
+    },
+    {
+      "slug": "strategic-bitcoin-reserve",
+      "label": "Strategic Bitcoin Reserve"
+    },
+    {
+      "slug": "whale-addresses",
+      "label": "Whale Addresses"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    }
+  ],
+  "backlinks": []
+}

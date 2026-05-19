@@ -1,0 +1,178 @@
+{
+  "id": "urn:visionflow:page:b310ef2e4a028c93cceee2a2a853e2fe1ce74778f9480f5642b7a61b8903e032",
+  "title": "Digital Jurisdiction",
+  "slug": "digital-jurisdiction",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-jurisdiction",
+  "domain": "spatial-computing",
+  "definition": "A legally recognized framework defining the boundaries of authority, regulatory control, and legal enforcement within virtual spaces, establishing which laws apply to activities, transactions, and disputes occurring in digital environments. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conflict-resolution-mechanism",
+        "label": "Conflict Resolution Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-authority",
+        "label": "Legal Authority"
+      },
+      {
+        "id": "urn:visionflow:linked:sovereignty-model",
+        "label": "Sovereignty Model"
+      },
+      {
+        "id": "urn:visionflow:owl:class:jurisdictional-boundary",
+        "label": "Jurisdictional Boundary"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:legal-entity",
+        "label": "Legal Entity"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-authority",
+        "label": "Regulatory Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-border-enforcement",
+        "label": "Cross-Border Enforcement"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-jurisdictional-coordination",
+        "label": "Multi-Jurisdictional Coordination"
+      },
+      {
+        "id": "urn:visionflow:owl:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-nation-state",
+        "label": "Virtual Nation State"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "conflict-resolution-mechanism",
+      "label": "Conflict Resolution Mechanism"
+    },
+    {
+      "slug": "cross-border-enforcement",
+      "label": "Cross-Border Enforcement"
+    },
+    {
+      "slug": "dispute-resolution",
+      "label": "Dispute Resolution"
+    },
+    {
+      "slug": "enforcement-mechanism",
+      "label": "Enforcement Mechanism"
+    },
+    {
+      "slug": "international-jurisdiction-and-the-internet-working-group",
+      "label": "International Jurisdiction and the Internet Working Group"
+    },
+    {
+      "slug": "legal-authority",
+      "label": "Legal Authority"
+    },
+    {
+      "slug": "legal-entity",
+      "label": "Legal Entity"
+    },
+    {
+      "slug": "legal-system",
+      "label": "Legal System"
+    },
+    {
+      "slug": "multi-jurisdictional-coordination",
+      "label": "Multi-Jurisdictional Coordination"
+    },
+    {
+      "slug": "regulatory-authority",
+      "label": "Regulatory Authority"
+    },
+    {
+      "slug": "sovereignty-model",
+      "label": "Sovereignty Model"
+    },
+    {
+      "slug": "uncitral-model-law-on-electronic-commerce",
+      "label": "UNCITRAL Model Law on Electronic Commerce"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "jurisdictional-boundary",
+      "label": "Jurisdictional Boundary"
+    },
+    {
+      "slug": "platform-governance",
+      "label": "Platform Governance"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-nation-state",
+      "label": "Virtual Nation State"
+    }
+  ],
+  "backlinks": []
+}

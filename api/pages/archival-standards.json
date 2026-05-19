@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:453bdde3c693d050d96037de140059377b626591b53506f4b57217672cfed9c0",
+  "title": "Archival Standards",
+  "slug": "archival-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:archival-standards",
+  "domain": "spatial-computing",
+  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across technological changes.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:preservation-standards",
+      "label": "Preservation Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:preservation-planning",
+        "label": "Preservation Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-authenticity",
+        "label": "Content Authenticity"
+      },
+      {
+        "id": "urn:visionflow:linked:format-migration",
+        "label": "Format Migration"
+      },
+      {
+        "id": "urn:visionflow:linked:long-term-preservation",
+        "label": "Long-Term Preservation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-authenticity",
+      "label": "Content Authenticity"
+    },
+    {
+      "slug": "format-migration",
+      "label": "Format Migration"
+    },
+    {
+      "slug": "iso-14721",
+      "label": "ISO 14721"
+    },
+    {
+      "slug": "iso-16363",
+      "label": "ISO 16363"
+    },
+    {
+      "slug": "long-term-preservation",
+      "label": "Long-Term Preservation"
+    },
+    {
+      "slug": "preservation-planning",
+      "label": "Preservation Planning"
+    },
+    {
+      "slug": "preservation-standards",
+      "label": "Preservation Standards"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data-management-cultural-heritage",
+      "label": "ETSI Domain: Data Management + Cultural Heritage"
+    }
+  ]
+}

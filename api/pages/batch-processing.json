@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:7a58c7f960942780ecf756fac758e1b7896c28ea7bf230aa48cd3b3b9a1eaa58",
+  "title": "Batch Processing",
+  "slug": "batch-processing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:batch-processing",
+  "domain": "artificial-intelligence",
+  "definition": "Batch Processing is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:processing-model",
+      "label": "Processing Model"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "processing-model",
+      "label": "Processing Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    }
+  ]
+}

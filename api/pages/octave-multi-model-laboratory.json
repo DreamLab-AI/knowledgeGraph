@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:26a350a4a1d8ce7e689527fde96b7d734669fe70d4b328ada23a669aeb310b24",
+  "title": "Octave Multi Model Laboratory",
+  "slug": "octave-multi-model-laboratory",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:octave-multi-model-laboratory",
+  "domain": "infrastructure",
+  "definition": "Octave Multi Model Laboratory is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "national-industrial-centre-for-virtual-environments",
+      "label": "National Industrial Centre for Virtual Environments"
+    },
+    {
+      "slug": "telethrone",
+      "label": "Telethrone"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

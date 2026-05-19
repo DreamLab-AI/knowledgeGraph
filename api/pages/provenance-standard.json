@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:241698c2e877707ac76d981ff10609089c0de9fbfefc47db6578429bfed7063d",
+  "title": "Provenance Standard",
+  "slug": "provenance-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:provenance-standard",
+  "domain": "spatial-computing",
+  "definition": "Technical specifications and protocols for recording immutable ownership history and authenticity verification of digital assets through blockchain-based token IDs, contract addresses, and metadata that establish chain of custody from creation to present ownership.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset-standards",
+      "label": "Digital Asset Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-authenticity",
+        "label": "Asset Authenticity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-authenticity",
+      "label": "Asset Authenticity"
+    },
+    {
+      "slug": "digital-asset-standards",
+      "label": "Digital Asset Standards"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    }
+  ]
+}

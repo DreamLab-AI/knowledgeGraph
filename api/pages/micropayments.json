@@ -1,0 +1,516 @@
+{
+  "id": "urn:visionflow:page:b81644c50276bc3f2817634950247796c9da8df44fcfe633954972cd213438a5",
+  "title": "Micropayments",
+  "slug": "micropayments",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:micropayments",
+  "domain": "infrastructure",
+  "definition": "Micropayments are electronic payment transactions with values typically below USD $5 \u2014 often in the sub-cent to sub-dollar range \u2014 enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the combined burden of technical transaction costs (interchange fees, card network minimums, batch settlement latency) and psychological transaction costs (Nick Szabo's 1999 formalisation of \"mental transaction costs\" \u2014 the cognitive burden of evaluating whether an expenditure is worth authorising, which Szabo demonstrated sets the practical lower bound on price granularity independent of technical efficiency). The concept predates the commercial internet: David Chaum's 1982 blind-signature ecash patent established the cryptographic basis for privacy-preserving bearer payment; Ronald Rivest and Adi Shamir's 1996 PayWord and MicroMint schemes proposed hash-chain and coin-batch micro-schemes for web content; Jakob Nielsen's 1998 NNGroup essay argued for micropayments as the antidote to advertising-subsidised journalism. What changed between 1998 and 2024 was not demand \u2014 demand for sub-dolla",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-finance",
+      "label": "Digital Finance"
+    },
+    {
+      "id": "urn:visionflow:linked:payment-systems",
+      "label": "Payment Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "id": "urn:visionflow:owl:class:money",
+      "label": "Money"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "id": "urn:visionflow:linked:nostr-zaps",
+        "label": "Nostr Zaps"
+      },
+      {
+        "id": "urn:visionflow:linked:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:visionflow:linked:stacker-news",
+        "label": "Stacker News"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ecash",
+        "label": "Ecash"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "label": "Nostr protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:visionflow:linked:io-t",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "label": "Nostr protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "advertising-revenue",
+      "label": "Advertising Revenue"
+    },
+    {
+      "slug": "andreessen-horowitz-a16z-crypto-state-of-crypto-report-2025",
+      "label": "Andreessen Horowitz a16z Crypto State of Crypto Report 2025"
+    },
+    {
+      "slug": "ar-xiv-2412-19384-internet-of-value-blockchain-lightning-micropayments-2024",
+      "label": "arXiv 2412.19384 Internet of Value Blockchain Lightning Micropayments 2024"
+    },
+    {
+      "slug": "beres-et-al-2021-cryptoeconomic-traffic-analysis-bitcoin-lightning-ar-xiv-2002-06998",
+      "label": "Beres et al 2021 Cryptoeconomic Traffic Analysis Bitcoin Lightning arXiv 2002.06998"
+    },
+    {
+      "slug": "bis-project-agor-quarterly-review-2024",
+      "label": "BIS Project Agor\u00e1 Quarterly Review 2024"
+    },
+    {
+      "slug": "bis-working-paper-cross-border-payments-tokenised-deposits-2024",
+      "label": "BIS Working Paper Cross-Border Payments Tokenised Deposits 2024"
+    },
+    {
+      "slug": "calle-2023-cashu-nut-specification-git-hub",
+      "label": "Calle 2023 Cashu NUT Specification GitHub"
+    },
+    {
+      "slug": "ccaf-cambridge-bitcoin-electricity-consumption-index-2024",
+      "label": "CCAF Cambridge Bitcoin Electricity Consumption Index 2024"
+    },
+    {
+      "slug": "ccaf-global-cryptoasset-benchmarking-study-2024",
+      "label": "CCAF Global Cryptoasset Benchmarking Study 2024"
+    },
+    {
+      "slug": "chaum-1982-blind-signatures-for-untraceable-payments",
+      "label": "Chaum 1982 Blind Signatures for Untraceable Payments"
+    },
+    {
+      "slug": "coinbase-x402-protocol-cloudflare-september-2025",
+      "label": "Coinbase X402 Protocol Cloudflare September 2025"
+    },
+    {
+      "slug": "digital-finance",
+      "label": "Digital Finance"
+    },
+    {
+      "slug": "fedimint",
+      "label": "Fedimint"
+    },
+    {
+      "slug": "financial-inclusion",
+      "label": "Financial Inclusion"
+    },
+    {
+      "slug": "fishburn-odlyzko-siders-1997-fixed-fee-versus-unit-pricing-first-monday",
+      "label": "Fishburn Odlyzko Siders 1997 Fixed Fee versus Unit Pricing First Monday"
+    },
+    {
+      "slug": "ic3-re-imperial-college-centre-cryptocurrency-research-engineering-2024",
+      "label": "IC3RE Imperial College Centre Cryptocurrency Research Engineering 2024"
+    },
+    {
+      "slug": "io-t",
+      "label": "IoT"
+    },
+    {
+      "slug": "johansson-et-al-2022-fedimint-federated-chaumian-mints",
+      "label": "Johansson et al 2022 Fedimint Federated Chaumian Mints"
+    },
+    {
+      "slug": "kahneman-tversky-1979-prospect-theory",
+      "label": "Kahneman Tversky 1979 Prospect Theory"
+    },
+    {
+      "slug": "lightning-labs-l402-documentation-aperture-proxy-2024",
+      "label": "Lightning Labs L402 Documentation Aperture Proxy 2024"
+    },
+    {
+      "slug": "malavolta-et-al-2019-anonymous-multi-hop-locks-acm-ccs",
+      "label": "Malavolta et al 2019 Anonymous Multi-Hop Locks ACM CCS"
+    },
+    {
+      "slug": "nielsen-1998-the-case-for-micropayments-nngroup",
+      "label": "Nielsen 1998 The Case for Micropayments NNGroup"
+    },
+    {
+      "slug": "nip-57-nostr-improvement-proposal-zaps-2023",
+      "label": "NIP-57 Nostr Improvement Proposal Zaps 2023"
+    },
+    {
+      "slug": "nip-61-nutzap-bearer-token-protocol-2024",
+      "label": "NIP-61 Nutzap Bearer Token Protocol 2024"
+    },
+    {
+      "slug": "nostr-zaps",
+      "label": "Nostr Zaps"
+    },
+    {
+      "slug": "odlyzko-2003-the-case-against-micropayments",
+      "label": "Odlyzko 2003 The Case Against Micropayments"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "payment-systems",
+      "label": "Payment Systems"
+    },
+    {
+      "slug": "pickhardt-richter-2021-optimally-reliable-cheap-payment-flows-lightning",
+      "label": "Pickhardt Richter 2021 Optimally Reliable Cheap Payment Flows Lightning"
+    },
+    {
+      "slug": "poon-dryja-2016-the-bitcoin-lightning-network-white-paper",
+      "label": "Poon Dryja 2016 The Bitcoin Lightning Network White Paper"
+    },
+    {
+      "slug": "rivest-shamir-1996-pay-word-and-micro-mint",
+      "label": "Rivest Shamir 1996 PayWord and MicroMint"
+    },
+    {
+      "slug": "sablier-v2-documentation-streaming-payments-2023",
+      "label": "Sablier V2 Documentation Streaming Payments 2023"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "stacker-news",
+      "label": "Stacker News"
+    },
+    {
+      "slug": "subscription-models",
+      "label": "Subscription Models"
+    },
+    {
+      "slug": "superfluid-protocol-whitepaper-real-time-finance-2021",
+      "label": "Superfluid Protocol Whitepaper Real-Time Finance 2021"
+    },
+    {
+      "slug": "szabo-1999-micropayments-and-mental-transaction-costs",
+      "label": "Szabo 1999 Micropayments and Mental Transaction Costs"
+    },
+    {
+      "slug": "thaler-1985-mental-accounting-consumer-choice",
+      "label": "Thaler 1985 Mental Accounting Consumer Choice"
+    },
+    {
+      "slug": "traditional-banking",
+      "label": "Traditional Banking"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero Knowledge Proofs"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "ecash",
+      "label": "Ecash"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

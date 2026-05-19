@@ -1,22 +1,378 @@
-iri:: http://narrativegoldmine.com/robotics#Camera
-uri:: urn:visionclaw:concept:robotics:camera
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:camera
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Camera
-content-hash:: sha256-12-47cdabcd6532
-legacy-term-id:: RB-0076
-status:: mature
-maturity:: production-ready
-quality-score:: 0.50
-authority-score:: 0.91
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#Camera
+legacy_uri:: urn:visionclaw:concept:robotics:camera
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Camera
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b",
+  "@type": "Page",
+  "vc:slug": "camera",
+  "title": "Camera",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:camera-calibration",
+      "vc:label": "CameraCalibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "vc:label": "ComputerVisionDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision-standards",
+      "vc:label": "Computer Vision Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee",
+      "vc:label": "IEEE"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-sensor",
+      "vc:label": "ImageSensor"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec",
+      "vc:label": "ISO/IEC"
+    },
+    {
+      "@id": "urn:visionflow:linked:lens",
+      "vc:label": "Lens"
+    },
+    {
+      "@id": "urn:visionflow:linked:processing-unit",
+      "vc:label": "ProcessingUnit"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-research",
+      "vc:label": "Robotics Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-perception",
+      "vc:label": "VisualPerception"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-servoing",
+      "vc:label": "VisualServoing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-dreconstruction",
+      "vc:label": "3DReconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "ObjectDetection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-segmentation",
+      "vc:label": "SemanticSegmentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor",
+      "vc:label": "Sensor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:slam",
+      "vc:label": "SLAM"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.91"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-47cdabcd6532"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#Camera"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0076"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Camera"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:camera"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:camera"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:camera",
+  "@type": "OntologyClass",
+  "label": "Camera",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:visual-perception",
+      "vc:label": "VisualPerception"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor",
+      "vc:label": "Sensor"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "mature",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologies (CCD, CMOS, ToF, structured light).",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.91",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:camera-calibration",
+      "vc:label": "CameraCalibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-sensor",
+      "vc:label": "ImageSensor"
+    },
+    {
+      "@id": "urn:visionflow:linked:lens",
+      "vc:label": "Lens"
+    },
+    {
+      "@id": "urn:visionflow:linked:processing-unit",
+      "vc:label": "ProcessingUnit"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:visual-servoing",
+      "vc:label": "VisualServoing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-dreconstruction",
+      "vc:label": "3DReconstruction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "ObjectDetection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-segmentation",
+      "vc:label": "SemanticSegmentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:slam",
+      "vc:label": "SLAM"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:camera:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[CameraCalibration]]",
+      "resolved": "urn:visionflow:linked:camera-calibration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ComputerVisionDomain]]",
+      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision Standards]]",
+      "resolved": "urn:visionflow:linked:computer-vision-standards",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE]]",
+      "resolved": "urn:visionflow:linked:ieee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ImageSensor]]",
+      "resolved": "urn:visionflow:linked:image-sensor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC]]",
+      "resolved": "urn:visionflow:linked:iso-iec",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lens]]",
+      "resolved": "urn:visionflow:linked:lens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ProcessingUnit]]",
+      "resolved": "urn:visionflow:linked:processing-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotics Research]]",
+      "resolved": "urn:visionflow:linked:robotics-research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VisualPerception]]",
+      "resolved": "urn:visionflow:linked:visual-perception",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VisualServoing]]",
+      "resolved": "urn:visionflow:linked:visual-servoing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3DReconstruction]]",
+      "resolved": "urn:visionflow:owl:class:3-dreconstruction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ObjectDetection]]",
+      "resolved": "urn:visionflow:owl:class:object-detection",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SemanticSegmentation]]",
+      "resolved": "urn:visionflow:owl:class:semantic-segmentation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor]]",
+      "resolved": "urn:visionflow:owl:class:sensor",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SLAM]]",
+      "resolved": "urn:visionflow:owl:class:slam",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologies (CCD, CMOS, ToF, structured light).

@@ -1,0 +1,488 @@
+{
+  "id": "urn:visionflow:page:a4f29c9929fa794210f3d5ea9cfc713e60ec1a6b971e118b7ee233776278ae60",
+  "title": "LoRA DoRA etc",
+  "slug": "lo-ra-do-ra-etc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+  "domain": "artificial-intelligence",
+  "definition": "**Parameter-Efficient Fine-Tuning (PEFT)** is a family of machine learning techniques enabling adaptation of large pre-trained neural networks \u2014 particularly [[Large Language Models]] and diffusion models \u2014 to downstream tasks by updating only a small fraction (0.01\u201310%) of total model parameters rather than performing full fine-tuning across all weights, achieving task-specific performance comparable to or exceeding full fine-tuning whilst reducing GPU memory requirements by 4\u2013100\u00d7 and training time by 2\u201320\u00d7. The motivation is decisive: adapting a 175B-parameter GPT-3 model through full fine-tuning requires ~2.8 TB of GPU memory at fp32 (parameters + gradients + Adam optimiser states), placing task-specific adaptation entirely beyond academic labs, startups, and individuals; PEFT democratises this by exploiting the **intrinsic dimensionality hypothesis** \u2014 empirically demonstrated by Aghajanyan et al. (2020) \u2014 that fine-tuning objectives occupy low-dimensional submanifolds (d* = 200 for BERT-base, d* \u2248 1,000 for GPT-2) within the full parameter space.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:model-adaptation",
+      "label": "Model Adaptation"
+    },
+    {
+      "id": "urn:visionflow:linked:neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "id": "urn:visionflow:linked:transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:adapter-tuning",
+        "label": "Adapter Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:do-ra",
+        "label": "DoRA"
+      },
+      {
+        "id": "urn:visionflow:linked:ga-lore",
+        "label": "GaLore"
+      },
+      {
+        "id": "urn:visionflow:linked:ia3",
+        "label": "IA3"
+      },
+      {
+        "id": "urn:visionflow:linked:long-lo-ra",
+        "label": "LongLoRA"
+      },
+      {
+        "id": "urn:visionflow:linked:ly-coris",
+        "label": "LyCORIS"
+      },
+      {
+        "id": "urn:visionflow:linked:re-lo-ra",
+        "label": "ReLoRA"
+      },
+      {
+        "id": "urn:visionflow:linked:ve-ra",
+        "label": "VeRA"
+      },
+      {
+        "id": "urn:visionflow:linked:x-lo-ra",
+        "label": "X-LoRA"
+      },
+      {
+        "id": "urn:visionflow:owl:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:qlo-ra",
+        "label": "QLoRA"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:low-rank-decomposition",
+        "label": "Low-Rank Decomposition"
+      },
+      {
+        "id": "urn:visionflow:linked:pre-trained-model",
+        "label": "Pre-trained Model"
+      },
+      {
+        "id": "urn:visionflow:linked:task-specific-dataset",
+        "label": "Task-Specific Dataset"
+      },
+      {
+        "id": "urn:visionflow:owl:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:diffusion-model-customisation",
+        "label": "Diffusion Model Customisation"
+      },
+      {
+        "id": "urn:visionflow:linked:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:visionflow:linked:llm-fine-tuning",
+        "label": "LLM Fine-Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:memory-efficient-training",
+        "label": "Memory-Efficient Training"
+      },
+      {
+        "id": "urn:visionflow:linked:on-device-training",
+        "label": "On-Device Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multi-task-learning",
+        "label": "Multi Task Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "id": "urn:visionflow:linked:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:visionflow:linked:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adapter-tuning",
+      "label": "Adapter Tuning"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "diffusion-model-customisation",
+      "label": "Diffusion Model Customisation"
+    },
+    {
+      "slug": "do-ra",
+      "label": "DoRA"
+    },
+    {
+      "slug": "domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "slug": "framework-layer",
+      "label": "FrameworkLayer"
+    },
+    {
+      "slug": "ga-lore",
+      "label": "GaLore"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "hugging-face-peft",
+      "label": "Hugging Face PEFT"
+    },
+    {
+      "slug": "ia3",
+      "label": "IA3"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "llama",
+      "label": "Llama"
+    },
+    {
+      "slug": "llm-fine-tuning",
+      "label": "LLM Fine-Tuning"
+    },
+    {
+      "slug": "long-lo-ra",
+      "label": "LongLoRA"
+    },
+    {
+      "slug": "low-rank-decomposition",
+      "label": "Low-Rank Decomposition"
+    },
+    {
+      "slug": "ly-coris",
+      "label": "LyCORIS"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "matrix-factorisation",
+      "label": "Matrix Factorisation"
+    },
+    {
+      "slug": "memory-efficient-training",
+      "label": "Memory-Efficient Training"
+    },
+    {
+      "slug": "meta-ai-research",
+      "label": "Meta AI Research"
+    },
+    {
+      "slug": "microsoft-research",
+      "label": "Microsoft Research"
+    },
+    {
+      "slug": "model-adaptation",
+      "label": "Model Adaptation"
+    },
+    {
+      "slug": "neural-network-optimisation-domain",
+      "label": "NeuralNetworkOptimisationDomain"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "on-device-training",
+      "label": "On-Device Training"
+    },
+    {
+      "slug": "parameter-sharing",
+      "label": "Parameter Sharing"
+    },
+    {
+      "slug": "pre-trained-model",
+      "label": "Pre-trained Model"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "rank-decomposition",
+      "label": "Rank Decomposition"
+    },
+    {
+      "slug": "re-lo-ra",
+      "label": "ReLoRA"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "singular-value-decomposition",
+      "label": "Singular Value Decomposition"
+    },
+    {
+      "slug": "task-specific-dataset",
+      "label": "Task-Specific Dataset"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "ve-ra",
+      "label": "VeRA"
+    },
+    {
+      "slug": "x-lo-ra",
+      "label": "X-LoRA"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "full-fine-tuning",
+      "label": "Full Fine Tuning"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "multi-task-learning",
+      "label": "Multi Task Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "prefix-tuning",
+      "label": "Prefix Tuning"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "qlo-ra",
+      "label": "QLoRA"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "label": "Advice for developing GenAI"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

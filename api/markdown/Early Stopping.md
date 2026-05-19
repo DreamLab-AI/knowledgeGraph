@@ -1,24 +1,201 @@
-iri:: http://narrativegoldmine.com/spatial-computing#EarlyStopping
-uri:: urn:visionclaw:concept:spatial-computing:early-stopping
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:early-stopping
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Early Stopping
-content-hash:: sha256-12-1ebe4999e40e
-legacy-term-id:: AI-0290
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#EarlyStopping
+legacy_uri:: urn:visionclaw:concept:spatial-computing:early-stopping
 public:: true
+
+# Early Stopping
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7c6ca826ba0cb439e852b4f5aec6374c3b73f1ed3e5b330cf2fb9c6c71bba486",
+  "@type": "Page",
+  "vc:slug": "early-stopping",
+  "title": "Early Stopping",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:gaussian-splatting",
+      "vc:label": "Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1ebe4999e40e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#EarlyStopping"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0290"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Early Stopping"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:early-stopping"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:early-stopping"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c6ca826ba0cb439e852b4f5aec6374c3b73f1ed3e5b330cf2fb9c6c71bba486@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:early-stopping",
+  "@type": "OntologyClass",
+  "label": "Early Stopping",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7c6ca826ba0cb439e852b4f5aec6374c3b73f1ed3e5b330cf2fb9c6c71bba486"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c6ca826ba0cb439e852b4f5aec6374c3b73f1ed3e5b330cf2fb9c6c71bba486@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:early-stopping:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7c6ca826ba0cb439e852b4f5aec6374c3b73f1ed3e5b330cf2fb9c6c71bba486"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Gaussian Splatting]]",
+      "resolved": "urn:visionflow:owl:class:gaussian-splatting",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7c6ca826ba0cb439e852b4f5aec6374c3b73f1ed3e5b330cf2fb9c6c71bba486@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.
@@ -84,7 +261,7 @@ public:: true
   - **Early Foundations of NeRF:**
 		- **Early Photography and Photosculpture (ca 1850):** Pioneers in photography began experimenting with aerial photogrammetry and photosculptures, creating 3D representations from multiple 2D photographs, laying groundwork for future 3D capture technologies.
   - [Nerfs](https://www.matthewtancik.com/nerf)
-  - All of the LIDAR, [[Gaussian splatting and Similar]], [[Gaussian splatting and Similar]] etc are hopefully going to end up in here
+  - All of the LIDAR, [[Gaussian Splatting]], [[Gaussian Splatting]] etc are hopefully going to end up in here
   - [History of NeRFs](https://neuralradiancefields.io/history-of-neural-radiance-fields/)
   - waiting on capture
   - use polycam

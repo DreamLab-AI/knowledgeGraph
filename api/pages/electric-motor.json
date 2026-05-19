@@ -1,0 +1,215 @@
+{
+  "id": "urn:visionflow:page:7cdfc1372b50b7cddfec1feac087f7eed8bec28245c1f46d4ce50baac7e578cc",
+  "title": "Electric Motor",
+  "slug": "electric-motor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:electric-motor",
+  "domain": "robotics",
+  "definition": "Electric motor converts electrical energy into rotational mechanical power through electromagnetic forces, forming the most widespread actuation technology in modern robotics. Motors operate across a spectrum of designs\u2014from simple brush DC motors to complex brushless variants and AC induction motors\u2014each offering different efficiency, control characteristics, and power-to-weight performance trade-offs suitable for varied robotic applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:rotating-machinery",
+      "label": "Rotating Machinery"
+    },
+    {
+      "id": "urn:visionflow:owl:class:electric-actuator",
+      "label": "Electric Actuator"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bearings",
+        "label": "Bearings"
+      },
+      {
+        "id": "urn:visionflow:linked:power-terminals",
+        "label": "Power Terminals"
+      },
+      {
+        "id": "urn:visionflow:linked:rotor",
+        "label": "Rotor"
+      },
+      {
+        "id": "urn:visionflow:linked:shaft",
+        "label": "Shaft"
+      },
+      {
+        "id": "urn:visionflow:linked:stator",
+        "label": "Stator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:electrical-power-supply",
+        "label": "Electrical Power Supply"
+      },
+      {
+        "id": "urn:visionflow:linked:heat-dissipation",
+        "label": "Heat Dissipation"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanical-load",
+        "label": "Mechanical Load"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-driver-electronics",
+        "label": "Motor Driver Electronics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:joint-actuation",
+        "label": "Joint Actuation"
+      },
+      {
+        "id": "urn:visionflow:linked:rotational-motion",
+        "label": "Rotational Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:speed-control",
+        "label": "Speed Control"
+      },
+      {
+        "id": "urn:visionflow:linked:torque-generation",
+        "label": "Torque Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bearings",
+      "label": "Bearings"
+    },
+    {
+      "slug": "brush-dc-motors",
+      "label": "Brush DC Motors"
+    },
+    {
+      "slug": "brushless-dc-motors",
+      "label": "Brushless DC Motors"
+    },
+    {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
+      "slug": "electrical-power-supply",
+      "label": "Electrical Power Supply"
+    },
+    {
+      "slug": "electromagnetic-theory",
+      "label": "Electromagnetic Theory"
+    },
+    {
+      "slug": "heat-dissipation",
+      "label": "Heat Dissipation"
+    },
+    {
+      "slug": "joint-actuation",
+      "label": "Joint Actuation"
+    },
+    {
+      "slug": "linear-motors",
+      "label": "Linear Motors"
+    },
+    {
+      "slug": "mechanical-load",
+      "label": "Mechanical Load"
+    },
+    {
+      "slug": "mobile-robots",
+      "label": "Mobile Robots"
+    },
+    {
+      "slug": "motor-driver-electronics",
+      "label": "Motor Driver Electronics"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
+      "slug": "power-terminals",
+      "label": "Power Terminals"
+    },
+    {
+      "slug": "rotating-machinery",
+      "label": "Rotating Machinery"
+    },
+    {
+      "slug": "rotational-motion",
+      "label": "Rotational Motion"
+    },
+    {
+      "slug": "rotor",
+      "label": "Rotor"
+    },
+    {
+      "slug": "servo-motors",
+      "label": "Servo Motors"
+    },
+    {
+      "slug": "shaft",
+      "label": "Shaft"
+    },
+    {
+      "slug": "speed-control",
+      "label": "Speed Control"
+    },
+    {
+      "slug": "stator",
+      "label": "Stator"
+    },
+    {
+      "slug": "stepper-motors",
+      "label": "Stepper Motors"
+    },
+    {
+      "slug": "torque-generation",
+      "label": "Torque Generation"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "emc-standard",
+      "label": "EMC Standard"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "servo-motor",
+      "label": "Servo Motor"
+    },
+    {
+      "slug": "stepper-motor",
+      "label": "Stepper Motor"
+    }
+  ]
+}

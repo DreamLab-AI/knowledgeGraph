@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:4231e34ac84fff71c727c72439ab83c4e8fefe0395c0b8e2d358269ddc10cf32",
+  "title": "Metadata Repository",
+  "slug": "metadata-repository",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metadata-repository",
+  "domain": "spatial-computing",
+  "definition": "Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:data-discovery",
+        "label": "Data Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-discovery",
+      "label": "Data Discovery"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    }
+  ]
+}

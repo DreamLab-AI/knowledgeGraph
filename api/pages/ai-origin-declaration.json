@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e",
+  "title": "Ai Origin Declaration",
+  "slug": "ai-origin-declaration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-origin-declaration",
+  "domain": "artificial-intelligence",
+  "definition": "AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of content authenticity and origin.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:content-authenticity",
+      "label": "Content Authenticity"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:visionflow:owl:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:content-verification",
+        "label": "Content Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-authenticity",
+      "label": "Content Authenticity"
+    },
+    {
+      "slug": "content-verification",
+      "label": "Content Verification"
+    },
+    {
+      "slug": "cryptographic-signing",
+      "label": "Cryptographic Signing"
+    },
+    {
+      "slug": "deepfake-detection",
+      "label": "Deepfake Detection"
+    },
+    {
+      "slug": "digital-watermarking",
+      "label": "Digital Watermarking"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    }
+  ]
+}

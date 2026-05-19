@@ -1,0 +1,340 @@
+{
+  "id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350",
+  "title": "WebAssembly",
+  "slug": "web-assembly",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:web-assembly",
+  "domain": "infrastructure",
+  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side runtimes such as [[WASI]] (WebAssembly System Interface). It is the primary runtime substrate for [[VisionClaw Agentic Container]] agent modules, allowing deterministic, sandboxed, language-agnostic execution of untrusted code across heterogeneous deployment environments including edge nodes, browsers, and embedded hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:binary-instruction-format",
+      "label": "Binary Instruction Format"
+    },
+    {
+      "id": "urn:visionflow:linked:portable-execution-environment",
+      "label": "Portable Execution Environment"
+    }
+  ],
+  "qualityScore": 0.7,
+  "authorityScore": 0.82,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:wasi-interface",
+        "label": "WASI Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:wasm-import-object",
+        "label": "Wasm Import Object"
+      },
+      {
+        "id": "urn:visionflow:linked:wasm-linear-memory",
+        "label": "Wasm Linear Memory"
+      },
+      {
+        "id": "urn:visionflow:linked:wasm-module",
+        "label": "Wasm Module"
+      },
+      {
+        "id": "urn:visionflow:linked:wasm-table",
+        "label": "Wasm Table"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:binary-encoding-standard",
+        "label": "Binary Encoding Standard"
+      },
+      {
+        "id": "urn:visionflow:linked:host-runtime",
+        "label": "Host Runtime"
+      },
+      {
+        "id": "urn:visionflow:linked:stack-based-virtual-machine",
+        "label": "Stack-Based Virtual Machine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-language-interoperability",
+        "label": "Cross-Language Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:deterministic-replay",
+        "label": "Deterministic Replay"
+      },
+      {
+        "id": "urn:visionflow:linked:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:visionflow:linked:sandboxed-agent-execution",
+        "label": "Sandboxed Agent Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:w3-c-web-assembly-specification",
+        "label": "W3C WebAssembly Specification"
+      },
+      {
+        "id": "urn:visionflow:linked:wasi-standard",
+        "label": "WASI Standard"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "binary-encoding-standard",
+      "label": "Binary Encoding Standard"
+    },
+    {
+      "slug": "binary-instruction-format",
+      "label": "Binary Instruction Format"
+    },
+    {
+      "slug": "bytecode-alliance",
+      "label": "Bytecode Alliance"
+    },
+    {
+      "slug": "component-model",
+      "label": "Component Model"
+    },
+    {
+      "slug": "containerd",
+      "label": "Containerd"
+    },
+    {
+      "slug": "cross-language-interoperability",
+      "label": "Cross-Language Interoperability"
+    },
+    {
+      "slug": "deterministic-replay",
+      "label": "Deterministic Replay"
+    },
+    {
+      "slug": "edge-computing-stack",
+      "label": "Edge Computing Stack"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "host-runtime",
+      "label": "Host Runtime"
+    },
+    {
+      "slug": "java-script",
+      "label": "JavaScript"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "llvm-compiler-toolchain",
+      "label": "LLVM Compiler Toolchain"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
+    },
+    {
+      "slug": "mobile-net",
+      "label": "MobileNet"
+    },
+    {
+      "slug": "onnx-runtime",
+      "label": "ONNX Runtime"
+    },
+    {
+      "slug": "pldi-2017-web-assembly-paper",
+      "label": "PLDI 2017 WebAssembly Paper"
+    },
+    {
+      "slug": "portable-execution-environment",
+      "label": "Portable Execution Environment"
+    },
+    {
+      "slug": "runtime-layer",
+      "label": "RuntimeLayer"
+    },
+    {
+      "slug": "sandboxed-agent-execution",
+      "label": "Sandboxed Agent Execution"
+    },
+    {
+      "slug": "stack-based-virtual-machine",
+      "label": "Stack-Based Virtual Machine"
+    },
+    {
+      "slug": "w3-c-web-assembly-specification",
+      "label": "W3C WebAssembly Specification"
+    },
+    {
+      "slug": "wasi",
+      "label": "WASI"
+    },
+    {
+      "slug": "wasi-interface",
+      "label": "WASI Interface"
+    },
+    {
+      "slug": "wasi-preview-2",
+      "label": "WASI Preview 2"
+    },
+    {
+      "slug": "wasi-standard",
+      "label": "WASI Standard"
+    },
+    {
+      "slug": "wasm-import-object",
+      "label": "Wasm Import Object"
+    },
+    {
+      "slug": "wasm-linear-memory",
+      "label": "Wasm Linear Memory"
+    },
+    {
+      "slug": "wasm-module",
+      "label": "Wasm Module"
+    },
+    {
+      "slug": "wasm-table",
+      "label": "Wasm Table"
+    },
+    {
+      "slug": "wasmer-runtime",
+      "label": "Wasmer Runtime"
+    },
+    {
+      "slug": "wasmtime-runtime",
+      "label": "Wasmtime Runtime"
+    },
+    {
+      "slug": "web-browser",
+      "label": "Web Browser"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
+    },
+    {
+      "slug": "whisper-cpp",
+      "label": "Whisper.cpp"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "rust",
+      "label": "Rust"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ]
+}

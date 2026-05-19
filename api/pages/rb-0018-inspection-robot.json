@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:cd51caf4246d16aabaef26f3786c54575ab8c523dbb44075b7a5e5f0c043d304",
+  "title": "rb 0018 inspection robot",
+  "slug": "rb-0018-inspection-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0018-inspection-robot",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

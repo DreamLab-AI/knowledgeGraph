@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:4a4b48f3167a7fc6e262790159a8aaf11c16fea61e124ae019fd443d2bece332",
+  "title": "State Space and Other Approaches",
+  "slug": "state-space-and-other-approaches",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:state-space-and-other-approaches",
+  "domain": "infrastructure",
+  "definition": "State Space and Other Approaches is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "overview-of-machine-learning-techniques",
+      "label": "Overview of Machine Learning Techniques"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    }
+  ]
+}

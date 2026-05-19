@@ -1,0 +1,608 @@
+{
+  "id": "urn:visionflow:page:a10c890942ffc7040bc3563aba9c7b0adfb4a5fc877fd6f3147bdabe39c9c2c2",
+  "title": "Algorithmic Bias and Variance",
+  "slug": "algorithmic-bias-and-variance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
+  "domain": "artificial-intelligence",
+  "definition": "**Algorithmic Bias and Variance** denotes the canonical decomposition of supervised-learning generalisation error into three orthogonal components \u2014 squared bias, variance, and irreducible noise \u2014 formalised by Geman, Bienenstock & Doursat (1992) as Err(x) = E[(y \u2212 f\u0302(x))\u00b2] = (E[f\u0302(x)] \u2212 f(x))\u00b2 + E[(f\u0302(x) \u2212 E[f\u0302(x)])\u00b2] + \u03c3\u00b2, where f is the true regression function, f\u0302 the learned estimator over random training samples of fixed size n drawn i.i.d. from a joint distribution P(X,Y), and \u03c3\u00b2 the Bayes-optimal noise floor independent of any chosen hypothesis class; the decomposition follows from adding and subtracting E[f\u0302(x)] inside the mean-squared error and exploiting the bias-noise and variance-noise cross terms vanishing under the i.i.d. and zero-mean-noise assumptions, yielding a structural identity that governs why **underfitting** (a hypothesis class H so restrictive that even its best member misrepresents f, e.g. a linear model fitted to a cubic relationship) manifests as high bias with low variance whilst **overfitting** (a hypothesis class so flexible that f\u0302 tracks training noise, e.g. a degree-15 polynomial through 20 points or a 10\u2079-parameter network on 10\u2074 samples) manifes",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:generalisation-theory",
+      "label": "Generalisation Theory"
+    },
+    {
+      "id": "urn:visionflow:linked:model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "id": "urn:visionflow:linked:statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "id": "urn:visionflow:owl:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bias-component",
+        "label": "Bias Component"
+      },
+      {
+        "id": "urn:visionflow:linked:hypothesis-class",
+        "label": "Hypothesis Class"
+      },
+      {
+        "id": "urn:visionflow:linked:irreducible-error",
+        "label": "Irreducible Error"
+      },
+      {
+        "id": "urn:visionflow:linked:learning-curve",
+        "label": "Learning Curve"
+      },
+      {
+        "id": "urn:visionflow:linked:mean-squared-error",
+        "label": "Mean Squared Error"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-curve",
+        "label": "Validation Curve"
+      },
+      {
+        "id": "urn:visionflow:linked:variance-component",
+        "label": "Variance Component"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:hypothesis-space",
+        "label": "Hypothesis Space"
+      },
+      {
+        "id": "urn:visionflow:linked:resampling-method",
+        "label": "Resampling Method"
+      },
+      {
+        "id": "urn:visionflow:linked:sample-complexity",
+        "label": "Sample Complexity"
+      },
+      {
+        "id": "urn:visionflow:linked:training-distribution",
+        "label": "Training Distribution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:capacity-control",
+        "label": "Capacity Control"
+      },
+      {
+        "id": "urn:visionflow:linked:generalisation-bound",
+        "label": "Generalisation Bound"
+      },
+      {
+        "id": "urn:visionflow:linked:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:visionflow:linked:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-minimisation",
+        "label": "Risk Minimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bootstrap",
+        "label": "Bootstrap"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:holdout-method",
+        "label": "Holdout Method"
+      },
+      {
+        "id": "urn:visionflow:linked:k-fold",
+        "label": "K-Fold"
+      },
+      {
+        "id": "urn:visionflow:linked:loocv",
+        "label": "LOOCV"
+      },
+      {
+        "id": "urn:visionflow:linked:stratified-sampling",
+        "label": "Stratified Sampling"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "anthony-bartlett-1999-neural-network-learning-theoretical-foundations",
+      "label": "Anthony Bartlett 1999 Neural Network Learning Theoretical Foundations"
+    },
+    {
+      "slug": "bartlett-long-lugosi-tsigler-2020-benign-overfitting",
+      "label": "Bartlett Long Lugosi Tsigler 2020 Benign Overfitting"
+    },
+    {
+      "slug": "bartlett-mendelson-2002-rademacher-gaussian-complexities",
+      "label": "Bartlett Mendelson 2002 Rademacher Gaussian Complexities"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "belkin-hsu-ma-mandal-2019-double-descent",
+      "label": "Belkin Hsu Ma Mandal 2019 Double Descent"
+    },
+    {
+      "slug": "benign-overfitting",
+      "label": "Benign Overfitting"
+    },
+    {
+      "slug": "bias-component",
+      "label": "Bias Component"
+    },
+    {
+      "slug": "bootstrap",
+      "label": "Bootstrap"
+    },
+    {
+      "slug": "bootstrap-resampling",
+      "label": "Bootstrap Resampling"
+    },
+    {
+      "slug": "breiman-1996-bagging",
+      "label": "Breiman 1996 Bagging"
+    },
+    {
+      "slug": "breiman-2001-random-forests",
+      "label": "Breiman 2001 Random Forests"
+    },
+    {
+      "slug": "capacity-control",
+      "label": "Capacity Control"
+    },
+    {
+      "slug": "chen-guestrin-2016-xgboost",
+      "label": "Chen Guestrin 2016 XGBoost"
+    },
+    {
+      "slug": "concentration-inequalities",
+      "label": "Concentration Inequalities"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "double-descent",
+      "label": "Double Descent"
+    },
+    {
+      "slug": "empirical-process-theory",
+      "label": "Empirical Process Theory"
+    },
+    {
+      "slug": "ensemble-learning",
+      "label": "Ensemble Learning"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "EvaluationLayer"
+    },
+    {
+      "slug": "expectation-operator",
+      "label": "Expectation Operator"
+    },
+    {
+      "slug": "fairness-in-ai",
+      "label": "Fairness in AI"
+    },
+    {
+      "slug": "frequentist-bayesian-divide",
+      "label": "Frequentist-Bayesian Divide"
+    },
+    {
+      "slug": "freund-schapire-1997-ada-boost",
+      "label": "Freund Schapire 1997 AdaBoost"
+    },
+    {
+      "slug": "friedman-2001-gradient-boosting",
+      "label": "Friedman 2001 Gradient Boosting"
+    },
+    {
+      "slug": "geisser-1975-predictive-sample-reuse",
+      "label": "Geisser 1975 Predictive Sample Reuse"
+    },
+    {
+      "slug": "geman-bienenstock-doursat-1992-bias-variance-dilemma",
+      "label": "Geman Bienenstock Doursat 1992 Bias Variance Dilemma"
+    },
+    {
+      "slug": "generalisation-bound",
+      "label": "Generalisation Bound"
+    },
+    {
+      "slug": "generalisation-theory",
+      "label": "Generalisation Theory"
+    },
+    {
+      "slug": "grokking",
+      "label": "Grokking"
+    },
+    {
+      "slug": "hastie-tibshirani-friedman-2009-elements-of-statistical-learning",
+      "label": "Hastie Tibshirani Friedman 2009 Elements of Statistical Learning"
+    },
+    {
+      "slug": "hastie-tibshirani-friedman-esl",
+      "label": "Hastie-Tibshirani-Friedman ESL"
+    },
+    {
+      "slug": "hoffmann-et-al-2022-chinchilla",
+      "label": "Hoffmann et al 2022 Chinchilla"
+    },
+    {
+      "slug": "holdout-method",
+      "label": "Holdout Method"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "hypothesis-class",
+      "label": "Hypothesis Class"
+    },
+    {
+      "slug": "hypothesis-space",
+      "label": "Hypothesis Space"
+    },
+    {
+      "slug": "inductive-bias",
+      "label": "Inductive Bias"
+    },
+    {
+      "slug": "irreducible-error",
+      "label": "Irreducible Error"
+    },
+    {
+      "slug": "k-fold",
+      "label": "K-Fold"
+    },
+    {
+      "slug": "kaplan-et-al-2020-scaling-laws",
+      "label": "Kaplan et al 2020 Scaling Laws"
+    },
+    {
+      "slug": "kohavi-1995-cross-validation-bootstrap",
+      "label": "Kohavi 1995 Cross-Validation Bootstrap"
+    },
+    {
+      "slug": "learning-curve",
+      "label": "Learning Curve"
+    },
+    {
+      "slug": "loocv",
+      "label": "LOOCV"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "mc-allester-1999-pac-bayesian-theorems",
+      "label": "McAllester 1999 PAC-Bayesian Theorems"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "model-selection",
+      "label": "Model Selection"
+    },
+    {
+      "slug": "nanda-et-al-2023-mechanistic-grokking",
+      "label": "Nanda et al 2023 Mechanistic Grokking"
+    },
+    {
+      "slug": "neural-scaling-laws",
+      "label": "Neural Scaling Laws"
+    },
+    {
+      "slug": "no-free-lunch-theorem",
+      "label": "No-Free-Lunch Theorem"
+    },
+    {
+      "slug": "pac-learning",
+      "label": "PAC Learning"
+    },
+    {
+      "slug": "power-et-al-2022-grokking",
+      "label": "Power et al 2022 Grokking"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "rademacher-complexity",
+      "label": "Rademacher Complexity"
+    },
+    {
+      "slug": "resampling-method",
+      "label": "Resampling Method"
+    },
+    {
+      "slug": "risk-minimisation",
+      "label": "Risk Minimisation"
+    },
+    {
+      "slug": "sample-complexity",
+      "label": "Sample Complexity"
+    },
+    {
+      "slug": "schapire-1990-strength-of-weak-learnability",
+      "label": "Schapire 1990 Strength of Weak Learnability"
+    },
+    {
+      "slug": "scikit-learn",
+      "label": "scikit-learn"
+    },
+    {
+      "slug": "srivastava-et-al-2014-dropout",
+      "label": "Srivastava et al 2014 Dropout"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "statistics-domain",
+      "label": "StatisticsDomain"
+    },
+    {
+      "slug": "stone-1974-cross-validatory-choice",
+      "label": "Stone 1974 Cross-Validatory Choice"
+    },
+    {
+      "slug": "stratified-sampling",
+      "label": "Stratified Sampling"
+    },
+    {
+      "slug": "tensor-flow-model-analysis",
+      "label": "TensorFlow Model Analysis"
+    },
+    {
+      "slug": "theory-layer",
+      "label": "TheoryLayer"
+    },
+    {
+      "slug": "tibshirani-1996-lasso",
+      "label": "Tibshirani 1996 Lasso"
+    },
+    {
+      "slug": "training-distribution",
+      "label": "Training Distribution"
+    },
+    {
+      "slug": "valiant-1984-theory-of-the-learnable",
+      "label": "Valiant 1984 Theory of the Learnable"
+    },
+    {
+      "slug": "validation-curve",
+      "label": "Validation Curve"
+    },
+    {
+      "slug": "vapnik-1998-statistical-learning-theory",
+      "label": "Vapnik 1998 Statistical Learning Theory"
+    },
+    {
+      "slug": "vapnik-chervonenkis-1971-uniform-convergence",
+      "label": "Vapnik Chervonenkis 1971 Uniform Convergence"
+    },
+    {
+      "slug": "variance-component",
+      "label": "Variance Component"
+    },
+    {
+      "slug": "variance-decomposition",
+      "label": "Variance Decomposition"
+    },
+    {
+      "slug": "vc-dimension",
+      "label": "VC Dimension"
+    },
+    {
+      "slug": "wolpert-1992-stacked-generalization",
+      "label": "Wolpert 1992 Stacked Generalization"
+    },
+    {
+      "slug": "wolpert-1996-no-free-lunch",
+      "label": "Wolpert 1996 No Free Lunch"
+    },
+    {
+      "slug": "yao-rosasco-caponnetto-2007-early-stopping",
+      "label": "Yao Rosasco Caponnetto 2007 Early Stopping"
+    },
+    {
+      "slug": "zou-hastie-2005-elastic-net",
+      "label": "Zou Hastie 2005 Elastic Net"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "bagging",
+      "label": "Bagging"
+    },
+    {
+      "slug": "boosting",
+      "label": "Boosting"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "early-stopping",
+      "label": "Early Stopping"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "stacking",
+      "label": "Stacking"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "underfitting",
+      "label": "Underfitting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    }
+  ]
+}

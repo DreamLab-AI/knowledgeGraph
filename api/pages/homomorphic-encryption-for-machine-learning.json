@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:80d36a102053319eff33ab6fe02abe888ab7963dfd8ea00c30018376d01e1bd0",
+  "title": "Homomorphic Encryption for Machine Learning",
+  "slug": "homomorphic-encryption-for-machine-learning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:homomorphic-encryption-for-machine-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Homomorphic Encryption for Machine Learning is a cryptographic technique enabling computation on encrypted data without decryption, allowing AI model training and inference to be performed on ciphertext while preserving data confidentiality throughout processing. This approach implements encryption schemes where operations on encrypted data produce encrypted results that, when decrypted, match results of operations on plaintext, formalized as Decrypt(Encrypt(m1) \u2295 Encrypt(m2)) = m1 + m2 for addition and Decrypt(Encrypt(m1) \u2297 Encrypt(m2)) = m1 \u00d7 m2 for multiplication. Scheme types include partially homomorphic encryption supporting only addition (Paillier) or only multiplication (RSA), somewhat homomorphic encryption permitting limited operations before noise accumulation requires decryption, and fully homomorphic encryption (FHE) enabling arbitrary computations on encrypted data through bootstrapping refreshing ciphertexts to control noise growth, implemented in schemes like BGV, BFV for integer arithmetic, and CKKS for approximate arithmetic on real/complex numbers suitable for machine learning. ML applications include encrypted inference where clients encrypt inputs, servers perf",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ckks-scheme",
+      "label": "CKKS Scheme"
+    },
+    {
+      "slug": "ibm-helib",
+      "label": "IBM HELib"
+    },
+    {
+      "slug": "microsoft-seal",
+      "label": "Microsoft SEAL"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
+  "backlinks": []
+}

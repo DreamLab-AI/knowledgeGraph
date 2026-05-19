@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:a233cdff4f17fd339f47042a8bc58be0cb43bd2dd354370882f9f915ca9c794f",
+  "title": "Virtual Stage",
+  "slug": "virtual-stage",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-stage",
+  "domain": "spatial-computing",
+  "definition": "A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:production-facility",
+      "label": "Production Facility"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "production-facility",
+      "label": "Production Facility"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    }
+  ]
+}

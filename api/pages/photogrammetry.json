@@ -1,0 +1,259 @@
+{
+  "id": "urn:visionflow:page:22b5ca98a11bb12ff919060add88a87684d2239032266802b12c7ff908c7b34c",
+  "title": "Photogrammetry",
+  "slug": "photogrammetry",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:photogrammetry",
+  "domain": "spatial-computing",
+  "definition": "A computational technique for reconstructing 3D geometry from overlapping photographic images through mathematical analysis of correspondences, camera poses, and geometric transformations to extract spatial information from 2D image data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:image-matching",
+        "label": "Image Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-reconstruction",
+        "label": "Mesh Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:linked:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:triangulation",
+        "label": "Triangulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "id": "urn:visionflow:linked:multiple-images",
+        "label": "Multiple Images"
+      },
+      {
+        "id": "urn:visionflow:linked:overlapping-coverage",
+        "label": "Overlapping Coverage"
+      },
+      {
+        "id": "urn:visionflow:owl:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:visionflow:owl:class:image-processing-software",
+        "label": "Image Processing Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-model-creation",
+        "label": "3D Model Creation"
+      },
+      {
+        "id": "urn:visionflow:linked:asset-digitization",
+        "label": "Asset Digitization"
+      },
+      {
+        "id": "urn:visionflow:linked:terrain-mapping",
+        "label": "Terrain Mapping"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin-construction",
+        "label": "Digital Twin Construction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-measurement",
+        "label": "Spatial Measurement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-model-creation",
+      "label": "3D Model Creation"
+    },
+    {
+      "slug": "3-d-reconstruction-pipeline",
+      "label": "3D Reconstruction Pipeline"
+    },
+    {
+      "slug": "asset-digitization",
+      "label": "Asset Digitization"
+    },
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "camera-models",
+      "label": "Camera Models"
+    },
+    {
+      "slug": "computational-resources",
+      "label": "Computational Resources"
+    },
+    {
+      "slug": "computer-vision-algorithms",
+      "label": "Computer Vision Algorithms"
+    },
+    {
+      "slug": "feature-detection",
+      "label": "Feature Detection"
+    },
+    {
+      "slug": "image-matching",
+      "label": "Image Matching"
+    },
+    {
+      "slug": "mesh-reconstruction",
+      "label": "Mesh Reconstruction"
+    },
+    {
+      "slug": "multi-view-geometry",
+      "label": "Multi-View Geometry"
+    },
+    {
+      "slug": "multiple-images",
+      "label": "Multiple Images"
+    },
+    {
+      "slug": "overlapping-coverage",
+      "label": "Overlapping Coverage"
+    },
+    {
+      "slug": "point-cloud-generation",
+      "label": "Point Cloud Generation"
+    },
+    {
+      "slug": "reality-capture-domain",
+      "label": "RealityCaptureDomain"
+    },
+    {
+      "slug": "reality-capture-workflow",
+      "label": "Reality Capture Workflow"
+    },
+    {
+      "slug": "siemens-acm",
+      "label": "Siemens + ACM"
+    },
+    {
+      "slug": "structure-from-motion",
+      "label": "Structure from Motion"
+    },
+    {
+      "slug": "terrain-mapping",
+      "label": "Terrain Mapping"
+    },
+    {
+      "slug": "triangulation",
+      "label": "Triangulation"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "digital-twin-construction",
+      "label": "Digital Twin Construction"
+    },
+    {
+      "slug": "image-processing-software",
+      "label": "Image Processing Software"
+    },
+    {
+      "slug": "spatial-measurement",
+      "label": "Spatial Measurement"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "archaeological-site-reconstruction",
+      "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "cultural-heritage-xr-experience",
+      "label": "Cultural Heritage XR Experience"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline"
+    },
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

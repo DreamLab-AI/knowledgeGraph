@@ -1,21 +1,354 @@
-iri:: http://narrativegoldmine.com/robotics#FeedbackControl
-uri:: urn:visionclaw:concept:robotics:feedback-control
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:feedback-control
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Feedback Control
-content-hash:: sha256-12-94fe14d5fb54
-legacy-term-id:: RB-0834
-status:: draft
-maturity:: draft
-quality-score:: 0.61
-authority-score:: 0.16
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#FeedbackControl
+legacy_uri:: urn:visionclaw:concept:robotics:feedback-control
 public:: true
+
+# Feedback Control
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d",
+  "@type": "Page",
+  "vc:slug": "feedback-control",
+  "title": "Feedback Control",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:actuator-response",
+      "vc:label": "Actuator Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:disturbance-rejection",
+      "vc:label": "Disturbance Rejection"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-measurement",
+      "vc:label": "Error Measurement"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-control-system",
+      "vc:label": "Motion Control System"
+    },
+    {
+      "@id": "urn:visionflow:linked:robot-behaviour",
+      "vc:label": "Robot Behaviour"
+    },
+    {
+      "@id": "urn:visionflow:linked:robust-operation",
+      "vc:label": "Robust Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:setpoints",
+      "vc:label": "Setpoints"
+    },
+    {
+      "@id": "urn:visionflow:linked:stabilisation-architecture",
+      "vc:label": "Stabilisation Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:trajectory-tracking",
+      "vc:label": "Trajectory Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:control-algorithm",
+      "vc:label": "Control Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor",
+      "vc:label": "Sensor"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.16"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-94fe14d5fb54"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#FeedbackControl"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0834"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Feedback Control"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.61"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:feedback-control"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:feedback-control"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:feedback-control",
+  "@type": "OntologyClass",
+  "label": "Feedback Control",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Feedback Control** - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].",
+  "vc:qualityScore": {
+    "@value": "0.61",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.16",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:motion-control-system",
+      "vc:label": "Motion Control System"
+    },
+    {
+      "@id": "urn:visionflow:linked:stabilisation-architecture",
+      "vc:label": "Stabilisation Architecture"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:actuator-response",
+      "vc:label": "Actuator Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-measurement",
+      "vc:label": "Error Measurement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:control-algorithm",
+      "vc:label": "Control Algorithm"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:disturbance-rejection",
+      "vc:label": "Disturbance Rejection"
+    },
+    {
+      "@id": "urn:visionflow:linked:robust-operation",
+      "vc:label": "Robust Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:trajectory-tracking",
+      "vc:label": "Trajectory Tracking"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:feedback-control:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Actuator Response]]",
+      "resolved": "urn:visionflow:linked:actuator-response",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Disturbance Rejection]]",
+      "resolved": "urn:visionflow:linked:disturbance-rejection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Error Measurement]]",
+      "resolved": "urn:visionflow:linked:error-measurement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion Control System]]",
+      "resolved": "urn:visionflow:linked:motion-control-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robot Behaviour]]",
+      "resolved": "urn:visionflow:linked:robot-behaviour",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robust Operation]]",
+      "resolved": "urn:visionflow:linked:robust-operation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Setpoints]]",
+      "resolved": "urn:visionflow:linked:setpoints",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stabilisation Architecture]]",
+      "resolved": "urn:visionflow:linked:stabilisation-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trajectory Tracking]]",
+      "resolved": "urn:visionflow:linked:trajectory-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Control Algorithm]]",
+      "resolved": "urn:visionflow:owl:class:control-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Control Theory]]",
+      "resolved": "urn:visionflow:owl:class:control-theory",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sensor]]",
+      "resolved": "urn:visionflow:owl:class:sensor",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Feedback Control** - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].

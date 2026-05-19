@@ -1,0 +1,396 @@
+{
+  "id": "urn:visionflow:page:cb5877d510d32a48a6f82d27ad0ac55811e4a4c6a8575bb75a2ba192660ac929",
+  "title": "Autonomous Robot",
+  "slug": "autonomous-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:autonomous-robot",
+  "domain": "robotics",
+  "definition": "A robotic system equipped with sensors, processing units, and actuators that operates independently to perform tasks without direct human control, using [[Artificial Intelligence]] and [[Autonomous Navigation]]. These systems integrate [[Computer Vision]], [[Motion Planning]], and [[Obstacle Detection]] to interact safely with physical environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuators",
+      "label": "Actuators"
+    },
+    {
+      "slug": "blockchain-identity",
+      "label": "BlockchainIdentity"
+    },
+    {
+      "slug": "dt-authenticated-by",
+      "label": "dt:authenticatedBy"
+    },
+    {
+      "slug": "dt-controlled-by",
+      "label": "dt:controlledBy"
+    },
+    {
+      "slug": "dt-coordinated-by",
+      "label": "dt:coordinatedBy"
+    },
+    {
+      "slug": "dt-navigates-using",
+      "label": "dt:navigatesUsing"
+    },
+    {
+      "slug": "dt-operates-in",
+      "label": "dt:operatesIn"
+    },
+    {
+      "slug": "has-sensor",
+      "label": "hasSensor"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "navigates-in",
+      "label": "navigatesIn"
+    },
+    {
+      "slug": "obstacle-detection",
+      "label": "Obstacle Detection"
+    },
+    {
+      "slug": "performs-task",
+      "label": "performsTask"
+    },
+    {
+      "slug": "processing-units",
+      "label": "Processing Units"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real-time Control"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "RobotPerception"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "uses-controller",
+      "label": "usesController"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "ComputerVision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "MobileRobot"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "ObstacleAvoidance"
+    },
+    {
+      "slug": "path-planning",
+      "label": "PathPlanning"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "SensorFusion"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "VirtualWorld"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    },
+    {
+      "slug": "adas",
+      "label": "ADAS"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "anti-counterfeiting",
+      "label": "Anti Counterfeiting"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "autonomous-ai-agents",
+      "label": "Autonomous AI Agents"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "slug": "conditional-random-field",
+      "label": "Conditional Random Field"
+    },
+    {
+      "slug": "constitutional-principle",
+      "label": "Constitutional Principle"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "deployer",
+      "label": "Deployer"
+    },
+    {
+      "slug": "digital-fabrication",
+      "label": "Digital Fabrication"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "disparate-impact",
+      "label": "Disparate Impact"
+    },
+    {
+      "slug": "distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    },
+    {
+      "slug": "documentation-generation",
+      "label": "Documentation Generation"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "etsi-domain-application-industry",
+      "label": "ETSI Domain Application + Industry"
+    },
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "etsidomain-classification",
+      "label": "ETSIDomainClassification"
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "edge-ai-accelerators",
+      "label": "Edge AI Accelerators"
+    },
+    {
+      "slug": "edge-ai-security",
+      "label": "Edge AI Security"
+    },
+    {
+      "slug": "edge-ai-system",
+      "label": "Edge AI System"
+    },
+    {
+      "slug": "edge-ai-for-smart-cities",
+      "label": "Edge AI for Smart Cities"
+    },
+    {
+      "slug": "embedded-ai-frameworks",
+      "label": "Embedded AI Frameworks"
+    },
+    {
+      "slug": "emotional-intelligence",
+      "label": "Emotional Intelligence"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    },
+    {
+      "slug": "epoch",
+      "label": "Epoch"
+    },
+    {
+      "slug": "ethical-review-process",
+      "label": "Ethical Review Process"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "fpga",
+      "label": "FPGA"
+    },
+    {
+      "slug": "fairness-auditing-tools",
+      "label": "Fairness Auditing Tools"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "federated-edge-learning",
+      "label": "Federated Edge Learning"
+    },
+    {
+      "slug": "genesis-block",
+      "label": "Genesis Block"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    }
+  ]
+}

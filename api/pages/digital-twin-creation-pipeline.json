@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:4e5fe12b12a856a6e78ec4b034d412d1068789b0fb67c58ed53ad141520b0696",
+  "title": "Digital Twin Creation Pipeline",
+  "slug": "digital-twin-creation-pipeline",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-creation-pipeline",
+  "domain": "spatial-computing",
+  "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:3-d-content-pipeline",
+      "label": "3D Content Pipeline"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "id": "urn:visionflow:linked:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-digitization",
+        "label": "Asset Digitization"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:virtual-replica-creation",
+        "label": "Virtual Replica Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-content-pipeline",
+      "label": "3D Content Pipeline"
+    },
+    {
+      "slug": "3-d-scanning",
+      "label": "3D Scanning"
+    },
+    {
+      "slug": "asset-digitization",
+      "label": "Asset Digitization"
+    },
+    {
+      "slug": "point-cloud-processing",
+      "label": "Point Cloud Processing"
+    },
+    {
+      "slug": "real-time-monitoring",
+      "label": "Real-Time Monitoring"
+    },
+    {
+      "slug": "virtual-replica-creation",
+      "label": "Virtual Replica Creation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    }
+  ]
+}

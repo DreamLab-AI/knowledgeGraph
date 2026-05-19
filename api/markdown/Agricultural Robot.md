@@ -1,22 +1,402 @@
-iri:: http://narrativegoldmine.com/robotics#AgriculturalRobot
-uri:: urn:visionclaw:concept:robotics:agricultural-robot
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:agricultural-robot
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Agricultural Robot
-content-hash:: sha256-12-83ef68b85293
-legacy-term-id:: RB-0015
-status:: draft
-maturity:: draft
-quality-score:: 0.53
-authority-score:: 0.11
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#AgriculturalRobot
+legacy_uri:: urn:visionclaw:concept:robotics:agricultural-robot
 public:: true
-bridges-to:: [[Smart Contract]]
+
+# Agricultural Robot
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07",
+  "@type": "Page",
+  "vc:slug": "agricultural-robot",
+  "title": "Agricultural Robot",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:crop-analysis-systems",
+      "vc:label": "Crop Analysis Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:crop-quality-improvement",
+      "vc:label": "Crop Quality Improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-sensors",
+      "vc:label": "Environmental Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-18497",
+      "vc:label": "ISO 18497"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-18497-2018",
+      "vc:label": "ISO 18497:2018"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-8373-2021",
+      "vc:label": "ISO 8373:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:labour-cost-reduction",
+      "vc:label": "Labour Cost Reduction"
+    },
+    {
+      "@id": "urn:visionflow:linked:manipulation-modules",
+      "vc:label": "Manipulation Modules"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-agriculture-sensors",
+      "vc:label": "Precision Agriculture Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-agriculture-system",
+      "vc:label": "Precision Agriculture System"
+    },
+    {
+      "@id": "urn:visionflow:linked:sustainable-farming",
+      "vc:label": "Sustainable Farming"
+    },
+    {
+      "@id": "urn:visionflow:linked:terrain-navigation",
+      "vc:label": "Terrain Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:environmental-sustainability",
+      "vc:label": "Environmental Sustainability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mobile-robot",
+      "vc:label": "Mobile Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:service-robot",
+      "vc:label": "Service Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:soft-robotics",
+      "vc:label": "Soft Robotics"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.11"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Smart Contract]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-83ef68b85293"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#AgriculturalRobot"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0015"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Agricultural Robot"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.53"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:agricultural-robot"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:agricultural-robot"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:agricultural-robot",
+  "@type": "OntologyClass",
+  "label": "Agricultural Robot",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:mobile-robot",
+      "vc:label": "Mobile Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:service-robot",
+      "vc:label": "Service Robot"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Agricultural Robot** - A semi-autonomous or fully autonomous platform equipped with [[Precision Agriculture Sensors]], [[Manipulation Modules]], and [[Crop Analysis Systems]] for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising soil disturbance and chemical usage.",
+  "vc:qualityScore": {
+    "@value": "0.53",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.11",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:precision-agriculture-system",
+      "vc:label": "Precision Agriculture System"
+    },
+    {
+      "@id": "urn:visionflow:linked:sustainable-farming",
+      "vc:label": "Sustainable Farming"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:environmental-sensors",
+      "vc:label": "Environmental Sensors"
+    },
+    {
+      "@id": "urn:visionflow:linked:terrain-navigation",
+      "vc:label": "Terrain Navigation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:soft-robotics",
+      "vc:label": "Soft Robotics"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:crop-quality-improvement",
+      "vc:label": "Crop Quality Improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:labour-cost-reduction",
+      "vc:label": "Labour Cost Reduction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:environmental-sustainability",
+      "vc:label": "Environmental Sustainability"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:agricultural-robot:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Crop Analysis Systems]]",
+      "resolved": "urn:visionflow:linked:crop-analysis-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crop Quality Improvement]]",
+      "resolved": "urn:visionflow:linked:crop-quality-improvement",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environmental Sensors]]",
+      "resolved": "urn:visionflow:linked:environmental-sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 18497]]",
+      "resolved": "urn:visionflow:linked:iso-18497",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 18497:2018]]",
+      "resolved": "urn:visionflow:linked:iso-18497-2018",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 8373:2021]]",
+      "resolved": "urn:visionflow:linked:iso-8373-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Labour Cost Reduction]]",
+      "resolved": "urn:visionflow:linked:labour-cost-reduction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manipulation Modules]]",
+      "resolved": "urn:visionflow:linked:manipulation-modules",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precision Agriculture Sensors]]",
+      "resolved": "urn:visionflow:linked:precision-agriculture-sensors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Precision Agriculture System]]",
+      "resolved": "urn:visionflow:linked:precision-agriculture-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sustainable Farming]]",
+      "resolved": "urn:visionflow:linked:sustainable-farming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Terrain Navigation]]",
+      "resolved": "urn:visionflow:linked:terrain-navigation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Environmental Sustainability]]",
+      "resolved": "urn:visionflow:owl:class:environmental-sustainability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mobile Robot]]",
+      "resolved": "urn:visionflow:owl:class:mobile-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Service Robot]]",
+      "resolved": "urn:visionflow:owl:class:service-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Soft Robotics]]",
+      "resolved": "urn:visionflow:owl:class:soft-robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Agricultural Robot** - A semi-autonomous or fully autonomous platform equipped with [[Precision Agriculture Sensors]], [[Manipulation Modules]], and [[Crop Analysis Systems]] for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising soil disturbance and chemical usage.

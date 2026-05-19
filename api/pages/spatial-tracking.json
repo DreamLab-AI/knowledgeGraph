@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:9e6d4d56c35c1b39d0f164d835dc6f2317aa0d716606962d257a015033b2323a",
+  "title": "Spatial Tracking",
+  "slug": "spatial-tracking",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-tracking",
+  "domain": "spatial-computing",
+  "definition": "Technology that determines the position and orientation of objects in three-dimensional space using six degrees of freedom (6DoF), enabling precise tracking of headsets, controllers, and body movements through inside-out or outside-in sensor configurations.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-tracking",
+      "label": "Motion Tracking"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:immersive-vr",
+        "label": "Immersive VR"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-vr",
+      "label": "Immersive VR"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    }
+  ]
+}

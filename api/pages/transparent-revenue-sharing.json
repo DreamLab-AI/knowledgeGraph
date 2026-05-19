@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b668757afd374bc4651593d707103ef9ea8b1c86372f4300a1f5f8e7e76c888e",
+  "title": "Transparent Revenue Sharing",
+  "slug": "transparent-revenue-sharing",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:transparent-revenue-sharing",
+  "domain": "spatial-computing",
+  "definition": "A financial distribution model where revenue allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:revenue-distribution",
+      "label": "Revenue Distribution"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "revenue-distribution",
+      "label": "Revenue Distribution"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    }
+  ]
+}

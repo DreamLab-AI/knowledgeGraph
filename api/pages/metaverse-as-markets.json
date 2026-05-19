@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:476915cc9713f3e6a514f140de062afbcffe565cf1b4f934a2f566a586af2304",
+  "title": "Metaverse as Markets",
+  "slug": "metaverse-as-markets",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse-as-markets",
+  "domain": "spatial-computing",
+  "definition": "Metaverse as Markets is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:34eda57112444c916299c6f324bf57eb93100f6bdd250cb81ee85ab9ed831781",
+  "title": "Video Streaming",
+  "slug": "video-streaming",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:video-streaming",
+  "domain": "infrastructure",
+  "definition": "VideoStreaming is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -1,24 +1,298 @@
-iri:: http://narrativegoldmine.com/spatial-computing#CarbonCalculator
-uri:: urn:visionclaw:concept:spatial-computing:carbon-calculator
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:carbon-calculator
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Carbon Calculator
-content-hash:: sha256-12-cbdc302c7523
-legacy-term-id:: MV-9808
-status:: active
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#CarbonCalculator
+legacy_uri:: urn:visionclaw:concept:spatial-computing:carbon-calculator
 public:: true
+
+# Carbon Calculator
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e",
+  "@type": "Page",
+  "vc:slug": "carbon-calculator",
+  "title": "Carbon Calculator",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:activity-data",
+      "vc:label": "Activity Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:calculation-methodology",
+      "vc:label": "Calculation Methodology"
+    },
+    {
+      "@id": "urn:visionflow:linked:emission-factors",
+      "vc:label": "Emission Factors"
+    },
+    {
+      "@id": "urn:visionflow:linked:emissions-estimation",
+      "vc:label": "Emissions Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:footprint-awareness",
+      "vc:label": "Footprint Awareness"
+    },
+    {
+      "@id": "urn:visionflow:linked:reduction-planning",
+      "vc:label": "Reduction Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sustainability-tool",
+      "vc:label": "Sustainability Tool"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cbdc302c7523"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#CarbonCalculator"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9808"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Carbon Calculator"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:carbon-calculator"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:carbon-calculator"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:carbon-calculator",
+  "@type": "OntologyClass",
+  "label": "Carbon Calculator",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:sustainability-tool",
+      "vc:label": "Sustainability Tool"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon footprint.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:activity-data",
+      "vc:label": "Activity Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:calculation-methodology",
+      "vc:label": "Calculation Methodology"
+    },
+    {
+      "@id": "urn:visionflow:linked:emission-factors",
+      "vc:label": "Emission Factors"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:emissions-estimation",
+      "vc:label": "Emissions Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:footprint-awareness",
+      "vc:label": "Footprint Awareness"
+    },
+    {
+      "@id": "urn:visionflow:linked:reduction-planning",
+      "vc:label": "Reduction Planning"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:carbon-calculator:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Activity Data]]",
+      "resolved": "urn:visionflow:linked:activity-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Calculation Methodology]]",
+      "resolved": "urn:visionflow:linked:calculation-methodology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Emission Factors]]",
+      "resolved": "urn:visionflow:linked:emission-factors",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Emissions Estimation]]",
+      "resolved": "urn:visionflow:linked:emissions-estimation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Footprint Awareness]]",
+      "resolved": "urn:visionflow:linked:footprint-awareness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Reduction Planning]]",
+      "resolved": "urn:visionflow:linked:reduction-planning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sustainability Tool]]",
+      "resolved": "urn:visionflow:owl:class:sustainability-tool",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon footprint.

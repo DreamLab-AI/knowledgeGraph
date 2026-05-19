@@ -1,21 +1,266 @@
-iri:: http://narrativegoldmine.com/ontology#PriceDiscovery
-uri:: urn:visionclaw:concept:blockchain:price-discovery
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:price-discovery
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Price Discovery
-content-hash:: sha256-12-d2006f8afc59
-legacy-term-id:: NGM-7038
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#PriceDiscovery
+legacy_uri:: urn:visionclaw:concept:blockchain:price-discovery
 public:: true
+
+# Price Discovery
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721",
+  "@type": "Page",
+  "vc:slug": "price-discovery",
+  "title": "Price Discovery",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:arbitrage",
+      "vc:label": "Arbitrage"
+    },
+    {
+      "@id": "urn:visionflow:linked:fair-valuation",
+      "vc:label": "Fair Valuation"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-domain",
+      "vc:label": "FinancialDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:liquidity",
+      "vc:label": "Liquidity"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-efficiency",
+      "vc:label": "Market Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-microstructure",
+      "vc:label": "Market Microstructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:order-book",
+      "vc:label": "Order Book"
+    },
+    {
+      "@id": "urn:visionflow:linked:price-transparency",
+      "vc:label": "Price Transparency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mev",
+      "vc:label": "MEV"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d2006f8afc59"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#PriceDiscovery"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7038"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Price Discovery"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:price-discovery"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:price-discovery"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:price-discovery",
+  "@type": "OntologyClass",
+  "label": "Price Discovery",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:market-microstructure",
+      "vc:label": "Market Microstructure"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:fair-valuation",
+      "vc:label": "Fair Valuation"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-efficiency",
+      "vc:label": "Market Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:linked:price-transparency",
+      "vc:label": "Price Transparency"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:price-discovery:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Arbitrage]]",
+      "resolved": "urn:visionflow:linked:arbitrage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fair Valuation]]",
+      "resolved": "urn:visionflow:linked:fair-valuation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FinancialDomain]]",
+      "resolved": "urn:visionflow:linked:financial-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Liquidity]]",
+      "resolved": "urn:visionflow:linked:liquidity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Efficiency]]",
+      "resolved": "urn:visionflow:linked:market-efficiency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Market Microstructure]]",
+      "resolved": "urn:visionflow:linked:market-microstructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Order Book]]",
+      "resolved": "urn:visionflow:linked:order-book",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Price Transparency]]",
+      "resolved": "urn:visionflow:linked:price-transparency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MEV]]",
+      "resolved": "urn:visionflow:owl:class:mev",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.

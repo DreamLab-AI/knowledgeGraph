@@ -1,21 +1,189 @@
-iri:: http://narrativegoldmine.com/metaverse#ETSIDomainInfrastructureGovernance
-uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaininfrastructuregovernance
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomaininfrastructuregovernance
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: ETSI_Domain_Infrastructure___Governance
-content-hash:: sha256-12-01177066020e
-legacy-term-id:: MV-2016
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#ETSIDomainInfrastructureGovernance
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaininfrastructuregovernance
 public:: true
+
+# ETSI_Domain_Infrastructure___Governance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d",
+  "@type": "Page",
+  "vc:slug": "etsi-domain-infrastructure-governance",
+  "title": "ETSI_Domain_Infrastructure___Governance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:resilience-metric",
+      "vc:label": "Resilience Metric"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-01177066020e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#ETSIDomainInfrastructureGovernance"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-2016"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ETSI_Domain_Infrastructure___Governance"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaininfrastructuregovernance"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:etsidomaininfrastructuregovernance"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure-governance",
+  "@type": "OntologyClass",
+  "label": "ETSI_Domain_Infrastructure___Governance",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components. Infrastructure governance integrates autonomic management via ETSI GANA, cloud orchestration frameworks (TC-MANO) enabling declarative management, and trust domain governance standards (ETSI TS 104 007) supporting policy-driven control of network flows, lifecycle management, and domain separation ensuring security and regulatory compliance. Applications span telecommunications, cloud-native functions, and metaverse platforms with emerging focus on AI-driven governance models, 6G integration, and multi-domain trust frameworks.",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-governance:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Resilience Metric]]",
+      "resolved": "urn:visionflow:owl:class:resilience-metric",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components. Infrastructure governance integrates autonomic management via ETSI GANA, cloud orchestration frameworks (TC-MANO) enabling declarative management, and trust domain governance standards (ETSI TS 104 007) supporting policy-driven control of network flows, lifecycle management, and domain separation ensuring security and regulatory compliance. Applications span telecommunications, cloud-native functions, and metaverse platforms with emerging focus on AI-driven governance models, 6G integration, and multi-domain trust frameworks.

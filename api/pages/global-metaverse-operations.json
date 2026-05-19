@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:36a25008f46d045b50bc66df404d53f93e364861248e2bf804457b05ad446eb8",
+  "title": "Global Metaverse Operations",
+  "slug": "global-metaverse-operations",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:global-metaverse-operations",
+  "domain": "spatial-computing",
+  "definition": "The international coordination and management of metaverse platforms across jurisdictions, encompassing cross-border infrastructure deployment, regulatory compliance, interoperability standards, and unified user experiences that enable seamless virtual world access regardless of geographic location.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:unified-virtual-experience",
+        "label": "Unified Virtual Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "unified-virtual-experience",
+      "label": "Unified Virtual Experience"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    }
+  ]
+}

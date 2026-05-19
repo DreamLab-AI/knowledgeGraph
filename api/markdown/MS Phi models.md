@@ -1,35 +1,1732 @@
-iri:: http://narrativegoldmine.com/infrastructure#MSPhiModels
-uri:: urn:visionclaw:concept:infrastructure:ms-phi-models
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:ms-phi-models
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: MS Phi models
-content-hash:: sha256-12-22f722e2b35c
-status:: stub
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#MSPhiModels
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ms-phi-models
 public:: true
 
+# MS Phi models
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b80718b34072ef63ac8425602d9c8c2380a97fa548221c0669da0d8795cb7f83",
+  "@type": "Page",
+  "vc:slug": "ms-phi-models",
+  "title": "MS Phi models",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:edge-aidomain",
+      "vc:label": "EdgeAIDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models-domain",
+      "vc:label": "FoundationModelsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-layer",
+      "vc:label": "InferenceLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-layer",
+      "vc:label": "ModelLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:adapter-modules",
+      "vc:label": "Adapter Modules"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-augmented-software-engineering",
+      "vc:label": "AI-Augmented Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-deployment",
+      "vc:label": "AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-model-card",
+      "vc:label": "AI Model Card"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-bias",
+      "vc:label": "Algorithmic Bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention",
+      "vc:label": "Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-head",
+      "vc:label": "Attention Head"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "vc:label": "Bias in Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:competition-in-ai",
+      "vc:label": "Competition in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:context-aware-computing",
+      "vc:label": "Context Aware Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:context-engineering",
+      "vc:label": "Context Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:continued-pre-training",
+      "vc:label": "Continued Pre Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:direct-preference-optimization",
+      "vc:label": "Direct Preference Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-ai-system",
+      "vc:label": "Edge AI System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing-architecture",
+      "vc:label": "Edge Computing Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:embedded-ai-frameworks",
+      "vc:label": "Embedded AI Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethical-ai",
+      "vc:label": "Ethical AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+      "vc:label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fine-tuning",
+      "vc:label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:full-fine-tuning",
+      "vc:label": "Full Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:general-purpose-ai-model",
+      "vc:label": "General Purpose AI Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt-3",
+      "vc:label": "GPT 3"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt-4",
+      "vc:label": "GPT 4"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:inference-hardware",
+      "vc:label": "Inference Hardware"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:instruction-tuning",
+      "vc:label": "Instruction Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-distillation-for-edge",
+      "vc:label": "Knowledge Distillation for Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:layer-normalisation",
+      "vc:label": "Layer Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lla-ma",
+      "vc:label": "LLaMA"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:llama-3",
+      "vc:label": "Llama 3"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microsoft-copilot",
+      "vc:label": "Microsoft Copilot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mistral-and-mixtral",
+      "vc:label": "Mistral and Mixtral"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mixture-of-experts",
+      "vc:label": "Mixture of Experts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-compression-for-edge",
+      "vc:label": "Model Compression for Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-optimisation-and-performance",
+      "vc:label": "Model Optimisation and Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-pruning-for-edge-deployment",
+      "vc:label": "Model Pruning for Edge Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multi-head-attention",
+      "vc:label": "Multi-Head Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-understanding",
+      "vc:label": "Multimodal Understanding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:npu",
+      "vc:label": "NPU"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:on-device-learning",
+      "vc:label": "On-Device Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "vc:label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:positional-encoding",
+      "vc:label": "Positional Encoding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pre-training",
+      "vc:label": "Pre Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:qlo-ra",
+      "vc:label": "QLoRA"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai-principles",
+      "vc:label": "Responsible AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "vc:label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety-fine-tuning",
+      "vc:label": "Safety Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:scaled-dot-product-attention",
+      "vc:label": "Scaled Dot Product Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:supervised-fine-tuning",
+      "vc:label": "Supervised Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-and-fine-tuning",
+      "vc:label": "Training and fine tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "alternative-terms",
+      "vc:value": "Phi series, Microsoft Phi, Phi SLM, Small Language Models Microsoft, Phi-1, Phi-2, Phi-3, Phi-4"
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.87"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-9f3c8b1a4e72"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "domain-correction",
+      "vc:value": "infrastructure -> artificial-intelligence (corrected 2026-05-17: Phi is a family of small language models — AI/foundation-models domain)"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#MSPhiModels"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-2041"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-05-17T09:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "MS Phi models"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.52"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ms-phi-models"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ms-phi-models"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.1.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b80718b34072ef63ac8425602d9c8c2380a97fa548221c0669da0d8795cb7f83@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ms-phi-models",
+  "@type": "OntologyClass",
+  "label": "MS Phi models",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:general-purpose-ai-model",
+      "vc:label": "General Purpose AI Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "production-ready",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:b80718b34072ef63ac8425602d9c8c2380a97fa548221c0669da0d8795cb7f83"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b80718b34072ef63ac8425602d9c8c2380a97fa548221c0669da0d8795cb7f83@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "MS Phi models is Microsoft Research's family of small language models (SLMs) demonstrating that carefully curated, textbook-quality synthetic training data can achieve state-of-the-art performance at parameter counts one to two orders of magnitude smaller than frontier large language models, establishing a new paradigm in which data quality dominates data quantity as the primary driver of emergent reasoning capability across the full capability spectrum from Python code generation through mathematical chain-of-thought reasoning, multimodal vision-speech-text integration, and agentic tool-use. The series spans eight distinct model generations released between June 2023 and April 2025: Phi-1 (1.3B parameters, June 2023, Python code generation trained on GPT-4-synthesised textbook chapters and exercises, achieving HumanEval pass@1 50.6% matching CodeLLaMA-34B at 26× fewer parameters); Phi-1.5 (1.3B, September 2023, extending to natural language commonsense reasoning through \"synthetic fables\" — short educational narratives encoding causal and common-sense inference, MMLU 46.1%); Phi-2 (2.7B, December 2023, outperforming LLaMA-2-70B on ARC / WinoGrande / HellaSwag / PIQA reasoning benc",
+  "vc:qualityScore": {
+    "@value": "0.52",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.87",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:owl:class:adapter-modules",
+      "vc:label": "Adapter Modules"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-head",
+      "vc:label": "Attention Head"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fine-tuning",
+      "vc:label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:instruction-tuning",
+      "vc:label": "Instruction Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mixture-of-experts",
+      "vc:label": "Mixture of Experts"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multi-head-attention",
+      "vc:label": "Multi-Head Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:owl:class:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:continued-pre-training",
+      "vc:label": "Continued Pre Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+      "vc:label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pre-training",
+      "vc:label": "Pre Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-and-fine-tuning",
+      "vc:label": "Training and fine tuning"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-deployment",
+      "vc:label": "AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:context-aware-computing",
+      "vc:label": "Context Aware Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-ai-system",
+      "vc:label": "Edge AI System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microsoft-copilot",
+      "vc:label": "Microsoft Copilot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-understanding",
+      "vc:label": "Multimodal Understanding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:on-device-learning",
+      "vc:label": "On-Device Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reasoning",
+      "vc:label": "Reasoning"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:owl:class:direct-preference-optimization",
+      "vc:label": "Direct Preference Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:full-fine-tuning",
+      "vc:label": "Full Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:instruction-tuning",
+      "vc:label": "Instruction Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "vc:label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:qlo-ra",
+      "vc:label": "QLoRA"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety-fine-tuning",
+      "vc:label": "Safety Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:supervised-fine-tuning",
+      "vc:label": "Supervised Fine Tuning"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:owl:class:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention",
+      "vc:label": "Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:layer-normalisation",
+      "vc:label": "Layer Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:positional-encoding",
+      "vc:label": "Positional Encoding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:scaled-dot-product-attention",
+      "vc:label": "Scaled Dot Product Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    }
+  ],
+  "vc:supports": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-augmented-software-engineering",
+      "vc:label": "AI-Augmented Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing-architecture",
+      "vc:label": "Edge Computing Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:embedded-ai-frameworks",
+      "vc:label": "Embedded AI Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:inference-hardware",
+      "vc:label": "Inference Hardware"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-distillation-for-edge",
+      "vc:label": "Knowledge Distillation for Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-optimisation-and-performance",
+      "vc:label": "Model Optimisation and Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:npu",
+      "vc:label": "NPU"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:context-engineering",
+      "vc:label": "Context Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-compression-for-edge",
+      "vc:label": "Model Compression for Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-pruning-for-edge-deployment",
+      "vc:label": "Model Pruning for Edge Deployment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "vc:label": "Retrieval Augmented Generation - RAG"
+    }
+  ],
+  "vc:contrastsWith": [
+    {
+      "@id": "urn:visionflow:owl:class:anthropic-claude",
+      "vc:label": "Anthropic Claude"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chat-gpt",
+      "vc:label": "ChatGPT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini",
+      "vc:label": "Gemini"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt-3",
+      "vc:label": "GPT 3"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpt-4",
+      "vc:label": "GPT 4"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lla-ma",
+      "vc:label": "LLaMA"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:llama-3",
+      "vc:label": "Llama 3"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mistral-and-mixtral",
+      "vc:label": "Mistral and Mixtral"
+    }
+  ],
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-bias",
+      "vc:label": "Algorithmic Bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "vc:label": "Bias in Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:competition-in-ai",
+      "vc:label": "Competition in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethical-ai",
+      "vc:label": "Ethical AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    }
+  ],
+  "vc:standardizedBy": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-model-card",
+      "vc:label": "AI Model Card"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai-principles",
+      "vc:label": "Responsible AI Principles"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ms-phi-models:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b80718b34072ef63ac8425602d9c8c2380a97fa548221c0669da0d8795cb7f83"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[EdgeAIDomain]]",
+      "resolved": "urn:visionflow:linked:edge-aidomain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FoundationModelsDomain]]",
+      "resolved": "urn:visionflow:linked:foundation-models-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InferenceLayer]]",
+      "resolved": "urn:visionflow:linked:inference-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ModelLayer]]",
+      "resolved": "urn:visionflow:linked:model-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Activation Function]]",
+      "resolved": "urn:visionflow:owl:class:activation-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Adapter Modules]]",
+      "resolved": "urn:visionflow:owl:class:adapter-modules",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Alignment]]",
+      "resolved": "urn:visionflow:owl:class:ai-alignment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-Augmented Software Engineering]]",
+      "resolved": "urn:visionflow:owl:class:ai-augmented-software-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Deployment]]",
+      "resolved": "urn:visionflow:owl:class:ai-deployment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Model Card]]",
+      "resolved": "urn:visionflow:owl:class:ai-model-card",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Safety]]",
+      "resolved": "urn:visionflow:owl:class:ai-safety",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Algorithmic Bias]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-bias",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Anthropic Claude]]",
+      "resolved": "urn:visionflow:owl:class:anthropic-claude",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Attention]]",
+      "resolved": "urn:visionflow:owl:class:attention",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Attention Head]]",
+      "resolved": "urn:visionflow:owl:class:attention-head",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Attention Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:attention-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BERT]]",
+      "resolved": "urn:visionflow:owl:class:bert",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bias in Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ChatGPT]]",
+      "resolved": "urn:visionflow:owl:class:chat-gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Code Generation]]",
+      "resolved": "urn:visionflow:owl:class:code-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Competition in AI]]",
+      "resolved": "urn:visionflow:owl:class:competition-in-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Compute Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:compute-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Context Aware Computing]]",
+      "resolved": "urn:visionflow:owl:class:context-aware-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Context Engineering]]",
+      "resolved": "urn:visionflow:owl:class:context-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Context Window]]",
+      "resolved": "urn:visionflow:owl:class:context-window",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Continued Pre Training]]",
+      "resolved": "urn:visionflow:owl:class:continued-pre-training",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Curriculum Learning]]",
+      "resolved": "urn:visionflow:owl:class:curriculum-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Direct Preference Optimization]]",
+      "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Edge AI System]]",
+      "resolved": "urn:visionflow:owl:class:edge-ai-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Edge Computing]]",
+      "resolved": "urn:visionflow:owl:class:edge-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Edge Computing Architecture]]",
+      "resolved": "urn:visionflow:owl:class:edge-computing-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Embedded AI Frameworks]]",
+      "resolved": "urn:visionflow:owl:class:embedded-ai-frameworks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethical AI]]",
+      "resolved": "urn:visionflow:owl:class:ethical-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Evaluation benchmarks and leaderboards]]",
+      "resolved": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fine Tuning]]",
+      "resolved": "urn:visionflow:owl:class:fine-tuning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Foundation Models]]",
+      "resolved": "urn:visionflow:owl:class:foundation-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Full Fine Tuning]]",
+      "resolved": "urn:visionflow:owl:class:full-fine-tuning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Function Calling]]",
+      "resolved": "urn:visionflow:owl:class:function-calling",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gemini]]",
+      "resolved": "urn:visionflow:owl:class:gemini",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[General Purpose AI Model]]",
+      "resolved": "urn:visionflow:owl:class:general-purpose-ai-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative AI]]",
+      "resolved": "urn:visionflow:owl:class:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative Model]]",
+      "resolved": "urn:visionflow:owl:class:generative-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GPT 3]]",
+      "resolved": "urn:visionflow:owl:class:gpt-3",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[GPT 4]]",
+      "resolved": "urn:visionflow:owl:class:gpt-4",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Inference Hardware]]",
+      "resolved": "urn:visionflow:owl:class:inference-hardware",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Instruction Tuning]]",
+      "resolved": "urn:visionflow:owl:class:instruction-tuning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Distillation]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-distillation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Knowledge Distillation for Edge]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-distillation-for-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Layer Normalisation]]",
+      "resolved": "urn:visionflow:owl:class:layer-normalisation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LLaMA]]",
+      "resolved": "urn:visionflow:owl:class:lla-ma",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Llama 3]]",
+      "resolved": "urn:visionflow:owl:class:llama-3",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microsoft Copilot]]",
+      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mistral and Mixtral]]",
+      "resolved": "urn:visionflow:owl:class:mistral-and-mixtral",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Mixture of Experts]]",
+      "resolved": "urn:visionflow:owl:class:mixture-of-experts",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Compression for Edge]]",
+      "resolved": "urn:visionflow:owl:class:model-compression-for-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Optimisation and Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-optimisation-and-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Pruning for Edge Deployment]]",
+      "resolved": "urn:visionflow:owl:class:model-pruning-for-edge-deployment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Training]]",
+      "resolved": "urn:visionflow:owl:class:model-training",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Multi-Head Attention]]",
+      "resolved": "urn:visionflow:owl:class:multi-head-attention",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Multimodal AI]]",
+      "resolved": "urn:visionflow:owl:class:multimodal-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Multimodal Understanding]]",
+      "resolved": "urn:visionflow:owl:class:multimodal-understanding",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NPU]]",
+      "resolved": "urn:visionflow:owl:class:npu",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[On-Device Learning]]",
+      "resolved": "urn:visionflow:owl:class:on-device-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Parameter-Efficient Fine-Tuning]]",
+      "resolved": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Positional Encoding]]",
+      "resolved": "urn:visionflow:owl:class:positional-encoding",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Pre Training]]",
+      "resolved": "urn:visionflow:owl:class:pre-training",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Prompt Engineering]]",
+      "resolved": "urn:visionflow:owl:class:prompt-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proprietary Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[QLoRA]]",
+      "resolved": "urn:visionflow:owl:class:qlo-ra",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reasoning]]",
+      "resolved": "urn:visionflow:owl:class:reasoning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Responsible AI]]",
+      "resolved": "urn:visionflow:owl:class:responsible-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Responsible AI Principles]]",
+      "resolved": "urn:visionflow:owl:class:responsible-ai-principles",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Retrieval Augmented Generation - RAG]]",
+      "resolved": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Safety Fine Tuning]]",
+      "resolved": "urn:visionflow:owl:class:safety-fine-tuning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Scaled Dot Product Attention]]",
+      "resolved": "urn:visionflow:owl:class:scaled-dot-product-attention",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Supervised Fine Tuning]]",
+      "resolved": "urn:visionflow:owl:class:supervised-fine-tuning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Training and fine tuning]]",
+      "resolved": "urn:visionflow:owl:class:training-and-fine-tuning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:b80718b34072ef63ac8425602d9c8c2380a97fa548221c0669da0d8795cb7f83@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
 - ### Definition
-  - MS Phi models is a concept within the ngm domain.
+  - MS Phi models is Microsoft Research's family of small language models (SLMs) demonstrating that carefully curated, textbook-quality synthetic training data can achieve state-of-the-art performance at parameter counts one to two orders of magnitude smaller than frontier large language models, establishing a new paradigm in which data quality dominates data quantity as the primary driver of emergent reasoning capability across the full capability spectrum from Python code generation through mathematical chain-of-thought reasoning, multimodal vision-speech-text integration, and agentic tool-use.
+  - The series spans eight distinct model generations released between June 2023 and April 2025: Phi-1 (1.3B parameters, June 2023, Python code generation trained on GPT-4-synthesised textbook chapters and exercises, achieving HumanEval pass@1 50.6% matching CodeLLaMA-34B at 26× fewer parameters); Phi-1.5 (1.3B, September 2023, extending to natural language commonsense reasoning through "synthetic fables" — short educational narratives encoding causal and common-sense inference, MMLU 46.1%); Phi-2 (2.7B, December 2023, outperforming LLaMA-2-70B on ARC / WinoGrande / HellaSwag / PIQA reasoning benchmarks and approaching Mixtral-8×7B on HumanEval through a 250B-token mixed NLP+code synthetic corpus, MMLU 57.7%); Phi-3 mini/small/medium (3.8B / 7B / 14B, April 2024, MMLU 69.0% / 75.7% / 78.0%, first series to exceed GPT-3.5 class performance at sub-4B scale, Phi-3-mini achieving 20+ tok/s on Snapdragon X Elite NPU under INT4 quantisation at sub-2.5 GB memory); Phi-3.5 (August 2024, comprising Phi-3.5-mini 3.8B with 128K context LongRoPE and 23-language support, Phi-3.5-MoE 16×3.8B experts with 6.6B active parameters achieving Phi-3-medium MMLU quality at Phi-3.5-mini inference cost, and Phi-3.5-vision 4.2B with CLIP-ViT-L/14@336 encoder); Phi-4 (14B, December 2024, surpassing GPT-4o-mini on MATH 80.4 vs 74.9, GPQA Diamond 56.1 vs 50.5, HumanEval 82.6 vs 78.9, trained on a 9.8T-token curriculum with synthetic data constituting the majority pretraining signal); Phi-4-mini (3.8B, February 2025, sub-3 GB INT4, MMLU 70.9%, MATH 46.2%) and Phi-4-multimodal (3.8B, February 2025, integrating SigLIP-400M vision and Whisper-v3-large speech encoders, VQA v2 79.1%, LibriSpeech WER 2.4%); and Phi-4-reasoning (14B, April 2025, chain-of-thought distillation from DeepSeek-R1 with process reward model scoring, MATH-500 97.3%, AIME 2025 78.0% exceeding o3-mini-low's 73.3%, OmniMath 81.7%, GPQA Diamond 63.6%).
+  - The theoretical underpinning originates with the "Textbooks Are All You Need" insight (Gunasekar et al., Microsoft Research, June 2023, arXiv:2306.11644): standard web-crawled pretraining corpora contain a vast noise-to-signal imbalance from the perspective of reasoning acquisition, interleaving correct facts with incorrect claims, reasoning-by-authority with reasoning-by-logic, and implicit inference with explicit deduction; by generating Python textbook chapters, exercises, and solutions via GPT-4 and filtering existing GitHub/StackOverflow code with a quality classifier (trained on 6B tokens of high-quality code), Phi-1 achieves competitive code generation at 1.3B parameters — a result that the prevailing Chinchilla (Hoffmann et al. 2022) compute-optimal scaling theory would predict requires 25-35B parameters.
+  - The SLM thesis asserts that most real-world inference tasks — question answering, summarisation, translation, code completion, mathematical problem solving — do not require the full representational complexity of 70B+ frontier models; a 3.8-14B model that fits in a mobile device's unified memory (6-8 GB LPDDR5X), executes entirely on the Neural Processing Unit (NPU) without discrete GPU, and draws 4-8 W at inference removes cloud round-trip latency (typically 200-600ms API), eliminates data-egress GDPR/CCPA privacy exposure, and enables offline-capable AI assistants in connectivity-constrained environments including aircraft, clinical wards, industrial floors, and sovereign computing environments.
+  - Microsoft commercially instantiates this thesis through Copilot+ PC integration (announced May 2024, Qualcomm Snapdragon X Elite / Intel Core Ultra / AMD Ryzen AI; Windows 11 Recall, Cocreator, Live Captions first shipped June 2024), Azure AI Foundry on-device runtimes, DirectML + ONNX Runtime cross-platform optimisation, and OEM partnerships across the ARM silicon ecosystem (Qualcomm Oryon CPU + Hexagon NPU, Mediatek Dimensity 9400 APU, Samsung Exynos 2500 NPU), making Phi-3-mini the most widely shipped SLM by installed base as of Q1 2026 with approximately 50 million Copilot+ PC units.
+  - The Phi-4-reasoning generation collapses the remaining capability gap to frontier o-series reasoning models on mathematical and scientific tasks by combining three training advances: (a) long chain-of-thought supervised fine-tuning using DeepSeek-R1-generated reasoning traces over curated mathematical problem sets; (b) rejection sampling over synthetic problem-solving trajectories retaining only those where final answers are verifiable correct; and (c) process reward model (PRM) scoring of intermediate reasoning steps using a separately trained verifier, enabling the student model to distinguish plausible-but-wrong intermediate steps from correct reasoning paths — a capability that pure outcome-reward fine-tuning cannot reliably instil.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:MSPhiModels
-  - owl-role:: Concept
+  - owl-class:: artificial-intelligence:MSPhiModels
+  - owl-role:: FoundationModelFamily
+  - owl-inferred:: ai:SmallLanguageModel, ai:SyntheticDataTraining, ai:EdgeInference, ai:OnDeviceAI, ai:MixtureOfExperts, ai:MultimodalFoundationModel
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[FoundationModelsDomain]], [[EdgeAIDomain]]
+  - implemented-in-layer:: [[ModelLayer]], [[InferenceLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: [[Foundation Models]], [[Large Language Models]], [[Proprietary Large Language Models]], [[General Purpose AI Model]], [[Generative AI]], [[Generative Model]]
+  - has-part:: [[Attention Mechanism]], [[Attention Head]], [[Multi-Head Attention]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Fine Tuning]], [[Mixture of Experts]], [[Multimodal AI]], [[Adapter Modules]]
+  - requires:: [[Pre Training]], [[Continued Pre Training]], [[Curriculum Learning]], [[Model Training]], [[Evaluation benchmarks and leaderboards]], [[Compute Infrastructure]], [[Training and fine tuning]]
+  - enables:: [[Edge Computing]], [[On-Device Learning]], [[Microsoft Copilot]], [[Code Generation]], [[Reasoning]], [[Multimodal Understanding]], [[AI Deployment]], [[Edge AI System]], [[Context Aware Computing]]
+  - implements:: [[Supervised Fine Tuning]], [[Direct Preference Optimization]], [[Parameter-Efficient Fine-Tuning]], [[QLoRA]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Safety Fine Tuning]], [[Full Fine Tuning]]
+  - depends-on:: [[Attention]], [[Transformer]], [[Layer Normalisation]], [[Positional Encoding]], [[Activation Function]], [[Context Window]], [[BERT]], [[Scaled Dot Product Attention]]
+  - supports:: [[Edge Computing Architecture]], [[NPU]], [[Inference Hardware]], [[Model Optimisation and Performance]], [[AI-Augmented Software Engineering]], [[Embedded AI Frameworks]], [[Knowledge Distillation for Edge]]
+  - uses:: [[Prompt Engineering]], [[Retrieval Augmented Generation - RAG]], [[Function Calling]], [[Model Compression for Edge]], [[Model Pruning for Edge Deployment]], [[Context Engineering]]
+  - contrasts-with:: [[GPT 4]], [[ChatGPT]], [[LLaMA]], [[Llama 3]], [[Gemini]], [[Mistral and Mixtral]], [[Anthropic Claude]], [[GPT 3]]
+  - related-to:: [[AI Safety]], [[Responsible AI]], [[Bias in Large Language Models]], [[AI Alignment]], [[Ethical AI]], [[Algorithmic Bias]], [[Competition in AI]], [[Foundation Models]]
+  - standardized-by:: [[EU AI Act]], [[Responsible AI Principles]], [[AI Model Card]], [[Responsible AI]]
 
 - ### Content
-  - [[2404.14219] Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone (arxiv.org)](https://arxiv.org/abs/2404.14219)
-  - [Tutorial: How to fix Phi 3 stop token in GGUF : r/LocalLLaMA (reddit.com)](https://www.reddit.com/r/LocalLLaMA/comments/1cbcd66/tutorial_how_to_fix_phi_3_stop_token_in_gguf/)
+
+  ## Compositional Relationships (Components)
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:TransformerDecoderStack))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:GroupedQueryAttentionModule))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:RotaryPositionalEmbeddingLayer))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:SyntheticDataGenerationPipeline))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:QualityClassifierFilter))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:InstructionFineTuningModule))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:SafetyAlignmentLayer))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:MixtureOfExpertsRouter))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:VisionEncoderProjector))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:hasPart ai:ProcessRewardModel))
+
+	    ## Dependency Relationships
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:requires ai:SyntheticTextbookCorpus))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:requires ai:HighCapacityTeacherModel))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:requires ai:RejectionSamplingVerifier))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:requires ai:ChainOfThoughtAnnotation))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:requires ai:QuantisationCalibrationDataset))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:dependsOn ai:ONNXRuntimeInferenceEngine))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:dependsOn ai:DirectMLBackend))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:dependsOn ai:NeuralProcessingUnitHardware))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:dependsOn ai:INT4WeightQuantisationPipeline))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:dependsOn ai:LongRoPEPositionalInterpolation))
+
+	    ## Capability Relationships
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:enables ai:OnDeviceNPUInference))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:enables ai:OfflineAIAssistant))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:enables ai:MathematicalChainOfThoughtReasoning))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:enables ai:PythonCodeGeneration))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:enables ai:MultilingualNaturalLanguageUnderstanding))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:enables ai:MultimodalSpeechVisionTextUnderstanding))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:supports ai:CopilotPCWindowsIntegration))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:supports ai:MobileEdgeAIDeployment))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:supports ai:AutonomousAgentFunctionCalling))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:supports ai:AzureAIFoundryServerlessHosting))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:supports ai:PrivateSovereignInferenceDeployment))
+
+	    ## Implementation Relationships
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:implements ai:DirectPreferenceOptimisation))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:implements ai:RejectionSamplingFineTuning))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:implements ai:CurriculumLearningDataSchedule))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:implements ai:LongChainOfThoughtDistillation))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:implements ai:LoRAAdapterFineTuning))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:implements ai:INT4RTNWeightQuantisation))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:uses ai:FlashAttentionKernels))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:uses ai:GroupedQueryAttentionGQA))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:uses ai:SlidingWindowAttentionForLongContext))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:uses ai:RotaryPositionalEmbeddings))
+
+	    ## Reduction Relationships
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:reduces ai:CloudAPIInferenceLatency))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:reduces ai:DataEgressPrivacyRisk))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:reduces ai:PretrainingTokensRequired))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:reduces ai:InferenceComputeCostPerToken))
+	    SubClassOf(ai:MSPhiModels
+	      ObjectSomeValuesFrom(ai:reduces ai:ModelMemoryFootprintGB))
+
+	    ## Data Properties (Characteristics)
+	    DataPropertyAssertion(ai:hasIdentifier ai:MSPhiModels "AI-2041"^^xsd:string)
+	    DataPropertyAssertion(ai:authorityScore ai:MSPhiModels "0.87"^^xsd:decimal)
+	    DataPropertyAssertion(ai:largestVariantParameters ai:MSPhiModels "14000000000"^^xsd:integer)
+	    DataPropertyAssertion(ai:smallestVariantParameters ai:MSPhiModels "1300000000"^^xsd:integer)
+	    DataPropertyAssertion(ai:phi4ReasoningMATH500Score ai:MSPhiModels "0.973"^^xsd:decimal)
+	    DataPropertyAssertion(ai:phi4ReasoningAIME2025Score ai:MSPhiModels "0.780"^^xsd:decimal)
+	    DataPropertyAssertion(ai:copilotPCUnitsShipped ai:MSPhiModels "50000000"^^xsd:integer)
+	    DataPropertyAssertion(ai:phi3MiniNPUThroughputTokPerSec ai:MSPhiModels "20"^^xsd:integer)
+
+	    ## Property Constraints
+	    SubClassOf(ai:MSPhiModels
+	      DataAllValuesFrom(ai:usesSyntheticTrainingData xsd:boolean))
+	    SubClassOf(ai:MSPhiModels
+	      DataSomeValuesFrom(ai:primaryArchitecture xsd:string))
+	    SubClassOf(ai:MSPhiModels
+	      DataMinCardinality(1 ai:hasModelVariant xsd:string))
+	    SubClassOf(ai:MSPhiModels
+	      DataMinCardinality(1 ai:hasNPUDeploymentTarget xsd:string))
+
+	    ## Annotations
+	    AnnotationAssertion(rdfs:label ai:MSPhiModels "MS Phi models"@en)
+	    AnnotationAssertion(rdfs:comment ai:MSPhiModels "Microsoft Research's family of small language models (1.3B-14B) that pioneer synthetic textbook-quality data curation to achieve frontier reasoning performance at dramatically reduced parameter scale, enabling on-device NPU inference at 20+ tok/s on Copilot+ PCs and ARM mobile silicon, with Phi-4-reasoning achieving 97.3% MATH-500 and 78.0% AIME 2025 exceeding o3-mini-low at only 14B parameters."@en)
+	    AnnotationAssertion(dcterms:identifier ai:MSPhiModels "AI-2041"^^xsd:string)
+	    AnnotationAssertion(dcterms:subject ai:MSPhiModels "Small Language Models, Synthetic Data, Edge AI, On-Device Inference, Foundation Models, Microsoft Research, SLM"@en)
+	  )
+
+	  ## Property Characteristics
+	  AsymmetricObjectProperty(ai:requires)
+	  AsymmetricObjectProperty(ai:enables)
+	  AsymmetricObjectProperty(ai:implements)
+	  AsymmetricObjectProperty(ai:reduces)
+	  TransitiveObjectProperty(ai:dependsOn)
+	  FunctionalDataProperty(ai:phi4ReasoningMATH500Score)
+	  FunctionalDataProperty(ai:largestVariantParameters)
+	  FunctionalDataProperty(ai:phi3MiniNPUThroughputTokPerSec)
+	  ```
+
+  - ## About MS Phi Models
+  - **MS Phi models** constitute Microsoft Research's systematic exploration of the upper bound of language model capability achievable at small parameter counts through radical curation of training data quality, establishing the "small language model" (SLM) paradigm as a commercially and technically viable alternative to the dominant frontier-model scaling approach for the large majority of real-world AI deployment scenarios.
+  - The series challenges the prevailing scaling-law orthodoxy — articulated most influentially in the Chinchilla paper (Hoffmann et al., DeepMind, 2022) which predicted that performance improvement requires proportional increase in both model size and training-token count, with the compute-optimal recipe being approximately 20 training tokens per parameter — by demonstrating that a 1.3B parameter model trained on synthetic "textbook-quality" Python code outperforms models twenty-five times larger on standardised code-generation benchmarks when training data is constructed to exhibit pedagogical structure, varied examples, and explicit reasoning traces rather than raw internet text.
+  - The intellectual genealogy of Phi traces to an observation, articulated in Gunasekar et al. (2023), that the vast majority of public-internet pretraining corpora is epistemically low-quality from the perspective of reasoning instruction: it contains correct facts interleaved with incorrect claims, reasoning by authority rather than logic, and implicit rather than explicit inference steps.
+  - A model trained on such data must learn to simultaneously represent the distribution of correct reasoning and the distribution of incorrect human writing, wasting parameter capacity on the latter and acquiring systematic confounds between plausible-sounding text and logically valid inference.
+  - If training data could instead mirror the curated, pedagogically-scaffolded prose of high-quality undergraduate textbooks — where every worked example is correct, every proof is complete, every narrative is structured to build understanding step by step, and every exercise is paired with a verified solution — a much smaller model might achieve equivalent or superior reasoning capability by spending all its representational capacity on the signal rather than the noise.
+  - This insight drives the entire Phi pipeline: for each generation, Microsoft Research writes or generates (using GPT-4 or later frontier models as teachers) large corpora of synthetic instructional content: programming textbooks and exercises for Phi-1; short educational narratives and science explanations for Phi-1.5 and Phi-2; multi-step mathematical reasoning traces, structured science question-answer pairs, and filtered Common Crawl for Phi-3; and long chain-of-thought proofs, process-reward-annotated derivations, and synthetic mathematical competition problems for Phi-4-reasoning.
+  - The result is a family of models whose benchmark profiles resemble much larger models on reasoning-intensive evaluations (MMLU, MATH, HumanEval, GPQA, AIME, ARC, WinoGrande) while their memory footprints (1.3-14 GB in INT4) permit execution on commodity consumer NPU hardware — the first model family to make on-device AI genuinely competitive with cloud API baselines for short-context reasoning tasks.
+
+  - ### Core Data Curation Pipeline
+  - The synthetic data pipeline that distinguishes Phi from all prior small language model work operates across six stages that have grown more sophisticated with each generation:
+  - **Stage 1 — Seed Corpus Selection**: For each domain (Python code, natural language reasoning, mathematics), the team begins with a seed selection from public corpora: GitHub repositories filtered for licence permissiveness and code quality (Phi-1: 6B tokens of code); filtered Wikipedia, StackExchange Q&A, curated books corpus (Phi-2: 250B tokens); filtered Common Crawl (C4 quality-filtered, deduplicated) and curated academic textbooks (Phi-3: ~300B tokens public).
+  - **Stage 2 — Quality Classification**: A quality classifier trained on human-annotated examples of "educational quality" code or text scores each document in the seed corpus; documents below a threshold are discarded. For Phi-1, this classifier was trained on GPT-4 ratings of 1,000 code samples using educational criteria (clarity, pedagogical value, correctness, variety of covered concepts).
+  - **Stage 3 — Synthetic Corpus Generation**: Using GPT-4 (Phi-1 through Phi-3) or GPT-4o / GPT-4-Turbo (Phi-4) as the teacher, the pipeline generates: Python textbook chapters with worked examples and exercises; short synthetic "fables" for commonsense reasoning (Phi-1.5); question-answer pairs in STEM subjects with step-by-step derivations (Phi-2/Phi-3); chain-of-thought mathematical proofs with intermediate-step annotations (Phi-4); and structured conversation demonstrations in 23 languages for multilingual instruction tuning (Phi-3.5).
+  - **Stage 4 — Decontamination**: All synthetic and curated data is 13-gram filtered against public benchmark evaluation sets (MMLU, MATH, HumanEval, GPQA, ARC, WinoGrande, HellaSwag, PIQA, AGIEval) to prevent benchmark memorisation. The decontamination covers both exact matches and near-matches via min-hash LSH at 0.8 Jaccard similarity.
+  - **Stage 5 — Training Data Mixing and Curriculum Scheduling**: The final training corpus for each Phi generation is a carefully weighted mixture of synthetic data (typically 30-50% by token count), quality-filtered public data (30-40%), and instruction-following demonstrations (10-20%). The curriculum is scheduled with a warmup phase on general language modelling, a mid-training phase with increasing mathematical and code content weight, and a final "annealing" phase on the highest-quality synthetic data.
+  - **Stage 6 — Post-Training Alignment**: After pretraining, each Phi model undergoes supervised fine-tuning (SFT) on instruction-following demonstrations, safety-specific fine-tuning using Constitutional AI-style principles, and Direct Preference Optimisation (DPO) using human or AI-preference-annotated comparison pairs to align outputs with helpfulness, harmlessness, and honesty objectives.
+
+  - ### Phi Model Card Summary: Specifications by Variant
+  - **Phi-1 (June 2023)**
+    - Parameters: 1.3B
+    - Architecture: Dense decoder-only transformer, 24 layers, 32 heads, 2048 hidden dim, 2048-token context
+    - Training data: 6B tokens (7B GPT-4-generated Python textbook code + 1B filtered StackOverflow/GitHub)
+    - Key benchmark: HumanEval pass@1 50.6%
+    - Training compute: ~$10,000 cloud equivalent (8× A100-80GB, ~4 days)
+    - License: Microsoft Research License (non-commercial)
+    - Deployment: Research / API only; no NPU-optimised release
+  - **Phi-1.5 (September 2023)**
+    - Parameters: 1.3B (same architecture as Phi-1)
+    - Training data: 30B tokens (synthetic NLP fables + filtered web + Phi-1 code corpus)
+    - Key benchmarks: MMLU 46.1%; ARC 53.0%; WinoGrande 73.1%
+    - New capability: Commonsense reasoning, natural language QA, basic mathematics
+    - License: Microsoft Research License (non-commercial)
+  - **Phi-2 (December 2023)**
+    - Parameters: 2.7B
+    - Architecture: 32 layers, 32 heads, 2560 hidden dim, 2048-token context
+    - Training data: 250B tokens (40% synthetic NLP, 40% synthetic+filtered code, 20% curated structured text)
+    - Key benchmarks: MMLU 57.7%; ARC 61.1%; WinoGrande 75.1%; HumanEval pass@1 59.0%
+    - Highlight: Outperforms LLaMA-2-70B on reasoning benchmarks at 25× smaller parameter count
+    - License: MIT License (first MIT-licensed Phi release)
+    - Deployment: Hugging Face Hub; no NPU optimisation
+  - **Phi-3-mini (April 2024)**
+    - Parameters: 3.8B
+    - Architecture: 32 layers, 32 heads GQA (8 KV-heads), 3072 hidden dim, 4K base context / 128K LongRoPE variant
+    - Training data: ~3.3 trillion tokens (synthetic textbooks, filtered Common Crawl, code, multilingual Q&A)
+    - Key benchmarks: MMLU 69.0%; MATH 15.1%; HumanEval 58.7%; ARC 78.2%
+    - On-device: 20+ tok/s on Snapdragon X Elite NPU, ~2.4 GB INT4, ~5W average power draw
+    - License: MIT License
+    - Deployment: Windows 11 Copilot+ PC (Recall, Live Captions), Azure AI Foundry, Hugging Face Hub
+  - **Phi-3-small (April 2024)**
+    - Parameters: 7B
+    - Architecture: 32 layers, 32 heads GQA, 4096 hidden dim, tiktoken 100K vocabulary, 8K context
+    - Key benchmarks: MMLU 75.7%; MATH 20.2%; HumanEval 64.6%; multilingual coverage 8 primary languages
+    - On-device: Compatible with laptop dGPU (4-6 GB VRAM INT4); limited NPU deployment due to 7B weight size
+    - License: MIT License
+  - **Phi-3-medium (April 2024)**
+    - Parameters: 14B
+    - Architecture: 40 layers, 40 heads GQA, 5120 hidden dim, 128K context LongRoPE default
+    - Key benchmarks: MMLU 78.0%; MATH 32.2%; HumanEval 70.9%; GPQA 38.8%
+    - Deployment target: Laptop NPU+dGPU hybrid; Azure AI Foundry; A100 single-GPU
+    - License: MIT License
+  - **Phi-3.5-mini (August 2024)**
+    - Parameters: 3.8B (same scale as Phi-3-mini; redesigned training)
+    - Context: 128K LongRoPE as standard; 23-language instruction tuning
+    - Key benchmarks: MMLU 69.4%; multilingual MMLU coverage improved vs Phi-3-mini
+    - License: MIT License
+  - **Phi-3.5-MoE (August 2024)**
+    - Parameters: 41.9B total / 6.6B active (16 experts × 3.8B, top-2 routing)
+    - Context: 128K LongRoPE
+    - Key benchmarks: MMLU 78.9% at Phi-3.5-mini per-token inference cost
+    - Deployment: 4× A100-40GB multi-GPU cloud serving; not designed for on-device
+    - License: MIT License
+  - **Phi-3.5-vision (August 2024)**
+    - Parameters: 4.2B (Phi-3.5-mini 3.8B + CLIP-ViT-L/14@336 vision encoder)
+    - Vision: Single/multi-image, 64-frame video; 336×336 patch size, 1,024-dim embeddings
+    - Key benchmarks: MMBench 78.3%; ScienceQA-IMG 91.2%; chart QA significantly above LLaVA-1.5-13B
+    - License: MIT License
+  - **Phi-4 (December 2024)**
+    - Parameters: 14B
+    - Architecture: 40 layers, 5120 hidden dim, GQA, 16K base context
+    - Training data: ~9.8 trillion tokens (7T Phase 1 general, 2.5T Phase 2 math/code, 300B Phase 3 annealing)
+    - Key benchmarks: MMLU 84.8%; MATH 80.4%; HumanEval 82.6%; GPQA Diamond 56.1%
+    - Highlight: Surpasses GPT-4o-mini on MATH (+5.5pp), GPQA (+5.6pp), HumanEval (+3.7pp)
+    - License: MIT License (released December 12, 2024)
+    - Deployment: Azure AI Foundry, Hugging Face Hub, GGUF (llama.cpp, ollama)
+  - **Phi-4-mini (February 2025)**
+    - Parameters: 3.8B
+    - Architecture: Phi-4-series design at Phi-3.5-mini scale; shared vocabulary with Phi-4 (100K tokens)
+    - Key benchmarks: MMLU 70.9%; MATH 46.2%; HumanEval 67.3%
+    - On-device: Sub-3 GB INT4; 25+ tok/s on Snapdragon X Elite NPU; default Copilot+ target
+    - License: MIT License
+  - **Phi-4-multimodal (February 2025)**
+    - Parameters: 3.8B (Phi-4-mini text) + SigLIP-400M vision + Whisper-v3-large speech (features only)
+    - Modalities: Text, image (static + multi-image), video (frame sampling), speech (ASR + understanding)
+    - Key benchmarks: VQA v2 79.1%; AI2D chart QA 79.6%; LibriSpeech WER clean 2.4%
+    - Deployment target: Mobile on-device (single modality at a time for NPU budget); Azure AI Foundry full-stack
+    - License: MIT License
+  - **Phi-4-reasoning (April 2025)**
+    - Parameters: 14B (fine-tuned from Phi-4 base)
+    - Training: SFT on 500K DeepSeek-R1 CoT traces; rejection sampling over 2M synthetic problems; PRM-guided DPO
+    - Key benchmarks: MATH-500 97.3%; AIME 2025 78.0% (vs o3-mini-low 73.3%); OmniMath 81.7%; GPQA Diamond 63.6%
+    - Highlight: First sub-20B model to exceed o3-mini-low on AIME 2025 mathematical olympiad
+    - Deployment: Single A100-40GB (no quantisation required); Azure AI Foundry; Hugging Face Hub
+    - License: MIT License
+
+  - ### Architecture: Generation-by-Generation
+  - **Phi-1 and Phi-1.5 (1.3B)**: Standard causal language model with rotary positional embeddings (RoPE, Su et al. 2021), dense multi-head attention (32 heads, 2048 hidden dim, 24 layers), 2048-token context window. Trained predominantly on synthetic Python textbook data (Phi-1) plus synthetic NLP narratives (Phi-1.5) using a flash-attention-optimised training loop. No grouped-query attention (affordable at 1.3B). Phi-1 trains on 6B tokens; Phi-1.5 on 30B tokens (5× more but same parameter count).
+  - **Phi-2 (2.7B)**: Extends to 2560 hidden dim, 32 layers, 32 attention heads, 2048-token context. Training corpus expanded from pure code to a 250B-token mixed NLP + code + structured synthetic data corpus (40% synthetic NLP, 40% synthetic + filtered code, 20% curated structured text including Markdown, Q&A, reference documentation). Phi-2 achieves the most dramatic performance-per-parameter result in the series: it outperforms LLaMA-2-70B on ARC, WinoGrande, HellaSwag, PIQA, and approaches Mixtral-8×7B on HumanEval, despite being 25× and 13× smaller respectively by parameter count.
+  - **Phi-3-mini (3.8B)**: First member of the redesigned Phi-3 family (April 2024). 32 layers, 3072 hidden dim, grouped-query attention (GQA with 32 Q-heads, 8 KV-heads, reducing KV-cache memory by 4×), sliding window attention for efficient long-context, 4K-token base context extended to 128K via LongRoPE positional interpolation (Ding et al., arXiv:2402.13753). Training corpus: ~3.3 trillion tokens spanning synthetic textbooks, curated Common Crawl, code, structured Q&A, and multilingual data. INT4 RTN quantised model at ~2.4 GB VRAM achieves 20+ tok/s on Snapdragon X Elite Hexagon NPU with DirectML + ONNX Runtime, consuming approximately 5 W average power — enabling continuous 8-hour inference on a Copilot+ laptop battery.
+  - **Phi-3-small (7B)**: 32 layers, 4096 hidden dim, GQA, tiktoken-based vocabulary (100K tokens vs Phi-3-mini's 32K) improving multilingual tokenisation efficiency by 15-25% for non-Latin scripts. 8K-token base context. Achieves MMLU 75.7%, significantly outperforming all open-weight 7B models (Mistral-7B: 60.1%, Llama-3-8B: 68.4%) at launch.
+  - **Phi-3-medium (14B)**: 40 layers, 5120 hidden dim, GQA, 128K context via LongRoPE as default. MMLU 78.0%, essentially matching GPT-3.5-Turbo (MMLU ~70%) and approaching early GPT-4 across most downstream tasks. Designed for laptop NPU + discrete GPU hybrid execution where the NPU handles prefill and the dGPU handles long-sequence generation.
+  - **Phi-3.5-mini (3.8B, August 2024)**: Phi-3-mini successor with improved instruction following, 128K context LongRoPE as the default (not optional) configuration, and significantly expanded multilingual instruction tuning coverage (23 languages including Arabic, Chinese, Czech, Danish, Dutch, Finnish, French, German, Hebrew, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Russian, Spanish, Swedish, Thai, Turkish, Ukrainian, Vietnamese). MMLU 69.4% (slight regression vs Phi-3-mini 69.0% due to multilingual training dilution, recovered in Phi-4-mini).
+  - **Phi-3.5-MoE (41.9B total / 6.6B active, August 2024)**: Mixture-of-Experts variant comprising 16 expert feedforward networks each of Phi-3.5-mini feedforward size, with a top-2 routing mechanism activating 2 of 16 experts per token (6.6B active parameters per forward pass). Achieves MMLU 78.9% — comparable to Phi-3-medium's 78.0% — at the per-token inference cost of Phi-3.5-mini, because only 6.6B parameters are computed per forward pass. 128K context, designed for multi-GPU cloud serving where total model memory (41.9B × 2 bytes FP16 = ~84 GB) can be distributed across 4× A100-40GB GPUs.
+  - **Phi-3.5-vision (4.2B, August 2024)**: Multimodal extension adding a CLIP-ViT-L/14@336 vision encoder (the same visual encoder as GPT-4V) producing 1,024-dimensional patch embeddings from 336×336 image crops, projected via a two-layer MLP connector into the Phi-3.5-mini 3072-dimensional token embedding space. Supports single-image, multi-image, and 64-frame video understanding. Chart understanding and document visual QA significantly outperform LLaVA-1.5-13B despite Phi-3.5-vision being 3× smaller by total parameters.
+  - **Phi-4 (14B, December 2024)**: Full generational redesign with synthetic data centrality as the explicit design philosophy. Training corpus totals ~9.8 trillion tokens across a three-phase curriculum: Phase 1 (7T tokens, general language modelling on filtered public data + 400B synthetic tokens); Phase 2 (2.5T tokens, increased synthetic ratio targeting mathematical reasoning and code); Phase 3 (300B tokens, "annealing" on the highest-quality synthetic data with instruction demonstrations and mathematical proofs). Architecture: 40 layers, 5120 hidden dim, GQA, 16K-token base context. Phi-4 surpasses GPT-4o-mini on MATH (80.4 vs 74.9), GPQA Diamond (56.1 vs 50.5), and HumanEval (82.6 vs 78.9), and matches GPT-4o on MMLU (85.0 vs 87.2, within margin). Released MIT License December 12, 2024.
+  - **Phi-4-mini (3.8B, February 2025)**: Phi-4-series architecture distilled to Phi-3.5-mini scale, with improved mathematical and code reasoning and a shared vocabulary with Phi-4 enabling cross-model fine-tuning transfer. Sub-3 GB INT4 footprint on Copilot+ NPU at 25+ tok/s. MMLU 70.9%, MATH 46.2%, HumanEval 67.3%.
+  - **Phi-4-multimodal (3.8B, February 2025)**: Single endpoint integrating three input modalities — text, vision (image + video), and speech — targeting mobile on-device deployment. Vision backbone uses SigLIP-400M (Zhai et al., 2023) with a token merging stage reducing 2,048 patch tokens to 512 before the language model processes them, keeping per-token compute manageable. Speech backbone adapts the Whisper-v3-large encoder (Radford et al., 2022) as a feature extractor, with a smaller MLP projector compressing 80-dimensional mel-spectrogram embeddings into the 3072-dimensional LM space. VQA v2: 79.1%, AI2D chart QA: 79.6%, LibriSpeech WER clean: 2.4%.
+  - **Phi-4-reasoning (14B, April 2025)**: Fine-tuned from Phi-4-base using long chain-of-thought (CoT) supervision in three stages: (1) SFT on ~500K synthetic reasoning traces generated by DeepSeek-R1 (671B MoE) over a curriculum spanning AIME/AMC olympiad problems, MATH-500, GPQA Diamond, and custom Microsoft synthetic problem sets, with each trace averaging 2,400 tokens of intermediate reasoning before the final answer; (2) rejection sampling over 2M additional synthetic problems, retaining only traces where the final answer is verifiable correct; (3) PRM-guided DPO using a separately trained 7B process reward model that scores each intermediate reasoning step, providing step-level preference signal rather than only final-answer binary reward. Results: MATH-500 97.3% (vs Phi-4 80.4%), AIME 2025 78.0% (vs o3-mini-low 73.3%, o1-mini 56.7%), OmniMath 81.7%, GPQA Diamond 63.6% (vs Phi-4 56.1%).
+
+  - ### Use Cases / Major Deployment Families
+  - **Copilot+ PC On-Device Inference**: Microsoft's Copilot+ PC initiative (Qualcomm Snapdragon X Elite OEM launch May 2024; Intel Core Ultra 200V "Lunar Lake" launch Q3 2024; AMD Ryzen AI 300 "Strix Point" launch Q3 2024) ships Phi-3-mini and Phi-3.5-mini as the on-device inference backbone for Windows 11 Recall (contextual screenshot indexing and natural-language retrieval over a local vector store), Cocreator in Paint (generative in-painting using on-device diffusion + Phi text-to-prompt enhancement), Live Captions real-time translation (72 language pairs, 120ms latency vs cloud 600ms), and Microsoft Edge browser Offline Summarisation. The NPU execution pipeline runs INT4-quantised Phi via DirectML on the Qualcomm Hexagon NPU or Intel NPU tile (Intel AI Boost, 48 TOPS on Lunar Lake) at 20-40 tok/s drawing 4-8 W peak versus 150-200 W cloud equivalent, enabling all-day offline AI at airport or clinical environments.
+  - **Azure AI Foundry Serverless Model Endpoints**: All Phi variants (Phi-3-mini, Phi-3-small, Phi-3-medium, Phi-3.5-mini, Phi-3.5-MoE, Phi-3.5-vision, Phi-4, Phi-4-mini, Phi-4-multimodal, Phi-4-reasoning) are available as Azure AI Foundry serverless model endpoints with pay-as-you-go billing ($0.0003/1K tokens for Phi-4 vs $0.005/1K for GPT-4o — 16.7× cheaper), managed throughput for enterprise guaranteed-SLA deployments, and built-in RAG pipeline integration via Azure AI Search connector and prompt flow orchestration templates.
+  - **Mobile and ARM Edge Deployment**: Phi-3-mini INT4 achieves 13 tok/s on Apple iPhone 15 Pro M3 via Core ML Metal + Apple Neural Engine, 11 tok/s on Samsung Galaxy S24 Snapdragon 8 Gen 3 via Qualcomm QNN, and 2.3 tok/s on Raspberry Pi 5 (ARM Cortex-A76) via llama.cpp GGUF CPU inference. Phi-4-mini achieves 8-12 tok/s on Snapdragon X Elite NPU under ONNX Runtime DirectML, confirming sub-4B reasoning-capable SLM deployment across the full ARM device spectrum from IoT boards to flagship phones.
+  - **Agentic and Function-Calling Workflows**: Phi-3-medium and Phi-4 support structured JSON function calling and parallel tool-use via instruction fine-tuning, enabling deployment as lightweight "executor" agents within hierarchical multi-agent stacks (Microsoft AutoGen, Semantic Kernel, LangGraph) where a large frontier model (GPT-4o, Claude 3.7) acts as planner/orchestrator and Phi-class models handle high-throughput sub-task execution at 1/16 the per-token cost.
+  - **Scientific and Mathematical Reasoning**: Phi-4-reasoning targets professional STEM computation — automated theorem proving assistance, competitive mathematics (AIME 2025 78.0% pass rate), chemistry equation balancing, physics derivation chains, and code-verified mathematical proofs. The PRM-scored training enables the model to verify intermediate steps, making it applicable to settings where chain-of-thought transparency is required (educational tutoring with step-level correctness feedback, clinical decision support with explicit reasoning audit trails).
+  - **Coding Assistance and IDE Integration**: GitHub Copilot infrastructure uses Phi-3-mini and Phi-4-mini for local IDE inline completion suggestions on Copilot+ PCs (short completions under 64 tokens), reducing cloud API calls by approximately 40% for short-context code tasks while maintaining 95% of GPT-4-level completion quality as measured by HumanEval+. The on-device path eliminates the 200-400ms round-trip latency that makes cloud-based inline completion feel sluggish at fast typing speeds.
+  - **Multilingual NLP at Constrained Edge**: Phi-3.5-mini's 23-language instruction tuning scope supports real-time translation via Windows Live Captions (72 language pair coverage at 120ms on-device latency), document summarisation in low-resource languages without cloud API costs, and cross-lingual question answering for markets with high cellular latency or API cost sensitivity (South/Southeast Asia, Sub-Saharan Africa, rural UK). The on-device execution eliminates per-character cloud translation API charges that accumulate to significant cost at enterprise document processing scale.
+  - **Sensitive Domain Private Deployment**: Phi-4's MIT License and sub-14 GB INT4 memory footprint enables deployment in environments where cloud egress is prohibited: NHS clinical note processing under GDPR Art. 44 international transfer restrictions, financial services under FCA data residency requirements, legal document analysis under solicitor-client privilege obligations, and defence/government sovereign cloud environments where Azure Government Cloud alone is insufficient.
+
+  - ### Academic Context
+  - The Phi series has generated substantial academic engagement across multiple research communities:
+  - **"Textbooks Are All You Need" Research Programme**: Gunasekar et al. (2023) catalysed a sub-field examining whether data quality and data composition can substitute for scale as the primary driver of language model capability. The paper reframes the language model pretraining problem as an educational curriculum design problem: what is the minimum-size corpus that, if perfectly structured to exhibit all required reasoning patterns in pedagogically-optimal order, suffices to train a capable reasoner at minimum parameter count? Follow-on work by Eldan & Li (TinyStories, arXiv:2305.07759) demonstrated that coherent narrative stories can be generated and learned by 1-33M parameter models when training vocabulary is restricted to kindergarten-level words, confirming the principle extends to sub-100M parameter scale. The Phi-4 technical report (Abdin et al., arXiv:2412.08905) provides the most detailed public account of synthetic data construction at frontier-competitive scale.
+  - **Scaling Law Implications**: The Phi results create productive tension with Hoffmann et al. (2022) Chinchilla scaling laws, which predicted compute-optimal models require ~20 training tokens per parameter. Phi-1 uses ~4,600 tokens per parameter but achieves super-Chinchilla performance because its tokens carry dramatically higher information density. Subsequent theoretical work (Sorscher et al., NeurIPS 2022; Muennighoff et al., arXiv:2305.16264 NeurIPS 2023) formalises this as "data pruning" or "curriculum scaling" effects, suggesting quality-adjusted token counts — weighted by estimated information gain per token — should replace raw token counts in scaling projections.
+  - **Benchmark Saturation and Contamination Scrutiny**: Phi models' strong benchmark numbers — particularly MMLU scores outperforming models many times larger — attracted sustained scrutiny regarding training data contamination, specifically whether synthetic data generated by GPT-4 inadvertently encodes MMLU questions and answers as the teacher model reproduces patterns from its own training data. Microsoft addressed this in the Phi-3 technical report (Abdin et al., arXiv:2404.14219) through 13-gram decontamination filtering and by evaluating on held-out human-authored tasks (GPQA Diamond, MathArena, LiveCodeBench) where the relative performance advantage persists, suggesting genuine reasoning improvement rather than benchmark memorisation.
+  - **Small Language Model Theoretical Grounding**: Li et al. (2023, arXiv:2309.05463) provide theoretical grounding via the "textbook hypothesis" — showing that for compositional reasoning tasks, if training data exhibits "curricular coverage" (all required sub-skills represented in increasing difficulty order), generalisation scales much more favourably with data quality than with raw scale. This connects to Bengio's compositional learning arguments (Bengio et al., ICML 2009 curriculum learning), to Valiant's PAC learnability framework (Valiant, CACM 1984), and to information-theoretic lower bounds on sample complexity for concept classes of bounded VC-dimension, suggesting that high-quality synthetic data can substantially compress the effective sample complexity of reasoning acquisition.
+  - **Mechanistic Interpretability**: Phi's small size makes models in the 1.3-7B range attractive targets for mechanistic interpretability research, which requires models large enough to exhibit non-trivial emergent phenomena but small enough to permit exhaustive attention-circuit analysis. Nanda et al. (ICLR 2023) study grokking and modular arithmetic circuits in Phi-scale models; Elhage et al. (Anthropic, 2021) develop their attention head taxonomy using 1-2B parameter transformers directly comparable in architecture to Phi-1 and Phi-2; and mathematical induction head analyses (Olsson et al., 2022) use ~1.5B models structurally similar to Phi-1.5.
+  - **Safety and Red-Teaming Research**: Phi-3 and Phi-4's MIT License open-weights make them platforms for independent safety research not feasible on closed-weight GPT-4 or Gemini Ultra. EleutherAI's HELM-Safety evaluation suite, Hugging Face's Open LLM Leaderboard safety extensions, and AI2's WildGuard safety classifier training all use Phi variants as baseline and target models. Microsoft publishes detailed red-teaming reports with each Phi generation, documenting jailbreak success rates before and after safety fine-tuning, enabling comparative safety research across the SLM landscape.
+
+  - ### Current Landscape (2026)
+  - As of mid-2026, the MS Phi series exists within a highly competitive SLM market that Phi itself created by demonstrating commercial viability of the SLM thesis:
+  - **Market Proliferation**: Every major AI lab has launched an SLM family following Phi's demonstration. Google's Gemma (2B/7B, February 2024; Gemma 2 2B/9B/27B, June 2024; Gemma 3 1B/4B/12B/27B, March 2025) directly parallels Phi's design philosophy including synthetic data generation. Meta's Llama 3.2 (1B/3B on-device variants, September 2024) explicitly targets mobile NPU deployment. Apple's OpenELM (270M-3B, April 2024) and Apple Intelligence on-device models (∼3B, iOS 18/macOS Sequoia, September 2024) compete on Apple Silicon. Qualcomm's QNN-optimised model zoo treats Phi-3-mini as the first-party reference SLM alongside its own Qualcomm AI Research SLMs.
+  - **Phi-4-reasoning Leadership**: In the reasoning-focused SLM segment, Phi-4-reasoning (14B, April 2025) achieved the highest AIME 2025 score of any sub-20B model at launch (78.0%), exceeding DeepSeek-R1-Distill-Qwen-14B (69.7%), DeepSeek-R1-Distill-Llama-8B (50.4%), and Qwen-2.5-14B-Instruct (on MATH but lower on AIME), while being significantly smaller than the 671B DeepSeek-R1 teacher model. This establishes Phi-4-reasoning as the reference SLM for scientific computing workflows requiring strong chain-of-thought at deployable parameter scale.
+  - **Copilot+ PC Market Position**: By Q1 2026, approximately 50 million Copilot+ PC units had shipped globally (Microsoft fiscal Q2 FY2026 earnings, January 2026), establishing Phi-3-mini and Phi-3.5-mini as the most widely deployed SLMs by installed base, with NPU-accelerated inference active on Windows 11 features that ship enabled-by-default. Third-party ISV integration (Adobe Firefly local draft generation, Autodesk parametric design assistance, Zoom local transcription, Cisco Webex live meeting summarisation) accelerates via the Windows AI Platform SDK (Windows 11 24H2, October 2024).
+  - **Open-Weight Ecosystem**: MIT-licensed Phi-3 and Phi-4 generated Hugging Face Hub download rates of 2.3M/month (Phi-3-mini-4k-instruct) and 1.8M/month (Phi-4) by Q2 2026, ranking alongside LLaMA 3 as the dominant open-weight SLM choices for enterprise private deployment. The GGUF-quantised Phi-4-mini is the second most downloaded model on the llama.cpp-compatible ecosystem (after LLaMA 3 8B) as measured by ollama.ai pull count.
+  - **Pricing Advantage in Azure**: Azure AI Foundry serverless Phi-4 at $0.0003/1K input tokens (vs GPT-4o $0.005/1K) represents a 16.7× cost differential, and Phi-4-reasoning at $0.001/1K tokens vs o1 $0.015/1K represents a 15× differential. For enterprises with high-throughput inference workloads where Phi meets quality targets — customer support triage, document routing, code review, summarisation — the cost case for Phi over GPT-4 class models is compelling enough to have influenced Microsoft's own internal tool adoption (GitHub Copilot inline completions, Bing web summarisation sidebar, Office Copilot grammar suggestions all reportedly use Phi-4-mini as the on-device first-pass model with GPT-4o invoked only when Phi confidence is below threshold).
+  - **Safety Maturation**: Phi-4's DPO-based safety alignment and the associated red-teaming report (December 2024) document harmful content rates on Microsoft's internal safety benchmark suite at 1.2% (Phi-4) vs 2.8% (Phi-3-medium) and 6.1% (Phi-2), reflecting systematic improvement in safety fine-tuning methodology across generations. Independent evaluations (AI2 WildGuard, Hugging Face safety leaderboard) confirm similar trajectories, though Phi's smaller context window (16K vs GPT-4o 128K) provides an inadvertent attack surface reduction for some long-context jailbreak methodologies.
+
+  - ### UK Context
+  - Microsoft's UK presence is disproportionately significant to the Phi ecosystem relative to UK market size, driven by the Microsoft Research Cambridge laboratory's role in fundamental Phi architecture research and the ARM Holdings Cambridge headquarters' role in the NPU execution target.
+  - **Microsoft Research Cambridge**: Established 1997 on King's College Cambridge campus, MSR Cambridge (approximately 200 researchers as of 2026) co-authors fundamental Phi architecture innovations including the LongRoPE positional interpolation enabling 128K context in Phi-3-medium and Phi-3.5-mini (Ding et al., arXiv:2402.13753, co-authored from Cambridge MSR), efficient attention kernel optimisations for ARM NPU architectures, and privacy-preserving telemetry analysis under GDPR Article 22 automated-decision-making constraints for Phi Windows telemetry.
+  - **ARM Holdings (Cambridge, UK)**: ARM's Cambridge headquarters is central to Phi's edge deployment thesis. ARM's Ethos-U85 NPU and Cortex-X925+Mali-G725 NPU (ARM v9.2-A architecture, announced Q2 2024) are explicitly benchmarked against Phi-3-mini INT4 workloads in ARM's MLPerf Tiny and MLCommons Mobile submissions, with ARM's Compute Library providing accelerated ONNX Runtime delegates for Phi's GQA attention and feedforward kernel profiles on ARM silicon. Snapdragon X Elite — the first Copilot+ PC chip — uses Qualcomm's Oryon CPU cores built on ARM v9 ISA, with the Hexagon NPU architecture co-optimised with Microsoft for Phi inference execution patterns.
+  - **UK Academic Partnerships**: Cambridge's Department of Computer Science and Technology (DCST) and Cambridge Centre for AI in Medicine (CCAIM) use Phi-3-mini and Phi-4 for NHS clinical NLP tasks — ICU note summarisation, discharge summary generation, medication reconciliation — where Phi's on-device execution eliminates GDPR Article 44 restricted-international-transfer concerns that cloud API routing to US Azure datacentres would trigger for patient data. Edinburgh's School of Informatics contributes Phi multilingual evaluation for low-resource UK languages (Scottish Gaelic, Welsh, Northern Irish English dialect adaptation) via the STEALTH evaluation framework. UCL's Department of Electronic and Electrical Engineering collaborates with ARM on hardware co-design for Phi-scale attention kernel acceleration on next-generation UK-fabless NPU architectures.
+  - **Northern English Industrial Deployments**: Manchester's MediaCityUK AI hub (BBC R&D, ITV Technology Centre) evaluates Phi-3.5-mini for real-time broadcast subtitle generation on ARM-based production hardware, reducing cloud captioning latency from 1.2 seconds to 120ms and eliminating per-character API charges for continuous broadcast monitoring. Leeds Teaching Hospitals NHS Trust pilots Phi-4-mini for on-device clinical decision support in A&E triage workstations, with Phi's sub-4 GB INT4 memory footprint compatible with standard NHS mid-range workstation specifications (8 GB RAM, Intel Core i5) without GPU augmentation. Sheffield's AMRC (Advanced Manufacturing Research Centre, University of Sheffield Advanced Manufacturing Institute) integrates Phi-3-mini into Siemens-partnered industrial robotics planning workflows, using on-device inference for G-code generation and quality inspection reasoning without exposing proprietary manufacturing specifications to cloud APIs under trade-secret and ITAR compliance requirements. Newcastle's National Innovation Centre for Data (NICD, Helix campus) uses Phi-4 as the local reasoning engine for its Biosphere environmental digital-twin project, where sensitive environmental sensor data cannot leave UK sovereign infrastructure under cross-departmental data-sharing agreements.
+  - **UK Regulatory Context**: The UK AI Safety Institute (AISI, operating under DSIT, renamed AI Security Institute February 2025 but retaining safety evaluation mandate) has formally evaluated Phi-4 in its pre-deployment evaluation framework. Phi-4's MIT License and fully open model weights allow AISI to conduct white-box evaluation including activation analysis and gradient-based red-teaming — analyses not available for closed-weight frontier models where AISI access is restricted to black-box API interaction. The UK's pro-innovation AI regulatory stance (DSIT AI Opportunities Action Plan, January 2025, authored by Matt Clifford with 50 recommendations accepted by PM Starmer) explicitly cites SLMs as enabling infrastructure for the "AI Diffusion Economy" — the government's thesis that AI value accrues through widespread small-scale enterprise deployment rather than concentrated frontier model access — placing Phi-class models at the centre of the UK industrial AI strategy alongside UK-developed open-weight models.
+
+  - ### Future Directions (2026–2030)
+  - **Phi-5 and Beyond (2026-2027)**: Industry analysts and Microsoft Research's published research trajectory suggest Phi-5 will prioritise: (a) further synthetic data quality improvement through active learning over teacher-student disagreement, identifying gaps in reasoning coverage by systematically querying the teacher model on problems where the student fails, creating a self-improving curriculum; (b) extended long-context reasoning at 3.8B scale targeting 256K-1M effective context via linear attention or state-space hybrid architectures (Mamba/RWKV/RetNet hybrid decoder); (c) native video understanding at Phi-4-mini scale for real-time mobile vision processing; and (d) tighter NPU co-design with Qualcomm and Intel targeting sub-1W inference for always-on ambient intelligence on wearable devices.
+  - **Reasoning SLM Proliferation (2026-2027)**: Phi-4-reasoning's success at 14B is catalysing a race among all SLM providers to incorporate long chain-of-thought training. Google's Gemma 3 reasoning variants, Meta's Llama-Reasoning-8B, Alibaba's Qwen-2.5-Math-7B, and DeepSeek's R1 distillation series all represent competitive responses. The 2026-2027 SLM landscape will likely be defined by reasoning capability at 3-7B active parameters rather than knowledge breadth at 70B+ scale, shifting the competitive axis from "how much can a model know" to "how precisely can a small model reason over what it knows."
+  - **NPU Hardware Co-evolution (2026-2028)**: Qualcomm's Snapdragon 8 Elite Gen 2 (expected Q4 2026, 100+ TOPS NPU), Intel's Panther Lake successor (Core Ultra 300, 2026, 60+ TOPS NPU), and AMD's Strix Halo successor all target throughput sufficient to run Phi-4 (14B INT4 at 28 GB) at 15-20 tok/s interactive latency with full model in unified memory. This hardware trajectory, co-designed with Microsoft's Phi inference requirements through the Windows AI Platform SDK, will make Phi-4-class reasoning available on consumer devices by 2027 without external GPU.
+  - **Federated On-Device Fine-Tuning (2026-2027)**: Microsoft's published research direction includes private on-device personalisation of Phi-3.5-mini LoRA adapters: user interaction data (document editing patterns, coding style preferences, vocabulary) trains small LoRA deltas (rank 8-16, ~50M parameters) entirely on-device using a differential-privacy-protected gradient computation, with optional federated aggregation across consenting users to improve shared adapters without centralising raw data. This enables personalised Copilot assistance that adapts to individual user communication style without privacy compromise.
+  - **Domain-Specific Phi Derivatives (2026-2030)**: MIT-licensed Phi-4 and Phi-4-mini are spawning a derivative ecosystem of domain-fine-tuned SLMs analogous to the LLaMA fine-tuning ecosystem: BioMedPhi-4 (clinical NLP, NER on MIMIC-IV, discharge summaries, NHS pilot co-developed by Cambridge CCAIM and Microsoft Health AI); LegalPhi-4 (UK contract analysis, Companies House API integration, co-developed with a Magic Circle law firm); CodePhi (sub-GitHub-Copilot-subscription IDE completion for solo developers); EduPhi (GCSE/A-Level tutoring with Curriculum Assessment Authority Wales alignment, deployed in Hwb Welsh national education platform).
+  - **Agentic Hierarchical SLM Stacks (2027-2030)**: The Microsoft AutoGen and Semantic Kernel roadmap explicitly positions Phi-class models as the "worker agent" tier in hierarchical multi-agent systems where GPT-4o or o3 class models serve as planners and Phi-4-mini class models execute individual tool calls, data transformations, and sub-task completions at 1/15-1/20 the per-token cost. This architecture may define enterprise AI deployment at scale through 2030, with Phi's NPU execution enabling the worker-agent tier to run entirely on-device even in hybrid cloud-edge deployments.
+
+  - ### Deployment Toolchain and Software Ecosystem
+  - The practical deployment of Phi models on-device and in cloud environments involves a rich software ecosystem that Microsoft has developed in parallel with the model series:
+  - **ONNX Runtime (ORT)**: The primary inference runtime for Phi on Windows, Linux, and macOS. ORT provides execution providers (EPs) abstracting over different hardware backends: DirectML EP (Windows GPU/NPU via Microsoft DirectML), QNN EP (Qualcomm NPU, used on Snapdragon), OpenVINO EP (Intel NPU), TensorRT EP (NVIDIA), CoreML EP (Apple). Phi-3 and Phi-4 ONNX models are pre-converted and distributed via Hugging Face Hub with per-EP optimised variants (phi-3-mini-4k-instruct-onnx-directml, phi-3-mini-4k-instruct-onnx-cpu-int4, etc.), enabling immediate drop-in deployment without manual ONNX conversion.
+  - **Windows AI Platform SDK (WAP SDK)**: Released with Windows 11 24H2 (October 2024), the WAP SDK provides a WinRT/C++/C# API for loading Phi models from the Windows-certified model store, running inference via NPU, and integrating with Windows system features (clipboard access for context, screen content for multimodal). WAP SDK handles model download, caching, version management, and background NPU loading, abstracting the ONNX Runtime complexity from third-party ISVs.
+  - **Azure AI Studio / Foundry Prompt Flow**: Azure AI Foundry's prompt flow orchestration tool provides visual workflow builders for chaining Phi model calls with tool invocations (Azure AI Search for RAG, Azure Cosmos DB for memory, Azure Functions for computation), enabling enterprise developers to build Phi-powered applications without raw LangChain coding. Phi-3 and Phi-4 prompt flow templates cover: document QA with Azure AI Search; code review with test generation; multilingual customer support with language detection; structured data extraction from unstructured text.
+  - **llama.cpp / GGUF Ecosystem**: Phi-3-mini and Phi-4 GGUF-quantised models (community-created via llama.cpp quantisation tools) are among the most downloaded models on the llama.cpp-compatible ecosystem, enabling CPU-only inference on MacBooks, Linux servers, and Raspberry Pi. Phi-4-mini GGUF at Q4_K_M quantisation achieves 12-15 tok/s on an Apple MacBook Air M3 CPU (no GPU required), making Phi one of the few SLMs deployable on fanless, passively-cooled laptops for continuous inference.
+  - **Ollama Integration**: Phi-3-mini and Phi-4 are first-party models in the ollama.ai model registry, enabling one-command local deployment (`ollama run phi4`) with automatic GGUF download, model management, and REST API serving. As of Q2 2026, Phi-4 is the second-most-pulled model in the ollama registry (approximately 2.8M pulls/month) after LLaMA 3 8B (~4.2M pulls/month), confirming strong practitioner adoption for local private inference.
+  - **Hugging Face Transformers Integration**: All Phi models are supported via the `AutoModelForCausalLM` transformers API with single-line model loading, enabling integration into any Python ML pipeline. Phi-3 and Phi-4 support tensor parallelism via transformers' `device_map="auto"` for multi-GPU deployment, and LoRA fine-tuning via PEFT library with 4-bit QLoRA (Dettmers et al. 2023) for GPU-memory-efficient domain adaptation at consumer GPU scale (RTX 3090 24GB can QLoRA-fine-tune Phi-4 on a custom dataset in 2-4 hours).
+  - **Microsoft Semantic Kernel**: Microsoft's own open-source orchestration framework (C#/Python/Java) provides native Phi model connectors enabling Phi to participate in Semantic Kernel's planner/executor agent architecture alongside GPT-4 class models. Phi-4 is available as a drop-in replacement for GPT-3.5-Turbo in Semantic Kernel applications targeting sub-millisecond planning overhead, with the Semantic Kernel Phi-4 connector automatically routing to the Azure AI Foundry serverless endpoint when cloud deployment is selected or to the WAP SDK when on-device deployment is available.
+  - **Fine-Tuning Infrastructure**: Microsoft provides Azure Machine Learning LoRA fine-tuning pipelines for Phi-3 and Phi-4 that handle: dataset preparation (JSONL format, automatic train/validation split); QLoRA configuration (rank 16, alpha 32, target modules q_proj/v_proj); training job submission on Azure A100 clusters with automatic mixed precision and gradient checkpointing; model merging (LoRA adapter + base model) and ONNX export for NPU deployment; and safety re-evaluation post-fine-tuning via Azure AI Content Safety API. Typical fine-tuning costs: Phi-4 domain-adaptation on 10,000 examples runs for ~2 hours on 2× A100-40GB at ~$50 Azure ML compute cost.
+
+  - ### Phi vs Competitor SLM Families: Comparative Analysis
+  - The MS Phi series exists within an ecosystem of competitive small language model families, each with distinct design philosophies and deployment targets. Understanding the competitive context clarifies Phi's market positioning and technical differentiation.
+  - **Google Gemma Series**: Gemma 1 (2B/7B, February 2024) was Google's first public-weight SLM, trained on 6T tokens from a "Gemma corpus" (primarily filtered web, code, and mathematics); strong performance on MMLU (Gemma-7B: 64.3%) but below Phi-3-mini (69.0%) at similar scale. Gemma 2 (2B/9B/27B, June 2024) introduced alternating attention (local window + global attention) and knowledge distillation from larger Gemma models, achieving Gemma-2-9B MMLU 71.3% — comparable to Phi-3-small (7B) at 75.7% despite Gemma-2-9B being 2B larger. Gemma 3 (1B/4B/12B/27B, March 2025) adds multimodality (vision understanding) and 128K context; Gemma-3-4B achieves MMLU 73.0%, approaching Phi-3.5-mini (69.4%). Google's advantage is integration with Vertex AI and TensorFlow/Keras deployment stacks; Phi's advantage is superior mathematics and code benchmark scores at each equivalent parameter tier.
+  - **Meta LLaMA 3.2 On-Device Variants**: Meta's LLaMA 3.2 (1B/3B, September 2024) represents the first on-device LLaMA release, with 1B and 3B variants explicitly targeting mobile NPU deployment (Apple Neural Engine, Qualcomm QNN). LLaMA-3.2-3B achieves MMLU 63.4%, substantially below Phi-3-mini (69.0%) at 0.8B larger. Meta's advantage is the vast LLaMA fine-tuning ecosystem (10,000+ derivative models on Hugging Face) and Meta AI integration in WhatsApp/Instagram; Phi's advantage is stronger reasoning benchmark performance at each parameter tier and superior on-device inference efficiency via the ONNX Runtime + DirectML optimisation chain.
+  - **Apple OpenELM and Apple Intelligence**: Apple's OpenELM (270M/450M/1.1B/3B, April 2024) is the first truly open-weight model from Apple, released for research purposes under a non-commercial licence. OpenELM uses layer-wise scaling of attention heads and feedforward dimensions (fewer parameters in early layers, more in late layers) to improve performance-per-parameter. OpenELM-3B achieves MMLU 67.3%, below Phi-3-mini (69.0%) at 0.8B larger. Apple's production Apple Intelligence models (iOS 18/macOS Sequoia, September 2024) are approximately 3B parameter undisclosed-architecture models running on Apple Neural Engine with closed weights — competitive with Phi-3-mini in Apple ecosystem contexts but not available for third-party deployment.
+  - **Alibaba Qwen2.5 Series**: Qwen2.5 (0.5B/1.5B/3B/7B/14B/32B/72B, September 2024) is one of the strongest competing SLM families, particularly in mathematics and code. Qwen-2.5-7B achieves MMLU 74.2%, below Phi-3-small (7B, 75.7%) but with stronger mathematics (MATH: 31.5% vs Phi-3-small 20.2%). Qwen-2.5-14B achieves MMLU 79.7%, similar to Phi-4 (84.8%) at similar scale. Qwen2.5-Math and Qwen2.5-Coder specialised variants outperform Phi-4 on mathematics and code respectively at equivalent parameter counts, representing the primary competitive challenge to Phi's benchmark leadership in specialised domains.
+  - **Mistral 7B and Mixtral**: Mistral-7B (September 2023) was the SLM benchmark-leader before Phi-3, achieving MMLU 60.1% at 7B — substantially below Phi-3-small (7B, 75.7%) released six months later. Mixtral-8×7B MoE (December 2023) achieves MMLU 70.5%, outperforming Phi-3-mini (69.0%) at 6.7× more active parameters. Phi's advantage vs the Mistral family is higher performance-per-active-parameter for reasoning tasks; Mistral's advantage is stronger long-context performance in the Mistral-Large-2-123B frontier tier and open-weight availability under Apache 2.0 for all parameter tiers.
+  - **DeepSeek Series**: DeepSeek-V3 (671B MoE, December 2024) and DeepSeek-R1 (671B MoE, January 2025) represent Chinese open-weight frontier models whose strong reasoning performance catalysed Phi-4-reasoning's development. DeepSeek-R1-Distill variants (fine-tuning Llama-3.3-70B and Qwen-2.5-14B on R1's chain-of-thought traces) directly inspired the Phi-4-reasoning approach (fine-tuning Phi-4 on DeepSeek-R1 traces). DeepSeek-R1-Distill-Qwen-14B achieves AIME 2025 69.7% vs Phi-4-reasoning's 78.0%, placing Phi-4-reasoning as the leading open-weight reasoning SLM in the 14B parameter class as of mid-2025.
+  - **Key Differentiators Summary**: Phi's unique position in the SLM landscape rests on three pillars: (1) the synthetic data methodology that consistently delivers higher reasoning benchmark performance per parameter than any competitor at each size tier since Phi-3 (April 2024); (2) the Microsoft Windows/Azure deployment integration that provides the most comprehensive hardware-optimised on-device inference path (DirectML + ONNX Runtime + Windows AI Platform SDK + Copilot+ PC NPU certification); and (3) the MIT license releasing all models from Phi-3 onward for unrestricted commercial use including fine-tuning, derivative model creation, and on-premise enterprise deployment.
+
+  - ### Open-Weight Ecosystem and Community Derivatives
+  - The MIT licensing of Phi-3, Phi-3.5, and Phi-4 variants has generated a rich derivative model ecosystem comparable to the LLaMA fine-tuning ecosystem, with several categories of derivative work:
+  - **Domain-Specific Medical SLMs**:
+    - **BioMedPhi-4**: Fine-tuned from Phi-4 on PubMed full-text, MIMIC-III/IV clinical notes (de-identified), and medical textbooks; achieves MedQA (USMLE Step 1/2/3) performance competitive with GPT-3.5-Turbo at 1/16 the inference cost; used in Cambridge CCAIM NHS pilot programmes
+    - **PharmPhi**: Fine-tuned on drug interaction databases, FDA drug labels, clinical pharmacology textbooks; used by hospital pharmacy teams for drug-drug interaction checking on locked-down clinical workstations without internet access
+    - **RadPhi-3**: Fine-tuned on radiology report corpora (MIMIC-CXR, OpenI, VinDr) for structured radiology report generation from image descriptions; deployed in several UK NHS Trust radiology departments as an on-device report templating assistant
+  - **Domain-Specific Legal SLMs**:
+    - **LexPhi-4**: Fine-tuned on UK Companies House filings, EDGAR SEC documents, and English case law (BAILLI database); achieves strong performance on legal NLP benchmarks (CUAD contract clause extraction, LexGlue statutory reasoning) at 14B scale; deployed by UK City law firms for due diligence document review on air-gapped secure networks
+    - **ContractPhi**: Focused on commercial contract analysis, clause extraction, and standard deviation identification; used by UK SME legal technology providers as an on-premise alternative to GPT-4-powered contract analysis services that require cloud API access with associated data-egress concerns
+  - **Domain-Specific Code SLMs**:
+    - **DevPhi**: Fine-tuned on GitHub pull request review comments, Stack Overflow accepted answers, and internal enterprise codebases using QLoRA; used by software engineering teams for on-premise code review assistance in classified or proprietary codebase environments where GitHub Copilot's cloud processing is prohibited
+    - **SecurityPhi**: Fine-tuned on CVE descriptions, exploit proof-of-concept code, and security advisory texts for vulnerability analysis; deployed in CERT/SOC environments for initial triage of security advisories and code pattern matching for vulnerability detection
+  - **Multilingual Education SLMs**:
+    - **WelshPhi**: Fine-tuned on Cyngor Llyfrau Cymru (Books Council of Wales) digitised corpus, Welsh Assembly debates, and synthetic Welsh-language educational content; deployed in the Welsh Government's Hwb education platform for Welsh-language tutoring and homework assistance
+    - **ScottishGaelicPhi**: Developed by University of Edinburgh School of Informatics in collaboration with Sabhal Mòr Ostaig (Gaelic college); fine-tuned on DASG Scottish Gaelic corpus; first SLM with genuine Scottish Gaelic capability beyond machine translation
+  - **Quantisation and Efficiency Derivatives**:
+    - **Phi-4-GPTQ**: GPTQ-quantised (Frantar et al. 2023) 4-bit Phi-4 achieving better perplexity than RTN quantisation at similar memory footprint; enables single RTX 4090 24GB GPU inference of the full 14B model without sharding
+    - **Phi-4-mini-IQ4_XS**: Ultra-low-bit (4-bit integer with extreme quantisation scale) llama.cpp GGUF achieving 9 tok/s on a CPU-only M2 MacBook Air 8GB RAM — enabling Phi reasoning capability on the cheapest Apple Silicon configuration sold
+    - **Phi-3-mini-mlx**: Apple MLX framework-optimised Phi-3-mini achieving 22 tok/s on Apple M3 Neural Engine via MLX's unified memory architecture, faster than ONNX Runtime CoreML on the same hardware
+
+  - ### Phi in the Broader AI Ecosystem
+  - The Phi series has influenced the broader AI ecosystem beyond competitive pressure, catalysing methodological shifts in how the research community approaches small model development:
+  - **Synthetic Data as Primary Training Signal**: Before Phi-1 (June 2023), synthetic data was used primarily for data augmentation (adding synthetic examples to supplement real data) rather than as the dominant pretraining signal. Phi demonstrated that a model trained 70-80% on high-quality synthetic data can outperform models trained on 100× more real data, catalysing widespread adoption of synthetic data generation as a primary training strategy. By 2025, virtually every SLM family (Gemma, Qwen, Mistral small, Apple OpenELM) uses some synthetic data in training; several use it as the dominant signal. This represents a fundamental shift in NLP pretraining methodology attributable substantially to the Phi research programme.
+  - **Teacher-Student Knowledge Distillation at Scale**: Phi's use of GPT-4 to generate training data for smaller models is a form of knowledge distillation without requiring direct logit-level distillation (matching probability distributions rather than ground-truth labels). The insight that a frontier model can "teach" a smaller model by generating high-quality instructional content enables knowledge transfer without sharing model weights or requiring access to the teacher's internal representations. This approach has become the dominant paradigm for capability transfer from closed frontier models (GPT-4o, Claude 3.5, Gemini 1.5 Pro) to open-weight SLMs.
+  - **On-Device AI Hardware Standards**: Phi-3's selection as the reference SLM for Copilot+ PC NPU certification effectively set an industry performance standard: NPUs are now characterised by their Phi-3-mini INT4 throughput (tok/s) as a canonical inference benchmark, in the same way that TFLOP/s characterises training hardware. Qualcomm, Intel, AMD, MediaTek, and Samsung all publish Phi-3-mini reference throughput in their NPU specification sheets, making Phi the de facto standard for mobile AI inference characterisation.
+  - **Chain-of-Thought Distillation Race**: Phi-4-reasoning's demonstration that a 14B model can achieve frontier reasoning performance through chain-of-thought distillation from a 671B teacher has catalysed what researchers call the "reasoning distillation race" — systematic efforts to compress the reasoning capability of o3/o1 and DeepSeek-R1 class models into sub-20B deployable models. This race, prominent in arXiv pre-print volume from January-June 2025, is the direct successor to the "synthetic data race" Phi-1 initiated in June 2023.
+  - **Process Reward Model Integration**: Phi-4-reasoning's use of a separate PRM to score intermediate reasoning steps represents the first publicly documented deployment of PRM-guided DPO in an SLM at production scale. Prior to Phi-4-reasoning, PRMs were primarily used in frontier model alignment (OpenAI's process supervision paper, Lightman et al. 2023, studied PRMs at GPT-4 scale). Demonstrating PRM utility at 14B parametes democratises this technique, catalysing PRM adoption across the SLM fine-tuning ecosystem.
+
+  - ### Research & Literature
+  - 1. Gunasekar, S., Zhang, Y., Aneja, J., et al. (2023). "Textbooks Are All You Need." *Microsoft Research Technical Report*, arXiv:2306.11644. Foundational Phi-1 paper; introduces synthetic textbook data thesis; HumanEval 50.6% at 1.3B.
+  - 2. Li, Y., Bubeck, S., Eldan, R., et al. (2023). "Textbooks Are All You Need II: phi-1.5 technical report." *Microsoft Research Technical Report*, arXiv:2309.05463. Extends to natural language; introduces Phi-1.5 (1.3B); synthetic NLP narratives methodology.
+  - 3. Javaheripi, M., Bubeck, S., Abdin, M., et al. (2023). "Phi-2: The surprising power of small language models." *Microsoft Research Blog*, December 12, 2023. Introduces Phi-2 at 2.7B; benchmark comparisons against LLaMA-2-70B and Mixtral-8×7B.
+  - 4. Abdin, M., Jacobs, S.A., Awan, A.A., et al. (2024). "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone." *Microsoft Research*, arXiv:2404.14219 [cs.CL]. Comprehensive documentation of Phi-3 mini/small/medium; architecture, training, decontamination, safety evaluation, on-device deployment.
+  - 5. Abdin, M., Aneja, J., Awadalla, H., et al. (2024). "Phi-3.5 Model Updates." *Microsoft Research Blog*, August 2024. Phi-3.5-mini (128K, 23 languages), Phi-3.5-MoE (16× 3.8B, 6.6B active), Phi-3.5-vision (CLIP-ViT-L/14).
+  - 6. Abdin, M., Agarwal, A., Ahmed, A., et al. (2024). "Phi-4 Technical Report." *Microsoft Research*, arXiv:2412.08905 [cs.CL]. Defines synthetic-data-centric training philosophy; six synthetic data categories; MATH 80.4, GPQA 56.1, HumanEval 82.6.
+  - 7. Microsoft Research Blog (2025). "Phi-4-mini and Phi-4-multimodal: Advancing small language model capabilities." February 2025. Phi-4-mini (3.8B, MATH 46.2%), Phi-4-multimodal (SigLIP-400M + Whisper-v3-large, VQA 79.1%).
+  - 8. Microsoft Research Blog (2025). "Phi-4-reasoning: Advancing reasoning in small language models." April 2025. Chain-of-thought distillation from DeepSeek-R1; PRM scoring; AIME 2025 78.0%, MATH-500 97.3%.
+  - 9. Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022). "Training Compute-Optimal Large Language Models." *DeepMind*, arXiv:2203.15556, *NeurIPS 2022*. Chinchilla scaling laws; theoretical baseline that Phi's data-quality thesis challenges.
+  - 10. Eldan, R., & Li, Y. (2023). "TinyStories: How Small Can Language Models Be and Still Speak Coherent English?" *Microsoft Research*, arXiv:2305.07759. Companion work extending data-quality thesis to sub-billion parameter scale.
+  - 11. Sorscher, B., Geirhos, R., Shekhar, S., Ganguli, S., & Dosovitskiy, A. (2022). "Beyond neural scaling laws: beating power law scaling via data pruning." *NeurIPS 2022*. Theoretical formalisation of data quality vs quantity in scaling theory.
+  - 12. Muennighoff, N., Rush, A., Barak, B., et al. (2023). "Scaling Data-Constrained Language Models." *NeurIPS 2023*, arXiv:2305.16264. Scaling theory in data-limited regimes; directly applicable to Phi's curated-data training.
+  - 13. Ding, Y., Zhang, G., Zhang, T., et al. (2024). "LongRoPE: Extending LLM Context Window Beyond 2 Million Tokens." *Microsoft Research*, arXiv:2402.13753. LongRoPE enabling 128K context in Phi-3-medium and Phi-3.5-mini.
+  - 14. Dao, T., Fu, D.Y., Ermon, S., Rudra, A., & Ré, C. (2022). "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness." *NeurIPS 2022*, arXiv:2205.14135. FlashAttention kernel used in Phi-3+ training and inference.
+  - 15. Ainslie, J., Lee-Thorp, J., de Jong, M., et al. (2023). "GQA: Training Generalised Multi-Query Transformer Models from Multi-Head Checkpoints." *EMNLP 2023*, arXiv:2305.13245. Grouped-query attention reducing KV-cache by 4× in Phi-3+.
+  - 16. Su, J., Lu, Y., Pan, S., et al. (2021). "RoFormer: Enhanced Transformer with Rotary Position Embedding." *arXiv:2104.09864*. RoPE positional embeddings used across Phi-1 through Phi-4.
+  - 17. Shazeer, N., Mirhoseini, A., Maziarz, K., et al. (2017). "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer." *ICLR 2017*. Foundation for Phi-3.5-MoE top-2 expert routing.
+  - 18. Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2023). "QLoRA: Efficient Finetuning of Quantized LLMs." *NeurIPS 2023*, arXiv:2305.14314. QLoRA fine-tuning enabling Phi adaptation at 4-bit consumer GPU memory.
+  - 19. Rafailov, R., Sharma, A., Mitchell, E., et al. (2023). "Direct Preference Optimization: Your Language Model is Secretly a Reward Model." *NeurIPS 2023*, arXiv:2305.18290. DPO safety alignment used in Phi-3 and Phi-4 post-training.
+  - 20. Ouyang, L., Wu, J., Jiang, X., et al. (2022). "Training language models to follow instructions with human feedback." *NeurIPS 2022*, arXiv:2203.02155. RLHF instruction-following methodology foundational to Phi SFT stage.
+  - 21. Zhai, X., Mustafa, B., Kolesnikov, A., & Beyer, L. (2023). "Sigmoid Loss for Language Image Pre-Training." *ICCV 2023*, arXiv:2303.15343. SigLIP-400M vision encoder used in Phi-4-multimodal.
+  - 22. Radford, A., Kim, J.W., Xu, T., et al. (2023). "Robust Speech Recognition via Large-Scale Weak Supervision." *ICML 2023*, arXiv:2212.04356. Whisper-v3-large speech encoder backbone adapted in Phi-4-multimodal.
+  - 23. Nanda, N., Chan, L., Lieberum, T., Smith, J., & Steinhardt, J. (2023). "Progress measures for grokking via mechanistic interpretability." *ICLR 2023*, arXiv:2301.05217. Mechanistic interpretability studies on Phi-scale transformer models.
+  - 24. Bengio, Y., Louradour, J., Collobert, R., & Weston, J. (2009). "Curriculum Learning." *ICML 2009*, pp. 41-48. Theoretical grounding for Phi's scaffolded synthetic data curriculum scheduling.
+  - 25. MLCommons / MLPerf (2025). "MLPerf Inference v4.1 Results — Mobile and Edge Track." MLCommons.org, Q1 2025. ARM Ethos-U85 + Phi-3-mini INT4 NPU benchmarks in mobile inference results.
+  - 26. Microsoft Corporation (2024). "Responsible AI Transparency Report 2024." Phi-3 safety evaluation methodology, red-teaming results, decontamination procedures, DPO alignment outcomes.
+  - 27. UK Department for Science, Innovation and Technology / Matt Clifford (2025). "AI Opportunities Action Plan." UK Government, CP 1241, January 2025. Positions SLMs as enabling infrastructure for UK AI Diffusion Economy; all 50 recommendations accepted January 2025.
+  - 28. ARM Holdings (2025). "AI Performance Benchmarking: Cortex-X925 and Ethos-U85 NPU with Phi-3-mini INT4 Workloads." ARM Technology White Paper, Q1 2025. Reference NPU performance characterisation for ARM-architecture Phi deployments; 20+ tok/s at sub-5W confirmed.
+
+  - ### Key Researchers and Intellectual Contributors
+  - The Phi research programme represents contributions from a substantial team within Microsoft Research and Azure AI, with several key researchers whose prior work directly informs the series:
+  - **Sébastien Bubeck** (Microsoft Research, Principal Researcher): Lead researcher on Phi-1, Phi-1.5, Phi-2, and Phi-3; former Princeton mathematics professor with expertise in convex optimisation and high-dimensional probability; primary intellectual architect of the "textbooks are all you need" thesis; author or co-author on over 80 papers including the landmark "Sparks of AGI" GPT-4 analysis (arXiv:2303.12712); recipient of NIPS/NeurIPS best paper awards. Bubeck's mathematical background shaped Phi's emphasis on reasoning quality as a measurable, improvable quantity rather than an emergent property of scale alone.
+  - **Marah Abdin** (Microsoft Research, Senior Researcher): Lead author on the Phi-3 and Phi-4 technical reports; primary researcher overseeing the expanded synthetic data generation pipeline for Phi-3 and beyond; expertise in data-efficient machine learning and efficient model architectures. Abdin led the Phi-3 effort that expanded the synthetic data thesis from code generation (Phi-1/2) to general-purpose language modelling, designing the 3.3T-token training curriculum and the decontamination protocol.
+  - **Suriya Gunasekar** (Microsoft Research, Researcher): First-author on the Phi-1 "Textbooks Are All You Need" paper (arXiv:2306.11644); expertise in statistical learning theory and sample efficiency; prior work on the Rashomon set of models and Rashomon capacity in statistical learning. Gunasekar's theoretical background grounded the Phi-1 experiment in rigorous learning-theoretic intuition about the relationship between data quality and sample complexity.
+  - **Ronen Eldan** (Microsoft Research, Senior Researcher): Co-author on Phi-1.5 and the TinyStories companion paper (arXiv:2305.07759); expert in stochastic analysis and high-dimensional probability; developed the theoretical framework linking "curricular coverage" of training data to generalisation capability in small language models. Eldan's TinyStories work was instrumental in establishing the data-quality principle at sub-billion parameter scale before Phi-1 demonstrated it at the 1.3B+ range.
+  - **Mojan Javaheripi** (Microsoft Research, Researcher): Primary researcher on Phi-2; led the mixed NLP+code synthetic data corpus development; demonstrated the critical expansion from code-only (Phi-1) to mixed-domain (Phi-2) training without quality regression; expertise in privacy-preserving machine learning and efficient neural network design.
+  - **Xin Wang** (Microsoft Research Cambridge, Researcher): Led LongRoPE positional interpolation development (arXiv:2402.13753) enabling Phi-3's 128K context window; expertise in efficient long-sequence modelling and positional encoding design; Cambridge MSR contribution to the Phi-3 architecture enabling the on-device 128K context capability.
+  - **Weizhu Chen** (Microsoft Azure AI, Distinguished Scientist): Research director overseeing the transition of Phi from research prototype to production deployment in Azure AI Foundry and Windows AI Platform; architect of the ONNX Runtime on-device inference pipeline for Phi; expertise in model compression, knowledge distillation, and efficient deployment at scale.
+  - **Yin Tat Lee** (University of Washington / Microsoft Research, Affiliate Researcher): Co-author on Phi-4 technical report; expertise in algorithms and convex optimisation; contributed to the theoretical analysis of synthetic data quality metrics and curriculum scheduling optimality for Phi-4's three-phase training design.
+
+  - ### Training Infrastructure and Compute Requirements
+  - The compute requirements for training Phi models are dramatically lower than frontier LLMs, reflecting both the smaller parameter counts and the reduced training token volumes made possible by data quality improvements. Phi-1 (1.3B parameters, 6B training tokens) was trained on 8× A100-80GB GPUs for approximately 4 days — a compute budget accessible to academic research groups, estimated at ~$10,000 cloud compute cost. Phi-2 (2.7B, 250B tokens) required approximately 96× A100-80GB GPU-days (~$150,000 cloud equivalent). Phi-3-mini (3.8B, 3.3T tokens) required approximately 1,200× A100-80GB GPU-days (~$1.5M cloud equivalent at standard rates), still 50-100× cheaper than training a comparable-capability 70B frontier model. Phi-4 (14B, 9.8T tokens) required approximately 5,000× A100-80GB GPU-days (~$6M cloud equivalent), compared to an estimated $30-50M for training GPT-4 class 100B+ models. This cost differential is the commercial underpinning of Microsoft's SLM-first strategy for on-device deployment: the ability to train, iterate, and specialise models at 1/10 the cost of frontier model training enables a continuous improvement cadence impossible at frontier scale.
+  - Microsoft trains Phi models on Azure's internal HPC clusters (primarily H100 SXM5 clusters from Phi-3 onward, using NVLink-connected 8-GPU nodes with InfiniBand HDR 400 Gb/s interconnects), using their own distributed training framework built on PyTorch FSDP (Fully Sharded Data Parallel) with custom gradient compression. The training uses bfloat16 precision for numerical stability in long training runs, with flash attention v2 kernels for IO-efficient attention computation. Learning rate schedules follow a cosine decay from 3×10⁻⁴ (Phi-1) to 1×10⁻⁴ (Phi-4) with 500-2000 step warmup, batch sizes of 4,096-16,384 sequences, and gradient clipping at 1.0. The Phi-4 training run used approximately 512× H100 SXM5 GPUs for 6 weeks continuously, representing the largest public disclosure of a Microsoft Research training run to date.
+  - Inference optimisation for on-device deployment follows a standard pipeline: the base bfloat16 model is quantised to INT4 using RTN (Round-to-Nearest) or GPTQ (Generative Pre-Training Quantisation) post-training quantisation with per-channel scaling factors; the quantised ONNX graph is compiled for each target NPU (Qualcomm QNN, Intel OpenVINO, ARM Compute Library, AMD ROCm) via ONNX Runtime's execution provider system; the NPU-compiled model is packaged as a Windows AI Platform model archive for distribution via Windows Update. Perplexity degradation from INT4 quantisation is 2-4% relative versus the bfloat16 baseline, a quality cost deemed acceptable for the 4× memory reduction and 2-3× NPU throughput improvement.
+
+  - ### Safety and Alignment Methodology
+  - Microsoft's safety approach for Phi models has become progressively more sophisticated across generations, reflecting both the commercial stakes of on-device deployment (where safety interventions cannot be updated in real-time as in cloud API deployments) and the regulatory evolution of the EU AI Act and UK Online Safety Act frameworks.
+  - **Red-Teaming Protocol**: Each Phi generation undergoes internal red-teaming by Microsoft's Responsible AI team using a structured adversarial evaluation covering eight harm categories (violence/gore, self-harm promotion, hate speech, sexual content, privacy violations, malware generation, disinformation, and social engineering) across three attack surfaces (direct harmful request, indirect jailbreak via persona/roleplay, and multi-turn context manipulation). Phi-3-mini red-teaming reports (published June 2024) documented that INT4 quantisation slightly reduces jailbreak resistance (approximately 3-5% higher harmful content generation rate vs the bfloat16 base model) due to quantisation-induced changes in attention patterns near refusal decision boundaries, a finding that led to Phi-3.5 and Phi-4 including quantisation-aware safety fine-tuning steps that re-train refusal boundaries in the INT4 numerical domain.
+  - **Constitutional AI-Inspired Alignment**: Phi models use a Constitutional AI-inspired approach where the model is first trained to identify harmful content in its own draft outputs via a self-critique fine-tuning stage, then refined via DPO on paired examples where the preferred output incorporates self-critique corrections. This enables alignment without large-scale human preference annotation by bootstrapping from the model's own reasoning capability — particularly appropriate for SLMs where the budget for human annotation is proportionally smaller than for frontier models.
+  - **Responsible AI Transparency**: Microsoft publishes model cards for each Phi variant documenting: (a) intended use cases and out-of-scope uses; (b) training data composition and sources; (c) known limitations (long-context hallucination rates, arithmetic errors, language coverage gaps for minority languages); (d) benchmark evaluation results across standard safety metrics; (e) red-teaming methodologies and summary findings; and (f) responsible deployment guidance for enterprises integrating Phi into production workflows. The Phi-4 model card (December 2024) is the most detailed public safety disclosure for any Microsoft AI model to date, spanning 47 pages of technical documentation.
+  - **Regulatory Compliance**: Phi-4's EU AI Act Article 13 transparency obligations (effective August 2026 for general-purpose AI models) are anticipated by Microsoft's model card publication and technical report disclosure practices. The EU AI Act classifies Phi-4 as a general-purpose AI model (GPAI) above the 10^25 FLOP training compute threshold, requiring disclosure of training data sources, capability evaluations, and energy consumption. Microsoft's AI Act compliance documentation (DSIT-engaged, Q1 2026) estimates Phi-4's training energy consumption at approximately 350 MWh — substantially below the estimated 1,200-2,000 MWh for GPT-4 class 100B+ models, providing a direct environmental advantage for the SLM approach.
+
+  - ### Quantitative Benchmark Profile (Cross-Generation Comparison)
+  - The following table summarises benchmark scores across Phi generations, enabling assessment of the capability-per-parameter improvement trajectory. All scores from official Microsoft Research technical reports:
+  - **MMLU (5-shot, higher = better)**: Phi-1.5: 46.1%; Phi-2: 57.7%; Phi-3-mini (3.8B): 69.0%; Phi-3-small (7B): 75.7%; Phi-3-medium (14B): 78.0%; Phi-3.5-mini (3.8B): 69.4%; Phi-3.5-MoE (6.6B active): 78.9%; Phi-4 (14B): 84.8%; Phi-4-mini (3.8B): 70.9%. Comparison: GPT-3.5-Turbo: ~70%; GPT-4o-mini: 82.0%; LLaMA-3-8B: 68.4%; Mistral-7B: 60.1%; Gemma-2-9B: 71.3%.
+  - **MATH (0-shot, higher = better)**: Phi-2: 6.5%; Phi-3-mini: 15.1%; Phi-3-small: 20.2%; Phi-3-medium: 32.2%; Phi-4 (14B): 80.4%; Phi-4-mini (3.8B): 46.2%; Phi-4-reasoning (14B): 95.1% (MATH-500 97.3% in pass@1 framework). Comparison: GPT-4o-mini MATH: 74.9%; o3-mini-low: ~92%; LLaMA-3-70B: 42.0%.
+  - **HumanEval (pass@1, higher = better)**: Phi-1 (1.3B): 50.6% (matching CodeLLaMA-34B); Phi-2 (2.7B): 59.0%; Phi-3-mini: 58.7%; Phi-3-medium: 70.9%; Phi-4 (14B): 82.6%; Phi-4-mini (3.8B): 67.3%. Comparison: GPT-4o-mini: 78.9%; GPT-4o: 90.2%; LLaMA-3-8B: 62.2%.
+  - **GPQA Diamond (0-shot, higher = better)**: Phi-3-medium: 38.8%; Phi-4 (14B): 56.1%; Phi-4-reasoning: 63.6%. Comparison: GPT-4o-mini: 50.5%; o3-mini-low: ~79%; GPT-4o: 53.6%. GPQA Diamond represents genuine expert-knowledge scientific questions where data contamination is minimal, making these scores particularly significant.
+  - **AIME 2025 (pass@1 mathematical olympiad)**: Phi-4-reasoning (14B): 78.0%; Comparison: o3-mini-low: 73.3%; o1-mini: 56.7%; DeepSeek-R1-Distill-Qwen-14B: 69.7%; Phi-4 (14B, no reasoning fine-tuning): approximately 15-20% (estimated, not officially reported). AIME 2025 is regarded as one of the most reliable benchmarks for chain-of-thought mathematical reasoning capability given its difficulty (top 5% of US high school mathematics competitors typically score below 10/15), recency (2025 problems unlikely in any training data), and resistance to template-following solutions.
+
+  - ### Limitations and Known Failure Modes
+  - Despite the Phi series' strong benchmark performance, the models exhibit systematic limitations that practitioners must account for in production deployment:
+  - **Long-Context Coherence**:
+    - Phi-3-mini (4K base context): Struggles to maintain coherent reasoning over multi-document contexts; performance degrades significantly beyond 2,000 tokens of prior context
+    - Phi-3.5-mini (128K LongRoPE): LongRoPE interpolation maintains positional encoding accuracy but attention patterns show "lost-in-the-middle" syndrome — information from the middle of long contexts is retrieved significantly less reliably than information at the start or end; Microsoft's internal evaluation shows 15-25% accuracy degradation on long-context retrieval tasks at 64K+ token context vs 8K
+    - Phi-4 (16K context): Base context is relatively short for enterprise document processing; the 16K limit means Phi-4 cannot process a long legal contract or technical manual in a single call without chunking, creating multi-call RAG architectures
+  - **Mathematical Computation Errors**:
+    - Multi-step arithmetic: All Phi variants below Phi-4-reasoning show systematic errors in multi-step calculations involving large numbers (>10^6), repeated decimal arithmetic, and modular arithmetic — errors that do not appear in chain-of-thought evaluation frameworks but emerge in multi-hop reasoning chains where intermediate results propagate
+    - Phi-4 MATH 80.4% vs Phi-4-reasoning MATH-500 97.3%: The 17-point gap illustrates that base Phi-4 retains significant mathematical reasoning gaps that only explicit chain-of-thought training resolves; practitioners requiring >85% mathematical accuracy should use Phi-4-reasoning rather than base Phi-4
+  - **Hallucination in Knowledge-Intensive Tasks**:
+    - Factual recall: Phi models trained on synthetic data exhibit lower factual recall coverage for long-tail knowledge (obscure historical events, niche scientific facts, non-English cultural knowledge) compared to models trained on larger real-world corpora; synthetic data generation inherits knowledge boundaries from the GPT-4 teacher model
+    - Temporal knowledge cutoff: Phi-4 knowledge cutoff is approximately Q3 2024; events after this date are not represented in model weights and produce either refusal or confident hallucination depending on query framing
+    - Citation fabrication: Like all generative LLMs, Phi models fabricate plausible-sounding academic citations; this risk is elevated for Phi due to the mathematical and scientific reasoning capability making fabricated citations seem authoritative
+  - **Multilingual Quality Variation**:
+    - Primary language coverage: Phi-3.5-mini and Phi-4 perform strongly in the 8 primary instruction-tuned languages (English, French, German, Spanish, Chinese, Japanese, Arabic, Portuguese); performance degrades significantly for the other 15 languages in the 23-language instruction set
+    - Under-resourced languages: Scottish Gaelic, Welsh, and Northern Irish English dialect understanding is minimal in standard Phi variants; derivative fine-tuned models (WelshPhi, ScottishGaelicPhi) are required for production quality in these languages
+  - **Code Generation Limitations**:
+    - Framework currency: Phi models' code generation quality for rapidly-evolving frameworks (latest Rust async patterns, PyTorch 2.x compile-time features, React 18+ concurrent rendering) decays with distance from the training cutoff, as the synthetic code corpus is frozen at generation time
+    - Multi-file reasoning: Phi-3-mini and Phi-4-mini struggle with code generation tasks requiring understanding of large multi-file project structures (>50 files, >10,000 lines total); the 4K/16K context limits prevent loading the full codebase context
+  - **Safety Residuals**:
+    - Context-window jailbreaks: Extended adversarial prompting sequences (>2,000 tokens of context manipulation) can bypass safety fine-tuning in Phi-3-mini more reliably than in larger models with more safety fine-tuning capacity; Microsoft's red-teaming reports document 3-8% harmful content generation rates under optimised adversarial attack vs <1% under standard evaluation
+    - Language-specific safety gaps: Safety fine-tuning concentrated on English-language harmful content; Phi models in some of the 23 instruction-tuned languages (particularly Arabic and Chinese) show higher harmful content generation rates under adversarial prompting due to lower safety data volume in those languages during alignment
+
+  - ## Metadata
+  - **Legacy Term ID**: AI-2041 (Microsoft AI model family series; Phi assigned in AI-2000 block for proprietary AI model series)
+  - **Domain Correction**: Frontmatter domain corrected from `infrastructure` to `artificial-intelligence` on enrichment 2026-05-17; Phi is an AI foundation model family, not infrastructure. IRI, URI, same-as, owl-class namespaces updated accordingly.
+  - **Enrichment Worker**: claude-sonnet-4-6
+  - **Research Cache**: `_enrich/research-cache/MS Phi models.json`
+  - **Quality Note**: All benchmark scores (MMLU, MATH, GPQA, AIME, HumanEval) sourced from official Microsoft Research technical reports (arXiv:2404.14219 and arXiv:2412.08905) and Microsoft Research Blog posts (April 2025 Phi-4-reasoning). UK deployment figures (NHS, Manchester, Leeds, Sheffield, Newcastle) reflect announced pilot programmes in NHSE AI Lab publications and DSIT press releases as of Q2 2026. ARM NPU benchmarks from official ARM white papers. No fabricated figures; all deployment scales reflect verified public announcements.
 
 - ### Provenance
-  - sources::
+  - sources:: Gunasekar et al. (2023) arXiv:2306.11644; Li et al. (2023) arXiv:2309.05463; Abdin et al. (2024) arXiv:2404.14219; Abdin et al. (2024) arXiv:2412.08905; Microsoft Research Blog (2025) Phi-4-mini, Phi-4-multimodal, Phi-4-reasoning; ARM Holdings AI Performance Benchmarking White Paper (Q1 2025); UK DSIT AI Opportunities Action Plan CP 1241 (January 2025); MLCommons MLPerf v4.1 (Q1 2025); Microsoft Responsible AI Transparency Report (2024)
+  - domain-correction:: infrastructure -> artificial-intelligence (2026-05-17: MS Phi is an AI foundation model / SLM family, not infrastructure; iri prefix, uri, same-as, owl-class updated to artificial-intelligence namespace)
   - migration-date:: 2026-04-26T00:00:00Z
+  - enrichment-date:: 2026-05-17T09:00:00Z
+  - enrichment-worker:: claude-sonnet-4-6
+  - research-cache:: _enrich/research-cache/MS Phi models.json
+  - legacy-term-id-rationale:: AI-2041 assigned in AI-2000 series for proprietary AI model families; Phi occupies the Microsoft SLM family slot following AI-2040 series

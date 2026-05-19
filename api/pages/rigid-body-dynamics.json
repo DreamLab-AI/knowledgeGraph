@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:8ac698f7d716c7cc93fad447018a3ca9a4c134276bfb8069a42e10041762a175",
+  "title": "Rigid Body Dynamics",
+  "slug": "rigid-body-dynamics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rigid-body-dynamics",
+  "domain": "infrastructure",
+  "definition": "RigidBodyDynamics is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-material",
+      "label": "Physics Material"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    }
+  ]
+}

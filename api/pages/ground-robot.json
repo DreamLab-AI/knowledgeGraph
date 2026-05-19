@@ -1,0 +1,504 @@
+{
+  "id": "urn:visionflow:page:836aeb2fc4ce9c5af1b6f687bacf2218e50e27402a4046b2db1c24097b84bc2d",
+  "title": "Ground Robot",
+  "slug": "ground-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ground-robot",
+  "domain": "robotics",
+  "definition": "Ground robot is a mobile robotic platform that operates on terrestrial surfaces using wheeled, tracked, legged, or hybrid locomotion systems to navigate structured and unstructured environments while executing purposeful tasks \u2014 including material transport, environmental inspection, search and rescue, precision agriculture, planetary exploration, and armed force support \u2014 across indoor, outdoor, and extreme off-road conditions. Ground robots span a capability spectrum from centimetre-scale research platforms to multi-tonne industrial autonomous guided vehicles (AGVs) and military unmanned ground vehicles (UGVs), distinguished from [[Aerial Robot]] (UAV/drone) and [[Marine Robot]] (USV/AUV) classes by their reliance on surface contact for locomotion and their coupling with ground-terrain mechanics including traction, slip, and obstacle negotiation. The field integrates [[Simultaneous Localisation and Mapping]] (SLAM), [[Motion Planning]], [[Computer Vision]], [[Lidar]], [[Inertial Measurement Unit]] fusion, and increasingly [[Foundation Models]] for natural-language task specification, constituting one of the largest segments of the global robotics market \u2014 projected by IDC to exce",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:cyber-physical-systems",
+      "label": "Cyber-Physical Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "id": "urn:visionflow:linked:unmanned-ground-vehicle",
+      "label": "Unmanned Ground Vehicle"
+    },
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:communication-interface",
+        "label": "Communication Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:locomotion-mechanism",
+        "label": "Locomotion Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:navigation-stack",
+        "label": "Navigation Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:power-system",
+        "label": "Power System"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-system",
+        "label": "Safety System"
+      },
+      {
+        "id": "urn:visionflow:linked:task-planner",
+        "label": "Task Planner"
+      },
+      {
+        "id": "urn:visionflow:owl:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:visionflow:linked:terrain-interaction-model",
+        "label": "Terrain Interaction Model"
+      },
+      {
+        "id": "urn:visionflow:linked:traction-control",
+        "label": "Traction Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:infrastructure-inspection",
+        "label": "Infrastructure Inspection"
+      },
+      {
+        "id": "urn:visionflow:linked:material-transport",
+        "label": "Material Transport"
+      },
+      {
+        "id": "urn:visionflow:linked:military-operations",
+        "label": "Military Operations"
+      },
+      {
+        "id": "urn:visionflow:linked:planetary-exploration",
+        "label": "Planetary Exploration"
+      },
+      {
+        "id": "urn:visionflow:linked:search-and-rescue",
+        "label": "Search and Rescue"
+      },
+      {
+        "id": "urn:visionflow:linked:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:cartographer-slam",
+        "label": "Cartographer SLAM"
+      },
+      {
+        "id": "urn:visionflow:linked:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:nav2-navigation-stack",
+        "label": "Nav2 Navigation Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:visionflow:linked:rtab-map",
+        "label": "RTAB-Map"
+      },
+      {
+        "id": "urn:visionflow:linked:whole-body-control",
+        "label": "Whole-Body Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "5-g-connectivity",
+      "label": "5G Connectivity"
+    },
+    {
+      "slug": "agricultural-robotics",
+      "label": "Agricultural Robotics"
+    },
+    {
+      "slug": "ansi-ria-r15-08",
+      "label": "ANSI/RIA R15.08"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "battery-management-system",
+      "label": "Battery Management System"
+    },
+    {
+      "slug": "cartographer-slam",
+      "label": "Cartographer SLAM"
+    },
+    {
+      "slug": "communication-interface",
+      "label": "Communication Interface"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "cyber-physical-systems",
+      "label": "Cyber-Physical Systems"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
+      "slug": "disaster-response",
+      "label": "Disaster Response"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "fixed-robot-arm",
+      "label": "Fixed Robot Arm"
+    },
+    {
+      "slug": "gazebo-simulation",
+      "label": "Gazebo Simulation"
+    },
+    {
+      "slug": "iec-62061",
+      "label": "IEC 62061"
+    },
+    {
+      "slug": "ieee-1872-2015",
+      "label": "IEEE 1872-2015"
+    },
+    {
+      "slug": "industrial-inspection",
+      "label": "Industrial Inspection"
+    },
+    {
+      "slug": "industry-4-0",
+      "label": "Industry 4.0"
+    },
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "infrastructure-inspection",
+      "label": "Infrastructure Inspection"
+    },
+    {
+      "slug": "io-t-platforms",
+      "label": "IoT Platforms"
+    },
+    {
+      "slug": "iso-13482",
+      "label": "ISO 13482"
+    },
+    {
+      "slug": "iso-3691-4",
+      "label": "ISO 3691-4"
+    },
+    {
+      "slug": "last-mile-delivery",
+      "label": "Last-Mile Delivery"
+    },
+    {
+      "slug": "localisation",
+      "label": "Localisation"
+    },
+    {
+      "slug": "locomotion-mechanism",
+      "label": "Locomotion Mechanism"
+    },
+    {
+      "slug": "material-transport",
+      "label": "Material Transport"
+    },
+    {
+      "slug": "military-operations",
+      "label": "Military Operations"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "move-it2",
+      "label": "MoveIt2"
+    },
+    {
+      "slug": "multi-robot-systems",
+      "label": "Multi-Robot Systems"
+    },
+    {
+      "slug": "nav2-navigation-stack",
+      "label": "Nav2 Navigation Stack"
+    },
+    {
+      "slug": "navigation-stack",
+      "label": "Navigation Stack"
+    },
+    {
+      "slug": "nvidia-isaac-sim",
+      "label": "NVIDIA Isaac Sim"
+    },
+    {
+      "slug": "occupancy-grid-mapping",
+      "label": "Occupancy Grid Mapping"
+    },
+    {
+      "slug": "open-cv",
+      "label": "OpenCV"
+    },
+    {
+      "slug": "path-planning-algorithms",
+      "label": "Path Planning Algorithms"
+    },
+    {
+      "slug": "pcl-point-cloud-library",
+      "label": "PCL Point Cloud Library"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    },
+    {
+      "slug": "planetary-exploration",
+      "label": "Planetary Exploration"
+    },
+    {
+      "slug": "point-cloud-processing",
+      "label": "Point Cloud Processing"
+    },
+    {
+      "slug": "power-system",
+      "label": "Power System"
+    },
+    {
+      "slug": "precision-agriculture",
+      "label": "Precision Agriculture"
+    },
+    {
+      "slug": "ros-2",
+      "label": "ROS 2"
+    },
+    {
+      "slug": "rtab-map",
+      "label": "RTAB-Map"
+    },
+    {
+      "slug": "safety-system",
+      "label": "Safety System"
+    },
+    {
+      "slug": "scientific-exploration",
+      "label": "Scientific Exploration"
+    },
+    {
+      "slug": "search-and-rescue",
+      "label": "Search and Rescue"
+    },
+    {
+      "slug": "security-patrol",
+      "label": "Security Patrol"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "slam-toolbox",
+      "label": "SLAM Toolbox"
+    },
+    {
+      "slug": "soft-robot",
+      "label": "Soft Robot"
+    },
+    {
+      "slug": "task-planner",
+      "label": "Task Planner"
+    },
+    {
+      "slug": "teleoperated-system",
+      "label": "Teleoperated System"
+    },
+    {
+      "slug": "terrain-interaction-model",
+      "label": "Terrain Interaction Model"
+    },
+    {
+      "slug": "traction-control",
+      "label": "Traction Control"
+    },
+    {
+      "slug": "ul-3100",
+      "label": "UL 3100"
+    },
+    {
+      "slug": "unmanned-ground-vehicle",
+      "label": "Unmanned Ground Vehicle"
+    },
+    {
+      "slug": "warehouse-automation",
+      "label": "Warehouse Automation"
+    },
+    {
+      "slug": "whole-body-control",
+      "label": "Whole-Body Control"
+    },
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    },
+    {
+      "slug": "marine-robot",
+      "label": "Marine Robot"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "tracked-robot",
+      "label": "Tracked Robot"
+    }
+  ]
+}

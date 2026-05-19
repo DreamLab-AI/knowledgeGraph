@@ -1,21 +1,443 @@
-iri:: http://narrativegoldmine.com/metaverse#GenerativeDesignTool
-uri:: urn:visionclaw:concept:artificial-intelligence:generative-design-tool
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:generative-design-tool
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Generative Design Tool
-content-hash:: sha256-12-991b90919aac
-legacy-term-id:: 20116
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#GenerativeDesignTool
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:generative-design-tool
 public:: true
+
+# Generative Design Tool
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92",
+  "@type": "Page",
+  "vc:slug": "generative-design-tool",
+  "title": "Generative Design Tool",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-generator",
+      "vc:label": "3D Generator"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-engine",
+      "vc:label": "AI Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:autodesk-design-ml",
+      "vc:label": "Autodesk Design ML"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-design",
+      "vc:label": "Automated Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-solver",
+      "vc:label": "Constraint Solver"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation-tool",
+      "vc:label": "Content Creation Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-database",
+      "vc:label": "Design Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-optimization",
+      "vc:label": "Design Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-optimizer",
+      "vc:label": "Design Optimizer"
+    },
+    {
+      "@id": "urn:visionflow:linked:siggraph-ai-design-wg",
+      "vc:label": "SIGGRAPH AI Design WG"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:authoring-tool",
+      "vc:label": "Authoring Tool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:constraint-based-design",
+      "vc:label": "Constraint-Based Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graphics-api",
+      "vc:label": "Graphics API"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-infrastructure",
+      "vc:label": "Machine Learning Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:optimization-algorithm",
+      "vc:label": "Optimization Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:parametric-modeling",
+      "vc:label": "Parametric Modeling"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-991b90919aac"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#GenerativeDesignTool"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20116"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Generative Design Tool"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:generative-design-tool"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:generative-design-tool"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:generative-design-tool",
+  "@type": "OntologyClass",
+  "label": "Generative Design Tool",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:content-creation-tool",
+      "vc:label": "Content Creation Tool"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:authoring-tool",
+      "vc:label": "Authoring Tool"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:3-d-generator",
+      "vc:label": "3D Generator"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-solver",
+      "vc:label": "Constraint Solver"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-optimizer",
+      "vc:label": "Design Optimizer"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:design-database",
+      "vc:label": "Design Database"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-infrastructure",
+      "vc:label": "Machine Learning Infrastructure"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:automated-design",
+      "vc:label": "Automated Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-optimization",
+      "vc:label": "Design Optimization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:constraint-based-design",
+      "vc:label": "Constraint-Based Design"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:parametric-modeling",
+      "vc:label": "Parametric Modeling"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:ai-engine",
+      "vc:label": "AI Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graphics-api",
+      "vc:label": "Graphics API"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:optimization-algorithm",
+      "vc:label": "Optimization Algorithm"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:generative-design-tool:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Generator]]",
+      "resolved": "urn:visionflow:linked:3-d-generator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Engine]]",
+      "resolved": "urn:visionflow:linked:ai-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Model]]",
+      "resolved": "urn:visionflow:linked:ai-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autodesk Design ML]]",
+      "resolved": "urn:visionflow:linked:autodesk-design-ml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automated Design]]",
+      "resolved": "urn:visionflow:linked:automated-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Constraint Solver]]",
+      "resolved": "urn:visionflow:linked:constraint-solver",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content Creation Tool]]",
+      "resolved": "urn:visionflow:linked:content-creation-tool",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Design Database]]",
+      "resolved": "urn:visionflow:linked:design-database",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Design Optimization]]",
+      "resolved": "urn:visionflow:linked:design-optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Design Optimizer]]",
+      "resolved": "urn:visionflow:linked:design-optimizer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SIGGRAPH AI Design WG]]",
+      "resolved": "urn:visionflow:linked:siggraph-ai-design-wg",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Authoring Tool]]",
+      "resolved": "urn:visionflow:owl:class:authoring-tool",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Compute Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:compute-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Constraint-Based Design]]",
+      "resolved": "urn:visionflow:owl:class:constraint-based-design",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CreativeMediaDomain]]",
+      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Graphics API]]",
+      "resolved": "urn:visionflow:owl:class:graphics-api",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Optimization Algorithm]]",
+      "resolved": "urn:visionflow:owl:class:optimization-algorithm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Parametric Modeling]]",
+      "resolved": "urn:visionflow:owl:class:parametric-modeling",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.

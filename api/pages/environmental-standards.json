@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:456134548913486400c5849cb5dde7bf875407ed475828608fe7ef917772b48b",
+  "title": "Environmental Standards",
+  "slug": "environmental-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-standards",
+  "domain": "spatial-computing",
+  "definition": "Regulatory frameworks and technical specifications governing the environmental sustainability of metaverse infrastructure, including energy efficiency requirements for data centres, carbon footprint disclosure mandates, and e-waste management guidelines for XR hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "environmental-sustainability-label",
+      "label": "Environmental Sustainability Label"
+    }
+  ]
+}

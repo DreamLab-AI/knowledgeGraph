@@ -1,21 +1,198 @@
-iri:: http://narrativegoldmine.com/infrastructure#SheffieldAdvancedManufacturing
-uri:: urn:visionclaw:concept:infrastructure:sheffield-advanced-manufacturing
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:sheffield-advanced-manufacturing
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Sheffield Advanced Manufacturing
-content-hash:: sha256-12-0266838c3b65
-legacy-term-id:: NGM-1001
-status:: active
-maturity:: established
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#SheffieldAdvancedManufacturing
+legacy_uri:: urn:visionclaw:concept:infrastructure:sheffield-advanced-manufacturing
 public:: true
+
+# Sheffield Advanced Manufacturing
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c",
+  "@type": "Page",
+  "vc:slug": "sheffield-advanced-manufacturing",
+  "title": "Sheffield Advanced Manufacturing",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:northern-powerhouse",
+      "vc:label": "Northern Powerhouse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:north-england-innovation-corridor",
+      "vc:label": "North England Innovation Corridor"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uk-tech-ecosystem",
+      "vc:label": "UK Tech Ecosystem"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0266838c3b65"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#SheffieldAdvancedManufacturing"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-1001"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Sheffield Advanced Manufacturing"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:sheffield-advanced-manufacturing"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:sheffield-advanced-manufacturing"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:sheffield-advanced-manufacturing",
+  "@type": "OntologyClass",
+  "label": "Sheffield Advanced Manufacturing",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "active",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:sheffield-advanced-manufacturing:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Northern Powerhouse]]",
+      "resolved": "urn:visionflow:linked:northern-powerhouse",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[North England Innovation Corridor]]",
+      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[UK Tech Ecosystem]]",
+      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.
@@ -23,7 +200,7 @@ public:: true
 - ### Semantic Classification
   - owl-class:: infrastructure:SheffieldAdvancedManufacturing
   - owl-role:: RegionalEcosystem
-  - belongs-to-domain:: [[UKTechEcosystem]]
+  - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
   - <!-- No relationships defined -->

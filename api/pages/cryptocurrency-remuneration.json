@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:dd8a70f88cf8730d27dfcd96e583bb336c10e90a7c35eca998ec43b30e20709a",
+  "title": "Cryptocurrency Remuneration",
+  "slug": "cryptocurrency-remuneration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:cryptocurrency-remuneration",
+  "domain": "distributed-collaboration",
+  "definition": "\"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, Ethereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unbanked populations and facilitating blockchain-based collaboration.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "developing",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-250-blockchain-collaboration",
+      "label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "slug": "tele-251-smart-contract-coordination",
+      "label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "backlinks": []
+}

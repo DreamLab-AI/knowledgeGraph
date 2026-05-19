@@ -1,0 +1,452 @@
+{
+  "id": "urn:visionflow:page:5ccf9e06b584664571d4ac76f379b8ddc0103fda3f46b8e840496f88dd9ff1dd",
+  "title": "Universal Scene Description",
+  "slug": "universal-scene-description",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:universal-scene-description",
+  "domain": "creative-tools",
+  "definition": "Universal Scene Description (USD / OpenUSD) is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source in 2016 under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and collaborating on three-dimensional scenes at production scale. The system expresses rich hierarchical scene data\u2014geometry, materials, lighting, cameras, skeletal animation, physics, and custom domain schemas\u2014through a unified data model in which every authored value is an \"opinion\" that participates in a deterministic composition algorithm called the LIVRPS strength-ordering stack (Local overrides, Inherits, Variants, References, Payloads, Specializes). Composition arcs\u2014sublayers, references, payloads, variants, inherits, and specializes\u2014let pipelines decompose complex productions into thousands of independently maintained asset files that are composited non-destructively at resolve time without modifying source data. The layering architecture underpins an entire industrial workflow paradigm: a model department authors base geometry layers; rigging, shading, lightin",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:asset-pipeline",
+      "label": "Asset Pipeline"
+    },
+    {
+      "id": "urn:visionflow:owl:class:3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "id": "urn:visionflow:owl:class:interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "id": "urn:visionflow:owl:class:open-standard",
+      "label": "Open Standard"
+    },
+    {
+      "id": "urn:visionflow:owl:class:scene-graph",
+      "label": "Scene Graph"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:composition-arcs",
+        "label": "Composition Arcs"
+      },
+      {
+        "id": "urn:visionflow:linked:crate-format",
+        "label": "Crate Format"
+      },
+      {
+        "id": "urn:visionflow:linked:hydra",
+        "label": "Hydra"
+      },
+      {
+        "id": "urn:visionflow:linked:layer-stack",
+        "label": "Layer Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:material-x",
+        "label": "MaterialX"
+      },
+      {
+        "id": "urn:visionflow:linked:open-subdiv",
+        "label": "OpenSubdiv"
+      },
+      {
+        "id": "urn:visionflow:linked:usd-skel",
+        "label": "UsdSkel"
+      },
+      {
+        "id": "urn:visionflow:linked:usdz",
+        "label": "USDZ"
+      },
+      {
+        "id": "urn:visionflow:linked:variant-sets",
+        "label": "Variant Sets"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:layer-resolution",
+        "label": "Layer Resolution"
+      },
+      {
+        "id": "urn:visionflow:linked:renderer",
+        "label": "Renderer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:visionflow:owl:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-scene-assembly",
+        "label": "Collaborative Scene Assembly"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-dcc-interoperability",
+        "label": "Cross-DCC Interoperability"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "id": "urn:visionflow:linked:non-destructive-editing",
+        "label": "Non-Destructive Editing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:hydra-scene-delegate",
+        "label": "Hydra Scene Delegate"
+      },
+      {
+        "id": "urn:visionflow:linked:livrps-composition",
+        "label": "LIVRPS Composition"
+      },
+      {
+        "id": "urn:visionflow:linked:material-x-shading",
+        "label": "MaterialX Shading"
+      },
+      {
+        "id": "urn:visionflow:linked:open-pbr-material-model",
+        "label": "OpenPBR Material Model"
+      },
+      {
+        "id": "urn:visionflow:linked:open-subdiv-refinement",
+        "label": "OpenSubdiv Refinement"
+      },
+      {
+        "id": "urn:visionflow:linked:variant-selection",
+        "label": "Variant Selection"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-dgraphics-domain",
+      "label": "3DGraphicsDomain"
+    },
+    {
+      "slug": "alembic",
+      "label": "Alembic"
+    },
+    {
+      "slug": "alliance-for-open-usd",
+      "label": "Alliance for OpenUSD"
+    },
+    {
+      "slug": "aousd",
+      "label": "AOUSD"
+    },
+    {
+      "slug": "apple-vision-pro",
+      "label": "Apple Vision Pro"
+    },
+    {
+      "slug": "ar-quick-look",
+      "label": "AR Quick Look"
+    },
+    {
+      "slug": "asset-pipeline",
+      "label": "Asset Pipeline"
+    },
+    {
+      "slug": "asset-resolution",
+      "label": "Asset Resolution"
+    },
+    {
+      "slug": "autodesk-maya",
+      "label": "Autodesk Maya"
+    },
+    {
+      "slug": "c-api",
+      "label": "C++ API"
+    },
+    {
+      "slug": "collaborative-scene-assembly",
+      "label": "Collaborative Scene Assembly"
+    },
+    {
+      "slug": "collada",
+      "label": "COLLADA"
+    },
+    {
+      "slug": "composition-arcs",
+      "label": "Composition Arcs"
+    },
+    {
+      "slug": "crate-format",
+      "label": "Crate Format"
+    },
+    {
+      "slug": "creative-tools-domain",
+      "label": "CreativeToolsDomain"
+    },
+    {
+      "slug": "cross-dcc-interoperability",
+      "label": "Cross-DCC Interoperability"
+    },
+    {
+      "slug": "digital-twins",
+      "label": "Digital Twins"
+    },
+    {
+      "slug": "fbx",
+      "label": "FBX"
+    },
+    {
+      "slug": "film-and-animation-pipeline",
+      "label": "Film and Animation Pipeline"
+    },
+    {
+      "slug": "format-layer",
+      "label": "FormatLayer"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "glsl-shaders",
+      "label": "GLSL Shaders"
+    },
+    {
+      "slug": "houdini",
+      "label": "Houdini"
+    },
+    {
+      "slug": "hydra",
+      "label": "Hydra"
+    },
+    {
+      "slug": "hydra-scene-delegate",
+      "label": "Hydra Scene Delegate"
+    },
+    {
+      "slug": "industrial-simulation",
+      "label": "Industrial Simulation"
+    },
+    {
+      "slug": "joint-development-foundation",
+      "label": "Joint Development Foundation"
+    },
+    {
+      "slug": "layer-composition-algorithm",
+      "label": "Layer Composition Algorithm"
+    },
+    {
+      "slug": "layer-resolution",
+      "label": "Layer Resolution"
+    },
+    {
+      "slug": "layer-stack",
+      "label": "Layer Stack"
+    },
+    {
+      "slug": "linux-foundation",
+      "label": "Linux Foundation"
+    },
+    {
+      "slug": "livrps-composition",
+      "label": "LIVRPS Composition"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
+      "slug": "material-x-shading",
+      "label": "MaterialX Shading"
+    },
+    {
+      "slug": "metaverse-platforms",
+      "label": "Metaverse Platforms"
+    },
+    {
+      "slug": "non-destructive-editing",
+      "label": "Non-Destructive Editing"
+    },
+    {
+      "slug": "obj",
+      "label": "OBJ"
+    },
+    {
+      "slug": "open-color-io",
+      "label": "OpenColorIO"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
+      "slug": "open-pbr-material-model",
+      "label": "OpenPBR Material Model"
+    },
+    {
+      "slug": "open-subdiv",
+      "label": "OpenSubdiv"
+    },
+    {
+      "slug": "open-subdiv-refinement",
+      "label": "OpenSubdiv Refinement"
+    },
+    {
+      "slug": "open-vdb",
+      "label": "OpenVDB"
+    },
+    {
+      "slug": "pipeline-layer",
+      "label": "PipelineLayer"
+    },
+    {
+      "slug": "pixar-animation-studios",
+      "label": "Pixar Animation Studios"
+    },
+    {
+      "slug": "python-api",
+      "label": "Python API"
+    },
+    {
+      "slug": "renderer",
+      "label": "Renderer"
+    },
+    {
+      "slug": "rendering-layer",
+      "label": "RenderingLayer"
+    },
+    {
+      "slug": "robotics-simulation",
+      "label": "Robotics Simulation"
+    },
+    {
+      "slug": "schema-system",
+      "label": "Schema System"
+    },
+    {
+      "slug": "sdf-path-addressing",
+      "label": "SdfPath Addressing"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "usd-skel",
+      "label": "UsdSkel"
+    },
+    {
+      "slug": "usdz",
+      "label": "USDZ"
+    },
+    {
+      "slug": "variant-selection",
+      "label": "Variant Selection"
+    },
+    {
+      "slug": "variant-sets",
+      "label": "Variant Sets"
+    },
+    {
+      "slug": "vulkan",
+      "label": "Vulkan"
+    },
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "open-standard",
+      "label": "Open Standard"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "schema-registry",
+      "label": "Schema Registry"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

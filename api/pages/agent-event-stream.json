@@ -1,0 +1,236 @@
+{
+  "id": "urn:visionflow:page:9fcb3f1ffa363edc96704b3380b680782c37c446da066d747b5db5e163759645",
+  "title": "Agent Event Stream",
+  "slug": "agent-event-stream",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:agent-event-stream",
+  "domain": "artificial-intelligence",
+  "definition": "A real-time telemetry stream (surface S6) that emits [[ActivityStream|ActivityStreams]]-based JSON-LD events for agent lifecycle events (birth, startup, activity, completion, error, termination) via WebSocket, Nostr relay, or message queue, enabling external monitoring systems, dashboards, and orchestrators to track agent fleet health and work progress in real-time without polling.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.85,
+  "authorityScore": 0.88,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:event-emission",
+        "label": "Event Emission"
+      },
+      {
+        "id": "urn:visionflow:linked:event-filtering",
+        "label": "Event Filtering"
+      },
+      {
+        "id": "urn:visionflow:linked:event-indexing",
+        "label": "Event Indexing"
+      },
+      {
+        "id": "urn:visionflow:linked:event-subscription",
+        "label": "Event Subscription"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-streaming",
+        "label": "Real-Time Streaming"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:activity-streams-vocabulary",
+        "label": "ActivityStreams Vocabulary"
+      },
+      {
+        "id": "urn:visionflow:linked:event-schemas",
+        "label": "Event Schemas"
+      },
+      {
+        "id": "urn:visionflow:linked:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:visionflow:linked:web-socket-support",
+        "label": "WebSocket Support"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-alerting",
+        "label": "Automated Alerting"
+      },
+      {
+        "id": "urn:visionflow:linked:fleet-observability",
+        "label": "Fleet Observability"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:work-tracking",
+        "label": "Work Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:activity-streams-2-0",
+        "label": "ActivityStreams 2.0"
+      },
+      {
+        "id": "urn:visionflow:linked:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-event-streams",
+        "label": "W3C Event Streams"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-stream",
+      "label": "ActivityStream"
+    },
+    {
+      "slug": "activity-streams-2-0",
+      "label": "ActivityStreams 2.0"
+    },
+    {
+      "slug": "activity-streams-2-0-spec",
+      "label": "ActivityStreams 2.0 Spec"
+    },
+    {
+      "slug": "activity-streams-vocabulary",
+      "label": "ActivityStreams Vocabulary"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "automated-alerting",
+      "label": "Automated Alerting"
+    },
+    {
+      "slug": "data-analytics-platform",
+      "label": "Data Analytics Platform"
+    },
+    {
+      "slug": "event-emission",
+      "label": "Event Emission"
+    },
+    {
+      "slug": "event-filtering",
+      "label": "Event Filtering"
+    },
+    {
+      "slug": "event-indexing",
+      "label": "Event Indexing"
+    },
+    {
+      "slug": "event-schemas",
+      "label": "Event Schemas"
+    },
+    {
+      "slug": "event-subscription",
+      "label": "Event Subscription"
+    },
+    {
+      "slug": "fleet-observability",
+      "label": "Fleet Observability"
+    },
+    {
+      "slug": "json-ld-1-1",
+      "label": "JSON-LD 1.1"
+    },
+    {
+      "slug": "monitoring-system",
+      "label": "Monitoring System"
+    },
+    {
+      "slug": "observability-domain",
+      "label": "ObservabilityDomain"
+    },
+    {
+      "slug": "orchestration-system",
+      "label": "Orchestration System"
+    },
+    {
+      "slug": "prd-006",
+      "label": "PRD-006"
+    },
+    {
+      "slug": "real-time-monitoring",
+      "label": "Real-Time Monitoring"
+    },
+    {
+      "slug": "real-time-streaming",
+      "label": "Real-Time Streaming"
+    },
+    {
+      "slug": "telemetry-domain",
+      "label": "TelemetryDomain"
+    },
+    {
+      "slug": "telemetry-layer",
+      "label": "TelemetryLayer"
+    },
+    {
+      "slug": "w3-c-event-streams",
+      "label": "W3C Event Streams"
+    },
+    {
+      "slug": "web-socket-protocol",
+      "label": "WebSocket Protocol"
+    },
+    {
+      "slug": "web-socket-support",
+      "label": "WebSocket Support"
+    },
+    {
+      "slug": "work-tracking",
+      "label": "Work Tracking"
+    },
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:e04ede167a0b5e50ff9ad496a7e3fef9d21953fe32dc6f7e4ae54e21325677c8",
+  "title": "Middleware",
+  "slug": "middleware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:middleware",
+  "domain": "infrastructure",
+  "definition": "Software layer that mediates between applications and underlying services or infrastructure to enable communication, resource access, and interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:visionflow:linked:service-registry",
+        "label": "Service Registry"
+      },
+      {
+        "id": "urn:visionflow:owl:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:visionflow:owl:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:distributed-communication",
+        "label": "Distributed Communication"
+      },
+      {
+        "id": "urn:visionflow:linked:resource-abstraction",
+        "label": "Resource Abstraction"
+      },
+      {
+        "id": "urn:visionflow:linked:service-integration",
+        "label": "Service Integration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-communication",
+      "label": "Distributed Communication"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF Taxonomy"
+    },
+    {
+      "slug": "iso-iec-30170",
+      "label": "ISO/IEC 30170"
+    },
+    {
+      "slug": "message-queue",
+      "label": "Message Queue"
+    },
+    {
+      "slug": "resource-abstraction",
+      "label": "Resource Abstraction"
+    },
+    {
+      "slug": "service-discovery",
+      "label": "Service Discovery"
+    },
+    {
+      "slug": "service-integration",
+      "label": "Service Integration"
+    },
+    {
+      "slug": "service-registry",
+      "label": "Service Registry"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "data-format",
+      "label": "Data Format"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

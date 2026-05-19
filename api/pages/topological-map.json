@@ -1,0 +1,479 @@
+{
+  "id": "urn:visionflow:page:40c5efe467169b9c09e165536ca95b16c6db3726eb23470edc8bda7c49f7153e",
+  "title": "Topological Map",
+  "slug": "topological-map",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:topological-map",
+  "domain": "robotics",
+  "definition": "[[Topological Map]] is a graph-structured spatial abstraction used in [[Mobile Robot Navigation]] and [[Autonomous Navigation]], representing environments as discrete nodes (places, waypoints, landmarks) connected by edges (traversable paths, transitions) rather than storing explicit metric coordinates in a [[Metric Map]] or dense [[Occupancy Grid]]. Distinguished from continuous metric representations by its qualitative encoding of connectivity and navigability, a topological map captures the essential relational structure of space \u2014 which places are reachable from which, through which corridors or doorways \u2014 whilst abstracting away precise Euclidean geometry. This graph [[Spatial Representation]] enables polynomial-complexity global [[Path Planning]] via Dijkstra or A* over sparse node sets (10\u201310,000 nodes) compared to exponential search over dense grids, and supports human-interpretable spatial reasoning using [[Semantic Label]] references and sequential directions that align with how humans naturally describe routes. Nodes encode place identity through visual appearance descriptors (HOG features, [[Convolutional Neural Networks|CNN]] embeddings, [[FAB-MAP]] probabilistic vocab",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:cognitive-map",
+      "label": "Cognitive Map"
+    },
+    {
+      "id": "urn:visionflow:linked:mobile-robot-navigation",
+      "label": "Mobile Robot Navigation"
+    },
+    {
+      "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "id": "urn:visionflow:linked:spatial-representation",
+      "label": "Spatial Representation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:graph-database",
+      "label": "Graph Database"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:graph-optimiser",
+        "label": "Graph Optimiser"
+      },
+      {
+        "id": "urn:visionflow:linked:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:place-node",
+        "label": "Place Node"
+      },
+      {
+        "id": "urn:visionflow:linked:place-recognition-module",
+        "label": "Place Recognition Module"
+      },
+      {
+        "id": "urn:visionflow:linked:pose-graph",
+        "label": "Pose Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-label",
+        "label": "Semantic Label"
+      },
+      {
+        "id": "urn:visionflow:linked:transition-edge",
+        "label": "Transition Edge"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:graph-representation",
+        "label": "Graph Representation"
+      },
+      {
+        "id": "urn:visionflow:linked:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-place-recognition",
+        "label": "Visual Place Recognition"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:odometry",
+        "label": "Odometry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:lifelong-mapping",
+        "label": "Lifelong Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:long-range-navigation",
+        "label": "Long-Range Navigation"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:semantic-navigation",
+        "label": "Semantic Navigation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:fab-map",
+        "label": "FAB-MAP"
+      },
+      {
+        "id": "urn:visionflow:linked:pose-graph",
+        "label": "Pose Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:rtab-map",
+        "label": "RTAB-Map"
+      },
+      {
+        "id": "urn:visionflow:linked:spatial-semantic-hierarchy",
+        "label": "Spatial Semantic Hierarchy"
+      },
+      {
+        "id": "urn:visionflow:linked:visual-place-recognition",
+        "label": "Visual Place Recognition"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "assistive-robotics",
+      "label": "Assistive Robotics"
+    },
+    {
+      "slug": "bag-of-words-model",
+      "label": "Bag-of-Words Model"
+    },
+    {
+      "slug": "bag-of-words-model",
+      "label": "Bag-of-Words Model"
+    },
+    {
+      "slug": "bayesian-estimation",
+      "label": "Bayesian Estimation"
+    },
+    {
+      "slug": "bundle-adjustment",
+      "label": "Bundle Adjustment"
+    },
+    {
+      "slug": "cognitive-map",
+      "label": "Cognitive Map"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "dense-3-d-reconstruction",
+      "label": "Dense 3D Reconstruction"
+    },
+    {
+      "slug": "fab-map",
+      "label": "FAB-MAP"
+    },
+    {
+      "slug": "feature-descriptors",
+      "label": "Feature Descriptors"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "graph-optimiser",
+      "label": "Graph Optimiser"
+    },
+    {
+      "slug": "graph-representation",
+      "label": "Graph Representation"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "ieee-ras",
+      "label": "IEEE RAS"
+    },
+    {
+      "slug": "lifelong-mapping",
+      "label": "Lifelong Mapping"
+    },
+    {
+      "slug": "long-range-navigation",
+      "label": "Long-Range Navigation"
+    },
+    {
+      "slug": "loop-closure-detection",
+      "label": "Loop Closure Detection"
+    },
+    {
+      "slug": "loop-closure-detection",
+      "label": "Loop Closure Detection"
+    },
+    {
+      "slug": "metric-map",
+      "label": "Metric Map"
+    },
+    {
+      "slug": "metric-map",
+      "label": "Metric Map"
+    },
+    {
+      "slug": "mobile-robot-navigation",
+      "label": "Mobile Robot Navigation"
+    },
+    {
+      "slug": "multi-robot-systems",
+      "label": "Multi-Robot Systems"
+    },
+    {
+      "slug": "occupancy-grid",
+      "label": "Occupancy Grid"
+    },
+    {
+      "slug": "occupancy-grid",
+      "label": "Occupancy Grid"
+    },
+    {
+      "slug": "occupancy-grid",
+      "label": "Occupancy Grid"
+    },
+    {
+      "slug": "occupancy-grid",
+      "label": "Occupancy Grid"
+    },
+    {
+      "slug": "open-slam",
+      "label": "OpenSLAM"
+    },
+    {
+      "slug": "orb-slam",
+      "label": "ORB-SLAM"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "PerceptionLayer"
+    },
+    {
+      "slug": "place-node",
+      "label": "Place Node"
+    },
+    {
+      "slug": "place-recognition-module",
+      "label": "Place Recognition Module"
+    },
+    {
+      "slug": "planning-layer",
+      "label": "PlanningLayer"
+    },
+    {
+      "slug": "point-cloud-map",
+      "label": "Point Cloud Map"
+    },
+    {
+      "slug": "point-cloud-map",
+      "label": "Point Cloud Map"
+    },
+    {
+      "slug": "pose-graph",
+      "label": "Pose Graph"
+    },
+    {
+      "slug": "pose-graph",
+      "label": "Pose Graph"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "ransac",
+      "label": "RANSAC"
+    },
+    {
+      "slug": "robotics-and-autonomous-domain",
+      "label": "RoboticsAndAutonomousDomain"
+    },
+    {
+      "slug": "ros-navigation-stack",
+      "label": "ROS Navigation Stack"
+    },
+    {
+      "slug": "rtab-map",
+      "label": "RTAB-Map"
+    },
+    {
+      "slug": "search-and-rescue-robotics",
+      "label": "Search and Rescue Robotics"
+    },
+    {
+      "slug": "semantic-label",
+      "label": "Semantic Label"
+    },
+    {
+      "slug": "semantic-navigation",
+      "label": "Semantic Navigation"
+    },
+    {
+      "slug": "service-robots",
+      "label": "Service Robots"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "spatial-cognition",
+      "label": "Spatial Cognition"
+    },
+    {
+      "slug": "spatial-cognition-domain",
+      "label": "SpatialCognitionDomain"
+    },
+    {
+      "slug": "spatial-representation",
+      "label": "Spatial Representation"
+    },
+    {
+      "slug": "spatial-representation",
+      "label": "Spatial Representation"
+    },
+    {
+      "slug": "spatial-semantic-hierarchy",
+      "label": "Spatial Semantic Hierarchy"
+    },
+    {
+      "slug": "transition-edge",
+      "label": "Transition Edge"
+    },
+    {
+      "slug": "visual-odometry",
+      "label": "Visual Odometry"
+    },
+    {
+      "slug": "visual-odometry",
+      "label": "Visual Odometry"
+    },
+    {
+      "slug": "visual-place-recognition",
+      "label": "Visual Place Recognition"
+    },
+    {
+      "slug": "visual-place-recognition",
+      "label": "Visual Place Recognition"
+    },
+    {
+      "slug": "visual-place-recognition",
+      "label": "Visual Place Recognition"
+    },
+    {
+      "slug": "warehouse-robotics",
+      "label": "Warehouse Robotics"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ],
+  "backlinks": []
+}

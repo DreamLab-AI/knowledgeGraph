@@ -1,0 +1,178 @@
+{
+  "id": "urn:visionflow:page:87e94a87e9a65f7dd844e9523698a3bcd963ac744b4725274f8b42fc0cf244be",
+  "title": "Inverse Kinematics",
+  "slug": "inverse-kinematics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inverse-kinematics",
+  "domain": "robotics",
+  "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:kinematics",
+      "label": "Kinematics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.97,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:kinematic-model",
+        "label": "Kinematic Model"
+      },
+      {
+        "id": "urn:visionflow:linked:target-pose",
+        "label": "Target Pose"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:rb-1016-path-planning",
+        "label": "RB-1016-path-planning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analytical-methods",
+      "label": "Analytical Methods"
+    },
+    {
+      "slug": "complexity",
+      "label": "Complexity"
+    },
+    {
+      "slug": "jacobian-matrix",
+      "label": "Jacobian Matrix"
+    },
+    {
+      "slug": "joint-configuration",
+      "label": "Joint Configuration"
+    },
+    {
+      "slug": "joint-limits",
+      "label": "Joint Limits"
+    },
+    {
+      "slug": "kinematic-model",
+      "label": "Kinematic Model"
+    },
+    {
+      "slug": "multiple-solutions",
+      "label": "Multiple Solutions"
+    },
+    {
+      "slug": "no-solution",
+      "label": "No Solution"
+    },
+    {
+      "slug": "non-uniqueness",
+      "label": "Non-Uniqueness"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "rb-0003-manipulator",
+      "label": "RB-0003-manipulator"
+    },
+    {
+      "slug": "rb-0004-humanoid-robot",
+      "label": "RB-0004-humanoid-robot"
+    },
+    {
+      "slug": "rb-1005-forward-kinematics",
+      "label": "RB-1005-forward-kinematics"
+    },
+    {
+      "slug": "rb-1016-path-planning",
+      "label": "RB-1016-path-planning"
+    },
+    {
+      "slug": "singularities",
+      "label": "Singularities"
+    },
+    {
+      "slug": "target-pose",
+      "label": "Target Pose"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "animation-retargeting",
+      "label": "Animation Retargeting"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

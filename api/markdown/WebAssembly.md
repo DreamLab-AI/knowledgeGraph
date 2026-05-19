@@ -1,20 +1,714 @@
-iri:: http://narrativegoldmine.com/infrastructure#Webassembly
-uri:: urn:visionclaw:concept:infrastructure:webassembly
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:webassembly
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: WebAssembly
-content-hash:: sha256-12-3f7a1c8d2e94
-status:: complete
-maturity:: established
-quality-score:: 0.70
-authority-score:: 0.82
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#Webassembly
+legacy_uri:: urn:visionclaw:concept:infrastructure:webassembly
 public:: true
+
+# WebAssembly
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350",
+  "@type": "Page",
+  "vc:slug": "web-assembly",
+  "title": "WebAssembly",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:binary-encoding-standard",
+      "vc:label": "Binary Encoding Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:binary-instruction-format",
+      "vc:label": "Binary Instruction Format"
+    },
+    {
+      "@id": "urn:visionflow:linked:bytecode-alliance",
+      "vc:label": "Bytecode Alliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:component-model",
+      "vc:label": "Component Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:containerd",
+      "vc:label": "Containerd"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-language-interoperability",
+      "vc:label": "Cross-Language Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-replay",
+      "vc:label": "Deterministic Replay"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing-stack",
+      "vc:label": "Edge Computing Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-inference",
+      "vc:label": "Edge Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:host-runtime",
+      "vc:label": "Host Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:java-script",
+      "vc:label": "JavaScript"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:llvm-compiler-toolchain",
+      "vc:label": "LLVM Compiler Toolchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:micro-ros",
+      "vc:label": "micro-ROS"
+    },
+    {
+      "@id": "urn:visionflow:linked:mobile-net",
+      "vc:label": "MobileNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:onnx-runtime",
+      "vc:label": "ONNX Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:pldi-2017-web-assembly-paper",
+      "vc:label": "PLDI 2017 WebAssembly Paper"
+    },
+    {
+      "@id": "urn:visionflow:linked:portable-execution-environment",
+      "vc:label": "Portable Execution Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:runtime-layer",
+      "vc:label": "RuntimeLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxed-agent-execution",
+      "vc:label": "Sandboxed Agent Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:stack-based-virtual-machine",
+      "vc:label": "Stack-Based Virtual Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-web-assembly-specification",
+      "vc:label": "W3C WebAssembly Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasi",
+      "vc:label": "WASI"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasi-interface",
+      "vc:label": "WASI Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasi-preview-2",
+      "vc:label": "WASI Preview 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasi-standard",
+      "vc:label": "WASI Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-import-object",
+      "vc:label": "Wasm Import Object"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-linear-memory",
+      "vc:label": "Wasm Linear Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-module",
+      "vc:label": "Wasm Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-table",
+      "vc:label": "Wasm Table"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasmer-runtime",
+      "vc:label": "Wasmer Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasmtime-runtime",
+      "vc:label": "Wasmtime Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-browser",
+      "vc:label": "Web Browser"
+    },
+    {
+      "@id": "urn:visionflow:linked:whisper",
+      "vc:label": "Whisper"
+    },
+    {
+      "@id": "urn:visionflow:linked:whisper-cpp",
+      "vc:label": "Whisper.cpp"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-layer",
+      "vc:label": "InfrastructureLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "Metaverse Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "vc:label": "NGM Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-xr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "Robotics Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "vc:label": "Telecollaboration Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
+      "vc:label": "URI Canonicaliser"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:web-rtc",
+      "vc:label": "WebRTC"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.82"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-3f7a1c8d2e94"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#Webassembly"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "WebAssembly"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.70"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:webassembly"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:webassembly"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:web-assembly",
+  "@type": "OntologyClass",
+  "label": "WebAssembly",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:binary-instruction-format",
+      "vc:label": "Binary Instruction Format"
+    },
+    {
+      "@id": "urn:visionflow:linked:portable-execution-environment",
+      "vc:label": "Portable Execution Environment"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side runtimes such as [[WASI]] (WebAssembly System Interface). It is the primary runtime substrate for [[VisionClaw Agentic Container]] agent modules, allowing deterministic, sandboxed, language-agnostic execution of untrusted code across heterogeneous deployment environments including edge nodes, browsers, and embedded hardware.",
+  "vc:qualityScore": {
+    "@value": "0.70",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.82",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:edge-computing-stack",
+      "vc:label": "Edge Computing Stack"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:wasi-interface",
+      "vc:label": "WASI Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-import-object",
+      "vc:label": "Wasm Import Object"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-linear-memory",
+      "vc:label": "Wasm Linear Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-module",
+      "vc:label": "Wasm Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasm-table",
+      "vc:label": "Wasm Table"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:binary-encoding-standard",
+      "vc:label": "Binary Encoding Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:host-runtime",
+      "vc:label": "Host Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:stack-based-virtual-machine",
+      "vc:label": "Stack-Based Virtual Machine"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:cross-language-interoperability",
+      "vc:label": "Cross-Language Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:deterministic-replay",
+      "vc:label": "Deterministic Replay"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-inference",
+      "vc:label": "Edge Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxed-agent-execution",
+      "vc:label": "Sandboxed Agent Execution"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:w3-c-web-assembly-specification",
+      "vc:label": "W3C WebAssembly Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasi-standard",
+      "vc:label": "WASI Standard"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:llvm-compiler-toolchain",
+      "vc:label": "LLVM Compiler Toolchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasmer-runtime",
+      "vc:label": "Wasmer Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasmtime-runtime",
+      "vc:label": "Wasmtime Runtime"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-xr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-operating-system",
+      "vc:label": "Robot Operating System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:web-assembly:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Domain]]",
+      "resolved": "urn:visionflow:linked:ai-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binary Encoding Standard]]",
+      "resolved": "urn:visionflow:linked:binary-encoding-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Binary Instruction Format]]",
+      "resolved": "urn:visionflow:linked:binary-instruction-format",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bytecode Alliance]]",
+      "resolved": "urn:visionflow:linked:bytecode-alliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Component Model]]",
+      "resolved": "urn:visionflow:linked:component-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Containerd]]",
+      "resolved": "urn:visionflow:linked:containerd",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cross-Language Interoperability]]",
+      "resolved": "urn:visionflow:linked:cross-language-interoperability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deterministic Replay]]",
+      "resolved": "urn:visionflow:linked:deterministic-replay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Edge Computing Stack]]",
+      "resolved": "urn:visionflow:linked:edge-computing-stack",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Edge Inference]]",
+      "resolved": "urn:visionflow:linked:edge-inference",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Host Runtime]]",
+      "resolved": "urn:visionflow:linked:host-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JavaScript]]",
+      "resolved": "urn:visionflow:linked:java-script",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kubernetes]]",
+      "resolved": "urn:visionflow:linked:kubernetes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Large Language Model]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LLVM Compiler Toolchain]]",
+      "resolved": "urn:visionflow:linked:llvm-compiler-toolchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[micro-ROS]]",
+      "resolved": "urn:visionflow:linked:micro-ros",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MobileNet]]",
+      "resolved": "urn:visionflow:linked:mobile-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ONNX Runtime]]",
+      "resolved": "urn:visionflow:linked:onnx-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PLDI 2017 WebAssembly Paper]]",
+      "resolved": "urn:visionflow:linked:pldi-2017-web-assembly-paper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Portable Execution Environment]]",
+      "resolved": "urn:visionflow:linked:portable-execution-environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RuntimeLayer]]",
+      "resolved": "urn:visionflow:linked:runtime-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sandboxed Agent Execution]]",
+      "resolved": "urn:visionflow:linked:sandboxed-agent-execution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stack-Based Virtual Machine]]",
+      "resolved": "urn:visionflow:linked:stack-based-virtual-machine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C WebAssembly Specification]]",
+      "resolved": "urn:visionflow:linked:w3-c-web-assembly-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WASI]]",
+      "resolved": "urn:visionflow:linked:wasi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WASI Interface]]",
+      "resolved": "urn:visionflow:linked:wasi-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WASI Preview 2]]",
+      "resolved": "urn:visionflow:linked:wasi-preview-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WASI Standard]]",
+      "resolved": "urn:visionflow:linked:wasi-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wasm Import Object]]",
+      "resolved": "urn:visionflow:linked:wasm-import-object",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wasm Linear Memory]]",
+      "resolved": "urn:visionflow:linked:wasm-linear-memory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wasm Module]]",
+      "resolved": "urn:visionflow:linked:wasm-module",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wasm Table]]",
+      "resolved": "urn:visionflow:linked:wasm-table",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wasmer Runtime]]",
+      "resolved": "urn:visionflow:linked:wasmer-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wasmtime Runtime]]",
+      "resolved": "urn:visionflow:linked:wasmtime-runtime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Web Browser]]",
+      "resolved": "urn:visionflow:linked:web-browser",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Whisper]]",
+      "resolved": "urn:visionflow:linked:whisper",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Whisper.cpp]]",
+      "resolved": "urn:visionflow:linked:whisper-cpp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InfrastructureLayer]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse Domain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:owl:class:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NGM Domain]]",
+      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenXR]]",
+      "resolved": "urn:visionflow:owl:class:open-xr",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Operating System]]",
+      "resolved": "urn:visionflow:owl:class:robot-operating-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics Domain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration Domain]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[URI Canonicaliser]]",
+      "resolved": "urn:visionflow:owl:class:uri-canonicaliser",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container|agentbox]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[WebRTC]]",
+      "resolved": "urn:visionflow:owl:class:web-rtc",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side runtimes such as [[WASI]] (WebAssembly System Interface). It is the primary runtime substrate for [[VisionClaw Agentic Container]] agent modules, allowing deterministic, sandboxed, language-agnostic execution of untrusted code across heterogeneous deployment environments including edge nodes, browsers, and embedded hardware.

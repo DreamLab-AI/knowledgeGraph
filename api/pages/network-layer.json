@@ -1,0 +1,334 @@
+{
+  "id": "urn:visionflow:page:f6ed4c1c16a670412656421bbc7634524db787ea40edbdb762af7104f77d55d2",
+  "title": "Network Layer",
+  "slug": "network-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:network-layer",
+  "domain": "infrastructure",
+  "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:architectural-layer",
+      "label": "ArchitecturalLayer"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-stack",
+        "label": "Protocol Stack"
+      },
+      {
+        "id": "urn:visionflow:linked:qo-s-manager",
+        "label": "QoS Manager"
+      },
+      {
+        "id": "urn:visionflow:linked:routing-engine",
+        "label": "Routing Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bandwidth-allocation",
+        "label": "Bandwidth Allocation"
+      },
+      {
+        "id": "urn:visionflow:linked:latency-management",
+        "label": "Latency Management"
+      },
+      {
+        "id": "urn:visionflow:linked:message-delivery",
+        "label": "Message Delivery"
+      },
+      {
+        "id": "urn:visionflow:linked:network-resilience",
+        "label": "Network Resilience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "architectural-layer",
+      "label": "ArchitecturalLayer"
+    },
+    {
+      "slug": "bandwidth-allocation",
+      "label": "Bandwidth Allocation"
+    },
+    {
+      "slug": "congestion-control",
+      "label": "Congestion Control"
+    },
+    {
+      "slug": "latency-management",
+      "label": "Latency Management"
+    },
+    {
+      "slug": "message-delivery",
+      "label": "Message Delivery"
+    },
+    {
+      "slug": "narrative-gold-mine",
+      "label": "Narrative Gold Mine"
+    },
+    {
+      "slug": "network-resilience",
+      "label": "Network Resilience"
+    },
+    {
+      "slug": "protocol-stack",
+      "label": "Protocol Stack"
+    },
+    {
+      "slug": "qo-s-manager",
+      "label": "QoS Manager"
+    },
+    {
+      "slug": "routing-engine",
+      "label": "Routing Engine"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "6-g-network-slice",
+      "label": "6G Network Slice"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "behavioural-feedback-loop",
+      "label": "Behavioural Feedback Loop"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cognitive-feedback-interface",
+      "label": "Cognitive Feedback Interface"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-mesh-network",
+      "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "edge-network",
+      "label": "Edge Network"
+    },
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "human-interface-layer-hil",
+      "label": "Human Interface Layer (HIL)"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "latency-management-protocol",
+      "label": "Latency Management Protocol"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

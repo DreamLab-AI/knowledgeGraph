@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:5bbbc580423079f25fb297b4bdeb9ea5027badf2004c1225889a342e72f62559",
+  "title": "Product Recall Management",
+  "slug": "product-recall-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:product-recall-management",
+  "domain": "blockchain",
+  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-85% whilst accelerating contamination source identification from days to seconds, deployed at scale by [[Walmart]] (6 days \u2192 2.2 seconds mango tracing), [[Carrefour]], [[MediLedger]], and automotive consortia for food safety, pharmaceuticals, and vehicle component recalls.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub-needs-content",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automotive-safety",
+      "label": "Automotive Safety"
+    },
+    {
+      "slug": "bc-0188-self-sovereign-identity",
+      "label": "BC-0188-self-sovereign-identity"
+    },
+    {
+      "slug": "bc-0202-zero-knowledge-proofs",
+      "label": "BC-0202-zero-knowledge-proofs"
+    },
+    {
+      "slug": "bc-0319-micropayments",
+      "label": "BC-0319-micropayments"
+    },
+    {
+      "slug": "bc-0440-blockchain-interoperability",
+      "label": "BC-0440-blockchain-interoperability"
+    },
+    {
+      "slug": "bc-0441-supply-chain-traceability",
+      "label": "BC-0441-supply-chain-traceability"
+    },
+    {
+      "slug": "bc-0442-certification-and-compliance",
+      "label": "BC-0442-certification-and-compliance"
+    },
+    {
+      "slug": "bc-0445-conflict-mineral-tracking",
+      "label": "BC-0445-conflict-mineral-tracking"
+    },
+    {
+      "slug": "bc-0446-food-traceability",
+      "label": "BC-0446-food-traceability"
+    },
+    {
+      "slug": "bc-0447-pharmaceutical-traceability",
+      "label": "BC-0447-pharmaceutical-traceability"
+    },
+    {
+      "slug": "bc-0448-luxury-goods-authentication",
+      "label": "BC-0448-luxury-goods-authentication"
+    },
+    {
+      "slug": "bc-0449-timber-and-forest-products",
+      "label": "BC-0449-timber-and-forest-products"
+    },
+    {
+      "slug": "bc-0453-ethical-sourcing",
+      "label": "BC-0453-ethical-sourcing"
+    },
+    {
+      "slug": "bc-0454-waste-management",
+      "label": "BC-0454-waste-management"
+    },
+    {
+      "slug": "carrefour",
+      "label": "Carrefour"
+    },
+    {
+      "slug": "dscsa",
+      "label": "DSCSA"
+    },
+    {
+      "slug": "fda-regulations",
+      "label": "FDA Regulations"
+    },
+    {
+      "slug": "food-safety",
+      "label": "Food Safety"
+    },
+    {
+      "slug": "fsma-section-204",
+      "label": "FSMA Section 204"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
+    },
+    {
+      "slug": "pharmaceutical-safety",
+      "label": "Pharmaceutical Safety"
+    },
+    {
+      "slug": "product-liability",
+      "label": "Product Liability"
+    },
+    {
+      "slug": "quality-management",
+      "label": "Quality Management"
+    },
+    {
+      "slug": "supply-chain-risk-management",
+      "label": "Supply Chain Risk Management"
+    },
+    {
+      "slug": "walmart",
+      "label": "Walmart"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    }
+  ],
+  "backlinks": []
+}

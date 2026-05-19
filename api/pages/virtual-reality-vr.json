@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:5230b4265c60c0d9a70ad295fda0dd684e5456380d71b70fb441e2b7fae00fe7",
+  "title": "Virtual Reality (VR)",
+  "slug": "virtual-reality-vr",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-reality-vr",
+  "domain": "spatial-computing",
+  "definition": "Immersive technology system that combines physical head-mounted display hardware with virtual computer-generated 3D environments to create fully encompassing sensory experiences that replace user perception of the physical world.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:visionflow:linked:tracking-sensors",
+        "label": "Tracking Sensors"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:vr-controllers",
+        "label": "VR Controllers"
+      },
+      {
+        "id": "urn:visionflow:owl:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:6-do-f-tracking",
+        "label": "6DoF Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-display",
+        "label": "Low-Latency Display"
+      },
+      {
+        "id": "urn:visionflow:linked:stereoscopic-rendering",
+        "label": "Stereoscopic Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:immersive-gaming",
+        "label": "Immersive Gaming"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-training",
+        "label": "Virtual Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "6-do-f-tracking",
+      "label": "6DoF Tracking"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "head-mounted-display",
+      "label": "Head-Mounted Display"
+    },
+    {
+      "slug": "ieee-vr-standards",
+      "label": "IEEE VR Standards"
+    },
+    {
+      "slug": "iso-iec-18039",
+      "label": "ISO/IEC 18039"
+    },
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
+      "slug": "low-latency-display",
+      "label": "Low-Latency Display"
+    },
+    {
+      "slug": "stereoscopic-rendering",
+      "label": "Stereoscopic Rendering"
+    },
+    {
+      "slug": "tracking-sensors",
+      "label": "Tracking Sensors"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "immersive-gaming",
+      "label": "Immersive Gaming"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-time Rendering"
+    },
+    {
+      "slug": "spatial-audio-system",
+      "label": "Spatial Audio System"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "virtual-presence",
+      "label": "Virtual Presence"
+    },
+    {
+      "slug": "virtual-tourism",
+      "label": "Virtual Tourism"
+    },
+    {
+      "slug": "virtual-training",
+      "label": "Virtual Training"
+    },
+    {
+      "slug": "vr-controllers",
+      "label": "VR Controllers"
+    },
+    {
+      "slug": "vr-rendering-engine",
+      "label": "VR Rendering Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    }
+  ]
+}

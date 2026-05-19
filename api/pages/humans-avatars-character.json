@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:7faad208f4462f69b971c845bc83a52af86788ce373c416000703bd34ef69efd",
+  "title": "Humans, Avatars , Character",
+  "slug": "humans-avatars-character",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:humans-avatars-character",
+  "domain": "infrastructure",
+  "definition": "Humans, Avatars , Character is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "louby-lou",
+      "label": "louby-lou"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    }
+  ]
+}

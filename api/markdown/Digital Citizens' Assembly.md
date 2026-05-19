@@ -1,24 +1,463 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalCitizensAssembly
-uri:: urn:visionclaw:concept:spatial-computing:digital-citizens-assembly
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-citizens-assembly
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Citizens' Assembly
-content-hash:: sha256-12-b1f2b008cd37
-legacy-term-id:: MV-20233
-status:: draft
-maturity:: production-ready
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalCitizensAssembly
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-citizens-assembly
 public:: true
+
+# Digital Citizens' Assembly
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e",
+  "@type": "Page",
+  "vc:slug": "digital-citizens-assembly",
+  "title": "Digital Citizens' Assembly",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:civic-engagement-platform",
+      "vc:label": "Civic Engagement Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-decision-making",
+      "vc:label": "Collective Decision-Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-recording-system",
+      "vc:label": "Decision Recording System"
+    },
+    {
+      "@id": "urn:visionflow:linked:deliberation-agent",
+      "vc:label": "Deliberation Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:democratic-deliberation",
+      "vc:label": "Democratic Deliberation"
+    },
+    {
+      "@id": "urn:visionflow:linked:democratic-governance-system",
+      "vc:label": "Democratic Governance System"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-voting",
+      "vc:label": "Distributed Voting"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-synthesis-engine",
+      "vc:label": "Policy Synthesis Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-communication",
+      "vc:label": "Secure Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-input",
+      "vc:label": "Sensor Input"
+    },
+    {
+      "@id": "urn:visionflow:linked:un-habitat-digital-civics",
+      "vc:label": "UN Habitat Digital Civics"
+    },
+    {
+      "@id": "urn:visionflow:linked:voting-mechanism",
+      "vc:label": "Voting Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:participant-management-system",
+      "vc:label": "Participant Management System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:participatory-policy-making",
+      "vc:label": "Participatory Policy Making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparent-governance",
+      "vc:label": "Transparent Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "vc:label": "VirtualSocietyDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-world-platform",
+      "vc:label": "Virtual World Platform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-meeting-space",
+      "vc:label": "XR Meeting Space"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b1f2b008cd37"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalCitizensAssembly"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-20233"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production-ready"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Citizens' Assembly"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-citizens-assembly"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-citizens-assembly"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-citizens-assembly",
+  "@type": "OntologyClass",
+  "label": "Digital Citizens' Assembly",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "vc:label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "production-ready",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Structured deliberation process using XR spaces for policy co-creation through multi-agent democratic decision-making. bridges-to:: [[Sensor Input]]",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:civic-engagement-platform",
+      "vc:label": "Civic Engagement Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:democratic-governance-system",
+      "vc:label": "Democratic Governance System"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:deliberation-agent",
+      "vc:label": "Deliberation Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-synthesis-engine",
+      "vc:label": "Policy Synthesis Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:voting-mechanism",
+      "vc:label": "Voting Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:participant-management-system",
+      "vc:label": "Participant Management System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:xr-meeting-space",
+      "vc:label": "XR Meeting Space"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:decision-recording-system",
+      "vc:label": "Decision Recording System"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-communication",
+      "vc:label": "Secure Communication"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:consensus-protocol",
+      "vc:label": "Consensus Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-verification",
+      "vc:label": "Identity Verification"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:collective-decision-making",
+      "vc:label": "Collective Decision-Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:democratic-deliberation",
+      "vc:label": "Democratic Deliberation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:participatory-policy-making",
+      "vc:label": "Participatory Policy Making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparent-governance",
+      "vc:label": "Transparent Governance"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:distributed-voting",
+      "vc:label": "Distributed Voting"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-world-platform",
+      "vc:label": "Virtual World Platform"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-citizens-assembly:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Civic Engagement Platform]]",
+      "resolved": "urn:visionflow:linked:civic-engagement-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collective Decision-Making]]",
+      "resolved": "urn:visionflow:linked:collective-decision-making",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Recording System]]",
+      "resolved": "urn:visionflow:linked:decision-recording-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deliberation Agent]]",
+      "resolved": "urn:visionflow:linked:deliberation-agent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Democratic Deliberation]]",
+      "resolved": "urn:visionflow:linked:democratic-deliberation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Democratic Governance System]]",
+      "resolved": "urn:visionflow:linked:democratic-governance-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Distributed Voting]]",
+      "resolved": "urn:visionflow:linked:distributed-voting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Agent Coordination]]",
+      "resolved": "urn:visionflow:linked:multi-agent-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Policy Synthesis Engine]]",
+      "resolved": "urn:visionflow:linked:policy-synthesis-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Secure Communication]]",
+      "resolved": "urn:visionflow:linked:secure-communication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensor Input]]",
+      "resolved": "urn:visionflow:linked:sensor-input",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UN Habitat Digital Civics]]",
+      "resolved": "urn:visionflow:linked:un-habitat-digital-civics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Voting Mechanism]]",
+      "resolved": "urn:visionflow:linked:voting-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consensus Protocol]]",
+      "resolved": "urn:visionflow:owl:class:consensus-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Verification]]",
+      "resolved": "urn:visionflow:owl:class:identity-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Participant Management System]]",
+      "resolved": "urn:visionflow:owl:class:participant-management-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Participatory Policy Making]]",
+      "resolved": "urn:visionflow:owl:class:participatory-policy-making",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparent Governance]]",
+      "resolved": "urn:visionflow:owl:class:transparent-governance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualSocietyDomain]]",
+      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual World Platform]]",
+      "resolved": "urn:visionflow:owl:class:virtual-world-platform",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[XR Meeting Space]]",
+      "resolved": "urn:visionflow:owl:class:xr-meeting-space",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Structured deliberation process using XR spaces for policy co-creation through multi-agent democratic decision-making.

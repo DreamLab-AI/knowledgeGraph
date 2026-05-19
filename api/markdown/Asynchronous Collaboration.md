@@ -1,22 +1,319 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#AsynchronousCollaboration
-uri:: urn:visionclaw:concept:distributed-collaboration:asynchronous-collaboration
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:asynchronous-collaboration
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Asynchronous Collaboration
-content-hash:: sha256-12-f4dcb70a2f3d
-legacy-term-id:: TC-0020
-status:: active
-maturity:: mature
-quality-score:: 0.55
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:12:53Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#AsynchronousCollaboration
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:asynchronous-collaboration
 public:: true
-bridges-to:: [[Virtual Workspace]]
+
+# Asynchronous Collaboration
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d",
+  "@type": "Page",
+  "vc:slug": "asynchronous-collaboration",
+  "title": "Asynchronous Collaboration",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:documentation-culture",
+      "vc:label": "Documentation Culture"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation-systems",
+      "vc:label": "Documentation Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-accessibility",
+      "vc:label": "Global Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso",
+      "vc:label": "ISO"
+    },
+    {
+      "@id": "urn:visionflow:linked:rfc",
+      "vc:label": "RFC"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "vc:label": "TC-0001-telecollaboration-domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0010-synchronous-collaboration",
+      "vc:label": "TC-0010-Synchronous-Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0021-collaborative-document-editing",
+      "vc:label": "TC-0021-Collaborative-Document-Editing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0022-version-control",
+      "vc:label": "TC-0022-Version-Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0024-project-management-system",
+      "vc:label": "TC-0024-Project-Management-System"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0025-issue-tracking",
+      "vc:label": "TC-0025-Issue-Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0026-code-review",
+      "vc:label": "TC-0026-Code-Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0080-team-coordination",
+      "vc:label": "TC-0080-Team-Coordination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Virtual Workspace]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-f4dcb70a2f3d"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#AsynchronousCollaboration"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0020"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:12:53Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Asynchronous Collaboration"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.55"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:asynchronous-collaboration"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:asynchronous-collaboration"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:asynchronous-collaboration",
+  "@type": "OntologyClass",
+  "label": "Asynchronous Collaboration",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "vc:label": "TC-0001-telecollaboration-domain"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.\"",
+  "vc:qualityScore": {
+    "@value": "0.55",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:documentation-culture",
+      "vc:label": "Documentation Culture"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:global-accessibility",
+      "vc:label": "Global Accessibility"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:virtual-workspace",
+      "vc:label": "Virtual Workspace"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:asynchronous-collaboration:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Documentation Culture]]",
+      "resolved": "urn:visionflow:linked:documentation-culture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Documentation Systems]]",
+      "resolved": "urn:visionflow:linked:documentation-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Global Accessibility]]",
+      "resolved": "urn:visionflow:linked:global-accessibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO]]",
+      "resolved": "urn:visionflow:linked:iso",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RFC]]",
+      "resolved": "urn:visionflow:linked:rfc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0001-telecollaboration-domain]]",
+      "resolved": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0010-Synchronous-Collaboration]]",
+      "resolved": "urn:visionflow:linked:tc-0010-synchronous-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0021-Collaborative-Document-Editing]]",
+      "resolved": "urn:visionflow:linked:tc-0021-collaborative-document-editing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0022-Version-Control]]",
+      "resolved": "urn:visionflow:linked:tc-0022-version-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0024-Project-Management-System]]",
+      "resolved": "urn:visionflow:linked:tc-0024-project-management-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0025-Issue-Tracking]]",
+      "resolved": "urn:visionflow:linked:tc-0025-issue-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0026-Code-Review]]",
+      "resolved": "urn:visionflow:linked:tc-0026-code-review",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0080-Team-Coordination]]",
+      "resolved": "urn:visionflow:linked:tc-0080-team-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Graph]]",
+      "resolved": "urn:visionflow:owl:class:knowledge-graph",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control."

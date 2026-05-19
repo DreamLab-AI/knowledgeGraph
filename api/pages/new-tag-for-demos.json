@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:743177ce37d184677f27ae163795d580f2836df5325b1df269656e505e0a9eb1",
+  "title": "new tag for demos",
+  "slug": "new-tag-for-demos",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:new-tag-for-demos",
+  "domain": "infrastructure",
+  "definition": "new tag for demos is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    }
+  ],
+  "backlinks": []
+}

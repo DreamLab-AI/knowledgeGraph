@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:8b71e6ba10c18e222523073ec64b22380430fe94b53a76d002c782761e699d6c",
+  "title": "Progressive Download",
+  "slug": "progressive-download",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:progressive-download",
+  "domain": "infrastructure",
+  "definition": "ProgressiveDownload is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

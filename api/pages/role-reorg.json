@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:a9e4e5d543880d458d0dbcfb18e6706f67ee6caf80122587049f11dc710d72a1",
+  "title": "Role reorg",
+  "slug": "role-reorg",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:role-reorg",
+  "domain": "infrastructure",
+  "definition": "Role reorg is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

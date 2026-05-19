@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:c283d5f65949b8f84dbbd97bc29d5ad3e9b91905dde40bc8932d5c6df9edde2e",
+  "title": "Remote Rendering",
+  "slug": "remote-rendering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:remote-rendering",
+  "domain": "infrastructure",
+  "definition": "RemoteRendering is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cloud-rendering-service",
+      "label": "Cloud Rendering Service"
+    }
+  ]
+}

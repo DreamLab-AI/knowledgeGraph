@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:2d72b001bdf9a56b52c90a2c8ce776d9f4a5031ebf522f0a997124f29a9df11e",
+  "title": "Third Party Auditor",
+  "slug": "third-party-auditor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:third-party-auditor",
+  "domain": "spatial-computing",
+  "definition": "An independent security firm or organization that conducts comprehensive reviews of smart contracts, blockchain protocols, and digital systems to identify vulnerabilities, ensure code quality, and verify compliance before deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:security-services",
+      "label": "Security Services"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "security-services",
+      "label": "Security Services"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-neutrality-verification",
+      "label": "Carbon Neutrality Verification"
+    },
+    {
+      "slug": "environmental-sustainability-label",
+      "label": "Environmental Sustainability Label"
+    }
+  ]
+}

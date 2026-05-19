@@ -1,0 +1,243 @@
+{
+  "id": "urn:visionflow:page:ff5e24a6ff02fd04cd751071b55b7eae7eaad6465aa13d5cae1109c69cc308f6",
+  "title": "RoboticsCoreConcepts",
+  "slug": "robotics-core-concepts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robotics-core-concepts",
+  "domain": "robotics",
+  "definition": "A hierarchical taxonomic framework organizing the fundamental conceptual domains within robotics science and engineering, comprising ten core subdomains structured into four primary categories\u2014autonomous systems (encompassing independent robotic platforms implementing path planning algorithms such as A* achieving 95-99% collision-free navigation, RRT* providing asymptotic optimality with O(n log n) computational complexity, and SLAM simultaneous localization and mapping using extended Kalman filters EKF achieving \u00b15cm positioning accuracy in structured environments or particle filters with 1000-10,000 particles for non-Gaussian distributions), manipulation and actuation (covering robotic arms with 3-9 degrees of freedom achieving \u00b10.05mm repeatability in industrial applications using PD position control with gains Kp=100-1000 N\u00b7m/rad and Kd=10-50 N\u00b7m\u00b7s/rad, and soft robotics employing pneumatic actuators generating 5-50N gripping force at 0.2-2 bar pressure or shape memory alloy SMA actuators with 4-8% strain recovery and 10-100 MPa stress generation), perception and intelligence (integrating sensor fusion combining vision (RGB-D cameras 640\u00d7480 to 1920\u00d71080 resolution at 30-60 FPS",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.88,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:autonomous-robot",
+        "label": "AutonomousRobot"
+      },
+      {
+        "id": "urn:visionflow:owl:class:human-robot-interaction",
+        "label": "HumanRobotInteraction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:manipulator-arm",
+        "label": "ManipulatorArm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:path-planning",
+        "label": "PathPlanning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:robot-learning",
+        "label": "RobotLearning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "label": "SensorFusion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:visionflow:owl:class:soft-robotics",
+        "label": "SoftRobotics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:swarm-robotics",
+        "label": "SwarmRobotics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:computational-methods",
+        "label": "ComputationalMethods"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-design",
+        "label": "HardwareDesign"
+      },
+      {
+        "id": "urn:visionflow:linked:mathematical-foundations",
+        "label": "MathematicalFoundations"
+      },
+      {
+        "id": "urn:visionflow:linked:physics-modeling",
+        "label": "PhysicsModeling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:software-engineering",
+        "label": "SoftwareEngineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:autonomous-vehicles",
+        "label": "AutonomousVehicles"
+      },
+      {
+        "id": "urn:visionflow:linked:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:visionflow:linked:robotics-education",
+        "label": "RoboticsEducation"
+      },
+      {
+        "id": "urn:visionflow:linked:robotics-research",
+        "label": "RoboticsResearch"
+      },
+      {
+        "id": "urn:visionflow:linked:service-robotics",
+        "label": "ServiceRobotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-vehicles",
+      "label": "AutonomousVehicles"
+    },
+    {
+      "slug": "computational-methods",
+      "label": "ComputationalMethods"
+    },
+    {
+      "slug": "craig-j-j-introduction-to-robotics-mechanics-and-control",
+      "label": "Craig J.J. Introduction to Robotics Mechanics and Control"
+    },
+    {
+      "slug": "hardware-design",
+      "label": "HardwareDesign"
+    },
+    {
+      "slug": "ieee-robotics-and-automation-society-ras",
+      "label": "IEEE Robotics and Automation Society RAS"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "IndustrialAutomation"
+    },
+    {
+      "slug": "international-federation-of-robotics-ifr",
+      "label": "International Federation of Robotics IFR"
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "label": "ISO 8373 Robotics Vocabulary"
+    },
+    {
+      "slug": "mathematical-foundations",
+      "label": "MathematicalFoundations"
+    },
+    {
+      "slug": "physics-modeling",
+      "label": "PhysicsModeling"
+    },
+    {
+      "slug": "robotics-education",
+      "label": "RoboticsEducation"
+    },
+    {
+      "slug": "robotics-research",
+      "label": "RoboticsResearch"
+    },
+    {
+      "slug": "service-robotics",
+      "label": "ServiceRobotics"
+    },
+    {
+      "slug": "siciliano-et-al-robotics-modelling-planning-and-control",
+      "label": "Siciliano et al. Robotics Modelling Planning and Control"
+    },
+    {
+      "slug": "springer-handbook-of-robotics",
+      "label": "Springer Handbook of Robotics"
+    },
+    {
+      "slug": "thrun-et-al-probabilistic-robotics",
+      "label": "Thrun et al. Probabilistic Robotics"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "AutonomousRobot"
+    },
+    {
+      "slug": "conceptual-hierarchy",
+      "label": "ConceptualHierarchy"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "DomainOntology"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "HumanRobotInteraction"
+    },
+    {
+      "slug": "knowledge-organization-system",
+      "label": "KnowledgeOrganizationSystem"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "ManipulatorArm"
+    },
+    {
+      "slug": "path-planning",
+      "label": "PathPlanning"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "RobotLearning"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "SensorFusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "SoftRobotics"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "SoftwareEngineering"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "SwarmRobotics"
+    },
+    {
+      "slug": "taxonomic-framework",
+      "label": "TaxonomicFramework"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}

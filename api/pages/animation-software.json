@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:aeb9b9a87d49b2911ee05a7980bf96f8d9b5297f7f2964097cd61e817ebd3c11",
+  "title": "Animation Software",
+  "slug": "animation-software",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:animation-software",
+  "domain": "spatial-computing",
+  "definition": "Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse content.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-content-creation-tools",
+      "label": "Digital Content Creation Tools"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:gpu-rendering",
+        "label": "GPU Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:rigging-systems",
+        "label": "Rigging Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "label": "3D Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-character-animation",
+        "label": "3D Character Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:motion-graphics",
+        "label": "Motion Graphics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-character-animation",
+      "label": "3D Character Animation"
+    },
+    {
+      "slug": "digital-content-creation-tools",
+      "label": "Digital Content Creation Tools"
+    },
+    {
+      "slug": "gpu-rendering",
+      "label": "GPU Rendering"
+    },
+    {
+      "slug": "motion-graphics",
+      "label": "Motion Graphics"
+    },
+    {
+      "slug": "rigging-systems",
+      "label": "Rigging Systems"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "visual-effects",
+      "label": "Visual Effects"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

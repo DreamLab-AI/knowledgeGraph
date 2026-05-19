@@ -1,0 +1,427 @@
+{
+  "id": "urn:visionflow:page:561a1f6bc37429c1a0d7c8d0bbad229ff4dd6cfd8f663735953c0f39cfaae246",
+  "title": "tc 0003 telepresence robot",
+  "slug": "tc-0003-telepresence-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:tc-0003-telepresence-robot",
+  "domain": "distributed-collaboration",
+  "definition": "**Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:telepresence-technology",
+      "label": "Telepresence Technology"
+    },
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "id": "urn:visionflow:owl:class:remote-collaboration",
+      "label": "Remote Collaboration"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-system",
+        "label": "Camera System"
+      },
+      {
+        "id": "urn:visionflow:linked:manipulation-mechanism",
+        "label": "Manipulation Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:microphone",
+        "label": "Microphone"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-controller",
+        "label": "Motor Controller"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:autonomous-navigation-support",
+        "label": "Autonomous Navigation Support"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:embodied-collaboration",
+        "label": "Embodied Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:hybrid-presence-avatar",
+        "label": "Hybrid Presence Avatar"
+      },
+      {
+        "id": "urn:visionflow:linked:physical-presence",
+        "label": "Physical Presence"
+      },
+      {
+        "id": "urn:visionflow:linked:remote-task-execution",
+        "label": "Remote Task Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:computer-vision-understanding",
+        "label": "Computer Vision Understanding"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "5-g-6-g-communication",
+      "label": "5G/6G Communication"
+    },
+    {
+      "slug": "5-g-low-latency-networks",
+      "label": "5G Low-Latency Networks"
+    },
+    {
+      "slug": "agency-and-control",
+      "label": "Agency and Control"
+    },
+    {
+      "slug": "alternative-control-methods",
+      "label": "Alternative Control Methods"
+    },
+    {
+      "slug": "audio",
+      "label": "Audio"
+    },
+    {
+      "slug": "audio-description",
+      "label": "Audio Description"
+    },
+    {
+      "slug": "augmented-reality-overlay",
+      "label": "Augmented Reality Overlay"
+    },
+    {
+      "slug": "autonomous-navigation-support",
+      "label": "Autonomous Navigation Support"
+    },
+    {
+      "slug": "avatar-representation",
+      "label": "Avatar Representation"
+    },
+    {
+      "slug": "blended-environments",
+      "label": "Blended Environments"
+    },
+    {
+      "slug": "brain-computer-interface",
+      "label": "Brain-Computer Interface"
+    },
+    {
+      "slug": "camera-system",
+      "label": "Camera System"
+    },
+    {
+      "slug": "computer-vision-understanding",
+      "label": "Computer Vision Understanding"
+    },
+    {
+      "slug": "control-joystick",
+      "label": "Control Joystick"
+    },
+    {
+      "slug": "deliberate-practice",
+      "label": "Deliberate Practice"
+    },
+    {
+      "slug": "depth",
+      "label": "Depth"
+    },
+    {
+      "slug": "direct-teleoperation",
+      "label": "Direct Teleoperation"
+    },
+    {
+      "slug": "electric-motors",
+      "label": "Electric Motors"
+    },
+    {
+      "slug": "embodied-cognition",
+      "label": "Embodied Cognition"
+    },
+    {
+      "slug": "embodied-collaboration",
+      "label": "Embodied Collaboration"
+    },
+    {
+      "slug": "environmental-exploration",
+      "label": "Environmental Exploration"
+    },
+    {
+      "slug": "experiential-learning",
+      "label": "Experiential Learning"
+    },
+    {
+      "slug": "haptic-interface",
+      "label": "Haptic Interface"
+    },
+    {
+      "slug": "holographic-display",
+      "label": "Holographic Display"
+    },
+    {
+      "slug": "humanoid",
+      "label": "Humanoid"
+    },
+    {
+      "slug": "humanoid-platforms",
+      "label": "Humanoid Platforms"
+    },
+    {
+      "slug": "hybrid-presence",
+      "label": "Hybrid Presence"
+    },
+    {
+      "slug": "hybrid-presence-avatar",
+      "label": "Hybrid Presence Avatar"
+    },
+    {
+      "slug": "hydraulic",
+      "label": "Hydraulic"
+    },
+    {
+      "slug": "low-latency-communication",
+      "label": "Low-Latency Communication"
+    },
+    {
+      "slug": "manipulation-control",
+      "label": "Manipulation Control"
+    },
+    {
+      "slug": "manipulation-mechanism",
+      "label": "Manipulation Mechanism"
+    },
+    {
+      "slug": "mentoring",
+      "label": "Mentoring"
+    },
+    {
+      "slug": "microphone",
+      "label": "Microphone"
+    },
+    {
+      "slug": "mobility",
+      "label": "Mobility"
+    },
+    {
+      "slug": "motor-controller",
+      "label": "Motor Controller"
+    },
+    {
+      "slug": "multi-camera-system",
+      "label": "Multi-Camera System"
+    },
+    {
+      "slug": "natural-language",
+      "label": "Natural Language"
+    },
+    {
+      "slug": "path-planning-for-telepresence",
+      "label": "Path Planning for Telepresence"
+    },
+    {
+      "slug": "physical-interaction",
+      "label": "Physical Interaction"
+    },
+    {
+      "slug": "physical-presence",
+      "label": "Physical Presence"
+    },
+    {
+      "slug": "pneumatic",
+      "label": "Pneumatic"
+    },
+    {
+      "slug": "predictive-control",
+      "label": "Predictive Control"
+    },
+    {
+      "slug": "proximity",
+      "label": "Proximity"
+    },
+    {
+      "slug": "real-time-video",
+      "label": "Real-Time Video"
+    },
+    {
+      "slug": "remote-collaboration-technology",
+      "label": "Remote Collaboration Technology"
+    },
+    {
+      "slug": "remote-manipulation",
+      "label": "Remote Manipulation"
+    },
+    {
+      "slug": "remote-mentoring",
+      "label": "Remote Mentoring"
+    },
+    {
+      "slug": "remote-operation-skills",
+      "label": "Remote Operation Skills"
+    },
+    {
+      "slug": "remote-problem-solving",
+      "label": "Remote Problem-Solving"
+    },
+    {
+      "slug": "remote-task-execution",
+      "label": "Remote Task Execution"
+    },
+    {
+      "slug": "semi-autonomous-navigation",
+      "label": "Semi-autonomous Navigation"
+    },
+    {
+      "slug": "sense-of-presence",
+      "label": "Sense of Presence"
+    },
+    {
+      "slug": "sensing",
+      "label": "Sensing"
+    },
+    {
+      "slug": "sensor-integration",
+      "label": "Sensor Integration"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "situational-display",
+      "label": "Situational Display"
+    },
+    {
+      "slug": "spatial-awareness",
+      "label": "Spatial Awareness"
+    },
+    {
+      "slug": "spatial-reasoning",
+      "label": "Spatial Reasoning"
+    },
+    {
+      "slug": "spatial-understanding",
+      "label": "Spatial Understanding"
+    },
+    {
+      "slug": "specialized",
+      "label": "Specialized"
+    },
+    {
+      "slug": "specialized-medical-robots",
+      "label": "Specialized Medical Robots"
+    },
+    {
+      "slug": "synchronous-telepresence",
+      "label": "Synchronous Telepresence"
+    },
+    {
+      "slug": "task-accomplishment",
+      "label": "Task Accomplishment"
+    },
+    {
+      "slug": "task-competency",
+      "label": "Task Competency"
+    },
+    {
+      "slug": "task-execution",
+      "label": "Task Execution"
+    },
+    {
+      "slug": "teleoperated-system",
+      "label": "Teleoperated System"
+    },
+    {
+      "slug": "telepresence-technology",
+      "label": "Telepresence Technology"
+    },
+    {
+      "slug": "vision",
+      "label": "Vision"
+    },
+    {
+      "slug": "wheeled",
+      "label": "Wheeled"
+    },
+    {
+      "slug": "wheeled-telepresence-robots",
+      "label": "Wheeled Telepresence Robots"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "immersive-learning",
+      "label": "Immersive Learning"
+    },
+    {
+      "slug": "manipulation",
+      "label": "Manipulation"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "spatial-presence",
+      "label": "Spatial Presence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "TelecollaborationDomain"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "virtual-training",
+      "label": "Virtual Training"
+    }
+  ],
+  "backlinks": []
+}

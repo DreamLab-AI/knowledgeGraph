@@ -1,0 +1,692 @@
+{
+  "id": "urn:visionflow:page:47e2a3423c3ccc4d330acb0fccac5478674b9c4651607ca54760165da745c8e6",
+  "title": "AI Video",
+  "slug": "ai-video",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-video",
+  "domain": "artificial-intelligence",
+  "definition": "AI Video, alternatively termed generative video, neural video synthesis, text-to-video (T2V), and image-to-video (I2V), denotes the class of deep generative models and engineering systems that synthesise temporally-coherent moving imagery conditioned on natural-language prompts, reference images, video clips, audio waveforms, or structured controls (depth maps, optical flow, pose skeletons, camera trajectories, scribbles), distinct from rule-based procedural animation, classical computer graphics pipelines, and rotoscoped or motion-captured human-driven workflows in that the visual content itself is produced by sampling from a learnt joint distribution over space-time pixel arrays rather than rendered from explicit geometric/material representations, originating in the Video Diffusion Models work of Ho et al. (NeurIPS 2022) extending Denoising Diffusion Probabilistic Models from 2D images to a 3D space-time tensor through a 3D U-Net with factorised space-time attention, advancing rapidly through Meta's Make-A-Video (Singer et al. 2022) demonstrating text-to-video without paired video-text training, Google's Imagen Video (Ho et al. 2022) achieving 1280\u00d7768 cascaded diffusion, Google",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "id": "urn:visionflow:linked:foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "id": "urn:visionflow:linked:synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:multimodal-ai",
+      "label": "Multimodal AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:visionflow:linked:sampling-scheduler",
+        "label": "Sampling Scheduler"
+      },
+      {
+        "id": "urn:visionflow:linked:spatiotemporal-autoencoder",
+        "label": "Spatiotemporal Autoencoder"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-attention-module",
+        "label": "Temporal Attention Module"
+      },
+      {
+        "id": "urn:visionflow:linked:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "id": "urn:visionflow:linked:video-tokeniser",
+        "label": "Video Tokeniser"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:captioning-pipeline",
+        "label": "Captioning Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:large-scale-pretraining",
+        "label": "Large-Scale Pretraining"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:video-text-training-corpus",
+        "label": "Video-Text Training Corpus"
+      },
+      {
+        "id": "urn:visionflow:owl:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:ai-avatar-synthesis",
+        "label": "AI Avatar Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:deepfake",
+        "label": "Deepfake"
+      },
+      {
+        "id": "urn:visionflow:linked:image-to-video-generation",
+        "label": "Image-to-Video Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:performance-capture",
+        "label": "Performance Capture"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-advertising",
+        "label": "Synthetic Advertising"
+      },
+      {
+        "id": "urn:visionflow:linked:synthetic-pre-visualisation",
+        "label": "Synthetic Pre-visualisation"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-video-generation",
+        "label": "Text-to-Video Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:video-to-video-translation",
+        "label": "Video-to-Video Translation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-video-diffusion",
+        "label": "Latent Video Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:rectified-flow-training",
+        "label": "Rectified Flow Training"
+      },
+      {
+        "id": "urn:visionflow:linked:score-based-generative-modelling",
+        "label": "Score-Based Generative Modelling"
+      },
+      {
+        "id": "urn:visionflow:linked:spacetime-patch-tokenisation",
+        "label": "Spacetime Patch Tokenisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-causal-vae",
+      "label": "3D Causal VAE"
+    },
+    {
+      "slug": "accessibility-captioning",
+      "label": "Accessibility Captioning"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "advertising",
+      "label": "Advertising"
+    },
+    {
+      "slug": "ai-avatar-synthesis",
+      "label": "AI Avatar Synthesis"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "bar-tal-et-al-2024-lumiere",
+      "label": "Bar-Tal et al. 2024 Lumiere"
+    },
+    {
+      "slug": "bbc-generative-ai-principles",
+      "label": "BBC Generative AI Principles"
+    },
+    {
+      "slug": "bbc-generative-ai-principles-2024",
+      "label": "BBC Generative AI Principles 2024"
+    },
+    {
+      "slug": "blattmann-et-al-2023-stable-video-diffusion",
+      "label": "Blattmann et al. 2023 Stable Video Diffusion"
+    },
+    {
+      "slug": "brooks-et-al-2024-sora-technical-report",
+      "label": "Brooks et al. 2024 Sora Technical Report"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "c2-pa-specification-2-0",
+      "label": "C2PA Specification 2.0"
+    },
+    {
+      "slug": "captioning-pipeline",
+      "label": "Captioning Pipeline"
+    },
+    {
+      "slug": "classical-animation",
+      "label": "Classical Animation"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "corporate-training-video",
+      "label": "Corporate Training Video"
+    },
+    {
+      "slug": "creative-aidomain",
+      "label": "CreativeAIDomain"
+    },
+    {
+      "slug": "creative-tool-layer",
+      "label": "CreativeToolLayer"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "deepfake",
+      "label": "Deepfake"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "esser-rombach-et-al-2024-mmdi-t-rectified-flow",
+      "label": "Esser Rombach et al. 2024 MMDiT Rectified Flow"
+    },
+    {
+      "slug": "eu-ai-act-2024-article-50",
+      "label": "EU AI Act 2024 Article 50"
+    },
+    {
+      "slug": "film-pre-visualisation",
+      "label": "Film Pre-visualisation"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "FoundationModelLayer"
+    },
+    {
+      "slug": "fvd",
+      "label": "FVD"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "GenerativeModellingDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "grand-view-research-2025-generative-video-market",
+      "label": "Grand View Research 2025 Generative Video Market"
+    },
+    {
+      "slug": "guo-et-al-2024-animate-diff",
+      "label": "Guo et al. 2024 AnimateDiff"
+    },
+    {
+      "slug": "ho-and-salimans-2022-classifier-free-guidance",
+      "label": "Ho & Salimans 2022 Classifier-Free Guidance"
+    },
+    {
+      "slug": "ho-et-al-2022-imagen-video",
+      "label": "Ho et al. 2022 Imagen Video"
+    },
+    {
+      "slug": "ho-et-al-2022-video-diffusion-models",
+      "label": "Ho et al. 2022 Video Diffusion Models"
+    },
+    {
+      "slug": "ho-jain-abbeel-2020-ddpm",
+      "label": "Ho Jain Abbeel 2020 DDPM"
+    },
+    {
+      "slug": "huang-et-al-2024-vbench",
+      "label": "Huang et al. 2024 VBench"
+    },
+    {
+      "slug": "image-to-video-generation",
+      "label": "Image-to-Video Generation"
+    },
+    {
+      "slug": "kong-et-al-2024-hunyuan-video",
+      "label": "Kong et al. 2024 HunyuanVideo"
+    },
+    {
+      "slug": "large-scale-pretraining",
+      "label": "Large-Scale Pretraining"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "latent-video-diffusion",
+      "label": "Latent Video Diffusion"
+    },
+    {
+      "slug": "liu-et-al-2023-eval-crafter",
+      "label": "Liu et al. 2023 EvalCrafter"
+    },
+    {
+      "slug": "liu-gong-liu-2022-rectified-flow",
+      "label": "Liu Gong Liu 2022 Rectified Flow"
+    },
+    {
+      "slug": "lo-ra-adapter",
+      "label": "LoRA Adapter"
+    },
+    {
+      "slug": "multimedia-domain",
+      "label": "MultimediaDomain"
+    },
+    {
+      "slug": "online-safety-act-2023",
+      "label": "Online Safety Act 2023"
+    },
+    {
+      "slug": "optical-flow",
+      "label": "Optical Flow"
+    },
+    {
+      "slug": "peebles-and-xie-2023-di-t",
+      "label": "Peebles & Xie 2023 DiT"
+    },
+    {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
+      "slug": "polyak-et-al-2024-movie-gen",
+      "label": "Polyak et al. 2024 Movie Gen"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "rectified-flow-training",
+      "label": "Rectified Flow Training"
+    },
+    {
+      "slug": "sag-aftra-tv-theatrical-contract",
+      "label": "SAG-AFTRA TV-Theatrical Contract"
+    },
+    {
+      "slug": "sag-aftra-tv-theatrical-contract-2023",
+      "label": "SAG-AFTRA TV-Theatrical Contract 2023"
+    },
+    {
+      "slug": "sampling-scheduler",
+      "label": "Sampling Scheduler"
+    },
+    {
+      "slug": "score-based-generative-modelling",
+      "label": "Score-Based Generative Modelling"
+    },
+    {
+      "slug": "singer-et-al-2022-make-a-video",
+      "label": "Singer et al. 2022 Make-A-Video"
+    },
+    {
+      "slug": "social-media-short-form",
+      "label": "Social Media Short-form"
+    },
+    {
+      "slug": "song-et-al-2021-score-based-sde",
+      "label": "Song et al. 2021 Score-Based SDE"
+    },
+    {
+      "slug": "sora",
+      "label": "Sora"
+    },
+    {
+      "slug": "spacetime-patch-tokenisation",
+      "label": "Spacetime Patch Tokenisation"
+    },
+    {
+      "slug": "spatiotemporal-autoencoder",
+      "label": "Spatiotemporal Autoencoder"
+    },
+    {
+      "slug": "stochastic-differential-equation",
+      "label": "Stochastic Differential Equation"
+    },
+    {
+      "slug": "sumsub-2025-identity-fraud-report",
+      "label": "Sumsub 2025 Identity Fraud Report"
+    },
+    {
+      "slug": "sun-et-al-2024-t2-v-comp-bench",
+      "label": "Sun et al. 2024 T2V-CompBench"
+    },
+    {
+      "slug": "synthetic-advertising",
+      "label": "Synthetic Advertising"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "synthetic-pre-visualisation",
+      "label": "Synthetic Pre-visualisation"
+    },
+    {
+      "slug": "temporal-attention-module",
+      "label": "Temporal Attention Module"
+    },
+    {
+      "slug": "text-encoder",
+      "label": "Text Encoder"
+    },
+    {
+      "slug": "text-to-video-generation",
+      "label": "Text-to-Video Generation"
+    },
+    {
+      "slug": "traditional-vfx-pipeline",
+      "label": "Traditional VFX Pipeline"
+    },
+    {
+      "slug": "unterthiner-et-al-2018-fvd",
+      "label": "Unterthiner et al. 2018 FVD"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "vbench",
+      "label": "VBench"
+    },
+    {
+      "slug": "video-dubbing",
+      "label": "Video Dubbing"
+    },
+    {
+      "slug": "video-game-cinematic",
+      "label": "Video Game Cinematic"
+    },
+    {
+      "slug": "video-text-training-corpus",
+      "label": "Video-Text Training Corpus"
+    },
+    {
+      "slug": "video-to-video-translation",
+      "label": "Video-to-Video Translation"
+    },
+    {
+      "slug": "video-tokeniser",
+      "label": "Video Tokeniser"
+    },
+    {
+      "slug": "villegas-et-al-2022-phenaki",
+      "label": "Villegas et al. 2022 Phenaki"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    },
+    {
+      "slug": "yang-et-al-2024-cog-video-x",
+      "label": "Yang et al. 2024 CogVideoX"
+    },
+    {
+      "slug": "yu-et-al-2024-magvit-v2",
+      "label": "Yu et al. 2024 MAGVIT-v2"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "procedural-animation",
+      "label": "Procedural Animation"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "label": "Advice for developing GenAI"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "player-two",
+      "label": "Player Two"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "relighting",
+      "label": "relighting"
+    }
+  ]
+}

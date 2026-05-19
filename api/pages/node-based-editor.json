@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:c1b421f4a68765c3ecab6cdbb09b745cc342787b41f9c19f26892c1e65392407",
+  "title": "Node Based Editor",
+  "slug": "node-based-editor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:node-based-editor",
+  "domain": "spatial-computing",
+  "definition": "NodeBasedEditor is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

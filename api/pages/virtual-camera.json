@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ecdd91d0cacbe45aff436c05dfdcc8f1a02c45e85077cb82b2a2479e98baaa9d",
+  "title": "Virtual Camera",
+  "slug": "virtual-camera",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-camera",
+  "domain": "spatial-computing",
+  "definition": "A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualize and shoot CG environments as if using a physical camera with real-world lens and movement characteristics.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

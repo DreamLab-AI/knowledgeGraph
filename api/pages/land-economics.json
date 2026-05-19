@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:4f84eb40ff1d358dd9bdcdf000486ac649f471fbf91c1b41655a10808319a1b6",
+  "title": "Land Economics",
+  "slug": "land-economics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:land-economics",
+  "domain": "spatial-computing",
+  "definition": "Land Economics is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-labor",
+      "label": "Virtual Labor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-labor",
+      "label": "Virtual Labor"
+    }
+  ]
+}

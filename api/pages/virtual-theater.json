@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:dec676d2a5b16c6cd2a773df0495fdbcf8e9bede082d9abc9ebbeca54c6d731c",
+  "title": "Virtual Theater",
+  "slug": "virtual-theater",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-theater",
+  "domain": "spatial-computing",
+  "definition": "A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:performing-arts",
+      "label": "Performing Arts"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "performing-arts",
+      "label": "Performing Arts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    }
+  ]
+}

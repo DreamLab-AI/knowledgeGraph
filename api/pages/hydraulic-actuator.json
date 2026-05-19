@@ -1,0 +1,552 @@
+{
+  "id": "urn:visionflow:page:51b79f1c8b18820aa2540cf3d9284fd162ecfd326ece5f69c73fdeb87219c492",
+  "title": "Hydraulic Actuator",
+  "slug": "hydraulic-actuator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hydraulic-actuator",
+  "domain": "robotics",
+  "definition": "HydraulicActuator is a mechanical transduction device that converts the energy stored in pressurised hydraulic fluid into controlled mechanical work\u2014linear force and stroke via hydraulic cylinders, continuous rotational torque and speed via hydraulic motors, or limited angular displacement via rotary actuators\u2014operating at gauge pressures of 14\u201335 MPa (2,000\u20135,000 psi) to deliver specific force densities of 50\u2013200 N/cm\u00b2 effective bore area loading and joint-level power densities of 2\u201310 kW/kg, exceeding comparably sized electric BLDC motors by 3\u20136\u00d7 and surpassing pneumatic actuators at equivalent bore by 20\u201350\u00d7, making hydraulic actuation the dominant technology for legged robots requiring impulsive ground-contact forces, heavy industrial manipulators demanding tens of kilonewtons of sustained force, six-DOF flight simulation motion platforms requiring 40\u201380 kN per leg, deep-sea remotely operated vehicles where pressure-equalised hydraulics eliminate pressure vessel mass, nuclear remote-handling systems where electric motors cannot be shielded against radiation, and powered exoskeletons rated above 50 kg payload where no commercially available electric joint actuator offers compara",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:actuator",
+      "label": "Actuator"
+    },
+    {
+      "id": "urn:visionflow:linked:fluid-power-system",
+      "label": "Fluid Power System"
+    },
+    {
+      "id": "urn:visionflow:linked:force-control-system",
+      "label": "Force Control System"
+    },
+    {
+      "id": "urn:visionflow:linked:mechanical-transducer",
+      "label": "Mechanical Transducer"
+    },
+    {
+      "id": "urn:visionflow:linked:motion-control-device",
+      "label": "Motion Control Device"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:accumulator",
+        "label": "Accumulator"
+      },
+      {
+        "id": "urn:visionflow:linked:force-sensor",
+        "label": "Force Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:hydraulic-manifold",
+        "label": "Hydraulic Manifold"
+      },
+      {
+        "id": "urn:visionflow:linked:hydraulic-pump",
+        "label": "Hydraulic Pump"
+      },
+      {
+        "id": "urn:visionflow:linked:hydraulic-reservoir",
+        "label": "Hydraulic Reservoir"
+      },
+      {
+        "id": "urn:visionflow:linked:position-sensor",
+        "label": "Position Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:pressure-relief-valve",
+        "label": "Pressure Relief Valve"
+      },
+      {
+        "id": "urn:visionflow:linked:proportional-valve",
+        "label": "Proportional Valve"
+      },
+      {
+        "id": "urn:visionflow:linked:servo-valve",
+        "label": "Servo Valve"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hydraulic-cylinder",
+        "label": "Hydraulic Cylinder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:feedback-sensor",
+        "label": "Feedback Sensor"
+      },
+      {
+        "id": "urn:visionflow:linked:heat-exchanger",
+        "label": "Heat Exchanger"
+      },
+      {
+        "id": "urn:visionflow:linked:hydraulic-fluid",
+        "label": "Hydraulic Fluid"
+      },
+      {
+        "id": "urn:visionflow:linked:hydraulic-power-unit",
+        "label": "Hydraulic Power Unit"
+      },
+      {
+        "id": "urn:visionflow:linked:pressurised-fluid-supply",
+        "label": "Pressurised Fluid Supply"
+      },
+      {
+        "id": "urn:visionflow:linked:return-filter",
+        "label": "Return Filter"
+      },
+      {
+        "id": "urn:visionflow:linked:seal-system",
+        "label": "Seal System"
+      },
+      {
+        "id": "urn:visionflow:linked:servo-controller",
+        "label": "Servo Controller"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:compliant-force-control",
+        "label": "Compliant Force Control"
+      },
+      {
+        "id": "urn:visionflow:linked:deep-sea-robotics",
+        "label": "Deep-Sea Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:exoskeleton-actuation",
+        "label": "Exoskeleton Actuation"
+      },
+      {
+        "id": "urn:visionflow:linked:flight-simulation",
+        "label": "Flight Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:haptic-interface",
+        "label": "Haptic Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:heavy-manipulation",
+        "label": "Heavy Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:high-force-industrial-automation",
+        "label": "High-Force Industrial Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:legged-robot-locomotion",
+        "label": "Legged Robot Locomotion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:closed-loop-position-control",
+        "label": "Closed-Loop Position Control"
+      },
+      {
+        "id": "urn:visionflow:linked:electrohydrostatic-drive",
+        "label": "Electrohydrostatic Drive"
+      },
+      {
+        "id": "urn:visionflow:linked:force-impedance-control",
+        "label": "Force Impedance Control"
+      },
+      {
+        "id": "urn:visionflow:linked:pascal-law-actuation",
+        "label": "Pascal Law Actuation"
+      },
+      {
+        "id": "urn:visionflow:linked:proportional-flow-control",
+        "label": "Proportional Flow Control"
+      },
+      {
+        "id": "urn:visionflow:linked:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accumulator",
+      "label": "Accumulator"
+    },
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "bernoulli-equation",
+      "label": "Bernoulli Equation"
+    },
+    {
+      "slug": "boston-dynamics-atlas",
+      "label": "Boston Dynamics Atlas"
+    },
+    {
+      "slug": "boston-dynamics-big-dog",
+      "label": "Boston Dynamics BigDog"
+    },
+    {
+      "slug": "bulk-modulus",
+      "label": "Bulk Modulus"
+    },
+    {
+      "slug": "closed-loop-position-control",
+      "label": "Closed-Loop Position Control"
+    },
+    {
+      "slug": "compliant-force-control",
+      "label": "Compliant Force Control"
+    },
+    {
+      "slug": "construction-robotics",
+      "label": "Construction Robotics"
+    },
+    {
+      "slug": "control-architecture-layer",
+      "label": "ControlArchitectureLayer"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "ControlSystemsDomain"
+    },
+    {
+      "slug": "darpa-robotics-challenge",
+      "label": "DARPA Robotics Challenge"
+    },
+    {
+      "slug": "deep-sea-robotics",
+      "label": "Deep-Sea Robotics"
+    },
+    {
+      "slug": "differential-pressure-sensing",
+      "label": "Differential Pressure Sensing"
+    },
+    {
+      "slug": "din-24346-hydraulic-components",
+      "label": "DIN 24346 Hydraulic Components"
+    },
+    {
+      "slug": "electric-bldc-actuator",
+      "label": "Electric BLDC Actuator"
+    },
+    {
+      "slug": "electrohydraulic-servo-valve",
+      "label": "Electrohydraulic Servo Valve"
+    },
+    {
+      "slug": "electrohydrostatic-drive",
+      "label": "Electrohydrostatic Drive"
+    },
+    {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
+      "slug": "exoskeleton-actuation",
+      "label": "Exoskeleton Actuation"
+    },
+    {
+      "slug": "feedback-sensor",
+      "label": "Feedback Sensor"
+    },
+    {
+      "slug": "flight-simulation",
+      "label": "Flight Simulation"
+    },
+    {
+      "slug": "fluid-mechanics",
+      "label": "Fluid Mechanics"
+    },
+    {
+      "slug": "fluid-power-domain",
+      "label": "FluidPowerDomain"
+    },
+    {
+      "slug": "fluid-power-system",
+      "label": "Fluid Power System"
+    },
+    {
+      "slug": "force-control-system",
+      "label": "Force Control System"
+    },
+    {
+      "slug": "force-impedance-control",
+      "label": "Force Impedance Control"
+    },
+    {
+      "slug": "force-sensor",
+      "label": "Force Sensor"
+    },
+    {
+      "slug": "haptic-interface",
+      "label": "Haptic Interface"
+    },
+    {
+      "slug": "heat-exchanger",
+      "label": "Heat Exchanger"
+    },
+    {
+      "slug": "heavy-manipulation",
+      "label": "Heavy Manipulation"
+    },
+    {
+      "slug": "high-force-industrial-automation",
+      "label": "High-Force Industrial Automation"
+    },
+    {
+      "slug": "hydraulic-fluid",
+      "label": "Hydraulic Fluid"
+    },
+    {
+      "slug": "hydraulic-manifold",
+      "label": "Hydraulic Manifold"
+    },
+    {
+      "slug": "hydraulic-power-unit",
+      "label": "Hydraulic Power Unit"
+    },
+    {
+      "slug": "hydraulic-pump",
+      "label": "Hydraulic Pump"
+    },
+    {
+      "slug": "hydraulic-reservoir",
+      "label": "Hydraulic Reservoir"
+    },
+    {
+      "slug": "iit-hy-q-family",
+      "label": "IIT HyQ Family"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
+    },
+    {
+      "slug": "iso-4413-hydraulics-safety",
+      "label": "ISO 4413 Hydraulics Safety"
+    },
+    {
+      "slug": "legged-locomotion-research",
+      "label": "Legged Locomotion Research"
+    },
+    {
+      "slug": "legged-robot-locomotion",
+      "label": "Legged Robot Locomotion"
+    },
+    {
+      "slug": "legged-robotics",
+      "label": "Legged Robotics"
+    },
+    {
+      "slug": "linear-variable-differential-transformer",
+      "label": "Linear Variable Differential Transformer"
+    },
+    {
+      "slug": "mechanical-engineering-domain",
+      "label": "MechanicalEngineeringDomain"
+    },
+    {
+      "slug": "mechanical-system-layer",
+      "label": "MechanicalSystemLayer"
+    },
+    {
+      "slug": "mechanical-transducer",
+      "label": "Mechanical Transducer"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "motion-control-device",
+      "label": "Motion Control Device"
+    },
+    {
+      "slug": "nfpa-t3-fluid-power-standard",
+      "label": "NFPA T3 Fluid Power Standard"
+    },
+    {
+      "slug": "nuclear-remote-handling",
+      "label": "Nuclear Remote Handling"
+    },
+    {
+      "slug": "pascal-law",
+      "label": "Pascal Law"
+    },
+    {
+      "slug": "pascal-law-actuation",
+      "label": "Pascal Law Actuation"
+    },
+    {
+      "slug": "physical-actuation-layer",
+      "label": "PhysicalActuationLayer"
+    },
+    {
+      "slug": "pid-control",
+      "label": "PID Control"
+    },
+    {
+      "slug": "piezoelectric-actuator",
+      "label": "Piezoelectric Actuator"
+    },
+    {
+      "slug": "position-sensor",
+      "label": "Position Sensor"
+    },
+    {
+      "slug": "pressure-relief-valve",
+      "label": "Pressure Relief Valve"
+    },
+    {
+      "slug": "pressurised-fluid-supply",
+      "label": "Pressurised Fluid Supply"
+    },
+    {
+      "slug": "proportional-flow-control",
+      "label": "Proportional Flow Control"
+    },
+    {
+      "slug": "proportional-valve",
+      "label": "Proportional Valve"
+    },
+    {
+      "slug": "quasi-direct-drive-motor",
+      "label": "Quasi-Direct Drive Motor"
+    },
+    {
+      "slug": "return-filter",
+      "label": "Return Filter"
+    },
+    {
+      "slug": "sae-j2048-hydraulic-systems",
+      "label": "SAE J2048 Hydraulic Systems"
+    },
+    {
+      "slug": "sarcos-guardian-xo",
+      "label": "Sarcos Guardian XO"
+    },
+    {
+      "slug": "seal-system",
+      "label": "Seal System"
+    },
+    {
+      "slug": "series-elastic-actuation",
+      "label": "Series Elastic Actuation"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "servo-controller",
+      "label": "Servo Controller"
+    },
+    {
+      "slug": "servo-valve",
+      "label": "Servo Valve"
+    },
+    {
+      "slug": "subsea-robotics",
+      "label": "Subsea Robotics"
+    },
+    {
+      "slug": "thermodynamics",
+      "label": "Thermodynamics"
+    },
+    {
+      "slug": "tribology",
+      "label": "Tribology"
+    },
+    {
+      "slug": "uk-hse-hsg244",
+      "label": "UK HSE HSG244"
+    },
+    {
+      "slug": "wikilink",
+      "label": "wikilink"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hydraulic-cylinder",
+      "label": "Hydraulic Cylinder"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "shape-memory-alloy-actuator",
+      "label": "Shape Memory Alloy Actuator"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hydraulic-cylinder",
+      "label": "Hydraulic Cylinder"
+    },
+    {
+      "slug": "hydraulic-motor",
+      "label": "Hydraulic Motor"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

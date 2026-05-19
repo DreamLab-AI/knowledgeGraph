@@ -1,0 +1,451 @@
+{
+  "id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db",
+  "title": "Conceptual Layer",
+  "slug": "conceptual-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:conceptual-layer",
+  "domain": "infrastructure",
+  "definition": "The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations. This layer encompasses abstract definitions, conceptual frameworks, theoretical foundations, design principles, and logical models that describe what things are and what they should do, without specifying how they are implemented. Concepts in this layer are implementation-agnostic: they can be realized through various technical approaches, protocols, or systems while maintaining their essential conceptual properties. The ConceptualLayer includes abstract data structures (the concept of a blockchain as an ordered chain of blocks, independent of specific blockchain implementations), theoretical protocols (abstract consensus models, independent of specific consensus algorithms), design patterns (decentralization as a principle, independent of specific decentralization mechanisms), foundational principles (immutability, transparency, trustlessness as properties), and logical frameworks (fairness definitions, security properties, correctness criteria). This layer serves as the foundation for",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ethics-board",
+      "label": "AI Ethics Board"
+    },
+    {
+      "slug": "ai-governance-maturity-model",
+      "label": "AI Governance Maturity Model"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-trustworthiness-dimensions",
+      "label": "AI Trustworthiness Dimensions"
+    },
+    {
+      "slug": "account-model",
+      "label": "Account Model"
+    },
+    {
+      "slug": "accountable-party",
+      "label": "Accountable Party"
+    },
+    {
+      "slug": "agreement-protocol",
+      "label": "Agreement Protocol"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "algorithmic-transparency-reports",
+      "label": "Algorithmic Transparency Reports"
+    },
+    {
+      "slug": "bias-detection-methods",
+      "label": "Bias Detection Methods"
+    },
+    {
+      "slug": "bias-mitigation-techniques",
+      "label": "Bias Mitigation Techniques"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "block-header",
+      "label": "Block Header"
+    },
+    {
+      "slug": "block-height",
+      "label": "Block Height"
+    },
+    {
+      "slug": "block-reward",
+      "label": "Block Reward"
+    },
+    {
+      "slug": "block-size",
+      "label": "Block Size"
+    },
+    {
+      "slug": "block-time",
+      "label": "Block Time"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "chain-reorganization",
+      "label": "Chain Reorganization"
+    },
+    {
+      "slug": "chain-state",
+      "label": "Chain State"
+    },
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "decentralization",
+      "label": "Decentralization"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "disparate-impact",
+      "label": "Disparate Impact"
+    },
+    {
+      "slug": "disruptive-tech-domain",
+      "label": "Disruptive Tech Domain"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "Distributed Data Structure"
+    },
+    {
+      "slug": "distributed-protocol",
+      "label": "Distributed Protocol"
+    },
+    {
+      "slug": "diversity-non-discrimination-and-fairness",
+      "label": "Diversity, Non-Discrimination, and Fairness"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "Economic Mechanism"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "edge-ai-accelerators",
+      "label": "Edge AI Accelerators"
+    },
+    {
+      "slug": "edge-ai-security",
+      "label": "Edge AI Security"
+    },
+    {
+      "slug": "edge-ai-system",
+      "label": "Edge AI System"
+    },
+    {
+      "slug": "edge-ai-for-smart-cities",
+      "label": "Edge AI for Smart Cities"
+    },
+    {
+      "slug": "edge-cloud-collaboration",
+      "label": "Edge-Cloud Collaboration"
+    },
+    {
+      "slug": "embedded-ai-frameworks",
+      "label": "Embedded AI Frameworks"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "ethical-review-process",
+      "label": "Ethical Review Process"
+    },
+    {
+      "slug": "fairness-accuracy-tradeoffs",
+      "label": "Fairness Accuracy Tradeoffs"
+    },
+    {
+      "slug": "fairness-auditing-tools",
+      "label": "Fairness Auditing Tools"
+    },
+    {
+      "slug": "fairness-constraints",
+      "label": "Fairness Constraints"
+    },
+    {
+      "slug": "fairness-metrics",
+      "label": "Fairness Metrics"
+    },
+    {
+      "slug": "fault-tolerance-system",
+      "label": "Fault Tolerance System"
+    },
+    {
+      "slug": "federated-edge-learning",
+      "label": "Federated Edge Learning"
+    },
+    {
+      "slug": "gdpr-article-22-compliance",
+      "label": "GDPR Article 22 Compliance"
+    },
+    {
+      "slug": "genesis-block",
+      "label": "Genesis Block"
+    },
+    {
+      "slug": "group-vs-individual-fairness",
+      "label": "Group vs Individual Fairness"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "homomorphic-encryption-for-machine-learning",
+      "label": "Homomorphic Encryption for Machine Learning"
+    },
+    {
+      "slug": "human-agency-and-oversight",
+      "label": "Human Agency and Oversight"
+    },
+    {
+      "slug": "ieee-7000-series-standards",
+      "label": "IEEE 7000 Series Standards"
+    },
+    {
+      "slug": "input",
+      "label": "Input"
+    },
+    {
+      "slug": "intersectional-fairness",
+      "label": "Intersectional Fairness"
+    },
+    {
+      "slug": "io-t-ai-integration",
+      "label": "IoT AI Integration"
+    },
+    {
+      "slug": "knowledge-distillation-for-edge",
+      "label": "Knowledge Distillation for Edge"
+    },
+    {
+      "slug": "latency-aware-edge-ai",
+      "label": "Latency-Aware Edge AI"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "model-compression-for-edge",
+      "label": "Model Compression for Edge"
+    },
+    {
+      "slug": "model-pruning-for-edge-deployment",
+      "label": "Model Pruning for Edge Deployment"
+    },
+    {
+      "slug": "neural-network-quantisation",
+      "label": "Neural Network Quantisation"
+    },
+    {
+      "slug": "on-device-learning",
+      "label": "On-Device Learning"
+    },
+    {
+      "slug": "opcodes",
+      "label": "Opcodes"
+    },
+    {
+      "slug": "orphan-block",
+      "label": "Orphan Block"
+    },
+    {
+      "slug": "output",
+      "label": "Output"
+    },
+    {
+      "slug": "power-efficient-ai",
+      "label": "Power-Efficient AI"
+    },
+    {
+      "slug": "privacy-budget-management",
+      "label": "Privacy Budget Management"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy By Design"
+    },
+    {
+      "slug": "privacy-impact-assessment",
+      "label": "Privacy Impact Assessment"
+    },
+    {
+      "slug": "privacy-preserving-data-mining",
+      "label": "Privacy Preserving Data Mining"
+    },
+    {
+      "slug": "privacy-utility-tradeoffs",
+      "label": "Privacy Utility Tradeoffs"
+    },
+    {
+      "slug": "privacy-and-data-governance",
+      "label": "Privacy and Data Governance"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "pseudonymisation",
+      "label": "Pseudonymisation"
+    },
+    {
+      "slug": "real-time-inference-at-edge",
+      "label": "Real-Time Inference at Edge"
+    },
+    {
+      "slug": "redress-procedure",
+      "label": "Redress Procedure"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "responsible-ai-principles",
+      "label": "Responsible AI Principles"
+    },
+    {
+      "slug": "script",
+      "label": "Script"
+    },
+    {
+      "slug": "secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "societal-and-environmental-wellbeing",
+      "label": "Societal and Environmental Wellbeing"
+    },
+    {
+      "slug": "stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "technical-robustness-and-safety",
+      "label": "Technical Robustness and Safety"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "timestamp",
+      "label": "Timestamp"
+    },
+    {
+      "slug": "tiny-ml",
+      "label": "TinyML"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    },
+    {
+      "slug": "transaction-confirmation",
+      "label": "Transaction Confirmation"
+    },
+    {
+      "slug": "transaction-pool",
+      "label": "Transaction Pool"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "transparency-and-explainability",
+      "label": "Transparency and Explainability"
+    },
+    {
+      "slug": "trustworthy-ai-framework",
+      "label": "Trustworthy AI Framework"
+    },
+    {
+      "slug": "unesco-recommendation-on-the-ethics-of-ai",
+      "label": "UNESCO Recommendation on the Ethics of AI"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "k-anonymity-in-datasets",
+      "label": "k-Anonymity in Datasets"
+    }
+  ]
+}

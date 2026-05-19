@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:f1b76802e3999a3ee03f8d5bbd33c87224b82797ed63a80fb767283952954fa3",
+  "title": "Data Storage Layer",
+  "slug": "data-storage-layer",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-storage-layer",
+  "domain": "infrastructure",
+  "definition": "Software layer managing persistent storage, retrieval, and lifecycle of digital assets, metadata, world state, user data, and transactional records in metaverse systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:data-layer",
+      "label": "Data Layer"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:blockchain-storage",
+        "label": "Blockchain Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:cache-layer",
+        "label": "Cache Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:cdn-storage",
+        "label": "CDN Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:object-storage-service",
+        "label": "Object Storage Service"
+      },
+      {
+        "id": "urn:visionflow:owl:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:backup-systems",
+        "label": "Backup Systems"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:storage-hardware",
+        "label": "Storage Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-persistence",
+        "label": "Asset Persistence"
+      },
+      {
+        "id": "urn:visionflow:linked:content-distribution",
+        "label": "Content Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:user-profile-storage",
+        "label": "User Profile Storage"
+      },
+      {
+        "id": "urn:visionflow:linked:world-state-management",
+        "label": "World State Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-persistence",
+      "label": "Asset Persistence"
+    },
+    {
+      "slug": "backup-systems",
+      "label": "Backup Systems"
+    },
+    {
+      "slug": "blockchain-storage",
+      "label": "Blockchain Storage"
+    },
+    {
+      "slug": "cache-layer",
+      "label": "Cache Layer"
+    },
+    {
+      "slug": "cdn-storage",
+      "label": "CDN Storage"
+    },
+    {
+      "slug": "content-distribution",
+      "label": "Content Distribution"
+    },
+    {
+      "slug": "data-indexing",
+      "label": "Data Indexing"
+    },
+    {
+      "slug": "encryption-service",
+      "label": "Encryption Service"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "object-storage-service",
+      "label": "Object Storage Service"
+    },
+    {
+      "slug": "replication-service",
+      "label": "Replication Service"
+    },
+    {
+      "slug": "user-profile-storage",
+      "label": "User Profile Storage"
+    },
+    {
+      "slug": "world-state-management",
+      "label": "World State Management"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "metaverse-stack",
+      "label": "Metaverse Stack"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "storage-hardware",
+      "label": "Storage Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:b515c868a07a1a8486ab61ca936f0466ba80c62bac761fd11b8893c491dd83a2",
+  "title": "Layer 0",
+  "slug": "layer-0",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:layer-0",
+  "domain": "blockchain",
+  "definition": "Foundation blockchain infrastructure layer providing cross-chain communication protocols, shared security mechanisms, and modular consensus abstraction to enable interoperability between multiple Layer 1 blockchains. Layer 0 networks like Polkadot and Cosmos serve as the meta-layer coordinating heterogeneous blockchain ecosystems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avalanche",
+      "label": "Avalanche"
+    },
+    {
+      "slug": "blockchain-architecture",
+      "label": "Blockchain Architecture"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
+      "slug": "monolithic-blockchain",
+      "label": "Monolithic Blockchain"
+    },
+    {
+      "slug": "polkadot",
+      "label": "Polkadot"
+    },
+    {
+      "slug": "scalability-solutions",
+      "label": "Scalability Solutions"
+    },
+    {
+      "slug": "shared-security",
+      "label": "Shared Security"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    }
+  ]
+}

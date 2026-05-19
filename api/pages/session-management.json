@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:6bb9de85394f2209beac8cc153b2605957a95cb00ec7dfaae1d36e13879b5123",
+  "title": "Session Management",
+  "slug": "session-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:session-management",
+  "domain": "infrastructure",
+  "definition": "SessionManagement is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    }
+  ]
+}

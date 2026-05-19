@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:e33f750c2932ba7ec9887a4b9a1e6fa85a6fb38f51eca392212b86ba1d4765af",
+  "title": "AI as a step function",
+  "slug": "ai-as-a-step-function",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-as-a-step-function",
+  "domain": "artificial-intelligence",
+  "definition": "AI as a step function is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "backlinks": []
+}

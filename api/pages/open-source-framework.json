@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:4af1579740c5e4c41e68981021ea4cac967e57c74f5e10999102332fd5f35060",
+  "title": "Open Source Framework",
+  "slug": "open-source-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:open-source-framework",
+  "domain": "infrastructure",
+  "definition": "OpenSourceFramework is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

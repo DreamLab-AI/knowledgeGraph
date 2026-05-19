@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:8fda5f454604ca4002b6178336ba0186ab85437362875674fa8ac4f2344550a8",
+  "title": "rb 0045 acceleration",
+  "slug": "rb-0045-acceleration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0045-acceleration",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:newton-euler-dynamics",
+      "label": "Newton-Euler Dynamics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

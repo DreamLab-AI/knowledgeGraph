@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:dd5c0adbcceffd24a2c14653fcdb9210c9badee7ec91a2dd055e062bf355f843",
+  "title": "Trajectory Planning",
+  "slug": "trajectory-planning",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trajectory-planning",
+  "domain": "robotics",
+  "definition": "**Trajectory Planning** - Trajectory Planning in robotics systems",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "delta-robot",
+      "label": "Delta Robot"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

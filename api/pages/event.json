@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:6117892bf43804e65dd20ecdcdc6c7cae6419e71d1cb24b13fafcb7635716316",
+  "title": "Event",
+  "slug": "event",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:event",
+  "domain": "infrastructure",
+  "definition": "A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components. Events are fundamental building blocks of temporal and reactive systems, enabling loose coupling and asynchronous communication through immutable, self-contained records of happenings.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:temporal-entity",
+      "label": "Temporal Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:complex-event-processing",
+        "label": "Complex Event Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:visionflow:linked:reactive-systems",
+        "label": "Reactive Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "complex-event-processing",
+      "label": "Complex Event Processing"
+    },
+    {
+      "slug": "event-sourcing",
+      "label": "Event Sourcing"
+    },
+    {
+      "slug": "reactive-systems",
+      "label": "Reactive Systems"
+    },
+    {
+      "slug": "temporal-entity",
+      "label": "Temporal Entity"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event-Driven Architecture"
+    }
+  ],
+  "backlinks": []
+}

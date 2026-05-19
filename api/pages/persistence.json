@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:585209bffb88c952dfd7b576c77f14d206bbf484a465a7f267ca21c54fc2d1c5",
+  "title": "Persistence",
+  "slug": "persistence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:persistence",
+  "domain": "spatial-computing",
+  "definition": "The foundational architectural mechanism ensuring data, state, and identity continuity across sessions, platforms, and time within metaverse ecosystems through distributed databases, blockchain ledgers, and file systems. Persistence coordinates multi-tier storage (hot caches, relational databases, object storage, blockchain) implementing various consistency models from strong (critical ownership records) to eventual (social feeds) to enable users to resume experiences seamlessly, maintain ownership verification, and preserve contextual information across platform boundaries. Applications span virtual worlds ([[Decentraland]], [[The Sandbox]]), multiplayer gaming (MMORPGs), enterprise collaboration ([[Microsoft Mesh]]), and educational simulations, with quality metrics including 11-nines durability for critical data, <5 minute recovery time objectives, and <100ms consistency lag for strong consistency guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "MicrosoftMesh"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "TheSandbox"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

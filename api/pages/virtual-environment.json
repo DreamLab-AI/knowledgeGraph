@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:f0a872f6a70c137e6f7254b8730cb161511a6c6cd1f96aa1c0c8a72cda68c3f6",
+  "title": "Virtual Environment",
+  "slug": "virtual-environment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-environment",
+  "domain": "spatial-computing",
+  "definition": "A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aisystem",
+      "label": "AISystem"
+    },
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    },
+    {
+      "slug": "etsi-domain-identity-and-trust",
+      "label": "ETSI Domain Identity and Trust"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    },
+    {
+      "slug": "metaverse-venue",
+      "label": "Metaverse Venue"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "shared-virtual-world",
+      "label": "Shared Virtual World"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "virtual-classroom",
+      "label": "Virtual Classroom"
+    },
+    {
+      "slug": "virtual-clinic",
+      "label": "Virtual Clinic"
+    },
+    {
+      "slug": "virtual-destination",
+      "label": "Virtual Destination"
+    },
+    {
+      "slug": "virtual-location",
+      "label": "Virtual Location"
+    },
+    {
+      "slug": "virtual-office-spaces",
+      "label": "Virtual Office Spaces"
+    }
+  ]
+}

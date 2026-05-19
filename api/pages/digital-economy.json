@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:c9849a73af92ebc209b51dda5a7b135d39733898f6797db92350ae32d9cad68f",
+  "title": "Digital Economy",
+  "slug": "digital-economy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-economy",
+  "domain": "spatial-computing",
+  "definition": "The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenised exchange of goods and services in the metaverse. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:economic-systems",
+      "label": "Economic Systems"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:digital-value-exchange",
+        "label": "Digital Value Exchange"
+      },
+      {
+        "id": "urn:visionflow:owl:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-value-exchange",
+      "label": "Digital Value Exchange"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    },
+    {
+      "slug": "economic-systems",
+      "label": "Economic Systems"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    },
+    {
+      "slug": "virtual-commerce",
+      "label": "Virtual Commerce"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "Virtual Economy Domain"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

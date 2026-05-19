@@ -1,0 +1,207 @@
+{
+  "id": "urn:visionflow:page:2a7913404eaa6548d62f84e0b4cae1580355600be1244a426de3ee6088102c93",
+  "title": "Identity Federation",
+  "slug": "identity-federation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:identity-federation",
+  "domain": "infrastructure",
+  "definition": "A distributed authentication workflow that enables cross-domain identity linking through trust relationships, allowing users to access resources across multiple organizations using a single set of credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:attribute-exchange",
+        "label": "Attribute Exchange"
+      },
+      {
+        "id": "urn:visionflow:linked:credential-mapping",
+        "label": "Credential Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-negotiation",
+        "label": "Policy Negotiation"
+      },
+      {
+        "id": "urn:visionflow:linked:session-propagation",
+        "label": "Session Propagation"
+      },
+      {
+        "id": "urn:visionflow:linked:token-translation",
+        "label": "Token Translation"
+      },
+      {
+        "id": "urn:visionflow:linked:trust-establishment",
+        "label": "Trust Establishment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:federation-protocol",
+        "label": "Federation Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:metadata-exchange",
+        "label": "Metadata Exchange"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-provider-id-p",
+        "label": "Identity Provider (IdP)"
+      },
+      {
+        "id": "urn:visionflow:owl:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:b2-b-collaboration",
+        "label": "B2B Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-domain-sso",
+        "label": "Cross-Domain SSO"
+      },
+      {
+        "id": "urn:visionflow:linked:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-organization-access",
+        "label": "Multi-Organization Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "attribute-exchange",
+      "label": "Attribute Exchange"
+    },
+    {
+      "slug": "attribute-schema",
+      "label": "Attribute Schema"
+    },
+    {
+      "slug": "b2-b-collaboration",
+      "label": "B2B Collaboration"
+    },
+    {
+      "slug": "credential-mapping",
+      "label": "Credential Mapping"
+    },
+    {
+      "slug": "cross-domain-sso",
+      "label": "Cross-Domain SSO"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "federation-agreement",
+      "label": "Federation Agreement"
+    },
+    {
+      "slug": "federation-protocol",
+      "label": "Federation Protocol"
+    },
+    {
+      "slug": "metadata-exchange",
+      "label": "Metadata Exchange"
+    },
+    {
+      "slug": "multi-organization-access",
+      "label": "Multi-Organization Access"
+    },
+    {
+      "slug": "nist-sp-800-63-c",
+      "label": "NIST SP 800-63C"
+    },
+    {
+      "slug": "oasis-saml",
+      "label": "OASIS SAML"
+    },
+    {
+      "slug": "open-id-foundation",
+      "label": "OpenID Foundation"
+    },
+    {
+      "slug": "pki-infrastructure",
+      "label": "PKI Infrastructure"
+    },
+    {
+      "slug": "policy-negotiation",
+      "label": "Policy Negotiation"
+    },
+    {
+      "slug": "session-propagation",
+      "label": "Session Propagation"
+    },
+    {
+      "slug": "token-translation",
+      "label": "Token Translation"
+    },
+    {
+      "slug": "trust-establishment",
+      "label": "Trust Establishment"
+    },
+    {
+      "slug": "distributed-authentication-architecture",
+      "label": "Distributed Authentication Architecture"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "security-token",
+      "label": "Security Token"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    }
+  ]
+}

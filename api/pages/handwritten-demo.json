@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:1955c3cbcebbbd36c4e0f8980707b140ef03b643338a76f797ae640b453e119c",
+  "title": "handwritten demo",
+  "slug": "handwritten-demo",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:handwritten-demo",
+  "domain": "infrastructure",
+  "definition": "handwritten demo is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

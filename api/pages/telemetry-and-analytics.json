@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:c3f27018a13eb8432239a4ec8d04b5b7d2d89bfb4861d1647a7fd9461ee1b448",
+  "title": "Telemetry & Analytics",
+  "slug": "telemetry-and-analytics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:telemetry-and-analytics",
+  "domain": "spatial-computing",
+  "definition": "Systematic collection and analysis of usage and performance data from metaverse applications and platforms to enable monitoring, optimization, and decision-making.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:data-collection-pipeline",
+        "label": "Data Collection Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-analytics",
+        "label": "Usage Analytics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:analytics-engine",
+        "label": "Analytics Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:event-logging",
+        "label": "Event Logging"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:visionflow:linked:user-behavior-analysis",
+        "label": "User Behavior Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "analytics-engine",
+      "label": "Analytics Engine"
+    },
+    {
+      "slug": "capacity-planning",
+      "label": "Capacity Planning"
+    },
+    {
+      "slug": "data-collection-pipeline",
+      "label": "Data Collection Pipeline"
+    },
+    {
+      "slug": "event-logging",
+      "label": "Event Logging"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF Taxonomy"
+    },
+    {
+      "slug": "real-time-data-streaming",
+      "label": "Real-Time Data Streaming"
+    },
+    {
+      "slug": "statistical-analysis",
+      "label": "Statistical Analysis"
+    },
+    {
+      "slug": "usage-analytics",
+      "label": "Usage Analytics"
+    },
+    {
+      "slug": "user-behavior-analysis",
+      "label": "User Behavior Analysis"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "monitoring-dashboard",
+      "label": "Monitoring Dashboard"
+    },
+    {
+      "slug": "performance-metrics",
+      "label": "Performance Metrics"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    }
+  ]
+}

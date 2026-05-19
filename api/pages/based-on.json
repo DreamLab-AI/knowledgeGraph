@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:6c9972aefe906bb4bb949e8b8cdc6ffa54bbb9fa375abc708f58e3fe0380d159",
+  "title": "based on",
+  "slug": "based-on",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:based-on",
+  "domain": "robotics",
+  "definition": "International standard for quality management systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:safety-standard",
+      "label": "Safety Standard"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "safety-standard",
+      "label": "Safety Standard"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

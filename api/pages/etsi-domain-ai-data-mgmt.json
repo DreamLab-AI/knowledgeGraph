@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:235ff84fb1cdf9469f9fcf06ebd45bc22bfe2f7ce9ff50be02cfba8581be4049",
+  "title": "ETSI Domain AI + Data Mgmt",
+  "slug": "etsi-domain-ai-data-mgmt",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
+  "domain": "artificial-intelligence",
+  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:intelligent-analytics-categorization",
+        "label": "Intelligent Analytics Categorization"
+      },
+      {
+        "id": "urn:visionflow:linked:ml-pipeline-classification",
+        "label": "ML Pipeline Classification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi-domain-taxonomy",
+      "label": "ETSI Domain Taxonomy"
+    },
+    {
+      "slug": "etsi-gs-mec",
+      "label": "ETSI GS MEC"
+    },
+    {
+      "slug": "intelligent-analytics-categorization",
+      "label": "Intelligent Analytics Categorization"
+    },
+    {
+      "slug": "ml-pipeline-classification",
+      "label": "ML Pipeline Classification"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    }
+  ]
+}

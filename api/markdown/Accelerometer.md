@@ -1,22 +1,329 @@
-iri:: http://narrativegoldmine.com/robotics#Accelerometer
-uri:: urn:visionclaw:concept:robotics:accelerometer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:accelerometer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Accelerometer
-content-hash:: sha256-12-1a9ba8021ec3
-legacy-term-id:: RB-0082
-status:: draft
-maturity:: draft
-quality-score:: 0.55
-authority-score:: 0.10
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:11:27Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#Accelerometer
+legacy_uri:: urn:visionclaw:concept:robotics:accelerometer
 public:: true
-bridges-to:: [[Computer Vision]]
+
+# Accelerometer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed",
+  "@type": "Page",
+  "vc:slug": "accelerometer",
+  "title": "Accelerometer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-1451",
+      "vc:label": "IEEE 1451"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-1451-0",
+      "vc:label": "IEEE 1451.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:inertial-measurement-unit",
+      "vc:label": "Inertial Measurement Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-16063",
+      "vc:label": "ISO 16063"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-16063-1-2023",
+      "vc:label": "ISO 16063-1:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-8373-2021",
+      "vc:label": "ISO 8373:2021"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion",
+      "vc:label": "Motion"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-detection",
+      "vc:label": "Motion Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:orientation",
+      "vc:label": "Orientation"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-conditioning",
+      "vc:label": "Signal Conditioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:vibration",
+      "vc:label": "Vibration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.10"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[Computer Vision]]"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1a9ba8021ec3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#Accelerometer"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0082"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:11:27Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Accelerometer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.55"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:accelerometer"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:accelerometer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:accelerometer",
+  "@type": "OntologyClass",
+  "label": "Accelerometer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Accelerometer** - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure [[Motion]], [[Orientation]], and [[Vibration]] for real-time feedback control and navigation.",
+  "vc:qualityScore": {
+    "@value": "0.55",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.10",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:inertial-measurement-unit",
+      "vc:label": "Inertial Measurement Unit"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:signal-conditioning",
+      "vc:label": "Signal Conditioning"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-detection",
+      "vc:label": "Motion Detection"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:accelerometer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Gesture Recognition]]",
+      "resolved": "urn:visionflow:linked:gesture-recognition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 1451]]",
+      "resolved": "urn:visionflow:linked:ieee-1451",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 1451.0]]",
+      "resolved": "urn:visionflow:linked:ieee-1451-0",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Inertial Measurement Unit]]",
+      "resolved": "urn:visionflow:linked:inertial-measurement-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 16063]]",
+      "resolved": "urn:visionflow:linked:iso-16063",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 16063-1:2023]]",
+      "resolved": "urn:visionflow:linked:iso-16063-1-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 8373:2021]]",
+      "resolved": "urn:visionflow:linked:iso-8373-2021",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion]]",
+      "resolved": "urn:visionflow:linked:motion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion Detection]]",
+      "resolved": "urn:visionflow:linked:motion-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Orientation]]",
+      "resolved": "urn:visionflow:linked:orientation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Signal Conditioning]]",
+      "resolved": "urn:visionflow:linked:signal-conditioning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vibration]]",
+      "resolved": "urn:visionflow:linked:vibration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Accelerometer** - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure [[Motion]], [[Orientation]], and [[Vibration]] for real-time feedback control and navigation.

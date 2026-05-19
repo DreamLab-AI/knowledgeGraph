@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:5b677df3f4bbc69956d169f04c90318ec1af5d91e53e8ad09f4a2600eb766a26",
+  "title": "Intelligent NPC",
+  "slug": "intelligent-npc",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:intelligent-npc",
+  "domain": "spatial-computing",
+  "definition": "Non-player characters with AI-driven behavior.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-humans",
+      "label": "Digital Humans"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-humans",
+      "label": "Digital Humans"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce",
+  "title": "Bagging",
+  "slug": "bagging",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bagging",
+  "domain": "artificial-intelligence",
+  "definition": "Bagging is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ensemble-methods",
+      "label": "Ensemble Methods"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:parallel-training",
+        "label": "Parallel Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "parallel-training",
+      "label": "Parallel Training"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    }
+  ]
+}

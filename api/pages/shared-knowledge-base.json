@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:f210535ab4af7262b4778baf05f3a6a9e32ba3c0e8b1cfb5ce99f1cd60eb4bd5",
+  "title": "Shared Knowledge Base",
+  "slug": "shared-knowledge-base",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:shared-knowledge-base",
+  "domain": "spatial-computing",
+  "definition": "A collaborative knowledge repository enabling multiple agents or users to exchange, integrate, and query structured information using semantic web technologies, providing a common understanding of domain concepts through ontologies and linked data standards.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:knowledge-management-system",
+      "label": "Knowledge Management System"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collaborative-knowledge-discovery",
+        "label": "Collaborative Knowledge Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-knowledge-discovery",
+      "label": "Collaborative Knowledge Discovery"
+    },
+    {
+      "slug": "knowledge-management-system",
+      "label": "Knowledge Management System"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    }
+  ]
+}

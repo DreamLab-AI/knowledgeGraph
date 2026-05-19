@@ -1,24 +1,327 @@
-iri:: http://narrativegoldmine.com/spatial-computing#HumanRights
-uri:: urn:visionclaw:concept:spatial-computing:human-rights
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:human-rights
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Human Rights
-content-hash:: sha256-12-1b1acfbb472c
-legacy-term-id:: AI-0166
-status:: revised
-maturity:: production
-quality-score:: 0.95
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-13T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#HumanRights
+legacy_uri:: urn:visionclaw:concept:spatial-computing:human-rights
 public:: true
+
+# Human Rights
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604",
+  "@type": "Page",
+  "vc:slug": "human-rights",
+  "title": "Human Rights",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:aigrounded-domain",
+      "vc:label": "AIGroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "Blockchain Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:council-of-europe-ai-treaty",
+      "vc:label": "Council of Europe AI Treaty"
+    },
+    {
+      "@id": "urn:visionflow:linked:fundamental-rights-impact-assessment",
+      "vc:label": "Fundamental Rights Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles-2024",
+      "vc:label": "OECD AI Principles 2024"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-rights",
+      "vc:label": "Privacy Rights"
+    },
+    {
+      "@id": "urn:visionflow:linked:universal-declaration-of-human-rights",
+      "vc:label": "Universal Declaration of Human Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
+      "vc:label": "Algorithmic Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:democratic-values",
+      "vc:label": "Democratic Values"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-rights",
+      "vc:label": "Digital Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness-oecd",
+      "vc:label": "Fairness (OECD)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-centred-values",
+      "vc:label": "Human Centred Values"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1b1acfbb472c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-13T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#HumanRights"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0166"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "production"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Human Rights"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:human-rights"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "revised"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:human-rights"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:human-rights",
+  "@type": "OntologyClass",
+  "label": "Human Rights",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "revised",
+  "vc:maturity": "production",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.",
+  "vc:qualityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:relatedTo": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-technology",
+      "vc:label": "Blockchain Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-rights",
+      "vc:label": "Privacy Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-rights",
+      "vc:label": "Digital Rights"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:human-rights:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AIGroundedDomain]]",
+      "resolved": "urn:visionflow:linked:aigrounded-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Technology]]",
+      "resolved": "urn:visionflow:linked:blockchain-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Council of Europe AI Treaty]]",
+      "resolved": "urn:visionflow:linked:council-of-europe-ai-treaty",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fundamental Rights Impact Assessment]]",
+      "resolved": "urn:visionflow:linked:fundamental-rights-impact-assessment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD AI Principles 2024]]",
+      "resolved": "urn:visionflow:linked:oecd-ai-principles-2024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy Rights]]",
+      "resolved": "urn:visionflow:linked:privacy-rights",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Universal Declaration of Human Rights]]",
+      "resolved": "urn:visionflow:linked:universal-declaration-of-human-rights",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Ethics]]",
+      "resolved": "urn:visionflow:owl:class:ai-ethics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Algorithmic Accountability]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Democratic Values]]",
+      "resolved": "urn:visionflow:owl:class:democratic-values",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Rights]]",
+      "resolved": "urn:visionflow:owl:class:digital-rights",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness (OECD)]]",
+      "resolved": "urn:visionflow:owl:class:fairness-oecd",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Centred Values]]",
+      "resolved": "urn:visionflow:owl:class:human-centred-values",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.
@@ -30,7 +333,7 @@ public:: true
 
 - ### Relationships
   - related-to:: [[AI Ethics]], [[Blockchain Technology]], [[Digital Rights]], [[Privacy Rights]]
-  - parent-concept:: [[Human-Centred Values]]
+  - parent-concept:: [[Human Centred Values]]
   - operationalised-through:: [[Fundamental Rights Impact Assessment]]
   - governed-by:: [[EU AI Act]], [[Council of Europe AI Treaty]], [[Universal Declaration of Human Rights]]
 
@@ -131,7 +434,7 @@ public:: true
 
   ## See Also
 
-  - [[Human-Centred Values]] (AI-0159)
+  - [[Human Centred Values]] (AI-0159)
   - [[Democratic Values]] (AI-0167)
   - [[Fairness (OECD)]] (AI-0160)
   - [[AI Ethics]]

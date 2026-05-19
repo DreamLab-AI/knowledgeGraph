@@ -1,0 +1,124 @@
+{
+  "id": "urn:visionflow:page:3227ce8d0c1014322ddc1e6b29c1f7f62935ab29030ced47964e5dd33e6fb395",
+  "title": "Manipulator Arm",
+  "slug": "manipulator-arm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:manipulator-arm",
+  "domain": "spatial-computing",
+  "definition": "A multi-jointed mechanical or virtual robotic arm integrated with avatars or immersive systems to enable precise object manipulation and physical interaction within virtual or mixed reality environments through control systems, haptic feedback, and inverse kinematics algorithms. Manipulator arms combine robotics hardware (mechanical joints, actuators, end-effectors), computer vision guidance, and AI-driven control enabling naturalistic manipulation and grasping in XR applications, exemplified by the Avatarm system enabling remote physical object manipulation whilst maintaining immersive virtual presence, and deployed in surgical robotics, laboratory automation, pick-and-place operations, and immersive training simulators addressing challenges around latency, haptic feedback fidelity, and standardised interfaces for physical-virtual interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:avatar-wearable",
+      "label": "Avatar Wearable"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-ledger",
+      "label": "BlockchainLedger"
+    },
+    {
+      "slug": "controlled-by",
+      "label": "controlledBy"
+    },
+    {
+      "slug": "dt-guided-by",
+      "label": "dt:guidedBy"
+    },
+    {
+      "slug": "dt-optimized-by",
+      "label": "dt:optimizedBy"
+    },
+    {
+      "slug": "dt-simulated-in",
+      "label": "dt:simulatedIn"
+    },
+    {
+      "slug": "dt-tracked-on",
+      "label": "dt:trackedOn"
+    },
+    {
+      "slug": "dt-trained-by",
+      "label": "dt:trainedBy"
+    },
+    {
+      "slug": "executes-motion",
+      "label": "executesMotion"
+    },
+    {
+      "slug": "grasp-planning",
+      "label": "GraspPlanning"
+    },
+    {
+      "slug": "has-end-effector",
+      "label": "hasEndEffector"
+    },
+    {
+      "slug": "has-joint",
+      "label": "hasJoint"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "CollisionAvoidance"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "ComputerVision"
+    },
+    {
+      "slug": "force-control",
+      "label": "ForceControl"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "InverseKinematics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "motion-control",
+      "label": "MotionControl"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "ReinforcementLearning"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "VirtualEnvironment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    }
+  ]
+}

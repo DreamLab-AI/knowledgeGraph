@@ -1,24 +1,319 @@
-iri:: http://narrativegoldmine.com/spatial-computing#Safety
-uri:: urn:visionclaw:concept:spatial-computing:safety
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:safety
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Safety
-content-hash:: sha256-12-d449813e28ba
-legacy-term-id:: AI-0070
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#Safety
+legacy_uri:: urn:visionclaw:concept:spatial-computing:safety
 public:: true
+
+# Safety
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7",
+  "@type": "Page",
+  "vc:slug": "safety",
+  "title": "Safety",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:hazard-analysis",
+      "vc:label": "Hazard Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment-ai-0079",
+      "vc:label": "Risk Assessment (AI-0079)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bitcoin",
+      "vc:label": "Bitcoin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:decentralised-web",
+      "vc:label": "Decentralised Web"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety-and-alignment",
+      "vc:label": "Safety and alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "vc:label": "Social contract and jobs"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:solid",
+      "vc:label": "Solid"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-safety",
+      "vc:label": "Trust and Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:webid",
+      "vc:label": "webid"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d449813e28ba"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#Safety"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0070"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Safety"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:safety"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:safety"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:safety",
+  "@type": "OntologyClass",
+  "label": "Safety",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:hazard-analysis",
+      "vc:label": "Hazard Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment-ai-0079",
+      "vc:label": "Risk Assessment (AI-0079)"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:safety:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Hazard Analysis]]",
+      "resolved": "urn:visionflow:linked:hazard-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Risk Assessment (AI-0079)]]",
+      "resolved": "urn:visionflow:linked:risk-assessment-ai-0079",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bitcoin]]",
+      "resolved": "urn:visionflow:owl:class:bitcoin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Decentralised Web]]",
+      "resolved": "urn:visionflow:owl:class:decentralised-web",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Safety and alignment]]",
+      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social contract and jobs]]",
+      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Solid]]",
+      "resolved": "urn:visionflow:owl:class:solid",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Trust and Safety]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-safety",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[webid]]",
+      "resolved": "urn:visionflow:owl:class:webid",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.
@@ -46,11 +341,11 @@ public:: true
 			- See accelerating AI as part of a broader techno-capitalist imperative to transcend human limitations
   - # Potential Green Shoots
   - There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[webid]] and [[Decentralised Web]] monikers.
-  - Using AI to reduce conspiracy theory beliefs https://osf.io/preprints/psyarxiv/xcwdn [[Privacy, Trust and Safety]] [[Death of the Internet]] the flips side being that they are very capable of [persuasion](https://www.anthropic.com/news/measuring-model-persuasiveness).
-  - [2403.18802.pdf (arxiv.org)](https://arxiv.org/pdf/2403.18802.pdf) [[Privacy, Trust and Safety]]
+  - Using AI to reduce conspiracy theory beliefs https://osf.io/preprints/psyarxiv/xcwdn [[Trust and Safety]] [[Death of the Internet]] the flips side being that they are very capable of [persuasion](https://www.anthropic.com/news/measuring-model-persuasiveness).
+  - [2403.18802.pdf (arxiv.org)](https://arxiv.org/pdf/2403.18802.pdf) [[Trust and Safety]]
 		- 1) Most surprisingly: "LLM agents can achieve superhuman rating performance" on fact checking when given access to Google!
 		  2) Bigger models are more factual than smaller ones, as expected
-		  3) LLMs are 20x cheaper than human fact-checkers, even taking into account the number of calls the [[Large language models]] had to make.
+		  3) LLMs are 20x cheaper than human fact-checkers, even taking into account the number of calls the [[Large Language Models]] had to make.
 		- 4) [AI Outperforms Humans in Moral Judgments - Neuroscience News](https://neurosciencenews.com/ai-llm-morality-26041/)
   - ### Human Suffering and Exploitation
 		- **Labor Abuses:** Gold mining is notorious for dangerous working conditions that often result in severe injuries and fatalities. Miners, including children, are exposed to hazardous conditions without adequate safety measures.
@@ -77,12 +372,12 @@ public:: true
 			- Reactive enforcement vs proactive design
   - ## AI Safety and Concerns
 		- ### The UK situation.
-		- Every time a phase change of technology has been introduced there has been a fundamental shift in governance structures. These take time to play out. Electronic communication allowed global awareness of corruption, and there is a well documented breakdown of [[Privacy, Trust and Safety]] since. We can perhaps see this in the way that leaders are abandoning the pretence of 'norms' in the West.
+		- Every time a phase change of technology has been introduced there has been a fundamental shift in governance structures. These take time to play out. Electronic communication allowed global awareness of corruption, and there is a well documented breakdown of [[Trust and Safety]] since. We can perhaps see this in the way that leaders are abandoning the pretence of 'norms' in the West.
 		- More agile (emerging?) economies / countries may be able to take far more advantage, if they are allowed to, but make no mistake, the UK is currently well positioned. - 🟢 The UK is systemically well positioned to deal with sudden change, because the vertical integration of ministries allows them to be spun up and down in response to change regardless of the leadership. An agile AND persistent civil service can be effective in times of stress.
 			- [Ian Hogarth to lead UK’s AI Foundation Model Taskforce
 		- he's actually a great choice](https://www.gov.uk/government/news/tech-entrepreneur-ian-hogarth-to-lead-uks-ai-foundation-model-taskforce)
 			- [Welcome to State of AI Report 2023](https://www.stateof.ai/)
-			- America is supportive of UK positioning around [[Privacy, Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
+			- America is supportive of UK positioning around [[Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
 			- This perhaps explains the £2.5B [[Infrastructure]] and training investment plan by Microsoft.
 			- These companies are **as big** as the UK. Beware tech bros bearing gifts?
 			  ![image.png](assets/image_1704045603470_0.png)
@@ -121,11 +416,11 @@ public:: true
 			- See accelerating AI as part of a broader techno-capitalist imperative to transcend human limitations
   - # Potential Green Shoots
   - There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[webid]] and [[Decentralised Web]] monikers.
-  - Using AI to reduce conspiracy theory beliefs https://osf.io/preprints/psyarxiv/xcwdn [[Privacy, Trust and Safety]] [[Death of the Internet]] the flips side being that they are very capable of [persuasion](https://www.anthropic.com/news/measuring-model-persuasiveness).
-  - [2403.18802.pdf (arxiv.org)](https://arxiv.org/pdf/2403.18802.pdf) [[Privacy, Trust and Safety]]
+  - Using AI to reduce conspiracy theory beliefs https://osf.io/preprints/psyarxiv/xcwdn [[Trust and Safety]] [[Death of the Internet]] the flips side being that they are very capable of [persuasion](https://www.anthropic.com/news/measuring-model-persuasiveness).
+  - [2403.18802.pdf (arxiv.org)](https://arxiv.org/pdf/2403.18802.pdf) [[Trust and Safety]]
 		- 1) Most surprisingly: "LLM agents can achieve superhuman rating performance" on fact checking when given access to Google!
 		  2) Bigger models are more factual than smaller ones, as expected
-		  3) LLMs are 20x cheaper than human fact-checkers, even taking into account the number of calls the [[Large language models]] had to make.
+		  3) LLMs are 20x cheaper than human fact-checkers, even taking into account the number of calls the [[Large Language Models]] had to make.
 		- 4) [AI Outperforms Humans in Moral Judgments - Neuroscience News](https://neurosciencenews.com/ai-llm-morality-26041/)
   - ### Human Suffering and Exploitation
 		- **Labor Abuses:** Gold mining is notorious for dangerous working conditions that often result in severe injuries and fatalities. Miners, including children, are exposed to hazardous conditions without adequate safety measures.
@@ -152,12 +447,12 @@ public:: true
 			- Reactive enforcement vs proactive design
   - ## AI Safety and Concerns
 		- ### The UK situation.
-		- Every time a phase change of technology has been introduced there has been a fundamental shift in governance structures. These take time to play out. Electronic communication allowed global awareness of corruption, and there is a well documented breakdown of [[Privacy, Trust and Safety]] since. We can perhaps see this in the way that leaders are abandoning the pretence of 'norms' in the West.
+		- Every time a phase change of technology has been introduced there has been a fundamental shift in governance structures. These take time to play out. Electronic communication allowed global awareness of corruption, and there is a well documented breakdown of [[Trust and Safety]] since. We can perhaps see this in the way that leaders are abandoning the pretence of 'norms' in the West.
 		- More agile (emerging?) economies / countries may be able to take far more advantage, if they are allowed to, but make no mistake, the UK is currently well positioned. - 🟢 The UK is systemically well positioned to deal with sudden change, because the vertical integration of ministries allows them to be spun up and down in response to change regardless of the leadership. An agile AND persistent civil service can be effective in times of stress.
 			- [Ian Hogarth to lead UK’s AI Foundation Model Taskforce
 		- he's actually a great choice](https://www.gov.uk/government/news/tech-entrepreneur-ian-hogarth-to-lead-uks-ai-foundation-model-taskforce)
 			- [Welcome to State of AI Report 2023](https://www.stateof.ai/)
-			- America is supportive of UK positioning around [[Privacy, Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
+			- America is supportive of UK positioning around [[Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
 			- This perhaps explains the £2.5B [[Infrastructure]] and training investment plan by Microsoft.
 			- These companies are **as big** as the UK. Beware tech bros bearing gifts?
 			  ![image.png](assets/image_1704045603470_0.png)

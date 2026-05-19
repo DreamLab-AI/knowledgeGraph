@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:0cfaa2c93db0215c5b6383860795cbf21bad6a03d663cd41d48e01e987393efe",
+  "title": "Digital Model",
+  "slug": "digital-model",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-model",
+  "domain": "spatial-computing",
+  "definition": "Digital Model is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Computer Vision]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-replica",
+      "label": "Virtual Replica"
+    }
+  ]
+}

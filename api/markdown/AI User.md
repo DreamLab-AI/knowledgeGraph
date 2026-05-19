@@ -1,21 +1,636 @@
-iri:: http://narrativegoldmine.com/metaverse#AIUser
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-user
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-user
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI User
-content-hash:: sha256-12-0f3935c73f0e
-legacy-term-id:: AI-0100
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIUser
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-user
 public:: true
+
+# AI User
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8e9b5863fec261c4f77a27f05d0317cb733930db4095246f8f44aff60e3e44c7",
+  "@type": "Page",
+  "vc:slug": "ai-user",
+  "title": "AI User",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:community",
+      "vc:label": "community"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-thinking",
+      "vc:label": "design thinking"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation",
+      "vc:label": "documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-protection-of-users-from-discriminatory-treatment-user-experience-quality-of-user-interaction-with-ai-accessibility-ensuring-usability-for-diverse-users-informed-consent-user-agreement-based-on-understanding-context-and-significance-ai-users-represent-the-ultimate-stakeholders-for-whom-ai-systems-are-designed-and-deployed-experiencing-both-the-benefits-and-risks-of-ai-applications-the-user-perspective-is-essential-for-assessing-ai-system-effectiveness-usability-fairness-and-social-impact-user-needs-capabilities-and-contexts-significantly-influence-appropriate-ai-system-design-deployment-approaches-and-oversight-mechanisms-the-nist-ai-risk-management-framework-emphasises-the-importance-of-understanding-user-contexts-capabilities-and-expectations-when-mapping-and-managing-ai-risks-user-diversity-in-technical-sophistication-domain-expertise-accessibility-requirements-cultural-backgrounds-and-power-relationships-with-ai-providers-necessitates-user-centred-design-approaches-and-inclusive-development-practices-modern-ai-systems-create-increasingly-complex-user-relationships-users-may-simultaneously-benefit-from-and-be-constrained-by-ai-may-interact-knowingly-or-unknowingly-with-ai-may-possess-varying-degrees-of-choice-in-ai-system-use-and-may-have-asymmetric-information-about-ai-system-functioning-these-dynamics-raise-important-questions-about-informed-consent-user-autonomy-and-power-imbalances-requiring-ethical-consideration-and-governance-attention-references-1-european-commission-proposal-for-a-regulation-on-artificial-intelligence-ai-act-2021-2-nist-ai-100-1-artificial-intelligence-risk-management-framework-2023-3-iso-iec-25059-software-engineering-systems-and-software-quality-requirements-and-evaluation-squa-re-quality-model-for-ai-systems-4-shneiderman-b-human-centered-ai-2022-5-gdpr-articles-13-15-22-data-subject-rights-see-also-ai-provider",
+      "vc:label": "Fairness**: Protection of users from discriminatory treatment\n\t\t  - **User Experience**: Quality of user interaction with AI\n\t\t  - **Accessibility**: Ensuring usability for diverse users\n\t\t  - **Informed Consent**: User agreement based on understanding\n\n  ## Context and Significance\n\n  AI users represent the ultimate stakeholders for whom AI systems are designed and deployed, experiencing both the benefits and risks of AI applications. The user perspective is essential for assessing AI system effectiveness, usability, fairness, and social impact. User needs, capabilities, and contexts significantly influence appropriate AI system design, deployment approaches, and oversight mechanisms.\n\n  The NIST AI Risk Management Framework emphasises the importance of understanding user contexts, capabilities, and expectations when mapping and managing AI risks. User diversity—in technical sophistication, domain expertise, accessibility requirements, cultural backgrounds, and power relationships with AI providers—necessitates user-centred design approaches and inclusive development practices.\n\n  Modern AI systems create increasingly complex user relationships: users may simultaneously benefit from and be constrained by AI, may interact knowingly or unknowingly with AI, may possess varying degrees of choice in AI system use, and may have asymmetric information about AI system functioning. These dynamics raise important questions about informed consent, user autonomy, and power imbalances requiring ethical consideration and governance attention.\n\n  #### References\n  1. European Commission, *Proposal for a Regulation on Artificial Intelligence (AI Act)* (2021)\n\t\t  2. NIST AI 100-1, *Artificial Intelligence Risk Management Framework* (2023)\n\t\t  3. ISO/IEC 25059, *Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems*\n\t\t  4. Shneiderman, B., *Human-Centered AI* (2022)\n\t\t  5. GDPR, Articles 13-15, 22 (data subject rights)\n\n\t\t  ## See Also\n\n\t\t  - [[AI Provider"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-consent",
+      "vc:label": "Informed Consent"
+    },
+    {
+      "@id": "urn:visionflow:linked:innovation",
+      "vc:label": "innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:king1966fisher",
+      "vc:label": "king1966fisher"
+    },
+    {
+      "@id": "urn:visionflow:linked:mit-s-lit-on-lightning",
+      "vc:label": "MIT’s lit on Lightning"
+    },
+    {
+      "@id": "urn:visionflow:linked:modeling",
+      "vc:label": "modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:must",
+      "vc:label": "MUST"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr",
+      "vc:label": "Nostr"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimization",
+      "vc:label": "optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:organisation",
+      "vc:label": "organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance",
+      "vc:label": "performance"
+    },
+    {
+      "@id": "urn:visionflow:linked:research",
+      "vc:label": "research"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "user experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "User Experience"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accessibility",
+      "vc:label": "Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-operator",
+      "vc:label": "AI Operator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-video",
+      "vc:label": "AI Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:android",
+      "vc:label": "android"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:apple",
+      "vc:label": "Apple"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:apple",
+      "vc:label": "apple"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias",
+      "vc:label": "bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaboration",
+      "vc:label": "collaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "deep learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google",
+      "vc:label": "Google"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hardware-and-edge",
+      "vc:label": "Hardware and Edge"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:humans-avatars-character",
+      "vc:label": "Humans, Avatars , Character"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hyper-personalisation",
+      "vc:label": "Hyper personalisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-space",
+      "vc:label": "latent space"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "vc:label": "Lightning and Similar L2"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nostr-protocol",
+      "vc:label": "Nostr protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
+      "vc:label": "NVIDIA Omniverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:software-engineering",
+      "vc:label": "software engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:some-legacy-linked-json",
+      "vc:label": "Some legacy Linked-JSON"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stakeholder",
+      "vc:label": "Stakeholder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-0f3935c73f0e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIUser"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0100"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI User"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-user"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-user"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8e9b5863fec261c4f77a27f05d0317cb733930db4095246f8f44aff60e3e44c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-user",
+  "@type": "OntologyClass",
+  "label": "AI User",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8e9b5863fec261c4f77a27f05d0317cb733930db4095246f8f44aff60e3e44c7"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8e9b5863fec261c4f77a27f05d0317cb733930db4095246f8f44aff60e3e44c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exposure to AI-mediated outcomes, encompassing both active users who consciously engage with AI systems and passive subjects whose data is processed or whose circumstances are influenced by AI operations.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-user:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8e9b5863fec261c4f77a27f05d0317cb733930db4095246f8f44aff60e3e44c7"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[community]]",
+      "resolved": "urn:visionflow:linked:community",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[design thinking]]",
+      "resolved": "urn:visionflow:linked:design-thinking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[documentation]]",
+      "resolved": "urn:visionflow:linked:documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fairness**: Protection of users from discriminatory treatment\n\t\t  - **User Experience**: Quality of user interaction with AI\n\t\t  - **Accessibility**: Ensuring usability for diverse users\n\t\t  - **Informed Consent**: User agreement based on understanding\n\n  ## Context and Significance\n\n  AI users represent the ultimate stakeholders for whom AI systems are designed and deployed, experiencing both the benefits and risks of AI applications. The user perspective is essential for assessing AI system effectiveness, usability, fairness, and social impact. User needs, capabilities, and contexts significantly influence appropriate AI system design, deployment approaches, and oversight mechanisms.\n\n  The NIST AI Risk Management Framework emphasises the importance of understanding user contexts, capabilities, and expectations when mapping and managing AI risks. User diversity—in technical sophistication, domain expertise, accessibility requirements, cultural backgrounds, and power relationships with AI providers—necessitates user-centred design approaches and inclusive development practices.\n\n  Modern AI systems create increasingly complex user relationships: users may simultaneously benefit from and be constrained by AI, may interact knowingly or unknowingly with AI, may possess varying degrees of choice in AI system use, and may have asymmetric information about AI system functioning. These dynamics raise important questions about informed consent, user autonomy, and power imbalances requiring ethical consideration and governance attention.\n\n  #### References\n  1. European Commission, *Proposal for a Regulation on Artificial Intelligence (AI Act)* (2021)\n\t\t  2. NIST AI 100-1, *Artificial Intelligence Risk Management Framework* (2023)\n\t\t  3. ISO/IEC 25059, *Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems*\n\t\t  4. Shneiderman, B., *Human-Centered AI* (2022)\n\t\t  5. GDPR, Articles 13-15, 22 (data subject rights)\n\n\t\t  ## See Also\n\n\t\t  - [[AI Provider]]",
+      "resolved": "urn:visionflow:linked:fairness-protection-of-users-from-discriminatory-treatment-user-experience-quality-of-user-interaction-with-ai-accessibility-ensuring-usability-for-diverse-users-informed-consent-user-agreement-based-on-understanding-context-and-significance-ai-users-represent-the-ultimate-stakeholders-for-whom-ai-systems-are-designed-and-deployed-experiencing-both-the-benefits-and-risks-of-ai-applications-the-user-perspective-is-essential-for-assessing-ai-system-effectiveness-usability-fairness-and-social-impact-user-needs-capabilities-and-contexts-significantly-influence-appropriate-ai-system-design-deployment-approaches-and-oversight-mechanisms-the-nist-ai-risk-management-framework-emphasises-the-importance-of-understanding-user-contexts-capabilities-and-expectations-when-mapping-and-managing-ai-risks-user-diversity-in-technical-sophistication-domain-expertise-accessibility-requirements-cultural-backgrounds-and-power-relationships-with-ai-providers-necessitates-user-centred-design-approaches-and-inclusive-development-practices-modern-ai-systems-create-increasingly-complex-user-relationships-users-may-simultaneously-benefit-from-and-be-constrained-by-ai-may-interact-knowingly-or-unknowingly-with-ai-may-possess-varying-degrees-of-choice-in-ai-system-use-and-may-have-asymmetric-information-about-ai-system-functioning-these-dynamics-raise-important-questions-about-informed-consent-user-autonomy-and-power-imbalances-requiring-ethical-consideration-and-governance-attention-references-1-european-commission-proposal-for-a-regulation-on-artificial-intelligence-ai-act-2021-2-nist-ai-100-1-artificial-intelligence-risk-management-framework-2023-3-iso-iec-25059-software-engineering-systems-and-software-quality-requirements-and-evaluation-squa-re-quality-model-for-ai-systems-4-shneiderman-b-human-centered-ai-2022-5-gdpr-articles-13-15-22-data-subject-rights-see-also-ai-provider",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Informed Consent]]",
+      "resolved": "urn:visionflow:linked:informed-consent",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[innovation]]",
+      "resolved": "urn:visionflow:linked:innovation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[king1966fisher]]",
+      "resolved": "urn:visionflow:linked:king1966fisher",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MIT’s lit on Lightning]]",
+      "resolved": "urn:visionflow:linked:mit-s-lit-on-lightning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[modeling]]",
+      "resolved": "urn:visionflow:linked:modeling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MUST]]",
+      "resolved": "urn:visionflow:linked:must",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr]]",
+      "resolved": "urn:visionflow:linked:nostr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[optimization]]",
+      "resolved": "urn:visionflow:linked:optimization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[organisation]]",
+      "resolved": "urn:visionflow:linked:organisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[performance]]",
+      "resolved": "urn:visionflow:linked:performance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[research]]",
+      "resolved": "urn:visionflow:linked:research",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[user experience]]",
+      "resolved": "urn:visionflow:linked:user-experience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accessibility]]",
+      "resolved": "urn:visionflow:owl:class:accessibility",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Operator]]",
+      "resolved": "urn:visionflow:owl:class:ai-operator",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Video]]",
+      "resolved": "urn:visionflow:owl:class:ai-video",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[android]]",
+      "resolved": "urn:visionflow:owl:class:android",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Apple]]",
+      "resolved": "urn:visionflow:owl:class:apple",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[apple]]",
+      "resolved": "urn:visionflow:owl:class:apple",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[artificial intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[bias]]",
+      "resolved": "urn:visionflow:owl:class:bias",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[collaboration]]",
+      "resolved": "urn:visionflow:owl:class:collaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[deep learning]]",
+      "resolved": "urn:visionflow:owl:class:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Explainability]]",
+      "resolved": "urn:visionflow:owl:class:explainability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Google]]",
+      "resolved": "urn:visionflow:owl:class:google",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hardware and Edge]]",
+      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Oversight]]",
+      "resolved": "urn:visionflow:owl:class:human-oversight",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Humans, Avatars , Character]]",
+      "resolved": "urn:visionflow:owl:class:humans-avatars-character",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hyper personalisation]]",
+      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[latent space]]",
+      "resolved": "urn:visionflow:owl:class:latent-space",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Lightning and Similar L2]]",
+      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Nostr protocol]]",
+      "resolved": "urn:visionflow:owl:class:nostr-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NVIDIA Omniverse]]",
+      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[OpenAI]]",
+      "resolved": "urn:visionflow:owl:class:open-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[software engineering]]",
+      "resolved": "urn:visionflow:owl:class:software-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Some legacy Linked-JSON]]",
+      "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Stakeholder]]",
+      "resolved": "urn:visionflow:owl:class:stakeholder",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparency]]",
+      "resolved": "urn:visionflow:owl:class:transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8e9b5863fec261c4f77a27f05d0317cb733930db4095246f8f44aff60e3e44c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exposure to AI-mediated outcomes, encompassing both active users who consciously engage with AI systems and passive subjects whose data is processed or whose circumstances are influenced by AI operations.

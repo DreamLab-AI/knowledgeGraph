@@ -1,21 +1,384 @@
-iri:: http://narrativegoldmine.com/metaverse#AIEthics
-uri:: urn:visionclaw:concept:artificial-intelligence:aiethics
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:aiethics
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AIEthics
-content-hash:: sha256-12-527dd053548c
-legacy-term-id:: MV-3018
-status:: draft
-maturity:: draft
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIEthics
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:aiethics
 public:: true
+
+# AIEthics
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cc706241d4b89d5b90e1a2e3239675384861c84f9dceebdbfbf4d605d13db728",
+  "@type": "Page",
+  "vc:slug": "aiethics",
+  "title": "AIEthics",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:addresses-concern",
+      "vc:label": "addressesConcern"
+    },
+    {
+      "@id": "urn:visionflow:linked:aigovernance",
+      "vc:label": "AIGovernance"
+    },
+    {
+      "@id": "urn:visionflow:linked:applies-to",
+      "vc:label": "appliesTo"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-and-fairness",
+      "vc:label": "BiasAndFairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:daogovernance",
+      "vc:label": "DAOGovernance"
+    },
+    {
+      "@id": "urn:visionflow:linked:defines-guideline",
+      "vc:label": "definesGuideline"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-systems",
+      "vc:label": "Digital Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:discrimination-prevention",
+      "vc:label": "DiscriminationPrevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-enforced-by",
+      "vc:label": "dt:enforcedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-governed-by",
+      "vc:label": "dt:governedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-guides",
+      "vc:label": "dt:guides"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-tracked-on",
+      "vc:label": "dt:trackedOn"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-validates",
+      "vc:label": "dt:validates"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-values",
+      "vc:label": "Human Values"
+    },
+    {
+      "@id": "urn:visionflow:linked:requires-compliance",
+      "vc:label": "requiresCompliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-risk",
+      "vc:label": "AI Risk"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audit-trail",
+      "vc:label": "AuditTrail"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-agent",
+      "vc:label": "AutonomousAgent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "SmartContract"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-527dd053548c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIEthics"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3018"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AIEthics"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aiethics"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:aiethics"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cc706241d4b89d5b90e1a2e3239675384861c84f9dceebdbfbf4d605d13db728@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:aiethics",
+  "@type": "OntologyClass",
+  "label": "AIEthics",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:cc706241d4b89d5b90e1a2e3239675384861c84f9dceebdbfbf4d605d13db728"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cc706241d4b89d5b90e1a2e3239675384861c84f9dceebdbfbf4d605d13db728@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A framework of ethical principles and governance structures ensuring responsible development, deployment, and oversight of [[Artificial Intelligence]] systems in compliance with societal values. It addresses concerns including fairness, accountability, transparency, bias mitigation, and alignment with [[Human Values]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:aiethics:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:cc706241d4b89d5b90e1a2e3239675384861c84f9dceebdbfbf4d605d13db728"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[addressesConcern]]",
+      "resolved": "urn:visionflow:linked:addresses-concern",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AIGovernance]]",
+      "resolved": "urn:visionflow:linked:aigovernance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[appliesTo]]",
+      "resolved": "urn:visionflow:linked:applies-to",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BiasAndFairness]]",
+      "resolved": "urn:visionflow:linked:bias-and-fairness",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DAOGovernance]]",
+      "resolved": "urn:visionflow:linked:daogovernance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[definesGuideline]]",
+      "resolved": "urn:visionflow:linked:defines-guideline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Systems]]",
+      "resolved": "urn:visionflow:linked:digital-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DiscriminationPrevention]]",
+      "resolved": "urn:visionflow:linked:discrimination-prevention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:enforcedBy]]",
+      "resolved": "urn:visionflow:linked:dt-enforced-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:governedBy]]",
+      "resolved": "urn:visionflow:linked:dt-governed-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:guides]]",
+      "resolved": "urn:visionflow:linked:dt-guides",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:trackedOn]]",
+      "resolved": "urn:visionflow:linked:dt-tracked-on",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:validates]]",
+      "resolved": "urn:visionflow:linked:dt-validates",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human Values]]",
+      "resolved": "urn:visionflow:linked:human-values",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[requiresCompliance]]",
+      "resolved": "urn:visionflow:linked:requires-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Risk]]",
+      "resolved": "urn:visionflow:owl:class:ai-risk",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AuditTrail]]",
+      "resolved": "urn:visionflow:owl:class:audit-trail",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AutonomousAgent]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-agent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SmartContract]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:cc706241d4b89d5b90e1a2e3239675384861c84f9dceebdbfbf4d605d13db728@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A framework of ethical principles and governance structures ensuring responsible development, deployment, and oversight of [[Artificial Intelligence]] systems in compliance with societal values. It addresses concerns including fairness, accountability, transparency, bias mitigation, and alignment with [[Human Values]].
@@ -82,7 +445,7 @@ public:: true
 		    - [[Accountability]]
 		    - [[BiasAndFairness]]
 		    - [[AIGovernance]]
-		    - [[AIRisk]]
+		    - [[AI Risk]]
 		    - [[DiscriminationPrevention]]
 
 		  - ## Use Cases

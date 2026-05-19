@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:10cad7f2faec1800ce1d53c792d23ce0b498e29c2fcd4aebeedfaf4d3a1c9e3e",
+  "title": "Proprietary Video",
+  "slug": "proprietary-video",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:proprietary-video",
+  "domain": "infrastructure",
+  "definition": "Proprietary Video denotes the class of video coding formats, digital rights management (DRM) systems, adaptive bitrate streaming protocols, and broadcast transmission standards whose specification, licensing, or enforcement mechanism is controlled by a corporation, patent pool, or standards body that restricts royalty-free implementation, encompassing five primary technical pillars: (1) patent-encumbered video codecs \u2014 H.264/AVC (ITU-T H.264 | ISO/IEC 14496-10 JVT 2003, MPEG LA patent pool per-device royalties capped at $9.75M/year per licensor group through 2028; free for internet streaming since Cisco 2016 announcement but device-level royalties persist for hardware decode silicon), HEVC/H.265 (ITU-T H.265 | ISO/IEC 23008-2 2013, fragmented across three overlapping patent pools \u2014 MPEG LA charging $0.20/unit or aggregate royalty, HEVC Advance charging 0.5% of revenue, Velos Media with separate structure \u2014 this three-pool fragmentation catalysed Alliance for Open Media founding 2015 to produce royalty-free AV1), VVC/H.266 (ITU-T H.266 | ISO/IEC 23090-3 ratified July 2020, MC-IF single consolidated licence pool announced 2022 targeting ~$0.30\u2013$0.50/device, achieving 50% bit-rate red",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:broadcast-standards",
+      "label": "Broadcast Standards"
+    },
+    {
+      "id": "urn:visionflow:linked:content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "id": "urn:visionflow:linked:intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "id": "urn:visionflow:linked:patent-licensing",
+      "label": "Patent Licensing"
+    },
+    {
+      "id": "urn:visionflow:linked:streaming-protocols",
+      "label": "Streaming Protocols"
+    },
+    {
+      "id": "urn:visionflow:linked:video-codec-standards",
+      "label": "Video Codec Standards"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-rights-management",
+      "label": "Digital Rights Management"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:arm-trust-zone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "id": "urn:visionflow:linked:atsc-3-0",
+        "label": "ATSC 3.0"
+      },
+      {
+        "id": "urn:visionflow:linked:cmaf",
+        "label": "CMAF"
+      },
+      {
+        "id": "urn:visionflow:linked:common-encryption",
+        "label": "Common Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:dolby-atmos",
+        "label": "Dolby Atmos"
+      },
+      {
+        "id": "urn:visionflow:linked:dolby-vision",
+        "label": "Dolby Vision"
+      },
+      {
+        "id": "urn:visionflow:linked:fair-play",
+        "label": "FairPlay"
+      },
+      {
+        "id": "urn:visionflow:linked:h-264",
+        "label": "H.264"
+      },
+      {
+        "id": "urn:visionflow:linked:hbb-tv",
+        "label": "HbbTV"
+      },
+      {
+        "id": "urn:visionflow:linked:hdcp",
+        "label": "HDCP"
+      },
+      {
+        "id": "urn:visionflow:linked:hevc",
+        "label": "HEVC"
+      },
+      {
+        "id": "urn:visionflow:linked:hls",
+        "label": "HLS"
+      },
+      {
+        "id": "urn:visionflow:linked:mpeg-dash",
+        "label": "MPEG-DASH"
+      },
+      {
+        "id": "urn:visionflow:linked:play-ready",
+        "label": "PlayReady"
+      },
+      {
+        "id": "urn:visionflow:linked:uhd-blu-ray",
+        "label": "UHD Blu-ray"
+      },
+      {
+        "id": "urn:visionflow:linked:vvc-h-266",
+        "label": "VVC H.266"
+      },
+      {
+        "id": "urn:visionflow:linked:widevine",
+        "label": "Widevine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:arm-trust-zone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "id": "urn:visionflow:linked:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:visionflow:linked:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:visionflow:linked:frand-licensing",
+        "label": "FRAND Licensing"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-security",
+        "label": "Hardware Security"
+      },
+      {
+        "id": "urn:visionflow:linked:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:visionflow:linked:patent-licensing",
+        "label": "Patent Licensing"
+      },
+      {
+        "id": "urn:visionflow:linked:tee",
+        "label": "TEE"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:4-k-uhd-delivery",
+        "label": "4K UHD Delivery"
+      },
+      {
+        "id": "urn:visionflow:linked:addressable-advertising",
+        "label": "Addressable Advertising"
+      },
+      {
+        "id": "urn:visionflow:linked:broadcast-television",
+        "label": "Broadcast Television"
+      },
+      {
+        "id": "urn:visionflow:linked:digital-cinema",
+        "label": "Digital Cinema"
+      },
+      {
+        "id": "urn:visionflow:linked:hdr-video",
+        "label": "HDR Video"
+      },
+      {
+        "id": "urn:visionflow:linked:low-latency-streaming",
+        "label": "Low Latency Streaming"
+      },
+      {
+        "id": "urn:visionflow:linked:over-the-top-streaming",
+        "label": "Over The Top Streaming"
+      },
+      {
+        "id": "urn:visionflow:linked:pay-tv",
+        "label": "Pay TV"
+      },
+      {
+        "id": "urn:visionflow:linked:premium-streaming",
+        "label": "Premium Streaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:atsc-standards",
+        "label": "ATSC Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:blu-ray-disc-standards",
+        "label": "Blu-ray Disc Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:dvb-standards",
+        "label": "DVB Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:etsi-standards",
+        "label": "ETSI Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-iec-standards",
+        "label": "ISO IEC Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:itu-t-standards",
+        "label": "ITU-T Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:mpeg-standards",
+        "label": "MPEG Standards"
+      },
+      {
+        "id": "urn:visionflow:linked:w3-c-eme-standards",
+        "label": "W3C EME Standards"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "4-k-uhd-delivery",
+      "label": "4K UHD Delivery"
+    },
+    {
+      "slug": "addressable-advertising",
+      "label": "Addressable Advertising"
+    },
+    {
+      "slug": "advertising-and-marketing",
+      "label": "Advertising and Marketing"
+    },
+    {
+      "slug": "alliance-for-open-media",
+      "label": "Alliance for Open Media"
+    },
+    {
+      "slug": "amazon-prime-video",
+      "label": "Amazon Prime Video"
+    },
+    {
+      "slug": "apple-tv-plus",
+      "label": "Apple TV Plus"
+    },
+    {
+      "slug": "arm-trust-zone",
+      "label": "ARM TrustZone"
+    },
+    {
+      "slug": "atsc",
+      "label": "ATSC"
+    },
+    {
+      "slug": "atsc-3-0",
+      "label": "ATSC 3.0"
+    },
+    {
+      "slug": "atsc-standards",
+      "label": "ATSC Standards"
+    },
+    {
+      "slug": "av1",
+      "label": "AV1"
+    },
+    {
+      "slug": "avs3",
+      "label": "AVS3"
+    },
+    {
+      "slug": "bbc-i-player",
+      "label": "BBC iPlayer"
+    },
+    {
+      "slug": "blu-ray-disc-association",
+      "label": "Blu-ray Disc Association"
+    },
+    {
+      "slug": "blu-ray-disc-standards",
+      "label": "Blu-ray Disc Standards"
+    },
+    {
+      "slug": "broadcast-domain",
+      "label": "BroadcastDomain"
+    },
+    {
+      "slug": "broadcast-standards",
+      "label": "Broadcast Standards"
+    },
+    {
+      "slug": "broadcast-television",
+      "label": "Broadcast Television"
+    },
+    {
+      "slug": "bt-sport",
+      "label": "BT Sport"
+    },
+    {
+      "slug": "cmaf",
+      "label": "CMAF"
+    },
+    {
+      "slug": "codec-licensing",
+      "label": "Codec Licensing"
+    },
+    {
+      "slug": "common-encryption",
+      "label": "Common Encryption"
+    },
+    {
+      "slug": "compression-layer",
+      "label": "CompressionLayer"
+    },
+    {
+      "slug": "content-delivery-domain",
+      "label": "ContentDeliveryDomain"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "content-protection-layer",
+      "label": "ContentProtectionLayer"
+    },
+    {
+      "slug": "delivery-layer",
+      "label": "DeliveryLayer"
+    },
+    {
+      "slug": "digital-cinema",
+      "label": "Digital Cinema"
+    },
+    {
+      "slug": "digital-rights-domain",
+      "label": "DigitalRightsDomain"
+    },
+    {
+      "slug": "disney-plus",
+      "label": "Disney Plus"
+    },
+    {
+      "slug": "dolby-atmos",
+      "label": "Dolby Atmos"
+    },
+    {
+      "slug": "dolby-laboratories",
+      "label": "Dolby Laboratories"
+    },
+    {
+      "slug": "dolby-vision",
+      "label": "Dolby Vision"
+    },
+    {
+      "slug": "dvb",
+      "label": "DVB"
+    },
+    {
+      "slug": "dvb-standards",
+      "label": "DVB Standards"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "etsi-standards",
+      "label": "ETSI Standards"
+    },
+    {
+      "slug": "f-mp4",
+      "label": "fMP4"
+    },
+    {
+      "slug": "fair-play",
+      "label": "FairPlay"
+    },
+    {
+      "slug": "frand-commitments",
+      "label": "FRAND Commitments"
+    },
+    {
+      "slug": "frand-licensing",
+      "label": "FRAND Licensing"
+    },
+    {
+      "slug": "h-264",
+      "label": "H.264"
+    },
+    {
+      "slug": "hardware-security",
+      "label": "Hardware Security"
+    },
+    {
+      "slug": "hardware-security-layer",
+      "label": "HardwareSecurityLayer"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    },
+    {
+      "slug": "hbb-tv",
+      "label": "HbbTV"
+    },
+    {
+      "slug": "hdcp",
+      "label": "HDCP"
+    },
+    {
+      "slug": "hdr-video",
+      "label": "HDR Video"
+    },
+    {
+      "slug": "hevc",
+      "label": "HEVC"
+    },
+    {
+      "slug": "hls",
+      "label": "HLS"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "iso-iec",
+      "label": "ISO IEC"
+    },
+    {
+      "slug": "iso-iec-standards",
+      "label": "ISO IEC Standards"
+    },
+    {
+      "slug": "itu-t",
+      "label": "ITU-T"
+    },
+    {
+      "slug": "itu-t-standards",
+      "label": "ITU-T Standards"
+    },
+    {
+      "slug": "itvx",
+      "label": "ITVX"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "low-latency-streaming",
+      "label": "Low Latency Streaming"
+    },
+    {
+      "slug": "media-technology-domain",
+      "label": "MediaTechnologyDomain"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "mpeg",
+      "label": "MPEG"
+    },
+    {
+      "slug": "mpeg-5-evc-baseline",
+      "label": "MPEG-5 EVC Baseline"
+    },
+    {
+      "slug": "mpeg-dash",
+      "label": "MPEG-DASH"
+    },
+    {
+      "slug": "mpeg-standards",
+      "label": "MPEG Standards"
+    },
+    {
+      "slug": "netflix",
+      "label": "Netflix"
+    },
+    {
+      "slug": "ofdm",
+      "label": "OFDM"
+    },
+    {
+      "slug": "ogg-vorbis-theora",
+      "label": "Ogg Vorbis Theora"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "over-the-top-streaming",
+      "label": "Over The Top Streaming"
+    },
+    {
+      "slug": "patent-licensing",
+      "label": "Patent Licensing"
+    },
+    {
+      "slug": "patent-pools",
+      "label": "Patent Pools"
+    },
+    {
+      "slug": "pay-tv",
+      "label": "Pay TV"
+    },
+    {
+      "slug": "play-ready",
+      "label": "PlayReady"
+    },
+    {
+      "slug": "premium-streaming",
+      "label": "Premium Streaming"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "royalty-free-codecs",
+      "label": "Royalty Free Codecs"
+    },
+    {
+      "slug": "sky-glass",
+      "label": "Sky Glass"
+    },
+    {
+      "slug": "streaming-protocols",
+      "label": "Streaming Protocols"
+    },
+    {
+      "slug": "streaming-services",
+      "label": "Streaming Services"
+    },
+    {
+      "slug": "tee",
+      "label": "TEE"
+    },
+    {
+      "slug": "uhd-blu-ray",
+      "label": "UHD Blu-ray"
+    },
+    {
+      "slug": "video-codec-standards",
+      "label": "Video Codec Standards"
+    },
+    {
+      "slug": "vp9",
+      "label": "VP9"
+    },
+    {
+      "slug": "vvc-h-266",
+      "label": "VVC H.266"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "w3-c-eme-standards",
+      "label": "W3C EME Standards"
+    },
+    {
+      "slug": "widevine",
+      "label": "Widevine"
+    },
+    {
+      "slug": "you-tube",
+      "label": "YouTube"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

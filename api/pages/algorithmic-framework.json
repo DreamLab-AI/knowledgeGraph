@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:718d781749d9f1673ca3c32bfcc596edb53190d417b810de52cf1358336a2fc3",
+  "title": "Algorithmic Framework",
+  "slug": "algorithmic-framework",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:algorithmic-framework",
+  "domain": "artificial-intelligence",
+  "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-framework",
+      "label": "AI Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ]
+}

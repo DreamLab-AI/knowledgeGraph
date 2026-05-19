@@ -1,0 +1,207 @@
+{
+  "id": "urn:visionflow:page:6d794de57e005746716c7343683c1474e8090758d7862aedaf3e510b8004893f",
+  "title": "Compatibility Process",
+  "slug": "compatibility-process",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:compatibility-process",
+  "domain": "spatial-computing",
+  "definition": "Systematic procedure for ensuring that digital assets, applications, and systems conform to common standards, protocols, and specifications to enable seamless exchange, integration, and interoperability across metaverse platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:compatibility-standards",
+      "label": "Compatibility Standards"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-testing",
+        "label": "Cross-Platform Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:format-validation",
+        "label": "Format Validation"
+      },
+      {
+        "id": "urn:visionflow:linked:integration-testing",
+        "label": "Integration Testing"
+      },
+      {
+        "id": "urn:visionflow:linked:interoperability-verification",
+        "label": "Interoperability Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-compatibility-checks",
+        "label": "Protocol Compatibility Checks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standards-conformance-testing",
+        "label": "Standards Conformance Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:conformance-criteria",
+        "label": "Conformance Criteria"
+      },
+      {
+        "id": "urn:visionflow:linked:reference-implementations",
+        "label": "Reference Implementations"
+      },
+      {
+        "id": "urn:visionflow:linked:test-specifications",
+        "label": "Test Specifications"
+      },
+      {
+        "id": "urn:visionflow:linked:validation-tools",
+        "label": "Validation Tools"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compatibility-standards",
+        "label": "Compatibility Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:visionflow:linked:ecosystem-connectivity",
+        "label": "Ecosystem Connectivity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:standards-compliance",
+        "label": "Standards Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "api-specifications",
+      "label": "API Specifications"
+    },
+    {
+      "slug": "asset-portability",
+      "label": "Asset Portability"
+    },
+    {
+      "slug": "conformance-criteria",
+      "label": "Conformance Criteria"
+    },
+    {
+      "slug": "cross-platform-testing",
+      "label": "Cross-Platform Testing"
+    },
+    {
+      "slug": "data-format-schemas",
+      "label": "Data Format Schemas"
+    },
+    {
+      "slug": "ecosystem-connectivity",
+      "label": "Ecosystem Connectivity"
+    },
+    {
+      "slug": "format-validation",
+      "label": "Format Validation"
+    },
+    {
+      "slug": "integration-testing",
+      "label": "Integration Testing"
+    },
+    {
+      "slug": "interoperability-verification",
+      "label": "Interoperability Verification"
+    },
+    {
+      "slug": "iso-iec-30170",
+      "label": "ISO/IEC 30170"
+    },
+    {
+      "slug": "msf-taxonomy-2025",
+      "label": "MSF Taxonomy 2025"
+    },
+    {
+      "slug": "protocol-compatibility-checks",
+      "label": "Protocol Compatibility Checks"
+    },
+    {
+      "slug": "protocol-definitions",
+      "label": "Protocol Definitions"
+    },
+    {
+      "slug": "reference-implementations",
+      "label": "Reference Implementations"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "test-specifications",
+      "label": "Test Specifications"
+    },
+    {
+      "slug": "validation-tools",
+      "label": "Validation Tools"
+    },
+    {
+      "slug": "compatibility-standards",
+      "label": "Compatibility Standards"
+    },
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "standards-compliance",
+      "label": "Standards Compliance"
+    },
+    {
+      "slug": "standards-conformance-testing",
+      "label": "Standards Conformance Testing"
+    },
+    {
+      "slug": "system-integration",
+      "label": "System Integration"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

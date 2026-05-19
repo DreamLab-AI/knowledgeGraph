@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:680fa6c0f73eb32de9e8017652cefa274e0cbe30da33519fcadb5923d421748e",
+  "title": "Optimal Control",
+  "slug": "optimal-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:optimal-control",
+  "domain": "robotics",
+  "definition": "A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system constraints. It seeks the best possible control policy according to specified objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.96,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:visionflow:linked:system-dynamics-model",
+        "label": "System Dynamics Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+        "label": "RB-1007-trajectory-generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "cost-function",
+      "label": "Cost Function"
+    },
+    {
+      "slug": "efficiency",
+      "label": "Efficiency"
+    },
+    {
+      "slug": "linear-quadratic-regulator",
+      "label": "Linear Quadratic Regulator"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "optimality",
+      "label": "Optimality"
+    },
+    {
+      "slug": "optimization",
+      "label": "Optimization"
+    },
+    {
+      "slug": "optimization-theory",
+      "label": "Optimization Theory"
+    },
+    {
+      "slug": "rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
+    },
+    {
+      "slug": "rb-1004-adaptive-control",
+      "label": "RB-1004-adaptive-control"
+    },
+    {
+      "slug": "rb-1007-trajectory-generation",
+      "label": "RB-1007-trajectory-generation"
+    },
+    {
+      "slug": "spacecraft-control",
+      "label": "Spacecraft Control"
+    },
+    {
+      "slug": "system-dynamics-model",
+      "label": "System Dynamics Model"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

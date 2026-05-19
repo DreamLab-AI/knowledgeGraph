@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:1bc54073989e4c69c5973b63648420c1895b935b6ab1388ceab473b934a76211",
+  "title": "Workforce Augmentation",
+  "slug": "workforce-augmentation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:workforce-augmentation",
+  "domain": "artificial-intelligence",
+  "definition": "Workforce Augmentation is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": []
+}

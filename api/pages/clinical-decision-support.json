@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:b08b4476f119622a210ab1d5afe963f468dd4640692f69731692d0dbbc52f137",
+  "title": "Clinical Decision Support",
+  "slug": "clinical-decision-support",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:clinical-decision-support",
+  "domain": "spatial-computing",
+  "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care. CDS systems integrate patient data, medical knowledge bases, clinical guidelines, and evidence-based protocols to assist in diagnosis, treatment selection, medication management, and care coordination whilst maintaining clinician autonomy and clinical judgement.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:healthcare-analytics",
+      "label": "Healthcare Analytics"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "healthcare-analytics",
+      "label": "Healthcare Analytics"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "medical-diagnosis-ai",
+      "label": "Medical Diagnosis AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "treatment-planning-ai",
+      "label": "Treatment Planning AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "medical-diagnosis-ai",
+      "label": "Medical Diagnosis AI"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

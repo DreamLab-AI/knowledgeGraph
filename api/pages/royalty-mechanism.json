@@ -1,0 +1,143 @@
+{
+  "id": "urn:visionflow:page:773757e1e96f1f33a348a6fa0e6df7c51dfacb82b102ee3b56a0d971a7e1b9ad",
+  "title": "Royalty Mechanism",
+  "slug": "royalty-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:royalty-mechanism",
+  "domain": "spatial-computing",
+  "definition": "Automated process ensuring creators receive compensation when their assets are resold or used in secondary markets.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-rights-management",
+      "label": "Digital Rights Management"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:payment-distribution",
+        "label": "Payment Distribution"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-registry",
+        "label": "Rights Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:royalty-calculation",
+        "label": "Royalty Calculation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:creator-wallet",
+        "label": "Creator Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:nft-standard",
+        "label": "NFT Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:creator-compensation",
+        "label": "Creator Compensation"
+      },
+      {
+        "id": "urn:visionflow:linked:perpetual-revenue",
+        "label": "Perpetual Revenue"
+      },
+      {
+        "id": "urn:visionflow:linked:rights-enforcement",
+        "label": "Rights Enforcement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "creator-compensation",
+      "label": "Creator Compensation"
+    },
+    {
+      "slug": "creator-wallet",
+      "label": "Creator Wallet"
+    },
+    {
+      "slug": "msf-use-cases",
+      "label": "MSF Use Cases"
+    },
+    {
+      "slug": "payment-distribution",
+      "label": "Payment Distribution"
+    },
+    {
+      "slug": "perpetual-revenue",
+      "label": "Perpetual Revenue"
+    },
+    {
+      "slug": "rights-enforcement",
+      "label": "Rights Enforcement"
+    },
+    {
+      "slug": "rights-registry",
+      "label": "Rights Registry"
+    },
+    {
+      "slug": "royalty-calculation",
+      "label": "Royalty Calculation"
+    },
+    {
+      "slug": "transaction-tracking",
+      "label": "Transaction Tracking"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "marketplace-integration",
+      "label": "Marketplace Integration"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-standard",
+      "label": "NFT Standard"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

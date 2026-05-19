@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:c80d00b6887f15bb3f18df36280ef58f4b52548d6a41270f6f4c5c5605d6761a",
+  "title": "Digital Preservation",
+  "slug": "digital-preservation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-preservation",
+  "domain": "spatial-computing",
+  "definition": "Digital Preservation is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "long-term-archival",
+      "label": "Long Term Archival"
+    }
+  ]
+}

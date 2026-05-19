@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:bc5b3977c4e3ee4d02a584046914b118795e23f93739b899984b783a680ddcd5",
+  "title": "Data Breach",
+  "slug": "data-breach",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:data-breach",
+  "domain": "artificial-intelligence",
+  "definition": "Data Breach is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:risk",
+      "label": "Risk"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "risk",
+      "label": "Risk"
+    }
+  ],
+  "backlinks": []
+}

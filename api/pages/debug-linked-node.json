@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:0147eff340723608d01bc726227612a3cf3682243a0c7dea3cd47249ace8bc9e",
+  "title": "debug linked node",
+  "slug": "debug-linked-node",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:debug-linked-node",
+  "domain": "infrastructure",
+  "definition": "debug linked node is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "debug-test-page",
+      "label": "Debug Test Page"
+    }
+  ],
+  "backlinks": []
+}

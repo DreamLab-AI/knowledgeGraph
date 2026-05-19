@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:610aee895823bdb547aeb4da2fcd447d6bf833d2973e058e7b7a61ede9051024",
+  "title": "Quantum AI",
+  "slug": "quantum-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:quantum-ai",
+  "domain": "artificial-intelligence",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "emerging",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

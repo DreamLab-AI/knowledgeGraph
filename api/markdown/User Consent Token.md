@@ -1,24 +1,507 @@
-iri:: http://narrativegoldmine.com/spatial-computing#UserConsentToken
-uri:: urn:visionclaw:concept:spatial-computing:user-consent-token
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:user-consent-token
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: User Consent Token
-content-hash:: sha256-12-cd0a4ebfca99
-legacy-term-id:: 20274
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#UserConsentToken
+legacy_uri:: urn:visionclaw:concept:spatial-computing:user-consent-token
 public:: true
+
+# User Consent Token
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56",
+  "@type": "Page",
+  "vc:slug": "user-consent-token",
+  "title": "User Consent Token",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:automated-privacy-compliance",
+      "vc:label": "Automated Privacy Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-ledger",
+      "vc:label": "Blockchain Ledger"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-audit-trail",
+      "vc:label": "Consent Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-management-framework",
+      "vc:label": "Consent Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-payload",
+      "vc:label": "Consent Payload"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-registry",
+      "vc:label": "Consent Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-revocation",
+      "vc:label": "Consent Revocation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-key",
+      "vc:label": "Cryptographic Key"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-signature",
+      "vc:label": "Cryptographic Signature"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-schema",
+      "vc:label": "Data Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identifier-did",
+      "vc:label": "Decentralized Identifier (DID)"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-29184",
+      "vc:label": "ISO 29184"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-policy",
+      "vc:label": "Privacy Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:revocation-mechanism",
+      "vc:label": "Revocation Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:scope-definition",
+      "vc:label": "Scope Definition"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-oracle",
+      "vc:label": "Time Oracle"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-data-sovereignty",
+      "vc:label": "User Data Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-credential",
+      "vc:label": "Verifiable Credential"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did-core",
+      "vc:label": "W3C DID Core"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-identity",
+      "vc:label": "Digital Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:granular-consent-control",
+      "vc:label": "Granular Consent Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:timestamp",
+      "vc:label": "Timestamp"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "vc:label": "VirtualEconomyDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-cd0a4ebfca99"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#UserConsentToken"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20274"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "User Consent Token"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:user-consent-token"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:user-consent-token"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:user-consent-token",
+  "@type": "OntologyClass",
+  "label": "User Consent Token",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:consent-management-framework",
+      "vc:label": "Consent Management Framework"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:consent-payload",
+      "vc:label": "Consent Payload"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-signature",
+      "vc:label": "Cryptographic Signature"
+    },
+    {
+      "@id": "urn:visionflow:linked:revocation-mechanism",
+      "vc:label": "Revocation Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:scope-definition",
+      "vc:label": "Scope Definition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:timestamp",
+      "vc:label": "Timestamp"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:consent-registry",
+      "vc:label": "Consent Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-key",
+      "vc:label": "Cryptographic Key"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-schema",
+      "vc:label": "Data Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-policy",
+      "vc:label": "Privacy Policy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-identity",
+      "vc:label": "Digital Identity"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:automated-privacy-compliance",
+      "vc:label": "Automated Privacy Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-audit-trail",
+      "vc:label": "Consent Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-revocation",
+      "vc:label": "Consent Revocation"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-data-sovereignty",
+      "vc:label": "User Data Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:granular-consent-control",
+      "vc:label": "Granular Consent Control"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-ledger",
+      "vc:label": "Blockchain Ledger"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identifier-did",
+      "vc:label": "Decentralized Identifier (DID)"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-oracle",
+      "vc:label": "Time Oracle"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-credential",
+      "vc:label": "Verifiable Credential"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:user-consent-token:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Automated Privacy Compliance]]",
+      "resolved": "urn:visionflow:linked:automated-privacy-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Ledger]]",
+      "resolved": "urn:visionflow:linked:blockchain-ledger",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consent Audit Trail]]",
+      "resolved": "urn:visionflow:linked:consent-audit-trail",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consent Management Framework]]",
+      "resolved": "urn:visionflow:linked:consent-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consent Payload]]",
+      "resolved": "urn:visionflow:linked:consent-payload",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consent Registry]]",
+      "resolved": "urn:visionflow:linked:consent-registry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consent Revocation]]",
+      "resolved": "urn:visionflow:linked:consent-revocation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Key]]",
+      "resolved": "urn:visionflow:linked:cryptographic-key",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryptographic Signature]]",
+      "resolved": "urn:visionflow:linked:cryptographic-signature",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Schema]]",
+      "resolved": "urn:visionflow:linked:data-schema",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralized Identifier (DID)]]",
+      "resolved": "urn:visionflow:linked:decentralized-identifier-did",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 29184]]",
+      "resolved": "urn:visionflow:linked:iso-29184",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy Policy]]",
+      "resolved": "urn:visionflow:linked:privacy-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Revocation Mechanism]]",
+      "resolved": "urn:visionflow:linked:revocation-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scope Definition]]",
+      "resolved": "urn:visionflow:linked:scope-definition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Time Oracle]]",
+      "resolved": "urn:visionflow:linked:time-oracle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Data Sovereignty]]",
+      "resolved": "urn:visionflow:linked:user-data-sovereignty",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Verifiable Credential]]",
+      "resolved": "urn:visionflow:linked:verifiable-credential",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C DID Core]]",
+      "resolved": "urn:visionflow:linked:w3-c-did-core",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Digital Identity]]",
+      "resolved": "urn:visionflow:owl:class:digital-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Granular Consent Control]]",
+      "resolved": "urn:visionflow:owl:class:granular-consent-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Timestamp]]",
+      "resolved": "urn:visionflow:owl:class:timestamp",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualEconomyDomain]]",
+      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.

@@ -1,0 +1,1060 @@
+{
+  "id": "urn:visionflow:page:2eed2a2846f57be1b2025dbab86aca4a12038c26c16817b04a36941a5dd18873",
+  "title": "Foundation Models",
+  "slug": "foundation-models",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:foundation-models",
+  "domain": "artificial-intelligence",
+  "definition": "Foundation Models are large-scale machine learning models pretrained on broad data at scale using self-supervised objectives (next-token prediction, masked token prediction, contrastive image-text alignment, denoising diffusion) and adaptable to a wide spectrum of downstream tasks through fine-tuning, instruction tuning, in-context learning, prompting, retrieval augmentation, or lightweight parameter-efficient adaptation (LoRA, QLoRA, adapter layers, prefix tuning), a category and terminological frame formally introduced by the Stanford Center for Research on Foundation Models (CRFM) in August 2021 through the 212-page multi-author position paper \"On the Opportunities and Risks of Foundation Models\" (Bommasani, Hudson, Adeli, Altman, Arora, von Arx, Bernstein, Bohg, Bosselut, Brunskill, Brynjolfsson, Buch, Card, Castellon, Chatterji, Chen, Creel, Davis, Demszky, Donahue, Doumbouya, Durmus, Ermon, Etchemendy, Ethayarajh, Fei-Fei, Finn, Gale, Gillespie, Goel, Goodman, Grossman, Guha, Hashimoto, Henderson, Hewitt, Ho, Hong, Hsu, Huang, Icard, Jain, Jurafsky, Kalluri, Karamcheti, Keeling, Khani, Khattab, Koh, Krass, Krishna, Kuditipudi, Kumar, Ladhak, Lee, Lee, Leskovec, Levent, Li, Li",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:general-purpose-ai",
+      "label": "General-Purpose AI"
+    },
+    {
+      "id": "urn:visionflow:linked:self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "id": "urn:visionflow:linked:transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:pretrained-model",
+      "label": "Pretrained Model"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:embedding-layer",
+        "label": "Embedding Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:output-head",
+        "label": "Output Head"
+      },
+      {
+        "id": "urn:visionflow:linked:preference-optimisation",
+        "label": "Preference Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:pretraining-stage",
+        "label": "Pretraining Stage"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-classifier",
+        "label": "Safety Classifier"
+      },
+      {
+        "id": "urn:visionflow:linked:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:visionflow:linked:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:visionflow:linked:transformer-block",
+        "label": "Transformer Block"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-deduplication",
+        "label": "Data Deduplication"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:large-scale-distributed-training",
+        "label": "Large-Scale Distributed Training"
+      },
+      {
+        "id": "urn:visionflow:linked:massive-training-corpus",
+        "label": "Massive Training Corpus"
+      },
+      {
+        "id": "urn:visionflow:linked:nvidia-b200",
+        "label": "NVIDIA B200"
+      },
+      {
+        "id": "urn:visionflow:linked:nvidia-h100",
+        "label": "NVIDIA H100"
+      },
+      {
+        "id": "urn:visionflow:linked:nvidia-h200",
+        "label": "NVIDIA H200"
+      },
+      {
+        "id": "urn:visionflow:linked:training-data-curation",
+        "label": "Training Data Curation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agentic-workflows",
+        "label": "Agentic Workflows"
+      },
+      {
+        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "label": "Chain of Thought Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:visionflow:linked:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multimodal-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:flash-attention",
+        "label": "FlashAttention"
+      },
+      {
+        "id": "urn:visionflow:linked:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:mixture-of-experts-routing",
+        "label": "Mixture of Experts Routing"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-head-latent-attention",
+        "label": "Multi-Head Latent Attention"
+      },
+      {
+        "id": "urn:visionflow:linked:rmsnorm",
+        "label": "RMSNorm"
+      },
+      {
+        "id": "urn:visionflow:linked:rotary-position-embeddings",
+        "label": "Rotary Position Embeddings"
+      },
+      {
+        "id": "urn:visionflow:linked:swi-glu",
+        "label": "SwiGLU"
+      },
+      {
+        "id": "urn:visionflow:owl:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abramson-et-al-2024-alpha-fold-3-nature",
+      "label": "Abramson et al. 2024 AlphaFold 3 Nature"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "adam-w-optimiser",
+      "label": "AdamW Optimiser"
+    },
+    {
+      "slug": "agentic-workflows",
+      "label": "Agentic Workflows"
+    },
+    {
+      "slug": "agi-eval",
+      "label": "AGI-Eval"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "alibaba-qwen",
+      "label": "Alibaba Qwen"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "anthropic-2024-claude-3-model-card",
+      "label": "Anthropic 2024 Claude 3 Model Card"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "bai-et-al-2022-constitutional-ai",
+      "label": "Bai et al. 2022 Constitutional AI"
+    },
+    {
+      "slug": "big-bench",
+      "label": "BIG-Bench"
+    },
+    {
+      "slug": "bletchley-park-declaration",
+      "label": "Bletchley Park Declaration"
+    },
+    {
+      "slug": "bommasani-et-al-2021-on-the-opportunities-and-risks-of-foundation-models",
+      "label": "Bommasani et al. 2021 On the Opportunities and Risks of Foundation Models"
+    },
+    {
+      "slug": "brown-et-al-2020-gpt-3-language-models-are-few-shot-learners",
+      "label": "Brown et al. 2020 GPT-3 Language Models are Few-Shot Learners"
+    },
+    {
+      "slug": "chain-of-thought-reasoning",
+      "label": "Chain of Thought Reasoning"
+    },
+    {
+      "slug": "chinchilla-scaling",
+      "label": "Chinchilla Scaling"
+    },
+    {
+      "slug": "coding-assistants",
+      "label": "Coding Assistants"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    },
+    {
+      "slug": "data-deduplication",
+      "label": "Data Deduplication"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "DeepLearningDomain"
+    },
+    {
+      "slug": "deep-seek",
+      "label": "DeepSeek"
+    },
+    {
+      "slug": "deep-seek-ai-2024-deep-seek-v3-technical-report",
+      "label": "DeepSeek-AI 2024 DeepSeek-V3 Technical Report"
+    },
+    {
+      "slug": "deep-seek-ai-2025-deep-seek-r1-reasoning-via-reinforcement-learning",
+      "label": "DeepSeek-AI 2025 DeepSeek-R1 Reasoning via Reinforcement Learning"
+    },
+    {
+      "slug": "denoising-diffusion",
+      "label": "Denoising Diffusion"
+    },
+    {
+      "slug": "devlin-et-al-2018-bert",
+      "label": "Devlin et al. 2018 BERT"
+    },
+    {
+      "slug": "distillation",
+      "label": "Distillation"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "embedding-layer",
+      "label": "Embedding Layer"
+    },
+    {
+      "slug": "emergent-abilities",
+      "label": "Emergent Abilities"
+    },
+    {
+      "slug": "ethayarajh-et-al-2024-kto-kahneman-tversky-optimization",
+      "label": "Ethayarajh et al. 2024 KTO Kahneman-Tversky Optimization"
+    },
+    {
+      "slug": "european-commission-2024-eu-ai-act-regulation-2024-1689",
+      "label": "European Commission 2024 EU AI Act Regulation 2024-1689"
+    },
+    {
+      "slug": "fedus-et-al-2022-switch-transformer",
+      "label": "Fedus et al. 2022 Switch Transformer"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "FlashAttention"
+    },
+    {
+      "slug": "frontier-aidomain",
+      "label": "FrontierAIDomain"
+    },
+    {
+      "slug": "frontier-model",
+      "label": "Frontier Model"
+    },
+    {
+      "slug": "frontier-model-forum",
+      "label": "Frontier Model Forum"
+    },
+    {
+      "slug": "frontier-model-forum-2023-founding-statement",
+      "label": "Frontier Model Forum 2023 Founding Statement"
+    },
+    {
+      "slug": "frontier-model-forum-voluntary-commitments",
+      "label": "Frontier Model Forum Voluntary Commitments"
+    },
+    {
+      "slug": "gemini-team-google-2023-gemini-technical-report",
+      "label": "Gemini Team Google 2023 Gemini Technical Report"
+    },
+    {
+      "slug": "general-purpose-ai",
+      "label": "General-Purpose AI"
+    },
+    {
+      "slug": "gpai-article-51",
+      "label": "GPAI Article 51"
+    },
+    {
+      "slug": "gpai-article-52",
+      "label": "GPAI Article 52"
+    },
+    {
+      "slug": "gpai-article-53",
+      "label": "GPAI Article 53"
+    },
+    {
+      "slug": "gpai-article-55",
+      "label": "GPAI Article 55"
+    },
+    {
+      "slug": "gpai-code-of-practice",
+      "label": "GPAI Code of Practice"
+    },
+    {
+      "slug": "gpqa-diamond",
+      "label": "GPQA Diamond"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "grouped-query-attention",
+      "label": "Grouped Query Attention"
+    },
+    {
+      "slug": "hand-crafted-feature-engineering",
+      "label": "Hand-Crafted Feature Engineering"
+    },
+    {
+      "slug": "healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "slug": "helm",
+      "label": "HELM"
+    },
+    {
+      "slug": "hiroshima-ai-process",
+      "label": "Hiroshima AI Process"
+    },
+    {
+      "slug": "hoffmann-et-al-2022-chinchilla-training-compute-optimal-large-language-models",
+      "label": "Hoffmann et al. 2022 Chinchilla Training Compute-Optimal Large Language Models"
+    },
+    {
+      "slug": "homogenisation",
+      "label": "Homogenisation"
+    },
+    {
+      "slug": "hong-et-al-2024-orpo-monolithic-preference-optimization",
+      "label": "Hong et al. 2024 ORPO Monolithic Preference Optimization"
+    },
+    {
+      "slug": "human-eval",
+      "label": "HumanEval"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "jiang-et-al-2024-mixtral-of-experts",
+      "label": "Jiang et al. 2024 Mixtral of Experts"
+    },
+    {
+      "slug": "jumper-et-al-2021-alpha-fold-nature",
+      "label": "Jumper et al. 2021 AlphaFold Nature"
+    },
+    {
+      "slug": "kaplan-et-al-2020-scaling-laws-for-neural-language-models",
+      "label": "Kaplan et al. 2020 Scaling Laws for Neural Language Models"
+    },
+    {
+      "slug": "kaplan-scaling-laws",
+      "label": "Kaplan Scaling Laws"
+    },
+    {
+      "slug": "kirillov-et-al-2023-segment-anything-sam",
+      "label": "Kirillov et al. 2023 Segment Anything SAM"
+    },
+    {
+      "slug": "korea-ai-framework-act-2026",
+      "label": "Korea AI Framework Act 2026"
+    },
+    {
+      "slug": "large-scale-distributed-training",
+      "label": "Large-Scale Distributed Training"
+    },
+    {
+      "slug": "liang-et-al-helm-holistic-evaluation-of-language-models",
+      "label": "Liang et al. HELM Holistic Evaluation of Language Models"
+    },
+    {
+      "slug": "lmsys-chatbot-arena",
+      "label": "LMSYS Chatbot Arena"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "masked-language-modelling",
+      "label": "Masked Language Modelling"
+    },
+    {
+      "slug": "massive-training-corpus",
+      "label": "Massive Training Corpus"
+    },
+    {
+      "slug": "mathematical-reasoning",
+      "label": "Mathematical Reasoning"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "meta-ai-2024-llama-3-herd-of-models",
+      "label": "Meta AI 2024 Llama 3 Herd of Models"
+    },
+    {
+      "slug": "mixture-of-experts-routing",
+      "label": "Mixture of Experts Routing"
+    },
+    {
+      "slug": "mmlu-benchmark",
+      "label": "MMLU Benchmark"
+    },
+    {
+      "slug": "mmlu-pro",
+      "label": "MMLU-Pro"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "multi-head-latent-attention",
+      "label": "Multi-Head Latent Attention"
+    },
+    {
+      "slug": "narrow-task-specific-models",
+      "label": "Narrow Task-Specific Models"
+    },
+    {
+      "slug": "next-token-prediction",
+      "label": "Next-Token Prediction"
+    },
+    {
+      "slug": "nvidia-b200",
+      "label": "NVIDIA B200"
+    },
+    {
+      "slug": "nvidia-h100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "nvidia-h200",
+      "label": "NVIDIA H200"
+    },
+    {
+      "slug": "open-ai-2023-gpt-4-technical-report",
+      "label": "OpenAI 2023 GPT-4 Technical Report"
+    },
+    {
+      "slug": "output-head",
+      "label": "Output Head"
+    },
+    {
+      "slug": "ouyang-et-al-2022-instruct-gpt-training-language-models-with-human-feedback",
+      "label": "Ouyang et al. 2022 InstructGPT Training Language Models with Human Feedback"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    },
+    {
+      "slug": "pre-2017-nlp-pipelines",
+      "label": "Pre-2017 NLP Pipelines"
+    },
+    {
+      "slug": "preference-optimisation",
+      "label": "Preference Optimisation"
+    },
+    {
+      "slug": "pretraining-stage",
+      "label": "Pretraining Stage"
+    },
+    {
+      "slug": "protein-structure-prediction",
+      "label": "Protein Structure Prediction"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "radford-et-al-2021-clip-learning-transferable-visual-models-from-natural-language-supervision",
+      "label": "Radford et al. 2021 CLIP Learning Transferable Visual Models From Natural Language Supervision"
+    },
+    {
+      "slug": "rafailov-et-al-2023-direct-preference-optimization",
+      "label": "Rafailov et al. 2023 Direct Preference Optimization"
+    },
+    {
+      "slug": "ravi-et-al-2024-sam-2-segment-anything-in-images-and-videos",
+      "label": "Ravi et al. 2024 SAM 2 Segment Anything in Images and Videos"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "rmsnorm",
+      "label": "RMSNorm"
+    },
+    {
+      "slug": "rotary-position-embeddings",
+      "label": "Rotary Position Embeddings"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "safety-classifier",
+      "label": "Safety Classifier"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "scientific-discovery",
+      "label": "Scientific Discovery"
+    },
+    {
+      "slug": "search-and-retrieval",
+      "label": "Search and Retrieval"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "seoul-ai-summit",
+      "label": "Seoul AI Summit"
+    },
+    {
+      "slug": "stanford-crfm",
+      "label": "Stanford CRFM"
+    },
+    {
+      "slug": "swe-bench",
+      "label": "SWE-Bench"
+    },
+    {
+      "slug": "swi-glu",
+      "label": "SwiGLU"
+    },
+    {
+      "slug": "synthesia",
+      "label": "Synthesia"
+    },
+    {
+      "slug": "synthetic-data-training",
+      "label": "Synthetic Data Training"
+    },
+    {
+      "slug": "system-prompt",
+      "label": "System Prompt"
+    },
+    {
+      "slug": "tensor-parallelism",
+      "label": "Tensor Parallelism"
+    },
+    {
+      "slug": "tokeniser",
+      "label": "Tokeniser"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "training-data-curation",
+      "label": "Training Data Curation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "transformer-block",
+      "label": "Transformer Block"
+    },
+    {
+      "slug": "uk-ai-opportunities-action-plan-2025-matt-clifford",
+      "label": "UK AI Opportunities Action Plan 2025 Matt Clifford"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "us-ai-safety-institute",
+      "label": "US AI Safety Institute"
+    },
+    {
+      "slug": "vaswani-et-al-2017-attention-is-all-you-need",
+      "label": "Vaswani et al. 2017 Attention Is All You Need"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
+    },
+    {
+      "slug": "wei-et-al-2022-emergent-abilities-of-large-language-models",
+      "label": "Wei et al. 2022 Emergent Abilities of Large Language Models"
+    },
+    {
+      "slug": "x-ai",
+      "label": "xAI"
+    },
+    {
+      "slug": "zero-shot-learning",
+      "label": "Zero-Shot Learning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "multimodal-understanding",
+      "label": "Multimodal Understanding"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "pretrained-model",
+      "label": "Pretrained Model"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

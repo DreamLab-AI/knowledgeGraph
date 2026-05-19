@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:bb5252bde9c5a50ba6df7fe4d21616d3d32b47aa229dcf6459d08577becb79cd",
+  "title": "Digital Goods",
+  "slug": "digital-goods",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-goods",
+  "domain": "spatial-computing",
+  "definition": "Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and ownership. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:visionflow:linked:ownership-token",
+        "label": "Ownership Token"
+      },
+      {
+        "id": "urn:visionflow:linked:usage-rights",
+        "label": "Usage Rights"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "id": "urn:visionflow:linked:user-ownership",
+        "label": "User Ownership"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "creator-monetization",
+      "label": "Creator Monetization"
+    },
+    {
+      "slug": "metadata",
+      "label": "Metadata"
+    },
+    {
+      "slug": "metaverse-101",
+      "label": "Metaverse 101"
+    },
+    {
+      "slug": "ownership-token",
+      "label": "Ownership Token"
+    },
+    {
+      "slug": "usage-rights",
+      "label": "Usage Rights"
+    },
+    {
+      "slug": "user-ownership",
+      "label": "User Ownership"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "nft-standards",
+      "label": "NFT Standards"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "virtual-commerce",
+      "label": "Virtual Commerce"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

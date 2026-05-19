@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:f0b772884468e43b119c00ab276d88d527174035e84bc51fa20552bc6ce4aded",
+  "title": "flossverse",
+  "slug": "flossverse",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:flossverse",
+  "domain": "blockchain",
+  "definition": "flossverse is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "jones2008trust",
+      "label": "jones2008trust"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

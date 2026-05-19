@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:22d77ca34816997514ead82c8e3129a049523647ee7426eed445ff87ef7c260a",
+  "title": "Accessible Experience",
+  "slug": "accessible-experience",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:accessible-experience",
+  "domain": "spatial-computing",
+  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and [[Accessible Design]] principles. Accessible experiences provide feature parity across visual, auditory, motor, and cognitive modalities, ensuring disabled users participate fully in [[Metaverse]] interactions, entertainment, and professional activities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:inclusive-experience",
+      "label": "Inclusive Experience"
+    },
+    {
+      "id": "urn:visionflow:linked:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:alternative-input-methods",
+        "label": "Alternative Input Methods"
+      },
+      {
+        "id": "urn:visionflow:linked:assistive-technology-support",
+        "label": "Assistive Technology Support"
+      },
+      {
+        "id": "urn:visionflow:linked:multimodal-interfaces",
+        "label": "Multimodal Interfaces"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:equitable-engagement",
+        "label": "Equitable Engagement"
+      },
+      {
+        "id": "urn:visionflow:linked:inclusive-participation",
+        "label": "Inclusive Participation"
+      },
+      {
+        "id": "urn:visionflow:linked:universal-access",
+        "label": "Universal Access"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "alternative-input-methods",
+      "label": "Alternative Input Methods"
+    },
+    {
+      "slug": "assistive-technology",
+      "label": "Assistive Technology"
+    },
+    {
+      "slug": "assistive-technology-support",
+      "label": "Assistive Technology Support"
+    },
+    {
+      "slug": "equitable-engagement",
+      "label": "Equitable Engagement"
+    },
+    {
+      "slug": "inclusive-experience",
+      "label": "Inclusive Experience"
+    },
+    {
+      "slug": "inclusive-participation",
+      "label": "Inclusive Participation"
+    },
+    {
+      "slug": "multimodal-interface",
+      "label": "Multimodal Interface"
+    },
+    {
+      "slug": "multimodal-interfaces",
+      "label": "Multimodal Interfaces"
+    },
+    {
+      "slug": "universal-access",
+      "label": "Universal Access"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "inclusive-xr-experience",
+      "label": "Inclusive Xr Experience"
+    }
+  ]
+}

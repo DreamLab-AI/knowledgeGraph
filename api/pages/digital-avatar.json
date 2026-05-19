@@ -1,0 +1,148 @@
+{
+  "id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18",
+  "title": "Digital Avatar",
+  "slug": "digital-avatar",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-avatar",
+  "domain": "spatial-computing",
+  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]]. Digital avatars enable social presence, facilitate user interaction, and serve as persistent identity anchors within [[Metaverse]] platforms and immersive applications. bridges-to:: [[DID Nostr Identity]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-representation",
+      "label": "Virtual Representation"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "behavioural-agency",
+      "label": "Behavioural Agency"
+    },
+    {
+      "slug": "digital-fashion",
+      "label": "DigitalFashion"
+    },
+    {
+      "slug": "dt-animated-by",
+      "label": "dt:animatedBy"
+    },
+    {
+      "slug": "dt-authenticated-by",
+      "label": "dt:authenticatedBy"
+    },
+    {
+      "slug": "dt-enhanced-by",
+      "label": "dt:enhancedBy"
+    },
+    {
+      "slug": "dt-owned-via",
+      "label": "dt:ownedVia"
+    },
+    {
+      "slug": "dt-traded-on",
+      "label": "dt:tradedOn"
+    },
+    {
+      "slug": "embodied-presence",
+      "label": "Embodied Presence"
+    },
+    {
+      "slug": "has-appearance",
+      "label": "hasAppearance"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "nftmarketplace",
+      "label": "NFTMarketplace"
+    },
+    {
+      "slug": "performs-action",
+      "label": "performsAction"
+    },
+    {
+      "slug": "represents-user",
+      "label": "representsUser"
+    },
+    {
+      "slug": "virtual-environments",
+      "label": "Virtual Environments"
+    },
+    {
+      "slug": "visual-customisation",
+      "label": "Visual Customisation"
+    },
+    {
+      "slug": "wears-item",
+      "label": "wearsItem"
+    },
+    {
+      "slug": "avatar-customization",
+      "label": "AvatarCustomization"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "DigitalIdentity"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "GenerativeAI"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "MotionCapture"
+    },
+    {
+      "slug": "social-presence",
+      "label": "SocialPresence"
+    },
+    {
+      "slug": "virtual-identity",
+      "label": "VirtualIdentity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    }
+  ]
+}

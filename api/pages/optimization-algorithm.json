@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:0d31b31d04e86740a7ff361ac75c846631be641be96c26c93f4db702938b4000",
+  "title": "Optimization Algorithm",
+  "slug": "optimization-algorithm",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:optimization-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "Optimization Algorithm is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:algorithm",
+      "label": "Algorithm"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    }
+  ]
+}

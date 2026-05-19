@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7",
+  "title": "Medical Imaging AI",
+  "slug": "medical-imaging-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:medical-imaging-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:vision-processing",
+      "label": "Vision Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "pathology-ai",
+      "label": "Pathology AI"
+    },
+    {
+      "slug": "radiology-ai",
+      "label": "Radiology AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "pathology-ai",
+      "label": "Pathology AI"
+    },
+    {
+      "slug": "radiology-ai",
+      "label": "Radiology AI"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

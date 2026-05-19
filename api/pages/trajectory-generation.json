@@ -1,0 +1,138 @@
+{
+  "id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c",
+  "title": "Trajectory Generation",
+  "slug": "trajectory-generation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trajectory-generation",
+  "domain": "robotics",
+  "definition": "The process of computing a time-parameterized path that specifies the position, velocity, and acceleration of a robot's joints or end-effector as functions of time, enabling smooth motion from start to goal configurations while respecting kinematic and dynamic constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.96,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:goal-configuration",
+        "label": "Goal Configuration"
+      },
+      {
+        "id": "urn:visionflow:linked:rb-1016-path-planning",
+        "label": "RB-1016-path-planning"
+      },
+      {
+        "id": "urn:visionflow:linked:start-configuration",
+        "label": "Start Configuration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:robot-motion",
+        "label": "Robot Motion"
+      },
+      {
+        "id": "urn:visionflow:linked:task-execution",
+        "label": "Task Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "continuity",
+      "label": "Continuity"
+    },
+    {
+      "slug": "dynamic-constraints",
+      "label": "Dynamic Constraints"
+    },
+    {
+      "slug": "goal-configuration",
+      "label": "Goal Configuration"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "kinematic-constraints",
+      "label": "Kinematic Constraints"
+    },
+    {
+      "slug": "rb-1003-optimal-control",
+      "label": "RB-1003-optimal-control"
+    },
+    {
+      "slug": "rb-1005-forward-kinematics",
+      "label": "RB-1005-forward-kinematics"
+    },
+    {
+      "slug": "rb-1006-inverse-kinematics",
+      "label": "RB-1006-inverse-kinematics"
+    },
+    {
+      "slug": "rb-1016-path-planning",
+      "label": "RB-1016-path-planning"
+    },
+    {
+      "slug": "rb-1019-obstacle-avoidance",
+      "label": "RB-1019-obstacle-avoidance"
+    },
+    {
+      "slug": "robot-motion",
+      "label": "Robot Motion"
+    },
+    {
+      "slug": "smoothness",
+      "label": "Smoothness"
+    },
+    {
+      "slug": "start-configuration",
+      "label": "Start Configuration"
+    },
+    {
+      "slug": "task-execution",
+      "label": "Task Execution"
+    },
+    {
+      "slug": "trajectory",
+      "label": "Trajectory"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

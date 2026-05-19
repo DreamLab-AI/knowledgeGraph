@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4",
+  "title": "Knowhere",
+  "slug": "knowhere",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowhere",
+  "domain": "infrastructure",
+  "definition": "Knowhere is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tracking-technology",
+      "label": "Tracking Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "head-gaze",
+      "label": "Head Gaze"
+    },
+    {
+      "slug": "kno-where",
+      "label": "KnoWhere"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "people",
+      "label": "PEOPLE"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

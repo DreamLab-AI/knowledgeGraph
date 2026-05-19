@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:00c9f6a5446d4e32a662339b47ed4954375f786184ab59057166ec176119510e",
+  "title": "Resource Management",
+  "slug": "resource-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:resource-management",
+  "domain": "infrastructure",
+  "definition": "ResourceManagement is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    }
+  ]
+}

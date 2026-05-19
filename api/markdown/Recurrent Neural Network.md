@@ -1,21 +1,1862 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#RecurrentNeuralNetwork
-uri:: urn:visionclaw:concept:artificial-intelligence:recurrent-neural-network
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:recurrent-neural-network
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Recurrent Neural Network
-content-hash:: sha256-12-7a5813f267f7
-legacy-term-id:: AI-0033
-status:: active
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#RecurrentNeuralNetwork
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:recurrent-neural-network
 public:: true
+
+# Recurrent Neural Network
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:c35f82f5fb8bd7fb9c6f24d0262f28cf20a3a0c13fdf1a2b250fc53e10f284b6",
+  "@type": "Page",
+  "vc:slug": "recurrent-neural-network",
+  "title": "Recurrent Neural Network",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:activation-functions",
+      "vc:label": "activation functions"
+    },
+    {
+      "@id": "urn:visionflow:linked:adam-optimizer",
+      "vc:label": "Adam optimizer"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-knowledge-graph",
+      "vc:label": "AI Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ml-knowledge-graph",
+      "vc:label": "AI/ML Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-summit-manchester",
+      "vc:label": "AI Summit Manchester"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:approximation-theory",
+      "vc:label": "Approximation Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:arm-cortex-m",
+      "vc:label": "ARM Cortex-M"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-neural-networks",
+      "vc:label": "artificial neural networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:astra-zeneca",
+      "vc:label": "AstraZeneca"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-augmented-rnns",
+      "vc:label": "Attention-augmented RNNs"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanisms",
+      "vc:label": "attention mechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-speech-recognition",
+      "vc:label": "Automatic Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation-through-time",
+      "vc:label": "Backpropagation Through Time"
+    },
+    {
+      "@id": "urn:visionflow:linked:biases",
+      "vc:label": "biases"
+    },
+    {
+      "@id": "urn:visionflow:linked:bidirectional-rnn",
+      "vc:label": "Bidirectional RNN"
+    },
+    {
+      "@id": "urn:visionflow:linked:biomedical-applications",
+      "vc:label": "Biomedical Applications"
+    },
+    {
+      "@id": "urn:visionflow:linked:but-what-is-a-neural-network-3-blue1-brown",
+      "vc:label": "But what is a neural network? (3Blue1Brown)"
+    },
+    {
+      "@id": "urn:visionflow:linked:causal-rnn-analysis",
+      "vc:label": "Causal RNN Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:cell-state",
+      "vc:label": "Cell State"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-theory",
+      "vc:label": "Computational Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformer",
+      "vc:label": "Conformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-function",
+      "vc:label": "cost function"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-function",
+      "vc:label": "Cost function"
+    },
+    {
+      "@id": "urn:visionflow:linked:david-rumelhart",
+      "vc:label": "David Rumelhart"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning-knowledge-graph",
+      "vc:label": "Deep Learning Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-rnn",
+      "vc:label": "Deep RNN"
+    },
+    {
+      "@id": "urn:visionflow:linked:department-of-computer-science",
+      "vc:label": "Department of Computer Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:dwf-law-llp",
+      "vc:label": "DWF Law LLP"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-ai-rnns",
+      "vc:label": "Edge AI RNNs"
+    },
+    {
+      "@id": "urn:visionflow:linked:electronic-health-records",
+      "vc:label": "Electronic health records"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-demand-prediction",
+      "vc:label": "Energy demand prediction"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-forecasting",
+      "vc:label": "energy forecasting"
+    },
+    {
+      "@id": "urn:visionflow:linked:esp32",
+      "vc:label": "ESP32"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploding-gradient-problem",
+      "vc:label": "exploding gradient problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploding-gradient-problem",
+      "vc:label": "Exploding gradient problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploding-gradient-problem",
+      "vc:label": "Exploding Gradient Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedforward-neural-networks",
+      "vc:label": "feedforward neural networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-forecasting",
+      "vc:label": "Financial forecasting"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-forecasting",
+      "vc:label": "Financial Forecasting"
+    },
+    {
+      "@id": "urn:visionflow:linked:fpga-based-rnns",
+      "vc:label": "FPGA-based RNNs"
+    },
+    {
+      "@id": "urn:visionflow:linked:gated-recurrent-unit",
+      "vc:label": "Gated Recurrent Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:gating-mechanism",
+      "vc:label": "Gating Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:genomics",
+      "vc:label": "genomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:grant-sanderson",
+      "vc:label": "Grant Sanderson"
+    },
+    {
+      "@id": "urn:visionflow:linked:gru",
+      "vc:label": "GRU"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-architectures",
+      "vc:label": "Hybrid Architectures"
+    },
+    {
+      "@id": "urn:visionflow:linked:ibm-true-north",
+      "vc:label": "IBM TrueNorth"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:intel-loihi",
+      "vc:label": "Intel Loihi"
+    },
+    {
+      "@id": "urn:visionflow:linked:intel-loihi-2",
+      "vc:label": "Intel Loihi 2"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-22989-2022",
+      "vc:label": "ISO/IEC 22989:2022"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23894-2023",
+      "vc:label": "ISO/IEC 23894:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:j-rgen-schmidhuber",
+      "vc:label": "Jürgen Schmidhuber"
+    },
+    {
+      "@id": "urn:visionflow:linked:jax",
+      "vc:label": "JAX"
+    },
+    {
+      "@id": "urn:visionflow:linked:john-hopfield",
+      "vc:label": "John Hopfield"
+    },
+    {
+      "@id": "urn:visionflow:linked:keras",
+      "vc:label": "Keras"
+    },
+    {
+      "@id": "urn:visionflow:linked:kyunghyun-cho",
+      "vc:label": "Kyunghyun Cho"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-normalization",
+      "vc:label": "Layer normalization"
+    },
+    {
+      "@id": "urn:visionflow:linked:layer-normalization",
+      "vc:label": "Layer Normalization"
+    },
+    {
+      "@id": "urn:visionflow:linked:leeds-digital-festival",
+      "vc:label": "Leeds Digital Festival"
+    },
+    {
+      "@id": "urn:visionflow:linked:leeds-teaching-hospitals-nhs-trust",
+      "vc:label": "Leeds Teaching Hospitals NHS Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-rnn",
+      "vc:label": "Linear RNN"
+    },
+    {
+      "@id": "urn:visionflow:linked:lloyds-banking-group",
+      "vc:label": "Lloyds Banking Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:lstm",
+      "vc:label": "LSTM"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-domain",
+      "vc:label": "Machine Learning Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:mamba",
+      "vc:label": "Mamba"
+    },
+    {
+      "@id": "urn:visionflow:linked:mamba-architecture",
+      "vc:label": "Mamba Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:manchester-digital",
+      "vc:label": "Manchester Digital"
+    },
+    {
+      "@id": "urn:visionflow:linked:manchester-institute-of-biotechnology",
+      "vc:label": "Manchester Institute of Biotechnology"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging",
+      "vc:label": "Medical imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging",
+      "vc:label": "medical imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:mnist-dataset",
+      "vc:label": "MNIST dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-rnns",
+      "vc:label": "Multimodal RNNs"
+    },
+    {
+      "@id": "urn:visionflow:linked:nat-west-group",
+      "vc:label": "NatWest Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-innovation-centre-for-data",
+      "vc:label": "National Innovation Centre for Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language",
+      "vc:label": "natural language"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-understanding",
+      "vc:label": "natural language understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-layers",
+      "vc:label": "Neural network layers"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "neural networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-ode-rnn",
+      "vc:label": "Neural ODE-RNN"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuromorphic-rnns",
+      "vc:label": "Neuromorphic RNNs"
+    },
+    {
+      "@id": "urn:visionflow:linked:neurons",
+      "vc:label": "neurons"
+    },
+    {
+      "@id": "urn:visionflow:linked:newcastle-helix",
+      "vc:label": "Newcastle Helix"
+    },
+    {
+      "@id": "urn:visionflow:linked:newcastle-university",
+      "vc:label": "Newcastle University"
+    },
+    {
+      "@id": "urn:visionflow:linked:nhs-digital",
+      "vc:label": "NHS Digital"
+    },
+    {
+      "@id": "urn:visionflow:linked:nissan",
+      "vc:label": "Nissan"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:onnx",
+      "vc:label": "ONNX"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimizer",
+      "vc:label": "Optimizer"
+    },
+    {
+      "@id": "urn:visionflow:linked:parallelized-rnn-training",
+      "vc:label": "Parallelized RNN Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:perceiver-io",
+      "vc:label": "Perceiver IO"
+    },
+    {
+      "@id": "urn:visionflow:linked:philips-healthcare",
+      "vc:label": "Philips Healthcare"
+    },
+    {
+      "@id": "urn:visionflow:linked:protein-folding",
+      "vc:label": "protein folding"
+    },
+    {
+      "@id": "urn:visionflow:linked:protein-sequence-analysis",
+      "vc:label": "Protein sequence analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:rbs",
+      "vc:label": "RBS"
+    },
+    {
+      "@id": "urn:visionflow:linked:rolls-royce",
+      "vc:label": "Rolls-Royce"
+    },
+    {
+      "@id": "urn:visionflow:linked:rwkv",
+      "vc:label": "RWKV"
+    },
+    {
+      "@id": "urn:visionflow:linked:school-of-computing",
+      "vc:label": "School of Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:sepp-hochreiter",
+      "vc:label": "Sepp Hochreiter"
+    },
+    {
+      "@id": "urn:visionflow:linked:seq2seq-models",
+      "vc:label": "seq2seq models"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-to-sequence-model",
+      "vc:label": "Sequence-to-Sequence Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequential-data",
+      "vc:label": "sequential data"
+    },
+    {
+      "@id": "urn:visionflow:linked:sheffield-digital",
+      "vc:label": "Sheffield Digital"
+    },
+    {
+      "@id": "urn:visionflow:linked:sheffield-institute-for-translational-neuroscience",
+      "vc:label": "Sheffield Institute for Translational Neuroscience"
+    },
+    {
+      "@id": "urn:visionflow:linked:siemens",
+      "vc:label": "Siemens"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-grids",
+      "vc:label": "smart grids"
+    },
+    {
+      "@id": "urn:visionflow:linked:sophia-ananiadou",
+      "vc:label": "Sophia Ananiadou"
+    },
+    {
+      "@id": "urn:visionflow:linked:speaker-identification",
+      "vc:label": "Speaker identification"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-processing",
+      "vc:label": "Speech Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-synthesis",
+      "vc:label": "Speech synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:spi-nnaker",
+      "vc:label": "SpiNNaker"
+    },
+    {
+      "@id": "urn:visionflow:linked:spi-nnaker2",
+      "vc:label": "SpiNNaker2"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-space-model",
+      "vc:label": "State Space Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:steve-furber",
+      "vc:label": "Steve Furber"
+    },
+    {
+      "@id": "urn:visionflow:linked:structured-state-space",
+      "vc:label": "Structured State Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:teacher-forcing",
+      "vc:label": "Teacher forcing"
+    },
+    {
+      "@id": "urn:visionflow:linked:teacher-forcing",
+      "vc:label": "Teacher Forcing"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-convolutional-network",
+      "vc:label": "Temporal Convolutional Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow",
+      "vc:label": "TensorFlow"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-flow-lite",
+      "vc:label": "TensorFlow Lite"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series",
+      "vc:label": "time series"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series-analysis",
+      "vc:label": "Time Series Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:truncated-bptt",
+      "vc:label": "Truncated BPTT"
+    },
+    {
+      "@id": "urn:visionflow:linked:turing-institute",
+      "vc:label": "Turing Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:ukri",
+      "vc:label": "UKRI"
+    },
+    {
+      "@id": "urn:visionflow:linked:universal-transformers",
+      "vc:label": "Universal Transformers"
+    },
+    {
+      "@id": "urn:visionflow:linked:university-of-leeds",
+      "vc:label": "University of Leeds"
+    },
+    {
+      "@id": "urn:visionflow:linked:university-of-manchester",
+      "vc:label": "University of Manchester"
+    },
+    {
+      "@id": "urn:visionflow:linked:university-of-sheffield",
+      "vc:label": "University of Sheffield"
+    },
+    {
+      "@id": "urn:visionflow:linked:vanishing-gradient-problem",
+      "vc:label": "vanishing gradient problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:vanishing-gradient-problem",
+      "vc:label": "Vanishing gradient problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:vanishing-gradient-problem",
+      "vc:label": "Vanishing Gradient Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-analysis",
+      "vc:label": "Video analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-analysis",
+      "vc:label": "Video Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:wave-net",
+      "vc:label": "WaveNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:weather-forecasting",
+      "vc:label": "Weather forecasting"
+    },
+    {
+      "@id": "urn:visionflow:linked:weightmans-llp",
+      "vc:label": "Weightmans LLP"
+    },
+    {
+      "@id": "urn:visionflow:linked:weights",
+      "vc:label": "weights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:activation-function",
+      "vc:label": "Activation function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "Artificial Intelligence Domain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:backpropagation",
+      "vc:label": "backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dropout",
+      "vc:label": "Dropout"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:encoder-decoder-architecture",
+      "vc:label": "Encoder Decoder Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feedforward-neural-network",
+      "vc:label": "Feedforward neural network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feedforward-neural-network",
+      "vc:label": "Feedforward Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-clipping",
+      "vc:label": "Gradient clipping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-clipping",
+      "vc:label": "Gradient Clipping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-descent",
+      "vc:label": "gradient descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:healthcare-analytics",
+      "vc:label": "healthcare analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hidden-state",
+      "vc:label": "hidden state"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hidden-state",
+      "vc:label": "Hidden State"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:language-modeling",
+      "vc:label": "Language modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:long-short-term-memory",
+      "vc:label": "Long Short Term Memory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-translation",
+      "vc:label": "machine translation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-translation",
+      "vc:label": "Machine translation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:named-entity-recognition",
+      "vc:label": "Named entity recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:named-entity-recognition",
+      "vc:label": "Named Entity Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "natural language processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "neural network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neuromorphic-computing",
+      "vc:label": "Neuromorphic Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sentiment-analysis",
+      "vc:label": "Sentiment analysis"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:speech-recognition",
+      "vc:label": "speech recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:speech-recognition",
+      "vc:label": "Speech recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "transformer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformers",
+      "vc:label": "transformers"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-7a5813f267f7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#RecurrentNeuralNetwork"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0033"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Recurrent Neural Network"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:recurrent-neural-network"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:recurrent-neural-network"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c35f82f5fb8bd7fb9c6f24d0262f28cf20a3a0c13fdf1a2b250fc53e10f284b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+  "@type": "OntologyClass",
+  "label": "Recurrent Neural Network",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:c35f82f5fb8bd7fb9c6f24d0262f28cf20a3a0c13fdf1a2b250fc53e10f284b6"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c35f82f5fb8bd7fb9c6f24d0262f28cf20a3a0c13fdf1a2b250fc53e10f284b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:recurrent-neural-network:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:c35f82f5fb8bd7fb9c6f24d0262f28cf20a3a0c13fdf1a2b250fc53e10f284b6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[activation functions]]",
+      "resolved": "urn:visionflow:linked:activation-functions",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adam optimizer]]",
+      "resolved": "urn:visionflow:linked:adam-optimizer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Knowledge Graph]]",
+      "resolved": "urn:visionflow:linked:ai-knowledge-graph",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI/ML Knowledge Graph]]",
+      "resolved": "urn:visionflow:linked:ai-ml-knowledge-graph",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Summit Manchester]]",
+      "resolved": "urn:visionflow:linked:ai-summit-manchester",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anomaly Detection]]",
+      "resolved": "urn:visionflow:linked:anomaly-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Anomaly detection]]",
+      "resolved": "urn:visionflow:linked:anomaly-detection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Approximation Theory]]",
+      "resolved": "urn:visionflow:linked:approximation-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ARM Cortex-M]]",
+      "resolved": "urn:visionflow:linked:arm-cortex-m",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[artificial neural networks]]",
+      "resolved": "urn:visionflow:linked:artificial-neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AstraZeneca]]",
+      "resolved": "urn:visionflow:linked:astra-zeneca",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Attention-augmented RNNs]]",
+      "resolved": "urn:visionflow:linked:attention-augmented-rnns",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[attention mechanisms]]",
+      "resolved": "urn:visionflow:linked:attention-mechanisms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Automatic Speech Recognition]]",
+      "resolved": "urn:visionflow:linked:automatic-speech-recognition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Backpropagation Through Time]]",
+      "resolved": "urn:visionflow:linked:backpropagation-through-time",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[biases]]",
+      "resolved": "urn:visionflow:linked:biases",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bidirectional RNN]]",
+      "resolved": "urn:visionflow:linked:bidirectional-rnn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Biomedical Applications]]",
+      "resolved": "urn:visionflow:linked:biomedical-applications",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[But what is a neural network? (3Blue1Brown)]]",
+      "resolved": "urn:visionflow:linked:but-what-is-a-neural-network-3-blue1-brown",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Causal RNN Analysis]]",
+      "resolved": "urn:visionflow:linked:causal-rnn-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cell State]]",
+      "resolved": "urn:visionflow:linked:cell-state",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Theory]]",
+      "resolved": "urn:visionflow:linked:computational-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conformer]]",
+      "resolved": "urn:visionflow:linked:conformer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Continual Learning]]",
+      "resolved": "urn:visionflow:linked:continual-learning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cost function]]",
+      "resolved": "urn:visionflow:linked:cost-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[cost function]]",
+      "resolved": "urn:visionflow:linked:cost-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[David Rumelhart]]",
+      "resolved": "urn:visionflow:linked:david-rumelhart",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deep Learning Knowledge Graph]]",
+      "resolved": "urn:visionflow:linked:deep-learning-knowledge-graph",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deep RNN]]",
+      "resolved": "urn:visionflow:linked:deep-rnn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Department of Computer Science]]",
+      "resolved": "urn:visionflow:linked:department-of-computer-science",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Drug discovery]]",
+      "resolved": "urn:visionflow:linked:drug-discovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DWF Law LLP]]",
+      "resolved": "urn:visionflow:linked:dwf-law-llp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Edge AI RNNs]]",
+      "resolved": "urn:visionflow:linked:edge-ai-rnns",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Electronic health records]]",
+      "resolved": "urn:visionflow:linked:electronic-health-records",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Energy demand prediction]]",
+      "resolved": "urn:visionflow:linked:energy-demand-prediction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[energy forecasting]]",
+      "resolved": "urn:visionflow:linked:energy-forecasting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ESP32]]",
+      "resolved": "urn:visionflow:linked:esp32",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Exploding Gradient Problem]]",
+      "resolved": "urn:visionflow:linked:exploding-gradient-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Exploding gradient problem]]",
+      "resolved": "urn:visionflow:linked:exploding-gradient-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[exploding gradient problem]]",
+      "resolved": "urn:visionflow:linked:exploding-gradient-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[feedforward neural networks]]",
+      "resolved": "urn:visionflow:linked:feedforward-neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Forecasting]]",
+      "resolved": "urn:visionflow:linked:financial-forecasting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial forecasting]]",
+      "resolved": "urn:visionflow:linked:financial-forecasting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FPGA-based RNNs]]",
+      "resolved": "urn:visionflow:linked:fpga-based-rnns",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gated Recurrent Unit]]",
+      "resolved": "urn:visionflow:linked:gated-recurrent-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gating Mechanism]]",
+      "resolved": "urn:visionflow:linked:gating-mechanism",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[genomics]]",
+      "resolved": "urn:visionflow:linked:genomics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Gesture recognition]]",
+      "resolved": "urn:visionflow:linked:gesture-recognition",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Grant Sanderson]]",
+      "resolved": "urn:visionflow:linked:grant-sanderson",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GRU]]",
+      "resolved": "urn:visionflow:linked:gru",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hybrid Architectures]]",
+      "resolved": "urn:visionflow:linked:hybrid-architectures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IBM TrueNorth]]",
+      "resolved": "urn:visionflow:linked:ibm-true-north",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Information Theory]]",
+      "resolved": "urn:visionflow:linked:information-theory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intel Loihi]]",
+      "resolved": "urn:visionflow:linked:intel-loihi",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intel Loihi 2]]",
+      "resolved": "urn:visionflow:linked:intel-loihi-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 22989:2022]]",
+      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 23894:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Jürgen Schmidhuber]]",
+      "resolved": "urn:visionflow:linked:j-rgen-schmidhuber",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[JAX]]",
+      "resolved": "urn:visionflow:linked:jax",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[John Hopfield]]",
+      "resolved": "urn:visionflow:linked:john-hopfield",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Keras]]",
+      "resolved": "urn:visionflow:linked:keras",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Kyunghyun Cho]]",
+      "resolved": "urn:visionflow:linked:kyunghyun-cho",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer Normalization]]",
+      "resolved": "urn:visionflow:linked:layer-normalization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Layer normalization]]",
+      "resolved": "urn:visionflow:linked:layer-normalization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Leeds Digital Festival]]",
+      "resolved": "urn:visionflow:linked:leeds-digital-festival",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Leeds Teaching Hospitals NHS Trust]]",
+      "resolved": "urn:visionflow:linked:leeds-teaching-hospitals-nhs-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Linear RNN]]",
+      "resolved": "urn:visionflow:linked:linear-rnn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lloyds Banking Group]]",
+      "resolved": "urn:visionflow:linked:lloyds-banking-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[LSTM]]",
+      "resolved": "urn:visionflow:linked:lstm",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Machine Learning Domain]]",
+      "resolved": "urn:visionflow:linked:machine-learning-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mamba]]",
+      "resolved": "urn:visionflow:linked:mamba",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mamba Architecture]]",
+      "resolved": "urn:visionflow:linked:mamba-architecture",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manchester Digital]]",
+      "resolved": "urn:visionflow:linked:manchester-digital",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manchester Institute of Biotechnology]]",
+      "resolved": "urn:visionflow:linked:manchester-institute-of-biotechnology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Medical imaging]]",
+      "resolved": "urn:visionflow:linked:medical-imaging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[medical imaging]]",
+      "resolved": "urn:visionflow:linked:medical-imaging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MNIST dataset]]",
+      "resolved": "urn:visionflow:linked:mnist-dataset",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multimodal RNNs]]",
+      "resolved": "urn:visionflow:linked:multimodal-rnns",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NatWest Group]]",
+      "resolved": "urn:visionflow:linked:nat-west-group",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[National Innovation Centre for Data]]",
+      "resolved": "urn:visionflow:linked:national-innovation-centre-for-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[natural language]]",
+      "resolved": "urn:visionflow:linked:natural-language",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[natural language understanding]]",
+      "resolved": "urn:visionflow:linked:natural-language-understanding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural network layers]]",
+      "resolved": "urn:visionflow:linked:neural-network-layers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[neural networks]]",
+      "resolved": "urn:visionflow:linked:neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural ODE-RNN]]",
+      "resolved": "urn:visionflow:linked:neural-ode-rnn",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neuromorphic RNNs]]",
+      "resolved": "urn:visionflow:linked:neuromorphic-rnns",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[neurons]]",
+      "resolved": "urn:visionflow:linked:neurons",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Newcastle Helix]]",
+      "resolved": "urn:visionflow:linked:newcastle-helix",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Newcastle University]]",
+      "resolved": "urn:visionflow:linked:newcastle-university",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NHS Digital]]",
+      "resolved": "urn:visionflow:linked:nhs-digital",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nissan]]",
+      "resolved": "urn:visionflow:linked:nissan",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ONNX]]",
+      "resolved": "urn:visionflow:linked:onnx",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optimizer]]",
+      "resolved": "urn:visionflow:linked:optimizer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Parallelized RNN Training]]",
+      "resolved": "urn:visionflow:linked:parallelized-rnn-training",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Perceiver IO]]",
+      "resolved": "urn:visionflow:linked:perceiver-io",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Philips Healthcare]]",
+      "resolved": "urn:visionflow:linked:philips-healthcare",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[protein folding]]",
+      "resolved": "urn:visionflow:linked:protein-folding",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Protein sequence analysis]]",
+      "resolved": "urn:visionflow:linked:protein-sequence-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[PyTorch]]",
+      "resolved": "urn:visionflow:linked:py-torch",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RBS]]",
+      "resolved": "urn:visionflow:linked:rbs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rolls-Royce]]",
+      "resolved": "urn:visionflow:linked:rolls-royce",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[RWKV]]",
+      "resolved": "urn:visionflow:linked:rwkv",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[School of Computing]]",
+      "resolved": "urn:visionflow:linked:school-of-computing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sepp Hochreiter]]",
+      "resolved": "urn:visionflow:linked:sepp-hochreiter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[seq2seq models]]",
+      "resolved": "urn:visionflow:linked:seq2seq-models",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sequence-to-Sequence Model]]",
+      "resolved": "urn:visionflow:linked:sequence-to-sequence-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[sequential data]]",
+      "resolved": "urn:visionflow:linked:sequential-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sheffield Digital]]",
+      "resolved": "urn:visionflow:linked:sheffield-digital",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sheffield Institute for Translational Neuroscience]]",
+      "resolved": "urn:visionflow:linked:sheffield-institute-for-translational-neuroscience",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Siemens]]",
+      "resolved": "urn:visionflow:linked:siemens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[smart grids]]",
+      "resolved": "urn:visionflow:linked:smart-grids",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sophia Ananiadou]]",
+      "resolved": "urn:visionflow:linked:sophia-ananiadou",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Speaker identification]]",
+      "resolved": "urn:visionflow:linked:speaker-identification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Speech Processing]]",
+      "resolved": "urn:visionflow:linked:speech-processing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Speech synthesis]]",
+      "resolved": "urn:visionflow:linked:speech-synthesis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SpiNNaker]]",
+      "resolved": "urn:visionflow:linked:spi-nnaker",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SpiNNaker2]]",
+      "resolved": "urn:visionflow:linked:spi-nnaker2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[State Space Model]]",
+      "resolved": "urn:visionflow:linked:state-space-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Steve Furber]]",
+      "resolved": "urn:visionflow:linked:steve-furber",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Structured State Space]]",
+      "resolved": "urn:visionflow:linked:structured-state-space",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Teacher Forcing]]",
+      "resolved": "urn:visionflow:linked:teacher-forcing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Teacher forcing]]",
+      "resolved": "urn:visionflow:linked:teacher-forcing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Temporal Convolutional Network]]",
+      "resolved": "urn:visionflow:linked:temporal-convolutional-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow]]",
+      "resolved": "urn:visionflow:linked:tensor-flow",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TensorFlow Lite]]",
+      "resolved": "urn:visionflow:linked:tensor-flow-lite",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[time series]]",
+      "resolved": "urn:visionflow:linked:time-series",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Time Series Analysis]]",
+      "resolved": "urn:visionflow:linked:time-series-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Truncated BPTT]]",
+      "resolved": "urn:visionflow:linked:truncated-bptt",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Turing Institute]]",
+      "resolved": "urn:visionflow:linked:turing-institute",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UKRI]]",
+      "resolved": "urn:visionflow:linked:ukri",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Universal Transformers]]",
+      "resolved": "urn:visionflow:linked:universal-transformers",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[University of Leeds]]",
+      "resolved": "urn:visionflow:linked:university-of-leeds",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[University of Manchester]]",
+      "resolved": "urn:visionflow:linked:university-of-manchester",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[University of Sheffield]]",
+      "resolved": "urn:visionflow:linked:university-of-sheffield",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vanishing Gradient Problem]]",
+      "resolved": "urn:visionflow:linked:vanishing-gradient-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vanishing gradient problem]]",
+      "resolved": "urn:visionflow:linked:vanishing-gradient-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[vanishing gradient problem]]",
+      "resolved": "urn:visionflow:linked:vanishing-gradient-problem",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Video Analysis]]",
+      "resolved": "urn:visionflow:linked:video-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Video analysis]]",
+      "resolved": "urn:visionflow:linked:video-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[WaveNet]]",
+      "resolved": "urn:visionflow:linked:wave-net",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Weather forecasting]]",
+      "resolved": "urn:visionflow:linked:weather-forecasting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Weightmans LLP]]",
+      "resolved": "urn:visionflow:linked:weightmans-llp",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[weights]]",
+      "resolved": "urn:visionflow:linked:weights",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Activation Function]]",
+      "resolved": "urn:visionflow:owl:class:activation-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Activation function]]",
+      "resolved": "urn:visionflow:owl:class:activation-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence Domain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Attention Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:attention-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Backpropagation]]",
+      "resolved": "urn:visionflow:owl:class:backpropagation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[backpropagation]]",
+      "resolved": "urn:visionflow:owl:class:backpropagation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Convolutional Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Curriculum Learning]]",
+      "resolved": "urn:visionflow:owl:class:curriculum-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Dropout]]",
+      "resolved": "urn:visionflow:owl:class:dropout",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Encoder Decoder Architecture]]",
+      "resolved": "urn:visionflow:owl:class:encoder-decoder-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feedforward Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:feedforward-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feedforward neural network]]",
+      "resolved": "urn:visionflow:owl:class:feedforward-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gradient Clipping]]",
+      "resolved": "urn:visionflow:owl:class:gradient-clipping",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gradient clipping]]",
+      "resolved": "urn:visionflow:owl:class:gradient-clipping",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Gradient Descent]]",
+      "resolved": "urn:visionflow:owl:class:gradient-descent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[gradient descent]]",
+      "resolved": "urn:visionflow:owl:class:gradient-descent",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[healthcare analytics]]",
+      "resolved": "urn:visionflow:owl:class:healthcare-analytics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hidden State]]",
+      "resolved": "urn:visionflow:owl:class:hidden-state",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[hidden state]]",
+      "resolved": "urn:visionflow:owl:class:hidden-state",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Language modeling]]",
+      "resolved": "urn:visionflow:owl:class:language-modeling",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Long Short Term Memory]]",
+      "resolved": "urn:visionflow:owl:class:long-short-term-memory",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Loss Function]]",
+      "resolved": "urn:visionflow:owl:class:loss-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Translation]]",
+      "resolved": "urn:visionflow:owl:class:machine-translation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine translation]]",
+      "resolved": "urn:visionflow:owl:class:machine-translation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[machine translation]]",
+      "resolved": "urn:visionflow:owl:class:machine-translation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Named Entity Recognition]]",
+      "resolved": "urn:visionflow:owl:class:named-entity-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Named entity recognition]]",
+      "resolved": "urn:visionflow:owl:class:named-entity-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[natural language processing]]",
+      "resolved": "urn:visionflow:owl:class:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[neural network]]",
+      "resolved": "urn:visionflow:owl:class:neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neuromorphic Computing]]",
+      "resolved": "urn:visionflow:owl:class:neuromorphic-computing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recurrent Neural Network]]",
+      "resolved": "urn:visionflow:owl:class:recurrent-neural-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sentiment Analysis]]",
+      "resolved": "urn:visionflow:owl:class:sentiment-analysis",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sentiment analysis]]",
+      "resolved": "urn:visionflow:owl:class:sentiment-analysis",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Speech Recognition]]",
+      "resolved": "urn:visionflow:owl:class:speech-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Speech recognition]]",
+      "resolved": "urn:visionflow:owl:class:speech-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[speech recognition]]",
+      "resolved": "urn:visionflow:owl:class:speech-recognition",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[transformer]]",
+      "resolved": "urn:visionflow:owl:class:transformer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[transformers]]",
+      "resolved": "urn:visionflow:owl:class:transformers",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:c35f82f5fb8bd7fb9c6f24d0262f28cf20a3a0c13fdf1a2b250fc53e10f284b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - ### Primary Definition
@@ -119,7 +1960,7 @@ public:: true
 
   ### Historical Development [Updated 2025]
   - **1980s**: Foundational concepts introduced by [[John Hopfield]] and [[David Rumelhart]]
-  - **1997**: [[Long Short-Term Memory]] (LSTM) developed by [[Sepp Hochreiter]] and [[Jürgen Schmidhuber]] to address [[vanishing gradient problem]]
+  - **1997**: [[Long Short Term Memory]] (LSTM) developed by [[Sepp Hochreiter]] and [[Jürgen Schmidhuber]] to address [[vanishing gradient problem]]
   - **2014**: [[Gated Recurrent Unit]] (GRU) introduced as simplified LSTM variant by [[Kyunghyun Cho]] et al.
   - **2017-2025**: Hybrid architectures combining RNNs with [[attention mechanisms]] and [[transformers]] emerge for optimal efficiency-performance balance
 
@@ -135,7 +1976,7 @@ public:: true
   - **Recurrent Connections**: Feedback loops enabling temporal dependencies
 
   ### Variants and Extensions [Updated 2025]
-  - **[[Long Short-Term Memory]] (LSTM)**:
+  - **[[Long Short Term Memory]] (LSTM)**:
   - Addresses [[vanishing gradient problem]] through gating mechanisms
   - Includes forget gate, input gate, and output gate
   - Maintains separate cell state and hidden state
@@ -522,11 +2363,11 @@ public:: true
   - [[Optimizer]]
 
   ### RNN-Specific Concepts
-  - [[Long Short-Term Memory]] (LSTM) - AI-0034
+  - [[Long Short Term Memory]] (LSTM) - AI-0034
   - [[Gated Recurrent Unit]] (GRU)
   - [[Bidirectional RNN]]
   - [[Deep RNN]]
-  - [[Encoder-Decoder Architecture]]
+  - [[Encoder Decoder Architecture]]
   - [[Sequence-to-Sequence Model]]
   - [[Backpropagation Through Time]] (BPTT)
   - [[Vanishing Gradient Problem]]

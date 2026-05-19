@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721",
+  "title": "Price Discovery",
+  "slug": "price-discovery",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:price-discovery",
+  "domain": "blockchain",
+  "definition": "Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:market-microstructure",
+      "label": "Market Microstructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:fair-valuation",
+        "label": "Fair Valuation"
+      },
+      {
+        "id": "urn:visionflow:linked:market-efficiency",
+        "label": "Market Efficiency"
+      },
+      {
+        "id": "urn:visionflow:linked:price-transparency",
+        "label": "Price Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "arbitrage",
+      "label": "Arbitrage"
+    },
+    {
+      "slug": "fair-valuation",
+      "label": "Fair Valuation"
+    },
+    {
+      "slug": "financial-domain",
+      "label": "FinancialDomain"
+    },
+    {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "market-efficiency",
+      "label": "Market Efficiency"
+    },
+    {
+      "slug": "market-microstructure",
+      "label": "Market Microstructure"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "price-transparency",
+      "label": "Price Transparency"
+    },
+    {
+      "slug": "mev",
+      "label": "MEV"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "digital-asset-trading",
+      "label": "Digital Asset Trading"
+    },
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ]
+}

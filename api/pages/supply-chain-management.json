@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:073e0c9f1c4b15d5b5ca45d461c5fd043e05759118df2b058a9ed175f2c395e7",
+  "title": "Supply Chain Management",
+  "slug": "supply-chain-management",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:supply-chain-management",
+  "domain": "blockchain",
+  "definition": "Supply Chain Management in blockchain contexts refers to the application of distributed ledger technology for tracking, verifying, and managing the flow of goods, services, and information across supply networks. This includes traceability systems, provenance verification, and transparency solutions that leverage blockchain's immutability and decentralisation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

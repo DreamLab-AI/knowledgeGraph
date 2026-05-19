@@ -1,0 +1,636 @@
+{
+  "id": "urn:visionflow:page:6615fdb25a51aae11426617732cd26962f68dd3fec4b1e13e4b6b897ef92749c",
+  "title": "Pose Estimation",
+  "slug": "pose-estimation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:pose-estimation",
+  "domain": "computer-vision",
+  "definition": "Pose estimation is the computational task of inferring the spatial configuration\u2014position, orientation, and joint angles\u2014of a body or rigid object from image or video data, spanning 2D keypoint localisation on the image plane (pixel-coordinate skeleton graphs), 3D joint position regression in camera or world coordinates, 6-Degrees-of-Freedom (6DoF) rigid object pose (3D translation + 3D rotation), and parametric human mesh recovery yielding dense surface models from statistical body shape priors (SMPL, SMPL-X), applied across robotics grasping and manipulation, extended/mixed reality avatar animation, medical rehabilitation monitoring, sports biomechanics analytics, autonomous vehicle pedestrian prediction, and creative content generation, achieved through architectural families spanning bottom-up multi-person keypoint detectors (OpenPose CMU 2019 achieving 40 FPS on COCO body+hand+face, MediaPipe BlazePose 2020-2025 running real-time on mobile devices at 30+ FPS with 33 full-body landmarks, RTMPose 2024 MMDet-based RTM architecture achieving 91.4 AP on COCO and 73 ms inference on CPU), top-down single-person refiners (HRNet 2019, ViTPose 2022, DWPose 2023 distilled from DWPose-L a",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:perception",
+      "label": "Perception"
+    },
+    {
+      "id": "urn:visionflow:owl:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:6-do-f-estimation",
+        "label": "6DoF Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:body-model",
+        "label": "Body Model"
+      },
+      {
+        "id": "urn:visionflow:linked:heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "id": "urn:visionflow:linked:keypoint-detection",
+        "label": "Keypoint Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:mesh-recovery",
+        "label": "Mesh Recovery"
+      },
+      {
+        "id": "urn:visionflow:linked:skeleton-graph",
+        "label": "Skeleton Graph"
+      },
+      {
+        "id": "urn:visionflow:linked:temporal-smoothing",
+        "label": "Temporal Smoothing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "id": "urn:visionflow:linked:body-prior",
+        "label": "Body Prior"
+      },
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:visionflow:linked:image-features",
+        "label": "Image Features"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:action-recognition",
+        "label": "Action Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:visionflow:linked:rehabilitation-monitoring",
+        "label": "Rehabilitation Monitoring"
+      },
+      {
+        "id": "urn:visionflow:linked:robotic-grasping",
+        "label": "Robotic Grasping"
+      },
+      {
+        "id": "urn:visionflow:linked:sports-analytics",
+        "label": "Sports Analytics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:4-d-humans",
+        "label": "4D-Humans"
+      },
+      {
+        "id": "urn:visionflow:linked:center-pose",
+        "label": "CenterPose"
+      },
+      {
+        "id": "urn:visionflow:linked:dwpose",
+        "label": "DWPose"
+      },
+      {
+        "id": "urn:visionflow:linked:foundation-pose",
+        "label": "FoundationPose"
+      },
+      {
+        "id": "urn:visionflow:linked:gdr-net",
+        "label": "GDR-Net"
+      },
+      {
+        "id": "urn:visionflow:linked:hrnet",
+        "label": "HRNet"
+      },
+      {
+        "id": "urn:visionflow:linked:media-pipe-pose",
+        "label": "MediaPipe Pose"
+      },
+      {
+        "id": "urn:visionflow:linked:open-pose",
+        "label": "OpenPose"
+      },
+      {
+        "id": "urn:visionflow:linked:rtmpose",
+        "label": "RTMPose"
+      },
+      {
+        "id": "urn:visionflow:linked:smpl",
+        "label": "SMPL"
+      },
+      {
+        "id": "urn:visionflow:linked:smpl-x",
+        "label": "SMPL-X"
+      },
+      {
+        "id": "urn:visionflow:linked:vi-tpose",
+        "label": "ViTPose"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-dpw-benchmark",
+      "label": "3DPW Benchmark"
+    },
+    {
+      "slug": "4-d-humans",
+      "label": "4D-Humans"
+    },
+    {
+      "slug": "6-do-f-estimation",
+      "label": "6DoF Estimation"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "aiperception-domain",
+      "label": "AIPerceptionDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "animation-pipeline",
+      "label": "Animation Pipeline"
+    },
+    {
+      "slug": "autonomous-vehicles",
+      "label": "Autonomous Vehicles"
+    },
+    {
+      "slug": "avatar-animation",
+      "label": "Avatar Animation"
+    },
+    {
+      "slug": "bazarevsky-et-al-2020-blaze-pose-media-pipe",
+      "label": "Bazarevsky et al. 2020 BlazePose MediaPipe"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "body-model",
+      "label": "Body Model"
+    },
+    {
+      "slug": "body-prior",
+      "label": "Body Prior"
+    },
+    {
+      "slug": "body-segmentation",
+      "label": "Body Segmentation"
+    },
+    {
+      "slug": "body-shape-models",
+      "label": "Body Shape Models"
+    },
+    {
+      "slug": "bogo-et-al-2016-smplify-keep-it-smpl",
+      "label": "Bogo et al. 2016 SMPLify Keep It SMPL"
+    },
+    {
+      "slug": "bop-benchmark",
+      "label": "BOP Benchmark"
+    },
+    {
+      "slug": "camera-calibration",
+      "label": "Camera Calibration"
+    },
+    {
+      "slug": "cao-et-al-2017-open-pose-part-affinity-fields",
+      "label": "Cao et al. 2017 OpenPose Part Affinity Fields"
+    },
+    {
+      "slug": "center-pose",
+      "label": "CenterPose"
+    },
+    {
+      "slug": "clinical-gait-analysis",
+      "label": "Clinical Gait Analysis"
+    },
+    {
+      "slug": "coco-dataset",
+      "label": "COCO Dataset"
+    },
+    {
+      "slug": "computer-vision-benchmarks",
+      "label": "Computer Vision Benchmarks"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "depth-sensor-pose",
+      "label": "Depth Sensor Pose"
+    },
+    {
+      "slug": "differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "slug": "direct-coordinate-regression",
+      "label": "Direct Coordinate Regression"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "edinburgh-centre-for-robotics",
+      "label": "Edinburgh Centre for Robotics"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "foundation-pose",
+      "label": "FoundationPose"
+    },
+    {
+      "slug": "free-mo-cap-open-source-mo-cap-project",
+      "label": "FreeMoCap Open Source MoCap Project"
+    },
+    {
+      "slug": "gaze-estimation",
+      "label": "Gaze Estimation"
+    },
+    {
+      "slug": "gdr-net",
+      "label": "GDR-Net"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "Gesture Recognition"
+    },
+    {
+      "slug": "goel-et-al-2023-4-d-humans-hmr2-0-iccv",
+      "label": "Goel et al. 2023 4D-Humans HMR2.0 ICCV"
+    },
+    {
+      "slug": "hand-pose-estimation",
+      "label": "Hand Pose Estimation"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "HardwareLayer"
+    },
+    {
+      "slug": "heatmap-regression",
+      "label": "Heatmap Regression"
+    },
+    {
+      "slug": "hoda-et-al-2020-bop-benchmark",
+      "label": "Hoda\u0148 et al. 2020 BOP Benchmark"
+    },
+    {
+      "slug": "hrnet",
+      "label": "HRNet"
+    },
+    {
+      "slug": "human-parsing",
+      "label": "Human Parsing"
+    },
+    {
+      "slug": "human3-6-m",
+      "label": "Human3.6M"
+    },
+    {
+      "slug": "image-features",
+      "label": "Image Features"
+    },
+    {
+      "slug": "imperial-college-robot-vision-group",
+      "label": "Imperial College Robot Vision Group"
+    },
+    {
+      "slug": "inertial-measurement-unit-mo-cap",
+      "label": "Inertial Measurement Unit MoCap"
+    },
+    {
+      "slug": "ionescu-et-al-2014-human3-6-m",
+      "label": "Ionescu et al. 2014 Human3.6M"
+    },
+    {
+      "slug": "jiang-et-al-2023-rtmpose-real-time",
+      "label": "Jiang et al. 2023 RTMPose Real-Time"
+    },
+    {
+      "slug": "jin-et-al-2020-coco-whole-body",
+      "label": "Jin et al. 2020 COCO WholeBody"
+    },
+    {
+      "slug": "kanazawa-et-al-2018-hmr-end-to-end-mesh-recovery",
+      "label": "Kanazawa et al. 2018 HMR End-to-End Mesh Recovery"
+    },
+    {
+      "slug": "keypoint-detection",
+      "label": "Keypoint Detection"
+    },
+    {
+      "slug": "li-et-al-2022-sim-cc-coordinate-classification",
+      "label": "Li et al. 2022 SimCC Coordinate Classification"
+    },
+    {
+      "slug": "lin-et-al-2014-microsoft-coco",
+      "label": "Lin et al. 2014 Microsoft COCO"
+    },
+    {
+      "slug": "loper-et-al-2015-smpl-skinned-multi-person-linear-model",
+      "label": "Loper et al. 2015 SMPL Skinned Multi-Person Linear Model"
+    },
+    {
+      "slug": "mathis-et-al-2018-deep-lab-cut-nature-neuroscience",
+      "label": "Mathis et al. 2018 DeepLabCut Nature Neuroscience"
+    },
+    {
+      "slug": "media-pipe-pose",
+      "label": "MediaPipe Pose"
+    },
+    {
+      "slug": "mesh-recovery",
+      "label": "Mesh Recovery"
+    },
+    {
+      "slug": "mmpose-open-mmlab-toolkit",
+      "label": "MMPose OpenMMLab Toolkit"
+    },
+    {
+      "slug": "move-ai-series-b-2024",
+      "label": "Move.ai Series B 2024"
+    },
+    {
+      "slug": "mpi-is-body-shape-and-motion-group",
+      "label": "MPI-IS Body Shape and Motion Group"
+    },
+    {
+      "slug": "mpii-human-pose-dataset",
+      "label": "MPII Human Pose Dataset"
+    },
+    {
+      "slug": "newell-et-al-2016-stacked-hourglass",
+      "label": "Newell et al. 2016 Stacked Hourglass"
+    },
+    {
+      "slug": "nvidia-isaac-manipulator-sdk",
+      "label": "NVIDIA Isaac Manipulator SDK"
+    },
+    {
+      "slug": "open-mmlab-rtmpose-git-hub",
+      "label": "OpenMMLab RTMPose GitHub"
+    },
+    {
+      "slug": "open-pose",
+      "label": "OpenPose"
+    },
+    {
+      "slug": "optical-motion-capture",
+      "label": "Optical Motion Capture"
+    },
+    {
+      "slug": "pavlakos-et-al-2019-smpl-x-expressive-body",
+      "label": "Pavlakos et al. 2019 SMPL-X Expressive Body"
+    },
+    {
+      "slug": "pavllo-et-al-2019-video-pose3-d-temporal",
+      "label": "Pavllo et al. 2019 VideoPose3D Temporal"
+    },
+    {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
+      "slug": "perspective-n-point",
+      "label": "Perspective-n-Point"
+    },
+    {
+      "slug": "rehabilitation-monitoring",
+      "label": "Rehabilitation Monitoring"
+    },
+    {
+      "slug": "robotic-grasping",
+      "label": "Robotic Grasping"
+    },
+    {
+      "slug": "rtmpose",
+      "label": "RTMPose"
+    },
+    {
+      "slug": "skeleton-graph",
+      "label": "Skeleton Graph"
+    },
+    {
+      "slug": "smpl",
+      "label": "SMPL"
+    },
+    {
+      "slug": "smpl-body-model",
+      "label": "SMPL Body Model"
+    },
+    {
+      "slug": "smpl-x",
+      "label": "SMPL-X"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "SpatialComputingDomain"
+    },
+    {
+      "slug": "sports-analytics",
+      "label": "Sports Analytics"
+    },
+    {
+      "slug": "sports-science",
+      "label": "Sports Science"
+    },
+    {
+      "slug": "sun-et-al-2019-hrnet-high-resolution",
+      "label": "Sun et al. 2019 HRNet High Resolution"
+    },
+    {
+      "slug": "surrey-cvssp-hilton",
+      "label": "Surrey CVSSP Hilton"
+    },
+    {
+      "slug": "temporal-smoothing",
+      "label": "Temporal Smoothing"
+    },
+    {
+      "slug": "vi-t-backbone",
+      "label": "ViT Backbone"
+    },
+    {
+      "slug": "vi-tpose",
+      "label": "ViTPose"
+    },
+    {
+      "slug": "von-marcard-et-al-2018-3-dpw-benchmark",
+      "label": "von Marcard et al. 2018 3DPW Benchmark"
+    },
+    {
+      "slug": "wang-et-al-2021-gdr-net-geometry-guided",
+      "label": "Wang et al. 2021 GDR-Net Geometry-Guided"
+    },
+    {
+      "slug": "wen-et-al-2024-foundation-pose-nvidia-cvpr",
+      "label": "Wen et al. 2024 FoundationPose NVIDIA CVPR"
+    },
+    {
+      "slug": "xiang-et-al-2018-pose-cnn-ycb-video",
+      "label": "Xiang et al. 2018 PoseCNN YCB-Video"
+    },
+    {
+      "slug": "xu-et-al-2022-vi-tpose-vision-transformer",
+      "label": "Xu et al. 2022 ViTPose Vision Transformer"
+    },
+    {
+      "slug": "ycb-video-dataset",
+      "label": "YCB-Video Dataset"
+    },
+    {
+      "slug": "ye-et-al-2023-slahmr-decoupling",
+      "label": "Ye et al. 2023 SLAHMR Decoupling"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "marker-based-tracking",
+      "label": "Marker-Based Tracking"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ]
+}

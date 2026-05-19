@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:57ceecd1d876d3696759f572c5f75d99605d2c51da33b46599a2d3072b8e47de",
+  "title": "Learning Component",
+  "slug": "learning-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:learning-component",
+  "domain": "spatial-computing",
+  "definition": "Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:customised-training",
+        "label": "Customised Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "customised-training",
+      "label": "Customised Training"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    }
+  ]
+}

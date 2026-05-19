@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:dcc2cb865f7ed49c845141a63219a18c8f63afc7c16bb87051540683ea8680d0",
+  "title": "Wheeled Robot",
+  "slug": "wheeled-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:wheeled-robot",
+  "domain": "robotics",
+  "definition": "Wheeled Robot is a concept within the robotics domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robotics",
+      "label": "robotics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "omnidirectional-robot",
+      "label": "Omnidirectional Robot"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    }
+  ]
+}

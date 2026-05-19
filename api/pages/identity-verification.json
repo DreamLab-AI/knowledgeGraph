@@ -1,0 +1,976 @@
+{
+  "id": "urn:visionflow:page:d78c4dc0451650c38c1ee23ba11a74efd0222d35e5e65c070e07c35103f9e981",
+  "title": "Identity Verification",
+  "slug": "identity-verification",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:identity-verification",
+  "domain": "security",
+  "definition": "[[Identity Verification]] (IDV, often used interchangeably with identity proofing for the one-time onboarding event) is the trust-establishment process by which a relying party tests an identity claim \u2014 that a specific natural person or legal entity is who they purport to be \u2014 by collecting evidence and reducing the probability of impersonation to a level commensurate with the risk of the relationship, combining (i) [[Document Verification]] of government-issued credentials ([[Passport]], [[Driving Licence]], national ID card) through OCR, MRZ parsing, security-feature inspection (hologram, microprint, ultraviolet/infrared response, intaglio printing), and chip-data extraction over [[Near-Field Communication|NFC]] under [[ICAO 9303]] for [[ePassport|e-passports]], (ii) [[Biometric Verification]] binding the document holder to the live applicant through [[Face Match|selfie-to-document face match]], [[Fingerprint Recognition]], [[Iris Recognition]], [[Palm Vein Recognition]], [[Voice Biometrics]] or [[Behavioural Biometrics]], (iii) [[Liveness Detection]] (active \u2014 head turns, blinks, smile; passive \u2014 texture, depth from focus, 3D structure-from-motion, micro-expression analysis) def",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:authentication-method",
+      "label": "Authentication Method"
+    },
+    {
+      "id": "urn:visionflow:linked:identity-proofing",
+      "label": "Identity Proofing"
+    },
+    {
+      "id": "urn:visionflow:linked:security-mechanism",
+      "label": "Security Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:trust-establishment",
+      "label": "Trust Establishment"
+    },
+    {
+      "id": "urn:visionflow:owl:class:compliance-control",
+      "label": "Compliance Control"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:database-verification",
+        "label": "Database Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:document-verification",
+        "label": "Document Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-based-authentication",
+        "label": "Knowledge-Based Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:mobile-network-operator-data",
+        "label": "Mobile Network Operator Data"
+      },
+      {
+        "id": "urn:visionflow:linked:risk-scoring-engine",
+        "label": "Risk Scoring Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:authoritative-data-source",
+        "label": "Authoritative Data Source"
+      },
+      {
+        "id": "urn:visionflow:linked:biometric-template",
+        "label": "Biometric Template"
+      },
+      {
+        "id": "urn:visionflow:linked:capture-device",
+        "label": "Capture Device"
+      },
+      {
+        "id": "urn:visionflow:linked:consent-mechanism",
+        "label": "Consent Mechanism"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-evidence",
+        "label": "Identity Evidence"
+      },
+      {
+        "id": "urn:visionflow:linked:trusted-issuer",
+        "label": "Trusted Issuer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:account-opening",
+        "label": "Account Opening"
+      },
+      {
+        "id": "urn:visionflow:linked:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "id": "urn:visionflow:linked:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:visionflow:linked:fraud-prevention",
+        "label": "Fraud Prevention"
+      },
+      {
+        "id": "urn:visionflow:linked:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:visionflow:linked:reusable-identity",
+        "label": "Reusable Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:sanctions-compliance",
+        "label": "Sanctions Compliance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "id": "urn:visionflow:linked:fatf-recommendation-10",
+        "label": "FATF Recommendation 10"
+      },
+      {
+        "id": "urn:visionflow:linked:icao-9303",
+        "label": "ICAO 9303"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-iec-19794",
+        "label": "ISO/IEC 19794"
+      },
+      {
+        "id": "urn:visionflow:linked:iso-iec-30107",
+        "label": "ISO/IEC 30107"
+      },
+      {
+        "id": "urn:visionflow:linked:nist-800-63",
+        "label": "NIST 800-63"
+      },
+      {
+        "id": "urn:visionflow:linked:uk-diatf",
+        "label": "UK DIATF"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "account-opening",
+      "label": "Account Opening"
+    },
+    {
+      "slug": "age-verification",
+      "label": "Age Verification"
+    },
+    {
+      "slug": "alloy",
+      "label": "Alloy"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "au10tix",
+      "label": "Au10tix"
+    },
+    {
+      "slug": "authentication-method",
+      "label": "Authentication Method"
+    },
+    {
+      "slug": "authorisation",
+      "label": "Authorisation"
+    },
+    {
+      "slug": "authoritative-data-source",
+      "label": "Authoritative Data Source"
+    },
+    {
+      "slug": "behavioural-biometrics",
+      "label": "Behavioural Biometrics"
+    },
+    {
+      "slug": "biometric-matching-algorithm",
+      "label": "Biometric Matching Algorithm"
+    },
+    {
+      "slug": "biometric-template",
+      "label": "Biometric Template"
+    },
+    {
+      "slug": "biometric-verification",
+      "label": "Biometric Verification"
+    },
+    {
+      "slug": "c2-pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "capture-device",
+      "label": "Capture Device"
+    },
+    {
+      "slug": "civic-pass",
+      "label": "Civic Pass"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "ComplianceLayer"
+    },
+    {
+      "slug": "consent-mechanism",
+      "label": "Consent Mechanism"
+    },
+    {
+      "slug": "credit-bureau",
+      "label": "Credit Bureau"
+    },
+    {
+      "slug": "credit-bureau",
+      "label": "Credit Bureau"
+    },
+    {
+      "slug": "cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "slug": "customer-due-diligence",
+      "label": "Customer Due Diligence"
+    },
+    {
+      "slug": "database-verification",
+      "label": "Database Verification"
+    },
+    {
+      "slug": "database-verification",
+      "label": "Database Verification"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "deepfake",
+      "label": "Deepfake"
+    },
+    {
+      "slug": "deng-guo-xue-zafeiriou-arc-face-cvpr-2019",
+      "label": "Deng Guo Xue Zafeiriou ArcFace CVPR 2019"
+    },
+    {
+      "slug": "document-verification",
+      "label": "Document Verification"
+    },
+    {
+      "slug": "driving-licence",
+      "label": "Driving Licence"
+    },
+    {
+      "slug": "e-idas-2-0",
+      "label": "eIDAS 2.0"
+    },
+    {
+      "slug": "e-idas-2-0-regulation-2024-1183",
+      "label": "eIDAS 2.0 Regulation 2024/1183"
+    },
+    {
+      "slug": "e-passport",
+      "label": "ePassport"
+    },
+    {
+      "slug": "entrust",
+      "label": "Entrust"
+    },
+    {
+      "slug": "entrust-onfido-acquisition-press-release-apr-2024",
+      "label": "Entrust Onfido Acquisition Press Release Apr 2024"
+    },
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "eu-age-verification-wallet",
+      "label": "EU Age Verification Wallet"
+    },
+    {
+      "slug": "eu-digital-identity-wallet",
+      "label": "EU Digital Identity Wallet"
+    },
+    {
+      "slug": "european-commission",
+      "label": "European Commission"
+    },
+    {
+      "slug": "european-commission-eudi-wallet-arf-v1-5-mar-2026",
+      "label": "European Commission EUDI Wallet ARF v1.5 Mar 2026"
+    },
+    {
+      "slug": "face-match",
+      "label": "Face Match"
+    },
+    {
+      "slug": "face-match",
+      "label": "Face Match"
+    },
+    {
+      "slug": "face-soft",
+      "label": "FaceSoft"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    },
+    {
+      "slug": "fatf-recommendation-10",
+      "label": "FATF Recommendation 10"
+    },
+    {
+      "slug": "fatf-recommendation-16-travel-rule",
+      "label": "FATF Recommendation 16 Travel Rule"
+    },
+    {
+      "slug": "fatf-travel-rule",
+      "label": "FATF Travel Rule"
+    },
+    {
+      "slug": "fatf-updated-guidance-on-digital-identity-2022",
+      "label": "FATF Updated Guidance on Digital Identity 2022"
+    },
+    {
+      "slug": "federal-reserve-boston-synthetic-identity-fraud-2023",
+      "label": "Federal Reserve Boston Synthetic Identity Fraud 2023"
+    },
+    {
+      "slug": "financial-services-onboarding",
+      "label": "Financial Services Onboarding"
+    },
+    {
+      "slug": "fingerprint-recognition",
+      "label": "Fingerprint Recognition"
+    },
+    {
+      "slug": "fraud-prevention",
+      "label": "Fraud Prevention"
+    },
+    {
+      "slug": "gambling-regulation",
+      "label": "Gambling Regulation"
+    },
+    {
+      "slug": "gbg-plc",
+      "label": "GBG plc"
+    },
+    {
+      "slug": "healthcare-access",
+      "label": "Healthcare Access"
+    },
+    {
+      "slug": "i-beta-pad-conformance-programme",
+      "label": "iBeta PAD Conformance Programme"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
+    },
+    {
+      "slug": "i-proov-threat-intelligence-centre-q4-2025",
+      "label": "iProov Threat Intelligence Centre Q4 2025"
+    },
+    {
+      "slug": "icao",
+      "label": "ICAO"
+    },
+    {
+      "slug": "icao-9303",
+      "label": "ICAO 9303"
+    },
+    {
+      "slug": "icao-doc-9303",
+      "label": "ICAO Doc 9303"
+    },
+    {
+      "slug": "ico",
+      "label": "ICO"
+    },
+    {
+      "slug": "ico-biometric-data-guidance-feb-2024",
+      "label": "ICO Biometric Data Guidance Feb 2024"
+    },
+    {
+      "slug": "id-r-and-d",
+      "label": "ID R&D"
+    },
+    {
+      "slug": "idemia",
+      "label": "Idemia"
+    },
+    {
+      "slug": "identity-and-access-management-domain",
+      "label": "IdentityAndAccessManagementDomain"
+    },
+    {
+      "slug": "identity-authentication",
+      "label": "Identity Authentication"
+    },
+    {
+      "slug": "identity-evidence",
+      "label": "Identity Evidence"
+    },
+    {
+      "slug": "identity-proofing",
+      "label": "Identity Proofing"
+    },
+    {
+      "slug": "idnow",
+      "label": "IDnow"
+    },
+    {
+      "slug": "injection-attack",
+      "label": "Injection Attack"
+    },
+    {
+      "slug": "innovatrics",
+      "label": "Innovatrics"
+    },
+    {
+      "slug": "iris-recognition",
+      "label": "Iris Recognition"
+    },
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "iso-22144",
+      "label": "ISO 22144"
+    },
+    {
+      "slug": "iso-iec-18013-5",
+      "label": "ISO/IEC 18013-5"
+    },
+    {
+      "slug": "iso-iec-18013-5-m-dl",
+      "label": "ISO/IEC 18013-5 mDL"
+    },
+    {
+      "slug": "iso-iec-19794",
+      "label": "ISO/IEC 19794"
+    },
+    {
+      "slug": "iso-iec-30107",
+      "label": "ISO/IEC 30107"
+    },
+    {
+      "slug": "iso-iec-30107-3-2023",
+      "label": "ISO/IEC 30107-3:2023"
+    },
+    {
+      "slug": "jens-groth",
+      "label": "Jens Groth"
+    },
+    {
+      "slug": "jumio",
+      "label": "Jumio"
+    },
+    {
+      "slug": "juniper-research-digital-identity-verification-2025",
+      "label": "Juniper Research Digital Identity Verification 2025"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "slug": "knowledge-based-authentication",
+      "label": "Knowledge-Based Authentication"
+    },
+    {
+      "slug": "kuppinger-cole-verified-identity-leadership-compass-2025",
+      "label": "KuppingerCole Verified Identity Leadership Compass 2025"
+    },
+    {
+      "slug": "liveness-detection",
+      "label": "Liveness Detection"
+    },
+    {
+      "slug": "machine-readable-zone",
+      "label": "Machine-Readable Zone"
+    },
+    {
+      "slug": "machine-readable-zone",
+      "label": "Machine-Readable Zone"
+    },
+    {
+      "slug": "mirsky-lee-deepfake-survey-acm-csur-2021",
+      "label": "Mirsky Lee Deepfake Survey ACM CSUR 2021"
+    },
+    {
+      "slug": "mitek",
+      "label": "Mitek"
+    },
+    {
+      "slug": "mitek-hoo-yu",
+      "label": "Mitek HooYu"
+    },
+    {
+      "slug": "mobile-network-operator",
+      "label": "Mobile Network Operator"
+    },
+    {
+      "slug": "mobile-network-operator-data",
+      "label": "Mobile Network Operator Data"
+    },
+    {
+      "slug": "near-field-communication",
+      "label": "Near-Field Communication"
+    },
+    {
+      "slug": "near-field-communication",
+      "label": "Near-Field Communication"
+    },
+    {
+      "slug": "nec-neo-face",
+      "label": "NEC NeoFace"
+    },
+    {
+      "slug": "nfc",
+      "label": "NFC"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "nist-800-63",
+      "label": "NIST 800-63"
+    },
+    {
+      "slug": "nist-fate-age-estimation-ir-8525",
+      "label": "NIST FATE Age Estimation IR 8525"
+    },
+    {
+      "slug": "nist-frvt-march-2026",
+      "label": "NIST FRVT March 2026"
+    },
+    {
+      "slug": "nist-sp-800-63-4",
+      "label": "NIST SP 800-63-4"
+    },
+    {
+      "slug": "nist-sp-800-63-a-4",
+      "label": "NIST SP 800-63A-4"
+    },
+    {
+      "slug": "of-dia",
+      "label": "OfDIA"
+    },
+    {
+      "slug": "ofcom",
+      "label": "Ofcom"
+    },
+    {
+      "slug": "ofcom-highly-effective-age-assurance-statement-jan-2025",
+      "label": "Ofcom Highly Effective Age Assurance Statement Jan 2025"
+    },
+    {
+      "slug": "one-id",
+      "label": "OneID"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    },
+    {
+      "slug": "online-safety-act",
+      "label": "Online Safety Act"
+    },
+    {
+      "slug": "optical-character-recognition",
+      "label": "Optical Character Recognition"
+    },
+    {
+      "slug": "palm-vein-recognition",
+      "label": "Palm Vein Recognition"
+    },
+    {
+      "slug": "passport",
+      "label": "Passport"
+    },
+    {
+      "slug": "persona",
+      "label": "Persona"
+    },
+    {
+      "slug": "plaid-identity-verification",
+      "label": "Plaid Identity Verification"
+    },
+    {
+      "slug": "politically-exposed-person",
+      "label": "Politically Exposed Person"
+    },
+    {
+      "slug": "polygon-id",
+      "label": "Polygon ID"
+    },
+    {
+      "slug": "presentation-attack",
+      "label": "Presentation Attack"
+    },
+    {
+      "slug": "presentation-attack-detection",
+      "label": "Presentation Attack Detection"
+    },
+    {
+      "slug": "presentation-attack-detection",
+      "label": "Presentation Attack Detection"
+    },
+    {
+      "slug": "privado-id",
+      "label": "Privado ID"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    },
+    {
+      "slug": "quadrata",
+      "label": "Quadrata"
+    },
+    {
+      "slug": "ramachandra-busch-pad-survey-acm-2017",
+      "label": "Ramachandra Busch PAD Survey ACM 2017"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "RegulatoryComplianceDomain"
+    },
+    {
+      "slug": "replay-attack",
+      "label": "Replay Attack"
+    },
+    {
+      "slug": "reusable-identity",
+      "label": "Reusable Identity"
+    },
+    {
+      "slug": "reusable-kyc",
+      "label": "Reusable KYC"
+    },
+    {
+      "slug": "reusable-kyc",
+      "label": "Reusable KYC"
+    },
+    {
+      "slug": "risk-scoring-engine",
+      "label": "Risk Scoring Engine"
+    },
+    {
+      "slug": "risk-signals",
+      "label": "Risk Signals"
+    },
+    {
+      "slug": "sanctions-compliance",
+      "label": "Sanctions Compliance"
+    },
+    {
+      "slug": "sanctions-screening",
+      "label": "Sanctions Screening"
+    },
+    {
+      "slug": "sanctions-screening",
+      "label": "Sanctions Screening"
+    },
+    {
+      "slug": "schroff-kalenichenko-philbin-face-net-cvpr-2015",
+      "label": "Schroff Kalenichenko Philbin FaceNet CVPR 2015"
+    },
+    {
+      "slug": "security-domain",
+      "label": "SecurityDomain"
+    },
+    {
+      "slug": "security-mechanism",
+      "label": "Security Mechanism"
+    },
+    {
+      "slug": "sismo",
+      "label": "Sismo"
+    },
+    {
+      "slug": "socure",
+      "label": "Socure"
+    },
+    {
+      "slug": "sora-identity",
+      "label": "Sora Identity"
+    },
+    {
+      "slug": "sumsub",
+      "label": "Sumsub"
+    },
+    {
+      "slug": "synthetic-identity-fraud",
+      "label": "Synthetic Identity Fraud"
+    },
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "slug": "travel-and-border-control",
+      "label": "Travel and Border Control"
+    },
+    {
+      "slug": "trulioo",
+      "label": "Trulioo"
+    },
+    {
+      "slug": "trust-establishment",
+      "label": "Trust Establishment"
+    },
+    {
+      "slug": "trust-layer",
+      "label": "TrustLayer"
+    },
+    {
+      "slug": "trusted-issuer",
+      "label": "Trusted Issuer"
+    },
+    {
+      "slug": "uk-diatf",
+      "label": "UK DIATF"
+    },
+    {
+      "slug": "uk-digital-identity-and-attributes-trust-framework-v1-4",
+      "label": "UK Digital Identity and Attributes Trust Framework v1.4"
+    },
+    {
+      "slug": "uk-finance-annual-fraud-report-2025",
+      "label": "UK Finance Annual Fraud Report 2025"
+    },
+    {
+      "slug": "uk-online-safety-act",
+      "label": "UK Online Safety Act"
+    },
+    {
+      "slug": "uk-online-safety-act-2023",
+      "label": "UK Online Safety Act 2023"
+    },
+    {
+      "slug": "veridos",
+      "label": "Veridos"
+    },
+    {
+      "slug": "veriff",
+      "label": "Veriff"
+    },
+    {
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
+    },
+    {
+      "slug": "voice-biometrics",
+      "label": "Voice Biometrics"
+    },
+    {
+      "slug": "w3-c-decentralised-identifiers-v1-0",
+      "label": "W3C Decentralised Identifiers v1.0"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials",
+      "label": "W3C Verifiable Credentials"
+    },
+    {
+      "slug": "w3-c-verifiable-credentials-data-model-2-0",
+      "label": "W3C Verifiable Credentials Data Model 2.0"
+    },
+    {
+      "slug": "web3-compliance",
+      "label": "Web3 Compliance"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "worldcoin-world-id-2-0-whitepaper",
+      "label": "Worldcoin World ID 2.0 Whitepaper"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
+    },
+    {
+      "slug": "zk-kyc",
+      "label": "zkKYC"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "democratic-participation",
+      "label": "Democratic Participation"
+    },
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    },
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    },
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    },
+    {
+      "slug": "humanity-attestation",
+      "label": "Humanity Attestation"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "metaverse-liability-model",
+      "label": "Metaverse Liability Model"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to Be Forgotten"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

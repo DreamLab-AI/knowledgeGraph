@@ -1,21 +1,278 @@
-iri:: http://narrativegoldmine.com/metaverse#AdversarialAttacks
-uri:: urn:visionclaw:concept:artificial-intelligence:adversarial-attacks
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:adversarial-attacks
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Adversarial Attacks
-content-hash:: sha256-12-e7db4f5a3bf3
-legacy-term-id:: MV-9760
-status:: active
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T20:12:26Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AdversarialAttacks
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:adversarial-attacks
 public:: true
+
+# Adversarial Attacks
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff",
+  "@type": "Page",
+  "vc:slug": "adversarial-attacks",
+  "title": "Adversarial Attacks",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-security-threats",
+      "vc:label": "AI Security Threats"
+    },
+    {
+      "@id": "urn:visionflow:linked:crafted-perturbations",
+      "vc:label": "Crafted Perturbations"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-of-target-model",
+      "vc:label": "Knowledge of Target Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evasion",
+      "vc:label": "Model Evasion"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-100-2",
+      "vc:label": "NIST AI 100-2"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-taxonomy",
+      "vc:label": "NIST Taxonomy"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-manipulation",
+      "vc:label": "System Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e7db4f5a3bf3"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AdversarialAttacks"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9760"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T20:12:26Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Adversarial Attacks"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:adversarial-attacks"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:adversarial-attacks"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:adversarial-attacks",
+  "@type": "OntologyClass",
+  "label": "Adversarial Attacks",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:ai-security-threats",
+      "vc:label": "AI Security Threats"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significant to AI systems.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:crafted-perturbations",
+      "vc:label": "Crafted Perturbations"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-of-target-model",
+      "vc:label": "Knowledge of Target Model"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:model-evasion",
+      "vc:label": "Model Evasion"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-manipulation",
+      "vc:label": "System Manipulation"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:adversarial-attacks:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI Security Threats]]",
+      "resolved": "urn:visionflow:linked:ai-security-threats",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Crafted Perturbations]]",
+      "resolved": "urn:visionflow:linked:crafted-perturbations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge of Target Model]]",
+      "resolved": "urn:visionflow:linked:knowledge-of-target-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Evasion]]",
+      "resolved": "urn:visionflow:linked:model-evasion",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI 100-2]]",
+      "resolved": "urn:visionflow:linked:nist-ai-100-2",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST Taxonomy]]",
+      "resolved": "urn:visionflow:linked:nist-taxonomy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[System Manipulation]]",
+      "resolved": "urn:visionflow:linked:system-manipulation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significant to AI systems.

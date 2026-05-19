@@ -1,0 +1,567 @@
+{
+  "id": "urn:visionflow:page:b55921403270b85aa5268c12e6dd1bf78de65c088fc8592cd9f6b1bbdac07b1e",
+  "title": "Economics",
+  "slug": "economics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:economics",
+  "domain": "artificial-intelligence",
+  "definition": "Economics, as applied to the digital and AI-driven era, is the systematic study of how scarce resources are allocated through markets, institutions, and mechanisms when the primary inputs and outputs are information goods, algorithmic capabilities, autonomous agents, and cryptographic assets. It encompasses the microeconomics and macroeconomics of artificial intelligence adoption \u2014 including productivity measurement, labour market disruption, mechanism design for decentralised systems, and the governance of public goods \u2014 as well as the specific economics of blockchain networks (tokenomics, on-chain incentive structures, Coase-theoretic transaction-cost analysis of DAOs), the principal-agent theory of autonomous AI agents, and the macroeconomic forecasting of AI's contribution to GDP and total-factor productivity. Core theoretical lineages include Acemoglu and Restrepo's task-based automation framework establishing that automation raises productivity but simultaneously displaces workers \u2014 with net welfare effects contingent on whether new task creation outpaces displacement \u2014 Brynjolfsson's productivity-J-curve explaining why general-purpose technologies initially depress measured ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "id": "urn:visionflow:linked:complexity-science",
+      "label": "Complexity Science"
+    },
+    {
+      "id": "urn:visionflow:linked:information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "id": "urn:visionflow:linked:institutional-economics",
+      "label": "Institutional Economics"
+    },
+    {
+      "id": "urn:visionflow:linked:political-economy",
+      "label": "Political Economy"
+    },
+    {
+      "id": "urn:visionflow:linked:social-science",
+      "label": "Social Science"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:industrial-organisation",
+        "label": "Industrial Organisation"
+      },
+      {
+        "id": "urn:visionflow:linked:labour-economics",
+        "label": "Labour Economics"
+      },
+      {
+        "id": "urn:visionflow:linked:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:visionflow:linked:market-design",
+        "label": "Market Design"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:visionflow:linked:monetary-economics",
+        "label": "Monetary Economics"
+      },
+      {
+        "id": "urn:visionflow:linked:principal-agent-theory",
+        "label": "Principal-Agent Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:productivity-measurement",
+        "label": "Productivity Measurement"
+      },
+      {
+        "id": "urn:visionflow:linked:public-goods-theory",
+        "label": "Public Goods Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-cost-theory",
+        "label": "Transaction Cost Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:welfare-economics",
+        "label": "Welfare Economics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:incentive-structures",
+        "label": "Incentive Structures"
+      },
+      {
+        "id": "urn:visionflow:linked:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:visionflow:linked:market-institutions",
+        "label": "Market Institutions"
+      },
+      {
+        "id": "urn:visionflow:linked:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "id": "urn:visionflow:owl:class:property-rights",
+        "label": "Property Rights"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:antitrust-policy",
+        "label": "Antitrust Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:carbon-market-design",
+        "label": "Carbon Market Design"
+      },
+      {
+        "id": "urn:visionflow:linked:labour-market-policy",
+        "label": "Labour Market Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-regulation",
+        "label": "Platform Regulation"
+      },
+      {
+        "id": "urn:visionflow:linked:protocol-design",
+        "label": "Protocol Design"
+      },
+      {
+        "id": "urn:visionflow:linked:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:token-design",
+        "label": "Token Design"
+      },
+      {
+        "id": "urn:visionflow:linked:welfare-analysis",
+        "label": "Welfare Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:matching-theory",
+        "label": "Matching Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:visionflow:linked:optimal-taxation",
+        "label": "Optimal Taxation"
+      },
+      {
+        "id": "urn:visionflow:linked:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "antitrust-policy",
+      "label": "Antitrust Policy"
+    },
+    {
+      "slug": "auction-theory",
+      "label": "Auction Theory"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "slug": "behavioural-science",
+      "label": "Behavioural Science"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    },
+    {
+      "slug": "carbon-market-design",
+      "label": "Carbon Market Design"
+    },
+    {
+      "slug": "causal-inference",
+      "label": "Causal Inference"
+    },
+    {
+      "slug": "complexity-modelling",
+      "label": "Complexity Modelling"
+    },
+    {
+      "slug": "complexity-science",
+      "label": "Complexity Science"
+    },
+    {
+      "slug": "computational-complexity",
+      "label": "Computational Complexity"
+    },
+    {
+      "slug": "contract-theory",
+      "label": "Contract Theory"
+    },
+    {
+      "slug": "econometrics",
+      "label": "Econometrics"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "EconomicsDomain"
+    },
+    {
+      "slug": "empirical-io",
+      "label": "Empirical IO"
+    },
+    {
+      "slug": "financial-conduct-authority",
+      "label": "Financial Conduct Authority"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "general-equilibrium-models",
+      "label": "General Equilibrium Models"
+    },
+    {
+      "slug": "imf",
+      "label": "IMF"
+    },
+    {
+      "slug": "incentive-structures",
+      "label": "Incentive Structures"
+    },
+    {
+      "slug": "industrial-organisation",
+      "label": "Industrial Organisation"
+    },
+    {
+      "slug": "information-asymmetry",
+      "label": "Information Asymmetry"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "institutional-domain",
+      "label": "InstitutionalDomain"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "Institutional Economics"
+    },
+    {
+      "slug": "labour-economics",
+      "label": "Labour Economics"
+    },
+    {
+      "slug": "labour-market-policy",
+      "label": "Labour Market Policy"
+    },
+    {
+      "slug": "legal-reasoning",
+      "label": "Legal Reasoning"
+    },
+    {
+      "slug": "macroeconomics",
+      "label": "Macroeconomics"
+    },
+    {
+      "slug": "market-design",
+      "label": "Market Design"
+    },
+    {
+      "slug": "market-institutions",
+      "label": "Market Institutions"
+    },
+    {
+      "slug": "matching-theory",
+      "label": "Matching Theory"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "monetary-economics",
+      "label": "Monetary Economics"
+    },
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "optimal-taxation",
+      "label": "Optimal Taxation"
+    },
+    {
+      "slug": "platform-regulation",
+      "label": "Platform Regulation"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "political-economy",
+      "label": "Political Economy"
+    },
+    {
+      "slug": "principal-agent-theory",
+      "label": "Principal-Agent Theory"
+    },
+    {
+      "slug": "productivity-measurement",
+      "label": "Productivity Measurement"
+    },
+    {
+      "slug": "protocol-design",
+      "label": "Protocol Design"
+    },
+    {
+      "slug": "public-goods-funding",
+      "label": "Public Goods Funding"
+    },
+    {
+      "slug": "public-goods-theory",
+      "label": "Public Goods Theory"
+    },
+    {
+      "slug": "pure-computer-science",
+      "label": "Pure Computer Science"
+    },
+    {
+      "slug": "pure-engineering",
+      "label": "Pure Engineering"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "social-choice-theory",
+      "label": "Social Choice Theory"
+    },
+    {
+      "slug": "social-science",
+      "label": "Social Science"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "token-design",
+      "label": "Token Design"
+    },
+    {
+      "slug": "transaction-cost-theory",
+      "label": "Transaction Cost Theory"
+    },
+    {
+      "slug": "uk-competition-and-markets-authority",
+      "label": "UK Competition and Markets Authority"
+    },
+    {
+      "slug": "uk-hm-treasury",
+      "label": "UK HM Treasury"
+    },
+    {
+      "slug": "welfare-analysis",
+      "label": "Welfare Analysis"
+    },
+    {
+      "slug": "welfare-economics",
+      "label": "Welfare Economics"
+    },
+    {
+      "slug": "world-bank",
+      "label": "World Bank"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "property-rights",
+      "label": "Property Rights"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "backlinks": []
+}

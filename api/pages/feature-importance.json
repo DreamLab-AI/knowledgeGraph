@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:87f720bd87ae88def56c76139724201930610c0bc1dd3f4196f490d866c7b841",
+  "title": "Feature Importance",
+  "slug": "feature-importance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:feature-importance",
+  "domain": "artificial-intelligence",
+  "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:explainability",
+      "label": "Explainability"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "feature-selection",
+      "label": "Feature Selection"
+    },
+    {
+      "slug": "modeling",
+      "label": "modeling"
+    },
+    {
+      "slug": "partial-dependence-plot",
+      "label": "Partial Dependence Plot"
+    },
+    {
+      "slug": "permutation-importance",
+      "label": "Permutation Importance"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "user-experience",
+      "label": "user experience"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ]
+}

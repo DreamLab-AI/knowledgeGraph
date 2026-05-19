@@ -1,0 +1,380 @@
+{
+  "id": "urn:visionflow:page:8f03a4278069bdc6e0c517b83f2627fd3dc8704ab8d22ea981dc3ca9053219c4",
+  "title": "Model Context Protocol",
+  "slug": "model-context-protocol",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:model-context-protocol",
+  "domain": "artificial-intelligence",
+  "definition": "The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client\u2013server protocol for connecting [[Large Language Model]] inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, and prompts in a uniform interface that allows any compliant LLM application to discover and invoke heterogeneous external services \u2014 databases, file systems, APIs, agent memory stores \u2014 without bespoke integration code, forming the primary tool-surface interface within [[VisionClaw Agentic Container]] for agent-to-environment interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "id": "urn:visionflow:linked:json-rpc-protocol",
+      "label": "JSON-RPC Protocol"
+    }
+  ],
+  "qualityScore": 0.7,
+  "authorityScore": 0.85,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:mcp-client",
+        "label": "MCP Client"
+      },
+      {
+        "id": "urn:visionflow:linked:mcp-prompt",
+        "label": "MCP Prompt"
+      },
+      {
+        "id": "urn:visionflow:linked:mcp-resource",
+        "label": "MCP Resource"
+      },
+      {
+        "id": "urn:visionflow:linked:mcp-server",
+        "label": "MCP Server"
+      },
+      {
+        "id": "urn:visionflow:linked:mcp-tool",
+        "label": "MCP Tool"
+      },
+      {
+        "id": "urn:visionflow:linked:mcp-transport-layer",
+        "label": "MCP Transport Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:json-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "id": "urn:visionflow:linked:stdio-transport",
+        "label": "STDIO Transport"
+      },
+      {
+        "id": "urn:visionflow:linked:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:agent-tool-use",
+        "label": "Agent Tool Use"
+      },
+      {
+        "id": "urn:visionflow:linked:context-injection",
+        "label": "Context Injection"
+      },
+      {
+        "id": "urn:visionflow:linked:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:visionflow:linked:sandboxed-capability-discovery",
+        "label": "Sandboxed Capability Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:anthropic-mcp-specification-v0-1",
+        "label": "Anthropic MCP Specification v0.1"
+      },
+      {
+        "id": "urn:visionflow:linked:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:visionflow:linked:oauth-2-0-resource-server",
+        "label": "OAuth 2.0 Resource Server"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "agent-tool-use",
+      "label": "Agent Tool Use"
+    },
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "anthropic-mcp-specification",
+      "label": "Anthropic MCP Specification"
+    },
+    {
+      "slug": "anthropic-mcp-specification-v0-1",
+      "label": "Anthropic MCP Specification v0.1"
+    },
+    {
+      "slug": "claude-agent-sdk",
+      "label": "Claude Agent SDK"
+    },
+    {
+      "slug": "claude-agent-sdk-documentation",
+      "label": "Claude Agent SDK Documentation"
+    },
+    {
+      "slug": "context-injection",
+      "label": "Context Injection"
+    },
+    {
+      "slug": "http-protocol",
+      "label": "HTTP Protocol"
+    },
+    {
+      "slug": "json-rpc-2-0",
+      "label": "JSON-RPC 2.0"
+    },
+    {
+      "slug": "json-rpc-2-0-specification",
+      "label": "JSON-RPC 2.0 Specification"
+    },
+    {
+      "slug": "json-rpc-protocol",
+      "label": "JSON-RPC Protocol"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "json-schema-validator",
+      "label": "JSON Schema Validator"
+    },
+    {
+      "slug": "lang-chain-agent-framework",
+      "label": "LangChain Agent Framework"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "mcp-client",
+      "label": "MCP Client"
+    },
+    {
+      "slug": "mcp-prompt",
+      "label": "MCP Prompt"
+    },
+    {
+      "slug": "mcp-resource",
+      "label": "MCP Resource"
+    },
+    {
+      "slug": "mcp-server",
+      "label": "MCP Server"
+    },
+    {
+      "slug": "mcp-tool",
+      "label": "MCP Tool"
+    },
+    {
+      "slug": "mcp-transport-layer",
+      "label": "MCP Transport Layer"
+    },
+    {
+      "slug": "model-context-protocol-git-hub",
+      "label": "Model Context Protocol GitHub"
+    },
+    {
+      "slug": "multi-agent-orchestration",
+      "label": "Multi-Agent Orchestration"
+    },
+    {
+      "slug": "oauth-2-0-resource-server",
+      "label": "OAuth 2.0 Resource Server"
+    },
+    {
+      "slug": "python-mcp-sdk",
+      "label": "Python MCP SDK"
+    },
+    {
+      "slug": "ru-vector-memory",
+      "label": "RuVector Memory"
+    },
+    {
+      "slug": "sandboxed-capability-discovery",
+      "label": "Sandboxed Capability Discovery"
+    },
+    {
+      "slug": "stdio-transport",
+      "label": "STDIO Transport"
+    },
+    {
+      "slug": "type-script-sdk",
+      "label": "TypeScript SDK"
+    },
+    {
+      "slug": "web-socket-protocol",
+      "label": "WebSocket Protocol"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "ProtocolLayer"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

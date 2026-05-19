@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855",
+  "title": "Inference Hardware",
+  "slug": "inference-hardware",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:inference-hardware",
+  "domain": "artificial-intelligence",
+  "definition": "Inference Hardware is a concept within the ai domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:real-time-ai",
+        "label": "Real-Time AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "real-time-ai",
+      "label": "Real-Time AI"
+    },
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fpga",
+      "label": "FPGA"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "neuromorphic-chips",
+      "label": "Neuromorphic Chips"
+    },
+    {
+      "slug": "tensor-processing-unit",
+      "label": "Tensor Processing Unit"
+    }
+  ]
+}

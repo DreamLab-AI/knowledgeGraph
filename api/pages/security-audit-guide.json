@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:3bc869e37c328b22479f949bccd62fde1d76176392152b8de20dd29ee5ce8612",
+  "title": "security audit guide",
+  "slug": "security-audit-guide",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:security-audit-guide",
+  "domain": "spatial-computing",
+  "definition": "A comprehensive procedural guide establishing standards, methodologies, and frameworks for conducting security audits of [[Blockchain|blockchain systems]], [[SmartContract|smart contracts]], and [[Cryptography|cryptographic infrastructure]]. This guide enables systematic vulnerability assessment and security control evaluation.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "SmartContract"
+    }
+  ],
+  "backlinks": []
+}

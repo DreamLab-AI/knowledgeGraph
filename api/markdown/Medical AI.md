@@ -1,21 +1,319 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#MedicalAi
-uri:: urn:visionclaw:concept:artificial-intelligence:medical-ai
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:medical-ai
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Medical AI
-content-hash:: sha256-12-e06b6a9a995a
-legacy-term-id:: AI-7012
-status:: active
-maturity:: complete
-quality-score:: 0.50
-authority-score:: 0.92
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#MedicalAi
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:medical-ai
 public:: true
+
+# Medical AI
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8",
+  "@type": "Page",
+  "vc:slug": "medical-ai",
+  "title": "Medical AI",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging-analysis",
+      "vc:label": "Medical Imaging Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalized-medicine",
+      "vc:label": "Personalized Medicine"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:clinical-decision-support",
+      "vc:label": "Clinical Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:healthcare-analytics",
+      "vc:label": "Healthcare Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:healthcare-technology",
+      "vc:label": "Healthcare Technology"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:medical-diagnosis-ai",
+      "vc:label": "Medical Diagnosis AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:medical-imaging-ai",
+      "vc:label": "Medical Imaging AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:precision-medicine",
+      "vc:label": "Precision Medicine"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.92"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-e06b6a9a995a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#MedicalAi"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-7012"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Medical AI"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:medical-ai"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:medical-ai"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:medical-ai",
+  "@type": "OntologyClass",
+  "label": "Medical AI",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:healthcare-technology",
+      "vc:label": "Healthcare Technology"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "complete",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, and clinical decision support. As of August 2024, approximately 950 FDA-approved AI/ML medical devices exist, with the global AI healthcare market valued at USD 26.6 billion (2024) projected to reach USD 187 billion by 2030 at ~38.5% CAGR.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.92",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging-analysis",
+      "vc:label": "Medical Imaging Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalized-medicine",
+      "vc:label": "Personalized Medicine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:clinical-decision-support",
+      "vc:label": "Clinical Decision Support"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:medical-ai:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Drug Discovery]]",
+      "resolved": "urn:visionflow:linked:drug-discovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Medical Imaging Analysis]]",
+      "resolved": "urn:visionflow:linked:medical-imaging-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Personalized Medicine]]",
+      "resolved": "urn:visionflow:linked:personalized-medicine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Uncertainty Quantification]]",
+      "resolved": "urn:visionflow:linked:uncertainty-quantification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Clinical Decision Support]]",
+      "resolved": "urn:visionflow:owl:class:clinical-decision-support",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Explainable AI]]",
+      "resolved": "urn:visionflow:owl:class:explainable-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Federated Learning]]",
+      "resolved": "urn:visionflow:owl:class:federated-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Healthcare Analytics]]",
+      "resolved": "urn:visionflow:owl:class:healthcare-analytics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Healthcare Technology]]",
+      "resolved": "urn:visionflow:owl:class:healthcare-technology",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Medical Diagnosis AI]]",
+      "resolved": "urn:visionflow:owl:class:medical-diagnosis-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Medical Imaging AI]]",
+      "resolved": "urn:visionflow:owl:class:medical-imaging-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Precision Medicine]]",
+      "resolved": "urn:visionflow:owl:class:precision-medicine",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, and clinical decision support. As of August 2024, approximately 950 FDA-approved AI/ML medical devices exist, with the global AI healthcare market valued at USD 26.6 billion (2024) projected to reach USD 187 billion by 2030 at ~38.5% CAGR.

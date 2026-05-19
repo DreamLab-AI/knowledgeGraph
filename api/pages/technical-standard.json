@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f",
+  "title": "Technical Standard",
+  "slug": "technical-standard",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:technical-standard",
+  "domain": "infrastructure",
+  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global trade in technology systems.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:specification",
+      "label": "Specification"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:best-practices",
+        "label": "Best Practices"
+      },
+      {
+        "id": "urn:visionflow:linked:technical-requirements",
+        "label": "Technical Requirements"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "best-practices",
+      "label": "Best Practices"
+    },
+    {
+      "slug": "core-technology",
+      "label": "Core Technology"
+    },
+    {
+      "slug": "specification",
+      "label": "Specification"
+    },
+    {
+      "slug": "technical-requirements",
+      "label": "Technical Requirements"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar-standard",
+      "label": "Avatar Standard"
+    },
+    {
+      "slug": "benchmark-standard",
+      "label": "Benchmark Standard"
+    },
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    },
+    {
+      "slug": "calibration-standards",
+      "label": "Calibration Standards"
+    },
+    {
+      "slug": "interface-standards",
+      "label": "Interface Standards"
+    },
+    {
+      "slug": "interoperability-standard",
+      "label": "Interoperability Standard"
+    },
+    {
+      "slug": "iso-standards",
+      "label": "Iso Standards"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:f656ae3f8e12948598b99f3413530adc14e59e2e54462124afd0e9aa68346491",
+  "title": "Conditional Random Field",
+  "slug": "conditional-random-field",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:conditional-random-field",
+  "domain": "artificial-intelligence",
+  "definition": "CRF - probabilistic model for sequence labeling.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

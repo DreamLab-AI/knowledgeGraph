@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:264542fff6f99151a6d4adaf1ac9fafdd17ad9b5fc496db6fc6451e4b54340a4",
+  "title": "Symbolic Object Library",
+  "slug": "symbolic-object-library",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:symbolic-object-library",
+  "domain": "spatial-computing",
+  "definition": "A collection or repository of standardized 3D digital objects, assets, and components designed for use across metaverse platforms, including models, textures, animations, and interactive elements that can be shared and reused in virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    }
+  ]
+}

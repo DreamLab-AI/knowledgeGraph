@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:dab66eff8c463563acf237b00eab005ecd178dab85e5b7e0fff453d26d0abeb6",
+  "title": "Property Schema",
+  "slug": "property-schema",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:property-schema",
+  "domain": "infrastructure",
+  "definition": "PropertySchema is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

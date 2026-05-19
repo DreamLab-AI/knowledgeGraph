@@ -1,0 +1,40 @@
+{
+  "id": "urn:visionflow:page:982e3596a34d5a0f936d3b5015d38c516bf45be2b779c9d2121409540ccf883b",
+  "title": "Privacy Mechanism",
+  "slug": "privacy-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:privacy-mechanism",
+  "domain": "artificial-intelligence",
+  "definition": "Privacy Mechanism is a concept within the ai domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "user-privacy-control",
+      "label": "User Privacy Control"
+    }
+  ]
+}

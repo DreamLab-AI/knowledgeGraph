@@ -1,0 +1,155 @@
+{
+  "id": "urn:visionflow:page:ba7da9030d6b367f7a284c0060ead343a657f481aac30c288b28a2acb566e79a",
+  "title": "Edge Network",
+  "slug": "edge-network",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:edge-network",
+  "domain": "spatial-computing",
+  "definition": "Distributed set of computing nodes providing local processing close to users to improve performance, reduce latency, and optimize bandwidth for immersive applications.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:load-distribution-service",
+        "label": "Load Distribution Service"
+      },
+      {
+        "id": "urn:visionflow:linked:network-management-system",
+        "label": "Network Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:orchestration-layer",
+        "label": "Orchestration Layer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:connectivity-fabric",
+        "label": "Connectivity Fabric"
+      },
+      {
+        "id": "urn:visionflow:linked:coordination-protocol",
+        "label": "Coordination Protocol"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      },
+      {
+        "id": "urn:visionflow:linked:distributed-processing",
+        "label": "Distributed Processing"
+      },
+      {
+        "id": "urn:visionflow:linked:latency-reduction",
+        "label": "Latency Reduction"
+      },
+      {
+        "id": "urn:visionflow:linked:regional-compute",
+        "label": "Regional Compute"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bandwidth-optimization",
+      "label": "Bandwidth Optimization"
+    },
+    {
+      "slug": "connectivity-fabric",
+      "label": "Connectivity Fabric"
+    },
+    {
+      "slug": "coordination-protocol",
+      "label": "Coordination Protocol"
+    },
+    {
+      "slug": "distributed-processing",
+      "label": "Distributed Processing"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "ieee-p2048-3",
+      "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "latency-reduction",
+      "label": "Latency Reduction"
+    },
+    {
+      "slug": "load-distribution-service",
+      "label": "Load Distribution Service"
+    },
+    {
+      "slug": "network-management-system",
+      "label": "Network Management System"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "Orchestration Layer"
+    },
+    {
+      "slug": "regional-compute",
+      "label": "Regional Compute"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    }
+  ]
+}

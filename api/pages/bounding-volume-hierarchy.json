@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c",
+  "title": "Bounding Volume Hierarchy",
+  "slug": "bounding-volume-hierarchy",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:bounding-volume-hierarchy",
+  "domain": "spatial-computing",
+  "definition": "A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "id": "urn:visionflow:linked:traversal-algorithm",
+        "label": "Traversal Algorithm"
+      },
+      {
+        "id": "urn:visionflow:linked:tree-construction",
+        "label": "Tree Construction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:visionflow:owl:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bounding-volume",
+      "label": "Bounding Volume"
+    },
+    {
+      "slug": "frustum-culling",
+      "label": "Frustum Culling"
+    },
+    {
+      "slug": "traversal-algorithm",
+      "label": "Traversal Algorithm"
+    },
+    {
+      "slug": "tree-construction",
+      "label": "Tree Construction"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

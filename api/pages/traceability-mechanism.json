@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf",
+  "title": "Traceability Mechanism",
+  "slug": "traceability-mechanism",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:traceability-mechanism",
+  "domain": "artificial-intelligence",
+  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and r",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:ai-governance-principle",
+      "label": "AI Governance Principle"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance-principle",
+      "label": "AI Governance Principle"
+    },
+    {
+      "slug": "change-management",
+      "label": "Change Management"
+    },
+    {
+      "slug": "decision-logging",
+      "label": "Decision Logging"
+    },
+    {
+      "slug": "ieee-2801-recommended-practice",
+      "label": "IEEE 2801 Recommended Practice"
+    },
+    {
+      "slug": "iso-iec-23053-ai-framework",
+      "label": "ISO/IEC 23053 AI Framework"
+    },
+    {
+      "slug": "lineage-tracking",
+      "label": "Lineage Tracking"
+    },
+    {
+      "slug": "model-versioning",
+      "label": "Model Versioning"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "tamper-evident-logging",
+      "label": "Tamper-Evident Logging"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ],
+  "backlinks": []
+}

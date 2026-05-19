@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:1a8703848228c8681838b5d44b10abfd2af093d3c54bfc36b922733bacd39214",
+  "title": "Continued Pre Training",
+  "slug": "continued-pre-training",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:continued-pre-training",
+  "domain": "artificial-intelligence",
+  "definition": "An intermediate training phase where a pre-trained model undergoes additional pre-training on domain-specific or task-relevant data before fine-tuning. This technique bridges general pre-training and task-specific fine-tuning, adapting model knowledge to particular domains whilst maintaining broad capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

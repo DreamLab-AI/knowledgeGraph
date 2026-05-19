@@ -1,20 +1,591 @@
-iri:: http://narrativegoldmine.com/ontology#SovereignKeyset
-uri:: urn:visionclaw:concept:blockchain:sovereign-keyset
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:sovereign-keyset
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Sovereign Keyset
-content-hash:: sha256-12-a7b8c9dae0f1
-status:: complete
-maturity:: established
-quality-score:: 0.86
-authority-score:: 0.88
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#SovereignKeyset
+legacy_uri:: urn:visionclaw:concept:blockchain:sovereign-keyset
 public:: true
+
+# Sovereign Keyset
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63",
+  "@type": "Page",
+  "vc:slug": "sovereign-keyset",
+  "title": "Sovereign Keyset",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adr-013",
+      "vc:label": "ADR-013"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340",
+      "vc:label": "BIP-340"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "vc:label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "vc:label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "vc:label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-keypair",
+      "vc:label": "Blockchain Keypair"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-issuance",
+      "vc:label": "Credential Issuance"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptography-domain",
+      "vc:label": "CryptographyDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-trust",
+      "vc:label": "Decentralised Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-security-module-optional",
+      "vc:label": "Hardware Security Module (optional)"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-domain",
+      "vc:label": "IdentityDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:key-rotation-policy",
+      "vc:label": "Key Rotation Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:key-storage",
+      "vc:label": "Key Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-signing",
+      "vc:label": "Message Signing"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-relay",
+      "vc:label": "Nostr Relay"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-relay",
+      "vc:label": "Nostr Relay"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-authentication",
+      "vc:label": "Peer Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:schnorr-signature-scheme",
+      "vc:label": "Schnorr Signature Scheme"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1",
+      "vc:label": "secp256k1"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1-elliptic-curve",
+      "vc:label": "secp256k1 Elliptic Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-random-number-generator",
+      "vc:label": "Secure Random Number Generator"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-pod-storage",
+      "vc:label": "Solid Pod Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:trustless-peer-communication",
+      "vc:label": "Trustless Peer Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did-core",
+      "vc:label": "W3C DID Core"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:federation-surface",
+      "vc:label": "Federation Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-layer",
+      "vc:label": "InfrastructureLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:private-key",
+      "vc:label": "Private Key"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-key",
+      "vc:label": "Public Key"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:schnorr-signature",
+      "vc:label": "Schnorr Signature"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:security-layer",
+      "vc:label": "SecurityLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
+      "vc:label": "Self-Sovereign Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "vc:label": "Verifiable Credential Surface"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.88"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a7b8c9dae0f1"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#SovereignKeyset"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Sovereign Keyset"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.86"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:sovereign-keyset"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:sovereign-keyset"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:sovereign-keyset",
+  "@type": "OntologyClass",
+  "label": "Sovereign Keyset",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "vc:label": "Public Key Infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authenticate [[Nostr Relay|Nostr relay]] messages, and establish [[Trustless Peer Communication|trustless peer-to-peer trust]] without delegating key management to a central authority.",
+  "vc:qualityScore": {
+    "@value": "0.86",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.88",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "vc:label": "BIP-340 Schnorr Keypair"
+    },
+    {
+      "@id": "urn:visionflow:linked:key-rotation-policy",
+      "vc:label": "Key Rotation Policy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:private-key",
+      "vc:label": "Private Key"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:public-key",
+      "vc:label": "Public Key"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:hardware-security-module-optional",
+      "vc:label": "Hardware Security Module (optional)"
+    },
+    {
+      "@id": "urn:visionflow:linked:key-storage",
+      "vc:label": "Key Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1-elliptic-curve",
+      "vc:label": "secp256k1 Elliptic Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:secure-random-number-generator",
+      "vc:label": "Secure Random Number Generator"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:credential-issuance",
+      "vc:label": "Credential Issuance"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-trust",
+      "vc:label": "Decentralised Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-signing",
+      "vc:label": "Message Signing"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-authentication",
+      "vc:label": "Peer Authentication"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
+      "vc:label": "Self-Sovereign Identity"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:bip-340",
+      "vc:label": "BIP-340"
+    },
+    {
+      "@id": "urn:visionflow:linked:secp256k1",
+      "vc:label": "secp256k1"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3-c-did-core",
+      "vc:label": "W3C DID Core"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:blockchain-keypair",
+      "vc:label": "Blockchain Keypair"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:schnorr-signature",
+      "vc:label": "Schnorr Signature"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:sovereign-keyset:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ADR-013]]",
+      "resolved": "urn:visionflow:linked:adr-013",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340]]",
+      "resolved": "urn:visionflow:linked:bip-340",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340 Schnorr Keypair]]",
+      "resolved": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]",
+      "resolved": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BIP-340 Schnorr Keypair|Schnorr keypair]]",
+      "resolved": "urn:visionflow:linked:bip-340-schnorr-keypair",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain Keypair]]",
+      "resolved": "urn:visionflow:linked:blockchain-keypair",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Credential Issuance]]",
+      "resolved": "urn:visionflow:linked:credential-issuance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[CryptographyDomain]]",
+      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decentralised Trust]]",
+      "resolved": "urn:visionflow:linked:decentralised-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hardware Security Module (optional)]]",
+      "resolved": "urn:visionflow:linked:hardware-security-module-optional",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IdentityDomain]]",
+      "resolved": "urn:visionflow:linked:identity-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Key Rotation Policy]]",
+      "resolved": "urn:visionflow:linked:key-rotation-policy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Key Storage]]",
+      "resolved": "urn:visionflow:linked:key-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Message Signing]]",
+      "resolved": "urn:visionflow:linked:message-signing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Relay|Nostr relay]]",
+      "resolved": "urn:visionflow:linked:nostr-relay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Relay|Nostr relays]]",
+      "resolved": "urn:visionflow:linked:nostr-relay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Peer Authentication]]",
+      "resolved": "urn:visionflow:linked:peer-authentication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Schnorr Signature Scheme]]",
+      "resolved": "urn:visionflow:linked:schnorr-signature-scheme",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[secp256k1]]",
+      "resolved": "urn:visionflow:linked:secp256k1",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[secp256k1 Elliptic Curve]]",
+      "resolved": "urn:visionflow:linked:secp256k1-elliptic-curve",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Secure Random Number Generator]]",
+      "resolved": "urn:visionflow:linked:secure-random-number-generator",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Pod Storage|Solid pod]]",
+      "resolved": "urn:visionflow:linked:solid-pod-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trustless Peer Communication|trustless peer-to-peer trust]]",
+      "resolved": "urn:visionflow:linked:trustless-peer-communication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[W3C DID Core]]",
+      "resolved": "urn:visionflow:linked:w3-c-did-core",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity|canonical DID]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DID Nostr Identity|did:nostr]]",
+      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Federation Surface|federation surfaces]]",
+      "resolved": "urn:visionflow:owl:class:federation-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureLayer]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Private Key]]",
+      "resolved": "urn:visionflow:owl:class:private-key",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Public Key]]",
+      "resolved": "urn:visionflow:owl:class:public-key",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Schnorr Signature]]",
+      "resolved": "urn:visionflow:owl:class:schnorr-signature",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[SecurityLayer]]",
+      "resolved": "urn:visionflow:owl:class:security-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Self-Sovereign Identity]]",
+      "resolved": "urn:visionflow:owl:class:self-sovereign-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Smart Contract|smart contracts]]",
+      "resolved": "urn:visionflow:owl:class:smart-contract",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Verifiable Credential Surface|verifiable credentials]]",
+      "resolved": "urn:visionflow:owl:class:verifiable-credential-surface",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container|VisionClaw agent]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container|VisionClaw agents]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authenticate [[Nostr Relay|Nostr relay]] messages, and establish [[Trustless Peer Communication|trustless peer-to-peer trust]] without delegating key management to a central authority.

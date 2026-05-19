@@ -1,0 +1,548 @@
+{
+  "id": "urn:visionflow:page:ea379837704fe48ba05f345fc92be8613d1db2435fc49d44c15be249b0298c6a",
+  "title": "Music and Audio",
+  "slug": "music-and-audio",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:music-and-audio",
+  "domain": "artificial-intelligence",
+  "definition": "Music and Audio (AI-driven) is a domain within artificial intelligence encompassing the generation, transformation, classification, and production of musical audio using deep generative models, large language models conditioned on audio, latent diffusion architectures, and audio-language foundation models. The field spans text-to-music synthesis \u2014 converting natural language prompts into polyphonic, instrument-rich audio tracks \u2014 melodic and lyrical generation using autoregressive language model decoders operating over discrete audio token sequences, audio-event generation beyond music (foley, ambient soundscapes, environmental sound), and AI-augmented professional music production including intelligent mastering, mixing assistance, stem separation, adaptive equalisation, and DAW-integrated AI instruments. Key commercial systems include Suno v3 and v4 (2024-2026) producing commercial-quality full-song output at scale with verse-chorus-bridge structure and intelligible vocals, Udio (launched April 2024) delivering high-fidelity multi-genre synthesis with iterative extension capabilities, Stability AI's Stable Audio 2.0 generating up to three minutes of CD-quality stereo audio via la",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "id": "urn:visionflow:linked:creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:multimodal-ai",
+      "label": "Multimodal AI"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:audio-diffusion",
+        "label": "Audio Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:audio-watermarking",
+        "label": "Audio Watermarking"
+      },
+      {
+        "id": "urn:visionflow:linked:clap-embeddings",
+        "label": "CLAP Embeddings"
+      },
+      {
+        "id": "urn:visionflow:linked:lyric-generation",
+        "label": "Lyric Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:melodic-generation",
+        "label": "Melodic Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:music-language-model",
+        "label": "Music Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-audio-codec",
+        "label": "Neural Audio Codec"
+      },
+      {
+        "id": "urn:visionflow:linked:stem-separation",
+        "label": "Stem Separation"
+      },
+      {
+        "id": "urn:visionflow:linked:text-to-music-synthesis",
+        "label": "Text-to-Music Synthesis"
+      },
+      {
+        "id": "urn:visionflow:linked:vocal-synthesis",
+        "label": "Vocal Synthesis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:clap-audio-embeddings",
+        "label": "CLAP Audio Embeddings"
+      },
+      {
+        "id": "urn:visionflow:linked:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:large-scale-audio-datasets",
+        "label": "Large-Scale Audio Datasets"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-audio-codec",
+        "label": "Neural Audio Codec"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-music",
+        "label": "Adaptive Music"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-mastering",
+        "label": "AI Mastering"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-music-production",
+        "label": "AI Music Production"
+      },
+      {
+        "id": "urn:visionflow:linked:film-scoring-automation",
+        "label": "Film Scoring Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:game-audio-procedural-generation",
+        "label": "Game Audio Procedural Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:personalised-soundtracks",
+        "label": "Personalised Soundtracks"
+      },
+      {
+        "id": "urn:visionflow:linked:podcast-music-generation",
+        "label": "Podcast Music Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:royalty-free-music-generation",
+        "label": "Royalty-Free Music Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      },
+      {
+        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:visionflow:linked:contrastive-language-audio-pre-training",
+        "label": "Contrastive Language Audio Pre-training"
+      },
+      {
+        "id": "urn:visionflow:linked:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:visionflow:linked:residual-vector-quantisation",
+        "label": "Residual Vector Quantisation"
+      },
+      {
+        "id": "urn:visionflow:linked:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adaptive-music",
+      "label": "Adaptive Music"
+    },
+    {
+      "slug": "advertising",
+      "label": "Advertising"
+    },
+    {
+      "slug": "ai-mastering",
+      "label": "AI Mastering"
+    },
+    {
+      "slug": "ai-music-production",
+      "label": "AI Music Production"
+    },
+    {
+      "slug": "audio-diffusion",
+      "label": "Audio Diffusion"
+    },
+    {
+      "slug": "audio-seal-watermarking",
+      "label": "AudioSeal Watermarking"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-signal-processing-domain",
+      "label": "AudioSignalProcessingDomain"
+    },
+    {
+      "slug": "audio-watermarking",
+      "label": "Audio Watermarking"
+    },
+    {
+      "slug": "autoregressive-decoding",
+      "label": "Autoregressive Decoding"
+    },
+    {
+      "slug": "c2-pa-audio-standard",
+      "label": "C2PA Audio Standard"
+    },
+    {
+      "slug": "clap",
+      "label": "CLAP"
+    },
+    {
+      "slug": "clap-audio-embeddings",
+      "label": "CLAP Audio Embeddings"
+    },
+    {
+      "slug": "clap-embeddings",
+      "label": "CLAP Embeddings"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "contrastive-language-audio-pre-training",
+      "label": "Contrastive Language Audio Pre-training"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-aidomain",
+      "label": "CreativeAIDomain"
+    },
+    {
+      "slug": "dac-codec",
+      "label": "DAC Codec"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "digital-audio-workstation",
+      "label": "Digital Audio Workstation"
+    },
+    {
+      "slug": "en-codec",
+      "label": "EnCodec"
+    },
+    {
+      "slug": "film-and-television",
+      "label": "Film and Television"
+    },
+    {
+      "slug": "film-scoring-automation",
+      "label": "Film Scoring Automation"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "game-audio-procedural-generation",
+      "label": "Game Audio Procedural Generation"
+    },
+    {
+      "slug": "generative-aidomain",
+      "label": "GenerativeAIDomain"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "human-performance-capture",
+      "label": "Human Performance Capture"
+    },
+    {
+      "slug": "large-scale-audio-datasets",
+      "label": "Large-Scale Audio Datasets"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "lyric-generation",
+      "label": "Lyric Generation"
+    },
+    {
+      "slug": "melodic-generation",
+      "label": "Melodic Generation"
+    },
+    {
+      "slug": "midi",
+      "label": "MIDI"
+    },
+    {
+      "slug": "midi-sequencing",
+      "label": "MIDI Sequencing"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "mu-lan",
+      "label": "MuLan"
+    },
+    {
+      "slug": "music-language-model",
+      "label": "Music Language Model"
+    },
+    {
+      "slug": "music-production",
+      "label": "Music Production"
+    },
+    {
+      "slug": "neural-audio-codec",
+      "label": "Neural Audio Codec"
+    },
+    {
+      "slug": "personalised-soundtracks",
+      "label": "Personalised Soundtracks"
+    },
+    {
+      "slug": "podcast-music-generation",
+      "label": "Podcast Music Generation"
+    },
+    {
+      "slug": "podcast-production",
+      "label": "Podcast Production"
+    },
+    {
+      "slug": "residual-vector-quantisation",
+      "label": "Residual Vector Quantisation"
+    },
+    {
+      "slug": "riaa-copyright-framework",
+      "label": "RIAA Copyright Framework"
+    },
+    {
+      "slug": "royalty-free-music-generation",
+      "label": "Royalty-Free Music Generation"
+    },
+    {
+      "slug": "sample-libraries",
+      "label": "Sample Libraries"
+    },
+    {
+      "slug": "sound-stream",
+      "label": "SoundStream"
+    },
+    {
+      "slug": "spectrogram-diffusion",
+      "label": "Spectrogram Diffusion"
+    },
+    {
+      "slug": "stem-separation",
+      "label": "Stem Separation"
+    },
+    {
+      "slug": "suno",
+      "label": "Suno"
+    },
+    {
+      "slug": "synth-id-audio",
+      "label": "SynthID Audio"
+    },
+    {
+      "slug": "t5-text-encoder",
+      "label": "T5 Text Encoder"
+    },
+    {
+      "slug": "text-to-music-synthesis",
+      "label": "Text-to-Music Synthesis"
+    },
+    {
+      "slug": "traditional-music-composition",
+      "label": "Traditional Music Composition"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "video-games",
+      "label": "Video Games"
+    },
+    {
+      "slug": "vocal-synthesis",
+      "label": "Vocal Synthesis"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "label": "Advice for developing GenAI"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ]
+}

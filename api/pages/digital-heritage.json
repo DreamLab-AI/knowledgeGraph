@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:3a4c229455919bafb5c15ce887790f64c2256904acdf452bec8cb3d3deb7ec30",
+  "title": "Digital Heritage",
+  "slug": "digital-heritage",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-heritage",
+  "domain": "spatial-computing",
+  "definition": "Digital Heritage is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "archaeological-site-reconstruction",
+      "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "ritual-artifact",
+      "label": "Ritual Artifact"
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "id": "urn:visionflow:page:78ce869aaf1d9d671be99663d529d76cd45a69f2376f25e4835f899e867dd48e",
+  "title": "Predictive Maintenance",
+  "slug": "predictive-maintenance",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:predictive-maintenance",
+  "domain": "industrial-ai",
+  "definition": "[[Predictive Maintenance]] (PdM) is a condition-based maintenance strategy that uses continuous or periodic monitoring of physical asset health signals\u2014vibration, temperature, acoustic emission, current draw, oil particle count, ultrasound, and corrosion metrics\u2014combined with machine learning inference to forecast Remaining Useful Life (RUL) and schedule targeted maintenance interventions precisely when degradation trajectories indicate imminent failure, eliminating both reactive breakdown costs and the over-maintenance waste of time-interval schedules. Core technical pillars include: (1) **IIoT sensor integration** \u2014 wireless and wired condition monitoring nodes (Yokogawa Sushi Sensor WS100 Bluetooth Low Energy, Augury Halo vibration+temperature+magnetic+ultrasound MEMS sensors, SKF IMx series, Emerson AMS 6500 ATG) delivering 10 kHz\u201350 kHz vibration streams or compressed feature vectors via MQTT/OPC-UA to edge gateways then cloud historians; (2) **signal processing** \u2014 Fast Fourier Transform (FFT) converting raw acceleration time-series into frequency spectra revealing bearing defect frequencies (BPFI, BPFO, BSF, FTF derivable from bearing geometry and shaft speed), envelope anal",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:asset-health-management",
+      "label": "Asset Health Management"
+    },
+    {
+      "id": "urn:visionflow:linked:condition-based-maintenance",
+      "label": "Condition-Based Maintenance"
+    },
+    {
+      "id": "urn:visionflow:linked:industrial-io-t",
+      "label": "Industrial IoT"
+    },
+    {
+      "id": "urn:visionflow:linked:maintenance-strategy",
+      "label": "Maintenance Strategy"
+    },
+    {
+      "id": "urn:visionflow:owl:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:cmms-integration",
+        "label": "CMMS Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:fault-classification",
+        "label": "Fault Classification"
+      },
+      {
+        "id": "urn:visionflow:linked:health-index",
+        "label": "Health Index"
+      },
+      {
+        "id": "urn:visionflow:linked:iio-t-sensors",
+        "label": "IIoT Sensors"
+      },
+      {
+        "id": "urn:visionflow:linked:remaining-useful-life-estimation",
+        "label": "Remaining Useful Life Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:vibration-analysis",
+        "label": "Vibration Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "id": "urn:visionflow:linked:time-series-analysis",
+        "label": "Time Series Analysis"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:asset-life-extension",
+        "label": "Asset Life Extension"
+      },
+      {
+        "id": "urn:visionflow:linked:maintenance-cost-optimisation",
+        "label": "Maintenance Cost Optimisation"
+      },
+      {
+        "id": "urn:visionflow:linked:operational-reliability",
+        "label": "Operational Reliability"
+      },
+      {
+        "id": "urn:visionflow:linked:safety-assurance",
+        "label": "Safety Assurance"
+      },
+      {
+        "id": "urn:visionflow:linked:unplanned-downtime-reduction",
+        "label": "Unplanned Downtime Reduction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:visionflow:linked:envelope-analysis",
+        "label": "Envelope Analysis"
+      },
+      {
+        "id": "urn:visionflow:linked:fft",
+        "label": "FFT"
+      },
+      {
+        "id": "urn:visionflow:linked:gradient-boosting",
+        "label": "Gradient Boosting"
+      },
+      {
+        "id": "urn:visionflow:linked:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:visionflow:owl:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aerospace-mro",
+      "label": "Aerospace MRO"
+    },
+    {
+      "slug": "analytics-layer",
+      "label": "AnalyticsLayer"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "asset-health-management",
+      "label": "Asset Health Management"
+    },
+    {
+      "slug": "asset-life-extension",
+      "label": "Asset Life Extension"
+    },
+    {
+      "slug": "asset-management-domain",
+      "label": "AssetManagementDomain"
+    },
+    {
+      "slug": "c-mapss-dataset",
+      "label": "C-MAPSS Dataset"
+    },
+    {
+      "slug": "cmms-integration",
+      "label": "CMMS Integration"
+    },
+    {
+      "slug": "condition-based-maintenance",
+      "label": "Condition-Based Maintenance"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "EdgeComputingLayer"
+    },
+    {
+      "slug": "enterprise-integration-layer",
+      "label": "EnterpriseIntegrationLayer"
+    },
+    {
+      "slug": "envelope-analysis",
+      "label": "Envelope Analysis"
+    },
+    {
+      "slug": "fault-classification",
+      "label": "Fault Classification"
+    },
+    {
+      "slug": "fft",
+      "label": "FFT"
+    },
+    {
+      "slug": "gradient-boosting",
+      "label": "Gradient Boosting"
+    },
+    {
+      "slug": "health-index",
+      "label": "Health Index"
+    },
+    {
+      "slug": "ibm-maximo",
+      "label": "IBM Maximo"
+    },
+    {
+      "slug": "iec-61499",
+      "label": "IEC 61499"
+    },
+    {
+      "slug": "ieee-1451",
+      "label": "IEEE 1451"
+    },
+    {
+      "slug": "iio-t-sensors",
+      "label": "IIoT Sensors"
+    },
+    {
+      "slug": "iio-tdomain",
+      "label": "IIoTDomain"
+    },
+    {
+      "slug": "industrial-aidomain",
+      "label": "IndustrialAIDomain"
+    },
+    {
+      "slug": "industrial-internet-of-things",
+      "label": "Industrial Internet of Things"
+    },
+    {
+      "slug": "industrial-io-t",
+      "label": "Industrial IoT"
+    },
+    {
+      "slug": "iso-10816",
+      "label": "ISO 10816"
+    },
+    {
+      "slug": "iso-13374",
+      "label": "ISO 13374"
+    },
+    {
+      "slug": "iso-13379",
+      "label": "ISO 13379"
+    },
+    {
+      "slug": "iso-20816",
+      "label": "ISO 20816"
+    },
+    {
+      "slug": "iso-55000",
+      "label": "ISO 55000"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
+      "slug": "maintenance-cost-optimisation",
+      "label": "Maintenance Cost Optimisation"
+    },
+    {
+      "slug": "maintenance-strategy",
+      "label": "Maintenance Strategy"
+    },
+    {
+      "slug": "manufacturing-quality-control",
+      "label": "Manufacturing Quality Control"
+    },
+    {
+      "slug": "mqtt",
+      "label": "MQTT"
+    },
+    {
+      "slug": "non-destructive-evaluation",
+      "label": "Non-Destructive Evaluation"
+    },
+    {
+      "slug": "oil-and-gas-operations",
+      "label": "Oil and Gas Operations"
+    },
+    {
+      "slug": "opc-ua",
+      "label": "OPC-UA"
+    },
+    {
+      "slug": "operational-reliability",
+      "label": "Operational Reliability"
+    },
+    {
+      "slug": "power-generation",
+      "label": "Power Generation"
+    },
+    {
+      "slug": "preventive-maintenance",
+      "label": "Preventive Maintenance"
+    },
+    {
+      "slug": "prognostics-and-health-management",
+      "label": "Prognostics and Health Management"
+    },
+    {
+      "slug": "railway-maintenance",
+      "label": "Railway Maintenance"
+    },
+    {
+      "slug": "reactive-maintenance",
+      "label": "Reactive Maintenance"
+    },
+    {
+      "slug": "reliability-engineering",
+      "label": "Reliability Engineering"
+    },
+    {
+      "slug": "remaining-useful-life-estimation",
+      "label": "Remaining Useful Life Estimation"
+    },
+    {
+      "slug": "safety-assurance",
+      "label": "Safety Assurance"
+    },
+    {
+      "slug": "sensor-data",
+      "label": "Sensor Data"
+    },
+    {
+      "slug": "sensor-layer",
+      "label": "SensorLayer"
+    },
+    {
+      "slug": "siemens-xcelerator",
+      "label": "Siemens Xcelerator"
+    },
+    {
+      "slug": "time-based-maintenance",
+      "label": "Time-Based Maintenance"
+    },
+    {
+      "slug": "time-series-analysis",
+      "label": "Time Series Analysis"
+    },
+    {
+      "slug": "unplanned-downtime-reduction",
+      "label": "Unplanned Downtime Reduction"
+    },
+    {
+      "slug": "vibration-analysis",
+      "label": "Vibration Analysis"
+    },
+    {
+      "slug": "wind-energy",
+      "label": "Wind Energy"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    },
+    {
+      "slug": "digital-twin-construction",
+      "label": "Digital Twin Construction"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "Io T Sensors"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

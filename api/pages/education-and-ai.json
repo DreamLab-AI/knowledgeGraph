@@ -1,0 +1,748 @@
+{
+  "id": "urn:visionflow:page:e456bdc5232210bb0ffe1acd742d9b3d7fe32a4fde31f365dc9d2ef20f44486b",
+  "title": "Education and AI",
+  "slug": "education-and-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:education-and-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Education and AI (Artificial Intelligence in Education, AIED) denotes the deployment of machine-learning systems\u2014intelligent tutoring systems (ITS) such as Carnegie Learning Mathia at 600K+ US students across 1,500+ districts, ALEKS at 25M+ cumulative users since 1996, Knewton (acquired Wiley 2019 for ~$17M after raising $157M), Squirrel AI at 5M+ K-12 Chinese students across 4,000+ centres in 700+ cities; conversational AI tutors built on large language models such as Khan Academy Khanmigo (GPT-4) at 1M+ students across 90+ districts free to US/Canada teachers from August 2024, Synthesis Tutor ($35M Series A 2024, Andreessen Horowitz) at $35/month family plan, Mathpresso QANDA at 90M+ users across 50+ countries, Brilliant.org at 10M+ active learners, MagicSchool AI at 4M+ educators across 6,000+ US schools with 80+ teacher tools at $99/teacher/year; generative-AI assistants (ChatGPT, Claude, Gemini) used by 26% of US teens 13-17 for schoolwork per Pew Research 2024 (up from 13% in 2023) and 70% of teens for any generative AI per Common Sense Media 2024; AI grading and integrity tooling (Gradescope at 2,600+ universities processing 100M+ submissions reducing grading time 70%, Turni",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:applied-ai",
+      "label": "Applied AI"
+    },
+    {
+      "id": "urn:visionflow:linked:conversational-ai-applications",
+      "label": "Conversational AI Applications"
+    },
+    {
+      "id": "urn:visionflow:linked:human-centred-ai",
+      "label": "Human-Centred AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-detection",
+        "label": "AI Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-literacy-curriculum",
+        "label": "AI Literacy Curriculum"
+      },
+      {
+        "id": "urn:visionflow:linked:ai-tutor",
+        "label": "AI Tutor"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-grading",
+        "label": "Automated Grading"
+      },
+      {
+        "id": "urn:visionflow:linked:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:visionflow:linked:knowledge-tracing",
+        "label": "Knowledge Tracing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:learning-analytics",
+        "label": "Learning Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:assessment-framework",
+        "label": "Assessment Framework"
+      },
+      {
+        "id": "urn:visionflow:linked:curriculum",
+        "label": "Curriculum"
+      },
+      {
+        "id": "urn:visionflow:linked:pedagogical-theory",
+        "label": "Pedagogical Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:safeguarding-policy",
+        "label": "Safeguarding Policy"
+      },
+      {
+        "id": "urn:visionflow:linked:student-data",
+        "label": "Student Data"
+      },
+      {
+        "id": "urn:visionflow:linked:teacher-oversight",
+        "label": "Teacher Oversight"
+      },
+      {
+        "id": "urn:visionflow:owl:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:accessibility-provisioning",
+        "label": "Accessibility Provisioning"
+      },
+      {
+        "id": "urn:visionflow:linked:differentiated-instruction",
+        "label": "Differentiated Instruction"
+      },
+      {
+        "id": "urn:visionflow:linked:formative-feedback",
+        "label": "Formative Feedback"
+      },
+      {
+        "id": "urn:visionflow:linked:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:scalable-tutoring",
+        "label": "Scalable Tutoring"
+      },
+      {
+        "id": "urn:visionflow:linked:teacher-time-recovery",
+        "label": "Teacher Time Recovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      },
+      {
+        "id": "urn:visionflow:linked:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "id": "urn:visionflow:linked:retrieval-practice",
+        "label": "Retrieval Practice"
+      },
+      {
+        "id": "urn:visionflow:linked:rubric-based-assessment",
+        "label": "Rubric-Based Assessment"
+      },
+      {
+        "id": "urn:visionflow:linked:socratic-dialogue",
+        "label": "Socratic Dialogue"
+      },
+      {
+        "id": "urn:visionflow:linked:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "id": "urn:visionflow:linked:worked-example-generation",
+        "label": "Worked Example Generation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accessibility-provisioning",
+      "label": "Accessibility Provisioning"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "ai-detection",
+      "label": "AI Detection"
+    },
+    {
+      "slug": "ai-literacy",
+      "label": "AI Literacy"
+    },
+    {
+      "slug": "ai-literacy-curriculum",
+      "label": "AI Literacy Curriculum"
+    },
+    {
+      "slug": "ai-tutor",
+      "label": "AI Tutor"
+    },
+    {
+      "slug": "aleks",
+      "label": "ALEKS"
+    },
+    {
+      "slug": "anderson-corbett-koedinger-1995-cognitive-tutors",
+      "label": "Anderson Corbett Koedinger 1995 Cognitive Tutors"
+    },
+    {
+      "slug": "applied-ai",
+      "label": "Applied AI"
+    },
+    {
+      "slug": "applied-aidomain",
+      "label": "AppliedAIDomain"
+    },
+    {
+      "slug": "assessment-framework",
+      "label": "Assessment Framework"
+    },
+    {
+      "slug": "assessment-integrity",
+      "label": "Assessment Integrity"
+    },
+    {
+      "slug": "audrey-watters",
+      "label": "Audrey Watters"
+    },
+    {
+      "slug": "automated-grading",
+      "label": "Automated Grading"
+    },
+    {
+      "slug": "bastani-et-al-2024-gen-ai-harm-learning-wharton",
+      "label": "Bastani et al 2024 GenAI Harm Learning Wharton"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "bbc-bitesize",
+      "label": "BBC Bitesize"
+    },
+    {
+      "slug": "behaviourist-drill-and-practice",
+      "label": "Behaviourist Drill And Practice"
+    },
+    {
+      "slug": "ben-williamson",
+      "label": "Ben Williamson"
+    },
+    {
+      "slug": "bloom-1984-2-sigma-problem",
+      "label": "Bloom 1984 2-Sigma Problem"
+    },
+    {
+      "slug": "carnegie-learning-mathia",
+      "label": "Carnegie Learning Mathia"
+    },
+    {
+      "slug": "century-tech",
+      "label": "Century Tech"
+    },
+    {
+      "slug": "chalkbeat-2023-nyc-chat-gpt-ban-rescinded",
+      "label": "Chalkbeat 2023 NYC ChatGPT Ban Rescinded"
+    },
+    {
+      "slug": "chi-et-al-2001-learning-from-human-tutoring",
+      "label": "Chi et al 2001 Learning From Human Tutoring"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "common-sense-media-2024-dawn-of-ai-era",
+      "label": "Common Sense Media 2024 Dawn of AI Era"
+    },
+    {
+      "slug": "constructivism",
+      "label": "Constructivism"
+    },
+    {
+      "slug": "conversational-ai-applications",
+      "label": "Conversational AI Applications"
+    },
+    {
+      "slug": "corbett-and-anderson-1995-knowledge-tracing",
+      "label": "Corbett & Anderson 1995 Knowledge Tracing"
+    },
+    {
+      "slug": "curriculum",
+      "label": "Curriculum"
+    },
+    {
+      "slug": "datafication",
+      "label": "Datafication"
+    },
+    {
+      "slug": "df-e-generative-ai-guidance",
+      "label": "DfE Generative AI Guidance"
+    },
+    {
+      "slug": "differentiated-instruction",
+      "label": "Differentiated Instruction"
+    },
+    {
+      "slug": "duolingo-max",
+      "label": "Duolingo Max"
+    },
+    {
+      "slug": "e-learning-lms",
+      "label": "E-Learning LMS"
+    },
+    {
+      "slug": "education-domain",
+      "label": "EducationDomain"
+    },
+    {
+      "slug": "educational-psychology",
+      "label": "Educational Psychology"
+    },
+    {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
+      "slug": "eu-ai-act-annex-iii",
+      "label": "EU AI Act Annex III"
+    },
+    {
+      "slug": "falmagne-doignon-1985-knowledge-spaces",
+      "label": "Falmagne Doignon 1985 Knowledge Spaces"
+    },
+    {
+      "slug": "formative-feedback",
+      "label": "Formative Feedback"
+    },
+    {
+      "slug": "gradescope",
+      "label": "Gradescope"
+    },
+    {
+      "slug": "greater-manchester-ai-pilot",
+      "label": "Greater Manchester AI Pilot"
+    },
+    {
+      "slug": "holmes-and-tuomi-2022-state-of-gen-ai-education",
+      "label": "Holmes & Tuomi 2022 State of GenAI Education"
+    },
+    {
+      "slug": "holmes-bialik-fadel-2023-ai-in-education",
+      "label": "Holmes Bialik Fadel 2023 AI in Education"
+    },
+    {
+      "slug": "human-centred-ai",
+      "label": "Human-Centred AI"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "HumanComputerInteractionDomain"
+    },
+    {
+      "slug": "ib-ai-policy",
+      "label": "IB AI Policy"
+    },
+    {
+      "slug": "ib-chat-gpt-statement-2023",
+      "label": "IB ChatGPT Statement 2023"
+    },
+    {
+      "slug": "intelligent-tutoring-system",
+      "label": "Intelligent Tutoring System"
+    },
+    {
+      "slug": "item-response-theory",
+      "label": "Item Response Theory"
+    },
+    {
+      "slug": "kasneci-et-al-2023-chat-gpt-for-good",
+      "label": "Kasneci et al 2023 ChatGPT for Good"
+    },
+    {
+      "slug": "khan-2024-brave-new-words",
+      "label": "Khan 2024 Brave New Words"
+    },
+    {
+      "slug": "khan-academy",
+      "label": "Khan Academy"
+    },
+    {
+      "slug": "khanmigo",
+      "label": "Khanmigo"
+    },
+    {
+      "slug": "knowledge-tracing",
+      "label": "Knowledge Tracing"
+    },
+    {
+      "slug": "kulik-and-fletcher-2016-its-meta-analysis",
+      "label": "Kulik & Fletcher 2016 ITS Meta-Analysis"
+    },
+    {
+      "slug": "la-times-2024-lausd-ed-all-here-collapse",
+      "label": "LA Times 2024 LAUSD Ed AllHere Collapse"
+    },
+    {
+      "slug": "learning-sciences",
+      "label": "Learning Sciences"
+    },
+    {
+      "slug": "lehmann-et-al-2024-chat-gpt-classroom",
+      "label": "Lehmann et al 2024 ChatGPT Classroom"
+    },
+    {
+      "slug": "magic-school",
+      "label": "MagicSchool"
+    },
+    {
+      "slug": "manolis-mavrikis",
+      "label": "Manolis Mavrikis"
+    },
+    {
+      "slug": "mastery-learning",
+      "label": "Mastery Learning"
+    },
+    {
+      "slug": "media-city-uk-salford",
+      "label": "MediaCityUK Salford"
+    },
+    {
+      "slug": "microsoft-immersive-reader",
+      "label": "Microsoft Immersive Reader"
+    },
+    {
+      "slug": "mollick-2024-co-intelligence",
+      "label": "Mollick 2024 Co-Intelligence"
+    },
+    {
+      "slug": "mollick-and-mollick-ssrn-4391243-ai-teaching-strategies",
+      "label": "Mollick & Mollick SSRN 4391243 AI Teaching Strategies"
+    },
+    {
+      "slug": "mollick-and-mollick-ssrn-4802463-instructors-as-innovators",
+      "label": "Mollick & Mollick SSRN 4802463 Instructors as Innovators"
+    },
+    {
+      "slug": "mollick-one-useful-thing-substack",
+      "label": "Mollick One Useful Thing Substack"
+    },
+    {
+      "slug": "moocs-without-ai",
+      "label": "MOOCs Without AI"
+    },
+    {
+      "slug": "mutlu-cukurova",
+      "label": "Mutlu Cukurova"
+    },
+    {
+      "slug": "neil-selwyn",
+      "label": "Neil Selwyn"
+    },
+    {
+      "slug": "oak-national-academy",
+      "label": "Oak National Academy"
+    },
+    {
+      "slug": "oecd-2025-ai-literacy-pisa-2029",
+      "label": "OECD 2025 AI Literacy PISA 2029"
+    },
+    {
+      "slug": "oecd-ai-literacy-framework",
+      "label": "OECD AI Literacy Framework"
+    },
+    {
+      "slug": "ofqual-ai-guidance",
+      "label": "Ofqual AI Guidance"
+    },
+    {
+      "slug": "ofqual-ai-guidance-2024",
+      "label": "Ofqual AI Guidance 2024"
+    },
+    {
+      "slug": "pedagogical-layer",
+      "label": "PedagogicalLayer"
+    },
+    {
+      "slug": "pedagogical-theory",
+      "label": "Pedagogical Theory"
+    },
+    {
+      "slug": "personalised-learning",
+      "label": "Personalised Learning"
+    },
+    {
+      "slug": "pew-research-2024-teens-chat-gpt-schoolwork",
+      "label": "Pew Research 2024 Teens ChatGPT Schoolwork"
+    },
+    {
+      "slug": "retrieval-practice",
+      "label": "Retrieval Practice"
+    },
+    {
+      "slug": "roediger-and-karpicke-2006-test-enhanced-learning",
+      "label": "Roediger & Karpicke 2006 Test-Enhanced Learning"
+    },
+    {
+      "slug": "rosemary-luckin",
+      "label": "Rosemary Luckin"
+    },
+    {
+      "slug": "rubric-based-assessment",
+      "label": "Rubric-Based Assessment"
+    },
+    {
+      "slug": "safeguarding-policy",
+      "label": "Safeguarding Policy"
+    },
+    {
+      "slug": "sal-khan",
+      "label": "Sal Khan"
+    },
+    {
+      "slug": "scalable-tutoring",
+      "label": "Scalable Tutoring"
+    },
+    {
+      "slug": "selwyn-2019-should-robots-replace-teachers",
+      "label": "Selwyn 2019 Should Robots Replace Teachers"
+    },
+    {
+      "slug": "socio-technical-layer",
+      "label": "SocioTechnicalLayer"
+    },
+    {
+      "slug": "socratic-dialogue",
+      "label": "Socratic Dialogue"
+    },
+    {
+      "slug": "spaced-repetition",
+      "label": "Spaced Repetition"
+    },
+    {
+      "slug": "squirrel-ai",
+      "label": "Squirrel AI"
+    },
+    {
+      "slug": "student-data",
+      "label": "Student Data"
+    },
+    {
+      "slug": "synthesis-tutor",
+      "label": "Synthesis Tutor"
+    },
+    {
+      "slug": "tassomai",
+      "label": "Tassomai"
+    },
+    {
+      "slug": "teacher-oversight",
+      "label": "Teacher Oversight"
+    },
+    {
+      "slug": "teacher-time-recovery",
+      "label": "Teacher Time Recovery"
+    },
+    {
+      "slug": "traditional-classroom-instruction",
+      "label": "Traditional Classroom Instruction"
+    },
+    {
+      "slug": "turnitin-ai-detection",
+      "label": "Turnitin AI Detection"
+    },
+    {
+      "slug": "ucl-knowledge-lab",
+      "label": "UCL Knowledge Lab"
+    },
+    {
+      "slug": "uk-df-e-2025-generative-ai-in-education",
+      "label": "UK DfE 2025 Generative AI in Education"
+    },
+    {
+      "slug": "unesco-2024-ai-competency-framework",
+      "label": "UNESCO 2024 AI Competency Framework"
+    },
+    {
+      "slug": "unesco-ai-education-recommendation",
+      "label": "UNESCO AI Education Recommendation"
+    },
+    {
+      "slug": "van-lehn-2011-its-effectiveness",
+      "label": "VanLehn 2011 ITS Effectiveness"
+    },
+    {
+      "slug": "watters-2021-teaching-machines",
+      "label": "Watters 2021 Teaching Machines"
+    },
+    {
+      "slug": "wayne-holmes",
+      "label": "Wayne Holmes"
+    },
+    {
+      "slug": "williamson-and-eynon-2020",
+      "label": "Williamson & Eynon 2020"
+    },
+    {
+      "slug": "worked-example-generation",
+      "label": "Worked Example Generation"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-analytics",
+      "label": "Learning Analytics"
+    },
+    {
+      "slug": "perplexity",
+      "label": "Perplexity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "adversarial-testing",
+      "label": "Adversarial Testing"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "calculating-empires",
+      "label": "Calculating Empires"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "equity",
+      "label": "Equity"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "norbert-wiener",
+      "label": "Norbert Wiener"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "people",
+      "label": "PEOPLE"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "self-training",
+      "label": "Self Training"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "label": "State of the art in AI"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

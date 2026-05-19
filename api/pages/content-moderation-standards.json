@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4",
+  "title": "Content Moderation Standards",
+  "slug": "content-moderation-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:content-moderation-standards",
+  "domain": "spatial-computing",
+  "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:platform-governance",
+      "label": "Platform Governance"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:ai-detection-systems",
+        "label": "AI Detection Systems"
+      },
+      {
+        "id": "urn:visionflow:linked:human-moderators",
+        "label": "Human Moderators"
+      },
+      {
+        "id": "urn:visionflow:linked:moderation-tools",
+        "label": "Moderation Tools"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:community-trust",
+        "label": "Community Trust"
+      },
+      {
+        "id": "urn:visionflow:linked:harassment-prevention",
+        "label": "Harassment Prevention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:user-safety",
+        "label": "User Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-detection-systems",
+      "label": "AI Detection Systems"
+    },
+    {
+      "slug": "community-trust",
+      "label": "Community Trust"
+    },
+    {
+      "slug": "harassment-prevention",
+      "label": "Harassment Prevention"
+    },
+    {
+      "slug": "human-moderators",
+      "label": "Human Moderators"
+    },
+    {
+      "slug": "moderation-tools",
+      "label": "Moderation Tools"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "platform-governance",
+      "label": "Platform Governance"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "user-safety",
+      "label": "User Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    }
+  ]
+}

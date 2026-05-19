@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:88c0c2c9b99e5ed7984bd09c196eadd4175bd20f08552b20482a8169485fab50",
+  "title": "rb 0100 safety integrity level",
+  "slug": "rb-0100-safety-integrity-level",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0100-safety-integrity-level",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,24 +1,465 @@
-iri:: http://narrativegoldmine.com/spatial-computing#DigitalTwin
-uri:: urn:visionclaw:concept:spatial-computing:digital-twin
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:digital-twin
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Digital Twin
-content-hash:: sha256-12-a4a397e0834c
-legacy-term-id:: TC-9012
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#DigitalTwin
+legacy_uri:: urn:visionclaw:concept:spatial-computing:digital-twin
 public:: true
+
+# Digital Twin
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804",
+  "@type": "Page",
+  "vc:slug": "digital-twin",
+  "title": "Digital Twin",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:3-d-visualisation",
+      "vc:label": "3D Visualisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-design",
+      "vc:label": "Collaborative Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-interface",
+      "vc:label": "Control Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-aggregation",
+      "vc:label": "Data Aggregation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee",
+      "vc:label": "IEEE"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-internet-consortium",
+      "vc:label": "Industrial Internet Consortium"
+    },
+    {
+      "@id": "urn:visionflow:linked:io-t-infrastructure",
+      "vc:label": "IoT Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:io-t-sensor-data",
+      "vc:label": "IoT Sensor Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-23247",
+      "vc:label": "ISO 23247"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-optimisation",
+      "vc:label": "Process Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-synchronisation",
+      "vc:label": "Real-Time Synchronisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-monitoring",
+      "vc:label": "Remote Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-model",
+      "vc:label": "3D Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:simulation-engine",
+      "vc:label": "Simulation Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-commissioning",
+      "vc:label": "Virtual Commissioning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-replica",
+      "vc:label": "Virtual Replica"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-a4a397e0834c"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#DigitalTwin"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-9012"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Digital Twin"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-twin"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:digital-twin"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:digital-twin",
+  "@type": "OntologyClass",
+  "label": "Digital Twin",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin-technology",
+      "vc:label": "Digital Twin Technology"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "DigitalTwin is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:control-interface",
+      "vc:label": "Control Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:io-t-sensor-data",
+      "vc:label": "IoT Sensor Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-synchronisation",
+      "vc:label": "Real-Time Synchronisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:3-d-model",
+      "vc:label": "3D Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:simulation-engine",
+      "vc:label": "Simulation Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-replica",
+      "vc:label": "Virtual Replica"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:3-d-visualisation",
+      "vc:label": "3D Visualisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-aggregation",
+      "vc:label": "Data Aggregation"
+    },
+    {
+      "@id": "urn:visionflow:linked:io-t-infrastructure",
+      "vc:label": "IoT Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:collaborative-design",
+      "vc:label": "Collaborative Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-optimisation",
+      "vc:label": "Process Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-monitoring",
+      "vc:label": "Remote Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-commissioning",
+      "vc:label": "Virtual Commissioning"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[3D Visualisation]]",
+      "resolved": "urn:visionflow:linked:3-d-visualisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collaborative Design]]",
+      "resolved": "urn:visionflow:linked:collaborative-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Control Interface]]",
+      "resolved": "urn:visionflow:linked:control-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Aggregation]]",
+      "resolved": "urn:visionflow:linked:data-aggregation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE]]",
+      "resolved": "urn:visionflow:linked:ieee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Industrial Internet Consortium]]",
+      "resolved": "urn:visionflow:linked:industrial-internet-consortium",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IoT Infrastructure]]",
+      "resolved": "urn:visionflow:linked:io-t-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IoT Sensor Data]]",
+      "resolved": "urn:visionflow:linked:io-t-sensor-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO 23247]]",
+      "resolved": "urn:visionflow:linked:iso-23247",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Process Optimisation]]",
+      "resolved": "urn:visionflow:linked:process-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Synchronisation]]",
+      "resolved": "urn:visionflow:linked:real-time-synchronisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Remote Monitoring]]",
+      "resolved": "urn:visionflow:linked:remote-monitoring",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[3D Model]]",
+      "resolved": "urn:visionflow:owl:class:3-d-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Maintenance]]",
+      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Simulation Engine]]",
+      "resolved": "urn:visionflow:owl:class:simulation-engine",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Commissioning]]",
+      "resolved": "urn:visionflow:owl:class:virtual-commissioning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Virtual Replica]]",
+      "resolved": "urn:visionflow:owl:class:virtual-replica",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - DigitalTwin is a concept within the ngm domain.

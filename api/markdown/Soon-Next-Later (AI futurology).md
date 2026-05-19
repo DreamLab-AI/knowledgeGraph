@@ -1,20 +1,266 @@
-iri:: http://narrativegoldmine.com/ontology#SoonNextLaterAIFuturology
-uri:: urn:visionclaw:concept:artificial-intelligence:soon-next-later-ai-futurology
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:soon-next-later-ai-futurology
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Soon-Next-Later (AI futurology)
-content-hash:: sha256-12-448aae1f62b8
-status:: stub
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#SoonNextLaterAIFuturology
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:soon-next-later-ai-futurology
 public:: true
+
+# Soon-Next-Later (AI futurology)
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79",
+  "@type": "Page",
+  "vc:slug": "soon-next-later-ai-futurology",
+  "title": "Soon-Next-Later (AI futurology)",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:collaborative",
+      "vc:label": "collaborative"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cyber-security-and-cryptography",
+      "vc:label": "Cyber Security and Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:death-of-the-internet",
+      "vc:label": "Death of the Internet"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diagrams-as-code",
+      "vc:label": "Diagrams as Code"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributed-identity",
+      "vc:label": "Distributed Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "vc:label": "Metaverse and Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:politics-law-privacy",
+      "vc:label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sam-hammond",
+      "vc:label": "Sam Hammond"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "vc:label": "Social contract and jobs"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-448aae1f62b8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#SoonNextLaterAIFuturology"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Soon-Next-Later (AI futurology)"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:soon-next-later-ai-futurology"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:soon-next-later-ai-futurology"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:soon-next-later-ai-futurology",
+  "@type": "OntologyClass",
+  "label": "Soon-Next-Later (AI futurology)",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Soon-Next-Later (AI futurology) is a concept within the ngm domain.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:soon-next-later-ai-futurology:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[collaborative]]",
+      "resolved": "urn:visionflow:owl:class:collaborative",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cyber Security and Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cyber-security-and-cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Death of the Internet]]",
+      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Diagrams as Code]]",
+      "resolved": "urn:visionflow:owl:class:diagrams-as-code",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Identity]]",
+      "resolved": "urn:visionflow:owl:class:distributed-identity",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Education and AI]]",
+      "resolved": "urn:visionflow:owl:class:education-and-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Metaverse and Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Politics, Law, Privacy]]",
+      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Sam Hammond]]",
+      "resolved": "urn:visionflow:owl:class:sam-hammond",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Social contract and jobs]]",
+      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Soon-Next-Later (AI futurology) is a concept within the ngm domain.
@@ -148,7 +394,7 @@ public:: true
   - ## Generic Business Efficiency and Productivity Predictions
   - ## Consumer Services and Personal Use
   - ## Healthcare and Medicine
-  - ## [[Cyber security and Cryptography]] and Fraud Prevention
+  - ## [[Cyber Security and Cryptography]] and Fraud Prevention
   - ## AI in [[Education and AI]]
   - ## Innovation and Creative Industries
   - ## Information and Data Analysis

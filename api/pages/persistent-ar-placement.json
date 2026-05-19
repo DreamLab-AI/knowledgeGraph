@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:48788c7e971f2ea23d44fabf603ef3221a07c01c83f5fcb5792705ee6c0dd2df",
+  "title": "Persistent AR Placement",
+  "slug": "persistent-ar-placement",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:persistent-ar-placement",
+  "domain": "spatial-computing",
+  "definition": "The capability to anchor augmented reality content at specific real-world locations that persists across sessions and devices, using cloud-stored spatial anchors and environmental mapping to enable shared, location-based AR experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:augmented-reality",
+      "label": "Augmented Reality"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:shared-ar-experiences",
+        "label": "Shared AR Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "shared-ar-experiences",
+      "label": "Shared AR Experiences"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial Anchors"
+    }
+  ]
+}

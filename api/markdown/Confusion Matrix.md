@@ -1,24 +1,383 @@
-iri:: http://narrativegoldmine.com/spatial-computing#ConfusionMatrix
-uri:: urn:visionclaw:concept:spatial-computing:confusion-matrix
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:confusion-matrix
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Confusion Matrix
-content-hash:: sha256-12-6814adbf97f7
-legacy-term-id:: AI-0111
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#ConfusionMatrix
+legacy_uri:: urn:visionclaw:concept:spatial-computing:confusion-matrix
 public:: true
+
+# Confusion Matrix
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2c86d4a62d8e8f4622a2028d65c1fd48c748633d8ba05ae68128347daf53fed4",
+  "@type": "Page",
+  "vc:slug": "confusion-matrix",
+  "title": "Confusion Matrix",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:error-analysis",
+      "vc:label": "Error analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-assessment",
+      "vc:label": "fairness assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:false-negative",
+      "vc:label": "False Negative"
+    },
+    {
+      "@id": "urn:visionflow:linked:false-positive",
+      "vc:label": "False Positive"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25024",
+      "vc:label": "ISO/IEC 25024"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25059",
+      "vc:label": "ISO/IEC 25059"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-debugging",
+      "vc:label": "model debugging"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensitivity",
+      "vc:label": "Sensitivity"
+    },
+    {
+      "@id": "urn:visionflow:linked:specificity",
+      "vc:label": "Specificity"
+    },
+    {
+      "@id": "urn:visionflow:linked:true-negative",
+      "vc:label": "True Negative"
+    },
+    {
+      "@id": "urn:visionflow:linked:true-positive",
+      "vc:label": "True Positive"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accuracy",
+      "vc:label": "Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:f1-score",
+      "vc:label": "F1 Score"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:precision",
+      "vc:label": "Precision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recall",
+      "vc:label": "Recall"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:roc-curve",
+      "vc:label": "ROC Curve"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6814adbf97f7"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#ConfusionMatrix"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0111"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Confusion Matrix"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:confusion-matrix"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:confusion-matrix"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2c86d4a62d8e8f4622a2028d65c1fd48c748633d8ba05ae68128347daf53fed4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:confusion-matrix",
+  "@type": "OntologyClass",
+  "label": "Confusion Matrix",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2c86d4a62d8e8f4622a2028d65c1fd48c748633d8ba05ae68128347daf53fed4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2c86d4a62d8e8f4622a2028d65c1fd48c748633d8ba05ae68128347daf53fed4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:error-analysis",
+      "vc:label": "Error analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-assessment",
+      "vc:label": "fairness assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-debugging",
+      "vc:label": "model debugging"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:confusion-matrix:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2c86d4a62d8e8f4622a2028d65c1fd48c748633d8ba05ae68128347daf53fed4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Error analysis]]",
+      "resolved": "urn:visionflow:linked:error-analysis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[fairness assessment]]",
+      "resolved": "urn:visionflow:linked:fairness-assessment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[False Negative]]",
+      "resolved": "urn:visionflow:linked:false-negative",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[False Positive]]",
+      "resolved": "urn:visionflow:linked:false-positive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25024]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25024",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25059]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25059",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[model debugging]]",
+      "resolved": "urn:visionflow:linked:model-debugging",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI RMF]]",
+      "resolved": "urn:visionflow:linked:nist-ai-rmf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Sensitivity]]",
+      "resolved": "urn:visionflow:linked:sensitivity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Specificity]]",
+      "resolved": "urn:visionflow:linked:specificity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[True Negative]]",
+      "resolved": "urn:visionflow:linked:true-negative",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[True Positive]]",
+      "resolved": "urn:visionflow:linked:true-positive",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accuracy]]",
+      "resolved": "urn:visionflow:owl:class:accuracy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:owl:class:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[F1 Score]]",
+      "resolved": "urn:visionflow:owl:class:f1-score",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Precision]]",
+      "resolved": "urn:visionflow:owl:class:precision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Recall]]",
+      "resolved": "urn:visionflow:owl:class:recall",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ROC Curve]]",
+      "resolved": "urn:visionflow:owl:class:roc-curve",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2c86d4a62d8e8f4622a2028d65c1fd48c748633d8ba05ae68128347daf53fed4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.

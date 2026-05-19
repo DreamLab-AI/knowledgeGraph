@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:09d75f0e036a58c5121ffabaf6d5e6567788a987f963c1652e864451bfe2ace8",
+  "title": "VERIFICATION REPORT",
+  "slug": "verification-report",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:verification-report",
+  "domain": "spatial-computing",
+  "definition": "A verification report documents systematic assessment results confirming that [[OntologyAssets|ontologies]], [[KnowledgeGraph|knowledge graphs]], and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures. These reports provide transparent documentation of [[DataQualityMetrics|data quality assessments]], [[SchemaCompliance|schema validation]], [[SemanticConsistency|semantic consistency]] checks, and testing results covering [[RDFTriples|RDF triples]], [[OWLAxioms|OWL axioms]], and [[DataIntegrity|data integrity]]. Comprehensive verification reporting with detailed defect categorisation, remediation progress tracking, and [[QualityMetrics|quality metrics]] enables stakeholders to assess production readiness and compliance with [[OntologyStandards|ontology standards]] before deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.4,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-integrity",
+      "label": "DataIntegrity"
+    },
+    {
+      "slug": "data-quality-metrics",
+      "label": "DataQualityMetrics"
+    },
+    {
+      "slug": "ontology-assets",
+      "label": "OntologyAssets"
+    },
+    {
+      "slug": "ontology-standards",
+      "label": "OntologyStandards"
+    },
+    {
+      "slug": "owlaxioms",
+      "label": "OWLAxioms"
+    },
+    {
+      "slug": "quality-metrics",
+      "label": "QualityMetrics"
+    },
+    {
+      "slug": "rdftriples",
+      "label": "RDFTriples"
+    },
+    {
+      "slug": "schema-compliance",
+      "label": "SchemaCompliance"
+    },
+    {
+      "slug": "semantic-consistency",
+      "label": "SemanticConsistency"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "KnowledgeGraph"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

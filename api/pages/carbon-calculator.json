@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e",
+  "title": "Carbon Calculator",
+  "slug": "carbon-calculator",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-calculator",
+  "domain": "spatial-computing",
+  "definition": "A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon footprint.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:sustainability-tool",
+      "label": "Sustainability Tool"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:activity-data",
+        "label": "Activity Data"
+      },
+      {
+        "id": "urn:visionflow:linked:calculation-methodology",
+        "label": "Calculation Methodology"
+      },
+      {
+        "id": "urn:visionflow:linked:emission-factors",
+        "label": "Emission Factors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:emissions-estimation",
+        "label": "Emissions Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:footprint-awareness",
+        "label": "Footprint Awareness"
+      },
+      {
+        "id": "urn:visionflow:linked:reduction-planning",
+        "label": "Reduction Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "calculation-methodology",
+      "label": "Calculation Methodology"
+    },
+    {
+      "slug": "emission-factors",
+      "label": "Emission Factors"
+    },
+    {
+      "slug": "emissions-estimation",
+      "label": "Emissions Estimation"
+    },
+    {
+      "slug": "footprint-awareness",
+      "label": "Footprint Awareness"
+    },
+    {
+      "slug": "reduction-planning",
+      "label": "Reduction Planning"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "sustainability-tool",
+      "label": "Sustainability Tool"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "environmental-impact-metric",
+      "label": "Environmental Impact Metric"
+    }
+  ]
+}

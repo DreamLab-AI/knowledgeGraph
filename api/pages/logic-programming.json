@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:acdc529f68e13fafe528dd88b57a3c33bb7f0bbba44022f74abf9d5abed3d38e",
+  "title": "Logic Programming",
+  "slug": "logic-programming",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:logic-programming",
+  "domain": "artificial-intelligence",
+  "definition": "Programming paradigm based on formal logic, where programs are expressed as sets of logical statements and inference rules.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:programming-paradigm",
+      "label": "Programming Paradigm"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "academic-ai-research",
+      "label": "Academic AI Research"
+    },
+    {
+      "slug": "prolog",
+      "label": "Prolog"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:e3197ae973580dfdd9121d59a5f13012506e8feba5fc403ca73079b52ca8635d",
+  "title": "Regulatory Standards",
+  "slug": "regulatory-standards",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:regulatory-standards",
+  "domain": "spatial-computing",
+  "definition": "Legal and compliance frameworks governing metaverse and extended reality platforms, including data protection (GDPR), artificial intelligence (EU AI Act), digital services (DSA), and accessibility requirements that ensure user rights protection in immersive environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-protection",
+        "label": "User Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "user-protection",
+      "label": "User Protection"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "ethics-and-law-layer",
+      "label": "Ethics & Law Layer"
+    }
+  ]
+}

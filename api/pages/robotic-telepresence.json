@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7",
+  "title": "Robotic Telepresence",
+  "slug": "robotic-telepresence",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:robotic-telepresence",
+  "domain": "distributed-collaboration",
+  "definition": "\"The projection of human presence into remote physical locations through mobile robotic platforms equipped with cameras, displays, microphones, and speakers, enabling remote operators to navigate environments, interact with people, and manipulate objects as if physically present, bridging virtual and physical collaboration modalities.\"",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "label": "AutonomousNavigation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:remote-office-attendance",
+        "label": "RemoteOfficeAttendance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "remote-office-attendance",
+      "label": "RemoteOfficeAttendance"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-201-teleoperation-systems",
+      "label": "TELE-201-teleoperation-systems"
+    },
+    {
+      "slug": "tele-202-remote-manipulation",
+      "label": "TELE-202-remote-manipulation"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "AutonomousNavigation"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "HumanRobotInteraction"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "teleoperation-systems",
+      "label": "Teleoperation Systems"
+    }
+  ]
+}

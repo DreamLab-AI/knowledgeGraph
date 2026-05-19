@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:d7ad5d6b8d34dd5de14fc19211e1da62f0cbabb4fb6c5ee5899d71d0ed22edf1",
+  "title": "Digital Tax Compliance Node",
+  "slug": "digital-tax-compliance-node",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-tax-compliance-node",
+  "domain": "artificial-intelligence",
+  "definition": "An automated virtual system that calculates, reports, and ensures tax compliance for digital transactions across multiple jurisdictions in real-time. bridges-to:: [[Blockchain]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy-infrastructure",
+      "label": "Virtual Economy Infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:jurisdiction-mapping-service",
+        "label": "Jurisdiction Mapping Service"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-reporting-module",
+        "label": "Regulatory Reporting Module"
+      },
+      {
+        "id": "urn:visionflow:linked:tax-calculation-engine",
+        "label": "Tax Calculation Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-monitor",
+        "label": "Transaction Monitor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:identity-verification-system",
+        "label": "Identity Verification System"
+      },
+      {
+        "id": "urn:visionflow:linked:regulatory-database",
+        "label": "Regulatory Database"
+      },
+      {
+        "id": "urn:visionflow:linked:transaction-ledger",
+        "label": "Transaction Ledger"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:audit-trail-generation",
+        "label": "Audit Trail Generation"
+      },
+      {
+        "id": "urn:visionflow:linked:automated-tax-filing",
+        "label": "Automated Tax Filing"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-border-tax-settlement",
+        "label": "Cross-border Tax Settlement"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-compliance",
+        "label": "Real-time Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-trail-generation",
+      "label": "Audit Trail Generation"
+    },
+    {
+      "slug": "automated-tax-filing",
+      "label": "Automated Tax Filing"
+    },
+    {
+      "slug": "cross-border-tax-settlement",
+      "label": "Cross-border Tax Settlement"
+    },
+    {
+      "slug": "eu-dac7",
+      "label": "EU DAC7"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "jurisdiction-mapping-service",
+      "label": "Jurisdiction Mapping Service"
+    },
+    {
+      "slug": "oecd-digital-tax-framework",
+      "label": "OECD Digital Tax Framework"
+    },
+    {
+      "slug": "real-time-compliance",
+      "label": "Real-time Compliance"
+    },
+    {
+      "slug": "regulatory-database",
+      "label": "Regulatory Database"
+    },
+    {
+      "slug": "regulatory-reporting-module",
+      "label": "Regulatory Reporting Module"
+    },
+    {
+      "slug": "tax-calculation-engine",
+      "label": "Tax Calculation Engine"
+    },
+    {
+      "slug": "transaction-ledger",
+      "label": "Transaction Ledger"
+    },
+    {
+      "slug": "transaction-monitor",
+      "label": "Transaction Monitor"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "virtual-economy-infrastructure",
+      "label": "Virtual Economy Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

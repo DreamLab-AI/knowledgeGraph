@@ -1,0 +1,178 @@
+{
+  "id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b",
+  "title": "Camera",
+  "slug": "camera",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:camera",
+  "domain": "robotics",
+  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologies (CCD, CMOS, ToF, structured light).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:visual-perception",
+      "label": "VisualPerception"
+    },
+    {
+      "id": "urn:visionflow:owl:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.91,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:camera-calibration",
+        "label": "CameraCalibration"
+      },
+      {
+        "id": "urn:visionflow:linked:image-sensor",
+        "label": "ImageSensor"
+      },
+      {
+        "id": "urn:visionflow:linked:lens",
+        "label": "Lens"
+      },
+      {
+        "id": "urn:visionflow:linked:processing-unit",
+        "label": "ProcessingUnit"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:visual-servoing",
+        "label": "VisualServoing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:3-dreconstruction",
+        "label": "3DReconstruction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:object-detection",
+        "label": "ObjectDetection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:semantic-segmentation",
+        "label": "SemanticSegmentation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "camera-calibration",
+      "label": "CameraCalibration"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "ComputerVisionDomain"
+    },
+    {
+      "slug": "computer-vision-standards",
+      "label": "Computer Vision Standards"
+    },
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "image-sensor",
+      "label": "ImageSensor"
+    },
+    {
+      "slug": "iso-iec",
+      "label": "ISO/IEC"
+    },
+    {
+      "slug": "lens",
+      "label": "Lens"
+    },
+    {
+      "slug": "processing-unit",
+      "label": "ProcessingUnit"
+    },
+    {
+      "slug": "robotics-research",
+      "label": "Robotics Research"
+    },
+    {
+      "slug": "visual-perception",
+      "label": "VisualPerception"
+    },
+    {
+      "slug": "visual-servoing",
+      "label": "VisualServoing"
+    },
+    {
+      "slug": "3-dreconstruction",
+      "label": "3DReconstruction"
+    },
+    {
+      "slug": "object-detection",
+      "label": "ObjectDetection"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "SemanticSegmentation"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "monocular-camera",
+      "label": "Monocular Camera"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "stereo-camera",
+      "label": "Stereo Camera"
+    }
+  ]
+}

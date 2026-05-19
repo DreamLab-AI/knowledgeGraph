@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:2b4a28781e6cb466c62fe344239170062fef2abce7c7caba89653773dd27d670",
+  "title": "Intrinsic Interpretability",
+  "slug": "intrinsic-interpretability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:intrinsic-interpretability",
+  "domain": "artificial-intelligence",
+  "definition": "The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "black-box-model",
+      "label": "Black Box Model"
+    },
+    {
+      "slug": "decision-tree-approximation",
+      "label": "Decision Tree Approximation"
+    },
+    {
+      "slug": "rule-extraction",
+      "label": "Rule Extraction"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "interpretable-ai",
+      "label": "Interpretable AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "model-transparency",
+      "label": "Model Transparency"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "interpretable-ai",
+      "label": "Interpretable AI"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:cdf2691320b6253fe2c1d9a375de71988b04a832fdca1426b967f3d89834ee38",
+  "title": "Avatar Customization",
+  "slug": "avatar-customization",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-customization",
+  "domain": "spatial-computing",
+  "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:digital-personalization",
+      "label": "Digital Personalization"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:asset-libraries",
+        "label": "Asset Libraries"
+      },
+      {
+        "id": "urn:visionflow:linked:customization-tools",
+        "label": "Customization Tools"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-preview",
+        "label": "Real-Time Preview"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:identity-representation",
+        "label": "Identity Representation"
+      },
+      {
+        "id": "urn:visionflow:linked:self-expression",
+        "label": "Self-Expression"
+      },
+      {
+        "id": "urn:visionflow:linked:social-distinction",
+        "label": "Social Distinction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-libraries",
+      "label": "Asset Libraries"
+    },
+    {
+      "slug": "customization-tools",
+      "label": "Customization Tools"
+    },
+    {
+      "slug": "digital-personalization",
+      "label": "Digital Personalization"
+    },
+    {
+      "slug": "identity-representation",
+      "label": "Identity Representation"
+    },
+    {
+      "slug": "real-time-preview",
+      "label": "Real-Time Preview"
+    },
+    {
+      "slug": "self-expression",
+      "label": "Self-Expression"
+    },
+    {
+      "slug": "social-distinction",
+      "label": "Social Distinction"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

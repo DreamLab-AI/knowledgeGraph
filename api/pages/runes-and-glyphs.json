@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d",
+  "title": "Runes and Glyphs",
+  "slug": "runes-and-glyphs",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:runes-and-glyphs",
+  "domain": "infrastructure",
+  "definition": "Runes and Glyphs is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
+      "slug": "runes-and-glyphs",
+      "label": "Runes and Glyphs"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ],
+  "backlinks": []
+}

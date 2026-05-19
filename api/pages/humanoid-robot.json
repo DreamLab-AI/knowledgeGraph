@@ -1,0 +1,460 @@
+{
+  "id": "urn:visionflow:page:5055998803adf4ccb3d395327fd6976892cc45c81c247263e55aee7a8148d3af",
+  "title": "Humanoid Robot",
+  "slug": "humanoid-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:humanoid-robot",
+  "domain": "robotics",
+  "definition": "A humanoid robot is an autonomous or semi-autonomous mechanical system whose overall morphology, kinematic chain, and sensorimotor organisation deliberately mirrors the human body plan: a vertical torso supported on two bipedal legs, bilateral upper limbs terminating in multi-fingered end-effectors, a head-mounted sensory cluster, and a centralised onboard compute stack, collectively enabling the robot to perceive, navigate, and manipulate a world that has been architecturally and ergonomically designed for human anatomy. Unlike wheeled or tracked mobile bases, humanoid robots must continuously solve the under-determined stability problem of bipedal locomotion\u2014balancing an inverted-pendulum-like structure with a high centre of mass on a small support polygon\u2014whilst simultaneously executing dexterous manipulation, perceiving a 3-D environment, and interpreting natural human instructions. This conjunction of simultaneous hard real-time control (joint torque bandwidths of 200-1000 Hz for balance), mid-frequency motion planning (1-50 Hz trajectory generation), and high-latency cognitive inference (0.1-10 Hz neural policy inference) across a single embodied platform represents the defin",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "id": "urn:visionflow:linked:bipedal-robot",
+      "label": "Bipedal Robot"
+    },
+    {
+      "id": "urn:visionflow:linked:embodied-agent",
+      "label": "Embodied Agent"
+    },
+    {
+      "id": "urn:visionflow:owl:class:mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "id": "urn:visionflow:owl:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:bipedal-locomotion",
+        "label": "Bipedal Locomotion"
+      },
+      {
+        "id": "urn:visionflow:linked:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:onboard-compute",
+        "label": "Onboard Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:proprioceptive-sensing",
+        "label": "Proprioceptive Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-system",
+        "label": "Vision System"
+      },
+      {
+        "id": "urn:visionflow:linked:whole-body-control",
+        "label": "Whole-Body Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:bipedal-balance",
+        "label": "Bipedal Balance"
+      },
+      {
+        "id": "urn:visionflow:linked:contact-dynamics",
+        "label": "Contact Dynamics"
+      },
+      {
+        "id": "urn:visionflow:linked:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:elder-care-robotics",
+        "label": "Elder Care Robotics"
+      },
+      {
+        "id": "urn:visionflow:linked:general-purpose-manipulation",
+        "label": "General-Purpose Manipulation"
+      },
+      {
+        "id": "urn:visionflow:linked:hazardous-environment-inspection",
+        "label": "Hazardous Environment Inspection"
+      },
+      {
+        "id": "urn:visionflow:linked:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:visionflow:linked:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:visionflow:linked:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:visionflow:linked:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-language-action-models",
+        "label": "Vision-Language-Action Models"
+      },
+      {
+        "id": "urn:visionflow:linked:whole-body-control",
+        "label": "Whole-Body Control"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "slug": "bipedal-balance",
+      "label": "Bipedal Balance"
+    },
+    {
+      "slug": "bipedal-locomotion",
+      "label": "Bipedal Locomotion"
+    },
+    {
+      "slug": "bipedal-robot",
+      "label": "Bipedal Robot"
+    },
+    {
+      "slug": "black-et-al-2024-pi-zero",
+      "label": "Black et al. 2024 pi-zero"
+    },
+    {
+      "slug": "brohan-et-al-2023-rt-2",
+      "label": "Brohan et al. 2023 RT-2"
+    },
+    {
+      "slug": "cognition-layer",
+      "label": "Cognition Layer"
+    },
+    {
+      "slug": "contact-dynamics",
+      "label": "Contact Dynamics"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "control-systems",
+      "label": "Control Systems"
+    },
+    {
+      "slug": "dexterous-manipulation",
+      "label": "Dexterous Manipulation"
+    },
+    {
+      "slug": "domain-randomisation",
+      "label": "Domain Randomisation"
+    },
+    {
+      "slug": "drone",
+      "label": "Drone"
+    },
+    {
+      "slug": "elder-care-robotics",
+      "label": "Elder Care Robotics"
+    },
+    {
+      "slug": "embodied-agent",
+      "label": "Embodied Agent"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
+      "slug": "general-purpose-manipulation",
+      "label": "General-Purpose Manipulation"
+    },
+    {
+      "slug": "hazardous-environment-inspection",
+      "label": "Hazardous Environment Inspection"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "slug": "iec-61508",
+      "label": "IEC 61508"
+    },
+    {
+      "slug": "industrial-robot-arm",
+      "label": "Industrial Robot Arm"
+    },
+    {
+      "slug": "iso-10218-1",
+      "label": "ISO 10218-1"
+    },
+    {
+      "slug": "iso-10218-1-2011",
+      "label": "ISO 10218-1:2011"
+    },
+    {
+      "slug": "iso-22166",
+      "label": "ISO 22166"
+    },
+    {
+      "slug": "iso-ts-15066",
+      "label": "ISO/TS 15066"
+    },
+    {
+      "slug": "iso-ts-15066-2016",
+      "label": "ISO/TS 15066:2016"
+    },
+    {
+      "slug": "kajita-et-al-2003",
+      "label": "Kajita et al. 2003"
+    },
+    {
+      "slug": "manufacturing-automation",
+      "label": "Manufacturing Automation"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "multi-modal-sensing",
+      "label": "Multi-Modal Sensing"
+    },
+    {
+      "slug": "onboard-compute",
+      "label": "Onboard Compute"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    },
+    {
+      "slug": "power-management",
+      "label": "Power Management"
+    },
+    {
+      "slug": "pratt-and-williamson-1995",
+      "label": "Pratt & Williamson 1995"
+    },
+    {
+      "slug": "proprioceptive-sensing",
+      "label": "Proprioceptive Sensing"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real-Time Control"
+    },
+    {
+      "slug": "real-time-operating-systems",
+      "label": "Real-Time Operating Systems"
+    },
+    {
+      "slug": "series-elastic-actuation",
+      "label": "Series Elastic Actuation"
+    },
+    {
+      "slug": "series-elastic-actuator",
+      "label": "Series Elastic Actuator"
+    },
+    {
+      "slug": "sim-to-real-transfer",
+      "label": "Sim-to-Real Transfer"
+    },
+    {
+      "slug": "tactile-sensing",
+      "label": "Tactile Sensing"
+    },
+    {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
+    },
+    {
+      "slug": "vision-language-action-models",
+      "label": "Vision-Language-Action Models"
+    },
+    {
+      "slug": "vision-system",
+      "label": "Vision System"
+    },
+    {
+      "slug": "vukobratovic-and-borovac-2004",
+      "label": "Vukobratovic & Borovac 2004"
+    },
+    {
+      "slug": "warehouse-automation",
+      "label": "Warehouse Automation"
+    },
+    {
+      "slug": "whole-body-control",
+      "label": "Whole-Body Control"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "quadruped-robot",
+      "label": "Quadruped Robot"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "rigid-body-dynamics",
+      "label": "Rigid Body Dynamics"
+    },
+    {
+      "slug": "robot",
+      "label": "Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "wheeled-robot",
+      "label": "Wheeled Robot"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "robotics-systems",
+      "label": "Robotics Systems"
+    }
+  ]
+}

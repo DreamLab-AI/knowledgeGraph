@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:9e0e8ac9c35e5fa326cf5dc6a826e2665f52ae46cad1740c0ed0205817e43c8e",
+  "title": "Git Hub Actions",
+  "slug": "git-hub-actions",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:git-hub-actions",
+  "domain": "infrastructure",
+  "definition": "GitHub Actions is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

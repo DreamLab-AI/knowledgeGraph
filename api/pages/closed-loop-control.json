@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:df1a0bb515d030f9e0e35c99dbc2b3dd9844452c7b1873c9882424fa1cefbdb3",
+  "title": "Closed-Loop Control",
+  "slug": "closed-loop-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:closed-loop-control",
+  "domain": "robotics",
+  "definition": "A control system that uses feedback from sensors to compare the actual output with the desired output and adjusts the control action to minimize error. The system continuously monitors and corrects its behavior.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.98,
+  "maturity": "mature",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:visionflow:linked:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+        "label": "RB-1007-trajectory-generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rb-1013-localization",
+        "label": "RB-1013-localization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:visionflow:linked:rb-1004-adaptive-control",
+        "label": "RB-1004-adaptive-control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "adaptability",
+      "label": "Adaptability"
+    },
+    {
+      "slug": "controller",
+      "label": "Controller"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373:2021"
+    },
+    {
+      "slug": "pid-control",
+      "label": "PID Control"
+    },
+    {
+      "slug": "rb-1001-open-loop-control",
+      "label": "RB-1001-open-loop-control"
+    },
+    {
+      "slug": "rb-1004-adaptive-control",
+      "label": "RB-1004-adaptive-control"
+    },
+    {
+      "slug": "rb-1007-trajectory-generation",
+      "label": "RB-1007-trajectory-generation"
+    },
+    {
+      "slug": "rb-1015-kalman-filter",
+      "label": "RB-1015-kalman-filter"
+    },
+    {
+      "slug": "sensor-system",
+      "label": "Sensor System"
+    },
+    {
+      "slug": "stability",
+      "label": "Stability"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB-1013-localization"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

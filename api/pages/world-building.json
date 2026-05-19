@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:a0d684d09ce5ff71a1153643a92359978ed6e3628bb59bc80401f6dca38d8bf4",
+  "title": "World Building",
+  "slug": "world-building",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:world-building",
+  "domain": "spatial-computing",
+  "definition": "WorldBuilding is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,20 +1,573 @@
-iri:: http://narrativegoldmine.com/infrastructure#AdapterSlot
-uri:: urn:visionclaw:concept:infrastructure:adapter-slot
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:adapter-slot
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Adapter Slot
-content-hash:: sha256-12-b8c9dae0f1a2
-status:: complete
-maturity:: established
-quality-score:: 0.89
-authority-score:: 0.91
-version:: 1.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#AdapterSlot
+legacy_uri:: urn:visionclaw:concept:infrastructure:adapter-slot
 public:: true
+
+# Adapter Slot
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4",
+  "@type": "Page",
+  "vc:slug": "adapter-slot",
+  "title": "Adapter Slot",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:adapter-layer",
+      "vc:label": "AdapterLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:adapter-pattern",
+      "vc:label": "Adapter Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:adr-005",
+      "vc:label": "ADR-005"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-bead",
+      "vc:label": "Agent Bead"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-bead",
+      "vc:label": "Agent Bead"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:architecture-domain",
+      "vc:label": "ArchitectureDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bead-adapter",
+      "vc:label": "Bead Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:containerisation",
+      "vc:label": "Containerisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dependency-injection",
+      "vc:label": "Dependency Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:dependency-injection-principles",
+      "vc:label": "Dependency Injection Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:deployment-flexibility",
+      "vc:label": "Deployment Flexibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-patterns-gang-of-four",
+      "vc:label": "Design Patterns - Gang of Four"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-adapter",
+      "vc:label": "Event Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:interface-specification",
+      "vc:label": "Interface Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:manifest-declaration",
+      "vc:label": "Manifest Declaration"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-adapter",
+      "vc:label": "Memory Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-relay",
+      "vc:label": "Nostr Relay"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr-relay",
+      "vc:label": "Nostr Relay"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration-interface",
+      "vc:label": "Orchestration Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestrator-adapter",
+      "vc:label": "Orchestrator Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-memory",
+      "vc:label": "Pluggable Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-storage",
+      "vc:label": "Pluggable Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-telemetry",
+      "vc:label": "Pluggable Telemetry"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-work-distribution",
+      "vc:label": "Pluggable Work Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:pod-adapter",
+      "vc:label": "Pod Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:runtime-initialization",
+      "vc:label": "Runtime Initialization"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-pod-storage",
+      "vc:label": "Solid Pod Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:solid-pod-storage",
+      "vc:label": "Solid Pod Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:strategy-pattern",
+      "vc:label": "Strategy Pattern"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent-event-stream",
+      "vc:label": "Agent Event Stream"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-layer",
+      "vc:label": "InfrastructureLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.91"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b8c9dae0f1a2"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#AdapterSlot"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "established"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Adapter Slot"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.89"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:adapter-slot"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:adapter-slot"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "1.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:adapter-slot",
+  "@type": "OntologyClass",
+  "label": "Adapter Slot",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "complete",
+  "vc:maturity": "established",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Events (telemetry)]], [[Agent Bead|Beads (work units)]], and [[Orchestration Interface|Orchestrator (control)]], each replaceable at runtime without modifying agent code.",
+  "vc:qualityScore": {
+    "@value": "0.89",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.91",
+    "@type": "xsd:float"
+  },
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:bead-adapter",
+      "vc:label": "Bead Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-adapter",
+      "vc:label": "Event Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-adapter",
+      "vc:label": "Memory Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestrator-adapter",
+      "vc:label": "Orchestrator Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:pod-adapter",
+      "vc:label": "Pod Adapter"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:interface-specification",
+      "vc:label": "Interface Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:manifest-declaration",
+      "vc:label": "Manifest Declaration"
+    },
+    {
+      "@id": "urn:visionflow:linked:runtime-initialization",
+      "vc:label": "Runtime Initialization"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:deployment-flexibility",
+      "vc:label": "Deployment Flexibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-memory",
+      "vc:label": "Pluggable Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-storage",
+      "vc:label": "Pluggable Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-telemetry",
+      "vc:label": "Pluggable Telemetry"
+    },
+    {
+      "@id": "urn:visionflow:linked:pluggable-work-distribution",
+      "vc:label": "Pluggable Work Distribution"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:adapter-pattern",
+      "vc:label": "Adapter Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:dependency-injection",
+      "vc:label": "Dependency Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:strategy-pattern",
+      "vc:label": "Strategy Pattern"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:linked:containerisation",
+      "vc:label": "Containerisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:adapter-slot:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AdapterLayer]]",
+      "resolved": "urn:visionflow:linked:adapter-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Adapter Pattern]]",
+      "resolved": "urn:visionflow:linked:adapter-pattern",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ADR-005]]",
+      "resolved": "urn:visionflow:linked:adr-005",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Bead|Beads (work units)]]",
+      "resolved": "urn:visionflow:linked:agent-bead",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Bead|beads]]",
+      "resolved": "urn:visionflow:linked:agent-bead",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Memory|Memory (episodic and semantic)]]",
+      "resolved": "urn:visionflow:linked:agent-memory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AgenticSystemsDomain]]",
+      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArchitectureDomain]]",
+      "resolved": "urn:visionflow:linked:architecture-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bead Adapter]]",
+      "resolved": "urn:visionflow:linked:bead-adapter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Containerisation]]",
+      "resolved": "urn:visionflow:linked:containerisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dependency Injection]]",
+      "resolved": "urn:visionflow:linked:dependency-injection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dependency Injection Principles]]",
+      "resolved": "urn:visionflow:linked:dependency-injection-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deployment Flexibility]]",
+      "resolved": "urn:visionflow:linked:deployment-flexibility",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Design Patterns - Gang of Four]]",
+      "resolved": "urn:visionflow:linked:design-patterns-gang-of-four",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Event Adapter]]",
+      "resolved": "urn:visionflow:linked:event-adapter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Interface Specification]]",
+      "resolved": "urn:visionflow:linked:interface-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Manifest Declaration]]",
+      "resolved": "urn:visionflow:linked:manifest-declaration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Memory Adapter]]",
+      "resolved": "urn:visionflow:linked:memory-adapter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Relay|Nostr Relay]]",
+      "resolved": "urn:visionflow:linked:nostr-relay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Nostr Relay|Nostr relays]]",
+      "resolved": "urn:visionflow:linked:nostr-relay",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Orchestration Interface|Orchestrator (control)]]",
+      "resolved": "urn:visionflow:linked:orchestration-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Orchestrator Adapter]]",
+      "resolved": "urn:visionflow:linked:orchestrator-adapter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pluggable Memory]]",
+      "resolved": "urn:visionflow:linked:pluggable-memory",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pluggable Storage]]",
+      "resolved": "urn:visionflow:linked:pluggable-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pluggable Telemetry]]",
+      "resolved": "urn:visionflow:linked:pluggable-telemetry",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pluggable Work Distribution]]",
+      "resolved": "urn:visionflow:linked:pluggable-work-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Pod Adapter]]",
+      "resolved": "urn:visionflow:linked:pod-adapter",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Runtime Initialization]]",
+      "resolved": "urn:visionflow:linked:runtime-initialization",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Pod Storage|Pod (persistent storage)]]",
+      "resolved": "urn:visionflow:linked:solid-pod-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Solid Pod Storage|Solid Pod]]",
+      "resolved": "urn:visionflow:linked:solid-pod-storage",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strategy Pattern]]",
+      "resolved": "urn:visionflow:linked:strategy-pattern",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agent Event Stream|Events (telemetry)]]",
+      "resolved": "urn:visionflow:owl:class:agent-event-stream",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureLayer]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microservices Architecture]]",
+      "resolved": "urn:visionflow:owl:class:microservices-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container|VisionClaw agent]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VisionClaw Agentic Container|VisionClaw runtime]]",
+      "resolved": "urn:visionflow:owl:class:vision-claw-agentic-container",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Events (telemetry)]], [[Agent Bead|Beads (work units)]], and [[Orchestration Interface|Orchestrator (control)]], each replaceable at runtime without modifying agent code.

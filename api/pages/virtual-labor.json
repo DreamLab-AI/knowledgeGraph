@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:48ed54f50e518cc6faf456bea2a6c28113b111e961d371801e097bbbb52cd53b",
+  "title": "Virtual Labor",
+  "slug": "virtual-labor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-labor",
+  "domain": "spatial-computing",
+  "definition": "Virtual Labor is a concept within the mv domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "user-generated-content",
+      "label": "User-Generated Content"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "land-economics",
+      "label": "Land Economics"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "Virtual Currency"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "land-economics",
+      "label": "Land Economics"
+    }
+  ]
+}

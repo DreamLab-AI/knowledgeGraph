@@ -1,21 +1,306 @@
-iri:: http://narrativegoldmine.com/distributed-collaboration#VideoConferencing
-uri:: urn:visionclaw:concept:distributed-collaboration:video-conferencing
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:distributed-collaboration:video-conferencing
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: distributed-collaboration
-preferred-term:: Video Conferencing
-content-hash:: sha256-12-b1d64e3968bd
-legacy-term-id:: TC-0011
-status:: active
-maturity:: mature
-quality-score:: 0.60
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T00:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#VideoConferencing
+legacy_uri:: urn:visionclaw:concept:distributed-collaboration:video-conferencing
 public:: true
+
+# Video Conferencing
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562",
+  "@type": "Page",
+  "vc:slug": "video-conferencing",
+  "title": "Video Conferencing",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:face-to-face-interaction",
+      "vc:label": "Face-to-Face Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-communication-protocols",
+      "vc:label": "Real-Time Communication Protocols"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0010-synchronous-collaboration",
+      "vc:label": "TC-0010-Synchronous-Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0012-screen-sharing",
+      "vc:label": "TC-0012-Screen-Sharing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0013-virtual-meeting",
+      "vc:label": "TC-0013-Virtual-Meeting"
+    },
+    {
+      "@id": "urn:visionflow:linked:tc-0016-remote-pair-programming",
+      "vc:label": "TC-0016-Remote-Pair-Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "vc:label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-021-augmented-reality-collaboration",
+      "vc:label": "TELE-021-augmented-reality-collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
+      "vc:label": "TELE-100-ai-avatars"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "vc:label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "vc:label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    },
+    {
+      "@id": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "vc:label": "TELE-153-5g-telepresence"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-b1d64e3968bd"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "distributed-collaboration"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#VideoConferencing"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "TC-0011"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Video Conferencing"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.60"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:video-conferencing"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:distributed-collaboration:video-conferencing"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:video-conferencing",
+  "@type": "OntologyClass",
+  "label": "Video Conferencing",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:tc-0010-synchronous-collaboration",
+      "vc:label": "TC-0010-Synchronous-Collaboration"
+    }
+  ],
+  "vc:sourceDomain": "distributed-collaboration",
+  "vc:status": "active",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "\"Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances.\"",
+  "vc:qualityScore": {
+    "@value": "0.60",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:real-time-communication-protocols",
+      "vc:label": "Real-Time Communication Protocols"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:face-to-face-interaction",
+      "vc:label": "Face-to-Face Interaction"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:tele-150-webrtc",
+      "vc:label": "TELE-150-webrtc"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:video-conferencing:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Face-to-Face Interaction]]",
+      "resolved": "urn:visionflow:linked:face-to-face-interaction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Communication Protocols]]",
+      "resolved": "urn:visionflow:linked:real-time-communication-protocols",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0010-Synchronous-Collaboration]]",
+      "resolved": "urn:visionflow:linked:tc-0010-synchronous-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0012-Screen-Sharing]]",
+      "resolved": "urn:visionflow:linked:tc-0012-screen-sharing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0013-Virtual-Meeting]]",
+      "resolved": "urn:visionflow:linked:tc-0013-virtual-meeting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TC-0016-Remote-Pair-Programming]]",
+      "resolved": "urn:visionflow:linked:tc-0016-remote-pair-programming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-020-virtual-reality-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-021-augmented-reality-collaboration]]",
+      "resolved": "urn:visionflow:linked:tele-021-augmented-reality-collaboration",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-100-ai-avatars]]",
+      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-105-real-time-language-translation]]",
+      "resolved": "urn:visionflow:linked:tele-105-real-time-language-translation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-107-ai-meeting-assistants]]",
+      "resolved": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-150-webrtc]]",
+      "resolved": "urn:visionflow:linked:tele-150-webrtc",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[TELE-153-5g-telepresence]]",
+      "resolved": "urn:visionflow:linked:tele-153-5g-telepresence",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - "Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances."

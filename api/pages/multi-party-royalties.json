@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:df0842eeef90a7c1607ec32441047ce21fa77d6e1a6797e86f46ddc533670fcd",
+  "title": "Multi Party Royalties",
+  "slug": "multi-party-royalties",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:multi-party-royalties",
+  "domain": "spatial-computing",
+  "definition": "A blockchain-based revenue distribution mechanism that uses smart contracts to automatically split and distribute royalty payments among multiple stakeholders including creators, collaborators, developers, and brands based on predefined ownership percentages.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:revenue-sharing",
+      "label": "Revenue Sharing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "revenue-sharing",
+      "label": "Revenue Sharing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    }
+  ]
+}

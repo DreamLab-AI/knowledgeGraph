@@ -1,21 +1,341 @@
-iri:: http://narrativegoldmine.com/robotics#Friction
-uri:: urn:visionclaw:concept:robotics:friction
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:friction
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Friction
-content-hash:: sha256-12-ebfda2a81646
-legacy-term-id:: RB-0042
-status:: draft
-maturity:: draft
-quality-score:: 0.54
-authority-score:: 0.10
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#Friction
+legacy_uri:: urn:visionclaw:concept:robotics:friction
 public:: true
+
+# Friction
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c",
+  "@type": "Page",
+  "vc:slug": "friction",
+  "title": "Friction",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:energy-dissipation",
+      "vc:label": "Energy Dissipation"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-efficiency-calculation",
+      "vc:label": "Energy Efficiency Calculation"
+    },
+    {
+      "@id": "urn:visionflow:linked:friction-coefficient-estimation",
+      "vc:label": "Friction Coefficient Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:joint-efficiency",
+      "vc:label": "Joint Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:linked:joint-mechanics",
+      "vc:label": "Joint Mechanics"
+    },
+    {
+      "@id": "urn:visionflow:linked:lubrication-management",
+      "vc:label": "Lubrication Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-accuracy",
+      "vc:label": "Motion Accuracy"
+    },
+    {
+      "@id": "urn:visionflow:linked:motor-performance",
+      "vc:label": "Motor Performance"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-modelling",
+      "vc:label": "Physics Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:wear-prediction",
+      "vc:label": "Wear Prediction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-based-control",
+      "vc:label": "Model-based Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-dynamics",
+      "vc:label": "Robot Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.10"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-ebfda2a81646"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#Friction"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0042"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Friction"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.54"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:friction"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:friction"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:friction",
+  "@type": "OntologyClass",
+  "label": "Friction",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:physics-modelling",
+      "vc:label": "Physics Modelling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robot-dynamics",
+      "vc:label": "Robot Dynamics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Friction** - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in robotic systems.",
+  "vc:qualityScore": {
+    "@value": "0.54",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.10",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:energy-dissipation",
+      "vc:label": "Energy Dissipation"
+    },
+    {
+      "@id": "urn:visionflow:linked:joint-mechanics",
+      "vc:label": "Joint Mechanics"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:friction-coefficient-estimation",
+      "vc:label": "Friction Coefficient Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:lubrication-management",
+      "vc:label": "Lubrication Management"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:energy-efficiency-calculation",
+      "vc:label": "Energy Efficiency Calculation"
+    },
+    {
+      "@id": "urn:visionflow:linked:wear-prediction",
+      "vc:label": "Wear Prediction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-based-control",
+      "vc:label": "Model-based Control"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:friction:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Energy Dissipation]]",
+      "resolved": "urn:visionflow:linked:energy-dissipation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Energy Efficiency Calculation]]",
+      "resolved": "urn:visionflow:linked:energy-efficiency-calculation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Friction Coefficient Estimation]]",
+      "resolved": "urn:visionflow:linked:friction-coefficient-estimation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Joint Efficiency]]",
+      "resolved": "urn:visionflow:linked:joint-efficiency",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Joint Mechanics]]",
+      "resolved": "urn:visionflow:linked:joint-mechanics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Lubrication Management]]",
+      "resolved": "urn:visionflow:linked:lubrication-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion Accuracy]]",
+      "resolved": "urn:visionflow:linked:motion-accuracy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motor Performance]]",
+      "resolved": "urn:visionflow:linked:motor-performance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Physics Modelling]]",
+      "resolved": "urn:visionflow:linked:physics-modelling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wear Prediction]]",
+      "resolved": "urn:visionflow:linked:wear-prediction",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model-based Control]]",
+      "resolved": "urn:visionflow:owl:class:model-based-control",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robot Dynamics]]",
+      "resolved": "urn:visionflow:owl:class:robot-dynamics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Friction** - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in robotic systems.

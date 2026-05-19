@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b8d843266aec11d27f6717d026368cd5d9d93491fcaa90376e74aba4570c8455",
+  "title": "AI-Augmented Software Engineering",
+  "slug": "ai-augmented-software-engineering",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-augmented-software-engineering",
+  "domain": "artificial-intelligence",
+  "definition": "[Generated from Gartner emerging tech analysis]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "emerging",
+  "status": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    }
+  ]
+}

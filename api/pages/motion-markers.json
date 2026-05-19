@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:f1bf3fc72b516ee4b96a59c7fdc6d337b7b1ecd491fa7d68c85695c73963627a",
+  "title": "Motion Markers",
+  "slug": "motion-markers",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:motion-markers",
+  "domain": "spatial-computing",
+  "definition": "Reflective or active tracking points placed on subjects for optical motion capture systems, typically 12-15mm diameter for full-body capture, enabling precise position tracking at frame rates from 120fps to 10,000fps for animation, biomechanics, and performance analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:motion-capture-technology",
+      "label": "Motion Capture Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:3-d-motion-analysis",
+        "label": "3D Motion Analysis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-motion-analysis",
+      "label": "3D Motion Analysis"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "motion-capture-technology",
+      "label": "Motion Capture Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    }
+  ]
+}

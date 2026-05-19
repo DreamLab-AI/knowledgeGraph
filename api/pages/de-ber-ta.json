@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:14b32c48d8edebb08f22c9bf3783dcbd81d6582878b96b558148d0b3b9c5f4e5",
+  "title": "De BER Ta",
+  "slug": "de-ber-ta",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:de-ber-ta",
+  "domain": "spatial-computing",
+  "definition": "Decoding-enhanced BERT with Disentangled Attention: an improved BERT architecture that uses disentangled attention (separating content and position) and an enhanced mask decoder for better performance.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:language-modeling",
+      "label": "Language Modeling"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

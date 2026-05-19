@@ -1,0 +1,267 @@
+{
+  "id": "urn:visionflow:page:2a207f69c3bdc74fc1b861656b9b4b422aed55f788385c38d735e51d8e8a7acb",
+  "title": "Game Engine",
+  "slug": "game-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:game-engine",
+  "domain": "spatial-computing",
+  "definition": "Software framework providing core functionality for rendering, physics, and interaction in real-time 3D environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:software-platform",
+      "label": "Software Platform"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "id": "urn:visionflow:linked:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "id": "urn:visionflow:linked:scripting-runtime",
+        "label": "Scripting Runtime"
+      },
+      {
+        "id": "urn:visionflow:owl:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:visionflow:owl:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:visionflow:owl:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:interactive-experience",
+        "label": "Interactive Experience"
+      },
+      {
+        "id": "urn:visionflow:linked:multiplayer-gameplay",
+        "label": "Multiplayer Gameplay"
+      },
+      {
+        "id": "urn:visionflow:owl:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-world-creation",
+        "label": "Virtual World Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "asset-management-system",
+      "label": "Asset Management System"
+    },
+    {
+      "slug": "audio-engine",
+      "label": "Audio Engine"
+    },
+    {
+      "slug": "development-infrastructure",
+      "label": "Development Infrastructure"
+    },
+    {
+      "slug": "graphics-driver",
+      "label": "Graphics Driver"
+    },
+    {
+      "slug": "interactive-experience",
+      "label": "Interactive Experience"
+    },
+    {
+      "slug": "metaverse-101",
+      "label": "Metaverse 101"
+    },
+    {
+      "slug": "multiplayer-gameplay",
+      "label": "Multiplayer Gameplay"
+    },
+    {
+      "slug": "oma3-media-wg",
+      "label": "OMA3 Media WG"
+    },
+    {
+      "slug": "scripting-runtime",
+      "label": "Scripting Runtime"
+    },
+    {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "PlatformLayer"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "software-platform",
+      "label": "Software Platform"
+    },
+    {
+      "slug": "virtual-world-creation",
+      "label": "Virtual World Creation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-development",
+      "label": "3D Development"
+    },
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "vr-rendering-engine",
+      "label": "VR Rendering Engine"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

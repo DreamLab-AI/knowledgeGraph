@@ -1,0 +1,724 @@
+{
+  "id": "urn:visionflow:page:d277a94f19dcef45df4da9822ece13ed73219ee543b4dc8e9e2ad33ac1908e16",
+  "title": "Conviction Voting",
+  "slug": "conviction-voting",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:conviction-voting",
+  "domain": "blockchain",
+  "definition": "**Conviction Voting** is a continuous-time, conviction-weighted decentralised governance mechanism \u2014 originally formalised by [[Block Science]] researchers Jeff Emmett, Michael Zargham and Jessica Zartler in the 2019 working paper *Conviction Voting: A Novel Continuous Decision Making Alternative to Governance* and first deployed in production by the [[1Hive]] collective on [[xDai]] (later renamed [[Gnosis Chain]]) \u2014 in which token holders express preference *intensity* by staking governance tokens on competing proposals, with each proposal accumulating \"conviction\" as a continuous-time exponential moving average of the form **y(t+1) = \u03b1\u00b7y(t) + x(t)** where \u03b1 \u2208 (0,1) is the decay constant (typically 0.9-0.9999 depending on block time and community velocity) and x(t) is the instantaneous stake supporting the proposal at time t, such that a proposal passes and is automatically executed once accumulated conviction exceeds a dynamic trigger threshold **f(R, S, \u03c1)** parameterised by R (requested funds), S (total funding pool) and \u03c1 (conviction ratio / spending limit fraction), producing an *asymptotic* maximum conviction of x/(1-\u03b1) under sustained support and *symmetric* exponential dec",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:continuous-decision-making",
+      "label": "Continuous Decision-Making"
+    },
+    {
+      "id": "urn:visionflow:linked:dao-governance-mechanism",
+      "label": "DAO Governance Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:token-weighted-governance",
+      "label": "Token-Weighted Governance"
+    },
+    {
+      "id": "urn:visionflow:linked:treasury-allocation-mechanism",
+      "label": "Treasury Allocation Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:voting-system",
+      "label": "Voting System"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:conviction-accumulation-function",
+        "label": "Conviction Accumulation Function"
+      },
+      {
+        "id": "urn:visionflow:linked:decay-constant-alpha",
+        "label": "Decay Constant Alpha"
+      },
+      {
+        "id": "urn:visionflow:linked:minimum-conviction-threshold",
+        "label": "Minimum Conviction Threshold"
+      },
+      {
+        "id": "urn:visionflow:linked:proposal-executor",
+        "label": "Proposal Executor"
+      },
+      {
+        "id": "urn:visionflow:linked:proposal-stake-ledger",
+        "label": "Proposal Stake Ledger"
+      },
+      {
+        "id": "urn:visionflow:linked:spending-limit",
+        "label": "Spending Limit"
+      },
+      {
+        "id": "urn:visionflow:linked:trigger-threshold-function",
+        "label": "Trigger Threshold Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:block-indexed-time-reference",
+        "label": "Block-Indexed Time Reference"
+      },
+      {
+        "id": "urn:visionflow:linked:on-chain-or-off-chain-settlement-layer",
+        "label": "On-Chain or Off-Chain Settlement Layer"
+      },
+      {
+        "id": "urn:visionflow:linked:proposal-registry",
+        "label": "Proposal Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:stake-registry",
+        "label": "Stake Registry"
+      },
+      {
+        "id": "urn:visionflow:linked:treasury-pool",
+        "label": "Treasury Pool"
+      },
+      {
+        "id": "urn:visionflow:owl:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:continuous-public-goods-funding",
+        "label": "Continuous Public Goods Funding"
+      },
+      {
+        "id": "urn:visionflow:linked:last-minute-attack-resistance",
+        "label": "Last-Minute Attack Resistance"
+      },
+      {
+        "id": "urn:visionflow:linked:organic-proposal-prioritisation",
+        "label": "Organic Proposal Prioritisation"
+      },
+      {
+        "id": "urn:visionflow:linked:passive-participation-tolerance",
+        "label": "Passive Participation Tolerance"
+      },
+      {
+        "id": "urn:visionflow:linked:time-weighted-preference-expression",
+        "label": "Time-Weighted Preference Expression"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:continuous-time-preference-aggregation",
+        "label": "Continuous-Time Preference Aggregation"
+      },
+      {
+        "id": "urn:visionflow:linked:dynamic-spending-limit",
+        "label": "Dynamic Spending Limit"
+      },
+      {
+        "id": "urn:visionflow:linked:exponential-moving-average-aggregation",
+        "label": "Exponential Moving Average Aggregation"
+      },
+      {
+        "id": "urn:visionflow:linked:symmetric-stake-decay",
+        "label": "Symmetric Stake Decay"
+      },
+      {
+        "id": "urn:visionflow:linked:threshold-triggered-execution",
+        "label": "Threshold-Triggered Execution"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "1-hive",
+      "label": "1Hive"
+    },
+    {
+      "slug": "1-hive-conviction-voting-parameter-analysis-2021",
+      "label": "1Hive Conviction Voting Parameter Analysis 2021"
+    },
+    {
+      "slug": "1-hive-gardens",
+      "label": "1Hive Gardens"
+    },
+    {
+      "slug": "1-hive-gardens-documentation",
+      "label": "1Hive Gardens Documentation"
+    },
+    {
+      "slug": "1-hive-gardens-specification",
+      "label": "1Hive Gardens Specification"
+    },
+    {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
+      "slug": "aragon-conviction-voting-app",
+      "label": "Aragon Conviction Voting App"
+    },
+    {
+      "slug": "aragon-conviction-voting-app-abi",
+      "label": "Aragon Conviction Voting App ABI"
+    },
+    {
+      "slug": "aragon-conviction-voting-app-documentation",
+      "label": "Aragon Conviction Voting App Documentation"
+    },
+    {
+      "slug": "augmented-bonding-curve-communities",
+      "label": "Augmented Bonding Curve Communities"
+    },
+    {
+      "slug": "augur",
+      "label": "Augur"
+    },
+    {
+      "slug": "beck-muller-bloch-king-2018-governance-in-the-blockchain-economy",
+      "label": "Beck Muller-Bloch King 2018 Governance in the Blockchain Economy"
+    },
+    {
+      "slug": "block-indexed-time-reference",
+      "label": "Block-Indexed Time Reference"
+    },
+    {
+      "slug": "block-number-as-discrete-time",
+      "label": "Block Number as Discrete Time"
+    },
+    {
+      "slug": "block-science",
+      "label": "Block Science"
+    },
+    {
+      "slug": "block-science-theory",
+      "label": "Block Science Theory"
+    },
+    {
+      "slug": "block-science-working-papers-2019-2025",
+      "label": "Block Science Working Papers 2019-2025"
+    },
+    {
+      "slug": "buterin-hitzig-weyl-2018-liberal-radicalism-quadratic-funding",
+      "label": "Buterin Hitzig Weyl 2018 Liberal Radicalism Quadratic Funding"
+    },
+    {
+      "slug": "cad-cad",
+      "label": "cadCAD"
+    },
+    {
+      "slug": "cad-cad-documentation",
+      "label": "cadCAD Documentation"
+    },
+    {
+      "slug": "cad-cad-reference-model",
+      "label": "cadCAD Reference Model"
+    },
+    {
+      "slug": "cad-cad-simulation",
+      "label": "cadCAD Simulation"
+    },
+    {
+      "slug": "ccaf-2024-global-cryptoasset-benchmarking-study",
+      "label": "CCAF 2024 Global Cryptoasset Benchmarking Study"
+    },
+    {
+      "slug": "celeste",
+      "label": "Celeste"
+    },
+    {
+      "slug": "chainlink-automation",
+      "label": "Chainlink Automation"
+    },
+    {
+      "slug": "common-pool-resource-management",
+      "label": "Common-Pool Resource Management"
+    },
+    {
+      "slug": "commons-stack",
+      "label": "Commons Stack"
+    },
+    {
+      "slug": "commons-stack-abc-spec",
+      "label": "Commons Stack ABC Spec"
+    },
+    {
+      "slug": "commons-stack-documentation-2019-2024",
+      "label": "Commons Stack Documentation 2019-2024"
+    },
+    {
+      "slug": "compound-governor-bravo",
+      "label": "Compound Governor Bravo"
+    },
+    {
+      "slug": "continuous-decision-making",
+      "label": "Continuous Decision-Making"
+    },
+    {
+      "slug": "continuous-public-goods-funding",
+      "label": "Continuous Public Goods Funding"
+    },
+    {
+      "slug": "continuous-time-dynamical-systems",
+      "label": "Continuous-Time Dynamical Systems"
+    },
+    {
+      "slug": "continuous-time-preference-aggregation",
+      "label": "Continuous-Time Preference Aggregation"
+    },
+    {
+      "slug": "conviction-accumulation-function",
+      "label": "Conviction Accumulation Function"
+    },
+    {
+      "slug": "cryptoeconomic-systems-journal-2020-2024",
+      "label": "Cryptoeconomic Systems Journal 2020-2024"
+    },
+    {
+      "slug": "cryptoeconomics-domain",
+      "label": "CryptoeconomicsDomain"
+    },
+    {
+      "slug": "dao-governance-mechanism",
+      "label": "DAO Governance Mechanism"
+    },
+    {
+      "slug": "dao-treasury-operations",
+      "label": "DAO Treasury Operations"
+    },
+    {
+      "slug": "daogovernance-domain",
+      "label": "DAOGovernanceDomain"
+    },
+    {
+      "slug": "decay-constant-alpha",
+      "label": "Decay Constant Alpha"
+    },
+    {
+      "slug": "delegated-voting",
+      "label": "delegated voting"
+    },
+    {
+      "slug": "delegated-voting",
+      "label": "Delegated Voting"
+    },
+    {
+      "slug": "dynamic-spending-limit",
+      "label": "Dynamic Spending Limit"
+    },
+    {
+      "slug": "elinor-ostrom",
+      "label": "Elinor Ostrom"
+    },
+    {
+      "slug": "emmett-zargham-zartler-2019-conviction-voting-paper",
+      "label": "Emmett Zargham Zartler 2019 Conviction Voting Paper"
+    },
+    {
+      "slug": "emmett-zargham-zartler-2019-paper",
+      "label": "Emmett Zargham Zartler 2019 Paper"
+    },
+    {
+      "slug": "exponential-moving-average",
+      "label": "Exponential Moving Average"
+    },
+    {
+      "slug": "exponential-moving-average-aggregation",
+      "label": "Exponential Moving Average Aggregation"
+    },
+    {
+      "slug": "fair-launch",
+      "label": "fair launch"
+    },
+    {
+      "slug": "faqir-rhazoui-arroyo-hassan-2021-dao-platforms-comparative-analysis",
+      "label": "Faqir-Rhazoui Arroyo Hassan 2021 DAO Platforms Comparative Analysis"
+    },
+    {
+      "slug": "futarchy",
+      "label": "futarchy"
+    },
+    {
+      "slug": "futarchy",
+      "label": "Futarchy"
+    },
+    {
+      "slug": "gardens",
+      "label": "Gardens"
+    },
+    {
+      "slug": "gardens-framework",
+      "label": "Gardens Framework"
+    },
+    {
+      "slug": "gelato-network",
+      "label": "Gelato Network"
+    },
+    {
+      "slug": "gitcoin",
+      "label": "Gitcoin"
+    },
+    {
+      "slug": "givest",
+      "label": "Givest"
+    },
+    {
+      "slug": "giveth",
+      "label": "Giveth"
+    },
+    {
+      "slug": "givgarden",
+      "label": "GIVgarden"
+    },
+    {
+      "slug": "glen-weyl",
+      "label": "Glen Weyl"
+    },
+    {
+      "slug": "gnosis-chain",
+      "label": "Gnosis Chain"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "GovernanceLayer"
+    },
+    {
+      "slug": "griff-green",
+      "label": "Griff Green"
+    },
+    {
+      "slug": "hanson-2003-shall-we-vote-on-values-bet-on-beliefs-futarchy",
+      "label": "Hanson 2003 Shall We Vote on Values Bet on Beliefs Futarchy"
+    },
+    {
+      "slug": "hassan-de-filippi-2021-decentralized-autonomous-organization",
+      "label": "Hassan De Filippi 2021 Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "honey",
+      "label": "Honey"
+    },
+    {
+      "slug": "honeyswap",
+      "label": "Honeyswap"
+    },
+    {
+      "slug": "kiayias-2017-2024-ouroboros-proof-of-stake-family",
+      "label": "Kiayias 2017-2024 Ouroboros Proof-of-Stake Family"
+    },
+    {
+      "slug": "last-minute-attack-resistance",
+      "label": "Last-Minute Attack Resistance"
+    },
+    {
+      "slug": "lazy-conviction-evaluation",
+      "label": "Lazy Conviction Evaluation"
+    },
+    {
+      "slug": "liquid-democracy",
+      "label": "liquid democracy"
+    },
+    {
+      "slug": "liquid-democracy",
+      "label": "Liquid Democracy"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "MechanismDesignDomain"
+    },
+    {
+      "slug": "minimum-conviction-threshold",
+      "label": "Minimum Conviction Threshold"
+    },
+    {
+      "slug": "on-chain-or-off-chain-settlement-layer",
+      "label": "On-Chain or Off-Chain Settlement Layer"
+    },
+    {
+      "slug": "open-rights-group",
+      "label": "Open Rights Group"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "optimism-retro-pgf",
+      "label": "Optimism RetroPGF"
+    },
+    {
+      "slug": "organic-proposal-prioritisation",
+      "label": "Organic Proposal Prioritisation"
+    },
+    {
+      "slug": "ostrom-1990-governing-the-commons",
+      "label": "Ostrom 1990 Governing the Commons"
+    },
+    {
+      "slug": "paolo-tasca",
+      "label": "Paolo Tasca"
+    },
+    {
+      "slug": "passive-participation-tolerance",
+      "label": "Passive Participation Tolerance"
+    },
+    {
+      "slug": "polkadot-open-gov",
+      "label": "Polkadot OpenGov"
+    },
+    {
+      "slug": "polymarket",
+      "label": "Polymarket"
+    },
+    {
+      "slug": "posner-weyl-2014-voting-squared-quadratic-voting",
+      "label": "Posner Weyl 2014 Voting Squared Quadratic Voting"
+    },
+    {
+      "slug": "praise",
+      "label": "Praise"
+    },
+    {
+      "slug": "proposal-executor",
+      "label": "Proposal Executor"
+    },
+    {
+      "slug": "proposal-registry",
+      "label": "Proposal Registry"
+    },
+    {
+      "slug": "proposal-stake-ledger",
+      "label": "Proposal Stake Ledger"
+    },
+    {
+      "slug": "public-goods-funding",
+      "label": "Public Goods Funding"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "quadratic funding"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "radicalx-change",
+      "label": "RadicalxChange"
+    },
+    {
+      "slug": "regenerative-cryptoeconomics",
+      "label": "Regenerative Cryptoeconomics"
+    },
+    {
+      "slug": "reputation-weighted-governance",
+      "label": "reputation-weighted governance"
+    },
+    {
+      "slug": "schneider-2019-decentralization-incomplete-ambition",
+      "label": "Schneider 2019 Decentralization Incomplete Ambition"
+    },
+    {
+      "slug": "shape-shift-dao",
+      "label": "ShapeShift DAO"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
+    },
+    {
+      "slug": "snapshot-voting-platform-documentation",
+      "label": "Snapshot Voting Platform Documentation"
+    },
+    {
+      "slug": "solidity-smart-contracts",
+      "label": "Solidity Smart Contracts"
+    },
+    {
+      "slug": "spending-limit",
+      "label": "Spending Limit"
+    },
+    {
+      "slug": "stake-registry",
+      "label": "Stake Registry"
+    },
+    {
+      "slug": "symmetric-stake-decay",
+      "label": "Symmetric Stake Decay"
+    },
+    {
+      "slug": "tally",
+      "label": "Tally"
+    },
+    {
+      "slug": "tally-governance-documentation",
+      "label": "Tally Governance Documentation"
+    },
+    {
+      "slug": "tally-on-chain-governance",
+      "label": "Tally On-Chain Governance"
+    },
+    {
+      "slug": "tasca-tessone-2019-taxonomy-of-blockchain-technologies",
+      "label": "Tasca Tessone 2019 Taxonomy of Blockchain Technologies"
+    },
+    {
+      "slug": "threshold-triggered-execution",
+      "label": "Threshold-Triggered Execution"
+    },
+    {
+      "slug": "time-weighted-preference-expression",
+      "label": "Time-Weighted Preference Expression"
+    },
+    {
+      "slug": "token-engineering",
+      "label": "Token Engineering"
+    },
+    {
+      "slug": "token-engineering-commons",
+      "label": "Token Engineering Commons"
+    },
+    {
+      "slug": "token-engineering-commons-documentation",
+      "label": "Token Engineering Commons Documentation"
+    },
+    {
+      "slug": "token-stake-locking",
+      "label": "Token Stake Locking"
+    },
+    {
+      "slug": "token-weighted-governance",
+      "label": "Token-Weighted Governance"
+    },
+    {
+      "slug": "token-weighted-snapshot-voting",
+      "label": "token-weighted snapshot voting"
+    },
+    {
+      "slug": "treasury-allocation-mechanism",
+      "label": "Treasury Allocation Mechanism"
+    },
+    {
+      "slug": "treasury-layer",
+      "label": "TreasuryLayer"
+    },
+    {
+      "slug": "treasury-pool",
+      "label": "Treasury Pool"
+    },
+    {
+      "slug": "trigger-threshold-function",
+      "label": "Trigger Threshold Function"
+    },
+    {
+      "slug": "voshmgir-2020-token-economy",
+      "label": "Voshmgir 2020 Token Economy"
+    },
+    {
+      "slug": "voshmgir-zargham-2020-foundations-of-cryptoeconomic-systems",
+      "label": "Voshmgir Zargham 2020 Foundations of Cryptoeconomic Systems"
+    },
+    {
+      "slug": "voting-system",
+      "label": "Voting System"
+    },
+    {
+      "slug": "wright-de-filippi-2018-blockchain-and-the-law",
+      "label": "Wright De Filippi 2018 Blockchain and the Law"
+    },
+    {
+      "slug": "x-dai",
+      "label": "xDai"
+    },
+    {
+      "slug": "zargham-nabben-2022-aligning-dao-to-cybernetics-precedents",
+      "label": "Zargham Nabben 2022 Aligning DAO to Cybernetics Precedents"
+    },
+    {
+      "slug": "zargham-shorish-2022-parametric-resilience-conviction-voting",
+      "label": "Zargham Shorish 2022 Parametric Resilience Conviction Voting"
+    },
+    {
+      "slug": "zargham-zhang-preciado-2018-state-space-modeling-blockchain-economic-systems",
+      "label": "Zargham Zhang Preciado 2018 State-Space Modeling Blockchain Economic Systems"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "quadratic voting"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

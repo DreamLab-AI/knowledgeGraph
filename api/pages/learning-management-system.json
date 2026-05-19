@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:ba31f0b4148ebe1356d74151a7d824a01f0e6a7eb99bfdaad4f3614b685980f7",
+  "title": "Learning Management System",
+  "slug": "learning-management-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:learning-management-system",
+  "domain": "spatial-computing",
+  "definition": "Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:vr-training-delivery",
+        "label": "VR Training Delivery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "vr-training-delivery",
+      "label": "VR Training Delivery"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    }
+  ]
+}

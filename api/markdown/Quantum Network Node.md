@@ -1,24 +1,448 @@
-iri:: http://narrativegoldmine.com/spatial-computing#QuantumNetworkNode
-uri:: urn:visionclaw:concept:spatial-computing:quantum-network-node
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:quantum-network-node
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Quantum Network Node
-content-hash:: sha256-12-1b65e8d014b6
-legacy-term-id:: 20146
-status:: draft
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#QuantumNetworkNode
+legacy_uri:: urn:visionclaw:concept:spatial-computing:quantum-network-node
 public:: true
+
+# Quantum Network Node
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1",
+  "@type": "Page",
+  "vc:slug": "quantum-network-node",
+  "title": "Quantum Network Node",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:classical-communication-interface",
+      "vc:label": "Classical Communication Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryogenic-cooling",
+      "vc:label": "Cryogenic Cooling"
+    },
+    {
+      "@id": "urn:visionflow:linked:entanglement-distribution",
+      "vc:label": "Entanglement Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-isolation-chamber",
+      "vc:label": "Environmental Isolation Chamber"
+    },
+    {
+      "@id": "urn:visionflow:linked:itu-t-qkd-series",
+      "vc:label": "ITU-T QKD Series"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-fiber-connection",
+      "vc:label": "Optical Fiber Connection"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-switch",
+      "vc:label": "Optical Switch"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-quantum-security",
+      "vc:label": "Post-Quantum Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-communication-network",
+      "vc:label": "Quantum Communication Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-cryptography",
+      "vc:label": "Quantum Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-key-distribution",
+      "vc:label": "Quantum Key Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-light-source",
+      "vc:label": "Quantum Light Source"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-memory-unit",
+      "vc:label": "Quantum Memory Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-photon-detector",
+      "vc:label": "Single Photon Detector"
+    },
+    {
+      "@id": "urn:visionflow:linked:ultra-secure-communication",
+      "vc:label": "Ultra-Secure Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:vibration-isolation",
+      "vc:label": "Vibration Isolation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "vc:label": "InfrastructureDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:physical-layer",
+      "vc:label": "Physical Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:power-supply",
+      "vc:label": "Power Supply"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "vc:label": "TrustAndGovernanceDomain"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-1b65e8d014b6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#QuantumNetworkNode"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20146"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Quantum Network Node"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:quantum-network-node"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:quantum-network-node"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:quantum-network-node",
+  "@type": "OntologyClass",
+  "label": "Quantum Network Node",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Physical device utilizing quantum mechanics principles to enable quantum key distribution (QKD) or entanglement transmission for ultra-secure communication channels.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:quantum-communication-network",
+      "vc:label": "Quantum Communication Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:classical-communication-interface",
+      "vc:label": "Classical Communication Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:environmental-isolation-chamber",
+      "vc:label": "Environmental Isolation Chamber"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-switch",
+      "vc:label": "Optical Switch"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-light-source",
+      "vc:label": "Quantum Light Source"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-memory-unit",
+      "vc:label": "Quantum Memory Unit"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-photon-detector",
+      "vc:label": "Single Photon Detector"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:cryogenic-cooling",
+      "vc:label": "Cryogenic Cooling"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-fiber-connection",
+      "vc:label": "Optical Fiber Connection"
+    },
+    {
+      "@id": "urn:visionflow:linked:vibration-isolation",
+      "vc:label": "Vibration Isolation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:power-supply",
+      "vc:label": "Power Supply"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:entanglement-distribution",
+      "vc:label": "Entanglement Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-quantum-security",
+      "vc:label": "Post-Quantum Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-cryptography",
+      "vc:label": "Quantum Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-key-distribution",
+      "vc:label": "Quantum Key Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:ultra-secure-communication",
+      "vc:label": "Ultra-Secure Communication"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:quantum-network-node:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Classical Communication Interface]]",
+      "resolved": "urn:visionflow:linked:classical-communication-interface",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Cryogenic Cooling]]",
+      "resolved": "urn:visionflow:linked:cryogenic-cooling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Entanglement Distribution]]",
+      "resolved": "urn:visionflow:linked:entanglement-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Environmental Isolation Chamber]]",
+      "resolved": "urn:visionflow:linked:environmental-isolation-chamber",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ITU-T QKD Series]]",
+      "resolved": "urn:visionflow:linked:itu-t-qkd-series",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optical Fiber Connection]]",
+      "resolved": "urn:visionflow:linked:optical-fiber-connection",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Optical Switch]]",
+      "resolved": "urn:visionflow:linked:optical-switch",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Post-Quantum Security]]",
+      "resolved": "urn:visionflow:linked:post-quantum-security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Communication Network]]",
+      "resolved": "urn:visionflow:linked:quantum-communication-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Cryptography]]",
+      "resolved": "urn:visionflow:linked:quantum-cryptography",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Key Distribution]]",
+      "resolved": "urn:visionflow:linked:quantum-key-distribution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Light Source]]",
+      "resolved": "urn:visionflow:linked:quantum-light-source",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quantum Memory Unit]]",
+      "resolved": "urn:visionflow:linked:quantum-memory-unit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Single Photon Detector]]",
+      "resolved": "urn:visionflow:linked:single-photon-detector",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ultra-Secure Communication]]",
+      "resolved": "urn:visionflow:linked:ultra-secure-communication",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vibration Isolation]]",
+      "resolved": "urn:visionflow:linked:vibration-isolation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InfrastructureDomain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Network Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:network-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Physical Layer]]",
+      "resolved": "urn:visionflow:owl:class:physical-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Power Supply]]",
+      "resolved": "urn:visionflow:owl:class:power-supply",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Physical device utilizing quantum mechanics principles to enable quantum key distribution (QKD) or entanglement transmission for ultra-secure communication channels.

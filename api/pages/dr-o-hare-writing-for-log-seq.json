@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72",
+  "title": "Dr O'Hare Writing for LogSeq",
+  "slug": "dr-o-hare-writing-for-log-seq",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:dr-o-hare-writing-for-log-seq",
+  "domain": "infrastructure",
+  "definition": "Dr O'Hare Writing for LogSeq is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "author-year",
+      "label": "Author YEAR"
+    },
+    {
+      "slug": "hulsmann2008ethics",
+      "label": "hulsmann2008ethics"
+    },
+    {
+      "slug": "nakamoto-2008",
+      "label": "Nakamoto 2008"
+    },
+    {
+      "slug": "wiki-link",
+      "label": "WikiLink"
+    },
+    {
+      "slug": "wiki-links",
+      "label": "WikiLinks"
+    },
+    {
+      "slug": "cypherpunk",
+      "label": "cypherpunk"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    }
+  ],
+  "backlinks": []
+}

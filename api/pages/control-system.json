@@ -1,0 +1,223 @@
+{
+  "id": "urn:visionflow:page:afd8c149cd5031555c95631eac6ec32c80ed3bc2eed7bcf6fe5983ea4840f3f5",
+  "title": "Control System",
+  "slug": "control-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:control-system",
+  "domain": "robotics",
+  "definition": "Control system encompasses the computational and hardware subsystems that sense environmental state, evaluate performance against desired objectives, and generate actuation commands to regulate robot behaviour toward goals. Control systems form the core feedback loop linking [[Robot Perception]], [[Motion Planning]], and [[Actuator Control]] to produce coordinated, goal-directed robot action.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:feedback-systems",
+      "label": "Feedback Systems"
+    },
+    {
+      "id": "urn:visionflow:linked:robotic-systems",
+      "label": "Robotic Systems"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:actuator-driver",
+        "label": "Actuator Driver"
+      },
+      {
+        "id": "urn:visionflow:linked:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-interface",
+        "label": "Sensor Interface"
+      },
+      {
+        "id": "urn:visionflow:owl:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:actuator-output",
+        "label": "Actuator Output"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-computation",
+        "label": "Real-Time Computation"
+      },
+      {
+        "id": "urn:visionflow:linked:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:visionflow:linked:timing-synchronisation",
+        "label": "Timing Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "id": "urn:visionflow:linked:stabilisation",
+        "label": "Stabilisation"
+      },
+      {
+        "id": "urn:visionflow:linked:task-execution",
+        "label": "Task Execution"
+      },
+      {
+        "id": "urn:visionflow:owl:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator-control",
+      "label": "Actuator Control"
+    },
+    {
+      "slug": "actuator-driver",
+      "label": "Actuator Driver"
+    },
+    {
+      "slug": "actuator-output",
+      "label": "Actuator Output"
+    },
+    {
+      "slug": "actuators",
+      "label": "Actuators"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "controller",
+      "label": "Controller"
+    },
+    {
+      "slug": "feedback-systems",
+      "label": "Feedback Systems"
+    },
+    {
+      "slug": "learning-from-demonstration",
+      "label": "Learning from Demonstration"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "pid-control",
+      "label": "PID Control"
+    },
+    {
+      "slug": "real-time-computation",
+      "label": "Real-Time Computation"
+    },
+    {
+      "slug": "real-time-operating-systems",
+      "label": "Real-Time Operating Systems"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
+    },
+    {
+      "slug": "robotic-systems",
+      "label": "Robotic Systems"
+    },
+    {
+      "slug": "sensor-input",
+      "label": "Sensor Input"
+    },
+    {
+      "slug": "sensor-interface",
+      "label": "Sensor Interface"
+    },
+    {
+      "slug": "stabilisation",
+      "label": "Stabilisation"
+    },
+    {
+      "slug": "task-execution",
+      "label": "Task Execution"
+    },
+    {
+      "slug": "timing-synchronisation",
+      "label": "Timing Synchronisation"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open-Loop Control"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

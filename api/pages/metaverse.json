@@ -1,0 +1,2107 @@
+{
+  "id": "urn:visionflow:page:0f10c04725802e53af1b4240ffe64ccde9b80b905b5505f5a15cf87526880fc9",
+  "title": "Metaverse",
+  "slug": "metaverse",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:metaverse",
+  "domain": "spatial-computing",
+  "definition": "A convergent network of persistent, synchronous 3D virtual worlds, augmented reality environments, and internet platforms that enable shared spatial computing experiences with interoperable digital assets, persistent identity, and real-time social interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:multiverse",
+      "label": "Multiverse"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:social-system",
+        "label": "Social System"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronous-interaction",
+        "label": "Synchronous Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:user-identity-system",
+        "label": "User Identity System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:visionflow:owl:class:persistent-state",
+        "label": "Persistent State"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:3-d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-synchronization",
+        "label": "Real-time Synchronization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-world-portability",
+        "label": "Cross-World Portability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:visionflow:owl:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-rendering",
+      "label": "3D Rendering"
+    },
+    {
+      "slug": "content-distribution-network",
+      "label": "Content Distribution Network"
+    },
+    {
+      "slug": "cross-world-portability",
+      "label": "Cross-World Portability"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "ieee-p2048",
+      "label": "IEEE P2048"
+    },
+    {
+      "slug": "internet",
+      "label": "Internet"
+    },
+    {
+      "slug": "interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "slug": "iso-23257",
+      "label": "ISO 23257"
+    },
+    {
+      "slug": "real-time-synchronization",
+      "label": "Real-time Synchronization"
+    },
+    {
+      "slug": "social-system",
+      "label": "Social System"
+    },
+    {
+      "slug": "synchronous-interaction",
+      "label": "Synchronous Interaction"
+    },
+    {
+      "slug": "user-identity-system",
+      "label": "User Identity System"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "immersive-entertainment",
+      "label": "Immersive Entertainment"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "persistent-state",
+      "label": "Persistent State"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "virtual-collaboration",
+      "label": "Virtual Collaboration"
+    },
+    {
+      "slug": "virtual-commerce",
+      "label": "Virtual Commerce"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "accessibility-standards",
+      "label": "Accessibility Standards"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "adaptive-virtual-experience",
+      "label": "Adaptive Virtual Experience"
+    },
+    {
+      "slug": "adaptive-virtual-world",
+      "label": "Adaptive Virtual World"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "adversarial-attacks",
+      "label": "Adversarial Attacks"
+    },
+    {
+      "slug": "ai-art-categorization",
+      "label": "Ai Art Categorization"
+    },
+    {
+      "slug": "ai-machine-learning",
+      "label": "Ai Machine Learning"
+    },
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "analog-to-digital-converter",
+      "label": "Analog To Digital Converter"
+    },
+    {
+      "slug": "animation-retargeting",
+      "label": "Animation Retargeting"
+    },
+    {
+      "slug": "animation-software",
+      "label": "Animation Software"
+    },
+    {
+      "slug": "appearance-translation",
+      "label": "Appearance Translation"
+    },
+    {
+      "slug": "ar-display-device",
+      "label": "Ar Display Device"
+    },
+    {
+      "slug": "ar-experiences",
+      "label": "Ar Experiences"
+    },
+    {
+      "slug": "ar-overlay",
+      "label": "Ar Overlay"
+    },
+    {
+      "slug": "ar-scene-graph",
+      "label": "Ar Scene Graph"
+    },
+    {
+      "slug": "arbitration-decision-engine",
+      "label": "Arbitration Decision Engine"
+    },
+    {
+      "slug": "arbitration-process",
+      "label": "Arbitration Process"
+    },
+    {
+      "slug": "arbitrator-expertise",
+      "label": "Arbitrator Expertise"
+    },
+    {
+      "slug": "archaeological-site-reconstruction",
+      "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "archival-standards",
+      "label": "Archival Standards"
+    },
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "asset-archive",
+      "label": "Asset Archive"
+    },
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "attention-aware-interaction",
+      "label": "Attention Aware Interaction"
+    },
+    {
+      "slug": "attribute-sharing",
+      "label": "Attribute Sharing"
+    },
+    {
+      "slug": "audio-parameters",
+      "label": "Audio Parameters"
+    },
+    {
+      "slug": "audio-spatialization",
+      "label": "Audio Spatialization"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "authentication-standards",
+      "label": "Authentication Standards"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "automated-market-making",
+      "label": "Automated Market Making"
+    },
+    {
+      "slug": "avatar-behavior",
+      "label": "Avatar Behavior"
+    },
+    {
+      "slug": "avatar-wearable",
+      "label": "Avatar Wearable"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "awareness",
+      "label": "Awareness"
+    },
+    {
+      "slug": "bim-software",
+      "label": "BIM Software"
+    },
+    {
+      "slug": "bim-virtual-model",
+      "label": "BIM Virtual Model"
+    },
+    {
+      "slug": "barter-system",
+      "label": "Barter System"
+    },
+    {
+      "slug": "behavioral-learning",
+      "label": "Behavioral Learning"
+    },
+    {
+      "slug": "benchmark-standard",
+      "label": "Benchmark Standard"
+    },
+    {
+      "slug": "binary-buffer",
+      "label": "Binary Buffer"
+    },
+    {
+      "slug": "binary-encoding",
+      "label": "Binary Encoding"
+    },
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    },
+    {
+      "slug": "calculation-parameters",
+      "label": "Calculation Parameters"
+    },
+    {
+      "slug": "calibration-standards",
+      "label": "Calibration Standards"
+    },
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    },
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "carbon-calculator",
+      "label": "Carbon Calculator"
+    },
+    {
+      "slug": "carbon-footprint-assessment",
+      "label": "Carbon Footprint Assessment"
+    },
+    {
+      "slug": "carbon-footprint-indicator",
+      "label": "Carbon Footprint Indicator"
+    },
+    {
+      "slug": "carbon-neutrality-planning",
+      "label": "Carbon Neutrality Planning"
+    },
+    {
+      "slug": "carbon-neutrality-verification",
+      "label": "Carbon Neutrality Verification"
+    },
+    {
+      "slug": "carbon-offset-certificate",
+      "label": "Carbon Offset Certificate"
+    },
+    {
+      "slug": "carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    },
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    },
+    {
+      "slug": "category-hierarchies",
+      "label": "Category Hierarchies"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "character-model",
+      "label": "Character Model"
+    },
+    {
+      "slug": "character-relationship-graph",
+      "label": "Character Relationship Graph"
+    },
+    {
+      "slug": "character-rigging",
+      "label": "Character Rigging"
+    },
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    },
+    {
+      "slug": "communication-software",
+      "label": "Communication Software"
+    },
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    },
+    {
+      "slug": "compatibility-standards",
+      "label": "Compatibility Standards"
+    },
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "compliance-standards",
+      "label": "Compliance Standards"
+    },
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "content-moderation-standards",
+      "label": "Content Moderation Standards"
+    },
+    {
+      "slug": "context-aware-response",
+      "label": "Context Aware Response"
+    },
+    {
+      "slug": "context-awareness-system",
+      "label": "Context Awareness System"
+    },
+    {
+      "slug": "controlled-vocabularies",
+      "label": "Controlled Vocabularies"
+    },
+    {
+      "slug": "controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    },
+    {
+      "slug": "credential-format-standard",
+      "label": "Credential Format Standard"
+    },
+    {
+      "slug": "cross-metaverse-commerce",
+      "label": "Cross Metaverse Commerce"
+    },
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "customer-rewards",
+      "label": "Customer Rewards"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "data-processing-hardware",
+      "label": "Data Processing Hardware"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "data-virtualization",
+      "label": "Data Virtualization"
+    },
+    {
+      "slug": "democratic-participation",
+      "label": "Democratic Participation"
+    },
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    },
+    {
+      "slug": "digital-actor-creation",
+      "label": "Digital Actor Creation"
+    },
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    },
+    {
+      "slug": "digital-art-application",
+      "label": "Digital Art Application"
+    },
+    {
+      "slug": "digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    },
+    {
+      "slug": "digital-asset-infrastructure",
+      "label": "Digital Asset Infrastructure"
+    },
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "digital-asset-trading",
+      "label": "Digital Asset Trading"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    },
+    {
+      "slug": "digital-content-layer",
+      "label": "Digital Content Layer"
+    },
+    {
+      "slug": "digital-content-overlay",
+      "label": "Digital Content Overlay"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-dualism",
+      "label": "Digital Dualism"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "digital-identity-management",
+      "label": "Digital Identity Management"
+    },
+    {
+      "slug": "digital-identity-standards",
+      "label": "Digital Identity Standards"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-marketplace",
+      "label": "Digital Marketplace"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    },
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "digital-signature-verification",
+      "label": "Digital Signature Verification"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "digital-twin-construction",
+      "label": "Digital Twin Construction"
+    },
+    {
+      "slug": "digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline"
+    },
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    },
+    {
+      "slug": "digital-twin-ecosystem",
+      "label": "Digital Twin Ecosystem"
+    },
+    {
+      "slug": "digital-twin-framework",
+      "label": "Digital Twin Framework"
+    },
+    {
+      "slug": "digital-twin-generation",
+      "label": "Digital Twin Generation"
+    },
+    {
+      "slug": "digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "distributed-authentication-architecture",
+      "label": "Distributed Authentication Architecture"
+    },
+    {
+      "slug": "distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "driver-software",
+      "label": "Driver Software"
+    },
+    {
+      "slug": "dynamic-character-animation",
+      "label": "Dynamic Character Animation"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "economic-parameters",
+      "label": "Economic Parameters"
+    },
+    {
+      "slug": "economic-participation",
+      "label": "Economic Participation"
+    },
+    {
+      "slug": "edge-computing-architecture",
+      "label": "Edge Computing Architecture"
+    },
+    {
+      "slug": "educational-narrative",
+      "label": "Educational Narrative"
+    },
+    {
+      "slug": "emotion-aware-interaction",
+      "label": "Emotion Aware Interaction"
+    },
+    {
+      "slug": "enterprise-architecture",
+      "label": "Enterprise Architecture"
+    },
+    {
+      "slug": "environmental-asset-market",
+      "label": "Environmental Asset Market"
+    },
+    {
+      "slug": "environmental-standards",
+      "label": "Environmental Standards"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event Driven Architecture"
+    },
+    {
+      "slug": "fast-spatial-queries",
+      "label": "Fast Spatial Queries"
+    },
+    {
+      "slug": "fluid-simulation",
+      "label": "Fluid Simulation"
+    },
+    {
+      "slug": "format-parser",
+      "label": "Format Parser"
+    },
+    {
+      "slug": "game-narratives",
+      "label": "Game Narratives"
+    },
+    {
+      "slug": "gas-fee-market",
+      "label": "Gas Fee Market"
+    },
+    {
+      "slug": "gdpr-article45",
+      "label": "Gdpr Article45"
+    },
+    {
+      "slug": "geospatial-engine",
+      "label": "Geospatial Engine"
+    },
+    {
+      "slug": "global-illumination",
+      "label": "Global Illumination"
+    },
+    {
+      "slug": "global-metaverse-operations",
+      "label": "Global Metaverse Operations"
+    },
+    {
+      "slug": "gltf-standard",
+      "label": "Gltf Standard"
+    },
+    {
+      "slug": "governance-architecture",
+      "label": "Governance Architecture"
+    },
+    {
+      "slug": "governance-board",
+      "label": "Governance Board"
+    },
+    {
+      "slug": "grammar-system",
+      "label": "Grammar System"
+    },
+    {
+      "slug": "granular-consent-control",
+      "label": "Granular Consent Control"
+    },
+    {
+      "slug": "hanim-standard",
+      "label": "Hanim Standard"
+    },
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "hardware-resources",
+      "label": "Hardware Resources"
+    },
+    {
+      "slug": "healthcare-application-classification",
+      "label": "Healthcare Application Classification"
+    },
+    {
+      "slug": "human-centred-values",
+      "label": "Human Centred Values"
+    },
+    {
+      "slug": "ieee-p2733-standards",
+      "label": "Ieee P2733 Standards"
+    },
+    {
+      "slug": "ieee7000-standard",
+      "label": "Ieee7000 Standard"
+    },
+    {
+      "slug": "image-processing-software",
+      "label": "Image Processing Software"
+    },
+    {
+      "slug": "immersive-audio-system",
+      "label": "Immersive Audio System"
+    },
+    {
+      "slug": "immersive-entertainment",
+      "label": "Immersive Entertainment"
+    },
+    {
+      "slug": "immersive-experience-pipeline",
+      "label": "Immersive Experience Pipeline"
+    },
+    {
+      "slug": "immersive-experiences",
+      "label": "Immersive Experiences"
+    },
+    {
+      "slug": "immersive-gaming",
+      "label": "Immersive Gaming"
+    },
+    {
+      "slug": "immersive-interface",
+      "label": "Immersive Interface"
+    },
+    {
+      "slug": "immersive-learning",
+      "label": "Immersive Learning"
+    },
+    {
+      "slug": "immersive-technology",
+      "label": "Immersive Technology"
+    },
+    {
+      "slug": "inclusive-xr-design",
+      "label": "Inclusive Xr Design"
+    },
+    {
+      "slug": "inclusive-xr-experience",
+      "label": "Inclusive Xr Experience"
+    },
+    {
+      "slug": "inflation-control",
+      "label": "Inflation Control"
+    },
+    {
+      "slug": "infrared-camera",
+      "label": "Infrared Camera"
+    },
+    {
+      "slug": "infrared-illuminator",
+      "label": "Infrared Illuminator"
+    },
+    {
+      "slug": "infrared-led-illuminator",
+      "label": "Infrared Led Illuminator"
+    },
+    {
+      "slug": "infrared-light-source",
+      "label": "Infrared Light Source"
+    },
+    {
+      "slug": "infrastructure-architecture",
+      "label": "Infrastructure Architecture"
+    },
+    {
+      "slug": "intelligent-npc",
+      "label": "Intelligent NPC"
+    },
+    {
+      "slug": "interface-standards",
+      "label": "Interface Standards"
+    },
+    {
+      "slug": "interoperability-architecture",
+      "label": "Interoperability Architecture"
+    },
+    {
+      "slug": "interoperability-standard",
+      "label": "Interoperability Standard"
+    },
+    {
+      "slug": "iso-standards",
+      "label": "Iso Standards"
+    },
+    {
+      "slug": "jurisdictional-boundary",
+      "label": "Jurisdictional Boundary"
+    },
+    {
+      "slug": "knowledge-sharing",
+      "label": "Knowledge Sharing"
+    },
+    {
+      "slug": "land-economics",
+      "label": "Land Economics"
+    },
+    {
+      "slug": "land-parcel",
+      "label": "Land Parcel"
+    },
+    {
+      "slug": "land-scarcity",
+      "label": "Land Scarcity"
+    },
+    {
+      "slug": "learning-analytics",
+      "label": "Learning Analytics"
+    },
+    {
+      "slug": "learning-component",
+      "label": "Learning Component"
+    },
+    {
+      "slug": "learning-management-system",
+      "label": "Learning Management System"
+    },
+    {
+      "slug": "learning-module",
+      "label": "Learning Module"
+    },
+    {
+      "slug": "learning-resources",
+      "label": "Learning Resources"
+    },
+    {
+      "slug": "level-of-detail",
+      "label": "Level of Detail"
+    },
+    {
+      "slug": "lidar-scanning",
+      "label": "Lidar Scanning"
+    },
+    {
+      "slug": "light-parameters",
+      "label": "Light Parameters"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "long-term-archival",
+      "label": "Long Term Archival"
+    },
+    {
+      "slug": "machine-learning-framework",
+      "label": "Machine Learning Framework"
+    },
+    {
+      "slug": "machine-learning-infrastructure",
+      "label": "Machine Learning Infrastructure"
+    },
+    {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
+      "slug": "machine-learning-models",
+      "label": "Machine Learning Models"
+    },
+    {
+      "slug": "machine-learning-platform",
+      "label": "Machine Learning Platform"
+    },
+    {
+      "slug": "marker-based-tracking",
+      "label": "Marker Based Tracking"
+    },
+    {
+      "slug": "marketplace-integration",
+      "label": "Marketplace Integration"
+    },
+    {
+      "slug": "mathematical-hard-problems",
+      "label": "Mathematical Hard Problems"
+    },
+    {
+      "slug": "media-library",
+      "label": "Media Library"
+    },
+    {
+      "slug": "mesh-routing-software",
+      "label": "Mesh Routing Software"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "metadata-registry",
+      "label": "Metadata Registry"
+    },
+    {
+      "slug": "metadata-repository",
+      "label": "Metadata Repository"
+    },
+    {
+      "slug": "metadata-standards",
+      "label": "Metadata Standards"
+    },
+    {
+      "slug": "metaverse-application-platform",
+      "label": "Metaverse Application Platform"
+    },
+    {
+      "slug": "metaverse-architecture",
+      "label": "Metaverse Architecture"
+    },
+    {
+      "slug": "metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    },
+    {
+      "slug": "metaverse-stack",
+      "label": "Metaverse Stack"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "metaverse-venue",
+      "label": "Metaverse Venue"
+    },
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "model-architecture",
+      "label": "Model Architecture"
+    },
+    {
+      "slug": "model-transparency",
+      "label": "Model Transparency"
+    },
+    {
+      "slug": "monetary-sovereignty",
+      "label": "Monetary Sovereignty"
+    },
+    {
+      "slug": "monetary-system",
+      "label": "Monetary System"
+    },
+    {
+      "slug": "monitoring-dashboard",
+      "label": "Monitoring Dashboard"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "motion-markers",
+      "label": "Motion Markers"
+    },
+    {
+      "slug": "motion-solver-software",
+      "label": "Motion Solver Software"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    },
+    {
+      "slug": "multi-party-royalties",
+      "label": "Multi Party Royalties"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "npc-interaction",
+      "label": "NPC Interaction"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "namespace-declarations",
+      "label": "Namespace Declarations"
+    },
+    {
+      "slug": "narrative-arc",
+      "label": "Narrative Arc"
+    },
+    {
+      "slug": "narrative-content",
+      "label": "Narrative Content"
+    },
+    {
+      "slug": "narrative-theme",
+      "label": "Narrative Theme"
+    },
+    {
+      "slug": "nearest-neighbor-search",
+      "label": "Nearest Neighbor Search"
+    },
+    {
+      "slug": "network-function-virtualization",
+      "label": "Network Function Virtualization"
+    },
+    {
+      "slug": "network-standards",
+      "label": "Network Standards"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "noise-function-library",
+      "label": "Noise Function Library"
+    },
+    {
+      "slug": "non-linear-narrative",
+      "label": "Non Linear Narrative"
+    },
+    {
+      "slug": "non-linear-storytelling",
+      "label": "Non Linear Storytelling"
+    },
+    {
+      "slug": "owl-class-hierarchy",
+      "label": "OWL Class Hierarchy"
+    },
+    {
+      "slug": "ontology-definition",
+      "label": "Ontology Definition"
+    },
+    {
+      "slug": "optical-calibration-target",
+      "label": "Optical Calibration Target"
+    },
+    {
+      "slug": "parameter-modulation-system",
+      "label": "Parameter Modulation System"
+    },
+    {
+      "slug": "parameter-set",
+      "label": "Parameter Set"
+    },
+    {
+      "slug": "parametric-modeling",
+      "label": "Parametric Modeling"
+    },
+    {
+      "slug": "parental-controls",
+      "label": "Parental Controls"
+    },
+    {
+      "slug": "participant-authentication",
+      "label": "Participant Authentication"
+    },
+    {
+      "slug": "participant-coordination",
+      "label": "Participant Coordination"
+    },
+    {
+      "slug": "participant-management-system",
+      "label": "Participant Management System"
+    },
+    {
+      "slug": "participant-protection",
+      "label": "Participant Protection"
+    },
+    {
+      "slug": "participation-framework",
+      "label": "Participation Framework"
+    },
+    {
+      "slug": "participatory-policy-making",
+      "label": "Participatory Policy Making"
+    },
+    {
+      "slug": "particle-system",
+      "label": "Particle System"
+    },
+    {
+      "slug": "particle-systems",
+      "label": "Particle Systems"
+    },
+    {
+      "slug": "performance-benchmarks",
+      "label": "Performance Benchmarks"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "persistent-ar-placement",
+      "label": "Persistent AR Placement"
+    },
+    {
+      "slug": "personalized-virtual-experiences",
+      "label": "Personalized Virtual Experiences"
+    },
+    {
+      "slug": "physical-hardware",
+      "label": "Physical Hardware"
+    },
+    {
+      "slug": "physical-network-hardware",
+      "label": "Physical Network Hardware"
+    },
+    {
+      "slug": "physical-virtual-registration",
+      "label": "Physical Virtual Registration"
+    },
+    {
+      "slug": "physics-material",
+      "label": "Physics Material"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    },
+    {
+      "slug": "platform-middleware",
+      "label": "Platform Middleware"
+    },
+    {
+      "slug": "privacy-architecture",
+      "label": "Privacy Architecture"
+    },
+    {
+      "slug": "privacy-preserving-data-sharing",
+      "label": "Privacy Preserving Data Sharing"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "processing-hardware",
+      "label": "Processing Hardware"
+    },
+    {
+      "slug": "proteus-effect",
+      "label": "Proteus Effect"
+    },
+    {
+      "slug": "provenance-standard",
+      "label": "Provenance Standard"
+    },
+    {
+      "slug": "proximity-search",
+      "label": "Proximity Search"
+    },
+    {
+      "slug": "psychological-research",
+      "label": "Psychological Research"
+    },
+    {
+      "slug": "research-summary",
+      "label": "RESEARCH_SUMMARY"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "real-time-character-animation",
+      "label": "Real Time Character Animation"
+    },
+    {
+      "slug": "real-time-digital-twin-synchronization",
+      "label": "Real Time Digital Twin Synchronization"
+    },
+    {
+      "slug": "reality-virtuality-continuum",
+      "label": "Reality Virtuality Continuum"
+    },
+    {
+      "slug": "reference-architecture",
+      "label": "Reference Architecture"
+    },
+    {
+      "slug": "regulatory-standards",
+      "label": "Regulatory Standards"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "resolution-test-chart",
+      "label": "Resolution Test Chart"
+    },
+    {
+      "slug": "revenue-sharing",
+      "label": "Revenue Sharing"
+    },
+    {
+      "slug": "reward-distribution",
+      "label": "Reward Distribution"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    },
+    {
+      "slug": "ritual-artifact",
+      "label": "Ritual Artifact"
+    },
+    {
+      "slug": "safe-immersive-experience",
+      "label": "Safe Immersive Experience"
+    },
+    {
+      "slug": "scalable-architecture",
+      "label": "Scalable Architecture"
+    },
+    {
+      "slug": "schema-registry",
+      "label": "Schema Registry"
+    },
+    {
+      "slug": "search-discovery",
+      "label": "Search Discovery"
+    },
+    {
+      "slug": "search-engine",
+      "label": "Search Engine"
+    },
+    {
+      "slug": "search-index",
+      "label": "Search Index"
+    },
+    {
+      "slug": "search-interface",
+      "label": "Search Interface"
+    },
+    {
+      "slug": "secondary-market-integration",
+      "label": "Secondary Market Integration"
+    },
+    {
+      "slug": "secure-data-sharing",
+      "label": "Secure Data Sharing"
+    },
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    },
+    {
+      "slug": "semantic-web-standards",
+      "label": "Semantic Web Standards"
+    },
+    {
+      "slug": "separation-of-powers",
+      "label": "Separation Of Powers"
+    },
+    {
+      "slug": "service-oriented-architecture",
+      "label": "Service Oriented Architecture"
+    },
+    {
+      "slug": "shared-ar-experiences",
+      "label": "Shared Ar Experiences"
+    },
+    {
+      "slug": "shared-knowledge-base",
+      "label": "Shared Knowledge Base"
+    },
+    {
+      "slug": "shared-ownership-model",
+      "label": "Shared Ownership Model"
+    },
+    {
+      "slug": "shared-spatial-anchors",
+      "label": "Shared Spatial Anchors"
+    },
+    {
+      "slug": "shared-virtual-world",
+      "label": "Shared Virtual World"
+    },
+    {
+      "slug": "skos-vocabulary",
+      "label": "Skos Vocabulary"
+    },
+    {
+      "slug": "soft-body-dynamics",
+      "label": "Soft Body Dynamics"
+    },
+    {
+      "slug": "software-platform",
+      "label": "Software Platform"
+    },
+    {
+      "slug": "sparql-query-engine",
+      "label": "Sparql Query Engine"
+    },
+    {
+      "slug": "spatial-anchoring",
+      "label": "Spatial Anchoring"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial Anchors"
+    },
+    {
+      "slug": "spatial-audio-processor",
+      "label": "Spatial Audio Processor"
+    },
+    {
+      "slug": "spatial-audio-system",
+      "label": "Spatial Audio System"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "spatial-calibration",
+      "label": "Spatial Calibration"
+    },
+    {
+      "slug": "spatial-computing-system",
+      "label": "Spatial Computing System"
+    },
+    {
+      "slug": "spatial-coordinates",
+      "label": "Spatial Coordinates"
+    },
+    {
+      "slug": "spatial-database",
+      "label": "Spatial Database"
+    },
+    {
+      "slug": "spatial-interaction",
+      "label": "Spatial Interaction"
+    },
+    {
+      "slug": "spatial-measurement",
+      "label": "Spatial Measurement"
+    },
+    {
+      "slug": "spatial-mesh",
+      "label": "Spatial Mesh"
+    },
+    {
+      "slug": "spatial-metadata",
+      "label": "Spatial Metadata"
+    },
+    {
+      "slug": "spatial-presence",
+      "label": "Spatial Presence"
+    },
+    {
+      "slug": "spatial-queries",
+      "label": "Spatial Queries"
+    },
+    {
+      "slug": "spatial-tracking-system",
+      "label": "Spatial Tracking System"
+    },
+    {
+      "slug": "spatial-tracking",
+      "label": "Spatial Tracking"
+    },
+    {
+      "slug": "spatial-user-interfaces",
+      "label": "Spatial User Interfaces"
+    },
+    {
+      "slug": "standard-format-support",
+      "label": "Standard Format Support"
+    },
+    {
+      "slug": "standardization-bodies",
+      "label": "Standardization Bodies"
+    },
+    {
+      "slug": "standardized-asset-classification",
+      "label": "Standardized Asset Classification"
+    },
+    {
+      "slug": "standards-compliance",
+      "label": "Standards Compliance"
+    },
+    {
+      "slug": "standards-conformance-testing",
+      "label": "Standards Conformance Testing"
+    },
+    {
+      "slug": "standards-conformance",
+      "label": "Standards Conformance"
+    },
+    {
+      "slug": "standards-documentation",
+      "label": "Standards Documentation"
+    },
+    {
+      "slug": "standards-validation",
+      "label": "Standards Validation"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    },
+    {
+      "slug": "symbolic-object-library",
+      "label": "Symbolic Object Library"
+    },
+    {
+      "slug": "technical-standards",
+      "label": "Technical Standards"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "temporary-asset-access",
+      "label": "Temporary Asset Access"
+    },
+    {
+      "slug": "therapeutic-vr",
+      "label": "Therapeutic VR"
+    },
+    {
+      "slug": "third-party-auditor",
+      "label": "Third Party Auditor"
+    },
+    {
+      "slug": "training-data-repository",
+      "label": "Training Data Repository"
+    },
+    {
+      "slug": "transparency-metrics",
+      "label": "Transparency Metrics"
+    },
+    {
+      "slug": "transparency-notice",
+      "label": "Transparency Notice"
+    },
+    {
+      "slug": "transparent-data-processing",
+      "label": "Transparent Data Processing"
+    },
+    {
+      "slug": "transparent-decision-making",
+      "label": "Transparent Decision Making"
+    },
+    {
+      "slug": "transparent-governance",
+      "label": "Transparent Governance"
+    },
+    {
+      "slug": "transparent-revenue-sharing",
+      "label": "Transparent Revenue Sharing"
+    },
+    {
+      "slug": "trust-architecture",
+      "label": "Trust Architecture"
+    },
+    {
+      "slug": "unified-hardware-access",
+      "label": "Unified Hardware Access"
+    },
+    {
+      "slug": "unique-content-variation",
+      "label": "Unique Content Variation"
+    },
+    {
+      "slug": "user-awareness",
+      "label": "User Awareness"
+    },
+    {
+      "slug": "user-context-awareness",
+      "label": "User Context Awareness"
+    },
+    {
+      "slug": "user-interface-architecture",
+      "label": "User Interface Architecture"
+    },
+    {
+      "slug": "user-interface-standard",
+      "label": "User Interface Standard"
+    },
+    {
+      "slug": "vr-controllers",
+      "label": "VR Controllers"
+    },
+    {
+      "slug": "vr-rendering-engine",
+      "label": "VR Rendering Engine"
+    },
+    {
+      "slug": "vrm-format",
+      "label": "VRM Format"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "verifiable-credential-standard",
+      "label": "Verifiable Credential Standard"
+    },
+    {
+      "slug": "verifiable-data-registry",
+      "label": "Verifiable Data Registry"
+    },
+    {
+      "slug": "verification-standard",
+      "label": "Verification Standard"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-asset-trading",
+      "label": "Virtual Asset Trading"
+    },
+    {
+      "slug": "virtual-camera",
+      "label": "Virtual Camera"
+    },
+    {
+      "slug": "virtual-city-model",
+      "label": "Virtual City Model"
+    },
+    {
+      "slug": "virtual-classroom",
+      "label": "Virtual Classroom"
+    },
+    {
+      "slug": "virtual-clinic",
+      "label": "Virtual Clinic"
+    },
+    {
+      "slug": "virtual-collaboration",
+      "label": "Virtual Collaboration"
+    },
+    {
+      "slug": "virtual-commerce",
+      "label": "Virtual Commerce"
+    },
+    {
+      "slug": "virtual-commissioning",
+      "label": "Virtual Commissioning"
+    },
+    {
+      "slug": "virtual-community-platform",
+      "label": "Virtual Community Platform"
+    },
+    {
+      "slug": "virtual-community-platform",
+      "label": "Virtual Community Platform"
+    },
+    {
+      "slug": "virtual-community-practice",
+      "label": "Virtual Community Practice"
+    },
+    {
+      "slug": "virtual-concerts",
+      "label": "Virtual Concerts"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "Virtual Currency"
+    },
+    {
+      "slug": "virtual-destination",
+      "label": "Virtual Destination"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "Virtual Economy Domain"
+    },
+    {
+      "slug": "virtual-economy-infrastructure",
+      "label": "Virtual Economy Infrastructure"
+    },
+    {
+      "slug": "virtual-environment-connectivity",
+      "label": "Virtual Environment Connectivity"
+    },
+    {
+      "slug": "virtual-environment-creation",
+      "label": "Virtual Environment Creation"
+    },
+    {
+      "slug": "virtual-environment-specification",
+      "label": "Virtual Environment Specification"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    },
+    {
+      "slug": "virtual-event-platform",
+      "label": "Virtual Event Platform"
+    },
+    {
+      "slug": "virtual-event-platform",
+      "label": "Virtual Event Platform"
+    },
+    {
+      "slug": "virtual-factory",
+      "label": "Virtual Factory"
+    },
+    {
+      "slug": "virtual-field-trip",
+      "label": "Virtual Field Trip"
+    },
+    {
+      "slug": "virtual-group-dynamics",
+      "label": "Virtual Group Dynamics"
+    },
+    {
+      "slug": "virtual-identity",
+      "label": "Virtual Identity"
+    },
+    {
+      "slug": "virtual-interaction-logging",
+      "label": "Virtual Interaction Logging"
+    },
+    {
+      "slug": "virtual-labor",
+      "label": "Virtual Labor"
+    },
+    {
+      "slug": "virtual-land-rights",
+      "label": "Virtual Land Rights"
+    },
+    {
+      "slug": "virtual-location",
+      "label": "Virtual Location"
+    },
+    {
+      "slug": "virtual-model",
+      "label": "Virtual Model"
+    },
+    {
+      "slug": "virtual-museum-tour",
+      "label": "Virtual Museum Tour"
+    },
+    {
+      "slug": "virtual-nation-state",
+      "label": "Virtual Nation State"
+    },
+    {
+      "slug": "virtual-network",
+      "label": "Virtual Network"
+    },
+    {
+      "slug": "virtual-object-pose",
+      "label": "Virtual Object Pose"
+    },
+    {
+      "slug": "virtual-objects",
+      "label": "Virtual Objects"
+    },
+    {
+      "slug": "virtual-physical-collision",
+      "label": "Virtual Physical Collision"
+    },
+    {
+      "slug": "virtual-presence",
+      "label": "Virtual Presence"
+    },
+    {
+      "slug": "virtual-production-pipeline",
+      "label": "Virtual Production Pipeline"
+    },
+    {
+      "slug": "virtual-production-workflow",
+      "label": "Virtual Production Workflow"
+    },
+    {
+      "slug": "virtual-replica",
+      "label": "Virtual Replica"
+    },
+    {
+      "slug": "virtual-scouting",
+      "label": "Virtual Scouting"
+    },
+    {
+      "slug": "virtual-set-design",
+      "label": "Virtual Set Design"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "Virtual Society Domain"
+    },
+    {
+      "slug": "virtual-society-regulations",
+      "label": "Virtual Society Regulations"
+    },
+    {
+      "slug": "virtual-stage",
+      "label": "Virtual Stage"
+    },
+    {
+      "slug": "virtual-theater",
+      "label": "Virtual Theater"
+    },
+    {
+      "slug": "virtual-tour",
+      "label": "Virtual Tour"
+    },
+    {
+      "slug": "virtual-tourism",
+      "label": "Virtual Tourism"
+    },
+    {
+      "slug": "virtual-training",
+      "label": "Virtual Training"
+    },
+    {
+      "slug": "virtual-wedding",
+      "label": "Virtual Wedding"
+    },
+    {
+      "slug": "virtual-world-building",
+      "label": "Virtual World Building"
+    },
+    {
+      "slug": "virtual-world-creation",
+      "label": "Virtual World Creation"
+    },
+    {
+      "slug": "virtual-world-infrastructure",
+      "label": "Virtual World Infrastructure"
+    },
+    {
+      "slug": "virtual-world-platform",
+      "label": "Virtual World Platform"
+    },
+    {
+      "slug": "virtual-world-traversal",
+      "label": "Virtual World Traversal"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "visual-marker",
+      "label": "Visual Marker"
+    },
+    {
+      "slug": "vocabulary-governance",
+      "label": "Vocabulary Governance"
+    },
+    {
+      "slug": "vocabulary-services",
+      "label": "Vocabulary Services"
+    },
+    {
+      "slug": "watermarking-service",
+      "label": "Watermarking Service"
+    },
+    {
+      "slug": "wearable-computing-platform",
+      "label": "Wearable Computing Platform"
+    },
+    {
+      "slug": "wearable-device-integration",
+      "label": "Wearable Device Integration"
+    },
+    {
+      "slug": "xr-accessibility-standards",
+      "label": "XR Accessibility Standards"
+    },
+    {
+      "slug": "xr-device",
+      "label": "XR Device"
+    },
+    {
+      "slug": "xr-headset",
+      "label": "XR Headset"
+    },
+    {
+      "slug": "xr-meeting-space",
+      "label": "XR Meeting Space"
+    },
+    {
+      "slug": "xr-runtime-environment",
+      "label": "XR Runtime Environment"
+    },
+    {
+      "slug": "xr-testing-infrastructure",
+      "label": "XR Testing Infrastructure"
+    },
+    {
+      "slug": "zk-snarks",
+      "label": "ZK-SNARKs"
+    },
+    {
+      "slug": "zk-starks",
+      "label": "ZK-STARKs"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

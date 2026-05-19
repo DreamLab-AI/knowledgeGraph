@@ -1,21 +1,343 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#EthicalFramework
-uri:: urn:visionclaw:concept:artificial-intelligence:ethical-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ethical-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Ethical Framework
-content-hash:: sha256-12-d75e474bc916
-legacy-term-id:: PC-0011
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#EthicalFramework
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ethical-framework
 public:: true
+
+# Ethical Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6",
+  "@type": "Page",
+  "vc:slug": "ethical-framework",
+  "title": "Ethical Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:acm-code-of-ethics",
+      "vc:label": "ACM Code of Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-principle",
+      "vc:label": "AI Governance Principle"
+    },
+    {
+      "@id": "urn:visionflow:linked:asilomar-ai-principles",
+      "vc:label": "Asilomar AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomy",
+      "vc:label": "Autonomy"
+    },
+    {
+      "@id": "urn:visionflow:linked:beneficence",
+      "vc:label": "Beneficence"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-dignity",
+      "vc:label": "Human Dignity"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-ethically-aligned-design",
+      "vc:label": "IEEE Ethically Aligned Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:justice",
+      "vc:label": "Justice"
+    },
+    {
+      "@id": "urn:visionflow:linked:montreal-declaration-for-responsible-ai",
+      "vc:label": "Montreal Declaration for Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-maleficence",
+      "vc:label": "Non-maleficence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d75e474bc916"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#EthicalFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "PC-0011"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Ethical Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ethical-framework"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ethical-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ethical-framework",
+  "@type": "OntologyClass",
+  "label": "Ethical Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:ai-governance-principle",
+      "vc:label": "AI Governance Principle"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An Ethical Framework is a structured set of moral principles, values, and reasoning methods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm. Ethical frameworks for AI translate philosophical traditions and moral reasoning into practical guidelines addressing unique challenges posed by algorithmic decision-making: how to ensure fairness when training data reflects historical discrimination, how to balance accuracy with transparency when complex models resist interpretation, how to assign responsibility when autonomous systems cause harm, and how to preserve human agency when AI systems make consequential recommendations. These frameworks draw from multiple ethical traditions including consequentialism (evaluating AI systems by their outcomes and impacts), deontology (establishing duties and rules AI systems must follow regardless of consequences), virtue ethics (cultivating organizational practices promoting responsible AI development), and care ethics (emphasizing relationships and contextual understanding). Ethical frameworks provide structured approaches for identifying, analyzing, and resolvin",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ethical-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[ACM Code of Ethics]]",
+      "resolved": "urn:visionflow:linked:acm-code-of-ethics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Governance Principle]]",
+      "resolved": "urn:visionflow:linked:ai-governance-principle",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asilomar AI Principles]]",
+      "resolved": "urn:visionflow:linked:asilomar-ai-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomy]]",
+      "resolved": "urn:visionflow:linked:autonomy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Beneficence]]",
+      "resolved": "urn:visionflow:linked:beneficence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human Dignity]]",
+      "resolved": "urn:visionflow:linked:human-dignity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE Ethically Aligned Design]]",
+      "resolved": "urn:visionflow:linked:ieee-ethically-aligned-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Justice]]",
+      "resolved": "urn:visionflow:linked:justice",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Montreal Declaration for Responsible AI]]",
+      "resolved": "urn:visionflow:linked:montreal-declaration-for-responsible-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Non-maleficence]]",
+      "resolved": "urn:visionflow:linked:non-maleficence",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Twin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Fairness]]",
+      "resolved": "urn:visionflow:owl:class:fairness",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Privacy]]",
+      "resolved": "urn:visionflow:owl:class:privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparency]]",
+      "resolved": "urn:visionflow:owl:class:transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An Ethical Framework is a structured set of moral principles, values, and reasoning methods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm. Ethical frameworks for AI translate philosophical traditions and moral reasoning into practical guidelines addressing unique challenges posed by algorithmic decision-making: how to ensure fairness when training data reflects historical discrimination, how to balance accuracy with transparency when complex models resist interpretation, how to assign responsibility when autonomous systems cause harm, and how to preserve human agency when AI systems make consequential recommendations. These frameworks draw from multiple ethical traditions including consequentialism (evaluating AI systems by their outcomes and impacts), deontology (establishing duties and rules AI systems must follow regardless of consequences), virtue ethics (cultivating organizational practices promoting responsible AI development), and care ethics (emphasizing relationships and contextual understanding). Ethical frameworks provide structured approaches for identifying, analyzing, and resolving moral dilemmas arising throughout the AI lifecycle, from data collection practices that may violate privacy, to model training that may embed biases, to deployment contexts where AI recommendations may conflict with human values.

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:1dc6cdbb2c6559f1445db487cfdcd00f3ae49ea4a3d0e2bf3e473330aaa0b646",
+  "title": "AI System Component",
+  "slug": "ai-system-component",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ai-system-component",
+  "domain": "artificial-intelligence",
+  "definition": "AI System Component refers to the modular functional units that constitute a complete artificial intelligence system. These components include data ingestion pipelines, feature engineering modules, model training infrastructure, inference engines, monitoring systems, and user interfaces. Modern AI systems adopt microservices architectures where components communicate via APIs, enabling independent scaling, maintenance, and version control. Key components span data management (storage, versioning), compute infrastructure (training clusters, inference servers), and operational tooling (experiment tracking, model registry, continuous evaluation).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "['owl:Thing']"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    }
+  ]
+}

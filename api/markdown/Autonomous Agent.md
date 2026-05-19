@@ -1,24 +1,500 @@
-iri:: http://narrativegoldmine.com/spatial-computing#AutonomousAgent
-uri:: urn:visionclaw:concept:spatial-computing:autonomous-agent
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:spatial-computing:autonomous-agent
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: spatial-computing
-preferred-term:: Autonomous Agent
-content-hash:: sha256-12-60ad72b2cb99
-legacy-term-id:: 20231
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
-author-did::
-signature::
-contributors::
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/spatial-computing#AutonomousAgent
+legacy_uri:: urn:visionclaw:concept:spatial-computing:autonomous-agent
 public:: true
+
+# Autonomous Agent
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8",
+  "@type": "Page",
+  "vc:slug": "autonomous-agent",
+  "title": "Autonomous Agent",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:action-executor",
+      "vc:label": "Action Executor"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-system",
+      "vc:label": "AI System"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-behavior",
+      "vc:label": "Autonomous Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-resources",
+      "vc:label": "Computational Resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-source",
+      "vc:label": "Data Source"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-support",
+      "vc:label": "Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-specification",
+      "vc:label": "Goal Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-system",
+      "vc:label": "Goal System"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-environment",
+      "vc:label": "Intelligent Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:msf-use-cases",
+      "vc:label": "MSF Use Cases"
+    },
+    {
+      "@id": "urn:visionflow:linked:perception-module",
+      "vc:label": "Perception Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-automation",
+      "vc:label": "Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-framework",
+      "vc:label": "AI Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-moderation",
+      "vc:label": "Content Moderation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-component",
+      "vc:label": "Learning Component"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:npc-interaction",
+      "vc:label": "NPC Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:runtime-environment",
+      "vc:label": "Runtime Environment"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "author-did",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-60ad72b2cb99"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "contributors",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "spatial-computing"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/spatial-computing#AutonomousAgent"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20231"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Autonomous Agent"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:autonomous-agent"
+    },
+    {
+      "vc:key": "signature",
+      "vc:value": ""
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:spatial-computing:autonomous-agent"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:autonomous-agent",
+  "@type": "OntologyClass",
+  "label": "Autonomous Agent",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "spatial-computing"
+    }
+  ],
+  "vc:sourceDomain": "spatial-computing",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:ai-system",
+      "vc:label": "AI System"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-environment",
+      "vc:label": "Intelligent Environment"
+    }
+  ],
+  "vc:hasPart": [
+    {
+      "@id": "urn:visionflow:linked:action-executor",
+      "vc:label": "Action Executor"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-system",
+      "vc:label": "Goal System"
+    },
+    {
+      "@id": "urn:visionflow:linked:perception-module",
+      "vc:label": "Perception Module"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-component",
+      "vc:label": "Learning Component"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:computational-resources",
+      "vc:label": "Computational Resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-specification",
+      "vc:label": "Goal Specification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:runtime-environment",
+      "vc:label": "Runtime Environment"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:autonomous-behavior",
+      "vc:label": "Autonomous Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-support",
+      "vc:label": "Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-automation",
+      "vc:label": "Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-moderation",
+      "vc:label": "Content Moderation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:npc-interaction",
+      "vc:label": "NPC Interaction"
+    }
+  ],
+  "vc:dependsOn": [
+    {
+      "@id": "urn:visionflow:linked:data-source",
+      "vc:label": "Data Source"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-framework",
+      "vc:label": "AI Framework"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:autonomous-agent:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Action Executor]]",
+      "resolved": "urn:visionflow:linked:action-executor",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI System]]",
+      "resolved": "urn:visionflow:linked:ai-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous Behavior]]",
+      "resolved": "urn:visionflow:linked:autonomous-behavior",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Autonomous System]]",
+      "resolved": "urn:visionflow:linked:autonomous-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Computational Resources]]",
+      "resolved": "urn:visionflow:linked:computational-resources",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Source]]",
+      "resolved": "urn:visionflow:linked:data-source",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Engine]]",
+      "resolved": "urn:visionflow:linked:decision-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Support]]",
+      "resolved": "urn:visionflow:linked:decision-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI GR ARF 010]]",
+      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goal Specification]]",
+      "resolved": "urn:visionflow:linked:goal-specification",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Goal System]]",
+      "resolved": "urn:visionflow:linked:goal-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Intelligent Environment]]",
+      "resolved": "urn:visionflow:linked:intelligent-environment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Knowledge Base]]",
+      "resolved": "urn:visionflow:linked:knowledge-base",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MSF Use Cases]]",
+      "resolved": "urn:visionflow:linked:msf-use-cases",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Perception Module]]",
+      "resolved": "urn:visionflow:linked:perception-module",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Process Automation]]",
+      "resolved": "urn:visionflow:linked:process-automation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Framework]]",
+      "resolved": "urn:visionflow:owl:class:ai-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputationAndIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ComputeLayer]]",
+      "resolved": "urn:visionflow:owl:class:compute-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Content Moderation]]",
+      "resolved": "urn:visionflow:owl:class:content-moderation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Learning Component]]",
+      "resolved": "urn:visionflow:owl:class:learning-component",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NPC Interaction]]",
+      "resolved": "urn:visionflow:owl:class:npc-interaction",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Runtime Environment]]",
+      "resolved": "urn:visionflow:owl:class:runtime-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.

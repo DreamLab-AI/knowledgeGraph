@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:be27644293c0c4763646d29168d20b4cc7d0703f4028c83d58433cecb1c3e656",
+  "title": "Avatar Interoperability",
+  "slug": "avatar-interoperability",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:avatar-interoperability",
+  "domain": "infrastructure",
+  "definition": "Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:behavior-mapping",
+        "label": "Behavior Mapping"
+      },
+      {
+        "id": "urn:visionflow:linked:cross-platform-authentication",
+        "label": "Cross-Platform Authentication"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-portability",
+        "label": "Identity Portability"
+      },
+      {
+        "id": "urn:visionflow:owl:class:appearance-translation",
+        "label": "Appearance Translation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-serialization",
+        "label": "Data Serialization"
+      },
+      {
+        "id": "urn:visionflow:linked:identity-protocol",
+        "label": "Identity Protocol"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-api",
+        "label": "Platform API"
+      },
+      {
+        "id": "urn:visionflow:owl:class:avatar-standard",
+        "label": "Avatar Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-platform-presence",
+        "label": "Cross-Platform Presence"
+      },
+      {
+        "id": "urn:visionflow:linked:persistent-identity",
+        "label": "Persistent Identity"
+      },
+      {
+        "id": "urn:visionflow:linked:seamless-migration",
+        "label": "Seamless Migration"
+      },
+      {
+        "id": "urn:visionflow:owl:class:universal-avatar",
+        "label": "Universal Avatar"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "behavior-mapping",
+      "label": "Behavior Mapping"
+    },
+    {
+      "slug": "cross-platform-authentication",
+      "label": "Cross-Platform Authentication"
+    },
+    {
+      "slug": "cross-platform-presence",
+      "label": "Cross-Platform Presence"
+    },
+    {
+      "slug": "data-serialization",
+      "label": "Data Serialization"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "identity-portability",
+      "label": "Identity Portability"
+    },
+    {
+      "slug": "identity-protocol",
+      "label": "Identity Protocol"
+    },
+    {
+      "slug": "msf-dg-interoperable-avatars",
+      "label": "MSF DG (Interoperable Avatars)"
+    },
+    {
+      "slug": "persistent-identity",
+      "label": "Persistent Identity"
+    },
+    {
+      "slug": "platform-api",
+      "label": "Platform API"
+    },
+    {
+      "slug": "seamless-migration",
+      "label": "Seamless Migration"
+    },
+    {
+      "slug": "appearance-translation",
+      "label": "Appearance Translation"
+    },
+    {
+      "slug": "avatar-standard",
+      "label": "Avatar Standard"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "hanim-standard",
+      "label": "HAnim Standard"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "universal-avatar",
+      "label": "Universal Avatar"
+    },
+    {
+      "slug": "vrm-format",
+      "label": "VRM Format"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar-standard",
+      "label": "Avatar Standard"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

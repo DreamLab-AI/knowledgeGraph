@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:387f7bf30699be6a6c1e2591529cd9faeed61070bd6655585300e8f92b15c28f",
+  "title": "Digital Twin of Society (DToS)",
+  "slug": "digital-twin-of-society-dto-s",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-twin-of-society-dto-s",
+  "domain": "spatial-computing",
+  "definition": "A large-scale simulation of social, economic, and behavioural systems integrating city infrastructure, population dynamics, and environmental data to model and optimise societal outcomes. bridges-to:: [[Autonomous Robot]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:city-infrastructure-twin",
+        "label": "City Infrastructure Twin"
+      },
+      {
+        "id": "urn:visionflow:linked:economic-model",
+        "label": "Economic Model"
+      },
+      {
+        "id": "urn:visionflow:linked:environmental-sensor-network",
+        "label": "Environmental Sensor Network"
+      },
+      {
+        "id": "urn:visionflow:linked:population-simulation",
+        "label": "Population Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:traffic-management-system",
+        "label": "Traffic Management System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:agent-based-simulation",
+        "label": "Agent-Based Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-city-data",
+        "label": "Real-time City Data"
+      },
+      {
+        "id": "urn:visionflow:linked:urban-data-platform",
+        "label": "Urban Data Platform"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:crisis-management",
+        "label": "Crisis Management"
+      },
+      {
+        "id": "urn:visionflow:linked:policy-simulation",
+        "label": "Policy Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-optimization",
+        "label": "Sustainability Optimization"
+      },
+      {
+        "id": "urn:visionflow:linked:urban-planning",
+        "label": "Urban Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-based-simulation",
+      "label": "Agent-Based Simulation"
+    },
+    {
+      "slug": "census-data",
+      "label": "Census Data"
+    },
+    {
+      "slug": "city-infrastructure-twin",
+      "label": "City Infrastructure Twin"
+    },
+    {
+      "slug": "crisis-management",
+      "label": "Crisis Management"
+    },
+    {
+      "slug": "economic-model",
+      "label": "Economic Model"
+    },
+    {
+      "slug": "environmental-sensor-network",
+      "label": "Environmental Sensor Network"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "geographic-information-system",
+      "label": "Geographic Information System"
+    },
+    {
+      "slug": "policy-simulation",
+      "label": "Policy Simulation"
+    },
+    {
+      "slug": "population-simulation",
+      "label": "Population Simulation"
+    },
+    {
+      "slug": "real-time-city-data",
+      "label": "Real-time City Data"
+    },
+    {
+      "slug": "siemens-industrial-metaverse",
+      "label": "Siemens Industrial Metaverse"
+    },
+    {
+      "slug": "smart-city-ecosystem",
+      "label": "Smart City Ecosystem"
+    },
+    {
+      "slug": "social-network-analysis",
+      "label": "Social Network Analysis"
+    },
+    {
+      "slug": "sustainability-optimization",
+      "label": "Sustainability Optimization"
+    },
+    {
+      "slug": "traffic-management-system",
+      "label": "Traffic Management System"
+    },
+    {
+      "slug": "urban-data-platform",
+      "label": "Urban Data Platform"
+    },
+    {
+      "slug": "urban-planning",
+      "label": "Urban Planning"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "MiddlewareLayer"
+    },
+    {
+      "slug": "virtual-society-domain",
+      "label": "VirtualSocietyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    }
+  ]
+}

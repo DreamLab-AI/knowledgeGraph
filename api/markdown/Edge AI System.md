@@ -1,21 +1,217 @@
-iri:: http://narrativegoldmine.com/artificial-intelligence#EdgeAiSystem
-uri:: urn:visionclaw:concept:artificial-intelligence:edge-ai-system
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:edge-ai-system
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Edge AI System
-content-hash:: sha256-12-c643d038091e
-legacy-term-id:: AI-0431
-status:: draft
-maturity:: mature
-quality-score:: 0.35
-authority-score:: 0.95
-version:: 2.0.0
-created:: 2025-10-29T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#EdgeAiSystem
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:edge-ai-system
 public:: true
+
+# Edge AI System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12",
+  "@type": "Page",
+  "vc:slug": "edge-ai-system",
+  "title": "Edge AI System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.95"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c643d038091e"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-10-29T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#EdgeAiSystem"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0431"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Edge AI System"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:edge-ai-system"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:edge-ai-system"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:edge-ai-system",
+  "@type": "OntologyClass",
+  "label": "Edge AI System",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "artificial-intelligence"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "An Edge AI System is a distributed computing architecture that deploys machine learning models directly onto edge devices and sensors at the network periphery, enabling local inference without requiring continuous cloud connectivity. These systems process data in real-time at the source, reducing latency to milliseconds while minimizing bandwidth consumption and cloud dependency. Edge AI Systems optimize for resource-constrained environments with limited memory (typically 128KB-512MB), power budgets (10-100mW), and computational capacity compared to data centers. They incorporate model compression techniques including quantization, pruning, and knowledge distillation to fit neural networks into embedded hardware. Core characteristics include deterministic latency guarantees, offline-capable operation, privacy preservation through local processing, and direct sensor-to-actuator decision loops. Edge AI Systems span diverse deployment scenarios: industrial IoT monitoring for predictive maintenance, autonomous vehicle perception pipelines, smart home voice processing, medical wearables, drone navigation, and surveillance analytics. The architecture balances accuracy against resource co",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.95",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:edge-ai-system:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AIEthicsDomain]]",
+      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Autonomous Robot]]",
+      "resolved": "urn:visionflow:owl:class:autonomous-robot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ConceptualLayer]]",
+      "resolved": "urn:visionflow:owl:class:conceptual-layer",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - An Edge AI System is a distributed computing architecture that deploys machine learning models directly onto edge devices and sensors at the network periphery, enabling local inference without requiring continuous cloud connectivity. These systems process data in real-time at the source, reducing latency to milliseconds while minimizing bandwidth consumption and cloud dependency. Edge AI Systems optimize for resource-constrained environments with limited memory (typically 128KB-512MB), power budgets (10-100mW), and computational capacity compared to data centers. They incorporate model compression techniques including quantization, pruning, and knowledge distillation to fit neural networks into embedded hardware. Core characteristics include deterministic latency guarantees, offline-capable operation, privacy preservation through local processing, and direct sensor-to-actuator decision loops. Edge AI Systems span diverse deployment scenarios: industrial IoT monitoring for predictive maintenance, autonomous vehicle perception pipelines, smart home voice processing, medical wearables, drone navigation, and surveillance analytics. The architecture balances accuracy against resource constraints through adaptive model selection, hierarchical processing, and strategic cloud-edge collaboration for complex inference tasks. Standards like IEEE P2956 and IEC 63296 provide architectural frameworks. Edge AI Systems represent the convergence of embedded systems, machine learning, and real-time computing, enabling intelligent autonomous operations across distributed networks with minimal human intervention.

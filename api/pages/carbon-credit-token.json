@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:4df8bb0c4b18af6ddfa66fd9d06cb52bf1c52a082d94b0994858eca053596d30",
+  "title": "Carbon Credit Token",
+  "slug": "carbon-credit-token",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:carbon-credit-token",
+  "domain": "blockchain",
+  "definition": "Digital token representing verified carbon-offset value tradeable across platforms for emissions reduction and environmental sustainability.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.65,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:blockchain-record",
+        "label": "Blockchain Record"
+      },
+      {
+        "id": "urn:visionflow:linked:token-smart-contract",
+        "label": "Token Smart Contract"
+      },
+      {
+        "id": "urn:visionflow:linked:verification-metadata",
+        "label": "Verification Metadata"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-offset-certificate",
+        "label": "Carbon Offset Certificate"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:verification-authority",
+        "label": "Verification Authority"
+      },
+      {
+        "id": "urn:visionflow:owl:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:emissions-trading",
+        "label": "Emissions Trading"
+      },
+      {
+        "id": "urn:visionflow:linked:environmental-compliance",
+        "label": "Environmental Compliance"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-offset-trading",
+        "label": "Carbon Offset Trading"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-record",
+      "label": "Blockchain Record"
+    },
+    {
+      "slug": "emissions-trading",
+      "label": "Emissions Trading"
+    },
+    {
+      "slug": "environmental-compliance",
+      "label": "Environmental Compliance"
+    },
+    {
+      "slug": "iso-14065",
+      "label": "ISO 14065"
+    },
+    {
+      "slug": "siemens-oma3",
+      "label": "Siemens + OMA3"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "SmartContractLayer"
+    },
+    {
+      "slug": "sustainability-framework",
+      "label": "Sustainability Framework"
+    },
+    {
+      "slug": "sustainability-reporting",
+      "label": "Sustainability Reporting"
+    },
+    {
+      "slug": "token-smart-contract",
+      "label": "Token Smart Contract"
+    },
+    {
+      "slug": "trading-platform",
+      "label": "Trading Platform"
+    },
+    {
+      "slug": "unfccc",
+      "label": "UNFCCC"
+    },
+    {
+      "slug": "verification-authority",
+      "label": "Verification Authority"
+    },
+    {
+      "slug": "verification-metadata",
+      "label": "Verification Metadata"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "carbon-offset-certificate",
+      "label": "Carbon Offset Certificate"
+    },
+    {
+      "slug": "carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    },
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "environmental-asset-market",
+      "label": "Environmental Asset Market"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "verification-standard",
+      "label": "Verification Standard"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "Virtual Economy"
+    },
+    {
+      "slug": "virtual-economy-domain",
+      "label": "VirtualEconomyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    }
+  ]
+}

@@ -1,0 +1,1915 @@
+{
+  "id": "urn:visionflow:page:28a58dcdd8c903b2e9025f146faefe67606b7e085159797a2e14f6b21f0500c7",
+  "title": "x402 and l402 payment protocols",
+  "slug": "x402-and-l402-payment-protocols",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:x402-and-l402-payment-protocols",
+  "domain": "blockchain",
+  "definition": "x402 and l402 payment protocols is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "32-bytes",
+      "label": "32 bytes"
+    },
+    {
+      "slug": "402-payment-required",
+      "label": "402 Payment Required"
+    },
+    {
+      "slug": "402-status-code",
+      "label": "402 status code"
+    },
+    {
+      "slug": "account-registration",
+      "label": "account registration"
+    },
+    {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
+      "slug": "agent-economy",
+      "label": "agent economy"
+    },
+    {
+      "slug": "agent-federations",
+      "label": "Agent Federations"
+    },
+    {
+      "slug": "agent-to-agent",
+      "label": "agent-to-agent"
+    },
+    {
+      "slug": "agriculture-automation",
+      "label": "Agriculture Automation"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI agents"
+    },
+    {
+      "slug": "ai-first",
+      "label": "AI-first"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI inference"
+    },
+    {
+      "slug": "ai-ml",
+      "label": "AI/ML"
+    },
+    {
+      "slug": "ai-powered",
+      "label": "AI-powered"
+    },
+    {
+      "slug": "ai-systems",
+      "label": "AI systems"
+    },
+    {
+      "slug": "aml-compliance",
+      "label": "AML compliance"
+    },
+    {
+      "slug": "amount",
+      "label": "amount"
+    },
+    {
+      "slug": "analytics",
+      "label": "analytics"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "ap2",
+      "label": "AP2"
+    },
+    {
+      "slug": "aperture",
+      "label": "Aperture"
+    },
+    {
+      "slug": "aperture-client-go",
+      "label": "aperture-client-go"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "api-calls",
+      "label": "API calls"
+    },
+    {
+      "slug": "api-economy",
+      "label": "API economy"
+    },
+    {
+      "slug": "api-payments",
+      "label": "API payments"
+    },
+    {
+      "slug": "api-providers",
+      "label": "API providers"
+    },
+    {
+      "slug": "apis",
+      "label": "APIs"
+    },
+    {
+      "slug": "application",
+      "label": "application"
+    },
+    {
+      "slug": "apps",
+      "label": "apps"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "asia",
+      "label": "Asia"
+    },
+    {
+      "slug": "atomic",
+      "label": "Atomic"
+    },
+    {
+      "slug": "attackers",
+      "label": "Attackers"
+    },
+    {
+      "slug": "attenuation",
+      "label": "attenuation"
+    },
+    {
+      "slug": "attenuation",
+      "label": "Attenuation"
+    },
+    {
+      "slug": "auction-markets",
+      "label": "Auction Markets"
+    },
+    {
+      "slug": "authentication",
+      "label": "authentication"
+    },
+    {
+      "slug": "authorization",
+      "label": "Authorization"
+    },
+    {
+      "slug": "automatic-scaling",
+      "label": "Automatic scaling"
+    },
+    {
+      "slug": "autonomous",
+      "label": "autonomous"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "autonomous agents"
+    },
+    {
+      "slug": "autonomous-research-agent",
+      "label": "Autonomous Research Agent"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "autonomous systems"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous systems"
+    },
+    {
+      "slug": "aws-lambda",
+      "label": "AWS Lambda"
+    },
+    {
+      "slug": "bandwidth",
+      "label": "bandwidth"
+    },
+    {
+      "slug": "base",
+      "label": "Base"
+    },
+    {
+      "slug": "bearer-token",
+      "label": "bearer token"
+    },
+    {
+      "slug": "bearer-token",
+      "label": "Bearer token"
+    },
+    {
+      "slug": "big-query",
+      "label": "BigQuery"
+    },
+    {
+      "slug": "big-tech",
+      "label": "Big Tech"
+    },
+    {
+      "slug": "billing",
+      "label": "billing"
+    },
+    {
+      "slug": "bitcoin-lightning",
+      "label": "Bitcoin Lightning"
+    },
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
+      "slug": "bitcoin-maximalist",
+      "label": "Bitcoin-maximalist"
+    },
+    {
+      "slug": "bitcoin-native",
+      "label": "Bitcoin-Native"
+    },
+    {
+      "slug": "bitcoin-native",
+      "label": "Bitcoin-native"
+    },
+    {
+      "slug": "bitcoin-only",
+      "label": "Bitcoin-only"
+    },
+    {
+      "slug": "bitcoind",
+      "label": "bitcoind"
+    },
+    {
+      "slug": "block-confirmation",
+      "label": "block confirmation"
+    },
+    {
+      "slug": "block-confirmations",
+      "label": "block confirmations"
+    },
+    {
+      "slug": "blockchain-based",
+      "label": "blockchain-based"
+    },
+    {
+      "slug": "blockchain-confirmation",
+      "label": "Blockchain confirmation"
+    },
+    {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
+      "slug": "bloomberg",
+      "label": "Bloomberg"
+    },
+    {
+      "slug": "blue-wallet",
+      "label": "BlueWallet"
+    },
+    {
+      "slug": "bolt11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "bolt11-invoice",
+      "label": "BOLT11 invoice"
+    },
+    {
+      "slug": "bolt12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
+      "slug": "btc",
+      "label": "BTC"
+    },
+    {
+      "slug": "btcd",
+      "label": "btcd"
+    },
+    {
+      "slug": "btcpay-server",
+      "label": "BTCPay Server"
+    },
+    {
+      "slug": "built-in-monitoring",
+      "label": "Built-in monitoring"
+    },
+    {
+      "slug": "c-lightning",
+      "label": "c-lightning"
+    },
+    {
+      "slug": "cad",
+      "label": "CAD"
+    },
+    {
+      "slug": "caveat",
+      "label": "Caveat"
+    },
+    {
+      "slug": "caveats",
+      "label": "caveats"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "censorship-resistant",
+      "label": "Censorship-resistant"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
+      "slug": "challenge-response",
+      "label": "challenge-response"
+    },
+    {
+      "slug": "channel",
+      "label": "channel"
+    },
+    {
+      "slug": "channel",
+      "label": "Channel"
+    },
+    {
+      "slug": "client",
+      "label": "client"
+    },
+    {
+      "slug": "cloud-run",
+      "label": "Cloud Run"
+    },
+    {
+      "slug": "cloud-services",
+      "label": "Cloud services"
+    },
+    {
+      "slug": "cloud-storage",
+      "label": "cloud storage"
+    },
+    {
+      "slug": "cloudflare",
+      "label": "Cloudflare"
+    },
+    {
+      "slug": "code-analysis",
+      "label": "code analysis"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "coinbase-commerce",
+      "label": "Coinbase Commerce"
+    },
+    {
+      "slug": "coinbase-mcp",
+      "label": "Coinbase MCP"
+    },
+    {
+      "slug": "coinbase-wallet-sdk",
+      "label": "Coinbase Wallet SDK"
+    },
+    {
+      "slug": "collectives",
+      "label": "collectives"
+    },
+    {
+      "slug": "commodity-trading",
+      "label": "commodity trading"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "compliance",
+      "label": "compliance"
+    },
+    {
+      "slug": "computational-cost",
+      "label": "computational cost"
+    },
+    {
+      "slug": "computational-resources",
+      "label": "computational resources"
+    },
+    {
+      "slug": "compute-resources",
+      "label": "compute resources"
+    },
+    {
+      "slug": "confirmation",
+      "label": "Confirmation"
+    },
+    {
+      "slug": "content-creators",
+      "label": "Content creators"
+    },
+    {
+      "slug": "content-delivery-networks",
+      "label": "Content Delivery Networks"
+    },
+    {
+      "slug": "cookie-banner",
+      "label": "cookie-banner"
+    },
+    {
+      "slug": "core-lightning",
+      "label": "Core Lightning"
+    },
+    {
+      "slug": "crop-analytics",
+      "label": "crop analytics"
+    },
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-chain bridges"
+    },
+    {
+      "slug": "crypto",
+      "label": "crypto"
+    },
+    {
+      "slug": "cryptocurrency-wallets",
+      "label": "cryptocurrency wallets"
+    },
+    {
+      "slug": "cryptographic-binding",
+      "label": "cryptographic binding"
+    },
+    {
+      "slug": "custodial",
+      "label": "custodial"
+    },
+    {
+      "slug": "custodians",
+      "label": "custodians"
+    },
+    {
+      "slug": "custody",
+      "label": "custody"
+    },
+    {
+      "slug": "data",
+      "label": "data"
+    },
+    {
+      "slug": "data-access",
+      "label": "data access"
+    },
+    {
+      "slug": "data-api",
+      "label": "Data API"
+    },
+    {
+      "slug": "data-centers",
+      "label": "data centers"
+    },
+    {
+      "slug": "data-marketplaces",
+      "label": "Data Marketplaces"
+    },
+    {
+      "slug": "data-sources",
+      "label": "data sources"
+    },
+    {
+      "slug": "demand-forecasting",
+      "label": "demand forecasting"
+    },
+    {
+      "slug": "denial-of-service",
+      "label": "denial-of-service"
+    },
+    {
+      "slug": "derivatives-exchange",
+      "label": "Derivatives exchange"
+    },
+    {
+      "slug": "developer-apis",
+      "label": "Developer APIs"
+    },
+    {
+      "slug": "developer-experience",
+      "label": "Developer experience"
+    },
+    {
+      "slug": "developer-opportunity",
+      "label": "Developer Opportunity"
+    },
+    {
+      "slug": "developer-tools",
+      "label": "Developer tools"
+    },
+    {
+      "slug": "developers",
+      "label": "Developers"
+    },
+    {
+      "slug": "developers",
+      "label": "developers"
+    },
+    {
+      "slug": "digital-dollar",
+      "label": "Digital dollar"
+    },
+    {
+      "slug": "digital-euro",
+      "label": "Digital euro"
+    },
+    {
+      "slug": "digital-payment-systems",
+      "label": "digital payment systems"
+    },
+    {
+      "slug": "drones",
+      "label": "Drones"
+    },
+    {
+      "slug": "eclair",
+      "label": "Eclair"
+    },
+    {
+      "slug": "economic-unlock",
+      "label": "Economic Unlock"
+    },
+    {
+      "slug": "ecosystem-integration",
+      "label": "Ecosystem integration"
+    },
+    {
+      "slug": "ecosystems",
+      "label": "ecosystems"
+    },
+    {
+      "slug": "edge",
+      "label": "Edge"
+    },
+    {
+      "slug": "edge-functions",
+      "label": "edge functions"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "encrypted-messaging",
+      "label": "Encrypted messaging"
+    },
+    {
+      "slug": "endpoint",
+      "label": "endpoint"
+    },
+    {
+      "slug": "enterprise",
+      "label": "enterprise"
+    },
+    {
+      "slug": "enterprise",
+      "label": "Enterprise"
+    },
+    {
+      "slug": "enterprise-cloud",
+      "label": "enterprise cloud"
+    },
+    {
+      "slug": "enterprise-grade",
+      "label": "enterprise-grade"
+    },
+    {
+      "slug": "enterprise-saa-s",
+      "label": "Enterprise SaaS"
+    },
+    {
+      "slug": "erc-4337",
+      "label": "ERC-4337"
+    },
+    {
+      "slug": "eth",
+      "label": "ETH"
+    },
+    {
+      "slug": "europe",
+      "label": "Europe"
+    },
+    {
+      "slug": "event-logs",
+      "label": "event logs"
+    },
+    {
+      "slug": "exchange-rates",
+      "label": "exchange rates"
+    },
+    {
+      "slug": "few-shot-examples",
+      "label": "few-shot examples"
+    },
+    {
+      "slug": "fiat",
+      "label": "Fiat"
+    },
+    {
+      "slug": "fin-cen",
+      "label": "FinCEN"
+    },
+    {
+      "slug": "financial",
+      "label": "Financial"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "fraud detection"
+    },
+    {
+      "slug": "free-or-subscription",
+      "label": "free-or-subscription"
+    },
+    {
+      "slug": "free-tiers",
+      "label": "free tiers"
+    },
+    {
+      "slug": "fringe",
+      "label": "fringe"
+    },
+    {
+      "slug": "fsa",
+      "label": "FSA"
+    },
+    {
+      "slug": "function",
+      "label": "function"
+    },
+    {
+      "slug": "g-rpc",
+      "label": "gRPC"
+    },
+    {
+      "slug": "gaming",
+      "label": "gaming"
+    },
+    {
+      "slug": "gas-estimator-mcp-server",
+      "label": "Gas Estimator MCP Server"
+    },
+    {
+      "slug": "gas-fee",
+      "label": "Gas fee"
+    },
+    {
+      "slug": "gas-fees",
+      "label": "gas fees"
+    },
+    {
+      "slug": "gas-fees",
+      "label": "Gas fees"
+    },
+    {
+      "slug": "gcp",
+      "label": "GCP"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "geospatial",
+      "label": "Geospatial"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "global",
+      "label": "Global"
+    },
+    {
+      "slug": "go",
+      "label": "Go"
+    },
+    {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "google-cloud-ai",
+      "label": "Google Cloud AI"
+    },
+    {
+      "slug": "google-cloud-platform",
+      "label": "Google Cloud Platform"
+    },
+    {
+      "slug": "google-maps",
+      "label": "Google Maps"
+    },
+    {
+      "slug": "granular",
+      "label": "granular"
+    },
+    {
+      "slug": "granularity",
+      "label": "granularity"
+    },
+    {
+      "slug": "hardware-wallet",
+      "label": "Hardware wallet"
+    },
+    {
+      "slug": "harvesting-robots",
+      "label": "Harvesting robots"
+    },
+    {
+      "slug": "high-resolution-tile",
+      "label": "high-resolution tile"
+    },
+    {
+      "slug": "hmac",
+      "label": "HMAC"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "htlcs",
+      "label": "HTLCs"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "http-1-1",
+      "label": "HTTP/1.1"
+    },
+    {
+      "slug": "http-402",
+      "label": "HTTP 402"
+    },
+    {
+      "slug": "http-402-payment-required",
+      "label": "HTTP 402 Payment Required"
+    },
+    {
+      "slug": "http-api",
+      "label": "HTTP API"
+    },
+    {
+      "slug": "human",
+      "label": "human"
+    },
+    {
+      "slug": "human-mediated",
+      "label": "human-mediated"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "image-optimization",
+      "label": "Image optimization"
+    },
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
+    },
+    {
+      "slug": "instant-settlement",
+      "label": "Instant settlement"
+    },
+    {
+      "slug": "institutional",
+      "label": "institutional"
+    },
+    {
+      "slug": "institutional-validation",
+      "label": "Institutional Validation"
+    },
+    {
+      "slug": "inventory-robots",
+      "label": "Inventory robots"
+    },
+    {
+      "slug": "io-t",
+      "label": "IoT"
+    },
+    {
+      "slug": "io-t-devices",
+      "label": "IoT devices"
+    },
+    {
+      "slug": "ip-restrictions",
+      "label": "IP restrictions"
+    },
+    {
+      "slug": "irrigation",
+      "label": "Irrigation"
+    },
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "japan",
+      "label": "Japan"
+    },
+    {
+      "slug": "java-script",
+      "label": "JavaScript"
+    },
+    {
+      "slug": "key-management",
+      "label": "key management"
+    },
+    {
+      "slug": "kollider",
+      "label": "Kollider"
+    },
+    {
+      "slug": "kyc",
+      "label": "KYC"
+    },
+    {
+      "slug": "l2",
+      "label": "L2"
+    },
+    {
+      "slug": "l402",
+      "label": "L402"
+    },
+    {
+      "slug": "l402-protocol",
+      "label": "L402 protocol"
+    },
+    {
+      "slug": "l402-reverse-proxy",
+      "label": "L402 reverse proxy"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "layer-2",
+      "label": "Layer-2"
+    },
+    {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
+      "slug": "ledger",
+      "label": "ledger"
+    },
+    {
+      "slug": "legitimate-users",
+      "label": "Legitimate users"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "lightning-developers",
+      "label": "Lightning Developers"
+    },
+    {
+      "slug": "lightning-infrastructure",
+      "label": "Lightning infrastructure"
+    },
+    {
+      "slug": "lightning-invoice",
+      "label": "Lightning Invoice"
+    },
+    {
+      "slug": "lightning-invoice",
+      "label": "Lightning invoice"
+    },
+    {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
+      "slug": "lightning-loop",
+      "label": "Lightning Loop"
+    },
+    {
+      "slug": "lightning-native",
+      "label": "Lightning-native"
+    },
+    {
+      "slug": "lightning-network-daemon",
+      "label": "Lightning Network Daemon"
+    },
+    {
+      "slug": "lightning-payment",
+      "label": "Lightning payment"
+    },
+    {
+      "slug": "lightning-pool",
+      "label": "Lightning Pool"
+    },
+    {
+      "slug": "lightning-wallet",
+      "label": "Lightning wallet"
+    },
+    {
+      "slug": "liquidity",
+      "label": "liquidity"
+    },
+    {
+      "slug": "liquidity-marketplace",
+      "label": "liquidity marketplace"
+    },
+    {
+      "slug": "llm",
+      "label": "LLM"
+    },
+    {
+      "slug": "lnd",
+      "label": "LND"
+    },
+    {
+      "slug": "lnd-grpc",
+      "label": "lnd-grpc"
+    },
+    {
+      "slug": "lnvpn",
+      "label": "LNVPN"
+    },
+    {
+      "slug": "low-latency",
+      "label": "low-latency"
+    },
+    {
+      "slug": "low-overhead",
+      "label": "Low Overhead"
+    },
+    {
+      "slug": "lsat",
+      "label": "LSAT"
+    },
+    {
+      "slug": "lsat-js",
+      "label": "lsat-js"
+    },
+    {
+      "slug": "macaroon",
+      "label": "Macaroon"
+    },
+    {
+      "slug": "macaroon",
+      "label": "macaroon"
+    },
+    {
+      "slug": "macaroons",
+      "label": "Macaroons"
+    },
+    {
+      "slug": "machine-to-machine",
+      "label": "machine-to-machine"
+    },
+    {
+      "slug": "machines",
+      "label": "machines"
+    },
+    {
+      "slug": "mainstream",
+      "label": "mainstream"
+    },
+    {
+      "slug": "manufacturing-robots",
+      "label": "Manufacturing robots"
+    },
+    {
+      "slug": "mapbox",
+      "label": "Mapbox"
+    },
+    {
+      "slug": "market-data",
+      "label": "market data"
+    },
+    {
+      "slug": "markets",
+      "label": "markets"
+    },
+    {
+      "slug": "markets-in-crypto-assets",
+      "label": "Markets in Crypto-Assets"
+    },
+    {
+      "slug": "mas",
+      "label": "MAS"
+    },
+    {
+      "slug": "matic",
+      "label": "MATIC"
+    },
+    {
+      "slug": "mcp",
+      "label": "MCP"
+    },
+    {
+      "slug": "mcp-server",
+      "label": "MCP server"
+    },
+    {
+      "slug": "merchant",
+      "label": "Merchant"
+    },
+    {
+      "slug": "messaging",
+      "label": "messaging"
+    },
+    {
+      "slug": "metered-access",
+      "label": "metered-access"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "millisatoshis",
+      "label": "millisatoshis"
+    },
+    {
+      "slug": "minimal-dependencies",
+      "label": "Minimal dependencies"
+    },
+    {
+      "slug": "model-serving",
+      "label": "model serving"
+    },
+    {
+      "slug": "monetization",
+      "label": "monetization"
+    },
+    {
+      "slug": "money-transmission",
+      "label": "money transmission"
+    },
+    {
+      "slug": "multi-chain",
+      "label": "Multi-chain"
+    },
+    {
+      "slug": "multi-chain",
+      "label": "multi-chain"
+    },
+    {
+      "slug": "multi-cryptocurrency",
+      "label": "Multi-cryptocurrency"
+    },
+    {
+      "slug": "multi-path-payments",
+      "label": "Multi-path payments"
+    },
+    {
+      "slug": "multi-signature",
+      "label": "Multi-signature"
+    },
+    {
+      "slug": "muun",
+      "label": "Muun"
+    },
+    {
+      "slug": "native-payments",
+      "label": "native payments"
+    },
+    {
+      "slug": "news-websites",
+      "label": "News websites"
+    },
+    {
+      "slug": "node-js",
+      "label": "Node.js"
+    },
+    {
+      "slug": "node-management",
+      "label": "Node management"
+    },
+    {
+      "slug": "north-america",
+      "label": "North America"
+    },
+    {
+      "slug": "off-chain",
+      "label": "off-chain"
+    },
+    {
+      "slug": "off-ramp",
+      "label": "off-ramp"
+    },
+    {
+      "slug": "offers",
+      "label": "Offers"
+    },
+    {
+      "slug": "on-chain",
+      "label": "on-chain"
+    },
+    {
+      "slug": "on-chain",
+      "label": "On-chain"
+    },
+    {
+      "slug": "on-ramp",
+      "label": "on-ramp"
+    },
+    {
+      "slug": "open-access",
+      "label": "open access"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "optimized-prompts",
+      "label": "optimized prompts"
+    },
+    {
+      "slug": "paid-relay",
+      "label": "paid relay"
+    },
+    {
+      "slug": "paradigm-shift",
+      "label": "Paradigm Shift"
+    },
+    {
+      "slug": "pay-per-bandwidth",
+      "label": "pay-per-bandwidth"
+    },
+    {
+      "slug": "pay-per-transform",
+      "label": "pay-per-transform"
+    },
+    {
+      "slug": "payment",
+      "label": "payment"
+    },
+    {
+      "slug": "payment-gateway",
+      "label": "payment gateway"
+    },
+    {
+      "slug": "payment-hash",
+      "label": "payment hash"
+    },
+    {
+      "slug": "payment-mcp-server",
+      "label": "Payment MCP Server"
+    },
+    {
+      "slug": "payment-metadata",
+      "label": "payment metadata"
+    },
+    {
+      "slug": "payment-protocols",
+      "label": "payment protocols"
+    },
+    {
+      "slug": "payment-rails",
+      "label": "payment rails"
+    },
+    {
+      "slug": "payment-request-api",
+      "label": "Payment Request API"
+    },
+    {
+      "slug": "per-request",
+      "label": "per-request"
+    },
+    {
+      "slug": "per-second",
+      "label": "per-second"
+    },
+    {
+      "slug": "per-token",
+      "label": "per-token"
+    },
+    {
+      "slug": "per-transaction",
+      "label": "per-transaction"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "slug": "plugin-marketplace",
+      "label": "plugin marketplace"
+    },
+    {
+      "slug": "point-time-locked-contracts",
+      "label": "Point Time Locked Contracts"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "preimage",
+      "label": "preimage"
+    },
+    {
+      "slug": "preimage",
+      "label": "Preimage"
+    },
+    {
+      "slug": "premium-content",
+      "label": "premium content"
+    },
+    {
+      "slug": "price-feeds",
+      "label": "price feeds"
+    },
+    {
+      "slug": "price-oracle-mcp-server",
+      "label": "Price Oracle MCP Server"
+    },
+    {
+      "slug": "principle-of-least-privilege",
+      "label": "principle of least privilege"
+    },
+    {
+      "slug": "privacy-focused",
+      "label": "privacy-focused"
+    },
+    {
+      "slug": "privacy-preserving",
+      "label": "Privacy-Preserving"
+    },
+    {
+      "slug": "profit-sharing",
+      "label": "Profit-Sharing"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "Programmable Money"
+    },
+    {
+      "slug": "programmable-money",
+      "label": "programmable money"
+    },
+    {
+      "slug": "prompt-marketplace",
+      "label": "Prompt Marketplace"
+    },
+    {
+      "slug": "proof-of-payment",
+      "label": "proof-of-payment"
+    },
+    {
+      "slug": "protocol-bifurcation",
+      "label": "Protocol Bifurcation"
+    },
+    {
+      "slug": "psd2",
+      "label": "PSD2"
+    },
+    {
+      "slug": "pseudonymous",
+      "label": "Pseudonymous"
+    },
+    {
+      "slug": "ptlcs",
+      "label": "PTLCs"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "quality-control",
+      "label": "Quality control"
+    },
+    {
+      "slug": "query",
+      "label": "query"
+    },
+    {
+      "slug": "rag",
+      "label": "RAG"
+    },
+    {
+      "slug": "rate-limited",
+      "label": "rate-limited"
+    },
+    {
+      "slug": "rate-limiting",
+      "label": "Rate limiting"
+    },
+    {
+      "slug": "rate-limits",
+      "label": "rate limits"
+    },
+    {
+      "slug": "receipt",
+      "label": "receipt"
+    },
+    {
+      "slug": "recipient-address",
+      "label": "recipient address"
+    },
+    {
+      "slug": "reddit",
+      "label": "Reddit"
+    },
+    {
+      "slug": "regulatory",
+      "label": "Regulatory"
+    },
+    {
+      "slug": "reputation",
+      "label": "Reputation"
+    },
+    {
+      "slug": "reputation-based-pricing",
+      "label": "Reputation-Based Pricing"
+    },
+    {
+      "slug": "request",
+      "label": "request"
+    },
+    {
+      "slug": "research-papers",
+      "label": "research papers"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "reuters",
+      "label": "Reuters"
+    },
+    {
+      "slug": "rfc",
+      "label": "RFC"
+    },
+    {
+      "slug": "rfc-2616",
+      "label": "RFC 2616"
+    },
+    {
+      "slug": "rfc-7231",
+      "label": "RFC 7231"
+    },
+    {
+      "slug": "rfid",
+      "label": "RFID"
+    },
+    {
+      "slug": "ride-the-lightning",
+      "label": "Ride The Lightning"
+    },
+    {
+      "slug": "robots",
+      "label": "robots"
+    },
+    {
+      "slug": "route-optimization",
+      "label": "route optimization"
+    },
+    {
+      "slug": "rpc",
+      "label": "RPC"
+    },
+    {
+      "slug": "satellite-imagery",
+      "label": "Satellite imagery"
+    },
+    {
+      "slug": "satellite-imagery",
+      "label": "satellite imagery"
+    },
+    {
+      "slug": "satoshi",
+      "label": "satoshi"
+    },
+    {
+      "slug": "satoshis",
+      "label": "satoshis"
+    },
+    {
+      "slug": "schema",
+      "label": "schema"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "securities",
+      "label": "securities"
+    },
+    {
+      "slug": "self-sovereign",
+      "label": "Self-sovereign"
+    },
+    {
+      "slug": "serverless-functions",
+      "label": "serverless functions"
+    },
+    {
+      "slug": "services",
+      "label": "services"
+    },
+    {
+      "slug": "shipping-containers",
+      "label": "Shipping containers"
+    },
+    {
+      "slug": "singapore",
+      "label": "Singapore"
+    },
+    {
+      "slug": "slashing",
+      "label": "slashing"
+    },
+    {
+      "slug": "smart-cities",
+      "label": "Smart Cities"
+    },
+    {
+      "slug": "sol",
+      "label": "SOL"
+    },
+    {
+      "slug": "spam",
+      "label": "Spam"
+    },
+    {
+      "slug": "specific-niches",
+      "label": "specific niches"
+    },
+    {
+      "slug": "speed-of-computation",
+      "label": "speed of computation"
+    },
+    {
+      "slug": "sphinx-chat",
+      "label": "Sphinx Chat"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "stablecoins"
+    },
+    {
+      "slug": "stack-overflow",
+      "label": "Stack Overflow"
+    },
+    {
+      "slug": "stripe",
+      "label": "Stripe"
+    },
+    {
+      "slug": "sub-second",
+      "label": "Sub-second"
+    },
+    {
+      "slug": "submarine-swap",
+      "label": "submarine swap"
+    },
+    {
+      "slug": "submarine-swap",
+      "label": "Submarine swap"
+    },
+    {
+      "slug": "subscription",
+      "label": "subscription"
+    },
+    {
+      "slug": "subscription-pools",
+      "label": "Subscription Pools"
+    },
+    {
+      "slug": "subscriptions",
+      "label": "subscriptions"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "synonym",
+      "label": "Synonym"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "telemetry",
+      "label": "telemetry"
+    },
+    {
+      "slug": "time-locked",
+      "label": "Time-locked"
+    },
+    {
+      "slug": "token-as-currency",
+      "label": "Token-as-Currency"
+    },
+    {
+      "slug": "token-staked",
+      "label": "Token-Staked"
+    },
+    {
+      "slug": "tokens",
+      "label": "tokens"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
+      "slug": "transact",
+      "label": "transact"
+    },
+    {
+      "slug": "transaction-hash",
+      "label": "Transaction hash"
+    },
+    {
+      "slug": "transaction-hash",
+      "label": "transaction hash"
+    },
+    {
+      "slug": "transaction-monitoring",
+      "label": "Transaction monitoring"
+    },
+    {
+      "slug": "transactions",
+      "label": "transactions"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
+    },
+    {
+      "slug": "twitter",
+      "label": "Twitter"
+    },
+    {
+      "slug": "type-script",
+      "label": "TypeScript"
+    },
+    {
+      "slug": "usage-based",
+      "label": "usage-based"
+    },
+    {
+      "slug": "usage-based-billing",
+      "label": "usage-based billing"
+    },
+    {
+      "slug": "usage-based-pricing",
+      "label": "usage-based pricing"
+    },
+    {
+      "slug": "usd-coin",
+      "label": "USD Coin"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "vercel",
+      "label": "Vercel"
+    },
+    {
+      "slug": "vertex-ai",
+      "label": "Vertex AI"
+    },
+    {
+      "slug": "voltage",
+      "label": "Voltage"
+    },
+    {
+      "slug": "vpn",
+      "label": "VPN"
+    },
+    {
+      "slug": "vpn-services",
+      "label": "VPN services"
+    },
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "wallet-addresses",
+      "label": "wallet addresses"
+    },
+    {
+      "slug": "wallet-mcp-server",
+      "label": "Wallet MCP Server"
+    },
+    {
+      "slug": "watchtowers",
+      "label": "Watchtowers"
+    },
+    {
+      "slug": "weather-forecasts",
+      "label": "weather forecasts"
+    },
+    {
+      "slug": "web",
+      "label": "web"
+    },
+    {
+      "slug": "web-payments",
+      "label": "Web Payments"
+    },
+    {
+      "slug": "working-group",
+      "label": "working group"
+    },
+    {
+      "slug": "www-authenticate",
+      "label": "WWW-Authenticate"
+    },
+    {
+      "slug": "x402",
+      "label": "X402"
+    },
+    {
+      "slug": "x402-discord",
+      "label": "X402 Discord"
+    },
+    {
+      "slug": "x402-protocol",
+      "label": "X402 protocol"
+    },
+    {
+      "slug": "x402-support",
+      "label": "X402 support"
+    },
+    {
+      "slug": "zero-knowledge-proofs",
+      "label": "Zero-knowledge proofs"
+    },
+    {
+      "slug": "zeus",
+      "label": "Zeus"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account abstraction"
+    },
+    {
+      "slug": "agents",
+      "label": "agents"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI infrastructure"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "blockchain"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship resistance"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "cryptocurrency"
+    },
+    {
+      "slug": "cypherpunk",
+      "label": "Cypherpunk"
+    },
+    {
+      "slug": "cypherpunk",
+      "label": "cypherpunk"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "decentralization",
+      "label": "Decentralization"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "digital economy"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-tuning"
+    },
+    {
+      "slug": "full-node",
+      "label": "full node"
+    },
+    {
+      "slug": "gas",
+      "label": "gas"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "infrastructure"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "micropayment",
+      "label": "micropayment"
+    },
+    {
+      "slug": "micropayments",
+      "label": "micropayments"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model",
+      "label": "model"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive maintenance"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "private-channels",
+      "label": "private channels"
+    },
+    {
+      "slug": "security",
+      "label": "security"
+    },
+    {
+      "slug": "sensor",
+      "label": "sensor"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "sidechain",
+      "label": "sidechain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart contracts"
+    },
+    {
+      "slug": "social-media",
+      "label": "Social media"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "stablecoin"
+    },
+    {
+      "slug": "testnet",
+      "label": "testnet"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "transaction",
+      "label": "transaction"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction fee"
+    },
+    {
+      "slug": "video-streaming",
+      "label": "Video streaming"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "wallet",
+      "label": "wallet"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,206 @@
+{
+  "id": "urn:visionflow:page:1d996f1366c0426554501b4d5b5e04674fe6bf61925193ec091257e49f1a850d",
+  "title": "Blockchain Environmental Impact Assessment",
+  "slug": "blockchain-environmental-impact-assessment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:blockchain-environmental-impact-assessment",
+  "domain": "blockchain",
+  "definition": "A systematic evaluation methodology for measuring, analyzing, and reporting the environmental consequences of blockchain network operations, encompassing energy consumption measurement (electricity usage per transaction, annual network consumption), carbon emissions calculation (CO\u2082e from electricity generation mix), e-waste generation (hardware lifecycle and disposal), water consumption (data center cooling), and broader ecological impacts, with standardized frameworks including Life Cycle Assessment (ISO 14040/14044), Cambridge Centre for Alternative Finance methodologies, and blockchain-specific metrics for comparing consensus mechanisms (Proof-of-Work vs Proof-of-Stake environmental profiles).",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:life-cycle-assessment",
+      "label": "LifeCycleAssessment"
+    },
+    {
+      "id": "urn:visionflow:linked:sustainability-metric",
+      "label": "SustainabilityMetric"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-governance",
+      "label": "BlockchainGovernance"
+    },
+    {
+      "id": "urn:visionflow:owl:class:environmental-assessment",
+      "label": "EnvironmentalAssessment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.89,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:carbon-emissions-calculation",
+        "label": "CarbonEmissionsCalculation"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-consumption-measurement",
+        "label": "EnergyConsumptionMeasurement"
+      },
+      {
+        "id": "urn:visionflow:linked:ewaste-analysis",
+        "label": "EWasteAnalysis"
+      },
+      {
+        "id": "urn:visionflow:linked:scope-definition",
+        "label": "ScopeDefinition"
+      },
+      {
+        "id": "urn:visionflow:linked:water-usage-tracking",
+        "label": "WaterUsageTracking"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:data-center-metrics",
+        "label": "DataCenterMetrics"
+      },
+      {
+        "id": "urn:visionflow:linked:energy-mix",
+        "label": "EnergyMix"
+      },
+      {
+        "id": "urn:visionflow:linked:hardware-inventory",
+        "label": "HardwareInventory"
+      },
+      {
+        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "label": "ConsensusAlgorithm"
+      },
+      {
+        "id": "urn:visionflow:owl:class:network-hash-rate",
+        "label": "NetworkHashRate"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:investor-disclosure",
+        "label": "InvestorDisclosure"
+      },
+      {
+        "id": "urn:visionflow:linked:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:carbon-accounting",
+        "label": "CarbonAccounting"
+      },
+      {
+        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "label": "RegulatoryCompliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "bitcoin-mining-council",
+      "label": "Bitcoin Mining Council"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance-ccaf",
+      "label": "Cambridge Centre for Alternative Finance (CCAF)"
+    },
+    {
+      "slug": "carbon-emissions-calculation",
+      "label": "CarbonEmissionsCalculation"
+    },
+    {
+      "slug": "data-center-metrics",
+      "label": "DataCenterMetrics"
+    },
+    {
+      "slug": "energy-consumption-measurement",
+      "label": "EnergyConsumptionMeasurement"
+    },
+    {
+      "slug": "energy-mix",
+      "label": "EnergyMix"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "EnvironmentalDomain"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "ewaste-analysis",
+      "label": "EWasteAnalysis"
+    },
+    {
+      "slug": "hardware-inventory",
+      "label": "HardwareInventory"
+    },
+    {
+      "slug": "international-energy-agency-iea",
+      "label": "International Energy Agency (IEA)"
+    },
+    {
+      "slug": "investor-disclosure",
+      "label": "InvestorDisclosure"
+    },
+    {
+      "slug": "iso-14040-life-cycle-assessment",
+      "label": "ISO 14040 Life Cycle Assessment"
+    },
+    {
+      "slug": "life-cycle-assessment",
+      "label": "LifeCycleAssessment"
+    },
+    {
+      "slug": "scope-definition",
+      "label": "ScopeDefinition"
+    },
+    {
+      "slug": "sustainability-metric",
+      "label": "SustainabilityMetric"
+    },
+    {
+      "slug": "sustainability-reporting",
+      "label": "SustainabilityReporting"
+    },
+    {
+      "slug": "water-usage-tracking",
+      "label": "WaterUsageTracking"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-governance",
+      "label": "BlockchainGovernance"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "CarbonAccounting"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "ConsensusAlgorithm"
+    },
+    {
+      "slug": "environmental-assessment",
+      "label": "EnvironmentalAssessment"
+    },
+    {
+      "slug": "network-hash-rate",
+      "label": "NetworkHashRate"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "RegulatoryCompliance"
+    }
+  ],
+  "backlinks": []
+}

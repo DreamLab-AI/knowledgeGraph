@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2",
+  "title": "Coding support",
+  "slug": "coding-support",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:coding-support",
+  "domain": "infrastructure",
+  "definition": "Coding support is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "training-modules",
+      "label": "Training Modules"
+    },
+    {
+      "slug": "vercel",
+      "label": "Vercel"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "tips-and-tricks",
+      "label": "Tips and Tricks"
+    }
+  ],
+  "backlinks": []
+}

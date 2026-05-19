@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:3889ff022a7274798faff90ae0aa0aa15e5dfccd35d0d396774658f3630d2da6",
+  "title": "Placing on the Market",
+  "slug": "placing-on-the-market",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:placing-on-the-market",
+  "domain": "spatial-computing",
+  "definition": "The first making available of an AI system on the Union market.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

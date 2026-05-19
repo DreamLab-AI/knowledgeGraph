@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:0d5bbc1cfd7b23e28e50d03ddb7c93c46a9063564d04d8b0413463cf87c931fc",
+  "title": "Responsible AI Unconference",
+  "slug": "responsible-ai-unconference",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:responsible-ai-unconference",
+  "domain": "artificial-intelligence",
+  "definition": "Responsible AI Unconference is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

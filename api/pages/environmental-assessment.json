@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ced101a6a81ca46abd2a928e83d90e66af8af469423daf042a11fc6bac6f9af3",
+  "title": "Environmental Assessment",
+  "slug": "environmental-assessment",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:environmental-assessment",
+  "domain": "spatial-computing",
+  "definition": "Environmental Assessment is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "carbon-footprint-assessment",
+      "label": "Carbon Footprint Assessment"
+    }
+  ]
+}

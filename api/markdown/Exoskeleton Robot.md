@@ -1,21 +1,336 @@
-iri:: http://narrativegoldmine.com/robotics#ExoskeletonRobot
-uri:: urn:visionclaw:concept:robotics:exoskeleton-robot
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:robotics:exoskeleton-robot
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: robotics
-preferred-term:: Exoskeleton Robot
-content-hash:: sha256-12-024b5cee3add
-legacy-term-id:: RB-0931
-status:: draft
-maturity:: draft
-quality-score:: 0.57
-authority-score:: 0.14
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T15:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/robotics#ExoskeletonRobot
+legacy_uri:: urn:visionclaw:concept:robotics:exoskeleton-robot
 public:: true
+
+# Exoskeleton Robot
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337",
+  "@type": "Page",
+  "vc:slug": "exoskeleton-robot",
+  "title": "Exoskeleton Robot",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:accessibility-in-harsh-environments",
+      "vc:label": "Accessibility in Harsh Environments"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-augmentation-system",
+      "vc:label": "Human Augmentation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:injury-prevention",
+      "vc:label": "Injury Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:joint-support",
+      "vc:label": "Joint Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:occupational-safety-equipment",
+      "vc:label": "Occupational Safety Equipment"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-control",
+      "vc:label": "Real-time Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:wearable-robotics",
+      "vc:label": "Wearable Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:worker-productivity",
+      "vc:label": "Worker Productivity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-capture",
+      "vc:label": "Motion Capture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:power-supply",
+      "vc:label": "Power Supply"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "vc:label": "RoboticsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.14"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-024b5cee3add"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "robotics"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/robotics#ExoskeletonRobot"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0931"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T15:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Exoskeleton Robot"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.57"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:robotics:exoskeleton-robot"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:robotics:exoskeleton-robot"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:exoskeleton-robot",
+  "@type": "OntologyClass",
+  "label": "Exoskeleton Robot",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:wearable-robotics",
+      "vc:label": "Wearable Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    }
+  ],
+  "vc:sourceDomain": "robotics",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "**Exoskeleton Robot** - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
+  "vc:qualityScore": {
+    "@value": "0.57",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.14",
+    "@type": "xsd:float"
+  },
+  "vc:isPartOf": [
+    {
+      "@id": "urn:visionflow:linked:human-augmentation-system",
+      "vc:label": "Human Augmentation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:occupational-safety-equipment",
+      "vc:label": "Occupational Safety Equipment"
+    }
+  ],
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:real-time-control",
+      "vc:label": "Real-time Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-capture",
+      "vc:label": "Motion Capture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:power-supply",
+      "vc:label": "Power Supply"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:accessibility-in-harsh-environments",
+      "vc:label": "Accessibility in Harsh Environments"
+    },
+    {
+      "@id": "urn:visionflow:linked:injury-prevention",
+      "vc:label": "Injury Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:worker-productivity",
+      "vc:label": "Worker Productivity"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:exoskeleton-robot:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Accessibility in Harsh Environments]]",
+      "resolved": "urn:visionflow:linked:accessibility-in-harsh-environments",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human Augmentation System]]",
+      "resolved": "urn:visionflow:linked:human-augmentation-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Injury Prevention]]",
+      "resolved": "urn:visionflow:linked:injury-prevention",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Joint Support]]",
+      "resolved": "urn:visionflow:linked:joint-support",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Occupational Safety Equipment]]",
+      "resolved": "urn:visionflow:linked:occupational-safety-equipment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-time Control]]",
+      "resolved": "urn:visionflow:linked:real-time-control",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Wearable Robotics]]",
+      "resolved": "urn:visionflow:linked:wearable-robotics",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Worker Productivity]]",
+      "resolved": "urn:visionflow:linked:worker-productivity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Motion Capture]]",
+      "resolved": "urn:visionflow:owl:class:motion-capture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Power Supply]]",
+      "resolved": "urn:visionflow:owl:class:power-supply",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Telecollaboration]]",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - **Exoskeleton Robot** - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.

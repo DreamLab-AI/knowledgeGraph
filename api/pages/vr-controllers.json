@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:51056b54ea67e58a4688b75c32c182d0a29984589c26c660114748c5a301ce05",
+  "title": "VR Controllers",
+  "slug": "vr-controllers",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:vr-controllers",
+  "domain": "spatial-computing",
+  "definition": "Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "xr-hardware",
+      "label": "XR Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

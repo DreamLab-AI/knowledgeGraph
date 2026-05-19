@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:aaa4c8bbf278d91549c8dbae3cb091331ea13167e515a0d4985fff65386f8e04",
+  "title": "Mistral",
+  "slug": "mistral",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mistral",
+  "domain": "artificial-intelligence",
+  "definition": "A 7.3B parameter language model that uses grouped-query attention and sliding window attention to achieve strong performance with efficient inference, outperforming larger models on various benchmarks.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "deepseek",
+      "label": "Deepseek"
+    },
+    {
+      "slug": "falcon",
+      "label": "Falcon"
+    },
+    {
+      "slug": "microsoft-models",
+      "label": "Microsoft Models"
+    },
+    {
+      "slug": "poro",
+      "label": "Poro"
+    },
+    {
+      "slug": "red-pyjama",
+      "label": "Red Pyjama"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

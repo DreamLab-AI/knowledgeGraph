@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:b74a0f43c8a8a7b0644ae18b38785ae9d9e40142f051654b8a9fab0dd1c21278",
+  "title": "Search Interface",
+  "slug": "search-interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:search-interface",
+  "domain": "spatial-computing",
+  "definition": "User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:user-query-experience",
+        "label": "User Query Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "user-query-experience",
+      "label": "User Query Experience"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    }
+  ]
+}

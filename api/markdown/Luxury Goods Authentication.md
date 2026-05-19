@@ -1,21 +1,360 @@
-iri:: http://narrativegoldmine.com/blockchain#LuxuryGoodsAuthentication
-uri:: urn:visionclaw:concept:blockchain:luxury-goods-authentication
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:luxury-goods-authentication
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Luxury Goods Authentication
-content-hash:: sha256-12-6d0cc4ab22a8
-legacy-term-id:: BC-0444
-status:: complete
-maturity:: mature
-quality-score:: 0.50
-authority-score:: 0.90
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#LuxuryGoodsAuthentication
+legacy_uri:: urn:visionclaw:concept:blockchain:luxury-goods-authentication
 public:: true
+
+# Luxury Goods Authentication
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa",
+  "@type": "Page",
+  "vc:slug": "luxury-goods-authentication",
+  "title": "Luxury Goods Authentication",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:arianee",
+      "vc:label": "Arianee"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "vc:label": "BC-0013-smart-contracts"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0023-zero-knowledge-proofs",
+      "vc:label": "BC-0023-zero-knowledge-proofs"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "vc:label": "BC-0029-permissioned-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0066-ethereum",
+      "vc:label": "BC-0066-ethereum"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0197-non-fungible-tokens",
+      "vc:label": "BC-0197-non-fungible-tokens"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0214-environmental-sustainability",
+      "vc:label": "BC-0214-environmental-sustainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "vc:label": "BC-0432-consortium-blockchain"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "vc:label": "BC-0434-blockchain-as-a-service"
+    },
+    {
+      "@id": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "vc:label": "BC-0441-provenance-tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:consen-sys",
+      "vc:label": "ConsenSys"
+    },
+    {
+      "@id": "urn:visionflow:linked:de-beers-tracr",
+      "vc:label": "De Beers Tracr"
+    },
+    {
+      "@id": "urn:visionflow:linked:entrupy",
+      "vc:label": "Entrupy"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:otis",
+      "vc:label": "Otis"
+    },
+    {
+      "@id": "urn:visionflow:linked:quorum",
+      "vc:label": "Quorum"
+    },
+    {
+      "@id": "urn:visionflow:linked:rally",
+      "vc:label": "Rally"
+    },
+    {
+      "@id": "urn:visionflow:linked:ve-chain",
+      "vc:label": "VeChain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ethereum",
+      "vc:label": "Ethereum"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.90"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6d0cc4ab22a8"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#LuxuryGoodsAuthentication"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-0444"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "mature"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Luxury Goods Authentication"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:luxury-goods-authentication"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "complete"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:luxury-goods-authentication"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:luxury-goods-authentication",
+  "@type": "OntologyClass",
+  "label": "Luxury Goods Authentication",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:provenance-tracking",
+      "vc:label": "Provenance Tracking"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "complete",
+  "vc:maturity": "mature",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Blockchain technology addressing the £400-450 billion global counterfeit luxury market (10% of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated. LVMH's Aura Blockchain Consortium (Prada Group, Cartier, Mercedes-Benz) has registered millions of luxury products, demonstrating that blockchain authentication increases purchase confidence (65-70% of consumers report higher willingness to purchase authenticated products) whilst enabling the rapidly growing £30-35 billion secondary luxury market where 20-30% of goods may be counterfeit, with blockchain-verified products commanding 8-12% premiums over non-certified equivalents.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.90",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:luxury-goods-authentication:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Arianee]]",
+      "resolved": "urn:visionflow:linked:arianee",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0013-smart-contracts]]",
+      "resolved": "urn:visionflow:linked:bc-0013-smart-contracts",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0023-zero-knowledge-proofs]]",
+      "resolved": "urn:visionflow:linked:bc-0023-zero-knowledge-proofs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0029-permissioned-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0066-ethereum]]",
+      "resolved": "urn:visionflow:linked:bc-0066-ethereum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0197-non-fungible-tokens]]",
+      "resolved": "urn:visionflow:linked:bc-0197-non-fungible-tokens",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0214-environmental-sustainability]]",
+      "resolved": "urn:visionflow:linked:bc-0214-environmental-sustainability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0432-consortium-blockchain]]",
+      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0434-blockchain-as-a-service]]",
+      "resolved": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BC-0441-provenance-tracking]]",
+      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ConsenSys]]",
+      "resolved": "urn:visionflow:linked:consen-sys",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[De Beers Tracr]]",
+      "resolved": "urn:visionflow:linked:de-beers-tracr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Entrupy]]",
+      "resolved": "urn:visionflow:linked:entrupy",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Internet of Things]]",
+      "resolved": "urn:visionflow:linked:internet-of-things",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Otis]]",
+      "resolved": "urn:visionflow:linked:otis",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Quorum]]",
+      "resolved": "urn:visionflow:linked:quorum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rally]]",
+      "resolved": "urn:visionflow:linked:rally",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[VeChain]]",
+      "resolved": "urn:visionflow:linked:ve-chain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Ethereum]]",
+      "resolved": "urn:visionflow:owl:class:ethereum",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Blockchain technology addressing the £400-450 billion global counterfeit luxury market (10% of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated. LVMH's Aura Blockchain Consortium (Prada Group, Cartier, Mercedes-Benz) has registered millions of luxury products, demonstrating that blockchain authentication increases purchase confidence (65-70% of consumers report higher willingness to purchase authenticated products) whilst enabling the rapidly growing £30-35 billion secondary luxury market where 20-30% of goods may be counterfeit, with blockchain-verified products commanding 8-12% premiums over non-certified equivalents.

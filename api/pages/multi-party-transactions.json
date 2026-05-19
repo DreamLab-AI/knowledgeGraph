@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:f944bef68899f6322c1662457780488a6e9836519425c88e3fd1d0a7d9161dc5",
+  "title": "Multi Party Transactions",
+  "slug": "multi-party-transactions",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:multi-party-transactions",
+  "domain": "blockchain",
+  "definition": "Blockchain transactions involving more than two participants that use atomic swap protocols, adaptor signatures, and hash timelock contracts (HTLCs) to ensure all parties complete their exchanges simultaneously or the entire transaction is reversed, preventing partial completion losses.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:blockchain-transactions",
+      "label": "Blockchain Transactions"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-chain-trading",
+        "label": "Cross Chain Trading"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-transactions",
+      "label": "Blockchain Transactions"
+    },
+    {
+      "slug": "cross-chain-trading",
+      "label": "Cross Chain Trading"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    }
+  ]
+}

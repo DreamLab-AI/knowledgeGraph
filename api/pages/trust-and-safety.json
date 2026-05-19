@@ -1,0 +1,420 @@
+{
+  "id": "urn:visionflow:page:e992320cd2ecb7359afc95b0151f9dbee398b2ce40703a3e775c0c44a39481de",
+  "title": "Trust and Safety",
+  "slug": "trust-and-safety",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:trust-and-safety",
+  "domain": "ethics-society",
+  "definition": "Trust and Safety (T&S) is the professional discipline, operational infrastructure, and regulatory framework that governs the detection, review, enforcement, and remediation of harmful content and abusive behaviour across digital platforms, encompassing the full spectrum from child sexual abuse material (CSAM) detection and terrorist content removal through election integrity protection, hate speech moderation, fraud prevention, and platform integrity operations, implemented through a layered architecture combining automated classifiers (PhotoDNA perceptual hashing for known CSAM matching generating robust 1152-bit signatures that survive image transformations via DCT-based processing, Hive Moderation VLM detecting 40+ policy violation classes through Moderation 11B fine-tuned on Llama 3.2 11B Vision, Sightengine covering 110+ moderation classes with 99.2% F1 on specific categories, large platform proprietary transformer-based classifiers, and LLM-based moderation emerging as the next-generation paradigm surpassing traditional NLP on nuanced policy violations per Springer 2025 review), human review pipelines (outsourced moderation operations in Philippines, Kenya, Colombia, and Indi",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:online-safety",
+      "label": "Online Safety"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "id": "urn:visionflow:owl:class:content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "id": "urn:visionflow:owl:class:data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "id": "urn:visionflow:owl:class:digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "id": "urn:visionflow:owl:class:platform-governance",
+      "label": "Platform Governance"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:classifier-model",
+        "label": "Classifier Model"
+      },
+      {
+        "id": "urn:visionflow:linked:csam-detection",
+        "label": "CSAM Detection"
+      },
+      {
+        "id": "urn:visionflow:linked:hash-matching",
+        "label": "Hash Matching"
+      },
+      {
+        "id": "urn:visionflow:linked:human-review-pipeline",
+        "label": "Human Review Pipeline"
+      },
+      {
+        "id": "urn:visionflow:linked:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:visionflow:linked:platform-integrity",
+        "label": "Platform Integrity"
+      },
+      {
+        "id": "urn:visionflow:owl:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:visionflow:owl:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "id": "urn:visionflow:owl:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:visionflow:owl:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:visionflow:owl:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "id": "urn:visionflow:owl:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:visionflow:owl:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:visionflow:owl:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "classifier-model",
+      "label": "Classifier Model"
+    },
+    {
+      "slug": "csam-detection",
+      "label": "CSAM Detection"
+    },
+    {
+      "slug": "digital-rights-domain",
+      "label": "DigitalRightsDomain"
+    },
+    {
+      "slug": "ethics-and-society-domain",
+      "label": "EthicsAndSocietyDomain"
+    },
+    {
+      "slug": "hash-matching",
+      "label": "Hash Matching"
+    },
+    {
+      "slug": "human-review-pipeline",
+      "label": "Human Review Pipeline"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "online-safety",
+      "label": "Online Safety"
+    },
+    {
+      "slug": "operations-layer",
+      "label": "OperationsLayer"
+    },
+    {
+      "slug": "platform-governance-domain",
+      "label": "PlatformGovernanceDomain"
+    },
+    {
+      "slug": "platform-integrity",
+      "label": "Platform Integrity"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "PolicyLayer"
+    },
+    {
+      "slug": "regulatory-compliance-layer",
+      "label": "RegulatoryComplianceLayer"
+    },
+    {
+      "slug": "technical-infrastructure-layer",
+      "label": "TechnicalInfrastructureLayer"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "large language models"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "platform-governance",
+      "label": "Platform Governance"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "label": "State of the art in AI"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "infrastructure"
+    }
+  ]
+}

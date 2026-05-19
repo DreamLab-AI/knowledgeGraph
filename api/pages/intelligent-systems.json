@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:6c7f61b198706d714f6d16cec76a5021513f831bce580bdcb668eef423b1cde7",
+  "title": "Intelligent Systems",
+  "slug": "intelligent-systems",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:intelligent-systems",
+  "domain": "spatial-computing",
+  "definition": "Intelligent Systems is a concept within the metaverse domain. Further enrichment pending.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "context-awareness-system",
+      "label": "Context Awareness System"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    }
+  ]
+}

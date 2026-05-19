@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:b3ad5a7db5af09cbabadf1b950c657b135643ab451689e3e4217d5a91e851d67",
+  "title": "Virtual Location",
+  "slug": "virtual-location",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-location",
+  "domain": "spatial-computing",
+  "definition": "A defined spatial coordinate or addressable place within a virtual environment, representing specific positions, areas, or destinations that users can navigate to, reference, and interact with in metaverse platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-production-volume",
+      "label": "Virtual Production Volume"
+    }
+  ]
+}

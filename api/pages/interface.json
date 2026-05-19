@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097",
+  "title": "Interface",
+  "slug": "interface",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:interface",
+  "domain": "blockchain",
+  "definition": "Interface is a concept within the bc domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "abstraction",
+      "label": "Abstraction"
+    },
+    {
+      "slug": "adapter",
+      "label": "Adapter"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "contract",
+      "label": "Contract"
+    },
+    {
+      "slug": "protocol",
+      "label": "Protocol"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

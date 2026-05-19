@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7",
+  "title": "Process",
+  "slug": "process",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:process",
+  "domain": "infrastructure",
+  "definition": "A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome. Processes represent structured temporal progressions involving multiple agents, systems, or components working in coordination, with defined control flow, duration, and observable states.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:temporal-entity",
+      "label": "Temporal Entity"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "reviewed",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:visionflow:linked:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:visionflow:owl:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "business-process-management",
+      "label": "Business Process Management"
+    },
+    {
+      "slug": "systems-theory",
+      "label": "Systems Theory"
+    },
+    {
+      "slug": "temporal-entity",
+      "label": "Temporal Entity"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    }
+  ],
+  "backlinks": []
+}

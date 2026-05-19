@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:2610607495987874185a2fe856c2c73f5d12cec16ed825e0d8b0305202098b94",
+  "title": "Knowledge Representation",
+  "slug": "knowledge-representation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:knowledge-representation",
+  "domain": "artificial-intelligence",
+  "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making. Approaches include symbolic systems (first-order logic, description logics, semantic networks), graph-based representations (knowledge graphs, ontologies), probabilistic models (Bayesian networks, Markov logic networks), and distributed representations (embeddings, neural symbolic integration). Modern knowledge representation combines symbolic and subsymbolic methods, enabling systems to perform logical reasoning while learning from data.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "reasoning-systems",
+      "label": "Reasoning Systems"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-concept",
+      "label": "AI Concept"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "strips",
+      "label": "STRIPS"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

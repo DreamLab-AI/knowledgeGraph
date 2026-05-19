@@ -1,22 +1,468 @@
-iri:: http://narrativegoldmine.com/blockchain#ConsensusAlgorithm
-uri:: urn:visionclaw:concept:blockchain:consensus-algorithm
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:consensus-algorithm
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Consensus Algorithm
-content-hash:: sha256-12-84e69bff936b
-legacy-term-id:: BC-9987
-status:: draft
-maturity:: draft
-bridges-to:: [[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)
-quality-score:: 0.40
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#ConsensusAlgorithm
+legacy_uri:: urn:visionclaw:concept:blockchain:consensus-algorithm
 public:: true
+
+# Consensus Algorithm
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4",
+  "@type": "Page",
+  "vc:slug": "consensus-algorithm",
+  "title": "Consensus Algorithm",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:achieves-finality",
+      "vc:label": "achievesFinality"
+    },
+    {
+      "@id": "urn:visionflow:linked:consensus-algorithms",
+      "vc:label": "Consensus Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:linked:consensus-mechanisms",
+      "vc:label": "Consensus Mechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-integrity",
+      "vc:label": "Data Integrity"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-consensus",
+      "vc:label": "DistributedConsensus"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-coordinates",
+      "vc:label": "dt:coordinates"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-governs",
+      "vc:label": "dt:governs"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-secures",
+      "vc:label": "dt:secures"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-synchronizes",
+      "vc:label": "dt:synchronizes"
+    },
+    {
+      "@id": "urn:visionflow:linked:dt-validates",
+      "vc:label": "dt:validates"
+    },
+    {
+      "@id": "urn:visionflow:linked:implemented-by",
+      "vc:label": "implementedBy"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-2382-2025",
+      "vc:label": "ISO/IEC 2382:2025"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-standards-forum",
+      "vc:label": "Metaverse Standards Forum"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "MultiAgentSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-security",
+      "vc:label": "Network Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-security",
+      "vc:label": "NetworkSecurity"
+    },
+    {
+      "@id": "urn:visionflow:linked:requires-validators",
+      "vc:label": "requiresValidators"
+    },
+    {
+      "@id": "urn:visionflow:linked:tolerates-faults",
+      "vc:label": "toleratesFaults"
+    },
+    {
+      "@id": "urn:visionflow:linked:trustless-coordination",
+      "vc:label": "Trustless Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:validator-network",
+      "vc:label": "ValidatorNetwork"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "vc:label": "BlockchainDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "vc:label": "Byzantine Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dao",
+      "vc:label": "DAO"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset",
+      "vc:label": "DigitalAsset"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "DigitalTwin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fault-tolerance",
+      "vc:label": "FaultTolerance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-stake",
+      "vc:label": "Proof of Stake"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-stake",
+      "vc:label": "ProofOfStake"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:proof-of-work",
+      "vc:label": "Proof of Work"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-world",
+      "vc:label": "VirtualWorld"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "bridges-to",
+      "vc:value": "[[AI Agent System]] (ai), [[Virtual Economy]] (mv), or [[DID Nostr Identity]] (ngm)"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-84e69bff936b"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#ConsensusAlgorithm"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-9987"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Consensus Algorithm"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.40"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:consensus-algorithm"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:consensus-algorithm"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:consensus-algorithm",
+  "@type": "OntologyClass",
+  "label": "Consensus Algorithm",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "Distributed computational protocol ensuring all participants in a [[Blockchain Network]] agree on the canonical transaction history and current state without centralised authority. [[Consensus Mechanisms]] including [[Proof of Work]], [[Proof of Stake]], and [[Byzantine Fault Tolerance]] enable [[Trustless Coordination]].",
+  "vc:qualityScore": {
+    "@value": "0.40",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:did-nostr-identity",
+      "vc:label": "DID Nostr Identity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-economy",
+      "vc:label": "Virtual Economy"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:consensus-algorithm:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[achievesFinality]]",
+      "resolved": "urn:visionflow:linked:achieves-finality",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consensus Algorithms]]",
+      "resolved": "urn:visionflow:linked:consensus-algorithms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consensus Mechanisms]]",
+      "resolved": "urn:visionflow:linked:consensus-mechanisms",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Integrity]]",
+      "resolved": "urn:visionflow:linked:data-integrity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DistributedConsensus]]",
+      "resolved": "urn:visionflow:linked:distributed-consensus",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:coordinates]]",
+      "resolved": "urn:visionflow:linked:dt-coordinates",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:governs]]",
+      "resolved": "urn:visionflow:linked:dt-governs",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:secures]]",
+      "resolved": "urn:visionflow:linked:dt-secures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:synchronizes]]",
+      "resolved": "urn:visionflow:linked:dt-synchronizes",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[dt:validates]]",
+      "resolved": "urn:visionflow:linked:dt-validates",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[implementedBy]]",
+      "resolved": "urn:visionflow:linked:implemented-by",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 2382:2025]]",
+      "resolved": "urn:visionflow:linked:iso-iec-2382-2025",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Metaverse Standards Forum]]",
+      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MultiAgentSystem]]",
+      "resolved": "urn:visionflow:linked:multi-agent-system",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Network Security]]",
+      "resolved": "urn:visionflow:linked:network-security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NetworkSecurity]]",
+      "resolved": "urn:visionflow:linked:network-security",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[requiresValidators]]",
+      "resolved": "urn:visionflow:linked:requires-validators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[toleratesFaults]]",
+      "resolved": "urn:visionflow:linked:tolerates-faults",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Trustless Coordination]]",
+      "resolved": "urn:visionflow:linked:trustless-coordination",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ValidatorNetwork]]",
+      "resolved": "urn:visionflow:linked:validator-network",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[BlockchainDomain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain Network]]",
+      "resolved": "urn:visionflow:owl:class:blockchain-network",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Byzantine Fault Tolerance]]",
+      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DAO]]",
+      "resolved": "urn:visionflow:owl:class:dao",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalAsset]]",
+      "resolved": "urn:visionflow:owl:class:digital-asset",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DigitalTwin]]",
+      "resolved": "urn:visionflow:owl:class:digital-twin",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[FaultTolerance]]",
+      "resolved": "urn:visionflow:owl:class:fault-tolerance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof of Stake]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-stake",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ProofOfStake]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-stake",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Proof of Work]]",
+      "resolved": "urn:visionflow:owl:class:proof-of-work",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[VirtualWorld]]",
+      "resolved": "urn:visionflow:owl:class:virtual-world",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - Distributed computational protocol ensuring all participants in a [[Blockchain Network]] agree on the canonical transaction history and current state without centralised authority. [[Consensus Mechanisms]] including [[Proof of Work]], [[Proof of Stake]], and [[Byzantine Fault Tolerance]] enable [[Trustless Coordination]].

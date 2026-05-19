@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:63b42a56676e08723d3fef6d0ee243bacfd99ad6caf8cdb6df0fdbfeebda08e3",
+  "title": "Radiology AI",
+  "slug": "radiology-ai",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:radiology-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Radiology AI refers to artificial intelligence systems specifically designed for the interpretation and analysis of radiological imaging modalities including X-ray, computed tomography (CT), magnetic resonance imaging (MRI), and ultrasound. These systems automate detection, classification, and quantification tasks whilst integrating with PACS workflows and providing radiologist-level diagnostic performance validated through clinical trials.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:vision-processing",
+      "label": "Vision Processing"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "pathology-ai",
+      "label": "Pathology AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "pathology-ai",
+      "label": "Pathology AI"
+    }
+  ]
+}

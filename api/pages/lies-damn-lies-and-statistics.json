@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:8d16e80cd0ecc86305f6a785b914ff9329859f551841e26a9f48793a3394ca69",
+  "title": "Lies Damn Lies and Statistics",
+  "slug": "lies-damn-lies-and-statistics",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:lies-damn-lies-and-statistics",
+  "domain": "infrastructure",
+  "definition": "Lies Damn Lies and Statistics is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,21 +1,271 @@
-iri:: http://narrativegoldmine.com/ontology#GovernanceFramework
-uri:: urn:visionclaw:concept:artificial-intelligence:governance-framework
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:governance-framework
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: Governance Framework
-content-hash:: sha256-12-6bae3d1fbd50
-legacy-term-id:: NGM-7023
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/ontology#GovernanceFramework
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:governance-framework
 public:: true
+
+# Governance Framework
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4",
+  "@type": "Page",
+  "vc:slug": "governance-framework",
+  "title": "Governance Framework",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:core-technology",
+      "vc:label": "Core Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-rights",
+      "vc:label": "Decision Rights"
+    },
+    {
+      "@id": "urn:visionflow:linked:organisational-framework",
+      "vc:label": "Organisational Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-management",
+      "vc:label": "Performance Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:strategic-alignment",
+      "vc:label": "Strategic Alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:policy-enforcement",
+      "vc:label": "Policy Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6bae3d1fbd50"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/ontology#GovernanceFramework"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7023"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Governance Framework"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:governance-framework"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:governance-framework"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:governance-framework",
+  "@type": "OntologyClass",
+  "label": "Governance Framework",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:linked:organisational-framework",
+      "vc:label": "Organisational Framework"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:performance-management",
+      "vc:label": "Performance Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:strategic-alignment",
+      "vc:label": "Strategic Alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:decision-rights",
+      "vc:label": "Decision Rights"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:policy-enforcement",
+      "vc:label": "Policy Enforcement"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:governance-framework:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Core Technology]]",
+      "resolved": "urn:visionflow:linked:core-technology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Decision Rights]]",
+      "resolved": "urn:visionflow:linked:decision-rights",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Organisational Framework]]",
+      "resolved": "urn:visionflow:linked:organisational-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Performance Management]]",
+      "resolved": "urn:visionflow:linked:performance-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Strategic Alignment]]",
+      "resolved": "urn:visionflow:linked:strategic-alignment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Accountability]]",
+      "resolved": "urn:visionflow:owl:class:accountability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Policy Enforcement]]",
+      "resolved": "urn:visionflow:owl:class:policy-enforcement",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:risk-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.

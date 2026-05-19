@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:bbfd4c84a503d50f68e85a44375f092dae152e2bd3a62083aaa318712e9c0a31",
+  "title": "Particle System",
+  "slug": "particle-system",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:particle-system",
+  "domain": "spatial-computing",
+  "definition": "A computer graphics technique that simulates fuzzy, chaotic, or fluid phenomena by managing large numbers of small graphical objects with properties like position, velocity, color, and lifetime, controlled by emitters and affected by forces to create effects like fire, smoke, water, and magical effects.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:visual-effects",
+      "label": "Visual Effects"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:dynamic-visual-effects",
+        "label": "Dynamic Visual Effects"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dynamic-visual-effects",
+      "label": "Dynamic Visual Effects"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "visual-effects",
+      "label": "Visual Effects"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    }
+  ]
+}

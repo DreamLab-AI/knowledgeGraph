@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:eac76cd937fb247f28a457fcd1b2412aace9d90320c27e263066dfd4b68b4b9a",
+  "title": "Virtual Concerts",
+  "slug": "virtual-concerts",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:virtual-concerts",
+  "domain": "spatial-computing",
+  "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:virtual-event",
+      "label": "Virtual Event"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "virtual-event",
+      "label": "Virtual Event"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    }
+  ]
+}

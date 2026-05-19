@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:8eafca0c47e3cfbab79d054c1ff4fad5d00b73c92e4c63bc15fda6a71a3b998c",
+  "title": "rb 0093 speed limitation",
+  "slug": "rb-0093-speed-limitation",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0093-speed-limitation",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:robot-safety",
+      "label": "Robot Safety"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

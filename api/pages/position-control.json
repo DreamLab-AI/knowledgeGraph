@@ -1,0 +1,214 @@
+{
+  "id": "urn:visionflow:page:934f1323231d57fa3b7a8ebce731c61066086a5d2775f88de03fa9323b28e73c",
+  "title": "PositionControl",
+  "slug": "position-control",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:position-control",
+  "domain": "robotics",
+  "definition": "A closed-loop feedback control methodology that commands a robotic manipulator, actuator, or motion platform to achieve and maintain a desired spatial position or angular orientation by continuously measuring the actual position via encoders, resolvers, or external sensing systems (vision, LIDAR), computing the position error (setpoint minus measured position), and generating corrective control signals through algorithms such as proportional-integral-derivative (PID) control, state-space controllers, or model-based feedforward compensation, with applications spanning industrial robotic arms executing pick-and-place operations with \u00b10.05 mm repeatability, CNC machine tools achieving \u00b12 \u03bcm contouring accuracy, collaborative robots maintaining safe position constraints for human proximity (ISO/TS 15066 compliant force-limited operation), delta robots performing high-speed sorting at 300 picks/minute, and autonomous mobile robots following waypoint trajectories with <10 cm path deviation, characterized by performance metrics including steady-state error (typical <0.1% of travel range for servo drives), settling time (milliseconds to seconds depending on inertia and control bandwidth), ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:servo-system",
+      "label": "ServoSystem"
+    },
+    {
+      "id": "urn:visionflow:owl:class:control-algorithm",
+      "label": "ControlAlgorithm"
+    },
+    {
+      "id": "urn:visionflow:owl:class:feedback-control",
+      "label": "FeedbackControl"
+    },
+    {
+      "id": "urn:visionflow:owl:class:motion-control",
+      "label": "MotionControl"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.91,
+  "maturity": "production-ready",
+  "status": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:actuator-command",
+        "label": "ActuatorCommand"
+      },
+      {
+        "id": "urn:visionflow:linked:control-law",
+        "label": "ControlLaw"
+      },
+      {
+        "id": "urn:visionflow:linked:error-calculation",
+        "label": "ErrorCalculation"
+      },
+      {
+        "id": "urn:visionflow:linked:feedforward-compensation",
+        "label": "FeedforwardCompensation"
+      },
+      {
+        "id": "urn:visionflow:linked:position-sensor",
+        "label": "PositionSensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:visionflow:linked:kinematic-model",
+        "label": "KinematicModel"
+      },
+      {
+        "id": "urn:visionflow:linked:motor-driver",
+        "label": "MotorDriver"
+      },
+      {
+        "id": "urn:visionflow:linked:position-feedback",
+        "label": "PositionFeedback"
+      },
+      {
+        "id": "urn:visionflow:owl:class:power-supply",
+        "label": "PowerSupply"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:homing",
+        "label": "Homing"
+      },
+      {
+        "id": "urn:visionflow:linked:path-following",
+        "label": "PathFollowing"
+      },
+      {
+        "id": "urn:visionflow:linked:pick-and-place",
+        "label": "PickAndPlace"
+      },
+      {
+        "id": "urn:visionflow:linked:synchronization",
+        "label": "Synchronization"
+      },
+      {
+        "id": "urn:visionflow:linked:trajectory-tracking",
+        "label": "TrajectoryTracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator-command",
+      "label": "ActuatorCommand"
+    },
+    {
+      "slug": "automation-domain",
+      "label": "AutomationDomain"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "control-law",
+      "label": "ControlLaw"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "ControlTheoryDomain"
+    },
+    {
+      "slug": "error-calculation",
+      "label": "ErrorCalculation"
+    },
+    {
+      "slug": "feedforward-compensation",
+      "label": "FeedforwardCompensation"
+    },
+    {
+      "slug": "homing",
+      "label": "Homing"
+    },
+    {
+      "slug": "iec-61800-adjustable-speed-electrical-power-drive-systems",
+      "label": "IEC 61800 Adjustable Speed Electrical Power Drive Systems"
+    },
+    {
+      "slug": "ieee-control-systems-society",
+      "label": "IEEE Control Systems Society"
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "label": "ISO 8373 Robotics Vocabulary"
+    },
+    {
+      "slug": "iso-9283-manipulating-industrial-robots-performance-criteria",
+      "label": "ISO 9283 Manipulating Industrial Robots Performance Criteria"
+    },
+    {
+      "slug": "kinematic-model",
+      "label": "KinematicModel"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "MotorDriver"
+    },
+    {
+      "slug": "path-following",
+      "label": "PathFollowing"
+    },
+    {
+      "slug": "pick-and-place",
+      "label": "PickAndPlace"
+    },
+    {
+      "slug": "position-feedback",
+      "label": "PositionFeedback"
+    },
+    {
+      "slug": "position-sensor",
+      "label": "PositionSensor"
+    },
+    {
+      "slug": "robot-operating-system-ros-control-standards",
+      "label": "Robot Operating System (ROS) Control Standards"
+    },
+    {
+      "slug": "servo-system",
+      "label": "ServoSystem"
+    },
+    {
+      "slug": "synchronization",
+      "label": "Synchronization"
+    },
+    {
+      "slug": "trajectory-tracking",
+      "label": "TrajectoryTracking"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "ControlAlgorithm"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "FeedbackControl"
+    },
+    {
+      "slug": "motion-control",
+      "label": "MotionControl"
+    },
+    {
+      "slug": "power-supply",
+      "label": "PowerSupply"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

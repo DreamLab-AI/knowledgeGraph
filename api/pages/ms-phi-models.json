@@ -1,0 +1,515 @@
+{
+  "id": "urn:visionflow:page:b80718b34072ef63ac8425602d9c8c2380a97fa548221c0669da0d8795cb7f83",
+  "title": "MS Phi models",
+  "slug": "ms-phi-models",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:ms-phi-models",
+  "domain": "artificial-intelligence",
+  "definition": "MS Phi models is Microsoft Research's family of small language models (SLMs) demonstrating that carefully curated, textbook-quality synthetic training data can achieve state-of-the-art performance at parameter counts one to two orders of magnitude smaller than frontier large language models, establishing a new paradigm in which data quality dominates data quantity as the primary driver of emergent reasoning capability across the full capability spectrum from Python code generation through mathematical chain-of-thought reasoning, multimodal vision-speech-text integration, and agentic tool-use. The series spans eight distinct model generations released between June 2023 and April 2025: Phi-1 (1.3B parameters, June 2023, Python code generation trained on GPT-4-synthesised textbook chapters and exercises, achieving HumanEval pass@1 50.6% matching CodeLLaMA-34B at 26\u00d7 fewer parameters); Phi-1.5 (1.3B, September 2023, extending to natural language commonsense reasoning through \"synthetic fables\" \u2014 short educational narratives encoding causal and common-sense inference, MMLU 46.1%); Phi-2 (2.7B, December 2023, outperforming LLaMA-2-70B on ARC / WinoGrande / HellaSwag / PIQA reasoning benc",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:general-purpose-ai-model",
+      "label": "General Purpose AI Model"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "id": "urn:visionflow:owl:class:large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:owl:class:adapter-modules",
+        "label": "Adapter Modules"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-head",
+        "label": "Attention Head"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:visionflow:owl:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:continued-pre-training",
+        "label": "Continued Pre Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:visionflow:owl:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "id": "urn:visionflow:owl:class:training-and-fine-tuning",
+        "label": "Training and fine tuning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:ai-deployment",
+        "label": "AI Deployment"
+      },
+      {
+        "id": "urn:visionflow:owl:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:context-aware-computing",
+        "label": "Context Aware Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:visionflow:owl:class:microsoft-copilot",
+        "label": "Microsoft Copilot"
+      },
+      {
+        "id": "urn:visionflow:owl:class:multimodal-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:on-device-learning",
+        "label": "On-Device Learning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:owl:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "id": "urn:visionflow:owl:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:qlo-ra",
+        "label": "QLoRA"
+      },
+      {
+        "id": "urn:visionflow:owl:class:safety-fine-tuning",
+        "label": "Safety Fine Tuning"
+      },
+      {
+        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "edge-aidomain",
+      "label": "EdgeAIDomain"
+    },
+    {
+      "slug": "foundation-models-domain",
+      "label": "FoundationModelsDomain"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "InferenceLayer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "ModelLayer"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "adapter-modules",
+      "label": "Adapter Modules"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-augmented-software-engineering",
+      "label": "AI-Augmented Software Engineering"
+    },
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "attention-head",
+      "label": "Attention Head"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "context-aware-computing",
+      "label": "Context Aware Computing"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "continued-pre-training",
+      "label": "Continued Pre Training"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "edge-ai-system",
+      "label": "Edge AI System"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-computing-architecture",
+      "label": "Edge Computing Architecture"
+    },
+    {
+      "slug": "embedded-ai-frameworks",
+      "label": "Embedded AI Frameworks"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "full-fine-tuning",
+      "label": "Full Fine Tuning"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "slug": "general-purpose-ai-model",
+      "label": "General Purpose AI Model"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "gpt-3",
+      "label": "GPT 3"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
+      "slug": "inference-hardware",
+      "label": "Inference Hardware"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "knowledge-distillation-for-edge",
+      "label": "Knowledge Distillation for Edge"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
+    },
+    {
+      "slug": "lla-ma",
+      "label": "LLaMA"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "model-compression-for-edge",
+      "label": "Model Compression for Edge"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-pruning-for-edge-deployment",
+      "label": "Model Pruning for Edge Deployment"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "multimodal-understanding",
+      "label": "Multimodal Understanding"
+    },
+    {
+      "slug": "npu",
+      "label": "NPU"
+    },
+    {
+      "slug": "on-device-learning",
+      "label": "On-Device Learning"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "qlo-ra",
+      "label": "QLoRA"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "responsible-ai-principles",
+      "label": "Responsible AI Principles"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "safety-fine-tuning",
+      "label": "Safety Fine Tuning"
+    },
+    {
+      "slug": "scaled-dot-product-attention",
+      "label": "Scaled Dot Product Attention"
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
+  "backlinks": []
+}

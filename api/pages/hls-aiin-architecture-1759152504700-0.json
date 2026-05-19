@@ -1,0 +1,30 @@
+{
+  "id": "urn:visionflow:page:f6bbcc3ae6524c042ca2943fbfbb976474951604cb1c11518f7be385ba8376fe",
+  "title": "hls__AIinARCHITECTURE_1759152504700_0",
+  "slug": "hls-aiin-architecture-1759152504700-0",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:hls-aiin-architecture-1759152504700-0",
+  "domain": "infrastructure",
+  "definition": "hls__AIinARCHITECTURE_1759152504700_0 is a concept within the ngm domain.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,219 @@
+{
+  "id": "urn:visionflow:page:605d1c8d3e5b8e94b85b7c72e3209bfe8265c7dec51286891637349bdab5b129",
+  "title": "Physics Engine",
+  "slug": "physics-engine",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:physics-engine",
+  "domain": "spatial-computing",
+  "definition": "Software component that simulates physical interactions, constraints, and dynamics in real-time for virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:collision-detection-system",
+        "label": "Collision Detection System"
+      },
+      {
+        "id": "urn:visionflow:linked:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:visionflow:owl:class:particle-system",
+        "label": "Particle System"
+      },
+      {
+        "id": "urn:visionflow:owl:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:owl:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:visionflow:owl:class:math-library",
+        "label": "Math Library"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:collision-response",
+        "label": "Collision Response"
+      },
+      {
+        "id": "urn:visionflow:linked:kinematic-animation",
+        "label": "Kinematic Animation"
+      },
+      {
+        "id": "urn:visionflow:linked:physical-simulation",
+        "label": "Physical Simulation"
+      },
+      {
+        "id": "urn:visionflow:linked:realistic-interaction",
+        "label": "Realistic Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "animation-system",
+      "label": "Animation System"
+    },
+    {
+      "slug": "collision-detection-system",
+      "label": "Collision Detection System"
+    },
+    {
+      "slug": "collision-response",
+      "label": "Collision Response"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "ewg-msf-taxonomy",
+      "label": "EWG/MSF Taxonomy"
+    },
+    {
+      "slug": "iso-iec-23090-3",
+      "label": "ISO/IEC 23090-3"
+    },
+    {
+      "slug": "kinematic-animation",
+      "label": "Kinematic Animation"
+    },
+    {
+      "slug": "physical-simulation",
+      "label": "Physical Simulation"
+    },
+    {
+      "slug": "realistic-interaction",
+      "label": "Realistic Interaction"
+    },
+    {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "math-library",
+      "label": "Math Library"
+    },
+    {
+      "slug": "particle-system",
+      "label": "Particle System"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "rigid-body-dynamics",
+      "label": "Rigid Body Dynamics"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "fluid-simulation",
+      "label": "Fluid Simulation"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    },
+    {
+      "slug": "soft-body-dynamics",
+      "label": "Soft Body Dynamics"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

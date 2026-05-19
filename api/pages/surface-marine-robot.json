@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:55633b09b538ad9d0901a719ae773fee3c988ebf5e2f905eb08a47696536720c",
+  "title": "Surface Marine Robot",
+  "slug": "surface-marine-robot",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:surface-marine-robot",
+  "domain": "robotics",
+  "definition": "Surface marine robot operates on water surface like unmanned surface vessels.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:marine-robot",
+      "label": "Marine Robot"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.95,
+  "maturity": "established",
+  "status": "complete",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "marine-robot",
+      "label": "Marine Robot"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": []
+}

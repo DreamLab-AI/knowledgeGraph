@@ -1,0 +1,35 @@
+{
+  "id": "urn:visionflow:page:863d972f169a0229677acf8c72e176802f95610bdea2bbb3857317fe337c529b",
+  "title": "rb 0066 robot sensor",
+  "slug": "rb-0066-robot-sensor",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:rb-0066-robot-sensor",
+  "domain": "robotics",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "qualityScore": 0.5,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotics-domain",
+      "label": "RoboticsDomain"
+    }
+  ],
+  "backlinks": []
+}

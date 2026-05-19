@@ -1,0 +1,652 @@
+{
+  "id": "urn:visionflow:page:ac7ee14748aca3780ae03c4508b643cd64cc5fe72b24f8ae909cd512949a183e",
+  "title": "Attention",
+  "slug": "attention",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:attention",
+  "domain": "artificial-intelligence",
+  "definition": "**Attention** is a differentiable content-based addressing mechanism for neural networks that computes a weighted combination of value vectors according to learned compatibility scores between a query vector and a set of key vectors, formalised in its most influential form as Scaled Dot-Product Attention (Vaswani et al. 2017) by the closed-form operator Attention(Q, K, V) = softmax(QK^T / \u221ad_k) V where Q \u2208 \u211d^{n\u00d7d_k} is a matrix of n query vectors, K \u2208 \u211d^{m\u00d7d_k} is a matrix of m key vectors, V \u2208 \u211d^{m\u00d7d_v} is the matching matrix of value vectors, d_k is the key dimensionality and the \u221ad_k denominator prevents the softmax from saturating into one-hot regimes at high d_k where unscaled dot products acquire variance d_k and drive gradient collapse, originating in the additive (Bahdanau-style) formulation of Bahdanau, Cho & Bengio (ICLR 2015) \"Neural Machine Translation by Jointly Learning to Align and Translate\" which broke the fixed-vector bottleneck of Sutskever-Vinyals-Le (NeurIPS 2014) encoder-decoder seq2seq by allowing each decoder step to softly align over all encoder hidden states via score(s, h) = v^T tanh(W_s s + W_h h), refined into the simpler multiplicative (Luong) variant ",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:differentiable-memory",
+      "label": "Differentiable Memory"
+    },
+    {
+      "id": "urn:visionflow:linked:neural-network-mechanism",
+      "label": "Neural Network Mechanism"
+    },
+    {
+      "id": "urn:visionflow:linked:representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "id": "urn:visionflow:linked:sequence-model",
+      "label": "Sequence Model"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:attention-score",
+        "label": "Attention Score"
+      },
+      {
+        "id": "urn:visionflow:linked:key",
+        "label": "Key"
+      },
+      {
+        "id": "urn:visionflow:linked:query",
+        "label": "Query"
+      },
+      {
+        "id": "urn:visionflow:linked:softmax",
+        "label": "Softmax"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-head",
+        "label": "Attention Head"
+      },
+      {
+        "id": "urn:visionflow:owl:class:attention-weight",
+        "label": "Attention Weight"
+      },
+      {
+        "id": "urn:visionflow:owl:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:visionflow:owl:class:value",
+        "label": "Value"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "id": "urn:visionflow:linked:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:visionflow:linked:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:visionflow:linked:linear-projection",
+        "label": "Linear Projection"
+      },
+      {
+        "id": "urn:visionflow:linked:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "id": "urn:visionflow:owl:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:cross-modal-conditioning",
+        "label": "Cross-Modal Conditioning"
+      },
+      {
+        "id": "urn:visionflow:linked:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:visionflow:linked:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:visionflow:linked:long-context-window",
+        "label": "Long Context Window"
+      },
+      {
+        "id": "urn:visionflow:linked:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "id": "urn:visionflow:linked:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:visionflow:owl:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:content-based-addressing",
+        "label": "Content-Based Addressing"
+      },
+      {
+        "id": "urn:visionflow:linked:differentiable-lookup",
+        "label": "Differentiable Lookup"
+      },
+      {
+        "id": "urn:visionflow:linked:permutation-equivariance",
+        "label": "Permutation Equivariance"
+      },
+      {
+        "id": "urn:visionflow:linked:soft-alignment",
+        "label": "Soft Alignment"
+      },
+      {
+        "id": "urn:visionflow:linked:weighted-aggregation",
+        "label": "Weighted Aggregation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acl",
+      "label": "ACL"
+    },
+    {
+      "slug": "ainslie-et-al-2023-gqa",
+      "label": "Ainslie et al. 2023 GQA"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "attention-score",
+      "label": "Attention Score"
+    },
+    {
+      "slug": "bahdanau-et-al-2015-neural-machine-translation-attention",
+      "label": "Bahdanau et al. 2015 Neural Machine Translation Attention"
+    },
+    {
+      "slug": "beltagy-et-al-2020-longformer",
+      "label": "Beltagy et al. 2020 Longformer"
+    },
+    {
+      "slug": "brown-et-al-2020-gpt-3",
+      "label": "Brown et al. 2020 GPT-3"
+    },
+    {
+      "slug": "causal-mask",
+      "label": "Causal Mask"
+    },
+    {
+      "slug": "child-et-al-2019-sparse-transformer",
+      "label": "Child et al. 2019 Sparse Transformer"
+    },
+    {
+      "slug": "choromanski-et-al-2021-performer",
+      "label": "Choromanski et al. 2021 Performer"
+    },
+    {
+      "slug": "content-based-addressing",
+      "label": "Content-Based Addressing"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "dao-2023-flash-attention-2",
+      "label": "Dao 2023 FlashAttention-2"
+    },
+    {
+      "slug": "dao-et-al-2022-flash-attention",
+      "label": "Dao et al. 2022 FlashAttention"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "DeepLearningDomain"
+    },
+    {
+      "slug": "deep-seek-ai-2024-deep-seek-v2-mla",
+      "label": "DeepSeek-AI 2024 DeepSeek-V2 MLA"
+    },
+    {
+      "slug": "devlin-et-al-2019-bert",
+      "label": "Devlin et al. 2019 BERT"
+    },
+    {
+      "slug": "differentiable-architecture",
+      "label": "Differentiable Architecture"
+    },
+    {
+      "slug": "differentiable-lookup",
+      "label": "Differentiable Lookup"
+    },
+    {
+      "slug": "differentiable-memory",
+      "label": "Differentiable Memory"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "dosovitskiy-et-al-2021-vision-transformer",
+      "label": "Dosovitskiy et al. 2021 Vision Transformer"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "flash-attention-kernel",
+      "label": "FlashAttention Kernel"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "gated-recurrent-unit",
+      "label": "Gated Recurrent Unit"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "graves-et-al-2014-neural-turing-machines",
+      "label": "Graves et al. 2014 Neural Turing Machines"
+    },
+    {
+      "slug": "iclr",
+      "label": "ICLR"
+    },
+    {
+      "slug": "icml",
+      "label": "ICML"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "kernel-layer",
+      "label": "KernelLayer"
+    },
+    {
+      "slug": "key",
+      "label": "Key"
+    },
+    {
+      "slug": "kitaev-et-al-2020-reformer",
+      "label": "Kitaev et al. 2020 Reformer"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    },
+    {
+      "slug": "kwon-et-al-2023-paged-attention-v-llm",
+      "label": "Kwon et al. 2023 PagedAttention vLLM"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "linear-projection",
+      "label": "Linear Projection"
+    },
+    {
+      "slug": "liu-et-al-2021-swin-transformer",
+      "label": "Liu et al. 2021 Swin Transformer"
+    },
+    {
+      "slug": "liu-et-al-2023-ring-attention",
+      "label": "Liu et al. 2023 Ring Attention"
+    },
+    {
+      "slug": "long-context-window",
+      "label": "Long Context Window"
+    },
+    {
+      "slug": "luong-et-al-2015-effective-approaches-attention-nmt",
+      "label": "Luong et al. 2015 Effective Approaches Attention NMT"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "matrix-multiplication",
+      "label": "Matrix Multiplication"
+    },
+    {
+      "slug": "memory-augmented-neural-network",
+      "label": "Memory-Augmented Neural Network"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "ModelArchitectureLayer"
+    },
+    {
+      "slug": "multimodal-reasoning",
+      "label": "Multimodal Reasoning"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    },
+    {
+      "slug": "neural-machine-translation",
+      "label": "Neural Machine Translation"
+    },
+    {
+      "slug": "neural-network-mechanism",
+      "label": "Neural Network Mechanism"
+    },
+    {
+      "slug": "neural-turing-machine",
+      "label": "Neural Turing Machine"
+    },
+    {
+      "slug": "olsson-et-al-2022-induction-heads",
+      "label": "Olsson et al. 2022 Induction Heads"
+    },
+    {
+      "slug": "onnx-operator-set",
+      "label": "ONNX Operator Set"
+    },
+    {
+      "slug": "open-ai-triton",
+      "label": "OpenAI Triton"
+    },
+    {
+      "slug": "peebles-and-xie-2023-di-t",
+      "label": "Peebles & Xie 2023 DiT"
+    },
+    {
+      "slug": "peng-et-al-2023-ya-rn",
+      "label": "Peng et al. 2023 YaRN"
+    },
+    {
+      "slug": "permutation-equivariance",
+      "label": "Permutation Equivariance"
+    },
+    {
+      "slug": "pointer-network",
+      "label": "Pointer Network"
+    },
+    {
+      "slug": "press-et-al-2022-ali-bi",
+      "label": "Press et al. 2022 ALiBi"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "protein-structure-prediction",
+      "label": "Protein Structure Prediction"
+    },
+    {
+      "slug": "query",
+      "label": "Query"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "rotary-position-embedding",
+      "label": "Rotary Position Embedding"
+    },
+    {
+      "slug": "scaled-dot-product",
+      "label": "Scaled Dot Product"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
+    },
+    {
+      "slug": "shah-et-al-2024-flash-attention-3",
+      "label": "Shah et al. 2024 FlashAttention-3"
+    },
+    {
+      "slug": "shazeer-2019-multi-query-attention",
+      "label": "Shazeer 2019 Multi-Query Attention"
+    },
+    {
+      "slug": "sliding-window",
+      "label": "Sliding Window"
+    },
+    {
+      "slug": "soft-alignment",
+      "label": "Soft Alignment"
+    },
+    {
+      "slug": "softmax",
+      "label": "Softmax"
+    },
+    {
+      "slug": "state-space-model",
+      "label": "State Space Model"
+    },
+    {
+      "slug": "su-et-al-2021-ro-former-ro-pe",
+      "label": "Su et al. 2021 RoFormer RoPE"
+    },
+    {
+      "slug": "tay-et-al-2022-efficient-transformers-survey",
+      "label": "Tay et al. 2022 Efficient Transformers Survey"
+    },
+    {
+      "slug": "vaswani-et-al-2017-attention-is-all-you-need",
+      "label": "Vaswani et al. 2017 Attention Is All You Need"
+    },
+    {
+      "slug": "vinyals-et-al-2015-pointer-networks",
+      "label": "Vinyals et al. 2015 Pointer Networks"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "wang-et-al-2020-linformer",
+      "label": "Wang et al. 2020 Linformer"
+    },
+    {
+      "slug": "wang-et-al-2023-ioi-circuit-gpt-2",
+      "label": "Wang et al. 2023 IOI Circuit GPT-2"
+    },
+    {
+      "slug": "weighted-aggregation",
+      "label": "Weighted Aggregation"
+    },
+    {
+      "slug": "zaheer-et-al-2020-big-bird",
+      "label": "Zaheer et al. 2020 Big Bird"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "attention-head",
+      "label": "Attention Head"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "long-short-term-memory",
+      "label": "Long Short Term Memory"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "value",
+      "label": "Value"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "silo-ai",
+      "label": "Silo AI"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

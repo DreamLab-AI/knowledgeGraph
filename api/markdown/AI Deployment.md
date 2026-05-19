@@ -1,21 +1,373 @@
-iri:: http://narrativegoldmine.com/metaverse#AIDeployment
-uri:: urn:visionclaw:concept:artificial-intelligence:ai-deployment
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:artificial-intelligence:ai-deployment
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: artificial-intelligence
-preferred-term:: AI Deployment
-content-hash:: sha256-12-c171f95f6022
-legacy-term-id:: AI-0094
-status:: draft
-maturity:: draft
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AIDeployment
+legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-deployment
 public:: true
+
+# AI Deployment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94",
+  "@type": "Page",
+  "vc:slug": "ai-deployment",
+  "title": "AI Deployment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:ai-system-use-by-ai-users-and-ai-operators",
+      "vc:label": "AI system use by AI Users and AI Operators"
+    },
+    {
+      "@id": "urn:visionflow:linked:deployment-infrastructure",
+      "vc:label": "Deployment infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:fda-software-as-medical-device",
+      "vc:label": "FDA Software as Medical Device"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25010",
+      "vc:label": "ISO/IEC 25010"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001-2023",
+      "vc:label": "ISO/IEC 42001:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-5338-2023",
+      "vc:label": "ISO/IEC 5338:2023"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:operational-procedures",
+      "vc:label": "operational procedures"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-development",
+      "vc:label": "AI Development"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-monitoring",
+      "vc:label": "AI Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-operator",
+      "vc:label": "AI Operator"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-provider",
+      "vc:label": "AI Provider"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-user",
+      "vc:label": "AI User"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "vc:label": "MetaverseDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-performance",
+      "vc:label": "Model Performance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-c171f95f6022"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "artificial-intelligence"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AIDeployment"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0094"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Deployment"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-deployment"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-deployment"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:ai-deployment",
+  "@type": "OntologyClass",
+  "label": "AI Deployment",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    }
+  ],
+  "vc:sourceDomain": "artificial-intelligence",
+  "vc:status": "draft",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:requires": [
+    {
+      "@id": "urn:visionflow:linked:deployment-infrastructure",
+      "vc:label": "Deployment infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:operational-procedures",
+      "vc:label": "operational procedures"
+    }
+  ],
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:linked:ai-system-use-by-ai-users-and-ai-operators",
+      "vc:label": "AI system use by AI Users and AI Operators"
+    }
+  ],
+  "vc:bridgesTo": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-deployment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[AI system use by AI Users and AI Operators]]",
+      "resolved": "urn:visionflow:linked:ai-system-use-by-ai-users-and-ai-operators",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Deployment infrastructure]]",
+      "resolved": "urn:visionflow:linked:deployment-infrastructure",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[FDA Software as Medical Device]]",
+      "resolved": "urn:visionflow:linked:fda-software-as-medical-device",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 25010]]",
+      "resolved": "urn:visionflow:linked:iso-iec-25010",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 5338:2023]]",
+      "resolved": "urn:visionflow:linked:iso-iec-5338-2023",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[NIST AI Risk Management Framework]]",
+      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[operational procedures]]",
+      "resolved": "urn:visionflow:linked:operational-procedures",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Development]]",
+      "resolved": "urn:visionflow:owl:class:ai-development",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Lifecycle]]",
+      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Monitoring]]",
+      "resolved": "urn:visionflow:owl:class:ai-monitoring",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Operator]]",
+      "resolved": "urn:visionflow:owl:class:ai-operator",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Provider]]",
+      "resolved": "urn:visionflow:owl:class:ai-provider",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI User]]",
+      "resolved": "urn:visionflow:owl:class:ai-user",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human Oversight]]",
+      "resolved": "urn:visionflow:owl:class:human-oversight",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Performance]]",
+      "resolved": "urn:visionflow:owl:class:model-performance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Management]]",
+      "resolved": "urn:visionflow:owl:class:risk-management",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.

@@ -1,20 +1,165 @@
-iri:: http://narrativegoldmine.com/infrastructure#SecurityLayer
-uri:: urn:visionclaw:concept:infrastructure:security-layer
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:infrastructure:security-layer
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: infrastructure
-preferred-term:: Security Layer
-content-hash:: sha256-12-6bfd21fa94d6
-status:: stub
-maturity:: draft
-quality-score:: 0.35
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2025-11-08T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/infrastructure#SecurityLayer
+legacy_uri:: urn:visionclaw:concept:infrastructure:security-layer
 public:: true
+
+# Security Layer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334",
+  "@type": "Page",
+  "vc:slug": "security-layer",
+  "title": "Security Layer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-6bfd21fa94d6"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2025-11-08T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "infrastructure"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/infrastructure#SecurityLayer"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "draft"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Security Layer"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.35"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:infrastructure:security-layer"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "stub"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:infrastructure:security-layer"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:security-layer",
+  "@type": "OntologyClass",
+  "label": "Security Layer",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "infrastructure"
+    }
+  ],
+  "vc:sourceDomain": "infrastructure",
+  "vc:status": "stub",
+  "vc:maturity": "draft",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334"
+  },
+  "vc:inferenceRule": "R5DomainRootFallback",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality and privacy, and maintain system security properties. This layer encompasses cryptographic primitives as implemented security mechanisms (hash functions providing integrity, digital signatures providing authentication, encryption providing confidentiality), security protocols (key exchange, secure communication, authentication protocols), threat models and attack vectors (51% attacks, Sybil attacks, eclipse attacks, smart contract vulnerabilities), security analysis and verification (formal verification, security auditing, penetration testing), defensive mechanisms (access control, authorization, sandboxing, rate limiting), and security properties as realized through specific implementations (immutability through hash linking, non-repudiation through digital signatures, privacy through zero-knowledge proofs). Unlike ConceptualLayer which addresses abstract security properties, SecurityLayer",
+  "vc:qualityScore": {
+    "@value": "0.35",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:security-layer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334"
+  },
+  "vc:resolutions": [],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality and privacy, and maintain system security properties. This layer encompasses cryptographic primitives as implemented security mechanisms (hash functions providing integrity, digital signatures providing authentication, encryption providing confidentiality), security protocols (key exchange, secure communication, authentication protocols), threat models and attack vectors (51% attacks, Sybil attacks, eclipse attacks, smart contract vulnerabilities), security analysis and verification (formal verification, security auditing, penetration testing), defensive mechanisms (access control, authorization, sandboxing, rate limiting), and security properties as realized through specific implementations (immutability through hash linking, non-repudiation through digital signatures, privacy through zero-knowledge proofs). Unlike ConceptualLayer which addresses abstract security properties, SecurityLayer focuses on concrete security implementations and mechanisms. Unlike generic ProtocolLayer, SecurityLayer emphasizes security-specific considerations: threat resistance, attack prevention, security guarantees, cryptographic soundness, and defensive architectures.

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:bc897b37019bdebe518663390b585ce4e930498b58af264d9a6f1e6e6cceeb0b",
+  "title": "Digital Safety",
+  "slug": "digital-safety",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:digital-safety",
+  "domain": "spatial-computing",
+  "definition": "Digital Safety is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Telecollaboration]]",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "parental-controls",
+      "label": "Parental Controls"
+    },
+    {
+      "slug": "participant-protection",
+      "label": "Participant Protection"
+    }
+  ]
+}

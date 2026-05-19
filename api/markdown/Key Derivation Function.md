@@ -1,21 +1,261 @@
-iri:: http://narrativegoldmine.com/blockchain#KeyDerivationFunction
-uri:: urn:visionclaw:concept:blockchain:key-derivation-function
-rdf-type:: owl:Class
-same-as:: urn:visionclaw:concept:blockchain:key-derivation-function
-type:: owl:Class
-context:: https://visionclaw.dreamlab-ai.systems/ns/v2
-domain:: blockchain
-preferred-term:: Key Derivation Function
-content-hash:: sha256-12-d0f92bbf6e2a
-legacy-term-id:: BC-8007
-status:: active
-maturity:: reviewed
-quality-score:: 0.50
-authority-score:: 0.00
-version:: 2.0.0
-created:: 2026-04-26T00:00:00Z
-modified:: 2026-04-26T13:00:00Z
+schema_version:: 1
+legacy_iri:: http://narrativegoldmine.com/blockchain#KeyDerivationFunction
+legacy_uri:: urn:visionclaw:concept:blockchain:key-derivation-function
 public:: true
+
+# Key Derivation Function
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9",
+  "@type": "Page",
+  "vc:slug": "key-derivation-function",
+  "title": "Key Derivation Function",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:hierarchical-deterministic-wallet",
+      "vc:label": "Hierarchical Deterministic Wallet"
+    },
+    {
+      "@id": "urn:visionflow:linked:mnemonic-phrase",
+      "vc:label": "Mnemonic Phrase"
+    },
+    {
+      "@id": "urn:visionflow:linked:password-hashing",
+      "vc:label": "Password Hashing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:asymmetric-encryption",
+      "vc:label": "Asymmetric Encryption"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:private-key",
+      "vc:label": "Private Key"
+    }
+  ],
+  "vc:schemaVersion": 1,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "authority-score",
+      "vc:value": "0.00"
+    },
+    {
+      "vc:key": "content-hash",
+      "vc:value": "sha256-12-d0f92bbf6e2a"
+    },
+    {
+      "vc:key": "context",
+      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
+    },
+    {
+      "vc:key": "created",
+      "vc:value": "2026-04-26T00:00:00Z"
+    },
+    {
+      "vc:key": "domain",
+      "vc:value": "blockchain"
+    },
+    {
+      "vc:key": "iri",
+      "vc:value": "http://narrativegoldmine.com/blockchain#KeyDerivationFunction"
+    },
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "BC-8007"
+    },
+    {
+      "vc:key": "maturity",
+      "vc:value": "reviewed"
+    },
+    {
+      "vc:key": "modified",
+      "vc:value": "2026-04-26T13:00:00Z"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Key Derivation Function"
+    },
+    {
+      "vc:key": "public",
+      "vc:value": "true"
+    },
+    {
+      "vc:key": "quality-score",
+      "vc:value": "0.50"
+    },
+    {
+      "vc:key": "rdf-type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "same-as",
+      "vc:value": "urn:visionclaw:concept:blockchain:key-derivation-function"
+    },
+    {
+      "vc:key": "status",
+      "vc:value": "active"
+    },
+    {
+      "vc:key": "type",
+      "vc:value": "owl:Class"
+    },
+    {
+      "vc:key": "uri",
+      "vc:value": "urn:visionclaw:concept:blockchain:key-derivation-function"
+    },
+    {
+      "vc:key": "version",
+      "vc:value": "2.0.0"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:owl:class:key-derivation-function",
+  "@type": "OntologyClass",
+  "label": "Key Derivation Function",
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    }
+  ],
+  "vc:sourceDomain": "blockchain",
+  "vc:status": "active",
+  "vc:maturity": "reviewed",
+  "vc:definedIn": {
+    "@id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9"
+  },
+  "vc:inferenceRule": "R1Explicit",
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  },
+  "definition": "A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in blockchain systems.",
+  "vc:qualityScore": {
+    "@value": "0.50",
+    "@type": "xsd:float"
+  },
+  "vc:authorityScore": {
+    "@value": "0.00",
+    "@type": "xsd:float"
+  },
+  "vc:enables": [
+    {
+      "@id": "urn:visionflow:owl:class:asymmetric-encryption",
+      "vc:label": "Asymmetric Encryption"
+    }
+  ],
+  "vc:implements": [
+    {
+      "@id": "urn:visionflow:linked:password-hashing",
+      "vc:label": "Password Hashing"
+    }
+  ],
+  "vc:uses": [
+    {
+      "@id": "urn:visionflow:owl:class:hash-function",
+      "vc:label": "Hash Function"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:key-derivation-function:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Hierarchical Deterministic Wallet]]",
+      "resolved": "urn:visionflow:linked:hierarchical-deterministic-wallet",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Mnemonic Phrase]]",
+      "resolved": "urn:visionflow:linked:mnemonic-phrase",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Password Hashing]]",
+      "resolved": "urn:visionflow:linked:password-hashing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Asymmetric Encryption]]",
+      "resolved": "urn:visionflow:owl:class:asymmetric-encryption",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Cryptography]]",
+      "resolved": "urn:visionflow:owl:class:cryptography",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Hash Function]]",
+      "resolved": "urn:visionflow:owl:class:hash-function",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Private Key]]",
+      "resolved": "urn:visionflow:owl:class:private-key",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:wasDerivedFrom": {
+    "@id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
 
 - ### Definition
   - A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in blockchain systems.

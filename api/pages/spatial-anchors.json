@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737",
+  "title": "Spatial Anchors",
+  "slug": "spatial-anchors",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:spatial-anchors",
+  "domain": "spatial-computing",
+  "definition": "Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:ar-technology",
+      "label": "AR Technology"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:owl:class:persistent-ar-placement",
+        "label": "Persistent AR Placement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "persistent-ar-placement",
+      "label": "Persistent AR Placement"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

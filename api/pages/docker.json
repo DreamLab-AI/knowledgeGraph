@@ -1,0 +1,552 @@
+{
+  "id": "urn:visionflow:page:bc5cd797d8a15c82b34089e65905d7ae946afef7b102ddd2442208aef71de52e",
+  "title": "Docker",
+  "slug": "docker",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:docker",
+  "domain": "infrastructure",
+  "definition": "**Docker** is the canonical OS-level virtualisation platform and toolchain for packaging, distributing and executing software in isolated user-space instances called **containers** that share a single host Linux (or Windows) kernel via the kernel's namespace, cgroup and union-filesystem primitives, originally released as open source by Solomon Hykes at the Paris/San Francisco PaaS startup dotCloud on 13 March 2013, formally rebranded to Docker Inc. in October 2013, reaching general availability with Docker 1.0 at DockerCon June 2014, and credited with single-handedly popularising the modern container ecosystem by providing a developer-friendly CLI (`docker run`, `docker build`, `docker push`), a declarative image-build grammar (the **Dockerfile**), a layered, content-addressable image format with immutable cryptographic digests (now standardised as the **OCI Image Specification v1.1**), a default public registry (**Docker Hub**, ~13M+ repositories, ~25B+ image pulls per month by 2025), and a daemon-mediated execution model (`dockerd` \u2192 `containerd` \u2192 `runc`) on top of low-level Linux isolation primitives \u2014 **PID, network (NET), mount (MNT), UTS (hostname), IPC, user, and cgroup nam",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:linked:container-platform",
+      "label": "Container Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:container-runtime",
+      "label": "Container Runtime"
+    },
+    {
+      "id": "urn:visionflow:linked:developer-tooling",
+      "label": "Developer Tooling"
+    },
+    {
+      "id": "urn:visionflow:linked:os-level-virtualisation",
+      "label": "OS-Level Virtualisation"
+    },
+    {
+      "id": "urn:visionflow:linked:software-packaging-system",
+      "label": "Software Packaging System"
+    }
+  ],
+  "qualityScore": 0.52,
+  "authorityScore": 0.87,
+  "maturity": "production-ready",
+  "status": "production-ready",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:build-kit",
+        "label": "BuildKit"
+      },
+      {
+        "id": "urn:visionflow:linked:containerd",
+        "label": "Containerd"
+      },
+      {
+        "id": "urn:visionflow:linked:docker-cli",
+        "label": "Docker CLI"
+      },
+      {
+        "id": "urn:visionflow:linked:docker-compose",
+        "label": "Docker Compose"
+      },
+      {
+        "id": "urn:visionflow:linked:docker-daemon",
+        "label": "Docker Daemon"
+      },
+      {
+        "id": "urn:visionflow:linked:docker-desktop",
+        "label": "Docker Desktop"
+      },
+      {
+        "id": "urn:visionflow:linked:docker-hub",
+        "label": "Docker Hub"
+      },
+      {
+        "id": "urn:visionflow:linked:dockerfile",
+        "label": "Dockerfile"
+      },
+      {
+        "id": "urn:visionflow:linked:runc",
+        "label": "runc"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:control-groups",
+        "label": "Control Groups"
+      },
+      {
+        "id": "urn:visionflow:linked:linux-kernel",
+        "label": "Linux Kernel"
+      },
+      {
+        "id": "urn:visionflow:linked:linux-namespaces",
+        "label": "Linux Namespaces"
+      },
+      {
+        "id": "urn:visionflow:linked:overlay-fs",
+        "label": "OverlayFS"
+      },
+      {
+        "id": "urn:visionflow:linked:seccomp",
+        "label": "Seccomp"
+      },
+      {
+        "id": "urn:visionflow:linked:union-filesystem",
+        "label": "Union Filesystem"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:visionflow:linked:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:visionflow:linked:developer-environment-parity",
+        "label": "Developer Environment Parity"
+      },
+      {
+        "id": "urn:visionflow:linked:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      },
+      {
+        "id": "urn:visionflow:linked:microservices-deployment",
+        "label": "Microservices Deployment"
+      },
+      {
+        "id": "urn:visionflow:linked:reproducible-builds",
+        "label": "Reproducible Builds"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:visionflow:linked:container-runtime-interface",
+        "label": "Container Runtime Interface"
+      },
+      {
+        "id": "urn:visionflow:linked:copy-on-write-filesystem",
+        "label": "Copy-on-Write Filesystem"
+      },
+      {
+        "id": "urn:visionflow:linked:layered-image-format",
+        "label": "Layered Image Format"
+      },
+      {
+        "id": "urn:visionflow:linked:oci-distribution-spec",
+        "label": "OCI Distribution Spec"
+      },
+      {
+        "id": "urn:visionflow:linked:oci-image-spec",
+        "label": "OCI Image Spec"
+      },
+      {
+        "id": "urn:visionflow:linked:oci-runtime-spec",
+        "label": "OCI Runtime Spec"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "12-factor-app-methodology",
+      "label": "12 Factor App Methodology"
+    },
+    {
+      "slug": "anwar-et-al-2018-docker-registry-design-production-workload",
+      "label": "Anwar et al 2018 Docker Registry Design Production Workload"
+    },
+    {
+      "slug": "bare-metal-deployment",
+      "label": "Bare Metal Deployment"
+    },
+    {
+      "slug": "bridge-networking",
+      "label": "Bridge Networking"
+    },
+    {
+      "slug": "bsd-jails",
+      "label": "BSD Jails"
+    },
+    {
+      "slug": "bui-2015-analysis-of-docker-security",
+      "label": "Bui 2015 Analysis of Docker Security"
+    },
+    {
+      "slug": "build-kit",
+      "label": "BuildKit"
+    },
+    {
+      "slug": "build-kit-documentation",
+      "label": "BuildKit Documentation"
+    },
+    {
+      "slug": "burns-beda-hightower-2022-kubernetes-up-and-running",
+      "label": "Burns Beda Hightower 2022 Kubernetes Up and Running"
+    },
+    {
+      "slug": "cgroups-v2",
+      "label": "Cgroups v2"
+    },
+    {
+      "slug": "chroot",
+      "label": "Chroot"
+    },
+    {
+      "slug": "ci-cd-pipelines",
+      "label": "CI/CD Pipelines"
+    },
+    {
+      "slug": "cloud-native-computing-foundation",
+      "label": "Cloud Native Computing Foundation"
+    },
+    {
+      "slug": "cloud-native-domain",
+      "label": "CloudNativeDomain"
+    },
+    {
+      "slug": "cncf",
+      "label": "CNCF"
+    },
+    {
+      "slug": "cncf-annual-survey-2024",
+      "label": "CNCF Annual Survey 2024"
+    },
+    {
+      "slug": "cncf-containerd-documentation",
+      "label": "CNCF containerd Documentation"
+    },
+    {
+      "slug": "combe-martin-di-pietro-2016-to-docker-or-not-to-docker-security",
+      "label": "Combe Martin Di Pietro 2016 To Docker or Not To Docker Security"
+    },
+    {
+      "slug": "container-platform",
+      "label": "Container Platform"
+    },
+    {
+      "slug": "container-runtime",
+      "label": "Container Runtime"
+    },
+    {
+      "slug": "container-runtime-interface",
+      "label": "Container Runtime Interface"
+    },
+    {
+      "slug": "container-runtime-layer",
+      "label": "ContainerRuntimeLayer"
+    },
+    {
+      "slug": "containerd",
+      "label": "Containerd"
+    },
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "content-addressable-storage",
+      "label": "Content-Addressable Storage"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "control-groups",
+      "label": "Control Groups"
+    },
+    {
+      "slug": "copy-on-write-filesystem",
+      "label": "Copy-on-Write Filesystem"
+    },
+    {
+      "slug": "dev-ops-domain",
+      "label": "DevOpsDomain"
+    },
+    {
+      "slug": "developer-environment-parity",
+      "label": "Developer Environment Parity"
+    },
+    {
+      "slug": "developer-tooling",
+      "label": "Developer Tooling"
+    },
+    {
+      "slug": "developer-tooling-layer",
+      "label": "DeveloperToolingLayer"
+    },
+    {
+      "slug": "docker-cli",
+      "label": "Docker CLI"
+    },
+    {
+      "slug": "docker-compose",
+      "label": "Docker Compose"
+    },
+    {
+      "slug": "docker-daemon",
+      "label": "Docker Daemon"
+    },
+    {
+      "slug": "docker-desktop",
+      "label": "Docker Desktop"
+    },
+    {
+      "slug": "docker-engine-moby-source-repository",
+      "label": "Docker Engine Moby Source Repository"
+    },
+    {
+      "slug": "docker-hub",
+      "label": "Docker Hub"
+    },
+    {
+      "slug": "docker-swarm",
+      "label": "Docker Swarm"
+    },
+    {
+      "slug": "dockerfile",
+      "label": "Dockerfile"
+    },
+    {
+      "slug": "felter-ferreira-rajamony-rubio-2015-ibm-containers-vms-performance",
+      "label": "Felter Ferreira Rajamony Rubio 2015 IBM Containers VMs Performance"
+    },
+    {
+      "slug": "git-ops",
+      "label": "GitOps"
+    },
+    {
+      "slug": "go-runtime",
+      "label": "Go Runtime"
+    },
+    {
+      "slug": "harter-et-al-2016-slacker-lazy-docker-containers",
+      "label": "Harter et al 2016 Slacker Lazy Docker Containers"
+    },
+    {
+      "slug": "hykes-2013-py-con-docker-introduction",
+      "label": "Hykes 2013 PyCon Docker Introduction"
+    },
+    {
+      "slug": "immutable-infrastructure",
+      "label": "Immutable Infrastructure"
+    },
+    {
+      "slug": "iptables",
+      "label": "Iptables"
+    },
+    {
+      "slug": "klein-2017-service-mesh-data-plane-vs-control-plane",
+      "label": "Klein 2017 Service Mesh Data Plane vs Control Plane"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "layered-image-format",
+      "label": "Layered Image Format"
+    },
+    {
+      "slug": "lin-lei-wang-jing-sun-zhou-2018-linux-container-security-acsac",
+      "label": "Lin Lei Wang Jing Sun Zhou 2018 Linux Container Security ACSAC"
+    },
+    {
+      "slug": "linux-capabilities",
+      "label": "Linux Capabilities"
+    },
+    {
+      "slug": "linux-kernel",
+      "label": "Linux Kernel"
+    },
+    {
+      "slug": "linux-namespaces",
+      "label": "Linux Namespaces"
+    },
+    {
+      "slug": "microservices-deployment",
+      "label": "Microservices Deployment"
+    },
+    {
+      "slug": "moby-project",
+      "label": "Moby Project"
+    },
+    {
+      "slug": "mouat-2020-using-docker",
+      "label": "Mouat 2020 Using Docker"
+    },
+    {
+      "slug": "newman-2021-building-microservices",
+      "label": "Newman 2021 Building Microservices"
+    },
+    {
+      "slug": "nickoloff-kuenzli-2019-docker-in-action",
+      "label": "Nickoloff Kuenzli 2019 Docker in Action"
+    },
+    {
+      "slug": "nist-sp-800-190-application-container-security-guide",
+      "label": "NIST SP 800-190 Application Container Security Guide"
+    },
+    {
+      "slug": "oci-distribution-spec",
+      "label": "OCI Distribution Spec"
+    },
+    {
+      "slug": "oci-distribution-specification-1-1",
+      "label": "OCI Distribution Specification 1.1"
+    },
+    {
+      "slug": "oci-image-format-specification-1-1",
+      "label": "OCI Image Format Specification 1.1"
+    },
+    {
+      "slug": "oci-image-spec",
+      "label": "OCI Image Spec"
+    },
+    {
+      "slug": "oci-runtime-spec",
+      "label": "OCI Runtime Spec"
+    },
+    {
+      "slug": "oci-runtime-specification-1-2",
+      "label": "OCI Runtime Specification 1.2"
+    },
+    {
+      "slug": "open-container-initiative",
+      "label": "Open Container Initiative"
+    },
+    {
+      "slug": "operating-system-layer",
+      "label": "OperatingSystemLayer"
+    },
+    {
+      "slug": "os-level-virtualisation",
+      "label": "OS-Level Virtualisation"
+    },
+    {
+      "slug": "overlay-fs",
+      "label": "OverlayFS"
+    },
+    {
+      "slug": "podman",
+      "label": "Podman"
+    },
+    {
+      "slug": "reproducible-builds",
+      "label": "Reproducible Builds"
+    },
+    {
+      "slug": "rice-2020-container-security",
+      "label": "Rice 2020 Container Security"
+    },
+    {
+      "slug": "runc",
+      "label": "runc"
+    },
+    {
+      "slug": "runc-oci-runtime-reference-implementation",
+      "label": "runc OCI Runtime Reference Implementation"
+    },
+    {
+      "slug": "seccomp",
+      "label": "Seccomp"
+    },
+    {
+      "slug": "serverless-functions",
+      "label": "Serverless Functions"
+    },
+    {
+      "slug": "software-packaging-system",
+      "label": "Software Packaging System"
+    },
+    {
+      "slug": "software-supply-chain-domain",
+      "label": "SoftwareSupplyChainDomain"
+    },
+    {
+      "slug": "soltesz-potzl-fiuczynski-bavier-peterson-2007-container-based-os-virtualization",
+      "label": "Soltesz Potzl Fiuczynski Bavier Peterson 2007 Container-based OS Virtualization"
+    },
+    {
+      "slug": "sridharan-2018-distributed-systems-observability",
+      "label": "Sridharan 2018 Distributed Systems Observability"
+    },
+    {
+      "slug": "turnbull-2014-the-docker-book",
+      "label": "Turnbull 2014 The Docker Book"
+    },
+    {
+      "slug": "uk-ncsc-container-security-guidance-2023",
+      "label": "UK NCSC Container Security Guidance 2023"
+    },
+    {
+      "slug": "unikernel",
+      "label": "Unikernel"
+    },
+    {
+      "slug": "union-filesystem",
+      "label": "Union Filesystem"
+    },
+    {
+      "slug": "verma-pedrosa-korupolu-oppenheimer-tune-wilkes-2015-google-borg",
+      "label": "Verma Pedrosa Korupolu Oppenheimer Tune Wilkes 2015 Google Borg"
+    },
+    {
+      "slug": "vxlan",
+      "label": "VXLAN"
+    },
+    {
+      "slug": "cloud-native-applications",
+      "label": "Cloud Native Applications"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "InfrastructureDomain"
+    },
+    {
+      "slug": "virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

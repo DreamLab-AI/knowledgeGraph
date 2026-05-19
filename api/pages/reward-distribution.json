@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:7257cbe4aa91da0aeade9f8b3632cdd4534f0db246f30872fe6e827568c71db0",
+  "title": "Reward Distribution",
+  "slug": "reward-distribution",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:reward-distribution",
+  "domain": "spatial-computing",
+  "definition": "Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "draft",
+  "status": "active",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:network-participation",
+        "label": "Network Participation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-participation",
+      "label": "Network Participation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    }
+  ]
+}

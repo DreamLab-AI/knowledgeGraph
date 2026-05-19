@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:0958beede384b877af44c6fe56fc8ec1af17e6a08d0b294662473a3876f74b37",
+  "title": "Mixed Reality (MR)",
+  "slug": "mixed-reality-mr",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:mixed-reality-mr",
+  "domain": "spatial-computing",
+  "definition": "Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:spatial-computing",
+      "label": "spatial-computing"
+    }
+  ],
+  "qualityScore": 0.35,
+  "authorityScore": 0.0,
+  "maturity": "mature",
+  "status": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:visionflow:linked:depth-camera",
+        "label": "Depth Camera"
+      },
+      {
+        "id": "urn:visionflow:linked:lighting-estimation",
+        "label": "Lighting Estimation"
+      },
+      {
+        "id": "urn:visionflow:linked:occlusion-rendering",
+        "label": "Occlusion Rendering"
+      },
+      {
+        "id": "urn:visionflow:linked:physics-simulation-engine",
+        "label": "Physics Simulation Engine"
+      },
+      {
+        "id": "urn:visionflow:owl:class:spatial-mesh",
+        "label": "Spatial Mesh"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:visionflow:linked:environmental-lighting",
+        "label": "Environmental Lighting"
+      },
+      {
+        "id": "urn:visionflow:linked:object-tracking",
+        "label": "Object Tracking"
+      },
+      {
+        "id": "urn:visionflow:linked:real-time-3-d-reconstruction",
+        "label": "Real-Time 3D Reconstruction"
+      },
+      {
+        "id": "urn:visionflow:owl:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:visionflow:linked:bidirectional-interaction",
+        "label": "Bidirectional Interaction"
+      },
+      {
+        "id": "urn:visionflow:linked:realistic-occlusion",
+        "label": "Realistic Occlusion"
+      },
+      {
+        "id": "urn:visionflow:owl:class:shared-spatial-anchors",
+        "label": "Shared Spatial Anchors"
+      },
+      {
+        "id": "urn:visionflow:owl:class:virtual-physical-collision",
+        "label": "Virtual-Physical Collision"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "acm",
+      "label": "ACM"
+    },
+    {
+      "slug": "bidirectional-interaction",
+      "label": "Bidirectional Interaction"
+    },
+    {
+      "slug": "depth-camera",
+      "label": "Depth Camera"
+    },
+    {
+      "slug": "environmental-lighting",
+      "label": "Environmental Lighting"
+    },
+    {
+      "slug": "iso-9241-940",
+      "label": "ISO 9241-940"
+    },
+    {
+      "slug": "lighting-estimation",
+      "label": "Lighting Estimation"
+    },
+    {
+      "slug": "object-tracking",
+      "label": "Object Tracking"
+    },
+    {
+      "slug": "occlusion-rendering",
+      "label": "Occlusion Rendering"
+    },
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
+    },
+    {
+      "slug": "real-time-3-d-reconstruction",
+      "label": "Real-Time 3D Reconstruction"
+    },
+    {
+      "slug": "realistic-occlusion",
+      "label": "Realistic Occlusion"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "depth-sensing",
+      "label": "Depth Sensing"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "InteractionDomain"
+    },
+    {
+      "slug": "network-layer",
+      "label": "NetworkLayer"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "shared-spatial-anchors",
+      "label": "Shared Spatial Anchors"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-mesh",
+      "label": "Spatial Mesh"
+    },
+    {
+      "slug": "virtual-physical-collision",
+      "label": "Virtual-Physical Collision"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "optical-sensor-array",
+      "label": "Optical Sensor Array"
+    }
+  ]
+}
